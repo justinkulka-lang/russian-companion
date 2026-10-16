@@ -1,0 +1,1416 @@
+{
+  "baselineCommit": "3202e407321d954a80eb5e91a16e7b81535c9e96",
+  "baselineAssetCommit": "547457b63b317dea560e4bdc36083c1a4dce315e",
+  "beforeUnit": {
+    "number": 3,
+    "id": "unit-3",
+    "title": "Everyday phrases, naming things, basic grammar, and gender",
+    "shortLabel": "Everyday phrases",
+    "topicSummary": "Proposed Unit 3 is a development unit awaiting qualified review. It contains admitted records for gender, everyday phrases, and naming, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 3,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 3 mapping remains pending. The structural edition facts are unchanged. This proposed curriculum is not an approved alignment.",
+    "prerequisiteUnitNumbers": [
+      2
+    ],
+    "estimatedMinutes": 54,
+    "objectives": [
+      {
+        "id": "obj-u3-gender",
+        "unitNumber": 3,
+        "title": "Recognize admitted noun genders",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u3-st-orient",
+          "u3-st-teach-gender-1",
+          "u3-st-teach-gender-2",
+          "u3-st-teach-gender-3",
+          "u3-st-teach-gender-4",
+          "u3-st-teach-gender-5"
+        ],
+        "exampleIds": [
+          "ex-u3-стол",
+          "ex-u3-дом",
+          "ex-u3-город",
+          "ex-u3-брат",
+          "ex-u3-книга",
+          "ex-u3-вода",
+          "ex-u3-школа",
+          "ex-u3-работа",
+          "ex-u3-окно",
+          "ex-u3-письмо",
+          "ex-u3-молоко",
+          "ex-u3-море",
+          "ex-u3-мужчина",
+          "ex-u3-дядя"
+        ],
+        "practiceStepIds": [
+          "u3-st-guided-gender-2",
+          "u3-st-guided-gender-3",
+          "u3-st-guided-gender-4",
+          "u3-st-guided-gender-5"
+        ],
+        "checkItemIds": [
+          "u3-i-gender-город",
+          "u3-i-gender-друг",
+          "u3-i-gender-дверь",
+          "u3-i-gender-море",
+          "u3-i-gender-дядя"
+        ],
+        "remediationStepIds": [
+          "u3-st-rem-gender"
+        ]
+      },
+      {
+        "id": "obj-u3-phrases",
+        "unitNumber": 3,
+        "title": "Recognize admitted everyday phrases",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u3-st-orient",
+          "u3-st-teach-phrases-1",
+          "u3-st-teach-phrases-2",
+          "u3-st-teach-phrases-3"
+        ],
+        "exampleIds": [
+          "ex-u3-phrase-здравствуйте",
+          "ex-u3-phrase-спасибо",
+          "ex-u3-phrase-пожалуйста",
+          "ex-u3-phrase-да",
+          "ex-u3-phrase-нет",
+          "ex-u3-phrase-это",
+          "ex-u3-phrase-kak-dela",
+          "ex-u3-phrase-gde-vy"
+        ],
+        "practiceStepIds": [
+          "u3-st-guided-phrases-1"
+        ],
+        "checkItemIds": [
+          "u3-i-phrase-пожалуйста",
+          "u3-i-phrase-да",
+          "u3-i-phrase-нет",
+          "u3-i-phrase-это"
+        ],
+        "remediationStepIds": [
+          "u3-st-rem-phrases"
+        ]
+      },
+      {
+        "id": "obj-u3-naming",
+        "unitNumber": 3,
+        "title": "Recognize admitted naming items",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u3-st-orient",
+          "u3-st-teach-naming-1",
+          "u3-st-teach-naming-2"
+        ],
+        "exampleIds": [
+          "ex-u3-phrase-moy-stol",
+          "ex-u3-phrase-moya-sobaka",
+          "ex-u3-phrase-chto-eto",
+          "ex-u3-phrase-kto-eto"
+        ],
+        "practiceStepIds": [
+          "u3-st-guided-naming-1"
+        ],
+        "checkItemIds": [
+          "u3-i-name-moya-sobaka",
+          "u3-i-name-chto-eto",
+          "u3-i-name-kto-eto"
+        ],
+        "remediationStepIds": [
+          "u3-st-rem-naming"
+        ]
+      },
+      {
+        "id": "obj-u3-book",
+        "unitNumber": 3,
+        "title": "Self-attest Lesson 3 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u3-st-book-work",
+          "u3-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u3-s-orient",
+        "title": "Everyday phrases, naming, and grouping",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u3-gender",
+          "obj-u3-phrases",
+          "obj-u3-naming",
+          "obj-u3-book"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-orient",
+            "kind": "ORIENT",
+            "title": "Everyday phrases, naming, and grouping",
+            "body": "Proposed Unit 3 uses frozen dictionary rows and grammar excerpts for the groups, a small phrase set, and naming items. The owned book remains separate work. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "bookDirection": "Open Lesson 3 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u3-s-gender",
+        "title": "Recognize admitted noun genders",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u3-gender"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-teach-gender-1",
+            "kind": "TEACH",
+            "title": "Read the admitted grouping sentence",
+            "body": "The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ]
+          },
+          {
+            "id": "u3-st-teach-gender-2",
+            "kind": "TEACH",
+            "title": "Four records in the first group",
+            "body": "These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-стол",
+              "ex-u3-дом",
+              "ex-u3-город",
+              "ex-u3-брат"
+            ]
+          },
+          {
+            "id": "u3-st-guided-gender-2",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-gender-стол",
+              "u3-i-gender-дом"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          },
+          {
+            "id": "u3-st-teach-gender-3",
+            "kind": "TEACH",
+            "title": "Four records in the second group",
+            "body": "These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-книга",
+              "ex-u3-вода",
+              "ex-u3-школа",
+              "ex-u3-работа"
+            ]
+          },
+          {
+            "id": "u3-st-guided-gender-3",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-gender-книга"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          },
+          {
+            "id": "u3-st-teach-gender-4",
+            "kind": "TEACH",
+            "title": "Four records in the third group",
+            "body": "These admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-окно",
+              "ex-u3-письмо",
+              "ex-u3-молоко",
+              "ex-u3-море"
+            ]
+          },
+          {
+            "id": "u3-st-guided-gender-4",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-gender-окно"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          },
+          {
+            "id": "u3-st-teach-gender-5",
+            "kind": "TEACH",
+            "title": "Two records the page still places in the first group",
+            "body": "дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-мужчина",
+              "ex-u3-дядя"
+            ]
+          },
+          {
+            "id": "u3-st-guided-gender-5",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-gender-мужчина"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          },
+          {
+            "id": "u3-st-rem-gender",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.",
+            "exampleIds": [
+              "ex-u3-стол",
+              "ex-u3-дом"
+            ]
+          },
+          {
+            "id": "u3-st-check-gender",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u3-i-gender-город",
+              "u3-i-gender-друг",
+              "u3-i-gender-дверь",
+              "u3-i-gender-море",
+              "u3-i-gender-дядя"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          }
+        ]
+      },
+      {
+        "id": "u3-s-phrases",
+        "title": "Recognize admitted everyday phrases",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u3-phrases"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-teach-phrases-1",
+            "kind": "TEACH",
+            "title": "Three short greetings",
+            "body": "These greetings are copied from admitted rows. здра́вствуйте — hello. спаси́бо — thank you. пожа́луйста — please. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-здравствуйте",
+              "ex-u3-phrase-спасибо",
+              "ex-u3-phrase-пожалуйста"
+            ]
+          },
+          {
+            "id": "u3-st-guided-phrases-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-phrase-здравствуйте",
+              "u3-i-phrase-спасибо"
+            ],
+            "remediationStepId": "u3-st-rem-phrases"
+          },
+          {
+            "id": "u3-st-teach-phrases-2",
+            "kind": "TEACH",
+            "title": "Three short answers",
+            "body": "These short answers are copied from admitted rows. да — yes. нет — no. э́то — this is. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-да",
+              "ex-u3-phrase-нет",
+              "ex-u3-phrase-это"
+            ]
+          },
+          {
+            "id": "u3-st-teach-phrases-3",
+            "kind": "TEACH",
+            "title": "Two written questions from the frozen page",
+            "body": "These written questions are exact frozen excerpts. Как дела? — How do you do?/How're things?. Где вы? — Where are you?. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-kak-dela",
+              "ex-u3-phrase-gde-vy"
+            ]
+          },
+          {
+            "id": "u3-st-rem-phrases",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.",
+            "exampleIds": [
+              "ex-u3-phrase-здравствуйте",
+              "ex-u3-phrase-спасибо"
+            ]
+          },
+          {
+            "id": "u3-st-check-phrases",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u3-i-phrase-пожалуйста",
+              "u3-i-phrase-да",
+              "u3-i-phrase-нет",
+              "u3-i-phrase-это"
+            ],
+            "remediationStepId": "u3-st-rem-phrases"
+          }
+        ]
+      },
+      {
+        "id": "u3-s-naming",
+        "title": "Recognize admitted naming items",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u3-naming"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-teach-naming-1",
+            "kind": "TEACH",
+            "title": "Two naming items from the frozen page",
+            "body": "These two items are exact frozen excerpts. Do not substitute another word into them. мой стол — my table. моя собака — my dog. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-moy-stol",
+              "ex-u3-phrase-moya-sobaka"
+            ]
+          },
+          {
+            "id": "u3-st-guided-naming-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-name-moy-stol"
+            ],
+            "remediationStepId": "u3-st-rem-naming"
+          },
+          {
+            "id": "u3-st-teach-naming-2",
+            "kind": "TEACH",
+            "title": "Two naming questions from the frozen page",
+            "body": "These two questions are exact frozen excerpts. Что это? — What is this?. Кто это? — Who is this?. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-chto-eto",
+              "ex-u3-phrase-kto-eto"
+            ]
+          },
+          {
+            "id": "u3-st-rem-naming",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.",
+            "exampleIds": [
+              "ex-u3-phrase-moy-stol",
+              "ex-u3-phrase-moya-sobaka"
+            ]
+          },
+          {
+            "id": "u3-st-check-naming",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u3-i-name-moya-sobaka",
+              "u3-i-name-chto-eto",
+              "u3-i-name-kto-eto"
+            ],
+            "remediationStepId": "u3-st-rem-naming"
+          }
+        ]
+      },
+      {
+        "id": "u3-s-book",
+        "title": "Self-attest Lesson 3",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u3-book"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 3 in your copy",
+            "body": "Do Lesson 3 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.",
+            "referenceIds": [
+              "ref-book-topics",
+              "ref-u35-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 3: printed pages 24-35. PDF indexes 36-47 are file locators, not printed pages. Observed section locators: §3.1 p24 (PDF 36); §3.2 p25 (PDF 37); §3.3 p25 (PDF 37); §3.4 p26 (PDF 38); §3.5 p26 (PDF 38); §3.6 p26 (PDF 38); §3.7 p26 (PDF 38); §3.8 p27 (PDF 39); §3.9 p29 (PDF 41); §3.10 p29 (PDF 41); §3.11 p31 (PDF 43); §3.12 p32 (PDF 44). Observed exercise locators: 3/2 p32/PDF44; 3/3 p33/PDF45; 3/4 p33/PDF45; 3/5 p33/PDF45; 3/6 p33/PDF45. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u3-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 3 book work",
+            "body": "When you have done Lesson 3 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 3: printed pages 24-35. PDF indexes 36-47 are file locators, not printed pages. Observed section locators: §3.1 p24 (PDF 36); §3.2 p25 (PDF 37); §3.3 p25 (PDF 37); §3.4 p26 (PDF 38); §3.5 p26 (PDF 38); §3.6 p26 (PDF 38); §3.7 p26 (PDF 38); §3.8 p27 (PDF 39); §3.9 p29 (PDF 41); §3.10 p29 (PDF 41); §3.11 p31 (PDF 43); §3.12 p32 (PDF 44). Observed exercise locators: 3/2 p32/PDF44; 3/3 p33/PDF45; 3/4 p33/PDF45; 3/5 p33/PDF45; 3/6 p33/PDF45. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u3-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 3 AnkiDroid direction",
+            "body": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u3-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 3 binder prompt",
+            "body": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u3-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 3 optional tutor",
+            "body": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u3-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 3 cumulative review",
+            "body": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 12,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit3-prior-literacy-v1"
+    }
+  },
+  "afterUnit": {
+    "number": 3,
+    "id": "unit-3",
+    "title": "Everyday phrases, naming things, basic grammar, and gender",
+    "shortLabel": "Everyday phrases",
+    "topicSummary": "Proposed Unit 3 is a development unit awaiting qualified review. It contains admitted records for gender, everyday phrases, and naming, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 3,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 3 mapping remains pending. The structural edition facts are unchanged. This proposed curriculum is not an approved alignment.",
+    "prerequisiteUnitNumbers": [
+      2
+    ],
+    "estimatedMinutes": 54,
+    "objectives": [
+      {
+        "id": "obj-u3-gender",
+        "unitNumber": 3,
+        "title": "Recognize admitted noun genders",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u3-st-orient",
+          "u3-st-teach-gender-1",
+          "u3-st-teach-gender-2",
+          "u3-st-teach-gender-3",
+          "u3-st-teach-gender-4",
+          "u3-st-teach-gender-5"
+        ],
+        "exampleIds": [
+          "ex-u3-стол",
+          "ex-u3-дом",
+          "ex-u3-город",
+          "ex-u3-брат",
+          "ex-u3-книга",
+          "ex-u3-вода",
+          "ex-u3-школа",
+          "ex-u3-работа",
+          "ex-u3-окно",
+          "ex-u3-письмо",
+          "ex-u3-молоко",
+          "ex-u3-море",
+          "ex-u3-мужчина",
+          "ex-u3-дядя",
+          "ex-u3-друг",
+          "ex-u3-дверь"
+        ],
+        "practiceStepIds": [
+          "u3-st-guided-gender-2",
+          "u3-st-guided-gender-3",
+          "u3-st-guided-gender-4",
+          "u3-st-guided-gender-5"
+        ],
+        "checkItemIds": [
+          "u3-i-gender-город",
+          "u3-i-gender-друг",
+          "u3-i-gender-дверь",
+          "u3-i-gender-море",
+          "u3-i-gender-дядя"
+        ],
+        "remediationStepIds": [
+          "u3-st-rem-gender"
+        ]
+      },
+      {
+        "id": "obj-u3-phrases",
+        "unitNumber": 3,
+        "title": "Recognize admitted everyday phrases",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u3-st-orient",
+          "u3-st-teach-phrases-1",
+          "u3-st-teach-phrases-2",
+          "u3-st-teach-phrases-3"
+        ],
+        "exampleIds": [
+          "ex-u3-phrase-здравствуйте",
+          "ex-u3-phrase-спасибо",
+          "ex-u3-phrase-пожалуйста",
+          "ex-u3-phrase-да",
+          "ex-u3-phrase-нет",
+          "ex-u3-phrase-это",
+          "ex-u3-phrase-kak-dela",
+          "ex-u3-phrase-gde-vy"
+        ],
+        "practiceStepIds": [
+          "u3-st-guided-phrases-1"
+        ],
+        "checkItemIds": [
+          "u3-i-phrase-пожалуйста",
+          "u3-i-phrase-да",
+          "u3-i-phrase-нет",
+          "u3-i-phrase-это"
+        ],
+        "remediationStepIds": [
+          "u3-st-rem-phrases"
+        ]
+      },
+      {
+        "id": "obj-u3-naming",
+        "unitNumber": 3,
+        "title": "Recognize admitted naming items",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u3-st-orient",
+          "u3-st-teach-naming-1",
+          "u3-st-teach-naming-2"
+        ],
+        "exampleIds": [
+          "ex-u3-phrase-moy-stol",
+          "ex-u3-phrase-moya-sobaka",
+          "ex-u3-phrase-chto-eto",
+          "ex-u3-phrase-kto-eto"
+        ],
+        "practiceStepIds": [
+          "u3-st-guided-naming-1"
+        ],
+        "checkItemIds": [
+          "u3-i-name-moya-sobaka",
+          "u3-i-name-chto-eto",
+          "u3-i-name-kto-eto"
+        ],
+        "remediationStepIds": [
+          "u3-st-rem-naming"
+        ]
+      },
+      {
+        "id": "obj-u3-book",
+        "unitNumber": 3,
+        "title": "Self-attest Lesson 3 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u3-st-book-work",
+          "u3-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u3-s-orient",
+        "title": "Everyday phrases, naming, and grouping",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u3-gender",
+          "obj-u3-phrases",
+          "obj-u3-naming",
+          "obj-u3-book"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-orient",
+            "kind": "ORIENT",
+            "title": "Everyday phrases, naming, and grouping",
+            "body": "Proposed Unit 3 uses frozen dictionary rows and grammar excerpts for the groups, a small phrase set, and naming items. The owned book remains separate work. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "bookDirection": "Open Lesson 3 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u3-s-gender",
+        "title": "Recognize admitted noun genders",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u3-gender"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-teach-gender-1",
+            "kind": "TEACH",
+            "title": "Read the admitted grouping sentence",
+            "body": "The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ]
+          },
+          {
+            "id": "u3-st-teach-gender-2",
+            "kind": "TEACH",
+            "title": "Four records in the first group",
+            "body": "These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-стол",
+              "ex-u3-дом",
+              "ex-u3-город",
+              "ex-u3-брат",
+              "ex-u3-друг"
+            ]
+          },
+          {
+            "id": "u3-st-guided-gender-2",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-gender-стол",
+              "u3-i-gender-дом"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          },
+          {
+            "id": "u3-st-teach-gender-3",
+            "kind": "TEACH",
+            "title": "Four records in the second group",
+            "body": "These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-книга",
+              "ex-u3-вода",
+              "ex-u3-школа",
+              "ex-u3-работа",
+              "ex-u3-дверь"
+            ]
+          },
+          {
+            "id": "u3-st-guided-gender-3",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-gender-книга"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          },
+          {
+            "id": "u3-st-teach-gender-4",
+            "kind": "TEACH",
+            "title": "Four records in the third group",
+            "body": "These admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-окно",
+              "ex-u3-письмо",
+              "ex-u3-молоко",
+              "ex-u3-море"
+            ]
+          },
+          {
+            "id": "u3-st-guided-gender-4",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-gender-окно"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          },
+          {
+            "id": "u3-st-teach-gender-5",
+            "kind": "TEACH",
+            "title": "Two records the page still places in the first group",
+            "body": "дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-мужчина",
+              "ex-u3-дядя"
+            ]
+          },
+          {
+            "id": "u3-st-guided-gender-5",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-gender-мужчина"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          },
+          {
+            "id": "u3-st-rem-gender",
+            "kind": "REMEDIATE",
+            "title": "Review the admitted noun genders",
+            "body": "The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.\n\nThese admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.\n\nThese admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.\n\nThese admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. \n\nдя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.",
+            "exampleIds": [
+              "ex-u3-стол",
+              "ex-u3-дом",
+              "ex-u3-город",
+              "ex-u3-брат",
+              "ex-u3-друг",
+              "ex-u3-книга",
+              "ex-u3-вода",
+              "ex-u3-школа",
+              "ex-u3-работа",
+              "ex-u3-дверь",
+              "ex-u3-окно",
+              "ex-u3-письмо",
+              "ex-u3-молоко",
+              "ex-u3-море",
+              "ex-u3-мужчина",
+              "ex-u3-дядя"
+            ]
+          },
+          {
+            "id": "u3-st-check-gender",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u3-i-gender-город",
+              "u3-i-gender-друг",
+              "u3-i-gender-дверь",
+              "u3-i-gender-море",
+              "u3-i-gender-дядя"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          }
+        ]
+      },
+      {
+        "id": "u3-s-phrases",
+        "title": "Recognize admitted everyday phrases",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u3-phrases"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-teach-phrases-1",
+            "kind": "TEACH",
+            "title": "Three short greetings",
+            "body": "These greetings are copied from admitted rows. здра́вствуйте — hello. спаси́бо — thank you. пожа́луйста — please. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-здравствуйте",
+              "ex-u3-phrase-спасибо",
+              "ex-u3-phrase-пожалуйста"
+            ]
+          },
+          {
+            "id": "u3-st-guided-phrases-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-phrase-здравствуйте",
+              "u3-i-phrase-спасибо"
+            ],
+            "remediationStepId": "u3-st-rem-phrases"
+          },
+          {
+            "id": "u3-st-teach-phrases-2",
+            "kind": "TEACH",
+            "title": "Three short answers",
+            "body": "These short answers are copied from admitted rows. да — yes. нет — no. э́то — this is. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-да",
+              "ex-u3-phrase-нет",
+              "ex-u3-phrase-это"
+            ]
+          },
+          {
+            "id": "u3-st-teach-phrases-3",
+            "kind": "TEACH",
+            "title": "Two written questions from the frozen page",
+            "body": "These written questions are exact frozen excerpts. Как дела? — How do you do?/How're things?. Где вы? — Where are you?. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-kak-dela",
+              "ex-u3-phrase-gde-vy"
+            ]
+          },
+          {
+            "id": "u3-st-rem-phrases",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.",
+            "exampleIds": [
+              "ex-u3-phrase-здравствуйте",
+              "ex-u3-phrase-спасибо"
+            ]
+          },
+          {
+            "id": "u3-st-check-phrases",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u3-i-phrase-пожалуйста",
+              "u3-i-phrase-да",
+              "u3-i-phrase-нет",
+              "u3-i-phrase-это"
+            ],
+            "remediationStepId": "u3-st-rem-phrases"
+          }
+        ]
+      },
+      {
+        "id": "u3-s-naming",
+        "title": "Recognize admitted naming items",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u3-naming"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-teach-naming-1",
+            "kind": "TEACH",
+            "title": "Two naming items from the frozen page",
+            "body": "These two items are exact frozen excerpts. Do not substitute another word into them. мой стол — my table. моя собака — my dog. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-moy-stol",
+              "ex-u3-phrase-moya-sobaka"
+            ]
+          },
+          {
+            "id": "u3-st-guided-naming-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-name-moy-stol"
+            ],
+            "remediationStepId": "u3-st-rem-naming"
+          },
+          {
+            "id": "u3-st-teach-naming-2",
+            "kind": "TEACH",
+            "title": "Two naming questions from the frozen page",
+            "body": "These two questions are exact frozen excerpts. Что это? — What is this?. Кто это? — Who is this?. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-chto-eto",
+              "ex-u3-phrase-kto-eto"
+            ]
+          },
+          {
+            "id": "u3-st-rem-naming",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.",
+            "exampleIds": [
+              "ex-u3-phrase-moy-stol",
+              "ex-u3-phrase-moya-sobaka"
+            ]
+          },
+          {
+            "id": "u3-st-check-naming",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u3-i-name-moya-sobaka",
+              "u3-i-name-chto-eto",
+              "u3-i-name-kto-eto"
+            ],
+            "remediationStepId": "u3-st-rem-naming"
+          }
+        ]
+      },
+      {
+        "id": "u3-s-book",
+        "title": "Self-attest Lesson 3",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u3-book"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 3 in your copy",
+            "body": "Do Lesson 3 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.",
+            "referenceIds": [
+              "ref-book-topics",
+              "ref-u35-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 3: printed pages 24-35. PDF indexes 36-47 are file locators, not printed pages. Observed section locators: §3.1 p24 (PDF 36); §3.2 p25 (PDF 37); §3.3 p25 (PDF 37); §3.4 p26 (PDF 38); §3.5 p26 (PDF 38); §3.6 p26 (PDF 38); §3.7 p26 (PDF 38); §3.8 p27 (PDF 39); §3.9 p29 (PDF 41); §3.10 p29 (PDF 41); §3.11 p31 (PDF 43); §3.12 p32 (PDF 44). Observed exercise locators: 3/2 p32/PDF44; 3/3 p33/PDF45; 3/4 p33/PDF45; 3/5 p33/PDF45; 3/6 p33/PDF45. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u3-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 3 book work",
+            "body": "When you have done Lesson 3 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 3: printed pages 24-35. PDF indexes 36-47 are file locators, not printed pages. Observed section locators: §3.1 p24 (PDF 36); §3.2 p25 (PDF 37); §3.3 p25 (PDF 37); §3.4 p26 (PDF 38); §3.5 p26 (PDF 38); §3.6 p26 (PDF 38); §3.7 p26 (PDF 38); §3.8 p27 (PDF 39); §3.9 p29 (PDF 41); §3.10 p29 (PDF 41); §3.11 p31 (PDF 43); §3.12 p32 (PDF 44). Observed exercise locators: 3/2 p32/PDF44; 3/3 p33/PDF45; 3/4 p33/PDF45; 3/5 p33/PDF45; 3/6 p33/PDF45. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u3-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 3 AnkiDroid direction",
+            "body": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u3-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 3 binder prompt",
+            "body": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u3-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 3 optional tutor",
+            "body": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u3-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 3 cumulative review",
+            "body": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 12,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit3-prior-literacy-v1"
+    }
+  },
+  "beforeSession": {
+    "id": "u3-s-gender",
+    "title": "Recognize admitted noun genders",
+    "estimatedMinutes": 12,
+    "objectiveIds": [
+      "obj-u3-gender"
+    ],
+    "steps": [
+      {
+        "id": "u3-st-teach-gender-1",
+        "kind": "TEACH",
+        "title": "Read the admitted grouping sentence",
+        "body": "The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.",
+        "referenceIds": [
+          "ref-u35-attribution"
+        ]
+      },
+      {
+        "id": "u3-st-teach-gender-2",
+        "kind": "TEACH",
+        "title": "Four records in the first group",
+        "body": "These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. ",
+        "referenceIds": [
+          "ref-u35-attribution"
+        ],
+        "exampleIds": [
+          "ex-u3-стол",
+          "ex-u3-дом",
+          "ex-u3-город",
+          "ex-u3-брат"
+        ]
+      },
+      {
+        "id": "u3-st-guided-gender-2",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u3-i-gender-стол",
+          "u3-i-gender-дом"
+        ],
+        "remediationStepId": "u3-st-rem-gender"
+      },
+      {
+        "id": "u3-st-teach-gender-3",
+        "kind": "TEACH",
+        "title": "Four records in the second group",
+        "body": "These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. ",
+        "referenceIds": [
+          "ref-u35-attribution"
+        ],
+        "exampleIds": [
+          "ex-u3-книга",
+          "ex-u3-вода",
+          "ex-u3-школа",
+          "ex-u3-работа"
+        ]
+      },
+      {
+        "id": "u3-st-guided-gender-3",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u3-i-gender-книга"
+        ],
+        "remediationStepId": "u3-st-rem-gender"
+      },
+      {
+        "id": "u3-st-teach-gender-4",
+        "kind": "TEACH",
+        "title": "Four records in the third group",
+        "body": "These admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. ",
+        "referenceIds": [
+          "ref-u35-attribution"
+        ],
+        "exampleIds": [
+          "ex-u3-окно",
+          "ex-u3-письмо",
+          "ex-u3-молоко",
+          "ex-u3-море"
+        ]
+      },
+      {
+        "id": "u3-st-guided-gender-4",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u3-i-gender-окно"
+        ],
+        "remediationStepId": "u3-st-rem-gender"
+      },
+      {
+        "id": "u3-st-teach-gender-5",
+        "kind": "TEACH",
+        "title": "Two records the page still places in the first group",
+        "body": "дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.",
+        "referenceIds": [
+          "ref-u35-attribution"
+        ],
+        "exampleIds": [
+          "ex-u3-мужчина",
+          "ex-u3-дядя"
+        ]
+      },
+      {
+        "id": "u3-st-guided-gender-5",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u3-i-gender-мужчина"
+        ],
+        "remediationStepId": "u3-st-rem-gender"
+      },
+      {
+        "id": "u3-st-rem-gender",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.",
+        "exampleIds": [
+          "ex-u3-стол",
+          "ex-u3-дом"
+        ]
+      },
+      {
+        "id": "u3-st-check-gender",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u3-i-gender-город",
+          "u3-i-gender-друг",
+          "u3-i-gender-дверь",
+          "u3-i-gender-море",
+          "u3-i-gender-дядя"
+        ],
+        "remediationStepId": "u3-st-rem-gender"
+      }
+    ]
+  },
+  "afterSession": {
+    "id": "u3-s-gender",
+    "title": "Recognize admitted noun genders",
+    "estimatedMinutes": 12,
+    "objectiveIds": [
+      "obj-u3-gender"
+    ],
+    "steps": [
+      {
+        "id": "u3-st-teach-gender-1",
+        "kind": "TEACH",
+        "title": "Read the admitted grouping sentence",
+        "body": "The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.",
+        "referenceIds": [
+          "ref-u35-attribution"
+        ]
+      },
+      {
+        "id": "u3-st-teach-gender-2",
+        "kind": "TEACH",
+        "title": "Four records in the first group",
+        "body": "These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.",
+        "referenceIds": [
+          "ref-u35-attribution"
+        ],
+        "exampleIds": [
+          "ex-u3-стол",
+          "ex-u3-дом",
+          "ex-u3-город",
+          "ex-u3-брат",
+          "ex-u3-друг"
+        ]
+      },
+      {
+        "id": "u3-st-guided-gender-2",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u3-i-gender-стол",
+          "u3-i-gender-дом"
+        ],
+        "remediationStepId": "u3-st-rem-gender"
+      },
+      {
+        "id": "u3-st-teach-gender-3",
+        "kind": "TEACH",
+        "title": "Four records in the second group",
+        "body": "These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.",
+        "referenceIds": [
+          "ref-u35-attribution"
+        ],
+        "exampleIds": [
+          "ex-u3-книга",
+          "ex-u3-вода",
+          "ex-u3-школа",
+          "ex-u3-работа",
+          "ex-u3-дверь"
+        ]
+      },
+      {
+        "id": "u3-st-guided-gender-3",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u3-i-gender-книга"
+        ],
+        "remediationStepId": "u3-st-rem-gender"
+      },
+      {
+        "id": "u3-st-teach-gender-4",
+        "kind": "TEACH",
+        "title": "Four records in the third group",
+        "body": "These admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. ",
+        "referenceIds": [
+          "ref-u35-attribution"
+        ],
+        "exampleIds": [
+          "ex-u3-окно",
+          "ex-u3-письмо",
+          "ex-u3-молоко",
+          "ex-u3-море"
+        ]
+      },
+      {
+        "id": "u3-st-guided-gender-4",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u3-i-gender-окно"
+        ],
+        "remediationStepId": "u3-st-rem-gender"
+      },
+      {
+        "id": "u3-st-teach-gender-5",
+        "kind": "TEACH",
+        "title": "Two records the page still places in the first group",
+        "body": "дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.",
+        "referenceIds": [
+          "ref-u35-attribution"
+        ],
+        "exampleIds": [
+          "ex-u3-мужчина",
+          "ex-u3-дядя"
+        ]
+      },
+      {
+        "id": "u3-st-guided-gender-5",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u3-i-gender-мужчина"
+        ],
+        "remediationStepId": "u3-st-rem-gender"
+      },
+      {
+        "id": "u3-st-rem-gender",
+        "kind": "REMEDIATE",
+        "title": "Review the admitted noun genders",
+        "body": "The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.\n\nThese admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.\n\nThese admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.\n\nThese admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. \n\nдя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.",
+        "exampleIds": [
+          "ex-u3-стол",
+          "ex-u3-дом",
+          "ex-u3-город",
+          "ex-u3-брат",
+          "ex-u3-друг",
+          "ex-u3-книга",
+          "ex-u3-вода",
+          "ex-u3-школа",
+          "ex-u3-работа",
+          "ex-u3-дверь",
+          "ex-u3-окно",
+          "ex-u3-письмо",
+          "ex-u3-молоко",
+          "ex-u3-море",
+          "ex-u3-мужчина",
+          "ex-u3-дядя"
+        ]
+      },
+      {
+        "id": "u3-st-check-gender",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u3-i-gender-город",
+          "u3-i-gender-друг",
+          "u3-i-gender-дверь",
+          "u3-i-gender-море",
+          "u3-i-gender-дядя"
+        ],
+        "remediationStepId": "u3-st-rem-gender"
+      }
+    ]
+  },
+  "addedExamples": [
+    {
+      "id": "ex-u3-друг",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "друг",
+      "note": "friend",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u3-gender"
+    },
+    {
+      "id": "ex-u3-дверь",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "дверь",
+      "note": "door",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u3-gender"
+    }
+  ],
+  "addedProvenanceIds": [
+    "prov-u3-gender-field-друг",
+    "prov-u3-gender-field-дверь",
+    "prov-ca-u3-gender-u3-st-teach-gender-2-complete-v1",
+    "prov-ca-u3-gender-u3-st-teach-gender-3-complete-v1",
+    "prov-ca-u3-gender-u3-st-rem-gender-complete-v1"
+  ],
+  "oldProvenanceCount": 6914,
+  "newProvenanceCount": 6919,
+  "originalProvenancePreserved": true,
+  "allScoredItemsUnchanged": true,
+  "allOtherUnitsUnchanged": true,
+  "allAdvancementAndPolicyDefinitionsUnchanged": true,
+  "sourceInputs": {
+    "catalog/sources/units-3-5/openrussian/nouns.csv": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
+    "catalog/sources/units-3-5/openrussian/LICENSE": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+    "catalog/sources/units-3-5/wikibooks/gender-4310736.txt": "adb1ade8121640064054e67656112a93b30c47fd4682f9f04aef9278c3c2f3ce",
+    "catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40"
+  },
+  "disposition": "ENGINEERING_CORRECTION_PENDING_QUALIFIED_REVIEW"
+}
