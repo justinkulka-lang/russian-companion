@@ -1,0 +1,63 @@
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:kspDebugKotlin UP-TO-DATE
+> Task :app:compileDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:bundleDebugClassesToRuntimeJar UP-TO-DATE
+> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE
+> Task :app:kspDebugUnitTestKotlin
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:packageDebugUnitTestForUnitTest
+> Task :app:mergeDebugUnitTestManifest UP-TO-DATE
+> Task :app:processDebugUnitTestManifest UP-TO-DATE
+> Task :app:generateDebugUnitTestConfig
+> Task :app:processDebugJavaRes UP-TO-DATE
+
+> Task :app:compileDebugUnitTestKotlin
+w: file:///workspace/russian-companion/app/src/test/java/dev/russiancompanion/v2/Unit13PastTeachingTest.kt:198:20 Redundant creation of Json format. Creating instances for each usage can be slow.
+
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes UP-TO-DATE
+
+> Task :app:validateGenderPack
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Exception in thread "main" java.lang.IllegalStateException: [Provenance prov-ca-u13-past-u13-st-teach-past-aspect-1-complete-v1 content-audit date does not match, Provenance prov-ca-u13-past-u13-st-teach-past-aspect-2-complete-v1 content-audit date does not match, Provenance prov-ca-u13-past-u13-st-teach-past-aspect-3-complete-v1 content-audit date does not match, Provenance prov-ca-u13-past-u13-st-teach-past-aspect-4-complete-v1 content-audit date does not match, Provenance prov-ca-u13-past-u13-st-rem-past-aspect-complete-v1 content-audit date does not match, Russian text has no admitted source record: читал, Russian text has no admitted source record: прочитал, Russian text has no admitted source record: читал, Russian text has no admitted source record: прочитал]
+	at GenderPackValidator.main(GenderPackValidator.java:11)
+
+> Task :app:validateGenderPack FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:validateGenderPack' (registered in initialization script '../setup/gender-validator.gradle').
+> Process 'command '/workspace/jdk21/bin/java'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 32s
+33 actionable tasks: 6 executed, 27 up-to-date

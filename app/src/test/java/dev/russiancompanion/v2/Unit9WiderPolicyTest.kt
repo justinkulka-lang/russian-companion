@@ -279,7 +279,7 @@ class Unit9WiderPolicyTest {
         val oldProcess = ProcessBuilder("git", "show", "61c68cfcf20cd92a4b6c310c4abf8ff2284e36e5:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
         val prior = V2PackLoader.parse(oldProcess.inputStream.bufferedReader().readText()); assertEquals(0, oldProcess.waitFor())
         assertEquals(prior.copy(units = prior.units.map { u -> if (u.number == 9) u.copy(advancement =
-            u.advancement!!.copy(cumulativeReviewPolicyId = Unit9WiderCumulativeReviewPolicy.definition.id)) else u }), p)
+            u.advancement!!.copy(cumulativeReviewPolicyId = Unit9WiderCumulativeReviewPolicy.definition.id)) else u }), Unit13PastTeachingTest.beforeTeachingCorrectionPack())
         val pool = Unit9WiderCumulativeReviewPolicy.definition.pool[2]
         assertEquals(p.unit(3)!!.objectives.single { it.id == "obj-u3-gender" }.checkItemIds, pool.candidateItemIds)
         assertEquals("u3-st-rem-gender", pool.remediationStepId)
