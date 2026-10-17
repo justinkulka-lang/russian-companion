@@ -1,0 +1,146 @@
+{
+  "sourceContext": {
+    "sourceCommit": "1eaef6f502ef402b1a72a3235e0a45a480198fd0",
+    "startedUtc": "2026-10-16T23:56:07.988464+00:00",
+    "command": "bash audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/verify.sh",
+    "inputTrees": {
+      "app/src/main": "86f054cfea8daed02395fadd8601e2fc122e9534",
+      "app/src/test": "d261e46ffceb2b70787504b1b71be8d6aa4827d1",
+      "review": "885e42b720f728ff867488102bd8a1f16ac43598",
+      "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+      "docs": "7364239dde1b40c703aaca92974413f403e928f4"
+    },
+    "scriptSha256": "cada4ea3b4e0686eaa34425028cee6f36f7d1840eaccf75b021decdfc227652f"
+  },
+  "exitCode": 0,
+  "testCounts": {
+    "reported": 10,
+    "passed": 10,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 2,
+  "tests": [
+    {
+      "class": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+      "name": "correctionHasAnExactWhitelistAndNoScoredOrPolicyChanges",
+      "seconds": "41.175",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit9WiderPolicyTest",
+      "name": "allGenuineLifecycleBackupsRestoreReopenAndRetainExactRowsAndCutoff",
+      "seconds": "72.652",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit9WiderPolicyTest",
+      "name": "currentAndDownstreamOldSnapshotsRejectChangedContentAndAcceptOnlyExactPriorDeclaration",
+      "seconds": "21.937",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit9WiderPolicyTest",
+      "name": "genuineLegacyUiKeepsTwoChecksAndBoundPluralRepairInsteadOfNewObligation",
+      "seconds": "25.993",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit9WiderPolicyTest",
+      "name": "versionsRolesLinksEpochAndPacklessWritesFailClosedWithoutChangingHistory",
+      "seconds": "4.518",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit9WiderPolicyTest",
+      "name": "genuineOldPartialTasksUseOwnEligibilityAndActualLegacyPolicyOnAdvance",
+      "seconds": "8.049",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit9WiderPolicyTest",
+      "name": "newGenderUiRepairsFullTeachingAndRequiresAllThreeFreshAssignedAnswers",
+      "seconds": "34.884",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit9WiderPolicyTest",
+      "name": "threeFreshSlotsUseNonFirstGenderCandidateAndRequireAllAnswersBeforeActualAdvance",
+      "seconds": "35.642",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit9WiderPolicyTest",
+      "name": "genuinePriorPackDeclaresV1AndCannotAcceptFutureV2Tasks",
+      "seconds": "10.236",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit9WiderPolicyTest",
+      "name": "fiveGenderCandidatesRequireCurrentTaughtEvidenceAndExactRepairWithoutChangingAssetTuples",
+      "seconds": "10.975",
+      "outcome": "PASSED",
+      "failureMessage": null
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+      "tests": "1",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-16T23:56:56.476Z",
+      "hostname": "f5c5dd6b855f",
+      "time": "44.203"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit9WiderPolicyTest",
+      "tests": "9",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-16T23:56:56.022Z",
+      "hostname": "f5c5dd6b855f",
+      "time": "228.3"
+    }
+  ],
+  "taskStatuses": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Information": 0,
+    "Ignore": 0
+  },
+  "completeSuite": false,
+  "separateScopesDoNotSum": true,
+  "excludedScreenshotExporters": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "apk": {
+    "assembly": "NOT_RUN",
+    "configuredIdentity": "dev.russiancompanion / 2.0.0-dev / code5",
+    "sha256": "NOT_RECORDED",
+    "signature": "NOT_RECORDED"
+  },
+  "releaseApproval": false
+}

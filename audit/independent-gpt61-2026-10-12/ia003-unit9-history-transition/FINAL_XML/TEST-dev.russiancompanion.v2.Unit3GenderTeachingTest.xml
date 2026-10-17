@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit3GenderTeachingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-16T23:56:56.476Z" hostname="f5c5dd6b855f" time="44.203">
+  <properties/>
+  <testcase name="correctionHasAnExactWhitelistAndNoScoredOrPolicyChanges" classname="dev.russiancompanion.v2.Unit3GenderTeachingTest" time="41.175"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -842,6 +842,33 @@
         "remaining": "Wider eligible pools/recent scheduling and qualified assessment;broader findings remain open",
         "legacyRestoreOriginalCause": "UNCONFIRMED",
         "terminalCompletion": "Actual assignment-bound saved row with verified resume at Unit30;no Unit31 or acceptance invented"
+      },
+      "unit9WiderReviewTransition": {
+        "implementationCommit": "d93fa913f75ad5cd80c97c8e036242a389558a3d",
+        "initialTestedSource": "beab2fbbd644e95f796fc27f64baf97e95f00d2c",
+        "finalTestedSource": "1eaef6f502ef402b1a72a3235e0a45a480198fd0",
+        "initialCounts": {
+          "reported": 72,
+          "passed": 70,
+          "failed": 2,
+          "errors": 0,
+          "skipped": 0
+        },
+        "finalSeparateCounts": {
+          "reported": 10,
+          "passed": 10,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "receipt": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/FINAL_VERIFICATION_MANIFEST.json",
+        "newPolicy": "unit9-prior-reading-plural-gender-v2",
+        "assignmentSchema": 5,
+        "legacyPolicy": "unit9-prior-reading-nominative-plural-v1",
+        "legacySchema": 1,
+        "formalAcceptance": false,
+        "broaderIA003": "OPEN",
+        "completeSuite": false
       }
     },
     {
@@ -1468,5 +1495,32 @@
     "overlappingScopesSummed": false,
     "qualifiedAcceptance": false,
     "findingStatus": "OPEN"
+  },
+  "latestUnit9WiderReviewCheckpoint": {
+    "implementationCommit": "d93fa913f75ad5cd80c97c8e036242a389558a3d",
+    "initialTestedSource": "beab2fbbd644e95f796fc27f64baf97e95f00d2c",
+    "finalTestedSource": "1eaef6f502ef402b1a72a3235e0a45a480198fd0",
+    "initialCounts": {
+      "reported": 72,
+      "passed": 70,
+      "failed": 2,
+      "errors": 0,
+      "skipped": 0
+    },
+    "finalSeparateCounts": {
+      "reported": 10,
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "receipt": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/FINAL_VERIFICATION_MANIFEST.json",
+    "newPolicy": "unit9-prior-reading-plural-gender-v2",
+    "assignmentSchema": 5,
+    "legacyPolicy": "unit9-prior-reading-nominative-plural-v1",
+    "legacySchema": 1,
+    "formalAcceptance": false,
+    "broaderIA003": "OPEN",
+    "completeSuite": false
   }
 }
