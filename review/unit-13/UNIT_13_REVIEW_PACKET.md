@@ -11,12 +11,12 @@ Unit 13 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: fa3899de2258b6c0cd987d51a4b376aed408f9c2
-- Unit content-review SHA-256: d096b1457d65d756fb9af088488b2808ddb81fad85455c4854a835dedcdd2baa
+- Curriculum source commit: b92a7c847d1d8c4d7270f08f518b6608f95936f7
+- Unit content-review SHA-256: d9bd9745c4f98850c1ab86ebc42a2c5bfee29b7af8754729c5b288a964dd90ee
 - Mapping-package SHA-256: e8ca3b0ba9b6a48acc54ea18e10a6e6fb1291698252fcbc35b02dbf2a820deb4
-- Pack content-review SHA-256: 62e9301c3949ff51bc0d1f5383e0108f30fd3038c5c4da25a01a14f5e265573c
-- Review-package SHA-256: 62f87154201a16f1abbcedd03ee18304f27e2096eb75f1caf2df1870dbe38ad9
-- Repository source SHA-256: a2cc1fc3645ab0a645973cec93dacf8aa9da1b8f67d2ccb05ec28b1966d1aad0
+- Pack content-review SHA-256: 81d3e9cb81e408409d12476faed7f73cd9d217bccea2e65f108ac083f3b72dd3
+- Review-package SHA-256: 51470c21a29af3a73a8dcee071b0b729d85c28c3ed8a6ab3e362aeb88268e157
+- Repository source SHA-256: c51266c3ac6a3b4005f9c17792c63def4057a36c092056a8a3ee45aa0aba8b00
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -420,12 +420,12 @@ remediationStepId=u13-st-rem-past-aspect
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 3efc63367cbed6712374d7779782d6eab164f28b8a857911e20c113950aa36f2
+- Content hash: 71964f94febd89d7faa333be780316d422ffbd9d93defc93c7af27fd36fe097f
 
 title=Choose the admitted report label
 estimatedMinutes=12
 objectives=obj-u13-tense-keep
-steps=u13-st-teach-tense-keep-1,u13-st-guided-tense-keep-1,u13-st-teach-tense-keep-2,u13-st-teach-tense-keep-3,u13-st-rem-tense-keep,u13-st-check-tense-keep
+steps=u13-st-teach-tense-keep-1,u13-st-teach-tense-keep-2,u13-st-teach-tense-keep-3,u13-st-guided-tense-keep-1,u13-st-rem-tense-keep,u13-st-check-tense-keep
 
 ### STEP `u13-st-teach-tense-keep-1`
 
@@ -435,15 +435,59 @@ steps=u13-st-teach-tense-keep-1,u13-st-guided-tense-keep-1,u13-st-teach-tense-ke
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 578ade54e53fc635ea80782f3cdb85f97f4449feba0a5728e31e7fc5e54ece91
+- Content hash: 87a442f34f97137295e4488dba7927fe019d98fdcbd665dcf5e1c0753fd80498
 
 kind=TEACH
 title=Admitted lines
-body=Он сказа́л, что он англича́нин — we keep the tense the same. Я скажу ему ве́чером — I will tell him in the evening. 
+body=The supplied nationality report Он сказа́л, что он англича́нин describes a past act of saying and a nationality statement with no expressed present-tense copula. The source label we keep the tense the same describes this Russian reporting comparison; it does not mean that every verb in a report has the same tense. The retained direct evening example is Я скажу ему ве́чером. It expresses a future act of telling him in the evening.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
 examples=ex-u13-tense-keep-0,ex-u13-tense-keep-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u13-st-teach-tense-keep-2`
+
+- Objectives: obj-u13-tense-keep
+- Sessions: u13-s-tense-keep
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d6ef4edbcf2808ef5f11d47ebe29c0d03673c3e7f3e5eb9dfacb0e0edb29783a
+
+kind=TEACH
+title=Admitted instruction
+body=In the source comparison, English can shift a present statement to a past form after a past reporting verb. The label we usually change the tense names that English backshift comparison. Backshift is not mandatory in every English report. The contrasting Russian example does not require automatic English-style backshift of the embedded statement. Classify these supplied labels rather than applying an always-change or never-change rule to unfamiliar reports.
+dominantAction=Continue
+references=ref-u1115-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u13-st-teach-tense-keep-3`
+
+- Objectives: obj-u13-tense-keep
+- Sessions: u13-s-tense-keep
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 9f80ab85679f1d4e6fef375ea363e1e2a9733d1bfea20833d1f6250cacbcfb63
+
+kind=TEACH
+title=Admitted lines
+body=The supplied evening report Она́ сказа́ла, что она́ ска́жет ему́ ве́чером has a past reporting frame and an embedded future act of telling him in the evening. It corresponds to the retained direct evening example by the event described; pronoun changes depend on who is speaking. The supplied alternative Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian in Moscow, without a past reporting frame. Recognize these supplied contexts; this check does not ask you to construct a new report.
+dominantAction=Continue
+references=ref-u1115-attribution
+items=
+examples=ex-u13-tense-keep-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -471,50 +515,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u13-st-rem-tense-keep
 
-### STEP `u13-st-teach-tense-keep-2`
-
-- Objectives: obj-u13-tense-keep
-- Sessions: u13-s-tense-keep
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: db1b1bdf06ee9f1920ab664aeb7e21a8e0b387173882fef6bdb8db2882c9a809
-
-kind=TEACH
-title=Admitted instruction
-body=In English, when reporting a story, we usually change the tense of what was said: compare "I ''am'' English" with "He said he ''was'' English" - the reported verb changes tense. In Russian, however, we keep the tense the same, so the same report is literally, "He said he '''is''' English" - "'''Он сказа́л, что он англича́нин'''", not "'''Он сказа́л, что он ''был'' англича́нином'''".
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u13-st-teach-tense-keep-3`
-
-- Objectives: obj-u13-tense-keep
-- Sessions: u13-s-tense-keep
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 71340b94a8e6654d91fb387e0e42e35e9362548de8b0a6239c699e4f7dd6fad3
-
-kind=TEACH
-title=Admitted lines
-body=Она́ сказа́ла, что она́ ска́жет ему́ ве́чером — She said that she would speak to him in the evening. 
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=ex-u13-tense-keep-2
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u13-st-rem-tense-keep`
 
 - Objectives: obj-u13-tense-keep
@@ -523,15 +523,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5946479a55831a98e99354c7decaec231784254542559920853e56b680712d25
+- Content hash: f43bd3230afd875f93408812b8ae33911aae6530e162fcb0fd8178f0b0dcb068
 
 kind=REMEDIATE
 title=Remediation
-body=In English, when reporting a story, we usually change the tense of what was said: compare "I ''am'' English" with "He said he ''was'' English" - the reported verb changes tense. In Russian, however, we keep the tense the same, so the same report is literally, "He said he '''is''' English" - "'''Он сказа́л, что он англича́нин'''", not "'''Он сказа́л, что он ''был'' англича́нином'''".
+body=The supplied nationality report Он сказа́л, что он англича́нин describes a past act of saying and a nationality statement with no expressed present-tense copula. The source label we keep the tense the same describes this Russian reporting comparison; it does not mean that every verb in a report has the same tense. The retained direct evening example is Я скажу ему ве́чером. It expresses a future act of telling him in the evening.
+
+In the source comparison, English can shift a present statement to a past form after a past reporting verb. The label we usually change the tense names that English backshift comparison. Backshift is not mandatory in every English report. The contrasting Russian example does not require automatic English-style backshift of the embedded statement. Classify these supplied labels rather than applying an always-change or never-change rule to unfamiliar reports.
+
+The supplied evening report Она́ сказа́ла, что она́ ска́жет ему́ ве́чером has a past reporting frame and an embedded future act of telling him in the evening. It corresponds to the retained direct evening example by the event described; pronoun changes depend on who is speaking. The supplied alternative Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian in Moscow, without a past reporting frame. Recognize these supplied contexts; this check does not ask you to construct a new report.
 dominantAction=Continue
 references=
 items=
-examples=ex-u13-tense-keep-0,ex-u13-tense-keep-1
+examples=ex-u13-tense-keep-0,ex-u13-tense-keep-1,ex-u13-tense-keep-2
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -567,12 +571,12 @@ remediationStepId=u13-st-rem-tense-keep
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 71526c6591d087f1ffcc9df0834a537141c1fe97be89568f3a3e797e378ac47e
+- Content hash: e2ec362fb8e89b506b1142eab0e12f34326e14801309f98174cd6cb976a9f53b
 
 title=Choose the admitted infinitive partner
 estimatedMinutes=12
 objectives=obj-u13-infinitive
-steps=u13-st-teach-infinitive-1,u13-st-guided-infinitive-1,u13-st-teach-infinitive-2,u13-st-teach-infinitive-3,u13-st-rem-infinitive,u13-st-check-infinitive
+steps=u13-st-teach-infinitive-1,u13-st-teach-infinitive-2,u13-st-teach-infinitive-3,u13-st-guided-infinitive-1,u13-st-rem-infinitive,u13-st-check-infinitive
 
 ### STEP `u13-st-teach-infinitive-1`
 
@@ -582,15 +586,59 @@ steps=u13-st-teach-infinitive-1,u13-st-guided-infinitive-1,u13-st-teach-infiniti
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: db895034aec451cbcb0c18d6e72f0edbad24ef2be41ec5e46e67e08afcca423c
+- Content hash: 733d68a7bb2f4aa16f12ac43a9aad2c0ff08e82c6cbc0c7a01d5bf7d8414e0a1
 
 kind=TEACH
 title=Admitted lines
-body=говори́ть — to speak. сказа́ть — to speak. 
+body=For the supplied saying/telling pair, говори́ть is imperfective and сказа́ть is perfective. The inherited source gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak. Infinitives by themselves do not specify tense.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
 examples=ex-u13-infinitive-0,ex-u13-infinitive-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u13-st-teach-infinitive-2`
+
+- Objectives: obj-u13-infinitive
+- Sessions: u13-s-infinitive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: a3bfd831892f1fb695f8f60558e69bc306e0dce88fdc2de173f8f6ebff822e5a
+
+kind=TEACH
+title=Admitted instruction
+body=A request for a perfective or imperfective partner asks for the named aspect within the supplied vocabulary pair. Keep both the aspect and meaning of the pair in view. A verb from the other pair is not a valid answer merely because it has the requested aspect. These checks recognize the retained pairs; they do not establish sentence-context aspect choice or unrestricted verb production.
+dominantAction=Continue
+references=ref-u1115-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u13-st-teach-infinitive-3`
+
+- Objectives: obj-u13-infinitive
+- Sessions: u13-s-infinitive
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: d1d649d8298a0816ee0af90ecd44c3adad56db9fdf5c1ed40c1ab6a844c85d80
+
+kind=TEACH
+title=Admitted lines
+body=The supplied doing/making pair is де́лать, imperfective, and сде́лать, perfective. Given де́лать and a request for its perfective partner, choose сде́лать. Given сказа́ть and a request for its imperfective partner in the saying/telling pair, choose говори́ть. Learn the two recorded pairs rather than assuming that any prefix gives the corresponding perfective of any verb.
+dominantAction=Continue
+references=ref-u1115-attribution
+items=
+examples=ex-u13-infinitive-2,ex-u13-infinitive-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -618,50 +666,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u13-st-rem-infinitive
 
-### STEP `u13-st-teach-infinitive-2`
-
-- Objectives: obj-u13-infinitive
-- Sessions: u13-s-infinitive
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 85bea88cc8c358bd907e8e57d1b0ae337b941c23d7496dd3d1a7a572284f0df6
-
-kind=TEACH
-title=Admitted instruction
-body=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u13-st-teach-infinitive-3`
-
-- Objectives: obj-u13-infinitive
-- Sessions: u13-s-infinitive
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8dbf861578456c3cf1393f601ecfad726a0a867690672bf1299854d8080cec11
-
-kind=TEACH
-title=Admitted lines
-body=де́лать — to do. сде́лать — to do. 
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=ex-u13-infinitive-2,ex-u13-infinitive-3
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u13-st-rem-infinitive`
 
 - Objectives: obj-u13-infinitive
@@ -670,15 +674,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: eb75ba12c88a630eeb6aab973d563b8267980a531e3a52738c3b9747f5c00dc7
+- Content hash: f3c49ebb3143b186e10d4f46be70157bd16e04a20e6125ce0c6ee0949667f618
 
 kind=REMEDIATE
 title=Remediation
-body=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+body=For the supplied saying/telling pair, говори́ть is imperfective and сказа́ть is perfective. The inherited source gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak. Infinitives by themselves do not specify tense.
+
+A request for a perfective or imperfective partner asks for the named aspect within the supplied vocabulary pair. Keep both the aspect and meaning of the pair in view. A verb from the other pair is not a valid answer merely because it has the requested aspect. These checks recognize the retained pairs; they do not establish sentence-context aspect choice or unrestricted verb production.
+
+The supplied doing/making pair is де́лать, imperfective, and сде́лать, perfective. Given де́лать and a request for its perfective partner, choose сде́лать. Given сказа́ть and a request for its imperfective partner in the saying/telling pair, choose говори́ть. Learn the two recorded pairs rather than assuming that any prefix gives the corresponding perfective of any verb.
 dominantAction=Continue
 references=
 items=
-examples=ex-u13-infinitive-0,ex-u13-infinitive-1
+examples=ex-u13-infinitive-0,ex-u13-infinitive-1,ex-u13-infinitive-2,ex-u13-infinitive-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1773,6 +1781,262 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=862f4d1a9d8133524e373822de5a02f8c306aa8fdbf58cc716270baf759394de
 contentHash=836034964dcbd33368668452a1e0eccc8070a51cf1408fb029370b16964f1c04
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-context-u13-st-rem-infinitive-complete-v1`
+
+- Objectives: obj-u13-infinitive
+- Sessions: u13-s-orient, u13-s-infinitive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ec837cc0b323fc2b559a80dbdfdbafd96ca85c9f2b9e94b982d35ae7490ddb2c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-infinitive:u13-st-rem-infinitive:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Future tense oldid3353822 complete context,especially Present or future and the retained direct/report/Moscow examples;Verbal Aspect oldid4059032 complete context,lexical saying/telling and doing/making pairs and prefix qualifications;existing independently authored Unit12 and Unit13 English caveats/feedback retained. Copyrights oldid4622060 and retained OpenRussian/Wikibooks CC BY-SA4.0 terms and contributor/source/revision/URI/change/share-alike notices remain. Native clauses/tokens/source labels retain their original separate licensed provenance;they are not relicensed as original English. Independently authored English explanation and arrangement on2026-10-17. Do not adopt the source perfective-being classification,universal English/Russian backshift,prefix,completion or future-choice algorithms. No private Penguin prose,new native form,productive proficiency claim or qualified acceptance.
+For the supplied saying/telling pair, говори́ть is imperfective and сказа́ть is perfective. The inherited source gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak. Infinitives by themselves do not specify tense.
+
+A request for a perfective or imperfective partner asks for the named aspect within the supplied vocabulary pair. Keep both the aspect and meaning of the pair in view. A verb from the other pair is not a valid answer merely because it has the requested aspect. These checks recognize the retained pairs; they do not establish sentence-context aspect choice or unrestricted verb production.
+
+The supplied doing/making pair is де́лать, imperfective, and сде́лать, perfective. Given де́лать and a request for its perfective partner, choose сде́лать. Given сказа́ть and a request for its imperfective partner in the saying/telling pair, choose говори́ть. Learn the two recorded pairs rather than assuming that any prefix gives the corresponding perfective of any verb.
+shippedText=For the supplied saying/telling pair, говори́ть is imperfective and сказа́ть is perfective. The inherited source gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak. Infinitives by themselves do not specify tense.
+
+A request for a perfective or imperfective partner asks for the named aspect within the supplied vocabulary pair. Keep both the aspect and meaning of the pair in view. A verb from the other pair is not a valid answer merely because it has the requested aspect. These checks recognize the retained pairs; they do not establish sentence-context aspect choice or unrestricted verb production.
+
+The supplied doing/making pair is де́лать, imperfective, and сде́лать, perfective. Given де́лать and a request for its perfective partner, choose сде́лать. Given сказа́ть and a request for its imperfective partner in the saying/telling pair, choose говори́ть. Learn the two recorded pairs rather than assuming that any prefix gives the corresponding perfective of any verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=a5564b9079666212e543cf38d0d3fcb2f1722f151aa3d43781950baa1402c8ba
+contentHash=8dea20151bbe5a929e01e70742cbf6c27723bb365c56c5379ddaeb94f729f573
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-context-u13-st-rem-tense-keep-complete-v1`
+
+- Objectives: obj-u13-tense-keep
+- Sessions: u13-s-orient, u13-s-tense-keep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 838ea94c942155e948173349d17e7861449d7b975544bd182a4588e23d5574ae
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-tense-keep:u13-st-rem-tense-keep:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Future tense oldid3353822 complete context,especially Present or future and the retained direct/report/Moscow examples;Verbal Aspect oldid4059032 complete context,lexical saying/telling and doing/making pairs and prefix qualifications;existing independently authored Unit12 and Unit13 English caveats/feedback retained. Copyrights oldid4622060 and retained OpenRussian/Wikibooks CC BY-SA4.0 terms and contributor/source/revision/URI/change/share-alike notices remain. Native clauses/tokens/source labels retain their original separate licensed provenance;they are not relicensed as original English. Independently authored English explanation and arrangement on2026-10-17. Do not adopt the source perfective-being classification,universal English/Russian backshift,prefix,completion or future-choice algorithms. No private Penguin prose,new native form,productive proficiency claim or qualified acceptance.
+The supplied nationality report Он сказа́л, что он англича́нин describes a past act of saying and a nationality statement with no expressed present-tense copula. The source label we keep the tense the same describes this Russian reporting comparison; it does not mean that every verb in a report has the same tense. The retained direct evening example is Я скажу ему ве́чером. It expresses a future act of telling him in the evening.
+
+In the source comparison, English can shift a present statement to a past form after a past reporting verb. The label we usually change the tense names that English backshift comparison. Backshift is not mandatory in every English report. The contrasting Russian example does not require automatic English-style backshift of the embedded statement. Classify these supplied labels rather than applying an always-change or never-change rule to unfamiliar reports.
+
+The supplied evening report Она́ сказа́ла, что она́ ска́жет ему́ ве́чером has a past reporting frame and an embedded future act of telling him in the evening. It corresponds to the retained direct evening example by the event described; pronoun changes depend on who is speaking. The supplied alternative Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian in Moscow, without a past reporting frame. Recognize these supplied contexts; this check does not ask you to construct a new report.
+shippedText=The supplied nationality report Он сказа́л, что он англича́нин describes a past act of saying and a nationality statement with no expressed present-tense copula. The source label we keep the tense the same describes this Russian reporting comparison; it does not mean that every verb in a report has the same tense. The retained direct evening example is Я скажу ему ве́чером. It expresses a future act of telling him in the evening.
+
+In the source comparison, English can shift a present statement to a past form after a past reporting verb. The label we usually change the tense names that English backshift comparison. Backshift is not mandatory in every English report. The contrasting Russian example does not require automatic English-style backshift of the embedded statement. Classify these supplied labels rather than applying an always-change or never-change rule to unfamiliar reports.
+
+The supplied evening report Она́ сказа́ла, что она́ ска́жет ему́ ве́чером has a past reporting frame and an embedded future act of telling him in the evening. It corresponds to the retained direct evening example by the event described; pronoun changes depend on who is speaking. The supplied alternative Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian in Moscow, without a past reporting frame. Recognize these supplied contexts; this check does not ask you to construct a new report.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2f9ea929b461970c0cdfe62aafb3f4caf0384b69180f4df129ec5118cb90ae7c
+contentHash=9d884cbcd1d8eef7930ef8f2f08b4f5f3261056b84a2fb93f593e2602eb101ff
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-context-u13-st-teach-infinitive-1-complete-v1`
+
+- Objectives: obj-u13-infinitive
+- Sessions: u13-s-orient, u13-s-infinitive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 98c1bb7fd3254a53a0986de6c4463ec23ba565db6323ff40255bdb37e22997a1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-infinitive:u13-st-teach-infinitive-1:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Future tense oldid3353822 complete context,especially Present or future and the retained direct/report/Moscow examples;Verbal Aspect oldid4059032 complete context,lexical saying/telling and doing/making pairs and prefix qualifications;existing independently authored Unit12 and Unit13 English caveats/feedback retained. Copyrights oldid4622060 and retained OpenRussian/Wikibooks CC BY-SA4.0 terms and contributor/source/revision/URI/change/share-alike notices remain. Native clauses/tokens/source labels retain their original separate licensed provenance;they are not relicensed as original English. Independently authored English explanation and arrangement on2026-10-17. Do not adopt the source perfective-being classification,universal English/Russian backshift,prefix,completion or future-choice algorithms. No private Penguin prose,new native form,productive proficiency claim or qualified acceptance.
+For the supplied saying/telling pair, говори́ть is imperfective and сказа́ть is perfective. The inherited source gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak. Infinitives by themselves do not specify tense.
+shippedText=For the supplied saying/telling pair, говори́ть is imperfective and сказа́ть is perfective. The inherited source gloss to speak is broad; these are context-dependent counterparts for saying/telling, not interchangeable verbs for every meaning of English speak. Infinitives by themselves do not specify tense.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2d30963271e996668d9353d2b031fc7d7a1079630110fcc4046a5ba2d7faff79
+contentHash=8fffa366c16b54f1ac33553413f9c7cc7bce7461774f452fd223d06d7d9479c3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-context-u13-st-teach-infinitive-2-complete-v1`
+
+- Objectives: obj-u13-infinitive
+- Sessions: u13-s-orient, u13-s-infinitive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 90b89123b50a2eaa8d7c83030ac537a16f41baabc9d852053170eed2d5d0ddfb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-infinitive:u13-st-teach-infinitive-2:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Future tense oldid3353822 complete context,especially Present or future and the retained direct/report/Moscow examples;Verbal Aspect oldid4059032 complete context,lexical saying/telling and doing/making pairs and prefix qualifications;existing independently authored Unit12 and Unit13 English caveats/feedback retained. Copyrights oldid4622060 and retained OpenRussian/Wikibooks CC BY-SA4.0 terms and contributor/source/revision/URI/change/share-alike notices remain. Native clauses/tokens/source labels retain their original separate licensed provenance;they are not relicensed as original English. Independently authored English explanation and arrangement on2026-10-17. Do not adopt the source perfective-being classification,universal English/Russian backshift,prefix,completion or future-choice algorithms. No private Penguin prose,new native form,productive proficiency claim or qualified acceptance.
+A request for a perfective or imperfective partner asks for the named aspect within the supplied vocabulary pair. Keep both the aspect and meaning of the pair in view. A verb from the other pair is not a valid answer merely because it has the requested aspect. These checks recognize the retained pairs; they do not establish sentence-context aspect choice or unrestricted verb production.
+shippedText=A request for a perfective or imperfective partner asks for the named aspect within the supplied vocabulary pair. Keep both the aspect and meaning of the pair in view. A verb from the other pair is not a valid answer merely because it has the requested aspect. These checks recognize the retained pairs; they do not establish sentence-context aspect choice or unrestricted verb production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d5c949246595ba466d7e40e646e41c89830dbb864088cc9be9678385f37a6a5a
+contentHash=2b8de06aab9e4f88b30927cb4833cff55f9062acb75868bd0d39a68785d3c992
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-context-u13-st-teach-infinitive-3-complete-v1`
+
+- Objectives: obj-u13-infinitive
+- Sessions: u13-s-orient, u13-s-infinitive
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4fbd6dcbd1806d26833893d636ab1fb95d08f15c489bbada817f61b3dd130850
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-infinitive:u13-st-teach-infinitive-3:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Future tense oldid3353822 complete context,especially Present or future and the retained direct/report/Moscow examples;Verbal Aspect oldid4059032 complete context,lexical saying/telling and doing/making pairs and prefix qualifications;existing independently authored Unit12 and Unit13 English caveats/feedback retained. Copyrights oldid4622060 and retained OpenRussian/Wikibooks CC BY-SA4.0 terms and contributor/source/revision/URI/change/share-alike notices remain. Native clauses/tokens/source labels retain their original separate licensed provenance;they are not relicensed as original English. Independently authored English explanation and arrangement on2026-10-17. Do not adopt the source perfective-being classification,universal English/Russian backshift,prefix,completion or future-choice algorithms. No private Penguin prose,new native form,productive proficiency claim or qualified acceptance.
+The supplied doing/making pair is де́лать, imperfective, and сде́лать, perfective. Given де́лать and a request for its perfective partner, choose сде́лать. Given сказа́ть and a request for its imperfective partner in the saying/telling pair, choose говори́ть. Learn the two recorded pairs rather than assuming that any prefix gives the corresponding perfective of any verb.
+shippedText=The supplied doing/making pair is де́лать, imperfective, and сде́лать, perfective. Given де́лать and a request for its perfective partner, choose сде́лать. Given сказа́ть and a request for its imperfective partner in the saying/telling pair, choose говори́ть. Learn the two recorded pairs rather than assuming that any prefix gives the corresponding perfective of any verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=972bb2d005c4f2a7cbabc794364fc44b96ab3de20d5d05bbced38630465e7f3f
+contentHash=206622a43c218f4324e59617b5265fdf7b9679704460667cbd0484c21dd58a9e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-context-u13-st-teach-tense-keep-1-complete-v1`
+
+- Objectives: obj-u13-tense-keep
+- Sessions: u13-s-orient, u13-s-tense-keep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8c84f136054426fe8077e243e50818110ae5e9b4fcdbc947841eae28c8d26de
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-tense-keep:u13-st-teach-tense-keep-1:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Future tense oldid3353822 complete context,especially Present or future and the retained direct/report/Moscow examples;Verbal Aspect oldid4059032 complete context,lexical saying/telling and doing/making pairs and prefix qualifications;existing independently authored Unit12 and Unit13 English caveats/feedback retained. Copyrights oldid4622060 and retained OpenRussian/Wikibooks CC BY-SA4.0 terms and contributor/source/revision/URI/change/share-alike notices remain. Native clauses/tokens/source labels retain their original separate licensed provenance;they are not relicensed as original English. Independently authored English explanation and arrangement on2026-10-17. Do not adopt the source perfective-being classification,universal English/Russian backshift,prefix,completion or future-choice algorithms. No private Penguin prose,new native form,productive proficiency claim or qualified acceptance.
+The supplied nationality report Он сказа́л, что он англича́нин describes a past act of saying and a nationality statement with no expressed present-tense copula. The source label we keep the tense the same describes this Russian reporting comparison; it does not mean that every verb in a report has the same tense. The retained direct evening example is Я скажу ему ве́чером. It expresses a future act of telling him in the evening.
+shippedText=The supplied nationality report Он сказа́л, что он англича́нин describes a past act of saying and a nationality statement with no expressed present-tense copula. The source label we keep the tense the same describes this Russian reporting comparison; it does not mean that every verb in a report has the same tense. The retained direct evening example is Я скажу ему ве́чером. It expresses a future act of telling him in the evening.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58d32c5a07310a06415e92253de2a379afacdf13f7e982de6e3341ec913dee9c
+contentHash=d438ab8e41edb7e322b26ed7c33e33d10d2ea757e5f29d2e727fdaa9bdb249b1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-context-u13-st-teach-tense-keep-2-complete-v1`
+
+- Objectives: obj-u13-tense-keep
+- Sessions: u13-s-orient, u13-s-tense-keep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f27a89651333ca701c6d897239355adef3eb7b9a97dbe566020d5d2ea9797ebd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-tense-keep:u13-st-teach-tense-keep-2:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Future tense oldid3353822 complete context,especially Present or future and the retained direct/report/Moscow examples;Verbal Aspect oldid4059032 complete context,lexical saying/telling and doing/making pairs and prefix qualifications;existing independently authored Unit12 and Unit13 English caveats/feedback retained. Copyrights oldid4622060 and retained OpenRussian/Wikibooks CC BY-SA4.0 terms and contributor/source/revision/URI/change/share-alike notices remain. Native clauses/tokens/source labels retain their original separate licensed provenance;they are not relicensed as original English. Independently authored English explanation and arrangement on2026-10-17. Do not adopt the source perfective-being classification,universal English/Russian backshift,prefix,completion or future-choice algorithms. No private Penguin prose,new native form,productive proficiency claim or qualified acceptance.
+In the source comparison, English can shift a present statement to a past form after a past reporting verb. The label we usually change the tense names that English backshift comparison. Backshift is not mandatory in every English report. The contrasting Russian example does not require automatic English-style backshift of the embedded statement. Classify these supplied labels rather than applying an always-change or never-change rule to unfamiliar reports.
+shippedText=In the source comparison, English can shift a present statement to a past form after a past reporting verb. The label we usually change the tense names that English backshift comparison. Backshift is not mandatory in every English report. The contrasting Russian example does not require automatic English-style backshift of the embedded statement. Classify these supplied labels rather than applying an always-change or never-change rule to unfamiliar reports.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f1cffdc6a55f2123f08822f60258e71963b7ff79d82a84828a50cd52bf3db25c
+contentHash=7d148d9b264a14adad26a87e1e34fc668585b9cd5432df706efa2bca2e3904aa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-context-u13-st-teach-tense-keep-3-complete-v1`
+
+- Objectives: obj-u13-tense-keep
+- Sessions: u13-s-orient, u13-s-tense-keep
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 041f826dfe7b849931b2f16f3ffeedeacc785618294e49ac6eb10d03875bb6ec
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-tense-keep:u13-st-teach-tense-keep-3:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Future tense oldid3353822 complete context,especially Present or future and the retained direct/report/Moscow examples;Verbal Aspect oldid4059032 complete context,lexical saying/telling and doing/making pairs and prefix qualifications;existing independently authored Unit12 and Unit13 English caveats/feedback retained. Copyrights oldid4622060 and retained OpenRussian/Wikibooks CC BY-SA4.0 terms and contributor/source/revision/URI/change/share-alike notices remain. Native clauses/tokens/source labels retain their original separate licensed provenance;they are not relicensed as original English. Independently authored English explanation and arrangement on2026-10-17. Do not adopt the source perfective-being classification,universal English/Russian backshift,prefix,completion or future-choice algorithms. No private Penguin prose,new native form,productive proficiency claim or qualified acceptance.
+The supplied evening report Она́ сказа́ла, что она́ ска́жет ему́ ве́чером has a past reporting frame and an embedded future act of telling him in the evening. It corresponds to the retained direct evening example by the event described; pronoun changes depend on who is speaking. The supplied alternative Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian in Moscow, without a past reporting frame. Recognize these supplied contexts; this check does not ask you to construct a new report.
+shippedText=The supplied evening report Она́ сказа́ла, что она́ ска́жет ему́ ве́чером has a past reporting frame and an embedded future act of telling him in the evening. It corresponds to the retained direct evening example by the event described; pronoun changes depend on who is speaking. The supplied alternative Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски gives a future time clause and a plan to speak Russian in Moscow, without a past reporting frame. Recognize these supplied contexts; this check does not ask you to construct a new report.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c03090e5b04e7fcd6603b834425635ff6264d7fc13ef3c2ffd83d844f4eb54ac
+contentHash=bd2548b4e3ed75c4f57fbababcd308755dcb5864df4919861d5f6dccc7908d53
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6792,13 +7056,14 @@ permitsAppUse=true
 - `u13-st-teach-tense-keep-1` EXAMPLE `ex-u13-tense-keep-0`
 - `u13-st-teach-tense-keep-1` EXAMPLE `ex-u13-tense-keep-1`
 - `u13-st-teach-tense-keep-1` REFERENCE `ref-u1115-attribution`
-- `u13-st-guided-tense-keep-1` REMEDIATION `u13-st-rem-tense-keep`
-- `u13-st-guided-tense-keep-1` ITEM `u13-g-tense-keep-0`
 - `u13-st-teach-tense-keep-2` REFERENCE `ref-u1115-attribution`
 - `u13-st-teach-tense-keep-3` EXAMPLE `ex-u13-tense-keep-2`
 - `u13-st-teach-tense-keep-3` REFERENCE `ref-u1115-attribution`
+- `u13-st-guided-tense-keep-1` REMEDIATION `u13-st-rem-tense-keep`
+- `u13-st-guided-tense-keep-1` ITEM `u13-g-tense-keep-0`
 - `u13-st-rem-tense-keep` EXAMPLE `ex-u13-tense-keep-0`
 - `u13-st-rem-tense-keep` EXAMPLE `ex-u13-tense-keep-1`
+- `u13-st-rem-tense-keep` EXAMPLE `ex-u13-tense-keep-2`
 - `u13-st-check-tense-keep` REMEDIATION `u13-st-rem-tense-keep`
 - `u13-st-check-tense-keep` ITEM `u13-i-tense-keep-1`
 - `u13-st-check-tense-keep` ITEM `u13-i-tense-keep-2`
@@ -6806,14 +7071,16 @@ permitsAppUse=true
 - `u13-st-teach-infinitive-1` EXAMPLE `ex-u13-infinitive-0`
 - `u13-st-teach-infinitive-1` EXAMPLE `ex-u13-infinitive-1`
 - `u13-st-teach-infinitive-1` REFERENCE `ref-u1115-attribution`
-- `u13-st-guided-infinitive-1` REMEDIATION `u13-st-rem-infinitive`
-- `u13-st-guided-infinitive-1` ITEM `u13-g-infinitive-0`
 - `u13-st-teach-infinitive-2` REFERENCE `ref-u1115-attribution`
 - `u13-st-teach-infinitive-3` EXAMPLE `ex-u13-infinitive-2`
 - `u13-st-teach-infinitive-3` EXAMPLE `ex-u13-infinitive-3`
 - `u13-st-teach-infinitive-3` REFERENCE `ref-u1115-attribution`
+- `u13-st-guided-infinitive-1` REMEDIATION `u13-st-rem-infinitive`
+- `u13-st-guided-infinitive-1` ITEM `u13-g-infinitive-0`
 - `u13-st-rem-infinitive` EXAMPLE `ex-u13-infinitive-0`
 - `u13-st-rem-infinitive` EXAMPLE `ex-u13-infinitive-1`
+- `u13-st-rem-infinitive` EXAMPLE `ex-u13-infinitive-2`
+- `u13-st-rem-infinitive` EXAMPLE `ex-u13-infinitive-3`
 - `u13-st-check-infinitive` REMEDIATION `u13-st-rem-infinitive`
 - `u13-st-check-infinitive` ITEM `u13-i-infinitive-1`
 - `u13-st-check-infinitive` ITEM `u13-i-infinitive-2`
@@ -6838,6 +7105,14 @@ permitsAppUse=true
 - `u13-s-book` OBJECTIVE `obj-u13-book`
 - `u13-st-book-work` REFERENCE `ref-u1115-attribution`
 - `obj-u13-past-aspect` PROVENANCE `prov-ca-13-370`
+- `obj-u13-infinitive` PROVENANCE `prov-ca-u13-context-u13-st-rem-infinitive-complete-v1`
+- `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-context-u13-st-rem-tense-keep-complete-v1`
+- `obj-u13-infinitive` PROVENANCE `prov-ca-u13-context-u13-st-teach-infinitive-1-complete-v1`
+- `obj-u13-infinitive` PROVENANCE `prov-ca-u13-context-u13-st-teach-infinitive-2-complete-v1`
+- `obj-u13-infinitive` PROVENANCE `prov-ca-u13-context-u13-st-teach-infinitive-3-complete-v1`
+- `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-context-u13-st-teach-tense-keep-1-complete-v1`
+- `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-context-u13-st-teach-tense-keep-2-complete-v1`
+- `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-context-u13-st-teach-tense-keep-3-complete-v1`
 - `obj-u13-infinitive` PROVENANCE `prov-ca-u13-feedback-u13-g-infinitive-0`
 - `obj-u13-infinitive` PROVENANCE `prov-ca-u13-feedback-u13-g-infinitive-0-distractor-1`
 - `obj-u13-past-aspect` PROVENANCE `prov-ca-u13-feedback-u13-g-past-aspect-0`
