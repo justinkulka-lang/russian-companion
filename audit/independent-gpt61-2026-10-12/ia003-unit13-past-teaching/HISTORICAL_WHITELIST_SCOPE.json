@@ -1,0 +1,10 @@
+{
+  "path": "app/src/test/java/dev/russiancompanion/v2/Unit9WiderPolicyTest.kt",
+  "method": "fiveGenderCandidatesRequireCurrentTaughtEvidenceAndExactRepairWithoutChangingAssetTuples",
+  "beforeSha256": "d7d1d04004770e5db96a7de443c612d11abf6680bb9ac893d98907c573ff6b2a",
+  "afterSha256": "f7452ab48f36c7a6df1d9edff7203c52c06d5bf693b56f8b17cf3299d6774ffd",
+  "historicalAssetWhitelistSource": "03647d041d3d5068d4c77eb88f62403daf6e54ff",
+  "currentCandidateEligibilitySource": "current packaged curriculum",
+  "allAssertionsRetained": true,
+  "reason": "The exact earlier Unit9-only whole-pack delta cannot include later Unit13 instruction changes;new Unit13 whitelist separately proves its exact current delta"
+}

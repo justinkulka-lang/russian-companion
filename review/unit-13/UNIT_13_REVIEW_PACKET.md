@@ -11,12 +11,12 @@ Unit 13 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4433aca0323c2e6ae9ee8c7c44a6b6db6eadf076
-- Unit content-review SHA-256: 7385fdd118b5f5cb988ad00832614fa4f15835e26dbbb30cfbbf9379f2340d54
+- Curriculum source commit: fa3899de2258b6c0cd987d51a4b376aed408f9c2
+- Unit content-review SHA-256: d096b1457d65d756fb9af088488b2808ddb81fad85455c4854a835dedcdd2baa
 - Mapping-package SHA-256: e8ca3b0ba9b6a48acc54ea18e10a6e6fb1291698252fcbc35b02dbf2a820deb4
-- Pack content-review SHA-256: df38fe32ea3a41a62e995da90ead2169e186d7314b60ea69cc3344e410f1d2c1
-- Review-package SHA-256: 9b96a77e731c50e36434fa38140306d84cc016790a9a88367e204ed6d92e601b
-- Repository source SHA-256: dd54e999868e10a8f80e95c6e8f74b931f4acca3454e41a101d2cb1dc37e2fda
+- Pack content-review SHA-256: 62e9301c3949ff51bc0d1f5383e0108f30fd3038c5c4da25a01a14f5e265573c
+- Review-package SHA-256: 62f87154201a16f1abbcedd03ee18304f27e2096eb75f1caf2df1870dbe38ad9
+- Repository source SHA-256: a2cc1fc3645ab0a645973cec93dacf8aa9da1b8f67d2ccb05ec28b1966d1aad0
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -245,12 +245,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 16d10f77f15ff0d65832b5cb3e20137c205fc7f8b03180bc948c33f240d0a6ab
+- Content hash: 42f918bede242a95fc6cc3cf0f93bf8d86749bdc8d0b6d208de0109e411e7aba
 
 title=Choose the admitted past aspect line
 estimatedMinutes=12
 objectives=obj-u13-past-aspect
-steps=u13-st-teach-past-aspect-1,u13-st-guided-past-aspect-1,u13-st-teach-past-aspect-2,u13-st-teach-past-aspect-3,u13-st-teach-past-aspect-4,u13-st-rem-past-aspect,u13-st-check-past-aspect
+steps=u13-st-teach-past-aspect-1,u13-st-teach-past-aspect-2,u13-st-teach-past-aspect-3,u13-st-teach-past-aspect-4,u13-st-guided-past-aspect-1,u13-st-rem-past-aspect,u13-st-check-past-aspect
 
 ### STEP `u13-st-teach-past-aspect-1`
 
@@ -260,15 +260,81 @@ steps=u13-st-teach-past-aspect-1,u13-st-guided-past-aspect-1,u13-st-teach-past-a
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6534c0c3e6fe62b0dd323c59b0a83f29ca5e4eacaf37e72e296b5f30299d00dd
+- Content hash: 86f8bec4d34092aa544f665072d1e38e66fdbde73b00402aa077a40d7a7a4d81
 
 kind=TEACH
 title=Admitted lines
-body=я читал — I was reading. я прочитал — I read. 
+body=The supplied lines я читал — I was reading and я прочитал — I read are both past-tense forms with masculine singular agreement. The line я читал is imperfective past; the line я прочитал is perfective past. The first presents reading as activity or process; the second presents it as a completed whole. These English labels describe the retained examples; they are not a rule matching every English past tense to one Russian aspect.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
 examples=ex-u13-past-aspect-0,ex-u13-past-aspect-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u13-st-teach-past-aspect-2`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-past-aspect
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 504b642181f152b1e52d0a78e5df0cee38ba5eb81b042488f16fa1dbed6ec97a
+
+kind=TEACH
+title=Admitted instruction
+body=Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished. An activity may have ended and still be described imperfectively when the focus is its process or occurrence rather than its endpoint. Recognize the requested aspect in these supplied choices; this is not unrestricted sentence production.
+dominantAction=Continue
+references=ref-u1115-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u13-st-teach-past-aspect-3`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-past-aspect
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e09bc2a39bb9335285add06e6ea1bda211bd9c64fe8b27befe373c32bbdd24c4
+
+kind=TEACH
+title=Admitted lines
+body=чита́ть is the supplied infinitive; чита́л is its masculine singular past form. The dictionary label read names the recorded meaning and does not itself distinguish English past from infinitive. Compare the entire supplied forms. A question requesting masculine past asks for чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.
+dominantAction=Continue
+references=ref-u1115-attribution
+items=
+examples=ex-or-u13-past-aspect-2,ex-or-u13-past-aspect-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u13-st-teach-past-aspect-4`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-past-aspect
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 71286e118a78212dd04227a3a7a8bb4140d553b9b2729a3d8fbf1a87ed44a2f7
+
+kind=TEACH
+title=Admitted lines
+body=чита́ла is the supplied feminine singular past form of чита́ть. Compare it with masculine чита́л. This contrast changes gender agreement, not aspect. The pronoun I does not choose one past-tense gender for every speaker; these checks request a particular recorded form. Learn the supplied forms rather than inferring an unfamiliar ending or stress pattern.
+dominantAction=Continue
+references=ref-u1115-attribution
+items=
+examples=ex-or-u13-past-aspect-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -296,72 +362,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u13-st-rem-past-aspect
 
-### STEP `u13-st-teach-past-aspect-2`
-
-- Objectives: obj-u13-past-aspect
-- Sessions: u13-s-past-aspect
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8df508b946acb41f1779dac0079384b7dc85ee5659f41bd1ec5ffcc7f9b8a6eb
-
-kind=TEACH
-title=Admitted instruction
-body=Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished.
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u13-st-teach-past-aspect-3`
-
-- Objectives: obj-u13-past-aspect
-- Sessions: u13-s-past-aspect
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 2a9e50e94a294f7d1cc73e7528c9cf25ffddbb0cd10d245737ec93d2cbbc68c9
-
-kind=TEACH
-title=Admitted lines
-body=чита́ть — read. чита́л — read. 
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=ex-or-u13-past-aspect-2,ex-or-u13-past-aspect-3
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u13-st-teach-past-aspect-4`
-
-- Objectives: obj-u13-past-aspect
-- Sessions: u13-s-past-aspect
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: ab1aa8a61d9921e4faa93cf1eb163358de221beb51dd633c14b55eadce9442ad
-
-kind=TEACH
-title=Admitted lines
-body=чита́ла — read. 
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=ex-or-u13-past-aspect-4
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u13-st-rem-past-aspect`
 
 - Objectives: obj-u13-past-aspect
@@ -370,15 +370,21 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 92b6e624669b2f2f52df81660488cae1677493be9708423e611c53521d36ef74
+- Content hash: c21fe4a44bd08254c33090251cbe3ec748a57676e85c7d25cf9ff3ac03a0465a
 
 kind=REMEDIATE
 title=Remediation
-body=Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished.
+body=The supplied lines я читал — I was reading and я прочитал — I read are both past-tense forms with masculine singular agreement. The line я читал is imperfective past; the line я прочитал is perfective past. The first presents reading as activity or process; the second presents it as a completed whole. These English labels describe the retained examples; they are not a rule matching every English past tense to one Russian aspect.
+
+Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished. An activity may have ended and still be described imperfectively when the focus is its process or occurrence rather than its endpoint. Recognize the requested aspect in these supplied choices; this is not unrestricted sentence production.
+
+чита́ть is the supplied infinitive; чита́л is its masculine singular past form. The dictionary label read names the recorded meaning and does not itself distinguish English past from infinitive. Compare the entire supplied forms. A question requesting masculine past asks for чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.
+
+чита́ла is the supplied feminine singular past form of чита́ть. Compare it with masculine чита́л. This contrast changes gender agreement, not aspect. The pronoun I does not choose one past-tense gender for every speaker; these checks request a particular recorded form. Learn the supplied forms rather than inferring an unfamiliar ending or stress pattern.
 dominantAction=Continue
 references=
 items=
-examples=ex-u13-past-aspect-0,ex-u13-past-aspect-1
+examples=ex-u13-past-aspect-0,ex-u13-past-aspect-1,ex-or-u13-past-aspect-2,ex-or-u13-past-aspect-3,ex-or-u13-past-aspect-4
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -2487,6 +2493,168 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=28b2eccd1947c4f26e0c9b3848fd3d42971997a86ddf4569d57669851e321610
 contentHash=7135f7faf8b1c064338c8a8d0138ccd5dc1653caaae825ba9e64bd8109f16427
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-past-u13-st-rem-past-aspect-complete-v1`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-orient, u13-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bda6712b7d453ecb3a960ef694fb5a1d40ed2ff57a5567eb9efc732f09d2fc73
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-past-aspect:u13-st-rem-past-aspect:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Past tense oldid4567337 complete context (usage,regular/irregular forms,pronouns,reflexives,participles);Verbal Aspect oldid4059032 complete context including its process/result example and qualifications;retained OpenRussian verbs.csv at50e210c4803237779cb562bc1abcea529066031c complete читать/прочитать rows,aspect/infinitive/past_m/past_f fields;Copyrights oldid4622060 and retained CC BY-SA4.0 terms. Retain all existing native/stress/gloss/quotation provenance and contributor attribution/change/share-alike/license routes separately;these fragments are not relicensed as original English. Independently authored English teaching and arrangement dated2026-10-17. Do not adopt the source classification of быть as perfective,universal prefix rules,English-tense equivalence,or blanket unfinished/complete algorithms. No new native form,private Penguin prose,productive proficiency or qualified acceptance.
+The supplied lines я читал — I was reading and я прочитал — I read are both past-tense forms with masculine singular agreement. The line я читал is imperfective past; the line я прочитал is perfective past. The first presents reading as activity or process; the second presents it as a completed whole. These English labels describe the retained examples; they are not a rule matching every English past tense to one Russian aspect.
+
+Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished. An activity may have ended and still be described imperfectively when the focus is its process or occurrence rather than its endpoint. Recognize the requested aspect in these supplied choices; this is not unrestricted sentence production.
+
+чита́ть is the supplied infinitive; чита́л is its masculine singular past form. The dictionary label read names the recorded meaning and does not itself distinguish English past from infinitive. Compare the entire supplied forms. A question requesting masculine past asks for чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.
+
+чита́ла is the supplied feminine singular past form of чита́ть. Compare it with masculine чита́л. This contrast changes gender agreement, not aspect. The pronoun I does not choose one past-tense gender for every speaker; these checks request a particular recorded form. Learn the supplied forms rather than inferring an unfamiliar ending or stress pattern.
+shippedText=The supplied lines я читал — I was reading and я прочитал — I read are both past-tense forms with masculine singular agreement. The line я читал is imperfective past; the line я прочитал is perfective past. The first presents reading as activity or process; the second presents it as a completed whole. These English labels describe the retained examples; they are not a rule matching every English past tense to one Russian aspect.
+
+Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished. An activity may have ended and still be described imperfectively when the focus is its process or occurrence rather than its endpoint. Recognize the requested aspect in these supplied choices; this is not unrestricted sentence production.
+
+чита́ть is the supplied infinitive; чита́л is its masculine singular past form. The dictionary label read names the recorded meaning and does not itself distinguish English past from infinitive. Compare the entire supplied forms. A question requesting masculine past asks for чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.
+
+чита́ла is the supplied feminine singular past form of чита́ть. Compare it with masculine чита́л. This contrast changes gender agreement, not aspect. The pronoun I does not choose one past-tense gender for every speaker; these checks request a particular recorded form. Learn the supplied forms rather than inferring an unfamiliar ending or stress pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4770a7dc918f995d8cfe5326fc79b180b3a8adb16d2c9b90f3a624dfc6792275
+contentHash=d202a8e870858d3ac5566986d21f20cc82a3a8e43e1e10f0ab230d8e52292c70
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-past-u13-st-teach-past-aspect-1-complete-v1`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-orient, u13-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f2a3bfa886e81f1ec109778e25942cde768752f6b888b907098b442e356e8dbf
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-past-aspect:u13-st-teach-past-aspect-1:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Past tense oldid4567337 complete context (usage,regular/irregular forms,pronouns,reflexives,participles);Verbal Aspect oldid4059032 complete context including its process/result example and qualifications;retained OpenRussian verbs.csv at50e210c4803237779cb562bc1abcea529066031c complete читать/прочитать rows,aspect/infinitive/past_m/past_f fields;Copyrights oldid4622060 and retained CC BY-SA4.0 terms. Retain all existing native/stress/gloss/quotation provenance and contributor attribution/change/share-alike/license routes separately;these fragments are not relicensed as original English. Independently authored English teaching and arrangement dated2026-10-17. Do not adopt the source classification of быть as perfective,universal prefix rules,English-tense equivalence,or blanket unfinished/complete algorithms. No new native form,private Penguin prose,productive proficiency or qualified acceptance.
+The supplied lines я читал — I was reading and я прочитал — I read are both past-tense forms with masculine singular agreement. The line я читал is imperfective past; the line я прочитал is perfective past. The first presents reading as activity or process; the second presents it as a completed whole. These English labels describe the retained examples; they are not a rule matching every English past tense to one Russian aspect.
+shippedText=The supplied lines я читал — I was reading and я прочитал — I read are both past-tense forms with masculine singular agreement. The line я читал is imperfective past; the line я прочитал is perfective past. The first presents reading as activity or process; the second presents it as a completed whole. These English labels describe the retained examples; they are not a rule matching every English past tense to one Russian aspect.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1b7d921163d674fbd0ac96dfd73efc206793cbd8fe7b453a5270e32245624b90
+contentHash=ddd1021edcec9175c59b97590a559c2ba61280d9d201b46ec65bdcc93100a3d8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-past-u13-st-teach-past-aspect-2-complete-v1`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-orient, u13-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1a51e100d30f69eca3a5be196519523ebcaefac8199145919da18f805d4267ac
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-past-aspect:u13-st-teach-past-aspect-2:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Past tense oldid4567337 complete context (usage,regular/irregular forms,pronouns,reflexives,participles);Verbal Aspect oldid4059032 complete context including its process/result example and qualifications;retained OpenRussian verbs.csv at50e210c4803237779cb562bc1abcea529066031c complete читать/прочитать rows,aspect/infinitive/past_m/past_f fields;Copyrights oldid4622060 and retained CC BY-SA4.0 terms. Retain all existing native/stress/gloss/quotation provenance and contributor attribution/change/share-alike/license routes separately;these fragments are not relicensed as original English. Independently authored English teaching and arrangement dated2026-10-17. Do not adopt the source classification of быть as perfective,universal prefix rules,English-tense equivalence,or blanket unfinished/complete algorithms. No new native form,private Penguin prose,productive proficiency or qualified acceptance.
+Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished. An activity may have ended and still be described imperfectively when the focus is its process or occurrence rather than its endpoint. Recognize the requested aspect in these supplied choices; this is not unrestricted sentence production.
+shippedText=Do not treat English past progressive and simple past as a fixed Russian aspect code. The imperfective does not always mean the action was unfinished. An activity may have ended and still be described imperfectively when the focus is its process or occurrence rather than its endpoint. Recognize the requested aspect in these supplied choices; this is not unrestricted sentence production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc5363bafe2c5ee654caada56bd21ec117b4588555885885e860cbc5c518ebb5
+contentHash=6c125b55633fa942781a13f9a5f810693c73ffb79aa437a0d25447eef7deca76
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-past-u13-st-teach-past-aspect-3-complete-v1`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-orient, u13-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b80b09f50eadb2a9cde258cbe776d609ceb986d176a6cba064456e532154642c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-past-aspect:u13-st-teach-past-aspect-3:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Past tense oldid4567337 complete context (usage,regular/irregular forms,pronouns,reflexives,participles);Verbal Aspect oldid4059032 complete context including its process/result example and qualifications;retained OpenRussian verbs.csv at50e210c4803237779cb562bc1abcea529066031c complete читать/прочитать rows,aspect/infinitive/past_m/past_f fields;Copyrights oldid4622060 and retained CC BY-SA4.0 terms. Retain all existing native/stress/gloss/quotation provenance and contributor attribution/change/share-alike/license routes separately;these fragments are not relicensed as original English. Independently authored English teaching and arrangement dated2026-10-17. Do not adopt the source classification of быть as perfective,universal prefix rules,English-tense equivalence,or blanket unfinished/complete algorithms. No new native form,private Penguin prose,productive proficiency or qualified acceptance.
+чита́ть is the supplied infinitive; чита́л is its masculine singular past form. The dictionary label read names the recorded meaning and does not itself distinguish English past from infinitive. Compare the entire supplied forms. A question requesting masculine past asks for чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.
+shippedText=чита́ть is the supplied infinitive; чита́л is its masculine singular past form. The dictionary label read names the recorded meaning and does not itself distinguish English past from infinitive. Compare the entire supplied forms. A question requesting masculine past asks for чита́л rather than feminine чита́ла; both past forms belong to the same imperfective verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=30c68b5a2b75c185e05e80fae0f8a7fa560292ca512ac1d290dadf79cddee3dc
+contentHash=01f449324e13e0e1f329a4500c63819958facfe3920e0594dbb045f0e270eeb2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-ca-u13-past-u13-st-teach-past-aspect-4-complete-v1`
+
+- Objectives: obj-u13-past-aspect
+- Sessions: u13-s-orient, u13-s-past-aspect
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 71c38e4474483e1601997e3dcd6e3a5ccdace07660660356d288115924bcf35f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u13-past-aspect:u13-st-teach-past-aspect-4:complete-context-v1
+originalSourceText=Frozen Wikibooks Russian/Grammar/Past tense oldid4567337 complete context (usage,regular/irregular forms,pronouns,reflexives,participles);Verbal Aspect oldid4059032 complete context including its process/result example and qualifications;retained OpenRussian verbs.csv at50e210c4803237779cb562bc1abcea529066031c complete читать/прочитать rows,aspect/infinitive/past_m/past_f fields;Copyrights oldid4622060 and retained CC BY-SA4.0 terms. Retain all existing native/stress/gloss/quotation provenance and contributor attribution/change/share-alike/license routes separately;these fragments are not relicensed as original English. Independently authored English teaching and arrangement dated2026-10-17. Do not adopt the source classification of быть as perfective,universal prefix rules,English-tense equivalence,or blanket unfinished/complete algorithms. No new native form,private Penguin prose,productive proficiency or qualified acceptance.
+чита́ла is the supplied feminine singular past form of чита́ть. Compare it with masculine чита́л. This contrast changes gender agreement, not aspect. The pronoun I does not choose one past-tense gender for every speaker; these checks request a particular recorded form. Learn the supplied forms rather than inferring an unfamiliar ending or stress pattern.
+shippedText=чита́ла is the supplied feminine singular past form of чита́ть. Compare it with masculine чита́л. This contrast changes gender agreement, not aspect. The pronoun I does not choose one past-tense gender for every speaker; these checks request a particular recorded form. Learn the supplied forms rather than inferring an unfamiliar ending or stress pattern.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=25e7246631274fe4870e1bdef3e2ef3e6454896ae8af35c9e170972e7eb72481
+contentHash=8f332c1112582c583eae5f2b56099b05e14234098c6f7d97155c84113e763744
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -6604,16 +6772,19 @@ permitsAppUse=true
 - `u13-st-teach-past-aspect-1` EXAMPLE `ex-u13-past-aspect-0`
 - `u13-st-teach-past-aspect-1` EXAMPLE `ex-u13-past-aspect-1`
 - `u13-st-teach-past-aspect-1` REFERENCE `ref-u1115-attribution`
-- `u13-st-guided-past-aspect-1` REMEDIATION `u13-st-rem-past-aspect`
-- `u13-st-guided-past-aspect-1` ITEM `u13-g-past-aspect-0`
 - `u13-st-teach-past-aspect-2` REFERENCE `ref-u1115-attribution`
 - `u13-st-teach-past-aspect-3` EXAMPLE `ex-or-u13-past-aspect-2`
 - `u13-st-teach-past-aspect-3` EXAMPLE `ex-or-u13-past-aspect-3`
 - `u13-st-teach-past-aspect-3` REFERENCE `ref-u1115-attribution`
 - `u13-st-teach-past-aspect-4` EXAMPLE `ex-or-u13-past-aspect-4`
 - `u13-st-teach-past-aspect-4` REFERENCE `ref-u1115-attribution`
+- `u13-st-guided-past-aspect-1` REMEDIATION `u13-st-rem-past-aspect`
+- `u13-st-guided-past-aspect-1` ITEM `u13-g-past-aspect-0`
 - `u13-st-rem-past-aspect` EXAMPLE `ex-u13-past-aspect-0`
 - `u13-st-rem-past-aspect` EXAMPLE `ex-u13-past-aspect-1`
+- `u13-st-rem-past-aspect` EXAMPLE `ex-or-u13-past-aspect-2`
+- `u13-st-rem-past-aspect` EXAMPLE `ex-or-u13-past-aspect-3`
+- `u13-st-rem-past-aspect` EXAMPLE `ex-or-u13-past-aspect-4`
 - `u13-st-check-past-aspect` REMEDIATION `u13-st-rem-past-aspect`
 - `u13-st-check-past-aspect` ITEM `u13-i-past-aspect-1`
 - `u13-st-check-past-aspect` ITEM `u13-i-past-aspect-2`
@@ -6691,6 +6862,11 @@ permitsAppUse=true
 - `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-1-distractor-1`
 - `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-2`
 - `obj-u13-tense-keep` PROVENANCE `prov-ca-u13-feedback-u13-i-tense-keep-2-distractor-1`
+- `obj-u13-past-aspect` PROVENANCE `prov-ca-u13-past-u13-st-rem-past-aspect-complete-v1`
+- `obj-u13-past-aspect` PROVENANCE `prov-ca-u13-past-u13-st-teach-past-aspect-1-complete-v1`
+- `obj-u13-past-aspect` PROVENANCE `prov-ca-u13-past-u13-st-teach-past-aspect-2-complete-v1`
+- `obj-u13-past-aspect` PROVENANCE `prov-ca-u13-past-u13-st-teach-past-aspect-3-complete-v1`
+- `obj-u13-past-aspect` PROVENANCE `prov-ca-u13-past-u13-st-teach-past-aspect-4-complete-v1`
 - `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-objective-title`
 - `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-remediation-body`
 - `obj-u13-reported` PROVENANCE `prov-ca-u13-report-transfer-teach-0-body`

@@ -35,7 +35,7 @@ class Units1620SourceIntakeTest {
     private val preservedContentDigests = mapOf(
         11 to "2a0b74e3722f0f0a1c2e0041c73c6654211eee81c918e44c1b23929fcf24672b",
         12 to "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
-        13 to "7385fdd118b5f5cb988ad00832614fa4f15835e26dbbb30cfbbf9379f2340d54",
+        13 to "d096b1457d65d756fb9af088488b2808ddb81fad85455c4854a835dedcdd2baa",
         14 to "9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38",
         15 to "ea945a9c9cd01a30db3522794b9df36c5a4fc291092a153da0672bb4b8a9a6bd",
     )
