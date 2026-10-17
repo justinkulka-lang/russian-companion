@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.BatchECapabilityResearchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-17T04:08:35.596Z" hostname="d0aced911621" time="56.916">
+  <properties/>
+  <testcase name="digestsGovernanceAndLaterUnitsStayUnchanged" classname="dev.russiancompanion.v2.BatchECapabilityResearchTest" time="56.911"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

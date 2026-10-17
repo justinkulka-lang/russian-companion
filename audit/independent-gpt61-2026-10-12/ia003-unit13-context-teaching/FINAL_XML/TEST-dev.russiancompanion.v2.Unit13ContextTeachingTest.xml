@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit13ContextTeachingTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-17T04:09:32.839Z" hostname="d0aced911621" time="121.811">
+  <properties/>
+  <testcase name="wrongReportedEveningReturnsFromCompleteRepairToTheSameCheck" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="17.852"/>
+  <testcase name="exactTwoSessionWhitelistPreservesNativeScoredRecordsPoliciesAndEarlierPastCorrection" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="2.406"/>
+  <testcase name="oldGuidedPositionsCannotResumeAsDifferentTeachingCards" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.281"/>
+  <testcase name="genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="67.394"/>
+  <testcase name="wrongEnglishBackshiftLabelReturnsFromCompleteRepairToTheSameCheck" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.698"/>
+  <testcase name="wrongPerfectivePartnerReturnsFromCompleteRepairToTheSameCheck" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.546"/>
+  <testcase name="freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="23.87"/>
+  <testcase name="wrongImperfectivePartnerReturnsFromCompleteRepairToTheSameCheck" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.827"/>
+  <testcase name="oldAnswersStayRawButDoNotSupplyChangedInstructionCredit" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.172"/>
+  <testcase name="bothChainsTeachBeforePracticeAndRepairEveryOriginalExample" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="5.165"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
