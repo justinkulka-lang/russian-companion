@@ -30,7 +30,7 @@ class Unit13WiderPolicyTest {
     }
 
     @Test fun threeFreshSlotsUseNonFirstGenderCandidateAndRequireAllAnswersBeforeActualAdvance() {
-        restored(document("ORDINARY_UNIT9")).use { s ->
+        restored(document("ORDINARY_UNIT13")).use { s ->
             record(s, feminine, false)
             val a = open(s)
             assertEquals(6, a.schema)
@@ -110,7 +110,7 @@ class Unit13WiderPolicyTest {
         val old = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
         assertEquals(0, process.waitFor()); V2PackIdentityIndex.warm(old)
         assertEquals(Unit13CumulativeReviewPolicy.definition, cumulativeReviewDeclaredPolicy(old, 13))
-        restored(document("ORDINARY_UNIT9")).use { s ->
+        restored(document("ORDINARY_UNIT13")).use { s ->
             val prior = s.openCumulativeReview(old, 13, s.learnerMutationEpoch())!!
             assertEquals(1, prior.schema)
             assertEquals(Unit13CumulativeReviewPolicy.definition.id, prior.policyId)
@@ -125,7 +125,7 @@ class Unit13WiderPolicyTest {
     }
 
     @Test fun currentAndDownstreamOldSnapshotsRejectChangedContentAndAcceptOnlyExactPriorDeclaration() {
-        for (prefix in listOf("")) restored(document(prefix + "COMPLETED_UNIT10")).use { s ->
+        for (prefix in listOf("")) restored(document(prefix + "COMPLETED_UNIT14")).use { s ->
             val learner = s.v2LearnerView()
             assertEquals((1..14).toSet(), currentCompletedUnitNumbers(p, learner))
             val downstream = learner.reviewAssignments.single { it.targetUnit == 14 }
@@ -151,14 +151,14 @@ class Unit13WiderPolicyTest {
                 advancement = u.advancement!!.copy(cumulativeReviewPolicyId = "invented-v1")) else u })
             V2PackIdentityIndex.warm(unknown)
             assertFalse(13 in currentCompletedUnitNumbers(unknown, learner))
-            val unrelated = p.copy(units = p.units.map { u -> if (u.number == 110) u.copy(title = u.title + " changed") else u })
+            val unrelated = p.copy(units = p.units.map { u -> if (u.number == 30) u.copy(title = u.title + " changed") else u })
             V2PackIdentityIndex.warm(unrelated)
             assertEquals((1..14).toSet(), currentCompletedUnitNumbers(unrelated, learner))
         }
     }
 
     @Test fun versionsRolesLinksEpochAndPacklessWritesFailClosedWithoutChangingHistory() {
-        restored(document("ORDINARY_UNIT9")).use { s ->
+        restored(document("ORDINARY_UNIT13")).use { s ->
             val a = open(s)
             for (bad in listOf(a.copy(schema = 1), a.copy(schema = 2), a.copy(schema = 3), a.copy(schema = 4), a.copy(schema = 5),
                 a.copy(targetUnit = 5), a.copy(policyId = Unit13CumulativeReviewPolicy.definition.id),
@@ -188,7 +188,7 @@ class Unit13WiderPolicyTest {
     }
 
     @Test fun newPastGenderUiRepairsFullTeachingAndRequiresAllThreeFreshAssignedAnswers() {
-        restored(document("ORDINARY_UNIT9")).use { s ->
+        restored(document("ORDINARY_UNIT13")).use { s ->
             record(s, feminine, false)
             compose.setContent { V2App(s, p, {}) }
             waitTag("v2-continue"); compose.onNodeWithTag("v2-continue").performClick()
@@ -251,12 +251,12 @@ class Unit13WiderPolicyTest {
     }
 
     @Test fun allGenuineLifecycleBackupsRestoreReopenAndRetainExactRowsAndCutoff() {
-        for (label in listOf("BEFORE_UNIT9_WORK", "ORDINARY_UNIT9", "UNSTARTED_REVIEW", "PARTIAL_REVIEW",
-            "ANSWERED_REVIEW", "COMPLETED_UNIT9", "POST_COMPLETION_WRONG", "COMPLETED_UNIT10")) {
+        for (label in listOf("BEFORE_UNIT13_WORK", "ORDINARY_UNIT13", "UNSTARTED_REVIEW", "PARTIAL_REVIEW",
+            "ANSWERED_REVIEW", "COMPLETED_UNIT13", "POST_COMPLETION_WRONG", "COMPLETED_UNIT14")) {
             val staging = File(context().cacheDir, "unit13-history-${System.nanoTime()}")
             val name = newName()
             try {
-                val read = readGovernedBackup(File(root(), "audit/independent-gpt61-2026-14-12/ia003-unit13-history-transition/$label.zip").inputStream(),
+                val read = readGovernedBackup(File(root(), "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/$label.zip").inputStream(),
                     "dev.russiancompanion", p.packId, p.packVersion, staging)
                 assertTrue(read is BackupReadResult.Valid)
                 val original = document(label)
@@ -268,7 +268,7 @@ class Unit13WiderPolicyTest {
                     val learner = store.v2LearnerView()
                     assertEquals(original.reviewAssignments to original.reviewAnswers, store.cumulativeReviewHistory())
                     assertEquals(original.unitCompletions, store.governedLearnerDocument().unitCompletions)
-                    val last = when (label) { "COMPLETED_UNIT10" -> 14; "COMPLETED_UNIT9", "POST_COMPLETION_WRONG" -> 13; else -> 12 }
+                    val last = when (label) { "COMPLETED_UNIT14" -> 14; "COMPLETED_UNIT13", "POST_COMPLETION_WRONG" -> 13; else -> 12 }
                     assertEquals(label, (1..last).toSet(), currentCompletedUnitNumbers(p, learner))
                     val old = original.reviewAssignments.singleOrNull { it.targetUnit == 13 }
                     assertEquals(old, currentCumulativeAssignment(p, learner, 13))
@@ -286,7 +286,7 @@ class Unit13WiderPolicyTest {
         val pool = Unit13WiderCumulativeReviewPolicy.definition.pool[2]
         assertEquals(p.unit(11)!!.objectives.single { it.id == "obj-u11-past-aspect" }.checkItemIds, pool.candidateItemIds)
         assertEquals("u11-st-rem-past-aspect", pool.remediationStepId)
-        restored(document("ORDINARY_UNIT9")).use { store ->
+        restored(document("ORDINARY_UNIT13")).use { store ->
             for (id in pool.candidateItemIds) {
                 record(store, id, false)
                 val a = createCumulativeReviewAssignment(p, store.v2LearnerView(), 13, "probe-$id", 0)!!
@@ -332,7 +332,7 @@ class Unit13WiderPolicyTest {
         s.v2AdvanceUnitIfCurrentAsync(s.learnerMutationEpoch(), 13, "advance", 14, next, resumePositionDigest(p, next, 0)!!, GOVERNED_IDENTITY_SCHEMA, p)
     }
     private fun document(label: String) = backupJson.decodeFromString(GovernedLearnerDocument.serializer(),
-        File(root(), "audit/independent-gpt61-2026-14-12/ia003-unit13-history-transition/$label.json").readText())
+        File(root(), "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/$label.json").readText())
     private fun restored(d: GovernedLearnerDocument) = LocalStore.openNamed(context(), newName()).also {
         assertEquals(GovernedReplaceOutcome.REPLACED, it.replaceGovernedLearner(d, emptyList()))
     }
