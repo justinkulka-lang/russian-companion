@@ -1,0 +1,20 @@
+{
+  "baselineCommit": "8e2c6f1a8d3d4b6d1f098bc6e347d36e92e10352",
+  "startedUtc": "2026-10-17T04:50:03.927568+00:00",
+  "inputSha256": {
+    "app/src/main/assets/content/v2-curriculum.json": "e50bcc83aac016d6f889a36c0d1e3b39f7dd1cf13e8d0ce543c820b678c3b53e",
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt": "3dbb0275611370b31bce733672010a3cc296626d5f05f12fa0bce5606d240abe",
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/setup/parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3"
+  },
+  "command": "bash audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/capture-baseline.sh",
+  "exporterSha256": "8892159af668971976ac40bd56489bdfce38b515d005247a426af474f001f601",
+  "syntheticLearners": true,
+  "historicalRowsFabricated": false,
+  "excludedScreenshotExporters": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  }
+}
