@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit13CumulativeReviewTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-17T00:22:40.210Z" hostname="f5c5dd6b855f" time="149.377">
+  <properties/>
+  <testcase name="ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup" classname="dev.russiancompanion.v2.Unit13CumulativeReviewTest" time="146.375"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

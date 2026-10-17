@@ -869,6 +869,24 @@
         "formalAcceptance": false,
         "broaderIA003": "OPEN",
         "completeSuite": false
+      },
+      "unit13PastTeachingRepair": {
+        "implementationCommit": "fa3899de2258b6c0cd987d51a4b376aed408f9c2",
+        "testedCommit": "baeba7c6545fbc58fc817ec19c85fc079814d95b",
+        "focusedCounts": {
+          "reported": 25,
+          "passed": 25,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "receipt": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/FINAL_VERIFICATION_MANIFEST.json",
+        "newPolicyActivated": false,
+        "originalProvenancePreserved": 6922,
+        "newPendingEnglishRecords": 5,
+        "formalAcceptance": false,
+        "completeSuite": false,
+        "nextStaticInventory": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/NEXT_PREREQUISITE_INVENTORY.json"
       }
     },
     {
@@ -1522,5 +1540,23 @@
     "formalAcceptance": false,
     "broaderIA003": "OPEN",
     "completeSuite": false
+  },
+  "latestUnit13PastTeachingCheckpoint": {
+    "implementationCommit": "fa3899de2258b6c0cd987d51a4b376aed408f9c2",
+    "testedCommit": "baeba7c6545fbc58fc817ec19c85fc079814d95b",
+    "focusedCounts": {
+      "reported": 25,
+      "passed": 25,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "receipt": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/FINAL_VERIFICATION_MANIFEST.json",
+    "newPolicyActivated": false,
+    "originalProvenancePreserved": 6922,
+    "newPendingEnglishRecords": 5,
+    "formalAcceptance": false,
+    "completeSuite": false,
+    "nextStaticInventory": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/NEXT_PREREQUISITE_INVENTORY.json"
   }
 }
