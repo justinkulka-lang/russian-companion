@@ -1,0 +1,11 @@
+{
+  "path": "app/src/test/java/dev/russiancompanion/v2/Unit13PastTeachingTest.kt",
+  "method": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+  "historicalWhitelistSource": "1730c1999a81e1d9d5df8bc3b957339fce1a65b4",
+  "beforeSha256": "262d619e220c1ae2ba30d3e2fffcf220613d2f9fcf86b067071b7e662ac56775",
+  "afterSha256": "236d05a163f93b615b37b28574b1db785d7b681e4d18f70c73297bc91a14bcb4",
+  "allAssertionsRetained": true,
+  "onlyHistoricalPreservationMethodUsesArchive": true,
+  "otherPastRuntimeAndStructureMethodsUseCurrentSource": true,
+  "currentDeltaProof": "Unit13ContextTeachingTest.exactTwoSessionWhitelistPreservesNativeScoredRecordsPoliciesAndEarlierPastCorrection"
+}

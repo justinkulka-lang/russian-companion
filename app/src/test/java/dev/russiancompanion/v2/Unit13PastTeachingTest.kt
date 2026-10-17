@@ -34,7 +34,8 @@ class Unit13PastTeachingTest {
         val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
     @Test fun unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException() {
-        val p = pack(); val old = baseline()
+        // Historical past-only whitelist;current two-session delta has a separate exact guard.
+        val p = Unit13ContextTeachingTest.beforeTeachingCorrectionPack(); val old = baseline()
         assertEquals(declaredAfterSession(), session(p))
         assertEquals(old, p.copy(units = old.units, provenanceRecords = p.provenanceRecords.dropLast(5)))
         assertEquals(old.unit(13)!!.advancement, p.unit(13)!!.advancement)
