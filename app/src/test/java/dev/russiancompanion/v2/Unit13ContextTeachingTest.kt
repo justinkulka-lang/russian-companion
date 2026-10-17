@@ -38,6 +38,7 @@ class Unit13ContextTeachingTest {
         val result = V2Validator.validate(current); assertTrue(result.errors.joinToString("\n"), result.ok)
     }
     @Test fun exactTwoSessionWhitelistPreservesNativeScoredRecordsPoliciesAndEarlierPastCorrection() {
+        val current = Unit13WiderPolicyTest.beforePolicyTransitionPack() // Exact post-teaching source; this historical whitelist predates the later policy transition.
         val ledger = Json.parseToJsonElement(File(evidence(), "CORRECTION.json").readText()).jsonObject
         val declared = Json { ignoreUnknownKeys = true }.decodeFromJsonElement<V2Unit>(ledger.getValue("afterUnit"))
         assertEquals(declared, current.unit(13))

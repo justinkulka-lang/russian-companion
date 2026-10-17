@@ -1,0 +1,30 @@
+{
+  "baselineCommit": "8e2c6f1a8d3d4b6d1f098bc6e347d36e92e10352",
+  "onlyAssetChange": "Unit13 advancement.cumulativeReviewPolicyId",
+  "before": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 8,
+    "requireDueReview": true,
+    "tutorOptional": true,
+    "cumulativeReviewPolicyId": "unit13-prior-reading-aspect-partner-v1"
+  },
+  "after": {
+    "requireInstruction": true,
+    "requireBookSelfAttestation": true,
+    "requireAppChecks": true,
+    "minimumDistinctChecks": 8,
+    "requireDueReview": true,
+    "tutorOptional": true,
+    "cumulativeReviewPolicyId": "unit13-prior-reading-aspect-past-gender-v2"
+  },
+  "originalProvenancePreserved": 6935,
+  "newPolicy": "unit13-prior-reading-aspect-past-gender-v2",
+  "newAssignmentSchema": 6,
+  "answerSchema": 1,
+  "backupFormat": 3,
+  "databaseVersion": 11,
+  "teachingAndScoredRecordsUnchanged": true,
+  "qualifiedAcceptance": false
+}

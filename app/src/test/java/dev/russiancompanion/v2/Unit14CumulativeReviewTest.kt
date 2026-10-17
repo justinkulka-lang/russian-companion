@@ -316,7 +316,7 @@ class Unit14CumulativeReviewTest {
         runBlocking { advanceFrom(p, s, 12) }
         ordinary(p, s, 13)
         val thirteenth = s.openCumulativeReview(p, 13, s.learnerMutationEpoch())!!
-        answer(p, s, thirteenth, 0); answer(p, s, thirteenth, 1)
+        thirteenth.slots.indices.forEach { answer(p, s, thirteenth, it) }
         runBlocking { advanceFrom(p, s, 13) }
         ordinary(p, s, 14)
         assertEquals((1..13).toSet(), currentCompletedUnitNumbers(p, s.v2LearnerView()))
