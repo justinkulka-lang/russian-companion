@@ -1388,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestOptionalSourceReviewCheckpoint",
-    "priorCheckpoint": "latestAud44SourceReviewCheckpoint",
-    "next": "Next investigate Aud44CorrectionTest.unrelatedEvidenceCannotImpersonateProductiveClockTime and BatchBUnits2125Test.reflexiveSentencePairRejectsIsolatedTokenAndWifeCitation. Inspect missing-predicate source hosts against current native/complete-context admissions and preserve every forgery/unsupported-source negative; do not synthesize a host just to satisfy the lookup. Review source/correction context before deciding historical versus current construct scope. Aud44 digest snapshots, ContentAudit content/order/remediation cases, RequiredPathProgress and PracticeRetrievalDigest remain OPEN. No blind archival, count/digest bump or forged completion.",
+    "checkpoint": "latestCurrentSourceDonorCheckpoint",
+    "priorCheckpoint": "latestOptionalSourceReviewCheckpoint",
+    "next": "Next inspect the five remaining ContentAuditCorrectionTest cases against the actual correction histories: Unit6/7 case-transfer donors, Unit28 teaching order and full remediation restoration, and current false-key constructs. Also retain the separate AUD-44 later-unit digest, RequiredPathProgress and PracticeRetrievalDigest failures. Do not blindly bump snapshots/counts, restore obsolete repeated checks, archive current failures or forge review/completion. Inspect whole methods and source context before changing fixture scope.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1931,5 +1931,29 @@
     "originalUnit7RestoreCause": "UNCONFIRMED",
     "githubConnection": "RECOVERED",
     "next": "Next investigate Aud44CorrectionTest.unrelatedEvidenceCannotImpersonateProductiveClockTime and BatchBUnits2125Test.reflexiveSentencePairRejectsIsolatedTokenAndWifeCitation. Inspect missing-predicate source hosts against current native/complete-context admissions and preserve every forgery/unsupported-source negative; do not synthesize a host just to satisfy the lookup. Review source/correction context before deciding historical versus current construct scope. Aud44 digest snapshots, ContentAudit content/order/remediation cases, RequiredPathProgress and PracticeRetrievalDigest remain OPEN. No blind archival, count/digest bump or forged completion."
+  },
+  "latestCurrentSourceDonorCheckpoint": {
+    "path": "audit/independent-gpt61-2026-10-12/current-source-donor-scope",
+    "sourceCommit": "3918f475a16278239241a4a93152de3a5c7480dc",
+    "manifest": "current-source-donor-scope/RETRY/MANIFEST.json",
+    "initialManifest": "current-source-donor-scope/INITIAL/MANIFEST.json",
+    "testCounts": {
+      "reported": 10,
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 4,
+    "retainedInitialFailures": 32,
+    "engineeringScopeReconciled": 24,
+    "openInitialFailures": 8,
+    "currentLiteralAnnotations": 1241,
+    "newFullDiscoveryOrBroadCompletion": false,
+    "formalAcceptance": false,
+    "auditReady": false,
+    "originalUnit7RestoreCause": "UNCONFIRMED",
+    "githubConnection": "RECOVERED",
+    "next": "Next inspect the five remaining ContentAuditCorrectionTest cases against the actual correction histories: Unit6/7 case-transfer donors, Unit28 teaching order and full remediation restoration, and current false-key constructs. Also retain the separate AUD-44 later-unit digest, RequiredPathProgress and PracticeRetrievalDigest failures. Do not blindly bump snapshots/counts, restore obsolete repeated checks, archive current failures or forge review/completion. Inspect whole methods and source context before changing fixture scope."
   }
 }
