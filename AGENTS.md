@@ -6,7 +6,7 @@ Latest verification: [digest-practice-evidence-scope](audit/independent-gpt61-20
 
 GitHub delivery recovered; earlier401 records are historical.
 
-A broader run is already active:read [RUNNING_CHECKPOINT_2026-10-18.json](audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/RUNNING_CHECKPOINT_2026-10-18.json). Its newly observed Unit11 whole-pack-conservation failure remains OPEN;the earlier32 scoped cases do not hide it. Do not change pinned app/test/catalog/docs/review inputs or launch concurrent Gradle. The eventual final manifest supersedes this point-in-time running record.
+A broader run is already active. Read [pending correction plans](audit/independent-gpt61-2026-10-12/pending-broad-corrections/README.md) and activeCurrentBroadRegressionCheckpoint in CURRENT_FINDING_STATUS.json. Four new cases are OPEN with guarded plans only;earlier32 scoped reconciliation does not hide them. Do not change pinned app/test/catalog/docs/review inputs or launch concurrent Gradle. Final manifest supersedes point-in-time running records.
 
 The notes below record earlier checkpoints;use the latest pointer above for current dispositions.
 
