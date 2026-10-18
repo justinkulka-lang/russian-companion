@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit14CumulativeReviewTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-18T04:36:09.501Z" hostname="d0aced911621" time="412.34">
+  <properties/>
+  <testcase name="heldUnit14WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching" classname="dev.russiancompanion.v2.Unit14CumulativeReviewTest" time="65.76"/>
+  <testcase name="oldFormatOneAndTwoKeepRawUnit14HistoryWithoutInventingCreditOrRepairingUnit11" classname="dev.russiancompanion.v2.Unit14CumulativeReviewTest" time="34.601"/>
+  <testcase name="ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup" classname="dev.russiancompanion.v2.Unit14CumulativeReviewTest" time="20.642"/>
+  <testcase name="optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion" classname="dev.russiancompanion.v2.Unit14CumulativeReviewTest" time="198.001"/>
+  <testcase name="actualUnit14ContinueReportedTimeCueTeachingPracticeReturnAndAdvanceStayOnUnit14" classname="dev.russiancompanion.v2.Unit14CumulativeReviewTest" time="18.478"/>
+  <testcase name="schema11RowsRemainStoredButChangedImpersonalInstructionRequiresRepair" classname="dev.russiancompanion.v2.Unit14CumulativeReviewTest" time="72.449"/>
+  <testcase name="placementWithTaughtUnit1ButUntaughtUnit13RepairsTheMissingOwnerInsteadOfUnit1" classname="dev.russiancompanion.v2.Unit14CumulativeReviewTest" time="0.668"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>

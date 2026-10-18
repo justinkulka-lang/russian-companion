@@ -1351,9 +1351,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestUnit13ContextTeachingCheckpoint",
-    "priorCheckpoint": "latestUnit13PastTeachingCheckpoint",
-    "next": "Review meaningful Unit11 past-gender recurrence with full sources/rights/current eligibility,then new current-source histories before another transition. Final comprehensive independent audit before physical acceptance.",
+    "checkpoint": "latestUnit13WiderReviewCheckpoint",
+    "priorCheckpoint": "latestUnit13ContextTeachingCheckpoint",
+    "next": "Inventory later coverage/source/rights/current taught eligibility before more engineering or integration. Final comprehensive independent audit before physical acceptance.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1568,5 +1568,32 @@
     "formalAcceptance": false,
     "completeSuite": false,
     "nextReview": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/NEXT_REVIEW.md"
+  },
+  "latestUnit13WiderReviewCheckpoint": {
+    "implementationCommit": "41ef8eebc5f7ff25cd30cb19164662dfab858f66",
+    "testedCommit": "663ce23fe8d32a22a4a0fadd69f5aeccd21457ec",
+    "finalSeparateCounts": {
+      "reported": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "initialCounts": {
+      "reported": 77,
+      "passed": 76,
+      "failed": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "receipt": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/FINAL_VERIFICATION_MANIFEST.json",
+    "newPolicy": "unit13-prior-reading-aspect-past-gender-v2",
+    "assignmentSchema": 6,
+    "legacyPolicy": "unit13-prior-reading-aspect-partner-v1",
+    "legacySchema": 1,
+    "originalProvenancePreserved": 6935,
+    "formalAcceptance": false,
+    "broaderIA003": "OPEN",
+    "completeSuite": false
   }
 }

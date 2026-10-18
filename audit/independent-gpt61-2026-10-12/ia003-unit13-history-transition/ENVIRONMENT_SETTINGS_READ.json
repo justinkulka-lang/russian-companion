@@ -1,0 +1,22 @@
+{
+  "readUtc": "2026-10-18",
+  "tool": "cloud_environment_onboarding_read_environment_config_draft",
+  "success": true,
+  "draftId": null,
+  "revision": null,
+  "baseVersionId": "13a458c1-0aec-4d7a-ab78-a70d382275e1~cecfgver_6acedb2102ec8196804d03e72c487901",
+  "installScriptPresent": true,
+  "installScriptCharacters": 3938,
+  "startSkillPresent": true,
+  "startSkillCharacters": 3095,
+  "repositoryCount": 1,
+  "configurationChanged": false,
+  "publication": "USER_CONFIRMED;tool returns no explicit publication status;independently unverified",
+  "publicationControlAvailable": false,
+  "rawScriptsAndCredentialMetadataExcluded": true,
+  "startSkillMentionsAgents": true,
+  "startSkillMentionsAuthorizedBranch": true,
+  "startSkillDependsOnConversation": false,
+  "installScriptMentionsScreenshotExporters": true,
+  "startSkillMentionsExclusions": true
+}
