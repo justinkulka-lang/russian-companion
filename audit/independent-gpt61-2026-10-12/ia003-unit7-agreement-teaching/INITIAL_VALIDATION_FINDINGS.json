@@ -1,0 +1,51 @@
+{
+  "exitCode": 1,
+  "junitMethodsExecuted": 0,
+  "validatorErrors": 8,
+  "reason": "Eight new explanation/arrangement coverage records were mistakenly labelled ca-u7-agreement,so the governed validator treated them as exercise contrasts requiring stated applications. Existing scored research-application records were untouched.",
+  "correction": "Use the established ca-coverage:objective:step namespace for the new independently authored explanation coverage,matching their existing objectiveOrClaimBinding. No application tuple is invented and no validator/assertion is weakened.",
+  "changes": [
+    {
+      "itemId": "prov-ca-u7-agreement-u7-st-teach-endings-1-complete-v1",
+      "beforeSourceRecordId": "ca-u7-agreement:u7-st-teach-endings-1",
+      "afterSourceRecordId": "ca-coverage:obj-u7-endings:u7-st-teach-endings-1"
+    },
+    {
+      "itemId": "prov-ca-u7-agreement-u7-st-teach-endings-2-complete-v1",
+      "beforeSourceRecordId": "ca-u7-agreement:u7-st-teach-endings-2",
+      "afterSourceRecordId": "ca-coverage:obj-u7-endings:u7-st-teach-endings-2"
+    },
+    {
+      "itemId": "prov-ca-u7-agreement-u7-st-teach-endings-3-complete-v1",
+      "beforeSourceRecordId": "ca-u7-agreement:u7-st-teach-endings-3",
+      "afterSourceRecordId": "ca-coverage:obj-u7-endings:u7-st-teach-endings-3"
+    },
+    {
+      "itemId": "prov-ca-u7-agreement-u7-st-teach-endings-4-complete-v1",
+      "beforeSourceRecordId": "ca-u7-agreement:u7-st-teach-endings-4",
+      "afterSourceRecordId": "ca-coverage:obj-u7-endings:u7-st-teach-endings-4"
+    },
+    {
+      "itemId": "prov-ca-u7-agreement-u7-st-teach-endings-5-complete-v1",
+      "beforeSourceRecordId": "ca-u7-agreement:u7-st-teach-endings-5",
+      "afterSourceRecordId": "ca-coverage:obj-u7-endings:u7-st-teach-endings-5"
+    },
+    {
+      "itemId": "prov-ca-u7-agreement-u7-st-teach-endings-6-complete-v1",
+      "beforeSourceRecordId": "ca-u7-agreement:u7-st-teach-endings-6",
+      "afterSourceRecordId": "ca-coverage:obj-u7-endings:u7-st-teach-endings-6"
+    },
+    {
+      "itemId": "prov-ca-u7-agreement-u7-st-teach-endings-7-complete-v1",
+      "beforeSourceRecordId": "ca-u7-agreement:u7-st-teach-endings-7",
+      "afterSourceRecordId": "ca-coverage:obj-u7-endings:u7-st-teach-endings-7"
+    },
+    {
+      "itemId": "prov-ca-u7-agreement-u7-st-rem-endings-complete-v1",
+      "beforeSourceRecordId": "ca-u7-agreement:u7-st-rem-endings",
+      "afterSourceRecordId": "ca-coverage:obj-u7-endings:u7-st-rem-endings"
+    }
+  ],
+  "failedSourceCommit": "f1dad5d9",
+  "fullFailedDeltaAvailableInCommittedCorrection": true
+}
