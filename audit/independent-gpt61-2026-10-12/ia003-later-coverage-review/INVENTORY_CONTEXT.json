@@ -1,0 +1,14 @@
+{
+  "inspectedCommit": "2ff71f197efb73d99662bc8a64180dc01a79aec3",
+  "startedUtc": "2026-10-18T04:47:29.154306+00:00",
+  "type": "COMPILED_DECLARATION_INVENTORY_NOT_LEARNER_EXECUTION",
+  "junitMethodsExecuted": 0,
+  "inputSha256": {
+    "app/src/main/assets/content/v2-curriculum.json": "e674793a2b70e383be8e1705deae35b710fe6cbc87caa68a65aa55785238ea1f",
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt": "5342c58f7662826262ba4c08d6e6af1c27f571d019f92bdd124d7afbc332a7b1",
+    "/workspace/setup/checkpoint-tools/CumulativeCoverageInventory.java": "c5874393bfdd8bd81a50af77767ce0df38dd1fac3cfb9f6fedd6463f9e5075e7",
+    "/workspace/setup/coverage-inventory.gradle": "1a11f77321da603cd8265a52083505d9e658d1b0cb971d511ee25fa91c3eb092"
+  },
+  "command": "source /workspace/setup/android-env.sh; javac /workspace/setup/checkpoint-tools/CumulativeCoverageInventory.java; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/coverage-inventory.gradle exportCumulativeCoverage --max-workers=4 --console=plain",
+  "formalAcceptance": false
+}

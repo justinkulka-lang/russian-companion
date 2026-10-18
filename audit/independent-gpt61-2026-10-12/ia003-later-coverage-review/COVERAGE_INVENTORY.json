@@ -1,0 +1,5114 @@
+{
+  "type": "COMPILED_DECLARATION_AND_PINNED_STATIC_STRUCTURE_INVENTORY",
+  "inspectedCommit": "2ff71f197efb73d99662bc8a64180dc01a79aec3",
+  "junitMethodsExecuted": 0,
+  "registrySha256": "1a7704de615c3606aa00d8452b303959f612a0fea3d758a0c068e59f6d05869f",
+  "unit2LegacyReviewSeparate": true,
+  "policies": [
+    {
+      "targetUnit": 3,
+      "declaredPolicyId": "unit3-prior-literacy-v1",
+      "policyDigest": "e95b4eca3c8faf01804b7b917a0be1a5ee191366666111154f857f8a4965c132",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u1-confusable",
+          "skill": "PRINTED_LETTER_RECOGNITION",
+          "candidateItemIds": [
+            "u1-i-р-not-p",
+            "u1-i-н-not-h",
+            "u1-i-с-not-c",
+            "u1-i-в-not-b",
+            "u1-i-у-not-y",
+            "u1-i-х-not-x"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Separate Cyrillic letters from Latin look-alikes",
+          "candidateCount": 6,
+          "instructionStepIds": [
+            "u1-st-confusable"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-confusable",
+            "u1-st-confusable-r",
+            "u1-st-confusable-n",
+            "u1-st-confusable-s",
+            "u1-st-confusable-rest"
+          ],
+          "independentCheckIds": [
+            "u1-i-р-not-p",
+            "u1-i-н-not-h",
+            "u1-i-с-not-c",
+            "u1-i-в-not-b",
+            "u1-i-у-not-y",
+            "u1-i-х-not-x"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-р-not-p",
+            "u1-i-н-not-h",
+            "u1-i-с-not-c",
+            "u1-i-в-not-b",
+            "u1-i-у-not-y",
+            "u1-i-х-not-x"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 8,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 4,
+      "declaredPolicyId": "unit4-prior-reading-gender-v1",
+      "policyDigest": "d543575bed3775b34ac9569377aadcbe92a476e18803c7dd3f4e8a7c3d18282a",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u3-gender",
+          "skill": "NOUN_GENDER_RECOGNITION",
+          "candidateItemIds": [
+            "u3-i-gender-город"
+          ],
+          "remediationStepId": "u3-st-teach-gender-2",
+          "ownerUnit": 3,
+          "objectiveTitle": "Recognize admitted noun genders",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u3-st-orient",
+            "u3-st-teach-gender-1",
+            "u3-st-teach-gender-2",
+            "u3-st-teach-gender-3",
+            "u3-st-teach-gender-4",
+            "u3-st-teach-gender-5"
+          ],
+          "practiceStepIds": [
+            "u3-st-guided-gender-2",
+            "u3-st-guided-gender-3",
+            "u3-st-guided-gender-4",
+            "u3-st-guided-gender-5"
+          ],
+          "independentCheckIds": [
+            "u3-i-gender-город",
+            "u3-i-gender-друг",
+            "u3-i-gender-дверь",
+            "u3-i-gender-море",
+            "u3-i-gender-дядя"
+          ],
+          "teachingCardCount": 5,
+          "allTeachingBeforeOwnPracticeAndChecks": false,
+          "lateTeaching": [
+            {
+              "teaching": "u3-st-teach-gender-3",
+              "earlierPracticeOrChecks": [
+                "u3-st-guided-gender-2"
+              ]
+            },
+            {
+              "teaching": "u3-st-teach-gender-4",
+              "earlierPracticeOrChecks": [
+                "u3-st-guided-gender-2",
+                "u3-st-guided-gender-3"
+              ]
+            },
+            {
+              "teaching": "u3-st-teach-gender-5",
+              "earlierPracticeOrChecks": [
+                "u3-st-guided-gender-2",
+                "u3-st-guided-gender-3",
+                "u3-st-guided-gender-4"
+              ]
+            }
+          ],
+          "repairContainsEveryTeachingBodyLiterally": false,
+          "repairIncludesAllObjectiveExamples": false,
+          "repairExampleCount": 5,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u3-i-gender-город"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 11,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-phrases",
+        "obj-u3-naming"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 5,
+      "declaredPolicyId": "unit5-prior-reading-subject-v1",
+      "policyDigest": "d6fab8325c06d86103ff29d3ff6296be62db4e90f6b0a053407e99a64da37079",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u4-nominative",
+          "skill": "SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION",
+          "candidateItemIds": [
+            "u4-i-nom-role-train",
+            "u4-i-nom-role-student"
+          ],
+          "remediationStepId": "u4-st-rem-nominative",
+          "ownerUnit": 4,
+          "objectiveTitle": "Recognize the nominative subject in supplied clauses",
+          "candidateCount": 2,
+          "instructionStepIds": [
+            "u4-st-orient",
+            "u4-st-teach-nominative-1",
+            "u4-st-teach-nominative-2",
+            "u4-st-teach-nominative-3"
+          ],
+          "practiceStepIds": [
+            "u4-st-guided-nominative"
+          ],
+          "independentCheckIds": [
+            "u4-i-nom-role-train",
+            "u4-i-nom-role-student"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 3,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 15,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 6,
+      "declaredPolicyId": "unit6-prior-reading-subject-noun-behavior-v2",
+      "policyDigest": "e70019ec96662110bc6771c227750c8c1a2d79ecbaf1e3ec631969f472c6595c",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u5-indeclinable",
+          "skill": "SUPPLIED_NOUN_BEHAVIOR_RECOGNITION",
+          "candidateItemIds": [
+            "u5-i-indecl-такси",
+            "u5-i-indecl-метро",
+            "u5-i-indecl-кино",
+            "u5-i-decl-книга",
+            "u5-i-decl-окно"
+          ],
+          "remediationStepId": "u5-st-rem-indeclinable",
+          "ownerUnit": 5,
+          "objectiveTitle": "Recognize admitted indeclinable nouns",
+          "candidateCount": 5,
+          "instructionStepIds": [
+            "u5-st-orient",
+            "u5-st-teach-indeclinable-1",
+            "u5-st-teach-indeclinable-2",
+            "u5-st-teach-indeclinable-3",
+            "u5-st-teach-indeclinable-4"
+          ],
+          "practiceStepIds": [
+            "u5-st-guided-indeclinable-1"
+          ],
+          "independentCheckIds": [
+            "u5-i-indecl-такси",
+            "u5-i-indecl-метро",
+            "u5-i-indecl-кино",
+            "u5-i-decl-книга",
+            "u5-i-decl-окно"
+          ],
+          "teachingCardCount": 4,
+          "allTeachingBeforeOwnPracticeAndChecks": false,
+          "lateTeaching": [
+            {
+              "teaching": "u5-st-teach-indeclinable-2",
+              "earlierPracticeOrChecks": [
+                "u5-st-guided-indeclinable-1"
+              ]
+            },
+            {
+              "teaching": "u5-st-teach-indeclinable-3",
+              "earlierPracticeOrChecks": [
+                "u5-st-guided-indeclinable-1"
+              ]
+            },
+            {
+              "teaching": "u5-st-teach-indeclinable-4",
+              "earlierPracticeOrChecks": [
+                "u5-st-guided-indeclinable-1"
+              ]
+            }
+          ],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 8,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u5-i-indecl-такси",
+            "u5-i-indecl-метро",
+            "u5-i-indecl-кино",
+            "u5-i-decl-книга",
+            "u5-i-decl-окно"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u4-nominative",
+          "skill": "SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION",
+          "candidateItemIds": [
+            "u4-i-nom-role-train",
+            "u4-i-nom-role-student"
+          ],
+          "remediationStepId": "u4-st-rem-nominative",
+          "ownerUnit": 4,
+          "objectiveTitle": "Recognize the nominative subject in supplied clauses",
+          "candidateCount": 2,
+          "instructionStepIds": [
+            "u4-st-orient",
+            "u4-st-teach-nominative-1",
+            "u4-st-teach-nominative-2",
+            "u4-st-teach-nominative-3"
+          ],
+          "practiceStepIds": [
+            "u4-st-guided-nominative"
+          ],
+          "independentCheckIds": [
+            "u4-i-nom-role-train",
+            "u4-i-nom-role-student"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 3,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 3,
+      "earlierRecognitionDeclarationCount": 18,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u5-questions",
+        "obj-u5-prepositional"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 7,
+      "declaredPolicyId": "unit7-prior-reading-inanimate-case-v1",
+      "policyDigest": "18e23e2a322b66f91a9a1675cf6701e83c7149d1def99d3e4fdaa24539c876a7",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u6-animacy",
+          "skill": "SUPPLIED_INANIMATE_ACCUSATIVE_RECOGNITION",
+          "candidateItemIds": [
+            "u6-i-animacy-3"
+          ],
+          "remediationStepId": "u6-st-rem-animacy",
+          "ownerUnit": 6,
+          "objectiveTitle": "Recognize supplied masculine singular animate and inanimate accusatives",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u6-st-orient",
+            "u6-st-teach-animacy-1",
+            "u6-st-teach-animacy-2",
+            "u6-st-teach-animacy-3",
+            "u6-st-teach-animacy-4",
+            "u6-st-teach-animacy-5",
+            "u6-st-teach-animacy-6"
+          ],
+          "practiceStepIds": [
+            "u6-st-guided-animacy-1"
+          ],
+          "independentCheckIds": [
+            "u6-i-animacy-1",
+            "u6-i-animacy-2",
+            "u6-i-animacy-3"
+          ],
+          "teachingCardCount": 6,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 11,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 25,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-pronoun",
+        "obj-u6-direction"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 8,
+      "declaredPolicyId": "unit8-prior-reading-nominative-agreement-v1",
+      "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u7-endings",
+          "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+          "candidateItemIds": [
+            "u7-i-endings-4"
+          ],
+          "remediationStepId": "u7-st-teach-endings-1",
+          "ownerUnit": 7,
+          "objectiveTitle": "Choose the admitted agreement line",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u7-st-orient",
+            "u7-st-teach-endings-1",
+            "u7-st-teach-endings-2",
+            "u7-st-teach-endings-3",
+            "u7-st-teach-endings-4",
+            "u7-st-teach-endings-5",
+            "u7-st-teach-endings-6",
+            "u7-st-teach-endings-7"
+          ],
+          "practiceStepIds": [
+            "u7-st-guided-endings-1"
+          ],
+          "independentCheckIds": [
+            "u7-i-endings-1",
+            "u7-i-endings-2",
+            "u7-i-endings-3",
+            "u7-i-endings-4"
+          ],
+          "teachingCardCount": 7,
+          "allTeachingBeforeOwnPracticeAndChecks": false,
+          "lateTeaching": [
+            {
+              "teaching": "u7-st-teach-endings-2",
+              "earlierPracticeOrChecks": [
+                "u7-st-guided-endings-1"
+              ]
+            },
+            {
+              "teaching": "u7-st-teach-endings-3",
+              "earlierPracticeOrChecks": [
+                "u7-st-guided-endings-1"
+              ]
+            },
+            {
+              "teaching": "u7-st-teach-endings-4",
+              "earlierPracticeOrChecks": [
+                "u7-st-guided-endings-1"
+              ]
+            },
+            {
+              "teaching": "u7-st-teach-endings-5",
+              "earlierPracticeOrChecks": [
+                "u7-st-guided-endings-1"
+              ]
+            },
+            {
+              "teaching": "u7-st-teach-endings-6",
+              "earlierPracticeOrChecks": [
+                "u7-st-guided-endings-1"
+              ]
+            },
+            {
+              "teaching": "u7-st-teach-endings-7",
+              "earlierPracticeOrChecks": [
+                "u7-st-guided-endings-1"
+              ]
+            }
+          ],
+          "repairContainsEveryTeachingBodyLiterally": false,
+          "repairIncludesAllObjectiveExamples": false,
+          "repairExampleCount": 2,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 36,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 9,
+      "declaredPolicyId": "unit9-prior-reading-plural-gender-v2",
+      "policyDigest": "099e76c0255be497d920adfc51bffd3a869858dd80bb4b5216da92c0cab5a710",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u8-plural",
+          "skill": "SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION",
+          "candidateItemIds": [
+            "u8-i-plural-2"
+          ],
+          "remediationStepId": "u8-st-rem-plural",
+          "ownerUnit": 8,
+          "objectiveTitle": "Recognize supplied singular and plural nominative noun forms",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u8-st-orient",
+            "u8-st-teach-plural-1",
+            "u8-st-teach-plural-2",
+            "u8-st-teach-plural-3",
+            "u8-st-teach-plural-4",
+            "u8-st-teach-plural-5",
+            "u8-st-teach-plural-6",
+            "u8-st-teach-plural-7",
+            "u8-st-teach-plural-8"
+          ],
+          "practiceStepIds": [
+            "u8-st-guided-plural-1"
+          ],
+          "independentCheckIds": [
+            "u8-i-plural-1",
+            "u8-i-plural-2",
+            "u8-i-plural-3",
+            "u8-i-plural-4",
+            "u8-i-plural-5",
+            "u8-i-plural-6"
+          ],
+          "teachingCardCount": 8,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 14,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u3-gender",
+          "skill": "NOUN_GENDER_RECOGNITION",
+          "candidateItemIds": [
+            "u3-i-gender-город",
+            "u3-i-gender-друг",
+            "u3-i-gender-дверь",
+            "u3-i-gender-море",
+            "u3-i-gender-дядя"
+          ],
+          "remediationStepId": "u3-st-rem-gender",
+          "ownerUnit": 3,
+          "objectiveTitle": "Recognize admitted noun genders",
+          "candidateCount": 5,
+          "instructionStepIds": [
+            "u3-st-orient",
+            "u3-st-teach-gender-1",
+            "u3-st-teach-gender-2",
+            "u3-st-teach-gender-3",
+            "u3-st-teach-gender-4",
+            "u3-st-teach-gender-5"
+          ],
+          "practiceStepIds": [
+            "u3-st-guided-gender-2",
+            "u3-st-guided-gender-3",
+            "u3-st-guided-gender-4",
+            "u3-st-guided-gender-5"
+          ],
+          "independentCheckIds": [
+            "u3-i-gender-город",
+            "u3-i-gender-друг",
+            "u3-i-gender-дверь",
+            "u3-i-gender-море",
+            "u3-i-gender-дядя"
+          ],
+          "teachingCardCount": 5,
+          "allTeachingBeforeOwnPracticeAndChecks": false,
+          "lateTeaching": [
+            {
+              "teaching": "u3-st-teach-gender-3",
+              "earlierPracticeOrChecks": [
+                "u3-st-guided-gender-2"
+              ]
+            },
+            {
+              "teaching": "u3-st-teach-gender-4",
+              "earlierPracticeOrChecks": [
+                "u3-st-guided-gender-2",
+                "u3-st-guided-gender-3"
+              ]
+            },
+            {
+              "teaching": "u3-st-teach-gender-5",
+              "earlierPracticeOrChecks": [
+                "u3-st-guided-gender-2",
+                "u3-st-guided-gender-3",
+                "u3-st-guided-gender-4"
+              ]
+            }
+          ],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 16,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u3-i-gender-город",
+            "u3-i-gender-друг",
+            "u3-i-gender-дверь",
+            "u3-i-gender-море",
+            "u3-i-gender-дядя"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 3,
+      "earlierRecognitionDeclarationCount": 41,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 10,
+      "declaredPolicyId": "unit10-prior-reading-numeral-gender-v1",
+      "policyDigest": "7cbbccd57d7d435f8aea5430241415a31539b21b38fbca743b0fc2e66ce08754",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u9-odindva",
+          "skill": "SUPPLIED_NUMERAL_GENDER_RECOGNITION",
+          "candidateItemIds": [
+            "u9-i-odindva-4"
+          ],
+          "remediationStepId": "u9-st-rem-odindva",
+          "ownerUnit": 9,
+          "objectiveTitle": "Choose the admitted form of one or two",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u9-st-orient",
+            "u9-st-teach-odindva-1",
+            "u9-st-teach-odindva-2",
+            "u9-st-teach-odindva-3",
+            "u9-st-teach-odindva-4",
+            "u9-st-teach-odindva-5",
+            "u9-st-teach-odindva-6"
+          ],
+          "practiceStepIds": [
+            "u9-st-guided-odindva-1"
+          ],
+          "independentCheckIds": [
+            "u9-i-odindva-1",
+            "u9-i-odindva-2",
+            "u9-i-odindva-3",
+            "u9-i-odindva-4",
+            "u9-i-odindva-5"
+          ],
+          "teachingCardCount": 6,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 10,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 49,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-quantity",
+        "obj-u9-pattern"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 11,
+      "declaredPolicyId": "unit11-prior-reading-possession-absence-v1",
+      "policyDigest": "3f2f9200528b5a16e313a5f5bda9084dd31098042fed52e5c4263cf687bd20ce",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u10-have",
+          "skill": "SUPPLIED_POSSESSION_ABSENCE_RECOGNITION",
+          "candidateItemIds": [
+            "u10-i-have-4"
+          ],
+          "remediationStepId": "u10-st-rem-have",
+          "ownerUnit": 10,
+          "objectiveTitle": "Choose the admitted possession line",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u10-st-orient",
+            "u10-st-teach-have-1",
+            "u10-st-teach-have-2",
+            "u10-st-teach-have-3",
+            "u10-st-teach-have-4",
+            "u10-st-teach-have-5"
+          ],
+          "practiceStepIds": [
+            "u10-st-guided-have-1"
+          ],
+          "independentCheckIds": [
+            "u10-i-have-1",
+            "u10-i-have-2",
+            "u10-i-have-3",
+            "u10-i-have-4"
+          ],
+          "teachingCardCount": 5,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 7,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 55,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 12,
+      "declaredPolicyId": "unit12-prior-reading-past-gender-v1",
+      "policyDigest": "dcc2993fd862ab3634a66ec0a820141b204963e6a6b23e5a57c7f6a3a0b8f14b",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u11-past-aspect",
+          "skill": "SUPPLIED_PAST_GENDER_RECOGNITION",
+          "candidateItemIds": [
+            "u11-i-past-aspect-1"
+          ],
+          "remediationStepId": "u11-st-rem-past-aspect",
+          "ownerUnit": 11,
+          "objectiveTitle": "Choose past-tense gender agreement",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u11-st-orient",
+            "u11-st-teach-past-aspect-1",
+            "u11-st-teach-past-aspect-2",
+            "u11-st-teach-past-aspect-3",
+            "u11-st-teach-past-aspect-4"
+          ],
+          "practiceStepIds": [
+            "u11-st-guided-past-aspect-1"
+          ],
+          "independentCheckIds": [
+            "u11-i-past-aspect-1",
+            "u11-i-past-aspect-2"
+          ],
+          "teachingCardCount": 4,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 3,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 59,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-reflexive"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 13,
+      "declaredPolicyId": "unit13-prior-reading-aspect-past-gender-v2",
+      "policyDigest": "7e5076dfb0def9c62d25787335555bd93136b98b2bf1c0d823a58cc1830a1a26",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u12-aspect",
+          "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+          "candidateItemIds": [
+            "u12-i-aspect-1"
+          ],
+          "remediationStepId": "u12-st-rem-aspect",
+          "ownerUnit": 12,
+          "objectiveTitle": "Recognize the two taught aspect pairs",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u12-st-orient",
+            "u12-st-teach-aspect-1",
+            "u12-st-teach-aspect-2",
+            "u12-st-teach-aspect-3"
+          ],
+          "practiceStepIds": [
+            "u12-st-guided-aspect-1"
+          ],
+          "independentCheckIds": [
+            "u12-i-aspect-1",
+            "u12-i-aspect-2"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 4,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u11-past-aspect",
+          "skill": "SUPPLIED_PAST_GENDER_RECOGNITION",
+          "candidateItemIds": [
+            "u11-i-past-aspect-1",
+            "u11-i-past-aspect-2"
+          ],
+          "remediationStepId": "u11-st-rem-past-aspect",
+          "ownerUnit": 11,
+          "objectiveTitle": "Choose past-tense gender agreement",
+          "candidateCount": 2,
+          "instructionStepIds": [
+            "u11-st-orient",
+            "u11-st-teach-past-aspect-1",
+            "u11-st-teach-past-aspect-2",
+            "u11-st-teach-past-aspect-3",
+            "u11-st-teach-past-aspect-4"
+          ],
+          "practiceStepIds": [
+            "u11-st-guided-past-aspect-1"
+          ],
+          "independentCheckIds": [
+            "u11-i-past-aspect-1",
+            "u11-i-past-aspect-2"
+          ],
+          "teachingCardCount": 4,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 3,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 3,
+      "earlierRecognitionDeclarationCount": 65,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 14,
+      "declaredPolicyId": "unit14-prior-reading-reported-time-v1",
+      "policyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u13-reported",
+          "skill": "SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION",
+          "candidateItemIds": [
+            "u13-i-report-frame-time"
+          ],
+          "remediationStepId": "u13-st-rem-reported",
+          "ownerUnit": 13,
+          "objectiveTitle": "Recognize supplied reports, direct statements and future time clauses",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u13-st-orient",
+            "u13-st-teach-reported-1",
+            "u13-st-teach-reported-2",
+            "u13-st-teach-reported-3"
+          ],
+          "practiceStepIds": [
+            "u13-st-guided-reported-1"
+          ],
+          "independentCheckIds": [
+            "u13-i-reported-1",
+            "u13-i-reported-2",
+            "u13-i-report-frame-time"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 4,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 69,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 15,
+      "declaredPolicyId": "unit15-prior-reading-impersonal-state-v1",
+      "policyDigest": "8efed316eff763464bf88a69ffe486e390c840801b9b7dc203cb6486f82486e9",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u14-impersonal",
+          "skill": "SUPPLIED_IMPERSONAL_STATE_RECOGNITION",
+          "candidateItemIds": [
+            "u14-i-impersonal-2"
+          ],
+          "remediationStepId": "u14-st-rem-impersonal",
+          "ownerUnit": 14,
+          "objectiveTitle": "Choose the admitted impersonal line",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u14-st-orient",
+            "u14-st-teach-impersonal-1",
+            "u14-st-teach-impersonal-2",
+            "u14-st-teach-impersonal-3"
+          ],
+          "practiceStepIds": [
+            "u14-st-guided-impersonal-1"
+          ],
+          "independentCheckIds": [
+            "u14-i-impersonal-1",
+            "u14-i-impersonal-2"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 4,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 72,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 16,
+      "declaredPolicyId": "unit16-prior-reading-imperative-form-v1",
+      "policyDigest": "bf3748520420fe798ce4f1cc993ddf3f18cad1c64a8290a016235bffe45a62f1",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u15-imperative",
+          "skill": "SUPPLIED_IMPERATIVE_FORM_RECOGNITION",
+          "candidateItemIds": [
+            "u15-i-imperative-1"
+          ],
+          "remediationStepId": "u15-st-rem-imperative",
+          "ownerUnit": 15,
+          "objectiveTitle": "Choose the admitted request row",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u15-st-orient",
+            "u15-st-teach-imperative-1",
+            "u15-st-teach-imperative-contrast",
+            "u15-st-teach-imperative-2",
+            "u15-st-teach-imperative-3"
+          ],
+          "practiceStepIds": [
+            "u15-st-guided-imperative-1"
+          ],
+          "independentCheckIds": [
+            "u15-i-imperative-1",
+            "u15-i-imperative-2"
+          ],
+          "teachingCardCount": 4,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 4,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 75,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 17,
+      "declaredPolicyId": "unit17-prior-reading-instrumental-plural-v1",
+      "policyDigest": "7fe8b5bcacd0c236e09274434007787bb6681caddcc0db65498ea53d0800e5c7",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u16-inst-pl",
+          "skill": "SUPPLIED_INSTRUMENTAL_PLURAL_RECOGNITION",
+          "candidateItemIds": [
+            "u16-i-inst-pl-1"
+          ],
+          "remediationStepId": "u16-st-rem-inst-pl",
+          "ownerUnit": 16,
+          "objectiveTitle": "Recognize instrumental plural nouns",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u16-st-orient",
+            "u16-st-teach-inst-pl-1",
+            "u16-st-teach-inst-pl-2",
+            "u16-st-teach-inst-pl-3",
+            "u16-st-teach-inst-pl-4",
+            "u16-st-teach-inst-pl-5",
+            "u16-st-teach-inst-pl-6",
+            "u16-st-teach-inst-pl-7"
+          ],
+          "practiceStepIds": [
+            "u16-st-guided-inst-pl-1"
+          ],
+          "independentCheckIds": [
+            "u16-i-inst-pl-1",
+            "u16-i-inst-pl-2"
+          ],
+          "teachingCardCount": 7,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 12,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 81,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 18,
+      "declaredPolicyId": "unit18-prior-reading-question-meaning-v1",
+      "policyDigest": "2d783be0d64a24a6e6a53baa5349972fad3969035fce8289386d402cdc3dbcbf",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u17-clock",
+          "skill": "SUPPLIED_QUESTION_INTERPRETATION",
+          "candidateItemIds": [
+            "u17-i-question-book"
+          ],
+          "remediationStepId": "u17-st-rem-clock",
+          "ownerUnit": 17,
+          "objectiveTitle": "Distinguish the supplied clock-time and object-selection questions",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u17-st-orient",
+            "u17-st-teach-clock-1",
+            "u17-st-teach-clock-2"
+          ],
+          "practiceStepIds": [
+            "u17-st-guided-clock-1"
+          ],
+          "independentCheckIds": [
+            "u17-i-question-clock",
+            "u17-i-question-book"
+          ],
+          "teachingCardCount": 2,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 4,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 93,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 19,
+      "declaredPolicyId": "unit19-prior-reading-relative-meaning-v1",
+      "policyDigest": "e72e16cc47e62c61ae4ed63ed00026893c5d9b61a1f3a01e5086565c62502054",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u18-relative",
+          "skill": "SUPPLIED_RELATIVE_CLAUSE_RECOGNITION",
+          "candidateItemIds": [
+            "u18-i-relative-1"
+          ],
+          "remediationStepId": "u18-st-rem-relative",
+          "ownerUnit": 18,
+          "objectiveTitle": "Distinguish which questions from relative clauses",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u18-st-orient",
+            "u18-st-teach-relative-1",
+            "u18-st-teach-relative-2",
+            "u18-st-teach-relative-3"
+          ],
+          "practiceStepIds": [
+            "u18-st-guided-relative-1"
+          ],
+          "independentCheckIds": [
+            "u18-i-relative-1",
+            "u18-i-relative-2"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 4,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 95,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date",
+        "obj-u18-comparison"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 20,
+      "declaredPolicyId": "unit20-prior-reading-conditional-agreement-v1",
+      "policyDigest": "4fc14d5cb99ae7bebfbcc0590e3a5b21a275831010e86317337b186495310af1",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u19-conditional",
+          "skill": "SUPPLIED_CONDITIONAL_AGREEMENT_RECOGNITION",
+          "candidateItemIds": [
+            "u19-i-conditional-1"
+          ],
+          "remediationStepId": "u19-st-rem-conditional",
+          "ownerUnit": 19,
+          "objectiveTitle": "Interpret conditional structure and speaker agreement",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u19-st-orient",
+            "u19-st-teach-conditional-1",
+            "u19-st-teach-conditional-2",
+            "u19-st-teach-conditional-3"
+          ],
+          "practiceStepIds": [
+            "u19-st-guided-conditional-1"
+          ],
+          "independentCheckIds": [
+            "u19-i-conditional-1",
+            "u19-i-conditional-2"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 4,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 99,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date",
+        "obj-u18-comparison",
+        "obj-u18-relative",
+        "obj-u19-prefix-caution",
+        "obj-u19-obligation",
+        "obj-u19-probability"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 21,
+      "declaredPolicyId": "unit21-prior-reading-motion-context-v1",
+      "policyDigest": "378955573d7977a10eef1c47f57eadee9ec5e44c739aacbfbf633d8151caf442",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u20-motion",
+          "skill": "SUPPLIED_MOTION_CONTEXT_RECOGNITION",
+          "candidateItemIds": [
+            "u20-i-direction-city"
+          ],
+          "remediationStepId": "u20-st-rem-motion",
+          "ownerUnit": 20,
+          "objectiveTitle": "Distinguish motion meaning, directionality and setting out",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u20-st-orient",
+            "u20-st-teach-motion-1",
+            "u20-st-teach-motion-2",
+            "u20-st-teach-motion-3",
+            "u20-st-teach-motion-4",
+            "u20-st-teach-motion-5",
+            "u20-st-teach-direction-contexts",
+            "u20-st-teach-direction-return"
+          ],
+          "practiceStepIds": [
+            "u20-st-guided-motion-1"
+          ],
+          "independentCheckIds": [
+            "u20-i-motion-1",
+            "u20-i-motion-2",
+            "u20-i-motion-3",
+            "u20-i-motion-4",
+            "u20-i-direction-birds",
+            "u20-i-direction-city",
+            "u20-i-direction-weekly",
+            "u20-i-direction-round"
+          ],
+          "teachingCardCount": 7,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 14,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 100,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date",
+        "obj-u18-comparison",
+        "obj-u18-relative",
+        "obj-u19-prefix-caution",
+        "obj-u19-conditional",
+        "obj-u19-obligation",
+        "obj-u19-probability"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 22,
+      "declaredPolicyId": "unit22-prior-reading-reflexive-object-v1",
+      "policyDigest": "ff3832066cb15a8d63a7757163a609336ad2987667ef85c5be6e97519bef4781",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u21-object-reference",
+          "skill": "SUPPLIED_REFLEXIVE_OBJECT_RECOGNITION",
+          "candidateItemIds": [
+            "u21-i-object-reference-2"
+          ],
+          "remediationStepId": "u21-st-rem-object-reference",
+          "ownerUnit": 21,
+          "objectiveTitle": "Distinguish oneself from a possessed object",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u21-st-orient",
+            "u21-st-teach-object-reference-1",
+            "u21-st-teach-object-reference-2",
+            "u21-st-teach-object-reference-3"
+          ],
+          "practiceStepIds": [
+            "u21-st-guided-object-reference-1"
+          ],
+          "independentCheckIds": [
+            "u21-i-object-reference-1",
+            "u21-i-object-reference-2"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 2,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 103,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date",
+        "obj-u18-comparison",
+        "obj-u18-relative",
+        "obj-u19-prefix-caution",
+        "obj-u19-conditional",
+        "obj-u19-obligation",
+        "obj-u19-probability",
+        "obj-u20-motion",
+        "obj-u21-svoy",
+        "obj-u21-purpose"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 23,
+      "declaredPolicyId": "unit23-prior-reading-half-quantity-phrase-v1",
+      "policyDigest": "14da5b70e17dcc60c4b2aef1d48d7c766251938638edb550e158ac1de35dbcfe",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u22-half-forms",
+          "skill": "SUPPLIED_HALF_QUANTITY_PHRASE_RECOGNITION",
+          "candidateItemIds": [
+            "u22-i-half-forms-2"
+          ],
+          "remediationStepId": "u22-st-rem-half-forms",
+          "ownerUnit": 22,
+          "objectiveTitle": "Explain gender, case and the noun after one and a half",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u22-st-orient",
+            "u22-st-teach-half-forms-1",
+            "u22-st-teach-half-forms-2",
+            "u22-st-teach-half-forms-3"
+          ],
+          "practiceStepIds": [
+            "u22-st-guided-half-forms-1"
+          ],
+          "independentCheckIds": [
+            "u22-i-half-forms-1",
+            "u22-i-half-forms-2",
+            "u22-i-half-forms-3"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 4,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 109,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date",
+        "obj-u18-comparison",
+        "obj-u18-relative",
+        "obj-u19-prefix-caution",
+        "obj-u19-conditional",
+        "obj-u19-obligation",
+        "obj-u19-probability",
+        "obj-u20-motion",
+        "obj-u21-svoy",
+        "obj-u21-object-reference",
+        "obj-u21-purpose",
+        "obj-u22-noun-forms",
+        "obj-u22-compounds",
+        "obj-u22-declension",
+        "obj-u22-both-forms",
+        "obj-u22-collective"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 24,
+      "declaredPolicyId": "unit24-prior-reading-period-position-v1",
+      "policyDigest": "0a33fcec013ec9bbc79b08f6727df728954411d5a0a105195de9743df202d4dc",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u23-beginning",
+          "skill": "SUPPLIED_PERIOD_POSITION_PHRASE_RECOGNITION",
+          "candidateItemIds": [
+            "u23-i-beginning-2"
+          ],
+          "remediationStepId": "u23-st-rem-beginning",
+          "ownerUnit": 23,
+          "objectiveTitle": "Locate the beginning, middle or end of a period",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u23-st-orient",
+            "u23-st-teach-beginning-1",
+            "u23-st-teach-beginning-2",
+            "u23-st-teach-beginning-3"
+          ],
+          "practiceStepIds": [
+            "u23-st-guided-beginning-1"
+          ],
+          "independentCheckIds": [
+            "u23-i-beginning-1",
+            "u23-i-beginning-2"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 3,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 115,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date",
+        "obj-u18-comparison",
+        "obj-u18-relative",
+        "obj-u19-prefix-caution",
+        "obj-u19-conditional",
+        "obj-u19-obligation",
+        "obj-u19-probability",
+        "obj-u20-motion",
+        "obj-u21-svoy",
+        "obj-u21-object-reference",
+        "obj-u21-purpose",
+        "obj-u22-noun-forms",
+        "obj-u22-compounds",
+        "obj-u22-declension",
+        "obj-u22-both-forms",
+        "obj-u22-half-forms",
+        "obj-u22-collective",
+        "obj-u23-ranges",
+        "obj-u23-during-event",
+        "obj-u23-duration",
+        "obj-u23-elapsed",
+        "obj-u23-completion"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 25,
+      "declaredPolicyId": "unit25-prior-reading-negative-sentence-v1",
+      "policyDigest": "fb10ab96b595a5121f4557e401baf8b20a0279235a7514c41022711f1d404d29",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u24-verbal-ne",
+          "skill": "SUPPLIED_NEGATIVE_SENTENCE_RECOGNITION",
+          "candidateItemIds": [
+            "u24-i-verbal-ne-2"
+          ],
+          "remediationStepId": "u24-st-rem-verbal-ne",
+          "ownerUnit": 24,
+          "objectiveTitle": "Distinguish a negative verb from a negative noun predicate",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u24-st-orient",
+            "u24-st-teach-verbal-ne-1",
+            "u24-st-teach-verbal-ne-2",
+            "u24-st-teach-verbal-ne-3",
+            "u24-st-teach-verbal-ne-4"
+          ],
+          "practiceStepIds": [
+            "u24-st-guided-verbal-ne-1"
+          ],
+          "independentCheckIds": [
+            "u24-i-verbal-ne-1",
+            "u24-i-verbal-ne-2"
+          ],
+          "teachingCardCount": 4,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 5,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 122,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date",
+        "obj-u18-comparison",
+        "obj-u18-relative",
+        "obj-u19-prefix-caution",
+        "obj-u19-conditional",
+        "obj-u19-obligation",
+        "obj-u19-probability",
+        "obj-u20-motion",
+        "obj-u21-svoy",
+        "obj-u21-object-reference",
+        "obj-u21-purpose",
+        "obj-u22-noun-forms",
+        "obj-u22-compounds",
+        "obj-u22-declension",
+        "obj-u22-both-forms",
+        "obj-u22-half-forms",
+        "obj-u22-collective",
+        "obj-u23-ranges",
+        "obj-u23-beginning",
+        "obj-u23-during-event",
+        "obj-u23-duration",
+        "obj-u23-elapsed",
+        "obj-u23-completion",
+        "obj-u24-absence",
+        "obj-u24-alternation",
+        "obj-u24-stand-ins",
+        "obj-u24-concord",
+        "obj-u24-word-order-contrast",
+        "obj-u24-placement"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 26,
+      "declaredPolicyId": "unit26-prior-reading-name-reply-v1",
+      "policyDigest": "584646134e7d8cdef612391a6c4bd09e946776a57e6720691851208248ee8d69",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u25-name-question",
+          "skill": "SUPPLIED_NAME_REPLY_RECOGNITION",
+          "candidateItemIds": [
+            "u25-i-name-question-2"
+          ],
+          "remediationStepId": "u25-st-rem-name-question",
+          "ownerUnit": 25,
+          "objectiveTitle": "Recognize a name question and the start of its reply",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u25-st-orient",
+            "u25-st-teach-name-question-1",
+            "u25-st-teach-name-question-2",
+            "u25-st-teach-name-question-3"
+          ],
+          "practiceStepIds": [
+            "u25-st-guided-name-question-1"
+          ],
+          "independentCheckIds": [
+            "u25-i-name-question-1",
+            "u25-i-name-question-2"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 4,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 129,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date",
+        "obj-u18-comparison",
+        "obj-u18-relative",
+        "obj-u19-prefix-caution",
+        "obj-u19-conditional",
+        "obj-u19-obligation",
+        "obj-u19-probability",
+        "obj-u20-motion",
+        "obj-u21-svoy",
+        "obj-u21-object-reference",
+        "obj-u21-purpose",
+        "obj-u22-noun-forms",
+        "obj-u22-compounds",
+        "obj-u22-declension",
+        "obj-u22-both-forms",
+        "obj-u22-half-forms",
+        "obj-u22-collective",
+        "obj-u23-ranges",
+        "obj-u23-beginning",
+        "obj-u23-during-event",
+        "obj-u23-duration",
+        "obj-u23-elapsed",
+        "obj-u23-completion",
+        "obj-u24-verbal-ne",
+        "obj-u24-absence",
+        "obj-u24-alternation",
+        "obj-u24-stand-ins",
+        "obj-u24-concord",
+        "obj-u24-word-order-contrast",
+        "obj-u24-placement",
+        "obj-u25-name-structure",
+        "obj-u25-diminutives",
+        "obj-u25-courtesy",
+        "obj-u25-nickname-rule",
+        "obj-u25-address",
+        "obj-u25-documented-name-form"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 27,
+      "declaredPolicyId": "unit27-prior-reading-address-component-v1",
+      "policyDigest": "b404725608f3a9fcc6d72d9ec340b9128e430fb5efd039d0914fd16d3d5377cb",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u26-address-notation",
+          "skill": "SUPPLIED_ADDRESS_COMPONENT_RECOGNITION",
+          "candidateItemIds": [
+            "u26-i-address-notation-2"
+          ],
+          "remediationStepId": "u26-st-rem-address-notation",
+          "ownerUnit": 26,
+          "objectiveTitle": "Distinguish locality, street, building and apartment marks",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u26-st-orient",
+            "u26-st-teach-address-notation-1",
+            "u26-st-teach-address-notation-2",
+            "u26-st-teach-address-notation-3"
+          ],
+          "practiceStepIds": [
+            "u26-st-guided-address-notation-1"
+          ],
+          "independentCheckIds": [
+            "u26-i-address-notation-1",
+            "u26-i-address-notation-2"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 3,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 136,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date",
+        "obj-u18-comparison",
+        "obj-u18-relative",
+        "obj-u19-prefix-caution",
+        "obj-u19-conditional",
+        "obj-u19-obligation",
+        "obj-u19-probability",
+        "obj-u20-motion",
+        "obj-u21-svoy",
+        "obj-u21-object-reference",
+        "obj-u21-purpose",
+        "obj-u22-noun-forms",
+        "obj-u22-compounds",
+        "obj-u22-declension",
+        "obj-u22-both-forms",
+        "obj-u22-half-forms",
+        "obj-u22-collective",
+        "obj-u23-ranges",
+        "obj-u23-beginning",
+        "obj-u23-during-event",
+        "obj-u23-duration",
+        "obj-u23-elapsed",
+        "obj-u23-completion",
+        "obj-u24-verbal-ne",
+        "obj-u24-absence",
+        "obj-u24-alternation",
+        "obj-u24-stand-ins",
+        "obj-u24-concord",
+        "obj-u24-word-order-contrast",
+        "obj-u24-placement",
+        "obj-u25-name-structure",
+        "obj-u25-diminutives",
+        "obj-u25-courtesy",
+        "obj-u25-name-question",
+        "obj-u25-nickname-rule",
+        "obj-u25-address",
+        "obj-u25-documented-name-form",
+        "obj-u26-word-order",
+        "obj-u26-vy-capital",
+        "obj-u26-indefinite",
+        "obj-u26-letter-writing",
+        "obj-u26-correspondence",
+        "obj-u26-postal-address"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 28,
+      "declaredPolicyId": "unit28-prior-reading-past-passive-meaning-v1",
+      "policyDigest": "a6afd0b399db518234aab1c9d20a5a2e1daeb7de09776bc16f26bde4f86af6d8",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u27-passive",
+          "skill": "SUPPLIED_PAST_PASSIVE_MEANING_RECOGNITION",
+          "candidateItemIds": [
+            "u27-i-passive-1"
+          ],
+          "remediationStepId": "u27-st-rem-passive",
+          "ownerUnit": 27,
+          "objectiveTitle": "Interpret supplied past passive forms",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u27-st-orient",
+            "u27-st-teach-passive-1",
+            "u27-st-teach-passive-2",
+            "u27-st-teach-passive-3",
+            "u27-st-teach-passive-4"
+          ],
+          "practiceStepIds": [
+            "u27-st-guided-passive-1"
+          ],
+          "independentCheckIds": [
+            "u27-i-passive-1",
+            "u27-i-passive-2"
+          ],
+          "teachingCardCount": 4,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 5,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 139,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date",
+        "obj-u18-comparison",
+        "obj-u18-relative",
+        "obj-u19-prefix-caution",
+        "obj-u19-conditional",
+        "obj-u19-obligation",
+        "obj-u19-probability",
+        "obj-u20-motion",
+        "obj-u21-svoy",
+        "obj-u21-object-reference",
+        "obj-u21-purpose",
+        "obj-u22-noun-forms",
+        "obj-u22-compounds",
+        "obj-u22-declension",
+        "obj-u22-both-forms",
+        "obj-u22-half-forms",
+        "obj-u22-collective",
+        "obj-u23-ranges",
+        "obj-u23-beginning",
+        "obj-u23-during-event",
+        "obj-u23-duration",
+        "obj-u23-elapsed",
+        "obj-u23-completion",
+        "obj-u24-verbal-ne",
+        "obj-u24-absence",
+        "obj-u24-alternation",
+        "obj-u24-stand-ins",
+        "obj-u24-concord",
+        "obj-u24-word-order-contrast",
+        "obj-u24-placement",
+        "obj-u25-name-structure",
+        "obj-u25-diminutives",
+        "obj-u25-courtesy",
+        "obj-u25-name-question",
+        "obj-u25-nickname-rule",
+        "obj-u25-address",
+        "obj-u25-documented-name-form",
+        "obj-u26-word-order",
+        "obj-u26-vy-capital",
+        "obj-u26-address-notation",
+        "obj-u26-indefinite",
+        "obj-u26-letter-writing",
+        "obj-u26-correspondence",
+        "obj-u26-postal-address",
+        "obj-u27-comprehension",
+        "obj-u27-stress"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 29,
+      "declaredPolicyId": "unit29-prior-reading-relative-future-timing-v1",
+      "policyDigest": "b81af7f9c11b33d7ef115412ca298a0f655c248acc87786f0d78d63b66f813b0",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u28-perfective-adverb",
+          "skill": "SUPPLIED_RELATIVE_FUTURE_TIMING_RECOGNITION",
+          "candidateItemIds": [
+            "u28-i-perfective-adverb-1"
+          ],
+          "remediationStepId": "u28-st-rem-perfective-adverb",
+          "ownerUnit": 28,
+          "objectiveTitle": "Choose the time relationship the source states for perfective adverbial forms",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u28-st-orient",
+            "u28-st-teach-perfective-adverb-1",
+            "u28-st-teach-perfective-adverb-2",
+            "u28-st-teach-perfective-adverb-3",
+            "u28-st-teach-perfective-timing-context"
+          ],
+          "practiceStepIds": [
+            "u28-st-guided-perfective-adverb-1"
+          ],
+          "independentCheckIds": [
+            "u28-i-perfective-adverb-1",
+            "u28-i-perfective-adverb-2"
+          ],
+          "teachingCardCount": 4,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 3,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 142,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date",
+        "obj-u18-comparison",
+        "obj-u18-relative",
+        "obj-u19-prefix-caution",
+        "obj-u19-conditional",
+        "obj-u19-obligation",
+        "obj-u19-probability",
+        "obj-u20-motion",
+        "obj-u21-svoy",
+        "obj-u21-object-reference",
+        "obj-u21-purpose",
+        "obj-u22-noun-forms",
+        "obj-u22-compounds",
+        "obj-u22-declension",
+        "obj-u22-both-forms",
+        "obj-u22-half-forms",
+        "obj-u22-collective",
+        "obj-u23-ranges",
+        "obj-u23-beginning",
+        "obj-u23-during-event",
+        "obj-u23-duration",
+        "obj-u23-elapsed",
+        "obj-u23-completion",
+        "obj-u24-verbal-ne",
+        "obj-u24-absence",
+        "obj-u24-alternation",
+        "obj-u24-stand-ins",
+        "obj-u24-concord",
+        "obj-u24-word-order-contrast",
+        "obj-u24-placement",
+        "obj-u25-name-structure",
+        "obj-u25-diminutives",
+        "obj-u25-courtesy",
+        "obj-u25-name-question",
+        "obj-u25-nickname-rule",
+        "obj-u25-address",
+        "obj-u25-documented-name-form",
+        "obj-u26-word-order",
+        "obj-u26-vy-capital",
+        "obj-u26-address-notation",
+        "obj-u26-indefinite",
+        "obj-u26-letter-writing",
+        "obj-u26-correspondence",
+        "obj-u26-postal-address",
+        "obj-u27-passive",
+        "obj-u27-comprehension",
+        "obj-u27-stress",
+        "obj-u28-imperfective-adverb",
+        "obj-u28-readings"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    },
+    {
+      "targetUnit": 30,
+      "declaredPolicyId": "unit30-prior-reading-active-participle-time-v1",
+      "policyDigest": "e6412318bf5658e996c591135a061d515fa12221ad811842858a4d22fc9bc3c9",
+      "slots": [
+        {
+          "objectiveId": "obj-u1-decoding",
+          "skill": "BOUNDED_READING",
+          "candidateItemIds": [
+            "u1-i-decode-pair"
+          ],
+          "remediationStepId": null,
+          "ownerUnit": 1,
+          "objectiveTitle": "Decode a printed letter pair",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u1-st-decoding"
+          ],
+          "practiceStepIds": [
+            "u1-st-guided-decoding",
+            "u1-st-decoding-check"
+          ],
+          "independentCheckIds": [
+            "u1-i-decode-pair"
+          ],
+          "teachingCardCount": 1,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": null,
+          "repairIncludesAllObjectiveExamples": null,
+          "repairExampleCount": null,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [
+            "u1-i-decode-pair"
+          ],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        },
+        {
+          "objectiveId": "obj-u29-active",
+          "skill": "SUPPLIED_ACTIVE_PARTICIPLE_TIME_RECOGNITION",
+          "candidateItemIds": [
+            "u29-i-active-2"
+          ],
+          "remediationStepId": "u29-st-rem-active",
+          "ownerUnit": 29,
+          "objectiveTitle": "Choose the admitted time label for the shown active form",
+          "candidateCount": 1,
+          "instructionStepIds": [
+            "u29-st-orient",
+            "u29-st-teach-active-1",
+            "u29-st-teach-active-2",
+            "u29-st-teach-active-3"
+          ],
+          "practiceStepIds": [
+            "u29-st-guided-active-1"
+          ],
+          "independentCheckIds": [
+            "u29-i-active-1",
+            "u29-i-active-2"
+          ],
+          "teachingCardCount": 3,
+          "allTeachingBeforeOwnPracticeAndChecks": true,
+          "lateTeaching": [],
+          "repairContainsEveryTeachingBodyLiterally": true,
+          "repairIncludesAllObjectiveExamples": true,
+          "repairExampleCount": 3,
+          "hardStructuralIssues": [],
+          "legacyCandidatesWithoutAssessmentMetadata": [],
+          "learnerEligibilityProven": false,
+          "qualifiedSemanticAcceptance": false
+        }
+      ],
+      "distinctSkillTags": 2,
+      "earlierRecognitionDeclarationCount": 148,
+      "earlierRecognitionDeclarationsAbsentFromThisPolicy": [
+        "obj-u1-letter-identity",
+        "obj-u1-confusable",
+        "obj-u1-iotated",
+        "obj-u1-signs",
+        "obj-u1-print-forms",
+        "obj-u1-letter-names",
+        "obj-u2-review",
+        "obj-u3-gender",
+        "obj-u3-phrases",
+        "obj-u3-naming",
+        "obj-u4-pronouns",
+        "obj-u4-present",
+        "obj-u4-stress",
+        "obj-u4-nominative",
+        "obj-u5-questions",
+        "obj-u5-prepositional",
+        "obj-u5-indeclinable",
+        "obj-u6-possessive",
+        "obj-u6-third",
+        "obj-u6-object",
+        "obj-u6-feminine",
+        "obj-u6-animacy",
+        "obj-u6-pronoun",
+        "obj-u6-direction",
+        "obj-u7-default",
+        "obj-u7-endings",
+        "obj-u7-spelling",
+        "obj-u7-question",
+        "obj-u7-demonstrative",
+        "obj-u7-place",
+        "obj-u7-objectadj",
+        "obj-u7-adverb",
+        "obj-u7-adverb-invariance",
+        "obj-u7-adverb-pairs",
+        "obj-u7-adverb-paradigm",
+        "obj-u8-plural",
+        "obj-u8-spelling",
+        "obj-u8-irregular",
+        "obj-u8-agreement",
+        "obj-u8-availability",
+        "obj-u9-cardinal",
+        "obj-u9-teens",
+        "obj-u9-tens",
+        "obj-u9-hundreds",
+        "obj-u9-thousands",
+        "obj-u9-odindva",
+        "obj-u9-quantity",
+        "obj-u9-pattern",
+        "obj-u10-have",
+        "obj-u10-absence",
+        "obj-u10-pronoun",
+        "obj-u10-preposition",
+        "obj-u10-adjective",
+        "obj-u10-animate",
+        "obj-u11-past-read",
+        "obj-u11-past-be",
+        "obj-u11-past-aspect",
+        "obj-u11-reflexive",
+        "obj-u12-future-imp",
+        "obj-u12-future-perf",
+        "obj-u12-aspect",
+        "obj-u12-dative",
+        "obj-u12-spelling",
+        "obj-u12-prep-plural",
+        "obj-u13-past-aspect",
+        "obj-u13-tense-keep",
+        "obj-u13-infinitive",
+        "obj-u13-reported",
+        "obj-u14-future-aspect",
+        "obj-u14-future-person",
+        "obj-u14-impersonal",
+        "obj-u15-imperative",
+        "obj-u15-say-request",
+        "obj-u15-aspect-consolidate",
+        "obj-u16-inst-sg",
+        "obj-u16-inst-pl",
+        "obj-u16-inst-adj",
+        "obj-u16-inst-means",
+        "obj-u16-inst-prep",
+        "obj-u16-complements",
+        "obj-u17-ordinals",
+        "obj-u17-hours",
+        "obj-u17-years",
+        "obj-u17-minutes",
+        "obj-u17-age",
+        "obj-u17-weekdays",
+        "obj-u17-months",
+        "obj-u17-clock",
+        "obj-u17-clock-answers",
+        "obj-u17-quarter-hour",
+        "obj-u17-clock-productive",
+        "obj-u17-calendar-date",
+        "obj-u18-comparison",
+        "obj-u18-relative",
+        "obj-u19-prefix-caution",
+        "obj-u19-conditional",
+        "obj-u19-obligation",
+        "obj-u19-probability",
+        "obj-u20-motion",
+        "obj-u21-svoy",
+        "obj-u21-object-reference",
+        "obj-u21-purpose",
+        "obj-u22-noun-forms",
+        "obj-u22-compounds",
+        "obj-u22-declension",
+        "obj-u22-both-forms",
+        "obj-u22-half-forms",
+        "obj-u22-collective",
+        "obj-u23-ranges",
+        "obj-u23-beginning",
+        "obj-u23-during-event",
+        "obj-u23-duration",
+        "obj-u23-elapsed",
+        "obj-u23-completion",
+        "obj-u24-verbal-ne",
+        "obj-u24-absence",
+        "obj-u24-alternation",
+        "obj-u24-stand-ins",
+        "obj-u24-concord",
+        "obj-u24-word-order-contrast",
+        "obj-u24-placement",
+        "obj-u25-name-structure",
+        "obj-u25-diminutives",
+        "obj-u25-courtesy",
+        "obj-u25-name-question",
+        "obj-u25-nickname-rule",
+        "obj-u25-address",
+        "obj-u25-documented-name-form",
+        "obj-u26-word-order",
+        "obj-u26-vy-capital",
+        "obj-u26-address-notation",
+        "obj-u26-indefinite",
+        "obj-u26-letter-writing",
+        "obj-u26-correspondence",
+        "obj-u26-postal-address",
+        "obj-u27-passive",
+        "obj-u27-comprehension",
+        "obj-u27-stress",
+        "obj-u28-imperfective-adverb",
+        "obj-u28-perfective-adverb",
+        "obj-u28-readings",
+        "obj-u29-short-adjective",
+        "obj-u29-bookish-note",
+        "obj-u29-punctuation",
+        "obj-u29-register",
+        "obj-u29-reading"
+      ],
+      "absentDeclarationsAreNotAutomaticallyEligible": true
+    }
+  ],
+  "objectiveTargetCoverage": [
+    {
+      "objectiveId": "obj-u1-decoding",
+      "ownerUnit": 1,
+      "targets": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u1-i-decode-pair"
+      ]
+    },
+    {
+      "objectiveId": "obj-u1-confusable",
+      "ownerUnit": 1,
+      "targets": [
+        3
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u1-i-р-not-p",
+        "u1-i-н-not-h",
+        "u1-i-с-not-c",
+        "u1-i-в-not-b",
+        "u1-i-у-not-y",
+        "u1-i-х-not-x"
+      ]
+    },
+    {
+      "objectiveId": "obj-u3-gender",
+      "ownerUnit": 3,
+      "targets": [
+        4,
+        9
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u3-i-gender-город",
+        "u3-i-gender-друг",
+        "u3-i-gender-дверь",
+        "u3-i-gender-море",
+        "u3-i-gender-дядя"
+      ]
+    },
+    {
+      "objectiveId": "obj-u4-nominative",
+      "ownerUnit": 4,
+      "targets": [
+        5,
+        6
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u4-i-nom-role-train",
+        "u4-i-nom-role-student"
+      ]
+    },
+    {
+      "objectiveId": "obj-u5-indeclinable",
+      "ownerUnit": 5,
+      "targets": [
+        6
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u5-i-indecl-такси",
+        "u5-i-indecl-метро",
+        "u5-i-indecl-кино",
+        "u5-i-decl-книга",
+        "u5-i-decl-окно"
+      ]
+    },
+    {
+      "objectiveId": "obj-u6-animacy",
+      "ownerUnit": 6,
+      "targets": [
+        7
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u6-i-animacy-3"
+      ]
+    },
+    {
+      "objectiveId": "obj-u7-endings",
+      "ownerUnit": 7,
+      "targets": [
+        8
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u7-i-endings-4"
+      ]
+    },
+    {
+      "objectiveId": "obj-u8-plural",
+      "ownerUnit": 8,
+      "targets": [
+        9
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u8-i-plural-2"
+      ]
+    },
+    {
+      "objectiveId": "obj-u9-odindva",
+      "ownerUnit": 9,
+      "targets": [
+        10
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u9-i-odindva-4"
+      ]
+    },
+    {
+      "objectiveId": "obj-u10-have",
+      "ownerUnit": 10,
+      "targets": [
+        11
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u10-i-have-4"
+      ]
+    },
+    {
+      "objectiveId": "obj-u11-past-aspect",
+      "ownerUnit": 11,
+      "targets": [
+        12,
+        13
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u11-i-past-aspect-1",
+        "u11-i-past-aspect-2"
+      ]
+    },
+    {
+      "objectiveId": "obj-u12-aspect",
+      "ownerUnit": 12,
+      "targets": [
+        13
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u12-i-aspect-1"
+      ]
+    },
+    {
+      "objectiveId": "obj-u13-reported",
+      "ownerUnit": 13,
+      "targets": [
+        14
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u13-i-report-frame-time"
+      ]
+    },
+    {
+      "objectiveId": "obj-u14-impersonal",
+      "ownerUnit": 14,
+      "targets": [
+        15
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u14-i-impersonal-2"
+      ]
+    },
+    {
+      "objectiveId": "obj-u15-imperative",
+      "ownerUnit": 15,
+      "targets": [
+        16
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u15-i-imperative-1"
+      ]
+    },
+    {
+      "objectiveId": "obj-u16-inst-pl",
+      "ownerUnit": 16,
+      "targets": [
+        17
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u16-i-inst-pl-1"
+      ]
+    },
+    {
+      "objectiveId": "obj-u17-clock",
+      "ownerUnit": 17,
+      "targets": [
+        18
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u17-i-question-book"
+      ]
+    },
+    {
+      "objectiveId": "obj-u18-relative",
+      "ownerUnit": 18,
+      "targets": [
+        19
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u18-i-relative-1"
+      ]
+    },
+    {
+      "objectiveId": "obj-u19-conditional",
+      "ownerUnit": 19,
+      "targets": [
+        20
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u19-i-conditional-1"
+      ]
+    },
+    {
+      "objectiveId": "obj-u20-motion",
+      "ownerUnit": 20,
+      "targets": [
+        21
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u20-i-direction-city"
+      ]
+    },
+    {
+      "objectiveId": "obj-u21-object-reference",
+      "ownerUnit": 21,
+      "targets": [
+        22
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u21-i-object-reference-2"
+      ]
+    },
+    {
+      "objectiveId": "obj-u22-half-forms",
+      "ownerUnit": 22,
+      "targets": [
+        23
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u22-i-half-forms-2"
+      ]
+    },
+    {
+      "objectiveId": "obj-u23-beginning",
+      "ownerUnit": 23,
+      "targets": [
+        24
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u23-i-beginning-2"
+      ]
+    },
+    {
+      "objectiveId": "obj-u24-verbal-ne",
+      "ownerUnit": 24,
+      "targets": [
+        25
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u24-i-verbal-ne-2"
+      ]
+    },
+    {
+      "objectiveId": "obj-u25-name-question",
+      "ownerUnit": 25,
+      "targets": [
+        26
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u25-i-name-question-2"
+      ]
+    },
+    {
+      "objectiveId": "obj-u26-address-notation",
+      "ownerUnit": 26,
+      "targets": [
+        27
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u26-i-address-notation-2"
+      ]
+    },
+    {
+      "objectiveId": "obj-u27-passive",
+      "ownerUnit": 27,
+      "targets": [
+        28
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u27-i-passive-1"
+      ]
+    },
+    {
+      "objectiveId": "obj-u28-perfective-adverb",
+      "ownerUnit": 28,
+      "targets": [
+        29
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u28-i-perfective-adverb-1"
+      ]
+    },
+    {
+      "objectiveId": "obj-u29-active",
+      "ownerUnit": 29,
+      "targets": [
+        30
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u29-i-active-2"
+      ]
+    }
+  ],
+  "distinctDeclaredReviewObjectives": 29,
+  "totalFixedSlots": 59,
+  "multiCandidateTargets": [
+    3,
+    5,
+    6,
+    9,
+    13
+  ],
+  "moreThanTwoSlotTargets": [
+    6,
+    9,
+    13
+  ],
+  "nonReadingObjectivesAtMultipleTargets": [
+    {
+      "objectiveId": "obj-u3-gender",
+      "ownerUnit": 3,
+      "targets": [
+        4,
+        9
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u3-i-gender-город",
+        "u3-i-gender-друг",
+        "u3-i-gender-дверь",
+        "u3-i-gender-море",
+        "u3-i-gender-дядя"
+      ]
+    },
+    {
+      "objectiveId": "obj-u4-nominative",
+      "ownerUnit": 4,
+      "targets": [
+        5,
+        6
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u4-i-nom-role-train",
+        "u4-i-nom-role-student"
+      ]
+    },
+    {
+      "objectiveId": "obj-u11-past-aspect",
+      "ownerUnit": 11,
+      "targets": [
+        12,
+        13
+      ],
+      "candidateIdsAcrossPolicies": [
+        "u11-i-past-aspect-1",
+        "u11-i-past-aspect-2"
+      ]
+    }
+  ],
+  "laterTargets14Through30AllTwoSlots": true,
+  "hardStructuralIssues": [],
+  "instructionAndRepairInspectionFlags": [
+    {
+      "target": 4,
+      "objective": "obj-u3-gender",
+      "teachingBeforePractice": false,
+      "literalRepairCoverage": false,
+      "allObjectiveExamplesInRepair": false
+    },
+    {
+      "target": 6,
+      "objective": "obj-u5-indeclinable",
+      "teachingBeforePractice": false,
+      "literalRepairCoverage": true,
+      "allObjectiveExamplesInRepair": true
+    },
+    {
+      "target": 8,
+      "objective": "obj-u7-endings",
+      "teachingBeforePractice": false,
+      "literalRepairCoverage": false,
+      "allObjectiveExamplesInRepair": false
+    },
+    {
+      "target": 9,
+      "objective": "obj-u3-gender",
+      "teachingBeforePractice": false,
+      "literalRepairCoverage": true,
+      "allObjectiveExamplesInRepair": true
+    }
+  ],
+  "flagsRequireFullContextReviewNotAutomaticEdits": true,
+  "potentialDeclarationsAreNotAdmissionOrEligibility": true,
+  "allSkillsCoverageClaim": false,
+  "formalAcceptance": false,
+  "completeSuite": false
+}
