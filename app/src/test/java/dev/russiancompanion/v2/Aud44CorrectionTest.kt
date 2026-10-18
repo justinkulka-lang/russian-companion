@@ -8,6 +8,7 @@ import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -40,8 +41,9 @@ class Aud44CorrectionTest {
         assertTrue(errors.joinToString("\n"), errors.any { it.contains(gloss.id) && it.contains("does not clear adverb-paradigm") })
         assertTrue(unresolved(relabeled, 7).contains("adverb-form-gloss"))
         assertFalse(unresolved(relabeled, 7).contains("adverb-paradigm"))
-        val decision = advancementDecision(pack, pack.unit(7)!!, learner(pack, 7))
+        val decision = ordinaryUnitRequirements(pack, pack.unit(7)!!, learner(pack, 7))
         assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+        assertAssignedReviewStillRequired(pack, 7)
     }
 
     @Test
@@ -96,8 +98,9 @@ class Aud44CorrectionTest {
         assertFalse(unresolved(pack, 17).contains("calendar-date"))
         assertFalse(unresolved(pack, 17).contains("productive-clock-time"))
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
-        val decision = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        val decision = ordinaryUnitRequirements(pack, pack.unit(17)!!, learner(pack, 17))
         assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+        assertAssignedReviewStillRequired(pack, 17)
         assertFalse(decision.remaining.any { it.contains("clock-time") || it.contains("calendar-date") })
         val stripped = pack.copy(
             sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "productive-clock-time" },
@@ -107,14 +110,20 @@ class Aud44CorrectionTest {
         assertFalse(stillBlocked.allowed)
         assertTrue(stillBlocked.remaining.any { it.contains("productive clock-time") })
         assertFalse(stillBlocked.remaining.joinToString("\n"), stillBlocked.remaining.any { it.contains("calendar-date") })
+        val ordinaryBlocked = ordinaryUnitRequirements(stripped, flipped, learner(stripped, 17))
+        assertFalse(ordinaryBlocked.allowed)
+        assertTrue(ordinaryBlocked.remaining.any { it.contains("productive clock-time") })
+        assertFalse(ordinaryBlocked.remaining.any { it.contains("calendar-date") })
+        assertEquals(ordinaryBlocked.remaining + "Complete the assigned earlier-objective review", stillBlocked.remaining)
     }
 
     @Test
     fun unit17AdvancementNamesOnlyUnresolvedSourceCapabilities() {
         val pack = pack()
-        val live = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        val live = ordinaryUnitRequirements(pack, pack.unit(17)!!, learner(pack, 17))
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
         assertTrue(live.remaining.joinToString("\n"), live.allowed)
+        assertAssignedReviewStillRequired(pack, 17)
         assertEquals(emptyList<String>(), live.remaining)
         assertFalse(unresolved(pack, 17).contains("calendar-date"))
         assertNoResolvedClaimCalledMissing(pack, live.remaining)
@@ -251,8 +260,9 @@ class Aud44CorrectionTest {
         assertFalse(unresolved(pack, 17).contains("calendar-date"))
         assertFalse(unresolved(pack, 17).contains("productive-clock-time"))
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
-        val advanced = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        val advanced = ordinaryUnitRequirements(pack, pack.unit(17)!!, learner(pack, 17))
         assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
+        assertAssignedReviewStillRequired(pack, 17)
         assertFalse(unresolved(pack, 19).contains("probability-dolzhen"))
         assertFalse(
             pack.unit(19)!!.sessions.flatMap { it.steps }.any {
@@ -402,6 +412,13 @@ class Aud44CorrectionTest {
         sources += pack.items.filter { it.objectiveId in objectives }.map { it.sourceId }
         sources += pack.references.filter { it.id in references }.map { it.sourceId }
         return references to sources
+    }
+
+    /** This unit-local synthetic fixture has no assigned cumulative-review answers. */
+    private fun assertAssignedReviewStillRequired(pack: V2CurriculumPack, number: Int) {
+        val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
+        assertFalse(decision.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), decision.remaining)
     }
 
     private fun learner(pack: V2CurriculumPack, number: Int): V2LearnerView {

@@ -1,0 +1,28 @@
+{
+  "sourceBefore": "ae9d6810c5e2a812ff6d770930b14c22655a0331",
+  "originalRuntimeSource": "41e84c0b00605845dacb3a611d742ae72639526e",
+  "beforeEqualsOriginalFailureSource": true,
+  "changedMethods": [
+    "threeAdverbGlossPairsCannotClearTheParadigm",
+    "calendarDateCompletionCannotConcealTheClockGap",
+    "unit17AdvancementNamesOnlyUnresolvedSourceCapabilities",
+    "sharedLicenseNoticeDoesNotAnnounceUnitReadiness"
+  ],
+  "beforeSha256": "00a259e461f7cf724c5f31b6c43aedb9038946a935a974cc9a189a78430439ef",
+  "afterSha256": "cfd750a54efdb6e4ee1120e0187b3bf84ca0d1e2eb38f322cc7f147257199373",
+  "allOtherMethodBodiesExact": true,
+  "unchangedMethodSha256": {
+    "faultySuffixFormulationIsNotAnApprovedRussianRule": "6e49009774563b96c79a6c03990bd09e6f85acff3665a39f6500470a186d6d00",
+    "threeClockPhrasesCannotClearProductiveClockTime": "b8248d20d5cdd6c60c5c485c307d04d85104ff56ffc2b5da98fbde7613d89ad6",
+    "unrelatedEvidenceCannotImpersonateProductiveClockTime": "683de6ece787236b8984217cb56a7e936346fa500c343f72fec623316fe2263b",
+    "unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged": "e998f4b4d75f4000c0d242f65d67d989718836ef184405ad415669937b659ffc",
+    "unit17SourceAdmissionDoesNotReachOtherUnits": "ceba1c8005df825fe928f0fd2e6d311413e4b45c0d4a07de6f85263ea45b015e",
+    "reviewsMappingsAndReleaseStayUnsigned": "9bf9a867ae5b71660dff3468952321cf8998c28a613a45b304fea24478fe924b"
+  },
+  "positiveScope": "ordinary source requirements with exact full assigned-review refusal for Units7/17",
+  "calendarNegative": "Original full source blocker remains; ordinary independently blocks clock,not date; full remaining exactly ordinary plus assigned review",
+  "newTestAnnotations": 0,
+  "productionChanges": false,
+  "formalAcceptance": false,
+  "runtime": "PENDING_INITIAL"
+}
