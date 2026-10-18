@@ -1,0 +1,50 @@
+{
+  "sourceBefore": "50dc242af2e68886f596c17ed5f32689b7a7992e",
+  "class": "ContentAuditCorrectionTest",
+  "beforeSha256": "b81b034b5e60d79981eb1367806d27074c4c4f3d4bb2a16ece4c808b0c566571",
+  "afterSha256": "7901dc09e53f0345e2a009cbf1bcdb4073a30e72977cd22f7c59c23c000ad790",
+  "changedMethods": [
+    "imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice",
+    "perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice"
+  ],
+  "originalChangedMethods": {
+    "imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice": "    @Test\n    fun imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice() {\n        assertPrerequisiteTeachingBeforeGuided(28, \"imperfective-adverb\", 2)\n    }",
+    "perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice": "    @Test\n    fun perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice() {\n        assertPrerequisiteTeachingBeforeGuided(28, \"perfective-adverb\", 3)\n    }"
+  },
+  "unchangedMethodSha256": {
+    "possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice": "988ad8ddd6f4c3035252d2e1e51a943557e3bdd23ee566b1dceca450e5638466",
+    "purposeRegisterExplanationPrecedesTheOrdinaryPurposeChoice": "6da8a7d7048c088aa1d79a7dcf27252c10ea68bc972ad4290bb8b4c88d489d27",
+    "reorderedSessionsRejectResumeIdentityBoundToThePreviousPosition": "d011f23794bbaadd39cc6ba2cf5bbc4a51aa34e6c0c72dcc8d3f417d7dec0141",
+    "accusativeDeclensionExplanationPrecedesTheNounChoice": "0f37f64455d9310dbfe843b587685b15c5dc68c14578a068ff7defeb9d84dd92",
+    "adjectivePluralFormPrecedesTheSpellingChoice": "1f3f46273b3f2cce38238714e491aa9603be96d339a04e962ddc4dcfe0044eec",
+    "nounPluralFormAndSevenLetterRulePrecedeTheChoice": "b332c15ffd6f2d499707cc0bf97db5c4235837e0e80b07affe16a5043c0674ca",
+    "aspectCounterpartExplanationPrecedesThePartnerChoice": "16e1bf3d4cf7e73cd5b3c032448b1e0dc88d4a5372b5f969b33fb684e8e46b8a",
+    "instrumentalNounExplanationPrecedesTheCaseChoice": "9c6d223b9e22da9c4c1b4a21c2eeef29f1bd02fd78732fe1e26c3cd7b24ba125",
+    "instrumentalAdjectiveExplanationPrecedesTheCaseChoice": "ab2d0ababd2c40bb8e4652d4a910b359b377e66db1bfde74953b2cd65da05aa8",
+    "possessiveInstructionLabelsFormsAndWorksTheRetainedFeminineCaseChange": "57b23570f00bed55106476e0b11992383993111c16dcab9e6b6214c268c5d958",
+    "possessiveFeedbackAndRemediationExplainTheSameGenderNumberAndCaseRule": "32065951d22870c7cc58f426220a0d627560abd19c781e946aed199ec4812a1e",
+    "possessiveWorkedExplanationRecordsStayPendingAndRejectAChangedHash": "6278bda42394d027ac9ace849596d89decefa201f0be01be31e784162823767f",
+    "spellingInstructionExplainsFormsBeforePracticeAndWorksTheAccusative": "a33707ce07712c50be5fef9550981dfa192108775cafb6ac6e561c183b6c9e76",
+    "spellingQuestionsNameTheActualFormEvidenceAndRemediationRetainsAllTeaching": "94a319da6e0cccec806d07408900dd98bfc65ed23426da8398e6d43f5732ba29",
+    "spellingExplanationRecordsResolveRetainedFormsAndStayPending": "db305be779a5beda5a3eb83b8267f05fdf8709bb6bceb97f1e6f6348fe99394b",
+    "unitEightTeachingWorksTheNounPluralAndSeparatesOtherPatterns": "253a60fd42c9abd1ce2e98d7bb35cfe7462efbadd79881e0b511ddf36e47d372",
+    "unitEightChecksAssessNominativeFormsAndRetainCompleteRemediation": "f4f258742c54ed8ca17659c99f55db783cad8d54804a23285c6a8a4dd326b705",
+    "unitEightExplanationCoverageStaysPendingAndRejectsTamperedHashes": "5ce87d153fd040c6ad6d5a0b23fb0c41e17f88e44ef14fe24987e4def4bab286",
+    "unitTwelveAspectTeachingLabelsPairsAndAvoidsAnUnfinishedActionRule": "aa0f70f6d121bc113f4e3e9eb702cf5800f23eb2a667e94f8a4dfc5b64f53b71",
+    "unitTwelveAspectFeedbackExplainsBothOptionsAndRemediationRetainsThePairs": "ebb71d925c46b93ecc9a0d53ee3b270bc9a998b84b0372c15d36188ce8c92cc3",
+    "unitTwelveAspectCoverageResolvesOriginalPairsAndRejectsTamperedHashes": "74ac18e0f6d7f592cfc9e32fbd14405438078e01fa90084dc2047aad6b0c8413",
+    "negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm": "c18bb69988880821418d3ac5bb52277d47775033a8ac8b73de09a2e8c169566f",
+    "courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation": "f39bf2b92aa6168ac4e7c80acf56df0438fa7bec45ef99071712d2e73ec8b001",
+    "unitElevenChecksPastAgreementBeforeAspectIntroductionWithoutLoweringItsGate": "9ce4f778a0655ed421dbc7899c86da26576eb036f78576141db25fd71f9d1612",
+    "wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation": "b49be082f1f4014f85bbbd507340d1e1e7c7d67bc73423b15b849368a8f63990",
+    "auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement": "b282d7cb8e6f171ddd5855fa3b4f475b3b67e1d12d0c605104f738933eb4ae22",
+    "packValidatesAndRejectsTheAuditedFalseKeys": "21b189c91b293ccbcde53c812ace0a5c34b93a4189eee05b3b42a34a97e5d841",
+    "gatingChangeInvalidatesUnitAndPackIdentitiesOnly": "3340da85b9b485f5d863f189152c256324ac64821f1eee8925e9c9f6461ba611",
+    "unit27AdvancesWithoutOptionalPresentPassive": "62afc1c01308f462904a3c80a7ef21ca4f9ec8d603403b5712e0f811bbde575f"
+  },
+  "newTestAnnotations": 0,
+  "change": "Keep original2/3 numbered teaching IDs and count; append the exact existing named context card explicitly. Helper defaults stay unchanged for all other topics. Exact pre-guided order, zero later teaching, GUIDED/REMEDIATE/CHECK, guide ID, gating and required check membership assertions remain.",
+  "productionChanges": false,
+  "formalAcceptance": false,
+  "runtime": "PENDING_INITIAL"
+}

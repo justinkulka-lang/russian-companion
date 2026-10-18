@@ -1,0 +1,17 @@
+{
+  "selectedMethods": {
+    "ContentAuditCorrectionTest": [
+      "imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice",
+      "perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice",
+      "reorderedSessionsRejectResumeIdentityBoundToThePreviousPosition",
+      "possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice"
+    ],
+    "Unit28TimingTransferTest": [
+      "allCardsPrecedePracticeAndFullRemediationRetainsRelativeFutureCoverage",
+      "originalIndependentScoredFieldsAndEveryExampleRemainUnchanged",
+      "originalRepeatedGuidedContextsCannotBeRestored",
+      "coordinatedGuidedKeyAndApplicationCannotReverseAnteriority",
+      "historicalSixAnswerCompletionStaysSavedButCannotCreditRenewedContent"
+    ]
+  }
+}

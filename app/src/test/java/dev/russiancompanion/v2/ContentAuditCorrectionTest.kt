@@ -35,12 +35,14 @@ class ContentAuditCorrectionTest {
 
     @Test
     fun imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice() {
-        assertPrerequisiteTeachingBeforeGuided(28, "imperfective-adverb", 2)
+        assertPrerequisiteTeachingBeforeGuided(28, "imperfective-adverb", 2,
+            additionalTeachingIds = listOf("u28-st-teach-imperfective-timing-context"))
     }
 
     @Test
     fun perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice() {
-        assertPrerequisiteTeachingBeforeGuided(28, "perfective-adverb", 3)
+        assertPrerequisiteTeachingBeforeGuided(28, "perfective-adverb", 3,
+            additionalTeachingIds = listOf("u28-st-teach-perfective-timing-context"))
     }
 
     @Test
@@ -104,14 +106,19 @@ class ContentAuditCorrectionTest {
         assertPrerequisiteTeachingBeforeGuided(16, "inst-adj", 4)
     }
 
-    private fun assertPrerequisiteTeachingBeforeGuided(number: Int, topic: String, teachingCount: Int) {
+    private fun assertPrerequisiteTeachingBeforeGuided(
+        number: Int,
+        topic: String,
+        teachingCount: Int,
+        additionalTeachingIds: List<String> = emptyList(),
+    ) {
         val unit = pack().unit(number)!!
         val session = unit.sessions.single { it.id == "u$number-s-$topic" }
         val guidedIndex = session.steps.indexOfFirst { it.kind == "GUIDED" }
         assertEquals("Prerequisite teaching still follows guided practice in ${session.id}",
-            teachingCount, session.steps.take(guidedIndex).count { it.kind == "TEACH" })
+            teachingCount + additionalTeachingIds.size, session.steps.take(guidedIndex).count { it.kind == "TEACH" })
         assertTrue(session.steps.drop(guidedIndex).none { it.kind == "TEACH" })
-        assertEquals((1..teachingCount).map { "u$number-st-teach-$topic-$it" },
+        assertEquals((1..teachingCount).map { "u$number-st-teach-$topic-$it" } + additionalTeachingIds,
             session.steps.take(guidedIndex).map { it.id })
         assertEquals(listOf("GUIDED", "REMEDIATE", "CHECK"), session.steps.drop(guidedIndex).map { it.kind })
         assertEquals(listOf("u$number-g-$topic-0"), session.steps[guidedIndex].itemIds)

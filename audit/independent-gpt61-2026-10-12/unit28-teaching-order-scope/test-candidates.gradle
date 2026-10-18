@@ -1,0 +1,7 @@
+// Two exact candidate classes; runtime dependencies and exporter exclusions unchanged.
+allprojects {
+    tasks.withType(Test).configureEach {
+        include '**/ContentAuditCorrectionTest.class'
+        include '**/Unit28TimingTransferTest.class'
+    }
+}
