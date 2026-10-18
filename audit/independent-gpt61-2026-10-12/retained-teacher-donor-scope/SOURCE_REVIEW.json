@@ -1,0 +1,39 @@
+{
+  "sourceCommit": "e2a43c5caf4db17526aeac65a5be18f8d0c93ce2",
+  "historicalBaseline": "550049c63a590c70c0d11cd47258452a1b03c50a",
+  "retainedTeacherItemWholeObjectExact": true,
+  "retainedTeacherMatchesOriginalDuplicateScoredFields": [
+    "kind",
+    "language",
+    "prompt",
+    "promptLetter",
+    "options",
+    "answer",
+    "feedback",
+    "objectiveId",
+    "sourceId",
+    "reviewStatus",
+    "containsGeneratedRussian",
+    "distractorRationales"
+  ],
+  "retainedTeacherIndependent": true,
+  "retainedTeacherFeature": "ANIMACY",
+  "retainedTeacherFullObjectSha256": "8af8619a285e0371a10f4694365c662141bfb50f451ab11caea2df4a0429163e",
+  "currentChairFullObjectSha256": "753ceaba2e1f61e89552259c7d2f311f0514a2a4f4bb56b1d354d1ef7a061862",
+  "sourceFileSha256": {
+    "audit/content-corrections/UNIT6_ANIMACY_TRANSFER_CORRECTION.json": "e3d808091845a609ba066c75e1f16bc4fc7bd82a4e97e963853a6a21fd570cb6",
+    "audit/independent-gpt61-2026-10-12/ia016-unit6-animacy-research/SOURCE_REVIEW.md": "9427394bbe7f5318e02e7d430583d9ef1bc18c0eec67b7eeb01273ebcc35550a",
+    "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt": "60702c98a8e6178c4b140fe81e2220df1f830972913f99047502d95ecda00b16",
+    "catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+    "catalog/sources/units-3-5/openrussian/nouns.csv": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/Unit6AnimacyPins.kt": "c3b35c0884c21c449dbdc8f3720f60044991689b844f5275072d61b8a755d445"
+  },
+  "reviewedContexts": [
+    "Complete retained Wikibooks Nouns subsection including examples,formation qualifications and summary table",
+    "OpenRussian full header and brother/teacher/friend/table/house rows",
+    "Existing correction ledger/research notes,Unit6AnimacyPins,and all seven Unit6AnimacyTransferTest methods"
+  ],
+  "privatePdfUsed": false,
+  "newNativeOrRightsAdmission": false,
+  "qualifiedAcceptance": false
+}

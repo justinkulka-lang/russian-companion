@@ -553,7 +553,7 @@ class ContentAuditCorrectionTest {
     @Test
     fun auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement() {
         val pack = pack()
-        val teacher = pack.item("u6-i-animacy-3")!!
+        val teacher = pack.item("u6-i-animacy-1")!!
         assertEquals("учи́тель", teacher.promptLetter)
         assertEquals("учи́теля", teacher.answer)
         assertTrue(teacher.prompt.contains("singular accusative"))
@@ -585,7 +585,7 @@ class ContentAuditCorrectionTest {
         assertTrue(result.errors.joinToString("\n"), result.ok)
         assertNotEquals("не́кто", pack.item("u24-i-stand-ins-2")!!.answer)
         assertEquals("there is nobody to ask", pack.item("u24-i-stand-ins-2")!!.answer)
-        assertEquals("учи́теля", pack.item("u6-i-animacy-3")!!.answer)
+        assertEquals("учи́теля", pack.item("u6-i-animacy-1")!!.answer)
         assertEquals("на́шу сестру́", pack.item("u6-i-possessive-2")!!.answer)
         assertEquals("но́вую", pack.item("u7-i-objectadj-3")!!.answer)
         assertFalse(pack.item("u27-i-comp-2")!!.answer.contains("she had read"))
