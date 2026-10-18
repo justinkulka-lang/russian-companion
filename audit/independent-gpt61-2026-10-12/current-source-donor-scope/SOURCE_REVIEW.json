@@ -1,0 +1,41 @@
+{
+  "publicSourceFileSha256": {
+    "audit/content-corrections/UNIT17_QUESTION_TRANSFER_CORRECTION.json": "ee84875d1e933b824740a231404f5d4f06f9c9f138eef8447576e52366a21f41",
+    "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt": "df98f1175cad898fac1801690446cb6aa41d7e06f21c63eb1e84063903e3e291",
+    "catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+    "audit/content-corrections/UNIT21_OBJECT_TRANSFER_CORRECTION.json": "7332a79104ded3a15ee23654feb48b0e132cc11141a6c60b9fbe64c5975a9514",
+    "audit/independent-gpt61-2026-10-12/ia016-unit21-research-verification/public-candidates-2026-10-13/enwiki-reflexive-1374712982.wikitext.txt": "0d3aa40c1f8ccc9b3468b0d36273a104360640af336a598d31dda0eaffbdb12d",
+    "audit/independent-gpt61-2026-10-12/ia016-unit21-research-verification/public-candidates-2026-10-13/enwiki-reflexive-586336289.wikitext.txt": "fd86f2d388ece7e4aaf38dcd9dee3f25591ef18dfb4f2c855c2cc8efa2f54643"
+  },
+  "completePrimaryContextsRead": [
+    {
+      "itemId": "prov-u17-question-native-clock-ru",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "sourceRevision": "4220316",
+      "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+      "sourceRecordId": "interrogative-question-transfer:=== \u041a\u043e\u0442\u043e\u0440\u044b\u0439? ===\nThe primary meaning is simply 'which one?', though '''\u043a\u043e\u0442\u043e\u0440\u044b",
+      "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+      "licenseId": "CC BY-SA 4.0",
+      "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    },
+    {
+      "itemId": "prov-u21-object-transfer-native-self",
+      "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+      "sourceRevision": "1374712982",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+      "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|\u0441\u0435\u0431\u044f}",
+      "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+      "licenseId": "CC BY-SA 4.0",
+      "attribution": "English Wikipedia Reflexive pronoun contributors, CC BY-SA 4.0, via Wikipedia:Copyrights oldid 1369466282. Page history for oldid 1374712982 identifies contributors. Exact native language values selected without stress/punctuation changes; qualified source/rights review pending.",
+      "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+    }
+  ],
+  "pre2014RevisionContainsBothExactNativeExamples": true,
+  "chronologyNotLegalClearance": true,
+  "privatePdfUsed": false,
+  "newNativeOrSourceRightsChanges": false,
+  "qualifiedAcceptance": false
+}

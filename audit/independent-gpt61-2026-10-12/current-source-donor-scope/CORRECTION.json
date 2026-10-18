@@ -1,0 +1,55 @@
+{
+  "sourceBefore": "cc83288d4cf1818bee077fd3d29ac387ef3e52ba",
+  "originalRuntimeSource": "41e84c0b00605845dacb3a611d742ae72639526e",
+  "classes": {
+    "Aud44CorrectionTest": {
+      "beforeSha256": "cfd750a54efdb6e4ee1120e0187b3bf84ca0d1e2eb38f322cc7f147257199373",
+      "afterSha256": "d43956626880c5c5ea4797a4a216b7b5a8d039722accd6c3d7a6a9a141aa64f2",
+      "allOriginalTestMethodBodiesExact": true,
+      "originalMethodSha256": {
+        "threeAdverbGlossPairsCannotClearTheParadigm": "908f39d234db30f7b2fbb1b392cbbf80c8a4d55ed6b8c4a9820792414a1be8f8",
+        "faultySuffixFormulationIsNotAnApprovedRussianRule": "6e49009774563b96c79a6c03990bd09e6f85acff3665a39f6500470a186d6d00",
+        "threeClockPhrasesCannotClearProductiveClockTime": "b8248d20d5cdd6c60c5c485c307d04d85104ff56ffc2b5da98fbde7613d89ad6",
+        "calendarDateCompletionCannotConcealTheClockGap": "c4b480abe6c7167380fc74d94bd0ed1e436ec306a94b25dac54068c00eb8dfed",
+        "unit17AdvancementNamesOnlyUnresolvedSourceCapabilities": "8a51c57da6a1803e433824f4cde605df815ca1d3f88028d69967510a1b541da8",
+        "unrelatedEvidenceCannotImpersonateProductiveClockTime": "683de6ece787236b8984217cb56a7e936346fa500c343f72fec623316fe2263b",
+        "unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged": "e998f4b4d75f4000c0d242f65d67d989718836ef184405ad415669937b659ffc",
+        "unit17SourceAdmissionDoesNotReachOtherUnits": "ceba1c8005df825fe928f0fd2e6d311413e4b45c0d4a07de6f85263ea45b015e",
+        "sharedLicenseNoticeDoesNotAnnounceUnitReadiness": "40005648253e61c0a68d7a04d0e9e2b53fd4aae8b1ec056d09d3da27754ad55e",
+        "reviewsMappingsAndReleaseStayUnsigned": "9bf9a867ae5b71660dff3468952321cf8998c28a613a45b304fea24478fe924b"
+      },
+      "helperChanges": "Exact current clock-question packet only; all other public-span donor branches and cloning assertions retained",
+      "newTestMethods": [
+        "currentQuestionImpersonationUsesOnlyTheRealPinnedPacketWithoutInventingAHost"
+      ]
+    },
+    "BatchBUnits2125Test": {
+      "beforeSha256": "c634e767c4abbb12ba36b6d97a16a4facc3c59abcca086cb09e773191906e0ca",
+      "afterSha256": "02ae506a1999f6c9a5d5ee6decd2736cae44b634094e09c132c33d22b0df0d59",
+      "changedMethods": [
+        "reflexiveSentencePairRejectsIsolatedTokenAndWifeCitation"
+      ],
+      "allOtherMethodBodiesExact": true,
+      "unchangedMethodSha256": {
+        "admittedCapabilitiesMatchFrozenIdentityAndLeaveUnresolvedClaimsClosed": "f4550b25911970c025670222d51d078519896e1b05bee821d33aa8a60394ca7e",
+        "governedPairsRejectCoOccurrenceAndASubstitutedGloss": "51b3c94498c9de3b0dd8f7deb5ffe88317cad31a0ae313ad66c9913c153d73d3",
+        "independentChecksRejectSourceLayoutRecall": "37a87ac06fe0e7df912def4b09f64c7ed4e2445b522da1c4191e2c016977c575",
+        "wrongSourceRevisionUnitAndObjectiveFail": "768f3d42a68f2a594a13313472920c039f4d78662484795c5182f185591e246f",
+        "boundedEvidenceCannotClearUnresolvedCapabilities": "723934b334a558c69005fd66edc0cd252a1b832e5e4b8b2e0f85b0cf3bc84f65",
+        "completionOverPeriodClearsOnlyForACompleteMatchingAdmission": "30b8b3ba072d143b81b952c8c77d94d99f35c4611a859658a85aae1ce71f5b75",
+        "wordOrderContrastDoesNotClearNegationScope": "990d735c21d1993554e77e3bb4dcc48b636781127289f8140a231131d50d3043",
+        "classificationChecksCannotClearProductiveDiminutive": "ee0edd1a34d9563068695daac075779270d72679641fd56e7262da6a723c4608"
+      },
+      "newTestMethods": [
+        "retainedCitationDonorStaysExactWhileIndependentObjectTransferKeepsItsRealContext"
+      ],
+      "allOriginalAssertionExpressionsRetained": true,
+      "historicalBaselineForConservationOnly": "6434cd12cdb22d0bbf6f7f848191d46b46501fca"
+    }
+  },
+  "newTestAnnotations": 2,
+  "productionChanges": false,
+  "archiveUsedAsCurrentAcceptance": false,
+  "formalAcceptance": false,
+  "runtime": "PENDING_INITIAL"
+}

@@ -1,6 +1,8 @@
 package dev.russiancompanion.v2
 
 import dev.russiancompanion.release.readAcceptanceCandidate
+import dev.russiancompanion.v2.curriculum.CompleteRuleContextPins
+import dev.russiancompanion.v2.curriculum.Unit17QuestionPins
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2PackLoader
@@ -168,6 +170,32 @@ class Aud44CorrectionTest {
     }
 
     @Test
+    fun currentQuestionImpersonationUsesOnlyTheRealPinnedPacketWithoutInventingAHost() {
+        val live = pack()
+        val donor = live.items.single { it.id == "u17-i-question-clock" }
+        val source = live.sourceCapabilities.single { it.supportedClaim == "clock-question" }
+        val records = donor.assessment!!.relationParticipantIds.map { id -> live.provenanceRecords.single { it.itemId == id } }
+        assertTrue(Unit17QuestionPins.matches(live))
+        assertTrue(CompleteRuleContextPins.itemMatches(live, donor))
+        assertTrue(records.none { it.originalSourceText == source.exactSpan })
+        val forged = impersonateProductiveClock(live, "clock-question", fabricateRecordId = false)
+        val cloned = forged.provenanceRecords.filter { it.itemId.startsWith("prov-u17-impersonate-clock-question-") }
+        assertEquals(records.size, cloned.size)
+        records.zip(cloned).forEach { (original, copy) ->
+            assertEquals(original.copy(itemId = "prov-u17-impersonate-clock-question-${original.itemId}",
+                objectiveId = "obj-u17-clock-answers"), copy)
+        }
+        val cap = forged.sourceCapabilities.single { it.id == "cap-u17-productive-clock-clock-question" }
+        val host = records.first()
+        assertEquals(host.sourceId, cap.sourceId)
+        assertEquals(host.sourceRevision, cap.sourceRevision)
+        assertEquals(host.sourceRecordId, cap.sourceRecordId)
+        assertEquals(host.sourceHash, cap.sourceHash)
+        assertEquals(host.originalSourceText, cap.exactSpan)
+        assertProductiveClockStaysUnresolved(forged, "clock-question")
+    }
+
+    @Test
     fun unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged() {
         val pack = pack()
         val stable = listOf(16, 18, 19, 20)
@@ -315,12 +343,25 @@ class Aud44CorrectionTest {
         fabricateRecordId: Boolean,
     ): V2CurriculumPack {
         val source = pack.sourceCapabilities.first { it.unitNumber == 17 && it.supportedClaim == sourceClaim }
-        val template = pack.items.first { item ->
-            item.objectiveId == source.objectiveId &&
-                item.assessment?.independent == true &&
-                item.assessment.relationParticipantIds.any { id ->
-                    pack.provenanceRecords.any { it.itemId == id && it.originalSourceText == source.exactSpan }
-                }
+        // The current question check uses its real pinned English application packet,
+        // while the other donors still use direct participants from their public span.
+        val questionPacket = sourceClaim == "clock-question"
+        val template = if (questionPacket) {
+            assertTrue(Unit17QuestionPins.matches(pack))
+            pack.items.single { it.id == "u17-i-question-clock" }.also {
+                assertEquals(source.objectiveId, it.objectiveId)
+                assertTrue(it.assessment!!.independent)
+                assertEquals("QUESTION_CLOCK_RECOGNITION", it.assessment.testedFeature)
+                assertTrue(CompleteRuleContextPins.itemMatches(pack, it))
+            }
+        } else {
+            pack.items.first { item ->
+                item.objectiveId == source.objectiveId &&
+                    item.assessment?.independent == true &&
+                    item.assessment.relationParticipantIds.any { id ->
+                        pack.provenanceRecords.any { it.itemId == id && it.originalSourceText == source.exactSpan }
+                    }
+            }
         }
         val assessment = template.assessment!!
         val suffix = if (fabricateRecordId) "|fabricated-record" else ""
@@ -333,7 +374,12 @@ class Aud44CorrectionTest {
                 sourceRecordId = record.sourceRecordId + suffix,
             )
         }
-        val host = cloned.first { it.originalSourceText == source.exactSpan }
+        val host = if (questionPacket) {
+            cloned.first().also {
+                assertEquals("src-content-audit-research", it.sourceId)
+                assertEquals("ca-rule-context:${template.id}" + suffix, it.sourceRecordId)
+            }
+        } else cloned.first { it.originalSourceText == source.exactSpan }
         val itemId = "u17-i-impersonate-$sourceClaim"
         val item = template.copy(
             id = itemId,

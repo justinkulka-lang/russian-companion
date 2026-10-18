@@ -1,5 +1,7 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.v2.curriculum.CompleteRuleContextPins
+import dev.russiancompanion.v2.curriculum.Unit21ObjectPins
 import dev.russiancompanion.v2.curriculum.BatchBSources
 import dev.russiancompanion.v2.curriculum.GovernedSourceAdmission
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
@@ -167,11 +169,13 @@ class BatchBUnits2125Test {
         assertNull(V2Validator.classifyRelation(isolated, myself, listOf(wifeGloss)))
         assertTrue(pack.items.none { it.promptLetter == BatchBSources.ISOLATED_REFLEXIVE })
 
-        val selfItem = pack.items.single {
-            it.objectiveId == "obj-u21-object-reference" &&
-                it.promptLetter == BatchBSources.SELF_SENTENCE &&
-                it.assessment?.independent == true
-        }
+        // Citation validation applies to the retained current guided sentence too.
+        // The independent slot now tests a distinct supplied reflexive context.
+        val selfItem = pack.items.single { it.id == "u21-g-object-reference-0" }
+        assertEquals("obj-u21-object-reference", selfItem.objectiveId)
+        assertEquals(BatchBSources.SELF_SENTENCE, selfItem.promptLetter)
+        assertEquals("CONTRAST_SELECTION", selfItem.kind)
+        assertEquals(false, selfItem.assessment!!.independent)
         val assessment = checkNotNull(selfItem.assessment)
         val why = assessment.whyAnswerDemonstratesObjective
         assertTrue(why, why.contains(BatchBSources.SELF_LINE_CITE))
@@ -189,6 +193,33 @@ class BatchBUnits2125Test {
         ).errors.joinToString("\n")
         assertTrue(swapped, swapped.contains("wife-line citation does not validate the self relationship"))
         assertTrue(swapped, swapped.contains("self relationship citation is not the self line"))
+    }
+
+    @Test
+    fun retainedCitationDonorStaysExactWhileIndependentObjectTransferKeepsItsRealContext() {
+        val live = pack()
+        val process = ProcessBuilder("git", "show",
+            "6434cd12cdb22d0bbf6f7f848191d46b46501fca:app/src/main/assets/content/v2-curriculum.json")
+            .directory(repo()).start()
+        val historical = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
+        assertEquals(0, process.waitFor())
+        for (id in listOf("u21-g-object-reference-0", "u21-i-object-reference-1")) {
+            assertEquals(id, historical.items.single { it.id == id }, live.items.single { it.id == id })
+        }
+        for (text in listOf(BatchBSources.SELF_SENTENCE, "I love myself", BatchBSources.WIFE_SENTENCE, "I love my wife")) {
+            assertEquals(shipped(historical, "obj-u21-object-reference", text), shipped(live, "obj-u21-object-reference", text))
+        }
+        val guided = live.items.single { it.id == "u21-g-object-reference-0" }
+        val independent = live.items.single { it.id == "u21-i-object-reference-2" }
+        assertEquals(true, independent.assessment!!.independent)
+        assertEquals("REFLEXIVE_MYSELF_SENTENCE", independent.assessment.testedFeature)
+        assertFalse(independent == historical.items.single { it.id == independent.id })
+        assertFalse(independent.promptLetter == guided.promptLetter)
+        assertTrue(Unit21ObjectPins.matches(live))
+        assertTrue(CompleteRuleContextPins.itemMatches(live, independent))
+        val natives = live.provenanceRecords.filter { it.itemId.startsWith("prov-u21-object-transfer-native-") }
+        assertEquals(4, natives.size)
+        assertTrue(natives.all { Unit21ObjectPins.admittedNative(it) })
     }
 
     @Test
