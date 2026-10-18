@@ -316,7 +316,7 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("dec342dd9563ff71719dfb7865c0ead18993d56077a173ee0af357635b6fc511", model.packContentReviewDigest)
+        assertEquals("e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4", model.packContentReviewDigest)
         assertEquals(candidate?.sourceDigest, model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
@@ -335,7 +335,7 @@ class BatchECapabilityResearchTest {
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", model.units.single { it.unitNumber == number }.readiness)
         }
         val content = mapOf(
-            7 to "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+            7 to "0bda8d40aae3c040f5c6f9a8a2771de45f95dbdad1bf8232854a2fc3c999e9e9",
             // Unit17 question-transfer correction supersedes historical 6172c2a9be50c4b3c79b962dc5f9b055f8d2d267d3a6a8627a3e9805e4fc8cca.
             17 to "415d0ecc0e4e8ce649dff17aef09851beddc39f191f6bedf783af07904481c62",
             23 to "e7cf730b6ed8317979d7c9f59c23b360f28081d0461fe7a0864643a3d855f683",
@@ -362,7 +362,7 @@ class BatchECapabilityResearchTest {
         )
         val reviewPackages = mapOf(
             // Unit7 due-review activation supersedes historical444e13e9aa62b4b120928c6f1381898565a9ff47cc2a8bf1c0edc6fc2a001a65.
-            7 to "b25f603bbb4d3eeb5904914cd4e5c39b3839a8a1b1ded61f1e5793331ba554ef",
+            7 to "acfecf2901691a10a46fe362cf544b5479cc3c77297324cd919b3731659d0f0f",
             // Unit17 due-review activation supersedes the prior question-transfer package; mapping remains unchanged.
             17 to "7aa99195f1357b0d38c3c047eaebca699ba1f33a277c2686b62f2c66d27717d6",
             23 to "234cdaf06edfbe6e93aba065e5b9cea8d7f68e23e2c062c3ea2b86e387c340b9",

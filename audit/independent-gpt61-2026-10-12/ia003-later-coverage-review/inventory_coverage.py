@@ -4,7 +4,7 @@ from pathlib import Path
 import json,hashlib,subprocess,collections,sys
 ROOT=Path(__file__).resolve().parents[3]
 DIR=Path(__file__).resolve().parent
-CTX=json.loads((DIR/'INVENTORY_CONTEXT.json').read_text())
+CTX=json.loads((DIR/('CURRENT_INVENTORY_CONTEXT.json' if '--current' in sys.argv else 'INVENTORY_CONTEXT.json')).read_text())
 COMMIT=CTX['inspectedCommit']
 asset=subprocess.check_output(['git','show',COMMIT+':app/src/main/assets/content/v2-curriculum.json'],cwd=ROOT)
 assert hashlib.sha256(asset).hexdigest()==CTX['inputSha256']['app/src/main/assets/content/v2-curriculum.json']
@@ -35,6 +35,9 @@ for a in registry:
   if rem and spec['remediationStepId'] not in o['instructionStepIds']+o['remediationStepIds']:errors.append('REPAIR_NOT_BOUND_TO_OBJECTIVE')
   hard.extend({'target':n,'objective':oid,'issue':e} for e in errors)
   row={**spec,'ownerUnit':owner['number'],'objectiveTitle':o['title'],'candidateCount':len(candidates),'instructionStepIds':o['instructionStepIds'],'practiceStepIds':o['practiceStepIds'],'independentCheckIds':o['checkItemIds'],'teachingCardCount':len(teachers),'allTeachingBeforeOwnPracticeAndChecks':early,'lateTeaching':late,'repairContainsEveryTeachingBodyLiterally':covered,'repairIncludesAllObjectiveExamples':excovered,'repairExampleCount':len(rem.get('exampleIds',[])) if rem else None,'hardStructuralIssues':errors,'legacyCandidatesWithoutAssessmentMetadata':[x['id'] for x in candidates if x.get('assessment') is None],'learnerEligibilityProven':False,'qualifiedSemanticAcceptance':False}
+  if '--current' in sys.argv:
+   ordinary=[steps[x][2] for x in o['remediationStepIds'] if steps[x][2]['kind']=='REMEDIATE']
+   row.update(ordinaryRemediationStepIds=[x['id'] for x in ordinary],ordinaryRepairContainsEveryTeachingBody=any(all(t[2]['body'].strip() in x['body'] for t in teachers) for x in ordinary) if ordinary else None,ordinaryRepairIncludesAllObjectiveExamples=any(set(o['exampleIds'])<=set(x.get('exampleIds',[])) for x in ordinary) if ordinary else None)
   specs.append(row)
   if not early or covered is False or excovered is False:flags.append({'target':n,'objective':oid,'teachingBeforePractice':early,'literalRepairCoverage':covered,'allObjectiveExamplesInRepair':excovered})
  earlier=[oid for oid,(u,o) in objectives.items() if u['number']<n and o.get('gating',True) and o['kind']=='RECOGNITION' and o['checkItemIds']]
@@ -42,6 +45,6 @@ for a in registry:
 assert [a['targetUnit'] for a in policies]==list(range(3,31))
 coverage=[{'objectiveId':oid,'ownerUnit':objectives[oid][0]['number'],'targets':ns,'candidateIdsAcrossPolicies':list(dict.fromkeys(i for a in registry for spec in a['slots'] if spec['objectiveId']==oid for i in spec['candidateItemIds']))} for oid,ns in targets.items()]
 j={'type':'COMPILED_DECLARATION_AND_PINNED_STATIC_STRUCTURE_INVENTORY','inspectedCommit':COMMIT,'junitMethodsExecuted':0,'registrySha256':hashlib.sha256((DIR/'COMPILED_REGISTRY.json').read_bytes()).hexdigest(),'unit2LegacyReviewSeparate':units[2]['advancement']['requireDueReview'],'policies':policies,'objectiveTargetCoverage':coverage,'distinctDeclaredReviewObjectives':len(targets),'totalFixedSlots':sum(len(a['slots']) for a in policies),'multiCandidateTargets':[a['targetUnit'] for a in policies if any(s['candidateCount']>1 for s in a['slots'])],'moreThanTwoSlotTargets':[a['targetUnit'] for a in policies if len(a['slots'])>2],'nonReadingObjectivesAtMultipleTargets':[r for r in coverage if r['objectiveId']!='obj-u1-decoding' and len(r['targets'])>1],'laterTargets14Through30AllTwoSlots':all(len(a['slots'])==2 for a in policies if a['targetUnit']>=14),'hardStructuralIssues':hard,'instructionAndRepairInspectionFlags':flags,'flagsRequireFullContextReviewNotAutomaticEdits':True,'potentialDeclarationsAreNotAdmissionOrEligibility':True,'allSkillsCoverageClaim':False,'formalAcceptance':False,'completeSuite':False}
-out=DIR/'COVERAGE_INVENTORY.json';s=json.dumps(j,ensure_ascii=False,indent=2)+'\n'
+out=DIR/('CURRENT_COVERAGE_INVENTORY.json' if '--current' in sys.argv else 'COVERAGE_INVENTORY.json');s=json.dumps(j,ensure_ascii=False,indent=2)+'\n'
 if '--check' in sys.argv:assert out.read_text()==s;print('Pinned compiled/static inventory matches;zero JUnit methods.')
 else:out.write_text(s);print(json.dumps({k:j[k] for k in ['distinctDeclaredReviewObjectives','totalFixedSlots','multiCandidateTargets','moreThanTwoSlotTargets','hardStructuralIssues','instructionAndRepairInspectionFlags']},ensure_ascii=False))

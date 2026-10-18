@@ -1,0 +1,8 @@
+{
+  "junitMethodsExecuted": 0,
+  "attemptedCommand": "python3 /workspace/setup/bind-u7-agreement.py",
+  "failure": "Helper adaptation retained UNIT_13_REVIEW_MANIFEST.json beneath review/unit-7;git show returned128 before the script reached fixture/candidate/dossier mutation.",
+  "correctedPath": "review/unit-7/UNIT_7_REVIEW_MANIFEST.json",
+  "downstreamReadinessRanDespiteHelperFailure": true,
+  "disposition": "No acceptance promoted;rerender readiness after corrected successful binding,using fail-fast command sequencing. This is a helper orchestration error,not an application-test failure."
+}

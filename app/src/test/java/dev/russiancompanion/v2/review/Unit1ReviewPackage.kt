@@ -110,6 +110,7 @@ internal const val UNIT24_CONTEXT_TRANSFER_CURRICULUM_COMMIT = "db323d1a07613846
 internal const val UNIT21_OBJECT_TRANSFER_CURRICULUM_COMMIT = "f47b8649cc72425d3b2854a2dadccdc89c17e617"
 // Bounded schema2 selector implementation; original schema1 ancestor remains historical.
 // Separate Units5/6 schema3 extension; earlier selector identities stay historical.
+internal const val UNIT7_AGREEMENT_TEACHING_CURRICULUM_COMMIT = "7d92d8813e105932391448d94247534493337118"
 internal const val UNIT13_WIDER_REVIEW_CURRICULUM_COMMIT = "41ef8eebc5f7ff25cd30cb19164662dfab858f66"
 internal const val UNIT13_CONTEXT_TEACHING_CURRICULUM_COMMIT = "b92a7c847d1d8c4d7270f08f518b6608f95936f7"
 internal const val UNIT13_PAST_TEACHING_CURRICULUM_COMMIT = "fa3899de2258b6c0cd987d51a4b376aed408f9c2"
@@ -157,7 +158,7 @@ internal fun curriculumCommitForUnit(unitNumber: Int): String =
     else if (unitNumber == 17) UNIT17_QUESTION_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNITS5_6_RECENT_SELECTION_CURRICULUM_COMMIT
     else if (unitNumber == 6) UNIT6_WIDER_REVIEW_CURRICULUM_COMMIT
-    else if (unitNumber == 7) UNIT7_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
+    else if (unitNumber == 7) UNIT7_AGREEMENT_TEACHING_CURRICULUM_COMMIT
     else if (unitNumber == 9) UNIT9_WIDER_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 28) UNIT28_TIMING_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber == 24) UNIT24_CONTEXT_TRANSFER_CURRICULUM_COMMIT
