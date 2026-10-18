@@ -6,6 +6,7 @@ import dev.russiancompanion.v2.curriculum.V2PackLoader
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.requiredInstructionSteps
 import dev.russiancompanion.v2.curriculum.step
@@ -647,8 +648,11 @@ class ContentAuditCorrectionTest {
             bookAttestedUnits = setOf(27),
             completedUnitNumbers = emptySet(),
         )
-        val decision = advancementDecision(pack, unit, learner)
+        val decision = ordinaryUnitRequirements(pack, unit, learner)
         assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+        val full = advancementDecision(pack, unit, learner)
+        assertFalse(full.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), full.remaining)
         FILLED_GUIDED_PRACTICE_ROUTES.forEach { (_, guidedId) ->
             val guided = pack.step(guidedId)!!.second
             assertEquals("GUIDED", guided.kind)

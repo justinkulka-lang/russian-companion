@@ -10,6 +10,7 @@ import dev.russiancompanion.v2.curriculum.V2ProvenanceRecord
 import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -799,8 +800,11 @@ class BatchBUnits2125Test {
             bookAttestedUnits = setOf(25),
             completedUnitNumbers = emptySet(),
         )
-        val advanced = advancementDecision(pack, unit, preparedLearner)
+        val advanced = ordinaryUnitRequirements(pack, unit, preparedLearner)
         assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
+        val full = advancementDecision(pack, unit, preparedLearner)
+        assertFalse(full.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), full.remaining)
 
         val removed = pack.copy(
             sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "documented-name-form" },
@@ -816,6 +820,10 @@ class BatchBUnits2125Test {
         val flippedDecision = advancementDecision(removed, removed.unit(25)!!, preparedLearner)
         assertFalse(flippedDecision.allowed)
         assertTrue(flippedDecision.remaining.any { it.contains("documented-name-form") })
+        val ordinaryBlocked = ordinaryUnitRequirements(removed, removed.unit(25)!!, preparedLearner)
+        assertFalse(ordinaryBlocked.allowed)
+        assertTrue(ordinaryBlocked.remaining.any { it.contains("documented-name-form") })
+        assertEquals(ordinaryBlocked.remaining + "Complete the assigned earlier-objective review", flippedDecision.remaining)
 
         val bounded = pack.sourceCapabilities.single { it.supportedClaim == "diminutive-form-classification" }
         val relabeled = bounded.copy(supportedClaim = "productive-diminutive")
@@ -848,6 +856,9 @@ class BatchBUnits2125Test {
             admissions = pack.admissions.copy(penguinProseAssets = 9, generatedRussianWords = 4),
         )
         assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(stamped, 25).any { it.claim == "productive-diminutive" || it.claim == "documented-name-form" })
+        val stampedErrors = V2Validator.validate(stamped).errors
+        assertTrue(stampedErrors.any { it.contains("Generated Russian words are forbidden") })
+        assertTrue(stampedErrors.any { it.contains("Penguin prose assets are forbidden") })
         val coOccurrence = overreach(
             pack,
             "productive diminutive co-occurrence",
