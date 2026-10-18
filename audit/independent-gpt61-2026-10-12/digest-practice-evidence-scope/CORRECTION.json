@@ -58,5 +58,31 @@
   "productionChanges": false,
   "archiveUsedAsCurrentAcceptance": false,
   "formalAcceptance": false,
-  "runtime": "PENDING_INITIAL"
+  "runtime": {
+    "testCounts": {
+      "reported": 6,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 4,
+    "taskStatuses": {
+      "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+      "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+      "lintDebug": "> Task :app:lintDebug",
+      "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+    },
+    "lint": {
+      "Fatal": 0,
+      "Error": 0,
+      "Warning": 20,
+      "Information": 0,
+      "Ignore": 0
+    },
+    "eventsMatchFreshXml": true,
+    "completeSuite": false,
+    "sourceCommit": "9c68d44d4305b8154b9286fdc2865cd38e5ec2a7",
+    "manifest": "INITIAL/MANIFEST.json"
+  }
 }

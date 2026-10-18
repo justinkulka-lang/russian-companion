@@ -16,5 +16,18 @@
   },
   "practiceSourceReview": "Read complete original method,LocalStore raw completion/transaction APIs,V2CompletionEvidence fixed-point prerequisite/placement logic,practiceQueue/itemKindMatchesLab,eligibleReviewCandidates and existing CumulativeReviewGateTest real setup/answer/transaction methods. Review requires currently completed owner1,not only taught IDs. Unit1 genuinely completed means its alphabet items must also enter mixed pool;Unit3-specific type assertion must not falsely exclude them.",
   "privatePdfUsed": false,
-  "qualifiedAcceptance": false
+  "qualifiedAcceptance": false,
+  "laterUnit20DeclarationChanges": {
+    "changedFields": [
+      "objectives",
+      "sessions",
+      "advancement"
+    ],
+    "requireDueReview": {
+      "before": false,
+      "current": true
+    },
+    "currentCumulativeReviewPolicyId": "unit20-prior-reading-conditional-agreement-v1",
+    "qualification": "Snapshot baseline predates both directionality correction and later cumulative-review activation. Current digest difference is not attributed solely to one change."
+  }
 }

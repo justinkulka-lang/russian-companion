@@ -1,0 +1,45 @@
+{
+  "sourceBeforeReceipt": "9c68d44d4305b8154b9286fdc2865cd38e5ec2a7",
+  "actualRuntimeSource": "9c68d44d4305b8154b9286fdc2865cd38e5ec2a7",
+  "runtimeContext": "INITIAL/CONTEXT.json",
+  "unchangedProductionSourceFrom": "8de0598617a16bf29d2b3142a1b6ca8ebc70777e",
+  "unchangedTrees": {
+    "app/src/main": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "runnerAndInitHashesVerified": true,
+  "unchangedMethodHashesVerified": true,
+  "evidenceSha256": {
+    "CORRECTION.json": "3dec1b1d72185ac90d6290ae455b6a5ff21fd10aa5a75a03a00c6de9f84ea53c",
+    "CURRENT_REGRESSION_RECONCILIATION.json": "da2e62ce5810d0592d43b655952c26c091ec7e9f66068eec2a3d7e1742ef1851",
+    "INITIAL/CONTEXT.json": "19cbff05d05d230bcce91108f14730b546a3ab8dcedba3f515ff5c87607c82a5",
+    "INITIAL/EVENTS.jsonl": "741b99f39d7a32463cc0d76d0cb8af115d310423327a31b565aad694a555949e",
+    "INITIAL/LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "INITIAL/MANIFEST.json": "bdd07ebd90cd0778ccdf9dabba096c346b17adba9ace24408330d8bc6b80d9e2",
+    "INITIAL/RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "INITIAL/RUN.log": "0964fd1a84511517523812f4b214d544278107a6825baa4f919936e1bb195bf2",
+    "INITIAL/SHA256.json": "1192432fdaae35f8304ff43f87d12d97f8f01400fead7b708712e2b2ed5e171a",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.Aud44CorrectionTest.xml": "dfc806def1dcd999f4128f406e41bc7a1c386da29d8c5a6930d6240920cc701e",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml": "ee7a0490717abee5ad60fdb51693bffd7f393828b0f18b94d18390e53a677538",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.PracticeRetrievalDigestTest.xml": "93296af9f6c637f893d69370497e0ca171ad90952e119d509b3592c0b4a3e0fc",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.Unit20DirectionalityApplicationTest.xml": "d3e688a09f813c712927c5fb690957cbb5f41143fb118528df06afcd28bac280",
+    "NEXT_ACTION.txt": "a82ced1fcffccff7269773bb58f5a61f9b381b497a8076421c494f8fd0416d26",
+    "NEXT_REVIEW.md": "426aea0ed164886a2d7830dadcb3fc5729d2fc5da4028409c686705bbb231646",
+    "SOURCE_AND_SCOPE.md": "f447b4804d737c0954ee0dcb42aec2927707d4530c5be9b9627227440e2657b3",
+    "SOURCE_REVIEW.json": "5cfd9e1bad1f5e9548aa96308a7b1267514b7df7554f6235b73de55005b2731f",
+    "selection.json": "fe987dc7083939ae613db79589cc7f84cf301299f27238031c523253691c12a3",
+    "test-candidates.gradle": "8faa64ae98d3c69d86aa219c45156fd256195a437c673d3b91d28945f8457517"
+  },
+  "instructionSha256": {
+    "AGENTS.md": "99beb51305dcff580784cd75bb9f7c3a5c47f0c72e08e970dc1e90cc549dde46",
+    "audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md": "da97aab4b63ffcc4262b84b28024fe9aea436c02448e1f5e0ee304e2ee135b89",
+    "audit/content-corrections/CODEX_CHECKPOINT_2026-10-12.md": "374e1d0ed68d58a3a5327737e95e998aab630a5b439b727b6b511882184e7f93",
+    "audit/independent-gpt61-2026-10-12/CURRENT_FINDING_STATUS.json": "83cf4eb1984edac747d993ffc55f66c6937e6509ec5311dd536ff0aed3109e70"
+  },
+  "original32FailuresPreserved": true,
+  "scopeNotSummedWithOthers": true,
+  "completeSuite": false,
+  "formalAcceptance": false
+}

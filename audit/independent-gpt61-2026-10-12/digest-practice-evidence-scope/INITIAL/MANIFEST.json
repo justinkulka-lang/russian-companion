@@ -1,0 +1,198 @@
+{
+  "sourceContext": {
+    "sourceCommit": "9c68d44d4305b8154b9286fdc2865cd38e5ec2a7",
+    "startedUtc": "2026-10-18T19:47:30.892990+00:00",
+    "inputTrees": {
+      "app/src/main": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+      "app/src/test": "f8f778511a710b98ef3df099c1021a111a116a2a",
+      "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+      "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+      "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+    },
+    "command": [
+      "./gradlew",
+      "-I",
+      "/workspace/setup/cloud-validation.gradle",
+      "-I",
+      "/workspace/setup/parallel-tests.gradle",
+      "-I",
+      "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+      "-I",
+      "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/digest-practice-evidence-scope/test-candidates.gradle",
+      "-Daudit.events.path=/workspace/russian-companion/audit/independent-gpt61-2026-10-12/digest-practice-evidence-scope/INITIAL/EVENTS.jsonl",
+      "testDebugUnitTest",
+      "--rerun",
+      "--tests",
+      "*Aud44CorrectionTest.unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged",
+      "--tests",
+      "*PracticeRetrievalDigestTest.readingVocabularyGrammarAndMixedStayOptionalAndPrerequisiteFiltered",
+      "--tests",
+      "*CumulativeReviewGateTest.completeOrdinaryWorkCannotAdvanceUntilBothAssignedObjectivesAreReviewed",
+      "--tests",
+      "*CumulativeReviewGateTest.optionalAndPrescribedReplaysCannotCompleteReviewOrBypassTransactionalAdvance",
+      "--tests",
+      "*Unit20DirectionalityApplicationTest.originalGuidedLabelAndFourReadingsCannotCompleteDirectionality",
+      "--tests",
+      "*Unit20DirectionalityApplicationTest.coordinatedKeyAndApplicationCannotReverseTheDirectedFlight",
+      "compileDebugSources",
+      "lintDebug",
+      "verifyReleaseGateAttachment",
+      "--continue",
+      "--max-workers=4",
+      "--console=plain"
+    ],
+    "activation": "source /workspace/setup/android-env.sh",
+    "runnerSha256": "d78a1e8b40ea6496726b36c5d2b494f826900d737e5938c3c7b4f8f342de7f18",
+    "initScriptSha256": {
+      "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+      "/workspace/setup/parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3",
+      "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+      "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/digest-practice-evidence-scope/test-candidates.gradle": "8faa64ae98d3c69d86aa219c45156fd256195a437c673d3b91d28945f8457517"
+    },
+    "selectionConfig": {
+      "path": "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/digest-practice-evidence-scope/selection.json",
+      "sha256": "fe987dc7083939ae613db79589cc7f84cf301299f27238031c523253691c12a3"
+    },
+    "selectors": [
+      "*Aud44CorrectionTest.unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged",
+      "*PracticeRetrievalDigestTest.readingVocabularyGrammarAndMixedStayOptionalAndPrerequisiteFiltered",
+      "*CumulativeReviewGateTest.completeOrdinaryWorkCannotAdvanceUntilBothAssignedObjectivesAreReviewed",
+      "*CumulativeReviewGateTest.optionalAndPrescribedReplaysCannotCompleteReviewOrBypassTransactionalAdvance",
+      "*Unit20DirectionalityApplicationTest.originalGuidedLabelAndFourReadingsCannotCompleteDirectionality",
+      "*Unit20DirectionalityApplicationTest.coordinatedKeyAndApplicationCannotReverseTheDirectedFlight"
+    ],
+    "candidateClasses": [
+      "Aud44CorrectionTest",
+      "PracticeRetrievalDigestTest",
+      "CumulativeReviewGateTest",
+      "Unit20DirectionalityApplicationTest"
+    ],
+    "workerPolicy": "4 forks / 3GiB / forkEvery8",
+    "excludedScreenshotExporters": {
+      "VisualReviewCaptureTest": 2,
+      "Units35ChunkCaptureTest": 2,
+      "Units610ChunkCaptureTest": 10,
+      "Units1115GapCaptureTest": 2
+    }
+  },
+  "finishedUtc": "2026-10-18T19:49:13.530498+00:00",
+  "exitCode": 0,
+  "testCounts": {
+    "reported": 6,
+    "passed": 6,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 4,
+  "tests": [
+    {
+      "class": "dev.russiancompanion.v2.Aud44CorrectionTest",
+      "name": "unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged",
+      "seconds": "5.127",
+      "outcome": "PASSED"
+    },
+    {
+      "class": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+      "name": "completeOrdinaryWorkCannotAdvanceUntilBothAssignedObjectivesAreReviewed",
+      "seconds": "34.908",
+      "outcome": "PASSED"
+    },
+    {
+      "class": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+      "name": "optionalAndPrescribedReplaysCannotCompleteReviewOrBypassTransactionalAdvance",
+      "seconds": "1.144",
+      "outcome": "PASSED"
+    },
+    {
+      "class": "dev.russiancompanion.v2.PracticeRetrievalDigestTest",
+      "name": "readingVocabularyGrammarAndMixedStayOptionalAndPrerequisiteFiltered",
+      "seconds": "23.747",
+      "outcome": "PASSED"
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit20DirectionalityApplicationTest",
+      "name": "originalGuidedLabelAndFourReadingsCannotCompleteDirectionality",
+      "seconds": "13.725",
+      "outcome": "PASSED"
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit20DirectionalityApplicationTest",
+      "name": "coordinatedKeyAndApplicationCannotReverseTheDirectedFlight",
+      "seconds": "9.307",
+      "outcome": "PASSED"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.Aud44CorrectionTest",
+      "tests": "1",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-18T19:47:37.151Z",
+      "hostname": "d0aced911621",
+      "time": "5.135"
+    },
+    {
+      "name": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-18T19:47:37.495Z",
+      "hostname": "d0aced911621",
+      "time": "38.006"
+    },
+    {
+      "name": "dev.russiancompanion.v2.PracticeRetrievalDigestTest",
+      "tests": "1",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-18T19:47:37.460Z",
+      "hostname": "d0aced911621",
+      "time": "25.051"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit20DirectionalityApplicationTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-18T19:47:44.468Z",
+      "hostname": "d0aced911621",
+      "time": "25.427"
+    }
+  ],
+  "taskStatuses": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Information": 0,
+    "Ignore": 0
+  },
+  "scopeComplete": true,
+  "missingSelectedMethods": [],
+  "unexpectedMethods": [],
+  "staleXmlNotCounted": [],
+  "eventResultCount": 6,
+  "eventsMatchFreshXml": true,
+  "completeSuite": false,
+  "separateScopesDoNotSum": true,
+  "apk": {
+    "assembly": "NOT_RUN",
+    "configuredIdentity": "dev.russiancompanion / 2.0.0-dev / code5",
+    "sha256": "NOT_RECORDED",
+    "signature": "NOT_RECORDED"
+  },
+  "formalAcceptance": false,
+  "releaseApproval": false,
+  "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_AUDIT"
+}
