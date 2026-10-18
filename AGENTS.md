@@ -6,6 +6,8 @@ Latest verification: [digest-practice-evidence-scope](audit/independent-gpt61-20
 
 GitHub delivery recovered; earlier401 records are historical.
 
+A broader run is already active:read [RUNNING_CHECKPOINT_2026-10-18.json](audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/RUNNING_CHECKPOINT_2026-10-18.json). Its newly observed Unit11 whole-pack-conservation failure remains OPEN;the earlier32 scoped cases do not hide it. Do not change pinned app/test/catalog/docs/review inputs or launch concurrent Gradle. The eventual final manifest supersedes this point-in-time running record.
+
 The notes below record earlier checkpoints;use the latest pointer above for current dispositions.
 
 Prior verification (historical): [current regression continuation](audit/independent-gpt61-2026-10-12/batch-a-source-review-scope/NEXT_REVIEW.md). Optional-reference scope7methods/3classes passed atb8f5929e; exact non-gating Unit4 reference-return exception,157 real guided-return routes,actual UI return/retained selection/no required credit. AUD-53 scope10methods/1class passed atb2aaab0b; ordinary source requirements distinguished from mandatory assigned review,with exact advancement refusal and forbidden-content counter rejections. Both lint0errors20warnings/gate attachmentPASS. No production/policy/schema/native/source changes. Separate scopes,not summed or formal acceptance.
