@@ -1,0 +1,1456 @@
+{
+  "sourceBefore": "206ce009da8f3f57bd719fe2f5acfc1e71ed6df8",
+  "originalFailureSource": "41e84c0b00605845dacb3a611d742ae72639526e",
+  "runtimeTestBeforeMatchesOriginalFailureSource": true,
+  "originalRuntimeMethod": "    @Test\n    fun formerGuidedPracticeGapsNowHaveRealItems() {\n        val pack = pack()\n        assertEquals(listOf(\"u7-st-guided-manner-1\"), reviewedGuidedPractice(pack, \"u7-st-rem-manner\"))\n        val targets = pack.units.flatMap { it.sessions }.flatMap { it.steps }.mapNotNull { it.remediationStepId }.toSet()\n        assertTrue(targets.size >= 156)\n        targets.forEach { target ->\n            val guided = reviewedGuidedPractice(pack, target)\n            assertTrue(\"$target is missing its linked guided practice\", guided.isNotEmpty())\n        }\n        dev.russiancompanion.v2.curriculum.FILLED_GUIDED_PRACTICE_ROUTES.forEach { (remediationId, guidedId) ->\n            val guided = pack.step(guidedId)!!.second\n            assertEquals(\"GUIDED\", guided.kind)\n            assertTrue(\"$guidedId has no item\", guided.itemIds.isNotEmpty())\n            assertEquals(remediationId, guided.remediationStepId)\n            val item = pack.item(guided.itemIds.first())!!\n            assertTrue(item.answer.isNotBlank())\n            assertTrue(item.answer in item.options)\n            assertTrue(item.feedback.isNotBlank())\n        }\n    }\n\n",
+  "beforeRuntimeFileSha256": "0c22151b4f6f3be6fec65c6fab5a96d55641e08d18daccf8f81d1345ab2a3784",
+  "afterRuntimeFileSha256": "64fb977f557291fd8ee34e52f10cbf208576cfb28b2b52d7a2ae649be1333f0c",
+  "allOtherRuntimeMethodsUnchanged": true,
+  "originalFilledPracticeChecksUnchanged": true,
+  "targetInventory": [
+    {
+      "target": "u1-st-confusable",
+      "owningObjectives": [
+        "obj-u1-confusable"
+      ],
+      "declaredGuidedSteps": [
+        "u1-st-guided-confusable"
+      ]
+    },
+    {
+      "target": "u1-st-cons",
+      "owningObjectives": [
+        "obj-u1-letter-identity"
+      ],
+      "declaredGuidedSteps": [
+        "u1-st-cons-check",
+        "u1-st-vowels-check"
+      ]
+    },
+    {
+      "target": "u1-st-decoding",
+      "owningObjectives": [
+        "obj-u1-decoding"
+      ],
+      "declaredGuidedSteps": [
+        "u1-st-guided-decoding"
+      ]
+    },
+    {
+      "target": "u1-st-iotated",
+      "owningObjectives": [
+        "obj-u1-iotated"
+      ],
+      "declaredGuidedSteps": [
+        "u1-st-guided-iotated"
+      ]
+    },
+    {
+      "target": "u1-st-print",
+      "owningObjectives": [
+        "obj-u1-print-forms"
+      ],
+      "declaredGuidedSteps": [
+        "u1-st-guided-print"
+      ]
+    },
+    {
+      "target": "u1-st-rem-letter-names",
+      "owningObjectives": [
+        "obj-u1-letter-names"
+      ],
+      "declaredGuidedSteps": [
+        "u1-st-guided-letter-names"
+      ]
+    },
+    {
+      "target": "u1-st-signs",
+      "owningObjectives": [
+        "obj-u1-signs"
+      ],
+      "declaredGuidedSteps": [
+        "u1-st-guided-signs"
+      ]
+    },
+    {
+      "target": "u1-st-vowels",
+      "owningObjectives": [
+        "obj-u1-letter-identity"
+      ],
+      "declaredGuidedSteps": [
+        "u1-st-cons-check",
+        "u1-st-vowels-check"
+      ]
+    },
+    {
+      "target": "u10-st-rem-absence",
+      "owningObjectives": [
+        "obj-u10-absence"
+      ],
+      "declaredGuidedSteps": [
+        "u10-st-guided-absence-1"
+      ]
+    },
+    {
+      "target": "u10-st-rem-adjective",
+      "owningObjectives": [
+        "obj-u10-adjective"
+      ],
+      "declaredGuidedSteps": [
+        "u10-st-guided-adjective-1"
+      ]
+    },
+    {
+      "target": "u10-st-rem-animate",
+      "owningObjectives": [
+        "obj-u10-animate"
+      ],
+      "declaredGuidedSteps": [
+        "u10-st-guided-animate-1"
+      ]
+    },
+    {
+      "target": "u10-st-rem-have",
+      "owningObjectives": [
+        "obj-u10-have"
+      ],
+      "declaredGuidedSteps": [
+        "u10-st-guided-have-1"
+      ]
+    },
+    {
+      "target": "u10-st-rem-preposition",
+      "owningObjectives": [
+        "obj-u10-preposition"
+      ],
+      "declaredGuidedSteps": [
+        "u10-st-guided-preposition-1"
+      ]
+    },
+    {
+      "target": "u10-st-rem-pronoun",
+      "owningObjectives": [
+        "obj-u10-pronoun"
+      ],
+      "declaredGuidedSteps": [
+        "u10-st-guided-pronoun-1"
+      ]
+    },
+    {
+      "target": "u11-st-rem-past-aspect",
+      "owningObjectives": [
+        "obj-u11-past-aspect"
+      ],
+      "declaredGuidedSteps": [
+        "u11-st-guided-past-aspect-1"
+      ]
+    },
+    {
+      "target": "u11-st-rem-past-be",
+      "owningObjectives": [
+        "obj-u11-past-be"
+      ],
+      "declaredGuidedSteps": [
+        "u11-st-guided-past-be-1"
+      ]
+    },
+    {
+      "target": "u11-st-rem-past-read",
+      "owningObjectives": [
+        "obj-u11-past-read"
+      ],
+      "declaredGuidedSteps": [
+        "u11-st-guided-past-read-1"
+      ]
+    },
+    {
+      "target": "u11-st-rem-reflexive",
+      "owningObjectives": [
+        "obj-u11-reflexive"
+      ],
+      "declaredGuidedSteps": [
+        "u11-st-guided-reflexive-1"
+      ]
+    },
+    {
+      "target": "u12-st-rem-aspect",
+      "owningObjectives": [
+        "obj-u12-aspect"
+      ],
+      "declaredGuidedSteps": [
+        "u12-st-guided-aspect-1"
+      ]
+    },
+    {
+      "target": "u12-st-rem-dative",
+      "owningObjectives": [
+        "obj-u12-dative"
+      ],
+      "declaredGuidedSteps": [
+        "u12-st-guided-dative-1"
+      ]
+    },
+    {
+      "target": "u12-st-rem-future-imp",
+      "owningObjectives": [
+        "obj-u12-future-imp"
+      ],
+      "declaredGuidedSteps": [
+        "u12-st-guided-future-imp-1"
+      ]
+    },
+    {
+      "target": "u12-st-rem-future-perf",
+      "owningObjectives": [
+        "obj-u12-future-perf"
+      ],
+      "declaredGuidedSteps": [
+        "u12-st-guided-future-perf-1"
+      ]
+    },
+    {
+      "target": "u12-st-rem-prep-plural",
+      "owningObjectives": [
+        "obj-u12-prep-plural"
+      ],
+      "declaredGuidedSteps": [
+        "u12-st-guided-prep-plural-1"
+      ]
+    },
+    {
+      "target": "u12-st-rem-spelling",
+      "owningObjectives": [
+        "obj-u12-spelling"
+      ],
+      "declaredGuidedSteps": [
+        "u12-st-guided-spelling-1"
+      ]
+    },
+    {
+      "target": "u13-st-rem-infinitive",
+      "owningObjectives": [
+        "obj-u13-infinitive"
+      ],
+      "declaredGuidedSteps": [
+        "u13-st-guided-infinitive-1"
+      ]
+    },
+    {
+      "target": "u13-st-rem-past-aspect",
+      "owningObjectives": [
+        "obj-u13-past-aspect"
+      ],
+      "declaredGuidedSteps": [
+        "u13-st-guided-past-aspect-1"
+      ]
+    },
+    {
+      "target": "u13-st-rem-reported",
+      "owningObjectives": [
+        "obj-u13-reported"
+      ],
+      "declaredGuidedSteps": [
+        "u13-st-guided-reported-1"
+      ]
+    },
+    {
+      "target": "u13-st-rem-tense-keep",
+      "owningObjectives": [
+        "obj-u13-tense-keep"
+      ],
+      "declaredGuidedSteps": [
+        "u13-st-guided-tense-keep-1"
+      ]
+    },
+    {
+      "target": "u14-st-rem-future-aspect",
+      "owningObjectives": [
+        "obj-u14-future-aspect"
+      ],
+      "declaredGuidedSteps": [
+        "u14-st-guided-future-aspect-1"
+      ]
+    },
+    {
+      "target": "u14-st-rem-future-person",
+      "owningObjectives": [
+        "obj-u14-future-person"
+      ],
+      "declaredGuidedSteps": [
+        "u14-st-guided-future-person-1"
+      ]
+    },
+    {
+      "target": "u14-st-rem-impersonal",
+      "owningObjectives": [
+        "obj-u14-impersonal"
+      ],
+      "declaredGuidedSteps": [
+        "u14-st-guided-impersonal-1"
+      ]
+    },
+    {
+      "target": "u15-st-rem-aspect-consolidate",
+      "owningObjectives": [
+        "obj-u15-aspect-consolidate"
+      ],
+      "declaredGuidedSteps": [
+        "u15-st-guided-aspect-consolidate-1"
+      ]
+    },
+    {
+      "target": "u15-st-rem-imperative",
+      "owningObjectives": [
+        "obj-u15-imperative"
+      ],
+      "declaredGuidedSteps": [
+        "u15-st-guided-imperative-1"
+      ]
+    },
+    {
+      "target": "u15-st-rem-say-request",
+      "owningObjectives": [
+        "obj-u15-say-request"
+      ],
+      "declaredGuidedSteps": [
+        "u15-st-guided-say-request-1"
+      ]
+    },
+    {
+      "target": "u16-st-rem-complements",
+      "owningObjectives": [
+        "obj-u16-complements"
+      ],
+      "declaredGuidedSteps": [
+        "u16-st-guided-complements-1"
+      ]
+    },
+    {
+      "target": "u16-st-rem-inst-adj",
+      "owningObjectives": [
+        "obj-u16-inst-adj"
+      ],
+      "declaredGuidedSteps": [
+        "u16-st-guided-inst-adj-1"
+      ]
+    },
+    {
+      "target": "u16-st-rem-inst-means",
+      "owningObjectives": [
+        "obj-u16-inst-means"
+      ],
+      "declaredGuidedSteps": [
+        "u16-st-guided-inst-means-1"
+      ]
+    },
+    {
+      "target": "u16-st-rem-inst-pl",
+      "owningObjectives": [
+        "obj-u16-inst-pl"
+      ],
+      "declaredGuidedSteps": [
+        "u16-st-guided-inst-pl-1"
+      ]
+    },
+    {
+      "target": "u16-st-rem-inst-prep",
+      "owningObjectives": [
+        "obj-u16-inst-prep"
+      ],
+      "declaredGuidedSteps": [
+        "u16-st-guided-inst-prep-1"
+      ]
+    },
+    {
+      "target": "u16-st-rem-inst-sg",
+      "owningObjectives": [
+        "obj-u16-inst-sg"
+      ],
+      "declaredGuidedSteps": [
+        "u16-st-guided-inst-sg-1"
+      ]
+    },
+    {
+      "target": "u17-st-rem-age",
+      "owningObjectives": [
+        "obj-u17-age"
+      ],
+      "declaredGuidedSteps": [
+        "u17-st-guided-age-1"
+      ]
+    },
+    {
+      "target": "u17-st-rem-calendar-date",
+      "owningObjectives": [
+        "obj-u17-calendar-date"
+      ],
+      "declaredGuidedSteps": [
+        "u17-st-guided-calendar-date-1"
+      ]
+    },
+    {
+      "target": "u17-st-rem-clock",
+      "owningObjectives": [
+        "obj-u17-clock"
+      ],
+      "declaredGuidedSteps": [
+        "u17-st-guided-clock-1"
+      ]
+    },
+    {
+      "target": "u17-st-rem-clock-answers",
+      "owningObjectives": [
+        "obj-u17-clock-answers"
+      ],
+      "declaredGuidedSteps": [
+        "u17-st-guided-clock-answers-1"
+      ]
+    },
+    {
+      "target": "u17-st-rem-clock-productive",
+      "owningObjectives": [
+        "obj-u17-clock-productive"
+      ],
+      "declaredGuidedSteps": [
+        "u17-st-guided-clock-productive-1"
+      ]
+    },
+    {
+      "target": "u17-st-rem-hours",
+      "owningObjectives": [
+        "obj-u17-hours"
+      ],
+      "declaredGuidedSteps": [
+        "u17-st-guided-hours-1"
+      ]
+    },
+    {
+      "target": "u17-st-rem-minutes",
+      "owningObjectives": [
+        "obj-u17-minutes"
+      ],
+      "declaredGuidedSteps": [
+        "u17-st-guided-minutes-1"
+      ]
+    },
+    {
+      "target": "u17-st-rem-months",
+      "owningObjectives": [
+        "obj-u17-months"
+      ],
+      "declaredGuidedSteps": [
+        "u17-st-guided-months-1"
+      ]
+    },
+    {
+      "target": "u17-st-rem-ordinals",
+      "owningObjectives": [
+        "obj-u17-ordinals"
+      ],
+      "declaredGuidedSteps": [
+        "u17-st-guided-ordinals-1"
+      ]
+    },
+    {
+      "target": "u17-st-rem-quarter-hour",
+      "owningObjectives": [
+        "obj-u17-quarter-hour"
+      ],
+      "declaredGuidedSteps": [
+        "u17-st-guided-quarter-hour-1"
+      ]
+    },
+    {
+      "target": "u17-st-rem-weekdays",
+      "owningObjectives": [
+        "obj-u17-weekdays"
+      ],
+      "declaredGuidedSteps": [
+        "u17-st-guided-weekdays-1"
+      ]
+    },
+    {
+      "target": "u17-st-rem-years",
+      "owningObjectives": [
+        "obj-u17-years"
+      ],
+      "declaredGuidedSteps": [
+        "u17-st-guided-years-1"
+      ]
+    },
+    {
+      "target": "u18-st-rem-comparison",
+      "owningObjectives": [
+        "obj-u18-comparison"
+      ],
+      "declaredGuidedSteps": [
+        "u18-st-guided-comparison-1"
+      ]
+    },
+    {
+      "target": "u18-st-rem-relative",
+      "owningObjectives": [
+        "obj-u18-relative"
+      ],
+      "declaredGuidedSteps": [
+        "u18-st-guided-relative-1"
+      ]
+    },
+    {
+      "target": "u19-st-rem-conditional",
+      "owningObjectives": [
+        "obj-u19-conditional"
+      ],
+      "declaredGuidedSteps": [
+        "u19-st-guided-conditional-1"
+      ]
+    },
+    {
+      "target": "u19-st-rem-obligation",
+      "owningObjectives": [
+        "obj-u19-obligation"
+      ],
+      "declaredGuidedSteps": [
+        "u19-st-guided-obligation-1"
+      ]
+    },
+    {
+      "target": "u19-st-rem-prefix-caution",
+      "owningObjectives": [
+        "obj-u19-prefix-caution"
+      ],
+      "declaredGuidedSteps": [
+        "u19-st-guided-prefix-caution-1"
+      ]
+    },
+    {
+      "target": "u19-st-rem-probability",
+      "owningObjectives": [
+        "obj-u19-probability"
+      ],
+      "declaredGuidedSteps": [
+        "u19-st-guided-probability-1"
+      ]
+    },
+    {
+      "target": "u2-st-review",
+      "owningObjectives": [
+        "obj-u2-review"
+      ],
+      "declaredGuidedSteps": [
+        "u2-st-review-guided"
+      ]
+    },
+    {
+      "target": "u20-st-rem-motion",
+      "owningObjectives": [
+        "obj-u20-motion"
+      ],
+      "declaredGuidedSteps": [
+        "u20-st-guided-motion-1"
+      ]
+    },
+    {
+      "target": "u21-st-rem-object-reference",
+      "owningObjectives": [
+        "obj-u21-object-reference"
+      ],
+      "declaredGuidedSteps": [
+        "u21-st-guided-object-reference-1"
+      ]
+    },
+    {
+      "target": "u21-st-rem-purpose",
+      "owningObjectives": [
+        "obj-u21-purpose"
+      ],
+      "declaredGuidedSteps": [
+        "u21-st-guided-purpose-1"
+      ]
+    },
+    {
+      "target": "u21-st-rem-svoy",
+      "owningObjectives": [
+        "obj-u21-svoy"
+      ],
+      "declaredGuidedSteps": [
+        "u21-st-guided-svoy-1"
+      ]
+    },
+    {
+      "target": "u22-st-rem-both-forms",
+      "owningObjectives": [
+        "obj-u22-both-forms"
+      ],
+      "declaredGuidedSteps": [
+        "u22-st-guided-both-forms-1"
+      ]
+    },
+    {
+      "target": "u22-st-rem-collective",
+      "owningObjectives": [
+        "obj-u22-collective"
+      ],
+      "declaredGuidedSteps": [
+        "u22-st-guided-collective-1"
+      ]
+    },
+    {
+      "target": "u22-st-rem-compounds",
+      "owningObjectives": [
+        "obj-u22-compounds"
+      ],
+      "declaredGuidedSteps": [
+        "u22-st-guided-compounds-1"
+      ]
+    },
+    {
+      "target": "u22-st-rem-declension",
+      "owningObjectives": [
+        "obj-u22-declension"
+      ],
+      "declaredGuidedSteps": [
+        "u22-st-guided-declension-1"
+      ]
+    },
+    {
+      "target": "u22-st-rem-half-forms",
+      "owningObjectives": [
+        "obj-u22-half-forms"
+      ],
+      "declaredGuidedSteps": [
+        "u22-st-guided-half-forms-1"
+      ]
+    },
+    {
+      "target": "u22-st-rem-noun-forms",
+      "owningObjectives": [
+        "obj-u22-noun-forms"
+      ],
+      "declaredGuidedSteps": [
+        "u22-st-guided-noun-forms-1"
+      ]
+    },
+    {
+      "target": "u23-st-rem-beginning",
+      "owningObjectives": [
+        "obj-u23-beginning"
+      ],
+      "declaredGuidedSteps": [
+        "u23-st-guided-beginning-1"
+      ]
+    },
+    {
+      "target": "u23-st-rem-completion",
+      "owningObjectives": [
+        "obj-u23-completion"
+      ],
+      "declaredGuidedSteps": [
+        "u23-st-guided-completion-1"
+      ]
+    },
+    {
+      "target": "u23-st-rem-duration",
+      "owningObjectives": [
+        "obj-u23-duration"
+      ],
+      "declaredGuidedSteps": [
+        "u23-st-guided-duration-1"
+      ]
+    },
+    {
+      "target": "u23-st-rem-during-event",
+      "owningObjectives": [
+        "obj-u23-during-event"
+      ],
+      "declaredGuidedSteps": [
+        "u23-st-guided-during-event-1"
+      ]
+    },
+    {
+      "target": "u23-st-rem-elapsed",
+      "owningObjectives": [
+        "obj-u23-elapsed"
+      ],
+      "declaredGuidedSteps": [
+        "u23-st-guided-elapsed-1"
+      ]
+    },
+    {
+      "target": "u23-st-rem-ranges",
+      "owningObjectives": [
+        "obj-u23-ranges"
+      ],
+      "declaredGuidedSteps": [
+        "u23-st-guided-ranges-1"
+      ]
+    },
+    {
+      "target": "u24-st-rem-absence",
+      "owningObjectives": [
+        "obj-u24-absence"
+      ],
+      "declaredGuidedSteps": [
+        "u24-st-guided-absence-1"
+      ]
+    },
+    {
+      "target": "u24-st-rem-alternation",
+      "owningObjectives": [
+        "obj-u24-alternation"
+      ],
+      "declaredGuidedSteps": [
+        "u24-st-guided-alternation-1"
+      ]
+    },
+    {
+      "target": "u24-st-rem-concord",
+      "owningObjectives": [
+        "obj-u24-concord"
+      ],
+      "declaredGuidedSteps": [
+        "u24-st-guided-concord-1"
+      ]
+    },
+    {
+      "target": "u24-st-rem-placement",
+      "owningObjectives": [
+        "obj-u24-placement"
+      ],
+      "declaredGuidedSteps": [
+        "u24-st-guided-placement-1"
+      ]
+    },
+    {
+      "target": "u24-st-rem-stand-ins",
+      "owningObjectives": [
+        "obj-u24-stand-ins"
+      ],
+      "declaredGuidedSteps": [
+        "u24-st-guided-stand-ins-1"
+      ]
+    },
+    {
+      "target": "u24-st-rem-verbal-ne",
+      "owningObjectives": [
+        "obj-u24-verbal-ne"
+      ],
+      "declaredGuidedSteps": [
+        "u24-st-guided-verbal-ne-1"
+      ]
+    },
+    {
+      "target": "u24-st-rem-word-order-contrast",
+      "owningObjectives": [
+        "obj-u24-word-order-contrast"
+      ],
+      "declaredGuidedSteps": [
+        "u24-st-guided-word-order-contrast-1"
+      ]
+    },
+    {
+      "target": "u25-st-rem-address",
+      "owningObjectives": [
+        "obj-u25-address"
+      ],
+      "declaredGuidedSteps": [
+        "u25-st-guided-address-1"
+      ]
+    },
+    {
+      "target": "u25-st-rem-courtesy",
+      "owningObjectives": [
+        "obj-u25-courtesy"
+      ],
+      "declaredGuidedSteps": [
+        "u25-st-guided-courtesy-1"
+      ]
+    },
+    {
+      "target": "u25-st-rem-diminutives",
+      "owningObjectives": [
+        "obj-u25-diminutives"
+      ],
+      "declaredGuidedSteps": [
+        "u25-st-guided-diminutives-1"
+      ]
+    },
+    {
+      "target": "u25-st-rem-name-form",
+      "owningObjectives": [
+        "obj-u25-documented-name-form"
+      ],
+      "declaredGuidedSteps": [
+        "u25-st-guided-name-form-1"
+      ]
+    },
+    {
+      "target": "u25-st-rem-name-question",
+      "owningObjectives": [
+        "obj-u25-name-question"
+      ],
+      "declaredGuidedSteps": [
+        "u25-st-guided-name-question-1"
+      ]
+    },
+    {
+      "target": "u25-st-rem-name-structure",
+      "owningObjectives": [
+        "obj-u25-name-structure"
+      ],
+      "declaredGuidedSteps": [
+        "u25-st-guided-name-structure-1"
+      ]
+    },
+    {
+      "target": "u25-st-rem-nickname-rule",
+      "owningObjectives": [
+        "obj-u25-nickname-rule"
+      ],
+      "declaredGuidedSteps": [
+        "u25-st-guided-nickname-rule-1"
+      ]
+    },
+    {
+      "target": "u26-postal-remediate",
+      "owningObjectives": [
+        "obj-u26-postal-address"
+      ],
+      "declaredGuidedSteps": [
+        "u26-postal-guided"
+      ]
+    },
+    {
+      "target": "u26-st-rem-address-notation",
+      "owningObjectives": [
+        "obj-u26-address-notation"
+      ],
+      "declaredGuidedSteps": [
+        "u26-st-guided-address-notation-1"
+      ]
+    },
+    {
+      "target": "u26-st-rem-correspondence",
+      "owningObjectives": [
+        "obj-u26-correspondence"
+      ],
+      "declaredGuidedSteps": [
+        "u26-st-guided-correspondence-1"
+      ]
+    },
+    {
+      "target": "u26-st-rem-indefinite",
+      "owningObjectives": [
+        "obj-u26-indefinite"
+      ],
+      "declaredGuidedSteps": [
+        "u26-st-guided-indefinite-1"
+      ]
+    },
+    {
+      "target": "u26-st-rem-letter-writing",
+      "owningObjectives": [
+        "obj-u26-letter-writing"
+      ],
+      "declaredGuidedSteps": [
+        "u26-st-guided-letter-writing-1"
+      ]
+    },
+    {
+      "target": "u26-st-rem-vy-capital",
+      "owningObjectives": [
+        "obj-u26-vy-capital"
+      ],
+      "declaredGuidedSteps": [
+        "u26-st-guided-vy-capital-1"
+      ]
+    },
+    {
+      "target": "u26-st-rem-word-order",
+      "owningObjectives": [
+        "obj-u26-word-order"
+      ],
+      "declaredGuidedSteps": [
+        "u26-st-guided-word-order-1"
+      ]
+    },
+    {
+      "target": "u27-comp-remediate",
+      "owningObjectives": [
+        "obj-u27-comprehension"
+      ],
+      "declaredGuidedSteps": [
+        "u27-comp-guided"
+      ]
+    },
+    {
+      "target": "u27-st-rem-passive",
+      "owningObjectives": [
+        "obj-u27-passive"
+      ],
+      "declaredGuidedSteps": [
+        "u27-st-guided-passive-1"
+      ]
+    },
+    {
+      "target": "u27-st-rem-present-passive",
+      "owningObjectives": [
+        "obj-u27-present-passive"
+      ],
+      "declaredGuidedSteps": [
+        "u27-st-guided-present-passive-1"
+      ]
+    },
+    {
+      "target": "u27-stress-remediate",
+      "owningObjectives": [
+        "obj-u27-stress"
+      ],
+      "declaredGuidedSteps": [
+        "u27-stress-guided"
+      ]
+    },
+    {
+      "target": "u28-st-rem-imperfective-adverb",
+      "owningObjectives": [
+        "obj-u28-imperfective-adverb"
+      ],
+      "declaredGuidedSteps": [
+        "u28-st-guided-imperfective-adverb-1"
+      ]
+    },
+    {
+      "target": "u28-st-rem-perfective-adverb",
+      "owningObjectives": [
+        "obj-u28-perfective-adverb"
+      ],
+      "declaredGuidedSteps": [
+        "u28-st-guided-perfective-adverb-1"
+      ]
+    },
+    {
+      "target": "u28-st-rem-readings",
+      "owningObjectives": [
+        "obj-u28-readings"
+      ],
+      "declaredGuidedSteps": [
+        "u28-st-guided-readings-1"
+      ]
+    },
+    {
+      "target": "u29-reading-remediate",
+      "owningObjectives": [
+        "obj-u29-reading"
+      ],
+      "declaredGuidedSteps": [
+        "u29-reading-guided"
+      ]
+    },
+    {
+      "target": "u29-register-remediate",
+      "owningObjectives": [
+        "obj-u29-register"
+      ],
+      "declaredGuidedSteps": [
+        "u29-register-guided"
+      ]
+    },
+    {
+      "target": "u29-st-rem-active",
+      "owningObjectives": [
+        "obj-u29-active"
+      ],
+      "declaredGuidedSteps": [
+        "u29-st-guided-active-1"
+      ]
+    },
+    {
+      "target": "u29-st-rem-bookish-note",
+      "owningObjectives": [
+        "obj-u29-bookish-note"
+      ],
+      "declaredGuidedSteps": [
+        "u29-st-guided-bookish-note-1"
+      ]
+    },
+    {
+      "target": "u29-st-rem-punctuation",
+      "owningObjectives": [
+        "obj-u29-punctuation"
+      ],
+      "declaredGuidedSteps": [
+        "u29-st-guided-punctuation-1"
+      ]
+    },
+    {
+      "target": "u29-st-rem-short-adjective",
+      "owningObjectives": [
+        "obj-u29-short-adjective"
+      ],
+      "declaredGuidedSteps": [
+        "u29-st-guided-short-adjective-1"
+      ]
+    },
+    {
+      "target": "u3-st-rem-gender",
+      "owningObjectives": [
+        "obj-u3-gender"
+      ],
+      "declaredGuidedSteps": [
+        "u3-st-guided-gender-2",
+        "u3-st-guided-gender-3",
+        "u3-st-guided-gender-4",
+        "u3-st-guided-gender-5"
+      ]
+    },
+    {
+      "target": "u3-st-rem-naming",
+      "owningObjectives": [
+        "obj-u3-naming"
+      ],
+      "declaredGuidedSteps": [
+        "u3-st-guided-naming-1"
+      ]
+    },
+    {
+      "target": "u3-st-rem-phrases",
+      "owningObjectives": [
+        "obj-u3-phrases"
+      ],
+      "declaredGuidedSteps": [
+        "u3-st-guided-phrases-1"
+      ]
+    },
+    {
+      "target": "u30-dictionary-remediate",
+      "owningObjectives": [
+        "obj-u30-dictionary"
+      ],
+      "declaredGuidedSteps": [
+        "u30-dictionary-guided"
+      ]
+    },
+    {
+      "target": "u30-st-rem-abbrev-examples",
+      "owningObjectives": [
+        "obj-u30-abbrev-examples"
+      ],
+      "declaredGuidedSteps": [
+        "u30-st-guided-abbrev-examples-1"
+      ]
+    },
+    {
+      "target": "u30-st-rem-abbreviation",
+      "owningObjectives": [
+        "obj-u30-abbreviation"
+      ],
+      "declaredGuidedSteps": [
+        "u30-st-guided-abbreviation-1"
+      ]
+    },
+    {
+      "target": "u30-st-rem-address-marks",
+      "owningObjectives": [
+        "obj-u30-address-marks"
+      ],
+      "declaredGuidedSteps": [
+        "u30-st-guided-address-marks-1"
+      ]
+    },
+    {
+      "target": "u30-st-rem-capstone",
+      "owningObjectives": [
+        "obj-u30-capstone"
+      ],
+      "declaredGuidedSteps": [
+        "u30-st-guided-capstone-1"
+      ]
+    },
+    {
+      "target": "u30-st-rem-letter-names",
+      "owningObjectives": [
+        "obj-u30-letter-names"
+      ],
+      "declaredGuidedSteps": [
+        "u30-st-guided-letter-names-1"
+      ]
+    },
+    {
+      "target": "u30-st-rem-particle",
+      "owningObjectives": [
+        "obj-u30-particle"
+      ],
+      "declaredGuidedSteps": [
+        "u30-st-guided-particle-1"
+      ]
+    },
+    {
+      "target": "u4-st-rem-nominative",
+      "owningObjectives": [
+        "obj-u4-nominative"
+      ],
+      "declaredGuidedSteps": [
+        "u4-st-guided-nominative"
+      ]
+    },
+    {
+      "target": "u4-st-rem-optional-nominative-gloss",
+      "owningObjectives": [
+        "obj-u4-nominative-gloss-reference"
+      ],
+      "declaredGuidedSteps": []
+    },
+    {
+      "target": "u4-st-rem-present",
+      "owningObjectives": [
+        "obj-u4-present"
+      ],
+      "declaredGuidedSteps": [
+        "u4-st-guided-present-2",
+        "u4-st-guided-present-4"
+      ]
+    },
+    {
+      "target": "u4-st-rem-pronouns",
+      "owningObjectives": [
+        "obj-u4-pronouns"
+      ],
+      "declaredGuidedSteps": [
+        "u4-st-guided-pronouns-1"
+      ]
+    },
+    {
+      "target": "u4-st-rem-stress",
+      "owningObjectives": [
+        "obj-u4-stress"
+      ],
+      "declaredGuidedSteps": [
+        "u4-st-guided-stress-1"
+      ]
+    },
+    {
+      "target": "u5-st-rem-indeclinable",
+      "owningObjectives": [
+        "obj-u5-indeclinable"
+      ],
+      "declaredGuidedSteps": [
+        "u5-st-guided-indeclinable-1"
+      ]
+    },
+    {
+      "target": "u5-st-rem-prepositional",
+      "owningObjectives": [
+        "obj-u5-prepositional"
+      ],
+      "declaredGuidedSteps": [
+        "u5-st-guided-prepositional-1",
+        "u5-st-guided-prepositional-6"
+      ]
+    },
+    {
+      "target": "u5-st-rem-questions",
+      "owningObjectives": [
+        "obj-u5-questions"
+      ],
+      "declaredGuidedSteps": [
+        "u5-st-guided-questions-1",
+        "u5-st-guided-questions-4"
+      ]
+    },
+    {
+      "target": "u6-st-rem-animacy",
+      "owningObjectives": [
+        "obj-u6-animacy"
+      ],
+      "declaredGuidedSteps": [
+        "u6-st-guided-animacy-1"
+      ]
+    },
+    {
+      "target": "u6-st-rem-direction",
+      "owningObjectives": [
+        "obj-u6-direction"
+      ],
+      "declaredGuidedSteps": [
+        "u6-st-guided-direction-1"
+      ]
+    },
+    {
+      "target": "u6-st-rem-feminine",
+      "owningObjectives": [
+        "obj-u6-feminine"
+      ],
+      "declaredGuidedSteps": [
+        "u6-st-guided-feminine-1"
+      ]
+    },
+    {
+      "target": "u6-st-rem-object",
+      "owningObjectives": [
+        "obj-u6-object"
+      ],
+      "declaredGuidedSteps": [
+        "u6-st-guided-object-1"
+      ]
+    },
+    {
+      "target": "u6-st-rem-possessive",
+      "owningObjectives": [
+        "obj-u6-possessive"
+      ],
+      "declaredGuidedSteps": [
+        "u6-st-guided-possessive-1"
+      ]
+    },
+    {
+      "target": "u6-st-rem-pronoun",
+      "owningObjectives": [
+        "obj-u6-pronoun"
+      ],
+      "declaredGuidedSteps": [
+        "u6-st-guided-pronoun-1"
+      ]
+    },
+    {
+      "target": "u6-st-rem-third",
+      "owningObjectives": [
+        "obj-u6-third"
+      ],
+      "declaredGuidedSteps": [
+        "u6-st-guided-third-1"
+      ]
+    },
+    {
+      "target": "u7-st-rem-adverb",
+      "owningObjectives": [
+        "obj-u7-adverb"
+      ],
+      "declaredGuidedSteps": [
+        "u7-st-guided-adverb-1"
+      ]
+    },
+    {
+      "target": "u7-st-rem-adverb-invariance",
+      "owningObjectives": [
+        "obj-u7-adverb-invariance"
+      ],
+      "declaredGuidedSteps": [
+        "u7-st-guided-adverb-invariance-1"
+      ]
+    },
+    {
+      "target": "u7-st-rem-adverb-pairs",
+      "owningObjectives": [
+        "obj-u7-adverb-pairs"
+      ],
+      "declaredGuidedSteps": [
+        "u7-st-guided-adverb-pairs-1"
+      ]
+    },
+    {
+      "target": "u7-st-rem-default",
+      "owningObjectives": [
+        "obj-u7-default"
+      ],
+      "declaredGuidedSteps": [
+        "u7-st-guided-default-1"
+      ]
+    },
+    {
+      "target": "u7-st-rem-demonstrative",
+      "owningObjectives": [
+        "obj-u7-demonstrative"
+      ],
+      "declaredGuidedSteps": [
+        "u7-st-guided-demonstrative-1"
+      ]
+    },
+    {
+      "target": "u7-st-rem-endings",
+      "owningObjectives": [
+        "obj-u7-endings"
+      ],
+      "declaredGuidedSteps": [
+        "u7-st-guided-endings-1"
+      ]
+    },
+    {
+      "target": "u7-st-rem-manner",
+      "owningObjectives": [
+        "obj-u7-adverb-paradigm"
+      ],
+      "declaredGuidedSteps": [
+        "u7-st-guided-manner-1"
+      ]
+    },
+    {
+      "target": "u7-st-rem-objectadj",
+      "owningObjectives": [
+        "obj-u7-objectadj"
+      ],
+      "declaredGuidedSteps": [
+        "u7-st-guided-objectadj-1"
+      ]
+    },
+    {
+      "target": "u7-st-rem-place",
+      "owningObjectives": [
+        "obj-u7-place"
+      ],
+      "declaredGuidedSteps": [
+        "u7-st-guided-place-1"
+      ]
+    },
+    {
+      "target": "u7-st-rem-question",
+      "owningObjectives": [
+        "obj-u7-question"
+      ],
+      "declaredGuidedSteps": [
+        "u7-st-guided-question-1"
+      ]
+    },
+    {
+      "target": "u7-st-rem-spelling",
+      "owningObjectives": [
+        "obj-u7-spelling"
+      ],
+      "declaredGuidedSteps": [
+        "u7-st-guided-spelling-1"
+      ]
+    },
+    {
+      "target": "u8-st-rem-agreement",
+      "owningObjectives": [
+        "obj-u8-agreement"
+      ],
+      "declaredGuidedSteps": [
+        "u8-st-guided-agreement-1"
+      ]
+    },
+    {
+      "target": "u8-st-rem-availability",
+      "owningObjectives": [
+        "obj-u8-availability"
+      ],
+      "declaredGuidedSteps": [
+        "u8-st-guided-availability-1"
+      ]
+    },
+    {
+      "target": "u8-st-rem-irregular",
+      "owningObjectives": [
+        "obj-u8-irregular"
+      ],
+      "declaredGuidedSteps": [
+        "u8-st-guided-irregular-1"
+      ]
+    },
+    {
+      "target": "u8-st-rem-plural",
+      "owningObjectives": [
+        "obj-u8-plural"
+      ],
+      "declaredGuidedSteps": [
+        "u8-st-guided-plural-1"
+      ]
+    },
+    {
+      "target": "u8-st-rem-spelling",
+      "owningObjectives": [
+        "obj-u8-spelling"
+      ],
+      "declaredGuidedSteps": [
+        "u8-st-guided-spelling-1"
+      ]
+    },
+    {
+      "target": "u9-st-rem-cardinal",
+      "owningObjectives": [
+        "obj-u9-cardinal"
+      ],
+      "declaredGuidedSteps": [
+        "u9-st-guided-cardinal-1"
+      ]
+    },
+    {
+      "target": "u9-st-rem-hundreds",
+      "owningObjectives": [
+        "obj-u9-hundreds"
+      ],
+      "declaredGuidedSteps": [
+        "u9-st-guided-hundreds-1"
+      ]
+    },
+    {
+      "target": "u9-st-rem-odindva",
+      "owningObjectives": [
+        "obj-u9-odindva"
+      ],
+      "declaredGuidedSteps": [
+        "u9-st-guided-odindva-1"
+      ]
+    },
+    {
+      "target": "u9-st-rem-pattern",
+      "owningObjectives": [
+        "obj-u9-pattern"
+      ],
+      "declaredGuidedSteps": [
+        "u9-st-guided-pattern-1"
+      ]
+    },
+    {
+      "target": "u9-st-rem-quantity",
+      "owningObjectives": [
+        "obj-u9-quantity"
+      ],
+      "declaredGuidedSteps": [
+        "u9-st-guided-quantity-1"
+      ]
+    },
+    {
+      "target": "u9-st-rem-teens",
+      "owningObjectives": [
+        "obj-u9-teens"
+      ],
+      "declaredGuidedSteps": [
+        "u9-st-guided-teens-1"
+      ]
+    },
+    {
+      "target": "u9-st-rem-tens",
+      "owningObjectives": [
+        "obj-u9-tens"
+      ],
+      "declaredGuidedSteps": [
+        "u9-st-guided-tens-1"
+      ]
+    },
+    {
+      "target": "u9-st-rem-thousands",
+      "owningObjectives": [
+        "obj-u9-thousands"
+      ],
+      "declaredGuidedSteps": [
+        "u9-st-guided-thousands-1"
+      ]
+    }
+  ],
+  "distinctTargets": 158,
+  "targetsWithDeclaredGuidedPractice": 157,
+  "preciseReferenceOnlyTarget": "u4-st-rem-optional-nominative-gloss",
+  "originalFailureEvidence": "../broader-regression-2026-10-18/INITIAL/ABORTED_MANIFEST.json + FORENSIC_PARTIAL_RESULTS.json + raw binary archive",
+  "interpretation": "Old blanket assertion conflated a retained non-gating reference-return route with assessed guided-practice journeys. Exact fail-closed exception and current UI/credit-negative checks; no production change. Qualified pedagogical/source/rights assessment remains pending.",
+  "fullSourceSpanRead": {
+    "bytes": 5965,
+    "sha256": "e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6",
+    "sourceRevision": "4213267"
+  },
+  "newTest": "OptionalGlossRemediationTest.optionalMeaningExplanationReturnsToItsSelectionWithoutGrantingCaseRoleCredit",
+  "newLiteralTestAnnotations": 1,
+  "productionChanges": false,
+  "formalAcceptance": false,
+  "originalUnit7RestoreCause": "UNCONFIRMED",
+  "runtime": "NOT_RUN"
+}

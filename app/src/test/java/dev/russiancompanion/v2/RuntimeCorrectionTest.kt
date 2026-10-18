@@ -41,6 +41,7 @@ import dev.russiancompanion.v2.curriculum.reviewedGuidedPractice
 import dev.russiancompanion.v2.curriculum.item
 import dev.russiancompanion.v2.curriculum.session
 import dev.russiancompanion.v2.curriculum.step
+import dev.russiancompanion.v2.curriculum.stepCompletionItemIds
 import dev.russiancompanion.v2.curriculum.unit
 import dev.russiancompanion.v2.ui.StoreV2Persistence
 import dev.russiancompanion.v2.ui.V2App
@@ -679,9 +680,30 @@ class RuntimeCorrectionTest {
         assertEquals(listOf("u7-st-guided-manner-1"), reviewedGuidedPractice(pack, "u7-st-rem-manner"))
         val targets = pack.units.flatMap { it.sessions }.flatMap { it.steps }.mapNotNull { it.remediationStepId }.toSet()
         assertTrue(targets.size >= 156)
+        // The retained sentence meanings are non-gating reference choices, not case-role practice.
+        val referenceTarget = "u4-st-rem-optional-nominative-gloss"
+        assertEquals(setOf(referenceTarget), targets.filter { reviewedGuidedPractice(pack, it).isEmpty() }.toSet())
+        val reference = pack.unit(4)!!.objectives.single { referenceTarget in it.remediationStepIds }
+        assertEquals("obj-u4-nominative-gloss-reference", reference.id)
+        assertEquals("GUIDANCE", reference.kind)
+        assertFalse(reference.gating)
+        assertTrue(reference.practiceStepIds.isEmpty())
+        assertTrue(reference.checkItemIds.isEmpty())
+        val referenceStep = pack.step("u4-st-optional-nominative-gloss")!!.second
+        assertEquals("GUIDED", referenceStep.kind)
+        assertEquals(referenceTarget, referenceStep.remediationStepId)
+        assertEquals(setOf("u4-g-nominative-1", "u4-i-nom-muzh", "u4-i-nom-poezd"), referenceStep.itemIds.toSet())
+        referenceStep.itemIds.forEach { id ->
+            val item = pack.item(id)!!
+            assertEquals(reference.id, item.objectiveId)
+            assertEquals("SOURCE_MEANING", item.kind)
+            assertEquals(null, item.assessment)
+        }
+        assertTrue(stepCompletionItemIds(pack, referenceStep.id).isEmpty())
         targets.forEach { target ->
             val guided = reviewedGuidedPractice(pack, target)
-            assertTrue("$target is missing its linked guided practice", guided.isNotEmpty())
+            if (target == referenceTarget) assertTrue(guided.isEmpty())
+            else assertTrue("$target is missing its linked guided practice", guided.isNotEmpty())
         }
         dev.russiancompanion.v2.curriculum.FILLED_GUIDED_PRACTICE_ROUTES.forEach { (remediationId, guidedId) ->
             val guided = pack.step(guidedId)!!.second
