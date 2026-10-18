@@ -1,0 +1,20 @@
+{
+  "sourceBefore": "81faa71edfc5f5da270de3015be5ce24496810eb",
+  "path": "app/src/test/java/dev/russiancompanion/v2/CompletionEvidenceCorrectionTest.kt",
+  "beforeSha256": "af7089b9053a1d1c963a41805891ddb3c7e6b3de7ea89f364ec68ca87cb6e7ce",
+  "afterSha256": "7bd9c45c3907730b5eae1702f2688f4042f46344db0605ed1a5e7bcece8739bb",
+  "observedInitialFailures": [
+    "changedContentCannotKeepAnOldCompletionOrUnlockItsSuccessor",
+    "changedEvidenceIsRecomputedAndLaterPlacementDoesNotUnlockFutureUnits",
+    "unboundLegacyViewCannotTurnClaimedCompletionIntoCurrentEvidence"
+  ],
+  "confirmedInitialScope": "Current Unit6 fixture had only ordinary evidence plus a raw completion, without required actual cumulative review; positive current-completion assumptions failed before later assertions.",
+  "correction": "Prepare genuine current Units1\u20136 through production prescribed steps/attempts,book attestations,actual assigned review answers and guarded advancement. Require stored completion/task policy binding. Reset explicit resume placement afterward; do not forge earlier completion credit.",
+  "assertionPreservation": "All original assertions retained. Remove only Unit6 book attestation to preserve earlier genuine prerequisites. Preserve original unbound resume case by claiming only Unit6; additionally assert fully unbound claimed earlier prerequisites lock Unit6.",
+  "productionChanges": false,
+  "newTestMethods": 0,
+  "runtime": "NOT_RUN",
+  "originalFailureEvidence": "INITIAL/ABORTED_MANIFEST.json + FORENSIC_PARTIAL_RESULTS.json + raw binary archive",
+  "formalAcceptance": false,
+  "unit7OriginalRestoreCause": "UNCONFIRMED"
+}

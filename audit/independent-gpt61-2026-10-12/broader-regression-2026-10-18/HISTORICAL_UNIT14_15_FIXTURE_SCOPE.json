@@ -25,7 +25,22 @@
   "newCurrentTargetProof": "app/src/test/java/dev/russiancompanion/v2/HistoricalTeachingFixtureScopeTest.kt",
   "classification": "Exact historical correction contracts, not current whole-pack acceptance. Current Unit14/15 content is separately compared strictly; fresh current learner cases selected separately.",
   "why": "Later unrelated Unit3/6/7/9/13 instruction/policy/provenance transitions cannot be projected away to retain an old whole-pack invariant. The old Unit14 provenance comparison produced a53540357-character failure message; subsequent whole-pack assertion hit Java heap OOM.",
-  "runtime": "NOT_RUN",
+  "runtime": {
+    "sourceCommit": "81faa71e",
+    "reported": 13,
+    "passed": 13,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "classes": 5,
+    "manifest": "FOCUSED_HISTORY/MANIFEST.json",
+    "lint": {
+      "errors": 0,
+      "warnings": 20
+    },
+    "gateAttachment": "EXECUTED_PASS",
+    "completeSuite": false
+  },
   "originalFailureEvidence": "INITIAL/ABORTED_MANIFEST.json + FORENSIC_PARTIAL_RESULTS.json + raw binary archive",
   "productionChanges": false,
   "formalAcceptance": false,

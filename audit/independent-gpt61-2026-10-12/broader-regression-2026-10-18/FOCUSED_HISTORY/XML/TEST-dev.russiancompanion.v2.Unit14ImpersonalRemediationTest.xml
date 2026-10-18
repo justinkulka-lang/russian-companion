@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit14ImpersonalRemediationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-18T13:48:57.953Z" hostname="d0aced911621" time="36.12">
+  <properties/>
+  <testcase name="allThreeStateCardsPrecedePracticeAndRepairRestoresEveryExample" classname="dev.russiancompanion.v2.Unit14ImpersonalRemediationTest" time="26.109"/>
+  <testcase name="oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard" classname="dev.russiancompanion.v2.Unit14ImpersonalRemediationTest" time="0.467"/>
+  <testcase name="unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException" classname="dev.russiancompanion.v2.Unit14ImpersonalRemediationTest" time="0.404"/>
+  <testcase name="wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer" classname="dev.russiancompanion.v2.Unit14ImpersonalRemediationTest" time="7.204"/>
+  <testcase name="oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction" classname="dev.russiancompanion.v2.Unit14ImpersonalRemediationTest" time="0.488"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
