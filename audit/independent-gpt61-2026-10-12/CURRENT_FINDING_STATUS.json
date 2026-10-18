@@ -1388,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestUnit7AgreementTeachingCheckpoint",
-    "priorCheckpoint": "latestUnit13WiderReviewCheckpoint",
-    "next": "Broader regression with explicit discovery/exporter exclusions;preserve and investigate restore interaction and actual failures. Final comprehensive independent audit before physical acceptance.",
+    "checkpoint": "latestBroaderRegressionCheckpoint",
+    "priorCheckpoint": "latestUnit7AgreementTeachingCheckpoint",
+    "next": "Investigate current Unit4 optional-nominative-gloss remediation/practice link and remaining observed failures without weakening assertions; refresh discovery and complete broader regression. Final independent comprehensive audit before physical acceptance.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1694,7 +1694,28 @@
       "discoveredWithoutCompletedRecord": 630
     },
     "finalJUnitXml": "UNAVAILABLE_STALE_DRY_RUN_OUTPUT_REJECTED",
-    "resourceRetry": "NOT_RUN_HELP_PREFLIGHT_ONLY",
-    "manifest": "broader-regression-2026-10-18/INITIAL/ABORTED_MANIFEST.json"
+    "resourceRetry": "FOCUSED_13_AND_4_PASSED_FULL_RETRY_NOT_RUN",
+    "manifest": "broader-regression-2026-10-18/INITIAL/ABORTED_MANIFEST.json",
+    "scopedHistory": {
+      "sourceCommit": "81faa71edfc5f5da270de3015be5ce24496810eb",
+      "manifest": "broader-regression-2026-10-18/FOCUSED_HISTORY/MANIFEST.json",
+      "reported": 13,
+      "passed": 13,
+      "classes": 5
+    },
+    "scopedCompletion": {
+      "sourceCommit": "803936655048e902df28b4a9d1dadb8961eeba9c",
+      "manifest": "broader-regression-2026-10-18/FOCUSED_COMPLETION/MANIFEST.json",
+      "reported": 4,
+      "passed": 4,
+      "classes": 1
+    },
+    "retainedInitialFailures": 32,
+    "scopeReconciledCases": 5,
+    "openInitialFailures": 27,
+    "currentLiteralAnnotationInventory": 1233,
+    "auditReady": false,
+    "nextReview": "broader-regression-2026-10-18/NEXT_REVIEW.md",
+    "activeRun": false
   }
 }

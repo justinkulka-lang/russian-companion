@@ -13,7 +13,30 @@
   "assertionPreservation": "All original assertions retained. Remove only Unit6 book attestation to preserve earlier genuine prerequisites. Preserve original unbound resume case by claiming only Unit6; additionally assert fully unbound claimed earlier prerequisites lock Unit6.",
   "productionChanges": false,
   "newTestMethods": 0,
-  "runtime": "NOT_RUN",
+  "runtime": {
+    "sourceCommit": "803936655048e902df28b4a9d1dadb8961eeba9c",
+    "manifest": "FOCUSED_COMPLETION/MANIFEST.json",
+    "reported": 4,
+    "passed": 4,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "classes": 1,
+    "lint": {
+      "Fatal": 0,
+      "Error": 0,
+      "Warning": 20,
+      "Information": 0,
+      "Ignore": 0
+    },
+    "taskStatuses": {
+      "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+      "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+      "lintDebug": "> Task :app:lintDebug",
+      "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+    },
+    "completeSuite": false
+  },
   "originalFailureEvidence": "INITIAL/ABORTED_MANIFEST.json + FORENSIC_PARTIAL_RESULTS.json + raw binary archive",
   "formalAcceptance": false,
   "unit7OriginalRestoreCause": "UNCONFIRMED"

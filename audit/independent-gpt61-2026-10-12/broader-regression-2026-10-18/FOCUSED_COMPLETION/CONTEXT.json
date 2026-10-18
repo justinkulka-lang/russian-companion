@@ -1,0 +1,52 @@
+{
+  "sourceCommit": "803936655048e902df28b4a9d1dadb8961eeba9c",
+  "startedUtc": "2026-10-18T13:52:55.368507+00:00",
+  "inputTrees": {
+    "app/src/main": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+    "app/src/test": "4ef27d048340cb3bf4278ef9bb9bcee26b0eefa5",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "mode": "FOCUSED_COMPLETION",
+  "syntheticDryRun": false,
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/setup/parallel-tests.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-Daudit.events.path=/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/FOCUSED_COMPLETION/EVENTS.jsonl",
+    "testDebugUnitTest",
+    "--rerun",
+    "--tests",
+    "*CompletionEvidenceCorrectionTest",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--max-workers=4",
+    "--console=plain"
+  ],
+  "activation": "source /workspace/setup/android-env.sh",
+  "runnerSha256": "b1573c1b796ad33ad6f7614f7d8d2c88e0e7be4f32ca75b0e2b700f019ad8b38",
+  "workerPolicy": "4 forks / 3GiB heaps / recycle after8classes",
+  "initScripts": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/setup/parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "selectors": [
+    "*CompletionEvidenceCorrectionTest"
+  ],
+  "failFast": false,
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "scope": "debug host unit-test task, explicit named focused selectors"
+}

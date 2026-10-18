@@ -10,5 +10,8 @@
   "inputTreesUnchanged": true,
   "restartInstruction": "Check for the active Gradle/test processes and INITIAL/MANIFEST.json before any restart. Do not run concurrent Gradle tasks against the same result directories or overwrite this scope. This in-progress receipt is historical once INITIAL/MANIFEST.json exists.",
   "scope": "All Gradle-discovered debug-host methods except four screenshot exporters; not complete suite; no physical/exporter/instrumented acceptance.",
-  "auditReady": false
+  "auditReady": false,
+  "historicalReceiptOnly": true,
+  "activeRun": false,
+  "supersededBy": "INITIAL/ABORTED_MANIFEST.json"
 }
