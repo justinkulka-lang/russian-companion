@@ -2289,6 +2289,2896 @@
           }
         }
       ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/BatchARemainingSources.kt",
+      "sha256": "f6f55d4b788733aabd1e8f9a242a5d1900fde2080d66f2385a7f4a8b02a4de0a",
+      "purpose": "Exact existing escaped source comparison implementation; no directory exemption or source acceptance",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually translated as \"[[should]]\".}}\n#: {{syn|ru|вероя́тно|наве́рное|наверняка́|скоре́е всего́}}\n#: {{uxi|ru|[[затмение|Затме́ние]] '''должно́''' [[наступи́ть]] [[в]] [[три]] [[час|часа́]].|The eclipse should occur at three o'clock.}}",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u19-probability-0-en",
+            "sourceId": "src-enwiktionary-dolzhen-84965088",
+            "sourceRevision": "84965088",
+            "sourceUrl": "https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088",
+            "sourceRecordId": "wiktionary-dolzhen:# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually tra",
+            "sourceHash": "56264aa3e877023aca19039f728b603db4678eac1344b20211ebe92ffb175a28",
+            "contentHash": "7eb301625974b7cc744cb2786b42981024b2daa4c2fa92a5957364f8dacc343a",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "The eclipse should occur at three o'clock.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на]] [[работа|рабо́ту]].|Employees must report to work on time.}}",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u19-probability-1-en",
+            "sourceId": "src-enwiktionary-dolzhen-84965088",
+            "sourceRevision": "84965088",
+            "sourceUrl": "https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088",
+            "sourceRecordId": "wiktionary-dolzhen:#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на",
+            "sourceHash": "c85fa5b76eb396c933badc1667ed82b7150428a3203acabd224fa81f8eb2ce04",
+            "contentHash": "61aef756a74fc75be2a61532578e8782ba90548125c34e29b93a34e9b5534767",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Employees must report to work on time.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-pairs-0-en",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';",
+            "sourceHash": "025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de",
+            "contentHash": "dcd85bada23a9985ee329ea7689e26b9a3fec1b3aa65511338f52ac8fb079aa0",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "быстро",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": ", не имеют окончаний",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u7-adverb-invariance-x-5",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча",
+            "sourceHash": "4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5",
+            "contentHash": "337063082c51f03428c646a6e57e05d12f950511f43b12e9abb4173c77103dcc",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": ", не имеют окончаний",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": ": они не склоняются",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u7-adverb-invariance-x-3",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча",
+            "sourceHash": "4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5",
+            "contentHash": "c094d203fb6f50b23203e66ca65c5b0fda32ea14f096a6ac579c82dffd5917ea",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": ": они не склоняются",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>\n</header>\n<div class=\"",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-quarter-hour-0-en",
+            "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+            "sourceRevision": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/",
+            "sourceRecordId": "pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>\n</header>\n<div class=\"",
+            "sourceHash": "acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913",
+            "contentHash": "3dbbd4fac86f79cb1cd81395763c63c440a5ab6cef42855f1d1d861a5dd83776",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "18.00",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-pairs-0-en",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';",
+            "sourceHash": "025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de",
+            "contentHash": "dcd85bada23a9985ee329ea7689e26b9a3fec1b3aa65511338f52ac8fb079aa0",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "быстро",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-invariance-0-en",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча",
+            "sourceHash": "4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5",
+            "contentHash": "e105e59b043139e4ce095ab475eea04c771790a4fa62f9e2feb86fe12b54f18a",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "неизменяемые слова",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Грамматика: At what time on the quarter hour</strong></p>\n</header>\n<div class=\"textbox__content\">\n<table class=\"grid\" style=\"border-collapse: collapse;width: 100%\">\n<thead>\n<tr>\n<td style=\"width: 33.3333%\"><strong>Time</strong></td>\n<td style=\"width: 66.6667%\"><strong>Explanation and examples</strong></td>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"width: 33.3333%\"><strong>At what time on the hour (0.00)</strong></td>\n<td style=\"width: 66.6667%\">Use <strong>в</strong> + accusative, but note that the number then often requires genitive case after it. In informal speech, sometimes people leave out час / часа / часов. Remember: один час; два / три / четыре часа; пять часов.\n<p>Концерт начинается <strong>в шесть часов</strong>. (18.00)<br>\nОна была дома <strong>в час</strong>. (13.00)</p></td>\n</tr>\n<tr>\n<td style=\"width: 33.3333%\"><strong>At what time on the quarter hour (0.15)</strong></td>\n<td style=\"width: 66.6667%\">Use <strong>в</strong> + accusative with either <strong>четверть</strong> (quarter) or <strong>пятнадцать минут</strong>. Then you use the ordinal number of the next hour in the genitive case. In essence you are saying quarter of the next hour. Note that while you can say 6:15 as “шесть пятнадцать”, in the exercises on this page we would like to focus on this other way of expressing the time.\n<p>Я приду <strong>в четверть восьмого</strong>. (7.15 – quarter of the eighth hour)<br>\nОн нам позвонил <strong>в пятнадцать минут десятого</strong>. (9.15 – 15 minutes of the tenth hour)</p>\n<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>\n<div id=\"h5p-256\">\n<div class=\"h5p-iframe-wrapper\"><iframe id=\"h5p-iframe-256\" class=\"h5p-iframe\" data-content-id=\"256\" style=\"height:1px\" src=\"about:blank\" frameborder=\"0\" scrolling=\"no\" title=\"Ordinal numbers\"></iframe></div>\n</div>\n</td>\n</tr>\n<tr>\n<td style=\"width: 33.3333%\"><strong>At what time on the half hour (0.30)</strong></td>\n<td style=\"width: 66.6667%\">Use <strong>в</strong> + prepositional with <strong>половина</strong> and the genitive case of the ordinal number of the next hour, or colloquially, <strong>пол_____</strong> (genitive case of the ordinal number of the next hour). Note that the spelling of 10:30 adds a hyphen: пол-одиннадцатого.\n<p>Наш рейс уезжает <strong>в половине пятого</strong>. (4.30 – half of the fifth hour)<br>\nМы будем свободны <strong>в полвторого</strong>. (1.30 – half of the second hour)</p>\n<p>If you need to review the ordinal numbers up to twelve, you can find them here:</p>\n<div id=\"h5p-256\">\n<div class=\"h5p-iframe-wrapper\"><iframe id=\"h5p-iframe-256\" class=\"h5p-iframe\" data-content-id=\"256\" style=\"height:1px\" src=\"about:blank\" frameborder=\"0\" scrolling=\"no\" title=\"Ordinal numbers\"></iframe></div>\n</div>\n</td>\n</tr>\n<tr>\n<td style=\"width: 33.3333%\"><strong>At what time on the three quarters hour (0.45)</strong></td>\n<td style=\"width: 66.6667%\">Use <strong>без</strong> + genitive with <strong>четверть</strong> or <strong>пятнадцать минут</strong>. Then you use the cardinal number of the next hour in the nominative case. In essence you are saying X hours without X minutes.\n<p>Передача начинается <strong>без четверти три</strong>. (2.45 – 3 without a quarter)<br>\nОна обычно приходит на работу <strong>без пятнадцати девять</strong>. (8.45 – 9 without 15 minutes)</p>",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-quarter-hour-0-en",
+            "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+            "sourceRevision": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/",
+            "sourceRecordId": "pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>\n</header>\n<div class=\"",
+            "sourceHash": "acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913",
+            "contentHash": "3dbbd4fac86f79cb1cd81395763c63c440a5ab6cef42855f1d1d861a5dd83776",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "18.00",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Затме́ние должно́ наступи́ть в три часа́.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u19-probability-0-ru",
+            "sourceId": "src-enwiktionary-dolzhen-84965088",
+            "sourceRevision": "84965088",
+            "sourceUrl": "https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088",
+            "sourceRecordId": "wiktionary-dolzhen:# {{lb|ru|with a {{lg|verb}}}} {{n-g|Used to express [[likelihood]]. Usually tra",
+            "sourceHash": "56264aa3e877023aca19039f728b603db4678eac1344b20211ebe92ffb175a28",
+            "contentHash": "37b6811b750257227ec392249893ba83267426f9eda15e25ba0e66b7d7ea5c8c",
+            "transformation": "wiktionary template selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Затме́ние должно́ наступи́ть в три часа́.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Концерт начинается в шесть часов.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-quarter-hour-0-ru",
+            "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+            "sourceRevision": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/",
+            "sourceRecordId": "pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>\n</header>\n<div class=\"",
+            "sourceHash": "acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913",
+            "contentHash": "ff95ec313c5bfc54d9a6673d5eba0b9d98eb9bc1601d7ce2cc1d59cf76da3d03",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Концерт начинается в шесть часов.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Мы будем свободны в полвторого.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-quarter-hour-6-ru",
+            "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+            "sourceRevision": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/",
+            "sourceRecordId": "pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>\n</header>\n<div class=\"",
+            "sourceHash": "acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913",
+            "contentHash": "34d16cec48200edc05169e40c3eb820b6487842185aa65639a2d254d7cfed077",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Мы будем свободны в полвторого.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Наречия",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-invariance-0-ru",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча",
+            "sourceHash": "4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5",
+            "contentHash": "e1bb37ac2f9e75f3a6719ab9d021c63740299a0fabc4807fc0d3af1eb8b7836c",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Наречия",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FRAGMENT",
+          "value": "Наречия — неизменяемые слова:",
+          "mode": "RAW",
+          "purpose": "EXISTING_SOURCE_FRAGMENT_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-invariance-0-en",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча",
+            "sourceHash": "4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5",
+            "contentHash": "e105e59b043139e4ce095ab475eea04c771790a4fa62f9e2feb86fe12b54f18a",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "неизменяемые слова",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-invariance-0-en",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча",
+            "sourceHash": "4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5",
+            "contentHash": "e105e59b043139e4ce095ab475eea04c771790a4fa62f9e2feb86fe12b54f18a",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "неизменяемые слова",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Наш рейс уезжает в половине пятого.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-quarter-hour-2-ru",
+            "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+            "sourceRevision": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/",
+            "sourceRecordId": "pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>\n</header>\n<div class=\"",
+            "sourceHash": "acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913",
+            "contentHash": "88dbdef2f1804f286ff3cc07f7f9724d145ad00ccf76a71e065e16719d4fce61",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Наш рейс уезжает в половине пятого.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Он нам позвонил в пятнадцать минут десятого.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-quarter-hour-5-ru",
+            "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+            "sourceRevision": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/",
+            "sourceRecordId": "pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>\n</header>\n<div class=\"",
+            "sourceHash": "acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913",
+            "contentHash": "6138c4518ecc30215519712ba04f3ef8b78f87752b7840c3c6c8fb1732c77812",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Он нам позвонил в пятнадцать минут десятого.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Она была дома в час.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-quarter-hour-4-ru",
+            "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+            "sourceRevision": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/",
+            "sourceRecordId": "pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>\n</header>\n<div class=\"",
+            "sourceHash": "acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913",
+            "contentHash": "1870fa4bba0eeb49d0a5b51e8396dc2350d0c263fb5aa7243f6b0337db460fa5",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Она была дома в час.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Она обычно приходит на работу без пятнадцати девять.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-quarter-hour-7-ru",
+            "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+            "sourceRevision": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/",
+            "sourceRecordId": "pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>\n</header>\n<div class=\"",
+            "sourceHash": "acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913",
+            "contentHash": "da523b73baef68c3f8017ed6866aeb1be651f6e4b84021c148fe71365af54ca8",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Она обычно приходит на работу без пятнадцати девять.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Передача начинается без четверти три.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-quarter-hour-3-ru",
+            "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+            "sourceRevision": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/",
+            "sourceRecordId": "pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>\n</header>\n<div class=\"",
+            "sourceHash": "acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913",
+            "contentHash": "f81d66313d50c8ac78951433bce48bb7ae60f98c87ca4d3e3835bed145960280",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Передача начинается без четверти три.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Слу́жащие должны́ во́время явля́ться на рабо́ту.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u19-probability-1-ru",
+            "sourceId": "src-enwiktionary-dolzhen-84965088",
+            "sourceRevision": "84965088",
+            "sourceUrl": "https://en.wiktionary.org/w/index.php?title=должен&oldid=84965088",
+            "sourceRecordId": "wiktionary-dolzhen:#: {{uxi|ru|[[служащие|Слу́жащие]] '''должны́''' [[во́время]] [[явля́ться]] [[на",
+            "sourceHash": "c85fa5b76eb396c933badc1667ed82b7150428a3203acabd224fa81f8eb2ce04",
+            "contentHash": "5658954536672669d3a241990de0315262de6b1b8ecdac50e66c350e1409fd4c",
+            "transformation": "wiktionary template selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Слу́жащие должны́ во́время явля́ться на рабо́ту.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Я приду в четверть восьмого.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-quarter-hour-1-ru",
+            "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+            "sourceRevision": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/russia-traditions-grammar/",
+            "sourceRecordId": "pressbooks-traditions-grammar:Грамматика: At what time on the quarter hour</strong></p>\n</header>\n<div class=\"",
+            "sourceHash": "acb19271d29f20803d8790208264b0c98aa9b8948681e029ce1f475694841913",
+            "contentHash": "3f2c0696472a7a58b721d02014e8d773a15fbb2e43ed6cb86020d5f27b5af505",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Я приду в четверть восьмого.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "быстро",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-0-ru",
+            "sourceId": "src-wikipedia-adverb-1374548415",
+            "sourceRevision": "1374548415",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+            "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+            "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+            "contentHash": "dcd85bada23a9985ee329ea7689e26b9a3fec1b3aa65511338f52ac8fb079aa0",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "быстро",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "быстрый",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-pairs-0-ru",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';",
+            "sourceHash": "025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de",
+            "contentHash": "0e277d3603c4dea6439a188a73a837282b535e69249497191dd6114c2cceeedd",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "быстрый",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "и не спрягаются",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u7-adverb-invariance-x-4",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча",
+            "sourceHash": "4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5",
+            "contentHash": "7d3497364956e154aa9bbd3897a4398745c42f0162bac3d8d5cb47a9d783ca80",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "и не спрягаются",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "не имеют окончаний",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u7-adverb-invariance-rem-r3",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча",
+            "sourceHash": "4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5",
+            "contentHash": "14941d44c0fa2aba8ba651f8a4b9f13e260ff48a34e3c695d6276ec034bea07b",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "не имеют окончаний",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "не склоняются",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u7-adverb-invariance-x-0",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча",
+            "sourceHash": "4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5",
+            "contentHash": "d0ed17d9f650433967ea16d052b7bfe17c0a29a9128c305b3a43fde3124b5c78",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "не склоняются",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "не спрягаются",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u7-adverb-invariance-x-1",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча",
+            "sourceHash": "4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5",
+            "contentHash": "e0ebc1ba65b522a5b2ca763e9b3ca22a0e9ae7ae38e591418e6e033f058ec92c",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "не спрягаются",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "неизменяемые слова",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-invariance-0-en",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют оконча",
+            "sourceHash": "4af07512f61d6b248b17029ee4ba056f08726cdaea72fd5c375628fc9ea356f5",
+            "contentHash": "e105e59b043139e4ce095ab475eea04c771790a4fa62f9e2feb86fe12b54f18a",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "неизменяемые слова",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "творчески",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-pairs-1-en",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';",
+            "sourceHash": "025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de",
+            "contentHash": "5d9e385a71524d33fc9cecedf212ef5e3644ba0319dc3d43bdc4cf9a7eddd9db",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "творчески",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "творческий",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-pairs-1-ru",
+            "sourceId": "src-ruwiki-narechie-152437423",
+            "sourceRevision": "152437423",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Наречие&oldid=152437423",
+            "sourceRecordId": "ruwiki-narechie:* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';",
+            "sourceHash": "025ab52d81a99a683e3803289dd41c0abfb2d283fe036a56de70214731fc97de",
+            "contentHash": "041cb2cd5bcaa07d787db6e9d6d9517edb7f9932b9b29cfe056f3f052c5724b7",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "творческий",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/BatchBSources.kt",
+      "sha256": "0ce2d5922bef7d95fb77500974c515b544327be40c493481219083c7f07c3ca4",
+      "purpose": "Exact existing escaped source comparison implementation; no directory exemption or source acceptance",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "(at the end, at the beginning, in the middle of)&nbsp; + noun in the genitive case.</p>\n<p>For example:</p>\n<ul>\n<li>В конце года – at the end of the year</li>\n<li>В начале века – at the beginning of the century</li>\n<li>В середине недели – in the middle of the week",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-beginning-0-en",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:(at the end, at the beginning, in the middle of)&nbsp; + noun in the genitive ca",
+            "sourceHash": "35512c6e3c44c3ce38ed1a75a8043a54d27231ee35806ed028afecec5925ecda",
+            "contentHash": "b72eabf69a25e37e8dfb747ea7bba2e8e3262b55b99bf6a937d3582a0f3e0636",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "at the end of the year",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "(о) двух / (об) обоих / (о) полутора",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-declension-2-ru",
+            "sourceId": "src-ruwiki-morfologiya-148939075",
+            "sourceRevision": "148939075",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+            "sourceRecordId": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+            "sourceHash": "330e9a7b65bf7a5b3f8b487cb4f3382a4751d9bd5b257fd8310e194232236f2c",
+            "contentHash": "c50990246294b7e046f94e149393dbd924b005b8db26ecaeb587264f360ec810",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "(о) двух / (об) обоих / (о) полутора",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FRAGMENT",
+          "value": "* Никто никому '''''ничего не''''' сказал.",
+          "mode": "RAW",
+          "purpose": "EXISTING_SOURCE_FRAGMENT_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-concord-0-en",
+            "sourceId": "src-ruwiki-otritsatelnye-141256493",
+            "sourceRevision": "141256493",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493",
+            "sourceRecordId": "otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н",
+            "sourceHash": "667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512",
+            "contentHash": "962b65e329ec694a68641cde5cd8078987a78e698d4c3d23503bb51059130958",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "не",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');\n* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'\n* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')\n* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'\n* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'\n* хотя {{IPA|[xɐˈtʲa]}} 'although'",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u21-purpose-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');\n",
+            "sourceHash": "994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742",
+            "contentHash": "ab6b7abe5e492f9b6d750de7961c627380f376d321fccbb8be082915be4cdf03",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "so that",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''себя́''' = I love '''myself'''\"''",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u21-object-reference-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''с",
+            "sourceHash": "02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6",
+            "contentHash": "dddfadab5000cc67b344173cb55169b6f453a7017f6911771ae346571d7bba34",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "I love myself",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "CATALOG_FRAGMENT",
+          "value": "He arrived in Moscow a week ago.<br />Он '''при'''ехал в Москву неделю назад.\n| в / на + {{abbr|acc.|accusative}}<br />к + {{abbr|dat.|dative}}<br />из / с / от + {{abbr|gen.|genitive}}\n|- style=\"vertical-align: top;\"\n| у-<br />Intended departure, signals absence<br />Antonym: при-\n| They will leave Vladivostok in a month.<br />Они '''у'''летят из Владивостока через месяц.",
+          "mode": "RAW",
+          "purpose": "RETAINED_SOURCE_COMPARISON_NOT_CAPABILITY_ADMISSION",
+          "catalogPath": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+          "catalogSha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85"
+        },
+        {
+          "kind": "CATALOG_FRAGMENT",
+          "value": "In order to study, the student brought all her textbooks from other rooms to her desk.<br />Чтобы заниматься, студентка '''с'''несла все учебники из других комнат на письменный стол.<br />The children ran (from all directions) to the playground.<br />Дети '''с'''бежались на детскую площадь",
+          "mode": "RAW",
+          "purpose": "RETAINED_SOURCE_COMPARISON_NOT_CAPABILITY_ADMISSION",
+          "catalogPath": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+          "catalogSha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85"
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "In some cases, alternative word order can change the meaning entirely:\n* Не надо меня уговаривать. (\"No need me [to] persuade\" → One should not persuade me [''as I would never agree to do something''].)\n* Меня не надо уговаривать. (\"Me no need [to] persuade\" → There is no need to persuade me [''as I will do it anyway''].)",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-word-order-contrast-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+            "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+            "contentHash": "2c10f50514dda0ff44727c1e7474b589210f3c1bf28c5250c7b42195d7b6c72b",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "One should not persuade me",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "It emphasizes the duration over which something occurs.</p>\n<p>For example:</p>\n<ul>\n<li>В течение урока ученики работали над проектом. – Throughout the lesson, the students worked on the project.</li>\n<li>В течение дня погода менялась несколько раз. – During the course of the day, the weather changed several times.",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-duration-0-en",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:It emphasizes the duration over which something occurs.</p>\n<p>For example:</p>\n",
+            "sourceHash": "cb3d600179cf70e715b6805813d1c1151cb6f4c5d391f076b754a7bbcb106973",
+            "contentHash": "92c72e41c79e68a078bc4c3eb418ce839f186bb21c7a6c76c71fcfb774f7ee54",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Throughout the lesson, the students worked on the project.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "CATALOG_FRAGMENT",
+          "value": "Step out for a short period of time, e.g.:<br />The secretary left for ten minutes.<br />Секретарь '''вы'''шел на десять минут.\n| Leave at a specific time frame, e.g.:<br />They left early in the morning to catch their train/plane .<br />Они '''вы'''ехали рано утром, чтобы успеть на поезд/самолёт.",
+          "mode": "RAW",
+          "purpose": "RETAINED_SOURCE_COMPARISON_NOT_CAPABILITY_ADMISSION",
+          "catalogPath": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+          "catalogSha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85"
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "The use of a direct object in the genitive instead of the accusative in negation signifies that the noun is indefinite, compare: {{lang|ru|Я не ви́жу кни́ги}} (\"I don't see a book\" or \"I don't see any books\") and {{lang|ru|Я не ви́жу кни́гу}} (\"I don't see the book\").",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-alternation-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:The use of a direct object in the genitive instead of the accusative in negation",
+            "sourceHash": "68d1b0070259d524ee750c37e4b2c7a80544c34e2f99076c75e282dc17d1b735",
+            "contentHash": "e4ac28af59715826d236d42069910f9e3092055006a742929b3bba398e755046",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "I don't see any books",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "actions occurring during another event or period of time.</p>\n<p>For example:</p>\n<ul>\n<li>Она родилась во время войны. –&nbsp; She was born during the war.</li>\n<li>Во время поездки я познакомился с новыми друзьями.&nbsp; – During the trip I met new friends.",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-during-event-0-en",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:actions occurring during another event or period of time.</p>\n<p>For example:</p",
+            "sourceHash": "fe428216b02efc4d81f4658bb5a8104eb9748eef7141036078f79eb0de65df69",
+            "contentHash": "954c180328d0c2c716df75b95d3e671fad0a676c48e3a032879112d5b1f941a5",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "She was born during the war.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');\n",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u21-purpose-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');\n",
+            "sourceHash": "994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742",
+            "contentHash": "ab6b7abe5e492f9b6d750de7961c627380f376d321fccbb8be082915be4cdf03",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "so that",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "grammar:** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''с",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u21-object-reference-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''с",
+            "sourceHash": "02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6",
+            "contentHash": "dddfadab5000cc67b344173cb55169b6f453a7017f6911771ae346571d7bba34",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "I love myself",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "grammar:several classes of numerals ([имена] числительные): cardinal, ordinal, collectiv",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-collective-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:several classes of numerals ([имена] числительные): cardinal, ordinal, collectiv",
+            "sourceHash": "5da558630e9ee6f8d46e13b4a8485e3cc595f337b419ecec32a50085ebc99b8a",
+            "contentHash": "f5723d0db33e785f366cb301f56a24865ac28d15a77706e835f5b320d29e8efc",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "дво́е",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "in a certain decade,&nbsp; use the preposition “в” followed by the </span><strong style=\"text-align: initial;background-color: #e8c1a2;color: #000000;font-size: 1em;font-style: normal\">prepositional plural case </strong><span style=\"text-align: initial;background-color: #e8c1a2;color: #000000;font-size: 1em;font-style: normal\">of the ordinal numeral and the noun </span><strong style=\"text-align: initial;background-color: #e8c1a2;color: #000000;font-size: 1em;font-style: normal\">годax</strong><span style=\"text-align: initial;background-color: #e8c1a2;color: #000000;font-size: 1em;font-style: normal\"> (prepositional plural form of the word </span><strong style=\"text-align: initial;background-color: #e8c1a2;color: #000000;font-size: 1em;font-style: normal\">год). </strong>Sometimes the word “годах” is left out, typically when talking about the 20th century.</p>\n<p>For example:</p>\n<ul>\n<li>В шестидесятых годах – in the 1960s</li>\n<li>В девяностых годах – in the 1990s",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-ranges-0-en",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:in a certain decade,&nbsp; use the preposition “в” followed by the </span><stron",
+            "sourceHash": "b74cde274c539316cef4b7cd21dd2dd8a6342336f935e9de9d05534712bdc3f0",
+            "contentHash": "8e41be3ad03c65cf9ee99bf776445093545cf83ec0ad47985c1e16f17b79860f",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "in the 1960s",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-nickname-rule-0-en",
+            "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+            "sourceRevision": "154915954",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954",
+            "sourceRecordId": "lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн",
+            "sourceHash": "2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020",
+            "contentHash": "ca85832d84a3944ac3dc0e67c20eb9f82c2e53b97d38a7d0978d8e2beba4b030",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "от полной формы имени",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-both-forms-0-en",
+            "sourceId": "src-ruwiki-morfologiya-148939075",
+            "sourceRevision": "148939075",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+            "sourceRecordId": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+            "sourceHash": "330e9a7b65bf7a5b3f8b487cb4f3382a4751d9bd5b257fd8310e194232236f2c",
+            "contentHash": "ec010709be70fc9f39eecc9b35f833e167302f0acbad11969a340261fc1dbb37",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Дательный",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-address-0-en",
+            "sourceId": "src-ruwiki-obraschenie-153012874",
+            "sourceRevision": "153012874",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+            "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+            "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+            "contentHash": "f0e5d3377c8bac6a1171b8caf3cdc139240caa865c58a6255ae716d6614df641",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "полные имена",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-stand-ins-0-en",
+            "sourceId": "src-ruwiki-otritsatelnye-141256493",
+            "sourceRevision": "141256493",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493",
+            "sourceRecordId": "otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь",
+            "sourceHash": "0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5",
+            "contentHash": "dd8cf3cdcece8257607c6a1cd6304d3101a136dbd5863284b94363385b0c0e9f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "никто́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-half-forms-0-en",
+            "sourceId": "src-enwiktionary-poltora-89737719",
+            "sourceRevision": "89737719",
+            "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
+            "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
+            "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
+            "contentHash": "85fe1d8c053406dccae818522f72280ff3599a04dd51ac4d54d0794aa0381091",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "1.5 roubles",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "relate events in time:</p>\n<table class=\"grid\" style=\"border-collapse: collapse;width: 100%;height: 91px\">\n<thead>\n<tr style=\"height: 15px\">\n<td style=\"width: 10.9543%;height: 15px;text-align: left\"><strong>Preposition</strong></td>\n<td style=\"width: 12.4453%;height: 15px\"><strong>Meaning</strong></td>\n<td style=\"width: 15.1291%;height: 15px\"><strong>Usage</strong></td>\n<td style=\"width: 41.4712%;height: 15px\"><strong>Example</strong></td>\n</tr>\n</thead>\n<tbody>\n<tr style=\"height: 15px\">\n<td style=\"width: 10.9543%;height: 15px\">Перед</td>\n<td style=\"width: 12.4453%;height: 15px\">before</td>\n<td style=\"width: 15.1291%;height: 15px\">перед + Instrumental</td>\n<td style=\"width: 41.4712%;height: 15px\">Перед ужином мы ходили в парк.</td>\n</tr>\n<tr style=\"height: 15px\">\n<td style=\"width: 10.9543%;height: 15px\">После</td>\n<td style=\"width: 12.4453%;height: 15px\">after</td>\n<td style=\"width: 15.1291%;height: 15px\">после + genitive</td>\n<td style=\"width: 41.4712%;height: 15px\">После работы я смотрела фильм.</td>\n</tr>\n<tr style=\"height: 31px\">\n<td style=\"width: 10.9543%;height: 31px\">Через</td>\n<td style=\"width: 12.4453%;height: 31px\">in (a period of time)</td>\n<td style=\"width: 15.1291%;height: 31px\">через + genitive</td>\n<td style=\"width: 41.4712%;height: 31px\">Мы едем в Латвию через год.</td>\n</tr>\n<tr style=\"height: 15px\">\n<td style=\"width: 10.9543%;height: 15px\">Назад</td>\n<td style=\"width: 12.4453%;height: 15px\">ago</td>\n<td style=\"width: 15.1291%;height: 15px\">time period + назад</td>\n<td style=\"width: 41.4712%;height: 15px\">Мы ездили в Казахстан год назад.",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-elapsed-0-en",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:relate events in time:</p>\n<table class=\"grid\" style=\"border-collapse: collapse;",
+            "sourceHash": "f310acc597e151f39823aba356eaed26968c2b26bb95a6f6a5f4e4b6506bbbed",
+            "contentHash": "6db7d803e74f1ffa7d8f5adc0bf95b3e15bf4c8373fffadf546227cc6c6742cb",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "before",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "several classes of numerals ([имена] числительные): cardinal, ordinal, collective, and also fractional constructions; also it has other types of words, relative to numbers: collective adverbial forms (вдвоём), multiplicative (двойной) and counting-system (двоичный) adjectives, some numeric-pronominal and indefinite quantity words (сколько, много, несколько). Here are the numerals from 0 to 10:\n\n{| class=\"wikitable\"\n!\n! cardinal numbers\n! ordinal numbers<br />(nominative case, masculine)\n! collective numbers\n|-\n! 0\n| ноль ''or'' нуль || нулево́й || rowspan=\"2\" | —\n|-\n! 1\n| оди́н ({{abbr|m.|masculine}}), одна́ ({{abbr|f.|feminine}}), одно́ ({{abbr|n.|neuter}}), одни́ ({{abbr|pl.|plural}})<br />(раз may be used when counting, a colloquial option) || пе́рвый \n|-\n! 2\n| два ({{abbr|m.|masculine}}, {{abbr|n.|neuter}}), две ({{abbr|f.|feminine}}) || второ́й || дво́е\n|-\n! 3\n| три || тре́тий || тро́е\n|-\n! 4\n| четы́ре || четвёртый || че́тверо\n|-\n! 5\n| пять || пя́тый || пя́теро\n|-\n! 6\n| шесть || шесто́й || ше́стеро\n|-\n! 7\n| семь || седьмо́й || се́меро\n|-\n! 8\n| во́семь || восьмо́й || (во́сьмеро)<ref>Collective numerals for more than 7 are seldom used.</ref>\n|-\n! 9\n| де́вять || девя́тый || (де́вятеро)\n|-\n! 10\n| де́сять || деся́тый || (де́сятеро)\n|}",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-collective-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:several classes of numerals ([имена] числительные): cardinal, ordinal, collectiv",
+            "sourceHash": "5da558630e9ee6f8d46e13b4a8485e3cc595f337b419ecec32a50085ebc99b8a",
+            "contentHash": "f5723d0db33e785f366cb301f56a24865ac28d15a77706e835f5b320d29e8efc",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "дво́е",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a half]] (1½), [[sesqui-]]\n#: {{uxi|ru|'''полтора́''' [[рубль|рубля́]]|1.5 roubles}}\n#: {{uxi|ru|[[полторы́]] [[минута|мину́ты]]|1.5 minutes}}\n#: {{uxi|ru|[[из]] '''полу́тора''' [[рубль|рубле́й]]|from 1.5 roubles}}\n#: {{uxi|ru|[[к]] '''полу́тора''' [[рубль|рубля́м]]|to 1.5 roubles}}\n#: {{uxi|ru|[[с]] '''полу́тора''' [[рубль|рубля́ми]]|with 1.5 roubles}}\n#: {{uxi|ru|[[о]] '''полу́тора''' [[рубль|рубля́х]]|concerning 1.5 roubles}}\n#: {{uxi|ru|'''полтора́''' [[час|часа́]]|one and a half hours / an hour and a half}}\n\n====Usage notes====\nIn the nominative and accusative, this number governs the [[genitive case|genitive]] '''singular''' of the noun. In all of the other cases, it governs the '''plural''' of the noun in the same case as the number.",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-half-forms-0-en",
+            "sourceId": "src-enwiktionary-poltora-89737719",
+            "sourceRevision": "89737719",
+            "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
+            "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
+            "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
+            "contentHash": "85fe1d8c053406dccae818522f72280ff3599a04dd51ac4d54d0794aa0381091",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "1.5 roubles",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "CATALOG_FRAGMENT",
+          "value": "{{wikt-lang|ru|в течение}} and {{wikt-lang|ru|в продолжение}} represent a compound [[preposition]] meaning{{snd}}\"while, during the time of\"{{snd}}they are written with {{lang|ru|-е}}: {{lang|ru|в тече́ние ча́са}} \"in a time of an hour\".",
+          "mode": "RAW",
+          "purpose": "RETAINED_SOURCE_COMPARISON_NOT_CAPABILITY_ADMISSION",
+          "catalogPath": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+          "catalogSha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85"
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "В девяностых годах",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-ranges-1-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:in a certain decade,&nbsp; use the preposition “в” followed by the </span><stron",
+            "sourceHash": "b74cde274c539316cef4b7cd21dd2dd8a6342336f935e9de9d05534712bdc3f0",
+            "contentHash": "799d9b19f0a8df038b03e7cd5b46cc67a934277b89b7a257a5014b712aa04c66",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "В девяностых годах",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "В конце года",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-beginning-0-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:(at the end, at the beginning, in the middle of)&nbsp; + noun in the genitive ca",
+            "sourceHash": "35512c6e3c44c3ce38ed1a75a8043a54d27231ee35806ed028afecec5925ecda",
+            "contentHash": "70c3cac991df400b5c355c75ede18906671d5e715e5d25c25da210e566617e9c",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "В конце года",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "В начале века",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-beginning-1-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:(at the end, at the beginning, in the middle of)&nbsp; + noun in the genitive ca",
+            "sourceHash": "35512c6e3c44c3ce38ed1a75a8043a54d27231ee35806ed028afecec5925ecda",
+            "contentHash": "611f4d27b57dab7d55684d9cae5ce77c89a88fa94664e0a8678b55cc12e4c15c",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "В начале века",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "В середине недели",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-beginning-2-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:(at the end, at the beginning, in the middle of)&nbsp; + noun in the genitive ca",
+            "sourceHash": "35512c6e3c44c3ce38ed1a75a8043a54d27231ee35806ed028afecec5925ecda",
+            "contentHash": "0d0d0d4ad6b9bf4c0af60b1f5d40fec0c6eace957cf78b6b15a34896a33dfab3",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "В середине недели",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name=\"ОРИ-5\" />.\n\nУменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group=\"с\">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-nickname-rule-0-en",
+            "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+            "sourceRevision": "154915954",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954",
+            "sourceRecordId": "lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн",
+            "sourceHash": "2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020",
+            "contentHash": "ca85832d84a3944ac3dc0e67c20eb9f82c2e53b97d38a7d0978d8e2beba4b030",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "от полной формы имени",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "В течение дня погода менялась несколько раз.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-duration-1-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:It emphasizes the duration over which something occurs.</p>\n<p>For example:</p>\n",
+            "sourceHash": "cb3d600179cf70e715b6805813d1c1151cb6f4c5d391f076b754a7bbcb106973",
+            "contentHash": "f7e3d6cca1befa7f98a5e4690eab4067437db743a66e4a77d7c564ea5ca80c14",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "В течение дня погода менялась несколько раз.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "В течение урока ученики работали над проектом.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-duration-0-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:It emphasizes the duration over which something occurs.</p>\n<p>For example:</p>\n",
+            "sourceHash": "cb3d600179cf70e715b6805813d1c1151cb6f4c5d391f076b754a7bbcb106973",
+            "contentHash": "2924aded1a30c06bec88f81b2bc4fae389781017eac18a6f220a14951b0a413f",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "В течение урока ученики работали над проектом.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "В шестидесятых годах",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-ranges-0-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:in a certain decade,&nbsp; use the preposition “в” followed by the </span><stron",
+            "sourceHash": "b74cde274c539316cef4b7cd21dd2dd8a6342336f935e9de9d05534712bdc3f0",
+            "contentHash": "80c0e41a7b224bf14c8a36dc77dd02deb16898d36743ab7d5c430c40aa6a78d7",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "В шестидесятых годах",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Во время поездки я познакомился с новыми друзьями.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-during-event-1-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:actions occurring during another event or period of time.</p>\n<p>For example:</p",
+            "sourceHash": "fe428216b02efc4d81f4658bb5a8104eb9748eef7141036078f79eb0de65df69",
+            "contentHash": "2c9555e7a8c80f1a01376ca0c39d7e922e1e23a43bab8c51708eb0327ee8778f",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Во время поездки я познакомился с новыми друзьями.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Дательный",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-both-forms-0-en",
+            "sourceId": "src-ruwiki-morfologiya-148939075",
+            "sourceRevision": "148939075",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+            "sourceRecordId": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+            "sourceHash": "330e9a7b65bf7a5b3f8b487cb4f3382a4751d9bd5b257fd8310e194232236f2c",
+            "contentHash": "ec010709be70fc9f39eecc9b35f833e167302f0acbad11969a340261fc1dbb37",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Дательный",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.\n\nОбращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».\n\nКраткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-address-0-en",
+            "sourceId": "src-ruwiki-obraschenie-153012874",
+            "sourceRevision": "153012874",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+            "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+            "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+            "contentHash": "f0e5d3377c8bac6a1171b8caf3cdc139240caa865c58a6255ae716d6614df641",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "полные имена",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Ира",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-address-1-ru",
+            "sourceId": "src-ruwiki-obraschenie-153012874",
+            "sourceRevision": "153012874",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+            "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+            "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+            "contentHash": "3d1b0cc0a277f3518126622df79360d6e3c914e0325bb55fd84896878aada005",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Ира",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Ирина",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-address-0-ru",
+            "sourceId": "src-ruwiki-obraschenie-153012874",
+            "sourceRevision": "153012874",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+            "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+            "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+            "contentHash": "c172bb8bae06688adb06bc1ff409f0940c6edb40c8ce7028ae03ddf9633cd44c",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Ирина",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Ирочка",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-address-2-ru",
+            "sourceId": "src-ruwiki-obraschenie-153012874",
+            "sourceRevision": "153012874",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+            "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+            "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+            "contentHash": "8b659084966d6d03fe3c513bbe61c01923aa56d43545d28282e8966de72a3aae",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Ирочка",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FRAGMENT",
+          "value": "Меня не надо уговаривать",
+          "mode": "RAW",
+          "purpose": "EXISTING_SOURCE_FRAGMENT_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-word-order-contrast-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+            "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+            "contentHash": "2c10f50514dda0ff44727c1e7474b589210f3c1bf28c5250c7b42195d7b6c72b",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "One should not persuade me",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Меня не надо уговаривать.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-word-order-contrast-1-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+            "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+            "contentHash": "453eb5f26733dbc64de2fc66f2b3eadfd4ea6a2f9195a280f5187f59bf90c3a8",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Меня не надо уговаривать.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | Именительный \n | ''два'' / ''оба'' / ''полтора''\n | ''две'' / ''обе'' / ''полторы''\n |-\n ! colspan=\"2\"  | Родительный \n | ''двух'' / ''обоих'' / ''полутора''\n | ''двух'' / ''обеих'' / ''полутора''\n |-\n ! colspan=\"2\"  | Дательный \n | ''двум'' / ''обоим'' / ''полутора''\n | ''двум'' / ''обеим'' / ''полутора''\n |-\n ! rowspan=\"2\"| Винительный \n | '''неодуш.'''\n | ''два'' / ''оба'' / ''полтора''\n | ''две'' / ''обе'' / ''полторы''\n |- \n | '''одуш.'''\n | ''двух'' / ''обоих'' \n | ''двух'' / ''обеих'' \n |-\n ! colspan=\"2\"  | Творительный \n | ''двумя'' / ''обоими'' / ''полутора''\n | ''двумя'' / ''обеими'' / ''полутора''\n |-\n ! colspan=\"2\"  | Предложный  \n | ''(о) двух'' / ''(об) обоих'' / ''(о) полутора''\n | ''(о) двух'' / ''(об) обеих'' / ''(о) полутора''\n |}",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-both-forms-0-en",
+            "sourceId": "src-ruwiki-morfologiya-148939075",
+            "sourceRevision": "148939075",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+            "sourceRecordId": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+            "sourceHash": "330e9a7b65bf7a5b3f8b487cb4f3382a4751d9bd5b257fd8310e194232236f2c",
+            "contentHash": "ec010709be70fc9f39eecc9b35f833e167302f0acbad11969a340261fc1dbb37",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Дательный",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Мы едем в Латвию через год.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-elapsed-2-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:relate events in time:</p>\n<table class=\"grid\" style=\"border-collapse: collapse;",
+            "sourceHash": "f310acc597e151f39823aba356eaed26968c2b26bb95a6f6a5f4e4b6506bbbed",
+            "contentHash": "06686ef50f772081a2d00b3e668815989977d177ee4360e818a73666fc81d81b",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Мы едем в Латвию через год.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Мы ездили в Казахстан год назад.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-elapsed-3-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:relate events in time:</p>\n<table class=\"grid\" style=\"border-collapse: collapse;",
+            "sourceHash": "f310acc597e151f39823aba356eaed26968c2b26bb95a6f6a5f4e4b6506bbbed",
+            "contentHash": "a92a7c5f04d8af61b92b1367e2ee171147dd90e11429a4b5ef0fcf384490f2f5",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Мы ездили в Казахстан год назад.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FRAGMENT",
+          "value": "Не надо меня уговаривать",
+          "mode": "RAW",
+          "purpose": "EXISTING_SOURCE_FRAGMENT_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-word-order-contrast-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+            "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+            "contentHash": "2c10f50514dda0ff44727c1e7474b589210f3c1bf28c5250c7b42195d7b6c72b",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "One should not persuade me",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Не надо меня уговаривать.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-word-order-contrast-0-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+            "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+            "contentHash": "c8de239c5299690d8a28e03341487cae5ca0822c0d59bae6e9e47f97f1e0cf44",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Не надо меня уговаривать.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощью [[Префикс (грамматика)|префикса]] ''ни-'', ''не-''<ref>{{Книга|заглавие=Литература и язык. Современная иллюстрированная энциклопедия|ответственный=Горкин А.П.|год=2006|язык=ru|место=Москва|издательство=Росмен|страницы=611}}</ref>. Отрицательные местоимения, образованные приставкой ''не-'', называются предикативными<ref>{{Книга|автор=Падучева Елена Викторовна|заглавие=Русское отрицательное предложение|издательство=Языки славянской культуры|страницы=71|страниц=303|isbn=978-5-9551-0657-1}}</ref>.\n\n== Примеры ==\n* За утерю шлема его '''''никто''''' '''''не''''' упрекнул, и он почти успокоился<ref name=\":0\">{{Книга|автор=Василь Быков|заглавие=Главный кригсман|год=2002}}</ref>.\n* Но с этим командиром, пожалуй, '''''никакого''''' отдыха не получится<ref>{{Книга|автор=Василь Быков|заглавие=Болото|год=2001}}</ref>.\n* '''''Негде''''' там купаться и валяться, одни кремни да колючки<ref>{{Книга|автор=Домбровский Юрий Осипович|заглавие=Факультет ненужных вещей|ответственный=Шубина Е. Д.|год=2011|издательство=Редакция Елены Шубиной|isbn=978-5-17-076318-4}}</ref>.\n* Аплодисментов ждать пока что '''''неоткуда'''''…<ref>{{Книга|автор=Сергей Довлатов|заглавие=Наши|год=1983}}</ref>\n\n{| class=\"wikitable\"\n![[Вопросительное местоимение]] \\\n[[Префикс (грамматика)|префикс]]\n!ни-\n!не-\n|-\n|кто\n|никто́\n|не́кто\n|-\n|что\n|ничто́\n|не́что\n|-\n|как\n|ника́к\n|не́как\n|-\n|чей\n|ниче́й\n| -\n|-\n|сколько\n|ниско́лько\n|не́сколько\n|-\n|когда\n|никогда́\n|не́когда\n|-\n|где\n|нигде́\n|не́где\n|-\n|куда\n|никуда́\n|не́куда\n|-\n|чего\n|ничего́\n|не́чего",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-stand-ins-0-en",
+            "sourceId": "src-ruwiki-otritsatelnye-141256493",
+            "sourceRevision": "141256493",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493",
+            "sourceRecordId": "otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь",
+            "sourceHash": "0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5",
+            "contentHash": "dd8cf3cdcece8257607c6a1cd6304d3101a136dbd5863284b94363385b0c0e9f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "никто́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "CATALOG_FRAGMENT",
+          "value": "Он приехал в Москву неделю назад",
+          "mode": "REMOVE_WIKI_EMPHASIS",
+          "purpose": "RETAINED_SOURCE_COMPARISON_NOT_CAPABILITY_ADMISSION",
+          "catalogPath": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+          "catalogSha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85"
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Она родилась во время войны.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-during-event-0-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:actions occurring during another event or period of time.</p>\n<p>For example:</p",
+            "sourceHash": "fe428216b02efc4d81f4658bb5a8104eb9748eef7141036078f79eb0de65df69",
+            "contentHash": "8f1a73a000405082d1604ccef08c98b60d7a1f6f7f431ce1abcec42db776123d",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Она родилась во время войны.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Они у́летят из Владивостока через месяц.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u20-motion-6-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:They will leave Vladivostok in a month.<br />Они '''у'''летят из Владивостока че",
+            "sourceHash": "91e79ac2824455369290c1a4f7179c1cc8aa815773495fe8b13c924530082d0e",
+            "contentHash": "e0c776290550379273b2fbe7535b2a95c31c95a47ea7b54d0ccbff3ae966a50c",
+            "transformation": "wikibooks emphasis formatting",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Они у́летят из Владивостока через месяц.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Основным правилом правильного использования местоимений '''''никто́''''', '''''ничто́''''' является [[обязательное отрицательное согласование]], то есть местоимение с префиксом ''ни-'' либо группа местоимений с префиксом ''ни-'' требует наличия отрицательной частицы не в сказуемом.<ref>{{Книга|заглавие=Морфология русского языка 1: имена существительные, имена\nприлагательные, местоимения|год=2021|язык=ru|издательство=Masaryk University, Elportál|страницы=118|страниц=131}}</ref>\n\n* Никто никому '''''ничего не''''' сказал.",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-concord-0-en",
+            "sourceId": "src-ruwiki-otritsatelnye-141256493",
+            "sourceRevision": "141256493",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493",
+            "sourceRecordId": "otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н",
+            "sourceHash": "667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512",
+            "contentHash": "962b65e329ec694a68641cde5cd8078987a78e698d4c3d23503bb51059130958",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "не",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Перед ужином мы ходили в парк.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-elapsed-0-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:relate events in time:</p>\n<table class=\"grid\" style=\"border-collapse: collapse;",
+            "sourceHash": "f310acc597e151f39823aba356eaed26968c2b26bb95a6f6a5f4e4b6506bbbed",
+            "contentHash": "f35880b91838f10a9827aadcb646958e35ae581ecc1f69851cb3bed4fb136153",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Перед ужином мы ходили в парк.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "После работы я смотрела фильм.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-elapsed-1-ru",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:relate events in time:</p>\n<table class=\"grid\" style=\"border-collapse: collapse;",
+            "sourceHash": "f310acc597e151f39823aba356eaed26968c2b26bb95a6f6a5f4e4b6506bbbed",
+            "contentHash": "194407e055da04861bbadb5dd65e3984c9516d78424dec9218e995d6d19e2cfa",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "После работы я смотрела фильм.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Предложный",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-declension-2-en",
+            "sourceId": "src-ruwiki-morfologiya-148939075",
+            "sourceRevision": "148939075",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+            "sourceRecordId": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+            "sourceHash": "330e9a7b65bf7a5b3f8b487cb4f3382a4751d9bd5b257fd8310e194232236f2c",
+            "contentHash": "c6d59c90f3da744796fe76b60d7c16d938443008f8dfcd3f440e19b123422d75",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Предложный",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "CATALOG_FRAGMENT",
+          "value": "Секретарь вышел на десять минут",
+          "mode": "REMOVE_WIKI_EMPHASIS",
+          "purpose": "RETAINED_SOURCE_COMPARISON_NOT_CAPABILITY_ADMISSION",
+          "catalogPath": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+          "catalogSha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85"
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Творительный",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-both-forms-2-en",
+            "sourceId": "src-ruwiki-morfologiya-148939075",
+            "sourceRevision": "148939075",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+            "sourceRecordId": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+            "sourceHash": "330e9a7b65bf7a5b3f8b487cb4f3382a4751d9bd5b257fd8310e194232236f2c",
+            "contentHash": "6f5118d534054b8ed979eb070ecb873499efb969ecd7b7effa2834ea1b547bc7",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Творительный",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Я люблю́ (свою́) жену́",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u21-object-reference-1-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''с",
+            "sourceHash": "02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6",
+            "contentHash": "6b171e8a14e8fc8f874b98e45bcd905d5ca51d8a2b678e0b4ed63e58c055868d",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Я люблю́ (свою́) жену́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Я люблю́ себя́",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u21-object-reference-0-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''с",
+            "sourceHash": "02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6",
+            "contentHash": "fdfed9fd1826f2a4543711b339858b2794ac9a36b16b07c6de1dccf7f508b145",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Я люблю́ себя́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FRAGMENT",
+          "value": "Я люблю́ себя́ = I love myself",
+          "mode": "REMOVE_WIKI_EMPHASIS",
+          "purpose": "EXISTING_SOURCE_FRAGMENT_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u21-object-reference-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''с",
+            "sourceHash": "02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6",
+            "contentHash": "dddfadab5000cc67b344173cb55169b6f453a7017f6911771ae346571d7bba34",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "I love myself",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Я не ви́жу кни́ги",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-alternation-0-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:The use of a direct object in the genitive instead of the accusative in negation",
+            "sourceHash": "68d1b0070259d524ee750c37e4b2c7a80544c34e2f99076c75e282dc17d1b735",
+            "contentHash": "2c6499030cd1f6e88ac84888f1b11b37998a640e58fb83a63dbe7f60af39fd52",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Я не ви́жу кни́ги",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Я не ви́жу кни́гу",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-alternation-1-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:The use of a direct object in the genitive instead of the accusative in negation",
+            "sourceHash": "68d1b0070259d524ee750c37e4b2c7a80544c34e2f99076c75e282dc17d1b735",
+            "contentHash": "7ac0e210cffa37711504bcacd708f9a73848b44ceaafd4c1a0095d967ef44d59",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Я не ви́жу кни́гу",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "CATALOG_FRAGMENT",
+          "value": "в продолжение",
+          "mode": "RAW",
+          "purpose": "RETAINED_SOURCE_COMPARISON_NOT_CAPABILITY_ADMISSION",
+          "catalogPath": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+          "catalogSha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85"
+        },
+        {
+          "kind": "CATALOG_FRAGMENT",
+          "value": "в тече́ние ча́са",
+          "mode": "RAW",
+          "purpose": "RETAINED_SOURCE_COMPARISON_NOT_CAPABILITY_ADMISSION",
+          "catalogPath": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+          "catalogSha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85"
+        },
+        {
+          "kind": "PROVENANCE_FRAGMENT",
+          "value": "в течение",
+          "mode": "LOWERCASE",
+          "purpose": "EXISTING_SOURCE_FRAGMENT_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u23-duration-0-en",
+            "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+            "sourceRevision": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+            "sourceUrl": "https://wisc.pb.unizin.org/diverserussian/chapter/usa-grammar/",
+            "sourceRecordId": "usa-grammar:It emphasizes the duration over which something occurs.</p>\n<p>For example:</p>\n",
+            "sourceHash": "cb3d600179cf70e715b6805813d1c1151cb6f4c5d391f076b754a7bbcb106973",
+            "contentHash": "92c72e41c79e68a078bc4c3eb418ce839f186bb21c7a6c76c71fcfb774f7ee54",
+            "transformation": "pressbooks markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Throughout the lesson, the students worked on the project.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "два",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-or-u9-odindva-9",
+            "sourceId": "src-openrussian-50e210c4",
+            "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+            "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/others.csv",
+            "sourceRecordId": "others.csv:два#accented",
+            "sourceHash": "86879b3ea456e970d141644f759486ebbc22c0fb7f4adf0c954d5b223c735652",
+            "contentHash": "86879b3ea456e970d141644f759486ebbc22c0fb7f4adf0c954d5b223c735652",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "два",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "дво́е",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-collective-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:several classes of numerals ([имена] числительные): cardinal, ordinal, collectiv",
+            "sourceHash": "5da558630e9ee6f8d46e13b4a8485e3cc595f337b419ecec32a50085ebc99b8a",
+            "contentHash": "f5723d0db33e785f366cb301f56a24865ac28d15a77706e835f5b320d29e8efc",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "дво́е",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "двум",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-declension-0-ru",
+            "sourceId": "src-ruwiki-morfologiya-148939075",
+            "sourceRevision": "148939075",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+            "sourceRecordId": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+            "sourceHash": "330e9a7b65bf7a5b3f8b487cb4f3382a4751d9bd5b257fd8310e194232236f2c",
+            "contentHash": "de9d0e9019902d4d0c19fa6ce8460ee2f84eb136e6838799c206b22011a43c5b",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "двум",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "двумя",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-declension-1-ru",
+            "sourceId": "src-ruwiki-morfologiya-148939075",
+            "sourceRevision": "148939075",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+            "sourceRecordId": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+            "sourceHash": "330e9a7b65bf7a5b3f8b487cb4f3382a4751d9bd5b257fd8310e194232236f2c",
+            "contentHash": "24da85af6fca2e7f642b3d0788b436ef42a20dbc2dc449672d9198dad1e96fb5",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "двумя",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "если",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u21-purpose-1-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');\n",
+            "sourceHash": "994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742",
+            "contentHash": "53934f31f2c8d53db326106715266cd288ad74a7e77d5095138f4126ab57a6bf",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "если",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "из полу́тора рубле́й",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-half-forms-2-ru",
+            "sourceId": "src-enwiktionary-poltora-89737719",
+            "sourceRevision": "89737719",
+            "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
+            "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
+            "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
+            "contentHash": "811b8cffdab7db7a4e7b26f8e116fb084375fc5059a5bc3b11fdef8e6800d5b3",
+            "transformation": "wiktionary template selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "из полу́тора рубле́й",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FRAGMENT",
+          "value": "ирочка",
+          "mode": "LOWERCASE",
+          "purpose": "EXISTING_SOURCE_FRAGMENT_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-address-0-en",
+            "sourceId": "src-ruwiki-obraschenie-153012874",
+            "sourceRevision": "153012874",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+            "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+            "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+            "contentHash": "f0e5d3377c8bac6a1171b8caf3cdc139240caa865c58a6255ae716d6614df641",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "полные имена",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "к полу́тора рубля́м",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-half-forms-3-ru",
+            "sourceId": "src-enwiktionary-poltora-89737719",
+            "sourceRevision": "89737719",
+            "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
+            "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
+            "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
+            "contentHash": "2a34454d880adc0016539b9f70d8516cde15c944dc756d8ebf4e92f4fa8545d6",
+            "transformation": "wiktionary template selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "к полу́тора рубля́м",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "краткие имена",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-address-1-en",
+            "sourceId": "src-ruwiki-obraschenie-153012874",
+            "sourceRevision": "153012874",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+            "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+            "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+            "contentHash": "9c6a04e8067756fe6b17ba81ca70d606445c294375d0ea71d83361300c220ff8",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "краткие имена",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "кто",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-stand-ins-0-ru",
+            "sourceId": "src-ruwiki-otritsatelnye-141256493",
+            "sourceRevision": "141256493",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493",
+            "sourceRecordId": "otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь",
+            "sourceHash": "0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5",
+            "contentHash": "bd49f3885cd9f4fef448198cb5f4fbed1c88b37fe9c9de7e89b81754e082edc9",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "кто",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "CATALOG_FRAGMENT",
+          "value": "на десять минут",
+          "mode": "RAW",
+          "purpose": "RETAINED_SOURCE_COMPARISON_NOT_CAPABILITY_ADMISSION",
+          "catalogPath": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+          "catalogSha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85"
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "не",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-absence-2-ru",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4233876",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Verbs?oldid=4233876",
+            "sourceRecordId": "verbs:To negate a verb, simply add '''не''' (''nye'') before the verb:\n:Are you speaki",
+            "sourceHash": "635720f5fd7588480e0b9503d8103e3d7c210d9bbd9884766c0eafe4b068c9c9",
+            "contentHash": "962b65e329ec694a68641cde5cd8078987a78e698d4c3d23503bb51059130958",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "не",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "не́кто",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-stand-ins-2-en",
+            "sourceId": "src-ruwiki-otritsatelnye-141256493",
+            "sourceRevision": "141256493",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493",
+            "sourceRecordId": "otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь",
+            "sourceHash": "0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5",
+            "contentHash": "90382e828bb131a79e201fbc02b5818d0d8c9343c8d296aed04dfdbf37b9f7e0",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "не́кто",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "не́что",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u24-stand-ins-x-1",
+            "sourceId": "src-ruwiki-otritsatelnye-141256493",
+            "sourceRevision": "141256493",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493",
+            "sourceRecordId": "otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь",
+            "sourceHash": "0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5",
+            "contentHash": "82c8ec7c169f6ccac651a47a0d98819ca87c93a61d9594819ec6ba5c61375c42",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "не́что",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "CATALOG_FRAGMENT",
+          "value": "неделю назад",
+          "mode": "RAW",
+          "purpose": "RETAINED_SOURCE_COMPARISON_NOT_CAPABILITY_ADMISSION",
+          "catalogPath": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+          "catalogSha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85"
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "никто́",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-concord-0-ru",
+            "sourceId": "src-ruwiki-otritsatelnye-141256493",
+            "sourceRevision": "141256493",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493",
+            "sourceRecordId": "otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н",
+            "sourceHash": "667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512",
+            "contentHash": "dd8cf3cdcece8257607c6a1cd6304d3101a136dbd5863284b94363385b0c0e9f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "никто́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "ничто́",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-concord-1-ru",
+            "sourceId": "src-ruwiki-otritsatelnye-141256493",
+            "sourceRevision": "141256493",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493",
+            "sourceRecordId": "otritsatelnye:Основным правилом правильного использования местоимений '''''никто́''''', '''''н",
+            "sourceHash": "667756d6599385dfbcc9690b5072bd3e1193eaff0200154309f21ca64a1ea512",
+            "contentHash": "098c02550ec27679fb0979f270d22f65a983202e9e3bda142cfad10a264e4894",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "ничто́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "обеим",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-both-forms-0-ru",
+            "sourceId": "src-ruwiki-morfologiya-148939075",
+            "sourceRevision": "148939075",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+            "sourceRecordId": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+            "sourceHash": "330e9a7b65bf7a5b3f8b487cb4f3382a4751d9bd5b257fd8310e194232236f2c",
+            "contentHash": "755c4b2ab0bfbbd0fccb91d1f013ff6fc64c2b71a77c41865657f40041b9715f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "обеим",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "обеими",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-both-forms-2-ru",
+            "sourceId": "src-ruwiki-morfologiya-148939075",
+            "sourceRevision": "148939075",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+            "sourceRecordId": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+            "sourceHash": "330e9a7b65bf7a5b3f8b487cb4f3382a4751d9bd5b257fd8310e194232236f2c",
+            "contentHash": "bbae73417ac75a20179e6620c51c61801cc0c70f832b6f51277fa3fec4c513c4",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "обеими",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "обоим",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-both-forms-1-ru",
+            "sourceId": "src-ruwiki-morfologiya-148939075",
+            "sourceRevision": "148939075",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+            "sourceRecordId": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+            "sourceHash": "330e9a7b65bf7a5b3f8b487cb4f3382a4751d9bd5b257fd8310e194232236f2c",
+            "contentHash": "0bf11d6032ad92ebb6bfc29dbd38596e7e2c0d4fbf72e644ba9bbb43ccbc4a0d",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "обоим",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "обоими",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-both-forms-3-ru",
+            "sourceId": "src-ruwiki-morfologiya-148939075",
+            "sourceRevision": "148939075",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Морфология_русского_языка&oldid=148939075",
+            "sourceRecordId": "morfologiya:Мужской и средний род\n ! style=\"width:250px\" |Женский род\n |-\n ! colspan=\"2\" | И",
+            "sourceHash": "330e9a7b65bf7a5b3f8b487cb4f3382a4751d9bd5b257fd8310e194232236f2c",
+            "contentHash": "0904dd9e61e3b8d6410ddd092c70fbd334e7c36d746659855e02df65eeb9230c",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "обоими",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "от краткой формы",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-nickname-rule-1-en",
+            "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+            "sourceRevision": "154915954",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954",
+            "sourceRecordId": "lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн",
+            "sourceHash": "2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020",
+            "contentHash": "cfde91a2a26d9c43413197677350b089f80f25d6c4c1df19df357e870d9d9707",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "от краткой формы",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "от полной формы имени",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-nickname-rule-0-en",
+            "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+            "sourceRevision": "154915954",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954",
+            "sourceRecordId": "lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн",
+            "sourceHash": "2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020",
+            "contentHash": "ca85832d84a3944ac3dc0e67c20eb9f82c2e53b97d38a7d0978d8e2beba4b030",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "от полной формы имени",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "отстранённо-официального регистра",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-address-3-en",
+            "sourceId": "src-ruwiki-obraschenie-153012874",
+            "sourceRevision": "153012874",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+            "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+            "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+            "contentHash": "9e35292f490f3e19d471229d0cddffc9a15b0a8534e88d1d0a2d5abc2e7a5203",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "отстранённо-официального регистра",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "оттенок пренебрежения",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-nickname-rule-2-en",
+            "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+            "sourceRevision": "154915954",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Русское_личное_имя&oldid=154915954",
+            "sourceRecordId": "lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн",
+            "sourceHash": "2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020",
+            "contentHash": "72ebc52ab53aa482509f866e61d51b42c89c3541f0370a2ecfb1f740d625af27",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "оттенок пренебрежения",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "полному имени",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-address-3-ru",
+            "sourceId": "src-ruwiki-obraschenie-153012874",
+            "sourceRevision": "153012874",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+            "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+            "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+            "contentHash": "a520461854bf338e9fb00a77bc8c8ebfeac78065929691fe46ab5dfb83bc9060",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "полному имени",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "полные имена",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-address-0-en",
+            "sourceId": "src-ruwiki-obraschenie-153012874",
+            "sourceRevision": "153012874",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+            "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+            "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+            "contentHash": "f0e5d3377c8bac6a1171b8caf3cdc139240caa865c58a6255ae716d6614df641",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "полные имена",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "полтора́ рубля́",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-half-forms-0-ru",
+            "sourceId": "src-enwiktionary-poltora-89737719",
+            "sourceRevision": "89737719",
+            "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
+            "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
+            "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
+            "contentHash": "da78bb71ed15b6f66568859e816ecaf5451fee6c94fbaa6281a616f876773031",
+            "transformation": "wiktionary template selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "полтора́ рубля́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "полторы́ мину́ты",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-half-forms-1-ru",
+            "sourceId": "src-enwiktionary-poltora-89737719",
+            "sourceRevision": "89737719",
+            "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
+            "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
+            "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
+            "contentHash": "558a5ffec5b5f76626e89933aeb0153ac5e091bd40620d82142895685feb9d76",
+            "transformation": "wiktionary template selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "полторы́ мину́ты",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "потому что",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u21-purpose-2-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');\n",
+            "sourceHash": "994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742",
+            "contentHash": "0bea65d093ce98b4de850c861201a0bee85a3dfe15dfdf4a3061f0a13e9b82ab",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "потому что",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "с полу́тора рубля́ми",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u22-half-forms-x-0",
+            "sourceId": "src-enwiktionary-poltora-89737719",
+            "sourceRevision": "89737719",
+            "sourceUrl": "https://en.wiktionary.org/w/index.php?title=полтора&oldid=89737719",
+            "sourceRecordId": "poltora:{{head|ru|numeral|head=полтора́|g=m|g2=n}}, {{l|ru|полторы́|g=f}}\n\n# [[one and a",
+            "sourceHash": "bb7266a9e0e09c1cc57df15020a1c5b1a4e38de7ad8c9800fafca8467403b601",
+            "contentHash": "ee976441ad263cc05d7d593898d239f5b7dcaaaa14990e47b6f5f97527b1c1c0",
+            "transformation": "wiktionary template selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "с полу́тора рубля́ми",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FRAGMENT",
+          "value": "себя́",
+          "mode": "RAW",
+          "purpose": "EXISTING_SOURCE_FRAGMENT_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u21-object-reference-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''с",
+            "sourceHash": "02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6",
+            "contentHash": "dddfadab5000cc67b344173cb55169b6f453a7017f6911771ae346571d7bba34",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "I love myself",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "три",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-collective-1-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:several classes of numerals ([имена] числительные): cardinal, ordinal, collectiv",
+            "sourceHash": "5da558630e9ee6f8d46e13b4a8485e3cc595f337b419ecec32a50085ebc99b8a",
+            "contentHash": "cbbb1ed220dfbef61e203a3cf5c39529a23d957452676f9499036ffff2eedd8d",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "три",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "тро́е",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-collective-1-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:several classes of numerals ([имена] числительные): cardinal, ordinal, collectiv",
+            "sourceHash": "5da558630e9ee6f8d46e13b4a8485e3cc595f337b419ecec32a50085ebc99b8a",
+            "contentHash": "029a0f88f952694935666c25f26ce8349f6714538286a7ae6bce244b5a99a98d",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "тро́е",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FRAGMENT",
+          "value": "уменьшительн",
+          "mode": "RAW",
+          "purpose": "EXISTING_SOURCE_FRAGMENT_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-address-0-en",
+            "sourceId": "src-ruwiki-obraschenie-153012874",
+            "sourceRevision": "153012874",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+            "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+            "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+            "contentHash": "f0e5d3377c8bac6a1171b8caf3cdc139240caa865c58a6255ae716d6614df641",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "полные имена",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "уменьшительно-ласкательные",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u25-address-2-en",
+            "sourceId": "src-ruwiki-obraschenie-153012874",
+            "sourceRevision": "153012874",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обращение_в_русском_речевом_этикете&oldid=153012874",
+            "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+            "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+            "contentHash": "15cf0473f328e6af0d2107ddeb26badc698caa9eea11649a2dec44bed25d7f95",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "уменьшительно-ласкательные",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "хотя",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u21-purpose-3-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');\n",
+            "sourceHash": "994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742",
+            "contentHash": "362977536f97c43f6d34e84a6c47021d5eb3944a9f8e608ebb2fafce8ac4687c",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "хотя",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "че́тверо",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-collective-2-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:several classes of numerals ([имена] числительные): cardinal, ordinal, collectiv",
+            "sourceHash": "5da558630e9ee6f8d46e13b4a8485e3cc595f337b419ecec32a50085ebc99b8a",
+            "contentHash": "4bc43ec2ff44998335ce26247c6f70e386eee1dc653068865584578c1dc74d04",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "че́тверо",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "четы́ре",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u22-collective-2-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:several classes of numerals ([имена] числительные): cardinal, ordinal, collectiv",
+            "sourceHash": "5da558630e9ee6f8d46e13b4a8485e3cc595f337b419ecec32a50085ebc99b8a",
+            "contentHash": "292ca46fa414ed023efb641c0690bdb718ba4b10429f8c633d2efc10c101c62e",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "четы́ре",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "что",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-stand-ins-1-ru",
+            "sourceId": "src-ruwiki-otritsatelnye-141256493",
+            "sourceRevision": "141256493",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Отрицательные_местоимения&oldid=141256493",
+            "sourceRecordId": "otritsatelnye:Образуются от [[Вопросительное местоимение|вопросительных местоимений]] с помощь",
+            "sourceHash": "0d70e3c2801d2272dc0958ab624afa5623eb07959fb18627e74e88f9a41689d5",
+            "contentHash": "ff6ba2e6b01f8d4589516ded0257db60aab29e3336214548289244ca8f7a539a",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "что",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "чтобы",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u21-purpose-0-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');\n",
+            "sourceHash": "994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742",
+            "contentHash": "1a4fb8750ecb7b8f4a22d415334f9dc59343410d75d5f40fa25084433d87c762",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "чтобы",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/ExplicitSourcePairs.kt",
+      "sha256": "9e61aeed9c6d52b5d3e1535adc11a7155983012304a630c9cb7d92b0358211b5",
+      "purpose": "Exact existing escaped source comparison implementation; no directory exemption or source acceptance",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "28 августа 2017 г.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-calendar-date-1-ru",
+            "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+            "sourceRevision": "1357134172",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+            "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+            "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+            "contentHash": "1928eac97df0e60fa34a8634ce97b4360a25f8ef483ee5dd5c31515c90e12455",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "28 августа 2017 г.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This order is used in both the all-numeric date (for example \"{{lang|ru|28.08.17}}\") and the expanded form (for example \"{{lang|ru|28 августа 2017 г.}}\"); the trailing \"г\" is short for \"года\" (''goda'', \"of the year\"). Coincidentally, in Polish the word for year is \"rok\", so a similar date format is used by the Poles e.g. 1987r). Single-digit numbers for day or month may have a preceding zero (for example \"{{lang|ru|28.08.2017}}\") is more usual.\n\nWhen saying the date, it is usually pronounced using the ordinal number of the day first (in neutral [[grammatical gender]]), then the month in [[genitive case]] (for example \"{{lang|ru|Двадцать восьмое августа}}\").",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-calendar-date-0-en",
+            "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+            "sourceRevision": "1357134172",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+            "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+            "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+            "contentHash": "d13ee4d49a363ae1938812b3edcfc713798270810b59d03207046ee74e0a4a8a",
+            "transformation": "wiki label selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "the month in genitive case",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "imperfective ones are usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' \"being\", very rarely past ''бывши'' \"having been\"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).\n\nPresent adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>\n\nIn standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять (\"Having eaten, I went for a walk\") → Я пообедал и пошёл гулять (\"I ate and went for a walk\"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. \"I haven't eaten today\" will be \"Я сегодня не евши\" instead of \"Я сегодня не ел\".\n\n{| class=\"wikitable\"\n|+ Adverbial participles\n|-\n! infinitive\n! present tense\n! present adverbial participle\n! past adverbial participle\n|-\n| [[wikt:думать|думать]] ''(to think, {{abbr|impf.|imperfective}})''\n| думаю\n| думая\n| (думав)<ref group=\"tavp\" name=pi />\n|-\n| [[wikt:сказать|сказать]] ''(to say, {{abbr|pf.|perfective}})''\n| colspan=\"2\" | —\n| сказав (сказавши)\n|-\n| [[wikt:учиться|учиться]] ''(to be learning, {{abbr|impf.|imperfective}})''\n| учусь\n| учась",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u28-imperfective-adverb-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:imperfective ones are usually present, while perfective ones can only be past (s",
+            "sourceHash": "478f332bf84bea14a7c5453564225d6a436335132b652ef5ec9162719cf017ad",
+            "contentHash": "e6980285719a841778885361cf5da70eb4bef7a17151d0888022a15ce952273d",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "usually present",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" from an adjective, and replacing them with the adverbial \"-о\". For example, in Ukrainian, \"швидкий\", \"гарна\", and \"смачне\" (fast, nice, tasty) become \"швидко\", \"гарно\", and \"смачно\" (quickly, nicely, tastily), while in Russian, \"быстрый\", \"хороший\" and \"прекрасный\" (quick, good, wonderful) become \"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully).",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-0-en",
+            "sourceId": "src-wikipedia-adverb-1374548415",
+            "sourceRevision": "1374548415",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+            "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+            "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+            "contentHash": "a093d3f5ecffec653f683e9abf3879067ff9ddd28a14f24949c975864ca83322",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "quickly",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ''полвосьмого'' (\"half of eight\"), ''без четверти восемь'' (\"eight without a quarter\") meaning 7:15, 7:30, 7:45 respectively",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-clock-answers-0-en",
+            "sourceId": "src-wikipedia-date-time-country-1366690592",
+            "sourceRevision": "1366690592",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+            "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+            "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+            "contentHash": "d628b0aac4e55a0c56ef4335434894ef39b47298bd28266f63daac1eea1d2b30",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "7:15",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "usually present, while perfective ones can only be past (since they denote action performed by the subject, the tense corresponds to the time of action denoted by the verb). Adverbial participles are usually active, but passive constructions may be formed using adverbial participle forms of the verb [[wikt:быть|быть]] (present ''будучи'' \"being\", very rarely past ''бывши'' \"having been\"); these may be combined with either an adjectival participle in the [[instrumental case]] (Будучи [[wikt:ранить|раненным]], боец оставался в строю – Being wounded, the combatant remained in the row), or a short adjective in the nominative (Бывши один раз наказан, он больше так не делал – Having been punished once, he didn't do it any more).\n\nPresent adverbial participles are formed by adding the suffix -а/-я (or sometimes -учи/-ючи, which is usually deprecated) to the stem of the present tense. A few past adverbial participles (mainly of intransitive verbs of motion) are formed in the same way, but most are formed with the suffix -в (alternative form -вши, always used before -сь), some whose stem ends with a consonant, with -ши. For reflexive verbs, the suffix -сь remains at the very end of the word; in poetry it can take the form -ся.<ref>{{Cite book|pages=162, 164|title=Russian: A Linguistic Introduction|publisher=Cambridge University Press|author=Paul Cubberley|url={{google book|plainurl=y|id=yOGzAyN3V88C|page=10}}|isbn=0-521-79641-5|year=2002}}</ref><ref>{{Cite book|pages=180|title=Современный русский язык. Морфология|url={{google books |plainurl=y |id=GA8CMwEACAAJ}}|publisher=Издательство МГУ|author=А. А. Камынина|year=1999|isbn=5-211-04133-X}}</ref>\n\nIn standard Russian, adverbial participles are considered a feature of bookish speech; in colloquial language they are usually replaced with single adjectival participles or constructions with verbs: Пообедав, я пошёл гулять (\"Having eaten, I went for a walk\") → Я пообедал и пошёл гулять (\"I ate and went for a walk\"). But in some conservative dialects, adverbial and adjectival participles may be used to produce [[Perfect (grammar)|perfect]] forms, which do not occur in standard Russian; e.g. \"I haven't eaten today\" will be \"Я сегодня не евши\" instead of \"Я сегодня не ел\".\n\n{| class=\"wikitable\"\n|+ Adverbial participles\n|-\n! infinitive\n! present tense\n! present adverbial participle\n! past adverbial participle\n|-\n| [[wikt:думать|думать]] ''(to think, {{abbr|impf.|imperfective}})''\n| думаю\n| думая\n| (думав)<ref group=\"tavp\" name=pi />\n|-\n| [[wikt:сказать|сказать]] ''(to say, {{abbr|pf.|perfective}})''\n| colspan=\"2\" | —\n| сказав (сказавши)\n|-\n| [[wikt:учиться|учиться]] ''(to be learning, {{abbr|impf.|imperfective}})''\n| учусь\n| учась\n| (учившись)<ref group=\"tavp\" name=pi>Rare but existing forms; they appear e.g. in negative sentences: ''как Он знает Писания, не учившись?'' ([[s:ru:От Иоанна святое благовествование#7:15|John 7:15]]).</ref>\n|-\n| [[wikt:научиться|научиться]] ''(to learn, {{abbr|pf.|perfective}})''\n| colspan=\"2\" rowspan=\"3\" | —\n| научившись\n|-\n| [[wikt:войти|войти]] ''(to enter, {{abbr|pf.|perfective}})''\n| войдя (вошед",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u28-perfective-adverb-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:usually present, while perfective ones can only be past (since they denote actio",
+            "sourceHash": "831e0bb025f3bd4e591be111760c5fc3eaa5d138ff761fa2f21688304bf2b102",
+            "contentHash": "c9a7be52347ce5c140f63fdd71beb1fee31f3fd7111018bcb3eaeacb68af12ff",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "can only be past",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Двадцать восьмое августа",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-calendar-date-0-ru",
+            "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+            "sourceRevision": "1357134172",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_notation_in_Russia&oldid=1357134172",
+            "sourceRecordId": "date-russia:In [[Russia]], dates are usually written in \"day month year\" (DMY) order. This o",
+            "sourceHash": "2546376f82b663b36bb51a94f5f9d5e6d3c0e4fc1e2660f661cdd91316b20f5c",
+            "contentHash": "c9d057cb16a10014a37c04bed6d2c3911163588ff8282be59e749b220f051c02",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Двадцать восьмое августа",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "без четверти восемь",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-clock-answers-2-ru",
+            "sourceId": "src-wikipedia-date-time-country-1366690592",
+            "sourceRevision": "1366690592",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+            "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+            "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+            "contentHash": "f5ad95bcfbb06926a6f5bf73a8a6f9c57519dad44c4a14dfdbe58b3160b682e8",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "без четверти восемь",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "быстро",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-0-ru",
+            "sourceId": "src-wikipedia-adverb-1374548415",
+            "sourceRevision": "1374548415",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+            "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+            "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+            "contentHash": "dcd85bada23a9985ee329ea7689e26b9a3fec1b3aa65511338f52ac8fb079aa0",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "быстро",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "полвосьмого",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-clock-answers-1-ru",
+            "sourceId": "src-wikipedia-date-time-country-1366690592",
+            "sourceRevision": "1366690592",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+            "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+            "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+            "contentHash": "72c55aa4fa5adff398ee6d5931908a169eb9997da036f46f94bad27e840c2dd0",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "полвосьмого",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "прекрасно",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-2-ru",
+            "sourceId": "src-wikipedia-adverb-1374548415",
+            "sourceRevision": "1374548415",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+            "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+            "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+            "contentHash": "1e1cf15b46eef345a1747e85b648b807889f6ee0617a89222f08d50c34a648b6",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "прекрасно",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "хорошо",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u7-adverb-1-ru",
+            "sourceId": "src-wikipedia-adverb-1374548415",
+            "sourceRevision": "1374548415",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Adverb&oldid=1374548415",
+            "sourceRecordId": "adverb-formation:most adverbs are formed by removing the adjectival suffixes \"-ий\" \"-а\" or \"-е\" f",
+            "sourceHash": "6bdba9b885bc86fcc75f8d9f7b03c328bfda307fbac362d75a01edb5939ed148",
+            "contentHash": "a5f34365dc313fc483f7326ceae266d139496bcb16b7c36b292f004cbf30b043",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "хорошо",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "четверть восьмого",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-clock-answers-0-ru",
+            "sourceId": "src-wikipedia-date-time-country-1366690592",
+            "sourceRevision": "1366690592",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Date_and_time_representation_by_country&oldid=1366690592",
+            "sourceRecordId": "clock-country:uses the same convention: ''четверть восьмого'' (\"quarter of the eighth hour\"), ",
+            "sourceHash": "99546b90eb81c7b83660b1a00d0de9db68294fb6a199fee28e7d7684aa4c7c4e",
+            "contentHash": "d85db7f9d2e862b9122ef30d500fa3e0b27472f7b4076586967875282a6b56d5",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "четверть восьмого",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/RemainingSources.kt",
+      "sha256": "6798d1e185046c53369264805e74eb27fff0a210005d17a792f4db9f088638fc",
+      "purpose": "Exact existing escaped source comparison implementation; no directory exemption or source acceptance",
+      "bindings": [
+        {
+          "kind": "CATALOG_FRAGMENT",
+          "value": "==Nouns==\n\n[[headword|Headwords]] for Russian entries should be in the nominative singular (or nominative plural if there is no nominative singular, e.g. {{m|ru|пери́ла}}).&nbsp; It is not necessary to list declined forms or plural forms of the word because every entry includes a declension table, or [[paradigm]].\n\n===Declensions===\nRussian nouns are declined (there are the occasional exceptions, e.g. {{lang|ru|[[Колорадо]]}}) for six cases ([[nominative]], [[genitive]], [[dative]], [[accusative]], [[instrumental]], and [[prepositional]]) and two numbers ([[singular]] and [[plural]]).&nbsp; The nominative singular of a noun is its \"basic\" form, on whose page we include the definitions and all further information.&nbsp; It would be ideal to provide a complete declension table for each noun, including those which do not decline for all cases.&nbsp; If the word is not used in either the singular or the plural, this should be noted, and the declension table should only include the number the word declines for.\n\nSee [[Wiktionary:Russian inflection templates]] for instructions on how to use the appropriate templates.\n\n==Verbs==\n\n* Conjugations\n* Conjugation tables",
+          "mode": "RAW",
+          "purpose": "RETAINED_SOURCE_COMPARISON_NOT_CAPABILITY_ADMISSION",
+          "catalogPath": "catalog/sources/units-26-30/wiktionary/russian-entry-guidelines-92541199.txt",
+          "catalogSha256": "c097b23e9853d742292c4655926939cbe4e8eaa7e6044a615cd614ba649950d0"
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "==Russian==\n\n===Pronunciation===\n* {{ru-IPA|оставля́емый}}\n\n===Participle===\n{{head|ru|present passive participle|head=оставля́емый}}\n\n# {{participle of|ru|оставля́ть||pres|pass|impfv}}\n\n====Declension====\n{{ru-decl-adj|оставля́емый|a}}",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u27-stress-ref-0-en",
+            "sourceId": "src-enwiktionary-ostavlyaemyj-74231596",
+            "sourceRevision": "74231596",
+            "sourceUrl": "https://en.wiktionary.org/w/index.php?title=оставляемый&oldid=74231596",
+            "sourceRecordId": "ostavlyaemyj:==Russian==\n\n===Pronunciation===\n* {{ru-IPA|оставля́емый}}\n\n===Participle===\n{{h",
+            "sourceHash": "c9907f343beac3f5aba33fe52a6f534496b5e1adc965f71c565926a79bc94c32",
+            "contentHash": "11a7ea19331555e0290ed12a65b03d7fff4be05c867a92592ab0e941683fe596",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "present passive participle",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Note that the modifier не negates the word which comes right after it. If you were to move it in front of a different word, you would produce a different meaning. For example:</p>\n<div class=\"restrain\"><table class=\"Examples2\">\n<col class=\"Examples2_A\">\n<col class=\"Examples2_B\">\n<tbody>\n<tr>\n<td><p class=\"P13\" lang=\"ru\">Мне не холодно.</p></td>\n<td><p class=\"P11\">To me it is not cold. (I am not cold.)</p></td>\n</tr>\n<tr>\n<td><p class=\"P13\" lang=\"ru\">Не мне холодно.</p></td>\n<td><p class=\"P11\">It is not to me that it is cold. (I am not the one who thinks it is cold.)",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u24-placement-0-en",
+            "sourceId": "src-readyrussian-langgen3",
+            "sourceRevision": "27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c",
+            "sourceUrl": "https://www.readyrussian.org/Handouts/Language%20Generator%203--%D0%9A%D0%BE%D0%BC%D1%83%20%D0%BA%D0%B0%D0%BA.html",
+            "sourceRecordId": "langgen3:Note that the modifier не negates the word which comes right after it. If you we",
+            "sourceHash": "2a8902daceb30f31e5836a4a7996a5b4743b43717fea5377c95774423bc8e66a",
+            "contentHash": "4608f2020c5e9d738e7f32b9eda71f4bb1acdb686bb7f4daa6150af2a976d45b",
+            "transformation": "readyrussian markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "To me it is not cold.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "They have the same basic elements:</p>\n<ol class=\"L1\">\n<li class=\"P14\" lang=\"en\">Sender’s address <span class=\"T12\">and date</span></li>\n<li class=\"P15\" lang=\"en\">Greeting</li>\n<li class=\"P15\" lang=\"en\">Body</li>\n<li class=\"P15\" lang=\"en\">Closing and signature</li>\n</ol>\n<p class=\"P11\" lang=\"en\">But there are two important differences:</p>\n<ol class=\"L2\">\n<li class=\"P16\" lang=\"en\">Strangers and people who are not closed friends should never be addressed as “dear”.</li>\n<li class=\"P16\" lang=\"en\">In English we begin with a topic sentence and then follow with supporting facts. In Russian the facts come first with the topic sentence as the conclusion.</li>\n</ol>\n<h2 class=\"Heading_20_2\" lang=\"en\">Greeting</h2>\n<p class=\"RuDefinition\" lang=\"en\"><span class=\"T8\" lang=\"ru\">Здр</span><span class=\"T9\" lang=\"ru\">а</span><span class=\"T8\" lang=\"ru\">вствуйте!</span>—Greetings</p>\n<p class=\"RuDefinition\" lang=\"en\"><span class=\"T10\" lang=\"ru\">Уважаемый</span><span class=\"T8\" lang=\"ru\"> Иван Иван</span><span class=\"T10\" lang=\"ru\">ов</span><span class=\"T8\" lang=\"ru\">ич</span>—Respected Ivan Ivanovich",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u26-letter-writing-0-en",
+            "sourceId": "src-readyrussian-letter",
+            "sourceRevision": "aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218",
+            "sourceUrl": "https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html",
+            "sourceRecordId": "letter:They have the same basic elements:</p>\n<ol class=\"L1\">\n<li class=\"P14\" lang=\"en\"",
+            "sourceHash": "f6ba97d4c567d78420c3a01ee846558ea09c75a3f5729867a750abbaea36b4e2",
+            "contentHash": "9eabb1416f00748823432e5316426992b80c61162e30a1b44c8e01247054c90c",
+            "transformation": "readyrussian markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Greetings",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "We can read off the numbers shown on the dial. When we do so we are stating the number of whole hours and minutes which have passed since noon or midnight. This option is always available.\nIn Russian we can state the number of minutes into the hour which is in progress. This makes sense up to the half hour.\nWe can say how many minutes remain until the little hand passes the next number on the dial. This is used after the half hour.\nWe can speak of quarters and halves of an hour rather than of minutes.\nIf the precise time is not important, then in Russian we can say things like “at the beginning of the hour” to indicate a time close to the start of the our or “at the end of the hour” for a time near its end.\n\nThe concept of the hour in progress will be unfamiliar to most English speakers. It is important to understand that “the first hour” does not mean one o'clock. It means the sixty-minute period which starts at 12 o'clock and ends at one o'clock. In the examples below the hour in progress is represented by a shaded pie slice.\n\nThe first hour began at 12 o'clock. To say that something happens at the time shown at left:\nв двенадцать часов десять минут—at twelve hours ten minutes\nв десять минут первого—at ten minutes of the first\nв начале первого часа—at the beginning of the first hour\n\nAs the little hand passes the 1 the first hour ends and the second begins. To specify this time use any of these expressions:\nв час пятнадцать минут—at [one] hour fifteen minutes\nв пятнадцать минут второго—at the fifteenth minute of the second [hour]\n\nв час двадцать пять минут—at [one] hour twenty five minutes\nв двадцать пять минут второго—at twenty five minutes of the second [hour]\n\nOnce the hour is half-way done we may choose to say how soon the little hand will pass the next number. To specify the time shown at left:\nв час тридцать пять минут—at [one] hour thirty five minutes\nбез двадцати пяти два—lacking twenty five minutes to the two",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u17-clock-productive-0-en",
+            "sourceId": "src-readyrussian-grammar20",
+            "sourceRevision": "b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff",
+            "sourceUrl": "https://www.readyrussian.org/Handouts/Grammar%2020--Telling%20Time.html",
+            "sourceRecordId": "grammar20:We can read off the numbers shown on the dial. When we do so we are stating the ",
+            "sourceHash": "f06450d5f217749c933ca607bcf081daf4fd46993ea87f2e4da1c61158611795",
+            "contentHash": "ece657b04ff9c5c2e291d029ad9dc648142f300a4890acb810ab16e19b75a964",
+            "transformation": "readyrussian text extraction",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "at the fifteenth minute of the second [hour]",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала же́нщина. Она́ пла́кала и говори́ла, что в до́ме оста́лась двухле́тняя де́вочка. Пожа́рные посла́ли Бо́ба. Боб побежа́л по ле́стнице и скры́лся в ды́ме. Че́рез пять мину́т он вы́бежал из до́ма и в зуба́х за рубашо́нку нёс де́вочку. Мать бро́силась к до́чери и пла́кала от ра́дости, что дочь была́ жива́. Пожа́рные ласка́ли соба́ку и осма́тривали её - не обгоре́ла ли она́; но Боб рвался опять в дом. Пожа́рные поду́мали, что в до́ме есть ещё что-нибу́дь живо́е, и пусти́ли его́. Соба́ка побежа́ла в дом и ско́ро вы́бежала с чем-то в зуба́х. Когда́ наро́д рассмотре́л то, что она́ несла́, то все расхохота́лись: она́ несла́ большу́ю ку́клу.",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u30-capstone-0-en",
+            "sourceId": "src-readyrussian-reading5",
+            "sourceRevision": "6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d",
+            "sourceUrl": "https://www.readyrussian.org/Handouts/Reading%205--%D0%9F%D0%BE%D0%B6%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B8.html",
+            "sourceRecordId": "reading5:Оди́н раз загоре́лся до́м. И когда́ пожа́рные прие́хали к до́му, к ним вы́бежала",
+            "sourceHash": "01771aba0e8353e8fa771ecba0d074223056fa7710bfd15b8805ccad357079d8",
+            "contentHash": "c1e80436892f8b5545885ef07ea42e61c5a7a47d4163116a5bbbc17aa1dbbc36",
+            "transformation": "readyrussian text extraction",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "двухле́тняя де́вочка",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "к настоящему письму прилагается</span>—enclosed please find</p>\n<h2 class=\"Heading_20_2\" lang=\"en\">Closing</h2>\n<p class=\"RuDefinition\" lang=\"en\"><span class=\"T8\" lang=\"ru\">С уважением</span>—Respectfully",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u26-correspondence-0-en",
+            "sourceId": "src-readyrussian-letter",
+            "sourceRevision": "aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218",
+            "sourceUrl": "https://www.readyrussian.org/Handouts/Phrasebook%2012--Letter%20Writing.html",
+            "sourceRecordId": "letter:к настоящему письму прилагается</span>—enclosed please find</p>\n<h2 class=\"Headi",
+            "sourceHash": "185bf403015f238efbb7ddd901f75f59b00d2e0dc23c395a8299d2a5ff6a3760",
+            "contentHash": "e38d302af85ad0fd7e79285487fe4f5688a57e2c1f3e0f006ee7f06121bd1819",
+            "transformation": "readyrussian markup selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "enclosed please find",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "устав писать ложился на диван и отдыхал читая, потом опять садился писать, и урывками между этих занятий услышал утром голос старушки, хозяйки домика: «самовар принесла, Павел Сергеевич», сказал ей «благодарю, Анна Даниловна», выпил два стакана чаю с молоком, съел с чаем ломоть белого хлеба; опять услышал голос хозяйки: «принесла завтрак, Павел Сергеевич», опять поблагодарил ее, выпил стакан молока с черным хлебом, составлявший его завтрак, опять услышал голос хозяйки: «принесла обед, Павел Сергеич», опять поблагодарил ее, съел тарелку грешневой кашицы, составлявшую его ежедневный обед; опять услышал — это было, наверное часов в 6, по аккуратно соблюдаемому старушкой порядку, — голос ее «принесла самовар, Павел Сергеич!», опять сказал «благодарю вас, Анна Даниловна», — но тут произошло отступление от ежедневного порядка: встав положить чаю в чайник, и налить кипятком, Павел Сергеич увидел, что старушка не ушла, стоит, сложа руки",
+          "field": "originalSourceText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u28-readings-0-en",
+            "sourceId": "src-ruwikisource-vechera-5336197",
+            "sourceRevision": "5336197",
+            "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+            "sourceRecordId": "vechera:устав писать ложился на диван и отдыхал читая, потом опять садился писать, и уры",
+            "sourceHash": "b32e8b54142118e2c3b0c06955b9c84ced8c8abe48cfc73facba4ff8eda261c3",
+            "contentHash": "b85bba867eb28d312cb133e87aea9b09a87f5ce1b2bb935c255dabd96aef0cbe",
+            "transformation": "selection",
+            "licenseId": "Public domain",
+            "shippedText": "ложился на диван",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
     }
   ]
 }

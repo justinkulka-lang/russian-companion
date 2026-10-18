@@ -1,0 +1,10 @@
+{
+  "CONTEXT.json": "94ec0037da1b707cf11a8c43135db603d5ee7f811312d8b0eef68d018e3a5e25",
+  "EVENTS.jsonl": "3139575eaf6a7f697830899da4232c17c4cb8e93f34e6499cc2181b23bebfdca",
+  "LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+  "MANIFEST.json": "788f1e799adb8d5297d70bfe5b6495a809fddb12161706c16b52a77514ea1286",
+  "RUN.exit": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+  "RUN.log": "177e117133fe7ff41073ad15c57261face6bd4360ff1d48abce77d406beb3645",
+  "XML/TEST-dev.russiancompanion.acceptance.AcceptanceBoundaryTest.xml": "d7c4d5fe26a2988b1ab8e6e2c3227eb8b94033159c231e304041edbb00054752",
+  "XML/TEST-dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest.xml": "31fa2da4e74a45b0e86c87abe180041f59bf8469f7762b4c96db94cbfdeeb4b9"
+}

@@ -10,9 +10,9 @@ class ReviewedCurriculumSourceGuardTest {
     @Test fun exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus() {
         val pack = ReviewedCurriculumSourceGuard.pack()
         val entries = ReviewedCurriculumSourceGuard.entries
-        assertEquals(15, entries.size)
+        assertEquals(19, entries.size)
         val bindings = entries.flatMap { it["bindings"]!!.jsonArray }.map { it.jsonObject }
-        assertEquals(131, bindings.size)
+        assertEquals(288, bindings.size)
         assertEquals(22, bindings.count { it.text("kind") == "ITEM_ID" })
         assertEquals(2, bindings.count { it.text("purpose") == "EXISTING_RESEARCH_CUE_COMPARISON_PENDING_SOURCE_REVIEW" })
         assertEquals(emptyList<String>(), ReviewedCurriculumSourceGuard.offenders(ReviewedCurriculumSourceGuard.sources(), pack))
@@ -59,5 +59,17 @@ class ReviewedCurriculumSourceGuardTest {
         val itemId = policy["bindings"]!!.jsonArray.first().jsonObject.text("value")
         assertTrue(policy.text("path") in ReviewedCurriculumSourceGuard.offenders(sources,
             pack.copy(items = pack.items.filter { it.id != itemId })))
+        val catalog = ReviewedCurriculumSourceGuard.entries.flatMap { it["bindings"]!!.jsonArray }
+            .map { it.jsonObject }.first { it.text("kind") == "CATALOG_FRAGMENT" }.text("catalogPath")
+        val affected = ReviewedCurriculumSourceGuard.entries.filter { row -> row["bindings"]!!.jsonArray.any {
+            it.jsonObject["catalogPath"]?.jsonPrimitive?.content == catalog
+        } }.map { it.text("path") }.sorted()
+        assertTrue(affected.isNotEmpty())
+        assertEquals(affected, ReviewedCurriculumSourceGuard.offenders(sources, pack) { path ->
+            java.io.File(ReviewedCurriculumSourceGuard.root(), path).readText() + if (path == catalog) "!" else ""
+        })
+        assertEquals(affected, ReviewedCurriculumSourceGuard.offenders(sources, pack) { path ->
+            if (path == catalog) null else java.io.File(ReviewedCurriculumSourceGuard.root(), path).readText()
+        })
     }
 }
