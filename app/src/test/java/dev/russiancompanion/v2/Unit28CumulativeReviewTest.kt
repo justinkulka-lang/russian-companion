@@ -265,11 +265,16 @@ class Unit28CumulativeReviewTest {
     }
 
     private fun ready(p: V2CurriculumPack): LocalStore {
-        check(p === sharedPack)
-        val document = cachedReadyDocument ?: isolatedStore("seed").use { seed ->
+        // Cache only the shared current source; historical packs need their own genuine fixture.
+        val document = if (p === sharedPack) {
+            cachedReadyDocument ?: isolatedStore("seed").use { seed ->
+                prepare(p, seed)
+                seed.governedLearnerDocument()
+            }.also { cachedReadyDocument = it }
+        } else isolatedStore("historical-seed").use { seed ->
             prepare(p, seed)
             seed.governedLearnerDocument()
-        }.also { cachedReadyDocument = it }
+        }
         return isolatedStore("target").also { store ->
             assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(document, emptyList()))
             assertEquals((1..27).toSet(), currentCompletedUnitNumbers(p, store.v2LearnerView()))
