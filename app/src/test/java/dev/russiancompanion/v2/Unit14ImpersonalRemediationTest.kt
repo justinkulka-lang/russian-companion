@@ -131,7 +131,8 @@ class Unit14ImpersonalRemediationTest {
     }
     companion object {
         private fun root() = File(if (File("app").isDirectory) "." else "..")
-        private val current by lazy { V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
+        // Historical whole-pack correction contract; separate current-target proof is explicit.
+        private val current by lazy { HistoricalTeachingFixtureScopeTest.correctionEraPack() }
         private val previous by lazy {
             val command = ProcessBuilder("git", "show", "2546331775c783813bd2c4785a5e08e6dfe42ed0:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
             V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }

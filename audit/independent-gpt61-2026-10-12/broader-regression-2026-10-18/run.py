@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
 MODE = sys.argv[1]
-assert MODE in ("DISCOVERY", "INITIAL", "RETRY")
+assert MODE in ("DISCOVERY", "INITIAL", "RETRY", "FOCUSED_HISTORY")
 OUT = HERE / MODE
 OUT.mkdir(exist_ok=False)
 
@@ -29,10 +29,18 @@ trees = {p: git("rev-parse", "HEAD:" + p) for p in
 assert not git("diff", "HEAD", "--", *trees), "Commit input changes before executing"
 args = ["-I", "/workspace/setup/cloud-validation.gradle", "-I",
         "/workspace/setup/parallel-tests.gradle"]
-if MODE == "RETRY":
+if MODE in ("RETRY", "FOCUSED_HISTORY"):
     args += ["-I", str(HERE / "broader-tests.gradle"),
              "-Daudit.events.path=" + str(OUT / "EVENTS.jsonl")]
 args += ["testDebugUnitTest", "--rerun"]
+selectors = []
+if MODE == "FOCUSED_HISTORY":
+    selectors = ["*Unit14ImpersonalRemediationTest", "*Unit15ImperativeRemediationTest",
+                 "*HistoricalTeachingFixtureScopeTest",
+                 "*Unit14CumulativeReviewTest.ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+                 "*Unit15CumulativeReviewTest.ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup"]
+    for selector in selectors:
+        args += ["--tests", selector]
 if MODE == "DISCOVERY":
     args += ["--test-dry-run"]
 else:
@@ -46,13 +54,14 @@ context = {
     "command": ["./gradlew", *args],
     "activation": "source /workspace/setup/android-env.sh",
     "runnerSha256": digest(Path(__file__)),
-    "workerPolicy": "4 forks / 3GiB heaps / recycle after8classes" if MODE == "RETRY"
+    "workerPolicy": "4 forks / 3GiB heaps / recycle after8classes" if MODE in ("RETRY", "FOCUSED_HISTORY")
                     else "4 forks / 1GiB heaps / unbounded worker lifetime",
     "initScripts": {p: digest(Path(p)) for p in args if p.endswith(".gradle")},
-    "selectors": [], "failFast": False,
+    "selectors": selectors, "failFast": False,
     "exclusions": {"VisualReviewCaptureTest": 2, "Units35ChunkCaptureTest": 2,
                    "Units610ChunkCaptureTest": 10, "Units1115GapCaptureTest": 2},
-    "scope": "debug host unit-test task, all discovered methods except four screenshot exporters; no instrumented/device/exporter execution",
+    "scope": "debug host unit-test task, five explicit historical/current-target selectors" if selectors else
+             "debug host unit-test task, all discovered methods except four screenshot exporters; no instrumented/device/exporter execution",
 }
 save("CONTEXT.json", context)
 with (OUT / "RUN.log").open("w") as log:
@@ -107,8 +116,10 @@ if MODE != "DISCOVERY":
     a = {(t["class"], t["name"]) for t in discovery["tests"]}
     b = {(t["class"], t["name"]) for t in tests}
     manifest["discoveryComparison"] = {"sameInputTrees": discovery["sourceContext"]["inputTrees"] == trees,
+        "sameSelection": not selectors,
+        "baselineDiscoveryOnlyWhenInputsOrSelectionDiffer": True,
         "discoveredNotReported": sorted(a - b), "reportedNotDiscovered": sorted(b - a)}
-if MODE == "RETRY":
+if MODE in ("RETRY", "FOCUSED_HISTORY"):
     events = [json.loads(line) for line in (OUT / "EVENTS.jsonl").read_text().splitlines()]
     results = [e for e in events if e["kind"] == "RESULT"]
     event_names = [(e["className"], e["name"]) for e in results]
