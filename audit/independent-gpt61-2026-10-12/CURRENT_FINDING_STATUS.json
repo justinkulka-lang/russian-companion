@@ -1388,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestCurrentSourceDonorCheckpoint",
-    "priorCheckpoint": "latestOptionalSourceReviewCheckpoint",
-    "next": "Next inspect the five remaining ContentAuditCorrectionTest cases against the actual correction histories: Unit6/7 case-transfer donors, Unit28 teaching order and full remediation restoration, and current false-key constructs. Also retain the separate AUD-44 later-unit digest, RequiredPathProgress and PracticeRetrievalDigest failures. Do not blindly bump snapshots/counts, restore obsolete repeated checks, archive current failures or forge review/completion. Inspect whole methods and source context before changing fixture scope.",
+    "checkpoint": "latestUnit28TeachingOrderCheckpoint",
+    "priorCheckpoint": "latestCurrentSourceDonorCheckpoint",
+    "next": "Next inspect ContentAuditCorrectionTest auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement, packValidatesAndRejectsTheAuditedFalseKeys and wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation. Original Unit6/7 labels now address different current case-transfer constructs; retain their exact historical negative evidence while separately testing actual current donors. Remediation now restores complete teaching for several targets,so verify full bodies/examples against the correction history rather than the old single-card equality. AUD-44 later-unit digests,RequiredPathProgress and PracticeRetrievalDigest remain separate OPEN cases. Do not blindly archive current failures,bump digests/counts or forge review/completion.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1955,5 +1955,28 @@
     "originalUnit7RestoreCause": "UNCONFIRMED",
     "githubConnection": "RECOVERED",
     "next": "Next inspect the five remaining ContentAuditCorrectionTest cases against the actual correction histories: Unit6/7 case-transfer donors, Unit28 teaching order and full remediation restoration, and current false-key constructs. Also retain the separate AUD-44 later-unit digest, RequiredPathProgress and PracticeRetrievalDigest failures. Do not blindly bump snapshots/counts, restore obsolete repeated checks, archive current failures or forge review/completion. Inspect whole methods and source context before changing fixture scope."
+  },
+  "latestUnit28TeachingOrderCheckpoint": {
+    "path": "audit/independent-gpt61-2026-10-12/unit28-teaching-order-scope",
+    "sourceCommit": "a73c3ad66f1f3676bfe825d53f531dfbf0f770f8",
+    "manifest": "unit28-teaching-order-scope/INITIAL/MANIFEST.json",
+    "testCounts": {
+      "reported": 9,
+      "passed": 9,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 2,
+    "retainedInitialFailures": 32,
+    "engineeringScopeReconciled": 26,
+    "openInitialFailures": 6,
+    "currentLiteralAnnotations": 1241,
+    "newFullDiscoveryOrBroadCompletion": false,
+    "formalAcceptance": false,
+    "auditReady": false,
+    "originalUnit7RestoreCause": "UNCONFIRMED",
+    "githubConnection": "RECOVERED",
+    "next": "Next inspect ContentAuditCorrectionTest auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement, packValidatesAndRejectsTheAuditedFalseKeys and wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation. Original Unit6/7 labels now address different current case-transfer constructs; retain their exact historical negative evidence while separately testing actual current donors. Remediation now restores complete teaching for several targets,so verify full bodies/examples against the correction history rather than the old single-card equality. AUD-44 later-unit digests,RequiredPathProgress and PracticeRetrievalDigest remain separate OPEN cases. Do not blindly archive current failures,bump digests/counts or forge review/completion."
   }
 }

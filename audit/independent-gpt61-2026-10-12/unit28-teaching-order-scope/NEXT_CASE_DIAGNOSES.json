@@ -1,0 +1,60 @@
+{
+  "sourceCommit": "a73c3ad66f1f3676bfe825d53f531dfbf0f770f8",
+  "status": "STATIC_DIAGNOSIS_ONLY_NOT_EXECUTED_OR_RECONCILED",
+  "remainingContentCases": "Original two case/false-key tests refer to old lexical keys. Current IDs now assess supplied complete sentence contexts; do not replace expected strings without comparing original correction ledger, current pins and semantic/source boundaries.",
+  "currentItemTuples": [
+    {
+      "id": "u6-i-animacy-3",
+      "objectiveId": "obj-u6-animacy",
+      "prompt": "Which English classification explains the masculine inanimate direct object in the supplied chair clause?",
+      "promptLetter": "\u042f \u0434\u0435\u0301\u043b\u0430\u043b \u0441\u0442\u0443\u043b.",
+      "answer": "The masculine inanimate direct object keeps the nominative form.",
+      "feedback": "In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim."
+    },
+    {
+      "id": "u7-i-objectadj-3",
+      "objectiveId": "obj-u7-objectadj",
+      "prompt": "Which feminine singular accusative adjective form corresponds to the shown feminine nominative?",
+      "promptLetter": "\u043d\u043e\u0301\u0432\u0430\u044f",
+      "answer": "\u043d\u043e\u0301\u0432\u0443\u044e",
+      "feedback": "\u043d\u043e\u0301\u0432\u0430\u044f is the feminine singular nominative form; \u043d\u043e\u0301\u0432\u0443\u044e is the feminine singular accusative form of the same adjective. Keep feminine singular agreement; the masculine dictionary form changes gender and does not answer this question."
+    },
+    {
+      "id": "u7-g-objectadj-0",
+      "objectiveId": "obj-u7-objectadj",
+      "prompt": "Which accusative singular adjective form agrees with a masculine animate noun?",
+      "promptLetter": "\u043d\u043e\u0301\u0432\u044b\u0439",
+      "answer": "\u043d\u043e\u0301\u0432\u043e\u0433\u043e",
+      "feedback": "For a masculine animate object, \u043d\u043e\u0301\u0432\u043e\u0433\u043e is the accusative singular form of \u043d\u043e\u0301\u0432\u044b\u0439. It has the same form as the masculine singular genitive. Feminine agreement uses a different ending."
+    },
+    {
+      "id": "u24-i-stand-ins-2",
+      "objectiveId": "obj-u24-stand-ins",
+      "prompt": "Choose the English description. Which reading expresses absence of a person available for the action?",
+      "promptLetter": "\u043d\u0435\u0301\u043a\u043e\u0433\u043e \u0441\u043f\u0440\u043e\u0441\u0438\u0442\u044c",
+      "answer": "there is nobody to ask",
+      "feedback": "\u043d\u0435\u0301\u043a\u043e\u0433\u043e \u0441\u043f\u0440\u043e\u0441\u0438\u0442\u044c means there is nobody to ask. \u043d\u0435\u0301\u043a\u043e\u0433\u043e expresses absence of a person available for the infinitive action.\n\u043d\u0435\u0301\u043a\u043e\u0433\u043e \u0441\u043f\u0440\u043e\u0441\u0438\u0442\u044c is the reference cue; there is nobody to ask matches the requested meaning or structure. absence of a person available for the infinitive action."
+    },
+    {
+      "id": "u6-i-possessive-2",
+      "objectiveId": "obj-u6-possessive",
+      "prompt": "Which object-row phrase agrees with the shown feminine noun phrase?",
+      "promptLetter": "\u043d\u0430\u0301\u0448\u0430 \u0441\u0435\u0441\u0442\u0440\u0430\u0301",
+      "answer": "\u043d\u0430\u0301\u0448\u0443 \u0441\u0435\u0441\u0442\u0440\u0443\u0301",
+      "feedback": "\u043d\u0430\u0301\u0448\u0430 \u0441\u0435\u0441\u0442\u0440\u0430\u0301 takes the feminine object-row phrase \u043d\u0430\u0301\u0448\u0443 \u0441\u0435\u0441\u0442\u0440\u0443\u0301."
+    },
+    {
+      "id": "u20-i-motion-4",
+      "objectiveId": "obj-u20-motion",
+      "prompt": "Choose the English description. Which translation covers only the shown sentence?",
+      "promptLetter": "\u041c\u0430\u043b\u044c\u0447\u0438\u043a \u043e\u0442\u043e\u0448\u0451\u043b \u043e\u0442 \u043d\u0435\u0437\u043d\u0430\u043a\u043e\u043c\u0446\u0430",
+      "answer": "The boy stepped back from the stranger.",
+      "feedback": "\u041c\u0430\u043b\u044c\u0447\u0438\u043a \u043e\u0442\u043e\u0448\u0451\u043b \u043e\u0442 \u043d\u0435\u0437\u043d\u0430\u043a\u043e\u043c\u0446\u0430 means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause."
+    }
+  ],
+  "remediationStaticObservation": "The18 target sessions were inspected. Full joined teaching body/example equality currently holds for15 targets; feminine6,past-read11,future-imp12 retain bounded single-card restoration. Existing case distinction must be reviewed before changing it; this is not an executed test result.",
+  "requiredPathObservation": "Synthetic English pack uses Unit3 without an actual cumulative declaration. Production currentUnitRequirements adds The cumulative-review rule cannot be verified, independently of ordinary scheduling requirements. Inspect original stack/fresh run before assigning exact failure location.",
+  "practiceObservation": "Original mixed-lab test writes raw v2CompleteUnit3 after local steps/checks/book only. currentCompletedUnitNumbers and mixed-lab eligibility now require genuine current review evidence; raw row insertion is not an accepted completion. Preserve all original UI wrong-answer/no-credit/prerequisite assertions and test a genuine review/advancement history instead of forging flags. Exact failure location still requires stack/fresh runtime evidence.",
+  "runtimeDispositionChanged": false,
+  "otherOpenCase": "Aud44 later-unit identity/digest snapshot remains separate; do not bump hashes blindly."
+}

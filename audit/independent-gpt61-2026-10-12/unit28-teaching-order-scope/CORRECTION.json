@@ -46,5 +46,31 @@
   "change": "Keep original2/3 numbered teaching IDs and count; append the exact existing named context card explicitly. Helper defaults stay unchanged for all other topics. Exact pre-guided order, zero later teaching, GUIDED/REMEDIATE/CHECK, guide ID, gating and required check membership assertions remain.",
   "productionChanges": false,
   "formalAcceptance": false,
-  "runtime": "PENDING_INITIAL"
+  "runtime": {
+    "testCounts": {
+      "reported": 9,
+      "passed": 9,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 2,
+    "taskStatuses": {
+      "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+      "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+      "lintDebug": "> Task :app:lintDebug",
+      "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+    },
+    "lint": {
+      "Fatal": 0,
+      "Error": 0,
+      "Warning": 20,
+      "Information": 0,
+      "Ignore": 0
+    },
+    "eventsMatchFreshXml": true,
+    "completeSuite": false,
+    "sourceCommit": "a73c3ad66f1f3676bfe825d53f531dfbf0f770f8",
+    "manifest": "INITIAL/MANIFEST.json"
+  }
 }
