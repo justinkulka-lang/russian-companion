@@ -1819,6 +1819,13 @@
     "formalAcceptance": false,
     "auditReady": false,
     "originalUnit7RestoreCause": "UNCONFIRMED",
-    "next": "Phase2/Phase3 bounded-claim source versus assigned-review fixtures;see NEXT_REVIEW.md"
+    "next": "Phase2/Phase3 bounded-claim source versus assigned-review fixtures;see NEXT_REVIEW.md",
+    "delivery": {
+      "status": "LOCAL_ONLY_AUTHENTICATION_BLOCKED",
+      "localVerifiedCheckpoint": "d33c359f10c1ec2801efa227be29c726057688ad",
+      "record": "source-guard-scope/DELIVERY_STATUS.json",
+      "pendingPrSection": "source-guard-scope/PR_UPDATE_PENDING.md",
+      "lastConfirmedRemoteHeadIsHistorical": true
+    }
   }
 }

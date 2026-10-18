@@ -1,5 +1,8 @@
 # Continue regression reconciliation
 
+Delivery blocker: source-guard changes and verified evidence are committed locally;push failed authentication and gh API returned401. Read source-guard-scope/DELIVERY_STATUS.json and PR_UPDATE_PENDING.md. Last confirmed remote01ae46c3 is historical,not a fresh remote observation. Restore the existing GitHub connection,then push current authorized branch and update Draft PR64 using the retained section;no merge/release authorization. CHECKPOINT_INTEGRITY instruction hashes bind the verified receipt atd33c359f;subsequent delivery notes are recorded separately.
+
+
 Read AGENTS.md,latest engineering continuation/checkpoint,SOURCE_AND_SCOPE.md,CORRECTION.json,ESCAPED_LITERAL_FOLLOWUP.json,PENDING_RESEARCH_CUE_COMPARISONS.json,CURRENT_REGRESSION_RECONCILIATION.json and both manifests here. One agent,existing authorized Draft PR64 checkout.
 
 INITIAL atb80abdfe8979676286944617c1e512ede57fcbbd:7selected methods/2classes,3passed/4failed,zero errors/skips. Retain all XML/events/log/failed assertions. Added Unicode-escape protection found4 existing escaped source-comparison files beyond15 raw-character files. Retry sourcee3b9b49e3ac00d6268854210ad7c281c190d63e1:same7selected methods/2classes,7passed/0failed/errors/skips. Each compileDebugSourcesUP-TO-DATE;fresh lint0fatal/0errors/20warnings;release-gate attachmentEXECUTED/PASS. Exact fresh XML/events/selectors match. Separate input scopes,not summed. Scoped collector supports full acceptance package class names while v2 shorthand remains unchanged.

@@ -1,0 +1,14 @@
+{
+  "recordedUtc": "2026-10-18T15:42:31.303225+00:00",
+  "status": "BLOCKED_GITHUB_AUTHENTICATION",
+  "localVerifiedCheckpoint": "d33c359f10c1ec2801efa227be29c726057688ad",
+  "lastConfirmedRemoteHead": "01ae46c3682a036fe957db1b2c3e03819c17d55b",
+  "lastConfirmedRemoteHeadIsNotFreshRemoteObservation": true,
+  "push": "FAILED: could not read Username for https://github.com",
+  "pullRequestBodyUpdate": "NOT_APPLIED: gh api read returned HTTP401 Bad credentials",
+  "localWorkCommitted": true,
+  "pendingPrSection": "PR_UPDATE_PENDING.md",
+  "action": "Restore the existing repository/GitHub connection;then push authorized branch and append pending section while preserving existing PR body. No new user confirmation or token in chat required.",
+  "coreCheckpointIntegrityInstructionHashesAtCommit": "d33c359f10c1ec2801efa227be29c726057688ad",
+  "doNotInfer": "No claim that these source-guard commits reached Draft PR64. Earlier remote PR state/head observations are historical."
+}

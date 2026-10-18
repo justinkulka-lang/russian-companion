@@ -1,0 +1,14 @@
+{
+  "verifiedReceiptCommit": "d33c359f10c1ec2801efa227be29c726057688ad",
+  "receiptEvidenceVerifiedAgainstPinnedCommit": true,
+  "deliveryFilesSha256": {
+    "audit/independent-gpt61-2026-10-12/source-guard-scope/DELIVERY_STATUS.json": "44419099b7d78658f71206dc4f79f66c058560499037d8f4ac93dbdcc05cd7d6",
+    "audit/independent-gpt61-2026-10-12/source-guard-scope/PR_UPDATE_PENDING.md": "863172a95b1bdd25da12435971417262eb68e77ab047ff18370c7f0e44314a07",
+    "audit/independent-gpt61-2026-10-12/source-guard-scope/NEXT_REVIEW.md": "79eb1592473853e6a828b0d063c6501a11d91dbecf23500b5a9e95ec64fa8167",
+    "AGENTS.md": "f5c5a370310fedad19667e5246dc764d85205bc20127326f4a7e093877bc3b5c",
+    "audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md": "501caa5e78192175802a713bdf9ab3e09ac0d252c2f62e2fb635dafe03e2a544",
+    "audit/content-corrections/CODEX_CHECKPOINT_2026-10-12.md": "39c822cccb18f253685d47fc8a4f0831b207f5a06e2373f52fc3acdbec85e66f",
+    "audit/independent-gpt61-2026-10-12/CURRENT_FINDING_STATUS.json": "31bd1141611df538fd5a426d9cbd84f084422fac88d4c3177fe334eea7d1c6b7"
+  },
+  "remoteDelivery": "NOT_VERIFIED_NOT_CLAIMED"
+}
