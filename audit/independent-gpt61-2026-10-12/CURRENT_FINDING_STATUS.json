@@ -1388,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestBatchARationaleCheckpoint",
-    "priorCheckpoint": "latestBatchASourceReviewCheckpoint",
-    "next": "Review retained AcceptanceBoundary source guard without whole-curriculum exemption;preserve all22 open failures,refresh discovery/broader regression. Final independent comprehensive audit precedes actual physical acceptance.",
+    "checkpoint": "latestSourceGuardCheckpoint",
+    "priorCheckpoint": "latestBatchARationaleCheckpoint",
+    "next": "Review Phase2/Phase3 and BatchE source-versus-review fixtures;preserve all21 initial OPEN failures,initial source-guard retry failures and two existing research-cue review debts. Refresh discovery/broader regression;final independent audit before physical acceptance.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1787,5 +1787,38 @@
     "auditReady": false,
     "originalUnit7RestoreCause": "UNCONFIRMED",
     "next": "AcceptanceBoundary source guard:exact native/structural literal origin review;see NEXT_REVIEW.md and static pending inventory"
+  },
+  "latestSourceGuardCheckpoint": {
+    "path": "audit/independent-gpt61-2026-10-12/source-guard-scope",
+    "initialSourceCommit": "b80abdfe8979676286944617c1e512ede57fcbbd",
+    "initialTestCounts": {
+      "reported": 7,
+      "passed": 3,
+      "failed": 4,
+      "errors": 0,
+      "skipped": 0
+    },
+    "sourceCommit": "e3b9b49e3ac00d6268854210ad7c281c190d63e1",
+    "manifest": "source-guard-scope/RETRY/MANIFEST.json",
+    "testCounts": {
+      "reported": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 2,
+    "retainedInitialFailures": 32,
+    "engineeringScopeReconciled": 11,
+    "openInitialFailures": 21,
+    "currentLiteralAnnotations": 1239,
+    "exactComparisonFiles": 19,
+    "literalBindings": 288,
+    "existingResearchCueComparisonsPendingQualifiedReview": 2,
+    "newFullDiscoveryOrBroadCompletion": false,
+    "formalAcceptance": false,
+    "auditReady": false,
+    "originalUnit7RestoreCause": "UNCONFIRMED",
+    "next": "Phase2/Phase3 bounded-claim source versus assigned-review fixtures;see NEXT_REVIEW.md"
   }
 }

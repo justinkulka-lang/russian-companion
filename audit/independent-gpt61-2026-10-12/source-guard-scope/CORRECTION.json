@@ -19,5 +19,65 @@
   "productionChanges": false,
   "semanticAcceptance": false,
   "rightsAcceptance": false,
-  "runtime": "PENDING_INITIAL"
+  "runtime": {
+    "testCounts": {
+      "reported": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 2,
+    "taskStatuses": {
+      "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+      "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+      "lintDebug": "> Task :app:lintDebug",
+      "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+    },
+    "lint": {
+      "Fatal": 0,
+      "Error": 0,
+      "Warning": 20,
+      "Information": 0,
+      "Ignore": 0
+    },
+    "eventsMatchFreshXml": true,
+    "completeSuite": false,
+    "sourceCommit": "e3b9b49e3ac00d6268854210ad7c281c190d63e1",
+    "manifest": "RETRY/MANIFEST.json"
+  },
+  "initialRuntime": {
+    "testCounts": {
+      "reported": 7,
+      "passed": 3,
+      "failed": 4,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 2,
+    "taskStatuses": {
+      "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+      "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+      "lintDebug": "> Task :app:lintDebug",
+      "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+    },
+    "lint": {
+      "Fatal": 0,
+      "Error": 0,
+      "Warning": 20,
+      "Information": 0,
+      "Ignore": 0
+    },
+    "eventsMatchFreshXml": true,
+    "sourceCommit": "b80abdfe8979676286944617c1e512ede57fcbbd",
+    "manifest": "INITIAL/MANIFEST.json"
+  },
+  "initialFailuresRetained": true,
+  "expandedExceptionScope": {
+    "files": 19,
+    "literalBindings": 288,
+    "codeAndPathsShaPinned": true,
+    "directoryExemption": false,
+    "pendingResearchComparisons": 2
+  }
 }
