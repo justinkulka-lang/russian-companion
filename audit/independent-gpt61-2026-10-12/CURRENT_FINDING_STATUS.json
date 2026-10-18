@@ -1388,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestBroaderRegressionCheckpoint",
-    "priorCheckpoint": "latestUnit7AgreementTeachingCheckpoint",
-    "next": "Investigate current Unit4 optional-nominative-gloss remediation/practice link and remaining observed failures without weakening assertions; refresh discovery and complete broader regression. Final independent comprehensive audit before physical acceptance.",
+    "checkpoint": "latestRegressionScopeReconciliationCheckpoint",
+    "priorCheckpoint": "latestBroaderRegressionCheckpoint",
+    "next": "Review three BatchA failures against current question/motion constructs and ordinary-versus-review boundaries;preserve negatives and refresh discovery/broader regression. Final independent audit before physical acceptance.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1717,5 +1717,31 @@
     "auditReady": false,
     "nextReview": "broader-regression-2026-10-18/NEXT_REVIEW.md",
     "activeRun": false
+  },
+  "latestRegressionScopeReconciliationCheckpoint": {
+    "path": "audit/independent-gpt61-2026-10-12/capability-review-scope",
+    "optionalReferenceScope": {
+      "sourceCommit": "b8f5929e2b275152cd19cd7dc38de1ff80c03b90",
+      "manifest": "runtime-optional-gloss-scope/INITIAL/MANIFEST.json",
+      "reported": 7,
+      "passed": 7,
+      "classes": 3
+    },
+    "capabilityScope": {
+      "sourceCommit": "b2aaab0ba71356118be1150302541e53b1e2d7e9",
+      "manifest": "capability-review-scope/INITIAL/MANIFEST.json",
+      "reported": 10,
+      "passed": 10,
+      "classes": 1
+    },
+    "retainedInitialFailures": 32,
+    "engineeringScopeReconciled": 7,
+    "openInitialFailures": 25,
+    "currentLiteralAnnotations": 1234,
+    "newFullDiscoveryOrBroadCompletion": false,
+    "formalAcceptance": false,
+    "auditReady": false,
+    "originalUnit7RestoreCause": "UNCONFIRMED",
+    "next": "BatchA ordinary-review and changed question/motion item/rationale scopes;see NEXT_REVIEW.md"
   }
 }

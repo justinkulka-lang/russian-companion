@@ -22,5 +22,31 @@
   "productionChanges": false,
   "newTestAnnotations": 0,
   "formalAcceptance": false,
-  "runtime": "NOT_RUN"
+  "runtime": {
+    "sourceCommit": "b2aaab0ba71356118be1150302541e53b1e2d7e9",
+    "manifest": "INITIAL/MANIFEST.json",
+    "testCounts": {
+      "reported": 10,
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 1,
+    "taskStatuses": {
+      "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+      "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+      "lintDebug": "> Task :app:lintDebug",
+      "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+    },
+    "lint": {
+      "Fatal": 0,
+      "Error": 0,
+      "Warning": 20,
+      "Information": 0,
+      "Ignore": 0
+    },
+    "eventsMatchFreshXml": true,
+    "completeSuite": false
+  }
 }

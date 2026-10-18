@@ -1,0 +1,206 @@
+{
+  "currentLiteralAnnotations": 1234,
+  "previousLiteralAnnotations": 1233,
+  "newLiteralAnnotation": "OptionalGlossRemediationTest.optionalMeaningExplanationReturnsToItsSelectionWithoutGrantingCaseRoleCredit",
+  "inventoryNotDiscoveryOrExecution": true,
+  "baselinePR64": {
+    "commit": "420f41ff6c2a4417cd829fdee0179b6a3b797eff",
+    "sourceAnnotations": 691,
+    "currentDifference": 543,
+    "handoffExecution": "UNVERIFIED"
+  },
+  "historicalMain": {
+    "commitPrefix": "ff539220",
+    "sourceAnnotations": 579,
+    "reported": 563,
+    "passed": 562,
+    "skipped": 1,
+    "excludedExporterMethods": 16,
+    "completeScopeProven": false
+  },
+  "priorBroaderDiscoveryAndCancelledScope": "../broader-regression-2026-10-18/TEST_SCOPE_RECONCILIATION.json",
+  "newFocusedScopes": [
+    {
+      "testCounts": {
+        "reported": 7,
+        "passed": 7,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "classes": 3,
+      "sourceContext": {
+        "sourceCommit": "b8f5929e2b275152cd19cd7dc38de1ff80c03b90",
+        "startedUtc": "2026-10-18T14:10:07.032958+00:00",
+        "inputTrees": {
+          "app/src/main": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+          "app/src/test": "5cd56c1df35cb5bd977644d99c155bf2a03d0928",
+          "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+          "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+          "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+        },
+        "command": [
+          "./gradlew",
+          "-I",
+          "/workspace/setup/cloud-validation.gradle",
+          "-I",
+          "/workspace/setup/parallel-tests.gradle",
+          "-I",
+          "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+          "-I",
+          "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/runtime-optional-gloss-scope/test-candidates.gradle",
+          "-Daudit.events.path=/workspace/russian-companion/audit/independent-gpt61-2026-10-12/runtime-optional-gloss-scope/INITIAL/EVENTS.jsonl",
+          "testDebugUnitTest",
+          "--rerun",
+          "--tests",
+          "*RuntimeCorrectionTest.formerGuidedPracticeGapsNowHaveRealItems",
+          "--tests",
+          "*RuntimeCorrectionTest.remediationReachesGuidedPracticeThenReturnsToTheFailedCheck",
+          "--tests",
+          "*Unit4NominativeRoleTest.twoDistinctIndependentSubjectsAndFullTeachingAreRequired",
+          "--tests",
+          "*Unit4NominativeRoleTest.correctGlossesStayOptionalAndCannotReplaceCaseRoleChecks",
+          "--tests",
+          "*Unit4NominativeRoleTest.oldTranslationCompletionHistoryIsPreservedButStaleForTheNewConstruct",
+          "--tests",
+          "*Unit4NominativeRoleTest.wrongCaseRoleShowsTargetedFeedbackAndReturnsToEveryExample",
+          "--tests",
+          "*OptionalGlossRemediationTest.optionalMeaningExplanationReturnsToItsSelectionWithoutGrantingCaseRoleCredit",
+          "compileDebugSources",
+          "lintDebug",
+          "verifyReleaseGateAttachment",
+          "--continue",
+          "--max-workers=4",
+          "--console=plain"
+        ],
+        "activation": "source /workspace/setup/android-env.sh",
+        "runnerSha256": "11a77bd5ded2cb97d248b38c7a7e475aadf7ab79f1f8d6697ca45b2b0ed4799b",
+        "initScriptSha256": {
+          "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+          "/workspace/setup/parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3",
+          "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+          "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/runtime-optional-gloss-scope/test-candidates.gradle": "d0af81be60496884cc487c588471fb6673a3b0eb911e2ebfe8b7c5b3ac7769a3"
+        },
+        "selectors": [
+          "*RuntimeCorrectionTest.formerGuidedPracticeGapsNowHaveRealItems",
+          "*RuntimeCorrectionTest.remediationReachesGuidedPracticeThenReturnsToTheFailedCheck",
+          "*Unit4NominativeRoleTest.twoDistinctIndependentSubjectsAndFullTeachingAreRequired",
+          "*Unit4NominativeRoleTest.correctGlossesStayOptionalAndCannotReplaceCaseRoleChecks",
+          "*Unit4NominativeRoleTest.oldTranslationCompletionHistoryIsPreservedButStaleForTheNewConstruct",
+          "*Unit4NominativeRoleTest.wrongCaseRoleShowsTargetedFeedbackAndReturnsToEveryExample",
+          "*OptionalGlossRemediationTest.optionalMeaningExplanationReturnsToItsSelectionWithoutGrantingCaseRoleCredit"
+        ],
+        "candidateClasses": [
+          "RuntimeCorrectionTest",
+          "Unit4NominativeRoleTest",
+          "OptionalGlossRemediationTest"
+        ],
+        "workerPolicy": "4 forks / 3GiB / forkEvery8",
+        "excludedScreenshotExporters": {
+          "VisualReviewCaptureTest": 2,
+          "Units35ChunkCaptureTest": 2,
+          "Units610ChunkCaptureTest": 10,
+          "Units1115GapCaptureTest": 2
+        }
+      }
+    },
+    {
+      "testCounts": {
+        "reported": 10,
+        "passed": 10,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "classes": 1,
+      "sourceContext": {
+        "sourceCommit": "b2aaab0ba71356118be1150302541e53b1e2d7e9",
+        "startedUtc": "2026-10-18T14:14:23.653051+00:00",
+        "inputTrees": {
+          "app/src/main": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+          "app/src/test": "b312a58f59f5e7c96a371bd7633f1a49c2e9a9c1",
+          "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+          "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+          "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+        },
+        "command": [
+          "./gradlew",
+          "-I",
+          "/workspace/setup/cloud-validation.gradle",
+          "-I",
+          "/workspace/setup/parallel-tests.gradle",
+          "-I",
+          "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+          "-I",
+          "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/capability-review-scope/test-candidates.gradle",
+          "-Daudit.events.path=/workspace/russian-companion/audit/independent-gpt61-2026-10-12/capability-review-scope/INITIAL/EVENTS.jsonl",
+          "testDebugUnitTest",
+          "--rerun",
+          "--tests",
+          "*Aud53CorrectionTest.livePackKeepsTheCorrectedClaimsAndRejectsEmbeddedMedia",
+          "--tests",
+          "*Aud53CorrectionTest.falseSelfPairUnsupportedSwapAndCoOccurrenceFail",
+          "--tests",
+          "*Aud53CorrectionTest.embeddedMediaCannotEnterGovernedReadyRussianSpans",
+          "--tests",
+          "*Aud53CorrectionTest.semanticDuplicatesDoNotSatisfyDistinctCheckMinimums",
+          "--tests",
+          "*Aud53CorrectionTest.exactPairMemorizationCannotClearAProductiveCapability",
+          "--tests",
+          "*Aud53CorrectionTest.headwordSelectionCannotClearParticipleStress",
+          "--tests",
+          "*Aud53CorrectionTest.fieldLabelRecallCannotClearDictionaryUse",
+          "--tests",
+          "*Aud53CorrectionTest.greetingRecognitionCannotClearLetterWriting",
+          "--tests",
+          "*Aud53CorrectionTest.wrongIdentityAndWorkflowFieldsFailClosed",
+          "--tests",
+          "*Aud53CorrectionTest.governanceStaysUnapproved",
+          "compileDebugSources",
+          "lintDebug",
+          "verifyReleaseGateAttachment",
+          "--continue",
+          "--max-workers=4",
+          "--console=plain"
+        ],
+        "activation": "source /workspace/setup/android-env.sh",
+        "runnerSha256": "92a91b7dac811b53a433c30355e0d0d8db8e90739fbdb521f4eb44428a762901",
+        "initScriptSha256": {
+          "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+          "/workspace/setup/parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3",
+          "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+          "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/capability-review-scope/test-candidates.gradle": "67175ce048549c928e147559e3f37791051b5388db25a28871879470b68537fd"
+        },
+        "selectionConfig": {
+          "path": "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/capability-review-scope/selection.json",
+          "sha256": "b3e06db496609475d52bd67c53c5bca8d06c1ef7bc3c620c20b387dccc3a36c2"
+        },
+        "selectors": [
+          "*Aud53CorrectionTest.livePackKeepsTheCorrectedClaimsAndRejectsEmbeddedMedia",
+          "*Aud53CorrectionTest.falseSelfPairUnsupportedSwapAndCoOccurrenceFail",
+          "*Aud53CorrectionTest.embeddedMediaCannotEnterGovernedReadyRussianSpans",
+          "*Aud53CorrectionTest.semanticDuplicatesDoNotSatisfyDistinctCheckMinimums",
+          "*Aud53CorrectionTest.exactPairMemorizationCannotClearAProductiveCapability",
+          "*Aud53CorrectionTest.headwordSelectionCannotClearParticipleStress",
+          "*Aud53CorrectionTest.fieldLabelRecallCannotClearDictionaryUse",
+          "*Aud53CorrectionTest.greetingRecognitionCannotClearLetterWriting",
+          "*Aud53CorrectionTest.wrongIdentityAndWorkflowFieldsFailClosed",
+          "*Aud53CorrectionTest.governanceStaysUnapproved"
+        ],
+        "candidateClasses": [
+          "Aud53CorrectionTest"
+        ],
+        "workerPolicy": "4 forks / 3GiB / forkEvery8",
+        "excludedScreenshotExporters": {
+          "VisualReviewCaptureTest": 2,
+          "Units35ChunkCaptureTest": 2,
+          "Units610ChunkCaptureTest": 10,
+          "Units1115GapCaptureTest": 2
+        }
+      }
+    }
+  ],
+  "freshRevisedFullDiscoveryOrBroadRuntime": "NOT_RUN",
+  "separateScopesNotSummed": true,
+  "completeSuite": false
+}

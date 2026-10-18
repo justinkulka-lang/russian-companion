@@ -1,0 +1,40 @@
+{
+  "sourceBeforeReceipt": "b2aaab0ba71356118be1150302541e53b1e2d7e9",
+  "actualRuntimeSource": "b8f5929e2b275152cd19cd7dc38de1ff80c03b90",
+  "runtimeContext": "INITIAL/CONTEXT.json",
+  "unchangedProductionSourceFrom": "206ce009da8f3f57bd719fe2f5acfc1e71ed6df8",
+  "unchangedTrees": {
+    "app/src/main": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "actualRuntimeRunnerAndInitHashesVerifiedAgainstPinnedSource": true,
+  "evidenceSha256": {
+    "CORRECTION.json": "080d7af177753dba2bafed0a437ba1bbfbbb234a87959edd15a1a81669ff56fc",
+    "INITIAL/CONTEXT.json": "629ccf56f279b15a5ba5e263480790efcf124257f660b257f249be88d11577b6",
+    "INITIAL/EVENTS.jsonl": "c2d2c5e80d720045d137d3bb8f0af4ae170b52753c9ab2ac0d7b1945e0f823f1",
+    "INITIAL/LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "INITIAL/MANIFEST.json": "6eb202350833e7b2291f564a4aa4073855d3dd790b20bb1f529dba4795edefe6",
+    "INITIAL/RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "INITIAL/RUN.log": "ffff598b3d9a570c4338945d7f61211c817d7391cf5762f19db5a06269d86b40",
+    "INITIAL/SHA256.json": "3f08cd8f0f63f7e201652e3c210616bc72731b3dc1f88753d51685ec98ba7e62",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.OptionalGlossRemediationTest.xml": "c85b09d35a1eee7f6a48e327e5fef421ae09292db78fcdf504de1348a2f34a6c",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.RuntimeCorrectionTest.xml": "4a4178464e0a64196e649624c3425fb01a8e440d319ac362e033d95ec5f28131",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml": "0f34d0085e23818ff36bb75830472238e7b8003a955080b791ab4494248523c3",
+    "SOURCE_AND_SCOPE.md": "006c732ab15f5f87fd3b0d1a249351807c98b97cb8e48d6f34c1682f759d3382",
+    "test-candidates.gradle": "d0af81be60496884cc487c588471fb6673a3b0eb911e2ebfe8b7c5b3ac7769a3",
+    "verify.py": "92a91b7dac811b53a433c30355e0d0d8db8e90739fbdb521f4eb44428a762901"
+  },
+  "instructionSha256": {
+    "AGENTS.md": "c4fccabd90e9b5496a2e790f075f3d23c5ec4b8c0cd12ec2c496fde4c36e8955",
+    "audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md": "edfa3d9aa4e6156c169fe754336eda5deff68237e59463d3cc909b5fa86e45ea",
+    "audit/content-corrections/CODEX_CHECKPOINT_2026-10-12.md": "5eca71a84c02d324f8808604bc2cac1d39002b96cae71d08570bc2189a4991b0",
+    "audit/independent-gpt61-2026-10-12/CURRENT_FINDING_STATUS.json": "db6091e455c7aee2043da7934c66fc8448c4536da5a37ce69d3ad56530e65bed"
+  },
+  "original32FailureEvidencePreserved": true,
+  "scopeNotSummedWithOthers": true,
+  "completeSuite": false,
+  "formalAcceptance": false,
+  "originalUnit7RestoreCause": "UNCONFIRMED"
+}
