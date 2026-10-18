@@ -1,0 +1,14 @@
+{
+  "selectedMethods": {
+    "Phase2BoundedClaimsTest": [
+      "liveClaimsResolveOnlyTheBoundedSynthesis",
+      "sashkaStaysDismissiveAndNameReadingsCannotBeSwapped",
+      "duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim"
+    ],
+    "Phase3BoundedClaimsTest": [
+      "liveClaimsResolveOnlyTheBoundedSynthesis",
+      "pairedClaimsAndNeighboringEvidenceStayIndependent",
+      "duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim"
+    ]
+  }
+}

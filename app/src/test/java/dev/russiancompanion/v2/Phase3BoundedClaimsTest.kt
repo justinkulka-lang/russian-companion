@@ -11,6 +11,7 @@ import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -42,11 +43,14 @@ class Phase3BoundedClaimsTest {
             assertTrue(V2Validator.contentCompletenessErrors(pack, unit).joinToString("\n"), V2Validator.contentCompletenessErrors(pack, unit).isEmpty())
         }
         val unit26 = pack.unit(26)!!
-        assertTrue(advancementDecision(pack, unit26, learner(unit26)).remaining.joinToString("\n"), advancementDecision(pack, unit26, learner(unit26)).allowed)
+        val ordinary26 = ordinaryUnitRequirements(pack, unit26, learner(unit26))
+        assertTrue(ordinary26.remaining.joinToString("\n"), ordinary26.allowed)
+        assertAssignedReviewStillRequired(pack, unit26)
         listOf(27, 29, 30).forEach { number ->
             val unit = pack.unit(number)!!
-            val decision = advancementDecision(pack, unit, learner(unit))
+            val decision = ordinaryUnitRequirements(pack, unit, learner(unit))
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            assertAssignedReviewStillRequired(pack, unit)
             assertFalse(decision.remaining.any { it.contains("unresolved authority variance") })
             assertTrue(V2Validator.activatedAuthorityVariance(number))
             assertFalse(V2Validator.authorityVarianceApplies(number))
@@ -290,6 +294,13 @@ class Phase3BoundedClaimsTest {
 
     private fun unresolved(pack: V2CurriculumPack, number: Int): Set<String> =
         V2Validator.unresolvedRequiredSourceCapabilities(pack, number).map { it.claim }.toSet()
+
+    /** Unit-local synthetic evidence has no assigned earlier-objective review. */
+    private fun assertAssignedReviewStillRequired(pack: V2CurriculumPack, unit: dev.russiancompanion.v2.curriculum.V2Unit) {
+        val decision = advancementDecision(pack, unit, learner(unit))
+        assertFalse(decision.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), decision.remaining)
+    }
 
     private fun learner(unit: dev.russiancompanion.v2.curriculum.V2Unit) = V2LearnerView(
         onboardingCompleted = true,

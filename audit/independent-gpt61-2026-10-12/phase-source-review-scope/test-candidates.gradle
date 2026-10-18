@@ -1,0 +1,7 @@
+// Candidate selection only; runtime classpath and exporter exclusions unchanged.
+allprojects {
+    tasks.withType(Test).configureEach {
+        include '**/Phase2BoundedClaimsTest.class'
+        include '**/Phase3BoundedClaimsTest.class'
+    }
+}

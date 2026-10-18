@@ -1,0 +1,48 @@
+{
+  "sourceBefore": "881c81504864a5847963b2f3f3b33b951d504e6a",
+  "originalRuntimeSource": "41e84c0b00605845dacb3a611d742ae72639526e",
+  "classes": {
+    "Phase2BoundedClaimsTest": {
+      "beforeSha256": "a3604ea09b084bb7bf0fec2ac11e088181360a5b09bb0df66161d3651febb773",
+      "afterSha256": "af2a83a31a83c8c70aa05039f3c6303769fd8316b03c2936ec0903557796d6ba",
+      "changedMethods": [
+        "liveClaimsResolveOnlyTheBoundedSynthesis",
+        "sashkaStaysDismissiveAndNameReadingsCannotBeSwapped"
+      ],
+      "unchangedMethodSha256": {
+        "identitySpanAndRelabelMutationsStayClosed": "4d222aa937ca51e9a16fcb93e260efee9e70863298ffce0b809850c6ee7b21f3",
+        "duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim": "328511ae4c72f1e856922f32b13c38183e1555ca7f88327c270513c2f3a4942b"
+      },
+      "beforeEqualsOriginalFailureSource": true
+    },
+    "Phase3BoundedClaimsTest": {
+      "beforeSha256": "4ed24dbd88f6b3bade5cc5d3c8328f1d4f62ee8a717ec3817ff58071193ed9e1",
+      "afterSha256": "60101f27ae48892bef339d751d7ecc9f169e96a487db09c2617b66e3d08dfc30",
+      "changedMethods": [
+        "liveClaimsResolveOnlyTheBoundedSynthesis"
+      ],
+      "unchangedMethodSha256": {
+        "identitySpanAndRelabelMutationsStayClosed": "744fb855fc181ce090f3d58a6a58eb70a415437c1b6d137518cf0027ae9ad6cf",
+        "pairedClaimsAndNeighboringEvidenceStayIndependent": "d11a3ffe23a62fbf857cd5bbd34d7ec05c5fd599bd93baa594318d1ad92dfc81",
+        "duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim": "5fc223d7d6c33fc7535724147d9c4b05f6a09e1cc94406d82f3de41bff20dcf2"
+      },
+      "beforeEqualsOriginalFailureSource": true
+    }
+  },
+  "allOtherMethodBodiesExact": true,
+  "allSourceIdentityRightsAndVarianceAssertionsRetained": true,
+  "fullAssignedReviewRefusalAddedForUnits": [
+    7,
+    23,
+    25,
+    26,
+    27,
+    29,
+    30
+  ],
+  "ordinaryNameForgeryRefusalAdded": true,
+  "productionChanges": false,
+  "newTestAnnotations": 0,
+  "formalAcceptance": false,
+  "runtime": "PENDING_INITIAL"
+}

@@ -8,6 +8,7 @@ import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -40,7 +41,9 @@ class Phase2BoundedClaimsTest {
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
             assertEquals("DEVELOPMENT", unit.installState)
             assertEquals("PENDING_CURRICULUM_REVIEWER", unit.mappingStatus)
-            assertTrue(advancementDecision(pack, unit, learner(unit)).remaining.joinToString("\n"), advancementDecision(pack, unit, learner(unit)).allowed)
+            val ordinary = ordinaryUnitRequirements(pack, unit, learner(unit))
+            assertTrue(ordinary.remaining.joinToString("\n"), ordinary.allowed)
+            assertAssignedReviewStillRequired(pack, unit)
         }
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "adverb-paradigm" })
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "productive-diminutive" })
@@ -244,7 +247,8 @@ class Phase2BoundedClaimsTest {
         assertEquals("DEVELOPMENT", unit.installState)
         assertTrue(V2Validator.contentCompletenessErrors(pack, unit).joinToString("\n"), V2Validator.contentCompletenessErrors(pack, unit).isEmpty())
         assertFalse(unresolved(pack, 25).contains("documented-name-form"))
-        assertTrue(advancementDecision(pack, unit, learner(unit)).allowed)
+        assertTrue(ordinaryUnitRequirements(pack, unit, learner(unit)).allowed)
+        assertAssignedReviewStillRequired(pack, unit)
         assertTrue(pack.sourceCapabilities.none { it.supportedClaim == "productive-diminutive" })
         assertTrue(pack.unit(25)!!.objectives.none { it.id == "obj-u25-productive-formation" })
         val governed = pack.provenanceRecords.single { it.itemId == "prov-ex-u25-nickname-rule-2-en" }
@@ -272,6 +276,7 @@ class Phase2BoundedClaimsTest {
         assertTrue(familiarErrors, familiarErrors.contains("conflicting governed descriptions"))
         assertTrue(unresolved(familiar, 25).contains("documented-name-form"))
         assertFalse(advancementDecision(familiar, familiar.unit(25)!!, learner(familiar.unit(25)!!)).allowed)
+        assertFalse(ordinaryUnitRequirements(familiar, familiar.unit(25)!!, learner(familiar.unit(25)!!)).allowed)
 
         val silentFeedback = replaceNameAnswer(pack, "u25-i-name-form-2", sashka.answer, feedback = "This reading is conventional.")
         assertTrue(errors(silentFeedback), errors(silentFeedback).contains("feedback does not agree with the keyed answer"))
@@ -323,6 +328,13 @@ class Phase2BoundedClaimsTest {
 
     private fun unresolved(pack: V2CurriculumPack, number: Int): Set<String> =
         V2Validator.unresolvedRequiredSourceCapabilities(pack, number).map { it.claim }.toSet()
+
+    /** Unit-local synthetic evidence has no assigned earlier-objective review. */
+    private fun assertAssignedReviewStillRequired(pack: V2CurriculumPack, unit: dev.russiancompanion.v2.curriculum.V2Unit) {
+        val decision = advancementDecision(pack, unit, learner(unit))
+        assertFalse(decision.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), decision.remaining)
+    }
 
     private fun learner(unit: dev.russiancompanion.v2.curriculum.V2Unit) = V2LearnerView(
         onboardingCompleted = true,
