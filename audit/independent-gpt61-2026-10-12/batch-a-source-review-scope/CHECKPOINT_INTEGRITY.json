@@ -1,0 +1,40 @@
+{
+  "sourceBeforeReceipt": "da0713befb05ca03d154ad99dd280630309235a5",
+  "actualRuntimeSource": "da0713befb05ca03d154ad99dd280630309235a5",
+  "runtimeContext": "INITIAL/CONTEXT.json",
+  "unchangedProductionSourceFrom": "f1bf517bf42dd5061fb6424673f0a1f479a8ee2b",
+  "unchangedTrees": {
+    "app/src/main": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "actualRuntimeRunnerAndInitHashesVerifiedAgainstPinnedSource": true,
+  "evidenceSha256": {
+    "CORRECTION.json": "146488ef5a0b27a9b38c77b83d8d5ce2364e3071e6ed739874d9454002d5fd48",
+    "CURRENT_REGRESSION_RECONCILIATION.json": "e4f81d6e605444951c12b9aed3a5fd9f9a43bbb3540930e51be9fbf632a89b54",
+    "INITIAL/CONTEXT.json": "363cc6c67a0a9ef11263d36434be5c0372bc180b0db1e42713cbf5bfa1a49a64",
+    "INITIAL/EVENTS.jsonl": "ed6cc7190fbde11bb2317d9a130edef69d2e783167c2cd2b839e29b89c144433",
+    "INITIAL/LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "INITIAL/MANIFEST.json": "2c2e3abac733d83a3c3bb7075ea6015e9de41c3ccac6d5be883c8eff05245efc",
+    "INITIAL/RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "INITIAL/RUN.log": "415c1fb193160c628509fe5f6da9c0409b226795cbc7a78c066945b40788deea",
+    "INITIAL/SHA256.json": "b2aeb3adb58463f7571cd0fa5d77bd7926e947592a9d4eb34e7872bcd78f7196",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.BatchAUnits71620Test.xml": "be99328f33a4bf61a43f49becb8b410686b4f36ec473182482dac054e5d21e0d",
+    "NEXT_REVIEW.md": "02275007cf09ba9046e2096558305ab2bdaccb44091074055ec9ddbc5b3af37b",
+    "SOURCE_AND_SCOPE.md": "a6b856688ef1453d872477275c71d01d0bd3413faa4e3a99107a60d6c4e250ec",
+    "selection.json": "c2bd29d6cfe658b6ce267e5aed8c2787179fbcbc8fba53f4e8015ad575bcd01a",
+    "test-candidates.gradle": "f1b9207152fbe2204d70ac59dbffb706f37da9e7ee92defb5ab88c90088622c1"
+  },
+  "instructionSha256": {
+    "AGENTS.md": "242f570bc890d77dd8fc7d743ec1c372645515d9b96ad6633627b5fe152d5367",
+    "audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md": "00d34824716a24249dcd74b39ee8e486a1d2c6fa7a66a0f6a064a0474f3c1b9f",
+    "audit/content-corrections/CODEX_CHECKPOINT_2026-10-12.md": "5f10719199943fa41cbcc611294f991bd9c3e6487aa583686771f12c1761b0d2",
+    "audit/independent-gpt61-2026-10-12/CURRENT_FINDING_STATUS.json": "35c9e6996ea4ec9350460de68a973a8843fbe72f1f6af70de89695078bf6dc2e"
+  },
+  "original32FailureEvidencePreserved": true,
+  "scopeNotSummedWithOthers": true,
+  "completeSuite": false,
+  "formalAcceptance": false,
+  "originalUnit7RestoreCause": "UNCONFIRMED"
+}
