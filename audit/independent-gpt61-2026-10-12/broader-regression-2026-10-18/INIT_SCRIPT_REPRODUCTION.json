@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "executedPath": "/workspace/setup/cloud-validation.gradle",
+      "existingTrackedCopy": "audit/independent-gpt61-2026-10-12/current-correction-verification/cloud-validation.gradle",
+      "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+      "byteIdentical": true
+    },
+    {
+      "executedPath": "/workspace/setup/parallel-tests.gradle",
+      "existingTrackedCopy": "audit/independent-gpt61-2026-10-12/current-correction-verification/parallel-tests.gradle",
+      "sha256": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3",
+      "byteIdentical": true
+    }
+  ],
+  "instructions": "Activate the saved Android environment. Use these existing tracked init-script copies or recreate the exact external paths in CONTEXT.json. Preserve TLS/checksum verification, four exporter exclusions, four forks and 1GiB per test worker. No APK assembly.",
+  "duplicatesAdded": false
+}

@@ -56,7 +56,7 @@
         "completeSuite": false,
         "manifest": "ia003-unit11-gate/FINAL_VERIFICATION_MANIFEST.json",
         "remaining": [
-          "Applicable Units12\u201330",
+          "Applicable Units12–30",
           "Larger eligible pools/recent-review scheduling",
           "Qualified assessment",
           "Broader instruction/remediation accuracy and coverage"
@@ -128,7 +128,7 @@
         ],
         "manifest": "ia003-unit12-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units13\u201330,wider pools/recent scheduling and qualified assessment"
+        "remaining": "Units13–30,wider pools/recent scheduling and qualified assessment"
       },
       "unit13EngineeringCheckpoint": {
         "implementationCommit": "4433aca0323c2e6ae9ee8c7c44a6b6db6eadf076",
@@ -174,7 +174,7 @@
         ],
         "manifest": "ia003-unit13-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units14\u201330,wider pools/recent scheduling and qualified assessment"
+        "remaining": "Units14–30,wider pools/recent scheduling and qualified assessment"
       },
       "unit14EngineeringCheckpoint": {
         "implementationCommit": "fc482ecd8e9e5f77f59fea67357936e364ac70f6",
@@ -202,7 +202,7 @@
         ],
         "manifest": "ia003-unit14-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units15\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units15–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit14ImpersonalPrerequisiteRepair": {
@@ -246,7 +246,7 @@
         ],
         "manifest": "ia003-unit15-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units16\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units16–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit15ImperativePrerequisiteRepair": {
@@ -292,7 +292,7 @@
         ],
         "manifest": "ia003-unit16-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units17\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units17–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit17EngineeringCheckpoint": {
@@ -332,7 +332,7 @@
         ],
         "manifest": "ia003-unit17-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units18\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units18–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit18EngineeringCheckpoint": {
@@ -365,7 +365,7 @@
         ],
         "manifest": "ia003-unit18-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units19\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units19–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit19EngineeringCheckpoint": {
@@ -399,7 +399,7 @@
         ],
         "manifest": "ia003-unit19-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units20\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units20–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit20EngineeringCheckpoint": {
@@ -434,7 +434,7 @@
         ],
         "manifest": "ia003-unit20-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units21\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units21–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit21EngineeringCheckpoint": {
@@ -470,7 +470,7 @@
         ],
         "manifest": "ia003-unit21-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units22\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units22–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit22EngineeringCheckpoint": {
@@ -507,7 +507,7 @@
         ],
         "manifest": "ia003-unit22-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units23\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units23–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit23EngineeringCheckpoint": {
@@ -545,7 +545,7 @@
         ],
         "manifest": "ia003-unit23-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units24\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units24–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit24EngineeringCheckpoint": {
@@ -584,7 +584,7 @@
         ],
         "manifest": "ia003-unit24-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units25\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units25–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit25EngineeringCheckpoint": {
@@ -624,7 +624,7 @@
         ],
         "manifest": "ia003-unit25-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units26\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units26–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit26EngineeringCheckpoint": {
@@ -665,7 +665,7 @@
         ],
         "manifest": "ia003-unit26-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units27\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units27–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit27EngineeringCheckpoint": {
@@ -707,7 +707,7 @@
         ],
         "manifest": "ia003-unit27-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units28\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units28–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit28EngineeringCheckpoint": {
@@ -750,7 +750,7 @@
         ],
         "manifest": "ia003-unit28-gate/FINAL_VERIFICATION_MANIFEST.json",
         "qualifiedAcceptance": false,
-        "remaining": "Units29\u201330,wider pools/recent scheduling and qualified assessment",
+        "remaining": "Units29–30,wider pools/recent scheduling and qualified assessment",
         "legacyRestoreOriginalCause": "UNCONFIRMED"
       },
       "unit29EngineeringCheckpoint": {
@@ -1494,8 +1494,8 @@
     "type": "STATIC_INVENTORY",
     "appTestsExecuted": 0,
     "missingExactTeachingExampleItems": [
-      "u3-i-gender-\u0434\u0440\u0443\u0433",
-      "u3-i-gender-\u0434\u0432\u0435\u0440\u044c"
+      "u3-i-gender-друг",
+      "u3-i-gender-дверь"
     ],
     "ordinaryRepair": "INCOMPLETE_CONTRAST",
     "currentCityOnlyDueReview": "MATCHING_TEACHING_PRESENT",
@@ -1679,8 +1679,10 @@
       "syntheticSkipped": 1216,
       "passed": 0
     },
-    "realRuntime": "NOT_RUN",
+    "realRuntime": "IN_PROGRESS",
     "formalAcceptance": false,
-    "restoreInteraction": "UNCONFIRMED"
+    "restoreInteraction": "UNCONFIRMED",
+    "runtimeSourceCommit": "41e84c0b00605845dacb3a611d742ae72639526e",
+    "inProgressReceipt": "broader-regression-2026-10-18/IN_PROGRESS.json"
   }
 }
