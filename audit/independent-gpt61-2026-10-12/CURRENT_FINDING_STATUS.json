@@ -1388,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestBatchESourceReviewCheckpoint",
-    "priorCheckpoint": "latestPhaseSourceReviewCheckpoint",
-    "next": "Investigate Aud44 source-versus-review fixtures and later assertions; keep predicate/digest cases separate. Preserve all16 OPEN failures; refresh discovery/broader regression before final independent comprehensive audit. Physical acceptance last.",
+    "checkpoint": "latestAud44SourceReviewCheckpoint",
+    "priorCheckpoint": "latestBatchESourceReviewCheckpoint",
+    "next": "Next inspect ContentAuditCorrectionTest.unit27AdvancesWithoutOptionalPresentPassive and BatchBUnits2125Test.classificationChecksCannotClearProductiveDiminutive. Read each complete method and learner setup, preserve optional-work/source negatives and all later assertions, distinguish ordinary requirements from assigned review, and explicitly refuse full advancement. Aud44 unrelated-evidence missing predicate and later-unit digest snapshot remain separate OPEN cases; do not archive or bump those expectations without scope proof.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1885,5 +1885,28 @@
     "originalUnit7RestoreCause": "UNCONFIRMED",
     "githubConnection": "RECOVERED",
     "next": "Inspect retained Aud44 ordinary/source/review fixtures, preserving later assertions and all16 OPEN cases; see NEXT_REVIEW.md"
+  },
+  "latestAud44SourceReviewCheckpoint": {
+    "path": "audit/independent-gpt61-2026-10-12/aud44-source-review-scope",
+    "sourceCommit": "b782dbb26aee5e336a0ebfd157230e888c1b19c6",
+    "manifest": "aud44-source-review-scope/INITIAL/MANIFEST.json",
+    "testCounts": {
+      "reported": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 1,
+    "retainedInitialFailures": 32,
+    "engineeringScopeReconciled": 20,
+    "openInitialFailures": 12,
+    "currentLiteralAnnotations": 1239,
+    "newFullDiscoveryOrBroadCompletion": false,
+    "formalAcceptance": false,
+    "auditReady": false,
+    "originalUnit7RestoreCause": "UNCONFIRMED",
+    "githubConnection": "RECOVERED",
+    "next": "Next inspect ContentAuditCorrectionTest.unit27AdvancesWithoutOptionalPresentPassive and BatchBUnits2125Test.classificationChecksCannotClearProductiveDiminutive. Read each complete method and learner setup, preserve optional-work/source negatives and all later assertions, distinguish ordinary requirements from assigned review, and explicitly refuse full advancement. Aud44 unrelated-evidence missing predicate and later-unit digest snapshot remain separate OPEN cases; do not archive or bump those expectations without scope proof."
   }
 }

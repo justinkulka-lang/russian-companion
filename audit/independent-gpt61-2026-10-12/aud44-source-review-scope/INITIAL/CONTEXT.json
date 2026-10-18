@@ -1,0 +1,76 @@
+{
+  "sourceCommit": "b782dbb26aee5e336a0ebfd157230e888c1b19c6",
+  "startedUtc": "2026-10-18T16:27:33.406800+00:00",
+  "inputTrees": {
+    "app/src/main": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+    "app/src/test": "b5114877eb1a6f311731702f989a6d0a3f4812c7",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/setup/parallel-tests.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/aud44-source-review-scope/test-candidates.gradle",
+    "-Daudit.events.path=/workspace/russian-companion/audit/independent-gpt61-2026-10-12/aud44-source-review-scope/INITIAL/EVENTS.jsonl",
+    "testDebugUnitTest",
+    "--rerun",
+    "--tests",
+    "*Aud44CorrectionTest.threeAdverbGlossPairsCannotClearTheParadigm",
+    "--tests",
+    "*Aud44CorrectionTest.calendarDateCompletionCannotConcealTheClockGap",
+    "--tests",
+    "*Aud44CorrectionTest.unit17AdvancementNamesOnlyUnresolvedSourceCapabilities",
+    "--tests",
+    "*Aud44CorrectionTest.sharedLicenseNoticeDoesNotAnnounceUnitReadiness",
+    "--tests",
+    "*Aud44CorrectionTest.threeClockPhrasesCannotClearProductiveClockTime",
+    "--tests",
+    "*Aud44CorrectionTest.unit17SourceAdmissionDoesNotReachOtherUnits",
+    "--tests",
+    "*Aud44CorrectionTest.reviewsMappingsAndReleaseStayUnsigned",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--max-workers=4",
+    "--console=plain"
+  ],
+  "activation": "source /workspace/setup/android-env.sh",
+  "runnerSha256": "d78a1e8b40ea6496726b36c5d2b494f826900d737e5938c3c7b4f8f342de7f18",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/setup/parallel-tests.gradle": "2366eb867708f83db10b39080abff1b45d2e347bab15ce2ec1c95c3d31cf7ff3",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/aud44-source-review-scope/test-candidates.gradle": "0d3ed353fa29eb38ffd8f6ae885469a3b0384da05a508600341571821c15ec9e"
+  },
+  "selectionConfig": {
+    "path": "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/aud44-source-review-scope/selection.json",
+    "sha256": "5496af74907ce795d84890f116a338fd4a7a7b34781e6810ef985672b56976e9"
+  },
+  "selectors": [
+    "*Aud44CorrectionTest.threeAdverbGlossPairsCannotClearTheParadigm",
+    "*Aud44CorrectionTest.calendarDateCompletionCannotConcealTheClockGap",
+    "*Aud44CorrectionTest.unit17AdvancementNamesOnlyUnresolvedSourceCapabilities",
+    "*Aud44CorrectionTest.sharedLicenseNoticeDoesNotAnnounceUnitReadiness",
+    "*Aud44CorrectionTest.threeClockPhrasesCannotClearProductiveClockTime",
+    "*Aud44CorrectionTest.unit17SourceAdmissionDoesNotReachOtherUnits",
+    "*Aud44CorrectionTest.reviewsMappingsAndReleaseStayUnsigned"
+  ],
+  "candidateClasses": [
+    "Aud44CorrectionTest"
+  ],
+  "workerPolicy": "4 forks / 3GiB / forkEvery8",
+  "excludedScreenshotExporters": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  }
+}
