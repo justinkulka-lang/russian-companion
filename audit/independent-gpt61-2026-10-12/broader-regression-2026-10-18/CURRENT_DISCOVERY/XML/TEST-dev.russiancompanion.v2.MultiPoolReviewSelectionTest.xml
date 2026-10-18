@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.MultiPoolReviewSelectionTest" tests="7" skipped="7" failures="0" errors="0" timestamp="2026-10-18T19:49:48.077Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="versionScopesUntaughtOwnersAndChangedSourceCannotAcquireReviewCreditOrRewriteHistory" classname="dev.russiancompanion.v2.MultiPoolReviewSelectionTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="nonFirstWindowUiRepairsFullBehaviorTeachingAndStillRequiresOppositeKeyFreshAnswer" classname="dev.russiancompanion.v2.MultiPoolReviewSelectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="nonFirstStudentUiRepairsFullRoleTeachingAndStillRequiresFreshAssignedAnswers" classname="dev.russiancompanion.v2.MultiPoolReviewSelectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="genuineSchemaOneAndTwoHistoriesKeepExactAssignmentsAndAcceptedCompletionSnapshots" classname="dev.russiancompanion.v2.MultiPoolReviewSelectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unit6CanSelectEveryAuthoredCandidateAndResolveMissesIncludingOppositeKeyContrasts" classname="dev.russiancompanion.v2.MultiPoolReviewSelectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unit5ChoosesRecentStudentMissAndLaterCorrectResolvesItWithoutUsingClockOrOptionalRows" classname="dev.russiancompanion.v2.MultiPoolReviewSelectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="newAssignmentsStayImmutableAndMixedVersionBackupRestartAndEpochPreserveFreshCredit" classname="dev.russiancompanion.v2.MultiPoolReviewSelectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

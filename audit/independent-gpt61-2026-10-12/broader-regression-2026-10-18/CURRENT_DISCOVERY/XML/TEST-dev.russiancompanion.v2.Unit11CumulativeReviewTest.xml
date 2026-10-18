@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit11CumulativeReviewTest" tests="7" skipped="7" failures="0" errors="0" timestamp="2026-10-18T19:49:47.679Z" hostname="d0aced911621" time="0.0">
+  <properties/>
+  <testcase name="schema11LegacyRowsRemainStoredButChangedAgreementInstructionRequiresRepair" classname="dev.russiancompanion.v2.Unit11CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup" classname="dev.russiancompanion.v2.Unit11CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="heldUnit11WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching" classname="dev.russiancompanion.v2.Unit11CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion" classname="dev.russiancompanion.v2.Unit11CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="placementWithTaughtUnit1ButUntaughtUnit10RepairsTheMissingOwnerInsteadOfUnit1" classname="dev.russiancompanion.v2.Unit11CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="oldFormatOneAndTwoKeepHistoricalWorkWithoutCreditingChangedUnit11Instruction" classname="dev.russiancompanion.v2.Unit11CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="actualUnit11ContinuePossessionAbsenceCueTeachingPracticeReturnAndAdvanceStayOnUnit11" classname="dev.russiancompanion.v2.Unit11CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

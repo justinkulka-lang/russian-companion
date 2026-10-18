@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.HostActivityRecreationTest" tests="3" skipped="3" failures="0" errors="0" timestamp="2026-10-18T19:49:47.271Z" hostname="d0aced911621" time="0.0">
+  <properties/>
+  <testcase name="recreatedActivityKeepsTheDraftAnswerAndResumePosition" classname="dev.russiancompanion.v2.HostActivityRecreationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="retryDropsAFailedReadFromTheReplacedStore" classname="dev.russiancompanion.v2.HostActivityRecreationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="recreatedActivityDuringADelayedWriteKeepsOneOutcome" classname="dev.russiancompanion.v2.HostActivityRecreationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

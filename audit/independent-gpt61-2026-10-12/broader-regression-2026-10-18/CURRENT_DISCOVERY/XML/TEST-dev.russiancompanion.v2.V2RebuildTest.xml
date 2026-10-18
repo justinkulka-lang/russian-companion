@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.V2RebuildTest" tests="24" skipped="24" failures="0" errors="0" timestamp="2026-10-18T19:49:52.491Z" hostname="d0aced911621" time="0.002">
+  <properties/>
+  <testcase name="resolvedAssetRecordsAreRequiredInsteadOfCounters" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="genericBookDirectionCountersAndEmptyArraysCannotSatisfyContentCompleteness" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitsThreeToFiveStayDevelopmentAndLaterUnitsStayClosed" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="referencesRejectMissingAndUnknownClassifications" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="upgradeKeepsExportAndRecordingRows" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="installedUnitRejectsPendingAndRejectedInstructionalRecords" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="noInternetPermissionIsDeclared" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitAndLabHeadingsStayInsideTheRoot" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="structuralMappingSafeguardsRejectIncompleteOrInventedRecords" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="todayShowsOneBoundedSessionInsteadOfTheUnitInventory" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="packValidatesAndRefusesGeneratedOrCatalogBoundContent" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="approvedReviewRequiresACompleteMatchingRecord" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="unitOneProgressesInOrderAndRestoresAfterRestart" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="installedUnitsAreRejectedWhileRequiredExperiencesAreMissing" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="productHelpAndOperationalGuidanceMayUseNotRequired" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="advancementNeedsMoreThanOneCheckAndBookAttestation" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="linguisticReferencesCannotUseNotRequired" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="onboardingAndPrimaryControlsAreVisible" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="notPreparedBookDirectionCannotBePromotedOrAdvanced" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="advancementCannotSkipARequiredObjective" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="noUnitCanBeInstalledWithPendingReviewOrMapping" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitTwoRequiresUnitOneAndCannotUseUnrelatedCatalogAudio" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="durablePackIdentityStaysHonestAndUnitIsolationHolds" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="primaryContentStartsAtTheInsetWhenFontIsLarge" classname="dev.russiancompanion.v2.V2RebuildTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

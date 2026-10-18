@@ -1,0 +1,2720 @@
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:kspDebugKotlin UP-TO-DATE
+> Task :app:compileDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:bundleDebugClassesToRuntimeJar UP-TO-DATE
+> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE
+> Task :app:kspDebugUnitTestKotlin UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:compileDebugUnitTestKotlin UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE
+> Task :app:mergeDebugUnitTestManifest UP-TO-DATE
+> Task :app:processDebugUnitTestManifest UP-TO-DATE
+> Task :app:generateDebugUnitTestConfig UP-TO-DATE
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :app:processDebugUnitTestJavaRes UP-TO-DATE
+
+> Task :app:testDebugUnitTest
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+AcceptanceBoundaryTest > at020_physicalRebootPersistsGovernedRecords SKIPPED
+
+AcceptanceBoundaryTest > at029_aSingleNoAnswerRejectsTheProposal SKIPPED
+
+AcceptanceBoundaryTest > at010_onlyCompatibleMatchedAudioIsIncluded SKIPPED
+
+AcceptanceBoundaryTest > at017_at024_optionalDrillsAreNotGateEvidenceAndDoNotShip SKIPPED
+
+AcceptanceBoundaryTest > at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable SKIPPED
+
+AcceptanceBoundaryTest > at001_at003_at011_at028_userFacingCopyStaysInsideTheBeginnerCompanion SKIPPED
+
+AcceptanceBoundaryTest > at005_packagedSurfaceHasNoNetworkAccountOrSpeechRecognizer SKIPPED
+
+AcceptanceBoundaryTest > at023_ankiDroidStaysOutsideTheApp SKIPPED
+
+AcceptanceBoundaryTest > acceptanceProceduresStayClassifiedWithoutApprovingRelease SKIPPED
+AUDIT_CLASS dev.russiancompanion.acceptance.AcceptanceBoundaryTest: 9 reported, 0 passed, 0 failed, 9 skipped
+
+CatalogComplianceTest > requiredAttributionAndLicenseNoticesAreAvailableOffline SKIPPED
+
+CatalogComplianceTest > regenerationPreservesTheActivatedCompliancePackage SKIPPED
+
+CatalogComplianceTest > assembleReleaseStaysBlockedAfterShareAlikeActivation SKIPPED
+
+CatalogComplianceTest > everyEligibleAudioModelResolvesToCompleteComplianceRecords SKIPPED
+
+CatalogComplianceTest > everyPackagedSourceHasARecognizedLicenseAndShareAlikeTreatment SKIPPED
+AUDIT_CLASS dev.russiancompanion.catalog.CatalogComplianceTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+ExportPackageTest > recordingNamesStayUnderTheRecordingsDirectory SKIPPED
+
+ExportPackageTest > unreadableRecordingProducesNoPackage SKIPPED
+
+ExportPackageTest > emptyExportKeepsHeaderRowsAndZeroProgress SKIPPED
+
+ExportPackageTest > largeRecordingsStreamToTheDestinationWithoutACompleteInMemoryCopy SKIPPED
+
+ExportPackageTest > packageContainsManifestCsvAndRecordingBytes SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.export.ExportPackageTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+ScaffoldBoundaryTest > manifestDoesNotRequestNetworkOrExternalApps SKIPPED
+AUDIT_CLASS dev.russiancompanion.ScaffoldBoundaryTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+DeviceAcceptancePackageTest > physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease SKIPPED
+AUDIT_CLASS dev.russiancompanion.acceptance.DeviceAcceptancePackageTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+DailyPlanStoreTest > ankiCompletionIsSelfAttestedVocabularyWork SKIPPED
+
+DailyPlanStoreTest > externalCompletionPersistsForThatDayAndTutorCanBeRemoved SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.local.DailyPlanStoreTest: 2 reported, 0 passed, 0 failed, 2 skipped
+
+PackagedPathwayStoreTest > packagedCompletePathwayCompletesATutorFreeLessonCycleOnce SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.local.PackagedPathwayStoreTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+AppearancePreferenceTest > darkIsTheDefaultForUnknownOrMissingValues SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.appearance.AppearancePreferenceTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+LaunchRoutingTest > routeNamesSelectScreenSpecificSurfaces SKIPPED
+
+LaunchRoutingTest > pendingSnapshotDoesNotRouteToTheLocalDataProblem SKIPPED
+
+LaunchRoutingTest > completedOnboardingRoutesHome SKIPPED
+
+LaunchRoutingTest > confirmationRequiresALessonThatHasPlanDefinitions SKIPPED
+
+LaunchRoutingTest > optionalDrillsRequireAnAdmittedPackage SKIPPED
+
+LaunchRoutingTest > incompleteOnboardingRoutesToOnboarding SKIPPED
+
+LaunchRoutingTest > closedDataRoutesToTheLocalDataProblem SKIPPED
+
+LaunchRoutingTest > activeLessonHasAPlanOnlyForTheSelectedSegment SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.navigation.LaunchRoutingTest: 8 reported, 0 passed, 0 failed, 8 skipped
+
+AudioSchemaTest > disclosureStatementStaysThePackagedNoScoreCopy SKIPPED
+
+AudioSchemaTest > admissionRequiresCompatibleRightsAndAVerifiedOneToOneTextMatch SKIPPED
+
+AudioSchemaTest > catalogProposalsUseTheSameAdmissionRule SKIPPED
+
+AudioSchemaTest > sharedTextMatchesAreExcludedInsteadOfDisplayedAsAPair SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.practice.AudioSchemaTest: 4 reported, 0 passed, 0 failed, 4 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+AcceptanceBehaviorTest > at015_at016_decisionsFollowTheDisplayedRuleAndTutorSignOffIsStricter SKIPPED
+
+AcceptanceBehaviorTest > at009_shareAlikeFlagFollowsStoredConfirmationOnly SKIPPED
+
+AcceptanceBehaviorTest > at018_everyGovernedCategoryIsRecordedActivity SKIPPED
+
+AcceptanceBehaviorTest > at019_closedStoreReopensWithTheSameUserRecordsAndRecordingBytes SKIPPED
+
+AcceptanceBehaviorTest > at022_incompleteExportIsReportedUnsuccessful SKIPPED
+AUDIT_CLASS dev.russiancompanion.acceptance.AcceptanceBehaviorTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+ReviewedCurriculumSourceGuardTest > changedMovedAndMissingComparisonFilesRemainBlocked SKIPPED
+
+ReviewedCurriculumSourceGuardTest > coherentSourceForgeryAndRemovedItemIdsCannotKeepUnchangedCodeAdmitted SKIPPED
+
+ReviewedCurriculumSourceGuardTest > exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus SKIPPED
+
+ReviewedCurriculumSourceGuardTest > newUiResourceAndCurriculumTextCannotBorrowAnExistingLiteral SKIPPED
+AUDIT_CLASS dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+AndroidPracticeAudioTest > completingTheModelDoesNotReleaseTheRecordingPlayer SKIPPED
+
+AndroidPracticeAudioTest > errorCleanupReleasesOnlyTheFailedPlayer SKIPPED
+
+AndroidPracticeAudioTest > backgroundReleaseStopsCaptureAndZeroLengthFilesAreRejected SKIPPED
+
+AndroidPracticeAudioTest > loopingRecordingCompletionDoesNotReleaseTheNextModelPlayer SKIPPED
+
+AndroidPracticeAudioTest > audioFocusLossReleasesPlaybackAndCapture SKIPPED
+
+AndroidPracticeAudioTest > streamedRecordingDigestMatchesStandardSha256AndLeavesMissingFilesNull SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.audio.AndroidPracticeAudioTest: 6 reported, 0 passed, 0 failed, 6 skipped
+
+CatalogReseedGuardTest > supersededIncompleteRecordingsDeleteHiddenFiles SKIPPED
+
+CatalogReseedGuardTest > unchangedCatalogHashDoesNotReplaceBundledRows SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.local.CatalogReseedGuardTest: 2 reported, 0 passed, 0 failed, 2 skipped
+
+LocalStoreTest > reseedKeepsUserRecordsAndDropsRemovedAudioFromUse SKIPPED
+
+LocalStoreTest > shippedSeedOpensANewLearnerAfterShareAlikeConfirmation SKIPPED
+
+LocalStoreTest > fileDatabaseKeepsActivityAfterTheStoreIsClosed SKIPPED
+
+LocalStoreTest > negativeDurationIsRejectedAtEntry SKIPPED
+
+LocalStoreTest > bookEvidenceCannotBeStoredAsVerifiedAndBlankRecordingIsNotCommitted SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.local.LocalStoreTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+NavigationSnapshotBatchTest > shellSnapshotDoesNotOpenEachAudioAsset SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.navigation.NavigationSnapshotBatchTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+ContinueDestinationTest > resolveContinueHandlesLessonAbsenceCompletionAndUnavailableAudio SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.navigation.ContinueDestinationTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+AbPlaybackTest > abOrderingSpeedsAndReplaceStayGoverned SKIPPED
+
+AbPlaybackTest > repeatAbCompletesTwoFullLoopsAndStopsOnEachTerminationPath SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.practice.AbPlaybackTest: 2 reported, 0 passed, 0 failed, 2 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+AppearanceStoreTest > writeFailureKeepsThePriorPreference SKIPPED
+
+AppearanceStoreTest > darkIsDefaultAndFollowSystemPersistsAcrossRestart SKIPPED
+
+AppearanceStoreTest > readFailureFallsBackToDark SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.appearance.AppearanceStoreTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+BundledContentRulesTest > bookAndAnkiEvidenceIsSelfAttestedAndRecordingRequiresAFile SKIPPED
+
+BundledContentRulesTest > totalsAreRecomputedFromLogsForEveryGovernedCategory SKIPPED
+
+BundledContentRulesTest > shippedSeedMatchesLicensedAudioAndInstallsTheCompleteBeginnerPathway SKIPPED
+
+BundledContentRulesTest > duplicateIdsMakeTheDocumentCorrupt SKIPPED
+
+BundledContentRulesTest > unconfirmedShareAlikeStaysOnTheSourceRecord SKIPPED
+
+BundledContentRulesTest > defaultGateCannotRequireTutorAndOptionalDrillsAreNotEvidence SKIPPED
+
+BundledContentRulesTest > malformedJsonIsCorrupt SKIPPED
+
+BundledContentRulesTest > requiredTutorPlanIsExcluded SKIPPED
+
+BundledContentRulesTest > defaultGateRequiresBookAnkiAndPrescribedWork SKIPPED
+
+BundledContentRulesTest > userRecordsHaveNoJudgmentColumns SKIPPED
+
+BundledContentRulesTest > listenPlanIsDroppedWhenAnyPrescribedAudioIsIneligible SKIPPED
+
+BundledContentRulesTest > absentOrUnmatchedAudioIsExcludedAndTextIsCopiedUnchanged SKIPPED
+
+BundledContentRulesTest > unverifiedOrSharedTextMatchIsExcluded SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.local.BundledContentRulesTest: 13 reported, 0 passed, 0 failed, 13 skipped
+
+GateStoreTest > saveGateDecisionRejectsFabricatedResultsAndWrongEvidence SKIPPED
+
+GateStoreTest > savedEvidenceChangesOnlyTheRecordedDecision SKIPPED
+
+GateStoreTest > invalidAndUnreadableEvidenceDoNotProduceASatisfiedDecision SKIPPED
+
+GateStoreTest > storedDecisionsStayReproducibleAfterLaterEvidenceAndANewRuleVersion SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.local.GateStoreTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+ProgressStoreTest > saveExportRejectsCompletedCountsThatDoNotMatchABuiltPackage SKIPPED
+
+ProgressStoreTest > laterLogsDoNotRewriteACapturedProgressSnapshot SKIPPED
+
+ProgressStoreTest > grammarAndVocabularyLogsRequireSelfAttestationAndUnknownSegmentsAreRejected SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.local.ProgressStoreTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+GateSchemaTest > admissionRequiresTheDefaultKindsAndRejectsTutorOrOpenAnkiText SKIPPED
+
+GateSchemaTest > shippedDefaultGateIsTheConjunctionOfBookAnkiAndPrescribedWork SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.gate.GateSchemaTest: 2 reported, 0 passed, 0 failed, 2 skipped
+
+DailyPlanRulesTest > checklistCarriesLessonNumbersAndPrescribedAudioIds SKIPPED
+
+DailyPlanRulesTest > checklistShowsRequiredWorkAndHidesTutorUntilChosen SKIPPED
+
+DailyPlanRulesTest > gateSummaryUsesTheLatestRecordedDecisionOnly SKIPPED
+
+DailyPlanRulesTest > includedTutorIsVisibleAndCompletedWorkAdvancesTheNextItem SKIPPED
+
+DailyPlanRulesTest > activitySummaryKeepsRecordedWorkAndDropsEmptyCategories SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.plan.DailyPlanRulesTest: 5 reported, 0 passed, 0 failed, 5 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+AcceptanceCycleTest > at007_at012_at013_at014_at021_at030_lessonCycleStaysLocalAndUnscored SKIPPED
+AUDIT_CLASS dev.russiancompanion.acceptance.AcceptanceCycleTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+CatalogIntakeTest > missingLicenseOrUnverifiedTextIsExcluded SKIPPED
+
+CatalogIntakeTest > catalogRegenerationPreservesTheCompleteBeginnerConductor SKIPPED
+
+CatalogIntakeTest > packagedAudioMatchesRecordedLicenseChainsAndStaysUnreleased SKIPPED
+
+CatalogIntakeTest > debugCiEvidenceStaysOutOfTheReleaseGate SKIPPED
+
+CatalogIntakeTest > anInstalledDropOfOneEligibleProposalMayReplaceTheSeed SKIPPED
+
+CatalogIntakeTest > installedDropMatchesPackagedAudioAndRecordsEveryIndexedFile SKIPPED
+
+CatalogIntakeTest > aCompleteProposalCanBeEligibleWithoutReplacingTheEmptyIntake SKIPPED
+
+CatalogIntakeTest > recordedSourceExclusionsStayOutOfThePackagedSeed SKIPPED
+AUDIT_CLASS dev.russiancompanion.catalog.CatalogIntakeTest: 8 reported, 0 passed, 0 failed, 8 skipped
+
+ProgressExportTest > exportCopiesEveryReadableRecordingAndFailsWhenOneIsMissing SKIPPED
+
+ProgressExportTest > emptyExportIsIdentifiedAndReadableRecordingsStayInsideTheAppDirectory SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.export.ProgressExportTest: 2 reported, 0 passed, 0 failed, 2 skipped
+
+DatabaseMigrationTest > version5ExportRowsGainANullableRecordingSetDigest SKIPPED
+
+DatabaseMigrationTest > version6LearnerAndExportRowsSurviveMigrationToVersion7 SKIPPED
+
+DatabaseMigrationTest > version1RowsKeepTheirDataAndGainTheNewNullableFields SKIPPED
+
+DatabaseMigrationTest > version2PlanRowsBecomeIneligibleWhenLessonNumberCannotBeRecovered SKIPPED
+
+DatabaseMigrationTest > version3DecisionsBeforeAndAfterTutorDoNotInventAHistoricalRule SKIPPED
+
+DatabaseMigrationTest > version4SeedStateGainsAContentHashColumn SKIPPED
+
+DatabaseMigrationTest > version3DecisionsKeepTheirEvidenceAndGainACanonicalRuleSnapshot SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.local.DatabaseMigrationTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+PracticeStoreTest > missingPackagedAudioIsNotPlayable SKIPPED
+
+PracticeStoreTest > aRecordingWithoutACompletionLogKeepsANullActivityLink SKIPPED
+
+PracticeStoreTest > prescribedModelsCompleteThePlanInAnyOrderAndNeedAnApplicablePlan SKIPPED
+
+PracticeStoreTest > completingPracticeStoresTheRecordingWithoutAPronunciationJudgment SKIPPED
+
+PracticeStoreTest > libraryFirstCompletionsCompleteThePlanOnceAfterLessonActivation SKIPPED
+
+PracticeStoreTest > listenPlanCompletionRequiresEveryPrescribedModelAndIgnoresLibraryAudio SKIPPED
+
+PracticeStoreTest > saveListenCompletionRejectsFabricatedResultsAndWrongEvidence SKIPPED
+AUDIT_CLASS dev.russiancompanion.data.local.PracticeStoreTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+GateRulesTest > prescribedWorkIsAPresenceConfirmation SKIPPED
+
+GateRulesTest > tutorSignOffWaitsUntilRecordedAndDoesNotSatisfyOtherConditions SKIPPED
+
+GateRulesTest > historicalDecisionsReproduceFromTheirSnapshotAndRecordedEvidenceOnly SKIPPED
+
+GateRulesTest > defaultCompoundRuleLocksUntilBookAnkiAndPrescribedWorkAreAllMet SKIPPED
+
+GateRulesTest > missingOrUnreadableEvidenceWithholdsASatisfiedResult SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.gate.GateRulesTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+PathwaySchemaTest > pathwayAcceptsTheFullBeginnerArcAndRejectsDuplicatesOrOutOfRangeLessons SKIPPED
+
+PathwaySchemaTest > firstPrescribedPlayableKeepsCatalogOrder SKIPPED
+
+PathwaySchemaTest > beginnerArcReleaseReadyRequiresThirtyLessonsWithRequiredPlansAndGates SKIPPED
+
+PathwaySchemaTest > planAdmissionBindsBookAndAnkiToLessonNumbersAndListenToCatalogIds SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.pathway.PathwaySchemaTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+PracticeRulesTest > completionRequiresSeparateReplayAndHasNoShortcut SKIPPED
+
+PracticeRulesTest > writesRejectFabricatedCompletionAndWrongEvidence SKIPPED
+
+PracticeRulesTest > aListenPlanCompletesOnlyWhenEveryPrescribedModelIsRecorded SKIPPED
+
+PracticeRulesTest > recordingWaitsForAPlayableModelAndAGrantedMicrophone SKIPPED
+
+PracticeRulesTest > neighborsStayInsideTheAdmittedSequence SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.practice.PracticeRulesTest: 5 reported, 0 passed, 0 failed, 5 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+ProgressSchemaTest > missingNamedLogsAndUnreadableDurationsCannotBeReproducedAsTheCapturedTotals SKIPPED
+
+ProgressSchemaTest > activityLogsRequireATimestampNonnegativeDurationAndBookAnkiAttestation SKIPPED
+
+ProgressSchemaTest > laterLogsDoNotRewriteANamedProgressSnapshot SKIPPED
+
+ProgressSchemaTest > exportCompletionRequiresMatchingPackageCountsAndAllowsUnsuccessfulRecords SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.progress.ProgressSchemaTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+ProgressRulesTest > negativeDurationMakesTheReviewUnreadable SKIPPED
+
+ProgressRulesTest > emptyReviewKeepsEveryCategoryAtZero SKIPPED
+
+ProgressRulesTest > recordedReadingAddsToThatCategoryAndTheCumulativeTotal SKIPPED
+
+ProgressRulesTest > attestationLabelsFollowTheRecordedCategory SKIPPED
+
+ProgressRulesTest > zeroMinuteCompletionIsRecordedActivity SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.progress.ProgressRulesTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+BackupAndBalanceTest > studyBalanceWindowsHonorZeroMinutesAndHideNegativeDurations SKIPPED
+
+BackupAndBalanceTest > backupStatusUsesRecordingSetDigestNotCounts SKIPPED
+
+BackupAndBalanceTest > storageHealthLeavesUnreadablesUnguessed SKIPPED
+AUDIT_CLASS dev.russiancompanion.domain.progress.BackupAndBalanceTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+ContinueNavigationTest > continueRoutesCarryTheNamedPlanOrAudioIdentity SKIPPED
+AUDIT_CLASS dev.russiancompanion.presentation.navigation.ContinueNavigationTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+GateUiTest > gateEvidenceIsSelfAttestedAndTheDecisionFollowsTheDisplayedRule SKIPPED
+AUDIT_CLASS dev.russiancompanion.presentation.navigation.GateUiTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+ProgressUiTest > unreadableProgressHidesTotalsAndImbalance SKIPPED
+
+ProgressUiTest > progressShowsAllCategoriesAndALocalExportOfTheLogs SKIPPED
+
+ProgressUiTest > zeroMinuteCompletionIsShownAsCompletionRatherThanTimeSpent SKIPPED
+AUDIT_CLASS dev.russiancompanion.presentation.navigation.ProgressUiTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+ReleaseGateTest > notApplicableShareAlikeDoesNotBlock SKIPPED
+
+ReleaseGateTest > anUndocumentedBooleanDoesNotMarkEvidenceRetained SKIPPED
+
+ReleaseGateTest > packagedCompletePathwayClearsPathwayIncompleteWhenShareAlikeAndEvidenceAreSupplied SKIPPED
+
+ReleaseGateTest > aNonemptyTextFileDoesNotSatisfyRetainedEvidence SKIPPED
+
+ReleaseGateTest > confirmedShareAlikeClearsOnlyThatBlocker SKIPPED
+
+ReleaseGateTest > ownerDecisionCannotClearReleaseWithoutEveryMandatoryProcedure SKIPPED
+
+ReleaseGateTest > productionGateDoesNotTakeATestReportOrAPropertyOverride SKIPPED
+
+ReleaseGateTest > onlyTheCompleteBeginnerArcClearsThePathwayIncompleteBlocker SKIPPED
+
+ReleaseGateTest > notApplicableConfirmationFailsClosedOnTheCompliancePackage SKIPPED
+
+ReleaseGateTest > alteredCatalogTreatmentFailsClosed SKIPPED
+
+ReleaseGateTest > packagedCatalogAndCommittedEvidenceBlockPublicRelease SKIPPED
+
+ReleaseGateTest > missingOrContradictoryComplianceMetadataFailsClosed SKIPPED
+
+ReleaseGateTest > notApplicableShareAlikeOnCcBySaCatalogFailsClosed SKIPPED
+
+ReleaseGateTest > evidenceOutsideTheManifestDirectoryIsRejected SKIPPED
+
+ReleaseGateTest > mismatchedActivationStateFailsClosed SKIPPED
+
+ReleaseGateTest > aTutorOnlyGateAndAPartialPlanStayBlocked SKIPPED
+
+ReleaseGateTest > blockedClassificationFailsClosedAfterActivation SKIPPED
+
+ReleaseGateTest > aPartialOrMissingLessonStaysBlocked SKIPPED
+
+ReleaseGateTest > retainedStateWithoutAFileStaysMissing SKIPPED
+
+ReleaseGateTest > absentOrCorruptContentFailsClosed SKIPPED
+
+ReleaseGateTest > unconfirmedShareAlikeBlocksAnOtherwisePreparedCatalog SKIPPED
+
+ReleaseGateTest > confirmedSeedWithUnappliedProposalFailsClosed SKIPPED
+
+ReleaseGateTest > contradictoryShareAlikeTreatmentFailsClosed SKIPPED
+
+ReleaseGateTest > deviceProceduresRequireANamedDeviceAndMatchingCandidateIdentity SKIPPED
+AUDIT_CLASS dev.russiancompanion.release.ReleaseGateTest: 24 reported, 0 passed, 0 failed, 24 skipped
+
+Aud53CorrectionTest > fieldLabelRecallCannotClearDictionaryUse SKIPPED
+
+Aud53CorrectionTest > livePackKeepsTheCorrectedClaimsAndRejectsEmbeddedMedia SKIPPED
+
+Aud53CorrectionTest > greetingRecognitionCannotClearLetterWriting SKIPPED
+
+Aud53CorrectionTest > semanticDuplicatesDoNotSatisfyDistinctCheckMinimums SKIPPED
+
+Aud53CorrectionTest > governanceStaysUnapproved SKIPPED
+
+Aud53CorrectionTest > embeddedMediaCannotEnterGovernedReadyRussianSpans SKIPPED
+
+Aud53CorrectionTest > headwordSelectionCannotClearParticipleStress SKIPPED
+
+Aud53CorrectionTest > falseSelfPairUnsupportedSwapAndCoOccurrenceFail SKIPPED
+
+Aud53CorrectionTest > wrongIdentityAndWorkflowFieldsFailClosed SKIPPED
+
+Aud53CorrectionTest > exactPairMemorizationCannotClearAProductiveCapability SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Aud53CorrectionTest: 10 reported, 0 passed, 0 failed, 10 skipped
+
+BackupSnapshotCorrectionTest > concurrentLearnerWritesCannotBeClaimedAsPartOfTheWrittenArchive SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.BackupSnapshotCorrectionTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+BatchECapabilityResearchTest > digestsGovernanceAndLaterUnitsStayUnchanged SKIPPED
+
+BatchECapabilityResearchTest > identityMutationsSubstitutionsAndRelabelingFailClosed SKIPPED
+
+BatchECapabilityResearchTest > unit17MessagesFollowTheUnresolvedCapabilitySet SKIPPED
+
+BatchECapabilityResearchTest > missingChainAndReadinessFlipKeepAdvancementBlocked SKIPPED
+
+BatchECapabilityResearchTest > retainedPagesAreExcludedAndDoNotClearTheFiveCapabilities SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.BatchECapabilityResearchTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+ContentAuditCorrectionTest > spellingExplanationRecordsResolveRetainedFormsAndStayPending SKIPPED
+
+ContentAuditCorrectionTest > possessiveInstructionLabelsFormsAndWorksTheRetainedFeminineCaseChange SKIPPED
+
+ContentAuditCorrectionTest > instrumentalAdjectiveExplanationPrecedesTheCaseChoice SKIPPED
+
+ContentAuditCorrectionTest > possessiveFeedbackAndRemediationExplainTheSameGenderNumberAndCaseRule SKIPPED
+
+ContentAuditCorrectionTest > unitEightTeachingWorksTheNounPluralAndSeparatesOtherPatterns SKIPPED
+
+ContentAuditCorrectionTest > purposeRegisterExplanationPrecedesTheOrdinaryPurposeChoice SKIPPED
+
+ContentAuditCorrectionTest > spellingQuestionsNameTheActualFormEvidenceAndRemediationRetainsAllTeaching SKIPPED
+
+ContentAuditCorrectionTest > negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm SKIPPED
+
+ContentAuditCorrectionTest > adjectivePluralFormPrecedesTheSpellingChoice SKIPPED
+
+ContentAuditCorrectionTest > instrumentalNounExplanationPrecedesTheCaseChoice SKIPPED
+
+ContentAuditCorrectionTest > unitEightExplanationCoverageStaysPendingAndRejectsTamperedHashes SKIPPED
+
+ContentAuditCorrectionTest > unit27AdvancesWithoutOptionalPresentPassive SKIPPED
+
+ContentAuditCorrectionTest > aspectCounterpartExplanationPrecedesThePartnerChoice SKIPPED
+
+ContentAuditCorrectionTest > auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement SKIPPED
+
+ContentAuditCorrectionTest > spellingInstructionExplainsFormsBeforePracticeAndWorksTheAccusative SKIPPED
+
+ContentAuditCorrectionTest > packValidatesAndRejectsTheAuditedFalseKeys SKIPPED
+
+ContentAuditCorrectionTest > unitEightChecksAssessNominativeFormsAndRetainCompleteRemediation SKIPPED
+
+ContentAuditCorrectionTest > unitTwelveAspectFeedbackExplainsBothOptionsAndRemediationRetainsThePairs SKIPPED
+
+ContentAuditCorrectionTest > imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice SKIPPED
+
+ContentAuditCorrectionTest > possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice SKIPPED
+
+ContentAuditCorrectionTest > unitElevenChecksPastAgreementBeforeAspectIntroductionWithoutLoweringItsGate SKIPPED
+
+ContentAuditCorrectionTest > possessiveWorkedExplanationRecordsStayPendingAndRejectAChangedHash SKIPPED
+
+ContentAuditCorrectionTest > gatingChangeInvalidatesUnitAndPackIdentitiesOnly SKIPPED
+
+ContentAuditCorrectionTest > courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation SKIPPED
+
+ContentAuditCorrectionTest > reorderedSessionsRejectResumeIdentityBoundToThePreviousPosition SKIPPED
+
+ContentAuditCorrectionTest > nounPluralFormAndSevenLetterRulePrecedeTheChoice SKIPPED
+
+ContentAuditCorrectionTest > accusativeDeclensionExplanationPrecedesTheNounChoice SKIPPED
+
+ContentAuditCorrectionTest > unitTwelveAspectTeachingLabelsPairsAndAvoidsAnUnfinishedActionRule SKIPPED
+
+ContentAuditCorrectionTest > wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation SKIPPED
+
+ContentAuditCorrectionTest > unitTwelveAspectCoverageResolvesOriginalPairsAndRejectsTamperedHashes SKIPPED
+
+ContentAuditCorrectionTest > perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.ContentAuditCorrectionTest: 31 reported, 0 passed, 0 failed, 31 skipped
+
+DailyPlanUiTest > homeIdentifiesRequiredWorkAndTheChecklistRecordsExternalCompletion SKIPPED
+
+DailyPlanUiTest > missingPracticeAudioStaysIncompleteWhileOtherWorkRemainsAvailable SKIPPED
+
+DailyPlanUiTest > continueOpensTheNamedBookPlanNotTheGenericChecklist SKIPPED
+
+DailyPlanUiTest > failedChecklistSaveKeepsThePriorStateAndRetries SKIPPED
+
+DailyPlanUiTest > prescribedPracticeStaysDisabledWhenNoPrescribedWordIsPlayable SKIPPED
+
+DailyPlanUiTest > beginAndStartOpenTheFirstPlayablePrescribedWord SKIPPED
+
+DailyPlanUiTest > continueOpensTheNamedAnkiPlanAfterBookCompletion SKIPPED
+AUDIT_CLASS dev.russiancompanion.presentation.navigation.DailyPlanUiTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+PhysicalAcceptanceCorrectionTest > persistenceFailureShowsAnErrorAndDoesNotCompleteOnboarding SKIPPED
+
+PracticeSessionUiTest > missingModelFileStaysOutOfTheSessionAndKeepsAttribution SKIPPED
+
+PracticeSessionUiTest > sessionPlaysRecordsReplaysAndCompletesWithoutAScore SKIPPED
+
+PracticeSessionUiTest > deniedMicrophoneAnnouncesAndDoesNotCapture SKIPPED
+
+PracticeSessionUiTest > unmatchedTextNeverEntersTheLibraryAndNoRecordingOnlySubstituteAppears SKIPPED
+AUDIT_CLASS dev.russiancompanion.presentation.navigation.PracticeSessionUiTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+PhysicalAcceptanceCorrectionTest > noInternetPermissionAndReleaseTasksStayGated SKIPPED
+
+PhysicalAcceptanceCorrectionTest > disallowedOnboardingPhrasesAreAbsentFromTheVisibleIntroduction SKIPPED
+
+PhysicalAcceptanceCorrectionTest > darkThemeUsesDarkBackgroundAndReadableForegroundRoles SKIPPED
+
+PhysicalAcceptanceCorrectionTest > largeFontScaleKeepsSelectionAndConfirmVisible SKIPPED
+
+PhysicalAcceptanceCorrectionTest > tappingLesson12SelectsOnlyLesson12AndEnablesConfirm SKIPPED
+
+PhysicalAcceptanceCorrectionTest > allThirtyLessonRowsAreAvailableAndConfirmStaysVisible SKIPPED
+
+PhysicalAcceptanceCorrectionTest > relaunchRestoresTheSelectedLessonAndSkipsOnboarding SKIPPED
+
+PhysicalAcceptanceCorrectionTest > confirmationPersistsOnceAndOpensHome SKIPPED
+
+PhysicalAcceptanceCorrectionTest > onboardingObservesSafeSystemInsetsAndUsesTheApplicationShell SKIPPED
+AUDIT_CLASS dev.russiancompanion.presentation.navigation.PhysicalAcceptanceCorrectionTest: 10 reported, 0 passed, 0 failed, 10 skipped
+
+UiWorkCoordinatorTest > aPersistenceExceptionDeliversExactlyOneFailure SKIPPED
+
+UiWorkCoordinatorTest > synchronousSubmitStillRejectsANestedCall SKIPPED
+
+UiWorkCoordinatorTest > overlappingSubmitIsRejectedAndWorkLeavesTheCallerThread SKIPPED
+
+UiWorkCoordinatorTest > anExportExceptionDeliversExactlyOneFailureOffTheCallerThread SKIPPED
+AUDIT_CLASS dev.russiancompanion.presentation.navigation.UiWorkCoordinatorTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+LinguisticReleaseGateTest > packWideChainStaysBlockedWhenOnlyUnitsAreAccepted SKIPPED
+
+LinguisticReleaseGateTest > retainedArtifactBytesPathAndDocumentMustMatch SKIPPED
+
+LinguisticReleaseGateTest > releaseGateAndValidatorRejectIncompleteAcceptance SKIPPED
+
+LinguisticReleaseGateTest > livePackKeepsLinguisticReviewAbsentWithoutFabricatingAcceptance SKIPPED
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+LinguisticReleaseGateTest > completeCurrentAcceptanceClearsTheLinguisticBlockerOnlyForTheRetainedArtifact SKIPPED
+AUDIT_CLASS dev.russiancompanion.release.LinguisticReleaseGateTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+ReleaseSourceDigestTest > mismatchedApkHashRejectsRetainedEvidence SKIPPED
+
+ReleaseSourceDigestTest > retainedEvidenceIsRejectedAfterACatalogChange SKIPPED
+
+ReleaseSourceDigestTest > changingReleaseInputsChangesTheDigestAndLeavesEvidenceExcluded SKIPPED
+
+ReleaseSourceDigestTest > retainedEvidenceIsRejectedAfterAVersionIdentityChange SKIPPED
+
+ReleaseSourceDigestTest > failedFrozenV110CandidateCannotAuthorizeV111 SKIPPED
+
+ReleaseSourceDigestTest > retainedEvidenceIsRejectedAfterAnAudioChange SKIPPED
+
+ReleaseSourceDigestTest > anUnfrozenCandidateCannotApproveRelease SKIPPED
+
+ReleaseSourceDigestTest > mismatchedCandidateCommitRejectsRetainedEvidence SKIPPED
+
+ReleaseSourceDigestTest > retainedEvidenceIsRejectedAfterAKotlinChange SKIPPED
+
+ReleaseSourceDigestTest > aNullArtifactIdentityCannotApproveRelease SKIPPED
+
+ReleaseSourceDigestTest > retainedEvidenceIsRejectedAfterAResourceChange SKIPPED
+
+ReleaseSourceDigestTest > changingAnAcceptanceProcedureInvalidatesPriorEvidence SKIPPED
+
+ReleaseSourceDigestTest > committedCandidateRecordsTheCurrentSourceDigestAndIdentity SKIPPED
+
+ReleaseSourceDigestTest > retainedEvidenceIsRejectedAfterAGradleChange SKIPPED
+AUDIT_CLASS dev.russiancompanion.release.ReleaseSourceDigestTest: 14 reported, 0 passed, 0 failed, 14 skipped
+
+Aud44CorrectionTest > threeAdverbGlossPairsCannotClearTheParadigm SKIPPED
+
+Aud44CorrectionTest > currentQuestionImpersonationUsesOnlyTheRealPinnedPacketWithoutInventingAHost SKIPPED
+
+Aud44CorrectionTest > unrelatedEvidenceCannotImpersonateProductiveClockTime SKIPPED
+
+Aud44CorrectionTest > reviewsMappingsAndReleaseStayUnsigned SKIPPED
+
+Aud44CorrectionTest > faultySuffixFormulationIsNotAnApprovedRussianRule SKIPPED
+
+Aud44CorrectionTest > threeClockPhrasesCannotClearProductiveClockTime SKIPPED
+
+Aud44CorrectionTest > unit17SourceAdmissionDoesNotReachOtherUnits SKIPPED
+
+Aud44CorrectionTest > sharedLicenseNoticeDoesNotAnnounceUnitReadiness SKIPPED
+
+Aud44CorrectionTest > unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged SKIPPED
+
+Aud44CorrectionTest > calendarDateCompletionCannotConcealTheClockGap SKIPPED
+
+Aud44CorrectionTest > unit17AdvancementNamesOnlyUnresolvedSourceCapabilities SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Aud44CorrectionTest: 11 reported, 0 passed, 0 failed, 11 skipped
+
+BackupRecreationTest > recreatedActivityKeepsOneRestoreOutcome SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.BackupRecreationTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+BatchBUnits2125Test > wordOrderContrastDoesNotClearNegationScope SKIPPED
+
+BatchBUnits2125Test > independentChecksRejectSourceLayoutRecall SKIPPED
+
+BatchBUnits2125Test > admittedCapabilitiesMatchFrozenIdentityAndLeaveUnresolvedClaimsClosed SKIPPED
+
+BatchBUnits2125Test > completionOverPeriodClearsOnlyForACompleteMatchingAdmission SKIPPED
+
+BatchBUnits2125Test > retainedCitationDonorStaysExactWhileIndependentObjectTransferKeepsItsRealContext SKIPPED
+
+BatchBUnits2125Test > governedPairsRejectCoOccurrenceAndASubstitutedGloss SKIPPED
+
+BatchBUnits2125Test > classificationChecksCannotClearProductiveDiminutive SKIPPED
+
+BatchBUnits2125Test > boundedEvidenceCannotClearUnresolvedCapabilities SKIPPED
+
+BatchBUnits2125Test > wrongSourceRevisionUnitAndObjectiveFail SKIPPED
+
+BatchBUnits2125Test > reflexiveSentencePairRejectsIsolatedTokenAndWifeCitation SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.BatchBUnits2125Test: 10 reported, 0 passed, 0 failed, 10 skipped
+
+ContentAuditCheckpointRepairTest > optionalStressHasItsOwnProvenanceAndActualResponseShape SKIPPED
+
+ContentAuditCheckpointRepairTest > imperfectiveChecksAssessTheirOwnAspectAndASeparateSubjectContrast SKIPPED
+
+ContentAuditCheckpointRepairTest > correctedAdmissionRejectsHashScopeMissingFeatureAndClonedCheck SKIPPED
+
+ContentAuditCheckpointRepairTest > researchAdmissionCannotOmitItsSynthesisEvidence SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.ContentAuditCheckpointRepairTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+BackupLicenseTest > backupRoundTripRestoresGovernedRecordsWithoutChangingTheLiveCopy SKIPPED
+
+BackupLicenseTest > recordingBytesRoundTripAndBackupDoesNotClaimAFailedWrite SKIPPED
+
+BackupLicenseTest > cancelledBackupAndDeclinedRestoreLeaveLiveDataUnchanged SKIPPED
+
+BackupLicenseTest > failedJournalWriteKeepsTheSnapshotWhenImmediateRollbackCannotFinish SKIPPED
+
+BackupLicenseTest > restoreRejectsARecordingForAnUnknownAudioModel SKIPPED
+
+BackupLicenseTest > repeatedBackupTapsDoNotStartASecondOperation SKIPPED
+
+BackupLicenseTest > backupScreenRejectsABadFileAndConfirmsReplacementOnce SKIPPED
+
+BackupLicenseTest > malformedTruncatedUnsupportedAndTamperedPackagesDoNotChangeData SKIPPED
+
+BackupLicenseTest > missingAttributionAndMissingNoticeFailClosed SKIPPED
+
+BackupLicenseTest > attributionsScreenShowsPackagedNoticeTextAndReturns SKIPPED
+
+BackupLicenseTest > failedRecordingPublishRestoresDatabaseRowsAndRecordingBytes SKIPPED
+
+BackupLicenseTest > failedJournalWriteRestoresTheOriginalRecordingSnapshot SKIPPED
+
+BackupLicenseTest > failedReplacementKeepsTheOriginalDatabase SKIPPED
+
+BackupLicenseTest > failedSnapshotRestoreKeepsRecoveryMaterialsUntilTheNextStoreOpen SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.BackupLicenseTest: 14 reported, 0 passed, 0 failed, 14 skipped
+
+BatchAUnits71620Test > currentBatchAExplainsEveryRetainedAndExpandedConstructAndRejectsWrongKeys SKIPPED
+
+BatchAUnits71620Test > exactSpanIdentityRejectsKeywordAndCrossClaimSubstitution SKIPPED
+
+BatchAUnits71620Test > generatedRussianAndInternetStayClosed SKIPPED
+
+BatchAUnits71620Test > admittedCapabilitiesRejectForgeryCrossBindingAndWrongSpans SKIPPED
+
+BatchAUnits71620Test > wikipediaLicenseRouteIsNotTheWikibooksSnapshot SKIPPED
+
+BatchAUnits71620Test > batchAExplanationsNameTheKeyedRelationshipAndRejectASwap SKIPPED
+
+BatchAUnits71620Test > partialUnitsStayBlockedAndClosedChainsCanBeReviewPending SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.BatchAUnits71620Test: 7 reported, 0 passed, 0 failed, 7 skipped
+
+CompletionEvidenceCorrectionTest > hashCorrectRestoredUnsupportedCompletionIsHistoricalAndCannotUnlock SKIPPED
+
+CompletionEvidenceCorrectionTest > unboundLegacyViewCannotTurnClaimedCompletionIntoCurrentEvidence SKIPPED
+
+CompletionEvidenceCorrectionTest > changedEvidenceIsRecomputedAndLaterPlacementDoesNotUnlockFutureUnits SKIPPED
+
+CompletionEvidenceCorrectionTest > changedContentCannotKeepAnOldCompletionOrUnlockItsSuccessor SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.CompletionEvidenceCorrectionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+AttributionsUiTest > inventoryShowsStoredRightsAndTheUnconfirmedReleaseBlock SKIPPED
+
+AttributionsUiTest > emptyInventoryShowsNotReadyWithoutAReleaseBlock SKIPPED
+
+AttributionsUiTest > packagedSeedShowsInstalledInventoryAfterShareAlikeConfirmation SKIPPED
+
+AttributionsUiTest > confirmedShareAlikeDoesNotShowTheReleaseBlock SKIPPED
+
+AttributionsUiTest > notApplicableShareAlikeDoesNotShowTheReleaseBlock SKIPPED
+AUDIT_CLASS dev.russiancompanion.presentation.navigation.AttributionsUiTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+NavigationShellTest > missingGatewayShowsTheLocalDataProblem SKIPPED
+
+NavigationShellTest > packagedCompletePathwayLetsOnboardingFinishAfterShareAlikeConfirmation SKIPPED
+
+NavigationShellTest > admittedLessonOpensHomeAndTheShellDestinations SKIPPED
+AUDIT_CLASS dev.russiancompanion.presentation.navigation.NavigationShellTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+SnapshotRequestGuardTest > anOlderLoadCannotOverwriteANewerRequest SKIPPED
+AUDIT_CLASS dev.russiancompanion.presentation.navigation.SnapshotRequestGuardTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+ReleaseOutputTasksTest > gradleAttachesTheSameMatcherToReleaseOutputs SKIPPED
+
+ReleaseOutputTasksTest > debugTestsAndIntermediateTasksStayUngated SKIPPED
+
+ReleaseOutputTasksTest > apkAabPublishAndVariantReleaseTasksAreGated SKIPPED
+AUDIT_CLASS dev.russiancompanion.release.ReleaseOutputTasksTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Aud57CorrectionTest > formsRowAloneCannotClearDictionaryUse SKIPPED
+
+Aud57CorrectionTest > deletingTheDisplayedEntryLeavesDictionaryUseUnresolved SKIPPED
+
+Aud57CorrectionTest > capstoneReadingCannotClearDictionaryUse SKIPPED
+
+Aud57CorrectionTest > letterWritingCorrespondenceGreetingAndSampleLineCannotClearPostalAddress SKIPPED
+
+Aud57CorrectionTest > swappingSenseHeadwordOrApplicationAnswerFailsClosed SKIPPED
+
+Aud57CorrectionTest > componentRecognitionAndWrongOrderCannotClearPostalAddress SKIPPED
+
+Aud57CorrectionTest > governedEntryAndCompleteAddressResolve SKIPPED
+
+Aud57CorrectionTest > partOfSpeechLabelAloneCannotClearDictionaryUse SKIPPED
+
+Aud57CorrectionTest > isolatedHeadwordTranslationAndLookupPrefixCannotClearDictionaryUse SKIPPED
+
+Aud57CorrectionTest > incompleteAddressCannotMasqueradeAsTheGovernedFormat SKIPPED
+
+Aud57CorrectionTest > optionalComponentsAreNotUniversallyMandatory SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Aud57CorrectionTest: 11 reported, 0 passed, 0 failed, 11 skipped
+
+BatchARemainingSourceIntakeTest > keywordOnlyMutableUrlAndForeignLicenseFailClosed SKIPPED
+
+BatchARemainingSourceIntakeTest > wrongRevisionChangedHashWrongSpanAndWrongPageFailClosed SKIPPED
+
+BatchARemainingSourceIntakeTest > correctSpanOnTheWrongUnitObjectiveOrClaimFailsClosed SKIPPED
+
+BatchARemainingSourceIntakeTest > invarianceChecksHaveOneDashColonAnswer SKIPPED
+
+BatchARemainingSourceIntakeTest > admittedSpansStayBoundAndBroaderClaimsStayUnresolved SKIPPED
+
+BatchARemainingSourceIntakeTest > boundedInvarianceEvidenceCannotClearAdverbParadigm SKIPPED
+
+BatchARemainingSourceIntakeTest > substitutingAnInvarianceDistractorAsTheKeyFails SKIPPED
+
+BatchARemainingSourceIntakeTest > invarianceCoOccurrenceDoesNotEstablishTheDashColonRelationship SKIPPED
+
+BatchARemainingSourceIntakeTest > sourceCoOccurrenceWithoutAGovernedRelationshipFailsClosed SKIPPED
+
+BatchARemainingSourceIntakeTest > boundedEvidenceCannotClearTheBroaderClockOrAdverbClaims SKIPPED
+
+BatchARemainingSourceIntakeTest > deletingTheDashColonRelationshipWordingFailsClosed SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.BatchARemainingSourceIntakeTest: 11 reported, 0 passed, 0 failed, 11 skipped
+
+CompleteRuleCorrectionTest > completeChoicesExplainTheCasesAndAllTeachingPrecedesPractice SKIPPED
+
+CompleteRuleCorrectionTest > historicalFragmentAttemptIsRetainedButCannotCreditTheCompleteRule SKIPPED
+
+CompleteRuleCorrectionTest > coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext SKIPPED
+
+CompleteRuleCorrectionTest > availabilityPlayerShowsCompleteRulesWithItsFullRussianCue SKIPPED
+
+CompleteRuleCorrectionTest > possessionPlayerShowsCompleteRulesWithItsFullRussianCue SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.CompleteRuleCorrectionTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+CumulativePolicyHistoryBaselineTest > genuineSchemaThreeLifecycleRestoresReopensAndContinuesWithoutErasingAcceptedSnapshots SKIPPED
+
+CumulativePolicyHistoryBaselineTest > genuinePredecessorSchemaOneLifecycleRestoresReopensAndContinuesWithoutRelabelling SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.CumulativePolicyHistoryBaselineTest: 2 reported, 0 passed, 0 failed, 2 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+CumulativeReviewSelectionTest > genuineSchemaOneHistoryKeepsItsExactIdentityAndAcceptedCompletionSnapshot SKIPPED
+
+CumulativeReviewSelectionTest > newAssignmentIsRecentAwareImmutableAndRequiresFreshAnswersAcrossBackupAndEpoch SKIPPED
+
+CumulativeReviewSelectionTest > leastRecentAndUnknownHistoryUseAuthoredCandidateOrderRatherThanIdentifiers SKIPPED
+
+CumulativeReviewSelectionTest > optionalGuidedStaleUnorderedForgedAndWrongContextRowsDoNotRankCandidates SKIPPED
+
+CumulativeReviewSelectionTest > newestCurrentMissWinsAndLaterCorrectAnswerResolvesIt SKIPPED
+
+CumulativeReviewSelectionTest > unknownAssignmentVersionsFailClosedAndUntaughtOwnersStillCannotBeSelected SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.CumulativeReviewSelectionTest: 6 reported, 0 passed, 0 failed, 6 skipped
+
+HistoricalTeachingFixtureScopeTest > currentUnit14And15RetainTheirExactCorrectionWhileTheWholePackHasAdvanced SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.HistoricalTeachingFixtureScopeTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+CumulativeReviewStorageTest > genericKernelPreservesTheOriginalUnit3PolicyAndAssignmentIdentity SKIPPED
+
+CumulativeReviewStorageTest > prescribedAndOptionalAnswersNeverSupplyReviewOrGainExtraPrescribedCredit SKIPPED
+
+CumulativeReviewStorageTest > completionMetadataCannotLinkAReviewToAnotherUnitDuringRestore SKIPPED
+
+CumulativeReviewStorageTest > malformedRolePreBoundaryAndWrongAssignmentDigestNeverSupplyCompletion SKIPPED
+
+CumulativeReviewStorageTest > disabledOrWrongPolicyRejectsOldAssignmentsAndAnswersWithoutMutation SKIPPED
+
+CumulativeReviewStorageTest > immutableSlotsSpanTwoTaughtObjectivesAndRepeatedOpenDoesNotResample SKIPPED
+
+CumulativeReviewStorageTest > staleEpochWrongAssignmentInvalidSlotAndOutOfOptionsAreRejectedWithoutWrites SKIPPED
+
+CumulativeReviewStorageTest > forgedLinksOrdersRolesAndAssignmentHashCannotReplaceAnyLearnerRows SKIPPED
+
+CumulativeReviewStorageTest > typedPoliciesRefuseEmptyRepeatedAndAmbiguousCandidatePools SKIPPED
+
+CumulativeReviewStorageTest > latestAcceptedAnswerWinsAndDuplicateTapsDoNotAllocateExtraOrder SKIPPED
+
+CumulativeReviewStorageTest > undeclaredTargetsAndFlagOnlyLaterGatesCannotCreateHistory SKIPPED
+
+CumulativeReviewStorageTest > legacyDocumentWithoutNewFieldsDecodesWithNoSyntheticReviewRows SKIPPED
+
+CumulativeReviewStorageTest > realVersionNineDatabaseMigratesWithoutRewritingHistoricalRowsOrInventingCredit SKIPPED
+
+CumulativeReviewStorageTest > offlineCloseAndReopenRetainsExactAssignmentAnswersAndCurrentCompletion SKIPPED
+
+CumulativeReviewStorageTest > newBackupRoundtripReplacesReviewHistoryAndRestoreFaultRollsItBack SKIPPED
+
+CumulativeReviewStorageTest > placementAndBareLegacyCorrectIdsCannotCreateAssignments SKIPPED
+
+CumulativeReviewStorageTest > changedKeyTeachingAndOwnerAvailabilityRejectCreditButUnrelatedUnitsDoNot SKIPPED
+
+CumulativeReviewStorageTest > schemaOneBackupRestoresNoSyntheticReviewAndClearsReplacedLearnerHistory SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.CumulativeReviewStorageTest: 18 reported, 0 passed, 0 failed, 18 skipped
+
+LabExplanationCorrectionTest > wrongGrammarAnswerCanReviewDeclaredTeachingWithoutWritingProgress SKIPPED
+
+LabExplanationCorrectionTest > crossUnitDeclarationsCannotRevealFutureTeaching SKIPPED
+
+LabExplanationCorrectionTest > correctVocabularyAnswerCanReviewTeachingAndKeepItsSavedSelection SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.LabExplanationCorrectionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Phase2BoundedClaimsTest > duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim SKIPPED
+
+Phase2BoundedClaimsTest > liveClaimsResolveOnlyTheBoundedSynthesis SKIPPED
+
+Phase2BoundedClaimsTest > sashkaStaysDismissiveAndNameReadingsCannotBeSwapped SKIPPED
+
+Phase2BoundedClaimsTest > identitySpanAndRelabelMutationsStayClosed SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Phase2BoundedClaimsTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+HostActivityRecreationTest > recreatedActivityKeepsTheDraftAnswerAndResumePosition SKIPPED
+
+HostActivityRecreationTest > retryDropsAFailedReadFromTheReplacedStore SKIPPED
+
+HostActivityRecreationTest > recreatedActivityDuringADelayedWriteKeepsOneOutcome SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.HostActivityRecreationTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+LearnerReloadRecoveryTest > failedLearnerReadRetriesThenPersistsAnAnswerOnTheReopenedStore SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.LearnerReloadRecoveryTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+Phase3BoundedClaimsTest > duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim SKIPPED
+
+Phase3BoundedClaimsTest > pairedClaimsAndNeighboringEvidenceStayIndependent SKIPPED
+
+Phase3BoundedClaimsTest > liveClaimsResolveOnlyTheBoundedSynthesis SKIPPED
+
+Phase3BoundedClaimsTest > identitySpanAndRelabelMutationsStayClosed SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Phase3BoundedClaimsTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+ReferenceNoticeCorrectionTest > currentBoundedAvailabilityDoesNotContradictItsOwnSourceNotice SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.ReferenceNoticeCorrectionTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+SourceTextPoolTest > pythonAndKotlinExpansionRestoreTheSameRecordsAndTypedPack SKIPPED
+
+SourceTextPoolTest > poolingDoesNotLoosenStrictModelDecodingOrApproveRelease SKIPPED
+
+SourceTextPoolTest > corruptMissingConflictingAndUnboundPoolEvidenceIsRejected SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.SourceTextPoolTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit10ReinforcementReviewTest > allTeachingPrecedesPracticeAndRetainedCaseChainsRemainValid SKIPPED
+
+Unit10ReinforcementReviewTest > earlierPossessionCompletionCannotCreditTheLaterRepeatedGuideOrAbsenceChecks SKIPPED
+
+Unit10ReinforcementReviewTest > repeatedGuideAloneCannotReplaceDistinctPlaceAbsenceAndPositiveCounterexampleEvidence SKIPPED
+
+Unit10ReinforcementReviewTest > wrongPositiveCaseExplanationCannotCreditAnyNegativeContext SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit10ReinforcementReviewTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+ReauditCorrectionTest > r01_delayedProfileSaveAndCompletionCannotOverwriteRestore SKIPPED
+
+ReauditCorrectionTest > r05_delayedReconstructionCannotReplaceANewerOrRestoredSelection SKIPPED
+
+ReauditCorrectionTest > r07_appearanceFailureTeardownAndOrphanSweep SKIPPED
+
+ReauditCorrectionTest > r03_acceptanceProceduresMatchNavigationAndStayUnexecuted SKIPPED
+
+ReauditCorrectionTest > r04_realCancellationBeforeDuringAndAfterReplacement SKIPPED
+
+ReauditCorrectionTest > r10_attemptPreparationAndCourseSnapshotLeaveTheMainThread SKIPPED
+
+ReauditCorrectionTest > r06_previewFailuresResetTheCoordinatorAndRemoveStaging SKIPPED
+
+ReauditCorrectionTest > r08_stepIdentityIsUnambiguousAndBindsDisplayedSessionContext SKIPPED
+
+ReauditCorrectionTest > r01_openReplacementRejectsQueuedWritesBeforeMutation SKIPPED
+
+ReauditCorrectionTest > r09_acceptedWriteOrderIgnoresTheClockAndSurvivesReopenBackupAndMigration SKIPPED
+
+ReauditCorrectionTest > r02_laterUnitInstallationUsesTheFullValidator SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.ReauditCorrectionTest: 11 reported, 0 passed, 0 failed, 11 skipped
+
+Unit12CumulativeReviewTest > actualUnit12ContinuePastGenderCueTeachingPracticeReturnAndAdvanceStayOnUnit12 SKIPPED
+
+Unit12CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit12HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit12CumulativeReviewTest > heldUnit12WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit12CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit12CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit12CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit11RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit12CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit12CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+RuntimeCorrectionTest > unsavedNoteDraftSurvivesComposeSavedState SKIPPED
+
+RuntimeCorrectionTest > lateContinueCallbackCannotNavigateTheNextScreen SKIPPED
+
+RuntimeCorrectionTest > laterUnitLinkedExamplesAppearOnTheSamePlayer SKIPPED
+
+RuntimeCorrectionTest > failedRetryKeepsTheSavedAnswerOnScreen SKIPPED
+
+RuntimeCorrectionTest > olderSaveRefreshCannotHideANewerRejectedWrite SKIPPED
+
+RuntimeCorrectionTest > storeWorkRunsOnTheStoreThread SKIPPED
+
+RuntimeCorrectionTest > committedSaveReportsReloadFailureWithoutErasingTheWrite SKIPPED
+
+RuntimeCorrectionTest > unitOneSequenceKeepsDraftsThroughRemediationResumeAndAdvancement SKIPPED
+
+RuntimeCorrectionTest > failedAdvancementLeavesTheReviewInPlace SKIPPED
+
+RuntimeCorrectionTest > formerGuidedPracticeGapsNowHaveRealItems SKIPPED
+
+RuntimeCorrectionTest > repeatedContinueCannotSkipAStep SKIPPED
+
+RuntimeCorrectionTest > advancementRollsBackWhenTheFollowingProfileWriteFails SKIPPED
+
+RuntimeCorrectionTest > questionsKeepIndependentSelectionsAndFeedback SKIPPED
+
+RuntimeCorrectionTest > failedWritePreservesPriorDataAndShowsOneFailure SKIPPED
+
+RuntimeCorrectionTest > remediationReachesGuidedPracticeThenReturnsToTheFailedCheck SKIPPED
+
+RuntimeCorrectionTest > remediationOpensTheDeclaredTargetAndReturnsToTheFailedCheck SKIPPED
+
+RuntimeCorrectionTest > composeSavedStateDuringADelayedWriteKeepsOneOutcome SKIPPED
+
+RuntimeCorrectionTest > delayedStorageLeavesTheLessonScreenResponsive SKIPPED
+
+RuntimeCorrectionTest > startupLoadingDoesNotBlockTheMainThread SKIPPED
+
+RuntimeCorrectionTest > olderSaveRefreshCannotClaimSuccessWhileALaterWriteIsPending SKIPPED
+
+RuntimeCorrectionTest > todayOpensAdvancementReviewInsteadOfTheLastLessonStep SKIPPED
+
+RuntimeCorrectionTest > olderRefreshCannotReplaceANewerSelection SKIPPED
+
+RuntimeCorrectionTest > linkedExamplesAppearOnTheRunningLessonScreen SKIPPED
+
+RuntimeCorrectionTest > repeatedTutorTapsCreateOneQueueRow SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.RuntimeCorrectionTest: 24 reported, 0 passed, 0 failed, 24 skipped
+
+Unit10IndependentReinforcementTest > sharedFrozenApplicationsCannotBeReversedWithCoherentTupleHashUpdates SKIPPED
+
+Unit10IndependentReinforcementTest > repeatedIndependentAnswersNeedTheirOwnGovernedAttemptsInEachObjective SKIPPED
+
+Unit10IndependentReinforcementTest > earlierCompletionAndBothRepeatedAbsenceAnswersStillRequireTwoPlaceContexts SKIPPED
+
+Unit10IndependentReinforcementTest > wrongPolarityCannotCreditAnyMemberOfEitherIndependentPair SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit10IndependentReinforcementTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Unit11FeedbackCorrectionTest > wrongPluralSelectionDisplaysFemininePastExplanation SKIPPED
+
+Unit11FeedbackCorrectionTest > feedbackExplainsPastAgreementAndInfinitiveContrast SKIPPED
+
+Unit11FeedbackCorrectionTest > historicalQuestionFeedbackCreditIsRetainedButStale SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit11FeedbackCorrectionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+CumulativeReviewGateTest > asynchronousReviewWriteCannotCrossActualLearnerReplacementAndBackRemainsResponsive SKIPPED
+
+CumulativeReviewGateTest > actualContinueReviewAndGateUiRequireBothChoicesAndShowTargetedFeedback SKIPPED
+
+CumulativeReviewGateTest > completeOrdinaryWorkCannotAdvanceUntilBothAssignedObjectivesAreReviewed SKIPPED
+
+CumulativeReviewGateTest > migratedVersionTenKeepsRawHistoryButChangedGenderTeachingRejectsOldLessonCredit SKIPPED
+
+CumulativeReviewGateTest > versionThreeBackupPreservesCompletionSnapshotAndRejectsForgedActivationLinks SKIPPED
+
+CumulativeReviewGateTest > optionalAndPrescribedReplaysCannotCompleteReviewOrBypassTransactionalAdvance SKIPPED
+
+CumulativeReviewGateTest > completedHistoryKeepsItsAcceptedAnswerSnapshotAndTransactionFailureRollsBack SKIPPED
+
+CumulativeReviewGateTest > placementOnlyUiOffersRealEarlierTeachingAndNoEmptyReviewCompletion SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.CumulativeReviewGateTest: 8 reported, 0 passed, 0 failed, 8 skipped
+
+FullSynthesisTupleCorrectionTest > fullValidatorRejectsSwappedDictionaryAnswersEvenWhenAllMutableApplicationsAgree SKIPPED
+
+FullSynthesisTupleCorrectionTest > fullValidatorRejectsSwappedReadingAnswersEvenWhenAllMutableApplicationsAgree SKIPPED
+
+FullSynthesisTupleCorrectionTest > fullValidatorRejectsSwappedNameAnswersEvenWhenAllMutableApplicationsAgree SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+LabCueCorrectionTest > vocabularyShowsTheGovernedWordCue SKIPPED
+
+LabCueCorrectionTest > readingShowsTheGovernedStressCue SKIPPED
+
+LabCueCorrectionTest > unsupportedCompletionIsVisibleAsHistoryWithoutCurrentCredit SKIPPED
+
+LabCueCorrectionTest > grammarShowsTheCompleteSentenceCue SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.LabCueCorrectionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+OptionalGlossRemediationTest > optionalMeaningExplanationReturnsToItsSelectionWithoutGrantingCaseRoleCredit SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.OptionalGlossRemediationTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+QuestionWordCueCorrectionTest > answerExposingHistoricalAttemptsAndStepCompletionDoNotSupplyCurrentCredit SKIPPED
+
+QuestionWordCueCorrectionTest > displayRoleIsDigestBoundAndCannotBeUsedToHideARequiredCue SKIPPED
+
+QuestionWordCueCorrectionTest > questionWordLessonAsksFromEnglishPurposeWithoutPrintingTheAnswerAsACue SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.QuestionWordCueCorrectionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+RequiredPathProgressTest > sharedAndUnknownSessionOwnershipRemainRequired SKIPPED
+
+RequiredPathProgressTest > requiredCompletionReachesAdvancementWithOptionalWorkUntouched SKIPPED
+
+RequiredPathProgressTest > explicitlyOpenedOptionalSessionStillRequiresItsOwnAnswers SKIPPED
+
+RequiredPathProgressTest > optionalCorrectAnswersCannotSatisfyTheRequiredMinimum SKIPPED
+
+RequiredPathProgressTest > continueAndTodaySkipOptionalSessionsBeforeRequiredWork SKIPPED
+
+RequiredPathProgressTest > allRequiredSessionsStillRunInOrder SKIPPED
+
+RequiredPathProgressTest > mixedStepRequiresOnlyRequiredAnswersAndKeepsTheirIdentityChecks SKIPPED
+
+RequiredPathProgressTest > unitWithoutRequiredSessionsHasAnAdvancementTarget SKIPPED
+
+RequiredPathProgressTest > optionalResumeStillRejectsAnUnverifiedContentIdentity SKIPPED
+
+RequiredPathProgressTest > optionalSessionRemainsAvailableForExplicitVerifiedResume SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.RequiredPathProgressTest: 10 reported, 0 passed, 0 failed, 10 skipped
+
+Unit10FeedbackCorrectionTest > wrongObjectSelectionDisplaysTheSubjectContrast SKIPPED
+
+Unit10FeedbackCorrectionTest > feedbackExplainsPronounReferentsAndAnimateObjectCase SKIPPED
+
+Unit10FeedbackCorrectionTest > historicalGenericFeedbackCreditIsRetainedButStale SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit10FeedbackCorrectionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit11CumulativeReviewTest > schema11LegacyRowsRemainStoredButChangedAgreementInstructionRequiresRepair SKIPPED
+
+Unit11CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit11CumulativeReviewTest > heldUnit11WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit11CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit11CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit10RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit11CumulativeReviewTest > oldFormatOneAndTwoKeepHistoricalWorkWithoutCreditingChangedUnit11Instruction SKIPPED
+
+Unit11CumulativeReviewTest > actualUnit11ContinuePossessionAbsenceCueTeachingPracticeReturnAndAdvanceStayOnUnit11 SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit11CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+FullAuditCorrectionTest > f04_productionInstallAndReleaseValidationStayClosed SKIPPED
+
+FullAuditCorrectionTest > f08_and_f12_restoreOutcomesResetTheCoordinatorAndCleanStaging SKIPPED
+
+FullAuditCorrectionTest > f02_correctlyHashedInvalidProfilesAreRejectedBeforeMutation SKIPPED
+
+FullAuditCorrectionTest > f05_consecutiveDuplicatesAreSuppressedAndTheFinalSelectionSurvivesReload SKIPPED
+
+FullAuditCorrectionTest > f10_repeatedTapsDuringADelayedWriteLockTheItem SKIPPED
+
+FullAuditCorrectionTest > f11_completionValidationReadsAndIdentifiesOffTheMainThread SKIPPED
+
+FullAuditCorrectionTest > f11_delayedLearnerReadLeavesTheMainThreadFree SKIPPED
+
+FullAuditCorrectionTest > f06_legacyStepRowsDoNotCountAsCurrentCompletion SKIPPED
+
+FullAuditCorrectionTest > f01_advancementSavesTheNextPositionWithItsDigestAndContinueSurvivesRestart SKIPPED
+
+FullAuditCorrectionTest > f09_savedNotesAndTutorQuestionsRemainReadableAfterRestart SKIPPED
+
+FullAuditCorrectionTest > f01_unverifiedPositionDoesNotMutateTheProfile SKIPPED
+
+FullAuditCorrectionTest > f07_stepIdentityCoversDisplayedDependenciesAndFailsClosed SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.FullAuditCorrectionTest: 12 reported, 0 passed, 0 failed, 12 skipped
+
+IndeclinableCorrectionTest > choicesTeachLanguageBehaviorAndRemediationRestoresAllInstruction SKIPPED
+
+IndeclinableCorrectionTest > historicalFlagAttemptRemainsStoredButDoesNotSupplyCurrentCredit SKIPPED
+
+IndeclinableCorrectionTest > lessonDisplaysBehaviorChoicesAndTheRequiredWordCue SKIPPED
+
+IndeclinableCorrectionTest > forgedBehaviorKeyCannotOverrideTheFrozenLexicalClassification SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.IndeclinableCorrectionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+MultiPoolReviewSelectionTest > versionScopesUntaughtOwnersAndChangedSourceCannotAcquireReviewCreditOrRewriteHistory SKIPPED
+
+MultiPoolReviewSelectionTest > nonFirstWindowUiRepairsFullBehaviorTeachingAndStillRequiresOppositeKeyFreshAnswer SKIPPED
+
+MultiPoolReviewSelectionTest > nonFirstStudentUiRepairsFullRoleTeachingAndStillRequiresFreshAssignedAnswers SKIPPED
+
+MultiPoolReviewSelectionTest > genuineSchemaOneAndTwoHistoriesKeepExactAssignmentsAndAcceptedCompletionSnapshots SKIPPED
+
+MultiPoolReviewSelectionTest > unit6CanSelectEveryAuthoredCandidateAndResolveMissesIncludingOppositeKeyContrasts SKIPPED
+
+MultiPoolReviewSelectionTest > unit5ChoosesRecentStudentMissAndLaterCorrectResolvesItWithoutUsingClockOrOptionalRows SKIPPED
+
+MultiPoolReviewSelectionTest > newAssignmentsStayImmutableAndMixedVersionBackupRestartAndEpochPreserveFreshCredit SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.MultiPoolReviewSelectionTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+PracticeRetrievalDigestTest > mismatchedDigestAttemptLeavesContinueDisabledAndCreatesNoCompletedStep SKIPPED
+
+PracticeRetrievalDigestTest > prescribedCheckScoresRemediationAndCompletesOnce SKIPPED
+
+PracticeRetrievalDigestTest > unansweredPracticeAndBlockedLabsDoNotRecordCompletion SKIPPED
+
+PracticeRetrievalDigestTest > unverifiedAttemptsStayExcludedAfterReload SKIPPED
+
+PracticeRetrievalDigestTest > checkStepDoesNotCompleteUntilItIsAnswered SKIPPED
+
+PracticeRetrievalDigestTest > governedAnswerEnablesContinueAfterAFreshLoadAndSurvivesRefresh SKIPPED
+
+PracticeRetrievalDigestTest > alphabetPracticeScoresFeedbackWithoutPrescribedCreditOrDuplicateRows SKIPPED
+
+PracticeRetrievalDigestTest > legacyAttemptLeavesContinueDisabledAndCreatesNoCompletedStep SKIPPED
+
+PracticeRetrievalDigestTest > readingVocabularyGrammarAndMixedStayOptionalAndPrerequisiteFiltered SKIPPED
+
+PracticeRetrievalDigestTest > savedWorkResumesABookmarkWithoutANewAttemptAndHidesCompletedChecks SKIPPED
+
+PracticeRetrievalDigestTest > twoGovernedAnswersOnOneStepBothRemainAfterTheSecondWrite SKIPPED
+
+PracticeRetrievalDigestTest > mismatchedResumeDigestStaysClosed SKIPPED
+
+PracticeRetrievalDigestTest > emptyAndUnverifiedSavedPositionsStayClosed SKIPPED
+
+PracticeRetrievalDigestTest > practiceAndSavedWorkStayReachableAtLargeFontInLandscape SKIPPED
+
+PracticeRetrievalDigestTest > otherStepAttemptLeavesContinueDisabledAndCreatesNoCompletedStep SKIPPED
+
+PracticeRetrievalDigestTest > legacyAndMismatchedAttemptsDoNotGrantCreditAndBackupKeepsTheOriginalDigest SKIPPED
+
+PracticeRetrievalDigestTest > optionalPracticeAcceptsALaterAnswerAndSuppressesTheSameSelection SKIPPED
+
+PracticeRetrievalDigestTest > migrationMarksExistingAttemptIdentityUnrecoverable SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.PracticeRetrievalDigestTest: 18 reported, 0 passed, 0 failed, 18 skipped
+
+RemainingReauditCorrectionTest > practiceSnapshotDiscardsAStaleGeneration SKIPPED
+
+RemainingReauditCorrectionTest > unsupportedDashPairsStayRejected SKIPPED
+
+RemainingReauditCorrectionTest > concurrentSweepCancellationAndTeardownKeepTheRemainingOwner SKIPPED
+
+RemainingReauditCorrectionTest > staleOptionalAnswerDoesNotSuppressTheSameCurrentOption SKIPPED
+
+RemainingReauditCorrectionTest > twoOwnersOfOneIncomingPathKeepFilesUntilTheLastRelease SKIPPED
+
+RemainingReauditCorrectionTest > savedWorkIdentityLeavesTheMainThreadAndRetrievesCreatedRecords SKIPPED
+
+RemainingReauditCorrectionTest > recoveryMessagesMatchJournalPhaseAndReopenedRecords SKIPPED
+
+RemainingReauditCorrectionTest > explicitPairsKeepCodePointCapturesAndBoundedScans SKIPPED
+
+RemainingReauditCorrectionTest > coldOnboardingAndSavedWorkIdentityLeaveTheMainThread SKIPPED
+
+RemainingReauditCorrectionTest > stagingSurvivesAnotherCoordinatorAndViewModelTeardownDuringReplacement SKIPPED
+
+RemainingReauditCorrectionTest > failedStagingAcquisitionReleasesTheLeaseAndClosesTheStream SKIPPED
+
+RemainingReauditCorrectionTest > baselineSavedRecordsSurviveRestoreAndReopen SKIPPED
+
+RemainingReauditCorrectionTest > failedStagingParentClosesTheStreamAndAllowsRetry SKIPPED
+
+RemainingReauditCorrectionTest > duplicateAcknowledgementRequiresTheCapturedEpoch SKIPPED
+
+RemainingReauditCorrectionTest > stagingLeaseSurvivesQueuedBoundaryAndDirectorySweep SKIPPED
+
+RemainingReauditCorrectionTest > explicitPairsMatchTheRegexAndStayBoundedOnARepresentativeText SKIPPED
+
+RemainingReauditCorrectionTest > explicitPairsMatchTheRegexOnCounterexamplesAndRandomDashText SKIPPED
+
+RemainingReauditCorrectionTest > practiceDigestsRunOffMainAndReuseWarmUnitIdentities SKIPPED
+
+RemainingReauditCorrectionTest > wrongUnitSameOptionDoesNotSuppressAfterHashedRestoreAndReopen SKIPPED
+
+RemainingReauditCorrectionTest > identityCacheReclaimsDeadPacksWithoutRevisitingBuckets SKIPPED
+
+RemainingReauditCorrectionTest > queuedCleanupDoesNotDeleteAPathReacquiredWhileTheWorkerIsBlocked SKIPPED
+
+RemainingReauditCorrectionTest > importedAcceptedOrderRejectsMalformedHashesAndContinuesAfterReopen SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.RemainingReauditCorrectionTest: 22 reported, 0 passed, 0 failed, 22 skipped
+
+Unit10CumulativeReviewTest > schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview SKIPPED
+
+Unit10CumulativeReviewTest > oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit SKIPPED
+
+Unit10CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit10CumulativeReviewTest > heldUnit10WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit10CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit10CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit9RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit10CumulativeReviewTest > actualUnit10ContinueNumeralGenderCueTeachingPracticeReturnAndAdvanceStayOnUnit10 SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit10CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit11AgreementRemediationTest > oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard SKIPPED
+
+Unit11AgreementRemediationTest > unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException SKIPPED
+
+Unit11AgreementRemediationTest > wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer SKIPPED
+
+Unit11AgreementRemediationTest > oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction SKIPPED
+
+Unit11AgreementRemediationTest > completeAgreementTeachingPrecedesPracticeAndRepairRestoresTheCheckedForms SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit11AgreementRemediationTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+Unit12FeedbackCorrectionTest > historicalQuestionFeedbackCreditIsRetainedButStale SKIPPED
+
+Unit12FeedbackCorrectionTest > firstPersonChoiceDoesNotAnswerSecondPersonFutureQuestion SKIPPED
+
+Unit12FeedbackCorrectionTest > feedbackExplainsFutureCaseAndSpellingContrasts SKIPPED
+
+Unit12FeedbackCorrectionTest > correctSpellingDoesNotAnswerRejectedSpellingQuestion SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit12FeedbackCorrectionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Unit13CumulativeReviewTest > heldUnit13WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit13CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit13CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit13CumulativeReviewTest > actualUnit13ContinueAspectPartnerCueTeachingPracticeReturnAndAdvanceStayOnUnit13 SKIPPED
+
+Unit13CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit13HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit13CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+
+Unit13CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit12RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit13CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit13WiderPolicyTest > allGenuineLifecycleBackupsRestoreReopenAndRetainExactRowsAndCutoff SKIPPED
+
+Unit13WiderPolicyTest > currentAndDownstreamOldSnapshotsRejectChangedContentAndAcceptOnlyExactPriorDeclaration SKIPPED
+
+Unit13WiderPolicyTest > versionsRolesLinksEpochAndPacklessWritesFailClosedWithoutChangingHistory SKIPPED
+
+Unit13WiderPolicyTest > genuineOldPartialTasksUseOwnEligibilityAndActualLegacyPolicyOnAdvance SKIPPED
+
+Unit13WiderPolicyTest > newPastGenderUiRepairsFullTeachingAndRequiresAllThreeFreshAssignedAnswers SKIPPED
+
+Unit13WiderPolicyTest > twoPastGenderCandidatesRequireCurrentTaughtEvidenceAndExactRepairWithoutChangingAssetTuples SKIPPED
+
+Unit13WiderPolicyTest > threeFreshSlotsUseNonFirstGenderCandidateAndRequireAllAnswersBeforeActualAdvance SKIPPED
+
+Unit13WiderPolicyTest > genuinePriorPackDeclaresV1AndCannotAcceptFutureV2Tasks SKIPPED
+
+Unit13WiderPolicyTest > genuineLegacyUiKeepsTwoChecksAndBoundAspectRepairInsteadOfNewObligation SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit13WiderPolicyTest: 9 reported, 0 passed, 0 failed, 9 skipped
+
+Unit15CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit14RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit15CumulativeReviewTest > actualUnit15ContinueImpersonalStateCueTeachingPracticeReturnAndAdvanceStayOnUnit15 SKIPPED
+
+Unit15CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit15CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit15CumulativeReviewTest > schema11RowsRemainStoredButChangedImperativeInstructionRequiresRepair SKIPPED
+
+Unit15CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit15HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit15CumulativeReviewTest > heldUnit15WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit15CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit16InstrumentalInstructionTest > caseAndNumberAreExplainedBeforeGuidedChoices SKIPPED
+
+Unit16InstrumentalInstructionTest > remediationRetainsEveryExplanationAndCaseSpecificFeedback SKIPPED
+
+Unit16InstrumentalInstructionTest > newExplanationsHavePendingEvidenceAndNoAcceptance SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit16InstrumentalInstructionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit17NumberInstructionTest > choicesReceiveSpecificMeaningFeedback SKIPPED
+
+Unit17NumberInstructionTest > coverageIsOriginalPendingAndCorpusValid SKIPPED
+
+Unit17NumberInstructionTest > meaningsRulesAndLimitsPrecedePractice SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit17NumberInstructionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit19ConditionalObligationInstructionTest > checkedFormsHaveCompleteInstructionBeforePracticeAndOnRemediation SKIPPED
+
+Unit19ConditionalObligationInstructionTest > feedbackAndPromptsAskForTheActualRetainedAnswerType SKIPPED
+
+Unit19ConditionalObligationInstructionTest > synthesisAndSourceChainsValidateWithoutApprovingReview SKIPPED
+
+Unit19ConditionalObligationInstructionTest > labelsAreNotTaughtAsTranslationsAndConditionalDoesNotImplyPastEvent SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit19ConditionalObligationInstructionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Unit20DirectionalityApplicationTest > independentContextsAreMeaningfullyDifferentFromGuidedContexts SKIPPED
+
+Unit20DirectionalityApplicationTest > originalGuidedLabelAndFourReadingsCannotCompleteDirectionality SKIPPED
+
+Unit20DirectionalityApplicationTest > coordinatedKeyAndApplicationCannotReverseTheDirectedFlight SKIPPED
+
+Unit20DirectionalityApplicationTest > playerRejectsPerfectiveInferenceFromACompletedRoundTrip SKIPPED
+
+Unit20DirectionalityApplicationTest > motionCompletionMustRequireDistinctIndependentDirectionalityContexts SKIPPED
+
+Unit20DirectionalityApplicationTest > restoringOldFourChecksCannotClearTheDirectionalityCapability SKIPPED
+
+Unit20DirectionalityApplicationTest > playerRejectsVariousDirectionReadingForTheDirectedFlight SKIPPED
+
+Unit20DirectionalityApplicationTest > authenticEarlierAttemptsStayHistoricalAndCannotCreditNewContent SKIPPED
+
+Unit20DirectionalityApplicationTest > coherentNativeTextAndHashForgeryCannotChangeTheFlightExample SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit20DirectionalityApplicationTest: 9 reported, 0 passed, 0 failed, 9 skipped
+
+Unit22CumulativeReviewTest > actualUnit22ContinueReflexiveObjectCueTeachingPracticeReturnAndAdvanceStayOnUnit22 SKIPPED
+
+Unit22CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit21RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit22CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit22CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit22HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit22CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit22CumulativeReviewTest > heldUnit22WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit22CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit22CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Unit13FeedbackCorrectionTest > feedbackExplainsAspectAndReportedSpeechWithoutUniversalRules SKIPPED
+
+Unit13FeedbackCorrectionTest > moscowPlanDoesNotAnswerDirectEveningQuestion SKIPPED
+
+Unit13FeedbackCorrectionTest > historicalQuestionFeedbackCreditIsRetainedButStale SKIPPED
+
+Unit13FeedbackCorrectionTest > perfectiveChoiceDoesNotAnswerImperfectivePastQuestion SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit13FeedbackCorrectionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Unit14CumulativeReviewTest > heldUnit14WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit14CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit14HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit14CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit14CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit14CumulativeReviewTest > actualUnit14ContinueReportedTimeCueTeachingPracticeReturnAndAdvanceStayOnUnit14 SKIPPED
+
+Unit14CumulativeReviewTest > schema11RowsRemainStoredButChangedImpersonalInstructionRequiresRepair SKIPPED
+
+Unit14CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit13RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit14CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit15FeedbackCorrectionTest > infinitiveDoesNotAnswerSingularImperativeQuestion SKIPPED
+
+Unit15FeedbackCorrectionTest > feedbackExplainsImperativeRowsAndSenseBoundAspectPartners SKIPPED
+
+Unit15FeedbackCorrectionTest > historicalQuestionFeedbackCreditIsRetainedButStale SKIPPED
+
+Unit15FeedbackCorrectionTest > differentMeaningDoesNotAnswerPerfectivePartnerQuestion SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit15FeedbackCorrectionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Unit16InstrumentalUsesTest > rolesAndLimitsAreTaughtBeforePractice SKIPPED
+
+Unit16InstrumentalUsesTest > feedbackExplainsRolesAndRejectsPastTenseDistractor SKIPPED
+
+Unit16InstrumentalUsesTest > prepositionQuestionsDoNotSupplyTheAnswerAndMutationsFail SKIPPED
+
+Unit16InstrumentalUsesTest > originalSynthesisRemainsPendingAndValid SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit16InstrumentalUsesTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Unit17QuestionTransferTest > questionCompletionRequiresIndependentCuesDistinctFromGuidedPractice SKIPPED
+
+Unit17QuestionTransferTest > coherentNativeTextAndHashForgeryCannotChangeTheAppleQuestion SKIPPED
+
+Unit17QuestionTransferTest > coordinatedKeyAndApplicationCannotMakeTheClockQuestionAskForABook SKIPPED
+
+Unit17QuestionTransferTest > playerRejectsClockTimeAsTheBookQuestionMeaning SKIPPED
+
+Unit17QuestionTransferTest > optionalOriginalGlossesKeepTeachingAndSavedSelectionsWithoutCredit SKIPPED
+
+Unit17QuestionTransferTest > playerRejectsBookSelectionAsTheClockQuestionMeaning SKIPPED
+
+Unit17QuestionTransferTest > authenticHistoricalClockCompletionStaysSavedButCannotCreditNewQuestions SKIPPED
+
+Unit17QuestionTransferTest > guidedAppleChoiceCannotCompleteIndependentQuestionChecks SKIPPED
+
+Unit17QuestionTransferTest > completeNativeQuestionsAndOptionalScopeValidateWithoutProductionClaims SKIPPED
+
+Unit17QuestionTransferTest > restoringValidOldContrastItemsCannotClearTheQuestionCapability SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit17QuestionTransferTest: 10 reported, 0 passed, 0 failed, 10 skipped
+
+Unit19CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit19CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit18RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit19CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit19HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit19CumulativeReviewTest > heldUnit19WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit19CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit19CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+
+Unit19CumulativeReviewTest > actualUnit19ContinueRelativeMeaningCueTeachingPracticeReturnAndAdvanceStayOnUnit19 SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit19CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit21CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit21HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit21CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit20RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit21CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit21CumulativeReviewTest > actualUnit21ContinueMotionContextCueTeachingPracticeReturnAndAdvanceStayOnUnit21 SKIPPED
+
+Unit21CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit21CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+
+Unit21CumulativeReviewTest > heldUnit21WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit21CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit22NumberInstructionTest > omittedStepNullsAndEmptySynthesisApplicationsHaveIdenticalTypedMeaning SKIPPED
+
+Unit22NumberInstructionTest > everyCheckedNumberContrastIsTaughtBeforePracticeAndRestoredOnAMiss SKIPPED
+
+Unit22NumberInstructionTest > admittedAnswersStayBoundAndWrongKeysStillFailProductionValidation SKIPPED
+
+Unit22NumberInstructionTest > ruleScopeDistinguishesTeensGenderCaseAmbiguityAndCollectiveUsage SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit22NumberInstructionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Unit13ContextTeachingTest > wrongReportedEveningReturnsFromCompleteRepairToTheSameCheck SKIPPED
+
+Unit13ContextTeachingTest > exactTwoSessionWhitelistPreservesNativeScoredRecordsPoliciesAndEarlierPastCorrection SKIPPED
+
+Unit13ContextTeachingTest > oldGuidedPositionsCannotResumeAsDifferentTeachingCards SKIPPED
+
+Unit13ContextTeachingTest > genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen SKIPPED
+
+Unit13ContextTeachingTest > wrongEnglishBackshiftLabelReturnsFromCompleteRepairToTheSameCheck SKIPPED
+
+Unit13ContextTeachingTest > wrongPerfectivePartnerReturnsFromCompleteRepairToTheSameCheck SKIPPED
+
+Unit13ContextTeachingTest > freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments SKIPPED
+
+Unit13ContextTeachingTest > wrongImperfectivePartnerReturnsFromCompleteRepairToTheSameCheck SKIPPED
+
+Unit13ContextTeachingTest > oldAnswersStayRawButDoNotSupplyChangedInstructionCredit SKIPPED
+
+Unit13ContextTeachingTest > bothChainsTeachBeforePracticeAndRepairEveryOriginalExample SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit13ContextTeachingTest: 10 reported, 0 passed, 0 failed, 10 skipped
+
+Unit13ReportedTransferTest > authenticSixAnswerHistoryStaysSavedButCannotCreditTheRenewedPack SKIPPED
+
+Unit13ReportedTransferTest > threeCardsPrecedePracticeAndFullRemediationQualifiesBothLanguages SKIPPED
+
+Unit13ReportedTransferTest > originalIndependentItemsEarlierObjectiveAndAllExamplesRemainUnchanged SKIPPED
+
+Unit13ReportedTransferTest > reportedObjectiveRequiresItsOwnIndependentFrameAndEmbeddedTimeInterpretation SKIPPED
+
+Unit13ReportedTransferTest > originalRepeatedGuideCannotRestoreTheOldReportedChain SKIPPED
+
+Unit13ReportedTransferTest > coordinatedKeyAndApplicationCannotReverseTheReportedFiniteTimes SKIPPED
+
+Unit13ReportedTransferTest > playerRejectsReversingPastReportingAndFutureEmbeddedTime SKIPPED
+
+Unit13ReportedTransferTest > coherentNativeContextAndHashForgeryCannotIntroducePastNationality SKIPPED
+
+Unit13ReportedTransferTest > sevenCurrentAnswersCompleteBothObjectivesWithoutInventingAnEarlierGuideHistory SKIPPED
+
+Unit13ReportedTransferTest > laterGuideUsesDifferentContextFromEarlierEveningCheck SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit13ReportedTransferTest: 10 reported, 0 passed, 0 failed, 10 skipped
+
+Unit14ImpersonalRemediationTest > allThreeStateCardsPrecedePracticeAndRepairRestoresEveryExample SKIPPED
+
+Unit14ImpersonalRemediationTest > oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard SKIPPED
+
+Unit14ImpersonalRemediationTest > unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException SKIPPED
+
+Unit14ImpersonalRemediationTest > wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer SKIPPED
+
+Unit14ImpersonalRemediationTest > oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit14ImpersonalRemediationTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+Unit16CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit16HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit16CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit15RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Unit16CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit16CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit16CumulativeReviewTest > heldUnit16WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit16CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+
+Unit16CumulativeReviewTest > actualUnit16ContinueImperativeFormCueTeachingPracticeReturnAndAdvanceStayOnUnit16 SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit16CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit17CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit16RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit17CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit17CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit17CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit17HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit17CumulativeReviewTest > heldUnit17WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit17CumulativeReviewTest > actualUnit17ContinueInstrumentalPluralCueTeachingPracticeReturnAndAdvanceStayOnUnit17 SKIPPED
+
+Unit17CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit17CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit18CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit17RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit18CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit18CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit18CumulativeReviewTest > heldUnit18WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit18CumulativeReviewTest > actualUnit18ContinueQuestionMeaningCueTeachingPracticeReturnAndAdvanceStayOnUnit18 SKIPPED
+
+Unit18CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+
+Unit18CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit18HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit18CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit20CumulativeReviewTest > heldUnit20WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit20CumulativeReviewTest > actualUnit20ContinueConditionalAgreementCueTeachingPracticeReturnAndAdvanceStayOnUnit20 SKIPPED
+
+Unit20CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit20CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit19RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit20CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit20CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit20HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit20CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit20CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit21ReflexivePurposeInstructionTest > possessionTracksSubjectButAgreementTracksThePossessedNoun SKIPPED
+
+Unit21ReflexivePurposeInstructionTest > omittedEmptyFinalAuditObjectsDecodeToIdenticalTypedEvidence SKIPPED
+
+Unit21ReflexivePurposeInstructionTest > completeInstructionAndRemediationCoverEveryCheckedCueBeforePractice SKIPPED
+
+Unit21ReflexivePurposeInstructionTest > causalCheckHasNoSynonymousSinceDistractorAndAdmittedBindingsStayValid SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Unit13PastTeachingTest > genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen SKIPPED
+
+Unit13PastTeachingTest > wrongGenderChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer SKIPPED
+
+Unit13PastTeachingTest > wrongAspectChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer SKIPPED
+
+Unit13PastTeachingTest > freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments SKIPPED
+
+Unit13PastTeachingTest > completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples SKIPPED
+
+Unit13PastTeachingTest > oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard SKIPPED
+
+Unit13PastTeachingTest > unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException SKIPPED
+
+Unit13PastTeachingTest > oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit13PastTeachingTest: 8 reported, 0 passed, 0 failed, 8 skipped
+
+Unit14FeedbackCorrectionTest > historicalQuestionFeedbackCreditIsRetainedButStale SKIPPED
+
+Unit14FeedbackCorrectionTest > maleColdExampleDoesNotAnswerFemaleColdQuestion SKIPPED
+
+Unit14FeedbackCorrectionTest > durationFreeOptionDoesNotAnswerBoundedWorkQuestion SKIPPED
+
+Unit14FeedbackCorrectionTest > feedbackExplainsFutureLimitsAndImpersonalExperiencers SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit14FeedbackCorrectionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Unit15ImperativeRemediationTest > completeImperativeContrastsPrecedePracticeAndRepairRestoresEveryExample SKIPPED
+
+Unit15ImperativeRemediationTest > oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard SKIPPED
+
+Unit15ImperativeRemediationTest > exactDeclaredUnitExceptionPreservesEveryQuestionRecordAndRequirement SKIPPED
+
+Unit15ImperativeRemediationTest > wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer SKIPPED
+
+Unit15ImperativeRemediationTest > oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit15ImperativeRemediationTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+Unit17AgeCalendarInstructionTest > checkedNamesAndAgeStructureAreTaughtBeforePractice SKIPPED
+
+Unit17AgeCalendarInstructionTest > clockAndDateTargetsHaveCompletePriorInstruction SKIPPED
+
+Unit17AgeCalendarInstructionTest > learnerFeedbackExplainsMeaningsAndRetainsSourceCitation SKIPPED
+
+Unit17AgeCalendarInstructionTest > newCoverageIsPendingAndSourceRelationshipsStillValidate SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Unit18ComparisonRelativeInstructionTest > newCoverageStaysPendingAndSourceRelationshipsValidate SKIPPED
+
+Unit18ComparisonRelativeInstructionTest > instructionDistinguishesConstructionAndScope SKIPPED
+
+Unit18ComparisonRelativeInstructionTest > feedbackExplainsTheRequestedMeaningAndPreservesCitation SKIPPED
+
+Unit18ComparisonRelativeInstructionTest > allCheckedFormsAreTaughtBeforeGuidedPracticeAndRemediated SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Unit19PrefixUnit20MotionInstructionTest > sourceAndApplicationChainsValidateAndReviewRemainsPending SKIPPED
+
+Unit19PrefixUnit20MotionInstructionTest > completePrefixAndMotionInstructionPrecedesPracticeAndRemediation SKIPPED
+
+Unit19PrefixUnit20MotionInstructionTest > dissuadeCueUsesItsExplicitLicensedAspectPartnerWithoutAnswerLeak SKIPPED
+
+Unit19PrefixUnit20MotionInstructionTest > independentLikelihoodChecksHaveDistinctCuesAndFeatures SKIPPED
+
+Unit19PrefixUnit20MotionInstructionTest > omittedReviewDefaultsDecodeToTheSameTypedPack SKIPPED
+
+Unit19PrefixUnit20MotionInstructionTest > neutralMeaningPromptKeepsOtherTargetAndRelationRequirements SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest: 6 reported, 0 passed, 0 failed, 6 skipped
+
+Unit21ObjectTransferTest > playerRejectsTheOtherPersonAndExplainsReflexiveReference SKIPPED
+
+Unit21ObjectTransferTest > coordinatedKeyAndApplicationCannotReverseReflexiveReference SKIPPED
+
+Unit21ObjectTransferTest > historicalThreeAnswerCompletionStaysSavedButCannotCreditCurrentContent SKIPPED
+
+Unit21ObjectTransferTest > allThreeCardsPrecedePracticeAndRemediationRestoresThem SKIPPED
+
+Unit21ObjectTransferTest > forgedOldRevisionAndGhostRecordCannotUseTheNewSource SKIPPED
+
+Unit21ObjectTransferTest > exactSourcePairAndOtherCorrectFieldsArePreserved SKIPPED
+
+Unit21ObjectTransferTest > restoringTheOriginalValidRepeatedContrastCannotClearDistinctReflexiveEvidence SKIPPED
+
+Unit21ObjectTransferTest > guidedAndWifeMeaningCannotCompleteTheDistinctReflexiveCheck SKIPPED
+
+Unit21ObjectTransferTest > coherentNativeTextAndHashForgeryCannotChangeTheReflexiveSource SKIPPED
+
+Unit21ObjectTransferTest > completedObjectReferenceNeedsADistinctIndependentReflexiveContext SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit21ObjectTransferTest: 10 reported, 0 passed, 0 failed, 10 skipped
+
+Unit23CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit22RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit23CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit23CumulativeReviewTest > actualUnit23ContinueHalfQuantityPhraseCueTeachingPracticeReturnAndAdvanceStayOnUnit23 SKIPPED
+
+Unit23CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit23CumulativeReviewTest > heldUnit23WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit23CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+
+Unit23CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit23HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit23CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Unit23TimeInstructionTest > omittedContinueAndEmptyStepListsHaveIdenticalTypedMeaning SKIPPED
+
+Unit23TimeInstructionTest > checkedMeaningsKeepAdmittedRelationshipsAndWrongKeysStillFail SKIPPED
+
+Unit23TimeInstructionTest > eachTemporalContrastPrecedesPracticeAndReturnsInCompleteRemediation SKIPPED
+
+Unit23TimeInstructionTest > intervalCaseAndCompletionAreNotConfusedWithDurationOrNoncompletion SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit23TimeInstructionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Unit24CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit24CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit23RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit24CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit24HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit24CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit24CumulativeReviewTest > heldUnit24WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit24CumulativeReviewTest > actualUnit24ContinuePeriodPositionCueTeachingPracticeReturnAndAdvanceStayOnUnit24 SKIPPED
+
+Unit24CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit24CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit26CumulativeReviewTest > actualUnit26ContinueNameReplyCueTeachingPracticeReturnAndAdvanceStayOnUnit26 SKIPPED
+
+Unit26CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit26HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit26CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit26CumulativeReviewTest > heldUnit26WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit26CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit25RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit26CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit26CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit26CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit26WrittenInstructionTest > letterCaseTeachingSeparatesRecipientContextFromPluralShape SKIPPED
+
+Unit26WrittenInstructionTest > correspondenceTeachingDistinguishesEnclosureClosingAndProductionLimits SKIPPED
+
+Unit26WrittenInstructionTest > addressMarksTeachingExplainsEveryRetainedComponentAndRestoresAllExamples SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit26WrittenInstructionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit28CumulativeReviewTest > heldUnit28WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit28CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit28HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit28CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit28CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit28CumulativeReviewTest > actualUnit28ContinuePastPassiveMeaningCueTeachingPracticeReturnAndAdvanceStayOnUnit28 SKIPPED
+
+Unit28CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit27RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit28CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit28CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit29AdjectiveApplicationTest > authenticHistoricalClassificationAttemptsSurviveButCannotCreditNewContent SKIPPED
+
+Unit29AdjectiveApplicationTest > playerRejectsAttributiveAnswerForTheCompleteLongFormPredicate SKIPPED
+
+Unit29AdjectiveApplicationTest > originalClassificationItemsAloneCannotCompleteTheExpandedObjective SKIPPED
+
+Unit29AdjectiveApplicationTest > coordinatedNativeTextAndHashForgeryCannotReplaceThePredicateExample SKIPPED
+
+Unit29AdjectiveApplicationTest > playerRejectsNeuterShortFormForTheFeminineHeadNoun SKIPPED
+
+Unit29AdjectiveApplicationTest > coordinatedApplicationAndKeyEditsCannotMakeTheFeminineSubjectNeuter SKIPPED
+
+Unit29AdjectiveApplicationTest > classificationCreditMustAlsoRequireAgreementAndSentenceFunctionChecks SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit29AdjectiveApplicationTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit29ShortAdjectiveCorrectionTest > historicalGlossCreditIsRetainedButCannotCreditTheCurrentGrammarGate SKIPPED
+
+Unit29ShortAdjectiveCorrectionTest > grammarGateMustNotBeSatisfiedByVocabularyGlosses SKIPPED
+
+Unit29ShortAdjectiveCorrectionTest > restoringGlossChecksCannotClearTheShortAdjectiveCapability SKIPPED
+
+Unit29ShortAdjectiveCorrectionTest > playerRejectsLongClassificationForTheShortForm SKIPPED
+
+Unit29ShortAdjectiveCorrectionTest > coordinatedKeyAndApplicationEditsCannotMakeTheShortFormLong SKIPPED
+
+Unit29ShortAdjectiveCorrectionTest > grammarStateCanBeDemonstratedWithoutOptionalGlossAttempts SKIPPED
+
+Unit29ShortAdjectiveCorrectionTest > vocabularyLabPreservesMeaningsWithoutSatisfyingGrammarChecks SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit29ShortAdjectiveCorrectionTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit3GenderTeachingTest > olderPolicyHistoriesRemainRawButCannotBypassChangedUnit3Teaching SKIPPED
+
+Unit3GenderTeachingTest > allFiveIndependentRecordsHaveExplicitTeachingAndCompleteRepair SKIPPED
+
+Unit3GenderTeachingTest > genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen SKIPPED
+
+Unit3GenderTeachingTest > freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments SKIPPED
+
+Unit3GenderTeachingTest > wrongNeuterAnswerRestoresTheFullContrastAndStillNeedsFreshIndependentWork SKIPPED
+
+Unit3GenderTeachingTest > correctionHasAnExactWhitelistAndNoScoredOrPolicyChanges SKIPPED
+
+Unit3GenderTeachingTest > wrongDoorAnswerRestoresTheFullContrastAndStillNeedsFreshIndependentWork SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit3GenderTeachingTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit24ContextTransferTest > guidedSubjectFocusAndOneReadingCannotCompleteBothPersuasionRequirements SKIPPED
+
+Unit24ContextTransferTest > exactSelectionsAndAllOldExamplesValidateWithoutIndependentSubjectFocusClaim SKIPPED
+
+Unit24ContextTransferTest > optionalReferenceKeepsTeachingAndSavedSelectionButCannotCreditOrBlockRequiredChecks SKIPPED
+
+Unit24ContextTransferTest > originalRepeatedGuidedContrastCannotBeRestoredAsRequiredPractice SKIPPED
+
+Unit24ContextTransferTest > historicalThreeAnswerCompletionStaysSavedButCannotCreditCurrentContent SKIPPED
+
+Unit24ContextTransferTest > coordinatedGuidedKeyAndApplicationCannotReverseSubjectAndDestinationFocus SKIPPED
+
+Unit24ContextTransferTest > allThreeCardsPrecedePracticeAndFullRemediationKeepsAmbiguity SKIPPED
+
+Unit24ContextTransferTest > coordinatedOriginalPersuasionMeaningSwapCannotReverseTheFrozenEvidence SKIPPED
+
+Unit24ContextTransferTest > completedContextReadingNeedsDistinctGuidedAndIndependentExamples SKIPPED
+
+Unit24ContextTransferTest > coherentNativeHashForgeryCannotChangeTheGuidedSource SKIPPED
+
+Unit24ContextTransferTest > correctIndependentPersuasionItemsAndOptionalOriginalReadingArePreserved SKIPPED
+
+Unit24ContextTransferTest > playerRejectsLackOfNeedInTheNeverAgreeContext SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit24ContextTransferTest: 12 reported, 0 passed, 0 failed, 12 skipped
+
+Unit25NameInstructionTest > allNameAndCourtesyContrastsAreTaughtBeforePracticeAndRepeatedAfterAMiss SKIPPED
+
+Unit25NameInstructionTest > keysStayBoundAndNameFormationAndReleaseRestrictionsStayClosed SKIPPED
+
+Unit25NameInstructionTest > questionsDoNotRevealNameClassificationAndInstructionExplainsTheLimits SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit25NameInstructionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit6AnimacyTransferTest > coordinatedKeyAndApplicationReversalCannotRedefineInanimateCase SKIPPED
+
+Unit6AnimacyTransferTest > unit6ScoredEvidenceAndEveryPriorExampleRecordRemainWhole SKIPPED
+
+Unit6AnimacyTransferTest > completeTeachingPrecedesPracticeAndRemediationRestoresElevenExamples SKIPPED
+
+Unit6AnimacyTransferTest > authenticOldFourAnswerHistoryIsPreservedButStaleAfterRenewal SKIPPED
+
+Unit6AnimacyTransferTest > restoredDuplicateAndCoherentNativeForgeryAreRejected SKIPPED
+
+Unit6AnimacyTransferTest > wrongInanimateCaseDisplaysFeedbackAndFullRemediation SKIPPED
+
+Unit6AnimacyTransferTest > teacherAndFriendAnswersCannotReplaceRequiredInanimateClassification SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit6AnimacyTransferTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit26PostalInstructionTest > completeComponentAndFormatTeachingPrecedesPracticeAndReturnsAfterAMiss SKIPPED
+
+Unit26PostalInstructionTest > hashedApplicationPairsRejectReuseOfAllowedWords SKIPPED
+
+Unit26PostalInstructionTest > exactPostalIntakeRejectsHistoricalUniversalityAndUnboundApplications SKIPPED
+
+Unit26PostalInstructionTest > sampleComparisonAndOrderingKeysAreBoundToTheirDisplayedModel SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit26PostalInstructionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Unit27RemainingInstructionTest > remediationRestoresEveryCardAndExampleWithoutMakingOptionalStudyRequired SKIPPED
+
+Unit27RemainingInstructionTest > pendingInstructionHasBoundProvenanceAndTheProductionValidatorAcceptsIt SKIPPED
+
+Unit27RemainingInstructionTest > comprehensionSeparatesTheWriterFromAnUnspecifiedReaderBeforePractice SKIPPED
+
+Unit27RemainingInstructionTest > optionalPresentTeachingDistinguishesFiniteInfinitiveAndPassiveMeanings SKIPPED
+
+Unit27RemainingInstructionTest > mutableApplicationMetadataCannotRebindTheAlreadyReadCheckToTheWritingCue SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit27RemainingInstructionTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+Unit29ActiveTimeCorrectionTest > coordinatedApplicationAndKeyEditsCannotMakeLivingPast SKIPPED
+
+Unit29ActiveTimeCorrectionTest > historicalOppositeLabelAttemptSurvivesButCannotCreditTheReplacement SKIPPED
+
+Unit29ActiveTimeCorrectionTest > creditedCheckMustInterpretADistinctAdmittedFormRatherThanTheOppositeLabel SKIPPED
+
+Unit29ActiveTimeCorrectionTest > playerRejectsPastLabelForLivingAndKeepsTheCorrectExplanation SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Unit29PunctuationContextRegressionTest > optionalReferenceHasTeachingButNoGrammarCredit SKIPPED
+
+Unit29PunctuationContextRegressionTest > categoryAndConnectiveCreditMustNotDemonstrateContextualPunctuation SKIPPED
+
+Unit29PunctuationContextRegressionTest > coordinatedKeyAndApplicationCannotRemovePronounComma SKIPPED
+
+Unit29PunctuationContextRegressionTest > coherentNativeTextAndHashForgeryCannotRemoveTerminalComma SKIPPED
+
+Unit29PunctuationContextRegressionTest > newSourceCannotBorrowAnOlderAdmittedRevisionOrAddGhostRecord SKIPPED
+
+Unit29PunctuationContextRegressionTest > playerRejectsNoCommaForPersonalPronoun SKIPPED
+
+Unit29PunctuationContextRegressionTest > sourceNormalizationPreservesCompleteWordsAndPunctuation SKIPPED
+
+Unit29PunctuationContextRegressionTest > originalDefaultAnswersCannotCompleteExpandedPunctuation SKIPPED
+
+Unit29PunctuationContextRegressionTest > restoringOriginalContrastCategoryCannotClearPunctuationCapability SKIPPED
+
+Unit29PunctuationContextRegressionTest > authenticHistoricalCompletionStaysSavedButCannotCreditNewChecks SKIPPED
+
+Unit29PunctuationContextRegressionTest > playerRejectsClosingCommaAtSentenceEnd SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest: 11 reported, 0 passed, 0 failed, 11 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Unit30LanguageCorrectionTest > coordinatedPrimaryNameTextAndHashForgeryIsRejected SKIPPED
+
+Unit30LanguageCorrectionTest > playerRejectsSingularAgreementAndCaseEndingsForUSA SKIPPED
+
+Unit30LanguageCorrectionTest > optionalReferenceAnswersCannotCreditTheLanguageObjectives SKIPPED
+
+Unit30LanguageCorrectionTest > authenticReferenceHistorySurvivesButCannotCreditNewLanguageContent SKIPPED
+
+Unit30LanguageCorrectionTest > playerRejectsAnotherLettersRussianName SKIPPED
+
+Unit30LanguageCorrectionTest > restoringValidOriginalContrastItemsCannotClearTheLanguageChain SKIPPED
+
+Unit30LanguageCorrectionTest > languageCompletionMustNotDependOnEnglishTableOrHeadingAnswers SKIPPED
+
+Unit30LanguageCorrectionTest > coordinatedKeyAndApplicationMutationCannotRenameB SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit30LanguageCorrectionTest: 8 reported, 0 passed, 0 failed, 8 skipped
+
+Unit5CumulativeReviewTest > schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview SKIPPED
+
+Unit5CumulativeReviewTest > heldUnit5WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit5CumulativeReviewTest > oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit SKIPPED
+
+Unit5CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit4RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit5CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit5CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit5CumulativeReviewTest > actualUnit5ContinueSubjectCueTeachingPracticeReturnAndAdvanceStayOnUnit5 SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit5CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit25CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit25CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit24RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit25CumulativeReviewTest > heldUnit25WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit25CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit25CumulativeReviewTest > actualUnit25ContinueNegativeSentenceCueTeachingPracticeReturnAndAdvanceStayOnUnit25 SKIPPED
+
+Unit25CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit25HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit25CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit25CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit26LetterInstructionTest > completeFrameworkPrecedesPracticeAndReturnsAfterAMiss SKIPPED
+
+Unit26LetterInstructionTest > exactResearchAdmissionRejectsLegacyCapabilityAndForgery SKIPPED
+
+Unit26LetterInstructionTest > suppliedOrganizationAndGreetingInferenceReplaceUniversalKeys SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit26LetterInstructionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit27PastInstructionTest > requiredStressTeachingDistinguishesTheAccentedVowelAndCorrectsTheCompetingLabel SKIPPED
+
+Unit27PastInstructionTest > meaningChecksRejectSourcePositionRecallAndOptionalPresentFormsStayOutsideGating SKIPPED
+
+Unit27PastInstructionTest > completePastPassiveMeaningAndFormTeachingPrecedesPracticeAndRestoresEveryExample SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit27PastInstructionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit28TimingTransferTest > coordinatedGuidedKeyAndApplicationCannotReverseAnteriority SKIPPED
+
+Unit28TimingTransferTest > perfectiveTimingNeedsAnIndependentContextDifferentFromGuidedPractice SKIPPED
+
+Unit28TimingTransferTest > imperfectiveTimingNeedsAnIndependentContextDifferentFromGuidedPractice SKIPPED
+
+Unit28TimingTransferTest > originalSixGovernedAnswersCompleteBothTimingObjectives SKIPPED
+
+Unit28TimingTransferTest > allCardsPrecedePracticeAndFullRemediationRetainsRelativeFutureCoverage SKIPPED
+
+Unit28TimingTransferTest > coherentDictionaryAspectRowForgeryCannotReverseTheSourceClassification SKIPPED
+
+Unit28TimingTransferTest > originalIndependentScoredFieldsAndEveryExampleRemainUnchanged SKIPPED
+
+Unit28TimingTransferTest > playerRejectsAbsolutePresentInThePastGuidedClause SKIPPED
+
+Unit28TimingTransferTest > coherentCapabilitySpanAndHostHashRewriteCannotChangeTheFrozenIntake SKIPPED
+
+Unit28TimingTransferTest > guidedAnswersAloneCannotCompleteEitherObjective SKIPPED
+
+Unit28TimingTransferTest > coherentNativeHashForgeryCannotChangeSourceContext SKIPPED
+
+Unit28TimingTransferTest > originalRepeatedGuidedContextsCannotBeRestored SKIPPED
+
+Unit28TimingTransferTest > historicalSixAnswerCompletionStaysSavedButCannotCreditRenewedContent SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit28TimingTransferTest: 13 reported, 0 passed, 0 failed, 13 skipped
+
+Unit29InstructionTest > instructionSeparatesTimeMeaningAndClassifiesTheDisplayedForm SKIPPED
+
+Unit29InstructionTest > registerDoesNotReplaceActorSequenceOrEventMeaning SKIPPED
+
+Unit29InstructionTest > remediationRestoresEveryCardAndEveryExampleBeforePractice SKIPPED
+
+Unit29InstructionTest > independentlyAuthoredPendingCoveragePassesTheProductionValidator SKIPPED
+
+Unit29InstructionTest > punctuationExplainsBothBoundariesAndTheExceptions SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit29InstructionTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+Unit30InstructionTest > particlesStoryAndDictionaryRequireMeaningAndInformationLimits SKIPPED
+
+Unit30InstructionTest > letterNameAndHeadingQuestionsDoNotChangeTheExampleMeaning SKIPPED
+
+Unit30InstructionTest > allTeachingAndExamplesReturnOnRemediation SKIPPED
+
+Unit30InstructionTest > pendingInstructionAndProductionValidationRemainValid SKIPPED
+
+Unit30InstructionTest > addressAndAbbreviationTeachingExplainsRolesAndTheSourceLimit SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit30InstructionTest: 5 reported, 0 passed, 0 failed, 5 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Unit4NominativeRoleTest > oldTranslationCompletionHistoryIsPreservedButStaleForTheNewConstruct SKIPPED
+
+Unit4NominativeRoleTest > twoDistinctIndependentSubjectsAndFullTeachingAreRequired SKIPPED
+
+Unit4NominativeRoleTest > correctGlossesStayOptionalAndCannotReplaceCaseRoleChecks SKIPPED
+
+Unit4NominativeRoleTest > legacyGlossRestorationAndCoherentNativeForgeryCannotBypassTheRoleGuard SKIPPED
+
+Unit4NominativeRoleTest > coordinatedRoleKeyAndCanonicalTupleHashReversalIsRejected SKIPPED
+
+Unit4NominativeRoleTest > allPriorExamplesRecordsCapabilitiesAndOtherUnitsRemainWhole SKIPPED
+
+Unit4NominativeRoleTest > wrongCaseRoleShowsTargetedFeedbackAndReturnsToEveryExample SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit4NominativeRoleTest: 7 reported, 0 passed, 0 failed, 7 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Unit24NegationInstructionTest > numberAbsenceConcordAndPersuasionContextHaveDistinctExplanations SKIPPED
+
+Unit24NegationInstructionTest > existingKeysStayBoundAndSourceAndReviewRestrictionsRemainClosed SKIPPED
+
+Unit24NegationInstructionTest > allNegationContrastsAreExplainedBeforePracticeAndRepeatedAfterAMiss SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit24NegationInstructionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit26FocusInstructionTest > exactContextualAdmissionAndReferenceKeysRejectForgedOrUnboundEvidence SKIPPED
+
+Unit26FocusInstructionTest > contextualMeaningReplacesLiteralWordOrderLabels SKIPPED
+
+Unit26FocusInstructionTest > completeContextAndReferenceDistinctionsPrecedePracticeAndReturnAfterAMiss SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit26FocusInstructionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit27CumulativeReviewTest > heldUnit27WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit27CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit27CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit27CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit26RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit27CumulativeReviewTest > actualUnit27ContinueAddressComponentCueTeachingPracticeReturnAndAdvanceStayOnUnit27 SKIPPED
+
+Unit27CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit27HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit27CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit27CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit28InstructionTest > timingIsRelativeAndTheExplicitMainSubjectPerformsBothActions SKIPPED
+
+Unit28InstructionTest > mutableMetadataCannotDropTheMainClauseFromAContextualCue SKIPPED
+
+Unit28InstructionTest > passageInstructionPrecedesPracticeAndDistinguishesEpisodes SKIPPED
+
+Unit28InstructionTest > newPendingProvenanceAndFullProductionValidationRemainValid SKIPPED
+
+Unit28InstructionTest > remediationRestoresAllCardsAndThePreviouslyOmittedThirdExample SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit28InstructionTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+Unit29CumulativeReviewTest > actualUnit29ContinueRelativeFutureTimingCueTeachingPracticeReturnAndAdvanceStayOnUnit29 SKIPPED
+
+Unit29CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit29CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit29CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit29HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit29CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit28RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit29CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+
+Unit29CumulativeReviewTest > heldUnit29WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit29CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit30CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit30CumulativeReviewTest > heldUnit30WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit30CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit30CumulativeReviewTest > actualUnit30ContinueActiveParticipleTimeCueTeachingPracticeReturnAndTerminalCompletionStayOnUnit30 SKIPPED
+
+Unit30CumulativeReviewTest > oldFormatOneAndTwoKeepRawUnit30HistoryWithoutInventingCreditOrRepairingUnit11 SKIPPED
+
+Unit30CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit29RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit30CumulativeReviewTest > schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit30CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit4CumulativeReviewTest > schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview SKIPPED
+
+Unit4CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit3RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit4CumulativeReviewTest > heldUnit4WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit4CumulativeReviewTest > oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit SKIPPED
+
+Unit4CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit4CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit4CumulativeReviewTest > actualUnit4ContinueGenderCueTeachingPracticeReturnAndAdvanceStayOnUnit4 SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit4CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit6CumulativeReviewTest > schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview SKIPPED
+
+Unit6CumulativeReviewTest > actualUnit6ContinueNounBehaviorCueTeachingPracticeReturnAndAdvanceStayOnUnit6 SKIPPED
+
+Unit6CumulativeReviewTest > oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit SKIPPED
+
+Unit6CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit6CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit5RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit6CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit6CumulativeReviewTest > heldUnit6WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit6CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Unit7AgreementTeachingTest > wrongNominativeChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer SKIPPED
+
+Unit7AgreementTeachingTest > completeAgreementTeachingPrecedesPracticeAndRepairRestoresAllElevenExamples SKIPPED
+
+Unit7AgreementTeachingTest > genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen SKIPPED
+
+Unit7AgreementTeachingTest > freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments SKIPPED
+
+Unit7AgreementTeachingTest > oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard SKIPPED
+
+Unit7AgreementTeachingTest > unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException SKIPPED
+
+Unit7AgreementTeachingTest > oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction SKIPPED
+
+Unit7AgreementTeachingTest > wrongGenitiveChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit7AgreementTeachingTest: 8 reported, 0 passed, 0 failed, 8 skipped
+
+Unit8CumulativeReviewTest > schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview SKIPPED
+
+Unit8CumulativeReviewTest > oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit SKIPPED
+
+Unit8CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit8CumulativeReviewTest > actualUnit8ContinueNominativeAgreementCueTeachingPracticeReturnAndAdvanceStayOnUnit8 SKIPPED
+
+Unit8CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit7RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit8CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit8CumulativeReviewTest > heldUnit8WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit8CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit9CumulativeReviewTest > schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview SKIPPED
+
+Unit9CumulativeReviewTest > oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit SKIPPED
+
+Unit9CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit9CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit9CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit8RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit9CumulativeReviewTest > heldUnit9WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+
+Unit9CumulativeReviewTest > actualUnit9ContinueNominativePluralCueTeachingPracticeReturnAndAdvanceStayOnUnit9 SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit9CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit9WiderPolicyTest > allGenuineLifecycleBackupsRestoreReopenAndRetainExactRowsAndCutoff SKIPPED
+
+Unit9WiderPolicyTest > currentAndDownstreamOldSnapshotsRejectChangedContentAndAcceptOnlyExactPriorDeclaration SKIPPED
+
+Unit9WiderPolicyTest > genuineLegacyUiKeepsTwoChecksAndBoundPluralRepairInsteadOfNewObligation SKIPPED
+
+Unit9WiderPolicyTest > versionsRolesLinksEpochAndPacklessWritesFailClosedWithoutChangingHistory SKIPPED
+
+Unit9WiderPolicyTest > genuineOldPartialTasksUseOwnEligibilityAndActualLegacyPolicyOnAdvance SKIPPED
+
+Unit9WiderPolicyTest > newGenderUiRepairsFullTeachingAndRequiresAllThreeFreshAssignedAnswers SKIPPED
+
+Unit9WiderPolicyTest > threeFreshSlotsUseNonFirstGenderCandidateAndRequireAllAnswersBeforeActualAdvance SKIPPED
+
+Unit9WiderPolicyTest > genuinePriorPackDeclaresV1AndCannotAcceptFutureV2Tasks SKIPPED
+
+Unit9WiderPolicyTest > fiveGenderCandidatesRequireCurrentTaughtEvidenceAndExactRepairWithoutChangingAssetTuples SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit9WiderPolicyTest: 9 reported, 0 passed, 0 failed, 9 skipped
+
+Units2125SourceIntakeTest > structuralMappingsAreDigestBoundAndStayUnsigned SKIPPED
+
+Units2125SourceIntakeTest > frozenSourceIdentityAndProvenanceSpansAreRequired SKIPPED
+
+Units2125SourceIntakeTest > noPenguinContentInternetPermissionOrOpenReleaseGate SKIPPED
+
+Units2125SourceIntakeTest > datedNamesClaimsAndLinkedAudioStayOutOfLearnerContent SKIPPED
+
+Units2125SourceIntakeTest > checksRejectCircularFeedbackAndLineLabelRecall SKIPPED
+
+Units2125SourceIntakeTest > listeningInstructionGuardAllowsListenerNounsButRejectsAudioDirections SKIPPED
+
+Units2125SourceIntakeTest > forgedRevisionMixedSpanAndWrongObjectiveCapabilitiesFail SKIPPED
+
+Units2125SourceIntakeTest > unitTwentyThreeElapsedTimeStaysReviewPendingAndPartialEvidenceStaysClosed SKIPPED
+
+Units2125SourceIntakeTest > keywordTextDoesNotAdmitASourceCapability SKIPPED
+
+Units2125SourceIntakeTest > unsupportedObjectivesCannotAcquireAdvancementChecksOrContentCompleteStatus SKIPPED
+
+Units2125SourceIntakeTest > partialStrandsStayShortOfTheMissingSources SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Units2125SourceIntakeTest: 11 reported, 0 passed, 0 failed, 11 skipped
+
+Units610InstructionalValidityTest > everyRecognitionObjectiveHasAnIndependentFeatureValidCheck SKIPPED
+
+Units610InstructionalValidityTest > falsifiedRelationshipIdsFail SKIPPED
+
+Units610InstructionalValidityTest > englishRuleProseCannotBeStoredAsARussianExample SKIPPED
+
+Units610InstructionalValidityTest > changingOnlySourceIdWhileRetainingSourceRecordIdFails SKIPPED
+
+Units610InstructionalValidityTest > retainingADirectEnglishCueWithTheSameAnswerFails SKIPPED
+
+Units610InstructionalValidityTest > changingProseRationaleCannotValidateAnInvalidContrast SKIPPED
+
+Units610InstructionalValidityTest > aDifferentLemmaWithTheSameRelationLabelFails SKIPPED
+
+Units610InstructionalValidityTest > bookAttestationAndPartialObjectivesDoNotAdvance SKIPPED
+
+Units610InstructionalValidityTest > anUnrelatedAdmittedDistractorFails SKIPPED
+
+Units610InstructionalValidityTest > changingOriginalSourceTextAndHashWhileRetainingSourceRecordIdFails SKIPPED
+
+Units610InstructionalValidityTest > unitNineBoundaryCasesAreIndependentQualifyingChecks SKIPPED
+
+Units610InstructionalValidityTest > contentCompleteRecognitionObjectivesKeepAnIndependentCheck SKIPPED
+
+Units610InstructionalValidityTest > sourceMeaningAloneCannotSatisfyAGrammarObjective SKIPPED
+
+Units610InstructionalValidityTest > aWikibooksRecordShapedLikeAnOpenRussianLemmaCannotBeTheSameLemma SKIPPED
+
+Units610InstructionalValidityTest > aShownLineContainingItsAnswerFailsAsQualifyingEvidence SKIPPED
+
+Units610InstructionalValidityTest > renamingSourceMeaningToFormSelectionDoesNotValidateATranslationMatch SKIPPED
+
+Units610InstructionalValidityTest > anAnswerSentenceSelectedByCueTokenFails SKIPPED
+
+Units610InstructionalValidityTest > guidedOnlyContrastsDoNotSatisfyARecognitionObjective SKIPPED
+
+Units610InstructionalValidityTest > aRationaleThatDoesNotExplainTheDistinctionFails SKIPPED
+
+Units610InstructionalValidityTest > anUnrelatedDistractorCarryingSameWordStillFails SKIPPED
+
+Units610InstructionalValidityTest > changingSourceRevisionWhileRetainingSourceRecordIdFails SKIPPED
+
+Units610InstructionalValidityTest > sameTruncatedSourceRecordIdWithDifferentFrozenContentCannotShareASpan SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Units610InstructionalValidityTest: 22 reported, 0 passed, 0 failed, 22 skipped
+
+GapClosureDossierTest > dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.audit.GapClosureDossierTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+EvidenceSchemaTest > stageSequenceMustEqualTheExactRequiredPrefix SKIPPED
+
+EvidenceSchemaTest > governedCurriculumChangesInvalidateDownstreamAuditStates SKIPPED
+
+EvidenceSchemaTest > ownerAcceptanceRequiresThePriorChainAMatchingDigestAndEvidence SKIPPED
+
+EvidenceSchemaTest > quotedAndOriginalEvidenceAreValidatedDifferently SKIPPED
+
+EvidenceSchemaTest > automatedSignalsAndAModelNameDoNotApprove SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.curriculum.EvidenceSchemaTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+Unit6WiderPolicyTest > newSubjectUiRepairsFullTeachingAndRequiresAllThreeFreshAssignedAnswers SKIPPED
+
+Unit6WiderPolicyTest > genuineLegacyUiKeepsTwoChecksAndBoundNounRepairInsteadOfNewObligation SKIPPED
+
+Unit6WiderPolicyTest > currentAndDownstreamOldSnapshotsRejectChangedContentAndAcceptOnlyExactPriorDeclaration SKIPPED
+
+Unit6WiderPolicyTest > versionsRolesLinksEpochAndPacklessWritesFailClosedWithoutChangingHistory SKIPPED
+
+Unit6WiderPolicyTest > genuineOldPartialTasksUseOwnEligibilityAndActualLegacyPolicyOnAdvance SKIPPED
+
+Unit6WiderPolicyTest > genuinePriorPackDeclaresV1AndCannotAcceptFutureV2Tasks SKIPPED
+
+Unit6WiderPolicyTest > threeFreshSlotsUseBothNonFirstCandidatesAndRequireAllAnswersBeforeActualAdvance SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit6WiderPolicyTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit8AgreementTransferTest > completedAgreementNeedsADifferentIndependentAdjective SKIPPED
+
+Unit8AgreementTransferTest > guidedAndOtherCorrectPairsCannotCompleteTheIndependentAdjective SKIPPED
+
+Unit8AgreementTransferTest > restoringTheOriginalValidFormSelectionCannotClearDistinctAdjectiveEvidence SKIPPED
+
+Unit8AgreementTransferTest > coherentNativeTextAndHashForgeryCannotChangeTheBlueSource SKIPPED
+
+Unit8AgreementTransferTest > coordinatedKeyAndApplicationCannotMakeTheSingularAPluralAnswer SKIPPED
+
+Unit8AgreementTransferTest > playerRejectsTheSingularBlueFormAndExplainsTheNumber SKIPPED
+
+Unit8AgreementTransferTest > allSixCardsPrecedePracticeAndRemediationRestoresThem SKIPPED
+
+Unit8AgreementTransferTest > unaccentedSourcePairAndOtherCorrectFieldsArePreserved SKIPPED
+
+Unit8AgreementTransferTest > historicalFourAnswerCompletionStaysSavedButCannotCreditCurrentContent SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit8AgreementTransferTest: 9 reported, 0 passed, 0 failed, 9 skipped
+
+Unit9CompositionFeedbackCorrectionTest > compositionAndAgreementFeedbackExplainsTheSourceDistinctions SKIPPED
+
+Unit9CompositionFeedbackCorrectionTest > historicalGenericFeedbackCreditIsRetainedButStale SKIPPED
+
+Unit9CompositionFeedbackCorrectionTest > wrongThousandsGroupDisplaysTheCaseDistinction SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit9CompositionFeedbackCorrectionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit9ReinforcementReviewTest > oneHourNominativeExplanationCannotCreditOtherBasicCountingPatterns SKIPPED
+
+Unit9ReinforcementReviewTest > earlierQuantityCompletionCannotCreditTheLaterRepeatedGuideOrPatternChecks SKIPPED
+
+Unit9ReinforcementReviewTest > repeatedGuideAndBasicCountsCannotReplaceRequiredAnimateAccusativeContext SKIPPED
+
+Unit9ReinforcementReviewTest > allTeachingAndWorkedExamplesPrecedePracticeAndReturnInRemediation SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit9ReinforcementReviewTest: 4 reported, 0 passed, 0 failed, 4 skipped
+
+Units1620SourceIntakeTest > unitEighteenCannotBecomeContentCompleteWithoutComparisonAndRelativeSources SKIPPED
+
+Units1620SourceIntakeTest > everyRussianSpanOccursInItsRecordedSource SKIPPED
+
+Units1620SourceIntakeTest > unitNineteenCannotBecomeContentCompleteWithoutConditionalAndObligationSources SKIPPED
+
+Units1620SourceIntakeTest > unitTwentyCannotBecomeContentCompleteFromARedLinkVerbPageOrDictionaryRows SKIPPED
+
+Units1620SourceIntakeTest > frozenSourceBytesAndRevisionsStayImmutable SKIPPED
+
+Units1620SourceIntakeTest > noPenguinContentOrPrivatePdfEnteredGit SKIPPED
+
+Units1620SourceIntakeTest > structuralMappingsMatchTheOwnedEditionObservations SKIPPED
+
+Units1620SourceIntakeTest > learnerFacingTextDropsWikibooksEmphasisAndKeepsTheFrozenSource SKIPPED
+
+Units1620SourceIntakeTest > unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Units1620SourceIntakeTest: 9 reported, 0 passed, 0 failed, 9 skipped
+
+Units35SourceIntakeTest > everyRussianCandidateHasAnAdmittedImmutableSourceAndRights SKIPPED
+
+Units35SourceIntakeTest > excludedSourcesAndUnresolvedRevisionsFailClosed SKIPPED
+
+Units35SourceIntakeTest > learnerGlossesAreDelimitedSensesAndEnglishClaimsFailClosed SKIPPED
+
+Units35SourceIntakeTest > sourceMutationChangesOnlyTheAffectedDigestAndReviewerFieldsDoNot SKIPPED
+
+Units35SourceIntakeTest > penguinMarkersStayOutAndReleaseStaysClosed SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Units35SourceIntakeTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+CurriculumReadinessReconciliationTest > catalogReachabilityCountsOrphansSharesAndIntraUnitDuplicatesSeparately SKIPPED
+
+CurriculumReadinessReconciliationTest > matrixUsesCanonicalDigestsReviewsAndDoesNotInventApproval SKIPPED
+
+CurriculumReadinessReconciliationTest > keywordTextBookAttestationAndCountersDoNotClearRealBlockers SKIPPED
+
+CurriculumReadinessReconciliationTest > unsupportedOrUntaughtObjectivesCannotAdvanceAndInstallClaimsStayUnapproved SKIPPED
+
+CurriculumReadinessReconciliationTest > committedReportsMatchTheGeneratorAndStayByteIdentical SKIPPED
+
+CurriculumReadinessReconciliationTest > droppedOrDuplicatedUnitsFailClosed SKIPPED
+
+CurriculumReadinessReconciliationTest > narrowMarkerChecksDoNotClaimComprehensiveInspection SKIPPED
+
+CurriculumReadinessReconciliationTest > aMissingManifestIsNotReportedAsAReviewPacket SKIPPED
+
+CurriculumReadinessReconciliationTest > sourceSnapshotDoesNotAttestToAnEphemeralMergedManifest SKIPPED
+
+CurriculumReadinessReconciliationTest > notPreparedUnitsCannotAdvanceAndReadinessChangeDoesNotClearOtherBlockers SKIPPED
+
+CurriculumReadinessReconciliationTest > unavailableStepsSplitContentFromAssetAndLocalExperience SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest: 11 reported, 0 passed, 0 failed, 11 skipped
+
+ProductOwnerAcceptanceBoundaryTest > productOwnerAcceptanceCannotMasqueradeAsQualifiedReview SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.audit.ProductOwnerAcceptanceBoundaryTest: 1 reported, 0 passed, 0 failed, 1 skipped
+
+Unit6FeedbackCorrectionTest > historicalGenericFeedbackCreditIsRetainedButStale SKIPPED
+
+Unit6FeedbackCorrectionTest > feedbackExplainsPossessorRolesPersonNumberAndDestinationCase SKIPPED
+
+Unit6FeedbackCorrectionTest > wrongPossessiveSelectionDisplaysThePossessorExplanation SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit6FeedbackCorrectionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit7FeedbackCorrectionTest > feedbackExplainsGenderNumberAndNominativeAgreement SKIPPED
+
+Unit7FeedbackCorrectionTest > historicalGenericFeedbackCreditIsRetainedButStale SKIPPED
+
+Unit7FeedbackCorrectionTest > wrongAdjectiveSelectionDisplaysTheAgreementExplanation SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit7FeedbackCorrectionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Unit9AgreementTransferTest > playerRejectsTheFeminineFormAndExplainsTheGender SKIPPED
+
+Unit9AgreementTransferTest > restoringTheOriginalValidRepeatedContrastCannotClearDistinctMasculineNounEvidence SKIPPED
+
+Unit9AgreementTransferTest > coherentNativeTextAndHashForgeryCannotChangeTheHourSource SKIPPED
+
+Unit9AgreementTransferTest > allSixCardsPrecedePracticeAndRemediationRestoresThem SKIPPED
+
+Unit9AgreementTransferTest > coordinatedKeyAndApplicationCannotMakeTheFeminineAMasculineAnswer SKIPPED
+
+Unit9AgreementTransferTest > unaccentedSourcePairAndOtherCorrectFieldsArePreserved SKIPPED
+
+Unit9AgreementTransferTest > historicalSixAnswerCompletionStaysSavedButCannotCreditCurrentContent SKIPPED
+
+Unit9AgreementTransferTest > completedAgreementNeedsADifferentIndependentMasculineNoun SKIPPED
+
+Unit9AgreementTransferTest > guidedAndOtherCorrectPairsCannotCompleteTheIndependentMasculineNoun SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit9AgreementTransferTest: 9 reported, 0 passed, 0 failed, 9 skipped
+
+Unit9QuantityRuleCorrectionTest > threeChoiceContextCannotSwapItsAnswerAndApplicationTogether SKIPPED
+
+Unit9QuantityRuleCorrectionTest > historicalFragmentAttemptIsRetainedButCannotCreditTheCompleteRule SKIPPED
+
+Unit9QuantityRuleCorrectionTest > completeRulesTeachTeenExceptionsAndScopeBeforePractice SKIPPED
+
+Unit9QuantityRuleCorrectionTest > wrongTeenAnswerShowsTheCompleteExplanation SKIPPED
+
+Unit9QuantityRuleCorrectionTest > coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest: 5 reported, 0 passed, 0 failed, 5 skipped
+
+Units1115MappingGapTest > preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded SKIPPED
+
+Units1115MappingGapTest > fakeApprovalCannotInstallOrMapUnitEleven SKIPPED
+
+Units1115MappingGapTest > unitsElevenThroughFifteenRecordPendingMappingAndReviewPendingContent SKIPPED
+
+Units1115MappingGapTest > anEmptyUnitCannotBeMarkedContentComplete SKIPPED
+
+Units1115MappingGapTest > alteredFrozenIdentityStillCannotValidateAQualifyingCheck SKIPPED
+
+Units1115MappingGapTest > aSkippedRecognitionObjectiveCannotSatisfyContentComplete SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Units1115MappingGapTest: 6 reported, 0 passed, 0 failed, 6 skipped
+
+Units2630StructuralMappingTest > pageRangesKeywordsAndMutablePagesDoNotClearBlockers SKIPPED
+
+Units2630StructuralMappingTest > structuralObservationsStayPendingAndUnsigned SKIPPED
+
+Units2630StructuralMappingTest > mappingWorksheetsBindStructuralFactsAndStayUnresolved SKIPPED
+
+Units2630StructuralMappingTest > emptyUnitsCannotBecomeContentCompleteOrAdvance SKIPPED
+
+Units2630StructuralMappingTest > unresolvedVarianceBlocksCompletionWithoutChoosingTheProposal SKIPPED
+
+Units2630StructuralMappingTest > russianWithoutProvenanceIsRejectedAndPenguinStaysOut SKIPPED
+
+Units2630StructuralMappingTest > packagedCurriculumRecordsPendingPageRangesWithoutApprovingAssignments SKIPPED
+
+Units2630StructuralMappingTest > preparedLateUnitIsNotPermanentlyBlockedFromAdvancement SKIPPED
+
+Units2630StructuralMappingTest > pageRangeBookAttestationAndEmptyContentCannotAdvance SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Units2630StructuralMappingTest: 9 reported, 0 passed, 0 failed, 9 skipped
+
+V2RebuildTest > resolvedAssetRecordsAreRequiredInsteadOfCounters SKIPPED
+
+V2RebuildTest > genericBookDirectionCountersAndEmptyArraysCannotSatisfyContentCompleteness SKIPPED
+
+V2RebuildTest > unitsThreeToFiveStayDevelopmentAndLaterUnitsStayClosed SKIPPED
+
+V2RebuildTest > referencesRejectMissingAndUnknownClassifications SKIPPED
+
+V2RebuildTest > upgradeKeepsExportAndRecordingRows SKIPPED
+
+V2RebuildTest > installedUnitRejectsPendingAndRejectedInstructionalRecords SKIPPED
+
+V2RebuildTest > noInternetPermissionIsDeclared SKIPPED
+
+V2RebuildTest > unitAndLabHeadingsStayInsideTheRoot SKIPPED
+
+V2RebuildTest > structuralMappingSafeguardsRejectIncompleteOrInventedRecords SKIPPED
+
+V2RebuildTest > todayShowsOneBoundedSessionInsteadOfTheUnitInventory SKIPPED
+
+V2RebuildTest > packValidatesAndRefusesGeneratedOrCatalogBoundContent SKIPPED
+
+V2RebuildTest > approvedReviewRequiresACompleteMatchingRecord SKIPPED
+
+V2RebuildTest > unitOneProgressesInOrderAndRestoresAfterRestart SKIPPED
+
+V2RebuildTest > installedUnitsAreRejectedWhileRequiredExperiencesAreMissing SKIPPED
+
+V2RebuildTest > productHelpAndOperationalGuidanceMayUseNotRequired SKIPPED
+
+V2RebuildTest > advancementNeedsMoreThanOneCheckAndBookAttestation SKIPPED
+
+V2RebuildTest > linguisticReferencesCannotUseNotRequired SKIPPED
+
+V2RebuildTest > onboardingAndPrimaryControlsAreVisible SKIPPED
+
+V2RebuildTest > notPreparedBookDirectionCannotBePromotedOrAdvanced SKIPPED
+
+V2RebuildTest > advancementCannotSkipARequiredObjective SKIPPED
+
+V2RebuildTest > noUnitCanBeInstalledWithPendingReviewOrMapping SKIPPED
+
+V2RebuildTest > unitTwoRequiresUnitOneAndCannotUseUnrelatedCatalogAudio SKIPPED
+
+V2RebuildTest > durablePackIdentityStaysHonestAndUnitIsolationHolds SKIPPED
+
+V2RebuildTest > primaryContentStartsAtTheInsetWhenFontIsLarge SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.V2RebuildTest: 24 reported, 0 passed, 0 failed, 24 skipped
+
+PostPr53ReadinessReconciliationTest > syntheticMergeValidatesTheSecondParentRatherThanItsParent SKIPPED
+
+PostPr53ReadinessReconciliationTest > unexpectedFileBetweenRecordedContentCommitAndBranchHeadFailsTheLock SKIPPED
+
+PostPr53ReadinessReconciliationTest > reportMatrixMatchesTheLiveCurriculum SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest: 3 reported, 0 passed, 0 failed, 3 skipped
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Unit7CumulativeReviewTest > schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview SKIPPED
+
+Unit7CumulativeReviewTest > oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit SKIPPED
+
+Unit7CumulativeReviewTest > ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup SKIPPED
+
+Unit7CumulativeReviewTest > placementWithTaughtUnit1ButUntaughtUnit6RepairsTheMissingOwnerInsteadOfUnit1 SKIPPED
+
+Unit7CumulativeReviewTest > actualUnit7ContinueInanimateCaseCueTeachingPracticeReturnAndAdvanceStayOnUnit7 SKIPPED
+
+Unit7CumulativeReviewTest > optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion SKIPPED
+
+Unit7CumulativeReviewTest > heldUnit7WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit7CumulativeReviewTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit8PluralInstructionTest > laterSpellingNeedsItsOwnReverseNounAndAdjectiveEvidence SKIPPED
+
+Unit8PluralInstructionTest > authenticOldSevenAnswerHistoryIsPreservedButStaleAfterInstructionRenewal SKIPPED
+
+Unit8PluralInstructionTest > earlierSevenAnswerPluralCompletionCannotCreditLaterSpellingReinforcement SKIPPED
+
+Unit8PluralInstructionTest > everyPluralCardPrecedesPracticeAndFullRemediationRestoresFourteenForms SKIPPED
+
+Unit8PluralInstructionTest > playerRejectsSingularWordForPluralAndOffersFullPluralRemediation SKIPPED
+
+Unit8PluralInstructionTest > unit8ScoredObjectsAndAllPriorNativeExamplesAndProvenanceRemainIdentical SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit8PluralInstructionTest: 6 reported, 0 passed, 0 failed, 6 skipped
+
+Unit9NumberFeedbackCorrectionTest > historicalGenericFeedbackCreditIsRetainedButStale SKIPPED
+
+Unit9NumberFeedbackCorrectionTest > wrongHundredsSelectionDisplaysTheDifferentValues SKIPPED
+
+Unit9NumberFeedbackCorrectionTest > numberFeedbackDistinguishesActualValuesAndPlaceValue SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Unit9NumberFeedbackCorrectionTest: 3 reported, 0 passed, 0 failed, 3 skipped
+
+Units1115InstructionalValidityTest > everyRecognitionObjectiveHasAnIndependentFeatureValidCheck SKIPPED
+
+Units1115InstructionalValidityTest > learnerFacingReferencesDoNotDenyAPackagedLessonBody SKIPPED
+
+Units1115InstructionalValidityTest > changingOnlySourceIdWhileRetainingSourceRecordIdFails SKIPPED
+
+Units1115InstructionalValidityTest > retainingADirectEnglishCueWithTheSameAnswerFails SKIPPED
+
+Units1115InstructionalValidityTest > changingProseRationaleCannotValidateAnInvalidContrast SKIPPED
+
+Units1115InstructionalValidityTest > responseOptionsMustShareTheDeclaredKind SKIPPED
+
+Units1115InstructionalValidityTest > unrelatedRemediationCannotSatisfyARecognitionObjective SKIPPED
+
+Units1115InstructionalValidityTest > everyAdvancementCheckNamesOneExplicitTarget SKIPPED
+
+Units1115InstructionalValidityTest > anUnrelatedAdmittedDistractorFails SKIPPED
+
+Units1115InstructionalValidityTest > changingOriginalSourceTextAndHashWhileRetainingSourceRecordIdFails SKIPPED
+
+Units1115InstructionalValidityTest > aSkippedRecognitionObjectiveDoesNotAdvance SKIPPED
+
+Units1115InstructionalValidityTest > alteringUnitElevenDoesNotMoveEarlierUnitDigests SKIPPED
+
+Units1115InstructionalValidityTest > aShownLineContainingItsAnswerFailsAsQualifyingEvidence SKIPPED
+
+Units1115InstructionalValidityTest > aGenericRationaleIsNotTiedToTheTarget SKIPPED
+
+Units1115InstructionalValidityTest > copiedSourceRecordIdWithDifferentFrozenContentCannotShareASpan SKIPPED
+
+Units1115InstructionalValidityTest > impersonalObjectiveCannotBeSatisfiedByAnUnrelatedInflectedForm SKIPPED
+
+Units1115InstructionalValidityTest > knownAmbiguityClassesFailClosed SKIPPED
+
+Units1115InstructionalValidityTest > changingSourceRevisionWhileRetainingSourceRecordIdFails SKIPPED
+
+Units1115InstructionalValidityTest > englishGlossCannotAnswerARussianSpellingQuestion SKIPPED
+
+Units1115InstructionalValidityTest > learnerFacingReferenceDoesNotClaimUnpreparedUnitsHaveLessonBodies SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Units1115InstructionalValidityTest: 20 reported, 0 passed, 0 failed, 20 skipped
+
+Units2630SourceIntakeTest > partialStrandsDoNotClearBroadClaimsAndOptionalMaterialDoesNotGate SKIPPED
+
+Units2630SourceIntakeTest > forgedMutableWrongAndExcludedSourcesStayClosed SKIPPED
+
+Units2630SourceIntakeTest > readingAndCorrespondenceExperiencesFailClosed SKIPPED
+
+Units2630SourceIntakeTest > wikipediaLicenseRouteIsNotTheWikibooksSnapshot SKIPPED
+
+Units2630SourceIntakeTest > presentPassiveGlossFollowsOnlyTheExplicitParenthetical SKIPPED
+
+Units2630SourceIntakeTest > neighboringSpansKeywordsAndInactiveVariancesStayClosed SKIPPED
+
+Units2630SourceIntakeTest > admittedCapabilitiesBindSpanUnitObjectiveAndClaim SKIPPED
+
+Units2630SourceIntakeTest > generatedRussianPenguinAudioAndReleaseStayClosed SKIPPED
+
+Units2630SourceIntakeTest > retainedSourceBytesMatchTheFrozenIdentityTwice SKIPPED
+
+Units2630SourceIntakeTest > duplicateSpanMarkersFailClosed SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Units2630SourceIntakeTest: 10 reported, 0 passed, 0 failed, 10 skipped
+
+Units610SourceIntakeTest > unitsSixThroughTenStayReviewPendingAndSourceBound SKIPPED
+
+Units610SourceIntakeTest > retainedSourceBytesMatchImmutableRevisions SKIPPED
+
+Units610SourceIntakeTest > wrongUnitPacketSubstitutionFails SKIPPED
+
+Units610SourceIntakeTest > earlierUnitDigestsStayPutAndLaterUnitsStayIsolated SKIPPED
+
+Units610SourceIntakeTest > governedContrastsStaySourceBoundAndBookAttestationDoesNotAdvance SKIPPED
+
+Units610SourceIntakeTest > noPenguinAudioOrNetworkWasAdded SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.Units610SourceIntakeTest: 6 reported, 0 passed, 0 failed, 6 skipped
+
+OwnerGovernanceDecisionTest > historicalRecordsAndPremiumBlueprintStayUnchanged SKIPPED
+
+OwnerGovernanceDecisionTest > mappingAcceptanceFailsForInventedOrMismatchedFacts SKIPPED
+
+OwnerGovernanceDecisionTest > unresolvedSourceCapabilitiesStayEmptyAndVarianceUnitsStayUnprepared SKIPPED
+
+OwnerGovernanceDecisionTest > decisionPackageStatesRecommendationsAndLeavesOwnerFieldsBlank SKIPPED
+
+OwnerGovernanceDecisionTest > blankMismatchedAndNonOwnerDecisionsFailClosedWithoutChangingProduction SKIPPED
+
+OwnerGovernanceDecisionTest > preparationManifestBindsFactsAndDoesNotPassAFinalAudit SKIPPED
+
+OwnerGovernanceDecisionTest > referenceFileComparisonCorrectsLateBoundariesAndStaysUnsigned SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+Unit1ReviewPackageTest > contentReviewDigestSurvivesApprovalActivation SKIPPED
+
+Unit1ReviewPackageTest > committedPackageMatchesTheCurriculumTraversal SKIPPED
+
+Unit1ReviewPackageTest > validatorRejectsOmissionsDuplicatesBrokenLinksAndFabrication SKIPPED
+
+Unit1ReviewPackageTest > reviewerAndMappingFieldsStayBlank SKIPPED
+
+Unit1ReviewPackageTest > instructionalDigestChangesForEachGovernedFieldCategory SKIPPED
+
+Unit1ReviewPackageTest > packageDigestIsTheInstructionalContentDigest SKIPPED
+
+Unit1ReviewPackageTest > reviewPackageDoesNotBypassTheReleaseGate SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.review.Unit1ReviewPackageTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+UnitReviewPipelineTest > unitOneAndUnitTwoPackagesStayIsolated SKIPPED
+
+UnitReviewPipelineTest > aLaterUnitMutationDoesNotApproveOrInvalidateAnEarlierUnit SKIPPED
+
+UnitReviewPipelineTest > unitTwoOnlyMutationLeavesUnitOneDigestUntouched SKIPPED
+
+UnitReviewPipelineTest > committedUnitPackagesMatchTheGenerator SKIPPED
+
+UnitReviewPipelineTest > curriculumSourceCommitMustContainTheGovernedCurriculum SKIPPED
+
+UnitReviewPipelineTest > unitsOutsideThePreparedPairCannotApproveOrSkipMissingRecords SKIPPED
+
+UnitReviewPipelineTest > mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields SKIPPED
+AUDIT_CLASS dev.russiancompanion.v2.review.UnitReviewPipelineTest: 7 reported, 0 passed, 0 failed, 7 skipped
+
+[Incubating] Problems report is available at: file:///workspace/russian-companion/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 12s
+33 actionable tasks: 1 executed, 32 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.0/userguide/configuration_cache_enabling.html

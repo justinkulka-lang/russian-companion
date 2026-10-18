@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Units1620SourceIntakeTest" tests="9" skipped="9" failures="0" errors="0" timestamp="2026-10-18T19:49:52.242Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="unitEighteenCannotBecomeContentCompleteWithoutComparisonAndRelativeSources" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="everyRussianSpanOccursInItsRecordedSource" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitNineteenCannotBecomeContentCompleteWithoutConditionalAndObligationSources" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitTwentyCannotBecomeContentCompleteFromARedLinkVerbPageOrDictionaryRows" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="frozenSourceBytesAndRevisionsStayImmutable" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="noPenguinContentOrPrivatePdfEnteredGit" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="structuralMappingsMatchTheOwnedEditionObservations" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="learnerFacingTextDropsWikibooksEmphasisAndKeepsTheFrozenSource" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

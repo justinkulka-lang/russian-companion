@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit15ImperativeRemediationTest" tests="5" skipped="5" failures="0" errors="0" timestamp="2026-10-18T19:49:49.845Z" hostname="d0aced911621" time="0.004">
+  <properties/>
+  <testcase name="completeImperativeContrastsPrecedePracticeAndRepairRestoresEveryExample" classname="dev.russiancompanion.v2.Unit15ImperativeRemediationTest" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase name="oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard" classname="dev.russiancompanion.v2.Unit15ImperativeRemediationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="exactDeclaredUnitExceptionPreservesEveryQuestionRecordAndRequirement" classname="dev.russiancompanion.v2.Unit15ImperativeRemediationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer" classname="dev.russiancompanion.v2.Unit15ImperativeRemediationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction" classname="dev.russiancompanion.v2.Unit15ImperativeRemediationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

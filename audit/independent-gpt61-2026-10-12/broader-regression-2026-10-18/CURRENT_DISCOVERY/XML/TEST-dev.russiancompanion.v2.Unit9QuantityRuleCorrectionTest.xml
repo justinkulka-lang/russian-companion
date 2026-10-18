@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest" tests="5" skipped="5" failures="0" errors="0" timestamp="2026-10-18T19:49:52.467Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="threeChoiceContextCannotSwapItsAnswerAndApplicationTogether" classname="dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="historicalFragmentAttemptIsRetainedButCannotCreditTheCompleteRule" classname="dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="completeRulesTeachTeenExceptionsAndScopeBeforePractice" classname="dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="wrongTeenAnswerShowsTheCompleteExplanation" classname="dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext" classname="dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

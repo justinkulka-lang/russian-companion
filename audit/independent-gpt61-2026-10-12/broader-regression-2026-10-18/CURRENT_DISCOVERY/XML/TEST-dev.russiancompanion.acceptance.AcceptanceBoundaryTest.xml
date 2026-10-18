@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" tests="9" skipped="9" failures="0" errors="0" timestamp="2026-10-18T19:49:43.155Z" hostname="d0aced911621" time="0.013">
+  <properties/>
+  <testcase name="at020_physicalRebootPersistsGovernedRecords" classname="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="at029_aSingleNoAnswerRejectsTheProposal" classname="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="at010_onlyCompatibleMatchedAudioIsIncluded" classname="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="at017_at024_optionalDrillsAreNotGateEvidenceAndDoNotShip" classname="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable" classname="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="at001_at003_at011_at028_userFacingCopyStaysInsideTheBeginnerCompanion" classname="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="at005_packagedSurfaceHasNoNetworkAccountOrSpeechRecognizer" classname="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="at023_ankiDroidStaysOutsideTheApp" classname="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="acceptanceProceduresStayClassifiedWithoutApprovingRelease" classname="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

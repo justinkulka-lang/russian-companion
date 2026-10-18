@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.presentation.navigation.ContinueNavigationTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2026-10-18T19:49:45.347Z" hostname="d0aced911621" time="0.0">
+  <properties/>
+  <testcase name="continueRoutesCarryTheNamedPlanOrAudioIdentity" classname="dev.russiancompanion.presentation.navigation.ContinueNavigationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

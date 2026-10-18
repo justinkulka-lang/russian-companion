@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.domain.practice.PracticeRulesTest" tests="5" skipped="5" failures="0" errors="0" timestamp="2026-10-18T19:49:44.262Z" hostname="d0aced911621" time="0.003">
+  <properties/>
+  <testcase name="completionRequiresSeparateReplayAndHasNoShortcut" classname="dev.russiancompanion.domain.practice.PracticeRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="writesRejectFabricatedCompletionAndWrongEvidence" classname="dev.russiancompanion.domain.practice.PracticeRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="aListenPlanCompletesOnlyWhenEveryPrescribedModelIsRecorded" classname="dev.russiancompanion.domain.practice.PracticeRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="recordingWaitsForAPlayableModelAndAGrantedMicrophone" classname="dev.russiancompanion.domain.practice.PracticeRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="neighborsStayInsideTheAdmittedSequence" classname="dev.russiancompanion.domain.practice.PracticeRulesTest" time="0.002">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

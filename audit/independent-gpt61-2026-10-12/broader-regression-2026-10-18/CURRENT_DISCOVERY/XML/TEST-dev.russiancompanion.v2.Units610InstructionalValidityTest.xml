@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Units610InstructionalValidityTest" tests="22" skipped="22" failures="0" errors="0" timestamp="2026-10-18T19:49:52.108Z" hostname="d0aced911621" time="0.01">
+  <properties/>
+  <testcase name="everyRecognitionObjectiveHasAnIndependentFeatureValidCheck" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="falsifiedRelationshipIdsFail" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="englishRuleProseCannotBeStoredAsARussianExample" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="changingOnlySourceIdWhileRetainingSourceRecordIdFails" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="retainingADirectEnglishCueWithTheSameAnswerFails" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="changingProseRationaleCannotValidateAnInvalidContrast" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="aDifferentLemmaWithTheSameRelationLabelFails" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="bookAttestationAndPartialObjectivesDoNotAdvance" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="anUnrelatedAdmittedDistractorFails" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="changingOriginalSourceTextAndHashWhileRetainingSourceRecordIdFails" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitNineBoundaryCasesAreIndependentQualifyingChecks" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="contentCompleteRecognitionObjectivesKeepAnIndependentCheck" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="sourceMeaningAloneCannotSatisfyAGrammarObjective" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="aWikibooksRecordShapedLikeAnOpenRussianLemmaCannotBeTheSameLemma" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="aShownLineContainingItsAnswerFailsAsQualifyingEvidence" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="renamingSourceMeaningToFormSelectionDoesNotValidateATranslationMatch" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="anAnswerSentenceSelectedByCueTokenFails" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="guidedOnlyContrastsDoNotSatisfyARecognitionObjective" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="aRationaleThatDoesNotExplainTheDistinctionFails" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="anUnrelatedDistractorCarryingSameWordStillFails" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="changingSourceRevisionWhileRetainingSourceRecordIdFails" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="sameTruncatedSourceRecordIdWithDifferentFrozenContentCannotShareASpan" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

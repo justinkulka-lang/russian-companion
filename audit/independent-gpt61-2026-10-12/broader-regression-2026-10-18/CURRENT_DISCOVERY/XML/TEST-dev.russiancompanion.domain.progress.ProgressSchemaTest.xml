@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.domain.progress.ProgressSchemaTest" tests="4" skipped="4" failures="0" errors="0" timestamp="2026-10-18T19:49:45.047Z" hostname="d0aced911621" time="0.009">
+  <properties/>
+  <testcase name="missingNamedLogsAndUnreadableDurationsCannotBeReproducedAsTheCapturedTotals" classname="dev.russiancompanion.domain.progress.ProgressSchemaTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="activityLogsRequireATimestampNonnegativeDurationAndBookAnkiAttestation" classname="dev.russiancompanion.domain.progress.ProgressSchemaTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="laterLogsDoNotRewriteANamedProgressSnapshot" classname="dev.russiancompanion.domain.progress.ProgressSchemaTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="exportCompletionRequiresMatchingPackageCountsAndAllowsUnsuccessfulRecords" classname="dev.russiancompanion.domain.progress.ProgressSchemaTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

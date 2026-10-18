@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit26CumulativeReviewTest" tests="7" skipped="7" failures="0" errors="0" timestamp="2026-10-18T19:49:50.656Z" hostname="d0aced911621" time="0.004">
+  <properties/>
+  <testcase name="actualUnit26ContinueNameReplyCueTeachingPracticeReturnAndAdvanceStayOnUnit26" classname="dev.russiancompanion.v2.Unit26CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="oldFormatOneAndTwoKeepRawUnit26HistoryWithoutInventingCreditOrRepairingUnit11" classname="dev.russiancompanion.v2.Unit26CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup" classname="dev.russiancompanion.v2.Unit26CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="heldUnit26WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching" classname="dev.russiancompanion.v2.Unit26CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="placementWithTaughtUnit1ButUntaughtUnit25RepairsTheMissingOwnerInsteadOfUnit1" classname="dev.russiancompanion.v2.Unit26CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion" classname="dev.russiancompanion.v2.Unit26CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot" classname="dev.russiancompanion.v2.Unit26CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

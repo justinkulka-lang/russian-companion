@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit13PastTeachingTest" tests="8" skipped="8" failures="0" errors="0" timestamp="2026-10-18T19:49:49.804Z" hostname="d0aced911621" time="0.011">
+  <properties/>
+  <testcase name="genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen" classname="dev.russiancompanion.v2.Unit13PastTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="wrongGenderChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer" classname="dev.russiancompanion.v2.Unit13PastTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="wrongAspectChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer" classname="dev.russiancompanion.v2.Unit13PastTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments" classname="dev.russiancompanion.v2.Unit13PastTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples" classname="dev.russiancompanion.v2.Unit13PastTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard" classname="dev.russiancompanion.v2.Unit13PastTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException" classname="dev.russiancompanion.v2.Unit13PastTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction" classname="dev.russiancompanion.v2.Unit13PastTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

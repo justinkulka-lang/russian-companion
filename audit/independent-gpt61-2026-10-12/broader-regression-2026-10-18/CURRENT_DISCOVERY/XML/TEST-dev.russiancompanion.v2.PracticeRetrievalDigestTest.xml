@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.PracticeRetrievalDigestTest" tests="18" skipped="18" failures="0" errors="0" timestamp="2026-10-18T19:49:48.085Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="mismatchedDigestAttemptLeavesContinueDisabledAndCreatesNoCompletedStep" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="prescribedCheckScoresRemediationAndCompletesOnce" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unansweredPracticeAndBlockedLabsDoNotRecordCompletion" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unverifiedAttemptsStayExcludedAfterReload" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="checkStepDoesNotCompleteUntilItIsAnswered" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="governedAnswerEnablesContinueAfterAFreshLoadAndSurvivesRefresh" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="alphabetPracticeScoresFeedbackWithoutPrescribedCreditOrDuplicateRows" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="legacyAttemptLeavesContinueDisabledAndCreatesNoCompletedStep" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="readingVocabularyGrammarAndMixedStayOptionalAndPrerequisiteFiltered" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="savedWorkResumesABookmarkWithoutANewAttemptAndHidesCompletedChecks" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="twoGovernedAnswersOnOneStepBothRemainAfterTheSecondWrite" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="mismatchedResumeDigestStaysClosed" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="emptyAndUnverifiedSavedPositionsStayClosed" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="practiceAndSavedWorkStayReachableAtLargeFontInLandscape" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="otherStepAttemptLeavesContinueDisabledAndCreatesNoCompletedStep" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="legacyAndMismatchedAttemptsDoNotGrantCreditAndBackupKeepsTheOriginalDigest" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="optionalPracticeAcceptsALaterAnswerAndSuppressesTheSameSelection" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="migrationMarksExistingAttemptIdentityUnrecoverable" classname="dev.russiancompanion.v2.PracticeRetrievalDigestTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

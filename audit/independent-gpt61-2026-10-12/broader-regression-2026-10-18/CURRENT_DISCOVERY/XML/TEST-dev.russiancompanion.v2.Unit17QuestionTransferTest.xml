@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit17QuestionTransferTest" tests="10" skipped="10" failures="0" errors="0" timestamp="2026-10-18T19:49:49.075Z" hostname="d0aced911621" time="0.0">
+  <properties/>
+  <testcase name="questionCompletionRequiresIndependentCuesDistinctFromGuidedPractice" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="coherentNativeTextAndHashForgeryCannotChangeTheAppleQuestion" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="coordinatedKeyAndApplicationCannotMakeTheClockQuestionAskForABook" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="playerRejectsClockTimeAsTheBookQuestionMeaning" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="optionalOriginalGlossesKeepTeachingAndSavedSelectionsWithoutCredit" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="playerRejectsBookSelectionAsTheClockQuestionMeaning" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="authenticHistoricalClockCompletionStaysSavedButCannotCreditNewQuestions" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="guidedAppleChoiceCannotCompleteIndependentQuestionChecks" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="completeNativeQuestionsAndOptionalScopeValidateWithoutProductionClaims" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="restoringValidOldContrastItemsCannotClearTheQuestionCapability" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
