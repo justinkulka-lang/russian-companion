@@ -1,0 +1,153 @@
+    @Test
+    fun batchAExplanationsNameTheKeyedRelationshipAndRejectASwap() {
+        val pack = pack()
+        val items = pack.items.filter { it.objectiveId in BATCH_A_OBJECTIVES }
+        assertEquals(41, items.size)
+        val liveErrors = V2Validator.validate(pack).errors
+        val clock = """The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?"."""
+        val book = """The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?"."""
+        val apple = """The frozen source pairs the shown form "Которое яблоко моё?" with the admitted gloss "Which apple is mine?"."""
+        items.filter { it.promptLetter == "Который час?" }.forEach { item ->
+            assertTrue(item.id, item.assessment!!.whyAnswerDemonstratesObjective.startsWith(clock + "\n"))
+            assertEquals(item.id, item.feedback, item.assessment.whyAnswerDemonstratesObjective.substringAfter("\n"))
+            val feedbackRecord = pendingExplanation(pack, item, item.feedback)
+            assertContentAuditResearch(checkNotNull(feedbackRecord))
+            assertEquals(item.id, item.distractorRationales[1], item.assessment.distractorDifference[1])
+            assertTrue(item.id, item.distractorRationales[1].contains("Which book do you want?"))
+            assertContentAuditResearch(checkNotNull(pendingExplanation(pack, item, item.distractorRationales[1])))
+        }
+        val appleItem = items.single { it.promptLetter == "Которое яблоко моё?" }
+        assertTrue(appleItem.assessment!!.whyAnswerDemonstratesObjective.startsWith(apple + "\n"))
+        assertEquals(appleItem.feedback, appleItem.assessment.whyAnswerDemonstratesObjective.substringAfter("\n"))
+        assertContentAuditResearch(checkNotNull(pendingExplanation(pack, appleItem, appleItem.feedback)))
+        assertTrue(appleItem.distractorRationales[1].contains("Which book do you want?"))
+        assertContentAuditResearch(checkNotNull(pendingExplanation(pack, appleItem, appleItem.distractorRationales[1])))
+        pack.authoredEnglishRecords.filter { it.unitNumber in 16..20 }.forEach { record ->
+            assertFalse(record.text == "The frozen line writes" || record.text == "beside")
+        }
+        items.groupBy { it.objectiveId }.forEach { (_, group) ->
+            group.forEach { item ->
+                val assessment = item.assessment!!
+                val why = assessment.whyAnswerDemonstratesObjective
+                val shown = item.promptLetter!!
+                val corrected = item.sourceId == ContentAuditSources.SOURCE_ID
+                val expandedExplanation = pendingExplanation(pack, item, item.feedback)
+                if (corrected) {
+                    assertEquals(item.id, "STATED_APPLICATION", assessment.relationKind)
+                    val records = assessment.relationParticipantIds.map { id ->
+                        pack.provenanceRecords.single { it.itemId == id }
+                    }
+                    assertTrue(item.id, records.isNotEmpty())
+                    assertTrue(item.id, records.all { it.sourceId == ContentAuditSources.SOURCE_ID })
+                    assertTrue(item.id, records.any { record ->
+                        record.synthesis!!.applications.any { application ->
+                            application.cue == shown && application.answer == item.answer &&
+                                application.distractors.toSet() == (item.options - item.answer).toSet()
+                        }
+                    })
+                    assertTrue(item.id, why.contains(shown) && why.contains(item.answer))
+                    assertTrue(item.id, item.feedback.contains(item.answer))
+                    if (expandedExplanation != null) assertContentAuditResearch(expandedExplanation)
+                    else assertTrue(item.id, item.feedback.contains(shown))
+                } else if (expandedExplanation != null) {
+                    assertContentAuditResearch(expandedExplanation)
+                    assertTrue(item.id, why == item.feedback || why.endsWith("\n" + item.feedback))
+                    if (why != item.feedback) {
+                        val rationaleRecord = pendingExplanation(pack, item, why)
+                        if (rationaleRecord != null) assertContentAuditResearch(rationaleRecord)
+                        else assertCompleteRelationship(item.id, why.substringBefore("\n"), shown, item.answer)
+                    }
+                    assertTrue(item.id, why.contains(shown) && why.contains(item.answer))
+                    assertTrue(item.id, item.feedback.contains(item.answer))
+                } else {
+                    assertEquals(item.id, why, item.feedback)
+                    assertCompleteRelationship(item.id, why, shown, item.answer)
+                }
+                val concealed = why.replace(item.answer, item.answer + " leftover") + " " + item.answer
+                assertTrue(concealed.contains(item.answer))
+                assertFalse(
+                    "${item.id} accepted a trailing substring",
+                    relationshipNames(concealed, shown, item.answer),
+                )
+                group.map { it.answer }.filter { other ->
+                    other != item.answer && !item.answer.contains(other) && !other.contains(item.answer)
+                }.forEach { other ->
+                    assertFalse("${item.id} names $other", why.contains(other) || item.feedback.contains(other))
+                }
+                item.options.forEachIndexed { index, option ->
+                    if (option == item.answer) return@forEachIndexed
+                    val rationale = item.distractorRationales[index]
+                    val difference = assessment.distractorDifference[index]
+                    assertEquals("${item.id} rationale", rationale, difference)
+                    val shownFormGloss = glossWhenOptionIsShownForm(rationale, option)
+                    if (corrected || expandedExplanation != null) {
+                        assertTrue(item.id, rationale.contains(option))
+                    } else if (shownFormGloss != null) {
+                        assertCompleteRelationship(item.id, rationale, option, shownFormGloss)
+                    } else {
+                        assertCompleteRelationship(item.id, rationale, competingForm(rationale, option), option)
+                    }
+                    if (!option.contains(item.answer)) {
+                        assertFalse("${item.id} rationale names ${item.answer}", rationale.contains(item.answer) || difference.contains(item.answer))
+                    }
+                    if (!item.answer.contains(option)) {
+                        assertFalse("${item.id} explanation names $option", why.contains(option))
+                    }
+                }
+                assertTrue(
+                    liveErrors.filter { it.contains(item.id) }.joinToString("\n"),
+                    liveErrors.none { error ->
+                        error.contains(item.id) && (
+                            error.contains("explanation") || error.contains("gloss") || error.contains("distractor rationale")
+                            )
+                    },
+                )
+                val distractor = item.options.first { option ->
+                    option != item.answer && !item.answer.contains(option) && !option.contains(item.answer)
+                }
+                val replacedWhy = why.replace(item.answer, distractor)
+                val replacedFeedback = item.feedback.replace(item.answer, distractor)
+                assertFalse(replacedWhy.contains(item.answer))
+                assertFalse(relationshipNames(replacedWhy, shown, item.answer))
+                val replacedErrors = V2Validator.validate(
+                    replaceItem(
+                        pack,
+                        item.copy(
+                            feedback = replacedFeedback,
+                            assessment = assessment.copy(whyAnswerDemonstratesObjective = replacedWhy),
+                        ),
+                    ),
+                ).errors
+                assertTrue(
+                    replacedErrors.filter { it.contains(item.id) }.joinToString("\n"),
+                    replacedErrors.any { it.contains(item.id) && (it.contains("keyed answer") || it.contains("different gloss")) },
+                )
+            }
+            group.forEach { item ->
+                val other = group.firstOrNull { candidate ->
+                    candidate.answer != item.answer &&
+                        !candidate.assessment!!.whyAnswerDemonstratesObjective.contains(item.answer)
+                } ?: return@forEach
+                val swappedErrors = V2Validator.validate(
+                    replaceItem(
+                        pack,
+                        item.copy(
+                            feedback = other.feedback,
+                            assessment = item.assessment!!.copy(
+                                whyAnswerDemonstratesObjective = other.assessment!!.whyAnswerDemonstratesObjective,
+                            ),
+                        ),
+                    ),
+                ).errors
+                assertTrue(
+                    swappedErrors.filter { it.contains(item.id) }.joinToString("\n"),
+                    swappedErrors.any {
+                        it.contains(item.id) && (
+                            it.contains("explanation") || it.contains("gloss") || it.contains("frozen evidence")
+                            )
+                    },
+                )
+            }
+        }
+    }
+

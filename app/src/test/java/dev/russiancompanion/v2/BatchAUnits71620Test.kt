@@ -1,5 +1,7 @@
 package dev.russiancompanion.v2
 
+import dev.russiancompanion.v2.curriculum.CompleteRuleContextPins
+import dev.russiancompanion.v2.curriculum.V2PackIdentityIndex
 import dev.russiancompanion.v2.curriculum.ContentAuditSources
 import dev.russiancompanion.v2.curriculum.V2CheckItem
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
@@ -194,11 +196,100 @@ class BatchAUnits71620Test {
         assertEquals(null, V2Validator.classifyRelation(adjective, quickly, listOf(well, wonderfully)))
     }
 
+    /** Original 41-item explanation contract, before question/motion constructs were expanded. */
     @Test
     fun batchAExplanationsNameTheKeyedRelationshipAndRejectASwap() {
-        val pack = pack()
+        val pack = historicalBatchAPack()
         val items = pack.items.filter { it.objectiveId in BATCH_A_OBJECTIVES }
         assertEquals(41, items.size)
+        assertPairAndApplicationExplanations(pack, items)
+    }
+
+    @Test
+    fun currentBatchAExplainsEveryRetainedAndExpandedConstructAndRejectsWrongKeys() {
+        val live = pack()
+        val old = historicalBatchAPack()
+        val historical = old.items.filter { it.objectiveId in BATCH_A_OBJECTIVES }
+        val current = live.items.filter { it.objectiveId in BATCH_A_OBJECTIVES }
+        val referenceIds = setOf("u17-g-clock-0", "u17-i-clock-1", "u17-i-clock-2")
+        val expandedFeatures = mapOf(
+            "u17-g-question-apple" to "QUESTION_OBJECT_SELECTION_GUIDED",
+            "u17-i-question-clock" to "QUESTION_CLOCK_RECOGNITION",
+            "u17-i-question-book" to "QUESTION_BOOK_SELECTION",
+            "u20-g-direction-library" to "MOTION_DIRECTIONAL_APPLICATION",
+            "u20-g-direction-ability" to "MOTION_DIRECTIONAL_APPLICATION",
+            "u20-i-direction-birds" to "MOTION_DIRECTIONAL_APPLICATION",
+            "u20-i-direction-city" to "MOTION_DIRECTIONAL_APPLICATION",
+            "u20-i-direction-weekly" to "MOTION_DIRECTIONAL_APPLICATION",
+            "u20-i-direction-round" to "MOTION_DIRECTIONAL_APPLICATION",
+        )
+        assertEquals(41, historical.size)
+        assertEquals(47, current.size)
+        assertEquals(historical.map { it.id }.toSet() - referenceIds + expandedFeatures.keys, current.map { it.id }.toSet())
+        val retained = current.filter { it.id !in expandedFeatures }
+        assertEquals(38, retained.size)
+        // Only the two pre-existing prefixed-motion assessments were rebound to expanded teaching.
+        retained.filter { it.id !in setOf("u20-i-motion-3", "u20-i-motion-4") }.forEach { item ->
+            assertEquals(item.id, old.items.single { it.id == item.id }, item)
+        }
+        val reference = live.unit(17)!!.objectives.single { it.id == "obj-u17-clock-vocabulary" }
+        assertFalse(reference.gating)
+        assertEquals("GUIDANCE", reference.kind)
+        assertTrue(reference.checkItemIds.isEmpty() && reference.practiceStepIds.isEmpty())
+        referenceIds.forEach { id ->
+            val item = live.items.single { it.id == id }
+            val earlier = old.items.single { it.id == id }
+            assertEquals(reference.id, item.objectiveId)
+            assertEquals("SOURCE_MEANING", item.kind)
+            assertEquals(null, item.assessment)
+            assertEquals(earlier.promptLetter, item.promptLetter)
+            assertEquals(earlier.options, item.options)
+            assertEquals(earlier.answer, item.answer)
+            assertEquals(earlier.feedback, item.feedback)
+            assertEquals(earlier.distractorRationales, item.distractorRationales)
+        }
+        // Original keyed-relationship, distractor, trailing-substring and swap negatives on current retained items.
+        assertPairAndApplicationExplanations(live, retained)
+        val validation = V2Validator.validate(live)
+        assertTrue(validation.errors.joinToString("\n"), validation.ok)
+        expandedFeatures.forEach { (id, feature) ->
+            val item = current.single { it.id == id }
+            val assessment = item.assessment!!
+            assertEquals(id, feature, assessment.testedFeature)
+            assertEquals(id, id.contains("-i-"), assessment.independent)
+            assertEquals(id, "STATED_APPLICATION", assessment.relationKind)
+            assertTrue(id, CompleteRuleContextPins.itemMatches(live, item))
+            assertEquals(id, item.feedback, assessment.whyAnswerDemonstratesObjective)
+            assertTrue(id, item.feedback.contains(item.promptLetter!!) && item.feedback.contains(item.answer))
+            item.options.forEachIndexed { index, option ->
+                if (option == item.answer) return@forEachIndexed
+                assertEquals(id, item.distractorRationales[index], assessment.distractorDifference[index])
+                assertTrue(id, item.distractorRationales[index].contains(option))
+                assertFalse(id, item.distractorRationales[index].contains(item.answer))
+                val changed = item.copy(
+                    feedback = item.feedback.replace(item.answer, option),
+                    assessment = assessment.copy(whyAnswerDemonstratesObjective = assessment.whyAnswerDemonstratesObjective.replace(item.answer, option)),
+                )
+                assertFalse(id, changed.feedback.contains(item.answer))
+                val errors = V2Validator.validate(replaceItem(live, changed)).errors
+                assertTrue(id + "\n" + errors.filter { id in it }.joinToString("\n"), errors.any {
+                    id in it && ("keyed answer" in it || "complete rule context" in it || "explanation" in it)
+                })
+            }
+        }
+    }
+
+    private fun historicalBatchAPack(): V2CurriculumPack {
+        val process = ProcessBuilder("git", "show",
+            "95a170755ef2cffc9fc63378b67c452579097e46:app/src/main/assets/content/v2-curriculum.json")
+            .directory(repo()).start()
+        val result = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
+        assertEquals(0, process.waitFor())
+        V2PackIdentityIndex.warm(result)
+        return result
+    }
+
+    private fun assertPairAndApplicationExplanations(pack: V2CurriculumPack, items: List<V2CheckItem>) {
         val liveErrors = V2Validator.validate(pack).errors
         val clock = """The frozen source pairs the shown form "Который час?" with the admitted gloss "What time is it?"."""
         val book = """The frozen source pairs the shown form "Которую книгу вы хотите?" with the admitted gloss "Which book do you want?"."""

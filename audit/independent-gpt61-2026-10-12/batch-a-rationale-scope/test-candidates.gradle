@@ -1,0 +1,8 @@
+// Candidate filtering only; runtime dependencies and exporter exclusions remain unchanged.
+allprojects {
+    tasks.withType(Test).configureEach {
+        include '**/BatchAUnits71620Test.class'
+        include '**/Unit17QuestionTransferTest.class'
+        include '**/Unit20DirectionalityApplicationTest.class'
+    }
+}
