@@ -1388,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestBatchASourceReviewCheckpoint",
-    "priorCheckpoint": "latestRegressionScopeReconciliationCheckpoint",
-    "next": "Review unchanged BatchA rationale failure against current question/motion constructs; preserve original assertions/evidence and all remaining23 failures. Refresh discovery/broader regression; final independent audit before physical acceptance.",
+    "checkpoint": "latestBatchARationaleCheckpoint",
+    "priorCheckpoint": "latestBatchASourceReviewCheckpoint",
+    "next": "Review retained AcceptanceBoundary source guard without whole-curriculum exemption;preserve all22 open failures,refresh discovery/broader regression. Final independent comprehensive audit precedes actual physical acceptance.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1765,5 +1765,27 @@
     "auditReady": false,
     "originalUnit7RestoreCause": "UNCONFIRMED",
     "next": "Unchanged BatchA rationale scope; read NEXT_REVIEW.md, then remaining source guards/predicate/count/lookup failures and revised broad discovery/regression"
+  },
+  "latestBatchARationaleCheckpoint": {
+    "path": "audit/independent-gpt61-2026-10-12/batch-a-rationale-scope",
+    "sourceCommit": "b6e04f45784bef28afada2a5c59b9bd5b9293ada",
+    "manifest": "batch-a-rationale-scope/INITIAL/MANIFEST.json",
+    "testCounts": {
+      "reported": 10,
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 3,
+    "retainedInitialFailures": 32,
+    "engineeringScopeReconciled": 10,
+    "openInitialFailures": 22,
+    "currentLiteralAnnotations": 1235,
+    "newFullDiscoveryOrBroadCompletion": false,
+    "formalAcceptance": false,
+    "auditReady": false,
+    "originalUnit7RestoreCause": "UNCONFIRMED",
+    "next": "AcceptanceBoundary source guard:exact native/structural literal origin review;see NEXT_REVIEW.md and static pending inventory"
   }
 }

@@ -1,0 +1,45 @@
+{
+  "sourceBeforeReceipt": "b6e04f45784bef28afada2a5c59b9bd5b9293ada",
+  "actualRuntimeSource": "b6e04f45784bef28afada2a5c59b9bd5b9293ada",
+  "runtimeContext": "INITIAL/CONTEXT.json",
+  "unchangedProductionSourceFrom": "4b462d15fed203fc16a78e72baa406fd3e5a4129",
+  "unchangedTrees": {
+    "app/src/main": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "actualRuntimeRunnerAndInitHashesVerifiedAgainstPinnedSource": true,
+  "evidenceSha256": {
+    "CORRECTION.json": "eb61197c603a4176f18682561079931999c8f9c6e6c727a20307fa84b4e3c058",
+    "CURRENT_REGRESSION_RECONCILIATION.json": "c13c319baed9345739b2415dad71eb2304e9cff6dab0a3112615be1a7449ccf9",
+    "INITIAL/CONTEXT.json": "2135bea14bb4628f4fca58635dcacf7f0d448a4d40c44f3765a63d5644cb9e71",
+    "INITIAL/EVENTS.jsonl": "76e8990de7d3371291ba3bc7bc2e1d7d1c8bda28fb47988091d9ba603c6f0f1d",
+    "INITIAL/LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "INITIAL/MANIFEST.json": "bc1578e11d04edec7ff9d07c8abfd18651e274697edc5a660b05df8dd3e970ed",
+    "INITIAL/RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "INITIAL/RUN.log": "02766ff1e83337e89022e48ef82c8002b979fd73da7121646fed902f4c2f45e9",
+    "INITIAL/SHA256.json": "cd56d73fce3c4f6283b04520cf347a3606c7759a35e7f534c2c8087aafc9e38f",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.BatchAUnits71620Test.xml": "c528ba99371767186ad17bb902de9c26e1bdcc6ba62649c9f9c5574bdb600e03",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.Unit17QuestionTransferTest.xml": "fdf9d564229d20fcbf2706d27dbab2be3ce7f70df7577c92a4128ee05613e432",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.Unit20DirectionalityApplicationTest.xml": "fa1e3904583d2b1e82f79948ff77d7475ed0838eb0ef3fab02ce259999bf2f75",
+    "NEXT_REVIEW.md": "0beb974ad4b82ca28f074de97a3e39ca00bb9c92d844c686def14052a72d39f8",
+    "ORIGINAL_METHOD.txt": "9ef808d0206e2d15f1d1c00f7ac6018184bacfd2d60b0b480425a21cafd37c5c",
+    "SOURCE_AND_SCOPE.md": "cc475ba52b2f93dfec8f22947990abddbb1822789cedb2dae9bca40d3f66eac9",
+    "SOURCE_GUARD_PENDING.json": "4dbccd649cb8e1241d54d8b97366ce3201c927122d049033d43191d46279e810",
+    "SOURCE_RECONCILIATION.json": "2af66dce051c448b4c316c68529635dee37d1f2ce416269d25d9672ca922e378",
+    "selection.json": "a3995225eb683e5824c945472b20efe26185305772093771f719b3814b2c9005",
+    "test-candidates.gradle": "527c72a8f38011b40540f7a61bb7bf63d5f2f5ede6e287b768a04f4af56f241e"
+  },
+  "instructionSha256": {
+    "AGENTS.md": "fa9bedfbe9db9826ddca78311d75ff996c8e18ebd6f4343366b271f2f9180a1c",
+    "audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md": "31d204a9525bfe0144019f27e4e3ae989701889f5d769a8aa72f618afd9469a3",
+    "audit/content-corrections/CODEX_CHECKPOINT_2026-10-12.md": "0e8fa26b491e4b8d9cdff096cb99006d7e8b4b16ebc7d6c261afe889b72f59bb",
+    "audit/independent-gpt61-2026-10-12/CURRENT_FINDING_STATUS.json": "6a135743ec44550fa98f64d4d752c52642d56b3114c316b13addf2ef08fc0a0c"
+  },
+  "original32FailureEvidencePreserved": true,
+  "scopeNotSummedWithOthers": true,
+  "completeSuite": false,
+  "formalAcceptance": false,
+  "originalUnit7RestoreCause": "UNCONFIRMED"
+}
