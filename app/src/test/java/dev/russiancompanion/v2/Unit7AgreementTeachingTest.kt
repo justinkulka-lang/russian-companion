@@ -142,10 +142,20 @@ class Unit7AgreementTeachingTest {
     @Test fun freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments() {
         val p = current
         val old = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(evidence(), "COMPLETED_UNIT8.json").readText())
-        LocalStore.openInMemory(context()).use { store ->
+        val name = "u7-fresh-replacement-${System.nanoTime()}.db"
+        try { LocalStore.openNamed(context(), name).use { store ->
+            store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 2))
+            store.v2AttestBook(30, "target-state-must-be-replaced")
+            val epoch = store.learnerMutationEpoch()
             store.openLearnerReplacement()
             try { assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(old, emptyList())) }
             finally { store.closeLearnerReplacement() }
+            assertNotEquals(epoch, store.learnerMutationEpoch())
+            assertEquals(old.profile, store.governedLearnerDocument().profile)
+            assertEquals(old.attempts, store.governedLearnerDocument().attempts)
+            assertEquals(old.unitCompletions, store.governedLearnerDocument().unitCompletions)
+            assertEquals(old.reviewAssignments to old.reviewAnswers, store.cumulativeReviewHistory())
+            assertFalse(30 in store.v2LearnerView().bookAttestedUnits)
             for (number in 7..8) {
                 ordinary(p, store, number)
                 assertTrue(ordinaryUnitRequirements(p, p.unit(number)!!, store.v2LearnerView()).allowed)
@@ -170,6 +180,9 @@ class Unit7AgreementTeachingTest {
             }
             assertEquals((1..8).toSet(), currentCompletedUnitNumbers(p, store.v2LearnerView()))
             old.reviewAssignments.forEach { row -> assertTrue(store.cumulativeReviewHistory().first.contains(row)) }
+        } } finally {
+            context().deleteDatabase(name)
+            File(context().filesDir, "recordings-$name").deleteRecursively()
         }
     }
 
