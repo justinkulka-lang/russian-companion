@@ -1,0 +1,593 @@
+{
+  "initialRuntimeSource": "41e84c0b00605845dacb3a611d742ae72639526e",
+  "originalFailureArchive": "broader-regression-2026-10-18/INITIAL/ABORTED_BINARY_RESULTS.zip",
+  "original32FailuresRetained": true,
+  "engineeringScopeReconciled": 14,
+  "stillOpenInitialFailures": 18,
+  "failures": [
+    {
+      "class": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 1137,
+          "messagePreview": "java.lang.AssertionError: expected:<[]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit30LanguagePins.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit29PunctuationPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit9AgreementPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit4NominativeRolePins.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit17QuestionPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit28TimingPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit29AdjectiveNativePins.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit13ReportedPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit24ContextPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit8AgreementPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit20DirectionalityPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit6AnimacyPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/Unit21ObjectPins.kt]>",
+          "messageSha256": "b184559750d407176b8d941795d655d251fe6e37a3667bad6258c63b5dbc84f8",
+          "stackSha256": "027e5757ef1f57a1390fffd4f78c73869b19fded6136886237010b9577055276",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "EXACT_COMPARISON_ORIGIN_GUARD_SCOPE_RECONCILED",
+      "focusedEvidence": "source-guard-scope/RETRY/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.Aud53CorrectionTest",
+      "method": "wrongIdentityAndWorkflowFieldsFailClosed",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "be702e276fabef654fe8cd8ccf1f9da2f8512013ddf78c69525100ce34c6c59d",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "ORDINARY_SOURCE_VERSUS_ASSIGNED_REVIEW_SCOPE_RECONCILED",
+      "focusedEvidence": "capability-review-scope/INITIAL/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.BatchAUnits71620Test",
+      "method": "admittedCapabilitiesRejectForgeryCrossBindingAndWrongSpans",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "8b09c1301e5dd873603cef881eab27e6d65c57fe6c499697640013620448b0a0",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "ORDINARY_SOURCE_VERSUS_ASSIGNED_REVIEW_SCOPE_RECONCILED",
+      "focusedEvidence": "batch-a-source-review-scope/INITIAL/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.BatchAUnits71620Test",
+      "method": "batchAExplanationsNameTheKeyedRelationshipAndRejectASwap",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 52,
+          "messagePreview": "java.lang.AssertionError: expected:<41> but was:<47>",
+          "messageSha256": "c6974fe3618e076670d8eb9fcecacf549b2a7b49d537f85f99e5113aa3d44224",
+          "stackSha256": "ae42129e7c992c2990541c85fb0a606cb68b36a8530518c37a7cf5fa37b0576a",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "HISTORICAL_EXPLANATION_AND_CURRENT_CONSTRUCT_SCOPES_RECONCILED",
+      "focusedEvidence": "batch-a-rationale-scope/INITIAL/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.BatchAUnits71620Test",
+      "method": "partialUnitsStayBlockedAndClosedChainsCanBeReviewPending",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "70c390ca3b51a99c7aa0697f15ce3b221b4ff0f8ba8b0bfb2e0eca6c95ca31aa",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "ORDINARY_SOURCE_VERSUS_ASSIGNED_REVIEW_SCOPE_RECONCILED",
+      "focusedEvidence": "batch-a-source-review-scope/INITIAL/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.CompletionEvidenceCorrectionTest",
+      "method": "unboundLegacyViewCannotTurnClaimedCompletionIntoCurrentEvidence",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 64,
+          "messagePreview": "java.lang.AssertionError: expected:<COMPLETED> but was:<CURRENT>",
+          "messageSha256": "1f3ece65cc380d7c0818f34c4e1a9485d8bd211b36730c054435c044faf03a2d",
+          "stackSha256": "97a22b65bce0aa2e4b831c5641235e08f202bb3e17ebfca8a80cf3633a774015",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "CURRENT_COMPLETION_FIXTURE_RECONCILED",
+      "focusedEvidence": "broader-regression-2026-10-18/FOCUSED_COMPLETION/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.CompletionEvidenceCorrectionTest",
+      "method": "changedEvidenceIsRecomputedAndLaterPlacementDoesNotUnlockFutureUnits",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 64,
+          "messagePreview": "java.lang.AssertionError: expected:<COMPLETED> but was:<CURRENT>",
+          "messageSha256": "1f3ece65cc380d7c0818f34c4e1a9485d8bd211b36730c054435c044faf03a2d",
+          "stackSha256": "c1e34b8697e4c0989a4c0c9991f00fb3795e06e109b21d1d9d2cb5dd45612ed7",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "CURRENT_COMPLETION_FIXTURE_RECONCILED",
+      "focusedEvidence": "broader-regression-2026-10-18/FOCUSED_COMPLETION/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.CompletionEvidenceCorrectionTest",
+      "method": "changedContentCannotKeepAnOldCompletionOrUnlockItsSuccessor",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 24,
+          "messagePreview": "java.lang.AssertionError",
+          "messageSha256": "236d51b61b189ceec0ac4f169fec07728086016022478eae12685425934eafbd",
+          "stackSha256": "e2fa0db19f73dbd941a6bb9d7d1df31bd1b689006529fa5dd9cfceb4d5396e13",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "CURRENT_COMPLETION_FIXTURE_RECONCILED",
+      "focusedEvidence": "broader-regression-2026-10-18/FOCUSED_COMPLETION/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.Phase3BoundedClaimsTest",
+      "method": "liveClaimsResolveOnlyTheBoundedSynthesis",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "9eb35ab4d33295835bcd4203fe169b1fc343b480d511106b127f833fb6d88900",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "ORDINARY_SOURCE_VERSUS_ASSIGNED_REVIEW_SCOPE_RECONCILED",
+      "focusedEvidence": "phase-source-review-scope/INITIAL/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "method": "unit17MessagesFollowTheUnresolvedCapabilitySet",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "660ea7e79529f2f7f9401aa45a8ff36d8e6d385118874a2d190b391dd3648491",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "method": "missingChainAndReadinessFlipKeepAdvancementBlocked",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "3874e7ca102ba81f8bce127abf484fdd1c8af136c2f344d358ddda0921e08181",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.ContentAuditCorrectionTest",
+      "method": "unit27AdvancesWithoutOptionalPresentPassive",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "21cb5ce6f2c92bee8d343bc661f4e46380b05be45e0a8a3973507040f07927fc",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.ContentAuditCorrectionTest",
+      "method": "auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "org.junit.ComparisonFailure",
+          "messageCharacters": 77,
+          "messagePreview": "org.junit.ComparisonFailure: expected:<[\u0443\u0447\u0438\u0301\u0442\u0435\u043b\u044c]> but was:<[\u042f \u0434\u0435\u0301\u043b\u0430\u043b \u0441\u0442\u0443\u043b.]>",
+          "messageSha256": "f7626efe4eaea772c101da33329a219d1bc3004dfba1a0d9d94b8044f4cab960",
+          "stackSha256": "e9dadadc6d51edab69273fac040390e02761d18d814a95e84282bd5e3950b24c",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.ContentAuditCorrectionTest",
+      "method": "packValidatesAndRejectsTheAuditedFalseKeys",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "org.junit.ComparisonFailure",
+          "messageCharacters": 127,
+          "messagePreview": "org.junit.ComparisonFailure: expected:<[\u0443\u0447\u0438\u0301\u0442\u0435\u043b\u044f]> but was:<[The masculine inanimate direct object keeps the nominative form.]>",
+          "messageSha256": "052cffa3c6f491e7918fbb977cf21eba494d6ac3352b6a7b7c07c5509e7cd959",
+          "stackSha256": "8332a8ba872a462784198d98a8043de0b013c5a2860221c0a6217e0736d84858",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.ContentAuditCorrectionTest",
+      "method": "imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 131,
+          "messagePreview": "java.lang.AssertionError: Prerequisite teaching still follows guided practice in u28-s-imperfective-adverb expected:<2> but was:<3>",
+          "messageSha256": "4ffcde2fa763fb2904037d8775db308a2573e783c6e761645134f671705b6658",
+          "stackSha256": "ce8a7d909a94ef2e9fe39c8ad94a19c6ade14175cfbee32cbd9e18bf491f45a3",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.ContentAuditCorrectionTest",
+      "method": "wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "org.junit.ComparisonFailure",
+          "messageCharacters": 915,
+          "messagePreview": "org.junit.ComparisonFailure: u3-st-rem-gender expected:<[]\u0434\u044f\u0301\u0434\u044f and \u043c\u0443\u0436\u0447\u0438\u0301\u043d\u0430 d...> but was:<[The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.\n\nThese admitted records are listed as masculine. \u0441\u0442\u043e\u043b \u2014 table. \u0434\u043e\u043c \u2014 house. \u0433\u043e\u0301\u0440\u043e\u0434 \u2014 town. \u0431\u0440\u0430\u0442 \u2014 brother. The admitted record for \u0434\u0440\u0443\u0433 \u2014 friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.\n\nThese admitted records are listed as feminine. \u043a\u043d\u0438\u0301\u0433\u0430 \u2014 book. \u0432\u043e\u0434\u0430\u0301 \u2014 water. \u0448\u043a\u043e\u0301\u043b\u0430 \u2014 school. \u0440\u0430\u0431\u043e\u0301\u0442\u0430 \u2014 work. The admitted record for \u0434\u0432\u0435\u0440\u044c \u2014 door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.\n\nThese admitted records are listed as neuter. \u043e\u043a\u043d\u043e\u0301 \u2014 window. \u043f\u0438\u0441\u044c\u043c\u043e\u0301 \u2014 letter. \u043c\u043e\u043b\u043e\u043a\u043e\u0301 \u2014 milk. \u043c\u043e\u0301\u0440\u0435 \u2014 sea. \n\n]\u0434\u044f\u0301\u0434\u044f and \u043c\u0443\u0436\u0447\u0438\u0301\u043d\u0430 d...>",
+          "messageSha256": "1e4d06f227a0d706b1d603e8ae2d321687c469eace3b98b49448e57567be8b29",
+          "stackSha256": "30213779515ef7935d0817256836f7a969458620574f8b4e2be69aee07ab8897",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.ContentAuditCorrectionTest",
+      "method": "perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 129,
+          "messagePreview": "java.lang.AssertionError: Prerequisite teaching still follows guided practice in u28-s-perfective-adverb expected:<3> but was:<4>",
+          "messageSha256": "67a9eb95b873e82b31147d9f60ec03f905812735aec4bd8151a347bcce8f54f6",
+          "stackSha256": "600b6314af296efb8dcbb7ff6d69bd7e0047494e7194798ead9706644a436b17",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.Phase2BoundedClaimsTest",
+      "method": "liveClaimsResolveOnlyTheBoundedSynthesis",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "2c597f4c09e399a779b5db2582e75a806f781df1ef291b3169d12f8b16c55a9c",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "ORDINARY_SOURCE_VERSUS_ASSIGNED_REVIEW_SCOPE_RECONCILED",
+      "focusedEvidence": "phase-source-review-scope/INITIAL/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.Phase2BoundedClaimsTest",
+      "method": "sashkaStaysDismissiveAndNameReadingsCannotBeSwapped",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 24,
+          "messagePreview": "java.lang.AssertionError",
+          "messageSha256": "236d51b61b189ceec0ac4f169fec07728086016022478eae12685425934eafbd",
+          "stackSha256": "66a523957f93d958bf2b99f4c2221175a5748259c66c967d61f6a87d308abc5e",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "ORDINARY_SOURCE_VERSUS_ASSIGNED_REVIEW_SCOPE_RECONCILED",
+      "focusedEvidence": "phase-source-review-scope/INITIAL/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.Aud44CorrectionTest",
+      "method": "threeAdverbGlossPairsCannotClearTheParadigm",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "a11a62938c6c0174ecb05c8bf66800d258eecff3258b55b145882617c431a85e",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.RequiredPathProgressTest",
+      "method": "requiredCompletionReachesAdvancementWithOptionalWorkUntouched",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 24,
+          "messagePreview": "java.lang.AssertionError",
+          "messageSha256": "236d51b61b189ceec0ac4f169fec07728086016022478eae12685425934eafbd",
+          "stackSha256": "5d79cbffc373fa549e017d3632cdb3b0ba5df8f97ed5344a9339da59b8b132de",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.Aud44CorrectionTest",
+      "method": "unrelatedEvidenceCannotImpersonateProductiveClockTime",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.util.NoSuchElementException",
+          "messageCharacters": 88,
+          "messagePreview": "java.util.NoSuchElementException: Collection contains no element matching the predicate.",
+          "messageSha256": "80eb3f91a12187d58f727a6b44fc1a8f99da71e6e3ce1ae2cced346fe408ec31",
+          "stackSha256": "edc1413a1f38b74f4b93ddbdbf15c6cc2a9ad91199baddde07bfcdb3da8c36c6",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.Aud44CorrectionTest",
+      "method": "sharedLicenseNoticeDoesNotAnnounceUnitReadiness",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "58e3f89ec7826d9869762c9de6ca4a3a6d4ab234d5004fbc2535be5e4ab8b129",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.Aud44CorrectionTest",
+      "method": "unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 600,
+          "messagePreview": "java.lang.AssertionError: expected:<{16=31893860b30df7c38248356c9014db1a361110f7a8a51ce53ae7ed6fd61bae87, 18=603827ede7e8394cef33bf1af9fb4ef6217a80f0e6624f1bd385e4a0766b69ac, 19=3096baba4cdc192ac7d701f6eedd3c8ca0be12c54ab64efa52b0c25fdbf83a5e, 20=bb408265fb5239daeb86d43c007061bff330e02a0a9afc1aa677526ccf57302b}> but was:<{16=31893860b30df7c38248356c9014db1a361110f7a8a51ce53ae7ed6fd61bae87, 18=603827ede7e8394cef33bf1af9fb4ef6217a80f0e6624f1bd385e4a0766b69ac, 19=3096baba4cdc192ac7d701f6eedd3c8ca0be12c54ab64efa52b0c25fdbf83a5e, 20=6c11d3dd467846f5aabf034024f7d27d3ed9a5cc9eec4a8462cd8be3c54069eb}>",
+          "messageSha256": "0a864f2b301cab31db3235b573ef9379a6a0fa322f8b038035be1c7a64ba28c2",
+          "stackSha256": "9a94211f65c45b0328e54bee2e1bc51becf599cb21f80c622c3b08ec80b0b389",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.Aud44CorrectionTest",
+      "method": "calendarDateCompletionCannotConcealTheClockGap",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "f35b4e72c00c33250600adf9483a316a406eb13163551df2afd948433fb6330c",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.Aud44CorrectionTest",
+      "method": "unit17AdvancementNamesOnlyUnresolvedSourceCapabilities",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "5a7b8c2312f592c39fbaa3a2883dd550cd66196fd86461df8d8ef18b4574de1d",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "formerGuidedPracticeGapsNowHaveRealItems",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 99,
+          "messagePreview": "java.lang.AssertionError: u4-st-rem-optional-nominative-gloss is missing its linked guided practice",
+          "messageSha256": "7567f0c2bd60937b6fb76e9ce88b6b53a2bb9012823c9e6aa04cfb6c6d7b2662",
+          "stackSha256": "21d51e0829a21f5b3d438e9272c3dcea98801f2c4758836def27a8e9516636a0",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "CURRENT_REFERENCE_RETURN_SCOPE_RECONCILED",
+      "focusedEvidence": "runtime-optional-gloss-scope/INITIAL/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.BatchBUnits2125Test",
+      "method": "classificationChecksCannotClearProductiveDiminutive",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 72,
+          "messagePreview": "java.lang.AssertionError: Complete the assigned earlier-objective review",
+          "messageSha256": "d9fde633ddf7fb177a1c07e6afc27b95be6c2986599654971a287ff46e8b05b2",
+          "stackSha256": "e431cb37c4d6a70c170fe0ee73275a665fa41739bf0cbb366b19c5e13816893d",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.BatchBUnits2125Test",
+      "method": "reflexiveSentencePairRejectsIsolatedTokenAndWifeCitation",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.util.NoSuchElementException",
+          "messageCharacters": 88,
+          "messagePreview": "java.util.NoSuchElementException: Collection contains no element matching the predicate.",
+          "messageSha256": "80eb3f91a12187d58f727a6b44fc1a8f99da71e6e3ce1ae2cced346fe408ec31",
+          "stackSha256": "b332329f8581dcd044ada7febb1f9912bd04c04ef0164372befe4f75ce5b1fcb",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.PracticeRetrievalDigestTest",
+      "method": "readingVocabularyGrammarAndMixedStayOptionalAndPrerequisiteFiltered",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 24,
+          "messagePreview": "java.lang.AssertionError",
+          "messageSha256": "236d51b61b189ceec0ac4f169fec07728086016022478eae12685425934eafbd",
+          "stackSha256": "2928417a2764342ae0ad3caefa816d07af6076be8d8596f6beef8ac1ad40f3e1",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "OPEN_REQUIRES_DIAGNOSIS",
+      "focusedEvidence": null,
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit14ImpersonalRemediationTest",
+      "method": "allThreeStateCardsPrecedePracticeAndRepairRestoresEveryExample",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 53540357,
+          "messagePreview": "java.lang.AssertionError: expected:<[V2ProvenanceRecord(itemId=prov-u3-noun-\u0441\u0442\u043e\u043b, unitNumber=3, objectiveId=obj-u3-gender, recordType=lexical record, sourceId=src-openrussian-50e210c4, sourceUrl=https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv, sourceRevision=50e210c4803237779cb562bc1abcea529066031c, sourceRecordId=nouns.csv:\u0441\u0442\u043e\u043b#accented, originalSourceText=\u0441\u0442\u043e\u043b, shippedText=\u0441\u0442\u043e\u043b, transformation=selection, licenseId=CC BY-SA 4.0, licenseUrl=https://creativecommons.org/licenses/by-sa/4.0/, attribution=Badestrand/russian-dictionary contributors, commit 50e210c4803237779cb562bc1abcea529066031c, CC BY-SA 4.0., shareAlikeTreatment=Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio., sourceHash=129dde4ecad0c02e88fb74a179b08337e5ac02fcfb4146ed681c12f8baa6d532, contentHash=129dde4ecad0c02e88fb74a179b08337e5ac02fcfb4146ed681c12f8baa6d532, reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewerIdentity=, reviewerQualification=, reviewDate=, reviewedDigest=, audioAssetId",
+          "messageSha256": "de1b6fb046419ac4574343365652e431a9f72e7dfafa1e72092fcaffe89c9d2a",
+          "stackSha256": "9e4aed5779dec533604d9bb51e5abb6db5f6930592798107d312b8697fbd3a9a",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "HISTORICAL_CORRECTION_SCOPE_RECONCILED",
+      "focusedEvidence": "broader-regression-2026-10-18/FOCUSED_HISTORY/MANIFEST.json",
+      "formalAcceptance": false
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit14ImpersonalRemediationTest",
+      "method": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "originalOutcome": "FAILURE",
+      "originalFailureRecords": [
+        {
+          "exceptionType": "java.lang.OutOfMemoryError",
+          "messageCharacters": 43,
+          "messagePreview": "java.lang.OutOfMemoryError: Java heap space",
+          "messageSha256": "cd47a0e05f49f0125e98a4184f69e8628b9864d01a76b69a6fb533c0954e6aec",
+          "stackSha256": "6deb664dd789f31c0a2f1302ff6e99027e417696f424be48b2dffc70e6863e73",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ],
+      "engineeringDisposition": "HISTORICAL_CORRECTION_SCOPE_RECONCILED",
+      "focusedEvidence": "broader-regression-2026-10-18/FOCUSED_HISTORY/MANIFEST.json",
+      "formalAcceptance": false
+    }
+  ],
+  "unrecordedInitialMethods": 630,
+  "interruptedInitialMethods": 4,
+  "ignoredPhysicalDeviceMethods": 1,
+  "separateScopesNotSummed": true,
+  "completeSuite": false,
+  "formalAcceptance": false,
+  "pathBase": "audit/independent-gpt61-2026-10-12",
+  "priorDisposition": "source-guard-scope/CURRENT_REGRESSION_RECONCILIATION.json"
+}

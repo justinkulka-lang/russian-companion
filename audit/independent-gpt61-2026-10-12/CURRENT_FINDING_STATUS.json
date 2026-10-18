@@ -1388,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestSourceGuardCheckpoint",
-    "priorCheckpoint": "latestBatchARationaleCheckpoint",
-    "next": "Review Phase2/Phase3 and BatchE source-versus-review fixtures;preserve all21 initial OPEN failures,initial source-guard retry failures and two existing research-cue review debts. Refresh discovery/broader regression;final independent audit before physical acceptance.",
+    "checkpoint": "latestPhaseSourceReviewCheckpoint",
+    "priorCheckpoint": "latestSourceGuardCheckpoint",
+    "next": "Investigate two retained BatchE source/review cases, preserving later assertions and explicit source blockers. Refresh discovery/broader regression before final independent comprehensive audit; physical acceptance last.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1827,5 +1827,28 @@
       "pendingPrSection": "source-guard-scope/PR_UPDATE_PENDING.md",
       "lastConfirmedRemoteHeadIsHistorical": true
     }
+  },
+  "latestPhaseSourceReviewCheckpoint": {
+    "path": "audit/independent-gpt61-2026-10-12/phase-source-review-scope",
+    "sourceCommit": "987991328316b8a99ebb1bfa560183c1b3a32afd",
+    "manifest": "phase-source-review-scope/INITIAL/MANIFEST.json",
+    "testCounts": {
+      "reported": 6,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 2,
+    "retainedInitialFailures": 32,
+    "engineeringScopeReconciled": 14,
+    "openInitialFailures": 18,
+    "currentLiteralAnnotations": 1239,
+    "newFullDiscoveryOrBroadCompletion": false,
+    "formalAcceptance": false,
+    "auditReady": false,
+    "originalUnit7RestoreCause": "UNCONFIRMED",
+    "githubConnection": "RECOVERED_SOURCE_GUARD_DELIVERY_CONFIRMED",
+    "next": "BatchE source versus assigned-review fixtures; see NEXT_REVIEW.md"
   }
 }

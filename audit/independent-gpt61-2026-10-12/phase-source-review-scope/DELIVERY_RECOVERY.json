@@ -1,0 +1,14 @@
+{
+  "verifiedUtc": "2026-10-18T16:19:38.291065+00:00",
+  "priorDeliveryRecord": "../source-guard-scope/DELIVERY_STATUS.json",
+  "status": "RECOVERED_EXISTING_CONNECTION",
+  "pushedCommit": "881c81504864a5847963b2f3f3b33b951d504e6a",
+  "confirmedRemoteHeadAtRecovery": "881c81504864a5847963b2f3f3b33b951d504e6a",
+  "prBodyPendingSourceGuardSectionApplied": true,
+  "prState": "OPEN",
+  "draft": true,
+  "apiResult": "HTTP_SUCCESS",
+  "prior401FailureRecordPreserved": true,
+  "newTokenRequested": false,
+  "mergeOrReleaseAction": false
+}
