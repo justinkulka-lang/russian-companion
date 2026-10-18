@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.RequiredPathProgressTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-18T19:42:47.109Z" hostname="d0aced911621" time="0.298">
+  <properties/>
+  <testcase name="sharedAndUnknownSessionOwnershipRemainRequired" classname="dev.russiancompanion.v2.RequiredPathProgressTest" time="0.096"/>
+  <testcase name="requiredCompletionReachesAdvancementWithOptionalWorkUntouched" classname="dev.russiancompanion.v2.RequiredPathProgressTest" time="0.139"/>
+  <testcase name="explicitlyOpenedOptionalSessionStillRequiresItsOwnAnswers" classname="dev.russiancompanion.v2.RequiredPathProgressTest" time="0.036"/>
+  <testcase name="optionalCorrectAnswersCannotSatisfyTheRequiredMinimum" classname="dev.russiancompanion.v2.RequiredPathProgressTest" time="0.002"/>
+  <testcase name="continueAndTodaySkipOptionalSessionsBeforeRequiredWork" classname="dev.russiancompanion.v2.RequiredPathProgressTest" time="0.0"/>
+  <testcase name="allRequiredSessionsStillRunInOrder" classname="dev.russiancompanion.v2.RequiredPathProgressTest" time="0.0"/>
+  <testcase name="mixedStepRequiresOnlyRequiredAnswersAndKeepsTheirIdentityChecks" classname="dev.russiancompanion.v2.RequiredPathProgressTest" time="0.01"/>
+  <testcase name="unitWithoutRequiredSessionsHasAnAdvancementTarget" classname="dev.russiancompanion.v2.RequiredPathProgressTest" time="0.001"/>
+  <testcase name="optionalResumeStillRejectsAnUnverifiedContentIdentity" classname="dev.russiancompanion.v2.RequiredPathProgressTest" time="0.0"/>
+  <testcase name="optionalSessionRemainsAvailableForExplicitVerifiedResume" classname="dev.russiancompanion.v2.RequiredPathProgressTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

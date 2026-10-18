@@ -1388,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestUnit28TeachingOrderCheckpoint",
-    "priorCheckpoint": "latestCurrentSourceDonorCheckpoint",
-    "next": "Next inspect ContentAuditCorrectionTest auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement, packValidatesAndRejectsTheAuditedFalseKeys and wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation. Original Unit6/7 labels now address different current case-transfer constructs; retain their exact historical negative evidence while separately testing actual current donors. Remediation now restores complete teaching for several targets,so verify full bodies/examples against the correction history rather than the old single-card equality. AUD-44 later-unit digests,RequiredPathProgress and PracticeRetrievalDigest remain separate OPEN cases. Do not blindly archive current failures,bump digests/counts or forge review/completion.",
+    "checkpoint": "latestRepairSchedulingCheckpoint",
+    "priorCheckpoint": "latestUnit28TeachingOrderCheckpoint",
+    "next": "Continue with the remaining OPEN entries in CURRENT_REGRESSION_RECONCILIATION.json. Inspect complete methods,actual correction/source context and current production guards before editing. Preserve native/source/citation negatives,all later assertions and original failures. No blind archive/count/digest bump,renumbered fixture or fabricated completion/review. The mixed-lab case must use genuine current teaching,assigned answers and transactional advancement;the AUD-44 snapshot must distinguish its actual historical source from current Unit17 isolation.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1978,5 +1978,27 @@
     "originalUnit7RestoreCause": "UNCONFIRMED",
     "githubConnection": "RECOVERED",
     "next": "Next inspect ContentAuditCorrectionTest auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement, packValidatesAndRejectsTheAuditedFalseKeys and wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation. Original Unit6/7 labels now address different current case-transfer constructs; retain their exact historical negative evidence while separately testing actual current donors. Remediation now restores complete teaching for several targets,so verify full bodies/examples against the correction history rather than the old single-card equality. AUD-44 later-unit digests,RequiredPathProgress and PracticeRetrievalDigest remain separate OPEN cases. Do not blindly archive current failures,bump digests/counts or forge review/completion."
+  },
+  "latestRepairSchedulingCheckpoint": {
+    "path": "audit/independent-gpt61-2026-10-12/repair-scheduling-scope",
+    "sourceCommit": "0ecad074ad019394c4851e3aa2526a74d92187ae",
+    "manifest": "repair-scheduling-scope/RETRY/MANIFEST.json",
+    "testCounts": {
+      "reported": 13,
+      "passed": 13,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 4,
+    "retainedInitialFailures": 32,
+    "engineeringScopeReconciled": 28,
+    "openInitialFailures": 4,
+    "currentLiteralAnnotations": 1241,
+    "newFullDiscoveryOrBroadCompletion": false,
+    "formalAcceptance": false,
+    "auditReady": false,
+    "originalUnit7RestoreCause": "UNCONFIRMED",
+    "next": "Continue with the remaining OPEN entries in CURRENT_REGRESSION_RECONCILIATION.json. Inspect complete methods,actual correction/source context and current production guards before editing. Preserve native/source/citation negatives,all later assertions and original failures. No blind archive/count/digest bump,renumbered fixture or fabricated completion/review. The mixed-lab case must use genuine current teaching,assigned answers and transactional advancement;the AUD-44 snapshot must distinguish its actual historical source from current Unit17 isolation."
   }
 }
