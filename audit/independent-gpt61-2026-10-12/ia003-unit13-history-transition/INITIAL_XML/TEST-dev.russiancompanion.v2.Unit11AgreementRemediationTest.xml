@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit11AgreementRemediationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-17T04:54:48.239Z" hostname="d0aced911621" time="37.922">
+  <properties/>
+  <testcase name="wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="20.099"/>
+  <testcase name="completeAgreementTeachingPrecedesPracticeAndRepairRestoresTheCheckedForms" classname="dev.russiancompanion.v2.Unit11AgreementRemediationTest" time="15.95"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

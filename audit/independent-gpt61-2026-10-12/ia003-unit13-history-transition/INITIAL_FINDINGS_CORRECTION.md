@@ -1,0 +1,9 @@
+# Initial77-method result and bounded correction
+
+At0b99af5f9fcdf11081adf83e0eafab03b5f5e29a,the initial focused run reported77methods/20classes:76passed/1failed/0errors/0skips. Allnine new Unit13 transition methods,allten context-teaching methods and selected other runtime/canonical checks passed. Preserve INITIAL_XML,INITIAL_RUN.log/exit1 and INITIAL_VERIFICATION_MANIFEST.json. Lint/compileDebugSources/release-gate attachment were NOT_REACHED in this failed command;do not carry their old results forward as current.
+
+Unit14CumulativeReviewTest.schema11RowsRemainStoredButChangedImpersonalInstructionRequiresRepair failed atready line263 before its fresh-fixture negative probe:ready(p) unconditionally required identity with sharedPack,but this historical activation-only method deliberately passes the exact archived source returned by Unit3GenderTeachingTest.preTeachingCorrectionPack(). The same current-pack-only helper condition exists at baseline8e2c6f1a;earlier focused runs selected only a different method. This is a test-fixture limitation exposed by the complete class,not proof of an application compatibility defect.
+
+Correction:retain caching only when p is the exact sharedPack;otherwise run the existing prepare helper against that supplied immutable historical pack in an isolated seed database and build a fresh document. Existing ready-result assertions,all test assertions and historical source selection remain unchanged. Never reuse a document cached for a different pack. No production/curriculum/canonical changes are needed.
+
+Final command reruns the complete affected Unit14 class(seven methods),including current and archived-pack paths,then compileDebugSources/lintDebug/verifyReleaseGateAttachment. Final counts are separate from initial77 and are not a fresh77-method or complete-suite result. Existing release/privacy/screenshot-exporter/physical-last boundaries remain unchanged.
