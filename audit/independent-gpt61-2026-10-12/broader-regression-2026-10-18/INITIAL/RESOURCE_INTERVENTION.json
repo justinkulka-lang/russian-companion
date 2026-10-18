@@ -1,0 +1,11 @@
+{
+  "atUtc": "2026-10-18T13:37:27.071388+00:00",
+  "action": "Send SIGINT only to this run Gradle client PID81701 to cancel the resource-affected build gracefully.",
+  "reason": "Observed java.lang.OutOfMemoryError at Unit14ImpersonalRemediationTest.kt:44 under maxHeapSize1g; not a host OOM kill.",
+  "hostMemoryLimitBytes": 34359738368,
+  "hostCpuQuota": "400000/100000 =4 CPUs",
+  "cgroupMemoryEvents": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n",
+  "preserve": "Keep every initial failure and interrupted/unrun scope; no complete-suite claim. This does not diagnose unrelated assertion failures or Unit7 original restore interaction.",
+  "next": "Repeat same discovery selection with more worker heap and bounded worker lifetime; retain four screenshot exporter exclusions and all original assertions.",
+  "junitFinalCounts": "NOT_AVAILABLE_AT_INTERVENTION"
+}

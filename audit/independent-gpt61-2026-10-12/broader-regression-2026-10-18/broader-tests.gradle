@@ -1,0 +1,43 @@
+// Broad-regression resource override; keep cloud-validation.gradle exporter exclusions.
+import groovy.json.JsonOutput
+
+def eventPath = System.getProperty('audit.events.path')
+if (!eventPath || !eventPath.startsWith('/workspace/')) {
+    throw new GradleException('An explicit /workspace audit.events.path is required.')
+}
+def eventFile = new File(eventPath)
+def eventLock = new Object()
+def record = { descriptor, result, kind ->
+    def row = [kind: kind, className: descriptor.className, name: descriptor.name,
+               displayName: descriptor.displayName, atMillis: System.currentTimeMillis()]
+    if (result != null) {
+        row.resultType = result.resultType.toString()
+        row.startTime = result.startTime
+        row.endTime = result.endTime
+        row.exceptions = result.exceptions.collect { e -> [type: e.class.name, message: e.message] }
+    }
+    synchronized (eventLock) { eventFile.append(JsonOutput.toJson(row) + '\n', 'UTF-8') }
+}
+allprojects {
+    tasks.withType(Test).configureEach {
+        maxParallelForks = 4
+        maxHeapSize = '3g'
+        forkEvery = 8
+        doFirst {
+            if (eventFile.exists()) throw new GradleException('Refusing to overwrite existing audit events.')
+            eventFile.parentFile.mkdirs()
+            eventFile.createNewFile()
+        }
+        beforeTest { descriptor -> record(descriptor, null, 'START') }
+        afterTest { descriptor, result -> record(descriptor, result, 'RESULT') }
+        afterSuite { descriptor, result ->
+            if (descriptor.className != null) {
+                logger.lifecycle("AUDIT_CLASS ${descriptor.className}: ${result.testCount} reported, ${result.successfulTestCount} passed, ${result.failedTestCount} failed, ${result.skippedTestCount} skipped")
+            }
+        }
+        testLogging {
+            events 'failed', 'skipped'
+            exceptionFormat = 'full'
+        }
+    }
+}

@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
 MODE = sys.argv[1]
-assert MODE in ("DISCOVERY", "INITIAL")
+assert MODE in ("DISCOVERY", "INITIAL", "RETRY")
 OUT = HERE / MODE
 OUT.mkdir(exist_ok=False)
 
@@ -28,7 +28,11 @@ trees = {p: git("rev-parse", "HEAD:" + p) for p in
          ("app/src/main", "app/src/test", "catalog", "docs", "review")}
 assert not git("diff", "HEAD", "--", *trees), "Commit input changes before executing"
 args = ["-I", "/workspace/setup/cloud-validation.gradle", "-I",
-        "/workspace/setup/parallel-tests.gradle", "testDebugUnitTest", "--rerun"]
+        "/workspace/setup/parallel-tests.gradle"]
+if MODE == "RETRY":
+    args += ["-I", str(HERE / "broader-tests.gradle"),
+             "-Daudit.events.path=" + str(OUT / "EVENTS.jsonl")]
+args += ["testDebugUnitTest", "--rerun"]
 if MODE == "DISCOVERY":
     args += ["--test-dry-run"]
 else:
@@ -42,6 +46,8 @@ context = {
     "command": ["./gradlew", *args],
     "activation": "source /workspace/setup/android-env.sh",
     "runnerSha256": digest(Path(__file__)),
+    "workerPolicy": "4 forks / 3GiB heaps / recycle after8classes" if MODE == "RETRY"
+                    else "4 forks / 1GiB heaps / unbounded worker lifetime",
     "initScripts": {p: digest(Path(p)) for p in args if p.endswith(".gradle")},
     "selectors": [], "failFast": False,
     "exclusions": {"VisualReviewCaptureTest": 2, "Units35ChunkCaptureTest": 2,
@@ -72,6 +78,7 @@ for path in sorted((ROOT / "app/build/test-results/testDebugUnitTest").glob("TES
             "message": next((v.attrib.get("message") for v in (failure, error, skip)
                              if v is not None), None)})
 assert not git("diff", "HEAD", "--", *trees), "Inputs changed during run"
+assert all(git("rev-parse", "HEAD:" + p) == t for p, t in trees.items()), "Committed inputs changed during run"
 log_text = (OUT / "RUN.log").read_text()
 tasks = {}
 for name in ("testDebugUnitTest", "compileDebugSources", "lintDebug", "verifyReleaseGateAttachment"):
@@ -95,12 +102,23 @@ manifest = {"sourceContext": context, "exitCode": result.returncode,
     "apk": {"assembly": "NOT_RUN", "configuredIdentity": "dev.russiancompanion / 2.0.0-dev / code5",
             "sha256": "NOT_RECORDED", "signature": "NOT_RECORDED"},
     "releaseApproval": False, "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_AUDIT"}
-if MODE == "INITIAL":
+if MODE != "DISCOVERY":
     discovery = json.loads((HERE / "DISCOVERY/MANIFEST.json").read_text())
     a = {(t["class"], t["name"]) for t in discovery["tests"]}
     b = {(t["class"], t["name"]) for t in tests}
     manifest["discoveryComparison"] = {"sameInputTrees": discovery["sourceContext"]["inputTrees"] == trees,
         "discoveredNotReported": sorted(a - b), "reportedNotDiscovered": sorted(b - a)}
+if MODE == "RETRY":
+    events = [json.loads(line) for line in (OUT / "EVENTS.jsonl").read_text().splitlines()]
+    results = [e for e in events if e["kind"] == "RESULT"]
+    event_names = [(e["className"], e["name"]) for e in results]
+    xml_names = [(e["class"], e["name"]) for e in tests]
+    manifest["eventComparison"] = {
+        "startEvents": sum(e["kind"] == "START" for e in events),
+        "resultEvents": len(results), "sameNamesAsXml": sorted(event_names) == sorted(xml_names),
+        "eventOutcomes": {v: sum(e["resultType"] == v for e in results)
+                          for v in ("SUCCESS", "FAILURE", "SKIPPED")},
+    }
 save("MANIFEST.json", manifest)
 save("SHA256.json", {str(p.relative_to(OUT)): digest(p) for p in sorted(OUT.rglob("*"))
                       if p.is_file() and p.name != "SHA256.json"})

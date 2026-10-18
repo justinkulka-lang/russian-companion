@@ -1679,10 +1679,22 @@
       "syntheticSkipped": 1216,
       "passed": 0
     },
-    "realRuntime": "IN_PROGRESS",
+    "realRuntime": "INITIAL_ABORTED_AFTER_JAVA_HEAP_OOM",
     "formalAcceptance": false,
     "restoreInteraction": "UNCONFIRMED",
     "runtimeSourceCommit": "41e84c0b00605845dacb3a611d742ae72639526e",
-    "inProgressReceipt": "broader-regression-2026-10-18/IN_PROGRESS.json"
+    "inProgressReceipt": "broader-regression-2026-10-18/IN_PROGRESS.json",
+    "partialGenericRecords": {
+      "reported": 586,
+      "success": 549,
+      "failure": 32,
+      "skipped": 5,
+      "physicalIgnore": 1,
+      "interrupted": 4,
+      "discoveredWithoutCompletedRecord": 630
+    },
+    "finalJUnitXml": "UNAVAILABLE_STALE_DRY_RUN_OUTPUT_REJECTED",
+    "resourceRetry": "NOT_RUN_HELP_PREFLIGHT_ONLY",
+    "manifest": "broader-regression-2026-10-18/INITIAL/ABORTED_MANIFEST.json"
   }
 }

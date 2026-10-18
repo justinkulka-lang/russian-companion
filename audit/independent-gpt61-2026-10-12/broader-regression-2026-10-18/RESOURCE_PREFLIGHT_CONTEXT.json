@@ -1,0 +1,6 @@
+{
+  "command": "source /workspace/setup/android-env.sh; ./gradlew -I /workspace/setup/cloud-validation.gradle -I audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle -Daudit.events.path=/workspace/setup/broader-preflight-unused-events.jsonl help --task :app:testDebugUnitTest --console=plain",
+  "exitCode": 0,
+  "junitExecuted": 0,
+  "result": "New resource/reporting init script configured successfully; no test execution or assertion correction proved."
+}

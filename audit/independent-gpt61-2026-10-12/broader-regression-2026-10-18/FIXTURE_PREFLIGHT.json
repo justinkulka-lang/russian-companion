@@ -165,5 +165,6 @@
       "assertionsOutsideReadyUnchanged": true,
       "allOriginalReadyAssertionsUnchanged": true
     }
-  ]
+  ],
+  "assertionScopeClarification": "All preserved ready-helper assertions refer to the original JUnit assertEquals/assertTrue/assertFalse checks. The fixture-only check(p === sharedPack) guard is deliberately replaced by pack-aware preparation, as shown in every beforeReadyHelper. No production assertion or original test body changed."
 }
