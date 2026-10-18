@@ -21,7 +21,14 @@ class RequiredPathProgressTest {
         val learner = learner(completed = setOf("orient", "required-teach", "required-check"), correct = setOf("required-item"))
         assertTrue(continueTarget(pack, learner).opensUnitReview)
         assertNull(todaysSession(pack, pack.units.single(), learner))
-        assertTrue(advancementDecision(pack, pack.units.single(), learner).allowed)
+        val ordinary = ordinaryUnitRequirements(pack, pack.units.single(), learner)
+        assertTrue(ordinary.remaining.joinToString("\n"), ordinary.allowed)
+        val full = advancementDecision(pack, pack.units.single(), learner)
+        assertFalse(full.allowed)
+        assertEquals(listOf("The cumulative-review rule cannot be verified"), full.remaining)
+        assertFalse("optional-teach" in learner.completedStepIds)
+        assertFalse("optional-check" in learner.completedStepIds)
+        assertFalse("optional-item" in learner.correctItemIds)
     }
 
     @Test

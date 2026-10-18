@@ -1,0 +1,25 @@
+{
+  "selectedMethods": {
+    "ContentAuditCorrectionTest": [
+      "wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation"
+    ],
+    "RequiredPathProgressTest": [
+      "continueAndTodaySkipOptionalSessionsBeforeRequiredWork",
+      "requiredCompletionReachesAdvancementWithOptionalWorkUntouched",
+      "optionalCorrectAnswersCannotSatisfyTheRequiredMinimum",
+      "optionalSessionRemainsAvailableForExplicitVerifiedResume",
+      "optionalResumeStillRejectsAnUnverifiedContentIdentity",
+      "sharedAndUnknownSessionOwnershipRemainRequired",
+      "allRequiredSessionsStillRunInOrder",
+      "unitWithoutRequiredSessionsHasAnAdvancementTarget",
+      "mixedStepRequiresOnlyRequiredAnswersAndKeepsTheirIdentityChecks",
+      "explicitlyOpenedOptionalSessionStillRequiresItsOwnAnswers"
+    ],
+    "Unit3GenderTeachingTest": [
+      "allFiveIndependentRecordsHaveExplicitTeachingAndCompleteRepair"
+    ],
+    "Unit13ReportedTransferTest": [
+      "threeCardsPrecedePracticeAndFullRemediationQualifiesBothLanguages"
+    ]
+  }
+}

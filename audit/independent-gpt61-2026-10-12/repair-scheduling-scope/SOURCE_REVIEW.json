@@ -1,0 +1,272 @@
+{
+  "sourceCommit": "8de0598617a16bf29d2b3142a1b6ca8ebc70777e",
+  "remediationInspection": [
+    {
+      "unit": 3,
+      "topic": "gender",
+      "teachingIds": [
+        "u3-st-teach-gender-1",
+        "u3-st-teach-gender-2",
+        "u3-st-teach-gender-3",
+        "u3-st-teach-gender-4",
+        "u3-st-teach-gender-5"
+      ],
+      "remediationId": "u3-st-rem-gender",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "50a917fb60bf244d3986689e787d06916920e17f4b5940c0cc9661293da0045c"
+    },
+    {
+      "unit": 6,
+      "topic": "feminine",
+      "teachingIds": [
+        "u6-st-teach-feminine-1",
+        "u6-st-teach-feminine-2",
+        "u6-st-teach-feminine-3",
+        "u6-st-teach-feminine-4"
+      ],
+      "remediationId": "u6-st-rem-feminine",
+      "fullTeachingBodyEquality": false,
+      "fullExampleEquality": false,
+      "remediationBodySha256": "8a5dc8448f410cc0a293665b5f8b4ee5071c33a25f015cc9292507204e657f6d"
+    },
+    {
+      "unit": 7,
+      "topic": "spelling",
+      "teachingIds": [
+        "u7-st-teach-spelling-1",
+        "u7-st-teach-spelling-2",
+        "u7-st-teach-spelling-3",
+        "u7-st-teach-spelling-4"
+      ],
+      "remediationId": "u7-st-rem-spelling",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "c0ba60902a06f499863237d3cb8d5609fe273381998fd00054930d4f8088ff54"
+    },
+    {
+      "unit": 8,
+      "topic": "spelling",
+      "teachingIds": [
+        "u8-st-teach-spelling-1",
+        "u8-st-teach-spelling-2",
+        "u8-st-teach-spelling-3",
+        "u8-st-teach-spelling-4",
+        "u8-st-teach-spelling-5"
+      ],
+      "remediationId": "u8-st-rem-spelling",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "aa6862bba3bda1335ee6504c631ec8d75d1f63bdf0e56e4e6f07608e7471579c"
+    },
+    {
+      "unit": 11,
+      "topic": "past-read",
+      "teachingIds": [
+        "u11-st-teach-past-read-1",
+        "u11-st-teach-past-read-2",
+        "u11-st-teach-past-read-3",
+        "u11-st-teach-past-read-4"
+      ],
+      "remediationId": "u11-st-rem-past-read",
+      "fullTeachingBodyEquality": false,
+      "fullExampleEquality": false,
+      "remediationBodySha256": "b2e85bac9f2102ef31dff27b8b5d0d1dd4388283e8a06fabde5cb729e39c7bff"
+    },
+    {
+      "unit": 11,
+      "topic": "past-aspect",
+      "teachingIds": [
+        "u11-st-teach-past-aspect-1",
+        "u11-st-teach-past-aspect-2",
+        "u11-st-teach-past-aspect-3",
+        "u11-st-teach-past-aspect-4"
+      ],
+      "remediationId": "u11-st-rem-past-aspect",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "91840f73a3aa73e800e280267f602df808af2fc7c2138f391333bf2c250fae93"
+    },
+    {
+      "unit": 12,
+      "topic": "future-imp",
+      "teachingIds": [
+        "u12-st-teach-future-imp-1",
+        "u12-st-teach-future-imp-2",
+        "u12-st-teach-future-imp-3"
+      ],
+      "remediationId": "u12-st-rem-future-imp",
+      "fullTeachingBodyEquality": false,
+      "fullExampleEquality": false,
+      "remediationBodySha256": "9407608e608f2d7b5d77f88601f417bfb884077cead8e95ce3907506a00c5b06"
+    },
+    {
+      "unit": 12,
+      "topic": "aspect",
+      "teachingIds": [
+        "u12-st-teach-aspect-1",
+        "u12-st-teach-aspect-2",
+        "u12-st-teach-aspect-3"
+      ],
+      "remediationId": "u12-st-rem-aspect",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "656b97a08b07f439b6609b7b80e1367ac363c77261af9cea43174d496c444719"
+    },
+    {
+      "unit": 13,
+      "topic": "past-aspect",
+      "teachingIds": [
+        "u13-st-teach-past-aspect-1",
+        "u13-st-teach-past-aspect-2",
+        "u13-st-teach-past-aspect-3",
+        "u13-st-teach-past-aspect-4"
+      ],
+      "remediationId": "u13-st-rem-past-aspect",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "d202a8e870858d3ac5566986d21f20cc82a3a8e43e1e10f0ab230d8e52292c70"
+    },
+    {
+      "unit": 16,
+      "topic": "inst-sg",
+      "teachingIds": [
+        "u16-st-teach-inst-sg-1",
+        "u16-st-teach-inst-sg-2",
+        "u16-st-teach-inst-sg-3",
+        "u16-st-teach-inst-sg-4",
+        "u16-st-teach-inst-sg-5",
+        "u16-st-teach-inst-sg-6",
+        "u16-st-teach-inst-sg-7"
+      ],
+      "remediationId": "u16-st-rem-inst-sg",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "24e4eb14252d330d51d1272e4c2fd703ea166c966370c9ed48c8eae50e751e06"
+    },
+    {
+      "unit": 16,
+      "topic": "inst-adj",
+      "teachingIds": [
+        "u16-st-teach-inst-adj-1",
+        "u16-st-teach-inst-adj-2",
+        "u16-st-teach-inst-adj-3",
+        "u16-st-teach-inst-adj-4"
+      ],
+      "remediationId": "u16-st-rem-inst-adj",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "6d0eae4746be340188f279e0236e5835bed8002bad7d73c6fd1927b6372db72b"
+    },
+    {
+      "unit": 28,
+      "topic": "imperfective-adverb",
+      "teachingIds": [
+        "u28-st-teach-imperfective-adverb-1",
+        "u28-st-teach-imperfective-adverb-2",
+        "u28-st-teach-imperfective-timing-context"
+      ],
+      "remediationId": "u28-st-rem-imperfective-adverb",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "7186bf0c4414cc67c686a7ae747072f48a05c591cf3a4ebad32f243a4df70c9d"
+    },
+    {
+      "unit": 28,
+      "topic": "perfective-adverb",
+      "teachingIds": [
+        "u28-st-teach-perfective-adverb-1",
+        "u28-st-teach-perfective-adverb-2",
+        "u28-st-teach-perfective-adverb-3",
+        "u28-st-teach-perfective-timing-context"
+      ],
+      "remediationId": "u28-st-rem-perfective-adverb",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "5453a79c09a2f0804462ad8d9e63c2575bacc1a3460640e5e96954f99feb11aa"
+    },
+    {
+      "unit": 24,
+      "topic": "stand-ins",
+      "teachingIds": [
+        "u24-st-teach-stand-ins-1",
+        "u24-st-teach-stand-ins-2",
+        "u24-st-teach-stand-ins-3"
+      ],
+      "remediationId": "u24-st-rem-stand-ins",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "019580119635c9f412b3ae4fc50d14a29476f2892d2ada1b96741b9a1ac34772"
+    },
+    {
+      "unit": 24,
+      "topic": "word-order-contrast",
+      "teachingIds": [
+        "u24-st-teach-word-order-contrast-1",
+        "u24-st-teach-word-order-contrast-2",
+        "u24-st-teach-word-order-contrast-3"
+      ],
+      "remediationId": "u24-st-rem-word-order-contrast",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "09b4e64daebd3313ffef400429e1ea8e4fbd00df2d3cd0519aeb7190767304e5"
+    },
+    {
+      "unit": 26,
+      "topic": "letter-writing",
+      "teachingIds": [
+        "u26-st-teach-letter-writing-1",
+        "u26-st-teach-letter-writing-2"
+      ],
+      "remediationId": "u26-st-rem-letter-writing",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "c2cc65537a4cac6d5ac7c6dcd1e141b4353de22e76793772eff707efc51fdc10"
+    },
+    {
+      "unit": 21,
+      "topic": "purpose",
+      "teachingIds": [
+        "u21-st-teach-purpose-1",
+        "u21-st-teach-purpose-2",
+        "u21-st-teach-purpose-3"
+      ],
+      "remediationId": "u21-st-rem-purpose",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "eaea97e120cf165e0a263972875909ec1bd77e943b48f1e611ce6db846cbbcfd"
+    },
+    {
+      "unit": 16,
+      "topic": "complements",
+      "teachingIds": [
+        "u16-st-teach-complements-1",
+        "u16-st-teach-complements-2",
+        "u16-st-teach-complements-3"
+      ],
+      "remediationId": "u16-st-rem-complements",
+      "fullTeachingBodyEquality": true,
+      "fullExampleEquality": true,
+      "remediationBodySha256": "be78a1affa6697cefc7eeb6eb572ac83ebeb6859655344772230098f5bc33306"
+    }
+  ],
+  "sourceCorrectionFileSha256": {
+    "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/SOURCE_AND_SCOPE.md": "cd725c0958d6a1658ee2acce4771256c56b042598848d4e5b90adaf5a67c59ab",
+    "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/CORRECTION.json": "8c1f7ab9e1eda2d5b0d75ef7a2d6036849fe45f643abcce1c7333d2ac608b2d1",
+    "audit/independent-gpt61-2026-10-12/ia016-unit13-reported-verification/SOURCE_REVIEW.md": "15607d2516e4f7e179ea06ab7671cd90ae84749a2abc330cefc46bf6e36ebb3d",
+    "audit/content-corrections/UNIT13_REPORTED_TRANSFER_CORRECTION.json": "a17435cf822f2bc5c7f8f71f00b06d7c2ccaa148731887893f3d4580e0999984",
+    "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/SOURCE_AND_SCOPE.md": "1666d741c79ddfa0117dcb7fc3285d66aadf129c619c174b0428cba5eb484687",
+    "audit/content-corrections/UNIT8_SPELLING_INSTRUCTION_CORRECTION.json": "705be72ea79bc66f2d017cf0b6ad98aec1ece22bccee6b2d5151b531ab3364b6",
+    "audit/content-corrections/UNIT12_ASPECT_INSTRUCTION_CORRECTION.json": "3d59daab3d5e1f6b775bcdf464e45181dd5eb41897661ade43940dd71863987a",
+    "audit/content-corrections/UNIT16_INSTRUMENTAL_INSTRUCTION_CORRECTION.json": "ad2204ee82885e3574f0100d42c44104c2a37e8758cfb4adb5400083a6d7671e"
+  },
+  "fullTargets": 15,
+  "singleCardTargets": [
+    "u6-st-rem-feminine",
+    "u11-st-rem-past-read",
+    "u12-st-rem-future-imp"
+  ],
+  "privatePdfUsed": false,
+  "newNativeOrRightsAdmission": false,
+  "schedulingFixture": "Single synthetic English Unit3, schema1; no genuine cumulative declaration or completion/prerequisite history. This is ordinary scheduling evidence, not full advancement."
+}

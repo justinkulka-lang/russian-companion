@@ -1,0 +1,9 @@
+// Four exact candidate classes; runtime classpath/exporter exclusions unchanged.
+allprojects {
+    tasks.withType(Test).configureEach {
+        include '**/ContentAuditCorrectionTest.class'
+        include '**/RequiredPathProgressTest.class'
+        include '**/Unit3GenderTeachingTest.class'
+        include '**/Unit13ReportedTransferTest.class'
+    }
+}
