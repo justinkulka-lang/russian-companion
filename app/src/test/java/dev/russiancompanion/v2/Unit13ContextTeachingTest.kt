@@ -189,7 +189,7 @@ class Unit13ContextTeachingTest {
         private val keys = listOf("tense-keep", "infinitive")
         private fun root() = File(if (File("app").isDirectory) "." else "..")
         private fun evidence() = File(root(), "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching")
-        private val current by lazy { V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
+        private val current by lazy { Unit7AgreementTeachingTest.beforeTeachingCorrectionPack() } // Exact post-Unit13-policy source2ff71f19; this historical transition predates the later Unit7 teaching correction.
         private val previous by lazy {
             val process = ProcessBuilder("git", "show", "1730c1999a81e1d9d5df8bc3b957339fce1a65b4:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
             V2PackLoader.parse(process.inputStream.bufferedReader().readText()).also { assertEquals(0, process.waitFor()); V2PackIdentityIndex.warm(it) }

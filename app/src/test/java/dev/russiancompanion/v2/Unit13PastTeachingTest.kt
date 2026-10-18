@@ -188,7 +188,7 @@ class Unit13PastTeachingTest {
     companion object {
         private fun evidence() = File(root(), "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching")
         private fun root() = File(if (File("app").isDirectory) "." else "..")
-        private val current by lazy { V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
+        private val current by lazy { Unit7AgreementTeachingTest.beforeTeachingCorrectionPack() } // Exact post-Unit13-policy source2ff71f19; this historical transition predates the later Unit7 teaching correction.
         private val previous by lazy {
             val command = ProcessBuilder("git", "show", "03647d041d3d5068d4c77eb88f62403daf6e54ff:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
             V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }

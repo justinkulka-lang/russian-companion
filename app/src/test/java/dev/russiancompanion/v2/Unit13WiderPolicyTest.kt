@@ -348,7 +348,7 @@ class Unit13WiderPolicyTest {
             val process = ProcessBuilder("git", "show", "8e2c6f1a8d3d4b6d1f098bc6e347d36e92e10352:app/src/main/assets/content/v2-curriculum.json").directory(rootStatic()).start()
             return V2PackLoader.parse(process.inputStream.bufferedReader().readText()).also { assertEquals(0, process.waitFor()); V2PackIdentityIndex.warm(it) }
         }
-        private val p by lazy { V2PackLoader.parse(File(rootStatic(), "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
+        private val p by lazy { Unit7AgreementTeachingTest.beforeTeachingCorrectionPack() } // Exact post-Unit13-policy source2ff71f19; this historical transition predates the later Unit7 teaching correction.
         private fun rootStatic() = File(if (File("app").isDirectory) "." else "..")
     }
 }

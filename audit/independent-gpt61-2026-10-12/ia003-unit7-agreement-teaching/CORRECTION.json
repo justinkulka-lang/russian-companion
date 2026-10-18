@@ -1,0 +1,3202 @@
+{
+  "baselineCommit": "2ff71f197efb73d99662bc8a64180dc01a79aec3",
+  "beforeUnit": {
+    "number": 7,
+    "id": "unit-7",
+    "title": "Adjectives, agreement, demonstratives, adjective case forms, and adverbs",
+    "shortLabel": "Adjectives",
+    "topicSummary": "Proposed Unit 7 is in development. Admitted agreement rows, three adverb form/gloss pairs, the admitted invariance line, the two admitted suffixal pairs, and a bounded manner-adverb lesson await qualified review. The bounded lesson is not a universal adjective-to-adverb paradigm. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 7,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.",
+    "prerequisiteUnitNumbers": [
+      6
+    ],
+    "estimatedMinutes": 142,
+    "objectives": [
+      {
+        "id": "obj-u7-default",
+        "unitNumber": 7,
+        "title": "Choose the admitted dictionary form",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-default-1",
+          "u7-st-teach-default-2",
+          "u7-st-teach-default-3",
+          "u7-st-teach-default-4",
+          "u7-st-teach-default-5",
+          "u7-st-teach-default-6"
+        ],
+        "exampleIds": [
+          "ex-or-u7-default-0",
+          "ex-or-u7-default-1",
+          "ex-or-u7-default-2",
+          "ex-or-u7-default-3",
+          "ex-or-u7-default-4",
+          "ex-or-u7-default-5",
+          "ex-or-u7-default-6",
+          "ex-or-u7-default-7",
+          "ex-or-u7-default-8",
+          "ex-or-u7-default-9"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-default-1"
+        ],
+        "checkItemIds": [
+          "u7-i-default-1",
+          "u7-i-default-2",
+          "u7-i-default-3",
+          "u7-i-default-4"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-default"
+        ]
+      },
+      {
+        "id": "obj-u7-endings",
+        "unitNumber": 7,
+        "title": "Choose the admitted agreement line",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-endings-1",
+          "u7-st-teach-endings-2",
+          "u7-st-teach-endings-3",
+          "u7-st-teach-endings-4",
+          "u7-st-teach-endings-5",
+          "u7-st-teach-endings-6",
+          "u7-st-teach-endings-7"
+        ],
+        "exampleIds": [
+          "ex-u7-endings-0",
+          "ex-u7-endings-1",
+          "ex-u7-endings-2",
+          "ex-u7-endings-3",
+          "ex-u7-endings-4",
+          "ex-u7-endings-5",
+          "ex-u7-endings-6",
+          "ex-or-u7-endings-7",
+          "ex-or-u7-endings-8",
+          "ex-or-u7-endings-9",
+          "ex-or-u7-endings-10"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-endings-1"
+        ],
+        "checkItemIds": [
+          "u7-i-endings-1",
+          "u7-i-endings-2",
+          "u7-i-endings-3",
+          "u7-i-endings-4"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-endings"
+        ]
+      },
+      {
+        "id": "obj-u7-spelling",
+        "unitNumber": 7,
+        "title": "Recognize adjective forms after ш",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-spelling-1",
+          "u7-st-teach-spelling-2",
+          "u7-st-teach-spelling-3",
+          "u7-st-teach-spelling-4"
+        ],
+        "exampleIds": [
+          "ex-u7-spelling-0",
+          "ex-or-u7-spelling-1",
+          "ex-or-u7-spelling-2",
+          "ex-or-u7-spelling-3",
+          "ex-or-u7-spelling-4"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-spelling-1"
+        ],
+        "checkItemIds": [
+          "u7-i-spelling-1",
+          "u7-i-spelling-2",
+          "u7-i-spelling-3"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-spelling"
+        ]
+      },
+      {
+        "id": "obj-u7-question",
+        "unitNumber": 7,
+        "title": "Choose the admitted question form",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-question-1",
+          "u7-st-teach-question-2",
+          "u7-st-teach-question-3"
+        ],
+        "exampleIds": [
+          "ex-or-u7-question-0",
+          "ex-or-u7-question-1",
+          "ex-or-u7-question-2",
+          "ex-or-u7-question-3"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-question-1"
+        ],
+        "checkItemIds": [
+          "u7-i-question-1",
+          "u7-i-question-2",
+          "u7-i-question-3"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-question"
+        ]
+      },
+      {
+        "id": "obj-u7-demonstrative",
+        "unitNumber": 7,
+        "title": "Choose the admitted demonstrative form",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-demonstrative-1",
+          "u7-st-teach-demonstrative-2",
+          "u7-st-teach-demonstrative-3",
+          "u7-st-teach-demonstrative-4"
+        ],
+        "exampleIds": [
+          "ex-u7-demonstrative-0",
+          "ex-or-u7-demonstrative-1",
+          "ex-or-u7-demonstrative-2",
+          "ex-or-u7-demonstrative-3",
+          "ex-or-u7-demonstrative-4"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-demonstrative-1"
+        ],
+        "checkItemIds": [
+          "u7-i-demonstrative-1",
+          "u7-i-demonstrative-2",
+          "u7-i-demonstrative-3"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-demonstrative"
+        ]
+      },
+      {
+        "id": "obj-u7-place",
+        "unitNumber": 7,
+        "title": "Choose the admitted place-agreement line",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-place-1",
+          "u7-st-teach-place-2",
+          "u7-st-teach-place-3",
+          "u7-st-teach-place-4",
+          "u7-st-teach-place-5"
+        ],
+        "exampleIds": [
+          "ex-u7-place-0",
+          "ex-u7-place-1",
+          "ex-u7-place-2",
+          "ex-or-u7-place-3",
+          "ex-or-u7-place-4",
+          "ex-or-u7-place-5",
+          "ex-or-u7-place-6",
+          "ex-or-u7-place-7"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-place-1"
+        ],
+        "checkItemIds": [
+          "u7-i-place-1",
+          "u7-i-place-2",
+          "u7-i-place-3"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-place"
+        ]
+      },
+      {
+        "id": "obj-u7-objectadj",
+        "unitNumber": 7,
+        "title": "Choose the admitted object-agreement line",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-objectadj-1",
+          "u7-st-teach-objectadj-2",
+          "u7-st-teach-objectadj-3",
+          "u7-st-teach-objectadj-4",
+          "u7-st-teach-objectadj-5"
+        ],
+        "exampleIds": [
+          "ex-u7-objectadj-0",
+          "ex-u7-objectadj-1",
+          "ex-u7-objectadj-2",
+          "ex-u7-objectadj-3",
+          "ex-or-u7-objectadj-4",
+          "ex-or-u7-objectadj-5",
+          "ex-or-u7-objectadj-6"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-objectadj-1"
+        ],
+        "checkItemIds": [
+          "u7-i-objectadj-1",
+          "u7-i-objectadj-2",
+          "u7-i-objectadj-3"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-objectadj"
+        ]
+      },
+      {
+        "id": "obj-u7-adverb",
+        "unitNumber": 7,
+        "title": "Choose the admitted gloss beside the shown form",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-adverb-1",
+          "u7-st-teach-adverb-2",
+          "u7-st-teach-adverb-3"
+        ],
+        "exampleIds": [
+          "ex-u7-adverb-0",
+          "ex-u7-adverb-1",
+          "ex-u7-adverb-2"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-adverb-1"
+        ],
+        "checkItemIds": [
+          "u7-i-adverb-1",
+          "u7-i-adverb-2"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-adverb"
+        ]
+      },
+      {
+        "id": "obj-u7-book",
+        "unitNumber": 7,
+        "title": "Self-attest Lesson 7 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u7-st-book-work",
+          "u7-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      },
+      {
+        "id": "obj-u7-adverb-invariance",
+        "unitNumber": 7,
+        "title": "Admitted adverb invariance line",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-adverb-invariance-1",
+          "u7-st-teach-adverb-invariance-2"
+        ],
+        "exampleIds": [
+          "ex-u7-adverb-invariance-0",
+          "ex-u7-adverb-invariance-1"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-adverb-invariance-1"
+        ],
+        "checkItemIds": [
+          "u7-i-adverb-invariance-1",
+          "u7-i-adverb-invariance-2"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-adverb-invariance"
+        ]
+      },
+      {
+        "id": "obj-u7-adverb-pairs",
+        "unitNumber": 7,
+        "title": "Admitted suffixal adverb pairs",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-adverb-pairs-1",
+          "u7-st-teach-adverb-pairs-2"
+        ],
+        "exampleIds": [
+          "ex-u7-adverb-pairs-0",
+          "ex-u7-adverb-pairs-1"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-adverb-pairs-1"
+        ],
+        "checkItemIds": [
+          "u7-i-adverb-pairs-1",
+          "u7-i-adverb-pairs-2"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-adverb-pairs"
+        ]
+      },
+      {
+        "id": "obj-u7-adverb-paradigm",
+        "unitNumber": 7,
+        "title": "Bounded manner-adverb formation",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-teach-manner-1",
+          "u7-st-teach-manner-2",
+          "u7-st-teach-manner-3"
+        ],
+        "exampleIds": [
+          "ex-u7-manner-0",
+          "ex-u7-manner-1"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-manner-1"
+        ],
+        "checkItemIds": [
+          "u7-i-manner-1",
+          "u7-i-manner-2",
+          "u7-i-manner-3",
+          "u7-i-manner-4"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-manner"
+        ]
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u7-s-orient",
+        "title": "Admitted agreement rows",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u7-default",
+          "obj-u7-endings",
+          "obj-u7-spelling",
+          "obj-u7-question",
+          "obj-u7-demonstrative",
+          "obj-u7-place",
+          "obj-u7-objectadj",
+          "obj-u7-adverb",
+          "obj-u7-book"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-orient",
+            "kind": "ORIENT",
+            "title": "Admitted agreement rows",
+            "body": "Proposed Unit 7 uses frozen agreement rows and the admitted adverb pairs. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "bookDirection": "Open Lesson 7 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u7-s-default",
+        "title": "Choose the admitted dictionary form",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-default"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-default-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вый — new. но́вая — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-default-0",
+              "ex-or-u7-default-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-default-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-default-0"
+            ],
+            "remediationStepId": "u7-st-rem-default"
+          },
+          {
+            "id": "u7-st-teach-default-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-default-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вое — new. но́вые — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-default-2",
+              "ex-or-u7-default-3"
+            ]
+          },
+          {
+            "id": "u7-st-teach-default-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "хоро́ший — good. хоро́шая — good. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-default-4",
+              "ex-or-u7-default-5"
+            ]
+          },
+          {
+            "id": "u7-st-teach-default-5",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "си́ний — dark blue. си́няя — dark blue. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-default-6",
+              "ex-or-u7-default-7"
+            ]
+          },
+          {
+            "id": "u7-st-teach-default-6",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "како́й — what kind of. кака́я — what kind of. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-default-8",
+              "ex-or-u7-default-9"
+            ]
+          },
+          {
+            "id": "u7-st-rem-default",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+            "exampleIds": [
+              "ex-or-u7-default-0",
+              "ex-or-u7-default-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-default",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-default-1",
+              "u7-i-default-2",
+              "u7-i-default-3",
+              "u7-i-default-4"
+            ],
+            "remediationStepId": "u7-st-rem-default"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-endings",
+        "title": "Choose the admitted agreement line",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-endings"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-endings-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "новый карандаш — new pencil. новая машина — new car. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-endings-0",
+              "ex-u7-endings-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-endings-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-endings-0"
+            ],
+            "remediationStepId": "u7-st-rem-endings"
+          },
+          {
+            "id": "u7-st-teach-endings-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "\"new pencil\" is '''новый карандаш'''",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-endings-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "новое платье — new dress. синий стол — the dark blue table. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-endings-2",
+              "ex-u7-endings-3"
+            ]
+          },
+          {
+            "id": "u7-st-teach-endings-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "синяя книга — the dark blue book. синее письмо — the dark blue letter. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-endings-4",
+              "ex-u7-endings-5"
+            ]
+          },
+          {
+            "id": "u7-st-teach-endings-5",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "синие книги — the dark blue books. но́вый — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-endings-6",
+              "ex-or-u7-endings-7"
+            ]
+          },
+          {
+            "id": "u7-st-teach-endings-6",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вая — new. но́вое — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-endings-8",
+              "ex-or-u7-endings-9"
+            ]
+          },
+          {
+            "id": "u7-st-teach-endings-7",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вые — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-endings-10"
+            ]
+          },
+          {
+            "id": "u7-st-rem-endings",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "\"new pencil\" is '''новый карандаш'''",
+            "exampleIds": [
+              "ex-u7-endings-0",
+              "ex-u7-endings-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-endings",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-endings-1",
+              "u7-i-endings-2",
+              "u7-i-endings-3",
+              "u7-i-endings-4"
+            ],
+            "remediationStepId": "u7-st-rem-endings"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-spelling",
+        "title": "Recognize adjective forms after ш",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-spelling"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-spelling-1",
+            "kind": "TEACH",
+            "title": "One adjective, several forms",
+            "body": "An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-spelling-0",
+              "ex-or-u7-spelling-1"
+            ]
+          },
+          {
+            "id": "u7-st-teach-spelling-2",
+            "kind": "TEACH",
+            "title": "Two spelling conditions",
+            "body": "After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-spelling-3",
+            "kind": "TEACH",
+            "title": "Gender and a worked case change",
+            "body": "хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-spelling-2",
+              "ex-or-u7-spelling-3"
+            ]
+          },
+          {
+            "id": "u7-st-teach-spelling-4",
+            "kind": "TEACH",
+            "title": "Singular, plural and dictionary form",
+            "body": "хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-spelling-4"
+            ]
+          },
+          {
+            "id": "u7-st-guided-spelling-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the requested adjective form. Use its gender, number and case, then read the explanation.",
+            "itemIds": [
+              "u7-g-spelling-0"
+            ],
+            "remediationStepId": "u7-st-rem-spelling"
+          },
+          {
+            "id": "u7-st-rem-spelling",
+            "kind": "REMEDIATE",
+            "title": "Review forms and spelling",
+            "body": "An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.\n\nAfter ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.\n\nхоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.\n\nхоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.",
+            "exampleIds": [
+              "ex-u7-spelling-0",
+              "ex-or-u7-spelling-1",
+              "ex-or-u7-spelling-2",
+              "ex-or-u7-spelling-3",
+              "ex-or-u7-spelling-4"
+            ]
+          },
+          {
+            "id": "u7-st-check-spelling",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Choose the requested nominative form or feminine singular accusative phrase. A missed check returns to the explanation.",
+            "itemIds": [
+              "u7-i-spelling-1",
+              "u7-i-spelling-2",
+              "u7-i-spelling-3"
+            ],
+            "remediationStepId": "u7-st-rem-spelling"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-question",
+        "title": "Choose the admitted question form",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-question"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-question-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "како́й — what kind of. кака́я — what kind of. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-question-0",
+              "ex-or-u7-question-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-question-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-question-0"
+            ],
+            "remediationStepId": "u7-st-rem-question"
+          },
+          {
+            "id": "u7-st-teach-question-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-question-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "како́е — what kind of. каки́е — what kind of. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-question-2",
+              "ex-or-u7-question-3"
+            ]
+          },
+          {
+            "id": "u7-st-rem-question",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+            "exampleIds": [
+              "ex-or-u7-question-0",
+              "ex-or-u7-question-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-question",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-question-1",
+              "u7-i-question-2",
+              "u7-i-question-3"
+            ],
+            "remediationStepId": "u7-st-rem-question"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-demonstrative",
+        "title": "Choose the admitted demonstrative form",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-demonstrative"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-demonstrative-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "эти хорошие новые студенты — these good new students. э́та — this. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-demonstrative-0",
+              "ex-or-u7-demonstrative-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-demonstrative-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-demonstrative-0"
+            ],
+            "remediationStepId": "u7-st-rem-demonstrative"
+          },
+          {
+            "id": "u7-st-teach-demonstrative-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "these good new students\" is '''эти хорошие новые студенты'''",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-demonstrative-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "э́то — this. э́ти — this. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-demonstrative-2",
+              "ex-or-u7-demonstrative-3"
+            ]
+          },
+          {
+            "id": "u7-st-teach-demonstrative-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "э́ту — this. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-demonstrative-4"
+            ]
+          },
+          {
+            "id": "u7-st-rem-demonstrative",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "these good new students\" is '''эти хорошие новые студенты'''",
+            "exampleIds": [
+              "ex-u7-demonstrative-0",
+              "ex-or-u7-demonstrative-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-demonstrative",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-demonstrative-1",
+              "u7-i-demonstrative-2",
+              "u7-i-demonstrative-3"
+            ],
+            "remediationStepId": "u7-st-rem-demonstrative"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-place",
+        "title": "Choose the admitted place-agreement line",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-place"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-place-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "Они говорили о хорошем новом кино — They were talking about a good new cinema. Они были в старой русской школе — They were in the old Russian school. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-place-0",
+              "ex-u7-place-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-place-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-place-0"
+            ],
+            "remediationStepId": "u7-st-rem-place"
+          },
+          {
+            "id": "u7-st-teach-place-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "They were talking about a good new cinema' - '''Они говорили о хорошем новом кино'''",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-place-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "Я хочу́ жить в чи́стом но́вом го́роде — I want to live in a clean new city. но́вый — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-place-2",
+              "ex-or-u7-place-3"
+            ]
+          },
+          {
+            "id": "u7-st-teach-place-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вом — new. но́вую — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-place-4",
+              "ex-or-u7-place-5"
+            ]
+          },
+          {
+            "id": "u7-st-teach-place-5",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "хоро́ший — good. хоро́шем — good. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-place-6",
+              "ex-or-u7-place-7"
+            ]
+          },
+          {
+            "id": "u7-st-rem-place",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "They were talking about a good new cinema' - '''Они говорили о хорошем новом кино'''",
+            "exampleIds": [
+              "ex-u7-place-0",
+              "ex-u7-place-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-place",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-place-1",
+              "u7-i-place-2",
+              "u7-i-place-3"
+            ],
+            "remediationStepId": "u7-st-rem-place"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-objectadj",
+        "title": "Choose the admitted object-agreement line",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-objectadj"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-objectadj-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "Я хочу новый стул и новое письмо — I want a new chair and a new letter. Я хочу нового кролика. — I want a new rabbit. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-objectadj-0",
+              "ex-u7-objectadj-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-objectadj-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-objectadj-0"
+            ],
+            "remediationStepId": "u7-st-rem-objectadj"
+          },
+          {
+            "id": "u7-st-teach-objectadj-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "I want a new rabbit - '''Я хочу нового кролика.'''",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-objectadj-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "Моя русская кошка любит мою новую собаку — My Russian cat likes my new dog. этих женщин — I like these women. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-objectadj-2",
+              "ex-u7-objectadj-3"
+            ]
+          },
+          {
+            "id": "u7-st-teach-objectadj-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вый — new. но́вого — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-objectadj-4",
+              "ex-or-u7-objectadj-5"
+            ]
+          },
+          {
+            "id": "u7-st-teach-objectadj-5",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вую — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-objectadj-6"
+            ]
+          },
+          {
+            "id": "u7-st-rem-objectadj",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "I want a new rabbit - '''Я хочу нового кролика.'''",
+            "exampleIds": [
+              "ex-u7-objectadj-0",
+              "ex-u7-objectadj-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-objectadj",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-objectadj-1",
+              "u7-i-objectadj-2",
+              "u7-i-objectadj-3"
+            ],
+            "remediationStepId": "u7-st-rem-objectadj"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-adverb",
+        "title": "Choose the admitted gloss beside the shown form",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-adverb"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-adverb-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "быстро — quickly. хорошо — well. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-adverb-0",
+              "ex-u7-adverb-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-adverb-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-adverb-0"
+            ],
+            "remediationStepId": "u7-st-rem-adverb"
+          },
+          {
+            "id": "u7-st-teach-adverb-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "\"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully)",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-adverb-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "прекрасно — wonderfully. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-adverb-2"
+            ]
+          },
+          {
+            "id": "u7-st-rem-adverb",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "\"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully)",
+            "exampleIds": [
+              "ex-u7-adverb-0",
+              "ex-u7-adverb-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-adverb",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-adverb-1",
+              "u7-i-adverb-2"
+            ],
+            "remediationStepId": "u7-st-rem-adverb"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-book",
+        "title": "Self-attest Lesson 7",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u7-book"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 7 in your copy",
+            "body": "Do Lesson 7 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. The short-form adjective section stays out of this unit. Listening stays with the book. No audio is mapped here.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 7: printed pages 68-80. PDF indexes 80-92 are file locators, not printed pages. Observed section locators: §7.1 p68 (PDF 80); §7.2 p68 (PDF 80); §7.3 p69 (PDF 81); §7.4 p69 (PDF 81); §7.5 p70 (PDF 82); §7.6 p70 (PDF 82); §7.7 p71 (PDF 83); §7.8 p71 (PDF 83); §7.9 p71 (PDF 83); §7.10 p72 (PDF 84); §7.11 p72 (PDF 84); §7.12 p73 (PDF 85); §7.13 p74 (PDF 86); §7.14 p74 (PDF 86); §7.15 p74 (PDF 86); §7.16 p75 (PDF 87); §7.17 p75 (PDF 87); §7.18 p76 (PDF 88). Observed exercise locators: 7/1 p69/PDF81; 7/2 p71/PDF83; 7/3 p77/PDF89; 7/4 p80/PDF92; 7/5 p80/PDF92. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u7-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 7 book work",
+            "body": "When you have done Lesson 7 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 7: printed pages 68-80. PDF indexes 80-92 are file locators, not printed pages. Observed section locators: §7.1 p68 (PDF 80); §7.2 p68 (PDF 80); §7.3 p69 (PDF 81); §7.4 p69 (PDF 81); §7.5 p70 (PDF 82); §7.6 p70 (PDF 82); §7.7 p71 (PDF 83); §7.8 p71 (PDF 83); §7.9 p71 (PDF 83); §7.10 p72 (PDF 84); §7.11 p72 (PDF 84); §7.12 p73 (PDF 85); §7.13 p74 (PDF 86); §7.14 p74 (PDF 86); §7.15 p74 (PDF 86); §7.16 p75 (PDF 87); §7.17 p75 (PDF 87); §7.18 p76 (PDF 88). Observed exercise locators: 7/1 p69/PDF81; 7/2 p71/PDF83; 7/3 p77/PDF89; 7/4 p80/PDF92; 7/5 p80/PDF92. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          }
+        ]
+      },
+      {
+        "id": "u7-s-adverb-invariance",
+        "title": "Admitted adverb invariance line",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-adverb-invariance"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-adverb-invariance-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "Наречия — неизменяемые слова. Наречия — неизменяемые слова. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u7-ruwiki-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-adverb-invariance-0",
+              "ex-u7-adverb-invariance-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-adverb-invariance-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-adverb-invariance-0"
+            ],
+            "remediationStepId": "u7-st-rem-adverb-invariance"
+          },
+          {
+            "id": "u7-st-teach-adverb-invariance-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.",
+            "referenceIds": [
+              "ref-u7-ruwiki-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-rem-adverb-invariance",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.",
+            "exampleIds": [
+              "ex-u7-adverb-invariance-0",
+              "ex-u7-adverb-invariance-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-adverb-invariance",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-adverb-invariance-1",
+              "u7-i-adverb-invariance-2"
+            ],
+            "remediationStepId": "u7-st-rem-adverb-invariance"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-adverb-pairs",
+        "title": "Admitted suffixal adverb pairs",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-adverb-pairs"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-adverb-pairs-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "быстрый — быстро. творческий — творчески. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u7-ruwiki-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-adverb-pairs-0",
+              "ex-u7-adverb-pairs-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-adverb-pairs-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-adverb-pairs-0"
+            ],
+            "remediationStepId": "u7-st-rem-adverb-pairs"
+          },
+          {
+            "id": "u7-st-teach-adverb-pairs-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';",
+            "referenceIds": [
+              "ref-u7-ruwiki-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-rem-adverb-pairs",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';",
+            "exampleIds": [
+              "ex-u7-adverb-pairs-0",
+              "ex-u7-adverb-pairs-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-adverb-pairs",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-adverb-pairs-1",
+              "u7-i-adverb-pairs-2"
+            ],
+            "remediationStepId": "u7-st-rem-adverb-pairs"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-gap-adverb-paradigm",
+        "title": "Bounded manner-adverb formation",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-adverb-paradigm",
+          "obj-u7-book"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-manner-1",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-manner-0",
+              "ex-u7-manner-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-manner-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "The documented creative pair is a separate admitted manner-adverb relationship.",
+            "itemIds": [
+              "u7-g-manner-1"
+            ],
+            "remediationStepId": "u7-st-rem-manner"
+          },
+          {
+            "id": "u7-st-teach-manner-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Russian adverbs do not change for gender, number, or case."
+          },
+          {
+            "id": "u7-st-teach-manner-3",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective."
+          },
+          {
+            "id": "u7-st-rem-manner",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.",
+            "exampleIds": [
+              "ex-u7-manner-0",
+              "ex-u7-manner-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-manner",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.",
+            "itemIds": [
+              "u7-i-manner-1",
+              "u7-i-manner-2",
+              "u7-i-manner-3",
+              "u7-i-manner-4"
+            ],
+            "remediationStepId": "u7-st-rem-manner"
+          },
+          {
+            "id": "u7-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 7 AnkiDroid direction",
+            "body": "Unit 7 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u7-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 7 binder prompt",
+            "body": "Unit 7 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u7-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 7 optional tutor",
+            "body": "Unit 7 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u7-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 7 cumulative review",
+            "body": "Unit 7 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 7 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 22,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit7-prior-reading-inanimate-case-v1"
+    }
+  },
+  "afterUnit": {
+    "number": 7,
+    "id": "unit-7",
+    "title": "Adjectives, agreement, demonstratives, adjective case forms, and adverbs",
+    "shortLabel": "Adjectives",
+    "topicSummary": "Proposed Unit 7 is in development. Admitted agreement rows, three adverb form/gloss pairs, the admitted invariance line, the two admitted suffixal pairs, and a bounded manner-adverb lesson await qualified review. The bounded lesson is not a universal adjective-to-adverb paradigm. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 7,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment.",
+    "prerequisiteUnitNumbers": [
+      6
+    ],
+    "estimatedMinutes": 142,
+    "objectives": [
+      {
+        "id": "obj-u7-default",
+        "unitNumber": 7,
+        "title": "Choose the admitted dictionary form",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-default-1",
+          "u7-st-teach-default-2",
+          "u7-st-teach-default-3",
+          "u7-st-teach-default-4",
+          "u7-st-teach-default-5",
+          "u7-st-teach-default-6"
+        ],
+        "exampleIds": [
+          "ex-or-u7-default-0",
+          "ex-or-u7-default-1",
+          "ex-or-u7-default-2",
+          "ex-or-u7-default-3",
+          "ex-or-u7-default-4",
+          "ex-or-u7-default-5",
+          "ex-or-u7-default-6",
+          "ex-or-u7-default-7",
+          "ex-or-u7-default-8",
+          "ex-or-u7-default-9"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-default-1"
+        ],
+        "checkItemIds": [
+          "u7-i-default-1",
+          "u7-i-default-2",
+          "u7-i-default-3",
+          "u7-i-default-4"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-default"
+        ]
+      },
+      {
+        "id": "obj-u7-endings",
+        "unitNumber": 7,
+        "title": "Choose the admitted agreement line",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-endings-1",
+          "u7-st-teach-endings-2",
+          "u7-st-teach-endings-3",
+          "u7-st-teach-endings-4",
+          "u7-st-teach-endings-5",
+          "u7-st-teach-endings-6",
+          "u7-st-teach-endings-7"
+        ],
+        "exampleIds": [
+          "ex-u7-endings-0",
+          "ex-u7-endings-1",
+          "ex-u7-endings-2",
+          "ex-u7-endings-3",
+          "ex-u7-endings-4",
+          "ex-u7-endings-5",
+          "ex-u7-endings-6",
+          "ex-or-u7-endings-7",
+          "ex-or-u7-endings-8",
+          "ex-or-u7-endings-9",
+          "ex-or-u7-endings-10"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-endings-1"
+        ],
+        "checkItemIds": [
+          "u7-i-endings-1",
+          "u7-i-endings-2",
+          "u7-i-endings-3",
+          "u7-i-endings-4"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-endings"
+        ]
+      },
+      {
+        "id": "obj-u7-spelling",
+        "unitNumber": 7,
+        "title": "Recognize adjective forms after ш",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-spelling-1",
+          "u7-st-teach-spelling-2",
+          "u7-st-teach-spelling-3",
+          "u7-st-teach-spelling-4"
+        ],
+        "exampleIds": [
+          "ex-u7-spelling-0",
+          "ex-or-u7-spelling-1",
+          "ex-or-u7-spelling-2",
+          "ex-or-u7-spelling-3",
+          "ex-or-u7-spelling-4"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-spelling-1"
+        ],
+        "checkItemIds": [
+          "u7-i-spelling-1",
+          "u7-i-spelling-2",
+          "u7-i-spelling-3"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-spelling"
+        ]
+      },
+      {
+        "id": "obj-u7-question",
+        "unitNumber": 7,
+        "title": "Choose the admitted question form",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-question-1",
+          "u7-st-teach-question-2",
+          "u7-st-teach-question-3"
+        ],
+        "exampleIds": [
+          "ex-or-u7-question-0",
+          "ex-or-u7-question-1",
+          "ex-or-u7-question-2",
+          "ex-or-u7-question-3"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-question-1"
+        ],
+        "checkItemIds": [
+          "u7-i-question-1",
+          "u7-i-question-2",
+          "u7-i-question-3"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-question"
+        ]
+      },
+      {
+        "id": "obj-u7-demonstrative",
+        "unitNumber": 7,
+        "title": "Choose the admitted demonstrative form",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-demonstrative-1",
+          "u7-st-teach-demonstrative-2",
+          "u7-st-teach-demonstrative-3",
+          "u7-st-teach-demonstrative-4"
+        ],
+        "exampleIds": [
+          "ex-u7-demonstrative-0",
+          "ex-or-u7-demonstrative-1",
+          "ex-or-u7-demonstrative-2",
+          "ex-or-u7-demonstrative-3",
+          "ex-or-u7-demonstrative-4"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-demonstrative-1"
+        ],
+        "checkItemIds": [
+          "u7-i-demonstrative-1",
+          "u7-i-demonstrative-2",
+          "u7-i-demonstrative-3"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-demonstrative"
+        ]
+      },
+      {
+        "id": "obj-u7-place",
+        "unitNumber": 7,
+        "title": "Choose the admitted place-agreement line",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-place-1",
+          "u7-st-teach-place-2",
+          "u7-st-teach-place-3",
+          "u7-st-teach-place-4",
+          "u7-st-teach-place-5"
+        ],
+        "exampleIds": [
+          "ex-u7-place-0",
+          "ex-u7-place-1",
+          "ex-u7-place-2",
+          "ex-or-u7-place-3",
+          "ex-or-u7-place-4",
+          "ex-or-u7-place-5",
+          "ex-or-u7-place-6",
+          "ex-or-u7-place-7"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-place-1"
+        ],
+        "checkItemIds": [
+          "u7-i-place-1",
+          "u7-i-place-2",
+          "u7-i-place-3"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-place"
+        ]
+      },
+      {
+        "id": "obj-u7-objectadj",
+        "unitNumber": 7,
+        "title": "Choose the admitted object-agreement line",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-objectadj-1",
+          "u7-st-teach-objectadj-2",
+          "u7-st-teach-objectadj-3",
+          "u7-st-teach-objectadj-4",
+          "u7-st-teach-objectadj-5"
+        ],
+        "exampleIds": [
+          "ex-u7-objectadj-0",
+          "ex-u7-objectadj-1",
+          "ex-u7-objectadj-2",
+          "ex-u7-objectadj-3",
+          "ex-or-u7-objectadj-4",
+          "ex-or-u7-objectadj-5",
+          "ex-or-u7-objectadj-6"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-objectadj-1"
+        ],
+        "checkItemIds": [
+          "u7-i-objectadj-1",
+          "u7-i-objectadj-2",
+          "u7-i-objectadj-3"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-objectadj"
+        ]
+      },
+      {
+        "id": "obj-u7-adverb",
+        "unitNumber": 7,
+        "title": "Choose the admitted gloss beside the shown form",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-adverb-1",
+          "u7-st-teach-adverb-2",
+          "u7-st-teach-adverb-3"
+        ],
+        "exampleIds": [
+          "ex-u7-adverb-0",
+          "ex-u7-adverb-1",
+          "ex-u7-adverb-2"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-adverb-1"
+        ],
+        "checkItemIds": [
+          "u7-i-adverb-1",
+          "u7-i-adverb-2"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-adverb"
+        ]
+      },
+      {
+        "id": "obj-u7-book",
+        "unitNumber": 7,
+        "title": "Self-attest Lesson 7 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u7-st-book-work",
+          "u7-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      },
+      {
+        "id": "obj-u7-adverb-invariance",
+        "unitNumber": 7,
+        "title": "Admitted adverb invariance line",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-adverb-invariance-1",
+          "u7-st-teach-adverb-invariance-2"
+        ],
+        "exampleIds": [
+          "ex-u7-adverb-invariance-0",
+          "ex-u7-adverb-invariance-1"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-adverb-invariance-1"
+        ],
+        "checkItemIds": [
+          "u7-i-adverb-invariance-1",
+          "u7-i-adverb-invariance-2"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-adverb-invariance"
+        ]
+      },
+      {
+        "id": "obj-u7-adverb-pairs",
+        "unitNumber": 7,
+        "title": "Admitted suffixal adverb pairs",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-orient",
+          "u7-st-teach-adverb-pairs-1",
+          "u7-st-teach-adverb-pairs-2"
+        ],
+        "exampleIds": [
+          "ex-u7-adverb-pairs-0",
+          "ex-u7-adverb-pairs-1"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-adverb-pairs-1"
+        ],
+        "checkItemIds": [
+          "u7-i-adverb-pairs-1",
+          "u7-i-adverb-pairs-2"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-adverb-pairs"
+        ]
+      },
+      {
+        "id": "obj-u7-adverb-paradigm",
+        "unitNumber": 7,
+        "title": "Bounded manner-adverb formation",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u7-st-teach-manner-1",
+          "u7-st-teach-manner-2",
+          "u7-st-teach-manner-3"
+        ],
+        "exampleIds": [
+          "ex-u7-manner-0",
+          "ex-u7-manner-1"
+        ],
+        "practiceStepIds": [
+          "u7-st-guided-manner-1"
+        ],
+        "checkItemIds": [
+          "u7-i-manner-1",
+          "u7-i-manner-2",
+          "u7-i-manner-3",
+          "u7-i-manner-4"
+        ],
+        "remediationStepIds": [
+          "u7-st-rem-manner"
+        ]
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u7-s-orient",
+        "title": "Admitted agreement rows",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u7-default",
+          "obj-u7-endings",
+          "obj-u7-spelling",
+          "obj-u7-question",
+          "obj-u7-demonstrative",
+          "obj-u7-place",
+          "obj-u7-objectadj",
+          "obj-u7-adverb",
+          "obj-u7-book"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-orient",
+            "kind": "ORIENT",
+            "title": "Admitted agreement rows",
+            "body": "Proposed Unit 7 uses frozen agreement rows and the admitted adverb pairs. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "bookDirection": "Open Lesson 7 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u7-s-default",
+        "title": "Choose the admitted dictionary form",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-default"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-default-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вый — new. но́вая — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-default-0",
+              "ex-or-u7-default-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-default-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-default-0"
+            ],
+            "remediationStepId": "u7-st-rem-default"
+          },
+          {
+            "id": "u7-st-teach-default-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-default-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вое — new. но́вые — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-default-2",
+              "ex-or-u7-default-3"
+            ]
+          },
+          {
+            "id": "u7-st-teach-default-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "хоро́ший — good. хоро́шая — good. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-default-4",
+              "ex-or-u7-default-5"
+            ]
+          },
+          {
+            "id": "u7-st-teach-default-5",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "си́ний — dark blue. си́няя — dark blue. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-default-6",
+              "ex-or-u7-default-7"
+            ]
+          },
+          {
+            "id": "u7-st-teach-default-6",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "како́й — what kind of. кака́я — what kind of. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-default-8",
+              "ex-or-u7-default-9"
+            ]
+          },
+          {
+            "id": "u7-st-rem-default",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+            "exampleIds": [
+              "ex-or-u7-default-0",
+              "ex-or-u7-default-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-default",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-default-1",
+              "u7-i-default-2",
+              "u7-i-default-3",
+              "u7-i-default-4"
+            ],
+            "remediationStepId": "u7-st-rem-default"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-endings",
+        "title": "Choose the admitted agreement line",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-endings"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-endings-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "The retained phrase новый карандаш is masculine singular nominative; новая машина is feminine singular nominative. The adjective agrees with the noun in the phrase, so the car check requires the supplied feminine form но́вая rather than masculine но́вый or plural но́вые. The guided contrast changes the supplied feminine singular nominative phrase но́вая книга to the accusative object phrase но́вую книгу. Both words change in these supplied case pairs. но́вого друга is a masculine animate object phrase and но́вые книги is plural; neither is the requested feminine singular book phrase.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-endings-0",
+              "ex-u7-endings-1"
+            ]
+          },
+          {
+            "id": "u7-st-teach-endings-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "The dictionary form of this adjective is masculine singular nominative но́вый. A phrase can need another gender, number or case even though its dictionary entry uses that form. In the supplied window contrast, но́вое окно is neuter singular nominative and но́вого окна is the genitive phrase. Both adjective and noun change case while remaining neuter singular. Given the request for the genitive continuation of this window phrase, choose но́вого окна rather than the feminine object phrase но́вую книгу or masculine nominative но́вый дом. This is recognition of the shown pair, not a generator for unfamiliar nouns or adjectives.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-endings-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "The retained phrase новое платье is neuter singular nominative. Compare the adjective with the masculine pencil and feminine car examples above: the noun controls the agreement required in that phrase. The supplied синий стол uses the masculine nominative form of a different adjective meaning dark blue. Learn each recorded adjective family; similar meanings or dictionary endings alone do not license every inflection.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-endings-2",
+              "ex-u7-endings-3"
+            ]
+          },
+          {
+            "id": "u7-st-teach-endings-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "The retained phrases синяя книга and синее письмо show feminine and neuter singular nominative agreement in the dark-blue adjective family. Keep the noun and the requested agreement in view. These are supplied nominative examples; they do not by themselves answer a question asking for an object or genitive phrase.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-endings-4",
+              "ex-u7-endings-5"
+            ]
+          },
+          {
+            "id": "u7-st-teach-endings-5",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "The retained phrase синие книги has plural nominative agreement. In the new adjective family, но́вый is masculine singular nominative and но́вые is plural nominative. When the check asks for plural nominative of the same adjective as но́вый, choose но́вые rather than feminine singular но́вая. The comparison changes number; it does not change the adjective to a different vocabulary item.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-endings-6",
+              "ex-or-u7-endings-7"
+            ]
+          },
+          {
+            "id": "u7-st-teach-endings-6",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "The supplied forms но́вая and но́вое are feminine and neuter singular nominative forms of the same adjective. The corresponding dictionary form is masculine singular nominative но́вый. A check showing но́вая and asking for that dictionary form requires но́вый rather than neuter но́вое. All these options are recorded forms, so the requested gender, number and case decide the answer; merely recognizing a valid-looking ending does not.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-endings-8",
+              "ex-or-u7-endings-9"
+            ]
+          },
+          {
+            "id": "u7-st-teach-endings-7",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "The supplied но́вые is plural nominative of this adjective. Compare all four recorded nominative forms: но́вый, но́вая, но́вое and но́вые. A singular feminine car phrase needs но́вая, not the masculine dictionary form or plural form. Case changes in the book and window pairs above are a separate contrast. These checks ask for specific supplied forms and phrases; they do not demonstrate unrestricted adjective production or every adjective case pattern.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-endings-10"
+            ]
+          },
+          {
+            "id": "u7-st-guided-endings-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-endings-0"
+            ],
+            "remediationStepId": "u7-st-rem-endings"
+          },
+          {
+            "id": "u7-st-rem-endings",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "The retained phrase новый карандаш is masculine singular nominative; новая машина is feminine singular nominative. The adjective agrees with the noun in the phrase, so the car check requires the supplied feminine form но́вая rather than masculine но́вый or plural но́вые. The guided contrast changes the supplied feminine singular nominative phrase но́вая книга to the accusative object phrase но́вую книгу. Both words change in these supplied case pairs. но́вого друга is a masculine animate object phrase and но́вые книги is plural; neither is the requested feminine singular book phrase.\n\nThe dictionary form of this adjective is masculine singular nominative но́вый. A phrase can need another gender, number or case even though its dictionary entry uses that form. In the supplied window contrast, но́вое окно is neuter singular nominative and но́вого окна is the genitive phrase. Both adjective and noun change case while remaining neuter singular. Given the request for the genitive continuation of this window phrase, choose но́вого окна rather than the feminine object phrase но́вую книгу or masculine nominative но́вый дом. This is recognition of the shown pair, not a generator for unfamiliar nouns or adjectives.\n\nThe retained phrase новое платье is neuter singular nominative. Compare the adjective with the masculine pencil and feminine car examples above: the noun controls the agreement required in that phrase. The supplied синий стол uses the masculine nominative form of a different adjective meaning dark blue. Learn each recorded adjective family; similar meanings or dictionary endings alone do not license every inflection.\n\nThe retained phrases синяя книга and синее письмо show feminine and neuter singular nominative agreement in the dark-blue adjective family. Keep the noun and the requested agreement in view. These are supplied nominative examples; they do not by themselves answer a question asking for an object or genitive phrase.\n\nThe retained phrase синие книги has plural nominative agreement. In the new adjective family, но́вый is masculine singular nominative and но́вые is plural nominative. When the check asks for plural nominative of the same adjective as но́вый, choose но́вые rather than feminine singular но́вая. The comparison changes number; it does not change the adjective to a different vocabulary item.\n\nThe supplied forms но́вая and но́вое are feminine and neuter singular nominative forms of the same adjective. The corresponding dictionary form is masculine singular nominative но́вый. A check showing но́вая and asking for that dictionary form requires но́вый rather than neuter но́вое. All these options are recorded forms, so the requested gender, number and case decide the answer; merely recognizing a valid-looking ending does not.\n\nThe supplied но́вые is plural nominative of this adjective. Compare all four recorded nominative forms: но́вый, но́вая, но́вое and но́вые. A singular feminine car phrase needs но́вая, not the masculine dictionary form or plural form. Case changes in the book and window pairs above are a separate contrast. These checks ask for specific supplied forms and phrases; they do not demonstrate unrestricted adjective production or every adjective case pattern.",
+            "exampleIds": [
+              "ex-u7-endings-0",
+              "ex-u7-endings-1",
+              "ex-u7-endings-2",
+              "ex-u7-endings-3",
+              "ex-u7-endings-4",
+              "ex-u7-endings-5",
+              "ex-u7-endings-6",
+              "ex-or-u7-endings-7",
+              "ex-or-u7-endings-8",
+              "ex-or-u7-endings-9",
+              "ex-or-u7-endings-10"
+            ]
+          },
+          {
+            "id": "u7-st-check-endings",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-endings-1",
+              "u7-i-endings-2",
+              "u7-i-endings-3",
+              "u7-i-endings-4"
+            ],
+            "remediationStepId": "u7-st-rem-endings"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-spelling",
+        "title": "Recognize adjective forms after ш",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-spelling"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-spelling-1",
+            "kind": "TEACH",
+            "title": "One adjective, several forms",
+            "body": "An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-spelling-0",
+              "ex-or-u7-spelling-1"
+            ]
+          },
+          {
+            "id": "u7-st-teach-spelling-2",
+            "kind": "TEACH",
+            "title": "Two spelling conditions",
+            "body": "After ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-spelling-3",
+            "kind": "TEACH",
+            "title": "Gender and a worked case change",
+            "body": "хоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-spelling-2",
+              "ex-or-u7-spelling-3"
+            ]
+          },
+          {
+            "id": "u7-st-teach-spelling-4",
+            "kind": "TEACH",
+            "title": "Singular, plural and dictionary form",
+            "body": "хоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-spelling-4"
+            ]
+          },
+          {
+            "id": "u7-st-guided-spelling-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the requested adjective form. Use its gender, number and case, then read the explanation.",
+            "itemIds": [
+              "u7-g-spelling-0"
+            ],
+            "remediationStepId": "u7-st-rem-spelling"
+          },
+          {
+            "id": "u7-st-rem-spelling",
+            "kind": "REMEDIATE",
+            "title": "Review forms and spelling",
+            "body": "An adjective agrees with its noun in gender, number and case. In хорошее письмо, the adjective describes a neuter singular noun. хоро́ший is the dictionary form: masculine singular nominative. The following forms belong to the same adjective meaning good.\n\nAfter ж, ц, ч, ш, or щ, an unstressed о in an ending is written е. That replacement is not a rule for every unstressed о. In хоро́шее, the unstressed ending after ш uses е. The и in хоро́шие follows a different spelling condition: write и rather than ы after ш. Spelling limits the letters in an ending; gender, number and case determine which form is needed.\n\nхоро́шая is feminine singular nominative; хоро́шее is neuter singular nominative. In хоро́шая книга, both words are feminine singular nominative. To put the phrase in the accusative singular, change both words: хоро́шая книга becomes хоро́шую книгу. Keep the same noun and feminine singular agreement. хоро́шего друга is masculine animate; хоро́шие книги is plural.\n\nхоро́шие is plural nominative. To change хоро́шее from neuter singular nominative to plural nominative, choose хоро́шие. To go back to neuter singular, choose хоро́шее. To supply the dictionary form, choose хоро́ший. These choices test the requested form of the adjective; all the options are already correctly spelled.",
+            "exampleIds": [
+              "ex-u7-spelling-0",
+              "ex-or-u7-spelling-1",
+              "ex-or-u7-spelling-2",
+              "ex-or-u7-spelling-3",
+              "ex-or-u7-spelling-4"
+            ]
+          },
+          {
+            "id": "u7-st-check-spelling",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Choose the requested nominative form or feminine singular accusative phrase. A missed check returns to the explanation.",
+            "itemIds": [
+              "u7-i-spelling-1",
+              "u7-i-spelling-2",
+              "u7-i-spelling-3"
+            ],
+            "remediationStepId": "u7-st-rem-spelling"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-question",
+        "title": "Choose the admitted question form",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-question"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-question-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "како́й — what kind of. кака́я — what kind of. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-question-0",
+              "ex-or-u7-question-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-question-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-question-0"
+            ],
+            "remediationStepId": "u7-st-rem-question"
+          },
+          {
+            "id": "u7-st-teach-question-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-question-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "како́е — what kind of. каки́е — what kind of. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-question-2",
+              "ex-or-u7-question-3"
+            ]
+          },
+          {
+            "id": "u7-st-rem-question",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "The default form of an adjective is its nominative, masculine, singular form, and this is the form given in dictionaries.",
+            "exampleIds": [
+              "ex-or-u7-question-0",
+              "ex-or-u7-question-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-question",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-question-1",
+              "u7-i-question-2",
+              "u7-i-question-3"
+            ],
+            "remediationStepId": "u7-st-rem-question"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-demonstrative",
+        "title": "Choose the admitted demonstrative form",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-demonstrative"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-demonstrative-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "эти хорошие новые студенты — these good new students. э́та — this. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-demonstrative-0",
+              "ex-or-u7-demonstrative-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-demonstrative-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-demonstrative-0"
+            ],
+            "remediationStepId": "u7-st-rem-demonstrative"
+          },
+          {
+            "id": "u7-st-teach-demonstrative-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "these good new students\" is '''эти хорошие новые студенты'''",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-demonstrative-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "э́то — this. э́ти — this. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-demonstrative-2",
+              "ex-or-u7-demonstrative-3"
+            ]
+          },
+          {
+            "id": "u7-st-teach-demonstrative-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "э́ту — this. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-demonstrative-4"
+            ]
+          },
+          {
+            "id": "u7-st-rem-demonstrative",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "these good new students\" is '''эти хорошие новые студенты'''",
+            "exampleIds": [
+              "ex-u7-demonstrative-0",
+              "ex-or-u7-demonstrative-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-demonstrative",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-demonstrative-1",
+              "u7-i-demonstrative-2",
+              "u7-i-demonstrative-3"
+            ],
+            "remediationStepId": "u7-st-rem-demonstrative"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-place",
+        "title": "Choose the admitted place-agreement line",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-place"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-place-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "Они говорили о хорошем новом кино — They were talking about a good new cinema. Они были в старой русской школе — They were in the old Russian school. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-place-0",
+              "ex-u7-place-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-place-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-place-0"
+            ],
+            "remediationStepId": "u7-st-rem-place"
+          },
+          {
+            "id": "u7-st-teach-place-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "They were talking about a good new cinema' - '''Они говорили о хорошем новом кино'''",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-place-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "Я хочу́ жить в чи́стом но́вом го́роде — I want to live in a clean new city. но́вый — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-place-2",
+              "ex-or-u7-place-3"
+            ]
+          },
+          {
+            "id": "u7-st-teach-place-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вом — new. но́вую — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-place-4",
+              "ex-or-u7-place-5"
+            ]
+          },
+          {
+            "id": "u7-st-teach-place-5",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "хоро́ший — good. хоро́шем — good. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-place-6",
+              "ex-or-u7-place-7"
+            ]
+          },
+          {
+            "id": "u7-st-rem-place",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "They were talking about a good new cinema' - '''Они говорили о хорошем новом кино'''",
+            "exampleIds": [
+              "ex-u7-place-0",
+              "ex-u7-place-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-place",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-place-1",
+              "u7-i-place-2",
+              "u7-i-place-3"
+            ],
+            "remediationStepId": "u7-st-rem-place"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-objectadj",
+        "title": "Choose the admitted object-agreement line",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-objectadj"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-objectadj-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "Я хочу новый стул и новое письмо — I want a new chair and a new letter. Я хочу нового кролика. — I want a new rabbit. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-objectadj-0",
+              "ex-u7-objectadj-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-objectadj-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-objectadj-0"
+            ],
+            "remediationStepId": "u7-st-rem-objectadj"
+          },
+          {
+            "id": "u7-st-teach-objectadj-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "I want a new rabbit - '''Я хочу нового кролика.'''",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-objectadj-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "Моя русская кошка любит мою новую собаку — My Russian cat likes my new dog. этих женщин — I like these women. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-objectadj-2",
+              "ex-u7-objectadj-3"
+            ]
+          },
+          {
+            "id": "u7-st-teach-objectadj-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вый — new. но́вого — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-objectadj-4",
+              "ex-or-u7-objectadj-5"
+            ]
+          },
+          {
+            "id": "u7-st-teach-objectadj-5",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "но́вую — new. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u7-objectadj-6"
+            ]
+          },
+          {
+            "id": "u7-st-rem-objectadj",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "I want a new rabbit - '''Я хочу нового кролика.'''",
+            "exampleIds": [
+              "ex-u7-objectadj-0",
+              "ex-u7-objectadj-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-objectadj",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-objectadj-1",
+              "u7-i-objectadj-2",
+              "u7-i-objectadj-3"
+            ],
+            "remediationStepId": "u7-st-rem-objectadj"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-adverb",
+        "title": "Choose the admitted gloss beside the shown form",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-adverb"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-adverb-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "быстро — quickly. хорошо — well. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-adverb-0",
+              "ex-u7-adverb-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-adverb-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-adverb-0"
+            ],
+            "remediationStepId": "u7-st-rem-adverb"
+          },
+          {
+            "id": "u7-st-teach-adverb-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "\"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully)",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-teach-adverb-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "прекрасно — wonderfully. ",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-adverb-2"
+            ]
+          },
+          {
+            "id": "u7-st-rem-adverb",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "\"быстро\", \"хорошо\", \"прекрасно\" (quickly, well, wonderfully)",
+            "exampleIds": [
+              "ex-u7-adverb-0",
+              "ex-u7-adverb-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-adverb",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-adverb-1",
+              "u7-i-adverb-2"
+            ],
+            "remediationStepId": "u7-st-rem-adverb"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-book",
+        "title": "Self-attest Lesson 7",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u7-book"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 7 in your copy",
+            "body": "Do Lesson 7 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. The short-form adjective section stays out of this unit. Listening stays with the book. No audio is mapped here.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 7: printed pages 68-80. PDF indexes 80-92 are file locators, not printed pages. Observed section locators: §7.1 p68 (PDF 80); §7.2 p68 (PDF 80); §7.3 p69 (PDF 81); §7.4 p69 (PDF 81); §7.5 p70 (PDF 82); §7.6 p70 (PDF 82); §7.7 p71 (PDF 83); §7.8 p71 (PDF 83); §7.9 p71 (PDF 83); §7.10 p72 (PDF 84); §7.11 p72 (PDF 84); §7.12 p73 (PDF 85); §7.13 p74 (PDF 86); §7.14 p74 (PDF 86); §7.15 p74 (PDF 86); §7.16 p75 (PDF 87); §7.17 p75 (PDF 87); §7.18 p76 (PDF 88). Observed exercise locators: 7/1 p69/PDF81; 7/2 p71/PDF83; 7/3 p77/PDF89; 7/4 p80/PDF92; 7/5 p80/PDF92. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u7-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 7 book work",
+            "body": "When you have done Lesson 7 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 7: printed pages 68-80. PDF indexes 80-92 are file locators, not printed pages. Observed section locators: §7.1 p68 (PDF 80); §7.2 p68 (PDF 80); §7.3 p69 (PDF 81); §7.4 p69 (PDF 81); §7.5 p70 (PDF 82); §7.6 p70 (PDF 82); §7.7 p71 (PDF 83); §7.8 p71 (PDF 83); §7.9 p71 (PDF 83); §7.10 p72 (PDF 84); §7.11 p72 (PDF 84); §7.12 p73 (PDF 85); §7.13 p74 (PDF 86); §7.14 p74 (PDF 86); §7.15 p74 (PDF 86); §7.16 p75 (PDF 87); §7.17 p75 (PDF 87); §7.18 p76 (PDF 88). Observed exercise locators: 7/1 p69/PDF81; 7/2 p71/PDF83; 7/3 p77/PDF89; 7/4 p80/PDF92; 7/5 p80/PDF92. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          }
+        ]
+      },
+      {
+        "id": "u7-s-adverb-invariance",
+        "title": "Admitted adverb invariance line",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-adverb-invariance"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-adverb-invariance-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "Наречия — неизменяемые слова. Наречия — неизменяемые слова. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u7-ruwiki-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-adverb-invariance-0",
+              "ex-u7-adverb-invariance-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-adverb-invariance-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-adverb-invariance-0"
+            ],
+            "remediationStepId": "u7-st-rem-adverb-invariance"
+          },
+          {
+            "id": "u7-st-teach-adverb-invariance-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.",
+            "referenceIds": [
+              "ref-u7-ruwiki-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-rem-adverb-invariance",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.",
+            "exampleIds": [
+              "ex-u7-adverb-invariance-0",
+              "ex-u7-adverb-invariance-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-adverb-invariance",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-adverb-invariance-1",
+              "u7-i-adverb-invariance-2"
+            ],
+            "remediationStepId": "u7-st-rem-adverb-invariance"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-adverb-pairs",
+        "title": "Admitted suffixal adverb pairs",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-adverb-pairs"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-adverb-pairs-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "быстрый — быстро. творческий — творчески. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u7-ruwiki-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-adverb-pairs-0",
+              "ex-u7-adverb-pairs-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-adverb-pairs-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u7-g-adverb-pairs-0"
+            ],
+            "remediationStepId": "u7-st-rem-adverb-pairs"
+          },
+          {
+            "id": "u7-st-teach-adverb-pairs-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';",
+            "referenceIds": [
+              "ref-u7-ruwiki-attribution"
+            ]
+          },
+          {
+            "id": "u7-st-rem-adverb-pairs",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "* '''суффиксальный''': ''быстрый — быстро'', ''творческий — творчески'';",
+            "exampleIds": [
+              "ex-u7-adverb-pairs-0",
+              "ex-u7-adverb-pairs-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-adverb-pairs",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u7-i-adverb-pairs-1",
+              "u7-i-adverb-pairs-2"
+            ],
+            "remediationStepId": "u7-st-rem-adverb-pairs"
+          }
+        ]
+      },
+      {
+        "id": "u7-s-gap-adverb-paradigm",
+        "title": "Bounded manner-adverb formation",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u7-adverb-paradigm",
+          "obj-u7-book"
+        ],
+        "steps": [
+          {
+            "id": "u7-st-teach-manner-1",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.",
+            "referenceIds": [
+              "ref-u610-attribution"
+            ],
+            "exampleIds": [
+              "ex-u7-manner-0",
+              "ex-u7-manner-1"
+            ]
+          },
+          {
+            "id": "u7-st-guided-manner-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "The documented creative pair is a separate admitted manner-adverb relationship.",
+            "itemIds": [
+              "u7-g-manner-1"
+            ],
+            "remediationStepId": "u7-st-rem-manner"
+          },
+          {
+            "id": "u7-st-teach-manner-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Russian adverbs do not change for gender, number, or case."
+          },
+          {
+            "id": "u7-st-teach-manner-3",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective."
+          },
+          {
+            "id": "u7-st-rem-manner",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.",
+            "exampleIds": [
+              "ex-u7-manner-0",
+              "ex-u7-manner-1"
+            ]
+          },
+          {
+            "id": "u7-st-check-manner",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.",
+            "itemIds": [
+              "u7-i-manner-1",
+              "u7-i-manner-2",
+              "u7-i-manner-3",
+              "u7-i-manner-4"
+            ],
+            "remediationStepId": "u7-st-rem-manner"
+          },
+          {
+            "id": "u7-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 7 AnkiDroid direction",
+            "body": "Unit 7 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u7-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 7 binder prompt",
+            "body": "Unit 7 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u7-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 7 optional tutor",
+            "body": "Unit 7 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u7-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 7 cumulative review",
+            "body": "Unit 7 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 7 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 22,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit7-prior-reading-inanimate-case-v1"
+    }
+  },
+  "beforeSession": {
+    "id": "u7-s-endings",
+    "title": "Choose the admitted agreement line",
+    "estimatedMinutes": 12,
+    "objectiveIds": [
+      "obj-u7-endings"
+    ],
+    "steps": [
+      {
+        "id": "u7-st-teach-endings-1",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "новый карандаш — new pencil. новая машина — new car. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u7-endings-0",
+          "ex-u7-endings-1"
+        ]
+      },
+      {
+        "id": "u7-st-guided-endings-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u7-g-endings-0"
+        ],
+        "remediationStepId": "u7-st-rem-endings"
+      },
+      {
+        "id": "u7-st-teach-endings-2",
+        "kind": "TEACH",
+        "title": "Admitted instruction",
+        "body": "\"new pencil\" is '''новый карандаш'''",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ]
+      },
+      {
+        "id": "u7-st-teach-endings-3",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "новое платье — new dress. синий стол — the dark blue table. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u7-endings-2",
+          "ex-u7-endings-3"
+        ]
+      },
+      {
+        "id": "u7-st-teach-endings-4",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "синяя книга — the dark blue book. синее письмо — the dark blue letter. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u7-endings-4",
+          "ex-u7-endings-5"
+        ]
+      },
+      {
+        "id": "u7-st-teach-endings-5",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "синие книги — the dark blue books. но́вый — new. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u7-endings-6",
+          "ex-or-u7-endings-7"
+        ]
+      },
+      {
+        "id": "u7-st-teach-endings-6",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "но́вая — new. но́вое — new. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u7-endings-8",
+          "ex-or-u7-endings-9"
+        ]
+      },
+      {
+        "id": "u7-st-teach-endings-7",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "но́вые — new. ",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u7-endings-10"
+        ]
+      },
+      {
+        "id": "u7-st-rem-endings",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "\"new pencil\" is '''новый карандаш'''",
+        "exampleIds": [
+          "ex-u7-endings-0",
+          "ex-u7-endings-1"
+        ]
+      },
+      {
+        "id": "u7-st-check-endings",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u7-i-endings-1",
+          "u7-i-endings-2",
+          "u7-i-endings-3",
+          "u7-i-endings-4"
+        ],
+        "remediationStepId": "u7-st-rem-endings"
+      }
+    ]
+  },
+  "afterSession": {
+    "id": "u7-s-endings",
+    "title": "Choose the admitted agreement line",
+    "estimatedMinutes": 12,
+    "objectiveIds": [
+      "obj-u7-endings"
+    ],
+    "steps": [
+      {
+        "id": "u7-st-teach-endings-1",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "The retained phrase новый карандаш is masculine singular nominative; новая машина is feminine singular nominative. The adjective agrees with the noun in the phrase, so the car check requires the supplied feminine form но́вая rather than masculine но́вый or plural но́вые. The guided contrast changes the supplied feminine singular nominative phrase но́вая книга to the accusative object phrase но́вую книгу. Both words change in these supplied case pairs. но́вого друга is a masculine animate object phrase and но́вые книги is plural; neither is the requested feminine singular book phrase.",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u7-endings-0",
+          "ex-u7-endings-1"
+        ]
+      },
+      {
+        "id": "u7-st-teach-endings-2",
+        "kind": "TEACH",
+        "title": "Admitted instruction",
+        "body": "The dictionary form of this adjective is masculine singular nominative но́вый. A phrase can need another gender, number or case even though its dictionary entry uses that form. In the supplied window contrast, но́вое окно is neuter singular nominative and но́вого окна is the genitive phrase. Both adjective and noun change case while remaining neuter singular. Given the request for the genitive continuation of this window phrase, choose но́вого окна rather than the feminine object phrase но́вую книгу or masculine nominative но́вый дом. This is recognition of the shown pair, not a generator for unfamiliar nouns or adjectives.",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ]
+      },
+      {
+        "id": "u7-st-teach-endings-3",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "The retained phrase новое платье is neuter singular nominative. Compare the adjective with the masculine pencil and feminine car examples above: the noun controls the agreement required in that phrase. The supplied синий стол uses the masculine nominative form of a different adjective meaning dark blue. Learn each recorded adjective family; similar meanings or dictionary endings alone do not license every inflection.",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u7-endings-2",
+          "ex-u7-endings-3"
+        ]
+      },
+      {
+        "id": "u7-st-teach-endings-4",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "The retained phrases синяя книга and синее письмо show feminine and neuter singular nominative agreement in the dark-blue adjective family. Keep the noun and the requested agreement in view. These are supplied nominative examples; they do not by themselves answer a question asking for an object or genitive phrase.",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u7-endings-4",
+          "ex-u7-endings-5"
+        ]
+      },
+      {
+        "id": "u7-st-teach-endings-5",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "The retained phrase синие книги has plural nominative agreement. In the new adjective family, но́вый is masculine singular nominative and но́вые is plural nominative. When the check asks for plural nominative of the same adjective as но́вый, choose но́вые rather than feminine singular но́вая. The comparison changes number; it does not change the adjective to a different vocabulary item.",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-u7-endings-6",
+          "ex-or-u7-endings-7"
+        ]
+      },
+      {
+        "id": "u7-st-teach-endings-6",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "The supplied forms но́вая and но́вое are feminine and neuter singular nominative forms of the same adjective. The corresponding dictionary form is masculine singular nominative но́вый. A check showing но́вая and asking for that dictionary form requires но́вый rather than neuter но́вое. All these options are recorded forms, so the requested gender, number and case decide the answer; merely recognizing a valid-looking ending does not.",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u7-endings-8",
+          "ex-or-u7-endings-9"
+        ]
+      },
+      {
+        "id": "u7-st-teach-endings-7",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "The supplied но́вые is plural nominative of this adjective. Compare all four recorded nominative forms: но́вый, но́вая, но́вое and но́вые. A singular feminine car phrase needs но́вая, not the masculine dictionary form or plural form. Case changes in the book and window pairs above are a separate contrast. These checks ask for specific supplied forms and phrases; they do not demonstrate unrestricted adjective production or every adjective case pattern.",
+        "referenceIds": [
+          "ref-u610-attribution"
+        ],
+        "exampleIds": [
+          "ex-or-u7-endings-10"
+        ]
+      },
+      {
+        "id": "u7-st-guided-endings-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Choose the admitted record. The feedback states the frozen field.",
+        "itemIds": [
+          "u7-g-endings-0"
+        ],
+        "remediationStepId": "u7-st-rem-endings"
+      },
+      {
+        "id": "u7-st-rem-endings",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "The retained phrase новый карандаш is masculine singular nominative; новая машина is feminine singular nominative. The adjective agrees with the noun in the phrase, so the car check requires the supplied feminine form но́вая rather than masculine но́вый or plural но́вые. The guided contrast changes the supplied feminine singular nominative phrase но́вая книга to the accusative object phrase но́вую книгу. Both words change in these supplied case pairs. но́вого друга is a masculine animate object phrase and но́вые книги is plural; neither is the requested feminine singular book phrase.\n\nThe dictionary form of this adjective is masculine singular nominative но́вый. A phrase can need another gender, number or case even though its dictionary entry uses that form. In the supplied window contrast, но́вое окно is neuter singular nominative and но́вого окна is the genitive phrase. Both adjective and noun change case while remaining neuter singular. Given the request for the genitive continuation of this window phrase, choose но́вого окна rather than the feminine object phrase но́вую книгу or masculine nominative но́вый дом. This is recognition of the shown pair, not a generator for unfamiliar nouns or adjectives.\n\nThe retained phrase новое платье is neuter singular nominative. Compare the adjective with the masculine pencil and feminine car examples above: the noun controls the agreement required in that phrase. The supplied синий стол uses the masculine nominative form of a different adjective meaning dark blue. Learn each recorded adjective family; similar meanings or dictionary endings alone do not license every inflection.\n\nThe retained phrases синяя книга and синее письмо show feminine and neuter singular nominative agreement in the dark-blue adjective family. Keep the noun and the requested agreement in view. These are supplied nominative examples; they do not by themselves answer a question asking for an object or genitive phrase.\n\nThe retained phrase синие книги has plural nominative agreement. In the new adjective family, но́вый is masculine singular nominative and но́вые is plural nominative. When the check asks for plural nominative of the same adjective as но́вый, choose но́вые rather than feminine singular но́вая. The comparison changes number; it does not change the adjective to a different vocabulary item.\n\nThe supplied forms но́вая and но́вое are feminine and neuter singular nominative forms of the same adjective. The corresponding dictionary form is masculine singular nominative но́вый. A check showing но́вая and asking for that dictionary form requires но́вый rather than neuter но́вое. All these options are recorded forms, so the requested gender, number and case decide the answer; merely recognizing a valid-looking ending does not.\n\nThe supplied но́вые is plural nominative of this adjective. Compare all four recorded nominative forms: но́вый, но́вая, но́вое and но́вые. A singular feminine car phrase needs но́вая, not the masculine dictionary form or plural form. Case changes in the book and window pairs above are a separate contrast. These checks ask for specific supplied forms and phrases; they do not demonstrate unrestricted adjective production or every adjective case pattern.",
+        "exampleIds": [
+          "ex-u7-endings-0",
+          "ex-u7-endings-1",
+          "ex-u7-endings-2",
+          "ex-u7-endings-3",
+          "ex-u7-endings-4",
+          "ex-u7-endings-5",
+          "ex-u7-endings-6",
+          "ex-or-u7-endings-7",
+          "ex-or-u7-endings-8",
+          "ex-or-u7-endings-9",
+          "ex-or-u7-endings-10"
+        ]
+      },
+      {
+        "id": "u7-st-check-endings",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "These checks use only admitted records. A miss returns to the explanation.",
+        "itemIds": [
+          "u7-i-endings-1",
+          "u7-i-endings-2",
+          "u7-i-endings-3",
+          "u7-i-endings-4"
+        ],
+        "remediationStepId": "u7-st-rem-endings"
+      }
+    ]
+  },
+  "originalProvenancePreserved": 6935,
+  "newPendingEnglishRecords": 8,
+  "addedRecordIds": [
+    "prov-ca-u7-agreement-u7-st-teach-endings-1-complete-v1",
+    "prov-ca-u7-agreement-u7-st-teach-endings-2-complete-v1",
+    "prov-ca-u7-agreement-u7-st-teach-endings-3-complete-v1",
+    "prov-ca-u7-agreement-u7-st-teach-endings-4-complete-v1",
+    "prov-ca-u7-agreement-u7-st-teach-endings-5-complete-v1",
+    "prov-ca-u7-agreement-u7-st-teach-endings-6-complete-v1",
+    "prov-ca-u7-agreement-u7-st-teach-endings-7-complete-v1",
+    "prov-ca-u7-agreement-u7-st-rem-endings-complete-v1"
+  ],
+  "currentProvenanceCount": 6943,
+  "allNativeScoredPoliciesSchemasRequirementsSourcesRightsCapabilitiesUnchanged": true,
+  "sourceHashes": {
+    "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt": "9fc58c168fe33c428a4a9a665955dede2c19997a8fbf58042f207d282462e998",
+    "catalog/sources/units-6-10/wikibooks/adjectives-4292379.revision.json": "c2f648a1974ca0ea8b8d752c19d62f5aa53e59f66c1887e61b208773baab249c",
+    "catalog/sources/units-6-10/openrussian/adjectives.csv": "89ab5d10dcd2f21f6b485de704aef372f32251468e3aa96f18b21e259f26b80a",
+    "catalog/sources/units-3-5/openrussian/nouns.csv": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
+    "catalog/sources/units-3-5/openrussian/LICENSE": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+    "catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40"
+  },
+  "formalAcceptance": false
+}

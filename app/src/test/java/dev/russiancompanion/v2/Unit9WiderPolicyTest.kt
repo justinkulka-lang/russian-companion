@@ -341,7 +341,7 @@ class Unit9WiderPolicyTest {
     private fun root() = File(if (File("app").isDirectory) "." else "..")
     companion object {
         private const val door = "u3-i-gender-дверь"
-        private val p by lazy { V2PackLoader.parse(File(rootStatic(), "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
+        private val p by lazy { Unit7AgreementTeachingTest.beforeTeachingCorrectionPack() } // Exact post-Unit13-policy source2ff71f19; this historical transition predates the later Unit7 teaching correction.
         private fun rootStatic() = File(if (File("app").isDirectory) "." else "..")
     }
 }
