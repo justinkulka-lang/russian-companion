@@ -1,0 +1,6 @@
+// Only the named source-capability class is a test candidate; runtime classpath is unchanged.
+allprojects {
+    tasks.withType(Test).configureEach {
+        include '**/Aud53CorrectionTest.class'
+    }
+}

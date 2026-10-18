@@ -1,4 +1,4 @@
-"""Run the explicit current reference/required-practice scope without overwriting evidence."""
+"""Run an explicit scoped regression without overwriting evidence."""
 from pathlib import Path
 from datetime import datetime, timezone
 import hashlib
@@ -8,7 +8,8 @@ import subprocess
 import sys
 import xml.etree.ElementTree as ET
 
-HERE = Path(__file__).resolve().parent
+SELECTION_CONFIG = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else None
+HERE = SELECTION_CONFIG.parent if SELECTION_CONFIG else Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 LABEL = sys.argv[1] if len(sys.argv) > 1 else "INITIAL"
 assert LABEL.isidentifier() and LABEL.isupper()
@@ -30,6 +31,8 @@ names = {
         "oldTranslationCompletionHistoryIsPreservedButStaleForTheNewConstruct", "wrongCaseRoleShowsTargetedFeedbackAndReturnsToEveryExample"],
     "OptionalGlossRemediationTest": ["optionalMeaningExplanationReturnsToItsSelectionWithoutGrantingCaseRoleCredit"],
 }
+if SELECTION_CONFIG:
+    names = json.loads(SELECTION_CONFIG.read_text())["selectedMethods"]
 expected = {("dev.russiancompanion.v2." + cls, name) for cls, methods in names.items() for name in methods}
 selectors = ["*" + cls + "." + name for cls, methods in names.items() for name in methods]
 trees = {p: git("rev-parse", "HEAD:" + p) for p in ("app/src/main", "app/src/test", "catalog", "docs", "review")}
@@ -44,6 +47,7 @@ started = datetime.now(timezone.utc)
 context = {"sourceCommit": git("rev-parse", "HEAD"), "startedUtc": started.isoformat(), "inputTrees": trees,
     "command": ["./gradlew", *args], "activation": "source /workspace/setup/android-env.sh",
     "runnerSha256": sha(Path(__file__)), "initScriptSha256": {str(p): sha(p) for p in scripts},
+    "selectionConfig": {"path": str(SELECTION_CONFIG), "sha256": sha(SELECTION_CONFIG)} if SELECTION_CONFIG else None,
     "selectors": selectors, "candidateClasses": list(names), "workerPolicy": "4 forks / 3GiB / forkEvery8",
     "excludedScreenshotExporters": {"VisualReviewCaptureTest": 2, "Units35ChunkCaptureTest": 2, "Units610ChunkCaptureTest": 10, "Units1115GapCaptureTest": 2}}
 save("CONTEXT.json", context)

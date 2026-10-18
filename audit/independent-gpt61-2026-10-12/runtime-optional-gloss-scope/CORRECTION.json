@@ -1452,5 +1452,31 @@
   "productionChanges": false,
   "formalAcceptance": false,
   "originalUnit7RestoreCause": "UNCONFIRMED",
-  "runtime": "NOT_RUN"
+  "runtime": {
+    "sourceCommit": "b8f5929e2b275152cd19cd7dc38de1ff80c03b90",
+    "manifest": "INITIAL/MANIFEST.json",
+    "testCounts": {
+      "reported": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 3,
+    "taskStatuses": {
+      "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+      "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+      "lintDebug": "> Task :app:lintDebug",
+      "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+    },
+    "lint": {
+      "Fatal": 0,
+      "Error": 0,
+      "Warning": 20,
+      "Information": 0,
+      "Ignore": 0
+    },
+    "eventsMatchFreshXml": true,
+    "completeSuite": false
+  }
 }

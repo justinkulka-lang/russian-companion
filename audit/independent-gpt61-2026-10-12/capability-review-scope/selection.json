@@ -1,0 +1,16 @@
+{
+  "selectedMethods": {
+    "Aud53CorrectionTest": [
+      "livePackKeepsTheCorrectedClaimsAndRejectsEmbeddedMedia",
+      "falseSelfPairUnsupportedSwapAndCoOccurrenceFail",
+      "embeddedMediaCannotEnterGovernedReadyRussianSpans",
+      "semanticDuplicatesDoNotSatisfyDistinctCheckMinimums",
+      "exactPairMemorizationCannotClearAProductiveCapability",
+      "headwordSelectionCannotClearParticipleStress",
+      "fieldLabelRecallCannotClearDictionaryUse",
+      "greetingRecognitionCannotClearLetterWriting",
+      "wrongIdentityAndWorkflowFieldsFailClosed",
+      "governanceStaysUnapproved"
+    ]
+  }
+}

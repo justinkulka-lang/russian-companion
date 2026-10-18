@@ -1,0 +1,26 @@
+{
+  "sourceBefore": "b8f5929e2b275152cd19cd7dc38de1ff80c03b90",
+  "originalRuntimeSource": "41e84c0b00605845dacb3a611d742ae72639526e",
+  "beforeMatchesOriginalFailureSource": true,
+  "beforeSha256": "734c8d0017fb7a09ceaa79ad522fe1bd521293472ecbe4d9f34491e579368d31",
+  "afterSha256": "8ca8406a94078200b870d0dfc2f17e53885d233bb9fc68aab69963372a02395c",
+  "originalMethod": "    @Test\n    fun wrongIdentityAndWorkflowFieldsFailClosed() {\n        val pack = pack()\n        val clock = pack.sourceCapabilities.single { it.supportedClaim == \"productive-clock-time\" }\n        listOf(\n            clock.copy(id = \"cap-aud53-source\", sourceId = \"src-openrussian-50e210c4\"),\n            clock.copy(id = \"cap-aud53-revision\", sourceRevision = \"1\"),\n            clock.copy(id = \"cap-aud53-record\", sourceRecordId = \"other-record\"),\n            clock.copy(id = \"cap-aud53-hash\", sourceHash = \"0\".repeat(64)),\n            clock.copy(id = \"cap-aud53-span\", exactSpan = \"not the frozen span\"),\n            clock.copy(id = \"cap-aud53-unit\", unitNumber = 16, objectiveId = \"obj-u16-complements\"),\n            clock.copy(id = \"cap-aud53-objective\", objectiveId = \"obj-u17-age\"),\n            clock.copy(id = \"cap-aud53-claim\", supportedClaim = \"age\"),\n        ).forEach { broken ->\n            val replaced = pack.copy(\n                sourceCapabilities = pack.sourceCapabilities.filter { it.id != clock.id } + broken,\n            )\n            val found = errors(replaced)\n            assertTrue(broken.id, found.any {\n                it.contains(\"revision does not match the frozen record\") ||\n                    it.contains(\"span is not in the frozen record\") ||\n                    it.contains(\"wrong unit or objective\") ||\n                    it.contains(\"does not clear\")\n            })\n            assertTrue(broken.id, unresolved(replaced, 17).contains(\"productive-clock-time\"))\n        }\n\n        val stamped = pack.copy(\n            units = pack.units.map { current ->\n                if (current.number == 25) current.copy(readiness = \"CONTENT_COMPLETE_REVIEW_PENDING\") else current\n            },\n            unitReviews = pack.unitReviews.map { it.copy(status = \"APPROVED\") },\n            provenanceRecords = pack.provenanceRecords.map { it.copy(reviewStatus = \"APPROVED\") },\n            admissions = pack.admissions.copy(penguinProseAssets = 9, generatedRussianWords = 4),\n        )\n        assertFalse(unresolved(stamped, 25).contains(\"productive-diminutive\"))\n        assertFalse(unresolved(stamped, 25).contains(\"documented-name-form\"))\n        assertFalse(unresolved(stamped, 27).contains(\"participle-stress\"))\n        assertFalse(unresolved(stamped, 30).contains(\"dictionary-use\"))\n        assertEquals(\"DEVELOPMENT\", stamped.unit(25)!!.installState)\n        val decision = advancementDecision(stamped, stamped.unit(25)!!, learner(stamped, 25))\n        assertTrue(decision.remaining.joinToString(\"\\n\"), decision.allowed)\n\n        val keyword = pack.copy(\n            sourceCapabilities = pack.sourceCapabilities + clock.copy(\n                id = \"cap-aud53-cooccurrence\",\n                exactSpan = \"productive diminutive co-occurrence\",\n                unitNumber = 25,\n                objectiveId = \"obj-u25-nickname-rule\",\n                supportedClaim = \"productive-diminutive\",\n                sourceHash = \"1\".repeat(64),\n            ),\n        )\n        assertFalse(unresolved(keyword, 25).contains(\"productive-diminutive\"))\n        assertFalse(unresolved(keyword, 25).contains(\"documented-name-form\"))\n    }\n\n",
+  "allOtherMethodBodiesUnchanged": true,
+  "originalAssertionExpressionsRetained": true,
+  "positivePredicateScope": "ordinaryUnitRequirements on synthetic unbound current learner view, not full advancement or genuine completion",
+  "addedNegatives": [
+    "Full advancement refused with exactly assigned-review reason",
+    "Generated Russian admission counter rejected",
+    "Penguin prose admission counter rejected"
+  ],
+  "initialClassPartialScope": {
+    "reported": 10,
+    "SUCCESS": 9,
+    "FAILURE": 1
+  },
+  "originalFailureEvidence": "../broader-regression-2026-10-18/INITIAL/ABORTED_MANIFEST.json + FORENSIC_PARTIAL_RESULTS.json + binary archive",
+  "productionChanges": false,
+  "newTestAnnotations": 0,
+  "formalAcceptance": false,
+  "runtime": "NOT_RUN"
+}
