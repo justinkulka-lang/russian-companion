@@ -1,0 +1,11 @@
+# Batch A source requirements and assigned review
+
+Parent f1bf517bf42dd5061fb6424673f0a1f479a8ee2b. Two retained original failures are investigated here; all cancelled-run binary evidence remains unchanged. No production, assets, native content, rights, source admissions, policy or schema edits.
+
+V2ProgressRules.kt separates ordinaryUnitRequirements from currentUnitRequirements and advancementDecision. The existing synthetic learner lists unit-local steps/check IDs/book attestation, but has no assigned cumulative review or prior completed-unit claims. Its positive assertions can prove ordinary source-completeness predicates only. For Units7,16,17,18,19,20, retain those positives and additionally require full advancement to refuse exactly the missing assigned earlier-objective review. No completion binding is fabricated.
+
+Source-removal negatives now use ordinary requirements so a missing review cannot mask a missing-source regression. All existing source forgery, identity, cross-binding, wrong-span, explicit-pair and source-specific reason assertions remain. The redundant clock-expression-recognition capability removal must leave ordinary requirements satisfied but still refuse full advancement. For the other removals, full advancement must retain every ordinary blocker plus the assigned-review blocker.
+
+The three unaffected methods selected cover license routes, exact source identity/cross-claim substitutions and generated-Russian/network/governance prohibitions. The sixth method, batchAExplanationsNameTheKeyedRelationshipAndRejectASwap, is explicitly NOT SELECTED and remains OPEN unchanged: historical41 versus current47 and changed question/motion constructs require separate source-context review. See capability-review-scope/BATCH_A_ITEM_SCOPE_PENDING.json. This is five selected methods, not a complete class/suite or formal pedagogical acceptance.
+
+Four screenshot exporters remain excluded: VisualReviewCaptureTest(2), Units35ChunkCaptureTest(2), Units610ChunkCaptureTest(10), Units1115GapCaptureTest(2). Commands, exact committed inputs, fresh XML/events, lint and gate attachment outcomes will be retained under INITIAL. No APK assembly/signing. Final independent comprehensive audit precedes actual Galaxy S26 Ultra airplane-mode/reboot acceptance, which remains outstanding.

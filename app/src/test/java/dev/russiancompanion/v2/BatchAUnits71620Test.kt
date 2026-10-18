@@ -9,6 +9,7 @@ import dev.russiancompanion.v2.curriculum.V2ProvenanceRecord
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.unit
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
@@ -120,29 +121,32 @@ class BatchAUnits71620Test {
         val pack = pack()
         listOf(16, 18, 19, 20).forEach { number ->
             assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(number)!!.readiness)
-            val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
+            val decision = ordinaryUnitRequirements(pack, pack.unit(number)!!, learner(pack, number))
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            assertAssignedReviewStillRequired(pack, number)
         }
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(7)!!.readiness)
-        val unitSeven = advancementDecision(pack, pack.unit(7)!!, learner(pack, 7))
+        val unitSeven = ordinaryUnitRequirements(pack, pack.unit(7)!!, learner(pack, 7))
         assertTrue(unitSeven.remaining.joinToString("\n"), unitSeven.allowed)
+        assertAssignedReviewStillRequired(pack, 7)
         assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(7)!!).isEmpty())
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(17)!!.readiness)
-        val unitSeventeen = advancementDecision(pack, pack.unit(17)!!, learner(pack, 17))
+        val unitSeventeen = ordinaryUnitRequirements(pack, pack.unit(17)!!, learner(pack, 17))
         assertTrue(unitSeventeen.remaining.joinToString("\n"), unitSeventeen.allowed)
+        assertAssignedReviewStillRequired(pack, 17)
         assertTrue(V2Validator.contentCompletenessErrors(pack, pack.unit(17)!!).isEmpty())
         val strippedManner = pack.copy(
             sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "bounded-manner-adverb-formation" },
         )
-        val paradigm = advancementDecision(strippedManner, strippedManner.unit(7)!!, learner(strippedManner, 7))
+        val paradigm = ordinaryUnitRequirements(strippedManner, strippedManner.unit(7)!!, learner(strippedManner, 7))
         assertFalse(paradigm.allowed)
         assertTrue(paradigm.remaining.any { it.contains("bounded manner-adverb formation") })
         val strippedClock = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "productive-clock-time" })
-        val clock = advancementDecision(strippedClock, strippedClock.unit(17)!!, learner(strippedClock, 17))
+        val clock = ordinaryUnitRequirements(strippedClock, strippedClock.unit(17)!!, learner(strippedClock, 17))
         assertFalse(clock.allowed)
         assertTrue(clock.remaining.any { it.contains("productive clock-time") })
         val strippedDate = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.supportedClaim != "calendar-date" })
-        val dateDecision = advancementDecision(strippedDate, strippedDate.unit(17)!!, learner(strippedDate, 17))
+        val dateDecision = ordinaryUnitRequirements(strippedDate, strippedDate.unit(17)!!, learner(strippedDate, 17))
         assertFalse(dateDecision.allowed)
     }
 
@@ -169,11 +173,15 @@ class BatchAUnits71620Test {
                 assertTrue(errors.joinToString("\n"), errors.any { capability.id in it || mutated.supportedClaim in it })
             }
             val absent = pack.copy(sourceCapabilities = pack.sourceCapabilities.filter { it.id != capability.id })
-            val absentDecision = advancementDecision(absent, absent.unit(capability.unitNumber)!!, learner(absent, capability.unitNumber))
+            val absentDecision = ordinaryUnitRequirements(absent, absent.unit(capability.unitNumber)!!, learner(absent, capability.unitNumber))
             if (claim == "clock-expression-recognition") {
                 assertTrue(absentDecision.remaining.joinToString("\n"), absentDecision.allowed)
+                assertAssignedReviewStillRequired(absent, capability.unitNumber)
             } else {
                 assertFalse(absentDecision.allowed)
+                val full = advancementDecision(absent, absent.unit(capability.unitNumber)!!, learner(absent, capability.unitNumber))
+                assertFalse(full.allowed)
+                assertEquals(absentDecision.remaining + "Complete the assigned earlier-objective review", full.remaining)
             }
         }
         val adverb = pack.provenanceRecords.first { it.objectiveId == "obj-u7-adverb" && it.shippedText == "быстро" }
@@ -337,6 +345,13 @@ class BatchAUnits71620Test {
                 )
             }
         }
+    }
+
+    /** This synthetic view has ordinary evidence only; it never carries an assigned review. */
+    private fun assertAssignedReviewStillRequired(pack: V2CurriculumPack, number: Int) {
+        val decision = advancementDecision(pack, pack.unit(number)!!, learner(pack, number))
+        assertFalse(decision.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), decision.remaining)
     }
 
     private fun pendingExplanation(pack: V2CurriculumPack, item: V2CheckItem, text: String): V2ProvenanceRecord? =

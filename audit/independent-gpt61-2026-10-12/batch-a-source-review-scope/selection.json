@@ -1,0 +1,11 @@
+{
+  "selectedMethods": {
+    "BatchAUnits71620Test": [
+      "wikipediaLicenseRouteIsNotTheWikibooksSnapshot",
+      "exactSpanIdentityRejectsKeywordAndCrossClaimSubstitution",
+      "partialUnitsStayBlockedAndClosedChainsCanBeReviewPending",
+      "admittedCapabilitiesRejectForgeryCrossBindingAndWrongSpans",
+      "generatedRussianAndInternetStayClosed"
+    ]
+  }
+}
