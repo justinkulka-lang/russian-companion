@@ -1388,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestPhaseSourceReviewCheckpoint",
-    "priorCheckpoint": "latestSourceGuardCheckpoint",
-    "next": "Investigate two retained BatchE source/review cases, preserving later assertions and explicit source blockers. Refresh discovery/broader regression before final independent comprehensive audit; physical acceptance last.",
+    "checkpoint": "latestBatchESourceReviewCheckpoint",
+    "priorCheckpoint": "latestPhaseSourceReviewCheckpoint",
+    "next": "Investigate Aud44 source-versus-review fixtures and later assertions; keep predicate/digest cases separate. Preserve all16 OPEN failures; refresh discovery/broader regression before final independent comprehensive audit. Physical acceptance last.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1850,5 +1850,40 @@
     "originalUnit7RestoreCause": "UNCONFIRMED",
     "githubConnection": "RECOVERED_SOURCE_GUARD_DELIVERY_CONFIRMED",
     "next": "BatchE source versus assigned-review fixtures; see NEXT_REVIEW.md"
+  },
+  "latestBatchESourceReviewCheckpoint": {
+    "path": "audit/independent-gpt61-2026-10-12/batch-e-source-review-scope",
+    "sourceCommit": "41ccad25c5988bf5e3398e9d47f6c03511781bb7",
+    "manifest": "batch-e-source-review-scope/INITIAL/MANIFEST.json",
+    "testCounts": {
+      "reported": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 1,
+    "priorSeparatePhaseScope": {
+      "sourceCommit": "987991328316b8a99ebb1bfa560183c1b3a32afd",
+      "manifest": "phase-source-review-scope/INITIAL/MANIFEST.json",
+      "testCounts": {
+        "reported": 6,
+        "passed": 6,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "classes": 2
+    },
+    "retainedInitialFailures": 32,
+    "engineeringScopeReconciled": 16,
+    "openInitialFailures": 16,
+    "currentLiteralAnnotations": 1239,
+    "newFullDiscoveryOrBroadCompletion": false,
+    "formalAcceptance": false,
+    "auditReady": false,
+    "originalUnit7RestoreCause": "UNCONFIRMED",
+    "githubConnection": "RECOVERED",
+    "next": "Inspect retained Aud44 ordinary/source/review fixtures, preserving later assertions and all16 OPEN cases; see NEXT_REVIEW.md"
   }
 }
