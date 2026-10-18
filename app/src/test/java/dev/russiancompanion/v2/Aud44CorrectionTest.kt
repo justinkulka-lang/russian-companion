@@ -186,7 +186,14 @@ class Aud44CorrectionTest {
                 objectiveId = "obj-u17-clock-answers"), copy)
         }
         val cap = forged.sourceCapabilities.single { it.id == "cap-u17-productive-clock-clock-question" }
-        val host = records.first()
+        val host = live.provenanceRecords.single { it.itemId == "prov-ex-u17-clock-0-ru" }
+        assertEquals(host, forged.provenanceRecords.single { it.itemId == host.itemId })
+        assertEquals(live.provenanceRecords.size + records.size, forged.provenanceRecords.size)
+        assertEquals(source.sourceId, host.sourceId)
+        assertEquals(source.sourceRevision, host.sourceRevision)
+        assertEquals(source.sourceRecordId, host.sourceRecordId)
+        assertEquals(source.sourceHash, host.sourceHash)
+        assertEquals(source.exactSpan, host.originalSourceText)
         assertEquals(host.sourceId, cap.sourceId)
         assertEquals(host.sourceRevision, cap.sourceRevision)
         assertEquals(host.sourceRecordId, cap.sourceRecordId)
@@ -375,9 +382,16 @@ class Aud44CorrectionTest {
             )
         }
         val host = if (questionPacket) {
-            cloned.first().also {
-                assertEquals("src-content-audit-research", it.sourceId)
-                assertEquals("ca-rule-context:${template.id}" + suffix, it.sourceRecordId)
+            // The assessed English packet and the public primary source have distinct
+            // identities. Reuse the actual primary record without inventing a participant.
+            pack.provenanceRecords.single { it.itemId == "prov-ex-u17-clock-0-ru" }.also {
+                assertEquals(17, it.unitNumber)
+                assertEquals(source.objectiveId, it.objectiveId)
+                assertEquals(source.sourceId, it.sourceId)
+                assertEquals(source.sourceRevision, it.sourceRevision)
+                assertEquals(source.sourceRecordId, it.sourceRecordId)
+                assertEquals(source.sourceHash, it.sourceHash)
+                assertEquals(source.exactSpan, it.originalSourceText)
             }
         } else cloned.first { it.originalSourceText == source.exactSpan }
         val itemId = "u17-i-impersonate-$sourceClaim"
@@ -394,7 +408,7 @@ class Aud44CorrectionTest {
             id = "cap-u17-productive-clock-$sourceClaim",
             sourceId = host.sourceId,
             sourceRevision = host.sourceRevision,
-            sourceRecordId = host.sourceRecordId,
+            sourceRecordId = host.sourceRecordId + if (questionPacket) suffix else "",
             sourceHash = host.sourceHash,
             exactSpan = host.originalSourceText,
             unitNumber = 17,

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.BatchBUnits2125Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-18T19:27:48.106Z" hostname="d0aced911621" time="28.777">
+  <properties/>
+  <testcase name="retainedCitationDonorStaysExactWhileIndependentObjectTransferKeepsItsRealContext" classname="dev.russiancompanion.v2.BatchBUnits2125Test" time="4.672"/>
+  <testcase name="reflexiveSentencePairRejectsIsolatedTokenAndWifeCitation" classname="dev.russiancompanion.v2.BatchBUnits2125Test" time="24.099"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

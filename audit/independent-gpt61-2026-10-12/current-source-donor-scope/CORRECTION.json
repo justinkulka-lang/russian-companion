@@ -4,7 +4,7 @@
   "classes": {
     "Aud44CorrectionTest": {
       "beforeSha256": "cfd750a54efdb6e4ee1120e0187b3bf84ca0d1e2eb38f322cc7f147257199373",
-      "afterSha256": "d43956626880c5c5ea4797a4a216b7b5a8d039722accd6c3d7a6a9a141aa64f2",
+      "afterSha256": "fa7cd507f97591f6a9d2ae8eb83a26eb2b7642ee43ab613b0f54705a155204df",
       "allOriginalTestMethodBodiesExact": true,
       "originalMethodSha256": {
         "threeAdverbGlossPairsCannotClearTheParadigm": "908f39d234db30f7b2fbb1b392cbbf80c8a4d55ed6b8c4a9820792414a1be8f8",
@@ -18,7 +18,7 @@
         "sharedLicenseNoticeDoesNotAnnounceUnitReadiness": "40005648253e61c0a68d7a04d0e9e2b53fd4aae8b1ec056d09d3da27754ad55e",
         "reviewsMappingsAndReleaseStayUnsigned": "9bf9a867ae5b71660dff3468952321cf8998c28a613a45b304fea24478fe924b"
       },
-      "helperChanges": "Exact current clock-question packet only; all other public-span donor branches and cloning assertions retained",
+      "helperChanges": "Current pinned assessment packet cloned; actual existing public primary record retained unchanged as the forged capability source; other donors unchanged.",
       "newTestMethods": [
         "currentQuestionImpersonationUsesOnlyTheRealPinnedPacketWithoutInventingAHost"
       ]
@@ -51,5 +51,13 @@
   "productionChanges": false,
   "archiveUsedAsCurrentAcceptance": false,
   "formalAcceptance": false,
-  "runtime": "PENDING_INITIAL"
+  "runtime": "PENDING_RETRY",
+  "initialRuntime": {
+    "manifest": "INITIAL/MANIFEST.json",
+    "sourceCommit": "77dbe9e75053b6d0b41c5d11f6465164041ab374",
+    "reported": 10,
+    "passed": 8,
+    "failed": 2,
+    "diagnosis": "Authored-English packet was incorrectly reused as the capability source host; production correctly refused corrected intake through a different branch. Original no-independent-admission assertions retained."
+  }
 }
