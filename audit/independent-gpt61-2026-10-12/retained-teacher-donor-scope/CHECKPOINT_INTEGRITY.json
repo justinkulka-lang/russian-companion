@@ -1,0 +1,42 @@
+{
+  "sourceBeforeReceipt": "a17cf575c5118a041b914d59524b575df6eb4c1a",
+  "actualRuntimeSource": "a17cf575c5118a041b914d59524b575df6eb4c1a",
+  "runtimeContext": "INITIAL/CONTEXT.json",
+  "unchangedProductionSourceFrom": "8de0598617a16bf29d2b3142a1b6ca8ebc70777e",
+  "unchangedTrees": {
+    "app/src/main": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "runnerAndInitHashesVerified": true,
+  "unchangedMethodHashesVerified": true,
+  "evidenceSha256": {
+    "CORRECTION.json": "14a6c4b8a52258bc70431a7eab2769ca4eee4397b133500da0f9fcedaa283468",
+    "CURRENT_REGRESSION_RECONCILIATION.json": "cda418649e92c3a66c8c550f9812a396f80814442449232f0d8cb5e53a3d093a",
+    "INITIAL/CONTEXT.json": "938ec17cd6231f88e62a9abf0dc8357206cdcf3c48f1d40448f85c6cf7193a99",
+    "INITIAL/EVENTS.jsonl": "155ef7f14ef2c887c06942d6b6b7cc9bc38cdb9d7a3e9b3fedff3de2ce376fca",
+    "INITIAL/LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "INITIAL/MANIFEST.json": "e243c3ba48b77db22a30731c7a71b46e18cad3bbeaab9e0c930b463aeba5d525",
+    "INITIAL/RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "INITIAL/RUN.log": "8f91f153f2a5281cff8d93575abb6c4f36c140956dae99898f58127cc4a60597",
+    "INITIAL/SHA256.json": "a1d8e6643d69cc8aaf16eee3c8180cd08bc45fed13ed7d91e1ce3936a95292c8",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.ContentAuditCorrectionTest.xml": "c114d64760ca46d84c3bb8209757f5b1e777b4da67fbfe3214f5ff8008e86ecc",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.Unit6AnimacyTransferTest.xml": "37f66b6be93cf150ec353bacbed19b67c7f18edec22a38d20b15eee7b275fcd2",
+    "NEXT_REVIEW.md": "b60f25afa37d0e8612f9d890b092828f1aa67d840491c659a784174918b9f646",
+    "SOURCE_AND_SCOPE.md": "1b1f0f6b22cfec856e60f549ead1412826ebe45422f4d579f1022be36ecdc044",
+    "SOURCE_REVIEW.json": "7404a21c1e3bec65d6fb3d2d4abc5837f06dec9f0911ea192340c3d6a9059941",
+    "selection.json": "10ba67121241a02fcbc82f27f811492dbf542def541858a9a3f656674e835eca",
+    "test-candidates.gradle": "8149d3ec99bc1166d3c3e470c26dd448ef74727550230986bf9f01dbeb1898fb"
+  },
+  "instructionSha256": {
+    "AGENTS.md": "60b9cee9f0e8e849517d0a2fbb2dd13995b04bf6098ae8fd1052807895f0d67c",
+    "audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md": "8334af8251a7edb4f82daf5ff21a385fb4ea3b2157c7fbe12d9a8767abd18ab6",
+    "audit/content-corrections/CODEX_CHECKPOINT_2026-10-12.md": "01da7cc9ecfc2f1dd78e85de8e4a99ea5d75c049dca20b34beac7981d4761836",
+    "audit/independent-gpt61-2026-10-12/CURRENT_FINDING_STATUS.json": "cec6ddb92c981bcdcc37c8a306e74ee659bc03408d3f9174010df02497e4e621"
+  },
+  "original32FailuresPreserved": true,
+  "scopeNotSummedWithOthers": true,
+  "completeSuite": false,
+  "formalAcceptance": false
+}
