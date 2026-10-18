@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.ContentAuditCorrectionTest" tests="31" skipped="31" failures="0" errors="0" timestamp="2026-10-18T13:14:36.870Z" hostname="d0aced911621" time="0.006">
+  <properties/>
+  <testcase name="spellingExplanationRecordsResolveRetainedFormsAndStayPending" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="possessiveInstructionLabelsFormsAndWorksTheRetainedFeminineCaseChange" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="instrumentalAdjectiveExplanationPrecedesTheCaseChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="possessiveFeedbackAndRemediationExplainTheSameGenderNumberAndCaseRule" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitEightTeachingWorksTheNounPluralAndSeparatesOtherPatterns" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="purposeRegisterExplanationPrecedesTheOrdinaryPurposeChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="spellingQuestionsNameTheActualFormEvidenceAndRemediationRetainsAllTeaching" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="adjectivePluralFormPrecedesTheSpellingChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="instrumentalNounExplanationPrecedesTheCaseChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitEightExplanationCoverageStaysPendingAndRejectsTamperedHashes" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unit27AdvancesWithoutOptionalPresentPassive" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="aspectCounterpartExplanationPrecedesThePartnerChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="spellingInstructionExplainsFormsBeforePracticeAndWorksTheAccusative" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="packValidatesAndRejectsTheAuditedFalseKeys" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitEightChecksAssessNominativeFormsAndRetainCompleteRemediation" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitTwelveAspectFeedbackExplainsBothOptionsAndRemediationRetainsThePairs" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitElevenChecksPastAgreementBeforeAspectIntroductionWithoutLoweringItsGate" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="possessiveWorkedExplanationRecordsStayPendingAndRejectAChangedHash" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="gatingChangeInvalidatesUnitAndPackIdentitiesOnly" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="reorderedSessionsRejectResumeIdentityBoundToThePreviousPosition" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="nounPluralFormAndSevenLetterRulePrecedeTheChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="accusativeDeclensionExplanationPrecedesTheNounChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitTwelveAspectTeachingLabelsPairsAndAvoidsAnUnfinishedActionRule" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unitTwelveAspectCoverageResolvesOriginalPairsAndRejectsTamperedHashes" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

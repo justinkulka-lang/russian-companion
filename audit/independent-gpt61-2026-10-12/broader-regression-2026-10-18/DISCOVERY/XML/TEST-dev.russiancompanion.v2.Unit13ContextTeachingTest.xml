@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit13ContextTeachingTest" tests="10" skipped="10" failures="0" errors="0" timestamp="2026-10-18T13:14:37.039Z" hostname="d0aced911621" time="0.007">
+  <properties/>
+  <testcase name="wrongReportedEveningReturnsFromCompleteRepairToTheSameCheck" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="exactTwoSessionWhitelistPreservesNativeScoredRecordsPoliciesAndEarlierPastCorrection" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="oldGuidedPositionsCannotResumeAsDifferentTeachingCards" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="wrongEnglishBackshiftLabelReturnsFromCompleteRepairToTheSameCheck" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="wrongPerfectivePartnerReturnsFromCompleteRepairToTheSameCheck" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="wrongImperfectivePartnerReturnsFromCompleteRepairToTheSameCheck" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="oldAnswersStayRawButDoNotSupplyChangedInstructionCredit" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="bothChainsTeachBeforePracticeAndRepairEveryOriginalExample" classname="dev.russiancompanion.v2.Unit13ContextTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" tests="11" skipped="11" failures="0" errors="0" timestamp="2026-10-18T13:14:37.663Z" hostname="d0aced911621" time="0.0">
+  <properties/>
+  <testcase name="catalogReachabilityCountsOrphansSharesAndIntraUnitDuplicatesSeparately" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="matrixUsesCanonicalDigestsReviewsAndDoesNotInventApproval" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="keywordTextBookAttestationAndCountersDoNotClearRealBlockers" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unsupportedOrUntaughtObjectivesCannotAdvanceAndInstallClaimsStayUnapproved" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="committedReportsMatchTheGeneratorAndStayByteIdentical" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="droppedOrDuplicatedUnitsFailClosed" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="narrowMarkerChecksDoNotClaimComprehensiveInspection" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="aMissingManifestIsNotReportedAsAReviewPacket" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="sourceSnapshotDoesNotAttestToAnEphemeralMergedManifest" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="notPreparedUnitsCannotAdvanceAndReadinessChangeDoesNotClearOtherBlockers" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unavailableStepsSplitContentFromAssetAndLocalExperience" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

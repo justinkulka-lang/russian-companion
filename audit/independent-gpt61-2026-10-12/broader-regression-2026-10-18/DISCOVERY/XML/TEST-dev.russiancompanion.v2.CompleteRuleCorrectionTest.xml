@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.CompleteRuleCorrectionTest" tests="5" skipped="5" failures="0" errors="0" timestamp="2026-10-18T13:14:37.504Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="completeChoicesExplainTheCasesAndAllTeachingPrecedesPractice" classname="dev.russiancompanion.v2.CompleteRuleCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="historicalFragmentAttemptIsRetainedButCannotCreditTheCompleteRule" classname="dev.russiancompanion.v2.CompleteRuleCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext" classname="dev.russiancompanion.v2.CompleteRuleCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="availabilityPlayerShowsCompleteRulesWithItsFullRussianCue" classname="dev.russiancompanion.v2.CompleteRuleCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="possessionPlayerShowsCompleteRulesWithItsFullRussianCue" classname="dev.russiancompanion.v2.CompleteRuleCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

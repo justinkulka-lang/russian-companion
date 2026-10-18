@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest" tests="4" skipped="4" failures="0" errors="0" timestamp="2026-10-18T13:14:37.631Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="coordinatedApplicationAndKeyEditsCannotMakeLivingPast" classname="dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="historicalOppositeLabelAttemptSurvivesButCannotCreditTheReplacement" classname="dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="creditedCheckMustInterpretADistinctAdmittedFormRatherThanTheOppositeLabel" classname="dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="playerRejectsPastLabelForLivingAndKeepsTheCorrectExplanation" classname="dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

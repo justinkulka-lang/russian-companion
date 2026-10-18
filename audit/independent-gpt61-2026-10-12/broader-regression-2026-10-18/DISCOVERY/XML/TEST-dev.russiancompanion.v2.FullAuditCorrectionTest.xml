@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.FullAuditCorrectionTest" tests="12" skipped="12" failures="0" errors="0" timestamp="2026-10-18T13:14:37.517Z" hostname="d0aced911621" time="0.02">
+  <properties/>
+  <testcase name="f04_productionInstallAndReleaseValidationStayClosed" classname="dev.russiancompanion.v2.FullAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="f08_and_f12_restoreOutcomesResetTheCoordinatorAndCleanStaging" classname="dev.russiancompanion.v2.FullAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="f02_correctlyHashedInvalidProfilesAreRejectedBeforeMutation" classname="dev.russiancompanion.v2.FullAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="f05_consecutiveDuplicatesAreSuppressedAndTheFinalSelectionSurvivesReload" classname="dev.russiancompanion.v2.FullAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="f10_repeatedTapsDuringADelayedWriteLockTheItem" classname="dev.russiancompanion.v2.FullAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="f11_completionValidationReadsAndIdentifiesOffTheMainThread" classname="dev.russiancompanion.v2.FullAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="f11_delayedLearnerReadLeavesTheMainThreadFree" classname="dev.russiancompanion.v2.FullAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="f06_legacyStepRowsDoNotCountAsCurrentCompletion" classname="dev.russiancompanion.v2.FullAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="f01_advancementSavesTheNextPositionWithItsDigestAndContinueSurvivesRestart" classname="dev.russiancompanion.v2.FullAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="f09_savedNotesAndTutorQuestionsRemainReadableAfterRestart" classname="dev.russiancompanion.v2.FullAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="f01_unverifiedPositionDoesNotMutateTheProfile" classname="dev.russiancompanion.v2.FullAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="f07_stepIdentityCoversDisplayedDependenciesAndFailsClosed" classname="dev.russiancompanion.v2.FullAuditCorrectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

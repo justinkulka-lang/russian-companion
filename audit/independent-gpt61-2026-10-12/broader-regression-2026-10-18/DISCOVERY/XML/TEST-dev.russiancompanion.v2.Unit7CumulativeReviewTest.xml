@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit7CumulativeReviewTest" tests="7" skipped="7" failures="0" errors="0" timestamp="2026-10-18T13:14:37.547Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="placementWithTaughtUnit1ButUntaughtUnit6RepairsTheMissingOwnerInsteadOfUnit1" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="actualUnit7ContinueInanimateCaseCueTeachingPracticeReturnAndAdvanceStayOnUnit7" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="heldUnit7WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching" classname="dev.russiancompanion.v2.Unit7CumulativeReviewTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

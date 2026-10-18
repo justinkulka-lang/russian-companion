@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.CumulativeReviewSelectionTest" tests="6" skipped="6" failures="0" errors="0" timestamp="2026-10-18T13:14:37.303Z" hostname="d0aced911621" time="0.002">
+  <properties/>
+  <testcase name="genuineSchemaOneHistoryKeepsItsExactIdentityAndAcceptedCompletionSnapshot" classname="dev.russiancompanion.v2.CumulativeReviewSelectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="newAssignmentIsRecentAwareImmutableAndRequiresFreshAnswersAcrossBackupAndEpoch" classname="dev.russiancompanion.v2.CumulativeReviewSelectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="leastRecentAndUnknownHistoryUseAuthoredCandidateOrderRatherThanIdentifiers" classname="dev.russiancompanion.v2.CumulativeReviewSelectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="optionalGuidedStaleUnorderedForgedAndWrongContextRowsDoNotRankCandidates" classname="dev.russiancompanion.v2.CumulativeReviewSelectionTest" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase name="newestCurrentMissWinsAndLaterCorrectAnswerResolvesIt" classname="dev.russiancompanion.v2.CumulativeReviewSelectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unknownAssignmentVersionsFailClosedAndUntaughtOwnersStillCannotBeSelected" classname="dev.russiancompanion.v2.CumulativeReviewSelectionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

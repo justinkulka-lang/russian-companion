@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit29InstructionTest" tests="5" skipped="5" failures="0" errors="0" timestamp="2026-10-18T13:14:37.209Z" hostname="d0aced911621" time="0.0">
+  <properties/>
+  <testcase name="instructionSeparatesTimeMeaningAndClassifiesTheDisplayedForm" classname="dev.russiancompanion.v2.Unit29InstructionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="registerDoesNotReplaceActorSequenceOrEventMeaning" classname="dev.russiancompanion.v2.Unit29InstructionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="remediationRestoresEveryCardAndEveryExampleBeforePractice" classname="dev.russiancompanion.v2.Unit29InstructionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="independentlyAuthoredPendingCoveragePassesTheProductionValidator" classname="dev.russiancompanion.v2.Unit29InstructionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="punctuationExplainsBothBoundariesAndTheExceptions" classname="dev.russiancompanion.v2.Unit29InstructionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

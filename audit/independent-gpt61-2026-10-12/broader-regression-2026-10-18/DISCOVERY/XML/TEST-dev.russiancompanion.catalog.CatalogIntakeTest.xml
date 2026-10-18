@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.catalog.CatalogIntakeTest" tests="8" skipped="8" failures="0" errors="0" timestamp="2026-10-18T13:14:37.086Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="missingLicenseOrUnverifiedTextIsExcluded" classname="dev.russiancompanion.catalog.CatalogIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="catalogRegenerationPreservesTheCompleteBeginnerConductor" classname="dev.russiancompanion.catalog.CatalogIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="packagedAudioMatchesRecordedLicenseChainsAndStaysUnreleased" classname="dev.russiancompanion.catalog.CatalogIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="debugCiEvidenceStaysOutOfTheReleaseGate" classname="dev.russiancompanion.catalog.CatalogIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="anInstalledDropOfOneEligibleProposalMayReplaceTheSeed" classname="dev.russiancompanion.catalog.CatalogIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="installedDropMatchesPackagedAudioAndRecordsEveryIndexedFile" classname="dev.russiancompanion.catalog.CatalogIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="aCompleteProposalCanBeEligibleWithoutReplacingTheEmptyIntake" classname="dev.russiancompanion.catalog.CatalogIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="recordedSourceExclusionsStayOutOfThePackagedSeed" classname="dev.russiancompanion.catalog.CatalogIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
