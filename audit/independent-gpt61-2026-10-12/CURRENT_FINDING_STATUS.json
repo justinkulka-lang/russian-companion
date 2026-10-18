@@ -887,6 +887,43 @@
         "formalAcceptance": false,
         "completeSuite": false,
         "nextStaticInventory": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/NEXT_PREREQUISITE_INVENTORY.json"
+      },
+      "unit7AgreementPrerequisiteCorrection": {
+        "baselineCommit": "2ff71f197efb73d99662bc8a64180dc01a79aec3",
+        "implementationCommit": "7d92d8813e105932391448d94247534493337118",
+        "initialTestedCommit": "1e3000b7f3c936fd5dd5592fd66aaf5f036f4c7e",
+        "initialCounts": {
+          "reported": 29,
+          "passed": 28,
+          "failed": 1,
+          "errors": 0,
+          "skipped": 0
+        },
+        "isolatedTestedCommit": "dae490d3b89865f2a4bdd87997b6154a48cb675a",
+        "isolatedCounts": {
+          "reported": 1,
+          "passed": 1,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "finalTestedCommit": "b3b9197b325a6ae574dddc3fcbff2c56d5af686d",
+        "finalSeparateCounts": {
+          "reported": 8,
+          "passed": 8,
+          "failed": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "receipt": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/FINAL_VERIFICATION_MANIFEST.json",
+        "restoreInteraction": "UNCONFIRMED;see RESTORE_INTERACTION_FOLLOWUP.md",
+        "terminalCurrentPathPassedInInitialScope": true,
+        "originalProvenancePreserved": 6935,
+        "newPendingEnglishRecords": 8,
+        "currentProvenanceCount": 6943,
+        "newPolicyActivated": false,
+        "formalAcceptance": false,
+        "completeSuite": false
       }
     },
     {
@@ -1351,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestUnit13WiderReviewCheckpoint",
-    "priorCheckpoint": "latestUnit13ContextTeachingCheckpoint",
-    "next": "Inventory later coverage/source/rights/current taught eligibility before more engineering or integration. Final comprehensive independent audit before physical acceptance.",
+    "checkpoint": "latestUnit7AgreementTeachingCheckpoint",
+    "priorCheckpoint": "latestUnit13WiderReviewCheckpoint",
+    "next": "Broader regression with explicit discovery/exporter exclusions;preserve and investigate restore interaction and actual failures. Final comprehensive independent audit before physical acceptance.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1594,6 +1631,43 @@
     "originalProvenancePreserved": 6935,
     "formalAcceptance": false,
     "broaderIA003": "OPEN",
+    "completeSuite": false
+  },
+  "latestUnit7AgreementTeachingCheckpoint": {
+    "baselineCommit": "2ff71f197efb73d99662bc8a64180dc01a79aec3",
+    "implementationCommit": "7d92d8813e105932391448d94247534493337118",
+    "initialTestedCommit": "1e3000b7f3c936fd5dd5592fd66aaf5f036f4c7e",
+    "initialCounts": {
+      "reported": 29,
+      "passed": 28,
+      "failed": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "isolatedTestedCommit": "dae490d3b89865f2a4bdd87997b6154a48cb675a",
+    "isolatedCounts": {
+      "reported": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "finalTestedCommit": "b3b9197b325a6ae574dddc3fcbff2c56d5af686d",
+    "finalSeparateCounts": {
+      "reported": 8,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "receipt": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/FINAL_VERIFICATION_MANIFEST.json",
+    "restoreInteraction": "UNCONFIRMED;see RESTORE_INTERACTION_FOLLOWUP.md",
+    "terminalCurrentPathPassedInInitialScope": true,
+    "originalProvenancePreserved": 6935,
+    "newPendingEnglishRecords": 8,
+    "currentProvenanceCount": 6943,
+    "newPolicyActivated": false,
+    "formalAcceptance": false,
     "completeSuite": false
   }
 }

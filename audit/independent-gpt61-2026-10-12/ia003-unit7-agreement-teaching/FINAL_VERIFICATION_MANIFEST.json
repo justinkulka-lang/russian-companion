@@ -1,0 +1,122 @@
+{
+  "sourceContext": {
+    "sourceCommit": "b3b9197b325a6ae574dddc3fcbff2c56d5af686d",
+    "startedUtc": "2026-10-18T05:14:16.251002+00:00",
+    "command": "bash audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/verify.sh",
+    "inputTrees": {
+      "app/src/main": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+      "app/src/test": "cb4f3f3f34bb7076b3a4e6bb65e2dd9c105a4096",
+      "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+      "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+      "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+    },
+    "scriptSha256": "80c0d8ecc46105188ca27fe1f0d20f0ab5bb8e5058c4f0f9f236a658352f5bfd"
+  },
+  "exitCode": 0,
+  "testCounts": {
+    "reported": 8,
+    "passed": 8,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 1,
+  "tests": [
+    {
+      "class": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "name": "wrongNominativeChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "seconds": "14.424",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "name": "completeAgreementTeachingPrecedesPracticeAndRepairRestoresAllElevenExamples",
+      "seconds": "9.982",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "name": "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+      "seconds": "24.92",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "name": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+      "seconds": "17.814",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "name": "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+      "seconds": "0.195",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "name": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "seconds": "0.273",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "name": "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+      "seconds": "0.222",
+      "outcome": "PASSED",
+      "failureMessage": null
+    },
+    {
+      "class": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "name": "wrongGenitiveChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "seconds": "1.573",
+      "outcome": "PASSED",
+      "failureMessage": null
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "tests": "8",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-18T05:14:24.246Z",
+      "hostname": "d0aced911621",
+      "time": "70.598"
+    }
+  ],
+  "taskStatuses": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Information": 0,
+    "Ignore": 0
+  },
+  "completeSuite": false,
+  "separateScopesDoNotSum": true,
+  "excludedScreenshotExporters": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "apk": {
+    "assembly": "NOT_RUN",
+    "configuredIdentity": "dev.russiancompanion / 2.0.0-dev / code5",
+    "sha256": "NOT_RECORDED",
+    "signature": "NOT_RECORDED"
+  },
+  "releaseApproval": false
+}

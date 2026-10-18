@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit7AgreementTeachingTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-18T05:14:24.246Z" hostname="d0aced911621" time="70.598">
+  <properties/>
+  <testcase name="wrongNominativeChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer" classname="dev.russiancompanion.v2.Unit7AgreementTeachingTest" time="14.424"/>
+  <testcase name="completeAgreementTeachingPrecedesPracticeAndRepairRestoresAllElevenExamples" classname="dev.russiancompanion.v2.Unit7AgreementTeachingTest" time="9.982"/>
+  <testcase name="genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen" classname="dev.russiancompanion.v2.Unit7AgreementTeachingTest" time="24.92"/>
+  <testcase name="freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments" classname="dev.russiancompanion.v2.Unit7AgreementTeachingTest" time="17.814"/>
+  <testcase name="oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard" classname="dev.russiancompanion.v2.Unit7AgreementTeachingTest" time="0.195"/>
+  <testcase name="unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException" classname="dev.russiancompanion.v2.Unit7AgreementTeachingTest" time="0.273"/>
+  <testcase name="oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction" classname="dev.russiancompanion.v2.Unit7AgreementTeachingTest" time="0.222"/>
+  <testcase name="wrongGenitiveChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer" classname="dev.russiancompanion.v2.Unit7AgreementTeachingTest" time="1.573"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+System.logW: A resource failed to call SQLiteConnectionPool.close. 
+System.logW: A resource failed to call SQLiteConnection.close. 
+]]></system-err>
+</testsuite>
