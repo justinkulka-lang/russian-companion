@@ -9,6 +9,7 @@ import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
 import dev.russiancompanion.v2.curriculum.V2Validator
 import dev.russiancompanion.v2.curriculum.advancementDecision
+import dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements
 import dev.russiancompanion.v2.curriculum.unit
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonArray
@@ -196,8 +197,9 @@ class BatchECapabilityResearchTest {
             val learner = prepared(unit)
             if (unitNumber in closed) {
                 assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
-                val advanced = advancementDecision(pack, unit, learner)
+                val advanced = ordinaryUnitRequirements(pack, unit, learner)
                 assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
+                assertAssignedReviewStillRequired(pack, unit, learner)
             } else {
                 assertEquals("NOT_PREPARED", unit.readiness)
                 val blocked = advancementDecision(pack, unit, learner)
@@ -233,6 +235,10 @@ class BatchECapabilityResearchTest {
             val decision = advancementDecision(stripped, stripped.unit(unitNumber)!!, learner)
             assertFalse(decision.allowed)
             assertTrue(decision.remaining.joinToString("\n"), decision.remaining.any { it.contains(blockers.getValue(unitNumber)) })
+            val ordinary = ordinaryUnitRequirements(stripped, stripped.unit(unitNumber)!!, learner)
+            assertFalse(ordinary.allowed)
+            assertTrue(ordinary.remaining.joinToString("\n"), ordinary.remaining.any { it.contains(blockers.getValue(unitNumber)) })
+            assertEquals(ordinary.remaining + "Complete the assigned earlier-objective review", decision.remaining)
         }
     }
 
@@ -259,8 +265,9 @@ class BatchECapabilityResearchTest {
         val liveErrors = V2Validator.validate(pack).errors
         assertEquals(emptyList<String>(), liveErrors.filter { it.startsWith("Unit 17 is missing") })
         assertFalse(liveErrors.joinToString("\n"), liveErrors.any { it.contains("telling-time") || it.contains("weekday") || it.contains("age sources") })
-        val liveDecision = advancementDecision(pack, liveUnit, prepared(liveUnit))
+        val liveDecision = ordinaryUnitRequirements(pack, liveUnit, prepared(liveUnit))
         assertTrue(liveDecision.remaining.joinToString("\n"), liveDecision.allowed)
+        assertAssignedReviewStillRequired(pack, liveUnit, prepared(liveUnit))
         assertFalse(liveDecision.remaining.any { it.contains("calendar-date") || it.contains("weekday") || it.contains("age") || it.contains("clock-time") })
 
         val withoutClock = pack.copy(
@@ -454,6 +461,17 @@ class BatchECapabilityResearchTest {
             capability.copy(sourceHash = sha256(capability.exactSpan.toByteArray(Charsets.UTF_8)))
         }
         return errors(hosted, bound)
+    }
+
+    /** Prepared unit-local evidence does not include assigned cumulative-review work. */
+    private fun assertAssignedReviewStillRequired(
+        pack: dev.russiancompanion.v2.curriculum.V2CurriculumPack,
+        unit: dev.russiancompanion.v2.curriculum.V2Unit,
+        learner: V2LearnerView,
+    ) {
+        val decision = advancementDecision(pack, unit, learner)
+        assertFalse(decision.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), decision.remaining)
     }
 
     private fun prepared(unit: dev.russiancompanion.v2.curriculum.V2Unit) = V2LearnerView(

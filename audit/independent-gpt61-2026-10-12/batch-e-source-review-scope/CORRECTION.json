@@ -1,0 +1,23 @@
+{
+  "sourceBefore": "fa75ddf227932e2806e460321f6c42c01a53ded4",
+  "originalRuntimeSource": "41e84c0b00605845dacb3a611d742ae72639526e",
+  "beforeEqualsOriginalFailureSource": true,
+  "changedMethods": [
+    "missingChainAndReadinessFlipKeepAdvancementBlocked",
+    "unit17MessagesFollowTheUnresolvedCapabilitySet"
+  ],
+  "beforeSha256": "caef756ce398b1968613f9353ee575fe2545e75dcd903d9e14d3ee1e71d4a9c3",
+  "afterSha256": "37d5bd5b1971359f68c96c6f67dc731a7174da46944a803a3e65ecbda3db593f",
+  "allOtherMethodBodiesExact": true,
+  "unchangedMethodSha256": {
+    "retainedPagesAreExcludedAndDoNotClearTheFiveCapabilities": "32005756954b1f5673eb634d73af5e5a871d5a32d2eef888bfd0419f89cc04dc",
+    "identityMutationsSubstitutionsAndRelabelingFailClosed": "0b7444221ee19325c4c87bccf21aa6d05c1e79f0ace4d1f50dc3b3165f181037",
+    "digestsGovernanceAndLaterUnitsStayUnchanged": "d18cda2173aa58bb251ec296fa1ab1cf8001502b5e09d2fc9eb059fc26f4abe6"
+  },
+  "positiveScope": "ordinary source requirements; full advancement refuses exact assigned review",
+  "sourceNegatives": "Original stripped-chain full advancement and source-specific reasons retained; additionally ordinary must fail same blocker and full reasons exactly equal ordinary plus review",
+  "newTestAnnotations": 0,
+  "productionChanges": false,
+  "formalAcceptance": false,
+  "runtime": "PENDING_INITIAL"
+}

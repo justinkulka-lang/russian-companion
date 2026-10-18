@@ -1,0 +1,6 @@
+// One exact candidate class; runtime classpath/exporter exclusions unchanged.
+allprojects {
+    tasks.withType(Test).configureEach {
+        include '**/BatchECapabilityResearchTest.class'
+    }
+}
