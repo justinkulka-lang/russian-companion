@@ -1,0 +1,19 @@
+    @Test
+    fun at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable() {
+        val roots = listOf(file("src/main/java"), file("src/main/res"))
+        val offenders = roots.flatMap { root ->
+            root.walkTopDown().filter { it.isFile && it.extension != "ogg" }.mapNotNull { candidate ->
+                val text = candidate.readText()
+                if (text.any { it.code in CYRILLIC }) candidate.path else null
+            }
+        }
+        assertEquals(emptyList<String>(), offenders)
+        assertTrue(userFacingText().contains("This practice model is unavailable."))
+        assertTrue(userFacingText().contains("This model cannot be played."))
+        val parsed = SeedJson.parse(file("src/main/assets/content/bundled-content.json").readText())
+        assertTrue(parsed is SeedParse.Ok)
+        val document = (parsed as SeedParse.Ok).document
+        assertTrue(document.audioModels.isNotEmpty())
+        assertEquals((1..30).toList(), document.courseSegments.map { it.lessonNumber })
+        assertTrue(document.sourceRecords.all { it.shareAlikeConfirmation == "CONFIRMED" })
+    }

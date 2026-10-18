@@ -33,7 +33,7 @@ names = {
 }
 if SELECTION_CONFIG:
     names = json.loads(SELECTION_CONFIG.read_text())["selectedMethods"]
-expected = {("dev.russiancompanion.v2." + cls, name) for cls, methods in names.items() for name in methods}
+expected = {(cls if "." in cls else "dev.russiancompanion.v2." + cls, name) for cls, methods in names.items() for name in methods}
 selectors = ["*" + cls + "." + name for cls, methods in names.items() for name in methods]
 trees = {p: git("rev-parse", "HEAD:" + p) for p in ("app/src/main", "app/src/test", "catalog", "docs", "review")}
 assert not git("diff", "HEAD", "--", *trees), "Commit inputs before execution"

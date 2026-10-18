@@ -1,0 +1,23 @@
+{
+  "sourceBefore": "01ae46c3682a036fe957db1b2c3e03819c17d55b",
+  "originalFailureSource": "41e84c0b00605845dacb3a611d742ae72639526e",
+  "changedMethod": "at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable",
+  "originalMethodSha256": "8036d09439c99c1c5758e50f75246cbdfcdfcf8b0bb5beda3f72a2310d90674c",
+  "allOriginalPostScanAssertionsExact": true,
+  "allOtherMethodBodiesUnchanged": true,
+  "unchangedMethodSha256": {
+    "at001_at003_at011_at028_userFacingCopyStaysInsideTheBeginnerCompanion": "ea783f9eeada8e2f1c8b442516b6abadc33f144c11ef61a50fbc88bcf7f9d06f",
+    "at005_packagedSurfaceHasNoNetworkAccountOrSpeechRecognizer": "2e226ececed8d7443bc8b911a55194ce490fedfa88c6c6ad04f55e6639ef2d60",
+    "at010_onlyCompatibleMatchedAudioIsIncluded": "9bdf2cfbd74c048955fa91d9c05e4cd7ea0686edfdec910d502a6c9e1e0e9b08",
+    "at017_at024_optionalDrillsAreNotGateEvidenceAndDoNotShip": "6995eefa593a24a1d17fd0016312c658307042d77c51e6516a7422c4d84f0d09",
+    "at023_ankiDroidStaysOutsideTheApp": "ce18a37d72580c1c181d858c485a2e4285d55f521d507c7ec6721a4e99542b7f",
+    "at029_aSingleNoAnswerRejectsTheProposal": "9a734c1c4d74b5a380e805bd2f279ff0b5400e0a455bf5dab10803f60048ea97",
+    "acceptanceProceduresStayClassifiedWithoutApprovingRelease": "29b7d9b197d4ccf953c09e756b098234f5e791212494415775a2c42f6d144b6b",
+    "at020_physicalRebootPersistsGovernedRecords": "9d37492e7e50fd465e8613f67e60ec0f89686efed7bed680098bd2bd58b24b3d"
+  },
+  "newTestMethods": 4,
+  "productionChanges": false,
+  "semanticAcceptance": false,
+  "rightsAcceptance": false,
+  "runtime": "PENDING_INITIAL"
+}

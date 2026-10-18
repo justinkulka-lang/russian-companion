@@ -1,0 +1,15 @@
+{
+  "selectedMethods": {
+    "dev.russiancompanion.acceptance.AcceptanceBoundaryTest": [
+      "at005_packagedSurfaceHasNoNetworkAccountOrSpeechRecognizer",
+      "at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable",
+      "at010_onlyCompatibleMatchedAudioIsIncluded"
+    ],
+    "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest": [
+      "exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus",
+      "newUiResourceAndCurriculumTextCannotBorrowAnExistingLiteral",
+      "changedMovedAndMissingComparisonFilesRemainBlocked",
+      "coherentSourceForgeryAndRemovedItemIdsCannotKeepUnchangedCodeAdmitted"
+    ]
+  }
+}

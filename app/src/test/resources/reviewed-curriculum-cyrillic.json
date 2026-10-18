@@ -1,0 +1,2294 @@
+{
+  "schemaVersion": 1,
+  "reviewedRepositoryCommit": "01ae46c3682a036fe957db1b2c3e03819c17d55b",
+  "semanticAcceptance": false,
+  "rightsAcceptance": false,
+  "files": [
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit13ReportedPins.kt",
+      "sha256": "5f32e03eff4344040b4a1e8cf0e512a8b6b0b8fdee5652d4e2df2776050427fc",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Он сказа́л, что он англича́нин",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u13-report-transfer-native-nationality",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "3353822",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Future_tense?oldid=3353822",
+            "sourceRecordId": "future-report-full-context:83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1",
+            "sourceHash": "83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1",
+            "contentHash": "2562d2fa8f1de2890f3a7a0b8088edee6d2893c7609e3036feb64be1808581f8",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Он сказа́л, что он англича́нин",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Он сказа́л, что он был англича́нином",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u13-report-transfer-native-past-nationality",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "3353822",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Future_tense?oldid=3353822",
+            "sourceRecordId": "future-report-full-context:83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1",
+            "sourceHash": "83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1",
+            "contentHash": "60ec708b70a093be7e3272a89aec3c52f81b719ef906073ee2a6165014cba015",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Он сказа́л, что он был англича́нином",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u13-report-transfer-native-evening",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "3353822",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Future_tense?oldid=3353822",
+            "sourceRecordId": "future-report-full-context:83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1",
+            "sourceHash": "83ebe0a793af0039623aecdf1a0b3e548ba94af3d8ef89259089cc01791807b1",
+            "contentHash": "c8e6010b0c44c8a1bb53ff367c6e2429431de7167b8a4987f2cfebb8e4a14dbd",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit17QuestionPins.kt",
+      "sha256": "3bec913d60e16f50cace56dd67871fd11bf178419af8b6c57cd1dbb2ac104ffe",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u17-question-native-apple-en",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4220316",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+            "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+            "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+            "contentHash": "bab32a3f255612234f2666404cfce9b4388c057bdfa3aa79967bd5b93ff8e7ba",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Which apple is mine?",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Которое яблоко моё?",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u17-question-native-apple-ru",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4220316",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+            "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+            "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+            "contentHash": "e3ab235b2b2075ad1189b18e3dfcf4841fa657c14449f9b0865627fd2d3eda97",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Которое яблоко моё?",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Которую книгу вы хотите?",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u17-question-native-book-ru",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4220316",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+            "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+            "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+            "contentHash": "0711cc1cc88bc64bbb4a09d33fe71ac412be1ed2c6870b7c1afc4f9aa485c038",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Которую книгу вы хотите?",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Который час?",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u17-question-native-clock-ru",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4220316",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+            "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+            "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+            "contentHash": "ee16a8b5a980d4047816a6588c2cb4cf0e09766e6e8513a98ff38bb073ca2b57",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Который час?",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "который",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u17-question-native-clock-word",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4220316",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+            "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+            "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+            "contentHash": "24b1b928591361e76e8430d79d9eb7f11fc61d69aee52973f681bc08e14e0287",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "который",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit20DirectionalityPins.kt",
+      "sha256": "ff80c05bdab3e66ac8055576cda636457a1a58d9ed29b354c5c3ef022ade395a",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "В прошлом году я ездил в Россию.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u20-direction-native-round-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+            "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+            "contentHash": "0934b9a753be4165a3e1669c0f2735e8562fa10b4212da795f151b24559d6078",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "В прошлом году я ездил в Россию.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Мы идём в библиотеку.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u20-direction-native-library-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+            "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+            "contentHash": "86386aec41e0cadb90989f259df2b6ed6f9786b98d831ad30e3f7e24bdca7ae2",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Мы идём в библиотеку.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Мы ходили по городу весь день.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u20-direction-native-city-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+            "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+            "contentHash": "cd874b88f7d3bcc6bd63aba77a1fec941c3f45d6dbbfb9cea1fdea506906307c",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Мы ходили по городу весь день.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Она ходит в супермаркет каждую неделю.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u20-direction-native-weekly-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+            "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+            "contentHash": "2584be6ddba6175a76f93507fb50d724bc0c9a5722fa1ab41e9cbd74421580dd",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Она ходит в супермаркет каждую неделю.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Птицы летят на юг.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u20-direction-native-birds-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+            "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+            "contentHash": "d8bea4a2fc363fe3f2361a65449e3fa6608b7beb43759f7f7121975d158bb297",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Птицы летят на юг.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Ребёнок ходит шесть месяцев.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u20-direction-native-ability-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "motion-native-context:===  Verbs of motion ===\nVerbs of motion are a distinct class of verbs found ",
+            "sourceHash": "144527c7aff47147bbe8d5f4176e26d67bd5324a92439e1012965a6974f546b9",
+            "contentHash": "410e2e1b56489a3869becdc9d7bcd48a007ee6a8dfcc9fbcd6c0dd23e4acef00",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Ребёнок ходит шесть месяцев.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit21ObjectPins.kt",
+      "sha256": "f081245da92d8019567b66cfe9cbd6a6a722046fd2efd8a794caf6905b8873b9",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|себя}",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u21-object-transfer-native-other",
+            "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+            "sourceRevision": "1374712982",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+            "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|себя}",
+            "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+            "contentHash": "8a5be819075e5e040f45d23fe175aa52f6ae59aa816f585ec0e9ba90a16cdfb2",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Он поранил его",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Он поранил его",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u21-object-transfer-native-other",
+            "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+            "sourceRevision": "1374712982",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+            "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|себя}",
+            "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+            "contentHash": "8a5be819075e5e040f45d23fe175aa52f6ae59aa816f585ec0e9ba90a16cdfb2",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Он поранил его",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Он поранил себя",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u21-object-transfer-native-self",
+            "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+            "sourceRevision": "1374712982",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+            "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|себя}",
+            "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+            "contentHash": "b6f9cf992192330bd4d7048b457803f05d6aafa65a0090009708e4173e1eaf3b",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Он поранил себя",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "его",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u21-object-transfer-native-personal",
+            "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+            "sourceRevision": "1374712982",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+            "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|себя}",
+            "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+            "contentHash": "c8124ad7c5031eff874f18c0c1151e60becd8cf2e785c7c4e82a5dc659a33e7f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "его",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "себя",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u21-object-transfer-native-reflexive",
+            "sourceId": "src-enwiki-reflexive-pronoun-1374712982",
+            "sourceRevision": "1374712982",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Reflexive_pronoun&oldid=1374712982",
+            "sourceRecordId": "reflexive-independent-direct-object:=== Russian ===\n\nIn [[Russian Language|Russian]], the pronoun {{lang|ru|себя}",
+            "sourceHash": "0111295b473dbe0dd7f6353d48e7bbeccf180e48aa7a93b3cf3827dd62affa50",
+            "contentHash": "9dfc032c33420654affb02f95ef3c5d558e35c25814a0b8f92c11890c8fb80ab",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "себя",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit24ContextPins.kt",
+      "sha256": "97d2f9ece9d1078fecc92c6319a5e6cbe7c44ed9d560fd432494dfbef78f0c70",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-0-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+            "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+            "contentHash": "2c10f50514dda0ff44727c1e7474b589210f3c1bf28c5250c7b42195d7b6c72b",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "One should not persuade me",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "В магазин пошёл я.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u24-context-transfer-native-guide-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "context-guided-subject-focus:== Syntax ==\nBasic word order, both in conversation and written language, is ",
+            "sourceHash": "de21f95b9b994a9013d8f6d9796ffde4c38648b48c3156fce81fb66427522205",
+            "contentHash": "c9ffe57d295efc1cb0730cd28dbfb851c0eb814c0ec1c64b423fe297f8b0a2fb",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "В магазин пошёл я.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "В магазин я пошёл.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u24-context-transfer-native-destination-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "context-guided-subject-focus:== Syntax ==\nBasic word order, both in conversation and written language, is ",
+            "sourceHash": "de21f95b9b994a9013d8f6d9796ffde4c38648b48c3156fce81fb66427522205",
+            "contentHash": "6cf54b62adc7a6fb234c43f6e20d504e401a9932775832fedde78a79977de988",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "В магазин я пошёл.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Меня не надо уговаривать.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-1-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+            "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+            "contentHash": "453eb5f26733dbc64de2fc66f2b3eadfd4ea6a2f9195a280f5187f59bf90c3a8",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Меня не надо уговаривать.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Не надо меня уговаривать.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u24-context-transfer-native-reference-prov-ex-u24-word-order-contrast-0-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:In some cases, alternative word order can change the meaning entirely:\n* Не надо",
+            "sourceHash": "ef9f1bcd815ab4b23f2e073b493930ea41b5ad688f79a77310c415ccb7f9e668",
+            "contentHash": "c8de239c5299690d8a28e03341487cae5ca0822c0d59bae6e9e47f97f1e0cf44",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Не надо меня уговаривать.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit28TimingPins.kt",
+      "sha256": "daa6b75e66d04ee0fa5f7475cc3a3b0edf071dfd5a2dc087a7bcfd87da7dc360",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+          "field": "sourceUrl",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u28-timing-native-imperfective-actor",
+            "sourceId": "src-ruwikisource-vechera-5336197",
+            "sourceRevision": "5336197",
+            "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+            "sourceRecordId": "vechera-timing-full-paragraph:f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+            "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+            "contentHash": "52164d66f1693fef0bb8f6cc0802625950b6ce221a207f7cdf67611115e800fc",
+            "transformation": "selection",
+            "licenseId": "Public domain",
+            "shippedText": "Павел Сергеич Вязовский",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "verbs.csv:устать#timing-context",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u28-timing-native-perfective-aspect",
+            "sourceId": "src-openrussian-50e210c4",
+            "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+            "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+            "sourceRecordId": "verbs.csv:устать#timing-context",
+            "sourceHash": "4b77e66fd55de22edba1168e4be7de68d6222fbeeb2b789be1e39952aed0d225",
+            "contentHash": "11142462a3fd99fc462fd043af4dea0123fa5243f08ffb4feacfc0361179f5d8",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "perfective",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "verbs.csv:читать#timing-context",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u28-timing-native-imperfective-aspect",
+            "sourceId": "src-openrussian-50e210c4",
+            "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+            "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+            "sourceRecordId": "verbs.csv:читать#timing-context",
+            "sourceHash": "db48a48e370520d2f199cdf3647c2a7bbd98760401eee7722c22c0e27eafb05d",
+            "contentHash": "f304861b05823220861aeceac4a4aebc54aa9546c5817d085e4c6f2f8dca1e1e",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "imperfective",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Павел Сергеич Вязовский",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u28-timing-native-imperfective-actor",
+            "sourceId": "src-ruwikisource-vechera-5336197",
+            "sourceRevision": "5336197",
+            "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+            "sourceRecordId": "vechera-timing-full-paragraph:f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+            "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+            "contentHash": "52164d66f1693fef0bb8f6cc0802625950b6ce221a207f7cdf67611115e800fc",
+            "transformation": "selection",
+            "licenseId": "Public domain",
+            "shippedText": "Павел Сергеич Вязовский",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "написав письмо, она отправит его завтра",
+          "field": "shippedText",
+          "purpose": "EXISTING_RESEARCH_CUE_COMPARISON_PENDING_SOURCE_REVIEW",
+          "record": {
+            "itemId": "prov-ca-28-379",
+            "sourceId": "src-content-audit-research",
+            "sourceRevision": "content-audit-2026-10-08",
+            "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+            "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+            "sourceHash": "d092cebbb5a0b2fc2a48c03a7f983c8b0b8bc200756b422fa3784472ed8d54e3",
+            "contentHash": "2cc5503c228ef7606d1a7e02047d2070958add0a22cdd0ed69d8e3c21393a2c7",
+            "transformation": "content-audit research synthesis",
+            "licenseId": "Original app text",
+            "shippedText": "написав письмо, она отправит его завтра",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "отдыхал читая",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u28-timing-native-imperfective-clause",
+            "sourceId": "src-ruwikisource-vechera-5336197",
+            "sourceRevision": "5336197",
+            "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+            "sourceRecordId": "vechera-timing-full-paragraph:f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+            "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+            "contentHash": "0e8aed1a193faba14c8402c0a9c0e3eb3d5492d0114f89c4fe0bf88dcbbe8043",
+            "transformation": "selection",
+            "licenseId": "Public domain",
+            "shippedText": "отдыхал читая",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "устав писать ложился на диван",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u28-timing-native-perfective-clause",
+            "sourceId": "src-ruwikisource-vechera-5336197",
+            "sourceRevision": "5336197",
+            "sourceUrl": "https://ru.wikisource.org/w/index.php?title=Вечера_у_княгини_Старобельской_(Чернышевский)&oldid=5336197",
+            "sourceRecordId": "vechera-timing-full-paragraph:f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+            "sourceHash": "f5a8d1c819401c77eafb9cce88010acdfbee067ae3f9da640bc55ba464bb2c16",
+            "contentHash": "0144dd9e65cc85b506fec9e0a88c9ab6fc00d933aa21fd5b413977d6161cd316",
+            "transformation": "selection",
+            "licenseId": "Public domain",
+            "shippedText": "устав писать ложился на диван",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "устать",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u28-timing-native-perfective-verb",
+            "sourceId": "src-openrussian-50e210c4",
+            "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+            "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+            "sourceRecordId": "verbs.csv:устать#timing-context",
+            "sourceHash": "4b77e66fd55de22edba1168e4be7de68d6222fbeeb2b789be1e39952aed0d225",
+            "contentHash": "ee2b39ff0fc56b1484566cfde2e1c2546e5361211dbc58349708b7a081fd97bc",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "устать",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "читать",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u28-timing-native-imperfective-verb",
+            "sourceId": "src-openrussian-50e210c4",
+            "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+            "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/verbs.csv",
+            "sourceRecordId": "verbs.csv:читать#timing-context",
+            "sourceHash": "db48a48e370520d2f199cdf3647c2a7bbd98760401eee7722c22c0e27eafb05d",
+            "contentHash": "7aa23ce5475abca729f6459384af5daf645239a98c459f735d838abf99fc2de4",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "читать",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "читая письмо, он улыбался",
+          "field": "shippedText",
+          "purpose": "EXISTING_RESEARCH_CUE_COMPARISON_PENDING_SOURCE_REVIEW",
+          "record": {
+            "itemId": "prov-ca-repair-28-10676",
+            "sourceId": "src-content-audit-research",
+            "sourceRevision": "content-audit-2026-10-08",
+            "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+            "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+            "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+            "contentHash": "e0f69dcd15808956002d59ebc13d6656f73f1591b3897b3545f64f7c9a56fe05",
+            "transformation": "content-audit research synthesis",
+            "licenseId": "Original app text",
+            "shippedText": "читая письмо, он улыбался",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit29AdjectiveNativePins.kt",
+      "sha256": "4ac717dc8a6a6d542ee22b92ae81f0e9c5a6f11df59ee45bd1b2c77cddbc0fd9",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-f-en",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+            "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+            "contentHash": "11507a0e2f5e69d5dfa40a62a1bd7b6ee57e6bcd85c67c9b8431b36fff21c437",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "new",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "nominative-context::The student is new - '''Студент новый'''",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-student-en",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context::The student is new - '''Студент новый'''",
+            "sourceHash": "dbfbf0e198229f249dcac80a39eb9cc1027f7f3cdfea7e732d3475ea389af395",
+            "contentHash": "cbd70222d49237531d7803458a7453eba84c8e39555b0dfc26d8dbbbc87aa5f3",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "The student is new",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "nominative-context::The train is old - '''Поезд старый'''",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-train-en",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context::The train is old - '''Поезд старый'''",
+            "sourceHash": "60bd8d99d502785ffccdde598aef375531b1e928d99fc14f563221e75399c600",
+            "contentHash": "920a6f8c4d84a3a9835b89834095398b4bd92336758f32836fc9273ce085b713",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "The train is old",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-book-en",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i",
+            "sourceHash": "894d9cc3ba6c3470d7fa46688e0145ea3515f552675657bfc232e8420481e7ea",
+            "contentHash": "4622e97837512ad8ecd272fd8fb41d3a9c19c95ff7f16b585a0dcfb0dcda1284",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "new book",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-letter-en",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''",
+            "sourceHash": "a34366a3a1f62bbcba43e880e33f3dba940e7d26c4e629dca1c53b3ef57646ec",
+            "contentHash": "5320d32f74421d56e6243eca9e8c72229872fff01245d1a7522a06e52133e38e",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "new letter",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Поезд старый",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-train-ru",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context::The train is old - '''Поезд старый'''",
+            "sourceHash": "60bd8d99d502785ffccdde598aef375531b1e928d99fc14f563221e75399c600",
+            "contentHash": "593100e07231bc9baa2d67875b75a5ce1d54a6bc15287a3edcebcf8bd0350426",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Поезд старый",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Студент новый",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-student-ru",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context::The student is new - '''Студент новый'''",
+            "sourceHash": "dbfbf0e198229f249dcac80a39eb9cc1027f7f3cdfea7e732d3475ea389af395",
+            "contentHash": "99f3043523af00251b4438628b02f31f267556c001102d87dd914250ee638561",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Студент новый",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "книга",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-book-subject",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i",
+            "sourceHash": "894d9cc3ba6c3470d7fa46688e0145ea3515f552675657bfc232e8420481e7ea",
+            "contentHash": "695b9685757ab1a5731425e4c8e0a6768093a9785faa71270c522c2c96690619",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "книга",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "книги",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-books-subject",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context:Adjectives also change according to number, so when modifying a plural noun, ",
+            "sourceHash": "e01007802b268ee710b6d68a181723ec0286506d2fe6abd39353fce23495d515",
+            "contentHash": "56f89eb50742288465e7715a3f315790fcb6390696b10a24d2dd2b89829b008d",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "книги",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "но́во",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-n-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+            "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+            "contentHash": "2b8b4473418aab42c25e71f53df1ebe3dff538554905969a70ac57e810f6e374",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "но́во",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "нова́",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-f-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+            "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+            "contentHash": "9b10fdaf815203aba70c613d48620e142e13831f7d73cc2983a9c11f3f2c7608",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "нова́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "новая книга",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-book-ru",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context:For feminine nouns, the adjective takes on the ending '''-ая''': 'new book' i",
+            "sourceHash": "894d9cc3ba6c3470d7fa46688e0145ea3515f552675657bfc232e8420481e7ea",
+            "contentHash": "c6f43008acbb4421a75f647056be412f0665aa5160060f5bf049f32a9b661296",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "новая книга",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "новое письмо",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-letter-ru",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''",
+            "sourceHash": "a34366a3a1f62bbcba43e880e33f3dba940e7d26c4e629dca1c53b3ef57646ec",
+            "contentHash": "a88335f05fa40c3ccc368fc81744c9256ff757341b06abdc61b76b6ed5174855",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "новое письмо",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "новы́",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-pl-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:such as {{wikt-lang|ru|беж}} ('beige', non-adapted form of {{wikt-lang|ru|бе́жев",
+            "sourceHash": "0b5b1bad657a8c901ba9f471ff7adff3a945be6f281aa760f58c59fd0f8c78e8",
+            "contentHash": "0e319326a69f4d8a1e0e8955726894928e4b0477628262866ed97f85717c5b18",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "новы́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "новые книги",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-books-ru",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context:Adjectives also change according to number, so when modifying a plural noun, ",
+            "sourceHash": "e01007802b268ee710b6d68a181723ec0286506d2fe6abd39353fce23495d515",
+            "contentHash": "8717700856e9f8a40121a4253eed890dc01b4221daf135022bdc30f48c7cd28c",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "новые книги",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "новый карандаш",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-pencil-ru",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context:Adjectives modifying masculine nouns in the nominative case keep their defaul",
+            "sourceHash": "f2fd9de60a4f9debb3fa937d64b624e9e68eca93cc5e81a24981ca7308a8fcd3",
+            "contentHash": "eab5644710755930b3dea97091baaf126cfeb54ec89ddaf93aa5def60dab5c36",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "новый карандаш",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "письмо",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-adjective-native-letter-subject",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-context:For neuter nouns, the ending is '''-ое''': 'new letter' is '''новое письмо'''",
+            "sourceHash": "a34366a3a1f62bbcba43e880e33f3dba940e7d26c4e629dca1c53b3ef57646ec",
+            "contentHash": "8f9e4e204dded78d9a8d1c64057e74602cf09c39ce489513499edc858ad938f8",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "письмо",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit29PunctuationPins.kt",
+      "sha256": "120aa68bde19ee9d77eea3d241ee6ee210be8586e104ce25faaac3519ea88829",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+          "field": "sourceUrl",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-pronoun-boundary-bergognone",
+            "sourceId": "src-ruwiki-boltraffio-149826784",
+            "sourceRevision": "149826784",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+            "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+            "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+            "contentHash": "ead2d8ebe8af30d9720c84a5df0c3603410b56fb163ab2377226fe3525dae06f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Бергоньоне",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+          "field": "sourceUrl",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-after-head",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом\n|''Туча, '",
+            "sourceHash": "a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d",
+            "contentHash": "7b5f476cf85e0ce2cc7b10433a23035bbf13215c6a6d3f7400cc1078fc4b6cfb",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Туча",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом\n|''Туча, '",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-after-head",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом\n|''Туча, '",
+            "sourceHash": "a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d",
+            "contentHash": "7b5f476cf85e0ce2cc7b10433a23035bbf13215c6a6d3f7400cc1078fc4b6cfb",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Туча",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-cause-head",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту",
+            "sourceHash": "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd",
+            "contentHash": "63c2c03c21d7b631804043699d959a191217124ef2f63aeb8b5aec0a868a1a9a",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Павел",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-pronoun-boundary-bergognone",
+            "sourceId": "src-ruwiki-boltraffio-149826784",
+            "sourceRevision": "149826784",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+            "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+            "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+            "contentHash": "ead2d8ebe8af30d9720c84a5df0c3603410b56fb163ab2377226fe3525dae06f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Бергоньоне",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-terminal-head",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''",
+            "sourceHash": "875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e",
+            "contentHash": "013f12404ac0fb387631df1511d3cc83c3b63ca5bee5d7ecd089b49191d3cad9",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "маяк",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Бергоньоне",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-pronoun-boundary-bergognone",
+            "sourceId": "src-ruwiki-boltraffio-149826784",
+            "sourceRevision": "149826784",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+            "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+            "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+            "contentHash": "ead2d8ebe8af30d9720c84a5df0c3603410b56fb163ab2377226fe3525dae06f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Бергоньоне",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Бернардо Дзенале и Амброджо Бергоньоне,",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-pronoun-region-1",
+            "sourceId": "src-ruwiki-boltraffio-149826784",
+            "sourceRevision": "149826784",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+            "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+            "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+            "contentHash": "4a6ec7ad3705773961a4c47c5d1efcd035dcdd92c9b9d0200b0b998a7616de8f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Бернардо Дзенале и Амброджо Бергоньоне,",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Вдали виднеется маяк,",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-terminal-region-0",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''",
+            "sourceHash": "875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e",
+            "contentHash": "82d78c42c2f188494dd9cb3775b5622a931de13d2b1a1e1827e55d45be38859f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Вдали виднеется маяк,",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Вдали виднеется маяк, стоящий у моря",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-terminal-ru",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''",
+            "sourceHash": "875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e",
+            "contentHash": "fe2aabd1a975c8af6acf4a72c08f62808adc09a6c098ad3d36e656096fb8ecd4",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Вдали виднеется маяк, стоящий у моря",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Воспитанный в традициях Фоппы,",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-pronoun-region-0",
+            "sourceId": "src-ruwiki-boltraffio-149826784",
+            "sourceRevision": "149826784",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+            "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+            "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+            "contentHash": "1db39d4b8f5d3a94b9d2d93d03439279d8d07838fe2b00441d18afb63f740cf1",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Воспитанный в традициях Фоппы,",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-pronoun-ru",
+            "sourceId": "src-ruwiki-boltraffio-149826784",
+            "sourceRevision": "149826784",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+            "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+            "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+            "contentHash": "cb2a80d87f9bddc68e821c8f3920a3c01f0fbf4bd705695e7460e3f49e8d1c29",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Изумлённый этим хохотом,",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-cause-region-0",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту",
+            "sourceHash": "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd",
+            "contentHash": "4e3a4e4c01cea6f3082e366aab12db4280e020d2126369e6aefc06366a094cbf",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Изумлённый этим хохотом,",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-cause-ru",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту",
+            "sourceHash": "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd",
+            "contentHash": "18f7b93e19852c003c77ff3c595e0235f287a9be52bf1891eaa68d489c4ff339",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Написанная в спешке программа выполнила недопустимую операцию.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u29-punctuation-1-ru",
+            "sourceId": "src-ruwiki-prichastie-153078996",
+            "sourceRevision": "153078996",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996",
+            "sourceRecordId": "prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр",
+            "sourceHash": "821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a",
+            "contentHash": "3b9bf4a35376c759cf5c42349e157360d0ac8e34e100b807d4e913a97ea881b9",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Написанная в спешке программа выполнила недопустимую операцию.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Павел",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-cause-head",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту",
+            "sourceHash": "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd",
+            "contentHash": "63c2c03c21d7b631804043699d959a191217124ef2f63aeb8b5aec0a868a1a9a",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Павел",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Павел сел на пол и смотрел куда",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-cause-region-1",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту",
+            "sourceHash": "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd",
+            "contentHash": "30b9b5b830ac82ff4b391bd9b8c44654462f31226cfd48288d26d973517dbf9b",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Павел сел на пол и смотрел куда",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Программа, написанная в спешке, выполнила недопустимую операцию.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u29-punctuation-0-ru",
+            "sourceId": "src-ruwiki-prichastie-153078996",
+            "sourceRevision": "153078996",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996",
+            "sourceRecordId": "prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр",
+            "sourceHash": "821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a",
+            "contentHash": "a802a860291dc8fe10bff1da3482f5cfbfd572088e61fae81f2fc60119947526",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Программа, написанная в спешке, выполнила недопустимую операцию.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Туча",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-after-head",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом\n|''Туча, '",
+            "sourceHash": "a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d",
+            "contentHash": "7b5f476cf85e0ce2cc7b10433a23035bbf13215c6a6d3f7400cc1078fc4b6cfb",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Туча",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-after-ru",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом\n|''Туча, '",
+            "sourceHash": "a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d",
+            "contentHash": "7a661733fd5dd4f7195fd7c4a7a5cf65eb6ac982555f47c7fe936d82d66f2d28",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Фоппы",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-pronoun-list-foppa",
+            "sourceId": "src-ruwiki-boltraffio-149826784",
+            "sourceRevision": "149826784",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+            "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+            "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+            "contentHash": "1f6f67f6be611d8d5d449da786c84746fed3936e172b242a94d0ff1c228d0420",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Фоппы",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "выделяется запятыми с двух сторон",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u29-punctuation-0-en",
+            "sourceId": "src-ruwiki-prichastie-153078996",
+            "sourceRevision": "153078996",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996",
+            "sourceRecordId": "prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр",
+            "sourceHash": "821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a",
+            "contentHash": "4ab7796982c444f38373c5a8aa304d1cd9fdeb7f561b5d139efd571c7438d385",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "выделяется запятыми с двух сторон",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "запятая ставится только перед причастным оборотом",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-x-1",
+            "sourceId": "src-ruwiki-prichastie-153078996",
+            "sourceRevision": "153078996",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996",
+            "sourceRecordId": "prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр",
+            "sourceHash": "821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a",
+            "contentHash": "8ebf1a2ad07bb4dd765bb185353313faa20237ae1da1b9ab49657001ea9dcc62",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "запятая ставится только перед причастным оборотом",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "запятые не ставятся",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-u29-punctuation-1-en",
+            "sourceId": "src-ruwiki-prichastie-153078996",
+            "sourceRevision": "153078996",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Причастие_(лингвистика)&oldid=153078996",
+            "sourceRecordId": "prichastie:В русском языке причастный оборот часто выделяется [[Запятая|запятыми]]. Если пр",
+            "sourceHash": "821d77bb38feb19b79078e8af3f507f2fcaa4d7e6735f4c1d10a2475a73cbc9a",
+            "contentHash": "18bf2028dad255feb08a59d7993dae98c16d53a0653a72fb1193939debfc9d0b",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "запятые не ставятся",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "маяк",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-terminal-head",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''",
+            "sourceHash": "875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e",
+            "contentHash": "013f12404ac0fb387631df1511d3cc83c3b63ca5bee5d7ecd089b49191d3cad9",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "маяк",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "нависшая над высокими вершинами тополей,",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-after-region-1",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом\n|''Туча, '",
+            "sourceHash": "a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d",
+            "contentHash": "e3dc47fc9af85683180cd82b4a3d0c1cfa43dcbf4c537865cb6ab879e4d8728a",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "нависшая над высокими вершинами тополей,",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "он",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-pronoun-head",
+            "sourceId": "src-ruwiki-boltraffio-149826784",
+            "sourceRevision": "149826784",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+            "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+            "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+            "contentHash": "484518364fdba90e881b95500cc11d4917f8aa783dbbd5dba49485833426d2db",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "он",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "он прошёл обучение в мастерской Леонардо.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-pronoun-region-2",
+            "sourceId": "src-ruwiki-boltraffio-149826784",
+            "sourceRevision": "149826784",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Больтраффио,_Джованни&oldid=149826784",
+            "sourceRecordId": "punctuation-native:pronoun:Воспитанный в традициях [[Фоппа, Винченцо|Фоппы]], [[Дзенале, Бернардо|Бернар",
+            "sourceHash": "04798a919d45e77e4162a186ab72313dab529da5b5ac9d664748d1ca5a482acf",
+            "contentHash": "54adefe2c148f48c206f3b3031fdae7be3dc405576ff6711ba776baad650ba2e",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "он прошёл обучение в мастерской Леонардо.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "стоящий у моря",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-terminal-region-1",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:terminal:* [[причастный оборот]] ({{lang-ru|Вдали виднеется маяк, '''стоящий у моря'''",
+            "sourceHash": "875206a0ab7268a29758dcc2b9c6feff6e4a91bfb6b63ce0c7197cf2250a262e",
+            "contentHash": "c86befbd9acd7989d20be6ff6aa150deceacf6d20eb00046474dca3f1907219e",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "стоящий у моря",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "то в угол",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-cause-region-2",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:cause:|3. Стоят перед определяемым словом и имеют добавочный оттенок (причины, усту",
+            "sourceHash": "60ab6e0afc66709184089243bbeb6d173d336a6e95c01d2baea8ea8c3ccaacdd",
+            "contentHash": "43acae66c939e66ef8946d96e884f56d1f106d21618c6950e41419a640f85ddd",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "то в угол",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "уже сыпала дождиком",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u29-punctuation-native-after-region-2",
+            "sourceId": "src-ruwiki-obosoblenie-144053197",
+            "sourceRevision": "144053197",
+            "sourceUrl": "https://ru.wikipedia.org/w/index.php?title=Обособление&oldid=144053197",
+            "sourceRecordId": "punctuation-native:after:|1. Стоят после определяемого слова и выражены причастным оборотом\n|''Туча, '",
+            "sourceHash": "a2c8e66f9f55fb67f145c16941ebae8a44dbff5efae1da4c5a76b1889697455d",
+            "contentHash": "a265606c7bfdba0cfc7b3496b6e301f67c3fb98f5eeb1f751f97c334397218e8",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "уже сыпала дождиком",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit30LanguagePins.kt",
+      "sha256": "6febecef91189af24e799cc08e046ad798fe0d6a2c06d4554e3ac4b5c006d2bb",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[А]]а}}</big>\n| [[File:01-Rus",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u30-language-native-a-glyph",
+            "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+            "sourceRevision": "1371795481",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+            "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[А]]а}}</big>\n| [[File:01-Rus",
+            "sourceHash": "b7c684b44a2b49fa2822121d673e95925f67672be42b057df8b674de67b8da5b",
+            "contentHash": "1d15dbf70d129544581fda3192724f554f1f64c9aa404478a533e487b5d01626",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "А",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[Б]]б}}</big>\n| [[File:02-Rus",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u30-language-native-b-glyph",
+            "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+            "sourceRevision": "1371795481",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+            "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[Б]]б}}</big>\n| [[File:02-Rus",
+            "sourceHash": "b9aa27ea4b93b0341a01fdece40fd014ab718f99875672c24fbed7c54319cdfd",
+            "contentHash": "c78364c5d0f27706fe002726c70be55fa7ceeb2537db621cfe54f73e9047c389",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Б",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[В]]в}}</big>\n| [[File:03-Rus",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u30-language-native-v-glyph",
+            "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+            "sourceRevision": "1371795481",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+            "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[В]]в}}</big>\n| [[File:03-Rus",
+            "sourceHash": "901123d470de234ddb4417cc787b1b42f7c88c220d043584c9e2b331a79f5fbb",
+            "contentHash": "8b7b577aa31ebfac1df36dfd28c52b483a3d6546d0fb2528e1542456fcba8c41",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "В",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "grammar:* Abbreviations:\n** СССР ([ɛs ɛs ɛs ˈɛr] \"USSR\", masculine);\n** США ([sɛ ʂɛ ˈa] ",
+          "field": "sourceRecordId",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u30-language-native-masculine-flag",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:* Abbreviations:\n** СССР ([ɛs ɛs ɛs ˈɛr] \"USSR\", masculine);\n** США ([sɛ ʂɛ ˈa] ",
+            "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
+            "contentHash": "b01cc7b0a6012d960af4357a1e27f2d14f5b605c42d1d1372b0f2d7f6f328087",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "masculine",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "А",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u30-language-native-a-glyph",
+            "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+            "sourceRevision": "1371795481",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+            "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[А]]а}}</big>\n| [[File:01-Rus",
+            "sourceHash": "b7c684b44a2b49fa2822121d673e95925f67672be42b057df8b674de67b8da5b",
+            "contentHash": "1d15dbf70d129544581fda3192724f554f1f64c9aa404478a533e487b5d01626",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "А",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Б",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u30-language-native-b-glyph",
+            "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+            "sourceRevision": "1371795481",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+            "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[Б]]б}}</big>\n| [[File:02-Rus",
+            "sourceHash": "b9aa27ea4b93b0341a01fdece40fd014ab718f99875672c24fbed7c54319cdfd",
+            "contentHash": "c78364c5d0f27706fe002726c70be55fa7ceeb2537db621cfe54f73e9047c389",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Б",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "В",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u30-language-native-v-glyph",
+            "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+            "sourceRevision": "1371795481",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+            "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[В]]в}}</big>\n| [[File:03-Rus",
+            "sourceHash": "901123d470de234ddb4417cc787b1b42f7c88c220d043584c9e2b331a79f5fbb",
+            "contentHash": "8b7b577aa31ebfac1df36dfd28c52b483a3d6546d0fb2528e1542456fcba8c41",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "В",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "СССР",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u30-language-native-ussr-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:* Abbreviations:\n** СССР ([ɛs ɛs ɛs ˈɛr] \"USSR\", masculine);\n** США ([sɛ ʂɛ ˈa] ",
+            "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
+            "contentHash": "eb4a629b985be5030a6e9c8c90cf93bad96ff02a70c869f0d571559c05395c80",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "СССР",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "США",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u30-language-native-usa-ru",
+            "sourceId": "src-wikipedia-russian-grammar-1369617627",
+            "sourceRevision": "1369617627",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_grammar&oldid=1369617627",
+            "sourceRecordId": "grammar:* Abbreviations:\n** СССР ([ɛs ɛs ɛs ˈɛr] \"USSR\", masculine);\n** США ([sɛ ʂɛ ˈa] ",
+            "sourceHash": "1e8ce1f79958d66a8d3aec76b7a5176f5b7d1ad14e6ea9c1a3b75189bd76ce5a",
+            "contentHash": "ff70c1501af7d0088c165e409b2296905021a7a9f63aceab44e9ccf4a23c205f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "США",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "а",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u30-language-native-a-name",
+            "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+            "sourceRevision": "1371795481",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+            "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[А]]а}}</big>\n| [[File:01-Rus",
+            "sourceHash": "b7c684b44a2b49fa2822121d673e95925f67672be42b057df8b674de67b8da5b",
+            "contentHash": "823c4eb3e895adc925a755d89cea1c6c46954c999d23604e0091788b75496159",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "а",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "бэ",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u30-language-native-b-name",
+            "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+            "sourceRevision": "1371795481",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+            "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[Б]]б}}</big>\n| [[File:02-Rus",
+            "sourceHash": "b9aa27ea4b93b0341a01fdece40fd014ab718f99875672c24fbed7c54319cdfd",
+            "contentHash": "1bba9502491c9bfe19ad31850ae337ec43c04763751300d3bf9b1df97bcac94f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "бэ",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "вэ",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u30-language-native-v-name",
+            "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+            "sourceRevision": "1371795481",
+            "sourceUrl": "https://en.wikipedia.org/w/index.php?title=Russian_alphabet&oldid=1371795481",
+            "sourceRecordId": "alphabet-native:! style=\"text-align: center;\" | <big>{{lang|ru|[[В]]в}}</big>\n| [[File:03-Rus",
+            "sourceHash": "901123d470de234ddb4417cc787b1b42f7c88c220d043584c9e2b331a79f5fbb",
+            "contentHash": "a52b5d68a116502c939ffb0abf117128812a0b748ceed131a51fb0365990ea44",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "вэ",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit4NominativeRolePins.kt",
+      "sha256": "f529eea2298729aaef4d271230ffd2a44345a162872697c0c95847dc8ce47fa7",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Муж говорит",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u4-role-native-husband",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-subject-full-context:e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6",
+            "sourceHash": "e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6",
+            "contentHash": "ba3965803d5aecf88c4a13beb04c1183c54c54b3a1e7c3f61e5b6572f3b8e65c",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Муж говорит",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Поезд старый",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u4-role-native-train",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-subject-full-context:e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6",
+            "sourceHash": "e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6",
+            "contentHash": "593100e07231bc9baa2d67875b75a5ce1d54a6bc15287a3edcebcf8bd0350426",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Поезд старый",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Студент новый",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u4-role-native-student",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4213267",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Nominative?oldid=4213267",
+            "sourceRecordId": "nominative-subject-full-context:e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6",
+            "sourceHash": "e322951175f99463f6cd2a6bf089b359616b073be118129ec3f914dcb4e84de6",
+            "contentHash": "99f3043523af00251b4438628b02f31f267556c001102d87dd914250ee638561",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Студент новый",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit6AnimacyPins.kt",
+      "sha256": "c3b35c0884c21c449dbdc8f3720f60044991689b844f5275072d61b8a755d445",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "Я де́лал стул.",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u6-animacy-transfer-native-chair",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4330404",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Accusative_case?oldid=4330404",
+            "sourceRecordId": "accusative-nouns-full-context:3c0f8565ede2345d57ef60cd27ce8c719dacfc3019e9a9e2bb6b8c8ae37be858",
+            "sourceHash": "3c0f8565ede2345d57ef60cd27ce8c719dacfc3019e9a9e2bb6b8c8ae37be858",
+            "contentHash": "fdea60f023d07f9d8a24db6cd159b2639edecb0ccbce29e0dc8962ca814bb474",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "Я де́лал стул.",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit8AgreementPins.kt",
+      "sha256": "45ed03a6c619fcb3c0781da1e0c74d6e1015c31989a1f91388a09f14c9be056c",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "синие",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u8-agreement-transfer-native-plural",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4292379",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Adjectives?oldid=4292379",
+            "sourceRecordId": "adjectives-independent-blue:===Soft endings===\nOne rather rare exception to the above rules is if the adj",
+            "sourceHash": "472f310b08dfe456837a47126e81dc2a40dc0c19551245589230eba3b43ce894",
+            "contentHash": "f6eb827345e7f8371429a0162da535ceaf5fecc606f5a4c7eeda5fa378cd1fd1",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "синие",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "синий",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u8-agreement-transfer-native-singular",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4292379",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Grammar/Adjectives?oldid=4292379",
+            "sourceRecordId": "adjectives-independent-blue:===Soft endings===\nOne rather rare exception to the above rules is if the adj",
+            "sourceHash": "472f310b08dfe456837a47126e81dc2a40dc0c19551245589230eba3b43ce894",
+            "contentHash": "c65b1a8fccbf3115732e93bc6aa7ee896d431417c4f15282fa659e68025e469c",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "синий",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/Unit9AgreementPins.kt",
+      "sha256": "e6c199aa3215083d23c2eb11671dfd2057104e486005b3cfd9f4e4478beb3da4",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "один",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u9-agreement-transfer-native-masculine",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4371358",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358",
+            "sourceRecordId": "numbers-independent-hour:==Use of numerals in context==\n\nIn English (and in many other Indo-European l",
+            "sourceHash": "e05d0a76571644c1d271afe936b827bee4829ffd63c0ea854f4fcbb5fbf95122",
+            "contentHash": "c5cffb9e60232cdf6f395101a5987dcb1b5df343397604bfeca92cba411c784f",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "один",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "одна",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u9-agreement-transfer-native-feminine",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4371358",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358",
+            "sourceRecordId": "numbers-independent-hour:==Use of numerals in context==\n\nIn English (and in many other Indo-European l",
+            "sourceHash": "e05d0a76571644c1d271afe936b827bee4829ffd63c0ea854f4fcbb5fbf95122",
+            "contentHash": "4e469ca0a530b26d9b812df7a459753ef09873ea5aa9de32046b20b230d16bb5",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "одна",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "час",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u9-agreement-transfer-native-noun",
+            "sourceId": "src-wikibooks-russian-cc-by-sa",
+            "sourceRevision": "4371358",
+            "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Numbers?oldid=4371358",
+            "sourceRecordId": "numbers-independent-hour:==Use of numerals in context==\n\nIn English (and in many other Indo-European l",
+            "sourceHash": "e05d0a76571644c1d271afe936b827bee4829ffd63c0ea854f4fcbb5fbf95122",
+            "contentHash": "3b717961ddfdfb919640a578d8ddb5b267fe8ece1b63aba1a1d98a589c07c7e8",
+            "transformation": "selection",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "час",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sha256": "5342c58f7662826262ba4c08d6e6af1c27f571d019f92bdd124d7afbc332a7b1",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "ITEM_ID",
+          "value": "u1-i-в-not-b",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u1-i-н-not-h",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u1-i-р-not-p",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u1-i-с-not-c",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u1-i-у-not-y",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u1-i-х-not-x",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u3-i-gender-город",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u3-i-gender-дверь",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u3-i-gender-друг",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u3-i-gender-дядя",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u3-i-gender-море",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u5-i-decl-книга",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u5-i-decl-окно",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u5-i-indecl-кино",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u5-i-indecl-метро",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u5-i-indecl-такси",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        }
+      ]
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+      "sha256": "92c38133ed867792770977fb55a7dfe02bc5c1af3fab38ac39bd58889e3afd88",
+      "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+      "bindings": [
+        {
+          "kind": "ITEM_ID",
+          "value": "u5-i-decl-книга",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u5-i-decl-окно",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u5-i-indecl-кино",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u5-i-indecl-метро",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u5-i-indecl-радио",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u5-i-indecl-такси",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "кино́",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u5-indecl-кино",
+            "sourceId": "src-openrussian-50e210c4",
+            "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+            "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+            "sourceRecordId": "nouns.csv:кино#accented",
+            "sourceHash": "556b93a1035af9e099c3e96d8b150be1d3ad6f74c8bc53f9b8e1af1dd91b9b03",
+            "contentHash": "13152708c446f60bc6fdae43c3658089d523d8e15833f6d5d13ba43675dc6736",
+            "transformation": "formatting",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "кино́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "кни́га",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-or-u12-dative-0",
+            "sourceId": "src-openrussian-50e210c4",
+            "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+            "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+            "sourceRecordId": "nouns.csv:кни'га#sg_nom",
+            "sourceHash": "c2f70c7689eb1b282bbb1f165038ea6eeb4c785f1d7abebf94a9a2f4a861059a",
+            "contentHash": "47bf48ae649e95e468ffbf192033c48627e3022a30cd0040c9b860d6f3ec9d9d",
+            "transformation": "formatting",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "кни́га",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "метро́",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u5-indecl-метро",
+            "sourceId": "src-openrussian-50e210c4",
+            "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+            "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+            "sourceRecordId": "nouns.csv:метро#accented",
+            "sourceHash": "49c9edf483c6d0e96dac74ee743abb07ad496ff73c5ad2ed1de9c555ea2b52a9",
+            "contentHash": "bf78c0cabf44bbcdb12b1d8a60ca7f9af2975ee33e233a3f6d4c3f92c31913ce",
+            "transformation": "formatting",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "метро́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "окно́",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-ex-or-u10-preposition-13",
+            "sourceId": "src-openrussian-50e210c4",
+            "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+            "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+            "sourceRecordId": "nouns.csv:окно#sg_nom",
+            "sourceHash": "c34e235593d5b441845aaa54c61a2fd7b95eef367b9274284b75a2d4c37ad5bd",
+            "contentHash": "a91dcd700e39c50c5c483c4028f0c413e6d0d01e3fd1825c72d1d99b5067880f",
+            "transformation": "formatting",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "окно́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "ра́дио",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u5-indecl-радио",
+            "sourceId": "src-openrussian-50e210c4",
+            "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+            "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+            "sourceRecordId": "nouns.csv:радио#accented",
+            "sourceHash": "790c79fbae8bcc2225862b8915c3cba25c8d5578b0c332f0c7398a574187061d",
+            "contentHash": "6eecfbe67c90f2dd9c3fc523aedcfa9306f00e6aec42bd722cd3c4ca9a9382c0",
+            "transformation": "formatting",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "ра́дио",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        },
+        {
+          "kind": "PROVENANCE_FIELD",
+          "value": "такси́",
+          "field": "shippedText",
+          "purpose": "EXISTING_SOURCE_RECORD_COMPARISON",
+          "record": {
+            "itemId": "prov-u5-indecl-такси",
+            "sourceId": "src-openrussian-50e210c4",
+            "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+            "sourceUrl": "https://github.com/Badestrand/russian-dictionary/blob/50e210c4803237779cb562bc1abcea529066031c/nouns.csv",
+            "sourceRecordId": "nouns.csv:такси#accented",
+            "sourceHash": "9a6cd3dd37d85bb42275a929b020e7f4451c11ea64f2828de11cd86a2740e03c",
+            "contentHash": "8f8979a9db7f67966836015bb8fe76278624bd30423ff7c2484335732e143f33",
+            "transformation": "formatting",
+            "licenseId": "CC BY-SA 4.0",
+            "shippedText": "такси́",
+            "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+          }
+        }
+      ]
+    }
+  ]
+}

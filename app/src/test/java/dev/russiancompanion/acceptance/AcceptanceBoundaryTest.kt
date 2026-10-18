@@ -110,13 +110,9 @@ class AcceptanceBoundaryTest {
 
     @Test
     fun at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable() {
-        val roots = listOf(file("src/main/java"), file("src/main/res"))
-        val offenders = roots.flatMap { root ->
-            root.walkTopDown().filter { it.isFile && it.extension != "ogg" }.mapNotNull { candidate ->
-                val text = candidate.readText()
-                if (text.any { it.code in CYRILLIC }) candidate.path else null
-            }
-        }
+        val offenders = ReviewedCurriculumSourceGuard.offenders(
+            ReviewedCurriculumSourceGuard.sources(), ReviewedCurriculumSourceGuard.pack(),
+        )
         assertEquals(emptyList<String>(), offenders)
         assertTrue(userFacingText().contains("This practice model is unavailable."))
         assertTrue(userFacingText().contains("This model cannot be played."))

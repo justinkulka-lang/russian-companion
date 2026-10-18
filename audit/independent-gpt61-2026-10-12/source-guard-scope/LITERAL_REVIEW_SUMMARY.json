@@ -1,0 +1,13 @@
+{
+  "files": 15,
+  "bindings": 131,
+  "purposes": {
+    "EXISTING_SOURCE_RECORD_COMPARISON": 107,
+    "EXISTING_RESEARCH_CUE_COMPARISON_PENDING_SOURCE_REVIEW": 2,
+    "PERSISTED_ITEM_ID_REFERENCE": 22
+  },
+  "testResource": "app/src/test/resources/reviewed-curriculum-cyrillic.json",
+  "allCyrillicOccurrencesInsideEnumeratedOrdinaryStringLiterals": true,
+  "noProductionChanges": true,
+  "formalAcceptance": false
+}
