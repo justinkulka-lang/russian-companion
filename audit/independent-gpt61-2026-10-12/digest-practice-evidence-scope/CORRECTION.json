@@ -1,0 +1,62 @@
+{
+  "sourceBefore": "f3f241479a3a335bf0e18da8a1fb3fe3cfed5d0d",
+  "classes": {
+    "Aud44CorrectionTest": {
+      "beforeSha256": "fa7cd507f97591f6a9d2ae8eb83a26eb2b7642ee43ab613b0f54705a155204df",
+      "afterSha256": "c21d859f19016a5c0149c981320bf63cce27fdc5e1523c2bdd84cf7f699cbfa0",
+      "changedMethods": [
+        "unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged"
+      ],
+      "originalChangedMethods": {
+        "unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged": "    @Test\n    fun unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged() {\n        val pack = pack()\n        val stable = listOf(16, 18, 19, 20)\n        val digests = stable.associateWith { V2Validator.unitContentReviewDigest(pack, it) }\n        assertEquals(PRIOR_CONTENT_DIGESTS, digests)\n        val identities = stable.associateWith { number ->\n            pack.authoredEnglishRecords.filter { it.unitNumber == number }.map { it.id to it.text }\n        }\n        val probe = pack.authoredEnglishRecords.first { it.unitNumber == 17 }\n        val inserted = pack.copy(\n            authoredEnglishRecords = pack.authoredEnglishRecords + probe.copy(\n                id = \"en-u17-probe-body-0123456789ab\",\n                text = \"Probe insert record.\",\n            ),\n        )\n        val deleted = pack.copy(authoredEnglishRecords = pack.authoredEnglishRecords.filter { it.id != probe.id })\n        val reordered = pack.copy(authoredEnglishRecords = pack.authoredEnglishRecords.reversed())\n        listOf(inserted, deleted, reordered).forEach { mutated ->\n            stable.forEach { number ->\n                assertEquals(digests.getValue(number), V2Validator.unitContentReviewDigest(mutated, number))\n                assertEquals(\n                    identities.getValue(number).toSet(),\n                    mutated.authoredEnglishRecords.filter { it.unitNumber == number }.map { it.id to it.text }.toSet(),\n                )\n            }\n        }\n        assertNotEquals(\n            V2Validator.unitContentReviewDigest(pack, 17),\n            V2Validator.unitContentReviewDigest(inserted, 17),\n        )\n        assertFalse(pack.authoredEnglishRecords.any { it.id == \"en-u18-108\" })\n        assertTrue(pack.authoredEnglishRecords.any { it.id == \"en-u18-112\" })\n        val byId = pack.authoredEnglishRecords.groupBy { it.id }\n        assertTrue(byId.all { (_, records) -> records.map { it.text }.distinct().size == 1 })\n        val process = ProcessBuilder(\"python3\", \"-c\", \"from authored_identity import isolation_errors; errors = isolation_errors(); assert not errors, errors; print('ok')\")\n            .directory(File(repo(), \"catalog\"))\n            .redirectErrorStream(true)\n            .start()\n        val output = process.inputStream.bufferedReader().readText()\n        assertEquals(output, 0, process.waitFor())\n    }"
+      },
+      "unchangedMethodSha256": {
+        "threeAdverbGlossPairsCannotClearTheParadigm": "908f39d234db30f7b2fbb1b392cbbf80c8a4d55ed6b8c4a9820792414a1be8f8",
+        "faultySuffixFormulationIsNotAnApprovedRussianRule": "6e49009774563b96c79a6c03990bd09e6f85acff3665a39f6500470a186d6d00",
+        "threeClockPhrasesCannotClearProductiveClockTime": "b8248d20d5cdd6c60c5c485c307d04d85104ff56ffc2b5da98fbde7613d89ad6",
+        "calendarDateCompletionCannotConcealTheClockGap": "c4b480abe6c7167380fc74d94bd0ed1e436ec306a94b25dac54068c00eb8dfed",
+        "unit17AdvancementNamesOnlyUnresolvedSourceCapabilities": "8a51c57da6a1803e433824f4cde605df815ca1d3f88028d69967510a1b541da8",
+        "unrelatedEvidenceCannotImpersonateProductiveClockTime": "683de6ece787236b8984217cb56a7e936346fa500c343f72fec623316fe2263b",
+        "currentQuestionImpersonationUsesOnlyTheRealPinnedPacketWithoutInventingAHost": "11c0a3884b33fb1eaaec639128cc4ca683e741d3d20f8a473b82f32ffb7ef553",
+        "unit17SourceAdmissionDoesNotReachOtherUnits": "ceba1c8005df825fe928f0fd2e6d311413e4b45c0d4a07de6f85263ea45b015e",
+        "sharedLicenseNoticeDoesNotAnnounceUnitReadiness": "40005648253e61c0a68d7a04d0e9e2b53fd4aae8b1ec056d09d3da27754ad55e",
+        "reviewsMappingsAndReleaseStayUnsigned": "9bf9a867ae5b71660dff3468952321cf8998c28a613a45b304fea24478fe924b"
+      },
+      "change": "Keep all four historical hash literals. Compare16/18/19 to current values;compare20 to its actual pre-directionality correction baseline and require current20 to differ. All current insert/delete/reorder isolation,unit17 sensitivity,identity/dedup/python-catalog assertions remain exact."
+    },
+    "PracticeRetrievalDigestTest": {
+      "beforeSha256": "d9654558006a1974b042d961794ea85e3c1c7c5e0394d7b2effad915f677c9f0",
+      "afterSha256": "812f50ce15dada3e33d294fe001e82932f6777c2100dab6c9c63165d0b0b26a9",
+      "changedMethods": [
+        "readingVocabularyGrammarAndMixedStayOptionalAndPrerequisiteFiltered"
+      ],
+      "originalChangedMethods": {
+        "readingVocabularyGrammarAndMixedStayOptionalAndPrerequisiteFiltered": "    @Test\n    fun readingVocabularyGrammarAndMixedStayOptionalAndPrerequisiteFiltered() {\n        val pack = pack()\n        val store = memory()\n        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 4))\n        val before = store.v2LearnerView()\n        val reading = practiceQueue(pack, before, \"reading\").first { it.id == \"u4-i-stress-6f15e9f1\" }\n        assertTrue(practiceQueue(pack, before, \"vocabulary\").isNotEmpty())\n        assertTrue(practiceQueue(pack, before, \"grammar\").isNotEmpty())\n        assertTrue(practiceQueue(pack, before, \"alphabet\").isEmpty())\n        assertTrue(practiceQueue(pack, before, \"mixed\").isEmpty())\n        val wrong = reading.options.first { it != reading.answer }\n        compose.setContent { V2App(store = store, pack = pack, onRetryOpen = {}) }\n        compose.onNodeWithText(\"Practice\").performClick()\n        compose.onNodeWithText(\"Reading Lab\").performScrollTo().performClick()\n        compose.onNodeWithTag(\"v2-lab-option-$wrong\").performScrollTo().performClick()\n        compose.onNodeWithTag(\"v2-lab-option-$wrong\").performClick()\n        compose.onNodeWithTag(\"v2-lab-submit\").performClick()\n        compose.onNodeWithText(\"Not the reviewed answer.\", substring = true).performScrollTo().assertIsDisplayed()\n        assertEquals(1, store.v2Attempts().size)\n        assertEquals(OPTIONAL_PRACTICE, store.v2Attempts().single().attemptRole)\n        assertFalse(reading.id in creditItemIds(pack, store.v2LearnerView()))\n        compose.onNodeWithTag(\"v2-back\").performClick()\n        compose.onNodeWithText(\"Vocabulary and forms\").performScrollTo().performClick()\n        compose.onNodeWithTag(\"v2-lab-prompt\").assertIsDisplayed()\n        compose.onNodeWithTag(\"v2-back\").performClick()\n        compose.onNodeWithText(\"Grammar Lab\").performScrollTo().performClick()\n        compose.onNodeWithTag(\"v2-lab-prompt\").assertIsDisplayed()\n        compose.onNodeWithTag(\"v2-back\").performClick()\n        compose.onNodeWithText(\"Mixed review\").performScrollTo().performClick()\n        compose.onNodeWithTag(\"v2-lab-empty\").assertIsDisplayed()\n        assertEquals(1, store.v2Attempts().size)\n        store.v2SaveProfile(store.v2Profile().copy(startingPoint = \"CAN_READ_CYRILLIC\"))\n        pack.unit(3)!!.sessions.flatMap { it.steps }.forEach { step ->\n            store.v2CompleteGovernedStep(step.id, stepContentDigest(pack, step), \"2026-10-04T04:00:00\")\n            step.itemIds.forEach { id ->\n                val item = pack.item(id)!!\n                store.v2RecordGovernedAttempt(prepareGovernedAttempt(pack, id, item.answer, PRESCRIBED_CHECK, step.id, \"2026-10-04T04:00:00\")!!)\n            }\n        }\n        store.v2AttestBook(3, \"2026-10-04T04:00:00\")\n        store.v2CompleteUnit(3, \"2026-10-04T04:00:00\")\n        val mixed = practiceQueue(pack, store.v2LearnerView(), \"mixed\")\n        assertTrue(mixed.isNotEmpty())\n        assertTrue(mixed.all { it.kind == \"SOURCE_MEANING\" || it.kind == \"SOURCE_GENDER\" })\n        assertTrue(mixed.none { it.id == reading.id })\n    }"
+      },
+      "unchangedMethodSha256": {
+        "alphabetPracticeScoresFeedbackWithoutPrescribedCreditOrDuplicateRows": "07f205cde00207ac2763d345bccb5f2c001263db10a6381cd7ad6ed274b51bea",
+        "unansweredPracticeAndBlockedLabsDoNotRecordCompletion": "8dcb955a25d9ee96506919b9c7d4f0276b6d3a3a7cacae00cc1e4c06bff570b6",
+        "legacyAttemptLeavesContinueDisabledAndCreatesNoCompletedStep": "319f3cd37927cff858925f5518d016aa8c33afdedd59b9d8213c2a57944dde02",
+        "mismatchedDigestAttemptLeavesContinueDisabledAndCreatesNoCompletedStep": "3866b325fcb89c99cea97a0465ec37efa82e6402b55777e6972d58c38d520079",
+        "otherStepAttemptLeavesContinueDisabledAndCreatesNoCompletedStep": "48eca10c3643ad011ff495b3c169a6e6450011b3f438eb135f9c389a0bd95cec",
+        "governedAnswerEnablesContinueAfterAFreshLoadAndSurvivesRefresh": "6ac1345fccb695d05e3581459e0aa8e72d53ef1ef7ea76789f8fcf75667d6e00",
+        "twoGovernedAnswersOnOneStepBothRemainAfterTheSecondWrite": "cbaa1dc7cf04dda651054e3c7a0eac5affc37f4f48a65d9b31eac993455d3d20",
+        "unverifiedAttemptsStayExcludedAfterReload": "7d18c6c14aa6a77922b7d4351ae5beafe0d6abfb164cc97acc5372b7c3cdc84d",
+        "optionalPracticeAcceptsALaterAnswerAndSuppressesTheSameSelection": "8acd5bb33e263bc68948ba86f31eb058aee5ebc5f558c848ca25cb9c3de2f1a2",
+        "checkStepDoesNotCompleteUntilItIsAnswered": "943e1ddc74548c1424e376801b00326a51d54e951e25cf12c1a01cdd20c86eb2",
+        "savedWorkResumesABookmarkWithoutANewAttemptAndHidesCompletedChecks": "0a11c65694e8aa8b42c8b6fc37f16dfbfcb006e0e05156dd13374aafb4534fc9",
+        "emptyAndUnverifiedSavedPositionsStayClosed": "a55142dcf5aca6e49f64f6a46aebe1e77f7bf8894746d5f35d1ece629c8626f3",
+        "legacyAndMismatchedAttemptsDoNotGrantCreditAndBackupKeepsTheOriginalDigest": "39a2a215a053f7066d476d9dc82738f5cf8607a1828a5be34b1da97a0b07f7b9",
+        "migrationMarksExistingAttemptIdentityUnrecoverable": "c25b9f63ea5648c1e4aca09a830b938f9180d353c5cacd6165fdb14f3e8a217d",
+        "prescribedCheckScoresRemediationAndCompletesOnce": "7f26113f8983686c805698d4e00c3f65398bdb2e9251f6a27f0c7f2213e0277a",
+        "mismatchedResumeDigestStaysClosed": "2b17b1724a87ded4e5e2542becc29639a70cb38410be3732a926d8bd5fd8b3a9"
+      },
+      "change": "Retain original UI/no-credit checks and raw Unit3 completion as an explicitly refused negative. Complete Unit1 through actual governed work/transaction,keep explicit CAN_READ_CYRILLIC/unclaimed Unit2,answer real Unit3 assignment and transact advancement. Whole mixed pool limited to current completed1/3;original meaning/gender assertions remain on actual Unit3 subset,with whole-pool reading exclusion and Unit1 inclusion asserted."
+    }
+  },
+  "newTestAnnotations": 0,
+  "productionChanges": false,
+  "archiveUsedAsCurrentAcceptance": false,
+  "formalAcceptance": false,
+  "runtime": "PENDING_INITIAL"
+}

@@ -207,7 +207,17 @@ class Aud44CorrectionTest {
         val pack = pack()
         val stable = listOf(16, 18, 19, 20)
         val digests = stable.associateWith { V2Validator.unitContentReviewDigest(pack, it) }
-        assertEquals(PRIOR_CONTENT_DIGESTS, digests)
+        // Unit20 subsequently gained its own directionality correction. Preserve its
+        // old snapshot against the actual pre-correction asset; run all isolation
+        // mutations below against the current pack, including current Unit20.
+        assertEquals(PRIOR_CONTENT_DIGESTS.filterKeys { it != 20 }, digests.filterKeys { it != 20 })
+        val historicalProcess = ProcessBuilder("git", "show",
+            "1ce6184a5bbe894624807c066600fa51de42ace3:app/src/main/assets/content/v2-curriculum.json")
+            .directory(repo()).start()
+        val historical = V2PackLoader.parse(historicalProcess.inputStream.bufferedReader().readText())
+        assertEquals(0, historicalProcess.waitFor())
+        assertEquals(PRIOR_CONTENT_DIGESTS.getValue(20), V2Validator.unitContentReviewDigest(historical, 20))
+        assertNotEquals(PRIOR_CONTENT_DIGESTS.getValue(20), digests.getValue(20))
         val identities = stable.associateWith { number ->
             pack.authoredEnglishRecords.filter { it.unitNumber == number }.map { it.id to it.text }
         }

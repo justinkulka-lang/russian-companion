@@ -1,0 +1,18 @@
+{
+  "selectedMethods": {
+    "Aud44CorrectionTest": [
+      "unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged"
+    ],
+    "PracticeRetrievalDigestTest": [
+      "readingVocabularyGrammarAndMixedStayOptionalAndPrerequisiteFiltered"
+    ],
+    "CumulativeReviewGateTest": [
+      "completeOrdinaryWorkCannotAdvanceUntilBothAssignedObjectivesAreReviewed",
+      "optionalAndPrescribedReplaysCannotCompleteReviewOrBypassTransactionalAdvance"
+    ],
+    "Unit20DirectionalityApplicationTest": [
+      "originalGuidedLabelAndFourReadingsCannotCompleteDirectionality",
+      "coordinatedKeyAndApplicationCannotReverseTheDirectedFlight"
+    ]
+  }
+}
