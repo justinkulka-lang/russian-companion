@@ -1388,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestAud44SourceReviewCheckpoint",
-    "priorCheckpoint": "latestBatchESourceReviewCheckpoint",
-    "next": "Next inspect ContentAuditCorrectionTest.unit27AdvancesWithoutOptionalPresentPassive and BatchBUnits2125Test.classificationChecksCannotClearProductiveDiminutive. Read each complete method and learner setup, preserve optional-work/source negatives and all later assertions, distinguish ordinary requirements from assigned review, and explicitly refuse full advancement. Aud44 unrelated-evidence missing predicate and later-unit digest snapshot remain separate OPEN cases; do not archive or bump those expectations without scope proof.",
+    "checkpoint": "latestOptionalSourceReviewCheckpoint",
+    "priorCheckpoint": "latestAud44SourceReviewCheckpoint",
+    "next": "Next investigate Aud44CorrectionTest.unrelatedEvidenceCannotImpersonateProductiveClockTime and BatchBUnits2125Test.reflexiveSentencePairRejectsIsolatedTokenAndWifeCitation. Inspect missing-predicate source hosts against current native/complete-context admissions and preserve every forgery/unsupported-source negative; do not synthesize a host just to satisfy the lookup. Review source/correction context before deciding historical versus current construct scope. Aud44 digest snapshots, ContentAudit content/order/remediation cases, RequiredPathProgress and PracticeRetrievalDigest remain OPEN. No blind archival, count/digest bump or forged completion.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -1908,5 +1908,28 @@
     "originalUnit7RestoreCause": "UNCONFIRMED",
     "githubConnection": "RECOVERED",
     "next": "Next inspect ContentAuditCorrectionTest.unit27AdvancesWithoutOptionalPresentPassive and BatchBUnits2125Test.classificationChecksCannotClearProductiveDiminutive. Read each complete method and learner setup, preserve optional-work/source negatives and all later assertions, distinguish ordinary requirements from assigned review, and explicitly refuse full advancement. Aud44 unrelated-evidence missing predicate and later-unit digest snapshot remain separate OPEN cases; do not archive or bump those expectations without scope proof."
+  },
+  "latestOptionalSourceReviewCheckpoint": {
+    "path": "audit/independent-gpt61-2026-10-12/optional-source-review-scope",
+    "sourceCommit": "0eb997d1b77b67cfc6805e7785cab72b40330871",
+    "manifest": "optional-source-review-scope/INITIAL/MANIFEST.json",
+    "testCounts": {
+      "reported": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 2,
+    "retainedInitialFailures": 32,
+    "engineeringScopeReconciled": 22,
+    "openInitialFailures": 10,
+    "currentLiteralAnnotations": 1239,
+    "newFullDiscoveryOrBroadCompletion": false,
+    "formalAcceptance": false,
+    "auditReady": false,
+    "originalUnit7RestoreCause": "UNCONFIRMED",
+    "githubConnection": "RECOVERED",
+    "next": "Next investigate Aud44CorrectionTest.unrelatedEvidenceCannotImpersonateProductiveClockTime and BatchBUnits2125Test.reflexiveSentencePairRejectsIsolatedTokenAndWifeCitation. Inspect missing-predicate source hosts against current native/complete-context admissions and preserve every forgery/unsupported-source negative; do not synthesize a host just to satisfy the lookup. Review source/correction context before deciding historical versus current construct scope. Aud44 digest snapshots, ContentAudit content/order/remediation cases, RequiredPathProgress and PracticeRetrievalDigest remain OPEN. No blind archival, count/digest bump or forged completion."
   }
 }

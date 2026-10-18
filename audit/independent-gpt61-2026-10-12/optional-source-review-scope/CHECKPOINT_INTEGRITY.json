@@ -1,0 +1,42 @@
+{
+  "sourceBeforeReceipt": "0eb997d1b77b67cfc6805e7785cab72b40330871",
+  "actualRuntimeSource": "0eb997d1b77b67cfc6805e7785cab72b40330871",
+  "runtimeContext": "INITIAL/CONTEXT.json",
+  "unchangedProductionSourceFrom": "881c81504864a5847963b2f3f3b33b951d504e6a",
+  "unchangedTrees": {
+    "app/src/main": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "runnerAndInitHashesVerified": true,
+  "evidenceSha256": {
+    "CORRECTION.json": "077145f07737690a0a58047958b7b54708bf87b41b5b4074b570ed41d68ac8bf",
+    "CURRENT_REGRESSION_RECONCILIATION.json": "a1d69b3e493eac77babf0d9f471498e240db97418082417e3813d238232f0157",
+    "INITIAL/CONTEXT.json": "934df61831a72ef8d983b03d5589c0499a8788f4af04a776d51d9e4192650a4e",
+    "INITIAL/EVENTS.jsonl": "a36236d11fd69a1b753bede5f4cab5de919040f7f6ba081a022c623094fe7756",
+    "INITIAL/LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "INITIAL/MANIFEST.json": "5028f9fda0949f7f098054cd4bda84cf538569dc96916cc073519bc4344a6852",
+    "INITIAL/RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "INITIAL/RUN.log": "dec5b008ae8f4057c5d84b6f9b239625f136b81d3d35bf6566070bd83d2d509b",
+    "INITIAL/SHA256.json": "92892426a3f944f9e4cf92354128ee7d53017c32aef47750b27254deeaa644c5",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.BatchBUnits2125Test.xml": "30dbccebfab454d4cb73a7f6ac21d8b827a24234fcf9fdbe6031336d73cee8c3",
+    "INITIAL/XML/TEST-dev.russiancompanion.v2.ContentAuditCorrectionTest.xml": "9e7cf15a4eca0378c3cb3b1ebbd93de031805b4f772c1ddc7e7b1ef068b1ae5e",
+    "NEXT_REVIEW.md": "0bcf114662d95b8160764da7cd4bb2fec8e484dbc8a1e663e42a81347063952a",
+    "ORIGINAL_METHODS.json": "4e81d678944ffd74db09f72baee0bdd059a43e29d6869bf1e5d9b95787ffe87d",
+    "SOURCE_AND_SCOPE.md": "71049555f68458081fe56aeba1ce1904a34c61d7b85ac89fcfbea0278e7c2b48",
+    "selection.json": "a017246723f42c2a781ccfb9ad1fbc52c5c6395f81823aa9abca88a75ae7bd42",
+    "test-candidates.gradle": "16398294986364adb4fc287aa51563e87414659e24f85b863296302a04cddea7"
+  },
+  "instructionSha256": {
+    "AGENTS.md": "31bc171370a870aa32d274ae99a20599a690819bbb5e585d2f057fa31518169e",
+    "audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md": "bdc371f4d6f5edf3cecb9529742a2fe7c98b97234c55dfd3de9cb75f2e4138a1",
+    "audit/content-corrections/CODEX_CHECKPOINT_2026-10-12.md": "55427ca59ce0ad1a9092c1ab735b19f1da2bc382b17633bfce79a1f75084df9f",
+    "audit/independent-gpt61-2026-10-12/CURRENT_FINDING_STATUS.json": "85797cdc4a8c53fca2a0e9bc544ddc7a73fd0bb2b929cd5b78389002af644a47"
+  },
+  "original32FailuresPreserved": true,
+  "scopeNotSummedWithOthers": true,
+  "completeSuite": false,
+  "formalAcceptance": false,
+  "originalUnit7RestoreCause": "UNCONFIRMED"
+}
