@@ -19,7 +19,12 @@ class RequiredPathProgressTest {
     fun requiredCompletionReachesAdvancementWithOptionalWorkUntouched() {
         val pack = pack()
         val learner = learner(completed = setOf("orient", "required-teach", "required-check"), correct = setOf("required-item"))
-        assertTrue(continueTarget(pack, learner).opensUnitReview)
+        val target = continueTarget(pack, learner)
+        assertTrue(target.opensCumulativeReview)
+        assertFalse(target.opensUnitReview)
+        assertFalse(target.unavailable)
+        assertNull(target.sessionId)
+        assertEquals(3, target.unitNumber)
         assertNull(todaysSession(pack, pack.units.single(), learner))
         val ordinary = ordinaryUnitRequirements(pack, pack.units.single(), learner)
         assertTrue(ordinary.remaining.joinToString("\n"), ordinary.allowed)

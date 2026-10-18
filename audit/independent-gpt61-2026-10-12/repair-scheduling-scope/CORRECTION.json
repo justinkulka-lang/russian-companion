@@ -46,7 +46,7 @@
     },
     "RequiredPathProgressTest": {
       "beforeSha256": "15b6fd7d4e5b75d6a307bf6f2cac6846f7ea200f25d367034f3cc13b919206e0",
-      "afterSha256": "409ed45cdfe3721f15d4b2db902c67ee77aab6d77335db02e22ad6dbfa0b41b3",
+      "afterSha256": "df3dc7c55d0cf7210b43bec31bd821e96d254d956de9a3f54dbc3950cb9a2b3e",
       "changedMethods": [
         "requiredCompletionReachesAdvancementWithOptionalWorkUntouched"
       ],
@@ -64,12 +64,23 @@
         "mixedStepRequiresOnlyRequiredAnswersAndKeepsTheirIdentityChecks": "6800daa32e9d8808d2a8aaf3a3fd3cf54b3dbedda8c324fe5ed37f2db1dea83e",
         "explicitlyOpenedOptionalSessionStillRequiresItsOwnAnswers": "1f8a5706fe05dd7fe80e27939dcad3e19bbe5fdf8051932b90dc1a3fb0ca7fc9"
       },
-      "change": "Original opens-review and no-today-session assertions retained. Positive assertion bound to ordinary requirements; exact full refusal for unverifiable cumulative declaration and untouched optional steps/answer asserted. No fixture policy or completion invented."
+      "change": "Original no-today-session and untouched optional work retained. Continue must route to cumulative review (not advancement review) after local work; ordinary requirements allowed while full advancement explicitly refuses unverifiable declaration. No fixture policy or completion invented."
     }
   },
   "newTestAnnotations": 0,
   "productionChanges": false,
   "archiveUsedAsCurrentAcceptance": false,
   "formalAcceptance": false,
-  "runtime": "PENDING_INITIAL"
+  "runtime": "PENDING_RETRY",
+  "initialRuntime": {
+    "manifest": "INITIAL/MANIFEST.json",
+    "testCounts": {
+      "reported": 13,
+      "passed": 12,
+      "failed": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "diagnosis": "First repair preserved an obsolete opensUnitReview assertion. Current Continue correctly opens cumulative review first. Runtime pinpointed the original route assertion at line22; the new ordinary/full assertions were initially unreached."
+  }
 }

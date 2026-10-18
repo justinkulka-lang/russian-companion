@@ -1,0 +1,12 @@
+{
+  "CONTEXT.json": "01f41698ea97b48079f8f3554d0e7a7c0fb777a278b212602b3c9a7ffbdb6895",
+  "EVENTS.jsonl": "1ca0763554670e12e67864d102c60ed90a24c811836efcfadfa02d751a7491b1",
+  "LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+  "MANIFEST.json": "bddadc6e53818e0138a306c255b286840c2dc1387c4cd7d96b4485acd472202d",
+  "RUN.exit": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+  "RUN.log": "f145bf67a544311f79735d6a16722ecd3a28855581babe10658565efa1c4f9e7",
+  "XML/TEST-dev.russiancompanion.v2.ContentAuditCorrectionTest.xml": "aac3bd694f6b6a66c2533ae7b8d9f54b4f057e6c49b00522eacf6e36c115edec",
+  "XML/TEST-dev.russiancompanion.v2.RequiredPathProgressTest.xml": "3359418957bf6e5426ea32c7369559ab24cedde7c6827aa46cb141440818a164",
+  "XML/TEST-dev.russiancompanion.v2.Unit13ReportedTransferTest.xml": "3330a82771718d09a97cde8d5ae0e6c5210fe956465917b70e70c1d726ff96b2",
+  "XML/TEST-dev.russiancompanion.v2.Unit3GenderTeachingTest.xml": "87dd8cdcc867f220720e431a62fff2894f2f55571ce2f23cf2cc956eb5cb9201"
+}
