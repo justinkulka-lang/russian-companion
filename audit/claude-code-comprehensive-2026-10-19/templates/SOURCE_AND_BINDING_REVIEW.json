@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "targetCommit": "FROM_PACKET_IDENTITY_OR_AUDIT_DELIVERY",
+  "template": true,
+  "authorityDisposition": "DIAGNOSTIC_ONLY",
+  "inspectionStatus": "NOT_PERFORMED",
+  "requestedModel": "Opus 5.5",
+  "requestedEffort": "Extra"
+}
