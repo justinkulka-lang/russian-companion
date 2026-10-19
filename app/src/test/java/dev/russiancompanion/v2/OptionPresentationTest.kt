@@ -18,7 +18,10 @@ import java.io.File
 class OptionPresentationTest {
     @Test fun currentCorpusPreservesEveryOptionAndDispersesCorrectPositionsInAllThreeRoutes() {
         val p = OptionPresentationFixture.pack
-        assertEquals(622, p.items.size)
+        // CC015 adds four distinct guided I targets; the original622 remain exact.
+        assertEquals(626, p.items.size)
+        assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
+            p.items.drop(622).map { it.id }.toSet())
         assertEquals(561, p.items.count { it.options.first() == it.answer })
         val routes = p.units.flatMap { it.sessions }.flatMap { it.steps }
             .flatMap { step -> step.itemIds.map { p.item(it)!! to step.id } }
