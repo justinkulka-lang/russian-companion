@@ -1,0 +1,39 @@
+Continue this SAME ChatGPT GPT-6.1 Sol / High independent audit. Preserve completed work. Codex retains all engineering execution and fixes; do not ask me to move a Codex prompt to another session.
+
+Repository: justinkulka-lang/russian-companion
+Branch: cursor/content-audit-corrections-964f; Draft PR64
+Exact audited source: 5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed
+Actual root tree: f95bfa3c1ae6b8ac07b42b6db9fa69c5e247830f
+Current audit: INCOMPLETE, thirteen findings CC001–CC013, five HIGH/eight MEDIUM. New finding IDs start CC014. Actual model/effort remains unverified unless independently exposed.
+
+OPEN THE COMPLETE INPUTS
+
+The attached Russian_Companion_Full_Audit_Inputs.docx is a real Word file with embedded input archives. Use Python/file tools to inspect it as an Open XML ZIP; ordinary Word text extraction will not expose all embedded source files.
+
+Read word/embeddings/INPUT_MANIFEST.json. Extract word/embeddings/OPEN_AUDIT_INPUTS.py to a working directory, inspect the script, then run it with the uploaded DOCX path and a fresh output directory. If direct script execution is unavailable, perform the same checks in Python: verify every embedded part's bytes/hash, safely open the pinned snapshot and current-results archives, run the snapshot VERIFY_PACKET.py where possible, and verify all current-result SHA256SUMS.
+
+The snapshot contains ALL 6,427 target files, exact raw curriculum, the pinned loader, expanded projections, complete target commit/tree/blob proofs, all retained correction records, 64 lifecycle backups and both historical test-result archives. It is not just an instructions kit. The second archive contains all sixteen latest audit outputs, evidence, checkpoints and hashes. The PDF is separate. The package has no SDK, APK or real .git object database.
+
+Read FINISH_AUDIT_PROMPT.txt, REQUIRED_RETURNS.md and GAP_COMPLETION_PLAN.md from the embedded inputs. These current instructions supersede historical audit routing in the snapshot. Do not implement code or alter governance stages.
+
+FINISH SUBSTANTIVE INDEPENDENT INSPECTION
+
+Use the latest file/entity/unit/surface/item/requirements/source/book ledgers, not a new empty template. Continue remaining applicable source and historical evidence inspection. Review complete teaching/check/remediation relationships and source/rights contexts, not only presentations or hashes. Inspect archives safely with bounded output; never dump the huge historical failure message. Distinguish current active code, generated evidence and historical material with precise reasons and relevance. Do not mark unread material inspected.
+
+Retain 622 item IDs, 817 examples, 58 capability objects, 6,943 provenance records, 6,427 target-file paths, 75 historical targets, eighteen IA identities, 48 known surfaces and 12,034 existing entity rows. Add genuinely missed entities/surfaces/requirements without dropping originals. Reassess CC001–CC013 from exact source/evidence; keep confirmed defects, unresolved hypotheses and qualification debt distinct.
+
+PRIVATE BOOK
+
+Reuse the current Penguin attachment already verified in this chat: 13,596,737 bytes, SHA256 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303. If it is no longer accessible, request reattachment and continue other work. Complete remaining relevant lesson/native/edition/rights inspection with exact reading boundaries. OCR processing is not reading. Return independent conclusions and locators only; no copied prose, scans, exercises, native book examples or PDF bytes.
+
+RUNTIME EVIDENCE AND HONEST COMPLETION
+
+Codex owns Android execution and fixes. Read and assess supplied runtime evidence, but distinguish it from your own execution. Compile/lint/gate checks and prior failed broad/focused runs are separately scoped. Do not sum them or claim a fresh all-pass suite. If required Android, accessibility, performance, source qualification or other checks remain unavailable, return exact outstanding evidence requests to Codex and retain INCOMPLETE. Complete all independently inspectable work rather than merely returning another generic handoff. This packet does not fix defects or supply new runtime results.
+
+RETURN ALL REQUIRED OUTPUTS
+
+Update all sixteen existing outputs plus IMPLEMENTATION_WORK_ORDER.csv, EXECUTION_EVIDENCE_REQUESTS.csv and FINAL_NONPHYSICAL_SCOPE_DECISION.md as specified in REQUIRED_RETURNS.md. Include checkpoint.json, audit-change-summary.md, SHA256SUMS.txt and safe evidence. Keep every existing finding and row identity traceable; no automatic passes from input availability or file production.
+
+Publish audit artifacts only to PR64 if safe writes are supported, preserving concurrent work and never force-pushing. Otherwise return downloadable files and paste the report, findings summary and exact next actions in chat. Return archive bytes/SHA256 and commit/links if actually published. Maintain checkpoints and save partial outputs before context/session loss.
+
+No app fixes in this audit chat, no merge, freeze, APK assembly/signing, formal approval-stage advancement or release approval. Use one agent. Preserve all histories, failures, legacy policy/schema meanings and the original Unit7 restore uncertainty. Four screenshot exporters/16 methods stay excluded. Physical Galaxy S26 Ultra airplane-mode/reboot acceptance remains LAST and OUTSTANDING after the final comprehensive independent nonphysical audit and corrected-source recheck.

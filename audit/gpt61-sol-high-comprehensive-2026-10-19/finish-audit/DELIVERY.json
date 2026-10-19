@@ -1,0 +1,25 @@
+{
+  "target": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "fullWordInputs": {
+    "file": "Russian_Companion_Full_Audit_Inputs.docx",
+    "bytes": 75508118,
+    "sha256": "975120216ea8f0f025b63b48c3defa19302498289160c6b024c963a477842830"
+  },
+  "smallWordInstructions": {
+    "file": "Russian_Companion_Finish_Audit_Instructions.docx",
+    "bytes": 42633,
+    "sha256": "ed19e602e94b17fec46159dfba8bf79008713871430aea9875ed810f7e374b13"
+  },
+  "promptTextFile": "Russian_Companion_Finish_Audit_Prompt.txt",
+  "all6427TargetFilesIncluded": true,
+  "allCurrentSixteenOutputsAndSafeEvidenceIncluded": true,
+  "embeddedPartsAndCrcVerified": true,
+  "sourceGitCommitTreeAndAllBlobProofVerifierExecutedSuccessfully": true,
+  "allCurrentAuditInternalHashesVerified": true,
+  "validWordDocumentReopened": true,
+  "sourceChanges": false,
+  "runtimeTestsExecuted": 0,
+  "auditCompletedByPackaging": false,
+  "privatePdfIncluded": false,
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

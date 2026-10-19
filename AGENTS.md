@@ -1,5 +1,7 @@
 # Codex continuation
 
+Complete same-chat audit input delivery: [finish prompt](audit/gpt61-sol-high-comprehensive-2026-10-19/finish-audit/FINISH_AUDIT_PROMPT.txt), REQUIRED_RETURNS.md and GAP_COMPLETION_PLAN.md there. Native Word package embeds full6427file target snapshot and latest16outputs,not only templates;input proof/helper verified. No new runtime execution or codefixes;Codex retains engineering,ChatGPT remains independent auditor,physical acceptance LAST.
+
 Active Codex engineering assignment: [saved instructions](audit/gpt61-sol-high-comprehensive-2026-10-19/next-phase/ENGINEERING_EXECUTOR_PROMPT.md). User explicitly directed this Codex session to retain the engineering prompt itself. Handle engineering here;the separate ChatGPT chat remains the independent auditor. Do not ask the user to transfer this assignment to another Codex session.
 
 Next-phase handoff: [same ChatGPT audit prompt](audit/gpt61-sol-high-comprehensive-2026-10-19/next-phase/SAME_CHAT_PROMPT.md) and [separate Codex engineering prompt](audit/gpt61-sol-high-comprehensive-2026-10-19/next-phase/ENGINEERING_EXECUTOR_PROMPT.md). Read DELIVERABLES.md and INPUTS_AND_BOUNDARIES.md there. Preparing these work orders is not execution or audit completion;13findings remain. Word/TXT delivery supplied;physical acceptance stays LAST.
