@@ -1,0 +1,39 @@
+{
+  "sourceCommit": "594571879cb4debada8774eda311763cb3775c9b",
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/cc014-preview/BASELINE/output.gradle",
+    "-Daudit.events.path=/workspace/artifacts/cc014-preview/BASELINE/EVENTS.jsonl",
+    "testDebugUnitTest",
+    "--tests",
+    "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+    "--rerun",
+    "--offline",
+    "--max-workers=4",
+    "--console=plain"
+  ],
+  "sourceActivation": "source /workspace/setup/android-env.sh",
+  "scope": "Five retained-history preview regressions;not full suite",
+  "expected": "Baseline failure before production correction",
+  "fixtureRoot": "eight retained immutable audit groups referenced by test;no regenerated evidence",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "testSourceSha256": "78e0dfcea6838b498e4eedcb92e1bccd1d21d432ee2ef0f6019e14b270b259c1",
+  "xmlActualSource": "app/build/test-results/testDebugUnitTest (requested init override was superseded by task configuration;fresh XML copied before next execution)",
+  "initScriptSha256AtEvidenceCollection": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+    "/workspace/artifacts/cc014-preview/BASELINE/output.gradle": "6b28054cad4929e40cb0b9b367aec4dfe8135b707c5b694d61c3bcc9a8d2d9fb"
+  },
+  "runScriptSha256": "921ee79c98794c5d992569d397355c67d8f5cd1ed14ed25c4879367067ab7ab3",
+  "scopeQualification": "Recorded init files were not edited during execution. XML/event/selected identities are reconciled. No full-suite claim."
+}

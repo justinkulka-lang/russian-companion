@@ -1,0 +1,1 @@
+allprojects { tasks.withType(Test).configureEach { reports.junitXml.outputLocation.set(file("/workspace/artifacts/cc014-preview/BASELINE/XML")) } }

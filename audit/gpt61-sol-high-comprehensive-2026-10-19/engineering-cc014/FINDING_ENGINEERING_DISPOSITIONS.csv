@@ -1,0 +1,2 @@
+finding_id,audit_status,engineering_disposition,corrected_source,evidence,remaining_independent_work
+CC014,OPEN,IMPLEMENTED_SCOPED_HOST_VERIFIED_PENDING_INDEPENDENT_RECHECK,68eb86dca4de912dc2e3067b684012afd176cd50,BASELINE/RESULT.json;CORRECTED/RESULT.json,Independent changed-source review;broader audit and physical acceptance remain outstanding

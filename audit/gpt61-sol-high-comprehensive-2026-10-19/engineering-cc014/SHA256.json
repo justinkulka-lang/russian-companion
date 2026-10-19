@@ -1,0 +1,94 @@
+{
+  "BASELINE/CONTEXT.json": {
+    "bytes": 2071,
+    "sha256": "aeadda364ee50798623035c81d5a0fef8f8bf5a190e1f16a1f128d92b35633ce"
+  },
+  "BASELINE/EVENTS.jsonl": {
+    "bytes": 3373,
+    "sha256": "886dcdeaac8194cc4508ecf712e7db6afae0720405d346706f6dba6bc372a253"
+  },
+  "BASELINE/RESULT.json": {
+    "bytes": 1869,
+    "sha256": "e48df65908d79385002942e3b5cf71fb1d8506f3ae2dcd22c6da6137024eb48a"
+  },
+  "BASELINE/RUN.exit": {
+    "bytes": 2,
+    "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+  },
+  "BASELINE/RUN.log": {
+    "bytes": 6049,
+    "sha256": "c6ced85f9f5e94e6d81c1c19c6d68680930599a0b49d4b9a695d4f491e77a94f"
+  },
+  "BASELINE/XML/TEST-dev.russiancompanion.v2.RestorePreviewReviewHistoryTest.xml": {
+    "bytes": 22651,
+    "sha256": "548e69b6cdfe7747b49d2f2504744303f26e77f61d28558bd04639fd58d94c10"
+  },
+  "BASELINE/output.gradle": {
+    "bytes": 148,
+    "sha256": "6b28054cad4929e40cb0b9b367aec4dfe8135b707c5b694d61c3bcc9a8d2d9fb"
+  },
+  "BASELINE/run.sh": {
+    "bytes": 644,
+    "sha256": "921ee79c98794c5d992569d397355c67d8f5cd1ed14ed25c4879367067ab7ab3"
+  },
+  "CORRECTED/CONTEXT.json": {
+    "bytes": 6185,
+    "sha256": "ec138e7068a02bc08a192489372cfca11ca7f9b96edebe2373456db095ba6308"
+  },
+  "CORRECTED/EVENTS.jsonl": {
+    "bytes": 4852,
+    "sha256": "8e842095e7ab9262cfcd2df9dbcdefa1352c6520a1e16136c3e1167a1165bb8b"
+  },
+  "CORRECTED/LINT.xml": {
+    "bytes": 31476,
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "CORRECTED/RESULT.json": {
+    "bytes": 2580,
+    "sha256": "6162f572bbb6f0f8d8d63ad37501c7efd54b1653a347c95452378c4776350102"
+  },
+  "CORRECTED/RUN.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "CORRECTED/RUN.log": {
+    "bytes": 4312,
+    "sha256": "4e00986f0888173ca30b5c365844dc1cc78d0f66d75d2e003c666aa56be3a927"
+  },
+  "CORRECTED/XML/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml": {
+    "bytes": 484,
+    "sha256": "9dd155fd147484d873497151f178ab13b6bc9e272081ddb0da6a466c19cd8750"
+  },
+  "CORRECTED/XML/TEST-dev.russiancompanion.v2.RestorePreviewReviewHistoryTest.xml": {
+    "bytes": 1151,
+    "sha256": "8d9c63412e41ca28d242c9da156ee10a9bd267801c1aa4e683ab098d93059d2f"
+  },
+  "CORRECTED/XML/TEST-dev.russiancompanion.v2.RestorePreviewReviewIntegrationTest.xml": {
+    "bytes": 686,
+    "sha256": "d4828ebfea5e9f48fcfefffbb42e48c3b3aa962a1df2726c3520f4a4e7c111f2"
+  },
+  "CORRECTED/run.sh": {
+    "bytes": 838,
+    "sha256": "5dc8abed5e3fb4291f2a61cc97ec52003c69f08dea560626b714f879b377b86c"
+  },
+  "ENGINEERING_CHANGE_REPORT.md": {
+    "bytes": 4947,
+    "sha256": "b595a3e159722f4b188b9e7ad43fc22aa445494a7474d6b1b308960a08305499"
+  },
+  "EXECUTION_REQUEST_PROGRESS.csv": {
+    "bytes": 17595,
+    "sha256": "8096e828b7ab11ff35799f3285ec1df235ebcb03cb045a48af5c3f0f0c522d55"
+  },
+  "FINDING_ENGINEERING_DISPOSITIONS.csv": {
+    "bytes": 348,
+    "sha256": "31e85f08ff777a4b88a024e3dee415603e6770ff414be1698ee6425d1053a746"
+  },
+  "IMPLEMENTATION.patch": {
+    "bytes": 7594,
+    "sha256": "30d7588f142e5bfa021704bd25537d11e70f605576a31209581eec12e441a888"
+  },
+  "VERIFICATION_MANIFEST.json": {
+    "bytes": 1517,
+    "sha256": "e3426b6ab4a43159d7f52c796d291d8b965386180d474aeb648a8477c4bfc90a"
+  }
+}

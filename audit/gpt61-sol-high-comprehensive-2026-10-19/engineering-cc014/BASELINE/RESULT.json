@@ -1,0 +1,57 @@
+{
+  "sourceCommit": "594571879cb4debada8774eda311763cb3775c9b",
+  "exitCode": 1,
+  "testCounts": {
+    "reported": 5,
+    "passed": 0,
+    "failed": 5,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 1,
+  "tests": [
+    {
+      "class": "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+      "method": "retainedReviewOnlyPairsShowTwoAnswersRemovedInReverse",
+      "seconds": "0.187",
+      "outcome": "FAILED"
+    },
+    {
+      "class": "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+      "method": "openAssignmentAddedOrRemovedIsVisibleWithoutOtherRecordChanges",
+      "seconds": "0.046",
+      "outcome": "FAILED"
+    },
+    {
+      "class": "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+      "method": "retainedReviewOnlyPairsShowTwoIncomingAnswers",
+      "seconds": "0.048",
+      "outcome": "FAILED"
+    },
+    {
+      "class": "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+      "method": "sameAnswerIdentityWithChangedSelectionIsAConflictInBothDirections",
+      "seconds": "0.049",
+      "outcome": "FAILED"
+    },
+    {
+      "class": "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+      "method": "unchangedReviewHistoryCountsSharedRecordsAndDoesNotMutateTheDocument",
+      "seconds": "0.047",
+      "outcome": "FAILED"
+    }
+  ],
+  "xmlFreshRelativeToRunScriptCreation": true,
+  "eventAndXmlMethodIdentitiesEqual": true,
+  "taskStatuses": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest FAILED",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugSources": "NOT_SELECTED_OR_REACHED",
+    "lintDebug": "NOT_SELECTED_OR_REACHED",
+    "verifyReleaseGateAttachment": "NOT_SELECTED_OR_REACHED"
+  },
+  "lintIssues": {},
+  "completeSuite": false,
+  "separateBaselineAndCorrectedScopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}
