@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.FragmentGlossTeachingTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-19T21:57:58.616Z" hostname="d0aced911621" time="33.278">
+  <properties/>
+  <testcase name="bothRepairsRestoreCompleteTeachingAndAllSevenExamples" classname="dev.russiancompanion.v2.FragmentGlossTeachingTest" time="12.207"/>
+  <testcase name="threeTeachingBodiesDescribePhrasesWithoutAbsentPredicates" classname="dev.russiancompanion.v2.FragmentGlossTeachingTest" time="0.195"/>
+  <testcase name="oldTeachingCreditAndResumeStayStoredButAreStaleUntilFreshWork" classname="dev.russiancompanion.v2.FragmentGlossTeachingTest" time="7.384"/>
+  <testcase name="everyNativeItemExampleHistoricalRecordAndUnrelatedUnitRemainsExact" classname="dev.russiancompanion.v2.FragmentGlossTeachingTest" time="10.33"/>
+  <testcase name="backupAndNamedDatabaseReopenPreserveOldRowsAndFreshResumeIdentity" classname="dev.russiancompanion.v2.FragmentGlossTeachingTest" time="0.607"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

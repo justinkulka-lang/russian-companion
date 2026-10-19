@@ -1,0 +1,19 @@
+{
+  "baseline": "37419b9c20c72eaf48ef2e5244520973ed29de8c",
+  "sourceCommit": "7efff9e18328c612de235236d98e834bb85cd1db",
+  "oldAssetSha256": "a6a5f314cff598a722e22b977292b0b7b1d1cfb460fc1415c8f50f034c3a9b5c",
+  "newAssetSha256": "64d03d176e6ec6371684d5091a303139340aaa4a55ae67cb46d2738f9f81f67b",
+  "allOtherDataExactAfterRevertingFiveDeclaredStepsAndFiveNewRecords": true,
+  "unchangedItems": 626,
+  "unchangedExamples": 821,
+  "unchangedExistingProvenance": 6984,
+  "addedPendingRecords": 5,
+  "all66ArchiveHashesMatch": true,
+  "all28OtherUnitsExact": true,
+  "unchangedTrees": {
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694",
+    "release": "de511a38471128e460d0ea88bc8baca357233148"
+  }
+}
