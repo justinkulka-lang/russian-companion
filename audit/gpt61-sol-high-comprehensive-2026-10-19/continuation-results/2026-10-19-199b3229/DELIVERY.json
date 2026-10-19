@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "file": "GPT61_SAME_CHAT_AUDIT_CONTINUATION_RESULTS.zip",
+  "bytes": 601558,
+  "sha256": "199b3229665b769b043434f1d6a69abb242d91b16fd6ed26187fad1acb294185",
+  "gitBlob": "c5b5cff19df47accb630c85a6bb836b6e46f5bd2",
+  "requiredOutputs": 16,
+  "archiveEntries": 29,
+  "auditOutcome": "INCOMPLETE",
+  "authorityDisposition": "DIAGNOSTIC_ONLY",
+  "targetCommit": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "targetTree": "f95bfa3c1ae6b8ac07b42b6db9fa69c5e247830f",
+  "inputDeliveryCommit": "48fe8e12499920a213e908ce1fb788cde9265ab7",
+  "publicationParent": "48fe8e12499920a213e908ce1fb788cde9265ab7",
+  "publicationScope": "New audit artifacts on draft PR64 only; no app/test/curriculum edits",
+  "runtimeExecuted": false,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "privateBookBytesOrExpressionIncluded": false,
+  "originalResultsReplaced": false
+}
