@@ -1,0 +1,56 @@
+{
+  "finding": "CC013",
+  "engineeringDisposition": "IMPLEMENTED_SCOPED_HOST_VERIFIED_PENDING_INDEPENDENT_RECHECK",
+  "sourceCommit": "8b76738a2e70da4f7f0db3f4b60f588b41aef0fe",
+  "preChangeSource": "5ce61345fe9340b571785a1789c03a535a17fe5a",
+  "authoritativeLatestScope": "HARDENED/RESULT.json",
+  "scopeCounts": {
+    "INITIAL": {
+      "reported": 23,
+      "passed": 23,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "FINAL": {
+      "reported": 30,
+      "passed": 30,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "HARDENED": {
+      "reported": 32,
+      "passed": 32,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "scopeCountsMustNotBeSummed": true,
+  "supportedPolicy": {
+    "inputBytes": 268435456,
+    "entries": 2048,
+    "directoryBytes": 1048576,
+    "manifestBytes": 1048576,
+    "learnerBytes": 16777216,
+    "recordingBytes": 67108864,
+    "expandedBytes": 536870912
+  },
+  "all64RetainedBackupFormatsAccepted": true,
+  "all66RetainedArchiveAllowlistHashesMatch": true,
+  "onlyExistingFilesChanged": [
+    "app/src/main/java/dev/russiancompanion/v2/backup/V2BackupFormat.kt",
+    "app/src/main/java/dev/russiancompanion/v2/ui/V2BackupCoordinator.kt"
+  ],
+  "existingTestsAndHistoricalFixturesUnchanged": true,
+  "curriculumCatalogDocsReviewUnchanged": true,
+  "completeSuite": false,
+  "apk": {
+    "configuredIdentity": "dev.russiancompanion /2.0.0-dev /versionCode5",
+    "assemblySigning": "NOT_RUN",
+    "sha256Signature": "NOT_RECORDED_NO_NEW_ARTIFACT"
+  },
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "releaseApproval": false
+}

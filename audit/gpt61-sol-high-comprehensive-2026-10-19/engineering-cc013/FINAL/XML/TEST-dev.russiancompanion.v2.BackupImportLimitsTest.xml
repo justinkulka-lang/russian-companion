@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.BackupImportLimitsTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2026-10-19T18:45:08.766Z" hostname="d0aced911621" time="2.004">
+  <properties/>
+  <testcase name="directoryAllocationLimitRejectsBeforeOpeningTheZip" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.264"/>
+  <testcase name="writerAndReaderAcceptTheSameExactBoundaries" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.225"/>
+  <testcase name="aggregateExpansionRejectsTheSecondRecordingAndRemovesEarlierStaging" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.075"/>
+  <testcase name="recordingExpansionIsBoundedWhenCompressedSizeMetadataLies" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.042"/>
+  <testcase name="forgedDirectoryCountIsRejectedBeforeZipMetadataAllocation" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.016"/>
+  <testcase name="cancellationAfterInputReadRejectsBeforeStagingData" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.004"/>
+  <testcase name="cancellationDuringRecordingExpansionCleansPartialRecording" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.025"/>
+  <testcase name="learnerExpansionIsBoundedEvenWhenBothDeclaredSizesLie" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.01"/>
+  <testcase name="writerRefusesLearnerAndRecordingSizesOutsideTheImportPolicy" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.019"/>
+  <testcase name="defaultLimitsAcceptAllSixtyFourRetainedArchivesWithoutRewritingThem" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="1.139"/>
+  <testcase name="unknownLengthInputStopsAtOneExcessByteAndCleansOnlyOwnedFiles" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.004"/>
+  <testcase name="conflictingDeclaredPathsRemainRejectedAndStagingIsCleaned" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.006"/>
+  <testcase name="entryCountLimitRejectsBeforeBuildingAnUnboundedNameCollection" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.006"/>
+  <testcase name="exactLimitsAcceptCompatibleArchiveAndRecordingBytes" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.043"/>
+  <testcase name="manifestExpansionIsBoundedEvenWhenCentralDirectorySizeLies" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.007"/>
+  <testcase name="smallZip64ArchiveRemainsCompatibleWithDefaultPolicy" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.011"/>
+  <testcase name="existingStagingInputsAreNeverOverwrittenOrDeleted" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.003"/>
+  <testcase name="writerStopsBeforeItsCompressedOutputExceedsTheImportInputCap" classname="dev.russiancompanion.v2.BackupImportLimitsTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,210 @@
+{
+  "sourceCommit": "0eed6c2e92dd4e2edf8f57cca33435439d209865",
+  "exitCode": 0,
+  "testCounts": {
+    "reported": 30,
+    "passed": 30,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 5,
+  "tests": [
+    {
+      "class": "dev.russiancompanion.v2.BackupImportCoordinatorLimitsTest",
+      "method": "cancellationDuringProviderReadStopsImportWithoutReplacingTheLearner",
+      "outcome": "PASSED",
+      "seconds": "9.361"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportCoordinatorLimitsTest",
+      "method": "oversizedImportPreservesLearnerCleansStagingAndAllowsTheNextValidPreview",
+      "outcome": "PASSED",
+      "seconds": "1.176"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "directoryAllocationLimitRejectsBeforeOpeningTheZip",
+      "outcome": "PASSED",
+      "seconds": "0.264"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "writerAndReaderAcceptTheSameExactBoundaries",
+      "outcome": "PASSED",
+      "seconds": "0.225"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "aggregateExpansionRejectsTheSecondRecordingAndRemovesEarlierStaging",
+      "outcome": "PASSED",
+      "seconds": "0.075"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "recordingExpansionIsBoundedWhenCompressedSizeMetadataLies",
+      "outcome": "PASSED",
+      "seconds": "0.042"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "forgedDirectoryCountIsRejectedBeforeZipMetadataAllocation",
+      "outcome": "PASSED",
+      "seconds": "0.016"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "cancellationAfterInputReadRejectsBeforeStagingData",
+      "outcome": "PASSED",
+      "seconds": "0.004"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "cancellationDuringRecordingExpansionCleansPartialRecording",
+      "outcome": "PASSED",
+      "seconds": "0.025"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "learnerExpansionIsBoundedEvenWhenBothDeclaredSizesLie",
+      "outcome": "PASSED",
+      "seconds": "0.01"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "writerRefusesLearnerAndRecordingSizesOutsideTheImportPolicy",
+      "outcome": "PASSED",
+      "seconds": "0.019"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "defaultLimitsAcceptAllSixtyFourRetainedArchivesWithoutRewritingThem",
+      "outcome": "PASSED",
+      "seconds": "1.139"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "unknownLengthInputStopsAtOneExcessByteAndCleansOnlyOwnedFiles",
+      "outcome": "PASSED",
+      "seconds": "0.004"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "conflictingDeclaredPathsRemainRejectedAndStagingIsCleaned",
+      "outcome": "PASSED",
+      "seconds": "0.006"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "entryCountLimitRejectsBeforeBuildingAnUnboundedNameCollection",
+      "outcome": "PASSED",
+      "seconds": "0.006"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "exactLimitsAcceptCompatibleArchiveAndRecordingBytes",
+      "outcome": "PASSED",
+      "seconds": "0.043"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "manifestExpansionIsBoundedEvenWhenCentralDirectorySizeLies",
+      "outcome": "PASSED",
+      "seconds": "0.007"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "smallZip64ArchiveRemainsCompatibleWithDefaultPolicy",
+      "outcome": "PASSED",
+      "seconds": "0.011"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "existingStagingInputsAreNeverOverwrittenOrDeleted",
+      "outcome": "PASSED",
+      "seconds": "0.003"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupImportLimitsTest",
+      "method": "writerStopsBeforeItsCompressedOutputExceedsTheImportInputCap",
+      "outcome": "PASSED",
+      "seconds": "0.006"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupLicenseTest",
+      "method": "backupRoundTripRestoresGovernedRecordsWithoutChangingTheLiveCopy",
+      "outcome": "PASSED",
+      "seconds": "12.293"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupLicenseTest",
+      "method": "recordingBytesRoundTripAndBackupDoesNotClaimAFailedWrite",
+      "outcome": "PASSED",
+      "seconds": "1.297"
+    },
+    {
+      "class": "dev.russiancompanion.v2.BackupLicenseTest",
+      "method": "malformedTruncatedUnsupportedAndTamperedPackagesDoNotChangeData",
+      "outcome": "PASSED",
+      "seconds": "2.999"
+    },
+    {
+      "class": "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+      "method": "retainedReviewOnlyPairsShowTwoAnswersRemovedInReverse",
+      "outcome": "PASSED",
+      "seconds": "0.824"
+    },
+    {
+      "class": "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+      "method": "openAssignmentAddedOrRemovedIsVisibleWithoutOtherRecordChanges",
+      "outcome": "PASSED",
+      "seconds": "0.194"
+    },
+    {
+      "class": "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+      "method": "retainedReviewOnlyPairsShowTwoIncomingAnswers",
+      "outcome": "PASSED",
+      "seconds": "0.123"
+    },
+    {
+      "class": "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+      "method": "sameAnswerIdentityWithChangedSelectionIsAConflictInBothDirections",
+      "outcome": "PASSED",
+      "seconds": "0.204"
+    },
+    {
+      "class": "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+      "method": "unchangedReviewHistoryCountsSharedRecordsAndDoesNotMutateTheDocument",
+      "outcome": "PASSED",
+      "seconds": "0.107"
+    },
+    {
+      "class": "dev.russiancompanion.v2.RestorePreviewReviewIntegrationTest",
+      "method": "cancellingReviewOnlyRestorePreservesTheExistingLearner",
+      "outcome": "PASSED",
+      "seconds": "3.997"
+    },
+    {
+      "class": "dev.russiancompanion.v2.RestorePreviewReviewIntegrationTest",
+      "method": "previewedReviewChangesMatchRestoredAndReopenedRecordsForRetainedPairs",
+      "outcome": "PASSED",
+      "seconds": "3.303"
+    }
+  ],
+  "selectedInventoryAtExactSourceEqualsXmlAndEvents": true,
+  "xmlFreshRelativeToRunScriptCreation": true,
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Warning": 20,
+    "Hint": 1
+  },
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

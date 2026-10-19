@@ -1,0 +1,69 @@
+{
+  "sourceCommit": "0eed6c2e92dd4e2edf8f57cca33435439d209865",
+  "inputTrees": {
+    "app/src/main": "23068afed26eb5e4c3c252fa2ee8bbfa644d07b9",
+    "app/src/test": "72f0e954a311a974ea71cf94592ccc42c060078c",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-Daudit.events.path=/workspace/artifacts/cc013-import/FINAL/EVENTS.jsonl",
+    "testDebugUnitTest",
+    "--tests",
+    "dev.russiancompanion.v2.BackupImportLimitsTest",
+    "--tests",
+    "dev.russiancompanion.v2.BackupImportCoordinatorLimitsTest",
+    "--tests",
+    "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+    "--tests",
+    "dev.russiancompanion.v2.RestorePreviewReviewIntegrationTest",
+    "--tests",
+    "dev.russiancompanion.v2.BackupLicenseTest.backupRoundTripRestoresGovernedRecordsWithoutChangingTheLiveCopy",
+    "--tests",
+    "dev.russiancompanion.v2.BackupLicenseTest.recordingBytesRoundTripAndBackupDoesNotClaimAFailedWrite",
+    "--tests",
+    "dev.russiancompanion.v2.BackupLicenseTest.malformedTruncatedUnsupportedAndTamperedPackagesDoNotChangeData",
+    "--rerun",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=4",
+    "--console=plain"
+  ],
+  "selectors": [
+    "dev.russiancompanion.v2.BackupImportLimitsTest",
+    "dev.russiancompanion.v2.BackupImportCoordinatorLimitsTest",
+    "dev.russiancompanion.v2.RestorePreviewReviewHistoryTest",
+    "dev.russiancompanion.v2.RestorePreviewReviewIntegrationTest",
+    "dev.russiancompanion.v2.BackupLicenseTest.backupRoundTripRestoresGovernedRecordsWithoutChangingTheLiveCopy",
+    "dev.russiancompanion.v2.BackupLicenseTest.recordingBytesRoundTripAndBackupDoesNotClaimAFailedWrite",
+    "dev.russiancompanion.v2.BackupLicenseTest.malformedTruncatedUnsupportedAndTamperedPackagesDoNotChangeData"
+  ],
+  "activation": "source /workspace/setup/android-env.sh",
+  "expectedMethods": 30,
+  "scope": "Selected host methods only;not full suite",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblySigning": "NOT_RUN",
+  "sourceTestHashes": {
+    "app/src/test/java/dev/russiancompanion/v2/BackupImportLimitsTest.kt": "556ae9e747faf7873b79208fd43aed5075cbae09721ed48893266005bf672338",
+    "app/src/test/java/dev/russiancompanion/v2/BackupImportCoordinatorLimitsTest.kt": "a2248a1426200660b43d351d01bbd8d0d84e6d508b7a3746eea2f40ef1cda0c1"
+  }
+}

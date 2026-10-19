@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.RestorePreviewReviewHistoryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-19T18:45:12.003Z" hostname="d0aced911621" time="1.494">
+  <properties/>
+  <testcase name="retainedReviewOnlyPairsShowTwoAnswersRemovedInReverse" classname="dev.russiancompanion.v2.RestorePreviewReviewHistoryTest" time="0.824"/>
+  <testcase name="openAssignmentAddedOrRemovedIsVisibleWithoutOtherRecordChanges" classname="dev.russiancompanion.v2.RestorePreviewReviewHistoryTest" time="0.194"/>
+  <testcase name="retainedReviewOnlyPairsShowTwoIncomingAnswers" classname="dev.russiancompanion.v2.RestorePreviewReviewHistoryTest" time="0.123"/>
+  <testcase name="sameAnswerIdentityWithChangedSelectionIsAConflictInBothDirections" classname="dev.russiancompanion.v2.RestorePreviewReviewHistoryTest" time="0.204"/>
+  <testcase name="unchangedReviewHistoryCountsSharedRecordsAndDoesNotMutateTheDocument" classname="dev.russiancompanion.v2.RestorePreviewReviewHistoryTest" time="0.107"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
