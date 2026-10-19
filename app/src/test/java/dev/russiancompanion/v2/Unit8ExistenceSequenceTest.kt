@@ -19,7 +19,7 @@ class Unit8ExistenceSequenceTest {
         assertFalse("Unit8 must retain positive existence without analyzed absence/genitive: $text",
             Regex("genitive|absence|absent|нет", RegexOption.IGNORE_CASE).containsMatchIn(text))
         assertEquals(3,o.checkItemIds.size)
-        assertEquals(18,u.advancement.minimumDistinctChecks)
+        assertEquals(18,u.advancement!!.minimumDistinctChecks)
     }
     @Test fun fullRepairRestoresPositiveInstructionAndOnlyTwoPositiveExamples() {
         val p=pack(); val session=p.unit(8)!!.sessions.single { it.id=="u8-s-availability" }
