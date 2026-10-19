@@ -1,0 +1,60 @@
+Still on the audit packaging: writing the last two deliverables (scope/evidence JSON and the handoff), then the checksum inventory and ZIP.
+
+Writing the scope/evidence JSON now. First I'm pulling the coverage counts so it matches the other files.
+
+Now writing the scope/evidence JSON through a script, so the output is guaranteed to be valid JSON.
+
+Fixing one count inconsistency between the report and the JSON (73 of the 80 partial app-source files were pattern-searched only, and 7 were read in sections).
+
+Writing the Codex handoff next. First I'm locating where the 64 lifecycle histories and the original failure records live, so the handoff can point to exact paths.
+
+All 66 retained archives (the 64 lifecycle backups plus 2 raw broad-run archives) match their recorded hashes. I'm adding that check to the scope JSON and the report.
+
+Now the Codex handoff. I'm generating it from FINDINGS.csv so the IDs, paths and acceptance tests match exactly, with the governance and preservation sections written by hand.
+
+Moving CC013 and CC018 out of the "code-only" tier, because their fixes also need new items.
+
+All 12 deliverables now exist. Next I'm validating them: UTF-8, CSV and JSON parsing, row counts, preservation of seeded rows, and a scan for private-reference material.
+
+APP_ENGINEERING_AUDIT.csv shows 14 duplicate surface_id keys. Checking whether these are real duplicates or a shared placeholder value from the template.
+
+The placeholder surface_id in the 15 seeded domain rows isn't a defect—it's preserved as given, and (domain, surface_id) stays unique across all 96 rows. Now I'll build the SHA256 inventory and the ZIP.
+
+Now updating the checkpoint and confirming the checkout was never touched.
+
+The audit is finished and packaged. **The overall result is INCOMPLETE**, as a diagnostic only. Every area I could reach was inspected by reading code and parsing the full content pack, and that produced 59 findings. Nothing could be run: the test suite, lint and the app's own validator were not executed, so every runtime and device claim is still unverified.
+
+**ZIP:** `/tmp/claude-0/-home-user-russian-companion/bc1286d4-331b-5fd1-b610-f02e4c194c05/scratchpad/claude-code-audit-20261019-dc8aa6ef/CLAUDE_COMPREHENSIVE_AUDIT_RESULTS.zip`
+- 593,500 bytes, SHA256 `44fa3a63c1a9e2fbb589874b73235acb4492d47627d556e748aae8897dac437f`
+- Contains the 12 deliverables plus a `SHA256SUMS` inventory. Every CSV and JSON parses as UTF-8, and every seeded template row is kept.
+
+**Most serious findings (7 HIGH, 30 MEDIUM, 22 LOW):**
+- **CC001:** in 561 of 622 items the correct answer is the first option, and nothing shuffles the options. Always tapping the first option passes every gated check in 25 units.
+- **CC002:** credit is given for any correct attempt. Options stay tappable after a wrong pick, so trial and error gets full credit.
+- **CC003:** in 53 items the wrong option simply repeats the word shown in the question, so the answer is whichever option differs.
+- **CC004:** all 28 review sessions are fixed in code and reuse the same Unit 1 item.
+- **CC005:** Units 1, 16, 20 and 22 are marked content-complete but leave out topics the authority document assigns to them.
+- **CC006:** the app turns off the system bar and cutout spacing in edge-to-edge mode, so content can sit under the status and navigation bars.
+- **CC007:** teaching text has contradictions, leftover mistranslations and raw wiki markup.
+
+**Rechecks of earlier audits:**
+- Of the 75 earlier correction targets, 62 are resolved, 7 changed but not resolved, and 6 unresolved.
+- Of the 18 earlier IA findings, 12 are resolved, 5 changed but not resolved, and 1 unresolved (IA004, the missing audio and phonetic foundation).
+
+**Why the result is INCOMPLETE:**
+- **No Android SDK.** The network policy blocks `dl.google.com`, so no Gradle task ran.
+- **No device testing.** The physical Galaxy S26 Ultra acceptance check is still outstanding and comes last.
+- **No private Penguin PDF was supplied,** so alignment with the book is unverified.
+- **No qualified linguistic or legal review.** My item verdicts are diagnostic readings only.
+- **Partial file coverage.** 1,600 files were hashed only and 4,654 historical files were referenced but not read.
+
+**To unblock the runtime checks** in a later session, add `dl.google.com` under Allowed domains in this environment's Network access settings (environment menu in the title bar, then Edit). Steps: https://code.claude.com/docs/en/cloud-environments#network-access
+
+**Other things you should know:**
+- `PR64`'s branch has two commits beyond the audited commit `dc8aa6ef`, and I did not audit them.
+- The kit's README says the audit target is recorded in `AUDIT_DELIVERY.json`, but that file doesn't exist in the kit. I took the target from your instructions document and confirmed it in git.
+- All 66 retained archives (the 64 lifecycle backups and 2 raw test-run archives) match their recorded hashes. I did not open them.
+
+I followed the audit-only constraints: the checkout is unchanged (still `ff539220`, no files written), and nothing was committed, merged, frozen, built, signed or approved.
+
+`CODEX_RETURN_HANDOFF.md` lists the corrections in priority order. For each finding it gives the file paths, the fix, the test that should prove it, and whether the defect is proved, a hypothesis, or needs qualified review.

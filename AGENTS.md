@@ -1,5 +1,7 @@
 # Codex continuation
 
+Latest received audit: [summary-only triage and next step](audit/claude-code-comprehensive-2026-10-19/received-summary-2026-10-19/NEXT_REVIEW.md). Only the pasted summary is received; the actual twelve results are unavailable. Do not treat it as a completed audit or invent missing findings.
+
 Read the [engineering continuation](audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md) and [latest checkpoint](audit/content-corrections/CODEX_CHECKPOINT_2026-10-12.md) before editing. Use one agent and the existing checkout on `cursor/content-audit-corrections-964f`, Draft PR64.
 
 Current private-reference access: user explicitly requested GitHub storage of the new attachment. Read [PRIVATE_REFERENCE_ACCESS.md](audit/claude-code-comprehensive-2026-10-19/PRIVATE_REFERENCE_ACCESS.md). The private book is isolated on branch `private-reference/penguin-2bcc0c45` at `df76700be64b9fe409dd02f7b5d0c8903a910517`;never merge it or package it. Fetch locally outside the checkout with fetch_private_reference.py. New input SHA256 `2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303`,13596737bytes differs from earlier0c441ffd/13572361bytes;do not claim continuity. The app branch must keep zero tracked PDFs. Earlier no-GitHub statements are historical for this narrow user-authorized private storage exception;all other private-content/release/device limits remain.

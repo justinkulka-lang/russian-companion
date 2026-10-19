@@ -1,0 +1,29 @@
+{
+  "origin": "User uploaded Pasted text.txt; summary only, not original audit results archive",
+  "files": {
+    "ENVIRONMENT_CHECK.log": {
+      "bytes": 2226,
+      "sha256": "20d11f7f8ab653da6b143ab08f24ddec6d58ebe6c6afceba42e4c42152bd8e73"
+    },
+    "NEXT_REVIEW.md": {
+      "bytes": 4620,
+      "sha256": "1868ecaa73d4cd6ccc9206ef0cba747efe56783b315e23736b9b6fff58a7c87f"
+    },
+    "ORIGINAL_CLAUDE_SUMMARY.txt": {
+      "bytes": 5425,
+      "sha256": "b2fe6870676004e67301fc9f536e461fec0b6dc51403164ba89728b4a49363e9"
+    },
+    "RETURN_RESULTS_TO_CODEX.md": {
+      "bytes": 1739,
+      "sha256": "7d4521a167ce589a86f243f77f02957dbefa094fc887d82772f7266bf1cdb8cf"
+    },
+    "STATIC_TRIAGE.json": {
+      "bytes": 25243,
+      "sha256": "50a2cae61153e5ec3f3def89374ea46d5b8542f745f5348d43b7da540ba79038"
+    },
+    "lint-results-debug.xml": {
+      "bytes": 31476,
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+    }
+  }
+}
