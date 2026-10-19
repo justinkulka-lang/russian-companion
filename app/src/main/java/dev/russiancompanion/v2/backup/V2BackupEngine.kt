@@ -1,6 +1,8 @@
 package dev.russiancompanion.v2.backup
 
 import dev.russiancompanion.data.local.LocalStore
+import dev.russiancompanion.v2.curriculum.CumulativeReviewAssignment
+import dev.russiancompanion.v2.curriculum.CumulativeReviewAnswer
 import kotlinx.serialization.encodeToString
 import java.io.File
 import java.io.OutputStream
@@ -90,5 +92,11 @@ private fun learnerRecords(document: GovernedLearnerDocument): Map<String, Strin
     }
     document.decisions.forEach { records["decision:${it.id}"] = backupJson.encodeToString(BackupDecision.serializer(), it) }
     document.recordings.forEach { records["recording:${it.id}"] = backupJson.encodeToString(BackupRecording.serializer(), it) }
+    document.reviewAssignments.forEach {
+        records["review-assignment:${it.id}"] = backupJson.encodeToString(CumulativeReviewAssignment.serializer(), it)
+    }
+    document.reviewAnswers.forEach {
+        records["review-answer:${it.id}"] = backupJson.encodeToString(CumulativeReviewAnswer.serializer(), it)
+    }
     return records
 }

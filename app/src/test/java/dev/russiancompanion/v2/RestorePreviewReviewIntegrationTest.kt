@@ -1,0 +1,109 @@
+package dev.russiancompanion.v2
+
+import android.content.Context
+import android.os.Looper
+import androidx.test.core.app.ApplicationProvider
+import dev.russiancompanion.data.appearance.AppearanceStore
+import dev.russiancompanion.data.local.LocalStore
+import dev.russiancompanion.domain.appearance.AppearancePreference
+import dev.russiancompanion.v2.backup.*
+import dev.russiancompanion.v2.curriculum.V2PackLoader
+import dev.russiancompanion.v2.ui.V2BackupCoordinator
+import dev.russiancompanion.v2.ui.V2BackupPhase
+import org.junit.Assert.*
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.robolectric.RobolectricTestRunner
+import org.robolectric.Shadows
+import org.robolectric.annotation.Config
+import java.io.File
+import java.util.concurrent.TimeUnit
+
+@RunWith(RobolectricTestRunner::class)
+@Config(sdk = [33])
+class RestorePreviewReviewIntegrationTest {
+    @Test fun previewedReviewChangesMatchRestoredAndReopenedRecordsForRetainedPairs() {
+        exercisePairs(restore = true)
+    }
+
+    @Test fun cancellingReviewOnlyRestorePreservesTheExistingLearner() {
+        exercisePairs(restore = false)
+    }
+
+    private fun exercisePairs(restore: Boolean) {
+        val context: Context = ApplicationProvider.getApplicationContext()
+        val pack = V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText())
+        for (group in groups) {
+            val before = document(group, "UNSTARTED_REVIEW")
+            val after = document(group, "PARTIAL_REVIEW")
+            val name = "review-preview-${System.nanoTime()}.db"
+            val work = File(context.cacheDir, "review-preview-${System.nanoTime()}")
+            try {
+                LocalStore.openNamed(context, name).use { store ->
+                    store.openLearnerReplacement()
+                    try {
+                        assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(before, emptyList()))
+                    } finally { store.closeLearnerReplacement() }
+                    assertEquals(before.reviewAssignments to before.reviewAnswers, store.cumulativeReviewHistory())
+                    val fingerprint = store.governedLearnerFingerprint()
+                    val coordinator = V2BackupCoordinator(store, "dev.russiancompanion", pack.packId, pack.packVersion,
+                        AppearanceStore.memory(AppearancePreference.DARK), work)
+                    try {
+                        assertTrue(coordinator.begin(V2BackupPhase.PREPARING))
+                        coordinator.openBackup { File(root(), "$group/PARTIAL_REVIEW.zip").inputStream() }
+                        await { coordinator.phase == V2BackupPhase.AWAITING_CONFIRMATION || coordinator.phase == V2BackupPhase.FAILED }
+                        assertEquals(coordinator.message, V2BackupPhase.AWAITING_CONFIRMATION, coordinator.phase)
+                        assertEquals(2, coordinator.preview!!.additions)
+                        assertEquals(0, coordinator.preview!!.omissions)
+                        assertEquals(0, coordinator.preview!!.conflicts)
+                        assertEquals(fingerprint, store.governedLearnerFingerprint())
+                        if (restore) {
+                            coordinator.confirmRestore {}
+                            await { coordinator.phase == V2BackupPhase.COMPLETED || coordinator.phase == V2BackupPhase.FAILED }
+                            assertEquals(coordinator.message, V2BackupPhase.COMPLETED, coordinator.phase)
+                            assertEquals(after.reviewAssignments to after.reviewAnswers, store.cumulativeReviewHistory())
+                        } else {
+                            coordinator.cancel()
+                            assertEquals(V2BackupPhase.CANCELLED, coordinator.phase)
+                            assertNull(coordinator.preview)
+                            assertEquals(fingerprint, store.governedLearnerFingerprint())
+                        }
+                    } finally { coordinator.teardownForTests() }
+                }
+                LocalStore.openNamed(context, name).use { reopened ->
+                    val expected = if (restore) after else before
+                    assertEquals(expected.reviewAssignments to expected.reviewAnswers, reopened.cumulativeReviewHistory())
+                }
+            } finally {
+                context.deleteDatabase(name)
+                work.deleteRecursively()
+            }
+        }
+    }
+
+    private fun document(group: String, label: String) = backupJson.decodeFromString(
+        GovernedLearnerDocument.serializer(), File(root(), "$group/$label.json").readText())
+
+    private fun await(condition: () -> Boolean) {
+        val deadline = System.nanoTime() + TimeUnit.SECONDS.toNanos(20)
+        while (System.nanoTime() < deadline) {
+            Shadows.shadowOf(Looper.getMainLooper()).idle()
+            if (condition()) return
+            Thread.sleep(10)
+        }
+        fail("Timed out waiting for review-history restore")
+    }
+
+    private fun root() = File(if (File("app").isDirectory) "." else "..")
+
+    private val groups = listOf(
+        "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition",
+        "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1",
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching",
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition",
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching",
+        "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction",
+        "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching",
+        "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition",
+    )
+}
