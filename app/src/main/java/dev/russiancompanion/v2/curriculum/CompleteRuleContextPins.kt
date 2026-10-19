@@ -5,6 +5,10 @@ import java.security.MessageDigest
 /** Curated context and tuple identities, pending semantic audit; no acceptance token. */
 internal object CompleteRuleContextPins {
     private val hashes = mapOf(
+        "ca-rule-context:u8-g-availability-0:existence-v1" to "07d1f7bf3fb2cc4b57286264f39c4a3da3258faa97057b87d9a59fa37cfe0a4b",
+        "ca-rule-context:u8-i-availability-1:existence-v1" to "85ceb5fd845fd3d6c2803262f1ebbc7a5ea314accc4b257d1a3fff5853896732",
+        "ca-rule-context:u8-i-availability-2:existence-v1" to "bfcf99be6b0e7228c5ea9607a6de772dc56e75ea8362ce5e101bb99fb3dc5664",
+        "ca-rule-context:u8-i-availability-3:existence-v1" to "f40fc9faaa639adf3f28daa857d4cab7ad324232d3ab97f8c8153d8616765685",
         "ca-rule-context:u8-g-availability-0" to "fa53f98f2d74dc44f211c909b07e3ee46e9ce5b0b529f0f56cc0beb268970261",
         "ca-rule-context:u8-i-availability-1" to "3cb45ff87a2adfe6f189d6c615bd3158668075ed3af88bbd698163fed13dbe3f",
         "ca-rule-context:u8-i-availability-2" to "ff28331b1cc3029985fc4fb8e7ca84360912721429255ec9928c8b3b0473f2ad",
@@ -77,6 +81,13 @@ internal object CompleteRuleContextPins {
         "ca-rule-context:u4-i-nom-role-train" to "dda4489bc809c77929b0faf6781fd81d77c3205eafbb0d60fcb1cb61c91523c7",
         "ca-rule-context:u4-i-nom-role-student" to "043790ba60a423453702eb228e2a3ad405ffd42778ff761d2613feae4adeede0",
     )
+    // Current Unit8 scope replaces analyzed absence; original context pins remain immutable evidence.
+    private val currentUnit8Contexts = mapOf(
+        "u8-g-availability-0" to "ca-rule-context:u8-g-availability-0:existence-v1",
+        "u8-i-availability-1" to "ca-rule-context:u8-i-availability-1:existence-v1",
+        "u8-i-availability-2" to "ca-rule-context:u8-i-availability-2:existence-v1",
+        "u8-i-availability-3" to "ca-rule-context:u8-i-availability-3:existence-v1",
+    )
     fun required(itemId: String) = hashes.containsKey("ca-rule-context:$itemId")
     private fun hash(value: String) = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8))
         .joinToString("") { "%02x".format(it.toInt() and 255) }
@@ -126,7 +137,7 @@ internal object CompleteRuleContextPins {
         val ids = assessment.relationParticipantIds
         if (ids.size != item.options.size + 1 || ids.distinct().size != ids.size) return false
         val records = ids.map { id -> pack.provenanceRecords.firstOrNull { it.itemId == id } ?: return false }
-        if (!records.all { it.sourceRecordId == "ca-rule-context:${item.id}" && it.objectiveId == item.objectiveId && matchesIfPinned(it) }) return false
+        if (!records.all { it.sourceRecordId == (currentUnit8Contexts[item.id] ?: "ca-rule-context:${item.id}") && it.objectiveId == item.objectiveId && matchesIfPinned(it) }) return false
         val tuple = records[0].synthesis!!.applications.single()
         return tuple.cue == item.promptLetter && tuple.answer == item.answer && tuple.distractors == item.options.filter { it != item.answer } &&
             records[0].shippedText == tuple.cue && records[1].shippedText == tuple.answer &&
