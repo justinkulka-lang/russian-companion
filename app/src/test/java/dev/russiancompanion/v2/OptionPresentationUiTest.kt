@@ -59,16 +59,21 @@ class OptionPresentationUiTest {
         }
     }
 
-    @Test fun labRendersPermutedOrderAndRetainsUnsubmittedSelectionAcrossStateRestore() {
+    @Test fun labRetainsDisplayedOrderAndSelectionAcrossStateRestoreAndGradesSubmittedValues() {
         val p = OptionPresentationFixture.pack
         LocalStore.openInMemory(context()).use { store ->
             store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 8,
                 startingPoint = "RESUME_FROM_BOOK"))
-            val learner = store.v2LearnerView()
+            val learner = mutableStateOf(store.v2LearnerView())
             val lab = "grammar"
-            val item = practiceQueue(p, learner, lab).first()
+            val item = practiceQueue(p, learner.value, lab).first()
             val restore = StateRestorationTester(compose)
-            restore.setContent { V2LabScreen(p, learner, lab, emptySet(), {}, { _, _ -> true }) }
+            restore.setContent { V2LabScreen(p, learner.value, lab, emptySet(), {}, { id, value ->
+                store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id, value, OPTIONAL_PRACTICE,
+                    practiceStepId(lab), "fixed")!!)
+                learner.value = store.v2LearnerView()
+                true
+            }) }
             compose.waitUntil(30_000) { displayed("v2-lab-option-").isNotEmpty() }
             val before = displayed("v2-lab-option-")
             assertEquals(labPresentedOptions(item, lab), before)
@@ -79,6 +84,18 @@ class OptionPresentationUiTest {
             assertEquals(before, displayed("v2-lab-option-"))
             compose.onNodeWithTag("v2-lab-option-$option").performScrollTo().assertIsSelected()
             assertTrue(store.v2Attempts().isEmpty())
+            compose.onNodeWithTag("v2-lab-submit").performClick()
+            compose.waitForIdle()
+            assertFalse(store.v2Attempts().last().correct)
+            assertEquals(option, store.v2Attempts().last().selected)
+            assertEquals(before, displayed("v2-lab-option-"))
+            compose.onNodeWithTag("v2-lab-option-${item.answer}").performScrollTo().performClick()
+            compose.onNodeWithTag("v2-lab-submit").performClick()
+            compose.waitForIdle()
+            assertTrue(store.v2Attempts().last().correct)
+            assertEquals(item.answer, store.v2Attempts().last().selected)
+            assertTrue(creditItemIds(p, store.v2LearnerView()).isEmpty())
+            assertTrue(store.v2StepProgress().isEmpty())
         }
     }
 

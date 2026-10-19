@@ -24,7 +24,7 @@ class OptionPresentationTest {
             .flatMap { step -> step.itemIds.map { p.item(it)!! to step.id } }
         for ((name, displays) in listOf(
             "lesson" to routes.map { (item, step) -> item to lessonPresentedOptions(item, step) },
-            "required" to p.units.flatMap { it.objectives }.flatMap { it.checkItemIds }.distinct().map { id ->
+            "required" to p.units.flatMap { it.objectives }.filter { it.gating }.flatMap { it.checkItemIds }.distinct().map { id ->
                 val item = p.item(id)!!
                 val step = routes.first { it.first.id == id }.second
                 item to lessonPresentedOptions(item, step)
@@ -32,6 +32,10 @@ class OptionPresentationTest {
             "lab" to p.items.map { it to labPresentedOptions(it, "mixed") },
             "review" to p.items.map { it to presentedOptions(it, reviewOptionContext("corpus-distribution", 0)) },
         )) {
+            if (name == "required") {
+                assertEquals(429, displays.size)
+                assertEquals(379, displays.count { (item, _) -> item.options.first() == item.answer })
+            }
             displays.forEach { (item, order) ->
                 assertEquals(item.id, item.options.sorted(), order.sorted())
                 assertEquals(item.options.size, order.size)
@@ -65,7 +69,7 @@ class OptionPresentationTest {
         assertNotEquals(closedResponseRuleDigest(), presentedReviewResponseRuleDigest())
     }
 
-    @Test fun allRetainedAssignmentsKeepExactLegacyOrderHashAndCompletionInterpretation() {
+    @Test fun allRetainedAssignmentsKeepExactLegacyOrderAndAssignmentHash() {
         val root = OptionPresentationFixture.root
         val groups = listOf("ia003-policy-history-transition", "ia003-policy-history-transition/predecessor-schema1",
             "ia003-unit13-context-teaching", "ia003-unit13-history-transition", "ia003-unit13-past-teaching",
