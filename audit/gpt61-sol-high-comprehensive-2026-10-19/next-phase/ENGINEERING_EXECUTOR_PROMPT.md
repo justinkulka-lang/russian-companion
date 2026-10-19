@@ -1,4 +1,4 @@
-Use this prompt in Codex with the repository and an Android execution environment. This is an engineering assignment separate from the read-only ChatGPT audit.
+Saved Codex engineering assignment for this existing checkout. The user explicitly directed Codex to retain and use this prompt itself; do not ask the user to carry it to another Codex session. The separate ChatGPT chat remains the independent auditor. This assignment is distinct from its read-only audit work.
 
 Continue authorized engineering on justinkulka-lang/russian-companion, branch cursor/content-audit-corrections-964f, existing OPEN Draft PR64. Use one agent and the existing checkout. Read AGENTS.md, the durable engineering continuation/checkpoint, and next-phase/INPUTS_AND_BOUNDARIES.md. Preserve concurrent work; never reset it or force-push.
 

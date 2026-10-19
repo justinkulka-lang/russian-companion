@@ -1,5 +1,7 @@
 # Codex continuation
 
+Active Codex engineering assignment: [saved instructions](audit/gpt61-sol-high-comprehensive-2026-10-19/next-phase/ENGINEERING_EXECUTOR_PROMPT.md). User explicitly directed this Codex session to retain the engineering prompt itself. Handle engineering here;the separate ChatGPT chat remains the independent auditor. Do not ask the user to transfer this assignment to another Codex session.
+
 Next-phase handoff: [same ChatGPT audit prompt](audit/gpt61-sol-high-comprehensive-2026-10-19/next-phase/SAME_CHAT_PROMPT.md) and [separate Codex engineering prompt](audit/gpt61-sol-high-comprehensive-2026-10-19/next-phase/ENGINEERING_EXECUTOR_PROMPT.md). Read DELIVERABLES.md and INPUTS_AND_BOUNDARIES.md there. Preparing these work orders is not execution or audit completion;13findings remain. Word/TXT delivery supplied;physical acceptance stays LAST.
 
 Latest returned continuation audit: [engineering checkpoint](audit/gpt61-sol-high-comprehensive-2026-10-19/continuation-results/2026-10-19-199b3229/NEXT_ENGINEERING_CHECKPOINT.md). All16outputs published/verified,13package-localCCfindings(5HIGH/8MEDIUM),INCOMPLETE. All28internalarchivehashes verified;threeuserattachments match originals. No runtime execution or app fixes. Use existingcheckout/oneagent;do not follow externalhandoff detached-worktree proposal. Physical acceptance LAST.
