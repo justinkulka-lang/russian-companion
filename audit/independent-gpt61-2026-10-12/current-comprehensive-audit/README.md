@@ -1,0 +1,15 @@
+# Current independent comprehensive diagnostic audit
+
+Use one agent and the existing authorized checkout, Draft PR64. This directory replaces the old586-item packet as the current audit entry point;old evidence remains untouched. Current scope is30units/622assessment items/817examples/58capabilities/6943provenance records.
+
+The completed broad run at6d91a7defadcf24faf583cdb1b9a4e029b5a1553 reported1225methods:1208passed/16failed/1physical skip. All16have separate scoped engineering reconciliation:26passing methods/3classes,then31passing methods/12classes. Production/catalog/docs/review are unchanged,and all other test bytes outside the reviewed methods/helpers are exact. This is not a fresh all-pass broad run. Read ../CURRENT_HOST_VERIFICATION_DISPOSITION.json and challenge that limitation independently.
+
+Read AUDIT_DELIVERY.json for the delivered exact audit target and packet SHA256 once built. For a new connected-repository audit chat,paste COPY_PASTE_AUDIT_PROMPT.md and attach the private PDF separately. The copy/paste prompt pins the target and names the files;the auditor must confirm actual repository access. A URL alone does not grant access. If using the ZIP,extract it,run VERIFY_PACKET.py,then read START_HERE.md,AUDIT_PROMPT.md and DELIVERABLES.md. Templates are unfilled scaffolding,not evidence of inspection.
+
+The packet builder takes only tracked blobs from a real target commit,verifies all66allowlisted archives,and includes the complete Git tree/commit/blob integrity proof. It never reads local attachments/build caches/credentials. Reproduce with python3 build_packet.py --target COMMIT --output /workspace/artifacts/NEW_UNIQUE_NAME.zip from the repository root using this script full path;outputs refuse overwrite. Do not fabricate Git history for history-dependent tests.
+
+Return all nine new diagnostic deliverables in GPT61_COMPREHENSIVE_AUDIT_RESULTS.zip. Read DELIVERABLES.md for exact schemas. Do not confuse new results with the missing original historical audit/four CSVs or the originalnine received diagnostics. Preserve all64genuine host-generated lifecycle histories/backups and legacy meanings.
+
+Private_Penguin_Reference.pdf must be supplied as a separate private attachment:13572361bytes;continuity SHA2560c441ffd8855b292922a40b10935d5ffb1b088b7118acfcc1856e259dc01867a. The independently expected original historical hash remains unavailable. Never commit or include the PDF/extracted book prose in GitHub,app assets,reports or packets. Missing/mismatched private reference means private alignment NOT_VERIFIED;continue other inspection.
+
+This is diagnostic review,not named formal-stage acceptance or release approval. Keep qualified source/linguistic/rights debts and two Unit28 research cues explicit. Final independent comprehensive audit FIRST;actual Galaxy S26 Ultra airplane-mode/reboot acceptance LAST/outstanding. No merge,freeze,APK assembly,signing or release approval. Environment install/start saved;publication user-confirmed,independently unverified.
