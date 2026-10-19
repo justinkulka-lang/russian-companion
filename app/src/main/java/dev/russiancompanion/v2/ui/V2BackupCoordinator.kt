@@ -71,6 +71,7 @@ internal class V2BackupCoordinator(
     private val packVersion: Int,
     private val appearanceStore: AppearanceStore,
     private val recoveryDir: File,
+    private val importLimits: dev.russiancompanion.v2.backup.BackupImportLimits = dev.russiancompanion.v2.backup.BackupImportLimits(),
 ) : ViewModel() {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
     private val running = AtomicBoolean(false)
@@ -177,7 +178,9 @@ internal class V2BackupCoordinator(
                         val staging = File(recoveryDir, "incoming-${System.nanoTime()}")
                         acquireStaging(staging)
                         usingStaging {
-                            readGovernedBackup(input, applicationId, packId, packVersion, staging)
+                            readGovernedBackup(input, applicationId, packId, packVersion, staging, importLimits) {
+                                cancelRequested || !scope.isActive
+                            }
                         }
                     }
                 }
@@ -189,7 +192,8 @@ internal class V2BackupCoordinator(
                     is dev.russiancompanion.v2.backup.BackupReadResult.Rejected -> {
                         validated = null
                         preview = null
-                        message = RESTORE_FAILED
+                        message = if (opened.reason == dev.russiancompanion.v2.backup.BackupRejection.RESOURCE_LIMIT)
+                            dev.russiancompanion.v2.backup.RESTORE_TOO_LARGE else RESTORE_FAILED
                         phase = V2BackupPhase.FAILED
                         running.set(false)
                     }
