@@ -84,7 +84,7 @@ internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2Learner
             val item = pack.item(slot.itemId) ?: return@forEachIndexed
             Text(item.prompt)
             if (item.promptLetterRole == "CUE") item.promptLetter?.let { Text(it) }
-            item.options.forEach { option ->
+            reviewPresentedOptions(item, a, index).forEach { option ->
                 V2SecondaryButton(option, { onAnswer(a.id, index, option) }, enabled = !busy,
                     tag = "v2-review-option-$index-$option")
             }

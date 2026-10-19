@@ -503,7 +503,7 @@ internal fun createCumulativeReviewAssignment(pack: V2CurriculumPack, learner: V
             reviewUnitDigest(pack, unit.number), teachingDigest(pack, o))
     }
     val a = CumulativeReviewAssignment(id, targetUnit, policy.id,
-        policy.digest, closedResponseRuleDigest(), boundary, slots, "",
+        policy.digest, presentedReviewResponseRuleDigest(), boundary, slots, "",
         schema = assignmentSchema)
     return a.copy(digest = reviewAssignmentDigest(a))
 }
@@ -553,7 +553,7 @@ internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReview
     if (!cumulativeReviewDeclarationValid(pack, a.targetUnit) || pack.schemaVersion != 1 ||
         !reviewAssignmentSchemaSupported(a) || a.id.isBlank() || a.boundary < 0 ||
         a.policyId != policy.id || a.policyDigest != policy.digest ||
-        a.responseRuleDigest != closedResponseRuleDigest() ||
+        !reviewResponseRuleSupported(a.responseRuleDigest) ||
         a.slots.size != policy.pool.size || a.digest != reviewAssignmentDigest(a)) return false
     return a.slots.zip(policy.pool).all { (s, spec) ->
         val unit = pack.unit(s.ownerUnit) ?: return@all false

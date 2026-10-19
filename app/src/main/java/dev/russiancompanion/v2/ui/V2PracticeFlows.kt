@@ -32,6 +32,7 @@ import dev.russiancompanion.v2.curriculum.savedWorkEntries
 import dev.russiancompanion.v2.curriculum.V2CheckItem
 import dev.russiancompanion.v2.curriculum.V2Step
 import dev.russiancompanion.v2.curriculum.example
+import dev.russiancompanion.v2.curriculum.labPresentedOptions
 
 @Composable
 internal fun V2SavedWorkScreen(
@@ -153,7 +154,7 @@ internal fun V2LabScreen(
         Spacer(Modifier.height(8.dp))
         V2QuestionCue(item, "v2-lab-cue")
         Text(item.prompt, style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-lab-prompt" })
-        item.options.forEach { option ->
+        labPresentedOptions(item, labId).forEach { option ->
             Row(
                 modifier = Modifier
                     .fillMaxWidth()

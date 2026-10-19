@@ -47,6 +47,7 @@ import dev.russiancompanion.v2.curriculum.governedSelectionKey
 import dev.russiancompanion.v2.curriculum.currentObjective
 import dev.russiancompanion.v2.curriculum.installLabel
 import dev.russiancompanion.v2.curriculum.item
+import dev.russiancompanion.v2.curriculum.lessonPresentedOptions
 import dev.russiancompanion.v2.curriculum.objectiveState
 import dev.russiancompanion.v2.curriculum.practiceOffers
 import dev.russiancompanion.v2.curriculum.readinessLabel
@@ -581,7 +582,7 @@ internal fun V2SessionScreen(
             val locked = item.id in lockedItemIds
             V2QuestionCue(item, "v2-prompt-letter")
             Text(item.prompt, style = MaterialTheme.typography.titleMedium, modifier = Modifier.semantics { testTag = "v2-item-prompt-${item.id}" })
-            item.options.forEach { option ->
+            lessonPresentedOptions(item, step.id).forEach { option ->
                 androidx.compose.foundation.layout.Row(
                     modifier = Modifier
                         .fillMaxWidth()
