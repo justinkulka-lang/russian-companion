@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "auditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "preparationCommit": "17f1a873f2d16a247812771313965216486ef36c",
+  "requestedModel": "gpt-6.1-sol",
+  "requestedEffort": "high",
+  "actualModel": null,
+  "actualEffort": null,
+  "configuration": "USER_SELECTED_UNVERIFIED",
+  "status": "IN_PROGRESS",
+  "repositoryAccess": "PROVED_BY_PINNED_FILE_READS",
+  "trackedTargetFiles": 6427,
+  "seededEntities": 12003,
+  "sourceFilesDownloadedAndGitBlobVerified": 33,
+  "curriculumSemanticRowsInspected": 0,
+  "blockers": [
+    "Local git credential helper fails",
+    "20MB authoritative raw curriculum unavailable through connector",
+    "Private Penguin PDF connector returns no bytes or Unicode decode error",
+    "No authenticated full checkout or verified JDK/SDK execution environment"
+  ],
+  "nextAction": "Continue source review; return twelve matrices with explicit uninspected scope; validate and publish artifacts only",
+  "sourceChanges": false,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "releaseApproval": false
+}
