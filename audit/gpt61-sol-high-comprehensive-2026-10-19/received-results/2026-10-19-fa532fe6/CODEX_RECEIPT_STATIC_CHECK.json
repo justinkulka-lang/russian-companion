@@ -1,0 +1,79 @@
+{
+  "scope": "Codex receipt-only static inspection,not audit completion or runtime tests",
+  "target": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "rawCommand": "git show 5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed:app/src/main/assets/content/v2-curriculum.json",
+  "parser": "catalog.curriculum_storage.loads",
+  "rawBytes": 20036214,
+  "rawSha256": "33e5655c99d6d5003da0ab1af9249dc814472e3436e0d28afd2f878f6ade4940",
+  "counts": {
+    "units": 30,
+    "items": 622,
+    "examples": 817,
+    "sourceCapabilities": 58,
+    "provenanceRecords": 6943
+  },
+  "correctFirst": 561,
+  "CC010Pairs": [
+    {
+      "itemIds": [
+        "u8-g-spelling-0",
+        "u8-i-plural-6"
+      ],
+      "fieldsCompared": [
+        "prompt",
+        "promptLetter",
+        "options",
+        "answer"
+      ],
+      "fieldsEqual": {
+        "prompt": true,
+        "promptLetter": true,
+        "options": true,
+        "answer": true
+      }
+    },
+    {
+      "itemIds": [
+        "u10-g-absence-0",
+        "u10-i-have-3"
+      ],
+      "fieldsCompared": [
+        "prompt",
+        "promptLetter",
+        "options",
+        "answer"
+      ],
+      "fieldsEqual": {
+        "prompt": true,
+        "promptLetter": true,
+        "options": true,
+        "answer": true
+      }
+    }
+  ],
+  "protectedTrees": {
+    "app/src/main": {
+      "target": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+      "receiptBaseline": "dc003ae8a25ed4b812d48423e755086e4db9ac04"
+    },
+    "app/src/test": {
+      "target": "3492c4698787b5ce33919a8c80b9b55fce7ae5e3",
+      "receiptBaseline": "3492c4698787b5ce33919a8c80b9b55fce7ae5e3"
+    },
+    "catalog": {
+      "target": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+      "receiptBaseline": "af307958964fba3ec1994ec5200350fd5adb2d7f"
+    },
+    "docs": {
+      "target": "7364239dde1b40c703aaca92974413f403e928f4",
+      "receiptBaseline": "7364239dde1b40c703aaca92974413f403e928f4"
+    },
+    "review": {
+      "target": "7e21cc644c7f55dd4d7a98b99c48fb8629908694",
+      "receiptBaseline": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+    }
+  },
+  "allProtectedTreesEqual": true,
+  "runtimeTestsExecuted": 0,
+  "limitations": "Raw input availability and static equality do not complete semantic/source/book/device inspection or prove assessment impact. Findings remain package-local and open pending scoped triage."
+}
