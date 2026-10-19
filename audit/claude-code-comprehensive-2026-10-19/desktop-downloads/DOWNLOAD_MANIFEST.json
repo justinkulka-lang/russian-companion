@@ -1,0 +1,33 @@
+{
+  "auditTarget": "dc8aa6effa931cf0ba554042b92d49ef5e4a4b72",
+  "purpose": "Desktop-friendly instruction and template formats, not audit results",
+  "privatePenguinPdfIncluded": false,
+  "instructionPdfIsPublicInstructionsOnly": true,
+  "files": [
+    {
+      "name": "CLAUDE_AUDIT_ALL_12_TEMPLATES.txt",
+      "bytes": 2571149,
+      "sha256": "28ee82fbf87ecff4c0c8be8cf0a32f7d38cf85d06c5ed382db07b8ed06ac0f52"
+    },
+    {
+      "name": "CLAUDE_AUDIT_DELIVERABLES.txt",
+      "bytes": 5317,
+      "sha256": "1e99125fec757855e1db03afdbc21a92dfc31db08e74e6e8e2c667744d191f12"
+    },
+    {
+      "name": "CLAUDE_AUDIT_INSTRUCTIONS.docx",
+      "bytes": 48363,
+      "sha256": "de416f6983b9e47925190de99ff4c5c03969912ed99968e4481502e45b6dc814"
+    },
+    {
+      "name": "CLAUDE_AUDIT_INSTRUCTIONS.pdf",
+      "bytes": 24607,
+      "sha256": "4c10298375a37da7b024e52d91d9921884ef60f0039a19a6787bd31e65058e17"
+    },
+    {
+      "name": "CLAUDE_AUDIT_INSTRUCTIONS.txt",
+      "bytes": 30660,
+      "sha256": "bddbf767bb04559de7e120abbba4d48d5942a6aac07d6670ec2116c4c55ee4c3"
+    }
+  ]
+}
