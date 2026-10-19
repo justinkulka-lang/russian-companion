@@ -106,6 +106,30 @@ class Unit4PresentTeachingTest {
         }
     }
 
+    @Test fun correctTargetsCannotFinishOrdinaryRequirementsUntilNewTeachingIsRecorded() {
+        val p = current; val unit = p.unit(4)!!
+        val newTeaching = present(p).steps.filter { it.kind == "TEACH" &&
+            it.id !in present(previous).steps.map { old -> old.id } }
+        assertEquals(4, newTeaching.size)
+        LocalStore.openInMemory(context()).use { s ->
+            s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 4))
+            for (step in unit.sessions.flatMap { it.steps }) {
+                for (id in step.itemIds) s.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id,
+                    p.item(id)!!.answer, PRESCRIBED_CHECK, step.id, "fixed")!!)
+                if (step !in newTeaching) s.v2CompleteGovernedStep(step.id,
+                    governedStepCompletionDigest(p, s.v2LearnerView(), step.id)!!, "fixed")
+            }
+            s.v2AttestBook(4, "synthetic-host-attestation")
+            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS, objectiveState(objective(p), s.v2LearnerView(), p))
+            assertEquals(listOf("Finish the required instruction steps"), ordinaryUnitRequirements(p, unit, s.v2LearnerView()).remaining)
+            for (step in newTeaching) s.v2CompleteGovernedStep(step.id,
+                governedStepCompletionDigest(p, s.v2LearnerView(), step.id)!!, "fixed")
+            assertTrue(ordinaryUnitRequirements(p, unit, s.v2LearnerView()).allowed)
+            // Ordinary instruction is not the independently assigned review or prior-unit evidence.
+            assertFalse(advancementDecision(p, unit, s.v2LearnerView()).allowed)
+        }
+    }
+
     @Test fun oldAndFreshAnswersSurviveBackupReplacementAndNamedDatabaseReopenWithoutRelabelling() {
         val p = current; val name = "present-reopen-${System.nanoTime()}.db"
         val temp = File(context().cacheDir, "present-backup-${System.nanoTime()}")
@@ -115,6 +139,9 @@ class Unit4PresentTeachingTest {
                 val oldRows = s.governedLearnerDocument().attempts
                 val id = objective(p).checkItemIds.first()
                 record(s, p, id, p.item(id)!!.answer)
+                val check = p.step("u4-st-check-present")!!
+                s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 4,
+                    currentSessionId = check.first.id, currentStepIndex = check.first.steps.indexOf(check.second)).verifiedResume(p))
                 val bytes = ByteArrayOutputStream()
                 writeGovernedBackup(bytes, "dev.russiancompanion", p.packId, p.packVersion, "FOLLOW_SYSTEM", s.governedLearnerDocument(), emptyList())
                 val read = readGovernedBackup(bytes.toByteArray().inputStream(), "dev.russiancompanion", p.packId, p.packVersion, temp)
@@ -126,6 +153,7 @@ class Unit4PresentTeachingTest {
                     assertEquals(s.governedLearnerDocument(), target.governedLearnerDocument())
                     assertEquals(oldRows, target.governedLearnerDocument().attempts.take(oldRows.size))
                     assertEquals(setOf(id), creditItemIds(p, target.v2LearnerView()))
+                    assertTrue(resumeIsCurrent(p, target.v2LearnerView()))
                     assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS, objectiveState(objective(p), target.v2LearnerView(), p))
                 }
             }
