@@ -1,0 +1,314 @@
+[
+  {
+    "id": "u17-i-question-book",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English interpretation fits this complete supplied question?",
+    "promptLetter": "Которую книгу вы хотите?",
+    "options": [
+      "Asks which apple belongs to the speaker.",
+      "Asks for the current clock time.",
+      "Asks which book the listener wants."
+    ],
+    "answer": "Asks which book the listener wants.",
+    "feedback": "Которую книгу вы хотите? — Which book do you want? Asks which book the listener wants. Choose Asks which book the listener wants. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.",
+    "objectiveId": "obj-u17-clock",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "Asks which apple belongs to the speaker. describes a different requested piece of information; the supplied whole question Которую книгу вы хотите? means Which book do you want?",
+      "Asks for the current clock time. describes a different requested piece of information; the supplied whole question Которую книгу вы хотите? means Which book do you want?",
+      ""
+    ],
+    "assessment": {
+      "testedFeature": "QUESTION_BOOK_SELECTION",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u17-i-question-book",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u17-question-u17-i-question-book-1"
+      ],
+      "distractorSourceIds": [
+        "prov-ca-u17-question-u17-i-question-book-2",
+        "prov-ca-u17-question-u17-i-question-book-3",
+        ""
+      ],
+      "distractorDifference": [
+        "Asks which apple belongs to the speaker. describes a different requested piece of information; the supplied whole question Которую книгу вы хотите? means Which book do you want?",
+        "Asks for the current clock time. describes a different requested piece of information; the supplied whole question Которую книгу вы хотите? means Which book do you want?",
+        ""
+      ],
+      "whyAnswerDemonstratesObjective": "Которую книгу вы хотите? — Which book do you want? Asks which book the listener wants. Choose Asks which book the listener wants. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.",
+      "contrastMembers": [
+        "Asks which apple belongs to the speaker.",
+        "Asks for the current clock time.",
+        "Asks which book the listener wants."
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u17-question-u17-i-question-book-0",
+        "prov-ca-u17-question-u17-i-question-book-1",
+        "prov-ca-u17-question-u17-i-question-book-2",
+        "prov-ca-u17-question-u17-i-question-book-3"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u24-g-context-subject-focus",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "The supplied context emphasizes who went to the shop. Which English interpretation fits the sentence?",
+    "promptLetter": "В магазин пошёл я.",
+    "options": [
+      "It was me who went to the shop.",
+      "To the shop—that's where I went."
+    ],
+    "answer": "It was me who went to the shop.",
+    "feedback": "В магазин пошёл я. has the supplied subject-focus interpretation It was me who went to the shop. The context highlights the speaker as the person who went. This is an introductory supplied example; it does not establish every word order, a unique interpretation without context or independent subject-focus mastery.",
+    "objectiveId": "obj-u24-word-order-contrast",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "To the shop—that's where I went. is the source’s destination-focus interpretation for В магазин я пошёл. in its supplied response context, rather than the highlighted-person reading requested here."
+    ],
+    "assessment": {
+      "testedFeature": "WORD_ORDER_SUBJECT_FOCUS_GUIDED",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u24-g-context-subject-focus",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-u24-context-transfer-u24-g-context-subject-focus-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u24-context-transfer-u24-g-context-subject-focus-2"
+      ],
+      "distractorDifference": [
+        "",
+        "To the shop—that's where I went. is the source’s destination-focus interpretation for В магазин я пошёл. in its supplied response context, rather than the highlighted-person reading requested here."
+      ],
+      "whyAnswerDemonstratesObjective": "В магазин пошёл я. has the supplied subject-focus interpretation It was me who went to the shop. The context highlights the speaker as the person who went. This is an introductory supplied example; it does not establish every word order, a unique interpretation without context or independent subject-focus mastery.",
+      "contrastMembers": [
+        "It was me who went to the shop.",
+        "To the shop—that's where I went."
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u24-context-transfer-u24-g-context-subject-focus-0",
+        "prov-ca-u24-context-transfer-u24-g-context-subject-focus-1",
+        "prov-ca-u24-context-transfer-u24-g-context-subject-focus-2"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u13-i-report-frame-time",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English interpretation identifies the reporting verb and embedded action in this supplied evening report?",
+    "promptLetter": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+    "options": [
+      "Past reporting verb with a future embedded action.",
+      "Future reporting verb with a past embedded action."
+    ],
+    "answer": "Past reporting verb with a future embedded action.",
+    "feedback": "In Она́ сказа́ла, что она́ ска́жет ему́ ве́чером, Past reporting verb with a future embedded action. The reporting verb said is past; the embedded verb about telling him retains future form. Future is interpreted within the reported content, not a guarantee that the action is after the present moment or has been completed. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.",
+    "objectiveId": "obj-u13-reported",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Future reporting verb with a past embedded action. This does not describe the finite forms in the supplied target context."
+    ],
+    "assessment": {
+      "testedFeature": "REPORTED_FRAME_EMBEDDED_TIME",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u13-i-report-frame-time",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u13-report-transfer-u13-i-report-frame-time-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u13-report-transfer-u13-i-report-frame-time-2"
+      ],
+      "distractorDifference": [
+        "",
+        "Future reporting verb with a past embedded action. This does not describe the finite forms in the supplied target context."
+      ],
+      "whyAnswerDemonstratesObjective": "In Она́ сказа́ла, что она́ ска́жет ему́ ве́чером, Past reporting verb with a future embedded action. The reporting verb said is past; the embedded verb about telling him retains future form. Future is interpreted within the reported content, not a guarantee that the action is after the present moment or has been completed. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.",
+      "contrastMembers": [
+        "Past reporting verb with a future embedded action.",
+        "Future reporting verb with a past embedded action."
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u13-report-transfer-u13-i-report-frame-time-0",
+        "prov-ca-u13-report-transfer-u13-i-report-frame-time-1",
+        "prov-ca-u13-report-transfer-u13-i-report-frame-time-2"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u4-g-nom-role",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which case role does the noun naming the husband have in this supplied clause?",
+    "promptLetter": "Муж говорит",
+    "options": [
+      "The noun names the subject, in the nominative case.",
+      "The noun names a direct object, in the accusative case."
+    ],
+    "answer": "The noun names the subject, in the nominative case.",
+    "feedback": "In this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.",
+    "objectiveId": "obj-u4-nominative",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The requested noun is the subject here; the clause does not present it as a direct object."
+    ],
+    "assessment": {
+      "testedFeature": "NOMINATIVE_CASE_ROLE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u4-g-nom-role",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-u4-role-u4-g-nom-role-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u4-role-u4-g-nom-role-2"
+      ],
+      "distractorDifference": [
+        "",
+        "The requested noun is the subject here; the clause does not present it as a direct object."
+      ],
+      "whyAnswerDemonstratesObjective": "In this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.",
+      "contrastMembers": [
+        "The noun names the subject, in the nominative case.",
+        "The noun names a direct object, in the accusative case."
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u4-role-u4-g-nom-role-0",
+        "prov-ca-u4-role-u4-g-nom-role-1",
+        "prov-ca-u4-role-u4-g-nom-role-2"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u4-i-nom-role-train",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which case role does the noun naming the train have in this supplied clause?",
+    "promptLetter": "Поезд старый",
+    "options": [
+      "The noun names the subject, in the nominative case.",
+      "The noun names a direct object, in the accusative case."
+    ],
+    "answer": "The noun names the subject, in the nominative case.",
+    "feedback": "In this supplied clause, the train is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.",
+    "objectiveId": "obj-u4-nominative",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The requested noun is the subject here; the clause does not present it as a direct object."
+    ],
+    "assessment": {
+      "testedFeature": "NOMINATIVE_CASE_ROLE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u4-i-nom-role-train",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u4-role-u4-i-nom-role-train-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u4-role-u4-i-nom-role-train-2"
+      ],
+      "distractorDifference": [
+        "",
+        "The requested noun is the subject here; the clause does not present it as a direct object."
+      ],
+      "whyAnswerDemonstratesObjective": "In this supplied clause, the train is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.",
+      "contrastMembers": [
+        "The noun names the subject, in the nominative case.",
+        "The noun names a direct object, in the accusative case."
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u4-role-u4-i-nom-role-train-0",
+        "prov-ca-u4-role-u4-i-nom-role-train-1",
+        "prov-ca-u4-role-u4-i-nom-role-train-2"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u4-i-nom-role-student",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which case role does the noun naming the student have in this supplied clause?",
+    "promptLetter": "Студент новый",
+    "options": [
+      "The noun names the subject, in the nominative case.",
+      "The noun names a direct object, in the accusative case."
+    ],
+    "answer": "The noun names the subject, in the nominative case.",
+    "feedback": "In this supplied clause, the student is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.",
+    "objectiveId": "obj-u4-nominative",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The requested noun is the subject here; the clause does not present it as a direct object."
+    ],
+    "assessment": {
+      "testedFeature": "NOMINATIVE_CASE_ROLE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u4-i-nom-role-student",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u4-role-u4-i-nom-role-student-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u4-role-u4-i-nom-role-student-2"
+      ],
+      "distractorDifference": [
+        "",
+        "The requested noun is the subject here; the clause does not present it as a direct object."
+      ],
+      "whyAnswerDemonstratesObjective": "In this supplied clause, the student is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.",
+      "contrastMembers": [
+        "The noun names the subject, in the nominative case.",
+        "The noun names a direct object, in the accusative case."
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u4-role-u4-i-nom-role-student-0",
+        "prov-ca-u4-role-u4-i-nom-role-student-1",
+        "prov-ca-u4-role-u4-i-nom-role-student-2"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  }
+]

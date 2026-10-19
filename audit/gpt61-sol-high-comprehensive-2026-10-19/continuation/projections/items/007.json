@@ -1,0 +1,2285 @@
+[
+  {
+    "id": "u17-g-clock-answers-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "четверть восьмого",
+    "options": [
+      "7:15",
+      "7:30",
+      "7:45"
+    ],
+    "answer": "7:15",
+    "feedback": "четверть восьмого corresponds to 7:15. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.",
+    "objectiveId": "obj-u17-clock-answers",
+    "sourceId": "src-wikipedia-date-time-country-1366690592",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "7:30 is a different meaning or construction and does not match the requested reading of the shown form.",
+      "7:45 is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "CLOCK_QUARTER",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u17-clock-answers-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u17-clock-answers-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-clock-answers-1-en",
+        "prov-ex-u17-clock-answers-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "7:30 is a different meaning or construction and does not match the requested reading of the shown form.",
+        "7:45 is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"четверть восьмого\" with the admitted gloss \"7:15\" (\"quarter of the eighth hour\").\nчетверть восьмого corresponds to 7:15. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.",
+      "contrastMembers": [
+        "7:15",
+        "7:30",
+        "7:45"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-clock-answers-0-ru",
+        "prov-ex-u17-clock-answers-0-en",
+        "prov-ex-u17-clock-answers-1-en",
+        "prov-ex-u17-clock-answers-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-clock-answers-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "полвосьмого",
+    "options": [
+      "7:30",
+      "7:15",
+      "7:45"
+    ],
+    "answer": "7:30",
+    "feedback": "полвосьмого corresponds to 7:30. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.",
+    "objectiveId": "obj-u17-clock-answers",
+    "sourceId": "src-wikipedia-date-time-country-1366690592",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "7:15 is a different meaning or construction and does not match the requested reading of the shown form.",
+      "7:45 is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "CLOCK_HALF",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u17-clock-answers-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-clock-answers-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-clock-answers-0-en",
+        "prov-ex-u17-clock-answers-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "7:15 is a different meaning or construction and does not match the requested reading of the shown form.",
+        "7:45 is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"полвосьмого\" with the admitted gloss \"7:30\" (\"half of eight\").\nполвосьмого corresponds to 7:30. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.",
+      "contrastMembers": [
+        "7:30",
+        "7:15",
+        "7:45"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-clock-answers-1-ru",
+        "prov-ex-u17-clock-answers-1-en",
+        "prov-ex-u17-clock-answers-0-en",
+        "prov-ex-u17-clock-answers-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-clock-answers-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "без четверти восемь",
+    "options": [
+      "7:45",
+      "7:15",
+      "7:30"
+    ],
+    "answer": "7:45",
+    "feedback": "без четверти восемь corresponds to 7:45. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.",
+    "objectiveId": "obj-u17-clock-answers",
+    "sourceId": "src-wikipedia-date-time-country-1366690592",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "7:15 is a different meaning or construction and does not match the requested reading of the shown form.",
+      "7:30 is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "CLOCK_WITHOUT",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u17-clock-answers-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-clock-answers-2-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-clock-answers-0-en",
+        "prov-ex-u17-clock-answers-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "7:15 is a different meaning or construction and does not match the requested reading of the shown form.",
+        "7:30 is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"без четверти восемь\" with the admitted gloss \"7:45\" (\"eight without a quarter\").\nбез четверти восемь corresponds to 7:45. Interpret the whole expression as elapsed or remaining parts of the next hour, rather than copying its hour numeral.",
+      "contrastMembers": [
+        "7:45",
+        "7:15",
+        "7:30"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-clock-answers-2-ru",
+        "prov-ex-u17-clock-answers-2-en",
+        "prov-ex-u17-clock-answers-0-en",
+        "prov-ex-u17-clock-answers-1-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-g-quarter-hour-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "Концерт начинается в шесть часов.",
+    "options": [
+      "18.00",
+      "7.15 – quarter of the eighth hour",
+      "4.30 – half of the fifth hour"
+    ],
+    "answer": "18.00",
+    "feedback": "Концерт начинается в шесть часов. corresponds to 18.00. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.",
+    "objectiveId": "obj-u17-quarter-hour",
+    "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form.",
+      "4.30 – half of the fifth hour is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "QUARTER_00",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u17-quarter-hour-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u17-quarter-hour-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-quarter-hour-1-en",
+        "prov-ex-u17-quarter-hour-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form.",
+        "4.30 – half of the fifth hour is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Концерт начинается в шесть часов.\" with the admitted gloss \"18.00\".\nКонцерт начинается в шесть часов. corresponds to 18.00. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.",
+      "contrastMembers": [
+        "18.00",
+        "7.15 – quarter of the eighth hour",
+        "4.30 – half of the fifth hour"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-quarter-hour-0-ru",
+        "prov-ex-u17-quarter-hour-0-en",
+        "prov-ex-u17-quarter-hour-1-en",
+        "prov-ex-u17-quarter-hour-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-quarter-hour-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "Я приду в четверть восьмого.",
+    "options": [
+      "7.15 – quarter of the eighth hour",
+      "18.00",
+      "4.30 – half of the fifth hour"
+    ],
+    "answer": "7.15 – quarter of the eighth hour",
+    "feedback": "Я приду в четверть восьмого. corresponds to 7.15 – quarter of the eighth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.",
+    "objectiveId": "obj-u17-quarter-hour",
+    "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "18.00 is a different meaning or construction and does not match the requested reading of the shown form.",
+      "4.30 – half of the fifth hour is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "QUARTER_15",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u17-quarter-hour-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-quarter-hour-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-quarter-hour-0-en",
+        "prov-ex-u17-quarter-hour-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "18.00 is a different meaning or construction and does not match the requested reading of the shown form.",
+        "4.30 – half of the fifth hour is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Я приду в четверть восьмого.\" with the admitted gloss \"7.15 – quarter of the eighth hour\".\nЯ приду в четверть восьмого. corresponds to 7.15 – quarter of the eighth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.",
+      "contrastMembers": [
+        "7.15 – quarter of the eighth hour",
+        "18.00",
+        "4.30 – half of the fifth hour"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-quarter-hour-1-ru",
+        "prov-ex-u17-quarter-hour-1-en",
+        "prov-ex-u17-quarter-hour-0-en",
+        "prov-ex-u17-quarter-hour-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-quarter-hour-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "Наш рейс уезжает в половине пятого.",
+    "options": [
+      "4.30 – half of the fifth hour",
+      "18.00",
+      "7.15 – quarter of the eighth hour"
+    ],
+    "answer": "4.30 – half of the fifth hour",
+    "feedback": "Наш рейс уезжает в половине пятого. corresponds to 4.30 – half of the fifth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.",
+    "objectiveId": "obj-u17-quarter-hour",
+    "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "18.00 is a different meaning or construction and does not match the requested reading of the shown form.",
+      "7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "QUARTER_30",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u17-quarter-hour-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-quarter-hour-2-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-quarter-hour-0-en",
+        "prov-ex-u17-quarter-hour-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "18.00 is a different meaning or construction and does not match the requested reading of the shown form.",
+        "7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Наш рейс уезжает в половине пятого.\" with the admitted gloss \"4.30 – half of the fifth hour\".\nНаш рейс уезжает в половине пятого. corresponds to 4.30 – half of the fifth hour. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.",
+      "contrastMembers": [
+        "4.30 – half of the fifth hour",
+        "18.00",
+        "7.15 – quarter of the eighth hour"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-quarter-hour-2-ru",
+        "prov-ex-u17-quarter-hour-2-en",
+        "prov-ex-u17-quarter-hour-0-en",
+        "prov-ex-u17-quarter-hour-1-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-quarter-hour-3",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "Передача начинается без четверти три.",
+    "options": [
+      "2.45 – 3 without a quarter",
+      "18.00",
+      "7.15 – quarter of the eighth hour"
+    ],
+    "answer": "2.45 – 3 without a quarter",
+    "feedback": "Передача начинается без четверти три. corresponds to 2.45 – 3 without a quarter. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.",
+    "objectiveId": "obj-u17-quarter-hour",
+    "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "18.00 is a different meaning or construction and does not match the requested reading of the shown form.",
+      "7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "QUARTER_45",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u17-quarter-hour-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-quarter-hour-3-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-quarter-hour-0-en",
+        "prov-ex-u17-quarter-hour-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "18.00 is a different meaning or construction and does not match the requested reading of the shown form.",
+        "7.15 – quarter of the eighth hour is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Передача начинается без четверти три.\" with the admitted gloss \"2.45 – 3 without a quarter\".\nПередача начинается без четверти три. corresponds to 2.45 – 3 without a quarter. Interpret the complete event-time expression using the retained source reading; a bare hour alone does not specify AM or PM.",
+      "contrastMembers": [
+        "2.45 – 3 without a quarter",
+        "18.00",
+        "7.15 – quarter of the eighth hour"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-quarter-hour-3-ru",
+        "prov-ex-u17-quarter-hour-3-en",
+        "prov-ex-u17-quarter-hour-0-en",
+        "prov-ex-u17-quarter-hour-1-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-g-clock-productive-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted expression states the minutes into the hour in progress?",
+    "promptLetter": "In Russian we can state the number of minutes into the hour which is in progress.",
+    "options": [
+      "в пятнадцать минут второго",
+      "в час пятнадцать минут"
+    ],
+    "answer": "в пятнадцать минут второго",
+    "feedback": "In Russian we can state the number of minutes into the hour which is in progress. corresponds to в пятнадцать минут второго. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.",
+    "objectiveId": "obj-u17-clock-productive",
+    "sourceId": "src-readyrussian-grammar20",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "в час пятнадцать минут is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "CLOCK_MINUTES_INTO_HOUR",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u17-clock-productive-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u17-clock-productive-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u17-clock-productive-x-3"
+      ],
+      "distractorDifference": [
+        "",
+        "в час пятнадцать минут is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"в пятнадцать минут второго\" with the admitted gloss \"at the fifteenth minute of the second [hour]\". The shown rule is \"In Russian we can state the number of minutes into the hour which is in progress.\" That states the minutes into the hour in progress.\nIn Russian we can state the number of minutes into the hour which is in progress. corresponds to в пятнадцать минут второго. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.",
+      "contrastMembers": [
+        "в пятнадцать минут второго",
+        "в час пятнадцать минут"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-u17-clock-productive-rem",
+        "prov-ex-u17-clock-productive-0-ru",
+        "prov-u17-clock-productive-x-3"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u17-i-clock-productive-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted expression states the minutes that remain after the half hour?",
+    "promptLetter": "This is used after the half hour.",
+    "options": [
+      "без двадцати пяти два",
+      "в час тридцать пять минут"
+    ],
+    "answer": "без двадцати пяти два",
+    "feedback": "This is used after the half hour. corresponds to без двадцати пяти два. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.",
+    "objectiveId": "obj-u17-clock-productive",
+    "sourceId": "src-readyrussian-grammar20",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "в час тридцать пять минут is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "CLOCK_MINUTES_REMAINING",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u17-clock-productive-1",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-clock-productive-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u17-clock-productive-x-5"
+      ],
+      "distractorDifference": [
+        "",
+        "в час тридцать пять минут is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"без двадцати пяти два\" with the admitted gloss \"lacking twenty five minutes to the two\". The shown rule is \"This is used after the half hour.\" That says how many minutes remain after the half hour.\nThis is used after the half hour. corresponds to без двадцати пяти два. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.",
+      "contrastMembers": [
+        "без двадцати пяти два",
+        "в час тридцать пять минут"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-u17-clock-productive-x-1",
+        "prov-ex-u17-clock-productive-1-ru",
+        "prov-u17-clock-productive-x-5"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u17-i-clock-productive-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted expression reads the numbers off the dial?",
+    "promptLetter": "This option is always available.",
+    "options": [
+      "в двенадцать часов десять минут",
+      "в десять минут первого"
+    ],
+    "answer": "в двенадцать часов десять минут",
+    "feedback": "This option is always available. corresponds to в двенадцать часов десять минут. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.",
+    "objectiveId": "obj-u17-clock-productive",
+    "sourceId": "src-readyrussian-grammar20",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "в десять минут первого is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "CLOCK_DIRECT_READING",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u17-clock-productive-2",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-clock-productive-2-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u17-clock-productive-x-7"
+      ],
+      "distractorDifference": [
+        "",
+        "в десять минут первого is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"в двенадцать часов десять минут\" with the admitted gloss \"at twelve hours ten minutes\". The shown rule is \"This option is always available.\" That reads the numbers off the dial.\nThis option is always available. corresponds to в двенадцать часов десять минут. Select the requested construction type: elapsed minutes in the hour in progress, minutes remaining, or reading the dial numbers.",
+      "contrastMembers": [
+        "в двенадцать часов десять минут",
+        "в десять минут первого"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-u17-clock-productive-x-2",
+        "prov-ex-u17-clock-productive-2-ru",
+        "prov-u17-clock-productive-x-7"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u17-g-calendar-date-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English description. What does the abbreviation г. contribute in a date?",
+    "promptLetter": "г.",
+    "options": [
+      "year, the abbreviation",
+      "the month name",
+      "the day number"
+    ],
+    "answer": "year, the abbreviation",
+    "feedback": "г. corresponds to year, the abbreviation. Read the relevant date components and distinguish the whole date from an individual component.",
+    "objectiveId": "obj-u17-calendar-date",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "the month name is a different meaning or construction and does not match the requested reading of the shown form.",
+      "the day number is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "DATE_YEAR_ABBREVIATION",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u17-calendar-date-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-repair-17-10753"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-repair-17-10756",
+        "prov-ca-repair-17-10757"
+      ],
+      "distractorDifference": [
+        "",
+        "the month name is a different meaning or construction and does not match the requested reading of the shown form.",
+        "the day number is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "г. is year, the abbreviation used after the year number in a date.\nг. corresponds to year, the abbreviation. Read the relevant date components and distinguish the whole date from an individual component.",
+      "contrastMembers": [
+        "year, the abbreviation",
+        "the month name",
+        "the day number"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-repair-17-10752",
+        "prov-ca-repair-17-10753",
+        "prov-ca-repair-17-10756",
+        "prov-ca-repair-17-10757"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-calendar-date-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "28 августа 2017 г.",
+    "options": [
+      "day month year",
+      "the month in genitive case",
+      "28.08.17"
+    ],
+    "answer": "day month year",
+    "feedback": "28 августа 2017 г. corresponds to day month year. Read the relevant date components and distinguish the whole date from an individual component.",
+    "objectiveId": "obj-u17-calendar-date",
+    "sourceId": "src-wikipedia-date-notation-russia-1357134172",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "the month in genitive case is a different meaning or construction and does not match the requested reading of the shown form.",
+      "28.08.17 is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "DATE_ORDER",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u17-calendar-date-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-calendar-date-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-calendar-date-0-en",
+        "prov-u17-calendar-date-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "the month in genitive case is a different meaning or construction and does not match the requested reading of the shown form.",
+        "28.08.17 is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"28 августа 2017 г.\" with the admitted gloss \"day month year\" (\"dates are usually written\").\n28 августа 2017 г. corresponds to day month year. Read the relevant date components and distinguish the whole date from an individual component.",
+      "contrastMembers": [
+        "day month year",
+        "the month in genitive case",
+        "28.08.17"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-calendar-date-1-ru",
+        "prov-ex-u17-calendar-date-1-en",
+        "prov-ex-u17-calendar-date-0-en",
+        "prov-u17-calendar-date-x-1"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-calendar-date-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English description. Which reading translates the whole shown date?",
+    "promptLetter": "15 мая 1996 г.",
+    "options": [
+      "15 May 1996",
+      "the month alone",
+      "the year abbreviation alone"
+    ],
+    "answer": "15 May 1996",
+    "feedback": "15 мая 1996 г. corresponds to 15 May 1996. Read the relevant date components and distinguish the whole date from an individual component.",
+    "objectiveId": "obj-u17-calendar-date",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "the month alone is a different meaning or construction and does not match the requested reading of the shown form.",
+      "the year abbreviation alone is a different meaning or construction and does not match the requested reading of the shown form."
+    ],
+    "assessment": {
+      "testedFeature": "WHOLE_DATE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u17-calendar-date-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-repair-17-10762"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-repair-17-10765",
+        "prov-ca-repair-17-10766"
+      ],
+      "distractorDifference": [
+        "",
+        "the month alone is a different meaning or construction and does not match the requested reading of the shown form.",
+        "the year abbreviation alone is a different meaning or construction and does not match the requested reading of the shown form."
+      ],
+      "whyAnswerDemonstratesObjective": "15 мая 1996 г. is 15 May 1996: the complete date gives the day, month and year.\n15 мая 1996 г. corresponds to 15 May 1996. Read the relevant date components and distinguish the whole date from an individual component.",
+      "contrastMembers": [
+        "15 May 1996",
+        "the month alone",
+        "the year abbreviation alone"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-repair-17-10761",
+        "prov-ca-repair-17-10762",
+        "prov-ca-repair-17-10765",
+        "prov-ca-repair-17-10766"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u18-g-comparison-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown form?",
+    "promptLetter": "бо́льший",
+    "options": [
+      "bigger",
+      "better",
+      "redder"
+    ],
+    "answer": "bigger",
+    "feedback": "бо́льший means bigger. The retained full adjective compares size.",
+    "objectiveId": "obj-u18-comparison",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "better compares quality rather than size.",
+      "redder compares redness rather than size."
+    ],
+    "assessment": {
+      "testedFeature": "COMPARISON_BIGGER",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u18-comparison-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u18-comparison-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u18-comparison-1-en",
+        "prov-ex-u18-comparison-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "better compares quality rather than size.",
+        "redder compares redness rather than size."
+      ],
+      "whyAnswerDemonstratesObjective": "бо́льший 'bigger'\nбо́льший means bigger. The retained full adjective compares size.",
+      "contrastMembers": [
+        "bigger",
+        "better",
+        "redder"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u18-comparison-0-ru",
+        "prov-ex-u18-comparison-0-en",
+        "prov-ex-u18-comparison-1-en",
+        "prov-ex-u18-comparison-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u18-i-comparison-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown form?",
+    "promptLetter": "наибо́льший",
+    "options": [
+      "the biggest",
+      "more",
+      "less"
+    ],
+    "answer": "the biggest",
+    "feedback": "наибо́льший means the biggest. This superlative identifies the greatest size in the relevant group.",
+    "objectiveId": "obj-u18-comparison",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "more indicates a greater degree without identifying a maximum.",
+      "less indicates a lower degree rather than a maximum."
+    ],
+    "assessment": {
+      "testedFeature": "COMPARISON_BIGGEST",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u18-comparison-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u18-comparison-3-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u18-comparison-x-1",
+        "prov-u18-comparison-x-2"
+      ],
+      "distractorDifference": [
+        "",
+        "more indicates a greater degree without identifying a maximum.",
+        "less indicates a lower degree rather than a maximum."
+      ],
+      "whyAnswerDemonstratesObjective": "наибо́льший 'the biggest'\nнаибо́льший means the biggest. This superlative identifies the greatest size in the relevant group.",
+      "contrastMembers": [
+        "the biggest",
+        "more",
+        "less"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u18-comparison-3-ru",
+        "prov-ex-u18-comparison-3-en",
+        "prov-u18-comparison-x-1",
+        "prov-u18-comparison-x-2"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u18-i-comparison-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown form?",
+    "promptLetter": "бо́лее до́брый",
+    "options": [
+      "kinder",
+      "least",
+      "bigger"
+    ],
+    "answer": "kinder",
+    "feedback": "бо́лее до́брый means kinder. The word meaning more combines with the adjective meaning kind.",
+    "objectiveId": "obj-u18-comparison",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "least identifies the lowest degree rather than a higher degree of kindness.",
+      "bigger compares size rather than kindness."
+    ],
+    "assessment": {
+      "testedFeature": "COMPARISON_KINDER",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u18-comparison-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u18-comparison-x-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u18-comparison-x-3",
+        "prov-ex-u18-comparison-0-en"
+      ],
+      "distractorDifference": [
+        "",
+        "least identifies the lowest degree rather than a higher degree of kindness.",
+        "bigger compares size rather than kindness."
+      ],
+      "whyAnswerDemonstratesObjective": "бо́лее до́брый 'kinder'\nбо́лее до́брый means kinder. The word meaning more combines with the adjective meaning kind.",
+      "contrastMembers": [
+        "kinder",
+        "least",
+        "bigger"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-u18-comparison-x-0",
+        "prov-u18-comparison-x-4",
+        "prov-u18-comparison-x-3",
+        "prov-ex-u18-comparison-0-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u18-g-relative-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown form?",
+    "promptLetter": "Которое яблоко моё?",
+    "options": [
+      "Which apple is mine?",
+      "Which book do you want?",
+      "The man who changed the world"
+    ],
+    "answer": "Which apple is mine?",
+    "feedback": "Которое яблоко моё? means Which apple is mine?. This direct question selects an apple and asks about ownership.",
+    "objectiveId": "obj-u18-relative",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Which book do you want? asks about a wanted book, not ownership of an apple.",
+      "The man who changed the world describes a person rather than asking which apple is owned."
+    ],
+    "assessment": {
+      "testedFeature": "RELATIVE_APPLE",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u18-relative-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u18-relative-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u18-relative-1-en",
+        "prov-ex-u18-relative-3-en"
+      ],
+      "distractorDifference": [
+        "",
+        "Which book do you want? asks about a wanted book, not ownership of an apple.",
+        "The man who changed the world describes a person rather than asking which apple is owned."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Которое яблоко моё?\" with the admitted gloss \"Which apple is mine?\".\nКоторое яблоко моё? means Which apple is mine?. This direct question selects an apple and asks about ownership.",
+      "contrastMembers": [
+        "Which apple is mine?",
+        "Which book do you want?",
+        "The man who changed the world"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u18-relative-0-ru",
+        "prov-ex-u18-relative-0-en",
+        "prov-ex-u18-relative-1-en",
+        "prov-ex-u18-relative-3-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u18-i-relative-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown form?",
+    "promptLetter": "Же́нщина, с кото́рой я дружу́",
+    "options": [
+      "The woman (who) I'm friends with",
+      "The man who changed the world",
+      "Which apple is mine?"
+    ],
+    "answer": "The woman (who) I'm friends with",
+    "feedback": "Же́нщина, с кото́рой я дружу́ means The woman (who) I'm friends with. The relative clause describes the woman; its preposition meaning with takes instrumental case.",
+    "objectiveId": "obj-u18-relative",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The man who changed the world describes a different person and action.",
+      "Which apple is mine? asks a direct question about ownership, rather than describing the woman."
+    ],
+    "assessment": {
+      "testedFeature": "RELATIVE_WOMAN",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u18-relative-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u18-relative-2-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u18-relative-3-en",
+        "prov-ex-u18-relative-0-en"
+      ],
+      "distractorDifference": [
+        "",
+        "The man who changed the world describes a different person and action.",
+        "Which apple is mine? asks a direct question about ownership, rather than describing the woman."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Же́нщина, с кото́рой я дружу́\" with the admitted gloss \"The woman (who) I'm friends with\".\nЖе́нщина, с кото́рой я дружу́ means The woman (who) I'm friends with. The relative clause describes the woman; its preposition meaning with takes instrumental case.",
+      "contrastMembers": [
+        "The woman (who) I'm friends with",
+        "The man who changed the world",
+        "Which apple is mine?"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u18-relative-2-ru",
+        "prov-ex-u18-relative-2-en",
+        "prov-ex-u18-relative-3-en",
+        "prov-ex-u18-relative-0-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u18-i-relative-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown form?",
+    "promptLetter": "Человек, который изменил мир",
+    "options": [
+      "The man who changed the world",
+      "The woman (who) I'm friends with",
+      "Which book do you want?"
+    ],
+    "answer": "The man who changed the world",
+    "feedback": "Человек, который изменил мир means The man who changed the world. The relative clause describes the man; the relative form is the subject of changed in its own clause.",
+    "objectiveId": "obj-u18-relative",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The woman (who) I'm friends with describes a different person and relationship.",
+      "Which book do you want? asks a direct question about a book rather than describing the man."
+    ],
+    "assessment": {
+      "testedFeature": "RELATIVE_MAN",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u18-relative-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u18-relative-3-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u18-relative-2-en",
+        "prov-ex-u18-relative-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "The woman (who) I'm friends with describes a different person and relationship.",
+        "Which book do you want? asks a direct question about a book rather than describing the man."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Человек, который изменил мир\" with the admitted gloss \"The man who changed the world\".\nЧеловек, который изменил мир means The man who changed the world. The relative clause describes the man; the relative form is the subject of changed in its own clause.",
+      "contrastMembers": [
+        "The man who changed the world",
+        "The woman (who) I'm friends with",
+        "Which book do you want?"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u18-relative-3-ru",
+        "prov-ex-u18-relative-3-en",
+        "prov-ex-u18-relative-2-en",
+        "prov-ex-u18-relative-1-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u19-g-prefix-caution-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown Russian verb?",
+    "promptLetter": "отговорить",
+    "options": [
+      "to dissuade",
+      "to agree",
+      "to write"
+    ],
+    "answer": "to dissuade",
+    "feedback": "отговорить has the dissuade meaning: to dissuade; it concerns persuading someone against an action.",
+    "objectiveId": "obj-u19-prefix-caution",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "to agree is the meaning of the agreement verb.",
+      "to write is the meaning of the writing verb."
+    ],
+    "assessment": {
+      "testedFeature": "DISSUADE_MEANING",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u19-prefix-caution-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u19-prefix-caution-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u19-prefix-caution-1-en",
+        "prov-ex-u19-prefix-caution-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "to agree is the meaning of the agreement verb.",
+        "to write is the meaning of the writing verb."
+      ],
+      "whyAnswerDemonstratesObjective": "отговорить has the dissuade meaning: to dissuade; it concerns persuading someone against an action.",
+      "contrastMembers": [
+        "to dissuade",
+        "to agree",
+        "to write"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u19-prefix-caution-0-ru",
+        "prov-ex-u19-prefix-caution-0-en",
+        "prov-ex-u19-prefix-caution-1-en",
+        "prov-ex-u19-prefix-caution-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u19-i-prefix-caution-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown Russian verb?",
+    "promptLetter": "договориться",
+    "options": [
+      "to agree",
+      "to dissuade",
+      "to do"
+    ],
+    "answer": "to agree",
+    "feedback": "договориться has the agree meaning: to agree; it expresses reaching an agreement.",
+    "objectiveId": "obj-u19-prefix-caution",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "to dissuade is the meaning of a different prefixed verb.",
+      "to do is the meaning of the doing verb."
+    ],
+    "assessment": {
+      "testedFeature": "AGREE_MEANING",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u19-prefix-caution-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u19-prefix-caution-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u19-prefix-caution-0-en",
+        "prov-ex-u19-prefix-caution-3-en"
+      ],
+      "distractorDifference": [
+        "",
+        "to dissuade is the meaning of a different prefixed verb.",
+        "to do is the meaning of the doing verb."
+      ],
+      "whyAnswerDemonstratesObjective": "договориться has the agree meaning: to agree; it expresses reaching an agreement.",
+      "contrastMembers": [
+        "to agree",
+        "to dissuade",
+        "to do"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u19-prefix-caution-1-ru",
+        "prov-ex-u19-prefix-caution-1-en",
+        "prov-ex-u19-prefix-caution-0-en",
+        "prov-ex-u19-prefix-caution-3-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u19-i-prefix-caution-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which Russian verb is the perfective partner of the shown imperfective?",
+    "promptLetter": "отговаривать",
+    "options": [
+      "отговорить",
+      "договориться",
+      "сделать"
+    ],
+    "answer": "отговорить",
+    "feedback": "отговаривать has the perfective partner отговорить. The retained source explicitly pairs these two verbs with the same dissuading meaning.",
+    "objectiveId": "obj-u19-prefix-caution",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "договориться expresses reaching an agreement, a different lexical meaning.",
+      "сделать means to do, a different lexical meaning."
+    ],
+    "assessment": {
+      "testedFeature": "PERFECTIVE_PARTNER",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u19-prefix-caution-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u19-prefix-caution-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u19-prefix-caution-1-ru",
+        "prov-ex-u19-prefix-caution-3-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "договориться expresses reaching an agreement, a different lexical meaning.",
+        "сделать means to do, a different lexical meaning."
+      ],
+      "whyAnswerDemonstratesObjective": "отговаривать has the perfective partner отговорить. The retained source explicitly pairs these two verbs with the same dissuading meaning.",
+      "contrastMembers": [
+        "отговорить",
+        "договориться",
+        "сделать"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-u1920-prefix-imperfective",
+        "prov-ex-u19-prefix-caution-0-ru",
+        "prov-ex-u19-prefix-caution-1-ru",
+        "prov-ex-u19-prefix-caution-3-ru"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u19-g-conditional-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English speaker description marked by the shown form.",
+    "promptLetter": "я спал бы",
+    "options": [
+      "a male speaker",
+      "a female speaker",
+      "I would like to sleep"
+    ],
+    "answer": "a male speaker",
+    "feedback": "Choose a male speaker. a male speaker is marked by the masculine past form, not supplied as the sentence translation.",
+    "objectiveId": "obj-u19-conditional",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "a female speaker would require feminine past agreement.",
+      "I would like to sleep is a sentence meaning rather than a speaker-agreement label."
+    ],
+    "assessment": {
+      "testedFeature": "CONDITIONAL_MALE",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u19-conditional-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u19-conditional-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u19-conditional-1-en",
+        "prov-ex-u19-conditional-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "a female speaker would require feminine past agreement.",
+        "I would like to sleep is a sentence meaning rather than a speaker-agreement label."
+      ],
+      "whyAnswerDemonstratesObjective": "a male speaker would say я спал бы\nChoose a male speaker. a male speaker is marked by the masculine past form, not supplied as the sentence translation.",
+      "contrastMembers": [
+        "a male speaker",
+        "a female speaker",
+        "I would like to sleep"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u19-conditional-0-ru",
+        "prov-ex-u19-conditional-0-en",
+        "prov-ex-u19-conditional-1-en",
+        "prov-ex-u19-conditional-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u19-i-conditional-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English speaker description marked by the shown form.",
+    "promptLetter": "я спала́ бы",
+    "options": [
+      "a female speaker",
+      "a male speaker",
+      "I would like to sleep"
+    ],
+    "answer": "a female speaker",
+    "feedback": "Choose a female speaker. a female speaker is marked by the feminine past form; the pronoun identifies the speaker.",
+    "objectiveId": "obj-u19-conditional",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "a male speaker would require masculine past agreement.",
+      "I would like to sleep is a sentence meaning rather than a speaker-agreement label."
+    ],
+    "assessment": {
+      "testedFeature": "CONDITIONAL_FEMALE",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u19-conditional-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u19-conditional-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u19-conditional-0-en",
+        "prov-ex-u19-conditional-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "a male speaker would require masculine past agreement.",
+        "I would like to sleep is a sentence meaning rather than a speaker-agreement label."
+      ],
+      "whyAnswerDemonstratesObjective": "while a female speaker would say я спала́ бы (or я бы поспала́)\nChoose a female speaker. a female speaker is marked by the feminine past form; the pronoun identifies the speaker.",
+      "contrastMembers": [
+        "a female speaker",
+        "a male speaker",
+        "I would like to sleep"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u19-conditional-1-ru",
+        "prov-ex-u19-conditional-1-en",
+        "prov-ex-u19-conditional-0-en",
+        "prov-ex-u19-conditional-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u19-i-conditional-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English description. What does the past form in я бы поспала́ mark?",
+    "promptLetter": "я бы поспала́",
+    "options": [
+      "the speaker is marked feminine",
+      "the speaker is marked masculine",
+      "the sentence is about another person"
+    ],
+    "answer": "the speaker is marked feminine",
+    "feedback": "Choose the speaker is marked feminine. The first-person pronoun identifies the speaker; the feminine past form marks feminine agreement.",
+    "objectiveId": "obj-u19-conditional",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "the speaker is marked masculine would require masculine past agreement.",
+      "the sentence is about another person does not match the first-person pronoun."
+    ],
+    "assessment": {
+      "testedFeature": "CONDITIONAL_FEMININE_SPEAKER",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u19-conditional-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-repair-19-10773"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-repair-19-10776",
+        "prov-ca-repair-19-10777"
+      ],
+      "distractorDifference": [
+        "",
+        "the speaker is marked masculine would require masculine past agreement.",
+        "the sentence is about another person does not match the first-person pronoun."
+      ],
+      "whyAnswerDemonstratesObjective": "In я бы поспала́, the speaker is marked feminine by поспала́; я identifies that person as the speaker.\nChoose the speaker is marked feminine. The first-person pronoun identifies the speaker; the feminine past form marks feminine agreement.",
+      "contrastMembers": [
+        "the speaker is marked feminine",
+        "the speaker is marked masculine",
+        "the sentence is about another person"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-repair-19-10772",
+        "prov-ca-repair-19-10773",
+        "prov-ca-repair-19-10776",
+        "prov-ca-repair-19-10777"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u19-g-obligation-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown form?",
+    "promptLetter": "я должен",
+    "options": [
+      "I have to",
+      "If the subject is feminine",
+      "If the subject is plural"
+    ],
+    "answer": "I have to",
+    "feedback": "Choose I have to. The retained first-person phrase expresses obligation with masculine singular agreement.",
+    "objectiveId": "obj-u19-obligation",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "If the subject is feminine is an agreement label rather than the meaning of this first-person phrase.",
+      "If the subject is plural is an agreement label rather than the meaning of this first-person phrase."
+    ],
+    "assessment": {
+      "testedFeature": "OBLIGATION_HAVE",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u19-obligation-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u19-obligation-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u19-obligation-1-en",
+        "prov-ex-u19-obligation-3-en"
+      ],
+      "distractorDifference": [
+        "",
+        "If the subject is feminine is an agreement label rather than the meaning of this first-person phrase.",
+        "If the subject is plural is an agreement label rather than the meaning of this first-person phrase."
+      ],
+      "whyAnswerDemonstratesObjective": "\"I have to\" translates to я должен\nChoose I have to. The retained first-person phrase expresses obligation with masculine singular agreement.",
+      "contrastMembers": [
+        "I have to",
+        "If the subject is feminine",
+        "If the subject is plural"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u19-obligation-0-ru",
+        "prov-ex-u19-obligation-0-en",
+        "prov-ex-u19-obligation-1-en",
+        "prov-ex-u19-obligation-3-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u19-i-obligation-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English subject-agreement label for the shown form.",
+    "promptLetter": "должна",
+    "options": [
+      "If the subject is feminine",
+      "I have to",
+      "If the subject is plural"
+    ],
+    "answer": "If the subject is feminine",
+    "feedback": "Choose If the subject is feminine. This is the retained subject-agreement label for the feminine form, not its literal translation.",
+    "objectiveId": "obj-u19-obligation",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "I have to is a phrase meaning rather than the requested subject-agreement label.",
+      "If the subject is plural names plural agreement rather than feminine singular agreement."
+    ],
+    "assessment": {
+      "testedFeature": "OBLIGATION_FEMININE_FORM",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u19-obligation-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u19-obligation-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u19-obligation-0-en",
+        "prov-ex-u19-obligation-3-en"
+      ],
+      "distractorDifference": [
+        "",
+        "I have to is a phrase meaning rather than the requested subject-agreement label.",
+        "If the subject is plural names plural agreement rather than feminine singular agreement."
+      ],
+      "whyAnswerDemonstratesObjective": "If the subject is feminine, it's должна.\nChoose If the subject is feminine. This is the retained subject-agreement label for the feminine form, not its literal translation.",
+      "contrastMembers": [
+        "If the subject is feminine",
+        "I have to",
+        "If the subject is plural"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u19-obligation-1-ru",
+        "prov-ex-u19-obligation-1-en",
+        "prov-ex-u19-obligation-0-en",
+        "prov-ex-u19-obligation-3-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u19-i-obligation-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English subject-agreement label for the shown form.",
+    "promptLetter": "должны",
+    "options": [
+      "If the subject is plural",
+      "I have to",
+      "If the subject is feminine"
+    ],
+    "answer": "If the subject is plural",
+    "feedback": "Choose If the subject is plural. This is the retained subject-agreement label for the plural form, not its literal translation.",
+    "objectiveId": "obj-u19-obligation",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "I have to is a phrase meaning rather than the requested subject-agreement label.",
+      "If the subject is feminine names feminine singular agreement rather than plural agreement."
+    ],
+    "assessment": {
+      "testedFeature": "OBLIGATION_PLURAL_FORM",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u19-obligation-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u19-obligation-3-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u19-obligation-0-en",
+        "prov-ex-u19-obligation-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "I have to is a phrase meaning rather than the requested subject-agreement label.",
+        "If the subject is feminine names feminine singular agreement rather than plural agreement."
+      ],
+      "whyAnswerDemonstratesObjective": "If the subject is plural, it's должны.\nChoose If the subject is plural. This is the retained subject-agreement label for the plural form, not its literal translation.",
+      "contrastMembers": [
+        "If the subject is plural",
+        "I have to",
+        "If the subject is feminine"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u19-obligation-3-ru",
+        "prov-ex-u19-obligation-3-en",
+        "prov-ex-u19-obligation-0-en",
+        "prov-ex-u19-obligation-1-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u19-g-probability-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which displayed example expresses likelihood?",
+    "promptLetter": "(with a verb) Used to express likelihood. Usually translated as \"should\".",
+    "options": [
+      "Затме́ние должно́ наступи́ть в три часа́.",
+      "Слу́жащие должны́ во́время явля́ться на рабо́ту."
+    ],
+    "answer": "Затме́ние должно́ наступи́ть в три часа́.",
+    "feedback": "Choose Затме́ние должно́ наступи́ть в три часа́. The eclipse example predicts an expected event.",
+    "objectiveId": "obj-u19-probability",
+    "sourceId": "src-enwiktionary-dolzhen-84965088",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Слу́жащие должны́ во́время явля́ться на рабо́ту. states an employee obligation rather than the expected eclipse."
+    ],
+    "assessment": {
+      "testedFeature": "LIKELIHOOD_EXAMPLE",
+      "evidenceMode": "GOVERNED_SENSE_CONTRAST",
+      "contrastSetId": "u19-probability-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u19-probability-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u19-probability-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Слу́жащие должны́ во́время явля́ться на рабо́ту. states an employee obligation rather than the expected eclipse."
+      ],
+      "whyAnswerDemonstratesObjective": "(with a verb) Used to express likelihood. Usually translated as \"should\". Затме́ние должно́ наступи́ть в три часа́.\nChoose Затме́ние должно́ наступи́ть в три часа́. The eclipse example predicts an expected event.",
+      "contrastMembers": [
+        "Затме́ние должно́ наступи́ть в три часа́.",
+        "Слу́жащие должны́ во́время явля́ться на рабо́ту."
+      ],
+      "relationKind": "GOVERNED_SENSE_CONTRAST",
+      "relationParticipantIds": [
+        "prov-u19-probability-rem",
+        "prov-ex-u19-probability-0-ru",
+        "prov-ex-u19-probability-1-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u19-i-probability-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown form?",
+    "promptLetter": "Затме́ние должно́ наступи́ть в три часа́.",
+    "options": [
+      "The eclipse should occur at three o'clock.",
+      "(with a verb) Used to express likelihood. Usually translated as \"should\"."
+    ],
+    "answer": "The eclipse should occur at three o'clock.",
+    "feedback": "Choose The eclipse should occur at three o'clock. The complete sentence gives an expected eclipse and its time.",
+    "objectiveId": "obj-u19-probability",
+    "sourceId": "src-enwiktionary-dolzhen-84965088",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "(with a verb) Used to express likelihood. Usually translated as \"should\". is a dictionary sense description, not the full sentence meaning."
+    ],
+    "assessment": {
+      "testedFeature": "LIKELIHOOD_GLOSS",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u19-probability-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u19-probability-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u19-probability-rem"
+      ],
+      "distractorDifference": [
+        "",
+        "(with a verb) Used to express likelihood. Usually translated as \"should\". is a dictionary sense description, not the full sentence meaning."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Затме́ние должно́ наступи́ть в три часа́.\" with the admitted gloss \"The eclipse should occur at three o'clock.\".\nChoose The eclipse should occur at three o'clock. The complete sentence gives an expected eclipse and its time.",
+      "contrastMembers": [
+        "The eclipse should occur at three o'clock.",
+        "(with a verb) Used to express likelihood. Usually translated as \"should\"."
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u19-probability-0-ru",
+        "prov-ex-u19-probability-0-en",
+        "prov-u19-probability-rem"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u19-i-probability-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English label describes the use of the adjective in the shown sentence?",
+    "promptLetter": "Слу́жащие должны́ во́время явля́ться на рабо́ту.",
+    "options": [
+      "an obligation",
+      "an expected event"
+    ],
+    "answer": "an obligation",
+    "feedback": "Слу́жащие должны́ во́время явля́ться на рабо́ту. expresses an obligation: the employees must report on time.",
+    "objectiveId": "obj-u19-probability",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "an expected event describes a prediction rather than the required employee action."
+    ],
+    "assessment": {
+      "testedFeature": "OBLIGATION_VS_EXPECTATION",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u19-probability-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u1920-probability-contrast-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u1920-probability-contrast-2"
+      ],
+      "distractorDifference": [
+        "",
+        "an expected event describes a prediction rather than the required employee action."
+      ],
+      "whyAnswerDemonstratesObjective": "Слу́жащие должны́ во́время явля́ться на рабо́ту. expresses an obligation: the employees must report on time.",
+      "contrastMembers": [
+        "an obligation",
+        "an expected event"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u1920-probability-contrast-0",
+        "prov-ca-u1920-probability-contrast-1",
+        "prov-ca-u1920-probability-contrast-2"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u20-g-motion-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English directionality label applies to the shown unprefixed motion verb?",
+    "promptLetter": "идти́",
+    "options": [
+      "unidirectional",
+      "multidirectional"
+    ],
+    "answer": "unidirectional",
+    "feedback": "идти́ is unidirectional in the retained table: it describes motion in one direction. This label identifies directionality, not aspect.",
+    "objectiveId": "obj-u20-motion",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "multidirectional is the other motion column, covering different-direction or repeated movement according to context."
+    ],
+    "assessment": {
+      "testedFeature": "MOTION_DIRECTION",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u20-motion-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-u20-motion-rem"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u20-motion-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "multidirectional is the other motion column, covering different-direction or repeated movement according to context."
+      ],
+      "whyAnswerDemonstratesObjective": "идти́ is unidirectional in the retained table: it describes motion in one direction. This label identifies directionality, not aspect.",
+      "contrastMembers": [
+        "unidirectional",
+        "multidirectional"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u20-motion-0-ru",
+        "prov-u20-motion-rem",
+        "prov-u20-motion-x-1"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u20-i-motion-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown motion verb?",
+    "promptLetter": "идти́",
+    "options": [
+      "to go, walk",
+      "to go by vehicle, ride",
+      "to carry"
+    ],
+    "answer": "to go, walk",
+    "feedback": "идти́ means to go, walk: movement on foot.",
+    "objectiveId": "obj-u20-motion",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "to go by vehicle, ride describes movement by vehicle.",
+      "to carry describes carrying something on foot."
+    ],
+    "assessment": {
+      "testedFeature": "MOTION_FOOT",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u20-motion-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u20-motion-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u20-motion-1-en",
+        "prov-ex-u20-motion-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "to go by vehicle, ride describes movement by vehicle.",
+        "to carry describes carrying something on foot."
+      ],
+      "whyAnswerDemonstratesObjective": "идти́ means to go, walk: movement on foot.",
+      "contrastMembers": [
+        "to go, walk",
+        "to go by vehicle, ride",
+        "to carry"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u20-motion-0-ru",
+        "prov-ex-u20-motion-0-en",
+        "prov-ex-u20-motion-1-en",
+        "prov-ex-u20-motion-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u20-i-motion-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown motion verb?",
+    "promptLetter": "нести́",
+    "options": [
+      "to carry",
+      "to lead",
+      "to convey, transport"
+    ],
+    "answer": "to carry",
+    "feedback": "нести́ means to carry: the carrying-on-foot meaning.",
+    "objectiveId": "obj-u20-motion",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "to lead describes leading someone.",
+      "to convey, transport describes transporting by vehicle."
+    ],
+    "assessment": {
+      "testedFeature": "MOTION_CARRY",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u20-motion-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u20-motion-2-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u20-motion-3-en",
+        "prov-u20-motion-x-3"
+      ],
+      "distractorDifference": [
+        "",
+        "to lead describes leading someone.",
+        "to convey, transport describes transporting by vehicle."
+      ],
+      "whyAnswerDemonstratesObjective": "| to carry || нести́\nнести́ means to carry: the carrying-on-foot meaning.",
+      "contrastMembers": [
+        "to carry",
+        "to lead",
+        "to convey, transport"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u20-motion-2-ru",
+        "prov-ex-u20-motion-2-en",
+        "prov-ex-u20-motion-3-en",
+        "prov-u20-motion-x-3"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u20-i-motion-3",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English description. Which reading matches the perfective setting-out verb?",
+    "promptLetter": "Он пошёл к другу.",
+    "options": [
+      "he set off toward a friend",
+      "he was already on the way for a long time",
+      "he refused to go"
+    ],
+    "answer": "he set off toward a friend",
+    "feedback": "Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.",
+    "objectiveId": "obj-u20-motion",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "he was already on the way for a long time is an imperfective duration reading.",
+      "he refused to go contradicts the motion verb."
+    ],
+    "assessment": {
+      "testedFeature": "MOTION_SETTING_OUT",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u20-motion-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u20-direction-rebind-prov-ca-repair-20-10962"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u20-direction-rebind-prov-ca-repair-20-10965",
+        "prov-u20-direction-rebind-prov-ca-repair-20-10966"
+      ],
+      "distractorDifference": [
+        "",
+        "he was already on the way for a long time is an imperfective duration reading.",
+        "he refused to go contradicts the motion verb."
+      ],
+      "whyAnswerDemonstratesObjective": "Он пошёл к другу. means he set off toward a friend: пошёл presents the start of the journey, and к другу gives its destination.",
+      "contrastMembers": [
+        "he set off toward a friend",
+        "he was already on the way for a long time",
+        "he refused to go"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-u20-direction-rebind-prov-ca-repair-20-10954",
+        "prov-u20-direction-rebind-prov-ca-repair-20-10962",
+        "prov-u20-direction-rebind-prov-ca-repair-20-10965",
+        "prov-u20-direction-rebind-prov-ca-repair-20-10966"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u20-i-motion-4",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English description. Which translation covers only the shown sentence?",
+    "promptLetter": "Мальчик отошёл от незнакомца",
+    "options": [
+      "The boy stepped back from the stranger.",
+      "They will leave Vladivostok in a month.",
+      "The ball flew onto the roof of the house."
+    ],
+    "answer": "The boy stepped back from the stranger.",
+    "feedback": "Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.",
+    "objectiveId": "obj-u20-motion",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "They will leave Vladivostok in a month. is a different motion sentence.",
+      "The ball flew onto the roof of the house. is a different motion sentence."
+    ],
+    "assessment": {
+      "testedFeature": "MOTION_NO_ADDED_CLAUSE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u20-motion-4",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u20-direction-rebind-prov-ca-repair-20-10992"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u20-direction-rebind-prov-ca-repair-20-10988",
+        "prov-u20-direction-rebind-prov-ca-repair-20-10990"
+      ],
+      "distractorDifference": [
+        "",
+        "They will leave Vladivostok in a month. is a different motion sentence.",
+        "The ball flew onto the roof of the house. is a different motion sentence."
+      ],
+      "whyAnswerDemonstratesObjective": "Мальчик отошёл от незнакомца means The boy stepped back from the stranger. The displayed sentence supplies no additional relative clause.",
+      "contrastMembers": [
+        "The boy stepped back from the stranger.",
+        "They will leave Vladivostok in a month.",
+        "The ball flew onto the roof of the house."
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-u20-direction-rebind-prov-ca-repair-20-10991",
+        "prov-u20-direction-rebind-prov-ca-repair-20-10992",
+        "prov-u20-direction-rebind-prov-ca-repair-20-10988",
+        "prov-u20-direction-rebind-prov-ca-repair-20-10990"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u21-g-svoy-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which Russian sentence keeps the movie object while changing the subject?",
+    "promptLetter": "Бо́ря рассказа́л о своём люби́мом фи́льме.",
+    "options": [
+      "А́нна рассказа́ла о своём люби́мом фи́льме.",
+      "Свое́й кни́ги она́ никогда́ не написа́ла.",
+      "Бо́ря наде́л свои́ джи́нсы."
+    ],
+    "answer": "А́нна рассказа́ла о своём люби́мом фи́льме.",
+    "feedback": "Бо́ря рассказа́л о своём люби́мом фи́льме. changes to А́нна рассказа́ла о своём люби́мом фи́льме. The movie phrase retains its agreement; the subject and past verb change.",
+    "objectiveId": "obj-u21-svoy",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Свое́й кни́ги она́ никогда́ не написа́ла. concerns a book, not the movie object.",
+      "Бо́ря наде́л свои́ джи́нсы. concerns jeans and keeps Borya as subject."
+    ],
+    "assessment": {
+      "testedFeature": "OBJECT_POSSESSION_FORM",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u21-svoy-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u21-svoy-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u21-svoy-2-ru",
+        "prov-ex-u21-svoy-4-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Свое́й кни́ги она́ никогда́ не написа́ла. concerns a book, not the movie object.",
+        "Бо́ря наде́л свои́ джи́нсы. concerns jeans and keeps Borya as subject."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen note says the form follows the quantity of the object in possession. This line keeps the movie object.\nБо́ря рассказа́л о своём люби́мом фи́льме. changes to А́нна рассказа́ла о своём люби́мом фи́льме. The movie phrase retains its agreement; the subject and past verb change.",
+      "contrastMembers": [
+        "А́нна рассказа́ла о своём люби́мом фи́льме.",
+        "Свое́й кни́ги она́ никогда́ не написа́ла.",
+        "Бо́ря наде́л свои́ джи́нсы."
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u21-svoy-0-ru",
+        "prov-ex-u21-svoy-1-ru",
+        "prov-ex-u21-svoy-2-ru",
+        "prov-ex-u21-svoy-4-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u21-i-svoy-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which Russian sentence keeps the jeans object while changing the subject?",
+    "promptLetter": "Бо́ря наде́л свои́ джи́нсы.",
+    "options": [
+      "А́нна наде́ла свои́ джи́нсы.",
+      "А́нна рассказа́ла о своём люби́мом фи́льме.",
+      "Свое́й кни́ги она́ никогда́ не написа́ла."
+    ],
+    "answer": "А́нна наде́ла свои́ джи́нсы.",
+    "feedback": "Бо́ря наде́л свои́ джи́нсы. changes to А́нна наде́ла свои́ джи́нсы. The plural possessive stays plural with jeans while subject and past-verb agreement change.",
+    "objectiveId": "obj-u21-svoy",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "А́нна рассказа́ла о своём люби́мом фи́льме. concerns a movie, not jeans.",
+      "Свое́й кни́ги она́ никогда́ не написа́ла. concerns a book, not jeans."
+    ],
+    "assessment": {
+      "testedFeature": "OBJECT_POSSESSION_FORM",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u21-svoy-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u21-svoy-5-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u21-svoy-1-ru",
+        "prov-ex-u21-svoy-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "А́нна рассказа́ла о своём люби́мом фи́льме. concerns a movie, not jeans.",
+        "Свое́й кни́ги она́ никогда́ не написа́ла. concerns a book, not jeans."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen note says the form follows the quantity of the object in possession. This line keeps the jeans object.\nБо́ря наде́л свои́ джи́нсы. changes to А́нна наде́ла свои́ джи́нсы. The plural possessive stays plural with jeans while subject and past-verb agreement change.",
+      "contrastMembers": [
+        "А́нна наде́ла свои́ джи́нсы.",
+        "А́нна рассказа́ла о своём люби́мом фи́льме.",
+        "Свое́й кни́ги она́ никогда́ не написа́ла."
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u21-svoy-4-ru",
+        "prov-ex-u21-svoy-5-ru",
+        "prov-ex-u21-svoy-1-ru",
+        "prov-ex-u21-svoy-2-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u21-i-svoy-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which Russian sentence keeps the book object while changing the subject?",
+    "promptLetter": "Свое́й кни́ги он никогда́ не написа́л.",
+    "options": [
+      "Свое́й кни́ги она́ никогда́ не написа́ла.",
+      "А́нна рассказа́ла о своём люби́мом фи́льме.",
+      "А́нна наде́ла свои́ джи́нсы."
+    ],
+    "answer": "Свое́й кни́ги она́ никогда́ не написа́ла.",
+    "feedback": "Свое́й кни́ги он никогда́ не написа́л. changes to Свое́й кни́ги она́ никогда́ не написа́ла. The feminine singular book phrase retains its form while the subject and past-verb agreement change.",
+    "objectiveId": "obj-u21-svoy",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "А́нна рассказа́ла о своём люби́мом фи́льме. concerns a movie, not the book object.",
+      "А́нна наде́ла свои́ джи́нсы. concerns jeans, not the book object."
+    ],
+    "assessment": {
+      "testedFeature": "OBJECT_POSSESSION_FORM",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u21-svoy-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u21-svoy-2-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u21-svoy-1-ru",
+        "prov-ex-u21-svoy-5-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "А́нна рассказа́ла о своём люби́мом фи́льме. concerns a movie, not the book object.",
+        "А́нна наде́ла свои́ джи́нсы. concerns jeans, not the book object."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen note says the form follows the quantity of the object in possession. This line keeps the book object.\nСвое́й кни́ги он никогда́ не написа́л. changes to Свое́й кни́ги она́ никогда́ не написа́ла. The feminine singular book phrase retains its form while the subject and past-verb agreement change.",
+      "contrastMembers": [
+        "Свое́й кни́ги она́ никогда́ не написа́ла.",
+        "А́нна рассказа́ла о своём люби́мом фи́льме.",
+        "А́нна наде́ла свои́ джи́нсы."
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u21-svoy-3-ru",
+        "prov-ex-u21-svoy-2-ru",
+        "prov-ex-u21-svoy-1-ru",
+        "prov-ex-u21-svoy-5-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u21-g-object-reference-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown sentence?",
+    "promptLetter": "Я люблю́ себя́",
+    "options": [
+      "I love myself",
+      "I love my wife"
+    ],
+    "answer": "I love myself",
+    "feedback": "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"Я люблю́ себя́ = I love myself\").\nЯ люблю́ себя́ means I love myself: the object refers back to the subject.",
+    "objectiveId": "obj-u21-object-reference",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "I love my wife names a wife as the object rather than the subject themself."
+    ],
+    "assessment": {
+      "testedFeature": "REFLEXIVE_MYSELF",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u21-object-reference-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u21-object-reference-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u21-object-reference-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "I love my wife names a wife as the object rather than the subject themself."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"Я люблю́ себя́ = I love myself\").\nЯ люблю́ себя́ means I love myself: the object refers back to the subject.",
+      "contrastMembers": [
+        "I love myself",
+        "I love my wife"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u21-object-reference-0-ru",
+        "prov-ex-u21-object-reference-0-en",
+        "prov-ex-u21-object-reference-1-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u21-i-object-reference-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown sentence?",
+    "promptLetter": "Я люблю́ (свою́) жену́",
+    "options": [
+      "I love my wife",
+      "I love myself"
+    ],
+    "answer": "I love my wife",
+    "feedback": "The frozen source pairs the shown form \"Я люблю́ (свою́) жену́\" with the admitted gloss \"I love my wife\" (\"Я люблю́ (свою́) жену́ = I love my wife\").\nЯ люблю́ (свою́) жену́ means I love my wife: the object noun names a wife.",
+    "objectiveId": "obj-u21-object-reference",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "I love myself makes the subject themself the object."
+    ],
+    "assessment": {
+      "testedFeature": "REFLEXIVE_WIFE",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u21-object-reference-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u21-object-reference-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u21-object-reference-0-en"
+      ],
+      "distractorDifference": [
+        "",
+        "I love myself makes the subject themself the object."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Я люблю́ (свою́) жену́\" with the admitted gloss \"I love my wife\" (\"Я люблю́ (свою́) жену́ = I love my wife\").\nЯ люблю́ (свою́) жену́ means I love my wife: the object noun names a wife.",
+      "contrastMembers": [
+        "I love my wife",
+        "I love myself"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u21-object-reference-1-ru",
+        "prov-ex-u21-object-reference-1-en",
+        "prov-ex-u21-object-reference-0-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  }
+]

@@ -1,0 +1,838 @@
+[
+  {
+    "itemId": "prov-ca-repair-28-11019",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-imperfective-adverb",
+    "shippedText": "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3ec1b25855c9c37e0dd1ad494c532fa84e6a7f646a0b79fa3da4c58d578ff3f0",
+    "contentHash": "5018f0afaa9ec8dc3a93cb5893d589ef73203bcc3fb12dd5e37adc5d1a281e03",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:imperfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nAn imperfective verbal adverb is simultaneous with the main predicate. It has no independent tense, so it is not usually present as an absolute label. The subject is the same as the main verb.\nimperfective ones are usually present, while perfective ones can only be past\nдумая\nimperfective verbal adverb; relative time is interpreted with its main predicate, normally simultaneous in the taught construction\nучась\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11020",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "Proposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "ab2e4e288fad506554a7e43d5fd515ad2907e183e566db7fe3448a4d088512d2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11021",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "Read the admitted examples on this card.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "91c1ab761be6725fb458528faa79eae09a4e895c01ee0bee7c720f19b5865cd6",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11022",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "A perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "848e153a7eb73244f1a19081ae90ff4c5f2fab82b24233a6478768154a7165e3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11023",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "usually present, while perfective ones can only be past",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "f74f23567ab6cc98b1ffc81d88dde18448bb0a3c743ecbc8ea7cd1b51a943e78",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11024",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "сказав",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "17455f0242469f0b62adccc939fc3787af5cc6683deef742aa2a5e905092203d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11025",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "perfective verbal adverb; normally anterior to its main action, which can itself be past or future",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "667ed7c6ed8eaf3d573f90765a5f26ad785b6df755af58fe4e71c0a6d2f8a83d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11026",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "научившись",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "8e06c8b41465671cb38047f1a80769cc30fab14ce2bf8e4925618b0bee216279",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11027",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "войдя",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "641279ab1a9364603b445398bcfe2d31001b37f3c653cb2aca0e7f833a191b0b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11028",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "написав письмо, она отправит его завтра",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "2cc5503c228ef7606d1a7e02047d2070958add0a22cdd0ed69d8e3c21393a2c7",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11029",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "anterior to a future main action",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "16f42ab87a4149e77c6db7d24f32fcb2975c3b1712be311eefae55000430459c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11030",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "When is the perfective verbal adverb interpreted in this sentence?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "5fc6a30d9226516f87017b85acc28220665224375099815d0c87f0c5d2bc7d49",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11031",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "In написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "455ae6b65d87051a65350c9a79f2da7d5f24ce4046f5f9587da1fbb2c53d986c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11032",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "an absolute present label",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "ad279813889fadf7a4ed0dbc52285ae58694133905dbf038f51fa7996807a8c7",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11033",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "a different subject from the main verb",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "5408a0a22e04436b148f7e5de1190e3cd11f8f8765104effe67bb7d662a08a7b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11034",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "an absolute present label is not the time of a perfective verbal adverb.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "571b9483597b6a2df8c00d013522641294cf33aea2b8afda36b6f241cfd451eb",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11035",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "a different subject from the main verb violates the shared-subject constraint.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "9fde4750b9bc6caf799f89e52ca530e36c4742f10c796a125d6a48b2670e1612",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11036",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "the writer and sender are the same person",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "e3d5910aab607e21a6a9c5b3e6fd1e60cadd0b6527dc76962f595d7797f68f74",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11037",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "Which English description identifies the shared subject?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "083199fd5245906e8528cc3c42dce18dff5b964e603e3a0084982e2180e4a1c3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  }
+]

@@ -1,0 +1,1097 @@
+{
+  "derivedFromCommit": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "rawSha256": "33e5655c99d6d5003da0ab1af9249dc814472e3436e0d28afd2f878f6ade4940",
+  "unit": {
+    "number": 21,
+    "id": "unit-21",
+    "title": "Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses",
+    "shortLabel": "Possession",
+    "topicSummary": "Proposed Unit 21 is in development. Admitted object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss await qualified review. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 21,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 21, printed pages 257-268. Independently stated topic scope: Possession with the reflexive possessive pronoun; reflexive reference; and purpose clauses. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+    "prerequisiteUnitNumbers": [
+      20
+    ],
+    "estimatedMinutes": 54,
+    "objectives": [
+      {
+        "id": "obj-u21-svoy",
+        "unitNumber": 21,
+        "title": "Connect own possession to the subject and the possessed noun",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u21-st-orient",
+          "u21-st-teach-svoy-1",
+          "u21-st-teach-svoy-2",
+          "u21-st-teach-svoy-3",
+          "u21-st-teach-svoy-4"
+        ],
+        "exampleIds": [
+          "ex-u21-svoy-0",
+          "ex-u21-svoy-1",
+          "ex-u21-svoy-2",
+          "ex-u21-svoy-3",
+          "ex-u21-svoy-4",
+          "ex-u21-svoy-5"
+        ],
+        "practiceStepIds": [
+          "u21-st-guided-svoy-1"
+        ],
+        "checkItemIds": [
+          "u21-i-svoy-1",
+          "u21-i-svoy-2"
+        ],
+        "remediationStepIds": [
+          "u21-st-rem-svoy"
+        ]
+      },
+      {
+        "id": "obj-u21-object-reference",
+        "unitNumber": 21,
+        "title": "Distinguish oneself from a possessed object",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u21-st-orient",
+          "u21-st-teach-object-reference-1",
+          "u21-st-teach-object-reference-2",
+          "u21-st-teach-object-reference-3"
+        ],
+        "exampleIds": [
+          "ex-u21-object-reference-0",
+          "ex-u21-object-reference-1"
+        ],
+        "practiceStepIds": [
+          "u21-st-guided-object-reference-1"
+        ],
+        "checkItemIds": [
+          "u21-i-object-reference-1",
+          "u21-i-object-reference-2"
+        ],
+        "remediationStepIds": [
+          "u21-st-rem-object-reference"
+        ]
+      },
+      {
+        "id": "obj-u21-purpose",
+        "unitNumber": 21,
+        "title": "Distinguish purpose, condition, cause and concession",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u21-st-orient",
+          "u21-st-teach-purpose-1",
+          "u21-st-teach-purpose-2",
+          "u21-st-teach-purpose-3"
+        ],
+        "exampleIds": [
+          "ex-u21-purpose-0",
+          "ex-u21-purpose-1",
+          "ex-u21-purpose-2",
+          "ex-u21-purpose-3"
+        ],
+        "practiceStepIds": [
+          "u21-st-guided-purpose-1"
+        ],
+        "checkItemIds": [
+          "u21-i-purpose-1",
+          "u21-i-purpose-2"
+        ],
+        "remediationStepIds": [
+          "u21-st-rem-purpose"
+        ]
+      },
+      {
+        "id": "obj-u21-book",
+        "unitNumber": 21,
+        "title": "Self-attest Lesson 21 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u21-st-book-work",
+          "u21-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u21-s-orient",
+        "title": "Admitted object and purpose lines",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u21-svoy",
+          "obj-u21-object-reference",
+          "obj-u21-purpose",
+          "obj-u21-book"
+        ],
+        "steps": [
+          {
+            "id": "u21-st-orient",
+            "kind": "ORIENT",
+            "title": "Admitted object and purpose lines",
+            "body": "Proposed Unit 21 uses frozen object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "bookDirection": "Open Lesson 21 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u21-s-svoy",
+        "title": "Connect own possession to the subject and the possessed noun",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u21-svoy"
+        ],
+        "steps": [
+          {
+            "id": "u21-st-teach-svoy-1",
+            "kind": "TEACH",
+            "title": "Who owns it and which noun controls the form",
+            "body": "The reflexive possessive refers to the subject as the owner. Its gender, number and case agree with the possessed noun, not with the owner. The retained dictionary forms are свой, своя, своё and свои. A masculine owner and a feminine owner can therefore use the same possessive form with the same noun.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u21-svoy-0",
+              "ex-u21-svoy-1"
+            ]
+          },
+          {
+            "id": "u21-st-teach-svoy-2",
+            "kind": "TEACH",
+            "title": "The movie belongs to the subject",
+            "body": "Бо́ря рассказа́л о своём люби́мом фи́льме. — (Borya told about his favorite movie.). А́нна рассказа́ла о своём люби́мом фи́льме. — (Anna told about her favorite movie.). In each sentence the favorite movie belongs to the subject. The movie noun has the same gender, number and case in both, so the possessive form stays the same. The name and past-verb agreement change. The exercise asks you to preserve that movie object while changing the subject.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u21-st-teach-svoy-3",
+            "kind": "TEACH",
+            "title": "The same own book with two subjects",
+            "body": "Свое́й кни́ги она́ никогда́ не написа́ла. — (She never wrote her own book.). Свое́й кни́ги он никогда́ не написа́л. — (He never wrote his own book.). The possessive agrees with the feminine singular book noun; the shown form is genitive in this negative sentence. Changing the subject changes the past verb's agreement, not the book phrase. These sentences are about a book, not a movie or jeans.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u21-svoy-2",
+              "ex-u21-svoy-3"
+            ]
+          },
+          {
+            "id": "u21-st-teach-svoy-4",
+            "kind": "TEACH",
+            "title": "Plural jeans and the limits of the checks",
+            "body": "Бо́ря наде́л свои́ джи́нсы. — (Borya put on his own jeans.). А́нна наде́ла свои́ джи́нсы. — (Anna put on her own jeans.). Plural jeans require plural possessive agreement regardless of whether Borya or Anna owns them. The exercise keeps this object and changes the subject. The checks select supplied matched sentences; they do not demonstrate independently declining the possessive or constructing an ownership sentence.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u21-svoy-4",
+              "ex-u21-svoy-5"
+            ]
+          },
+          {
+            "id": "u21-st-guided-svoy-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown Russian sentence or conjunction and choose the requested meaning or matching object example using the explanation above. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u21-g-svoy-0"
+            ],
+            "remediationStepId": "u21-st-rem-svoy"
+          },
+          {
+            "id": "u21-st-rem-svoy",
+            "kind": "REMEDIATE",
+            "title": "Review the complete contrast",
+            "body": "The reflexive possessive refers to the subject as the owner. Its gender, number and case agree with the possessed noun, not with the owner. The retained dictionary forms are свой, своя, своё and свои. A masculine owner and a feminine owner can therefore use the same possessive form with the same noun.\n\nБо́ря рассказа́л о своём люби́мом фи́льме. — (Borya told about his favorite movie.). А́нна рассказа́ла о своём люби́мом фи́льме. — (Anna told about her favorite movie.). In each sentence the favorite movie belongs to the subject. The movie noun has the same gender, number and case in both, so the possessive form stays the same. The name and past-verb agreement change. The exercise asks you to preserve that movie object while changing the subject.\n\nСвое́й кни́ги она́ никогда́ не написа́ла. — (She never wrote her own book.). Свое́й кни́ги он никогда́ не написа́л. — (He never wrote his own book.). The possessive agrees with the feminine singular book noun; the shown form is genitive in this negative sentence. Changing the subject changes the past verb's agreement, not the book phrase. These sentences are about a book, not a movie or jeans.\n\nБо́ря наде́л свои́ джи́нсы. — (Borya put on his own jeans.). А́нна наде́ла свои́ джи́нсы. — (Anna put on her own jeans.). Plural jeans require plural possessive agreement regardless of whether Borya or Anna owns them. The exercise keeps this object and changes the subject. The checks select supplied matched sentences; they do not demonstrate independently declining the possessive or constructing an ownership sentence.",
+            "exampleIds": [
+              "ex-u21-svoy-0",
+              "ex-u21-svoy-1",
+              "ex-u21-svoy-2",
+              "ex-u21-svoy-3",
+              "ex-u21-svoy-4",
+              "ex-u21-svoy-5"
+            ]
+          },
+          {
+            "id": "u21-st-check-svoy",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the shown Russian sentence or conjunction and choose the requested meaning or matching object example using the explanation above. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u21-i-svoy-1",
+              "u21-i-svoy-2"
+            ],
+            "remediationStepId": "u21-st-rem-svoy"
+          }
+        ]
+      },
+      {
+        "id": "u21-s-object-reference",
+        "title": "Distinguish oneself from a possessed object",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u21-object-reference"
+        ],
+        "steps": [
+          {
+            "id": "u21-st-teach-object-reference-1",
+            "kind": "TEACH",
+            "title": "The person loved and the person who owns",
+            "body": "Я люблю́ себя́ — I love myself. Я люблю́ (свою́) жену́ — I love my wife. In the first sentence the object refers back to the subject. In the second the object is a wife; the parenthesized possessive makes ownership explicit. Loving oneself and loving a wife describe different objects.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u21-object-reference-0",
+              "ex-u21-object-reference-1"
+            ]
+          },
+          {
+            "id": "u21-st-teach-object-reference-2",
+            "kind": "TEACH",
+            "title": "A whole sentence is more than its object word",
+            "body": "жену́ is the accusative form of the noun meaning wife. It does not mean I love. In Я люблю́ свою́ жену́ the verb supplies loving and the noun supplies its object. The full displayed sentence Я люблю́ (свою́) жену́ means I love my wife; the full displayed sentence Я люблю́ себя́ means I love myself. Choose the whole-sentence meaning rather than translating the object word as the verb. These checks recognize the supplied love and wounded-object sentences; they do not demonstrate independently choosing every reflexive case form.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u21-st-teach-object-reference-3",
+            "kind": "TEACH",
+            "title": "Recognize the same-person object in a different sentence",
+            "body": "Он поранил себя — He has wounded himself. Here the subject denotes the man and the direct object себя refers back to that same person. The verb and subject differ from guided Я люблю́ себя́. Compare the complete supplied Он поранил его — He has wounded him (someone else). In this contrast the other person is the object; the person wounded is different from the subject. In both wounded sentences the object is a person, not a possessed wife. In the retained Я люблю́ (свою́) жену́ example, a wife is the object even when the possessive refers to the subject as owner. Keep object identity separate from ownership. These are supplied direct-object readings, not productive grammar, every pronoun case, emphasis or a rule that the reflexive-verb suffix always means accidental action.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u21-st-guided-object-reference-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown Russian sentence or conjunction and choose the requested meaning or matching object example using the explanation above. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u21-g-object-reference-0"
+            ],
+            "remediationStepId": "u21-st-rem-object-reference"
+          },
+          {
+            "id": "u21-st-rem-object-reference",
+            "kind": "REMEDIATE",
+            "title": "Review the complete contrast",
+            "body": "Я люблю́ себя́ — I love myself. Я люблю́ (свою́) жену́ — I love my wife. In the first sentence the object refers back to the subject. In the second the object is a wife; the parenthesized possessive makes ownership explicit. Loving oneself and loving a wife describe different objects.\n\nжену́ is the accusative form of the noun meaning wife. It does not mean I love. In Я люблю́ свою́ жену́ the verb supplies loving and the noun supplies its object. The full displayed sentence Я люблю́ (свою́) жену́ means I love my wife; the full displayed sentence Я люблю́ себя́ means I love myself. Choose the whole-sentence meaning rather than translating the object word as the verb. These checks recognize the supplied love and wounded-object sentences; they do not demonstrate independently choosing every reflexive case form.\n\nОн поранил себя — He has wounded himself. Here the subject denotes the man and the direct object себя refers back to that same person. The verb and subject differ from guided Я люблю́ себя́. Compare the complete supplied Он поранил его — He has wounded him (someone else). In this contrast the other person is the object; the person wounded is different from the subject. In both wounded sentences the object is a person, not a possessed wife. In the retained Я люблю́ (свою́) жену́ example, a wife is the object even when the possessive refers to the subject as owner. Keep object identity separate from ownership. These are supplied direct-object readings, not productive grammar, every pronoun case, emphasis or a rule that the reflexive-verb suffix always means accidental action.",
+            "exampleIds": [
+              "ex-u21-object-reference-0",
+              "ex-u21-object-reference-1"
+            ]
+          },
+          {
+            "id": "u21-st-check-object-reference",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the shown Russian sentence or conjunction and choose the requested meaning or matching object example using the explanation above. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u21-i-object-reference-1",
+              "u21-i-object-reference-2"
+            ],
+            "remediationStepId": "u21-st-rem-object-reference"
+          }
+        ]
+      },
+      {
+        "id": "u21-s-purpose",
+        "title": "Distinguish purpose, condition, cause and concession",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u21-purpose"
+        ],
+        "steps": [
+          {
+            "id": "u21-st-teach-purpose-1",
+            "kind": "TEACH",
+            "title": "Purpose and condition",
+            "body": "чтобы — so that. если — if. The first conjunction can introduce a purpose; the second introduces a condition. In a purpose construction with the same subject for both actions, an infinitive after the purpose conjunction can name the intended action. This rule is explained here, but the current choices do not require composing such a sentence.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u21-purpose-0",
+              "ex-u21-purpose-1"
+            ]
+          },
+          {
+            "id": "u21-st-teach-purpose-2",
+            "kind": "TEACH",
+            "title": "Ordinary purpose wording",
+            "body": "чтобы is an ordinary purpose conjunction. The bookish or archaic qualifier in the retained source belongs to дабы, not to чтобы. The English meaning so that differs from the conditional if and the causal because. Select the meaning of the displayed conjunction; do not infer an archaic register for the ordinary form.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u21-st-teach-purpose-3",
+            "kind": "TEACH",
+            "title": "Cause, concession and time",
+            "body": "потому что — because. хотя — although. The first gives a reason; the second introduces a concession. The English label after names a temporal relationship rather than a reason. English since can also express a reason, so it is not a contrasting wrong answer to because in this exercise. The causal check instead contrasts because with although and after. These conjunction meanings are distinct from purpose and condition.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u21-purpose-2",
+              "ex-u21-purpose-3"
+            ]
+          },
+          {
+            "id": "u21-st-guided-purpose-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown Russian sentence or conjunction and choose the requested meaning or matching object example using the explanation above. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u21-g-purpose-0"
+            ],
+            "remediationStepId": "u21-st-rem-purpose"
+          },
+          {
+            "id": "u21-st-rem-purpose",
+            "kind": "REMEDIATE",
+            "title": "Review the complete contrast",
+            "body": "чтобы — so that. если — if. The first conjunction can introduce a purpose; the second introduces a condition. In a purpose construction with the same subject for both actions, an infinitive after the purpose conjunction can name the intended action. This rule is explained here, but the current choices do not require composing such a sentence.\n\nчтобы is an ordinary purpose conjunction. The bookish or archaic qualifier in the retained source belongs to дабы, not to чтобы. The English meaning so that differs from the conditional if and the causal because. Select the meaning of the displayed conjunction; do not infer an archaic register for the ordinary form.\n\nпотому что — because. хотя — although. The first gives a reason; the second introduces a concession. The English label after names a temporal relationship rather than a reason. English since can also express a reason, so it is not a contrasting wrong answer to because in this exercise. The causal check instead contrasts because with although and after. These conjunction meanings are distinct from purpose and condition.",
+            "exampleIds": [
+              "ex-u21-purpose-0",
+              "ex-u21-purpose-1",
+              "ex-u21-purpose-2",
+              "ex-u21-purpose-3"
+            ]
+          },
+          {
+            "id": "u21-st-check-purpose",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the shown Russian sentence or conjunction and choose the requested meaning or matching object example using the explanation above. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u21-i-purpose-1",
+              "u21-i-purpose-2"
+            ],
+            "remediationStepId": "u21-st-rem-purpose"
+          }
+        ]
+      },
+      {
+        "id": "u21-s-book",
+        "title": "Self-attest Lesson 21",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u21-book"
+        ],
+        "steps": [
+          {
+            "id": "u21-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 21 in your copy",
+            "body": "Do Lesson 21 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 21: printed pages 257-268. PDF indexes 269-280 are file locators, not printed pages. Observed section locators: §21.1 p257 (PDF 269); §21.2 p257 (PDF 269); §21.3 p259 (PDF 271); §21.4 p259 (PDF 271); §21.5 p261 (PDF 273); §21.6 p261 (PDF 273); §21.7 p261 (PDF 273); §21.8 p262 (PDF 274); §21.9 p263 (PDF 275); §21.10 p265 (PDF 277). Observed exercise locators: 21/1 p258/PDF270; 21/2 p259/PDF271; 21/3 p260/PDF272; 21/4 p263/PDF275; 21/5 p266/PDF278. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u21-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 21 book work",
+            "body": "When you have done Lesson 21 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 21: printed pages 257-268. PDF indexes 269-280 are file locators, not printed pages. Observed section locators: §21.1 p257 (PDF 269); §21.2 p257 (PDF 269); §21.3 p259 (PDF 271); §21.4 p259 (PDF 271); §21.5 p261 (PDF 273); §21.6 p261 (PDF 273); §21.7 p261 (PDF 273); §21.8 p262 (PDF 274); §21.9 p263 (PDF 275); §21.10 p265 (PDF 277). Observed exercise locators: 21/1 p258/PDF270; 21/2 p259/PDF271; 21/3 p260/PDF272; 21/4 p263/PDF275; 21/5 p266/PDF278. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u21-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 21 AnkiDroid direction",
+            "body": "Unit 21 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u21-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 21 binder prompt",
+            "body": "Unit 21 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u21-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 21 optional tutor",
+            "body": "Unit 21 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u21-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 21 cumulative review",
+            "body": "Unit 21 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 21 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 2,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit21-prior-reading-motion-context-v1"
+    }
+  },
+  "items": [
+    {
+      "id": "u21-g-svoy-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which Russian sentence keeps the movie object while changing the subject?",
+      "promptLetter": "Бо́ря рассказа́л о своём люби́мом фи́льме.",
+      "options": [
+        "А́нна рассказа́ла о своём люби́мом фи́льме.",
+        "Свое́й кни́ги она́ никогда́ не написа́ла.",
+        "Бо́ря наде́л свои́ джи́нсы."
+      ],
+      "answer": "А́нна рассказа́ла о своём люби́мом фи́льме.",
+      "feedback": "Бо́ря рассказа́л о своём люби́мом фи́льме. changes to А́нна рассказа́ла о своём люби́мом фи́льме. The movie phrase retains its agreement; the subject and past verb change.",
+      "objectiveId": "obj-u21-svoy",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "Свое́й кни́ги она́ никогда́ не написа́ла. concerns a book, not the movie object.",
+        "Бо́ря наде́л свои́ джи́нсы. concerns jeans and keeps Borya as subject."
+      ],
+      "assessment": {
+        "testedFeature": "OBJECT_POSSESSION_FORM",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u21-svoy-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-u21-svoy-1-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u21-svoy-2-ru",
+          "prov-ex-u21-svoy-4-ru"
+        ],
+        "distractorDifference": [
+          "",
+          "Свое́й кни́ги она́ никогда́ не написа́ла. concerns a book, not the movie object.",
+          "Бо́ря наде́л свои́ джи́нсы. concerns jeans and keeps Borya as subject."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen note says the form follows the quantity of the object in possession. This line keeps the movie object.\nБо́ря рассказа́л о своём люби́мом фи́льме. changes to А́нна рассказа́ла о своём люби́мом фи́льме. The movie phrase retains its agreement; the subject and past verb change.",
+        "contrastMembers": [
+          "А́нна рассказа́ла о своём люби́мом фи́льме.",
+          "Свое́й кни́ги она́ никогда́ не написа́ла.",
+          "Бо́ря наде́л свои́ джи́нсы."
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u21-svoy-0-ru",
+          "prov-ex-u21-svoy-1-ru",
+          "prov-ex-u21-svoy-2-ru",
+          "prov-ex-u21-svoy-4-ru"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u21-i-svoy-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which Russian sentence keeps the jeans object while changing the subject?",
+      "promptLetter": "Бо́ря наде́л свои́ джи́нсы.",
+      "options": [
+        "А́нна наде́ла свои́ джи́нсы.",
+        "А́нна рассказа́ла о своём люби́мом фи́льме.",
+        "Свое́й кни́ги она́ никогда́ не написа́ла."
+      ],
+      "answer": "А́нна наде́ла свои́ джи́нсы.",
+      "feedback": "Бо́ря наде́л свои́ джи́нсы. changes to А́нна наде́ла свои́ джи́нсы. The plural possessive stays plural with jeans while subject and past-verb agreement change.",
+      "objectiveId": "obj-u21-svoy",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "А́нна рассказа́ла о своём люби́мом фи́льме. concerns a movie, not jeans.",
+        "Свое́й кни́ги она́ никогда́ не написа́ла. concerns a book, not jeans."
+      ],
+      "assessment": {
+        "testedFeature": "OBJECT_POSSESSION_FORM",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u21-svoy-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u21-svoy-5-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u21-svoy-1-ru",
+          "prov-ex-u21-svoy-2-ru"
+        ],
+        "distractorDifference": [
+          "",
+          "А́нна рассказа́ла о своём люби́мом фи́льме. concerns a movie, not jeans.",
+          "Свое́й кни́ги она́ никогда́ не написа́ла. concerns a book, not jeans."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen note says the form follows the quantity of the object in possession. This line keeps the jeans object.\nБо́ря наде́л свои́ джи́нсы. changes to А́нна наде́ла свои́ джи́нсы. The plural possessive stays plural with jeans while subject and past-verb agreement change.",
+        "contrastMembers": [
+          "А́нна наде́ла свои́ джи́нсы.",
+          "А́нна рассказа́ла о своём люби́мом фи́льме.",
+          "Свое́й кни́ги она́ никогда́ не написа́ла."
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u21-svoy-4-ru",
+          "prov-ex-u21-svoy-5-ru",
+          "prov-ex-u21-svoy-1-ru",
+          "prov-ex-u21-svoy-2-ru"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u21-i-svoy-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which Russian sentence keeps the book object while changing the subject?",
+      "promptLetter": "Свое́й кни́ги он никогда́ не написа́л.",
+      "options": [
+        "Свое́й кни́ги она́ никогда́ не написа́ла.",
+        "А́нна рассказа́ла о своём люби́мом фи́льме.",
+        "А́нна наде́ла свои́ джи́нсы."
+      ],
+      "answer": "Свое́й кни́ги она́ никогда́ не написа́ла.",
+      "feedback": "Свое́й кни́ги он никогда́ не написа́л. changes to Свое́й кни́ги она́ никогда́ не написа́ла. The feminine singular book phrase retains its form while the subject and past-verb agreement change.",
+      "objectiveId": "obj-u21-svoy",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "А́нна рассказа́ла о своём люби́мом фи́льме. concerns a movie, not the book object.",
+        "А́нна наде́ла свои́ джи́нсы. concerns jeans, not the book object."
+      ],
+      "assessment": {
+        "testedFeature": "OBJECT_POSSESSION_FORM",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u21-svoy-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u21-svoy-2-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u21-svoy-1-ru",
+          "prov-ex-u21-svoy-5-ru"
+        ],
+        "distractorDifference": [
+          "",
+          "А́нна рассказа́ла о своём люби́мом фи́льме. concerns a movie, not the book object.",
+          "А́нна наде́ла свои́ джи́нсы. concerns jeans, not the book object."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen note says the form follows the quantity of the object in possession. This line keeps the book object.\nСвое́й кни́ги он никогда́ не написа́л. changes to Свое́й кни́ги она́ никогда́ не написа́ла. The feminine singular book phrase retains its form while the subject and past-verb agreement change.",
+        "contrastMembers": [
+          "Свое́й кни́ги она́ никогда́ не написа́ла.",
+          "А́нна рассказа́ла о своём люби́мом фи́льме.",
+          "А́нна наде́ла свои́ джи́нсы."
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u21-svoy-3-ru",
+          "prov-ex-u21-svoy-2-ru",
+          "prov-ex-u21-svoy-1-ru",
+          "prov-ex-u21-svoy-5-ru"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u21-g-object-reference-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English meaning matches the shown sentence?",
+      "promptLetter": "Я люблю́ себя́",
+      "options": [
+        "I love myself",
+        "I love my wife"
+      ],
+      "answer": "I love myself",
+      "feedback": "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"Я люблю́ себя́ = I love myself\").\nЯ люблю́ себя́ means I love myself: the object refers back to the subject.",
+      "objectiveId": "obj-u21-object-reference",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "I love my wife names a wife as the object rather than the subject themself."
+      ],
+      "assessment": {
+        "testedFeature": "REFLEXIVE_MYSELF",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u21-object-reference-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-u21-object-reference-0-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u21-object-reference-1-en"
+        ],
+        "distractorDifference": [
+          "",
+          "I love my wife names a wife as the object rather than the subject themself."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Я люблю́ себя́\" with the admitted gloss \"I love myself\" (\"Я люблю́ себя́ = I love myself\").\nЯ люблю́ себя́ means I love myself: the object refers back to the subject.",
+        "contrastMembers": [
+          "I love myself",
+          "I love my wife"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u21-object-reference-0-ru",
+          "prov-ex-u21-object-reference-0-en",
+          "prov-ex-u21-object-reference-1-en"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u21-i-object-reference-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English meaning matches the shown sentence?",
+      "promptLetter": "Я люблю́ (свою́) жену́",
+      "options": [
+        "I love my wife",
+        "I love myself"
+      ],
+      "answer": "I love my wife",
+      "feedback": "The frozen source pairs the shown form \"Я люблю́ (свою́) жену́\" with the admitted gloss \"I love my wife\" (\"Я люблю́ (свою́) жену́ = I love my wife\").\nЯ люблю́ (свою́) жену́ means I love my wife: the object noun names a wife.",
+      "objectiveId": "obj-u21-object-reference",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "I love myself makes the subject themself the object."
+      ],
+      "assessment": {
+        "testedFeature": "REFLEXIVE_WIFE",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u21-object-reference-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u21-object-reference-1-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u21-object-reference-0-en"
+        ],
+        "distractorDifference": [
+          "",
+          "I love myself makes the subject themself the object."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Я люблю́ (свою́) жену́\" with the admitted gloss \"I love my wife\" (\"Я люблю́ (свою́) жену́ = I love my wife\").\nЯ люблю́ (свою́) жену́ means I love my wife: the object noun names a wife.",
+        "contrastMembers": [
+          "I love my wife",
+          "I love myself"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u21-object-reference-1-ru",
+          "prov-ex-u21-object-reference-1-en",
+          "prov-ex-u21-object-reference-0-en"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u21-i-object-reference-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English meaning matches the shown sentence?",
+      "promptLetter": "Он поранил себя",
+      "options": [
+        "He has wounded himself.",
+        "He has wounded him (someone else)."
+      ],
+      "answer": "He has wounded himself.",
+      "feedback": "Он поранил себя means He has wounded himself. The direct object себя refers back to the subject:the person wounded is the same person who wounded him. The contrasting source sentence Он поранил его has a non-reflexive pronoun referring to someone else. Read the whole supplied sentence; this does not test every reflexive case or the separate reflexive-verb interpretation.",
+      "objectiveId": "obj-u21-object-reference",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "He has wounded him (someone else). describes the separate supplied Он поранил его sentence; it does not express the reflexive direct object себя in Он поранил себя."
+      ],
+      "assessment": {
+        "testedFeature": "REFLEXIVE_MYSELF_SENTENCE",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u21-i-object-reference-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-u21-object-transfer-u21-i-object-reference-2-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-u21-object-transfer-u21-i-object-reference-2-2"
+        ],
+        "distractorDifference": [
+          "",
+          "He has wounded him (someone else). describes the separate supplied Он поранил его sentence; it does not express the reflexive direct object себя in Он поранил себя."
+        ],
+        "whyAnswerDemonstratesObjective": "Он поранил себя means He has wounded himself. The direct object себя refers back to the subject:the person wounded is the same person who wounded him. The contrasting source sentence Он поранил его has a non-reflexive pronoun referring to someone else. Read the whole supplied sentence; this does not test every reflexive case or the separate reflexive-verb interpretation.",
+        "contrastMembers": [
+          "He has wounded himself.",
+          "He has wounded him (someone else)."
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-u21-object-transfer-u21-i-object-reference-2-0",
+          "prov-ca-u21-object-transfer-u21-i-object-reference-2-1",
+          "prov-ca-u21-object-transfer-u21-i-object-reference-2-2"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u21-g-purpose-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English meaning matches the shown conjunction?",
+      "promptLetter": "чтобы",
+      "options": [
+        "so that",
+        "if",
+        "because"
+      ],
+      "answer": "so that",
+      "feedback": "чтобы means so that: the ordinary conjunction can introduce a purpose.",
+      "objectiveId": "obj-u21-purpose",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "if introduces a condition.",
+        "because supplies a reason."
+      ],
+      "assessment": {
+        "testedFeature": "PURPOSE_CHTOBY",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u21-purpose-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ca-21-280"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-21-284",
+          "prov-ca-21-285"
+        ],
+        "distractorDifference": [
+          "",
+          "if introduces a condition.",
+          "because supplies a reason."
+        ],
+        "whyAnswerDemonstratesObjective": "чтобы is the normal purpose conjunction and means so that.\nчтобы means so that: the ordinary conjunction can introduce a purpose.",
+        "contrastMembers": [
+          "so that",
+          "if",
+          "because"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-21-279",
+          "prov-ca-21-280",
+          "prov-ca-21-284",
+          "prov-ca-21-285"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u21-i-purpose-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English meaning matches the shown conjunction?",
+      "promptLetter": "если",
+      "options": [
+        "if",
+        "so that",
+        "because"
+      ],
+      "answer": "if",
+      "feedback": "если means if: the conjunction introduces a condition.",
+      "objectiveId": "obj-u21-purpose",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "so that introduces a purpose.",
+        "because supplies a reason."
+      ],
+      "assessment": {
+        "testedFeature": "CONDITIONAL_ESLI",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u21-purpose-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-repair-21-10803"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-repair-21-10806",
+          "prov-ca-repair-21-10807"
+        ],
+        "distractorDifference": [
+          "",
+          "so that introduces a purpose.",
+          "because supplies a reason."
+        ],
+        "whyAnswerDemonstratesObjective": "если means if and introduces a condition for the main proposition.\nесли means if: the conjunction introduces a condition.",
+        "contrastMembers": [
+          "if",
+          "so that",
+          "because"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-repair-21-10802",
+          "prov-ca-repair-21-10803",
+          "prov-ca-repair-21-10806",
+          "prov-ca-repair-21-10807"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u21-i-purpose-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English meaning matches the shown conjunction?",
+      "promptLetter": "потому что",
+      "options": [
+        "because",
+        "although",
+        "after"
+      ],
+      "answer": "because",
+      "feedback": "потому что means because: the conjunction introduces a reason.",
+      "objectiveId": "obj-u21-purpose",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "although introduces a concession.",
+        "after introduces a temporal relationship."
+      ],
+      "assessment": {
+        "testedFeature": "PURPOSE_BECAUSE",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u21-purpose-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u21-purpose-2-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u21-purpose-3-en",
+          "prov-u21-purpose-x-1"
+        ],
+        "distractorDifference": [
+          "",
+          "although introduces a concession.",
+          "after introduces a temporal relationship."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"потому что\" with the admitted gloss \"because\" (\"for the reason that\").\nпотому что means because: the conjunction introduces a reason.",
+        "contrastMembers": [
+          "because",
+          "although",
+          "after"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u21-purpose-2-ru",
+          "prov-ex-u21-purpose-2-en",
+          "prov-ex-u21-purpose-3-en",
+          "prov-u21-purpose-x-1"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "id": "ex-u21-svoy-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Бо́ря рассказа́л о своём люби́мом фи́льме.",
+      "note": "(Borya told about his favorite movie.)",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u21-svoy"
+    },
+    {
+      "id": "ex-u21-svoy-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "А́нна рассказа́ла о своём люби́мом фи́льме.",
+      "note": "(Anna told about her favorite movie.)",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u21-svoy"
+    },
+    {
+      "id": "ex-u21-svoy-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Свое́й кни́ги она́ никогда́ не написа́ла.",
+      "note": "(She never wrote her own book.)",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u21-svoy"
+    },
+    {
+      "id": "ex-u21-svoy-3",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Свое́й кни́ги он никогда́ не написа́л.",
+      "note": "(He never wrote his own book.)",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u21-svoy"
+    },
+    {
+      "id": "ex-u21-svoy-4",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Бо́ря наде́л свои́ джи́нсы.",
+      "note": "(Borya put on his own jeans.)",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u21-svoy"
+    },
+    {
+      "id": "ex-u21-svoy-5",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "А́нна наде́ла свои́ джи́нсы.",
+      "note": "(Anna put on her own jeans.)",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u21-svoy"
+    },
+    {
+      "id": "ex-u21-object-reference-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Я люблю́ себя́",
+      "note": "I love myself",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u21-object-reference"
+    },
+    {
+      "id": "ex-u21-object-reference-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Я люблю́ (свою́) жену́",
+      "note": "I love my wife",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u21-object-reference"
+    },
+    {
+      "id": "ex-u21-purpose-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "чтобы",
+      "note": "so that",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u21-purpose"
+    },
+    {
+      "id": "ex-u21-purpose-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "если",
+      "note": "if",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u21-purpose"
+    },
+    {
+      "id": "ex-u21-purpose-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "потому что",
+      "note": "because",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u21-purpose"
+    },
+    {
+      "id": "ex-u21-purpose-3",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "хотя",
+      "note": "although",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u21-purpose"
+    }
+  ],
+  "sourceCapabilities": [
+    {
+      "id": "cap-u21-reflexive-object",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''с",
+      "sourceHash": "02ce4ba3a0a4c20ffe1d99982307233067b961056571eccdaa872ceb4d1114c6",
+      "exactSpan": "** ''\"Я люблю́ '''(свою́)''' жену́ = I love '''my''' wife\"''\n** ''\"Я люблю́ '''себя́''' = I love '''myself'''\"''",
+      "unitNumber": 21,
+      "objectiveId": "obj-u21-object-reference",
+      "supportedClaim": "reflexive-object"
+    },
+    {
+      "id": "cap-u21-purpose-clause",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');\n",
+      "sourceHash": "994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742",
+      "exactSpan": "* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');\n* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'\n* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')\n* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'\n* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'\n* хотя {{IPA|[xɐˈtʲa]}} 'although'",
+      "unitNumber": 21,
+      "objectiveId": "obj-u21-purpose",
+      "supportedClaim": "purpose-clause"
+    }
+  ]
+}

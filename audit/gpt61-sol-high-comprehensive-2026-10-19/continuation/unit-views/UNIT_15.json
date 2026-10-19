@@ -1,0 +1,1075 @@
+{
+  "derivedFromCommit": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "rawSha256": "33e5655c99d6d5003da0ab1af9249dc814472e3436e0d28afd2f878f6ade4940",
+  "unit": {
+    "number": 15,
+    "id": "unit-15",
+    "title": "Requests, the imperative, and consolidation of aspect use",
+    "shortLabel": "Requests",
+    "topicSummary": "Proposed Unit 15 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 15,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 15, printed pages 171-187. Independently stated topic scope: Requests, imperative forms, and consolidation of aspect use. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+    "prerequisiteUnitNumbers": [
+      14
+    ],
+    "estimatedMinutes": 54,
+    "objectives": [
+      {
+        "id": "obj-u15-imperative",
+        "unitNumber": 15,
+        "title": "Choose the admitted request row",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-imperative-1",
+          "u15-st-teach-imperative-contrast",
+          "u15-st-teach-imperative-2",
+          "u15-st-teach-imperative-3"
+        ],
+        "exampleIds": [
+          "ex-or-u15-imperative-0",
+          "ex-or-u15-imperative-1",
+          "ex-or-u15-imperative-2",
+          "ex-u15-imperative-3"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-imperative-1"
+        ],
+        "checkItemIds": [
+          "u15-i-imperative-1",
+          "u15-i-imperative-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-imperative"
+        ]
+      },
+      {
+        "id": "obj-u15-say-request",
+        "unitNumber": 15,
+        "title": "Choose the admitted say-request row",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-say-request-1",
+          "u15-st-teach-say-request-2",
+          "u15-st-teach-say-request-3",
+          "u15-st-teach-say-request-4"
+        ],
+        "exampleIds": [
+          "ex-or-u15-say-request-0",
+          "ex-or-u15-say-request-1",
+          "ex-or-u15-say-request-2",
+          "ex-or-u15-say-request-3",
+          "ex-or-u15-say-request-4",
+          "ex-or-u15-say-request-5"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-say-request-1"
+        ],
+        "checkItemIds": [
+          "u15-i-say-request-1",
+          "u15-i-say-request-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-say-request"
+        ]
+      },
+      {
+        "id": "obj-u15-aspect-consolidate",
+        "unitNumber": 15,
+        "title": "Choose the admitted aspect pair",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-aspect-consolidate-1",
+          "u15-st-teach-aspect-consolidate-2",
+          "u15-st-teach-aspect-consolidate-3"
+        ],
+        "exampleIds": [
+          "ex-u15-aspect-consolidate-0",
+          "ex-u15-aspect-consolidate-1",
+          "ex-u15-aspect-consolidate-2",
+          "ex-u15-aspect-consolidate-3"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-aspect-consolidate-1"
+        ],
+        "checkItemIds": [
+          "u15-i-aspect-consolidate-1",
+          "u15-i-aspect-consolidate-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-aspect-consolidate"
+        ]
+      },
+      {
+        "id": "obj-u15-book",
+        "unitNumber": 15,
+        "title": "Self-attest Lesson 15 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u15-st-book-work",
+          "u15-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u15-s-orient",
+        "title": "Admitted request rows and aspect pairs",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u15-imperative",
+          "obj-u15-say-request",
+          "obj-u15-aspect-consolidate",
+          "obj-u15-book"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-orient",
+            "kind": "ORIENT",
+            "title": "Admitted request rows and aspect pairs",
+            "body": "Proposed Unit 15 uses frozen records for request rows and aspect pairs. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "bookDirection": "Open Lesson 15 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u15-s-imperative",
+        "title": "Choose the admitted request row",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-imperative"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-imperative-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-contrast",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1",
+              "ex-or-u15-imperative-2"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Купи, пожалуйста, свежие фрукты.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "чита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-2",
+              "ex-u15-imperative-3"
+            ]
+          },
+          {
+            "id": "u15-st-guided-imperative-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-imperative-0"
+            ],
+            "remediationStepId": "u15-st-rem-imperative"
+          },
+          {
+            "id": "u15-st-rem-imperative",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.\n\nчита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.\n\nКупи, пожалуйста, свежие фрукты.\n\nчита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. ",
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1",
+              "ex-or-u15-imperative-2",
+              "ex-u15-imperative-3"
+            ]
+          },
+          {
+            "id": "u15-st-check-imperative",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-imperative-1",
+              "u15-i-imperative-2"
+            ],
+            "remediationStepId": "u15-st-rem-imperative"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-say-request",
+        "title": "Choose the admitted say-request row",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-say-request"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-say-request-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "скажи́ — say. скажи́те — say. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-0",
+              "ex-or-u15-say-request-1"
+            ]
+          },
+          {
+            "id": "u15-st-guided-say-request-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-say-request-0"
+            ],
+            "remediationStepId": "u15-st-rem-say-request"
+          },
+          {
+            "id": "u15-st-teach-say-request-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-say-request-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "сказа́ть — say. да́й — give. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-2",
+              "ex-or-u15-say-request-3"
+            ]
+          },
+          {
+            "id": "u15-st-teach-say-request-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "да́йте — give. дать — give. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-4",
+              "ex-or-u15-say-request-5"
+            ]
+          },
+          {
+            "id": "u15-st-rem-say-request",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'",
+            "exampleIds": [
+              "ex-or-u15-say-request-0",
+              "ex-or-u15-say-request-1"
+            ]
+          },
+          {
+            "id": "u15-st-check-say-request",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-say-request-1",
+              "u15-i-say-request-2"
+            ],
+            "remediationStepId": "u15-st-rem-say-request"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-aspect-consolidate",
+        "title": "Choose the admitted aspect pair",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-aspect-consolidate"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-aspect-consolidate-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "говори́ть — to speak. сказа́ть — to speak. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-0",
+              "ex-u15-aspect-consolidate-1"
+            ]
+          },
+          {
+            "id": "u15-st-guided-aspect-consolidate-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-aspect-consolidate-0"
+            ],
+            "remediationStepId": "u15-st-rem-aspect-consolidate"
+          },
+          {
+            "id": "u15-st-teach-aspect-consolidate-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Let us take the verbs \"to speak\" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and \"to do\" (imper.: '''де́лать''', per.: '''сде́лать''').",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-aspect-consolidate-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "де́лать — to do. сде́лать — to do. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-2",
+              "ex-u15-aspect-consolidate-3"
+            ]
+          },
+          {
+            "id": "u15-st-rem-aspect-consolidate",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Let us take the verbs \"to speak\" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and \"to do\" (imper.: '''де́лать''', per.: '''сде́лать''').",
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-0",
+              "ex-u15-aspect-consolidate-1"
+            ]
+          },
+          {
+            "id": "u15-st-check-aspect-consolidate",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-aspect-consolidate-1",
+              "u15-i-aspect-consolidate-2"
+            ],
+            "remediationStepId": "u15-st-rem-aspect-consolidate"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-book",
+        "title": "Self-attest Lesson 15",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u15-book"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 15 in your copy",
+            "body": "Do Lesson 15 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 15: printed pages 171-187. PDF indexes 183-199 are file locators, not printed pages. Observed section locators: §15.1 p171 (PDF 183); §15.2 p171 (PDF 183); §15.3 p174 (PDF 186); §15.4 p175 (PDF 187); §15.5 p176 (PDF 188); §15.6 p176 (PDF 188); §15.7 p177 (PDF 189); §15.9 p178 (PDF 190); §15.10 p178 (PDF 190); §15.11 p178 (PDF 190); §15.12 p181 (PDF 193); §15.13 p182 (PDF 194); §15.14 p184 (PDF 196). Observed exercise locators: 15/1 p172/PDF184; 15/2 p173/PDF185; 15/3 p174/PDF186; 15/4 p175/PDF187; 15/5 p175/PDF187; 15/6 p177/PDF189; 15/7 p182/PDF194; 15/8 p185/PDF197; 15/9 p186/PDF198. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u15-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 15 book work",
+            "body": "When you have done Lesson 15 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 15: printed pages 171-187. PDF indexes 183-199 are file locators, not printed pages. Observed section locators: §15.1 p171 (PDF 183); §15.2 p171 (PDF 183); §15.3 p174 (PDF 186); §15.4 p175 (PDF 187); §15.5 p176 (PDF 188); §15.6 p176 (PDF 188); §15.7 p177 (PDF 189); §15.9 p178 (PDF 190); §15.10 p178 (PDF 190); §15.11 p178 (PDF 190); §15.12 p181 (PDF 193); §15.13 p182 (PDF 194); §15.14 p184 (PDF 196). Observed exercise locators: 15/1 p172/PDF184; 15/2 p173/PDF185; 15/3 p174/PDF186; 15/4 p175/PDF187; 15/5 p175/PDF187; 15/6 p177/PDF189; 15/7 p182/PDF194; 15/8 p185/PDF197; 15/9 p186/PDF198. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u15-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 15 AnkiDroid direction",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u15-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 15 binder prompt",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u15-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 15 optional tutor",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u15-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 15 cumulative review",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 6,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit15-prior-reading-impersonal-state-v1"
+    }
+  },
+  "items": [
+    {
+      "id": "u15-g-imperative-0",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted row is the plural imperative?",
+      "promptLetter": "чита́й",
+      "options": [
+        "чита́йте",
+        "чита́ть"
+      ],
+      "answer": "чита́йте",
+      "feedback": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.",
+      "objectiveId": "obj-u15-imperative",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "чита́ть is the infinitive, not the requested inflected plural imperative form."
+      ],
+      "assessment": {
+        "testedFeature": "PLURAL_IMPERATIVE",
+        "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+        "contrastSetId": "u15-imperative-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-or-u15-imperative-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-or-u15-imperative-2"
+        ],
+        "distractorDifference": [
+          "",
+          "чита́ть is the infinitive, not the requested inflected plural imperative form."
+        ],
+        "whyAnswerDemonstratesObjective": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.",
+        "contrastMembers": [
+          "чита́йте",
+          "чита́ть"
+        ],
+        "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+        "relationParticipantIds": [
+          "prov-ex-or-u15-imperative-0",
+          "prov-ex-or-u15-imperative-1",
+          "prov-ex-or-u15-imperative-2"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u15-i-imperative-1",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted row is the singular imperative?",
+      "promptLetter": "чита́йте",
+      "options": [
+        "чита́й",
+        "чита́ть"
+      ],
+      "answer": "чита́й",
+      "feedback": "чита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.",
+      "objectiveId": "obj-u15-imperative",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "чита́ть is the infinitive, not the requested inflected singular imperative form."
+      ],
+      "assessment": {
+        "testedFeature": "SINGULAR_IMPERATIVE",
+        "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+        "contrastSetId": "u15-imperative-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-or-u15-imperative-0"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-or-u15-imperative-2"
+        ],
+        "distractorDifference": [
+          "",
+          "чита́ть is the infinitive, not the requested inflected singular imperative form."
+        ],
+        "whyAnswerDemonstratesObjective": "чита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.",
+        "contrastMembers": [
+          "чита́й",
+          "чита́ть"
+        ],
+        "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+        "relationParticipantIds": [
+          "prov-ex-or-u15-imperative-1",
+          "prov-ex-or-u15-imperative-0",
+          "prov-ex-or-u15-imperative-2"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u15-i-imperative-2",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted row is the singular imperative?",
+      "promptLetter": "чита́ть",
+      "options": [
+        "чита́й",
+        "чита́йте"
+      ],
+      "answer": "чита́й",
+      "feedback": "чита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+      "objectiveId": "obj-u15-imperative",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "чита́йте is the plural/polite imperative form, not the singular imperative table row requested here; polite use can still address one person."
+      ],
+      "assessment": {
+        "testedFeature": "SINGULAR_IMPERATIVE",
+        "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+        "contrastSetId": "u15-imperative-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-or-u15-imperative-0"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-or-u15-imperative-1"
+        ],
+        "distractorDifference": [
+          "",
+          "чита́йте is the plural/polite imperative form, not the singular imperative table row requested here; polite use can still address one person."
+        ],
+        "whyAnswerDemonstratesObjective": "чита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+        "contrastMembers": [
+          "чита́й",
+          "чита́йте"
+        ],
+        "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+        "relationParticipantIds": [
+          "prov-ex-or-u15-imperative-2",
+          "prov-ex-or-u15-imperative-0",
+          "prov-ex-or-u15-imperative-1"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u15-g-say-request-0",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted row is the plural imperative?",
+      "promptLetter": "скажи́",
+      "options": [
+        "скажи́те",
+        "сказа́ть"
+      ],
+      "answer": "скажи́те",
+      "feedback": "скажи́те is the plural imperative form of the shown say/tell verb, used for multiple addressees or polite address to one person. сказа́ть is the infinitive, not the inflected plural imperative form requested. The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.",
+      "objectiveId": "obj-u15-say-request",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "сказа́ть is the infinitive, not the requested inflected plural imperative form."
+      ],
+      "assessment": {
+        "testedFeature": "PLURAL_IMPERATIVE",
+        "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+        "contrastSetId": "u15-say-request-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-or-u15-say-request-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-or-u15-say-request-2"
+        ],
+        "distractorDifference": [
+          "",
+          "сказа́ть is the infinitive, not the requested inflected plural imperative form."
+        ],
+        "whyAnswerDemonstratesObjective": "скажи́те is the plural imperative form of the shown say/tell verb, used for multiple addressees or polite address to one person. сказа́ть is the infinitive, not the inflected plural imperative form requested. The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.",
+        "contrastMembers": [
+          "скажи́те",
+          "сказа́ть"
+        ],
+        "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+        "relationParticipantIds": [
+          "prov-ex-or-u15-say-request-0",
+          "prov-ex-or-u15-say-request-1",
+          "prov-ex-or-u15-say-request-2"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u15-i-say-request-1",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted row is the plural imperative?",
+      "promptLetter": "да́й",
+      "options": [
+        "да́йте",
+        "дать"
+      ],
+      "answer": "да́йте",
+      "feedback": "да́йте is the plural imperative form of the shown give verb. It can address multiple people or one person politely. дать is the infinitive, not the inflected imperative form requested. Select the recorded plural imperative of this verb rather than assuming the dictionary form is the requested command form.",
+      "objectiveId": "obj-u15-say-request",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "дать is the infinitive, not the requested inflected plural imperative form."
+      ],
+      "assessment": {
+        "testedFeature": "PLURAL_IMPERATIVE",
+        "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+        "contrastSetId": "u15-say-request-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-or-u15-say-request-4"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-or-u15-say-request-5"
+        ],
+        "distractorDifference": [
+          "",
+          "дать is the infinitive, not the requested inflected plural imperative form."
+        ],
+        "whyAnswerDemonstratesObjective": "да́йте is the plural imperative form of the shown give verb. It can address multiple people or one person politely. дать is the infinitive, not the inflected imperative form requested. Select the recorded plural imperative of this verb rather than assuming the dictionary form is the requested command form.",
+        "contrastMembers": [
+          "да́йте",
+          "дать"
+        ],
+        "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+        "relationParticipantIds": [
+          "prov-ex-or-u15-say-request-3",
+          "prov-ex-or-u15-say-request-4",
+          "prov-ex-or-u15-say-request-5"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u15-i-say-request-2",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted row is the singular imperative?",
+      "promptLetter": "скажи́те",
+      "options": [
+        "скажи́",
+        "сказа́ть"
+      ],
+      "answer": "скажи́",
+      "feedback": "скажи́ is the singular imperative form for one informal addressee. сказа́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.",
+      "objectiveId": "obj-u15-say-request",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "сказа́ть is the infinitive, not the requested inflected singular imperative form."
+      ],
+      "assessment": {
+        "testedFeature": "SINGULAR_IMPERATIVE",
+        "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+        "contrastSetId": "u15-say-request-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-or-u15-say-request-0"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-or-u15-say-request-2"
+        ],
+        "distractorDifference": [
+          "",
+          "сказа́ть is the infinitive, not the requested inflected singular imperative form."
+        ],
+        "whyAnswerDemonstratesObjective": "скажи́ is the singular imperative form for one informal addressee. сказа́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.",
+        "contrastMembers": [
+          "скажи́",
+          "сказа́ть"
+        ],
+        "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+        "relationParticipantIds": [
+          "prov-ex-or-u15-say-request-1",
+          "prov-ex-or-u15-say-request-0",
+          "prov-ex-or-u15-say-request-2"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u15-g-aspect-consolidate-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted line is the perfective partner?",
+      "promptLetter": "говори́ть",
+      "options": [
+        "сказа́ть",
+        "де́лать"
+      ],
+      "answer": "сказа́ть",
+      "feedback": "сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. This pairing does not mean every use of speak or talk can be replaced by the same perfective verb.",
+      "objectiveId": "obj-u15-aspect-consolidate",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "де́лать is imperfective and belongs to the do/make pair, not the perfective partner for the supplied say/tell meaning."
+      ],
+      "assessment": {
+        "testedFeature": "PERFECTIVE_PARTNER",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u15-aspect-consolidate-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-u15-aspect-consolidate-1-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u15-aspect-consolidate-2-ru"
+        ],
+        "distractorDifference": [
+          "",
+          "де́лать is imperfective and belongs to the do/make pair, not the perfective partner for the supplied say/tell meaning."
+        ],
+        "whyAnswerDemonstratesObjective": "сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. This pairing does not mean every use of speak or talk can be replaced by the same perfective verb.",
+        "contrastMembers": [
+          "сказа́ть",
+          "де́лать"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u15-aspect-consolidate-0-ru",
+          "prov-ex-u15-aspect-consolidate-1-ru",
+          "prov-ex-u15-aspect-consolidate-2-ru"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u15-i-aspect-consolidate-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted line is the imperfective partner?",
+      "promptLetter": "сказа́ть",
+      "options": [
+        "говори́ть",
+        "сде́лать"
+      ],
+      "answer": "говори́ть",
+      "feedback": "говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.",
+      "objectiveId": "obj-u15-aspect-consolidate",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "сде́лать is perfective and belongs to the do/make pair, not the imperfective partner for the supplied say/tell meaning."
+      ],
+      "assessment": {
+        "testedFeature": "IMPERFECTIVE_PARTNER",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u15-aspect-consolidate-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u15-aspect-consolidate-0-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u15-aspect-consolidate-3-ru"
+        ],
+        "distractorDifference": [
+          "",
+          "сде́лать is perfective and belongs to the do/make pair, not the imperfective partner for the supplied say/tell meaning."
+        ],
+        "whyAnswerDemonstratesObjective": "говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.",
+        "contrastMembers": [
+          "говори́ть",
+          "сде́лать"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u15-aspect-consolidate-1-ru",
+          "prov-ex-u15-aspect-consolidate-0-ru",
+          "prov-ex-u15-aspect-consolidate-3-ru"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u15-i-aspect-consolidate-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which admitted line is the perfective partner?",
+      "promptLetter": "де́лать",
+      "options": [
+        "сде́лать",
+        "говори́ть"
+      ],
+      "answer": "сде́лать",
+      "feedback": "сде́лать is the perfective partner of де́лать in the recorded do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this supplied pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+      "objectiveId": "obj-u15-aspect-consolidate",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "говори́ть is imperfective and belongs to a different meaning group, not the perfective partner of the shown do/make verb."
+      ],
+      "assessment": {
+        "testedFeature": "PERFECTIVE_PARTNER",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u15-aspect-consolidate-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u15-aspect-consolidate-3-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u15-aspect-consolidate-0-ru"
+        ],
+        "distractorDifference": [
+          "",
+          "говори́ть is imperfective and belongs to a different meaning group, not the perfective partner of the shown do/make verb."
+        ],
+        "whyAnswerDemonstratesObjective": "сде́лать is the perfective partner of де́лать in the recorded do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this supplied pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+        "contrastMembers": [
+          "сде́лать",
+          "говори́ть"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u15-aspect-consolidate-2-ru",
+          "prov-ex-u15-aspect-consolidate-3-ru",
+          "prov-ex-u15-aspect-consolidate-0-ru"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "id": "ex-or-u15-imperative-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "чита́й",
+      "note": "read",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-imperative"
+    },
+    {
+      "id": "ex-or-u15-imperative-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "чита́йте",
+      "note": "read",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-imperative"
+    },
+    {
+      "id": "ex-or-u15-imperative-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "чита́ть",
+      "note": "read",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-imperative"
+    },
+    {
+      "id": "ex-u15-imperative-3",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Купи, пожалуйста, свежие фрукты.",
+      "note": "Please, buy fresh fruits.",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-imperative"
+    },
+    {
+      "id": "ex-or-u15-say-request-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "скажи́",
+      "note": "say",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-say-request"
+    },
+    {
+      "id": "ex-or-u15-say-request-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "скажи́те",
+      "note": "say",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-say-request"
+    },
+    {
+      "id": "ex-or-u15-say-request-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "сказа́ть",
+      "note": "say",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-say-request"
+    },
+    {
+      "id": "ex-or-u15-say-request-3",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "да́й",
+      "note": "give",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-say-request"
+    },
+    {
+      "id": "ex-or-u15-say-request-4",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "да́йте",
+      "note": "give",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-say-request"
+    },
+    {
+      "id": "ex-or-u15-say-request-5",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "дать",
+      "note": "give",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-say-request"
+    },
+    {
+      "id": "ex-u15-aspect-consolidate-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "говори́ть",
+      "note": "to speak",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-aspect-consolidate"
+    },
+    {
+      "id": "ex-u15-aspect-consolidate-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "сказа́ть",
+      "note": "to speak",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-aspect-consolidate"
+    },
+    {
+      "id": "ex-u15-aspect-consolidate-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "де́лать",
+      "note": "to do",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-aspect-consolidate"
+    },
+    {
+      "id": "ex-u15-aspect-consolidate-3",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "сде́лать",
+      "note": "to do",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u15-aspect-consolidate"
+    }
+  ],
+  "sourceCapabilities": []
+}

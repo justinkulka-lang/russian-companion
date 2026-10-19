@@ -1,0 +1,2275 @@
+[
+  {
+    "id": "u27-g-stress-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which stress placement is admitted for the leave-behind present passive?",
+    "promptLetter": "the present passive of оставлять",
+    "options": [
+      "оставля́емый",
+      "оставляемы́й"
+    ],
+    "answer": "оставля́емый",
+    "feedback": "Admitted reading: оставля́емый",
+    "objectiveId": "obj-u27-present-passive",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: оставляемы́й"
+    ],
+    "assessment": {
+      "testedFeature": "STRESS_OSTAVLYAEMY",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u27-g-stress-1",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-repair-27-10903"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-repair-27-10906"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: оставляемы́й"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: оставля́емый",
+      "contrastMembers": [
+        "оставля́емый",
+        "оставляемы́й"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-repair-27-10902",
+        "prov-ca-repair-27-10903",
+        "prov-ca-repair-27-10906"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u27-i-stress-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which stress placement is admitted for the discuss present passive?",
+    "promptLetter": "the present passive of обсуждать",
+    "options": [
+      "обсужда́емый",
+      "обсуждаемы́й"
+    ],
+    "answer": "обсужда́емый",
+    "feedback": "Admitted reading: обсужда́емый",
+    "objectiveId": "obj-u27-present-passive",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: обсуждаемы́й"
+    ],
+    "assessment": {
+      "testedFeature": "STRESS_OBSUZHDAEMY",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u27-i-stress-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-repair-27-10910"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-repair-27-10913"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: обсуждаемы́й"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: обсужда́емый",
+      "contrastMembers": [
+        "обсужда́емый",
+        "обсуждаемы́й"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-repair-27-10909",
+        "prov-ca-repair-27-10910",
+        "prov-ca-repair-27-10913"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u27-i-stress-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which stress placement is admitted for the write past passive?",
+    "promptLetter": "the past passive of написать",
+    "options": [
+      "напи́санный",
+      "написа́нный"
+    ],
+    "answer": "напи́санный",
+    "feedback": "Admitted reading: напи́санный",
+    "objectiveId": "obj-u27-stress",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: написа́нный"
+    ],
+    "assessment": {
+      "testedFeature": "STRESS_NAPISANNY",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u27-i-stress-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u27-stress-6"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u27-stress-21"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: написа́нный"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: напи́санный",
+      "contrastMembers": [
+        "напи́санный",
+        "написа́нный"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u27-stress-19",
+        "prov-obj-u27-stress-6",
+        "prov-obj-u27-stress-21"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u27-i-stress-3",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which stress placement is admitted for the read past passive?",
+    "promptLetter": "the past passive of прочитать",
+    "options": [
+      "прочи́танный",
+      "прочита́нный"
+    ],
+    "answer": "прочи́танный",
+    "feedback": "Admitted reading: прочи́танный",
+    "objectiveId": "obj-u27-stress",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: прочита́нный"
+    ],
+    "assessment": {
+      "testedFeature": "STRESS_PROCHITANNY",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u27-i-stress-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u27-stress-25"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u27-stress-27"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: прочита́нный"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: прочи́танный",
+      "contrastMembers": [
+        "прочи́танный",
+        "прочита́нный"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u27-stress-24",
+        "prov-obj-u27-stress-25",
+        "prov-obj-u27-stress-27"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u27-i-stress-4",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English description states the limit of these four stress placements?",
+    "promptLetter": "an unlisted participle",
+    "options": [
+      "no stress rule is admitted beyond these four",
+      "these four placements generate every other participle"
+    ],
+    "answer": "no stress rule is admitted beyond these four",
+    "feedback": "Admitted reading: no stress rule is admitted beyond these four",
+    "objectiveId": "obj-u27-stress",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: these four placements generate every other participle"
+    ],
+    "assessment": {
+      "testedFeature": "REJECTED_PRODUCTIVE_STRESS",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u27-i-stress-4",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u27-stress-31"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u27-stress-33"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: these four placements generate every other participle"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: no stress rule is admitted beyond these four",
+      "contrastMembers": [
+        "no stress rule is admitted beyond these four",
+        "these four placements generate every other participle"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u27-stress-30",
+        "prov-obj-u27-stress-31",
+        "prov-obj-u27-stress-33"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u27-g-comp-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English reading matches the letter that is on the table?",
+    "promptLetter": "Письмо, написанное Анной, лежит на столе.",
+    "options": [
+      "the letter Anna wrote is on the table",
+      "Anna put the letter away",
+      "the table wrote the letter"
+    ],
+    "answer": "the letter Anna wrote is on the table",
+    "feedback": "Admitted reading: the letter Anna wrote is on the table\nThe letter is on the table; Anna is the writer named in its passive description. Putting it away is a different action, and the table is not a writer.",
+    "objectiveId": "obj-u27-comprehension",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: Anna put the letter away",
+      "Rejected reading: the table wrote the letter"
+    ],
+    "assessment": {
+      "testedFeature": "WRITTEN_LETTER_ON_TABLE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u27-g-comp-1",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-obj-u27-comprehension-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u27-comprehension-9",
+        "prov-obj-u27-comprehension-10"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: Anna put the letter away",
+        "Rejected reading: the table wrote the letter"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: the letter Anna wrote is on the table\nThe letter is on the table; Anna is the writer named in its passive description. Putting it away is a different action, and the table is not a writer.",
+      "contrastMembers": [
+        "the letter Anna wrote is on the table",
+        "Anna put the letter away",
+        "the table wrote the letter"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u27-comprehension-3",
+        "prov-obj-u27-comprehension-4",
+        "prov-obj-u27-comprehension-9",
+        "prov-obj-u27-comprehension-10"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u27-i-comp-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English reading matches the person who produced the letter?",
+    "promptLetter": "написанное Анной",
+    "options": [
+      "Anna is the writer of the letter",
+      "Anna is the reader of the letter",
+      "the letter wrote Anna"
+    ],
+    "answer": "Anna is the writer of the letter",
+    "feedback": "Admitted reading: Anna is the writer of the letter\nThe description identifies Anna as the writer, not as the reader. The letter is the affected entity, not an agent acting on Anna.",
+    "objectiveId": "obj-u27-comprehension",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: Anna is the reader of the letter",
+      "Rejected reading: the letter wrote Anna"
+    ],
+    "assessment": {
+      "testedFeature": "WRITER_OF_THE_LETTER",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u27-i-comp-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u27-remaining-comprehension-host-8"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u27-remaining-comprehension-host-11",
+        "prov-ca-u27-remaining-comprehension-host-12"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: Anna is the reader of the letter",
+        "Rejected reading: the letter wrote Anna"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: Anna is the writer of the letter\nThe description identifies Anna as the writer, not as the reader. The letter is the affected entity, not an agent acting on Anna.",
+      "contrastMembers": [
+        "Anna is the writer of the letter",
+        "Anna is the reader of the letter",
+        "the letter wrote Anna"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u27-remaining-comprehension-host-7",
+        "prov-ca-u27-remaining-comprehension-host-8",
+        "prov-ca-u27-remaining-comprehension-host-11",
+        "prov-ca-u27-remaining-comprehension-host-12"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u27-i-comp-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English description. Which reading keeps the reader of the letter unspecified?",
+    "promptLetter": "Анна убрала прочитанное письмо.",
+    "options": [
+      "Anna put away the letter that had been read.",
+      "Anna wrote the letter on the table",
+      "the letter put Anna away"
+    ],
+    "answer": "Anna put away the letter that had been read.",
+    "feedback": "Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna performs the putting-away action. The passive description leaves the reader unspecified; naming the main-action subject does not identify that reader.",
+    "objectiveId": "obj-u27-comprehension",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Anna wrote the letter on the table invents a different verb.",
+      "the letter put Anna away reverses who did the action."
+    ],
+    "assessment": {
+      "testedFeature": "PASSIVE_READER_UNSPECIFIED",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u27-i-comp-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u27-remaining-comprehension-host-6"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u27-remaining-comprehension-host-17",
+        "prov-ca-u27-remaining-comprehension-host-18"
+      ],
+      "distractorDifference": [
+        "",
+        "Anna wrote the letter on the table invents a different verb.",
+        "the letter put Anna away reverses who did the action."
+      ],
+      "whyAnswerDemonstratesObjective": "Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna performs the putting-away action. The passive description leaves the reader unspecified; naming the main-action subject does not identify that reader.",
+      "contrastMembers": [
+        "Anna put away the letter that had been read.",
+        "Anna wrote the letter on the table",
+        "the letter put Anna away"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u27-remaining-comprehension-host-5",
+        "prov-ca-u27-remaining-comprehension-host-6",
+        "prov-ca-u27-remaining-comprehension-host-17",
+        "prov-ca-u27-remaining-comprehension-host-18"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u27-i-comp-3",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English reading matches the state of the letter Anna put away?",
+    "promptLetter": "прочитанное письмо",
+    "options": [
+      "the letter had already been read",
+      "the letter had just been written",
+      "Anna is still reading aloud"
+    ],
+    "answer": "the letter had already been read",
+    "feedback": "Admitted reading: the letter had already been read\nAlready read describes the completed reading of the letter. Just written substitutes a different action, and still reading aloud invents an ongoing action and its agent.",
+    "objectiveId": "obj-u27-comprehension",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: the letter had just been written",
+      "Rejected reading: Anna is still reading aloud"
+    ],
+    "assessment": {
+      "testedFeature": "ALREADY_READ",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u27-i-comp-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u27-remaining-comprehension-host-22"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u27-remaining-comprehension-host-25",
+        "prov-ca-u27-remaining-comprehension-host-26"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: the letter had just been written",
+        "Rejected reading: Anna is still reading aloud"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: the letter had already been read\nAlready read describes the completed reading of the letter. Just written substitutes a different action, and still reading aloud invents an ongoing action and its agent.",
+      "contrastMembers": [
+        "the letter had already been read",
+        "the letter had just been written",
+        "Anna is still reading aloud"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u27-remaining-comprehension-host-21",
+        "prov-ca-u27-remaining-comprehension-host-22",
+        "prov-ca-u27-remaining-comprehension-host-25",
+        "prov-ca-u27-remaining-comprehension-host-26"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u29-g-register-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English description identifies the opening word of the bookish sentence in this pair?",
+    "promptLetter": "Закончив",
+    "options": [
+      "the adverbial word opens the bookish sentence",
+      "the finite coordination is the ordinary option in this pair",
+      "a passive participle is outside this bookish pair"
+    ],
+    "answer": "the adverbial word opens the bookish sentence",
+    "feedback": "Admitted reading: the adverbial word opens the bookish sentence",
+    "objectiveId": "obj-u29-register",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: the finite coordination is the ordinary option in this pair",
+      "Rejected reading: a passive participle is outside this bookish pair"
+    ],
+    "assessment": {
+      "testedFeature": "ADVERBIAL_FORM_IN_PAIR",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u29-g-register-1",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-obj-u29-register-10"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u29-register-7",
+        "prov-obj-u29-register-12"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: the finite coordination is the ordinary option in this pair",
+        "Rejected reading: a passive participle is outside this bookish pair"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: the adverbial word opens the bookish sentence",
+      "contrastMembers": [
+        "the adverbial word opens the bookish sentence",
+        "the finite coordination is the ordinary option in this pair",
+        "a passive participle is outside this bookish pair"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u29-register-9",
+        "prov-obj-u29-register-10",
+        "prov-obj-u29-register-7",
+        "prov-obj-u29-register-12"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u29-i-register-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English description identifies the bookish option in this admitted pair?",
+    "promptLetter": "Закончив письмо, Анна пошла на почту.",
+    "options": [
+      "the adverbial opening is the bookish option in this pair",
+      "the finite coordination is the ordinary option in this pair",
+      "appearance in writing is outside this bookish pair"
+    ],
+    "answer": "the adverbial opening is the bookish option in this pair",
+    "feedback": "Admitted reading: the adverbial opening is the bookish option in this pair",
+    "objectiveId": "obj-u29-register",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: the finite coordination is the ordinary option in this pair",
+      "Rejected reading: appearance in writing is outside this bookish pair"
+    ],
+    "assessment": {
+      "testedFeature": "ADVERBIAL_BOOKISH_OPTION",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u29-i-register-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u29-register-5"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u29-register-7",
+        "prov-obj-u29-register-17"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: the finite coordination is the ordinary option in this pair",
+        "Rejected reading: appearance in writing is outside this bookish pair"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: the adverbial opening is the bookish option in this pair",
+      "contrastMembers": [
+        "the adverbial opening is the bookish option in this pair",
+        "the finite coordination is the ordinary option in this pair",
+        "appearance in writing is outside this bookish pair"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u29-register-4",
+        "prov-obj-u29-register-5",
+        "prov-obj-u29-register-7",
+        "prov-obj-u29-register-17"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u29-i-register-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English description identifies the ordinary option in this admitted pair?",
+    "promptLetter": "Анна закончила письмо и пошла на почту.",
+    "options": [
+      "the finite coordination is the ordinary option in this pair",
+      "the adverbial opening is the bookish option in this pair",
+      "appearance in writing is outside this bookish pair"
+    ],
+    "answer": "the finite coordination is the ordinary option in this pair",
+    "feedback": "Admitted reading: the finite coordination is the ordinary option in this pair",
+    "objectiveId": "obj-u29-register",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: the adverbial opening is the bookish option in this pair",
+      "Rejected reading: appearance in writing is outside this bookish pair"
+    ],
+    "assessment": {
+      "testedFeature": "COORDINATED_ORDINARY_OPTION",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u29-i-register-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u29-register-7"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u29-register-5",
+        "prov-obj-u29-register-17"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: the adverbial opening is the bookish option in this pair",
+        "Rejected reading: appearance in writing is outside this bookish pair"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: the finite coordination is the ordinary option in this pair",
+      "contrastMembers": [
+        "the finite coordination is the ordinary option in this pair",
+        "the adverbial opening is the bookish option in this pair",
+        "appearance in writing is outside this bookish pair"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u29-register-6",
+        "prov-obj-u29-register-7",
+        "prov-obj-u29-register-5",
+        "prov-obj-u29-register-17"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u29-i-register-3",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English description identifies a passive participle that is outside this admitted pair?",
+    "promptLetter": "Написанное письмо лежит на столе.",
+    "options": [
+      "a passive participle is outside this bookish pair",
+      "the adverbial opening is the bookish option in this pair",
+      "the finite coordination is the ordinary option in this pair"
+    ],
+    "answer": "a passive participle is outside this bookish pair",
+    "feedback": "Admitted reading: a passive participle is outside this bookish pair",
+    "objectiveId": "obj-u29-register",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: the adverbial opening is the bookish option in this pair",
+      "Rejected reading: the finite coordination is the ordinary option in this pair"
+    ],
+    "assessment": {
+      "testedFeature": "REJECTED_PASSIVE_PARTICIPLE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u29-i-register-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u29-register-12"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u29-register-5",
+        "prov-obj-u29-register-7"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: the adverbial opening is the bookish option in this pair",
+        "Rejected reading: the finite coordination is the ordinary option in this pair"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: a passive participle is outside this bookish pair",
+      "contrastMembers": [
+        "a passive participle is outside this bookish pair",
+        "the adverbial opening is the bookish option in this pair",
+        "the finite coordination is the ordinary option in this pair"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u29-register-23",
+        "prov-obj-u29-register-12",
+        "prov-obj-u29-register-5",
+        "prov-obj-u29-register-7"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u29-i-register-4",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English description identifies text that is merely on paper?",
+    "promptLetter": "a sentence that is only on paper",
+    "options": [
+      "appearance in writing is outside this bookish pair",
+      "the adverbial opening is the bookish option in this pair",
+      "a passive participle is outside this bookish pair"
+    ],
+    "answer": "appearance in writing is outside this bookish pair",
+    "feedback": "Admitted reading: appearance in writing is outside this bookish pair",
+    "objectiveId": "obj-u29-register",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: the adverbial opening is the bookish option in this pair",
+      "Rejected reading: a passive participle is outside this bookish pair"
+    ],
+    "assessment": {
+      "testedFeature": "REJECTED_WRITTEN_TEXT",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u29-i-register-4",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u29-register-17"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u29-register-5",
+        "prov-obj-u29-register-12"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: the adverbial opening is the bookish option in this pair",
+        "Rejected reading: a passive participle is outside this bookish pair"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: appearance in writing is outside this bookish pair",
+      "contrastMembers": [
+        "appearance in writing is outside this bookish pair",
+        "the adverbial opening is the bookish option in this pair",
+        "a passive participle is outside this bookish pair"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u29-register-26",
+        "prov-obj-u29-register-17",
+        "prov-obj-u29-register-5",
+        "prov-obj-u29-register-12"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u29-i-register-5",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English description states the limit of this admitted pair?",
+    "promptLetter": "an adverbial in a different sentence",
+    "options": [
+      "this pair does not license every adverbial as bookish",
+      "every adverbial participle is bookish in every sentence",
+      "appearance in writing is outside this bookish pair"
+    ],
+    "answer": "this pair does not license every adverbial as bookish",
+    "feedback": "Admitted reading: this pair does not license every adverbial as bookish",
+    "objectiveId": "obj-u29-register",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: every adverbial participle is bookish in every sentence",
+      "Rejected reading: appearance in writing is outside this bookish pair"
+    ],
+    "assessment": {
+      "testedFeature": "REJECTED_UNIVERSAL_RULE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u29-i-register-5",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u29-register-30"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u29-register-32",
+        "prov-obj-u29-register-17"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: every adverbial participle is bookish in every sentence",
+        "Rejected reading: appearance in writing is outside this bookish pair"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: this pair does not license every adverbial as bookish",
+      "contrastMembers": [
+        "this pair does not license every adverbial as bookish",
+        "every adverbial participle is bookish in every sentence",
+        "appearance in writing is outside this bookish pair"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u29-register-29",
+        "prov-obj-u29-register-30",
+        "prov-obj-u29-register-32",
+        "prov-obj-u29-register-17"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u29-g-reading-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English reading matches the person who acts in this passage?",
+    "promptLetter": "Анна",
+    "options": [
+      "Anna is the person who did the actions",
+      "the letter went to the post office alone",
+      "the post office wrote the letter"
+    ],
+    "answer": "Anna is the person who did the actions",
+    "feedback": "Admitted reading: Anna is the person who did the actions",
+    "objectiveId": "obj-u29-reading",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: the letter went to the post office alone",
+      "Rejected reading: the post office wrote the letter"
+    ],
+    "assessment": {
+      "testedFeature": "AGENT_ANNA",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u29-g-reading-1",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-obj-u29-reading-9"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u29-reading-11",
+        "prov-obj-u29-reading-12"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: the letter went to the post office alone",
+        "Rejected reading: the post office wrote the letter"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: Anna is the person who did the actions",
+      "contrastMembers": [
+        "Anna is the person who did the actions",
+        "the letter went to the post office alone",
+        "the post office wrote the letter"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u29-reading-8",
+        "prov-obj-u29-reading-9",
+        "prov-obj-u29-reading-11",
+        "prov-obj-u29-reading-12"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u29-i-reading-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English reading matches what happened before Anna left?",
+    "promptLetter": "Закончив письмо",
+    "options": [
+      "she finished the letter before leaving",
+      "she sent the letter before writing it",
+      "she left before the letter existed"
+    ],
+    "answer": "she finished the letter before leaving",
+    "feedback": "Admitted reading: she finished the letter before leaving",
+    "objectiveId": "obj-u29-reading",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: she sent the letter before writing it",
+      "Rejected reading: she left before the letter existed"
+    ],
+    "assessment": {
+      "testedFeature": "FINISHED_BEFORE_LEAVING",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u29-i-reading-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u29-reading-17"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u29-reading-19",
+        "prov-obj-u29-reading-20"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: she sent the letter before writing it",
+        "Rejected reading: she left before the letter existed"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: she finished the letter before leaving",
+      "contrastMembers": [
+        "she finished the letter before leaving",
+        "she sent the letter before writing it",
+        "she left before the letter existed"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u29-reading-16",
+        "prov-obj-u29-reading-17",
+        "prov-obj-u29-reading-19",
+        "prov-obj-u29-reading-20"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u29-i-reading-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English reading matches where Anna went after finishing?",
+    "promptLetter": "пошла на почту",
+    "options": [
+      "she went to the post office after finishing",
+      "she stayed at the table after finishing",
+      "she finished the letter at the market"
+    ],
+    "answer": "she went to the post office after finishing",
+    "feedback": "Admitted reading: she went to the post office after finishing",
+    "objectiveId": "obj-u29-reading",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: she stayed at the table after finishing",
+      "Rejected reading: she finished the letter at the market"
+    ],
+    "assessment": {
+      "testedFeature": "WENT_TO_POST_OFFICE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u29-i-reading-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u29-reading-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u29-reading-26",
+        "prov-obj-u29-reading-27"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: she stayed at the table after finishing",
+        "Rejected reading: she finished the letter at the market"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: she went to the post office after finishing",
+      "contrastMembers": [
+        "she went to the post office after finishing",
+        "she stayed at the table after finishing",
+        "she finished the letter at the market"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u29-reading-24",
+        "prov-obj-u29-reading-4",
+        "prov-obj-u29-reading-26",
+        "prov-obj-u29-reading-27"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u29-i-reading-3",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English reading matches what Anna did with the letter at the end?",
+    "promptLetter": "отправила его",
+    "options": [
+      "she sent the letter from the post office",
+      "she left the letter at home",
+      "she received a letter at home"
+    ],
+    "answer": "she sent the letter from the post office",
+    "feedback": "Admitted reading: she sent the letter from the post office",
+    "objectiveId": "obj-u29-reading",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: she left the letter at home",
+      "Rejected reading: she received a letter at home"
+    ],
+    "assessment": {
+      "testedFeature": "SENT_THE_LETTER",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u29-i-reading-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u29-reading-6"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u29-reading-32",
+        "prov-obj-u29-reading-33"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: she left the letter at home",
+        "Rejected reading: she received a letter at home"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: she sent the letter from the post office",
+      "contrastMembers": [
+        "she sent the letter from the post office",
+        "she left the letter at home",
+        "she received a letter at home"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u29-reading-5",
+        "prov-obj-u29-reading-6",
+        "prov-obj-u29-reading-32",
+        "prov-obj-u29-reading-33"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-g-postal-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "In the supplied lesson model, which English description identifies the city in this home-delivery address?",
+    "promptLetter": "г. Казань",
+    "options": [
+      "the locality names the city",
+      "the street line names the premises",
+      "the postcode names the delivery office"
+    ],
+    "answer": "the locality names the city",
+    "feedback": "the locality names the city. The mark and place name identify a locality, not a street or a numeric delivery code.",
+    "objectiveId": "obj-u26-postal-address",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The option “the street line names the premises” does not describe the requested component or supplied comparison. The mark and place name identify a locality, not a street or a numeric delivery code.",
+      "The option “the postcode names the delivery office” does not describe the requested component or supplied comparison. The mark and place name identify a locality, not a street or a numeric delivery code."
+    ],
+    "assessment": {
+      "testedFeature": "LOCALITY_ROLE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-g-postal-1",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-u26-postal-coverage-14"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-postal-coverage-15",
+        "prov-ca-u26-postal-coverage-16"
+      ],
+      "distractorDifference": [
+        "",
+        "The option “the street line names the premises” does not describe the requested component or supplied comparison. The mark and place name identify a locality, not a street or a numeric delivery code.",
+        "The option “the postcode names the delivery office” does not describe the requested component or supplied comparison. The mark and place name identify a locality, not a street or a numeric delivery code."
+      ],
+      "whyAnswerDemonstratesObjective": "the locality names the city. The mark and place name identify a locality, not a street or a numeric delivery code.",
+      "contrastMembers": [
+        "the locality names the city",
+        "the street line names the premises",
+        "the postcode names the delivery office"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-postal-coverage-12",
+        "prov-ca-u26-postal-coverage-14",
+        "prov-ca-u26-postal-coverage-15",
+        "prov-ca-u26-postal-coverage-16"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-postal-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "In the supplied lesson model, which English description identifies the person who receives this home-delivery address?",
+    "promptLetter": "Анна Петрова",
+    "options": [
+      "the addressee names the recipient",
+      "the street line names the premises",
+      "the postcode names the delivery office"
+    ],
+    "answer": "the addressee names the recipient",
+    "feedback": "the addressee names the recipient. The personal name identifies who receives the item, not the premises or numeric code.",
+    "objectiveId": "obj-u26-postal-address",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The option “the street line names the premises” does not describe the requested component or supplied comparison. The personal name identifies who receives the item, not the premises or numeric code.",
+      "The option “the postcode names the delivery office” does not describe the requested component or supplied comparison. The personal name identifies who receives the item, not the premises or numeric code."
+    ],
+    "assessment": {
+      "testedFeature": "ADDRESSEE_ROLE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-i-postal-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-postal-coverage-22"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-postal-coverage-15",
+        "prov-ca-u26-postal-coverage-16"
+      ],
+      "distractorDifference": [
+        "",
+        "The option “the street line names the premises” does not describe the requested component or supplied comparison. The personal name identifies who receives the item, not the premises or numeric code.",
+        "The option “the postcode names the delivery office” does not describe the requested component or supplied comparison. The personal name identifies who receives the item, not the premises or numeric code."
+      ],
+      "whyAnswerDemonstratesObjective": "the addressee names the recipient. The personal name identifies who receives the item, not the premises or numeric code.",
+      "contrastMembers": [
+        "the addressee names the recipient",
+        "the street line names the premises",
+        "the postcode names the delivery office"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-postal-coverage-20",
+        "prov-ca-u26-postal-coverage-22",
+        "prov-ca-u26-postal-coverage-15",
+        "prov-ca-u26-postal-coverage-16"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-postal-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "In the supplied lesson model, which English description identifies the premises in this home-delivery address?",
+    "promptLetter": "ул. Садовая, д. 12, кв. 4",
+    "options": [
+      "the street line names the premises",
+      "the addressee names the recipient",
+      "the locality names the city"
+    ],
+    "answer": "the street line names the premises",
+    "feedback": "the street line names the premises. This line contains the street, building and apartment, rather than the recipient or locality.",
+    "objectiveId": "obj-u26-postal-address",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The option “the addressee names the recipient” does not describe the requested component or supplied comparison. This line contains the street, building and apartment, rather than the recipient or locality.",
+      "The option “the locality names the city” does not describe the requested component or supplied comparison. This line contains the street, building and apartment, rather than the recipient or locality."
+    ],
+    "assessment": {
+      "testedFeature": "STREET_AND_PREMISES",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-i-postal-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-postal-coverage-15"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-postal-coverage-22",
+        "prov-ca-u26-postal-coverage-14"
+      ],
+      "distractorDifference": [
+        "",
+        "The option “the addressee names the recipient” does not describe the requested component or supplied comparison. This line contains the street, building and apartment, rather than the recipient or locality.",
+        "The option “the locality names the city” does not describe the requested component or supplied comparison. This line contains the street, building and apartment, rather than the recipient or locality."
+      ],
+      "whyAnswerDemonstratesObjective": "the street line names the premises. This line contains the street, building and apartment, rather than the recipient or locality.",
+      "contrastMembers": [
+        "the street line names the premises",
+        "the addressee names the recipient",
+        "the locality names the city"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-postal-coverage-26",
+        "prov-ca-u26-postal-coverage-15",
+        "prov-ca-u26-postal-coverage-22",
+        "prov-ca-u26-postal-coverage-14"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-postal-3",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "In the supplied lesson model, which English description identifies the numeric delivery code in this home-delivery address?",
+    "promptLetter": "420000",
+    "options": [
+      "the postcode names the delivery office",
+      "the locality names the city",
+      "the addressee names the recipient"
+    ],
+    "answer": "the postcode names the delivery office",
+    "feedback": "the postcode names the delivery office. The six digits are the numeric postal code, not a person or locality name. Code recognition alone does not verify deliverability.",
+    "objectiveId": "obj-u26-postal-address",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The option “the locality names the city” does not describe the requested component or supplied comparison. The six digits are the numeric postal code, not a person or locality name. Code recognition alone does not verify deliverability.",
+      "The option “the addressee names the recipient” does not describe the requested component or supplied comparison. The six digits are the numeric postal code, not a person or locality name. Code recognition alone does not verify deliverability."
+    ],
+    "assessment": {
+      "testedFeature": "SIX_DIGIT_POSTCODE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-i-postal-3",
+      "cueLanguage": "number",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-postal-coverage-16"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-postal-coverage-14",
+        "prov-ca-u26-postal-coverage-22"
+      ],
+      "distractorDifference": [
+        "",
+        "The option “the locality names the city” does not describe the requested component or supplied comparison. The six digits are the numeric postal code, not a person or locality name. Code recognition alone does not verify deliverability.",
+        "The option “the addressee names the recipient” does not describe the requested component or supplied comparison. The six digits are the numeric postal code, not a person or locality name. Code recognition alone does not verify deliverability."
+      ],
+      "whyAnswerDemonstratesObjective": "the postcode names the delivery office. The six digits are the numeric postal code, not a person or locality name. Code recognition alone does not verify deliverability.",
+      "contrastMembers": [
+        "the postcode names the delivery office",
+        "the locality names the city",
+        "the addressee names the recipient"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-postal-coverage-31",
+        "prov-ca-u26-postal-coverage-16",
+        "prov-ca-u26-postal-coverage-14",
+        "prov-ca-u26-postal-coverage-22"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-postal-4",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "In the supplied lesson model, which English description identifies a greeting that is not part of this home-delivery address?",
+    "promptLetter": "Здравствуйте",
+    "options": [
+      "a greeting is outside the address",
+      "the addressee names the recipient",
+      "the postcode names the delivery office"
+    ],
+    "answer": "a greeting is outside the address",
+    "feedback": "a greeting is outside the address. The greeting belongs to correspondence, not to the recipient-name or postcode component.",
+    "objectiveId": "obj-u26-postal-address",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The option “the addressee names the recipient” does not describe the requested component or supplied comparison. The greeting belongs to correspondence, not to the recipient-name or postcode component.",
+      "The option “the postcode names the delivery office” does not describe the requested component or supplied comparison. The greeting belongs to correspondence, not to the recipient-name or postcode component."
+    ],
+    "assessment": {
+      "testedFeature": "REJECTED_GREETING",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-i-postal-4",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-postal-coverage-38"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-postal-coverage-22",
+        "prov-ca-u26-postal-coverage-16"
+      ],
+      "distractorDifference": [
+        "",
+        "The option “the addressee names the recipient” does not describe the requested component or supplied comparison. The greeting belongs to correspondence, not to the recipient-name or postcode component.",
+        "The option “the postcode names the delivery office” does not describe the requested component or supplied comparison. The greeting belongs to correspondence, not to the recipient-name or postcode component."
+      ],
+      "whyAnswerDemonstratesObjective": "a greeting is outside the address. The greeting belongs to correspondence, not to the recipient-name or postcode component.",
+      "contrastMembers": [
+        "a greeting is outside the address",
+        "the addressee names the recipient",
+        "the postcode names the delivery office"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-postal-coverage-36",
+        "prov-ca-u26-postal-coverage-38",
+        "prov-ca-u26-postal-coverage-22",
+        "prov-ca-u26-postal-coverage-16"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-postal-5",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Compared with the supplied full model containing a regional and country line, which English description identifies what is missing from the short sample?",
+    "promptLetter": "the short sample",
+    "options": [
+      "the regional and country lines are absent from this shorter model",
+      "recipient then premises then city then postcode",
+      "postcode then recipient then premises then city"
+    ],
+    "answer": "the regional and country lines are absent from this shorter model",
+    "feedback": "the regional and country lines are absent from this shorter model. This comparison asks which lines are absent from the supplied full model. It does not declare every shorter domestic address invalid or require a separate region for every locality.",
+    "objectiveId": "obj-u26-postal-address",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The option “recipient then premises then city then postcode” does not describe the requested component or supplied comparison. This comparison asks which lines are absent from the supplied full model. It does not declare every shorter domestic address invalid or require a separate region for every locality.",
+      "The option “postcode then recipient then premises then city” does not describe the requested component or supplied comparison. This comparison asks which lines are absent from the supplied full model. It does not declare every shorter domestic address invalid or require a separate region for every locality."
+    ],
+    "assessment": {
+      "testedFeature": "FOUR_COMPONENT_INCOMPLETE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-i-postal-5",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-postal-coverage-44"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-postal-coverage-45",
+        "prov-ca-u26-postal-coverage-46"
+      ],
+      "distractorDifference": [
+        "",
+        "The option “recipient then premises then city then postcode” does not describe the requested component or supplied comparison. This comparison asks which lines are absent from the supplied full model. It does not declare every shorter domestic address invalid or require a separate region for every locality.",
+        "The option “postcode then recipient then premises then city” does not describe the requested component or supplied comparison. This comparison asks which lines are absent from the supplied full model. It does not declare every shorter domestic address invalid or require a separate region for every locality."
+      ],
+      "whyAnswerDemonstratesObjective": "the regional and country lines are absent from this shorter model. This comparison asks which lines are absent from the supplied full model. It does not declare every shorter domestic address invalid or require a separate region for every locality.",
+      "contrastMembers": [
+        "the regional and country lines are absent from this shorter model",
+        "recipient then premises then city then postcode",
+        "postcode then recipient then premises then city"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-postal-coverage-42",
+        "prov-ca-u26-postal-coverage-44",
+        "prov-ca-u26-postal-coverage-45",
+        "prov-ca-u26-postal-coverage-46"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-postal-6",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "In the supplied lesson model, which English description identifies the regional unit that applies to this locality?",
+    "promptLetter": "Республика Татарстан",
+    "options": [
+      "the republic is the applicable regional unit for this locality",
+      "the republic is the six-digit postcode",
+      "the republic is a greeting outside the address"
+    ],
+    "answer": "the republic is the applicable regional unit for this locality",
+    "feedback": "the republic is the applicable regional unit for this locality. This supplied line names the republic associated with the stated locality, not a numeric code or greeting.",
+    "objectiveId": "obj-u26-postal-address",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The option “the republic is the six-digit postcode” does not describe the requested component or supplied comparison. This supplied line names the republic associated with the stated locality, not a numeric code or greeting.",
+      "The option “the republic is a greeting outside the address” does not describe the requested component or supplied comparison. This supplied line names the republic associated with the stated locality, not a numeric code or greeting."
+    ],
+    "assessment": {
+      "testedFeature": "REGIONAL_UNIT_AS_APPLICABLE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-i-postal-6",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-postal-coverage-52"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-postal-coverage-53",
+        "prov-ca-u26-postal-coverage-54"
+      ],
+      "distractorDifference": [
+        "",
+        "The option “the republic is the six-digit postcode” does not describe the requested component or supplied comparison. This supplied line names the republic associated with the stated locality, not a numeric code or greeting.",
+        "The option “the republic is a greeting outside the address” does not describe the requested component or supplied comparison. This supplied line names the republic associated with the stated locality, not a numeric code or greeting."
+      ],
+      "whyAnswerDemonstratesObjective": "the republic is the applicable regional unit for this locality. This supplied line names the republic associated with the stated locality, not a numeric code or greeting.",
+      "contrastMembers": [
+        "the republic is the applicable regional unit for this locality",
+        "the republic is the six-digit postcode",
+        "the republic is a greeting outside the address"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-postal-coverage-50",
+        "prov-ca-u26-postal-coverage-52",
+        "prov-ca-u26-postal-coverage-53",
+        "prov-ca-u26-postal-coverage-54"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-postal-7",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "In the supplied lesson model, which English description identifies the regional line for this federal city?",
+    "promptLetter": "г. Москва",
+    "options": [
+      "a federal city does not add a separate oblast line",
+      "a federal city must add an oblast line",
+      "a federal city omits the postcode"
+    ],
+    "answer": "a federal city does not add a separate oblast line",
+    "feedback": "a federal city does not add a separate oblast line. The supplied Moscow model uses its federal-city locality without inventing a separate oblast. That does not remove its postcode.",
+    "objectiveId": "obj-u26-postal-address",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The option “a federal city must add an oblast line” does not describe the requested component or supplied comparison. The supplied Moscow model uses its federal-city locality without inventing a separate oblast. That does not remove its postcode.",
+      "The option “a federal city omits the postcode” does not describe the requested component or supplied comparison. The supplied Moscow model uses its federal-city locality without inventing a separate oblast. That does not remove its postcode."
+    ],
+    "assessment": {
+      "testedFeature": "FEDERAL_CITY_WITHOUT_OBLAST",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-i-postal-7",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-postal-coverage-60"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-postal-coverage-61",
+        "prov-ca-u26-postal-coverage-62"
+      ],
+      "distractorDifference": [
+        "",
+        "The option “a federal city must add an oblast line” does not describe the requested component or supplied comparison. The supplied Moscow model uses its federal-city locality without inventing a separate oblast. That does not remove its postcode.",
+        "The option “a federal city omits the postcode” does not describe the requested component or supplied comparison. The supplied Moscow model uses its federal-city locality without inventing a separate oblast. That does not remove its postcode."
+      ],
+      "whyAnswerDemonstratesObjective": "a federal city does not add a separate oblast line. The supplied Moscow model uses its federal-city locality without inventing a separate oblast. That does not remove its postcode.",
+      "contrastMembers": [
+        "a federal city does not add a separate oblast line",
+        "a federal city must add an oblast line",
+        "a federal city omits the postcode"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-postal-coverage-58",
+        "prov-ca-u26-postal-coverage-60",
+        "prov-ca-u26-postal-coverage-61",
+        "prov-ca-u26-postal-coverage-62"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-postal-8",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "In the supplied lesson model, which English description identifies the destination state in this home-delivery address?",
+    "promptLetter": "Россия",
+    "options": [
+      "the country names the destination state",
+      "the country is a greeting outside the address",
+      "the postcode replaces the country"
+    ],
+    "answer": "the country names the destination state",
+    "feedback": "the country names the destination state. This line names the destination country in the supplied model. A postcode serves a different role and does not name the country.",
+    "objectiveId": "obj-u26-postal-address",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The option “the country is a greeting outside the address” does not describe the requested component or supplied comparison. This line names the destination country in the supplied model. A postcode serves a different role and does not name the country.",
+      "The option “the postcode replaces the country” does not describe the requested component or supplied comparison. This line names the destination country in the supplied model. A postcode serves a different role and does not name the country."
+    ],
+    "assessment": {
+      "testedFeature": "COUNTRY_COMPONENT",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-i-postal-8",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-postal-coverage-68"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-postal-coverage-69",
+        "prov-ca-u26-postal-coverage-70"
+      ],
+      "distractorDifference": [
+        "",
+        "The option “the country is a greeting outside the address” does not describe the requested component or supplied comparison. This line names the destination country in the supplied model. A postcode serves a different role and does not name the country.",
+        "The option “the postcode replaces the country” does not describe the requested component or supplied comparison. This line names the destination country in the supplied model. A postcode serves a different role and does not name the country."
+      ],
+      "whyAnswerDemonstratesObjective": "the country names the destination state. This line names the destination country in the supplied model. A postcode serves a different role and does not name the country.",
+      "contrastMembers": [
+        "the country names the destination state",
+        "the country is a greeting outside the address",
+        "the postcode replaces the country"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-postal-coverage-66",
+        "prov-ca-u26-postal-coverage-68",
+        "prov-ca-u26-postal-coverage-69",
+        "prov-ca-u26-postal-coverage-70"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-postal-9",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "In the supplied lesson model, which English description identifies when a post-office box belongs in this home-delivery address?",
+    "promptLetter": "а/я 15",
+    "options": [
+      "a post-office box is not required on a street address",
+      "every home-delivery address must include a post-office box",
+      "a post-office box is the six-digit postcode"
+    ],
+    "answer": "a post-office box is not required on a street address",
+    "feedback": "a post-office box is not required on a street address. A box is a delivery alternative when used, not a required component of every street address or a postcode.",
+    "objectiveId": "obj-u26-postal-address",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The option “every home-delivery address must include a post-office box” does not describe the requested component or supplied comparison. A box is a delivery alternative when used, not a required component of every street address or a postcode.",
+      "The option “a post-office box is the six-digit postcode” does not describe the requested component or supplied comparison. A box is a delivery alternative when used, not a required component of every street address or a postcode."
+    ],
+    "assessment": {
+      "testedFeature": "POST_OFFICE_BOX_CONDITIONAL",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-i-postal-9",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-postal-coverage-76"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-postal-coverage-77",
+        "prov-ca-u26-postal-coverage-78"
+      ],
+      "distractorDifference": [
+        "",
+        "The option “every home-delivery address must include a post-office box” does not describe the requested component or supplied comparison. A box is a delivery alternative when used, not a required component of every street address or a postcode.",
+        "The option “a post-office box is the six-digit postcode” does not describe the requested component or supplied comparison. A box is a delivery alternative when used, not a required component of every street address or a postcode."
+      ],
+      "whyAnswerDemonstratesObjective": "a post-office box is not required on a street address. A box is a delivery alternative when used, not a required component of every street address or a postcode.",
+      "contrastMembers": [
+        "a post-office box is not required on a street address",
+        "every home-delivery address must include a post-office box",
+        "a post-office box is the six-digit postcode"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-postal-coverage-74",
+        "prov-ca-u26-postal-coverage-76",
+        "prov-ca-u26-postal-coverage-77",
+        "prov-ca-u26-postal-coverage-78"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-postal-10",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "In the supplied lesson model, which English description identifies an apartment on premises that have none?",
+    "promptLetter": "premises without an apartment",
+    "options": [
+      "an apartment number is omitted when the premises has none",
+      "every address must invent an apartment number",
+      "omitting an apartment turns the premises into a greeting"
+    ],
+    "answer": "an apartment number is omitted when the premises has none",
+    "feedback": "an apartment number is omitted when the premises has none. No apartment number is invented for premises that have none. Presence of an apartment number depends on the actual premises.",
+    "objectiveId": "obj-u26-postal-address",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The option “every address must invent an apartment number” does not describe the requested component or supplied comparison. No apartment number is invented for premises that have none. Presence of an apartment number depends on the actual premises.",
+      "The option “omitting an apartment turns the premises into a greeting” does not describe the requested component or supplied comparison. No apartment number is invented for premises that have none. Presence of an apartment number depends on the actual premises."
+    ],
+    "assessment": {
+      "testedFeature": "APARTMENT_CONDITIONAL",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-i-postal-10",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-postal-coverage-84"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-postal-coverage-85",
+        "prov-ca-u26-postal-coverage-86"
+      ],
+      "distractorDifference": [
+        "",
+        "The option “every address must invent an apartment number” does not describe the requested component or supplied comparison. No apartment number is invented for premises that have none. Presence of an apartment number depends on the actual premises.",
+        "The option “omitting an apartment turns the premises into a greeting” does not describe the requested component or supplied comparison. No apartment number is invented for premises that have none. Presence of an apartment number depends on the actual premises."
+      ],
+      "whyAnswerDemonstratesObjective": "an apartment number is omitted when the premises has none. No apartment number is invented for premises that have none. Presence of an apartment number depends on the actual premises.",
+      "contrastMembers": [
+        "an apartment number is omitted when the premises has none",
+        "every address must invent an apartment number",
+        "omitting an apartment turns the premises into a greeting"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-postal-coverage-82",
+        "prov-ca-u26-postal-coverage-84",
+        "prov-ca-u26-postal-coverage-85",
+        "prov-ca-u26-postal-coverage-86"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-postal-11",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English sequence matches the displayed address in this lesson’s supplied format?",
+    "promptLetter": "Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000",
+    "options": [
+      "recipient, then premises, then locality, then the applicable region, then the country, then the postcode",
+      "postcode, then country, then recipient, then premises, then locality, then region",
+      "the short sample proves that region and country can never appear"
+    ],
+    "answer": "recipient, then premises, then locality, then the applicable region, then the country, then the postcode",
+    "feedback": "recipient, then premises, then locality, then the applicable region, then the country, then the postcode. Read the displayed sequence in this supplied format. This is not a unique valid order for every domestic or international item.",
+    "objectiveId": "obj-u26-postal-address",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The option “postcode, then country, then recipient, then premises, then locality, then region” does not describe the requested component or supplied comparison. Read the displayed sequence in this supplied format. This is not a unique valid order for every domestic or international item.",
+      "The option “the short sample proves that region and country can never appear” does not describe the requested component or supplied comparison. Read the displayed sequence in this supplied format. This is not a unique valid order for every domestic or international item."
+    ],
+    "assessment": {
+      "testedFeature": "COMPLETE_GOVERNED_ADDRESS",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-i-postal-11",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-postal-coverage-92"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-postal-coverage-93",
+        "prov-ca-u26-postal-coverage-94"
+      ],
+      "distractorDifference": [
+        "",
+        "The option “postcode, then country, then recipient, then premises, then locality, then region” does not describe the requested component or supplied comparison. Read the displayed sequence in this supplied format. This is not a unique valid order for every domestic or international item.",
+        "The option “the short sample proves that region and country can never appear” does not describe the requested component or supplied comparison. Read the displayed sequence in this supplied format. This is not a unique valid order for every domestic or international item."
+      ],
+      "whyAnswerDemonstratesObjective": "recipient, then premises, then locality, then the applicable region, then the country, then the postcode. Read the displayed sequence in this supplied format. This is not a unique valid order for every domestic or international item.",
+      "contrastMembers": [
+        "recipient, then premises, then locality, then the applicable region, then the country, then the postcode",
+        "postcode, then country, then recipient, then premises, then locality, then region",
+        "the short sample proves that region and country can never appear"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-postal-coverage-90",
+        "prov-ca-u26-postal-coverage-92",
+        "prov-ca-u26-postal-coverage-93",
+        "prov-ca-u26-postal-coverage-94"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u30-g-dictionary-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English sense does the governed entry give for this inflected furniture form?",
+    "promptLetter": "столом",
+    "options": [
+      "this inflected form has the sense a piece of furniture with a flat top",
+      "this inflected form has the sense remaining upright on a base",
+      "a part-of-speech label does not state the furniture sense"
+    ],
+    "answer": "this inflected form has the sense a piece of furniture with a flat top",
+    "feedback": "Admitted reading: this inflected form has the sense a piece of furniture with a flat top",
+    "objectiveId": "obj-u30-dictionary",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: this inflected form has the sense remaining upright on a base",
+      "Rejected reading: a part-of-speech label does not state the furniture sense"
+    ],
+    "assessment": {
+      "testedFeature": "ENTRY_GUIDED_FORM_TO_SENSE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u30-g-dictionary-1",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-obj-u30-dictionary-7"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u30-dictionary-9",
+        "prov-obj-u30-dictionary-11"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: this inflected form has the sense remaining upright on a base",
+        "Rejected reading: a part-of-speech label does not state the furniture sense"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: this inflected form has the sense a piece of furniture with a flat top",
+      "contrastMembers": [
+        "this inflected form has the sense a piece of furniture with a flat top",
+        "this inflected form has the sense remaining upright on a base",
+        "a part-of-speech label does not state the furniture sense"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u30-dictionary-6",
+        "prov-obj-u30-dictionary-7",
+        "prov-obj-u30-dictionary-9",
+        "prov-obj-u30-dictionary-11"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u30-i-dictionary-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English sense does the governed entry give for the inflected form in this phrase?",
+    "promptLetter": "на столе",
+    "options": [
+      "a piece of furniture with a flat top",
+      "remaining upright on a base",
+      "a part-of-speech label does not state the furniture sense"
+    ],
+    "answer": "a piece of furniture with a flat top",
+    "feedback": "Admitted reading: a piece of furniture with a flat top",
+    "objectiveId": "obj-u30-dictionary",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: remaining upright on a base",
+      "Rejected reading: a part-of-speech label does not state the furniture sense"
+    ],
+    "assessment": {
+      "testedFeature": "ENTRY_FORM_TO_SENSE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u30-i-dictionary-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u30-dictionary-15"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u30-dictionary-17",
+        "prov-obj-u30-dictionary-11"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: remaining upright on a base",
+        "Rejected reading: a part-of-speech label does not state the furniture sense"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: a piece of furniture with a flat top",
+      "contrastMembers": [
+        "a piece of furniture with a flat top",
+        "remaining upright on a base",
+        "a part-of-speech label does not state the furniture sense"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u30-dictionary-14",
+        "prov-obj-u30-dictionary-15",
+        "prov-obj-u30-dictionary-17",
+        "prov-obj-u30-dictionary-11"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u30-i-dictionary-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English sense does the governed entry give for this inflected standing form?",
+    "promptLetter": "стоит",
+    "options": [
+      "remaining upright on a base",
+      "a piece of furniture with a flat top",
+      "a part-of-speech label does not state the furniture sense"
+    ],
+    "answer": "remaining upright on a base",
+    "feedback": "Admitted reading: remaining upright on a base",
+    "objectiveId": "obj-u30-dictionary",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: a piece of furniture with a flat top",
+      "Rejected reading: a part-of-speech label does not state the furniture sense"
+    ],
+    "assessment": {
+      "testedFeature": "ENTRY_VERB_FORM_TO_SENSE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u30-i-dictionary-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u30-dictionary-17"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u30-dictionary-15",
+        "prov-obj-u30-dictionary-11"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: a piece of furniture with a flat top",
+        "Rejected reading: a part-of-speech label does not state the furniture sense"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: remaining upright on a base",
+      "contrastMembers": [
+        "remaining upright on a base",
+        "a piece of furniture with a flat top",
+        "a part-of-speech label does not state the furniture sense"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u30-dictionary-20",
+        "prov-obj-u30-dictionary-17",
+        "prov-obj-u30-dictionary-15",
+        "prov-obj-u30-dictionary-11"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u30-i-dictionary-3",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English sense does the governed entry give for this example sentence?",
+    "promptLetter": "Книга лежит на столе.",
+    "options": [
+      "the example uses a piece of furniture with a flat top",
+      "the example uses remaining upright on a base",
+      "the example uses a part-of-speech label instead of a sense"
+    ],
+    "answer": "the example uses a piece of furniture with a flat top",
+    "feedback": "Admitted reading: the example uses a piece of furniture with a flat top",
+    "objectiveId": "obj-u30-dictionary",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: the example uses remaining upright on a base",
+      "Rejected reading: the example uses a part-of-speech label instead of a sense"
+    ],
+    "assessment": {
+      "testedFeature": "ENTRY_EXAMPLE_TO_SENSE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u30-i-dictionary-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u30-dictionary-25"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u30-dictionary-27",
+        "prov-obj-u30-dictionary-29"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: the example uses remaining upright on a base",
+        "Rejected reading: the example uses a part-of-speech label instead of a sense"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: the example uses a piece of furniture with a flat top",
+      "contrastMembers": [
+        "the example uses a piece of furniture with a flat top",
+        "the example uses remaining upright on a base",
+        "the example uses a part-of-speech label instead of a sense"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u30-dictionary-24",
+        "prov-obj-u30-dictionary-25",
+        "prov-obj-u30-dictionary-27",
+        "prov-obj-u30-dictionary-29"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u30-i-dictionary-4",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English reading follows when only a part-of-speech label is shown?",
+    "promptLetter": "сущ.",
+    "options": [
+      "a part-of-speech label does not state the furniture sense",
+      "a piece of furniture with a flat top",
+      "remaining upright on a base"
+    ],
+    "answer": "a part-of-speech label does not state the furniture sense",
+    "feedback": "Admitted reading: a part-of-speech label does not state the furniture sense",
+    "objectiveId": "obj-u30-dictionary",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: a piece of furniture with a flat top",
+      "Rejected reading: remaining upright on a base"
+    ],
+    "assessment": {
+      "testedFeature": "POS_LABEL_INSUFFICIENT",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u30-i-dictionary-4",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u30-dictionary-11"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u30-dictionary-15",
+        "prov-obj-u30-dictionary-17"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: a piece of furniture with a flat top",
+        "Rejected reading: remaining upright on a base"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: a part-of-speech label does not state the furniture sense",
+      "contrastMembers": [
+        "a part-of-speech label does not state the furniture sense",
+        "a piece of furniture with a flat top",
+        "remaining upright on a base"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u30-dictionary-32",
+        "prov-obj-u30-dictionary-11",
+        "prov-obj-u30-dictionary-15",
+        "prov-obj-u30-dictionary-17"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u30-i-dictionary-5",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English reading follows when only a row of forms is shown?",
+    "promptLetter": "стол, стола, столу, столом, столе",
+    "options": [
+      "a row of forms does not state the furniture sense",
+      "a piece of furniture with a flat top",
+      "remaining upright on a base"
+    ],
+    "answer": "a row of forms does not state the furniture sense",
+    "feedback": "Admitted reading: a row of forms does not state the furniture sense",
+    "objectiveId": "obj-u30-dictionary",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Rejected reading: a piece of furniture with a flat top",
+      "Rejected reading: remaining upright on a base"
+    ],
+    "assessment": {
+      "testedFeature": "FORMS_ROW_INSUFFICIENT",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u30-i-dictionary-5",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-obj-u30-dictionary-36"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-obj-u30-dictionary-15",
+        "prov-obj-u30-dictionary-17"
+      ],
+      "distractorDifference": [
+        "",
+        "Rejected reading: a piece of furniture with a flat top",
+        "Rejected reading: remaining upright on a base"
+      ],
+      "whyAnswerDemonstratesObjective": "Admitted reading: a row of forms does not state the furniture sense",
+      "contrastMembers": [
+        "a row of forms does not state the furniture sense",
+        "a piece of furniture with a flat top",
+        "remaining upright on a base"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-obj-u30-dictionary-35",
+        "prov-obj-u30-dictionary-36",
+        "prov-obj-u30-dictionary-15",
+        "prov-obj-u30-dictionary-17"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u1-g-name-a",
+    "kind": "LETTER_IDENTITY",
+    "language": "en",
+    "prompt": "Which name belongs to this printed letter?",
+    "promptLetter": "А",
+    "options": [
+      "а",
+      "бэ",
+      "эр"
+    ],
+    "answer": "а",
+    "feedback": "The printed letter А is named а.",
+    "objectiveId": "obj-u1-letter-names",
+    "sourceId": "src-unicode-cyrillic",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-name-be",
+    "kind": "LETTER_IDENTITY",
+    "language": "en",
+    "prompt": "Which name belongs to this printed letter?",
+    "promptLetter": "Б",
+    "options": [
+      "бэ",
+      "вэ",
+      "пэ"
+    ],
+    "answer": "бэ",
+    "feedback": "The printed letter Б is named бэ.",
+    "objectiveId": "obj-u1-letter-names",
+    "sourceId": "src-unicode-cyrillic",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-g-guided-confusable",
+    "kind": "CONFUSABLE",
+    "language": "en",
+    "prompt": "The shape looks like Latin P. Which identity is the Cyrillic letter?",
+    "promptLetter": "Р",
+    "options": [
+      "The Cyrillic letter Р",
+      "The Latin letter P",
+      "The Cyrillic letter П"
+    ],
+    "answer": "The Cyrillic letter Р",
+    "feedback": "Р is the Cyrillic letter, even when the shape looks like Latin P.",
+    "objectiveId": "obj-u1-confusable",
+    "sourceId": "src-unicode-cyrillic",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-g-guided-iotated",
+    "kind": "LETTER_IDENTITY",
+    "language": "en",
+    "prompt": "Which printed form is the iotated letter named in this group?",
+    "promptLetter": "Я",
+    "options": [
+      "The Cyrillic letter Я",
+      "The Cyrillic letter А",
+      "The Cyrillic letter И"
+    ],
+    "answer": "The Cyrillic letter Я",
+    "feedback": "Я belongs to the iotated group. Exact phonetics stay with the book model you own.",
+    "objectiveId": "obj-u1-iotated",
+    "sourceId": "src-unicode-cyrillic",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-g-guided-signs",
+    "kind": "SIGN",
+    "language": "en",
+    "prompt": "What does this sign do?",
+    "promptLetter": "Ь",
+    "options": [
+      "It marks softness and is not a vowel",
+      "It is a spoken vowel",
+      "It is the Latin letter b"
+    ],
+    "answer": "It marks softness and is not a vowel",
+    "feedback": "Ь and Ъ are signs. Do not invent a spoken vowel for them.",
+    "objectiveId": "obj-u1-signs",
+    "sourceId": "src-unicode-cyrillic",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-g-guided-print",
+    "kind": "PRINT_PAIR",
+    "language": "en",
+    "prompt": "Which lowercase print form pairs with this uppercase letter?",
+    "promptLetter": "А",
+    "options": [
+      "а",
+      "б",
+      "В"
+    ],
+    "answer": "а",
+    "feedback": "Match the printed uppercase and lowercase pair. Handwriting assets are not installed.",
+    "objectiveId": "obj-u1-print-forms",
+    "sourceId": "src-unicode-cyrillic",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-g-guided-decoding",
+    "kind": "PRINT_PAIR",
+    "language": "en",
+    "prompt": "Read the printed pair before any word. Which lowercase form matches?",
+    "promptLetter": "М",
+    "options": [
+      "м",
+      "н",
+      "т"
+    ],
+    "answer": "м",
+    "feedback": "Decode the print pair first. This guided step still does not score a whole word.",
+    "objectiveId": "obj-u1-decoding",
+    "sourceId": "src-unicode-cyrillic",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-g-nominative-1",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted example is the shown sentence?",
+    "promptLetter": "Муж говорит",
+    "options": [
+      "The husband is talking",
+      "The train is old"
+    ],
+    "answer": "The husband is talking",
+    "feedback": "Муж говорит uses the dictionary form as the subject: The husband is talking. Compare that subject with the admitted record before the independent check.",
+    "objectiveId": "obj-u4-nominative-gloss-reference",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u27-g-stress-past",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which past-passive stress is admitted for this guided write form?",
+    "promptLetter": "guided past passive of написать",
+    "options": [
+      "stem stress напи́санный",
+      "later-vowel stress написа́нный"
+    ],
+    "answer": "stem stress напи́санный",
+    "feedback": "The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.",
+    "objectiveId": "obj-u27-stress",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form."
+    ],
+    "assessment": {
+      "testedFeature": "STRESS_NAPISANNY_GUIDED",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u27-g-stress-past",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-u27-past-guided-participant-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u27-past-guided-participant-2"
+      ],
+      "distractorDifference": [
+        "",
+        "later-vowel stress написа́нный moves the accent from the second to the third syllable and is rejected for the supplied write form."
+      ],
+      "whyAnswerDemonstratesObjective": "The supplied accent is stem stress напи́санный, on the second syllable. The competing accent is later-vowel stress написа́нный, on the third syllable rather than the final adjective ending.",
+      "contrastMembers": [
+        "stem stress напи́санный",
+        "later-vowel stress написа́нный"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u27-past-guided-participant-0",
+        "prov-ca-u27-past-guided-participant-1",
+        "prov-ca-u27-past-guided-participant-2"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  }
+]

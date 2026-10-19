@@ -1,0 +1,355 @@
+[
+  {
+    "id": "ref-cyrillic-print",
+    "title": "Cyrillic print forms",
+    "summary": "33 printed uppercase/lowercase pairs.",
+    "detail": "Use the letter board grouped by the Unit 1 sequence. English sound notes are pending review. No example words are attached.",
+    "introducedInUnit": 1,
+    "sourceId": "src-app-english-v2",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "searchTerms": [
+      "cyrillic print forms"
+    ]
+  },
+  {
+    "id": "ref-confusable",
+    "title": "Confusable Latin look-alikes",
+    "summary": "В Н Р С У Х can be misread by Latin-alphabet readers.",
+    "detail": "Name the Cyrillic identity. Confirm sounds in your book.",
+    "introducedInUnit": 1,
+    "sourceId": "src-app-english-v2",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "searchTerms": [
+      "confusable latin look-alikes"
+    ]
+  },
+  {
+    "id": "ref-iotated",
+    "title": "Iotated vowel letters",
+    "summary": "Е Ё Ю Я are a recognition group in Unit 1.",
+    "detail": "Detailed phonetics remain in the book until a reviewer signs an app note.",
+    "introducedInUnit": 1,
+    "sourceId": "src-app-english-v2",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "searchTerms": [
+      "iotated vowel letters"
+    ]
+  },
+  {
+    "id": "ref-signs",
+    "title": "Soft sign, hard sign, and Й",
+    "summary": "Ь and Ъ are signs. Й is not a standalone vowel in this foundation.",
+    "detail": "Do not invent a spoken vowel for the signs. Use the book for the exact rule.",
+    "introducedInUnit": 1,
+    "sourceId": "src-app-english-v2",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "searchTerms": [
+      "soft sign, hard sign, and й"
+    ]
+  },
+  {
+    "id": "ref-transliteration",
+    "title": "Transliteration is temporary",
+    "summary": "Latin respelling may help the first hours. It is not how you should keep reading.",
+    "detail": "Turn transliteration off in settings as soon as print recognition is stable.",
+    "introducedInUnit": 1,
+    "sourceId": "src-app-english-v2",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "searchTerms": [
+      "transliteration is temporary"
+    ]
+  },
+  {
+    "id": "ref-decoding",
+    "title": "Staged decoding limits",
+    "summary": "This pack decodes letters and print pairs only.",
+    "detail": "Word, phrase, and sign reading wait for reviewed examples.",
+    "introducedInUnit": 1,
+    "sourceId": "src-app-english-v2",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "searchTerms": [
+      "staged decoding limits"
+    ]
+  },
+  {
+    "id": "ref-stress",
+    "title": "Stress notation",
+    "summary": "Stress is part of Russian reading and is not guessed by the app.",
+    "detail": "Copy stress marks from your book into your binder.",
+    "introducedInUnit": 1,
+    "sourceId": "src-app-english-v2",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "searchTerms": [
+      "stress notation"
+    ]
+  },
+  {
+    "id": "ref-pronunciation",
+    "title": "Pronunciation guidance",
+    "summary": "Model audio is used only when a file is licensed and mapped to the current objective.",
+    "detail": "User recordings play at original speed. No ASR or score.",
+    "introducedInUnit": 2,
+    "sourceId": "src-app-english-v2",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "searchTerms": [
+      "pronunciation guidance"
+    ]
+  },
+  {
+    "id": "ref-study",
+    "title": "How to use this companion",
+    "summary": "The app coordinates the book, optional AnkiDroid, a binder, and optional tutor work.",
+    "detail": "It does not reproduce Penguin, judge spontaneous speech, or certify proficiency.",
+    "introducedInUnit": 1,
+    "sourceId": "src-app-english-v2",
+    "classification": "PRODUCT_HELP",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "how to use this companion"
+    ]
+  },
+  {
+    "id": "ref-limits",
+    "title": "App limitations",
+    "summary": "Offline only. No internet, no account, no AI, no cloud.",
+    "detail": "Unrelated catalog audio is not assigned to Units 1–2. The app does not score handwriting or pronunciation. Handwriting study uses your book until verified images exist. Unit 2 reviews Unit 1 letters and does not teach Lesson 3 grammar. Public release stays blocked until review and device evidence exist.",
+    "introducedInUnit": 1,
+    "sourceId": "src-app-english-v2",
+    "classification": "OPERATIONAL_GUIDANCE",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "app limitations"
+    ]
+  },
+  {
+    "id": "ref-book-topics",
+    "title": "Where lesson bodies are packaged",
+    "summary": "Some units contain proposed lesson bodies that still require qualified review.",
+    "detail": "A unit's Course status shows whether its lesson body is prepared. Units marked Not prepared or Not yet installed do not contain a usable lesson body. Open the matching lesson in the copy you own. This reference does not approve the packaged records.",
+    "introducedInUnit": 3,
+    "sourceId": "src-app-english-v2",
+    "classification": "OPERATIONAL_GUIDANCE",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "where lesson bodies are packaged"
+    ]
+  },
+  {
+    "id": "ref-u35-attribution",
+    "title": "Units 3–5 source notice",
+    "summary": "Proposed Units 3–5 adapt CC BY-SA 4.0 dictionary rows and Wikibooks grammar excerpts.",
+    "detail": "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks Russian grammar excerpts are frozen by oldid under the CC BY-SA 4.0 route. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included in this proposed curriculum. Review is pending. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt.",
+    "introducedInUnit": 3,
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "classification": "LICENSE_OR_ATTRIBUTION",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "units 3-5 source notice"
+    ]
+  },
+  {
+    "id": "ref-u610-attribution",
+    "title": "Units 6–10 source notice",
+    "summary": "Proposed Units 6–10 adapt CC BY-SA 4.0 dictionary rows and Wikibooks grammar excerpts.",
+    "detail": "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Review is pending.",
+    "introducedInUnit": 6,
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "classification": "LICENSE_OR_ATTRIBUTION",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "units 6-10 source notice"
+    ]
+  },
+  {
+    "id": "ref-u7-ruwiki-attribution",
+    "title": "Unit 7 Russian Wikipedia notice",
+    "summary": "The bounded adverb lines adapt one frozen Russian Wikipedia revision.",
+    "detail": "The invariance sentence and the suffixal pairs are frozen at Russian Wikipedia oldid 152437423 under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. That license route is not the English Wikipedia, Wiktionary, Wikibooks, Pressbooks, or OpenRussian route. The two admitted pairs are быстрый — быстро and творческий — творчески. They do not state a universal adverb paradigm. Review is pending.",
+    "introducedInUnit": 7,
+    "sourceId": "src-ruwiki-narechie-152437423",
+    "classification": "LICENSE_OR_ATTRIBUTION",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "unit 7 russian wikipedia notice"
+    ]
+  },
+  {
+    "id": "ref-u1115-attribution",
+    "title": "Units 11–15 source notice",
+    "summary": "Proposed Units 11–15 adapt CC BY-SA 4.0 dictionary rows and Wikibooks grammar excerpts.",
+    "detail": "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections. Review is pending.",
+    "introducedInUnit": 11,
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "classification": "LICENSE_OR_ATTRIBUTION",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "units 11-15 source notice"
+    ]
+  },
+  {
+    "id": "ref-u1620-attribution",
+    "title": "Units 16–20 source notice",
+    "summary": "Proposed Units 16–20 adapt CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and selected Wikipedia grammar spans.",
+    "detail": "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. Wikipedia grammar spans are frozen at oldid 1369617627 under the separate CC BY-SA 4.0 route recorded on Wikipedia:Copyrights oldid 1369466282. Those license routes are not interchangeable. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Learner-facing dictionary glosses are delimited sense selections.",
+    "introducedInUnit": 16,
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "classification": "LICENSE_OR_ATTRIBUTION",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "units 16-20 source notice"
+    ]
+  },
+  {
+    "id": "ref-u17-attribution",
+    "title": "Unit 17 source notice",
+    "summary": "Proposed Unit 17 adapts CC BY-SA 4.0 dictionary rows, Wikibooks excerpts, and the admitted Wikipedia clock and date spans.",
+    "detail": "OpenRussian dictionary data is frozen at commit 50e210c4803237779cb562bc1abcea529066031c under CC BY-SA 4.0. Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The bounded clock phrases are frozen at Wikipedia oldid 1366690592. The calendar-date examples are frozen at Wikipedia oldid 1357134172. Those license routes are not interchangeable. The admitted calendar-date relationships remain admitted. The three clock phrases are bounded recognition. Quarter-hour lines use a separate Pressbooks notice and do not clear productive clock-time. Productive clock-time is the ReadyRussian Grammar 20 system applied to exact retained expressions for minutes into the hour, minutes remaining after the half hour, and dial reading. The governed span is a text extraction. The clock image, data URI, quarter-hour lines, and linked audio are not admitted. Review is pending.",
+    "introducedInUnit": 17,
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "classification": "LICENSE_OR_ATTRIBUTION",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "unit 17 source notice"
+    ]
+  },
+  {
+    "id": "ref-u17-pressbooks-attribution",
+    "title": "Unit 17 Pressbooks notice",
+    "summary": "The quarter-hour lines adapt one retained Pressbooks chapter.",
+    "detail": "Anna Tumarkin and Shannon Donnally Quinn, Diverse Russian: A Multicultural Exploration, CC BY-SA 4.0, except where otherwise noted. The retained chapter HTML sha256 is ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3, retrieved 2026-09-25T15:45:47Z. That Pressbooks license route is not a Wikipedia, Wiktionary, Wikibooks, or OpenRussian route. The admitted lines are only the 0.00, 0.15, 0.30, and 0.45 patterns. They do not clear productive clock-time. Review is pending.",
+    "introducedInUnit": 17,
+    "sourceId": "src-pressbooks-diverse-russian-traditions-grammar",
+    "classification": "LICENSE_OR_ATTRIBUTION",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "unit 17 pressbooks notice"
+    ]
+  },
+  {
+    "id": "ref-u19-wiktionary-attribution",
+    "title": "Unit 19 Wiktionary notice",
+    "summary": "The likelihood example adapts one frozen English Wiktionary revision.",
+    "detail": "The likelihood sense and example are frozen at English Wiktionary oldid 84965088 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Entry text is dual-licensed CC BY-SA 4.0 and GFDL; this intake uses CC BY-SA 4.0. That license route is not a Wikipedia, Wikibooks, Pressbooks, or OpenRussian route. Audio from the entry is not admitted. Review is pending.",
+    "introducedInUnit": 19,
+    "sourceId": "src-enwiktionary-dolzhen-84965088",
+    "classification": "LICENSE_OR_ATTRIBUTION",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "unit 19 wiktionary notice"
+    ]
+  },
+  {
+    "id": "ref-u2125-attribution",
+    "title": "Units 21–25 source notice",
+    "summary": "Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.",
+    "detail": "Wikibooks excerpts are frozen by oldid under the CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The adapted selection and arrangement are share-alike. Application code, user data, and user recordings are outside that statement. No audio is included. Linked audio on the useful-words page is not admitted. Dated name-page claims about social address, foreigners, naming creativity, and the number of names are not shipped. English Wikipedia Russian grammar oldid 1369617627 is used under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. Russian Wikipedia pages are used under CC BY-SA 4.0 via the Russian Wikipedia copyrights page oldid 154562152. The one-and-a-half entry is frozen at English Wiktionary oldid 89737719 under CC BY-SA 4.0 via Wiktionary:Copyrights oldid 87545419. Linked audio is not admitted. Unit 23 time expressions are frozen Pressbooks chapter bytes sha256 87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171, retrieved 2026-09-26T22:52:41Z, under that chapter's own CC BY-SA 4.0 footer. That Pressbooks route is not a Wikipedia, Wiktionary, or Wikibooks license. Russian Wikipedia personal-name page oldid 154915954 is retained for bounded classification of the documented full-form and short-form diminutive bases, the dismissive-suffix limitation, and the lowered-status note, under the Russian Wikipedia copyrights page oldid 154562152. A separate application chain on that same span uses only names already in the span. It is not a name generator. The Unit 24 word-order pair is bounded sentence recognition on English Wikipedia Russian grammar oldid 1369617627. It does not clear scope-sensitive placement. Scope-sensitive placement is the ReadyRussian Language Generator 3 statement that the modifier negates the following word, and that page's two-sentence contrast, under the ReadyRussian CC BY-SA 4.0 route. Review is pending. Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.",
+    "introducedInUnit": 21,
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "classification": "LICENSE_OR_ATTRIBUTION",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "units 21-25 source notice"
+    ]
+  },
+  {
+    "id": "ref-u2630-attribution",
+    "title": "Units 26–30 source notice",
+    "summary": "Proposed Units 26–30 adapt admitted CC BY-SA 4.0 spans. Unsupported topics stay in the copy you own. Bounded postal, stress, and dictionary tasks are review-pending.",
+    "detail": "Wikipedia article text is frozen by oldid under CC BY-SA 4.0 via Wikipedia:Copyrights oldid 1369466282. The Wikibooks address note is frozen by oldid under the separate CC BY-SA 4.0 route recorded on Wikibooks:Copyrights oldid 4622060. The packaged CC BY-SA 4.0 legal code is cc-by-sa-4.0.txt. The adapted selection and arrangement are share-alike. Application code, user data, user recordings, and separately licensed audio are outside that statement. No audio is included. Linked media, Phonos, and pronunciation files are not admitted. Anecdotal postal advice is not shipped. Russian Wikipedia morphology oldid 148939075 is admitted only for the abbreviation declension contrast and the command-versus-supposition particle contrast, under the Russian Wikipedia copyrights oldid 154562152. Russian Wikipedia indefinite-pronoun page oldid 149963314 is admitted for the series meanings under that same Russian Wikipedia copyrights route. Russian Wikipedia participle page oldid 153078996 is admitted for the participial-phrase punctuation rule, including its exceptions, under that same route. Complete postal mastery, general participle-stress rules, universal register judgments, and broad dictionary proficiency are not supplied by these bounded tasks. ReadyRussian letter conventions cover structure, the Russian and English organizational difference, and the stranger address limit. The abbreviation contrast and the particle contrast do not activate an authority variance. Review is pending. Bounded postal practice, past-passive stress, and a two-entry dictionary task are implemented and review-pending. They are not complete postal mastery, a general stress rule, or broad dictionary proficiency. Present-passive exploration does not gate Unit 27.",
+    "introducedInUnit": 26,
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "classification": "LICENSE_OR_ATTRIBUTION",
+    "reviewStatus": "NOT_REQUIRED",
+    "searchTerms": [
+      "units 26-30 source notice",
+      "cc by-sa"
+    ]
+  },
+  {
+    "id": "ref-ca-letter-names",
+    "title": "Printed letter names",
+    "summary": "Unit 1 introduces the printed letter names used again in Unit 30.",
+    "detail": "Unit 1 letter names, review-pending: А is named а; Б is named бэ; В is named вэ; Г is named гэ; Д is named дэ; Е is named е; Ё is named ё; Ж is named жэ; З is named зэ; И is named и; Й is named и краткое; К is named ка; Л is named эль; М is named эм; Н is named эн; О is named о; П is named пэ; Р is named эр; С is named эс; Т is named тэ; У is named у; Ф is named эф; Х is named ха; Ц is named цэ; Ч is named че; Ш is named ша; Щ is named ща; Ъ is named твёрдый знак; Ы is named ы; Ь is named мягкий знак; Э is named э; Ю is named ю; Я is named я.",
+    "introducedInUnit": 1,
+    "sourceId": "src-unicode-cyrillic",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "searchTerms": [
+      "letter name",
+      "алфавит"
+    ]
+  },
+  {
+    "id": "ref-ca-cases",
+    "title": "Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.",
+    "summary": "Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.",
+    "detail": "Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.",
+    "introducedInUnit": 6,
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "searchTerms": [
+      "ref-ca-cases"
+    ]
+  },
+  {
+    "id": "ref-ca-aspect",
+    "title": "Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.",
+    "summary": "Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.",
+    "detail": "Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.",
+    "introducedInUnit": 12,
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "searchTerms": [
+      "ref-ca-aspect"
+    ]
+  },
+  {
+    "id": "ref-ca-motion",
+    "title": "Offline reference for motion, review-pending. Translate only the motion and destination that the Russian sentence contains.",
+    "summary": "Offline reference for motion, review-pending. Translate only the motion and destination that the Russian sentence contains.",
+    "detail": "Offline reference for motion, review-pending. Translate only the motion and destination that the Russian sentence contains.",
+    "introducedInUnit": 20,
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "searchTerms": [
+      "ref-ca-motion"
+    ]
+  },
+  {
+    "id": "ref-ca-participles",
+    "title": "Offline reference for past passive, review-pending. Required stress stays on напи́санный and прочи́танный. Present passive exploration is optional.",
+    "summary": "Offline reference for past passive, review-pending. Required stress stays on напи́санный and прочи́танный. Present passive exploration is optional.",
+    "detail": "Offline reference for past passive, review-pending. Required stress stays on напи́санный and прочи́танный. Present passive exploration is optional.",
+    "introducedInUnit": 27,
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "searchTerms": [
+      "ref-ca-participles"
+    ]
+  },
+  {
+    "id": "ref-ca-verbal-adverb",
+    "title": "Offline reference for verbal adverbs, review-pending. Imperfective forms are simultaneous with the main predicate and perfective forms are anterior to it.",
+    "summary": "Offline reference for verbal adverbs, review-pending. Imperfective forms are simultaneous with the main predicate and perfective forms are anterior to it.",
+    "detail": "Offline reference for verbal adverbs, review-pending. Imperfective forms are simultaneous with the main predicate and perfective forms are anterior to it.",
+    "introducedInUnit": 28,
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "classification": "LINGUISTIC_INSTRUCTION",
+    "searchTerms": [
+      "ref-ca-verbal-adverb"
+    ]
+  }
+]

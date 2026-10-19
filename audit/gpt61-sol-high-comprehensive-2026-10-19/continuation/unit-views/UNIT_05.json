@@ -1,0 +1,1319 @@
+{
+  "derivedFromCommit": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "rawSha256": "33e5655c99d6d5003da0ab1af9249dc814472e3436e0d28afd2f878f6ade4940",
+  "unit": {
+    "number": 5,
+    "id": "unit-5",
+    "title": "Questions, prepositional case, and indeclinable nouns",
+    "shortLabel": "Questions",
+    "topicSummary": "Proposed Unit 5 is a development unit awaiting qualified review. It contains admitted question, prepositional, and indeclinable records, plus separate book self-attestation. Question intonation is not taught. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 5,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 5 mapping remains pending. The structural edition facts are unchanged. This proposed curriculum is not an approved alignment.",
+    "prerequisiteUnitNumbers": [
+      4
+    ],
+    "estimatedMinutes": 54,
+    "objectives": [
+      {
+        "id": "obj-u5-questions",
+        "unitNumber": 5,
+        "title": "Recognize admitted question words and written questions",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u5-st-orient",
+          "u5-st-teach-questions-1",
+          "u5-st-teach-questions-2",
+          "u5-st-teach-questions-3",
+          "u5-st-teach-questions-4",
+          "u5-st-teach-questions-5"
+        ],
+        "exampleIds": [
+          "ex-u5-q-kto",
+          "ex-u5-q-chto",
+          "ex-u5-q-kogda",
+          "ex-u5-q-pochemu",
+          "ex-u5-q-kak",
+          "ex-u5-q-gde",
+          "ex-u5-q-kuda",
+          "ex-u5-q-otkuda",
+          "ex-u5-q-skolko",
+          "ex-u5-q-kakoy",
+          "ex-u5-pattern-pattern-chto-eto",
+          "ex-u5-pattern-pattern-kto-eto",
+          "ex-u5-pattern-pattern-kak-dela",
+          "ex-u5-pattern-pattern-gde-zhivete"
+        ],
+        "practiceStepIds": [
+          "u5-st-guided-questions-1",
+          "u5-st-guided-questions-4"
+        ],
+        "checkItemIds": [
+          "u5-i-q-kogda",
+          "u5-i-q-pochemu",
+          "u5-i-q-kak",
+          "u5-i-q-gde",
+          "u5-i-pattern-pattern-kto-eto",
+          "u5-i-pattern-pattern-kak-dela",
+          "u5-i-pattern-pattern-gde-zhivete"
+        ],
+        "remediationStepIds": [
+          "u5-st-rem-questions"
+        ]
+      },
+      {
+        "id": "obj-u5-prepositional",
+        "unitNumber": 5,
+        "title": "Recognize admitted prepositional examples",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u5-st-orient",
+          "u5-st-teach-prepositional-1",
+          "u5-st-teach-prepositional-2",
+          "u5-st-teach-prepositional-3",
+          "u5-st-teach-prepositional-4",
+          "u5-st-teach-prepositional-5",
+          "u5-st-teach-prepositional-6"
+        ],
+        "exampleIds": [
+          "ex-u5-prep-o-knige",
+          "ex-u5-prep-o-pisme",
+          "ex-u5-prep-o-sade",
+          "ex-u5-prep-v-moskve",
+          "ex-u5-prep-na-kryshe",
+          "ex-u5-prep-v-teatre",
+          "ex-u5-prep-na-stole",
+          "ex-u5-prep-na-stene"
+        ],
+        "practiceStepIds": [
+          "u5-st-guided-prepositional-1",
+          "u5-st-guided-prepositional-6"
+        ],
+        "checkItemIds": [
+          "u5-i-prep-o-sade",
+          "u5-i-prep-v-moskve"
+        ],
+        "remediationStepIds": [
+          "u5-st-rem-prepositional"
+        ]
+      },
+      {
+        "id": "obj-u5-indeclinable",
+        "unitNumber": 5,
+        "title": "Recognize admitted indeclinable nouns",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u5-st-orient",
+          "u5-st-teach-indeclinable-1",
+          "u5-st-teach-indeclinable-2",
+          "u5-st-teach-indeclinable-3",
+          "u5-st-teach-indeclinable-4"
+        ],
+        "exampleIds": [
+          "ex-u5-indecl-радио",
+          "ex-u5-indecl-такси",
+          "ex-u5-indecl-метро",
+          "ex-u5-indecl-кино",
+          "ex-u5-indecl-пальто",
+          "ex-u5-indecl-кофе",
+          "ex-u5-indecl-кафе",
+          "ex-u5-indecl-меню"
+        ],
+        "practiceStepIds": [
+          "u5-st-guided-indeclinable-1"
+        ],
+        "checkItemIds": [
+          "u5-i-indecl-такси",
+          "u5-i-indecl-метро",
+          "u5-i-indecl-кино",
+          "u5-i-decl-книга",
+          "u5-i-decl-окно"
+        ],
+        "remediationStepIds": [
+          "u5-st-rem-indeclinable"
+        ]
+      },
+      {
+        "id": "obj-u5-book",
+        "unitNumber": 5,
+        "title": "Self-attest Lesson 5 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u5-st-book-work",
+          "u5-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u5-s-orient",
+        "title": "Questions, place examples, and words that do not change form",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u5-questions",
+          "obj-u5-prepositional",
+          "obj-u5-indeclinable",
+          "obj-u5-book"
+        ],
+        "steps": [
+          {
+            "id": "u5-st-orient",
+            "kind": "ORIENT",
+            "title": "Questions, place examples, and words that do not change form",
+            "body": "Proposed Unit 5 uses frozen grammar excerpts and dictionary rows for questions, place examples, and words that do not change form. It does not teach question intonation and it does not supply audio. The owned book remains separate work. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "bookDirection": "Open Lesson 5 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u5-s-questions",
+        "title": "Recognize admitted question words and written questions",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u5-questions"
+        ],
+        "steps": [
+          {
+            "id": "u5-st-teach-questions-1",
+            "kind": "TEACH",
+            "title": "Four question words",
+            "body": "These words are copied from the frozen table. Кто — Who. Что — What. Когда — When. Почему — Why. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u5-q-kto",
+              "ex-u5-q-chto",
+              "ex-u5-q-kogda",
+              "ex-u5-q-pochemu"
+            ]
+          },
+          {
+            "id": "u5-st-guided-questions-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u5-i-q-kto",
+              "u5-i-q-chto"
+            ],
+            "remediationStepId": "u5-st-rem-questions"
+          },
+          {
+            "id": "u5-st-teach-questions-2",
+            "kind": "TEACH",
+            "title": "Three more question words",
+            "body": "These words are copied from the frozen table. Как — How. Где — Where (location). Куда — Whither, where to. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u5-q-kak",
+              "ex-u5-q-gde",
+              "ex-u5-q-kuda"
+            ]
+          },
+          {
+            "id": "u5-st-teach-questions-3",
+            "kind": "TEACH",
+            "title": "Three further question words",
+            "body": "These words are copied from the frozen table. Откуда — Whence, where from. Сколько — How much, how many. Какой — What kind. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u5-q-otkuda",
+              "ex-u5-q-skolko",
+              "ex-u5-q-kakoy"
+            ]
+          },
+          {
+            "id": "u5-st-teach-questions-4",
+            "kind": "TEACH",
+            "title": "Two written questions",
+            "body": "These written questions are exact frozen excerpts. Что это? — What is this?. Кто это? — Who is this?. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u5-pattern-pattern-chto-eto",
+              "ex-u5-pattern-pattern-kto-eto"
+            ]
+          },
+          {
+            "id": "u5-st-guided-questions-4",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u5-i-pattern-pattern-chto-eto"
+            ],
+            "remediationStepId": "u5-st-rem-questions"
+          },
+          {
+            "id": "u5-st-teach-questions-5",
+            "kind": "TEACH",
+            "title": "Two more written questions",
+            "body": "These written questions are exact frozen excerpts. Как дела? — How do you do?/How're things?. Где вы живёте? — Where do you live?. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u5-pattern-pattern-kak-dela",
+              "ex-u5-pattern-pattern-gde-zhivete"
+            ]
+          },
+          {
+            "id": "u5-st-rem-questions",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.",
+            "exampleIds": [
+              "ex-u5-q-kto",
+              "ex-u5-q-chto"
+            ]
+          },
+          {
+            "id": "u5-st-check-questions",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u5-i-q-kogda",
+              "u5-i-q-pochemu",
+              "u5-i-q-kak",
+              "u5-i-q-gde",
+              "u5-i-pattern-pattern-kto-eto",
+              "u5-i-pattern-pattern-kak-dela",
+              "u5-i-pattern-pattern-gde-zhivete"
+            ],
+            "remediationStepId": "u5-st-rem-questions"
+          }
+        ]
+      },
+      {
+        "id": "u5-s-prepositional",
+        "title": "Recognize admitted prepositional examples",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u5-prepositional"
+        ],
+        "steps": [
+          {
+            "id": "u5-st-teach-prepositional-1",
+            "kind": "TEACH",
+            "title": "Two about-examples",
+            "body": "These examples are exact frozen excerpts. О книге — About the book. О письме — About the letter. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u5-prep-o-knige",
+              "ex-u5-prep-o-pisme"
+            ]
+          },
+          {
+            "id": "u5-st-guided-prepositional-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u5-i-prep-o-knige",
+              "u5-i-prep-o-pisme"
+            ],
+            "remediationStepId": "u5-st-rem-prepositional"
+          },
+          {
+            "id": "u5-st-teach-prepositional-2",
+            "kind": "TEACH",
+            "title": "Two more about-examples and a place example",
+            "body": "These examples are exact frozen excerpts. О саде — About the garden. я в Москве — I'm in Moscow. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u5-prep-o-sade",
+              "ex-u5-prep-v-moskve"
+            ]
+          },
+          {
+            "id": "u5-st-teach-prepositional-3",
+            "kind": "TEACH",
+            "title": "Two place examples",
+            "body": "These examples are exact frozen excerpts. Он на крыше — He's on the roof. Он в театре — He is at the theatre. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u5-prep-na-kryshe",
+              "ex-u5-prep-v-teatre"
+            ]
+          },
+          {
+            "id": "u5-st-teach-prepositional-4",
+            "kind": "TEACH",
+            "title": "Two more place examples",
+            "body": "These examples are exact frozen excerpts. Ваза стоит на столе. — The vase stands on the table. Картина висит на стене. — The painting hangs on the wall. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u5-prep-na-stole",
+              "ex-u5-prep-na-stene"
+            ]
+          },
+          {
+            "id": "u5-st-teach-prepositional-5",
+            "kind": "TEACH",
+            "title": "Three admitted function words",
+            "body": "Use these rows only as quoted. Do not build a new phrase from them. в — in. на — on (place). о — about. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ]
+          },
+          {
+            "id": "u5-st-teach-prepositional-6",
+            "kind": "TEACH",
+            "title": "Two admitted field pairs",
+            "body": "Each pair is the first field, then the second field, from the same admitted row. кни́га / кни́ге. письмо́ / письме́. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ]
+          },
+          {
+            "id": "u5-st-guided-prepositional-6",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u5-i-prep-field-книга",
+              "u5-i-prep-field-письмо"
+            ],
+            "remediationStepId": "u5-st-rem-prepositional"
+          },
+          {
+            "id": "u5-st-rem-prepositional",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.",
+            "exampleIds": [
+              "ex-u5-prep-o-knige",
+              "ex-u5-prep-o-pisme"
+            ]
+          },
+          {
+            "id": "u5-st-check-prepositional",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u5-i-prep-o-sade",
+              "u5-i-prep-v-moskve"
+            ],
+            "remediationStepId": "u5-st-rem-prepositional"
+          }
+        ]
+      },
+      {
+        "id": "u5-s-indeclinable",
+        "title": "Recognize admitted indeclinable nouns",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u5-indeclinable"
+        ],
+        "steps": [
+          {
+            "id": "u5-st-teach-indeclinable-1",
+            "kind": "TEACH",
+            "title": "Nouns that keep their form",
+            "body": "An indeclinable noun keeps the same form for case or number. In these examples, ра́дио and такси́ are indeclinable. Recognize the behavior of the shown noun.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u5-indecl-радио",
+              "ex-u5-indecl-такси"
+            ]
+          },
+          {
+            "id": "u5-st-guided-indeclinable-1",
+            "kind": "GUIDED",
+            "title": "Guided noun classification",
+            "body": "Choose how the shown noun behaves. Read the explanation after choosing.",
+            "itemIds": [
+              "u5-i-indecl-радио"
+            ],
+            "remediationStepId": "u5-st-rem-indeclinable"
+          },
+          {
+            "id": "u5-st-teach-indeclinable-2",
+            "kind": "TEACH",
+            "title": "Four more unchanged nouns",
+            "body": "The nouns метро́, кино́, пальто́ and ко́фе are also indeclinable. Their forms stay unchanged for case or number. Learn the noun with this behavior; do not infer that every noun with a similar ending behaves the same way.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u5-indecl-метро",
+              "ex-u5-indecl-кино",
+              "ex-u5-indecl-пальто",
+              "ex-u5-indecl-кофе"
+            ]
+          },
+          {
+            "id": "u5-st-teach-indeclinable-3",
+            "kind": "TEACH",
+            "title": "Recognize the behavior",
+            "body": "кафе́ and меню́ are two more indeclinable nouns. An unchanged word form does not mean that a sentence has no case relationships. These checks classify the shown noun; they do not test production of a sentence or a complete paradigm.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u5-indecl-кафе",
+              "ex-u5-indecl-меню"
+            ]
+          },
+          {
+            "id": "u5-st-rem-indeclinable",
+            "kind": "REMEDIATE",
+            "title": "Review noun behavior",
+            "body": "An indeclinable noun keeps the same form for case or number. In these examples, ра́дио and такси́ are indeclinable. Recognize the behavior of the shown noun.\n\nThe nouns метро́, кино́, пальто́ and ко́фе are also indeclinable. Their forms stay unchanged for case or number. Learn the noun with this behavior; do not infer that every noun with a similar ending behaves the same way.\n\nкафе́ and меню́ are two more indeclinable nouns. An unchanged word form does not mean that a sentence has no case relationships. These checks classify the shown noun; they do not test production of a sentence or a complete paradigm.\n\nContrast кни́га and окно́: these nouns are declinable, so they can change for case. Their nominative and genitive forms differ. Choose the behavior of the shown noun: unchanged for case or number, or able to change for case. No new form needs to be invented.",
+            "exampleIds": [
+              "ex-u5-indecl-радио",
+              "ex-u5-indecl-такси",
+              "ex-u5-indecl-метро",
+              "ex-u5-indecl-кино",
+              "ex-u5-indecl-пальто",
+              "ex-u5-indecl-кофе",
+              "ex-u5-indecl-кафе",
+              "ex-u5-indecl-меню"
+            ]
+          },
+          {
+            "id": "u5-st-teach-indeclinable-4",
+            "kind": "TEACH",
+            "title": "Contrast nouns that can change",
+            "body": "Contrast кни́га and окно́: these nouns are declinable, so they can change for case. Their nominative and genitive forms differ. Choose the behavior of the shown noun: unchanged for case or number, or able to change for case. No new form needs to be invented.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ]
+          },
+          {
+            "id": "u5-st-check-indeclinable",
+            "kind": "CHECK",
+            "title": "Independent noun classification",
+            "body": "Classify the shown noun by its case behavior. A miss returns to all four explanations and the retained examples.",
+            "itemIds": [
+              "u5-i-indecl-такси",
+              "u5-i-indecl-метро",
+              "u5-i-indecl-кино",
+              "u5-i-decl-книга",
+              "u5-i-decl-окно"
+            ],
+            "remediationStepId": "u5-st-rem-indeclinable"
+          }
+        ]
+      },
+      {
+        "id": "u5-s-book",
+        "title": "Self-attest Lesson 5",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u5-book"
+        ],
+        "steps": [
+          {
+            "id": "u5-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 5 in your copy",
+            "body": "Do Lesson 5 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.",
+            "referenceIds": [
+              "ref-book-topics",
+              "ref-u35-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 5: printed pages 46-55. PDF indexes 58-67 are file locators, not printed pages. Observed section locators: §5.1 p46 (PDF 58); §5.2 p46 (PDF 58); §5.3 p47 (PDF 59); §5.4 p47 (PDF 59); §5.5 p49 (PDF 61); §5.6 p49 (PDF 61); §5.7 p50 (PDF 62); §5.8 p50 (PDF 62); §5.9 p50 (PDF 62); §5.10 p51 (PDF 63); §5.11 p52 (PDF 64); §5.12 p52 (PDF 64). Observed exercise locators: 5/1 p54/PDF66; 5/2 p54/PDF66; 5/3 p54/PDF66; 5/4 p54/PDF66; 5/5 p54/PDF66. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u5-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 5 book work",
+            "body": "When you have done Lesson 5 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 5: printed pages 46-55. PDF indexes 58-67 are file locators, not printed pages. Observed section locators: §5.1 p46 (PDF 58); §5.2 p46 (PDF 58); §5.3 p47 (PDF 59); §5.4 p47 (PDF 59); §5.5 p49 (PDF 61); §5.6 p49 (PDF 61); §5.7 p50 (PDF 62); §5.8 p50 (PDF 62); §5.9 p50 (PDF 62); §5.10 p51 (PDF 63); §5.11 p52 (PDF 64); §5.12 p52 (PDF 64). Observed exercise locators: 5/1 p54/PDF66; 5/2 p54/PDF66; 5/3 p54/PDF66; 5/4 p54/PDF66; 5/5 p54/PDF66. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u5-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 5 AnkiDroid direction",
+            "body": "Unit 5 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u5-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 5 binder prompt",
+            "body": "Unit 5 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u5-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 5 optional tutor",
+            "body": "Unit 5 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u5-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 5 cumulative review",
+            "body": "Unit 5 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 5 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 14,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit5-prior-reading-subject-v1"
+    }
+  },
+  "items": [
+    {
+      "id": "u5-i-q-kto",
+      "kind": "SOURCE_QUESTION",
+      "language": "en",
+      "prompt": "Which admitted question word is recorded for this English purpose: Who?",
+      "promptLetter": "Кто",
+      "options": [
+        "Кто",
+        "Что",
+        "Когда",
+        "Почему",
+        "Как",
+        "Где"
+      ],
+      "answer": "Кто",
+      "feedback": "The frozen table records Кто for Who.",
+      "objectiveId": "obj-u5-questions",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "promptLetterRole": "ANSWER_REFERENCE"
+    },
+    {
+      "id": "u5-i-q-chto",
+      "kind": "SOURCE_QUESTION",
+      "language": "en",
+      "prompt": "Which admitted question word is recorded for this English purpose: What?",
+      "promptLetter": "Что",
+      "options": [
+        "Кто",
+        "Что",
+        "Когда",
+        "Почему",
+        "Как",
+        "Где"
+      ],
+      "answer": "Что",
+      "feedback": "The frozen table records Что for What.",
+      "objectiveId": "obj-u5-questions",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "promptLetterRole": "ANSWER_REFERENCE"
+    },
+    {
+      "id": "u5-i-q-kogda",
+      "kind": "SOURCE_QUESTION",
+      "language": "en",
+      "prompt": "Which admitted question word is recorded for this English purpose: When?",
+      "promptLetter": "Когда",
+      "options": [
+        "Кто",
+        "Что",
+        "Когда",
+        "Почему",
+        "Как",
+        "Где"
+      ],
+      "answer": "Когда",
+      "feedback": "The frozen table records Когда for When.",
+      "objectiveId": "obj-u5-questions",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "promptLetterRole": "ANSWER_REFERENCE"
+    },
+    {
+      "id": "u5-i-q-pochemu",
+      "kind": "SOURCE_QUESTION",
+      "language": "en",
+      "prompt": "Which admitted question word is recorded for this English purpose: Why?",
+      "promptLetter": "Почему",
+      "options": [
+        "Кто",
+        "Что",
+        "Когда",
+        "Почему",
+        "Как",
+        "Где"
+      ],
+      "answer": "Почему",
+      "feedback": "The frozen table records Почему for Why.",
+      "objectiveId": "obj-u5-questions",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "promptLetterRole": "ANSWER_REFERENCE"
+    },
+    {
+      "id": "u5-i-q-kak",
+      "kind": "SOURCE_QUESTION",
+      "language": "en",
+      "prompt": "Which admitted question word is recorded for this English purpose: How?",
+      "promptLetter": "Как",
+      "options": [
+        "Кто",
+        "Что",
+        "Когда",
+        "Почему",
+        "Как",
+        "Где"
+      ],
+      "answer": "Как",
+      "feedback": "The frozen table records Как for How.",
+      "objectiveId": "obj-u5-questions",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "promptLetterRole": "ANSWER_REFERENCE"
+    },
+    {
+      "id": "u5-i-q-gde",
+      "kind": "SOURCE_QUESTION",
+      "language": "en",
+      "prompt": "Which admitted question word is recorded for this English purpose: Where (location)?",
+      "promptLetter": "Где",
+      "options": [
+        "Кто",
+        "Что",
+        "Когда",
+        "Почему",
+        "Как",
+        "Где"
+      ],
+      "answer": "Где",
+      "feedback": "The frozen table records Где for Where (location).",
+      "objectiveId": "obj-u5-questions",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "promptLetterRole": "ANSWER_REFERENCE"
+    },
+    {
+      "id": "u5-i-pattern-pattern-chto-eto",
+      "kind": "SOURCE_QUESTION",
+      "language": "en",
+      "prompt": "Which admitted meaning is recorded for the shown written question?",
+      "promptLetter": "Что это?",
+      "options": [
+        "What is this?",
+        "Who is this?",
+        "How do you do?/How're things?",
+        "Where do you live?"
+      ],
+      "answer": "What is this?",
+      "feedback": "The frozen page records this meaning: What is this?. Written punctuation is not listening practice.",
+      "objectiveId": "obj-u5-questions",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-pattern-pattern-kto-eto",
+      "kind": "SOURCE_QUESTION",
+      "language": "en",
+      "prompt": "Which admitted meaning is recorded for the shown written question?",
+      "promptLetter": "Кто это?",
+      "options": [
+        "What is this?",
+        "Who is this?",
+        "How do you do?/How're things?",
+        "Where do you live?"
+      ],
+      "answer": "Who is this?",
+      "feedback": "The frozen page records this meaning: Who is this?. Written punctuation is not listening practice.",
+      "objectiveId": "obj-u5-questions",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-pattern-pattern-kak-dela",
+      "kind": "SOURCE_QUESTION",
+      "language": "en",
+      "prompt": "Which admitted meaning is recorded for the shown written question?",
+      "promptLetter": "Как дела?",
+      "options": [
+        "What is this?",
+        "Who is this?",
+        "How do you do?/How're things?",
+        "Where do you live?"
+      ],
+      "answer": "How do you do?/How're things?",
+      "feedback": "The frozen page records this meaning: How do you do?/How're things?. Written punctuation is not listening practice.",
+      "objectiveId": "obj-u5-questions",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-pattern-pattern-gde-zhivete",
+      "kind": "SOURCE_QUESTION",
+      "language": "en",
+      "prompt": "Which admitted meaning is recorded for the shown written question?",
+      "promptLetter": "Где вы живёте?",
+      "options": [
+        "What is this?",
+        "Who is this?",
+        "How do you do?/How're things?",
+        "Where do you live?"
+      ],
+      "answer": "Where do you live?",
+      "feedback": "The frozen page records this meaning: Where do you live?. Written punctuation is not listening practice.",
+      "objectiveId": "obj-u5-questions",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-prep-o-knige",
+      "kind": "SOURCE_CASE",
+      "language": "en",
+      "prompt": "Which admitted description is recorded for the shown example?",
+      "promptLetter": "О книге",
+      "options": [
+        "About the book",
+        "About the letter",
+        "About the garden",
+        "I'm in Moscow"
+      ],
+      "answer": "About the book",
+      "feedback": "The frozen page records this example as: About the book.",
+      "objectiveId": "obj-u5-prepositional",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-prep-o-pisme",
+      "kind": "SOURCE_CASE",
+      "language": "en",
+      "prompt": "Which admitted description is recorded for the shown example?",
+      "promptLetter": "О письме",
+      "options": [
+        "About the book",
+        "About the letter",
+        "About the garden",
+        "I'm in Moscow"
+      ],
+      "answer": "About the letter",
+      "feedback": "The frozen page records this example as: About the letter.",
+      "objectiveId": "obj-u5-prepositional",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-prep-o-sade",
+      "kind": "SOURCE_CASE",
+      "language": "en",
+      "prompt": "Which admitted description is recorded for the shown example?",
+      "promptLetter": "О саде",
+      "options": [
+        "About the book",
+        "About the letter",
+        "About the garden",
+        "I'm in Moscow"
+      ],
+      "answer": "About the garden",
+      "feedback": "The frozen page records this example as: About the garden.",
+      "objectiveId": "obj-u5-prepositional",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-prep-v-moskve",
+      "kind": "SOURCE_CASE",
+      "language": "en",
+      "prompt": "Which admitted description is recorded for the shown example?",
+      "promptLetter": "я в Москве",
+      "options": [
+        "About the book",
+        "About the letter",
+        "About the garden",
+        "I'm in Moscow"
+      ],
+      "answer": "I'm in Moscow",
+      "feedback": "The frozen page records this example as: I'm in Moscow.",
+      "objectiveId": "obj-u5-prepositional",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-prep-field-книга",
+      "kind": "SOURCE_FORM",
+      "language": "en",
+      "prompt": "Which string is the admitted second field, not the first field?",
+      "promptLetter": "кни́га",
+      "options": [
+        "кни́га",
+        "кни́ге"
+      ],
+      "answer": "кни́ге",
+      "feedback": "The frozen row lists that field as кни́ге.",
+      "objectiveId": "obj-u5-prepositional",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-prep-field-письмо",
+      "kind": "SOURCE_FORM",
+      "language": "en",
+      "prompt": "Which string is the admitted second field, not the first field?",
+      "promptLetter": "письмо́",
+      "options": [
+        "письмо́",
+        "письме́"
+      ],
+      "answer": "письме́",
+      "feedback": "The frozen row lists that field as письме́.",
+      "objectiveId": "obj-u5-prepositional",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-indecl-радио",
+      "kind": "SOURCE_INDECLINABLE",
+      "language": "en",
+      "prompt": "Which behavior applies to the shown noun?",
+      "promptLetter": "ра́дио",
+      "options": [
+        "Indeclinable: unchanged for case or number",
+        "Declinable: can change for case"
+      ],
+      "answer": "Indeclinable: unchanged for case or number",
+      "feedback": "ра́дио is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.",
+      "objectiveId": "obj-u5-indeclinable",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-indecl-такси",
+      "kind": "SOURCE_INDECLINABLE",
+      "language": "en",
+      "prompt": "Which behavior applies to the shown noun?",
+      "promptLetter": "такси́",
+      "options": [
+        "Indeclinable: unchanged for case or number",
+        "Declinable: can change for case"
+      ],
+      "answer": "Indeclinable: unchanged for case or number",
+      "feedback": "такси́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.",
+      "objectiveId": "obj-u5-indeclinable",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-indecl-метро",
+      "kind": "SOURCE_INDECLINABLE",
+      "language": "en",
+      "prompt": "Which behavior applies to the shown noun?",
+      "promptLetter": "метро́",
+      "options": [
+        "Indeclinable: unchanged for case or number",
+        "Declinable: can change for case"
+      ],
+      "answer": "Indeclinable: unchanged for case or number",
+      "feedback": "метро́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.",
+      "objectiveId": "obj-u5-indeclinable",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-indecl-кино",
+      "kind": "SOURCE_INDECLINABLE",
+      "language": "en",
+      "prompt": "Which behavior applies to the shown noun?",
+      "promptLetter": "кино́",
+      "options": [
+        "Indeclinable: unchanged for case or number",
+        "Declinable: can change for case"
+      ],
+      "answer": "Indeclinable: unchanged for case or number",
+      "feedback": "кино́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.",
+      "objectiveId": "obj-u5-indeclinable",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-decl-книга",
+      "kind": "SOURCE_INDECLINABLE",
+      "language": "en",
+      "prompt": "Which behavior applies to the shown noun?",
+      "promptLetter": "кни́га",
+      "options": [
+        "Indeclinable: unchanged for case or number",
+        "Declinable: can change for case"
+      ],
+      "answer": "Declinable: can change for case",
+      "feedback": "кни́га is declinable: it can change for case. Its nominative and genitive forms differ, so the unchanged behavior does not describe this noun.",
+      "objectiveId": "obj-u5-indeclinable",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    },
+    {
+      "id": "u5-i-decl-окно",
+      "kind": "SOURCE_INDECLINABLE",
+      "language": "en",
+      "prompt": "Which behavior applies to the shown noun?",
+      "promptLetter": "окно́",
+      "options": [
+        "Indeclinable: unchanged for case or number",
+        "Declinable: can change for case"
+      ],
+      "answer": "Declinable: can change for case",
+      "feedback": "окно́ is declinable: it can change for case. Its nominative and genitive forms differ, so the unchanged behavior does not describe this noun.",
+      "objectiveId": "obj-u5-indeclinable",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false
+    }
+  ],
+  "examples": [
+    {
+      "id": "ex-u5-q-kto",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Кто",
+      "note": "Who",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-q-chto",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Что",
+      "note": "What",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-q-kogda",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Когда",
+      "note": "When",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-q-pochemu",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Почему",
+      "note": "Why",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-q-kak",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Как",
+      "note": "How",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-q-gde",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Где",
+      "note": "Where (location)",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-q-kuda",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Куда",
+      "note": "Whither, where to",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-q-otkuda",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Откуда",
+      "note": "Whence, where from",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-q-skolko",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Сколько",
+      "note": "How much, how many",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-q-kakoy",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Какой",
+      "note": "What kind",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-pattern-pattern-chto-eto",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Что это?",
+      "note": "What is this?",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-pattern-pattern-kto-eto",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Кто это?",
+      "note": "Who is this?",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-pattern-pattern-kak-dela",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Как дела?",
+      "note": "How do you do?/How're things?",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-pattern-pattern-gde-zhivete",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Где вы живёте?",
+      "note": "Where do you live?",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-questions"
+    },
+    {
+      "id": "ex-u5-prep-o-knige",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "О книге",
+      "note": "About the book",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-prepositional"
+    },
+    {
+      "id": "ex-u5-prep-o-pisme",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "О письме",
+      "note": "About the letter",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-prepositional"
+    },
+    {
+      "id": "ex-u5-prep-o-sade",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "О саде",
+      "note": "About the garden",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-prepositional"
+    },
+    {
+      "id": "ex-u5-prep-v-moskve",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "я в Москве",
+      "note": "I'm in Moscow",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-prepositional"
+    },
+    {
+      "id": "ex-u5-prep-na-kryshe",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Он на крыше",
+      "note": "He's on the roof",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-prepositional"
+    },
+    {
+      "id": "ex-u5-prep-v-teatre",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Он в театре",
+      "note": "He is at the theatre",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-prepositional"
+    },
+    {
+      "id": "ex-u5-prep-na-stole",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Ваза стоит на столе.",
+      "note": "The vase stands on the table",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-prepositional"
+    },
+    {
+      "id": "ex-u5-prep-na-stene",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Картина висит на стене.",
+      "note": "The painting hangs on the wall",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-prepositional"
+    },
+    {
+      "id": "ex-u5-indecl-радио",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "ра́дио",
+      "note": "radio",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-indeclinable"
+    },
+    {
+      "id": "ex-u5-indecl-такси",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "такси́",
+      "note": "taxi",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-indeclinable"
+    },
+    {
+      "id": "ex-u5-indecl-метро",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "метро́",
+      "note": "metro",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-indeclinable"
+    },
+    {
+      "id": "ex-u5-indecl-кино",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "кино́",
+      "note": "cinema",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-indeclinable"
+    },
+    {
+      "id": "ex-u5-indecl-пальто",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "пальто́",
+      "note": "coat",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-indeclinable"
+    },
+    {
+      "id": "ex-u5-indecl-кофе",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "ко́фе",
+      "note": "coffee",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-indeclinable"
+    },
+    {
+      "id": "ex-u5-indecl-кафе",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "кафе́",
+      "note": "café",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-indeclinable"
+    },
+    {
+      "id": "ex-u5-indecl-меню",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "меню́",
+      "note": "menu",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u5-indeclinable"
+    }
+  ],
+  "sourceCapabilities": []
+}

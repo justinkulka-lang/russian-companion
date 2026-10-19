@@ -1,5 +1,7 @@
 # Codex continuation
 
+Current same-chat audit continuation: [copy/paste prompt](audit/gpt61-sol-high-comprehensive-2026-10-19/continuation/COPY_PASTE_PROMPT.md). Lossless raw-bound supplement supplies all previously unread curriculum data;updated12originals plus4continuation outputs are requested. This is input preparation,not audit completion or code fixes. Target remains5c176eb2;physical acceptance stays LAST.
+
 Latest returned current-target audit: [receipt and next review](audit/gpt61-sol-high-comprehensive-2026-10-19/received-results/2026-10-19-fa532fe6/NEXT_REVIEW.md). All twelve originals received,10package-local CC findings(4HIGH/6MEDIUM),INCOMPLETE;do not confuse with historical nine-file audit or missing Claude results. Raw target pack is locally available and receipt static observations are separate from external inspection.
 
 Current NEW independent audit request: [GPT-6.1 Sol / High start prompt](audit/gpt61-sol-high-comprehensive-2026-10-19/COPY_PASTE_PROMPT.md), pinned target `5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed`. Read that directory's twelve-deliverable specification and RETURN_AND_CHECKPOINT.md. The missing Claude results remain unavailable;this is a fresh diagnostic audit,not formal stage approval. Publish audit artifacts only to PR64 before ending the audit session. Private reference access is included;physical acceptance remains LAST.

@@ -1,0 +1,899 @@
+[
+  {
+    "itemId": "prov-ca-repair-27-10913",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-present-passive",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u27-i-stress-1",
+    "shippedText": "обсуждаемы́й",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3779bce7027ffe715bc25b75ab37ab1c0b6284f73466ea75528c32b0b981b29e",
+    "contentHash": "fd7651048acb2aa7f8392dc2d616a8ce3669f78e176b8805b9f864d861ad3912",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-present-passive:STRESS_OBSUZHDAEMY",
+      "applications": [
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nthe present passive of обсуждать\nобсужда́емый\nWhich stress placement is admitted for the discuss present passive?\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nобсуждать"
+  },
+  {
+    "itemId": "prov-ca-repair-27-10914",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-present-passive",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u27-i-stress-1",
+    "shippedText": "Rejected reading: обсуждаемы́й",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3779bce7027ffe715bc25b75ab37ab1c0b6284f73466ea75528c32b0b981b29e",
+    "contentHash": "d844f0b82f225fe9747213268742327162dd861917cf28d81de39e942d062d51",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-present-passive:STRESS_OBSUZHDAEMY",
+      "applications": [
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nthe present passive of обсуждать\nобсужда́емый\nWhich stress placement is admitted for the discuss present passive?\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nобсуждать"
+  },
+  {
+    "itemId": "prov-ca-repair-27-10915",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-present-passive",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u27-i-stress-1",
+    "shippedText": "обсуждать",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3779bce7027ffe715bc25b75ab37ab1c0b6284f73466ea75528c32b0b981b29e",
+    "contentHash": "cfb0df3d5aefe98fab8f2359d2716c02e6351161b57dc418a6365dbfa10ffd92",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-present-passive:STRESS_OBSUZHDAEMY",
+      "applications": [
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nthe present passive of обсуждать\nобсужда́емый\nWhich stress placement is admitted for the discuss present passive?\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nобсуждать"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10916",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-2",
+    "shippedText": "читая письмо, он улыбался",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "19bd35602e1f243c2595ecf597b2bb2ecc31ec09fd50ad54525fe28d472d9fab",
+    "contentHash": "e0f69dcd15808956002d59ebc13d6656f73f1591b3897b3545f64f7c9a56fe05",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nчитая письмо,\nчитая письмо\nон улыбался\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10917",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "meaning",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-2",
+    "shippedText": "the reader and the person smiling are the same person",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "19bd35602e1f243c2595ecf597b2bb2ecc31ec09fd50ad54525fe28d472d9fab",
+    "contentHash": "c62ca07fa2c644a0846f209e636d6b0d3c6438f4069ced7e858b5c62afef2e8c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nчитая письмо,\nчитая письмо\nон улыбался\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10918",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-2",
+    "shippedText": "Which English description identifies the shared subject?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "19bd35602e1f243c2595ecf597b2bb2ecc31ec09fd50ad54525fe28d472d9fab",
+    "contentHash": "083199fd5245906e8528cc3c42dce18dff5b964e603e3a0084982e2180e4a1c3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nчитая письмо,\nчитая письмо\nон улыбался\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10919",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-2",
+    "shippedText": "In читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "19bd35602e1f243c2595ecf597b2bb2ecc31ec09fd50ad54525fe28d472d9fab",
+    "contentHash": "6d5fb62b2f1c88187c4e5326313307f4ccd4f21fd61e21d77cc8958a06e137e2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nчитая письмо,\nчитая письмо\nон улыбался\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10920",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-2",
+    "shippedText": "two unrelated people perform the actions",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "19bd35602e1f243c2595ecf597b2bb2ecc31ec09fd50ad54525fe28d472d9fab",
+    "contentHash": "3d9e42c1a7d3c64316d526cb765f609fa04c9cadf4e11445084cb8bdacb5c1ff",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nчитая письмо,\nчитая письмо\nон улыбался\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10921",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-2",
+    "shippedText": "the sentence omits its main subject",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "19bd35602e1f243c2595ecf597b2bb2ecc31ec09fd50ad54525fe28d472d9fab",
+    "contentHash": "6899ab488dae0e35c4180ce49878a77b151a15a35c25ea2c9921ad5707e1db3e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nчитая письмо,\nчитая письмо\nон улыбался\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10922",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-2",
+    "shippedText": "two unrelated people perform the actions is not the shared-subject construction shown here.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "19bd35602e1f243c2595ecf597b2bb2ecc31ec09fd50ad54525fe28d472d9fab",
+    "contentHash": "1e721e763933adbd62a061262fc84cf4088a92aced77496182a4e743397d469d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nчитая письмо,\nчитая письмо\nон улыбался\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10923",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-2",
+    "shippedText": "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "19bd35602e1f243c2595ecf597b2bb2ecc31ec09fd50ad54525fe28d472d9fab",
+    "contentHash": "5018f0afaa9ec8dc3a93cb5893d589ef73203bcc3fb12dd5e37adc5d1a281e03",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nчитая письмо,\nчитая письмо\nон улыбался\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10924",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-2",
+    "shippedText": "читая письмо,",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "19bd35602e1f243c2595ecf597b2bb2ecc31ec09fd50ad54525fe28d472d9fab",
+    "contentHash": "bc8a82f438b620d41da3b6146458646b38c351a0b25f4cebfcaa48c2022936e3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nчитая письмо,\nчитая письмо\nон улыбался\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10925",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-2",
+    "shippedText": "читая письмо",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "19bd35602e1f243c2595ecf597b2bb2ecc31ec09fd50ad54525fe28d472d9fab",
+    "contentHash": "22c5f2a388ee4b35cf2f6779e464d88700c0b909a9cac1878192925aec1195d9",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nчитая письмо,\nчитая письмо\nон улыбался\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10926",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-2",
+    "shippedText": "он улыбался",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "19bd35602e1f243c2595ecf597b2bb2ecc31ec09fd50ad54525fe28d472d9fab",
+    "contentHash": "00121d5abbcd5714332489bc6e0fde6fc03f60b47e44bee2fb50dba5f595097b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nчитая письмо,\nчитая письмо\nон улыбался\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10927",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-2",
+    "shippedText": "он улыбался,",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "19bd35602e1f243c2595ecf597b2bb2ecc31ec09fd50ad54525fe28d472d9fab",
+    "contentHash": "8c01ba65bd6de3b01ab8447e4c4c8f844a2bb1576a0fbc63fbb575158bb0ede1",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "the reader and the person smiling are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nthe reader and the person smiling are the same person\nWhich English description identifies the shared subject?\nIn читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nчитая письмо,\nчитая письмо\nон улыбался\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10928",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-perfective-adverb-2",
+    "shippedText": "написав письмо, она отправит его завтра",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "99112444900f940e301401e5680f0236c9a1f18fbccc9101eda85db0f5ede581",
+    "contentHash": "2cc5503c228ef7606d1a7e02047d2070958add0a22cdd0ed69d8e3c21393a2c7",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nнаписав письмо, она отправит его завтра\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nнаписав письмо,\nнаписав письмо\nона отправит его завтра\nона отправит его завтра,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10929",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "meaning",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-perfective-adverb-2",
+    "shippedText": "the writer and sender are the same person",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "99112444900f940e301401e5680f0236c9a1f18fbccc9101eda85db0f5ede581",
+    "contentHash": "e3d5910aab607e21a6a9c5b3e6fd1e60cadd0b6527dc76962f595d7797f68f74",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nнаписав письмо, она отправит его завтра\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nнаписав письмо,\nнаписав письмо\nона отправит его завтра\nона отправит его завтра,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10930",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-perfective-adverb-2",
+    "shippedText": "Which English description identifies the shared subject?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "99112444900f940e301401e5680f0236c9a1f18fbccc9101eda85db0f5ede581",
+    "contentHash": "083199fd5245906e8528cc3c42dce18dff5b964e603e3a0084982e2180e4a1c3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nнаписав письмо, она отправит его завтра\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nнаписав письмо,\nнаписав письмо\nона отправит его завтра\nона отправит его завтра,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10931",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-perfective-adverb-2",
+    "shippedText": "In написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "99112444900f940e301401e5680f0236c9a1f18fbccc9101eda85db0f5ede581",
+    "contentHash": "34682421df30ff21d6e07bcad11118e9a978c5d87a8a66e0a45a68c1c85a5aab",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nнаписав письмо, она отправит его завтра\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nнаписав письмо,\nнаписав письмо\nона отправит его завтра\nона отправит его завтра,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10932",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-perfective-adverb-2",
+    "shippedText": "two unrelated people perform the actions",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "99112444900f940e301401e5680f0236c9a1f18fbccc9101eda85db0f5ede581",
+    "contentHash": "3d9e42c1a7d3c64316d526cb765f609fa04c9cadf4e11445084cb8bdacb5c1ff",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nнаписав письмо, она отправит его завтра\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nнаписав письмо,\nнаписав письмо\nона отправит его завтра\nона отправит его завтра,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10933",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-perfective-adverb-2",
+    "shippedText": "the sentence omits its main subject",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "99112444900f940e301401e5680f0236c9a1f18fbccc9101eda85db0f5ede581",
+    "contentHash": "6899ab488dae0e35c4180ce49878a77b151a15a35c25ea2c9921ad5707e1db3e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nнаписав письмо, она отправит его завтра\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nнаписав письмо,\nнаписав письмо\nона отправит его завтра\nона отправит его завтра,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10934",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-perfective-adverb-2",
+    "shippedText": "two unrelated people perform the actions is not the shared-subject construction shown here.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "99112444900f940e301401e5680f0236c9a1f18fbccc9101eda85db0f5ede581",
+    "contentHash": "1e721e763933adbd62a061262fc84cf4088a92aced77496182a4e743397d469d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nнаписав письмо, она отправит его завтра\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nнаписав письмо,\nнаписав письмо\nона отправит его завтра\nона отправит его завтра,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10935",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-perfective-adverb-2",
+    "shippedText": "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "99112444900f940e301401e5680f0236c9a1f18fbccc9101eda85db0f5ede581",
+    "contentHash": "5018f0afaa9ec8dc3a93cb5893d589ef73203bcc3fb12dd5e37adc5d1a281e03",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nнаписав письмо, она отправит его завтра\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nнаписав письмо,\nнаписав письмо\nона отправит его завтра\nона отправит его завтра,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10936",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-perfective-adverb-2",
+    "shippedText": "написав письмо,",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "99112444900f940e301401e5680f0236c9a1f18fbccc9101eda85db0f5ede581",
+    "contentHash": "ef38d0e6ec529354dae1a3b238def0fce9870adfb7ac8f32a89587df63a4ddbc",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nнаписав письмо, она отправит его завтра\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nнаписав письмо,\nнаписав письмо\nона отправит его завтра\nона отправит его завтра,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10937",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-perfective-adverb-2",
+    "shippedText": "написав письмо",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "99112444900f940e301401e5680f0236c9a1f18fbccc9101eda85db0f5ede581",
+    "contentHash": "bdae96799e931c4760fafcc9a0321dcdef3f4cba5a55233b752409a1937317eb",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:VERBAL_ADVERB_SHARED_SUBJECT",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nнаписав письмо, она отправит его завтра\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.\nнаписав письмо,\nнаписав письмо\nона отправит его завтра\nона отправит его завтра,"
+  }
+]

@@ -1,0 +1,2150 @@
+[
+  {
+    "id": "u11-g-reflexive-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted row is the feminine past?",
+    "promptLetter": "улыба́лся",
+    "options": [
+      "улыба́лась",
+      "улыба́лись",
+      "улыба́ться"
+    ],
+    "answer": "улыба́лась",
+    "feedback": "улыба́лась is the feminine past form for a singular subject of the verb meaning to smile. улыба́лись is plural past, while улыба́ться is the infinitive, not a past form. The reflexive ending remains on the past verb; choose feminine singular agreement.",
+    "objectiveId": "obj-u11-reflexive",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "улыба́лись is plural past, not feminine singular.",
+      "улыба́ться is the infinitive meaning to smile, not a past-tense form."
+    ],
+    "assessment": {
+      "testedFeature": "FEMININE_PAST",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u11-reflexive-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u11-reflexive-2"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u11-reflexive-3",
+        "prov-ex-or-u11-reflexive-0"
+      ],
+      "distractorDifference": [
+        "",
+        "улыба́лись is plural past, not feminine singular.",
+        "улыба́ться is the infinitive meaning to smile, not a past-tense form."
+      ],
+      "whyAnswerDemonstratesObjective": "улыба́лась is the feminine past form for a singular subject of the verb meaning to smile. улыба́лись is plural past, while улыба́ться is the infinitive, not a past form. The reflexive ending remains on the past verb; choose feminine singular agreement.",
+      "contrastMembers": [
+        "улыба́лась",
+        "улыба́лись",
+        "улыба́ться"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u11-reflexive-1",
+        "prov-ex-or-u11-reflexive-2",
+        "prov-ex-or-u11-reflexive-3",
+        "prov-ex-or-u11-reflexive-0"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u11-i-reflexive-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the feminine past?",
+    "promptLetter": "Он улыба́лся",
+    "options": [
+      "Она улыба́лась",
+      "Они улыба́лись"
+    ],
+    "answer": "Она улыба́лась",
+    "feedback": "Она улыба́лась means she was smiling, with feminine past agreement between the singular subject and verb. Они улыба́лись means they were smiling and has plural agreement. Both verbs keep their reflexive ending, but only the first line is feminine singular.",
+    "objectiveId": "obj-u11-reflexive",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Они улыба́лись has a plural subject and plural past verb, rather than feminine singular agreement."
+    ],
+    "assessment": {
+      "testedFeature": "FEMININE_PAST",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u11-reflexive-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u11-reflexive-5-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u11-reflexive-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "Они улыба́лись has a plural subject and plural past verb, rather than feminine singular agreement."
+      ],
+      "whyAnswerDemonstratesObjective": "Она улыба́лась means she was smiling, with feminine past agreement between the singular subject and verb. Они улыба́лись means they were smiling and has plural agreement. Both verbs keep their reflexive ending, but only the first line is feminine singular.",
+      "contrastMembers": [
+        "Она улыба́лась",
+        "Они улыба́лись"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u11-reflexive-4-ru",
+        "prov-ex-u11-reflexive-5-ru",
+        "prov-u11-reflexive-x-0"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u11-i-reflexive-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted row is the feminine past?",
+    "promptLetter": "учи́лся",
+    "options": [
+      "учи́лась",
+      "учи́лись"
+    ],
+    "answer": "учи́лась",
+    "feedback": "учи́лась is the feminine past form for a singular subject of the verb meaning to study. учи́лись is plural past. Both retain the reflexive ending, so that ending alone does not distinguish them; the question requires feminine singular agreement.",
+    "objectiveId": "obj-u11-reflexive",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "учи́лись is plural past, not feminine singular."
+    ],
+    "assessment": {
+      "testedFeature": "FEMININE_PAST",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u11-reflexive-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u11-reflexive-7"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u11-reflexive-8"
+      ],
+      "distractorDifference": [
+        "",
+        "учи́лись is plural past, not feminine singular."
+      ],
+      "whyAnswerDemonstratesObjective": "учи́лась is the feminine past form for a singular subject of the verb meaning to study. учи́лись is plural past. Both retain the reflexive ending, so that ending alone does not distinguish them; the question requires feminine singular agreement.",
+      "contrastMembers": [
+        "учи́лась",
+        "учи́лись"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u11-reflexive-6",
+        "prov-ex-or-u11-reflexive-7",
+        "prov-ex-or-u11-reflexive-8"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u12-g-future-imp-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the first-person plural future?",
+    "promptLetter": "We will be speaking",
+    "options": [
+      "Мы бу́дем говори́ть",
+      "Я бу́ду говори́ть"
+    ],
+    "answer": "Мы бу́дем говори́ть",
+    "feedback": "Мы бу́дем говори́ть is the first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.",
+    "objectiveId": "obj-u12-future-imp",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Я бу́ду говори́ть has a first-person singular subject and auxiliary, rather than the requested first-person plural future."
+    ],
+    "assessment": {
+      "testedFeature": "FIRST_PERSON_PLURAL_FUTURE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u12-future-imp-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u12-future-imp-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u12-future-imp-0-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Я бу́ду говори́ть has a first-person singular subject and auxiliary, rather than the requested first-person plural future."
+      ],
+      "whyAnswerDemonstratesObjective": "Мы бу́дем говори́ть is the first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. Both use a future auxiliary plus the same imperfective infinitive; choose the plural line requested here.",
+      "contrastMembers": [
+        "Мы бу́дем говори́ть",
+        "Я бу́ду говори́ть"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u12-future-imp-1-en",
+        "prov-ex-u12-future-imp-1-ru",
+        "prov-ex-u12-future-imp-0-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u12-i-future-imp-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the first-person singular future?",
+    "promptLetter": "I will be speaking",
+    "options": [
+      "Я бу́ду говори́ть",
+      "Мы бу́дем говори́ть"
+    ],
+    "answer": "Я бу́ду говори́ть",
+    "feedback": "Я бу́ду говори́ть is the first-person singular future: the subject means I, and the future auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. The imperfective infinitive stays the same while the subject and auxiliary change.",
+    "objectiveId": "obj-u12-future-imp",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Мы бу́дем говори́ть has a first-person plural subject and auxiliary, rather than the requested first-person singular future."
+    ],
+    "assessment": {
+      "testedFeature": "FIRST_PERSON_SINGULAR_FUTURE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u12-future-imp-1",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u12-future-imp-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u12-future-imp-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Мы бу́дем говори́ть has a first-person plural subject and auxiliary, rather than the requested first-person singular future."
+      ],
+      "whyAnswerDemonstratesObjective": "Я бу́ду говори́ть is the first-person singular future: the subject means I, and the future auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. The imperfective infinitive stays the same while the subject and auxiliary change.",
+      "contrastMembers": [
+        "Я бу́ду говори́ть",
+        "Мы бу́дем говори́ть"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u12-future-imp-0-en",
+        "prov-ex-u12-future-imp-0-ru",
+        "prov-ex-u12-future-imp-1-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u12-i-future-imp-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the second-person plural future?",
+    "promptLetter": "Ты бу́дешь говори́ть",
+    "options": [
+      "Вы бу́дете говори́ть",
+      "Я бу́ду говори́ть"
+    ],
+    "answer": "Вы бу́дете говори́ть",
+    "feedback": "Вы бу́дете говори́ть is the second-person plural future row: the auxiliary agrees with you in that row. This form can also address one person politely. Я бу́ду говори́ть is first-person singular and changes the person as well as the table number. The same imperfective infinitive follows each auxiliary.",
+    "objectiveId": "obj-u12-future-imp",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Я бу́ду говори́ть is first-person singular future, not the requested second-person plural future row."
+    ],
+    "assessment": {
+      "testedFeature": "SECOND_PERSON_PLURAL_FUTURE",
+      "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "contrastSetId": "u12-future-imp-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u12-future-imp-x-0"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u12-future-imp-0-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Я бу́ду говори́ть is first-person singular future, not the requested second-person plural future row."
+      ],
+      "whyAnswerDemonstratesObjective": "Вы бу́дете говори́ть is the second-person plural future row: the auxiliary agrees with you in that row. This form can also address one person politely. Я бу́ду говори́ть is first-person singular and changes the person as well as the table number. The same imperfective infinitive follows each auxiliary.",
+      "contrastMembers": [
+        "Вы бу́дете говори́ть",
+        "Я бу́ду говори́ть"
+      ],
+      "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "relationParticipantIds": [
+        "prov-ex-u12-future-imp-2-ru",
+        "prov-u12-future-imp-x-0",
+        "prov-ex-u12-future-imp-0-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u12-g-future-perf-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the first-person plural future?",
+    "promptLetter": "We will speak",
+    "options": [
+      "Мы ска́жем",
+      "Я скажу́"
+    ],
+    "answer": "Мы ска́жем",
+    "feedback": "Мы ска́жем is the first-person plural future of the perfective verb in this table, agreeing with we. Я скажу́ is first-person singular, agreeing with I. These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.",
+    "objectiveId": "obj-u12-future-perf",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Я скажу́ is first-person singular future, not first-person plural future."
+    ],
+    "assessment": {
+      "testedFeature": "FIRST_PERSON_PLURAL_FUTURE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u12-future-perf-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u12-future-perf-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u12-future-perf-0-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Я скажу́ is first-person singular future, not first-person plural future."
+      ],
+      "whyAnswerDemonstratesObjective": "Мы ска́жем is the first-person plural future of the perfective verb in this table, agreeing with we. Я скажу́ is first-person singular, agreeing with I. These perfective future options use a single conjugated verb without a separate future auxiliary; choose the plural line.",
+      "contrastMembers": [
+        "Мы ска́жем",
+        "Я скажу́"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u12-future-perf-1-en",
+        "prov-ex-u12-future-perf-1-ru",
+        "prov-ex-u12-future-perf-0-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u12-i-future-perf-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted row is the first-person plural future?",
+    "promptLetter": "скажу́",
+    "options": [
+      "ска́жем",
+      "ска́жешь"
+    ],
+    "answer": "ска́жем",
+    "feedback": "ска́жем is the first-person plural future form of this perfective verb, used with we. ска́жешь is second-person singular, used with singular informal you. The cue shows first-person singular, but the requested table row is first-person plural.",
+    "objectiveId": "obj-u12-future-perf",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "ска́жешь is second-person singular future, rather than the first-person plural future requested here."
+    ],
+    "assessment": {
+      "testedFeature": "FIRST_PERSON_PLURAL_FUTURE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u12-future-perf-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u12-future-perf-3"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u12-future-perf-4"
+      ],
+      "distractorDifference": [
+        "",
+        "ска́жешь is second-person singular future, rather than the first-person plural future requested here."
+      ],
+      "whyAnswerDemonstratesObjective": "ска́жем is the first-person plural future form of this perfective verb, used with we. ска́жешь is second-person singular, used with singular informal you. The cue shows first-person singular, but the requested table row is first-person plural.",
+      "contrastMembers": [
+        "ска́жем",
+        "ска́жешь"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u12-future-perf-2",
+        "prov-ex-or-u12-future-perf-3",
+        "prov-ex-or-u12-future-perf-4"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u12-i-future-perf-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the first-person singular future?",
+    "promptLetter": "I will speak",
+    "options": [
+      "Я скажу́",
+      "Мы ска́жем"
+    ],
+    "answer": "Я скажу́",
+    "feedback": "Я скажу́ is the first-person singular future of the perfective verb in the table, agreeing with I. Мы ска́жем is first-person plural, agreeing with we. Both refer to the future with a single conjugated perfective verb; the question asks for one speaker.",
+    "objectiveId": "obj-u12-future-perf",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Мы ска́жем is first-person plural future, not first-person singular future."
+    ],
+    "assessment": {
+      "testedFeature": "FIRST_PERSON_SINGULAR_FUTURE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u12-future-perf-2",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u12-future-perf-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u12-future-perf-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Мы ска́жем is first-person plural future, not first-person singular future."
+      ],
+      "whyAnswerDemonstratesObjective": "Я скажу́ is the first-person singular future of the perfective verb in the table, agreeing with I. Мы ска́жем is first-person plural, agreeing with we. Both refer to the future with a single conjugated perfective verb; the question asks for one speaker.",
+      "contrastMembers": [
+        "Я скажу́",
+        "Мы ска́жем"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u12-future-perf-0-en",
+        "prov-ex-u12-future-perf-0-ru",
+        "prov-ex-u12-future-perf-1-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u12-g-aspect-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "For the saying/telling pair shown here, which verb is the perfective partner?",
+    "promptLetter": "говори́ть",
+    "options": [
+      "сказа́ть",
+      "де́лать"
+    ],
+    "answer": "сказа́ть",
+    "feedback": "сказа́ть is the perfective partner of говори́ть in the saying/telling pair shown here.",
+    "objectiveId": "obj-u12-aspect",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "де́лать is imperfective and concerns doing/making, not this saying/telling partner."
+    ],
+    "assessment": {
+      "testedFeature": "PERFECTIVE_PARTNER",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u12-aspect-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u12-aspect-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u12-aspect-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "де́лать is imperfective and concerns doing/making, not this saying/telling partner."
+      ],
+      "whyAnswerDemonstratesObjective": "сказа́ть is the perfective partner of говори́ть in the saying/telling pair shown here.",
+      "contrastMembers": [
+        "сказа́ть",
+        "де́лать"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u12-aspect-0-ru",
+        "prov-ex-u12-aspect-1-ru",
+        "prov-ex-u12-aspect-2-ru"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u12-i-aspect-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "For the saying/telling pair shown here, which verb is the imperfective partner?",
+    "promptLetter": "сказа́ть",
+    "options": [
+      "говори́ть",
+      "сде́лать"
+    ],
+    "answer": "говори́ть",
+    "feedback": "говори́ть is the imperfective partner of сказа́ть in the saying/telling pair shown here.",
+    "objectiveId": "obj-u12-aspect",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "сде́лать is perfective and concerns doing/making, not this saying/telling partner."
+    ],
+    "assessment": {
+      "testedFeature": "IMPERFECTIVE_PARTNER",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u12-aspect-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u12-aspect-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u12-aspect-3-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "сде́лать is perfective and concerns doing/making, not this saying/telling partner."
+      ],
+      "whyAnswerDemonstratesObjective": "говори́ть is the imperfective partner of сказа́ть in the saying/telling pair shown here.",
+      "contrastMembers": [
+        "говори́ть",
+        "сде́лать"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u12-aspect-1-ru",
+        "prov-ex-u12-aspect-0-ru",
+        "prov-ex-u12-aspect-3-ru"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u12-i-aspect-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "For the doing/making pair shown here, which verb is the perfective partner?",
+    "promptLetter": "де́лать",
+    "options": [
+      "сде́лать",
+      "говори́ть"
+    ],
+    "answer": "сде́лать",
+    "feedback": "сде́лать is the perfective partner of де́лать in the doing/making pair shown here.",
+    "objectiveId": "obj-u12-aspect",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "говори́ть is imperfective and concerns speaking/saying, not this doing/making partner."
+    ],
+    "assessment": {
+      "testedFeature": "PERFECTIVE_PARTNER",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u12-aspect-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u12-aspect-3-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u12-aspect-0-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "говори́ть is imperfective and concerns speaking/saying, not this doing/making partner."
+      ],
+      "whyAnswerDemonstratesObjective": "сде́лать is the perfective partner of де́лать in the doing/making pair shown here.",
+      "contrastMembers": [
+        "сде́лать",
+        "говори́ть"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u12-aspect-2-ru",
+        "prov-ex-u12-aspect-3-ru",
+        "prov-ex-u12-aspect-0-ru"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u12-g-dative-0",
+    "kind": "CASE_RECOGNITION",
+    "language": "en",
+    "prompt": "Which admitted row is the dative singular?",
+    "promptLetter": "кни́га",
+    "options": [
+      "кни́ге",
+      "кни́ги"
+    ],
+    "answer": "кни́ге",
+    "feedback": "кни́ге is the recorded dative singular form of кни́га. кни́ги is the nominative plural option supplied here, so it changes the number and table row. This question asks for the dative singular row; the same spelling as the answer can also be prepositional singular in a sentence.",
+    "objectiveId": "obj-u12-dative",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "кни́ги is the nominative plural option supplied here, not the requested dative singular table row."
+    ],
+    "assessment": {
+      "testedFeature": "DATIVE_SINGULAR",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u12-dative-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u12-dative-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u12-dative-2"
+      ],
+      "distractorDifference": [
+        "",
+        "кни́ги is the nominative plural option supplied here, not the requested dative singular table row."
+      ],
+      "whyAnswerDemonstratesObjective": "кни́ге is the recorded dative singular form of кни́га. кни́ги is the nominative plural option supplied here, so it changes the number and table row. This question asks for the dative singular row; the same spelling as the answer can also be prepositional singular in a sentence.",
+      "contrastMembers": [
+        "кни́ге",
+        "кни́ги"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u12-dative-0",
+        "prov-ex-or-u12-dative-1",
+        "prov-ex-or-u12-dative-2"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u12-i-dative-1",
+    "kind": "CASE_RECOGNITION",
+    "language": "en",
+    "prompt": "Which admitted row is the dative singular?",
+    "promptLetter": "сто́л",
+    "options": [
+      "столу́",
+      "столы́"
+    ],
+    "answer": "столу́",
+    "feedback": "столу́ is the recorded dative singular form of сто́л. столы́ is the nominative plural option supplied here. Keep the noun singular and select its dative row, rather than selecting the plural nominative row.",
+    "objectiveId": "obj-u12-dative",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "столы́ is nominative plural, not the requested dative singular."
+    ],
+    "assessment": {
+      "testedFeature": "DATIVE_SINGULAR",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u12-dative-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u12-dative-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u12-dative-5"
+      ],
+      "distractorDifference": [
+        "",
+        "столы́ is nominative plural, not the requested dative singular."
+      ],
+      "whyAnswerDemonstratesObjective": "столу́ is the recorded dative singular form of сто́л. столы́ is the nominative plural option supplied here. Keep the noun singular and select its dative row, rather than selecting the plural nominative row.",
+      "contrastMembers": [
+        "столу́",
+        "столы́"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u12-dative-3",
+        "prov-ex-or-u12-dative-4",
+        "prov-ex-or-u12-dative-5"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u12-i-dative-2",
+    "kind": "CASE_RECOGNITION",
+    "language": "en",
+    "prompt": "Which admitted row is the dative singular?",
+    "promptLetter": "до́м",
+    "options": [
+      "до́му",
+      "дома́"
+    ],
+    "answer": "до́му",
+    "feedback": "до́му is the recorded dative singular form of до́м. дома́ is the nominative plural option supplied here. The requested row changes case while keeping the noun singular; the plural option changes number instead.",
+    "objectiveId": "obj-u12-dative",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "дома́ is nominative plural, not the requested dative singular."
+    ],
+    "assessment": {
+      "testedFeature": "DATIVE_SINGULAR",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u12-dative-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u12-dative-7"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u12-dative-8"
+      ],
+      "distractorDifference": [
+        "",
+        "дома́ is nominative plural, not the requested dative singular."
+      ],
+      "whyAnswerDemonstratesObjective": "до́му is the recorded dative singular form of до́м. дома́ is the nominative plural option supplied here. The requested row changes case while keeping the noun singular; the plural option changes number instead.",
+      "contrastMembers": [
+        "до́му",
+        "дома́"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u12-dative-6",
+        "prov-ex-or-u12-dative-7",
+        "prov-ex-or-u12-dative-8"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u12-g-spelling-0",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which admitted line is the accepted spelling rather than the rejected example?",
+    "promptLetter": "the good letter",
+    "options": [
+      "хорошее письмо",
+      "хорошое письмо"
+    ],
+    "answer": "хорошее письмо",
+    "feedback": "хорошее письмо is the accepted spelling in the source example. The adjective stem ends in the consonant transliterated sh; its unstressed neuter ending uses e rather than o under the five-letter spelling rule. хорошое письмо is the rejected counterexample and should not be used as correct Russian.",
+    "objectiveId": "obj-u12-spelling",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хорошое письмо is the rejected spelling: it uses o where this unstressed adjective ending requires e."
+    ],
+    "assessment": {
+      "testedFeature": "ACCEPTED_SPELLING",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u12-spelling-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u12-spelling-3-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u12-spelling-rem-r6"
+      ],
+      "distractorDifference": [
+        "",
+        "хорошое письмо is the rejected spelling: it uses o where this unstressed adjective ending requires e."
+      ],
+      "whyAnswerDemonstratesObjective": "хорошее письмо is the accepted spelling in the source example. The adjective stem ends in the consonant transliterated sh; its unstressed neuter ending uses e rather than o under the five-letter spelling rule. хорошое письмо is the rejected counterexample and should not be used as correct Russian.",
+      "contrastMembers": [
+        "хорошее письмо",
+        "хорошое письмо"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u12-spelling-3-en",
+        "prov-ex-u12-spelling-3-ru",
+        "prov-u12-spelling-rem-r6"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u12-i-spelling-1",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which admitted row is the neuter form?",
+    "promptLetter": "хоро́ший",
+    "options": [
+      "хоро́шее",
+      "хоро́шая"
+    ],
+    "answer": "хоро́шее",
+    "feedback": "хоро́шее is the nominative singular neuter form of this adjective. хоро́шая is feminine singular. The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.",
+    "objectiveId": "obj-u12-spelling",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шая is feminine singular, not the requested neuter form."
+    ],
+    "assessment": {
+      "testedFeature": "NEUTER_FORM",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u12-spelling-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u12-spelling-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u12-spelling-2"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шая is feminine singular, not the requested neuter form."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́шее is the nominative singular neuter form of this adjective. хоро́шая is feminine singular. The adjective agrees with the gender of the noun it modifies; the neuter form requested here is also the form used with the neuter noun in the good-letter example.",
+      "contrastMembers": [
+        "хоро́шее",
+        "хоро́шая"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u12-spelling-0",
+        "prov-ex-or-u12-spelling-1",
+        "prov-ex-or-u12-spelling-2"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u12-i-spelling-2",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which admitted line is the rejected spelling rather than the accepted example?",
+    "promptLetter": "the good letter",
+    "options": [
+      "хорошое письмо",
+      "хорошее письмо"
+    ],
+    "answer": "хорошое письмо",
+    "feedback": "хорошое письмо is the rejected spelling requested by this question. Its unstressed adjective ending uses o where the five-letter rule requires e after the stem-final consonant transliterated sh. хорошее письмо is the accepted spelling. The keyed counterexample is incorrect Russian, not a form to use.",
+    "objectiveId": "obj-u12-spelling",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хорошее письмо is the accepted spelling, while this question asks you to identify the rejected spelling."
+    ],
+    "assessment": {
+      "testedFeature": "REJECTED_SPELLING",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u12-spelling-2",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u12-spelling-rem-r6"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u12-spelling-3-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "хорошее письмо is the accepted spelling, while this question asks you to identify the rejected spelling."
+      ],
+      "whyAnswerDemonstratesObjective": "хорошое письмо is the rejected spelling requested by this question. Its unstressed adjective ending uses o where the five-letter rule requires e after the stem-final consonant transliterated sh. хорошее письмо is the accepted spelling. The keyed counterexample is incorrect Russian, not a form to use.",
+      "contrastMembers": [
+        "хорошое письмо",
+        "хорошее письмо"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u12-spelling-3-en",
+        "prov-u12-spelling-rem-r6",
+        "prov-ex-u12-spelling-3-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u12-g-prep-plural-0",
+    "kind": "CASE_RECOGNITION",
+    "language": "en",
+    "prompt": "Which admitted row is the prepositional plural?",
+    "promptLetter": "кни́ги",
+    "options": [
+      "кни́гах",
+      "кни́ге"
+    ],
+    "answer": "кни́гах",
+    "feedback": "кни́гах is the recorded prepositional plural form of the shown noun. кни́ге is the dative singular option supplied here and can also be prepositional singular. Neither singular use matches the plural row requested. These are table forms; the prepositional case is used with a governing preposition in a sentence.",
+    "objectiveId": "obj-u12-prep-plural",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "кни́ге is singular, including the supplied dative singular row, rather than prepositional plural."
+    ],
+    "assessment": {
+      "testedFeature": "PREPOSITIONAL_PLURAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u12-prep-plural-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u12-prep-plural-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u12-prep-plural-2"
+      ],
+      "distractorDifference": [
+        "",
+        "кни́ге is singular, including the supplied dative singular row, rather than prepositional plural."
+      ],
+      "whyAnswerDemonstratesObjective": "кни́гах is the recorded prepositional plural form of the shown noun. кни́ге is the dative singular option supplied here and can also be prepositional singular. Neither singular use matches the plural row requested. These are table forms; the prepositional case is used with a governing preposition in a sentence.",
+      "contrastMembers": [
+        "кни́гах",
+        "кни́ге"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u12-prep-plural-0",
+        "prov-ex-or-u12-prep-plural-1",
+        "prov-ex-or-u12-prep-plural-2"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u12-i-prep-plural-1",
+    "kind": "CASE_RECOGNITION",
+    "language": "en",
+    "prompt": "Which admitted row is the prepositional plural?",
+    "promptLetter": "столы́",
+    "options": [
+      "стола́х",
+      "столу́"
+    ],
+    "answer": "стола́х",
+    "feedback": "стола́х is the recorded prepositional plural form of the shown noun. столу́ is the supplied dative singular option. The question requires both prepositional case and plural number; the singular dative option changes both features. In a sentence the prepositional form follows a governing preposition.",
+    "objectiveId": "obj-u12-prep-plural",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "столу́ is the supplied dative singular form, not prepositional plural."
+    ],
+    "assessment": {
+      "testedFeature": "PREPOSITIONAL_PLURAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u12-prep-plural-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u12-prep-plural-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u12-prep-plural-5"
+      ],
+      "distractorDifference": [
+        "",
+        "столу́ is the supplied dative singular form, not prepositional plural."
+      ],
+      "whyAnswerDemonstratesObjective": "стола́х is the recorded prepositional plural form of the shown noun. столу́ is the supplied dative singular option. The question requires both prepositional case and plural number; the singular dative option changes both features. In a sentence the prepositional form follows a governing preposition.",
+      "contrastMembers": [
+        "стола́х",
+        "столу́"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u12-prep-plural-3",
+        "prov-ex-or-u12-prep-plural-4",
+        "prov-ex-or-u12-prep-plural-5"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u12-i-prep-plural-2",
+    "kind": "CASE_RECOGNITION",
+    "language": "en",
+    "prompt": "Which admitted row is the prepositional plural?",
+    "promptLetter": "дома́",
+    "options": [
+      "дома́х",
+      "до́му"
+    ],
+    "answer": "дома́х",
+    "feedback": "дома́х is the recorded prepositional plural form of the shown noun. до́му is the supplied dative singular option. Select the prepositional plural row while keeping the plural number of the cue. These are table forms; a sentence uses the prepositional case after a governing preposition.",
+    "objectiveId": "obj-u12-prep-plural",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "до́му is the supplied dative singular form, not prepositional plural."
+    ],
+    "assessment": {
+      "testedFeature": "PREPOSITIONAL_PLURAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u12-prep-plural-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u12-prep-plural-7"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u12-prep-plural-8"
+      ],
+      "distractorDifference": [
+        "",
+        "до́му is the supplied dative singular form, not prepositional plural."
+      ],
+      "whyAnswerDemonstratesObjective": "дома́х is the recorded prepositional plural form of the shown noun. до́му is the supplied dative singular option. Select the prepositional plural row while keeping the plural number of the cue. These are table forms; a sentence uses the prepositional case after a governing preposition.",
+      "contrastMembers": [
+        "дома́х",
+        "до́му"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u12-prep-plural-6",
+        "prov-ex-or-u12-prep-plural-7",
+        "prov-ex-or-u12-prep-plural-8"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u13-g-past-aspect-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the perfective past?",
+    "promptLetter": "I read",
+    "options": [
+      "я прочитал",
+      "я читал"
+    ],
+    "answer": "я прочитал",
+    "feedback": "я прочитал is the perfective past option: it presents reading as a completed whole. я читал is imperfective past, presenting the reading activity or process without asserting that completed whole. Both are past forms. English simple past wording alone does not determine Russian aspect; the question explicitly asks for the perfective form.",
+    "objectiveId": "obj-u13-past-aspect",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "я читал uses the imperfective past, not the perfective past form requested here. Its process focus does not mean the activity could never have finished."
+    ],
+    "assessment": {
+      "testedFeature": "PERFECTIVE_PAST",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u13-past-aspect-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u13-past-aspect-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u13-past-aspect-0-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "я читал uses the imperfective past, not the perfective past form requested here. Its process focus does not mean the activity could never have finished."
+      ],
+      "whyAnswerDemonstratesObjective": "я прочитал is the perfective past option: it presents reading as a completed whole. я читал is imperfective past, presenting the reading activity or process without asserting that completed whole. Both are past forms. English simple past wording alone does not determine Russian aspect; the question explicitly asks for the perfective form.",
+      "contrastMembers": [
+        "я прочитал",
+        "я читал"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u13-past-aspect-1-en",
+        "prov-ex-u13-past-aspect-1-ru",
+        "prov-ex-u13-past-aspect-0-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u13-i-past-aspect-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the imperfective past?",
+    "promptLetter": "I was reading",
+    "options": [
+      "я читал",
+      "я прочитал"
+    ],
+    "answer": "я читал",
+    "feedback": "я читал is the imperfective past option, presenting reading as activity or process. я прочитал presents the reading as a completed whole and is perfective past. A completed activity can still be described with imperfective aspect when the focus is on the process; English simple past can also translate an imperfective verb.",
+    "objectiveId": "obj-u13-past-aspect",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "я прочитал is perfective past and presents a completed whole, rather than the imperfective past requested here."
+    ],
+    "assessment": {
+      "testedFeature": "IMPERFECTIVE_PAST",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u13-past-aspect-1",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u13-past-aspect-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u13-past-aspect-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "я прочитал is perfective past and presents a completed whole, rather than the imperfective past requested here."
+      ],
+      "whyAnswerDemonstratesObjective": "я читал is the imperfective past option, presenting reading as activity or process. я прочитал presents the reading as a completed whole and is perfective past. A completed activity can still be described with imperfective aspect when the focus is on the process; English simple past can also translate an imperfective verb.",
+      "contrastMembers": [
+        "я читал",
+        "я прочитал"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u13-past-aspect-0-en",
+        "prov-ex-u13-past-aspect-0-ru",
+        "prov-ex-u13-past-aspect-1-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u13-i-past-aspect-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted row is the masculine past?",
+    "promptLetter": "чита́ть",
+    "options": [
+      "чита́л",
+      "чита́ла"
+    ],
+    "answer": "чита́л",
+    "feedback": "чита́л is the masculine past form of the shown infinitive. чита́ла is feminine past. Both belong to the same imperfective verb; this question changes gender agreement rather than selecting a different aspect.",
+    "objectiveId": "obj-u13-past-aspect",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "чита́ла is feminine past, not the requested masculine past form of the same verb."
+    ],
+    "assessment": {
+      "testedFeature": "MASCULINE_PAST",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u13-past-aspect-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u13-past-aspect-3"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u13-past-aspect-4"
+      ],
+      "distractorDifference": [
+        "",
+        "чита́ла is feminine past, not the requested masculine past form of the same verb."
+      ],
+      "whyAnswerDemonstratesObjective": "чита́л is the masculine past form of the shown infinitive. чита́ла is feminine past. Both belong to the same imperfective verb; this question changes gender agreement rather than selecting a different aspect.",
+      "contrastMembers": [
+        "чита́л",
+        "чита́ла"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u13-past-aspect-2",
+        "prov-ex-or-u13-past-aspect-3",
+        "prov-ex-or-u13-past-aspect-4"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u13-g-tense-keep-0",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which admitted label keeps the same tense?",
+    "promptLetter": "Он сказа́л, что он англича́нин",
+    "options": [
+      "we keep the tense the same",
+      "we usually change the tense"
+    ],
+    "answer": "we keep the tense the same",
+    "feedback": "The same tense label fits this nationality report: we keep the tense the same. Он сказа́л, что он англича́нин has a past reporting verb but a present-time nationality statement; a past reporting verb does not itself require English-style backshift in Russian. The other label describes changing the reported tense in the English comparison. This is the shown example, not a rule that every report must preserve every tense or word unchanged.",
+    "objectiveId": "obj-u13-tense-keep",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "we usually change the tense is the label for the English backshift comparison, not the same tense classification of the shown Russian nationality report."
+    ],
+    "assessment": {
+      "testedFeature": "TENSE_KEPT",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u13-tense-keep-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u13-tense-keep-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u13-tense-keep-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "we usually change the tense is the label for the English backshift comparison, not the same tense classification of the shown Russian nationality report."
+      ],
+      "whyAnswerDemonstratesObjective": "The same tense label fits this nationality report: we keep the tense the same. Он сказа́л, что он англича́нин has a past reporting verb but a present-time nationality statement; a past reporting verb does not itself require English-style backshift in Russian. The other label describes changing the reported tense in the English comparison. This is the shown example, not a rule that every report must preserve every tense or word unchanged.",
+      "contrastMembers": [
+        "we keep the tense the same",
+        "we usually change the tense"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u13-tense-keep-0-ru",
+        "prov-ex-u13-tense-keep-0-en",
+        "prov-u13-tense-keep-x-1"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u13-i-tense-keep-1",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which admitted line is the reported evening?",
+    "promptLetter": "Я скажу ему ве́чером",
+    "options": [
+      "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+      "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски"
+    ],
+    "answer": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+    "feedback": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: she said in the past that she would tell him in the evening. The reporting verb is past while the embedded verb remains future. The Moscow option instead gives a future time clause and a plan to speak Russian, without a past reporting frame. Recognize the supplied examples; pronoun changes depend on who is speaking.",
+    "objectiveId": "obj-u13-tense-keep",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example with a past reporting verb."
+    ],
+    "assessment": {
+      "testedFeature": "REPORTED_EVENING",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u13-tense-keep-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u13-tense-keep-2-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u13-tense-keep-x-3"
+      ],
+      "distractorDifference": [
+        "",
+        "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow, not the reported evening example with a past reporting verb."
+      ],
+      "whyAnswerDemonstratesObjective": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером is the reported evening example: she said in the past that she would tell him in the evening. The reporting verb is past while the embedded verb remains future. The Moscow option instead gives a future time clause and a plan to speak Russian, without a past reporting frame. Recognize the supplied examples; pronoun changes depend on who is speaking.",
+      "contrastMembers": [
+        "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+        "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u13-tense-keep-1-ru",
+        "prov-ex-u13-tense-keep-2-ru",
+        "prov-u13-tense-keep-x-3"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u13-i-tense-keep-2",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which admitted label is about changing the reported tense?",
+    "promptLetter": "the reported verb changes tense",
+    "options": [
+      "we usually change the tense",
+      "we keep the tense the same"
+    ],
+    "answer": "we usually change the tense",
+    "feedback": "we usually change the tense is the source label for changing the reported tense in its English backshift comparison. we keep the tense the same labels the contrasting Russian example. English backshift can follow a past reporting verb, but is not mandatory in every report; the question classifies the supplied labels rather than imposing an always-change rule.",
+    "objectiveId": "obj-u13-tense-keep",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "we keep the tense the same describes retention, not changing the reported tense in the English comparison requested here."
+    ],
+    "assessment": {
+      "testedFeature": "ENGLISH_TENSE_CHANGE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u13-tense-keep-2",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u13-tense-keep-x-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u13-tense-keep-0-en"
+      ],
+      "distractorDifference": [
+        "",
+        "we keep the tense the same describes retention, not changing the reported tense in the English comparison requested here."
+      ],
+      "whyAnswerDemonstratesObjective": "we usually change the tense is the source label for changing the reported tense in its English backshift comparison. we keep the tense the same labels the contrasting Russian example. English backshift can follow a past reporting verb, but is not mandatory in every report; the question classifies the supplied labels rather than imposing an always-change rule.",
+      "contrastMembers": [
+        "we usually change the tense",
+        "we keep the tense the same"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-u13-tense-keep-x-2",
+        "prov-u13-tense-keep-x-1",
+        "prov-ex-u13-tense-keep-0-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u13-g-infinitive-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the perfective partner?",
+    "promptLetter": "говори́ть",
+    "options": [
+      "сказа́ть",
+      "де́лать"
+    ],
+    "answer": "сказа́ть",
+    "feedback": "сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. The pairing here does not mean every use of speak or talk can be replaced by the same perfective verb.",
+    "objectiveId": "obj-u13-infinitive",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "де́лать is imperfective and belongs to the do/make pair, not the perfective partner in the shown say/tell grouping."
+    ],
+    "assessment": {
+      "testedFeature": "PERFECTIVE_PARTNER",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u13-infinitive-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u13-infinitive-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u13-infinitive-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "де́лать is imperfective and belongs to the do/make pair, not the perfective partner in the shown say/tell grouping."
+      ],
+      "whyAnswerDemonstratesObjective": "сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. The pairing here does not mean every use of speak or talk can be replaced by the same perfective verb.",
+      "contrastMembers": [
+        "сказа́ть",
+        "де́лать"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u13-infinitive-0-ru",
+        "prov-ex-u13-infinitive-1-ru",
+        "prov-ex-u13-infinitive-2-ru"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u13-i-infinitive-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the perfective partner?",
+    "promptLetter": "де́лать",
+    "options": [
+      "сде́лать",
+      "говори́ть"
+    ],
+    "answer": "сде́лать",
+    "feedback": "сде́лать is the perfective partner of де́лать in the retained do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this recorded pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+    "objectiveId": "obj-u13-infinitive",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "говори́ть is imperfective and belongs to a different lexical grouping, not the perfective partner of the shown do/make verb."
+    ],
+    "assessment": {
+      "testedFeature": "PERFECTIVE_PARTNER",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u13-infinitive-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u13-infinitive-3-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u13-infinitive-0-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "говори́ть is imperfective and belongs to a different lexical grouping, not the perfective partner of the shown do/make verb."
+      ],
+      "whyAnswerDemonstratesObjective": "сде́лать is the perfective partner of де́лать in the retained do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this recorded pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+      "contrastMembers": [
+        "сде́лать",
+        "говори́ть"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u13-infinitive-2-ru",
+        "prov-ex-u13-infinitive-3-ru",
+        "prov-ex-u13-infinitive-0-ru"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u13-i-infinitive-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the imperfective partner?",
+    "promptLetter": "сказа́ть",
+    "options": [
+      "говори́ть",
+      "сде́лать"
+    ],
+    "answer": "говори́ть",
+    "feedback": "говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of this recorded pairing, not any verb of another meaning.",
+    "objectiveId": "obj-u13-infinitive",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "сде́лать is perfective and belongs to the do/make pair, not the imperfective partner in the shown say/tell grouping."
+    ],
+    "assessment": {
+      "testedFeature": "IMPERFECTIVE_PARTNER",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u13-infinitive-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u13-infinitive-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u13-infinitive-3-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "сде́лать is perfective and belongs to the do/make pair, not the imperfective partner in the shown say/tell grouping."
+      ],
+      "whyAnswerDemonstratesObjective": "говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of this recorded pairing, not any verb of another meaning.",
+      "contrastMembers": [
+        "говори́ть",
+        "сде́лать"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u13-infinitive-1-ru",
+        "prov-ex-u13-infinitive-0-ru",
+        "prov-ex-u13-infinitive-3-ru"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u13-g-reported-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "In this supplied report of “I am English”, which English interpretation preserves the original present nationality statement?",
+    "promptLetter": "Он сказа́л, что он англича́нин",
+    "options": [
+      "Past reporting verb with present nationality statement.",
+      "Past reporting verb with past nationality statement."
+    ],
+    "answer": "Past reporting verb with present nationality statement.",
+    "feedback": "In Он сказа́л, что он англича́нин, Past reporting verb with present nationality statement. The reporting verb is past and the nationality statement has no past copula. The alternative with был explicitly supplies a past copula and changes the stated reading; it is not universally ungrammatical. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.",
+    "objectiveId": "obj-u13-reported",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Past reporting verb with past nationality statement. This does not describe the finite forms in the supplied target context."
+    ],
+    "assessment": {
+      "testedFeature": "REPORTED_NATIONALITY_GUIDED",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u13-g-reported-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-u13-report-transfer-u13-g-reported-0-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u13-report-transfer-u13-g-reported-0-2"
+      ],
+      "distractorDifference": [
+        "",
+        "Past reporting verb with past nationality statement. This does not describe the finite forms in the supplied target context."
+      ],
+      "whyAnswerDemonstratesObjective": "In Он сказа́л, что он англича́нин, Past reporting verb with present nationality statement. The reporting verb is past and the nationality statement has no past copula. The alternative with был explicitly supplies a past copula and changes the stated reading; it is not universally ungrammatical. Recognize this supplied context; English backshift and Russian tense/pronoun choices are not automatic rules for every report.",
+      "contrastMembers": [
+        "Past reporting verb with present nationality statement.",
+        "Past reporting verb with past nationality statement."
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u13-report-transfer-u13-g-reported-0-0",
+        "prov-ca-u13-report-transfer-u13-g-reported-0-1",
+        "prov-ca-u13-report-transfer-u13-g-reported-0-2"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u13-i-reported-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the direct evening?",
+    "promptLetter": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+    "options": [
+      "Я скажу ему ве́чером",
+      "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски"
+    ],
+    "answer": "Я скажу ему ве́чером",
+    "feedback": "Я скажу ему ве́чером is the direct evening statement, meaning I will tell him in the evening. It has a first-person future verb without a past reporting frame. The shown reported example instead says that she said she would tell him. The Moscow option describes a different future plan, not this direct evening statement.",
+    "objectiveId": "obj-u13-reported",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски describes a future plan about Moscow, not the direct evening statement requested here."
+    ],
+    "assessment": {
+      "testedFeature": "DIRECT_EVENING",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u13-reported-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u13-reported-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u13-reported-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски describes a future plan about Moscow, not the direct evening statement requested here."
+      ],
+      "whyAnswerDemonstratesObjective": "Я скажу ему ве́чером is the direct evening statement, meaning I will tell him in the evening. It has a first-person future verb without a past reporting frame. The shown reported example instead says that she said she would tell him. The Moscow option describes a different future plan, not this direct evening statement.",
+      "contrastMembers": [
+        "Я скажу ему ве́чером",
+        "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u13-reported-0-ru",
+        "prov-ex-u13-reported-1-ru",
+        "prov-u13-reported-x-1"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u13-i-reported-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the future plan about Moscow?",
+    "promptLetter": "Она́ сказа́ла, что она́ ска́жет ему́ ве́чером",
+    "options": [
+      "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски",
+      "Я скажу ему ве́чером"
+    ],
+    "answer": "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски",
+    "feedback": "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow: when the speaker is there, the speaker will speak only Russian. Both clauses refer to the future, including the clause meaning when. Я скажу ему ве́чером instead says I will tell him in the evening. Neither option is itself a past reporting frame; identify the Moscow plan requested here.",
+    "objectiveId": "obj-u13-reported",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Я скажу ему ве́чером is the direct evening statement, not the future plan about Moscow."
+    ],
+    "assessment": {
+      "testedFeature": "MOSCOW_FUTURE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u13-reported-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u13-reported-x-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u13-reported-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Я скажу ему ве́чером is the direct evening statement, not the future plan about Moscow."
+      ],
+      "whyAnswerDemonstratesObjective": "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски is the future plan about Moscow: when the speaker is there, the speaker will speak only Russian. Both clauses refer to the future, including the clause meaning when. Я скажу ему ве́чером instead says I will tell him in the evening. Neither option is itself a past reporting frame; identify the Moscow plan requested here.",
+      "contrastMembers": [
+        "Когда́ я бу́ду в Москве́, я бу́ду говори́ть то́лько по-ру́сски",
+        "Я скажу ему ве́чером"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u13-reported-0-ru",
+        "prov-u13-reported-x-1",
+        "prov-ex-u13-reported-1-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u14-g-future-aspect-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the bounded future?",
+    "promptLetter": "I will speak for 30 minutes",
+    "options": [
+      "Я поговорю три́дцать мину́т",
+      "Я бу́ду говори́ть"
+    ],
+    "answer": "Я поговорю три́дцать мину́т",
+    "feedback": "Я поговорю три́дцать мину́т is the bounded future example here: its perfective verb presents a limited stretch of speaking, and the line states thirty minutes. Я бу́ду говори́ть uses a future auxiliary and imperfective infinitive without a stated duration in this option. Both refer to the future, not to an event already completed. A stated duration does not automatically require perfective aspect in every sentence.",
+    "objectiveId": "obj-u14-future-aspect",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Я бу́ду говори́ть is the supplied imperfective future option without the thirty-minute limit stated in the other line; it does not match this bounded future example."
+    ],
+    "assessment": {
+      "testedFeature": "BOUNDED_FUTURE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u14-future-aspect-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u14-future-aspect-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u14-future-aspect-0-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Я бу́ду говори́ть is the supplied imperfective future option without the thirty-minute limit stated in the other line; it does not match this bounded future example."
+      ],
+      "whyAnswerDemonstratesObjective": "Я поговорю три́дцать мину́т is the bounded future example here: its perfective verb presents a limited stretch of speaking, and the line states thirty minutes. Я бу́ду говори́ть uses a future auxiliary and imperfective infinitive without a stated duration in this option. Both refer to the future, not to an event already completed. A stated duration does not automatically require perfective aspect in every sentence.",
+      "contrastMembers": [
+        "Я поговорю три́дцать мину́т",
+        "Я бу́ду говори́ть"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u14-future-aspect-1-en",
+        "prov-ex-u14-future-aspect-1-ru",
+        "prov-ex-u14-future-aspect-0-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u14-i-future-aspect-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the bounded future?",
+    "promptLetter": "I will work for three hours",
+    "options": [
+      "Я порабо́таю три ча́са",
+      "Я бу́ду рабо́тать"
+    ],
+    "answer": "Я порабо́таю три ча́са",
+    "feedback": "Я порабо́таю три ча́са is the bounded future example here: the perfective verb presents a limited stretch of work, and the line states three hours. Я бу́ду рабо́тать is the supplied auxiliary-plus-imperfective future without that stated duration. The limit describes this work period, not necessarily completion of a task. A definite time period does not by itself force perfective aspect.",
+    "objectiveId": "obj-u14-future-aspect",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Я бу́ду рабо́тать is the supplied imperfective future option without the three-hour limit stated in the other line; it does not match this bounded future example."
+    ],
+    "assessment": {
+      "testedFeature": "BOUNDED_FUTURE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u14-future-aspect-1",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u14-future-aspect-3-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u14-future-aspect-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Я бу́ду рабо́тать is the supplied imperfective future option without the three-hour limit stated in the other line; it does not match this bounded future example."
+      ],
+      "whyAnswerDemonstratesObjective": "Я порабо́таю три ча́са is the bounded future example here: the perfective verb presents a limited stretch of work, and the line states three hours. Я бу́ду рабо́тать is the supplied auxiliary-plus-imperfective future without that stated duration. The limit describes this work period, not necessarily completion of a task. A definite time period does not by itself force perfective aspect.",
+      "contrastMembers": [
+        "Я порабо́таю три ча́са",
+        "Я бу́ду рабо́тать"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u14-future-aspect-3-en",
+        "prov-ex-u14-future-aspect-3-ru",
+        "prov-ex-u14-future-aspect-2-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u14-i-future-aspect-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the unbounded future?",
+    "promptLetter": "I will speak",
+    "options": [
+      "Я бу́ду говори́ть",
+      "Я поговорю три́дцать мину́т"
+    ],
+    "answer": "Я бу́ду говори́ть",
+    "feedback": "Я бу́ду говори́ть is the unbounded future example in this pair: the future auxiliary plus imperfective infinitive presents speaking without a stated duration. Я поговорю три́дцать мину́т presents a limited stretch and states thirty minutes. Unbounded here describes the supplied option; it does not mean the activity lasts forever or that imperfective future can never have a duration.",
+    "objectiveId": "obj-u14-future-aspect",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Я поговорю три́дцать мину́т is the bounded future option with a stated thirty-minute limit, rather than the unbounded future example requested here."
+    ],
+    "assessment": {
+      "testedFeature": "UNBOUNDED_FUTURE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u14-future-aspect-2",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u14-future-aspect-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u14-future-aspect-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Я поговорю три́дцать мину́т is the bounded future option with a stated thirty-minute limit, rather than the unbounded future example requested here."
+      ],
+      "whyAnswerDemonstratesObjective": "Я бу́ду говори́ть is the unbounded future example in this pair: the future auxiliary plus imperfective infinitive presents speaking without a stated duration. Я поговорю три́дцать мину́т presents a limited stretch and states thirty minutes. Unbounded here describes the supplied option; it does not mean the activity lasts forever or that imperfective future can never have a duration.",
+      "contrastMembers": [
+        "Я бу́ду говори́ть",
+        "Я поговорю три́дцать мину́т"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u14-future-aspect-0-en",
+        "prov-ex-u14-future-aspect-0-ru",
+        "prov-ex-u14-future-aspect-1-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u14-g-future-person-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the first-person plural future?",
+    "promptLetter": "We will be speaking",
+    "options": [
+      "Мы бу́дем говори́ть",
+      "Я бу́ду говори́ть"
+    ],
+    "answer": "Мы бу́дем говори́ть",
+    "feedback": "Мы бу́дем говори́ть is first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. The imperfective infinitive stays the same; the subject and auxiliary distinguish the number requested.",
+    "objectiveId": "obj-u14-future-person",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Я бу́ду говори́ть is first-person singular future, not the first-person plural future requested here."
+    ],
+    "assessment": {
+      "testedFeature": "FIRST_PERSON_PLURAL_FUTURE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u14-future-person-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u14-future-person-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u14-future-person-0-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Я бу́ду говори́ть is first-person singular future, not the first-person plural future requested here."
+      ],
+      "whyAnswerDemonstratesObjective": "Мы бу́дем говори́ть is first-person plural future: the subject means we, and the future auxiliary agrees with that plural subject. Я бу́ду говори́ть is first-person singular, meaning I. The imperfective infinitive stays the same; the subject and auxiliary distinguish the number requested.",
+      "contrastMembers": [
+        "Мы бу́дем говори́ть",
+        "Я бу́ду говори́ть"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u14-future-person-1-en",
+        "prov-ex-u14-future-person-1-ru",
+        "prov-ex-u14-future-person-0-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u14-i-future-person-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted row is the third-person plural future?",
+    "promptLetter": "ска́жет",
+    "options": [
+      "ска́жут",
+      "скажу́"
+    ],
+    "answer": "ска́жут",
+    "feedback": "ска́жут is the third-person plural future form of this perfective verb, used with they. скажу́ is first-person singular, used with I. The cue shows third-person singular, but the question asks for third-person plural of the same verb. These forms refer to future events, not events already completed.",
+    "objectiveId": "obj-u14-future-person",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "скажу́ is first-person singular future, not the requested third-person plural future."
+    ],
+    "assessment": {
+      "testedFeature": "THIRD_PERSON_PLURAL_FUTURE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u14-future-person-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u14-future-person-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u14-future-person-2"
+      ],
+      "distractorDifference": [
+        "",
+        "скажу́ is first-person singular future, not the requested third-person plural future."
+      ],
+      "whyAnswerDemonstratesObjective": "ска́жут is the third-person plural future form of this perfective verb, used with they. скажу́ is first-person singular, used with I. The cue shows third-person singular, but the question asks for third-person plural of the same verb. These forms refer to future events, not events already completed.",
+      "contrastMembers": [
+        "ска́жут",
+        "скажу́"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u14-future-person-3",
+        "prov-ex-or-u14-future-person-4",
+        "prov-ex-or-u14-future-person-2"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u14-i-future-person-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the first-person singular future?",
+    "promptLetter": "I will be speaking",
+    "options": [
+      "Я бу́ду говори́ть",
+      "Мы бу́дем говори́ть"
+    ],
+    "answer": "Я бу́ду говори́ть",
+    "feedback": "Я бу́ду говори́ть is first-person singular future: the subject means I, and the auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. Both use the same imperfective infinitive after the future auxiliary; choose singular agreement.",
+    "objectiveId": "obj-u14-future-person",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Мы бу́дем говори́ть is first-person plural future, not the first-person singular future requested here."
+    ],
+    "assessment": {
+      "testedFeature": "FIRST_PERSON_SINGULAR_FUTURE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u14-future-person-2",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u14-future-person-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u14-future-person-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Мы бу́дем говори́ть is first-person plural future, not the first-person singular future requested here."
+      ],
+      "whyAnswerDemonstratesObjective": "Я бу́ду говори́ть is first-person singular future: the subject means I, and the auxiliary agrees with one speaker. Мы бу́дем говори́ть is first-person plural, meaning we. Both use the same imperfective infinitive after the future auxiliary; choose singular agreement.",
+      "contrastMembers": [
+        "Я бу́ду говори́ть",
+        "Мы бу́дем говори́ть"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u14-future-person-0-en",
+        "prov-ex-u14-future-person-0-ru",
+        "prov-ex-u14-future-person-1-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u14-g-impersonal-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the impersonal past for one person who was cold?",
+    "promptLetter": "He was cold",
+    "options": [
+      "Ему было холодно",
+      "Им было скучно"
+    ],
+    "answer": "Ему было холодно",
+    "feedback": "Ему было холодно is the impersonal past example meaning he was cold: the experiencer is dative singular, while the verb is neuter singular. Им было скучно describes plural experiencers who were bored. Both options are impersonal past and keep the same neuter singular verb; the requested person and state distinguish them.",
+    "objectiveId": "obj-u14-impersonal",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Им было скучно is also impersonal past, but it describes plural experiencers who were bored, not the singular cold person requested here."
+    ],
+    "assessment": {
+      "testedFeature": "IMPERSONAL_PAST",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u14-impersonal-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u14-impersonal-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u14-impersonal-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Им было скучно is also impersonal past, but it describes plural experiencers who were bored, not the singular cold person requested here."
+      ],
+      "whyAnswerDemonstratesObjective": "Ему было холодно is the impersonal past example meaning he was cold: the experiencer is dative singular, while the verb is neuter singular. Им было скучно describes plural experiencers who were bored. Both options are impersonal past and keep the same neuter singular verb; the requested person and state distinguish them.",
+      "contrastMembers": [
+        "Ему было холодно",
+        "Им было скучно"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u14-impersonal-0-en",
+        "prov-ex-u14-impersonal-0-ru",
+        "prov-ex-u14-impersonal-1-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u14-i-impersonal-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the impersonal past for more than one bored person?",
+    "promptLetter": "They were bored",
+    "options": [
+      "Им было скучно",
+      "Ему было холодно"
+    ],
+    "answer": "Им было скучно",
+    "feedback": "Им было скучно is the impersonal past example meaning they were bored: the experiencers are dative plural, but the verb remains neuter singular. Ему было холодно describes one male experiencer who was cold. Both options are impersonal past; plural experiencers do not turn the verb into a plural form in this construction.",
+    "objectiveId": "obj-u14-impersonal",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Ему было холодно is also impersonal past, but it describes one male experiencer who was cold, not the plural bored experiencers requested here."
+    ],
+    "assessment": {
+      "testedFeature": "IMPERSONAL_PAST",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u14-impersonal-1",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u14-impersonal-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u14-impersonal-0-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Ему было холодно is also impersonal past, but it describes one male experiencer who was cold, not the plural bored experiencers requested here."
+      ],
+      "whyAnswerDemonstratesObjective": "Им было скучно is the impersonal past example meaning they were bored: the experiencers are dative plural, but the verb remains neuter singular. Ему было холодно describes one male experiencer who was cold. Both options are impersonal past; plural experiencers do not turn the verb into a plural form in this construction.",
+      "contrastMembers": [
+        "Им было скучно",
+        "Ему было холодно"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u14-impersonal-1-en",
+        "prov-ex-u14-impersonal-1-ru",
+        "prov-ex-u14-impersonal-0-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u14-i-impersonal-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the impersonal past for one woman who was cold?",
+    "promptLetter": "she was cold",
+    "options": [
+      "ей было холодно",
+      "Ему было холодно"
+    ],
+    "answer": "ей было холодно",
+    "feedback": "ей было холодно is the impersonal past example meaning she was cold: the experiencer is feminine dative singular, while the verb remains neuter singular. Ему было холодно is the supplied he was cold example with a masculine dative experiencer. Both options are impersonal past; the woman in the question changes the experiencer pronoun, not the verb to feminine agreement.",
+    "objectiveId": "obj-u14-impersonal",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Ему было холодно is also impersonal past, but the supplied example refers to a male experiencer, not the woman requested here."
+    ],
+    "assessment": {
+      "testedFeature": "IMPERSONAL_PAST",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u14-impersonal-2",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u14-impersonal-2-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u14-impersonal-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "Ему было холодно is also impersonal past, but the supplied example refers to a male experiencer, not the woman requested here."
+      ],
+      "whyAnswerDemonstratesObjective": "ей было холодно is the impersonal past example meaning she was cold: the experiencer is feminine dative singular, while the verb remains neuter singular. Ему было холодно is the supplied he was cold example with a masculine dative experiencer. Both options are impersonal past; the woman in the question changes the experiencer pronoun, not the verb to feminine agreement.",
+      "contrastMembers": [
+        "ей было холодно",
+        "Ему было холодно"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u14-impersonal-2-en",
+        "prov-ex-u14-impersonal-2-ru",
+        "prov-u14-impersonal-x-0"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  }
+]

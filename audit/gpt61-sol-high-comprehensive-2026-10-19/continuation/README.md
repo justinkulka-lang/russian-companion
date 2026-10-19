@@ -1,0 +1,13 @@
+# Same ChatGPT Sol / High audit continuation
+
+Paste COPY_PASTE_PROMPT.md into the SAME audit chat. No new audit or model identity is implied by this preparation. Audited source remains5c176eb2;the later delivery commit contains only derived audit inputs/instructions. All original findings remain unchanged.
+
+The supplement ZIP includes exact authoritative raw bytes,target loader,authentic commit/tree proofs,complete lossless chunked projections of every top-level curriculum value,30complete unit views,14previously unavailable items and the original twelve audit outputs. It excludes the private PDF/extracted prose,Android toolchain,Git database,APK and new runtime evidence. Use the PDF already attached to that chat;verify current2bcc0c45 identity,not historical0c441ffd.
+
+After extracting into a fresh directory,run `python3 VERIFY_SUPPLEMENT.py` if code execution is available. This proves projection/raw/source binding,not semantic correctness. Never merge the private reference branch. The root manifest covers the ZIP inputs;generated packet/delivery files on GitHub are outside that manifest. Each indexed projection path is small enough for separate connector reads;unit views are convenience views and do not replace global collections. The complete817example collection includes historical/unreferenced examples. All58actual capability objects and6943provenance records are included,not only an older21object projection.
+
+If ChatGPT can only read repository text,read CURRICULUM_INDEX.json and its projection paths. Record canonical raw byte recomputation NOT_VERIFIED unless the attached ZIP was actually opened and verified;producer hashes alone are not independently reproduced integrity. Do not repeat failed20MBconnector requests as the only route. Attach the compact supplement directly if binary GitHub retrieval is unavailable.
+
+CONTINUATION_DELIVERABLES.md requires updated12originals plus4continuation records and delivery metadata. This kit does not perform those audit deliverables or fix app code. Full source files remain accessible through the private repository at the pinned target;the small supplement is not a complete repository snapshot. The original full snapshot remains an optional separate artifact. All uninspected source/archive/runtime/book/source-rights scope must stay explicit.
+
+Four screenshot exporters/16methods excluded;preserve all64authentic histories/raw failures and legacy schemas/policies. No merge,freeze,APK assembly/signing,formal approval stage advancement or release approval. Physical acceptance last after final independent comprehensive audit.

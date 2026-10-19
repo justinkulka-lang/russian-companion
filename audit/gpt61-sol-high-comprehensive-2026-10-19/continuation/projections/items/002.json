@@ -1,0 +1,2600 @@
+[
+  {
+    "id": "u6-i-direction-2",
+    "kind": "CASE_RECOGNITION",
+    "language": "en",
+    "prompt": "Which admitted function does the shown line use?",
+    "promptLetter": "Я шёл на улицу",
+    "options": [
+      "direction",
+      "location"
+    ],
+    "answer": "direction",
+    "feedback": "Я шёл на улицу describes walking onto the street, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+    "objectiveId": "obj-u6-direction",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Location describes being at a place instead of moving toward a destination in this example."
+    ],
+    "assessment": {
+      "testedFeature": "DIRECTION_LOCATION",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u6-direction-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u6-direction-x-0"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u6-direction-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "Location describes being at a place instead of moving toward a destination in this example."
+      ],
+      "whyAnswerDemonstratesObjective": "Я шёл на улицу describes walking onto the street, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+      "contrastMembers": [
+        "direction",
+        "location"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u6-direction-2-ru",
+        "prov-u6-direction-x-0",
+        "prov-u6-direction-x-1"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-direction-3",
+    "kind": "CASE_RECOGNITION",
+    "language": "en",
+    "prompt": "Which admitted function does the shown line use?",
+    "promptLetter": "Оно на столе",
+    "options": [
+      "location",
+      "direction"
+    ],
+    "answer": "location",
+    "feedback": "Оно на столе describes being on the table, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+    "objectiveId": "obj-u6-direction",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Direction describes moving toward a destination instead of being at a place in this example."
+    ],
+    "assessment": {
+      "testedFeature": "DIRECTION_LOCATION",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u6-direction-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u6-direction-x-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u6-direction-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "Direction describes moving toward a destination instead of being at a place in this example."
+      ],
+      "whyAnswerDemonstratesObjective": "Оно на столе describes being on the table, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+      "contrastMembers": [
+        "location",
+        "direction"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u6-direction-3-ru",
+        "prov-u6-direction-x-1",
+        "prov-u6-direction-x-0"
+      ]
+    }
+  },
+  {
+    "id": "u7-g-default-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "но́вая",
+    "options": [
+      "но́вый",
+      "но́вая"
+    ],
+    "answer": "но́вый",
+    "feedback": "но́вая is the feminine singular nominative form; но́вый is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-default",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вая is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_DICTIONARY",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-default-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u7-default-0"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-default-1"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вая is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "но́вая is the feminine singular nominative form; но́вый is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "но́вый",
+        "но́вая"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-default-1",
+        "prov-ex-or-u7-default-0",
+        "prov-ex-or-u7-default-1"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-default-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "но́вое",
+    "options": [
+      "но́вый",
+      "но́вое"
+    ],
+    "answer": "но́вый",
+    "feedback": "но́вое is the neuter singular nominative form; но́вый is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-default",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вое is the neuter singular nominative form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_DICTIONARY",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-default-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-default-0"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-default-2"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вое is the neuter singular nominative form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "но́вое is the neuter singular nominative form; но́вый is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "но́вый",
+        "но́вое"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-default-2",
+        "prov-ex-or-u7-default-0",
+        "prov-ex-or-u7-default-2"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-default-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "хоро́шая",
+    "options": [
+      "хоро́ший",
+      "хоро́шая"
+    ],
+    "answer": "хоро́ший",
+    "feedback": "хоро́шая is the feminine singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-default",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шая is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_DICTIONARY",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-default-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-default-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-default-5"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шая is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́шая is the feminine singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "хоро́ший",
+        "хоро́шая"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-default-5",
+        "prov-ex-or-u7-default-4",
+        "prov-ex-or-u7-default-5"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-default-3",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "си́няя",
+    "options": [
+      "си́ний",
+      "си́няя"
+    ],
+    "answer": "си́ний",
+    "feedback": "си́няя is the feminine singular nominative form; си́ний is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-default",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "си́няя is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_DICTIONARY",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-default-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-default-6"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-default-7"
+      ],
+      "distractorDifference": [
+        "",
+        "си́няя is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "си́няя is the feminine singular nominative form; си́ний is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "си́ний",
+        "си́няя"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-default-7",
+        "prov-ex-or-u7-default-6",
+        "prov-ex-or-u7-default-7"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-default-4",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "кака́я",
+    "options": [
+      "како́й",
+      "кака́я"
+    ],
+    "answer": "како́й",
+    "feedback": "кака́я is the feminine singular nominative form; како́й is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-default",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "кака́я is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_DICTIONARY",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-default-4",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-default-8"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-default-9"
+      ],
+      "distractorDifference": [
+        "",
+        "кака́я is the feminine singular nominative form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "кака́я is the feminine singular nominative form; како́й is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "како́й",
+        "кака́я"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-default-9",
+        "prov-ex-or-u7-default-8",
+        "prov-ex-or-u7-default-9"
+      ]
+    }
+  },
+  {
+    "id": "u7-g-endings-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which feminine object phrase matches the shown nominative phrase?",
+    "promptLetter": "но́вая книга",
+    "options": [
+      "но́вую книгу",
+      "но́вого друга",
+      "но́вые книги"
+    ],
+    "answer": "но́вую книгу",
+    "feedback": "но́вая книга takes the feminine object phrase но́вую книгу.",
+    "objectiveId": "obj-u7-endings",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вого друга is masculine animate, not the feminine object phrase.",
+      "но́вые книги is plural, not the feminine singular object phrase."
+    ],
+    "assessment": {
+      "testedFeature": "FEMININE_ADJECTIVE_OBJECT",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u7-endings-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-7-470"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-7-474",
+        "prov-ca-7-475"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вого друга is masculine animate, not the feminine object phrase.",
+        "но́вые книги is plural, not the feminine singular object phrase."
+      ],
+      "whyAnswerDemonstratesObjective": "The shown phrase is feminine singular, so the object row is но́вую книгу.",
+      "contrastMembers": [
+        "но́вую книгу",
+        "но́вого друга",
+        "но́вые книги"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-7-469",
+        "prov-ca-7-470",
+        "prov-ca-7-474",
+        "prov-ca-7-475"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u7-i-endings-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which genitive phrase continues the shown neuter nominative?",
+    "promptLetter": "но́вое окно",
+    "options": [
+      "но́вого окна",
+      "но́вую книгу",
+      "но́вый дом"
+    ],
+    "answer": "но́вого окна",
+    "feedback": "но́вое окно continues as the genitive phrase но́вого окна.",
+    "objectiveId": "obj-u7-endings",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вую книгу is a feminine object phrase, not the neuter genitive.",
+      "но́вый дом is a masculine nominative, not the neuter genitive."
+    ],
+    "assessment": {
+      "testedFeature": "NEUTER_ADJECTIVE_GENITIVE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u7-endings-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-7-480"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-7-484",
+        "prov-ca-7-485"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вую книгу is a feminine object phrase, not the neuter genitive.",
+        "но́вый дом is a masculine nominative, not the neuter genitive."
+      ],
+      "whyAnswerDemonstratesObjective": "The neuter nominative но́вое окно is distinguished from the feminine object phrase.",
+      "contrastMembers": [
+        "но́вого окна",
+        "но́вую книгу",
+        "но́вый дом"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-7-479",
+        "prov-ca-7-480",
+        "prov-ca-7-484",
+        "prov-ca-7-485"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u7-i-endings-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same adjective corresponds to the shown form?",
+    "promptLetter": "но́вый",
+    "options": [
+      "но́вые",
+      "но́вая"
+    ],
+    "answer": "но́вые",
+    "feedback": "но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.",
+    "objectiveId": "obj-u7-endings",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вая is the feminine singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-endings-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-endings-10"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-endings-8"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вая is the feminine singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "но́вый is the masculine singular nominative form; но́вые is the plural nominative form of the same adjective.",
+      "contrastMembers": [
+        "но́вые",
+        "но́вая"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-endings-7",
+        "prov-ex-or-u7-endings-10",
+        "prov-ex-or-u7-endings-8"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-endings-3",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "но́вая",
+    "options": [
+      "но́вый",
+      "но́вое"
+    ],
+    "answer": "но́вый",
+    "feedback": "но́вая is the feminine singular nominative form; но́вый is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-endings",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вое is the neuter singular nominative form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-endings-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-endings-7"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-endings-9"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вое is the neuter singular nominative form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "но́вая is the feminine singular nominative form; но́вый is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "но́вый",
+        "но́вое"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-endings-8",
+        "prov-ex-or-u7-endings-7",
+        "prov-ex-or-u7-endings-9"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-endings-4",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted form agrees with the shown word?",
+    "promptLetter": "машина",
+    "options": [
+      "но́вая",
+      "но́вый",
+      "но́вые"
+    ],
+    "answer": "но́вая",
+    "feedback": "но́вая agrees with the shown feminine singular noun in the nominative, as in the retained new car phrase. но́вый is masculine singular and но́вые is plural. Choose the form that matches the noun in this phrase, rather than the dictionary form or a plural form.",
+    "objectiveId": "obj-u7-endings",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вый is nominative masculine singular instead of the feminine singular agreement required here.",
+      "но́вые is nominative plural instead of the singular agreement required here."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_AGREEMENT",
+      "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "contrastSetId": "u7-endings-4",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-endings-8"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-endings-7",
+        "prov-ex-or-u7-endings-10"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вый is nominative masculine singular instead of the feminine singular agreement required here.",
+        "но́вые is nominative plural instead of the singular agreement required here."
+      ],
+      "whyAnswerDemonstratesObjective": "но́вая agrees with the shown feminine singular noun in the nominative, as in the retained new car phrase. но́вый is masculine singular and но́вые is plural. Choose the form that matches the noun in this phrase, rather than the dictionary form or a plural form.",
+      "contrastMembers": [
+        "но́вая",
+        "но́вый",
+        "но́вые"
+      ],
+      "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "relationParticipantIds": [
+        "prov-u7-endings-x-1",
+        "prov-ex-or-u7-endings-8",
+        "prov-ex-or-u7-endings-7",
+        "prov-ex-or-u7-endings-10"
+      ]
+    }
+  },
+  {
+    "id": "u7-g-spelling-0",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same adjective corresponds to the shown form?",
+    "promptLetter": "хоро́шее",
+    "options": [
+      "хоро́шие",
+      "хоро́шее"
+    ],
+    "answer": "хоро́шие",
+    "feedback": "хоро́шее is the neuter singular nominative form; хоро́шие is the plural nominative form of the same adjective.",
+    "objectiveId": "obj-u7-spelling",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_NOMINATIVE_FORM",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-spelling-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u7-spelling-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-spelling-3"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́шее is the neuter singular nominative form; хоро́шие is the plural nominative form of the same adjective.",
+      "contrastMembers": [
+        "хоро́шие",
+        "хоро́шее"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-spelling-3",
+        "prov-ex-or-u7-spelling-4",
+        "prov-ex-or-u7-spelling-3"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-spelling-1",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which neuter singular nominative form of the same adjective corresponds to the shown form?",
+    "promptLetter": "хоро́шие",
+    "options": [
+      "хоро́шее",
+      "хоро́шие"
+    ],
+    "answer": "хоро́шее",
+    "feedback": "хоро́шие is the plural nominative form; хоро́шее is the neuter singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-spelling",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_NOMINATIVE_FORM",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-spelling-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-spelling-3"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-spelling-4"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́шие is the plural nominative form; хоро́шее is the neuter singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "хоро́шее",
+        "хоро́шие"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-spelling-4",
+        "prov-ex-or-u7-spelling-3",
+        "prov-ex-or-u7-spelling-4"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-spelling-2",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "хоро́шее",
+    "options": [
+      "хоро́ший",
+      "хоро́шие"
+    ],
+    "answer": "хоро́ший",
+    "feedback": "хоро́шее is the neuter singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-spelling",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_NOMINATIVE_FORM",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-spelling-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-spelling-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-spelling-4"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́шее is the neuter singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "хоро́ший",
+        "хоро́шие"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-spelling-3",
+        "prov-ex-or-u7-spelling-1",
+        "prov-ex-or-u7-spelling-4"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-spelling-3",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which feminine singular accusative phrase corresponds to the shown nominative phrase?",
+    "promptLetter": "хоро́шая книга",
+    "options": [
+      "хоро́шую книгу",
+      "хоро́шего друга",
+      "хоро́шие книги"
+    ],
+    "answer": "хоро́шую книгу",
+    "feedback": "To put хоро́шая книга in the accusative singular, choose хоро́шую книгу. Both words change while the same noun and feminine singular agreement are kept.",
+    "objectiveId": "obj-u7-spelling",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шего друга is masculine animate, not the feminine object phrase.",
+      "хоро́шие книги is plural, not the feminine singular object phrase."
+    ],
+    "assessment": {
+      "testedFeature": "FEMININE_ADJECTIVE_ACCUSATIVE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u7-spelling-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-7-490"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-7-494",
+        "prov-ca-7-495"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шего друга is masculine animate, not the feminine object phrase.",
+        "хоро́шие книги is plural, not the feminine singular object phrase."
+      ],
+      "whyAnswerDemonstratesObjective": "To put хоро́шая книга in the accusative singular, choose хоро́шую книгу. Both words change while the same noun and feminine singular agreement are kept.",
+      "contrastMembers": [
+        "хоро́шую книгу",
+        "хоро́шего друга",
+        "хоро́шие книги"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-7-489",
+        "prov-ca-7-490",
+        "prov-ca-7-494",
+        "prov-ca-7-495"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u7-g-question-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same adjective corresponds to the shown form?",
+    "promptLetter": "како́й",
+    "options": [
+      "каки́е",
+      "кака́я"
+    ],
+    "answer": "каки́е",
+    "feedback": "како́й is the masculine singular nominative form; каки́е is the plural nominative form of the same adjective.",
+    "objectiveId": "obj-u7-question",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "кака́я is the feminine singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "QUESTION_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-question-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u7-question-3"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-question-1"
+      ],
+      "distractorDifference": [
+        "",
+        "кака́я is the feminine singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "како́й is the masculine singular nominative form; каки́е is the plural nominative form of the same adjective.",
+      "contrastMembers": [
+        "каки́е",
+        "кака́я"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-question-0",
+        "prov-ex-or-u7-question-3",
+        "prov-ex-or-u7-question-1"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-question-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which neuter singular nominative form of the same adjective corresponds to the shown form?",
+    "promptLetter": "како́й",
+    "options": [
+      "како́е",
+      "како́й"
+    ],
+    "answer": "како́е",
+    "feedback": "како́й is the masculine singular nominative form; како́е is the neuter singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-question",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "како́й is the masculine singular nominative form, so it does not supply the requested neuter singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "QUESTION_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-question-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-question-2"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-question-0"
+      ],
+      "distractorDifference": [
+        "",
+        "како́й is the masculine singular nominative form, so it does not supply the requested neuter singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "како́й is the masculine singular nominative form; како́е is the neuter singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "како́е",
+        "како́й"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-question-0",
+        "prov-ex-or-u7-question-2",
+        "prov-ex-or-u7-question-0"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-question-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which feminine singular nominative form of the same adjective corresponds to the shown form?",
+    "promptLetter": "како́й",
+    "options": [
+      "кака́я",
+      "каки́е"
+    ],
+    "answer": "кака́я",
+    "feedback": "како́й is the masculine singular nominative form; кака́я is the feminine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-question",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "каки́е is the plural nominative form, so it does not supply the requested feminine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "QUESTION_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-question-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-question-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-question-3"
+      ],
+      "distractorDifference": [
+        "",
+        "каки́е is the plural nominative form, so it does not supply the requested feminine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "како́й is the masculine singular nominative form; кака́я is the feminine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "кака́я",
+        "каки́е"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-question-0",
+        "prov-ex-or-u7-question-1",
+        "prov-ex-or-u7-question-3"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-question-3",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "кака́я",
+    "options": [
+      "како́й",
+      "како́е"
+    ],
+    "answer": "како́й",
+    "feedback": "кака́я is the feminine singular nominative form; како́й is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-question",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "како́е is the neuter singular nominative form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "QUESTION_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-question-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-question-0"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-question-2"
+      ],
+      "distractorDifference": [
+        "",
+        "како́е is the neuter singular nominative form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "кака́я is the feminine singular nominative form; како́й is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "како́й",
+        "како́е"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-question-1",
+        "prov-ex-or-u7-question-0",
+        "prov-ex-or-u7-question-2"
+      ]
+    }
+  },
+  {
+    "id": "u7-g-demonstrative-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted form does the shown line use?",
+    "promptLetter": "эти хорошие новые студенты",
+    "options": [
+      "э́ти",
+      "э́та"
+    ],
+    "answer": "э́ти",
+    "feedback": "The shown line means these good new students and refers to more than one student. э́ти is the nominative plural form of this demonstrative, so it matches the plural phrase. э́та is feminine singular and does not match this phrase.",
+    "objectiveId": "obj-u7-demonstrative",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "э́та is nominative feminine singular instead of the plural agreement used in the shown phrase."
+    ],
+    "assessment": {
+      "testedFeature": "DEMONSTRATIVE_AGREEMENT",
+      "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "contrastSetId": "u7-demonstrative-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u7-demonstrative-3"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-demonstrative-1"
+      ],
+      "distractorDifference": [
+        "",
+        "э́та is nominative feminine singular instead of the plural agreement used in the shown phrase."
+      ],
+      "whyAnswerDemonstratesObjective": "The shown line means these good new students and refers to more than one student. э́ти is the nominative plural form of this demonstrative, so it matches the plural phrase. э́та is feminine singular and does not match this phrase.",
+      "contrastMembers": [
+        "э́ти",
+        "э́та"
+      ],
+      "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "relationParticipantIds": [
+        "prov-ex-u7-demonstrative-0-ru",
+        "prov-ex-or-u7-demonstrative-3",
+        "prov-ex-or-u7-demonstrative-1"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-demonstrative-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which feminine singular accusative form of the same adjective corresponds to the shown form?",
+    "promptLetter": "э́та",
+    "options": [
+      "э́ту",
+      "э́та"
+    ],
+    "answer": "э́ту",
+    "feedback": "э́та is the feminine singular nominative form; э́ту is the feminine singular accusative form of the same adjective.",
+    "objectiveId": "obj-u7-demonstrative",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "э́та is the feminine singular nominative form, so it does not supply the requested feminine singular accusative form."
+    ],
+    "assessment": {
+      "testedFeature": "DEMONSTRATIVE_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-demonstrative-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-demonstrative-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-demonstrative-1"
+      ],
+      "distractorDifference": [
+        "",
+        "э́та is the feminine singular nominative form, so it does not supply the requested feminine singular accusative form."
+      ],
+      "whyAnswerDemonstratesObjective": "э́та is the feminine singular nominative form; э́ту is the feminine singular accusative form of the same adjective.",
+      "contrastMembers": [
+        "э́ту",
+        "э́та"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-demonstrative-1",
+        "prov-ex-or-u7-demonstrative-4",
+        "prov-ex-or-u7-demonstrative-1"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-demonstrative-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same adjective corresponds to the shown form?",
+    "promptLetter": "э́то",
+    "options": [
+      "э́ти",
+      "э́то"
+    ],
+    "answer": "э́ти",
+    "feedback": "э́то is the neuter singular nominative form; э́ти is the plural nominative form of the same adjective.",
+    "objectiveId": "obj-u7-demonstrative",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "э́то is the neuter singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "DEMONSTRATIVE_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-demonstrative-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-demonstrative-3"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-demonstrative-2"
+      ],
+      "distractorDifference": [
+        "",
+        "э́то is the neuter singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "э́то is the neuter singular nominative form; э́ти is the plural nominative form of the same adjective.",
+      "contrastMembers": [
+        "э́ти",
+        "э́то"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-demonstrative-2",
+        "prov-ex-or-u7-demonstrative-3",
+        "prov-ex-or-u7-demonstrative-2"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-demonstrative-3",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which feminine singular nominative form of the same adjective corresponds to the shown form?",
+    "promptLetter": "э́ту",
+    "options": [
+      "э́та",
+      "э́ту"
+    ],
+    "answer": "э́та",
+    "feedback": "э́ту is the feminine singular accusative form; э́та is the feminine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-demonstrative",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "э́ту is the feminine singular accusative form, so it does not supply the requested feminine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "DEMONSTRATIVE_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-demonstrative-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-demonstrative-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-demonstrative-4"
+      ],
+      "distractorDifference": [
+        "",
+        "э́ту is the feminine singular accusative form, so it does not supply the requested feminine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "э́ту is the feminine singular accusative form; э́та is the feminine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "э́та",
+        "э́ту"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-demonstrative-4",
+        "prov-ex-or-u7-demonstrative-1",
+        "prov-ex-or-u7-demonstrative-4"
+      ]
+    }
+  },
+  {
+    "id": "u7-g-place-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which masculine singular prepositional form of the same adjective corresponds to the shown form?",
+    "promptLetter": "но́вый",
+    "options": [
+      "но́вом",
+      "но́вую"
+    ],
+    "answer": "но́вом",
+    "feedback": "но́вый is the masculine singular nominative form; но́вом is the masculine singular prepositional form of the same adjective.",
+    "objectiveId": "obj-u7-place",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вую is the feminine singular accusative form, so it does not supply the requested masculine singular prepositional form."
+    ],
+    "assessment": {
+      "testedFeature": "PLACE_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-place-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u7-place-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-place-5"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вую is the feminine singular accusative form, so it does not supply the requested masculine singular prepositional form."
+      ],
+      "whyAnswerDemonstratesObjective": "но́вый is the masculine singular nominative form; но́вом is the masculine singular prepositional form of the same adjective.",
+      "contrastMembers": [
+        "но́вом",
+        "но́вую"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-place-3",
+        "prov-ex-or-u7-place-4",
+        "prov-ex-or-u7-place-5"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-place-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "но́вом",
+    "options": [
+      "но́вый",
+      "но́вую"
+    ],
+    "answer": "но́вый",
+    "feedback": "но́вом is the masculine singular prepositional form; но́вый is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-place",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вую is the feminine singular accusative form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PLACE_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-place-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-place-3"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-place-5"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вую is the feminine singular accusative form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "но́вом is the masculine singular prepositional form; но́вый is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "но́вый",
+        "но́вую"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-place-4",
+        "prov-ex-or-u7-place-3",
+        "prov-ex-or-u7-place-5"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-place-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which masculine singular prepositional form of the same adjective corresponds to the shown form?",
+    "promptLetter": "хоро́ший",
+    "options": [
+      "хоро́шем",
+      "хоро́ший"
+    ],
+    "answer": "хоро́шем",
+    "feedback": "хоро́ший is the masculine singular nominative form; хоро́шем is the masculine singular prepositional form of the same adjective.",
+    "objectiveId": "obj-u7-place",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́ший is the masculine singular nominative form, so it does not supply the requested masculine singular prepositional form."
+    ],
+    "assessment": {
+      "testedFeature": "PLACE_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-place-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-place-7"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-place-6"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́ший is the masculine singular nominative form, so it does not supply the requested masculine singular prepositional form."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́ший is the masculine singular nominative form; хоро́шем is the masculine singular prepositional form of the same adjective.",
+      "contrastMembers": [
+        "хоро́шем",
+        "хоро́ший"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-place-6",
+        "prov-ex-or-u7-place-7",
+        "prov-ex-or-u7-place-6"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-place-3",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "хоро́шем",
+    "options": [
+      "хоро́ший",
+      "хоро́шем"
+    ],
+    "answer": "хоро́ший",
+    "feedback": "хоро́шем is the masculine singular prepositional form; хоро́ший is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-place",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шем is the masculine singular prepositional form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PLACE_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-place-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-place-6"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-place-7"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шем is the masculine singular prepositional form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́шем is the masculine singular prepositional form; хоро́ший is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "хоро́ший",
+        "хоро́шем"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-place-7",
+        "prov-ex-or-u7-place-6",
+        "prov-ex-or-u7-place-7"
+      ]
+    }
+  },
+  {
+    "id": "u7-g-objectadj-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which accusative singular adjective form agrees with a masculine animate noun?",
+    "promptLetter": "но́вый",
+    "options": [
+      "но́вого",
+      "но́вую"
+    ],
+    "answer": "но́вого",
+    "feedback": "For a masculine animate object, но́вого is the accusative singular form of но́вый. It has the same form as the masculine singular genitive. Feminine agreement uses a different ending.",
+    "objectiveId": "obj-u7-objectadj",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вую is the feminine singular accusative form, so it does not supply the requested masculine animate accusative form."
+    ],
+    "assessment": {
+      "testedFeature": "OBJECT_ADJECTIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-objectadj-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u7-objectadj-5"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-objectadj-6"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вую is the feminine singular accusative form, so it does not supply the requested masculine animate accusative form."
+      ],
+      "whyAnswerDemonstratesObjective": "For a masculine animate object, но́вого is the accusative singular form of но́вый. It has the same form as the masculine singular genitive. Feminine agreement uses a different ending.",
+      "contrastMembers": [
+        "но́вого",
+        "но́вую"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-objectadj-4",
+        "prov-ex-or-u7-objectadj-5",
+        "prov-ex-or-u7-objectadj-6"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-objectadj-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "но́вого",
+    "options": [
+      "но́вый",
+      "но́вую"
+    ],
+    "answer": "но́вый",
+    "feedback": "но́вого is the masculine singular genitive form; но́вый is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-objectadj",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вую is the feminine singular accusative form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "OBJECT_ADJECTIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-objectadj-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-objectadj-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-objectadj-6"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вую is the feminine singular accusative form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "но́вого is the masculine singular genitive form; но́вый is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "но́вый",
+        "но́вую"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-objectadj-5",
+        "prov-ex-or-u7-objectadj-4",
+        "prov-ex-or-u7-objectadj-6"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-objectadj-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "но́вую",
+    "options": [
+      "но́вый",
+      "но́вого"
+    ],
+    "answer": "но́вый",
+    "feedback": "но́вую is the feminine singular accusative form; но́вый is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u7-objectadj",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вого is the masculine singular genitive form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "OBJECT_ADJECTIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-objectadj-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-objectadj-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-objectadj-5"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вого is the masculine singular genitive form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "но́вую is the feminine singular accusative form; но́вый is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "но́вый",
+        "но́вого"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u7-objectadj-6",
+        "prov-ex-or-u7-objectadj-4",
+        "prov-ex-or-u7-objectadj-5"
+      ]
+    }
+  },
+  {
+    "id": "u7-i-objectadj-3",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which feminine singular accusative adjective form corresponds to the shown feminine nominative?",
+    "promptLetter": "но́вая",
+    "options": [
+      "но́вую",
+      "но́вый"
+    ],
+    "answer": "но́вую",
+    "feedback": "но́вая is the feminine singular nominative form; но́вую is the feminine singular accusative form of the same adjective. Keep feminine singular agreement; the masculine dictionary form changes gender and does not answer this question.",
+    "objectiveId": "obj-u7-objectadj",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "но́вый is the masculine singular nominative form, so it does not supply the requested feminine singular accusative form."
+    ],
+    "assessment": {
+      "testedFeature": "OBJECT_ADJECTIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u7-objectadj-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u7-objectadj-6"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u7-objectadj-4"
+      ],
+      "distractorDifference": [
+        "",
+        "но́вый is the masculine singular nominative form, so it does not supply the requested feminine singular accusative form."
+      ],
+      "whyAnswerDemonstratesObjective": "но́вая is the feminine singular nominative form; но́вую is the feminine singular accusative form of the same adjective. Keep feminine singular agreement; the masculine dictionary form changes gender and does not answer this question.",
+      "contrastMembers": [
+        "но́вую",
+        "но́вый"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ca-u7-objectadj-f-nom",
+        "prov-ex-or-u7-objectadj-6",
+        "prov-ex-or-u7-objectadj-4"
+      ]
+    }
+  },
+  {
+    "id": "u7-g-adverb-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "быстро",
+    "options": [
+      "quickly",
+      "well",
+      "wonderfully"
+    ],
+    "answer": "quickly",
+    "feedback": "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+    "objectiveId": "obj-u7-adverb",
+    "sourceId": "src-wikipedia-adverb-1374548415",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\").",
+      "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\")."
+    ],
+    "assessment": {
+      "testedFeature": "ADVERB_QUICKLY",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u7-adverb-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u7-adverb-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u7-adverb-1-en",
+        "prov-ex-u7-adverb-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\").",
+        "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+      "contrastMembers": [
+        "quickly",
+        "well",
+        "wonderfully"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u7-adverb-0-ru",
+        "prov-ex-u7-adverb-0-en",
+        "prov-ex-u7-adverb-1-en",
+        "prov-ex-u7-adverb-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u7-i-adverb-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "хорошо",
+    "options": [
+      "well",
+      "quickly",
+      "wonderfully"
+    ],
+    "answer": "well",
+    "feedback": "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\").",
+    "objectiveId": "obj-u7-adverb",
+    "sourceId": "src-wikipedia-adverb-1374548415",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+      "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\")."
+    ],
+    "assessment": {
+      "testedFeature": "ADVERB_WELL",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u7-adverb-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u7-adverb-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u7-adverb-0-en",
+        "prov-ex-u7-adverb-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+        "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\").",
+      "contrastMembers": [
+        "well",
+        "quickly",
+        "wonderfully"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u7-adverb-1-ru",
+        "prov-ex-u7-adverb-1-en",
+        "prov-ex-u7-adverb-0-en",
+        "prov-ex-u7-adverb-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u7-i-adverb-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "прекрасно",
+    "options": [
+      "wonderfully",
+      "quickly",
+      "well"
+    ],
+    "answer": "wonderfully",
+    "feedback": "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\").",
+    "objectiveId": "obj-u7-adverb",
+    "sourceId": "src-wikipedia-adverb-1374548415",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+      "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\")."
+    ],
+    "assessment": {
+      "testedFeature": "ADVERB_WONDERFULLY",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u7-adverb-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u7-adverb-2-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u7-adverb-0-en",
+        "prov-ex-u7-adverb-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "The frozen source pairs the shown form \"быстро\" with the admitted gloss \"quickly\" (\"while in Russian\").",
+        "The frozen source pairs the shown form \"хорошо\" with the admitted gloss \"well\" (\"while in Russian\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"прекрасно\" with the admitted gloss \"wonderfully\" (\"while in Russian\").",
+      "contrastMembers": [
+        "wonderfully",
+        "quickly",
+        "well"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u7-adverb-2-ru",
+        "prov-ex-u7-adverb-2-en",
+        "prov-ex-u7-adverb-0-en",
+        "prov-ex-u7-adverb-1-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u8-g-plural-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "сто́л",
+    "options": [
+      "столы́",
+      "сто́л"
+    ],
+    "answer": "столы́",
+    "feedback": "сто́л is the singular nominative form; столы́ is the plural nominative form of the same noun.",
+    "objectiveId": "obj-u8-plural",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "сто́л is the singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PLURAL_FORMATION",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-plural-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u8-plural-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-plural-0"
+      ],
+      "distractorDifference": [
+        "",
+        "сто́л is the singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "сто́л is the singular nominative form; столы́ is the plural nominative form of the same noun.",
+      "contrastMembers": [
+        "столы́",
+        "сто́л"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-plural-0",
+        "prov-ex-or-u8-plural-1",
+        "prov-ex-or-u8-plural-0"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-plural-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "го́род",
+    "options": [
+      "города́",
+      "го́род"
+    ],
+    "answer": "города́",
+    "feedback": "го́род is the singular nominative form; города́ is the plural nominative form of the same noun.",
+    "objectiveId": "obj-u8-plural",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "го́род is the singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PLURAL_FORMATION",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-plural-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-plural-3"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-plural-2"
+      ],
+      "distractorDifference": [
+        "",
+        "го́род is the singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "го́род is the singular nominative form; города́ is the plural nominative form of the same noun.",
+      "contrastMembers": [
+        "города́",
+        "го́род"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-plural-2",
+        "prov-ex-or-u8-plural-3",
+        "prov-ex-or-u8-plural-2"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-plural-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "окно́",
+    "options": [
+      "о́кна",
+      "окно́"
+    ],
+    "answer": "о́кна",
+    "feedback": "окно́ is the singular nominative form; о́кна is the plural nominative form of the same noun.",
+    "objectiveId": "obj-u8-plural",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "окно́ is the singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PLURAL_FORMATION",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-plural-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-plural-7"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-plural-6"
+      ],
+      "distractorDifference": [
+        "",
+        "окно́ is the singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "окно́ is the singular nominative form; о́кна is the plural nominative form of the same noun.",
+      "contrastMembers": [
+        "о́кна",
+        "окно́"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-plural-6",
+        "prov-ex-or-u8-plural-7",
+        "prov-ex-or-u8-plural-6"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-plural-3",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "ма́ма",
+    "options": [
+      "ма́мы",
+      "ма́ма"
+    ],
+    "answer": "ма́мы",
+    "feedback": "ма́ма is the singular nominative form; ма́мы is the plural nominative form of the same noun.",
+    "objectiveId": "obj-u8-plural",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "ма́ма is the singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PLURAL_FORMATION",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-plural-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-plural-9"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-plural-8"
+      ],
+      "distractorDifference": [
+        "",
+        "ма́ма is the singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "ма́ма is the singular nominative form; ма́мы is the plural nominative form of the same noun.",
+      "contrastMembers": [
+        "ма́мы",
+        "ма́ма"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-plural-8",
+        "prov-ex-or-u8-plural-9",
+        "prov-ex-or-u8-plural-8"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-plural-4",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "до́м",
+    "options": [
+      "дома́",
+      "до́м"
+    ],
+    "answer": "дома́",
+    "feedback": "до́м is the singular nominative form; дома́ is the plural nominative form of the same noun.",
+    "objectiveId": "obj-u8-plural",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "до́м is the singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PLURAL_FORMATION",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-plural-4",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-plural-11"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-plural-10"
+      ],
+      "distractorDifference": [
+        "",
+        "до́м is the singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "до́м is the singular nominative form; дома́ is the plural nominative form of the same noun.",
+      "contrastMembers": [
+        "дома́",
+        "до́м"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-plural-10",
+        "prov-ex-or-u8-plural-11",
+        "prov-ex-or-u8-plural-10"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-plural-5",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "сло́во",
+    "options": [
+      "слова́",
+      "сло́во"
+    ],
+    "answer": "слова́",
+    "feedback": "сло́во is the singular nominative form; слова́ is the plural nominative form of the same noun.",
+    "objectiveId": "obj-u8-plural",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "сло́во is the singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PLURAL_FORMATION",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-plural-5",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-plural-13"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-plural-12"
+      ],
+      "distractorDifference": [
+        "",
+        "сло́во is the singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "сло́во is the singular nominative form; слова́ is the plural nominative form of the same noun.",
+      "contrastMembers": [
+        "слова́",
+        "сло́во"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-plural-12",
+        "prov-ex-or-u8-plural-13",
+        "prov-ex-or-u8-plural-12"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-plural-6",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "кни́га",
+    "options": [
+      "кни́ги",
+      "кни́га"
+    ],
+    "answer": "кни́ги",
+    "feedback": "кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.",
+    "objectiveId": "obj-u8-plural",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "кни́га is the singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PLURAL_FORMATION",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-plural-6",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-plural-5"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-plural-4"
+      ],
+      "distractorDifference": [
+        "",
+        "кни́га is the singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.",
+      "contrastMembers": [
+        "кни́ги",
+        "кни́га"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-plural-4",
+        "prov-ex-or-u8-plural-5",
+        "prov-ex-or-u8-plural-4"
+      ]
+    }
+  },
+  {
+    "id": "u8-g-spelling-0",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "кни́га",
+    "options": [
+      "кни́ги",
+      "кни́га"
+    ],
+    "answer": "кни́ги",
+    "feedback": "кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.",
+    "objectiveId": "obj-u8-spelling",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "кни́га is the singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "NOUN_NOMINATIVE_NUMBER_FORM",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-spelling-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u8-spelling-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-spelling-3"
+      ],
+      "distractorDifference": [
+        "",
+        "кни́га is the singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "кни́га is the singular nominative form; кни́ги is the plural nominative form of the same noun.",
+      "contrastMembers": [
+        "кни́ги",
+        "кни́га"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-spelling-3",
+        "prov-ex-or-u8-spelling-4",
+        "prov-ex-or-u8-spelling-3"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-spelling-1",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which singular nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "кни́ги",
+    "options": [
+      "кни́га",
+      "кни́ги"
+    ],
+    "answer": "кни́га",
+    "feedback": "кни́ги is the plural nominative form; кни́га is the singular nominative form of the same noun.",
+    "objectiveId": "obj-u8-spelling",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "кни́ги is the plural nominative form, so it does not supply the requested singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "NOUN_NOMINATIVE_NUMBER_FORM",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-spelling-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-spelling-3"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-spelling-4"
+      ],
+      "distractorDifference": [
+        "",
+        "кни́ги is the plural nominative form, so it does not supply the requested singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "кни́ги is the plural nominative form; кни́га is the singular nominative form of the same noun.",
+      "contrastMembers": [
+        "кни́га",
+        "кни́ги"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-spelling-4",
+        "prov-ex-or-u8-spelling-3",
+        "prov-ex-or-u8-spelling-4"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-spelling-2",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same adjective corresponds to the shown form?",
+    "promptLetter": "хоро́шее",
+    "options": [
+      "хоро́шие",
+      "хоро́шее"
+    ],
+    "answer": "хоро́шие",
+    "feedback": "хоро́шее is the neuter singular nominative form; хоро́шие is the plural nominative form of the same adjective.",
+    "objectiveId": "obj-u8-spelling",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_NOMINATIVE_FORM",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-spelling-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-spelling-2"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-spelling-6"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шее is the neuter singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́шее is the neuter singular nominative form; хоро́шие is the plural nominative form of the same adjective.",
+      "contrastMembers": [
+        "хоро́шие",
+        "хоро́шее"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-spelling-6",
+        "prov-ex-or-u8-spelling-2",
+        "prov-ex-or-u8-spelling-6"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-spelling-3",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which neuter singular nominative form of the same adjective corresponds to the shown form?",
+    "promptLetter": "хоро́шие",
+    "options": [
+      "хоро́шее",
+      "хоро́шие"
+    ],
+    "answer": "хоро́шее",
+    "feedback": "хоро́шие is the plural nominative form; хоро́шее is the neuter singular nominative form of the same adjective.",
+    "objectiveId": "obj-u8-spelling",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_NOMINATIVE_FORM",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-spelling-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-spelling-6"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-spelling-2"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шие is the plural nominative form, so it does not supply the requested neuter singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́шие is the plural nominative form; хоро́шее is the neuter singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "хоро́шее",
+        "хоро́шие"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-spelling-2",
+        "prov-ex-or-u8-spelling-6",
+        "prov-ex-or-u8-spelling-2"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-spelling-4",
+    "kind": "PATTERN_CLASSIFICATION",
+    "language": "en",
+    "prompt": "Which dictionary form (masculine singular nominative) belongs to the same adjective as the shown form?",
+    "promptLetter": "хоро́шее",
+    "options": [
+      "хоро́ший",
+      "хоро́шие"
+    ],
+    "answer": "хоро́ший",
+    "feedback": "хоро́шее is the neuter singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u8-spelling",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "ADJECTIVE_NOMINATIVE_FORM",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-spelling-4",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-spelling-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-spelling-2"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шие is the plural nominative form, so it does not supply the requested masculine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́шее is the neuter singular nominative form; хоро́ший is the masculine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "хоро́ший",
+        "хоро́шие"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-spelling-6",
+        "prov-ex-or-u8-spelling-1",
+        "prov-ex-or-u8-spelling-2"
+      ]
+    }
+  },
+  {
+    "id": "u8-g-irregular-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "брат",
+    "options": [
+      "бра́тья",
+      "брат"
+    ],
+    "answer": "бра́тья",
+    "feedback": "брат is the singular nominative form; бра́тья is the plural nominative form of the same noun.",
+    "objectiveId": "obj-u8-irregular",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "брат is the singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "IRREGULAR_PLURAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-irregular-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u8-irregular-2"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-irregular-1"
+      ],
+      "distractorDifference": [
+        "",
+        "брат is the singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "брат is the singular nominative form; бра́тья is the plural nominative form of the same noun.",
+      "contrastMembers": [
+        "бра́тья",
+        "брат"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-irregular-1",
+        "prov-ex-or-u8-irregular-2",
+        "prov-ex-or-u8-irregular-1"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-irregular-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "челове́к",
+    "options": [
+      "лю́ди",
+      "челове́к"
+    ],
+    "answer": "лю́ди",
+    "feedback": "челове́к is the singular nominative form; лю́ди is the plural nominative form of the same noun.",
+    "objectiveId": "obj-u8-irregular",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "челове́к is the singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "IRREGULAR_PLURAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-irregular-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-irregular-6"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-irregular-5"
+      ],
+      "distractorDifference": [
+        "",
+        "челове́к is the singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "челове́к is the singular nominative form; лю́ди is the plural nominative form of the same noun.",
+      "contrastMembers": [
+        "лю́ди",
+        "челове́к"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-irregular-5",
+        "prov-ex-or-u8-irregular-6",
+        "prov-ex-or-u8-irregular-5"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-irregular-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "друг",
+    "options": [
+      "друзья́",
+      "друг"
+    ],
+    "answer": "друзья́",
+    "feedback": "друг is the singular nominative form; друзья́ is the plural nominative form of the same noun.",
+    "objectiveId": "obj-u8-irregular",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "друг is the singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "IRREGULAR_PLURAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-irregular-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-irregular-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-irregular-3"
+      ],
+      "distractorDifference": [
+        "",
+        "друг is the singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "друг is the singular nominative form; друзья́ is the plural nominative form of the same noun.",
+      "contrastMembers": [
+        "друзья́",
+        "друг"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-irregular-3",
+        "prov-ex-or-u8-irregular-4",
+        "prov-ex-or-u8-irregular-3"
+      ]
+    }
+  },
+  {
+    "id": "u8-i-irregular-3",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which plural nominative form of the same noun corresponds to the shown form?",
+    "promptLetter": "сы́н",
+    "options": [
+      "сыновья́",
+      "сы́н"
+    ],
+    "answer": "сыновья́",
+    "feedback": "сы́н is the singular nominative form; сыновья́ is the plural nominative form of the same noun.",
+    "objectiveId": "obj-u8-irregular",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "сы́н is the singular nominative form, so it does not supply the requested plural nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "IRREGULAR_PLURAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u8-irregular-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u8-irregular-8"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u8-irregular-7"
+      ],
+      "distractorDifference": [
+        "",
+        "сы́н is the singular nominative form, so it does not supply the requested plural nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "сы́н is the singular nominative form; сыновья́ is the plural nominative form of the same noun.",
+      "contrastMembers": [
+        "сыновья́",
+        "сы́н"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u8-irregular-7",
+        "prov-ex-or-u8-irregular-8",
+        "prov-ex-or-u8-irregular-7"
+      ]
+    }
+  }
+]

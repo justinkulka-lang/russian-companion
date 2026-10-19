@@ -1,0 +1,1250 @@
+[
+  {
+    "itemId": "prov-obj-u27-stress-23",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "Which stress placement is admitted for the read past passive?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "45831f9f917722d8affecc8304337905d9eb62c0b05ea6555c6508e440dc02c6",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-24",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "the past passive of прочитать",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "85eb5a230806f0ce5b1433ac5e38e9411bf6f4001b109e7ca690e1088a972352",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-25",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "прочи́танный",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "fa8af5079671527f241f6ed5e15c596ee11ad2cfcbc6373e3e3d3df1b7b9bdd8",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-26",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "Admitted reading: прочи́танный",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "8cc1a5bf6b66b0f5a520fad8ebb3a3315f202e49e9528e3435f10a6a4f0211af",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-27",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "прочита́нный",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "6ea48e2c6c35c99d0176e8f46320b8c6ee2dea1bb6d324c411bea2adbf84e667",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-28",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "Rejected reading: прочита́нный",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "fde75680c029b320a3ea187f6465bf2e5705ef3d6844cdb45a96c1134111c5fd",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-29",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "Which English description states the limit of these four stress placements?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "b49fafc5a1adc1b3f7973f974625e70b369ceb366f7a06690b53674624943e15",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-30",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "an unlisted participle",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "10f23638f708f3e5f7953b81d4bc45a442818f1dca6b591b7db017bcbf784b09",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-31",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "no stress rule is admitted beyond these four",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "75ea8af2d86bfe1c866dfc6d4e0869a5fb0acde34adb88d5b71f81b1d3b72e65",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-32",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "Admitted reading: no stress rule is admitted beyond these four",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "9bc21b724c4ac14d24b4f145a7a6e2f839f8b49efedc15a5b56edb5b6ca49afd",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-33",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "these four placements generate every other participle",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "a89e264456ed087fcaea9c448608fc8bd6db98c494869c90e5fe27a1ae2ad074",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-34",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "Rejected reading: these four placements generate every other participle",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "7f085ffb41d881c5e9350d8747ab117d6d78a3e46c721b66becda3b162309a12",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-35",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "оставлять",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "be346ab6ec5ce427362920c39cc57d8258a7ea4c22fb7a36e8bf7023b6d72d4c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-36",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "обсуждать",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "cfb0df3d5aefe98fab8f2359d2716c02e6351161b57dc418a6365dbfa10ffd92",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-37",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "написать",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "af8dc7198e87e1fd21187ecbfdc67d7b3aba122e02c4f85ebc810ce243b5f06a",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-stress-38",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-stress",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-stress",
+    "shippedText": "прочитать",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "e4dad2bc4f594d302dce65ba8a62029020023ef247c0984eb98378b6784f53a7",
+    "contentHash": "bbf63ed13d66b8cfe44a6f623de94deb350bbb807abafd0406840050dd17c01c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wiktionary ostavlyaemyy oldid 74231596, obsuzhdaemyy oldid 74233962, napisannyy oldid 74228228, and prochitannyy oldid 74232159, under Wiktionary Copyrights oldid 87545419, consulted 2026-09-30. The four accent placements are a closed list. No productive stress rule is inferred.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-stress:participle-stress",
+      "applications": [
+        {
+          "cue": "the present passive of оставлять",
+          "answer": "оставля́емый",
+          "distractors": [
+            "оставляемы́й"
+          ]
+        },
+        {
+          "cue": "the present passive of обсуждать",
+          "answer": "обсужда́емый",
+          "distractors": [
+            "обсуждаемы́й"
+          ]
+        },
+        {
+          "cue": "the past passive of написать",
+          "answer": "напи́санный",
+          "distractors": [
+            "написа́нный"
+          ]
+        },
+        {
+          "cue": "the past passive of прочитать",
+          "answer": "прочи́танный",
+          "distractors": [
+            "прочита́нный"
+          ]
+        },
+        {
+          "cue": "an unlisted participle",
+          "answer": "no stress rule is admitted beyond these four",
+          "distractors": [
+            "these four placements generate every other participle"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Only these four accent placements are admitted, and a different accent on the same letters is rejected.\nSeeing an accent mark, or choosing a headword instead of an infinitive, does not test the placement.\nThese four placements do not generate stress for an unlisted participle.\nCompare the admitted accent with the rejected accent on the same letters.\nоставля́емый\nadmitted stress placement\nнапи́санный\nWhich stress placement is admitted for the leave-behind present passive?\nthe present passive of оставлять\nAdmitted reading: оставля́емый\nоставляемы́й\nRejected reading: оставляемы́й\nWhich stress placement is admitted for the discuss present passive?\nthe present passive of обсуждать\nобсужда́емый\nAdmitted reading: обсужда́емый\nобсуждаемы́й\nRejected reading: обсуждаемы́й\nWhich stress placement is admitted for the write past passive?\nthe past passive of написать\nAdmitted reading: напи́санный\nнаписа́нный\nRejected reading: написа́нный\nWhich stress placement is admitted for the read past passive?\nthe past passive of прочитать\nпрочи́танный\nAdmitted reading: прочи́танный\nпрочита́нный\nRejected reading: прочита́нный\nWhich English description states the limit of these four stress placements?\nan unlisted participle\nno stress rule is admitted beyond these four\nAdmitted reading: no stress rule is admitted beyond these four\nthese four placements generate every other participle\nRejected reading: these four placements generate every other participle\nоставлять\nобсуждать\nнаписать\nпрочитать"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-0",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Read the participial phrase for who did the action and what the result is.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "b01b39caa41ff76e2b1ce7517d7d6a234697ccf4a9caa4b1733c9c8a5c6890a1",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-1",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Stress placement is a different objective and does not answer these readings.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "b5067ccd1370d9d184c492a0348a68e968bf813e3daa3ce531d5af4c4ae753eb",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-2",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Return to who wrote the letter and what Anna did after reading it.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "114d2d25d139f91d6aa5be309b6f294581088a86898cccea762d2ac87735e464",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-3",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Письмо, написанное Анной, лежит на столе.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "8e7f6e498e17b1e8b5d09a319e2330de197d08775436c7c03e0dfbf4e9788c1a",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  }
+]

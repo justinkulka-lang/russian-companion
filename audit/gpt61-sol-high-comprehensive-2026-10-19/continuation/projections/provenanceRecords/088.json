@@ -1,0 +1,1010 @@
+[
+  {
+    "itemId": "prov-ca-17-527",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-calendar-date",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u17-i-calendar-date-2",
+    "shippedText": "The whole date includes the day, the month, and the year.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740",
+    "contentHash": "4082ea31a4834fa9c93882ab332660fb420fe567145dc2946cd7890d7100ffba",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u17-calendar-date:WHOLE_DATE",
+      "applications": [
+        {
+          "cue": "15 мая 1996 г.",
+          "answer": "15 May 1996",
+          "distractors": [
+            "the month alone",
+            "the year abbreviation alone"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\n15 мая 1996 г.\n15 May 1996\nWhich reading translates the whole shown date?\n15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.\nThe whole date includes the day, the month, and the year.\nthe month alone\nthe year abbreviation alone\nthe month alone drops the day and the year.\nthe year abbreviation alone drops the day and the month.\nмая\nг.\nг"
+  },
+  {
+    "itemId": "prov-ca-17-528",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-calendar-date",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u17-i-calendar-date-2",
+    "shippedText": "the month alone",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740",
+    "contentHash": "6d7b19d145e9b18691e49332c04f13ffa37b6403faba671f0742188ea0be0b68",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u17-calendar-date:WHOLE_DATE",
+      "applications": [
+        {
+          "cue": "15 мая 1996 г.",
+          "answer": "15 May 1996",
+          "distractors": [
+            "the month alone",
+            "the year abbreviation alone"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\n15 мая 1996 г.\n15 May 1996\nWhich reading translates the whole shown date?\n15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.\nThe whole date includes the day, the month, and the year.\nthe month alone\nthe year abbreviation alone\nthe month alone drops the day and the year.\nthe year abbreviation alone drops the day and the month.\nмая\nг.\nг"
+  },
+  {
+    "itemId": "prov-ca-17-529",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-calendar-date",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u17-i-calendar-date-2",
+    "shippedText": "the year abbreviation alone",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740",
+    "contentHash": "ee8f3dc4b79dc84727f327f2afe6cd21cfe0adb18c21476f136bc629a8fd625f",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u17-calendar-date:WHOLE_DATE",
+      "applications": [
+        {
+          "cue": "15 мая 1996 г.",
+          "answer": "15 May 1996",
+          "distractors": [
+            "the month alone",
+            "the year abbreviation alone"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\n15 мая 1996 г.\n15 May 1996\nWhich reading translates the whole shown date?\n15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.\nThe whole date includes the day, the month, and the year.\nthe month alone\nthe year abbreviation alone\nthe month alone drops the day and the year.\nthe year abbreviation alone drops the day and the month.\nмая\nг.\nг"
+  },
+  {
+    "itemId": "prov-ca-17-530",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-calendar-date",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u17-i-calendar-date-2",
+    "shippedText": "the month alone drops the day and the year.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740",
+    "contentHash": "c9bdad60c8f2395279652563ee3392ea525632c7743a0d0eede39f6a7ecd4813",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u17-calendar-date:WHOLE_DATE",
+      "applications": [
+        {
+          "cue": "15 мая 1996 г.",
+          "answer": "15 May 1996",
+          "distractors": [
+            "the month alone",
+            "the year abbreviation alone"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\n15 мая 1996 г.\n15 May 1996\nWhich reading translates the whole shown date?\n15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.\nThe whole date includes the day, the month, and the year.\nthe month alone\nthe year abbreviation alone\nthe month alone drops the day and the year.\nthe year abbreviation alone drops the day and the month.\nмая\nг.\nг"
+  },
+  {
+    "itemId": "prov-ca-17-531",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-calendar-date",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u17-i-calendar-date-2",
+    "shippedText": "the year abbreviation alone drops the day and the month.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740",
+    "contentHash": "afdc2d4b1896b0409cdd062d4ea449215497565e4a9ba169a0aa68d2044757e0",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u17-calendar-date:WHOLE_DATE",
+      "applications": [
+        {
+          "cue": "15 мая 1996 г.",
+          "answer": "15 May 1996",
+          "distractors": [
+            "the month alone",
+            "the year abbreviation alone"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\n15 мая 1996 г.\n15 May 1996\nWhich reading translates the whole shown date?\n15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.\nThe whole date includes the day, the month, and the year.\nthe month alone\nthe year abbreviation alone\nthe month alone drops the day and the year.\nthe year abbreviation alone drops the day and the month.\nмая\nг.\nг"
+  },
+  {
+    "itemId": "prov-ca-17-532",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-calendar-date",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u17-i-calendar-date-2",
+    "shippedText": "мая",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740",
+    "contentHash": "2869fa115ca7749998b9ae98ef853d63449f68fcb9d7d9a63765a6d429bdfbad",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u17-calendar-date:WHOLE_DATE",
+      "applications": [
+        {
+          "cue": "15 мая 1996 г.",
+          "answer": "15 May 1996",
+          "distractors": [
+            "the month alone",
+            "the year abbreviation alone"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\n15 мая 1996 г.\n15 May 1996\nWhich reading translates the whole shown date?\n15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.\nThe whole date includes the day, the month, and the year.\nthe month alone\nthe year abbreviation alone\nthe month alone drops the day and the year.\nthe year abbreviation alone drops the day and the month.\nмая\nг.\nг"
+  },
+  {
+    "itemId": "prov-ca-17-533",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-calendar-date",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u17-i-calendar-date-2",
+    "shippedText": "г.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740",
+    "contentHash": "4c739afeeefc7cb4ea9af5b046f08480625b2f4363d14c041f1311a1bfb78c40",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u17-calendar-date:WHOLE_DATE",
+      "applications": [
+        {
+          "cue": "15 мая 1996 г.",
+          "answer": "15 May 1996",
+          "distractors": [
+            "the month alone",
+            "the year abbreviation alone"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\n15 мая 1996 г.\n15 May 1996\nWhich reading translates the whole shown date?\n15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.\nThe whole date includes the day, the month, and the year.\nthe month alone\nthe year abbreviation alone\nthe month alone drops the day and the year.\nthe year abbreviation alone drops the day and the month.\nмая\nг.\nг"
+  },
+  {
+    "itemId": "prov-ca-17-534",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-calendar-date",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u17-i-calendar-date-2",
+    "shippedText": "г",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "bc5b3176bd862c62109708c4783cc87f9b9c45388d999197f25098c693b1b740",
+    "contentHash": "ab1f4be7e5d6fd8b9fec4b5c00233d0b895abb00b0bdf4c7a03b7e403246691e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u17-calendar-date:WHOLE_DATE",
+      "applications": [
+        {
+          "cue": "15 мая 1996 г.",
+          "answer": "15 May 1996",
+          "distractors": [
+            "the month alone",
+            "the year abbreviation alone"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\n15 мая 1996 г.\n15 May 1996\nWhich reading translates the whole shown date?\n15 мая 1996 г. is the whole date 15 May 1996. Asking only about г. is a different item.\nThe whole date includes the day, the month, and the year.\nthe month alone\nthe year abbreviation alone\nthe month alone drops the day and the year.\nthe year abbreviation alone drops the day and the month.\nмая\nг.\nг"
+  },
+  {
+    "itemId": "prov-ca-19-535",
+    "unitNumber": 19,
+    "objectiveId": "obj-u19-conditional",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u19-i-conditional-2",
+    "shippedText": "я бы поспала́",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584",
+    "contentHash": "97ecff87f08fcb538f8aec0cd47a6a334947c96746d844413493b356278d4ceb",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u19-conditional:CONDITIONAL_FEMININE_SPEAKER",
+      "applications": [
+        {
+          "cue": "я бы поспала́",
+          "answer": "the speaker is marked feminine",
+          "distractors": [
+            "the speaker is marked masculine",
+            "the sentence is about another person"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nя бы поспала́\nthe speaker is marked feminine\nWhat does the past form in я бы поспала́ mark?\nпоспала́ marks a feminine speaker. The wish to sleep is a different question.\nThe feminine past поспала́ marks the speaker as feminine in this conditional.\nthe speaker is marked masculine\nthe sentence is about another person\nthe speaker is marked masculine would use a masculine past form.\nthe sentence is about another person is not what the first-person pronoun states.\nпоспала́"
+  },
+  {
+    "itemId": "prov-ca-19-536",
+    "unitNumber": 19,
+    "objectiveId": "obj-u19-conditional",
+    "recordType": "meaning",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u19-i-conditional-2",
+    "shippedText": "the speaker is marked feminine",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584",
+    "contentHash": "d0b660d3b5fc92caea4bb312953c80c1c78e1f559a6dee0424ad75c57136f5a6",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u19-conditional:CONDITIONAL_FEMININE_SPEAKER",
+      "applications": [
+        {
+          "cue": "я бы поспала́",
+          "answer": "the speaker is marked feminine",
+          "distractors": [
+            "the speaker is marked masculine",
+            "the sentence is about another person"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nя бы поспала́\nthe speaker is marked feminine\nWhat does the past form in я бы поспала́ mark?\nпоспала́ marks a feminine speaker. The wish to sleep is a different question.\nThe feminine past поспала́ marks the speaker as feminine in this conditional.\nthe speaker is marked masculine\nthe sentence is about another person\nthe speaker is marked masculine would use a masculine past form.\nthe sentence is about another person is not what the first-person pronoun states.\nпоспала́"
+  },
+  {
+    "itemId": "prov-ca-19-537",
+    "unitNumber": 19,
+    "objectiveId": "obj-u19-conditional",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u19-i-conditional-2",
+    "shippedText": "What does the past form in я бы поспала́ mark?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584",
+    "contentHash": "f759a5e1a08905cd724f2985515706fa50ae3a276f375893948387fc8a5f3730",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u19-conditional:CONDITIONAL_FEMININE_SPEAKER",
+      "applications": [
+        {
+          "cue": "я бы поспала́",
+          "answer": "the speaker is marked feminine",
+          "distractors": [
+            "the speaker is marked masculine",
+            "the sentence is about another person"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nя бы поспала́\nthe speaker is marked feminine\nWhat does the past form in я бы поспала́ mark?\nпоспала́ marks a feminine speaker. The wish to sleep is a different question.\nThe feminine past поспала́ marks the speaker as feminine in this conditional.\nthe speaker is marked masculine\nthe sentence is about another person\nthe speaker is marked masculine would use a masculine past form.\nthe sentence is about another person is not what the first-person pronoun states.\nпоспала́"
+  },
+  {
+    "itemId": "prov-ca-19-538",
+    "unitNumber": 19,
+    "objectiveId": "obj-u19-conditional",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u19-i-conditional-2",
+    "shippedText": "поспала́ marks a feminine speaker. The wish to sleep is a different question.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584",
+    "contentHash": "aa5409940142acf54527ec5ca8b77d37a68023712b3c920ad12cfd1f75e1bb68",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u19-conditional:CONDITIONAL_FEMININE_SPEAKER",
+      "applications": [
+        {
+          "cue": "я бы поспала́",
+          "answer": "the speaker is marked feminine",
+          "distractors": [
+            "the speaker is marked masculine",
+            "the sentence is about another person"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nя бы поспала́\nthe speaker is marked feminine\nWhat does the past form in я бы поспала́ mark?\nпоспала́ marks a feminine speaker. The wish to sleep is a different question.\nThe feminine past поспала́ marks the speaker as feminine in this conditional.\nthe speaker is marked masculine\nthe sentence is about another person\nthe speaker is marked masculine would use a masculine past form.\nthe sentence is about another person is not what the first-person pronoun states.\nпоспала́"
+  },
+  {
+    "itemId": "prov-ca-19-539",
+    "unitNumber": 19,
+    "objectiveId": "obj-u19-conditional",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u19-i-conditional-2",
+    "shippedText": "The feminine past поспала́ marks the speaker as feminine in this conditional.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584",
+    "contentHash": "28d24196e86e2ae758554a3e39bc100030a95ace9e33e882a222d89544f779da",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u19-conditional:CONDITIONAL_FEMININE_SPEAKER",
+      "applications": [
+        {
+          "cue": "я бы поспала́",
+          "answer": "the speaker is marked feminine",
+          "distractors": [
+            "the speaker is marked masculine",
+            "the sentence is about another person"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nя бы поспала́\nthe speaker is marked feminine\nWhat does the past form in я бы поспала́ mark?\nпоспала́ marks a feminine speaker. The wish to sleep is a different question.\nThe feminine past поспала́ marks the speaker as feminine in this conditional.\nthe speaker is marked masculine\nthe sentence is about another person\nthe speaker is marked masculine would use a masculine past form.\nthe sentence is about another person is not what the first-person pronoun states.\nпоспала́"
+  },
+  {
+    "itemId": "prov-ca-19-540",
+    "unitNumber": 19,
+    "objectiveId": "obj-u19-conditional",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u19-i-conditional-2",
+    "shippedText": "the speaker is marked masculine",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584",
+    "contentHash": "5839d5e8fc5f3c51075bd052090f58431b3423eef857c05b5a4878c2efa1def6",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u19-conditional:CONDITIONAL_FEMININE_SPEAKER",
+      "applications": [
+        {
+          "cue": "я бы поспала́",
+          "answer": "the speaker is marked feminine",
+          "distractors": [
+            "the speaker is marked masculine",
+            "the sentence is about another person"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nя бы поспала́\nthe speaker is marked feminine\nWhat does the past form in я бы поспала́ mark?\nпоспала́ marks a feminine speaker. The wish to sleep is a different question.\nThe feminine past поспала́ marks the speaker as feminine in this conditional.\nthe speaker is marked masculine\nthe sentence is about another person\nthe speaker is marked masculine would use a masculine past form.\nthe sentence is about another person is not what the first-person pronoun states.\nпоспала́"
+  },
+  {
+    "itemId": "prov-ca-19-541",
+    "unitNumber": 19,
+    "objectiveId": "obj-u19-conditional",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u19-i-conditional-2",
+    "shippedText": "the sentence is about another person",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584",
+    "contentHash": "4474ba3b613f1bf56981345c90dd0d6aeae9f9720d4b5c948bd603a257a60daf",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u19-conditional:CONDITIONAL_FEMININE_SPEAKER",
+      "applications": [
+        {
+          "cue": "я бы поспала́",
+          "answer": "the speaker is marked feminine",
+          "distractors": [
+            "the speaker is marked masculine",
+            "the sentence is about another person"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nя бы поспала́\nthe speaker is marked feminine\nWhat does the past form in я бы поспала́ mark?\nпоспала́ marks a feminine speaker. The wish to sleep is a different question.\nThe feminine past поспала́ marks the speaker as feminine in this conditional.\nthe speaker is marked masculine\nthe sentence is about another person\nthe speaker is marked masculine would use a masculine past form.\nthe sentence is about another person is not what the first-person pronoun states.\nпоспала́"
+  },
+  {
+    "itemId": "prov-ca-19-542",
+    "unitNumber": 19,
+    "objectiveId": "obj-u19-conditional",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u19-i-conditional-2",
+    "shippedText": "the speaker is marked masculine would use a masculine past form.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584",
+    "contentHash": "f100815e289892ff0712a25ef78119a4c519c1a68b4af9199d9c1697933309b9",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u19-conditional:CONDITIONAL_FEMININE_SPEAKER",
+      "applications": [
+        {
+          "cue": "я бы поспала́",
+          "answer": "the speaker is marked feminine",
+          "distractors": [
+            "the speaker is marked masculine",
+            "the sentence is about another person"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nя бы поспала́\nthe speaker is marked feminine\nWhat does the past form in я бы поспала́ mark?\nпоспала́ marks a feminine speaker. The wish to sleep is a different question.\nThe feminine past поспала́ marks the speaker as feminine in this conditional.\nthe speaker is marked masculine\nthe sentence is about another person\nthe speaker is marked masculine would use a masculine past form.\nthe sentence is about another person is not what the first-person pronoun states.\nпоспала́"
+  },
+  {
+    "itemId": "prov-ca-19-543",
+    "unitNumber": 19,
+    "objectiveId": "obj-u19-conditional",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u19-i-conditional-2",
+    "shippedText": "the sentence is about another person is not what the first-person pronoun states.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584",
+    "contentHash": "86cfe3d28822d70285c0e3cbf4a5adf1c153a6586b7a3f0ad2c55436b9616822",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u19-conditional:CONDITIONAL_FEMININE_SPEAKER",
+      "applications": [
+        {
+          "cue": "я бы поспала́",
+          "answer": "the speaker is marked feminine",
+          "distractors": [
+            "the speaker is marked masculine",
+            "the sentence is about another person"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nя бы поспала́\nthe speaker is marked feminine\nWhat does the past form in я бы поспала́ mark?\nпоспала́ marks a feminine speaker. The wish to sleep is a different question.\nThe feminine past поспала́ marks the speaker as feminine in this conditional.\nthe speaker is marked masculine\nthe sentence is about another person\nthe speaker is marked masculine would use a masculine past form.\nthe sentence is about another person is not what the first-person pronoun states.\nпоспала́"
+  },
+  {
+    "itemId": "prov-ca-19-544",
+    "unitNumber": 19,
+    "objectiveId": "obj-u19-conditional",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u19-i-conditional-2",
+    "shippedText": "поспала́",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "0c9c4360936b6a37398159e71b5fae8ed0a4cde4a84736eb2a2fb756c017c584",
+    "contentHash": "9cc99adef3681742ce4b66e7789256dff952225c939e763e79ea65e3e2c39091",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u19-conditional:CONDITIONAL_FEMININE_SPEAKER",
+      "applications": [
+        {
+          "cue": "я бы поспала́",
+          "answer": "the speaker is marked feminine",
+          "distractors": [
+            "the speaker is marked masculine",
+            "the sentence is about another person"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nя бы поспала́\nthe speaker is marked feminine\nWhat does the past form in я бы поспала́ mark?\nпоспала́ marks a feminine speaker. The wish to sleep is a different question.\nThe feminine past поспала́ marks the speaker as feminine in this conditional.\nthe speaker is marked masculine\nthe sentence is about another person\nthe speaker is marked masculine would use a masculine past form.\nthe sentence is about another person is not what the first-person pronoun states.\nпоспала́"
+  },
+  {
+    "itemId": "prov-ca-20-545",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-3",
+    "shippedText": "Он пошёл к другу.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3",
+    "contentHash": "3d8c9926bcea41b886766d3d461ca670ef2c69c0eed6623748d6db87ec664634",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_SETTING_OUT",
+      "applications": [
+        {
+          "cue": "Он пошёл к другу.",
+          "answer": "he set off toward a friend",
+          "distractors": [
+            "he was already on the way for a long time",
+            "he refused to go"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nОн пошёл к другу.\nhe set off toward a friend\nWhich reading matches the perfective setting-out verb?\nпошёл presents setting out toward a friend. A synonym of that same reading is not a second option.\nThe perfective пошёл presents the start of the trip, one reading.\nhe was already on the way for a long time\nhe refused to go\nhe was already on the way for a long time is an imperfective duration reading.\nhe refused to go contradicts the motion verb.\nОн пошёл к другу\nпошёл"
+  },
+  {
+    "itemId": "prov-ca-20-546",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "meaning",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-3",
+    "shippedText": "he set off toward a friend",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3",
+    "contentHash": "2523daeda7b21354c504ea74998053c3b9c2fd32c44465ec0ac4b687aba4bf20",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_SETTING_OUT",
+      "applications": [
+        {
+          "cue": "Он пошёл к другу.",
+          "answer": "he set off toward a friend",
+          "distractors": [
+            "he was already on the way for a long time",
+            "he refused to go"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nОн пошёл к другу.\nhe set off toward a friend\nWhich reading matches the perfective setting-out verb?\nпошёл presents setting out toward a friend. A synonym of that same reading is not a second option.\nThe perfective пошёл presents the start of the trip, one reading.\nhe was already on the way for a long time\nhe refused to go\nhe was already on the way for a long time is an imperfective duration reading.\nhe refused to go contradicts the motion verb.\nОн пошёл к другу\nпошёл"
+  },
+  {
+    "itemId": "prov-ca-20-547",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-3",
+    "shippedText": "Which reading matches the perfective setting-out verb?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3",
+    "contentHash": "be851f8c389c05e1f0c520bbde7b1d0200d02332e978cca7c35a75ca2b45a825",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_SETTING_OUT",
+      "applications": [
+        {
+          "cue": "Он пошёл к другу.",
+          "answer": "he set off toward a friend",
+          "distractors": [
+            "he was already on the way for a long time",
+            "he refused to go"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nОн пошёл к другу.\nhe set off toward a friend\nWhich reading matches the perfective setting-out verb?\nпошёл presents setting out toward a friend. A synonym of that same reading is not a second option.\nThe perfective пошёл presents the start of the trip, one reading.\nhe was already on the way for a long time\nhe refused to go\nhe was already on the way for a long time is an imperfective duration reading.\nhe refused to go contradicts the motion verb.\nОн пошёл к другу\nпошёл"
+  },
+  {
+    "itemId": "prov-ca-20-548",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-3",
+    "shippedText": "пошёл presents setting out toward a friend. A synonym of that same reading is not a second option.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3",
+    "contentHash": "b103c87a9e6d46252824548168321781176ad04a1d22193a42cedcd3942a53e0",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_SETTING_OUT",
+      "applications": [
+        {
+          "cue": "Он пошёл к другу.",
+          "answer": "he set off toward a friend",
+          "distractors": [
+            "he was already on the way for a long time",
+            "he refused to go"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nОн пошёл к другу.\nhe set off toward a friend\nWhich reading matches the perfective setting-out verb?\nпошёл presents setting out toward a friend. A synonym of that same reading is not a second option.\nThe perfective пошёл presents the start of the trip, one reading.\nhe was already on the way for a long time\nhe refused to go\nhe was already on the way for a long time is an imperfective duration reading.\nhe refused to go contradicts the motion verb.\nОн пошёл к другу\nпошёл"
+  },
+  {
+    "itemId": "prov-ca-20-549",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-3",
+    "shippedText": "The perfective пошёл presents the start of the trip, one reading.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3",
+    "contentHash": "d841d3ff169ea8cae9e016c0231d23d01437d5abec57f632cd0249c27ff6bdc6",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_SETTING_OUT",
+      "applications": [
+        {
+          "cue": "Он пошёл к другу.",
+          "answer": "he set off toward a friend",
+          "distractors": [
+            "he was already on the way for a long time",
+            "he refused to go"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nОн пошёл к другу.\nhe set off toward a friend\nWhich reading matches the perfective setting-out verb?\nпошёл presents setting out toward a friend. A synonym of that same reading is not a second option.\nThe perfective пошёл presents the start of the trip, one reading.\nhe was already on the way for a long time\nhe refused to go\nhe was already on the way for a long time is an imperfective duration reading.\nhe refused to go contradicts the motion verb.\nОн пошёл к другу\nпошёл"
+  },
+  {
+    "itemId": "prov-ca-20-550",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-3",
+    "shippedText": "he was already on the way for a long time",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3",
+    "contentHash": "5cd963b28ff24aff8dfde426fce5ea20888c7bbc95d6f8ff21fb857f31254d83",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_SETTING_OUT",
+      "applications": [
+        {
+          "cue": "Он пошёл к другу.",
+          "answer": "he set off toward a friend",
+          "distractors": [
+            "he was already on the way for a long time",
+            "he refused to go"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nОн пошёл к другу.\nhe set off toward a friend\nWhich reading matches the perfective setting-out verb?\nпошёл presents setting out toward a friend. A synonym of that same reading is not a second option.\nThe perfective пошёл presents the start of the trip, one reading.\nhe was already on the way for a long time\nhe refused to go\nhe was already on the way for a long time is an imperfective duration reading.\nhe refused to go contradicts the motion verb.\nОн пошёл к другу\nпошёл"
+  },
+  {
+    "itemId": "prov-ca-20-551",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-3",
+    "shippedText": "he refused to go",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3",
+    "contentHash": "8912d8f39dc28a27ebb14fca6db5e8c99ad7ba80b5c72f4acc45a0dc9a9784df",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_SETTING_OUT",
+      "applications": [
+        {
+          "cue": "Он пошёл к другу.",
+          "answer": "he set off toward a friend",
+          "distractors": [
+            "he was already on the way for a long time",
+            "he refused to go"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nОн пошёл к другу.\nhe set off toward a friend\nWhich reading matches the perfective setting-out verb?\nпошёл presents setting out toward a friend. A synonym of that same reading is not a second option.\nThe perfective пошёл presents the start of the trip, one reading.\nhe was already on the way for a long time\nhe refused to go\nhe was already on the way for a long time is an imperfective duration reading.\nhe refused to go contradicts the motion verb.\nОн пошёл к другу\nпошёл"
+  },
+  {
+    "itemId": "prov-ca-20-552",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-3",
+    "shippedText": "he was already on the way for a long time is an imperfective duration reading.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3",
+    "contentHash": "a67d1fbfd24f723bf86bb9fc4e009eff3e1ea3f163becdce2a13e42da6304d82",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_SETTING_OUT",
+      "applications": [
+        {
+          "cue": "Он пошёл к другу.",
+          "answer": "he set off toward a friend",
+          "distractors": [
+            "he was already on the way for a long time",
+            "he refused to go"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nОн пошёл к другу.\nhe set off toward a friend\nWhich reading matches the perfective setting-out verb?\nпошёл presents setting out toward a friend. A synonym of that same reading is not a second option.\nThe perfective пошёл presents the start of the trip, one reading.\nhe was already on the way for a long time\nhe refused to go\nhe was already on the way for a long time is an imperfective duration reading.\nhe refused to go contradicts the motion verb.\nОн пошёл к другу\nпошёл"
+  },
+  {
+    "itemId": "prov-ca-20-553",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-3",
+    "shippedText": "he refused to go contradicts the motion verb.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3",
+    "contentHash": "9b1a676fae33fb978ee63fe743811dc303cb0286b824cd28ff302a9c49280f8a",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_SETTING_OUT",
+      "applications": [
+        {
+          "cue": "Он пошёл к другу.",
+          "answer": "he set off toward a friend",
+          "distractors": [
+            "he was already on the way for a long time",
+            "he refused to go"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nОн пошёл к другу.\nhe set off toward a friend\nWhich reading matches the perfective setting-out verb?\nпошёл presents setting out toward a friend. A synonym of that same reading is not a second option.\nThe perfective пошёл presents the start of the trip, one reading.\nhe was already on the way for a long time\nhe refused to go\nhe was already on the way for a long time is an imperfective duration reading.\nhe refused to go contradicts the motion verb.\nОн пошёл к другу\nпошёл"
+  },
+  {
+    "itemId": "prov-ca-20-554",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-3",
+    "shippedText": "Он пошёл к другу",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "961e8e08243962a889cb76cdf5894c98bc58d34df09ea3a2016c53ada19ac2a3",
+    "contentHash": "9e6014b6bfbfa74df6c58ae14e85be78bff3be22d2c9a914bf0a2e0964cf6d64",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_SETTING_OUT",
+      "applications": [
+        {
+          "cue": "Он пошёл к другу.",
+          "answer": "he set off toward a friend",
+          "distractors": [
+            "he was already on the way for a long time",
+            "he refused to go"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nОн пошёл к другу.\nhe set off toward a friend\nWhich reading matches the perfective setting-out verb?\nпошёл presents setting out toward a friend. A synonym of that same reading is not a second option.\nThe perfective пошёл presents the start of the trip, one reading.\nhe was already on the way for a long time\nhe refused to go\nhe was already on the way for a long time is an imperfective duration reading.\nhe refused to go contradicts the motion verb.\nОн пошёл к другу\nпошёл"
+  }
+]

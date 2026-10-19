@@ -1,0 +1,482 @@
+[
+  {
+    "itemId": "prov-ca-u4-role-u4-g-nominative-1-prompt",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative-gloss-reference",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u4-nominative-gloss-reference:role:u4-g-nominative-1-prompt",
+    "shippedText": "Which admitted example is the shown sentence?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ff5c2581055726ae8e30e02a41eaf9dc9d52eda5da446bbb4dda4ef3555665fc",
+    "contentHash": "907a84f52d69de582a3f33281761991389d1fabf2eaf90866dbdf8cc8586711b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative-gloss-reference:role:u4-g-nominative-1-prompt",
+      "applications": []
+    },
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nWhich admitted example is the shown sentence?"
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-g-nominative-1-feedback",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative-gloss-reference",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u4-nominative-gloss-reference:role:u4-g-nominative-1-feedback",
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nМуж говорит uses the dictionary form as the subject: The husband is talking. Compare that subject with the admitted record before the independent check.",
+    "shippedText": "Муж говорит uses the dictionary form as the subject: The husband is talking. Compare that subject with the admitted record before the independent check.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "0c87a8cde0349cfeb5db9a0c56513d5d6185a1e9a0251cc8b9d89fe728a661ec",
+    "contentHash": "389b64f26cf6ec7eb8129512e7394680e788c7a8c2074731c8b15bbc3c0048b3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative-gloss-reference:role:u4-g-nominative-1-feedback",
+      "applications": []
+    }
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-i-nom-muzh-prompt",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative-gloss-reference",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u4-nominative-gloss-reference:role:u4-i-nom-muzh-prompt",
+    "shippedText": "Which admitted example is the shown sentence?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ff5c2581055726ae8e30e02a41eaf9dc9d52eda5da446bbb4dda4ef3555665fc",
+    "contentHash": "907a84f52d69de582a3f33281761991389d1fabf2eaf90866dbdf8cc8586711b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative-gloss-reference:role:u4-i-nom-muzh-prompt",
+      "applications": []
+    },
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nWhich admitted example is the shown sentence?"
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-i-nom-muzh-feedback",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative-gloss-reference",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u4-nominative-gloss-reference:role:u4-i-nom-muzh-feedback",
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nThe frozen page records this example as: The husband is talking.",
+    "shippedText": "The frozen page records this example as: The husband is talking.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "793dedc0f5fe7df7031a30675dd501840d3411897e830d4c5545c22323a341b4",
+    "contentHash": "5c861704aa662f3701ed7b0e74443cca350c385d49875ddc010c900edf4fc293",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative-gloss-reference:role:u4-i-nom-muzh-feedback",
+      "applications": []
+    }
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-i-nom-poezd-prompt",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative-gloss-reference",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u4-nominative-gloss-reference:role:u4-i-nom-poezd-prompt",
+    "shippedText": "Which admitted example is the shown sentence?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ff5c2581055726ae8e30e02a41eaf9dc9d52eda5da446bbb4dda4ef3555665fc",
+    "contentHash": "907a84f52d69de582a3f33281761991389d1fabf2eaf90866dbdf8cc8586711b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative-gloss-reference:role:u4-i-nom-poezd-prompt",
+      "applications": []
+    },
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nWhich admitted example is the shown sentence?"
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-i-nom-poezd-feedback",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative-gloss-reference",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u4-nominative-gloss-reference:role:u4-i-nom-poezd-feedback",
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nThe frozen page records this example as: The train is old.",
+    "shippedText": "The frozen page records this example as: The train is old.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "7bf616d36a42327d459221f218813fd5e2fd0fe220f2e624b031e5c5332a126a",
+    "contentHash": "ed3308217c03971462ce292270acd1806096cb82b841a67ed56199473aa53229",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative-gloss-reference:role:u4-i-nom-poezd-feedback",
+      "applications": []
+    }
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-g-nom-role-0",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u4-g-nom-role",
+    "shippedText": "Муж говорит",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b1bb5ece65bf72982b4d93da5295dfbc25b76cdeea69744c6423ae35f26cd2f0",
+    "contentHash": "ba3965803d5aecf88c4a13beb04c1183c54c54b3a1e7c3f61e5b6572f3b8e65c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative:role:u4-g-nom-role-0",
+      "applications": [
+        {
+          "cue": "Муж говорит",
+          "answer": "The noun names the subject, in the nominative case.",
+          "distractors": [
+            "The noun names a direct object, in the accusative case."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nComplete source context:\nThe '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.\n\n== What is a case? ==\nThe nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.\n\nSo, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.\n\nThe nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).\n\n== Usage ==\nThe nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, \"Peter is driving a car\", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.\n\nOne of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:\n* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').\n* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').\n* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').\n\nYou may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).\n\nFinally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:\n* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, \"What kind of X is Y?\", and are constructed in Russian using the word '''что''': \"Что Y за X\", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.\n* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: \"I became a worker\", '''Я в рабочие'''.\n\n==Nouns==\nAs stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:\n:The husband is talking - '''Муж говорит'''\n:The train is old - '''Поезд старый'''\n:The student is new - '''Студент новый'''\nCase-role interpretation:\nIn this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.\nTuple-v1:tuple-v1:1;21:Муж говорит51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case."
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-g-nom-role-1",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u4-g-nom-role",
+    "shippedText": "The noun names the subject, in the nominative case.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b1bb5ece65bf72982b4d93da5295dfbc25b76cdeea69744c6423ae35f26cd2f0",
+    "contentHash": "99332dd037505593036fa4630f7a21cc2e960d0e5478c470662a176da7e1f992",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative:role:u4-g-nom-role-1",
+      "applications": [
+        {
+          "cue": "Муж говорит",
+          "answer": "The noun names the subject, in the nominative case.",
+          "distractors": [
+            "The noun names a direct object, in the accusative case."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nComplete source context:\nThe '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.\n\n== What is a case? ==\nThe nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.\n\nSo, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.\n\nThe nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).\n\n== Usage ==\nThe nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, \"Peter is driving a car\", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.\n\nOne of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:\n* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').\n* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').\n* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').\n\nYou may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).\n\nFinally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:\n* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, \"What kind of X is Y?\", and are constructed in Russian using the word '''что''': \"Что Y за X\", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.\n* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: \"I became a worker\", '''Я в рабочие'''.\n\n==Nouns==\nAs stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:\n:The husband is talking - '''Муж говорит'''\n:The train is old - '''Поезд старый'''\n:The student is new - '''Студент новый'''\nCase-role interpretation:\nIn this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.\nTuple-v1:tuple-v1:1;21:Муж говорит51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case."
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-g-nom-role-2",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u4-g-nom-role",
+    "shippedText": "The noun names a direct object, in the accusative case.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b1bb5ece65bf72982b4d93da5295dfbc25b76cdeea69744c6423ae35f26cd2f0",
+    "contentHash": "3f2420cc359076dd14271025707d1d6fea89f9f7ee5db95826742438987b4fd8",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative:role:u4-g-nom-role-2",
+      "applications": [
+        {
+          "cue": "Муж говорит",
+          "answer": "The noun names the subject, in the nominative case.",
+          "distractors": [
+            "The noun names a direct object, in the accusative case."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nComplete source context:\nThe '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.\n\n== What is a case? ==\nThe nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.\n\nSo, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.\n\nThe nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).\n\n== Usage ==\nThe nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, \"Peter is driving a car\", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.\n\nOne of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:\n* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').\n* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').\n* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').\n\nYou may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).\n\nFinally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:\n* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, \"What kind of X is Y?\", and are constructed in Russian using the word '''что''': \"Что Y за X\", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.\n* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: \"I became a worker\", '''Я в рабочие'''.\n\n==Nouns==\nAs stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:\n:The husband is talking - '''Муж говорит'''\n:The train is old - '''Поезд старый'''\n:The student is new - '''Студент новый'''\nCase-role interpretation:\nIn this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.\nTuple-v1:tuple-v1:1;21:Муж говорит51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case."
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-g-nom-role-prompt",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u4-nominative:role:u4-g-nom-role-prompt",
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nWhich case role does the noun naming the husband have in this supplied clause?",
+    "shippedText": "Which case role does the noun naming the husband have in this supplied clause?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2ad49356f71e5900b6deba4bb4ee8975944f5bd82b5c533cf1f84f53f03e1b21",
+    "contentHash": "26ee87b91012c6ba3d59359ab843b65d9b4985eb6b614665e852f7942729e3ae",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative:role:u4-g-nom-role-prompt",
+      "applications": []
+    }
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-g-nom-role-feedback",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u4-nominative:role:u4-g-nom-role-feedback",
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nIn this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.",
+    "shippedText": "In this supplied clause, the husband is the subject that the sentence makes a statement about. Its case role is nominative subject. The talking verb reports its action. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c3376e92c7a078716e1456449da88bca85a9ab6e645cb32bf75c8d337250f858",
+    "contentHash": "5abf93de1df6e9e40794be5633aa91ad37d94222f99c3f047c6aea45bfcef74c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative:role:u4-g-nom-role-feedback",
+      "applications": []
+    }
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-g-nom-role-reason",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u4-nominative:role:u4-g-nom-role-reason",
+    "shippedText": "The requested noun is the subject here; the clause does not present it as a direct object.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "6048dcfa025642ee6a2db09a0845239c9ae3dfce4d0f311c4dcc6eecb6f711b9",
+    "contentHash": "fed947c47037e750ab4dc2d1e247b059f2032e66554b5ddae5ebee790c5b3a3d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative:role:u4-g-nom-role-reason",
+      "applications": []
+    },
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nThe requested noun is the subject here; the clause does not present it as a direct object."
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-i-nom-role-train-0",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u4-i-nom-role-train",
+    "shippedText": "Поезд старый",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "dda4489bc809c77929b0faf6781fd81d77c3205eafbb0d60fcb1cb61c91523c7",
+    "contentHash": "593100e07231bc9baa2d67875b75a5ce1d54a6bc15287a3edcebcf8bd0350426",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative:role:u4-i-nom-role-train-0",
+      "applications": [
+        {
+          "cue": "Поезд старый",
+          "answer": "The noun names the subject, in the nominative case.",
+          "distractors": [
+            "The noun names a direct object, in the accusative case."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nComplete source context:\nThe '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.\n\n== What is a case? ==\nThe nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.\n\nSo, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.\n\nThe nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).\n\n== Usage ==\nThe nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, \"Peter is driving a car\", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.\n\nOne of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:\n* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').\n* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').\n* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').\n\nYou may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).\n\nFinally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:\n* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, \"What kind of X is Y?\", and are constructed in Russian using the word '''что''': \"Что Y за X\", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.\n* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: \"I became a worker\", '''Я в рабочие'''.\n\n==Nouns==\nAs stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:\n:The husband is talking - '''Муж говорит'''\n:The train is old - '''Поезд старый'''\n:The student is new - '''Студент новый'''\nCase-role interpretation:\nIn this supplied clause, the train is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.\nTuple-v1:tuple-v1:1;23:Поезд старый51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case."
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-i-nom-role-train-1",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u4-i-nom-role-train",
+    "shippedText": "The noun names the subject, in the nominative case.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "dda4489bc809c77929b0faf6781fd81d77c3205eafbb0d60fcb1cb61c91523c7",
+    "contentHash": "99332dd037505593036fa4630f7a21cc2e960d0e5478c470662a176da7e1f992",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative:role:u4-i-nom-role-train-1",
+      "applications": [
+        {
+          "cue": "Поезд старый",
+          "answer": "The noun names the subject, in the nominative case.",
+          "distractors": [
+            "The noun names a direct object, in the accusative case."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nComplete source context:\nThe '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.\n\n== What is a case? ==\nThe nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.\n\nSo, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.\n\nThe nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).\n\n== Usage ==\nThe nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, \"Peter is driving a car\", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.\n\nOne of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:\n* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').\n* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').\n* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').\n\nYou may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).\n\nFinally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:\n* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, \"What kind of X is Y?\", and are constructed in Russian using the word '''что''': \"Что Y за X\", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.\n* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: \"I became a worker\", '''Я в рабочие'''.\n\n==Nouns==\nAs stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:\n:The husband is talking - '''Муж говорит'''\n:The train is old - '''Поезд старый'''\n:The student is new - '''Студент новый'''\nCase-role interpretation:\nIn this supplied clause, the train is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.\nTuple-v1:tuple-v1:1;23:Поезд старый51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case."
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-i-nom-role-train-2",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u4-i-nom-role-train",
+    "shippedText": "The noun names a direct object, in the accusative case.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "dda4489bc809c77929b0faf6781fd81d77c3205eafbb0d60fcb1cb61c91523c7",
+    "contentHash": "3f2420cc359076dd14271025707d1d6fea89f9f7ee5db95826742438987b4fd8",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative:role:u4-i-nom-role-train-2",
+      "applications": [
+        {
+          "cue": "Поезд старый",
+          "answer": "The noun names the subject, in the nominative case.",
+          "distractors": [
+            "The noun names a direct object, in the accusative case."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nComplete source context:\nThe '''Nominative case''' is the most commonly used [[Russian/Grammar/Cases|grammatical case]] in Russian. It is the default case for words, and so it is the case that words are written in the dictionaries.\n\n== What is a case? ==\nThe nature of cases in Russian is detailed more thoroughly on [[Russian/Grammar/Cases|its dedicated page]]. A case tells you what a noun, pronoun, or adjective is doing in a sentence, and is denoted by a set of rules that change the end of the word. For instance, if a person or thing is the object of a sentence (the 'object' is the thing which is being verbed), then you place it in the [[Russian/Grammar/Accusative_case|accusative case]]; an example of a rule for this case states that words which usually end in '''а''', such as '''книга''' ('book'), change the '''a''' to '''у''' (so '''книга''' becomes '''книгу'''). English relies on the ''order'' of words to convey this kind of meaning, but Russian does this with grammatical cases, so they use word order for different purposes.\n\nSo, cases have rules that change a word and tell you what it's doing in a sentence. A word in the [[Russian/Grammar/Accusative case|accusative case]] is the thing being verbed ('the dog chased ''the cat''<nowiki>'</nowiki>), the [[Russian/Grammar/Genitive case|genitive case]] describes something being counted ('he has five ''apples''<nowiki>'</nowiki>) or something owned ('the house ''of Sasha''<nowiki>'</nowiki>, or <nowiki>'</nowiki>''Sasha's'' house'), and so on.\n\nThe nominative case is special, as there are few rules to learn. When you look up a word in the dictionary, it will be in its nominative form. Thus, you don't need any rules to change a word into the nominative case: it's already in it by default. The only rules that are used in the nominative case are those to turn a word into its plural form (each case has its own rules for converting a word into the singular of that case, and into that case's plural form).\n\n== Usage ==\nThe nominative case is used when no other case is being used. Its use is to denote a word as being the ''subject'' of a verb - that is, the thing that's doing the verb. For instance, in the sentence, \"Peter is driving a car\", 'Peter' is the ''subject'' of the verb 'to drive'. In Russian, then, the word 'Peter' would be placed in the nominative case. If you don't know what case to put a word in, use the nominative, and you'll probably be right.\n\nOne of the first things to learn in Russian is the idea of [[Russian/Grammar/Gender|gender]]; this article will give a brief overview, but see the dedicated page for a more thorough treatment. Unlike French, where gender is arbitrary, you can work out a word's gender by its ending:\n* Most words are <small>''MASCULINE''</small>, and they end in a consonant in the nominative case: '''б, в, г, д, ж, з, й к, л, м, н, п, р, с, т, ф, х, ч, ц, ш''', or '''щ'''. It is easiest to remember that a word that doesn't have a feminine or neuter ending is probably masculine, though you will soon learn to predict gender intuitively. Words which are masculine in meaning but feminine in grammar (such as 'uncle', '''дядя'''), are classed as masculine (for adjectives, pronouns, etc.), but conjugate as a feminine noun ('''дядя >> дядю''', for instance). The soft sign, '''ь''', can be on either masculine or feminine nouns. Examples of masculine nouns in the nominative case are '''стул''' ('chair'), '''музей''' ('museum'), and '''медведь'''' ('bear').\n* Most other words are <small>''FEMININE''</small>, and they end in '''а''' or '''я''', or occasionally '''ь'''. Examples are '''корова''' ('cow'), '''змея''' ('snake'), and '''дочь''' ('daughter').\n* Then there are <small>''NEUTER''</small> words, which end in either '''o''' or '''e'''. Examples are '''письмо''' ('letter'), '''море''' ('sea'), and '''платье''' ('dress').\n\nYou may have noticed that not all the letters in the Russian alphabet have been used here, such as '''ё''', '''у''', '''и''', etc. This is because they don't occur on the ends of default, nominative, singular nouns, and instead are really only used as noun endings after conjugation ('''ы''', for instance, is the common ''plural'' ending for nouns). Rarely, unusual or foreign words may end in these non-standard letters, such as '''такси''' ('taxi') - these have irregular genders, and are indeclinable (that is, they don't change according to case or number).\n\nFinally, apart from denoting verbal subjects and helping us tell a word's gender, the nominative has one other, small use: it is used after some prepositions. Like other cases, there are prepositions that call the nominative case, though these are extremely rare nowadays, and are mostly used in sayings and idioms. They are:\n* '''За''' + ''nom'', 'of', 'what kind of' - this preposition is used in sentences like, \"What kind of X is Y?\", and are constructed in Russian using the word '''что''': \"Что Y за X\", with both X and Y being in the nominative. For example: What kind of woman is she? '''Что она за женщина?'''. What kind of worker is Ivan? '''Что Иван за работник?'''.\n* '''В''' + ''nom'', 'became' - this is used only with plural nouns to denote joining a group: \"I became a worker\", '''Я в рабочие'''.\n\n==Nouns==\nAs stated above, the nominative case is the default, dictionary, singular form of a noun, and is used to denote the subject of a verb. As such, there are no rules for working out how to conjugate a singular word into this case, as it's already in it by default. When learning about other cases, the rules will explain how to go from this nominative case, to the case in question. Examples of nouns in the nominative are:\n:The husband is talking - '''Муж говорит'''\n:The train is old - '''Поезд старый'''\n:The student is new - '''Студент новый'''\nCase-role interpretation:\nIn this supplied clause, the train is the subject that the sentence makes a statement about. Its case role is nominative subject. The adjective is the predicate description; it is not a noun direct object. The direct-object explanation does not describe this noun here. Knowing the English translation alone does not answer the requested role. Other constructions can use nominative predicate nouns; do not assume every nominative noun is a subject.\nTuple-v1:tuple-v1:1;23:Поезд старый51:The noun names the subject, in the nominative case.1;55:The noun names a direct object, in the accusative case."
+  },
+  {
+    "itemId": "prov-ca-u4-role-u4-i-nom-role-train-prompt",
+    "unitNumber": 4,
+    "objectiveId": "obj-u4-nominative",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u4-nominative:role:u4-i-nom-role-train-prompt",
+    "originalSourceText": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.\nWhich case role does the noun naming the train have in this supplied clause?",
+    "shippedText": "Which case role does the noun naming the train have in this supplied clause?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "bef67520f5950cd81f8eaf007e0798d526b9baccc2d44f4e91d17a6d35cb145f",
+    "contentHash": "2b7ce62e9749b5d4989b53113511aca7d0a22edaa9b7f097b9816ba9508edbca",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Nominative4213267 subject usage and full noun examples husband talking, train old and student new; existing Copyrights4622060 contributor/CC BY-SA4.0 attribution and adaptation route. Exact native wording with mechanical wiki emphasis unfolding only, no added stress or generated Russian/private Penguin prose. Independently authored English2026-10-14. These supplied subject nouns are nominative; predicate adjectives describe the train/student. Not every nominative noun is a subject, and no unknown-case default guess, universal ending/gender/plural/spelling or productive morphology claim is adopted from the simplified source. Correct original translations remain optional reference, not case-role evidence. Bounded supplied recognition; qualified source/rights/semantic approval pending.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English; separately pinned exact retained native clauses, no generated Russian/private prose.",
+      "objectiveOrClaimBinding": "obj-u4-nominative:role:u4-i-nom-role-train-prompt",
+      "applications": []
+    }
+  }
+]

@@ -1,0 +1,849 @@
+[
+  {
+    "number": 26,
+    "id": "unit-26",
+    "title": "Indefinite pronouns, word order, and letter writing",
+    "shortLabel": "Word order",
+    "topicSummary": "Proposed Unit 26 is in development and is not prepared. Admitted frozen spans await qualified review. Unsupported topics stay book-directed. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 26,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 26. Observed structural scope: Stock expressions; indefinite pronouns and adverbs; word order; postal addresses; letter writing; vocabulary and correspondence work. Admitted frozen spans are pending qualified review and do not approve alignment. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+    "prerequisiteUnitNumbers": [
+      25
+    ],
+    "estimatedMinutes": 94,
+    "objectives": [
+      {
+        "id": "obj-u26-word-order",
+        "unitNumber": 26,
+        "title": "Interpret supplied word order in context",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u26-st-orient",
+          "u26-st-teach-word-order-1",
+          "u26-st-teach-word-order-2",
+          "u26-st-teach-word-order-3",
+          "u26-st-teach-word-order-4"
+        ],
+        "exampleIds": [
+          "ex-u26-word-order-0",
+          "ex-u26-word-order-1",
+          "ex-u26-word-order-2",
+          "ex-u26-word-order-3",
+          "ex-u26-word-order-4"
+        ],
+        "practiceStepIds": [
+          "u26-st-guided-word-order-1"
+        ],
+        "checkItemIds": [
+          "u26-i-word-order-1",
+          "u26-i-word-order-2"
+        ],
+        "remediationStepIds": [
+          "u26-st-rem-word-order"
+        ]
+      },
+      {
+        "id": "obj-u26-vy-capital",
+        "unitNumber": 26,
+        "title": "Recognize written letter case and its address limits",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u26-st-orient",
+          "u26-st-teach-vy-capital-1",
+          "u26-st-teach-vy-capital-2",
+          "u26-st-teach-vy-capital-3"
+        ],
+        "exampleIds": [
+          "ex-u26-vy-capital-0",
+          "ex-u26-vy-capital-1",
+          "ex-u26-vy-capital-2"
+        ],
+        "practiceStepIds": [
+          "u26-st-guided-vy-capital-1"
+        ],
+        "checkItemIds": [
+          "u26-i-vy-capital-1",
+          "u26-i-vy-capital-2"
+        ],
+        "remediationStepIds": [
+          "u26-st-rem-vy-capital"
+        ]
+      },
+      {
+        "id": "obj-u26-address-notation",
+        "unitNumber": 26,
+        "title": "Distinguish locality, street, building and apartment marks",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u26-st-orient",
+          "u26-st-teach-address-notation-1",
+          "u26-st-teach-address-notation-2",
+          "u26-st-teach-address-notation-3"
+        ],
+        "exampleIds": [
+          "ex-u26-address-notation-0",
+          "ex-u26-address-notation-1",
+          "ex-u26-address-notation-2"
+        ],
+        "practiceStepIds": [
+          "u26-st-guided-address-notation-1"
+        ],
+        "checkItemIds": [
+          "u26-i-address-notation-1",
+          "u26-i-address-notation-2"
+        ],
+        "remediationStepIds": [
+          "u26-st-rem-address-notation"
+        ]
+      },
+      {
+        "id": "obj-u26-indefinite",
+        "unitNumber": 26,
+        "title": "Distinguish specific unknown, open and speaker-known reference",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u26-st-orient",
+          "u26-st-teach-indefinite-1",
+          "u26-st-teach-indefinite-2",
+          "u26-st-teach-indefinite-3"
+        ],
+        "exampleIds": [
+          "ex-u26-indefinite-0",
+          "ex-u26-indefinite-1",
+          "ex-u26-indefinite-2"
+        ],
+        "practiceStepIds": [
+          "u26-st-guided-indefinite-1"
+        ],
+        "checkItemIds": [
+          "u26-i-indefinite-1",
+          "u26-i-indefinite-2"
+        ],
+        "remediationStepIds": [
+          "u26-st-rem-indefinite"
+        ]
+      },
+      {
+        "id": "obj-u26-letter-writing",
+        "unitNumber": 26,
+        "title": "Apply a supplied letter framework without universal style rules",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u26-st-orient",
+          "u26-st-teach-letter-writing-1",
+          "u26-st-teach-letter-writing-2"
+        ],
+        "exampleIds": [
+          "ex-u26-letter-writing-0",
+          "ex-u26-letter-writing-1"
+        ],
+        "practiceStepIds": [
+          "u26-st-guided-letter-writing-1"
+        ],
+        "checkItemIds": [
+          "u26-i-letter-writing-1",
+          "u26-i-letter-writing-2"
+        ],
+        "remediationStepIds": [
+          "u26-st-rem-letter-writing"
+        ]
+      },
+      {
+        "id": "obj-u26-correspondence",
+        "unitNumber": 26,
+        "title": "Distinguish enclosure and closing fragments",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u26-st-orient",
+          "u26-st-teach-correspondence-1",
+          "u26-st-teach-correspondence-2"
+        ],
+        "exampleIds": [
+          "ex-u26-correspondence-0",
+          "ex-u26-correspondence-1"
+        ],
+        "practiceStepIds": [
+          "u26-st-guided-correspondence-1"
+        ],
+        "checkItemIds": [
+          "u26-i-correspondence-1",
+          "u26-i-correspondence-2"
+        ],
+        "remediationStepIds": [
+          "u26-st-rem-correspondence"
+        ]
+      },
+      {
+        "id": "obj-u26-book",
+        "unitNumber": 26,
+        "title": "Self-attest Lesson 26 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u26-st-book-work",
+          "u26-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      },
+      {
+        "id": "obj-u26-postal-address",
+        "unitNumber": 26,
+        "title": "Identify address components in a supplied format",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u26-postal-teach-1",
+          "u26-postal-teach-2"
+        ],
+        "exampleIds": [
+          "ex-u26-postal-1",
+          "ex-u26-postal-2"
+        ],
+        "practiceStepIds": [
+          "u26-postal-guided"
+        ],
+        "checkItemIds": [
+          "u26-i-postal-1",
+          "u26-i-postal-2",
+          "u26-i-postal-3",
+          "u26-i-postal-4",
+          "u26-i-postal-5",
+          "u26-i-postal-6",
+          "u26-i-postal-7",
+          "u26-i-postal-8",
+          "u26-i-postal-9",
+          "u26-i-postal-10",
+          "u26-i-postal-11"
+        ],
+        "remediationStepIds": [
+          "u26-postal-remediate"
+        ],
+        "gating": true
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u26-s-orient",
+        "title": "Admitted word-order and address lines",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u26-word-order",
+          "obj-u26-vy-capital",
+          "obj-u26-address-notation",
+          "obj-u26-indefinite",
+          "obj-u26-letter-writing",
+          "obj-u26-correspondence",
+          "obj-u26-book"
+        ],
+        "steps": [
+          {
+            "id": "u26-st-orient",
+            "kind": "ORIENT",
+            "title": "Admitted word-order and address lines",
+            "body": "Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "bookDirection": "Open Lesson 26 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u26-s-word-order",
+        "title": "Interpret supplied word order in context",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u26-word-order"
+        ],
+        "steps": [
+          {
+            "id": "u26-st-teach-word-order-1",
+            "kind": "TEACH",
+            "title": "Separate the event from the focus",
+            "body": "В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-word-order-0",
+              "ex-u26-word-order-1"
+            ]
+          },
+          {
+            "id": "u26-st-teach-word-order-2",
+            "kind": "TEACH",
+            "title": "Read a story opening in its stated context",
+            "body": "Пошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u26-st-teach-word-order-3",
+            "kind": "TEACH",
+            "title": "Recognize a neutral report without inventing a contrast",
+            "body": "Я пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-word-order-2",
+              "ex-u26-word-order-3"
+            ]
+          },
+          {
+            "id": "u26-st-teach-word-order-4",
+            "kind": "TEACH",
+            "title": "New and known information require context",
+            "body": "В ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-word-order-4"
+            ]
+          },
+          {
+            "id": "u26-st-guided-word-order-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u26-g-word-order-0"
+            ],
+            "remediationStepId": "u26-st-rem-word-order"
+          },
+          {
+            "id": "u26-st-rem-word-order",
+            "kind": "REMEDIATE",
+            "title": "Review the full contextual distinction",
+            "body": "В магазин пошёл я. can emphasize the traveler in the supplied context: It was me who went to the shop. Here someone wrongly attributes the trip to another person and the speaker corrects that attribution. The event is still the speaker going to the shop. “The speaker did not go to the shop.” negates that event; “The speaker went somewhere other than the shop.” changes its destination. Those readings do not fit this affirmative sentence and stated context. The older label To the shop went I merely imitates the Russian arrangement in English; it is not the best natural paraphrase of its communicative focus.\n\nПошёл я в магазин. is used here at the beginning of a story about a past visit. “I went to the shop, and the story continues.” expresses that supplied narrative reading. “I did not go to the shop.” negates the event. “I will go to the shop after deciding to leave.” changes it to a future decision, which is not the stated past-story context. The retained source also gives a decision reading in a different context; this question does not infer one universal interpretation from the arrangement alone. Went I to the shop is the older literal arrangement label, not normal neutral English narration.\n\nЯ пошёл в магазин. is used here to report a past trip without contrasting the traveler or destination. “I went to the shop.” expresses that reading. “It was someone else, not me, who went to the shop.” changes the traveler; “I did not go to the shop.” changes the affirmation to negation. All three supplied Russian shop sentences describe the same basic speaker-and-shop event. Their use can differ with focus, intonation and discourse context; word order alone does not guarantee a unique English paraphrase in every situation.\n\nВ ко́мнату вбежа́л ма́льчик — Into the room rushed a boy. Ма́льчик вбежа́л в ко́мнату — The boy rushed into the room. These retained examples illustrate an introduced boy versus a boy treated as known in their supplied readings. Russian does not add an English article by moving a noun. The English a/the choice also depends on context and what the listener already knows. The shop checks identify supplied contextual readings, not a rule that every reordered sentence changes who acted or where they went.",
+            "exampleIds": [
+              "ex-u26-word-order-0",
+              "ex-u26-word-order-1",
+              "ex-u26-word-order-2",
+              "ex-u26-word-order-3",
+              "ex-u26-word-order-4"
+            ]
+          },
+          {
+            "id": "u26-st-check-word-order",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u26-i-word-order-1",
+              "u26-i-word-order-2"
+            ],
+            "remediationStepId": "u26-st-rem-word-order"
+          }
+        ]
+      },
+      {
+        "id": "u26-s-vy-capital",
+        "title": "Recognize written letter case and its address limits",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u26-vy-capital"
+        ],
+        "steps": [
+          {
+            "id": "u26-st-teach-vy-capital-1",
+            "kind": "TEACH",
+            "title": "Recognize the initial letter before interpreting the addressee",
+            "body": "The supplied forms Вы, Вас and Вам each begin with a capital letter. The answer capital letter describes that visible initial. Minuscule means a lowercase letter; the option minuscule does not describe these displayed initials. The option plural form describes grammatical shape, not letter case. These are recognition checks, not a test of how many people a sentence addresses.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-vy-capital-0",
+              "ex-u26-vy-capital-1"
+            ]
+          },
+          {
+            "id": "u26-st-teach-vy-capital-2",
+            "kind": "TEACH",
+            "title": "Distinguish polite singular address from grammatical plural shape",
+            "body": "The retained grammar note describes polite address to one person using forms shared with the plural. In personal letters and official papers, a capital initial can mark respectful address to one recipient. This written convention is different from plural meaning. The same grammatical forms can address several people, so a capital initial alone does not establish the number of addressees. Identify the recipient from context, not from the English label plural form.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u26-st-teach-vy-capital-3",
+            "kind": "TEACH",
+            "title": "Keep capitalization tied to written context",
+            "body": "In the supplied respectful written-address convention, Вы, Вас and Вам have capital initials. Current Gramota guidance distinguishes respectful address to one recipient from address to several people or a general audience, where lowercase is used. A sentence-initial capital is also ordinary sentence capitalization and need not mark respectful singular address. Lowercase outside this convention is not automatically rude. Capitalization cannot be heard in speech. These checks recognize the shown letter case; choosing forms for a new letter requires recipient and genre context.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-vy-capital-2"
+            ]
+          },
+          {
+            "id": "u26-st-guided-vy-capital-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u26-g-vy-capital-0"
+            ],
+            "remediationStepId": "u26-st-rem-vy-capital"
+          },
+          {
+            "id": "u26-st-rem-vy-capital",
+            "kind": "REMEDIATE",
+            "title": "Review the complete written-form distinction",
+            "body": "The supplied forms Вы, Вас and Вам each begin with a capital letter. The answer capital letter describes that visible initial. Minuscule means a lowercase letter; the option minuscule does not describe these displayed initials. The option plural form describes grammatical shape, not letter case. These are recognition checks, not a test of how many people a sentence addresses.\n\nThe retained grammar note describes polite address to one person using forms shared with the plural. In personal letters and official papers, a capital initial can mark respectful address to one recipient. This written convention is different from plural meaning. The same grammatical forms can address several people, so a capital initial alone does not establish the number of addressees. Identify the recipient from context, not from the English label plural form.\n\nIn the supplied respectful written-address convention, Вы, Вас and Вам have capital initials. Current Gramota guidance distinguishes respectful address to one recipient from address to several people or a general audience, where lowercase is used. A sentence-initial capital is also ordinary sentence capitalization and need not mark respectful singular address. Lowercase outside this convention is not automatically rude. Capitalization cannot be heard in speech. These checks recognize the shown letter case; choosing forms for a new letter requires recipient and genre context.",
+            "exampleIds": [
+              "ex-u26-vy-capital-0",
+              "ex-u26-vy-capital-1",
+              "ex-u26-vy-capital-2"
+            ]
+          },
+          {
+            "id": "u26-st-check-vy-capital",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks recognize the retained written forms and meanings. They do not demonstrate complete letter composition or address production.",
+            "itemIds": [
+              "u26-i-vy-capital-1",
+              "u26-i-vy-capital-2"
+            ],
+            "remediationStepId": "u26-st-rem-vy-capital"
+          }
+        ]
+      },
+      {
+        "id": "u26-s-address-notation",
+        "title": "Distinguish locality, street, building and apartment marks",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u26-address-notation"
+        ],
+        "steps": [
+          {
+            "id": "u26-st-teach-address-notation-1",
+            "kind": "TEACH",
+            "title": "Recognize the locality mark",
+            "body": "In 115114 г. Москва, г. marks the city or locality; the supplied English gloss is city. The number is a postcode, not the abbreviation being tested. The options street and building refer to different components. Read the requested abbreviation rather than treating every number or place name as the same part of an address.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-address-notation-0",
+              "ex-u26-address-notation-1"
+            ]
+          },
+          {
+            "id": "u26-st-teach-address-notation-2",
+            "kind": "TEACH",
+            "title": "Distinguish street, building and apartment",
+            "body": "In ул. Петрова, д. 14, кв. 15, the first mark ул. identifies the street. The later д. identifies the building, and кв. identifies the apartment. The supplied line thus separates street name, building number and apartment number. The answer street matches the first mark; city belongs to the locality mark and apartment belongs to the later mark. Abbreviations label address components; their positions and associated numbers help distinguish them.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u26-st-teach-address-notation-3",
+            "kind": "TEACH",
+            "title": "Identify a building mark without inventing delivery details",
+            "body": "The separate supplied mark д. has the English gloss building. It does not name the city or street. The line with building and apartment numbers shows why those two numbers must not be confused. These checks recognize marks in retained example lines. They do not prove that a sample address is current or deliverable, prescribe a universal postal order, or require an apartment number where none exists.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-address-notation-2"
+            ]
+          },
+          {
+            "id": "u26-st-guided-address-notation-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u26-g-address-notation-0"
+            ],
+            "remediationStepId": "u26-st-rem-address-notation"
+          },
+          {
+            "id": "u26-st-rem-address-notation",
+            "kind": "REMEDIATE",
+            "title": "Review the complete written-form distinction",
+            "body": "In 115114 г. Москва, г. marks the city or locality; the supplied English gloss is city. The number is a postcode, not the abbreviation being tested. The options street and building refer to different components. Read the requested abbreviation rather than treating every number or place name as the same part of an address.\n\nIn ул. Петрова, д. 14, кв. 15, the first mark ул. identifies the street. The later д. identifies the building, and кв. identifies the apartment. The supplied line thus separates street name, building number and apartment number. The answer street matches the first mark; city belongs to the locality mark and apartment belongs to the later mark. Abbreviations label address components; their positions and associated numbers help distinguish them.\n\nThe separate supplied mark д. has the English gloss building. It does not name the city or street. The line with building and apartment numbers shows why those two numbers must not be confused. These checks recognize marks in retained example lines. They do not prove that a sample address is current or deliverable, prescribe a universal postal order, or require an apartment number where none exists.",
+            "exampleIds": [
+              "ex-u26-address-notation-0",
+              "ex-u26-address-notation-1",
+              "ex-u26-address-notation-2"
+            ]
+          },
+          {
+            "id": "u26-st-check-address-notation",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks recognize the retained written forms and meanings. They do not demonstrate complete letter composition or address production.",
+            "itemIds": [
+              "u26-i-address-notation-1",
+              "u26-i-address-notation-2"
+            ],
+            "remediationStepId": "u26-st-rem-address-notation"
+          }
+        ]
+      },
+      {
+        "id": "u26-s-indefinite",
+        "title": "Distinguish specific unknown, open and speaker-known reference",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u26-indefinite"
+        ],
+        "steps": [
+          {
+            "id": "u26-st-teach-indefinite-1",
+            "kind": "TEACH",
+            "title": "A specific person whose identity is unknown",
+            "body": "В доме действительно кто-то был means that someone really was in the house. The label референтность и неизвестность говорящему describes reference to a particular person whose identity is unknown to the speaker in this supplied use. It does not mean nobody was there. Referential concerns whether a particular entity is intended; it is different from whether the speaker knows that entity's identity.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-indefinite-0",
+              "ex-u26-indefinite-1"
+            ]
+          },
+          {
+            "id": "u26-st-teach-indefinite-2",
+            "kind": "TEACH",
+            "title": "An unspecified alternative is not absence",
+            "body": "куда-нибудь is the supplied example of an open, unspecified destination. The label являются нереферентными means non-referential in this classification: no particular fixed destination is selected. An alternative is considered against other possible destinations, as in a future plan, desire or conditional context. This is not the label референтность и неизвестность говорящему for a particular unknown entity, nor референтный денотативный статус слабой определённости for a specific entity known to the speaker. The classification concerns this supplied series/use, not a universal translation of every indefinite form.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u26-st-teach-indefinite-3",
+            "kind": "TEACH",
+            "title": "A specific choice known to the speaker, with overlap limits",
+            "body": "кое-какие is classified as референтный денотативный статус слабой определённости: weakly definite reference to particular things known to the speaker but not assumed known to the listener. It differs from a particular unknown entity and from an open alternative with no fixed referent. The retained rule Местоимение на -то может употребляться также и в значении местоимения на -нибудь says the first series can also be used with the meaning of the second in some contexts. Do not infer a rigid one-suffix/one-meaning division. These checks classify the supplied forms; broader production and selection need the sentence and discourse context.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-indefinite-2"
+            ]
+          },
+          {
+            "id": "u26-st-guided-indefinite-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u26-g-indefinite-0"
+            ],
+            "remediationStepId": "u26-st-rem-indefinite"
+          },
+          {
+            "id": "u26-st-rem-indefinite",
+            "kind": "REMEDIATE",
+            "title": "Review the full contextual distinction",
+            "body": "В доме действительно кто-то был means that someone really was in the house. The label референтность и неизвестность говорящему describes reference to a particular person whose identity is unknown to the speaker in this supplied use. It does not mean nobody was there. Referential concerns whether a particular entity is intended; it is different from whether the speaker knows that entity's identity.\n\nкуда-нибудь is the supplied example of an open, unspecified destination. The label являются нереферентными means non-referential in this classification: no particular fixed destination is selected. An alternative is considered against other possible destinations, as in a future plan, desire or conditional context. This is not the label референтность и неизвестность говорящему for a particular unknown entity, nor референтный денотативный статус слабой определённости for a specific entity known to the speaker. The classification concerns this supplied series/use, not a universal translation of every indefinite form.\n\nкое-какие is classified as референтный денотативный статус слабой определённости: weakly definite reference to particular things known to the speaker but not assumed known to the listener. It differs from a particular unknown entity and from an open alternative with no fixed referent. The retained rule Местоимение на -то может употребляться также и в значении местоимения на -нибудь says the first series can also be used with the meaning of the second in some contexts. Do not infer a rigid one-suffix/one-meaning division. These checks classify the supplied forms; broader production and selection need the sentence and discourse context.",
+            "exampleIds": [
+              "ex-u26-indefinite-0",
+              "ex-u26-indefinite-1",
+              "ex-u26-indefinite-2"
+            ]
+          },
+          {
+            "id": "u26-st-check-indefinite",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Use the supplied context and the full explanation. A miss returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u26-i-indefinite-1",
+              "u26-i-indefinite-2"
+            ],
+            "remediationStepId": "u26-st-rem-indefinite"
+          }
+        ]
+      },
+      {
+        "id": "u26-s-letter-writing",
+        "title": "Apply a supplied letter framework without universal style rules",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u26-letter-writing"
+        ],
+        "steps": [
+          {
+            "id": "u26-st-teach-letter-writing-1",
+            "kind": "TEACH",
+            "title": "Organize the supplied problem-and-request letter",
+            "body": "In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-letter-writing-0",
+              "ex-u26-letter-writing-1"
+            ]
+          },
+          {
+            "id": "u26-st-teach-letter-writing-2",
+            "kind": "TEACH",
+            "title": "Distinguish the greeting, body and closing",
+            "body": "Здравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u26-st-guided-letter-writing-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.",
+            "itemIds": [
+              "u26-g-letter-writing-0"
+            ],
+            "remediationStepId": "u26-st-rem-letter-writing"
+          },
+          {
+            "id": "u26-st-rem-letter-writing",
+            "kind": "REMEDIATE",
+            "title": "Review the full letter framework and greeting distinction",
+            "body": "In this lesson's problem-and-request model, state the reason, explain relevant facts, then make the request. For a letter explaining a problem and requesting action, this sequence gives the recipient a reason and relevant support for the request. It is a supplied framework, not a rule that every Russian letter must put its main point last. English and Russian letters have different genres and purposes; a source's contrast is not a universal rule for either language.\n\nЗдравствуйте! is a greeting, not a rule about how close the recipient is. The retained example glosses it as Greetings. Уважаемый Иван Иванович is another supplied address formula, glossed Respected Ivan Ivanovich. Select address wording for the recipient, relationship and genre; the English word dear is not a universal ban determined by this neutral greeting. The claim every unfamiliar recipient forbids any greeting translated as dear overgeneralizes from one greeting to every addressee. In the supplied layout, Sender’s address and date precedes the Greeting, then comes the Body, followed by Closing and signature. A greeting starts the address to the reader; the body carries the message; the closing and signature end the letter. The framework is not mandatory for every letter or electronic message.",
+            "exampleIds": [
+              "ex-u26-letter-writing-0",
+              "ex-u26-letter-writing-1"
+            ]
+          },
+          {
+            "id": "u26-st-check-letter-writing",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Use the supplied framework and the conversational function of each letter part. A miss returns to the complete explanation.",
+            "itemIds": [
+              "u26-i-letter-writing-1",
+              "u26-i-letter-writing-2"
+            ],
+            "remediationStepId": "u26-st-rem-letter-writing"
+          }
+        ]
+      },
+      {
+        "id": "u26-s-correspondence",
+        "title": "Distinguish enclosure and closing fragments",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u26-correspondence"
+        ],
+        "steps": [
+          {
+            "id": "u26-st-teach-correspondence-1",
+            "kind": "TEACH",
+            "title": "Separate an enclosure from a closing",
+            "body": "The retained pair к настоящему письму прилагается — enclosed please find introduces something supplied with the letter. The English gloss is a conventional correspondence expression, not a complete list of possible translations. It has an enclosure function. С уважением — Respectfully is a closing formula before the signature. An enclosure statement and a closing do different jobs: enclosed please find does not close the letter, and Respectfully does not say that a document is enclosed.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-correspondence-0",
+              "ex-u26-correspondence-1"
+            ]
+          },
+          {
+            "id": "u26-st-teach-correspondence-2",
+            "kind": "TEACH",
+            "title": "Choose the fragment by its correspondence function",
+            "body": "When the cue is к настоящему письму прилагается, choose enclosed please find. When the cue is С уважением, choose Respectfully. When the English cue is enclosed please find, the retained Russian match is к настоящему письму прилагается rather than С уважением. These two source-supplied pairs support recognition of enclosure versus closing, not universal formulas for every recipient or mastery of composing a complete letter. Use the retained example fragments; no new Russian sentence is required here.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u26-st-guided-correspondence-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the displayed form or fragment and choose the supplied meaning. A miss returns to all teaching cards and worked examples.",
+            "itemIds": [
+              "u26-g-correspondence-0"
+            ],
+            "remediationStepId": "u26-st-rem-correspondence"
+          },
+          {
+            "id": "u26-st-rem-correspondence",
+            "kind": "REMEDIATE",
+            "title": "Review the complete written-form distinction",
+            "body": "The retained pair к настоящему письму прилагается — enclosed please find introduces something supplied with the letter. The English gloss is a conventional correspondence expression, not a complete list of possible translations. It has an enclosure function. С уважением — Respectfully is a closing formula before the signature. An enclosure statement and a closing do different jobs: enclosed please find does not close the letter, and Respectfully does not say that a document is enclosed.\n\nWhen the cue is к настоящему письму прилагается, choose enclosed please find. When the cue is С уважением, choose Respectfully. When the English cue is enclosed please find, the retained Russian match is к настоящему письму прилагается rather than С уважением. These two source-supplied pairs support recognition of enclosure versus closing, not universal formulas for every recipient or mastery of composing a complete letter. Use the retained example fragments; no new Russian sentence is required here.",
+            "exampleIds": [
+              "ex-u26-correspondence-0",
+              "ex-u26-correspondence-1"
+            ]
+          },
+          {
+            "id": "u26-st-check-correspondence",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks recognize the retained written forms and meanings. They do not demonstrate complete letter composition or address production.",
+            "itemIds": [
+              "u26-i-correspondence-1",
+              "u26-i-correspondence-2"
+            ],
+            "remediationStepId": "u26-st-rem-correspondence"
+          }
+        ]
+      },
+      {
+        "id": "u26-s-book",
+        "title": "Self-attest Lesson 26",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u26-book"
+        ],
+        "steps": [
+          {
+            "id": "u26-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 26 in your copy",
+            "body": "Do Lesson 26 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 26: printed pages 320-331. PDF indexes 332-343 are file locators, not printed pages. Observed section locators: §26.1 p320 (PDF 332); §26.2 p320 (PDF 332); §26.3 p320 (PDF 332); §26.4 p321 (PDF 333); §26.5 p322 (PDF 334); §26.6 p322 (PDF 334); §26.7 p323 (PDF 335); §26.8 p324 (PDF 336); §26.9 p325 (PDF 337); §26.10 p325 (PDF 337); §26.11 p326 (PDF 338); §26.12 p326 (PDF 338); §26.13 p328 (PDF 340). Observed exercise locators: 26/1 p322/PDF334; 26/2 p324/PDF336; 26/3 p329/PDF341; 26/4 p330/PDF342. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u26-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 26 book work",
+            "body": "When you have done Lesson 26 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 26: printed pages 320-331. PDF indexes 332-343 are file locators, not printed pages. Observed section locators: §26.1 p320 (PDF 332); §26.2 p320 (PDF 332); §26.3 p320 (PDF 332); §26.4 p321 (PDF 333); §26.5 p322 (PDF 334); §26.6 p322 (PDF 334); §26.7 p323 (PDF 335); §26.8 p324 (PDF 336); §26.9 p325 (PDF 337); §26.10 p325 (PDF 337); §26.11 p326 (PDF 338); §26.12 p326 (PDF 338); §26.13 p328 (PDF 340). Observed exercise locators: 26/1 p322/PDF334; 26/2 p324/PDF336; 26/3 p329/PDF341; 26/4 p330/PDF342. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          }
+        ]
+      },
+      {
+        "id": "u26-s-gap-postal-address",
+        "title": "Identify address components in a supplied format",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u26-postal-address",
+          "obj-u26-book"
+        ],
+        "steps": [
+          {
+            "id": "u26-postal-teach-1",
+            "kind": "TEACH",
+            "title": "Distinguish recipient, premises, locality and numeric code",
+            "body": "The supplied model is Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000. It contains a recipient, premises, locality, regional unit, country and postcode. A numeric postal code and a locality perform different roles. The UPU sheet describes a six-digit Russian postcode and illustrates delivery-office coding; a displayed sample code is not a live delivery lookup. A greeting does not replace a recipient name. Recognize each requested component before trying to arrange a whole address.\n\nг. Казань — the locality names the city. The mark and place name identify a locality, not a street or a numeric delivery code. Other labels: The option “the street line names the premises” does not describe the requested component or supplied comparison. The mark and place name identify a locality, not a street or a numeric delivery code.; The option “the postcode names the delivery office” does not describe the requested component or supplied comparison. The mark and place name identify a locality, not a street or a numeric delivery code.\n\nАнна Петрова — the addressee names the recipient. The personal name identifies who receives the item, not the premises or numeric code. Other labels: The option “the street line names the premises” does not describe the requested component or supplied comparison. The personal name identifies who receives the item, not the premises or numeric code.; The option “the postcode names the delivery office” does not describe the requested component or supplied comparison. The personal name identifies who receives the item, not the premises or numeric code.\n\nул. Садовая, д. 12, кв. 4 — the street line names the premises. This line contains the street, building and apartment, rather than the recipient or locality. Other labels: The option “the addressee names the recipient” does not describe the requested component or supplied comparison. This line contains the street, building and apartment, rather than the recipient or locality.; The option “the locality names the city” does not describe the requested component or supplied comparison. This line contains the street, building and apartment, rather than the recipient or locality.\n\n420000 — the postcode names the delivery office. The six digits are the numeric postal code, not a person or locality name. Code recognition alone does not verify deliverability. Other labels: The option “the locality names the city” does not describe the requested component or supplied comparison. The six digits are the numeric postal code, not a person or locality name. Code recognition alone does not verify deliverability.; The option “the addressee names the recipient” does not describe the requested component or supplied comparison. The six digits are the numeric postal code, not a person or locality name. Code recognition alone does not verify deliverability.\n\nЗдравствуйте — a greeting is outside the address. The greeting belongs to correspondence, not to the recipient-name or postcode component. Other labels: The option “the addressee names the recipient” does not describe the requested component or supplied comparison. The greeting belongs to correspondence, not to the recipient-name or postcode component.; The option “the postcode names the delivery office” does not describe the requested component or supplied comparison. The greeting belongs to correspondence, not to the recipient-name or postcode component.\n\nРеспублика Татарстан — the republic is the applicable regional unit for this locality. This supplied line names the republic associated with the stated locality, not a numeric code or greeting. Other labels: The option “the republic is the six-digit postcode” does not describe the requested component or supplied comparison. This supplied line names the republic associated with the stated locality, not a numeric code or greeting.; The option “the republic is a greeting outside the address” does not describe the requested component or supplied comparison. This supplied line names the republic associated with the stated locality, not a numeric code or greeting.\n\nРоссия — the country names the destination state. This line names the destination country in the supplied model. A postcode serves a different role and does not name the country. Other labels: The option “the country is a greeting outside the address” does not describe the requested component or supplied comparison. This line names the destination country in the supplied model. A postcode serves a different role and does not name the country.; The option “the postcode replaces the country” does not describe the requested component or supplied comparison. This line names the destination country in the supplied model. A postcode serves a different role and does not name the country.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-postal-1",
+              "ex-u26-postal-2"
+            ]
+          },
+          {
+            "id": "u26-postal-teach-2",
+            "kind": "TEACH",
+            "title": "Apply the supplied format and its conditional limits",
+            "body": "In this lesson’s supplied format, the displayed order is recipient, then premises, then locality, then the applicable region, then the country, then the postcode. Russian Post currently lists these components, but a components list is not a universal requirement to add nonexistent details. Its guidance separately discusses international addressing. The UPU country sheet includes country-before-postcode examples and an International Bureau note recommending the country on the final line for processing at origin and in transit. Thus country-before-postcode is not a universal international rule. Follow the applicable postal format and verified destination details when actually mailing. This offline lesson recognizes a supplied model; it does not verify current delivery, postal-service availability or every country’s format.\n\nthe short sample — the regional and country lines are absent from this shorter model. This comparison asks which lines are absent from the supplied full model. It does not declare every shorter domestic address invalid or require a separate region for every locality. Competing readings: The option “recipient then premises then city then postcode” does not describe the requested component or supplied comparison. This comparison asks which lines are absent from the supplied full model. It does not declare every shorter domestic address invalid or require a separate region for every locality.; The option “postcode then recipient then premises then city” does not describe the requested component or supplied comparison. This comparison asks which lines are absent from the supplied full model. It does not declare every shorter domestic address invalid or require a separate region for every locality.\n\nг. Москва — a federal city does not add a separate oblast line. The supplied Moscow model uses its federal-city locality without inventing a separate oblast. That does not remove its postcode. Competing readings: The option “a federal city must add an oblast line” does not describe the requested component or supplied comparison. The supplied Moscow model uses its federal-city locality without inventing a separate oblast. That does not remove its postcode.; The option “a federal city omits the postcode” does not describe the requested component or supplied comparison. The supplied Moscow model uses its federal-city locality without inventing a separate oblast. That does not remove its postcode.\n\nа/я 15 — a post-office box is not required on a street address. A box is a delivery alternative when used, not a required component of every street address or a postcode. Competing readings: The option “every home-delivery address must include a post-office box” does not describe the requested component or supplied comparison. A box is a delivery alternative when used, not a required component of every street address or a postcode.; The option “a post-office box is the six-digit postcode” does not describe the requested component or supplied comparison. A box is a delivery alternative when used, not a required component of every street address or a postcode.\n\npremises without an apartment — an apartment number is omitted when the premises has none. No apartment number is invented for premises that have none. Presence of an apartment number depends on the actual premises. Competing readings: The option “every address must invent an apartment number” does not describe the requested component or supplied comparison. No apartment number is invented for premises that have none. Presence of an apartment number depends on the actual premises.; The option “omitting an apartment turns the premises into a greeting” does not describe the requested component or supplied comparison. No apartment number is invented for premises that have none. Presence of an apartment number depends on the actual premises.\n\nАнна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000 — recipient, then premises, then locality, then the applicable region, then the country, then the postcode. Read the displayed sequence in this supplied format. This is not a unique valid order for every domestic or international item. Competing readings: The option “postcode, then country, then recipient, then premises, then locality, then region” does not describe the requested component or supplied comparison. Read the displayed sequence in this supplied format. This is not a unique valid order for every domestic or international item.; The option “the short sample proves that region and country can never appear” does not describe the requested component or supplied comparison. Read the displayed sequence in this supplied format. This is not a unique valid order for every domestic or international item.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ]
+          },
+          {
+            "id": "u26-postal-guided",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Identify the requested locality component in the supplied model. A miss restores the full component and formatting explanation.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "itemIds": [
+              "u26-g-postal-1"
+            ],
+            "remediationStepId": "u26-postal-remediate"
+          },
+          {
+            "id": "u26-postal-remediate",
+            "kind": "REMEDIATE",
+            "title": "Review all address components and format limits",
+            "body": "The supplied model is Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000. It contains a recipient, premises, locality, regional unit, country and postcode. A numeric postal code and a locality perform different roles. The UPU sheet describes a six-digit Russian postcode and illustrates delivery-office coding; a displayed sample code is not a live delivery lookup. A greeting does not replace a recipient name. Recognize each requested component before trying to arrange a whole address.\n\nг. Казань — the locality names the city. The mark and place name identify a locality, not a street or a numeric delivery code. Other labels: The option “the street line names the premises” does not describe the requested component or supplied comparison. The mark and place name identify a locality, not a street or a numeric delivery code.; The option “the postcode names the delivery office” does not describe the requested component or supplied comparison. The mark and place name identify a locality, not a street or a numeric delivery code.\n\nАнна Петрова — the addressee names the recipient. The personal name identifies who receives the item, not the premises or numeric code. Other labels: The option “the street line names the premises” does not describe the requested component or supplied comparison. The personal name identifies who receives the item, not the premises or numeric code.; The option “the postcode names the delivery office” does not describe the requested component or supplied comparison. The personal name identifies who receives the item, not the premises or numeric code.\n\nул. Садовая, д. 12, кв. 4 — the street line names the premises. This line contains the street, building and apartment, rather than the recipient or locality. Other labels: The option “the addressee names the recipient” does not describe the requested component or supplied comparison. This line contains the street, building and apartment, rather than the recipient or locality.; The option “the locality names the city” does not describe the requested component or supplied comparison. This line contains the street, building and apartment, rather than the recipient or locality.\n\n420000 — the postcode names the delivery office. The six digits are the numeric postal code, not a person or locality name. Code recognition alone does not verify deliverability. Other labels: The option “the locality names the city” does not describe the requested component or supplied comparison. The six digits are the numeric postal code, not a person or locality name. Code recognition alone does not verify deliverability.; The option “the addressee names the recipient” does not describe the requested component or supplied comparison. The six digits are the numeric postal code, not a person or locality name. Code recognition alone does not verify deliverability.\n\nЗдравствуйте — a greeting is outside the address. The greeting belongs to correspondence, not to the recipient-name or postcode component. Other labels: The option “the addressee names the recipient” does not describe the requested component or supplied comparison. The greeting belongs to correspondence, not to the recipient-name or postcode component.; The option “the postcode names the delivery office” does not describe the requested component or supplied comparison. The greeting belongs to correspondence, not to the recipient-name or postcode component.\n\nРеспублика Татарстан — the republic is the applicable regional unit for this locality. This supplied line names the republic associated with the stated locality, not a numeric code or greeting. Other labels: The option “the republic is the six-digit postcode” does not describe the requested component or supplied comparison. This supplied line names the republic associated with the stated locality, not a numeric code or greeting.; The option “the republic is a greeting outside the address” does not describe the requested component or supplied comparison. This supplied line names the republic associated with the stated locality, not a numeric code or greeting.\n\nРоссия — the country names the destination state. This line names the destination country in the supplied model. A postcode serves a different role and does not name the country. Other labels: The option “the country is a greeting outside the address” does not describe the requested component or supplied comparison. This line names the destination country in the supplied model. A postcode serves a different role and does not name the country.; The option “the postcode replaces the country” does not describe the requested component or supplied comparison. This line names the destination country in the supplied model. A postcode serves a different role and does not name the country.\n\nIn this lesson’s supplied format, the displayed order is recipient, then premises, then locality, then the applicable region, then the country, then the postcode. Russian Post currently lists these components, but a components list is not a universal requirement to add nonexistent details. Its guidance separately discusses international addressing. The UPU country sheet includes country-before-postcode examples and an International Bureau note recommending the country on the final line for processing at origin and in transit. Thus country-before-postcode is not a universal international rule. Follow the applicable postal format and verified destination details when actually mailing. This offline lesson recognizes a supplied model; it does not verify current delivery, postal-service availability or every country’s format.\n\nthe short sample — the regional and country lines are absent from this shorter model. This comparison asks which lines are absent from the supplied full model. It does not declare every shorter domestic address invalid or require a separate region for every locality. Competing readings: The option “recipient then premises then city then postcode” does not describe the requested component or supplied comparison. This comparison asks which lines are absent from the supplied full model. It does not declare every shorter domestic address invalid or require a separate region for every locality.; The option “postcode then recipient then premises then city” does not describe the requested component or supplied comparison. This comparison asks which lines are absent from the supplied full model. It does not declare every shorter domestic address invalid or require a separate region for every locality.\n\nг. Москва — a federal city does not add a separate oblast line. The supplied Moscow model uses its federal-city locality without inventing a separate oblast. That does not remove its postcode. Competing readings: The option “a federal city must add an oblast line” does not describe the requested component or supplied comparison. The supplied Moscow model uses its federal-city locality without inventing a separate oblast. That does not remove its postcode.; The option “a federal city omits the postcode” does not describe the requested component or supplied comparison. The supplied Moscow model uses its federal-city locality without inventing a separate oblast. That does not remove its postcode.\n\nа/я 15 — a post-office box is not required on a street address. A box is a delivery alternative when used, not a required component of every street address or a postcode. Competing readings: The option “every home-delivery address must include a post-office box” does not describe the requested component or supplied comparison. A box is a delivery alternative when used, not a required component of every street address or a postcode.; The option “a post-office box is the six-digit postcode” does not describe the requested component or supplied comparison. A box is a delivery alternative when used, not a required component of every street address or a postcode.\n\npremises without an apartment — an apartment number is omitted when the premises has none. No apartment number is invented for premises that have none. Presence of an apartment number depends on the actual premises. Competing readings: The option “every address must invent an apartment number” does not describe the requested component or supplied comparison. No apartment number is invented for premises that have none. Presence of an apartment number depends on the actual premises.; The option “omitting an apartment turns the premises into a greeting” does not describe the requested component or supplied comparison. No apartment number is invented for premises that have none. Presence of an apartment number depends on the actual premises.\n\nАнна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000 — recipient, then premises, then locality, then the applicable region, then the country, then the postcode. Read the displayed sequence in this supplied format. This is not a unique valid order for every domestic or international item. Competing readings: The option “postcode, then country, then recipient, then premises, then locality, then region” does not describe the requested component or supplied comparison. Read the displayed sequence in this supplied format. This is not a unique valid order for every domestic or international item.; The option “the short sample proves that region and country can never appear” does not describe the requested component or supplied comparison. Read the displayed sequence in this supplied format. This is not a unique valid order for every domestic or international item.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "exampleIds": [
+              "ex-u26-postal-1",
+              "ex-u26-postal-2"
+            ]
+          },
+          {
+            "id": "u26-postal-check",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Identify components and conditional details, then recognize the displayed order in this supplied format. These checks do not verify deliverability or a universal postal order.",
+            "referenceIds": [
+              "ref-u2630-attribution"
+            ],
+            "itemIds": [
+              "u26-i-postal-1",
+              "u26-i-postal-2",
+              "u26-i-postal-3",
+              "u26-i-postal-4",
+              "u26-i-postal-5",
+              "u26-i-postal-6",
+              "u26-i-postal-7",
+              "u26-i-postal-8",
+              "u26-i-postal-9",
+              "u26-i-postal-10",
+              "u26-i-postal-11"
+            ],
+            "remediationStepId": "u26-postal-remediate"
+          },
+          {
+            "id": "u26-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 26 AnkiDroid direction",
+            "body": "Unit 26 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u26-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 26 binder prompt",
+            "body": "Unit 26 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u26-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 26 optional tutor",
+            "body": "Unit 26 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u26-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 26 cumulative review",
+            "body": "Unit 26 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 26 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 12,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit26-prior-reading-name-reply-v1"
+    }
+  }
+]

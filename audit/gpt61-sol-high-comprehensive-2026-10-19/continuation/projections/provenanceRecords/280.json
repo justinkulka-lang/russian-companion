@@ -1,0 +1,633 @@
+[
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-clock-0",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u17-i-question-clock",
+    "shippedText": "Который час?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "1e08ca44ff016f4e586fce390cd4179327551136457884e4ba631968921554d5",
+    "contentHash": "ee16a8b5a980d4047816a6588c2cb4cf0e09766e6e8513a98ff38bb073ca2b57",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-clock-0",
+      "applications": [
+        {
+          "cue": "Который час?",
+          "answer": "Asks for the current clock time.",
+          "distractors": [
+            "Asks which apple belongs to the speaker.",
+            "Asks which book the listener wants."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nComplete raw selected context:\n=== Который? ===\nThe primary meaning is simply 'which one?', though '''который''' is also used to ask about one particular thing in a sequence of similar things.\n:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''\nContext explanation:\nКоторый час? — What time is it? Asks for the current clock time. Choose Asks for the current clock time. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.\nTuple-v1:tuple-v1:1;22:Который час?32:Asks for the current clock time.2;40:Asks which apple belongs to the speaker.35:Asks which book the listener wants."
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-clock-1",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u17-i-question-clock",
+    "shippedText": "Asks for the current clock time.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "1e08ca44ff016f4e586fce390cd4179327551136457884e4ba631968921554d5",
+    "contentHash": "a74e9f56f911c7e3165ecb643d003cf25c9c25137adf2da9c0bd107574fb5400",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-clock-1",
+      "applications": [
+        {
+          "cue": "Который час?",
+          "answer": "Asks for the current clock time.",
+          "distractors": [
+            "Asks which apple belongs to the speaker.",
+            "Asks which book the listener wants."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nComplete raw selected context:\n=== Который? ===\nThe primary meaning is simply 'which one?', though '''который''' is also used to ask about one particular thing in a sequence of similar things.\n:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''\nContext explanation:\nКоторый час? — What time is it? Asks for the current clock time. Choose Asks for the current clock time. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.\nTuple-v1:tuple-v1:1;22:Который час?32:Asks for the current clock time.2;40:Asks which apple belongs to the speaker.35:Asks which book the listener wants."
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-clock-2",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u17-i-question-clock",
+    "shippedText": "Asks which apple belongs to the speaker.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "1e08ca44ff016f4e586fce390cd4179327551136457884e4ba631968921554d5",
+    "contentHash": "633788690790c8ecdd05844779c3d49361b5b367e704e99ea7bc1fce624cd8e9",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-clock-2",
+      "applications": [
+        {
+          "cue": "Который час?",
+          "answer": "Asks for the current clock time.",
+          "distractors": [
+            "Asks which apple belongs to the speaker.",
+            "Asks which book the listener wants."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nComplete raw selected context:\n=== Который? ===\nThe primary meaning is simply 'which one?', though '''который''' is also used to ask about one particular thing in a sequence of similar things.\n:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''\nContext explanation:\nКоторый час? — What time is it? Asks for the current clock time. Choose Asks for the current clock time. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.\nTuple-v1:tuple-v1:1;22:Который час?32:Asks for the current clock time.2;40:Asks which apple belongs to the speaker.35:Asks which book the listener wants."
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-clock-3",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u17-i-question-clock",
+    "shippedText": "Asks which book the listener wants.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "1e08ca44ff016f4e586fce390cd4179327551136457884e4ba631968921554d5",
+    "contentHash": "3274a53fb29bd1b9960ffcddbcb63ad8828ffeaacb40ec269abc3d24e6497325",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-clock-3",
+      "applications": [
+        {
+          "cue": "Который час?",
+          "answer": "Asks for the current clock time.",
+          "distractors": [
+            "Asks which apple belongs to the speaker.",
+            "Asks which book the listener wants."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nComplete raw selected context:\n=== Который? ===\nThe primary meaning is simply 'which one?', though '''который''' is also used to ask about one particular thing in a sequence of similar things.\n:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''\nContext explanation:\nКоторый час? — What time is it? Asks for the current clock time. Choose Asks for the current clock time. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.\nTuple-v1:tuple-v1:1;22:Который час?32:Asks for the current clock time.2;40:Asks which apple belongs to the speaker.35:Asks which book the listener wants."
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-clock-prompt",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u17-clock:question:u17-i-question-clock-prompt",
+    "shippedText": "Which English interpretation fits this complete supplied question?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ada7acdeae74e1d17f006e2da8cd57240c679a23a7f54cf755dd616ee1d7cf93",
+    "contentHash": "d2e3bdf27ac1b79a4f102828f0c305b4f82973c747a9291d420603050626df5d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-clock-prompt",
+      "applications": []
+    },
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nWhich English interpretation fits this complete supplied question?"
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-clock-feedback",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u17-clock:question:u17-i-question-clock-feedback",
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nКоторый час? — What time is it? Asks for the current clock time. Choose Asks for the current clock time. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.",
+    "shippedText": "Который час? — What time is it? Asks for the current clock time. Choose Asks for the current clock time. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "fe12a55ec65427c5df98137446c623feddbc4f83befd3a77b6488139489eb080",
+    "contentHash": "224d70211004ea775f09ca48975ebe922b01eea3e19db5fa2b6028504083a3c9",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-clock-feedback",
+      "applications": []
+    }
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-clock-rationale-0",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u17-clock:question:u17-i-question-clock-rationale-0",
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nAsks which apple belongs to the speaker. describes a different requested piece of information; the supplied whole question Который час? means What time is it?",
+    "shippedText": "Asks which apple belongs to the speaker. describes a different requested piece of information; the supplied whole question Который час? means What time is it?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "7043a6731a461da17a1bdaedeb256720f18dc38767e65b42a8d31746087cbe31",
+    "contentHash": "8cba3ae6155f6e5742a5b9334dd075910b57cc089a0c9b282e5fea955e1595ac",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-clock-rationale-0",
+      "applications": []
+    }
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-clock-rationale-2",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u17-clock:question:u17-i-question-clock-rationale-2",
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nAsks which book the listener wants. describes a different requested piece of information; the supplied whole question Который час? means What time is it?",
+    "shippedText": "Asks which book the listener wants. describes a different requested piece of information; the supplied whole question Который час? means What time is it?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "264999fda1899bf746bc4db8d7e6a886d8f10e36b610d50674d3cfb690769e04",
+    "contentHash": "97a12c3c128ca717b44deb2c8c8843c4004d5b0908157a2c368eb9a0ce040af1",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-clock-rationale-2",
+      "applications": []
+    }
+  },
+  {
+    "itemId": "prov-u17-question-native-book-ru",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "example",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+    "sourceRevision": "4220316",
+    "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+    "shippedText": "Которую книгу вы хотите?",
+    "transformation": "selection",
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+    "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+    "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+    "contentHash": "0711cc1cc88bc64bbb4a09d33fe71ac412be1ed2c6870b7c1afc4f9aa485c038",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "originalSourceText": "=== Который? ===\nThe primary meaning is simply 'which one?', though '''который''' is also used to ask about one particular thing in a sequence of similar things.\n:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''"
+  },
+  {
+    "itemId": "prov-u17-question-native-book-en",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "meaning",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+    "sourceRevision": "4220316",
+    "sourceRecordId": "interrogative-question-transfer:=== Который? ===\nThe primary meaning is simply 'which one?', though '''которы",
+    "shippedText": "Which book do you want?",
+    "transformation": "selection",
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+    "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+    "sourceHash": "086ee74b9864c2c2e799910cecdf36f255750909e989504323b33f9cb70091fa",
+    "contentHash": "015da34c8fd355619be542aea1566c3ef8ca07a087eb223d32cf32ef57d7dca7",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "originalSourceText": "=== Который? ===\nThe primary meaning is simply 'which one?', though '''который''' is also used to ask about one particular thing in a sequence of similar things.\n:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''"
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-book-0",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u17-i-question-book",
+    "shippedText": "Которую книгу вы хотите?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2e97b3bb0ea7fe5acd37c9de42693036da3c226ca2348af65f4ef27d9737ea61",
+    "contentHash": "0711cc1cc88bc64bbb4a09d33fe71ac412be1ed2c6870b7c1afc4f9aa485c038",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-book-0",
+      "applications": [
+        {
+          "cue": "Которую книгу вы хотите?",
+          "answer": "Asks which book the listener wants.",
+          "distractors": [
+            "Asks which apple belongs to the speaker.",
+            "Asks for the current clock time."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nComplete raw selected context:\n=== Который? ===\nThe primary meaning is simply 'which one?', though '''который''' is also used to ask about one particular thing in a sequence of similar things.\n:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''\nContext explanation:\nКоторую книгу вы хотите? — Which book do you want? Asks which book the listener wants. Choose Asks which book the listener wants. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.\nTuple-v1:tuple-v1:1;44:Которую книгу вы хотите?35:Asks which book the listener wants.2;40:Asks which apple belongs to the speaker.32:Asks for the current clock time."
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-book-1",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u17-i-question-book",
+    "shippedText": "Asks which book the listener wants.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2e97b3bb0ea7fe5acd37c9de42693036da3c226ca2348af65f4ef27d9737ea61",
+    "contentHash": "3274a53fb29bd1b9960ffcddbcb63ad8828ffeaacb40ec269abc3d24e6497325",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-book-1",
+      "applications": [
+        {
+          "cue": "Которую книгу вы хотите?",
+          "answer": "Asks which book the listener wants.",
+          "distractors": [
+            "Asks which apple belongs to the speaker.",
+            "Asks for the current clock time."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nComplete raw selected context:\n=== Который? ===\nThe primary meaning is simply 'which one?', though '''который''' is also used to ask about one particular thing in a sequence of similar things.\n:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''\nContext explanation:\nКоторую книгу вы хотите? — Which book do you want? Asks which book the listener wants. Choose Asks which book the listener wants. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.\nTuple-v1:tuple-v1:1;44:Которую книгу вы хотите?35:Asks which book the listener wants.2;40:Asks which apple belongs to the speaker.32:Asks for the current clock time."
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-book-2",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u17-i-question-book",
+    "shippedText": "Asks which apple belongs to the speaker.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2e97b3bb0ea7fe5acd37c9de42693036da3c226ca2348af65f4ef27d9737ea61",
+    "contentHash": "633788690790c8ecdd05844779c3d49361b5b367e704e99ea7bc1fce624cd8e9",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-book-2",
+      "applications": [
+        {
+          "cue": "Которую книгу вы хотите?",
+          "answer": "Asks which book the listener wants.",
+          "distractors": [
+            "Asks which apple belongs to the speaker.",
+            "Asks for the current clock time."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nComplete raw selected context:\n=== Который? ===\nThe primary meaning is simply 'which one?', though '''который''' is also used to ask about one particular thing in a sequence of similar things.\n:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''\nContext explanation:\nКоторую книгу вы хотите? — Which book do you want? Asks which book the listener wants. Choose Asks which book the listener wants. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.\nTuple-v1:tuple-v1:1;44:Которую книгу вы хотите?35:Asks which book the listener wants.2;40:Asks which apple belongs to the speaker.32:Asks for the current clock time."
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-book-3",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-rule-context:u17-i-question-book",
+    "shippedText": "Asks for the current clock time.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2e97b3bb0ea7fe5acd37c9de42693036da3c226ca2348af65f4ef27d9737ea61",
+    "contentHash": "a74e9f56f911c7e3165ecb643d003cf25c9c25137adf2da9c0bd107574fb5400",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-book-3",
+      "applications": [
+        {
+          "cue": "Которую книгу вы хотите?",
+          "answer": "Asks which book the listener wants.",
+          "distractors": [
+            "Asks which apple belongs to the speaker.",
+            "Asks for the current clock time."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nComplete raw selected context:\n=== Который? ===\nThe primary meaning is simply 'which one?', though '''который''' is also used to ask about one particular thing in a sequence of similar things.\n:Which apple is mine? - '''Которое яблоко моё?'''\n:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''\nContext explanation:\nКоторую книгу вы хотите? — Which book do you want? Asks which book the listener wants. Choose Asks which book the listener wants. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.\nTuple-v1:tuple-v1:1;44:Которую книгу вы хотите?35:Asks which book the listener wants.2;40:Asks which apple belongs to the speaker.32:Asks for the current clock time."
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-book-prompt",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u17-clock:question:u17-i-question-book-prompt",
+    "shippedText": "Which English interpretation fits this complete supplied question?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ada7acdeae74e1d17f006e2da8cd57240c679a23a7f54cf755dd616ee1d7cf93",
+    "contentHash": "d2e3bdf27ac1b79a4f102828f0c305b4f82973c747a9291d420603050626df5d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-book-prompt",
+      "applications": []
+    },
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nWhich English interpretation fits this complete supplied question?"
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-book-feedback",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u17-clock:question:u17-i-question-book-feedback",
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nКоторую книгу вы хотите? — Which book do you want? Asks which book the listener wants. Choose Asks which book the listener wants. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.",
+    "shippedText": "Которую книгу вы хотите? — Which book do you want? Asks which book the listener wants. Choose Asks which book the listener wants. Read the complete question and its noun, rather than treating every form of который as a clock question. This is the supplied interpretation, not independently forming a new question.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30f568bcb58e323f1a183c4b2d1f38022ec9763f5c67745fb82ca04bf005b2a3",
+    "contentHash": "70743bf7585e6384e6c1579c65d223ffd36f31abfee8e21ea11e57b9fcc6c8be",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-book-feedback",
+      "applications": []
+    }
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-book-rationale-0",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u17-clock:question:u17-i-question-book-rationale-0",
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nAsks which apple belongs to the speaker. describes a different requested piece of information; the supplied whole question Которую книгу вы хотите? means Which book do you want?",
+    "shippedText": "Asks which apple belongs to the speaker. describes a different requested piece of information; the supplied whole question Которую книгу вы хотите? means Which book do you want?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "25989c66bef86417ad3a614d25dda8652a4dde0b5bae76f36561398af4d9a3fb",
+    "contentHash": "c599c1fc797ff3c4e7c60fc754feec5beab23c22e6619777a54d709915905ecf",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-book-rationale-0",
+      "applications": []
+    }
+  },
+  {
+    "itemId": "prov-ca-u17-question-u17-i-question-book-rationale-1",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u17-clock:question:u17-i-question-book-rationale-1",
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nAsks for the current clock time. describes a different requested piece of information; the supplied whole question Которую книгу вы хотите? means Which book do you want?",
+    "shippedText": "Asks for the current clock time. describes a different requested piece of information; the supplied whole question Которую книгу вы хотите? means Which book do you want?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c30084bcbf40082cb16df68e99a7eb40622733ee53d41f4c56e12b740920ac0f",
+    "contentHash": "5895eb9f0e4974a31675403b42c0ca53f021734708d695aca8880b5272de7970",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:u17-i-question-book-rationale-1",
+      "applications": []
+    }
+  },
+  {
+    "itemId": "prov-u17-question-vocabulary-prov-ex-u17-clock-0-ru",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock-vocabulary",
+    "recordType": "example",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+    "sourceRevision": "4220316",
+    "sourceRecordId": "interrogative:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книг",
+    "originalSourceText": "What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''",
+    "shippedText": "Который час?",
+    "transformation": "selection",
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+    "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+    "sourceHash": "5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd",
+    "contentHash": "ee16a8b5a980d4047816a6588c2cb4cf0e09766e6e8513a98ff38bb073ca2b57",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+  },
+  {
+    "itemId": "prov-u17-question-vocabulary-prov-ex-u17-clock-0-en",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock-vocabulary",
+    "recordType": "meaning",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+    "sourceRevision": "4220316",
+    "sourceRecordId": "interrogative:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книг",
+    "originalSourceText": "What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''",
+    "shippedText": "What time is it?",
+    "transformation": "selection",
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+    "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+    "sourceHash": "5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd",
+    "contentHash": "cd61bf0cc67fc2233111c91167e2abb3c652200bfe22059a166475d37366b7a8",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+  },
+  {
+    "itemId": "prov-u17-question-vocabulary-prov-u17-clock-x-0",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock-vocabulary",
+    "recordType": "label",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "sourceUrl": "https://en.wikibooks.org/wiki/Russian/Interrogative_Pronouns?oldid=4220316",
+    "sourceRevision": "4220316",
+    "sourceRecordId": "interrogative:What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книг",
+    "originalSourceText": "What time is it? - '''Который час?'''\n:Which book do you want? - '''Которую книгу вы хотите?'''",
+    "shippedText": "Which book do you want?",
+    "transformation": "selection",
+    "licenseId": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": "Wikibooks contributors, CC BY-SA 4.0, via Wikibooks:Copyrights oldid 4622060. Page history for the frozen oldid identifies the contributors.",
+    "shareAlikeTreatment": "Adapted curriculum data, selection, and arrangement are distributed under CC BY-SA 4.0. Application code, user data, and user recordings are outside that statement. No audio is relicensed because this unit ships no audio.",
+    "sourceHash": "5fcfdb73fc78d8dd2dcd5ffc25fe473990eb47f30e66d121c9e868a7c8776bbd",
+    "contentHash": "015da34c8fd355619be542aea1566c3ef8ca07a087eb223d32cf32ef57d7dca7",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT"
+  },
+  {
+    "itemId": "prov-ca-u17-question-obj-u17-clock-title",
+    "unitNumber": 17,
+    "objectiveId": "obj-u17-clock",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u17-clock:question:obj-u17-clock-title",
+    "shippedText": "Distinguish the supplied clock-time and object-selection questions",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "063cdfe7d8148110491911537d9787bd32148dae15024213e68dbef16eb7fa6c",
+    "contentHash": "71faac3f26077e0b261b682c445128dbf31f73da7050f14b73913d598dca439c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored English2026-10-13 from complete frozen supplied question pairs; no native generation/private prose.",
+      "objectiveOrClaimBinding": "obj-u17-clock:question:obj-u17-clock-title",
+      "applications": []
+    },
+    "originalSourceText": "Complete retained Wikibooks Russian/Interrogative Pronouns4220316, particularly Который section introduction and three complete supplied English/Russian question pairs; actual retained Wikibooks copyrights4622060 and CC BY-SA4.0 contributor-history attribution. Mechanical existing emphasis/link-label unfolding only; original words, case endings, spelling and question marks unchanged. No generated Russian, stress insertion, private Penguin prose, media or new source/license declaration. The article has inaccurate introductory language about pronouns/adverbs and conjugation; those claims and unrelated relative-pronoun/mixed example translations are not adopted. Scope explicitly distinguishes these supplied current-clock-time and object-selection questions. Guided apple ownership differs in whole native cue and requested information from the independent current-time and listener-book-choice cues. This is bounded interpretation, not a second native clock-question variant, productive asking/giving time, an algorithm for every interrogative or unrestricted transfer mastery. The separate clock-answer/clock-construction objectives remain unchanged. The three original repeated correct clock glosses remain optional SOURCE_MEANING practice on non-gating GUIDANCE with teaching links and native provenance, not grammar credit. Independently authored English on2026-10-13 within content-audit-2026-10-08; source/rights/linguistic review pending, no qualified acceptance token.\nDistinguish the supplied clock-time and object-selection questions"
+  }
+]

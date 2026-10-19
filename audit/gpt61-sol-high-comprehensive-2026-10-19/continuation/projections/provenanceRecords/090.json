@@ -1,0 +1,976 @@
+[
+  {
+    "itemId": "prov-ca-25-583",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-courtesy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u25-i-courtesy-2",
+    "shippedText": "Which address does Извини́те mark?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f",
+    "contentHash": "3c5ee48a9f69f9e00864c20a456d9bb183d5aadda674e03e38ae27fde38a1c71",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u25-courtesy:POLITE_IZVINITE",
+      "applications": [
+        {
+          "cue": "Извини́те",
+          "answer": "excuse me, polite or plural",
+          "distractors": [
+            "excuse me, familiar singular",
+            "thank you"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nИзвини́те\nexcuse me, polite or plural\nWhich address does Извини́те mark?\nИзвини́те is polite or plural. The familiar singular is Извини́.\nThe -те form marks polite or plural address.\nexcuse me, familiar singular\nthank you\nexcuse me, familiar singular is Извини́, without -те.\nthank you is a different courtesy formula.\nИзвини́.\nИзвини́\nте\nИзвини́,\nте."
+  },
+  {
+    "itemId": "prov-ca-25-584",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-courtesy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u25-i-courtesy-2",
+    "shippedText": "Извини́те is polite or plural. The familiar singular is Извини́.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f",
+    "contentHash": "2fa939e39da9d7e22e0a940d0387f4b62975212dbf18f2e683f45972b5ca59c7",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u25-courtesy:POLITE_IZVINITE",
+      "applications": [
+        {
+          "cue": "Извини́те",
+          "answer": "excuse me, polite or plural",
+          "distractors": [
+            "excuse me, familiar singular",
+            "thank you"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nИзвини́те\nexcuse me, polite or plural\nWhich address does Извини́те mark?\nИзвини́те is polite or plural. The familiar singular is Извини́.\nThe -те form marks polite or plural address.\nexcuse me, familiar singular\nthank you\nexcuse me, familiar singular is Извини́, without -те.\nthank you is a different courtesy formula.\nИзвини́.\nИзвини́\nте\nИзвини́,\nте."
+  },
+  {
+    "itemId": "prov-ca-25-585",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-courtesy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u25-i-courtesy-2",
+    "shippedText": "The -те form marks polite or plural address.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f",
+    "contentHash": "96f21b3547d676a18ebc38cfa79ba543f6c5bb83bff3435e141a07a6bb8c4535",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u25-courtesy:POLITE_IZVINITE",
+      "applications": [
+        {
+          "cue": "Извини́те",
+          "answer": "excuse me, polite or plural",
+          "distractors": [
+            "excuse me, familiar singular",
+            "thank you"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nИзвини́те\nexcuse me, polite or plural\nWhich address does Извини́те mark?\nИзвини́те is polite or plural. The familiar singular is Извини́.\nThe -те form marks polite or plural address.\nexcuse me, familiar singular\nthank you\nexcuse me, familiar singular is Извини́, without -те.\nthank you is a different courtesy formula.\nИзвини́.\nИзвини́\nте\nИзвини́,\nте."
+  },
+  {
+    "itemId": "prov-ca-25-586",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-courtesy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u25-i-courtesy-2",
+    "shippedText": "excuse me, familiar singular",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f",
+    "contentHash": "adfb99a80b555d425f5c8dc8d469263a2350dbe906c0076278e5120c0e4f28cd",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u25-courtesy:POLITE_IZVINITE",
+      "applications": [
+        {
+          "cue": "Извини́те",
+          "answer": "excuse me, polite or plural",
+          "distractors": [
+            "excuse me, familiar singular",
+            "thank you"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nИзвини́те\nexcuse me, polite or plural\nWhich address does Извини́те mark?\nИзвини́те is polite or plural. The familiar singular is Извини́.\nThe -те form marks polite or plural address.\nexcuse me, familiar singular\nthank you\nexcuse me, familiar singular is Извини́, without -те.\nthank you is a different courtesy formula.\nИзвини́.\nИзвини́\nте\nИзвини́,\nте."
+  },
+  {
+    "itemId": "prov-ca-25-587",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-courtesy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u25-i-courtesy-2",
+    "shippedText": "thank you",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f",
+    "contentHash": "844347e54f00c4b97fe4736909730faaf8365292b076ea5a1378ebd1b0fd3bbb",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u25-courtesy:POLITE_IZVINITE",
+      "applications": [
+        {
+          "cue": "Извини́те",
+          "answer": "excuse me, polite or plural",
+          "distractors": [
+            "excuse me, familiar singular",
+            "thank you"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nИзвини́те\nexcuse me, polite or plural\nWhich address does Извини́те mark?\nИзвини́те is polite or plural. The familiar singular is Извини́.\nThe -те form marks polite or plural address.\nexcuse me, familiar singular\nthank you\nexcuse me, familiar singular is Извини́, without -те.\nthank you is a different courtesy formula.\nИзвини́.\nИзвини́\nте\nИзвини́,\nте."
+  },
+  {
+    "itemId": "prov-ca-25-588",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-courtesy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u25-i-courtesy-2",
+    "shippedText": "excuse me, familiar singular is Извини́, without -те.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f",
+    "contentHash": "06246794d285190d8c39d3e29bc069f32902639f8f44932edc03452d764abff5",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u25-courtesy:POLITE_IZVINITE",
+      "applications": [
+        {
+          "cue": "Извини́те",
+          "answer": "excuse me, polite or plural",
+          "distractors": [
+            "excuse me, familiar singular",
+            "thank you"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nИзвини́те\nexcuse me, polite or plural\nWhich address does Извини́те mark?\nИзвини́те is polite or plural. The familiar singular is Извини́.\nThe -те form marks polite or plural address.\nexcuse me, familiar singular\nthank you\nexcuse me, familiar singular is Извини́, without -те.\nthank you is a different courtesy formula.\nИзвини́.\nИзвини́\nте\nИзвини́,\nте."
+  },
+  {
+    "itemId": "prov-ca-25-589",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-courtesy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u25-i-courtesy-2",
+    "shippedText": "thank you is a different courtesy formula.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f",
+    "contentHash": "3f397c8d4c37e29a44604d0f861ac489619f77b616900c38f544d3da5cd5cb37",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u25-courtesy:POLITE_IZVINITE",
+      "applications": [
+        {
+          "cue": "Извини́те",
+          "answer": "excuse me, polite or plural",
+          "distractors": [
+            "excuse me, familiar singular",
+            "thank you"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nИзвини́те\nexcuse me, polite or plural\nWhich address does Извини́те mark?\nИзвини́те is polite or plural. The familiar singular is Извини́.\nThe -те form marks polite or plural address.\nexcuse me, familiar singular\nthank you\nexcuse me, familiar singular is Извини́, without -те.\nthank you is a different courtesy formula.\nИзвини́.\nИзвини́\nте\nИзвини́,\nте."
+  },
+  {
+    "itemId": "prov-ca-25-590",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-courtesy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u25-i-courtesy-2",
+    "shippedText": "Извини́.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f",
+    "contentHash": "5f8e9caf77244d7b5af057deac2fffdcba045f2cfd9bd25a100708009c7a3523",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u25-courtesy:POLITE_IZVINITE",
+      "applications": [
+        {
+          "cue": "Извини́те",
+          "answer": "excuse me, polite or plural",
+          "distractors": [
+            "excuse me, familiar singular",
+            "thank you"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nИзвини́те\nexcuse me, polite or plural\nWhich address does Извини́те mark?\nИзвини́те is polite or plural. The familiar singular is Извини́.\nThe -те form marks polite or plural address.\nexcuse me, familiar singular\nthank you\nexcuse me, familiar singular is Извини́, without -те.\nthank you is a different courtesy formula.\nИзвини́.\nИзвини́\nте\nИзвини́,\nте."
+  },
+  {
+    "itemId": "prov-ca-25-591",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-courtesy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u25-i-courtesy-2",
+    "shippedText": "Извини́",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f",
+    "contentHash": "cd4bdede60790b8fa10c68fb20dd70942f37a081a519614ef9726953bd52db50",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u25-courtesy:POLITE_IZVINITE",
+      "applications": [
+        {
+          "cue": "Извини́те",
+          "answer": "excuse me, polite or plural",
+          "distractors": [
+            "excuse me, familiar singular",
+            "thank you"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nИзвини́те\nexcuse me, polite or plural\nWhich address does Извини́те mark?\nИзвини́те is polite or plural. The familiar singular is Извини́.\nThe -те form marks polite or plural address.\nexcuse me, familiar singular\nthank you\nexcuse me, familiar singular is Извини́, without -те.\nthank you is a different courtesy formula.\nИзвини́.\nИзвини́\nте\nИзвини́,\nте."
+  },
+  {
+    "itemId": "prov-ca-25-592",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-courtesy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u25-i-courtesy-2",
+    "shippedText": "те",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f",
+    "contentHash": "520e588e7dfccee684f2875589af4d32969d29b06514c83f10f6fef0799c9d1c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u25-courtesy:POLITE_IZVINITE",
+      "applications": [
+        {
+          "cue": "Извини́те",
+          "answer": "excuse me, polite or plural",
+          "distractors": [
+            "excuse me, familiar singular",
+            "thank you"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nИзвини́те\nexcuse me, polite or plural\nWhich address does Извини́те mark?\nИзвини́те is polite or plural. The familiar singular is Извини́.\nThe -те form marks polite or plural address.\nexcuse me, familiar singular\nthank you\nexcuse me, familiar singular is Извини́, without -те.\nthank you is a different courtesy formula.\nИзвини́.\nИзвини́\nте\nИзвини́,\nте."
+  },
+  {
+    "itemId": "prov-ca-25-593",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-courtesy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u25-i-courtesy-2",
+    "shippedText": "Извини́,",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f",
+    "contentHash": "1d6447117ed165e11b00b7d22b33a4e75ee826c71d00c7e6a8136c6c24ffbaa0",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u25-courtesy:POLITE_IZVINITE",
+      "applications": [
+        {
+          "cue": "Извини́те",
+          "answer": "excuse me, polite or plural",
+          "distractors": [
+            "excuse me, familiar singular",
+            "thank you"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nИзвини́те\nexcuse me, polite or plural\nWhich address does Извини́те mark?\nИзвини́те is polite or plural. The familiar singular is Извини́.\nThe -те form marks polite or plural address.\nexcuse me, familiar singular\nthank you\nexcuse me, familiar singular is Извини́, without -те.\nthank you is a different courtesy formula.\nИзвини́.\nИзвини́\nте\nИзвини́,\nте."
+  },
+  {
+    "itemId": "prov-ca-25-594",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-courtesy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u25-i-courtesy-2",
+    "shippedText": "те.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cf799f72bb5c5d1316661dd2f968cdd6fe93eb39fab3f46b6a37396eea33d08f",
+    "contentHash": "60c48d1cdcee1e4284839375e83f12426faf521574f871fd66211b8ab3774ef6",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u25-courtesy:POLITE_IZVINITE",
+      "applications": [
+        {
+          "cue": "Извини́те",
+          "answer": "excuse me, polite or plural",
+          "distractors": [
+            "excuse me, familiar singular",
+            "thank you"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nИзвини́те\nexcuse me, polite or plural\nWhich address does Извини́те mark?\nИзвини́те is polite or plural. The familiar singular is Извини́.\nThe -те form marks polite or plural address.\nexcuse me, familiar singular\nthank you\nexcuse me, familiar singular is Извини́, without -те.\nthank you is a different courtesy formula.\nИзвини́.\nИзвини́\nте\nИзвини́,\nте."
+  },
+  {
+    "itemId": "prov-ca-7-595",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "бы́стро",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c7bcd60abcfae8f9a7482d58c3539016ccadbc7f76b84dc3df7771e8719810eb",
+    "contentHash": "a32bdce44dcab352af500a8e5bf1f98347ce50641bd1c86a192e3873a129ed58",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:MANNER_ADVERB_ONLY",
+      "applications": [
+        {
+          "cue": "бы́стро",
+          "answer": "quickly, a manner adverb",
+          "distractors": [
+            "a short predicative sentence",
+            "an unanalyzed impersonal chunk"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стро\nquickly, a manner adverb\nWhich label matches the shown manner adverb from the earlier pattern?\nбы́стро is a manner adverb, quickly. Ей трудно is not used here; that impersonal chunk is pending separate approval.\nThis check uses the manner adverb бы́стро and does not introduce a short-form predicative.\na short predicative sentence\nan unanalyzed impersonal chunk\na short predicative sentence is a later pattern, not this adverb.\nan unanalyzed impersonal chunk is recorded as pending and is not the keyed answer.\nЕй трудно"
+  },
+  {
+    "itemId": "prov-ca-7-596",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "meaning",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "quickly, a manner adverb",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c7bcd60abcfae8f9a7482d58c3539016ccadbc7f76b84dc3df7771e8719810eb",
+    "contentHash": "0bf653329af1f4401ce0b4310b67e0a4068aa2bcf7bc57ba97f031a730529586",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:MANNER_ADVERB_ONLY",
+      "applications": [
+        {
+          "cue": "бы́стро",
+          "answer": "quickly, a manner adverb",
+          "distractors": [
+            "a short predicative sentence",
+            "an unanalyzed impersonal chunk"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стро\nquickly, a manner adverb\nWhich label matches the shown manner adverb from the earlier pattern?\nбы́стро is a manner adverb, quickly. Ей трудно is not used here; that impersonal chunk is pending separate approval.\nThis check uses the manner adverb бы́стро and does not introduce a short-form predicative.\na short predicative sentence\nan unanalyzed impersonal chunk\na short predicative sentence is a later pattern, not this adverb.\nan unanalyzed impersonal chunk is recorded as pending and is not the keyed answer.\nЕй трудно"
+  },
+  {
+    "itemId": "prov-ca-7-597",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "Which label matches the shown manner adverb from the earlier pattern?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c7bcd60abcfae8f9a7482d58c3539016ccadbc7f76b84dc3df7771e8719810eb",
+    "contentHash": "177c76f9cad08d7912ce4ca4c4f11c528032b89551d8b2fb5ce6415ac558bb95",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:MANNER_ADVERB_ONLY",
+      "applications": [
+        {
+          "cue": "бы́стро",
+          "answer": "quickly, a manner adverb",
+          "distractors": [
+            "a short predicative sentence",
+            "an unanalyzed impersonal chunk"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стро\nquickly, a manner adverb\nWhich label matches the shown manner adverb from the earlier pattern?\nбы́стро is a manner adverb, quickly. Ей трудно is not used here; that impersonal chunk is pending separate approval.\nThis check uses the manner adverb бы́стро and does not introduce a short-form predicative.\na short predicative sentence\nan unanalyzed impersonal chunk\na short predicative sentence is a later pattern, not this adverb.\nan unanalyzed impersonal chunk is recorded as pending and is not the keyed answer.\nЕй трудно"
+  },
+  {
+    "itemId": "prov-ca-7-598",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "бы́стро is a manner adverb, quickly. Ей трудно is not used here; that impersonal chunk is pending separate approval.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c7bcd60abcfae8f9a7482d58c3539016ccadbc7f76b84dc3df7771e8719810eb",
+    "contentHash": "df878162cc1145103273f4f256c7f1c2b0af66651f5dac1cdf219a2e6378d928",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:MANNER_ADVERB_ONLY",
+      "applications": [
+        {
+          "cue": "бы́стро",
+          "answer": "quickly, a manner adverb",
+          "distractors": [
+            "a short predicative sentence",
+            "an unanalyzed impersonal chunk"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стро\nquickly, a manner adverb\nWhich label matches the shown manner adverb from the earlier pattern?\nбы́стро is a manner adverb, quickly. Ей трудно is not used here; that impersonal chunk is pending separate approval.\nThis check uses the manner adverb бы́стро and does not introduce a short-form predicative.\na short predicative sentence\nan unanalyzed impersonal chunk\na short predicative sentence is a later pattern, not this adverb.\nan unanalyzed impersonal chunk is recorded as pending and is not the keyed answer.\nЕй трудно"
+  },
+  {
+    "itemId": "prov-ca-7-599",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "This check uses the manner adverb бы́стро and does not introduce a short-form predicative.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c7bcd60abcfae8f9a7482d58c3539016ccadbc7f76b84dc3df7771e8719810eb",
+    "contentHash": "1cbc135cdbd84a1643b73d2328adc5358287c78aeba7f50af4ad1f19ce4228c8",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:MANNER_ADVERB_ONLY",
+      "applications": [
+        {
+          "cue": "бы́стро",
+          "answer": "quickly, a manner adverb",
+          "distractors": [
+            "a short predicative sentence",
+            "an unanalyzed impersonal chunk"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стро\nquickly, a manner adverb\nWhich label matches the shown manner adverb from the earlier pattern?\nбы́стро is a manner adverb, quickly. Ей трудно is not used here; that impersonal chunk is pending separate approval.\nThis check uses the manner adverb бы́стро and does not introduce a short-form predicative.\na short predicative sentence\nan unanalyzed impersonal chunk\na short predicative sentence is a later pattern, not this adverb.\nan unanalyzed impersonal chunk is recorded as pending and is not the keyed answer.\nЕй трудно"
+  },
+  {
+    "itemId": "prov-ca-7-600",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "a short predicative sentence",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c7bcd60abcfae8f9a7482d58c3539016ccadbc7f76b84dc3df7771e8719810eb",
+    "contentHash": "088d045a96c53349c7a2967658e3f466730cb31196bd7933f4d150190102322e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:MANNER_ADVERB_ONLY",
+      "applications": [
+        {
+          "cue": "бы́стро",
+          "answer": "quickly, a manner adverb",
+          "distractors": [
+            "a short predicative sentence",
+            "an unanalyzed impersonal chunk"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стро\nquickly, a manner adverb\nWhich label matches the shown manner adverb from the earlier pattern?\nбы́стро is a manner adverb, quickly. Ей трудно is not used here; that impersonal chunk is pending separate approval.\nThis check uses the manner adverb бы́стро and does not introduce a short-form predicative.\na short predicative sentence\nan unanalyzed impersonal chunk\na short predicative sentence is a later pattern, not this adverb.\nan unanalyzed impersonal chunk is recorded as pending and is not the keyed answer.\nЕй трудно"
+  },
+  {
+    "itemId": "prov-ca-7-601",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "an unanalyzed impersonal chunk",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c7bcd60abcfae8f9a7482d58c3539016ccadbc7f76b84dc3df7771e8719810eb",
+    "contentHash": "53c2caf4b47a5339b6d86698b5e70edddf35cb3cfac5ac29f8d0ce3eca30b50e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:MANNER_ADVERB_ONLY",
+      "applications": [
+        {
+          "cue": "бы́стро",
+          "answer": "quickly, a manner adverb",
+          "distractors": [
+            "a short predicative sentence",
+            "an unanalyzed impersonal chunk"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стро\nquickly, a manner adverb\nWhich label matches the shown manner adverb from the earlier pattern?\nбы́стро is a manner adverb, quickly. Ей трудно is not used here; that impersonal chunk is pending separate approval.\nThis check uses the manner adverb бы́стро and does not introduce a short-form predicative.\na short predicative sentence\nan unanalyzed impersonal chunk\na short predicative sentence is a later pattern, not this adverb.\nan unanalyzed impersonal chunk is recorded as pending and is not the keyed answer.\nЕй трудно"
+  },
+  {
+    "itemId": "prov-ca-7-602",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "a short predicative sentence is a later pattern, not this adverb.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c7bcd60abcfae8f9a7482d58c3539016ccadbc7f76b84dc3df7771e8719810eb",
+    "contentHash": "0104c6807d7bd5b5703350afa39cea5a7d8a51288e392cfda74a308d8a6e1a79",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:MANNER_ADVERB_ONLY",
+      "applications": [
+        {
+          "cue": "бы́стро",
+          "answer": "quickly, a manner adverb",
+          "distractors": [
+            "a short predicative sentence",
+            "an unanalyzed impersonal chunk"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стро\nquickly, a manner adverb\nWhich label matches the shown manner adverb from the earlier pattern?\nбы́стро is a manner adverb, quickly. Ей трудно is not used here; that impersonal chunk is pending separate approval.\nThis check uses the manner adverb бы́стро and does not introduce a short-form predicative.\na short predicative sentence\nan unanalyzed impersonal chunk\na short predicative sentence is a later pattern, not this adverb.\nan unanalyzed impersonal chunk is recorded as pending and is not the keyed answer.\nЕй трудно"
+  },
+  {
+    "itemId": "prov-ca-7-603",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "an unanalyzed impersonal chunk is recorded as pending and is not the keyed answer.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c7bcd60abcfae8f9a7482d58c3539016ccadbc7f76b84dc3df7771e8719810eb",
+    "contentHash": "d728d9ecd6877116adf743e335654ac9389ae18526a4fe30e29e44a72100bd4e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:MANNER_ADVERB_ONLY",
+      "applications": [
+        {
+          "cue": "бы́стро",
+          "answer": "quickly, a manner adverb",
+          "distractors": [
+            "a short predicative sentence",
+            "an unanalyzed impersonal chunk"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стро\nquickly, a manner adverb\nWhich label matches the shown manner adverb from the earlier pattern?\nбы́стро is a manner adverb, quickly. Ей трудно is not used here; that impersonal chunk is pending separate approval.\nThis check uses the manner adverb бы́стро and does not introduce a short-form predicative.\na short predicative sentence\nan unanalyzed impersonal chunk\na short predicative sentence is a later pattern, not this adverb.\nan unanalyzed impersonal chunk is recorded as pending and is not the keyed answer.\nЕй трудно"
+  },
+  {
+    "itemId": "prov-ca-7-604",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "Ей трудно",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c7bcd60abcfae8f9a7482d58c3539016ccadbc7f76b84dc3df7771e8719810eb",
+    "contentHash": "c106f27e1538b5a5d7af7a5a17fa46bc8385be6da40b3df4283bedb5bc6dfe4d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:MANNER_ADVERB_ONLY",
+      "applications": [
+        {
+          "cue": "бы́стро",
+          "answer": "quickly, a manner adverb",
+          "distractors": [
+            "a short predicative sentence",
+            "an unanalyzed impersonal chunk"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стро\nquickly, a manner adverb\nWhich label matches the shown manner adverb from the earlier pattern?\nбы́стро is a manner adverb, quickly. Ей трудно is not used here; that impersonal chunk is pending separate approval.\nThis check uses the manner adverb бы́стро and does not introduce a short-form predicative.\na short predicative sentence\nan unanalyzed impersonal chunk\na short predicative sentence is a later pattern, not this adverb.\nan unanalyzed impersonal chunk is recorded as pending and is not the keyed answer.\nЕй трудно"
+  },
+  {
+    "itemId": "prov-ca-23-605",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-ranges",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u23-ranges:u23-st-orient",
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nProposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. A bounded completion-over-a-period check is implemented here and remains review-pending. It does not cover every temporal clause. Qualified review is pending.",
+    "shippedText": "Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. A bounded completion-over-a-period check is implemented here and remains review-pending. It does not cover every temporal clause. Qualified review is pending.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cac6de4f6edb18373e3c1b00fef9d4ded0e901bf787c6d19a2895b2d428ed624",
+    "contentHash": "c29eadfe3b1548888c62e2371e2650a2dca19a8941d8599e7ac9f1f8c77b5e80",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Authorship: independently authored for Russian Companion.",
+      "objectiveOrClaimBinding": "obj-u23-ranges:u23-st-orient"
+    }
+  },
+  {
+    "itemId": "prov-ca-26-606",
+    "unitNumber": 26,
+    "objectiveId": "obj-u26-word-order",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u26-word-order:u26-st-orient",
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nProposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.",
+    "shippedText": "Proposed Unit 26 uses admitted arrangement lines, the frozen indefinite-series meanings, the written capital form, the frozen address marks, and the admitted ReadyRussian letter fragments. A bounded postal-order check is implemented here and remains review-pending. It is not complete postal mastery. Qualified review is pending.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "5669077d27fd73db6b3a5061ebdaeda45615ed3c07d1f6cabebe0847f63b1f42",
+    "contentHash": "d8d884fbe3c6647954658c8df12e40df8eedd8faeca5477215def44b05c8ef7e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Authorship: independently authored for Russian Companion.",
+      "objectiveOrClaimBinding": "obj-u26-word-order:u26-st-orient"
+    }
+  },
+  {
+    "itemId": "prov-ca-27-607",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-passive",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u27-passive:u27-st-orient",
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nProposed Unit 27 uses admitted past passive lines. Required stress checks use only past passive forms. Present passive lines are optional and do not gate this unit. A bounded participial-reading check is implemented here and remains review-pending. Active forms are not taught here. Qualified review is pending.",
+    "shippedText": "Proposed Unit 27 uses admitted past passive lines. Required stress checks use only past passive forms. Present passive lines are optional and do not gate this unit. A bounded participial-reading check is implemented here and remains review-pending. Active forms are not taught here. Qualified review is pending.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "485d22dfbc5162c274e755ff64194f2a69db5e6d12deec6601acf3503f9af077",
+    "contentHash": "baa71f6746114e24f276bdca28c66e8287b45322c291e999b46015662e062b5e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Authorship: independently authored for Russian Companion.",
+      "objectiveOrClaimBinding": "obj-u27-passive:u27-st-orient"
+    }
+  },
+  {
+    "itemId": "prov-ca-30-608",
+    "unitNumber": 30,
+    "objectiveId": "obj-u30-letter-names",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u30-letter-names:u30-st-orient",
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nUnit 1 introduces the printed letter names, and this unit reviews them. It also shows two admitted abbreviation examples and the admitted address marks. The two-entry dictionary task is implemented and review-pending. It is not broad dictionary proficiency. The admitted capstone story is included. Advancement stays blocked until review. Qualified review is pending.",
+    "shippedText": "Unit 1 introduces the printed letter names, and this unit reviews them. It also shows two admitted abbreviation examples and the admitted address marks. The two-entry dictionary task is implemented and review-pending. It is not broad dictionary proficiency. The admitted capstone story is included. Advancement stays blocked until review. Qualified review is pending.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9efb5add54a764d9db5f7a5453971852b6fddd3ef323cc12d1ce2f7e784564aa",
+    "contentHash": "340d9ee5b4766b3ebd3f7ce7fe91a954e286edd17bb2ff00ac346938abf4bc51",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Authorship: independently authored for Russian Companion.",
+      "objectiveOrClaimBinding": "obj-u30-letter-names:u30-st-orient"
+    }
+  },
+  {
+    "itemId": "prov-ca-21-609",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-book",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u21-book:u21:notice-2125",
+    "shippedText": "Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "5582773b741ee53c022b9ba27c891d756dfae1d526d9150ba90a440b86145a00",
+    "contentHash": "cfa29fcc2b75e5259f19b25cdf8cd0acc40a91b5edf1c16bf0d642d4bf6d00d8",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Authorship: independently authored for Russian Companion.",
+      "objectiveOrClaimBinding": "obj-u21-book:u21:notice-2125"
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nBounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own."
+  },
+  {
+    "itemId": "prov-ca-21-610",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-svoy",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u21-svoy:u21:notice-2125-summary",
+    "shippedText": "Proposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "f1e5d4ee50b835be66e350280da1d9c2602f1e8394a669277be53ae13933a5c2",
+    "contentHash": "413a7a6cef6c60d2a828e503fe1158b52d1e907fcabe86e17a86091d81768bfa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Authorship: independently authored for Russian Companion.",
+      "objectiveOrClaimBinding": "obj-u21-svoy:u21:notice-2125-summary"
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nProposed Units 21–25 adapt admitted CC BY-SA 4.0 spans. Pressbooks evidence is separate from Wikimedia evidence. Bounded completion practice is review-pending, not full coverage."
+  },
+  {
+    "itemId": "prov-ca-22-611",
+    "unitNumber": 22,
+    "objectiveId": "obj-u22-book",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u22-book:u22:notice-2125",
+    "shippedText": "Bounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "5582773b741ee53c022b9ba27c891d756dfae1d526d9150ba90a440b86145a00",
+    "contentHash": "cfa29fcc2b75e5259f19b25cdf8cd0acc40a91b5edf1c16bf0d642d4bf6d00d8",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Authorship: independently authored for Russian Companion.",
+      "objectiveOrClaimBinding": "obj-u22-book:u22:notice-2125"
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nBounded practice for completion over a period is implemented and review-pending. It is not approved coverage of every temporal clause. Book work stays in the copy you own."
+  }
+]

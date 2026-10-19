@@ -1,0 +1,1010 @@
+[
+  {
+    "itemId": "prov-ca-repair-21-10806",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-purpose",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u21-i-purpose-1",
+    "shippedText": "so that",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25",
+    "contentHash": "ab6b7abe5e492f9b6d750de7961c627380f376d321fccbb8be082915be4cdf03",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u21-purpose:CONDITIONAL_ESLI",
+      "applications": [
+        {
+          "cue": "если",
+          "answer": "if",
+          "distractors": [
+            "so that",
+            "because"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nесли\nif\nWhich meaning matches the shown conjunction?\nесли means if and introduces a condition for the main proposition.\nso that\nbecause\nso that is the ordinary meaning of чтобы, not если.\nbecause is the meaning of потому что, not если.\nчтобы,\nчтобы\nесли.\nпотому что,\nпотому что"
+  },
+  {
+    "itemId": "prov-ca-repair-21-10807",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-purpose",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u21-i-purpose-1",
+    "shippedText": "because",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25",
+    "contentHash": "a511aeeeb8a119931a67038a63b7974faee48712de1c79391ebe2c9b929678e9",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u21-purpose:CONDITIONAL_ESLI",
+      "applications": [
+        {
+          "cue": "если",
+          "answer": "if",
+          "distractors": [
+            "so that",
+            "because"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nесли\nif\nWhich meaning matches the shown conjunction?\nесли means if and introduces a condition for the main proposition.\nso that\nbecause\nso that is the ordinary meaning of чтобы, not если.\nbecause is the meaning of потому что, not если.\nчтобы,\nчтобы\nесли.\nпотому что,\nпотому что"
+  },
+  {
+    "itemId": "prov-ca-repair-21-10808",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-purpose",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u21-i-purpose-1",
+    "shippedText": "so that is the ordinary meaning of чтобы, not если.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25",
+    "contentHash": "abfe59f698b2f278a3855dc06b9996d2b8424e501e520be0f5e83ee102fd4a6b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u21-purpose:CONDITIONAL_ESLI",
+      "applications": [
+        {
+          "cue": "если",
+          "answer": "if",
+          "distractors": [
+            "so that",
+            "because"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nесли\nif\nWhich meaning matches the shown conjunction?\nесли means if and introduces a condition for the main proposition.\nso that\nbecause\nso that is the ordinary meaning of чтобы, not если.\nbecause is the meaning of потому что, not если.\nчтобы,\nчтобы\nесли.\nпотому что,\nпотому что"
+  },
+  {
+    "itemId": "prov-ca-repair-21-10809",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-purpose",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u21-i-purpose-1",
+    "shippedText": "because is the meaning of потому что, not если.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25",
+    "contentHash": "8c1bf856bcf0759092aaae055e0e708c4b34dd72090fe3ceec6b24f59721065c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u21-purpose:CONDITIONAL_ESLI",
+      "applications": [
+        {
+          "cue": "если",
+          "answer": "if",
+          "distractors": [
+            "so that",
+            "because"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nесли\nif\nWhich meaning matches the shown conjunction?\nесли means if and introduces a condition for the main proposition.\nso that\nbecause\nso that is the ordinary meaning of чтобы, not если.\nbecause is the meaning of потому что, not если.\nчтобы,\nчтобы\nесли.\nпотому что,\nпотому что"
+  },
+  {
+    "itemId": "prov-ca-repair-21-10810",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-purpose",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u21-i-purpose-1",
+    "shippedText": "чтобы,",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25",
+    "contentHash": "aa3dc12b65af81e3cdf9ccd4d93cc5f69c5c4fe09132aa4bf4bed4cc97ec17f3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u21-purpose:CONDITIONAL_ESLI",
+      "applications": [
+        {
+          "cue": "если",
+          "answer": "if",
+          "distractors": [
+            "so that",
+            "because"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nесли\nif\nWhich meaning matches the shown conjunction?\nесли means if and introduces a condition for the main proposition.\nso that\nbecause\nso that is the ordinary meaning of чтобы, not если.\nbecause is the meaning of потому что, not если.\nчтобы,\nчтобы\nесли.\nпотому что,\nпотому что"
+  },
+  {
+    "itemId": "prov-ca-repair-21-10811",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-purpose",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u21-i-purpose-1",
+    "shippedText": "чтобы",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25",
+    "contentHash": "1a4fb8750ecb7b8f4a22d415334f9dc59343410d75d5f40fa25084433d87c762",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u21-purpose:CONDITIONAL_ESLI",
+      "applications": [
+        {
+          "cue": "если",
+          "answer": "if",
+          "distractors": [
+            "so that",
+            "because"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nесли\nif\nWhich meaning matches the shown conjunction?\nесли means if and introduces a condition for the main proposition.\nso that\nbecause\nso that is the ordinary meaning of чтобы, not если.\nbecause is the meaning of потому что, not если.\nчтобы,\nчтобы\nесли.\nпотому что,\nпотому что"
+  },
+  {
+    "itemId": "prov-ca-repair-21-10812",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-purpose",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u21-i-purpose-1",
+    "shippedText": "если.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25",
+    "contentHash": "73c5d192eff74887e10af6eb05f9b08718a016555c5a0234ce55dc1417c824de",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u21-purpose:CONDITIONAL_ESLI",
+      "applications": [
+        {
+          "cue": "если",
+          "answer": "if",
+          "distractors": [
+            "so that",
+            "because"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nесли\nif\nWhich meaning matches the shown conjunction?\nесли means if and introduces a condition for the main proposition.\nso that\nbecause\nso that is the ordinary meaning of чтобы, not если.\nbecause is the meaning of потому что, not если.\nчтобы,\nчтобы\nесли.\nпотому что,\nпотому что"
+  },
+  {
+    "itemId": "prov-ca-repair-21-10813",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-purpose",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u21-i-purpose-1",
+    "shippedText": "потому что,",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25",
+    "contentHash": "0f4214e2126100ef808bd16440ba1620df9e42fb7c75be9d1e5ebad276b97960",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u21-purpose:CONDITIONAL_ESLI",
+      "applications": [
+        {
+          "cue": "если",
+          "answer": "if",
+          "distractors": [
+            "so that",
+            "because"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nесли\nif\nWhich meaning matches the shown conjunction?\nесли means if and introduces a condition for the main proposition.\nso that\nbecause\nso that is the ordinary meaning of чтобы, not если.\nbecause is the meaning of потому что, not если.\nчтобы,\nчтобы\nесли.\nпотому что,\nпотому что"
+  },
+  {
+    "itemId": "prov-ca-repair-21-10814",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-purpose",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u21-i-purpose-1",
+    "shippedText": "потому что",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b988ebe77595c0300afff5333d6bf1590df947cf91fa5162c9d12b2187d9dd25",
+    "contentHash": "0bea65d093ce98b4de850c861201a0bee85a3dfe15dfdf4a3061f0a13e9b82ab",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u21-purpose:CONDITIONAL_ESLI",
+      "applications": [
+        {
+          "cue": "если",
+          "answer": "if",
+          "distractors": [
+            "so that",
+            "because"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nесли\nif\nWhich meaning matches the shown conjunction?\nесли means if and introduces a condition for the main proposition.\nso that\nbecause\nso that is the ordinary meaning of чтобы, not если.\nbecause is the meaning of потому что, not если.\nчтобы,\nчтобы\nесли.\nпотому что,\nпотому что"
+  },
+  {
+    "itemId": "prov-ca-repair-24-10815",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-g-alternation-0",
+    "shippedText": "Я не ви́жу э́ту кни́гу.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ba2089e55341d9b6032192c439971139dfd8e1ed20a30493afb471da771b62c9",
+    "contentHash": "537b5d11fd694f053f33c636fe8208443da0f702901b92adf2dba2d044f7c22b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:SINGULAR_NEGATED_OBJECT",
+      "applications": [
+        {
+          "cue": "Я не ви́жу э́ту кни́гу.",
+          "answer": "I don't see this book, singular",
+          "distractors": [
+            "I don't see any books",
+            "I see this book"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу э́ту кни́гу.\nI don't see this book, singular\nWhich reading matches the singular object in the shown sentence?\nЯ не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nI don't see any books\nI see this book\nI don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.\nI see this book drops the negation.\nЯ не ви́жу э́ту кни́гу\nэ́ту кни́гу\nне\nэ́ту кни́гу."
+  },
+  {
+    "itemId": "prov-ca-repair-24-10816",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "meaning",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-g-alternation-0",
+    "shippedText": "I don't see this book, singular",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ba2089e55341d9b6032192c439971139dfd8e1ed20a30493afb471da771b62c9",
+    "contentHash": "b118fcf2fd42d9a4ef47c405efce7a5b170ea021457e7be6a50c506b83139926",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:SINGULAR_NEGATED_OBJECT",
+      "applications": [
+        {
+          "cue": "Я не ви́жу э́ту кни́гу.",
+          "answer": "I don't see this book, singular",
+          "distractors": [
+            "I don't see any books",
+            "I see this book"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу э́ту кни́гу.\nI don't see this book, singular\nWhich reading matches the singular object in the shown sentence?\nЯ не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nI don't see any books\nI see this book\nI don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.\nI see this book drops the negation.\nЯ не ви́жу э́ту кни́гу\nэ́ту кни́гу\nне\nэ́ту кни́гу."
+  },
+  {
+    "itemId": "prov-ca-repair-24-10817",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-g-alternation-0",
+    "shippedText": "Which reading matches the singular object in the shown sentence?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ba2089e55341d9b6032192c439971139dfd8e1ed20a30493afb471da771b62c9",
+    "contentHash": "d18726504c2a3e2d1145bb50deac62f081b3378867b47370f038666435ef4321",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:SINGULAR_NEGATED_OBJECT",
+      "applications": [
+        {
+          "cue": "Я не ви́жу э́ту кни́гу.",
+          "answer": "I don't see this book, singular",
+          "distractors": [
+            "I don't see any books",
+            "I see this book"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу э́ту кни́гу.\nI don't see this book, singular\nWhich reading matches the singular object in the shown sentence?\nЯ не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nI don't see any books\nI see this book\nI don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.\nI see this book drops the negation.\nЯ не ви́жу э́ту кни́гу\nэ́ту кни́гу\nне\nэ́ту кни́гу."
+  },
+  {
+    "itemId": "prov-ca-repair-24-10818",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-g-alternation-0",
+    "shippedText": "Я не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ba2089e55341d9b6032192c439971139dfd8e1ed20a30493afb471da771b62c9",
+    "contentHash": "5bc2fc3471a8ffada2e87b06700e898dd97b7ab908386d7a28bb1f2771394d7f",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:SINGULAR_NEGATED_OBJECT",
+      "applications": [
+        {
+          "cue": "Я не ви́жу э́ту кни́гу.",
+          "answer": "I don't see this book, singular",
+          "distractors": [
+            "I don't see any books",
+            "I see this book"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу э́ту кни́гу.\nI don't see this book, singular\nWhich reading matches the singular object in the shown sentence?\nЯ не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nI don't see any books\nI see this book\nI don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.\nI see this book drops the negation.\nЯ не ви́жу э́ту кни́гу\nэ́ту кни́гу\nне\nэ́ту кни́гу."
+  },
+  {
+    "itemId": "prov-ca-repair-24-10819",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-g-alternation-0",
+    "shippedText": "I don't see any books",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ba2089e55341d9b6032192c439971139dfd8e1ed20a30493afb471da771b62c9",
+    "contentHash": "e4ac28af59715826d236d42069910f9e3092055006a742929b3bba398e755046",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:SINGULAR_NEGATED_OBJECT",
+      "applications": [
+        {
+          "cue": "Я не ви́жу э́ту кни́гу.",
+          "answer": "I don't see this book, singular",
+          "distractors": [
+            "I don't see any books",
+            "I see this book"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу э́ту кни́гу.\nI don't see this book, singular\nWhich reading matches the singular object in the shown sentence?\nЯ не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nI don't see any books\nI see this book\nI don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.\nI see this book drops the negation.\nЯ не ви́жу э́ту кни́гу\nэ́ту кни́гу\nне\nэ́ту кни́гу."
+  },
+  {
+    "itemId": "prov-ca-repair-24-10820",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-g-alternation-0",
+    "shippedText": "I see this book",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ba2089e55341d9b6032192c439971139dfd8e1ed20a30493afb471da771b62c9",
+    "contentHash": "63bf759737bf1b3417d8c0a6e74a486777eaf42490e1ff6453d84bd6bc157765",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:SINGULAR_NEGATED_OBJECT",
+      "applications": [
+        {
+          "cue": "Я не ви́жу э́ту кни́гу.",
+          "answer": "I don't see this book, singular",
+          "distractors": [
+            "I don't see any books",
+            "I see this book"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу э́ту кни́гу.\nI don't see this book, singular\nWhich reading matches the singular object in the shown sentence?\nЯ не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nI don't see any books\nI see this book\nI don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.\nI see this book drops the negation.\nЯ не ви́жу э́ту кни́гу\nэ́ту кни́гу\nне\nэ́ту кни́гу."
+  },
+  {
+    "itemId": "prov-ca-repair-24-10821",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-g-alternation-0",
+    "shippedText": "I don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ba2089e55341d9b6032192c439971139dfd8e1ed20a30493afb471da771b62c9",
+    "contentHash": "a97f3a680231570b37776fb4a9ff1833dbc4f4241ad760997060d52c55cf67eb",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:SINGULAR_NEGATED_OBJECT",
+      "applications": [
+        {
+          "cue": "Я не ви́жу э́ту кни́гу.",
+          "answer": "I don't see this book, singular",
+          "distractors": [
+            "I don't see any books",
+            "I see this book"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу э́ту кни́гу.\nI don't see this book, singular\nWhich reading matches the singular object in the shown sentence?\nЯ не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nI don't see any books\nI see this book\nI don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.\nI see this book drops the negation.\nЯ не ви́жу э́ту кни́гу\nэ́ту кни́гу\nне\nэ́ту кни́гу."
+  },
+  {
+    "itemId": "prov-ca-repair-24-10822",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-g-alternation-0",
+    "shippedText": "I see this book drops the negation.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ba2089e55341d9b6032192c439971139dfd8e1ed20a30493afb471da771b62c9",
+    "contentHash": "7a820e6594ce2d9f6220e02eef1dc499195403047a695f597ef65dd1c91bdb38",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:SINGULAR_NEGATED_OBJECT",
+      "applications": [
+        {
+          "cue": "Я не ви́жу э́ту кни́гу.",
+          "answer": "I don't see this book, singular",
+          "distractors": [
+            "I don't see any books",
+            "I see this book"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу э́ту кни́гу.\nI don't see this book, singular\nWhich reading matches the singular object in the shown sentence?\nЯ не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nI don't see any books\nI see this book\nI don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.\nI see this book drops the negation.\nЯ не ви́жу э́ту кни́гу\nэ́ту кни́гу\nне\nэ́ту кни́гу."
+  },
+  {
+    "itemId": "prov-ca-repair-24-10823",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-g-alternation-0",
+    "shippedText": "Я не ви́жу э́ту кни́гу",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ba2089e55341d9b6032192c439971139dfd8e1ed20a30493afb471da771b62c9",
+    "contentHash": "d9dda76d8b3295fc9d5b71e433f3eb961efb3acabbbf27a85001f4c36ae12994",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:SINGULAR_NEGATED_OBJECT",
+      "applications": [
+        {
+          "cue": "Я не ви́жу э́ту кни́гу.",
+          "answer": "I don't see this book, singular",
+          "distractors": [
+            "I don't see any books",
+            "I see this book"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу э́ту кни́гу.\nI don't see this book, singular\nWhich reading matches the singular object in the shown sentence?\nЯ не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nI don't see any books\nI see this book\nI don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.\nI see this book drops the negation.\nЯ не ви́жу э́ту кни́гу\nэ́ту кни́гу\nне\nэ́ту кни́гу."
+  },
+  {
+    "itemId": "prov-ca-repair-24-10824",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-g-alternation-0",
+    "shippedText": "э́ту кни́гу",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ba2089e55341d9b6032192c439971139dfd8e1ed20a30493afb471da771b62c9",
+    "contentHash": "83bdc9e0cc6db696a84690c4d0a4f55b7af237675cd853931dbc1567a0f3b621",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:SINGULAR_NEGATED_OBJECT",
+      "applications": [
+        {
+          "cue": "Я не ви́жу э́ту кни́гу.",
+          "answer": "I don't see this book, singular",
+          "distractors": [
+            "I don't see any books",
+            "I see this book"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу э́ту кни́гу.\nI don't see this book, singular\nWhich reading matches the singular object in the shown sentence?\nЯ не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nI don't see any books\nI see this book\nI don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.\nI see this book drops the negation.\nЯ не ви́жу э́ту кни́гу\nэ́ту кни́гу\nне\nэ́ту кни́гу."
+  },
+  {
+    "itemId": "prov-ca-repair-24-10825",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-g-alternation-0",
+    "shippedText": "не",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ba2089e55341d9b6032192c439971139dfd8e1ed20a30493afb471da771b62c9",
+    "contentHash": "962b65e329ec694a68641cde5cd8078987a78e698d4c3d23503bb51059130958",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:SINGULAR_NEGATED_OBJECT",
+      "applications": [
+        {
+          "cue": "Я не ви́жу э́ту кни́гу.",
+          "answer": "I don't see this book, singular",
+          "distractors": [
+            "I don't see any books",
+            "I see this book"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу э́ту кни́гу.\nI don't see this book, singular\nWhich reading matches the singular object in the shown sentence?\nЯ не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nI don't see any books\nI see this book\nI don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.\nI see this book drops the negation.\nЯ не ви́жу э́ту кни́гу\nэ́ту кни́гу\nне\nэ́ту кни́гу."
+  },
+  {
+    "itemId": "prov-ca-repair-24-10826",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-g-alternation-0",
+    "shippedText": "э́ту кни́гу.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "ba2089e55341d9b6032192c439971139dfd8e1ed20a30493afb471da771b62c9",
+    "contentHash": "009247a2a7b7e7ef31e7e0d94437a9bdbdb598dbd18ed95000b3b9126b6de588",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:SINGULAR_NEGATED_OBJECT",
+      "applications": [
+        {
+          "cue": "Я не ви́жу э́ту кни́гу.",
+          "answer": "I don't see this book, singular",
+          "distractors": [
+            "I don't see any books",
+            "I see this book"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу э́ту кни́гу.\nI don't see this book, singular\nWhich reading matches the singular object in the shown sentence?\nЯ не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nI don't see any books\nI see this book\nI don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.\nI see this book drops the negation.\nЯ не ви́жу э́ту кни́гу\nэ́ту кни́гу\nне\nэ́ту кни́гу."
+  },
+  {
+    "itemId": "prov-ca-repair-24-10827",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-i-alternation-2",
+    "shippedText": "Я не ви́жу книг.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b14ebdb8d1a0f7155a46915ce5304bafd5db7355be5ecdb73a8d436245ce1204",
+    "contentHash": "f760f5350f2641cb031cdf169659ad061d77b0d9dc249cd4c80475a369624086",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:PLURAL_NEGATED_GENITIVE",
+      "applications": [
+        {
+          "cue": "Я не ви́жу книг.",
+          "answer": "I don't see any books",
+          "distractors": [
+            "I don't see the one book",
+            "I see the books"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу книг.\nI don't see any books\nWhich reading matches the bare plural genitive?\nЯ не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.\nI don't see the one book\nI see the books\nI don't see the one book would need a singular object such as э́ту кни́гу.\nI see the books drops the negation.\nЯ не ви́жу книг\nкниг\nне\nэ́ту кни́гу.\nэ́ту кни́гу"
+  },
+  {
+    "itemId": "prov-ca-repair-24-10828",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "meaning",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-i-alternation-2",
+    "shippedText": "I don't see any books",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b14ebdb8d1a0f7155a46915ce5304bafd5db7355be5ecdb73a8d436245ce1204",
+    "contentHash": "e4ac28af59715826d236d42069910f9e3092055006a742929b3bba398e755046",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:PLURAL_NEGATED_GENITIVE",
+      "applications": [
+        {
+          "cue": "Я не ви́жу книг.",
+          "answer": "I don't see any books",
+          "distractors": [
+            "I don't see the one book",
+            "I see the books"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу книг.\nI don't see any books\nWhich reading matches the bare plural genitive?\nЯ не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.\nI don't see the one book\nI see the books\nI don't see the one book would need a singular object such as э́ту кни́гу.\nI see the books drops the negation.\nЯ не ви́жу книг\nкниг\nне\nэ́ту кни́гу.\nэ́ту кни́гу"
+  },
+  {
+    "itemId": "prov-ca-repair-24-10829",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-i-alternation-2",
+    "shippedText": "Which reading matches the bare plural genitive?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b14ebdb8d1a0f7155a46915ce5304bafd5db7355be5ecdb73a8d436245ce1204",
+    "contentHash": "1c29a10455df577c73a6cac41b4f648fd215fa8404c9fbae3bc3a8c1d4af62f1",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:PLURAL_NEGATED_GENITIVE",
+      "applications": [
+        {
+          "cue": "Я не ви́жу книг.",
+          "answer": "I don't see any books",
+          "distractors": [
+            "I don't see the one book",
+            "I see the books"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу книг.\nI don't see any books\nWhich reading matches the bare plural genitive?\nЯ не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.\nI don't see the one book\nI see the books\nI don't see the one book would need a singular object such as э́ту кни́гу.\nI see the books drops the negation.\nЯ не ви́жу книг\nкниг\nне\nэ́ту кни́гу.\nэ́ту кни́гу"
+  },
+  {
+    "itemId": "prov-ca-repair-24-10830",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-i-alternation-2",
+    "shippedText": "Я не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b14ebdb8d1a0f7155a46915ce5304bafd5db7355be5ecdb73a8d436245ce1204",
+    "contentHash": "7112b05d71cc3fdc4fc09dec4b285acb5478d83d5b9a01baaddf1c481c93e674",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:PLURAL_NEGATED_GENITIVE",
+      "applications": [
+        {
+          "cue": "Я не ви́жу книг.",
+          "answer": "I don't see any books",
+          "distractors": [
+            "I don't see the one book",
+            "I see the books"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу книг.\nI don't see any books\nWhich reading matches the bare plural genitive?\nЯ не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.\nI don't see the one book\nI see the books\nI don't see the one book would need a singular object such as э́ту кни́гу.\nI see the books drops the negation.\nЯ не ви́жу книг\nкниг\nне\nэ́ту кни́гу.\nэ́ту кни́гу"
+  },
+  {
+    "itemId": "prov-ca-repair-24-10831",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-i-alternation-2",
+    "shippedText": "I don't see the one book",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b14ebdb8d1a0f7155a46915ce5304bafd5db7355be5ecdb73a8d436245ce1204",
+    "contentHash": "a548cbc9cb49c8078bf63dd7972010654573eedfa9e2e21b7752645b4fe08f0e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:PLURAL_NEGATED_GENITIVE",
+      "applications": [
+        {
+          "cue": "Я не ви́жу книг.",
+          "answer": "I don't see any books",
+          "distractors": [
+            "I don't see the one book",
+            "I see the books"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу книг.\nI don't see any books\nWhich reading matches the bare plural genitive?\nЯ не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.\nI don't see the one book\nI see the books\nI don't see the one book would need a singular object such as э́ту кни́гу.\nI see the books drops the negation.\nЯ не ви́жу книг\nкниг\nне\nэ́ту кни́гу.\nэ́ту кни́гу"
+  },
+  {
+    "itemId": "prov-ca-repair-24-10832",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-i-alternation-2",
+    "shippedText": "I see the books",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b14ebdb8d1a0f7155a46915ce5304bafd5db7355be5ecdb73a8d436245ce1204",
+    "contentHash": "8dc1bf68acb2583c804f89f3997d485f58be227d72c061d2b8fadc6fa0cecd69",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:PLURAL_NEGATED_GENITIVE",
+      "applications": [
+        {
+          "cue": "Я не ви́жу книг.",
+          "answer": "I don't see any books",
+          "distractors": [
+            "I don't see the one book",
+            "I see the books"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу книг.\nI don't see any books\nWhich reading matches the bare plural genitive?\nЯ не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.\nI don't see the one book\nI see the books\nI don't see the one book would need a singular object such as э́ту кни́гу.\nI see the books drops the negation.\nЯ не ви́жу книг\nкниг\nне\nэ́ту кни́гу.\nэ́ту кни́гу"
+  },
+  {
+    "itemId": "prov-ca-repair-24-10833",
+    "unitNumber": 24,
+    "objectiveId": "obj-u24-alternation",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u24-i-alternation-2",
+    "shippedText": "I don't see the one book would need a singular object such as э́ту кни́гу.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "b14ebdb8d1a0f7155a46915ce5304bafd5db7355be5ecdb73a8d436245ce1204",
+    "contentHash": "3359f60af78756dafdb8fae9ffcb66eda5037d3f4405998643b2ef9eb4717bc5",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u24-alternation:PLURAL_NEGATED_GENITIVE",
+      "applications": [
+        {
+          "cue": "Я не ви́жу книг.",
+          "answer": "I don't see any books",
+          "distractors": [
+            "I don't see the one book",
+            "I see the books"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nЯ не ви́жу книг.\nI don't see any books\nWhich reading matches the bare plural genitive?\nЯ не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.\nI don't see the one book\nI see the books\nI don't see the one book would need a singular object such as э́ту кни́гу.\nI see the books drops the negation.\nЯ не ви́жу книг\nкниг\nне\nэ́ту кни́гу.\nэ́ту кни́гу"
+  }
+]

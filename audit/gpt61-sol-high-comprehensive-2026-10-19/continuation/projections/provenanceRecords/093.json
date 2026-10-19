@@ -1,0 +1,902 @@
+[
+  {
+    "itemId": "prov-ca-repair-7-10668",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "бы́стрый is an adjective describing a noun, rather than a description of how an action is performed.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "5fd2caba6dfbe400a5fad540be4c8bffa86146b0d4b1d5122ec989bb5e52167f",
+    "contentHash": "2a4a59bfcf4979aae9490ef5724ed40c8d7037627f7d1c89436933d8db2ad5a2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:ADJECTIVE_ADVERB_CONTRAST",
+      "applications": [
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nбы́стрый?\nбы́стро.\nбы́стро"
+  },
+  {
+    "itemId": "prov-ca-repair-7-10669",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "a manner adverb modifying an action",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "5fd2caba6dfbe400a5fad540be4c8bffa86146b0d4b1d5122ec989bb5e52167f",
+    "contentHash": "656b1d056a318b0133255e669be1314dae15a3a41a9de4817915e11781db60c7",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:ADJECTIVE_ADVERB_CONTRAST",
+      "applications": [
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nбы́стрый?\nбы́стро.\nбы́стро"
+  },
+  {
+    "itemId": "prov-ca-repair-7-10670",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "a verb naming the action",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "5fd2caba6dfbe400a5fad540be4c8bffa86146b0d4b1d5122ec989bb5e52167f",
+    "contentHash": "6382aca9d9401ef018f1feac682fc9e5a1215d52892daf065074bf14947f0e8e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:ADJECTIVE_ADVERB_CONTRAST",
+      "applications": [
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nбы́стрый?\nбы́стро.\nбы́стро"
+  },
+  {
+    "itemId": "prov-ca-repair-7-10671",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "a manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "5fd2caba6dfbe400a5fad540be4c8bffa86146b0d4b1d5122ec989bb5e52167f",
+    "contentHash": "55b982fd1831cfe75c9b926441cb7d61788fdb5df2efaec9c8b6e2e57d70604d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:ADJECTIVE_ADVERB_CONTRAST",
+      "applications": [
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nбы́стрый?\nбы́стро.\nбы́стро"
+  },
+  {
+    "itemId": "prov-ca-repair-7-10672",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "a verb naming the action names what happens; бы́стрый instead describes a noun.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "5fd2caba6dfbe400a5fad540be4c8bffa86146b0d4b1d5122ec989bb5e52167f",
+    "contentHash": "7c550d97a1c2be41f6de5d7407c0e1f3102d271f14e5fbb22b11fc97ac52c8e7",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:ADJECTIVE_ADVERB_CONTRAST",
+      "applications": [
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nбы́стрый?\nбы́стро.\nбы́стро"
+  },
+  {
+    "itemId": "prov-ca-repair-7-10673",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "бы́стрый?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "5fd2caba6dfbe400a5fad540be4c8bffa86146b0d4b1d5122ec989bb5e52167f",
+    "contentHash": "3fe83ac0f3c82659ed0e168939aee417a2bd313645a6dd874c45364f52a0c319",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:ADJECTIVE_ADVERB_CONTRAST",
+      "applications": [
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nбы́стрый?\nбы́стро.\nбы́стро"
+  },
+  {
+    "itemId": "prov-ca-repair-7-10674",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "бы́стро.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "5fd2caba6dfbe400a5fad540be4c8bffa86146b0d4b1d5122ec989bb5e52167f",
+    "contentHash": "073bf9b620810b1974b7da8ef54b34cf5ba8cb1214f68a7e303ab3c6efdb218f",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:ADJECTIVE_ADVERB_CONTRAST",
+      "applications": [
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nбы́стрый?\nбы́стро.\nбы́стро"
+  },
+  {
+    "itemId": "prov-ca-repair-7-10675",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u7-i-manner-3",
+    "shippedText": "бы́стро",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "5fd2caba6dfbe400a5fad540be4c8bffa86146b0d4b1d5122ec989bb5e52167f",
+    "contentHash": "a32bdce44dcab352af500a8e5bf1f98347ce50641bd1c86a192e3873a129ed58",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:ADJECTIVE_ADVERB_CONTRAST",
+      "applications": [
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nбы́стрый?\nбы́стро.\nбы́стро"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10676",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "читая письмо, он улыбался",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "e0f69dcd15808956002d59ebc13d6656f73f1591b3897b3545f64f7c9a56fe05",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10677",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "meaning",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "simultaneous with the main predicate",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "60ee0f9b9549040f3578a0ece15c4e7f54f5dd503f260c9bde15fd8ffd3f86c9",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10678",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "Which English description identifies the timing of читая in this sentence?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "8bc3c650d18e56a660281ca58a925d7564fa4a9cbcbb4eb70f5687a6aa35382b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10679",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "In читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "dde0decfdbb0e5ff93a2e34731488812e81989e624fbe77051b4c9a7a84e96fe",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10680",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "In читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "9fe8d32fb6806b864d9e5556b55105b9a82fa43acc2cf219d9afb754ac354a5f",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10681",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "an absolute present label",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "ad279813889fadf7a4ed0dbc52285ae58694133905dbf038f51fa7996807a8c7",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10682",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "a different subject from the main verb",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "5408a0a22e04436b148f7e5de1190e3cd11f8f8765104effe67bb7d662a08a7b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10683",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "an absolute present label ignores the past main verb; the verbal adverb has relative time.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "b8cf546beffc21b49c025710827c51f4243a5f7dca3ae3247d86ddf92b955599",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10684",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "a different subject from the main verb violates the shared-subject condition in this construction.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "35639769fc00ff1915a0d7c79c47f46ad175f9a53688a4a1c08f4c658fdc91d1",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10685",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "читая письмо,",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "bc8a82f438b620d41da3b6146458646b38c351a0b25f4cebfcaa48c2022936e3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10686",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "читая письмо",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "22c5f2a388ee4b35cf2f6779e464d88700c0b909a9cac1878192925aec1195d9",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10687",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "он улыбался",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "00121d5abbcd5714332489bc6e0fde6fc03f60b47e44bee2fb50dba5f595097b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10688",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "читая",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "b5d13216160c7e4c4dd56f68ace308228eead979b4175742b6c445ea755e6d8e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10689",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-g-imperfective-adverb-0",
+    "shippedText": "он улыбался,",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "8c01ba65bd6de3b01ab8447e4c4c8f844a2bb1576a0fbc63fbb575158bb0ede1",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10690",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-1",
+    "shippedText": "читая письмо, он улыбался",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "e0f69dcd15808956002d59ebc13d6656f73f1591b3897b3545f64f7c9a56fe05",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10691",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "meaning",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-1",
+    "shippedText": "simultaneous with the main predicate",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "60ee0f9b9549040f3578a0ece15c4e7f54f5dd503f260c9bde15fd8ffd3f86c9",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  },
+  {
+    "itemId": "prov-ca-repair-28-10692",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u28-i-imperfective-adverb-1",
+    "shippedText": "Which English description identifies the timing of читая in this sentence?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "9158b65c2a964ed27a15e39acf56fa2a8e34fdfd92415eed66e9fc380f2f0e52",
+    "contentHash": "8bc3c650d18e56a660281ca58a925d7564fa4a9cbcbb4eb70f5687a6aa35382b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-imperfective-adverb:IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "applications": [
+        {
+          "cue": "читая письмо, он улыбался",
+          "answer": "simultaneous with the main predicate",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nчитая письмо, он улыбался\nsimultaneous with the main predicate\nWhich English description identifies the timing of читая in this sentence?\nIn читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.\nIn читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.\nan absolute present label\na different subject from the main verb\nan absolute present label ignores the past main verb; the verbal adverb has relative time.\na different subject from the main verb violates the shared-subject condition in this construction.\nчитая письмо,\nчитая письмо\nон улыбался\nчитая\nон улыбался,"
+  }
+]

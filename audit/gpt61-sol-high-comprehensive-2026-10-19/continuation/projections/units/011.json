@@ -1,0 +1,1460 @@
+[
+  {
+    "number": 22,
+    "id": "unit-22",
+    "title": "Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions",
+    "shortLabel": "Numerals",
+    "topicSummary": "Proposed Unit 22 is in development. Admitted numeral lines, the case table, the half-form usage note, and the collective column await qualified review. A numbered list is not taught as an ordinal distinction. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 22,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 22, printed pages 269-282. Independently stated topic scope: Numeral behavior beyond basic counting, including declined numerals, forms for both and one and a half, compound quantities, and collective or quantity expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+    "prerequisiteUnitNumbers": [
+      21
+    ],
+    "estimatedMinutes": 90,
+    "objectives": [
+      {
+        "id": "obj-u22-noun-forms",
+        "unitNumber": 22,
+        "title": "Connect quantity to gender and noun case",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u22-st-orient",
+          "u22-st-teach-noun-forms-1",
+          "u22-st-teach-noun-forms-2",
+          "u22-st-teach-noun-forms-3",
+          "u22-st-teach-noun-forms-4"
+        ],
+        "exampleIds": [
+          "ex-u22-noun-forms-0",
+          "ex-u22-noun-forms-1",
+          "ex-u22-noun-forms-2",
+          "ex-u22-noun-forms-3",
+          "ex-u22-noun-forms-4",
+          "ex-u22-noun-forms-5"
+        ],
+        "practiceStepIds": [
+          "u22-st-guided-noun-forms-1"
+        ],
+        "checkItemIds": [
+          "u22-i-noun-forms-1",
+          "u22-i-noun-forms-2"
+        ],
+        "remediationStepIds": [
+          "u22-st-rem-noun-forms"
+        ]
+      },
+      {
+        "id": "obj-u22-compounds",
+        "unitNumber": 22,
+        "title": "Read the final number component with the teen exception",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u22-st-orient",
+          "u22-st-teach-compounds-1",
+          "u22-st-teach-compounds-2",
+          "u22-st-teach-compounds-3"
+        ],
+        "exampleIds": [
+          "ex-u22-compounds-0",
+          "ex-u22-compounds-1",
+          "ex-u22-compounds-2"
+        ],
+        "practiceStepIds": [
+          "u22-st-guided-compounds-1"
+        ],
+        "checkItemIds": [
+          "u22-i-compounds-1",
+          "u22-i-compounds-2"
+        ],
+        "remediationStepIds": [
+          "u22-st-rem-compounds"
+        ]
+      },
+      {
+        "id": "obj-u22-declension",
+        "unitNumber": 22,
+        "title": "Distinguish dative, instrumental and prepositional numeral forms",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u22-st-orient",
+          "u22-st-teach-declension-1",
+          "u22-st-teach-declension-2",
+          "u22-st-teach-declension-3"
+        ],
+        "exampleIds": [
+          "ex-u22-declension-0",
+          "ex-u22-declension-1",
+          "ex-u22-declension-2"
+        ],
+        "practiceStepIds": [
+          "u22-st-guided-declension-1"
+        ],
+        "checkItemIds": [
+          "u22-i-declension-1",
+          "u22-i-declension-2"
+        ],
+        "remediationStepIds": [
+          "u22-st-rem-declension"
+        ]
+      },
+      {
+        "id": "obj-u22-both-forms",
+        "unitNumber": 22,
+        "title": "Connect both to gender and case",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u22-st-orient",
+          "u22-st-teach-both-forms-1",
+          "u22-st-teach-both-forms-2",
+          "u22-st-teach-both-forms-3"
+        ],
+        "exampleIds": [
+          "ex-u22-both-forms-0",
+          "ex-u22-both-forms-1",
+          "ex-u22-both-forms-2",
+          "ex-u22-both-forms-3"
+        ],
+        "practiceStepIds": [
+          "u22-st-guided-both-forms-1"
+        ],
+        "checkItemIds": [
+          "u22-i-both-forms-1",
+          "u22-i-both-forms-2",
+          "u22-i-both-forms-3"
+        ],
+        "remediationStepIds": [
+          "u22-st-rem-both-forms"
+        ]
+      },
+      {
+        "id": "obj-u22-half-forms",
+        "unitNumber": 22,
+        "title": "Explain gender, case and the noun after one and a half",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u22-st-orient",
+          "u22-st-teach-half-forms-1",
+          "u22-st-teach-half-forms-2",
+          "u22-st-teach-half-forms-3"
+        ],
+        "exampleIds": [
+          "ex-u22-half-forms-0",
+          "ex-u22-half-forms-1",
+          "ex-u22-half-forms-2",
+          "ex-u22-half-forms-3"
+        ],
+        "practiceStepIds": [
+          "u22-st-guided-half-forms-1"
+        ],
+        "checkItemIds": [
+          "u22-i-half-forms-1",
+          "u22-i-half-forms-2",
+          "u22-i-half-forms-3"
+        ],
+        "remediationStepIds": [
+          "u22-st-rem-half-forms"
+        ]
+      },
+      {
+        "id": "obj-u22-collective",
+        "unitNumber": 22,
+        "title": "Distinguish cardinal, ordinal and collective number forms",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u22-st-orient",
+          "u22-st-teach-collective-1",
+          "u22-st-teach-collective-2",
+          "u22-st-teach-collective-3"
+        ],
+        "exampleIds": [
+          "ex-u22-collective-0",
+          "ex-u22-collective-1",
+          "ex-u22-collective-2"
+        ],
+        "practiceStepIds": [
+          "u22-st-guided-collective-1"
+        ],
+        "checkItemIds": [
+          "u22-i-collective-1",
+          "u22-i-collective-2"
+        ],
+        "remediationStepIds": [
+          "u22-st-rem-collective"
+        ]
+      },
+      {
+        "id": "obj-u22-book",
+        "unitNumber": 22,
+        "title": "Self-attest Lesson 22 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u22-st-book-work",
+          "u22-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u22-s-orient",
+        "title": "Admitted numeral forms",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u22-noun-forms",
+          "obj-u22-compounds",
+          "obj-u22-declension",
+          "obj-u22-both-forms",
+          "obj-u22-half-forms",
+          "obj-u22-collective",
+          "obj-u22-book"
+        ],
+        "steps": [
+          {
+            "id": "u22-st-orient",
+            "kind": "ORIENT",
+            "title": "Admitted numeral forms",
+            "body": "Proposed Unit 22 uses frozen item-form lines, the frozen numeral table, the frozen half-form usage note, and the frozen collective column. A numbered list is not taught as an ordinal distinction. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "bookDirection": "Open Lesson 22 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u22-s-noun-forms",
+        "title": "Connect quantity to gender and noun case",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u22-noun-forms"
+        ],
+        "steps": [
+          {
+            "id": "u22-st-teach-noun-forms-1",
+            "kind": "TEACH",
+            "title": "One agrees with its noun",
+            "body": "один мальчик — one boy. одна девушка — one girl. The numeral meaning one agrees with its noun in gender, number and case. These displayed counting phrases use a singular noun: the masculine boy takes the masculine numeral, and the feminine girl takes the feminine numeral. The guided choice asks for another phrase with one, not the same noun.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-noun-forms-0",
+              "ex-u22-noun-forms-1"
+            ]
+          },
+          {
+            "id": "u22-st-teach-noun-forms-2",
+            "kind": "TEACH",
+            "title": "The scope of the counting rule",
+            "body": "For nominative counting phrases, one takes a singular noun, two through four take a genitive singular noun, and five through twenty take a genitive plural noun. Apply this shortcut to an accusative phrase only where its forms coincide with the nominative. Animate accusative phrases and other cases need their own case forms; the shortcut is not a rule that all number phrases keep these endings.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u22-st-teach-noun-forms-3",
+            "kind": "TEACH",
+            "title": "Two, three and four form a group",
+            "body": "две девушки — two girls. три кошки — three cats. Both displayed nouns are genitive singular after these numerals, although the quantity is greater than one and these endings can resemble nominative plural. The numeral for two has a feminine form; the form for three does not change for the noun gender. The check asks for another example in the two-through-four group, not an English translation of the cue.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-noun-forms-2",
+              "ex-u22-noun-forms-3"
+            ]
+          },
+          {
+            "id": "u22-st-teach-noun-forms-4",
+            "kind": "TEACH",
+            "title": "Five and higher in the displayed group",
+            "body": "пять девушек — five girls. десять копеек — ten kopeks. Here the nouns are genitive plural. Five and ten belong to the same noun-form group; one and two do not. Numbers whose last two digits are 11 through 14 also use this group, including 111 through 114. These choices recognize supplied number phrases; they do not test independently producing every noun ending.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-noun-forms-4",
+              "ex-u22-noun-forms-5"
+            ]
+          },
+          {
+            "id": "u22-st-guided-noun-forms-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown form and the requested category. Use the full explanation and examples above. A missed check returns to that complete explanation.",
+            "itemIds": [
+              "u22-g-noun-forms-0"
+            ],
+            "remediationStepId": "u22-st-rem-noun-forms"
+          },
+          {
+            "id": "u22-st-rem-noun-forms",
+            "kind": "REMEDIATE",
+            "title": "Review the complete number contrast",
+            "body": "один мальчик — one boy. одна девушка — one girl. The numeral meaning one agrees with its noun in gender, number and case. These displayed counting phrases use a singular noun: the masculine boy takes the masculine numeral, and the feminine girl takes the feminine numeral. The guided choice asks for another phrase with one, not the same noun.\n\nFor nominative counting phrases, one takes a singular noun, two through four take a genitive singular noun, and five through twenty take a genitive plural noun. Apply this shortcut to an accusative phrase only where its forms coincide with the nominative. Animate accusative phrases and other cases need their own case forms; the shortcut is not a rule that all number phrases keep these endings.\n\nдве девушки — two girls. три кошки — three cats. Both displayed nouns are genitive singular after these numerals, although the quantity is greater than one and these endings can resemble nominative plural. The numeral for two has a feminine form; the form for three does not change for the noun gender. The check asks for another example in the two-through-four group, not an English translation of the cue.\n\nпять девушек — five girls. десять копеек — ten kopeks. Here the nouns are genitive plural. Five and ten belong to the same noun-form group; one and two do not. Numbers whose last two digits are 11 through 14 also use this group, including 111 through 114. These choices recognize supplied number phrases; they do not test independently producing every noun ending.",
+            "exampleIds": [
+              "ex-u22-noun-forms-0",
+              "ex-u22-noun-forms-1",
+              "ex-u22-noun-forms-2",
+              "ex-u22-noun-forms-3",
+              "ex-u22-noun-forms-4",
+              "ex-u22-noun-forms-5"
+            ]
+          },
+          {
+            "id": "u22-st-check-noun-forms",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the shown form and the requested category. Use the full explanation and examples above. A missed check returns to that complete explanation.",
+            "itemIds": [
+              "u22-i-noun-forms-1",
+              "u22-i-noun-forms-2"
+            ],
+            "remediationStepId": "u22-st-rem-noun-forms"
+          }
+        ]
+      },
+      {
+        "id": "u22-s-compounds",
+        "title": "Read the final number component with the teen exception",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u22-compounds"
+        ],
+        "steps": [
+          {
+            "id": "u22-st-teach-compounds-1",
+            "kind": "TEACH",
+            "title": "Three endings in compound quantities",
+            "body": "тридцать три рюмки — thirty-three shot glasses. сорок один год — forty-one years. In these nominative counting phrases, 33 ends in three and takes a genitive singular noun; 41 ends in one and takes a singular noun. The choice may ask for a different final-digit group from the displayed reference phrase. Read the requested group in the question.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-compounds-0",
+              "ex-u22-compounds-1"
+            ]
+          },
+          {
+            "id": "u22-st-teach-compounds-2",
+            "kind": "TEACH",
+            "title": "Check the last two digits first",
+            "body": "For these whole-number counting phrases, check the last two digits before the final digit. Endings 11 through 14 require genitive plural. Otherwise a final one takes singular, final two through four take genitive singular, and final zero or five through nine take genitive plural. For example, 111 differs from 41; 113 differs from 33. These are numeric rule comparisons, not newly supplied Russian phrases. In other cases the numeral and noun need the relevant declined forms.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u22-st-teach-compounds-3",
+            "kind": "TEACH",
+            "title": "Nine and the requested category",
+            "body": "шестьдесят девять слов — sixty-nine words. The final nine places 69 in the genitive-plural group. In the three choices, сорок один год ends in one, тридцать три рюмки ends in three, and шестьдесят девять слов ends in nine. Identify the category requested by the question. A displayed 41 phrase does not make the answer to a question about nine a translation or a same-quantity counterpart.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-compounds-2"
+            ]
+          },
+          {
+            "id": "u22-st-guided-compounds-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown form and the requested category. Use the full explanation and examples above. A missed check returns to that complete explanation.",
+            "itemIds": [
+              "u22-g-compounds-0"
+            ],
+            "remediationStepId": "u22-st-rem-compounds"
+          },
+          {
+            "id": "u22-st-rem-compounds",
+            "kind": "REMEDIATE",
+            "title": "Review the complete number contrast",
+            "body": "тридцать три рюмки — thirty-three shot glasses. сорок один год — forty-one years. In these nominative counting phrases, 33 ends in three and takes a genitive singular noun; 41 ends in one and takes a singular noun. The choice may ask for a different final-digit group from the displayed reference phrase. Read the requested group in the question.\n\nFor these whole-number counting phrases, check the last two digits before the final digit. Endings 11 through 14 require genitive plural. Otherwise a final one takes singular, final two through four take genitive singular, and final zero or five through nine take genitive plural. For example, 111 differs from 41; 113 differs from 33. These are numeric rule comparisons, not newly supplied Russian phrases. In other cases the numeral and noun need the relevant declined forms.\n\nшестьдесят девять слов — sixty-nine words. The final nine places 69 in the genitive-plural group. In the three choices, сорок один год ends in one, тридцать три рюмки ends in three, and шестьдесят девять слов ends in nine. Identify the category requested by the question. A displayed 41 phrase does not make the answer to a question about nine a translation or a same-quantity counterpart.",
+            "exampleIds": [
+              "ex-u22-compounds-0",
+              "ex-u22-compounds-1",
+              "ex-u22-compounds-2"
+            ]
+          },
+          {
+            "id": "u22-st-check-compounds",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the shown form and the requested category. Use the full explanation and examples above. A missed check returns to that complete explanation.",
+            "itemIds": [
+              "u22-i-compounds-1",
+              "u22-i-compounds-2"
+            ],
+            "remediationStepId": "u22-st-rem-compounds"
+          }
+        ]
+      },
+      {
+        "id": "u22-s-declension",
+        "title": "Distinguish dative, instrumental and prepositional numeral forms",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u22-declension"
+        ],
+        "steps": [
+          {
+            "id": "u22-st-teach-declension-1",
+            "kind": "TEACH",
+            "title": "A changed form can name a different case",
+            "body": "двум — Дательный, the dative. двумя — Творительный, the instrumental. Both are declined forms of the numeral meaning two. Dative commonly marks a recipient or goal; instrumental can mark accompaniment or means. The final part of the form distinguishes these two shown examples; it is not enough to recognize the quantity two.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-declension-0",
+              "ex-u22-declension-1"
+            ]
+          },
+          {
+            "id": "u22-st-teach-declension-2",
+            "kind": "TEACH",
+            "title": "Read a row in its case context",
+            "body": "Дательный means dative; Творительный means instrumental; Предложный means prepositional. A form must be interpreted with its construction. The bare form двух can occur in more than one case. The admitted row includes the preposition and is labelled prepositional; the check does not claim that a bare ending always uniquely identifies a case. In oblique number phrases the plural noun normally carries the case required by the construction.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u22-st-teach-declension-3",
+            "kind": "TEACH",
+            "title": "The displayed prepositional row",
+            "body": "(о) двух / (об) обоих / (о) полутора — Предложный. This complete row gives the prepositional forms for two, both and one and a half. The parentheses show the accompanying preposition; it is not part of the numeral itself. The prepositional choice contrasts with the dative двум and instrumental двумя. Recognizing this row does not demonstrate independently declining a complete number phrase.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-declension-2"
+            ]
+          },
+          {
+            "id": "u22-st-guided-declension-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown form and the requested category. Use the full explanation and examples above. A missed check returns to that complete explanation.",
+            "itemIds": [
+              "u22-g-declension-0"
+            ],
+            "remediationStepId": "u22-st-rem-declension"
+          },
+          {
+            "id": "u22-st-rem-declension",
+            "kind": "REMEDIATE",
+            "title": "Review the complete number contrast",
+            "body": "двум — Дательный, the dative. двумя — Творительный, the instrumental. Both are declined forms of the numeral meaning two. Dative commonly marks a recipient or goal; instrumental can mark accompaniment or means. The final part of the form distinguishes these two shown examples; it is not enough to recognize the quantity two.\n\nДательный means dative; Творительный means instrumental; Предложный means prepositional. A form must be interpreted with its construction. The bare form двух can occur in more than one case. The admitted row includes the preposition and is labelled prepositional; the check does not claim that a bare ending always uniquely identifies a case. In oblique number phrases the plural noun normally carries the case required by the construction.\n\n(о) двух / (об) обоих / (о) полутора — Предложный. This complete row gives the prepositional forms for two, both and one and a half. The parentheses show the accompanying preposition; it is not part of the numeral itself. The prepositional choice contrasts with the dative двум and instrumental двумя. Recognizing this row does not demonstrate independently declining a complete number phrase.",
+            "exampleIds": [
+              "ex-u22-declension-0",
+              "ex-u22-declension-1",
+              "ex-u22-declension-2"
+            ]
+          },
+          {
+            "id": "u22-st-check-declension",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the shown form and the requested category. Use the full explanation and examples above. A missed check returns to that complete explanation.",
+            "itemIds": [
+              "u22-i-declension-1",
+              "u22-i-declension-2"
+            ],
+            "remediationStepId": "u22-st-rem-declension"
+          }
+        ]
+      },
+      {
+        "id": "u22-s-both-forms",
+        "title": "Connect both to gender and case",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u22-both-forms"
+        ],
+        "steps": [
+          {
+            "id": "u22-st-teach-both-forms-1",
+            "kind": "TEACH",
+            "title": "Dative both has two gender forms",
+            "body": "обеим — Дательный. обоим — Дательный. Both forms mean both in the dative. The feminine series has the stem seen in обеим; the masculine/neuter series has the stem seen in обоим. Gender refers to the counted noun. Changing the gender series does not change the case: both displayed forms are dative.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-both-forms-0",
+              "ex-u22-both-forms-1"
+            ]
+          },
+          {
+            "id": "u22-st-teach-both-forms-2",
+            "kind": "TEACH",
+            "title": "Meaning, gender and the dative row",
+            "body": "Both refers to the full pair, rather than an unspecified quantity of two. The retained nominative table distinguishes masculine/neuter and feminine forms. The dative row двум / обеим / полутора places two, feminine both and one and a half together by case, not by equal meaning. Дательный is dative, Творительный is instrumental, and Предложный is prepositional.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u22-st-teach-both-forms-3",
+            "kind": "TEACH",
+            "title": "Instrumental adds a different case contrast",
+            "body": "обеими — Творительный. обоими — Творительный. The feminine and masculine/neuter series remain distinct, but both shown forms are instrumental. Compare обеим with обеими and обоим with обоими: the extra final vowel distinguishes these dative and instrumental examples. The current choices check the case of a supplied form; they do not test producing the correct gender-and-case form in a new sentence.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-both-forms-2",
+              "ex-u22-both-forms-3"
+            ]
+          },
+          {
+            "id": "u22-st-guided-both-forms-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown form and the requested category. Use the full explanation and examples above. A missed check returns to that complete explanation.",
+            "itemIds": [
+              "u22-g-both-forms-0"
+            ],
+            "remediationStepId": "u22-st-rem-both-forms"
+          },
+          {
+            "id": "u22-st-rem-both-forms",
+            "kind": "REMEDIATE",
+            "title": "Review the complete number contrast",
+            "body": "обеим — Дательный. обоим — Дательный. Both forms mean both in the dative. The feminine series has the stem seen in обеим; the masculine/neuter series has the stem seen in обоим. Gender refers to the counted noun. Changing the gender series does not change the case: both displayed forms are dative.\n\nBoth refers to the full pair, rather than an unspecified quantity of two. The retained nominative table distinguishes masculine/neuter and feminine forms. The dative row двум / обеим / полутора places two, feminine both and one and a half together by case, not by equal meaning. Дательный is dative, Творительный is instrumental, and Предложный is prepositional.\n\nобеими — Творительный. обоими — Творительный. The feminine and masculine/neuter series remain distinct, but both shown forms are instrumental. Compare обеим with обеими and обоим with обоими: the extra final vowel distinguishes these dative and instrumental examples. The current choices check the case of a supplied form; they do not test producing the correct gender-and-case form in a new sentence.",
+            "exampleIds": [
+              "ex-u22-both-forms-0",
+              "ex-u22-both-forms-1",
+              "ex-u22-both-forms-2",
+              "ex-u22-both-forms-3"
+            ]
+          },
+          {
+            "id": "u22-st-check-both-forms",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the shown form and the requested category. Use the full explanation and examples above. A missed check returns to that complete explanation.",
+            "itemIds": [
+              "u22-i-both-forms-1",
+              "u22-i-both-forms-2",
+              "u22-i-both-forms-3"
+            ],
+            "remediationStepId": "u22-st-rem-both-forms"
+          }
+        ]
+      },
+      {
+        "id": "u22-s-half-forms",
+        "title": "Explain gender, case and the noun after one and a half",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u22-half-forms"
+        ],
+        "steps": [
+          {
+            "id": "u22-st-teach-half-forms-1",
+            "kind": "TEACH",
+            "title": "One and a half changes for gender",
+            "body": "полтора́ рубля́ — 1.5 roubles. полторы́ мину́ты — 1.5 minutes. The first numeral form is masculine/neuter; the second is feminine. In the nominative and accusative construction, one and a half takes a genitive singular noun. The noun determines the numeral gender even though the amount exceeds one. The retained alternative gloss one and a half hours / an hour and a half names hours, not roubles or minutes.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-half-forms-0",
+              "ex-u22-half-forms-1"
+            ]
+          },
+          {
+            "id": "u22-st-teach-half-forms-2",
+            "kind": "TEACH",
+            "title": "The oblique form does not fix the noun ending",
+            "body": "In the other cases, the numeral has the shared form полутора, and the noun is plural in the case required by the construction. The numeral form alone therefore cannot tell you whether a phrase is genitive, dative or instrumental. Compare the preposition and the noun ending. This differs from the genitive singular noun after the nominative/accusative forms.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u22-st-teach-half-forms-3",
+            "kind": "TEACH",
+            "title": "From, to and with have different constructions",
+            "body": "из полу́тора рубле́й — from 1.5 roubles: the preposition requires genitive plural on the noun. к полу́тора рубля́м — to 1.5 roubles: the preposition requires dative plural. The English distractor with 1.5 roubles names accompaniment/means with an instrumental noun in the corresponding retained source construction. The amount stays one and a half while the preposition changes the relationship. The check asks for the meaning of the whole shown phrase, including from or to.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-half-forms-2",
+              "ex-u22-half-forms-3"
+            ]
+          },
+          {
+            "id": "u22-st-guided-half-forms-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown form and the requested category. Use the full explanation and examples above. A missed check returns to that complete explanation.",
+            "itemIds": [
+              "u22-g-half-forms-0"
+            ],
+            "remediationStepId": "u22-st-rem-half-forms"
+          },
+          {
+            "id": "u22-st-rem-half-forms",
+            "kind": "REMEDIATE",
+            "title": "Review the complete number contrast",
+            "body": "полтора́ рубля́ — 1.5 roubles. полторы́ мину́ты — 1.5 minutes. The first numeral form is masculine/neuter; the second is feminine. In the nominative and accusative construction, one and a half takes a genitive singular noun. The noun determines the numeral gender even though the amount exceeds one. The retained alternative gloss one and a half hours / an hour and a half names hours, not roubles or minutes.\n\nIn the other cases, the numeral has the shared form полутора, and the noun is plural in the case required by the construction. The numeral form alone therefore cannot tell you whether a phrase is genitive, dative or instrumental. Compare the preposition and the noun ending. This differs from the genitive singular noun after the nominative/accusative forms.\n\nиз полу́тора рубле́й — from 1.5 roubles: the preposition requires genitive plural on the noun. к полу́тора рубля́м — to 1.5 roubles: the preposition requires dative plural. The English distractor with 1.5 roubles names accompaniment/means with an instrumental noun in the corresponding retained source construction. The amount stays one and a half while the preposition changes the relationship. The check asks for the meaning of the whole shown phrase, including from or to.",
+            "exampleIds": [
+              "ex-u22-half-forms-0",
+              "ex-u22-half-forms-1",
+              "ex-u22-half-forms-2",
+              "ex-u22-half-forms-3"
+            ]
+          },
+          {
+            "id": "u22-st-check-half-forms",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the shown form and the requested category. Use the full explanation and examples above. A missed check returns to that complete explanation.",
+            "itemIds": [
+              "u22-i-half-forms-1",
+              "u22-i-half-forms-2",
+              "u22-i-half-forms-3"
+            ],
+            "remediationStepId": "u22-st-rem-half-forms"
+          }
+        ]
+      },
+      {
+        "id": "u22-s-collective",
+        "title": "Distinguish cardinal, ordinal and collective number forms",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u22-collective"
+        ],
+        "steps": [
+          {
+            "id": "u22-st-teach-collective-1",
+            "kind": "TEACH",
+            "title": "Two and three as collective quantities",
+            "body": "два — дво́е. три — тро́е. A cardinal states a quantity; a collective presents that quantity as a group. An ordinal states position in a sequence. Thus дво́е is the collective for two, and тро́е is the collective for three. The option второ́й means second, and тре́тий means third; these are ordinal positions, not collective quantities.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-collective-0",
+              "ex-u22-collective-1"
+            ]
+          },
+          {
+            "id": "u22-st-teach-collective-2",
+            "kind": "TEACH",
+            "title": "Collectives have restricted uses",
+            "body": "Collective number forms are not a general replacement for cardinal numbers with every noun. Standard uses include groups of male people, children or people expressed by appropriate group nouns, personal pronouns, and certain nouns used only in the plural. Use ordinary cardinals with female-person nouns in standard usage; do not infer that any feminine noun takes a collective. This lesson explains the restriction without introducing new Russian noun combinations.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u22-st-teach-collective-3",
+            "kind": "TEACH",
+            "title": "Four and the limits of these checks",
+            "body": "четы́ре — че́тверо. The collective form keeps the quantity four while presenting it as a group. The ordinal distractor четвёртый means fourth, a position; дво́е is a group of two. In the earlier check, че́тверо is a collective but has the wrong quantity for three. Selecting the collective column does not demonstrate choosing its use with every noun or constructing a declined collective phrase.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u22-collective-2"
+            ]
+          },
+          {
+            "id": "u22-st-guided-collective-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the shown form and the requested category. Use the full explanation and examples above. A missed check returns to that complete explanation.",
+            "itemIds": [
+              "u22-g-collective-0"
+            ],
+            "remediationStepId": "u22-st-rem-collective"
+          },
+          {
+            "id": "u22-st-rem-collective",
+            "kind": "REMEDIATE",
+            "title": "Review the complete number contrast",
+            "body": "два — дво́е. три — тро́е. A cardinal states a quantity; a collective presents that quantity as a group. An ordinal states position in a sequence. Thus дво́е is the collective for two, and тро́е is the collective for three. The option второ́й means second, and тре́тий means third; these are ordinal positions, not collective quantities.\n\nCollective number forms are not a general replacement for cardinal numbers with every noun. Standard uses include groups of male people, children or people expressed by appropriate group nouns, personal pronouns, and certain nouns used only in the plural. Use ordinary cardinals with female-person nouns in standard usage; do not infer that any feminine noun takes a collective. This lesson explains the restriction without introducing new Russian noun combinations.\n\nчеты́ре — че́тверо. The collective form keeps the quantity four while presenting it as a group. The ordinal distractor четвёртый means fourth, a position; дво́е is a group of two. In the earlier check, че́тверо is a collective but has the wrong quantity for three. Selecting the collective column does not demonstrate choosing its use with every noun or constructing a declined collective phrase.",
+            "exampleIds": [
+              "ex-u22-collective-0",
+              "ex-u22-collective-1",
+              "ex-u22-collective-2"
+            ]
+          },
+          {
+            "id": "u22-st-check-collective",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the shown form and the requested category. Use the full explanation and examples above. A missed check returns to that complete explanation.",
+            "itemIds": [
+              "u22-i-collective-1",
+              "u22-i-collective-2"
+            ],
+            "remediationStepId": "u22-st-rem-collective"
+          }
+        ]
+      },
+      {
+        "id": "u22-s-book",
+        "title": "Self-attest Lesson 22",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u22-book"
+        ],
+        "steps": [
+          {
+            "id": "u22-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 22 in your copy",
+            "body": "Do Lesson 22 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 22: printed pages 269-282. PDF indexes 281-294 are file locators, not printed pages. Observed section locators: §22.1 p269 (PDF 281); §22.2 p269 (PDF 281); §22.3 p270 (PDF 282); §22.4 p273 (PDF 285); §22.5 p273 (PDF 285); §22.6 p274 (PDF 286); §22.7 p274 (PDF 286); §22.8 p275 (PDF 287); §22.9 p276 (PDF 288); §22.10 p276 (PDF 288); §22.11 p277 (PDF 289); §22.12 p278 (PDF 290); §22.13 p279 (PDF 291); §22.14 p280 (PDF 292); §22.15 p281 (PDF 293). Observed exercise locators: 22/1 p272/PDF284; 22/2 p272/PDF284; 22/3 p275/PDF287; 22/4 p275/PDF287; 22/5 p279/PDF291; 22/6 p280/PDF292. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u22-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 22 book work",
+            "body": "When you have done Lesson 22 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 22: printed pages 269-282. PDF indexes 281-294 are file locators, not printed pages. Observed section locators: §22.1 p269 (PDF 281); §22.2 p269 (PDF 281); §22.3 p270 (PDF 282); §22.4 p273 (PDF 285); §22.5 p273 (PDF 285); §22.6 p274 (PDF 286); §22.7 p274 (PDF 286); §22.8 p275 (PDF 287); §22.9 p276 (PDF 288); §22.10 p276 (PDF 288); §22.11 p277 (PDF 289); §22.12 p278 (PDF 290); §22.13 p279 (PDF 291); §22.14 p280 (PDF 292); §22.15 p281 (PDF 293). Observed exercise locators: 22/1 p272/PDF284; 22/2 p272/PDF284; 22/3 p275/PDF287; 22/4 p275/PDF287; 22/5 p279/PDF291; 22/6 p280/PDF292. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u22-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 22 AnkiDroid direction",
+            "body": "Unit 22 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u22-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 22 binder prompt",
+            "body": "Unit 22 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u22-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 22 optional tutor",
+            "body": "Unit 22 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u22-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 22 cumulative review",
+            "body": "Unit 22 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 22 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 4,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit22-prior-reading-reflexive-object-v1"
+    }
+  },
+  {
+    "number": 23,
+    "id": "unit-23",
+    "title": "Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period",
+    "shortLabel": "Duration",
+    "topicSummary": "Proposed Unit 23 is in development. Admitted time-expression spans and an original duration-versus-completion contrast await qualified review. Book self-attestation does not replace the app checks. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 23,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 23, printed pages 283-293. Independently stated topic scope: Expressions of elapsed time, duration, ago, during, and distinctions involving completion over a period. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+    "prerequisiteUnitNumbers": [
+      22
+    ],
+    "estimatedMinutes": 82,
+    "objectives": [
+      {
+        "id": "obj-u23-ranges",
+        "unitNumber": 23,
+        "title": "Read decade ranges in their century context",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u23-st-orient",
+          "u23-st-teach-ranges-1",
+          "u23-st-teach-ranges-2"
+        ],
+        "exampleIds": [
+          "ex-u23-ranges-0",
+          "ex-u23-ranges-1"
+        ],
+        "practiceStepIds": [
+          "u23-st-guided-ranges-1"
+        ],
+        "checkItemIds": [
+          "u23-i-ranges-1",
+          "u23-i-ranges-2"
+        ],
+        "remediationStepIds": [
+          "u23-st-rem-ranges"
+        ]
+      },
+      {
+        "id": "obj-u23-beginning",
+        "unitNumber": 23,
+        "title": "Locate the beginning, middle or end of a period",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u23-st-orient",
+          "u23-st-teach-beginning-1",
+          "u23-st-teach-beginning-2",
+          "u23-st-teach-beginning-3"
+        ],
+        "exampleIds": [
+          "ex-u23-beginning-0",
+          "ex-u23-beginning-1",
+          "ex-u23-beginning-2"
+        ],
+        "practiceStepIds": [
+          "u23-st-guided-beginning-1"
+        ],
+        "checkItemIds": [
+          "u23-i-beginning-1",
+          "u23-i-beginning-2"
+        ],
+        "remediationStepIds": [
+          "u23-st-rem-beginning"
+        ]
+      },
+      {
+        "id": "obj-u23-during-event",
+        "unitNumber": 23,
+        "title": "Place one action during another event",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u23-st-orient",
+          "u23-st-teach-during-event-1",
+          "u23-st-teach-during-event-2"
+        ],
+        "exampleIds": [
+          "ex-u23-during-event-0",
+          "ex-u23-during-event-1"
+        ],
+        "practiceStepIds": [
+          "u23-st-guided-during-event-1"
+        ],
+        "checkItemIds": [
+          "u23-i-during-event-1",
+          "u23-i-during-event-2"
+        ],
+        "remediationStepIds": [
+          "u23-st-rem-during-event"
+        ]
+      },
+      {
+        "id": "obj-u23-duration",
+        "unitNumber": 23,
+        "title": "Read the interval over which activity occurs",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u23-st-orient",
+          "u23-st-teach-duration-1",
+          "u23-st-teach-duration-2"
+        ],
+        "exampleIds": [
+          "ex-u23-duration-0",
+          "ex-u23-duration-1"
+        ],
+        "practiceStepIds": [
+          "u23-st-guided-duration-1"
+        ],
+        "checkItemIds": [
+          "u23-i-duration-1",
+          "u23-i-duration-2"
+        ],
+        "remediationStepIds": [
+          "u23-st-rem-duration"
+        ]
+      },
+      {
+        "id": "obj-u23-elapsed",
+        "unitNumber": 23,
+        "title": "Distinguish before, after, in a period and ago",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u23-st-orient",
+          "u23-st-teach-elapsed-1",
+          "u23-st-teach-elapsed-2",
+          "u23-st-teach-elapsed-3"
+        ],
+        "exampleIds": [
+          "ex-u23-elapsed-0",
+          "ex-u23-elapsed-1",
+          "ex-u23-elapsed-2",
+          "ex-u23-elapsed-3"
+        ],
+        "practiceStepIds": [
+          "u23-st-guided-elapsed-1"
+        ],
+        "checkItemIds": [
+          "u23-i-elapsed-1",
+          "u23-i-elapsed-2"
+        ],
+        "remediationStepIds": [
+          "u23-st-rem-elapsed"
+        ]
+      },
+      {
+        "id": "obj-u23-book",
+        "unitNumber": 23,
+        "title": "Self-attest Lesson 23 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u23-st-book-work",
+          "u23-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      },
+      {
+        "id": "obj-u23-completion",
+        "unitNumber": 23,
+        "title": "Distinguish time spent from completion within a period",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u23-st-teach-completion-1",
+          "u23-st-teach-completion-2"
+        ],
+        "exampleIds": [
+          "ex-u23-completion-0",
+          "ex-u23-completion-1"
+        ],
+        "practiceStepIds": [
+          "u23-st-guided-completion-1"
+        ],
+        "checkItemIds": [
+          "u23-i-completion-1",
+          "u23-i-completion-2"
+        ],
+        "remediationStepIds": [
+          "u23-st-rem-completion"
+        ]
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u23-s-orient",
+        "title": "Admitted time expressions",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u23-ranges",
+          "obj-u23-beginning",
+          "obj-u23-during-event",
+          "obj-u23-duration",
+          "obj-u23-elapsed",
+          "obj-u23-book"
+        ],
+        "steps": [
+          {
+            "id": "u23-st-orient",
+            "kind": "ORIENT",
+            "title": "Admitted time expressions",
+            "body": "Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. A bounded completion-over-a-period check is implemented here and remains review-pending. It does not cover every temporal clause. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "bookDirection": "Open Lesson 23 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u23-s-ranges",
+        "title": "Read decade ranges in their century context",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u23-ranges"
+        ],
+        "steps": [
+          {
+            "id": "u23-st-teach-ranges-1",
+            "kind": "TEACH",
+            "title": "A decade is a range of years",
+            "body": "В шестидесятых годах — in the 1960s. В девяностых годах — in the 1990s. These expressions refer to decade ranges rather than a single year. The ordinal describing the decade and the noun meaning years are in the prepositional plural. The two displayed choices distinguish the sixties from the nineties.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u23-ranges-0",
+              "ex-u23-ranges-1"
+            ]
+          },
+          {
+            "id": "u23-st-teach-ranges-2",
+            "kind": "TEACH",
+            "title": "The century comes from context",
+            "body": "Here the supplied English glosses assume the twentieth century. A decade expression by itself does not fix the century in every context; an explicit century or the surrounding discussion can identify it. Read the decade word, not just the shared ending for years. The checks recognize these two supplied ranges; they do not test forming a new decade expression.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u23-st-guided-ranges-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u23-g-ranges-0"
+            ],
+            "remediationStepId": "u23-st-rem-ranges"
+          },
+          {
+            "id": "u23-st-rem-ranges",
+            "kind": "REMEDIATE",
+            "title": "Review the complete time contrast",
+            "body": "В шестидесятых годах — in the 1960s. В девяностых годах — in the 1990s. These expressions refer to decade ranges rather than a single year. The ordinal describing the decade and the noun meaning years are in the prepositional plural. The two displayed choices distinguish the sixties from the nineties.\n\nHere the supplied English glosses assume the twentieth century. A decade expression by itself does not fix the century in every context; an explicit century or the surrounding discussion can identify it. Read the decade word, not just the shared ending for years. The checks recognize these two supplied ranges; they do not test forming a new decade expression.",
+            "exampleIds": [
+              "ex-u23-ranges-0",
+              "ex-u23-ranges-1"
+            ]
+          },
+          {
+            "id": "u23-st-check-ranges",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u23-i-ranges-1",
+              "u23-i-ranges-2"
+            ],
+            "remediationStepId": "u23-st-rem-ranges"
+          }
+        ]
+      },
+      {
+        "id": "u23-s-beginning",
+        "title": "Locate the beginning, middle or end of a period",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u23-beginning"
+        ],
+        "steps": [
+          {
+            "id": "u23-st-teach-beginning-1",
+            "kind": "TEACH",
+            "title": "The end of a year and the beginning of a century",
+            "body": "В конце года — at the end of the year. В начале века — at the beginning of the century. The position word identifies which part of the period is meant, while the following noun identifies the period. Both parts matter: an end is not a beginning, and a year is not a century.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u23-beginning-0",
+              "ex-u23-beginning-1"
+            ]
+          },
+          {
+            "id": "u23-st-teach-beginning-2",
+            "kind": "TEACH",
+            "title": "The two nouns have different case roles",
+            "body": "In these expressions, the location noun after the preposition is prepositional, and the noun naming the period is genitive. The English of relationship links the part to the larger period. Do not assign one case to both nouns simply because they appear in the same time phrase.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u23-st-teach-beginning-3",
+            "kind": "TEACH",
+            "title": "The middle of the week",
+            "body": "В середине недели — in the middle of the week. This locates an event within the central part of a week; it does not mean the end of a year or the beginning of a century. The checks match complete supplied expressions, not independently produced period-and-position combinations.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u23-beginning-2"
+            ]
+          },
+          {
+            "id": "u23-st-guided-beginning-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u23-g-beginning-0"
+            ],
+            "remediationStepId": "u23-st-rem-beginning"
+          },
+          {
+            "id": "u23-st-rem-beginning",
+            "kind": "REMEDIATE",
+            "title": "Review the complete time contrast",
+            "body": "В конце года — at the end of the year. В начале века — at the beginning of the century. The position word identifies which part of the period is meant, while the following noun identifies the period. Both parts matter: an end is not a beginning, and a year is not a century.\n\nIn these expressions, the location noun after the preposition is prepositional, and the noun naming the period is genitive. The English of relationship links the part to the larger period. Do not assign one case to both nouns simply because they appear in the same time phrase.\n\nВ середине недели — in the middle of the week. This locates an event within the central part of a week; it does not mean the end of a year or the beginning of a century. The checks match complete supplied expressions, not independently produced period-and-position combinations.",
+            "exampleIds": [
+              "ex-u23-beginning-0",
+              "ex-u23-beginning-1",
+              "ex-u23-beginning-2"
+            ]
+          },
+          {
+            "id": "u23-st-check-beginning",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u23-i-beginning-1",
+              "u23-i-beginning-2"
+            ],
+            "remediationStepId": "u23-st-rem-beginning"
+          }
+        ]
+      },
+      {
+        "id": "u23-s-during-event",
+        "title": "Place one action during another event",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u23-during-event"
+        ],
+        "steps": [
+          {
+            "id": "u23-st-teach-during-event-1",
+            "kind": "TEACH",
+            "title": "An event supplies the time frame",
+            "body": "Она родилась во время войны. — She was born during the war. Во время поездки я познакомился с новыми друзьями. — During the trip I met new friends. The war and trip are the surrounding events during which the birth and meeting happen. During does not mean that the birth or meeting continued for the entire war or trip.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u23-during-event-0",
+              "ex-u23-during-event-1"
+            ]
+          },
+          {
+            "id": "u23-st-teach-during-event-2",
+            "kind": "TEACH",
+            "title": "Meaning and case of the surrounding event",
+            "body": "The compound preposition meaning during takes the event noun in the genitive. Match the whole sentence: birth during a war differs from meeting friends during a trip. This expresses when an event happens within another event, not the time needed to complete a task. The supplied translations do not demonstrate constructing every during-an-event sentence.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u23-st-guided-during-event-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u23-g-during-event-0"
+            ],
+            "remediationStepId": "u23-st-rem-during-event"
+          },
+          {
+            "id": "u23-st-rem-during-event",
+            "kind": "REMEDIATE",
+            "title": "Review the complete time contrast",
+            "body": "Она родилась во время войны. — She was born during the war. Во время поездки я познакомился с новыми друзьями. — During the trip I met new friends. The war and trip are the surrounding events during which the birth and meeting happen. During does not mean that the birth or meeting continued for the entire war or trip.\n\nThe compound preposition meaning during takes the event noun in the genitive. Match the whole sentence: birth during a war differs from meeting friends during a trip. This expresses when an event happens within another event, not the time needed to complete a task. The supplied translations do not demonstrate constructing every during-an-event sentence.",
+            "exampleIds": [
+              "ex-u23-during-event-0",
+              "ex-u23-during-event-1"
+            ]
+          },
+          {
+            "id": "u23-st-check-during-event",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u23-i-during-event-1",
+              "u23-i-during-event-2"
+            ],
+            "remediationStepId": "u23-st-rem-during-event"
+          }
+        ]
+      },
+      {
+        "id": "u23-s-duration",
+        "title": "Read the interval over which activity occurs",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u23-duration"
+        ],
+        "steps": [
+          {
+            "id": "u23-st-teach-duration-1",
+            "kind": "TEACH",
+            "title": "A lesson and a day as intervals",
+            "body": "В течение урока ученики работали над проектом. — Throughout the lesson, the students worked on the project. В течение дня погода менялась несколько раз. — During the course of the day, the weather changed several times. The interval contains the activity or repeated events. Project work over the lesson does not by itself assert that the project was finished.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u23-duration-0",
+              "ex-u23-duration-1"
+            ]
+          },
+          {
+            "id": "u23-st-teach-duration-2",
+            "kind": "TEACH",
+            "title": "Duration does not require an unbroken event",
+            "body": "It emphasizes the duration over which something occurs. The compound preposition takes a genitive noun naming the interval. The weather example explicitly describes several changes during the day, so the expression need not mean one continuous unchanged action. Compare the whole proposition as well as the interval: students and a project differ from weather changes. These checks identify supplied meanings, not task-completion time.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u23-st-guided-duration-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u23-g-duration-0"
+            ],
+            "remediationStepId": "u23-st-rem-duration"
+          },
+          {
+            "id": "u23-st-rem-duration",
+            "kind": "REMEDIATE",
+            "title": "Review the complete time contrast",
+            "body": "В течение урока ученики работали над проектом. — Throughout the lesson, the students worked on the project. В течение дня погода менялась несколько раз. — During the course of the day, the weather changed several times. The interval contains the activity or repeated events. Project work over the lesson does not by itself assert that the project was finished.\n\nIt emphasizes the duration over which something occurs. The compound preposition takes a genitive noun naming the interval. The weather example explicitly describes several changes during the day, so the expression need not mean one continuous unchanged action. Compare the whole proposition as well as the interval: students and a project differ from weather changes. These checks identify supplied meanings, not task-completion time.",
+            "exampleIds": [
+              "ex-u23-duration-0",
+              "ex-u23-duration-1"
+            ]
+          },
+          {
+            "id": "u23-st-check-duration",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u23-i-duration-1",
+              "u23-i-duration-2"
+            ],
+            "remediationStepId": "u23-st-rem-duration"
+          }
+        ]
+      },
+      {
+        "id": "u23-s-elapsed",
+        "title": "Distinguish before, after, in a period and ago",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u23-elapsed"
+        ],
+        "steps": [
+          {
+            "id": "u23-st-teach-elapsed-1",
+            "kind": "TEACH",
+            "title": "Before and after a reference event",
+            "body": "Перед ужином мы ходили в парк. — before. После работы я смотрела фильм. — after. The first places the park visit earlier than dinner; the second places watching a film later than work. The preposition meaning before takes an instrumental noun; the one meaning after takes a genitive noun. The English labels classify only this time relation, not the full sentence translation.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u23-elapsed-0",
+              "ex-u23-elapsed-1"
+            ]
+          },
+          {
+            "id": "u23-st-teach-elapsed-2",
+            "kind": "TEACH",
+            "title": "A time point is different from a duration",
+            "body": "The future-looking in expression locates an event after an interval from the reference time. Ago locates an event before the reference time. Neither meaning alone states how long the activity lasts or how long it takes to finish a task. Before and after a named event likewise express order relative to that event, not completion.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u23-st-teach-elapsed-3",
+            "kind": "TEACH",
+            "title": "The forward and backward interval examples",
+            "body": "Мы едем в Латвию через год. — in (a period of time). Мы ездили в Казахстан год назад. — ago. In the first sentence the planned Latvia journey is a year after the reference time; in the second the Kazakhstan journey was a year before it. The forward-looking time construction takes accusative, not genitive; the time noun here has the same surface form as nominative. Ago follows an accusative time expression. The choices classify the shown time relation, not independently produce the whole sentence.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u23-elapsed-2",
+              "ex-u23-elapsed-3"
+            ]
+          },
+          {
+            "id": "u23-st-guided-elapsed-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u23-g-elapsed-0"
+            ],
+            "remediationStepId": "u23-st-rem-elapsed"
+          },
+          {
+            "id": "u23-st-rem-elapsed",
+            "kind": "REMEDIATE",
+            "title": "Review the complete time contrast",
+            "body": "Перед ужином мы ходили в парк. — before. После работы я смотрела фильм. — after. The first places the park visit earlier than dinner; the second places watching a film later than work. The preposition meaning before takes an instrumental noun; the one meaning after takes a genitive noun. The English labels classify only this time relation, not the full sentence translation.\n\nThe future-looking in expression locates an event after an interval from the reference time. Ago locates an event before the reference time. Neither meaning alone states how long the activity lasts or how long it takes to finish a task. Before and after a named event likewise express order relative to that event, not completion.\n\nМы едем в Латвию через год. — in (a period of time). Мы ездили в Казахстан год назад. — ago. In the first sentence the planned Latvia journey is a year after the reference time; in the second the Kazakhstan journey was a year before it. The forward-looking time construction takes accusative, not genitive; the time noun here has the same surface form as nominative. Ago follows an accusative time expression. The choices classify the shown time relation, not independently produce the whole sentence.",
+            "exampleIds": [
+              "ex-u23-elapsed-0",
+              "ex-u23-elapsed-1",
+              "ex-u23-elapsed-2",
+              "ex-u23-elapsed-3"
+            ]
+          },
+          {
+            "id": "u23-st-check-elapsed",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u23-i-elapsed-1",
+              "u23-i-elapsed-2"
+            ],
+            "remediationStepId": "u23-st-rem-elapsed"
+          }
+        ]
+      },
+      {
+        "id": "u23-s-book",
+        "title": "Self-attest Lesson 23",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u23-book"
+        ],
+        "steps": [
+          {
+            "id": "u23-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 23 in your copy",
+            "body": "Do Lesson 23 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 23: printed pages 283-293. PDF indexes 295-305 are file locators, not printed pages. Observed section locators: §23.1 p283 (PDF 295); §23.2 p283 (PDF 295); §23.3 p284 (PDF 296); §23.4 p287 (PDF 299); §23.5 p288 (PDF 300); §23.6 p288 (PDF 300); §23.7 p289 (PDF 301); §23.8 p291 (PDF 303). Observed exercise locators: 23/1 p287/PDF299; 23/2 p288/PDF300; 23/3 p289/PDF301; 23/4 p289/PDF301; 23/5 p291/PDF303. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u23-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 23 book work",
+            "body": "When you have done Lesson 23 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 23: printed pages 283-293. PDF indexes 295-305 are file locators, not printed pages. Observed section locators: §23.1 p283 (PDF 295); §23.2 p283 (PDF 295); §23.3 p284 (PDF 296); §23.4 p287 (PDF 299); §23.5 p288 (PDF 300); §23.6 p288 (PDF 300); §23.7 p289 (PDF 301); §23.8 p291 (PDF 303). Observed exercise locators: 23/1 p287/PDF299; 23/2 p288/PDF300; 23/3 p289/PDF301; 23/4 p289/PDF301; 23/5 p291/PDF303. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          }
+        ]
+      },
+      {
+        "id": "u23-s-gap-completion",
+        "title": "Distinguish time spent from completion within a period",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u23-completion",
+          "obj-u23-book"
+        ],
+        "steps": [
+          {
+            "id": "u23-st-teach-completion-1",
+            "kind": "TEACH",
+            "title": "Time spent does not assert the task was finished",
+            "body": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion. Анна читала статью два часа. — time spent reading without asserting completion. Борис писал письмо час. — time spent writing without asserting completion. These report time devoted to reading or writing. Not asserting completion does not mean asserting that the task was never finished.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u23-completion-0"
+            ]
+          },
+          {
+            "id": "u23-st-teach-completion-2",
+            "kind": "TEACH",
+            "title": "The completed task and its time frame",
+            "body": "A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed. Анна прочитала статью за два часа. — the article was finished within two hours. Here the perfective reading verb and the completion-time construction present the article as finished within the two-hour period. Contrast that with time spent reading without asserting completion. This completion interval differs from the forward-looking time until the Latvia journey. The current choices classify three supplied sentences; they do not test independently choosing aspect and constructing a time phrase.",
+            "exampleIds": [
+              "ex-u23-completion-1"
+            ]
+          },
+          {
+            "id": "u23-st-guided-completion-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u23-g-completion-1"
+            ],
+            "remediationStepId": "u23-st-rem-completion"
+          },
+          {
+            "id": "u23-st-rem-completion",
+            "kind": "REMEDIATE",
+            "title": "Review the complete time contrast",
+            "body": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion. Анна читала статью два часа. — time spent reading without asserting completion. Борис писал письмо час. — time spent writing without asserting completion. These report time devoted to reading or writing. Not asserting completion does not mean asserting that the task was never finished.\n\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed. Анна прочитала статью за два часа. — the article was finished within two hours. Here the perfective reading verb and the completion-time construction present the article as finished within the two-hour period. Contrast that with time spent reading without asserting completion. This completion interval differs from the forward-looking time until the Latvia journey. The current choices classify three supplied sentences; they do not test independently choosing aspect and constructing a time phrase.",
+            "exampleIds": [
+              "ex-u23-completion-0",
+              "ex-u23-completion-1"
+            ]
+          },
+          {
+            "id": "u23-st-check-completion",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Read the full Russian cue and identify the requested time meaning or aspect-and-construction contrast. A missed check returns to the complete explanation.",
+            "itemIds": [
+              "u23-i-completion-1",
+              "u23-i-completion-2"
+            ],
+            "remediationStepId": "u23-st-rem-completion"
+          },
+          {
+            "id": "u23-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 23 AnkiDroid direction",
+            "body": "Unit 23 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u23-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 23 binder prompt",
+            "body": "Unit 23 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u23-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 23 optional tutor",
+            "body": "Unit 23 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u23-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 23 cumulative review",
+            "body": "Unit 23 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 23 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 10,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit23-prior-reading-half-quantity-phrase-v1"
+    }
+  }
+]

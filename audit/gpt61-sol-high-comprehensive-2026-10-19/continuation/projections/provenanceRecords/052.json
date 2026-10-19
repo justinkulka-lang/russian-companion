@@ -1,0 +1,1066 @@
+[
+  {
+    "itemId": "prov-obj-u29-register-2",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "This pair is not a universal stylistic rule.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "e2a52d389cca130b607fe77261ad89e455cacf66548059e580c4c96433e40c4c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-3",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "Return to the adverbial opening versus the finite coordination in this pair.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "c51a1b22d95bb68ef79b1c41176bdae7c8e6cbf2ffb96797b4f2471438275999",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-4",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "Закончив письмо, Анна пошла на почту.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "d93cc51550233cd17f8172b3d151268894177640602b741fb1a9b1569b8068c9",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-5",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "the adverbial opening is the bookish option in this pair",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "990dcd676f3685d7f6c2b5a5bb8a1b4b8ddb9a067c1165aec3883efd4f6f947c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-6",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "Анна закончила письмо и пошла на почту.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "3a3685f52d5f1f1ce884fa5b44218abcf91c56eae1f1277e8fca3a11341c5485",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-7",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "the finite coordination is the ordinary option in this pair",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "bc029ef312395cab03650946aba30edb74802c9220a4cfe0f78d491ac6ce2f6d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-8",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "Which English description identifies the opening word of the bookish sentence in this pair?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "2239503d13db9e60ce65c0208d6efe4999c8ada83dab18dea82a1a3d9a0ae988",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-9",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "Закончив",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "927eb1d8a68b8468190f8dba8d68b437a783cb87dccb48aee0d915f12cb7d582",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-10",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "the adverbial word opens the bookish sentence",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "3b2c6bbc69ffaae0484b086d04e308e6a7bc14f44c423a20943f8186a272b8c0",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-11",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "Admitted reading: the adverbial word opens the bookish sentence",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "84abeacb72ab527fc3a3db1f1fdb7be605015449968ed354ac7ffaed5acdce22",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-12",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "a passive participle is outside this bookish pair",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "5ca7f7c1c1f6aa8b3171e12caa37354ab3270d777244b89f9e88e109b0044ad1",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-13",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "Rejected reading: the finite coordination is the ordinary option in this pair",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "ebe48b55d1f0edaf4a25bc4ae25345acd40bc9ecda987bb15ad4ea307085b6b7",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-14",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "Rejected reading: a passive participle is outside this bookish pair",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "d309043e18bf1ef4586f62982a300aa2c3ce3ffca0a87174275ebeaa1ffd1816",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  },
+  {
+    "itemId": "prov-obj-u29-register-15",
+    "unitNumber": 29,
+    "objectiveId": "obj-u29-register",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:bookish-register",
+    "shippedText": "Which English description identifies the bookish option in this admitted pair?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "c178b9065ba0fd977aa2913922c4c18d3fa18d196a89f65e7ef13e54ce1637e6",
+    "contentHash": "57e88a174e2884b83427d50bc7ed873cbad29c0347d4d5eaee9458afc5a0f23f",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "English Wikipedia Russian grammar oldid 1369617627, consulted 2026-09-30, notes that adverbial participles are a feature of bookish speech and illustrates one adverbial sentence with coordinated finite verbs. This lesson uses an original pair and does not treat that note as a universal rule or as a reading passage.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u29-register:bookish-register",
+      "applications": [
+        {
+          "cue": "Закончив",
+          "answer": "the adverbial word opens the bookish sentence",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Закончив письмо, Анна пошла на почту.",
+          "answer": "the adverbial opening is the bookish option in this pair",
+          "distractors": [
+            "the finite coordination is the ordinary option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Анна закончила письмо и пошла на почту.",
+          "answer": "the finite coordination is the ordinary option in this pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "appearance in writing is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "Написанное письмо лежит на столе.",
+          "answer": "a passive participle is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "the finite coordination is the ordinary option in this pair"
+          ]
+        },
+        {
+          "cue": "a sentence that is only on paper",
+          "answer": "appearance in writing is outside this bookish pair",
+          "distractors": [
+            "the adverbial opening is the bookish option in this pair",
+            "a passive participle is outside this bookish pair"
+          ]
+        },
+        {
+          "cue": "an adverbial in a different sentence",
+          "answer": "this pair does not license every adverbial as bookish",
+          "distractors": [
+            "every adverbial participle is bookish in every sentence",
+            "appearance in writing is outside this bookish pair"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "In this admitted pair, the adverbial opening is the bookish option and the finite coordination is the ordinary option.\nA passive participle, text that is merely on paper, or a different sentence does not extend this pair.\nThis pair is not a universal stylistic rule.\nReturn to the adverbial opening versus the finite coordination in this pair.\nЗакончив письмо, Анна пошла на почту.\nthe adverbial opening is the bookish option in this pair\nАнна закончила письмо и пошла на почту.\nthe finite coordination is the ordinary option in this pair\nWhich English description identifies the opening word of the bookish sentence in this pair?\nЗакончив\nthe adverbial word opens the bookish sentence\nAdmitted reading: the adverbial word opens the bookish sentence\na passive participle is outside this bookish pair\nRejected reading: the finite coordination is the ordinary option in this pair\nRejected reading: a passive participle is outside this bookish pair\nWhich English description identifies the bookish option in this admitted pair?\nAdmitted reading: the adverbial opening is the bookish option in this pair\nappearance in writing is outside this bookish pair\nRejected reading: appearance in writing is outside this bookish pair\nWhich English description identifies the ordinary option in this admitted pair?\nAdmitted reading: the finite coordination is the ordinary option in this pair\nRejected reading: the adverbial opening is the bookish option in this pair\nWhich English description identifies a passive participle that is outside this admitted pair?\nНаписанное письмо лежит на столе.\nAdmitted reading: a passive participle is outside this bookish pair\nWhich English description identifies text that is merely on paper?\na sentence that is only on paper\nAdmitted reading: appearance in writing is outside this bookish pair\nWhich English description states the limit of this admitted pair?\nan adverbial in a different sentence\nthis pair does not license every adverbial as bookish\nAdmitted reading: this pair does not license every adverbial as bookish\nevery adverbial participle is bookish in every sentence\nRejected reading: every adverbial participle is bookish in every sentence\nЗакончив письмо,\nЗакончив письмо\nАнна пошла на почту.\nАнна пошла на почту\nАнна закончила письмо и пошла на почту\nНаписанное письмо лежит на столе"
+  }
+]

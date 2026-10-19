@@ -1,0 +1,2024 @@
+[
+  {
+    "id": "u25-g-nickname-rule-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which classification describes this documented example?",
+    "promptLetter": "Марюня",
+    "options": [
+      "от полной формы имени",
+      "от краткой формы",
+      "оттенок пренебрежения"
+    ],
+    "answer": "от полной формы имени",
+    "feedback": "The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени.\nМарюня is the cue; от полной формы имени matches the requested function or classification: derivation from the full form of the name.",
+    "objectiveId": "obj-u25-nickname-rule",
+    "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька.",
+      "оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка."
+    ],
+    "assessment": {
+      "testedFeature": "DIMINUTIVE_FORM_CLASSIFICATION",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-nickname-rule-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u25-nickname-rule-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-nickname-rule-1-en",
+        "prov-ex-u25-nickname-rule-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька.",
+        "оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка."
+      ],
+      "whyAnswerDemonstratesObjective": "The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени.\nМарюня is the cue; от полной формы имени matches the requested function or classification: derivation from the full form of the name.",
+      "contrastMembers": [
+        "от полной формы имени",
+        "от краткой формы",
+        "оттенок пренебрежения"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-nickname-rule-0-ru",
+        "prov-ex-u25-nickname-rule-0-en",
+        "prov-ex-u25-nickname-rule-1-en",
+        "prov-ex-u25-nickname-rule-2-en"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u25-i-nickname-rule-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which classification describes this documented example?",
+    "promptLetter": "Машенька",
+    "options": [
+      "от краткой формы",
+      "от полной формы имени",
+      "оттенок пренебрежения"
+    ],
+    "answer": "от краткой формы",
+    "feedback": "The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы.\nМашенька is the cue; от краткой формы matches the requested function or classification: derivation from the short form.",
+    "objectiveId": "obj-u25-nickname-rule",
+    "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня.",
+      "оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка."
+    ],
+    "assessment": {
+      "testedFeature": "DIMINUTIVE_FORM_CLASSIFICATION",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-nickname-rule-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u25-nickname-rule-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-nickname-rule-0-en",
+        "prov-ex-u25-nickname-rule-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня.",
+        "оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка."
+      ],
+      "whyAnswerDemonstratesObjective": "The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы.\nМашенька is the cue; от краткой формы matches the requested function or classification: derivation from the short form.",
+      "contrastMembers": [
+        "от краткой формы",
+        "от полной формы имени",
+        "оттенок пренебрежения"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-nickname-rule-1-ru",
+        "prov-ex-u25-nickname-rule-1-en",
+        "prov-ex-u25-nickname-rule-0-en",
+        "prov-ex-u25-nickname-rule-2-en"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u25-i-nickname-rule-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which classification describes this documented example?",
+    "promptLetter": "Сашка",
+    "options": [
+      "оттенок пренебрежения",
+      "от полной формы имени",
+      "от краткой формы"
+    ],
+    "answer": "оттенок пренебрежения",
+    "feedback": "The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения.\nСашка is the cue; оттенок пренебрежения matches the requested function or classification: a shade of dismissiveness in the supplied classification.",
+    "objectiveId": "obj-u25-nickname-rule",
+    "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня.",
+      "от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька."
+    ],
+    "assessment": {
+      "testedFeature": "DIMINUTIVE_FORM_CLASSIFICATION",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-nickname-rule-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u25-nickname-rule-2-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-nickname-rule-0-en",
+        "prov-ex-u25-nickname-rule-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня.",
+        "от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька."
+      ],
+      "whyAnswerDemonstratesObjective": "The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения.\nСашка is the cue; оттенок пренебрежения matches the requested function or classification: a shade of dismissiveness in the supplied classification.",
+      "contrastMembers": [
+        "оттенок пренебрежения",
+        "от полной формы имени",
+        "от краткой формы"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-nickname-rule-2-ru",
+        "prov-ex-u25-nickname-rule-2-en",
+        "prov-ex-u25-nickname-rule-0-en",
+        "prov-ex-u25-nickname-rule-1-en"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u25-g-address-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which name-form category describes this example?",
+    "promptLetter": "Ирина",
+    "options": [
+      "полные имена",
+      "краткие имена",
+      "уменьшительно-ласкательные"
+    ],
+    "answer": "полные имена",
+    "feedback": "The frozen source pairs the shown form \"Ирина\" with the admitted gloss \"полные имена\" (\"полные имена — Ирина\").\nИрина is the cue; полные имена matches the requested function or classification: the full-name category.",
+    "objectiveId": "obj-u25-address",
+    "sourceId": "src-ruwiki-obraschenie-153012874",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ира\" with the admitted gloss \"краткие имена\" (\"краткие имена — Ира\").",
+      "уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирочка\" with the admitted gloss \"уменьшительно-ласкательные\" (\"уменьшительно-ласкательные — Ирочка\")."
+    ],
+    "assessment": {
+      "testedFeature": "REGISTER_FULL",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u25-address-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u25-address-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-address-1-en",
+        "prov-ex-u25-address-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ира\" with the admitted gloss \"краткие имена\" (\"краткие имена — Ира\").",
+        "уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирочка\" with the admitted gloss \"уменьшительно-ласкательные\" (\"уменьшительно-ласкательные — Ирочка\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Ирина\" with the admitted gloss \"полные имена\" (\"полные имена — Ирина\").\nИрина is the cue; полные имена matches the requested function or classification: the full-name category.",
+      "contrastMembers": [
+        "полные имена",
+        "краткие имена",
+        "уменьшительно-ласкательные"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-address-0-ru",
+        "prov-ex-u25-address-0-en",
+        "prov-ex-u25-address-1-en",
+        "prov-ex-u25-address-2-en"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u25-i-address-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which name-form category describes this example?",
+    "promptLetter": "Ира",
+    "options": [
+      "краткие имена",
+      "полные имена",
+      "уменьшительно-ласкательные"
+    ],
+    "answer": "краткие имена",
+    "feedback": "The frozen source pairs the shown form \"Ира\" with the admitted gloss \"краткие имена\" (\"краткие имена — Ира\").\nИра is the cue; краткие имена matches the requested function or classification: the short-name category.",
+    "objectiveId": "obj-u25-address",
+    "sourceId": "src-ruwiki-obraschenie-153012874",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирина\" with the admitted gloss \"полные имена\" (\"полные имена — Ирина\").",
+      "уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирочка\" with the admitted gloss \"уменьшительно-ласкательные\" (\"уменьшительно-ласкательные — Ирочка\")."
+    ],
+    "assessment": {
+      "testedFeature": "REGISTER_SHORT",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u25-address-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u25-address-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-address-0-en",
+        "prov-ex-u25-address-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирина\" with the admitted gloss \"полные имена\" (\"полные имена — Ирина\").",
+        "уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирочка\" with the admitted gloss \"уменьшительно-ласкательные\" (\"уменьшительно-ласкательные — Ирочка\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Ира\" with the admitted gloss \"краткие имена\" (\"краткие имена — Ира\").\nИра is the cue; краткие имена matches the requested function or classification: the short-name category.",
+      "contrastMembers": [
+        "краткие имена",
+        "полные имена",
+        "уменьшительно-ласкательные"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-address-1-ru",
+        "prov-ex-u25-address-1-en",
+        "prov-ex-u25-address-0-en",
+        "prov-ex-u25-address-2-en"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u25-i-address-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which name-form category describes this example?",
+    "promptLetter": "Ирочка",
+    "options": [
+      "уменьшительно-ласкательные",
+      "полные имена",
+      "краткие имена"
+    ],
+    "answer": "уменьшительно-ласкательные",
+    "feedback": "The frozen source pairs the shown form \"Ирочка\" with the admitted gloss \"уменьшительно-ласкательные\" (\"уменьшительно-ласкательные — Ирочка\").\nИрочка is the cue; уменьшительно-ласкательные matches the requested function or classification: the diminutive or affectionate category.",
+    "objectiveId": "obj-u25-address",
+    "sourceId": "src-ruwiki-obraschenie-153012874",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирина\" with the admitted gloss \"полные имена\" (\"полные имена — Ирина\").",
+      "краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ира\" with the admitted gloss \"краткие имена\" (\"краткие имена — Ира\")."
+    ],
+    "assessment": {
+      "testedFeature": "REGISTER_DIMINUTIVE",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u25-address-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u25-address-2-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-address-0-en",
+        "prov-ex-u25-address-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирина\" with the admitted gloss \"полные имена\" (\"полные имена — Ирина\").",
+        "краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ира\" with the admitted gloss \"краткие имена\" (\"краткие имена — Ира\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Ирочка\" with the admitted gloss \"уменьшительно-ласкательные\" (\"уменьшительно-ласкательные — Ирочка\").\nИрочка is the cue; уменьшительно-ласкательные matches the requested function or classification: the diminutive or affectionate category.",
+      "contrastMembers": [
+        "уменьшительно-ласкательные",
+        "полные имена",
+        "краткие имена"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-address-2-ru",
+        "prov-ex-u25-address-2-en",
+        "prov-ex-u25-address-0-en",
+        "prov-ex-u25-address-1-en"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u25-i-address-3",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which register does the supplied full-name address example illustrate?",
+    "promptLetter": "полному имени",
+    "options": [
+      "отстранённо-официального регистра",
+      "дружески-неофициальном общении",
+      "полуофициальной обстановке"
+    ],
+    "answer": "отстранённо-официального регистра",
+    "feedback": "The frozen source pairs the shown form \"полному имени\" with the admitted gloss \"отстранённо-официального регистра\" (\"отстранённо-официального регистра\").\nполному имени is the cue; отстранённо-официального регистра matches the requested function or classification: the stated detached formal register.",
+    "objectiveId": "obj-u25-address",
+    "sourceId": "src-ruwiki-obraschenie-153012874",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "дружески-неофициальном общении: friendly informal communication. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"полному имени\" with the admitted gloss \"дружески-неофициальном общении\" (\"дружески-неофициальном общении\").",
+      "полуофициальной обстановке: a semi-official setting rather than the requested register label. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"полному имени\" with the admitted gloss \"полуофициальной обстановке\" (\"полуофициальной обстановке\")."
+    ],
+    "assessment": {
+      "testedFeature": "REGISTER_OFFICIAL",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u25-address-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u25-address-3-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u25-address-x-4",
+        "prov-u25-address-x-5"
+      ],
+      "distractorDifference": [
+        "",
+        "дружески-неофициальном общении: friendly informal communication. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"полному имени\" with the admitted gloss \"дружески-неофициальном общении\" (\"дружески-неофициальном общении\").",
+        "полуофициальной обстановке: a semi-official setting rather than the requested register label. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"полному имени\" with the admitted gloss \"полуофициальной обстановке\" (\"полуофициальной обстановке\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"полному имени\" with the admitted gloss \"отстранённо-официального регистра\" (\"отстранённо-официального регистра\").\nполному имени is the cue; отстранённо-официального регистра matches the requested function or classification: the stated detached formal register.",
+      "contrastMembers": [
+        "отстранённо-официального регистра",
+        "дружески-неофициальном общении",
+        "полуофициальной обстановке"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-address-3-ru",
+        "prov-ex-u25-address-3-en",
+        "prov-u25-address-x-4",
+        "prov-u25-address-x-5"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u26-g-word-order-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Someone attributes the shopping trip to another person. Which English reading fits this sentence when the speaker corrects that attribution?",
+    "promptLetter": "В магазин пошёл я.",
+    "options": [
+      "It was me who went to the shop.",
+      "The speaker did not go to the shop.",
+      "The speaker went somewhere other than the shop."
+    ],
+    "answer": "It was me who went to the shop.",
+    "feedback": "В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.",
+    "objectiveId": "obj-u26-word-order",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.",
+      "The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading."
+    ],
+    "assessment": {
+      "testedFeature": "WORD_ORDER",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-word-order-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-u26-focus-word-18"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-focus-word-19",
+        "prov-ca-u26-focus-word-20"
+      ],
+      "distractorDifference": [
+        "",
+        "The speaker did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.",
+        "The speaker went somewhere other than the shop. changes the event, participant or stated context; it does not match the supplied reading."
+      ],
+      "whyAnswerDemonstratesObjective": "В магазин пошёл я. has this supplied contextual reading: It was me who went to the shop. Read the stated discourse context rather than selecting an English word-order label.",
+      "contrastMembers": [
+        "It was me who went to the shop.",
+        "The speaker did not go to the shop.",
+        "The speaker went somewhere other than the shop."
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-focus-word-16",
+        "prov-ca-u26-focus-word-18",
+        "prov-ca-u26-focus-word-19",
+        "prov-ca-u26-focus-word-20"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-word-order-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "At the beginning of a story about a past visit, which English reading fits this sentence?",
+    "promptLetter": "Пошёл я в магазин.",
+    "options": [
+      "I went to the shop, and the story continues.",
+      "I did not go to the shop.",
+      "I will go to the shop after deciding to leave."
+    ],
+    "answer": "I went to the shop, and the story continues.",
+    "feedback": "Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.",
+    "objectiveId": "obj-u26-word-order",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.",
+      "I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading."
+    ],
+    "assessment": {
+      "testedFeature": "WORD_ORDER",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-word-order-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-focus-word-26"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-focus-word-27",
+        "prov-ca-u26-focus-word-28"
+      ],
+      "distractorDifference": [
+        "",
+        "I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading.",
+        "I will go to the shop after deciding to leave. changes the event, participant or stated context; it does not match the supplied reading."
+      ],
+      "whyAnswerDemonstratesObjective": "Пошёл я в магазин. has this supplied contextual reading: I went to the shop, and the story continues. Read the stated discourse context rather than selecting an English word-order label.",
+      "contrastMembers": [
+        "I went to the shop, and the story continues.",
+        "I did not go to the shop.",
+        "I will go to the shop after deciding to leave."
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-focus-word-24",
+        "prov-ca-u26-focus-word-26",
+        "prov-ca-u26-focus-word-27",
+        "prov-ca-u26-focus-word-28"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-word-order-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Reporting a past trip without contrasting the traveler or destination, which English reading fits this sentence?",
+    "promptLetter": "Я пошёл в магазин.",
+    "options": [
+      "I went to the shop.",
+      "It was someone else, not me, who went to the shop.",
+      "I did not go to the shop."
+    ],
+    "answer": "I went to the shop.",
+    "feedback": "Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.",
+    "objectiveId": "obj-u26-word-order",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.",
+      "I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading."
+    ],
+    "assessment": {
+      "testedFeature": "WORD_ORDER",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-word-order-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-focus-word-34"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-focus-word-35",
+        "prov-ca-u26-focus-word-27"
+      ],
+      "distractorDifference": [
+        "",
+        "It was someone else, not me, who went to the shop. changes the event, participant or stated context; it does not match the supplied reading.",
+        "I did not go to the shop. changes the event, participant or stated context; it does not match the supplied reading."
+      ],
+      "whyAnswerDemonstratesObjective": "Я пошёл в магазин. has this supplied contextual reading: I went to the shop. Read the stated discourse context rather than selecting an English word-order label.",
+      "contrastMembers": [
+        "I went to the shop.",
+        "It was someone else, not me, who went to the shop.",
+        "I did not go to the shop."
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-focus-word-32",
+        "prov-ca-u26-focus-word-34",
+        "prov-ca-u26-focus-word-35",
+        "prov-ca-u26-focus-word-27"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-g-vy-capital-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English label states how this written form begins?",
+    "promptLetter": "Вы",
+    "options": [
+      "capital letter",
+      "minuscule",
+      "plural form"
+    ],
+    "answer": "capital letter",
+    "feedback": "The frozen line says it begins with a capital letter in personal letters and official papers. capital letter.",
+    "objectiveId": "obj-u26-vy-capital",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The frozen line gives minuscule to the other situation.",
+      "The frozen line uses this phrase for the shared shape, not for the capital beginning for plural form."
+    ],
+    "assessment": {
+      "testedFeature": "CAPITAL_FORM",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u26-vy-capital-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u26-vy-capital-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u26-vy-capital-x-0",
+        "prov-u26-vy-capital-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "Minuscule is the other beginning named in the line.",
+        "This phrase is not the beginning named for letters and papers (plural form)."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen line says it begins with a capital letter in personal letters and official papers.",
+      "contrastMembers": [
+        "capital letter",
+        "minuscule",
+        "plural form"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u26-vy-capital-0-ru",
+        "prov-ex-u26-vy-capital-0-en",
+        "prov-u26-vy-capital-x-0",
+        "prov-u26-vy-capital-x-1"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-vy-capital-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English label states how the shown written form begins?",
+    "promptLetter": "Вас",
+    "options": [
+      "capital letter",
+      "plural form",
+      "minuscule"
+    ],
+    "answer": "capital letter",
+    "feedback": "The frozen line says it begins with a capital letter in personal letters and official papers. capital letter.",
+    "objectiveId": "obj-u26-vy-capital",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The frozen line uses this phrase for the shared shape for plural form.",
+      "The frozen line gives minuscule when the capital situation does not apply."
+    ],
+    "assessment": {
+      "testedFeature": "CAPITAL_FORM",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u26-vy-capital-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u26-vy-capital-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u26-vy-capital-x-1",
+        "prov-u26-vy-capital-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "This phrase does not name the capital beginning (plural form).",
+        "Minuscule is the other beginning."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen line says it begins with a capital letter in personal letters and official papers.",
+      "contrastMembers": [
+        "capital letter",
+        "plural form",
+        "minuscule"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u26-vy-capital-1-ru",
+        "prov-ex-u26-vy-capital-0-en",
+        "prov-u26-vy-capital-x-1",
+        "prov-u26-vy-capital-x-0"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-vy-capital-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English label states the beginning used for the shown form?",
+    "promptLetter": "Вам",
+    "options": [
+      "capital letter",
+      "minuscule",
+      "plural form"
+    ],
+    "answer": "capital letter",
+    "feedback": "The frozen line says it begins with a capital letter in personal letters and official papers. capital letter.",
+    "objectiveId": "obj-u26-vy-capital",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The frozen line gives minuscule to the remaining situation.",
+      "The frozen line uses this phrase for the shared shape for plural form."
+    ],
+    "assessment": {
+      "testedFeature": "CAPITAL_FORM",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u26-vy-capital-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u26-vy-capital-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u26-vy-capital-x-0",
+        "prov-u26-vy-capital-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "Minuscule is not the beginning named for letters and papers.",
+        "This phrase is a different statement in the same line (plural form)."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen line says it begins with a capital letter in personal letters and official papers.",
+      "contrastMembers": [
+        "capital letter",
+        "minuscule",
+        "plural form"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u26-vy-capital-2-ru",
+        "prov-ex-u26-vy-capital-0-en",
+        "prov-u26-vy-capital-x-0",
+        "prov-u26-vy-capital-x-1"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-g-address-notation-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written for the mark in the shown line?",
+    "promptLetter": "115114 г. Москва",
+    "options": [
+      "city",
+      "street",
+      "building"
+    ],
+    "answer": "city",
+    "feedback": "The lines are marked with abbreviations. This label is the gloss written for the mark in the shown line. city.",
+    "objectiveId": "obj-u26-address-notation",
+    "sourceId": "src-wikibooks-russian-various-stuff-3353858",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The frozen gloss street belongs to a different mark.",
+      "The frozen gloss building belongs to a different mark."
+    ],
+    "assessment": {
+      "testedFeature": "ADDRESS_MARK",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u26-address-notation-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u26-address-notation-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u26-address-notation-1-en",
+        "prov-ex-u26-address-notation-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "Street is the gloss of another mark in the same note.",
+        "Building is the gloss of another mark in the same note."
+      ],
+      "whyAnswerDemonstratesObjective": "The lines are marked with abbreviations. This label is the gloss written for the mark in the shown line.",
+      "contrastMembers": [
+        "city",
+        "street",
+        "building"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u26-address-notation-0-ru",
+        "prov-ex-u26-address-notation-0-en",
+        "prov-ex-u26-address-notation-1-en",
+        "prov-ex-u26-address-notation-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-address-notation-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English label glosses the first mark in the shown line?",
+    "promptLetter": "ул. Петрова, д. 14, кв. 15",
+    "options": [
+      "street",
+      "city",
+      "apartment"
+    ],
+    "answer": "street",
+    "feedback": "The lines are marked with abbreviations. This label is the gloss written for the first mark in the shown line. street.",
+    "objectiveId": "obj-u26-address-notation",
+    "sourceId": "src-wikibooks-russian-various-stuff-3353858",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The frozen gloss city belongs to the place mark, not the first mark here.",
+      "The frozen gloss apartment belongs to a later mark in the shown line."
+    ],
+    "assessment": {
+      "testedFeature": "ADDRESS_MARK",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u26-address-notation-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u26-address-notation-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u26-address-notation-0-en",
+        "prov-u26-address-notation-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "City is the gloss of a different mark.",
+        "Apartment is the gloss of a later mark."
+      ],
+      "whyAnswerDemonstratesObjective": "The lines are marked with abbreviations. This label is the gloss written for the first mark in the shown line.",
+      "contrastMembers": [
+        "street",
+        "city",
+        "apartment"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u26-address-notation-1-ru",
+        "prov-ex-u26-address-notation-1-en",
+        "prov-ex-u26-address-notation-0-en",
+        "prov-u26-address-notation-x-1"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-address-notation-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written for the shown mark?",
+    "promptLetter": "д.",
+    "options": [
+      "building",
+      "city",
+      "street"
+    ],
+    "answer": "building",
+    "feedback": "The lines are marked with abbreviations. This label is the gloss written for the shown mark. building.",
+    "objectiveId": "obj-u26-address-notation",
+    "sourceId": "src-wikibooks-russian-various-stuff-3353858",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The frozen gloss city belongs to a different mark.",
+      "The frozen gloss street belongs to a different mark."
+    ],
+    "assessment": {
+      "testedFeature": "ADDRESS_MARK",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u26-address-notation-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u26-address-notation-2-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u26-address-notation-0-en",
+        "prov-ex-u26-address-notation-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "City is the gloss of the place mark.",
+        "Street is the gloss of a different mark."
+      ],
+      "whyAnswerDemonstratesObjective": "The lines are marked with abbreviations. This label is the gloss written for the shown mark.",
+      "contrastMembers": [
+        "building",
+        "city",
+        "street"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u26-address-notation-2-ru",
+        "prov-ex-u26-address-notation-2-en",
+        "prov-ex-u26-address-notation-0-en",
+        "prov-ex-u26-address-notation-1-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-g-indefinite-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which Russian classification describes the supplied indefinite-pronoun use?",
+    "promptLetter": "В доме действительно кто-то был",
+    "options": [
+      "референтность и неизвестность говорящему",
+      "являются нереферентными",
+      "референтный денотативный статус слабой определённости"
+    ],
+    "answer": "референтность и неизвестность говорящему",
+    "feedback": "The source says this series expresses референтность и неизвестность говорящему and gives В доме действительно кто-то был. The keyed phrase is референтность и неизвестность говорящему.\nВ доме действительно кто-то был has the supplied classification референтность и неизвестность говорящему. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.",
+    "objectiveId": "obj-u26-indefinite",
+    "sourceId": "src-ruwiki-neopredelennoe-mestoimenie-149963314",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "являются нереферентными is a different reference classification in the supplied contrasts. The source assigns являются нереферентными to куда-нибудь.",
+      "референтный денотативный статус слабой определённости is a different reference classification in the supplied contrasts. The source assigns референтный денотативный статус слабой определённости to кое-какие."
+    ],
+    "assessment": {
+      "testedFeature": "INDEFINITE_PRONOUN",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u26-indefinite-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u26-indefinite-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u26-indefinite-1-en",
+        "prov-ex-u26-indefinite-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "являются нереферентными is a different reference classification in the supplied contrasts. The source assigns являются нереферентными to куда-нибудь.",
+        "референтный денотативный статус слабой определённости is a different reference classification in the supplied contrasts. The source assigns референтный денотативный статус слабой определённости to кое-какие."
+      ],
+      "whyAnswerDemonstratesObjective": "The source says this series expresses референтность и неизвестность говорящему and gives В доме действительно кто-то был. The keyed phrase is референтность и неизвестность говорящему.\nВ доме действительно кто-то был has the supplied classification референтность и неизвестность говорящему. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.",
+      "contrastMembers": [
+        "референтность и неизвестность говорящему",
+        "являются нереферентными",
+        "референтный денотативный статус слабой определённости"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u26-indefinite-0-ru",
+        "prov-ex-u26-indefinite-0-en",
+        "prov-ex-u26-indefinite-1-en",
+        "prov-ex-u26-indefinite-2-en"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u26-i-indefinite-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which Russian classification describes the supplied indefinite-pronoun use?",
+    "promptLetter": "куда-нибудь",
+    "options": [
+      "являются нереферентными",
+      "референтность и неизвестность говорящему",
+      "референтный денотативный статус слабой определённости"
+    ],
+    "answer": "являются нереферентными",
+    "feedback": "The source says the series являются нереферентными and gives куда-нибудь. The keyed phrase is являются нереферентными.\nкуда-нибудь has the supplied classification являются нереферентными. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.",
+    "objectiveId": "obj-u26-indefinite",
+    "sourceId": "src-ruwiki-neopredelennoe-mestoimenie-149963314",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "референтность и неизвестность говорящему is a different reference classification in the supplied contrasts. The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был.",
+      "референтный денотативный статус слабой определённости is a different reference classification in the supplied contrasts. The source assigns референтный денотативный статус слабой определённости to кое-какие."
+    ],
+    "assessment": {
+      "testedFeature": "INDEFINITE_PRONOUN",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u26-indefinite-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u26-indefinite-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u26-indefinite-0-en",
+        "prov-ex-u26-indefinite-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "референтность и неизвестность говорящему is a different reference classification in the supplied contrasts. The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был.",
+        "референтный денотативный статус слабой определённости is a different reference classification in the supplied contrasts. The source assigns референтный денотативный статус слабой определённости to кое-какие."
+      ],
+      "whyAnswerDemonstratesObjective": "The source says the series являются нереферентными and gives куда-нибудь. The keyed phrase is являются нереферентными.\nкуда-нибудь has the supplied classification являются нереферентными. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.",
+      "contrastMembers": [
+        "являются нереферентными",
+        "референтность и неизвестность говорящему",
+        "референтный денотативный статус слабой определённости"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u26-indefinite-1-ru",
+        "prov-ex-u26-indefinite-1-en",
+        "prov-ex-u26-indefinite-0-en",
+        "prov-ex-u26-indefinite-2-en"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u26-i-indefinite-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which Russian classification describes the supplied indefinite-pronoun use?",
+    "promptLetter": "кое-какие",
+    "options": [
+      "референтный денотативный статус слабой определённости",
+      "референтность и неизвестность говорящему",
+      "являются нереферентными"
+    ],
+    "answer": "референтный денотативный статус слабой определённости",
+    "feedback": "The source says this series expresses референтный денотативный статус слабой определённости and gives кое-какие. The keyed phrase is референтный денотативный статус слабой определённости.\nкое-какие has the supplied classification референтный денотативный статус слабой определённости. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.",
+    "objectiveId": "obj-u26-indefinite",
+    "sourceId": "src-ruwiki-neopredelennoe-mestoimenie-149963314",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "референтность и неизвестность говорящему is a different reference classification in the supplied contrasts. The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был.",
+      "являются нереферентными is a different reference classification in the supplied contrasts. The source assigns являются нереферентными to куда-нибудь."
+    ],
+    "assessment": {
+      "testedFeature": "INDEFINITE_PRONOUN",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u26-indefinite-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u26-indefinite-2-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u26-indefinite-0-en",
+        "prov-ex-u26-indefinite-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "референтность и неизвестность говорящему is a different reference classification in the supplied contrasts. The source assigns референтность и неизвестность говорящему to В доме действительно кто-то был.",
+        "являются нереферентными is a different reference classification in the supplied contrasts. The source assigns являются нереферентными to куда-нибудь."
+      ],
+      "whyAnswerDemonstratesObjective": "The source says this series expresses референтный денотативный статус слабой определённости and gives кое-какие. The keyed phrase is референтный денотативный статус слабой определённости.\nкое-какие has the supplied classification референтный денотативный статус слабой определённости. Use the explained distinction between a particular unknown entity, an open alternative and speaker-known reference.",
+      "contrastMembers": [
+        "референтный денотативный статус слабой определённости",
+        "референтность и неизвестность говорящему",
+        "являются нереферентными"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u26-indefinite-2-ru",
+        "prov-ex-u26-indefinite-2-en",
+        "prov-ex-u26-indefinite-0-en",
+        "prov-ex-u26-indefinite-1-en"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u26-g-letter-writing-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English plan fits the supplied problem-and-request framework?",
+    "promptLetter": "a letter explaining a problem and requesting action",
+    "options": [
+      "state the reason, explain relevant facts, then make the request",
+      "every Russian letter must put its main point last"
+    ],
+    "answer": "state the reason, explain relevant facts, then make the request",
+    "feedback": "The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.",
+    "objectiveId": "obj-u26-letter-writing",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes."
+    ],
+    "assessment": {
+      "testedFeature": "LETTER_ORGANIZATION",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-letter-writing-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-u26-letter-label-14"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-letter-label-15"
+      ],
+      "distractorDifference": [
+        "",
+        "every Russian letter must put its main point last overgeneralizes from one framework to all letters and purposes."
+      ],
+      "whyAnswerDemonstratesObjective": "The cue is a letter explaining a problem and requesting action. In the supplied framework, state the reason, explain relevant facts, then make the request. That organization supports this particular purpose; it is not a universal national word-order rule.",
+      "contrastMembers": [
+        "state the reason, explain relevant facts, then make the request",
+        "every Russian letter must put its main point last"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-letter-label-12",
+        "prov-ca-u26-letter-label-14",
+        "prov-ca-u26-letter-label-15"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-letter-writing-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English inference is supported by the shown neutral greeting?",
+    "promptLetter": "Здравствуйте!",
+    "options": [
+      "a greeting, not a rule about how close the recipient is",
+      "every unfamiliar recipient forbids any greeting translated as dear"
+    ],
+    "answer": "a greeting, not a rule about how close the recipient is",
+    "feedback": "Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.",
+    "objectiveId": "obj-u26-letter-writing",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register."
+    ],
+    "assessment": {
+      "testedFeature": "LETTER_ADDRESS_LIMIT",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-letter-writing-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-letter-label-20"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-letter-label-21"
+      ],
+      "distractorDifference": [
+        "",
+        "every unfamiliar recipient forbids any greeting translated as dear is not established by the meaning of Здравствуйте!; a greeting does not determine every relationship or register."
+      ],
+      "whyAnswerDemonstratesObjective": "Здравствуйте! supports a greeting, not a rule about how close the recipient is. Its greeting function does not establish an absolute prohibition based on an English salutation translation.",
+      "contrastMembers": [
+        "a greeting, not a rule about how close the recipient is",
+        "every unfamiliar recipient forbids any greeting translated as dear"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-letter-label-18",
+        "prov-ca-u26-letter-label-20",
+        "prov-ca-u26-letter-label-21"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-letter-writing-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "In the supplied letter layout, which English element follows the body?",
+    "promptLetter": "Body",
+    "options": [
+      "Closing and signature",
+      "Greeting",
+      "Sender’s address and date"
+    ],
+    "answer": "Closing and signature",
+    "feedback": "In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.",
+    "objectiveId": "obj-u26-letter-writing",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Greeting introduces the reader-facing salutation before the body in this supplied layout.",
+      "Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout."
+    ],
+    "assessment": {
+      "testedFeature": "LETTER_STRUCTURE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u26-letter-writing-2",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u26-letter-label-26"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u26-letter-label-27",
+        "prov-ca-u26-letter-label-28"
+      ],
+      "distractorDifference": [
+        "",
+        "Greeting introduces the reader-facing salutation before the body in this supplied layout.",
+        "Sender’s address and date identifies the sender and date before the greeting and body in this supplied layout."
+      ],
+      "whyAnswerDemonstratesObjective": "In the supplied layout, Body is followed by Closing and signature. This identifies the next part of the demonstrated framework rather than prescribing every possible letter format.",
+      "contrastMembers": [
+        "Closing and signature",
+        "Greeting",
+        "Sender’s address and date"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u26-letter-label-24",
+        "prov-ca-u26-letter-label-26",
+        "prov-ca-u26-letter-label-27",
+        "prov-ca-u26-letter-label-28"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-g-correspondence-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English correspondence label matches the shown fragment?",
+    "promptLetter": "к настоящему письму прилагается",
+    "options": [
+      "enclosed please find",
+      "Respectfully"
+    ],
+    "answer": "enclosed please find",
+    "feedback": "The source pairs к настоящему письму прилагается with enclosed please find. enclosed please find.",
+    "objectiveId": "obj-u26-correspondence",
+    "sourceId": "src-readyrussian-letter",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The source pairs С уважением with Respectfully."
+    ],
+    "assessment": {
+      "testedFeature": "CORRESPONDENCE_ENCLOSURE",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u26-correspondence-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u26-correspondence-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u26-correspondence-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "Respectfully closes the letter. It does not gloss the enclosure line."
+      ],
+      "whyAnswerDemonstratesObjective": "The source pairs к настоящему письму прилагается with enclosed please find.",
+      "contrastMembers": [
+        "enclosed please find",
+        "Respectfully"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u26-correspondence-0-ru",
+        "prov-ex-u26-correspondence-0-en",
+        "prov-ex-u26-correspondence-1-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-correspondence-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English correspondence label matches the shown fragment?",
+    "promptLetter": "С уважением",
+    "options": [
+      "Respectfully",
+      "enclosed please find"
+    ],
+    "answer": "Respectfully",
+    "feedback": "The source pairs С уважением with Respectfully. Respectfully.",
+    "objectiveId": "obj-u26-correspondence",
+    "sourceId": "src-readyrussian-letter",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The source pairs к настоящему письму прилагается with enclosed please find."
+    ],
+    "assessment": {
+      "testedFeature": "CORRESPONDENCE_CLOSING",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u26-correspondence-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u26-correspondence-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u26-correspondence-0-en"
+      ],
+      "distractorDifference": [
+        "",
+        "enclosed please find glosses the enclosure line, not the closing."
+      ],
+      "whyAnswerDemonstratesObjective": "The source pairs С уважением with Respectfully.",
+      "contrastMembers": [
+        "Respectfully",
+        "enclosed please find"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u26-correspondence-1-ru",
+        "prov-ex-u26-correspondence-1-en",
+        "prov-ex-u26-correspondence-0-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u26-i-correspondence-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted fragment matches the shown correspondence meaning?",
+    "promptLetter": "enclosed please find",
+    "options": [
+      "к настоящему письму прилагается",
+      "С уважением"
+    ],
+    "answer": "к настоящему письму прилагается",
+    "feedback": "The source pairs к настоящему письму прилагается with enclosed please find. к настоящему письму прилагается.",
+    "objectiveId": "obj-u26-correspondence",
+    "sourceId": "src-readyrussian-letter",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The source pairs С уважением with Respectfully."
+    ],
+    "assessment": {
+      "testedFeature": "CORRESPONDENCE_ENCLOSURE_FORM",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u26-correspondence-2",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u26-correspondence-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u26-correspondence-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "С уважением is the neutral closing, not the enclosure line."
+      ],
+      "whyAnswerDemonstratesObjective": "The source pairs к настоящему письму прилагается with enclosed please find.",
+      "contrastMembers": [
+        "к настоящему письму прилагается",
+        "С уважением"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u26-correspondence-0-en",
+        "prov-ex-u26-correspondence-0-ru",
+        "prov-ex-u26-correspondence-1-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u27-g-passive-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English action meaning fits the shown past passive form?",
+    "promptLetter": "сде́ланный",
+    "options": [
+      "done/made",
+      "written",
+      "killed"
+    ],
+    "answer": "done/made",
+    "feedback": "Passive past participles: сде́ланный has the supplied meaning done/made. It describes the entity affected by doing or making, not an entity performing that action.",
+    "objectiveId": "obj-u27-passive",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "written describes writing, a different action from doing or making.",
+      "killed describes killing, a different action from doing or making."
+    ],
+    "assessment": {
+      "testedFeature": "PAST_PASSIVE",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u27-passive-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u27-passive-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u27-passive-1-en",
+        "prov-ex-u27-passive-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "written describes writing, a different action from doing or making.",
+        "killed describes killing, a different action from doing or making."
+      ],
+      "whyAnswerDemonstratesObjective": "Passive past participles: сде́ланный has the supplied meaning done/made. It describes the entity affected by doing or making, not an entity performing that action.",
+      "contrastMembers": [
+        "done/made",
+        "written",
+        "killed"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u27-passive-0-ru",
+        "prov-ex-u27-passive-0-en",
+        "prov-ex-u27-passive-1-en",
+        "prov-ex-u27-passive-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u27-i-passive-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English action meaning fits the shown past passive form?",
+    "promptLetter": "напи́санный",
+    "options": [
+      "written",
+      "done/made",
+      "killed"
+    ],
+    "answer": "written",
+    "feedback": "Passive past participles: напи́санный has the supplied meaning written. It describes the entity affected by writing, not an entity performing that action.",
+    "objectiveId": "obj-u27-passive",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "done/made describes doing or making, a different action from writing.",
+      "killed describes killing, a different action from writing."
+    ],
+    "assessment": {
+      "testedFeature": "PAST_PASSIVE",
+      "evidenceMode": "EXPLICIT_PARENTHETICAL_GLOSS",
+      "contrastSetId": "u27-passive-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u27-passive-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u27-passive-0-en",
+        "prov-ex-u27-passive-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "done/made describes doing or making, a different action from writing.",
+        "killed describes killing, a different action from writing."
+      ],
+      "whyAnswerDemonstratesObjective": "Passive past participles: напи́санный has the supplied meaning written. It describes the entity affected by writing, not an entity performing that action.",
+      "contrastMembers": [
+        "written",
+        "done/made",
+        "killed"
+      ],
+      "relationKind": "EXPLICIT_PARENTHETICAL_GLOSS",
+      "relationParticipantIds": [
+        "prov-ex-u27-passive-1-ru",
+        "prov-ex-u27-passive-1-en",
+        "prov-ex-u27-passive-0-en",
+        "prov-ex-u27-passive-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u27-i-passive-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English action meaning fits the shown past passive form?",
+    "promptLetter": "уби́тый",
+    "options": [
+      "killed",
+      "written",
+      "done/made"
+    ],
+    "answer": "killed",
+    "feedback": "Passive past participles: уби́тый has the supplied meaning killed. It describes the entity affected by killing, not an entity performing that action.",
+    "objectiveId": "obj-u27-passive",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "written describes writing, a different action from killing.",
+      "done/made describes doing or making, a different action from killing."
+    ],
+    "assessment": {
+      "testedFeature": "PAST_PASSIVE",
+      "evidenceMode": "EXPLICIT_PARENTHETICAL_GLOSS",
+      "contrastSetId": "u27-passive-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u27-passive-2-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u27-passive-1-en",
+        "prov-ex-u27-passive-0-en"
+      ],
+      "distractorDifference": [
+        "",
+        "written describes writing, a different action from killing.",
+        "done/made describes doing or making, a different action from killing."
+      ],
+      "whyAnswerDemonstratesObjective": "Passive past participles: уби́тый has the supplied meaning killed. It describes the entity affected by killing, not an entity performing that action.",
+      "contrastMembers": [
+        "killed",
+        "written",
+        "done/made"
+      ],
+      "relationKind": "EXPLICIT_PARENTHETICAL_GLOSS",
+      "relationParticipantIds": [
+        "prov-ex-u27-passive-2-ru",
+        "prov-ex-u27-passive-2-en",
+        "prov-ex-u27-passive-1-en",
+        "prov-ex-u27-passive-0-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u27-g-present-passive-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning fits this supplied form?",
+    "promptLetter": "обсужда́емый",
+    "options": [
+      "being discussed",
+      "we leave",
+      "to discuss"
+    ],
+    "answer": "being discussed",
+    "feedback": "The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.\nbeing discussed identifies a passive description of something affected by discussion.",
+    "objectiveId": "obj-u27-present-passive",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "we leave identifies a finite first-person plural action with a we subject, a different action or grammatical function.",
+      "to discuss identifies an infinitive meaning rather than a passive description, a different action or grammatical function."
+    ],
+    "assessment": {
+      "testedFeature": "PRESENT_PASSIVE",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u27-present-passive-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u27-present-passive-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u27-present-passive-1-en",
+        "prov-u27-present-passive-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "we leave identifies a finite first-person plural action with a we subject, a different action or grammatical function.",
+        "to discuss identifies an infinitive meaning rather than a passive description, a different action or grammatical function."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen line says being discussed or able to be discussed after the listed forms. This label is that gloss.\nbeing discussed identifies a passive description of something affected by discussion.",
+      "contrastMembers": [
+        "being discussed",
+        "we leave",
+        "to discuss"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u27-present-passive-0-ru",
+        "prov-ex-u27-present-passive-0-en",
+        "prov-ex-u27-present-passive-1-en",
+        "prov-u27-present-passive-x-0"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u27-i-present-passive-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning fits this supplied form?",
+    "promptLetter": "оставля́ем",
+    "options": [
+      "we leave",
+      "being discussed",
+      "to leave"
+    ],
+    "answer": "we leave",
+    "feedback": "The frozen line writes (we leave) after the shown form. This label is that parenthetical.\nwe leave identifies a finite first-person plural action with a we subject.",
+    "objectiveId": "obj-u27-present-passive",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "being discussed identifies a passive description of something affected by discussion, a different action or grammatical function.",
+      "to leave identifies an infinitive meaning without a stated we subject, a different action or grammatical function."
+    ],
+    "assessment": {
+      "testedFeature": "PRESENT_PASSIVE",
+      "evidenceMode": "EXPLICIT_PARENTHETICAL_GLOSS",
+      "contrastSetId": "u27-present-passive-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u27-present-passive-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u27-present-passive-0-en",
+        "prov-u27-present-passive-x-2"
+      ],
+      "distractorDifference": [
+        "",
+        "being discussed identifies a passive description of something affected by discussion, a different action or grammatical function.",
+        "to leave identifies an infinitive meaning without a stated we subject, a different action or grammatical function."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen line writes (we leave) after the shown form. This label is that parenthetical.\nwe leave identifies a finite first-person plural action with a we subject.",
+      "contrastMembers": [
+        "we leave",
+        "being discussed",
+        "to leave"
+      ],
+      "relationKind": "EXPLICIT_PARENTHETICAL_GLOSS",
+      "relationParticipantIds": [
+        "prov-ex-u27-present-passive-1-ru",
+        "prov-ex-u27-present-passive-1-en",
+        "prov-ex-u27-present-passive-0-en",
+        "prov-u27-present-passive-x-2"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u27-i-present-passive-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning fits this supplied form?",
+    "promptLetter": "оставля́ть",
+    "options": [
+      "to leave",
+      "we leave",
+      "being discussed"
+    ],
+    "answer": "to leave",
+    "feedback": "The frozen line writes (to leave) after the shown form. This label is that parenthetical.\nto leave identifies an infinitive meaning without a stated we subject.",
+    "objectiveId": "obj-u27-present-passive",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "we leave identifies a finite first-person plural action with a we subject, a different action or grammatical function.",
+      "being discussed identifies a passive description of something affected by discussion, a different action or grammatical function."
+    ],
+    "assessment": {
+      "testedFeature": "PRESENT_PASSIVE",
+      "evidenceMode": "EXPLICIT_PARENTHETICAL_GLOSS",
+      "contrastSetId": "u27-present-passive-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u27-present-passive-x-2"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u27-present-passive-1-en",
+        "prov-ex-u27-present-passive-0-en"
+      ],
+      "distractorDifference": [
+        "",
+        "we leave identifies a finite first-person plural action with a we subject, a different action or grammatical function.",
+        "being discussed identifies a passive description of something affected by discussion, a different action or grammatical function."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen line writes (to leave) after the shown form. This label is that parenthetical.\nto leave identifies an infinitive meaning without a stated we subject.",
+      "contrastMembers": [
+        "to leave",
+        "we leave",
+        "being discussed"
+      ],
+      "relationKind": "EXPLICIT_PARENTHETICAL_GLOSS",
+      "relationParticipantIds": [
+        "prov-u27-present-passive-x-1",
+        "prov-u27-present-passive-x-2",
+        "prov-ex-u27-present-passive-1-en",
+        "prov-ex-u27-present-passive-0-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u28-g-imperfective-adverb-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English description identifies the relative timing in this retained clause?",
+    "promptLetter": "отдыхал читая",
+    "options": [
+      "simultaneous with the main predicate",
+      "an absolute present label",
+      "a different subject from the main verb"
+    ],
+    "answer": "simultaneous with the main predicate",
+    "feedback": "In отдыхал читая, simultaneous with the main predicate is the matching relative-time description. Reading accompanies resting; the same person performs both actions in this supplied episode. The main predicate is past; the verbal adverb does not independently label absolute sentence time.",
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "an absolute present label mistakes relative timing for an independent tense.",
+      "a different subject from the main verb is not the shared-actor reading supplied by this paragraph."
+    ],
+    "assessment": {
+      "testedFeature": "IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u28-imperfective-adverb-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-u28-timing-guided-imperfective-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u28-timing-guided-imperfective-2",
+        "prov-u28-timing-guided-imperfective-3"
+      ],
+      "distractorDifference": [
+        "",
+        "an absolute present label mistakes relative timing for an independent tense.",
+        "a different subject from the main verb is not the shared-actor reading supplied by this paragraph."
+      ],
+      "whyAnswerDemonstratesObjective": "In отдыхал читая, simultaneous with the main predicate is the matching relative-time description. Reading accompanies resting; the same person performs both actions in this supplied episode. The main predicate is past; the verbal adverb does not independently label absolute sentence time.",
+      "contrastMembers": [
+        "simultaneous with the main predicate",
+        "an absolute present label",
+        "a different subject from the main verb"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-u28-timing-guided-imperfective-0",
+        "prov-u28-timing-guided-imperfective-1",
+        "prov-u28-timing-guided-imperfective-2",
+        "prov-u28-timing-guided-imperfective-3"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u28-i-imperfective-adverb-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English description identifies the timing of читая in this sentence?",
+    "promptLetter": "читая письмо, он улыбался",
+    "options": [
+      "simultaneous with the main predicate",
+      "an absolute present label",
+      "a different subject from the main verb"
+    ],
+    "answer": "simultaneous with the main predicate",
+    "feedback": "In читая письмо, он улыбался, simultaneous with the main predicate describes читая: he reads while smiling. The past main verb does not turn читая into an absolute present tense.",
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "an absolute present label ignores the past main verb; the verbal adverb has relative time.",
+      "a different subject from the main verb violates the shared-subject condition in this construction."
+    ],
+    "assessment": {
+      "testedFeature": "IMPERFECTIVE_ADVERB_SIMULTANEOUS",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u28-imperfective-adverb-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-8"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-12",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-13"
+      ],
+      "distractorDifference": [
+        "",
+        "an absolute present label ignores the past main verb; the verbal adverb has relative time.",
+        "a different subject from the main verb violates the shared-subject condition in this construction."
+      ],
+      "whyAnswerDemonstratesObjective": "In читая письмо, он улыбался, читая is simultaneous with the main predicate: the same person reads and smiles during the same interval.",
+      "contrastMembers": [
+        "simultaneous with the main predicate",
+        "an absolute present label",
+        "a different subject from the main verb"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-8",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-12",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-13"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u28-i-imperfective-adverb-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English description identifies the shared subject?",
+    "promptLetter": "читая письмо, он улыбался",
+    "options": [
+      "the reader and the person smiling are the same person",
+      "two unrelated people perform the actions",
+      "the sentence omits its main subject"
+    ],
+    "answer": "the reader and the person smiling are the same person",
+    "feedback": "In читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.",
+    "objectiveId": "obj-u28-imperfective-adverb",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "two unrelated people perform the actions is not the shared-subject construction shown here.",
+      "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+    ],
+    "assessment": {
+      "testedFeature": "VERBAL_ADVERB_SHARED_SUBJECT",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u28-imperfective-adverb-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-16"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-19",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-20"
+      ],
+      "distractorDifference": [
+        "",
+        "two unrelated people perform the actions is not the shared-subject construction shown here.",
+        "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+      ],
+      "whyAnswerDemonstratesObjective": "In читая письмо, он улыбался, the reader and the person smiling are the same person: the verbal adverb shares the subject of the main predicate.",
+      "contrastMembers": [
+        "the reader and the person smiling are the same person",
+        "two unrelated people perform the actions",
+        "the sentence omits its main subject"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-7",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-16",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-19",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-imperfective-adverb-host-20"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u28-g-perfective-adverb-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English description identifies the relative timing in this retained clause?",
+    "promptLetter": "устав писать ложился на диван",
+    "options": [
+      "anterior to a past main action",
+      "an absolute present label",
+      "a different subject from the main verb"
+    ],
+    "answer": "anterior to a past main action",
+    "feedback": "In устав писать ложился на диван, anterior to a past main action is the matching relative-time description. Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The main predicate is past; the verbal adverb does not independently label absolute sentence time.",
+    "objectiveId": "obj-u28-perfective-adverb",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "an absolute present label mistakes relative timing for an independent tense.",
+      "a different subject from the main verb is not the shared-actor reading supplied by this paragraph."
+    ],
+    "assessment": {
+      "testedFeature": "PERFECTIVE_ADVERB_ANTERIOR",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u28-perfective-adverb-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-u28-timing-guided-perfective-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u28-timing-guided-perfective-2",
+        "prov-u28-timing-guided-perfective-3"
+      ],
+      "distractorDifference": [
+        "",
+        "an absolute present label mistakes relative timing for an independent tense.",
+        "a different subject from the main verb is not the shared-actor reading supplied by this paragraph."
+      ],
+      "whyAnswerDemonstratesObjective": "In устав писать ложился на диван, anterior to a past main action is the matching relative-time description. Becoming tired of writing precedes lying down; the same person performs both actions in this supplied episode. The main predicate is past; the verbal adverb does not independently label absolute sentence time.",
+      "contrastMembers": [
+        "anterior to a past main action",
+        "an absolute present label",
+        "a different subject from the main verb"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-u28-timing-guided-perfective-0",
+        "prov-u28-timing-guided-perfective-1",
+        "prov-u28-timing-guided-perfective-2",
+        "prov-u28-timing-guided-perfective-3"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u28-i-perfective-adverb-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English description. When is the perfective verbal adverb interpreted in this sentence?",
+    "promptLetter": "написав письмо, она отправит его завтра",
+    "options": [
+      "anterior to a future main action",
+      "an absolute present label",
+      "a different subject from the main verb"
+    ],
+    "answer": "anterior to a future main action",
+    "feedback": "In написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.",
+    "objectiveId": "obj-u28-perfective-adverb",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "an absolute present label is not the time of a perfective verbal adverb.",
+      "a different subject from the main verb violates the shared-subject constraint."
+    ],
+    "assessment": {
+      "testedFeature": "PERFECTIVE_ADVERB_ANTERIOR",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u28-perfective-adverb-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13"
+      ],
+      "distractorDifference": [
+        "",
+        "an absolute present label is not the time of a perfective verbal adverb.",
+        "a different subject from the main verb violates the shared-subject constraint."
+      ],
+      "whyAnswerDemonstratesObjective": "In написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.",
+      "contrastMembers": [
+        "anterior to a future main action",
+        "an absolute present label",
+        "a different subject from the main verb"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-8",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-9",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-12",
+        "prov-u28-timing-rebind-prov-ca-u28-instruction-obj-u28-perfective-adverb-host-13"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  }
+]

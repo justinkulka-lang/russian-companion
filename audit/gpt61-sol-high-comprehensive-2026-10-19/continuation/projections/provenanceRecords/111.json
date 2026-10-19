@@ -1,0 +1,860 @@
+[
+  {
+    "itemId": "prov-ca-repair-28-11038",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "In написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "34682421df30ff21d6e07bcad11118e9a978c5d87a8a66e0a45a68c1c85a5aab",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11039",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "two unrelated people perform the actions",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "3d9e42c1a7d3c64316d526cb765f609fa04c9cadf4e11445084cb8bdacb5c1ff",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11040",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "the sentence omits its main subject",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "6899ab488dae0e35c4180ce49878a77b151a15a35c25ea2c9921ad5707e1db3e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11041",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "two unrelated people perform the actions is not the shared-subject construction shown here.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "1e721e763933adbd62a061262fc84cf4088a92aced77496182a4e743397d469d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-28-11042",
+    "unitNumber": 28,
+    "objectiveId": "obj-u28-perfective-adverb",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u28-perfective-adverb",
+    "shippedText": "the sentence omits its main subject is incorrect because the displayed main clause has an explicit subject.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "29472cae0668a27d911dc90458ef77b06d145c822d0f3f944666ebdd91b0c8e7",
+    "contentHash": "5018f0afaa9ec8dc3a93cb5893d589ef73203bcc3fb12dd5e37adc5d1a281e03",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u28-perfective-adverb:perfective-verbal-adverb",
+      "applications": [
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "anterior to a future main action",
+          "distractors": [
+            "an absolute present label",
+            "a different subject from the main verb"
+          ]
+        },
+        {
+          "cue": "написав письмо, она отправит его завтра",
+          "answer": "the writer and sender are the same person",
+          "distractors": [
+            "two unrelated people perform the actions",
+            "the sentence omits its main subject"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nProposed Unit 28 uses admitted imperfective and perfective adverbial lines and one admitted public-domain reading span. Qualified review is pending.\nRead the admitted examples on this card.\nA perfective verbal adverb is anterior to the main predicate. It can precede a past or a future main action. It is not limited to an absolute past.\nusually present, while perfective ones can only be past\nсказав\nperfective verbal adverb; normally anterior to its main action, which can itself be past or future\nнаучившись\nвойдя\nнаписав письмо, она отправит его завтра\nanterior to a future main action\nWhen is the perfective verbal adverb interpreted in this sentence?\nIn написав письмо, она отправит его завтра, anterior to a future main action describes написав: writing precedes the future sending, and the same person performs both actions.\nan absolute present label\na different subject from the main verb\nan absolute present label is not the time of a perfective verbal adverb.\na different subject from the main verb violates the shared-subject constraint.\nthe writer and sender are the same person\nWhich English description identifies the shared subject?\nIn написав письмо, она отправит его завтра, the writer and sender are the same person: the verbal adverb shares the subject of the main predicate.\ntwo unrelated people perform the actions\nthe sentence omits its main subject\ntwo unrelated people perform the actions is not the shared-subject construction shown here.\nthe sentence omits its main subject is incorrect because the displayed main clause has an explicit subject."
+  },
+  {
+    "itemId": "prov-ca-repair-7-11043",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-u7-bounded-manner-adverb",
+    "shippedText": "Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "d3378d4a5a98ce0fc8186bdb789285f0b702988a20fb583c0b412cf7799b38b2",
+    "contentHash": "3761c8daaa53319c28970e079601fb3fedb67e35370403a7a4c9db51daca803d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "бы́стрый → бы́стро",
+          "answer": "a documented adjective-to-manner-adverb pair",
+          "distractors": [
+            "two forms of the same noun",
+            "an unrestricted rule for every adjective"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "an adjective describing the speaker"
+          ]
+        },
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        },
+        {
+          "cue": "си́ний",
+          "answer": "this unit supplies no documented manner-adverb counterpart",
+          "distractors": [
+            "the unit establishes a general conversion rule"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nMany manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nбыстрый\nadmitted fast manner-adverb relationship\nОна говорит быстро.\nmanner adverb modifying the action\nбы́стрый → бы́стро\na documented adjective-to-manner-adverb pair\nWhich English description matches the documented pair?\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed. Check each lexical pair rather than applying an unrestricted generator.\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair with different grammatical functions.\ntwo forms of the same noun\nan unrestricted rule for every adjective\ntwo forms of the same noun would remain noun forms; this pair links an adjective with an adverb.\nan unrestricted rule for every adjective is not established by one documented lexical pair.\nWhich English description identifies the function of быстро?\nIn Она говорит быстро., manner adverb modifying the action describes быстро: it tells us how she speaks and does not agree with the speaker.\nIn Она говорит быстро., manner adverb modifying the action describes how she speaks.\nan adjective describing the speaker\nan adjective describing the speaker would describe her qualities; быстро describes how the action is performed.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nси́ний\nthis unit supplies no documented manner-adverb counterpart\nWhich English description respects the scope of this unit's lexical evidence?\nFor си́ний, this unit supplies no documented manner-adverb counterpart. This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.\nFor си́ний, this unit supplies no documented manner-adverb counterpart, so a learner must consult a reliable lexical source rather than invent a form.\nthe unit establishes a general conversion rule\nthe unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs."
+  },
+  {
+    "itemId": "prov-ca-repair-7-11044",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-u7-bounded-manner-adverb",
+    "shippedText": "Russian adverbs do not change for gender, number, or case.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "d3378d4a5a98ce0fc8186bdb789285f0b702988a20fb583c0b412cf7799b38b2",
+    "contentHash": "29c2059362a0f75bbd5f8b699aef1c14db8966fd6ca2ff0c1db28f664fc470bc",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "бы́стрый → бы́стро",
+          "answer": "a documented adjective-to-manner-adverb pair",
+          "distractors": [
+            "two forms of the same noun",
+            "an unrestricted rule for every adjective"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "an adjective describing the speaker"
+          ]
+        },
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        },
+        {
+          "cue": "си́ний",
+          "answer": "this unit supplies no documented manner-adverb counterpart",
+          "distractors": [
+            "the unit establishes a general conversion rule"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nMany manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nбыстрый\nadmitted fast manner-adverb relationship\nОна говорит быстро.\nmanner adverb modifying the action\nбы́стрый → бы́стро\na documented adjective-to-manner-adverb pair\nWhich English description matches the documented pair?\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed. Check each lexical pair rather than applying an unrestricted generator.\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair with different grammatical functions.\ntwo forms of the same noun\nan unrestricted rule for every adjective\ntwo forms of the same noun would remain noun forms; this pair links an adjective with an adverb.\nan unrestricted rule for every adjective is not established by one documented lexical pair.\nWhich English description identifies the function of быстро?\nIn Она говорит быстро., manner adverb modifying the action describes быстро: it tells us how she speaks and does not agree with the speaker.\nIn Она говорит быстро., manner adverb modifying the action describes how she speaks.\nan adjective describing the speaker\nan adjective describing the speaker would describe her qualities; быстро describes how the action is performed.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nси́ний\nthis unit supplies no documented manner-adverb counterpart\nWhich English description respects the scope of this unit's lexical evidence?\nFor си́ний, this unit supplies no documented manner-adverb counterpart. This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.\nFor си́ний, this unit supplies no documented manner-adverb counterpart, so a learner must consult a reliable lexical source rather than invent a form.\nthe unit establishes a general conversion rule\nthe unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs."
+  },
+  {
+    "itemId": "prov-ca-repair-7-11045",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-u7-bounded-manner-adverb",
+    "shippedText": "Lexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "d3378d4a5a98ce0fc8186bdb789285f0b702988a20fb583c0b412cf7799b38b2",
+    "contentHash": "a9b3314f78c0b8281e3824eb0b76b59c84227211212734e89fd91689cbc106ed",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "бы́стрый → бы́стро",
+          "answer": "a documented adjective-to-manner-adverb pair",
+          "distractors": [
+            "two forms of the same noun",
+            "an unrestricted rule for every adjective"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "an adjective describing the speaker"
+          ]
+        },
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        },
+        {
+          "cue": "си́ний",
+          "answer": "this unit supplies no documented manner-adverb counterpart",
+          "distractors": [
+            "the unit establishes a general conversion rule"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nMany manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nбыстрый\nadmitted fast manner-adverb relationship\nОна говорит быстро.\nmanner adverb modifying the action\nбы́стрый → бы́стро\na documented adjective-to-manner-adverb pair\nWhich English description matches the documented pair?\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed. Check each lexical pair rather than applying an unrestricted generator.\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair with different grammatical functions.\ntwo forms of the same noun\nan unrestricted rule for every adjective\ntwo forms of the same noun would remain noun forms; this pair links an adjective with an adverb.\nan unrestricted rule for every adjective is not established by one documented lexical pair.\nWhich English description identifies the function of быстро?\nIn Она говорит быстро., manner adverb modifying the action describes быстро: it tells us how she speaks and does not agree with the speaker.\nIn Она говорит быстро., manner adverb modifying the action describes how she speaks.\nan adjective describing the speaker\nan adjective describing the speaker would describe her qualities; быстро describes how the action is performed.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nси́ний\nthis unit supplies no documented manner-adverb counterpart\nWhich English description respects the scope of this unit's lexical evidence?\nFor си́ний, this unit supplies no documented manner-adverb counterpart. This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.\nFor си́ний, this unit supplies no documented manner-adverb counterpart, so a learner must consult a reliable lexical source rather than invent a form.\nthe unit establishes a general conversion rule\nthe unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs."
+  },
+  {
+    "itemId": "prov-ca-repair-7-11046",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-u7-bounded-manner-adverb",
+    "shippedText": "быстрый",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "d3378d4a5a98ce0fc8186bdb789285f0b702988a20fb583c0b412cf7799b38b2",
+    "contentHash": "0e277d3603c4dea6439a188a73a837282b535e69249497191dd6114c2cceeedd",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "бы́стрый → бы́стро",
+          "answer": "a documented adjective-to-manner-adverb pair",
+          "distractors": [
+            "two forms of the same noun",
+            "an unrestricted rule for every adjective"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "an adjective describing the speaker"
+          ]
+        },
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        },
+        {
+          "cue": "си́ний",
+          "answer": "this unit supplies no documented manner-adverb counterpart",
+          "distractors": [
+            "the unit establishes a general conversion rule"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nMany manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nбыстрый\nadmitted fast manner-adverb relationship\nОна говорит быстро.\nmanner adverb modifying the action\nбы́стрый → бы́стро\na documented adjective-to-manner-adverb pair\nWhich English description matches the documented pair?\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed. Check each lexical pair rather than applying an unrestricted generator.\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair with different grammatical functions.\ntwo forms of the same noun\nan unrestricted rule for every adjective\ntwo forms of the same noun would remain noun forms; this pair links an adjective with an adverb.\nan unrestricted rule for every adjective is not established by one documented lexical pair.\nWhich English description identifies the function of быстро?\nIn Она говорит быстро., manner adverb modifying the action describes быстро: it tells us how she speaks and does not agree with the speaker.\nIn Она говорит быстро., manner adverb modifying the action describes how she speaks.\nan adjective describing the speaker\nan adjective describing the speaker would describe her qualities; быстро describes how the action is performed.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nси́ний\nthis unit supplies no documented manner-adverb counterpart\nWhich English description respects the scope of this unit's lexical evidence?\nFor си́ний, this unit supplies no documented manner-adverb counterpart. This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.\nFor си́ний, this unit supplies no documented manner-adverb counterpart, so a learner must consult a reliable lexical source rather than invent a form.\nthe unit establishes a general conversion rule\nthe unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs."
+  },
+  {
+    "itemId": "prov-ca-repair-7-11047",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-u7-bounded-manner-adverb",
+    "shippedText": "admitted fast manner-adverb relationship",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "d3378d4a5a98ce0fc8186bdb789285f0b702988a20fb583c0b412cf7799b38b2",
+    "contentHash": "e4c75b5d232352ebd25e976988f316a011cda4fdb0cc0176f75e2b7b7be99861",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "бы́стрый → бы́стро",
+          "answer": "a documented adjective-to-manner-adverb pair",
+          "distractors": [
+            "two forms of the same noun",
+            "an unrestricted rule for every adjective"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "an adjective describing the speaker"
+          ]
+        },
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        },
+        {
+          "cue": "си́ний",
+          "answer": "this unit supplies no documented manner-adverb counterpart",
+          "distractors": [
+            "the unit establishes a general conversion rule"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nMany manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nбыстрый\nadmitted fast manner-adverb relationship\nОна говорит быстро.\nmanner adverb modifying the action\nбы́стрый → бы́стро\na documented adjective-to-manner-adverb pair\nWhich English description matches the documented pair?\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed. Check each lexical pair rather than applying an unrestricted generator.\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair with different grammatical functions.\ntwo forms of the same noun\nan unrestricted rule for every adjective\ntwo forms of the same noun would remain noun forms; this pair links an adjective with an adverb.\nan unrestricted rule for every adjective is not established by one documented lexical pair.\nWhich English description identifies the function of быстро?\nIn Она говорит быстро., manner adverb modifying the action describes быстро: it tells us how she speaks and does not agree with the speaker.\nIn Она говорит быстро., manner adverb modifying the action describes how she speaks.\nan adjective describing the speaker\nan adjective describing the speaker would describe her qualities; быстро describes how the action is performed.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nси́ний\nthis unit supplies no documented manner-adverb counterpart\nWhich English description respects the scope of this unit's lexical evidence?\nFor си́ний, this unit supplies no documented manner-adverb counterpart. This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.\nFor си́ний, this unit supplies no documented manner-adverb counterpart, so a learner must consult a reliable lexical source rather than invent a form.\nthe unit establishes a general conversion rule\nthe unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs."
+  },
+  {
+    "itemId": "prov-ca-repair-7-11048",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-u7-bounded-manner-adverb",
+    "shippedText": "Она говорит быстро.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "d3378d4a5a98ce0fc8186bdb789285f0b702988a20fb583c0b412cf7799b38b2",
+    "contentHash": "5aa0912f9dc4bb4d52853487ccfde02c49e1e08a387178b8f0d3bf72cc8107a1",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "бы́стрый → бы́стро",
+          "answer": "a documented adjective-to-manner-adverb pair",
+          "distractors": [
+            "two forms of the same noun",
+            "an unrestricted rule for every adjective"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "an adjective describing the speaker"
+          ]
+        },
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        },
+        {
+          "cue": "си́ний",
+          "answer": "this unit supplies no documented manner-adverb counterpart",
+          "distractors": [
+            "the unit establishes a general conversion rule"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nMany manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nбыстрый\nadmitted fast manner-adverb relationship\nОна говорит быстро.\nmanner adverb modifying the action\nбы́стрый → бы́стро\na documented adjective-to-manner-adverb pair\nWhich English description matches the documented pair?\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed. Check each lexical pair rather than applying an unrestricted generator.\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair with different grammatical functions.\ntwo forms of the same noun\nan unrestricted rule for every adjective\ntwo forms of the same noun would remain noun forms; this pair links an adjective with an adverb.\nan unrestricted rule for every adjective is not established by one documented lexical pair.\nWhich English description identifies the function of быстро?\nIn Она говорит быстро., manner adverb modifying the action describes быстро: it tells us how she speaks and does not agree with the speaker.\nIn Она говорит быстро., manner adverb modifying the action describes how she speaks.\nan adjective describing the speaker\nan adjective describing the speaker would describe her qualities; быстро describes how the action is performed.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nси́ний\nthis unit supplies no documented manner-adverb counterpart\nWhich English description respects the scope of this unit's lexical evidence?\nFor си́ний, this unit supplies no documented manner-adverb counterpart. This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.\nFor си́ний, this unit supplies no documented manner-adverb counterpart, so a learner must consult a reliable lexical source rather than invent a form.\nthe unit establishes a general conversion rule\nthe unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs."
+  },
+  {
+    "itemId": "prov-ca-repair-7-11049",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-u7-bounded-manner-adverb",
+    "shippedText": "manner adverb modifying the action",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "d3378d4a5a98ce0fc8186bdb789285f0b702988a20fb583c0b412cf7799b38b2",
+    "contentHash": "102f6ed89a439a5de02c1755b1e658f968f9ff610bd09d10a8b1ad0781bf3b40",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "бы́стрый → бы́стро",
+          "answer": "a documented adjective-to-manner-adverb pair",
+          "distractors": [
+            "two forms of the same noun",
+            "an unrestricted rule for every adjective"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "an adjective describing the speaker"
+          ]
+        },
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        },
+        {
+          "cue": "си́ний",
+          "answer": "this unit supplies no documented manner-adverb counterpart",
+          "distractors": [
+            "the unit establishes a general conversion rule"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nMany manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nбыстрый\nadmitted fast manner-adverb relationship\nОна говорит быстро.\nmanner adverb modifying the action\nбы́стрый → бы́стро\na documented adjective-to-manner-adverb pair\nWhich English description matches the documented pair?\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed. Check each lexical pair rather than applying an unrestricted generator.\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair with different grammatical functions.\ntwo forms of the same noun\nan unrestricted rule for every adjective\ntwo forms of the same noun would remain noun forms; this pair links an adjective with an adverb.\nan unrestricted rule for every adjective is not established by one documented lexical pair.\nWhich English description identifies the function of быстро?\nIn Она говорит быстро., manner adverb modifying the action describes быстро: it tells us how she speaks and does not agree with the speaker.\nIn Она говорит быстро., manner adverb modifying the action describes how she speaks.\nan adjective describing the speaker\nan adjective describing the speaker would describe her qualities; быстро describes how the action is performed.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nси́ний\nthis unit supplies no documented manner-adverb counterpart\nWhich English description respects the scope of this unit's lexical evidence?\nFor си́ний, this unit supplies no documented manner-adverb counterpart. This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.\nFor си́ний, this unit supplies no documented manner-adverb counterpart, so a learner must consult a reliable lexical source rather than invent a form.\nthe unit establishes a general conversion rule\nthe unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs."
+  },
+  {
+    "itemId": "prov-ca-repair-7-11050",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-u7-bounded-manner-adverb",
+    "shippedText": "бы́стрый → бы́стро",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "d3378d4a5a98ce0fc8186bdb789285f0b702988a20fb583c0b412cf7799b38b2",
+    "contentHash": "c6d0f812ea5717b8082b09c3b31194ea7dc850f9b58e4af2bd0d4f8f6c462ebc",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "бы́стрый → бы́стро",
+          "answer": "a documented adjective-to-manner-adverb pair",
+          "distractors": [
+            "two forms of the same noun",
+            "an unrestricted rule for every adjective"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "an adjective describing the speaker"
+          ]
+        },
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        },
+        {
+          "cue": "си́ний",
+          "answer": "this unit supplies no documented manner-adverb counterpart",
+          "distractors": [
+            "the unit establishes a general conversion rule"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nMany manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nбыстрый\nadmitted fast manner-adverb relationship\nОна говорит быстро.\nmanner adverb modifying the action\nбы́стрый → бы́стро\na documented adjective-to-manner-adverb pair\nWhich English description matches the documented pair?\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed. Check each lexical pair rather than applying an unrestricted generator.\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair with different grammatical functions.\ntwo forms of the same noun\nan unrestricted rule for every adjective\ntwo forms of the same noun would remain noun forms; this pair links an adjective with an adverb.\nan unrestricted rule for every adjective is not established by one documented lexical pair.\nWhich English description identifies the function of быстро?\nIn Она говорит быстро., manner adverb modifying the action describes быстро: it tells us how she speaks and does not agree with the speaker.\nIn Она говорит быстро., manner adverb modifying the action describes how she speaks.\nan adjective describing the speaker\nan adjective describing the speaker would describe her qualities; быстро describes how the action is performed.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nси́ний\nthis unit supplies no documented manner-adverb counterpart\nWhich English description respects the scope of this unit's lexical evidence?\nFor си́ний, this unit supplies no documented manner-adverb counterpart. This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.\nFor си́ний, this unit supplies no documented manner-adverb counterpart, so a learner must consult a reliable lexical source rather than invent a form.\nthe unit establishes a general conversion rule\nthe unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs."
+  },
+  {
+    "itemId": "prov-ca-repair-7-11051",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-u7-bounded-manner-adverb",
+    "shippedText": "a documented adjective-to-manner-adverb pair",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "d3378d4a5a98ce0fc8186bdb789285f0b702988a20fb583c0b412cf7799b38b2",
+    "contentHash": "6cdf3c48a3d3878066a252d65aba8d887751a4b7ebdb36cd94ed513fdf50ef9d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "бы́стрый → бы́стро",
+          "answer": "a documented adjective-to-manner-adverb pair",
+          "distractors": [
+            "two forms of the same noun",
+            "an unrestricted rule for every adjective"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "an adjective describing the speaker"
+          ]
+        },
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        },
+        {
+          "cue": "си́ний",
+          "answer": "this unit supplies no documented manner-adverb counterpart",
+          "distractors": [
+            "the unit establishes a general conversion rule"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nMany manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nбыстрый\nadmitted fast manner-adverb relationship\nОна говорит быстро.\nmanner adverb modifying the action\nбы́стрый → бы́стро\na documented adjective-to-manner-adverb pair\nWhich English description matches the documented pair?\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed. Check each lexical pair rather than applying an unrestricted generator.\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair with different grammatical functions.\ntwo forms of the same noun\nan unrestricted rule for every adjective\ntwo forms of the same noun would remain noun forms; this pair links an adjective with an adverb.\nan unrestricted rule for every adjective is not established by one documented lexical pair.\nWhich English description identifies the function of быстро?\nIn Она говорит быстро., manner adverb modifying the action describes быстро: it tells us how she speaks and does not agree with the speaker.\nIn Она говорит быстро., manner adverb modifying the action describes how she speaks.\nan adjective describing the speaker\nan adjective describing the speaker would describe her qualities; быстро describes how the action is performed.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nси́ний\nthis unit supplies no documented manner-adverb counterpart\nWhich English description respects the scope of this unit's lexical evidence?\nFor си́ний, this unit supplies no documented manner-adverb counterpart. This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.\nFor си́ний, this unit supplies no documented manner-adverb counterpart, so a learner must consult a reliable lexical source rather than invent a form.\nthe unit establishes a general conversion rule\nthe unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs."
+  },
+  {
+    "itemId": "prov-ca-repair-7-11052",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-u7-bounded-manner-adverb",
+    "shippedText": "Which English description matches the documented pair?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "d3378d4a5a98ce0fc8186bdb789285f0b702988a20fb583c0b412cf7799b38b2",
+    "contentHash": "5df54c946a019543409f810cc70df3a21cb52a888876032c9eae3aa10a41b43f",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "бы́стрый → бы́стро",
+          "answer": "a documented adjective-to-manner-adverb pair",
+          "distractors": [
+            "two forms of the same noun",
+            "an unrestricted rule for every adjective"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "an adjective describing the speaker"
+          ]
+        },
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        },
+        {
+          "cue": "си́ний",
+          "answer": "this unit supplies no documented manner-adverb counterpart",
+          "distractors": [
+            "the unit establishes a general conversion rule"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nMany manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nбыстрый\nadmitted fast manner-adverb relationship\nОна говорит быстро.\nmanner adverb modifying the action\nбы́стрый → бы́стро\na documented adjective-to-manner-adverb pair\nWhich English description matches the documented pair?\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed. Check each lexical pair rather than applying an unrestricted generator.\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair with different grammatical functions.\ntwo forms of the same noun\nan unrestricted rule for every adjective\ntwo forms of the same noun would remain noun forms; this pair links an adjective with an adverb.\nan unrestricted rule for every adjective is not established by one documented lexical pair.\nWhich English description identifies the function of быстро?\nIn Она говорит быстро., manner adverb modifying the action describes быстро: it tells us how she speaks and does not agree with the speaker.\nIn Она говорит быстро., manner adverb modifying the action describes how she speaks.\nan adjective describing the speaker\nan adjective describing the speaker would describe her qualities; быстро describes how the action is performed.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nси́ний\nthis unit supplies no documented manner-adverb counterpart\nWhich English description respects the scope of this unit's lexical evidence?\nFor си́ний, this unit supplies no documented manner-adverb counterpart. This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.\nFor си́ний, this unit supplies no documented manner-adverb counterpart, so a learner must consult a reliable lexical source rather than invent a form.\nthe unit establishes a general conversion rule\nthe unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs."
+  },
+  {
+    "itemId": "prov-ca-repair-7-11053",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-u7-bounded-manner-adverb",
+    "shippedText": "бы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed. Check each lexical pair rather than applying an unrestricted generator.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "d3378d4a5a98ce0fc8186bdb789285f0b702988a20fb583c0b412cf7799b38b2",
+    "contentHash": "9aede01ae78882ee897e2547079610d9996081176207f6f9779a99de9d73ee61",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "бы́стрый → бы́стро",
+          "answer": "a documented adjective-to-manner-adverb pair",
+          "distractors": [
+            "two forms of the same noun",
+            "an unrestricted rule for every adjective"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "an adjective describing the speaker"
+          ]
+        },
+        {
+          "cue": "бы́стрый",
+          "answer": "an adjective describing a noun",
+          "distractors": [
+            "a manner adverb modifying an action",
+            "a verb naming the action"
+          ]
+        },
+        {
+          "cue": "си́ний",
+          "answer": "this unit supplies no documented manner-adverb counterpart",
+          "distractors": [
+            "the unit establishes a general conversion rule"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nMany manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nбыстрый\nadmitted fast manner-adverb relationship\nОна говорит быстро.\nmanner adverb modifying the action\nбы́стрый → бы́стро\na documented adjective-to-manner-adverb pair\nWhich English description matches the documented pair?\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair: the adjective describes a noun, while the adverb describes how an action is performed. Check each lexical pair rather than applying an unrestricted generator.\nбы́стрый → бы́стро is a documented adjective-to-manner-adverb pair with different grammatical functions.\ntwo forms of the same noun\nan unrestricted rule for every adjective\ntwo forms of the same noun would remain noun forms; this pair links an adjective with an adverb.\nan unrestricted rule for every adjective is not established by one documented lexical pair.\nWhich English description identifies the function of быстро?\nIn Она говорит быстро., manner adverb modifying the action describes быстро: it tells us how she speaks and does not agree with the speaker.\nIn Она говорит быстро., manner adverb modifying the action describes how she speaks.\nan adjective describing the speaker\nan adjective describing the speaker would describe her qualities; быстро describes how the action is performed.\nбы́стрый\nan adjective describing a noun\nWhich English description identifies бы́стрый?\nбы́стрый is an adjective describing a noun; the documented manner adverb is бы́стро. They have different grammatical jobs.\nбы́стрый is an adjective describing a noun, rather than a description of how an action is performed.\na manner adverb modifying an action\na verb naming the action\na manner adverb modifying an action is a different grammatical job, exemplified by бы́стро.\na verb naming the action names what happens; бы́стрый instead describes a noun.\nси́ний\nthis unit supplies no documented manner-adverb counterpart\nWhich English description respects the scope of this unit's lexical evidence?\nFor си́ний, this unit supplies no documented manner-adverb counterpart. This is a statement about the supplied evidence, not a claim that no related word can exist in Russian.\nFor си́ний, this unit supplies no documented manner-adverb counterpart, so a learner must consult a reliable lexical source rather than invent a form.\nthe unit establishes a general conversion rule\nthe unit establishes a general conversion rule is false; its evidence is limited to specific documented pairs."
+  }
+]

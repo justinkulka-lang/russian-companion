@@ -1,0 +1,21 @@
+{
+  "template": true,
+  "auditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "continuationAuditPerformed": false,
+  "actualModel": "UNVERIFIED",
+  "completedWork": [],
+  "remainingGaps": [
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08",
+    "G09",
+    "G10"
+  ],
+  "commands": [],
+  "nextAction": "Read current continuation prompt and verify supplied inputs"
+}

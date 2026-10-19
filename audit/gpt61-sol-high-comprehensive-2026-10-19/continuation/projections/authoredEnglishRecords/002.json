@@ -1,0 +1,3020 @@
+[
+  {
+    "id": "en-u16-005",
+    "unitNumber": 16,
+    "text": "Admitted instruction",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-006",
+    "unitNumber": 16,
+    "text": "Does this row fail the pencil instrumental?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-007",
+    "unitNumber": 16,
+    "text": "Does this answer show the pencil instrumental?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-008",
+    "unitNumber": 16,
+    "text": "Which admitted line is the pencil instrumental?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-009",
+    "unitNumber": 16,
+    "text": "Does this row fail the instrumental plural?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-010",
+    "unitNumber": 16,
+    "text": "Does this answer show the instrumental plural?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-011",
+    "unitNumber": 16,
+    "text": "Which admitted row is the instrumental plural?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-012",
+    "unitNumber": 16,
+    "text": "Does this row fail the masculine instrumental?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-013",
+    "unitNumber": 16,
+    "text": "Does this answer show the masculine instrumental?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-014",
+    "unitNumber": 16,
+    "text": "Which admitted row is the masculine instrumental?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-015",
+    "unitNumber": 16,
+    "text": "Does this row fail the plural instrumental?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-016",
+    "unitNumber": 16,
+    "text": "Does this answer show the plural instrumental?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-017",
+    "unitNumber": 16,
+    "text": "Which admitted row is the plural instrumental?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-018",
+    "unitNumber": 16,
+    "text": "Does this row fail the accompaniment line?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-019",
+    "unitNumber": 16,
+    "text": "Does this answer show the accompaniment line?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-020",
+    "unitNumber": 16,
+    "text": "Which admitted line is the accompaniment line?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-021",
+    "unitNumber": 16,
+    "text": "Does this row fail the means instrumental?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-022",
+    "unitNumber": 16,
+    "text": "Does this answer show the means instrumental?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-023",
+    "unitNumber": 16,
+    "text": "Which admitted line is the means instrumental?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-024",
+    "unitNumber": 16,
+    "text": "Does this row fail the between line?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-025",
+    "unitNumber": 16,
+    "text": "Does this answer show the between line?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-026",
+    "unitNumber": 16,
+    "text": "Which admitted line is the between line?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-027",
+    "unitNumber": 16,
+    "text": "Does this row fail the over label?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-028",
+    "unitNumber": 16,
+    "text": "Does this answer show the over label?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-029",
+    "unitNumber": 16,
+    "text": "Which admitted English label is the over label?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-030",
+    "unitNumber": 16,
+    "text": "Does this row fail the under label?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-031",
+    "unitNumber": 16,
+    "text": "Does this answer show the under label?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-032",
+    "unitNumber": 16,
+    "text": "Which admitted English label is the under label?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-033",
+    "unitNumber": 16,
+    "text": "Does this row fail the before label?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-034",
+    "unitNumber": 16,
+    "text": "Does this answer show the before label?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-035",
+    "unitNumber": 16,
+    "text": "Which admitted English label is the before label?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-036",
+    "unitNumber": 16,
+    "text": "The frozen source pairs the shown form",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-037",
+    "unitNumber": 16,
+    "text": "with the admitted gloss",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-038",
+    "unitNumber": 16,
+    "text": "Which admitted English gloss is written beside the shown form?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-039",
+    "unitNumber": 16,
+    "text": "Admitted instrumental rows",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-040",
+    "unitNumber": 16,
+    "text": "Proposed Unit 16 uses frozen instrumental rows and the admitted complement span. Qualified review is pending.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-041",
+    "unitNumber": 16,
+    "text": "Open Lesson 16 in the copy you own. The app records do not replace that lesson.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-042",
+    "unitNumber": 16,
+    "text": "Guided practice",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-043",
+    "unitNumber": 16,
+    "text": "Choose the admitted record. The feedback states the frozen field.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-044",
+    "unitNumber": 16,
+    "text": "Remediation",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-045",
+    "unitNumber": 16,
+    "text": "Independent checks",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-046",
+    "unitNumber": 16,
+    "text": "These checks use only admitted records. A miss returns to the explanation.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-047",
+    "unitNumber": 16,
+    "text": "Work Lesson 16 in your copy",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-048",
+    "unitNumber": 16,
+    "text": "Do Lesson 16 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-049",
+    "unitNumber": 16,
+    "text": "Open Lesson 16 in your copy and complete its lesson work.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-050",
+    "unitNumber": 16,
+    "text": "Record Lesson 16 book work",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-051",
+    "unitNumber": 16,
+    "text": "When you have done Lesson 16 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u16-052",
+    "unitNumber": 16,
+    "text": "Self-attest only after the Lesson 16 work in your copy.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-617649b89b68",
+    "unitNumber": 17,
+    "text": "Admitted lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-4a565ef7eee9",
+    "unitNumber": 17,
+    "text": "Does this row fail the first ordinal?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-b253eceff95a",
+    "unitNumber": 17,
+    "text": "Does this answer show the first ordinal?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-2fc0263e802a",
+    "unitNumber": 17,
+    "text": "Which admitted line is the first ordinal?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-c2dcb6b4308a",
+    "unitNumber": 17,
+    "text": "Admitted instruction",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-4a677873d253",
+    "unitNumber": 17,
+    "text": "Does this row fail the second ordinal?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-38478b9c58cf",
+    "unitNumber": 17,
+    "text": "Does this answer show the second ordinal?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-daea861c2e57",
+    "unitNumber": 17,
+    "text": "Which admitted line is the second ordinal?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-3d4545c9821e",
+    "unitNumber": 17,
+    "text": "Does this row fail the third ordinal?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-f96c7b5fc626",
+    "unitNumber": 17,
+    "text": "Does this answer show the third ordinal?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-56c027a21a9d",
+    "unitNumber": 17,
+    "text": "Which admitted line is the third ordinal?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-5cfee3d3134f",
+    "unitNumber": 17,
+    "text": "Does this row fail the one-hour row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-7b6d504d7e63",
+    "unitNumber": 17,
+    "text": "Does this answer show the one-hour row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-feb442607c79",
+    "unitNumber": 17,
+    "text": "Which admitted line is the one-hour row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-765305856617",
+    "unitNumber": 17,
+    "text": "Does this row fail the two-hour row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-3e0f91e58d17",
+    "unitNumber": 17,
+    "text": "Does this answer show the two-hour row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-e99f8a478520",
+    "unitNumber": 17,
+    "text": "Which admitted line is the two-hour row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-f7af114e6a9d",
+    "unitNumber": 17,
+    "text": "Does this row fail the five-hour row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-c70a0c59e89c",
+    "unitNumber": 17,
+    "text": "Does this answer show the five-hour row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-6ec2da2b5ac2",
+    "unitNumber": 17,
+    "text": "Which admitted line is the five-hour row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-2bb3b02abc19",
+    "unitNumber": 17,
+    "text": "Does this row fail the one-year row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-02404730d4ba",
+    "unitNumber": 17,
+    "text": "Does this answer show the one-year row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-5aec97c275c9",
+    "unitNumber": 17,
+    "text": "Which admitted line is the one-year row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-eca82d7d14b0",
+    "unitNumber": 17,
+    "text": "Does this row fail the two-year row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-64cd6c31fa83",
+    "unitNumber": 17,
+    "text": "Does this answer show the two-year row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-57e46635f2bd",
+    "unitNumber": 17,
+    "text": "Which admitted line is the two-year row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-ce17b55d3ca7",
+    "unitNumber": 17,
+    "text": "Does this row fail the five-year row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-8cb586ba7d43",
+    "unitNumber": 17,
+    "text": "Does this answer show the five-year row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-a2d0c3e3c8fb",
+    "unitNumber": 17,
+    "text": "Which admitted line is the five-year row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-fe44eddb2d81",
+    "unitNumber": 17,
+    "text": "Does this row fail the one-minute row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-a06590cf9b03",
+    "unitNumber": 17,
+    "text": "Does this answer show the one-minute row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-8e33f215cdfe",
+    "unitNumber": 17,
+    "text": "Which admitted line is the one-minute row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-239fbee06b63",
+    "unitNumber": 17,
+    "text": "Does this row fail the two-minute row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-3435fbdfccf5",
+    "unitNumber": 17,
+    "text": "Does this answer show the two-minute row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-cae98cce8087",
+    "unitNumber": 17,
+    "text": "Which admitted line is the two-minute row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-35c1c837c5cd",
+    "unitNumber": 17,
+    "text": "Does this row fail the five-minute row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-e29f9a8d4bbc",
+    "unitNumber": 17,
+    "text": "Does this answer show the five-minute row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-a0443536ec80",
+    "unitNumber": 17,
+    "text": "Which admitted line is the five-minute row?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-2df47f739e9c",
+    "unitNumber": 17,
+    "text": "The frozen source pairs the shown form",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-5d461569f10d",
+    "unitNumber": 17,
+    "text": "with the admitted gloss",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-065acdda0170",
+    "unitNumber": 17,
+    "text": "The heading",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-eef34ccc9931",
+    "unitNumber": 17,
+    "text": "labels the section. It is not the gloss of the shown form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-7186068f3b65",
+    "unitNumber": 17,
+    "text": "Which admitted English gloss is written beside the shown form?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-2698594caaf9",
+    "unitNumber": 17,
+    "text": "The shown rule is",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-161776f0e76f",
+    "unitNumber": 17,
+    "text": "That states the minutes into the hour in progress.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-7ed38a30d474",
+    "unitNumber": 17,
+    "text": "That says how many minutes remain after the half hour.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-ed5d66b360a7",
+    "unitNumber": 17,
+    "text": "That reads the numbers off the dial.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-542527c51916",
+    "unitNumber": 17,
+    "text": "Which admitted expression states the minutes into the hour in progress?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-fcadd0911fce",
+    "unitNumber": 17,
+    "text": "Which admitted expression states the minutes that remain after the half hour?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-f58f301768db",
+    "unitNumber": 17,
+    "text": "Which admitted expression reads the numbers off the dial?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-d05581a9fe2f",
+    "unitNumber": 17,
+    "text": "Admitted number and quantity rows",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-c18b7277adb2",
+    "unitNumber": 17,
+    "text": "Proposed Unit 17 uses frozen number rows plus admitted age, weekday, month, clock-question, calendar-date, quarter-hour, and the admitted ReadyRussian clock system. Qualified review is pending.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-d979ddd5df23",
+    "unitNumber": 17,
+    "text": "Open Lesson 17 in the copy you own. The app records do not replace that lesson.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-3e781f275910",
+    "unitNumber": 17,
+    "text": "Guided practice",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-00b9e89c0f6c",
+    "unitNumber": 17,
+    "text": "Choose the admitted record. The feedback states the frozen field.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-2b7d28840646",
+    "unitNumber": 17,
+    "text": "Remediation",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-28776b79f5c4",
+    "unitNumber": 17,
+    "text": "Independent checks",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-dda63ae4acfb",
+    "unitNumber": 17,
+    "text": "These checks use only admitted records. A miss returns to the explanation.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-aaa9986a64dc",
+    "unitNumber": 17,
+    "text": "Work Lesson 17 in your copy",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-26f3fd1f76d9",
+    "unitNumber": 17,
+    "text": "Do Lesson 17 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-2114923f3bee",
+    "unitNumber": 17,
+    "text": "Open Lesson 17 in your copy and complete its lesson work.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-003ed81da751",
+    "unitNumber": 17,
+    "text": "Record Lesson 17 book work",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-3e8fc175c5e9",
+    "unitNumber": 17,
+    "text": "When you have done Lesson 17 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u17-u17-scaffold-scaffold-6bef09347414",
+    "unitNumber": 17,
+    "text": "Self-attest only after the Lesson 17 work in your copy.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-112",
+    "unitNumber": 18,
+    "text": "The frozen source pairs the shown form",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-113",
+    "unitNumber": 18,
+    "text": "with the admitted gloss",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-114",
+    "unitNumber": 18,
+    "text": "Admitted lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-115",
+    "unitNumber": 18,
+    "text": "Which admitted English gloss is written beside the shown form?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-116",
+    "unitNumber": 18,
+    "text": "Admitted instruction",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-117",
+    "unitNumber": 18,
+    "text": "Admitted comparison and relative lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-118",
+    "unitNumber": 18,
+    "text": "Proposed Unit 18 uses admitted comparison lines and admitted relative lines. Qualified review is pending.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-119",
+    "unitNumber": 18,
+    "text": "Open Lesson 18 in the copy you own. The app records do not replace that lesson.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-120",
+    "unitNumber": 18,
+    "text": "Guided practice",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-121",
+    "unitNumber": 18,
+    "text": "Choose the admitted record. The feedback states the frozen field.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-122",
+    "unitNumber": 18,
+    "text": "Remediation",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-123",
+    "unitNumber": 18,
+    "text": "Independent checks",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-124",
+    "unitNumber": 18,
+    "text": "These checks use only admitted records. A miss returns to the explanation.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-125",
+    "unitNumber": 18,
+    "text": "Work Lesson 18 in your copy",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-126",
+    "unitNumber": 18,
+    "text": "Do Lesson 18 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-127",
+    "unitNumber": 18,
+    "text": "Open Lesson 18 in your copy and complete its lesson work.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-128",
+    "unitNumber": 18,
+    "text": "Record Lesson 18 book work",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-129",
+    "unitNumber": 18,
+    "text": "When you have done Lesson 18 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u18-130",
+    "unitNumber": 18,
+    "text": "Self-attest only after the Lesson 18 work in your copy.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-131",
+    "unitNumber": 19,
+    "text": "Admitted lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-132",
+    "unitNumber": 19,
+    "text": "Does this row fail the dissuade meaning?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-133",
+    "unitNumber": 19,
+    "text": "Does this answer show the dissuade meaning?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-134",
+    "unitNumber": 19,
+    "text": "Which admitted English label is the dissuade meaning?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-135",
+    "unitNumber": 19,
+    "text": "Admitted instruction",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-136",
+    "unitNumber": 19,
+    "text": "Does this row fail the agree meaning?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-137",
+    "unitNumber": 19,
+    "text": "Does this answer show the agree meaning?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-138",
+    "unitNumber": 19,
+    "text": "Which admitted English label is the agree meaning?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-139",
+    "unitNumber": 19,
+    "text": "Does this row fail the dissuade perfective?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-140",
+    "unitNumber": 19,
+    "text": "Does this answer show the dissuade perfective?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-141",
+    "unitNumber": 19,
+    "text": "Which admitted line is the dissuade perfective?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-142",
+    "unitNumber": 19,
+    "text": "The frozen source pairs the shown form",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-143",
+    "unitNumber": 19,
+    "text": "with the admitted gloss",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-144",
+    "unitNumber": 19,
+    "text": "Which admitted English gloss is written beside the shown form?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-182",
+    "unitNumber": 19,
+    "text": "Which displayed example expresses likelihood?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-145",
+    "unitNumber": 19,
+    "text": "Admitted prefix cautions",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-181",
+    "unitNumber": 19,
+    "text": "Proposed Unit 19 uses frozen prefix cautions plus admitted conditional, obligation, and likelihood spans. Qualified review is pending.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-147",
+    "unitNumber": 19,
+    "text": "Open Lesson 19 in the copy you own. The app records do not replace that lesson.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-148",
+    "unitNumber": 19,
+    "text": "Guided practice",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-149",
+    "unitNumber": 19,
+    "text": "Choose the admitted record. The feedback states the frozen field.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-150",
+    "unitNumber": 19,
+    "text": "Remediation",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-151",
+    "unitNumber": 19,
+    "text": "Independent checks",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-152",
+    "unitNumber": 19,
+    "text": "These checks use only admitted records. A miss returns to the explanation.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-153",
+    "unitNumber": 19,
+    "text": "Work Lesson 19 in your copy",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-154",
+    "unitNumber": 19,
+    "text": "Do Lesson 19 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-155",
+    "unitNumber": 19,
+    "text": "Open Lesson 19 in your copy and complete its lesson work.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-156",
+    "unitNumber": 19,
+    "text": "Record Lesson 19 book work",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-157",
+    "unitNumber": 19,
+    "text": "When you have done Lesson 19 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u19-158",
+    "unitNumber": 19,
+    "text": "Self-attest only after the Lesson 19 work in your copy.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-161",
+    "unitNumber": 20,
+    "text": "The frozen source pairs the shown form",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-162",
+    "unitNumber": 20,
+    "text": "with the admitted gloss",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-180",
+    "unitNumber": 20,
+    "text": "The table header",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-181",
+    "unitNumber": 20,
+    "text": "names the other motion column.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-182",
+    "unitNumber": 20,
+    "text": "The source quotes",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-183",
+    "unitNumber": 20,
+    "text": "as an English restatement.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-163",
+    "unitNumber": 20,
+    "text": "Admitted lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-164",
+    "unitNumber": 20,
+    "text": "Which admitted English gloss is written beside the shown form?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-165",
+    "unitNumber": 20,
+    "text": "Admitted instruction",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-166",
+    "unitNumber": 20,
+    "text": "Admitted motion lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-167",
+    "unitNumber": 20,
+    "text": "Proposed Unit 20 uses admitted motion lines for direction, foot and transport, carrying and leading, setting out, and selected prefixed paths. Qualified review is pending.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-168",
+    "unitNumber": 20,
+    "text": "Open Lesson 20 in the copy you own. The app records do not replace that lesson.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-169",
+    "unitNumber": 20,
+    "text": "Guided practice",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-170",
+    "unitNumber": 20,
+    "text": "Choose the admitted record. The feedback states the frozen field.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-171",
+    "unitNumber": 20,
+    "text": "Remediation",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-172",
+    "unitNumber": 20,
+    "text": "Independent checks",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-173",
+    "unitNumber": 20,
+    "text": "These checks use only admitted records. A miss returns to the explanation.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-174",
+    "unitNumber": 20,
+    "text": "Work Lesson 20 in your copy",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-175",
+    "unitNumber": 20,
+    "text": "Do Lesson 20 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-176",
+    "unitNumber": 20,
+    "text": "Open Lesson 20 in your copy and complete its lesson work.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-177",
+    "unitNumber": 20,
+    "text": "Record Lesson 20 book work",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-178",
+    "unitNumber": 20,
+    "text": "When you have done Lesson 20 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u20-179",
+    "unitNumber": 20,
+    "text": "Self-attest only after the Lesson 20 work in your copy.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-001",
+    "unitNumber": 21,
+    "text": "Admitted lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-002",
+    "unitNumber": 21,
+    "text": "This line follows the book object, not the movie object in the shown line.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-003",
+    "unitNumber": 21,
+    "text": "This line follows the jeans object, not the movie object in the shown line.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-004",
+    "unitNumber": 21,
+    "text": "The frozen book line does not keep the movie object.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-005",
+    "unitNumber": 21,
+    "text": "The frozen jeans line does not keep the movie object.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-006",
+    "unitNumber": 21,
+    "text": "The frozen note says the form follows the quantity of the object in possession. This line keeps the movie object.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-007",
+    "unitNumber": 21,
+    "text": "Which admitted line keeps the same movie object for the other speaker?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-008",
+    "unitNumber": 21,
+    "text": "Admitted instruction",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-009",
+    "unitNumber": 21,
+    "text": "This line follows the movie object, not the jeans object in the shown line.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-010",
+    "unitNumber": 21,
+    "text": "This line follows the book object, not the jeans object in the shown line.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-011",
+    "unitNumber": 21,
+    "text": "The frozen movie line does not keep the jeans object.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-012",
+    "unitNumber": 21,
+    "text": "The frozen book line does not keep the jeans object.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-013",
+    "unitNumber": 21,
+    "text": "The frozen note says the form follows the quantity of the object in possession. This line keeps the jeans object.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-014",
+    "unitNumber": 21,
+    "text": "Which admitted line keeps the same jeans object for the other speaker?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-015",
+    "unitNumber": 21,
+    "text": "This line follows the movie object, not the book object in the shown line.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-016",
+    "unitNumber": 21,
+    "text": "This line follows the jeans object, not the book object in the shown line.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-017",
+    "unitNumber": 21,
+    "text": "The frozen movie line does not keep the book object.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-018",
+    "unitNumber": 21,
+    "text": "The frozen jeans line does not keep the book object.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-019",
+    "unitNumber": 21,
+    "text": "The frozen note says the form follows the quantity of the object in possession. This line keeps the book object.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-020",
+    "unitNumber": 21,
+    "text": "Which admitted line keeps the same book object for the other speaker?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-021",
+    "unitNumber": 21,
+    "text": "The frozen source pairs the shown form",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-022",
+    "unitNumber": 21,
+    "text": "with the admitted gloss",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-023",
+    "unitNumber": 21,
+    "text": "Which admitted English gloss is written after the equals sign on the shown line?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-024",
+    "unitNumber": 21,
+    "text": "Choose the English meaning of the shown sentence.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-025",
+    "unitNumber": 21,
+    "text": "Which admitted English gloss is written for the shown conjunction?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-026",
+    "unitNumber": 21,
+    "text": "Choose the English meaning of the shown word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-027",
+    "unitNumber": 21,
+    "text": "Admitted object and purpose lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-028",
+    "unitNumber": 21,
+    "text": "Proposed Unit 21 uses frozen object-possession lines, the frozen reflexive contrast, and the frozen purpose gloss. Qualified review is pending.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-029",
+    "unitNumber": 21,
+    "text": "Open Lesson 21 in the copy you own. The app records do not replace that lesson.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-030",
+    "unitNumber": 21,
+    "text": "Guided practice",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-031",
+    "unitNumber": 21,
+    "text": "Choose the admitted record. The feedback states the frozen field.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-032",
+    "unitNumber": 21,
+    "text": "Remediation",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-033",
+    "unitNumber": 21,
+    "text": "Independent checks",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-034",
+    "unitNumber": 21,
+    "text": "These checks use only admitted records. A miss returns to the explanation.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-035",
+    "unitNumber": 21,
+    "text": "Work Lesson 21 in your copy",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-036",
+    "unitNumber": 21,
+    "text": "Do Lesson 21 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-037",
+    "unitNumber": 21,
+    "text": "Open Lesson 21 in your copy and complete its lesson work.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-038",
+    "unitNumber": 21,
+    "text": "Record Lesson 21 book work",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-039",
+    "unitNumber": 21,
+    "text": "When you have done Lesson 21 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u21-040",
+    "unitNumber": 21,
+    "text": "Self-attest only after the Lesson 21 work in your copy.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-041",
+    "unitNumber": 22,
+    "text": "Admitted lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-042",
+    "unitNumber": 22,
+    "text": "The frozen examples place two girls with two, not with one.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-043",
+    "unitNumber": 22,
+    "text": "The frozen examples place five girls with five, not with one.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-044",
+    "unitNumber": 22,
+    "text": "Two girls follows two, not a form of one.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-045",
+    "unitNumber": 22,
+    "text": "Five girls follows five, not a form of one.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-046",
+    "unitNumber": 22,
+    "text": "The frozen note says a form of one should be used in the proper form. This line is the other example with one.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-047",
+    "unitNumber": 22,
+    "text": "The frozen note says a form of one should be used in the proper form. Which admitted example is the other one with one?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-048",
+    "unitNumber": 22,
+    "text": "Admitted instruction",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-049",
+    "unitNumber": 22,
+    "text": "The frozen examples place one boy with a form of one, not with two, three, or four.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-050",
+    "unitNumber": 22,
+    "text": "The frozen examples place five girls with the five group, not with two, three, or four.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-051",
+    "unitNumber": 22,
+    "text": "One boy follows a form of one, not two, three, or four.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-052",
+    "unitNumber": 22,
+    "text": "Five girls follows the five group, not two, three, or four.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-053",
+    "unitNumber": 22,
+    "text": "The frozen note says two, three, and four require the following item to be presented together. This line is the three example.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-054",
+    "unitNumber": 22,
+    "text": "The frozen note groups two, three, and four together. Which admitted line is another example from that group?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-055",
+    "unitNumber": 22,
+    "text": "The frozen examples place one boy with a form of one, not with the five group.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-056",
+    "unitNumber": 22,
+    "text": "The frozen examples place two girls with two, not with the five group.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-057",
+    "unitNumber": 22,
+    "text": "One boy follows a form of one, not the five group.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-058",
+    "unitNumber": 22,
+    "text": "Two girls follows two, not the five group.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-059",
+    "unitNumber": 22,
+    "text": "The frozen note says these numerals require their attached items in the later group. This line is another example from that group.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-060",
+    "unitNumber": 22,
+    "text": "The frozen note groups five through twenty together. Which admitted line is another example from that group?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-061",
+    "unitNumber": 22,
+    "text": "Thirty-three shot glasses ends in three, so it is not the example that ends in one.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-062",
+    "unitNumber": 22,
+    "text": "Sixty-nine words ends in nine, so it is not the example that ends in one.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-063",
+    "unitNumber": 22,
+    "text": "This example ends in three, not in one.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-064",
+    "unitNumber": 22,
+    "text": "This example ends in nine, not in one.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-065",
+    "unitNumber": 22,
+    "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in one.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-066",
+    "unitNumber": 22,
+    "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in one?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-067",
+    "unitNumber": 22,
+    "text": "Forty-one years ends in one, so it is not the example that ends in nine.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-068",
+    "unitNumber": 22,
+    "text": "Thirty-three shot glasses ends in three, so it is not the example that ends in nine.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-069",
+    "unitNumber": 22,
+    "text": "This example ends in one, not in nine.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-070",
+    "unitNumber": 22,
+    "text": "This example ends in three, not in nine.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-071",
+    "unitNumber": 22,
+    "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in nine.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-072",
+    "unitNumber": 22,
+    "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in nine?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-073",
+    "unitNumber": 22,
+    "text": "Sixty-nine words ends in nine, so it is not the example that ends in three.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-074",
+    "unitNumber": 22,
+    "text": "Forty-one years ends in one, so it is not the example that ends in three.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-075",
+    "unitNumber": 22,
+    "text": "This example ends in nine, not in three.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-076",
+    "unitNumber": 22,
+    "text": "This example ends in one, not in three.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-077",
+    "unitNumber": 22,
+    "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. This example ends in three.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-078",
+    "unitNumber": 22,
+    "text": "The frozen note says numerals larger than twenty follow the above rules using the last digit. Which admitted example ends in three?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-079",
+    "unitNumber": 22,
+    "text": "The frozen source pairs the shown form",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-080",
+    "unitNumber": 22,
+    "text": "with the admitted gloss",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-081",
+    "unitNumber": 22,
+    "text": "Which admitted case name is written on the frozen line with the shown form?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-082",
+    "unitNumber": 22,
+    "text": "Which case is the shown form?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-083",
+    "unitNumber": 22,
+    "text": "Which admitted English gloss is written for the shown form?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-084",
+    "unitNumber": 22,
+    "text": "Choose the English meaning of the shown phrase.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-085",
+    "unitNumber": 22,
+    "text": "Which admitted form is written in the collective numbers column for the shown cardinal?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-086",
+    "unitNumber": 22,
+    "text": "Choose the collective number for the shown cardinal.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-087",
+    "unitNumber": 22,
+    "text": "Admitted numeral forms",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-088",
+    "unitNumber": 22,
+    "text": "Proposed Unit 22 uses frozen item-form lines, the frozen numeral table, the frozen half-form usage note, and the frozen collective column. A numbered list is not taught as an ordinal distinction. Qualified review is pending.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-089",
+    "unitNumber": 22,
+    "text": "Open Lesson 22 in the copy you own. The app records do not replace that lesson.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-090",
+    "unitNumber": 22,
+    "text": "Guided practice",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-091",
+    "unitNumber": 22,
+    "text": "Choose the admitted record. The feedback states the frozen field.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-092",
+    "unitNumber": 22,
+    "text": "Remediation",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-093",
+    "unitNumber": 22,
+    "text": "Independent checks",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-094",
+    "unitNumber": 22,
+    "text": "These checks use only admitted records. A miss returns to the explanation.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-095",
+    "unitNumber": 22,
+    "text": "Work Lesson 22 in your copy",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-096",
+    "unitNumber": 22,
+    "text": "Do Lesson 22 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-097",
+    "unitNumber": 22,
+    "text": "Open Lesson 22 in your copy and complete its lesson work.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-098",
+    "unitNumber": 22,
+    "text": "Record Lesson 22 book work",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-099",
+    "unitNumber": 22,
+    "text": "When you have done Lesson 22 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u22-100",
+    "unitNumber": 22,
+    "text": "Self-attest only after the Lesson 22 work in your copy.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-101",
+    "unitNumber": 23,
+    "text": "The frozen source pairs the shown form",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-102",
+    "unitNumber": 23,
+    "text": "with the admitted gloss",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-103",
+    "unitNumber": 23,
+    "text": "Admitted lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-104",
+    "unitNumber": 23,
+    "text": "Which English meaning matches the shown time expression?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-105",
+    "unitNumber": 23,
+    "text": "Admitted instruction",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-106",
+    "unitNumber": 23,
+    "text": "Which English decade meaning matches the shown range?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-107",
+    "unitNumber": 23,
+    "text": "Which English meaning matches this during-an-event expression?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-108",
+    "unitNumber": 23,
+    "text": "Which English meaning matches this duration expression?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-109",
+    "unitNumber": 23,
+    "text": "Admitted time expressions",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-110",
+    "unitNumber": 23,
+    "text": "Proposed Unit 23 uses frozen time-expression spans for decade ranges, beginning and middle expressions, during an event, duration throughout a period, and before, after, in, and ago. Each contrast stays on its own card. Completion over a period stays in the copy you own. Qualified review is pending.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-111",
+    "unitNumber": 23,
+    "text": "Open Lesson 23 in the copy you own. The app records do not replace that lesson.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-112",
+    "unitNumber": 23,
+    "text": "Guided practice",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-113",
+    "unitNumber": 23,
+    "text": "Choose the admitted record. The feedback states the frozen field.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-114",
+    "unitNumber": 23,
+    "text": "Remediation",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-115",
+    "unitNumber": 23,
+    "text": "Independent checks",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-116",
+    "unitNumber": 23,
+    "text": "These checks use only admitted records. A miss returns to the explanation.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-117",
+    "unitNumber": 23,
+    "text": "Work Lesson 23 in your copy",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-118",
+    "unitNumber": 23,
+    "text": "Do Lesson 23 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-119",
+    "unitNumber": 23,
+    "text": "Open Lesson 23 in your copy and complete its lesson work.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-120",
+    "unitNumber": 23,
+    "text": "Record Lesson 23 book work",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-121",
+    "unitNumber": 23,
+    "text": "When you have done Lesson 23 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-122",
+    "unitNumber": 23,
+    "text": "Self-attest only after the Lesson 23 work in your copy.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-123",
+    "unitNumber": 23,
+    "text": "Completion over a period stays in the copy you own",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u23-124",
+    "unitNumber": 23,
+    "text": "Completion over a period stays in the copy you own. A duration span does not state that distinction.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-125",
+    "unitNumber": 24,
+    "text": "Admitted lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-126",
+    "unitNumber": 24,
+    "text": "The frozen example He's not a student is omitted in the present form, so the particle stands on its own.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-127",
+    "unitNumber": 24,
+    "text": "The frozen example Are you speaking? is the question before the reply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-128",
+    "unitNumber": 24,
+    "text": "This example omits the present form instead of adding the particle before the speaking reply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-129",
+    "unitNumber": 24,
+    "text": "This example is the question, not the reply with the particle added.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-130",
+    "unitNumber": 24,
+    "text": "The frozen example No, I'm not speaking adds the particle before the speaking reply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-131",
+    "unitNumber": 24,
+    "text": "The frozen examples move from the speaking reply to the line with the particle before that word. Which admitted line is that result?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-132",
+    "unitNumber": 24,
+    "text": "Admitted instruction",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-133",
+    "unitNumber": 24,
+    "text": "The frozen example No, I'm not speaking adds the particle before the speaking word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-134",
+    "unitNumber": 24,
+    "text": "The frozen example Yes, I'm speaking is the agreeing reply, without the particle.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-135",
+    "unitNumber": 24,
+    "text": "This example adds the particle before the speaking word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-136",
+    "unitNumber": 24,
+    "text": "This example is the agreeing reply, without the particle.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-137",
+    "unitNumber": 24,
+    "text": "The frozen example He's not a student is the one omitted in the present form, with the particle on its own.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-138",
+    "unitNumber": 24,
+    "text": "The frozen note says one example is omitted in the present form and uses the particle on its own. Which admitted line is that example?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-139",
+    "unitNumber": 24,
+    "text": "The frozen example He's not a student uses the particle on its own because the present form is omitted.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-140",
+    "unitNumber": 24,
+    "text": "The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-141",
+    "unitNumber": 24,
+    "text": "This short line uses the particle on its own with the student word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-142",
+    "unitNumber": 24,
+    "text": "This short line places the particle before the speaking word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-143",
+    "unitNumber": 24,
+    "text": "The frozen example Boris isn't coming places the particle before the coming word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-144",
+    "unitNumber": 24,
+    "text": "The frozen example Boris isn't coming places the particle before the coming word. Which admitted line is that example?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-145",
+    "unitNumber": 24,
+    "text": "The frozen note adds this particle before a word. It is not the replacement for the exists word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-146",
+    "unitNumber": 24,
+    "text": "The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-147",
+    "unitNumber": 24,
+    "text": "This particle is placed before a word, not used as the replacement.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-148",
+    "unitNumber": 24,
+    "text": "This token is the agreeing reply, not the replacement.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-149",
+    "unitNumber": 24,
+    "text": "The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-150",
+    "unitNumber": 24,
+    "text": "The frozen note replaces the exists word when negating the have-phrase. Which admitted form is the replacement?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-151",
+    "unitNumber": 24,
+    "text": "The frozen note adds this particle before a word. It is not the form that means exists.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-152",
+    "unitNumber": 24,
+    "text": "The frozen example Yes, I'm speaking uses this as the agreeing reply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-153",
+    "unitNumber": 24,
+    "text": "This particle is not the form that means exists.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-154",
+    "unitNumber": 24,
+    "text": "This token is the agreeing reply, not the exists word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-155",
+    "unitNumber": 24,
+    "text": "The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-156",
+    "unitNumber": 24,
+    "text": "The frozen have-phrase uses one form before it is replaced. Which admitted form is the one that means exists?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-157",
+    "unitNumber": 24,
+    "text": "The frozen note uses this form to mean 'exists' before replacing it.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-158",
+    "unitNumber": 24,
+    "text": "This form means exists, so it is the form being replaced.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-159",
+    "unitNumber": 24,
+    "text": "The frozen note says this replacement has a different meaning from the reply that means no.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-160",
+    "unitNumber": 24,
+    "text": "The frozen note keeps the particle apart from the have-phrase replacement. Which admitted form replaces the exists word?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-161",
+    "unitNumber": 24,
+    "text": "The frozen source pairs the shown form",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-162",
+    "unitNumber": 24,
+    "text": "with the admitted gloss",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-163",
+    "unitNumber": 24,
+    "text": "Which English meaning matches the shown negated sentence?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-164",
+    "unitNumber": 24,
+    "text": "Which negative-pronoun form built from the shown word is not called predicative?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-165",
+    "unitNumber": 24,
+    "text": "Which predicative negative-pronoun form is built from the shown word?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-166",
+    "unitNumber": 24,
+    "text": "Which particle does the stated concord rule require in the predicate?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-167",
+    "unitNumber": 24,
+    "text": "Which predicate particle does negative concord require?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-168",
+    "unitNumber": 24,
+    "text": "Which English meaning matches the shown sentence?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-169",
+    "unitNumber": 24,
+    "text": "Moving the modifier in front of a different word produces that meaning.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-170",
+    "unitNumber": 24,
+    "text": "That placement negates the following word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-171",
+    "unitNumber": 24,
+    "text": "That parenthetical belongs to the other placement.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-172",
+    "unitNumber": 24,
+    "text": "Which admitted English meaning matches the shown sentence?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-173",
+    "unitNumber": 24,
+    "text": "Admitted negation lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-174",
+    "unitNumber": 24,
+    "text": "Proposed Unit 24 uses the frozen genitive and accusative compare, the frozen ni-form and ne-form formation, the frozen concord rule, a bounded word-order contrast, and the admitted ReadyRussian placement contrast. Qualified review is pending.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-175",
+    "unitNumber": 24,
+    "text": "Open Lesson 24 in the copy you own. The app records do not replace that lesson.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-176",
+    "unitNumber": 24,
+    "text": "Guided practice",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-177",
+    "unitNumber": 24,
+    "text": "Choose the admitted record. The feedback states the frozen field.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-178",
+    "unitNumber": 24,
+    "text": "Remediation",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-179",
+    "unitNumber": 24,
+    "text": "Independent checks",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-180",
+    "unitNumber": 24,
+    "text": "These checks use only admitted records. A miss returns to the explanation.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-181",
+    "unitNumber": 24,
+    "text": "Work Lesson 24 in your copy",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-182",
+    "unitNumber": 24,
+    "text": "Do Lesson 24 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-183",
+    "unitNumber": 24,
+    "text": "Open Lesson 24 in your copy and complete its lesson work.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-184",
+    "unitNumber": 24,
+    "text": "Record Lesson 24 book work",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-185",
+    "unitNumber": 24,
+    "text": "When you have done Lesson 24 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u24-186",
+    "unitNumber": 24,
+    "text": "Self-attest only after the Lesson 24 work in your copy.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-187",
+    "unitNumber": 25,
+    "text": "Admitted lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-188",
+    "unitNumber": 25,
+    "text": "The frozen sentence pairs this form with patronymic name, not with the shown words.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-189",
+    "unitNumber": 25,
+    "text": "The frozen sentence pairs this form with family name, not with the shown words.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-190",
+    "unitNumber": 25,
+    "text": "The frozen sentence gives this ending for son of, not as the pair for the shown words.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-191",
+    "unitNumber": 25,
+    "text": "This form is paired with patronymic name.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-192",
+    "unitNumber": 25,
+    "text": "This form is paired with family name.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-193",
+    "unitNumber": 25,
+    "text": "This ending means son of, rather than the paired form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-194",
+    "unitNumber": 25,
+    "text": "The frozen sentence says Russians use three names and pairs the shown words with this form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-195",
+    "unitNumber": 25,
+    "text": "The frozen sentence pairs the shown words with one form. Which admitted form is that pair?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-196",
+    "unitNumber": 25,
+    "text": "Admitted instruction",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-197",
+    "unitNumber": 25,
+    "text": "The frozen sentence pairs this form with first name, not with the shown words.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-198",
+    "unitNumber": 25,
+    "text": "The frozen sentence gives this ending for daughter of, not as the pair for the shown words.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-199",
+    "unitNumber": 25,
+    "text": "This form is paired with first name.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-200",
+    "unitNumber": 25,
+    "text": "This ending means daughter of, rather than the paired form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-201",
+    "unitNumber": 25,
+    "text": "The frozen sentence says Russians use three names and pairs patronymic name with this form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-202",
+    "unitNumber": 25,
+    "text": "The frozen sentence pairs the shown patronymic words with one form. Which admitted form is that pair?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-203",
+    "unitNumber": 25,
+    "text": "The frozen sentence says Russians use three names and pairs family name with this form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-204",
+    "unitNumber": 25,
+    "text": "The frozen sentence pairs the shown family words with one form. Which admitted form is that pair?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-205",
+    "unitNumber": 25,
+    "text": "The frozen list pairs Alyosha for Alexei with a different name.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-206",
+    "unitNumber": 25,
+    "text": "The frozen list pairs Dima for Dmitri with a different name.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-207",
+    "unitNumber": 25,
+    "text": "Alyosha is paired with Alexei, not with the shown name.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-208",
+    "unitNumber": 25,
+    "text": "Dima is paired with Dmitri, not with the shown name.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-209",
+    "unitNumber": 25,
+    "text": "The frozen list includes Sasha for Alexander as the pair for the shown name.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-210",
+    "unitNumber": 25,
+    "text": "The frozen English list pairs one short form with the shown name. Which admitted short form is that pair?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-211",
+    "unitNumber": 25,
+    "text": "The frozen list pairs Sasha for Alexander with a different name.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-212",
+    "unitNumber": 25,
+    "text": "Sasha is paired with Alexander, not with the shown name.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-213",
+    "unitNumber": 25,
+    "text": "The frozen list includes Alyosha for Alexei as the pair for the shown name.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-214",
+    "unitNumber": 25,
+    "text": "The frozen list includes Dima for Dmitri as the pair for the shown name.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-215",
+    "unitNumber": 25,
+    "text": "The frozen list pairs thanks with a different form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-216",
+    "unitNumber": 25,
+    "text": "The frozen list pairs I'm sorry / excuse me (informal) with a different form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-217",
+    "unitNumber": 25,
+    "text": "Thanks is a different courtesy word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-218",
+    "unitNumber": 25,
+    "text": "The informal apology is a different courtesy word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-219",
+    "unitNumber": 25,
+    "text": "The frozen list says please; also used for a request and pairs that word with this form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-220",
+    "unitNumber": 25,
+    "text": "The frozen list pairs the shown request word with one form. Which admitted form is that pair?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-221",
+    "unitNumber": 25,
+    "text": "The frozen list says please; also used for a request, not for thanks.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-222",
+    "unitNumber": 25,
+    "text": "Please is the request word, not the thanks word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-223",
+    "unitNumber": 25,
+    "text": "The informal apology is not the thanks word.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-224",
+    "unitNumber": 25,
+    "text": "The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-225",
+    "unitNumber": 25,
+    "text": "The frozen list pairs the shown thanks word with one form. Which admitted form is that pair?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-226",
+    "unitNumber": 25,
+    "text": "The frozen list says please; also used for a request, not for the informal apology.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-227",
+    "unitNumber": 25,
+    "text": "Please is the request word, not the informal apology.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-228",
+    "unitNumber": 25,
+    "text": "Thanks is not the informal apology.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-229",
+    "unitNumber": 25,
+    "text": "The frozen list pairs I'm sorry / excuse me (informal) with this form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-230",
+    "unitNumber": 25,
+    "text": "The frozen list pairs the shown informal apology with one form. Which admitted form is that pair?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-231",
+    "unitNumber": 25,
+    "text": "The frozen list pairs My name is... with the reply, not with the shown question.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-232",
+    "unitNumber": 25,
+    "text": "The frozen list pairs I'm sorry / excuse me (formal) with a different form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-233",
+    "unitNumber": 25,
+    "text": "This form is the reply, not the question.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-234",
+    "unitNumber": 25,
+    "text": "This form is the formal apology, not the question.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-235",
+    "unitNumber": 25,
+    "text": "The frozen list pairs What is your name? with this form and My name is... with the reply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-236",
+    "unitNumber": 25,
+    "text": "The frozen list pairs the shown question with one form. Which admitted form is that pair?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-237",
+    "unitNumber": 25,
+    "text": "The frozen list pairs What is your name? with the question, not with the shown reply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-238",
+    "unitNumber": 25,
+    "text": "This form is the question, not the reply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-239",
+    "unitNumber": 25,
+    "text": "This form is the formal apology, not the reply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-240",
+    "unitNumber": 25,
+    "text": "The frozen list pairs My name is... with this reply and What is your name? with the question.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-241",
+    "unitNumber": 25,
+    "text": "The frozen list pairs the shown reply with one form. Which admitted form is that pair?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-242",
+    "unitNumber": 25,
+    "text": "The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-243",
+    "unitNumber": 25,
+    "text": "The frozen list pairs How are you? with this form, not with the name reply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-244",
+    "unitNumber": 25,
+    "text": "This form is the formal apology, not the name reply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-245",
+    "unitNumber": 25,
+    "text": "This form asks how someone is, rather than giving the name reply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-246",
+    "unitNumber": 25,
+    "text": "The frozen list pairs My name is... with this reply and What is your name? with the shown question.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-247",
+    "unitNumber": 25,
+    "text": "The frozen list gives the shown question and a separate reply. Which admitted form is the reply rather than another question?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-248",
+    "unitNumber": 25,
+    "text": "The source assigns от краткой формы to Машенька.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-249",
+    "unitNumber": 25,
+    "text": "The source assigns оттенок пренебрежения to Сашка.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-250",
+    "unitNumber": 25,
+    "text": "от краткой формы does not classify the shown form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-251",
+    "unitNumber": 25,
+    "text": "оттенок пренебрежения does not classify the shown form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-252",
+    "unitNumber": 25,
+    "text": "The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-253",
+    "unitNumber": 25,
+    "text": "Which admitted phrase classifies the shown form?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-254",
+    "unitNumber": 25,
+    "text": "The source assigns от полной формы имени to Марюня.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-255",
+    "unitNumber": 25,
+    "text": "от полной формы имени does not classify the shown form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-256",
+    "unitNumber": 25,
+    "text": "оттенок пренебрежения does not classify this shown form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-257",
+    "unitNumber": 25,
+    "text": "The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-258",
+    "unitNumber": 25,
+    "text": "The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-259",
+    "unitNumber": 25,
+    "text": "The frozen source pairs the shown form",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-260",
+    "unitNumber": 25,
+    "text": "with the admitted gloss",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-261",
+    "unitNumber": 25,
+    "text": "Which admitted list name is written for the shown form?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-262",
+    "unitNumber": 25,
+    "text": "Which admitted setting is written for the shown address form?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-263",
+    "unitNumber": 25,
+    "text": "Admitted name and courtesy lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-264",
+    "unitNumber": 25,
+    "text": "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, courtesy lines, and the frozen address-register sentences. Listed pairs do not establish a productive diminutive. Qualified review is pending.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-265",
+    "unitNumber": 25,
+    "text": "Open Lesson 25 in the copy you own. The app records do not replace that lesson.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-266",
+    "unitNumber": 25,
+    "text": "Guided practice",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-267",
+    "unitNumber": 25,
+    "text": "Choose the admitted record. The feedback states the frozen field.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-268",
+    "unitNumber": 25,
+    "text": "Remediation",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-269",
+    "unitNumber": 25,
+    "text": "Independent checks",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-270",
+    "unitNumber": 25,
+    "text": "These checks use only admitted records. A miss returns to the explanation.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-271",
+    "unitNumber": 25,
+    "text": "Work Lesson 25 in your copy",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-272",
+    "unitNumber": 25,
+    "text": "Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-273",
+    "unitNumber": 25,
+    "text": "Open Lesson 25 in your copy and complete its lesson work.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-274",
+    "unitNumber": 25,
+    "text": "Record Lesson 25 book work",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-275",
+    "unitNumber": 25,
+    "text": "When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u25-276",
+    "unitNumber": 25,
+    "text": "Self-attest only after the Lesson 25 work in your copy.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-001",
+    "unitNumber": 26,
+    "text": "Admitted lines",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-002",
+    "unitNumber": 26,
+    "text": "This label is written beside a different arrangement for Went I to the shop.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-003",
+    "unitNumber": 26,
+    "text": "This label is written beside the opening arrangement, not the shown one for I went to the shop.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-004",
+    "unitNumber": 26,
+    "text": "The frozen line pairs this label with another arrangement (Went I to the shop).",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-005",
+    "unitNumber": 26,
+    "text": "The frozen line pairs this label with the opening arrangement (I went to the shop).",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-006",
+    "unitNumber": 26,
+    "text": "The frozen line says considerable latitude in word order is allowed. This label is written beside the shown arrangement.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-007",
+    "unitNumber": 26,
+    "text": "Which admitted English label is written beside the shown arrangement?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-008",
+    "unitNumber": 26,
+    "text": "Admitted instruction",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-009",
+    "unitNumber": 26,
+    "text": "This label is written beside the closing arrangement, not the shown one for To the shop went I.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-010",
+    "unitNumber": 26,
+    "text": "The frozen line pairs this label with the closing arrangement (To the shop went I).",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-011",
+    "unitNumber": 26,
+    "text": "Which admitted English label is written beside this shown arrangement?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-012",
+    "unitNumber": 26,
+    "text": "This label is written beside the closing arrangement for To the shop went I.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-013",
+    "unitNumber": 26,
+    "text": "This label is written beside a story-opening arrangement for Went I to the shop.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-014",
+    "unitNumber": 26,
+    "text": "The frozen line pairs this label with a different arrangement (Went I to the shop).",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-015",
+    "unitNumber": 26,
+    "text": "Which admitted English label is written beside the opening arrangement?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-016",
+    "unitNumber": 26,
+    "text": "The frozen line gives minuscule to the other situation.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-017",
+    "unitNumber": 26,
+    "text": "The frozen line uses this phrase for the shared shape, not for the capital beginning for plural form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-018",
+    "unitNumber": 26,
+    "text": "Minuscule is the other beginning named in the line.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-019",
+    "unitNumber": 26,
+    "text": "This phrase is not the beginning named for letters and papers (plural form).",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-020",
+    "unitNumber": 26,
+    "text": "The frozen line says it begins with a capital letter in personal letters and official papers.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-021",
+    "unitNumber": 26,
+    "text": "Which admitted English label states how this written form begins?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-022",
+    "unitNumber": 26,
+    "text": "The frozen line uses this phrase for the shared shape for plural form.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-023",
+    "unitNumber": 26,
+    "text": "The frozen line gives minuscule when the capital situation does not apply.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-024",
+    "unitNumber": 26,
+    "text": "This phrase does not name the capital beginning (plural form).",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-025",
+    "unitNumber": 26,
+    "text": "Minuscule is the other beginning.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-026",
+    "unitNumber": 26,
+    "text": "Which admitted English label states how the shown written form begins?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-027",
+    "unitNumber": 26,
+    "text": "The frozen line gives minuscule to the remaining situation.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-028",
+    "unitNumber": 26,
+    "text": "Minuscule is not the beginning named for letters and papers.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-029",
+    "unitNumber": 26,
+    "text": "This phrase is a different statement in the same line (plural form).",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-030",
+    "unitNumber": 26,
+    "text": "Which admitted English label states the beginning used for the shown form?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-031",
+    "unitNumber": 26,
+    "text": "The frozen gloss street belongs to a different mark.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-032",
+    "unitNumber": 26,
+    "text": "The frozen gloss building belongs to a different mark.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-033",
+    "unitNumber": 26,
+    "text": "Street is the gloss of another mark in the same note.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-034",
+    "unitNumber": 26,
+    "text": "Building is the gloss of another mark in the same note.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-035",
+    "unitNumber": 26,
+    "text": "The lines are marked with abbreviations. This label is the gloss written for the mark in the shown line.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-036",
+    "unitNumber": 26,
+    "text": "Which admitted English gloss is written for the mark in the shown line?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-037",
+    "unitNumber": 26,
+    "text": "The frozen gloss city belongs to the place mark, not the first mark here.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-038",
+    "unitNumber": 26,
+    "text": "The frozen gloss apartment belongs to a later mark in the shown line.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-039",
+    "unitNumber": 26,
+    "text": "City is the gloss of a different mark.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-040",
+    "unitNumber": 26,
+    "text": "Apartment is the gloss of a later mark.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-041",
+    "unitNumber": 26,
+    "text": "The lines are marked with abbreviations. This label is the gloss written for the first mark in the shown line.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-042",
+    "unitNumber": 26,
+    "text": "Which admitted English label glosses the first mark in the shown line?",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-043",
+    "unitNumber": 26,
+    "text": "The frozen gloss city belongs to a different mark.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  },
+  {
+    "id": "en-u26-044",
+    "unitNumber": 26,
+    "text": "City is the gloss of the place mark.",
+    "classification": "INDEPENDENTLY_AUTHORED_SCAFFOLD"
+  }
+]

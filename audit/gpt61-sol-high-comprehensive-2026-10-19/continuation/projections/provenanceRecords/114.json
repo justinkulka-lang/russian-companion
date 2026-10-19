@@ -1,0 +1,938 @@
+[
+  {
+    "itemId": "prov-ca-repair-27-11083",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Письмо, написанное Анной, лежит на столе.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "8e7f6e498e17b1e8b5d09a319e2330de197d08775436c7c03e0dfbf4e9788c1a",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11084",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "the letter Anna wrote is on the table",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "d8f1d40a01c01c954f5502c2c438deff549a53cf9150ea8f8d6ed61a00c75535",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11085",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Анна убрала прочитанное письмо.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "ff8f86153960e1a7dab221da85cb0f3d3d0632a2cf41f200fc1784b9046b37b5",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11086",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Anna put away the letter that had been read.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "8d5f0245e28cb98396110fa7277112490e4549324fbcc85a5f6c09de436e8cd8",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11087",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "написанное Анной",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "aa6c7d97f54fc49299567faf25cbbb73c2c3fa40d8104c63893d8ec3bb4961db",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11088",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Anna is the writer of the letter",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "6bdd2ba7b8b83d490e469fc404f721080608e47260e217c67cedc26adcb3c61b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11089",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Which English reading matches the person who produced the letter?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "ad80f0e8e596b0caeb6a90ffaf896755cefa31a522e3f54fd6b4adf116a9bef5",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11090",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Admitted reading: Anna is the writer of the letter",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "815f7835ec5f090e7dfbc8ec8fffcdb4486036b5c7f69e28c625a353dd1845a9",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11091",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Anna is the reader of the letter",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "044edefacface03b67ec611e3dfd1eb8527783834b88680a10ab4b32feaf8e44",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11092",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "the letter wrote Anna",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "5a4e58aec4b066987472c791cd0298329185db15ce5fa8b309a1daeaaf308ffb",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11093",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Rejected reading: Anna is the reader of the letter",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "3192014fe017f68a5f7423126aad8aff08a3f3ef9430804542ef1cb4f5179c3a",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11094",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Rejected reading: the letter wrote Anna",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "85736a5ca2e807feff64749e8dcf639473b39f435c0a5268a8d85f5259917959",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11095",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Which reading keeps the reader of the letter unspecified?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "2d2dabb13a66dc0d17b7a0ae3e58d2169701a027e903c4930d06595ceb5afd8e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11096",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Анна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "6ec4dce4a773af4048c53261962ac4701457b636759775e3e3e7befe448f356b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11097",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Anna wrote the letter on the table",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "7271bf248bc314780b610017273780efba406458273176328ee596ef8e2e94c6",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11098",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "the letter put Anna away",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "4b1cb56c3976e0cedf26cc700f74778b5ddaf82aee137e4a38fa1edf4e74274f",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11099",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "Anna wrote the letter on the table invents a different verb.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "1106958c0f0613e946f2c9a0a20319dec7d2711ee783d46e713e79f735caedc2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  },
+  {
+    "itemId": "prov-ca-repair-27-11100",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-corrected-capability:cap-obj-u27-comprehension",
+    "shippedText": "the letter put Anna away reverses who did the action.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30e63fa8b8357c075e51ec64285936905a62e8acc627099b340f4d16f38da202",
+    "contentHash": "ee915131b4ee8afdfc3765b88372883ee5cb967cc98efc79ff98e8f971756ed3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Pending corrected research applications. No linguistic or owner approval is recorded.\nReferences: retained original source bindings in this unit; the independent content-audit register; Gramota dictionary and orthography; Litnevskaya, verbal adverbs; Rusgram, verbal adverbs.\nhttps://gramota.ru/poisk?query=быстрый&mode=slovari\nhttps://gramota.ru/biblioteka/spravochniki/russkij-yazyk-kratkij-teoreticheskij-kurs-dlya-shkolnikov/deeprichastie\nRead the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nRead the main verb and the participle separately. In Письмо, написанное Анной, лежит на столе., Анной identifies the writer. In Анна убрала прочитанное письмо., Анна put the letter away; прочитанное tells us it had been read but does not identify the reader.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nнаписанное Анной\nAnna is the writer of the letter\nWhich English reading matches the person who produced the letter?\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich reading keeps the reader of the letter unspecified?\nАнна убрала прочитанное письмо. means Anna put away the letter that had been read. Анна is the person who put it away; the passive participle does not identify who read it.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nпрочитанное письмо\nthe letter had already been read\nWhich English reading matches the state of the letter Anna put away?\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud"
+  }
+]

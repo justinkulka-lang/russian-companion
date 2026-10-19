@@ -1,0 +1,1255 @@
+[
+  {
+    "itemId": "prov-u7-manner-21",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:bounded-manner-adverb-formation",
+    "shippedText": "an unsupported invented adverb form",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594",
+    "contentHash": "856daac6a80f1ffae636376e5d459e3c6a396b02f9f56a9d6c52fa284782e63a",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar adverb material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Russian for Everyone adverb formation, https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-09-29. Russian Wikipedia Narechie oldid 152437423 for invariance and the two admitted pairs only.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "быстрый",
+          "answer": "admitted fast manner-adverb relationship",
+          "distractors": [
+            "admitted creative manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "творческий",
+          "answer": "admitted creative manner-adverb relationship",
+          "distractors": [
+            "admitted fast manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "predicative expression rather than a manner adverb"
+          ]
+        },
+        {
+          "cue": "Ей трудно.",
+          "answer": "predicative expression rather than a manner adverb",
+          "distractors": [
+            "manner adverb modifying the action"
+          ]
+        },
+        {
+          "cue": "синий",
+          "answer": "no documented manner adverb is recorded for this adjective",
+          "distractors": [
+            "an unsupported invented adverb form"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nThe documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.\nThe documented creative pair is a separate admitted manner-adverb relationship.\nIn the speaking sentence, the adverb modifies the action.\nIn the short-form sentence, the expression is predicative rather than a manner adverb.\nThis adjective has no documented manner adverb in this unit.\nAdding an adverb ending to an unstudied adjective invents an unsupported form.\nбыстрый\nбыстро\nтворческий\nтворчески\nОна говорит быстро.\nЕй трудно.\nсиний\nadmitted fast manner-adverb relationship\nadmitted creative manner-adverb relationship\nmanner adverb modifying the action\npredicative expression rather than a manner adverb\nno documented manner adverb is recorded for this adjective\nan unsupported invented adverb form\nWhich English description matches the shown fast adjective?\nWhich English description matches the shown creative adjective?\nWhich English description matches the shown speaking sentence?\nWhich English description matches the shown short-form sentence?\nWhich English description rejects an unsupported conversion of the shown adjective?"
+  },
+  {
+    "itemId": "prov-u7-manner-22",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:bounded-manner-adverb-formation",
+    "shippedText": "Which English description matches the shown fast adjective?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594",
+    "contentHash": "31b67e0303ef23420411e2b370870e9ed07a4e38068bb8c55ba45f66f9d0049d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar adverb material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Russian for Everyone adverb formation, https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-09-29. Russian Wikipedia Narechie oldid 152437423 for invariance and the two admitted pairs only.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "быстрый",
+          "answer": "admitted fast manner-adverb relationship",
+          "distractors": [
+            "admitted creative manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "творческий",
+          "answer": "admitted creative manner-adverb relationship",
+          "distractors": [
+            "admitted fast manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "predicative expression rather than a manner adverb"
+          ]
+        },
+        {
+          "cue": "Ей трудно.",
+          "answer": "predicative expression rather than a manner adverb",
+          "distractors": [
+            "manner adverb modifying the action"
+          ]
+        },
+        {
+          "cue": "синий",
+          "answer": "no documented manner adverb is recorded for this adjective",
+          "distractors": [
+            "an unsupported invented adverb form"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nThe documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.\nThe documented creative pair is a separate admitted manner-adverb relationship.\nIn the speaking sentence, the adverb modifies the action.\nIn the short-form sentence, the expression is predicative rather than a manner adverb.\nThis adjective has no documented manner adverb in this unit.\nAdding an adverb ending to an unstudied adjective invents an unsupported form.\nбыстрый\nбыстро\nтворческий\nтворчески\nОна говорит быстро.\nЕй трудно.\nсиний\nadmitted fast manner-adverb relationship\nadmitted creative manner-adverb relationship\nmanner adverb modifying the action\npredicative expression rather than a manner adverb\nno documented manner adverb is recorded for this adjective\nan unsupported invented adverb form\nWhich English description matches the shown fast adjective?\nWhich English description matches the shown creative adjective?\nWhich English description matches the shown speaking sentence?\nWhich English description matches the shown short-form sentence?\nWhich English description rejects an unsupported conversion of the shown adjective?"
+  },
+  {
+    "itemId": "prov-u7-manner-23",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:bounded-manner-adverb-formation",
+    "shippedText": "Which English description matches the shown creative adjective?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594",
+    "contentHash": "54f4991b88eaecfe1ca31eb35f1a6f6e04b3280770e4cf989401baaabb676782",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar adverb material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Russian for Everyone adverb formation, https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-09-29. Russian Wikipedia Narechie oldid 152437423 for invariance and the two admitted pairs only.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "быстрый",
+          "answer": "admitted fast manner-adverb relationship",
+          "distractors": [
+            "admitted creative manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "творческий",
+          "answer": "admitted creative manner-adverb relationship",
+          "distractors": [
+            "admitted fast manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "predicative expression rather than a manner adverb"
+          ]
+        },
+        {
+          "cue": "Ей трудно.",
+          "answer": "predicative expression rather than a manner adverb",
+          "distractors": [
+            "manner adverb modifying the action"
+          ]
+        },
+        {
+          "cue": "синий",
+          "answer": "no documented manner adverb is recorded for this adjective",
+          "distractors": [
+            "an unsupported invented adverb form"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nThe documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.\nThe documented creative pair is a separate admitted manner-adverb relationship.\nIn the speaking sentence, the adverb modifies the action.\nIn the short-form sentence, the expression is predicative rather than a manner adverb.\nThis adjective has no documented manner adverb in this unit.\nAdding an adverb ending to an unstudied adjective invents an unsupported form.\nбыстрый\nбыстро\nтворческий\nтворчески\nОна говорит быстро.\nЕй трудно.\nсиний\nadmitted fast manner-adverb relationship\nadmitted creative manner-adverb relationship\nmanner adverb modifying the action\npredicative expression rather than a manner adverb\nno documented manner adverb is recorded for this adjective\nan unsupported invented adverb form\nWhich English description matches the shown fast adjective?\nWhich English description matches the shown creative adjective?\nWhich English description matches the shown speaking sentence?\nWhich English description matches the shown short-form sentence?\nWhich English description rejects an unsupported conversion of the shown adjective?"
+  },
+  {
+    "itemId": "prov-u7-manner-24",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:bounded-manner-adverb-formation",
+    "shippedText": "Which English description matches the shown speaking sentence?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594",
+    "contentHash": "85a29803f6ed8204dcde5eecdfc20755fae0fe04ff2454d81c73fd4d26cc83dc",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar adverb material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Russian for Everyone adverb formation, https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-09-29. Russian Wikipedia Narechie oldid 152437423 for invariance and the two admitted pairs only.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "быстрый",
+          "answer": "admitted fast manner-adverb relationship",
+          "distractors": [
+            "admitted creative manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "творческий",
+          "answer": "admitted creative manner-adverb relationship",
+          "distractors": [
+            "admitted fast manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "predicative expression rather than a manner adverb"
+          ]
+        },
+        {
+          "cue": "Ей трудно.",
+          "answer": "predicative expression rather than a manner adverb",
+          "distractors": [
+            "manner adverb modifying the action"
+          ]
+        },
+        {
+          "cue": "синий",
+          "answer": "no documented manner adverb is recorded for this adjective",
+          "distractors": [
+            "an unsupported invented adverb form"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nThe documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.\nThe documented creative pair is a separate admitted manner-adverb relationship.\nIn the speaking sentence, the adverb modifies the action.\nIn the short-form sentence, the expression is predicative rather than a manner adverb.\nThis adjective has no documented manner adverb in this unit.\nAdding an adverb ending to an unstudied adjective invents an unsupported form.\nбыстрый\nбыстро\nтворческий\nтворчески\nОна говорит быстро.\nЕй трудно.\nсиний\nadmitted fast manner-adverb relationship\nadmitted creative manner-adverb relationship\nmanner adverb modifying the action\npredicative expression rather than a manner adverb\nno documented manner adverb is recorded for this adjective\nan unsupported invented adverb form\nWhich English description matches the shown fast adjective?\nWhich English description matches the shown creative adjective?\nWhich English description matches the shown speaking sentence?\nWhich English description matches the shown short-form sentence?\nWhich English description rejects an unsupported conversion of the shown adjective?"
+  },
+  {
+    "itemId": "prov-u7-manner-25",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:bounded-manner-adverb-formation",
+    "shippedText": "Which English description matches the shown short-form sentence?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594",
+    "contentHash": "d2ce7c731e903d0f6f20a57957b11a035239637680dadbb3182730b3d4d8a4c8",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar adverb material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Russian for Everyone adverb formation, https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-09-29. Russian Wikipedia Narechie oldid 152437423 for invariance and the two admitted pairs only.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "быстрый",
+          "answer": "admitted fast manner-adverb relationship",
+          "distractors": [
+            "admitted creative manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "творческий",
+          "answer": "admitted creative manner-adverb relationship",
+          "distractors": [
+            "admitted fast manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "predicative expression rather than a manner adverb"
+          ]
+        },
+        {
+          "cue": "Ей трудно.",
+          "answer": "predicative expression rather than a manner adverb",
+          "distractors": [
+            "manner adverb modifying the action"
+          ]
+        },
+        {
+          "cue": "синий",
+          "answer": "no documented manner adverb is recorded for this adjective",
+          "distractors": [
+            "an unsupported invented adverb form"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nThe documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.\nThe documented creative pair is a separate admitted manner-adverb relationship.\nIn the speaking sentence, the adverb modifies the action.\nIn the short-form sentence, the expression is predicative rather than a manner adverb.\nThis adjective has no documented manner adverb in this unit.\nAdding an adverb ending to an unstudied adjective invents an unsupported form.\nбыстрый\nбыстро\nтворческий\nтворчески\nОна говорит быстро.\nЕй трудно.\nсиний\nadmitted fast manner-adverb relationship\nadmitted creative manner-adverb relationship\nmanner adverb modifying the action\npredicative expression rather than a manner adverb\nno documented manner adverb is recorded for this adjective\nan unsupported invented adverb form\nWhich English description matches the shown fast adjective?\nWhich English description matches the shown creative adjective?\nWhich English description matches the shown speaking sentence?\nWhich English description matches the shown short-form sentence?\nWhich English description rejects an unsupported conversion of the shown adjective?"
+  },
+  {
+    "itemId": "prov-u7-manner-26",
+    "unitNumber": 7,
+    "objectiveId": "obj-u7-adverb-paradigm",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:bounded-manner-adverb-formation",
+    "shippedText": "Which English description rejects an unsupported conversion of the shown adjective?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594",
+    "contentHash": "e50147fe8568521d0e25f3b570ebf4abeed3e9629318546fe5ab03b45139f1ac",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar adverb material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Russian for Everyone adverb formation, https://www.russianforeveryone.com/Rufe/Lessons/Course1/Grammar/GramUnit15/GramUnit15_2.htm, consulted 2026-09-29. Russian Wikipedia Narechie oldid 152437423 for invariance and the two admitted pairs only.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u7-adverb-paradigm:bounded-manner-adverb-formation",
+      "applications": [
+        {
+          "cue": "быстрый",
+          "answer": "admitted fast manner-adverb relationship",
+          "distractors": [
+            "admitted creative manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "творческий",
+          "answer": "admitted creative manner-adverb relationship",
+          "distractors": [
+            "admitted fast manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "predicative expression rather than a manner adverb"
+          ]
+        },
+        {
+          "cue": "Ей трудно.",
+          "answer": "predicative expression rather than a manner adverb",
+          "distractors": [
+            "manner adverb modifying the action"
+          ]
+        },
+        {
+          "cue": "синий",
+          "answer": "no documented manner adverb is recorded for this adjective",
+          "distractors": [
+            "an unsupported invented adverb form"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Many manner adverbs correspond to adjectives, but the correspondence is not a universal generator.\nRussian adverbs do not change for gender, number, or case.\nLexical availability, stem behavior, irregular forms, and context must be checked before converting an adjective.\nThe documented fast pair is one admitted manner-adverb relationship, not a rule for every adjective.\nThe documented creative pair is a separate admitted manner-adverb relationship.\nIn the speaking sentence, the adverb modifies the action.\nIn the short-form sentence, the expression is predicative rather than a manner adverb.\nThis adjective has no documented manner adverb in this unit.\nAdding an adverb ending to an unstudied adjective invents an unsupported form.\nбыстрый\nбыстро\nтворческий\nтворчески\nОна говорит быстро.\nЕй трудно.\nсиний\nadmitted fast manner-adverb relationship\nadmitted creative manner-adverb relationship\nmanner adverb modifying the action\npredicative expression rather than a manner adverb\nno documented manner adverb is recorded for this adjective\nan unsupported invented adverb form\nWhich English description matches the shown fast adjective?\nWhich English description matches the shown creative adjective?\nWhich English description matches the shown speaking sentence?\nWhich English description matches the shown short-form sentence?\nWhich English description rejects an unsupported conversion of the shown adjective?"
+  },
+  {
+    "itemId": "prov-u23-completion-0",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "1e63537d03cc0947c43aed879a4ffe5b056a575254b5776126a020942b9c534b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-1",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "A perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "90f297d876fb75ed314aa131061e7d89872aef8194aa1e33232e63df3d9c23da",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-2",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "The reading sentence states time spent reading and does not assert completion.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "1e5af1c88c9451196fd8167a14a961a748cc1e38ef85fa5ebc6bf42a4553de2d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-3",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "The finished-article sentence states that the article was completed within the stated period.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "a75919cf2e1c7fe5ee8a1afb83cda5aa917a2abb089f63ad44639a4dfe92cc7e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-4",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "The writing sentence states time spent writing and does not assert completion.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "b54db4f0f86e8696b5e1a700e600801c42a73800150d72b31bb1d4ec3912049f",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-5",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "Анна читала статью два часа.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "c0291f42c8579211da23e17671e74382f1b3e281c9111582a62677e295c3a4ef",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-6",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "Анна прочитала статью за два часа.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "64a3766ba4ebeefe8df8601d6611d14d20a118eb9656bb4e1db2a5cde88594e6",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-7",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "Борис писал письмо час.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "077942a1a975187b2cf6523a16f773a8b2eed4f0593fb6969df5e5859d411a70",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-8",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "time spent reading without asserting completion",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "a38e2a76d9fcdae2ab893aa266d815daff494377efc69f9863983b9dad553049",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-9",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "the article was finished within two hours",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "9645be4c3a52abf425c568ec89151efb525bc214fd42695779da030ef8e639ed",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-10",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "time spent writing without asserting completion",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "9cca7f85fe9f4e53a62baa78e5b6fa6accc24f54b59bbafda64da81f9ffe55d3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-11",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "Which English description matches the shown writing sentence?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "52a3b45f39c1fba4b46bfc0fab51a52508072e6326d9cc68b05a58bb9f4b40d5",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-12",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "Which English description matches the shown reading sentence?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "ee6c3ab9c7c5416341fea3f3ba59d46ff42c7e3f4721954202a42b7294be81af",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u23-completion-13",
+    "unitNumber": 23,
+    "objectiveId": "obj-u23-completion",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:completion-over-period",
+    "shippedText": "Which English description matches the shown completed sentence?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22",
+    "contentHash": "872151e54ab94a34d3da472d4cff6e62a4793f86e9a72593ffbaf183e7938d85",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Cornell Beginning Russian Grammar duration material, https://russian.cornell.edu/grammar/, consulted 2026-09-29. Previously retained Pressbooks duration material remains the elapsed-time-duration claim and is not this contrast.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u23-completion:completion-over-period",
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "An imperfective verb with a bare accusative time expression states time spent on an activity and does not assert completion.\nA perfective verb with an accusative time expression after the preposition states the period within which a bounded task was completed.\nThe reading sentence states time spent reading and does not assert completion.\nThe finished-article sentence states that the article was completed within the stated period.\nThe writing sentence states time spent writing and does not assert completion.\nАнна читала статью два часа.\nАнна прочитала статью за два часа.\nБорис писал письмо час.\ntime spent reading without asserting completion\nthe article was finished within two hours\ntime spent writing without asserting completion\nWhich English description matches the shown writing sentence?\nWhich English description matches the shown reading sentence?\nWhich English description matches the shown completed sentence?"
+  },
+  {
+    "itemId": "prov-u25-name-form-0",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-documented-name-form",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:documented-name-form",
+    "shippedText": "Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb",
+    "contentHash": "d422ce71f4955a4df4f73108015f9f44a651bab58bcc6615ed448762aaaba024",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Gramota derivative diminutive forms in the Russian names dictionary, https://gramota.ru/biblioteka/slovari/slovar-russkih-imyon/proizvodnye-umenshitelnye-formy, consulted 2026-09-29. Gramota how to use the Russian names dictionary, https://gramota.ru/biblioteka/slovari/slovar-russkih-imyon/kak-polzovatsya-slovarem, consulted 2026-09-29. Retained Russian Wikipedia personal-name material remains bounded classification evidence only.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u25-documented-name-form:documented-name-form",
+      "applications": [
+        {
+          "cue": "Марюня",
+          "answer": "documented derivative of the full name",
+          "distractors": [
+            "documented derivative of the short form",
+            "documented dismissive coloring"
+          ]
+        },
+        {
+          "cue": "Машенька",
+          "answer": "documented derivative of the short form",
+          "distractors": [
+            "documented derivative of the full name",
+            "documented dismissive coloring"
+          ]
+        },
+        {
+          "cue": "Сашка",
+          "answer": "documented dismissive coloring",
+          "distractors": [
+            "documented derivative of the full name",
+            "documented derivative of the short form"
+          ]
+        },
+        {
+          "cue": "an unstudied personal name",
+          "answer": "unsupported until a names dictionary documents that form",
+          "distractors": [
+            "the suffix mechanically generates an acceptable name"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.\nOne personal name may have several documented forms.\nA suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.\nAn unfamiliar form must be verified in a names dictionary.\nМарюня is a documented derivative of the full name in this admitted material.\nМашенька is a documented derivative of the short form in this admitted material.\nСашка carries documented dismissive coloring in this admitted material.\nAn unstudied name has no documented derivative in this unit.\nМашенька\nСашка\nМарюня\ndocumented derivative of the full name\ndocumented derivative of the short form\ndocumented dismissive coloring\nunsupported until a names dictionary documents that form\nthe suffix mechanically generates an acceptable name\nWhich English description matches the shown name derived in the admitted full-form pattern?\nWhich English description matches the shown name derived in the admitted short-form pattern?\nWhich English description matches the shown name that this admitted material treats as disparaging?\nWhich English description matches an unstudied personal name?\nan unstudied personal name"
+  },
+  {
+    "itemId": "prov-u25-name-form-1",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-documented-name-form",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:documented-name-form",
+    "shippedText": "One personal name may have several documented forms.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb",
+    "contentHash": "cb73bb68eff885515e50d00e12afac676e118a547b4ec8242e2b53f58f9db26f",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Gramota derivative diminutive forms in the Russian names dictionary, https://gramota.ru/biblioteka/slovari/slovar-russkih-imyon/proizvodnye-umenshitelnye-formy, consulted 2026-09-29. Gramota how to use the Russian names dictionary, https://gramota.ru/biblioteka/slovari/slovar-russkih-imyon/kak-polzovatsya-slovarem, consulted 2026-09-29. Retained Russian Wikipedia personal-name material remains bounded classification evidence only.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u25-documented-name-form:documented-name-form",
+      "applications": [
+        {
+          "cue": "Марюня",
+          "answer": "documented derivative of the full name",
+          "distractors": [
+            "documented derivative of the short form",
+            "documented dismissive coloring"
+          ]
+        },
+        {
+          "cue": "Машенька",
+          "answer": "documented derivative of the short form",
+          "distractors": [
+            "documented derivative of the full name",
+            "documented dismissive coloring"
+          ]
+        },
+        {
+          "cue": "Сашка",
+          "answer": "documented dismissive coloring",
+          "distractors": [
+            "documented derivative of the full name",
+            "documented derivative of the short form"
+          ]
+        },
+        {
+          "cue": "an unstudied personal name",
+          "answer": "unsupported until a names dictionary documents that form",
+          "distractors": [
+            "the suffix mechanically generates an acceptable name"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.\nOne personal name may have several documented forms.\nA suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.\nAn unfamiliar form must be verified in a names dictionary.\nМарюня is a documented derivative of the full name in this admitted material.\nМашенька is a documented derivative of the short form in this admitted material.\nСашка carries documented dismissive coloring in this admitted material.\nAn unstudied name has no documented derivative in this unit.\nМашенька\nСашка\nМарюня\ndocumented derivative of the full name\ndocumented derivative of the short form\ndocumented dismissive coloring\nunsupported until a names dictionary documents that form\nthe suffix mechanically generates an acceptable name\nWhich English description matches the shown name derived in the admitted full-form pattern?\nWhich English description matches the shown name derived in the admitted short-form pattern?\nWhich English description matches the shown name that this admitted material treats as disparaging?\nWhich English description matches an unstudied personal name?\nan unstudied personal name"
+  },
+  {
+    "itemId": "prov-u25-name-form-2",
+    "unitNumber": 25,
+    "objectiveId": "obj-u25-documented-name-form",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase2-2026-09-29",
+    "sourceRevision": "phase2-2026-09-29",
+    "sourceRecordId": "phase2:documented-name-form",
+    "shippedText": "A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase2-2026-09-29. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb",
+    "contentHash": "c5cece21defc519edcb178053146c7e57404ba64a6763d2abdaf990290266ab6",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Gramota derivative diminutive forms in the Russian names dictionary, https://gramota.ru/biblioteka/slovari/slovar-russkih-imyon/proizvodnye-umenshitelnye-formy, consulted 2026-09-29. Gramota how to use the Russian names dictionary, https://gramota.ru/biblioteka/slovari/slovar-russkih-imyon/kak-polzovatsya-slovarem, consulted 2026-09-29. Retained Russian Wikipedia personal-name material remains bounded classification evidence only.",
+      "sourceDateOrVersion": "2026-09-29",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-29. This is original research synthesis, not a quotation or paraphrase of Penguin, Cornell, Russian for Everyone, Gramota, or Wikipedia.",
+      "objectiveOrClaimBinding": "obj-u25-documented-name-form:documented-name-form",
+      "applications": [
+        {
+          "cue": "Марюня",
+          "answer": "documented derivative of the full name",
+          "distractors": [
+            "documented derivative of the short form",
+            "documented dismissive coloring"
+          ]
+        },
+        {
+          "cue": "Машенька",
+          "answer": "documented derivative of the short form",
+          "distractors": [
+            "documented derivative of the full name",
+            "documented dismissive coloring"
+          ]
+        },
+        {
+          "cue": "Сашка",
+          "answer": "documented dismissive coloring",
+          "distractors": [
+            "documented derivative of the full name",
+            "documented derivative of the short form"
+          ]
+        },
+        {
+          "cue": "an unstudied personal name",
+          "answer": "unsupported until a names dictionary documents that form",
+          "distractors": [
+            "the suffix mechanically generates an acceptable name"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.\nOne personal name may have several documented forms.\nA suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.\nAn unfamiliar form must be verified in a names dictionary.\nМарюня is a documented derivative of the full name in this admitted material.\nМашенька is a documented derivative of the short form in this admitted material.\nСашка carries documented dismissive coloring in this admitted material.\nAn unstudied name has no documented derivative in this unit.\nМашенька\nСашка\nМарюня\ndocumented derivative of the full name\ndocumented derivative of the short form\ndocumented dismissive coloring\nunsupported until a names dictionary documents that form\nthe suffix mechanically generates an acceptable name\nWhich English description matches the shown name derived in the admitted full-form pattern?\nWhich English description matches the shown name derived in the admitted short-form pattern?\nWhich English description matches the shown name that this admitted material treats as disparaging?\nWhich English description matches an unstudied personal name?\nan unstudied personal name"
+  }
+]

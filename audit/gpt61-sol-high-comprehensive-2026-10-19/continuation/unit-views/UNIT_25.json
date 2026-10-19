@@ -1,0 +1,2443 @@
+{
+  "derivedFromCommit": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "rawSha256": "33e5655c99d6d5003da0ab1af9249dc814472e3436e0d28afd2f878f6ade4940",
+  "unit": {
+    "number": 25,
+    "id": "unit-25",
+    "title": "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions",
+    "shortLabel": "Names",
+    "topicSummary": "Proposed Unit 25 is in development. Admitted name lines, a bounded classification of the frozen diminutive-formation span, courtesy lines, the address-register sentences, and documented personal-name interpretation await qualified review. Listed name pairs do not establish a productive diminutive. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 25,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 25, printed pages 305-319. Independently stated topic scope: Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+    "prerequisiteUnitNumbers": [
+      24
+    ],
+    "estimatedMinutes": 90,
+    "objectives": [
+      {
+        "id": "obj-u25-name-structure",
+        "unitNumber": 25,
+        "title": "Distinguish the parts of a Russian personal name",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u25-st-orient",
+          "u25-st-teach-name-structure-1",
+          "u25-st-teach-name-structure-2",
+          "u25-st-teach-name-structure-3"
+        ],
+        "exampleIds": [
+          "ex-u25-name-structure-0",
+          "ex-u25-name-structure-1",
+          "ex-u25-name-structure-2",
+          "ex-u25-name-structure-3"
+        ],
+        "practiceStepIds": [
+          "u25-st-guided-name-structure-1"
+        ],
+        "checkItemIds": [
+          "u25-i-name-structure-1",
+          "u25-i-name-structure-2"
+        ],
+        "remediationStepIds": [
+          "u25-st-rem-name-structure"
+        ]
+      },
+      {
+        "id": "obj-u25-diminutives",
+        "unitNumber": 25,
+        "title": "Recognize conventional short forms of the supplied names",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u25-st-orient",
+          "u25-st-teach-diminutives-1",
+          "u25-st-teach-diminutives-2",
+          "u25-st-teach-diminutives-3"
+        ],
+        "exampleIds": [
+          "ex-u25-diminutives-0",
+          "ex-u25-diminutives-1",
+          "ex-u25-diminutives-2"
+        ],
+        "practiceStepIds": [
+          "u25-st-guided-diminutives-1"
+        ],
+        "checkItemIds": [
+          "u25-i-diminutives-1",
+          "u25-i-diminutives-2"
+        ],
+        "remediationStepIds": [
+          "u25-st-rem-diminutives"
+        ]
+      },
+      {
+        "id": "obj-u25-courtesy",
+        "unitNumber": 25,
+        "title": "Distinguish a request, thanks and an apology",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u25-st-orient",
+          "u25-st-teach-courtesy-1",
+          "u25-st-teach-courtesy-2",
+          "u25-st-teach-courtesy-3"
+        ],
+        "exampleIds": [
+          "ex-u25-courtesy-0",
+          "ex-u25-courtesy-1",
+          "ex-u25-courtesy-2"
+        ],
+        "practiceStepIds": [
+          "u25-st-guided-courtesy-1"
+        ],
+        "checkItemIds": [
+          "u25-i-courtesy-1",
+          "u25-i-courtesy-2"
+        ],
+        "remediationStepIds": [
+          "u25-st-rem-courtesy"
+        ]
+      },
+      {
+        "id": "obj-u25-name-question",
+        "unitNumber": 25,
+        "title": "Recognize a name question and the start of its reply",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u25-st-orient",
+          "u25-st-teach-name-question-1",
+          "u25-st-teach-name-question-2",
+          "u25-st-teach-name-question-3"
+        ],
+        "exampleIds": [
+          "ex-u25-name-question-0",
+          "ex-u25-name-question-1",
+          "ex-u25-name-question-2",
+          "ex-u25-name-question-3"
+        ],
+        "practiceStepIds": [
+          "u25-st-guided-name-question-1"
+        ],
+        "checkItemIds": [
+          "u25-i-name-question-1",
+          "u25-i-name-question-2"
+        ],
+        "remediationStepIds": [
+          "u25-st-rem-name-question"
+        ]
+      },
+      {
+        "id": "obj-u25-nickname-rule",
+        "unitNumber": 25,
+        "title": "Classify the documented name forms and their stated coloring",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u25-st-orient",
+          "u25-st-teach-nickname-rule-1",
+          "u25-st-teach-nickname-rule-2",
+          "u25-st-teach-nickname-rule-3"
+        ],
+        "exampleIds": [
+          "ex-u25-nickname-rule-0",
+          "ex-u25-nickname-rule-1",
+          "ex-u25-nickname-rule-2"
+        ],
+        "practiceStepIds": [
+          "u25-st-guided-nickname-rule-1"
+        ],
+        "checkItemIds": [
+          "u25-i-nickname-rule-1",
+          "u25-i-nickname-rule-2"
+        ],
+        "remediationStepIds": [
+          "u25-st-rem-nickname-rule"
+        ]
+      },
+      {
+        "id": "obj-u25-address",
+        "unitNumber": 25,
+        "title": "Distinguish name-form categories and the illustrated register",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u25-st-orient",
+          "u25-st-teach-address-1",
+          "u25-st-teach-address-2",
+          "u25-st-teach-address-3"
+        ],
+        "exampleIds": [
+          "ex-u25-address-0",
+          "ex-u25-address-1",
+          "ex-u25-address-2",
+          "ex-u25-address-3"
+        ],
+        "practiceStepIds": [
+          "u25-st-guided-address-1"
+        ],
+        "checkItemIds": [
+          "u25-i-address-1",
+          "u25-i-address-2",
+          "u25-i-address-3"
+        ],
+        "remediationStepIds": [
+          "u25-st-rem-address"
+        ]
+      },
+      {
+        "id": "obj-u25-documented-name-form",
+        "unitNumber": 25,
+        "title": "Recognize documented name forms without inventing new ones",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u25-st-teach-name-form-1",
+          "u25-st-teach-name-form-2",
+          "u25-st-teach-name-form-3"
+        ],
+        "exampleIds": [
+          "ex-u25-name-form-0",
+          "ex-u25-name-form-1"
+        ],
+        "practiceStepIds": [
+          "u25-st-guided-name-form-1"
+        ],
+        "checkItemIds": [
+          "u25-i-name-form-1",
+          "u25-i-name-form-2",
+          "u25-i-name-form-3"
+        ],
+        "remediationStepIds": [
+          "u25-st-rem-name-form"
+        ]
+      },
+      {
+        "id": "obj-u25-book",
+        "unitNumber": 25,
+        "title": "Self-attest Lesson 25 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u25-st-book-work",
+          "u25-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u25-s-orient",
+        "title": "Admitted name and courtesy lines",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u25-name-structure",
+          "obj-u25-diminutives",
+          "obj-u25-courtesy",
+          "obj-u25-name-question",
+          "obj-u25-nickname-rule",
+          "obj-u25-address",
+          "obj-u25-book"
+        ],
+        "steps": [
+          {
+            "id": "u25-st-orient",
+            "kind": "ORIENT",
+            "title": "Admitted name and courtesy lines",
+            "body": "Proposed Unit 25 uses frozen personal-name lines, listed diminutive pairs, a bounded classification of the frozen formation span, courtesy lines, and the frozen address-register sentences. Listed pairs do not establish a productive diminutive. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "bookDirection": "Open Lesson 25 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u25-s-name-structure",
+        "title": "Distinguish the parts of a Russian personal name",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u25-name-structure"
+        ],
+        "steps": [
+          {
+            "id": "u25-st-teach-name-structure-1",
+            "kind": "TEACH",
+            "title": "First name, patronymic and family name",
+            "body": "имя means first name. отчество means patronymic name. фамилия means family name. A patronymic identifies the father-derived part of a name; it is not the family name. These labels identify three name components rather than three alternative words for the same component.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-name-structure-0",
+              "ex-u25-name-structure-1"
+            ]
+          },
+          {
+            "id": "u25-st-teach-name-structure-2",
+            "kind": "TEACH",
+            "title": "A suffix is not a whole name category",
+            "body": "The retained introductory pattern describes a father's first name with ович, meaning son of, or овна, meaning daughter of. These are suffix labels, not whole words meaning first name, patronymic name or family name. They illustrate common patronymic patterns; they are not an exhaustive formation rule for every name.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u25-st-teach-name-structure-3",
+            "kind": "TEACH",
+            "title": "Read the two-part worked example",
+            "body": "Василий Иванович shows a first name followed by a patronymic. The surname is not shown. The older note For instance is a source fragment, not a translation of the name. A complete three-component name also has a family name. The choices recognize these components and do not ask you to construct a new patronymic.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-name-structure-2",
+              "ex-u25-name-structure-3"
+            ]
+          },
+          {
+            "id": "u25-st-guided-name-structure-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-g-name-structure-0"
+            ],
+            "remediationStepId": "u25-st-rem-name-structure"
+          },
+          {
+            "id": "u25-st-rem-name-structure",
+            "kind": "REMEDIATE",
+            "title": "Review the complete name or courtesy distinction",
+            "body": "имя means first name. отчество means patronymic name. фамилия means family name. A patronymic identifies the father-derived part of a name; it is not the family name. These labels identify three name components rather than three alternative words for the same component.\n\nThe retained introductory pattern describes a father's first name with ович, meaning son of, or овна, meaning daughter of. These are suffix labels, not whole words meaning first name, patronymic name or family name. They illustrate common patronymic patterns; they are not an exhaustive formation rule for every name.\n\nВасилий Иванович shows a first name followed by a patronymic. The surname is not shown. The older note For instance is a source fragment, not a translation of the name. A complete three-component name also has a family name. The choices recognize these components and do not ask you to construct a new patronymic.",
+            "exampleIds": [
+              "ex-u25-name-structure-0",
+              "ex-u25-name-structure-1",
+              "ex-u25-name-structure-2",
+              "ex-u25-name-structure-3"
+            ]
+          },
+          {
+            "id": "u25-st-check-name-structure",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-i-name-structure-1",
+              "u25-i-name-structure-2"
+            ],
+            "remediationStepId": "u25-st-rem-name-structure"
+          }
+        ]
+      },
+      {
+        "id": "u25-s-diminutives",
+        "title": "Recognize conventional short forms of the supplied names",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u25-diminutives"
+        ],
+        "steps": [
+          {
+            "id": "u25-st-teach-diminutives-1",
+            "kind": "TEACH",
+            "title": "Full names and the names used in the checks",
+            "body": "Александр is Alexander; Алексей is Alexei; Дмитрий is Dmitri. The checked conventional pairs are Alexander with Sasha, Alexei with Alyosha and Dmitri with Dima. A short form is a conventional personal-name form; it is not obtained by simply translating the full name into English.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-diminutives-0",
+              "ex-u25-diminutives-1"
+            ]
+          },
+          {
+            "id": "u25-st-teach-diminutives-2",
+            "kind": "TEACH",
+            "title": "Use the right conventional pair",
+            "body": "Sasha belongs to the supplied Alexander pair, Alyosha to the Alexei pair and Dima to the Dmitri pair. The other checked short forms belong to different full names in these examples. The retained list also gives Misha for Mikhail, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina. One name can have several documented forms.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u25-st-teach-diminutives-3",
+            "kind": "TEACH",
+            "title": "Recognition is not automatic name formation",
+            "body": "These checks use English transliterations of documented pairs. They do not test inventing a Russian spelling or adding a suffix to an unfamiliar name. Short and affectionate names can carry social meaning. Use a documented form and consider how the person wishes to be addressed rather than assuming every familiar form suits every situation.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-diminutives-2"
+            ]
+          },
+          {
+            "id": "u25-st-guided-diminutives-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-g-diminutives-0"
+            ],
+            "remediationStepId": "u25-st-rem-diminutives"
+          },
+          {
+            "id": "u25-st-rem-diminutives",
+            "kind": "REMEDIATE",
+            "title": "Review the complete name or courtesy distinction",
+            "body": "Александр is Alexander; Алексей is Alexei; Дмитрий is Dmitri. The checked conventional pairs are Alexander with Sasha, Alexei with Alyosha and Dmitri with Dima. A short form is a conventional personal-name form; it is not obtained by simply translating the full name into English.\n\nSasha belongs to the supplied Alexander pair, Alyosha to the Alexei pair and Dima to the Dmitri pair. The other checked short forms belong to different full names in these examples. The retained list also gives Misha for Mikhail, Lena for Elena, Olya for Olga, Natasha for Natalya and Katya for Ekaterina. One name can have several documented forms.\n\nThese checks use English transliterations of documented pairs. They do not test inventing a Russian spelling or adding a suffix to an unfamiliar name. Short and affectionate names can carry social meaning. Use a documented form and consider how the person wishes to be addressed rather than assuming every familiar form suits every situation.",
+            "exampleIds": [
+              "ex-u25-diminutives-0",
+              "ex-u25-diminutives-1",
+              "ex-u25-diminutives-2"
+            ]
+          },
+          {
+            "id": "u25-st-check-diminutives",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-i-diminutives-1",
+              "u25-i-diminutives-2"
+            ],
+            "remediationStepId": "u25-st-rem-diminutives"
+          }
+        ]
+      },
+      {
+        "id": "u25-s-courtesy",
+        "title": "Distinguish a request, thanks and an apology",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u25-courtesy"
+        ],
+        "steps": [
+          {
+            "id": "u25-st-teach-courtesy-1",
+            "kind": "TEACH",
+            "title": "Request and thanks have different functions",
+            "body": "Пожа́луйста means please in the supplied request use. Спаси́бо means thanks or thank you. A request asks for something; thanks responds with gratitude. The checks use these functions rather than treating all courtesy words as interchangeable.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-courtesy-0",
+              "ex-u25-courtesy-1"
+            ]
+          },
+          {
+            "id": "u25-st-teach-courtesy-2",
+            "kind": "TEACH",
+            "title": "An apology is not thanks",
+            "body": "Извини́те means excuse me with polite or plural address. Извини́ is the familiar singular form. In the checked descriptions, excuse me, polite or plural identifies the first form; excuse me, familiar singular identifies the second. Neither is the thank you response.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u25-st-teach-courtesy-3",
+            "kind": "TEACH",
+            "title": "Read the address distinction",
+            "body": "The ending in Извини́те permits polite address to one person or address to more than one person. It does not mean that every use has several listeners. The checked contrast identifies the supplied form, not a rule that a familiar apology is suitable for every relationship. The pronunciation label Pozhalusta in the older source is not another English meaning of please.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-courtesy-2"
+            ]
+          },
+          {
+            "id": "u25-st-guided-courtesy-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-g-courtesy-0"
+            ],
+            "remediationStepId": "u25-st-rem-courtesy"
+          },
+          {
+            "id": "u25-st-rem-courtesy",
+            "kind": "REMEDIATE",
+            "title": "Review the complete name or courtesy distinction",
+            "body": "Пожа́луйста means please in the supplied request use. Спаси́бо means thanks or thank you. A request asks for something; thanks responds with gratitude. The checks use these functions rather than treating all courtesy words as interchangeable.\n\nИзвини́те means excuse me with polite or plural address. Извини́ is the familiar singular form. In the checked descriptions, excuse me, polite or plural identifies the first form; excuse me, familiar singular identifies the second. Neither is the thank you response.\n\nThe ending in Извини́те permits polite address to one person or address to more than one person. It does not mean that every use has several listeners. The checked contrast identifies the supplied form, not a rule that a familiar apology is suitable for every relationship. The pronunciation label Pozhalusta in the older source is not another English meaning of please.",
+            "exampleIds": [
+              "ex-u25-courtesy-0",
+              "ex-u25-courtesy-1",
+              "ex-u25-courtesy-2"
+            ]
+          },
+          {
+            "id": "u25-st-check-courtesy",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-i-courtesy-1",
+              "u25-i-courtesy-2"
+            ],
+            "remediationStepId": "u25-st-rem-courtesy"
+          }
+        ]
+      },
+      {
+        "id": "u25-s-name-question",
+        "title": "Recognize a name question and the start of its reply",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u25-name-question"
+        ],
+        "steps": [
+          {
+            "id": "u25-st-teach-name-question-1",
+            "kind": "TEACH",
+            "title": "Ask for a name",
+            "body": "Как Вас зову́т? means What is your name? This supplied formula uses polite or plural address. The capital letter is a written courtesy convention; it does not create a different spoken pronoun. The question asks for a name rather than for an apology or a general report of how someone is doing.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-name-question-0",
+              "ex-u25-name-question-1"
+            ]
+          },
+          {
+            "id": "u25-st-teach-name-question-2",
+            "kind": "TEACH",
+            "title": "Begin the reply and then give the name",
+            "body": "Меня́ зову́т means My name is... It starts the name reply and must be followed by a name to give the requested information. The check recognizes that reply opening; it does not treat the fragment alone as a completed personal introduction.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u25-st-teach-name-question-3",
+            "kind": "TEACH",
+            "title": "Distinguish the other conversational functions",
+            "body": "Прошу́ проще́ния means I'm sorry / excuse me (formal), an apology. Как дела́? means How are you?, another question. Neither supplies the name requested by Как Вас зову́т? The matching reply opening is Меня́ зову́т. Use the conversational function of each formula rather than choosing another question.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-name-question-2",
+              "ex-u25-name-question-3"
+            ]
+          },
+          {
+            "id": "u25-st-guided-name-question-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-g-name-question-0"
+            ],
+            "remediationStepId": "u25-st-rem-name-question"
+          },
+          {
+            "id": "u25-st-rem-name-question",
+            "kind": "REMEDIATE",
+            "title": "Review the complete name or courtesy distinction",
+            "body": "Как Вас зову́т? means What is your name? This supplied formula uses polite or plural address. The capital letter is a written courtesy convention; it does not create a different spoken pronoun. The question asks for a name rather than for an apology or a general report of how someone is doing.\n\nМеня́ зову́т means My name is... It starts the name reply and must be followed by a name to give the requested information. The check recognizes that reply opening; it does not treat the fragment alone as a completed personal introduction.\n\nПрошу́ проще́ния means I'm sorry / excuse me (formal), an apology. Как дела́? means How are you?, another question. Neither supplies the name requested by Как Вас зову́т? The matching reply opening is Меня́ зову́т. Use the conversational function of each formula rather than choosing another question.",
+            "exampleIds": [
+              "ex-u25-name-question-0",
+              "ex-u25-name-question-1",
+              "ex-u25-name-question-2",
+              "ex-u25-name-question-3"
+            ]
+          },
+          {
+            "id": "u25-st-check-name-question",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-i-name-question-1",
+              "u25-i-name-question-2"
+            ],
+            "remediationStepId": "u25-st-rem-name-question"
+          }
+        ]
+      },
+      {
+        "id": "u25-s-nickname-rule",
+        "title": "Classify the documented name forms and their stated coloring",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u25-nickname-rule"
+        ],
+        "steps": [
+          {
+            "id": "u25-st-teach-nickname-rule-1",
+            "kind": "TEACH",
+            "title": "Explain the Russian classification labels",
+            "body": "Марюня is classified here as от полной формы имени, meaning from the full form of the name. Машенька is classified as от краткой формы, meaning from the short form. The retained examples relate these to Мария and Маша respectively. These are documented examples, not a rule for generating a derivative from any full or short name.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-nickname-rule-0",
+              "ex-u25-nickname-rule-1"
+            ]
+          },
+          {
+            "id": "u25-st-teach-nickname-rule-2",
+            "kind": "TEACH",
+            "title": "Distinguish derivation from social coloring",
+            "body": "Сашка is classified in this material as оттенок пренебрежения, meaning a shade of dismissiveness. That label describes social coloring; the two labels about full and short forms describe derivational bases. A form can have a base and social coloring at the same time. The question asks for the classification documented for this example, not mutually exclusive properties of every name.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u25-st-teach-nickname-rule-3",
+            "kind": "TEACH",
+            "title": "Keep the coloring claim within its context",
+            "body": "The retained text associates diminutive forms with the suffix -к- with dismissive coloring. Treat this as the source's classification of its examples, not proof that every use of every such name is insulting. Relationship, tone and setting affect interpretation. A documented label does not authorize inventing a new personal-name form or addressing someone that way without regard to their preference.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-nickname-rule-2"
+            ]
+          },
+          {
+            "id": "u25-st-guided-nickname-rule-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-g-nickname-rule-0"
+            ],
+            "remediationStepId": "u25-st-rem-nickname-rule"
+          },
+          {
+            "id": "u25-st-rem-nickname-rule",
+            "kind": "REMEDIATE",
+            "title": "Review the complete name or courtesy distinction",
+            "body": "Марюня is classified here as от полной формы имени, meaning from the full form of the name. Машенька is classified as от краткой формы, meaning from the short form. The retained examples relate these to Мария and Маша respectively. These are documented examples, not a rule for generating a derivative from any full or short name.\n\nСашка is classified in this material as оттенок пренебрежения, meaning a shade of dismissiveness. That label describes social coloring; the two labels about full and short forms describe derivational bases. A form can have a base and social coloring at the same time. The question asks for the classification documented for this example, not mutually exclusive properties of every name.\n\nThe retained text associates diminutive forms with the suffix -к- with dismissive coloring. Treat this as the source's classification of its examples, not proof that every use of every such name is insulting. Relationship, tone and setting affect interpretation. A documented label does not authorize inventing a new personal-name form or addressing someone that way without regard to their preference.",
+            "exampleIds": [
+              "ex-u25-nickname-rule-0",
+              "ex-u25-nickname-rule-1",
+              "ex-u25-nickname-rule-2"
+            ]
+          },
+          {
+            "id": "u25-st-check-nickname-rule",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-i-nickname-rule-1",
+              "u25-i-nickname-rule-2"
+            ],
+            "remediationStepId": "u25-st-rem-nickname-rule"
+          }
+        ]
+      },
+      {
+        "id": "u25-s-address",
+        "title": "Distinguish name-form categories and the illustrated register",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u25-address"
+        ],
+        "steps": [
+          {
+            "id": "u25-st-teach-address-1",
+            "kind": "TEACH",
+            "title": "Full and short forms",
+            "body": "Ирина is classified as полные имена, meaning full names. Ира is classified as краткие имена, meaning short names. These are forms of the supplied personal name, not different family names. A category identifies the form; it does not by itself settle what is courteous in every conversation.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-address-0",
+              "ex-u25-address-1"
+            ]
+          },
+          {
+            "id": "u25-st-teach-address-2",
+            "kind": "TEACH",
+            "title": "An affectionate form is another category",
+            "body": "Ирочка is classified as уменьшительно-ласкательные, meaning diminutive or affectionate forms. The full-name category полные имена and the short-name category краткие имена differ from this affectionate category. The examples recognize conventional forms; they do not license mechanical suffix formation for an unfamiliar name.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ]
+          },
+          {
+            "id": "u25-st-teach-address-3",
+            "kind": "TEACH",
+            "title": "Read the supplied register example without overgeneralizing",
+            "body": "For address by полному имени, meaning the full name, the source describes отстранённо-официального регистра, a detached formal register. It also discusses use in an official or полуофициальной обстановке, a semi-official setting; short forms are described in дружески-неофициальном общении, friendly informal communication. The check asks for the stated register, not every possible setting where a full name occurs. This example does not mean full first names are always formal, or that they always replace a patronymic in formal address. Relationship, setting and the person's preference matter.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-address-2",
+              "ex-u25-address-3"
+            ]
+          },
+          {
+            "id": "u25-st-guided-address-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-g-address-0"
+            ],
+            "remediationStepId": "u25-st-rem-address"
+          },
+          {
+            "id": "u25-st-rem-address",
+            "kind": "REMEDIATE",
+            "title": "Review the complete name or courtesy distinction",
+            "body": "Ирина is classified as полные имена, meaning full names. Ира is classified as краткие имена, meaning short names. These are forms of the supplied personal name, not different family names. A category identifies the form; it does not by itself settle what is courteous in every conversation.\n\nИрочка is classified as уменьшительно-ласкательные, meaning diminutive or affectionate forms. The full-name category полные имена and the short-name category краткие имена differ from this affectionate category. The examples recognize conventional forms; they do not license mechanical suffix formation for an unfamiliar name.\n\nFor address by полному имени, meaning the full name, the source describes отстранённо-официального регистра, a detached formal register. It also discusses use in an official or полуофициальной обстановке, a semi-official setting; short forms are described in дружески-неофициальном общении, friendly informal communication. The check asks for the stated register, not every possible setting where a full name occurs. This example does not mean full first names are always formal, or that they always replace a patronymic in formal address. Relationship, setting and the person's preference matter.",
+            "exampleIds": [
+              "ex-u25-address-0",
+              "ex-u25-address-1",
+              "ex-u25-address-2",
+              "ex-u25-address-3"
+            ]
+          },
+          {
+            "id": "u25-st-check-address",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-i-address-1",
+              "u25-i-address-2",
+              "u25-i-address-3"
+            ],
+            "remediationStepId": "u25-st-rem-address"
+          }
+        ]
+      },
+      {
+        "id": "u25-s-documented-name-form",
+        "title": "Recognize documented name forms without inventing new ones",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u25-documented-name-form"
+        ],
+        "steps": [
+          {
+            "id": "u25-st-teach-name-form-1",
+            "kind": "TEACH",
+            "title": "Conventional forms have documented bases",
+            "body": "Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked. Марюня is the supplied documented derivative of the full name; Машенька is the supplied documented derivative of the short form. These English descriptions classify the examples already studied. They are not instructions to create an unfamiliar name.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "exampleIds": [
+              "ex-u25-name-form-0",
+              "ex-u25-name-form-1"
+            ]
+          },
+          {
+            "id": "u25-st-teach-name-form-2",
+            "kind": "TEACH",
+            "title": "Several forms and a stated coloring",
+            "body": "One personal name may have several documented forms. Сашка carries documented dismissive coloring in the supplied material. That description concerns social coloring, while documented derivative of the full name and documented derivative of the short form concern derivational bases. Tone and relationship can affect actual use; the classification does not prove every utterance is dismissive."
+          },
+          {
+            "id": "u25-st-teach-name-form-3",
+            "kind": "TEACH",
+            "title": "Verify a form before treating it as acceptable",
+            "body": "A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name. For an unstudied personal name, the checked answer is unsupported until a names dictionary documents that form. The alternative the suffix mechanically generates an acceptable name overclaims what a suffix rule establishes. These checks recognize documented classifications and the verification limit; they do not assess free productive name formation."
+          },
+          {
+            "id": "u25-st-guided-name-form-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-g-name-form-1"
+            ],
+            "remediationStepId": "u25-st-rem-name-form"
+          },
+          {
+            "id": "u25-st-rem-name-form",
+            "kind": "REMEDIATE",
+            "title": "Review the complete name or courtesy distinction",
+            "body": "Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked. Марюня is the supplied documented derivative of the full name; Машенька is the supplied documented derivative of the short form. These English descriptions classify the examples already studied. They are not instructions to create an unfamiliar name.\n\nOne personal name may have several documented forms. Сашка carries documented dismissive coloring in the supplied material. That description concerns social coloring, while documented derivative of the full name and documented derivative of the short form concern derivational bases. Tone and relationship can affect actual use; the classification does not prove every utterance is dismissive.\n\nA suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name. For an unstudied personal name, the checked answer is unsupported until a names dictionary documents that form. The alternative the suffix mechanically generates an acceptable name overclaims what a suffix rule establishes. These checks recognize documented classifications and the verification limit; they do not assess free productive name formation.",
+            "exampleIds": [
+              "ex-u25-name-form-0",
+              "ex-u25-name-form-1"
+            ]
+          },
+          {
+            "id": "u25-st-check-name-form",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "Use the explanation and the supplied example to identify the requested name form, meaning or register. A missed check returns to the full explanation.",
+            "itemIds": [
+              "u25-i-name-form-1",
+              "u25-i-name-form-2",
+              "u25-i-name-form-3"
+            ],
+            "remediationStepId": "u25-st-rem-name-form"
+          }
+        ]
+      },
+      {
+        "id": "u25-s-book",
+        "title": "Self-attest Lesson 25",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u25-book"
+        ],
+        "steps": [
+          {
+            "id": "u25-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 25 in your copy",
+            "body": "Do Lesson 25 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+            "referenceIds": [
+              "ref-u2125-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 25: printed pages 305-319. PDF indexes 317-331 are file locators, not printed pages. Observed section locators: §25.1 p305 (PDF 317); §25.2 p305 (PDF 317); §25.3 p310 (PDF 322); §25.5 p311 (PDF 323); §25.6 p312 (PDF 324); §25.7 p312 (PDF 324); §25.8 p314 (PDF 326). Observed exercise locators: 25/1 p309/PDF321; 25/2 p312/PDF324; 25/3 p313/PDF325; 25/4 p315/PDF327; 25/5 p318/PDF330. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u25-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 25 book work",
+            "body": "When you have done Lesson 25 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 25: printed pages 305-319. PDF indexes 317-331 are file locators, not printed pages. Observed section locators: §25.1 p305 (PDF 317); §25.2 p305 (PDF 317); §25.3 p310 (PDF 322); §25.5 p311 (PDF 323); §25.6 p312 (PDF 324); §25.7 p312 (PDF 324); §25.8 p314 (PDF 326). Observed exercise locators: 25/1 p309/PDF321; 25/2 p312/PDF324; 25/3 p313/PDF325; 25/4 p315/PDF327; 25/5 p318/PDF330. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u25-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 25 AnkiDroid direction",
+            "body": "Unit 25 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u25-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 25 binder prompt",
+            "body": "Unit 25 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u25-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 25 optional tutor",
+            "body": "Unit 25 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u25-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 25 cumulative review",
+            "body": "Unit 25 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 25 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 8,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit25-prior-reading-negative-sentence-v1"
+    }
+  },
+  "items": [
+    {
+      "id": "u25-g-name-structure-0",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which Russian label names the component described by the cue?",
+      "promptLetter": "first name",
+      "options": [
+        "имя",
+        "отчество",
+        "фамилия",
+        "ович"
+      ],
+      "answer": "имя",
+      "feedback": "The frozen sentence says Russians use three names and pairs the shown words with this form.\nfirst name is the cue; имя matches the requested function or classification: the first-name label.",
+      "objectiveId": "obj-u25-name-structure",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words.",
+        "фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words.",
+        "ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words."
+      ],
+      "assessment": {
+        "testedFeature": "NAME_PAIR",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-name-structure-0",
+        "cueLanguage": "rule",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-u25-name-structure-0-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-name-structure-1-ru",
+          "prov-ex-u25-name-structure-2-ru",
+          "prov-u25-name-structure-rem-r2"
+        ],
+        "distractorDifference": [
+          "",
+          "отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words.",
+          "фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words.",
+          "ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen sentence says Russians use three names and pairs the shown words with this form.\nfirst name is the cue; имя matches the requested function or classification: the first-name label.",
+        "contrastMembers": [
+          "имя",
+          "отчество",
+          "фамилия",
+          "ович"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-name-structure-0-en",
+          "prov-ex-u25-name-structure-0-ru",
+          "prov-ex-u25-name-structure-1-ru",
+          "prov-ex-u25-name-structure-2-ru",
+          "prov-u25-name-structure-rem-r2"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u25-i-name-structure-1",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which Russian label names the component described by the cue?",
+      "promptLetter": "patronymic name",
+      "options": [
+        "отчество",
+        "имя",
+        "фамилия",
+        "овна"
+      ],
+      "answer": "отчество",
+      "feedback": "The frozen sentence says Russians use three names and pairs patronymic name with this form.\npatronymic name is the cue; отчество matches the requested function or classification: the patronymic-name label.",
+      "objectiveId": "obj-u25-name-structure",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words.",
+        "фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words.",
+        "овна: the retained daughter-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for daughter of, not as the pair for the shown words."
+      ],
+      "assessment": {
+        "testedFeature": "NAME_PAIR",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-name-structure-1",
+        "cueLanguage": "rule",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u25-name-structure-1-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-name-structure-0-ru",
+          "prov-ex-u25-name-structure-2-ru",
+          "prov-u25-name-structure-rem-r3"
+        ],
+        "distractorDifference": [
+          "",
+          "имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words.",
+          "фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words.",
+          "овна: the retained daughter-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for daughter of, not as the pair for the shown words."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen sentence says Russians use three names and pairs patronymic name with this form.\npatronymic name is the cue; отчество matches the requested function or classification: the patronymic-name label.",
+        "contrastMembers": [
+          "отчество",
+          "имя",
+          "фамилия",
+          "овна"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-name-structure-1-en",
+          "prov-ex-u25-name-structure-1-ru",
+          "prov-ex-u25-name-structure-0-ru",
+          "prov-ex-u25-name-structure-2-ru",
+          "prov-u25-name-structure-rem-r3"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u25-i-name-structure-2",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which Russian label names the component described by the cue?",
+      "promptLetter": "family name",
+      "options": [
+        "фамилия",
+        "имя",
+        "отчество",
+        "ович"
+      ],
+      "answer": "фамилия",
+      "feedback": "The frozen sentence says Russians use three names and pairs family name with this form.\nfamily name is the cue; фамилия matches the requested function or classification: the family-name label.",
+      "objectiveId": "obj-u25-name-structure",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words.",
+        "отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words.",
+        "ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words."
+      ],
+      "assessment": {
+        "testedFeature": "NAME_PAIR",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-name-structure-2",
+        "cueLanguage": "rule",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u25-name-structure-2-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-name-structure-0-ru",
+          "prov-ex-u25-name-structure-1-ru",
+          "prov-u25-name-structure-rem-r2"
+        ],
+        "distractorDifference": [
+          "",
+          "имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words.",
+          "отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words.",
+          "ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen sentence says Russians use three names and pairs family name with this form.\nfamily name is the cue; фамилия matches the requested function or classification: the family-name label.",
+        "contrastMembers": [
+          "фамилия",
+          "имя",
+          "отчество",
+          "ович"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-name-structure-2-en",
+          "prov-ex-u25-name-structure-2-ru",
+          "prov-ex-u25-name-structure-0-ru",
+          "prov-ex-u25-name-structure-1-ru",
+          "prov-u25-name-structure-rem-r2"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u25-g-diminutives-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English short form corresponds to the full name in the cue?",
+      "promptLetter": "Alexander",
+      "options": [
+        "Sasha",
+        "Alyosha",
+        "Dima"
+      ],
+      "answer": "Sasha",
+      "feedback": "The frozen list includes Sasha for Alexander as the pair for the shown name.\nAlexander is the cue; Sasha matches the requested function or classification: the supplied short form for Alexander.",
+      "objectiveId": "obj-u25-diminutives",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name.",
+        "Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name."
+      ],
+      "assessment": {
+        "testedFeature": "SHORT_FORM_PAIR",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-diminutives-0",
+        "cueLanguage": "rule",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-u25-diminutives-x-0"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-u25-diminutives-x-1",
+          "prov-u25-diminutives-x-2"
+        ],
+        "distractorDifference": [
+          "",
+          "Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name.",
+          "Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen list includes Sasha for Alexander as the pair for the shown name.\nAlexander is the cue; Sasha matches the requested function or classification: the supplied short form for Alexander.",
+        "contrastMembers": [
+          "Sasha",
+          "Alyosha",
+          "Dima"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-diminutives-0-en",
+          "prov-u25-diminutives-x-0",
+          "prov-u25-diminutives-x-1",
+          "prov-u25-diminutives-x-2"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u25-i-diminutives-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English short form corresponds to the full name in the cue?",
+      "promptLetter": "Alexei",
+      "options": [
+        "Alyosha",
+        "Sasha",
+        "Dima"
+      ],
+      "answer": "Alyosha",
+      "feedback": "The frozen list includes Alyosha for Alexei as the pair for the shown name.\nAlexei is the cue; Alyosha matches the requested function or classification: the supplied short form for Alexei.",
+      "objectiveId": "obj-u25-diminutives",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name.",
+        "Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name."
+      ],
+      "assessment": {
+        "testedFeature": "SHORT_FORM_PAIR",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-diminutives-1",
+        "cueLanguage": "rule",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-u25-diminutives-x-1"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-u25-diminutives-x-0",
+          "prov-u25-diminutives-x-2"
+        ],
+        "distractorDifference": [
+          "",
+          "Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name.",
+          "Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen list includes Alyosha for Alexei as the pair for the shown name.\nAlexei is the cue; Alyosha matches the requested function or classification: the supplied short form for Alexei.",
+        "contrastMembers": [
+          "Alyosha",
+          "Sasha",
+          "Dima"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-diminutives-1-en",
+          "prov-u25-diminutives-x-1",
+          "prov-u25-diminutives-x-0",
+          "prov-u25-diminutives-x-2"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u25-i-diminutives-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English short form corresponds to the full name in the cue?",
+      "promptLetter": "Dmitri",
+      "options": [
+        "Dima",
+        "Sasha",
+        "Alyosha"
+      ],
+      "answer": "Dima",
+      "feedback": "The frozen list includes Dima for Dmitri as the pair for the shown name.\nDmitri is the cue; Dima matches the requested function or classification: the supplied short form for Dmitri.",
+      "objectiveId": "obj-u25-diminutives",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name.",
+        "Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name."
+      ],
+      "assessment": {
+        "testedFeature": "SHORT_FORM_PAIR",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-diminutives-2",
+        "cueLanguage": "rule",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-u25-diminutives-x-2"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-u25-diminutives-x-0",
+          "prov-u25-diminutives-x-1"
+        ],
+        "distractorDifference": [
+          "",
+          "Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name.",
+          "Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen list includes Dima for Dmitri as the pair for the shown name.\nDmitri is the cue; Dima matches the requested function or classification: the supplied short form for Dmitri.",
+        "contrastMembers": [
+          "Dima",
+          "Sasha",
+          "Alyosha"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-diminutives-2-en",
+          "prov-u25-diminutives-x-2",
+          "prov-u25-diminutives-x-0",
+          "prov-u25-diminutives-x-1"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u25-g-courtesy-0",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which expression performs the courtesy function in the cue?",
+      "promptLetter": "please",
+      "options": [
+        "Пожа́луйста",
+        "Спаси́бо",
+        "Извини́те"
+      ],
+      "answer": "Пожа́луйста",
+      "feedback": "The frozen list says please; also used for a request and pairs that word with this form.\nplease is the cue; Пожа́луйста matches the requested function or classification: please in the supplied request use.",
+      "objectiveId": "obj-u25-courtesy",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "Спаси́бо: thanks or thank you. This differs from the classification or conversational function requested here. The frozen list pairs thanks with a different form.",
+        "Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. Извини́те is the polite or plural form. The familiar singular is Извини́."
+      ],
+      "assessment": {
+        "testedFeature": "COURTESY_PAIR",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-courtesy-0",
+        "cueLanguage": "rule",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-u25-courtesy-0-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-courtesy-1-ru",
+          "prov-ex-u25-courtesy-2-ru"
+        ],
+        "distractorDifference": [
+          "",
+          "Спаси́бо: thanks or thank you. This differs from the classification or conversational function requested here. The frozen list pairs thanks with a different form.",
+          "Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. Извини́те is the polite or plural form. The familiar singular is Извини́."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen list says please; also used for a request and pairs that word with this form.\nplease is the cue; Пожа́луйста matches the requested function or classification: please in the supplied request use.",
+        "contrastMembers": [
+          "Пожа́луйста",
+          "Спаси́бо",
+          "Извини́те"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-courtesy-0-en",
+          "prov-ex-u25-courtesy-0-ru",
+          "prov-ex-u25-courtesy-1-ru",
+          "prov-ex-u25-courtesy-2-ru"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u25-i-courtesy-1",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which expression performs the courtesy function in the cue?",
+      "promptLetter": "thanks",
+      "options": [
+        "Спаси́бо",
+        "Пожа́луйста",
+        "Извини́те"
+      ],
+      "answer": "Спаси́бо",
+      "feedback": "The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.\nthanks is the cue; Спаси́бо matches the requested function or classification: thanks or thank you.",
+      "objectiveId": "obj-u25-courtesy",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "Пожа́луйста: please in the supplied request use. This differs from the classification or conversational function requested here. The frozen list says please; also used for a request, not for thanks.",
+        "Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (informal) with a different form."
+      ],
+      "assessment": {
+        "testedFeature": "COURTESY_PAIR",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-courtesy-1",
+        "cueLanguage": "rule",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u25-courtesy-1-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-courtesy-0-ru",
+          "prov-ex-u25-courtesy-2-ru"
+        ],
+        "distractorDifference": [
+          "",
+          "Пожа́луйста: please in the supplied request use. This differs from the classification or conversational function requested here. The frozen list says please; also used for a request, not for thanks.",
+          "Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (informal) with a different form."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.\nthanks is the cue; Спаси́бо matches the requested function or classification: thanks or thank you.",
+        "contrastMembers": [
+          "Спаси́бо",
+          "Пожа́луйста",
+          "Извини́те"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-courtesy-1-en",
+          "prov-ex-u25-courtesy-1-ru",
+          "prov-ex-u25-courtesy-0-ru",
+          "prov-ex-u25-courtesy-2-ru"
+        ],
+        "responseKind": "RUSSIAN_TOKEN"
+      }
+    },
+    {
+      "id": "u25-i-courtesy-2",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Choose the English description. Which address does Извини́те mark?",
+      "promptLetter": "Извини́те",
+      "options": [
+        "excuse me, polite or plural",
+        "excuse me, familiar singular",
+        "thank you"
+      ],
+      "answer": "excuse me, polite or plural",
+      "feedback": "The -те form marks polite or plural address.\nИзвини́те is the cue; excuse me, polite or plural matches the requested function or classification: the polite-or-plural apology description.",
+      "objectiveId": "obj-u25-courtesy",
+      "sourceId": "src-content-audit-research",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "excuse me, familiar singular: the familiar-singular apology description. This differs from the classification or conversational function requested here. excuse me, familiar singular is Извини́, without -те.",
+        "thank you: gratitude rather than an apology. This differs from the classification or conversational function requested here. thank you is a different courtesy formula."
+      ],
+      "assessment": {
+        "testedFeature": "POLITE_IZVINITE",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u25-courtesy-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-25-582"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-25-586",
+          "prov-ca-25-587"
+        ],
+        "distractorDifference": [
+          "",
+          "excuse me, familiar singular: the familiar-singular apology description. This differs from the classification or conversational function requested here. excuse me, familiar singular is Извини́, without -те.",
+          "thank you: gratitude rather than an apology. This differs from the classification or conversational function requested here. thank you is a different courtesy formula."
+        ],
+        "whyAnswerDemonstratesObjective": "The -те form marks polite or plural address.\nИзвини́те is the cue; excuse me, polite or plural matches the requested function or classification: the polite-or-plural apology description.",
+        "contrastMembers": [
+          "excuse me, polite or plural",
+          "excuse me, familiar singular",
+          "thank you"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-25-581",
+          "prov-ca-25-582",
+          "prov-ca-25-586",
+          "prov-ca-25-587"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u25-g-name-question-0",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which Russian formula performs the conversational function in the cue?",
+      "promptLetter": "What is your name?",
+      "options": [
+        "Как Вас зову́т?",
+        "Меня́ зову́т",
+        "Прошу́ проще́ния"
+      ],
+      "answer": "Как Вас зову́т?",
+      "feedback": "The frozen list pairs What is your name? with this form and My name is... with the reply.\nWhat is your name? is the cue; Как Вас зову́т? matches the requested function or classification: the name question.",
+      "objectiveId": "obj-u25-name-question",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "Меня́ зову́т: the reply opening followed by a name. This differs from the classification or conversational function requested here. The frozen list pairs My name is... with the reply, not with the shown question.",
+        "Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form."
+      ],
+      "assessment": {
+        "testedFeature": "NAME_QUESTION_PAIR",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-name-question-0",
+        "cueLanguage": "rule",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-u25-name-question-0-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-name-question-1-ru",
+          "prov-ex-u25-name-question-2-ru"
+        ],
+        "distractorDifference": [
+          "",
+          "Меня́ зову́т: the reply opening followed by a name. This differs from the classification or conversational function requested here. The frozen list pairs My name is... with the reply, not with the shown question.",
+          "Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen list pairs What is your name? with this form and My name is... with the reply.\nWhat is your name? is the cue; Как Вас зову́т? matches the requested function or classification: the name question.",
+        "contrastMembers": [
+          "Как Вас зову́т?",
+          "Меня́ зову́т",
+          "Прошу́ проще́ния"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-name-question-0-en",
+          "prov-ex-u25-name-question-0-ru",
+          "prov-ex-u25-name-question-1-ru",
+          "prov-ex-u25-name-question-2-ru"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u25-i-name-question-1",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which Russian formula performs the conversational function in the cue?",
+      "promptLetter": "My name is...",
+      "options": [
+        "Меня́ зову́т",
+        "Как Вас зову́т?",
+        "Прошу́ проще́ния"
+      ],
+      "answer": "Меня́ зову́т",
+      "feedback": "The frozen list pairs My name is... with this reply and What is your name? with the question.\nMy name is... is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.",
+      "objectiveId": "obj-u25-name-question",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "Как Вас зову́т?: the name question. This differs from the classification or conversational function requested here. The frozen list pairs What is your name? with the question, not with the shown reply.",
+        "Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form."
+      ],
+      "assessment": {
+        "testedFeature": "NAME_ANSWER_PAIR",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-name-question-1",
+        "cueLanguage": "rule",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u25-name-question-1-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-name-question-0-ru",
+          "prov-ex-u25-name-question-2-ru"
+        ],
+        "distractorDifference": [
+          "",
+          "Как Вас зову́т?: the name question. This differs from the classification or conversational function requested here. The frozen list pairs What is your name? with the question, not with the shown reply.",
+          "Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen list pairs My name is... with this reply and What is your name? with the question.\nMy name is... is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.",
+        "contrastMembers": [
+          "Меня́ зову́т",
+          "Как Вас зову́т?",
+          "Прошу́ проще́ния"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-name-question-1-en",
+          "prov-ex-u25-name-question-1-ru",
+          "prov-ex-u25-name-question-0-ru",
+          "prov-ex-u25-name-question-2-ru"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u25-i-name-question-2",
+      "kind": "FORM_SELECTION",
+      "language": "en",
+      "prompt": "Which formula begins an answer to this name question?",
+      "promptLetter": "Как Вас зову́т?",
+      "options": [
+        "Меня́ зову́т",
+        "Прошу́ проще́ния",
+        "Как дела́?"
+      ],
+      "answer": "Меня́ зову́т",
+      "feedback": "The frozen list pairs My name is... with this reply and What is your name? with the shown question.\nКак Вас зову́т? is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.",
+      "objectiveId": "obj-u25-name-question",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.",
+        "Как дела́?: a question asking how someone is doing. This differs from the classification or conversational function requested here. The frozen list pairs How are you? with this form, not with the name reply."
+      ],
+      "assessment": {
+        "testedFeature": "NAME_ANSWER_PAIR",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-name-question-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u25-name-question-1-ru"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-name-question-2-ru",
+          "prov-ex-u25-name-question-3-ru"
+        ],
+        "distractorDifference": [
+          "",
+          "Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.",
+          "Как дела́?: a question asking how someone is doing. This differs from the classification or conversational function requested here. The frozen list pairs How are you? with this form, not with the name reply."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen list pairs My name is... with this reply and What is your name? with the shown question.\nКак Вас зову́т? is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.",
+        "contrastMembers": [
+          "Меня́ зову́т",
+          "Прошу́ проще́ния",
+          "Как дела́?"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-name-question-0-ru",
+          "prov-ex-u25-name-question-1-ru",
+          "prov-ex-u25-name-question-2-ru",
+          "prov-ex-u25-name-question-3-ru"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u25-g-nickname-rule-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which classification describes this documented example?",
+      "promptLetter": "Марюня",
+      "options": [
+        "от полной формы имени",
+        "от краткой формы",
+        "оттенок пренебрежения"
+      ],
+      "answer": "от полной формы имени",
+      "feedback": "The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени.\nМарюня is the cue; от полной формы имени matches the requested function or classification: derivation from the full form of the name.",
+      "objectiveId": "obj-u25-nickname-rule",
+      "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька.",
+        "оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка."
+      ],
+      "assessment": {
+        "testedFeature": "DIMINUTIVE_FORM_CLASSIFICATION",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-nickname-rule-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-u25-nickname-rule-0-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-nickname-rule-1-en",
+          "prov-ex-u25-nickname-rule-2-en"
+        ],
+        "distractorDifference": [
+          "",
+          "от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька.",
+          "оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка."
+        ],
+        "whyAnswerDemonstratesObjective": "The source says от полной формы имени and gives Марюня. The keyed phrase is от полной формы имени.\nМарюня is the cue; от полной формы имени matches the requested function or classification: derivation from the full form of the name.",
+        "contrastMembers": [
+          "от полной формы имени",
+          "от краткой формы",
+          "оттенок пренебрежения"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-nickname-rule-0-ru",
+          "prov-ex-u25-nickname-rule-0-en",
+          "prov-ex-u25-nickname-rule-1-en",
+          "prov-ex-u25-nickname-rule-2-en"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u25-i-nickname-rule-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which classification describes this documented example?",
+      "promptLetter": "Машенька",
+      "options": [
+        "от краткой формы",
+        "от полной формы имени",
+        "оттенок пренебрежения"
+      ],
+      "answer": "от краткой формы",
+      "feedback": "The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы.\nМашенька is the cue; от краткой формы matches the requested function or classification: derivation from the short form.",
+      "objectiveId": "obj-u25-nickname-rule",
+      "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня.",
+        "оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка."
+      ],
+      "assessment": {
+        "testedFeature": "DIMINUTIVE_FORM_CLASSIFICATION",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-nickname-rule-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u25-nickname-rule-1-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-nickname-rule-0-en",
+          "prov-ex-u25-nickname-rule-2-en"
+        ],
+        "distractorDifference": [
+          "",
+          "от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня.",
+          "оттенок пренебрежения: a shade of dismissiveness in the supplied classification. This differs from the classification or conversational function requested here. The source assigns оттенок пренебрежения to Сашка."
+        ],
+        "whyAnswerDemonstratesObjective": "The source says от краткой формы and gives Машенька. The keyed phrase is от краткой формы.\nМашенька is the cue; от краткой формы matches the requested function or classification: derivation from the short form.",
+        "contrastMembers": [
+          "от краткой формы",
+          "от полной формы имени",
+          "оттенок пренебрежения"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-nickname-rule-1-ru",
+          "prov-ex-u25-nickname-rule-1-en",
+          "prov-ex-u25-nickname-rule-0-en",
+          "prov-ex-u25-nickname-rule-2-en"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u25-i-nickname-rule-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which classification describes this documented example?",
+      "promptLetter": "Сашка",
+      "options": [
+        "оттенок пренебрежения",
+        "от полной формы имени",
+        "от краткой формы"
+      ],
+      "answer": "оттенок пренебрежения",
+      "feedback": "The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения.\nСашка is the cue; оттенок пренебрежения matches the requested function or classification: a shade of dismissiveness in the supplied classification.",
+      "objectiveId": "obj-u25-nickname-rule",
+      "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня.",
+        "от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька."
+      ],
+      "assessment": {
+        "testedFeature": "DIMINUTIVE_FORM_CLASSIFICATION",
+        "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+        "contrastSetId": "u25-nickname-rule-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u25-nickname-rule-2-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-nickname-rule-0-en",
+          "prov-ex-u25-nickname-rule-1-en"
+        ],
+        "distractorDifference": [
+          "",
+          "от полной формы имени: derivation from the full form of the name. This differs from the classification or conversational function requested here. The source assigns от полной формы имени to Марюня.",
+          "от краткой формы: derivation from the short form. This differs from the classification or conversational function requested here. The source assigns от краткой формы to Машенька."
+        ],
+        "whyAnswerDemonstratesObjective": "The source says these forms carry оттенок пренебрежения and gives Сашка. The keyed phrase is оттенок пренебрежения.\nСашка is the cue; оттенок пренебрежения matches the requested function or classification: a shade of dismissiveness in the supplied classification.",
+        "contrastMembers": [
+          "оттенок пренебрежения",
+          "от полной формы имени",
+          "от краткой формы"
+        ],
+        "relationKind": "SOURCE_SUPPLIED_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-nickname-rule-2-ru",
+          "prov-ex-u25-nickname-rule-2-en",
+          "prov-ex-u25-nickname-rule-0-en",
+          "prov-ex-u25-nickname-rule-1-en"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u25-g-address-0",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which name-form category describes this example?",
+      "promptLetter": "Ирина",
+      "options": [
+        "полные имена",
+        "краткие имена",
+        "уменьшительно-ласкательные"
+      ],
+      "answer": "полные имена",
+      "feedback": "The frozen source pairs the shown form \"Ирина\" with the admitted gloss \"полные имена\" (\"полные имена — Ирина\").\nИрина is the cue; полные имена matches the requested function or classification: the full-name category.",
+      "objectiveId": "obj-u25-address",
+      "sourceId": "src-ruwiki-obraschenie-153012874",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ира\" with the admitted gloss \"краткие имена\" (\"краткие имена — Ира\").",
+        "уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирочка\" with the admitted gloss \"уменьшительно-ласкательные\" (\"уменьшительно-ласкательные — Ирочка\")."
+      ],
+      "assessment": {
+        "testedFeature": "REGISTER_FULL",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u25-address-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ex-u25-address-0-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-address-1-en",
+          "prov-ex-u25-address-2-en"
+        ],
+        "distractorDifference": [
+          "",
+          "краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ира\" with the admitted gloss \"краткие имена\" (\"краткие имена — Ира\").",
+          "уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирочка\" with the admitted gloss \"уменьшительно-ласкательные\" (\"уменьшительно-ласкательные — Ирочка\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Ирина\" with the admitted gloss \"полные имена\" (\"полные имена — Ирина\").\nИрина is the cue; полные имена matches the requested function or classification: the full-name category.",
+        "contrastMembers": [
+          "полные имена",
+          "краткие имена",
+          "уменьшительно-ласкательные"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-address-0-ru",
+          "prov-ex-u25-address-0-en",
+          "prov-ex-u25-address-1-en",
+          "prov-ex-u25-address-2-en"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u25-i-address-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which name-form category describes this example?",
+      "promptLetter": "Ира",
+      "options": [
+        "краткие имена",
+        "полные имена",
+        "уменьшительно-ласкательные"
+      ],
+      "answer": "краткие имена",
+      "feedback": "The frozen source pairs the shown form \"Ира\" with the admitted gloss \"краткие имена\" (\"краткие имена — Ира\").\nИра is the cue; краткие имена matches the requested function or classification: the short-name category.",
+      "objectiveId": "obj-u25-address",
+      "sourceId": "src-ruwiki-obraschenie-153012874",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирина\" with the admitted gloss \"полные имена\" (\"полные имена — Ирина\").",
+        "уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирочка\" with the admitted gloss \"уменьшительно-ласкательные\" (\"уменьшительно-ласкательные — Ирочка\")."
+      ],
+      "assessment": {
+        "testedFeature": "REGISTER_SHORT",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u25-address-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u25-address-1-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-address-0-en",
+          "prov-ex-u25-address-2-en"
+        ],
+        "distractorDifference": [
+          "",
+          "полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирина\" with the admitted gloss \"полные имена\" (\"полные имена — Ирина\").",
+          "уменьшительно-ласкательные: the diminutive or affectionate category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирочка\" with the admitted gloss \"уменьшительно-ласкательные\" (\"уменьшительно-ласкательные — Ирочка\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Ира\" with the admitted gloss \"краткие имена\" (\"краткие имена — Ира\").\nИра is the cue; краткие имена matches the requested function or classification: the short-name category.",
+        "contrastMembers": [
+          "краткие имена",
+          "полные имена",
+          "уменьшительно-ласкательные"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-address-1-ru",
+          "prov-ex-u25-address-1-en",
+          "prov-ex-u25-address-0-en",
+          "prov-ex-u25-address-2-en"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u25-i-address-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which name-form category describes this example?",
+      "promptLetter": "Ирочка",
+      "options": [
+        "уменьшительно-ласкательные",
+        "полные имена",
+        "краткие имена"
+      ],
+      "answer": "уменьшительно-ласкательные",
+      "feedback": "The frozen source pairs the shown form \"Ирочка\" with the admitted gloss \"уменьшительно-ласкательные\" (\"уменьшительно-ласкательные — Ирочка\").\nИрочка is the cue; уменьшительно-ласкательные matches the requested function or classification: the diminutive or affectionate category.",
+      "objectiveId": "obj-u25-address",
+      "sourceId": "src-ruwiki-obraschenie-153012874",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирина\" with the admitted gloss \"полные имена\" (\"полные имена — Ирина\").",
+        "краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ира\" with the admitted gloss \"краткие имена\" (\"краткие имена — Ира\")."
+      ],
+      "assessment": {
+        "testedFeature": "REGISTER_DIMINUTIVE",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u25-address-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u25-address-2-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u25-address-0-en",
+          "prov-ex-u25-address-1-en"
+        ],
+        "distractorDifference": [
+          "",
+          "полные имена: the full-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ирина\" with the admitted gloss \"полные имена\" (\"полные имена — Ирина\").",
+          "краткие имена: the short-name category. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"Ира\" with the admitted gloss \"краткие имена\" (\"краткие имена — Ира\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Ирочка\" with the admitted gloss \"уменьшительно-ласкательные\" (\"уменьшительно-ласкательные — Ирочка\").\nИрочка is the cue; уменьшительно-ласкательные matches the requested function or classification: the diminutive or affectionate category.",
+        "contrastMembers": [
+          "уменьшительно-ласкательные",
+          "полные имена",
+          "краткие имена"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-address-2-ru",
+          "prov-ex-u25-address-2-en",
+          "prov-ex-u25-address-0-en",
+          "prov-ex-u25-address-1-en"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u25-i-address-3",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which register does the supplied full-name address example illustrate?",
+      "promptLetter": "полному имени",
+      "options": [
+        "отстранённо-официального регистра",
+        "дружески-неофициальном общении",
+        "полуофициальной обстановке"
+      ],
+      "answer": "отстранённо-официального регистра",
+      "feedback": "The frozen source pairs the shown form \"полному имени\" with the admitted gloss \"отстранённо-официального регистра\" (\"отстранённо-официального регистра\").\nполному имени is the cue; отстранённо-официального регистра matches the requested function or classification: the stated detached formal register.",
+      "objectiveId": "obj-u25-address",
+      "sourceId": "src-ruwiki-obraschenie-153012874",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "дружески-неофициальном общении: friendly informal communication. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"полному имени\" with the admitted gloss \"дружески-неофициальном общении\" (\"дружески-неофициальном общении\").",
+        "полуофициальной обстановке: a semi-official setting rather than the requested register label. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"полному имени\" with the admitted gloss \"полуофициальной обстановке\" (\"полуофициальной обстановке\")."
+      ],
+      "assessment": {
+        "testedFeature": "REGISTER_OFFICIAL",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u25-address-3",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u25-address-3-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-u25-address-x-4",
+          "prov-u25-address-x-5"
+        ],
+        "distractorDifference": [
+          "",
+          "дружески-неофициальном общении: friendly informal communication. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"полному имени\" with the admitted gloss \"дружески-неофициальном общении\" (\"дружески-неофициальном общении\").",
+          "полуофициальной обстановке: a semi-official setting rather than the requested register label. This differs from the classification or conversational function requested here. The frozen source pairs the shown form \"полному имени\" with the admitted gloss \"полуофициальной обстановке\" (\"полуофициальной обстановке\")."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"полному имени\" with the admitted gloss \"отстранённо-официального регистра\" (\"отстранённо-официального регистра\").\nполному имени is the cue; отстранённо-официального регистра matches the requested function or classification: the stated detached formal register.",
+        "contrastMembers": [
+          "отстранённо-официального регистра",
+          "дружески-неофициальном общении",
+          "полуофициальной обстановке"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u25-address-3-ru",
+          "prov-ex-u25-address-3-en",
+          "prov-u25-address-x-4",
+          "prov-u25-address-x-5"
+        ],
+        "responseKind": "RUSSIAN_PHRASE"
+      }
+    },
+    {
+      "id": "u25-g-name-form-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English classification describes the shown documented name form?",
+      "promptLetter": "Марюня",
+      "options": [
+        "documented derivative of the full name",
+        "documented derivative of the short form",
+        "documented dismissive coloring"
+      ],
+      "answer": "documented derivative of the full name",
+      "feedback": "Марюня is a documented derivative of the full name in this admitted material.\nМарюня is the cue; documented derivative of the full name matches the requested function or classification: a documented full-name derivational base.",
+      "objectiveId": "obj-u25-documented-name-form",
+      "sourceId": "src-original-research-synthesis",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "documented derivative of the short form: a documented short-form derivational base. This differs from the classification or conversational function requested here. Машенька is a documented derivative of the short form in this admitted material.",
+        "documented dismissive coloring: the social coloring documented for the supplied example. This differs from the classification or conversational function requested here. Сашка carries documented dismissive coloring in this admitted material."
+      ],
+      "assessment": {
+        "testedFeature": "DOCUMENTED_FULL_FORM_DERIVATIVE",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u25-g-name-form-1",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-u25-name-form-11"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-u25-name-form-12",
+          "prov-u25-name-form-13"
+        ],
+        "distractorDifference": [
+          "",
+          "documented derivative of the short form: a documented short-form derivational base. This differs from the classification or conversational function requested here. Машенька is a documented derivative of the short form in this admitted material.",
+          "documented dismissive coloring: the social coloring documented for the supplied example. This differs from the classification or conversational function requested here. Сашка carries documented dismissive coloring in this admitted material."
+        ],
+        "whyAnswerDemonstratesObjective": "Марюня is a documented derivative of the full name in this admitted material.\nМарюня is the cue; documented derivative of the full name matches the requested function or classification: a documented full-name derivational base.",
+        "contrastMembers": [
+          "documented derivative of the full name",
+          "documented derivative of the short form",
+          "documented dismissive coloring"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-u25-name-form-10",
+          "prov-u25-name-form-11",
+          "prov-u25-name-form-12",
+          "prov-u25-name-form-13"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u25-i-name-form-1",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English description classifies this documented personal-name example?",
+      "promptLetter": "Машенька",
+      "options": [
+        "documented derivative of the short form",
+        "documented derivative of the full name",
+        "documented dismissive coloring"
+      ],
+      "answer": "documented derivative of the short form",
+      "feedback": "Машенька is a documented derivative of the short form in this admitted material.\nМашенька is the cue; documented derivative of the short form matches the requested function or classification: a documented short-form derivational base.",
+      "objectiveId": "obj-u25-documented-name-form",
+      "sourceId": "src-original-research-synthesis",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "documented derivative of the full name: a documented full-name derivational base. This differs from the classification or conversational function requested here. Марюня is a documented derivative of the full name in this admitted material.",
+        "documented dismissive coloring: the social coloring documented for the supplied example. This differs from the classification or conversational function requested here. Сашка carries documented dismissive coloring in this admitted material."
+      ],
+      "assessment": {
+        "testedFeature": "DOCUMENTED_SHORT_FORM_DERIVATIVE",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u25-i-name-form-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-u25-name-form-12"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-u25-name-form-11",
+          "prov-u25-name-form-13"
+        ],
+        "distractorDifference": [
+          "",
+          "documented derivative of the full name: a documented full-name derivational base. This differs from the classification or conversational function requested here. Марюня is a documented derivative of the full name in this admitted material.",
+          "documented dismissive coloring: the social coloring documented for the supplied example. This differs from the classification or conversational function requested here. Сашка carries documented dismissive coloring in this admitted material."
+        ],
+        "whyAnswerDemonstratesObjective": "Машенька is a documented derivative of the short form in this admitted material.\nМашенька is the cue; documented derivative of the short form matches the requested function or classification: a documented short-form derivational base.",
+        "contrastMembers": [
+          "documented derivative of the short form",
+          "documented derivative of the full name",
+          "documented dismissive coloring"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-u25-name-form-8",
+          "prov-u25-name-form-12",
+          "prov-u25-name-form-11",
+          "prov-u25-name-form-13"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u25-i-name-form-2",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English classification matches this supplied personal-name example?",
+      "promptLetter": "Сашка",
+      "options": [
+        "documented dismissive coloring",
+        "documented derivative of the full name",
+        "documented derivative of the short form"
+      ],
+      "answer": "documented dismissive coloring",
+      "feedback": "Сашка carries documented dismissive coloring in this admitted material.\nСашка is the cue; documented dismissive coloring matches the requested function or classification: the social coloring documented for the supplied example.",
+      "objectiveId": "obj-u25-documented-name-form",
+      "sourceId": "src-original-research-synthesis",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "documented derivative of the full name: a documented full-name derivational base. This differs from the classification or conversational function requested here. Марюня is a documented derivative of the full name in this admitted material.",
+        "documented derivative of the short form: a documented short-form derivational base. This differs from the classification or conversational function requested here. Машенька is a documented derivative of the short form in this admitted material."
+      ],
+      "assessment": {
+        "testedFeature": "DOCUMENTED_DISMISSIVE_COLORING",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u25-i-name-form-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-u25-name-form-13"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-u25-name-form-11",
+          "prov-u25-name-form-12"
+        ],
+        "distractorDifference": [
+          "",
+          "documented derivative of the full name: a documented full-name derivational base. This differs from the classification or conversational function requested here. Марюня is a documented derivative of the full name in this admitted material.",
+          "documented derivative of the short form: a documented short-form derivational base. This differs from the classification or conversational function requested here. Машенька is a documented derivative of the short form in this admitted material."
+        ],
+        "whyAnswerDemonstratesObjective": "Сашка carries documented dismissive coloring in this admitted material.\nСашка is the cue; documented dismissive coloring matches the requested function or classification: the social coloring documented for the supplied example.",
+        "contrastMembers": [
+          "documented dismissive coloring",
+          "documented derivative of the full name",
+          "documented derivative of the short form"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-u25-name-form-9",
+          "prov-u25-name-form-13",
+          "prov-u25-name-form-11",
+          "prov-u25-name-form-12"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u25-i-name-form-3",
+      "kind": "CONTRAST_SELECTION",
+      "language": "en",
+      "prompt": "Which English description matches an unstudied personal name?",
+      "promptLetter": "an unstudied personal name",
+      "options": [
+        "unsupported until a names dictionary documents that form",
+        "the suffix mechanically generates an acceptable name"
+      ],
+      "answer": "unsupported until a names dictionary documents that form",
+      "feedback": "An unfamiliar form must be verified in a names dictionary.\nan unstudied personal name is the cue; unsupported until a names dictionary documents that form matches the requested function or classification: the required documentation limit for an unfamiliar form.",
+      "objectiveId": "obj-u25-documented-name-form",
+      "sourceId": "src-original-research-synthesis",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "containsGeneratedRussian": false,
+      "distractorRationales": [
+        "",
+        "the suffix mechanically generates an acceptable name: an unsupported claim of automatic acceptable formation. This differs from the classification or conversational function requested here. A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name."
+      ],
+      "assessment": {
+        "testedFeature": "REJECTED_ARBITRARY_NAME",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u25-i-name-form-3",
+        "cueLanguage": "rule",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-u25-name-form-14"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-u25-name-form-15"
+        ],
+        "distractorDifference": [
+          "",
+          "the suffix mechanically generates an acceptable name: an unsupported claim of automatic acceptable formation. This differs from the classification or conversational function requested here. A suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name."
+        ],
+        "whyAnswerDemonstratesObjective": "An unfamiliar form must be verified in a names dictionary.\nan unstudied personal name is the cue; unsupported until a names dictionary documents that form matches the requested function or classification: the required documentation limit for an unfamiliar form.",
+        "contrastMembers": [
+          "unsupported until a names dictionary documents that form",
+          "the suffix mechanically generates an acceptable name"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-u25-name-form-20",
+          "prov-u25-name-form-14",
+          "prov-u25-name-form-15"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "id": "ex-u25-name-structure-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "имя",
+      "note": "first name",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-name-structure"
+    },
+    {
+      "id": "ex-u25-name-structure-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "отчество",
+      "note": "patronymic name",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-name-structure"
+    },
+    {
+      "id": "ex-u25-name-structure-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "фамилия",
+      "note": "family name",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-name-structure"
+    },
+    {
+      "id": "ex-u25-name-structure-3",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Василий Иванович",
+      "note": "For instance",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-name-structure"
+    },
+    {
+      "id": "ex-u25-diminutives-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Александр",
+      "note": "Alexander",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-diminutives"
+    },
+    {
+      "id": "ex-u25-diminutives-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Алексей",
+      "note": "Alexei",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-diminutives"
+    },
+    {
+      "id": "ex-u25-diminutives-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Дмитрий",
+      "note": "Dmitri",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-diminutives"
+    },
+    {
+      "id": "ex-u25-courtesy-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Пожа́луйста",
+      "note": "please",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-courtesy"
+    },
+    {
+      "id": "ex-u25-courtesy-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Спаси́бо",
+      "note": "thanks",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-courtesy"
+    },
+    {
+      "id": "ex-u25-courtesy-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Извини́те",
+      "note": "Извини́те is the polite or plural form. The familiar singular is Извини́.",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-courtesy"
+    },
+    {
+      "id": "ex-u25-name-question-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Как Вас зову́т?",
+      "note": "What is your name?",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-name-question"
+    },
+    {
+      "id": "ex-u25-name-question-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Меня́ зову́т",
+      "note": "My name is...",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-name-question"
+    },
+    {
+      "id": "ex-u25-name-question-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Прошу́ проще́ния",
+      "note": "I'm sorry / excuse me (formal)",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-name-question"
+    },
+    {
+      "id": "ex-u25-name-question-3",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Как дела́?",
+      "note": "How are you?",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-name-question"
+    },
+    {
+      "id": "ex-u25-nickname-rule-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Марюня",
+      "note": "от полной формы имени",
+      "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-nickname-rule"
+    },
+    {
+      "id": "ex-u25-nickname-rule-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Машенька",
+      "note": "от краткой формы",
+      "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-nickname-rule"
+    },
+    {
+      "id": "ex-u25-nickname-rule-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Сашка",
+      "note": "оттенок пренебрежения",
+      "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-nickname-rule"
+    },
+    {
+      "id": "ex-u25-address-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Ирина",
+      "note": "полные имена",
+      "sourceId": "src-ruwiki-obraschenie-153012874",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-address"
+    },
+    {
+      "id": "ex-u25-address-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Ира",
+      "note": "краткие имена",
+      "sourceId": "src-ruwiki-obraschenie-153012874",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-address"
+    },
+    {
+      "id": "ex-u25-address-2",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Ирочка",
+      "note": "уменьшительно-ласкательные",
+      "sourceId": "src-ruwiki-obraschenie-153012874",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-address"
+    },
+    {
+      "id": "ex-u25-address-3",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "полному имени",
+      "note": "отстранённо-официального регистра",
+      "sourceId": "src-ruwiki-obraschenie-153012874",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-address"
+    },
+    {
+      "id": "ex-u25-name-form-0",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Машенька",
+      "note": "documented derivative of the short form",
+      "sourceId": "src-original-research-synthesis",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-documented-name-form"
+    },
+    {
+      "id": "ex-u25-name-form-1",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "Сашка",
+      "note": "documented dismissive coloring",
+      "sourceId": "src-original-research-synthesis",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u25-documented-name-form"
+    }
+  ],
+  "sourceCapabilities": [
+    {
+      "id": "cap-u25-diminutive-form-classification",
+      "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+      "sourceRevision": "154915954",
+      "sourceRecordId": "lichnoe-imya:В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразн",
+      "sourceHash": "2adc123ee51f3e723f3ec78bf3a70b158214fc6d581b565b8a525fa477d71020",
+      "exactSpan": "В словообразовании уменьшительных и ласкательных форм имён участвуют разнообразные [[диминутив]]ные суффиксы (-очк-, -ечк-, -оньк-, -еньк-, -ушк-, -юшк-, -юш-, -яш-, -уш-, -ул-, -ун-, -ус-, -к-, -ик, и другие), а в качестве основ используются как основы полных имён, так и кратких форм. Например, от полной формы имени ''Мария'' и ''Марья'' образуются уменьшительные ''Марюня, Маруня, Маруся, Марюша'' и ''Марьюшка, Марьяша''; от краткой формы ''Маша → Машка, Машенька, Машуля''; от краткой формы ''Маня → Манечка, Манюся, Манюша, Маняша'' и т. п. Выбор [[диминутив]]ной формы имени зависит от полноты чувства, испытываемого говорящим по отношению к именуемому; учитывая разнообразие основ, обусловленное множеством кратких форм, и суффиксов, уменьшительные и ласкательные имена позволяют выразить в речи широкий спектр эмоциональных красок<ref name=\"ОРИ-5\" />.\n\nУменьшительные имена, образованные при помощи суффикса -к-, несут в себе оттенок пренебрежения, умаления достоинства именуемого (''Сашка, Гришка, Светка'' и т. п.). Исторически это связано с существовавшей традицией использовать уже упоминавшиеся [[Полуимя|полуимена]] (которые как раз образовывались с помощью суффикса -к-) для самоуничижения при обращении к лицу из привилегированного сословия<ref group=\"с\">Социальную сниженность, пренебрежительность подобных имён остро чувствовал [[Белинский, Виссарион Григорьевич|В. Г. Белинский]]:{{начало цитаты}}[Россия] представляет собою ужасное зрелище страны, где люди торгуют людьми, <…> страны, где люди сами себя называют не именами, а кличками: Ваньками, Стешками, Васьками, Палашками.{{конец цитаты|источник=[[s:Письмо Н. В. Гоголю (Белинский)|В. Г. Белинский. «Письмо Н. В. Гоголю»]]}}</ref>. Однако среди простого народа при общении равных по социальному положению людей эта форма имён, как правило, не имела такого оттенка, свидетельствуя лишь о простоте обращения и очевидной близости. Тем не менее в современном [[Русский язык|русском языке]] [[диминутив]]ные имена наподобие ''Васька, Маринка, Алка'' считаются стилистически приниженными",
+      "unitNumber": 25,
+      "objectiveId": "obj-u25-nickname-rule",
+      "supportedClaim": "diminutive-form-classification"
+    },
+    {
+      "id": "cap-u25-register",
+      "sourceId": "src-ruwiki-obraschenie-153012874",
+      "sourceRevision": "153012874",
+      "sourceRecordId": "obraschenie:Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие име",
+      "sourceHash": "54198944f367b1abc4cf377c47e61ae6d0abd7fa800e833bfcf600452e1f9ce6",
+      "exactSpan": "Есть полные имена — Ирина, Евгения, Александр и др., сокращённые или краткие имена — Ира, Женя, Саша и др., а также уменьшительно-ласкательные — Ирочка, Женечка, Сашенька и др.\n\nОбращение по [[Полное имя|полному имени]] характерно для отстранённо-официального регистра общения, используется в официальной или полуофициальной обстановке общения, выражает подчёркнуто сдержанное отношение к собеседнику и чаще всего используется, когда предстоит серьёзный разговор, необходимо сделать замечание собеседнику: «Сергей, мне надо с тобой поговорить», «Татьяна, подойди сюда».\n\nКраткие формы имён используются в дружески-неофициальном общении со знакомыми, родственниками одного возраста",
+      "unitNumber": 25,
+      "objectiveId": "obj-u25-address",
+      "supportedClaim": "register"
+    },
+    {
+      "id": "cap-u25-documented-name-form",
+      "sourceId": "src-original-research-synthesis",
+      "sourceRevision": "phase2-2026-09-29",
+      "sourceRecordId": "phase2:documented-name-form",
+      "sourceHash": "3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb",
+      "exactSpan": "Familiar, short, affectionate, and diminutive personal-name forms are conventional and socially marked.\nOne personal name may have several documented forms.\nA suffix may add affectionate, familiar, diminutive, or dismissive coloring, but it does not mechanically generate an acceptable form for every name.\nAn unfamiliar form must be verified in a names dictionary.\nМарюня is a documented derivative of the full name in this admitted material.\nМашенька is a documented derivative of the short form in this admitted material.\nСашка carries documented dismissive coloring in this admitted material.\nAn unstudied name has no documented derivative in this unit.\nМашенька\nСашка\nМарюня\ndocumented derivative of the full name\ndocumented derivative of the short form\ndocumented dismissive coloring\nunsupported until a names dictionary documents that form\nthe suffix mechanically generates an acceptable name\nWhich English description matches the shown name derived in the admitted full-form pattern?\nWhich English description matches the shown name derived in the admitted short-form pattern?\nWhich English description matches the shown name that this admitted material treats as disparaging?\nWhich English description matches an unstudied personal name?\nan unstudied personal name",
+      "unitNumber": 25,
+      "objectiveId": "obj-u25-documented-name-form",
+      "supportedClaim": "documented-name-form"
+    }
+  ]
+}

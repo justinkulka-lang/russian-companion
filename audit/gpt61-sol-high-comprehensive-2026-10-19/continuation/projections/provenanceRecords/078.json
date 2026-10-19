@@ -1,0 +1,970 @@
+[
+  {
+    "itemId": "prov-ca-16-243",
+    "unitNumber": 16,
+    "objectiveId": "obj-u16-complements",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u16-g-complements-0",
+    "shippedText": "to remain",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1",
+    "contentHash": "3a976e7bc7419774f807f79549b9c264d85248dda6fd7aea7369c1a2f09a2061",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u16-complements:INFINITIVE_STAT",
+      "applications": [
+        {
+          "cue": "стать",
+          "answer": "to become",
+          "distractors": [
+            "to remain",
+            "to turn out to be"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nстать\nto become\nWhich infinitive meaning is written for the shown form?\nстать means to become. It is an infinitive, not the past form became.\nThe infinitive стать means to become, while остаться means to remain.\nto remain\nto turn out to be\nto remain is the meaning of остаться, not стать.\nto turn out to be is a different complement verb, not стать.\nостаться\nостаться,\nстать."
+  },
+  {
+    "itemId": "prov-ca-16-244",
+    "unitNumber": 16,
+    "objectiveId": "obj-u16-complements",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u16-g-complements-0",
+    "shippedText": "to turn out to be",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1",
+    "contentHash": "db6516887b6af68f40a555bf4a26aa633c5a3962370b91a788e6ce1daf9b0b9b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u16-complements:INFINITIVE_STAT",
+      "applications": [
+        {
+          "cue": "стать",
+          "answer": "to become",
+          "distractors": [
+            "to remain",
+            "to turn out to be"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nстать\nto become\nWhich infinitive meaning is written for the shown form?\nстать means to become. It is an infinitive, not the past form became.\nThe infinitive стать means to become, while остаться means to remain.\nto remain\nto turn out to be\nto remain is the meaning of остаться, not стать.\nto turn out to be is a different complement verb, not стать.\nостаться\nостаться,\nстать."
+  },
+  {
+    "itemId": "prov-ca-16-245",
+    "unitNumber": 16,
+    "objectiveId": "obj-u16-complements",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u16-g-complements-0",
+    "shippedText": "to remain is the meaning of остаться, not стать.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1",
+    "contentHash": "8e7e238f22f8607f5937274bf659d4039f4d335786fceaafd935715a84c04096",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u16-complements:INFINITIVE_STAT",
+      "applications": [
+        {
+          "cue": "стать",
+          "answer": "to become",
+          "distractors": [
+            "to remain",
+            "to turn out to be"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nстать\nto become\nWhich infinitive meaning is written for the shown form?\nстать means to become. It is an infinitive, not the past form became.\nThe infinitive стать means to become, while остаться means to remain.\nto remain\nto turn out to be\nto remain is the meaning of остаться, not стать.\nto turn out to be is a different complement verb, not стать.\nостаться\nостаться,\nстать."
+  },
+  {
+    "itemId": "prov-ca-16-246",
+    "unitNumber": 16,
+    "objectiveId": "obj-u16-complements",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u16-g-complements-0",
+    "shippedText": "to turn out to be is a different complement verb, not стать.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1",
+    "contentHash": "6aed32fa3a307edd54f40282b1fc99b92108fe41347ffcc643cb5d346587f48a",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u16-complements:INFINITIVE_STAT",
+      "applications": [
+        {
+          "cue": "стать",
+          "answer": "to become",
+          "distractors": [
+            "to remain",
+            "to turn out to be"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nстать\nto become\nWhich infinitive meaning is written for the shown form?\nстать means to become. It is an infinitive, not the past form became.\nThe infinitive стать means to become, while остаться means to remain.\nto remain\nto turn out to be\nto remain is the meaning of остаться, not стать.\nto turn out to be is a different complement verb, not стать.\nостаться\nостаться,\nстать."
+  },
+  {
+    "itemId": "prov-ca-16-247",
+    "unitNumber": 16,
+    "objectiveId": "obj-u16-complements",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u16-g-complements-0",
+    "shippedText": "остаться",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1",
+    "contentHash": "27ba7bc59b168bcd33285310bfc9517653ad3e8c9fdeb02c330b827e7995cd1c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u16-complements:INFINITIVE_STAT",
+      "applications": [
+        {
+          "cue": "стать",
+          "answer": "to become",
+          "distractors": [
+            "to remain",
+            "to turn out to be"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nстать\nto become\nWhich infinitive meaning is written for the shown form?\nстать means to become. It is an infinitive, not the past form became.\nThe infinitive стать means to become, while остаться means to remain.\nto remain\nto turn out to be\nto remain is the meaning of остаться, not стать.\nto turn out to be is a different complement verb, not стать.\nостаться\nостаться,\nстать."
+  },
+  {
+    "itemId": "prov-ca-16-248",
+    "unitNumber": 16,
+    "objectiveId": "obj-u16-complements",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u16-g-complements-0",
+    "shippedText": "остаться,",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1",
+    "contentHash": "2155ed2866e7fb115a8badbe6341ca0920b8d86a8aa5d82b02f371f6e7375f71",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u16-complements:INFINITIVE_STAT",
+      "applications": [
+        {
+          "cue": "стать",
+          "answer": "to become",
+          "distractors": [
+            "to remain",
+            "to turn out to be"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nстать\nto become\nWhich infinitive meaning is written for the shown form?\nстать means to become. It is an infinitive, not the past form became.\nThe infinitive стать means to become, while остаться means to remain.\nto remain\nto turn out to be\nto remain is the meaning of остаться, not стать.\nto turn out to be is a different complement verb, not стать.\nостаться\nостаться,\nстать."
+  },
+  {
+    "itemId": "prov-ca-16-249",
+    "unitNumber": 16,
+    "objectiveId": "obj-u16-complements",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u16-g-complements-0",
+    "shippedText": "стать.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "de0edecc921ce672f7304dd29c4ca9136b6550e68d48c2112f781e1f072d2fb1",
+    "contentHash": "f0ccf077a0015429a78a0e359dbb9a3e0f1f1d6235ae9ed45b5c213c8d11cebc",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u16-complements:INFINITIVE_STAT",
+      "applications": [
+        {
+          "cue": "стать",
+          "answer": "to become",
+          "distractors": [
+            "to remain",
+            "to turn out to be"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nстать\nto become\nWhich infinitive meaning is written for the shown form?\nстать means to become. It is an infinitive, not the past form became.\nThe infinitive стать means to become, while остаться means to remain.\nto remain\nto turn out to be\nto remain is the meaning of остаться, not стать.\nto turn out to be is a different complement verb, not стать.\nостаться\nостаться,\nстать."
+  },
+  {
+    "itemId": "prov-ca-20-250",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-4",
+    "shippedText": "Мальчик отошёл от незнакомца",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9",
+    "contentHash": "f643975be1f829d00f32b576b65f8c2bd8b7a29cad1079df8e62530c9d686386",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_NO_ADDED_CLAUSE",
+      "applications": [
+        {
+          "cue": "Мальчик отошёл от незнакомца",
+          "answer": "The boy stepped back from the stranger.",
+          "distractors": [
+            "They will leave Vladivostok in a month.",
+            "The ball flew onto the roof of the house."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nМальчик отошёл от незнакомца\nThe boy stepped back from the stranger.\nWhich translation covers only the shown sentence?\nМальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.\nThe Russian sentence contains only the boy stepping back from the stranger.\nThey will leave Vladivostok in a month.\nThe ball flew onto the roof of the house.\nThey will leave Vladivostok in a month. is a different motion sentence.\nThe ball flew onto the roof of the house. is a different motion sentence."
+  },
+  {
+    "itemId": "prov-ca-20-251",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "meaning",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-4",
+    "shippedText": "The boy stepped back from the stranger.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9",
+    "contentHash": "0462e6892e86db8c18d2dec374c0478fe27d75286f9a11e941cb4d8a8f2faf4e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_NO_ADDED_CLAUSE",
+      "applications": [
+        {
+          "cue": "Мальчик отошёл от незнакомца",
+          "answer": "The boy stepped back from the stranger.",
+          "distractors": [
+            "They will leave Vladivostok in a month.",
+            "The ball flew onto the roof of the house."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nМальчик отошёл от незнакомца\nThe boy stepped back from the stranger.\nWhich translation covers only the shown sentence?\nМальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.\nThe Russian sentence contains only the boy stepping back from the stranger.\nThey will leave Vladivostok in a month.\nThe ball flew onto the roof of the house.\nThey will leave Vladivostok in a month. is a different motion sentence.\nThe ball flew onto the roof of the house. is a different motion sentence."
+  },
+  {
+    "itemId": "prov-ca-20-252",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-4",
+    "shippedText": "Which translation covers only the shown sentence?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9",
+    "contentHash": "8068d82b01a25f9252416e5c6dd798f079bffea722590da484a446c273d9ba3c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_NO_ADDED_CLAUSE",
+      "applications": [
+        {
+          "cue": "Мальчик отошёл от незнакомца",
+          "answer": "The boy stepped back from the stranger.",
+          "distractors": [
+            "They will leave Vladivostok in a month.",
+            "The ball flew onto the roof of the house."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nМальчик отошёл от незнакомца\nThe boy stepped back from the stranger.\nWhich translation covers only the shown sentence?\nМальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.\nThe Russian sentence contains only the boy stepping back from the stranger.\nThey will leave Vladivostok in a month.\nThe ball flew onto the roof of the house.\nThey will leave Vladivostok in a month. is a different motion sentence.\nThe ball flew onto the roof of the house. is a different motion sentence."
+  },
+  {
+    "itemId": "prov-ca-20-253",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-4",
+    "shippedText": "Мальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9",
+    "contentHash": "10d899961b387a204623b4e6bf8ab269beb636af5d8df223d41919c82820d262",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_NO_ADDED_CLAUSE",
+      "applications": [
+        {
+          "cue": "Мальчик отошёл от незнакомца",
+          "answer": "The boy stepped back from the stranger.",
+          "distractors": [
+            "They will leave Vladivostok in a month.",
+            "The ball flew onto the roof of the house."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nМальчик отошёл от незнакомца\nThe boy stepped back from the stranger.\nWhich translation covers only the shown sentence?\nМальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.\nThe Russian sentence contains only the boy stepping back from the stranger.\nThey will leave Vladivostok in a month.\nThe ball flew onto the roof of the house.\nThey will leave Vladivostok in a month. is a different motion sentence.\nThe ball flew onto the roof of the house. is a different motion sentence."
+  },
+  {
+    "itemId": "prov-ca-20-254",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-4",
+    "shippedText": "The Russian sentence contains only the boy stepping back from the stranger.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9",
+    "contentHash": "13767d309173a1ce56ae9e0a5641e55dbf2f890db877e23b5c72d04e0e0539bd",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_NO_ADDED_CLAUSE",
+      "applications": [
+        {
+          "cue": "Мальчик отошёл от незнакомца",
+          "answer": "The boy stepped back from the stranger.",
+          "distractors": [
+            "They will leave Vladivostok in a month.",
+            "The ball flew onto the roof of the house."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nМальчик отошёл от незнакомца\nThe boy stepped back from the stranger.\nWhich translation covers only the shown sentence?\nМальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.\nThe Russian sentence contains only the boy stepping back from the stranger.\nThey will leave Vladivostok in a month.\nThe ball flew onto the roof of the house.\nThey will leave Vladivostok in a month. is a different motion sentence.\nThe ball flew onto the roof of the house. is a different motion sentence."
+  },
+  {
+    "itemId": "prov-ca-20-255",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-4",
+    "shippedText": "They will leave Vladivostok in a month.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9",
+    "contentHash": "902393f173486c8c2bf8490eda077f8877517965404f86ca76e22b0fbac7b224",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_NO_ADDED_CLAUSE",
+      "applications": [
+        {
+          "cue": "Мальчик отошёл от незнакомца",
+          "answer": "The boy stepped back from the stranger.",
+          "distractors": [
+            "They will leave Vladivostok in a month.",
+            "The ball flew onto the roof of the house."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nМальчик отошёл от незнакомца\nThe boy stepped back from the stranger.\nWhich translation covers only the shown sentence?\nМальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.\nThe Russian sentence contains only the boy stepping back from the stranger.\nThey will leave Vladivostok in a month.\nThe ball flew onto the roof of the house.\nThey will leave Vladivostok in a month. is a different motion sentence.\nThe ball flew onto the roof of the house. is a different motion sentence."
+  },
+  {
+    "itemId": "prov-ca-20-256",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-4",
+    "shippedText": "The ball flew onto the roof of the house.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9",
+    "contentHash": "400e1a15c98b8cc064cd05ed030ebd4bfe47a8ecd2605b9bb1543c38e2f0a9a3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_NO_ADDED_CLAUSE",
+      "applications": [
+        {
+          "cue": "Мальчик отошёл от незнакомца",
+          "answer": "The boy stepped back from the stranger.",
+          "distractors": [
+            "They will leave Vladivostok in a month.",
+            "The ball flew onto the roof of the house."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nМальчик отошёл от незнакомца\nThe boy stepped back from the stranger.\nWhich translation covers only the shown sentence?\nМальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.\nThe Russian sentence contains only the boy stepping back from the stranger.\nThey will leave Vladivostok in a month.\nThe ball flew onto the roof of the house.\nThey will leave Vladivostok in a month. is a different motion sentence.\nThe ball flew onto the roof of the house. is a different motion sentence."
+  },
+  {
+    "itemId": "prov-ca-20-257",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-4",
+    "shippedText": "They will leave Vladivostok in a month. is a different motion sentence.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9",
+    "contentHash": "d3e8ab38cce22e5af8e9d59ead0e8d2597235902dc617e04cf5659c033869b27",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_NO_ADDED_CLAUSE",
+      "applications": [
+        {
+          "cue": "Мальчик отошёл от незнакомца",
+          "answer": "The boy stepped back from the stranger.",
+          "distractors": [
+            "They will leave Vladivostok in a month.",
+            "The ball flew onto the roof of the house."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nМальчик отошёл от незнакомца\nThe boy stepped back from the stranger.\nWhich translation covers only the shown sentence?\nМальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.\nThe Russian sentence contains only the boy stepping back from the stranger.\nThey will leave Vladivostok in a month.\nThe ball flew onto the roof of the house.\nThey will leave Vladivostok in a month. is a different motion sentence.\nThe ball flew onto the roof of the house. is a different motion sentence."
+  },
+  {
+    "itemId": "prov-ca-20-258",
+    "unitNumber": 20,
+    "objectiveId": "obj-u20-motion",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u20-i-motion-4",
+    "shippedText": "The ball flew onto the roof of the house. is a different motion sentence.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "2ac55081c2fe8dca9fe5101a35dde73cdf11aa8c2504e814f0c50b839ac9fdd9",
+    "contentHash": "e72af2a8186c87151470612bca140ce83839d7ffaec2be96c244d935340821fd",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u20-motion:MOTION_NO_ADDED_CLAUSE",
+      "applications": [
+        {
+          "cue": "Мальчик отошёл от незнакомца",
+          "answer": "The boy stepped back from the stranger.",
+          "distractors": [
+            "They will leave Vladivostok in a month.",
+            "The ball flew onto the roof of the house."
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nМальчик отошёл от незнакомца\nThe boy stepped back from the stranger.\nWhich translation covers only the shown sentence?\nМальчик отошёл от незнакомца means the boy stepped back from the stranger. No candy offer is in the Russian.\nThe Russian sentence contains only the boy stepping back from the stranger.\nThey will leave Vladivostok in a month.\nThe ball flew onto the roof of the house.\nThey will leave Vladivostok in a month. is a different motion sentence.\nThe ball flew onto the roof of the house. is a different motion sentence."
+  },
+  {
+    "itemId": "prov-ca-21-259",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-object-reference",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u21-object-reference:u21-st-teach-object-reference-2",
+    "shippedText": "жену́ is the accusative of жена́, wife. In Я люблю́ свою́ жену́ the whole sentence means I love my wife. The word жену́ by itself does not mean I love.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cc21f70795a94e16fedad448aafed9935fb596ebf1d1c988c9c22a6e5deb04aa",
+    "contentHash": "73c94b13db8327ba300d0d917d69905ce8adaaf54cceff9590ed45b6d66aa2d4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Authorship: independently authored for Russian Companion.",
+      "objectiveOrClaimBinding": "obj-u21-object-reference:u21-st-teach-object-reference-2"
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nжену́ is the accusative of жена́, wife. In Я люблю́ свою́ жену́ the whole sentence means I love my wife. The word жену́ by itself does not mean I love."
+  },
+  {
+    "itemId": "prov-ca-21-260",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-object-reference",
+    "recordType": "example",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u21-object-reference:u21-st-teach-object-reference-2",
+    "shippedText": "жена́,",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cc21f70795a94e16fedad448aafed9935fb596ebf1d1c988c9c22a6e5deb04aa",
+    "contentHash": "337418e1ea2dfecefaaebbcb30c6ed59088a5766adcb66fc709fed5baff00436",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Authorship: independently authored for Russian Companion.",
+      "objectiveOrClaimBinding": "obj-u21-object-reference:u21-st-teach-object-reference-2"
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nжену́ is the accusative of жена́, wife. In Я люблю́ свою́ жену́ the whole sentence means I love my wife. The word жену́ by itself does not mean I love."
+  },
+  {
+    "itemId": "prov-ca-21-261",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-object-reference",
+    "recordType": "example",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u21-object-reference:u21-st-teach-object-reference-2",
+    "shippedText": "жена́",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cc21f70795a94e16fedad448aafed9935fb596ebf1d1c988c9c22a6e5deb04aa",
+    "contentHash": "bfa3f414ad44fec5fa85d88df9c60a4ccdbb9b79b70f3c8729930ea5d9e37203",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Authorship: independently authored for Russian Companion.",
+      "objectiveOrClaimBinding": "obj-u21-object-reference:u21-st-teach-object-reference-2"
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nжену́ is the accusative of жена́, wife. In Я люблю́ свою́ жену́ the whole sentence means I love my wife. The word жену́ by itself does not mean I love."
+  },
+  {
+    "itemId": "prov-ca-21-262",
+    "unitNumber": 21,
+    "objectiveId": "obj-u21-object-reference",
+    "recordType": "example",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-coverage:obj-u21-object-reference:u21-st-teach-object-reference-2",
+    "shippedText": "Я люблю́ свою́ жену́",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "cc21f70795a94e16fedad448aafed9935fb596ebf1d1c988c9c22a6e5deb04aa",
+    "contentHash": "308c93733a6d1d32c8fcc2e08027ca93483bc8888ccc6a8bcd9c65591e2d69bf",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Authorship: independently authored for Russian Companion.",
+      "objectiveOrClaimBinding": "obj-u21-object-reference:u21-st-teach-object-reference-2"
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nжену́ is the accusative of жена́, wife. In Я люблю́ свою́ жену́ the whole sentence means I love my wife. The word жену́ by itself does not mean I love."
+  },
+  {
+    "itemId": "prov-ca-27-263",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u27-i-comp-2",
+    "shippedText": "Анна убрала прочитанное письмо.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30b137aae78dfab3b586a2f832760abe78d85fc0d049af201fef81648ab99e6e",
+    "contentHash": "ff8f86153960e1a7dab221da85cb0f3d3d0632a2cf41f200fc1784b9046b37b5",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:PASSIVE_READER_UNSPECIFIED",
+      "applications": [
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nWhich reading keeps the reader of the letter unspecified?\nпрочитанное письмо means the letter that had been read. The sentence does not say that Anna read it.\nThe passive participle прочитанное does not name Anna as the reader.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nАнна убрала прочитанное письмо\nпрочитанное письмо\nпрочитанное"
+  },
+  {
+    "itemId": "prov-ca-27-264",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "meaning",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u27-i-comp-2",
+    "shippedText": "Anna put away the letter that had been read.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30b137aae78dfab3b586a2f832760abe78d85fc0d049af201fef81648ab99e6e",
+    "contentHash": "8d5f0245e28cb98396110fa7277112490e4549324fbcc85a5f6c09de436e8cd8",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:PASSIVE_READER_UNSPECIFIED",
+      "applications": [
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nWhich reading keeps the reader of the letter unspecified?\nпрочитанное письмо means the letter that had been read. The sentence does not say that Anna read it.\nThe passive participle прочитанное does not name Anna as the reader.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nАнна убрала прочитанное письмо\nпрочитанное письмо\nпрочитанное"
+  },
+  {
+    "itemId": "prov-ca-27-265",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u27-i-comp-2",
+    "shippedText": "Which reading keeps the reader of the letter unspecified?",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30b137aae78dfab3b586a2f832760abe78d85fc0d049af201fef81648ab99e6e",
+    "contentHash": "2d2dabb13a66dc0d17b7a0ae3e58d2169701a027e903c4930d06595ceb5afd8e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:PASSIVE_READER_UNSPECIFIED",
+      "applications": [
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nWhich reading keeps the reader of the letter unspecified?\nпрочитанное письмо means the letter that had been read. The sentence does not say that Anna read it.\nThe passive participle прочитанное does not name Anna as the reader.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nАнна убрала прочитанное письмо\nпрочитанное письмо\nпрочитанное"
+  },
+  {
+    "itemId": "prov-ca-27-266",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u27-i-comp-2",
+    "shippedText": "прочитанное письмо means the letter that had been read. The sentence does not say that Anna read it.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30b137aae78dfab3b586a2f832760abe78d85fc0d049af201fef81648ab99e6e",
+    "contentHash": "c98625afa1dd8eb54ad40601e314595f671ac887a755d5b5a5c31e8884ee4a3b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:PASSIVE_READER_UNSPECIFIED",
+      "applications": [
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nWhich reading keeps the reader of the letter unspecified?\nпрочитанное письмо means the letter that had been read. The sentence does not say that Anna read it.\nThe passive participle прочитанное does not name Anna as the reader.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nАнна убрала прочитанное письмо\nпрочитанное письмо\nпрочитанное"
+  },
+  {
+    "itemId": "prov-ca-27-267",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u27-i-comp-2",
+    "shippedText": "The passive participle прочитанное does not name Anna as the reader.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30b137aae78dfab3b586a2f832760abe78d85fc0d049af201fef81648ab99e6e",
+    "contentHash": "76db24e940eba5d02a3b19157b6a2abe02b87b1f5c7f85290aac9c9cc2b1886e",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:PASSIVE_READER_UNSPECIFIED",
+      "applications": [
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nWhich reading keeps the reader of the letter unspecified?\nпрочитанное письмо means the letter that had been read. The sentence does not say that Anna read it.\nThe passive participle прочитанное does not name Anna as the reader.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nАнна убрала прочитанное письмо\nпрочитанное письмо\nпрочитанное"
+  },
+  {
+    "itemId": "prov-ca-27-268",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u27-i-comp-2",
+    "shippedText": "Anna wrote the letter on the table",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30b137aae78dfab3b586a2f832760abe78d85fc0d049af201fef81648ab99e6e",
+    "contentHash": "7271bf248bc314780b610017273780efba406458273176328ee596ef8e2e94c6",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:PASSIVE_READER_UNSPECIFIED",
+      "applications": [
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nWhich reading keeps the reader of the letter unspecified?\nпрочитанное письмо means the letter that had been read. The sentence does not say that Anna read it.\nThe passive participle прочитанное does not name Anna as the reader.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nАнна убрала прочитанное письмо\nпрочитанное письмо\nпрочитанное"
+  },
+  {
+    "itemId": "prov-ca-27-269",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u27-i-comp-2",
+    "shippedText": "the letter put Anna away",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30b137aae78dfab3b586a2f832760abe78d85fc0d049af201fef81648ab99e6e",
+    "contentHash": "4b1cb56c3976e0cedf26cc700f74778b5ddaf82aee137e4a38fa1edf4e74274f",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:PASSIVE_READER_UNSPECIFIED",
+      "applications": [
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nWhich reading keeps the reader of the letter unspecified?\nпрочитанное письмо means the letter that had been read. The sentence does not say that Anna read it.\nThe passive participle прочитанное does not name Anna as the reader.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nАнна убрала прочитанное письмо\nпрочитанное письмо\nпрочитанное"
+  },
+  {
+    "itemId": "prov-ca-27-270",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "label",
+    "sourceId": "src-content-audit-research",
+    "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+    "sourceRevision": "content-audit-2026-10-08",
+    "sourceRecordId": "ca-contrast:u27-i-comp-2",
+    "shippedText": "Anna wrote the letter on the table invents a different verb.",
+    "transformation": "content-audit research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "30b137aae78dfab3b586a2f832760abe78d85fc0d049af201fef81648ab99e6e",
+    "contentHash": "1106958c0f0613e946f2c9a0a20319dec7d2711ee783d46e713e79f735caedc2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.",
+      "sourceDateOrVersion": "2026-10-08",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-10-08. This corrects a learner-facing claim and keeps the earlier frozen excerpt in the pack.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:PASSIVE_READER_UNSPECIFIED",
+      "applications": [
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter that had been read.",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Content-audit research note dated 2026-10-08. Bibliography includes the Gramota dictionary entries for некто and быть, the Gramota statement of vowels after hushers and ц, and Litnevskaya on the verbal adverb as search evidence for relative time. An imperfective form can report a completed event without asserting completion. Authorship: independently authored for Russian Companion. Status remains IMPLEMENTED_PENDING_FINAL_AUDIT. This note is not linguistic acceptance, mapping approval, installation, or owner acceptance. No owned-book prose, exercise, or answer key is copied.\nАнна убрала прочитанное письмо.\nAnna put away the letter that had been read.\nWhich reading keeps the reader of the letter unspecified?\nпрочитанное письмо means the letter that had been read. The sentence does not say that Anna read it.\nThe passive participle прочитанное does not name Anna as the reader.\nAnna wrote the letter on the table\nthe letter put Anna away\nAnna wrote the letter on the table invents a different verb.\nthe letter put Anna away reverses who did the action.\nАнна убрала прочитанное письмо\nпрочитанное письмо\nпрочитанное"
+  }
+]

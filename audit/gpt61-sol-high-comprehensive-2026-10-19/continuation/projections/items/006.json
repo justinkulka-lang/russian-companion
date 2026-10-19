@@ -1,0 +1,2663 @@
+[
+  {
+    "id": "u15-g-imperative-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted row is the plural imperative?",
+    "promptLetter": "чита́й",
+    "options": [
+      "чита́йте",
+      "чита́ть"
+    ],
+    "answer": "чита́йте",
+    "feedback": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.",
+    "objectiveId": "obj-u15-imperative",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "чита́ть is the infinitive, not the requested inflected plural imperative form."
+    ],
+    "assessment": {
+      "testedFeature": "PLURAL_IMPERATIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u15-imperative-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u15-imperative-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u15-imperative-2"
+      ],
+      "distractorDifference": [
+        "",
+        "чита́ть is the infinitive, not the requested inflected plural imperative form."
+      ],
+      "whyAnswerDemonstratesObjective": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.",
+      "contrastMembers": [
+        "чита́йте",
+        "чита́ть"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u15-imperative-0",
+        "prov-ex-or-u15-imperative-1",
+        "prov-ex-or-u15-imperative-2"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u15-i-imperative-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted row is the singular imperative?",
+    "promptLetter": "чита́йте",
+    "options": [
+      "чита́й",
+      "чита́ть"
+    ],
+    "answer": "чита́й",
+    "feedback": "чита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.",
+    "objectiveId": "obj-u15-imperative",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "чита́ть is the infinitive, not the requested inflected singular imperative form."
+    ],
+    "assessment": {
+      "testedFeature": "SINGULAR_IMPERATIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u15-imperative-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u15-imperative-0"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u15-imperative-2"
+      ],
+      "distractorDifference": [
+        "",
+        "чита́ть is the infinitive, not the requested inflected singular imperative form."
+      ],
+      "whyAnswerDemonstratesObjective": "чита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.",
+      "contrastMembers": [
+        "чита́й",
+        "чита́ть"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u15-imperative-1",
+        "prov-ex-or-u15-imperative-0",
+        "prov-ex-or-u15-imperative-2"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u15-i-imperative-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted row is the singular imperative?",
+    "promptLetter": "чита́ть",
+    "options": [
+      "чита́й",
+      "чита́йте"
+    ],
+    "answer": "чита́й",
+    "feedback": "чита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+    "objectiveId": "obj-u15-imperative",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "чита́йте is the plural/polite imperative form, not the singular imperative table row requested here; polite use can still address one person."
+    ],
+    "assessment": {
+      "testedFeature": "SINGULAR_IMPERATIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u15-imperative-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u15-imperative-0"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u15-imperative-1"
+      ],
+      "distractorDifference": [
+        "",
+        "чита́йте is the plural/polite imperative form, not the singular imperative table row requested here; polite use can still address one person."
+      ],
+      "whyAnswerDemonstratesObjective": "чита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+      "contrastMembers": [
+        "чита́й",
+        "чита́йте"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u15-imperative-2",
+        "prov-ex-or-u15-imperative-0",
+        "prov-ex-or-u15-imperative-1"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u15-g-say-request-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted row is the plural imperative?",
+    "promptLetter": "скажи́",
+    "options": [
+      "скажи́те",
+      "сказа́ть"
+    ],
+    "answer": "скажи́те",
+    "feedback": "скажи́те is the plural imperative form of the shown say/tell verb, used for multiple addressees or polite address to one person. сказа́ть is the infinitive, not the inflected plural imperative form requested. The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.",
+    "objectiveId": "obj-u15-say-request",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "сказа́ть is the infinitive, not the requested inflected plural imperative form."
+    ],
+    "assessment": {
+      "testedFeature": "PLURAL_IMPERATIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u15-say-request-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u15-say-request-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u15-say-request-2"
+      ],
+      "distractorDifference": [
+        "",
+        "сказа́ть is the infinitive, not the requested inflected plural imperative form."
+      ],
+      "whyAnswerDemonstratesObjective": "скажи́те is the plural imperative form of the shown say/tell verb, used for multiple addressees or polite address to one person. сказа́ть is the infinitive, not the inflected plural imperative form requested. The singular and plural imperative forms keep the stress shown in these recorded examples; politeness also depends on context.",
+      "contrastMembers": [
+        "скажи́те",
+        "сказа́ть"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u15-say-request-0",
+        "prov-ex-or-u15-say-request-1",
+        "prov-ex-or-u15-say-request-2"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u15-i-say-request-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted row is the plural imperative?",
+    "promptLetter": "да́й",
+    "options": [
+      "да́йте",
+      "дать"
+    ],
+    "answer": "да́йте",
+    "feedback": "да́йте is the plural imperative form of the shown give verb. It can address multiple people or one person politely. дать is the infinitive, not the inflected imperative form requested. Select the recorded plural imperative of this verb rather than assuming the dictionary form is the requested command form.",
+    "objectiveId": "obj-u15-say-request",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "дать is the infinitive, not the requested inflected plural imperative form."
+    ],
+    "assessment": {
+      "testedFeature": "PLURAL_IMPERATIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u15-say-request-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u15-say-request-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u15-say-request-5"
+      ],
+      "distractorDifference": [
+        "",
+        "дать is the infinitive, not the requested inflected plural imperative form."
+      ],
+      "whyAnswerDemonstratesObjective": "да́йте is the plural imperative form of the shown give verb. It can address multiple people or one person politely. дать is the infinitive, not the inflected imperative form requested. Select the recorded plural imperative of this verb rather than assuming the dictionary form is the requested command form.",
+      "contrastMembers": [
+        "да́йте",
+        "дать"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u15-say-request-3",
+        "prov-ex-or-u15-say-request-4",
+        "prov-ex-or-u15-say-request-5"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u15-i-say-request-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted row is the singular imperative?",
+    "promptLetter": "скажи́те",
+    "options": [
+      "скажи́",
+      "сказа́ть"
+    ],
+    "answer": "скажи́",
+    "feedback": "скажи́ is the singular imperative form for one informal addressee. сказа́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.",
+    "objectiveId": "obj-u15-say-request",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "сказа́ть is the infinitive, not the requested inflected singular imperative form."
+    ],
+    "assessment": {
+      "testedFeature": "SINGULAR_IMPERATIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u15-say-request-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u15-say-request-0"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u15-say-request-2"
+      ],
+      "distractorDifference": [
+        "",
+        "сказа́ть is the infinitive, not the requested inflected singular imperative form."
+      ],
+      "whyAnswerDemonstratesObjective": "скажи́ is the singular imperative form for one informal addressee. сказа́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, but the question asks for the singular imperative row of the same say/tell verb; the verb meaning and aspect stay the same.",
+      "contrastMembers": [
+        "скажи́",
+        "сказа́ть"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u15-say-request-1",
+        "prov-ex-or-u15-say-request-0",
+        "prov-ex-or-u15-say-request-2"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u15-g-aspect-consolidate-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the perfective partner?",
+    "promptLetter": "говори́ть",
+    "options": [
+      "сказа́ть",
+      "де́лать"
+    ],
+    "answer": "сказа́ть",
+    "feedback": "сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. This pairing does not mean every use of speak or talk can be replaced by the same perfective verb.",
+    "objectiveId": "obj-u15-aspect-consolidate",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "де́лать is imperfective and belongs to the do/make pair, not the perfective partner for the supplied say/tell meaning."
+    ],
+    "assessment": {
+      "testedFeature": "PERFECTIVE_PARTNER",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u15-aspect-consolidate-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u15-aspect-consolidate-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u15-aspect-consolidate-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "де́лать is imperfective and belongs to the do/make pair, not the perfective partner for the supplied say/tell meaning."
+      ],
+      "whyAnswerDemonstratesObjective": "сказа́ть is the perfective partner paired with говори́ть for the say/tell meaning shown here. де́лать is imperfective and belongs to the different do/make pair. This pairing does not mean every use of speak or talk can be replaced by the same perfective verb.",
+      "contrastMembers": [
+        "сказа́ть",
+        "де́лать"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u15-aspect-consolidate-0-ru",
+        "prov-ex-u15-aspect-consolidate-1-ru",
+        "prov-ex-u15-aspect-consolidate-2-ru"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u15-i-aspect-consolidate-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the imperfective partner?",
+    "promptLetter": "сказа́ть",
+    "options": [
+      "говори́ть",
+      "сде́лать"
+    ],
+    "answer": "говори́ть",
+    "feedback": "говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.",
+    "objectiveId": "obj-u15-aspect-consolidate",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "сде́лать is perfective and belongs to the do/make pair, not the imperfective partner for the supplied say/tell meaning."
+    ],
+    "assessment": {
+      "testedFeature": "IMPERFECTIVE_PARTNER",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u15-aspect-consolidate-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u15-aspect-consolidate-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u15-aspect-consolidate-3-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "сде́лать is perfective and belongs to the do/make pair, not the imperfective partner for the supplied say/tell meaning."
+      ],
+      "whyAnswerDemonstratesObjective": "говори́ть is the imperfective partner paired with сказа́ть for the say/tell meaning shown here. сде́лать is perfective and belongs to the different do/make pair. The question asks for the imperfective member of the supplied pair, not another verb of a different meaning.",
+      "contrastMembers": [
+        "говори́ть",
+        "сде́лать"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u15-aspect-consolidate-1-ru",
+        "prov-ex-u15-aspect-consolidate-0-ru",
+        "prov-ex-u15-aspect-consolidate-3-ru"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u15-i-aspect-consolidate-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the perfective partner?",
+    "promptLetter": "де́лать",
+    "options": [
+      "сде́лать",
+      "говори́ть"
+    ],
+    "answer": "сде́лать",
+    "feedback": "сде́лать is the perfective partner of де́лать in the recorded do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this supplied pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+    "objectiveId": "obj-u15-aspect-consolidate",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "говори́ть is imperfective and belongs to a different meaning group, not the perfective partner of the shown do/make verb."
+    ],
+    "assessment": {
+      "testedFeature": "PERFECTIVE_PARTNER",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u15-aspect-consolidate-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u15-aspect-consolidate-3-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u15-aspect-consolidate-0-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "говори́ть is imperfective and belongs to a different meaning group, not the perfective partner of the shown do/make verb."
+      ],
+      "whyAnswerDemonstratesObjective": "сде́лать is the perfective partner of де́лать in the recorded do/make pair. говори́ть is imperfective and belongs to the different say/tell grouping. Learn this supplied pair rather than assuming that adding any prefix gives the matching perfective of any verb.",
+      "contrastMembers": [
+        "сде́лать",
+        "говори́ть"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u15-aspect-consolidate-2-ru",
+        "prov-ex-u15-aspect-consolidate-3-ru",
+        "prov-ex-u15-aspect-consolidate-0-ru"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u16-g-inst-sg-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which form of the shown noun is instrumental singular?",
+    "promptLetter": "сто́л",
+    "options": [
+      "столо́м",
+      "столу́",
+      "столе́"
+    ],
+    "answer": "столо́м",
+    "feedback": "столо́м is instrumental singular of the noun meaning table.",
+    "objectiveId": "obj-u16-inst-sg",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "столу́ is dative singular, not instrumental singular.",
+      "столе́ is prepositional singular, not instrumental singular."
+    ],
+    "assessment": {
+      "testedFeature": "INSTRUMENTAL_SINGULAR",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u16-inst-sg-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u16-inst-sg-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u16-inst-sg-2",
+        "prov-ex-or-u16-inst-sg-3"
+      ],
+      "distractorDifference": [
+        "",
+        "столу́ is dative singular, not instrumental singular.",
+        "столе́ is prepositional singular, not instrumental singular."
+      ],
+      "whyAnswerDemonstratesObjective": "столо́м is instrumental singular of the noun meaning table.",
+      "contrastMembers": [
+        "столо́м",
+        "столу́",
+        "столе́"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u16-inst-sg-0",
+        "prov-ex-or-u16-inst-sg-1",
+        "prov-ex-or-u16-inst-sg-2",
+        "prov-ex-or-u16-inst-sg-3"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u16-i-inst-sg-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which form of the shown noun is instrumental singular?",
+    "promptLetter": "до́м",
+    "options": [
+      "до́мом",
+      "до́му",
+      "до́ме"
+    ],
+    "answer": "до́мом",
+    "feedback": "до́мом is instrumental singular of the noun meaning house.",
+    "objectiveId": "obj-u16-inst-sg",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "до́му is dative singular, not instrumental singular.",
+      "до́ме is prepositional singular, not instrumental singular."
+    ],
+    "assessment": {
+      "testedFeature": "INSTRUMENTAL_SINGULAR",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u16-inst-sg-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u16-inst-sg-5"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u16-inst-sg-6",
+        "prov-ex-or-u16-inst-sg-7"
+      ],
+      "distractorDifference": [
+        "",
+        "до́му is dative singular, not instrumental singular.",
+        "до́ме is prepositional singular, not instrumental singular."
+      ],
+      "whyAnswerDemonstratesObjective": "до́мом is instrumental singular of the noun meaning house.",
+      "contrastMembers": [
+        "до́мом",
+        "до́му",
+        "до́ме"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u16-inst-sg-4",
+        "prov-ex-or-u16-inst-sg-5",
+        "prov-ex-or-u16-inst-sg-6",
+        "prov-ex-or-u16-inst-sg-7"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u16-i-inst-sg-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which instrumental singular noun means pencil?",
+    "promptLetter": "утром",
+    "options": [
+      "карандашом",
+      "поездом",
+      "мужем"
+    ],
+    "answer": "карандашом",
+    "feedback": "карандашом is the instrumental singular form of the noun meaning pencil.",
+    "objectiveId": "obj-u16-inst-sg",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "поездом means train in instrumental singular; it does not identify pencil.",
+      "мужем means husband in instrumental singular; it does not identify pencil."
+    ],
+    "assessment": {
+      "testedFeature": "PENCIL_INSTRUMENTAL",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u16-inst-sg-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u16-inst-sg-9-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u16-inst-sg-8-ru",
+        "prov-u16-inst-sg-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "поездом means train in instrumental singular; it does not identify pencil.",
+        "мужем means husband in instrumental singular; it does not identify pencil."
+      ],
+      "whyAnswerDemonstratesObjective": "карандашом is the instrumental singular form of the noun meaning pencil.",
+      "contrastMembers": [
+        "карандашом",
+        "поездом",
+        "мужем"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-u16-inst-sg-x-0",
+        "prov-ex-u16-inst-sg-9-ru",
+        "prov-ex-u16-inst-sg-8-ru",
+        "prov-u16-inst-sg-x-1"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u16-g-inst-pl-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which form of the shown noun is instrumental plural?",
+    "promptLetter": "кни́га",
+    "options": [
+      "кни́гами",
+      "кни́гам",
+      "кни́гах"
+    ],
+    "answer": "кни́гами",
+    "feedback": "кни́гами is instrumental plural of the noun meaning book.",
+    "objectiveId": "obj-u16-inst-pl",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "кни́гам is dative plural, not instrumental plural.",
+      "кни́гах is prepositional plural, not instrumental plural."
+    ],
+    "assessment": {
+      "testedFeature": "INSTRUMENTAL_PLURAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u16-inst-pl-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u16-inst-pl-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u16-inst-pl-2",
+        "prov-ex-or-u16-inst-pl-3"
+      ],
+      "distractorDifference": [
+        "",
+        "кни́гам is dative plural, not instrumental plural.",
+        "кни́гах is prepositional plural, not instrumental plural."
+      ],
+      "whyAnswerDemonstratesObjective": "кни́гами is instrumental plural of the noun meaning book.",
+      "contrastMembers": [
+        "кни́гами",
+        "кни́гам",
+        "кни́гах"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u16-inst-pl-0",
+        "prov-ex-or-u16-inst-pl-1",
+        "prov-ex-or-u16-inst-pl-2",
+        "prov-ex-or-u16-inst-pl-3"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u16-i-inst-pl-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which form of the shown noun is instrumental plural?",
+    "promptLetter": "до́м",
+    "options": [
+      "дома́ми",
+      "дома́м",
+      "до́мом"
+    ],
+    "answer": "дома́ми",
+    "feedback": "дома́ми is instrumental plural of the noun meaning house.",
+    "objectiveId": "obj-u16-inst-pl",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "дома́м is dative plural, not instrumental plural.",
+      "до́мом is instrumental singular, not instrumental plural."
+    ],
+    "assessment": {
+      "testedFeature": "INSTRUMENTAL_PLURAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u16-inst-pl-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u16-inst-pl-5"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u16-inst-pl-6",
+        "prov-ex-or-u16-inst-pl-7"
+      ],
+      "distractorDifference": [
+        "",
+        "дома́м is dative plural, not instrumental plural.",
+        "до́мом is instrumental singular, not instrumental plural."
+      ],
+      "whyAnswerDemonstratesObjective": "дома́ми is instrumental plural of the noun meaning house.",
+      "contrastMembers": [
+        "дома́ми",
+        "дома́м",
+        "до́мом"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u16-inst-pl-4",
+        "prov-ex-or-u16-inst-pl-5",
+        "prov-ex-or-u16-inst-pl-6",
+        "prov-ex-or-u16-inst-pl-7"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u16-i-inst-pl-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which form of the shown noun is instrumental plural?",
+    "promptLetter": "сто́л",
+    "options": [
+      "стола́ми",
+      "стола́м",
+      "столо́м"
+    ],
+    "answer": "стола́ми",
+    "feedback": "стола́ми is instrumental plural of the noun meaning table.",
+    "objectiveId": "obj-u16-inst-pl",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "стола́м is dative plural, not instrumental plural.",
+      "столо́м is instrumental singular, not instrumental plural."
+    ],
+    "assessment": {
+      "testedFeature": "INSTRUMENTAL_PLURAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u16-inst-pl-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u16-inst-pl-9"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u16-inst-pl-10",
+        "prov-ex-or-u16-inst-pl-11"
+      ],
+      "distractorDifference": [
+        "",
+        "стола́м is dative plural, not instrumental plural.",
+        "столо́м is instrumental singular, not instrumental plural."
+      ],
+      "whyAnswerDemonstratesObjective": "стола́ми is instrumental plural of the noun meaning table.",
+      "contrastMembers": [
+        "стола́ми",
+        "стола́м",
+        "столо́м"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u16-inst-pl-8",
+        "prov-ex-or-u16-inst-pl-9",
+        "prov-ex-or-u16-inst-pl-10",
+        "prov-ex-or-u16-inst-pl-11"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u16-g-inst-adj-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which form of the shown adjective is masculine instrumental singular?",
+    "promptLetter": "хоро́ший",
+    "options": [
+      "хоро́шим",
+      "хоро́шему",
+      "хоро́шими"
+    ],
+    "answer": "хоро́шим",
+    "feedback": "хоро́шим is masculine instrumental singular here; the same form also serves neuter instrumental singular.",
+    "objectiveId": "obj-u16-inst-adj",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шему is dative singular, not masculine instrumental.",
+      "хоро́шими is instrumental plural, not masculine instrumental singular."
+    ],
+    "assessment": {
+      "testedFeature": "MASCULINE_INSTRUMENTAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u16-inst-adj-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u16-inst-adj-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u16-inst-adj-2",
+        "prov-ex-or-u16-inst-adj-4"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шему is dative singular, not masculine instrumental.",
+        "хоро́шими is instrumental plural, not masculine instrumental singular."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́шим is masculine instrumental singular here; the same form also serves neuter instrumental singular.",
+      "contrastMembers": [
+        "хоро́шим",
+        "хоро́шему",
+        "хоро́шими"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u16-inst-adj-0",
+        "prov-ex-or-u16-inst-adj-1",
+        "prov-ex-or-u16-inst-adj-2",
+        "prov-ex-or-u16-inst-adj-4"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u16-i-inst-adj-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which form of the shown adjective is plural instrumental?",
+    "promptLetter": "хоро́шие",
+    "options": [
+      "хоро́шими",
+      "хоро́шим",
+      "хоро́шая"
+    ],
+    "answer": "хоро́шими",
+    "feedback": "хоро́шими is plural instrumental of the adjective meaning good.",
+    "objectiveId": "obj-u16-inst-adj",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шим is instrumental singular, not plural instrumental.",
+      "хоро́шая is feminine nominative singular, not plural instrumental."
+    ],
+    "assessment": {
+      "testedFeature": "PLURAL_INSTRUMENTAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u16-inst-adj-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u16-inst-adj-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u16-inst-adj-1",
+        "prov-ex-or-u16-inst-adj-5"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шим is instrumental singular, not plural instrumental.",
+        "хоро́шая is feminine nominative singular, not plural instrumental."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́шими is plural instrumental of the adjective meaning good.",
+      "contrastMembers": [
+        "хоро́шими",
+        "хоро́шим",
+        "хоро́шая"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u16-inst-adj-3",
+        "prov-ex-or-u16-inst-adj-4",
+        "prov-ex-or-u16-inst-adj-1",
+        "prov-ex-or-u16-inst-adj-5"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u16-i-inst-adj-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which form of the shown adjective is masculine instrumental singular?",
+    "promptLetter": "хоро́шему",
+    "options": [
+      "хоро́шим",
+      "хоро́шая",
+      "хоро́шие"
+    ],
+    "answer": "хоро́шим",
+    "feedback": "хоро́шим is masculine instrumental singular here; the cue shows the dative form of the same adjective.",
+    "objectiveId": "obj-u16-inst-adj",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "хоро́шая is feminine nominative singular, not masculine instrumental.",
+      "хоро́шие is nominative plural, not masculine instrumental."
+    ],
+    "assessment": {
+      "testedFeature": "MASCULINE_INSTRUMENTAL",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u16-inst-adj-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u16-inst-adj-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u16-inst-adj-5",
+        "prov-ex-or-u16-inst-adj-3"
+      ],
+      "distractorDifference": [
+        "",
+        "хоро́шая is feminine nominative singular, not masculine instrumental.",
+        "хоро́шие is nominative plural, not masculine instrumental."
+      ],
+      "whyAnswerDemonstratesObjective": "хоро́шим is masculine instrumental singular here; the cue shows the dative form of the same adjective.",
+      "contrastMembers": [
+        "хоро́шим",
+        "хоро́шая",
+        "хоро́шие"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u16-inst-adj-2",
+        "prov-ex-or-u16-inst-adj-1",
+        "prov-ex-or-u16-inst-adj-5",
+        "prov-ex-or-u16-inst-adj-3"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u16-g-inst-means-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which sentence is the accompaniment line, describing a meeting with a person?",
+    "promptLetter": "Я написал хорошим новым карандашом",
+    "options": [
+      "Я хочу встречу с интересной русской женщиной",
+      "Я живу́ ме́жду двумя но́выми дома́ми"
+    ],
+    "answer": "Я хочу встречу с интересной русской женщиной",
+    "feedback": "The accompaniment line describes a meeting with a person, not an instrument used to perform an action.",
+    "objectiveId": "obj-u16-inst-means",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The sentence about living between two houses describes location, not an accompaniment line."
+    ],
+    "assessment": {
+      "testedFeature": "ACCOMPANIMENT_LINE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u16-inst-means-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u16-inst-means-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u16-inst-means-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "The sentence about living between two houses describes location, not an accompaniment line."
+      ],
+      "whyAnswerDemonstratesObjective": "The accompaniment line describes a meeting with a person, not an instrument used to perform an action.",
+      "contrastMembers": [
+        "Я хочу встречу с интересной русской женщиной",
+        "Я живу́ ме́жду двумя но́выми дома́ми"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u16-inst-means-0-ru",
+        "prov-ex-u16-inst-means-1-ru",
+        "prov-ex-u16-inst-means-2-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u16-i-inst-means-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which sentence uses the means instrumental to name a tool used for an action?",
+    "promptLetter": "Я хочу встречу с интересной русской женщиной",
+    "options": [
+      "Я написал хорошим новым карандашом",
+      "Я живу́ ме́жду двумя но́выми дома́ми"
+    ],
+    "answer": "Я написал хорошим новым карандашом",
+    "feedback": "The means instrumental in the writing sentence names the pencil used as the tool.",
+    "objectiveId": "obj-u16-inst-means",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The sentence about living between two houses describes location, not a means instrumental naming a tool."
+    ],
+    "assessment": {
+      "testedFeature": "MEANS_INSTRUMENTAL",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u16-inst-means-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u16-inst-means-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u16-inst-means-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "The sentence about living between two houses describes location, not a means instrumental naming a tool."
+      ],
+      "whyAnswerDemonstratesObjective": "The means instrumental in the writing sentence names the pencil used as the tool.",
+      "contrastMembers": [
+        "Я написал хорошим новым карандашом",
+        "Я живу́ ме́жду двумя но́выми дома́ми"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u16-inst-means-1-ru",
+        "prov-ex-u16-inst-means-0-ru",
+        "prov-ex-u16-inst-means-2-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u16-i-inst-means-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which sentence is the between line, describing a location relative to two houses?",
+    "promptLetter": "Я написал хорошим новым карандашом",
+    "options": [
+      "Я живу́ ме́жду двумя но́выми дома́ми",
+      "Я хочу встречу с интересной русской женщиной"
+    ],
+    "answer": "Я живу́ ме́жду двумя но́выми дома́ми",
+    "feedback": "The between line locates the speaker relative to two houses.",
+    "objectiveId": "obj-u16-inst-means",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The meeting sentence is an accompaniment line describing a person involved in a meeting, not location between houses."
+    ],
+    "assessment": {
+      "testedFeature": "BETWEEN_LINE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u16-inst-means-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u16-inst-means-2-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u16-inst-means-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "The meeting sentence is an accompaniment line describing a person involved in a meeting, not location between houses."
+      ],
+      "whyAnswerDemonstratesObjective": "The between line locates the speaker relative to two houses.",
+      "contrastMembers": [
+        "Я живу́ ме́жду двумя но́выми дома́ми",
+        "Я хочу встречу с интересной русской женщиной"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u16-inst-means-0-ru",
+        "prov-ex-u16-inst-means-2-ru",
+        "prov-ex-u16-inst-means-1-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u16-g-inst-prep-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English spatial meaning fits the shown preposition?",
+    "promptLetter": "над",
+    "options": [
+      "over",
+      "under",
+      "before"
+    ],
+    "answer": "over",
+    "feedback": "The over label identifies the meaning of the shown preposition: above something.",
+    "objectiveId": "obj-u16-inst-prep",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The under label places something below, not above.",
+      "The before label describes being in front of, not above."
+    ],
+    "assessment": {
+      "testedFeature": "OVER_LABEL",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u16-inst-prep-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u16-inst-prep-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u16-inst-prep-1-en",
+        "prov-ex-u16-inst-prep-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "The under label places something below, not above.",
+        "The before label describes being in front of, not above."
+      ],
+      "whyAnswerDemonstratesObjective": "The over label identifies the meaning of the shown preposition: above something.",
+      "contrastMembers": [
+        "over",
+        "under",
+        "before"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u16-inst-prep-0-ru",
+        "prov-ex-u16-inst-prep-0-en",
+        "prov-ex-u16-inst-prep-1-en",
+        "prov-ex-u16-inst-prep-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u16-i-inst-prep-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English spatial meaning fits the shown preposition?",
+    "promptLetter": "под",
+    "options": [
+      "under",
+      "over",
+      "behind"
+    ],
+    "answer": "under",
+    "feedback": "The under label identifies the meaning of the shown preposition: below something.",
+    "objectiveId": "obj-u16-inst-prep",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The over label places something above, not below.",
+      "The behind label places something at the back, not below."
+    ],
+    "assessment": {
+      "testedFeature": "UNDER_LABEL",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u16-inst-prep-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u16-inst-prep-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u16-inst-prep-0-en",
+        "prov-u16-inst-prep-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "The over label places something above, not below.",
+        "The behind label places something at the back, not below."
+      ],
+      "whyAnswerDemonstratesObjective": "The under label identifies the meaning of the shown preposition: below something.",
+      "contrastMembers": [
+        "under",
+        "over",
+        "behind"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u16-inst-prep-1-ru",
+        "prov-ex-u16-inst-prep-1-en",
+        "prov-ex-u16-inst-prep-0-en",
+        "prov-u16-inst-prep-x-0"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u16-i-inst-prep-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English spatial meaning fits the shown preposition?",
+    "promptLetter": "перед",
+    "options": [
+      "before",
+      "over",
+      "between"
+    ],
+    "answer": "before",
+    "feedback": "The before label identifies the spatial meaning of the shown preposition: in front of something.",
+    "objectiveId": "obj-u16-inst-prep",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The over label places something above, not in front of.",
+      "The between label places something relative to two things, not in front of."
+    ],
+    "assessment": {
+      "testedFeature": "BEFORE_LABEL",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u16-inst-prep-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u16-inst-prep-2-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u16-inst-prep-0-en",
+        "prov-ex-u16-inst-prep-3-en"
+      ],
+      "distractorDifference": [
+        "",
+        "The over label places something above, not in front of.",
+        "The between label places something relative to two things, not in front of."
+      ],
+      "whyAnswerDemonstratesObjective": "The before label identifies the spatial meaning of the shown preposition: in front of something.",
+      "contrastMembers": [
+        "before",
+        "over",
+        "between"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u16-inst-prep-2-ru",
+        "prov-ex-u16-inst-prep-2-en",
+        "prov-ex-u16-inst-prep-0-en",
+        "prov-ex-u16-inst-prep-3-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u16-g-complements-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning fits the shown infinitive?",
+    "promptLetter": "стать",
+    "options": [
+      "to become",
+      "to remain",
+      "to turn out to be"
+    ],
+    "answer": "to become",
+    "feedback": "стать means to become: the infinitive expresses a change without marking a past event.",
+    "objectiveId": "obj-u16-complements",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "to remain expresses continuation, not a change of state.",
+      "to turn out to be expresses what something proves to be, not becoming."
+    ],
+    "assessment": {
+      "testedFeature": "INFINITIVE_STAT",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u16-complements-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-repair-16-10742"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-repair-16-10745",
+        "prov-ca-repair-16-10746"
+      ],
+      "distractorDifference": [
+        "",
+        "to remain expresses continuation, not a change of state.",
+        "to turn out to be expresses what something proves to be, not becoming."
+      ],
+      "whyAnswerDemonstratesObjective": "стать means to become: the infinitive expresses a change without marking a past event.",
+      "contrastMembers": [
+        "to become",
+        "to remain",
+        "to turn out to be"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-repair-16-10741",
+        "prov-ca-repair-16-10742",
+        "prov-ca-repair-16-10745",
+        "prov-ca-repair-16-10746"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u16-i-complements-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning fits the shown infinitive?",
+    "promptLetter": "остаться",
+    "options": [
+      "remain",
+      "became",
+      "turn out to be"
+    ],
+    "answer": "remain",
+    "feedback": "остаться means to remain; choose remain for continuation of a state. It belongs to the connective verbs introduced here.",
+    "objectiveId": "obj-u16-complements",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "became is an English past-tense word and does not correctly label the shown infinitive.",
+      "turn out to be expresses what something proves to be, not continuation."
+    ],
+    "assessment": {
+      "testedFeature": "COMPLEMENT_REMAIN",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u16-complements-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u16-complements-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u16-complements-0-en",
+        "prov-ex-u16-complements-3-en"
+      ],
+      "distractorDifference": [
+        "",
+        "became is an English past-tense word and does not correctly label the shown infinitive.",
+        "turn out to be expresses what something proves to be, not continuation."
+      ],
+      "whyAnswerDemonstratesObjective": "остаться means to remain; choose remain for continuation of a state. It belongs to the connective verbs introduced here.",
+      "contrastMembers": [
+        "remain",
+        "became",
+        "turn out to be"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u16-complements-1-ru",
+        "prov-ex-u16-complements-1-en",
+        "prov-ex-u16-complements-0-en",
+        "prov-ex-u16-complements-3-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u16-i-complements-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning fits the shown infinitive?",
+    "promptLetter": "оказаться",
+    "options": [
+      "turn out to be",
+      "became",
+      "remain"
+    ],
+    "answer": "turn out to be",
+    "feedback": "оказаться means to turn out to be: it describes what something proves to be.",
+    "objectiveId": "obj-u16-complements",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "became is an English past-tense word and does not correctly label the shown infinitive.",
+      "remain expresses continuation of a state, not what something proves to be."
+    ],
+    "assessment": {
+      "testedFeature": "COMPLEMENT_TURN",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u16-complements-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u16-complements-3-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u16-complements-0-en",
+        "prov-ex-u16-complements-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "became is an English past-tense word and does not correctly label the shown infinitive.",
+        "remain expresses continuation of a state, not what something proves to be."
+      ],
+      "whyAnswerDemonstratesObjective": "оказаться means to turn out to be: it describes what something proves to be.",
+      "contrastMembers": [
+        "turn out to be",
+        "became",
+        "remain"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u16-complements-3-ru",
+        "prov-ex-u16-complements-3-en",
+        "prov-ex-u16-complements-0-en",
+        "prov-ex-u16-complements-1-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-g-ordinals-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the first ordinal?",
+    "promptLetter": "второ́й",
+    "options": [
+      "пе́рвый",
+      "тре́тий",
+      "четвёртый"
+    ],
+    "answer": "пе́рвый",
+    "feedback": "пе́рвый means first. This is the first ordinal. Choose this phrase for the requested position, even when the shown cue differs.",
+    "objectiveId": "obj-u17-ordinals",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "тре́тий means third, rather than the requested first.",
+      "четвёртый means fourth, rather than the requested first."
+    ],
+    "assessment": {
+      "testedFeature": "FIRST_ORDINAL",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u17-ordinals-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u17-ordinals-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-ordinals-2-ru",
+        "prov-u17-ordinals-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "тре́тий means third, rather than the requested first.",
+        "четвёртый means fourth, rather than the requested first."
+      ],
+      "whyAnswerDemonstratesObjective": "пе́рвый means first. This is the first ordinal. Choose this phrase for the requested position, even when the shown cue differs.",
+      "contrastMembers": [
+        "пе́рвый",
+        "тре́тий",
+        "четвёртый"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-ordinals-1-ru",
+        "prov-ex-u17-ordinals-0-ru",
+        "prov-ex-u17-ordinals-2-ru",
+        "prov-u17-ordinals-x-0"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u17-i-ordinals-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the second ordinal?",
+    "promptLetter": "пе́рвый",
+    "options": [
+      "второ́й",
+      "тре́тий",
+      "четвёртый"
+    ],
+    "answer": "второ́й",
+    "feedback": "второ́й means second. This is the second ordinal. Choose this phrase for the requested position, even when the shown cue differs.",
+    "objectiveId": "obj-u17-ordinals",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "тре́тий means third, rather than the requested second.",
+      "четвёртый means fourth, rather than the requested second."
+    ],
+    "assessment": {
+      "testedFeature": "SECOND_ORDINAL",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u17-ordinals-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-ordinals-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-ordinals-2-ru",
+        "prov-u17-ordinals-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "тре́тий means third, rather than the requested second.",
+        "четвёртый means fourth, rather than the requested second."
+      ],
+      "whyAnswerDemonstratesObjective": "второ́й means second. This is the second ordinal. Choose this phrase for the requested position, even when the shown cue differs.",
+      "contrastMembers": [
+        "второ́й",
+        "тре́тий",
+        "четвёртый"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-ordinals-0-ru",
+        "prov-ex-u17-ordinals-1-ru",
+        "prov-ex-u17-ordinals-2-ru",
+        "prov-u17-ordinals-x-0"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u17-i-ordinals-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the third ordinal?",
+    "promptLetter": "пе́рвый",
+    "options": [
+      "тре́тий",
+      "второ́й",
+      "четвёртый"
+    ],
+    "answer": "тре́тий",
+    "feedback": "тре́тий means third. This is the third ordinal. Choose this phrase for the requested position, even when the shown cue differs.",
+    "objectiveId": "obj-u17-ordinals",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "второ́й means second, rather than the requested third.",
+      "четвёртый means fourth, rather than the requested third."
+    ],
+    "assessment": {
+      "testedFeature": "THIRD_ORDINAL",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u17-ordinals-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-ordinals-2-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-ordinals-1-ru",
+        "prov-u17-ordinals-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "второ́й means second, rather than the requested third.",
+        "четвёртый means fourth, rather than the requested third."
+      ],
+      "whyAnswerDemonstratesObjective": "тре́тий means third. This is the third ordinal. Choose this phrase for the requested position, even when the shown cue differs.",
+      "contrastMembers": [
+        "тре́тий",
+        "второ́й",
+        "четвёртый"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-ordinals-0-ru",
+        "prov-ex-u17-ordinals-2-ru",
+        "prov-ex-u17-ordinals-1-ru",
+        "prov-u17-ordinals-x-0"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u17-g-hours-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the one-hour row?",
+    "promptLetter": "два часа",
+    "options": [
+      "один час",
+      "пять часов"
+    ],
+    "answer": "один час",
+    "feedback": "один час means one hour. This is the one-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+    "objectiveId": "obj-u17-hours",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "пять часов means five hours, rather than the requested one hour."
+    ],
+    "assessment": {
+      "testedFeature": "ONE_HOUR_ROW",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u17-hours-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u17-hours-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-hours-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "пять часов means five hours, rather than the requested one hour."
+      ],
+      "whyAnswerDemonstratesObjective": "один час means one hour. This is the one-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+      "contrastMembers": [
+        "один час",
+        "пять часов"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-hours-1-ru",
+        "prov-ex-u17-hours-0-ru",
+        "prov-ex-u17-hours-2-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u17-i-hours-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the two-hour row?",
+    "promptLetter": "один час",
+    "options": [
+      "два часа",
+      "пять часов"
+    ],
+    "answer": "два часа",
+    "feedback": "два часа means two hours. This is the two-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+    "objectiveId": "obj-u17-hours",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "пять часов means five hours, rather than the requested two hours."
+    ],
+    "assessment": {
+      "testedFeature": "TWO_HOUR_ROW",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u17-hours-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-hours-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-hours-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "пять часов means five hours, rather than the requested two hours."
+      ],
+      "whyAnswerDemonstratesObjective": "два часа means two hours. This is the two-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+      "contrastMembers": [
+        "два часа",
+        "пять часов"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-hours-0-ru",
+        "prov-ex-u17-hours-1-ru",
+        "prov-ex-u17-hours-2-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u17-i-hours-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the five-hour row?",
+    "promptLetter": "один час",
+    "options": [
+      "пять часов",
+      "два часа"
+    ],
+    "answer": "пять часов",
+    "feedback": "пять часов means five hours. This is the five-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+    "objectiveId": "obj-u17-hours",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "два часа means two hours, rather than the requested five hours."
+    ],
+    "assessment": {
+      "testedFeature": "FIVE_HOUR_ROW",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u17-hours-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-hours-2-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-hours-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "два часа means two hours, rather than the requested five hours."
+      ],
+      "whyAnswerDemonstratesObjective": "пять часов means five hours. This is the five-hour row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+      "contrastMembers": [
+        "пять часов",
+        "два часа"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-hours-0-ru",
+        "prov-ex-u17-hours-2-ru",
+        "prov-ex-u17-hours-1-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u17-g-years-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the one-year row?",
+    "promptLetter": "два года",
+    "options": [
+      "один год",
+      "пять лет"
+    ],
+    "answer": "один год",
+    "feedback": "один год means one year. This is the one-year row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+    "objectiveId": "obj-u17-years",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "пять лет means five years, rather than the requested one year."
+    ],
+    "assessment": {
+      "testedFeature": "ONE_YEAR_ROW",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u17-years-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u17-years-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-years-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "пять лет means five years, rather than the requested one year."
+      ],
+      "whyAnswerDemonstratesObjective": "один год means one year. This is the one-year row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+      "contrastMembers": [
+        "один год",
+        "пять лет"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-years-1-ru",
+        "prov-ex-u17-years-0-ru",
+        "prov-ex-u17-years-2-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u17-i-years-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the two-year row?",
+    "promptLetter": "один год",
+    "options": [
+      "два года",
+      "пять лет"
+    ],
+    "answer": "два года",
+    "feedback": "два года means two years. This is the two-year row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+    "objectiveId": "obj-u17-years",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "пять лет means five years, rather than the requested two years."
+    ],
+    "assessment": {
+      "testedFeature": "TWO_YEAR_ROW",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u17-years-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-years-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-years-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "пять лет means five years, rather than the requested two years."
+      ],
+      "whyAnswerDemonstratesObjective": "два года means two years. This is the two-year row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+      "contrastMembers": [
+        "два года",
+        "пять лет"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-years-0-ru",
+        "prov-ex-u17-years-1-ru",
+        "prov-ex-u17-years-2-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u17-i-years-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the five-year row?",
+    "promptLetter": "один год",
+    "options": [
+      "пять лет",
+      "два года"
+    ],
+    "answer": "пять лет",
+    "feedback": "пять лет means five years. This is the five-year row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+    "objectiveId": "obj-u17-years",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "два года means two years, rather than the requested five years."
+    ],
+    "assessment": {
+      "testedFeature": "FIVE_YEAR_ROW",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u17-years-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-years-2-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-years-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "два года means two years, rather than the requested five years."
+      ],
+      "whyAnswerDemonstratesObjective": "пять лет means five years. This is the five-year row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+      "contrastMembers": [
+        "пять лет",
+        "два года"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-years-0-ru",
+        "prov-ex-u17-years-2-ru",
+        "prov-ex-u17-years-1-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u17-g-minutes-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the one-minute row?",
+    "promptLetter": "две минуты",
+    "options": [
+      "одна минута",
+      "пять минут"
+    ],
+    "answer": "одна минута",
+    "feedback": "одна минута means one minute. This is the one-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+    "objectiveId": "obj-u17-minutes",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "пять минут means five minutes, rather than the requested one minute."
+    ],
+    "assessment": {
+      "testedFeature": "ONE_MINUTE_ROW",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u17-minutes-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u17-minutes-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-minutes-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "пять минут means five minutes, rather than the requested one minute."
+      ],
+      "whyAnswerDemonstratesObjective": "одна минута means one minute. This is the one-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+      "contrastMembers": [
+        "одна минута",
+        "пять минут"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-minutes-1-ru",
+        "prov-ex-u17-minutes-0-ru",
+        "prov-ex-u17-minutes-2-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u17-i-minutes-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the two-minute row?",
+    "promptLetter": "одна минута",
+    "options": [
+      "две минуты",
+      "пять минут"
+    ],
+    "answer": "две минуты",
+    "feedback": "две минуты means two minutes. This is the two-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+    "objectiveId": "obj-u17-minutes",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "пять минут means five minutes, rather than the requested two minutes."
+    ],
+    "assessment": {
+      "testedFeature": "TWO_MINUTE_ROW",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u17-minutes-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-minutes-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-minutes-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "пять минут means five minutes, rather than the requested two minutes."
+      ],
+      "whyAnswerDemonstratesObjective": "две минуты means two minutes. This is the two-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+      "contrastMembers": [
+        "две минуты",
+        "пять минут"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-minutes-0-ru",
+        "prov-ex-u17-minutes-1-ru",
+        "prov-ex-u17-minutes-2-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u17-i-minutes-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the five-minute row?",
+    "promptLetter": "одна минута",
+    "options": [
+      "пять минут",
+      "две минуты"
+    ],
+    "answer": "пять минут",
+    "feedback": "пять минут means five minutes. This is the five-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+    "objectiveId": "obj-u17-minutes",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "две минуты means two minutes, rather than the requested five minutes."
+    ],
+    "assessment": {
+      "testedFeature": "FIVE_MINUTE_ROW",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u17-minutes-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-minutes-2-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-minutes-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "две минуты means two minutes, rather than the requested five minutes."
+      ],
+      "whyAnswerDemonstratesObjective": "пять минут means five minutes. This is the five-minute row. Choose this phrase for the requested quantity, even when the shown cue differs.",
+      "contrastMembers": [
+        "пять минут",
+        "две минуты"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u17-minutes-0-ru",
+        "prov-ex-u17-minutes-2-ru",
+        "prov-ex-u17-minutes-1-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u17-g-age-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which natural English states the age in the shown phrase?",
+    "promptLetter": "мне двадцать лет",
+    "options": [
+      "I am 20 years old",
+      "I own 20 summers",
+      "20 people asked me"
+    ],
+    "answer": "I am 20 years old",
+    "feedback": "мне двадцать лет states I am 20 years old. The person whose age is given is in the dative case; the present-time Russian construction has no expressed verb.",
+    "objectiveId": "obj-u17-age",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "I own 20 summers invents ownership; the shown construction gives an age.",
+      "20 people asked me invents people performing an action; the shown construction gives an age."
+    ],
+    "assessment": {
+      "testedFeature": "AGE_NATURAL_ENGLISH",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u17-age-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-17-503"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-17-507",
+        "prov-ca-17-508"
+      ],
+      "distractorDifference": [
+        "",
+        "I own 20 summers invents ownership; the shown construction gives an age.",
+        "20 people asked me invents people performing an action; the shown construction gives an age."
+      ],
+      "whyAnswerDemonstratesObjective": "The age construction мне двадцать лет is natural English I am 20 years old.\nмне двадцать лет states I am 20 years old. The person whose age is given is in the dative case; the present-time Russian construction has no expressed verb.",
+      "contrastMembers": [
+        "I am 20 years old",
+        "I own 20 summers",
+        "20 people asked me"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-17-502",
+        "prov-ca-17-503",
+        "prov-ca-17-507",
+        "prov-ca-17-508"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-age-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "мне двадцать лет",
+    "options": [
+      "I am 20 (years old)",
+      "age statements"
+    ],
+    "answer": "I am 20 (years old)",
+    "feedback": "мне двадцать лет means I am 20 (years old). The dative person and the number of years together state the age.",
+    "objectiveId": "obj-u17-age",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "age statements is a section label rather than the meaning of this phrase."
+    ],
+    "assessment": {
+      "testedFeature": "AGE_HEADING",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u17-age-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-age-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u17-age-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "age statements is a section label rather than the meaning of this phrase."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"мне двадцать лет\" with the admitted gloss \"I am 20 (years old)\".\nмне двадцать лет means I am 20 (years old). The dative person and the number of years together state the age.",
+      "contrastMembers": [
+        "I am 20 (years old)",
+        "age statements"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u17-age-0-ru",
+        "prov-ex-u17-age-0-en",
+        "prov-u17-age-x-1"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-age-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "двадцать лет",
+    "options": [
+      "20 years",
+      "age statements"
+    ],
+    "answer": "20 years",
+    "feedback": "двадцать лет means 20 years. This quantity phrase does not by itself identify whose age is meant.",
+    "objectiveId": "obj-u17-age",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "age statements is a section label rather than the meaning of this phrase."
+    ],
+    "assessment": {
+      "testedFeature": "AGE_YEARS",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u17-age-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-age-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u17-age-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "age statements is a section label rather than the meaning of this phrase."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"двадцать лет\" with the admitted gloss \"20 years\".\nдвадцать лет means 20 years. This quantity phrase does not by itself identify whose age is meant.",
+      "contrastMembers": [
+        "20 years",
+        "age statements"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u17-age-1-ru",
+        "prov-ex-u17-age-1-en",
+        "prov-u17-age-x-1"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-g-weekdays-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "понедельник",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Wednesday"
+    ],
+    "answer": "Monday",
+    "feedback": "понедельник means Monday. This names a day of the week; choose the matching English name.",
+    "objectiveId": "obj-u17-weekdays",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Tuesday names a different day of the week and does not match the shown word.",
+      "Wednesday names a different day of the week and does not match the shown word."
+    ],
+    "assessment": {
+      "testedFeature": "WEEKDAY_MONDAY",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u17-weekdays-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u17-weekdays-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-weekdays-1-en",
+        "prov-ex-u17-weekdays-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "Tuesday names a different day of the week and does not match the shown word.",
+        "Wednesday names a different day of the week and does not match the shown word."
+      ],
+      "whyAnswerDemonstratesObjective": "понедельник || noun || Monday\nпонедельник means Monday. This names a day of the week; choose the matching English name.",
+      "contrastMembers": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u17-weekdays-0-ru",
+        "prov-ex-u17-weekdays-0-en",
+        "prov-ex-u17-weekdays-1-en",
+        "prov-ex-u17-weekdays-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-weekdays-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "четверг",
+    "options": [
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "answer": "Thursday",
+    "feedback": "четверг means Thursday. This names a day of the week; choose the matching English name.",
+    "objectiveId": "obj-u17-weekdays",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Friday names a different day of the week and does not match the shown word.",
+      "Saturday names a different day of the week and does not match the shown word."
+    ],
+    "assessment": {
+      "testedFeature": "WEEKDAY_THURSDAY",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u17-weekdays-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u17-weekdays-3-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u17-weekdays-x-3",
+        "prov-u17-weekdays-x-4"
+      ],
+      "distractorDifference": [
+        "",
+        "Friday names a different day of the week and does not match the shown word.",
+        "Saturday names a different day of the week and does not match the shown word."
+      ],
+      "whyAnswerDemonstratesObjective": "четверг || noun || Thursday\nчетверг means Thursday. This names a day of the week; choose the matching English name.",
+      "contrastMembers": [
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u17-weekdays-3-ru",
+        "prov-ex-u17-weekdays-3-en",
+        "prov-u17-weekdays-x-3",
+        "prov-u17-weekdays-x-4"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-weekdays-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "воскресенье",
+    "options": [
+      "Sunday",
+      "Monday",
+      "Saturday"
+    ],
+    "answer": "Sunday",
+    "feedback": "воскресенье means Sunday. This names a day of the week; choose the matching English name.",
+    "objectiveId": "obj-u17-weekdays",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Monday names a different day of the week and does not match the shown word.",
+      "Saturday names a different day of the week and does not match the shown word."
+    ],
+    "assessment": {
+      "testedFeature": "WEEKDAY_SUNDAY",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u17-weekdays-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u17-weekdays-x-5"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-weekdays-0-en",
+        "prov-u17-weekdays-x-4"
+      ],
+      "distractorDifference": [
+        "",
+        "Monday names a different day of the week and does not match the shown word.",
+        "Saturday names a different day of the week and does not match the shown word."
+      ],
+      "whyAnswerDemonstratesObjective": "воскресенье || noun || Sunday\nвоскресенье means Sunday. This names a day of the week; choose the matching English name.",
+      "contrastMembers": [
+        "Sunday",
+        "Monday",
+        "Saturday"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-u17-weekdays-x-2",
+        "prov-u17-weekdays-x-5",
+        "prov-ex-u17-weekdays-0-en",
+        "prov-u17-weekdays-x-4"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-g-months-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "Январь",
+    "options": [
+      "January",
+      "February",
+      "March"
+    ],
+    "answer": "January",
+    "feedback": "Январь means January. This names a month; choose the matching English name.",
+    "objectiveId": "obj-u17-months",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "February names a different month and does not match the shown word.",
+      "March names a different month and does not match the shown word."
+    ],
+    "assessment": {
+      "testedFeature": "MONTH_JANUARY",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u17-months-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u17-months-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-months-1-en",
+        "prov-ex-u17-months-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "February names a different month and does not match the shown word.",
+        "March names a different month and does not match the shown word."
+      ],
+      "whyAnswerDemonstratesObjective": "Январь || January\nЯнварь means January. This names a month; choose the matching English name.",
+      "contrastMembers": [
+        "January",
+        "February",
+        "March"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u17-months-0-ru",
+        "prov-ex-u17-months-0-en",
+        "prov-ex-u17-months-1-en",
+        "prov-ex-u17-months-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-months-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "Июнь",
+    "options": [
+      "June",
+      "July",
+      "August"
+    ],
+    "answer": "June",
+    "feedback": "Июнь means June. This names a month; choose the matching English name.",
+    "objectiveId": "obj-u17-months",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "July names a different month and does not match the shown word.",
+      "August names a different month and does not match the shown word."
+    ],
+    "assessment": {
+      "testedFeature": "MONTH_JUNE",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u17-months-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u17-months-x-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u17-months-x-5",
+        "prov-u17-months-x-6"
+      ],
+      "distractorDifference": [
+        "",
+        "July names a different month and does not match the shown word.",
+        "August names a different month and does not match the shown word."
+      ],
+      "whyAnswerDemonstratesObjective": "Июнь || June\nИюнь means June. This names a month; choose the matching English name.",
+      "contrastMembers": [
+        "June",
+        "July",
+        "August"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-u17-months-x-0",
+        "prov-u17-months-x-4",
+        "prov-u17-months-x-5",
+        "prov-u17-months-x-6"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-i-months-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "Декабрь",
+    "options": [
+      "December",
+      "January",
+      "April"
+    ],
+    "answer": "December",
+    "feedback": "Декабрь means December. This names a month; choose the matching English name.",
+    "objectiveId": "obj-u17-months",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "January names a different month and does not match the shown word.",
+      "April names a different month and does not match the shown word."
+    ],
+    "assessment": {
+      "testedFeature": "MONTH_DECEMBER",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u17-months-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u17-months-x-7"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u17-months-0-en",
+        "prov-ex-u17-months-3-en"
+      ],
+      "distractorDifference": [
+        "",
+        "January names a different month and does not match the shown word.",
+        "April names a different month and does not match the shown word."
+      ],
+      "whyAnswerDemonstratesObjective": "Декабрь || December\nДекабрь means December. This names a month; choose the matching English name.",
+      "contrastMembers": [
+        "December",
+        "January",
+        "April"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-u17-months-x-3",
+        "prov-u17-months-x-7",
+        "prov-ex-u17-months-0-en",
+        "prov-ex-u17-months-3-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u17-g-clock-0",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "Который час?",
+    "options": [
+      "What time is it?",
+      "Which book do you want?"
+    ],
+    "answer": "What time is it?",
+    "feedback": "Который час? corresponds to What time is it?. The complete question asks for the current clock time.",
+    "objectiveId": "obj-u17-clock-vocabulary",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form."
+    ]
+  },
+  {
+    "id": "u17-i-clock-1",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "Который час?",
+    "options": [
+      "What time is it?",
+      "Which book do you want?"
+    ],
+    "answer": "What time is it?",
+    "feedback": "Который час? corresponds to What time is it?. The complete question asks for the current clock time.",
+    "objectiveId": "obj-u17-clock-vocabulary",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form."
+    ]
+  },
+  {
+    "id": "u17-i-clock-2",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted English gloss is written beside the shown form?",
+    "promptLetter": "Который час?",
+    "options": [
+      "What time is it?",
+      "Which book do you want?"
+    ],
+    "answer": "What time is it?",
+    "feedback": "Который час? corresponds to What time is it?. The complete question asks for the current clock time.",
+    "objectiveId": "obj-u17-clock-vocabulary",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Which book do you want? is a different meaning or construction and does not match the requested reading of the shown form."
+    ]
+  }
+]

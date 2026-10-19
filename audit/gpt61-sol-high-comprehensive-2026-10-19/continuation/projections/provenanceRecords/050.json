@@ -1,0 +1,1202 @@
+[
+  {
+    "itemId": "prov-obj-u27-comprehension-4",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "the letter Anna wrote is on the table",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "d8f1d40a01c01c954f5502c2c438deff549a53cf9150ea8f8d6ed61a00c75535",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-5",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Анна убрала прочитанное письмо.",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "ff8f86153960e1a7dab221da85cb0f3d3d0632a2cf41f200fc1784b9046b37b5",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-6",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Anna put away the letter she had read",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "27a050162e708525c19e73b467d9eea55282bd883dba95ca0cc217a8f2445c7c",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-7",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Which English reading matches the letter that is on the table?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "32ac8c8396b594e077124e36ec932c9f4e37c48a341d95ec090d95fecd0dba51",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-8",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Admitted reading: the letter Anna wrote is on the table",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "4b51dc1fa33ac0d9c1833892056a82992ea667ec93a49357fc03f7925f3248f7",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-9",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Anna put the letter away",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "58be127744185f9269f0ad6baa10013b785a834e44146d2273fa2263725d41dc",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-10",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "the table wrote the letter",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "ee01a8599e720d3e21cc8b27c1a72038c9e82ee75013f333cd8a83890c1a360d",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-11",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Rejected reading: Anna put the letter away",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "4a7483c70ff839c543a430f23d6603d98290afece98d4e25ada5f75ed0a7dacb",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-12",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Rejected reading: the table wrote the letter",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "2c9be170612400e00de78060d7fc10b7a5f84745cd9ea9087e0ae228542f2363",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-13",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Which English reading matches the person who produced the letter?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "ad80f0e8e596b0caeb6a90ffaf896755cefa31a522e3f54fd6b4adf116a9bef5",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-14",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "написанное Анной",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "aa6c7d97f54fc49299567faf25cbbb73c2c3fa40d8104c63893d8ec3bb4961db",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-15",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Anna is the writer of the letter",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "6bdd2ba7b8b83d490e469fc404f721080608e47260e217c67cedc26adcb3c61b",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-16",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Admitted reading: Anna is the writer of the letter",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "815f7835ec5f090e7dfbc8ec8fffcdb4486036b5c7f69e28c625a353dd1845a9",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-17",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Anna is the reader of the letter",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "044edefacface03b67ec611e3dfd1eb8527783834b88680a10ab4b32feaf8e44",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-18",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "the letter wrote Anna",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "5a4e58aec4b066987472c791cd0298329185db15ce5fa8b309a1daeaaf308ffb",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-19",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Rejected reading: Anna is the reader of the letter",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "3192014fe017f68a5f7423126aad8aff08a3f3ef9430804542ef1cb4f5179c3a",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-20",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Rejected reading: the letter wrote Anna",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "85736a5ca2e807feff64749e8dcf639473b39f435c0a5268a8d85f5259917959",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-21",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Which English reading matches what Anna did with the letter afterward?",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "1ffa8a3097954708ac53da3420758fd308cbf43821d88b8e4ef1ce6c4913f695",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-22",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Admitted reading: Anna put away the letter she had read",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "4a106c074317a7eb29eb1c72b899c51f296f3b367bb76c7962d2b2b1b753d5bf",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  },
+  {
+    "itemId": "prov-obj-u27-comprehension-23",
+    "unitNumber": 27,
+    "objectiveId": "obj-u27-comprehension",
+    "recordType": "original-synthesis",
+    "sourceId": "src-original-research-synthesis",
+    "sourceUrl": "urn:russian-companion:original-research-synthesis:phase3-2026-09-30",
+    "sourceRevision": "phase3-2026-09-30",
+    "sourceRecordId": "phase3:participle-comprehension",
+    "shippedText": "Anna wrote the letter on the table",
+    "transformation": "original research synthesis",
+    "licenseId": "Original app text",
+    "licenseUrl": "urn:russian-companion:license:original-app-text",
+    "attribution": "Russian Companion original research synthesis, phase3-2026-09-30. Bibliography is recorded on the synthesis record. No Penguin prose is included.",
+    "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+    "sourceHash": "3d78d8b453239f09ad10b9e321bec583b6650ae572b7c729ea536a9b46a487fc",
+    "contentHash": "7271bf248bc314780b610017273780efba406458273176328ee596ef8e2e94c6",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "synthesis": {
+      "bibliography": "Original research synthesis consulted 2026-09-30. No retained passage is relabeled as comprehension. The participial sentences are independently authored. Stress recognition is a separate claim.",
+      "sourceDateOrVersion": "2026-09-30",
+      "authorshipDeclaration": "Independently authored for Russian Companion on 2026-09-30. This is original research synthesis, not a quotation or paraphrase of Penguin, the Universal Postal Union manual, Russian Post, Wiktionary, Wikipedia, or OpenRussian.",
+      "objectiveOrClaimBinding": "obj-u27-comprehension:participle-comprehension",
+      "applications": [
+        {
+          "cue": "Письмо, написанное Анной, лежит на столе.",
+          "answer": "the letter Anna wrote is on the table",
+          "distractors": [
+            "Anna put the letter away",
+            "the table wrote the letter"
+          ]
+        },
+        {
+          "cue": "написанное Анной",
+          "answer": "Anna is the writer of the letter",
+          "distractors": [
+            "Anna is the reader of the letter",
+            "the letter wrote Anna"
+          ]
+        },
+        {
+          "cue": "Анна убрала прочитанное письмо.",
+          "answer": "Anna put away the letter she had read",
+          "distractors": [
+            "Anna wrote the letter on the table",
+            "the letter put Anna away"
+          ]
+        },
+        {
+          "cue": "прочитанное письмо",
+          "answer": "the letter had already been read",
+          "distractors": [
+            "the letter had just been written",
+            "Anna is still reading aloud"
+          ]
+        }
+      ]
+    },
+    "originalSourceText": "Read the participial phrase for who did the action and what the result is.\nStress placement is a different objective and does not answer these readings.\nReturn to who wrote the letter and what Anna did after reading it.\nПисьмо, написанное Анной, лежит на столе.\nthe letter Anna wrote is on the table\nАнна убрала прочитанное письмо.\nAnna put away the letter she had read\nWhich English reading matches the letter that is on the table?\nAdmitted reading: the letter Anna wrote is on the table\nAnna put the letter away\nthe table wrote the letter\nRejected reading: Anna put the letter away\nRejected reading: the table wrote the letter\nWhich English reading matches the person who produced the letter?\nнаписанное Анной\nAnna is the writer of the letter\nAdmitted reading: Anna is the writer of the letter\nAnna is the reader of the letter\nthe letter wrote Anna\nRejected reading: Anna is the reader of the letter\nRejected reading: the letter wrote Anna\nWhich English reading matches what Anna did with the letter afterward?\nAdmitted reading: Anna put away the letter she had read\nAnna wrote the letter on the table\nthe letter put Anna away\nRejected reading: Anna wrote the letter on the table\nRejected reading: the letter put Anna away\nWhich English reading matches the state of the letter Anna put away?\nпрочитанное письмо\nthe letter had already been read\nAdmitted reading: the letter had already been read\nthe letter had just been written\nAnna is still reading aloud\nRejected reading: the letter had just been written\nRejected reading: Anna is still reading aloud\nПисьмо,\nПисьмо\nнаписанное Анной,\nлежит на столе.\nлежит на столе\nАнна убрала прочитанное письмо"
+  }
+]

@@ -1,0 +1,1880 @@
+[
+  {
+    "id": "u23-i-elapsed-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown time expression?",
+    "promptLetter": "Мы ездили в Казахстан год назад.",
+    "options": [
+      "ago",
+      "in (a period of time)"
+    ],
+    "answer": "ago",
+    "feedback": "The frozen source pairs the shown form \"Мы ездили в Казахстан год назад.\" with the admitted gloss \"ago\" (\"relate events in time\").\nМы ездили в Казахстан год назад. matches ago: an event before the reference time, not completion within a period.",
+    "objectiveId": "obj-u23-elapsed",
+    "sourceId": "src-pressbooks-diverse-russian-usa-grammar",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "in (a period of time): an event after the forward-looking interval, not the duration of the activity. This is a different time relation, interval, event or completion claim from the requested meaning."
+    ],
+    "assessment": {
+      "testedFeature": "ELAPSED_RELATION",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u23-elapsed-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u23-elapsed-3-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u23-elapsed-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "in (a period of time): an event after the forward-looking interval, not the duration of the activity. This is a different time relation, interval, event or completion claim from the requested meaning."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Мы ездили в Казахстан год назад.\" with the admitted gloss \"ago\" (\"relate events in time\").\nМы ездили в Казахстан год назад. matches ago: an event before the reference time, not completion within a period.",
+      "contrastMembers": [
+        "ago",
+        "in (a period of time)"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u23-elapsed-3-ru",
+        "prov-ex-u23-elapsed-3-en",
+        "prov-ex-u23-elapsed-2-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u24-g-verbal-ne-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which complete reply negates the speaking action in the shown affirmative reply?",
+    "promptLetter": "Да, говорю́",
+    "options": [
+      "Нет, не говорю́",
+      "Он не студент",
+      "Вы говори́те?"
+    ],
+    "answer": "Нет, не говорю́",
+    "feedback": "The frozen example No, I'm not speaking adds the particle before the speaking reply.\nДа, говорю́ is the reference cue; Нет, не говорю́ matches the requested meaning or structure. a negative first-person speaking reply.",
+    "objectiveId": "obj-u24-verbal-ne",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Он не студент: a negative noun predicate with an omitted present copula. This differs from the meaning or structure requested in this context. The frozen example He's not a student is omitted in the present form, so the particle stands on its own.",
+      "Вы говори́те?: a speaking question without negation. This differs from the meaning or structure requested in this context. The frozen example Are you speaking? is the question before the reply."
+    ],
+    "assessment": {
+      "testedFeature": "PARTICLE_BEFORE_SHOWN",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u24-verbal-ne-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u24-verbal-ne-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u24-verbal-ne-3-ru",
+        "prov-ex-u24-verbal-ne-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Он не студент: a negative noun predicate with an omitted present copula. This differs from the meaning or structure requested in this context. The frozen example He's not a student is omitted in the present form, so the particle stands on its own.",
+        "Вы говори́те?: a speaking question without negation. This differs from the meaning or structure requested in this context. The frozen example Are you speaking? is the question before the reply."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen example No, I'm not speaking adds the particle before the speaking reply.\nДа, говорю́ is the reference cue; Нет, не говорю́ matches the requested meaning or structure. a negative first-person speaking reply.",
+      "contrastMembers": [
+        "Нет, не говорю́",
+        "Он не студент",
+        "Вы говори́те?"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-verbal-ne-0-ru",
+        "prov-ex-u24-verbal-ne-1-ru",
+        "prov-ex-u24-verbal-ne-3-ru",
+        "prov-ex-u24-verbal-ne-2-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u24-i-verbal-ne-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which supplied sentence negates a noun predicate with the usual omitted present-tense copula?",
+    "promptLetter": "Вы говори́те?",
+    "options": [
+      "Он не студент",
+      "Нет, не говорю́",
+      "Да, говорю́"
+    ],
+    "answer": "Он не студент",
+    "feedback": "The frozen example He's not a student is the one omitted in the present form, with the particle on its own.\nВы говори́те? is the reference cue; Он не студент matches the requested meaning or structure. a negative noun predicate with an omitted present copula.",
+    "objectiveId": "obj-u24-verbal-ne",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Нет, не говорю́: a negative first-person speaking reply. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking adds the particle before the speaking word.",
+      "Да, говорю́: an affirmative speaking reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking is the agreeing reply, without the particle."
+    ],
+    "assessment": {
+      "testedFeature": "PARTICLE_ALONE",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u24-verbal-ne-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u24-verbal-ne-3-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u24-verbal-ne-1-ru",
+        "prov-ex-u24-verbal-ne-0-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Нет, не говорю́: a negative first-person speaking reply. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking adds the particle before the speaking word.",
+        "Да, говорю́: an affirmative speaking reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking is the agreeing reply, without the particle."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen example He's not a student is the one omitted in the present form, with the particle on its own.\nВы говори́те? is the reference cue; Он не студент matches the requested meaning or structure. a negative noun predicate with an omitted present copula.",
+      "contrastMembers": [
+        "Он не студент",
+        "Нет, не говорю́",
+        "Да, говорю́"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-verbal-ne-2-ru",
+        "prov-ex-u24-verbal-ne-3-ru",
+        "prov-ex-u24-verbal-ne-1-ru",
+        "prov-ex-u24-verbal-ne-0-ru"
+      ],
+      "responseKind": "RUSSIAN_CLAUSE"
+    }
+  },
+  {
+    "id": "u24-i-verbal-ne-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which complete sentence negates Boris's coming?",
+    "promptLetter": "Нет, не говорю́",
+    "options": [
+      "Борис не приходит",
+      "не студент",
+      "не говорю́"
+    ],
+    "answer": "Борис не приходит",
+    "feedback": "The frozen example Boris isn't coming places the particle before the coming word.\nНет, не говорю́ is the reference cue; Борис не приходит matches the requested meaning or structure. a complete negative sentence about Boris coming.",
+    "objectiveId": "obj-u24-verbal-ne",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "не студент: a negative student-predicate fragment. This differs from the meaning or structure requested in this context. The frozen example He's not a student uses the particle on its own because the present form is omitted.",
+      "не говорю́: a negative first-person speaking fragment. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word."
+    ],
+    "assessment": {
+      "testedFeature": "PARTICLE_BEFORE_COMING",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u24-verbal-ne-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u24-verbal-ne-4-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u24-verbal-ne-x-0",
+        "prov-ex-u24-verbal-ne-1-ru-r1"
+      ],
+      "distractorDifference": [
+        "",
+        "не студент: a negative student-predicate fragment. This differs from the meaning or structure requested in this context. The frozen example He's not a student uses the particle on its own because the present form is omitted.",
+        "не говорю́: a negative first-person speaking fragment. This differs from the meaning or structure requested in this context. The frozen example No, I'm not speaking places the particle before the speaking word, not the coming word."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen example Boris isn't coming places the particle before the coming word.\nНет, не говорю́ is the reference cue; Борис не приходит matches the requested meaning or structure. a complete negative sentence about Boris coming.",
+      "contrastMembers": [
+        "Борис не приходит",
+        "не студент",
+        "не говорю́"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-verbal-ne-1-ru",
+        "prov-ex-u24-verbal-ne-4-ru",
+        "prov-u24-verbal-ne-x-0",
+        "prov-ex-u24-verbal-ne-1-ru-r1"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u24-g-absence-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which form expresses absence instead of the shown positive expression?",
+    "promptLetter": "есть",
+    "options": [
+      "нет",
+      "не",
+      "Да"
+    ],
+    "answer": "нет",
+    "feedback": "The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.\nесть is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.",
+    "objectiveId": "obj-u24-absence",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the replacement for the exists word.",
+      "Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement."
+    ],
+    "assessment": {
+      "testedFeature": "EXISTS_REPLACEMENT",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u24-absence-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u24-absence-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u24-absence-2-ru",
+        "prov-u24-absence-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the replacement for the exists word.",
+        "Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example uses this as the agreeing reply Yes, I'm speaking, not as the replacement."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen note says this form has a different meaning from the reply that means no, and it replaces the exists word.\nесть is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.",
+      "contrastMembers": [
+        "нет",
+        "не",
+        "Да"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-absence-0-ru",
+        "prov-ex-u24-absence-1-ru",
+        "prov-ex-u24-absence-2-ru",
+        "prov-u24-absence-x-0"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u24-i-absence-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which form asserts existence instead of the shown negative expression?",
+    "promptLetter": "нет",
+    "options": [
+      "есть",
+      "не",
+      "Да"
+    ],
+    "answer": "есть",
+    "feedback": "The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.\nнет is the reference cue; есть matches the requested meaning or structure. existence in the positive pattern.",
+    "objectiveId": "obj-u24-absence",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the form that means exists.",
+      "Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking uses this as the agreeing reply."
+    ],
+    "assessment": {
+      "testedFeature": "EXISTS_WORD",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u24-absence-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u24-absence-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u24-absence-2-ru",
+        "prov-u24-absence-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "не: the separate predicate-negation particle. This differs from the meaning or structure requested in this context. The frozen note adds this particle before a word. It is not the form that means exists.",
+        "Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking uses this as the agreeing reply."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen note uses this form to mean 'exists' in the have-phrase, before the replacement.\nнет is the reference cue; есть matches the requested meaning or structure. existence in the positive pattern.",
+      "contrastMembers": [
+        "есть",
+        "не",
+        "Да"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-absence-1-ru",
+        "prov-ex-u24-absence-0-ru",
+        "prov-ex-u24-absence-2-ru",
+        "prov-u24-absence-x-0"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u24-i-absence-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which form expresses absence rather than merely negating the next predicate?",
+    "promptLetter": "не",
+    "options": [
+      "нет",
+      "есть",
+      "Да"
+    ],
+    "answer": "нет",
+    "feedback": "The frozen note says this replacement has a different meaning from the reply that means no.\nне is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.",
+    "objectiveId": "obj-u24-absence",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "есть: existence in the positive pattern. This differs from the meaning or structure requested in this context. The frozen note uses this form to mean 'exists' before replacing it.",
+      "Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking uses this as the agreeing reply."
+    ],
+    "assessment": {
+      "testedFeature": "EXISTS_REPLACEMENT",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u24-absence-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u24-absence-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u24-absence-0-ru",
+        "prov-u24-absence-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "есть: existence in the positive pattern. This differs from the meaning or structure requested in this context. The frozen note uses this form to mean 'exists' before replacing it.",
+        "Да: a yes reply. This differs from the meaning or structure requested in this context. The frozen example Yes, I'm speaking uses this as the agreeing reply."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen note says this replacement has a different meaning from the reply that means no.\nне is the reference cue; нет matches the requested meaning or structure. absence in the existence pattern.",
+      "contrastMembers": [
+        "нет",
+        "есть",
+        "Да"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-absence-2-ru",
+        "prov-ex-u24-absence-1-ru",
+        "prov-ex-u24-absence-0-ru",
+        "prov-u24-absence-x-0"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u24-g-alternation-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English description. Which reading matches the singular object in the shown sentence?",
+    "promptLetter": "Я не ви́жу э́ту кни́гу.",
+    "options": [
+      "I don't see this book, singular",
+      "I don't see any books",
+      "I see this book"
+    ],
+    "answer": "I don't see this book, singular",
+    "feedback": "Я не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nЯ не ви́жу э́ту кни́гу. is the reference cue; I don't see this book, singular matches the requested meaning or structure. negation with one specified accusative object.",
+    "objectiveId": "obj-u24-alternation",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "I don't see any books: the explicit genitive-plural reading. This differs from the meaning or structure requested in this context. I don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.",
+      "I see this book: a positive singular-object statement. This differs from the meaning or structure requested in this context. I see this book drops the negation."
+    ],
+    "assessment": {
+      "testedFeature": "SINGULAR_NEGATED_OBJECT",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u24-alternation-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ca-repair-24-10816"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-repair-24-10819",
+        "prov-ca-repair-24-10820"
+      ],
+      "distractorDifference": [
+        "",
+        "I don't see any books: the explicit genitive-plural reading. This differs from the meaning or structure requested in this context. I don't see any books would be a plural or bare genitive reading, not э́ту кни́гу.",
+        "I see this book: a positive singular-object statement. This differs from the meaning or structure requested in this context. I see this book drops the negation."
+      ],
+      "whyAnswerDemonstratesObjective": "Я не ви́жу э́ту кни́гу. means I don't see this book, singular. э́ту кни́гу specifies one book and не supplies the negation.\nЯ не ви́жу э́ту кни́гу. is the reference cue; I don't see this book, singular matches the requested meaning or structure. negation with one specified accusative object.",
+      "contrastMembers": [
+        "I don't see this book, singular",
+        "I don't see any books",
+        "I see this book"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-repair-24-10815",
+        "prov-ca-repair-24-10816",
+        "prov-ca-repair-24-10819",
+        "prov-ca-repair-24-10820"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u24-i-alternation-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English meaning matches the shown negated sentence?",
+    "promptLetter": "Я не ви́жу кни́гу",
+    "options": [
+      "I don't see the book",
+      "I don't see any books"
+    ],
+    "answer": "I don't see the book",
+    "feedback": "The frozen source pairs the shown form \"Я не ви́жу кни́гу\" with the admitted gloss \"I don't see the book\" (\"I don't see the book\").\nЯ не ви́жу кни́гу is the reference cue; I don't see the book matches the requested meaning or structure. the supplied singular accusative reading.",
+    "objectiveId": "obj-u24-alternation",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "I don't see any books is the supplied plural reading, illustrated here by Я не ви́жу книг. It differs from the singular-object reading requested by this cue."
+    ],
+    "assessment": {
+      "testedFeature": "NEGATION_THE",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u24-alternation-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u24-alternation-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u24-alternation-0-en"
+      ],
+      "distractorDifference": [
+        "",
+        "I don't see any books is the supplied plural reading, illustrated here by Я не ви́жу книг. It differs from the singular-object reading requested by this cue."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Я не ви́жу кни́гу\" with the admitted gloss \"I don't see the book\" (\"I don't see the book\").\nЯ не ви́жу кни́гу is the reference cue; I don't see the book matches the requested meaning or structure. the supplied singular accusative reading.",
+      "contrastMembers": [
+        "I don't see the book",
+        "I don't see any books"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-alternation-1-ru",
+        "prov-ex-u24-alternation-1-en",
+        "prov-ex-u24-alternation-0-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u24-i-alternation-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English description. Which reading matches the bare plural genitive?",
+    "promptLetter": "Я не ви́жу книг.",
+    "options": [
+      "I don't see any books",
+      "I don't see the one book",
+      "I see the books"
+    ],
+    "answer": "I don't see any books",
+    "feedback": "Я не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.\nЯ не ви́жу книг. is the reference cue; I don't see any books matches the requested meaning or structure. the explicit genitive-plural reading.",
+    "objectiveId": "obj-u24-alternation",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "I don't see the one book: a singular-object reading. This differs from the meaning or structure requested in this context. I don't see the one book would need a singular object such as э́ту кни́гу.",
+      "I see the books: a positive plural-object statement. This differs from the meaning or structure requested in this context. I see the books drops the negation."
+    ],
+    "assessment": {
+      "testedFeature": "PLURAL_NEGATED_GENITIVE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u24-alternation-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-repair-24-10828"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-repair-24-10831",
+        "prov-ca-repair-24-10832"
+      ],
+      "distractorDifference": [
+        "",
+        "I don't see the one book: a singular-object reading. This differs from the meaning or structure requested in this context. I don't see the one book would need a singular object such as э́ту кни́гу.",
+        "I see the books: a positive plural-object statement. This differs from the meaning or structure requested in this context. I see the books drops the negation."
+      ],
+      "whyAnswerDemonstratesObjective": "Я не ви́жу книг. means I don't see any books. книг is genitive plural, and не supplies the negation.\nЯ не ви́жу книг. is the reference cue; I don't see any books matches the requested meaning or structure. the explicit genitive-plural reading.",
+      "contrastMembers": [
+        "I don't see any books",
+        "I don't see the one book",
+        "I see the books"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-repair-24-10827",
+        "prov-ca-repair-24-10828",
+        "prov-ca-repair-24-10831",
+        "prov-ca-repair-24-10832"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u24-g-stand-ins-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which negative-pronoun form built from the shown word is not called predicative?",
+    "promptLetter": "кто",
+    "options": [
+      "никто́",
+      "ничто́",
+      "не́кто"
+    ],
+    "answer": "никто́",
+    "feedback": "The frozen source pairs the shown form \"кто\" with the admitted gloss \"никто́\" (\"Отрицательные местоимения\").\nкто is the reference cue; никто́ matches the requested meaning or structure. a negative pronoun referring to nobody.",
+    "objectiveId": "obj-u24-stand-ins",
+    "sourceId": "src-ruwiki-otritsatelnye-141256493",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "ничто́: a negative pronoun referring to nothing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"что\" with the admitted gloss \"ничто́\" (\"Отрицательные местоимения\").",
+      "не́кто: an indefinite pronoun referring to an unspecified person. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"кто\" with the admitted gloss \"не́кто\" (\"называются предикативными\")."
+    ],
+    "assessment": {
+      "testedFeature": "PRONOUN_NIKTO",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u24-stand-ins-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u24-stand-ins-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u24-stand-ins-1-en",
+        "prov-ex-u24-stand-ins-2-en"
+      ],
+      "distractorDifference": [
+        "",
+        "ничто́: a negative pronoun referring to nothing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"что\" with the admitted gloss \"ничто́\" (\"Отрицательные местоимения\").",
+        "не́кто: an indefinite pronoun referring to an unspecified person. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"кто\" with the admitted gloss \"не́кто\" (\"называются предикативными\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"кто\" with the admitted gloss \"никто́\" (\"Отрицательные местоимения\").\nкто is the reference cue; никто́ matches the requested meaning or structure. a negative pronoun referring to nobody.",
+      "contrastMembers": [
+        "никто́",
+        "ничто́",
+        "не́кто"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-stand-ins-0-ru",
+        "prov-ex-u24-stand-ins-0-en",
+        "prov-ex-u24-stand-ins-1-en",
+        "prov-ex-u24-stand-ins-2-en"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u24-i-stand-ins-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which negative-pronoun form built from the shown word is not called predicative?",
+    "promptLetter": "что",
+    "options": [
+      "ничто́",
+      "не́что",
+      "никто́"
+    ],
+    "answer": "ничто́",
+    "feedback": "The frozen source pairs the shown form \"что\" with the admitted gloss \"ничто́\" (\"Отрицательные местоимения\").\nчто is the reference cue; ничто́ matches the requested meaning or structure. a negative pronoun referring to nothing.",
+    "objectiveId": "obj-u24-stand-ins",
+    "sourceId": "src-ruwiki-otritsatelnye-141256493",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "не́что: an indefinite pronoun referring to an unspecified thing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"что\" with the admitted gloss \"не́что\" (\"называются предикативными\").",
+      "никто́: a negative pronoun referring to nobody. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"кто\" with the admitted gloss \"никто́\" (\"Отрицательные местоимения\")."
+    ],
+    "assessment": {
+      "testedFeature": "PRONOUN_NICHTO",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u24-stand-ins-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u24-stand-ins-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u24-stand-ins-x-1",
+        "prov-ex-u24-stand-ins-0-en"
+      ],
+      "distractorDifference": [
+        "",
+        "не́что: an indefinite pronoun referring to an unspecified thing. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"что\" with the admitted gloss \"не́что\" (\"называются предикативными\").",
+        "никто́: a negative pronoun referring to nobody. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"кто\" with the admitted gloss \"никто́\" (\"Отрицательные местоимения\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"что\" with the admitted gloss \"ничто́\" (\"Отрицательные местоимения\").\nчто is the reference cue; ничто́ matches the requested meaning or structure. a negative pronoun referring to nothing.",
+      "contrastMembers": [
+        "ничто́",
+        "не́что",
+        "никто́"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-stand-ins-1-ru",
+        "prov-ex-u24-stand-ins-1-en",
+        "prov-u24-stand-ins-x-1",
+        "prov-ex-u24-stand-ins-0-en"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u24-i-stand-ins-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English description. Which reading expresses absence of a person available for the action?",
+    "promptLetter": "не́кого спросить",
+    "options": [
+      "there is nobody to ask",
+      "an unspecified person",
+      "there is nothing to ask"
+    ],
+    "answer": "there is nobody to ask",
+    "feedback": "не́кого спросить means there is nobody to ask. не́кого expresses absence of a person available for the infinitive action.\nне́кого спросить is the reference cue; there is nobody to ask matches the requested meaning or structure. absence of a person available for the infinitive action.",
+    "objectiveId": "obj-u24-stand-ins",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "an unspecified person: indefinite reference to a person. This differs from the meaning or structure requested in this context. an unspecified person is the reading of не́кто, not of не́кого.",
+      "there is nothing to ask: absence of a thing for the action. This differs from the meaning or structure requested in this context. there is nothing to ask would be a нечего construction, not не́кого."
+    ],
+    "assessment": {
+      "testedFeature": "NEGATIVE_ABSENCE_NEKOGO",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u24-stand-ins-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u24-absence-participant-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u24-absence-participant-2",
+        "prov-ca-u24-absence-participant-3"
+      ],
+      "distractorDifference": [
+        "",
+        "an unspecified person: indefinite reference to a person. This differs from the meaning or structure requested in this context. an unspecified person is the reading of не́кто, not of не́кого.",
+        "there is nothing to ask: absence of a thing for the action. This differs from the meaning or structure requested in this context. there is nothing to ask would be a нечего construction, not не́кого."
+      ],
+      "whyAnswerDemonstratesObjective": "не́кого спросить means there is nobody to ask. не́кого expresses absence of a person available for the infinitive action.\nне́кого спросить is the reference cue; there is nobody to ask matches the requested meaning or structure. absence of a person available for the infinitive action.",
+      "contrastMembers": [
+        "there is nobody to ask",
+        "an unspecified person",
+        "there is nothing to ask"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u24-absence-participant-0",
+        "prov-ca-u24-absence-participant-1",
+        "prov-ca-u24-absence-participant-2",
+        "prov-ca-u24-absence-participant-3"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u24-g-concord-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which particle does the stated concord rule require in the predicate?",
+    "promptLetter": "никто́",
+    "options": [
+      "не",
+      "ни-",
+      "никому"
+    ],
+    "answer": "не",
+    "feedback": "The frozen source pairs the shown form \"никто́\" with the admitted gloss \"не\" (\"отрицательной частицы не\").\nникто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.",
+    "objectiveId": "obj-u24-concord",
+    "sourceId": "src-ruwiki-otritsatelnye-141256493",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"никто́\" with the admitted gloss \"ни-\" (\"Основным правилом\").",
+      "никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"никто́\" with the admitted gloss \"никому\" (\"Основным правилом\")."
+    ],
+    "assessment": {
+      "testedFeature": "CONCORD_PARTICLE",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u24-concord-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u24-concord-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u24-concord-x-0",
+        "prov-u24-concord-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"никто́\" with the admitted gloss \"ни-\" (\"Основным правилом\").",
+        "никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"никто́\" with the admitted gloss \"никому\" (\"Основным правилом\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"никто́\" with the admitted gloss \"не\" (\"отрицательной частицы не\").\nникто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.",
+      "contrastMembers": [
+        "не",
+        "ни-",
+        "никому"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-concord-0-ru",
+        "prov-ex-u24-concord-0-en",
+        "prov-u24-concord-x-0",
+        "prov-u24-concord-x-1"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u24-i-concord-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which particle does the stated concord rule require in the predicate?",
+    "promptLetter": "ничто́",
+    "options": [
+      "не",
+      "ни-",
+      "никому"
+    ],
+    "answer": "не",
+    "feedback": "The frozen source pairs the shown form \"ничто́\" with the admitted gloss \"не\" (\"отрицательной частицы не\").\nничто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.",
+    "objectiveId": "obj-u24-concord",
+    "sourceId": "src-ruwiki-otritsatelnye-141256493",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"никто́\" with the admitted gloss \"ни-\" (\"Основным правилом\").",
+      "никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"никто́\" with the admitted gloss \"никому\" (\"Основным правилом\")."
+    ],
+    "assessment": {
+      "testedFeature": "CONCORD_NICHTO",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u24-concord-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u24-concord-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u24-concord-x-0",
+        "prov-u24-concord-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"никто́\" with the admitted gloss \"ни-\" (\"Основным правилом\").",
+        "никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"никто́\" with the admitted gloss \"никому\" (\"Основным правилом\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"ничто́\" with the admitted gloss \"не\" (\"отрицательной частицы не\").\nничто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.",
+      "contrastMembers": [
+        "не",
+        "ни-",
+        "никому"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-concord-1-ru",
+        "prov-ex-u24-concord-0-en",
+        "prov-u24-concord-x-0",
+        "prov-u24-concord-x-1"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u24-i-concord-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which predicate particle does negative concord require?",
+    "promptLetter": "никто́",
+    "options": [
+      "не",
+      "никому",
+      "ни-"
+    ],
+    "answer": "не",
+    "feedback": "The frozen source pairs the shown form \"никто́\" with the admitted gloss \"не\" (\"отрицательной частицы не\").\nникто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.",
+    "objectiveId": "obj-u24-concord",
+    "sourceId": "src-ruwiki-otritsatelnye-141256493",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"никто́\" with the admitted gloss \"никому\" (\"Основным правилом\").",
+      "ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"никто́\" with the admitted gloss \"ни-\" (\"Основным правилом\")."
+    ],
+    "assessment": {
+      "testedFeature": "CONCORD_AGAIN",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u24-concord-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u24-concord-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u24-concord-x-1",
+        "prov-u24-concord-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "никому: a declined negative pronoun in the dative. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"никто́\" with the admitted gloss \"никому\" (\"Основным правилом\").",
+        "ни-: a negative-pronoun prefix. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"никто́\" with the admitted gloss \"ни-\" (\"Основным правилом\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"никто́\" with the admitted gloss \"не\" (\"отрицательной частицы не\").\nникто́ is the reference cue; не matches the requested meaning or structure. the separate predicate-negation particle.",
+      "contrastMembers": [
+        "не",
+        "никому",
+        "ни-"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-concord-0-ru",
+        "prov-ex-u24-concord-0-en",
+        "prov-u24-concord-x-1",
+        "prov-u24-concord-x-0"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u24-g-word-order-contrast-0",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "The speaker would never agree. Which supplied English interpretation fits the sentence in that context?",
+    "promptLetter": "Не надо меня уговаривать.",
+    "options": [
+      "One should not persuade me",
+      "There is no need to persuade me"
+    ],
+    "answer": "One should not persuade me",
+    "feedback": "The frozen source pairs the shown form \"Не надо меня уговаривать.\" with the admitted gloss \"One should not persuade me\" (\"as I would never agree to do something\").\nНе надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.",
+    "objectiveId": "obj-u24-persuasion-reference",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"Меня не надо уговаривать.\" with the admitted gloss \"There is no need to persuade me\" (\"as I will do it anyway\")."
+    ]
+  },
+  {
+    "id": "u24-i-word-order-contrast-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "The speaker will do it anyway. Which supplied English interpretation fits the sentence in that context?",
+    "promptLetter": "Меня не надо уговаривать.",
+    "options": [
+      "There is no need to persuade me",
+      "One should not persuade me"
+    ],
+    "answer": "There is no need to persuade me",
+    "feedback": "The frozen source pairs the shown form \"Меня не надо уговаривать.\" with the admitted gloss \"There is no need to persuade me\" (\"as I will do it anyway\").\nМеня не надо уговаривать. is the reference cue; There is no need to persuade me matches the requested meaning or structure. the supplied interpretation where the speaker will do it anyway.",
+    "objectiveId": "obj-u24-word-order-contrast",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "One should not persuade me: the supplied interpretation where the speaker would never agree. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"Не надо меня уговаривать.\" with the admitted gloss \"One should not persuade me\" (\"as I would never agree to do something\")."
+    ],
+    "assessment": {
+      "testedFeature": "WORD_ORDER_ANYWAY",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u24-word-order-contrast-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u24-word-order-contrast-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u24-word-order-contrast-0-en"
+      ],
+      "distractorDifference": [
+        "",
+        "One should not persuade me: the supplied interpretation where the speaker would never agree. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"Не надо меня уговаривать.\" with the admitted gloss \"One should not persuade me\" (\"as I would never agree to do something\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Меня не надо уговаривать.\" with the admitted gloss \"There is no need to persuade me\" (\"as I will do it anyway\").\nМеня не надо уговаривать. is the reference cue; There is no need to persuade me matches the requested meaning or structure. the supplied interpretation where the speaker will do it anyway.",
+      "contrastMembers": [
+        "There is no need to persuade me",
+        "One should not persuade me"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-word-order-contrast-1-ru",
+        "prov-ex-u24-word-order-contrast-1-en",
+        "prov-ex-u24-word-order-contrast-0-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u24-i-word-order-contrast-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "The speaker would never agree. Which supplied English interpretation fits the sentence in that context?",
+    "promptLetter": "Не надо меня уговаривать.",
+    "options": [
+      "One should not persuade me",
+      "There is no need to persuade me"
+    ],
+    "answer": "One should not persuade me",
+    "feedback": "The frozen source pairs the shown form \"Не надо меня уговаривать.\" with the admitted gloss \"One should not persuade me\" (\"as I would never agree to do something\").\nНе надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.",
+    "objectiveId": "obj-u24-word-order-contrast",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"Меня не надо уговаривать.\" with the admitted gloss \"There is no need to persuade me\" (\"as I will do it anyway\")."
+    ],
+    "assessment": {
+      "testedFeature": "WORD_ORDER_NEVER_AGAIN",
+      "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+      "contrastSetId": "u24-word-order-contrast-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u24-word-order-contrast-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u24-word-order-contrast-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "There is no need to persuade me: the supplied interpretation where the speaker will do it anyway. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"Меня не надо уговаривать.\" with the admitted gloss \"There is no need to persuade me\" (\"as I will do it anyway\")."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Не надо меня уговаривать.\" with the admitted gloss \"One should not persuade me\" (\"as I would never agree to do something\").\nНе надо меня уговаривать. is the reference cue; One should not persuade me matches the requested meaning or structure. the supplied interpretation where the speaker would never agree.",
+      "contrastMembers": [
+        "One should not persuade me",
+        "There is no need to persuade me"
+      ],
+      "relationKind": "EXPLICIT_SOURCE_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u24-word-order-contrast-0-ru",
+        "prov-ex-u24-word-order-contrast-0-en",
+        "prov-ex-u24-word-order-contrast-1-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u24-g-placement-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English meaning matches the shown sentence?",
+    "promptLetter": "Мне не холодно.",
+    "options": [
+      "To me it is not cold.",
+      "It is not to me that it is cold."
+    ],
+    "answer": "To me it is not cold.",
+    "feedback": "The frozen source pairs the shown form \"Мне не холодно.\" with the admitted gloss \"To me it is not cold.\".\nМне не холодно. is the reference cue; To me it is not cold. matches the requested meaning or structure. negation of the cold state for the experiencer.",
+    "objectiveId": "obj-u24-placement",
+    "sourceId": "src-readyrussian-langgen3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "It is not to me that it is cold.: contrastive negation of the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"Не мне холодно.\" with the admitted gloss \"It is not to me that it is cold.\". Moving the modifier in front of a different word produces that meaning."
+    ],
+    "assessment": {
+      "testedFeature": "NEGATION_FOLLOWING_WORD",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u24-placement-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u24-placement-0-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u24-placement-1-en"
+      ],
+      "distractorDifference": [
+        "",
+        "It is not to me that it is cold.: contrastive negation of the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"Не мне холодно.\" with the admitted gloss \"It is not to me that it is cold.\". Moving the modifier in front of a different word produces that meaning."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Мне не холодно.\" with the admitted gloss \"To me it is not cold.\".\nМне не холодно. is the reference cue; To me it is not cold. matches the requested meaning or structure. negation of the cold state for the experiencer.",
+      "contrastMembers": [
+        "To me it is not cold.",
+        "It is not to me that it is cold."
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u24-placement-0-ru",
+        "prov-ex-u24-placement-0-en",
+        "prov-ex-u24-placement-1-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u24-i-placement-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English meaning matches the shown sentence?",
+    "promptLetter": "Не мне холодно.",
+    "options": [
+      "It is not to me that it is cold.",
+      "To me it is not cold."
+    ],
+    "answer": "It is not to me that it is cold.",
+    "feedback": "The frozen source pairs the shown form \"Не мне холодно.\" with the admitted gloss \"It is not to me that it is cold.\".\nНе мне холодно. is the reference cue; It is not to me that it is cold. matches the requested meaning or structure. contrastive negation of the experiencer.",
+    "objectiveId": "obj-u24-placement",
+    "sourceId": "src-readyrussian-langgen3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "To me it is not cold.: negation of the cold state for the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"Мне не холодно.\" with the admitted gloss \"To me it is not cold.\". That placement negates the following word."
+    ],
+    "assessment": {
+      "testedFeature": "NEGATION_SCOPE_CONTRAST",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u24-placement-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u24-placement-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u24-placement-0-en"
+      ],
+      "distractorDifference": [
+        "",
+        "To me it is not cold.: negation of the cold state for the experiencer. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"Мне не холодно.\" with the admitted gloss \"To me it is not cold.\". That placement negates the following word."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Не мне холодно.\" with the admitted gloss \"It is not to me that it is cold.\".\nНе мне холодно. is the reference cue; It is not to me that it is cold. matches the requested meaning or structure. contrastive negation of the experiencer.",
+      "contrastMembers": [
+        "It is not to me that it is cold.",
+        "To me it is not cold."
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u24-placement-1-ru",
+        "prov-ex-u24-placement-1-en",
+        "prov-ex-u24-placement-0-en"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u24-i-placement-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted English meaning matches the shown sentence?",
+    "promptLetter": "Не мне холодно.",
+    "options": [
+      "It is not to me that it is cold.",
+      "I am not cold."
+    ],
+    "answer": "It is not to me that it is cold.",
+    "feedback": "The frozen source pairs the shown form \"Не мне холодно.\" with the admitted gloss \"It is not to me that it is cold.\".\nНе мне холодно. is the reference cue; It is not to me that it is cold. matches the requested meaning or structure. contrastive negation of the experiencer.",
+    "objectiveId": "obj-u24-placement",
+    "sourceId": "src-readyrussian-langgen3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "I am not cold.: negation of the cold state for the speaker. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"Мне не холодно.\" with the admitted gloss \"I am not cold.\". That parenthetical belongs to the other placement."
+    ],
+    "assessment": {
+      "testedFeature": "NEGATION_SCOPE_NOT_COLD",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u24-placement-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u24-placement-1-en"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u24-placement-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "I am not cold.: negation of the cold state for the speaker. This differs from the meaning or structure requested in this context. The frozen source pairs the shown form \"Мне не холодно.\" with the admitted gloss \"I am not cold.\". That parenthetical belongs to the other placement."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"Не мне холодно.\" with the admitted gloss \"It is not to me that it is cold.\".\nНе мне холодно. is the reference cue; It is not to me that it is cold. matches the requested meaning or structure. contrastive negation of the experiencer.",
+      "contrastMembers": [
+        "It is not to me that it is cold.",
+        "I am not cold."
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u24-placement-1-ru",
+        "prov-ex-u24-placement-1-en",
+        "prov-u24-placement-x-1"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u25-g-name-structure-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which Russian label names the component described by the cue?",
+    "promptLetter": "first name",
+    "options": [
+      "имя",
+      "отчество",
+      "фамилия",
+      "ович"
+    ],
+    "answer": "имя",
+    "feedback": "The frozen sentence says Russians use three names and pairs the shown words with this form.\nfirst name is the cue; имя matches the requested function or classification: the first-name label.",
+    "objectiveId": "obj-u25-name-structure",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words.",
+      "фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words.",
+      "ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words."
+    ],
+    "assessment": {
+      "testedFeature": "NAME_PAIR",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-name-structure-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u25-name-structure-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-name-structure-1-ru",
+        "prov-ex-u25-name-structure-2-ru",
+        "prov-u25-name-structure-rem-r2"
+      ],
+      "distractorDifference": [
+        "",
+        "отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words.",
+        "фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words.",
+        "ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen sentence says Russians use three names and pairs the shown words with this form.\nfirst name is the cue; имя matches the requested function or classification: the first-name label.",
+      "contrastMembers": [
+        "имя",
+        "отчество",
+        "фамилия",
+        "ович"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-name-structure-0-en",
+        "prov-ex-u25-name-structure-0-ru",
+        "prov-ex-u25-name-structure-1-ru",
+        "prov-ex-u25-name-structure-2-ru",
+        "prov-u25-name-structure-rem-r2"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u25-i-name-structure-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which Russian label names the component described by the cue?",
+    "promptLetter": "patronymic name",
+    "options": [
+      "отчество",
+      "имя",
+      "фамилия",
+      "овна"
+    ],
+    "answer": "отчество",
+    "feedback": "The frozen sentence says Russians use three names and pairs patronymic name with this form.\npatronymic name is the cue; отчество matches the requested function or classification: the patronymic-name label.",
+    "objectiveId": "obj-u25-name-structure",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words.",
+      "фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words.",
+      "овна: the retained daughter-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for daughter of, not as the pair for the shown words."
+    ],
+    "assessment": {
+      "testedFeature": "NAME_PAIR",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-name-structure-1",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u25-name-structure-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-name-structure-0-ru",
+        "prov-ex-u25-name-structure-2-ru",
+        "prov-u25-name-structure-rem-r3"
+      ],
+      "distractorDifference": [
+        "",
+        "имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words.",
+        "фамилия: the family-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with family name, not with the shown words.",
+        "овна: the retained daughter-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for daughter of, not as the pair for the shown words."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen sentence says Russians use three names and pairs patronymic name with this form.\npatronymic name is the cue; отчество matches the requested function or classification: the patronymic-name label.",
+      "contrastMembers": [
+        "отчество",
+        "имя",
+        "фамилия",
+        "овна"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-name-structure-1-en",
+        "prov-ex-u25-name-structure-1-ru",
+        "prov-ex-u25-name-structure-0-ru",
+        "prov-ex-u25-name-structure-2-ru",
+        "prov-u25-name-structure-rem-r3"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u25-i-name-structure-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which Russian label names the component described by the cue?",
+    "promptLetter": "family name",
+    "options": [
+      "фамилия",
+      "имя",
+      "отчество",
+      "ович"
+    ],
+    "answer": "фамилия",
+    "feedback": "The frozen sentence says Russians use three names and pairs family name with this form.\nfamily name is the cue; фамилия matches the requested function or classification: the family-name label.",
+    "objectiveId": "obj-u25-name-structure",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words.",
+      "отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words.",
+      "ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words."
+    ],
+    "assessment": {
+      "testedFeature": "NAME_PAIR",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-name-structure-2",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u25-name-structure-2-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-name-structure-0-ru",
+        "prov-ex-u25-name-structure-1-ru",
+        "prov-u25-name-structure-rem-r2"
+      ],
+      "distractorDifference": [
+        "",
+        "имя: the first-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with first name, not with the shown words.",
+        "отчество: the patronymic-name label. This differs from the classification or conversational function requested here. The frozen sentence pairs this form with patronymic name, not with the shown words.",
+        "ович: the retained son-of suffix label. This differs from the classification or conversational function requested here. The frozen sentence gives this ending for son of, not as the pair for the shown words."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen sentence says Russians use three names and pairs family name with this form.\nfamily name is the cue; фамилия matches the requested function or classification: the family-name label.",
+      "contrastMembers": [
+        "фамилия",
+        "имя",
+        "отчество",
+        "ович"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-name-structure-2-en",
+        "prov-ex-u25-name-structure-2-ru",
+        "prov-ex-u25-name-structure-0-ru",
+        "prov-ex-u25-name-structure-1-ru",
+        "prov-u25-name-structure-rem-r2"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u25-g-diminutives-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English short form corresponds to the full name in the cue?",
+    "promptLetter": "Alexander",
+    "options": [
+      "Sasha",
+      "Alyosha",
+      "Dima"
+    ],
+    "answer": "Sasha",
+    "feedback": "The frozen list includes Sasha for Alexander as the pair for the shown name.\nAlexander is the cue; Sasha matches the requested function or classification: the supplied short form for Alexander.",
+    "objectiveId": "obj-u25-diminutives",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name.",
+      "Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name."
+    ],
+    "assessment": {
+      "testedFeature": "SHORT_FORM_PAIR",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-diminutives-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-u25-diminutives-x-0"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u25-diminutives-x-1",
+        "prov-u25-diminutives-x-2"
+      ],
+      "distractorDifference": [
+        "",
+        "Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name.",
+        "Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen list includes Sasha for Alexander as the pair for the shown name.\nAlexander is the cue; Sasha matches the requested function or classification: the supplied short form for Alexander.",
+      "contrastMembers": [
+        "Sasha",
+        "Alyosha",
+        "Dima"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-diminutives-0-en",
+        "prov-u25-diminutives-x-0",
+        "prov-u25-diminutives-x-1",
+        "prov-u25-diminutives-x-2"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u25-i-diminutives-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English short form corresponds to the full name in the cue?",
+    "promptLetter": "Alexei",
+    "options": [
+      "Alyosha",
+      "Sasha",
+      "Dima"
+    ],
+    "answer": "Alyosha",
+    "feedback": "The frozen list includes Alyosha for Alexei as the pair for the shown name.\nAlexei is the cue; Alyosha matches the requested function or classification: the supplied short form for Alexei.",
+    "objectiveId": "obj-u25-diminutives",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name.",
+      "Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name."
+    ],
+    "assessment": {
+      "testedFeature": "SHORT_FORM_PAIR",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-diminutives-1",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u25-diminutives-x-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u25-diminutives-x-0",
+        "prov-u25-diminutives-x-2"
+      ],
+      "distractorDifference": [
+        "",
+        "Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name.",
+        "Dima: the supplied short form for Dmitri. This differs from the classification or conversational function requested here. The frozen list pairs Dima for Dmitri with a different name."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen list includes Alyosha for Alexei as the pair for the shown name.\nAlexei is the cue; Alyosha matches the requested function or classification: the supplied short form for Alexei.",
+      "contrastMembers": [
+        "Alyosha",
+        "Sasha",
+        "Dima"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-diminutives-1-en",
+        "prov-u25-diminutives-x-1",
+        "prov-u25-diminutives-x-0",
+        "prov-u25-diminutives-x-2"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u25-i-diminutives-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English short form corresponds to the full name in the cue?",
+    "promptLetter": "Dmitri",
+    "options": [
+      "Dima",
+      "Sasha",
+      "Alyosha"
+    ],
+    "answer": "Dima",
+    "feedback": "The frozen list includes Dima for Dmitri as the pair for the shown name.\nDmitri is the cue; Dima matches the requested function or classification: the supplied short form for Dmitri.",
+    "objectiveId": "obj-u25-diminutives",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name.",
+      "Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name."
+    ],
+    "assessment": {
+      "testedFeature": "SHORT_FORM_PAIR",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-diminutives-2",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u25-diminutives-x-2"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u25-diminutives-x-0",
+        "prov-u25-diminutives-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "Sasha: the supplied short form for Alexander. This differs from the classification or conversational function requested here. The frozen list pairs Sasha for Alexander with a different name.",
+        "Alyosha: the supplied short form for Alexei. This differs from the classification or conversational function requested here. The frozen list pairs Alyosha for Alexei with a different name."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen list includes Dima for Dmitri as the pair for the shown name.\nDmitri is the cue; Dima matches the requested function or classification: the supplied short form for Dmitri.",
+      "contrastMembers": [
+        "Dima",
+        "Sasha",
+        "Alyosha"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-diminutives-2-en",
+        "prov-u25-diminutives-x-2",
+        "prov-u25-diminutives-x-0",
+        "prov-u25-diminutives-x-1"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u25-g-courtesy-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which expression performs the courtesy function in the cue?",
+    "promptLetter": "please",
+    "options": [
+      "Пожа́луйста",
+      "Спаси́бо",
+      "Извини́те"
+    ],
+    "answer": "Пожа́луйста",
+    "feedback": "The frozen list says please; also used for a request and pairs that word with this form.\nplease is the cue; Пожа́луйста matches the requested function or classification: please in the supplied request use.",
+    "objectiveId": "obj-u25-courtesy",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Спаси́бо: thanks or thank you. This differs from the classification or conversational function requested here. The frozen list pairs thanks with a different form.",
+      "Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. Извини́те is the polite or plural form. The familiar singular is Извини́."
+    ],
+    "assessment": {
+      "testedFeature": "COURTESY_PAIR",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-courtesy-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u25-courtesy-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-courtesy-1-ru",
+        "prov-ex-u25-courtesy-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Спаси́бо: thanks or thank you. This differs from the classification or conversational function requested here. The frozen list pairs thanks with a different form.",
+        "Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. Извини́те is the polite or plural form. The familiar singular is Извини́."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen list says please; also used for a request and pairs that word with this form.\nplease is the cue; Пожа́луйста matches the requested function or classification: please in the supplied request use.",
+      "contrastMembers": [
+        "Пожа́луйста",
+        "Спаси́бо",
+        "Извини́те"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-courtesy-0-en",
+        "prov-ex-u25-courtesy-0-ru",
+        "prov-ex-u25-courtesy-1-ru",
+        "prov-ex-u25-courtesy-2-ru"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u25-i-courtesy-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which expression performs the courtesy function in the cue?",
+    "promptLetter": "thanks",
+    "options": [
+      "Спаси́бо",
+      "Пожа́луйста",
+      "Извини́те"
+    ],
+    "answer": "Спаси́бо",
+    "feedback": "The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.\nthanks is the cue; Спаси́бо matches the requested function or classification: thanks or thank you.",
+    "objectiveId": "obj-u25-courtesy",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Пожа́луйста: please in the supplied request use. This differs from the classification or conversational function requested here. The frozen list says please; also used for a request, not for thanks.",
+      "Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (informal) with a different form."
+    ],
+    "assessment": {
+      "testedFeature": "COURTESY_PAIR",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-courtesy-1",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u25-courtesy-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-courtesy-0-ru",
+        "prov-ex-u25-courtesy-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Пожа́луйста: please in the supplied request use. This differs from the classification or conversational function requested here. The frozen list says please; also used for a request, not for thanks.",
+        "Извини́те: excuse me with polite or plural address. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (informal) with a different form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen list pairs thanks with this form and I'm sorry / excuse me (informal) with a different form.\nthanks is the cue; Спаси́бо matches the requested function or classification: thanks or thank you.",
+      "contrastMembers": [
+        "Спаси́бо",
+        "Пожа́луйста",
+        "Извини́те"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-courtesy-1-en",
+        "prov-ex-u25-courtesy-1-ru",
+        "prov-ex-u25-courtesy-0-ru",
+        "prov-ex-u25-courtesy-2-ru"
+      ],
+      "responseKind": "RUSSIAN_TOKEN"
+    }
+  },
+  {
+    "id": "u25-i-courtesy-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Choose the English description. Which address does Извини́те mark?",
+    "promptLetter": "Извини́те",
+    "options": [
+      "excuse me, polite or plural",
+      "excuse me, familiar singular",
+      "thank you"
+    ],
+    "answer": "excuse me, polite or plural",
+    "feedback": "The -те form marks polite or plural address.\nИзвини́те is the cue; excuse me, polite or plural matches the requested function or classification: the polite-or-plural apology description.",
+    "objectiveId": "obj-u25-courtesy",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "excuse me, familiar singular: the familiar-singular apology description. This differs from the classification or conversational function requested here. excuse me, familiar singular is Извини́, without -те.",
+      "thank you: gratitude rather than an apology. This differs from the classification or conversational function requested here. thank you is a different courtesy formula."
+    ],
+    "assessment": {
+      "testedFeature": "POLITE_IZVINITE",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u25-courtesy-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-25-582"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-25-586",
+        "prov-ca-25-587"
+      ],
+      "distractorDifference": [
+        "",
+        "excuse me, familiar singular: the familiar-singular apology description. This differs from the classification or conversational function requested here. excuse me, familiar singular is Извини́, without -те.",
+        "thank you: gratitude rather than an apology. This differs from the classification or conversational function requested here. thank you is a different courtesy formula."
+      ],
+      "whyAnswerDemonstratesObjective": "The -те form marks polite or plural address.\nИзвини́те is the cue; excuse me, polite or plural matches the requested function or classification: the polite-or-plural apology description.",
+      "contrastMembers": [
+        "excuse me, polite or plural",
+        "excuse me, familiar singular",
+        "thank you"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-25-581",
+        "prov-ca-25-582",
+        "prov-ca-25-586",
+        "prov-ca-25-587"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u25-g-name-question-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which Russian formula performs the conversational function in the cue?",
+    "promptLetter": "What is your name?",
+    "options": [
+      "Как Вас зову́т?",
+      "Меня́ зову́т",
+      "Прошу́ проще́ния"
+    ],
+    "answer": "Как Вас зову́т?",
+    "feedback": "The frozen list pairs What is your name? with this form and My name is... with the reply.\nWhat is your name? is the cue; Как Вас зову́т? matches the requested function or classification: the name question.",
+    "objectiveId": "obj-u25-name-question",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Меня́ зову́т: the reply opening followed by a name. This differs from the classification or conversational function requested here. The frozen list pairs My name is... with the reply, not with the shown question.",
+      "Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form."
+    ],
+    "assessment": {
+      "testedFeature": "NAME_QUESTION_PAIR",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-name-question-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u25-name-question-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-name-question-1-ru",
+        "prov-ex-u25-name-question-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Меня́ зову́т: the reply opening followed by a name. This differs from the classification or conversational function requested here. The frozen list pairs My name is... with the reply, not with the shown question.",
+        "Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen list pairs What is your name? with this form and My name is... with the reply.\nWhat is your name? is the cue; Как Вас зову́т? matches the requested function or classification: the name question.",
+      "contrastMembers": [
+        "Как Вас зову́т?",
+        "Меня́ зову́т",
+        "Прошу́ проще́ния"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-name-question-0-en",
+        "prov-ex-u25-name-question-0-ru",
+        "prov-ex-u25-name-question-1-ru",
+        "prov-ex-u25-name-question-2-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u25-i-name-question-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which Russian formula performs the conversational function in the cue?",
+    "promptLetter": "My name is...",
+    "options": [
+      "Меня́ зову́т",
+      "Как Вас зову́т?",
+      "Прошу́ проще́ния"
+    ],
+    "answer": "Меня́ зову́т",
+    "feedback": "The frozen list pairs My name is... with this reply and What is your name? with the question.\nMy name is... is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.",
+    "objectiveId": "obj-u25-name-question",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Как Вас зову́т?: the name question. This differs from the classification or conversational function requested here. The frozen list pairs What is your name? with the question, not with the shown reply.",
+      "Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form."
+    ],
+    "assessment": {
+      "testedFeature": "NAME_ANSWER_PAIR",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-name-question-1",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u25-name-question-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-name-question-0-ru",
+        "prov-ex-u25-name-question-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Как Вас зову́т?: the name question. This differs from the classification or conversational function requested here. The frozen list pairs What is your name? with the question, not with the shown reply.",
+        "Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with a different form."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen list pairs My name is... with this reply and What is your name? with the question.\nMy name is... is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.",
+      "contrastMembers": [
+        "Меня́ зову́т",
+        "Как Вас зову́т?",
+        "Прошу́ проще́ния"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-name-question-1-en",
+        "prov-ex-u25-name-question-1-ru",
+        "prov-ex-u25-name-question-0-ru",
+        "prov-ex-u25-name-question-2-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u25-i-name-question-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which formula begins an answer to this name question?",
+    "promptLetter": "Как Вас зову́т?",
+    "options": [
+      "Меня́ зову́т",
+      "Прошу́ проще́ния",
+      "Как дела́?"
+    ],
+    "answer": "Меня́ зову́т",
+    "feedback": "The frozen list pairs My name is... with this reply and What is your name? with the shown question.\nКак Вас зову́т? is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.",
+    "objectiveId": "obj-u25-name-question",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.",
+      "Как дела́?: a question asking how someone is doing. This differs from the classification or conversational function requested here. The frozen list pairs How are you? with this form, not with the name reply."
+    ],
+    "assessment": {
+      "testedFeature": "NAME_ANSWER_PAIR",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u25-name-question-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u25-name-question-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u25-name-question-2-ru",
+        "prov-ex-u25-name-question-3-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Прошу́ проще́ния: a formal apology. This differs from the classification or conversational function requested here. The frozen list pairs I'm sorry / excuse me (formal) with this form, not with the name reply.",
+        "Как дела́?: a question asking how someone is doing. This differs from the classification or conversational function requested here. The frozen list pairs How are you? with this form, not with the name reply."
+      ],
+      "whyAnswerDemonstratesObjective": "The frozen list pairs My name is... with this reply and What is your name? with the shown question.\nКак Вас зову́т? is the cue; Меня́ зову́т matches the requested function or classification: the reply opening followed by a name.",
+      "contrastMembers": [
+        "Меня́ зову́т",
+        "Прошу́ проще́ния",
+        "Как дела́?"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u25-name-question-0-ru",
+        "prov-ex-u25-name-question-1-ru",
+        "prov-ex-u25-name-question-2-ru",
+        "prov-ex-u25-name-question-3-ru"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  }
+]

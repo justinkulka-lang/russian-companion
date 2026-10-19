@@ -1,0 +1,2821 @@
+[
+  {
+    "id": "u1-i-а-identity",
+    "kind": "LETTER_IDENTITY",
+    "language": "en",
+    "prompt": "Which printed letter is shown?",
+    "promptLetter": "А",
+    "options": [
+      "Latin A",
+      "Cyrillic А",
+      "Cyrillic Р"
+    ],
+    "answer": "Cyrillic А",
+    "feedback": "The printed shape can match Latin A. In this course it is the Cyrillic vowel letter А.",
+    "objectiveId": "obj-u1-letter-identity",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-м-identity",
+    "kind": "LETTER_IDENTITY",
+    "language": "en",
+    "prompt": "Which printed letter is shown?",
+    "promptLetter": "М",
+    "options": [
+      "Cyrillic М",
+      "Cyrillic Н",
+      "Cyrillic Т"
+    ],
+    "answer": "Cyrillic М",
+    "feedback": "М is an early consonant letter. It is not Н.",
+    "objectiveId": "obj-u1-letter-identity",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-р-not-p",
+    "kind": "CONFUSABLE",
+    "language": "en",
+    "prompt": "This letter looks like Latin P. What is it?",
+    "promptLetter": "Р",
+    "options": [
+      "The Latin letter P",
+      "The Cyrillic letter Р",
+      "The Cyrillic letter П"
+    ],
+    "answer": "The Cyrillic letter Р",
+    "feedback": "Shape overlap with Latin P is a recognition trap. This is Cyrillic Р, not English P.",
+    "objectiveId": "obj-u1-confusable",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-н-not-h",
+    "kind": "CONFUSABLE",
+    "language": "en",
+    "prompt": "This letter looks like Latin H. What is it?",
+    "promptLetter": "Н",
+    "options": [
+      "Latin H",
+      "Cyrillic Н",
+      "Cyrillic И"
+    ],
+    "answer": "Cyrillic Н",
+    "feedback": "Do not read Н as English H. It is a Cyrillic letter.",
+    "objectiveId": "obj-u1-confusable",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-с-not-c",
+    "kind": "CONFUSABLE",
+    "language": "en",
+    "prompt": "This letter looks like Latin C. What is it?",
+    "promptLetter": "С",
+    "options": [
+      "Latin C",
+      "Cyrillic С",
+      "Cyrillic К"
+    ],
+    "answer": "Cyrillic С",
+    "feedback": "С is a Cyrillic letter. Do not treat the Latin look-alike as the identity.",
+    "objectiveId": "obj-u1-confusable",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-в-not-b",
+    "kind": "CONFUSABLE",
+    "language": "en",
+    "prompt": "This letter looks like Latin B. What is it?",
+    "promptLetter": "В",
+    "options": [
+      "Latin B",
+      "Cyrillic В",
+      "Cyrillic Б"
+    ],
+    "answer": "Cyrillic В",
+    "feedback": "В is not Latin B and it is not Cyrillic Б.",
+    "objectiveId": "obj-u1-confusable",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-у-not-y",
+    "kind": "CONFUSABLE",
+    "language": "en",
+    "prompt": "This letter looks like Latin Y. What is it?",
+    "promptLetter": "У",
+    "options": [
+      "Latin Y",
+      "Cyrillic У",
+      "Cyrillic И"
+    ],
+    "answer": "Cyrillic У",
+    "feedback": "У is a Cyrillic vowel letter, not Latin Y.",
+    "objectiveId": "obj-u1-confusable",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-х-not-x",
+    "kind": "CONFUSABLE",
+    "language": "en",
+    "prompt": "This letter looks like Latin X. What is it?",
+    "promptLetter": "Х",
+    "options": [
+      "Latin X",
+      "Cyrillic Х",
+      "Cyrillic К"
+    ],
+    "answer": "Cyrillic Х",
+    "feedback": "Х is a Cyrillic letter, not Latin X.",
+    "objectiveId": "obj-u1-confusable",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-ё-identity",
+    "kind": "LETTER_IDENTITY",
+    "language": "en",
+    "prompt": "Which printed letter is shown?",
+    "promptLetter": "Ё",
+    "options": [
+      "Cyrillic Ё",
+      "Cyrillic Е",
+      "Cyrillic Э"
+    ],
+    "answer": "Cyrillic Ё",
+    "feedback": "Ё is its own letter. Е and Э are different letters.",
+    "objectiveId": "obj-u1-iotated",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-ю-identity",
+    "kind": "LETTER_IDENTITY",
+    "language": "en",
+    "prompt": "Which printed letter is shown?",
+    "promptLetter": "Ю",
+    "options": [
+      "Cyrillic Ю",
+      "Cyrillic У",
+      "Cyrillic Я"
+    ],
+    "answer": "Cyrillic Ю",
+    "feedback": "Ю is an iotated vowel letter. У and Я are different letters.",
+    "objectiveId": "obj-u1-iotated",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-я-identity",
+    "kind": "LETTER_IDENTITY",
+    "language": "en",
+    "prompt": "Which printed letter is shown?",
+    "promptLetter": "Я",
+    "options": [
+      "Cyrillic Я",
+      "Cyrillic Р",
+      "Cyrillic А"
+    ],
+    "answer": "Cyrillic Я",
+    "feedback": "Я is an iotated vowel letter. It is not Р or А.",
+    "objectiveId": "obj-u1-iotated",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-й-not-vowel",
+    "kind": "SIGN",
+    "language": "en",
+    "prompt": "What is the printed letter Й?",
+    "promptLetter": "Й",
+    "options": [
+      "A standalone vowel",
+      "A consonant letter, not a vowel",
+      "The same mark as Ь"
+    ],
+    "answer": "A consonant letter, not a vowel",
+    "feedback": "Й is not a vowel you read alone and it is not the soft sign.",
+    "objectiveId": "obj-u1-signs",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-decode-pair",
+    "kind": "PRINT_PAIR",
+    "language": "en",
+    "prompt": "Which line is one letter written in both print cases?",
+    "promptLetter": "А",
+    "options": [
+      "А / а",
+      "А / О",
+      "М / Т"
+    ],
+    "answer": "А / а",
+    "feedback": "А / а is one letter. The other lines are two different letters.",
+    "objectiveId": "obj-u1-decoding",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-е-identity",
+    "kind": "LETTER_IDENTITY",
+    "language": "en",
+    "prompt": "Which printed letter is shown?",
+    "promptLetter": "Е",
+    "options": [
+      "Cyrillic Е",
+      "Cyrillic Э",
+      "Cyrillic Ё"
+    ],
+    "answer": "Cyrillic Е",
+    "feedback": "Е is an iotated vowel letter. Э and Ё are different letters.",
+    "objectiveId": "obj-u1-iotated",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-ь-not-vowel",
+    "kind": "SIGN",
+    "language": "en",
+    "prompt": "What is the printed mark Ь?",
+    "promptLetter": "Ь",
+    "options": [
+      "A vowel you pronounce by itself",
+      "A mark, not a standalone vowel",
+      "The same letter as Ъ"
+    ],
+    "answer": "A mark, not a standalone vowel",
+    "feedback": "Ь is a sign, not a vowel letter you read alone.",
+    "objectiveId": "obj-u1-signs",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-ъ-not-vowel",
+    "kind": "SIGN",
+    "language": "en",
+    "prompt": "What is the printed mark Ъ?",
+    "promptLetter": "Ъ",
+    "options": [
+      "A standalone vowel",
+      "The hard sign, not a vowel",
+      "The same letter as Ь"
+    ],
+    "answer": "The hard sign, not a vowel",
+    "feedback": "Ъ is the hard sign. It is not a spoken vowel and it is not Ь.",
+    "objectiveId": "obj-u1-signs",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u1-i-print-pair",
+    "kind": "PRINT_PAIR",
+    "language": "en",
+    "prompt": "Which pair is the same letter in uppercase and lowercase print?",
+    "promptLetter": "А",
+    "options": [
+      "А / а",
+      "Р / п",
+      "Н / и"
+    ],
+    "answer": "А / а",
+    "feedback": "Print pairs are one letter in two cases. Р / п and Н / и are different letters.",
+    "objectiveId": "obj-u1-print-forms",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u2-i-в-not-b",
+    "kind": "CONFUSABLE",
+    "language": "en",
+    "prompt": "This letter looks like Latin B. What is it?",
+    "promptLetter": "В",
+    "options": [
+      "Latin B",
+      "Cyrillic В",
+      "Cyrillic Б"
+    ],
+    "answer": "Cyrillic В",
+    "feedback": "В is not Latin B and it is not Cyrillic Б.",
+    "objectiveId": "obj-u2-review",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u2-i-у-not-y",
+    "kind": "CONFUSABLE",
+    "language": "en",
+    "prompt": "This letter looks like Latin Y. What is it?",
+    "promptLetter": "У",
+    "options": [
+      "Latin Y",
+      "Cyrillic У",
+      "Cyrillic И"
+    ],
+    "answer": "Cyrillic У",
+    "feedback": "У is a Cyrillic vowel letter, not Latin Y.",
+    "objectiveId": "obj-u2-review",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u2-i-х-not-x",
+    "kind": "CONFUSABLE",
+    "language": "en",
+    "prompt": "This letter looks like Latin X. What is it?",
+    "promptLetter": "Х",
+    "options": [
+      "Latin X",
+      "Cyrillic Х",
+      "Cyrillic К"
+    ],
+    "answer": "Cyrillic Х",
+    "feedback": "Х is a Cyrillic letter, not Latin X.",
+    "objectiveId": "obj-u2-review",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u2-i-print-б",
+    "kind": "PRINT_PAIR",
+    "language": "en",
+    "prompt": "Which pair is the same letter in uppercase and lowercase print?",
+    "promptLetter": "Б",
+    "options": [
+      "Б / б",
+      "В / б",
+      "Б / в"
+    ],
+    "answer": "Б / б",
+    "feedback": "Б / б is one letter. В is a different letter.",
+    "objectiveId": "obj-u2-review",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u2-i-я-identity",
+    "kind": "LETTER_IDENTITY",
+    "language": "en",
+    "prompt": "Which printed letter is shown?",
+    "promptLetter": "Я",
+    "options": [
+      "Cyrillic Я",
+      "Cyrillic Р",
+      "Cyrillic А"
+    ],
+    "answer": "Cyrillic Я",
+    "feedback": "Я is an iotated vowel letter. It is not Р or А.",
+    "objectiveId": "obj-u2-review",
+    "sourceId": "src-app-english-v2",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-gender-стол",
+    "kind": "SOURCE_GENDER",
+    "language": "en",
+    "prompt": "Which admitted label is recorded for the shown word?",
+    "promptLetter": "стол",
+    "options": [
+      "masculine",
+      "feminine",
+      "neuter"
+    ],
+    "answer": "masculine",
+    "feedback": "The admitted record lists this as masculine.",
+    "objectiveId": "obj-u3-gender",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-gender-дом",
+    "kind": "SOURCE_GENDER",
+    "language": "en",
+    "prompt": "Which admitted label is recorded for the shown word?",
+    "promptLetter": "дом",
+    "options": [
+      "masculine",
+      "feminine",
+      "neuter"
+    ],
+    "answer": "masculine",
+    "feedback": "The admitted record lists this as masculine.",
+    "objectiveId": "obj-u3-gender",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-gender-город",
+    "kind": "SOURCE_GENDER",
+    "language": "en",
+    "prompt": "Which admitted label is recorded for the shown word?",
+    "promptLetter": "го́род",
+    "options": [
+      "masculine",
+      "feminine",
+      "neuter"
+    ],
+    "answer": "masculine",
+    "feedback": "The admitted record lists this as masculine.",
+    "objectiveId": "obj-u3-gender",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-gender-друг",
+    "kind": "SOURCE_GENDER",
+    "language": "en",
+    "prompt": "Which admitted label is recorded for the shown word?",
+    "promptLetter": "друг",
+    "options": [
+      "masculine",
+      "feminine",
+      "neuter"
+    ],
+    "answer": "masculine",
+    "feedback": "The admitted record lists this as masculine.",
+    "objectiveId": "obj-u3-gender",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-gender-книга",
+    "kind": "SOURCE_GENDER",
+    "language": "en",
+    "prompt": "Which admitted label is recorded for the shown word?",
+    "promptLetter": "кни́га",
+    "options": [
+      "masculine",
+      "feminine",
+      "neuter"
+    ],
+    "answer": "feminine",
+    "feedback": "The admitted record lists this as feminine.",
+    "objectiveId": "obj-u3-gender",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-gender-дверь",
+    "kind": "SOURCE_GENDER",
+    "language": "en",
+    "prompt": "Which admitted label is recorded for the shown word?",
+    "promptLetter": "дверь",
+    "options": [
+      "masculine",
+      "feminine",
+      "neuter"
+    ],
+    "answer": "feminine",
+    "feedback": "The admitted record lists this as feminine.",
+    "objectiveId": "obj-u3-gender",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-gender-окно",
+    "kind": "SOURCE_GENDER",
+    "language": "en",
+    "prompt": "Which admitted label is recorded for the shown word?",
+    "promptLetter": "окно́",
+    "options": [
+      "masculine",
+      "feminine",
+      "neuter"
+    ],
+    "answer": "neuter",
+    "feedback": "The admitted record lists this as neuter.",
+    "objectiveId": "obj-u3-gender",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-gender-море",
+    "kind": "SOURCE_GENDER",
+    "language": "en",
+    "prompt": "Which admitted label is recorded for the shown word?",
+    "promptLetter": "мо́ре",
+    "options": [
+      "masculine",
+      "feminine",
+      "neuter"
+    ],
+    "answer": "neuter",
+    "feedback": "The admitted record lists this as neuter.",
+    "objectiveId": "obj-u3-gender",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-gender-мужчина",
+    "kind": "SOURCE_GENDER",
+    "language": "en",
+    "prompt": "Which admitted label is recorded for the shown word?",
+    "promptLetter": "мужчи́на",
+    "options": [
+      "masculine",
+      "feminine",
+      "neuter"
+    ],
+    "answer": "masculine",
+    "feedback": "The admitted record lists this as masculine.",
+    "objectiveId": "obj-u3-gender",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-gender-дядя",
+    "kind": "SOURCE_GENDER",
+    "language": "en",
+    "prompt": "Which admitted label is recorded for the shown word?",
+    "promptLetter": "дя́дя",
+    "options": [
+      "masculine",
+      "feminine",
+      "neuter"
+    ],
+    "answer": "masculine",
+    "feedback": "The admitted record lists this as masculine.",
+    "objectiveId": "obj-u3-gender",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-phrase-здравствуйте",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown item?",
+    "promptLetter": "здра́вствуйте",
+    "options": [
+      "hello",
+      "thank you",
+      "please",
+      "yes",
+      "no",
+      "this is"
+    ],
+    "answer": "hello",
+    "feedback": "The frozen dictionary row records this gloss: hello.",
+    "objectiveId": "obj-u3-phrases",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-phrase-спасибо",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown item?",
+    "promptLetter": "спаси́бо",
+    "options": [
+      "hello",
+      "thank you",
+      "please",
+      "yes",
+      "no",
+      "this is"
+    ],
+    "answer": "thank you",
+    "feedback": "The frozen dictionary row records this gloss: thank you.",
+    "objectiveId": "obj-u3-phrases",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-phrase-пожалуйста",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown item?",
+    "promptLetter": "пожа́луйста",
+    "options": [
+      "hello",
+      "thank you",
+      "please",
+      "yes",
+      "no",
+      "this is"
+    ],
+    "answer": "please",
+    "feedback": "The frozen dictionary row records this gloss: please.",
+    "objectiveId": "obj-u3-phrases",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-phrase-да",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown item?",
+    "promptLetter": "да",
+    "options": [
+      "hello",
+      "thank you",
+      "please",
+      "yes",
+      "no",
+      "this is"
+    ],
+    "answer": "yes",
+    "feedback": "The frozen dictionary row records this gloss: yes.",
+    "objectiveId": "obj-u3-phrases",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-phrase-нет",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown item?",
+    "promptLetter": "нет",
+    "options": [
+      "hello",
+      "thank you",
+      "please",
+      "yes",
+      "no",
+      "this is"
+    ],
+    "answer": "no",
+    "feedback": "The frozen dictionary row records this gloss: no.",
+    "objectiveId": "obj-u3-phrases",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-phrase-это",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown item?",
+    "promptLetter": "э́то",
+    "options": [
+      "hello",
+      "thank you",
+      "please",
+      "yes",
+      "no",
+      "this is"
+    ],
+    "answer": "this is",
+    "feedback": "The frozen dictionary row records this gloss: this is.",
+    "objectiveId": "obj-u3-phrases",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-name-moy-stol",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted meaning is recorded for the shown item?",
+    "promptLetter": "мой стол",
+    "options": [
+      "my table",
+      "my dog",
+      "What is this?",
+      "Who is this?"
+    ],
+    "answer": "my table",
+    "feedback": "The frozen page records this meaning: my table.",
+    "objectiveId": "obj-u3-naming",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-name-moya-sobaka",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted meaning is recorded for the shown item?",
+    "promptLetter": "моя собака",
+    "options": [
+      "my table",
+      "my dog",
+      "What is this?",
+      "Who is this?"
+    ],
+    "answer": "my dog",
+    "feedback": "The frozen page records this meaning: my dog.",
+    "objectiveId": "obj-u3-naming",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-name-chto-eto",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted meaning is recorded for the shown item?",
+    "promptLetter": "Что это?",
+    "options": [
+      "my table",
+      "my dog",
+      "What is this?",
+      "Who is this?"
+    ],
+    "answer": "What is this?",
+    "feedback": "The frozen page records this meaning: What is this?.",
+    "objectiveId": "obj-u3-naming",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u3-i-name-kto-eto",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted meaning is recorded for the shown item?",
+    "promptLetter": "Кто это?",
+    "options": [
+      "my table",
+      "my dog",
+      "What is this?",
+      "Who is this?"
+    ],
+    "answer": "Who is this?",
+    "feedback": "The frozen page records this meaning: Who is this?.",
+    "objectiveId": "obj-u3-naming",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-pronoun-я",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown personal word?",
+    "promptLetter": "я",
+    "options": [
+      "I",
+      "we",
+      "you",
+      "you (plural)",
+      "he",
+      "she",
+      "it",
+      "they"
+    ],
+    "answer": "I",
+    "feedback": "The frozen dictionary row records this gloss: I.",
+    "objectiveId": "obj-u4-pronouns",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-pronoun-мы",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown personal word?",
+    "promptLetter": "мы",
+    "options": [
+      "I",
+      "we",
+      "you",
+      "you (plural)",
+      "he",
+      "she",
+      "it",
+      "they"
+    ],
+    "answer": "we",
+    "feedback": "The frozen dictionary row records this gloss: we.",
+    "objectiveId": "obj-u4-pronouns",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-pronoun-ты",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown personal word?",
+    "promptLetter": "ты",
+    "options": [
+      "I",
+      "we",
+      "you",
+      "you (plural)",
+      "he",
+      "she",
+      "it",
+      "they"
+    ],
+    "answer": "you",
+    "feedback": "The frozen dictionary row records this gloss: you.",
+    "objectiveId": "obj-u4-pronouns",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-pronoun-вы",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown personal word?",
+    "promptLetter": "вы",
+    "options": [
+      "I",
+      "we",
+      "you",
+      "you (plural)",
+      "he",
+      "she",
+      "it",
+      "they"
+    ],
+    "answer": "you (plural)",
+    "feedback": "The frozen dictionary row records this gloss: you (plural).",
+    "objectiveId": "obj-u4-pronouns",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-pronoun-он",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown personal word?",
+    "promptLetter": "он",
+    "options": [
+      "I",
+      "we",
+      "you",
+      "you (plural)",
+      "he",
+      "she",
+      "it",
+      "they"
+    ],
+    "answer": "he",
+    "feedback": "The frozen dictionary row records this gloss: he.",
+    "objectiveId": "obj-u4-pronouns",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-pronoun-она",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown personal word?",
+    "promptLetter": "она́",
+    "options": [
+      "I",
+      "we",
+      "you",
+      "you (plural)",
+      "he",
+      "she",
+      "it",
+      "they"
+    ],
+    "answer": "she",
+    "feedback": "The frozen dictionary row records this gloss: she.",
+    "objectiveId": "obj-u4-pronouns",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-pronoun-оно",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown personal word?",
+    "promptLetter": "оно́",
+    "options": [
+      "I",
+      "we",
+      "you",
+      "you (plural)",
+      "he",
+      "she",
+      "it",
+      "they"
+    ],
+    "answer": "it",
+    "feedback": "The frozen dictionary row records this gloss: it.",
+    "objectiveId": "obj-u4-pronouns",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-pronoun-они",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted gloss is recorded for the shown personal word?",
+    "promptLetter": "они́",
+    "options": [
+      "I",
+      "we",
+      "you",
+      "you (plural)",
+      "he",
+      "she",
+      "it",
+      "they"
+    ],
+    "answer": "they",
+    "feedback": "The frozen dictionary row records this gloss: they.",
+    "objectiveId": "obj-u4-pronouns",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-verb-читать-ты",
+    "kind": "SOURCE_FORM",
+    "language": "en",
+    "prompt": "Which admitted present form is recorded for the row glossed you?",
+    "promptLetter": "чита́ть",
+    "options": [
+      "чита́ешь",
+      "чита́ю",
+      "чита́ет",
+      "чита́ем"
+    ],
+    "answer": "чита́ешь",
+    "feedback": "The frozen row records чита́ешь for the row glossed you.",
+    "objectiveId": "obj-u4-present",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-verb-делать-я",
+    "kind": "SOURCE_FORM",
+    "language": "en",
+    "prompt": "Which admitted present form is recorded for the row glossed I?",
+    "promptLetter": "де́лать",
+    "options": [
+      "де́лаю",
+      "де́лаешь",
+      "де́лает",
+      "де́лаем"
+    ],
+    "answer": "де́лаю",
+    "feedback": "The frozen row records де́лаю for the row glossed I.",
+    "objectiveId": "obj-u4-present",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-verb-говорить-мы",
+    "kind": "SOURCE_FORM",
+    "language": "en",
+    "prompt": "Which admitted present form is recorded for the row glossed we?",
+    "promptLetter": "говори́ть",
+    "options": [
+      "говори́м",
+      "говорю́",
+      "говори́шь",
+      "говори́т"
+    ],
+    "answer": "говори́м",
+    "feedback": "The frozen row records говори́м for the row glossed we.",
+    "objectiveId": "obj-u4-present",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-verb-видеть-он",
+    "kind": "SOURCE_FORM",
+    "language": "en",
+    "prompt": "Which admitted present form is recorded for the row glossed he?",
+    "promptLetter": "ви́деть",
+    "options": [
+      "ви́дит",
+      "ви́жу",
+      "ви́дишь",
+      "ви́дим"
+    ],
+    "answer": "ви́дит",
+    "feedback": "The frozen row records ви́дит for the row glossed he.",
+    "objectiveId": "obj-u4-present",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-verb-писать-вы",
+    "kind": "SOURCE_FORM",
+    "language": "en",
+    "prompt": "Which admitted present form is recorded for the row glossed you (plural)?",
+    "promptLetter": "писа́ть",
+    "options": [
+      "пи́шете",
+      "пишу́",
+      "пи́шешь",
+      "пи́шет"
+    ],
+    "answer": "пи́шете",
+    "feedback": "The frozen row records пи́шете for the row glossed you (plural).",
+    "objectiveId": "obj-u4-present",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-verb-идти-они",
+    "kind": "SOURCE_FORM",
+    "language": "en",
+    "prompt": "Which admitted present form is recorded for the row glossed they?",
+    "promptLetter": "идти́",
+    "options": [
+      "иду́т",
+      "иду́",
+      "идёшь",
+      "идёт"
+    ],
+    "answer": "иду́т",
+    "feedback": "The frozen row records иду́т for the row glossed they.",
+    "objectiveId": "obj-u4-present",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-stress-6f15e9f1",
+    "kind": "SOURCE_STRESS",
+    "language": "en",
+    "prompt": "Which vowel carries the admitted written stress mark? Count vowels from the left.",
+    "promptLetter": "чита́ть",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2",
+    "feedback": "The frozen accented field places the written mark on vowel 2.",
+    "objectiveId": "obj-u4-stress",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-stress-1f37b6b2",
+    "kind": "SOURCE_STRESS",
+    "language": "en",
+    "prompt": "Which vowel carries the admitted written stress mark? Count vowels from the left.",
+    "promptLetter": "говори́ть",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3",
+    "feedback": "The frozen accented field places the written mark on vowel 3.",
+    "objectiveId": "obj-u4-stress",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-stress-2114b12f",
+    "kind": "SOURCE_STRESS",
+    "language": "en",
+    "prompt": "Which vowel carries the admitted written stress mark? Count vowels from the left.",
+    "promptLetter": "писа́ть",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2",
+    "feedback": "The frozen accented field places the written mark on vowel 2.",
+    "objectiveId": "obj-u4-stress",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-nom-muzh",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted example is the shown sentence?",
+    "promptLetter": "Муж говорит",
+    "options": [
+      "The husband is talking",
+      "The train is old"
+    ],
+    "answer": "The husband is talking",
+    "feedback": "The frozen page records this example as: The husband is talking.",
+    "objectiveId": "obj-u4-nominative-gloss-reference",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u4-i-nom-poezd",
+    "kind": "SOURCE_MEANING",
+    "language": "en",
+    "prompt": "Which admitted example is the shown sentence?",
+    "promptLetter": "Поезд старый",
+    "options": [
+      "The husband is talking",
+      "The train is old"
+    ],
+    "answer": "The train is old",
+    "feedback": "The frozen page records this example as: The train is old.",
+    "objectiveId": "obj-u4-nominative-gloss-reference",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-q-kto",
+    "kind": "SOURCE_QUESTION",
+    "language": "en",
+    "prompt": "Which admitted question word is recorded for this English purpose: Who?",
+    "promptLetter": "Кто",
+    "options": [
+      "Кто",
+      "Что",
+      "Когда",
+      "Почему",
+      "Как",
+      "Где"
+    ],
+    "answer": "Кто",
+    "feedback": "The frozen table records Кто for Who.",
+    "objectiveId": "obj-u5-questions",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "promptLetterRole": "ANSWER_REFERENCE"
+  },
+  {
+    "id": "u5-i-q-chto",
+    "kind": "SOURCE_QUESTION",
+    "language": "en",
+    "prompt": "Which admitted question word is recorded for this English purpose: What?",
+    "promptLetter": "Что",
+    "options": [
+      "Кто",
+      "Что",
+      "Когда",
+      "Почему",
+      "Как",
+      "Где"
+    ],
+    "answer": "Что",
+    "feedback": "The frozen table records Что for What.",
+    "objectiveId": "obj-u5-questions",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "promptLetterRole": "ANSWER_REFERENCE"
+  },
+  {
+    "id": "u5-i-q-kogda",
+    "kind": "SOURCE_QUESTION",
+    "language": "en",
+    "prompt": "Which admitted question word is recorded for this English purpose: When?",
+    "promptLetter": "Когда",
+    "options": [
+      "Кто",
+      "Что",
+      "Когда",
+      "Почему",
+      "Как",
+      "Где"
+    ],
+    "answer": "Когда",
+    "feedback": "The frozen table records Когда for When.",
+    "objectiveId": "obj-u5-questions",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "promptLetterRole": "ANSWER_REFERENCE"
+  },
+  {
+    "id": "u5-i-q-pochemu",
+    "kind": "SOURCE_QUESTION",
+    "language": "en",
+    "prompt": "Which admitted question word is recorded for this English purpose: Why?",
+    "promptLetter": "Почему",
+    "options": [
+      "Кто",
+      "Что",
+      "Когда",
+      "Почему",
+      "Как",
+      "Где"
+    ],
+    "answer": "Почему",
+    "feedback": "The frozen table records Почему for Why.",
+    "objectiveId": "obj-u5-questions",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "promptLetterRole": "ANSWER_REFERENCE"
+  },
+  {
+    "id": "u5-i-q-kak",
+    "kind": "SOURCE_QUESTION",
+    "language": "en",
+    "prompt": "Which admitted question word is recorded for this English purpose: How?",
+    "promptLetter": "Как",
+    "options": [
+      "Кто",
+      "Что",
+      "Когда",
+      "Почему",
+      "Как",
+      "Где"
+    ],
+    "answer": "Как",
+    "feedback": "The frozen table records Как for How.",
+    "objectiveId": "obj-u5-questions",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "promptLetterRole": "ANSWER_REFERENCE"
+  },
+  {
+    "id": "u5-i-q-gde",
+    "kind": "SOURCE_QUESTION",
+    "language": "en",
+    "prompt": "Which admitted question word is recorded for this English purpose: Where (location)?",
+    "promptLetter": "Где",
+    "options": [
+      "Кто",
+      "Что",
+      "Когда",
+      "Почему",
+      "Как",
+      "Где"
+    ],
+    "answer": "Где",
+    "feedback": "The frozen table records Где for Where (location).",
+    "objectiveId": "obj-u5-questions",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "promptLetterRole": "ANSWER_REFERENCE"
+  },
+  {
+    "id": "u5-i-pattern-pattern-chto-eto",
+    "kind": "SOURCE_QUESTION",
+    "language": "en",
+    "prompt": "Which admitted meaning is recorded for the shown written question?",
+    "promptLetter": "Что это?",
+    "options": [
+      "What is this?",
+      "Who is this?",
+      "How do you do?/How're things?",
+      "Where do you live?"
+    ],
+    "answer": "What is this?",
+    "feedback": "The frozen page records this meaning: What is this?. Written punctuation is not listening practice.",
+    "objectiveId": "obj-u5-questions",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-pattern-pattern-kto-eto",
+    "kind": "SOURCE_QUESTION",
+    "language": "en",
+    "prompt": "Which admitted meaning is recorded for the shown written question?",
+    "promptLetter": "Кто это?",
+    "options": [
+      "What is this?",
+      "Who is this?",
+      "How do you do?/How're things?",
+      "Where do you live?"
+    ],
+    "answer": "Who is this?",
+    "feedback": "The frozen page records this meaning: Who is this?. Written punctuation is not listening practice.",
+    "objectiveId": "obj-u5-questions",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-pattern-pattern-kak-dela",
+    "kind": "SOURCE_QUESTION",
+    "language": "en",
+    "prompt": "Which admitted meaning is recorded for the shown written question?",
+    "promptLetter": "Как дела?",
+    "options": [
+      "What is this?",
+      "Who is this?",
+      "How do you do?/How're things?",
+      "Where do you live?"
+    ],
+    "answer": "How do you do?/How're things?",
+    "feedback": "The frozen page records this meaning: How do you do?/How're things?. Written punctuation is not listening practice.",
+    "objectiveId": "obj-u5-questions",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-pattern-pattern-gde-zhivete",
+    "kind": "SOURCE_QUESTION",
+    "language": "en",
+    "prompt": "Which admitted meaning is recorded for the shown written question?",
+    "promptLetter": "Где вы живёте?",
+    "options": [
+      "What is this?",
+      "Who is this?",
+      "How do you do?/How're things?",
+      "Where do you live?"
+    ],
+    "answer": "Where do you live?",
+    "feedback": "The frozen page records this meaning: Where do you live?. Written punctuation is not listening practice.",
+    "objectiveId": "obj-u5-questions",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-prep-o-knige",
+    "kind": "SOURCE_CASE",
+    "language": "en",
+    "prompt": "Which admitted description is recorded for the shown example?",
+    "promptLetter": "О книге",
+    "options": [
+      "About the book",
+      "About the letter",
+      "About the garden",
+      "I'm in Moscow"
+    ],
+    "answer": "About the book",
+    "feedback": "The frozen page records this example as: About the book.",
+    "objectiveId": "obj-u5-prepositional",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-prep-o-pisme",
+    "kind": "SOURCE_CASE",
+    "language": "en",
+    "prompt": "Which admitted description is recorded for the shown example?",
+    "promptLetter": "О письме",
+    "options": [
+      "About the book",
+      "About the letter",
+      "About the garden",
+      "I'm in Moscow"
+    ],
+    "answer": "About the letter",
+    "feedback": "The frozen page records this example as: About the letter.",
+    "objectiveId": "obj-u5-prepositional",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-prep-o-sade",
+    "kind": "SOURCE_CASE",
+    "language": "en",
+    "prompt": "Which admitted description is recorded for the shown example?",
+    "promptLetter": "О саде",
+    "options": [
+      "About the book",
+      "About the letter",
+      "About the garden",
+      "I'm in Moscow"
+    ],
+    "answer": "About the garden",
+    "feedback": "The frozen page records this example as: About the garden.",
+    "objectiveId": "obj-u5-prepositional",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-prep-v-moskve",
+    "kind": "SOURCE_CASE",
+    "language": "en",
+    "prompt": "Which admitted description is recorded for the shown example?",
+    "promptLetter": "я в Москве",
+    "options": [
+      "About the book",
+      "About the letter",
+      "About the garden",
+      "I'm in Moscow"
+    ],
+    "answer": "I'm in Moscow",
+    "feedback": "The frozen page records this example as: I'm in Moscow.",
+    "objectiveId": "obj-u5-prepositional",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-prep-field-книга",
+    "kind": "SOURCE_FORM",
+    "language": "en",
+    "prompt": "Which string is the admitted second field, not the first field?",
+    "promptLetter": "кни́га",
+    "options": [
+      "кни́га",
+      "кни́ге"
+    ],
+    "answer": "кни́ге",
+    "feedback": "The frozen row lists that field as кни́ге.",
+    "objectiveId": "obj-u5-prepositional",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-prep-field-письмо",
+    "kind": "SOURCE_FORM",
+    "language": "en",
+    "prompt": "Which string is the admitted second field, not the first field?",
+    "promptLetter": "письмо́",
+    "options": [
+      "письмо́",
+      "письме́"
+    ],
+    "answer": "письме́",
+    "feedback": "The frozen row lists that field as письме́.",
+    "objectiveId": "obj-u5-prepositional",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-indecl-радио",
+    "kind": "SOURCE_INDECLINABLE",
+    "language": "en",
+    "prompt": "Which behavior applies to the shown noun?",
+    "promptLetter": "ра́дио",
+    "options": [
+      "Indeclinable: unchanged for case or number",
+      "Declinable: can change for case"
+    ],
+    "answer": "Indeclinable: unchanged for case or number",
+    "feedback": "ра́дио is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.",
+    "objectiveId": "obj-u5-indeclinable",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-indecl-такси",
+    "kind": "SOURCE_INDECLINABLE",
+    "language": "en",
+    "prompt": "Which behavior applies to the shown noun?",
+    "promptLetter": "такси́",
+    "options": [
+      "Indeclinable: unchanged for case or number",
+      "Declinable: can change for case"
+    ],
+    "answer": "Indeclinable: unchanged for case or number",
+    "feedback": "такси́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.",
+    "objectiveId": "obj-u5-indeclinable",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-indecl-метро",
+    "kind": "SOURCE_INDECLINABLE",
+    "language": "en",
+    "prompt": "Which behavior applies to the shown noun?",
+    "promptLetter": "метро́",
+    "options": [
+      "Indeclinable: unchanged for case or number",
+      "Declinable: can change for case"
+    ],
+    "answer": "Indeclinable: unchanged for case or number",
+    "feedback": "метро́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.",
+    "objectiveId": "obj-u5-indeclinable",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-indecl-кино",
+    "kind": "SOURCE_INDECLINABLE",
+    "language": "en",
+    "prompt": "Which behavior applies to the shown noun?",
+    "promptLetter": "кино́",
+    "options": [
+      "Indeclinable: unchanged for case or number",
+      "Declinable: can change for case"
+    ],
+    "answer": "Indeclinable: unchanged for case or number",
+    "feedback": "кино́ is indeclinable: its form stays unchanged for case or number. Choose the unchanged behavior, rather than the behavior of a declinable noun.",
+    "objectiveId": "obj-u5-indeclinable",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-decl-книга",
+    "kind": "SOURCE_INDECLINABLE",
+    "language": "en",
+    "prompt": "Which behavior applies to the shown noun?",
+    "promptLetter": "кни́га",
+    "options": [
+      "Indeclinable: unchanged for case or number",
+      "Declinable: can change for case"
+    ],
+    "answer": "Declinable: can change for case",
+    "feedback": "кни́га is declinable: it can change for case. Its nominative and genitive forms differ, so the unchanged behavior does not describe this noun.",
+    "objectiveId": "obj-u5-indeclinable",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u5-i-decl-окно",
+    "kind": "SOURCE_INDECLINABLE",
+    "language": "en",
+    "prompt": "Which behavior applies to the shown noun?",
+    "promptLetter": "окно́",
+    "options": [
+      "Indeclinable: unchanged for case or number",
+      "Declinable: can change for case"
+    ],
+    "answer": "Declinable: can change for case",
+    "feedback": "окно́ is declinable: it can change for case. Its nominative and genitive forms differ, so the unchanged behavior does not describe this noun.",
+    "objectiveId": "obj-u5-indeclinable",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false
+  },
+  {
+    "id": "u6-g-possessive-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which nominative form meaning my agrees with the shown feminine singular noun?",
+    "promptLetter": "собака",
+    "options": [
+      "моя́",
+      "мо́й",
+      "мои́"
+    ],
+    "answer": "моя́",
+    "feedback": "собака is feminine singular, so the nominative form is моя́.",
+    "objectiveId": "obj-u6-possessive",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "мо́й is masculine singular nominative; it does not agree with the feminine singular noun.",
+      "мои́ is plural nominative; the noun here is singular."
+    ],
+    "assessment": {
+      "testedFeature": "POSSESSIVE_AGREEMENT",
+      "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "contrastSetId": "u6-possessive-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u6-possessive-5"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u6-possessive-4",
+        "prov-ex-or-u6-possessive-7"
+      ],
+      "distractorDifference": [
+        "",
+        "мо́й is masculine singular nominative; it does not agree with the feminine singular noun.",
+        "мои́ is plural nominative; the noun here is singular."
+      ],
+      "whyAnswerDemonstratesObjective": "собака is feminine singular, so the nominative form is моя́.",
+      "contrastMembers": [
+        "моя́",
+        "мо́й",
+        "мои́"
+      ],
+      "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "relationParticipantIds": [
+        "prov-u6-possessive-x-0",
+        "prov-ex-or-u6-possessive-5",
+        "prov-ex-or-u6-possessive-4",
+        "prov-ex-or-u6-possessive-7"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-possessive-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which nominative form meaning my agrees with the shown masculine singular noun?",
+    "promptLetter": "стол",
+    "options": [
+      "мо́й",
+      "моя́"
+    ],
+    "answer": "мо́й",
+    "feedback": "стол is masculine singular, so the nominative form is мо́й.",
+    "objectiveId": "obj-u6-possessive",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "моя́ is feminine singular nominative; it does not agree with the masculine singular noun."
+    ],
+    "assessment": {
+      "testedFeature": "POSSESSIVE_AGREEMENT",
+      "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "contrastSetId": "u6-possessive-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u6-possessive-4"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u6-possessive-5"
+      ],
+      "distractorDifference": [
+        "",
+        "моя́ is feminine singular nominative; it does not agree with the masculine singular noun."
+      ],
+      "whyAnswerDemonstratesObjective": "стол is masculine singular, so the nominative form is мо́й.",
+      "contrastMembers": [
+        "мо́й",
+        "моя́"
+      ],
+      "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "relationParticipantIds": [
+        "prov-u6-possessive-x-1",
+        "prov-ex-or-u6-possessive-4",
+        "prov-ex-or-u6-possessive-5"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-possessive-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which object-row phrase agrees with the shown feminine noun phrase?",
+    "promptLetter": "на́ша сестра́",
+    "options": [
+      "на́шу сестру́",
+      "на́шего бра́та",
+      "на́ши"
+    ],
+    "answer": "на́шу сестру́",
+    "feedback": "на́ша сестра́ takes the feminine object-row phrase на́шу сестру́.",
+    "objectiveId": "obj-u6-possessive",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "на́шего бра́та is a masculine animate object phrase, not the feminine phrase.",
+      "на́ши is plural and does not mark the feminine singular object row."
+    ],
+    "assessment": {
+      "testedFeature": "FEMININE_POSSESSIVE_OBJECT",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u6-possessive-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-6-191"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-6-195",
+        "prov-ca-6-196"
+      ],
+      "distractorDifference": [
+        "",
+        "на́шего бра́та is a masculine animate object phrase, not the feminine phrase.",
+        "на́ши is plural and does not mark the feminine singular object row."
+      ],
+      "whyAnswerDemonstratesObjective": "The shown feminine nominative на́ша сестра́ agrees with the object-row phrase на́шу сестру́.",
+      "contrastMembers": [
+        "на́шу сестру́",
+        "на́шего бра́та",
+        "на́ши"
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-6-190",
+        "prov-ca-6-191",
+        "prov-ca-6-195",
+        "prov-ca-6-196"
+      ],
+      "responseKind": "RUSSIAN_PHRASE"
+    }
+  },
+  {
+    "id": "u6-i-possessive-3",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which feminine singular nominative form of the same adjective corresponds to the shown form?",
+    "promptLetter": "тво́й",
+    "options": [
+      "твоя́",
+      "тво́й"
+    ],
+    "answer": "твоя́",
+    "feedback": "тво́й is the masculine singular nominative form; твоя́ is the feminine singular nominative form of the same adjective.",
+    "objectiveId": "obj-u6-possessive",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "тво́й is the masculine singular nominative form, so it does not supply the requested feminine singular nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "POSSESSIVE_AGREEMENT",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u6-possessive-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u6-possessive-9"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u6-possessive-8"
+      ],
+      "distractorDifference": [
+        "",
+        "тво́й is the masculine singular nominative form, so it does not supply the requested feminine singular nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "тво́й is the masculine singular nominative form; твоя́ is the feminine singular nominative form of the same adjective.",
+      "contrastMembers": [
+        "твоя́",
+        "тво́й"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u6-possessive-8",
+        "prov-ex-or-u6-possessive-9",
+        "prov-ex-or-u6-possessive-8"
+      ]
+    }
+  },
+  {
+    "id": "u6-g-third-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted form matches the shown category?",
+    "promptLetter": "masculine and neuter possessive pronouns",
+    "options": [
+      "его",
+      "её",
+      "их"
+    ],
+    "answer": "его",
+    "feedback": "его means his or its: the category refers to a masculine or neuter singular possessor. её refers to a feminine singular possessor, and их to plural possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.",
+    "objectiveId": "obj-u6-third",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "её identifies her, a feminine singular possessor instead of the shown possessor category.",
+      "их identifies their, plural possessors instead of the shown possessor category."
+    ],
+    "assessment": {
+      "testedFeature": "THIRD_PERSON_FORM",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u6-third-0",
+      "cueLanguage": "rule",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u6-third-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u6-third-1-ru",
+        "prov-ex-u6-third-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "её identifies her, a feminine singular possessor instead of the shown possessor category.",
+        "их identifies their, plural possessors instead of the shown possessor category."
+      ],
+      "whyAnswerDemonstratesObjective": "его means his or its: the category refers to a masculine or neuter singular possessor. её refers to a feminine singular possessor, and их to plural possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.",
+      "contrastMembers": [
+        "его",
+        "её",
+        "их"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-u6-third-x-0",
+        "prov-ex-u6-third-0-ru",
+        "prov-ex-u6-third-1-ru",
+        "prov-ex-u6-third-2-ru"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-third-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted form matches the shown category?",
+    "promptLetter": "The feminine",
+    "options": [
+      "её",
+      "его",
+      "их"
+    ],
+    "answer": "её",
+    "feedback": "её means her: the category refers to a feminine singular possessor. его means his or its, and их means their. These third-person possessive forms do not change with the gender or number of the possessed noun.",
+    "objectiveId": "obj-u6-third",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.",
+      "их identifies their, plural possessors instead of the shown possessor category."
+    ],
+    "assessment": {
+      "testedFeature": "THIRD_PERSON_FORM",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u6-third-1",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u6-third-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u6-third-0-ru",
+        "prov-ex-u6-third-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.",
+        "их identifies their, plural possessors instead of the shown possessor category."
+      ],
+      "whyAnswerDemonstratesObjective": "её means her: the category refers to a feminine singular possessor. его means his or its, and их means their. These third-person possessive forms do not change with the gender or number of the possessed noun.",
+      "contrastMembers": [
+        "её",
+        "его",
+        "их"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-u6-third-x-1",
+        "prov-ex-u6-third-1-ru",
+        "prov-ex-u6-third-0-ru",
+        "prov-ex-u6-third-2-ru"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-third-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted form matches the shown category?",
+    "promptLetter": "third-person plural",
+    "options": [
+      "их",
+      "его",
+      "её"
+    ],
+    "answer": "их",
+    "feedback": "их means their: the category refers to plural possessors. его and её refer to singular possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.",
+    "objectiveId": "obj-u6-third",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.",
+      "её identifies her, a feminine singular possessor instead of the shown possessor category."
+    ],
+    "assessment": {
+      "testedFeature": "THIRD_PERSON_FORM",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u6-third-2",
+      "cueLanguage": "rule",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u6-third-2-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u6-third-0-ru",
+        "prov-ex-u6-third-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "его identifies his or its, a masculine or neuter singular possessor instead of the shown possessor category.",
+        "её identifies her, a feminine singular possessor instead of the shown possessor category."
+      ],
+      "whyAnswerDemonstratesObjective": "их means their: the category refers to plural possessors. его and её refer to singular possessors. These third-person possessive forms do not change with the gender or number of the possessed noun.",
+      "contrastMembers": [
+        "их",
+        "его",
+        "её"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-u6-third-x-2",
+        "prov-ex-u6-third-2-ru",
+        "prov-ex-u6-third-0-ru",
+        "prov-ex-u6-third-1-ru"
+      ]
+    }
+  },
+  {
+    "id": "u6-g-object-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the other order of the shown line?",
+    "promptLetter": "Я люблю тебя",
+    "options": [
+      "Я тебя люблю",
+      "Я люблю тебя"
+    ],
+    "answer": "Я тебя люблю",
+    "feedback": "Я тебя люблю places the object before the verb. Я люблю тебя places it after the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.",
+    "objectiveId": "obj-u6-object",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "This option repeats the shown order instead of moving the object before or after the verb."
+    ],
+    "assessment": {
+      "testedFeature": "OBJECT_ORDER",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u6-object-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u6-object-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u6-object-2-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "This option repeats the shown order instead of moving the object before or after the verb."
+      ],
+      "whyAnswerDemonstratesObjective": "Я тебя люблю places the object before the verb. Я люблю тебя places it after the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.",
+      "contrastMembers": [
+        "Я тебя люблю",
+        "Я люблю тебя"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u6-object-2-ru",
+        "prov-ex-u6-object-1-ru",
+        "prov-ex-u6-object-2-ru"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-object-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line is the other order of the shown line?",
+    "promptLetter": "Я тебя люблю",
+    "options": [
+      "Я люблю тебя",
+      "Я тебя люблю"
+    ],
+    "answer": "Я люблю тебя",
+    "feedback": "Я люблю тебя places the object after the verb. Я тебя люблю places it before the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.",
+    "objectiveId": "obj-u6-object",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "This option repeats the shown order instead of moving the object before or after the verb."
+    ],
+    "assessment": {
+      "testedFeature": "OBJECT_ORDER",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u6-object-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u6-object-2-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u6-object-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "This option repeats the shown order instead of moving the object before or after the verb."
+      ],
+      "whyAnswerDemonstratesObjective": "Я люблю тебя places the object after the verb. Я тебя люблю places it before the verb. Both have the same meaning, I love you: the subject and object keep their roles and forms. The other option repeats the shown order.",
+      "contrastMembers": [
+        "Я люблю тебя",
+        "Я тебя люблю"
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u6-object-1-ru",
+        "prov-ex-u6-object-2-ru",
+        "prov-ex-u6-object-1-ru"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-object-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line reverses the object of the shown line?",
+    "promptLetter": "Собаки ненавидят котов.",
+    "options": [
+      "Коты ненавидят собак.",
+      "Собаки ненавидят котов."
+    ],
+    "answer": "Коты ненавидят собак.",
+    "feedback": "Коты ненавидят собак. means cats hate dogs. The cats are the subject and the dogs the accusative object. Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order. The other option repeats dogs hate cats.",
+    "objectiveId": "obj-u6-object",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "This option repeats the shown subject and object roles instead of reversing who hates whom."
+    ],
+    "assessment": {
+      "testedFeature": "ACCUSATIVE_OBJECT",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u6-object-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u6-object-4-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u6-object-3-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "This option repeats the shown subject and object roles instead of reversing who hates whom."
+      ],
+      "whyAnswerDemonstratesObjective": "Коты ненавидят собак. means cats hate dogs. The cats are the subject and the dogs the accusative object. Compared with the shown dogs hate cats line, both roles are reversed; this is not merely a change of word order. The other option repeats dogs hate cats.",
+      "contrastMembers": [
+        "Коты ненавидят собак.",
+        "Собаки ненавидят котов."
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u6-object-3-ru",
+        "prov-ex-u6-object-4-ru",
+        "prov-ex-u6-object-3-ru"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-object-3",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted line reverses the object of the shown line?",
+    "promptLetter": "Коты ненавидят собак.",
+    "options": [
+      "Собаки ненавидят котов.",
+      "Коты ненавидят собак."
+    ],
+    "answer": "Собаки ненавидят котов.",
+    "feedback": "Собаки ненавидят котов. means dogs hate cats. The dogs are the subject and the cats the accusative object. Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order. The other option repeats cats hate dogs.",
+    "objectiveId": "obj-u6-object",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "This option repeats the shown subject and object roles instead of reversing who hates whom."
+    ],
+    "assessment": {
+      "testedFeature": "ACCUSATIVE_OBJECT",
+      "evidenceMode": "SOURCE_SUPPLIED_PAIR",
+      "contrastSetId": "u6-object-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u6-object-3-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u6-object-4-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "This option repeats the shown subject and object roles instead of reversing who hates whom."
+      ],
+      "whyAnswerDemonstratesObjective": "Собаки ненавидят котов. means dogs hate cats. The dogs are the subject and the cats the accusative object. Compared with the shown cats hate dogs line, both roles are reversed; this is not merely a change of word order. The other option repeats cats hate dogs.",
+      "contrastMembers": [
+        "Собаки ненавидят котов.",
+        "Коты ненавидят собак."
+      ],
+      "relationKind": "SOURCE_SUPPLIED_PAIR",
+      "relationParticipantIds": [
+        "prov-ex-u6-object-4-ru",
+        "prov-ex-u6-object-3-ru",
+        "prov-ex-u6-object-4-ru"
+      ]
+    }
+  },
+  {
+    "id": "u6-g-feminine-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which singular accusative form of the same noun corresponds to the shown form?",
+    "promptLetter": "кни́га",
+    "options": [
+      "кни́гу",
+      "кни́га"
+    ],
+    "answer": "кни́гу",
+    "feedback": "кни́га is the singular nominative form; кни́гу is the singular accusative form of the same noun.",
+    "objectiveId": "obj-u6-feminine",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "кни́га is the singular nominative form, so it does not supply the requested singular accusative form."
+    ],
+    "assessment": {
+      "testedFeature": "FEMININE_ACCUSATIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u6-feminine-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u6-feminine-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u6-feminine-0"
+      ],
+      "distractorDifference": [
+        "",
+        "кни́га is the singular nominative form, so it does not supply the requested singular accusative form."
+      ],
+      "whyAnswerDemonstratesObjective": "кни́га is the singular nominative form; кни́гу is the singular accusative form of the same noun.",
+      "contrastMembers": [
+        "кни́гу",
+        "кни́га"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u6-feminine-0",
+        "prov-ex-or-u6-feminine-1",
+        "prov-ex-or-u6-feminine-0"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-feminine-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which singular accusative form of the same noun corresponds to the shown form?",
+    "promptLetter": "ма́ма",
+    "options": [
+      "ма́му",
+      "ма́ма"
+    ],
+    "answer": "ма́му",
+    "feedback": "ма́ма is the singular nominative form; ма́му is the singular accusative form of the same noun.",
+    "objectiveId": "obj-u6-feminine",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "ма́ма is the singular nominative form, so it does not supply the requested singular accusative form."
+    ],
+    "assessment": {
+      "testedFeature": "FEMININE_ACCUSATIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u6-feminine-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u6-feminine-3"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u6-feminine-2"
+      ],
+      "distractorDifference": [
+        "",
+        "ма́ма is the singular nominative form, so it does not supply the requested singular accusative form."
+      ],
+      "whyAnswerDemonstratesObjective": "ма́ма is the singular nominative form; ма́му is the singular accusative form of the same noun.",
+      "contrastMembers": [
+        "ма́му",
+        "ма́ма"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u6-feminine-2",
+        "prov-ex-or-u6-feminine-3",
+        "prov-ex-or-u6-feminine-2"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-feminine-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which singular accusative form of the same noun corresponds to the shown form?",
+    "promptLetter": "же́нщина",
+    "options": [
+      "же́нщину",
+      "же́нщина"
+    ],
+    "answer": "же́нщину",
+    "feedback": "же́нщина is the singular nominative form; же́нщину is the singular accusative form of the same noun.",
+    "objectiveId": "obj-u6-feminine",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "же́нщина is the singular nominative form, so it does not supply the requested singular accusative form."
+    ],
+    "assessment": {
+      "testedFeature": "FEMININE_ACCUSATIVE",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u6-feminine-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u6-feminine-5"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u6-feminine-4"
+      ],
+      "distractorDifference": [
+        "",
+        "же́нщина is the singular nominative form, so it does not supply the requested singular accusative form."
+      ],
+      "whyAnswerDemonstratesObjective": "же́нщина is the singular nominative form; же́нщину is the singular accusative form of the same noun.",
+      "contrastMembers": [
+        "же́нщину",
+        "же́нщина"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u6-feminine-4",
+        "prov-ex-or-u6-feminine-5",
+        "prov-ex-or-u6-feminine-4"
+      ]
+    }
+  },
+  {
+    "id": "u6-g-animacy-0",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which singular accusative form is used when the shown masculine animate noun is the direct object?",
+    "promptLetter": "брат",
+    "options": [
+      "бра́та",
+      "брат"
+    ],
+    "answer": "бра́та",
+    "feedback": "брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+    "objectiveId": "obj-u6-animacy",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "брат is the singular nominative form, so it does not supply the requested singular accusative form."
+    ],
+    "assessment": {
+      "testedFeature": "ANIMACY",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u6-animacy-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-or-u6-animacy-5"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u6-animacy-4"
+      ],
+      "distractorDifference": [
+        "",
+        "брат is the singular nominative form, so it does not supply the requested singular accusative form."
+      ],
+      "whyAnswerDemonstratesObjective": "брат is the singular nominative form; бра́та is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "contrastMembers": [
+        "бра́та",
+        "брат"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u6-animacy-4",
+        "prov-ex-or-u6-animacy-5",
+        "prov-ex-or-u6-animacy-4"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-animacy-1",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which singular accusative form is used when the shown masculine animate noun is the direct object?",
+    "promptLetter": "учи́тель",
+    "options": [
+      "учи́теля",
+      "учи́тель"
+    ],
+    "answer": "учи́теля",
+    "feedback": "учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+    "objectiveId": "obj-u6-animacy",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "учи́тель is the singular nominative form, so it does not supply the requested singular accusative form."
+    ],
+    "assessment": {
+      "testedFeature": "ANIMACY",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u6-animacy-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u6-animacy-7"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u6-animacy-6"
+      ],
+      "distractorDifference": [
+        "",
+        "учи́тель is the singular nominative form, so it does not supply the requested singular accusative form."
+      ],
+      "whyAnswerDemonstratesObjective": "учи́тель is the singular nominative form; учи́теля is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "contrastMembers": [
+        "учи́теля",
+        "учи́тель"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u6-animacy-6",
+        "prov-ex-or-u6-animacy-7",
+        "prov-ex-or-u6-animacy-6"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-animacy-2",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which singular accusative form is used when the shown masculine animate noun is the direct object?",
+    "promptLetter": "друг",
+    "options": [
+      "дру́га",
+      "друг"
+    ],
+    "answer": "дру́га",
+    "feedback": "друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+    "objectiveId": "obj-u6-animacy",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "друг is the singular nominative form, so it does not supply the requested singular accusative form."
+    ],
+    "assessment": {
+      "testedFeature": "ANIMACY",
+      "evidenceMode": "SAME_LEMMA_DIFFERENT_FIELD",
+      "contrastSetId": "u6-animacy-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-or-u6-animacy-9"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-or-u6-animacy-8"
+      ],
+      "distractorDifference": [
+        "",
+        "друг is the singular nominative form, so it does not supply the requested singular accusative form."
+      ],
+      "whyAnswerDemonstratesObjective": "друг is the singular nominative form; дру́га is the singular accusative form of the same noun. For this masculine animate noun, the singular accusative has the same form as the genitive. The nominative names the subject or dictionary entry.",
+      "contrastMembers": [
+        "дру́га",
+        "друг"
+      ],
+      "relationKind": "SAME_LEMMA_DIFFERENT_FIELD",
+      "relationParticipantIds": [
+        "prov-ex-or-u6-animacy-8",
+        "prov-ex-or-u6-animacy-9",
+        "prov-ex-or-u6-animacy-8"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-animacy-3",
+    "kind": "CONTRAST_SELECTION",
+    "language": "en",
+    "prompt": "Which English classification explains the masculine inanimate direct object in the supplied chair clause?",
+    "promptLetter": "Я де́лал стул.",
+    "options": [
+      "The masculine inanimate direct object keeps the nominative form.",
+      "The masculine inanimate direct object takes the genitive form."
+    ],
+    "answer": "The masculine inanimate direct object keeps the nominative form.",
+    "feedback": "In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.",
+    "objectiveId": "obj-u6-animacy",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair."
+    ],
+    "assessment": {
+      "testedFeature": "ANIMACY_INANIMATE_CONTEXT",
+      "evidenceMode": "STATED_APPLICATION",
+      "contrastSetId": "u6-i-animacy-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ca-u6-animacy-transfer-item-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ca-u6-animacy-transfer-item-2"
+      ],
+      "distractorDifference": [
+        "",
+        "The genitive-shaped singular accusative applies to the supplied masculine animate teacher and friend, not this inanimate chair."
+      ],
+      "whyAnswerDemonstratesObjective": "In the supplied chair clause, the direct object is masculine singular and inanimate. The masculine inanimate direct object keeps the nominative form. The accusative role does not require a different spelling here. The teacher and friend examples are animate and instead have genitive-shaped singular accusatives. Form identity does not turn the chair into a subject or change this into a genitive case. Recognize these supplied contexts; no universal all-case or completed-action claim.",
+      "contrastMembers": [
+        "The masculine inanimate direct object keeps the nominative form.",
+        "The masculine inanimate direct object takes the genitive form."
+      ],
+      "relationKind": "STATED_APPLICATION",
+      "relationParticipantIds": [
+        "prov-ca-u6-animacy-transfer-item-0",
+        "prov-ca-u6-animacy-transfer-item-1",
+        "prov-ca-u6-animacy-transfer-item-2"
+      ],
+      "responseKind": "ENGLISH_CLASSIFICATION"
+    }
+  },
+  {
+    "id": "u6-g-pronoun-0",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted form is the object row of the shown form?",
+    "promptLetter": "Я",
+    "options": [
+      "Меня",
+      "Нас"
+    ],
+    "answer": "Меня",
+    "feedback": "Меня is the accusative object form for Я, I/me: first person singular. Нас is the form for we/us instead, first person plural. Match the same person and number across the nominative and accusative table columns.",
+    "objectiveId": "obj-u6-pronoun",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Нас identifies we/us, first person plural instead of the person, number or gender in the shown nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PERSONAL_OBJECT_CASE",
+      "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "contrastSetId": "u6-pronoun-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-ex-u6-pronoun-0-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u6-pronoun-1-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Нас identifies we/us, first person plural instead of the person, number or gender in the shown nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "Меня is the accusative object form for Я, I/me: first person singular. Нас is the form for we/us instead, first person plural. Match the same person and number across the nominative and accusative table columns.",
+      "contrastMembers": [
+        "Меня",
+        "Нас"
+      ],
+      "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "relationParticipantIds": [
+        "prov-u6-pronoun-rem-r0",
+        "prov-ex-u6-pronoun-0-ru",
+        "prov-ex-u6-pronoun-1-ru"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-pronoun-1",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted form is the object row of the shown form?",
+    "promptLetter": "Мы",
+    "options": [
+      "Нас",
+      "Меня"
+    ],
+    "answer": "Нас",
+    "feedback": "Нас is the accusative object form for Мы, we/us: first person plural. Меня is the form for I/me instead, first person singular. Match the same person and number across the nominative and accusative table columns.",
+    "objectiveId": "obj-u6-pronoun",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Меня identifies I/me, first person singular instead of the person, number or gender in the shown nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PERSONAL_OBJECT_CASE",
+      "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "contrastSetId": "u6-pronoun-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u6-pronoun-1-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u6-pronoun-0-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Меня identifies I/me, first person singular instead of the person, number or gender in the shown nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "Нас is the accusative object form for Мы, we/us: first person plural. Меня is the form for I/me instead, first person singular. Match the same person and number across the nominative and accusative table columns.",
+      "contrastMembers": [
+        "Нас",
+        "Меня"
+      ],
+      "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "relationParticipantIds": [
+        "prov-u6-pronoun-x-1",
+        "prov-ex-u6-pronoun-1-ru",
+        "prov-ex-u6-pronoun-0-ru"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-pronoun-2",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted form is the object row of the shown form?",
+    "promptLetter": "Она",
+    "options": [
+      "Её",
+      "Его"
+    ],
+    "answer": "Её",
+    "feedback": "Её is the accusative object form for Она, she/her: third person singular feminine. Его is the form for he/him or it instead. Match the same person, number and gender across the nominative and accusative table columns.",
+    "objectiveId": "obj-u6-pronoun",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Его identifies he/him or it, third person singular masculine or neuter instead of the person, number or gender in the shown nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PERSONAL_OBJECT_CASE",
+      "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "contrastSetId": "u6-pronoun-2",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u6-pronoun-5-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u6-pronoun-4-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Его identifies he/him or it, third person singular masculine or neuter instead of the person, number or gender in the shown nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "Её is the accusative object form for Она, she/her: third person singular feminine. Его is the form for he/him or it instead. Match the same person, number and gender across the nominative and accusative table columns.",
+      "contrastMembers": [
+        "Её",
+        "Его"
+      ],
+      "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "relationParticipantIds": [
+        "prov-u6-pronoun-x-2",
+        "prov-ex-u6-pronoun-5-ru",
+        "prov-ex-u6-pronoun-4-ru"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-pronoun-3",
+    "kind": "FORM_SELECTION",
+    "language": "en",
+    "prompt": "Which admitted form is the object row of the shown form?",
+    "promptLetter": "Они",
+    "options": [
+      "Их",
+      "Вас"
+    ],
+    "answer": "Их",
+    "feedback": "Их is the accusative object form for Они, they/them: third person plural. Вас is the form for plural or polite you instead, second person. Match the same person and number across the nominative and accusative table columns.",
+    "objectiveId": "obj-u6-pronoun",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Вас identifies plural or polite you, second person instead of the person, number or gender in the shown nominative form."
+    ],
+    "assessment": {
+      "testedFeature": "PERSONAL_OBJECT_CASE",
+      "evidenceMode": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "contrastSetId": "u6-pronoun-3",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-ex-u6-pronoun-6-ru"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-ex-u6-pronoun-3-ru"
+      ],
+      "distractorDifference": [
+        "",
+        "Вас identifies plural or polite you, second person instead of the person, number or gender in the shown nominative form."
+      ],
+      "whyAnswerDemonstratesObjective": "Их is the accusative object form for Они, they/them: third person plural. Вас is the form for plural or polite you instead, second person. Match the same person and number across the nominative and accusative table columns.",
+      "contrastMembers": [
+        "Их",
+        "Вас"
+      ],
+      "relationKind": "SAME_CONSTRUCTION_DIFFERENT_FORM",
+      "relationParticipantIds": [
+        "prov-u6-pronoun-x-3",
+        "prov-ex-u6-pronoun-6-ru",
+        "prov-ex-u6-pronoun-3-ru"
+      ]
+    }
+  },
+  {
+    "id": "u6-g-direction-0",
+    "kind": "CASE_RECOGNITION",
+    "language": "en",
+    "prompt": "Which admitted function does the shown line use?",
+    "promptLetter": "Я шёл в дом",
+    "options": [
+      "direction",
+      "location"
+    ],
+    "answer": "direction",
+    "feedback": "Я шёл в дом describes walking into the house, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+    "objectiveId": "obj-u6-direction",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Location describes being at a place instead of moving toward a destination in this example."
+    ],
+    "assessment": {
+      "testedFeature": "DIRECTION_LOCATION",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u6-direction-0",
+      "cueLanguage": "ru",
+      "independent": false,
+      "answerSourceIds": [
+        "prov-u6-direction-x-0"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u6-direction-x-1"
+      ],
+      "distractorDifference": [
+        "",
+        "Location describes being at a place instead of moving toward a destination in this example."
+      ],
+      "whyAnswerDemonstratesObjective": "Я шёл в дом describes walking into the house, a destination. Here the preposition takes the accusative, so the function is direction. Location instead describes being at a place; The same preposition with the prepositional case can express that different function.",
+      "contrastMembers": [
+        "direction",
+        "location"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u6-direction-0-ru",
+        "prov-u6-direction-x-0",
+        "prov-u6-direction-x-1"
+      ]
+    }
+  },
+  {
+    "id": "u6-i-direction-1",
+    "kind": "CASE_RECOGNITION",
+    "language": "en",
+    "prompt": "Which admitted function does the shown line use?",
+    "promptLetter": "Я жил в Лондоне",
+    "options": [
+      "location",
+      "direction"
+    ],
+    "answer": "location",
+    "feedback": "Я жил в Лондоне describes living in London, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+    "objectiveId": "obj-u6-direction",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "containsGeneratedRussian": false,
+    "distractorRationales": [
+      "",
+      "Direction describes moving toward a destination instead of being at a place in this example."
+    ],
+    "assessment": {
+      "testedFeature": "DIRECTION_LOCATION",
+      "evidenceMode": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "contrastSetId": "u6-direction-1",
+      "cueLanguage": "ru",
+      "independent": true,
+      "answerSourceIds": [
+        "prov-u6-direction-x-1"
+      ],
+      "distractorSourceIds": [
+        "",
+        "prov-u6-direction-x-0"
+      ],
+      "distractorDifference": [
+        "",
+        "Direction describes moving toward a destination instead of being at a place in this example."
+      ],
+      "whyAnswerDemonstratesObjective": "Я жил в Лондоне describes living in London, a location. Here the preposition takes the prepositional case. Direction instead describes a destination; The same preposition with the accusative can express that different function.",
+      "contrastMembers": [
+        "location",
+        "direction"
+      ],
+      "relationKind": "RULE_CLASSIFIES_SOURCE_EXAMPLE",
+      "relationParticipantIds": [
+        "prov-ex-u6-direction-1-ru",
+        "prov-u6-direction-x-1",
+        "prov-u6-direction-x-0"
+      ]
+    }
+  }
+]

@@ -1,0 +1,1482 @@
+[
+  {
+    "id": "ex-u24-absence-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "нет",
+    "note": "no",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-absence"
+  },
+  {
+    "id": "ex-u24-absence-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "не",
+    "note": "nye",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-absence"
+  },
+  {
+    "id": "ex-u24-alternation-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Я не ви́жу книг.",
+    "note": "I don't see any books",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-alternation"
+  },
+  {
+    "id": "ex-u24-alternation-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Я не ви́жу кни́гу",
+    "note": "I don't see the book",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-alternation"
+  },
+  {
+    "id": "ex-u24-stand-ins-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "кто",
+    "note": "никто́",
+    "sourceId": "src-ruwiki-otritsatelnye-141256493",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-stand-ins"
+  },
+  {
+    "id": "ex-u24-stand-ins-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "что",
+    "note": "ничто́",
+    "sourceId": "src-ruwiki-otritsatelnye-141256493",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-stand-ins"
+  },
+  {
+    "id": "ex-u24-stand-ins-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "не́кого спросить",
+    "note": "there is nobody to ask; negative absence construction",
+    "sourceId": "src-ruwiki-otritsatelnye-141256493",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-stand-ins"
+  },
+  {
+    "id": "ex-u24-concord-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "никто́",
+    "note": "не",
+    "sourceId": "src-ruwiki-otritsatelnye-141256493",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-concord"
+  },
+  {
+    "id": "ex-u24-concord-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "ничто́",
+    "note": "не",
+    "sourceId": "src-ruwiki-otritsatelnye-141256493",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-concord"
+  },
+  {
+    "id": "ex-u24-word-order-contrast-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Не надо меня уговаривать.",
+    "note": "One should not persuade me",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-word-order-contrast"
+  },
+  {
+    "id": "ex-u24-word-order-contrast-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Меня не надо уговаривать.",
+    "note": "There is no need to persuade me",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-word-order-contrast"
+  },
+  {
+    "id": "ex-u24-placement-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Мне не холодно.",
+    "note": "To me it is not cold.",
+    "sourceId": "src-readyrussian-langgen3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-placement"
+  },
+  {
+    "id": "ex-u24-placement-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Не мне холодно.",
+    "note": "It is not to me that it is cold.",
+    "sourceId": "src-readyrussian-langgen3",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u24-placement"
+  },
+  {
+    "id": "ex-u25-name-structure-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "имя",
+    "note": "first name",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-name-structure"
+  },
+  {
+    "id": "ex-u25-name-structure-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "отчество",
+    "note": "patronymic name",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-name-structure"
+  },
+  {
+    "id": "ex-u25-name-structure-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "фамилия",
+    "note": "family name",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-name-structure"
+  },
+  {
+    "id": "ex-u25-name-structure-3",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Василий Иванович",
+    "note": "For instance",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-name-structure"
+  },
+  {
+    "id": "ex-u25-diminutives-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Александр",
+    "note": "Alexander",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-diminutives"
+  },
+  {
+    "id": "ex-u25-diminutives-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Алексей",
+    "note": "Alexei",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-diminutives"
+  },
+  {
+    "id": "ex-u25-diminutives-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Дмитрий",
+    "note": "Dmitri",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-diminutives"
+  },
+  {
+    "id": "ex-u25-courtesy-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Пожа́луйста",
+    "note": "please",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-courtesy"
+  },
+  {
+    "id": "ex-u25-courtesy-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Спаси́бо",
+    "note": "thanks",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-courtesy"
+  },
+  {
+    "id": "ex-u25-courtesy-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Извини́те",
+    "note": "Извини́те is the polite or plural form. The familiar singular is Извини́.",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-courtesy"
+  },
+  {
+    "id": "ex-u25-name-question-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Как Вас зову́т?",
+    "note": "What is your name?",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-name-question"
+  },
+  {
+    "id": "ex-u25-name-question-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Меня́ зову́т",
+    "note": "My name is...",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-name-question"
+  },
+  {
+    "id": "ex-u25-name-question-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Прошу́ проще́ния",
+    "note": "I'm sorry / excuse me (formal)",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-name-question"
+  },
+  {
+    "id": "ex-u25-name-question-3",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Как дела́?",
+    "note": "How are you?",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-name-question"
+  },
+  {
+    "id": "ex-u25-nickname-rule-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Марюня",
+    "note": "от полной формы имени",
+    "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-nickname-rule"
+  },
+  {
+    "id": "ex-u25-nickname-rule-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Машенька",
+    "note": "от краткой формы",
+    "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-nickname-rule"
+  },
+  {
+    "id": "ex-u25-nickname-rule-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Сашка",
+    "note": "оттенок пренебрежения",
+    "sourceId": "src-ruwiki-lichnoe-imya-154915954",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-nickname-rule"
+  },
+  {
+    "id": "ex-u25-address-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Ирина",
+    "note": "полные имена",
+    "sourceId": "src-ruwiki-obraschenie-153012874",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-address"
+  },
+  {
+    "id": "ex-u25-address-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Ира",
+    "note": "краткие имена",
+    "sourceId": "src-ruwiki-obraschenie-153012874",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-address"
+  },
+  {
+    "id": "ex-u25-address-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Ирочка",
+    "note": "уменьшительно-ласкательные",
+    "sourceId": "src-ruwiki-obraschenie-153012874",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-address"
+  },
+  {
+    "id": "ex-u25-address-3",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "полному имени",
+    "note": "отстранённо-официального регистра",
+    "sourceId": "src-ruwiki-obraschenie-153012874",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-address"
+  },
+  {
+    "id": "ex-u26-word-order-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "В магазин пошёл я.",
+    "note": "In the supplied context: It was me who went to the shop.",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-word-order"
+  },
+  {
+    "id": "ex-u26-word-order-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Пошёл я в магазин.",
+    "note": "In the supplied context: I went to the shop, and the story continues.",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-word-order"
+  },
+  {
+    "id": "ex-u26-word-order-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Я пошёл в магазин.",
+    "note": "In the supplied context: I went to the shop.",
+    "sourceId": "src-content-audit-research",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-word-order"
+  },
+  {
+    "id": "ex-u26-word-order-3",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "В ко́мнату вбежа́л ма́льчик",
+    "note": "Into the room rushed a boy",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-word-order"
+  },
+  {
+    "id": "ex-u26-word-order-4",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Ма́льчик вбежа́л в ко́мнату",
+    "note": "The boy rushed into the room",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-word-order"
+  },
+  {
+    "id": "ex-u26-vy-capital-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Вы",
+    "note": "capital letter",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-vy-capital"
+  },
+  {
+    "id": "ex-u26-vy-capital-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Вас",
+    "note": "capital letter",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-vy-capital"
+  },
+  {
+    "id": "ex-u26-vy-capital-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Вам",
+    "note": "capital letter",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-vy-capital"
+  },
+  {
+    "id": "ex-u26-address-notation-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "115114 г. Москва",
+    "note": "city",
+    "sourceId": "src-wikibooks-russian-various-stuff-3353858",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-address-notation"
+  },
+  {
+    "id": "ex-u26-address-notation-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "ул. Петрова, д. 14, кв. 15",
+    "note": "street",
+    "sourceId": "src-wikibooks-russian-various-stuff-3353858",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-address-notation"
+  },
+  {
+    "id": "ex-u26-address-notation-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "д.",
+    "note": "building",
+    "sourceId": "src-wikibooks-russian-various-stuff-3353858",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-address-notation"
+  },
+  {
+    "id": "ex-u26-indefinite-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "В доме действительно кто-то был",
+    "note": "референтность и неизвестность говорящему",
+    "sourceId": "src-ruwiki-neopredelennoe-mestoimenie-149963314",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-indefinite"
+  },
+  {
+    "id": "ex-u26-indefinite-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "куда-нибудь",
+    "note": "являются нереферентными",
+    "sourceId": "src-ruwiki-neopredelennoe-mestoimenie-149963314",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-indefinite"
+  },
+  {
+    "id": "ex-u26-indefinite-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "кое-какие",
+    "note": "референтный денотативный статус слабой определённости",
+    "sourceId": "src-ruwiki-neopredelennoe-mestoimenie-149963314",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-indefinite"
+  },
+  {
+    "id": "ex-u26-letter-writing-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Здравствуйте!",
+    "note": "Greetings",
+    "sourceId": "src-readyrussian-letter",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-letter-writing"
+  },
+  {
+    "id": "ex-u26-letter-writing-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Уважаемый Иван Иванович",
+    "note": "Respected Ivan Ivanovich",
+    "sourceId": "src-readyrussian-letter",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-letter-writing"
+  },
+  {
+    "id": "ex-u26-correspondence-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "к настоящему письму прилагается",
+    "note": "enclosed please find",
+    "sourceId": "src-readyrussian-letter",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-correspondence"
+  },
+  {
+    "id": "ex-u26-correspondence-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "С уважением",
+    "note": "Respectfully",
+    "sourceId": "src-readyrussian-letter",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-correspondence"
+  },
+  {
+    "id": "ex-u27-passive-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "сде́ланный",
+    "note": "done/made",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-passive"
+  },
+  {
+    "id": "ex-u27-passive-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "напи́санный",
+    "note": "written",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-passive"
+  },
+  {
+    "id": "ex-u27-passive-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "уби́тый",
+    "note": "killed",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-passive"
+  },
+  {
+    "id": "ex-u27-passive-3",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "напи́сан",
+    "note": "short form",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-passive"
+  },
+  {
+    "id": "ex-u27-passive-4",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "письмо написано Иваном",
+    "note": "the letter was written by Ivan",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-passive"
+  },
+  {
+    "id": "ex-u27-present-passive-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "обсужда́емый",
+    "note": "being discussed",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-present-passive"
+  },
+  {
+    "id": "ex-u27-present-passive-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "оставля́ем",
+    "note": "we leave",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-present-passive"
+  },
+  {
+    "id": "ex-u27-stress-ref-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "оставля́емый",
+    "note": "present passive participle",
+    "sourceId": "src-enwiktionary-ostavlyaemyj-74231596",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-stress-reference"
+  },
+  {
+    "id": "ex-u27-stress-ref-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "обсужда́емый",
+    "note": "present passive participle",
+    "sourceId": "src-enwiktionary-obsuzhdaemyj-74233962",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-stress-reference"
+  },
+  {
+    "id": "ex-u27-stress-ref-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "напи́санный",
+    "note": "past passive participle",
+    "sourceId": "src-enwiktionary-napisannyj-74228228",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-stress-reference"
+  },
+  {
+    "id": "ex-u27-stress-ref-3",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "прочи́танный",
+    "note": "past passive participle",
+    "sourceId": "src-enwiktionary-prochitannyj-74232159",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-stress-reference"
+  },
+  {
+    "id": "ex-u28-imperfective-adverb-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "думая",
+    "note": "imperfective verbal adverb; relative time is interpreted with its main predicate, normally simultaneous in the taught construction",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u28-imperfective-adverb"
+  },
+  {
+    "id": "ex-u28-imperfective-adverb-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "учась",
+    "note": "imperfective verbal adverb; relative time is interpreted with its main predicate, normally simultaneous in the taught construction",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u28-imperfective-adverb"
+  },
+  {
+    "id": "ex-u28-perfective-adverb-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "сказав",
+    "note": "perfective verbal adverb; normally anterior to its main action, which can itself be past or future",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u28-perfective-adverb"
+  },
+  {
+    "id": "ex-u28-perfective-adverb-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "научившись",
+    "note": "perfective verbal adverb; normally anterior to its main action, which can itself be past or future",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u28-perfective-adverb"
+  },
+  {
+    "id": "ex-u28-perfective-adverb-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "войдя",
+    "note": "perfective verbal adverb; normally anterior to its main action, which can itself be past or future",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u28-perfective-adverb"
+  },
+  {
+    "id": "ex-u28-readings-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "устав писать",
+    "note": "ложился на диван",
+    "sourceId": "src-ruwikisource-vechera-5336197",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u28-readings"
+  },
+  {
+    "id": "ex-u28-readings-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "стоит",
+    "note": "сложа руки",
+    "sourceId": "src-ruwikisource-vechera-5336197",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u28-readings"
+  },
+  {
+    "id": "ex-u29-active-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "чита́вшая",
+    "note": "in the past",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-active"
+  },
+  {
+    "id": "ex-u29-active-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "чита́ющая",
+    "note": "in the present",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-active"
+  },
+  {
+    "id": "ex-u29-active-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "живу́щие",
+    "note": "living",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-active"
+  },
+  {
+    "id": "ex-u29-short-adjective-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "но́вый",
+    "note": "new",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-short-adjective"
+  },
+  {
+    "id": "ex-u29-short-adjective-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "нов",
+    "note": "new",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-short-adjective"
+  },
+  {
+    "id": "ex-u29-short-adjective-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "беж",
+    "note": "beige",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-short-adjective"
+  },
+  {
+    "id": "ex-u29-bookish-note-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Пообедав, я пошёл гулять",
+    "note": "bookish speech",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-bookish-note"
+  },
+  {
+    "id": "ex-u29-bookish-note-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Я пообедал и пошёл гулять",
+    "note": "colloquial language",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-bookish-note"
+  },
+  {
+    "id": "ex-u29-punctuation-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Программа, написанная в спешке, выполнила недопустимую операцию.",
+    "note": "выделяется запятыми с двух сторон",
+    "sourceId": "src-ruwiki-prichastie-153078996",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-punctuation"
+  },
+  {
+    "id": "ex-u29-punctuation-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Написанная в спешке программа выполнила недопустимую операцию.",
+    "note": "запятые не ставятся",
+    "sourceId": "src-ruwiki-prichastie-153078996",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-punctuation"
+  },
+  {
+    "id": "ex-u29-punctuation-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "личным местоимением",
+    "note": "кроме тех случаев",
+    "sourceId": "src-ruwiki-prichastie-153078996",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-punctuation-reference"
+  },
+  {
+    "id": "ex-u30-letter-names-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "а",
+    "note": "ah",
+    "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-letter-names"
+  },
+  {
+    "id": "ex-u30-letter-names-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "бэ",
+    "note": "be/beh",
+    "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-letter-names"
+  },
+  {
+    "id": "ex-u30-abbrev-examples-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "СССР",
+    "note": "USSR",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-abbrev-examples"
+  },
+  {
+    "id": "ex-u30-abbrev-examples-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "США",
+    "note": "USA",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-abbrev-examples"
+  },
+  {
+    "id": "ex-u30-address-marks-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "115114 г. Москва",
+    "note": "city",
+    "sourceId": "src-wikibooks-russian-various-stuff-3353858",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-address-marks"
+  },
+  {
+    "id": "ex-u30-address-marks-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "ул. Петрова, д. 14, кв. 15",
+    "note": "street",
+    "sourceId": "src-wikibooks-russian-various-stuff-3353858",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-address-marks"
+  },
+  {
+    "id": "ex-u30-address-marks-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "д.",
+    "note": "building",
+    "sourceId": "src-wikibooks-russian-various-stuff-3353858",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-address-marks"
+  },
+  {
+    "id": "ex-u30-abbreviation-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "СНГ",
+    "note": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+    "sourceId": "src-ruwiki-morfologiya-148939075",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-abbreviation"
+  },
+  {
+    "id": "ex-u30-abbreviation-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "ЭВМ",
+    "note": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+    "sourceId": "src-ruwiki-morfologiya-148939075",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-abbreviation"
+  },
+  {
+    "id": "ex-u30-abbreviation-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "ГАИ",
+    "note": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+    "sourceId": "src-ruwiki-morfologiya-148939075",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-abbreviation"
+  },
+  {
+    "id": "ex-u30-abbreviation-3",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "гороно",
+    "note": "буквенные аббревиатуры и звуковые аббревиатуры на гласную",
+    "sourceId": "src-ruwiki-morfologiya-148939075",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-abbreviation"
+  },
+  {
+    "id": "ex-u30-abbreviation-4",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "в МИД",
+    "note": "звуковые аббревиатуры на согласную",
+    "sourceId": "src-ruwiki-morfologiya-148939075",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-abbreviation"
+  },
+  {
+    "id": "ex-u30-abbreviation-5",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "в МИДе",
+    "note": "звуковые аббревиатуры на согласную",
+    "sourceId": "src-ruwiki-morfologiya-148939075",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-abbreviation"
+  },
+  {
+    "id": "ex-u30-particle-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Пусть он читает",
+    "note": "Повелительное наклонение",
+    "sourceId": "src-ruwiki-morfologiya-148939075",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-particle"
+  },
+  {
+    "id": "ex-u30-particle-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Да будет мир!",
+    "note": "Повелительное наклонение",
+    "sourceId": "src-ruwiki-morfologiya-148939075",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-particle"
+  },
+  {
+    "id": "ex-u30-particle-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "читал бы",
+    "note": "предположительность или возможность",
+    "sourceId": "src-ruwiki-morfologiya-148939075",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-particle"
+  },
+  {
+    "id": "ex-u30-particle-3",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "читали бы",
+    "note": "предположительность или возможность",
+    "sourceId": "src-ruwiki-morfologiya-148939075",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-particle"
+  },
+  {
+    "id": "ex-u30-capstone-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "нёс де́вочку",
+    "note": "двухле́тняя де́вочка",
+    "sourceId": "src-readyrussian-reading5",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-capstone"
+  },
+  {
+    "id": "ex-u30-capstone-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "несла́ большу́ю ку́клу",
+    "note": "все расхохота́лись",
+    "sourceId": "src-readyrussian-reading5",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-capstone"
+  },
+  {
+    "id": "ex-u7-manner-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "быстрый",
+    "note": "admitted fast manner-adverb relationship",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u7-adverb-paradigm"
+  },
+  {
+    "id": "ex-u7-manner-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Она говорит быстро.",
+    "note": "manner adverb modifying the action",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u7-adverb-paradigm"
+  },
+  {
+    "id": "ex-u23-completion-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Анна читала статью два часа.",
+    "note": "time spent reading without asserting completion",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u23-completion"
+  },
+  {
+    "id": "ex-u23-completion-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Анна прочитала статью за два часа.",
+    "note": "the article was finished within two hours",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u23-completion"
+  },
+  {
+    "id": "ex-u25-name-form-0",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Машенька",
+    "note": "documented derivative of the short form",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-documented-name-form"
+  },
+  {
+    "id": "ex-u25-name-form-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Сашка",
+    "note": "documented dismissive coloring",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u25-documented-name-form"
+  },
+  {
+    "id": "ex-u26-postal-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Анна Петрова / ул. Садовая, д. 12, кв. 4 / г. Казань / Республика Татарстан / Россия / 420000",
+    "note": "recipient, then premises, then locality, then the applicable region, then the country, then the postcode",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-postal-address"
+  },
+  {
+    "id": "ex-u26-postal-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "а/я 15",
+    "note": "a post-office box is not required on a street address",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u26-postal-address"
+  },
+  {
+    "id": "ex-u27-stress-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "прочи́танный",
+    "note": "past passive stress placement",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-stress"
+  },
+  {
+    "id": "ex-u27-stress-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "напи́санный",
+    "note": "admitted stress placement",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-stress"
+  },
+  {
+    "id": "ex-u27-comp-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Письмо, написанное Анной, лежит на столе.",
+    "note": "the letter Anna wrote is on the table",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-comprehension"
+  },
+  {
+    "id": "ex-u27-comp-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Анна убрала прочитанное письмо.",
+    "note": "Anna put away the letter that had been read.",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u27-comprehension"
+  },
+  {
+    "id": "ex-u29-register-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Закончив письмо, Анна пошла на почту.",
+    "note": "the adverbial opening is the bookish option in this pair",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-register"
+  },
+  {
+    "id": "ex-u29-register-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Анна закончила письмо и пошла на почту.",
+    "note": "the finite coordination is the ordinary option in this pair",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-register"
+  },
+  {
+    "id": "ex-u29-reading-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Закончив письмо, Анна пошла на почту и отправила его.",
+    "note": "she went to the post office after finishing",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-reading"
+  },
+  {
+    "id": "ex-u29-reading-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "отправила его",
+    "note": "she sent the letter from the post office",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-reading"
+  },
+  {
+    "id": "ex-u30-dictionary-1",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Headword стол\nPart of speech noun\nForms стол, стола, столу, столом, столе\nSense a piece of furniture with a flat top\nExample Книга лежит на столе.",
+    "note": "a piece of furniture with a flat top",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-dictionary"
+  },
+  {
+    "id": "ex-u30-dictionary-2",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Headword стоять\nPart of speech verb\nForms стоять, стою, стоит, стоял\nSense remaining upright on a base\nExample Ваза стоит на столе.",
+    "note": "remaining upright on a base",
+    "sourceId": "src-original-research-synthesis",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-dictionary"
+  },
+  {
+    "id": "ex-u1-name-a",
+    "kind": "LEXICAL",
+    "letterId": "letter-0410",
+    "display": "А",
+    "note": "The printed letter А is named а.",
+    "sourceId": "src-unicode-cyrillic",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u1-letter-names"
+  },
+  {
+    "id": "ex-u1-name-be",
+    "kind": "LEXICAL",
+    "letterId": "letter-0411",
+    "display": "Б",
+    "note": "The printed letter Б is named бэ.",
+    "sourceId": "src-unicode-cyrillic",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u1-letter-names"
+  },
+  {
+    "id": "ex-u29-adjective-context-f",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "нова́",
+    "note": "new",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-short-adjective"
+  },
+  {
+    "id": "ex-u29-adjective-context-n",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "но́во",
+    "note": "new",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-short-adjective"
+  },
+  {
+    "id": "ex-u29-adjective-context-pl",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "новы́",
+    "note": "new",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-short-adjective"
+  },
+  {
+    "id": "ex-u29-adjective-context-train",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Поезд старый",
+    "note": "The train is old",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-short-adjective"
+  },
+  {
+    "id": "ex-u29-adjective-context-pencil",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "новый карандаш",
+    "note": "new pencil",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-short-adjective"
+  },
+  {
+    "id": "ex-u29-adjective-context-student",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Студент новый",
+    "note": "The student is new",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-short-adjective"
+  },
+  {
+    "id": "ex-u29-adjective-context-letter",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "новое письмо",
+    "note": "new letter",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-short-adjective"
+  },
+  {
+    "id": "ex-u29-adjective-context-book",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "новая книга",
+    "note": "new book",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-short-adjective"
+  },
+  {
+    "id": "ex-u29-adjective-context-books",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "новые книги",
+    "note": "new books",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-short-adjective"
+  },
+  {
+    "id": "ex-u30-native-name-a",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "А",
+    "note": "а",
+    "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-letter-names"
+  },
+  {
+    "id": "ex-u30-native-name-b",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Б",
+    "note": "бэ",
+    "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-letter-names"
+  },
+  {
+    "id": "ex-u30-native-name-v",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "В",
+    "note": "вэ",
+    "sourceId": "src-wikipedia-russian-alphabet-1371795481",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u30-letter-names"
+  },
+  {
+    "id": "ex-u20-direction-library",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Мы идём в библиотеку.",
+    "note": "We are headed to the library.",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u20-motion"
+  },
+  {
+    "id": "ex-u20-direction-ability",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Ребёнок ходит шесть месяцев.",
+    "note": "The child has been walking for six months.",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u20-motion"
+  },
+  {
+    "id": "ex-u20-direction-birds",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Птицы летят на юг.",
+    "note": "The birds are flying south.",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u20-motion"
+  },
+  {
+    "id": "ex-u20-direction-city",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Мы ходили по городу весь день.",
+    "note": "We walked around the city all day.",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u20-motion"
+  },
+  {
+    "id": "ex-u20-direction-weekly",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Она ходит в супермаркет каждую неделю.",
+    "note": "She goes to the supermarket every week.",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u20-motion"
+  },
+  {
+    "id": "ex-u20-direction-round",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "В прошлом году я ездил в Россию.",
+    "note": "I went to Russia (and returned) last year.",
+    "sourceId": "src-wikipedia-russian-grammar-1369617627",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u20-motion"
+  },
+  {
+    "id": "ex-u29-punctuation-context-after",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Туча, нависшая над высокими вершинами тополей, уже сыпала дождиком",
+    "note": "The participial phrase follows the cloud noun, and the main predicate continues after it; both boundaries are marked.",
+    "sourceId": "src-ruwiki-obosoblenie-144053197",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-punctuation"
+  },
+  {
+    "id": "ex-u29-punctuation-context-pronoun",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне, он прошёл обучение в мастерской Леонардо.",
+    "note": "The opening participial phrase describes the personal pronoun он. Its separating comma is before that pronoun/main clause; the earlier comma separates names within the modifier.",
+    "sourceId": "src-ruwiki-boltraffio-149826784",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-punctuation"
+  },
+  {
+    "id": "ex-u29-punctuation-context-cause",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Изумлённый этим хохотом, Павел сел на пол и смотрел куда-то в угол",
+    "note": "The retained row explicitly assigns a causal shade to this opening modifier describing Pavel. It is separated from the main clause despite preceding the described noun.",
+    "sourceId": "src-ruwiki-obosoblenie-144053197",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-punctuation"
+  },
+  {
+    "id": "ex-u29-punctuation-context-terminal",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Вдали виднеется маяк, стоящий у моря",
+    "note": "The following participial phrase describes the lighthouse and ends the supplied construction; its preceding boundary takes a comma, with no closing separating comma at sentence end.",
+    "sourceId": "src-ruwiki-obosoblenie-144053197",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u29-punctuation"
+  },
+  {
+    "id": "ex-u17-question-apple",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Которое яблоко моё?",
+    "note": "Which apple is mine?",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u17-clock"
+  },
+  {
+    "id": "ex-u17-question-book",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Которую книгу вы хотите?",
+    "note": "Which book do you want?",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u17-clock"
+  },
+  {
+    "id": "ex-u6-animacy-transfer-chair",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Я де́лал стул.",
+    "note": "The chair is the masculine inanimate direct object; its accusative form matches nominative.",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u6-animacy"
+  },
+  {
+    "id": "ex-u4-nom-student",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "Студент новый",
+    "note": "The student is new",
+    "sourceId": "src-wikibooks-russian-cc-by-sa",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u4-nominative"
+  },
+  {
+    "id": "ex-u3-друг",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "друг",
+    "note": "friend",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u3-gender"
+  },
+  {
+    "id": "ex-u3-дверь",
+    "kind": "LEXICAL",
+    "letterId": "",
+    "display": "дверь",
+    "note": "door",
+    "sourceId": "src-openrussian-50e210c4",
+    "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+    "objectiveId": "obj-u3-gender"
+  }
+]

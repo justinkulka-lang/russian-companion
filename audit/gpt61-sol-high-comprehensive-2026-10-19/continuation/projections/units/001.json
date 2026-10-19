@@ -1,0 +1,1791 @@
+[
+  {
+    "number": 1,
+    "id": "unit-1",
+    "title": "Learning to read Russian",
+    "shortLabel": "Printed letters",
+    "topicSummary": "Content-complete development unit for printed letters: identities, print pairs, look-alikes, signs, and letter-level decoding. Qualified review and the owned-edition mapping are still pending.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 1,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 1 mapping from the publisher's public table of contents. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
+    "prerequisiteUnitNumbers": [],
+    "estimatedMinutes": 152,
+    "objectives": [
+      {
+        "id": "obj-u1-letter-identity",
+        "unitNumber": 1,
+        "title": "Identify staged printed letters",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-vowels",
+          "u1-st-cons",
+          "u1-st-system"
+        ],
+        "exampleIds": [
+          "ex-letter-0410",
+          "ex-letter-0411",
+          "ex-letter-0413",
+          "ex-letter-0414",
+          "ex-letter-0416",
+          "ex-letter-0417",
+          "ex-letter-0418",
+          "ex-letter-041a",
+          "ex-letter-041b",
+          "ex-letter-041c",
+          "ex-letter-041e",
+          "ex-letter-041f",
+          "ex-letter-0422",
+          "ex-letter-0424",
+          "ex-letter-0426",
+          "ex-letter-0427",
+          "ex-letter-0428",
+          "ex-letter-0429",
+          "ex-letter-042b",
+          "ex-letter-042d"
+        ],
+        "practiceStepIds": [
+          "u1-st-vowels-check",
+          "u1-st-cons-check"
+        ],
+        "checkItemIds": [
+          "u1-i-а-identity",
+          "u1-i-м-identity"
+        ],
+        "remediationStepIds": [
+          "u1-st-vowels",
+          "u1-st-cons"
+        ]
+      },
+      {
+        "id": "obj-u1-confusable",
+        "unitNumber": 1,
+        "title": "Separate Cyrillic letters from Latin look-alikes",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-confusable"
+        ],
+        "exampleIds": [
+          "ex-letter-0412",
+          "ex-letter-041d",
+          "ex-letter-0420",
+          "ex-letter-0421",
+          "ex-letter-0423",
+          "ex-letter-0425"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-confusable",
+          "u1-st-confusable-r",
+          "u1-st-confusable-n",
+          "u1-st-confusable-s",
+          "u1-st-confusable-rest"
+        ],
+        "checkItemIds": [
+          "u1-i-р-not-p",
+          "u1-i-н-not-h",
+          "u1-i-с-not-c",
+          "u1-i-в-not-b",
+          "u1-i-у-not-y",
+          "u1-i-х-not-x"
+        ],
+        "remediationStepIds": [
+          "u1-st-confusable"
+        ]
+      },
+      {
+        "id": "obj-u1-iotated",
+        "unitNumber": 1,
+        "title": "Recognize Е Ё Ю Я as a group",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-iotated"
+        ],
+        "exampleIds": [
+          "ex-letter-0415",
+          "ex-letter-0401",
+          "ex-letter-042e",
+          "ex-letter-042f"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-iotated",
+          "u1-st-iotated-check"
+        ],
+        "checkItemIds": [
+          "u1-i-е-identity",
+          "u1-i-ё-identity",
+          "u1-i-ю-identity",
+          "u1-i-я-identity"
+        ],
+        "remediationStepIds": [
+          "u1-st-iotated"
+        ]
+      },
+      {
+        "id": "obj-u1-signs",
+        "unitNumber": 1,
+        "title": "Treat Ь Ъ Й as non-ordinary-vowel letters",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-signs"
+        ],
+        "exampleIds": [
+          "ex-letter-0419",
+          "ex-letter-042a",
+          "ex-letter-042c"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-signs",
+          "u1-st-signs-check",
+          "u1-st-hard-check",
+          "u1-st-short-i-check"
+        ],
+        "checkItemIds": [
+          "u1-i-ь-not-vowel",
+          "u1-i-ъ-not-vowel",
+          "u1-i-й-not-vowel"
+        ],
+        "remediationStepIds": [
+          "u1-st-signs"
+        ]
+      },
+      {
+        "id": "obj-u1-print-forms",
+        "unitNumber": 1,
+        "title": "Match uppercase and lowercase print pairs",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-print"
+        ],
+        "exampleIds": [
+          "ex-print-letter-0410",
+          "ex-print-letter-041c"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-print",
+          "u1-st-print-check"
+        ],
+        "checkItemIds": [
+          "u1-i-print-pair"
+        ],
+        "remediationStepIds": [
+          "u1-st-print"
+        ]
+      },
+      {
+        "id": "obj-u1-decoding",
+        "unitNumber": 1,
+        "title": "Decode a printed letter pair",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-decoding"
+        ],
+        "exampleIds": [
+          "ex-print-letter-0410",
+          "ex-print-letter-041c"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-decoding",
+          "u1-st-decoding-check"
+        ],
+        "checkItemIds": [
+          "u1-i-decode-pair"
+        ],
+        "remediationStepIds": [
+          "u1-st-decoding"
+        ]
+      },
+      {
+        "id": "obj-u1-pronunciation",
+        "unitNumber": 1,
+        "title": "Confirm letter sounds in the book",
+        "kind": "GUIDANCE",
+        "instructionStepIds": [
+          "u1-st-pronunciation"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      },
+      {
+        "id": "obj-u1-stress",
+        "unitNumber": 1,
+        "title": "Treat stress as book-marked, not guessed",
+        "kind": "GUIDANCE",
+        "instructionStepIds": [
+          "u1-st-stress"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      },
+      {
+        "id": "obj-u1-book",
+        "unitNumber": 1,
+        "title": "Complete Lesson 1 work in the owned book",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u1-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      },
+      {
+        "id": "obj-u1-letter-names",
+        "unitNumber": 1,
+        "title": "Name the printed letter",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u1-st-teach-letter-names"
+        ],
+        "exampleIds": [
+          "ex-u1-name-a",
+          "ex-u1-name-be"
+        ],
+        "practiceStepIds": [
+          "u1-st-guided-letter-names"
+        ],
+        "checkItemIds": [
+          "u1-i-name-be"
+        ],
+        "remediationStepIds": [
+          "u1-st-rem-letter-names"
+        ],
+        "gating": true
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u1-s-orient",
+        "title": "What this unit is for",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u1-letter-identity"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-orient",
+            "kind": "ORIENT",
+            "title": "Unit 1 — Printed letters",
+            "body": "This is a proposed Lesson 1 mapping, not an approved owned-edition alignment. The development unit teaches printed letter identities with public-domain letter forms. Example words and model audio are not part of this unit. Qualified review is still pending.",
+            "bookDirection": "Open your copy to Lesson 1. Use the book for the author's explanations, exercises, and any example words."
+          },
+          {
+            "id": "u1-st-why",
+            "kind": "TEACH",
+            "title": "Identify letters first",
+            "body": "Work letter shapes, print pairs, and Latin look-alikes before later reading. Transliteration, if you use it, is a temporary support.",
+            "referenceIds": [
+              "ref-transliteration"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u1-s-writing-system",
+        "title": "The writing system",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u1-letter-identity"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-system",
+            "kind": "TEACH",
+            "title": "Cyrillic is a different alphabet",
+            "body": "Russian is written with 33 Cyrillic letters. Some printed shapes look like Latin letters and are not the same letters. Learn identity first.",
+            "referenceIds": [
+              "ref-cyrillic-print"
+            ],
+            "exampleIds": [
+              "ex-letter-0410",
+              "ex-letter-041c"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "u1-s-vowels",
+        "title": "Plain vowel letters",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u1-letter-identity"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-vowels",
+            "kind": "TEACH",
+            "title": "First vowel set",
+            "body": "Work these printed pairs: А а, О о, У у, Э э, Ы ы, И и. English sound notes are pending qualified review.",
+            "referenceIds": [
+              "ref-cyrillic-print"
+            ],
+            "exampleIds": [
+              "ex-letter-0410",
+              "ex-letter-041e",
+              "ex-letter-0418"
+            ]
+          },
+          {
+            "id": "u1-st-vowels-check",
+            "kind": "GUIDED",
+            "title": "Identify А",
+            "body": "Choose the Cyrillic identity for the printed letter.",
+            "itemIds": [
+              "u1-i-а-identity"
+            ],
+            "exampleIds": [
+              "ex-letter-0410"
+            ],
+            "remediationStepId": "u1-st-vowels"
+          }
+        ]
+      },
+      {
+        "id": "u1-s-early-consonants",
+        "title": "Early consonant letters",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u1-letter-identity"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-cons",
+            "kind": "TEACH",
+            "title": "Low-confusion consonants",
+            "body": "Next printed pairs: М м, Т т, К к, П п, Б б, Д д, Г г. Confirm each spoken sound in your book. This unit does not play model audio.",
+            "referenceIds": [
+              "ref-cyrillic-print"
+            ],
+            "exampleIds": [
+              "ex-letter-041c",
+              "ex-letter-0422",
+              "ex-letter-0411"
+            ]
+          },
+          {
+            "id": "u1-st-cons-check",
+            "kind": "GUIDED",
+            "title": "Identify М",
+            "body": "Choose the Cyrillic identity for the printed letter.",
+            "itemIds": [
+              "u1-i-м-identity"
+            ],
+            "exampleIds": [
+              "ex-letter-041c"
+            ],
+            "remediationStepId": "u1-st-cons"
+          }
+        ]
+      },
+      {
+        "id": "u1-s-confusable",
+        "title": "Letters that look like Latin",
+        "estimatedMinutes": 15,
+        "objectiveIds": [
+          "obj-u1-confusable"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-confusable",
+            "kind": "TEACH",
+            "title": "Shape traps",
+            "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-confusable"
+            ],
+            "exampleIds": [
+              "ex-letter-0420",
+              "ex-letter-041d",
+              "ex-letter-0421"
+            ]
+          },
+          {
+            "id": "u1-st-guided-confusable",
+            "kind": "GUIDED",
+            "title": "Guided contrast",
+            "body": "These printed letters often fool Latin-alphabet readers: В, Н, Р, С, У, Х. Name the Cyrillic identity. Choose once with the explanation still in view. This is practice, not the independent check.",
+            "dominantAction": "Check",
+            "itemIds": [
+              "u1-g-guided-confusable"
+            ],
+            "exampleIds": [
+              "ex-letter-0420",
+              "ex-letter-041d",
+              "ex-letter-0421"
+            ],
+            "remediationStepId": "u1-st-confusable"
+          },
+          {
+            "id": "u1-st-confusable-r",
+            "kind": "CHECK",
+            "title": "Р is not P",
+            "body": "Identity check.",
+            "itemIds": [
+              "u1-i-р-not-p"
+            ],
+            "exampleIds": [
+              "ex-letter-0420"
+            ],
+            "remediationStepId": "u1-st-confusable"
+          },
+          {
+            "id": "u1-st-confusable-n",
+            "kind": "CHECK",
+            "title": "Н is not H",
+            "body": "Identity check.",
+            "itemIds": [
+              "u1-i-н-not-h"
+            ],
+            "exampleIds": [
+              "ex-letter-041d"
+            ],
+            "remediationStepId": "u1-st-confusable"
+          },
+          {
+            "id": "u1-st-confusable-s",
+            "kind": "CHECK",
+            "title": "С is not C",
+            "body": "Identity check.",
+            "itemIds": [
+              "u1-i-с-not-c"
+            ],
+            "exampleIds": [
+              "ex-letter-0421"
+            ],
+            "remediationStepId": "u1-st-confusable"
+          },
+          {
+            "id": "u1-st-confusable-rest",
+            "kind": "CHECK",
+            "title": "В, У, and Х",
+            "body": "Identity check for the remaining look-alikes.",
+            "itemIds": [
+              "u1-i-в-not-b",
+              "u1-i-у-not-y",
+              "u1-i-х-not-x"
+            ],
+            "exampleIds": [
+              "ex-letter-0412",
+              "ex-letter-0423",
+              "ex-letter-0425"
+            ],
+            "remediationStepId": "u1-st-confusable"
+          }
+        ]
+      },
+      {
+        "id": "u1-s-iotated",
+        "title": "Iotated vowel letters",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u1-iotated"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-iotated",
+            "kind": "TEACH",
+            "title": "Е Ё Ю Я",
+            "body": "Recognize these printed forms as a group. Exact phonetics belong in your book. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-iotated"
+            ],
+            "exampleIds": [
+              "ex-letter-0415",
+              "ex-letter-042f"
+            ]
+          },
+          {
+            "id": "u1-st-guided-iotated",
+            "kind": "GUIDED",
+            "title": "Guided contrast",
+            "body": "Recognize these printed forms as a group. Exact phonetics belong in your book. Choose once with the explanation still in view. This is practice, not the independent check.",
+            "dominantAction": "Check",
+            "itemIds": [
+              "u1-g-guided-iotated"
+            ],
+            "exampleIds": [
+              "ex-letter-0415",
+              "ex-letter-042f"
+            ],
+            "remediationStepId": "u1-st-iotated"
+          },
+          {
+            "id": "u1-st-iotated-check",
+            "kind": "CHECK",
+            "title": "Identify Е, Ё, Ю, and Я",
+            "body": "Identity check.",
+            "itemIds": [
+              "u1-i-е-identity",
+              "u1-i-ё-identity",
+              "u1-i-ю-identity",
+              "u1-i-я-identity"
+            ],
+            "exampleIds": [
+              "ex-letter-0415",
+              "ex-letter-0401",
+              "ex-letter-042e",
+              "ex-letter-042f"
+            ],
+            "remediationStepId": "u1-st-iotated"
+          }
+        ]
+      },
+      {
+        "id": "u1-s-signs",
+        "title": "Soft sign, hard sign, and Й",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u1-signs"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-signs",
+            "kind": "TEACH",
+            "title": "Marks that are not ordinary vowels",
+            "body": "Ь, Ъ, and Й need special attention. Do not invent a spoken vowel for the signs. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-signs"
+            ],
+            "exampleIds": [
+              "ex-letter-042c",
+              "ex-letter-042a",
+              "ex-letter-0419"
+            ]
+          },
+          {
+            "id": "u1-st-guided-signs",
+            "kind": "GUIDED",
+            "title": "Guided contrast",
+            "body": "Ь, Ъ, and Й need special attention. Do not invent a spoken vowel for the signs. Choose once with the explanation still in view. This is practice, not the independent check.",
+            "dominantAction": "Check",
+            "itemIds": [
+              "u1-g-guided-signs"
+            ],
+            "exampleIds": [
+              "ex-letter-042c",
+              "ex-letter-042a",
+              "ex-letter-0419"
+            ],
+            "remediationStepId": "u1-st-signs"
+          },
+          {
+            "id": "u1-st-signs-check",
+            "kind": "CHECK",
+            "title": "Soft sign",
+            "body": "Identity check.",
+            "itemIds": [
+              "u1-i-ь-not-vowel"
+            ],
+            "exampleIds": [
+              "ex-letter-042c"
+            ],
+            "remediationStepId": "u1-st-signs"
+          },
+          {
+            "id": "u1-st-hard-check",
+            "kind": "CHECK",
+            "title": "Hard sign",
+            "body": "Identity check.",
+            "itemIds": [
+              "u1-i-ъ-not-vowel"
+            ],
+            "exampleIds": [
+              "ex-letter-042a"
+            ],
+            "remediationStepId": "u1-st-signs"
+          },
+          {
+            "id": "u1-st-short-i-check",
+            "kind": "CHECK",
+            "title": "Й is not a vowel",
+            "body": "Identity check.",
+            "itemIds": [
+              "u1-i-й-not-vowel"
+            ],
+            "exampleIds": [
+              "ex-letter-0419"
+            ],
+            "remediationStepId": "u1-st-signs"
+          }
+        ]
+      },
+      {
+        "id": "u1-s-print",
+        "title": "Print forms",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u1-print-forms"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-print",
+            "kind": "TEACH",
+            "title": "Uppercase and lowercase together",
+            "body": "Every letter has a print pair. Match them on the letter board. Handwritten forms wait for verified assets.",
+            "referenceIds": [
+              "ref-cyrillic-print"
+            ],
+            "exampleIds": [
+              "ex-print-letter-0410"
+            ]
+          },
+          {
+            "id": "u1-st-guided-print",
+            "kind": "GUIDED",
+            "title": "Guided contrast",
+            "body": "Every letter has a print pair. Match them on the letter board. Handwritten forms wait for verified assets. Choose once with the explanation still in view. This is practice, not the independent check.",
+            "dominantAction": "Check",
+            "itemIds": [
+              "u1-g-guided-print"
+            ],
+            "exampleIds": [
+              "ex-print-letter-0410"
+            ],
+            "remediationStepId": "u1-st-print"
+          },
+          {
+            "id": "u1-st-print-check",
+            "kind": "CHECK",
+            "title": "Match a print pair",
+            "body": "Identity check.",
+            "itemIds": [
+              "u1-i-print-pair"
+            ],
+            "exampleIds": [
+              "ex-print-letter-0410"
+            ],
+            "remediationStepId": "u1-st-print"
+          }
+        ]
+      },
+      {
+        "id": "u1-s-decoding",
+        "title": "Staged decoding",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u1-decoding"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-decoding",
+            "kind": "TEACH",
+            "title": "Decode print pairs",
+            "body": "Name the letter, then match its uppercase and lowercase print forms. This unit does not introduce words.",
+            "referenceIds": [
+              "ref-decoding"
+            ],
+            "exampleIds": [
+              "ex-print-letter-0410",
+              "ex-print-letter-041c"
+            ],
+            "bookDirection": "Use the elementary reading work in your Lesson 1 pages for anything beyond a single letter."
+          },
+          {
+            "id": "u1-st-guided-decoding",
+            "kind": "GUIDED",
+            "title": "Guided contrast",
+            "body": "Name the letter, then match its uppercase and lowercase print forms. This unit does not introduce words. Choose once with the explanation still in view. This is practice, not the independent check.",
+            "dominantAction": "Check",
+            "itemIds": [
+              "u1-g-guided-decoding"
+            ],
+            "exampleIds": [
+              "ex-print-letter-0410",
+              "ex-print-letter-041c"
+            ],
+            "bookDirection": "Use the elementary reading work in your Lesson 1 pages for anything beyond a single letter.",
+            "remediationStepId": "u1-st-decoding"
+          },
+          {
+            "id": "u1-st-decoding-check",
+            "kind": "CHECK",
+            "title": "One letter, two cases",
+            "body": "Choose the line that is a single letter.",
+            "itemIds": [
+              "u1-i-decode-pair"
+            ],
+            "exampleIds": [
+              "ex-print-letter-0410"
+            ],
+            "remediationStepId": "u1-st-decoding"
+          }
+        ]
+      },
+      {
+        "id": "u1-s-pronunciation",
+        "title": "Pronunciation support",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u1-pronunciation"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-pronunciation",
+            "kind": "TEACH",
+            "title": "Confirm sounds in your book",
+            "body": "This unit does not play model audio. Use the pronunciation notes in your book for each new letter. A recording you make is stored and is not scored.",
+            "referenceIds": [
+              "ref-pronunciation"
+            ],
+            "bookDirection": "Read the Lesson 1 pronunciation notes in the edition you own."
+          }
+        ]
+      },
+      {
+        "id": "u1-s-stress",
+        "title": "Stress awareness",
+        "estimatedMinutes": 6,
+        "objectiveIds": [
+          "obj-u1-stress"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-stress",
+            "kind": "TEACH",
+            "title": "Stress is part of reading",
+            "body": "Russian word stress is not predictable from spelling alone. Marked example words are not installed.",
+            "referenceIds": [
+              "ref-stress"
+            ],
+            "bookDirection": "When your Lesson 1 pages mark stress, copy that mark into your binder."
+          }
+        ]
+      },
+      {
+        "id": "u1-s-book",
+        "title": "Work in your book",
+        "estimatedMinutes": 25,
+        "objectiveIds": [
+          "obj-u1-book"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-book",
+            "kind": "BOOK",
+            "title": "Lesson 1 in your copy",
+            "body": "Complete the Lesson 1 reading and pronunciation work in the edition you own.",
+            "bookDirection": "Owned-book assignment for Lesson 1: printed pages 1-11. PDF indexes 13-23 are file locators, not printed pages. Observed section locators: §1.1 p1 (PDF 13); §1.2 p1 (PDF 13); §1.3 p7 (PDF 19); §1.4 p8 (PDF 20); §1.5 p10 (PDF 22). Observed exercise locators: 1/1 p8/PDF20; 1/2 p8/PDF20; 1/3 p9/PDF21. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.",
+            "companionDirection": "Afterward, mark book work complete as a self-attestation. That is not demonstrated in-app ability."
+          }
+        ]
+      },
+      {
+        "id": "u1-s-companions",
+        "title": "AnkiDroid, binder, and tutor",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u1-book"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-anki",
+            "kind": "ANKI",
+            "title": "AnkiDroid if you use it",
+            "body": "If you selected AnkiDroid, make cards only from material you are allowed to use.",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported."
+          },
+          {
+            "id": "u1-st-binder",
+            "kind": "BINDER",
+            "title": "One useful binder note",
+            "body": "Write one confusable letter pair that tricked you and the identity you will trust next time.",
+            "companionDirection": "A binder prompt is a specific note, not 'take notes.'"
+          },
+          {
+            "id": "u1-st-tutor",
+            "kind": "TUTOR",
+            "title": "Optional tutor",
+            "body": "Tutor work is optional for default advancement."
+          }
+        ]
+      },
+      {
+        "id": "u1-s-check",
+        "title": "Cumulative letter check",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u1-letter-identity",
+          "obj-u1-confusable",
+          "obj-u1-print-forms"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-cumul",
+            "kind": "CHECK",
+            "title": "Letter identities",
+            "body": "Revisit any missed letter, then open the explanation it names.",
+            "itemIds": [
+              "u1-i-а-identity",
+              "u1-i-р-not-p",
+              "u1-i-е-identity",
+              "u1-i-ь-not-vowel",
+              "u1-i-print-pair",
+              "u1-i-decode-pair"
+            ],
+            "remediationStepId": "u1-st-confusable"
+          }
+        ]
+      },
+      {
+        "id": "u1-s-letter-names",
+        "title": "Letter names",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u1-letter-names",
+          "obj-u1-pronunciation"
+        ],
+        "steps": [
+          {
+            "id": "u1-st-teach-letter-names",
+            "kind": "TEACH",
+            "title": "Printed letter names",
+            "body": "Unit 1 letter names, review-pending: А is named а; Б is named бэ; В is named вэ; Г is named гэ; Д is named дэ; Е is named е; Ё is named ё; Ж is named жэ; З is named зэ; И is named и; Й is named и краткое; К is named ка; Л is named эль; М is named эм; Н is named эн; О is named о; П is named пэ; Р is named эр; С is named эс; Т is named тэ; У is named у; Ф is named эф; Х is named ха; Ц is named цэ; Ч is named че; Ш is named ша; Щ is named ща; Ъ is named твёрдый знак; Ы is named ы; Ь is named мягкий знак; Э is named э; Ю is named ю; Я is named я.",
+            "referenceIds": [
+              "ref-ca-letter-names"
+            ],
+            "exampleIds": [
+              "ex-u1-name-a",
+              "ex-u1-name-be"
+            ],
+            "bookDirection": "Use your Lesson 1 pages for the author's pronunciation notes. This list is the app's name inventory."
+          },
+          {
+            "id": "u1-st-guided-letter-names",
+            "kind": "GUIDED",
+            "title": "Guided letter name",
+            "body": "The printed letter А is named а. Choose that name before the independent check.",
+            "dominantAction": "Check",
+            "referenceIds": [
+              "ref-ca-letter-names"
+            ],
+            "itemIds": [
+              "u1-g-name-a"
+            ],
+            "exampleIds": [
+              "ex-u1-name-a"
+            ],
+            "remediationStepId": "u1-st-rem-letter-names"
+          },
+          {
+            "id": "u1-st-rem-letter-names",
+            "kind": "REMEDIATE",
+            "title": "Letter-name remediation",
+            "body": "Return to the printed name. А is named а. Б is named бэ. Do not use the Latin letter name.",
+            "dominantAction": "Return",
+            "referenceIds": [
+              "ref-ca-letter-names"
+            ]
+          },
+          {
+            "id": "u1-st-check-letter-names",
+            "kind": "CHECK",
+            "title": "Letter-name check",
+            "body": "Name the printed letter without looking back at the list.",
+            "dominantAction": "Check",
+            "itemIds": [
+              "u1-i-name-be"
+            ],
+            "remediationStepId": "u1-st-rem-letter-names"
+          },
+          {
+            "id": "u1-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 1 AnkiDroid direction",
+            "body": "Unit 1 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u1-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 1 binder prompt",
+            "body": "Unit 1 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u1-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 1 optional tutor",
+            "body": "Unit 1 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u1-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 1 cumulative review",
+            "body": "Unit 1 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "bookDirection": "Owned-book assignment for Lesson 1: printed pages 1-11. PDF indexes 13-23 are file locators, not printed pages. Observed section locators: §1.1 p1 (PDF 13); §1.2 p1 (PDF 13); §1.3 p7 (PDF 19); §1.4 p8 (PDF 20); §1.5 p10 (PDF 22). Observed exercise locators: 1/1 p8/PDF20; 1/2 p8/PDF20; 1/3 p9/PDF21. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.",
+            "companionDirection": "Unit 1 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 2,
+      "requireDueReview": false,
+      "tutorOptional": true
+    }
+  },
+  {
+    "number": 2,
+    "id": "unit-2",
+    "title": "Handwriting and additional pronunciation",
+    "shortLabel": "Letter review",
+    "topicSummary": "Content-complete development unit after Unit 1: printed-letter review, then book-directed handwriting and additional pronunciation. Verified handwriting images and mapped pronunciation audio are not in this app. Qualified review and the owned-edition mapping are still pending.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 2,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 2 mapping from the publisher's public table of contents: handwriting recognition and additional pronunciation. Owned-edition comparison is not signed, so this unit is not labeled aligned.",
+    "prerequisiteUnitNumbers": [
+      1
+    ],
+    "estimatedMinutes": 94,
+    "objectives": [
+      {
+        "id": "obj-u2-review",
+        "unitNumber": 2,
+        "title": "Review Unit 1 printed letters",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u2-st-review"
+        ],
+        "exampleIds": [
+          "ex-print-letter-0411",
+          "ex-letter-0412",
+          "ex-letter-0423",
+          "ex-letter-0425"
+        ],
+        "practiceStepIds": [
+          "u2-st-review-guided"
+        ],
+        "checkItemIds": [
+          "u2-i-в-not-b",
+          "u2-i-у-not-y",
+          "u2-i-х-not-x",
+          "u2-i-print-б",
+          "u2-i-я-identity"
+        ],
+        "remediationStepIds": [
+          "u2-st-review"
+        ]
+      },
+      {
+        "id": "obj-u2-book",
+        "unitNumber": 2,
+        "title": "Complete Lesson 2 work in the owned book",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u2-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u2-s-orient",
+        "title": "What this unit is for",
+        "estimatedMinutes": 6,
+        "objectiveIds": [
+          "obj-u2-review"
+        ],
+        "steps": [
+          {
+            "id": "u2-st-orient",
+            "kind": "ORIENT",
+            "title": "Unit 2 — Book handwriting and letter review",
+            "body": "Proposed Lesson 2 continues handwritten forms and pronunciation in the book. This unit reviews printed letters from Unit 1. Verified handwriting images and mapped pronunciation audio are not in the app, so those parts stay in the book you own.",
+            "bookDirection": "Open Lesson 2 in your copy for handwritten forms and the author's pronunciation notes."
+          }
+        ]
+      },
+      {
+        "id": "u2-s-handwriting",
+        "title": "Handwritten forms",
+        "estimatedMinutes": 15,
+        "objectiveIds": [
+          "obj-u2-book"
+        ],
+        "steps": [
+          {
+            "id": "u2-st-hw",
+            "kind": "BOOK",
+            "title": "Handwritten forms stay in the owned book",
+            "body": "Verified handwriting images are not in this app. Use Lesson 2 in the book you own to see handwritten forms, and copy them onto paper. This app does not describe those forms and does not grade the page.",
+            "referenceIds": [
+              "ref-limits"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 2: printed pages 12-23. PDF indexes 24-35 are file locators, not printed pages. Observed section locators: §2.1 p12 (PDF 24); §2.2 p16 (PDF 28); §2.3 p17 (PDF 29); §2.4 p18 (PDF 30); §2.5 p18 (PDF 30); §2.6 p18 (PDF 30); §2.7 p19 (PDF 31); §2.8 p20 (PDF 32); §2.9 p21 (PDF 33); §2.10 p21 (PDF 33); §2.11 p21 (PDF 33); §2.12 p22 (PDF 34). Observed exercise locators: 2/1 p23/PDF35; 2/2 p23/PDF35; 2/3 p23/PDF35. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          }
+        ]
+      },
+      {
+        "id": "u2-s-review",
+        "title": "Unit 1 letter review",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u2-review"
+        ],
+        "steps": [
+          {
+            "id": "u2-st-review",
+            "kind": "TEACH",
+            "title": "Keep letter identities available",
+            "body": "Review the printed letters from Unit 1, especially Latin look-alikes and print pairs. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-cyrillic-print",
+              "ref-confusable"
+            ],
+            "exampleIds": [
+              "ex-letter-0412",
+              "ex-letter-0423",
+              "ex-letter-0425",
+              "ex-print-letter-0411"
+            ]
+          },
+          {
+            "id": "u2-st-review-guided",
+            "kind": "GUIDED",
+            "title": "Match the printed pair for Б",
+            "body": "Choose the uppercase and lowercase print pair for the same letter.",
+            "itemIds": [
+              "u2-i-print-б"
+            ],
+            "exampleIds": [
+              "ex-print-letter-0411"
+            ],
+            "remediationStepId": "u2-st-review"
+          },
+          {
+            "id": "u2-st-review-v",
+            "kind": "CHECK",
+            "title": "В is not B",
+            "body": "Identity check.",
+            "itemIds": [
+              "u2-i-в-not-b"
+            ],
+            "exampleIds": [
+              "ex-letter-0412"
+            ],
+            "remediationStepId": "u2-st-review"
+          },
+          {
+            "id": "u2-st-review-u",
+            "kind": "CHECK",
+            "title": "У is not Y",
+            "body": "Identity check.",
+            "itemIds": [
+              "u2-i-у-not-y"
+            ],
+            "exampleIds": [
+              "ex-letter-0423"
+            ],
+            "remediationStepId": "u2-st-review"
+          },
+          {
+            "id": "u2-st-review-h",
+            "kind": "CHECK",
+            "title": "Х is not X",
+            "body": "Identity check.",
+            "itemIds": [
+              "u2-i-х-not-x"
+            ],
+            "exampleIds": [
+              "ex-letter-0425"
+            ],
+            "remediationStepId": "u2-st-review"
+          }
+        ]
+      },
+      {
+        "id": "u2-s-pronunciation",
+        "title": "Additional pronunciation",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u2-book"
+        ],
+        "steps": [
+          {
+            "id": "u2-st-pron",
+            "kind": "BOOK",
+            "title": "Additional pronunciation stays in the owned book",
+            "body": "No licensed pronunciation audio is mapped to Unit 2. Use the Lesson 2 pronunciation notes in the book you own. This app does not state those sounds and does not score a recording.",
+            "referenceIds": [
+              "ref-pronunciation"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 2: printed pages 12-23. PDF indexes 24-35 are file locators, not printed pages. Observed section locators: §2.1 p12 (PDF 24); §2.2 p16 (PDF 28); §2.3 p17 (PDF 29); §2.4 p18 (PDF 30); §2.5 p18 (PDF 30); §2.6 p18 (PDF 30); §2.7 p19 (PDF 31); §2.8 p20 (PDF 32); §2.9 p21 (PDF 33); §2.10 p21 (PDF 33); §2.11 p21 (PDF 33); §2.12 p22 (PDF 34). Observed exercise locators: 2/1 p23/PDF35; 2/2 p23/PDF35; 2/3 p23/PDF35. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          }
+        ]
+      },
+      {
+        "id": "u2-s-reading",
+        "title": "Reading in the book",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u2-book"
+        ],
+        "steps": [
+          {
+            "id": "u2-st-reading",
+            "kind": "TEACH",
+            "title": "Read what the book provides",
+            "body": "Fluency practice in this unit is book-directed. Re-run letter recognition if a form is still slow.",
+            "referenceIds": [
+              "ref-decoding"
+            ],
+            "bookDirection": "Read the Lesson 2 material in your copy aloud. Mark difficult letters for review."
+          }
+        ]
+      },
+      {
+        "id": "u2-s-record",
+        "title": "Self-record",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u2-book"
+        ],
+        "steps": [
+          {
+            "id": "u2-st-record",
+            "kind": "SPEAK",
+            "title": "Optional recording without a score",
+            "body": "You may record yourself reading from your book. Play the take back. The app never transcribes or scores it."
+          }
+        ]
+      },
+      {
+        "id": "u2-s-book",
+        "title": "Work in your book",
+        "estimatedMinutes": 25,
+        "objectiveIds": [
+          "obj-u2-book"
+        ],
+        "steps": [
+          {
+            "id": "u2-st-book",
+            "kind": "BOOK",
+            "title": "Lesson 2 in your copy",
+            "body": "Complete Lesson 2 handwriting and pronunciation work in the edition you own. Self-attest when finished.",
+            "bookDirection": "Owned-book assignment for Lesson 2: printed pages 12-23. PDF indexes 24-35 are file locators, not printed pages. Observed section locators: §2.1 p12 (PDF 24); §2.2 p16 (PDF 28); §2.3 p17 (PDF 29); §2.4 p18 (PDF 30); §2.5 p18 (PDF 30); §2.6 p18 (PDF 30); §2.7 p19 (PDF 31); §2.8 p20 (PDF 32); §2.9 p21 (PDF 33); §2.10 p21 (PDF 33); §2.11 p21 (PDF 33); §2.12 p22 (PDF 34). Observed exercise locators: 2/1 p23/PDF35; 2/2 p23/PDF35; 2/3 p23/PDF35. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          }
+        ]
+      },
+      {
+        "id": "u2-s-check",
+        "title": "Unit 2 letter check",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u2-review",
+          "obj-u2-book"
+        ],
+        "steps": [
+          {
+            "id": "u2-st-check",
+            "kind": "CHECK",
+            "title": "Reviewed letter identities",
+            "body": "Closed-response items about printed letters from Unit 1.",
+            "itemIds": [
+              "u2-i-в-not-b",
+              "u2-i-print-б",
+              "u2-i-я-identity"
+            ],
+            "remediationStepId": "u2-st-review"
+          },
+          {
+            "id": "u2-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 2 AnkiDroid direction",
+            "body": "Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u2-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 2 binder prompt",
+            "body": "Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u2-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 2 optional tutor",
+            "body": "Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u2-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 2 cumulative review",
+            "body": "Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "bookDirection": "Owned-book assignment for Lesson 2: printed pages 12-23. PDF indexes 24-35 are file locators, not printed pages. Observed section locators: §2.1 p12 (PDF 24); §2.2 p16 (PDF 28); §2.3 p17 (PDF 29); §2.4 p18 (PDF 30); §2.5 p18 (PDF 30); §2.6 p18 (PDF 30); §2.7 p19 (PDF 31); §2.8 p20 (PDF 32); §2.9 p21 (PDF 33); §2.10 p21 (PDF 33); §2.11 p21 (PDF 33); §2.12 p22 (PDF 34). Observed exercise locators: 2/1 p23/PDF35; 2/2 p23/PDF35; 2/3 p23/PDF35. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check.",
+            "companionDirection": "Unit 2 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 2,
+      "requireDueReview": true,
+      "tutorOptional": true
+    }
+  },
+  {
+    "number": 3,
+    "id": "unit-3",
+    "title": "Everyday phrases, naming things, basic grammar, and gender",
+    "shortLabel": "Everyday phrases",
+    "topicSummary": "Proposed Unit 3 is a development unit awaiting qualified review. It contains admitted records for gender, everyday phrases, and naming, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 3,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 3 mapping remains pending. The structural edition facts are unchanged. This proposed curriculum is not an approved alignment.",
+    "prerequisiteUnitNumbers": [
+      2
+    ],
+    "estimatedMinutes": 54,
+    "objectives": [
+      {
+        "id": "obj-u3-gender",
+        "unitNumber": 3,
+        "title": "Recognize admitted noun genders",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u3-st-orient",
+          "u3-st-teach-gender-1",
+          "u3-st-teach-gender-2",
+          "u3-st-teach-gender-3",
+          "u3-st-teach-gender-4",
+          "u3-st-teach-gender-5"
+        ],
+        "exampleIds": [
+          "ex-u3-стол",
+          "ex-u3-дом",
+          "ex-u3-город",
+          "ex-u3-брат",
+          "ex-u3-книга",
+          "ex-u3-вода",
+          "ex-u3-школа",
+          "ex-u3-работа",
+          "ex-u3-окно",
+          "ex-u3-письмо",
+          "ex-u3-молоко",
+          "ex-u3-море",
+          "ex-u3-мужчина",
+          "ex-u3-дядя",
+          "ex-u3-друг",
+          "ex-u3-дверь"
+        ],
+        "practiceStepIds": [
+          "u3-st-guided-gender-2",
+          "u3-st-guided-gender-3",
+          "u3-st-guided-gender-4",
+          "u3-st-guided-gender-5"
+        ],
+        "checkItemIds": [
+          "u3-i-gender-город",
+          "u3-i-gender-друг",
+          "u3-i-gender-дверь",
+          "u3-i-gender-море",
+          "u3-i-gender-дядя"
+        ],
+        "remediationStepIds": [
+          "u3-st-rem-gender"
+        ]
+      },
+      {
+        "id": "obj-u3-phrases",
+        "unitNumber": 3,
+        "title": "Recognize admitted everyday phrases",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u3-st-orient",
+          "u3-st-teach-phrases-1",
+          "u3-st-teach-phrases-2",
+          "u3-st-teach-phrases-3"
+        ],
+        "exampleIds": [
+          "ex-u3-phrase-здравствуйте",
+          "ex-u3-phrase-спасибо",
+          "ex-u3-phrase-пожалуйста",
+          "ex-u3-phrase-да",
+          "ex-u3-phrase-нет",
+          "ex-u3-phrase-это",
+          "ex-u3-phrase-kak-dela",
+          "ex-u3-phrase-gde-vy"
+        ],
+        "practiceStepIds": [
+          "u3-st-guided-phrases-1"
+        ],
+        "checkItemIds": [
+          "u3-i-phrase-пожалуйста",
+          "u3-i-phrase-да",
+          "u3-i-phrase-нет",
+          "u3-i-phrase-это"
+        ],
+        "remediationStepIds": [
+          "u3-st-rem-phrases"
+        ]
+      },
+      {
+        "id": "obj-u3-naming",
+        "unitNumber": 3,
+        "title": "Recognize admitted naming items",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u3-st-orient",
+          "u3-st-teach-naming-1",
+          "u3-st-teach-naming-2"
+        ],
+        "exampleIds": [
+          "ex-u3-phrase-moy-stol",
+          "ex-u3-phrase-moya-sobaka",
+          "ex-u3-phrase-chto-eto",
+          "ex-u3-phrase-kto-eto"
+        ],
+        "practiceStepIds": [
+          "u3-st-guided-naming-1"
+        ],
+        "checkItemIds": [
+          "u3-i-name-moya-sobaka",
+          "u3-i-name-chto-eto",
+          "u3-i-name-kto-eto"
+        ],
+        "remediationStepIds": [
+          "u3-st-rem-naming"
+        ]
+      },
+      {
+        "id": "obj-u3-book",
+        "unitNumber": 3,
+        "title": "Self-attest Lesson 3 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u3-st-book-work",
+          "u3-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u3-s-orient",
+        "title": "Everyday phrases, naming, and grouping",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u3-gender",
+          "obj-u3-phrases",
+          "obj-u3-naming",
+          "obj-u3-book"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-orient",
+            "kind": "ORIENT",
+            "title": "Everyday phrases, naming, and grouping",
+            "body": "Proposed Unit 3 uses frozen dictionary rows and grammar excerpts for the groups, a small phrase set, and naming items. The owned book remains separate work. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "bookDirection": "Open Lesson 3 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u3-s-gender",
+        "title": "Recognize admitted noun genders",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u3-gender"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-teach-gender-1",
+            "kind": "TEACH",
+            "title": "Read the admitted grouping sentence",
+            "body": "The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ]
+          },
+          {
+            "id": "u3-st-teach-gender-2",
+            "kind": "TEACH",
+            "title": "Recorded masculine nouns",
+            "body": "These admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-стол",
+              "ex-u3-дом",
+              "ex-u3-город",
+              "ex-u3-брат",
+              "ex-u3-друг"
+            ]
+          },
+          {
+            "id": "u3-st-guided-gender-2",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-gender-стол",
+              "u3-i-gender-дом"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          },
+          {
+            "id": "u3-st-teach-gender-3",
+            "kind": "TEACH",
+            "title": "Recorded feminine nouns",
+            "body": "These admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-книга",
+              "ex-u3-вода",
+              "ex-u3-школа",
+              "ex-u3-работа",
+              "ex-u3-дверь"
+            ]
+          },
+          {
+            "id": "u3-st-guided-gender-3",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-gender-книга"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          },
+          {
+            "id": "u3-st-teach-gender-4",
+            "kind": "TEACH",
+            "title": "Four records in the third group",
+            "body": "These admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-окно",
+              "ex-u3-письмо",
+              "ex-u3-молоко",
+              "ex-u3-море"
+            ]
+          },
+          {
+            "id": "u3-st-guided-gender-4",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-gender-окно"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          },
+          {
+            "id": "u3-st-teach-gender-5",
+            "kind": "TEACH",
+            "title": "Two records the page still places in the first group",
+            "body": "дя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-мужчина",
+              "ex-u3-дядя"
+            ]
+          },
+          {
+            "id": "u3-st-guided-gender-5",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-gender-мужчина"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          },
+          {
+            "id": "u3-st-rem-gender",
+            "kind": "REMEDIATE",
+            "title": "Review the admitted noun genders",
+            "body": "The frozen page says: So, in Russian, nouns have an intrinsic property called 'gender', which comes in three types: masculine, feminine, and neuter. An ending is not a substitute for the admitted record.\n\nThese admitted records are listed as masculine. стол — table. дом — house. го́род — town. брат — brother. The admitted record for друг — friend is also masculine. Learn this recorded label; an ending is not a substitute for the record.\n\nThese admitted records are listed as feminine. кни́га — book. вода́ — water. шко́ла — school. рабо́та — work. The admitted record for дверь — door is feminine. Learn this recorded label; do not guess the gender of another word from its ending.\n\nThese admitted records are listed as neuter. окно́ — window. письмо́ — letter. молоко́ — milk. мо́ре — sea. \n\nдя́дя and мужчи́на decline like nouns ending in -а, and they are masculine. Say decline for these nouns. Do not say they conjugate.",
+            "exampleIds": [
+              "ex-u3-стол",
+              "ex-u3-дом",
+              "ex-u3-город",
+              "ex-u3-брат",
+              "ex-u3-друг",
+              "ex-u3-книга",
+              "ex-u3-вода",
+              "ex-u3-школа",
+              "ex-u3-работа",
+              "ex-u3-дверь",
+              "ex-u3-окно",
+              "ex-u3-письмо",
+              "ex-u3-молоко",
+              "ex-u3-море",
+              "ex-u3-мужчина",
+              "ex-u3-дядя"
+            ]
+          },
+          {
+            "id": "u3-st-check-gender",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u3-i-gender-город",
+              "u3-i-gender-друг",
+              "u3-i-gender-дверь",
+              "u3-i-gender-море",
+              "u3-i-gender-дядя"
+            ],
+            "remediationStepId": "u3-st-rem-gender"
+          }
+        ]
+      },
+      {
+        "id": "u3-s-phrases",
+        "title": "Recognize admitted everyday phrases",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u3-phrases"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-teach-phrases-1",
+            "kind": "TEACH",
+            "title": "Three short greetings",
+            "body": "These greetings are copied from admitted rows. здра́вствуйте — hello. спаси́бо — thank you. пожа́луйста — please. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-здравствуйте",
+              "ex-u3-phrase-спасибо",
+              "ex-u3-phrase-пожалуйста"
+            ]
+          },
+          {
+            "id": "u3-st-guided-phrases-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-phrase-здравствуйте",
+              "u3-i-phrase-спасибо"
+            ],
+            "remediationStepId": "u3-st-rem-phrases"
+          },
+          {
+            "id": "u3-st-teach-phrases-2",
+            "kind": "TEACH",
+            "title": "Three short answers",
+            "body": "These short answers are copied from admitted rows. да — yes. нет — no. э́то — this is. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-да",
+              "ex-u3-phrase-нет",
+              "ex-u3-phrase-это"
+            ]
+          },
+          {
+            "id": "u3-st-teach-phrases-3",
+            "kind": "TEACH",
+            "title": "Two written questions from the frozen page",
+            "body": "These written questions are exact frozen excerpts. Как дела? — How do you do?/How're things?. Где вы? — Where are you?. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-kak-dela",
+              "ex-u3-phrase-gde-vy"
+            ]
+          },
+          {
+            "id": "u3-st-rem-phrases",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.",
+            "exampleIds": [
+              "ex-u3-phrase-здравствуйте",
+              "ex-u3-phrase-спасибо"
+            ]
+          },
+          {
+            "id": "u3-st-check-phrases",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u3-i-phrase-пожалуйста",
+              "u3-i-phrase-да",
+              "u3-i-phrase-нет",
+              "u3-i-phrase-это"
+            ],
+            "remediationStepId": "u3-st-rem-phrases"
+          }
+        ]
+      },
+      {
+        "id": "u3-s-naming",
+        "title": "Recognize admitted naming items",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u3-naming"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-teach-naming-1",
+            "kind": "TEACH",
+            "title": "Two naming items from the frozen page",
+            "body": "These two items are exact frozen excerpts. Do not substitute another word into them. мой стол — my table. моя собака — my dog. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-moy-stol",
+              "ex-u3-phrase-moya-sobaka"
+            ]
+          },
+          {
+            "id": "u3-st-guided-naming-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u3-i-name-moy-stol"
+            ],
+            "remediationStepId": "u3-st-rem-naming"
+          },
+          {
+            "id": "u3-st-teach-naming-2",
+            "kind": "TEACH",
+            "title": "Two naming questions from the frozen page",
+            "body": "These two questions are exact frozen excerpts. Что это? — What is this?. Кто это? — Who is this?. ",
+            "referenceIds": [
+              "ref-u35-attribution"
+            ],
+            "exampleIds": [
+              "ex-u3-phrase-chto-eto",
+              "ex-u3-phrase-kto-eto"
+            ]
+          },
+          {
+            "id": "u3-st-rem-naming",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.",
+            "exampleIds": [
+              "ex-u3-phrase-moy-stol",
+              "ex-u3-phrase-moya-sobaka"
+            ]
+          },
+          {
+            "id": "u3-st-check-naming",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u3-i-name-moya-sobaka",
+              "u3-i-name-chto-eto",
+              "u3-i-name-kto-eto"
+            ],
+            "remediationStepId": "u3-st-rem-naming"
+          }
+        ]
+      },
+      {
+        "id": "u3-s-book",
+        "title": "Self-attest Lesson 3",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u3-book"
+        ],
+        "steps": [
+          {
+            "id": "u3-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 3 in your copy",
+            "body": "Do Lesson 3 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book.",
+            "referenceIds": [
+              "ref-book-topics",
+              "ref-u35-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 3: printed pages 24-35. PDF indexes 36-47 are file locators, not printed pages. Observed section locators: §3.1 p24 (PDF 36); §3.2 p25 (PDF 37); §3.3 p25 (PDF 37); §3.4 p26 (PDF 38); §3.5 p26 (PDF 38); §3.6 p26 (PDF 38); §3.7 p26 (PDF 38); §3.8 p27 (PDF 39); §3.9 p29 (PDF 41); §3.10 p29 (PDF 41); §3.11 p31 (PDF 43); §3.12 p32 (PDF 44). Observed exercise locators: 3/2 p32/PDF44; 3/3 p33/PDF45; 3/4 p33/PDF45; 3/5 p33/PDF45; 3/6 p33/PDF45. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u3-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 3 book work",
+            "body": "When you have done Lesson 3 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 3: printed pages 24-35. PDF indexes 36-47 are file locators, not printed pages. Observed section locators: §3.1 p24 (PDF 36); §3.2 p25 (PDF 37); §3.3 p25 (PDF 37); §3.4 p26 (PDF 38); §3.5 p26 (PDF 38); §3.6 p26 (PDF 38); §3.7 p26 (PDF 38); §3.8 p27 (PDF 39); §3.9 p29 (PDF 41); §3.10 p29 (PDF 41); §3.11 p31 (PDF 43); §3.12 p32 (PDF 44). Observed exercise locators: 3/2 p32/PDF44; 3/3 p33/PDF45; 3/4 p33/PDF45; 3/5 p33/PDF45; 3/6 p33/PDF45. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u3-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 3 AnkiDroid direction",
+            "body": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u3-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 3 binder prompt",
+            "body": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u3-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 3 optional tutor",
+            "body": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u3-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 3 cumulative review",
+            "body": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 3 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 12,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit3-prior-literacy-v1"
+    }
+  }
+]
