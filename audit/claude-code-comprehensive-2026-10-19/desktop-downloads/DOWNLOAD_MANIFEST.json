@@ -16,18 +16,22 @@
     },
     {
       "name": "CLAUDE_AUDIT_INSTRUCTIONS.docx",
-      "bytes": 48363,
-      "sha256": "de416f6983b9e47925190de99ff4c5c03969912ed99968e4481502e45b6dc814"
+      "bytes": 48710,
+      "sha256": "9b12453071922235afc0468e2edef3103f9d9af5b351535faac73c469103d330"
     },
     {
       "name": "CLAUDE_AUDIT_INSTRUCTIONS.pdf",
       "bytes": 24607,
-      "sha256": "4c10298375a37da7b024e52d91d9921884ef60f0039a19a6787bd31e65058e17"
+      "sha256": "4c10298375a37da7b024e52d91d9921884ef60f0039a19a6787bd31e65058e17",
+      "storage": "Retained in Git history at edad3aeed9fd8481bb57a77f33562a7aa8175685;removed from current tracked tree to preserve PDF exclusion",
+      "downloadUrl": "https://github.com/justinkulka-lang/russian-companion/blob/edad3aeed9fd8481bb57a77f33562a7aa8175685/audit/claude-code-comprehensive-2026-10-19/desktop-downloads/CLAUDE_AUDIT_INSTRUCTIONS.pdf?raw=true"
     },
     {
       "name": "CLAUDE_AUDIT_INSTRUCTIONS.txt",
-      "bytes": 30660,
-      "sha256": "bddbf767bb04559de7e120abbba4d48d5942a6aac07d6670ec2116c4c55ee4c3"
+      "bytes": 31716,
+      "sha256": "70db0e3f2ea5973aa08c428fe7d843ef971ab68d0113831afc09cfbb03d63dd9"
     }
-  ]
+  ],
+  "currentTreeHasNoTrackedPdf": true,
+  "privateReferenceUpdate": "../PRIVATE_REFERENCE_ACCESS.json"
 }

