@@ -1,0 +1,182 @@
+{
+  "assetSha256": "64d03d176e6ec6371684d5091a303139340aaa4a55ae67cb46d2738f9f81f67b",
+  "items": 626,
+  "examples": 821,
+  "provenance": 6989,
+  "sourceCapabilities": 58,
+  "routes": [
+    {
+      "sourceRecordId": "phase2:bounded-manner-adverb-formation",
+      "records": 27,
+      "sourceHashes": [
+        "80b6af48cd45fa98cad8161561676e3e1f26b3d82f9e6dade12d60d297ce6594"
+      ],
+      "applicationVariants": 1,
+      "applications": [
+        {
+          "cue": "быстрый",
+          "answer": "admitted fast manner-adverb relationship",
+          "distractors": [
+            "admitted creative manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "творческий",
+          "answer": "admitted creative manner-adverb relationship",
+          "distractors": [
+            "admitted fast manner-adverb relationship",
+            "an unsupported invented adverb form"
+          ]
+        },
+        {
+          "cue": "Она говорит быстро.",
+          "answer": "manner adverb modifying the action",
+          "distractors": [
+            "predicative expression rather than a manner adverb"
+          ]
+        },
+        {
+          "cue": "Ей трудно.",
+          "answer": "predicative expression rather than a manner adverb",
+          "distractors": [
+            "manner adverb modifying the action"
+          ]
+        },
+        {
+          "cue": "синий",
+          "answer": "no documented manner adverb is recorded for this adjective",
+          "distractors": [
+            "an unsupported invented adverb form"
+          ]
+        }
+      ],
+      "activeItems": [
+        {
+          "id": "u7-g-manner-1",
+          "promptLetter": "творческий",
+          "answer": "admitted creative manner-adverb relationship",
+          "objectiveId": "obj-u7-adverb-paradigm"
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "phase2:completion-over-period",
+      "records": 14,
+      "sourceHashes": [
+        "80f3d6eccfd1ee3d8a50179253b50e6b81c6db6db34b87c1d1f0429b55d1af22"
+      ],
+      "applicationVariants": 1,
+      "applications": [
+        {
+          "cue": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "distractors": [
+            "the article was finished within two hours"
+          ]
+        },
+        {
+          "cue": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "distractors": [
+            "time spent reading without asserting completion"
+          ]
+        }
+      ],
+      "activeItems": [
+        {
+          "id": "u23-g-completion-1",
+          "promptLetter": "Борис писал письмо час.",
+          "answer": "time spent writing without asserting completion",
+          "objectiveId": "obj-u23-completion"
+        },
+        {
+          "id": "u23-i-completion-1",
+          "promptLetter": "Анна читала статью два часа.",
+          "answer": "time spent reading without asserting completion",
+          "objectiveId": "obj-u23-completion"
+        },
+        {
+          "id": "u23-i-completion-2",
+          "promptLetter": "Анна прочитала статью за два часа.",
+          "answer": "the article was finished within two hours",
+          "objectiveId": "obj-u23-completion"
+        }
+      ]
+    },
+    {
+      "sourceRecordId": "phase2:documented-name-form",
+      "records": 21,
+      "sourceHashes": [
+        "3441b6389e6d686cae944787bb7459e2d6ef7581d7deb06b582293c46daee1bb"
+      ],
+      "applicationVariants": 1,
+      "applications": [
+        {
+          "cue": "Марюня",
+          "answer": "documented derivative of the full name",
+          "distractors": [
+            "documented derivative of the short form",
+            "documented dismissive coloring"
+          ]
+        },
+        {
+          "cue": "Машенька",
+          "answer": "documented derivative of the short form",
+          "distractors": [
+            "documented derivative of the full name",
+            "documented dismissive coloring"
+          ]
+        },
+        {
+          "cue": "Сашка",
+          "answer": "documented dismissive coloring",
+          "distractors": [
+            "documented derivative of the full name",
+            "documented derivative of the short form"
+          ]
+        },
+        {
+          "cue": "an unstudied personal name",
+          "answer": "unsupported until a names dictionary documents that form",
+          "distractors": [
+            "the suffix mechanically generates an acceptable name"
+          ]
+        }
+      ],
+      "activeItems": [
+        {
+          "id": "u25-g-name-form-1",
+          "promptLetter": "Марюня",
+          "answer": "documented derivative of the full name",
+          "objectiveId": "obj-u25-documented-name-form"
+        },
+        {
+          "id": "u25-i-name-form-1",
+          "promptLetter": "Машенька",
+          "answer": "documented derivative of the short form",
+          "objectiveId": "obj-u25-documented-name-form"
+        },
+        {
+          "id": "u25-i-name-form-2",
+          "promptLetter": "Сашка",
+          "answer": "documented dismissive coloring",
+          "objectiveId": "obj-u25-documented-name-form"
+        },
+        {
+          "id": "u25-i-name-form-3",
+          "promptLetter": "an unstudied personal name",
+          "answer": "unsupported until a names dictionary documents that form",
+          "objectiveId": "obj-u25-documented-name-form"
+        }
+      ]
+    }
+  ]
+}

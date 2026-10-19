@@ -1,0 +1,92 @@
+{
+  "sourceCommit": "718a352f059f3b97970e75d3d4c49cae9f31d294",
+  "exitCode": 0,
+  "testCounts": {
+    "reported": 10,
+    "passed": 10,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 3,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.CurrentPhase2TupleMutationTest",
+      "method": "fullValidatorRejectsSwappedCompletionAnswersWithFrozenNarrative",
+      "outcome": "PASSED",
+      "seconds": "22.617"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurrentPhase2TupleMutationTest",
+      "method": "unchangedCurrentPackIsAccepted",
+      "outcome": "PASSED",
+      "seconds": "6.615"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurrentPhase2TupleMutationTest",
+      "method": "fullValidatorRejectsSwappedNameAnswersEvenWhenAllMutableApplicationsAgree",
+      "outcome": "PASSED",
+      "seconds": "9.04"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest",
+      "method": "fullValidatorRejectsSwappedDictionaryAnswersEvenWhenAllMutableApplicationsAgree",
+      "outcome": "PASSED",
+      "seconds": "22.826"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest",
+      "method": "fullValidatorRejectsSwappedReadingAnswersEvenWhenAllMutableApplicationsAgree",
+      "outcome": "PASSED",
+      "seconds": "13.758"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest",
+      "method": "fullValidatorRejectsSwappedNameAnswersEvenWhenAllMutableApplicationsAgree",
+      "outcome": "PASSED",
+      "seconds": "14.112"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Phase2BoundedClaimsTest",
+      "method": "duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim",
+      "outcome": "PASSED",
+      "seconds": "40.548"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Phase2BoundedClaimsTest",
+      "method": "liveClaimsResolveOnlyTheBoundedSynthesis",
+      "outcome": "PASSED",
+      "seconds": "6.619"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Phase2BoundedClaimsTest",
+      "method": "sashkaStaysDismissiveAndNameReadingsCannotBeSwapped",
+      "outcome": "PASSED",
+      "seconds": "19.794"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Phase2BoundedClaimsTest",
+      "method": "identitySpanAndRelabelMutationsStayClosed",
+      "outcome": "PASSED",
+      "seconds": "96.101"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedSourceInventoryMatchesFreshXmlAndEvents": true,
+  "xmlFreshRelativeToRunScript": true,
+  "completeSuite": false,
+  "scopesNotSummed": true
+}
