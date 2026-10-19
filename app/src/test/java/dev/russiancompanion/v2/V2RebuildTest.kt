@@ -1068,11 +1068,17 @@ class V2RebuildTest {
         val blocked = advancementDecision(pack, unit, learner)
         assertFalse(blocked.remaining.joinToString(), blocked.allowed)
         assertTrue(blocked.remaining.joinToString(), blocked.remaining.any { it.contains(skipped.title) })
+        val ordinaryBlocked = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(pack, unit, learner)
+        assertFalse(ordinaryBlocked.allowed)
+        assertTrue(ordinaryBlocked.remaining.any { it.contains(skipped.title) })
         pack.items.filter { it.id in skippedItems }.forEach { item ->
             recordPrescribed(store, pack, item, "2026-09-23T12:03")
         }
-        val ready = advancementDecision(pack, unit, store.v2LearnerView())
+        val ready = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(pack, unit, store.v2LearnerView())
         assertTrue(ready.remaining.joinToString(), ready.allowed)
+        val full = advancementDecision(pack, unit, store.v2LearnerView())
+        assertFalse(full.allowed)
+        assertEquals(listOf("Complete the assigned earlier-objective review"), full.remaining)
     }
 
     private fun assertAtContentInset(tag: String) {

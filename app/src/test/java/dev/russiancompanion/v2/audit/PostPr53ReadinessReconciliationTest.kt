@@ -135,6 +135,17 @@ class PostPr53ReadinessReconciliationTest {
         assertEquals(live.units.map { it.unitNumber }, rows.map { it.getValue("unitNumber").jsonPrimitive.content.toInt() })
         rows.forEach { row ->
             val unit = live.units.first { it.unitNumber == row.getValue("unitNumber").jsonPrimitive.content.toInt() }
+            val currentUnit = pack.units.single { it.number == unit.unitNumber }
+            val fixture = idealizedLearner(pack, currentUnit)
+            val ordinary = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(pack, currentUnit, fixture)
+            val full = dev.russiancompanion.v2.curriculum.advancementDecision(pack, currentUnit, fixture)
+            assertEquals(full.allowed, unit.advancementCanPresentlySucceed)
+            if (unit.unitNumber in 3..30) {
+                assertTrue(ordinary.remaining.joinToString("\n"), ordinary.allowed)
+                assertFalse(full.allowed)
+                assertEquals(listOf("Complete the assigned earlier-objective review"), full.remaining)
+            }
+            // The immutable report predates review activation;its positive rows describe ordinary requirements.
             assertEquals(unit.title, row.getValue("title").jsonPrimitive.content)
             assertEquals(unit.installState, row.getValue("installState").jsonPrimitive.content)
             assertEquals("DEVELOPMENT", unit.installState)
@@ -146,7 +157,7 @@ class PostPr53ReadinessReconciliationTest {
                 assertEquals(historical.first, row.getValue("unresolvedRequiredSourceCapabilities").jsonPrimitive.content)
                 assertEquals(historical.second, row.getValue("contentBlocker").jsonPrimitive.content)
                 assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", unit.readiness)
-                assertTrue(unit.advancementCanPresentlySucceed)
+                assertTrue(ordinary.allowed)
                 assertEquals("NONE", unit.unresolvedRequiredSourceCapabilities)
                 assertEquals("NONE", unit.contentBlocker)
             } else if (phase3 != null) {
@@ -155,12 +166,12 @@ class PostPr53ReadinessReconciliationTest {
                 assertEquals(phase3.first, row.getValue("unresolvedRequiredSourceCapabilities").jsonPrimitive.content)
                 assertEquals(phase3.second, row.getValue("contentBlocker").jsonPrimitive.content)
                 assertEquals(phase3.third, unit.readiness)
-                assertEquals(phase3.third != "NOT_PREPARED", unit.advancementCanPresentlySucceed)
+                assertEquals(phase3.third != "NOT_PREPARED", ordinary.allowed)
                 assertEquals("NONE", unit.unresolvedRequiredSourceCapabilities)
                 assertEquals(if (phase3.third == "NOT_PREPARED") "RECORDED_NOT_PREPARED" else "NONE", unit.contentBlocker)
             } else {
                 assertEquals(unit.readiness, row.getValue("readiness").jsonPrimitive.content)
-                assertEquals(if (unit.advancementCanPresentlySucceed) "YES" else "NO", row.getValue("advancementCanPresentlySucceed").jsonPrimitive.content)
+                assertEquals(if (ordinary.allowed) "YES" else "NO", row.getValue("advancementCanPresentlySucceed").jsonPrimitive.content)
                 assertEquals(unit.unresolvedRequiredSourceCapabilities, row.getValue("unresolvedRequiredSourceCapabilities").jsonPrimitive.content)
                 assertEquals(unit.contentBlocker, row.getValue("contentBlocker").jsonPrimitive.content)
             }
@@ -217,7 +228,10 @@ class PostPr53ReadinessReconciliationTest {
                     it.unresolvedRequiredSourceCapabilities == "NONE" &&
                     it.assetBlocker == "NONE" &&
                     it.authorityVarianceBlocker == "NOT_APPLICABLE" &&
-                    it.advancementCanPresentlySucceed
+                    dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
+                        pack, pack.units.single { u -> u.number == it.unitNumber },
+                        idealizedLearner(pack, pack.units.single { u -> u.number == it.unitNumber }),
+                    ).allowed
             }.map { it.unitNumber },
         )
         STALE_RESOLVED_CLAIMS.forEach { claim ->

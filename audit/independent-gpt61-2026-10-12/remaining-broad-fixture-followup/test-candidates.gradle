@@ -1,0 +1,15 @@
+// Exact selected current classes;method selectors in selection.json.
+allprojects { tasks.withType(Test).configureEach {
+    include '**/Units2125SourceIntakeTest.class'
+    include '**/Units2630SourceIntakeTest.class'
+    include '**/Units2630StructuralMappingTest.class'
+    include '**/CurriculumReadinessReconciliationTest.class'
+    include '**/V2RebuildTest.class'
+    include '**/Units610InstructionalValidityTest.class'
+    include '**/Unit4NominativeRoleTest.class'
+    include '**/UnitReviewPipelineTest.class'
+    include '**/PostPr53ReadinessReconciliationTest.class'
+    include '**/CompleteRuleCorrectionTest.class'
+    include '**/Unit9QuantityRuleCorrectionTest.class'
+    include '**/Unit9CompositionFeedbackCorrectionTest.class'
+} }

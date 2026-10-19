@@ -1,0 +1,21 @@
+{
+  "unit4ActualConservationSource": "057367e58751c4db86af05f5b84b463537ffa3c7",
+  "unit4Baseline": "b5610846cae953c3655466794c83cdcb4063ac4e",
+  "unit5HistoricalHashSource": "ae5804bced1fc1641e4d57fdbd90bfde118e9d5f",
+  "unit5ActualActivation": "1e84576413cbd0e51cc07934baf416154e69bd0b",
+  "sourceLedgersSha256": {
+    "audit/content-corrections/UNITS8_10_COMPLETE_RULE_CORRECTION.json": "4a292704d7ff65f050cb46ba8e1d11680b728628acccd3c5a7cdc3541c39b2a6",
+    "audit/independent-gpt61-2026-10-12/ia003-unit5-gate/UNIT5_POLICY_ACTIVATION.json": "d13297b5d3fe4c076a0df1d529cdd23fe4797d7035344a98256898bb19d65d7a",
+    "app/src/test/java/dev/russiancompanion/v2/Unit9CompositionFeedbackCorrectionTest.kt": "7b6df73f4da486dcae7a881affe232590244980cb12a585b290534aecc363e9a",
+    "app/src/test/java/dev/russiancompanion/v2/Unit9QuantityRuleCorrectionTest.kt": "810a294db3b39b680d451926bf65e05a70107f28dbd7f6dc3c858b1267e9f861"
+  },
+  "runtimeOutputExclusion": "Only this followup INITIAL/RETRY plus completed broad CURRENT_REGRESSION are Git-ignored;source/report/governed-path guard unchanged. Force-add verified followup raw evidence. This prevents the collector itself creating an untracked-governed-path failure;no unexpected source path is allowed.",
+  "privatePdfUsed": false,
+  "qualifiedAcceptance": false,
+  "historicalAssetSha256": {
+    "057367e58751c4db86af05f5b84b463537ffa3c7": "00d2d994d3de47e9cd261967ce32b1719aef83f543fb2589c69cc1b287d5e2cb",
+    "b5610846cae953c3655466794c83cdcb4063ac4e": "3052b1dc1ac32d91c0a5b3b5be25c867a95a26c7aaaabac5445b2e72be4e297f",
+    "ae5804bced1fc1641e4d57fdbd90bfde118e9d5f": "234556f45f0c6276b2bf2c92dec8746aacbf5318ad55571023663052c2a1cf27",
+    "1e84576413cbd0e51cc07934baf416154e69bd0b": "226a4b98f00e54c343d23d42e33ac09d10b4abfd1d76a5ea3be44f75e826d5b0"
+  }
+}

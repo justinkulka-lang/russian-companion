@@ -1,0 +1,86 @@
+{
+  "sourceBefore": "119edf1ddbf27b5ed67fb613d4f60c87b67c7572",
+  "changedClasses": {
+    "Units2125SourceIntakeTest": {
+      "beforeSha256": "9c819a64db9392e15a0553d700b787e4ba98b93f2844c55a64b23062f4bc332e",
+      "afterSha256": "ab1cd28c0f3ca8c6e400c86959d50ec12b49aee5257af4acc1bd1f01811df8b5",
+      "changedMethods": [
+        "unsupportedObjectivesCannotAcquireAdvancementChecksOrContentCompleteStatus",
+        "unitTwentyThreeElapsedTimeStaysReviewPendingAndPartialEvidenceStaysClosed"
+      ],
+      "originalFileGitBlob": "9b2efa94049d936c2f8bb355ae12b8293091c1ca"
+    },
+    "Units2630SourceIntakeTest": {
+      "beforeSha256": "f5dd4eb6ffefc0f681e49ad1b070a33905d207f7fff51a76326051da9d7f262c",
+      "afterSha256": "a50bad6bcc2bea88698ddbe407f2be920c9884ef7e5f00bd4f6f07ab5eb0aab7",
+      "changedMethods": [
+        "neighboringSpansKeywordsAndInactiveVariancesStayClosed"
+      ],
+      "originalFileGitBlob": "dec3e16301e5df815b5af0dbd175183898c2e8a7"
+    },
+    "Units2630StructuralMappingTest": {
+      "beforeSha256": "4f43595e395f8880616a4dcfea9a56801c75fbcc0aa69869aa94dde60c3de39f",
+      "afterSha256": "31bafc4d59582b12fd407a662f813ed4effe22b7bc6cfeda3b472250229e7707",
+      "changedMethods": [
+        "pageRangeBookAttestationAndEmptyContentCannotAdvance",
+        "preparedLateUnitIsNotPermanentlyBlockedFromAdvancement"
+      ],
+      "originalFileGitBlob": "c4cdec142d5db18049a3582fa4cb17abb59d0cad"
+    },
+    "audit/CurriculumReadinessReconciliationTest": {
+      "beforeSha256": "a8171b7952540be15a6371df894fe5d60ac9e86ff4678c3a4c9bd535369e89aa",
+      "afterSha256": "70f450dca980372b93036141d90557998d63c39c47ac2a8d81368ed619619649",
+      "changedMethods": [
+        "notPreparedUnitsCannotAdvanceAndReadinessChangeDoesNotClearOtherBlockers"
+      ],
+      "originalFileGitBlob": "45fb7a03b7d32f164f1855dfc0a824bea0b25aa2"
+    },
+    "V2RebuildTest": {
+      "beforeSha256": "6af07f47196d953a77de69f4eb06f099959e9e27548cdf8ed1836ced9906382d",
+      "afterSha256": "a1366cd15e960cd7454ab804cbe88e974eac827cf3173b8f22150f1d211a155a",
+      "changedMethods": [
+        "advancementCannotSkipARequiredObjective"
+      ],
+      "originalFileGitBlob": "5471ad7fbdbeeb07a5170bd6d6edf971bef9b33b"
+    },
+    "Units610InstructionalValidityTest": {
+      "beforeSha256": "f7ace160c75daa35afb7c68f2867d4b82d1dccf523b7a01b8488da0ea861f52d",
+      "afterSha256": "a4d2be989693b99166ea8bdb4aec3b168c02b9be91ca7a7409463a6f42735ff4",
+      "changedMethods": [
+        "sameTruncatedSourceRecordIdWithDifferentFrozenContentCannotShareASpan",
+        "unitNineBoundaryCasesAreIndependentQualifyingChecks"
+      ],
+      "originalFileGitBlob": "8100abc8531ec046100a3bd698c12169bf5570a7"
+    },
+    "Unit4NominativeRoleTest": {
+      "beforeSha256": "df133a52e2a8eb69aae232ee58a972cd69d336878e6d774ba1ab101e13d9d61e",
+      "afterSha256": "5e135e5782ae7e3d13052e73973511dd813b72ac2d4de8a0b33a6537a2e00b15",
+      "changedMethods": [
+        "allPriorExamplesRecordsCapabilitiesAndOtherUnitsRemainWhole"
+      ],
+      "originalFileGitBlob": "194a338c837423500530773d22a21ba2dd2c3461"
+    },
+    "review/UnitReviewPipelineTest": {
+      "beforeSha256": "fa802b11258b4a613ffc0996341e6d8e3af696af6d54cb6ecb7fa4fc66f3e790",
+      "afterSha256": "c839b37dd67e8fc120ef1f26fa59d94a2ef56b0bec7956c9feb771048b77f726",
+      "changedMethods": [
+        "mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields"
+      ],
+      "originalFileGitBlob": "79ea471f5191526d3f863833e94c409f314cf06f"
+    },
+    "audit/PostPr53ReadinessReconciliationTest": {
+      "beforeSha256": "24070e1c204860809bd5f9efe017ee8c99278f3797576bc7ab88d78b15fc1b65",
+      "afterSha256": "101632cd6376d3c99bef57652427224b15998b25ade6dbf92dc5d875587f5616",
+      "changedMethods": [
+        "reportMatrixMatchesTheLiveCurriculum"
+      ],
+      "originalFileGitBlob": "67cf0d737c37ad6d2aad6432a13b0c8701b8d8a3"
+    }
+  },
+  "productionChanges": false,
+  "newTestAnnotations": 0,
+  "runtime": "PENDING_INITIAL",
+  "allTwelveObservedCasesCovered": true,
+  "separateScopesNotSummed": true,
+  "formalAcceptance": false
+}

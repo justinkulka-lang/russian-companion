@@ -227,7 +227,20 @@ class UnitReviewPipelineTest {
         assertEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(pack, 2))
         assertEquals("28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals("1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11", V2Validator.unitContentReviewDigest(pack, 4))
-        assertEquals("c2e405cf7081d673a39def8e26035bac7a65b608c57c5f4803ba832c2305c744", V2Validator.unitContentReviewDigest(pack, 5))
+        fun actualAsset(commit: String): dev.russiancompanion.v2.curriculum.V2CurriculumPack {
+            val command = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json").directory(repo()).start()
+            val asset = V2PackLoader.parse(command.inputStream.bufferedReader().readText())
+            assertEquals(0, command.waitFor())
+            return asset
+        }
+        val historical = actualAsset("ae5804bced1fc1641e4d57fdbd90bfde118e9d5f")
+        assertEquals("c2e405cf7081d673a39def8e26035bac7a65b608c57c5f4803ba832c2305c744", V2Validator.unitContentReviewDigest(historical, 5))
+        val activated = actualAsset("1e84576413cbd0e51cc07934baf416154e69bd0b")
+        // Original Unit5 activation ledger,not a freshly copied current snapshot.
+        val activatedDigest = "3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141"
+        assertEquals(activatedDigest, V2Validator.unitContentReviewDigest(activated, 5))
+        assertEquals(activated.unit(5), pack.unit(5))
+        assertEquals(activatedDigest, V2Validator.unitContentReviewDigest(pack, 5))
         val mutations = listOf(
             "lesson number" to facts.copy(proposedLessonNumber = 9),
             "printed page start" to facts.copy(printedPageStart = 2),

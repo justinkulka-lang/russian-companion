@@ -740,7 +740,7 @@ class Units2630SourceIntakeTest {
         assertTrue(readings.exampleIds.size >= 2)
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(28)!!.readiness)
         val unit28 = pack.unit(28)!!
-        val advanced = advancementDecision(
+        val advanced = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
             pack,
             unit28,
             learner(28, book = true).copy(
@@ -752,6 +752,19 @@ class Units2630SourceIntakeTest {
             ),
         )
         assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
+            val advancedFull = advancementDecision(
+            pack,
+            unit28,
+            learner(28, book = true).copy(
+                completedStepIds = unit28.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+                correctItemIds = (
+                    unit28.objectives.flatMap { it.checkItemIds } +
+                        unit28.sessions.flatMap { it.steps }.flatMap { it.itemIds }
+                    ).toSet(),
+            ),
+        )
+            assertFalse(advancedFull.allowed)
+            assertEquals(listOf("Complete the assigned earlier-objective review"), advancedFull.remaining)
         assertFalse(advanced.remaining.any { it.contains("verbal-adverb-reading") })
 
         listOf(27, 29, 30).forEach { number ->

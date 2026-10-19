@@ -277,10 +277,13 @@ class Units2630StructuralMappingTest {
                 number,
                 "CONTENT_COMPLETE_REVIEW_PENDING",
             )
-            val rangedDecision = advancementDecision(ranged, ranged.unit(number)!!, learner(number, book = true))
+            val rangedDecision = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(ranged, ranged.unit(number)!!, learner(number, book = true))
             val rangedErrors = V2Validator.validate(ranged).errors
             assertTrue(rangedErrors.joinToString("\n"), rangedErrors.any { it.contains("structural page range is not linguistic evidence") })
             assertTrue(rangedDecision.remaining.joinToString("\n"), rangedDecision.allowed)
+            val rangedDecisionFull = advancementDecision(ranged, ranged.unit(number)!!, learner(number, book = true))
+            assertFalse(rangedDecisionFull.allowed)
+            assertEquals(listOf("The cumulative-review rule cannot be verified"), rangedDecisionFull.remaining)
             assertFalse(emptyDecision.remaining.any { it.contains("unresolved authority variance") })
             assertFalse(attestedDecision.remaining.any { it.contains("unresolved authority variance") })
             assertFalse(rangedDecision.remaining.any { it.contains("unresolved authority variance") })
@@ -298,9 +301,12 @@ class Units2630StructuralMappingTest {
             assertFalse(blocked.remaining.any { it.contains("not content-complete") })
             listOf("CONTENT_COMPLETE_REVIEW_PENDING", "INSTALLABLE").forEach { readiness ->
                 val prepared = permissiveAdvancement(pack, number, readiness)
-                val decision = advancementDecision(prepared, prepared.unit(number)!!, learner(number, book = false))
+                val decision = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(prepared, prepared.unit(number)!!, learner(number, book = false))
                 assertFalse(decision.remaining.any { it == "This unit is not prepared" })
                 assertTrue("$number $readiness ${decision.remaining}", decision.allowed)
+                val decisionFull = advancementDecision(prepared, prepared.unit(number)!!, learner(number, book = false))
+                assertFalse(decisionFull.allowed)
+                assertEquals(listOf("The cumulative-review rule cannot be verified"), decisionFull.remaining)
                 assertFalse(decision.remaining.any { it.contains("unresolved authority variance") })
             }
         }

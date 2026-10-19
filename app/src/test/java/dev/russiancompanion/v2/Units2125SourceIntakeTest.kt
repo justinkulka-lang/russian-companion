@@ -407,7 +407,7 @@ class Units2125SourceIntakeTest {
         assertTrue(pack.unit(25)!!.objectives.none { it.id == "obj-u25-productive-formation" })
         listOf(21, 22, 23, 24, 25).forEach { number ->
             val unit = pack.unit(number)!!
-            val decision = advancementDecision(
+            val decision = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
                 pack,
                 unit,
                 learner(
@@ -418,6 +418,18 @@ class Units2125SourceIntakeTest {
                 ),
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            val decisionFull = advancementDecision(
+                pack,
+                unit,
+                learner(
+                    number,
+                    book = true,
+                    correct = pack.items.filter { item -> unit.objectives.any { it.id == item.objectiveId } }.map { it.id }.toSet(),
+                    steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+                ),
+            )
+            assertFalse(decisionFull.allowed)
+            assertEquals(listOf("Complete the assigned earlier-objective review"), decisionFull.remaining)
         }
     }
 
@@ -461,7 +473,7 @@ class Units2125SourceIntakeTest {
         assertEquals("RECOGNITION", completion.kind)
         assertTrue(completion.checkItemIds.size >= 2)
         assertFalse(V2Validator.unresolvedRequiredSourceCapabilities(pack, 23).any { it.claim == "completion-over-period" })
-        val advanced = advancementDecision(
+        val advanced = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
             pack,
             unit,
             learner(
@@ -473,6 +485,19 @@ class Units2125SourceIntakeTest {
             ),
         )
         assertTrue(advanced.remaining.joinToString("\n"), advanced.allowed)
+            val advancedFull = advancementDecision(
+            pack,
+            unit,
+            learner(
+                23,
+                book = true,
+                correct = unit.objectives.flatMap { it.checkItemIds }.toSet() +
+                    unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }.toSet(),
+                steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet(),
+            ),
+        )
+            assertFalse(advancedFull.allowed)
+            assertEquals(listOf("Complete the assigned earlier-objective review"), advancedFull.remaining)
         val elapsed = pack.sourceCapabilities.single { it.supportedClaim == "elapsed-time-duration" }
         assertEquals("obj-u23-duration", elapsed.objectiveId)
         assertEquals(23, elapsed.unitNumber)
