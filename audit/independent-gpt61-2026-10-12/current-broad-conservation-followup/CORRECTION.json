@@ -67,7 +67,33 @@
   "newTestAnnotations": 0,
   "productionChanges": false,
   "formalAcceptance": false,
-  "runtime": "PENDING_INITIAL",
+  "runtime": {
+    "testCounts": {
+      "reported": 26,
+      "passed": 26,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 3,
+    "taskStatuses": {
+      "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+      "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+      "lintDebug": "> Task :app:lintDebug",
+      "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+    },
+    "lint": {
+      "Fatal": 0,
+      "Error": 0,
+      "Warning": 20,
+      "Information": 0,
+      "Ignore": 0
+    },
+    "eventsMatchFreshXml": true,
+    "completeSuite": false,
+    "sourceCommit": "59c0d509be51ee191ab6aa95426ad63634cd6aa9",
+    "manifest": "INITIAL/MANIFEST.json"
+  },
   "caseDetails": [
     "../unit11-historical-conservation-scope/SOURCE_AND_SCOPE.md",
     "../unit24-old-example-conservation-scope/SOURCE_AND_SCOPE.md"

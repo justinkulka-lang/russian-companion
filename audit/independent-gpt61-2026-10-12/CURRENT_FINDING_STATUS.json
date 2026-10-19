@@ -1388,9 +1388,9 @@
     "findingStatus": "OPEN"
   },
   "currentEngineeringContinuation": {
-    "checkpoint": "latestCurrentBroadRegressionCheckpoint",
-    "priorCheckpoint": "activeCurrentBroadRegressionCheckpoint",
-    "next": "Diagnose every OPEN case in CURRENT_BROAD_FINDINGS.json against the completed broad source. Preserve this entire run and earlier32 failure evidence. Do not edit during an active verification,blindly archive/bump snapshots or forge current completion. Rerun affected scope then re-discover if methods/selection change;broader verification and independent audit remain incomplete until failures are resolved.",
+    "checkpoint": "latestCurrentBroadConservationFollowup",
+    "priorCheckpoint": "latestCurrentBroadRegressionCheckpoint",
+    "next": "Diagnose the remaining12 observed broad failures listed in CURRENT_HOST_VERIFICATION_DISPOSITION.json. Preserve all16 raw failures and all original32 diagnostics. Four cases have separately verified fixture-scope reconciliation only;no fresh all-pass broad result or independent-audit readiness is claimed. Inspect complete methods,real correction histories and current production guards. Preserve source/key/rights/readiness negatives and all later assertions. Final independent comprehensive audit first;physical-device acceptance last. No merge,freeze,APK assembly/signing or release approval.",
     "legacyLatestPointers": "Earlier latest* fields remain historical,not current readiness claims."
   },
   "units5And6RecentSelectionCheckpoint": {
@@ -2328,5 +2328,135 @@
     "engineeringReadyForIndependentComprehensiveAudit": false,
     "physicalDeviceAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_AUDIT",
     "next": "Diagnose every OPEN case in CURRENT_BROAD_FINDINGS.json against the completed broad source. Preserve this entire run and earlier32 failure evidence. Do not edit during an active verification,blindly archive/bump snapshots or forge current completion. Rerun affected scope then re-discover if methods/selection change;broader verification and independent audit remain incomplete until failures are resolved."
+  },
+  "latestCurrentBroadConservationFollowup": {
+    "sourceCommit": "59c0d509be51ee191ab6aa95426ad63634cd6aa9",
+    "completeBroadSourceCommit": "6d91a7defadcf24faf583cdb1b9a4e029b5a1553",
+    "completeBroadCounts": {
+      "reported": 1225,
+      "passed": 1208,
+      "failed": 16,
+      "errors": 0,
+      "skipped": 1
+    },
+    "completeBroadClasses": 193,
+    "broadScopeCompleteWithExclusions": true,
+    "broadRawEvidenceIndex": "broader-regression-2026-10-18/CURRENT_RAW_EVIDENCE_INDEX.json",
+    "followupManifest": "current-broad-conservation-followup/INITIAL/MANIFEST.json",
+    "followupCounts": {
+      "reported": 26,
+      "passed": 26,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "followupClasses": 3,
+    "sameMainCatalogDocsReviewTrees": true,
+    "onlyTestFilesChanged": [
+      "app/src/test/java/dev/russiancompanion/v2/Unit11AgreementRemediationTest.kt",
+      "app/src/test/java/dev/russiancompanion/v2/Unit24ContextTransferTest.kt",
+      "app/src/test/java/dev/russiancompanion/v2/Units1620SourceIntakeTest.kt"
+    ],
+    "allOtherMethodBodiesInAffectedClassesExact": true,
+    "allOtherTestFilesByteExact": true,
+    "original32CasesAlsoPassedInCompletedBroadRun": true,
+    "newBroadCasesResolved": [
+      {
+        "class": "dev.russiancompanion.v2.Unit11AgreementRemediationTest",
+        "method": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+        "engineeringDisposition": "CORRECTION_SCOPE_RECONCILED_WITH_CURRENT_CONTENT_GUARDS",
+        "followupSource": "59c0d509be51ee191ab6aa95426ad63634cd6aa9"
+      },
+      {
+        "class": "dev.russiancompanion.v2.Unit24ContextTransferTest",
+        "method": "exactSelectionsAndAllOldExamplesValidateWithoutIndependentSubjectFocusClaim",
+        "engineeringDisposition": "CORRECTION_SCOPE_RECONCILED_WITH_CURRENT_CONTENT_GUARDS",
+        "followupSource": "59c0d509be51ee191ab6aa95426ad63634cd6aa9"
+      },
+      {
+        "class": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+        "method": "structuralMappingsMatchTheOwnedEditionObservations",
+        "engineeringDisposition": "CORRECTION_SCOPE_RECONCILED_WITH_CURRENT_CONTENT_GUARDS",
+        "followupSource": "59c0d509be51ee191ab6aa95426ad63634cd6aa9"
+      },
+      {
+        "class": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+        "method": "unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance",
+        "engineeringDisposition": "CORRECTION_SCOPE_RECONCILED_WITH_CURRENT_CONTENT_GUARDS",
+        "followupSource": "59c0d509be51ee191ab6aa95426ad63634cd6aa9"
+      }
+    ],
+    "newBroadOpenCases": [
+      {
+        "class": "dev.russiancompanion.v2.Unit4NominativeRoleTest",
+        "method": "allPriorExamplesRecordsCapabilitiesAndOtherUnitsRemainWhole",
+        "status": "OPEN_REQUIRES_DIAGNOSIS"
+      },
+      {
+        "class": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+        "method": "unitTwentyThreeElapsedTimeStaysReviewPendingAndPartialEvidenceStaysClosed",
+        "status": "OPEN_REQUIRES_DIAGNOSIS"
+      },
+      {
+        "class": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+        "method": "unsupportedObjectivesCannotAcquireAdvancementChecksOrContentCompleteStatus",
+        "status": "OPEN_REQUIRES_DIAGNOSIS"
+      },
+      {
+        "class": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+        "method": "neighboringSpansKeywordsAndInactiveVariancesStayClosed",
+        "status": "OPEN_REQUIRES_DIAGNOSIS"
+      },
+      {
+        "class": "dev.russiancompanion.v2.Units2630StructuralMappingTest",
+        "method": "pageRangeBookAttestationAndEmptyContentCannotAdvance",
+        "status": "OPEN_REQUIRES_DIAGNOSIS"
+      },
+      {
+        "class": "dev.russiancompanion.v2.Units2630StructuralMappingTest",
+        "method": "preparedLateUnitIsNotPermanentlyBlockedFromAdvancement",
+        "status": "OPEN_REQUIRES_DIAGNOSIS"
+      },
+      {
+        "class": "dev.russiancompanion.v2.Units610InstructionalValidityTest",
+        "method": "sameTruncatedSourceRecordIdWithDifferentFrozenContentCannotShareASpan",
+        "status": "OPEN_REQUIRES_DIAGNOSIS"
+      },
+      {
+        "class": "dev.russiancompanion.v2.Units610InstructionalValidityTest",
+        "method": "unitNineBoundaryCasesAreIndependentQualifyingChecks",
+        "status": "OPEN_REQUIRES_DIAGNOSIS"
+      },
+      {
+        "class": "dev.russiancompanion.v2.V2RebuildTest",
+        "method": "advancementCannotSkipARequiredObjective",
+        "status": "OPEN_REQUIRES_DIAGNOSIS"
+      },
+      {
+        "class": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+        "method": "notPreparedUnitsCannotAdvanceAndReadinessChangeDoesNotClearOtherBlockers",
+        "status": "OPEN_REQUIRES_DIAGNOSIS"
+      },
+      {
+        "class": "dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest",
+        "method": "reportMatrixMatchesTheLiveCurriculum",
+        "status": "OPEN_REQUIRES_DIAGNOSIS"
+      },
+      {
+        "class": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+        "method": "mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields",
+        "status": "OPEN_REQUIRES_DIAGNOSIS"
+      }
+    ],
+    "freshAllPassingBroadRunAtCurrentTestSource": false,
+    "separateScopesNotSummed": true,
+    "formalAcceptance": false,
+    "engineeringReadyForIndependentDiagnosticReview": false,
+    "qualifiedSourceLinguisticRightsReview": "PENDING",
+    "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+    "apkAssemblyOrSigning": "NOT_RUN",
+    "releaseApproval": false,
+    "path": "audit/independent-gpt61-2026-10-12/current-broad-conservation-followup",
+    "next": "Diagnose the remaining12 observed broad failures listed in CURRENT_HOST_VERIFICATION_DISPOSITION.json. Preserve all16 raw failures and all original32 diagnostics. Four cases have separately verified fixture-scope reconciliation only;no fresh all-pass broad result or independent-audit readiness is claimed. Inspect complete methods,real correction histories and current production guards. Preserve source/key/rights/readiness negatives and all later assertions. Final independent comprehensive audit first;physical-device acceptance last. No merge,freeze,APK assembly/signing or release approval."
   }
 }

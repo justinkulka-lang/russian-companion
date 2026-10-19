@@ -30,5 +30,11 @@
   "productionChanges": false,
   "archiveUsedAsCurrentAcceptance": false,
   "formalAcceptance": false,
-  "runtime": "PENDING_COMMON_FOLLOWUP"
+  "runtime": {
+    "sourceCommit": "59c0d509be51ee191ab6aa95426ad63634cd6aa9",
+    "commonManifest": "../current-broad-conservation-followup/INITIAL/MANIFEST.json",
+    "class": "Unit24ContextTransferTest",
+    "classMethodsPassed": 12,
+    "separateRunClaimed": false
+  }
 }

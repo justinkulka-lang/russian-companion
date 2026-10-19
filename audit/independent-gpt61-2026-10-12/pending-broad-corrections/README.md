@@ -1,3 +1,7 @@
+# Status update
+
+The first four plans were applied and their separate26-method/3-class INITIAL followup passed. Twelve additional broad failures remain OPEN. Read ../current-broad-conservation-followup/NEXT_REVIEW.md and ../CURRENT_HOST_VERIFICATION_DISPOSITION.json. The planning text below is historical;do not rerun immutable apply scripts.
+
 # Pending broad-run corrections — not yet applied or verified
 
 Use one agent in the existing authorized checkout. The real CURRENT_REGRESSION finished at source6d91a7defadcf24faf583cdb1b9a4e029b5a1553:1225reported/1208passed/16failed/0errors/1physical skip across193classes. Fresh XML/events exactly match discovery. Raw331,200,541bytes are retained in the verified200-member CURRENT_RAW_EVIDENCE.zip plus originals. All16 cases are OPEN;the four plans below cover only a subset. No collector is active now. Read its CONTEXT.json,RUN.exit,MANIFEST.json and exact fresh XML/event coverage;do not infer completion from live event counts. Preserve every raw failure and all earlier evidence.

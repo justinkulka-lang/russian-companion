@@ -23,7 +23,13 @@
   "productionChanges": false,
   "archiveUsedAsCurrentAcceptance": false,
   "formalAcceptance": false,
-  "runtime": "PENDING_INITIAL",
+  "runtime": {
+    "sourceCommit": "59c0d509be51ee191ab6aa95426ad63634cd6aa9",
+    "commonManifest": "../current-broad-conservation-followup/INITIAL/MANIFEST.json",
+    "class": "Unit11AgreementRemediationTest",
+    "classMethodsPassed": 5,
+    "separateRunClaimed": false
+  },
   "originalBroadFailure": {
     "sourceCommit": "6d91a7defadcf24faf583cdb1b9a4e029b5a1553",
     "manifest": "../broader-regression-2026-10-18/CURRENT_REGRESSION/MANIFEST.json",
