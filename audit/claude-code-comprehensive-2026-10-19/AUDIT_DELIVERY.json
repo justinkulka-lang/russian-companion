@@ -1,0 +1,73 @@
+{
+  "auditTarget": "dc8aa6effa931cf0ba554042b92d49ef5e4a4b72",
+  "file": "Claude_Code_Comprehensive_Audit_Opus_5_5_Extra_dc8aa6ef.zip",
+  "bytes": 74592078,
+  "sha256": "dd80bfd9d034282feda60ec6ddc2f6b835e1e7fada4b1ed053dd428f674b6ae5",
+  "parts": [
+    {
+      "name": "Claude_Code_Comprehensive_Audit_Opus_5_5_Extra_dc8aa6ef.zip.part01",
+      "bytes": 26214400,
+      "sha256": "d42ba05bec8f2a97cebe57da51de25ac9d3c0496da931c895a71582c7af71cd2"
+    },
+    {
+      "name": "Claude_Code_Comprehensive_Audit_Opus_5_5_Extra_dc8aa6ef.zip.part02",
+      "bytes": 26214400,
+      "sha256": "9a82745a0ca297457b56fb4e305fc2cc276d731cec69165525b2305f1bdf60df"
+    },
+    {
+      "name": "Claude_Code_Comprehensive_Audit_Opus_5_5_Extra_dc8aa6ef.zip.part03",
+      "bytes": 22163278,
+      "sha256": "93aa518577c1073144b67e144f931f0c13dcd5e890263214ed60dda515d09022"
+    }
+  ],
+  "privatePdfIncluded": false,
+  "instructionsKit": {
+    "path": "/workspace/artifacts/Claude_Code_Audit_Instructions_and_Templates_dc8aa6ef.zip",
+    "bytes": 163743,
+    "sha256": "e3a5e45ac3478bf7166f11cd8d4c9173312661d818ebcf83f66be82df5f2cbd2",
+    "sourceSnapshotIncluded": false,
+    "requiresAuthorizedRepositoryAccess": true
+  },
+  "verification": {
+    "fullPacketVerifierExitCode": 0,
+    "compactKitVerifierExitCode": 0,
+    "allTwelveTemplatesPresentAndCsvWidthsValid": true,
+    "fullGitTreeAndAllBlobIdentitiesVerified": true,
+    "allPartsReassembleToFullZip": true,
+    "entries": 6464,
+    "trackedFiles": 6409,
+    "entityRows": 12003,
+    "auditPerformed": false
+  },
+  "recordedUtc": "2026-10-19T01:00:40.671773+00:00",
+  "repository": "justinkulka-lang/russian-companion",
+  "branch": "cursor/content-audit-corrections-964f",
+  "draftPr": 64,
+  "requestedClient": "Claude Code",
+  "requestedModel": "Opus 5.5",
+  "requestedEffort": "Extra",
+  "actualAuditorModel": "NOT_RUN_NOT_VERIFIED",
+  "actualAuditorEffort": "NOT_RUN_NOT_VERIFIED",
+  "privateReference": {
+    "filename": "Private_Penguin_Reference.pdf",
+    "bytes": 13572361,
+    "continuitySha256": "0c441ffd8855b292922a40b10935d5ffb1b088b7118acfcc1856e259dc01867a",
+    "historicalIndependentExpectedHash": "UNAVAILABLE",
+    "included": false,
+    "obtain": "Separate private attachment or private local path outside Git; optionally PENGUIN_REFERENCE_PDF"
+  },
+  "requiredDeliverables": 12,
+  "copyPastePromptSha256": "50c793f93dda7b1aaebb4715e53055768726c7aa78163c75690fda2ae73ad3ea",
+  "scope": "Whole application and curriculum,not only recent changes. All required uninspected areas must remain explicit.",
+  "appCurriculumAndTestChanges": false,
+  "freshAllPassingBroadRunAtFinalSource": false,
+  "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+  "releaseApproval": false,
+  "metadataReceiptAfterPinnedAuditTarget": true,
+  "artifactPaths": {
+    "fullPacket": "/workspace/artifacts/Claude_Code_Comprehensive_Audit_Opus_5_5_Extra_dc8aa6ef.zip",
+    "compactKit": "/workspace/artifacts/Claude_Code_Audit_Instructions_and_Templates_dc8aa6ef.zip",
+    "copyPastePrompt": "/workspace/artifacts/Claude_Code_Audit_Copy_Paste_Opus_5_5_Extra.md"
+  },
+  "next": "Use the small kit with an authorized repository checkout,or the complete snapshot with actual historical Git access where needed. Paste COPY_PASTE_PROMPT.md into Claude Code with the requested verified model/effort,and supply the Penguin reference privately. Await actual twelve audit deliverables;the templates and packet integrity checks are not completed audit findings."
+}
