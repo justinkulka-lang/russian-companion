@@ -11,10 +11,12 @@
   "targetCommit": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
   "targetTree": "f95bfa3c1ae6b8ac07b42b6db9fa69c5e247830f",
   "inputDeliveryCommit": "48fe8e12499920a213e908ce1fb788cde9265ab7",
-  "publicationParent": "48fe8e12499920a213e908ce1fb788cde9265ab7",
+  "publicationParent": "f70551513c70e68874ce57eef5c63acdc8ab6234",
   "publicationScope": "New audit artifacts on draft PR64 only; no app/test/curriculum edits",
   "runtimeExecuted": false,
   "physicalAcceptance": "OUTSTANDING_LAST",
   "privateBookBytesOrExpressionIncluded": false,
-  "originalResultsReplaced": false
+  "originalResultsReplaced": false,
+  "publicationBase": "48fe8e12499920a213e908ce1fb788cde9265ab7",
+  "standaloneCsvByteIdentity": "CRLF bytes preserved exactly as archived; archive remains unchanged"
 }
