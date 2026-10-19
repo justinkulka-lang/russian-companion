@@ -560,11 +560,11 @@ private class BackupOutputLimit(private val output: OutputStream, private val ma
     private var written = 0L
     override fun write(value: Int) {
         if (written >= maximum) throw BackupWriteException("backup-size-limit")
-        output.write(value); written++
+        written++; output.write(value)
     }
     override fun write(bytes: ByteArray, offset: Int, length: Int) {
         if (length.toLong() > maximum - written) throw BackupWriteException("backup-size-limit")
-        output.write(bytes, offset, length); written += length
+        written += length; output.write(bytes, offset, length)
     }
     override fun flush() = output.flush()
     override fun close() = output.close()
@@ -628,7 +628,7 @@ private fun readBoundedBackup(
     val budget = ImportBudget(limits.expandedBytes)
     stagingDir.mkdirs()
     val zipFile = File(stagingDir, "incoming.zip")
-    if (zipFile.exists()) return BackupReadResult.Rejected(BackupRejection.UNAUTHORIZED)
+    if (!zipFile.createNewFile()) return BackupReadResult.Rejected(BackupRejection.UNAUTHORIZED)
     ownedFiles += zipFile
     try {
         zipFile.outputStream().use { destination -> copyImport(input, destination, limits.inputBytes, null, cancelled) }
@@ -752,7 +752,7 @@ private fun readBoundedBackup(
             val path = recordingEntryPath(recording.id, recording.localFileReference)
             val declaredFile = declaredHashes[path] ?: return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
             val target = File(stagingDir, "${recording.id}.bin")
-            if (target.exists()) return BackupReadResult.Rejected(BackupRejection.UNAUTHORIZED)
+            if (!target.createNewFile()) return BackupReadResult.Rejected(BackupRejection.UNAUTHORIZED)
             ownedFiles += target
             val entry = zip.getEntry(path) ?: return BackupReadResult.Rejected(BackupRejection.INCOMPLETE)
             val digest = MessageDigest.getInstance("SHA-256")
@@ -876,6 +876,9 @@ private fun checkZipDirectoryLimits(file: File, limits: BackupImportLimits, miss
         var count = unsigned(tail, end + 10, 2)
         var bytes = unsigned(tail, end + 12, 4)
         var offset = unsigned(tail, end + 16, 4)
+        val standardCount = count; val standardBytes = bytes; val standardOffset = offset
+        if ((count != 65535L && count > limits.entryCount) ||
+            (bytes != 0xffffffffL && bytes > limits.directoryBytes)) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
         val endOffset = input.length() - tail.size + end
         val locator = ByteArray(20)
         if (endOffset >= 20) { input.seek(endOffset - 20); input.readFully(locator) }
@@ -888,6 +891,10 @@ private fun checkZipDirectoryLimits(file: File, limits: BackupImportLimits, miss
             if (recordSize < 44) throw BackupImportAbort(BackupRejection.TRUNCATED)
             if (recordSize > limits.directoryBytes) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
             count = unsigned(record, 32, 8); bytes = unsigned(record, 40, 8); offset = unsigned(record, 48, 8)
+            // Reject ambiguous headers rather than letting ZipFile fall back to an unchecked representation.
+            if ((standardCount != 65535L && standardCount != count) ||
+                (standardBytes != 0xffffffffL && standardBytes != bytes) ||
+                (standardOffset != 0xffffffffL && standardOffset != offset)) throw BackupImportAbort(BackupRejection.TRUNCATED)
         }
         if (count > limits.entryCount || bytes > limits.directoryBytes) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
         if (offset > input.length() || bytes > input.length() - offset) throw BackupImportAbort(BackupRejection.TRUNCATED)

@@ -171,6 +171,21 @@ class BackupImportLimitsTest {
         assertOnlySentinel(stage)
     }
 
+    @Test fun zip64CannotHideAnOversizedPrimaryDirectoryDeclaration() = fixture { stage, work ->
+        val bytes = zip64(archive(work))
+        val end = bytes.size - 22
+        bytes[end + 12] = 0; bytes[end + 13] = 0; bytes[end + 14] = 32; bytes[end + 15] = 0
+        assertResource(read(bytes, stage), stage)
+    }
+
+    @Test fun conflictingZip64AndPrimaryCountsAreRejectedRatherThanChoosingAHeader() = fixture { stage, work ->
+        val bytes = zip64(archive(work))
+        val end = bytes.size - 22
+        bytes[end + 10] = 0; bytes[end + 11] = 0
+        assertEquals(BackupReadResult.Rejected(BackupRejection.TRUNCATED), read(bytes, stage))
+        assertOnlySentinel(stage)
+    }
+
     private fun archive(work: File, recordings: Int = 0, limits: BackupImportLimits = BackupImportLimits(),
         output: ByteArrayOutputStream = ByteArrayOutputStream()): ByteArray {
         val base = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(root(),
