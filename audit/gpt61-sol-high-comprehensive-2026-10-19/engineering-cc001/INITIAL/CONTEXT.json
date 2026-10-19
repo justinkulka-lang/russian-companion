@@ -1,0 +1,66 @@
+{
+  "sourceCommit": "9665646125aa93153dffe65c6603813f3253cd76",
+  "inputTrees": {
+    "app/src/main": "f6ced648768f4f017c8cdacf3b8833ffe4494054",
+    "app/src/test": "33ff38c0b312cee66011fc878390bd0b1da693b1",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-Daudit.events.path=/workspace/artifacts/cc001-options/INITIAL/EVENTS.jsonl",
+    "testDebugUnitTest",
+    "--tests",
+    "dev.russiancompanion.v2.OptionPresentationTest",
+    "--tests",
+    "dev.russiancompanion.v2.OptionPresentationUiTest",
+    "--tests",
+    "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "--tests",
+    "dev.russiancompanion.v2.CumulativeReviewSelectionTest",
+    "--rerun",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=4",
+    "--console=plain"
+  ],
+  "selectors": [
+    "dev.russiancompanion.v2.OptionPresentationTest",
+    "dev.russiancompanion.v2.OptionPresentationUiTest",
+    "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "dev.russiancompanion.v2.CumulativeReviewSelectionTest"
+  ],
+  "activation": "source /workspace/setup/android-env.sh",
+  "expectedMethods": 33,
+  "scope": "Selected host methods only;not full suite",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblySigning": "NOT_RUN",
+  "sourceTestHashes": {
+    "app/src/test/java/dev/russiancompanion/v2/OptionPresentationTest.kt": "c120e5a8042480a4c45d875514ffcdb932db8bd745dc56cf7a76cc67b1dc2ce3",
+    "app/src/test/java/dev/russiancompanion/v2/OptionPresentationUiTest.kt": "6041a8be1237af210a9ae9c0388f9c528741e2a00e4d71e80e8d9d67f9c190d5",
+    "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt": "084d0431c26fa7082e770dc2e643d14ebcb2397cfd3f401a27eea7b85fcea341",
+    "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewSelectionTest.kt": "9f59fdb12c39631fcece6ad0a9f13132e25ad1592d06501a56f5d3c2d0e675f2"
+  },
+  "qualification": "Test input hashes and completed XML/events bind source96656461. Two newly added test files were strengthened after all33 test results completed while lint was pending; use FINAL for authoritative source-bound lint and latest tests. Production unchanged.",
+  "sourceRootTree": "daf475d56ec7a78fcf5cbb877bd33e546629aa85",
+  "workingDirectory": "/workspace/russian-companion",
+  "workingTreeAtStart": "CLEAN"
+}

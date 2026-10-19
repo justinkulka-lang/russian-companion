@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.OptionPresentationUiTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-19T21:01:54.847Z" hostname="d0aced911621" time="21.803">
+  <properties/>
+  <testcase name="labRendersPermutedOrderAndRetainsUnsubmittedSelectionAcrossStateRestore" classname="dev.russiancompanion.v2.OptionPresentationUiTest" time="13.501"/>
+  <testcase name="newReviewRendersVersionedOrderAndRecordsClickedOptionValues" classname="dev.russiancompanion.v2.OptionPresentationUiTest" time="2.848"/>
+  <testcase name="existingLegacyReviewKeepsAuthoredOrderAndClickedOptionMeaning" classname="dev.russiancompanion.v2.OptionPresentationUiTest" time="2.145"/>
+  <testcase name="lessonRendersPermutedOrderAndKeepsValueSelectionAfterStateRestore" classname="dev.russiancompanion.v2.OptionPresentationUiTest" time="1.361"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[System.logW: A resource failed to call close. 
+System.logW: A resource failed to call close. 
+]]></system-err>
+</testsuite>
