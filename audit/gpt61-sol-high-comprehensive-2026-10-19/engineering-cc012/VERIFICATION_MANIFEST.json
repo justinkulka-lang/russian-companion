@@ -1,0 +1,38 @@
+{
+  "finding": "CC012",
+  "engineeringDisposition": "POSITIVE_EXISTENCE_RESCOPE_IMPLEMENTED_SCOPED_VERIFIED_PENDING_INDEPENDENT_RECHECK",
+  "sourceCommit": "fe919656bfa2775b5cc2c22f2496d4258343cfea",
+  "baselineSource": "875b4d3d48b81b376a960aae0c49dfa35bc078c9",
+  "baselineCounts": {
+    "reported": 2,
+    "passed": 0,
+    "failed": 2,
+    "errors": 0,
+    "skipped": 0
+  },
+  "finalCounts": {
+    "reported": 23,
+    "passed": 23,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "initialCompilation": "FAILED_2_PLANNED_0_EXECUTED_RETAINED",
+  "cancelledUnappliedAttempt": "EXIT143_2FAILURES_3INTERRUPTED_SKIPS_18WITHOUT_RESULT_RETAINED",
+  "completeSuite": false,
+  "scopesMustNotBeSummed": true,
+  "originalAuditStatusUnchanged": true,
+  "oldUnit7RestoreCause": "UNCONFIRMED",
+  "apk": {
+    "configuredIdentity": "dev.russiancompanion /2.0.0-dev /versionCode5",
+    "assemblyInstallSigning": "NOT_RUN",
+    "sha256Signature": "NOT_RECORDED_NO_NEW_ARTIFACT"
+  },
+  "environment": {
+    "settings": "PREVIOUSLY_SAVED_UNCHANGED",
+    "publication": "USER_CONFIRMED_INDEPENDENTLY_UNVERIFIED"
+  },
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+  "releaseApproval": false
+}

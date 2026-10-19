@@ -1,0 +1,133 @@
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:kspDebugKotlin UP-TO-DATE
+> Task :app:compileDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:bundleDebugClassesToRuntimeJar UP-TO-DATE
+> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE
+> Task :app:kspDebugUnitTestKotlin
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:packageDebugUnitTestForUnitTest UP-TO-DATE
+> Task :app:mergeDebugUnitTestManifest UP-TO-DATE
+> Task :app:processDebugUnitTestManifest UP-TO-DATE
+> Task :app:generateDebugUnitTestConfig UP-TO-DATE
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :app:compileDebugSources UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:generateDebugLintReportModel UP-TO-DATE
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:lintAnalyzeDebug UP-TO-DATE
+> Task :app:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :app:verifyReleaseGateAttachment
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes UP-TO-DATE
+
+> Task :app:testDebugUnitTest
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+Picked up JAVA_TOOL_OPTIONS: -Dhttps.proxyHost=proxy -Dhttps.proxyPort=8080 -Dhttp.proxyHost=proxy -Dhttp.proxyPort=8080 -Dhttp.nonProxyHosts=localhost|127.* -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts
+
+Unit8ExistenceSequenceTest > fullRepairRestoresPositiveInstructionAndOnlyTwoPositiveExamples FAILED
+    java.lang.AssertionError: expected:<[ex-u8-availability-0, ex-u8-availability-1]> but was:<[ex-u8-availability-0, ex-u8-availability-1, ex-u8-availability-2, ex-u8-availability-3]>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at dev.russiancompanion.v2.Unit8ExistenceSequenceTest.fullRepairRestoresPositiveInstructionAndOnlyTwoPositiveExamples(Unit8ExistenceSequenceTest.kt:30)
+
+Unit8ExistenceSequenceTest > activeAvailabilityChainDoesNotTeachOrScoreLaterAbsenceGrammar FAILED
+    java.lang.AssertionError: Unit8 must retain positive existence without analyzed absence/genitive: Choose between the admitted existence and absence lines
+    Choose between the admitted existence and absence lines
+    Presence and the nominative
+    Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+    Absence and the genitive
+    Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+    Compare the complete examples
+    Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+    Guided practice
+    Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+    Review the complete constructions
+    Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+
+    Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+
+    Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+    Independent checks
+    Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+    Which explanation accounts for the noun cases in the shown line?
+    На э́той у́лице есть францу́зы
+    In this line, the thing that exists is in the nominative case.
+    На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+    In this line, the thing that exists is in the nominative case.
+    In this line, the absent thing is in the genitive case.
+
+    The other explanation describes absence rather than the presence or simple possession shown here.
+    EXISTENCE_ABSENCE
+    На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+
+    The other explanation describes absence rather than the presence or simple possession shown here.
+    Which explanation accounts for the noun cases in the shown line?
+    В Москве́ нет ста́рых зда́ний
+    In this line, the absent thing is in the genitive case.
+    В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+    In this line, the thing that exists is in the nominative case.
+    In this line, the absent thing is in the genitive case.
+    The other explanation asserts presence or simple possession rather than the absence shown here.
+
+    EXISTENCE_ABSENCE
+    В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+    The other explanation asserts presence or simple possession rather than the absence shown here.
+
+    Which explanation accounts for the noun cases in the shown line?
+    Нет рестора́нов
+    In this line, the absent thing is in the genitive case.
+    Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+    In this line, the thing that exists is in the nominative case.
+    In this line, the absent thing is in the genitive case.
+    The other explanation asserts presence or simple possession rather than the absence shown here.
+
+    EXISTENCE_ABSENCE
+    Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+    The other explanation asserts presence or simple possession rather than the absence shown here.
+
+    Which explanation accounts for the noun cases in the shown line?
+    В Москве́ есть ста́рые зда́ния
+    In this line, the thing that exists is in the nominative case.
+    В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+    In this line, the thing that exists is in the nominative case.
+    In this line, the absent thing is in the genitive case.
+
+    The other explanation describes absence rather than the presence or simple possession shown here.
+    EXISTENCE_ABSENCE
+    В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+
+    The other explanation describes absence rather than the presence or simple possession shown here.
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.assertTrue(Assert.java:42)
+        at org.junit.Assert.assertFalse(Assert.java:65)
+        at dev.russiancompanion.v2.Unit8ExistenceSequenceTest.activeAvailabilityChainDoesNotTeachOrScoreLaterAbsenceGrammar(Unit8ExistenceSequenceTest.kt:19)
+AUDIT_CLASS dev.russiancompanion.v2.Unit8ExistenceSequenceTest: 2 reported, 0 passed, 2 failed, 0 skipped

@@ -1,0 +1,170 @@
+{
+  "sourceCommit": "fe919656bfa2775b5cc2c22f2496d4258343cfea",
+  "exitCode": 0,
+  "testCounts": {
+    "reported": 23,
+    "passed": 23,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 5,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "completedAgreementNeedsADifferentIndependentAdjective",
+      "outcome": "PASSED",
+      "seconds": "15.101"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "guidedAndOtherCorrectPairsCannotCompleteTheIndependentAdjective",
+      "outcome": "PASSED",
+      "seconds": "1.581"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "restoringTheOriginalValidFormSelectionCannotClearDistinctAdjectiveEvidence",
+      "outcome": "PASSED",
+      "seconds": "13.07"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "coherentNativeTextAndHashForgeryCannotChangeTheBlueSource",
+      "outcome": "PASSED",
+      "seconds": "7.078"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "coordinatedKeyAndApplicationCannotMakeTheSingularAPluralAnswer",
+      "outcome": "PASSED",
+      "seconds": "6.614"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "playerRejectsTheSingularBlueFormAndExplainsTheNumber",
+      "outcome": "PASSED",
+      "seconds": "6.097"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "allSixCardsPrecedePracticeAndRemediationRestoresThem",
+      "outcome": "PASSED",
+      "seconds": "0.564"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "unaccentedSourcePairAndOtherCorrectFieldsArePreserved",
+      "outcome": "PASSED",
+      "seconds": "5.643"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8AgreementTransferTest",
+      "method": "historicalFourAnswerCompletionStaysSavedButCannotCreditCurrentContent",
+      "outcome": "PASSED",
+      "seconds": "1.078"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+      "outcome": "PASSED",
+      "seconds": "111.338"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+      "outcome": "PASSED",
+      "seconds": "3.914"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "11.617"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "actualUnit8ContinueNominativeAgreementCueTeachingPracticeReturnAndAdvanceStayOnUnit8",
+      "outcome": "PASSED",
+      "seconds": "12.7"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit7RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "0.702"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "71.043"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "heldUnit8WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "6.331"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8ExistenceHistoryTest",
+      "method": "historicalCreditStepAndResumeSurviveBackupButCannotCreditTheNewUnit",
+      "outcome": "PASSED",
+      "seconds": "9.577"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8ExistenceHistoryTest",
+      "method": "positiveObjectiveNeedsEachIndependentAnswerAndLabsUseCurrentItems",
+      "outcome": "PASSED",
+      "seconds": "2.327"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8ExistenceHistoryTest",
+      "method": "restoringTheOriginalAnalysisOrForgingTheNewTupleFailsClosed",
+      "outcome": "PASSED",
+      "seconds": "18.293"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8ExistenceHistoryTest",
+      "method": "frozenEvidenceOtherObjectivesAndLaterGenitiveStayExact",
+      "outcome": "PASSED",
+      "seconds": "4.443"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8ExistenceSequenceTest",
+      "method": "fullRepairRestoresPositiveInstructionAndOnlyTwoPositiveExamples",
+      "outcome": "PASSED",
+      "seconds": "1.796"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8ExistenceSequenceTest",
+      "method": "activeAvailabilityChainDoesNotTeachOrScoreLaterAbsenceGrammar",
+      "outcome": "PASSED",
+      "seconds": "0.802"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8ExistenceUiTest",
+      "method": "wrongPositiveAnswerRepairsBothExamplesAndReturnsThroughTheGuide",
+      "outcome": "PASSED",
+      "seconds": "24.571"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedSourceInventoryMatchesFreshXmlAndEvents": true,
+  "xmlFreshRelativeToRunScript": true,
+  "completeSuite": false,
+  "scopesNotSummed": true
+}

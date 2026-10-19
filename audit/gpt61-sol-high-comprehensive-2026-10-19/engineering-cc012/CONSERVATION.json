@@ -1,0 +1,21 @@
+{
+  "beforeSource": "7c369a8ce8adf7571046ec83331de0630765b759",
+  "afterSource": "fe919656bfa2775b5cc2c22f2496d4258343cfea",
+  "allOther29UnitsExact": true,
+  "unit8OtherObjectivesSessionsAndRulesExact": true,
+  "preChange626ItemIdsPreserved": true,
+  "changedMutableItemIds": [
+    "u8-g-availability-0",
+    "u8-i-availability-1",
+    "u8-i-availability-2",
+    "u8-i-availability-3"
+  ],
+  "other622ItemsExact": true,
+  "all821ExamplesExact": true,
+  "original6989ProvenanceExact": true,
+  "addedPendingRecords": 35,
+  "inverseDeclaredDeltaEqualsEntireOriginalPack": true,
+  "all66ArchiveHashesMatch": true,
+  "catalogDocsReviewTreesExact": true,
+  "twoRegressionMethodsIdenticalAcrossCorrection": true
+}
