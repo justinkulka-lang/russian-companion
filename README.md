@@ -1,0 +1,5 @@
+# Private reference attachment
+
+This branch contains only the user-provided Penguin reference for private consultation by the independent auditor. It is intentionally separate from the application branch. Do not merge this branch, package the book, copy book prose/exercises/answer keys into app assets, or include the PDF in audit result archives. No app release or signing is authorized. Repository visibility must remain private while this attachment is retained.
+
+The user explicitly requested GitHub storage of this attachment. Claude Code may retrieve it through authenticated GitHub access into a private path outside the project checkout. Record the actual input hash from REFERENCE_IDENTITY.json. This new upload is NOT byte-identical to the earlier private attachment;do not claim continuity or rely on the earlier0c441ffd pin for these bytes. Inspect edition/content alignment independently. Physical Galaxy S26 Ultra airplane-mode/reboot acceptance remains last after the independent comprehensive audit.

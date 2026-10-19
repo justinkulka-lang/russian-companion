@@ -1,0 +1,14 @@
+{
+  "filename": "The_New_Penguin_Russian_Course.pdf",
+  "sha256": "2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303",
+  "bytes": 13596737,
+  "inputBasis": "User explicitly supplied this new attachment and requested GitHub storage on2026-10-19",
+  "previousAttachmentSha256": "0c441ffd8855b292922a40b10935d5ffb1b088b7118acfcc1856e259dc01867a",
+  "previousAttachmentBytes": 13572361,
+  "sameBytesAsPreviousAttachment": false,
+  "editionOrContentEquivalence": "NOT_ESTABLISHED;auditor must inspect actual edition and book alignment",
+  "private": true,
+  "appBranchStorage": false,
+  "appAsset": false,
+  "mergeOrReleaseAuthorization": false
+}
