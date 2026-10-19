@@ -1,0 +1,87 @@
+{
+  "rawItems": 626,
+  "rawCorrectPositionCounts": {
+    "1": 41,
+    "0": 561,
+    "2": 10,
+    "3": 6,
+    "4": 3,
+    "5": 3,
+    "6": 1,
+    "7": 1
+  },
+  "rawRequiredItems": 429,
+  "rawRequiredCorrectPositionCounts": {
+    "0": 379,
+    "2": 9,
+    "1": 27,
+    "3": 6,
+    "4": 3,
+    "6": 1,
+    "5": 3,
+    "7": 1
+  },
+  "allDeclaredCheckItems": 432,
+  "nonGatingDeclaredCheckItems": [
+    "u27-i-present-passive-1",
+    "u27-i-present-passive-2",
+    "u27-i-stress-1"
+  ],
+  "routes": {
+    "lesson": {
+      "displays": 620,
+      "correctPositionCounts": {
+        "2": 101,
+        "1": 223,
+        "0": 275,
+        "3": 14,
+        "4": 3,
+        "7": 1,
+        "5": 3
+      },
+      "alwaysFirstCorrect": 275
+    },
+    "required": {
+      "displays": 429,
+      "correctPositionCounts": {
+        "0": 198,
+        "2": 66,
+        "1": 151,
+        "4": 3,
+        "3": 7,
+        "7": 1,
+        "5": 3
+      },
+      "alwaysFirstCorrect": 198
+    },
+    "lab": {
+      "displays": 626,
+      "correctPositionCounts": {
+        "0": 250,
+        "2": 95,
+        "1": 267,
+        "3": 9,
+        "6": 2,
+        "4": 1,
+        "7": 1,
+        "5": 1
+      },
+      "alwaysFirstCorrect": 250
+    },
+    "review": {
+      "displays": 626,
+      "correctPositionCounts": {
+        "1": 234,
+        "2": 104,
+        "0": 269,
+        "3": 9,
+        "4": 3,
+        "6": 2,
+        "5": 3,
+        "7": 2
+      },
+      "alwaysFirstCorrect": 269
+    }
+  },
+  "scope": "Static independent reconstruction, to compare with executed Kotlin corpus test. Lab mixed and synthetic corpus review context are bounded projections, not every possible review assignment. The 429 required items exclude three non-gating Unit27 checks."
+}

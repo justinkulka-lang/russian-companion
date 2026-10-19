@@ -1,0 +1,73 @@
+{
+  "sourceCommit": "952ec9d2de5f3f14de2148ab7960c5d42d0f3acf",
+  "inputTrees": {
+    "app/src/main": "49e335f58233a6200f0538a365059c3842422abb",
+    "app/src/test": "b2b4cc3d0452d5310d4e735f363ca1082628c09f",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-Daudit.events.path=/workspace/artifacts/cc015-present/CORRECTED/EVENTS.jsonl",
+    "testDebugUnitTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit4PresentTeachingTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit4PresentRepairUiTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit4NominativeRoleTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit4CumulativeReviewTest",
+    "--tests",
+    "dev.russiancompanion.v2.OptionPresentationTest",
+    "--tests",
+    "dev.russiancompanion.v2.OptionPresentationUiTest",
+    "--rerun",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=4",
+    "--console=plain"
+  ],
+  "selectors": [
+    "dev.russiancompanion.v2.Unit4PresentTeachingTest",
+    "dev.russiancompanion.v2.Unit4PresentRepairUiTest",
+    "dev.russiancompanion.v2.Unit4NominativeRoleTest",
+    "dev.russiancompanion.v2.Unit4CumulativeReviewTest",
+    "dev.russiancompanion.v2.OptionPresentationTest",
+    "dev.russiancompanion.v2.OptionPresentationUiTest"
+  ],
+  "activation": "source /workspace/setup/android-env.sh",
+  "expectedMethods": 33,
+  "scope": "Selected host methods only;not full suite",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblySigning": "NOT_RUN",
+  "sourceTestHashes": {
+    "app/src/test/java/dev/russiancompanion/v2/Unit4PresentTeachingTest.kt": "b34070ac9acfaa7c192c316270476ae94318fd47beb70ca2942f6fdede31e02b",
+    "app/src/test/java/dev/russiancompanion/v2/Unit4PresentRepairUiTest.kt": "89d24679ded50dba1e5f1b2efc3b647c5aafd8d9786b48edaff4ceb7861e424a",
+    "app/src/test/java/dev/russiancompanion/v2/Unit4NominativeRoleTest.kt": "5e135e5782ae7e3d13052e73973511dd813b72ac2d4de8a0b33a6537a2e00b15",
+    "app/src/test/java/dev/russiancompanion/v2/Unit4CumulativeReviewTest.kt": "6cc45ec44c8075b8f2005bd79f1398420296b066193cd02a746da349baa8bac3",
+    "app/src/test/java/dev/russiancompanion/v2/OptionPresentationTest.kt": "eaa38fd1abebdb3c8191ed3515ec5086270e1940f96a380b8c2a0b9a2e10246b",
+    "app/src/test/java/dev/russiancompanion/v2/OptionPresentationUiTest.kt": "7ab3b7e531548fa2a49aeb6ae91e755ad0349ad10882f1926b333df82121aaad"
+  },
+  "sourceRootTree": "287514c0f2c677cc9db71d1082317052e26b6519",
+  "workingDirectory": "/workspace/russian-companion",
+  "workingTreeAtStart": "CLEAN"
+}

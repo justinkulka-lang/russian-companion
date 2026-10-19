@@ -1,0 +1,14 @@
+{
+  "freezeVerified": true,
+  "sourceRevision": "50e210c4803237779cb562bc1abcea529066031c",
+  "files": {
+    "catalog/sources/units-3-5/FREEZE.json": "aa8540c76db690c1becd4822a9c2de41a49b1adcb0557b6e73a7ed29838174f6",
+    "catalog/sources/units-3-5/openrussian/verbs.csv": "8659de6799b949fb35f080b08088fb7d347ed300490954ebb380a31642646e1d",
+    "catalog/sources/units-3-5/openrussian/LICENSE": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+    "catalog/sources/units-3-5/wikibooks/verbs-4233876.txt": "6602c585f3e568dc1de280e7e77b0a26b15927b95dad754207d1fdf29726bca3",
+    "catalog/sources/units-3-5/wikibooks/verbs-4233876.revision.json": "7fe226cf5e75dff79af946307589033f7ef848e2343d7542e0fc043f60353ecd",
+    "catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40"
+  },
+  "reuse": "Exact previously admitted lexical fields, no new native string generation or paradigm approval",
+  "qualifiedAcceptance": false
+}
