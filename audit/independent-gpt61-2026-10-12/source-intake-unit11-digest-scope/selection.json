@@ -1,0 +1,15 @@
+{
+  "selectedMethods": {
+    "Units1620SourceIntakeTest": [
+      "structuralMappingsMatchTheOwnedEditionObservations",
+      "frozenSourceBytesAndRevisionsStayImmutable",
+      "everyRussianSpanOccursInItsRecordedSource",
+      "unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance",
+      "unitEighteenCannotBecomeContentCompleteWithoutComparisonAndRelativeSources",
+      "unitNineteenCannotBecomeContentCompleteWithoutConditionalAndObligationSources",
+      "unitTwentyCannotBecomeContentCompleteFromARedLinkVerbPageOrDictionaryRows",
+      "learnerFacingTextDropsWikibooksEmphasisAndKeepsTheFrozenSource",
+      "noPenguinContentOrPrivatePdfEnteredGit"
+    ]
+  }
+}

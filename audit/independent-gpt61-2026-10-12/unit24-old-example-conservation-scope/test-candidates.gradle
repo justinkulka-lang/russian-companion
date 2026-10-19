@@ -1,0 +1,2 @@
+// Exact Unit24 class only;all12methods;unchanged runtime/exporter exclusions.
+allprojects { tasks.withType(Test).configureEach { include '**/Unit24ContextTransferTest.class' } }

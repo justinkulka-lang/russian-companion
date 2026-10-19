@@ -1,0 +1,58 @@
+{
+  "historicalBaseline": "3b8b6df0150d406f8f71a2bc7eebd1a19a301eba",
+  "oldExamples": 813,
+  "currentExamples": 817,
+  "everyOldObjectAndItsOrderExact": true,
+  "missingOrMutatedOldExamples": [],
+  "addedExamples": [
+    {
+      "id": "ex-u6-animacy-transfer-chair",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "\u042f \u0434\u0435\u0301\u043b\u0430\u043b \u0441\u0442\u0443\u043b.",
+      "note": "The chair is the masculine inanimate direct object; its accusative form matches nominative.",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u6-animacy"
+    },
+    {
+      "id": "ex-u4-nom-student",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "\u0421\u0442\u0443\u0434\u0435\u043d\u0442 \u043d\u043e\u0432\u044b\u0439",
+      "note": "The student is new",
+      "sourceId": "src-wikibooks-russian-cc-by-sa",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u4-nominative"
+    },
+    {
+      "id": "ex-u3-\u0434\u0440\u0443\u0433",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "\u0434\u0440\u0443\u0433",
+      "note": "friend",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u3-gender"
+    },
+    {
+      "id": "ex-u3-\u0434\u0432\u0435\u0440\u044c",
+      "kind": "LEXICAL",
+      "letterId": "",
+      "display": "\u0434\u0432\u0435\u0440\u044c",
+      "note": "door",
+      "sourceId": "src-openrussian-50e210c4",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "objectiveId": "obj-u3-gender"
+    }
+  ],
+  "additionCorrectionSources": {
+    "audit/content-corrections/UNIT24_CONTEXT_TRANSFER_CORRECTION.json": "94f1ec2405c8719d4575a26b708f44a69159fbb67d94aeb29b515c9be7ce2a29",
+    "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/CORRECTION.json": "8c1f7ab9e1eda2d5b0d75ef7a2d6036849fe45f643abcce1c7333d2ac608b2d1",
+    "audit/independent-gpt61-2026-10-12/ia005-unit4-nominative/SOURCE_REVIEW.md": "82551232dc29ba742d6b9009b90bad8eba3b7e71f879a3d27b28e21fa986fe12",
+    "audit/content-corrections/UNIT6_ANIMACY_TRANSFER_CORRECTION.json": "e3d808091845a609ba066c75e1f16bc4fc7bd82a4e97e963853a6a21fd570cb6"
+  },
+  "privatePdfUsed": false,
+  "nativeSourceOrRightsChanges": false,
+  "qualification": "Added objects were already tracked before this followup;this test-only change supplies no new native/source/rights admission."
+}

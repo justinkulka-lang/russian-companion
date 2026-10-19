@@ -1,0 +1,18 @@
+{
+  "selectedMethods": {
+    "Unit24ContextTransferTest": [
+      "completedContextReadingNeedsDistinctGuidedAndIndependentExamples",
+      "correctIndependentPersuasionItemsAndOptionalOriginalReadingArePreserved",
+      "optionalReferenceKeepsTeachingAndSavedSelectionButCannotCreditOrBlockRequiredChecks",
+      "guidedSubjectFocusAndOneReadingCannotCompleteBothPersuasionRequirements",
+      "playerRejectsLackOfNeedInTheNeverAgreeContext",
+      "allThreeCardsPrecedePracticeAndFullRemediationKeepsAmbiguity",
+      "originalRepeatedGuidedContrastCannotBeRestoredAsRequiredPractice",
+      "coordinatedGuidedKeyAndApplicationCannotReverseSubjectAndDestinationFocus",
+      "coherentNativeHashForgeryCannotChangeTheGuidedSource",
+      "coordinatedOriginalPersuasionMeaningSwapCannotReverseTheFrozenEvidence",
+      "historicalThreeAnswerCompletionStaysSavedButCannotCreditCurrentContent",
+      "exactSelectionsAndAllOldExamplesValidateWithoutIndependentSubjectFocusClaim"
+    ]
+  }
+}

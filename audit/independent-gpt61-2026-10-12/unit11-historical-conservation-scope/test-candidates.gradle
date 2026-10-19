@@ -1,0 +1,2 @@
+// Exact Unit11 class only;all five current/historical methods;unchanged exclusions/classpath.
+allprojects { tasks.withType(Test).configureEach { include '**/Unit11AgreementRemediationTest.class' } }

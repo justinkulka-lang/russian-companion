@@ -1,0 +1,32 @@
+{
+  "sourceBefore": "e73928b57208325d6753468ea10104460b168a61",
+  "classes": {
+    "Unit11AgreementRemediationTest": {
+      "beforeSha256": "b7d4d2c9074f7161c407fd1012b552a13e858fa1c396863c6e35521f95d69aec",
+      "afterSha256": "f32c35f7fbd9381312ab0a06eadfa7c5329fa25b0d7b520e0e0732e0f2e6554e",
+      "changedMethods": [
+        "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException"
+      ],
+      "originalChangedMethods": {
+        "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException": "    @Test fun unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException() {\n        val p = pack(); val old = baseline()\n        assertEquals(declaredAfterSession(), session(p))\n        assertEquals(old, p.copy(units = old.units, provenanceRecords = p.provenanceRecords.dropLast(1)))\n        assertEquals(old.unit(11)!!.advancement, p.unit(11)!!.advancement)\n        assertEquals(8, p.unit(11)!!.advancement!!.minimumDistinctChecks)\n        assertEquals(old.items, p.items); assertEquals(old.examples, p.examples)\n        assertEquals(old.provenanceRecords, p.provenanceRecords.dropLast(1))\n        assertNull(cumulativeReviewPolicy(31))\n    }"
+      },
+      "unchangedMethodSha256": {
+        "completeAgreementTeachingPrecedesPracticeAndRepairRestoresTheCheckedForms": "19f2604648083c71813b3a5d40348d1cf67bfc8c481f980bc7b7d6f2520c88f4",
+        "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard": "def47786c70ad3fbc390aabcffc1f71ece061b25fd90d31f47337862e7f8692e",
+        "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction": "db1a5923f0f9aba4adff561ce5bea0887a7dd932ab538584f33ce8103aa06d25",
+        "wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer": "cff9f3e45a5ecb2e42bdb42f0871822fa5c7f0932af2859f9ee0aaefe93614b3"
+      },
+      "change": "Bind only historical whole-pack conservation to actual37e6a0 correction asset;every original assertion remains. Append independent whole-current-Unit11/session/items/examples/provenance/capability conservation against that actual archive. All four other methods and current pack() helper remain exact."
+    }
+  },
+  "newTestAnnotations": 0,
+  "productionChanges": false,
+  "archiveUsedAsCurrentAcceptance": false,
+  "formalAcceptance": false,
+  "runtime": "PENDING_INITIAL",
+  "originalBroadFailure": {
+    "sourceCommit": "6d91a7defadcf24faf583cdb1b9a4e029b5a1553",
+    "manifest": "../broader-regression-2026-10-18/CURRENT_REGRESSION/MANIFEST.json",
+    "status": "FULL_RAW_EVIDENCE_PRESERVED"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "selectedMethods": {
+    "Unit11AgreementRemediationTest": [
+      "completeAgreementTeachingPrecedesPracticeAndRepairRestoresTheCheckedForms",
+      "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+      "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+      "wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer"
+    ],
+    "Unit24ContextTransferTest": [
+      "completedContextReadingNeedsDistinctGuidedAndIndependentExamples",
+      "correctIndependentPersuasionItemsAndOptionalOriginalReadingArePreserved",
+      "optionalReferenceKeepsTeachingAndSavedSelectionButCannotCreditOrBlockRequiredChecks",
+      "guidedSubjectFocusAndOneReadingCannotCompleteBothPersuasionRequirements",
+      "playerRejectsLackOfNeedInTheNeverAgreeContext",
+      "allThreeCardsPrecedePracticeAndFullRemediationKeepsAmbiguity",
+      "originalRepeatedGuidedContrastCannotBeRestoredAsRequiredPractice",
+      "coordinatedGuidedKeyAndApplicationCannotReverseSubjectAndDestinationFocus",
+      "coherentNativeHashForgeryCannotChangeTheGuidedSource",
+      "coordinatedOriginalPersuasionMeaningSwapCannotReverseTheFrozenEvidence",
+      "historicalThreeAnswerCompletionStaysSavedButCannotCreditCurrentContent",
+      "exactSelectionsAndAllOldExamplesValidateWithoutIndependentSubjectFocusClaim"
+    ],
+    "Units1620SourceIntakeTest": [
+      "structuralMappingsMatchTheOwnedEditionObservations",
+      "frozenSourceBytesAndRevisionsStayImmutable",
+      "everyRussianSpanOccursInItsRecordedSource",
+      "unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance",
+      "unitEighteenCannotBecomeContentCompleteWithoutComparisonAndRelativeSources",
+      "unitNineteenCannotBecomeContentCompleteWithoutConditionalAndObligationSources",
+      "unitTwentyCannotBecomeContentCompleteFromARedLinkVerbPageOrDictionaryRows",
+      "learnerFacingTextDropsWikibooksEmphasisAndKeepsTheFrozenSource",
+      "noPenguinContentOrPrivatePdfEnteredGit"
+    ]
+  }
+}

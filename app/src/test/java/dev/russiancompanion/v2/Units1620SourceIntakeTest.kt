@@ -70,7 +70,18 @@ class Units1620SourceIntakeTest {
         assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", pack.unit(26)!!.readiness)
         assertEquals(emptySet<Int>(), pack.units.filter { it.readiness == "NOT_PREPARED" }.map { it.number }.toSet())
         preservedContentDigests.forEach { (number, digest) ->
-            assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+            if (number == 11) {
+                val beforeReviewAndRepair = historicalSourcePack("5e49fdd5727d933a68a94a0479ca95b9c5c14ea9")
+                assertEquals("historical unit11", digest, V2Validator.unitContentReviewDigest(beforeReviewAndRepair, 11))
+                val afterRepair = historicalSourcePack("37e6a0cbd7de30a539e90a0481f6ab8c5c562ed9")
+                // Original correction ledger's newUnit11Digest,not a freshly bumped snapshot.
+                val declaredAfterDigest = "35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69"
+                assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(afterRepair, 11))
+                assertEquals(afterRepair.unit(11), pack.unit(11))
+                assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
+            } else {
+                assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+            }
         }
     }
 
@@ -183,7 +194,7 @@ class Units1620SourceIntakeTest {
         assertFalse(reason(pack, 20).contains("red link"))
         listOf(17).forEach { number ->
             val unit = pack.unit(number)!!
-            val decision = advancementDecision(
+            val decision = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
                 pack,
                 unit,
                 learner(
@@ -194,11 +205,16 @@ class Units1620SourceIntakeTest {
                 ),
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            val full = advancementDecision(pack, unit, learner(number, book = true,
+                correct = (unit.objectives.flatMap { it.checkItemIds } + unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }).toSet(),
+                steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet()))
+            assertFalse(full.allowed)
+            assertEquals(listOf("Complete the assigned earlier-objective review"), full.remaining)
             assertFalse(decision.remaining.any { it.contains("not prepared") })
         }
         listOf(16, 18, 19, 20).forEach { number ->
             val unit = pack.unit(number)!!
-            val decision = advancementDecision(
+            val decision = dev.russiancompanion.v2.curriculum.ordinaryUnitRequirements(
                 pack,
                 unit,
                 learner(
@@ -209,6 +225,11 @@ class Units1620SourceIntakeTest {
                 ),
             )
             assertTrue(decision.remaining.joinToString("\n"), decision.allowed)
+            val full = advancementDecision(pack, unit, learner(number, book = true,
+                correct = (unit.objectives.flatMap { it.checkItemIds } + unit.sessions.flatMap { it.steps }.flatMap { it.itemIds }).toSet(),
+                steps = unit.sessions.flatMap { it.steps }.map { it.id }.toSet()))
+            assertFalse(full.allowed)
+            assertEquals(listOf("Complete the assigned earlier-objective review"), full.remaining)
         }
     }
 
@@ -403,6 +424,14 @@ class Units1620SourceIntakeTest {
         assertTrue(candidate.contains("\"frozen\": false"))
         assertTrue(candidate.contains("\"sourceCommit\": null"))
         assertTrue(candidate.contains("AT-031"))
+    }
+
+    private fun historicalSourcePack(commit: String): V2CurriculumPack {
+        val process = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json")
+            .directory(repo()).start()
+        val historical = V2PackLoader.parse(process.inputStream.bufferedReader().readText())
+        assertEquals(0, process.waitFor())
+        return historical
     }
 
     private fun withoutCapabilities(pack: V2CurriculumPack, number: Int) = pack.copy(

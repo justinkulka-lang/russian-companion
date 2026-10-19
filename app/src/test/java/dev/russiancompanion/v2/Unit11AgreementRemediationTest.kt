@@ -32,7 +32,7 @@ class Unit11AgreementRemediationTest {
         val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
     @Test fun unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException() {
-        val p = pack(); val old = baseline()
+        val p = correctionEraPack(); val old = baseline()
         assertEquals(declaredAfterSession(), session(p))
         assertEquals(old, p.copy(units = old.units, provenanceRecords = p.provenanceRecords.dropLast(1)))
         assertEquals(old.unit(11)!!.advancement, p.unit(11)!!.advancement)
@@ -40,6 +40,20 @@ class Unit11AgreementRemediationTest {
         assertEquals(old.items, p.items); assertEquals(old.examples, p.examples)
         assertEquals(old.provenanceRecords, p.provenanceRecords.dropLast(1))
         assertNull(cumulativeReviewPolicy(31))
+        // The global conservation assertion belongs to the exact correction era.
+        // Independently pin the whole current Unit11 and all of its evidence.
+        val live = pack()
+        assertFalse("Later whole-pack changes must not be silently normalized", p == live)
+        assertEquals(p.unit(11), live.unit(11))
+        assertEquals(declaredAfterSession(), session(live))
+        val objectives = p.unit(11)!!.objectives.map { it.id }.toSet()
+        assertEquals(p.items.filter { it.objectiveId in objectives }, live.items.filter { it.objectiveId in objectives })
+        val examples = (p.unit(11)!!.objectives.flatMap { it.exampleIds } +
+            old.unit(11)!!.sessions.flatMap { it.steps }.flatMap { it.exampleIds }).distinct()
+        assertEquals(examples.map { p.example(it) }, examples.map { live.example(it) })
+        assertEquals(p.provenanceRecords.filter { it.unitNumber == 11 }, live.provenanceRecords.filter { it.unitNumber == 11 })
+        assertEquals(p.authoredEnglishRecords.filter { it.unitNumber == 11 }, live.authoredEnglishRecords.filter { it.unitNumber == 11 })
+        assertEquals(p.sourceCapabilities.filter { it.unitNumber == 11 }, live.sourceCapabilities.filter { it.unitNumber == 11 })
     }
     @Test fun oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard() {
         val p = pack(); val old = baseline()
@@ -105,6 +119,16 @@ class Unit11AgreementRemediationTest {
     companion object {
         private fun root() = File(if (File("app").isDirectory) "." else "..")
         private val current by lazy { V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
+        private val corrected by lazy {
+            val command = ProcessBuilder("git", "show",
+                "37e6a0cbd7de30a539e90a0481f6ab8c5c562ed9:app/src/main/assets/content/v2-curriculum.json")
+                .directory(root()).start()
+            V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also {
+                assertEquals(0, command.waitFor())
+                V2PackIdentityIndex.warm(it)
+            }
+        }
+        private fun correctionEraPack(): V2CurriculumPack = corrected
         private val previous by lazy {
             val command = ProcessBuilder("git", "show", "ea3ef13a866edab83c024a317a52fc750e359787:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
             V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }

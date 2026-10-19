@@ -100,7 +100,11 @@ class Unit24ContextTransferTest {
         }
     }
     @Test fun exactSelectionsAndAllOldExamplesValidateWithoutIndependentSubjectFocusClaim() {
-        val p=pack();val old=baseline();assertEquals(old.examples,p.examples);val rs=p.provenanceRecords.filter { it.itemId.startsWith("prov-u24-context-transfer-native-") };assertEquals(8,rs.size)
+        val p=pack();val old=baseline()
+        val oldExampleIds=old.examples.map { it.id }.toSet()
+        assertEquals(old.examples.size,oldExampleIds.size)
+        assertEquals(old.examples,p.examples.filter { it.id in oldExampleIds })
+        val rs=p.provenanceRecords.filter { it.itemId.startsWith("prov-u24-context-transfer-native-") };assertEquals(8,rs.size)
         val source=File(root(),"catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt").readText();rs.forEach { assertTrue(it.originalSourceText in source);assertTrue(it.shippedText in V2Validator.unfoldWikiLabels(it.originalSourceText));assertEquals(sha(it.originalSourceText),it.sourceHash) }
         val ref=p.unit(24)!!.objectives.single { it.id=="obj-u24-persuasion-reference" };assertFalse(ref.gating);assertEquals("GUIDANCE",ref.kind)
         val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)

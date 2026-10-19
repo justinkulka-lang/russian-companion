@@ -1,0 +1,11 @@
+{
+  "selectedMethods": {
+    "Unit11AgreementRemediationTest": [
+      "completeAgreementTeachingPrecedesPracticeAndRepairRestoresTheCheckedForms",
+      "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+      "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+      "wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer"
+    ]
+  }
+}
