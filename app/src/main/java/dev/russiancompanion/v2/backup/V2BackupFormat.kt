@@ -7,6 +7,7 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import java.io.File
 import java.io.ByteArrayOutputStream
+import java.io.RandomAccessFile
 import java.security.DigestOutputStream
 import java.io.IOException
 import java.io.InputStream
@@ -501,10 +502,19 @@ internal fun writeGovernedBackup(
     document: GovernedLearnerDocument,
     recordingFiles: List<Pair<BackupRecording, File>>,
     formatVersion: Int = BACKUP_FORMAT_VERSION,
+    limits: BackupImportLimits = BackupImportLimits(),
 ) {
     if (V2BackupFaults.failWrite) throw BackupWriteException()
     val learnerBytes = backupJson.encodeToString(GovernedLearnerDocument.serializer(), document).encodeToByteArray()
+    if (recordingFiles.size > limits.entryCount - 2) throw BackupWriteException("backup-size-limit")
+    var declaredExpanded = 0L
+    fun account(size: Long, maximum: Long) {
+        if (size < 0 || size > maximum || size > limits.expandedBytes - declaredExpanded) throw BackupWriteException("backup-size-limit")
+        declaredExpanded += size
+    }
+    account(learnerBytes.size.toLong(), limits.learnerBytes)
     val staged = recordingFiles.map { (recording, file) ->
+        account(file.length(), limits.recordingBytes)
         val path = recordingEntryPath(recording.id, recording.localFileReference)
         BackupFileRecord(path = path, sha256 = sha256(file), bytes = file.length()) to file
     }
@@ -529,28 +539,49 @@ internal fun writeGovernedBackup(
         reviewAnswerCount = document.reviewAnswers.size,
     )
     val manifestBytes = backupJson.encodeToString(BackupManifest.serializer(), manifest).encodeToByteArray()
-    ZipOutputStream(output).use { zip ->
+    account(manifestBytes.size.toLong(), limits.manifestBytes)
+    val directorySize = (files.map { it.path } + BACKUP_MANIFEST_ENTRY).sumOf { 46L + it.toByteArray(Charsets.UTF_8).size }
+    if (directorySize > limits.directoryBytes) throw BackupWriteException("backup-size-limit")
+    val budget = ImportBudget(limits.expandedBytes).apply { used = learnerBytes.size.toLong() + manifestBytes.size }
+    ZipOutputStream(BackupOutputLimit(output, limits.inputBytes)).use { zip ->
         putBytes(zip, BACKUP_MANIFEST_ENTRY, manifestBytes)
         putBytes(zip, BACKUP_LEARNER_ENTRY, learnerBytes)
         staged.forEach { (record, file) ->
             zip.putNextEntry(ZipEntry(record.path))
-            file.inputStream().use { input -> input.copyTo(zip) }
+            try {
+                file.inputStream().use { input -> copyImport(input, zip, limits.recordingBytes, budget) { false } }
+            } catch (_: BackupImportAbort) { throw BackupWriteException("backup-size-limit") }
             zip.closeEntry()
         }
     }
+}
+
+private class BackupOutputLimit(private val output: OutputStream, private val maximum: Long) : OutputStream() {
+    private var written = 0L
+    override fun write(value: Int) {
+        if (written >= maximum) throw BackupWriteException("backup-size-limit")
+        output.write(value); written++
+    }
+    override fun write(bytes: ByteArray, offset: Int, length: Int) {
+        if (length.toLong() > maximum - written) throw BackupWriteException("backup-size-limit")
+        output.write(bytes, offset, length); written += length
+    }
+    override fun flush() = output.flush()
+    override fun close() = output.close()
 }
 
 /** Import policy, independent of archive format and legacy identity schemas. */
 internal data class BackupImportLimits(
     val inputBytes: Long = 256L * 1024 * 1024,
     val entryCount: Int = 2048,
+    val directoryBytes: Long = 1024L * 1024,
     val manifestBytes: Long = 1024L * 1024,
     val learnerBytes: Long = 16L * 1024 * 1024,
     val recordingBytes: Long = 64L * 1024 * 1024,
     val expandedBytes: Long = 512L * 1024 * 1024,
 ) {
     init {
-        require(inputBytes > 0 && entryCount > 0 && manifestBytes > 0 && learnerBytes > 0 &&
+        require(inputBytes > 0 && entryCount > 0 && directoryBytes > 0 && manifestBytes > 0 && learnerBytes > 0 &&
             recordingBytes > 0 && expandedBytes > 0)
     }
 }
@@ -577,6 +608,8 @@ internal fun readGovernedBackup(
         return result
     } catch (abort: BackupImportAbort) {
         return BackupReadResult.Rejected(abort.reason)
+    } catch (_: IOException) {
+        return BackupReadResult.Rejected(BackupRejection.TRUNCATED)
     } finally {
         if (!accepted) ownedFiles.asReversed().forEach { it.delete() }
     }
@@ -606,6 +639,7 @@ private fun readBoundedBackup(
     val zipHeader = ByteArray(2)
     val headerBytes = zipFile.inputStream().use { it.read(zipHeader) }
     val looksLikeZip = headerBytes == 2 && zipHeader[0] == 'P'.code.toByte() && zipHeader[1] == 'K'.code.toByte()
+    checkZipDirectoryLimits(zipFile, limits, if (looksLikeZip) BackupRejection.TRUNCATED else BackupRejection.MALFORMED)
     val opened = try {
         ZipFile(zipFile)
     } catch (_: ZipException) {
@@ -822,6 +856,41 @@ private fun readEntry(zip: ZipFile, name: String, maximum: Long, budget: ImportB
         }
     } catch (_: IOException) {
         null
+    }
+}
+
+/** Bound ZipFile's central-directory allocation before constructing it, including ZIP64. */
+private fun checkZipDirectoryLimits(file: File, limits: BackupImportLimits, missingEnd: BackupRejection) {
+    RandomAccessFile(file, "r").use { input ->
+        val tail = ByteArray(minOf(input.length(), 65557L).toInt())
+        input.seek(input.length() - tail.size); input.readFully(tail)
+        fun unsigned(bytes: ByteArray, at: Int, count: Int): Long {
+            var value = 0L
+            for (i in 0 until count) value = value or ((bytes[at + i].toLong() and 255) shl (8 * i))
+            if (value < 0) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
+            return value
+        }
+        val end = (tail.size - 22 downTo 0).firstOrNull { i ->
+            unsigned(tail, i, 4) == 0x06054b50L && i + 22 + unsigned(tail, i + 20, 2) == tail.size.toLong()
+        } ?: throw BackupImportAbort(missingEnd)
+        var count = unsigned(tail, end + 10, 2)
+        var bytes = unsigned(tail, end + 12, 4)
+        var offset = unsigned(tail, end + 16, 4)
+        val endOffset = input.length() - tail.size + end
+        val locator = ByteArray(20)
+        if (endOffset >= 20) { input.seek(endOffset - 20); input.readFully(locator) }
+        if (unsigned(locator, 0, 4) == 0x07064b50L) {
+            val zip64Offset = unsigned(locator, 8, 8)
+            if (zip64Offset > input.length() - 56) throw BackupImportAbort(BackupRejection.TRUNCATED)
+            val record = ByteArray(56); input.seek(zip64Offset); input.readFully(record)
+            if (unsigned(record, 0, 4) != 0x06064b50L) throw BackupImportAbort(BackupRejection.TRUNCATED)
+            val recordSize = unsigned(record, 4, 8)
+            if (recordSize < 44) throw BackupImportAbort(BackupRejection.TRUNCATED)
+            if (recordSize > limits.directoryBytes) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
+            count = unsigned(record, 32, 8); bytes = unsigned(record, 40, 8); offset = unsigned(record, 48, 8)
+        }
+        if (count > limits.entryCount || bytes > limits.directoryBytes) throw BackupImportAbort(BackupRejection.RESOURCE_LIMIT)
+        if (offset > input.length() || bytes > input.length() - offset) throw BackupImportAbort(BackupRejection.TRUNCATED)
     }
 }
 

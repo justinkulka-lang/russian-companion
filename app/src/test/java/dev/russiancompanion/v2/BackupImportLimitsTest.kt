@@ -119,12 +119,66 @@ class BackupImportLimitsTest {
         assertEquals(64, accepted)
     }
 
-    private fun archive(work: File, recordings: Int = 0): ByteArray {
+    @Test fun directoryAllocationLimitRejectsBeforeOpeningTheZip() = fixture { stage, work ->
+        assertResource(read(archive(work), stage, BackupImportLimits(directoryBytes = 1)), stage)
+    }
+
+    @Test fun forgedDirectoryCountIsRejectedBeforeZipMetadataAllocation() = fixture { stage, work ->
+        val bytes = archive(work).copyOf()
+        val end = bytes.size - 22
+        for (offset in listOf(8, 10)) { bytes[end + offset] = 1; bytes[end + offset + 1] = 8 }
+        assertResource(read(bytes, stage), stage) // Declares 2049 entries in a tiny fixture.
+    }
+
+    @Test fun smallZip64ArchiveRemainsCompatibleWithDefaultPolicy() = fixture { stage, work ->
+        assertTrue(read(zip64(archive(work)), stage) is BackupReadResult.Valid)
+    }
+
+    @Test fun writerRefusesLearnerAndRecordingSizesOutsideTheImportPolicy() = fixture { _, work ->
+        for (limits in listOf(BackupImportLimits(learnerBytes = 32), BackupImportLimits(recordingBytes = 32),
+            BackupImportLimits(expandedBytes = 32), BackupImportLimits(entryCount = 1), BackupImportLimits(directoryBytes = 1))) {
+            val output = ByteArrayOutputStream()
+            try { archive(work, recordings = 1, limits = limits, output = output); fail("Oversized export reported success") }
+            catch (_: BackupWriteException) { assertEquals(0, output.size()) }
+        }
+    }
+
+    @Test fun writerStopsBeforeItsCompressedOutputExceedsTheImportInputCap() = fixture { _, work ->
+        val output = ByteArrayOutputStream()
+        try { archive(work, limits = BackupImportLimits(inputBytes = 31), output = output); fail("Oversized output accepted") }
+        catch (_: BackupWriteException) { assertTrue(output.size() <= 31) }
+    }
+
+    @Test fun writerAndReaderAcceptTheSameExactBoundaries() = fixture { stage, work ->
+        val control = archive(work, recordings = 2)
+        val parts = entries(control)
+        val limits = BackupImportLimits(inputBytes = control.size.toLong(), entryCount = parts.size,
+            directoryBytes = parts.keys.sumOf { 46L + it.toByteArray().size },
+            manifestBytes = parts.getValue(BACKUP_MANIFEST_ENTRY).size.toLong(),
+            learnerBytes = parts.getValue(BACKUP_LEARNER_ENTRY).size.toLong(), recordingBytes = recordingData.size.toLong(),
+            expandedBytes = parts.values.sumOf { it.size.toLong() })
+        val written = archive(work, recordings = 2, limits = limits)
+        assertEquals(control.size, written.size)
+        assertTrue(read(written, stage, limits) is BackupReadResult.Valid)
+    }
+
+    @Test fun conflictingDeclaredPathsRemainRejectedAndStagingIsCleaned() = fixture { stage, work ->
+        val parts = entries(archive(work)).toMutableMap()
+        val manifest = backupJson.decodeFromString(BackupManifest.serializer(), parts.getValue(BACKUP_MANIFEST_ENTRY).decodeToString())
+        parts[BACKUP_MANIFEST_ENTRY] = backupJson.encodeToString(BackupManifest.serializer(),
+            manifest.copy(files = manifest.files + manifest.files.first())).toByteArray()
+        assertEquals(BackupReadResult.Rejected(BackupRejection.UNAUTHORIZED), read(zip(parts), stage))
+        assertOnlySentinel(stage)
+    }
+
+    private fun archive(work: File, recordings: Int = 0, limits: BackupImportLimits = BackupImportLimits(),
+        output: ByteArrayOutputStream = ByteArrayOutputStream()): ByteArray {
         val base = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(root(),
             "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/UNSTARTED_REVIEW.json").readText())
         val models = (0 until recordings).map { BackupRecording("sample-$it", "test-model", "recordings/sample-$it.m4a", "test-time", false, "NOT_COMPLETED", null) }
         val files = models.map { recording -> recording to File(work, recording.id + ".m4a").apply { writeBytes(recordingData) } }
-        return ByteArrayOutputStream().also { writeGovernedBackup(it, APP, PACK, 1, "DARK", base.copy(recordings = models), files) }.toByteArray()
+        writeGovernedBackup(output, APP, PACK, 1, "DARK", base.copy(recordings = models), files, limits = limits)
+        return output.toByteArray()
     }
     private fun read(bytes: ByteArray, stage: File, limits: BackupImportLimits = BackupImportLimits()) =
         readGovernedBackup(bytes.inputStream(), APP, PACK, 1, stage, limits)
@@ -150,6 +204,22 @@ class BackupImportLimitsTest {
             z.putNextEntry(ZipEntry(name)); z.write(bytes); z.closeEntry()
         } }
     }.toByteArray()
+    private fun zip64(bytes: ByteArray): ByteArray {
+        val end = bytes.size - 22
+        fun unsigned(at: Int, count: Int): Long = (0 until count).fold(0L) { n, i ->
+            n or ((bytes[end + at + i].toLong() and 255) shl (8 * i))
+        }
+        val output = ByteArrayOutputStream()
+        fun put(n: Long, count: Int) { for (i in 0 until count) output.write((n ushr (8 * i)).toInt() and 255) }
+        output.write(bytes, 0, end)
+        put(0x06064b50, 4); put(44, 8); put(45, 2); put(45, 2); put(0, 4); put(0, 4)
+        put(unsigned(8, 2), 8); put(unsigned(10, 2), 8); put(unsigned(12, 4), 8); put(unsigned(16, 4), 8)
+        put(0x07064b50, 4); put(0, 4); put(end.toLong(), 8); put(1, 4)
+        val legacyEnd = bytes.copyOfRange(end, bytes.size)
+        for (i in 8..19) legacyEnd[i] = 255.toByte()
+        output.write(legacyEnd)
+        return output.toByteArray()
+    }
     private fun withZeroDeclaredSize(bytes: ByteArray, name: String): ByteArray = bytes.copyOf().also { copy ->
         var found = false
         for (i in 0..copy.size - 46) {
