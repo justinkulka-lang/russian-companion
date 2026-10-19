@@ -1,0 +1,257 @@
+{
+  "receiptDate": "2026-10-19",
+  "publishedArtifactsCommit": "0e5d780ba94b9efafe2d67aa403fadda6804a88d",
+  "auditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "actualTargetTree": "f95bfa3c1ae6b8ac07b42b6db9fa69c5e247830f",
+  "archive": {
+    "file": "GPT61_SAME_CHAT_AUDIT_CONTINUATION_RESULTS.zip",
+    "bytes": 601558,
+    "sha256": "199b3229665b769b043434f1d6a69abb242d91b16fd6ed26187fad1acb294185",
+    "crcVerified": true
+  },
+  "all28InternalSha256SumsVerified": true,
+  "threeUserUploadedFilesByteIdenticalToPublishedAndArchivedOriginals": true,
+  "all16RequestedDeliverablesPresent": true,
+  "allCsvWidthsAndJsonSyntaxVerified": true,
+  "targetFileInventoryAndItemHistoricalTargetAndExistingEntityIdentitiesPreserved": true,
+  "additionalEntityCount": 1,
+  "rows": {
+    "APP_ENGINEERING_AUDIT.csv": 48,
+    "BOOK_COVERAGE_CONTINUATION.csv": 30,
+    "CURRICULUM_ENTITY_COVERAGE.csv": 12034,
+    "FINDINGS.csv": 13,
+    "FINDING_RECONCILIATION.csv": 10,
+    "GAP_CLOSURE.csv": 10,
+    "ITEM_ASSESSMENT_AUDIT.csv": 622,
+    "REPOSITORY_FILE_COVERAGE.csv": 6427,
+    "REQUIREMENTS_MATRIX.csv": 195,
+    "TARGET_75_DISPOSITIONS.csv": 75,
+    "UNIT_COVERAGE.csv": 30
+  },
+  "findingsBySeverity": {
+    "HIGH": 5,
+    "MEDIUM": 8
+  },
+  "findingIds": "Package-local CC001-CC013 preserved;next CC014. Do not equate Claude-summary CC namespace.",
+  "fileInspectionCounts": {
+    "READ_COMPLETE": 23,
+    "NOT_INSPECTED": 6202,
+    "HASH_ONLY": 119,
+    "PARTIAL": 50,
+    "HISTORICAL_REFERENCE_ONLY": 33
+  },
+  "auditVerdict": "INCOMPLETE_DIAGNOSTIC",
+  "producerIntegrityAndInputClaims": "External reconstructed raw identity/projection/book review claims remain attributed to external audit;receipt checks archive/file/input-tree conservation,not every audit experiment.",
+  "actualModelAndEffort": "UNVERIFIED requested GPT-6.1 Sol / High",
+  "protectedTrees": {
+    "app/src/main": {
+      "target": "dc003ae8a25ed4b812d48423e755086e4db9ac04",
+      "publishedResultsHead": "dc003ae8a25ed4b812d48423e755086e4db9ac04"
+    },
+    "app/src/test": {
+      "target": "3492c4698787b5ce33919a8c80b9b55fce7ae5e3",
+      "publishedResultsHead": "3492c4698787b5ce33919a8c80b9b55fce7ae5e3"
+    },
+    "catalog": {
+      "target": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+      "publishedResultsHead": "af307958964fba3ec1994ec5200350fd5adb2d7f"
+    },
+    "docs": {
+      "target": "7364239dde1b40c703aaca92974413f403e928f4",
+      "publishedResultsHead": "7364239dde1b40c703aaca92974413f403e928f4"
+    },
+    "review": {
+      "target": "7e21cc644c7f55dd4d7a98b99c48fb8629908694",
+      "publishedResultsHead": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+    }
+  },
+  "runtimeTestsExecutedForReceipt": 0,
+  "apkIdentitySignature": "NO_NEW_ARTIFACT;NOT_VERIFIED_FOR_RECEIPT",
+  "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+  "worktreeInstructionDisposition": "External runtime handoff proposes detached worktree. Do not execute that step: current user/AGENTS requires one agent and existing checkout. Bind target through input-tree identity;record any later source separately.",
+  "environment": "No configuration changes. Saved publication remains user-confirmed,independently unverified.",
+  "sourceFixesOrReleaseApproval": false,
+  "duplicateOriginalFilesAdded": false,
+  "members": [
+    {
+      "archiveEntry": "APP_ENGINEERING_AUDIT.csv",
+      "bytes": 38112,
+      "sha256": "441a8dbd7e6466870c8fb638896e9c939ee3437f88271e1ee845d529aca357c3",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "AUDIT_SCOPE_AND_EVIDENCE.json",
+      "bytes": 98765,
+      "sha256": "5727129b685d424bb80216ac8868668c334c0082dbd951d797c81d74bb4259dc",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "BOOK_COVERAGE_CONTINUATION.csv",
+      "bytes": 31506,
+      "sha256": "0f7fb57ff6f5b7336cee16d781b7edf2ee0bf6db00466eb15f530ece0d86b21d",
+      "alsoTrackedAsIndividualFile": true
+    },
+    {
+      "archiveEntry": "CODEX_RETURN_HANDOFF.md",
+      "bytes": 6011,
+      "sha256": "add32a30fe2b894d0a743c444716f3193c597ad6e2acc5f70f30da674cf20c91",
+      "alsoTrackedAsIndividualFile": true
+    },
+    {
+      "archiveEntry": "CURRICULUM_ENTITY_COVERAGE.csv",
+      "bytes": 5748527,
+      "sha256": "a41b8c88d7cf89f519d3c72180ae846b865cbb808d189857ce246e5deef382a9",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "FINDINGS.csv",
+      "bytes": 19595,
+      "sha256": "44c98c5346be1b53c0164c9d632e900ee3df2796d009b20691fa7afc10f046de",
+      "alsoTrackedAsIndividualFile": true
+    },
+    {
+      "archiveEntry": "FINDING_RECONCILIATION.csv",
+      "bytes": 8533,
+      "sha256": "2c16ba95670a13670a06103d104accdd067d96d04cec6515eee1afbf27084574",
+      "alsoTrackedAsIndividualFile": true
+    },
+    {
+      "archiveEntry": "GAP_CLOSURE.csv",
+      "bytes": 5872,
+      "sha256": "b5e89e5b269fd862873284fee3cbdb6652af1eee4f358519443896076bdeee3c",
+      "alsoTrackedAsIndividualFile": true
+    },
+    {
+      "archiveEntry": "INDEPENDENT_AUDIT_REPORT.md",
+      "bytes": 13312,
+      "sha256": "31c5ce67deabf83d5d2a3a93f068d327d711a74b092c033ce76d9ab5e76ab549",
+      "alsoTrackedAsIndividualFile": true
+    },
+    {
+      "archiveEntry": "ITEM_ASSESSMENT_AUDIT.csv",
+      "bytes": 629326,
+      "sha256": "ec4ce71893cb6b3f70622441f32902ec00cecebfaf4eb0cbf8a0ffcb7dacbc11",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "REPOSITORY_FILE_COVERAGE.csv",
+      "bytes": 2071432,
+      "sha256": "de220a07be6df0910d6c12dc79615de20efe12571944df456ae9206af7783dc3",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "REQUIREMENTS_MATRIX.csv",
+      "bytes": 120213,
+      "sha256": "cd8c7bafc4cec6ce2c6b221b9362baf6004096a84ecabaf9785248def398b4d9",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "RUNTIME_VERIFICATION_HANDOFF.md",
+      "bytes": 7269,
+      "sha256": "bde4742c499b0695d55e66f88e39895b501fb3946387ddc72326e3eb11a80010",
+      "alsoTrackedAsIndividualFile": true
+    },
+    {
+      "archiveEntry": "SHA256SUMS.txt",
+      "bytes": 2688,
+      "sha256": "ebcb057563dcf372a23d4c87ff7d6cc02c6c15834a4d4bcf3a2b11d6755bb46f",
+      "alsoTrackedAsIndividualFile": true
+    },
+    {
+      "archiveEntry": "SOURCE_AND_BINDING_REVIEW.json",
+      "bytes": 125239,
+      "sha256": "e50e085b3c668502ccb21be38a634e488a05008119f2e7d6d56edca2977ac510",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "TARGET_75_DISPOSITIONS.csv",
+      "bytes": 51284,
+      "sha256": "4f1be58e48399f315bd3ea8aba40a48151ed2fc08c8592d3986f671242e990b8",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "UNIT_COVERAGE.csv",
+      "bytes": 48542,
+      "sha256": "404edab20485435325de8f59b7b010e8d9db7c3f0d19e0c9dff82a0affa66495",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "audit-change-summary.md",
+      "bytes": 2373,
+      "sha256": "e64cf3f4c2089700e22e6d787b7c47ad99ff9bc61f6aeb2671de6d340f7a5ed0",
+      "alsoTrackedAsIndividualFile": true
+    },
+    {
+      "archiveEntry": "checkpoint.json",
+      "bytes": 1332,
+      "sha256": "46cc7dce82dec1e4651d13b1918478579fe93ec9e1e4acf113f3afa5523259cc",
+      "alsoTrackedAsIndividualFile": true
+    },
+    {
+      "archiveEntry": "safe_evidence/SOURCE_GIT_PROOF.json",
+      "bytes": 7402,
+      "sha256": "b562222d0f92faa3964c7cbdea22021b2d266506e8bbcd95b3f5c56efafbe4a2",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "safe_evidence/environment_probe.json",
+      "bytes": 218,
+      "sha256": "8e50810075392447f3e689db6669e46a15a9ef4d61d472132fb683e357784a38",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "safe_evidence/finding_evidence.json",
+      "bytes": 7862,
+      "sha256": "286a2b8d117c6e9e5d1936f8868e755ba1dc07431c24572254808dea96b511ca",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "safe_evidence/input_verification.json",
+      "bytes": 877,
+      "sha256": "fa8251bb5e5f5044b0f713e19a041028108ff1f2a69c578060c441b053a12413",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "safe_evidence/input_verifier_execution.json",
+      "bytes": 1045,
+      "sha256": "aebbd800e4cdbe57143ae4f209da32ae27d26f2aa45627a104bda53ac8ab43e7",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "safe_evidence/mechanical_full_results.json",
+      "bytes": 262,
+      "sha256": "69231b2592524b9051e92cbc4dbd43e26888a81cd008cfba5f2bb30dbd38b646",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "safe_evidence/projection_file_hashes.json",
+      "bytes": 58120,
+      "sha256": "17f6513a2151e7f709961e23e66231a093b195cd92a2532fe0f227b7bedf0fcb",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "safe_evidence/tree_verification.json",
+      "bytes": 280,
+      "sha256": "f5c81834224f245b710c3db6273e93ff8d04d34981f956b18020f63157eadf77",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "safe_evidence/validation.json",
+      "bytes": 1336,
+      "sha256": "dd2cc519f454fa45195b3eb5aaa9bbb2439283462b114aa10213352ed34c9c8b",
+      "alsoTrackedAsIndividualFile": false
+    },
+    {
+      "archiveEntry": "safe_evidence/verify_reconstructed_input.py",
+      "bytes": 4765,
+      "sha256": "3f0caf6d641cdd04080c7db3b48964e3eb6a168375b316f39cf6ade09cef48f1",
+      "alsoTrackedAsIndividualFile": false
+    }
+  ],
+  "userPastedSummary": {
+    "bytes": 20656,
+    "sha256": "14606d6687207f8f31e95149705ff31ec21f4a302458fd7bf95f445ccf245233",
+    "publicationClaimVerifiedAgainstGit": true,
+    "summaryNotDuplicated": "Includes already preserved report/handoff;archive and originals are canonical."
+  }
+}
