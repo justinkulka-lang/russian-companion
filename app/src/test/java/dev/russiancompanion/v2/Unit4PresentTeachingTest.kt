@@ -139,14 +139,14 @@ class Unit4PresentTeachingTest {
     private fun context(): Context = ApplicationProvider.getApplicationContext()
     companion object {
         val root get() = File(if (File("app").isDirectory) "." else "..")
-        val current by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
-        val previous by lazy {
+        internal val current by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
+        internal val previous by lazy {
             val process = ProcessBuilder("git", "show", "b5e1daf50ac8597d00aeb6976f894d3ce44c03ca:app/src/main/assets/content/v2-curriculum.json").directory(root).start()
             V2PackLoader.parse(process.inputStream.bufferedReader().readText()).also { assertEquals(0, process.waitFor()); V2PackIdentityIndex.warm(it) }
         }
-        fun present(p: V2CurriculumPack) = p.unit(4)!!.sessions.single { it.id == "u4-s-present" }
-        fun objective(p: V2CurriculumPack) = p.unit(4)!!.objectives.single { it.id == "obj-u4-present" }
-        fun declaredAfterUnit(): V2Unit {
+        internal fun present(p: V2CurriculumPack) = p.unit(4)!!.sessions.single { it.id == "u4-s-present" }
+        internal fun objective(p: V2CurriculumPack) = p.unit(4)!!.objectives.single { it.id == "obj-u4-present" }
+        internal fun declaredAfterUnit(): V2Unit {
             val correction = backupJson.parseToJsonElement(File(root,
                 "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-cc015/CORRECTION.json").readText()).jsonObject
             return backupJson.decodeFromJsonElement(V2Unit.serializer(), correction.getValue("afterUnit"))
