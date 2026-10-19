@@ -10,9 +10,12 @@ internal object OriginalApplicationTuplePins {
 
     private const val COMPLETION_APPLICATIONS = "6751f6b0ce9cc15fcc38a3d326f1e65a30a5866081bd19d6bc6b4fdd49cfabcc"
 
+    private const val MANNER_APPLICATIONS = "610003e259e4529bf95af1154c752d3ef57e34262bcf2f9cb6bd66d13245263e"
+
     /** Other synthesis paths retain their existing checks pending separate negative regressions. */
     fun matchesIfPinned(record: V2ProvenanceRecord): Boolean {
         val (sourceHash, tupleHash) = when(record.sourceRecordId) {
+            Phase2Sources.MANNER.recordId -> Phase2Sources.MANNER.sourceHash to MANNER_APPLICATIONS
             Phase2Sources.COMPLETION.recordId -> Phase2Sources.COMPLETION.sourceHash to COMPLETION_APPLICATIONS
             Phase3Sources.READING.recordId -> Phase3Sources.READING.sourceHash to READING_APPLICATIONS
             Phase3Sources.DICTIONARY.recordId -> Phase3Sources.DICTIONARY.sourceHash to DICTIONARY_APPLICATIONS
