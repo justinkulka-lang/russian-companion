@@ -1,5 +1,7 @@
 # Codex continuation
 
+Current NEW independent audit request: [GPT-6.1 Sol / High start prompt](audit/gpt61-sol-high-comprehensive-2026-10-19/COPY_PASTE_PROMPT.md), pinned target `5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed`. Read that directory's twelve-deliverable specification and RETURN_AND_CHECKPOINT.md. The missing Claude results remain unavailable;this is a fresh diagnostic audit,not formal stage approval. Publish audit artifacts only to PR64 before ending the audit session. Private reference access is included;physical acceptance remains LAST.
+
 Latest received audit: [summary-only triage and next step](audit/claude-code-comprehensive-2026-10-19/received-summary-2026-10-19/NEXT_REVIEW.md). Only the pasted summary is received; the actual twelve results are unavailable. Do not treat it as a completed audit or invent missing findings.
 
 Read the [engineering continuation](audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md) and [latest checkpoint](audit/content-corrections/CODEX_CHECKPOINT_2026-10-12.md) before editing. Use one agent and the existing checkout on `cursor/content-audit-corrections-964f`, Draft PR64.

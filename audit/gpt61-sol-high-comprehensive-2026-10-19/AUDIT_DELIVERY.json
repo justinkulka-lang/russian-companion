@@ -1,0 +1,52 @@
+{
+  "auditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "repository": "justinkulka-lang/russian-companion",
+  "branch": "cursor/content-audit-corrections-964f",
+  "draftPr": 64,
+  "requestedModel": "gpt-6.1-sol",
+  "requestedEffort": "high",
+  "actualAuditPerformed": false,
+  "requiredDeliverables": 12,
+  "trackedFiles": 6427,
+  "curriculumEntityRows": 12003,
+  "fullPacket": {
+    "file": "GPT61_Sol_High_Comprehensive_Audit_5c176eb2.zip",
+    "bytes": 74854067,
+    "sha256": "8326a6e03bffe8e30a3479d0e469e37822f61ea88a1e58a5419f493a4476c15d"
+  },
+  "instructionsKit": {
+    "file": "GPT61_Sol_High_Audit_Instructions_and_Templates.zip",
+    "bytes": 687644,
+    "sha256": "8fdcaf47c495fdc4f6ff921aeb7042c067fd4919fc8bd274249b12648868acf8",
+    "requiresRepositoryAccess": true
+  },
+  "parts": [
+    {
+      "file": "GPT61_Sol_High_Comprehensive_Audit_5c176eb2.zip.part01",
+      "bytes": 26214400,
+      "sha256": "65c706c10cce34450a2c39864d6b83d0727caf16ba66b2f91afc9e688739f43b"
+    },
+    {
+      "file": "GPT61_Sol_High_Comprehensive_Audit_5c176eb2.zip.part02",
+      "bytes": 26214400,
+      "sha256": "d9fa6f0e053d0a7a875783013eb0f477c110d8831787d473b1b42183501db129"
+    },
+    {
+      "file": "GPT61_Sol_High_Comprehensive_Audit_5c176eb2.zip.part03",
+      "bytes": 22425267,
+      "sha256": "cff73102550eaf57d7566cdfd8d57fd7a9841c946b3b6178b0e4ef5f65258e47"
+    }
+  ],
+  "verification": {
+    "fullGitCommitTreeAndAllBlobsVerified": true,
+    "allEntryHashesVerified": true,
+    "csvWidthsVerified": true,
+    "twelveTemplates": true,
+    "partReassemblyVerified": true,
+    "privatePdfIncluded": false
+  },
+  "sourceChanges": false,
+  "runtimeTestsExecutedForPackaging": 0,
+  "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+  "releaseApproval": false
+}
