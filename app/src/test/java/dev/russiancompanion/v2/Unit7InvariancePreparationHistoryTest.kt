@@ -32,23 +32,34 @@ class Unit7InvariancePreparationHistoryTest {
     }
     @Test fun oldAcceptedWorkAndResumeStayStoredThroughBackupReopenButNeedCurrentWork() {
         val p=current();val old=previous();val id="u7-i-adverb-invariance-1";val teach="u7-st-teach-adverb-invariance-2"
+        val repair="u7-st-rem-adverb-invariance";val english="u7-st-teach-adverb-invariance-english"
         val name="invariance-preparation-${System.nanoTime()}.db";val dir=File(context().cacheDir,"invariance-preparation-${System.nanoTime()}")
         try {
             LocalStore.openInMemory(context()).use { s ->
                 record(old,s,id,old.item(id)!!.answer)
                 s.v2CompleteGovernedStep(teach,governedStepCompletionDigest(old,s.v2LearnerView(),teach)!!,"old")
+                s.v2CompleteGovernedStep(repair,governedStepCompletionDigest(old,s.v2LearnerView(),repair)!!,"old")
                 val at=old.step(teach)!!
                 s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted=true,currentUnitNumber=7,startingPoint="RESUME_FROM_BOOK",currentSessionId=at.first.id,currentStepIndex=at.first.steps.indexOf(at.second)).verifiedResume(old))
                 val before=s.governedLearnerDocument()
                 assertTrue(id in creditItemIds(old,s.v2LearnerView()));assertTrue(resumeIsCurrent(old,s.v2LearnerView()))
                 assertTrue(completedStepCounts(old,s.v2LearnerView(),teach))
+                assertTrue(completedStepCounts(old,s.v2LearnerView(),repair))
                 assertFalse(id in creditItemIds(p,s.v2LearnerView()));assertFalse(resumeIsCurrent(p,s.v2LearnerView()))
-                assertFalse(completedStepCounts(p,s.v2LearnerView(),teach));assertEquals(before,s.governedLearnerDocument())
+                // Step completion binds the step's own content, not the entire changed unit.
+                assertTrue(completedStepCounts(p,s.v2LearnerView(),teach))
+                assertFalse(completedStepCounts(p,s.v2LearnerView(),repair))
+                assertFalse(completedStepCounts(p,s.v2LearnerView(),english));assertEquals(before,s.governedLearnerDocument())
                 val bytes=ByteArrayOutputStream();writeGovernedBackup(bytes,"dev.russiancompanion",p.packId,p.packVersion,"FOLLOW_SYSTEM",before,emptyList())
                 val read=readGovernedBackup(bytes.toByteArray().inputStream(),"dev.russiancompanion",p.packId,p.packVersion,dir) as BackupReadResult.Valid
                 LocalStore.openNamed(context(),name).use { t->assertEquals(GovernedReplaceOutcome.REPLACED,t.replaceGovernedLearner(read.backup.document,emptyList())) }
                 LocalStore.openNamed(context(),name).use { t->
                     assertEquals(before,t.governedLearnerDocument());assertFalse(resumeIsCurrent(p,t.v2LearnerView()))
+                    assertTrue(completedStepCounts(p,t.v2LearnerView(),teach))
+                    assertFalse(completedStepCounts(p,t.v2LearnerView(),repair))
+                    assertFalse(completedStepCounts(p,t.v2LearnerView(),english))
+                    t.v2CompleteGovernedStep(english,governedStepCompletionDigest(p,t.v2LearnerView(),english)!!,"new")
+                    assertTrue(completedStepCounts(p,t.v2LearnerView(),english))
                     record(p,t,id,p.item(id)!!.answer);assertTrue(id in creditItemIds(p,t.v2LearnerView()))
                     assertEquals(before.attempts,t.governedLearnerDocument().attempts.take(before.attempts.size))
                     val now=p.step("u7-st-teach-adverb-invariance-1")!!
