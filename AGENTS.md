@@ -1,5 +1,7 @@
 # Codex continuation
 
+Current broad-run continuation: [V2 completion recorder and 25-case provisional triage](audit/gpt61-sol-high-comprehensive-2026-10-19/post-correction-broad-2026-10-20/AUTO_COMPLETION_RECORDER_V2.md). Gradle26178 remains active at source8bff21a3;V1 stopped before publication,V2 replaces it solely to compress full raw messages and bound summary previews. Snapshot918results:892passed/25failed/1skipped;402uncompleted,not final. No input changes. Preserve all failures;physical acceptanceLAST.
+
 Current engineering checkpoint: [fresh broad host regression RUNNING](audit/gpt61-sol-high-comprehensive-2026-10-19/post-correction-broad-2026-10-20/NEXT_REVIEW.md). Discovery1320methods/218classes at `8bff21a3d5c4104709cde6e203d65ef7df3a935c`;actual run IN_PROGRESS,not a complete-suite result. Preserve pending inputs and raw failures;read RUNNING_CHECKPOINT.json before resuming.
 
 Automatic completion recorder: [operation and recovery](audit/gpt61-sol-high-comprehensive-2026-10-19/post-correction-broad-2026-10-20/AUTO_COMPLETION_RECORDER.md). The recorder is active as toolsession64639 and waits for Gradle26178;do not start a second publisher. Check external FINALIZER.log/PUBLICATION_COMPLETE.json for actual completion.
