@@ -2175,3 +2175,8 @@ Read post-correction-broad-2026-10-20/RESTORE_PREFLIGHT_DIAGNOSTIC/ENGINEERING_O
 ## Review-rule allocation diagnostic and queued9-method follow-up
 
 Read post-correction-broad-2026-10-20/REVIEW_RULE_DIAGNOSTIC/ENGINEERING_OBSERVATION.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Original failed equality differs only legacy/current response-rule and derived assignment digest. Separate Java probe preserves all4saved assignments/current identity/raw order/unknown-rule refusal;no JUnit or database claim. Reviewed one-test-file patch is queued only after successful20/20metadata publication,then commits/tests9existingmethods and saves raw outcomes. Check externalreview-rule-diagnostic/CHAIN.log/APPLIED.json/PUBLICATION_COMPLETE.json;no future result claimed. Do not duplicate/apply manually/change active inputs. Original failures remain;cachewarm unqueued. AuditINCOMPLETE;physicalLAST.
+
+
+## Missing/interrupted continuation completed
+
+Separate continuation at `78e0d1701f10cfa7cf623c8b3dacc9c661f574be`:248reported/239passed/9failed/0errors/0skipped;fresh selected XML/events reconcile exactly. Original stopped broad:1074partial binary/event records,1038SUCCESS/33FAILURE/3SKIPPED,no finalXML/exit. Two interrupted skips overlap explicitly;all1320discovered identities have per-scope records at identical input trees. This is not an uninterrupted complete-suite result or full app/curriculum acceptance. Original33failures and all new failures remainOPEN. Read post-correction-broad-2026-10-20/CONTINUATION_COMPLETE/ENGINEERING_CHANGE_REPORT.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. No acceptance;physicalLAST.

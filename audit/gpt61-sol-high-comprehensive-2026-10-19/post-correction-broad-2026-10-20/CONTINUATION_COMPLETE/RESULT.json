@@ -1,0 +1,1520 @@
+{
+  "sourceCommit": "78e0d1701f10cfa7cf623c8b3dacc9c661f574be",
+  "exitCode": 1,
+  "testCounts": {
+    "reported": 248,
+    "passed": 239,
+    "failed": 9,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 41,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit16CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "81.247"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit16CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "22.369"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit16CumulativeReviewTest",
+      "method": "heldUnit16WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "7.147"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit16CumulativeReviewTest",
+      "method": "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+      "outcome": "PASSED",
+      "seconds": "104.599"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit16CumulativeReviewTest",
+      "method": "actualUnit16ContinueImperativeFormCueTeachingPracticeReturnAndAdvanceStayOnUnit16",
+      "outcome": "PASSED",
+      "seconds": "22.336"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit17CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit16RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "12.262"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit17CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "84.384"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit17CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "27.707"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit17CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoKeepRawUnit17HistoryWithoutInventingCreditOrRepairingUnit11",
+      "outcome": "PASSED",
+      "seconds": "39.895"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit17CumulativeReviewTest",
+      "method": "heldUnit17WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "7.557"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit17CumulativeReviewTest",
+      "method": "actualUnit17ContinueInstrumentalPluralCueTeachingPracticeReturnAndAdvanceStayOnUnit17",
+      "outcome": "PASSED",
+      "seconds": "28.066"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit17CumulativeReviewTest",
+      "method": "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+      "outcome": "PASSED",
+      "seconds": "122.814"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit18CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit17RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "1.294"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit18CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "89.712"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit18CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "29.554"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit18CumulativeReviewTest",
+      "method": "heldUnit18WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "8.815"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit18CumulativeReviewTest",
+      "method": "actualUnit18ContinueQuestionMeaningCueTeachingPracticeReturnAndAdvanceStayOnUnit18",
+      "outcome": "PASSED",
+      "seconds": "29.317"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit18CumulativeReviewTest",
+      "method": "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+      "outcome": "PASSED",
+      "seconds": "142.249"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit18CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoKeepRawUnit18HistoryWithoutInventingCreditOrRepairingUnit11",
+      "outcome": "PASSED",
+      "seconds": "38.57"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit20CumulativeReviewTest",
+      "method": "heldUnit20WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "84.486"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit20CumulativeReviewTest",
+      "method": "actualUnit20ContinueConditionalAgreementCueTeachingPracticeReturnAndAdvanceStayOnUnit20",
+      "outcome": "PASSED",
+      "seconds": "32.802"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit20CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "35.66"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit20CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit19RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "0.481"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit20CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "32.44"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit20CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoKeepRawUnit20HistoryWithoutInventingCreditOrRepairingUnit11",
+      "outcome": "PASSED",
+      "seconds": "43.808"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit20CumulativeReviewTest",
+      "method": "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+      "outcome": "PASSED",
+      "seconds": "177.536"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest",
+      "method": "possessionTracksSubjectButAgreementTracksThePossessedNoun",
+      "outcome": "PASSED",
+      "seconds": "4.952"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest",
+      "method": "omittedEmptyFinalAuditObjectsDecodeToIdenticalTypedEvidence",
+      "outcome": "PASSED",
+      "seconds": "1.387"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest",
+      "method": "completeInstructionAndRemediationCoverEveryCheckedCueBeforePractice",
+      "outcome": "PASSED",
+      "seconds": "0.148"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest",
+      "method": "causalCheckHasNoSynonymousSinceDistractorAndAdmittedBindingsStayValid",
+      "outcome": "PASSED",
+      "seconds": "6.203"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit23TimeInstructionTest",
+      "method": "omittedContinueAndEmptyStepListsHaveIdenticalTypedMeaning",
+      "outcome": "PASSED",
+      "seconds": "1.728"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit23TimeInstructionTest",
+      "method": "checkedMeaningsKeepAdmittedRelationshipsAndWrongKeysStillFail",
+      "outcome": "PASSED",
+      "seconds": "6.419"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit23TimeInstructionTest",
+      "method": "eachTemporalContrastPrecedesPracticeAndReturnsInCompleteRemediation",
+      "outcome": "PASSED",
+      "seconds": "0.171"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit23TimeInstructionTest",
+      "method": "intervalCaseAndCompletionAreNotConfusedWithDurationOrNoncompletion",
+      "outcome": "PASSED",
+      "seconds": "0.122"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit25CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "197.795"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit25CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit24RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "0.493"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit25CumulativeReviewTest",
+      "method": "heldUnit25WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "14.027"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit25CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "47.033"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit25CumulativeReviewTest",
+      "method": "actualUnit25ContinueNegativeSentenceCueTeachingPracticeReturnAndAdvanceStayOnUnit25",
+      "outcome": "PASSED",
+      "seconds": "52.111"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit25CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoKeepRawUnit25HistoryWithoutInventingCreditOrRepairingUnit11",
+      "outcome": "PASSED",
+      "seconds": "70.082"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit25CumulativeReviewTest",
+      "method": "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+      "outcome": "PASSED",
+      "seconds": "323.622"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoKeepRawUnit26HistoryWithoutInventingCreditOrRepairingUnit11",
+      "outcome": "PASSED",
+      "seconds": "79.833"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "215.74"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26CumulativeReviewTest",
+      "method": "heldUnit26WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "13.747"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit25RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "0.588"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "51.195"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26CumulativeReviewTest",
+      "method": "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+      "outcome": "PASSED",
+      "seconds": "3255.579"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26LetterInstructionTest",
+      "method": "completeFrameworkPrecedesPracticeAndReturnsAfterAMiss",
+      "outcome": "PASSED",
+      "seconds": "0.698"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26LetterInstructionTest",
+      "method": "exactResearchAdmissionRejectsLegacyCapabilityAndForgery",
+      "outcome": "PASSED",
+      "seconds": "13.648"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26LetterInstructionTest",
+      "method": "suppliedOrganizationAndGreetingInferenceReplaceUniversalKeys",
+      "outcome": "PASSED",
+      "seconds": "0.188"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26WrittenInstructionTest",
+      "method": "letterCaseTeachingSeparatesRecipientContextFromPluralShape",
+      "outcome": "PASSED",
+      "seconds": "0.74"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26WrittenInstructionTest",
+      "method": "correspondenceTeachingDistinguishesEnclosureClosingAndProductionLimits",
+      "outcome": "PASSED",
+      "seconds": "9.446"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26WrittenInstructionTest",
+      "method": "addressMarksTeachingExplainsEveryRetainedComponentAndRestoresAllExamples",
+      "outcome": "PASSED",
+      "seconds": "0.38"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit27PastInstructionTest",
+      "method": "requiredStressTeachingDistinguishesTheAccentedVowelAndCorrectsTheCompetingLabel",
+      "outcome": "PASSED",
+      "seconds": "0.346"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit27PastInstructionTest",
+      "method": "meaningChecksRejectSourcePositionRecallAndOptionalPresentFormsStayOutsideGating",
+      "outcome": "PASSED",
+      "seconds": "5.342"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit27PastInstructionTest",
+      "method": "completePastPassiveMeaningAndFormTeachingPrecedesPracticeAndRestoresEveryExample",
+      "outcome": "PASSED",
+      "seconds": "0.277"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+      "method": "heldUnit28WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "211.739"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoKeepRawUnit28HistoryWithoutInventingCreditOrRepairingUnit11",
+      "outcome": "PASSED",
+      "seconds": "84.531"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "69.233"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "57.614"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+      "method": "actualUnit28ContinuePastPassiveMeaningCueTeachingPracticeReturnAndAdvanceStayOnUnit28",
+      "outcome": "PASSED",
+      "seconds": "65.039"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit27RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "0.648"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+      "method": "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+      "outcome": "PASSED",
+      "seconds": "422.561"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28InstructionTest",
+      "method": "timingIsRelativeAndTheExplicitMainSubjectPerformsBothActions",
+      "outcome": "PASSED",
+      "seconds": "0.138"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28InstructionTest",
+      "method": "mutableMetadataCannotDropTheMainClauseFromAContextualCue",
+      "outcome": "PASSED",
+      "seconds": "0.158"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28InstructionTest",
+      "method": "passageInstructionPrecedesPracticeAndDistinguishesEpisodes",
+      "outcome": "PASSED",
+      "seconds": "0.138"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28InstructionTest",
+      "method": "newPendingProvenanceAndFullProductionValidationRemainValid",
+      "outcome": "PASSED",
+      "seconds": "2.802"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28InstructionTest",
+      "method": "remediationRestoresAllCardsAndThePreviouslyOmittedThirdExample",
+      "outcome": "PASSED",
+      "seconds": "0.136"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest",
+      "method": "coordinatedApplicationAndKeyEditsCannotMakeLivingPast",
+      "outcome": "PASSED",
+      "seconds": "3.123"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest",
+      "method": "historicalOppositeLabelAttemptSurvivesButCannotCreditTheReplacement",
+      "outcome": "PASSED",
+      "seconds": "0.273"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest",
+      "method": "creditedCheckMustInterpretADistinctAdmittedFormRatherThanTheOppositeLabel",
+      "outcome": "PASSED",
+      "seconds": "2.873"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest",
+      "method": "playerRejectsPastLabelForLivingAndKeepsTheCorrectExplanation",
+      "outcome": "PASSED",
+      "seconds": "1.912"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29CumulativeReviewTest",
+      "method": "actualUnit29ContinueRelativeFutureTimingCueTeachingPracticeReturnAndAdvanceStayOnUnit29",
+      "outcome": "PASSED",
+      "seconds": "294.79"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "77.882"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "63.365"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoKeepRawUnit29HistoryWithoutInventingCreditOrRepairingUnit11",
+      "outcome": "PASSED",
+      "seconds": "99.981"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit28RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "1.442"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29CumulativeReviewTest",
+      "method": "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+      "outcome": "PASSED",
+      "seconds": "486.902"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29CumulativeReviewTest",
+      "method": "heldUnit29WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "17.328"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "optionalReferenceHasTeachingButNoGrammarCredit",
+      "outcome": "PASSED",
+      "seconds": "2.768"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "categoryAndConnectiveCreditMustNotDemonstrateContextualPunctuation",
+      "outcome": "PASSED",
+      "seconds": "0.375"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "coordinatedKeyAndApplicationCannotRemovePronounComma",
+      "outcome": "PASSED",
+      "seconds": "3.492"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "coherentNativeTextAndHashForgeryCannotRemoveTerminalComma",
+      "outcome": "PASSED",
+      "seconds": "3.482"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "newSourceCannotBorrowAnOlderAdmittedRevisionOrAddGhostRecord",
+      "outcome": "PASSED",
+      "seconds": "5.222"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "playerRejectsNoCommaForPersonalPronoun",
+      "outcome": "PASSED",
+      "seconds": "0.695"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "sourceNormalizationPreservesCompleteWordsAndPunctuation",
+      "outcome": "PASSED",
+      "seconds": "0.178"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "originalDefaultAnswersCannotCompleteExpandedPunctuation",
+      "outcome": "PASSED",
+      "seconds": "0.261"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "restoringOriginalContrastCategoryCannotClearPunctuationCapability",
+      "outcome": "PASSED",
+      "seconds": "2.871"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "authenticHistoricalCompletionStaysSavedButCannotCreditNewChecks",
+      "outcome": "PASSED",
+      "seconds": "0.507"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest",
+      "method": "playerRejectsClosingCommaAtSentenceEnd",
+      "outcome": "PASSED",
+      "seconds": "0.694"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "331.349"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30CumulativeReviewTest",
+      "method": "heldUnit30WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "20.948"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "71.24"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30CumulativeReviewTest",
+      "method": "actualUnit30ContinueActiveParticipleTimeCueTeachingPracticeReturnAndTerminalCompletionStayOnUnit30",
+      "outcome": "PASSED",
+      "seconds": "86.295"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoKeepRawUnit30HistoryWithoutInventingCreditOrRepairingUnit11",
+      "outcome": "PASSED",
+      "seconds": "109.194"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit29RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "0.771"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30CumulativeReviewTest",
+      "method": "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+      "outcome": "PASSED",
+      "seconds": "545.915"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30LanguageCorrectionTest",
+      "method": "coordinatedPrimaryNameTextAndHashForgeryIsRejected",
+      "outcome": "PASSED",
+      "seconds": "8.739"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30LanguageCorrectionTest",
+      "method": "playerRejectsSingularAgreementAndCaseEndingsForUSA",
+      "outcome": "PASSED",
+      "seconds": "2.724"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30LanguageCorrectionTest",
+      "method": "optionalReferenceAnswersCannotCreditTheLanguageObjectives",
+      "outcome": "PASSED",
+      "seconds": "3.806"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30LanguageCorrectionTest",
+      "method": "authenticReferenceHistorySurvivesButCannotCreditNewLanguageContent",
+      "outcome": "PASSED",
+      "seconds": "0.677"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30LanguageCorrectionTest",
+      "method": "playerRejectsAnotherLettersRussianName",
+      "outcome": "PASSED",
+      "seconds": "0.967"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30LanguageCorrectionTest",
+      "method": "restoringValidOriginalContrastItemsCannotClearTheLanguageChain",
+      "outcome": "PASSED",
+      "seconds": "3.461"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30LanguageCorrectionTest",
+      "method": "languageCompletionMustNotDependOnEnglishTableOrHeadingAnswers",
+      "outcome": "PASSED",
+      "seconds": "0.389"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30LanguageCorrectionTest",
+      "method": "coordinatedKeyAndApplicationMutationCannotRenameB",
+      "outcome": "PASSED",
+      "seconds": "3.189"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit4CumulativeReviewTest",
+      "method": "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+      "outcome": "PASSED",
+      "seconds": "5.931"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit4CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit3RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "1.168"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit4CumulativeReviewTest",
+      "method": "heldUnit4WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "1.095"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit4CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+      "outcome": "PASSED",
+      "seconds": "1.244"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit4CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "1.719"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit4CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "9.651"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit4CumulativeReviewTest",
+      "method": "actualUnit4ContinueGenderCueTeachingPracticeReturnAndAdvanceStayOnUnit4",
+      "outcome": "PASSED",
+      "seconds": "2.977"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit4PresentRepairUiTest",
+      "method": "speakingWeMissRestoresTeachingAndGuideWithoutReplacingIndependentAnswer",
+      "outcome": "PASSED",
+      "seconds": "1.525"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit4PresentRepairUiTest",
+      "method": "seeingHeMissRestoresTeachingAndGuideWithoutReplacingIndependentAnswer",
+      "outcome": "PASSED",
+      "seconds": "0.769"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit4PresentRepairUiTest",
+      "method": "goingTheyMissRestoresTeachingAndGuideWithoutReplacingIndependentAnswer",
+      "outcome": "PASSED",
+      "seconds": "0.682"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit4PresentRepairUiTest",
+      "method": "writingYouMissRestoresTeachingAndGuideWithoutReplacingIndependentAnswer",
+      "outcome": "PASSED",
+      "seconds": "0.581"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+      "outcome": "PASSED",
+      "seconds": "8.982"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "heldUnit5WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "2.181"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+      "outcome": "PASSED",
+      "seconds": "1.539"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit4RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "0.433"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "2.682"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "16.026"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "actualUnit5ContinueSubjectCueTeachingPracticeReturnAndAdvanceStayOnUnit5",
+      "outcome": "PASSED",
+      "seconds": "2.848"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+      "outcome": "PASSED",
+      "seconds": "20.056"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "actualUnit6ContinueNounBehaviorCueTeachingPracticeReturnAndAdvanceStayOnUnit6",
+      "outcome": "PASSED",
+      "seconds": "5.94"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+      "outcome": "PASSED",
+      "seconds": "2.101"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "4.978"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit5RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "0.564"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "22.332"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "heldUnit6WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "2.561"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6WiderPolicyTest",
+      "method": "newSubjectUiRepairsFullTeachingAndRequiresAllThreeFreshAssignedAnswers",
+      "outcome": "PASSED",
+      "seconds": "2.898"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6WiderPolicyTest",
+      "method": "genuineLegacyUiKeepsTwoChecksAndBoundNounRepairInsteadOfNewObligation",
+      "outcome": "PASSED",
+      "seconds": "2.167"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6WiderPolicyTest",
+      "method": "currentAndDownstreamOldSnapshotsRejectChangedContentAndAcceptOnlyExactPriorDeclaration",
+      "outcome": "PASSED",
+      "seconds": "162.569"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6WiderPolicyTest",
+      "method": "versionsRolesLinksEpochAndPacklessWritesFailClosedWithoutChangingHistory",
+      "outcome": "PASSED",
+      "seconds": "0.744"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6WiderPolicyTest",
+      "method": "genuineOldPartialTasksUseOwnEligibilityAndActualLegacyPolicyOnAdvance",
+      "outcome": "PASSED",
+      "seconds": "1.408"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6WiderPolicyTest",
+      "method": "genuinePriorPackDeclaresV1AndCannotAcceptFutureV2Tasks",
+      "outcome": "PASSED",
+      "seconds": "1.148"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6WiderPolicyTest",
+      "method": "threeFreshSlotsUseBothNonFirstCandidatesAndRequireAllAnswersBeforeActualAdvance",
+      "outcome": "PASSED",
+      "seconds": "3.31"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7CumulativeReviewTest",
+      "method": "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+      "outcome": "PASSED",
+      "seconds": "48.172"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+      "outcome": "PASSED",
+      "seconds": "2.943"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "8.253"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit6RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "0.493"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7CumulativeReviewTest",
+      "method": "actualUnit7ContinueInanimateCaseCueTeachingPracticeReturnAndAdvanceStayOnUnit7",
+      "outcome": "PASSED",
+      "seconds": "7.369"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "51.2"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7CumulativeReviewTest",
+      "method": "heldUnit7WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "4.14"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest",
+      "method": "originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact",
+      "outcome": "PASSED",
+      "seconds": "8.628"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest",
+      "method": "oldAcceptedWorkAndResumeStayStoredThroughBackupReopenButNeedCurrentWork",
+      "outcome": "PASSED",
+      "seconds": "1.127"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7InvariancePreparationUiTest",
+      "method": "wrongWordingAnswerRestoresTheWholeRuleAndReturnsThroughTheOriginalGuide",
+      "outcome": "PASSED",
+      "seconds": "7.097"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+      "outcome": "PASSED",
+      "seconds": "68.807"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+      "outcome": "PASSED",
+      "seconds": "4.146"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "11.848"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "actualUnit8ContinueNominativeAgreementCueTeachingPracticeReturnAndAdvanceStayOnUnit8",
+      "outcome": "PASSED",
+      "seconds": "13.418"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit7RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "0.786"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "70.506"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "method": "heldUnit8WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "6.536"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8ExistenceSequenceTest",
+      "method": "fullRepairRestoresPositiveInstructionAndOnlyTwoPositiveExamples",
+      "outcome": "PASSED",
+      "seconds": "0.478"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8ExistenceSequenceTest",
+      "method": "activeAvailabilityChainDoesNotTeachOrScoreLaterAbsenceGrammar",
+      "outcome": "PASSED",
+      "seconds": "0.255"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PluralInstructionTest",
+      "method": "laterSpellingNeedsItsOwnReverseNounAndAdjectiveEvidence",
+      "outcome": "PASSED",
+      "seconds": "0.284"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PluralInstructionTest",
+      "method": "authenticOldSevenAnswerHistoryIsPreservedButStaleAfterInstructionRenewal",
+      "outcome": "PASSED",
+      "seconds": "0.636"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PluralInstructionTest",
+      "method": "earlierSevenAnswerPluralCompletionCannotCreditLaterSpellingReinforcement",
+      "outcome": "PASSED",
+      "seconds": "0.721"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PluralInstructionTest",
+      "method": "everyPluralCardPrecedesPracticeAndFullRemediationRestoresFourteenForms",
+      "outcome": "PASSED",
+      "seconds": "0.179"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PluralInstructionTest",
+      "method": "playerRejectsSingularWordForPluralAndOffersFullPluralRemediation",
+      "outcome": "PASSED",
+      "seconds": "0.851"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PluralInstructionTest",
+      "method": "unit8ScoredObjectsAndAllPriorNativeExamplesAndProvenanceRemainIdentical",
+      "outcome": "FAILED",
+      "seconds": "0.445"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9CompositionFeedbackCorrectionTest",
+      "method": "compositionAndAgreementFeedbackExplainsTheSourceDistinctions",
+      "outcome": "PASSED",
+      "seconds": "4.643"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9CompositionFeedbackCorrectionTest",
+      "method": "historicalGenericFeedbackCreditIsRetainedButStale",
+      "outcome": "PASSED",
+      "seconds": "0.296"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9CompositionFeedbackCorrectionTest",
+      "method": "wrongThousandsGroupDisplaysTheCaseDistinction",
+      "outcome": "PASSED",
+      "seconds": "1.011"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9NumberFeedbackCorrectionTest",
+      "method": "historicalGenericFeedbackCreditIsRetainedButStale",
+      "outcome": "PASSED",
+      "seconds": "0.248"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9NumberFeedbackCorrectionTest",
+      "method": "wrongHundredsSelectionDisplaysTheDifferentValues",
+      "outcome": "PASSED",
+      "seconds": "0.886"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9NumberFeedbackCorrectionTest",
+      "method": "numberFeedbackDistinguishesActualValuesAndPlaceValue",
+      "outcome": "PASSED",
+      "seconds": "3.2"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9ReinforcementReviewTest",
+      "method": "oneHourNominativeExplanationCannotCreditOtherBasicCountingPatterns",
+      "outcome": "PASSED",
+      "seconds": "0.332"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9ReinforcementReviewTest",
+      "method": "earlierQuantityCompletionCannotCreditTheLaterRepeatedGuideOrPatternChecks",
+      "outcome": "PASSED",
+      "seconds": "1.577"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9ReinforcementReviewTest",
+      "method": "repeatedGuideAndBasicCountsCannotReplaceRequiredAnimateAccusativeContext",
+      "outcome": "PASSED",
+      "seconds": "0.634"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9ReinforcementReviewTest",
+      "method": "allTeachingAndWorkedExamplesPrecedePracticeAndReturnInRemediation",
+      "outcome": "PASSED",
+      "seconds": "3.222"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "everyRecognitionObjectiveHasAnIndependentFeatureValidCheck",
+      "outcome": "PASSED",
+      "seconds": "6.245"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "learnerFacingReferencesDoNotDenyAPackagedLessonBody",
+      "outcome": "PASSED",
+      "seconds": "0.253"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "changingOnlySourceIdWhileRetainingSourceRecordIdFails",
+      "outcome": "PASSED",
+      "seconds": "0.179"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "retainingADirectEnglishCueWithTheSameAnswerFails",
+      "outcome": "PASSED",
+      "seconds": "0.174"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "changingProseRationaleCannotValidateAnInvalidContrast",
+      "outcome": "PASSED",
+      "seconds": "0.163"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "responseOptionsMustShareTheDeclaredKind",
+      "outcome": "PASSED",
+      "seconds": "5.605"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "unrelatedRemediationCannotSatisfyARecognitionObjective",
+      "outcome": "PASSED",
+      "seconds": "2.759"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "everyAdvancementCheckNamesOneExplicitTarget",
+      "outcome": "PASSED",
+      "seconds": "2.976"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "anUnrelatedAdmittedDistractorFails",
+      "outcome": "PASSED",
+      "seconds": "2.766"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "changingOriginalSourceTextAndHashWhileRetainingSourceRecordIdFails",
+      "outcome": "PASSED",
+      "seconds": "0.136"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "aSkippedRecognitionObjectiveDoesNotAdvance",
+      "outcome": "PASSED",
+      "seconds": "0.243"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "alteringUnitElevenDoesNotMoveEarlierUnitDigests",
+      "outcome": "PASSED",
+      "seconds": "0.274"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "aShownLineContainingItsAnswerFailsAsQualifyingEvidence",
+      "outcome": "PASSED",
+      "seconds": "0.136"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "aGenericRationaleIsNotTiedToTheTarget",
+      "outcome": "PASSED",
+      "seconds": "2.83"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "copiedSourceRecordIdWithDifferentFrozenContentCannotShareASpan",
+      "outcome": "PASSED",
+      "seconds": "0.137"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "impersonalObjectiveCannotBeSatisfiedByAnUnrelatedInflectedForm",
+      "outcome": "PASSED",
+      "seconds": "2.875"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "knownAmbiguityClassesFailClosed",
+      "outcome": "PASSED",
+      "seconds": "15.602"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "changingSourceRevisionWhileRetainingSourceRecordIdFails",
+      "outcome": "PASSED",
+      "seconds": "0.196"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "englishGlossCannotAnswerARussianSpellingQuestion",
+      "outcome": "PASSED",
+      "seconds": "2.696"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115InstructionalValidityTest",
+      "method": "learnerFacingReferenceDoesNotClaimUnpreparedUnitsHaveLessonBodies",
+      "outcome": "PASSED",
+      "seconds": "0.135"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "unitEighteenCannotBecomeContentCompleteWithoutComparisonAndRelativeSources",
+      "outcome": "PASSED",
+      "seconds": "16.151"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "everyRussianSpanOccursInItsRecordedSource",
+      "outcome": "PASSED",
+      "seconds": "0.396"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "unitNineteenCannotBecomeContentCompleteWithoutConditionalAndObligationSources",
+      "outcome": "PASSED",
+      "seconds": "9.712"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "unitTwentyCannotBecomeContentCompleteFromARedLinkVerbPageOrDictionaryRows",
+      "outcome": "PASSED",
+      "seconds": "14.212"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "frozenSourceBytesAndRevisionsStayImmutable",
+      "outcome": "PASSED",
+      "seconds": "0.004"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "noPenguinContentOrPrivatePdfEnteredGit",
+      "outcome": "PASSED",
+      "seconds": "0.076"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "structuralMappingsMatchTheOwnedEditionObservations",
+      "outcome": "FAILED",
+      "seconds": "5.383"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "learnerFacingTextDropsWikibooksEmphasisAndKeepsTheFrozenSource",
+      "outcome": "PASSED",
+      "seconds": "279.224"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance",
+      "outcome": "PASSED",
+      "seconds": "0.369"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "partialStrandsDoNotClearBroadClaimsAndOptionalMaterialDoesNotGate",
+      "outcome": "PASSED",
+      "seconds": "5.484"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "forgedMutableWrongAndExcludedSourcesStayClosed",
+      "outcome": "PASSED",
+      "seconds": "33.972"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "readingAndCorrespondenceExperiencesFailClosed",
+      "outcome": "PASSED",
+      "seconds": "23.127"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "wikipediaLicenseRouteIsNotTheWikibooksSnapshot",
+      "outcome": "PASSED",
+      "seconds": "2.752"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "presentPassiveGlossFollowsOnlyTheExplicitParenthetical",
+      "outcome": "PASSED",
+      "seconds": "10.423"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "neighboringSpansKeywordsAndInactiveVariancesStayClosed",
+      "outcome": "PASSED",
+      "seconds": "80.512"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "admittedCapabilitiesBindSpanUnitObjectiveAndClaim",
+      "outcome": "PASSED",
+      "seconds": "0.188"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+      "outcome": "FAILED",
+      "seconds": "8.425"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "retainedSourceBytesMatchTheFrozenIdentityTwice",
+      "outcome": "PASSED",
+      "seconds": "0.037"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "duplicateSpanMarkersFailClosed",
+      "outcome": "PASSED",
+      "seconds": "0.068"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units35SourceIntakeTest",
+      "method": "everyRussianCandidateHasAnAdmittedImmutableSourceAndRights",
+      "outcome": "PASSED",
+      "seconds": "6.415"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units35SourceIntakeTest",
+      "method": "excludedSourcesAndUnresolvedRevisionsFailClosed",
+      "outcome": "PASSED",
+      "seconds": "12.764"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units35SourceIntakeTest",
+      "method": "learnerGlossesAreDelimitedSensesAndEnglishClaimsFailClosed",
+      "outcome": "PASSED",
+      "seconds": "5.254"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units35SourceIntakeTest",
+      "method": "sourceMutationChangesOnlyTheAffectedDigestAndReviewerFieldsDoNot",
+      "outcome": "PASSED",
+      "seconds": "3.91"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units35SourceIntakeTest",
+      "method": "penguinMarkersStayOutAndReleaseStaysClosed",
+      "outcome": "PASSED",
+      "seconds": "0.277"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "unitsSixThroughTenStayReviewPendingAndSourceBound",
+      "outcome": "PASSED",
+      "seconds": "4.699"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "retainedSourceBytesMatchImmutableRevisions",
+      "outcome": "PASSED",
+      "seconds": "0.137"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "wrongUnitPacketSubstitutionFails",
+      "outcome": "PASSED",
+      "seconds": "2.239"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "earlierUnitDigestsStayPutAndLaterUnitsStayIsolated",
+      "outcome": "FAILED",
+      "seconds": "0.128"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "governedContrastsStaySourceBoundAndBookAttestationDoesNotAdvance",
+      "outcome": "PASSED",
+      "seconds": "0.157"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "noPenguinAudioOrNetworkWasAdded",
+      "outcome": "PASSED",
+      "seconds": "0.397"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "catalogReachabilityCountsOrphansSharesAndIntraUnitDuplicatesSeparately",
+      "outcome": "PASSED",
+      "seconds": "16.354"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "matrixUsesCanonicalDigestsReviewsAndDoesNotInventApproval",
+      "outcome": "FAILED",
+      "seconds": "16.322"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "keywordTextBookAttestationAndCountersDoNotClearRealBlockers",
+      "outcome": "PASSED",
+      "seconds": "76.33"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "unsupportedOrUntaughtObjectivesCannotAdvanceAndInstallClaimsStayUnapproved",
+      "outcome": "PASSED",
+      "seconds": "46.191"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "committedReportsMatchTheGeneratorAndStayByteIdentical",
+      "outcome": "FAILED",
+      "seconds": "15.512"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "droppedOrDuplicatedUnitsFailClosed",
+      "outcome": "PASSED",
+      "seconds": "0.208"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "narrowMarkerChecksDoNotClaimComprehensiveInspection",
+      "outcome": "PASSED",
+      "seconds": "15.769"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "aMissingManifestIsNotReportedAsAReviewPacket",
+      "outcome": "PASSED",
+      "seconds": "15.646"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "sourceSnapshotDoesNotAttestToAnEphemeralMergedManifest",
+      "outcome": "PASSED",
+      "seconds": "30.748"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "notPreparedUnitsCannotAdvanceAndReadinessChangeDoesNotClearOtherBlockers",
+      "outcome": "PASSED",
+      "seconds": "93.506"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "unavailableStepsSplitContentFromAssetAndLocalExperience",
+      "outcome": "PASSED",
+      "seconds": "61.436"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "method": "historicalRecordsAndPremiumBlueprintStayUnchanged",
+      "outcome": "PASSED",
+      "seconds": "0.357"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "method": "mappingAcceptanceFailsForInventedOrMismatchedFacts",
+      "outcome": "PASSED",
+      "seconds": "0.006"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "method": "unresolvedSourceCapabilitiesStayEmptyAndVarianceUnitsStayUnprepared",
+      "outcome": "FAILED",
+      "seconds": "0.593"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "method": "decisionPackageStatesRecommendationsAndLeavesOwnerFieldsBlank",
+      "outcome": "PASSED",
+      "seconds": "0.005"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "method": "blankMismatchedAndNonOwnerDecisionsFailClosedWithoutChangingProduction",
+      "outcome": "PASSED",
+      "seconds": "1.483"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "method": "preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+      "outcome": "FAILED",
+      "seconds": "0.751"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "method": "referenceFileComparisonCorrectsLateBoundariesAndStaysUnsigned",
+      "outcome": "PASSED",
+      "seconds": "11.181"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.ProductOwnerAcceptanceBoundaryTest",
+      "method": "productOwnerAcceptanceCannotMasqueradeAsQualifiedReview",
+      "outcome": "PASSED",
+      "seconds": "0.411"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+      "method": "contentReviewDigestSurvivesApprovalActivation",
+      "outcome": "PASSED",
+      "seconds": "14.262"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+      "method": "committedPackageMatchesTheCurriculumTraversal",
+      "outcome": "FAILED",
+      "seconds": "2.025"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+      "method": "validatorRejectsOmissionsDuplicatesBrokenLinksAndFabrication",
+      "outcome": "PASSED",
+      "seconds": "19.996"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+      "method": "reviewerAndMappingFieldsStayBlank",
+      "outcome": "PASSED",
+      "seconds": "0.478"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+      "method": "instructionalDigestChangesForEachGovernedFieldCategory",
+      "outcome": "PASSED",
+      "seconds": "11.018"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+      "method": "packageDigestIsTheInstructionalContentDigest",
+      "outcome": "PASSED",
+      "seconds": "0.834"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+      "method": "reviewPackageDoesNotBypassTheReleaseGate",
+      "outcome": "PASSED",
+      "seconds": "4.741"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedSourceInventoryMatchesFreshXmlAndEvents": true,
+  "xmlFreshRelativeToRunScript": true,
+  "completeSuite": false,
+  "scopesNotSummed": true
+}
