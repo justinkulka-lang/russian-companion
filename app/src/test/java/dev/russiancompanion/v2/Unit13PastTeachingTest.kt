@@ -140,39 +140,9 @@ class Unit13PastTeachingTest {
         val p = current
         val old = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(evidence(), "COMPLETED_UNIT14.json").readText())
         LocalStore.openInMemory(context()).use { store ->
-            fun traceRestore(label: String) {
-                val root = store.recordingDirectory()
-                println("U13_RESTORE $label root=$root exists=${root?.exists()} directory=${root?.isDirectory} parentExists=${root?.parentFile?.exists()} parentWritable=${root?.parentFile?.canWrite()}")
-                println("U13_RESTORE $label files=" + root?.parentFile?.listFiles()?.filter { it.name.contains("recordings") }?.sortedBy { it.name }?.map { "${it.name}:dir=${it.isDirectory}:length=${it.length()}" })
-                println("U13_RESTORE $label flags=" + listOf(V2BackupFaults.failBeforeMutation, V2BackupFaults.failInsideReplacement, V2BackupFaults.failAfterCommit, V2BackupFaults.failDuringFilePublish, V2BackupFaults.failJournalWrite, V2BackupFaults.failSnapshotRestore, V2BackupFaults.crashAfterFileSwapBeforeCommit))
-                println("U13_RESTORE $label guards=" + listOf(completionActivationDefects(old), reviewHistoryDefects(old.reviewAssignments, old.reviewAnswers), acceptedOrderDefects(old.attempts), backupProfileDefects(old.profile)))
-            }
-            traceRestore("before")
             store.openLearnerReplacement()
-            try {
-                val outcome = store.replaceGovernedLearner(old, emptyList())
-                traceRestore("after-$outcome")
-                if (outcome == GovernedReplaceOutcome.UNCHANGED) {
-                    val fingerprint = store.governedLearnerFingerprint()
-                    runBlocking(kotlinx.coroutines.Dispatchers.IO) {
-                        val field = LocalStore::class.java.getDeclaredField("database").apply { isAccessible = true }
-                        val database = field.get(store) as androidx.room.RoomDatabase
-                        val apply = LocalStore::class.java.getDeclaredMethod("applyGovernedDocument", GovernedLearnerDocument::class.java).apply { isAccessible = true }
-                        try {
-                            database.runInTransaction {
-                                apply.invoke(store, old)
-                                error("U13_PROBE_FORCE_ROLLBACK")
-                            }
-                        } catch (failure: Exception) {
-                            val cause = if (failure is java.lang.reflect.InvocationTargetException) failure.targetException else failure
-                            println("U13_RESTORE rollbackProbe=$cause")
-                            cause.printStackTrace(System.out)
-                        }
-                    }
-                    assertEquals("diagnostic transaction must leave no changes", fingerprint, store.governedLearnerFingerprint())
-                }
-                assertEquals(GovernedReplaceOutcome.REPLACED, outcome)
-            } finally { store.closeLearnerReplacement() }
+            try { assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(old, emptyList())) }
+            finally { store.closeLearnerReplacement() }
             for (number in 13..14) {
                 ordinary(p, store, number)
                 assertTrue(ordinaryUnitRequirements(p, p.unit(number)!!, store.v2LearnerView()).allowed)
