@@ -1,0 +1,23 @@
+{
+  "process": "279556",
+  "jcmdExit": 0,
+  "rawSha256": "f01cc2582b4c63b0a5fcd520e467303d7e0a1c63f7f300875d7173337e0f528d",
+  "readOnlyStackSnapshot": true,
+  "appFrames": [
+    {
+      "thread": "SDK 33 Main Thread @kotlinx.coroutines.test runner#407718\" #26 [279624] prio=5 os_prio=0 cpu=453199.25ms elapsed=1288.75s tid=0x00007f6f00946eb0 nid=2",
+      "frames": [
+        "at dev.russiancompanion.v2.curriculum.V2Validator.sha256(V2Validator.kt:161)",
+        "at dev.russiancompanion.v2.curriculum.V2Validator.unitContentReviewDigest$app(V2Validator.kt:112)",
+        "at dev.russiancompanion.v2.curriculum.V2CumulativeReviewKt.currentOrPriorActiveReviewUnitIdentityMatches(V2CumulativeReview.kt:658)",
+        "at dev.russiancompanion.v2.curriculum.V2CumulativeReviewKt.prescribedUnitIdentityMatches(V2CumulativeReview.kt:651)",
+        "at dev.russiancompanion.v2.curriculum.V2GovernedIdentityKt.attemptGrantsPrescribedCredit(V2GovernedIdentity.kt:410)",
+        "at dev.russiancompanion.v2.curriculum.V2GovernedIdentityKt.creditItemIds(V2GovernedIdentity.kt:415)",
+        "at dev.russiancompanion.v2.curriculum.V2ProgressRulesKt.objectiveState(V2ProgressRules.kt:245)",
+        "at dev.russiancompanion.v2.curriculum.V2ProgressRulesKt.ordinaryUnitRequirements(V2ProgressRules.kt:378)",
+        "at dev.russiancompanion.v2.curriculum.V2CompletionEvidence.current(V2CompletionEvidence.kt:16)",
+        "at dev.russiancompanion.v2.curriculum.V2CompletionEvidenceKt.currentCompletedUnitNumbers(V2CompletionEvidence.kt:40)"
+      ]
+    }
+  ]
+}
