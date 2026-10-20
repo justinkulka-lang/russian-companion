@@ -1,0 +1,29 @@
+{
+  "commits": {
+    "priorPins": "692e9eddeaef4d8f4ca9e85bf352983e3526e47c",
+    "unit4Implementation": "e6db0bdfe0bbb40edf190623e2123014946f305b",
+    "current": "a974b24953d5c463c525492e311efd287cc87983"
+  },
+  "assetSha256": {
+    "priorPins": "00d2d994d3de47e9cd261967ce32b1719aef83f543fb2589c69cc1b287d5e2cb",
+    "unit4Implementation": "a6a5f314cff598a722e22b977292b0b7b1d1cfb460fc1415c8f50f034c3a9b5c",
+    "current": "fc2a59cdc61ec82640f29743707b67f04812a372e13fac08987aa16e512df2ca"
+  },
+  "comparisons": {
+    "currentUnit4Exact": true,
+    "itemsExact": true,
+    "provenanceExact": true,
+    "capabilitiesExact": true,
+    "referencedExamplesExact": true
+  },
+  "unchangedEarlierUnits": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "unit4ChangedFields": [
+    "objectives",
+    "sessions"
+  ]
+}

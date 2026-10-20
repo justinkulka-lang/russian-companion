@@ -1621,3 +1621,8 @@ Historical teaching validation scope verified at `2c40cd403e947f68244980617d091f
 ## Unit8 plural conservation scope verified
 
 Unit8 plural conservation verified at `7df8e54e31c2a68a5c4886fa1880862ab8fec6c0`: full class6passed/0failed/0errors/0skipped,exit0;baseline5passed/1failed preserved. Original conservation including21records runs on exact4a67bce3;current plural/spelling chains match exactly,all current Unit8items match separately recorded fe919656availability source. Five other methods/original helpers byte-identical. No app/content/history/policy change. Lint0errors20warnings1hint;gate attachmentPASS. Focused scope,not complete suite or independent acceptance. Remaining audit/failuresOPEN;physicalLAST. Read engineering-unit8-plural-conservation/ENGINEERING_CHANGE_REPORT.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Next:Units610 source-intake binding review.
+
+
+## Units610 intake isolation scope verified
+
+Units610 intake scope verified at `638a1a077c6e4fa782c43780f1e5a5954e15c562`: full class6passed/0failed/0errors/0skipped,exit0;baseline5passed/1failed retained. All ten literal pins unchanged:eight still current,two Unit4 pins on exact692e9edd snapshot;current Unit4 exactly bound to genuine e6db0bdf implementation. Original mutation-isolation assertions remain on current pack. Five other methods/original helpers byte-identical. No app/content/history/policy/generator change. Lint0errors20warnings1hint;gate attachmentPASS. Focused scope,not complete suite or independent acceptance. Remaining audit/failuresOPEN;physicalLAST. Read engineering-units610-intake-scope/ENGINEERING_CHANGE_REPORT.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Next:Units1620/2630 source-intake targets.

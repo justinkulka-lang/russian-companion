@@ -1,0 +1,37 @@
+{
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "scopes": [
+    {
+      "stage": "BASELINE",
+      "sourceCommit": "a974b24953d5c463c525492e311efd287cc87983",
+      "counts": {
+        "reported": 6,
+        "passed": 5,
+        "failed": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      "exitCode": 1
+    },
+    {
+      "stage": "VERIFIED",
+      "sourceCommit": "638a1a077c6e4fa782c43780f1e5a5954e15c562",
+      "counts": {
+        "reported": 6,
+        "passed": 6,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "exitCode": 0
+    }
+  ],
+  "standaloneProbeNotJUnit": true,
+  "screenshotExportersExcluded": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  }
+}

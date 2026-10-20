@@ -1,0 +1,53 @@
+{
+  "sourceCommit": "a974b24953d5c463c525492e311efd287cc87983",
+  "sourceRootTree": "799bac3dad509f2c2974da1a0ea8dbd8cc6b304d",
+  "inputTrees": {
+    "app/src/main": "fdb48a009cf684c729d79a921770a36749e0fc32",
+    "app/src/test": "008788421637e3fcf2fd1e61c7892fff9006e881",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-Daudit.events.path=/workspace/artifacts/post-correction-broad-2026-10-20/units610-intake-scope/BASELINE/EVENTS.jsonl",
+    "testDebugUnitTest",
+    "--tests",
+    "dev.russiancompanion.v2.Units610SourceIntakeTest",
+    "--rerun",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=4",
+    "--console=plain"
+  ],
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "selectors": [
+    "dev.russiancompanion.v2.Units610SourceIntakeTest"
+  ],
+  "expectedMethods": 6,
+  "sourceTestHashes": {
+    "app/src/test/java/dev/russiancompanion/v2/Units610SourceIntakeTest.kt": "36887c834e0e89fea45d960dcf0d40489e5d4439288a0f1a42bbafb421109a4d"
+  },
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "workingTreeAtStart": "CLEAN",
+  "scope": "Explicit selected host tests; NOT complete suite",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblySigning": "NOT_RUN"
+}

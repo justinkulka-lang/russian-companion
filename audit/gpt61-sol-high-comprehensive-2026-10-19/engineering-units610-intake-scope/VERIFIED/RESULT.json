@@ -1,0 +1,68 @@
+{
+  "sourceCommit": "638a1a077c6e4fa782c43780f1e5a5954e15c562",
+  "exitCode": 0,
+  "testCounts": {
+    "reported": 6,
+    "passed": 6,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 1,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "unitsSixThroughTenStayReviewPendingAndSourceBound",
+      "outcome": "PASSED",
+      "seconds": "8.287"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "retainedSourceBytesMatchImmutableRevisions",
+      "outcome": "PASSED",
+      "seconds": "0.181"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "wrongUnitPacketSubstitutionFails",
+      "outcome": "PASSED",
+      "seconds": "2.531"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "earlierUnitDigestsStayPutAndLaterUnitsStayIsolated",
+      "outcome": "PASSED",
+      "seconds": "14.985"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "governedContrastsStaySourceBoundAndBookAttestationDoesNotAdvance",
+      "outcome": "PASSED",
+      "seconds": "0.202"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "noPenguinAudioOrNetworkWasAdded",
+      "outcome": "PASSED",
+      "seconds": "0.463"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedSourceInventoryMatchesFreshXmlAndEvents": true,
+  "xmlFreshRelativeToRunScript": true,
+  "completeSuite": false,
+  "scopesNotSummed": true
+}
