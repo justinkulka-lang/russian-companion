@@ -1,0 +1,994 @@
+{
+  "sourceCommit": "aa1b7ca9ce96626a296ed6fbf47031b972ab89fc",
+  "assetSha256": "53da66c18cf1509a82dda35d0986ee7f3ee1d56efe466dd36681f797f83bfd8b",
+  "corpusCounts": {
+    "items": 626,
+    "examples": 821,
+    "provenanceRecords": 7032,
+    "sourceCapabilities": 58
+  },
+  "objective": {
+    "id": "obj-u21-purpose",
+    "unitNumber": 21,
+    "title": "Distinguish purpose, condition, cause and concession",
+    "kind": "RECOGNITION",
+    "instructionStepIds": [
+      "u21-st-orient",
+      "u21-st-teach-purpose-1",
+      "u21-st-teach-purpose-2",
+      "u21-st-teach-purpose-3"
+    ],
+    "exampleIds": [
+      "ex-u21-purpose-0",
+      "ex-u21-purpose-1",
+      "ex-u21-purpose-2",
+      "ex-u21-purpose-3"
+    ],
+    "practiceStepIds": [
+      "u21-st-guided-purpose-1"
+    ],
+    "checkItemIds": [
+      "u21-i-purpose-1",
+      "u21-i-purpose-2"
+    ],
+    "remediationStepIds": [
+      "u21-st-rem-purpose"
+    ]
+  },
+  "session": {
+    "id": "u21-s-purpose",
+    "title": "Distinguish purpose, condition, cause and concession",
+    "estimatedMinutes": 12,
+    "objectiveIds": [
+      "obj-u21-purpose"
+    ],
+    "steps": [
+      {
+        "id": "u21-st-teach-purpose-1",
+        "kind": "TEACH",
+        "title": "Purpose and condition",
+        "body": "чтобы — so that. если — if. The first conjunction can introduce a purpose; the second introduces a condition. In a purpose construction with the same subject for both actions, an infinitive after the purpose conjunction can name the intended action. This rule is explained here, but the current choices do not require composing such a sentence.",
+        "referenceIds": [
+          "ref-u2125-attribution"
+        ],
+        "exampleIds": [
+          "ex-u21-purpose-0",
+          "ex-u21-purpose-1"
+        ]
+      },
+      {
+        "id": "u21-st-teach-purpose-2",
+        "kind": "TEACH",
+        "title": "Ordinary purpose wording",
+        "body": "чтобы is an ordinary purpose conjunction. The bookish or archaic qualifier in the retained source belongs to дабы, not to чтобы. The English meaning so that differs from the conditional if and the causal because. Select the meaning of the displayed conjunction; do not infer an archaic register for the ordinary form.",
+        "referenceIds": [
+          "ref-u2125-attribution"
+        ]
+      },
+      {
+        "id": "u21-st-teach-purpose-3",
+        "kind": "TEACH",
+        "title": "Cause, concession and time",
+        "body": "потому что — because. хотя — although. The first gives a reason; the second introduces a concession. The English label after names a temporal relationship rather than a reason. English since can also express a reason, so it is not a contrasting wrong answer to because in this exercise. The causal check instead contrasts because with although and after. These conjunction meanings are distinct from purpose and condition.",
+        "referenceIds": [
+          "ref-u2125-attribution"
+        ],
+        "exampleIds": [
+          "ex-u21-purpose-2",
+          "ex-u21-purpose-3"
+        ]
+      },
+      {
+        "id": "u21-st-guided-purpose-1",
+        "kind": "GUIDED",
+        "title": "Guided practice",
+        "body": "Read the shown Russian sentence or conjunction and choose the requested meaning or matching object example using the explanation above. A missed check returns to the complete explanation.",
+        "itemIds": [
+          "u21-g-purpose-0"
+        ],
+        "remediationStepId": "u21-st-rem-purpose"
+      },
+      {
+        "id": "u21-st-rem-purpose",
+        "kind": "REMEDIATE",
+        "title": "Review the complete contrast",
+        "body": "чтобы — so that. если — if. The first conjunction can introduce a purpose; the second introduces a condition. In a purpose construction with the same subject for both actions, an infinitive after the purpose conjunction can name the intended action. This rule is explained here, but the current choices do not require composing such a sentence.\n\nчтобы is an ordinary purpose conjunction. The bookish or archaic qualifier in the retained source belongs to дабы, not to чтобы. The English meaning so that differs from the conditional if and the causal because. Select the meaning of the displayed conjunction; do not infer an archaic register for the ordinary form.\n\nпотому что — because. хотя — although. The first gives a reason; the second introduces a concession. The English label after names a temporal relationship rather than a reason. English since can also express a reason, so it is not a contrasting wrong answer to because in this exercise. The causal check instead contrasts because with although and after. These conjunction meanings are distinct from purpose and condition.",
+        "exampleIds": [
+          "ex-u21-purpose-0",
+          "ex-u21-purpose-1",
+          "ex-u21-purpose-2",
+          "ex-u21-purpose-3"
+        ]
+      },
+      {
+        "id": "u21-st-check-purpose",
+        "kind": "CHECK",
+        "title": "Independent checks",
+        "body": "Read the shown Russian sentence or conjunction and choose the requested meaning or matching object example using the explanation above. A missed check returns to the complete explanation.",
+        "itemIds": [
+          "u21-i-purpose-1",
+          "u21-i-purpose-2"
+        ],
+        "remediationStepId": "u21-st-rem-purpose"
+      }
+    ]
+  },
+  "items": [
+    {
+      "id": "u21-g-purpose-0",
+      "prompt": "Which English meaning matches the shown conjunction?",
+      "promptLetter": "чтобы",
+      "options": [
+        "so that",
+        "if",
+        "because"
+      ],
+      "answer": "so that",
+      "assessment": {
+        "testedFeature": "PURPOSE_CHTOBY",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u21-purpose-0",
+        "cueLanguage": "ru",
+        "independent": false,
+        "answerSourceIds": [
+          "prov-ca-21-280"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-21-284",
+          "prov-ca-21-285"
+        ],
+        "distractorDifference": [
+          "",
+          "if introduces a condition.",
+          "because supplies a reason."
+        ],
+        "whyAnswerDemonstratesObjective": "чтобы is the normal purpose conjunction and means so that.\nчтобы means so that: the ordinary conjunction can introduce a purpose.",
+        "contrastMembers": [
+          "so that",
+          "if",
+          "because"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-21-279",
+          "prov-ca-21-280",
+          "prov-ca-21-284",
+          "prov-ca-21-285"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u21-i-purpose-1",
+      "prompt": "Which English meaning matches the shown conjunction?",
+      "promptLetter": "если",
+      "options": [
+        "if",
+        "so that",
+        "because"
+      ],
+      "answer": "if",
+      "assessment": {
+        "testedFeature": "CONDITIONAL_ESLI",
+        "evidenceMode": "STATED_APPLICATION",
+        "contrastSetId": "u21-purpose-1",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ca-repair-21-10803"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ca-repair-21-10806",
+          "prov-ca-repair-21-10807"
+        ],
+        "distractorDifference": [
+          "",
+          "so that introduces a purpose.",
+          "because supplies a reason."
+        ],
+        "whyAnswerDemonstratesObjective": "если means if and introduces a condition for the main proposition.\nесли means if: the conjunction introduces a condition.",
+        "contrastMembers": [
+          "if",
+          "so that",
+          "because"
+        ],
+        "relationKind": "STATED_APPLICATION",
+        "relationParticipantIds": [
+          "prov-ca-repair-21-10802",
+          "prov-ca-repair-21-10803",
+          "prov-ca-repair-21-10806",
+          "prov-ca-repair-21-10807"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    },
+    {
+      "id": "u21-i-purpose-2",
+      "prompt": "Which English meaning matches the shown conjunction?",
+      "promptLetter": "потому что",
+      "options": [
+        "because",
+        "although",
+        "after"
+      ],
+      "answer": "because",
+      "assessment": {
+        "testedFeature": "PURPOSE_BECAUSE",
+        "evidenceMode": "EXPLICIT_SOURCE_PAIR",
+        "contrastSetId": "u21-purpose-2",
+        "cueLanguage": "ru",
+        "independent": true,
+        "answerSourceIds": [
+          "prov-ex-u21-purpose-2-en"
+        ],
+        "distractorSourceIds": [
+          "",
+          "prov-ex-u21-purpose-3-en",
+          "prov-u21-purpose-x-1"
+        ],
+        "distractorDifference": [
+          "",
+          "although introduces a concession.",
+          "after introduces a temporal relationship."
+        ],
+        "whyAnswerDemonstratesObjective": "The frozen source pairs the shown form \"потому что\" with the admitted gloss \"because\" (\"for the reason that\").\nпотому что means because: the conjunction introduces a reason.",
+        "contrastMembers": [
+          "because",
+          "although",
+          "after"
+        ],
+        "relationKind": "EXPLICIT_SOURCE_PAIR",
+        "relationParticipantIds": [
+          "prov-ex-u21-purpose-2-ru",
+          "prov-ex-u21-purpose-2-en",
+          "prov-ex-u21-purpose-3-en",
+          "prov-u21-purpose-x-1"
+        ],
+        "responseKind": "ENGLISH_CLASSIFICATION"
+      }
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "cap-u21-purpose-clause",
+      "sourceId": "src-wikipedia-russian-grammar-1369617627",
+      "sourceRevision": "1369617627",
+      "sourceRecordId": "grammar:* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');\n",
+      "sourceHash": "994ccda2c5fcae467b32d4baea14c72d36d428d08822a3588d16abc70d3e0742",
+      "exactSpan": "* если {{IPA|[ˈjesʲlʲɪ]}} 'if' (meaning 'in case where' not meaning 'whether');\n* потому что {{IPA|[pətɐˈmu ʂtə]}} 'because'\n* так как {{IPA|[tak kak]}} 'since' (meaning 'for the reason that')\n* чтобы {{IPA|[ˈʂtobɨ]}}, дабы {{IPA|[ˈdabɨ]}} (bookish, archaic) 'so that'\n* после того, как {{IPA|[ˈposʲlʲɪ tɐˈvo kək]}} 'after'\n* хотя {{IPA|[xɐˈtʲa]}} 'although'",
+      "unitNumber": 21,
+      "objectiveId": "obj-u21-purpose",
+      "supportedClaim": "purpose-clause"
+    }
+  ],
+  "independentPurposeCues": [],
+  "independentCompleteRussianPurposeContexts": [],
+  "completeContextCountBasis": "Manual inspection of the three displayed cues: чтобы / если / потому что; all are isolated conjunctions.",
+  "completeTeachingBeforeGuided": true,
+  "completeExistingRepair": true,
+  "retainedTextSearch": [
+    {
+      "path": "catalog/sources/readyrussian/grammar20.html",
+      "sha256": "b6702e45884f1ab6ec0334c884393f23f1d61a7ed1fa3d764508ef1de9cd87ff",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/readyrussian/home.html",
+      "sha256": "1ffd2c5a8f4b0dad271a5fd79fb545c8c6b629507ba39677825ffde4c66fe7d1",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/readyrussian/langgen3.html",
+      "sha256": "27c28efba83399060a6d7145da619d250b3428cb8c91dc6c0bb66f885af8a46c",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/readyrussian/letter.html",
+      "sha256": "aa93d51920f4686153636da3dc626069acd10c893c96e07ca9dd019fe4a36218",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/readyrussian/reading5.html",
+      "sha256": "6f6b42fb644a08f5accc488260f6a3b30b17b0d7da3ee97fa384f803db70d44d",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/rus-balm-voc/index.tags.txt",
+      "sha256": "fb1931578c5dc908a0d7123a03aa8a20198cccddb8762cd2b885ef2c7eb774d8",
+      "hits": [
+        {
+          "line": 6836,
+          "lineSha256": "a72abccf7be63151464a60bbafa2798700ec4e0cae6a455c093d80e81e7b75b5",
+          "occurrences": 1
+        },
+        {
+          "line": 6837,
+          "lineSha256": "b9d65263bfb1947e874bc85276e09c155f11fa6dc83ced803384e13425afbe98",
+          "occurrences": 1
+        },
+        {
+          "line": 6838,
+          "lineSha256": "64e52661511366378887ce0c0f8dd4b1de2e8e86cb8b5f78ac5a9617e51b4b70",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "catalog/sources/rus-balm-voc/readme.txt",
+      "sha256": "e25cfcba685ff449316971fbab1454caa866999134c10f91ef9d0f5230f4d620",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/rus-balm-voc/yojik-ogg-listing.html",
+      "sha256": "af8a7daf8e7b7aca5e8c79c21e6b2c1b459534c6b6a9ec0465e834fba9a73320",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/rus-balm-voc-sakhno/index.tags.txt",
+      "sha256": "2ebc7eaf1933794ffafc4b35c26f607af3ac03fbb59711c25bb531cc6c2a306d",
+      "hits": [
+        {
+          "line": 903,
+          "lineSha256": "a72abccf7be63151464a60bbafa2798700ec4e0cae6a455c093d80e81e7b75b5",
+          "occurrences": 1
+        },
+        {
+          "line": 904,
+          "lineSha256": "b9d65263bfb1947e874bc85276e09c155f11fa6dc83ced803384e13425afbe98",
+          "occurrences": 1
+        },
+        {
+          "line": 905,
+          "lineSha256": "64e52661511366378887ce0c0f8dd4b1de2e8e86cb8b5f78ac5a9617e51b4b70",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "catalog/sources/rus-balm-voc-sakhno/readme.txt",
+      "sha256": "15f2cf2db9cbe4a185c56d515a42318742abc4413af4a4aed7e2008a1f05cd0a",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/rus-balm-voc-sakhno/yojik-ogg-listing.html",
+      "sha256": "f613921b4fa363043d509a083dce32fdb2200b1d3d240bcb4673880d71a003d0",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-11-15/wikibooks/dative-case-4289617.txt",
+      "sha256": "550fc940fb1be400513775075b4bf04149facb04ca6b16dcba42bef92ddf6cd3",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-11-15/wikibooks/future-tense-3353822.txt",
+      "sha256": "1a1d31ff818472a2e0801d5c0a39f52afdef1d4ee9648b5a7b8f358621e6dfb7",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-11-15/wikibooks/past-tense-4567337.txt",
+      "sha256": "4550574588e023a84084d9deea9b35f35fac82d64cef00d599dc0a059e48b9f3",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+      "sha256": "0702bb0213b24bb48f1bbbfb4b1aa7fb76cf90fd520fe4bababb4d87db96e24e",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-16-20/pressbooks/russia-traditions-grammar.html",
+      "sha256": "ab2170e37d529a318f395f6e657d8024d0eaed8d7c5c9b34f8831d348b8b76b3",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-16-20/wikibooks/days-3594124.txt",
+      "sha256": "00d89a2a2f1063b8b83f9c41be6219e79f52536759f351fc5eceb2a269f8af29",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-16-20/wikibooks/instrumental-4219602.txt",
+      "sha256": "ed1436468c3cad07e73442b64a53664ffb8ba13f598c4e87d3d7835ae2c14454",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-16-20/wikibooks/lesson3-4460699.txt",
+      "sha256": "63740f56e068f51cd5aa4565bfe199841154a4b942fbf7fd8a18c440544e33a6",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-16-20/wikibooks/months-4376719.txt",
+      "sha256": "d8445149d47c9fed9a010b199e515611876adbb83dffa30296be75c32131e254",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-16-20/wikipedia/date-notation-russia-1357134172.txt",
+      "sha256": "8a5b99005097fe97858e4188250ab61056925d5229af60059a0cc86d6ae8fd57",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-16-20/wikipedia/date-time-country-1366690592.txt",
+      "sha256": "8d5735db9bb34ece6f4e84454cb3ff584b67da5661edcd54540265e7ba68b135",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-16-20/wiktionary/copyrights-87545419.txt",
+      "sha256": "d184773bca30b7b23245a50d1d07c3d672b378a1e51757640e97b994b50c3689",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-16-20/wiktionary/dolzhen-84965088.txt",
+      "sha256": "7f2fdb955b5556b7daa3a1a94fbc38989c94099633462d6d5cfa755215855f99",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-21-25/pressbooks/baltics-travel-grammar.html",
+      "sha256": "f5217cd052399bfe593787d1af40535805b6d795db924e8d03a2147fcb4b59aa",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-21-25/pressbooks/usa-grammar.html",
+      "sha256": "87815b8724cb11aecba5bb6d8b6438f783408f2354e2560a3c0fe026fac1e171",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-21-25/supplemental/diminutiv-149098069.txt",
+      "sha256": "dd9eeb820334b24f90abeb34843e8ee1f9a649bb1801a020e6a48ce262995467",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-21-25/supplemental/lichnoe-imya-154915954.txt",
+      "sha256": "3a9f9f983ba12553ef6719cc3735cde0a61337714b09dbbf846122fa234c7768",
+      "hits": [
+        {
+          "line": 30,
+          "lineSha256": "60e67ec1ae9d38c5ca2178e1064438d45e6327336e2e54c1d6b486f58d2f9785",
+          "occurrences": 2
+        },
+        {
+          "line": 397,
+          "lineSha256": "6d2ef39cecc5f4bde319315098d117aa69c7db0197d82225892ef98ebce1163d",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "catalog/sources/units-21-25/supplemental/morfologiya-148939075.txt",
+      "sha256": "25c88e24ee9733f8b5803eeaa58e0d4d564033380a650a7c97f3bf35a219f809",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-21-25/supplemental/obraschenie-153012874.txt",
+      "sha256": "76d9ab979fece11bd4243b6ba27832b146230aa90be11b65b48d7b2e5f5aa0a7",
+      "hits": [
+        {
+          "line": 58,
+          "lineSha256": "80e176f228caa47380e94eb701e0fb54343df369aaab44ce311798e2dab70e78",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "catalog/sources/units-21-25/supplemental/otritsatelnye-141256493.txt",
+      "sha256": "0f1d612d297c7ff82bc0d069e7a9775d8841e4574950d330d2805034726e2f17",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-21-25/supplemental/poltora-89737719.txt",
+      "sha256": "d087728b0726de96af4eb71d8ac8285b310de9c0a67347fc45bb18b0999299df",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-21-25/wikibooks/names-4660786.txt",
+      "sha256": "06d32a65cd43133091804a8d10e291e7c98e0d6712d9639a8d8f94ed9ea05476",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-21-25/wikibooks/possessive-pronouns-4220315.txt",
+      "sha256": "9467e696bca4d8359bcc369cf77a97c779a0a1f5b5dc343381d6a379b7b87e2e",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-21-25/wikibooks/useful-words-3353859.txt",
+      "sha256": "83dc390142f8b11ddeaf9ffee22880b9beb169e9234789bc3bab40bf695e0108",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/ruwiki/neopredelennoe-mestoimenie-149963314.txt",
+      "sha256": "79b8a9bde8b19283e3e44b8e7e4e6a0bcabbb2d300022becca8a582b78aae6b4",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/ruwiki/prichastie-153078996.txt",
+      "sha256": "86b44f7696019d3ac26ac803ca56f25d65c18f1d6fce90eb2884d35ef99c1d99",
+      "hits": [
+        {
+          "line": 133,
+          "lineSha256": "60deff095b8b1a6c47916f2edd25cc4a38ebf258cb0d1594b66b7398f3fe9532",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikibooks/various-stuff-3353858.txt",
+      "sha256": "123fb1d05952ebb36d7f217fb36db17654e521d03e71020aeda1f3e886768cf0",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikipedia/copyrights-1369466282.txt",
+      "sha256": "79be61298fb5e458a485eb4ad72c68b73d5284de99807cf4561bcff9ace36210",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt",
+      "sha256": "6bc0e74576c4e0170cbb8e503d7f16c911d8849713756f1d5b3c0f0995197305",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikipedia/russian-grammar-1369617627.txt",
+      "sha256": "e12312425b1ed50177c3549ac10026696fbb8733c089b748b183eecdaf8ace85",
+      "hits": [
+        {
+          "line": 1374,
+          "lineSha256": "efe8393809aeb4d0e95b0213eb73b93360279a19bd0087ccd6774caef7050411",
+          "occurrences": 1
+        },
+        {
+          "line": 1387,
+          "lineSha256": "18d51532a8a0b02c3ceb5fe4763148179634854b89f56c6d863d97f5274d2335",
+          "occurrences": 1
+        },
+        {
+          "line": 2479,
+          "lineSha256": "4946032ab8811741b9e5d3201b024b5fa73bed496596a796527449233d12ce56",
+          "occurrences": 2
+        }
+      ]
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikisource/ap-4965505.txt",
+      "sha256": "37d5a10c650502b557dee061fcc77482d29010799448fa5440f6d8ddabd317e3",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikisource/author-5696210.txt",
+      "sha256": "22caa67898cc2eac8bed9403a78be547da0546396cfa7b17ed47116aee7eb15f",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikisource/copyrights-5723825.txt",
+      "sha256": "6b4b5ca20482c80ba478db1e6eb045732939c4796c5b3f86e720f15920e497cd",
+      "hits": [
+        {
+          "line": 11,
+          "lineSha256": "abfe63cffa5977f2d892d76c15c4fa109bd572f6bc1600040c3f7057eab8fafd",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikisource/pd-old-3794015.txt",
+      "sha256": "37821d53b9d4c3e05f5119d05080cadc14d78e9e0141b371092e3ad218083f70",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikisource/pd-old-70-5691096.txt",
+      "sha256": "4a870dff55a234c8e9f96a538ae9af6eef735809ab15ab3ad4ae29c9cd4f4a36",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikisource/vechera-5336197.txt",
+      "sha256": "af0a1b2a4a79796a3523bb8a35b708df450e5970a96af050230b42cf6f604517",
+      "hits": [
+        {
+          "line": 40,
+          "lineSha256": "f9f774e847e2b21ed031689f13f85b40b2a71f6a0ff9b60a066c668a2cb12dca",
+          "occurrences": 1
+        },
+        {
+          "line": 83,
+          "lineSha256": "5779e08aa0075373a04049accad8559a48fd13b1961ec82d502e87a0b12322bf",
+          "occurrences": 2
+        },
+        {
+          "line": 107,
+          "lineSha256": "33996611e7d9bce5c54db576fb198fb233218063abb4d5a3dce53ff5d5ef0cfb",
+          "occurrences": 1
+        },
+        {
+          "line": 119,
+          "lineSha256": "f7b92ea5baede3c5ccb0c8125c796ce8daee38498b742878c6a729b925e3d34d",
+          "occurrences": 1
+        },
+        {
+          "line": 127,
+          "lineSha256": "38251890e25e30a82e844d8c9bbb22ad62f8a2ef639e3c66482886bbb8a5df3a",
+          "occurrences": 1
+        },
+        {
+          "line": 143,
+          "lineSha256": "15654491a7b8f79a9ab8f87bb7943f80fc51329f4a050814d4ac5d2c763477f9",
+          "occurrences": 1
+        },
+        {
+          "line": 231,
+          "lineSha256": "d361bcd17585bac611cfd038de78a4e8c81cc744a21c5def4d2e62c5bbfffc7d",
+          "occurrences": 1
+        },
+        {
+          "line": 239,
+          "lineSha256": "acc029c11756dacdf3d0f553040dade541060c4f92f5fff18ddf601cf732783a",
+          "occurrences": 1
+        },
+        {
+          "line": 249,
+          "lineSha256": "7bd070b8c7d4deccd41a640776a0472e27b81d16d673f29636a4d901ffec2c23",
+          "occurrences": 1
+        },
+        {
+          "line": 285,
+          "lineSha256": "00479b81f9851dfd1ef0dbd6d31ac70517e2c26c916b8e70009dc0d2025d0a09",
+          "occurrences": 1
+        },
+        {
+          "line": 427,
+          "lineSha256": "d3f72a9b3756c4d8e0552cc4f0b7d524af264ce8344b0131a707982db670160c",
+          "occurrences": 1
+        },
+        {
+          "line": 464,
+          "lineSha256": "8af0279f3e874603d05a651d0c863e323710fce0e00e113eb8afd13d24c08f6e",
+          "occurrences": 1
+        },
+        {
+          "line": 476,
+          "lineSha256": "7b6afe0e09b1af3cc485ec75e7cdace2f56b31728a666ae7717705b2f847c518",
+          "occurrences": 1
+        },
+        {
+          "line": 500,
+          "lineSha256": "948b702094692a3ca1809fe761d1d97bf3f38b10074a23ce7349ab837920a324",
+          "occurrences": 1
+        },
+        {
+          "line": 541,
+          "lineSha256": "bfccb69bd7c822147899456e41da2a7bcfe8c052b14d69c0cd6ce1a0beb1ea54",
+          "occurrences": 1
+        },
+        {
+          "line": 663,
+          "lineSha256": "ef213155ec1752af83d4ab0c142745b41aa0613188498d612fa7973dad1daf64",
+          "occurrences": 1
+        },
+        {
+          "line": 685,
+          "lineSha256": "a9eee76fc93b302752afe6421b2e46cab52c054e215b8b5861436b1d3c797fef",
+          "occurrences": 1
+        },
+        {
+          "line": 711,
+          "lineSha256": "463984127129f4fee0e0b3fea6100fdbf38f5ed43e301379a177235738ae129b",
+          "occurrences": 1
+        },
+        {
+          "line": 761,
+          "lineSha256": "8c5a39f7ab8eb113f375d443d2280235fafa3febfd0d9cd0087fa2e51133a4f5",
+          "occurrences": 2
+        },
+        {
+          "line": 773,
+          "lineSha256": "8de8f717830e14d050ca29e25f74ec0fd0f04132b8f0736179be18ec92c6d9dc",
+          "occurrences": 1
+        },
+        {
+          "line": 781,
+          "lineSha256": "3895e85b69a107bc5945ff20c6ffcddc1e8fecc20fb7f2c394f0877c61a697d5",
+          "occurrences": 2
+        },
+        {
+          "line": 789,
+          "lineSha256": "9b650beb7c897bfc120808d47ebf4f6c00fb97a918ce5a6b2abc758414a6f946",
+          "occurrences": 1
+        },
+        {
+          "line": 799,
+          "lineSha256": "deeb0a1319f32c40447bd4a1688589a5e90a96bb3d20a493821cbf0030b258fc",
+          "occurrences": 1
+        },
+        {
+          "line": 835,
+          "lineSha256": "8e1d32baf883fda8e0b21c10bacc3b0b95083dbbbdd26bdfad22823740fbe9c3",
+          "occurrences": 1
+        },
+        {
+          "line": 901,
+          "lineSha256": "09387d0fe19bd4e3af988f1bfd5052fea157a6550a9aa898db279a86390725d4",
+          "occurrences": 1
+        },
+        {
+          "line": 925,
+          "lineSha256": "3f965f3bfed50ff4e21f0d50795591d80529f69350b6136ca64ee6376a019997",
+          "occurrences": 1
+        },
+        {
+          "line": 943,
+          "lineSha256": "6a9dadeceaf51a9d4805b8d9ae79d70fc2c976dfb039887e3f4b4161b7ceb705",
+          "occurrences": 2
+        },
+        {
+          "line": 953,
+          "lineSha256": "14b7fbdfeac0f284b681e49a49bb8b60b9b9a4fd5b323b932d99a36009a3bab9",
+          "occurrences": 3
+        },
+        {
+          "line": 955,
+          "lineSha256": "2998d73084a48196ab665f3bcbd1dfe4afd834ecb9ac2da4cb48ccee757aab5b",
+          "occurrences": 1
+        },
+        {
+          "line": 977,
+          "lineSha256": "ddef3994d4e30d8f8d6fa7e8927b238e1304cde71e0b50032f9e2323ecf7dc9b",
+          "occurrences": 2
+        },
+        {
+          "line": 1001,
+          "lineSha256": "5bebd061041e81554bf011a174d3fcca0701cfde980f181bc5c835e985a5a4a7",
+          "occurrences": 1
+        },
+        {
+          "line": 1003,
+          "lineSha256": "ef2556825af05d5a13e47a719a034be587cd04947e3fd9c0cbf43f2657415d0c",
+          "occurrences": 1
+        },
+        {
+          "line": 1023,
+          "lineSha256": "a47face91c564a6d4396ca70c981ab9b4ccb25485e07e24f450ed9fcc45795a2",
+          "occurrences": 2
+        },
+        {
+          "line": 1037,
+          "lineSha256": "b83812e75cd029d57db498c0127b60bbe5b98243f9e93bd235d4763622485f91",
+          "occurrences": 1
+        },
+        {
+          "line": 1041,
+          "lineSha256": "47d64eb535faad16a6a653a20955dd706c405d0887efb40f6ce023db98c659a9",
+          "occurrences": 1
+        },
+        {
+          "line": 1061,
+          "lineSha256": "2e0572c8aad0b4c8f8f193e2e470815c36cf71e40ff4edbe98505be98b0563d0",
+          "occurrences": 1
+        },
+        {
+          "line": 1065,
+          "lineSha256": "0c260249da85c578fa8aa1724182e19958e46940076271fb53a24106395e11df",
+          "occurrences": 1
+        },
+        {
+          "line": 1067,
+          "lineSha256": "15e8884ffe253be65ce0e0d0d04ccc4696bbf6704cc30a3a60b8f6709a32328a",
+          "occurrences": 1
+        },
+        {
+          "line": 1071,
+          "lineSha256": "b623007dc7c9315f9234abe10f650190ef051a3146932d4e62ef4d9c1cd98145",
+          "occurrences": 1
+        },
+        {
+          "line": 1123,
+          "lineSha256": "163af3f0a5b8c8d355c14aaea711387521ef9066a21b8285a0cddeb52d077dd3",
+          "occurrences": 1
+        },
+        {
+          "line": 1151,
+          "lineSha256": "78298d75bf4f782f76061c65f1ec1227e71deeee78fdae16941a2084b7d69ae6",
+          "occurrences": 4
+        },
+        {
+          "line": 1167,
+          "lineSha256": "3c309a20e2289638b96be660c77f55b28e30cd8bde3b95d1609de0b51fa2fe21",
+          "occurrences": 1
+        },
+        {
+          "line": 1177,
+          "lineSha256": "9c7cc09f4359322251182ccfb4b8977de786fa1cb273e34193610ce10f0e5f35",
+          "occurrences": 1
+        },
+        {
+          "line": 1265,
+          "lineSha256": "062352a19552d404f4c2b928f858938b7a196b83e7a54a6e7882cc917d48bfc1",
+          "occurrences": 1
+        },
+        {
+          "line": 1379,
+          "lineSha256": "f7c4064752e11f8fa7c0265b9b5b1b5cefa192726760ae7f165ad96de86c9775",
+          "occurrences": 1
+        },
+        {
+          "line": 1415,
+          "lineSha256": "17713565f5df55c2a716c51a1b01c621f58dc5f0a27ac01fd8b912691b7ca0a4",
+          "occurrences": 1
+        },
+        {
+          "line": 1431,
+          "lineSha256": "be48c09589aa15ea8210042ab5db38ba296d47e3ccd98ed4f4d2905e0c75ac72",
+          "occurrences": 1
+        },
+        {
+          "line": 1439,
+          "lineSha256": "5e961abbbbf00f05fc30f61e2ca04c150544acd564c6833feff3b3328c08121d",
+          "occurrences": 2
+        },
+        {
+          "line": 1463,
+          "lineSha256": "0414fc480143b1cd1bf7b79c443c6e9e94b8379a9403390d08543c781db935e3",
+          "occurrences": 1
+        },
+        {
+          "line": 1649,
+          "lineSha256": "9c23b6fbdb112e932d6473a61bc709e065835175c55c3124a6a30ad1498e0267",
+          "occurrences": 1
+        },
+        {
+          "line": 1685,
+          "lineSha256": "caa7731df22f97aa413d9429ec5047f0392943d94ae276403ca3e34bd662c27b",
+          "occurrences": 1
+        },
+        {
+          "line": 1716,
+          "lineSha256": "c4d0bd534d367cdf022fa68b03a372e139989bebb71d81d5b1512846c61ea190",
+          "occurrences": 1
+        },
+        {
+          "line": 1747,
+          "lineSha256": "4d7f330e5b27d6e8b344b10dd5b1c20d8b0f5d02dea6bee8147ec8028fb456ca",
+          "occurrences": 1
+        },
+        {
+          "line": 1754,
+          "lineSha256": "c935584e4d11ee43545e78e8ab3c1e13e6aaa845b5a6fdd75a8261419e812e42",
+          "occurrences": 1
+        },
+        {
+          "line": 1765,
+          "lineSha256": "6aae7651274d547967b803da09ca0eb442717e4479bdd7c6fb659ac15c759e9e",
+          "occurrences": 2
+        },
+        {
+          "line": 1768,
+          "lineSha256": "76129969e17a49cb7808c30bf60c70fc280852623e2796c8a4dc38dccbc15ac0",
+          "occurrences": 1
+        },
+        {
+          "line": 1782,
+          "lineSha256": "97e01a13af9c6f0522b2e90aef462de15fb05d1dbf8eee0c9982d4a1c6bd5d89",
+          "occurrences": 1
+        },
+        {
+          "line": 1837,
+          "lineSha256": "6146006c6e451485a4e41556745169476924733408e4c4b94855d2f7109e6c37",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "catalog/sources/units-26-30/wiktionary/napisannyj-74228228.txt",
+      "sha256": "1ca7b59a1c3e355791a1a45565f75fe11b8b10f68f43fb963d895ecb5d4c776f",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/wiktionary/obsuzhdaemyj-74233962.txt",
+      "sha256": "7d6734ecf6df49138d50236e8ce3290ab0370aa26ef3646513923d803d705ecd",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/wiktionary/ostavlyaemyj-74231596.txt",
+      "sha256": "c9907f343beac3f5aba33fe52a6f534496b5e1adc965f71c565926a79bc94c32",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/wiktionary/prochitannyj-74232159.txt",
+      "sha256": "dce1aca43746ad4682fba045980275e243eef332a958917a3862387bdb3ad5ef",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-26-30/wiktionary/russian-entry-guidelines-92541199.txt",
+      "sha256": "c097b23e9853d742292c4655926939cbe4e8eaa7e6044a615cd614ba649950d0",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/cases-4195114.txt",
+      "sha256": "ed6e661353627ea6ec98bba7421fbd935dfe29d58f0b7e40e3c6ea3fe5b5cdc7",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/copyrights-4622060.txt",
+      "sha256": "95447e1048fcc0094d2e96f1b796b8cc65a595a6fbcd385430a97dc2631b6b40",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/gender-4310736.txt",
+      "sha256": "adb1ade8121640064054e67656112a93b30c47fd4682f9f04aef9278c3c2f3ce",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/interrogative-4220316.txt",
+      "sha256": "df98f1175cad898fac1801690446cb6aa41d7e06f21c63eb1e84063903e3e291",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/nominative-4213267.txt",
+      "sha256": "c00d0dbe20bde2abd3aae63d08bf6a3f5a291f5cbfcd0cea5c853af04a6e1c84",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/personal-pronouns-3598527.txt",
+      "sha256": "58f8709942d5fc76188045276e7e5e2375b6be2e440fb82576ca78fb2df61e40",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/prepositional-4567336.txt",
+      "sha256": "efe46e6ed2de1d14ab9823467ecdd889b150e108aec5db1fd42f6416159cec35",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/prepositions-4446858.txt",
+      "sha256": "7d1b646efc992428060503b72870ac5088a837d1adbbb0d001a4963ea97a22d3",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/pronouns-4585698.txt",
+      "sha256": "0e220e7623e9e04bbcc78f517f1b11c4788b97ec05e751e71d37fea3a0a93615",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-3-5/wikibooks/verbs-4233876.txt",
+      "sha256": "6602c585f3e568dc1de280e7e77b0a26b15927b95dad754207d1fdf29726bca3",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-6-10/ruwiki/copyrights-154562152.txt",
+      "sha256": "a91323abe9ea35f846bf1fffd4feae46dc6bf7420cdce782e016d5c1141fb3bf",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-6-10/ruwiki/narechie-152437423.txt",
+      "sha256": "e77c6da4fca91b6e4c63a5f122be87233433131c5810e02bbb32c99087deeee6",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/accusative-4330404.txt",
+      "sha256": "60702c98a8e6178c4b140fe81e2220df1f830972913f99047502d95ecda00b16",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/adjectives-4292379.txt",
+      "sha256": "9fc58c168fe33c428a4a9a665955dede2c19997a8fbf58042f207d282462e998",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/adverbs-3197995.txt",
+      "sha256": "712b24db1dc27e566b0c73cb5cacbfb4308818f9394fbd311926e01c139ead66",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/genitive-4567338.txt",
+      "sha256": "2bd8751faf3bae6d407445523671ffcf4827750f25318ae5fc0d40e482001591",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-6-10/wikibooks/numbers-4371358.txt",
+      "sha256": "dcb20ca815c1dce735cfe57de68dc90baa0bc645489837ec50f3ec520f0a44ca",
+      "hits": []
+    },
+    {
+      "path": "catalog/sources/units-6-10/wikipedia/adverb-1374548415.txt",
+      "sha256": "99e58a8afb153b9aa86d591a2a78b6bd4956010b50abb1243d87f1dda92202a1",
+      "hits": []
+    }
+  ],
+  "searchLimit": "Literal lowercase чтобы/дабы in retained TXT and HTML data nodes only. HTML lines are normalized parser text. No claim of exhaustive linguistic classification, live-site inspection, rights qualification or PDF inspection.",
+  "engineeringDisposition": "CC004_OPEN_SOURCE_ADMISSION_AND_CONTEXTUAL_APPLICATION_REQUIRED",
+  "executedTests": false
+}
