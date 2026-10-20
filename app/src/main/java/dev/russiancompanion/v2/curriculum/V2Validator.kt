@@ -4486,11 +4486,12 @@ internal object V2Validator {
         val answerAt = original.indexOf(answer)
         val distractorAt = original.indexOf(distractor)
         if (answerAt < 0 || distractorAt < 0) return false
-        val between = if (answerAt < distractorAt) {
-            original.substring(answerAt + answer.length, distractorAt)
-        } else {
-            original.substring(distractorAt + distractor.length, answerAt)
-        }
+        // Overlapping occurrences (for example perfective inside imperfective) are not
+        // two distinct glosses joined by an alternative marker.
+        val from = if (answerAt < distractorAt) answerAt + answer.length else distractorAt + distractor.length
+        val until = maxOf(answerAt, distractorAt)
+        if (from > until) return false
+        val between = original.substring(from, until)
         return between.length <= 24 && Regex("(?i)\\bor\\b").containsMatchIn(between)
     }
 

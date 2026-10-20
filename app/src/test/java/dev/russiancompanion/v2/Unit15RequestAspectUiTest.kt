@@ -37,10 +37,15 @@ class Unit15RequestAspectUiTest {
                 tag("v2-example-note-$exampleId").performScrollTo().assertTextEquals(p.example(exampleId)!!.note)
             }
             tag("v2-review-practice").performClick()
-            for (guideId in reviewedGuidedPractice(p, rem.id)) {
+            val guides = reviewedGuidedPractice(p, rem.id)
+            for ((index,guideId) in guides.withIndex()) {
                 for (guidedItemId in p.step(guideId)!!.second.itemIds) {
                     val guide = p.item(guidedItemId)!!
                     tag("v2-option-$guidedItemId-${guide.answer}").performScrollTo().performClick()
+                }
+                if (index < guides.lastIndex) {
+                    compose.onNodeWithTag("v2-return-to-check").assertDoesNotExist()
+                    tag("v2-next-practice").assertIsEnabled().performClick()
                 }
             }
             assertFalse(id in creditItemIds(p, store.v2LearnerView()))
