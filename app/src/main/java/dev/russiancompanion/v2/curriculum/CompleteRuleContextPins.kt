@@ -5,6 +5,10 @@ import java.security.MessageDigest
 /** Curated context and tuple identities, pending semantic audit; no acceptance token. */
 internal object CompleteRuleContextPins {
     private val hashes = mapOf(
+        "ca-rule-context:u15-g-request-aspect-repeat" to "a07f7efb42235c14b10988d0cdc062da9ed538cb788cb154dd153575ec95f8c0",
+        "ca-rule-context:u15-i-request-aspect-single" to "d75da71453c7ee744f3958fb1702097b83de13e8ced50932891e731d424dad63",
+        "ca-rule-context:u15-i-request-aspect-repeat" to "741fc8b3f7e19d09cdf142634cba01ba639f8a195b1bd344ee4d7f6732044dce",
+        "ca-rule-context:u15-i-request-aspect-prohibit" to "aebcf206f9aeb3a7b9307f7a091cdc00f99c672054d99ebbabd741ae550bfae6",
         "ca-rule-context:u8-g-availability-0:existence-v1" to "07d1f7bf3fb2cc4b57286264f39c4a3da3258faa97057b87d9a59fa37cfe0a4b",
         "ca-rule-context:u8-i-availability-1:existence-v1" to "85ceb5fd845fd3d6c2803262f1ebbc7a5ea314accc4b257d1a3fff5853896732",
         "ca-rule-context:u8-i-availability-2:existence-v1" to "bfcf99be6b0e7228c5ea9607a6de772dc56e75ea8362ce5e101bb99fb3dc5664",
@@ -113,6 +117,7 @@ internal object CompleteRuleContextPins {
             item.id == "u6-i-animacy-3" -> "obj-u6-animacy"
             item.id in setOf("u13-g-reported-0","u13-i-report-frame-time") -> "obj-u13-reported"
             item.id == "u24-g-context-subject-focus" -> "obj-u24-word-order-contrast"
+            item.id in setOf("u15-g-request-aspect-repeat","u15-i-request-aspect-single","u15-i-request-aspect-repeat","u15-i-request-aspect-prohibit") -> "obj-u15-aspect-consolidate"
             item.id == "u21-i-object-reference-2" -> "obj-u21-object-reference"
             item.id == "u9-i-odindva-4" -> "obj-u9-odindva"
             item.id == "u8-i-agreement-3" -> "obj-u8-agreement"
