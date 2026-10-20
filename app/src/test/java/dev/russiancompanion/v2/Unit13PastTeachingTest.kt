@@ -139,6 +139,8 @@ class Unit13PastTeachingTest {
     @Test fun freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments() {
         val p = current
         val old = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(evidence(), "COMPLETED_UNIT14.json").readText())
+        // The application startup store shares this recordings directory and must finish recovery first.
+        (context().applicationContext as dev.russiancompanion.RussianCompanionApplication).closeStartupStoreForTests()
         LocalStore.openInMemory(context()).use { store ->
             store.openLearnerReplacement()
             try { assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(old, emptyList())) }
