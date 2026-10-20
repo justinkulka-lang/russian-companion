@@ -1,0 +1,84 @@
+diff --git a/app/src/test/java/dev/russiancompanion/v2/RecordedIntakeCorrectionScope.kt b/app/src/test/java/dev/russiancompanion/v2/RecordedIntakeCorrectionScope.kt
+new file mode 100644
+index 00000000..2172fdae
+--- /dev/null
++++ b/app/src/test/java/dev/russiancompanion/v2/RecordedIntakeCorrectionScope.kt
+@@ -0,0 +1,29 @@
++package dev.russiancompanion.v2
++
++import dev.russiancompanion.v2.curriculum.*
++import org.junit.Assert.*
++import java.io.File
++
++/** Exact recorded sources for intake-era assertions; no semantic acceptance or current hash refresh. */
++internal object RecordedIntakeCorrectionScope {
++    fun load(root: File, commit: String): V2CurriculumPack {
++        val process = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json")
++            .directory(root).start()
++        val text = process.inputStream.bufferedReader().readText()
++        assertEquals(0, process.waitFor())
++        return V2PackLoader.parse(text).also { V2PackIdentityIndex.warm(it) }
++    }
++
++    fun assertCurrentUnitMatches(current: V2CurriculumPack, source: V2CurriculumPack, number: Int) {
++        val expected = source.unit(number)!!
++        assertEquals(expected, current.unit(number))
++        val objectiveIds = expected.objectives.map { it.id }.toSet()
++        assertEquals(source.items.filter { it.objectiveId in objectiveIds }, current.items.filter { it.objectiveId in objectiveIds })
++        assertEquals(source.provenanceRecords.filter { it.unitNumber == number }, current.provenanceRecords.filter { it.unitNumber == number })
++        assertEquals(source.sourceCapabilities.filter { it.unitNumber == number }, current.sourceCapabilities.filter { it.unitNumber == number })
++        val exampleIds = (expected.objectives.flatMap { it.exampleIds } +
++            expected.sessions.flatMap { it.steps }.flatMap { it.exampleIds }).toSet()
++        assertEquals(source.examples.filter { it.id in exampleIds }, current.examples.filter { it.id in exampleIds })
++        assertEquals(V2Validator.unitContentReviewDigest(source, number), V2Validator.unitContentReviewDigest(current, number))
++    }
++}
+diff --git a/app/src/test/java/dev/russiancompanion/v2/Units1620SourceIntakeTest.kt b/app/src/test/java/dev/russiancompanion/v2/Units1620SourceIntakeTest.kt
+index 6ebe2cf1..5dc06bcb 100644
+--- a/app/src/test/java/dev/russiancompanion/v2/Units1620SourceIntakeTest.kt
++++ b/app/src/test/java/dev/russiancompanion/v2/Units1620SourceIntakeTest.kt
+@@ -79,6 +79,13 @@ class Units1620SourceIntakeTest {
+                 assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(afterRepair, 11))
+                 assertEquals(afterRepair.unit(11), pack.unit(11))
+                 assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
++            } else if (number == 15) {
++                // Keep the original pin on its recorded snapshot; preparation changed later.
++                val prior = historicalSourcePack("49a926c5ace0459edf7712ca5d90db4a63ff9d31")
++                assertEquals("historical unit $number", digest, V2Validator.unitContentReviewDigest(prior, number))
++                val correction = historicalSourcePack("0f8001a8ec2cb76a7bc994a2c8d77db09a272d04")
++                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, correction, number)
++                org.junit.Assert.assertNotEquals(digest, V2Validator.unitContentReviewDigest(pack, number))
+             } else {
+                 assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+             }
+diff --git a/app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt b/app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt
+index 9591ab91..4fa3126f 100644
+--- a/app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt
++++ b/app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt
+@@ -548,8 +548,25 @@ class Units2630SourceIntakeTest {
+         assertTrue(assessment.blockers.joinToString("\n") { it.message }, assessment.blockers.any {
+             it.message.contains("AT-031") || it.message.contains("not approved") || it.name.contains("FROZEN")
+         })
++        // These later teaching corrections have explicit sources; every other pin stays current.
++        val corrections = mapOf(
++            4 to "e6db0bdfe0bbb40edf190623e2123014946f305b",
++            7 to "b7e53230e2119b1e57d781b1e1b955f074a38601",
++            8 to "fe919656bfa2775b5cc2c22f2496d4258343cfea",
++            10 to "7efff9e18328c612de235236d98e834bb85cd1db",
++            15 to "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04",
++        )
++        val prior = RecordedIntakeCorrectionScope.load(root, "49a926c5ace0459edf7712ca5d90db4a63ff9d31")
+         preservedContentDigests.forEach { (number, digest) ->
+-            assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
++            val correction = corrections[number]
++            if (correction == null) {
++                assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
++            } else {
++                assertEquals("historical unit $number", digest, V2Validator.unitContentReviewDigest(prior, number))
++                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
++                    RecordedIntakeCorrectionScope.load(root, correction), number)
++                assertNotEquals(digest, V2Validator.unitContentReviewDigest(pack, number))
++            }
+         }
+         val unit23 = V2Validator.unitContentReviewDigest(pack, 23)
+         val shifted = pack.copy(
