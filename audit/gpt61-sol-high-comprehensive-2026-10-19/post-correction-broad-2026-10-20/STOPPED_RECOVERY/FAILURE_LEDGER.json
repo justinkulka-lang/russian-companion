@@ -1,0 +1,629 @@
+[
+  {
+    "id": 13,
+    "parentId": 12,
+    "class": "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest",
+    "name": "physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease",
+    "resultType": "FAILURE",
+    "startMillis": 1792487738151,
+    "endMillis": 1792487738840,
+    "failures": [
+      {
+        "exceptionType": "org.junit.ComparisonFailure",
+        "messageCharacters": 183,
+        "messagePreview": "org.junit.ComparisonFailure: expected:<8[502cadc8a068c25eb3fd6292c7d9c04cac86ef71c9da8425225156f0e7ac4ae]> but was:<8[6ce7af2eb063d8f15ae960a58c71be50d0c2ea21aab9a2a6804332c0cd1bc97]>",
+        "messageSha256": "4438d618e5f76851d4bd310730d27840a75a1ee428e55c3749fd62e3257eadfb",
+        "stackSha256": "b237b96ee0a0a75da3a84106f1fa22b205115d4b2923a309bb4fae2ffa4bf714",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "parentId": 8,
+    "class": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+    "name": "at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable",
+    "resultType": "FAILURE",
+    "startMillis": 1792487738485,
+    "endMillis": 1792487740692,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 187,
+        "messagePreview": "java.lang.AssertionError: expected:<[]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt]>",
+        "messageSha256": "796e280a99be428596fb69450b33b4495716189dab272eb9f0542d374f7dbd5b",
+        "stackSha256": "c6d49e7ca5c467e1890edbcbe0e4fd255a47fa99ffe21007b3c9e96da3f69fbf",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "parentId": 86,
+    "class": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+    "name": "changedMovedAndMissingComparisonFilesRemainBlocked",
+    "resultType": "FAILURE",
+    "startMillis": 1792487760820,
+    "endMillis": 1792487762400,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 329,
+        "messagePreview": "java.lang.AssertionError: expected:<[src/main/java/dev/russiancompanion/v2/curriculum/Unit13ReportedPins.kt]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/Unit13ReportedPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt]>",
+        "messageSha256": "cb8c3fdbaa2727b93f14e071aedce9a3b12b56d9c8315faacf0ce89a3a547aea",
+        "stackSha256": "e9b00741d2ec026dc94b20276aee191a1ead1d1a6bcdaf65b47529c97f3c8153",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "parentId": 86,
+    "class": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+    "name": "coherentSourceForgeryAndRemovedItemIdsCannotKeepUnchangedCodeAdmitted",
+    "resultType": "FAILURE",
+    "startMillis": 1792487762401,
+    "endMillis": 1792487763673,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 319,
+        "messagePreview": "java.lang.AssertionError: expected:<[src/main/java/dev/russiancompanion/v2/curriculum/BatchBSources.kt]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/BatchBSources.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt]>",
+        "messageSha256": "9cc9bf597ea82554cf75a93dd7b251e3f5c5a5b00c8946c54d66dcd9cb82b741",
+        "stackSha256": "fef4db769af94cecdd47f31a39c40a08b8496b72154375b43628d4652432244f",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "parentId": 86,
+    "class": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+    "name": "exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus",
+    "resultType": "FAILURE",
+    "startMillis": 1792487763673,
+    "endMillis": 1792487764444,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 187,
+        "messagePreview": "java.lang.AssertionError: expected:<[]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt]>",
+        "messageSha256": "796e280a99be428596fb69450b33b4495716189dab272eb9f0542d374f7dbd5b",
+        "stackSha256": "ec92b49e02395396ddaa506fc7540a498c1640a36adecf3b8f25629318936e4d",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "parentId": 86,
+    "class": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+    "name": "newUiResourceAndCurriculumTextCannotBorrowAnExistingLiteral",
+    "resultType": "FAILURE",
+    "startMillis": 1792487764444,
+    "endMillis": 1792487765304,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 497,
+        "messagePreview": "java.lang.AssertionError: expected:<[src/main/java/dev/russiancompanion/v2/curriculum/Unreviewed.kt, src/main/java/dev/russiancompanion/v2/ui/Unreviewed.kt, src/main/res/values/unreviewed.xml]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/Unreviewed.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt, src/main/java/dev/russiancompanion/v2/ui/Unreviewed.kt, src/main/res/values/unreviewed.xml]>",
+        "messageSha256": "f2907a90e0c8c5881a2bc3868389e750f299dba8aac498e56cef83a090020eae",
+        "stackSha256": "f54a489c6b79a949bfc1077b176cf54d040e2b84cb7226f7061565362bf71330",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "parentId": 170,
+    "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+    "name": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+    "resultType": "FAILURE",
+    "startMillis": 1792487785363,
+    "endMillis": 1792487785753,
+    "failures": [
+      {
+        "exceptionType": "org.junit.ComparisonFailure",
+        "messageCharacters": 183,
+        "messagePreview": "org.junit.ComparisonFailure: expected:<8[502cadc8a068c25eb3fd6292c7d9c04cac86ef71c9da8425225156f0e7ac4ae]> but was:<8[6ce7af2eb063d8f15ae960a58c71be50d0c2ea21aab9a2a6804332c0cd1bc97]>",
+        "messageSha256": "4438d618e5f76851d4bd310730d27840a75a1ee428e55c3749fd62e3257eadfb",
+        "stackSha256": "cc18d1bfd297c55f2e73ac645dfe2f89fb79e944c973b4481945e8a2ef2e823a",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "parentId": 207,
+    "class": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+    "name": "digestsGovernanceAndLaterUnitsStayUnchanged",
+    "resultType": "FAILURE",
+    "startMillis": 1792487791248,
+    "endMillis": 1792487853184,
+    "failures": [
+      {
+        "exceptionType": "org.junit.ComparisonFailure",
+        "messageCharacters": 183,
+        "messagePreview": "org.junit.ComparisonFailure: expected:<[e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4]> but was:<[bbd8919abe7d6f4968440b9ee9d60812959ad148c121428644103ad76eee7880]>",
+        "messageSha256": "536f6db1e20942394233f27fd587eb545206514ead247f59f4141c915caa5219",
+        "stackSha256": "551fe4666a603986fae38be931b164261f9feaaa5c8e452686bf6694223edf62",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 416,
+    "parentId": 412,
+    "class": "dev.russiancompanion.v2.MultiPoolReviewSelectionTest",
+    "name": "genuineSchemaOneAndTwoHistoriesKeepExactAssignmentsAndAcceptedCompletionSnapshots",
+    "resultType": "FAILURE",
+    "startMillis": 1792488228085,
+    "endMillis": 1792488228677,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 2218,
+        "messagePreview": "java.lang.AssertionError: expected:<CumulativeReviewAssignment(id=645fb409-a9e9-47bf-9594-389a53a6ca43, targetUnit=3, policyId=unit3-prior-literacy-v1, policyDigest=e95b4eca3c8faf01804b7b917a0be1a5ee191366666111154f857f8a4965c132, responseRuleDigest=8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e, boundary=0, slots=[CumulativeReviewSlot(objectiveId=obj-u1-decoding, skill=BOUNDED_READING, itemId=u1-i-decode-pair, ownerUnit=1, itemDigest=499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64, unitDigest=161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7, teachingDigest=3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5), CumulativeReviewSlot(objectiveId=obj-u1-confusable, skill=PRINTED_LETTER_RECOGNITION, itemId=u1-i-\u043d-not-h, ownerUnit=1, itemDigest=b0cd8850f972afd89aa5c67ded60ac81516c09f19c663a6144fc2d9f46fb80b0, unitDigest=161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7, teachingDigest=ef8cc8c5021b8f5cb1c2b5b3712c529799ce00aba26cd9c1cecf97e3579c9395)], digest=57fdfb02a3bcc0dd88f573f3ca152679c2de926dfe2a1ae0c4a32c994514f5f9, schema=2)> but was:<CumulativeReviewAssignment(id=645fb409-a9e9-47bf-9594-389a53a6ca43, ",
+        "messageSha256": "65e4921227740d793c35e61119ae86735b7368637c956e248ecb2f8b7589c500",
+        "stackSha256": "835f57cdeded9b5e306ba6cd242c4a4430d1bf1777e7e1fe58a0ce94f4497aeb",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 545,
+    "parentId": 544,
+    "class": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+    "name": "completeChoicesExplainTheCasesAndAllTeachingPrecedesPractice",
+    "resultType": "FAILURE",
+    "startMillis": 1792488490047,
+    "endMillis": 1792488491807,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 24,
+        "messagePreview": "java.lang.AssertionError",
+        "messageSha256": "236d51b61b189ceec0ac4f169fec07728086016022478eae12685425934eafbd",
+        "stackSha256": "46e5574eadac3177a60a31c0ecb9a1d7abed241730b3163a66b7b4815c958864",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 554,
+    "parentId": 544,
+    "class": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+    "name": "availabilityPlayerShowsCompleteRulesWithItsFullRussianCue",
+    "resultType": "FAILURE",
+    "startMillis": 1792488509680,
+    "endMillis": 1792488512846,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 742,
+        "messagePreview": "java.lang.AssertionError: Action performScrollTo() failed.\nReason: Expected exactly '1' node but found '2' nodes that satisfy: ((TestTag = 'v2-prompt-letter') && (Text + InputText + EditableText contains '\u0412 \u041c\u043e\u0441\u043a\u0432\u0435\u0301 \u0435\u0441\u0442\u044c \u0441\u0442\u0430\u0301\u0440\u044b\u0435 \u0437\u0434\u0430\u0301\u043d\u0438\u044f' (ignoreCase: false)))\nNodes found:\n1) Node #2415 at (l=24.0, t=236.0, r=54.0, b=272.0)px, Tag: 'v2-prompt-letter'\nText = '[\u0412 \u041c\u043e\u0441\u043a\u0432\u0435\u0301 \u0435\u0441\u0442\u044c \u0441\u0442\u0430\u0301\u0440\u044b\u0435 \u0437\u0434\u0430\u0301\u043d\u0438\u044f]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 19 siblings\n2) Node #2431 at (l=24.0, t=572.0, r=54.0, b=608.0)px, Tag: 'v2-prompt-letter'\nText = '[\u0412 \u041c\u043e\u0441\u043a\u0432\u0435\u0301 \u0435\u0441\u0442\u044c \u0441\u0442\u0430\u0301\u0440\u044b\u0435 \u0437\u0434\u0430\u0301\u043d\u0438\u044f]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 19 siblings\n",
+        "messageSha256": "d4d4ec1f44e0b19c70364b1f4cfc0a33242e80a3dcac8dfa1901f94fcee35e96",
+        "stackSha256": "65a824be9b1a2762baa41e899282b4968752ae244433429fd1462d07b9aa36c9",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 621,
+    "parentId": 620,
+    "class": "dev.russiancompanion.v2.OptionPresentationTest",
+    "name": "currentCorpusPreservesEveryOptionAndDispersesCorrectPositionsInAllThreeRoutes",
+    "resultType": "FAILURE",
+    "startMillis": 1792488645893,
+    "endMillis": 1792488647440,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 54,
+        "messagePreview": "java.lang.AssertionError: expected:<561> but was:<563>",
+        "messageSha256": "5492e3ced70a8a6f633ccba7f7b500942bf8de8e14a682dce091522c96ab3fde",
+        "stackSha256": "5b4b21c02ef6cb8f42428fd79905bba49c9323bbea32868279a07321d6260bb2",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 637,
+    "parentId": 633,
+    "class": "dev.russiancompanion.v2.FragmentGlossTeachingTest",
+    "name": "everyNativeItemExampleHistoricalRecordAndUnrelatedUnitRemainsExact",
+    "resultType": "FAILURE",
+    "startMillis": 1792488671196,
+    "endMillis": 1792488671342,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 2004071,
+        "messagePreview": "java.lang.AssertionError: expected:<[V2CheckItem(id=u1-i-\u0430-identity, kind=LETTER_IDENTITY, language=en, prompt=Which printed letter is shown?, promptLetter=\u0410, promptLetterRole=CUE, options=[Latin A, Cyrillic \u0410, Cyrillic \u0420], answer=Cyrillic \u0410, feedback=The printed shape can match Latin A. In this course it is the Cyrillic vowel letter \u0410., objectiveId=obj-u1-letter-identity, sourceId=src-app-english-v2, reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT, containsGeneratedRussian=false, distractorRationales=[], assessment=null), V2CheckItem(id=u1-i-\u043c-identity, kind=LETTER_IDENTITY, language=en, prompt=Which printed letter is shown?, promptLetter=\u041c, promptLetterRole=CUE, options=[Cyrillic \u041c, Cyrillic \u041d, Cyrillic \u0422], answer=Cyrillic \u041c, feedback=\u041c is an early consonant letter. It is not \u041d., objectiveId=obj-u1-letter-identity, sourceId=src-app-english-v2, reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT, containsGeneratedRussian=false, distractorRationales=[], assessment=null), V2CheckItem(id=u1-i-\u0440-not-p, kind=CONFUSABLE, language=en, prompt=This letter looks like Latin P. What is it?, promptLetter=\u0420, promptLetterRole=CUE, options=[The Latin letter P, The Cyrillic letter \u0420, The Cyrillic letter \u041f],",
+        "messageSha256": "e10d95807640bab30f7204d8088c97afab49f53d7f09603fb01642603463fe16",
+        "stackSha256": "558d7dc4f501289510591bebcaf44070c03d3e456dffd05b53fc5e8a57e2fb6a",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 640,
+    "parentId": 639,
+    "class": "dev.russiancompanion.v2.HistoricalTeachingFixtureScopeTest",
+    "name": "currentUnit14And15RetainTheirExactCorrectionWhileTheWholePackHasAdvanced",
+    "resultType": "FAILURE",
+    "startMillis": 1792488671510,
+    "endMillis": 1792488674792,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 41328,
+        "messagePreview": "java.lang.AssertionError: Current Unit 15 expected:<V2Unit(number=15, id=unit-15, title=Requests, the imperative, and consolidation of aspect use, shortLabel=Requests, topicSummary=Proposed Unit 15 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=15, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed Lesson 15, printed pages 171-187. Independently stated topic scope: Requests, imperative forms, and consolidation of aspect use. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment., prerequisiteUnitNumbers=[14], estimatedMinutes=54, objectives=[V2Objective(id=obj-u15-imperative, unitNumber=15, title=Choose the admitted request row, kind=RECOGNITION, instructionStepIds=[u15-st-orient, u15-st-teach-imperative-1, u15-st-teach-imperative-contrast, u15-st-",
+        "messageSha256": "783178380aad71943096fcb317eb60bc096310fc5a767e3aa87f054ba82d44b8",
+        "stackSha256": "78452fef95c49d9b7b7e0465ffd939e7d29b4cdc6325afcb45bf639b72516e0e",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 763,
+    "parentId": 757,
+    "class": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+    "name": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+    "resultType": "FAILURE",
+    "startMillis": 1792489049620,
+    "endMillis": 1792489049747,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 65,
+        "messagePreview": "java.lang.AssertionError: expected:<REPLACED> but was:<UNCHANGED>",
+        "messageSha256": "dab2a42aab61ed9d0f91fa228fc90d9c62498208d309a171e123e0dbb201e085",
+        "stackSha256": "f8fcf2348f8ae81473cb5fbae25d04aae006cae885161559949ed2783ceabf4b",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 764,
+    "parentId": 757,
+    "class": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+    "name": "completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples",
+    "resultType": "FAILURE",
+    "startMillis": 1792489049747,
+    "endMillis": 1792489053217,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 365,
+        "messagePreview": "java.lang.AssertionError: Item u8-g-availability-0 complete rule context does not match its frozen application\nItem u8-i-availability-1 complete rule context does not match its frozen application\nItem u8-i-availability-2 complete rule context does not match its frozen application\nItem u8-i-availability-3 complete rule context does not match its frozen application",
+        "messageSha256": "b24108cc4d14af9a08b093b23bc632bf37974fae93daadca23b8e12689a4e13d",
+        "stackSha256": "6ebb75084450e8f8dc5aac10ce5825338f7e5cff064da7bf33418941a22b3b29",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 817,
+    "parentId": 799,
+    "class": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+    "name": "bothChainsTeachBeforePracticeAndRepairEveryOriginalExample",
+    "resultType": "FAILURE",
+    "startMillis": 1792489529588,
+    "endMillis": 1792489535845,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 365,
+        "messagePreview": "java.lang.AssertionError: Item u8-g-availability-0 complete rule context does not match its frozen application\nItem u8-i-availability-1 complete rule context does not match its frozen application\nItem u8-i-availability-2 complete rule context does not match its frozen application\nItem u8-i-availability-3 complete rule context does not match its frozen application",
+        "messageSha256": "b24108cc4d14af9a08b093b23bc632bf37974fae93daadca23b8e12689a4e13d",
+        "stackSha256": "9363b85f281ed95ee318537eb51a229096c20c3da5bbf1907aa7084e681d5c30",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 828,
+    "parentId": 823,
+    "class": "dev.russiancompanion.v2.Unit15AspectPreparationHistoryTest",
+    "name": "originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact",
+    "resultType": "FAILURE",
+    "startMillis": 1792489549071,
+    "endMillis": 1792489549562,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 2005796,
+        "messagePreview": "java.lang.AssertionError: expected:<[V2Unit(number=1, id=unit-1, title=Learning to read Russian, shortLabel=Printed letters, topicSummary=Content-complete development unit for printed letters: identities, print pairs, look-alikes, signs, and letter-level decoding. Qualified review and the owned-edition mapping are still pending., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=1, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed Lesson 1 mapping from the publisher's public table of contents. Owned-edition comparison is not signed, so this unit is not labeled aligned., prerequisiteUnitNumbers=[], estimatedMinutes=152, objectives=[V2Objective(id=obj-u1-letter-identity, unitNumber=1, title=Identify staged printed letters, kind=RECOGNITION, instructionStepIds=[u1-st-vowels, u1-st-cons, u1-st-system], exampleIds=[ex-letter-0410, ex-letter-0411, ex-letter-0413, ex-letter-0414, ex-letter-0416, ex-letter-0417, ex-letter-0418, ex-letter-041a, ex-letter-041b, ex-letter-041c, ex-letter-041e, ex-letter-041f, ex-letter-0422, ex-letter-0424, ex-letter-0426, ex-letter-0427, ex-letter-0428, ex-letter-0429, ex-letter-042b, ex-letter-042d], practiceSt",
+        "messageSha256": "6fd7b2c1ca78ce073f9ca94055ba7fb3e4d1574923a5bfb4fe3810f4bb5a6fea",
+        "stackSha256": "f796de944de80024037c46a71d801308f48e092da95f014d52df266c80f7642d",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 844,
+    "parentId": 843,
+    "class": "dev.russiancompanion.v2.Unit14ImpersonalRemediationTest",
+    "name": "allThreeStateCardsPrecedePracticeAndRepairRestoresEveryExample",
+    "resultType": "FAILURE",
+    "startMillis": 1792489559351,
+    "endMillis": 1792489564718,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 365,
+        "messagePreview": "java.lang.AssertionError: Item u8-g-availability-0 complete rule context does not match its frozen application\nItem u8-i-availability-1 complete rule context does not match its frozen application\nItem u8-i-availability-2 complete rule context does not match its frozen application\nItem u8-i-availability-3 complete rule context does not match its frozen application",
+        "messageSha256": "b24108cc4d14af9a08b093b23bc632bf37974fae93daadca23b8e12689a4e13d",
+        "stackSha256": "89afa9fa6610c2fcdde3aa3336627d54e0d98a7800eb4cf7843d110da6a2f4f5",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 874,
+    "parentId": 873,
+    "class": "dev.russiancompanion.v2.Unit15ImperativeRemediationTest",
+    "name": "completeImperativeContrastsPrecedePracticeAndRepairRestoresEveryExample",
+    "resultType": "FAILURE",
+    "startMillis": 1792489666908,
+    "endMillis": 1792489671478,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 365,
+        "messagePreview": "java.lang.AssertionError: Item u8-g-availability-0 complete rule context does not match its frozen application\nItem u8-i-availability-1 complete rule context does not match its frozen application\nItem u8-i-availability-2 complete rule context does not match its frozen application\nItem u8-i-availability-3 complete rule context does not match its frozen application",
+        "messageSha256": "b24108cc4d14af9a08b093b23bc632bf37974fae93daadca23b8e12689a4e13d",
+        "stackSha256": "e9a9e8f39045a07a546946daa8ffdd0db4da2eca2a690d0703de5ea8bee9e1fb",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1057,
+    "parentId": 1054,
+    "class": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+    "name": "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+    "resultType": "FAILURE",
+    "startMillis": 1792490598971,
+    "endMillis": 1792490599678,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 75,
+        "messagePreview": "java.lang.AssertionError: expected:<[1, 2, 3, 4, 5, 6]> but was:<[1, 2, 3]>",
+        "messageSha256": "e93b7f750d7b0d11c055f5ab8170373143fae5ee97366ad902f2fd107f712c07",
+        "stackSha256": "22df3e5410ad4764ea93fdc25b2638b2741661619503e8b6133cc18d68c6fb2f",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1058,
+    "parentId": 1054,
+    "class": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+    "name": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+    "resultType": "FAILURE",
+    "startMillis": 1792490599678,
+    "endMillis": 1792490602589,
+    "failures": [
+      {
+        "exceptionType": "java.lang.NullPointerException",
+        "messageCharacters": 30,
+        "messagePreview": "java.lang.NullPointerException",
+        "messageSha256": "0580e6836107c406c3b3a0cac1d8b48bc16b5e41599889bf5350ceeae81ba214",
+        "stackSha256": "5368ab327671629a4519432b8506622dd287992035528e899008c834de45a1a7",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1060,
+    "parentId": 1054,
+    "class": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+    "name": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+    "resultType": "FAILURE",
+    "startMillis": 1792490602712,
+    "endMillis": 1792490603380,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 59465368,
+        "messagePreview": "java.lang.AssertionError: expected:<V2CurriculumPack(schemaVersion=1, packId=v2-curriculum-foundation, packVersion=3, publicReleaseEligible=false, linguisticReview=V2ReviewRecord(id=rev-pending-v2-curriculum, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=Pack-level status is not a unit approval. Each unit has its own pending review record., reviewChainStages=[], evidence=null, finalAudit=null), unitReviews=[V2UnitReviewRecord(id=rev-pending-unit-1, unitNumber=1, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=No qualified reviewer has signed Unit 1., reviewChainStages=[], evidence=null, finalAudit=null), V2UnitReviewRecord(id=rev-pending-unit-2, unitNumber=2, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=No qualified reviewer has signed Unit 2., reviewChainStages=[], evidence=null, finalAudit=null), V2UnitReviewRecord(id=rev-pending-unit-3, unit",
+        "messageSha256": "df8a91356ed2df49644de8f8d011f36475e434c01b5883e4eb3d92bf7d8c19bc",
+        "stackSha256": "9be57feccc4f0e736aa80a5192cd83423c6c9772723eb46c9534924faa984665",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1071,
+    "parentId": 1066,
+    "class": "dev.russiancompanion.v2.Unit8ExistenceHistoryTest",
+    "name": "frozenEvidenceOtherObjectivesAndLaterGenitiveStayExact",
+    "resultType": "FAILURE",
+    "startMillis": 1792490616545,
+    "endMillis": 1792490617092,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 1966472,
+        "messagePreview": "java.lang.AssertionError: expected:<[V2Unit(number=1, id=unit-1, title=Learning to read Russian, shortLabel=Printed letters, topicSummary=Content-complete development unit for printed letters: identities, print pairs, look-alikes, signs, and letter-level decoding. Qualified review and the owned-edition mapping are still pending., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=1, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed Lesson 1 mapping from the publisher's public table of contents. Owned-edition comparison is not signed, so this unit is not labeled aligned., prerequisiteUnitNumbers=[], estimatedMinutes=152, objectives=[V2Objective(id=obj-u1-letter-identity, unitNumber=1, title=Identify staged printed letters, kind=RECOGNITION, instructionStepIds=[u1-st-vowels, u1-st-cons, u1-st-system], exampleIds=[ex-letter-0410, ex-letter-0411, ex-letter-0413, ex-letter-0414, ex-letter-0416, ex-letter-0417, ex-letter-0418, ex-letter-041a, ex-letter-041b, ex-letter-041c, ex-letter-041e, ex-letter-041f, ex-letter-0422, ex-letter-0424, ex-letter-0426, ex-letter-0427, ex-letter-0428, ex-letter-0429, ex-letter-042b, ex-letter-042d], practiceSt",
+        "messageSha256": "9371e097fc904dd12dd7a4fd6f92ef68855a213fe91165f35fab20b6d62a6808",
+        "stackSha256": "39fb46f033506f8d660b78992c3502936af8d0bd55348f26a10b4e2cf4bf2d75",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1090,
+    "parentId": 1089,
+    "class": "dev.russiancompanion.v2.Units1115MappingGapTest",
+    "name": "preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded",
+    "resultType": "FAILURE",
+    "startMillis": 1792490674522,
+    "endMillis": 1792490675309,
+    "failures": [
+      {
+        "exceptionType": "org.junit.ComparisonFailure",
+        "messageCharacters": 190,
+        "messagePreview": "org.junit.ComparisonFailure: unit 4 expected:<[1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11]> but was:<[c440d047f575da49ba463f026f0f66ebb7f953f38cccecc30b824add2396d395]>",
+        "messageSha256": "bb53e3f108b38373f4fc3530784b8d7f478056fa87c66d6f30baca6228bdd58d",
+        "stackSha256": "6abf788ae509b5275ddf3497e71f7d61e37b2d4fd1a9ab31f667d6c4def89b22",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1122,
+    "parentId": 1112,
+    "class": "dev.russiancompanion.v2.V2RebuildTest",
+    "name": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+    "resultType": "FAILURE",
+    "startMillis": 1792490912067,
+    "endMillis": 1792490912408,
+    "failures": [
+      {
+        "exceptionType": "org.junit.ComparisonFailure",
+        "messageCharacters": 183,
+        "messagePreview": "org.junit.ComparisonFailure: expected:<[1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11]> but was:<[c440d047f575da49ba463f026f0f66ebb7f953f38cccecc30b824add2396d395]>",
+        "messageSha256": "18b0392e5007c595f5ff402b53e62821ebb326cfc95a2930d889b755210ce7c4",
+        "stackSha256": "2d3f3f43dce8d748c997c985408486b6b0dd9942fc3f6799d43fbdfdc6b1ea1f",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1145,
+    "parentId": 1142,
+    "class": "dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest",
+    "name": "reportMatrixMatchesTheLiveCurriculum",
+    "resultType": "FAILURE",
+    "startMillis": 1792490999421,
+    "endMillis": 1792491026572,
+    "failures": [
+      {
+        "exceptionType": "org.junit.ComparisonFailure",
+        "messageCharacters": 183,
+        "messagePreview": "org.junit.ComparisonFailure: expected:<8[502cadc8a068c25eb3fd6292c7d9c04cac86ef71c9da8425225156f0e7ac4ae]> but was:<8[6ce7af2eb063d8f15ae960a58c71be50d0c2ea21aab9a2a6804332c0cd1bc97]>",
+        "messageSha256": "4438d618e5f76851d4bd310730d27840a75a1ee428e55c3749fd62e3257eadfb",
+        "stackSha256": "3259cdd706ff6b1ced4a28206fd767f75c3baa59ee9b82ec4f356a1db53bd6f9",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1150,
+    "parentId": 1146,
+    "class": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+    "name": "committedUnitPackagesMatchTheGenerator",
+    "resultType": "FAILURE",
+    "startMillis": 1792491047850,
+    "endMillis": 1792491049796,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 370,
+        "messagePreview": "java.lang.AssertionError: Repository source digest does not match the release binding\nPack content-review digest does not match the repository aggregate\nReview file UNIT_1_REVIEW_PACKET.md is not the deterministic rendering\nReview file UNIT_1_REVIEW_MANIFEST.json is not the deterministic rendering\nReview file REVIEWER_INSTRUCTIONS.md is not the deterministic rendering",
+        "messageSha256": "6dafc995e222621d3a7bba0d408dbec5bc1c02e68dad50361a3f8815154abef2",
+        "stackSha256": "eb153a3498efd27a7d46353624cc9be1617d33bb0cf82e08814f4601f9f09b00",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1151,
+    "parentId": 1146,
+    "class": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+    "name": "curriculumSourceCommitMustContainTheGovernedCurriculum",
+    "resultType": "FAILURE",
+    "startMillis": 1792491049796,
+    "endMillis": 1792491052178,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 115,
+        "messagePreview": "java.lang.AssertionError: Unit 4 content-review digest at the curriculum source commit does not match this revision",
+        "messageSha256": "ae3fb213d5ef83ca64e4198707afc09cb42a14445e0d3d0f8de6b9a46eb32319",
+        "stackSha256": "8104022e9b5c156bebfbdda6669ac73c5350a1df592558d0b2f4675604b1a654",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1153,
+    "parentId": 1146,
+    "class": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+    "name": "mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields",
+    "resultType": "FAILURE",
+    "startMillis": 1792491054331,
+    "endMillis": 1792491054855,
+    "failures": [
+      {
+        "exceptionType": "org.junit.ComparisonFailure",
+        "messageCharacters": 183,
+        "messagePreview": "org.junit.ComparisonFailure: expected:<[1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11]> but was:<[c440d047f575da49ba463f026f0f66ebb7f953f38cccecc30b824add2396d395]>",
+        "messageSha256": "18b0392e5007c595f5ff402b53e62821ebb326cfc95a2930d889b755210ce7c4",
+        "stackSha256": "f4ba60b210bacb920c6c64947b6e205f794669db700a611934e2dd29179e90b9",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1189,
+    "parentId": 1186,
+    "class": "dev.russiancompanion.v2.Unit4PresentTeachingTest",
+    "name": "existingNativeItemsExamplesRecordsAndOtherUnitContentsRemainExact",
+    "resultType": "FAILURE",
+    "startMillis": 1792491495989,
+    "endMillis": 1792491496053,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 1998249,
+        "messagePreview": "java.lang.AssertionError: expected:<[V2CheckItem(id=u1-i-\u0430-identity, kind=LETTER_IDENTITY, language=en, prompt=Which printed letter is shown?, promptLetter=\u0410, promptLetterRole=CUE, options=[Latin A, Cyrillic \u0410, Cyrillic \u0420], answer=Cyrillic \u0410, feedback=The printed shape can match Latin A. In this course it is the Cyrillic vowel letter \u0410., objectiveId=obj-u1-letter-identity, sourceId=src-app-english-v2, reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT, containsGeneratedRussian=false, distractorRationales=[], assessment=null), V2CheckItem(id=u1-i-\u043c-identity, kind=LETTER_IDENTITY, language=en, prompt=Which printed letter is shown?, promptLetter=\u041c, promptLetterRole=CUE, options=[Cyrillic \u041c, Cyrillic \u041d, Cyrillic \u0422], answer=Cyrillic \u041c, feedback=\u041c is an early consonant letter. It is not \u041d., objectiveId=obj-u1-letter-identity, sourceId=src-app-english-v2, reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT, containsGeneratedRussian=false, distractorRationales=[], assessment=null), V2CheckItem(id=u1-i-\u0440-not-p, kind=CONFUSABLE, language=en, prompt=This letter looks like Latin P. What is it?, promptLetter=\u0420, promptLetterRole=CUE, options=[The Latin letter P, The Cyrillic letter \u0420, The Cyrillic letter \u041f],",
+        "messageSha256": "da066c2e44e24c63e72911c76edc735d3fa01b8c5f3ca79551b9be9ab0fc9c77",
+        "stackSha256": "b5d298c92b1e847c5c06d51dfd865b688a0b5d2b95f77b18a3f487ac3c1701e0",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1234,
+    "parentId": 1233,
+    "class": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+    "name": "structuralMappingsAreDigestBoundAndStayUnsigned",
+    "resultType": "FAILURE",
+    "startMillis": 1792491896852,
+    "endMillis": 1792491911617,
+    "failures": [
+      {
+        "exceptionType": "org.junit.ComparisonFailure",
+        "messageCharacters": 190,
+        "messagePreview": "org.junit.ComparisonFailure: unit 4 expected:<[1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11]> but was:<[c440d047f575da49ba463f026f0f66ebb7f953f38cccecc30b824add2396d395]>",
+        "messageSha256": "bb53e3f108b38373f4fc3530784b8d7f478056fa87c66d6f30baca6228bdd58d",
+        "stackSha256": "313320063c26892c5591dc04bed11df8c386cc82ba8522ecec988c393ce3b9ff",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  },
+  {
+    "id": 1269,
+    "parentId": 1268,
+    "class": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+    "name": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+    "resultType": "FAILURE",
+    "startMillis": 1792492018852,
+    "endMillis": 1792492040175,
+    "failures": [
+      {
+        "exceptionType": "java.lang.AssertionError",
+        "messageCharacters": 24,
+        "messagePreview": "java.lang.AssertionError",
+        "messageSha256": "236d51b61b189ceec0ac4f169fec07728086016022478eae12685425934eafbd",
+        "stackSha256": "e9a542df0b800386b7659c0354c8b2e5e2b3939108345ea1553249f65ae53b00",
+        "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+      }
+    ]
+  }
+]
