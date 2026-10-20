@@ -2165,3 +2165,8 @@ Read post-correction-broad-2026-10-20/CONTINUATION_STARTED/STATUS.md under audit
 ## Concrete metadata follow-up QUEUED behind active continuation — 2026-10-20
 
 Read post-correction-broad-2026-10-20/QUEUED_METADATA_CORRECTION/STATUS.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Fourfieldpatch prepared/checksvalid outsidecheckout,not applied. Detachedchain waits for verified248-method continuation publication plus clean synchronized unchanged inputs/OPEN DraftPR64,then applies exact2file patch,commits,test20existingmethods,collects freshXML/events,retains rawfailures and all66archive hashes,andpushes report/checkpoint/PRupdate.20method baseline projection from stoppedbinary=13SUCCESS/7FAILURE,not a separateexecution. All288guardbindings/acceptancefalse and every candidatefield exceptsourceDigest exact;noAPK/freeze/approval/native/assertion change. Do not duplicatejobs or editpendinginputs. Actualstateonly externalmetadata-proposal/CHAIN.log/APPLIED.json/VERIFIED/RESULT.json/PUBLICATION_COMPLETE.json;no queuedresult claimed. Otherfailures/qualifiedreview remainOPEN;physicalacceptanceLAST.
+
+
+## Restore preflight diagnostic — 2026-10-20
+
+Read post-correction-broad-2026-10-20/RESTORE_PREFLIGHT_DIAGNOSTIC/ENGINEERING_OBSERVATION.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Isolated compiled-code Java probe accepts four structural/profile checks for exact historical Unit13/Unit7 documents; no LocalStore/database restore or JUnit executed. Shared vs named recording-directory distinction is a diagnostic candidate only. Original restore failures/old Unit7 cause remain UNCONFIRMED. Active248-method continuation and metadata chain unchanged;do not duplicate jobs or alter inputs. Audit INCOMPLETE;physical LAST.
