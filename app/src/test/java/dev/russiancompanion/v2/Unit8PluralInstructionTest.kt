@@ -23,10 +23,29 @@ class Unit8PluralInstructionTest {
   assertTrue(rem.body.contains("dictionary labels, not plural English translations"));assertTrue(rem.body.contains("retains its dictionary gender"));assertTrue(rem.body.contains("not establish an unrestricted productive plural algorithm"))
  }
  @Test fun unit8ScoredObjectsAndAllPriorNativeExamplesAndProvenanceRemainIdentical() {
-  val p=pack();val old=baseline();assertEquals(old.items.filter{it.objectiveId.startsWith("obj-u8-")},p.items.filter{it.objectiveId.startsWith("obj-u8-")});assertEquals(old.examples,p.examples.filter{e->old.examples.any{it.id==e.id}});assertEquals(old.sourceCapabilities,p.sourceCapabilities)
+  val p=historicalPack("4a67bce3a8c94efd7e63f49d911f91746376ecb2");val old=baseline();assertEquals(old.items.filter{it.objectiveId.startsWith("obj-u8-")},p.items.filter{it.objectiveId.startsWith("obj-u8-")});assertEquals(old.examples,p.examples.filter{e->old.examples.any{it.id==e.id}});assertEquals(old.sourceCapabilities,p.sourceCapabilities)
   val records=p.provenanceRecords.associateBy{it.itemId};old.provenanceRecords.forEach{assertEquals(it,records[it.itemId])};assertEquals(21,p.provenanceRecords.count{it.unitNumber==8}-old.provenanceRecords.count{it.unitNumber==8})
   assertEquals(old.unit(8)!!.sessions.single{it.id=="u8-s-spelling"},p.unit(8)!!.sessions.single{it.id=="u8-s-spelling"})
-  val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
+  // Retain the plural correction's exact historical contract above; bind current instruction below.
+  val current=pack().also{V2PackIdentityIndex.warm(it)}
+  val objectiveIds=setOf("obj-u8-plural","obj-u8-spelling")
+  val sessionIds=setOf("u8-s-plural","u8-s-spelling")
+  val historicalUnit=p.unit(8)!!;val currentUnit=current.unit(8)!!
+  assertEquals(historicalUnit.objectives.filter{it.id in objectiveIds},currentUnit.objectives.filter{it.id in objectiveIds})
+  assertEquals(historicalUnit.sessions.filter{it.id in sessionIds},currentUnit.sessions.filter{it.id in sessionIds})
+  assertEquals(p.items.filter{it.objectiveId in objectiveIds},current.items.filter{it.objectiveId in objectiveIds})
+  assertEquals(p.provenanceRecords.filter{it.objectiveId in objectiveIds},current.provenanceRecords.filter{it.objectiveId in objectiveIds})
+  val exampleIds=(historicalUnit.objectives.filter{it.id in objectiveIds}.flatMap{it.exampleIds}+
+   historicalUnit.sessions.filter{it.id in sessionIds}.flatMap{it.steps}.flatMap{it.exampleIds}).toSet()
+  assertEquals(p.examples.filter{it.id in exampleIds},current.examples.filter{it.id in exampleIds})
+  assertEquals(old.examples,current.examples.filter{e->old.examples.any{it.id==e.id}})
+  assertEquals(old.sourceCapabilities,current.sourceCapabilities)
+  val currentRecords=current.provenanceRecords.associateBy{it.itemId}
+  old.provenanceRecords.forEach{assertEquals(it,currentRecords[it.itemId])}
+  // Availability has a separately recorded correction; compare every Unit8 item to that exact source.
+  val availabilitySource=historicalPack("fe919656bfa2775b5cc2c22f2496d4258343cfea")
+  assertEquals(availabilitySource.items.filter{it.objectiveId.startsWith("obj-u8-")},current.items.filter{it.objectiveId.startsWith("obj-u8-")})
+  val v=V2Validator.validate(current);assertTrue(v.errors.joinToString("\n"),v.ok)
  }
  @Test fun earlierSevenAnswerPluralCompletionCannotCreditLaterSpellingReinforcement() {
   val p=pack();val u=p.unit(8)!!;assertTrue(u.sessions.indexOfFirst{it.id=="u8-s-plural"}<u.sessions.indexOfFirst{it.id=="u8-s-spelling"});val o=objective(p,"plural")
@@ -64,6 +83,12 @@ class Unit8PluralInstructionTest {
  }
  private fun objective(p:V2CurriculumPack,k:String)=p.unit(8)!!.objectives.single{it.id=="obj-u8-$k"}
  private fun record(p:V2CurriculumPack,store:LocalStore,ids:List<String>) {for(id in ids){val step=p.unit(8)!!.sessions.flatMap{it.steps}.single{id in it.itemIds};store.v2RecordGovernedAttempt(prepareGovernedAttempt(p,id,p.item(id)!!.answer,PRESCRIBED_CHECK,step.id,"2026-10-13T23:00")!!)}}
+ private fun historicalPack(commit:String):V2CurriculumPack {
+  val process=ProcessBuilder("git","show","$commit:app/src/main/assets/content/v2-curriculum.json")
+   .directory(File(if(File("app").isDirectory)"." else "..")).start()
+  val text=process.inputStream.bufferedReader().readText();assertEquals(0,process.waitFor())
+  return V2PackLoader.parse(text).also{V2PackIdentityIndex.warm(it)}
+ }
  private fun baseline():V2CurriculumPack {val x=ProcessBuilder("git","show","3812f0e793ac6478a809fe683b303048e6f1c69c:app/src/main/assets/content/v2-curriculum.json").directory(File(if(File("app").isDirectory)"." else "..")).start();val p=V2PackLoader.parse(x.inputStream.bufferedReader().readText());assertEquals(0,x.waitFor());return p}
  private fun context():Context=ApplicationProvider.getApplicationContext()
  private fun pack()=V2PackLoader.parse(File(if(File("app").isDirectory)"." else "..","app/src/main/assets/content/v2-curriculum.json").readText())
