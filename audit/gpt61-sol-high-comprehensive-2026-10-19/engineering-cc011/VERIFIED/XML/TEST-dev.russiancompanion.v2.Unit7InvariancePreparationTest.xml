@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit7InvariancePreparationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-20T08:17:40.714Z" hostname="d0aced911621" time="3.028">
+  <properties/>
+  <testcase name="ruleAndEnglishScaffoldingAreAvailableBeforeFirstPractice" classname="dev.russiancompanion.v2.Unit7InvariancePreparationTest" time="1.757"/>
+  <testcase name="repairRestoresTheWholeExplanationAndBothRetainedExamples" classname="dev.russiancompanion.v2.Unit7InvariancePreparationTest" time="1.244"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,202 @@
+diff --git a/app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationHistoryTest.kt b/app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationHistoryTest.kt
+new file mode 100644
+index 00000000..e4c82d54
+--- /dev/null
++++ b/app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationHistoryTest.kt
+@@ -0,0 +1,83 @@
++package dev.russiancompanion.v2
++
++import android.content.Context
++import androidx.test.core.app.ApplicationProvider
++import dev.russiancompanion.data.local.LocalStore
++import dev.russiancompanion.v2.backup.*
++import dev.russiancompanion.v2.curriculum.*
++import org.junit.Assert.*
++import org.junit.Test
++import org.junit.runner.RunWith
++import org.robolectric.RobolectricTestRunner
++import org.robolectric.annotation.Config
++import java.io.ByteArrayOutputStream
++import java.io.File
++
++@RunWith(RobolectricTestRunner::class)
++@Config(sdk=[33])
++class Unit7InvariancePreparationHistoryTest {
++    @Test fun originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact() {
++        val p=current();val old=previous()
++        assertEquals(old.items,p.items.take(old.items.size));assertEquals(old.examples,p.examples.take(old.examples.size))
++        assertEquals(old.provenanceRecords,p.provenanceRecords.take(old.provenanceRecords.size))
++        assertEquals(old.units.filter { it.number!=7 },p.units.filter { it.number!=7 })
++        val a=old.unit(7)!!;val b=p.unit(7)!!
++        assertEquals(a.advancement,b.advancement);assertEquals(a.prerequisiteUnitNumbers,b.prerequisiteUnitNumbers)
++        assertEquals(a.objectives.filter { it.id!="obj-u7-adverb-invariance" },b.objectives.filter { it.id!="obj-u7-adverb-invariance" })
++        assertEquals(a.sessions.filter { it.id!="u7-s-adverb-invariance" },b.sessions.filter { it.id!="u7-s-adverb-invariance" })
++        assertEquals(old.sourceCapabilities,p.sourceCapabilities)
++        assertEquals(old.items,p.items);assertEquals(old.examples,p.examples)
++        assertNotEquals(V2Validator.unitContentReviewDigest(old,7),V2Validator.unitContentReviewDigest(p,7))
++        val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
++    }
++    @Test fun oldAcceptedWorkAndResumeStayStoredThroughBackupReopenButNeedCurrentWork() {
++        val p=current();val old=previous();val id="u7-i-adverb-invariance-1";val teach="u7-st-teach-adverb-invariance-2"
++        val repair="u7-st-rem-adverb-invariance";val english="u7-st-teach-adverb-invariance-english"
++        val name="invariance-preparation-${System.nanoTime()}.db";val dir=File(context().cacheDir,"invariance-preparation-${System.nanoTime()}")
++        try {
++            LocalStore.openInMemory(context()).use { s ->
++                record(old,s,id,old.item(id)!!.answer)
++                s.v2CompleteGovernedStep(teach,governedStepCompletionDigest(old,s.v2LearnerView(),teach)!!,"old")
++                s.v2CompleteGovernedStep(repair,governedStepCompletionDigest(old,s.v2LearnerView(),repair)!!,"old")
++                val at=old.step(teach)!!
++                s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted=true,currentUnitNumber=7,startingPoint="RESUME_FROM_BOOK",currentSessionId=at.first.id,currentStepIndex=at.first.steps.indexOf(at.second)).verifiedResume(old))
++                val before=s.governedLearnerDocument()
++                assertTrue(id in creditItemIds(old,s.v2LearnerView()));assertTrue(resumeIsCurrent(old,s.v2LearnerView()))
++                assertTrue(completedStepCounts(old,s.v2LearnerView(),teach))
++                assertTrue(completedStepCounts(old,s.v2LearnerView(),repair))
++                assertFalse(id in creditItemIds(p,s.v2LearnerView()));assertFalse(resumeIsCurrent(p,s.v2LearnerView()))
++                // Step completion binds the step's own content, not the entire changed unit.
++                assertTrue(completedStepCounts(p,s.v2LearnerView(),teach))
++                assertFalse(completedStepCounts(p,s.v2LearnerView(),repair))
++                assertFalse(completedStepCounts(p,s.v2LearnerView(),english));assertEquals(before,s.governedLearnerDocument())
++                val bytes=ByteArrayOutputStream();writeGovernedBackup(bytes,"dev.russiancompanion",p.packId,p.packVersion,"FOLLOW_SYSTEM",before,emptyList())
++                val read=readGovernedBackup(bytes.toByteArray().inputStream(),"dev.russiancompanion",p.packId,p.packVersion,dir) as BackupReadResult.Valid
++                LocalStore.openNamed(context(),name).use { t->assertEquals(GovernedReplaceOutcome.REPLACED,t.replaceGovernedLearner(read.backup.document,emptyList())) }
++                LocalStore.openNamed(context(),name).use { t->
++                    assertEquals(before,t.governedLearnerDocument());assertFalse(resumeIsCurrent(p,t.v2LearnerView()))
++                    assertTrue(completedStepCounts(p,t.v2LearnerView(),teach))
++                    assertFalse(completedStepCounts(p,t.v2LearnerView(),repair))
++                    assertFalse(completedStepCounts(p,t.v2LearnerView(),english))
++                    t.v2CompleteGovernedStep(english,governedStepCompletionDigest(p,t.v2LearnerView(),english)!!,"new")
++                    assertTrue(completedStepCounts(p,t.v2LearnerView(),english))
++                    record(p,t,id,p.item(id)!!.answer);assertTrue(id in creditItemIds(p,t.v2LearnerView()))
++                    assertEquals(before.attempts,t.governedLearnerDocument().attempts.take(before.attempts.size))
++                    val now=p.step("u7-st-teach-adverb-invariance-1")!!
++                    t.v2SaveProfile(t.v2Profile().copy(currentSessionId=now.first.id,currentStepIndex=now.first.steps.indexOf(now.second)).verifiedResume(p))
++                    assertTrue(resumeIsCurrent(p,t.v2LearnerView()))
++                }
++            }
++        } finally { context().deleteDatabase(name);dir.deleteRecursively() }
++    }
++    private fun record(p:V2CurriculumPack,s:LocalStore,id:String,answer:String) {
++        val step=p.unit(7)!!.sessions.flatMap { it.steps }.single { id in it.itemIds }
++        s.v2RecordGovernedAttempt(prepareGovernedAttempt(p,id,answer,PRESCRIBED_CHECK,step.id,"2026-10-20T00:00:${s.v2Attempts().size}")!!)
++    }
++    private fun previous():V2CurriculumPack {
++        val proc=ProcessBuilder("git","show","c6484856a632b034b8636da79f000b5b1bbf6a14:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
++        val p=V2PackLoader.parse(proc.inputStream.bufferedReader().readText());assertEquals(0,proc.waitFor());return p
++    }
++    private fun current()=V2PackLoader.parse(File(root(),"app/src/main/assets/content/v2-curriculum.json").readText())
++    private fun root()=File(if(File("app").isDirectory)"." else "..")
++    private fun context():Context=ApplicationProvider.getApplicationContext()
++}
+diff --git a/app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationTest.kt b/app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationTest.kt
+new file mode 100644
+index 00000000..bb4567b3
+--- /dev/null
++++ b/app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationTest.kt
+@@ -0,0 +1,33 @@
++package dev.russiancompanion.v2
++
++import dev.russiancompanion.v2.curriculum.*
++import org.junit.Assert.*
++import org.junit.Test
++import java.io.File
++
++class Unit7InvariancePreparationTest {
++    @Test fun ruleAndEnglishScaffoldingAreAvailableBeforeFirstPractice() {
++        val p = pack()
++        val session = p.unit(7)!!.sessions.single { it.id == "u7-s-adverb-invariance" }
++        val teaching = session.steps.filter { it.kind == "TEACH" }
++        assertEquals(teaching, session.steps.takeWhile { it.kind != "GUIDED" }.filter { it.kind == "TEACH" })
++        val body = teaching.joinToString("\n") { it.body }
++        assertTrue(body.contains("do not decline or conjugate"))
++        assertTrue(body.contains("does not mean that comparative forms cannot exist"))
++        assertTrue(body.contains("wording task does not demonstrate applying invariance"))
++        assertEquals(listOf("u7-i-adverb-invariance-1", "u7-i-adverb-invariance-2"),
++            p.unit(7)!!.objectives.single { it.id == "obj-u7-adverb-invariance" }.checkItemIds)
++    }
++
++    @Test fun repairRestoresTheWholeExplanationAndBothRetainedExamples() {
++        val p = pack()
++        val teaching = p.unit(7)!!.sessions.single { it.id == "u7-s-adverb-invariance" }.steps.filter { it.kind == "TEACH" }
++        val repair = p.step("u7-st-rem-adverb-invariance")!!.second
++        assertEquals(teaching.joinToString("\n\n") { it.body }, repair.body)
++        assertEquals(listOf("ex-u7-adverb-invariance-0", "ex-u7-adverb-invariance-1"), repair.exampleIds)
++        assertEquals(listOf("u7-st-guided-adverb-invariance-1"), reviewedGuidedPractice(p, repair.id))
++    }
++
++    private fun pack() = V2PackLoader.parse(File(if (File("app").isDirectory) "." else "..",
++        "app/src/main/assets/content/v2-curriculum.json").readText())
++}
+diff --git a/app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationUiTest.kt b/app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationUiTest.kt
+new file mode 100644
+index 00000000..87bbaacf
+--- /dev/null
++++ b/app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationUiTest.kt
+@@ -0,0 +1,68 @@
++package dev.russiancompanion.v2
++
++import android.content.Context
++import androidx.test.core.app.ApplicationProvider
++import androidx.compose.ui.test.*
++import androidx.compose.ui.test.junit4.v2.createComposeRule
++import dev.russiancompanion.data.local.LocalStore
++import dev.russiancompanion.v2.curriculum.*
++import dev.russiancompanion.v2.ui.V2App
++import org.junit.Assert.*
++import org.junit.Rule
++import org.junit.Test
++import org.junit.runner.RunWith
++import org.robolectric.RobolectricTestRunner
++import org.robolectric.annotation.Config
++
++@RunWith(RobolectricTestRunner::class)
++@Config(sdk = [33])
++class Unit7InvariancePreparationUiTest {
++    @get:Rule val compose = createComposeRule()
++    @Test fun wrongWordingAnswerRestoresTheWholeRuleAndReturnsThroughTheOriginalGuide() = repair(7,"adverb-invariance","u7-i-adverb-invariance-1")
++
++    private fun repair(number: Int, stem: String, id: String) {
++        val p = dev.russiancompanion.v2.curriculum.V2PackLoader.parse(java.io.File(if(java.io.File("app").isDirectory)"." else "..","app/src/main/assets/content/v2-curriculum.json").readText()); val item = p.item(id)!!
++        val check = p.step("u$number-st-check-$stem")!!
++        LocalStore.openInMemory(context()).use { store ->
++            resume(store, p, number, check)
++            compose.setContent { V2App(store, p, {}) }
++            tag("v2-continue").performClick()
++            val wrong = item.options.first { it != item.answer }
++            tag("v2-option-$id-$wrong").performScrollTo().performClick()
++            tag("v2-remediation-$id").performScrollTo().performClick()
++            val rem = p.step("u$number-st-rem-$stem")!!.second
++            compose.onNodeWithText(rem.body).performScrollTo().assertIsDisplayed()
++            for (exampleId in rem.exampleIds) {
++                tag("v2-example-$exampleId").performScrollTo().assertTextEquals(p.example(exampleId)!!.display)
++                tag("v2-example-note-$exampleId").performScrollTo().assertTextEquals(p.example(exampleId)!!.note)
++            }
++            tag("v2-review-practice").performClick()
++            for (guideId in reviewedGuidedPractice(p, rem.id)) {
++                for (guidedItemId in p.step(guideId)!!.second.itemIds) {
++                    val guide = p.item(guidedItemId)!!
++                    tag("v2-option-$guidedItemId-${guide.answer}").performScrollTo().performClick()
++                }
++            }
++            assertFalse(id in creditItemIds(p, store.v2LearnerView()))
++            tag("v2-return-to-check").performClick()
++            tag("v2-option-$id-$wrong").performScrollTo().assertIsSelected()
++            assertFalse(id in creditItemIds(p, store.v2LearnerView()))
++            tag("v2-option-$id-${item.answer}").performScrollTo().performClick()
++            compose.waitUntil(30_000) { id in creditItemIds(p, store.v2LearnerView()) }
++            val objective = p.unit(number)!!.objectives.single { it.id == item.objectiveId }
++            assertTrue(objective.checkItemIds.filter { it != id }.none { it in creditItemIds(p, store.v2LearnerView()) })
++            assertFalse(advancementDecision(p, p.unit(number)!!, store.v2LearnerView()).allowed)
++        }
++    }
++
++    private fun resume(store: LocalStore, p: V2CurriculumPack, number: Int, step: Pair<V2Session, V2Step>) {
++        store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = number,
++            startingPoint = "RESUME_FROM_BOOK", currentSessionId = step.first.id,
++            currentStepIndex = step.first.steps.indexOf(step.second)).verifiedResume(p))
++    }
++    private fun tag(value: String): SemanticsNodeInteraction {
++        compose.waitUntil(30_000) { compose.onAllNodesWithTag(value).fetchSemanticsNodes().isNotEmpty() }
++        return compose.onNodeWithTag(value)
++    }
++    private fun context(): Context = ApplicationProvider.getApplicationContext()
++}
