@@ -1591,3 +1591,8 @@ Separate continuation at `78e0d1701f10cfa7cf623c8b3dacc9c661f574be`:248reported/
 ## Metadata-only binding verification
 
 Metadata-only binding correction tested at `8eab6f0bdd33a0f3521df285573fc34fc0687075`:20selected methods/4classes,20passed/0failed/0errors/0skipped. Only two exact guarded-file hashes,their reviewed-commit pointer and the unfrozen pending source digest changed. All288language bindings,semantic/rights acceptance false and every other candidate/artifact field remain exact. No app/test-assertion/content/schema/policy/history/approval change. This is a focused scope,not a complete suite or independent acceptance. Read engineering-metadata-binding/ENGINEERING_CHANGE_REPORT.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Original failures preserved;all remaining qualification/recheck debtsOPEN,physicalLAST.
+
+
+## Review-rule assertion verification
+
+Review-rule assertion scope tested at `626a01414d53cc6fc83032da63d4fd833bdd557b`:9selected existing methods/2classes,9passed/0failed/0errors/0skipped. Saved legacy assignments keep exact hashes,raw option order and stored history;fresh allocation is checked against the separately versioned presentation rule. Every other assignment field is compared exactly. No app/content/history/policy/approval change;focused scope,not a complete suite or independent audit closure. Read engineering-review-rule-scope/ENGINEERING_CHANGE_REPORT.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Remaining failures/qualificationOPEN;physicalLAST.

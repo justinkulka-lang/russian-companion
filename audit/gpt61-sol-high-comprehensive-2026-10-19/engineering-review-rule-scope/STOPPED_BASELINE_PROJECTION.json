@@ -1,0 +1,105 @@
+{
+  "sourceCommit": "8bff21a3d5c4104709cde6e203d65ef7df3a935c",
+  "scope": "Projection of original stopped binary records; NOT another executed baseline",
+  "methods": [
+    {
+      "id": 413,
+      "parentId": 412,
+      "class": "dev.russiancompanion.v2.MultiPoolReviewSelectionTest",
+      "name": "versionScopesUntaughtOwnersAndChangedSourceCannotAcquireReviewCreditOrRewriteHistory",
+      "resultType": "SUCCESS",
+      "startMillis": 1792488218709,
+      "endMillis": 1792488221797,
+      "failures": []
+    },
+    {
+      "id": 414,
+      "parentId": 412,
+      "class": "dev.russiancompanion.v2.MultiPoolReviewSelectionTest",
+      "name": "nonFirstWindowUiRepairsFullBehaviorTeachingAndStillRequiresOppositeKeyFreshAnswer",
+      "resultType": "SUCCESS",
+      "startMillis": 1792488221797,
+      "endMillis": 1792488225564,
+      "failures": []
+    },
+    {
+      "id": 415,
+      "parentId": 412,
+      "class": "dev.russiancompanion.v2.MultiPoolReviewSelectionTest",
+      "name": "nonFirstStudentUiRepairsFullRoleTeachingAndStillRequiresFreshAssignedAnswers",
+      "resultType": "SUCCESS",
+      "startMillis": 1792488225565,
+      "endMillis": 1792488228084,
+      "failures": []
+    },
+    {
+      "id": 416,
+      "parentId": 412,
+      "class": "dev.russiancompanion.v2.MultiPoolReviewSelectionTest",
+      "name": "genuineSchemaOneAndTwoHistoriesKeepExactAssignmentsAndAcceptedCompletionSnapshots",
+      "resultType": "FAILURE",
+      "startMillis": 1792488228085,
+      "endMillis": 1792488228677,
+      "failures": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 2218,
+          "messagePreview": "java.lang.AssertionError: expected:<CumulativeReviewAssignment(id=645fb409-a9e9-47bf-9594-389a53a6ca43, targetUnit=3, policyId=unit3-prior-literacy-v1, policyDigest=e95b4eca3c8faf01804b7b917a0be1a5ee191366666111154f857f8a4965c132, responseRuleDigest=8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e, boundary=0, slots=[CumulativeReviewSlot(objectiveId=obj-u1-decoding, skill=BOUNDED_READING, itemId=u1-i-decode-pair, ownerUnit=1, itemDigest=499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64, unitDigest=161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7, teachingDigest=3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5), CumulativeReviewSlot(objectiveId=obj-u1-confusable, skill=PRINTED_LETTER_RECOGNITION, itemId=u1-i-\u043d-not-h, ownerUnit=1, itemDigest=b0cd8850f972afd89aa5c67ded60ac81516c09f19c663a6144fc2d9f46fb80b0, unitDigest=161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7, teachingDigest=ef8cc8c5021b8f5cb1c2b5b3712c529799ce00aba26cd9c1cecf97e3579c9395)], digest=57fdfb02a3bcc0dd88f573f3ca152679c2de926dfe2a1ae0c4a32c994514f5f9, schema=2)> but was:<CumulativeReviewAssignment(id=645fb409-a9e9-47bf-9594-389a53a6ca43, ",
+          "messageSha256": "65e4921227740d793c35e61119ae86735b7368637c956e248ecb2f8b7589c500",
+          "stackSha256": "835f57cdeded9b5e306ba6cd242c4a4430d1bf1777e7e1fe58a0ce94f4497aeb",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ]
+    },
+    {
+      "id": 417,
+      "parentId": 412,
+      "class": "dev.russiancompanion.v2.MultiPoolReviewSelectionTest",
+      "name": "unit6CanSelectEveryAuthoredCandidateAndResolveMissesIncludingOppositeKeyContrasts",
+      "resultType": "SUCCESS",
+      "startMillis": 1792488228677,
+      "endMillis": 1792488231183,
+      "failures": []
+    },
+    {
+      "id": 418,
+      "parentId": 412,
+      "class": "dev.russiancompanion.v2.MultiPoolReviewSelectionTest",
+      "name": "unit5ChoosesRecentStudentMissAndLaterCorrectResolvesItWithoutUsingClockOrOptionalRows",
+      "resultType": "SUCCESS",
+      "startMillis": 1792488231183,
+      "endMillis": 1792488232661,
+      "failures": []
+    },
+    {
+      "id": 419,
+      "parentId": 412,
+      "class": "dev.russiancompanion.v2.MultiPoolReviewSelectionTest",
+      "name": "newAssignmentsStayImmutableAndMixedVersionBackupRestartAndEpochPreserveFreshCredit",
+      "resultType": "SUCCESS",
+      "startMillis": 1792488232661,
+      "endMillis": 1792488237860,
+      "failures": []
+    },
+    {
+      "id": 623,
+      "parentId": 620,
+      "class": "dev.russiancompanion.v2.OptionPresentationTest",
+      "name": "newRulePreservesExactScoringAndOrderThroughBackupAndNamedDatabaseReopen",
+      "resultType": "SUCCESS",
+      "startMillis": 1792488647468,
+      "endMillis": 1792488648366,
+      "failures": []
+    },
+    {
+      "id": 625,
+      "parentId": 620,
+      "class": "dev.russiancompanion.v2.OptionPresentationTest",
+      "name": "allRetainedAssignmentsKeepExactLegacyOrderAndAssignmentHash",
+      "resultType": "SUCCESS",
+      "startMillis": 1792488648452,
+      "endMillis": 1792488648943,
+      "failures": []
+    }
+  ]
+}
