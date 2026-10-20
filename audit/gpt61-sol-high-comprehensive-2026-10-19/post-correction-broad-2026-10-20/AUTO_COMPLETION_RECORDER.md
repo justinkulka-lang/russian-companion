@@ -1,0 +1,5 @@
+# Automatic completion recorder
+
+An automatic completion recorder is now prepared at /workspace/artifacts/post-correction-broad-2026-10-20/finalize_broad.py (tracked exact copy alongside this note). It waits for the existing final manifest,requires exact1320-method XML/event coverage,unchanged input trees,clean Git,same remote head and OPEN Draft PR64,then stores all raw execution evidence in a CRC/hash-verified archive,all failure identities as OPEN,and a report/checkpoint. It commits/pushes evidence and updates the existing draft PR body. It makes no app,test,source,review,release or acceptance changes. Check FINALIZER.log and PUBLICATION_COMPLETE.json in the external artifact root for actual success;script presence alone is not completed publication. If the recorder fails,retain its error and all execution bytes and resume diagnosis without restarting Gradle.
+
+Method identity reconciliation preserves all1225historical broad methods and adds95;none removed. This is a selection comparison,not passing execution.
