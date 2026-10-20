@@ -1,0 +1,74 @@
+{
+  "sourceCommit": "208b933d5ba72e8334c0432e8fb08030f52acd0f",
+  "exitCode": 0,
+  "testCounts": {
+    "reported": 7,
+    "passed": 7,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 3,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.ReferenceDetailSearchTest",
+      "method": "searchingDetailsDoesNotExposeUnreachedNoticesOrReclassifyThem",
+      "outcome": "PASSED",
+      "seconds": "1.663"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.ReferenceDetailSearchTest",
+      "method": "blankQueriesAndMissingResultsPreserveTheExistingContract",
+      "outcome": "PASSED",
+      "seconds": "0.846"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.ReferenceDetailSearchTest",
+      "method": "explicitAliasesMatchRegardlessOfLetterCase",
+      "outcome": "PASSED",
+      "seconds": "0.785"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.ReferenceDetailSearchTest",
+      "method": "shippedLetterNameIsSearchableInsideTheExplanation",
+      "outcome": "PASSED",
+      "seconds": "0.645"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.ReferenceDetailSearchTest",
+      "method": "largeDetailLookupPreservesEntriesAndResultOrder",
+      "outcome": "PASSED",
+      "seconds": "0.538"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.ReferenceDetailSearchUiTest",
+      "method": "russianDetailQueryOpensTheOriginalExplanationAtLargeText",
+      "outcome": "PASSED",
+      "seconds": "13.428"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.ReferenceNoticeCorrectionTest",
+      "method": "currentBoundedAvailabilityDoesNotContradictItsOwnSourceNotice",
+      "outcome": "PASSED",
+      "seconds": "12.54"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedSourceInventoryMatchesFreshXmlAndEvents": true,
+  "xmlFreshRelativeToRunScript": true,
+  "completeSuite": false,
+  "scopesNotSummed": true
+}

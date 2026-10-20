@@ -1,0 +1,3737 @@
+{
+  "sourceCommit": "391d4406be0cd019d9b6762bb1354272da86c350",
+  "assetSha256": "fc2a59cdc61ec82640f29743707b67f04812a372e13fac08987aa16e512df2ca",
+  "authority": "docs/governance/MASTER_AUTHORITY_v2.0.md MA2-068",
+  "topicCount": 15,
+  "referenceCount": 27,
+  "topics": [
+    {
+      "topic": "alphabet",
+      "existingInstructionReferenceIds": [
+        "ref-cyrillic-print",
+        "ref-confusable",
+        "ref-ca-letter-names"
+      ],
+      "currentReferenceDepth": "PARTIAL_PRINT_AND_LETTER_NAMES",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u1-letter-identity",
+          "unit": 1,
+          "title": "Identify staged printed letters",
+          "teachingStepIds": [
+            "u1-st-vowels",
+            "u1-st-cons",
+            "u1-st-system"
+          ],
+          "exampleIds": [
+            "ex-letter-0410",
+            "ex-letter-0411",
+            "ex-letter-0413",
+            "ex-letter-0414",
+            "ex-letter-0416",
+            "ex-letter-0417",
+            "ex-letter-0418",
+            "ex-letter-041a",
+            "ex-letter-041b",
+            "ex-letter-041c",
+            "ex-letter-041e",
+            "ex-letter-041f",
+            "ex-letter-0422",
+            "ex-letter-0424",
+            "ex-letter-0426",
+            "ex-letter-0427",
+            "ex-letter-0428",
+            "ex-letter-0429",
+            "ex-letter-042b",
+            "ex-letter-042d"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [
+            "ref-cyrillic-print",
+            "ref-confusable",
+            "ref-ca-letter-names"
+          ],
+          "state": "PARTIAL_PRINT_AND_LETTER_NAMES"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "pronunciation",
+      "existingInstructionReferenceIds": [
+        "ref-iotated",
+        "ref-signs",
+        "ref-pronunciation"
+      ],
+      "currentReferenceDepth": "NOTE_ONLY_NOT_PHONETIC_SYSTEM",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u1-iotated",
+          "unit": 1,
+          "title": "Recognize Е Ё Ю Я as a group",
+          "teachingStepIds": [
+            "u1-st-iotated"
+          ],
+          "exampleIds": [
+            "ex-letter-0415",
+            "ex-letter-0401",
+            "ex-letter-042e",
+            "ex-letter-042f"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        },
+        {
+          "id": "obj-u1-signs",
+          "unit": 1,
+          "title": "Treat Ь Ъ Й as non-ordinary-vowel letters",
+          "teachingStepIds": [
+            "u1-st-signs"
+          ],
+          "exampleIds": [
+            "ex-letter-0419",
+            "ex-letter-042a",
+            "ex-letter-042c"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [
+            "ref-iotated",
+            "ref-signs",
+            "ref-pronunciation"
+          ],
+          "state": "NOTE_ONLY_NOT_PHONETIC_SYSTEM"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "stress",
+      "existingInstructionReferenceIds": [
+        "ref-stress"
+      ],
+      "currentReferenceDepth": "NOTE_ONLY_NOT_STRESS_RULES",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u4-stress",
+          "unit": 4,
+          "title": "Notice the admitted written stress mark",
+          "teachingStepIds": [
+            "u4-st-teach-stress-1"
+          ],
+          "exampleIds": [
+            "ex-u4-stress-6f15e9f1",
+            "ex-u4-stress-1f37b6b2",
+            "ex-u4-stress-2114b12f"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [
+            "ref-stress"
+          ],
+          "state": "NOTE_ONLY_NOT_STRESS_RULES"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "spelling",
+      "existingInstructionReferenceIds": [
+        "ref-signs"
+      ],
+      "currentReferenceDepth": "NOTE_ONLY_NOT_SPELLING_RULES",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u7-spelling",
+          "unit": 7,
+          "title": "Recognize adjective forms after ш",
+          "teachingStepIds": [
+            "u7-st-teach-spelling-1",
+            "u7-st-teach-spelling-2",
+            "u7-st-teach-spelling-3",
+            "u7-st-teach-spelling-4"
+          ],
+          "exampleIds": [
+            "ex-u7-spelling-0",
+            "ex-or-u7-spelling-1",
+            "ex-or-u7-spelling-2",
+            "ex-or-u7-spelling-3",
+            "ex-or-u7-spelling-4"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [
+            "ref-signs"
+          ],
+          "state": "NOTE_ONLY_NOT_SPELLING_RULES"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "grammar terminology",
+      "existingInstructionReferenceIds": [],
+      "currentReferenceDepth": "NO_DEDICATED_EXPLANATORY_REFERENCE",
+      "candidateLessonObjectives": [],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "cases",
+      "existingInstructionReferenceIds": [
+        "ref-ca-cases"
+      ],
+      "currentReferenceDepth": "CAUTION_ONLY_NO_CASE_SYSTEM",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u4-nominative",
+          "unit": 4,
+          "title": "Recognize the nominative subject in supplied clauses",
+          "teachingStepIds": [
+            "u4-st-teach-nominative-1",
+            "u4-st-teach-nominative-2",
+            "u4-st-teach-nominative-3"
+          ],
+          "exampleIds": [
+            "ex-u4-nom-muzh",
+            "ex-u4-nom-poezd",
+            "ex-u4-nom-student"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        },
+        {
+          "id": "obj-u5-prepositional",
+          "unit": 5,
+          "title": "Recognize admitted prepositional examples",
+          "teachingStepIds": [
+            "u5-st-teach-prepositional-1",
+            "u5-st-teach-prepositional-2",
+            "u5-st-teach-prepositional-3",
+            "u5-st-teach-prepositional-4",
+            "u5-st-teach-prepositional-5",
+            "u5-st-teach-prepositional-6"
+          ],
+          "exampleIds": [
+            "ex-u5-prep-o-knige",
+            "ex-u5-prep-o-pisme",
+            "ex-u5-prep-o-sade",
+            "ex-u5-prep-v-moskve",
+            "ex-u5-prep-na-kryshe",
+            "ex-u5-prep-v-teatre",
+            "ex-u5-prep-na-stole",
+            "ex-u5-prep-na-stene"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_CASE_SYSTEM"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "agreement",
+      "existingInstructionReferenceIds": [
+        "ref-ca-cases"
+      ],
+      "currentReferenceDepth": "CAUTION_ONLY_NO_WORKED_AGREEMENT",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u3-gender",
+          "unit": 3,
+          "title": "Recognize admitted noun genders",
+          "teachingStepIds": [
+            "u3-st-teach-gender-1",
+            "u3-st-teach-gender-2",
+            "u3-st-teach-gender-3",
+            "u3-st-teach-gender-4",
+            "u3-st-teach-gender-5"
+          ],
+          "exampleIds": [
+            "ex-u3-стол",
+            "ex-u3-дом",
+            "ex-u3-город",
+            "ex-u3-брат",
+            "ex-u3-книга",
+            "ex-u3-вода",
+            "ex-u3-школа",
+            "ex-u3-работа",
+            "ex-u3-окно",
+            "ex-u3-письмо",
+            "ex-u3-молоко",
+            "ex-u3-море",
+            "ex-u3-мужчина",
+            "ex-u3-дядя",
+            "ex-u3-друг",
+            "ex-u3-дверь"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        },
+        {
+          "id": "obj-u7-endings",
+          "unit": 7,
+          "title": "Choose the admitted agreement line",
+          "teachingStepIds": [
+            "u7-st-teach-endings-1",
+            "u7-st-teach-endings-2",
+            "u7-st-teach-endings-3",
+            "u7-st-teach-endings-4",
+            "u7-st-teach-endings-5",
+            "u7-st-teach-endings-6",
+            "u7-st-teach-endings-7"
+          ],
+          "exampleIds": [
+            "ex-u7-endings-0",
+            "ex-u7-endings-1",
+            "ex-u7-endings-2",
+            "ex-u7-endings-3",
+            "ex-u7-endings-4",
+            "ex-u7-endings-5",
+            "ex-u7-endings-6",
+            "ex-or-u7-endings-7",
+            "ex-or-u7-endings-8",
+            "ex-or-u7-endings-9",
+            "ex-or-u7-endings-10"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        },
+        {
+          "id": "obj-u8-agreement",
+          "unit": 8,
+          "title": "Choose the admitted plural agreement form",
+          "teachingStepIds": [
+            "u8-st-teach-agreement-1",
+            "u8-st-teach-agreement-2",
+            "u8-st-teach-agreement-3",
+            "u8-st-teach-agreement-4",
+            "u8-st-teach-agreement-5",
+            "u8-st-teach-agreement-6"
+          ],
+          "exampleIds": [
+            "ex-u8-agreement-0",
+            "ex-u8-agreement-1",
+            "ex-or-u8-agreement-2",
+            "ex-or-u8-agreement-3",
+            "ex-or-u8-agreement-4",
+            "ex-or-u8-agreement-5",
+            "ex-or-u8-agreement-6",
+            "ex-or-u8-agreement-7"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-cases"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_AGREEMENT"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "verbs",
+      "existingInstructionReferenceIds": [],
+      "currentReferenceDepth": "NO_DEDICATED_VERB_REFERENCE",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u4-present",
+          "unit": 4,
+          "title": "Recognize admitted present-tense forms",
+          "teachingStepIds": [
+            "u4-st-teach-present-1",
+            "u4-st-teach-present-2",
+            "u4-st-teach-present-3",
+            "u4-st-teach-present-4",
+            "u4-st-teach-present-5",
+            "u4-st-teach-present-6",
+            "u4-st-teach-present-7",
+            "u4-st-teach-present-говорить",
+            "u4-st-teach-present-видеть",
+            "u4-st-teach-present-писать",
+            "u4-st-teach-present-идти"
+          ],
+          "exampleIds": [
+            "ex-u4-verb-читать",
+            "ex-u4-verb-делать",
+            "ex-u4-present-говорить-мы",
+            "ex-u4-present-видеть-он",
+            "ex-u4-present-писать-вы",
+            "ex-u4-present-идти-они"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        },
+        {
+          "id": "obj-u11-past-read",
+          "unit": 11,
+          "title": "Choose the admitted past row",
+          "teachingStepIds": [
+            "u11-st-teach-past-read-1",
+            "u11-st-teach-past-read-2",
+            "u11-st-teach-past-read-3",
+            "u11-st-teach-past-read-4"
+          ],
+          "exampleIds": [
+            "ex-or-u11-past-read-0",
+            "ex-or-u11-past-read-1",
+            "ex-or-u11-past-read-2",
+            "ex-or-u11-past-read-3",
+            "ex-u11-past-read-4",
+            "ex-u11-past-read-5"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        },
+        {
+          "id": "obj-u12-future-imp",
+          "unit": 12,
+          "title": "Choose the admitted future line",
+          "teachingStepIds": [
+            "u12-st-teach-future-imp-1",
+            "u12-st-teach-future-imp-2",
+            "u12-st-teach-future-imp-3"
+          ],
+          "exampleIds": [
+            "ex-u12-future-imp-0",
+            "ex-u12-future-imp-1",
+            "ex-u12-future-imp-2",
+            "ex-u12-future-imp-3"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "aspect",
+      "existingInstructionReferenceIds": [
+        "ref-ca-aspect"
+      ],
+      "currentReferenceDepth": "CAUTION_ONLY_NO_WORKED_ASPECT",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u12-aspect",
+          "unit": 12,
+          "title": "Recognize the two taught aspect pairs",
+          "teachingStepIds": [
+            "u12-st-teach-aspect-1",
+            "u12-st-teach-aspect-2",
+            "u12-st-teach-aspect-3"
+          ],
+          "exampleIds": [
+            "ex-u12-aspect-0",
+            "ex-u12-aspect-1",
+            "ex-u12-aspect-2",
+            "ex-u12-aspect-3"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        },
+        {
+          "id": "obj-u15-aspect-consolidate",
+          "unit": 15,
+          "title": "Choose the admitted aspect pair",
+          "teachingStepIds": [
+            "u15-st-teach-aspect-consolidate-1",
+            "u15-st-teach-aspect-consolidate-2",
+            "u15-st-teach-aspect-consolidate-3"
+          ],
+          "exampleIds": [
+            "ex-u15-aspect-consolidate-0",
+            "ex-u15-aspect-consolidate-1",
+            "ex-u15-aspect-consolidate-2",
+            "ex-u15-aspect-consolidate-3"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-aspect"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_ASPECT"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "motion",
+      "existingInstructionReferenceIds": [
+        "ref-ca-motion"
+      ],
+      "currentReferenceDepth": "CAUTION_ONLY_NO_WORKED_MOTION",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u20-motion",
+          "unit": 20,
+          "title": "Distinguish motion meaning, directionality and setting out",
+          "teachingStepIds": [
+            "u20-st-teach-motion-1",
+            "u20-st-teach-motion-2",
+            "u20-st-teach-motion-3",
+            "u20-st-teach-motion-4",
+            "u20-st-teach-motion-5",
+            "u20-st-teach-direction-contexts",
+            "u20-st-teach-direction-return"
+          ],
+          "exampleIds": [
+            "ex-u20-motion-0",
+            "ex-u20-motion-1",
+            "ex-u20-motion-2",
+            "ex-u20-motion-3",
+            "ex-u20-motion-4",
+            "ex-u20-motion-5",
+            "ex-u20-motion-6",
+            "ex-u20-motion-7",
+            "ex-u20-direction-library",
+            "ex-u20-direction-ability",
+            "ex-u20-direction-birds",
+            "ex-u20-direction-city",
+            "ex-u20-direction-weekly",
+            "ex-u20-direction-round"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-motion"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_MOTION"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-motion"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_MOTION"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-motion"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_MOTION"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-motion"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_MOTION"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-motion"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_MOTION"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-motion"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_MOTION"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-motion"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_MOTION"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-motion"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_MOTION"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-motion"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_MOTION"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-motion"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_MOTION"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [
+            "ref-ca-motion"
+          ],
+          "state": "CAUTION_ONLY_NO_WORKED_MOTION"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "numbers",
+      "existingInstructionReferenceIds": [],
+      "currentReferenceDepth": "NO_DEDICATED_NUMBER_REFERENCE",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u9-cardinal",
+          "unit": 9,
+          "title": "Choose the admitted form for 0 through 10",
+          "teachingStepIds": [
+            "u9-st-teach-cardinal-1",
+            "u9-st-teach-cardinal-2",
+            "u9-st-teach-cardinal-3",
+            "u9-st-teach-cardinal-4",
+            "u9-st-teach-cardinal-5",
+            "u9-st-teach-cardinal-6",
+            "u9-st-teach-cardinal-7"
+          ],
+          "exampleIds": [
+            "ex-u9-cardinal-0",
+            "ex-u9-cardinal-1",
+            "ex-u9-cardinal-2",
+            "ex-u9-cardinal-3",
+            "ex-u9-cardinal-4",
+            "ex-u9-cardinal-5",
+            "ex-u9-cardinal-6",
+            "ex-u9-cardinal-7",
+            "ex-u9-cardinal-8",
+            "ex-u9-cardinal-9",
+            "ex-u9-cardinal-10"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        },
+        {
+          "id": "obj-u22-half-forms",
+          "unit": 22,
+          "title": "Explain gender, case and the noun after one and a half",
+          "teachingStepIds": [
+            "u22-st-teach-half-forms-1",
+            "u22-st-teach-half-forms-2",
+            "u22-st-teach-half-forms-3"
+          ],
+          "exampleIds": [
+            "ex-u22-half-forms-0",
+            "ex-u22-half-forms-1",
+            "ex-u22-half-forms-2",
+            "ex-u22-half-forms-3"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "time",
+      "existingInstructionReferenceIds": [],
+      "currentReferenceDepth": "NO_DEDICATED_TIME_REFERENCE",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u17-hours",
+          "unit": 17,
+          "title": "Recognize hour counts and noun forms",
+          "teachingStepIds": [
+            "u17-st-teach-hours-1",
+            "u17-st-teach-hours-2",
+            "u17-st-teach-hours-3"
+          ],
+          "exampleIds": [
+            "ex-u17-hours-0",
+            "ex-u17-hours-1",
+            "ex-u17-hours-2"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        },
+        {
+          "id": "obj-u17-minutes",
+          "unit": 17,
+          "title": "Recognize minute counts and feminine numerals",
+          "teachingStepIds": [
+            "u17-st-teach-minutes-1",
+            "u17-st-teach-minutes-2",
+            "u17-st-teach-minutes-3"
+          ],
+          "exampleIds": [
+            "ex-u17-minutes-0",
+            "ex-u17-minutes-1",
+            "ex-u17-minutes-2"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "questions",
+      "existingInstructionReferenceIds": [],
+      "currentReferenceDepth": "NO_DEDICATED_QUESTION_REFERENCE",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u5-questions",
+          "unit": 5,
+          "title": "Recognize admitted question words and written questions",
+          "teachingStepIds": [
+            "u5-st-teach-questions-1",
+            "u5-st-teach-questions-2",
+            "u5-st-teach-questions-3",
+            "u5-st-teach-questions-4",
+            "u5-st-teach-questions-5"
+          ],
+          "exampleIds": [
+            "ex-u5-q-kto",
+            "ex-u5-q-chto",
+            "ex-u5-q-kogda",
+            "ex-u5-q-pochemu",
+            "ex-u5-q-kak",
+            "ex-u5-q-gde",
+            "ex-u5-q-kuda",
+            "ex-u5-q-otkuda",
+            "ex-u5-q-skolko",
+            "ex-u5-q-kakoy",
+            "ex-u5-pattern-pattern-chto-eto",
+            "ex-u5-pattern-pattern-kto-eto",
+            "ex-u5-pattern-pattern-kak-dela",
+            "ex-u5-pattern-pattern-gde-zhivete"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "negation",
+      "existingInstructionReferenceIds": [],
+      "currentReferenceDepth": "NO_DEDICATED_NEGATION_REFERENCE",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u24-verbal-ne",
+          "unit": 24,
+          "title": "Distinguish a negative verb from a negative noun predicate",
+          "teachingStepIds": [
+            "u24-st-teach-verbal-ne-1",
+            "u24-st-teach-verbal-ne-2",
+            "u24-st-teach-verbal-ne-3",
+            "u24-st-teach-verbal-ne-4"
+          ],
+          "exampleIds": [
+            "ex-u24-verbal-ne-0",
+            "ex-u24-verbal-ne-1",
+            "ex-u24-verbal-ne-2",
+            "ex-u24-verbal-ne-3",
+            "ex-u24-verbal-ne-4"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        },
+        {
+          "id": "obj-u24-absence",
+          "unit": 24,
+          "title": "Distinguish existence, absence and the negative particle",
+          "teachingStepIds": [
+            "u24-st-teach-absence-1",
+            "u24-st-teach-absence-2",
+            "u24-st-teach-absence-3"
+          ],
+          "exampleIds": [
+            "ex-u24-absence-0",
+            "ex-u24-absence-1",
+            "ex-u24-absence-2"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    },
+    {
+      "topic": "core prepositions",
+      "existingInstructionReferenceIds": [],
+      "currentReferenceDepth": "NO_DEDICATED_PREPOSITION_REFERENCE",
+      "candidateLessonObjectives": [
+        {
+          "id": "obj-u5-prepositional",
+          "unit": 5,
+          "title": "Recognize admitted prepositional examples",
+          "teachingStepIds": [
+            "u5-st-teach-prepositional-1",
+            "u5-st-teach-prepositional-2",
+            "u5-st-teach-prepositional-3",
+            "u5-st-teach-prepositional-4",
+            "u5-st-teach-prepositional-5",
+            "u5-st-teach-prepositional-6"
+          ],
+          "exampleIds": [
+            "ex-u5-prep-o-knige",
+            "ex-u5-prep-o-pisme",
+            "ex-u5-prep-o-sade",
+            "ex-u5-prep-v-moskve",
+            "ex-u5-prep-na-kryshe",
+            "ex-u5-prep-v-teatre",
+            "ex-u5-prep-na-stole",
+            "ex-u5-prep-na-stene"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        },
+        {
+          "id": "obj-u10-preposition",
+          "unit": 10,
+          "title": "Choose the admitted preposition line",
+          "teachingStepIds": [
+            "u10-st-teach-preposition-1",
+            "u10-st-teach-preposition-2",
+            "u10-st-teach-preposition-3",
+            "u10-st-teach-preposition-4",
+            "u10-st-teach-preposition-5",
+            "u10-st-teach-preposition-6",
+            "u10-st-teach-preposition-7",
+            "u10-st-teach-preposition-8",
+            "u10-st-teach-preposition-9",
+            "u10-st-teach-preposition-10",
+            "u10-st-teach-preposition-11"
+          ],
+          "exampleIds": [
+            "ex-u10-preposition-0",
+            "ex-u10-preposition-1",
+            "ex-u10-preposition-2",
+            "ex-u10-preposition-3",
+            "ex-u10-preposition-4",
+            "ex-u10-preposition-5",
+            "ex-or-u10-preposition-6",
+            "ex-or-u10-preposition-7",
+            "ex-or-u10-preposition-8",
+            "ex-or-u10-preposition-9",
+            "ex-or-u10-preposition-10",
+            "ex-or-u10-preposition-11",
+            "ex-or-u10-preposition-12",
+            "ex-or-u10-preposition-13",
+            "ex-or-u10-preposition-14",
+            "ex-or-u10-preposition-15",
+            "ex-or-u10-preposition-16",
+            "ex-or-u10-preposition-17",
+            "ex-or-u10-preposition-18",
+            "ex-or-u10-preposition-19"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        },
+        {
+          "id": "obj-u16-inst-prep",
+          "unit": 16,
+          "title": "Recognize selected instrumental preposition meanings",
+          "teachingStepIds": [
+            "u16-st-teach-inst-prep-1",
+            "u16-st-teach-inst-prep-2",
+            "u16-st-teach-inst-prep-3"
+          ],
+          "exampleIds": [
+            "ex-u16-inst-prep-0",
+            "ex-u16-inst-prep-1",
+            "ex-u16-inst-prep-2",
+            "ex-u16-inst-prep-3"
+          ],
+          "qualification": "NOT_ESTABLISHED_BY_THIS_MAP"
+        }
+      ],
+      "reachedLevelProjection": [
+        {
+          "reachedUnit": 1,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 2,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 3,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 4,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 5,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 6,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 7,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 8,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 9,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 10,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 11,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 12,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 13,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 14,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 15,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 16,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 17,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 18,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 19,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 20,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 21,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 22,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 23,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 24,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 25,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 26,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 27,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 28,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 29,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        },
+        {
+          "reachedUnit": 30,
+          "visibleInstructionReferenceIds": [],
+          "state": "NO_TOPIC_REFERENCE_VISIBLE"
+        }
+      ],
+      "fullTopicCoverageVerified": false
+    }
+  ],
+  "referenceInventory": [
+    {
+      "id": "ref-cyrillic-print",
+      "title": "Cyrillic print forms",
+      "introducedInUnit": 1,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 123,
+      "detailSha256": "641e423b2e3d67159456ffde03d778025bedf32b27449dddafb97dbd639b0ea5"
+    },
+    {
+      "id": "ref-confusable",
+      "title": "Confusable Latin look-alikes",
+      "introducedInUnit": 1,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 56,
+      "detailSha256": "df50d18d3b80fcf2a238da0905542214391321c2e282bd21cd8c7464cbbb81f8"
+    },
+    {
+      "id": "ref-iotated",
+      "title": "Iotated vowel letters",
+      "introducedInUnit": 1,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 73,
+      "detailSha256": "f7bb65463fddd47239dd26fbd54782ecac0d95ff2adadf01c42cc921ed971f17"
+    },
+    {
+      "id": "ref-signs",
+      "title": "Soft sign, hard sign, and Й",
+      "introducedInUnit": 1,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 76,
+      "detailSha256": "2c2d742b8d06907209ea36a9ab76e8ca01e9cc535f934518397f9103b208e0ff"
+    },
+    {
+      "id": "ref-transliteration",
+      "title": "Transliteration is temporary",
+      "introducedInUnit": 1,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 76,
+      "detailSha256": "f0c3f2dbdc19bdff68f44c761e94727f6cc55a778ea1470de8e3c4c4bf617abc"
+    },
+    {
+      "id": "ref-decoding",
+      "title": "Staged decoding limits",
+      "introducedInUnit": 1,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 58,
+      "detailSha256": "9f90a1b8bf0e7b7c416e62bf962891962679476b8ede5307ab3b8f27a74ce91d"
+    },
+    {
+      "id": "ref-stress",
+      "title": "Stress notation",
+      "introducedInUnit": 1,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 50,
+      "detailSha256": "a9f81d7fdb3ccdb949926d64b6eaa5fdf88d117debe396dba69c6984872c308c"
+    },
+    {
+      "id": "ref-pronunciation",
+      "title": "Pronunciation guidance",
+      "introducedInUnit": 2,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 56,
+      "detailSha256": "909dc2de13bc9655e98816ed27f053b84e4dac434aa3b70ee4ddae3d9d1ed03a"
+    },
+    {
+      "id": "ref-study",
+      "title": "How to use this companion",
+      "introducedInUnit": 1,
+      "classification": "PRODUCT_HELP",
+      "detailBytes": 80,
+      "detailSha256": "ce588b81f3c96160689eca73f40fdd39f1164f9856ba351ec3d59958c4d989d9"
+    },
+    {
+      "id": "ref-limits",
+      "title": "App limitations",
+      "introducedInUnit": 1,
+      "classification": "OPERATIONAL_GUIDANCE",
+      "detailBytes": 306,
+      "detailSha256": "b275581c7c1fddaef2d29306e60180bfbd49826bbd9992b12016652cda694354"
+    },
+    {
+      "id": "ref-book-topics",
+      "title": "Where lesson bodies are packaged",
+      "introducedInUnit": 3,
+      "classification": "OPERATIONAL_GUIDANCE",
+      "detailBytes": 249,
+      "detailSha256": "2a04b2d5ce7e9d5c1673b9612829d986d5727d8b155f826cb096fce691442ee3"
+    },
+    {
+      "id": "ref-u35-attribution",
+      "title": "Units 3–5 source notice",
+      "introducedInUnit": 3,
+      "classification": "LICENSE_OR_ATTRIBUTION",
+      "detailBytes": 452,
+      "detailSha256": "a1e46c484edfa115319de296b3e9ce5d34964b6c8cba346af3c15ea207eb39ac"
+    },
+    {
+      "id": "ref-u610-attribution",
+      "title": "Units 6–10 source notice",
+      "introducedInUnit": 6,
+      "classification": "LICENSE_OR_ATTRIBUTION",
+      "detailBytes": 416,
+      "detailSha256": "3969cc67829b4435f69c63584b3e8eb537be15b55e6e49edad84eade840c74ef"
+    },
+    {
+      "id": "ref-u7-ruwiki-attribution",
+      "title": "Unit 7 Russian Wikipedia notice",
+      "introducedInUnit": 7,
+      "classification": "LICENSE_OR_ATTRIBUTION",
+      "detailBytes": 452,
+      "detailSha256": "9eaa6bc1e31c4e4db1d0edd9819e19a3ed1d3e1c7a96ce2dc1acb3d5178dcef9"
+    },
+    {
+      "id": "ref-u1115-attribution",
+      "title": "Units 11–15 source notice",
+      "introducedInUnit": 11,
+      "classification": "LICENSE_OR_ATTRIBUTION",
+      "detailBytes": 416,
+      "detailSha256": "3969cc67829b4435f69c63584b3e8eb537be15b55e6e49edad84eade840c74ef"
+    },
+    {
+      "id": "ref-u1620-attribution",
+      "title": "Units 16–20 source notice",
+      "introducedInUnit": 16,
+      "classification": "LICENSE_OR_ATTRIBUTION",
+      "detailBytes": 634,
+      "detailSha256": "82bbd0e756839c5c071e2227173d1f64e92c544380813b28f45a1510a2439f6f"
+    },
+    {
+      "id": "ref-u17-attribution",
+      "title": "Unit 17 source notice",
+      "introducedInUnit": 17,
+      "classification": "LICENSE_OR_ATTRIBUTION",
+      "detailBytes": 929,
+      "detailSha256": "e88a115d8ac61fc4b102437cc9b6346ed05f2f04e21da648d40595e00ecec48e"
+    },
+    {
+      "id": "ref-u17-pressbooks-attribution",
+      "title": "Unit 17 Pressbooks notice",
+      "introducedInUnit": 17,
+      "classification": "LICENSE_OR_ATTRIBUTION",
+      "detailBytes": 489,
+      "detailSha256": "353f7bdc0ded24ac28ad868d029c1aeda6b56a2e9b9f16ece1794b7a7dc9e4c5"
+    },
+    {
+      "id": "ref-u19-wiktionary-attribution",
+      "title": "Unit 19 Wiktionary notice",
+      "introducedInUnit": 19,
+      "classification": "LICENSE_OR_ATTRIBUTION",
+      "detailBytes": 364,
+      "detailSha256": "b0e264edf3f26cbd3e29e3a0189f0ce864ba31a361bcf492b06272ca0547e234"
+    },
+    {
+      "id": "ref-u2125-attribution",
+      "title": "Units 21–25 source notice",
+      "introducedInUnit": 21,
+      "classification": "LICENSE_OR_ATTRIBUTION",
+      "detailBytes": 2069,
+      "detailSha256": "51356f698f87957bc573aa8a91a6a53451a65dfad01c860244fdabb51d33d3d9"
+    },
+    {
+      "id": "ref-u2630-attribution",
+      "title": "Units 26–30 source notice",
+      "introducedInUnit": 26,
+      "classification": "LICENSE_OR_ATTRIBUTION",
+      "detailBytes": 1756,
+      "detailSha256": "870969b5b20c2c9baf820354d3a5c62e8a582a74d27d42c556cce7f7cf67f773"
+    },
+    {
+      "id": "ref-ca-letter-names",
+      "title": "Printed letter names",
+      "introducedInUnit": 1,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 661,
+      "detailSha256": "428d77996516c7d5543a249a82ff49dedac241ee3b327134ab7ec01bbd80b4f3"
+    },
+    {
+      "id": "ref-ca-cases",
+      "title": "Offline reference for object-row agreement, review-pending. Match gender, number, and case together, and do not change gender silently.",
+      "introducedInUnit": 6,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 135,
+      "detailSha256": "eb2653460b15f43d7f85ba48f718005b3595d2b9fa1053c25c893f39499c48d0"
+    },
+    {
+      "id": "ref-ca-aspect",
+      "title": "Offline reference for aspect, review-pending. Aspect pairs are bounded, быть is imperfective, and an imperfective past need not mean the event was unfinished.",
+      "introducedInUnit": 12,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 162,
+      "detailSha256": "27a9b993e49a778d14f09347fd6f66be61a33535d6eac1aaae71196d01b07450"
+    },
+    {
+      "id": "ref-ca-motion",
+      "title": "Offline reference for motion, review-pending. Translate only the motion and destination that the Russian sentence contains.",
+      "introducedInUnit": 20,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 123,
+      "detailSha256": "32d2fa2d4dc045b6f520f0a142b46f17f8b27a3e4c918e7e68bc0c62ab7ebb9a"
+    },
+    {
+      "id": "ref-ca-participles",
+      "title": "Offline reference for past passive, review-pending. Required stress stays on напи́санный and прочи́танный. Present passive exploration is optional.",
+      "introducedInUnit": 27,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 170,
+      "detailSha256": "8eac4af316c09ac16cd78a0433eec18ec1a088ebe93dde12a93ac410e586a7e8"
+    },
+    {
+      "id": "ref-ca-verbal-adverb",
+      "title": "Offline reference for verbal adverbs, review-pending. Imperfective forms are simultaneous with the main predicate and perfective forms are anterior to it.",
+      "introducedInUnit": 28,
+      "classification": "LINGUISTIC_INSTRUCTION",
+      "detailBytes": 154,
+      "detailSha256": "2ffdd7ca7c859f7fdcc9b00247ef8bb1208a48044c9be58e113929c8fcd43017"
+    }
+  ],
+  "scope": "Static content/depth review and introduced-unit projection. Not 30 UI executions, test counts, source/rights/linguistic qualification or full MA2-068 acceptance. Lesson pointers are research candidates, not app reference entries.",
+  "licenseNoticesExcludedFromInstructionCoverage": true
+}

@@ -1,0 +1,135 @@
+diff --git a/app/src/main/java/dev/russiancompanion/v2/curriculum/V2ProgressRules.kt b/app/src/main/java/dev/russiancompanion/v2/curriculum/V2ProgressRules.kt
+index b891445f..504d5872 100644
+--- a/app/src/main/java/dev/russiancompanion/v2/curriculum/V2ProgressRules.kt
++++ b/app/src/main/java/dev/russiancompanion/v2/curriculum/V2ProgressRules.kt
+@@ -401,9 +401,10 @@ internal fun searchReferences(entries: List<V2ReferenceEntry>, query: String): L
+     val needle = query.trim().lowercase()
+     if (needle.isEmpty()) return entries
+     return entries.filter { entry ->
+-        entry.title.lowercase().contains(needle) ||
+-            entry.summary.lowercase().contains(needle) ||
+-            entry.searchTerms.any { it.contains(needle) }
++        entry.title.contains(needle, ignoreCase = true) ||
++            entry.summary.contains(needle, ignoreCase = true) ||
++            entry.detail.contains(needle, ignoreCase = true) ||
++            entry.searchTerms.any { it.contains(needle, ignoreCase = true) }
+     }
+ }
+ 
+diff --git a/app/src/test/java/dev/russiancompanion/v2/ReferenceDetailSearchTest.kt b/app/src/test/java/dev/russiancompanion/v2/ReferenceDetailSearchTest.kt
+new file mode 100644
+index 00000000..4438f318
+--- /dev/null
++++ b/app/src/test/java/dev/russiancompanion/v2/ReferenceDetailSearchTest.kt
+@@ -0,0 +1,61 @@
++package dev.russiancompanion.v2
++
++import dev.russiancompanion.v2.curriculum.*
++import org.junit.Assert.*
++import org.junit.Test
++import java.io.File
++
++class ReferenceDetailSearchTest {
++    @Test fun shippedLetterNameIsSearchableInsideTheExplanation() {
++        val entries = pack().references
++        val target = entries.single { it.id == "ref-ca-letter-names" }
++        val query = "и КРАТКОЕ"
++        assertFalse(target.title.contains(query, ignoreCase = true))
++        assertFalse(target.summary.contains(query, ignoreCase = true))
++        assertTrue(target.detail.contains(query, ignoreCase = true))
++        assertTrue(target in searchReferences(entries, query))
++    }
++
++    @Test fun explicitAliasesMatchRegardlessOfLetterCase() {
++        val entry = pack().references.first().copy(searchTerms = listOf("CYRILLIC_LOOKUP_ALIAS"))
++        assertEquals(listOf(entry), searchReferences(listOf(entry), "cyrillic_lookup_alias"))
++    }
++
++    @Test fun blankQueriesAndMissingResultsPreserveTheExistingContract() {
++        val entries = pack().references
++        assertEquals(entries, searchReferences(entries, ""))
++        assertEquals(entries, searchReferences(entries, " \n\t "))
++        assertTrue(searchReferences(entries, "unmatched-reference-query-cc017").isEmpty())
++        assertTrue(searchReferences(emptyList(), "и краткое").isEmpty())
++    }
++
++    @Test fun searchingDetailsDoesNotExposeUnreachedNoticesOrReclassifyThem() {
++        val p = pack()
++        val query = "completion over a period"
++        assertTrue(searchReferences(visibleReferences(p, referenceSearchLearner(1)), query).isEmpty())
++        val found = searchReferences(visibleReferences(p, referenceSearchLearner(21)), query)
++        assertTrue(found.any { it.id == "ref-u2125-attribution" })
++        assertEquals("LICENSE_OR_ATTRIBUTION", found.single { it.id == "ref-u2125-attribution" }.classification)
++        assertTrue(visibleReferences(p, referenceSearchLearner(1)).all { it.introducedInUnit <= 1 })
++    }
++
++    @Test fun largeDetailLookupPreservesEntriesAndResultOrder() {
++        val template = pack().references.first()
++        val body = "offline reference paragraph ".repeat(10_000) + "needle-at-end-cc017"
++        val entries = listOf(template.copy(id = "large-a", detail = body), template.copy(id = "large-b", detail = body))
++        val before = entries.toList()
++        assertEquals(entries, searchReferences(entries, "NEEDLE-AT-END-CC017"))
++        assertEquals(before, entries)
++    }
++
++    private fun pack() = V2PackLoader.parse(File(if (File("app").isDirectory) "." else "..",
++        "app/src/main/assets/content/v2-curriculum.json").readText())
++}
++
++internal fun referenceSearchLearner(unit: Int) = V2LearnerView(
++    onboardingCompleted = true, currentUnitNumber = unit, startingPoint = V2StartingPoint.NEW_TO_CYRILLIC,
++    hasPenguin = true, hasAnki = false, hasBinder = false, hasTutor = false, dailyMinutes = 15,
++    transliterationEnabled = false, currentSessionId = null, currentStepIndex = 0,
++    completedStepIds = emptySet(), correctItemIds = emptySet(), bookAttestedUnits = emptySet(),
++    completedUnitNumbers = emptySet(),
++)
+diff --git a/app/src/test/java/dev/russiancompanion/v2/ReferenceDetailSearchUiTest.kt b/app/src/test/java/dev/russiancompanion/v2/ReferenceDetailSearchUiTest.kt
+new file mode 100644
+index 00000000..bc377913
+--- /dev/null
++++ b/app/src/test/java/dev/russiancompanion/v2/ReferenceDetailSearchUiTest.kt
+@@ -0,0 +1,44 @@
++package dev.russiancompanion.v2
++
++import androidx.compose.material3.MaterialTheme
++import androidx.compose.runtime.*
++import androidx.compose.ui.platform.LocalDensity
++import androidx.compose.ui.test.*
++import androidx.compose.ui.test.junit4.v2.createComposeRule
++import androidx.compose.ui.unit.Density
++import dev.russiancompanion.v2.curriculum.*
++import dev.russiancompanion.v2.ui.V2ReferenceDetailScreen
++import dev.russiancompanion.v2.ui.V2ReferenceScreen
++import org.junit.Rule
++import org.junit.Test
++import org.junit.runner.RunWith
++import org.robolectric.RobolectricTestRunner
++import org.robolectric.annotation.Config
++import java.io.File
++
++@RunWith(RobolectricTestRunner::class)
++@Config(sdk = [33])
++class ReferenceDetailSearchUiTest {
++    @get:Rule val compose = createComposeRule()
++
++    @Test fun russianDetailQueryOpensTheOriginalExplanationAtLargeText() {
++        val p = V2PackLoader.parse(File(if (File("app").isDirectory) "." else "..",
++            "app/src/main/assets/content/v2-curriculum.json").readText())
++        val entry = p.references.single { it.id == "ref-ca-letter-names" }
++        compose.setContent {
++            var openId by remember { mutableStateOf<String?>(null) }
++            CompositionLocalProvider(LocalDensity provides Density(LocalDensity.current.density, fontScale = 1.8f)) {
++                MaterialTheme {
++                    if (openId == null) {
++                        V2ReferenceScreen(p, referenceSearchLearner(1), {}, { openId = it })
++                    } else {
++                        V2ReferenceDetailScreen(p, openId!!, { openId = null }, { _, _ -> })
++                    }
++                }
++            }
++        }
++        compose.onNodeWithTag("v2-reference-search").performTextInput("и КРАТКОЕ")
++        compose.onNodeWithText(entry.title).performScrollTo().assertIsDisplayed().performClick()
++        compose.onNodeWithText(entry.detail).performScrollTo().assertIsDisplayed()
++    }
++}
