@@ -2195,3 +2195,8 @@ Review-rule assertion scope tested at `626a01414d53cc6fc83032da63d4fd833bdd557b`
 ## Option corpus correction verified
 
 Option-corpus correction tested at `bf2f9ea13388ec58c969794f36c78d723e0b51d8`:12selected existing methods/4classes,12passed/0failed/0errors/0skipped. Original current-checkpoint one-method baseline failed and is retained. Historical561/379first-key counts remain asserted on exactCC015source;all626current items match exactCC012source,with only four declared availability-item changes. Lesson/required/lab/review distributions and all4UIroutes executed. No app/content/history/policy change;focused scope,not complete suite or independent acceptance. Read engineering-option-corpus/ENGINEERING_CHANGE_REPORT.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Next isolated unchangedUnit13restore running;original causeUNCONFIRMED. Otherfailures/qualifiedreviewOPEN;physicalLAST.
+
+
+## Unit13 restore reproduction retained
+
+Unit13 restore isolated1/1and UI-predecessor3/3pass,but originalfour-methodprefix reproduces3pass/1fail twice. Observationalguard/flag/root traces narrow conditions;largerdiagnostic4/4passes twice and nevertriggers rollbackprobe. Temporarydiagnosticsremoved;originalUnit13testbyte-identical and finalcontrolstillfails. CauseUNCONFIRMED;no restorefixclaimed. Read engineering-unit13-restore-diagnostic/ENGINEERING_OBSERVATION.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Next:two-method genuine-backup/fresh-restore reduction,then observe refusingbranch. Allscopesseparate;originalfailurespreserved;physicalLAST.

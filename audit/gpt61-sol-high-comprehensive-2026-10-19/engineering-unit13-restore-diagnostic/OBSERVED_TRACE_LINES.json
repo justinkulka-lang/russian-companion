@@ -1,0 +1,40 @@
+{
+  "extractedFromRawXml": true,
+  "scopes": {
+    "ISOLATED": [],
+    "INTERACTION": [],
+    "CLASS_PREFIX": [],
+    "DIAGNOSTIC": [
+      "U13_RESTORE before root=/tmp/robolectric-Unit13PastTeachingTest_freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments18080168184073762983/dev.russiancompanion-dataDir/files/recordings exists=false directory=false parentExists=true parentWritable=true",
+      "U13_RESTORE before files=[]",
+      "U13_RESTORE before flags=[false, false, false, false, false, false, false]",
+      "U13_RESTORE before guards=[null, null, null, null]",
+      "U13_RESTORE after-UNCHANGED root=/tmp/robolectric-Unit13PastTeachingTest_freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments18080168184073762983/dev.russiancompanion-dataDir/files/recordings exists=true directory=true parentExists=true parentWritable=true",
+      "U13_RESTORE after-UNCHANGED files=[recordings:dir=true:length=40]",
+      "U13_RESTORE after-UNCHANGED flags=[false, false, false, false, false, false, false]",
+      "U13_RESTORE after-UNCHANGED guards=[null, null, null, null]"
+    ],
+    "TRANSACTION_DIAGNOSTIC": [
+      "U13_RESTORE before root=/tmp/robolectric-Unit13PastTeachingTest_freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments12087083282225210741/dev.russiancompanion-dataDir/files/recordings exists=false directory=false parentExists=true parentWritable=true",
+      "U13_RESTORE before files=[]",
+      "U13_RESTORE before flags=[false, false, false, false, false, false, false]",
+      "U13_RESTORE before guards=[null, null, null, null]",
+      "U13_RESTORE after-REPLACED root=/tmp/robolectric-Unit13PastTeachingTest_freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments12087083282225210741/dev.russiancompanion-dataDir/files/recordings exists=true directory=true parentExists=true parentWritable=true",
+      "U13_RESTORE after-REPLACED files=[recordings:dir=true:length=40]",
+      "U13_RESTORE after-REPLACED flags=[false, false, false, false, false, false, false]",
+      "U13_RESTORE after-REPLACED guards=[null, null, null, null]"
+    ],
+    "TRANSACTION_DIAGNOSTIC_REPEAT": [
+      "U13_RESTORE before root=/tmp/robolectric-Unit13PastTeachingTest_freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments8658253040955196057/dev.russiancompanion-dataDir/files/recordings exists=false directory=false parentExists=true parentWritable=true",
+      "U13_RESTORE before files=[]",
+      "U13_RESTORE before flags=[false, false, false, false, false, false, false]",
+      "U13_RESTORE before guards=[null, null, null, null]",
+      "U13_RESTORE after-REPLACED root=/tmp/robolectric-Unit13PastTeachingTest_freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments8658253040955196057/dev.russiancompanion-dataDir/files/recordings exists=true directory=true parentExists=true parentWritable=true",
+      "U13_RESTORE after-REPLACED files=[recordings:dir=true:length=40]",
+      "U13_RESTORE after-REPLACED flags=[false, false, false, false, false, false, false]",
+      "U13_RESTORE after-REPLACED guards=[null, null, null, null]"
+    ],
+    "RETURN_CONTROL": []
+  },
+  "rollbackProbeTriggered": false
+}

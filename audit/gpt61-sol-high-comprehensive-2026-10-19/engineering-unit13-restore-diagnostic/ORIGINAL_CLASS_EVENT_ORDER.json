@@ -1,0 +1,143 @@
+{
+  "scope": "Original stopped run class events; interleaved global events do not establish shared-worker predecessor classes",
+  "sourceCommit": "8bff21a3d5c4104709cde6e203d65ef7df3a935c",
+  "rawArchiveSha256": "e80f85159539e3b76cda31f147d2dd88df82101c0883023f0a6692c5e25df980",
+  "rows": [
+    {
+      "kind": "START",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+      "displayName": "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+      "atMillis": 1792488998994
+    },
+    {
+      "kind": "RESULT",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+      "displayName": "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+      "atMillis": 1792489048471,
+      "resultType": "SUCCESS",
+      "startTime": 1792488998993,
+      "endTime": 1792489048471
+    },
+    {
+      "kind": "START",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "wrongGenderChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "displayName": "wrongGenderChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "atMillis": 1792489048474
+    },
+    {
+      "kind": "RESULT",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "wrongGenderChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "displayName": "wrongGenderChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "atMillis": 1792489049071,
+      "resultType": "SUCCESS",
+      "startTime": 1792489048471,
+      "endTime": 1792489049070
+    },
+    {
+      "kind": "START",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "wrongAspectChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "displayName": "wrongAspectChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "atMillis": 1792489049071
+    },
+    {
+      "kind": "RESULT",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "wrongAspectChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "displayName": "wrongAspectChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "atMillis": 1792489049621,
+      "resultType": "SUCCESS",
+      "startTime": 1792489049070,
+      "endTime": 1792489049620
+    },
+    {
+      "kind": "START",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+      "displayName": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+      "atMillis": 1792489049621
+    },
+    {
+      "kind": "RESULT",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+      "displayName": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+      "atMillis": 1792489049802,
+      "resultType": "FAILURE",
+      "startTime": 1792489049620,
+      "endTime": 1792489049747
+    },
+    {
+      "kind": "START",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples",
+      "displayName": "completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples",
+      "atMillis": 1792489049802
+    },
+    {
+      "kind": "RESULT",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples",
+      "displayName": "completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples",
+      "atMillis": 1792489053258,
+      "resultType": "FAILURE",
+      "startTime": 1792489049747,
+      "endTime": 1792489053217
+    },
+    {
+      "kind": "START",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+      "displayName": "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+      "atMillis": 1792489053259
+    },
+    {
+      "kind": "RESULT",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+      "displayName": "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+      "atMillis": 1792489053318,
+      "resultType": "SUCCESS",
+      "startTime": 1792489053217,
+      "endTime": 1792489053317
+    },
+    {
+      "kind": "START",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "displayName": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "atMillis": 1792489053318
+    },
+    {
+      "kind": "RESULT",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "displayName": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "atMillis": 1792489054282,
+      "resultType": "SUCCESS",
+      "startTime": 1792489053317,
+      "endTime": 1792489054281
+    },
+    {
+      "kind": "START",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+      "displayName": "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+      "atMillis": 1792489054284
+    },
+    {
+      "kind": "RESULT",
+      "className": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "name": "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+      "displayName": "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+      "atMillis": 1792489054406,
+      "resultType": "SUCCESS",
+      "startTime": 1792489054281,
+      "endTime": 1792489054403
+    }
+  ]
+}
