@@ -16,9 +16,9 @@ import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
-class Unit15RequestAspectUiTest {
+class Unit15AspectPreparationUiTest {
     @get:Rule val compose = createComposeRule()
-    @Test fun wrongContextAnswerRepairsAllExamplesAndBothGuidesBeforeReturning() = repair(15,"aspect-consolidate","u15-i-request-aspect-single")
+    @Test fun wrongPartnerAnswerRestoresBothPairsAndReturnsThroughTheOriginalGuide() = repair(15,"aspect-consolidate","u15-i-aspect-consolidate-1")
 
     private fun repair(number: Int, stem: String, id: String) {
         val p = dev.russiancompanion.v2.curriculum.V2PackLoader.parse(java.io.File(if(java.io.File("app").isDirectory)"." else "..","app/src/main/assets/content/v2-curriculum.json").readText()); val item = p.item(id)!!
@@ -37,15 +37,10 @@ class Unit15RequestAspectUiTest {
                 tag("v2-example-note-$exampleId").performScrollTo().assertTextEquals(p.example(exampleId)!!.note)
             }
             tag("v2-review-practice").performClick()
-            val guides = reviewedGuidedPractice(p, rem.id)
-            for ((index,guideId) in guides.withIndex()) {
+            for (guideId in reviewedGuidedPractice(p, rem.id)) {
                 for (guidedItemId in p.step(guideId)!!.second.itemIds) {
                     val guide = p.item(guidedItemId)!!
                     tag("v2-option-$guidedItemId-${guide.answer}").performScrollTo().performClick()
-                }
-                if (index < guides.lastIndex) {
-                    compose.onNodeWithTag("v2-return-to-check").assertDoesNotExist()
-                    tag("v2-next-practice").assertIsEnabled().performClick()
                 }
             }
             assertFalse(id in creditItemIds(p, store.v2LearnerView()))

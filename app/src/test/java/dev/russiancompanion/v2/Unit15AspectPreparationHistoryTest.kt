@@ -15,7 +15,7 @@ import java.io.File
 
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk=[33])
-class Unit15RequestAspectHistoryTest {
+class Unit15AspectPreparationHistoryTest {
     @Test fun originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact() {
         val p=current();val old=previous()
         assertEquals(old.items,p.items.take(old.items.size));assertEquals(old.examples,p.examples.take(old.examples.size))
@@ -26,35 +26,9 @@ class Unit15RequestAspectHistoryTest {
         assertEquals(a.objectives.filter { it.id!="obj-u15-aspect-consolidate" },b.objectives.filter { it.id!="obj-u15-aspect-consolidate" })
         assertEquals(a.sessions.filter { it.id!="u15-s-aspect-consolidate" },b.sessions.filter { it.id!="u15-s-aspect-consolidate" })
         assertEquals(old.sourceCapabilities,p.sourceCapabilities)
-        val added=p.items.drop(old.items.size);assertEquals(4,added.size)
-        assertTrue(added.all { it.sourceId=="src-content-audit-research" && it.assessment!!.cueLanguage=="en" && !Regex("[А-Яа-яЁё]").containsMatchIn(it.toString()) })
+        assertEquals(old.items,p.items);assertEquals(old.examples,p.examples)
         assertNotEquals(V2Validator.unitContentReviewDigest(old,15),V2Validator.unitContentReviewDigest(p,15))
         val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
-    }
-    @Test fun pairRecallAndOptionalContextSuccessCannotReplaceTheRequiredContextAnswers() {
-        val p=current();val old=previous();val oid="obj-u15-aspect-consolidate";val pairIds=listOf("u15-g-aspect-consolidate-0","u15-i-aspect-consolidate-1","u15-i-aspect-consolidate-2")
-        LocalStore.openInMemory(context()).use { s ->
-            for(id in pairIds)record(old,s,id,old.item(id)!!.answer)
-            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(old.unit(15)!!.objectives.single { it.id==oid },s.v2LearnerView(),old))
-        }
-        LocalStore.openInMemory(context()).use { s ->
-            val o=p.unit(15)!!.objectives.single { it.id==oid }
-            for(id in pairIds)record(p,s,id,p.item(id)!!.answer)
-            val contexts=o.checkItemIds.filter { it !in pairIds }
-            assertEquals(3,contexts.size)
-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,s.v2LearnerView(),p))
-            for(id in contexts)s.v2RecordGovernedAttempt(prepareGovernedAttempt(p,id,p.item(id)!!.answer,OPTIONAL_PRACTICE,practiceStepId("grammar"),"optional")!!)
-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,s.v2LearnerView(),p))
-            val guide="u15-g-request-aspect-repeat";record(p,s,guide,p.item(guide)!!.answer)
-            for(id in contexts.dropLast(1))record(p,s,id,p.item(id)!!.answer)
-            val last=contexts.last();record(p,s,last,p.item(last)!!.options.single { it!=p.item(last)!!.answer })
-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,s.v2LearnerView(),p))
-            record(p,s,last,p.item(last)!!.answer)
-            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,s.v2LearnerView(),p))
-            assertFalse(advancementDecision(p,p.unit(15)!!,s.v2LearnerView()).allowed)
-            val queue=practiceQueue(p,s.v2LearnerView().copy(currentUnitNumber=15),"grammar")
-            assertTrue(queue.map { it.id }.containsAll(contexts+guide))
-        }
     }
     @Test fun oldAcceptedWorkAndResumeStayStoredThroughBackupReopenButNeedCurrentWork() {
         val p=current();val old=previous();val id="u15-i-aspect-consolidate-1";val teach="u15-st-teach-aspect-consolidate-2"
@@ -77,20 +51,20 @@ class Unit15RequestAspectHistoryTest {
                     assertEquals(before,t.governedLearnerDocument());assertFalse(resumeIsCurrent(p,t.v2LearnerView()))
                     record(p,t,id,p.item(id)!!.answer);assertTrue(id in creditItemIds(p,t.v2LearnerView()))
                     assertEquals(before.attempts,t.governedLearnerDocument().attempts.take(before.attempts.size))
-                    val now=p.step("u15-st-teach-request-aspect-1")!!
+                    val now=p.step("u15-st-teach-aspect-consolidate-1")!!
                     t.v2SaveProfile(t.v2Profile().copy(currentSessionId=now.first.id,currentStepIndex=now.first.steps.indexOf(now.second)).verifiedResume(p))
                     assertTrue(resumeIsCurrent(p,t.v2LearnerView()))
                 }
             }
         } finally { context().deleteDatabase(name);dir.deleteRecursively() }
     }
-    @Test fun coherentAnswerAndApplicationSwapCannotForgeTheBoundContext() {
-        val p=current();val id="u15-i-request-aspect-prohibit";val item=p.item(id)!!;val other=item.options.single { it!=item.answer }
-        val altered=item.copy(answer=other)
-        val rows=p.provenanceRecords.map { r->if(r.sourceRecordId!="ca-rule-context:$id")r else r.copy(synthesis=r.synthesis!!.copy(applications=r.synthesis.applications.map { it.copy(answer=other,distractors=listOf(item.answer)) })) }
-        assertEquals(p.provenanceRecords.map { it.copy(synthesis=null) },rows.map { it.copy(synthesis=null) })
-        val v=V2Validator.validate(p.copy(items=p.items.map { if(it.id==id)altered else it },provenanceRecords=rows))
-        assertFalse(v.ok);assertTrue(v.errors.joinToString("\n"),v.errors.any { it.contains("complete rule context") })
+    @Test fun overlappingEnglishLabelsRejectWithoutThrowingAndDoNotBecomeNativeEvidence() {
+        val p=current();val id="u15-i-aspect-consolidate-1";val item=p.item(id)!!
+        val options=listOf("imperfective","perfective")
+        val bad=item.copy(answer="perfective",options=options,assessment=item.assessment!!.copy(contrastMembers=options))
+        val v=V2Validator.validate(p.copy(items=p.items.map { if(it.id==id)bad else it }))
+        assertFalse(v.ok)
+        assertTrue(v.errors.joinToString("\n"),v.errors.any { it.contains(id) && (it.contains("response type") || it.contains("explicit target")) })
     }
     private fun record(p:V2CurriculumPack,s:LocalStore,id:String,answer:String) {
         val step=p.unit(15)!!.sessions.flatMap { it.steps }.single { id in it.itemIds }
