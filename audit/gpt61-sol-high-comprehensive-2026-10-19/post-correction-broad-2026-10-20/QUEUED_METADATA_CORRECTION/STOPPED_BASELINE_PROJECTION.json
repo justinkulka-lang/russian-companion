@@ -1,0 +1,276 @@
+{
+  "kind": "IDENTITY_PROJECTION_OF_ORIGINAL_STOPPED_RUN_NOT_A_NEW_EXECUTION",
+  "sourceCommit": "8bff21a3d5c4104709cde6e203d65ef7df3a935c",
+  "methods": 20,
+  "counts": {
+    "SUCCESS": 13,
+    "FAILURE": 7,
+    "SKIPPED": 0
+  },
+  "rows": [
+    {
+      "id": 13,
+      "parentId": 12,
+      "class": "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest",
+      "name": "physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease",
+      "resultType": "FAILURE",
+      "startMillis": 1792487738151,
+      "endMillis": 1792487738840,
+      "failures": [
+        {
+          "exceptionType": "org.junit.ComparisonFailure",
+          "messageCharacters": 183,
+          "messagePreview": "org.junit.ComparisonFailure: expected:<8[502cadc8a068c25eb3fd6292c7d9c04cac86ef71c9da8425225156f0e7ac4ae]> but was:<8[6ce7af2eb063d8f15ae960a58c71be50d0c2ea21aab9a2a6804332c0cd1bc97]>",
+          "messageSha256": "4438d618e5f76851d4bd310730d27840a75a1ee428e55c3749fd62e3257eadfb",
+          "stackSha256": "b237b96ee0a0a75da3a84106f1fa22b205115d4b2923a309bb4fae2ffa4bf714",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "parentId": 8,
+      "class": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "name": "at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable",
+      "resultType": "FAILURE",
+      "startMillis": 1792487738485,
+      "endMillis": 1792487740692,
+      "failures": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 187,
+          "messagePreview": "java.lang.AssertionError: expected:<[]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt]>",
+          "messageSha256": "796e280a99be428596fb69450b33b4495716189dab272eb9f0542d374f7dbd5b",
+          "stackSha256": "c6d49e7ca5c467e1890edbcbe0e4fd255a47fa99ffe21007b3c9e96da3f69fbf",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "parentId": 86,
+      "class": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "name": "changedMovedAndMissingComparisonFilesRemainBlocked",
+      "resultType": "FAILURE",
+      "startMillis": 1792487760820,
+      "endMillis": 1792487762400,
+      "failures": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 329,
+          "messagePreview": "java.lang.AssertionError: expected:<[src/main/java/dev/russiancompanion/v2/curriculum/Unit13ReportedPins.kt]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/Unit13ReportedPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt]>",
+          "messageSha256": "cb8c3fdbaa2727b93f14e071aedce9a3b12b56d9c8315faacf0ce89a3a547aea",
+          "stackSha256": "e9b00741d2ec026dc94b20276aee191a1ead1d1a6bcdaf65b47529c97f3c8153",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "parentId": 86,
+      "class": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "name": "coherentSourceForgeryAndRemovedItemIdsCannotKeepUnchangedCodeAdmitted",
+      "resultType": "FAILURE",
+      "startMillis": 1792487762401,
+      "endMillis": 1792487763673,
+      "failures": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 319,
+          "messagePreview": "java.lang.AssertionError: expected:<[src/main/java/dev/russiancompanion/v2/curriculum/BatchBSources.kt]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/BatchBSources.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt]>",
+          "messageSha256": "9cc9bf597ea82554cf75a93dd7b251e3f5c5a5b00c8946c54d66dcd9cb82b741",
+          "stackSha256": "fef4db769af94cecdd47f31a39c40a08b8496b72154375b43628d4652432244f",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "parentId": 86,
+      "class": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "name": "exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus",
+      "resultType": "FAILURE",
+      "startMillis": 1792487763673,
+      "endMillis": 1792487764444,
+      "failures": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 187,
+          "messagePreview": "java.lang.AssertionError: expected:<[]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt]>",
+          "messageSha256": "796e280a99be428596fb69450b33b4495716189dab272eb9f0542d374f7dbd5b",
+          "stackSha256": "ec92b49e02395396ddaa506fc7540a498c1640a36adecf3b8f25629318936e4d",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "parentId": 86,
+      "class": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "name": "newUiResourceAndCurriculumTextCannotBorrowAnExistingLiteral",
+      "resultType": "FAILURE",
+      "startMillis": 1792487764444,
+      "endMillis": 1792487765304,
+      "failures": [
+        {
+          "exceptionType": "java.lang.AssertionError",
+          "messageCharacters": 497,
+          "messagePreview": "java.lang.AssertionError: expected:<[src/main/java/dev/russiancompanion/v2/curriculum/Unreviewed.kt, src/main/java/dev/russiancompanion/v2/ui/Unreviewed.kt, src/main/res/values/unreviewed.xml]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/Unreviewed.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt, src/main/java/dev/russiancompanion/v2/ui/Unreviewed.kt, src/main/res/values/unreviewed.xml]>",
+          "messageSha256": "f2907a90e0c8c5881a2bc3868389e750f299dba8aac498e56cef83a090020eae",
+          "stackSha256": "f54a489c6b79a949bfc1077b176cf54d040e2b84cb7226f7061565362bf71330",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ]
+    },
+    {
+      "id": 171,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "mismatchedApkHashRejectsRetainedEvidence",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487779785,
+      "endMillis": 1792487780747,
+      "failures": []
+    },
+    {
+      "id": 172,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "retainedEvidenceIsRejectedAfterACatalogChange",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487780749,
+      "endMillis": 1792487781010,
+      "failures": []
+    },
+    {
+      "id": 173,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "changingReleaseInputsChangesTheDigestAndLeavesEvidenceExcluded",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487781012,
+      "endMillis": 1792487783259,
+      "failures": []
+    },
+    {
+      "id": 174,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "retainedEvidenceIsRejectedAfterAVersionIdentityChange",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487783259,
+      "endMillis": 1792487783457,
+      "failures": []
+    },
+    {
+      "id": 175,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "failedFrozenV110CandidateCannotAuthorizeV111",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487783457,
+      "endMillis": 1792487783588,
+      "failures": []
+    },
+    {
+      "id": 176,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "retainedEvidenceIsRejectedAfterAnAudioChange",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487783589,
+      "endMillis": 1792487783874,
+      "failures": []
+    },
+    {
+      "id": 177,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "anUnfrozenCandidateCannotApproveRelease",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487783874,
+      "endMillis": 1792487784010,
+      "failures": []
+    },
+    {
+      "id": 178,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "mismatchedCandidateCommitRejectsRetainedEvidence",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487784010,
+      "endMillis": 1792487784306,
+      "failures": []
+    },
+    {
+      "id": 179,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "retainedEvidenceIsRejectedAfterAKotlinChange",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487784307,
+      "endMillis": 1792487784637,
+      "failures": []
+    },
+    {
+      "id": 180,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "aNullArtifactIdentityCannotApproveRelease",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487784638,
+      "endMillis": 1792487784811,
+      "failures": []
+    },
+    {
+      "id": 181,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "retainedEvidenceIsRejectedAfterAResourceChange",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487784812,
+      "endMillis": 1792487785088,
+      "failures": []
+    },
+    {
+      "id": 182,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "changingAnAcceptanceProcedureInvalidatesPriorEvidence",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487785088,
+      "endMillis": 1792487785362,
+      "failures": []
+    },
+    {
+      "id": 183,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+      "resultType": "FAILURE",
+      "startMillis": 1792487785363,
+      "endMillis": 1792487785753,
+      "failures": [
+        {
+          "exceptionType": "org.junit.ComparisonFailure",
+          "messageCharacters": 183,
+          "messagePreview": "org.junit.ComparisonFailure: expected:<8[502cadc8a068c25eb3fd6292c7d9c04cac86ef71c9da8425225156f0e7ac4ae]> but was:<8[6ce7af2eb063d8f15ae960a58c71be50d0c2ea21aab9a2a6804332c0cd1bc97]>",
+          "messageSha256": "4438d618e5f76851d4bd310730d27840a75a1ee428e55c3749fd62e3257eadfb",
+          "stackSha256": "cc18d1bfd297c55f2e73ac645dfe2f89fb79e944c973b4481945e8a2ef2e823a",
+          "completeEvidence": "Full unmodified message/stack retained in hashed ABORTED_BINARY_RESULTS.zip member."
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "parentId": 170,
+      "class": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "name": "retainedEvidenceIsRejectedAfterAGradleChange",
+      "resultType": "SUCCESS",
+      "startMillis": 1792487785753,
+      "endMillis": 1792487785966,
+      "failures": []
+    }
+  ],
+  "scopeNotSummed": true
+}
