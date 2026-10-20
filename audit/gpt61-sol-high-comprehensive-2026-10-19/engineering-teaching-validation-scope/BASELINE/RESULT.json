@@ -1,0 +1,152 @@
+{
+  "sourceCommit": "f722d6581ad17c5472c6b18124f78ac98baa5c3c",
+  "exitCode": 1,
+  "testCounts": {
+    "reported": 20,
+    "passed": 17,
+    "failed": 3,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 3,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+      "method": "wrongReportedEveningReturnsFromCompleteRepairToTheSameCheck",
+      "outcome": "PASSED",
+      "seconds": "19.144"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+      "method": "exactTwoSessionWhitelistPreservesNativeScoredRecordsPoliciesAndEarlierPastCorrection",
+      "outcome": "PASSED",
+      "seconds": "4.719"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+      "method": "oldGuidedPositionsCannotResumeAsDifferentTeachingCards",
+      "outcome": "PASSED",
+      "seconds": "0.243"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+      "method": "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+      "outcome": "PASSED",
+      "seconds": "44.495"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+      "method": "wrongEnglishBackshiftLabelReturnsFromCompleteRepairToTheSameCheck",
+      "outcome": "PASSED",
+      "seconds": "0.548"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+      "method": "wrongPerfectivePartnerReturnsFromCompleteRepairToTheSameCheck",
+      "outcome": "PASSED",
+      "seconds": "0.464"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+      "method": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+      "outcome": "PASSED",
+      "seconds": "22.156"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+      "method": "wrongImperfectivePartnerReturnsFromCompleteRepairToTheSameCheck",
+      "outcome": "PASSED",
+      "seconds": "0.418"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+      "method": "oldAnswersStayRawButDoNotSupplyChangedInstructionCredit",
+      "outcome": "PASSED",
+      "seconds": "0.14"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+      "method": "bothChainsTeachBeforePracticeAndRepairEveryOriginalExample",
+      "outcome": "FAILED",
+      "seconds": "4.477"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14ImpersonalRemediationTest",
+      "method": "allThreeStateCardsPrecedePracticeAndRepairRestoresEveryExample",
+      "outcome": "FAILED",
+      "seconds": "19.751"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14ImpersonalRemediationTest",
+      "method": "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+      "outcome": "PASSED",
+      "seconds": "0.332"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14ImpersonalRemediationTest",
+      "method": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "outcome": "PASSED",
+      "seconds": "0.18"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14ImpersonalRemediationTest",
+      "method": "wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer",
+      "outcome": "PASSED",
+      "seconds": "3.898"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14ImpersonalRemediationTest",
+      "method": "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+      "outcome": "PASSED",
+      "seconds": "0.17"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15ImperativeRemediationTest",
+      "method": "completeImperativeContrastsPrecedePracticeAndRepairRestoresEveryExample",
+      "outcome": "FAILED",
+      "seconds": "23.997"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15ImperativeRemediationTest",
+      "method": "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+      "outcome": "PASSED",
+      "seconds": "0.167"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15ImperativeRemediationTest",
+      "method": "exactDeclaredUnitExceptionPreservesEveryQuestionRecordAndRequirement",
+      "outcome": "PASSED",
+      "seconds": "0.167"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15ImperativeRemediationTest",
+      "method": "wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer",
+      "outcome": "PASSED",
+      "seconds": "3.338"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15ImperativeRemediationTest",
+      "method": "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+      "outcome": "PASSED",
+      "seconds": "0.313"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedSourceInventoryMatchesFreshXmlAndEvents": true,
+  "xmlFreshRelativeToRunScript": true,
+  "completeSuite": false,
+  "scopesNotSummed": true
+}
