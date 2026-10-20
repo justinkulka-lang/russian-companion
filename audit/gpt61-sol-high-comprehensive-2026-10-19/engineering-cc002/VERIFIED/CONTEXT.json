@@ -1,0 +1,63 @@
+{
+  "sourceCommit": "5ef29a3d829a03a9598c6781be2270beb9ae8fd8",
+  "sourceRootTree": "701b542e2431cb150e1248161d98821b7d28ba71",
+  "inputTrees": {
+    "app/src/main": "fdb48a009cf684c729d79a921770a36749e0fc32",
+    "app/src/test": "fdb9d1cf43bc67ecc9238a8af760a926ac9ba172",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-Daudit.events.path=/workspace/artifacts/cc002-foundation/VERIFIED/EVENTS.jsonl",
+    "testDebugUnitTest",
+    "--tests",
+    "dev.russiancompanion.v2.V2RebuildTest.unitTwoRequiresUnitOneAndCannotUseUnrelatedCatalogAudio",
+    "--tests",
+    "dev.russiancompanion.v2.V2RebuildTest.resolvedAssetRecordsAreRequiredInsteadOfCounters",
+    "--tests",
+    "dev.russiancompanion.v2.V2RebuildTest.installedUnitsAreRejectedWhileRequiredExperiencesAreMissing",
+    "--tests",
+    "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.keywordTextBookAttestationAndCountersDoNotClearRealBlockers",
+    "--rerun",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=4",
+    "--console=plain"
+  ],
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "selectors": [
+    "dev.russiancompanion.v2.V2RebuildTest.unitTwoRequiresUnitOneAndCannotUseUnrelatedCatalogAudio",
+    "dev.russiancompanion.v2.V2RebuildTest.resolvedAssetRecordsAreRequiredInsteadOfCounters",
+    "dev.russiancompanion.v2.V2RebuildTest.installedUnitsAreRejectedWhileRequiredExperiencesAreMissing",
+    "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.keywordTextBookAttestationAndCountersDoNotClearRealBlockers"
+  ],
+  "expectedMethods": 4,
+  "sourceTestHashes": {
+    "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt": "a1366cd15e960cd7454ab804cbe88e974eac827cf3173b8f22150f1d211a155a",
+    "app/src/test/java/dev/russiancompanion/v2/audit/CurriculumReadinessReconciliationTest.kt": "70f450dca980372b93036141d90557998d63c39c47ac2a8d81368ed619619649"
+  },
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "workingTreeAtStart": "CLEAN",
+  "scope": "Explicit selected host tests; NOT complete suite",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblySigning": "NOT_RUN"
+}

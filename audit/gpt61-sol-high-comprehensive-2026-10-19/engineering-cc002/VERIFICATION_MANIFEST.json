@@ -1,0 +1,106 @@
+{
+  "sourceCommit": "5ef29a3d829a03a9598c6781be2270beb9ae8fd8",
+  "verification": {
+    "sourceCommit": "5ef29a3d829a03a9598c6781be2270beb9ae8fd8",
+    "exitCode": 0,
+    "testCounts": {
+      "reported": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 2,
+    "tests": [
+      {
+        "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+        "method": "resolvedAssetRecordsAreRequiredInsteadOfCounters",
+        "outcome": "PASSED",
+        "seconds": "28.136"
+      },
+      {
+        "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+        "method": "installedUnitsAreRejectedWhileRequiredExperiencesAreMissing",
+        "outcome": "PASSED",
+        "seconds": "3.737"
+      },
+      {
+        "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+        "method": "unitTwoRequiresUnitOneAndCannotUseUnrelatedCatalogAudio",
+        "outcome": "PASSED",
+        "seconds": "1.131"
+      },
+      {
+        "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+        "method": "keywordTextBookAttestationAndCountersDoNotClearRealBlockers",
+        "outcome": "PASSED",
+        "seconds": "93.936"
+      }
+    ],
+    "tasks": {
+      "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+      "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+      "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+      "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+      "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+      "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE",
+      "lintDebug": "> Task :app:lintDebug",
+      "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+    },
+    "lintIssuesBySeverity": {
+      "Warning": 20,
+      "Hint": 1
+    },
+    "selectedSourceInventoryMatchesFreshXmlAndEvents": true,
+    "xmlFreshRelativeToRunScript": true,
+    "completeSuite": false,
+    "scopesNotSummed": true
+  },
+  "context": "VERIFIED/CONTEXT.json",
+  "commands": [
+    "python /workspace/artifacts/cc002-foundation/prepare_run.py VERIFIED",
+    "bash /workspace/artifacts/cc002-foundation/VERIFIED/run.sh",
+    "python /workspace/artifacts/cc002-foundation/inspect_foundation.py /workspace/artifacts/cc002-foundation/INVENTORY",
+    "python /workspace/artifacts/cc002-foundation/collect_run.py VERIFIED"
+  ],
+  "toolchain": {
+    "java": "21.0.12.1+1-LTS-4",
+    "gradle": "9.6.0",
+    "compileSdk": 37,
+    "targetSdk": 36,
+    "minSdk": 26
+  },
+  "apk": {
+    "applicationId": "dev.russiancompanion",
+    "versionName": "2.0.0-dev",
+    "versionCode": 5,
+    "assembled": false,
+    "sha256": "NOT_RECORDED_NO_NEW_APK",
+    "signature": "NOT_RECORDED_NO_NEW_APK"
+  },
+  "environment": {
+    "install_script": "PREVIOUSLY_SAVED_UNCHANGED",
+    "start_skill": "PREVIOUSLY_SAVED_UNCHANGED",
+    "publication": "USER_CONFIRMED_INDEPENDENTLY_UNVERIFIED"
+  },
+  "screenshotsExcluded": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "privatePdfInspected": false,
+  "newNativeContent": false,
+  "newAdmissions": 0,
+  "formalAcceptance": false,
+  "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_COMPREHENSIVE_INDEPENDENT_NONPHYSICAL_RECHECK",
+  "inspectedFileSha256": {
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/V2Models.kt": "6522a4627d8897f670c7d390e3cf15575186157bc62a0bb11cb7505f127b6fd4",
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt": "2fbdd5320401c9e9ea97983eaa14b3487d75ff06eb3555ec02a0daa786a7510e",
+    "app/src/main/java/dev/russiancompanion/v2/ui/V2Screens.kt": "f9073e362b71b2db24313fc5230ae5ac0d5759e93c9d18b365a71154c3b1d77b",
+    "catalog/sources/units-26-30/wikipedia/russian-alphabet-1371795481.txt": "6bc0e74576c4e0170cbb8e503d7f16c911d8849713756f1d5b3c0f0995197305",
+    "app/src/main/assets/content/catalog-notice.txt": "3f889500860ef06921c7bb44b6ecce3c4ac8639cde8c7936fd66a7e4e9283a76",
+    "app/src/main/assets/licenses/shtooka-readme-streit.txt": "e25cfcba685ff449316971fbab1454caa866999134c10f91ef9d0f5230f4d620",
+    "app/src/main/assets/licenses/shtooka-readme-sakhno.txt": "15f2cf2db9cbe4a185c56d515a42318742abc4413af4a4aed7e2008a1f05cd0a"
+  }
+}

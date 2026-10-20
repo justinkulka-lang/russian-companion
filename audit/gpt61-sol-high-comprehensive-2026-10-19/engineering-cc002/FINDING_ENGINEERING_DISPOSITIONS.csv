@@ -1,0 +1,7 @@
+finding_id,severity,engineering_status,component,observed_scope,remaining_prerequisite
+CC002,HIGH,OPEN,Unit1 decoding,One print-pair item; no admitted syllable/word/phrase chain,"Exact bounded source-backed stimuli, teaching and multiple distinct checks/repair"
+CC002,HIGH,OPEN,Stress,Guidance only; letter exampleWordId null,Exact source-marked beginner words and qualified stress review
+CC002,HIGH,OPEN,Handwriting,No governed asset; book direction only,"Actual licensed visual forms/contrasts, byte bindings and qualified visual review"
+CC002,HIGH,OPEN,Model listening,No governed asset;1000 unrelated catalog hashes verified,Qualified subset text/audio/rights review; actual playback and stimulus coverage
+CC002,HIGH,OPEN,Recording,Optional unscored SPEAK instruction; not executed here,Actual offline capture/playback and interruption/resume evidence without scoring
+CC002,HIGH,OPEN,Runtime admission,Record structures lack local file path/content digest,Versioned fail-closed resource binding and runtime checks before activation

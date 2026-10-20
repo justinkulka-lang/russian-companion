@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-20T09:10:52.015Z" hostname="d0aced911621" time="93.972">
+  <properties/>
+  <testcase name="keywordTextBookAttestationAndCountersDoNotClearRealBlockers" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="93.936"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
