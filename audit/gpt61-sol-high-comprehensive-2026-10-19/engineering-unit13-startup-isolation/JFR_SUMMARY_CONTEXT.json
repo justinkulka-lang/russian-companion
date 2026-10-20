@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/jdk21/bin/java",
+    "-cp",
+    "/workspace/artifacts/post-correction-broad-2026-10-20/restore-jdi",
+    "JournalRecordingSummary",
+    "/workspace/artifacts/post-correction-broad-2026-10-20/restore-jdi/RESTORE.jfr"
+  ],
+  "exitCode": 0,
+  "sourceSha256": "3428cd1ffd04d4131e9c4c56f648f58c06aeceff47155cd271ec8b46724d57c3",
+  "recordingSha256": "e206e5965cceae1d5d8034d7b81cb7df636114902aa4c7b3f0df73449fce67cf",
+  "recordingBytes": 10006431,
+  "readOnlyRecordedEventAnalysis": true
+}

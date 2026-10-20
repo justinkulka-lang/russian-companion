@@ -1,0 +1,80 @@
+{
+  "sourceCommit": "da76c2111fc2204677fc573af0f8fcd7e8b59630",
+  "exitCode": 1,
+  "testCounts": {
+    "reported": 8,
+    "passed": 7,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 1,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "method": "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+      "outcome": "PASSED",
+      "seconds": "50.473"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "method": "wrongGenderChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "outcome": "PASSED",
+      "seconds": "2.227"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "method": "wrongAspectChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "outcome": "PASSED",
+      "seconds": "0.566"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "method": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+      "outcome": "PASSED",
+      "seconds": "21.946"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "method": "completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples",
+      "outcome": "FAILED",
+      "seconds": "4.194"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "method": "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+      "outcome": "PASSED",
+      "seconds": "0.078"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "method": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "outcome": "PASSED",
+      "seconds": "0.805"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "method": "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+      "outcome": "PASSED",
+      "seconds": "0.161"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedSourceInventoryMatchesFreshXmlAndEvents": true,
+  "xmlFreshRelativeToRunScript": true,
+  "completeSuite": false,
+  "scopesNotSummed": true
+}

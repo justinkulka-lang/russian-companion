@@ -1,0 +1,35 @@
+{
+  "testedBaselineSourceCommit": "04c11680e484b8b087dbc6b0b56d508301ad3583",
+  "observed": {
+    "writerTid": 325251,
+    "deleterTid": 325249,
+    "writeRenameEpochSeconds": "1792527413.495507",
+    "deleteEpochSeconds": "1792527413.707435",
+    "secondsBetween": 0.211928,
+    "differentThreads": true,
+    "journalRenameSucceeded": true,
+    "secondThreadUnlinkSucceeded": true,
+    "rollbackLaterFindsNoJournal": true,
+    "recoveryCallerLines": [
+      2090,
+      1402,
+      571
+    ],
+    "competingStoreReplacementCounter": 0,
+    "nonsuspendingRestoreFailureBranchLine": 1566,
+    "recordedJournalExceptions": 0,
+    "recordedFreshJournalReads": 0,
+    "recordedFreshJournalWriteBytes": 353753
+  },
+  "sourceAttribution": {
+    "RussianCompanionApplication.onCreate": "starts awaitLocalStore asynchronously",
+    "LocalStore.open": "owns files/recordings and calls recovery sweep",
+    "LocalStore.openInMemory": "owns the same files/recordings with separate in-memory database",
+    "LocalStore.openNamed": "owns recordings-<database-name>",
+    "pairFixtures": "named backup stores then in-memory restore;no explicit sweep",
+    "conclusion": "application startup store recovery races the test-owned in-memory restore on their shared recordings/journal paths"
+  },
+  "oldUnit7RestoreCause": "UNCONFIRMED",
+  "fixScope": "await and close existing application startup store before this test opens its in-memory store; no production change",
+  "diagnosticEventsAreNotJUnitPasses": true
+}
