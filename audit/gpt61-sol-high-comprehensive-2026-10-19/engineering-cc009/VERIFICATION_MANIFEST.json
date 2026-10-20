@@ -1,0 +1,53 @@
+{
+  "finding": "CC009",
+  "engineeringDisposition": "EXISTING_IDENTITY_GUARDS_VERIFIED;BOTH_CUE_FAMILIES_QUALIFICATION_PENDING",
+  "sourceCommit": "b532ea7e95a27361f7328fef483977d93f52d5d4",
+  "testCounts": {
+    "reported": 12,
+    "passed": 12,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 3,
+  "mutationCases": {
+    "total": 24,
+    "authoritativeCorpusRewrites": 12,
+    "metadataMirrorRewrites": 12,
+    "additionalJUnitMethods": false,
+    "allRejected": true,
+    "matrixComplete": true
+  },
+  "completeSuite": false,
+  "scopesMustNotBeSummed": true,
+  "originalAuditStatus": "OPEN_UNCHANGED",
+  "applicationContentSourceOrPolicyChanges": false,
+  "lint": {
+    "errors": 0,
+    "warnings": 20,
+    "hints": 1,
+    "taskOutcomes": {
+      "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+      "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+      "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin",
+      "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+      "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+      "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+      "lintDebug": "> Task :app:lintDebug",
+      "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+    }
+  },
+  "releaseGateAttachment": "EXECUTED_PASS_NOT_RELEASE_APPROVAL",
+  "apk": {
+    "configuredIdentity": "dev.russiancompanion /2.0.0-dev /versionCode5",
+    "assemblyInstallSigning": "NOT_RUN",
+    "sha256Signature": "NOT_RECORDED_NO_NEW_ARTIFACT"
+  },
+  "environment": {
+    "installScriptStartSkill": "PREVIOUSLY_SAVED_UNCHANGED",
+    "publication": "USER_CONFIRMED_INDEPENDENTLY_UNVERIFIED"
+  },
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+  "releaseApproval": false
+}

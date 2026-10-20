@@ -1,0 +1,67 @@
+{
+  "sourceCommit": "b532ea7e95a27361f7328fef483977d93f52d5d4",
+  "sourceRootTree": "f36dc24fcec0a50e2495b035060560fae2436eb4",
+  "inputTrees": {
+    "app/src/main": "fdb48a009cf684c729d79a921770a36749e0fc32",
+    "app/src/test": "427ef949a6030afe474d07600d3aa456d5602fd4",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-Daudit.events.path=/workspace/artifacts/cc009-unit28/VERIFIED/EVENTS.jsonl",
+    "testDebugUnitTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit28IndependentIdentityTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit28InstructionTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit28TimingTransferTest.originalSixGovernedAnswersCompleteBothTimingObjectives",
+    "--tests",
+    "dev.russiancompanion.v2.Unit28TimingTransferTest.guidedAnswersAloneCannotCompleteEitherObjective",
+    "--tests",
+    "dev.russiancompanion.v2.Unit28TimingTransferTest.playerRejectsAbsolutePresentInThePastGuidedClause",
+    "--rerun",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=4",
+    "--console=plain"
+  ],
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "selectors": [
+    "dev.russiancompanion.v2.Unit28IndependentIdentityTest",
+    "dev.russiancompanion.v2.Unit28InstructionTest",
+    "dev.russiancompanion.v2.Unit28TimingTransferTest.originalSixGovernedAnswersCompleteBothTimingObjectives",
+    "dev.russiancompanion.v2.Unit28TimingTransferTest.guidedAnswersAloneCannotCompleteEitherObjective",
+    "dev.russiancompanion.v2.Unit28TimingTransferTest.playerRejectsAbsolutePresentInThePastGuidedClause"
+  ],
+  "expectedMethods": 12,
+  "sourceTestHashes": {
+    "app/src/test/java/dev/russiancompanion/v2/Unit28IndependentIdentityTest.kt": "f7718d1929017855c31e0d81634c52aa8d289f6587225b310fda393ae6d5dc63",
+    "app/src/test/java/dev/russiancompanion/v2/Unit28InstructionTest.kt": "e06b33a442528eac115958ac77ba23eabb824396242301158dfe5d0e6b4897cc",
+    "app/src/test/java/dev/russiancompanion/v2/Unit28TimingTransferTest.kt": "fef5d3e35be246cf960e579b6f35b7dae7ecf64272af0a32802eda8c4d06e191"
+  },
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "workingTreeAtStart": "CLEAN",
+  "scope": "Explicit selected host tests; NOT complete suite",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblySigning": "NOT_RUN"
+}

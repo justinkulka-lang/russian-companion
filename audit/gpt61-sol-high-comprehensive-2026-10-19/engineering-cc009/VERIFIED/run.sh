@@ -1,0 +1,5 @@
+source /workspace/setup/android-env.sh
+./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle -Daudit.events.path=/workspace/artifacts/cc009-unit28/VERIFIED/EVENTS.jsonl testDebugUnitTest --tests dev.russiancompanion.v2.Unit28IndependentIdentityTest --tests dev.russiancompanion.v2.Unit28InstructionTest --tests dev.russiancompanion.v2.Unit28TimingTransferTest.originalSixGovernedAnswersCompleteBothTimingObjectives --tests dev.russiancompanion.v2.Unit28TimingTransferTest.guidedAnswersAloneCannotCompleteEitherObjective --tests dev.russiancompanion.v2.Unit28TimingTransferTest.playerRejectsAbsolutePresentInThePastGuidedClause --rerun compileDebugSources lintDebug verifyReleaseGateAttachment --continue --offline --max-workers=4 --console=plain > /workspace/artifacts/cc009-unit28/VERIFIED/RUN.log 2>&1
+result=$?
+printf "%s\n" "$result" > /workspace/artifacts/cc009-unit28/VERIFIED/RUN.exit
+exit "$result"
