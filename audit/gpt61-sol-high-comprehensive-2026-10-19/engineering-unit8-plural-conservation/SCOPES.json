@@ -1,0 +1,36 @@
+{
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "scopes": [
+    {
+      "stage": "BASELINE",
+      "sourceCommit": "c4c81867eb08da55906f8994329d361e5cea0265",
+      "counts": {
+        "reported": 6,
+        "passed": 5,
+        "failed": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      "exitCode": 1
+    },
+    {
+      "stage": "VERIFIED",
+      "sourceCommit": "7df8e54e31c2a68a5c4886fa1880862ab8fec6c0",
+      "counts": {
+        "reported": 6,
+        "passed": 6,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "exitCode": 0
+    }
+  ],
+  "screenshotExportersExcluded": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  }
+}

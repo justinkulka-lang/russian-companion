@@ -1,0 +1,68 @@
+{
+  "sourceCommit": "c4c81867eb08da55906f8994329d361e5cea0265",
+  "exitCode": 1,
+  "testCounts": {
+    "reported": 6,
+    "passed": 5,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 1,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PluralInstructionTest",
+      "method": "laterSpellingNeedsItsOwnReverseNounAndAdjectiveEvidence",
+      "outcome": "PASSED",
+      "seconds": "4.173"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PluralInstructionTest",
+      "method": "authenticOldSevenAnswerHistoryIsPreservedButStaleAfterInstructionRenewal",
+      "outcome": "PASSED",
+      "seconds": "1.179"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PluralInstructionTest",
+      "method": "earlierSevenAnswerPluralCompletionCannotCreditLaterSpellingReinforcement",
+      "outcome": "PASSED",
+      "seconds": "1.094"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PluralInstructionTest",
+      "method": "everyPluralCardPrecedesPracticeAndFullRemediationRestoresFourteenForms",
+      "outcome": "PASSED",
+      "seconds": "0.231"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PluralInstructionTest",
+      "method": "playerRejectsSingularWordForPluralAndOffersFullPluralRemediation",
+      "outcome": "PASSED",
+      "seconds": "2.77"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PluralInstructionTest",
+      "method": "unit8ScoredObjectsAndAllPriorNativeExamplesAndProvenanceRemainIdentical",
+      "outcome": "FAILED",
+      "seconds": "0.522"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedSourceInventoryMatchesFreshXmlAndEvents": true,
+  "xmlFreshRelativeToRunScript": true,
+  "completeSuite": false,
+  "scopesNotSummed": true
+}
