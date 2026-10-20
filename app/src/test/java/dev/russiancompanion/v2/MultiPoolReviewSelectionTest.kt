@@ -39,7 +39,22 @@ class MultiPoolReviewSelectionTest {
             assertEquals(d.reviewAssignments to d.reviewAnswers, s.cumulativeReviewHistory())
             val u3 = d.reviewAssignments.single { it.targetUnit == 3 }
             assertEquals(2, u3.schema)
-            assertEquals(u3, createCumulativeReviewAssignment(p, s.v2LearnerView(), 3, u3.id, u3.boundary))
+            // Allocation uses the current presentation rule; a saved assignment keeps its exact legacy rule.
+            val freshU3 = createCumulativeReviewAssignment(p, s.v2LearnerView(), 3, u3.id, u3.boundary)!!
+            assertEquals(closedResponseRuleDigest(), u3.responseRuleDigest)
+            assertEquals(presentedReviewResponseRuleDigest(), freshU3.responseRuleDigest)
+            assertNotEquals(u3.responseRuleDigest, freshU3.responseRuleDigest)
+            assertEquals(freshU3.digest, reviewAssignmentDigest(freshU3))
+            assertNotEquals(u3.digest, freshU3.digest)
+            // All identity, schema, policy, boundary and slot fields must still match exactly.
+            assertEquals(u3, freshU3.copy(responseRuleDigest = u3.responseRuleDigest, digest = u3.digest))
+            assertTrue(reviewAssignmentCurrent(p, u3))
+            assertEquals(u3, s.openCumulativeReview(p, 3, s.learnerMutationEpoch()))
+            u3.slots.forEachIndexed { index, slot ->
+                val item = p.item(slot.itemId)!!
+                assertEquals(item.options, reviewPresentedOptions(item, u3, index))
+            }
+            assertEquals(d.reviewAssignments to d.reviewAnswers, s.cumulativeReviewHistory())
             for (n in 5..6) {
                 val old = d.reviewAssignments.single { it.targetUnit == n }
                 assertEquals(1, old.schema); assertEquals(old.digest, reviewAssignmentDigest(old))
