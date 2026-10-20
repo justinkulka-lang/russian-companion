@@ -548,8 +548,25 @@ class Units2630SourceIntakeTest {
         assertTrue(assessment.blockers.joinToString("\n") { it.message }, assessment.blockers.any {
             it.message.contains("AT-031") || it.message.contains("not approved") || it.name.contains("FROZEN")
         })
+        // These later teaching corrections have explicit sources; every other pin stays current.
+        val corrections = mapOf(
+            4 to "e6db0bdfe0bbb40edf190623e2123014946f305b",
+            7 to "b7e53230e2119b1e57d781b1e1b955f074a38601",
+            8 to "fe919656bfa2775b5cc2c22f2496d4258343cfea",
+            10 to "7efff9e18328c612de235236d98e834bb85cd1db",
+            15 to "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04",
+        )
+        val prior = RecordedIntakeCorrectionScope.load(root, "49a926c5ace0459edf7712ca5d90db4a63ff9d31")
         preservedContentDigests.forEach { (number, digest) ->
-            assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+            val correction = corrections[number]
+            if (correction == null) {
+                assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+            } else {
+                assertEquals("historical unit $number", digest, V2Validator.unitContentReviewDigest(prior, number))
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    RecordedIntakeCorrectionScope.load(root, correction), number)
+                assertNotEquals(digest, V2Validator.unitContentReviewDigest(pack, number))
+            }
         }
         val unit23 = V2Validator.unitContentReviewDigest(pack, 23)
         val shifted = pack.copy(

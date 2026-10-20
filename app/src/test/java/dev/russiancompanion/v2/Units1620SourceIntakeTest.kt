@@ -79,6 +79,13 @@ class Units1620SourceIntakeTest {
                 assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(afterRepair, 11))
                 assertEquals(afterRepair.unit(11), pack.unit(11))
                 assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
+            } else if (number == 15) {
+                // Keep the original pin on its recorded snapshot; preparation changed later.
+                val prior = historicalSourcePack("49a926c5ace0459edf7712ca5d90db4a63ff9d31")
+                assertEquals("historical unit $number", digest, V2Validator.unitContentReviewDigest(prior, number))
+                val correction = historicalSourcePack("0f8001a8ec2cb76a7bc994a2c8d77db09a272d04")
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, correction, number)
+                org.junit.Assert.assertNotEquals(digest, V2Validator.unitContentReviewDigest(pack, number))
             } else {
                 assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
             }
