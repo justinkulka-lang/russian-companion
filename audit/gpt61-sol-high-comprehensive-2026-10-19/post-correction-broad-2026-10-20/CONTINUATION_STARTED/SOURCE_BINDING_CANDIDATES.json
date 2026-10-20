@@ -1,0 +1,90 @@
+{
+  "kind": "STATIC_CANDIDATE_REVIEW_NOT_AN_APPLIED_PIN_OR_APPROVAL",
+  "currentBroadSource": "8bff21a3d5c4104709cde6e203d65ef7df3a935c",
+  "rows": [
+    {
+      "unit": 4,
+      "proposedSourceCommit": "2c455b96dde9abd1fc8e2b5350df161216cf7e31",
+      "ancestorOfHead": true,
+      "exactStaticComponents": {
+        "unit": true,
+        "items": true,
+        "examples": true,
+        "sources": true,
+        "rights": true,
+        "letters": true,
+        "references": true,
+        "sourceCapabilities": true,
+        "provenanceRecords": true
+      },
+      "oldProjectionSha256": "d91f21d1c76a7de8e3b46406d70b2092c11afb416b2fd935561b7b1745f95a02",
+      "currentProjectionSha256": "d91f21d1c76a7de8e3b46406d70b2092c11afb416b2fd935561b7b1745f95a02",
+      "qualifiedReview": false,
+      "actualKotlinSourceCommitValidationExecuted": false,
+      "pinChanged": false
+    },
+    {
+      "unit": 7,
+      "proposedSourceCommit": "b7e53230e2119b1e57d781b1e1b955f074a38601",
+      "ancestorOfHead": true,
+      "exactStaticComponents": {
+        "unit": true,
+        "items": true,
+        "examples": true,
+        "sources": true,
+        "rights": true,
+        "letters": true,
+        "references": true,
+        "sourceCapabilities": true,
+        "provenanceRecords": true
+      },
+      "oldProjectionSha256": "1c8f7ae6391fb42a8ab1780ece37b40aec24c3652ab507b84a38207193b0f8c6",
+      "currentProjectionSha256": "1c8f7ae6391fb42a8ab1780ece37b40aec24c3652ab507b84a38207193b0f8c6",
+      "qualifiedReview": false,
+      "actualKotlinSourceCommitValidationExecuted": false,
+      "pinChanged": false
+    },
+    {
+      "unit": 8,
+      "proposedSourceCommit": "fe919656bfa2775b5cc2c22f2496d4258343cfea",
+      "ancestorOfHead": true,
+      "exactStaticComponents": {
+        "unit": true,
+        "items": true,
+        "examples": true,
+        "sources": true,
+        "rights": true,
+        "letters": true,
+        "references": true,
+        "sourceCapabilities": true,
+        "provenanceRecords": true
+      },
+      "oldProjectionSha256": "f62b2ca43d88456997f2274caf2aa8829c1626c7226dc82b5dfad37555fa8ed4",
+      "currentProjectionSha256": "f62b2ca43d88456997f2274caf2aa8829c1626c7226dc82b5dfad37555fa8ed4",
+      "qualifiedReview": false,
+      "actualKotlinSourceCommitValidationExecuted": false,
+      "pinChanged": false
+    },
+    {
+      "unit": 15,
+      "proposedSourceCommit": "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04",
+      "ancestorOfHead": true,
+      "exactStaticComponents": {
+        "unit": true,
+        "items": true,
+        "examples": true,
+        "sources": true,
+        "rights": true,
+        "letters": true,
+        "references": true,
+        "sourceCapabilities": true,
+        "provenanceRecords": true
+      },
+      "oldProjectionSha256": "8d72f490f7c2d86fff3554642604bf6479cd3b65b259a6e4bd8b423bdad1d03e",
+      "currentProjectionSha256": "8d72f490f7c2d86fff3554642604bf6479cd3b65b259a6e4bd8b423bdad1d03e",
+      "qualifiedReview": false,
+      "actualKotlinSourceCommitValidationExecuted": false,
+      "pinChanged": false
+    }
+  ]
+}
