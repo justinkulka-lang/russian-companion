@@ -2190,3 +2190,8 @@ Metadata-only binding correction tested at `8eab6f0bdd33a0f3521df285573fc34fc068
 ## Review-rule assertion verification
 
 Review-rule assertion scope tested at `626a01414d53cc6fc83032da63d4fd833bdd557b`:9selected existing methods/2classes,9passed/0failed/0errors/0skipped. Saved legacy assignments keep exact hashes,raw option order and stored history;fresh allocation is checked against the separately versioned presentation rule. Every other assignment field is compared exactly. No app/content/history/policy/approval change;focused scope,not a complete suite or independent audit closure. Read engineering-review-rule-scope/ENGINEERING_CHANGE_REPORT.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Remaining failures/qualificationOPEN;physicalLAST.
+
+
+## Option corpus correction verified
+
+Option-corpus correction tested at `bf2f9ea13388ec58c969794f36c78d723e0b51d8`:12selected existing methods/4classes,12passed/0failed/0errors/0skipped. Original current-checkpoint one-method baseline failed and is retained. Historical561/379first-key counts remain asserted on exactCC015source;all626current items match exactCC012source,with only four declared availability-item changes. Lesson/required/lab/review distributions and all4UIroutes executed. No app/content/history/policy change;focused scope,not complete suite or independent acceptance. Read engineering-option-corpus/ENGINEERING_CHANGE_REPORT.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Next isolated unchangedUnit13restore running;original causeUNCONFIRMED. Otherfailures/qualifiedreviewOPEN;physicalLAST.

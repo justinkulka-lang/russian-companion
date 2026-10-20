@@ -1,0 +1,26 @@
+{
+  "archiveSha256": "66fd77951fa94ae1c932aaec2074a30fb1478ac2672250bb6a75f5d4bb8e5bd4",
+  "archiveBytes": 21663,
+  "members": {
+    "BASELINE/CONTEXT.json": "e79e4ee05c04bb1e84629912e03eefcf64014c2ba366e2fd2975ecdf06917a6c",
+    "BASELINE/EVENTS.jsonl": "4c99afb4ed142353050ae44445997c860804aa22bbb19f58192af55a42967ff8",
+    "BASELINE/LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "BASELINE/RESULT.json": "ac88bbd41b9fabe2dbf0bc53821938cfbaaafc7840ab73ad7ed75426dbd2aa3f",
+    "BASELINE/RUN.exit": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+    "BASELINE/RUN.log": "5b47163d8ffe0e93a856b6e625048f2fa4e42a3177fd85ae6824f4444b93b3e0",
+    "BASELINE/XML/TEST-dev.russiancompanion.v2.OptionPresentationTest.xml": "e6d87520de10af75db681852c3c1d212be1909ffa21a243d014e7e237bcfacdb",
+    "BASELINE/run.sh": "1f2658413e64ea32433ab11dd57e56783af92e5a0683077b0b2830232a13b554",
+    "VERIFIED/CONTEXT.json": "b761b823bab30810a5f2d64d002933969de0b85d8e651b1e23ebdf7de7b19b80",
+    "VERIFIED/EVENTS.jsonl": "6ae9302ceb6c3cfde115456836fe23b68708b9f41abd8cc75e205eae21054a2e",
+    "VERIFIED/LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "VERIFIED/RESULT.json": "49f6b2876577c5c1fd8dc0e8c47c2d03addda38d310d8454268c2bcfc2a4583a",
+    "VERIFIED/RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "VERIFIED/RUN.log": "52de90807abcf2e3ec38e33d7cd79e286d7471faf61b544ed473be418dddaa9d",
+    "VERIFIED/XML/TEST-dev.russiancompanion.v2.OptionPresentationTest.xml": "415586b76b705d20d78971737d4c37191e47656acfa9045be0525d4c3aabc052",
+    "VERIFIED/XML/TEST-dev.russiancompanion.v2.OptionPresentationUiTest.xml": "72daf4e93b4e2657deddd4dce62ece598200aefa0404adfdb4b2c1ccb0e15b63",
+    "VERIFIED/XML/TEST-dev.russiancompanion.v2.Unit8ExistenceSequenceTest.xml": "465d97a72b8afdf45120cb3d0785b4ec3a60a076545d8d553226540415a39038",
+    "VERIFIED/XML/TEST-dev.russiancompanion.v2.Unit8ExistenceUiTest.xml": "2e7512e04e105ccf4c1c6ae3141f0a238a98b29cb13cb46a4c52eafd1c2b948a",
+    "VERIFIED/run.sh": "41d81020a8c1b84dd304af4e218a4fdcf5d77a9b856a1ae175bf017ff238e206"
+  },
+  "crcAndEveryMemberHashVerified": true
+}
