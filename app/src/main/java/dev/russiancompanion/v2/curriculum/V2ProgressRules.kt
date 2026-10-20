@@ -401,9 +401,10 @@ internal fun searchReferences(entries: List<V2ReferenceEntry>, query: String): L
     val needle = query.trim().lowercase()
     if (needle.isEmpty()) return entries
     return entries.filter { entry ->
-        entry.title.lowercase().contains(needle) ||
-            entry.summary.lowercase().contains(needle) ||
-            entry.searchTerms.any { it.contains(needle) }
+        entry.title.contains(needle, ignoreCase = true) ||
+            entry.summary.contains(needle, ignoreCase = true) ||
+            entry.detail.contains(needle, ignoreCase = true) ||
+            entry.searchTerms.any { it.contains(needle, ignoreCase = true) }
     }
 }
 
