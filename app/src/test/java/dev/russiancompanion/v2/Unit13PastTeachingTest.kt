@@ -152,6 +152,25 @@ class Unit13PastTeachingTest {
             try {
                 val outcome = store.replaceGovernedLearner(old, emptyList())
                 traceRestore("after-$outcome")
+                if (outcome == GovernedReplaceOutcome.UNCHANGED) {
+                    val fingerprint = store.governedLearnerFingerprint()
+                    runBlocking(kotlinx.coroutines.Dispatchers.IO) {
+                        val field = LocalStore::class.java.getDeclaredField("database").apply { isAccessible = true }
+                        val database = field.get(store) as androidx.room.RoomDatabase
+                        val apply = LocalStore::class.java.getDeclaredMethod("applyGovernedDocument", GovernedLearnerDocument::class.java).apply { isAccessible = true }
+                        try {
+                            database.runInTransaction {
+                                apply.invoke(store, old)
+                                error("U13_PROBE_FORCE_ROLLBACK")
+                            }
+                        } catch (failure: Exception) {
+                            val cause = if (failure is java.lang.reflect.InvocationTargetException) failure.targetException else failure
+                            println("U13_RESTORE rollbackProbe=$cause")
+                            cause.printStackTrace(System.out)
+                        }
+                    }
+                    assertEquals("diagnostic transaction must leave no changes", fingerprint, store.governedLearnerFingerprint())
+                }
                 assertEquals(GovernedReplaceOutcome.REPLACED, outcome)
             } finally { store.closeLearnerReplacement() }
             for (number in 13..14) {
