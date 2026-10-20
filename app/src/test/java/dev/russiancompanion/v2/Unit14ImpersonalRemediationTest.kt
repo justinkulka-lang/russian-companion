@@ -30,7 +30,19 @@ class Unit14ImpersonalRemediationTest {
         assertTrue(rem.body.contains("To refer to these states in the past tense, always use '''было'''"))
         assertEquals(baseline().provenanceRecords, p.provenanceRecords)
         rem.exampleIds.forEach { id -> assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u14-impersonal" && it.shippedText == p.example(id)!!.display }) }
-        val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
+        // Historical conservation stays above; current full-pack validation has current rule pins.
+        val validationPack = V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText())
+            .also { V2PackIdentityIndex.warm(it) }
+        val historicalUnit = p.unit(14)!!
+        assertEquals(historicalUnit, validationPack.unit(14))
+        val objectiveIds = historicalUnit.objectives.map { it.id }.toSet()
+        assertEquals(p.items.filter { it.objectiveId in objectiveIds }, validationPack.items.filter { it.objectiveId in objectiveIds })
+        assertEquals(p.provenanceRecords.filter { it.unitNumber == 14 }, validationPack.provenanceRecords.filter { it.unitNumber == 14 })
+        assertEquals(p.sourceCapabilities.filter { it.unitNumber == 14 }, validationPack.sourceCapabilities.filter { it.unitNumber == 14 })
+        val exampleIds = (historicalUnit.objectives.flatMap { it.exampleIds } +
+            historicalUnit.sessions.flatMap { it.steps }.flatMap { it.exampleIds }).toSet()
+        assertEquals(p.examples.filter { it.id in exampleIds }, validationPack.examples.filter { it.id in exampleIds })
+        val valid = V2Validator.validate(validationPack); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
     @Test fun unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException() {
         val p = pack(); val old = baseline()

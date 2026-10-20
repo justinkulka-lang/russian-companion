@@ -35,7 +35,19 @@ class Unit13ContextTeachingTest {
         }
         assertTrue(current.step("u13-st-rem-tense-keep")!!.second.body.contains("Backshift is not mandatory"))
         assertTrue(current.step("u13-st-rem-infinitive")!!.second.body.contains("context-dependent counterparts"))
-        val result = V2Validator.validate(current); assertTrue(result.errors.joinToString("\n"), result.ok)
+        // Historical conservation stays above; current full-pack validation has current rule pins.
+        val validationPack = V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText())
+            .also { V2PackIdentityIndex.warm(it) }
+        val historicalUnit = current.unit(13)!!
+        assertEquals(historicalUnit, validationPack.unit(13))
+        val objectiveIds = historicalUnit.objectives.map { it.id }.toSet()
+        assertEquals(current.items.filter { it.objectiveId in objectiveIds }, validationPack.items.filter { it.objectiveId in objectiveIds })
+        assertEquals(current.provenanceRecords.filter { it.unitNumber == 13 }, validationPack.provenanceRecords.filter { it.unitNumber == 13 })
+        assertEquals(current.sourceCapabilities.filter { it.unitNumber == 13 }, validationPack.sourceCapabilities.filter { it.unitNumber == 13 })
+        val exampleIds = (historicalUnit.objectives.flatMap { it.exampleIds } +
+            historicalUnit.sessions.flatMap { it.steps }.flatMap { it.exampleIds }).toSet()
+        assertEquals(current.examples.filter { it.id in exampleIds }, validationPack.examples.filter { it.id in exampleIds })
+        val result = V2Validator.validate(validationPack); assertTrue(result.errors.joinToString("\n"), result.ok)
     }
     @Test fun exactTwoSessionWhitelistPreservesNativeScoredRecordsPoliciesAndEarlierPastCorrection() {
         val current = Unit13WiderPolicyTest.beforePolicyTransitionPack() // Exact post-teaching source; this historical whitelist predates the later policy transition.

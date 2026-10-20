@@ -30,7 +30,20 @@ class Unit15ImperativeRemediationTest {
         assertTrue(rem.body.contains("used for multiple addressees or polite address to one person"))
         assertEquals(baseline().provenanceRecords, p.provenanceRecords)
         rem.exampleIds.forEach { id -> assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u15-imperative" && it.shippedText == p.example(id)!!.display }) }
-        val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
+        // Historical conservation stays above; current full-pack validation has current rule pins.
+        val validationPack = V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText())
+            .also { V2PackIdentityIndex.warm(it) }
+        // The later aspect-session correction is separate from this exact imperative chain.
+        val objectiveId = "obj-u15-imperative"
+        val historicalObjective = p.unit(15)!!.objectives.single { it.id == objectiveId }
+        assertEquals(session(p), session(validationPack))
+        assertEquals(historicalObjective, validationPack.unit(15)!!.objectives.single { it.id == objectiveId })
+        assertEquals(p.items.filter { it.objectiveId == objectiveId }, validationPack.items.filter { it.objectiveId == objectiveId })
+        assertEquals(p.provenanceRecords.filter { it.objectiveId == objectiveId }, validationPack.provenanceRecords.filter { it.objectiveId == objectiveId })
+        assertEquals(p.sourceCapabilities.filter { it.objectiveId == objectiveId }, validationPack.sourceCapabilities.filter { it.objectiveId == objectiveId })
+        val exampleIds = (historicalObjective.exampleIds + session(p).steps.flatMap { it.exampleIds }).toSet()
+        assertEquals(p.examples.filter { it.id in exampleIds }, validationPack.examples.filter { it.id in exampleIds })
+        val valid = V2Validator.validate(validationPack); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
     @Test fun exactDeclaredUnitExceptionPreservesEveryQuestionRecordAndRequirement() {
         val p = pack(); val old = baseline()
