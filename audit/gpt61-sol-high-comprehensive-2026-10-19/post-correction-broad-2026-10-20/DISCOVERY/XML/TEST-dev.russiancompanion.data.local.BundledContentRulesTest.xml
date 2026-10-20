@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.data.local.BundledContentRulesTest" tests="13" skipped="13" failures="0" errors="0" timestamp="2026-10-20T09:15:18.451Z" hostname="d0aced911621" time="0.003">
+  <properties/>
+  <testcase name="bookAndAnkiEvidenceIsSelfAttestedAndRecordingRequiresAFile" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="totalsAreRecomputedFromLogsForEveryGovernedCategory" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="shippedSeedMatchesLicensedAudioAndInstallsTheCompleteBeginnerPathway" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="duplicateIdsMakeTheDocumentCorrupt" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unconfirmedShareAlikeStaysOnTheSourceRecord" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="defaultGateCannotRequireTutorAndOptionalDrillsAreNotEvidence" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="malformedJsonIsCorrupt" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="requiredTutorPlanIsExcluded" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="defaultGateRequiresBookAnkiAndPrescribedWork" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="userRecordsHaveNoJudgmentColumns" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="listenPlanIsDroppedWhenAnyPrescribedAudioIsIneligible" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="absentOrUnmatchedAudioIsExcludedAndTextIsCopiedUnchanged" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="unverifiedOrSharedTextMatchIsExcluded" classname="dev.russiancompanion.data.local.BundledContentRulesTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

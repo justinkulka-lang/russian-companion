@@ -1,0 +1,2912 @@
+{
+  "sourceCommit": "8bff21a3d5c4104709cde6e203d65ef7df3a935c",
+  "literalInventoryOnly": true,
+  "filesWithTestAnnotations": 220,
+  "literalMethods": 1325,
+  "testFiles": [
+    {
+      "path": "app/src/test/java/dev/russiancompanion/ScaffoldBoundaryTest.kt",
+      "sha256": "fa7284e7615a4434a500f92972de1fd312fbe10992cedbbe954acf679eb75234",
+      "literalMethods": [
+        "manifestDoesNotRequestNetworkOrExternalApps"
+      ],
+      "package": "dev.russiancompanion"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/acceptance/AcceptanceBehaviorTest.kt",
+      "sha256": "7f9df546c72e35b1cb4a0fe3cca934975a460f8b767cb84cb9fbf3c1e83d52f6",
+      "literalMethods": [
+        "at009_shareAlikeFlagFollowsStoredConfirmationOnly",
+        "at015_at016_decisionsFollowTheDisplayedRuleAndTutorSignOffIsStricter",
+        "at018_everyGovernedCategoryIsRecordedActivity",
+        "at019_closedStoreReopensWithTheSameUserRecordsAndRecordingBytes",
+        "at022_incompleteExportIsReportedUnsuccessful"
+      ],
+      "package": "dev.russiancompanion.acceptance"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/acceptance/AcceptanceBoundaryTest.kt",
+      "sha256": "d3ca03514ebcb0e099799759c6e9791d2b5b2b461864d85a18d328633684c72f",
+      "literalMethods": [
+        "at001_at003_at011_at028_userFacingCopyStaysInsideTheBeginnerCompanion",
+        "at005_packagedSurfaceHasNoNetworkAccountOrSpeechRecognizer",
+        "at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable",
+        "at010_onlyCompatibleMatchedAudioIsIncluded",
+        "at017_at024_optionalDrillsAreNotGateEvidenceAndDoNotShip",
+        "at023_ankiDroidStaysOutsideTheApp",
+        "at029_aSingleNoAnswerRejectsTheProposal",
+        "acceptanceProceduresStayClassifiedWithoutApprovingRelease",
+        "at020_physicalRebootPersistsGovernedRecords"
+      ],
+      "package": "dev.russiancompanion.acceptance"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/acceptance/AcceptanceCycleTest.kt",
+      "sha256": "e057890edd58e0f9cab657aa4f8edb874d43f855b4518796fc681e8f96054148",
+      "literalMethods": [
+        "at007_at012_at013_at014_at021_at030_lessonCycleStaysLocalAndUnscored"
+      ],
+      "package": "dev.russiancompanion.acceptance"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/acceptance/DeviceAcceptancePackageTest.kt",
+      "sha256": "69ef6825428e171c396e20f478775ff41c7c7cfab40353e1f06411f1e5678bca",
+      "literalMethods": [
+        "physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease"
+      ],
+      "package": "dev.russiancompanion.acceptance"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/acceptance/ReviewedCurriculumSourceGuardTest.kt",
+      "sha256": "d541da4af9c2d2ddfb8fb18f4f1b5ed9a8fd68d1b9b9f46a5688c179f59f3eb4",
+      "literalMethods": [
+        "exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus",
+        "newUiResourceAndCurriculumTextCannotBorrowAnExistingLiteral",
+        "changedMovedAndMissingComparisonFilesRemainBlocked",
+        "coherentSourceForgeryAndRemovedItemIdsCannotKeepUnchangedCodeAdmitted"
+      ],
+      "package": "dev.russiancompanion.acceptance"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/catalog/CatalogComplianceTest.kt",
+      "sha256": "4f54c04999c13a06bc0dd9563dcee62d070c5305a68712e77e7102cc34fdc4f8",
+      "literalMethods": [
+        "everyEligibleAudioModelResolvesToCompleteComplianceRecords",
+        "everyPackagedSourceHasARecognizedLicenseAndShareAlikeTreatment",
+        "requiredAttributionAndLicenseNoticesAreAvailableOffline",
+        "regenerationPreservesTheActivatedCompliancePackage",
+        "assembleReleaseStaysBlockedAfterShareAlikeActivation"
+      ],
+      "package": "dev.russiancompanion.catalog"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/catalog/CatalogIntakeTest.kt",
+      "sha256": "8173bf7803711f127f072dc5dd48592d3cbe445c2f41e1005a7c2d9fac70cb07",
+      "literalMethods": [
+        "installedDropMatchesPackagedAudioAndRecordsEveryIndexedFile",
+        "debugCiEvidenceStaysOutOfTheReleaseGate",
+        "missingLicenseOrUnverifiedTextIsExcluded",
+        "aCompleteProposalCanBeEligibleWithoutReplacingTheEmptyIntake",
+        "recordedSourceExclusionsStayOutOfThePackagedSeed",
+        "anInstalledDropOfOneEligibleProposalMayReplaceTheSeed",
+        "packagedAudioMatchesRecordedLicenseChainsAndStaysUnreleased",
+        "catalogRegenerationPreservesTheCompleteBeginnerConductor"
+      ],
+      "package": "dev.russiancompanion.catalog"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/appearance/AppearanceStoreTest.kt",
+      "sha256": "f14e1eaba0cfbdba487f7e51a0ee3cb981ffbde13faed0dc53682859fc216abd",
+      "literalMethods": [
+        "darkIsDefaultAndFollowSystemPersistsAcrossRestart",
+        "readFailureFallsBackToDark",
+        "writeFailureKeepsThePriorPreference"
+      ],
+      "package": "dev.russiancompanion.data.appearance"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/audio/AndroidPracticeAudioTest.kt",
+      "sha256": "12e3bf766baa904c7804ca0d0895b0cf490cb0359c292feb3f08678d6b6fb234",
+      "literalMethods": [
+        "backgroundReleaseStopsCaptureAndZeroLengthFilesAreRejected",
+        "audioFocusLossReleasesPlaybackAndCapture",
+        "completingTheModelDoesNotReleaseTheRecordingPlayer",
+        "loopingRecordingCompletionDoesNotReleaseTheNextModelPlayer",
+        "errorCleanupReleasesOnlyTheFailedPlayer",
+        "streamedRecordingDigestMatchesStandardSha256AndLeavesMissingFilesNull"
+      ],
+      "package": "dev.russiancompanion.data.audio"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/export/ExportPackageTest.kt",
+      "sha256": "070c7d3cc97fb25910cfca633d4e60215b36aebc84d3a480aaba3572746a4065",
+      "literalMethods": [
+        "packageContainsManifestCsvAndRecordingBytes",
+        "unreadableRecordingProducesNoPackage",
+        "emptyExportKeepsHeaderRowsAndZeroProgress",
+        "recordingNamesStayUnderTheRecordingsDirectory",
+        "largeRecordingsStreamToTheDestinationWithoutACompleteInMemoryCopy"
+      ],
+      "package": "dev.russiancompanion.data.export"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/export/ProgressExportTest.kt",
+      "sha256": "b42cd5ebfd5a1541c4328a425f4ec1990f1be6662f567c8d62a6f7b2ba946787",
+      "literalMethods": [
+        "exportCopiesEveryReadableRecordingAndFailsWhenOneIsMissing",
+        "emptyExportIsIdentifiedAndReadableRecordingsStayInsideTheAppDirectory"
+      ],
+      "package": "dev.russiancompanion.data.export"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/local/BundledContentRulesTest.kt",
+      "sha256": "8dbd096fc5e9927bffadfbf6c7497520bd6a7cfdde654a89b7456dc69851fa24",
+      "literalMethods": [
+        "shippedSeedMatchesLicensedAudioAndInstallsTheCompleteBeginnerPathway",
+        "duplicateIdsMakeTheDocumentCorrupt",
+        "malformedJsonIsCorrupt",
+        "absentOrUnmatchedAudioIsExcludedAndTextIsCopiedUnchanged",
+        "unverifiedOrSharedTextMatchIsExcluded",
+        "defaultGateCannotRequireTutorAndOptionalDrillsAreNotEvidence",
+        "defaultGateRequiresBookAnkiAndPrescribedWork",
+        "requiredTutorPlanIsExcluded",
+        "listenPlanIsDroppedWhenAnyPrescribedAudioIsIneligible",
+        "unconfirmedShareAlikeStaysOnTheSourceRecord",
+        "bookAndAnkiEvidenceIsSelfAttestedAndRecordingRequiresAFile",
+        "totalsAreRecomputedFromLogsForEveryGovernedCategory",
+        "userRecordsHaveNoJudgmentColumns"
+      ],
+      "package": "dev.russiancompanion.data.local"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/local/CatalogReseedGuardTest.kt",
+      "sha256": "3aca58b446b3ccb60acf0521b4f0b8b5fe0c35ec46dc190fdb5325a410deec6f",
+      "literalMethods": [
+        "unchangedCatalogHashDoesNotReplaceBundledRows",
+        "supersededIncompleteRecordingsDeleteHiddenFiles"
+      ],
+      "package": "dev.russiancompanion.data.local"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/local/DailyPlanStoreTest.kt",
+      "sha256": "f164713e41aa68173c3a6746ce03ea92766a922ce617bc1543a80ffd925aae83",
+      "literalMethods": [
+        "externalCompletionPersistsForThatDayAndTutorCanBeRemoved",
+        "ankiCompletionIsSelfAttestedVocabularyWork"
+      ],
+      "package": "dev.russiancompanion.data.local"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/local/DatabaseMigrationTest.kt",
+      "sha256": "a4e3fd1f80258f33a5a86a86a1ee5e3838aa553e34f79d20eba50cef78171bbd",
+      "literalMethods": [
+        "version1RowsKeepTheirDataAndGainTheNewNullableFields",
+        "version2PlanRowsBecomeIneligibleWhenLessonNumberCannotBeRecovered",
+        "version3DecisionsKeepTheirEvidenceAndGainACanonicalRuleSnapshot",
+        "version3DecisionsBeforeAndAfterTutorDoNotInventAHistoricalRule",
+        "version4SeedStateGainsAContentHashColumn",
+        "version5ExportRowsGainANullableRecordingSetDigest",
+        "version6LearnerAndExportRowsSurviveMigrationToVersion7"
+      ],
+      "package": "dev.russiancompanion.data.local"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/local/GateStoreTest.kt",
+      "sha256": "5170fe31457d46f7b10b225ba6a48dacb8823bc5bc1641afc4aee70ab4a2cba3",
+      "literalMethods": [
+        "savedEvidenceChangesOnlyTheRecordedDecision",
+        "invalidAndUnreadableEvidenceDoNotProduceASatisfiedDecision",
+        "storedDecisionsStayReproducibleAfterLaterEvidenceAndANewRuleVersion",
+        "saveGateDecisionRejectsFabricatedResultsAndWrongEvidence"
+      ],
+      "package": "dev.russiancompanion.data.local"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/local/LocalStoreTest.kt",
+      "sha256": "090d210bcab8ce2bc6fb07afa23dd09182603648fcf115fbc5f4956c1ca54da1",
+      "literalMethods": [
+        "shippedSeedOpensANewLearnerAfterShareAlikeConfirmation",
+        "reseedKeepsUserRecordsAndDropsRemovedAudioFromUse",
+        "fileDatabaseKeepsActivityAfterTheStoreIsClosed",
+        "bookEvidenceCannotBeStoredAsVerifiedAndBlankRecordingIsNotCommitted",
+        "negativeDurationIsRejectedAtEntry"
+      ],
+      "package": "dev.russiancompanion.data.local"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/local/PackagedPathwayStoreTest.kt",
+      "sha256": "76be2c92cb459b4524e7f3e27c60e71d2665f67a67e05a4f6bc804290e8eca37",
+      "literalMethods": [
+        "packagedCompletePathwayCompletesATutorFreeLessonCycleOnce"
+      ],
+      "package": "dev.russiancompanion.data.local"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/local/PracticeStoreTest.kt",
+      "sha256": "0914bf3149ceed9cbccb4c822ed949b3e03800e02aacac5438773f66775d98d6",
+      "literalMethods": [
+        "missingPackagedAudioIsNotPlayable",
+        "completingPracticeStoresTheRecordingWithoutAPronunciationJudgment",
+        "aRecordingWithoutACompletionLogKeepsANullActivityLink",
+        "saveListenCompletionRejectsFabricatedResultsAndWrongEvidence",
+        "listenPlanCompletionRequiresEveryPrescribedModelAndIgnoresLibraryAudio",
+        "prescribedModelsCompleteThePlanInAnyOrderAndNeedAnApplicablePlan",
+        "libraryFirstCompletionsCompleteThePlanOnceAfterLessonActivation"
+      ],
+      "package": "dev.russiancompanion.data.local"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/local/ProgressStoreTest.kt",
+      "sha256": "d71f692f80d824472f4a32d19a9ceaeec7d526325b6df49dbaa7cbef76050b46",
+      "literalMethods": [
+        "grammarAndVocabularyLogsRequireSelfAttestationAndUnknownSegmentsAreRejected",
+        "laterLogsDoNotRewriteACapturedProgressSnapshot",
+        "saveExportRejectsCompletedCountsThatDoNotMatchABuiltPackage"
+      ],
+      "package": "dev.russiancompanion.data.local"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/data/navigation/NavigationSnapshotBatchTest.kt",
+      "sha256": "e42f2ca53d0e8b4e4d1505bf3bfe0e5391df0d95da76a02fd60111055c6bb5b2",
+      "literalMethods": [
+        "shellSnapshotDoesNotOpenEachAudioAsset"
+      ],
+      "package": "dev.russiancompanion.data.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/appearance/AppearancePreferenceTest.kt",
+      "sha256": "785ba8ba78c7a6c154640d7fa41dade278c5915f193c0b75b6fe983dedbbadc4",
+      "literalMethods": [
+        "darkIsTheDefaultForUnknownOrMissingValues"
+      ],
+      "package": "dev.russiancompanion.domain.appearance"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/gate/GateRulesTest.kt",
+      "sha256": "e295646b1ff896f57bd1931e86fb2e1ed88945f1f908a9b48a08bcc64667088f",
+      "literalMethods": [
+        "defaultCompoundRuleLocksUntilBookAnkiAndPrescribedWorkAreAllMet",
+        "missingOrUnreadableEvidenceWithholdsASatisfiedResult",
+        "tutorSignOffWaitsUntilRecordedAndDoesNotSatisfyOtherConditions",
+        "prescribedWorkIsAPresenceConfirmation",
+        "historicalDecisionsReproduceFromTheirSnapshotAndRecordedEvidenceOnly"
+      ],
+      "package": "dev.russiancompanion.domain.gate"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/gate/GateSchemaTest.kt",
+      "sha256": "7e6bb98a6594578ac0914fd3387486352cadc6a7be4ddc9c02db4f83fd99a25f",
+      "literalMethods": [
+        "shippedDefaultGateIsTheConjunctionOfBookAnkiAndPrescribedWork",
+        "admissionRequiresTheDefaultKindsAndRejectsTutorOrOpenAnkiText"
+      ],
+      "package": "dev.russiancompanion.domain.gate"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/navigation/ContinueDestinationTest.kt",
+      "sha256": "03ce925ec0baf2242d6882955c8ec5f5c33328db71d3f60a7c3c88c82148cb2f",
+      "literalMethods": [
+        "resolveContinueHandlesLessonAbsenceCompletionAndUnavailableAudio"
+      ],
+      "package": "dev.russiancompanion.domain.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/navigation/LaunchRoutingTest.kt",
+      "sha256": "2212d9a0581b4f3d20e28139ebae0cfa44da9c9680106b4789b430deb838146c",
+      "literalMethods": [
+        "closedDataRoutesToTheLocalDataProblem",
+        "incompleteOnboardingRoutesToOnboarding",
+        "completedOnboardingRoutesHome",
+        "optionalDrillsRequireAnAdmittedPackage",
+        "confirmationRequiresALessonThatHasPlanDefinitions",
+        "activeLessonHasAPlanOnlyForTheSelectedSegment",
+        "routeNamesSelectScreenSpecificSurfaces",
+        "pendingSnapshotDoesNotRouteToTheLocalDataProblem"
+      ],
+      "package": "dev.russiancompanion.domain.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/pathway/PathwaySchemaTest.kt",
+      "sha256": "522ae5e4a139cc762993e026f11a511f0817404e56a967e3fbc0a6fa281f376f",
+      "literalMethods": [
+        "pathwayAcceptsTheFullBeginnerArcAndRejectsDuplicatesOrOutOfRangeLessons",
+        "beginnerArcReleaseReadyRequiresThirtyLessonsWithRequiredPlansAndGates",
+        "planAdmissionBindsBookAndAnkiToLessonNumbersAndListenToCatalogIds",
+        "firstPrescribedPlayableKeepsCatalogOrder"
+      ],
+      "package": "dev.russiancompanion.domain.pathway"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/plan/DailyPlanRulesTest.kt",
+      "sha256": "2b14742c557c7d73e8425c6bed848caa6c34de88e1076a7abf0d8ff0bd3250a7",
+      "literalMethods": [
+        "checklistShowsRequiredWorkAndHidesTutorUntilChosen",
+        "includedTutorIsVisibleAndCompletedWorkAdvancesTheNextItem",
+        "gateSummaryUsesTheLatestRecordedDecisionOnly",
+        "activitySummaryKeepsRecordedWorkAndDropsEmptyCategories",
+        "checklistCarriesLessonNumbersAndPrescribedAudioIds"
+      ],
+      "package": "dev.russiancompanion.domain.plan"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/practice/AbPlaybackTest.kt",
+      "sha256": "f169f9ebbfbe38eb198b53acf128ed10f5be0d542a6e91eef1b22e513db0d733",
+      "literalMethods": [
+        "abOrderingSpeedsAndReplaceStayGoverned",
+        "repeatAbCompletesTwoFullLoopsAndStopsOnEachTerminationPath"
+      ],
+      "package": "dev.russiancompanion.domain.practice"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/practice/AudioSchemaTest.kt",
+      "sha256": "3e817c9bd991f529c7d74beab99b13fdc51cb71dac23bce8d65d68b25f133e17",
+      "literalMethods": [
+        "admissionRequiresCompatibleRightsAndAVerifiedOneToOneTextMatch",
+        "sharedTextMatchesAreExcludedInsteadOfDisplayedAsAPair",
+        "catalogProposalsUseTheSameAdmissionRule",
+        "disclosureStatementStaysThePackagedNoScoreCopy"
+      ],
+      "package": "dev.russiancompanion.domain.practice"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/practice/PracticeRulesTest.kt",
+      "sha256": "c089a31e95292e6dd21a8467785ab9b47e25e44eebbe4d1c676175d948950246",
+      "literalMethods": [
+        "recordingWaitsForAPlayableModelAndAGrantedMicrophone",
+        "completionRequiresSeparateReplayAndHasNoShortcut",
+        "writesRejectFabricatedCompletionAndWrongEvidence",
+        "neighborsStayInsideTheAdmittedSequence",
+        "aListenPlanCompletesOnlyWhenEveryPrescribedModelIsRecorded"
+      ],
+      "package": "dev.russiancompanion.domain.practice"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/progress/BackupAndBalanceTest.kt",
+      "sha256": "5832fa3c35492c8875945986e9024bced55f23eb31c28426d86762f0df34be75",
+      "literalMethods": [
+        "backupStatusUsesRecordingSetDigestNotCounts",
+        "storageHealthLeavesUnreadablesUnguessed",
+        "studyBalanceWindowsHonorZeroMinutesAndHideNegativeDurations"
+      ],
+      "package": "dev.russiancompanion.domain.progress"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/progress/ProgressRulesTest.kt",
+      "sha256": "2ed27627523f7908b1a12d6507a13f0798809d4530741747b776accc607dc60d",
+      "literalMethods": [
+        "emptyReviewKeepsEveryCategoryAtZero",
+        "recordedReadingAddsToThatCategoryAndTheCumulativeTotal",
+        "negativeDurationMakesTheReviewUnreadable",
+        "attestationLabelsFollowTheRecordedCategory",
+        "zeroMinuteCompletionIsRecordedActivity"
+      ],
+      "package": "dev.russiancompanion.domain.progress"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/domain/progress/ProgressSchemaTest.kt",
+      "sha256": "62309d81777d0476fc68be6d4d7bab250414c8b1bb4365eae498f926e0fc20dc",
+      "literalMethods": [
+        "activityLogsRequireATimestampNonnegativeDurationAndBookAnkiAttestation",
+        "laterLogsDoNotRewriteANamedProgressSnapshot",
+        "missingNamedLogsAndUnreadableDurationsCannotBeReproducedAsTheCapturedTotals",
+        "exportCompletionRequiresMatchingPackageCountsAndAllowsUnsuccessfulRecords"
+      ],
+      "package": "dev.russiancompanion.domain.progress"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/presentation/navigation/AttributionsUiTest.kt",
+      "sha256": "d0669573d641dc0d39dfdd90b438f0cf8593b35f63ada013a026f749aa8e9d86",
+      "literalMethods": [
+        "emptyInventoryShowsNotReadyWithoutAReleaseBlock",
+        "packagedSeedShowsInstalledInventoryAfterShareAlikeConfirmation",
+        "inventoryShowsStoredRightsAndTheUnconfirmedReleaseBlock",
+        "confirmedShareAlikeDoesNotShowTheReleaseBlock",
+        "notApplicableShareAlikeDoesNotShowTheReleaseBlock"
+      ],
+      "package": "dev.russiancompanion.presentation.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/presentation/navigation/ContinueNavigationTest.kt",
+      "sha256": "6a698134a3db5890292cfbf934b0aa60df2e6e89119cd16c59f60b0f203dadf5",
+      "literalMethods": [
+        "continueRoutesCarryTheNamedPlanOrAudioIdentity"
+      ],
+      "package": "dev.russiancompanion.presentation.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/presentation/navigation/DailyPlanUiTest.kt",
+      "sha256": "d434463002b78a2b5fe86b5a5a9f67ed1ccf2657da5c0d57b803e1dc1d1761f8",
+      "literalMethods": [
+        "homeIdentifiesRequiredWorkAndTheChecklistRecordsExternalCompletion",
+        "missingPracticeAudioStaysIncompleteWhileOtherWorkRemainsAvailable",
+        "failedChecklistSaveKeepsThePriorStateAndRetries",
+        "beginAndStartOpenTheFirstPlayablePrescribedWord",
+        "prescribedPracticeStaysDisabledWhenNoPrescribedWordIsPlayable",
+        "continueOpensTheNamedBookPlanNotTheGenericChecklist",
+        "continueOpensTheNamedAnkiPlanAfterBookCompletion"
+      ],
+      "package": "dev.russiancompanion.presentation.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/presentation/navigation/GateUiTest.kt",
+      "sha256": "919092ebea1b14cbaa303475c60aded7e6856e8c914e819de774dc56ac7f5449",
+      "literalMethods": [
+        "gateEvidenceIsSelfAttestedAndTheDecisionFollowsTheDisplayedRule"
+      ],
+      "package": "dev.russiancompanion.presentation.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/presentation/navigation/NavigationShellTest.kt",
+      "sha256": "7428296cba7514d68a7da6edd0193c18fb64cf581f73b3de32149c689588620f",
+      "literalMethods": [
+        "packagedCompletePathwayLetsOnboardingFinishAfterShareAlikeConfirmation",
+        "missingGatewayShowsTheLocalDataProblem",
+        "admittedLessonOpensHomeAndTheShellDestinations"
+      ],
+      "package": "dev.russiancompanion.presentation.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/presentation/navigation/PhysicalAcceptanceCorrectionTest.kt",
+      "sha256": "ac09fdcb4c6ceb143678a4bb6699009937213c83f60de5a5fdb40d877c549610",
+      "literalMethods": [
+        "darkThemeUsesDarkBackgroundAndReadableForegroundRoles",
+        "onboardingObservesSafeSystemInsetsAndUsesTheApplicationShell",
+        "disallowedOnboardingPhrasesAreAbsentFromTheVisibleIntroduction",
+        "allThirtyLessonRowsAreAvailableAndConfirmStaysVisible",
+        "tappingLesson12SelectsOnlyLesson12AndEnablesConfirm",
+        "confirmationPersistsOnceAndOpensHome",
+        "relaunchRestoresTheSelectedLessonAndSkipsOnboarding",
+        "persistenceFailureShowsAnErrorAndDoesNotCompleteOnboarding",
+        "noInternetPermissionAndReleaseTasksStayGated"
+      ],
+      "package": "dev.russiancompanion.presentation.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/presentation/navigation/PracticeSessionUiTest.kt",
+      "sha256": "3179a91bab5d67badd9f6bb745097fa4ef6b7b754233761fc83fb4e3987949c9",
+      "literalMethods": [
+        "sessionPlaysRecordsReplaysAndCompletesWithoutAScore",
+        "missingModelFileStaysOutOfTheSessionAndKeepsAttribution",
+        "unmatchedTextNeverEntersTheLibraryAndNoRecordingOnlySubstituteAppears",
+        "deniedMicrophoneAnnouncesAndDoesNotCapture"
+      ],
+      "package": "dev.russiancompanion.presentation.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/presentation/navigation/ProgressUiTest.kt",
+      "sha256": "30f0976e129a6df319c626360e07d9587117f22ff42a873722651906c8c130ad",
+      "literalMethods": [
+        "progressShowsAllCategoriesAndALocalExportOfTheLogs",
+        "zeroMinuteCompletionIsShownAsCompletionRatherThanTimeSpent",
+        "unreadableProgressHidesTotalsAndImbalance"
+      ],
+      "package": "dev.russiancompanion.presentation.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/presentation/navigation/SnapshotRequestGuardTest.kt",
+      "sha256": "110b1daca12167c7fcae3efe9b34f21384c58fa7b0b5e77f91e1ba13f552df28",
+      "literalMethods": [
+        "anOlderLoadCannotOverwriteANewerRequest"
+      ],
+      "package": "dev.russiancompanion.presentation.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/presentation/navigation/UiWorkCoordinatorTest.kt",
+      "sha256": "9d77a2f44e5926ed8fa04b6ea91f3dbfeb299e2f78669b8276979c0a15cafbf1",
+      "literalMethods": [
+        "overlappingSubmitIsRejectedAndWorkLeavesTheCallerThread",
+        "synchronousSubmitStillRejectsANestedCall",
+        "aPersistenceExceptionDeliversExactlyOneFailure",
+        "anExportExceptionDeliversExactlyOneFailureOffTheCallerThread"
+      ],
+      "package": "dev.russiancompanion.presentation.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/presentation/navigation/VisualReviewCaptureTest.kt",
+      "sha256": "0ae8e2d525fc0f6803970f11fdc49145b2a93e8c179d33f0fd66a9a1c4a8c375",
+      "literalMethods": [
+        "captureGalaxyS26UltraEquivalentScreens"
+      ],
+      "package": "dev.russiancompanion.presentation.navigation"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/release/LinguisticReleaseGateTest.kt",
+      "sha256": "bf6a8a1ce4879bcc737ce3807a3385c179e73a97707bd3866b8ec57b4f915a0f",
+      "literalMethods": [
+        "livePackKeepsLinguisticReviewAbsentWithoutFabricatingAcceptance",
+        "completeCurrentAcceptanceClearsTheLinguisticBlockerOnlyForTheRetainedArtifact",
+        "releaseGateAndValidatorRejectIncompleteAcceptance",
+        "retainedArtifactBytesPathAndDocumentMustMatch",
+        "packWideChainStaysBlockedWhenOnlyUnitsAreAccepted"
+      ],
+      "package": "dev.russiancompanion.release"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/release/ReleaseGateTest.kt",
+      "sha256": "a8b8e382200c2ddc956993ae4dcfb6117f8fe58f243cc58e5e19233d0147e915",
+      "literalMethods": [
+        "packagedCatalogAndCommittedEvidenceBlockPublicRelease",
+        "packagedCompletePathwayClearsPathwayIncompleteWhenShareAlikeAndEvidenceAreSupplied",
+        "aPartialOrMissingLessonStaysBlocked",
+        "onlyTheCompleteBeginnerArcClearsThePathwayIncompleteBlocker",
+        "missingOrContradictoryComplianceMetadataFailsClosed",
+        "blockedClassificationFailsClosedAfterActivation",
+        "mismatchedActivationStateFailsClosed",
+        "alteredCatalogTreatmentFailsClosed",
+        "confirmedSeedWithUnappliedProposalFailsClosed",
+        "contradictoryShareAlikeTreatmentFailsClosed",
+        "productionGateDoesNotTakeATestReportOrAPropertyOverride",
+        "unconfirmedShareAlikeBlocksAnOtherwisePreparedCatalog",
+        "confirmedShareAlikeClearsOnlyThatBlocker",
+        "notApplicableShareAlikeDoesNotBlock",
+        "notApplicableShareAlikeOnCcBySaCatalogFailsClosed",
+        "notApplicableConfirmationFailsClosedOnTheCompliancePackage",
+        "retainedStateWithoutAFileStaysMissing",
+        "evidenceOutsideTheManifestDirectoryIsRejected",
+        "aNonemptyTextFileDoesNotSatisfyRetainedEvidence",
+        "ownerDecisionCannotClearReleaseWithoutEveryMandatoryProcedure",
+        "deviceProceduresRequireANamedDeviceAndMatchingCandidateIdentity",
+        "anUndocumentedBooleanDoesNotMarkEvidenceRetained",
+        "absentOrCorruptContentFailsClosed",
+        "aTutorOnlyGateAndAPartialPlanStayBlocked"
+      ],
+      "package": "dev.russiancompanion.release"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/release/ReleaseOutputTasksTest.kt",
+      "sha256": "57367e496f9a2665258d9d228ff4c1acf99360670bdc4373ace1b9507374755a",
+      "literalMethods": [
+        "apkAabPublishAndVariantReleaseTasksAreGated",
+        "debugTestsAndIntermediateTasksStayUngated",
+        "gradleAttachesTheSameMatcherToReleaseOutputs"
+      ],
+      "package": "dev.russiancompanion.release"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/release/ReleaseSourceDigestTest.kt",
+      "sha256": "e4c1dd9ac6403d4255233b32737c2c45e457352b498cc24a4871207fab65e762",
+      "literalMethods": [
+        "committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+        "changingReleaseInputsChangesTheDigestAndLeavesEvidenceExcluded",
+        "changingAnAcceptanceProcedureInvalidatesPriorEvidence",
+        "retainedEvidenceIsRejectedAfterAKotlinChange",
+        "retainedEvidenceIsRejectedAfterAResourceChange",
+        "retainedEvidenceIsRejectedAfterACatalogChange",
+        "retainedEvidenceIsRejectedAfterAnAudioChange",
+        "retainedEvidenceIsRejectedAfterAGradleChange",
+        "retainedEvidenceIsRejectedAfterAVersionIdentityChange",
+        "mismatchedCandidateCommitRejectsRetainedEvidence",
+        "mismatchedApkHashRejectsRetainedEvidence",
+        "aNullArtifactIdentityCannotApproveRelease",
+        "failedFrozenV110CandidateCannotAuthorizeV111",
+        "anUnfrozenCandidateCannotApproveRelease"
+      ],
+      "package": "dev.russiancompanion.release"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Aud44CorrectionTest.kt",
+      "sha256": "c21d859f19016a5c0149c981320bf63cce27fdc5e1523c2bdd84cf7f699cbfa0",
+      "literalMethods": [
+        "threeAdverbGlossPairsCannotClearTheParadigm",
+        "faultySuffixFormulationIsNotAnApprovedRussianRule",
+        "threeClockPhrasesCannotClearProductiveClockTime",
+        "calendarDateCompletionCannotConcealTheClockGap",
+        "unit17AdvancementNamesOnlyUnresolvedSourceCapabilities",
+        "unrelatedEvidenceCannotImpersonateProductiveClockTime",
+        "currentQuestionImpersonationUsesOnlyTheRealPinnedPacketWithoutInventingAHost",
+        "unit17RecordEditsLeaveLaterUnitIdentitiesAndDigestsUnchanged",
+        "unit17SourceAdmissionDoesNotReachOtherUnits",
+        "sharedLicenseNoticeDoesNotAnnounceUnitReadiness",
+        "reviewsMappingsAndReleaseStayUnsigned"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Aud53CorrectionTest.kt",
+      "sha256": "8ca8406a94078200b870d0dfc2f17e53885d233bb9fc68aab69963372a02395c",
+      "literalMethods": [
+        "livePackKeepsTheCorrectedClaimsAndRejectsEmbeddedMedia",
+        "falseSelfPairUnsupportedSwapAndCoOccurrenceFail",
+        "embeddedMediaCannotEnterGovernedReadyRussianSpans",
+        "semanticDuplicatesDoNotSatisfyDistinctCheckMinimums",
+        "exactPairMemorizationCannotClearAProductiveCapability",
+        "headwordSelectionCannotClearParticipleStress",
+        "fieldLabelRecallCannotClearDictionaryUse",
+        "greetingRecognitionCannotClearLetterWriting",
+        "wrongIdentityAndWorkflowFieldsFailClosed",
+        "governanceStaysUnapproved"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Aud57CorrectionTest.kt",
+      "sha256": "d613febd78e9242b3588aab29cdccb4d91d96637b15bc78c7069ad83ea3234ca",
+      "literalMethods": [
+        "governedEntryAndCompleteAddressResolve",
+        "deletingTheDisplayedEntryLeavesDictionaryUseUnresolved",
+        "isolatedHeadwordTranslationAndLookupPrefixCannotClearDictionaryUse",
+        "partOfSpeechLabelAloneCannotClearDictionaryUse",
+        "formsRowAloneCannotClearDictionaryUse",
+        "swappingSenseHeadwordOrApplicationAnswerFailsClosed",
+        "capstoneReadingCannotClearDictionaryUse",
+        "incompleteAddressCannotMasqueradeAsTheGovernedFormat",
+        "optionalComponentsAreNotUniversallyMandatory",
+        "letterWritingCorrespondenceGreetingAndSampleLineCannotClearPostalAddress",
+        "componentRecognitionAndWrongOrderCannotClearPostalAddress"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BackupImportCoordinatorLimitsTest.kt",
+      "sha256": "a2248a1426200660b43d351d01bbd8d0d84e6d508b7a3746eea2f40ef1cda0c1",
+      "literalMethods": [
+        "oversizedImportPreservesLearnerCleansStagingAndAllowsTheNextValidPreview",
+        "cancellationDuringProviderReadStopsImportWithoutReplacingTheLearner"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BackupImportLimitsTest.kt",
+      "sha256": "a623da79d427989df23b42c03bdccacdaeca2fd2b7760b8bf3c1073c37858082",
+      "literalMethods": [
+        "exactLimitsAcceptCompatibleArchiveAndRecordingBytes",
+        "unknownLengthInputStopsAtOneExcessByteAndCleansOnlyOwnedFiles",
+        "entryCountLimitRejectsBeforeBuildingAnUnboundedNameCollection",
+        "manifestExpansionIsBoundedEvenWhenCentralDirectorySizeLies",
+        "learnerExpansionIsBoundedEvenWhenBothDeclaredSizesLie",
+        "recordingExpansionIsBoundedWhenCompressedSizeMetadataLies",
+        "aggregateExpansionRejectsTheSecondRecordingAndRemovesEarlierStaging",
+        "cancellationAfterInputReadRejectsBeforeStagingData",
+        "cancellationDuringRecordingExpansionCleansPartialRecording",
+        "existingStagingInputsAreNeverOverwrittenOrDeleted",
+        "defaultLimitsAcceptAllSixtyFourRetainedArchivesWithoutRewritingThem",
+        "directoryAllocationLimitRejectsBeforeOpeningTheZip",
+        "forgedDirectoryCountIsRejectedBeforeZipMetadataAllocation",
+        "smallZip64ArchiveRemainsCompatibleWithDefaultPolicy",
+        "writerRefusesLearnerAndRecordingSizesOutsideTheImportPolicy",
+        "writerStopsBeforeItsCompressedOutputExceedsTheImportInputCap",
+        "writerAndReaderAcceptTheSameExactBoundaries",
+        "conflictingDeclaredPathsRemainRejectedAndStagingIsCleaned",
+        "zip64CannotHideAnOversizedPrimaryDirectoryDeclaration",
+        "conflictingZip64AndPrimaryCountsAreRejectedRatherThanChoosingAHeader"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BackupLicenseTest.kt",
+      "sha256": "a92f714f1f59abd29be56b0b96da31714612985c80c188a650b14c555a02268f",
+      "literalMethods": [
+        "backupRoundTripRestoresGovernedRecordsWithoutChangingTheLiveCopy",
+        "recordingBytesRoundTripAndBackupDoesNotClaimAFailedWrite",
+        "malformedTruncatedUnsupportedAndTamperedPackagesDoNotChangeData",
+        "failedReplacementKeepsTheOriginalDatabase",
+        "failedRecordingPublishRestoresDatabaseRowsAndRecordingBytes",
+        "failedJournalWriteRestoresTheOriginalRecordingSnapshot",
+        "failedSnapshotRestoreKeepsRecoveryMaterialsUntilTheNextStoreOpen",
+        "failedJournalWriteKeepsTheSnapshotWhenImmediateRollbackCannotFinish",
+        "restoreRejectsARecordingForAnUnknownAudioModel",
+        "backupScreenRejectsABadFileAndConfirmsReplacementOnce",
+        "cancelledBackupAndDeclinedRestoreLeaveLiveDataUnchanged",
+        "repeatedBackupTapsDoNotStartASecondOperation",
+        "missingAttributionAndMissingNoticeFailClosed",
+        "attributionsScreenShowsPackagedNoticeTextAndReturns",
+        "recreatedActivityKeepsOneRestoreOutcome"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BackupSnapshotCorrectionTest.kt",
+      "sha256": "53b6af6d14b22595c8a3bff8861edaeb765e6f8cff2f3138714290e731c70b13",
+      "literalMethods": [
+        "concurrentLearnerWritesCannotBeClaimedAsPartOfTheWrittenArchive"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BatchARemainingSourceIntakeTest.kt",
+      "sha256": "8210817be48e9edf43ec4791414a2172a64c98a0bfb1616df0336a3df4889633",
+      "literalMethods": [
+        "admittedSpansStayBoundAndBroaderClaimsStayUnresolved",
+        "wrongRevisionChangedHashWrongSpanAndWrongPageFailClosed",
+        "correctSpanOnTheWrongUnitObjectiveOrClaimFailsClosed",
+        "keywordOnlyMutableUrlAndForeignLicenseFailClosed",
+        "boundedEvidenceCannotClearTheBroaderClockOrAdverbClaims",
+        "invarianceChecksHaveOneDashColonAnswer",
+        "substitutingAnInvarianceDistractorAsTheKeyFails",
+        "invarianceCoOccurrenceDoesNotEstablishTheDashColonRelationship",
+        "deletingTheDashColonRelationshipWordingFailsClosed",
+        "boundedInvarianceEvidenceCannotClearAdverbParadigm",
+        "sourceCoOccurrenceWithoutAGovernedRelationshipFailsClosed"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BatchAUnits71620Test.kt",
+      "sha256": "f09056d2f78c75367a9fe2e8d2485bfd4c25bf0bd3a1c949948c3c818c25f114",
+      "literalMethods": [
+        "wikipediaLicenseRouteIsNotTheWikibooksSnapshot",
+        "exactSpanIdentityRejectsKeywordAndCrossClaimSubstitution",
+        "partialUnitsStayBlockedAndClosedChainsCanBeReviewPending",
+        "admittedCapabilitiesRejectForgeryCrossBindingAndWrongSpans",
+        "batchAExplanationsNameTheKeyedRelationshipAndRejectASwap",
+        "currentBatchAExplainsEveryRetainedAndExpandedConstructAndRejectsWrongKeys",
+        "generatedRussianAndInternetStayClosed"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BatchBUnits2125Test.kt",
+      "sha256": "02ae506a1999f6c9a5d5ee6decd2736cae44b634094e09c132c33d22b0df0d59",
+      "literalMethods": [
+        "admittedCapabilitiesMatchFrozenIdentityAndLeaveUnresolvedClaimsClosed",
+        "governedPairsRejectCoOccurrenceAndASubstitutedGloss",
+        "reflexiveSentencePairRejectsIsolatedTokenAndWifeCitation",
+        "retainedCitationDonorStaysExactWhileIndependentObjectTransferKeepsItsRealContext",
+        "independentChecksRejectSourceLayoutRecall",
+        "wrongSourceRevisionUnitAndObjectiveFail",
+        "boundedEvidenceCannotClearUnresolvedCapabilities",
+        "completionOverPeriodClearsOnlyForACompleteMatchingAdmission",
+        "wordOrderContrastDoesNotClearNegationScope",
+        "classificationChecksCannotClearProductiveDiminutive"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+      "sha256": "37d5bd5b1971359f68c96c6f67dc731a7174da46944a803a3e65ecbda3db593f",
+      "literalMethods": [
+        "retainedPagesAreExcludedAndDoNotClearTheFiveCapabilities",
+        "identityMutationsSubstitutionsAndRelabelingFailClosed",
+        "missingChainAndReadinessFlipKeepAdvancementBlocked",
+        "unit17MessagesFollowTheUnresolvedCapabilitySet",
+        "digestsGovernanceAndLaterUnitsStayUnchanged"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CompleteRuleCorrectionTest.kt",
+      "sha256": "c9689dcaec87f7d56a18899bcfc36fdcd6803224d37f2f81b88aceb746a0fb8c",
+      "literalMethods": [
+        "completeChoicesExplainTheCasesAndAllTeachingPrecedesPractice",
+        "availabilityPlayerShowsCompleteRulesWithItsFullRussianCue",
+        "possessionPlayerShowsCompleteRulesWithItsFullRussianCue",
+        "coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext",
+        "historicalFragmentAttemptIsRetainedButCannotCreditTheCompleteRule"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CompletionEvidenceCorrectionTest.kt",
+      "sha256": "7bd9c45c3907730b5eae1702f2688f4042f46344db0605ed1a5e7bcece8739bb",
+      "literalMethods": [
+        "changedContentCannotKeepAnOldCompletionOrUnlockItsSuccessor",
+        "hashCorrectRestoredUnsupportedCompletionIsHistoricalAndCannotUnlock",
+        "changedEvidenceIsRecomputedAndLaterPlacementDoesNotUnlockFutureUnits",
+        "unboundLegacyViewCannotTurnClaimedCompletionIntoCurrentEvidence"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/ContentAuditCheckpointRepairTest.kt",
+      "sha256": "62216bc4b7477445084afd79cae4d8ea860ecfccdf9c080cd0ad1cf61f998d57",
+      "literalMethods": [
+        "imperfectiveChecksAssessTheirOwnAspectAndASeparateSubjectContrast",
+        "optionalStressHasItsOwnProvenanceAndActualResponseShape",
+        "correctedAdmissionRejectsHashScopeMissingFeatureAndClonedCheck",
+        "researchAdmissionCannotOmitItsSynthesisEvidence"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/ContentAuditCorrectionTest.kt",
+      "sha256": "a10294d7bb3c7375bf184e73cc1c130cebc648e1ed1f34df79ac95b3afed410c",
+      "literalMethods": [
+        "possessiveFormsAreAvailableBeforeTheGuidedAgreementChoice",
+        "purposeRegisterExplanationPrecedesTheOrdinaryPurposeChoice",
+        "imperfectiveRelativeTimeExplanationPrecedesTheSentenceChoice",
+        "perfectiveRelativeTimeExplanationPrecedesTheFutureSentenceChoice",
+        "reorderedSessionsRejectResumeIdentityBoundToThePreviousPosition",
+        "accusativeDeclensionExplanationPrecedesTheNounChoice",
+        "adjectivePluralFormPrecedesTheSpellingChoice",
+        "nounPluralFormAndSevenLetterRulePrecedeTheChoice",
+        "aspectCounterpartExplanationPrecedesThePartnerChoice",
+        "instrumentalNounExplanationPrecedesTheCaseChoice",
+        "instrumentalAdjectiveExplanationPrecedesTheCaseChoice",
+        "possessiveInstructionLabelsFormsAndWorksTheRetainedFeminineCaseChange",
+        "possessiveFeedbackAndRemediationExplainTheSameGenderNumberAndCaseRule",
+        "possessiveWorkedExplanationRecordsStayPendingAndRejectAChangedHash",
+        "spellingInstructionExplainsFormsBeforePracticeAndWorksTheAccusative",
+        "spellingQuestionsNameTheActualFormEvidenceAndRemediationRetainsAllTeaching",
+        "spellingExplanationRecordsResolveRetainedFormsAndStayPending",
+        "unitEightTeachingWorksTheNounPluralAndSeparatesOtherPatterns",
+        "unitEightChecksAssessNominativeFormsAndRetainCompleteRemediation",
+        "unitEightExplanationCoverageStaysPendingAndRejectsTamperedHashes",
+        "unitTwelveAspectTeachingLabelsPairsAndAvoidsAnUnfinishedActionRule",
+        "unitTwelveAspectFeedbackExplainsBothOptionsAndRemediationRetainsThePairs",
+        "unitTwelveAspectCoverageResolvesOriginalPairsAndRejectsTamperedHashes",
+        "negativeAbsenceCheckDoesNotInferGenitiveFromTheMeaningOrSurfaceForm",
+        "courtesyRegisterCorrectionIsTaughtBeforePracticeAndSurvivesRemediation",
+        "unitElevenChecksPastAgreementBeforeAspectIntroductionWithoutLoweringItsGate",
+        "wrongAnswerRoutesRetainTheCorrectedObjectiveExplanation",
+        "auditedCaseContrastsExplainAnimacyAndPreserveFeminineAgreement",
+        "packValidatesAndRejectsTheAuditedFalseKeys",
+        "gatingChangeInvalidatesUnitAndPackIdentitiesOnly",
+        "unit27AdvancesWithoutOptionalPresentPassive"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativePolicyHistoryBaselineTest.kt",
+      "sha256": "7aa29030791f504c6c6cb82448506ba6511f686cd447b771ef0033605eda82b2",
+      "literalMethods": [
+        "genuineSchemaThreeLifecycleRestoresReopensAndContinuesWithoutErasingAcceptedSnapshots",
+        "genuinePredecessorSchemaOneLifecycleRestoresReopensAndContinuesWithoutRelabelling"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewGateTest.kt",
+      "sha256": "4a19f61d9c9a9745158811d7114541379e22c17f27a8ad289f833bcd86219ffe",
+      "literalMethods": [
+        "completeOrdinaryWorkCannotAdvanceUntilBothAssignedObjectivesAreReviewed",
+        "optionalAndPrescribedReplaysCannotCompleteReviewOrBypassTransactionalAdvance",
+        "completedHistoryKeepsItsAcceptedAnswerSnapshotAndTransactionFailureRollsBack",
+        "migratedVersionTenKeepsRawHistoryButChangedGenderTeachingRejectsOldLessonCredit",
+        "versionThreeBackupPreservesCompletionSnapshotAndRejectsForgedActivationLinks",
+        "actualContinueReviewAndGateUiRequireBothChoicesAndShowTargetedFeedback",
+        "placementOnlyUiOffersRealEarlierTeachingAndNoEmptyReviewCompletion",
+        "asynchronousReviewWriteCannotCrossActualLearnerReplacementAndBackRemainsResponsive"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewSelectionTest.kt",
+      "sha256": "9f59fdb12c39631fcece6ad0a9f13132e25ad1592d06501a56f5d3c2d0e675f2",
+      "literalMethods": [
+        "newestCurrentMissWinsAndLaterCorrectAnswerResolvesIt",
+        "leastRecentAndUnknownHistoryUseAuthoredCandidateOrderRatherThanIdentifiers",
+        "optionalGuidedStaleUnorderedForgedAndWrongContextRowsDoNotRankCandidates",
+        "genuineSchemaOneHistoryKeepsItsExactIdentityAndAcceptedCompletionSnapshot",
+        "newAssignmentIsRecentAwareImmutableAndRequiresFreshAnswersAcrossBackupAndEpoch",
+        "unknownAssignmentVersionsFailClosedAndUntaughtOwnersStillCannotBeSelected"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewStorageTest.kt",
+      "sha256": "084d0431c26fa7082e770dc2e643d14ebcb2397cfd3f401a27eea7b85fcea341",
+      "literalMethods": [
+        "placementAndBareLegacyCorrectIdsCannotCreateAssignments",
+        "immutableSlotsSpanTwoTaughtObjectivesAndRepeatedOpenDoesNotResample",
+        "prescribedAndOptionalAnswersNeverSupplyReviewOrGainExtraPrescribedCredit",
+        "latestAcceptedAnswerWinsAndDuplicateTapsDoNotAllocateExtraOrder",
+        "staleEpochWrongAssignmentInvalidSlotAndOutOfOptionsAreRejectedWithoutWrites",
+        "changedKeyTeachingAndOwnerAvailabilityRejectCreditButUnrelatedUnitsDoNot",
+        "offlineCloseAndReopenRetainsExactAssignmentAnswersAndCurrentCompletion",
+        "newBackupRoundtripReplacesReviewHistoryAndRestoreFaultRollsItBack",
+        "schemaOneBackupRestoresNoSyntheticReviewAndClearsReplacedLearnerHistory",
+        "forgedLinksOrdersRolesAndAssignmentHashCannotReplaceAnyLearnerRows",
+        "realVersionNineDatabaseMigratesWithoutRewritingHistoricalRowsOrInventingCredit",
+        "legacyDocumentWithoutNewFieldsDecodesWithNoSyntheticReviewRows",
+        "malformedRolePreBoundaryAndWrongAssignmentDigestNeverSupplyCompletion",
+        "genericKernelPreservesTheOriginalUnit3PolicyAndAssignmentIdentity",
+        "undeclaredTargetsAndFlagOnlyLaterGatesCannotCreateHistory",
+        "typedPoliciesRefuseEmptyRepeatedAndAmbiguousCandidatePools",
+        "disabledOrWrongPolicyRejectsOldAssignmentsAndAnswersWithoutMutation",
+        "completionMetadataCannotLinkAReviewToAnotherUnitDuringRestore"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/CurrentPhase2TupleMutationTest.kt",
+      "sha256": "a773f621b7101a4ce01a08cc687c044d5a65657aaf416ae67eef8f2352a5eb75",
+      "literalMethods": [
+        "unchangedCurrentPackIsAccepted",
+        "fullValidatorRejectsSwappedCompletionAnswersWithFrozenNarrative",
+        "fullValidatorRejectsSwappedNameAnswersEvenWhenAllMutableApplicationsAgree",
+        "fullValidatorRejectsSwappedMannerLabelsWithFrozenNarrative"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/FragmentGlossTeachingTest.kt",
+      "sha256": "4fd990315e7c04c40222e1a0dc92e6bd5bed1847a0bdd3bbc8afe2a741052170",
+      "literalMethods": [
+        "threeTeachingBodiesDescribePhrasesWithoutAbsentPredicates",
+        "bothRepairsRestoreCompleteTeachingAndAllSevenExamples",
+        "everyNativeItemExampleHistoricalRecordAndUnrelatedUnitRemainsExact",
+        "oldTeachingCreditAndResumeStayStoredButAreStaleUntilFreshWork",
+        "backupAndNamedDatabaseReopenPreserveOldRowsAndFreshResumeIdentity"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/FragmentGlossUiTest.kt",
+      "sha256": "d55d3c8f0f08b4aaff72da0e0afd449ab50317e56da8fa5301c7d4ff13b8ca5e",
+      "literalMethods": [
+        "unit7TeachingDisplaysBoundedPhraseMeaningAndUnchangedNote",
+        "unit10FirstTeachingDisplaysTwoPhrasesWithoutInventedPredicates",
+        "unit10SecondTeachingExplainsTheSourceContextBoundary",
+        "unit7WrongAnswerRepairsAllExamplesAndReturnsToItsSavedSelection",
+        "unit10WrongAnswerRepairsAllExamplesAndReturnsToItsSavedSelection"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/FullAuditCorrectionTest.kt",
+      "sha256": "783f65a3bf5454ed2274056cea30c4608890d2bfdfa5d1c31148662eb9e663bc",
+      "literalMethods": [
+        "f01_advancementSavesTheNextPositionWithItsDigestAndContinueSurvivesRestart",
+        "f01_unverifiedPositionDoesNotMutateTheProfile",
+        "f02_correctlyHashedInvalidProfilesAreRejectedBeforeMutation",
+        "f04_productionInstallAndReleaseValidationStayClosed",
+        "f05_consecutiveDuplicatesAreSuppressedAndTheFinalSelectionSurvivesReload",
+        "f06_legacyStepRowsDoNotCountAsCurrentCompletion",
+        "f07_stepIdentityCoversDisplayedDependenciesAndFailsClosed",
+        "f08_and_f12_restoreOutcomesResetTheCoordinatorAndCleanStaging",
+        "f09_savedNotesAndTutorQuestionsRemainReadableAfterRestart",
+        "f10_repeatedTapsDuringADelayedWriteLockTheItem",
+        "f11_delayedLearnerReadLeavesTheMainThreadFree",
+        "f11_completionValidationReadsAndIdentifiesOffTheMainThread"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/FullSynthesisTupleCorrectionTest.kt",
+      "sha256": "97d6f7d941448c70302d1350fec76d2a080f684397b2c61ecbbd2d6771cd75bf",
+      "literalMethods": [
+        "fullValidatorRejectsSwappedReadingAnswersEvenWhenAllMutableApplicationsAgree",
+        "fullValidatorRejectsSwappedNameAnswersEvenWhenAllMutableApplicationsAgree",
+        "fullValidatorRejectsSwappedDictionaryAnswersEvenWhenAllMutableApplicationsAgree"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/HistoricalTeachingFixtureScopeTest.kt",
+      "sha256": "955b051169cdd9c571bdec8f9c670eefa2bb9b86a4fb31e546893236caf792a9",
+      "literalMethods": [
+        "currentUnit14And15RetainTheirExactCorrectionWhileTheWholePackHasAdvanced"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/HostActivityLifecycleTest.kt",
+      "sha256": "8616449c4c6c18db58dfd67cabaf5b321d07a5ad21235b0c703b27d5f5691b35",
+      "literalMethods": [
+        "failedLearnerReadRetriesThenPersistsAnAnswerOnTheReopenedStore",
+        "retryDropsAFailedReadFromTheReplacedStore",
+        "recreatedActivityKeepsTheDraftAnswerAndResumePosition",
+        "recreatedActivityDuringADelayedWriteKeepsOneOutcome"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/IndeclinableCorrectionTest.kt",
+      "sha256": "26dc556ee71d43a89d76ff28ee4762e627bcf79b94e02c554cce6978c94d507f",
+      "literalMethods": [
+        "choicesTeachLanguageBehaviorAndRemediationRestoresAllInstruction",
+        "lessonDisplaysBehaviorChoicesAndTheRequiredWordCue",
+        "forgedBehaviorKeyCannotOverrideTheFrozenLexicalClassification",
+        "historicalFlagAttemptRemainsStoredButDoesNotSupplyCurrentCredit"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/LabCueCorrectionTest.kt",
+      "sha256": "ea21fdbf6b3394648771f258c2deb0151f05256d1268f00d3adec20f8e0968b1",
+      "literalMethods": [
+        "readingShowsTheGovernedStressCue",
+        "vocabularyShowsTheGovernedWordCue",
+        "grammarShowsTheCompleteSentenceCue",
+        "unsupportedCompletionIsVisibleAsHistoryWithoutCurrentCredit"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/LabExplanationCorrectionTest.kt",
+      "sha256": "9537cc5098eb65416a9c79196990b3f3dc763b3d67a67d38f7a328564ec69e92",
+      "literalMethods": [
+        "wrongGrammarAnswerCanReviewDeclaredTeachingWithoutWritingProgress",
+        "correctVocabularyAnswerCanReviewTeachingAndKeepItsSavedSelection",
+        "crossUnitDeclarationsCannotRevealFutureTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/MultiPoolReviewSelectionTest.kt",
+      "sha256": "93d3024d147dcee95c83cefff8474c62c994d2d689065eb61da1d1dfc5b35703",
+      "literalMethods": [
+        "genuineSchemaOneAndTwoHistoriesKeepExactAssignmentsAndAcceptedCompletionSnapshots",
+        "unit5ChoosesRecentStudentMissAndLaterCorrectResolvesItWithoutUsingClockOrOptionalRows",
+        "unit6CanSelectEveryAuthoredCandidateAndResolveMissesIncludingOppositeKeyContrasts",
+        "newAssignmentsStayImmutableAndMixedVersionBackupRestartAndEpochPreserveFreshCredit",
+        "versionScopesUntaughtOwnersAndChangedSourceCannotAcquireReviewCreditOrRewriteHistory",
+        "nonFirstStudentUiRepairsFullRoleTeachingAndStillRequiresFreshAssignedAnswers",
+        "nonFirstWindowUiRepairsFullBehaviorTeachingAndStillRequiresOppositeKeyFreshAnswer"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/OptionPresentationTest.kt",
+      "sha256": "eaa38fd1abebdb3c8191ed3515ec5086270e1940f96a380b8c2a0b9a2e10246b",
+      "literalMethods": [
+        "currentCorpusPreservesEveryOptionAndDispersesCorrectPositionsInAllThreeRoutes",
+        "permutationIgnoresAnswerFeedbackAndAuthoredOrderingAndHasAFixedVersionVector",
+        "lessonLabAndReviewContextsAreStableButReviewAssignmentIdsVaryPresentation",
+        "allRetainedAssignmentsKeepExactLegacyOrderAndAssignmentHash",
+        "newRulePreservesExactScoringAndOrderThroughBackupAndNamedDatabaseReopen"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/OptionPresentationUiTest.kt",
+      "sha256": "7ab3b7e531548fa2a49aeb6ae91e755ad0349ad10882f1926b333df82121aaad",
+      "literalMethods": [
+        "lessonRendersPermutedOrderAndKeepsValueSelectionAfterStateRestore",
+        "labRetainsDisplayedOrderAndSelectionAcrossStateRestoreAndGradesSubmittedValues",
+        "newReviewRendersVersionedOrderAndRecordsClickedOptionValues",
+        "existingLegacyReviewKeepsAuthoredOrderAndClickedOptionMeaning"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/OptionalGlossRemediationTest.kt",
+      "sha256": "44a40225b421228971922784ad0af13b7156465215481f66cd5366de73658ff0",
+      "literalMethods": [
+        "optionalMeaningExplanationReturnsToItsSelectionWithoutGrantingCaseRoleCredit"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Phase2BoundedClaimsTest.kt",
+      "sha256": "af2a83a31a83c8c70aa05039f3c6303769fd8316b03c2936ec0903557796d6ba",
+      "literalMethods": [
+        "liveClaimsResolveOnlyTheBoundedSynthesis",
+        "identitySpanAndRelabelMutationsStayClosed",
+        "duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim",
+        "sashkaStaysDismissiveAndNameReadingsCannotBeSwapped"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Phase3BoundedClaimsTest.kt",
+      "sha256": "60101f27ae48892bef339d751d7ecc9f169e96a487db09c2617b66e3d08dfc30",
+      "literalMethods": [
+        "liveClaimsResolveOnlyTheBoundedSynthesis",
+        "identitySpanAndRelabelMutationsStayClosed",
+        "pairedClaimsAndNeighboringEvidenceStayIndependent",
+        "duplicateChecksMissingChainAndLayoutRecallDoNotClearTheClaim"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/PracticeRetrievalDigestTest.kt",
+      "sha256": "812f50ce15dada3e33d294fe001e82932f6777c2100dab6c9c63165d0b0b26a9",
+      "literalMethods": [
+        "alphabetPracticeScoresFeedbackWithoutPrescribedCreditOrDuplicateRows",
+        "unansweredPracticeAndBlockedLabsDoNotRecordCompletion",
+        "legacyAttemptLeavesContinueDisabledAndCreatesNoCompletedStep",
+        "mismatchedDigestAttemptLeavesContinueDisabledAndCreatesNoCompletedStep",
+        "otherStepAttemptLeavesContinueDisabledAndCreatesNoCompletedStep",
+        "governedAnswerEnablesContinueAfterAFreshLoadAndSurvivesRefresh",
+        "twoGovernedAnswersOnOneStepBothRemainAfterTheSecondWrite",
+        "unverifiedAttemptsStayExcludedAfterReload",
+        "optionalPracticeAcceptsALaterAnswerAndSuppressesTheSameSelection",
+        "checkStepDoesNotCompleteUntilItIsAnswered",
+        "savedWorkResumesABookmarkWithoutANewAttemptAndHidesCompletedChecks",
+        "emptyAndUnverifiedSavedPositionsStayClosed",
+        "legacyAndMismatchedAttemptsDoNotGrantCreditAndBackupKeepsTheOriginalDigest",
+        "migrationMarksExistingAttemptIdentityUnrecoverable",
+        "readingVocabularyGrammarAndMixedStayOptionalAndPrerequisiteFiltered",
+        "prescribedCheckScoresRemediationAndCompletesOnce",
+        "mismatchedResumeDigestStaysClosed"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/QuestionWordCueCorrectionTest.kt",
+      "sha256": "ec5e78bc4c403c9210f587707b2f99a2c05a4690e6cf90b6d0d9f07c58a9764a",
+      "literalMethods": [
+        "questionWordLessonAsksFromEnglishPurposeWithoutPrintingTheAnswerAsACue",
+        "displayRoleIsDigestBoundAndCannotBeUsedToHideARequiredCue",
+        "answerExposingHistoricalAttemptsAndStepCompletionDoNotSupplyCurrentCredit"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/ReauditCorrectionTest.kt",
+      "sha256": "23c0e603ffbdc34cb95bcc233b048f3159197fb6d95fec76e7b3d8e0d1b16a85",
+      "literalMethods": [
+        "r01_delayedProfileSaveAndCompletionCannotOverwriteRestore",
+        "r01_openReplacementRejectsQueuedWritesBeforeMutation",
+        "r02_laterUnitInstallationUsesTheFullValidator",
+        "r03_acceptanceProceduresMatchNavigationAndStayUnexecuted",
+        "r04_realCancellationBeforeDuringAndAfterReplacement",
+        "r05_delayedReconstructionCannotReplaceANewerOrRestoredSelection",
+        "r06_previewFailuresResetTheCoordinatorAndRemoveStaging",
+        "r07_appearanceFailureTeardownAndOrphanSweep",
+        "r08_stepIdentityIsUnambiguousAndBindsDisplayedSessionContext",
+        "r09_acceptedWriteOrderIgnoresTheClockAndSurvivesReopenBackupAndMigration",
+        "r10_attemptPreparationAndCourseSnapshotLeaveTheMainThread"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/ReferenceDetailSearchTest.kt",
+      "sha256": "1f37d6cf30ca5721c2459b9a021c2c2d7f584af7d318df7a62735f1ada4e10c9",
+      "literalMethods": [
+        "shippedLetterNameIsSearchableInsideTheExplanation",
+        "explicitAliasesMatchRegardlessOfLetterCase",
+        "blankQueriesAndMissingResultsPreserveTheExistingContract",
+        "searchingDetailsDoesNotExposeUnreachedNoticesOrReclassifyThem",
+        "largeDetailLookupPreservesEntriesAndResultOrder"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/ReferenceDetailSearchUiTest.kt",
+      "sha256": "2b78dc7f943caf39e0b5ee59ee9d29922f49ad2102b8c6f6c4cb8a464d3a75c3",
+      "literalMethods": [
+        "russianDetailQueryOpensTheOriginalExplanationAtLargeText"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/ReferenceNoticeCorrectionTest.kt",
+      "sha256": "359e5eed1f574ec8a6061127cc3dfe78c255ac2ee0152cff36d208f864954e56",
+      "literalMethods": [
+        "currentBoundedAvailabilityDoesNotContradictItsOwnSourceNotice"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/RemainingReauditCorrectionTest.kt",
+      "sha256": "ffae3a3da7cad2eb0a2d3b102289a9e8a9d5d33b10ca073663a224289a6a8303",
+      "literalMethods": [
+        "importedAcceptedOrderRejectsMalformedHashesAndContinuesAfterReopen",
+        "stagingSurvivesAnotherCoordinatorAndViewModelTeardownDuringReplacement",
+        "recoveryMessagesMatchJournalPhaseAndReopenedRecords",
+        "staleOptionalAnswerDoesNotSuppressTheSameCurrentOption",
+        "coldOnboardingAndSavedWorkIdentityLeaveTheMainThread",
+        "savedWorkIdentityLeavesTheMainThreadAndRetrievesCreatedRecords",
+        "wrongUnitSameOptionDoesNotSuppressAfterHashedRestoreAndReopen",
+        "duplicateAcknowledgementRequiresTheCapturedEpoch",
+        "stagingLeaseSurvivesQueuedBoundaryAndDirectorySweep",
+        "practiceDigestsRunOffMainAndReuseWarmUnitIdentities",
+        "practiceSnapshotDiscardsAStaleGeneration",
+        "identityCacheReclaimsDeadPacksWithoutRevisitingBuckets",
+        "explicitPairsMatchTheRegexOnCounterexamplesAndRandomDashText",
+        "unsupportedDashPairsStayRejected",
+        "failedStagingParentClosesTheStreamAndAllowsRetry",
+        "failedStagingAcquisitionReleasesTheLeaseAndClosesTheStream",
+        "baselineSavedRecordsSurviveRestoreAndReopen",
+        "twoOwnersOfOneIncomingPathKeepFilesUntilTheLastRelease",
+        "queuedCleanupDoesNotDeleteAPathReacquiredWhileTheWorkerIsBlocked",
+        "concurrentSweepCancellationAndTeardownKeepTheRemainingOwner",
+        "explicitPairsKeepCodePointCapturesAndBoundedScans",
+        "explicitPairsMatchTheRegexAndStayBoundedOnARepresentativeText"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/RepeatedTaskCreditTest.kt",
+      "sha256": "0e08901cf54e2b20c312beb446dcd0e50e8396ea707303e71eec32fca88fc73b",
+      "literalMethods": [
+        "repeatedTaskIdsNeedTheirOwnAttemptsAndOtherRequiredEvidence",
+        "wrongResponsesRemainSeparateAndSurviveBackupResumeAndReopen",
+        "retainedRecognitionChainsRestoreAllTeachingAndKeepOtherRequiredChecks"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/RepeatedTaskRepairUiTest.kt",
+      "sha256": "32139287147332dbf1dceeba84dd4fb6433177fc307d860857e5f061226faddf",
+      "literalMethods": [
+        "repeatedDuringEventCheckStillRequiresItsOwnFreshAnswerAfterRepair",
+        "reorderedConcordOptionsStillRequireFreshIndependentCreditAfterRepair"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/RequiredPathProgressTest.kt",
+      "sha256": "df3dc7c55d0cf7210b43bec31bd821e96d254d956de9a3f54dbc3950cb9a2b3e",
+      "literalMethods": [
+        "continueAndTodaySkipOptionalSessionsBeforeRequiredWork",
+        "requiredCompletionReachesAdvancementWithOptionalWorkUntouched",
+        "optionalCorrectAnswersCannotSatisfyTheRequiredMinimum",
+        "optionalSessionRemainsAvailableForExplicitVerifiedResume",
+        "optionalResumeStillRejectsAnUnverifiedContentIdentity",
+        "sharedAndUnknownSessionOwnershipRemainRequired",
+        "allRequiredSessionsStillRunInOrder",
+        "unitWithoutRequiredSessionsHasAnAdvancementTarget",
+        "mixedStepRequiresOnlyRequiredAnswersAndKeepsTheirIdentityChecks",
+        "explicitlyOpenedOptionalSessionStillRequiresItsOwnAnswers"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/RestorePreviewReviewHistoryTest.kt",
+      "sha256": "78e0dfcea6838b498e4eedcb92e1bccd1d21d432ee2ef0f6019e14b270b259c1",
+      "literalMethods": [
+        "retainedReviewOnlyPairsShowTwoIncomingAnswers",
+        "retainedReviewOnlyPairsShowTwoAnswersRemovedInReverse",
+        "sameAnswerIdentityWithChangedSelectionIsAConflictInBothDirections",
+        "openAssignmentAddedOrRemovedIsVisibleWithoutOtherRecordChanges",
+        "unchangedReviewHistoryCountsSharedRecordsAndDoesNotMutateTheDocument"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/RestorePreviewReviewIntegrationTest.kt",
+      "sha256": "b8ece19c8fabf82115906b76a0b715a9050beb5b6535e5e755eb466d6102bfb0",
+      "literalMethods": [
+        "previewedReviewChangesMatchRestoredAndReopenedRecordsForRetainedPairs",
+        "cancellingReviewOnlyRestorePreservesTheExistingLearner"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/RuntimeCorrectionTest.kt",
+      "sha256": "64fb977f557291fd8ee34e52f10cbf208576cfb28b2b52d7a2ae649be1333f0c",
+      "literalMethods": [
+        "linkedExamplesAppearOnTheRunningLessonScreen",
+        "laterUnitLinkedExamplesAppearOnTheSamePlayer",
+        "questionsKeepIndependentSelectionsAndFeedback",
+        "remediationOpensTheDeclaredTargetAndReturnsToTheFailedCheck",
+        "todayOpensAdvancementReviewInsteadOfTheLastLessonStep",
+        "unitOneSequenceKeepsDraftsThroughRemediationResumeAndAdvancement",
+        "delayedStorageLeavesTheLessonScreenResponsive",
+        "failedWritePreservesPriorDataAndShowsOneFailure",
+        "repeatedContinueCannotSkipAStep",
+        "lateContinueCallbackCannotNavigateTheNextScreen",
+        "committedSaveReportsReloadFailureWithoutErasingTheWrite",
+        "olderRefreshCannotReplaceANewerSelection",
+        "failedRetryKeepsTheSavedAnswerOnScreen",
+        "repeatedTutorTapsCreateOneQueueRow",
+        "olderSaveRefreshCannotHideANewerRejectedWrite",
+        "olderSaveRefreshCannotClaimSuccessWhileALaterWriteIsPending",
+        "unsavedNoteDraftSurvivesComposeSavedState",
+        "composeSavedStateDuringADelayedWriteKeepsOneOutcome",
+        "remediationReachesGuidedPracticeThenReturnsToTheFailedCheck",
+        "formerGuidedPracticeGapsNowHaveRealItems",
+        "advancementRollsBackWhenTheFollowingProfileWriteFails",
+        "failedAdvancementLeavesTheReviewInPlace",
+        "startupLoadingDoesNotBlockTheMainThread",
+        "storeWorkRunsOnTheStoreThread"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/SourceTextPoolTest.kt",
+      "sha256": "bd8cac056ccf1c4ef38499656517a35b23fba47299f5b1b176d846857bc185be",
+      "literalMethods": [
+        "pythonAndKotlinExpansionRestoreTheSameRecordsAndTypedPack",
+        "corruptMissingConflictingAndUnboundPoolEvidenceIsRejected",
+        "poolingDoesNotLoosenStrictModelDecodingOrApproveRelease"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit10CumulativeReviewTest.kt",
+      "sha256": "f098b4414da8b368c22843be3d0a53a78559a6ec556172735608926d891be829",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+        "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+        "actualUnit10ContinueNumeralGenderCueTeachingPracticeReturnAndAdvanceStayOnUnit10",
+        "placementWithTaughtUnit1ButUntaughtUnit9RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit10WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit10FeedbackCorrectionTest.kt",
+      "sha256": "87b6d9534af89fc0bedd6eab15e4be582cfba9175714daff222969987c39546d",
+      "literalMethods": [
+        "feedbackExplainsPronounReferentsAndAnimateObjectCase",
+        "wrongObjectSelectionDisplaysTheSubjectContrast",
+        "historicalGenericFeedbackCreditIsRetainedButStale"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit10IndependentReinforcementTest.kt",
+      "sha256": "c6e71c09314c5d4a51f35da70fbdc9c0fa6cc4553bad838480663cb2da57a2e6",
+      "literalMethods": [
+        "repeatedIndependentAnswersNeedTheirOwnGovernedAttemptsInEachObjective",
+        "earlierCompletionAndBothRepeatedAbsenceAnswersStillRequireTwoPlaceContexts",
+        "wrongPolarityCannotCreditAnyMemberOfEitherIndependentPair",
+        "sharedFrozenApplicationsCannotBeReversedWithCoherentTupleHashUpdates"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit10ReinforcementReviewTest.kt",
+      "sha256": "90e34f70ef3c1b61d87eddacda881ebb2c19481255b55f2d2a6019b08bf813b1",
+      "literalMethods": [
+        "earlierPossessionCompletionCannotCreditTheLaterRepeatedGuideOrAbsenceChecks",
+        "repeatedGuideAloneCannotReplaceDistinctPlaceAbsenceAndPositiveCounterexampleEvidence",
+        "wrongPositiveCaseExplanationCannotCreditAnyNegativeContext",
+        "allTeachingPrecedesPracticeAndRetainedCaseChainsRemainValid"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit11AgreementRemediationTest.kt",
+      "sha256": "f32c35f7fbd9381312ab0a06eadfa7c5329fa25b0d7b520e0e0732e0f2e6554e",
+      "literalMethods": [
+        "completeAgreementTeachingPrecedesPracticeAndRepairRestoresTheCheckedForms",
+        "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+        "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+        "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+        "wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit11CumulativeReviewTest.kt",
+      "sha256": "1c9dcebea48058a2bd4b5536c5567af1c1094311f355f427d58562f4ab4e30ee",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11LegacyRowsRemainStoredButChangedAgreementInstructionRequiresRepair",
+        "oldFormatOneAndTwoKeepHistoricalWorkWithoutCreditingChangedUnit11Instruction",
+        "actualUnit11ContinuePossessionAbsenceCueTeachingPracticeReturnAndAdvanceStayOnUnit11",
+        "placementWithTaughtUnit1ButUntaughtUnit10RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit11WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit11FeedbackCorrectionTest.kt",
+      "sha256": "389115f6ebe74da1035238081b4cbc90c86f9b85fcbbfc5a4660b12b2ec6dba3",
+      "literalMethods": [
+        "feedbackExplainsPastAgreementAndInfinitiveContrast",
+        "wrongPluralSelectionDisplaysFemininePastExplanation",
+        "historicalQuestionFeedbackCreditIsRetainedButStale"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit12CumulativeReviewTest.kt",
+      "sha256": "87adcda9eaa6373d40bce5637d334dd51395f89cac1154114c203807183d289d",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit12HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit12ContinuePastGenderCueTeachingPracticeReturnAndAdvanceStayOnUnit12",
+        "placementWithTaughtUnit1ButUntaughtUnit11RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit12WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit12FeedbackCorrectionTest.kt",
+      "sha256": "26779a7e4e8af56c4c2f39023e337a8c4667430714d0c8a2bf9e5b7f3c3a080b",
+      "literalMethods": [
+        "feedbackExplainsFutureCaseAndSpellingContrasts",
+        "correctSpellingDoesNotAnswerRejectedSpellingQuestion",
+        "firstPersonChoiceDoesNotAnswerSecondPersonFutureQuestion",
+        "historicalQuestionFeedbackCreditIsRetainedButStale"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit13ContextTeachingTest.kt",
+      "sha256": "69e3adec66a32c50a25e6e6d51785cb4268aad8a3ebf3b2dac1a002f63b784de",
+      "literalMethods": [
+        "bothChainsTeachBeforePracticeAndRepairEveryOriginalExample",
+        "exactTwoSessionWhitelistPreservesNativeScoredRecordsPoliciesAndEarlierPastCorrection",
+        "oldGuidedPositionsCannotResumeAsDifferentTeachingCards",
+        "oldAnswersStayRawButDoNotSupplyChangedInstructionCredit",
+        "wrongReportedEveningReturnsFromCompleteRepairToTheSameCheck",
+        "wrongEnglishBackshiftLabelReturnsFromCompleteRepairToTheSameCheck",
+        "wrongPerfectivePartnerReturnsFromCompleteRepairToTheSameCheck",
+        "wrongImperfectivePartnerReturnsFromCompleteRepairToTheSameCheck",
+        "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+        "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit13CumulativeReviewTest.kt",
+      "sha256": "e34907bb87c5df3aec0e72ab384d82c00875410a2ec6fc9cea4277c39489e6bb",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit13HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit13ContinueAspectPartnerCueTeachingPracticeReturnAndAdvanceStayOnUnit13",
+        "placementWithTaughtUnit1ButUntaughtUnit12RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit13WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit13FeedbackCorrectionTest.kt",
+      "sha256": "8023fee79fdc182a18c120ea325449dc10efdb4972448e24f48b5d9ee0d672b5",
+      "literalMethods": [
+        "feedbackExplainsAspectAndReportedSpeechWithoutUniversalRules",
+        "moscowPlanDoesNotAnswerDirectEveningQuestion",
+        "perfectiveChoiceDoesNotAnswerImperfectivePastQuestion",
+        "historicalQuestionFeedbackCreditIsRetainedButStale"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit13PastTeachingTest.kt",
+      "sha256": "35b0ec1ceba4883f20cf3a586029e218bd1e5f2b89bd4e83a1b3038837f3ad5e",
+      "literalMethods": [
+        "completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples",
+        "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+        "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+        "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+        "wrongAspectChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+        "wrongGenderChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+        "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+        "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit13ReportedTransferTest.kt",
+      "sha256": "a79bb70d0bd352ae12ce80c18eff5382087a4ad78dc98c24ebca1b55278cbd1e",
+      "literalMethods": [
+        "sevenCurrentAnswersCompleteBothObjectivesWithoutInventingAnEarlierGuideHistory",
+        "laterGuideUsesDifferentContextFromEarlierEveningCheck",
+        "reportedObjectiveRequiresItsOwnIndependentFrameAndEmbeddedTimeInterpretation",
+        "originalIndependentItemsEarlierObjectiveAndAllExamplesRemainUnchanged",
+        "threeCardsPrecedePracticeAndFullRemediationQualifiesBothLanguages",
+        "playerRejectsReversingPastReportingAndFutureEmbeddedTime",
+        "originalRepeatedGuideCannotRestoreTheOldReportedChain",
+        "coherentNativeContextAndHashForgeryCannotIntroducePastNationality",
+        "coordinatedKeyAndApplicationCannotReverseTheReportedFiniteTimes",
+        "authenticSixAnswerHistoryStaysSavedButCannotCreditTheRenewedPack"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit13WiderPolicyTest.kt",
+      "sha256": "32b75244020d54d9cf85b056950d4a9d3acfb54d83d59e83f63bcdb42f6e2825",
+      "literalMethods": [
+        "threeFreshSlotsUseNonFirstGenderCandidateAndRequireAllAnswersBeforeActualAdvance",
+        "genuineOldPartialTasksUseOwnEligibilityAndActualLegacyPolicyOnAdvance",
+        "genuinePriorPackDeclaresV1AndCannotAcceptFutureV2Tasks",
+        "currentAndDownstreamOldSnapshotsRejectChangedContentAndAcceptOnlyExactPriorDeclaration",
+        "versionsRolesLinksEpochAndPacklessWritesFailClosedWithoutChangingHistory",
+        "newPastGenderUiRepairsFullTeachingAndRequiresAllThreeFreshAssignedAnswers",
+        "genuineLegacyUiKeepsTwoChecksAndBoundAspectRepairInsteadOfNewObligation",
+        "allGenuineLifecycleBackupsRestoreReopenAndRetainExactRowsAndCutoff",
+        "twoPastGenderCandidatesRequireCurrentTaughtEvidenceAndExactRepairWithoutChangingAssetTuples"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit14CumulativeReviewTest.kt",
+      "sha256": "a5f142557bc49891a92a18020a10f959acb88da097f2599c362809b4c8122fc3",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11RowsRemainStoredButChangedImpersonalInstructionRequiresRepair",
+        "oldFormatOneAndTwoKeepRawUnit14HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit14ContinueReportedTimeCueTeachingPracticeReturnAndAdvanceStayOnUnit14",
+        "placementWithTaughtUnit1ButUntaughtUnit13RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit14WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit14FeedbackCorrectionTest.kt",
+      "sha256": "fc4920d222b417dc9fe7312c16a5898df7e003e4f2e936f4e32b0b2634e1b86d",
+      "literalMethods": [
+        "feedbackExplainsFutureLimitsAndImpersonalExperiencers",
+        "maleColdExampleDoesNotAnswerFemaleColdQuestion",
+        "durationFreeOptionDoesNotAnswerBoundedWorkQuestion",
+        "historicalQuestionFeedbackCreditIsRetainedButStale"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit14ImpersonalRemediationTest.kt",
+      "sha256": "7b5918584abdf9a4002818c2186f767e493fc5f17902c6b0abb4e131df84f63c",
+      "literalMethods": [
+        "allThreeStateCardsPrecedePracticeAndRepairRestoresEveryExample",
+        "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+        "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+        "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+        "wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationHistoryTest.kt",
+      "sha256": "04a6cd90887544b34c9b2cef46b5b2a2eaf629a38265dac57653911324b810bb",
+      "literalMethods": [
+        "originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact",
+        "oldAcceptedWorkAndResumeStayStoredThroughBackupReopenButNeedCurrentWork",
+        "overlappingEnglishLabelsRejectWithoutThrowingAndDoNotBecomeNativeEvidence"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationTest.kt",
+      "sha256": "b7a2c28ae863f087220430e880d2162e123b42b9058a2aee2b4dd7003691db2a",
+      "literalMethods": [
+        "bothPairsAreTaughtBeforePracticeAndRepairRestoresAllThreeCardsAndFourForms",
+        "preparationDoesNotClaimToAssessUnqualifiedRequestContexts"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationUiTest.kt",
+      "sha256": "305c5e4b275b7b92e795c795835d08535d1b5827f3f52eba416ec69540eaa27d",
+      "literalMethods": [
+        "wrongPartnerAnswerRestoresBothPairsAndReturnsThroughTheOriginalGuide"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit15CumulativeReviewTest.kt",
+      "sha256": "3b1710e2490392ccd6f0b7a544f89f02468c0eed0dde17a34978f78428173727",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11RowsRemainStoredButChangedImperativeInstructionRequiresRepair",
+        "oldFormatOneAndTwoKeepRawUnit15HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit15ContinueImpersonalStateCueTeachingPracticeReturnAndAdvanceStayOnUnit15",
+        "placementWithTaughtUnit1ButUntaughtUnit14RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit15WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit15FeedbackCorrectionTest.kt",
+      "sha256": "ac65f9235dfe6557f08a6bd0955d024bae7df64568859447ca8a638a2478ada3",
+      "literalMethods": [
+        "feedbackExplainsImperativeRowsAndSenseBoundAspectPartners",
+        "infinitiveDoesNotAnswerSingularImperativeQuestion",
+        "differentMeaningDoesNotAnswerPerfectivePartnerQuestion",
+        "historicalQuestionFeedbackCreditIsRetainedButStale"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit15ImperativeRemediationTest.kt",
+      "sha256": "01ae32bafc68c55166bbf8b3a36ead88598d743231ff9596cebee8f34af93023",
+      "literalMethods": [
+        "completeImperativeContrastsPrecedePracticeAndRepairRestoresEveryExample",
+        "exactDeclaredUnitExceptionPreservesEveryQuestionRecordAndRequirement",
+        "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+        "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+        "wrongIndependentAnswerShowsCompleteRepairAndGuidedSuccessStillNeedsANewCheckAnswer"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit16CumulativeReviewTest.kt",
+      "sha256": "16ba6d70f483b2bdf79d39007ac196e9927513142f7927d427efd7c10643fd3b",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit16HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit16ContinueImperativeFormCueTeachingPracticeReturnAndAdvanceStayOnUnit16",
+        "placementWithTaughtUnit1ButUntaughtUnit15RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit16WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit16InstrumentalInstructionTest.kt",
+      "sha256": "b5d7e10a6fbb80cd491d16b31029f7374dbbb7d74cfe0d4ce168a1f99aef5f6c",
+      "literalMethods": [
+        "caseAndNumberAreExplainedBeforeGuidedChoices",
+        "remediationRetainsEveryExplanationAndCaseSpecificFeedback",
+        "newExplanationsHavePendingEvidenceAndNoAcceptance"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit16InstrumentalUsesTest.kt",
+      "sha256": "1809406ba611bc763aa3ecc15f03fdf07b4ffa57e84624c5da08261b7557b4d6",
+      "literalMethods": [
+        "rolesAndLimitsAreTaughtBeforePractice",
+        "feedbackExplainsRolesAndRejectsPastTenseDistractor",
+        "originalSynthesisRemainsPendingAndValid",
+        "prepositionQuestionsDoNotSupplyTheAnswerAndMutationsFail"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit17AgeCalendarInstructionTest.kt",
+      "sha256": "1eec45c0049647c1511fff00e37df0ea14841773ea2a9b9adfb44949aeb93252",
+      "literalMethods": [
+        "checkedNamesAndAgeStructureAreTaughtBeforePractice",
+        "learnerFeedbackExplainsMeaningsAndRetainsSourceCitation",
+        "newCoverageIsPendingAndSourceRelationshipsStillValidate",
+        "clockAndDateTargetsHaveCompletePriorInstruction"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit17CumulativeReviewTest.kt",
+      "sha256": "221a6c15aeddc0ac153fb4b24f7f2bb239c1daca7ba4b02445c679e4fe4cdcd8",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit17HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit17ContinueInstrumentalPluralCueTeachingPracticeReturnAndAdvanceStayOnUnit17",
+        "placementWithTaughtUnit1ButUntaughtUnit16RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit17WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit17NumberInstructionTest.kt",
+      "sha256": "784877869eca58908a9c6a622e9c72edcfd6f5f02faa41f49707c209ed6f6a8a",
+      "literalMethods": [
+        "meaningsRulesAndLimitsPrecedePractice",
+        "choicesReceiveSpecificMeaningFeedback",
+        "coverageIsOriginalPendingAndCorpusValid"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit17QuestionTransferTest.kt",
+      "sha256": "16e4ef8d6cf2fc14f4f307c506d3184d99e5ae3982a1697257d43c1a98346998",
+      "literalMethods": [
+        "questionCompletionRequiresIndependentCuesDistinctFromGuidedPractice",
+        "optionalOriginalGlossesKeepTeachingAndSavedSelectionsWithoutCredit",
+        "guidedAppleChoiceCannotCompleteIndependentQuestionChecks",
+        "playerRejectsBookSelectionAsTheClockQuestionMeaning",
+        "playerRejectsClockTimeAsTheBookQuestionMeaning",
+        "authenticHistoricalClockCompletionStaysSavedButCannotCreditNewQuestions",
+        "restoringValidOldContrastItemsCannotClearTheQuestionCapability",
+        "coordinatedKeyAndApplicationCannotMakeTheClockQuestionAskForABook",
+        "coherentNativeTextAndHashForgeryCannotChangeTheAppleQuestion",
+        "completeNativeQuestionsAndOptionalScopeValidateWithoutProductionClaims"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit18ComparisonRelativeInstructionTest.kt",
+      "sha256": "94c79b8bfd4f081e07c8b14d0026d617bea9fbb33c7ec45e496d565184b9da23",
+      "literalMethods": [
+        "allCheckedFormsAreTaughtBeforeGuidedPracticeAndRemediated",
+        "instructionDistinguishesConstructionAndScope",
+        "feedbackExplainsTheRequestedMeaningAndPreservesCitation",
+        "newCoverageStaysPendingAndSourceRelationshipsValidate"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit18CumulativeReviewTest.kt",
+      "sha256": "062626ead20578fc18af6176d31ed351e4d288adabebadd1899f1c579a765602",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit18HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit18ContinueQuestionMeaningCueTeachingPracticeReturnAndAdvanceStayOnUnit18",
+        "placementWithTaughtUnit1ButUntaughtUnit17RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit18WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit19ConditionalObligationInstructionTest.kt",
+      "sha256": "cb617d6cff552c8d070987fbbe1a06fd4a8e8f6421fc7310c3599bdde27cfaab",
+      "literalMethods": [
+        "checkedFormsHaveCompleteInstructionBeforePracticeAndOnRemediation",
+        "labelsAreNotTaughtAsTranslationsAndConditionalDoesNotImplyPastEvent",
+        "feedbackAndPromptsAskForTheActualRetainedAnswerType",
+        "synthesisAndSourceChainsValidateWithoutApprovingReview"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit19CumulativeReviewTest.kt",
+      "sha256": "26dd0700b838cea4117772a6836ae21418bb85367f3a0c1f49561ca329766622",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit19HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit19ContinueRelativeMeaningCueTeachingPracticeReturnAndAdvanceStayOnUnit19",
+        "placementWithTaughtUnit1ButUntaughtUnit18RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit19WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit19PrefixUnit20MotionInstructionTest.kt",
+      "sha256": "a0077ea243c70ca07f2accb1bb0f7804972ab9d9599cace0fb40624d92d5868c",
+      "literalMethods": [
+        "dissuadeCueUsesItsExplicitLicensedAspectPartnerWithoutAnswerLeak",
+        "independentLikelihoodChecksHaveDistinctCuesAndFeatures",
+        "completePrefixAndMotionInstructionPrecedesPracticeAndRemediation",
+        "sourceAndApplicationChainsValidateAndReviewRemainsPending",
+        "omittedReviewDefaultsDecodeToTheSameTypedPack",
+        "neutralMeaningPromptKeepsOtherTargetAndRelationRequirements"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit20CumulativeReviewTest.kt",
+      "sha256": "478fd76d95333cd1129a43619b0864336ac494db159c3a593224d776e601795f",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit20HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit20ContinueConditionalAgreementCueTeachingPracticeReturnAndAdvanceStayOnUnit20",
+        "placementWithTaughtUnit1ButUntaughtUnit19RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit20WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit20DirectionalityApplicationTest.kt",
+      "sha256": "814838832b0a83e17f4ae1d8aebe16fac99384c7897955265e5e60b6d7f85089",
+      "literalMethods": [
+        "motionCompletionMustRequireDistinctIndependentDirectionalityContexts",
+        "originalGuidedLabelAndFourReadingsCannotCompleteDirectionality",
+        "playerRejectsVariousDirectionReadingForTheDirectedFlight",
+        "playerRejectsPerfectiveInferenceFromACompletedRoundTrip",
+        "independentContextsAreMeaningfullyDifferentFromGuidedContexts",
+        "coordinatedKeyAndApplicationCannotReverseTheDirectedFlight",
+        "coherentNativeTextAndHashForgeryCannotChangeTheFlightExample",
+        "restoringOldFourChecksCannotClearTheDirectionalityCapability",
+        "authenticEarlierAttemptsStayHistoricalAndCannotCreditNewContent"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit21CumulativeReviewTest.kt",
+      "sha256": "48b7b3e335deeb44037dcd4864b4fcf9910f31edccc4318ab49ec602fbacdf7c",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit21HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit21ContinueMotionContextCueTeachingPracticeReturnAndAdvanceStayOnUnit21",
+        "placementWithTaughtUnit1ButUntaughtUnit20RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit21WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit21ObjectTransferTest.kt",
+      "sha256": "feb63e64e43dacc7f2fa458080ebef5d76af7f858f7ae9d58237a3a816f0f432",
+      "literalMethods": [
+        "completedObjectReferenceNeedsADistinctIndependentReflexiveContext",
+        "guidedAndWifeMeaningCannotCompleteTheDistinctReflexiveCheck",
+        "playerRejectsTheOtherPersonAndExplainsReflexiveReference",
+        "allThreeCardsPrecedePracticeAndRemediationRestoresThem",
+        "restoringTheOriginalValidRepeatedContrastCannotClearDistinctReflexiveEvidence",
+        "coordinatedKeyAndApplicationCannotReverseReflexiveReference",
+        "coherentNativeTextAndHashForgeryCannotChangeTheReflexiveSource",
+        "historicalThreeAnswerCompletionStaysSavedButCannotCreditCurrentContent",
+        "exactSourcePairAndOtherCorrectFieldsArePreserved",
+        "forgedOldRevisionAndGhostRecordCannotUseTheNewSource"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit21ReflexivePurposeInstructionTest.kt",
+      "sha256": "edc940e256c2b2618e61a2d895d8efedc14c25de6a72533127de0f227808de86",
+      "literalMethods": [
+        "completeInstructionAndRemediationCoverEveryCheckedCueBeforePractice",
+        "possessionTracksSubjectButAgreementTracksThePossessedNoun",
+        "causalCheckHasNoSynonymousSinceDistractorAndAdmittedBindingsStayValid",
+        "omittedEmptyFinalAuditObjectsDecodeToIdenticalTypedEvidence"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit22CumulativeReviewTest.kt",
+      "sha256": "2eee447559f5a5e6bd307ada25c9ba22747e1051d272f3ab9863c754abd83972",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit22HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit22ContinueReflexiveObjectCueTeachingPracticeReturnAndAdvanceStayOnUnit22",
+        "placementWithTaughtUnit1ButUntaughtUnit21RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit22WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit22NumberInstructionTest.kt",
+      "sha256": "ce1422e31219b35bd4062822ad57b21f3fd464f83016dcc392b3584ff1cb9227",
+      "literalMethods": [
+        "everyCheckedNumberContrastIsTaughtBeforePracticeAndRestoredOnAMiss",
+        "ruleScopeDistinguishesTeensGenderCaseAmbiguityAndCollectiveUsage",
+        "admittedAnswersStayBoundAndWrongKeysStillFailProductionValidation",
+        "omittedStepNullsAndEmptySynthesisApplicationsHaveIdenticalTypedMeaning"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit23CumulativeReviewTest.kt",
+      "sha256": "02b50fbe301d7826cc55472f78f603ab19002064ae200d26ad522c5069bfcc49",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit23HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit23ContinueHalfQuantityPhraseCueTeachingPracticeReturnAndAdvanceStayOnUnit23",
+        "placementWithTaughtUnit1ButUntaughtUnit22RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit23WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit23TimeInstructionTest.kt",
+      "sha256": "66800c062f6082d8e67a69a3235b006f4119798a666342ffbe32eb84de2da664",
+      "literalMethods": [
+        "eachTemporalContrastPrecedesPracticeAndReturnsInCompleteRemediation",
+        "intervalCaseAndCompletionAreNotConfusedWithDurationOrNoncompletion",
+        "checkedMeaningsKeepAdmittedRelationshipsAndWrongKeysStillFail",
+        "omittedContinueAndEmptyStepListsHaveIdenticalTypedMeaning"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit24ContextTransferTest.kt",
+      "sha256": "f01fdf48e8588b950ca0dbaa5c983f65621d4b8b4088d7633554e787e9f5539c",
+      "literalMethods": [
+        "completedContextReadingNeedsDistinctGuidedAndIndependentExamples",
+        "correctIndependentPersuasionItemsAndOptionalOriginalReadingArePreserved",
+        "optionalReferenceKeepsTeachingAndSavedSelectionButCannotCreditOrBlockRequiredChecks",
+        "guidedSubjectFocusAndOneReadingCannotCompleteBothPersuasionRequirements",
+        "playerRejectsLackOfNeedInTheNeverAgreeContext",
+        "allThreeCardsPrecedePracticeAndFullRemediationKeepsAmbiguity",
+        "originalRepeatedGuidedContrastCannotBeRestoredAsRequiredPractice",
+        "coordinatedGuidedKeyAndApplicationCannotReverseSubjectAndDestinationFocus",
+        "coherentNativeHashForgeryCannotChangeTheGuidedSource",
+        "coordinatedOriginalPersuasionMeaningSwapCannotReverseTheFrozenEvidence",
+        "historicalThreeAnswerCompletionStaysSavedButCannotCreditCurrentContent",
+        "exactSelectionsAndAllOldExamplesValidateWithoutIndependentSubjectFocusClaim"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit24CumulativeReviewTest.kt",
+      "sha256": "c714eeda67a7c5b41cb7e47a87aa7a713e86eef9bc44ac946fa97eb4a0afb519",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit24HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit24ContinuePeriodPositionCueTeachingPracticeReturnAndAdvanceStayOnUnit24",
+        "placementWithTaughtUnit1ButUntaughtUnit23RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit24WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit24NegationInstructionTest.kt",
+      "sha256": "f71ef98e06a5de080fcae52a7ea761bb6d9c9e6d7baa09110bfdd33e3eefcfa2",
+      "literalMethods": [
+        "allNegationContrastsAreExplainedBeforePracticeAndRepeatedAfterAMiss",
+        "numberAbsenceConcordAndPersuasionContextHaveDistinctExplanations",
+        "existingKeysStayBoundAndSourceAndReviewRestrictionsRemainClosed"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit25CumulativeReviewTest.kt",
+      "sha256": "507d846b81291a3185b7bf58da217868de78c1b558d6df7c257161092fe6c236",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit25HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit25ContinueNegativeSentenceCueTeachingPracticeReturnAndAdvanceStayOnUnit25",
+        "placementWithTaughtUnit1ButUntaughtUnit24RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit25WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit25NameInstructionTest.kt",
+      "sha256": "1af746b169144be9a4eb264786218c3eb1f1db6444a326559dd1606a60cd29c5",
+      "literalMethods": [
+        "allNameAndCourtesyContrastsAreTaughtBeforePracticeAndRepeatedAfterAMiss",
+        "questionsDoNotRevealNameClassificationAndInstructionExplainsTheLimits",
+        "keysStayBoundAndNameFormationAndReleaseRestrictionsStayClosed"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit26CumulativeReviewTest.kt",
+      "sha256": "9761291a3139e9ffef1275305b82e590f4f8cbc89b1d2e564f0d6f1b50971bc1",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit26HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit26ContinueNameReplyCueTeachingPracticeReturnAndAdvanceStayOnUnit26",
+        "placementWithTaughtUnit1ButUntaughtUnit25RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit26WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit26FocusInstructionTest.kt",
+      "sha256": "a60d3d2d2b617abeff19e1e72386ee0f3175b8d1f5fdd792f66107f4f66c2e72",
+      "literalMethods": [
+        "contextualMeaningReplacesLiteralWordOrderLabels",
+        "completeContextAndReferenceDistinctionsPrecedePracticeAndReturnAfterAMiss",
+        "exactContextualAdmissionAndReferenceKeysRejectForgedOrUnboundEvidence"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit26LetterInstructionTest.kt",
+      "sha256": "2881c6c519766d9a8b23d5efe75cd403cbf223a17fd97d6649d29af01af90c41",
+      "literalMethods": [
+        "suppliedOrganizationAndGreetingInferenceReplaceUniversalKeys",
+        "completeFrameworkPrecedesPracticeAndReturnsAfterAMiss",
+        "exactResearchAdmissionRejectsLegacyCapabilityAndForgery"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit26PostalInstructionTest.kt",
+      "sha256": "6415c35dd6f973fcd7040ecb593af2d753a1b2c492452c241a4b42cf1856ee08",
+      "literalMethods": [
+        "completeComponentAndFormatTeachingPrecedesPracticeAndReturnsAfterAMiss",
+        "sampleComparisonAndOrderingKeysAreBoundToTheirDisplayedModel",
+        "exactPostalIntakeRejectsHistoricalUniversalityAndUnboundApplications",
+        "hashedApplicationPairsRejectReuseOfAllowedWords"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit26WrittenInstructionTest.kt",
+      "sha256": "c9918a9ca914ed406d9cec8647852a67434d4f59208dee867cdc6a21949b390b",
+      "literalMethods": [
+        "letterCaseTeachingSeparatesRecipientContextFromPluralShape",
+        "addressMarksTeachingExplainsEveryRetainedComponentAndRestoresAllExamples",
+        "correspondenceTeachingDistinguishesEnclosureClosingAndProductionLimits"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit27CumulativeReviewTest.kt",
+      "sha256": "e29feaad4481c3c1bdf1de5a04a03940ce2c25137baebe632c9faa10a35c7fc4",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit27HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit27ContinueAddressComponentCueTeachingPracticeReturnAndAdvanceStayOnUnit27",
+        "placementWithTaughtUnit1ButUntaughtUnit26RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit27WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit27PastInstructionTest.kt",
+      "sha256": "83b5200535c84c825b9a06492dc20626a05377081d51c816902330620acdf4e5",
+      "literalMethods": [
+        "completePastPassiveMeaningAndFormTeachingPrecedesPracticeAndRestoresEveryExample",
+        "requiredStressTeachingDistinguishesTheAccentedVowelAndCorrectsTheCompetingLabel",
+        "meaningChecksRejectSourcePositionRecallAndOptionalPresentFormsStayOutsideGating"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit27RemainingInstructionTest.kt",
+      "sha256": "69aea40421cd8cfde19fe0b7f7cebc1d0a17be439ce9773ae66fb6b84c33e35e",
+      "literalMethods": [
+        "comprehensionSeparatesTheWriterFromAnUnspecifiedReaderBeforePractice",
+        "optionalPresentTeachingDistinguishesFiniteInfinitiveAndPassiveMeanings",
+        "remediationRestoresEveryCardAndExampleWithoutMakingOptionalStudyRequired",
+        "pendingInstructionHasBoundProvenanceAndTheProductionValidatorAcceptsIt",
+        "mutableApplicationMetadataCannotRebindTheAlreadyReadCheckToTheWritingCue"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit28CumulativeReviewTest.kt",
+      "sha256": "b40aca654ef06e7e3be880ddcc6f7f368cd5bc70f5ec3ae4fea59a934507c232",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit28HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit28ContinuePastPassiveMeaningCueTeachingPracticeReturnAndAdvanceStayOnUnit28",
+        "placementWithTaughtUnit1ButUntaughtUnit27RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit28WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit28IndependentIdentityTest.kt",
+      "sha256": "f7718d1929017855c31e0d81634c52aa8d289f6587225b310fda393ae6d5dc63",
+      "literalMethods": [
+        "bothIndependentFamiliesKeepTheirExactPendingBindings",
+        "imperfectiveAuthoritativeApplicationsChangeIdentityAndRejectUnreviewedRewrites",
+        "perfectiveAuthoritativeApplicationsChangeIdentityAndRejectUnreviewedRewrites",
+        "mutableMirrorsCannotOverrideEitherFrozenIndependentFamily"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit28InstructionTest.kt",
+      "sha256": "e06b33a442528eac115958ac77ba23eabb824396242301158dfe5d0e6b4897cc",
+      "literalMethods": [
+        "timingIsRelativeAndTheExplicitMainSubjectPerformsBothActions",
+        "passageInstructionPrecedesPracticeAndDistinguishesEpisodes",
+        "remediationRestoresAllCardsAndThePreviouslyOmittedThirdExample",
+        "newPendingProvenanceAndFullProductionValidationRemainValid",
+        "mutableMetadataCannotDropTheMainClauseFromAContextualCue"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit28TimingTransferTest.kt",
+      "sha256": "fef5d3e35be246cf960e579b6f35b7dae7ecf64272af0a32802eda8c4d06e191",
+      "literalMethods": [
+        "originalSixGovernedAnswersCompleteBothTimingObjectives",
+        "imperfectiveTimingNeedsAnIndependentContextDifferentFromGuidedPractice",
+        "perfectiveTimingNeedsAnIndependentContextDifferentFromGuidedPractice",
+        "guidedAnswersAloneCannotCompleteEitherObjective",
+        "playerRejectsAbsolutePresentInThePastGuidedClause",
+        "allCardsPrecedePracticeAndFullRemediationRetainsRelativeFutureCoverage",
+        "originalIndependentScoredFieldsAndEveryExampleRemainUnchanged",
+        "originalRepeatedGuidedContextsCannotBeRestored",
+        "coherentNativeHashForgeryCannotChangeSourceContext",
+        "coordinatedGuidedKeyAndApplicationCannotReverseAnteriority",
+        "historicalSixAnswerCompletionStaysSavedButCannotCreditRenewedContent",
+        "coherentCapabilitySpanAndHostHashRewriteCannotChangeTheFrozenIntake",
+        "coherentDictionaryAspectRowForgeryCannotReverseTheSourceClassification"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit29ActiveTimeCorrectionTest.kt",
+      "sha256": "10943b19201e86c6c7d3075136554569da6e634a0b04a17afe88f9af03b8f973",
+      "literalMethods": [
+        "creditedCheckMustInterpretADistinctAdmittedFormRatherThanTheOppositeLabel",
+        "playerRejectsPastLabelForLivingAndKeepsTheCorrectExplanation",
+        "historicalOppositeLabelAttemptSurvivesButCannotCreditTheReplacement",
+        "coordinatedApplicationAndKeyEditsCannotMakeLivingPast"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit29AdjectiveApplicationTest.kt",
+      "sha256": "4271a42622b0e534ba7d827282e6228f9077e8ab34979040b5faf42707b6476f",
+      "literalMethods": [
+        "classificationCreditMustAlsoRequireAgreementAndSentenceFunctionChecks",
+        "originalClassificationItemsAloneCannotCompleteTheExpandedObjective",
+        "playerRejectsNeuterShortFormForTheFeminineHeadNoun",
+        "playerRejectsAttributiveAnswerForTheCompleteLongFormPredicate",
+        "coordinatedApplicationAndKeyEditsCannotMakeTheFeminineSubjectNeuter",
+        "coordinatedNativeTextAndHashForgeryCannotReplaceThePredicateExample",
+        "authenticHistoricalClassificationAttemptsSurviveButCannotCreditNewContent"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit29CumulativeReviewTest.kt",
+      "sha256": "5c3c2d7f8e4cb395e0f57ca81f127fd731afa0d30877cbffc0d655c944364c7b",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit29HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit29ContinueRelativeFutureTimingCueTeachingPracticeReturnAndAdvanceStayOnUnit29",
+        "placementWithTaughtUnit1ButUntaughtUnit28RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit29WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit29InstructionTest.kt",
+      "sha256": "2d066fb5f07b8cb193f1d3a0a9d321fe194eec59d0a4a208e3363df3d080d918",
+      "literalMethods": [
+        "instructionSeparatesTimeMeaningAndClassifiesTheDisplayedForm",
+        "punctuationExplainsBothBoundariesAndTheExceptions",
+        "registerDoesNotReplaceActorSequenceOrEventMeaning",
+        "remediationRestoresEveryCardAndEveryExampleBeforePractice",
+        "independentlyAuthoredPendingCoveragePassesTheProductionValidator"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit29PunctuationContextRegressionTest.kt",
+      "sha256": "55b0022b222f4cfd95261d4f2ede6d27f7427cb97a068f5cd0c7d21434cf0180",
+      "literalMethods": [
+        "categoryAndConnectiveCreditMustNotDemonstrateContextualPunctuation",
+        "originalDefaultAnswersCannotCompleteExpandedPunctuation",
+        "optionalReferenceHasTeachingButNoGrammarCredit",
+        "playerRejectsNoCommaForPersonalPronoun",
+        "playerRejectsClosingCommaAtSentenceEnd",
+        "sourceNormalizationPreservesCompleteWordsAndPunctuation",
+        "restoringOriginalContrastCategoryCannotClearPunctuationCapability",
+        "coordinatedKeyAndApplicationCannotRemovePronounComma",
+        "coherentNativeTextAndHashForgeryCannotRemoveTerminalComma",
+        "newSourceCannotBorrowAnOlderAdmittedRevisionOrAddGhostRecord",
+        "authenticHistoricalCompletionStaysSavedButCannotCreditNewChecks"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit29ShortAdjectiveCorrectionTest.kt",
+      "sha256": "7152aca188f2df27948b0b5884313cb132a5fed24f8b873e7f24529a9cd26308",
+      "literalMethods": [
+        "grammarGateMustNotBeSatisfiedByVocabularyGlosses",
+        "vocabularyLabPreservesMeaningsWithoutSatisfyingGrammarChecks",
+        "grammarStateCanBeDemonstratedWithoutOptionalGlossAttempts",
+        "playerRejectsLongClassificationForTheShortForm",
+        "historicalGlossCreditIsRetainedButCannotCreditTheCurrentGrammarGate",
+        "restoringGlossChecksCannotClearTheShortAdjectiveCapability",
+        "coordinatedKeyAndApplicationEditsCannotMakeTheShortFormLong"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit30CumulativeReviewTest.kt",
+      "sha256": "9650fdfee8cf9826388818bfd17a21fe7858109a324fe3c1f0fe7ddf02617fde",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+        "oldFormatOneAndTwoKeepRawUnit30HistoryWithoutInventingCreditOrRepairingUnit11",
+        "actualUnit30ContinueActiveParticipleTimeCueTeachingPracticeReturnAndTerminalCompletionStayOnUnit30",
+        "placementWithTaughtUnit1ButUntaughtUnit29RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit30WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit30InstructionTest.kt",
+      "sha256": "70fe1d64b62b8710d0f26826ef89912d86236da95696d8fcc835b57d54c0b627",
+      "literalMethods": [
+        "letterNameAndHeadingQuestionsDoNotChangeTheExampleMeaning",
+        "addressAndAbbreviationTeachingExplainsRolesAndTheSourceLimit",
+        "particlesStoryAndDictionaryRequireMeaningAndInformationLimits",
+        "allTeachingAndExamplesReturnOnRemediation",
+        "pendingInstructionAndProductionValidationRemainValid"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit30LanguageCorrectionTest.kt",
+      "sha256": "4d9e679be0660b65393ef79107a5d45faf7192836edd7bb32099492878879a61",
+      "literalMethods": [
+        "languageCompletionMustNotDependOnEnglishTableOrHeadingAnswers",
+        "optionalReferenceAnswersCannotCreditTheLanguageObjectives",
+        "playerRejectsAnotherLettersRussianName",
+        "playerRejectsSingularAgreementAndCaseEndingsForUSA",
+        "restoringValidOriginalContrastItemsCannotClearTheLanguageChain",
+        "coordinatedKeyAndApplicationMutationCannotRenameB",
+        "coordinatedPrimaryNameTextAndHashForgeryIsRejected",
+        "authenticReferenceHistorySurvivesButCannotCreditNewLanguageContent"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit3GenderTeachingTest.kt",
+      "sha256": "b2491b9c2bd68606d98ee7889d20074ba0bd767fdc3234bb7be0728dc7ef8cb8",
+      "literalMethods": [
+        "allFiveIndependentRecordsHaveExplicitTeachingAndCompleteRepair",
+        "correctionHasAnExactWhitelistAndNoScoredOrPolicyChanges",
+        "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+        "olderPolicyHistoriesRemainRawButCannotBypassChangedUnit3Teaching",
+        "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+        "wrongDoorAnswerRestoresTheFullContrastAndStillNeedsFreshIndependentWork",
+        "wrongNeuterAnswerRestoresTheFullContrastAndStillNeedsFreshIndependentWork"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit4CumulativeReviewTest.kt",
+      "sha256": "6cc45ec44c8075b8f2005bd79f1398420296b066193cd02a746da349baa8bac3",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+        "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+        "actualUnit4ContinueGenderCueTeachingPracticeReturnAndAdvanceStayOnUnit4",
+        "placementWithTaughtUnit1ButUntaughtUnit3RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit4WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit4NominativeRoleTest.kt",
+      "sha256": "c947f4e005d74e527f831df36c6034ee622e73e31015130de33976a8d38e64ae",
+      "literalMethods": [
+        "twoDistinctIndependentSubjectsAndFullTeachingAreRequired",
+        "correctGlossesStayOptionalAndCannotReplaceCaseRoleChecks",
+        "oldTranslationCompletionHistoryIsPreservedButStaleForTheNewConstruct",
+        "allPriorExamplesRecordsCapabilitiesAndOtherUnitsRemainWhole",
+        "legacyGlossRestorationAndCoherentNativeForgeryCannotBypassTheRoleGuard",
+        "coordinatedRoleKeyAndCanonicalTupleHashReversalIsRejected",
+        "wrongCaseRoleShowsTargetedFeedbackAndReturnsToEveryExample"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit4PresentRepairUiTest.kt",
+      "sha256": "89d24679ded50dba1e5f1b2efc3b647c5aafd8d9786b48edaff4ceb7861e424a",
+      "literalMethods": [
+        "speakingWeMissRestoresTeachingAndGuideWithoutReplacingIndependentAnswer",
+        "seeingHeMissRestoresTeachingAndGuideWithoutReplacingIndependentAnswer",
+        "writingYouMissRestoresTeachingAndGuideWithoutReplacingIndependentAnswer",
+        "goingTheyMissRestoresTeachingAndGuideWithoutReplacingIndependentAnswer"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit4PresentTeachingTest.kt",
+      "sha256": "b34070ac9acfaa7c192c316270476ae94318fd47beb70ca2942f6fdede31e02b",
+      "literalMethods": [
+        "everyRequiredTargetIsTaughtWithExactAdmittedAlternativesBeforeDistinctGuidedWork",
+        "existingNativeItemsExamplesRecordsAndOtherUnitContentsRemainExact",
+        "oldCorrectAnswersAndResumeStayStoredButCannotSupplyChangedUnitCredit",
+        "guidedAnswersCannotReplaceRequiredTargetsAndWrongThenRightStillUsesExactKeys",
+        "correctTargetsCannotFinishOrdinaryRequirementsUntilNewTeachingIsRecorded",
+        "oldAndFreshAnswersSurviveBackupReplacementAndNamedDatabaseReopenWithoutRelabelling"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit5CumulativeReviewTest.kt",
+      "sha256": "e82282ba3e2e63ab0328e264db9e032140461cd2754b4dd20d2b21d2fd27dff5",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+        "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+        "actualUnit5ContinueSubjectCueTeachingPracticeReturnAndAdvanceStayOnUnit5",
+        "placementWithTaughtUnit1ButUntaughtUnit4RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit5WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit6AnimacyTransferTest.kt",
+      "sha256": "1f13c09fca210a73f094d80a2dffe5fab383c4d501c57f2af2742e497a4becda",
+      "literalMethods": [
+        "completeTeachingPrecedesPracticeAndRemediationRestoresElevenExamples",
+        "unit6ScoredEvidenceAndEveryPriorExampleRecordRemainWhole",
+        "teacherAndFriendAnswersCannotReplaceRequiredInanimateClassification",
+        "restoredDuplicateAndCoherentNativeForgeryAreRejected",
+        "coordinatedKeyAndApplicationReversalCannotRedefineInanimateCase",
+        "authenticOldFourAnswerHistoryIsPreservedButStaleAfterRenewal",
+        "wrongInanimateCaseDisplaysFeedbackAndFullRemediation"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit6CumulativeReviewTest.kt",
+      "sha256": "28d6b3e7d32031593de4affaa6a57757f69cb20755f272f3ed3d9a3e95e3603b",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+        "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+        "actualUnit6ContinueNounBehaviorCueTeachingPracticeReturnAndAdvanceStayOnUnit6",
+        "placementWithTaughtUnit1ButUntaughtUnit5RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit6WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit6FeedbackCorrectionTest.kt",
+      "sha256": "1a8a66b3979fdc779ceaf5bc5ad4e50b47d6a7a59729085a6c107c5cc4b6f485",
+      "literalMethods": [
+        "feedbackExplainsPossessorRolesPersonNumberAndDestinationCase",
+        "wrongPossessiveSelectionDisplaysThePossessorExplanation",
+        "historicalGenericFeedbackCreditIsRetainedButStale"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit6WiderPolicyTest.kt",
+      "sha256": "c592ae6097e85763c36d99be80657047b36eda73434120e93791710a71326bde",
+      "literalMethods": [
+        "threeFreshSlotsUseBothNonFirstCandidatesAndRequireAllAnswersBeforeActualAdvance",
+        "genuineOldPartialTasksUseOwnEligibilityAndActualLegacyPolicyOnAdvance",
+        "genuinePriorPackDeclaresV1AndCannotAcceptFutureV2Tasks",
+        "currentAndDownstreamOldSnapshotsRejectChangedContentAndAcceptOnlyExactPriorDeclaration",
+        "versionsRolesLinksEpochAndPacklessWritesFailClosedWithoutChangingHistory",
+        "newSubjectUiRepairsFullTeachingAndRequiresAllThreeFreshAssignedAnswers",
+        "genuineLegacyUiKeepsTwoChecksAndBoundNounRepairInsteadOfNewObligation"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit7AgreementTeachingTest.kt",
+      "sha256": "4ed27c8b594b58e030e33e7ae97df783d7c66781df3de76ded9cf7c5d1e6cb46",
+      "literalMethods": [
+        "completeAgreementTeachingPrecedesPracticeAndRepairRestoresAllElevenExamples",
+        "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+        "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+        "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+        "wrongGenitiveChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+        "wrongNominativeChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+        "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+        "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit7CumulativeReviewTest.kt",
+      "sha256": "c4fdf25371bb30f9a61e3aab7166d49516443b040fa76b06c9a078c64bfedc32",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+        "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+        "actualUnit7ContinueInanimateCaseCueTeachingPracticeReturnAndAdvanceStayOnUnit7",
+        "placementWithTaughtUnit1ButUntaughtUnit6RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit7WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit7FeedbackCorrectionTest.kt",
+      "sha256": "eb7a618fd7b8694434526cea1fc8948e88b02b656ec6db89f387595460988dbc",
+      "literalMethods": [
+        "feedbackExplainsGenderNumberAndNominativeAgreement",
+        "wrongAdjectiveSelectionDisplaysTheAgreementExplanation",
+        "historicalGenericFeedbackCreditIsRetainedButStale"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationHistoryTest.kt",
+      "sha256": "94db4d3d6af4697b23679050b9b31e9508ab6339cc0e44525627abb251ac037f",
+      "literalMethods": [
+        "originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact",
+        "oldAcceptedWorkAndResumeStayStoredThroughBackupReopenButNeedCurrentWork"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationTest.kt",
+      "sha256": "75d6412dcf7b955a102b2d33c23b94a13c8f108db727d16f1c53bb5871677e5c",
+      "literalMethods": [
+        "ruleAndEnglishScaffoldingAreAvailableBeforeFirstPractice",
+        "repairRestoresTheWholeExplanationAndBothRetainedExamples"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationUiTest.kt",
+      "sha256": "5cf2fa7d80d128ffe199590b2589bcbb86edacaf312edb84da214a9dda73322c",
+      "literalMethods": [
+        "wrongWordingAnswerRestoresTheWholeRuleAndReturnsThroughTheOriginalGuide"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit8AgreementTransferTest.kt",
+      "sha256": "2e4f428710aae35ff7880d019b722f978f85553a46a1de9754927e65e84879c1",
+      "literalMethods": [
+        "completedAgreementNeedsADifferentIndependentAdjective",
+        "guidedAndOtherCorrectPairsCannotCompleteTheIndependentAdjective",
+        "playerRejectsTheSingularBlueFormAndExplainsTheNumber",
+        "allSixCardsPrecedePracticeAndRemediationRestoresThem",
+        "restoringTheOriginalValidFormSelectionCannotClearDistinctAdjectiveEvidence",
+        "coordinatedKeyAndApplicationCannotMakeTheSingularAPluralAnswer",
+        "coherentNativeTextAndHashForgeryCannotChangeTheBlueSource",
+        "historicalFourAnswerCompletionStaysSavedButCannotCreditCurrentContent",
+        "unaccentedSourcePairAndOtherCorrectFieldsArePreserved"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit8CumulativeReviewTest.kt",
+      "sha256": "692a896d20c0020217853101984dd5cdd716e5227e31160e4f88565483ea3dd8",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+        "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+        "actualUnit8ContinueNominativeAgreementCueTeachingPracticeReturnAndAdvanceStayOnUnit8",
+        "placementWithTaughtUnit1ButUntaughtUnit7RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit8WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit8ExistenceHistoryTest.kt",
+      "sha256": "6ae38eb5a5dc96b53d5280205d57d83b244c1840e57c9542a0b6ab67cce89421",
+      "literalMethods": [
+        "frozenEvidenceOtherObjectivesAndLaterGenitiveStayExact",
+        "historicalCreditStepAndResumeSurviveBackupButCannotCreditTheNewUnit",
+        "positiveObjectiveNeedsEachIndependentAnswerAndLabsUseCurrentItems",
+        "restoringTheOriginalAnalysisOrForgingTheNewTupleFailsClosed"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit8ExistenceSequenceTest.kt",
+      "sha256": "69745a22c49eed7b7a689ff4f22e96edf5fcb795fcebfff0a07d9e5dfee546ab",
+      "literalMethods": [
+        "activeAvailabilityChainDoesNotTeachOrScoreLaterAbsenceGrammar",
+        "fullRepairRestoresPositiveInstructionAndOnlyTwoPositiveExamples"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit8ExistenceUiTest.kt",
+      "sha256": "48aff11f8fe8a6fa507d39c41ea4266b04271cf89eb4843dd55f0dc2f85e7c64",
+      "literalMethods": [
+        "wrongPositiveAnswerRepairsBothExamplesAndReturnsThroughTheGuide"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit8PluralInstructionTest.kt",
+      "sha256": "68b42964a500d14add17d0f23fdd1843608c6708cd24d2363a9320a58f7ff11a",
+      "literalMethods": [
+        "everyPluralCardPrecedesPracticeAndFullRemediationRestoresFourteenForms",
+        "unit8ScoredObjectsAndAllPriorNativeExamplesAndProvenanceRemainIdentical",
+        "earlierSevenAnswerPluralCompletionCannotCreditLaterSpellingReinforcement",
+        "laterSpellingNeedsItsOwnReverseNounAndAdjectiveEvidence",
+        "playerRejectsSingularWordForPluralAndOffersFullPluralRemediation",
+        "authenticOldSevenAnswerHistoryIsPreservedButStaleAfterInstructionRenewal"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit9AgreementTransferTest.kt",
+      "sha256": "a6d70edb0c9f1f6bb79107d1c5e5c0de0f8fb63c92cacd6d8611867b0f97fbd7",
+      "literalMethods": [
+        "completedAgreementNeedsADifferentIndependentMasculineNoun",
+        "guidedAndOtherCorrectPairsCannotCompleteTheIndependentMasculineNoun",
+        "playerRejectsTheFeminineFormAndExplainsTheGender",
+        "allSixCardsPrecedePracticeAndRemediationRestoresThem",
+        "restoringTheOriginalValidRepeatedContrastCannotClearDistinctMasculineNounEvidence",
+        "coordinatedKeyAndApplicationCannotMakeTheFeminineAMasculineAnswer",
+        "coherentNativeTextAndHashForgeryCannotChangeTheHourSource",
+        "historicalSixAnswerCompletionStaysSavedButCannotCreditCurrentContent",
+        "unaccentedSourcePairAndOtherCorrectFieldsArePreserved"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit9CompositionFeedbackCorrectionTest.kt",
+      "sha256": "7b6df73f4da486dcae7a881affe232590244980cb12a585b290534aecc363e9a",
+      "literalMethods": [
+        "compositionAndAgreementFeedbackExplainsTheSourceDistinctions",
+        "wrongThousandsGroupDisplaysTheCaseDistinction",
+        "historicalGenericFeedbackCreditIsRetainedButStale"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit9CumulativeReviewTest.kt",
+      "sha256": "1d1fb2fae0ef6cc963eebfadf9951ab93b617b621527c23103face26a9ca2151",
+      "literalMethods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+        "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+        "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+        "actualUnit9ContinueNominativePluralCueTeachingPracticeReturnAndAdvanceStayOnUnit9",
+        "placementWithTaughtUnit1ButUntaughtUnit8RepairsTheMissingOwnerInsteadOfUnit1",
+        "heldUnit9WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit9NumberFeedbackCorrectionTest.kt",
+      "sha256": "64b22f197b3c42aa13091b90217aa2b04e34b5c2f02e1f4cb517c9c3909e82cd",
+      "literalMethods": [
+        "numberFeedbackDistinguishesActualValuesAndPlaceValue",
+        "wrongHundredsSelectionDisplaysTheDifferentValues",
+        "historicalGenericFeedbackCreditIsRetainedButStale"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit9QuantityRuleCorrectionTest.kt",
+      "sha256": "810a294db3b39b680d451926bf65e05a70107f28dbd7f6dc3c858b1267e9f861",
+      "literalMethods": [
+        "completeRulesTeachTeenExceptionsAndScopeBeforePractice",
+        "wrongTeenAnswerShowsTheCompleteExplanation",
+        "coordinatedKeyAndApplicationEditsCannotReverseTheTeenContext",
+        "threeChoiceContextCannotSwapItsAnswerAndApplicationTogether",
+        "historicalFragmentAttemptIsRetainedButCannotCreditTheCompleteRule"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit9ReinforcementReviewTest.kt",
+      "sha256": "b797c260c6f948af146470872c6eff029455044555c931e4b762c82254caa0d6",
+      "literalMethods": [
+        "earlierQuantityCompletionCannotCreditTheLaterRepeatedGuideOrPatternChecks",
+        "repeatedGuideAndBasicCountsCannotReplaceRequiredAnimateAccusativeContext",
+        "oneHourNominativeExplanationCannotCreditOtherBasicCountingPatterns",
+        "allTeachingAndWorkedExamplesPrecedePracticeAndReturnInRemediation"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit9WiderPolicyTest.kt",
+      "sha256": "3d6b6b222b467f2cd3fcd0774e66349a77cbe5bc5f2b46910db792312add72ce",
+      "literalMethods": [
+        "threeFreshSlotsUseNonFirstGenderCandidateAndRequireAllAnswersBeforeActualAdvance",
+        "genuineOldPartialTasksUseOwnEligibilityAndActualLegacyPolicyOnAdvance",
+        "genuinePriorPackDeclaresV1AndCannotAcceptFutureV2Tasks",
+        "currentAndDownstreamOldSnapshotsRejectChangedContentAndAcceptOnlyExactPriorDeclaration",
+        "versionsRolesLinksEpochAndPacklessWritesFailClosedWithoutChangingHistory",
+        "newGenderUiRepairsFullTeachingAndRequiresAllThreeFreshAssignedAnswers",
+        "genuineLegacyUiKeepsTwoChecksAndBoundPluralRepairInsteadOfNewObligation",
+        "allGenuineLifecycleBackupsRestoreReopenAndRetainExactRowsAndCutoff",
+        "fiveGenderCandidatesRequireCurrentTaughtEvidenceAndExactRepairWithoutChangingAssetTuples"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units1115GapCaptureTest.kt",
+      "sha256": "0b6bbc711f04a2cc83ed773e25b8072ddcf90b763b7774fddc6803a10fb361f3",
+      "literalMethods": [
+        "unitElevenGapAtNormalFont"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units1115InstructionalValidityTest.kt",
+      "sha256": "179429290f1a3ee8a851a13b48f34c727f3dffac7513ff5f076009bc1acf3421",
+      "literalMethods": [
+        "everyRecognitionObjectiveHasAnIndependentFeatureValidCheck",
+        "changingOnlySourceIdWhileRetainingSourceRecordIdFails",
+        "changingSourceRevisionWhileRetainingSourceRecordIdFails",
+        "changingOriginalSourceTextAndHashWhileRetainingSourceRecordIdFails",
+        "copiedSourceRecordIdWithDifferentFrozenContentCannotShareASpan",
+        "anUnrelatedAdmittedDistractorFails",
+        "aShownLineContainingItsAnswerFailsAsQualifyingEvidence",
+        "retainingADirectEnglishCueWithTheSameAnswerFails",
+        "changingProseRationaleCannotValidateAnInvalidContrast",
+        "unrelatedRemediationCannotSatisfyARecognitionObjective",
+        "aSkippedRecognitionObjectiveDoesNotAdvance",
+        "alteringUnitElevenDoesNotMoveEarlierUnitDigests",
+        "learnerFacingReferencesDoNotDenyAPackagedLessonBody",
+        "learnerFacingReferenceDoesNotClaimUnpreparedUnitsHaveLessonBodies",
+        "responseOptionsMustShareTheDeclaredKind",
+        "everyAdvancementCheckNamesOneExplicitTarget",
+        "impersonalObjectiveCannotBeSatisfiedByAnUnrelatedInflectedForm",
+        "englishGlossCannotAnswerARussianSpellingQuestion",
+        "knownAmbiguityClassesFailClosed",
+        "aGenericRationaleIsNotTiedToTheTarget"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units1115MappingGapTest.kt",
+      "sha256": "679ed136bb331524f521d429b9d791b91201a85079e1028c7eefc905fd9b8530",
+      "literalMethods": [
+        "unitsElevenThroughFifteenRecordPendingMappingAndReviewPendingContent",
+        "preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded",
+        "anEmptyUnitCannotBeMarkedContentComplete",
+        "aSkippedRecognitionObjectiveCannotSatisfyContentComplete",
+        "fakeApprovalCannotInstallOrMapUnitEleven",
+        "alteredFrozenIdentityStillCannotValidateAQualifyingCheck"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units1620SourceIntakeTest.kt",
+      "sha256": "25a0f5c75af1cae31733f80df86a0201562e65e547a23c34fe24780b6b99fbc1",
+      "literalMethods": [
+        "structuralMappingsMatchTheOwnedEditionObservations",
+        "frozenSourceBytesAndRevisionsStayImmutable",
+        "everyRussianSpanOccursInItsRecordedSource",
+        "unsupportedSubtopicsStayUnavailableAndUnitsCannotAdvance",
+        "unitEighteenCannotBecomeContentCompleteWithoutComparisonAndRelativeSources",
+        "unitNineteenCannotBecomeContentCompleteWithoutConditionalAndObligationSources",
+        "unitTwentyCannotBecomeContentCompleteFromARedLinkVerbPageOrDictionaryRows",
+        "learnerFacingTextDropsWikibooksEmphasisAndKeepsTheFrozenSource",
+        "noPenguinContentOrPrivatePdfEnteredGit"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units2125SourceIntakeTest.kt",
+      "sha256": "ab1cd28c0f3ca8c6e400c86959d50ec12b49aee5257af4acc1bd1f01811df8b5",
+      "literalMethods": [
+        "structuralMappingsAreDigestBoundAndStayUnsigned",
+        "frozenSourceIdentityAndProvenanceSpansAreRequired",
+        "unsupportedObjectivesCannotAcquireAdvancementChecksOrContentCompleteStatus",
+        "partialStrandsStayShortOfTheMissingSources",
+        "unitTwentyThreeElapsedTimeStaysReviewPendingAndPartialEvidenceStaysClosed",
+        "keywordTextDoesNotAdmitASourceCapability",
+        "forgedRevisionMixedSpanAndWrongObjectiveCapabilitiesFail",
+        "checksRejectCircularFeedbackAndLineLabelRecall",
+        "listeningInstructionGuardAllowsListenerNounsButRejectsAudioDirections",
+        "datedNamesClaimsAndLinkedAudioStayOutOfLearnerContent",
+        "noPenguinContentInternetPermissionOrOpenReleaseGate"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+      "sha256": "a50bad6bcc2bea88698ddbe407f2be920c9884ef7e5f00bd4f6f07ab5eb0aab7",
+      "literalMethods": [
+        "retainedSourceBytesMatchTheFrozenIdentityTwice",
+        "admittedCapabilitiesBindSpanUnitObjectiveAndClaim",
+        "partialStrandsDoNotClearBroadClaimsAndOptionalMaterialDoesNotGate",
+        "presentPassiveGlossFollowsOnlyTheExplicitParenthetical",
+        "wikipediaLicenseRouteIsNotTheWikibooksSnapshot",
+        "duplicateSpanMarkersFailClosed",
+        "forgedMutableWrongAndExcludedSourcesStayClosed",
+        "generatedRussianPenguinAudioAndReleaseStayClosed",
+        "neighboringSpansKeywordsAndInactiveVariancesStayClosed",
+        "readingAndCorrespondenceExperiencesFailClosed"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units2630StructuralMappingTest.kt",
+      "sha256": "31bafc4d59582b12fd407a662f813ed4effe22b7bc6cfeda3b472250229e7707",
+      "literalMethods": [
+        "structuralObservationsStayPendingAndUnsigned",
+        "packagedCurriculumRecordsPendingPageRangesWithoutApprovingAssignments",
+        "mappingWorksheetsBindStructuralFactsAndStayUnresolved",
+        "unresolvedVarianceBlocksCompletionWithoutChoosingTheProposal",
+        "emptyUnitsCannotBecomeContentCompleteOrAdvance",
+        "pageRangeBookAttestationAndEmptyContentCannotAdvance",
+        "preparedLateUnitIsNotPermanentlyBlockedFromAdvancement",
+        "pageRangesKeywordsAndMutablePagesDoNotClearBlockers",
+        "russianWithoutProvenanceIsRejectedAndPenguinStaysOut"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units35ChunkCaptureTest.kt",
+      "sha256": "3e9f9842dd9285596fb69dab527bc59c9d8c343f3f2437e2739104f928dd75f7",
+      "literalMethods": [
+        "genderCardIsShortAtNormalFont"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units35SourceIntakeTest.kt",
+      "sha256": "c7a746deb8439238331fa958dd961c4903b748bbc468e5623093bd1ba0d222f4",
+      "literalMethods": [
+        "everyRussianCandidateHasAnAdmittedImmutableSourceAndRights",
+        "learnerGlossesAreDelimitedSensesAndEnglishClaimsFailClosed",
+        "excludedSourcesAndUnresolvedRevisionsFailClosed",
+        "sourceMutationChangesOnlyTheAffectedDigestAndReviewerFieldsDoNot",
+        "penguinMarkersStayOutAndReleaseStaysClosed"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units610ChunkCaptureTest.kt",
+      "sha256": "53b314715dff47a05010ceb1e1ec92921c460c661af8cb64a4a0d44dec78983e",
+      "literalMethods": [
+        "unitSixConceptCardAtNormalFont",
+        "unitSevenConceptCardAtNormalFont",
+        "unitEightConceptCardAtNormalFont",
+        "unitNineConceptCardAtNormalFont",
+        "unitTenConceptCardAtNormalFont"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units610InstructionalValidityTest.kt",
+      "sha256": "a4d2be989693b99166ea8bdb4aec3b168c02b9be91ca7a7409463a6f42735ff4",
+      "literalMethods": [
+        "everyRecognitionObjectiveHasAnIndependentFeatureValidCheck",
+        "renamingSourceMeaningToFormSelectionDoesNotValidateATranslationMatch",
+        "retainingADirectEnglishCueWithTheSameAnswerFails",
+        "anUnrelatedAdmittedDistractorFails",
+        "guidedOnlyContrastsDoNotSatisfyARecognitionObjective",
+        "anUnrelatedDistractorCarryingSameWordStillFails",
+        "aDifferentLemmaWithTheSameRelationLabelFails",
+        "aShownLineContainingItsAnswerFailsAsQualifyingEvidence",
+        "anAnswerSentenceSelectedByCueTokenFails",
+        "falsifiedRelationshipIdsFail",
+        "changingProseRationaleCannotValidateAnInvalidContrast",
+        "changingOnlySourceIdWhileRetainingSourceRecordIdFails",
+        "changingSourceRevisionWhileRetainingSourceRecordIdFails",
+        "changingOriginalSourceTextAndHashWhileRetainingSourceRecordIdFails",
+        "aWikibooksRecordShapedLikeAnOpenRussianLemmaCannotBeTheSameLemma",
+        "sameTruncatedSourceRecordIdWithDifferentFrozenContentCannotShareASpan",
+        "contentCompleteRecognitionObjectivesKeepAnIndependentCheck",
+        "aRationaleThatDoesNotExplainTheDistinctionFails",
+        "sourceMeaningAloneCannotSatisfyAGrammarObjective",
+        "englishRuleProseCannotBeStoredAsARussianExample",
+        "bookAttestationAndPartialObjectivesDoNotAdvance",
+        "unitNineBoundaryCasesAreIndependentQualifyingChecks"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units610SourceIntakeTest.kt",
+      "sha256": "36887c834e0e89fea45d960dcf0d40489e5d4439288a0f1a42bbafb421109a4d",
+      "literalMethods": [
+        "unitsSixThroughTenStayReviewPendingAndSourceBound",
+        "earlierUnitDigestsStayPutAndLaterUnitsStayIsolated",
+        "wrongUnitPacketSubstitutionFails",
+        "governedContrastsStaySourceBoundAndBookAttestationDoesNotAdvance",
+        "noPenguinAudioOrNetworkWasAdded",
+        "retainedSourceBytesMatchImmutableRevisions"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+      "sha256": "a1366cd15e960cd7454ab804cbe88e974eac827cf3173b8f22150f1d211a155a",
+      "literalMethods": [
+        "packValidatesAndRefusesGeneratedOrCatalogBoundContent",
+        "approvedReviewRequiresACompleteMatchingRecord",
+        "installedUnitRejectsPendingAndRejectedInstructionalRecords",
+        "linguisticReferencesCannotUseNotRequired",
+        "productHelpAndOperationalGuidanceMayUseNotRequired",
+        "referencesRejectMissingAndUnknownClassifications",
+        "noUnitCanBeInstalledWithPendingReviewOrMapping",
+        "installedUnitsAreRejectedWhileRequiredExperiencesAreMissing",
+        "unitsThreeToFiveStayDevelopmentAndLaterUnitsStayClosed",
+        "genericBookDirectionCountersAndEmptyArraysCannotSatisfyContentCompleteness",
+        "durablePackIdentityStaysHonestAndUnitIsolationHolds",
+        "notPreparedBookDirectionCannotBePromotedOrAdvanced",
+        "unitOneProgressesInOrderAndRestoresAfterRestart",
+        "unitTwoRequiresUnitOneAndCannotUseUnrelatedCatalogAudio",
+        "advancementNeedsMoreThanOneCheckAndBookAttestation",
+        "advancementCannotSkipARequiredObjective",
+        "todayShowsOneBoundedSessionInsteadOfTheUnitInventory",
+        "onboardingAndPrimaryControlsAreVisible",
+        "unitAndLabHeadingsStayInsideTheRoot",
+        "resolvedAssetRecordsAreRequiredInsteadOfCounters",
+        "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+        "noInternetPermissionIsDeclared",
+        "upgradeKeepsExportAndRecordingRows"
+      ],
+      "package": "dev.russiancompanion.v2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/CurriculumReadinessReconciliationTest.kt",
+      "sha256": "70f450dca980372b93036141d90557998d63c39c47ac2a8d81368ed619619649",
+      "literalMethods": [
+        "committedReportsMatchTheGeneratorAndStayByteIdentical",
+        "sourceSnapshotDoesNotAttestToAnEphemeralMergedManifest",
+        "matrixUsesCanonicalDigestsReviewsAndDoesNotInventApproval",
+        "aMissingManifestIsNotReportedAsAReviewPacket",
+        "droppedOrDuplicatedUnitsFailClosed",
+        "keywordTextBookAttestationAndCountersDoNotClearRealBlockers",
+        "unsupportedOrUntaughtObjectivesCannotAdvanceAndInstallClaimsStayUnapproved",
+        "notPreparedUnitsCannotAdvanceAndReadinessChangeDoesNotClearOtherBlockers",
+        "narrowMarkerChecksDoNotClaimComprehensiveInspection",
+        "unavailableStepsSplitContentFromAssetAndLocalExperience",
+        "catalogReachabilityCountsOrphansSharesAndIntraUnitDuplicatesSeparately"
+      ],
+      "package": "dev.russiancompanion.v2.audit"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/GapClosureDossierTest.kt",
+      "sha256": "d0d4f01caa932b64ab94a99d06447afa113e226b080bab0d2f135cccb6491c90",
+      "literalMethods": [
+        "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease"
+      ],
+      "package": "dev.russiancompanion.v2.audit"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt",
+      "sha256": "ee992b27498be153b37033a2df8f20aa44541ddb7579fccf2c1ba29399ee5204",
+      "literalMethods": [
+        "unresolvedSourceCapabilitiesStayEmptyAndVarianceUnitsStayUnprepared",
+        "blankMismatchedAndNonOwnerDecisionsFailClosedWithoutChangingProduction",
+        "mappingAcceptanceFailsForInventedOrMismatchedFacts",
+        "preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+        "historicalRecordsAndPremiumBlueprintStayUnchanged",
+        "referenceFileComparisonCorrectsLateBoundariesAndStaysUnsigned",
+        "decisionPackageStatesRecommendationsAndLeavesOwnerFieldsBlank"
+      ],
+      "package": "dev.russiancompanion.v2.audit"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/PostPr53ReadinessReconciliationTest.kt",
+      "sha256": "101632cd6376d3c99bef57652427224b15998b25ade6dbf92dc5d875587f5616",
+      "literalMethods": [
+        "reportMatrixMatchesTheLiveCurriculum",
+        "unexpectedFileBetweenRecordedContentCommitAndBranchHeadFailsTheLock",
+        "syntheticMergeValidatesTheSecondParentRatherThanItsParent"
+      ],
+      "package": "dev.russiancompanion.v2.audit"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/ProductOwnerAcceptanceBoundaryTest.kt",
+      "sha256": "b28eb7ec51c00cd8b44ad94ef6a61215fd0abbd64858ed6e0d3b8bb1d024d691",
+      "literalMethods": [
+        "productOwnerAcceptanceCannotMasqueradeAsQualifiedReview"
+      ],
+      "package": "dev.russiancompanion.v2.audit"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/curriculum/EvidenceSchemaTest.kt",
+      "sha256": "902a2719fe0ab623d05fec135f88984b76b7256272f199d7b37b687434d36642",
+      "literalMethods": [
+        "automatedSignalsAndAModelNameDoNotApprove",
+        "ownerAcceptanceRequiresThePriorChainAMatchingDigestAndEvidence",
+        "stageSequenceMustEqualTheExactRequiredPrefix",
+        "quotedAndOriginalEvidenceAreValidatedDifferently",
+        "governedCurriculumChangesInvalidateDownstreamAuditStates"
+      ],
+      "package": "dev.russiancompanion.v2.curriculum"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackageTest.kt",
+      "sha256": "df666ca7b9e741888fc53a54186cc1ee24c79d47c9ecd519a58a4897bc96b4f2",
+      "literalMethods": [
+        "committedPackageMatchesTheCurriculumTraversal",
+        "packageDigestIsTheInstructionalContentDigest",
+        "reviewerAndMappingFieldsStayBlank",
+        "validatorRejectsOmissionsDuplicatesBrokenLinksAndFabrication",
+        "reviewPackageDoesNotBypassTheReleaseGate",
+        "instructionalDigestChangesForEachGovernedFieldCategory",
+        "contentReviewDigestSurvivesApprovalActivation"
+      ],
+      "package": "dev.russiancompanion.v2.review"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt",
+      "sha256": "c839b37dd67e8fc120ef1f26fa59d94a2ef56b0bec7956c9feb771048b77f726",
+      "literalMethods": [
+        "unitOneAndUnitTwoPackagesStayIsolated",
+        "committedUnitPackagesMatchTheGenerator",
+        "unitsOutsideThePreparedPairCannotApproveOrSkipMissingRecords",
+        "aLaterUnitMutationDoesNotApproveOrInvalidateAnEarlierUnit",
+        "unitTwoOnlyMutationLeavesUnitOneDigestUntouched",
+        "mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields",
+        "curriculumSourceCommitMustContainTheGovernedCurriculum"
+      ],
+      "package": "dev.russiancompanion.v2.review"
+    }
+  ],
+  "changesSinceHistoricalBroadSource": [
+    "A\tapp/src/test/java/dev/russiancompanion/v2/BackupImportCoordinatorLimitsTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/BackupImportLimitsTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/CurrentPhase2TupleMutationTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/FragmentGlossTeachingTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/FragmentGlossUiTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/OptionPresentationTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/OptionPresentationUiTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/ReferenceDetailSearchTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/ReferenceDetailSearchUiTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/RepeatedTaskCreditTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/RepeatedTaskRepairUiTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/RestorePreviewReviewHistoryTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/RestorePreviewReviewIntegrationTest.kt",
+    "M\tapp/src/test/java/dev/russiancompanion/v2/Unit11AgreementRemediationTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationHistoryTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationUiTest.kt",
+    "M\tapp/src/test/java/dev/russiancompanion/v2/Unit24ContextTransferTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/Unit28IndependentIdentityTest.kt",
+    "M\tapp/src/test/java/dev/russiancompanion/v2/Unit4NominativeRoleTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/Unit4PresentRepairUiTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/Unit4PresentTeachingTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationHistoryTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationUiTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/Unit8ExistenceHistoryTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/Unit8ExistenceSequenceTest.kt",
+    "A\tapp/src/test/java/dev/russiancompanion/v2/Unit8ExistenceUiTest.kt",
+    "M\tapp/src/test/java/dev/russiancompanion/v2/Units1620SourceIntakeTest.kt",
+    "M\tapp/src/test/java/dev/russiancompanion/v2/Units2125SourceIntakeTest.kt",
+    "M\tapp/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+    "M\tapp/src/test/java/dev/russiancompanion/v2/Units2630StructuralMappingTest.kt",
+    "M\tapp/src/test/java/dev/russiancompanion/v2/Units610InstructionalValidityTest.kt",
+    "M\tapp/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+    "M\tapp/src/test/java/dev/russiancompanion/v2/audit/CurriculumReadinessReconciliationTest.kt",
+    "M\tapp/src/test/java/dev/russiancompanion/v2/audit/PostPr53ReadinessReconciliationTest.kt",
+    "M\tapp/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt"
+  ]
+}

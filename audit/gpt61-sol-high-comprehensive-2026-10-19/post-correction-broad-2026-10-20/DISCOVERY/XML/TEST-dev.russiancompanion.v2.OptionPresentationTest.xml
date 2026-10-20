@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.OptionPresentationTest" tests="5" skipped="5" failures="0" errors="0" timestamp="2026-10-20T09:15:21.668Z" hostname="d0aced911621" time="0.005">
+  <properties/>
+  <testcase name="currentCorpusPreservesEveryOptionAndDispersesCorrectPositionsInAllThreeRoutes" classname="dev.russiancompanion.v2.OptionPresentationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="permutationIgnoresAnswerFeedbackAndAuthoredOrderingAndHasAFixedVersionVector" classname="dev.russiancompanion.v2.OptionPresentationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="newRulePreservesExactScoringAndOrderThroughBackupAndNamedDatabaseReopen" classname="dev.russiancompanion.v2.OptionPresentationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="lessonLabAndReviewContextsAreStableButReviewAssignmentIdsVaryPresentation" classname="dev.russiancompanion.v2.OptionPresentationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="allRetainedAssignmentsKeepExactLegacyOrderAndAssignmentHash" classname="dev.russiancompanion.v2.OptionPresentationTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit4PresentTeachingTest" tests="6" skipped="6" failures="0" errors="0" timestamp="2026-10-20T09:15:26.953Z" hostname="d0aced911621" time="0.002">
+  <properties/>
+  <testcase name="correctTargetsCannotFinishOrdinaryRequirementsUntilNewTeachingIsRecorded" classname="dev.russiancompanion.v2.Unit4PresentTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="guidedAnswersCannotReplaceRequiredTargetsAndWrongThenRightStillUsesExactKeys" classname="dev.russiancompanion.v2.Unit4PresentTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="existingNativeItemsExamplesRecordsAndOtherUnitContentsRemainExact" classname="dev.russiancompanion.v2.Unit4PresentTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="oldCorrectAnswersAndResumeStayStoredButCannotSupplyChangedUnitCredit" classname="dev.russiancompanion.v2.Unit4PresentTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="oldAndFreshAnswersSurviveBackupReplacementAndNamedDatabaseReopenWithoutRelabelling" classname="dev.russiancompanion.v2.Unit4PresentTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="everyRequiredTargetIsTaughtWithExactAdmittedAlternativesBeforeDistinctGuidedWork" classname="dev.russiancompanion.v2.Unit4PresentTeachingTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

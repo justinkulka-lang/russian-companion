@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.presentation.navigation.DailyPlanUiTest" tests="7" skipped="7" failures="0" errors="0" timestamp="2026-10-20T09:15:19.890Z" hostname="d0aced911621" time="0.003">
+  <properties/>
+  <testcase name="homeIdentifiesRequiredWorkAndTheChecklistRecordsExternalCompletion" classname="dev.russiancompanion.presentation.navigation.DailyPlanUiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="missingPracticeAudioStaysIncompleteWhileOtherWorkRemainsAvailable" classname="dev.russiancompanion.presentation.navigation.DailyPlanUiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="continueOpensTheNamedBookPlanNotTheGenericChecklist" classname="dev.russiancompanion.presentation.navigation.DailyPlanUiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="failedChecklistSaveKeepsThePriorStateAndRetries" classname="dev.russiancompanion.presentation.navigation.DailyPlanUiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="prescribedPracticeStaysDisabledWhenNoPrescribedWordIsPlayable" classname="dev.russiancompanion.presentation.navigation.DailyPlanUiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="beginAndStartOpenTheFirstPlayablePrescribedWord" classname="dev.russiancompanion.presentation.navigation.DailyPlanUiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="continueOpensTheNamedAnkiPlanAfterBookCompletion" classname="dev.russiancompanion.presentation.navigation.DailyPlanUiTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

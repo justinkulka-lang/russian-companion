@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.CumulativeReviewStorageTest" tests="18" skipped="18" failures="0" errors="0" timestamp="2026-10-20T09:15:21.741Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="genericKernelPreservesTheOriginalUnit3PolicyAndAssignmentIdentity" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="prescribedAndOptionalAnswersNeverSupplyReviewOrGainExtraPrescribedCredit" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="completionMetadataCannotLinkAReviewToAnotherUnitDuringRestore" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="malformedRolePreBoundaryAndWrongAssignmentDigestNeverSupplyCompletion" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="disabledOrWrongPolicyRejectsOldAssignmentsAndAnswersWithoutMutation" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="immutableSlotsSpanTwoTaughtObjectivesAndRepeatedOpenDoesNotResample" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="staleEpochWrongAssignmentInvalidSlotAndOutOfOptionsAreRejectedWithoutWrites" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="forgedLinksOrdersRolesAndAssignmentHashCannotReplaceAnyLearnerRows" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="typedPoliciesRefuseEmptyRepeatedAndAmbiguousCandidatePools" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="latestAcceptedAnswerWinsAndDuplicateTapsDoNotAllocateExtraOrder" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="undeclaredTargetsAndFlagOnlyLaterGatesCannotCreateHistory" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="legacyDocumentWithoutNewFieldsDecodesWithNoSyntheticReviewRows" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="realVersionNineDatabaseMigratesWithoutRewritingHistoricalRowsOrInventingCredit" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="offlineCloseAndReopenRetainsExactAssignmentAnswersAndCurrentCompletion" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="newBackupRoundtripReplacesReviewHistoryAndRestoreFaultRollsItBack" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="placementAndBareLegacyCorrectIdsCannotCreateAssignments" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="changedKeyTeachingAndOwnerAvailabilityRejectCreditButUnrelatedUnitsDoNot" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="schemaOneBackupRestoresNoSyntheticReviewAndClearsReplacedLearnerHistory" classname="dev.russiancompanion.v2.CumulativeReviewStorageTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

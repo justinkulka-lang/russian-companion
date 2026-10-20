@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit8ExistenceSequenceTest" tests="2" skipped="2" failures="0" errors="0" timestamp="2026-10-20T09:15:27.215Z" hostname="d0aced911621" time="0.0">
+  <properties/>
+  <testcase name="fullRepairRestoresPositiveInstructionAndOnlyTwoPositiveExamples" classname="dev.russiancompanion.v2.Unit8ExistenceSequenceTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="activeAvailabilityChainDoesNotTeachOrScoreLaterAbsenceGrammar" classname="dev.russiancompanion.v2.Unit8ExistenceSequenceTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

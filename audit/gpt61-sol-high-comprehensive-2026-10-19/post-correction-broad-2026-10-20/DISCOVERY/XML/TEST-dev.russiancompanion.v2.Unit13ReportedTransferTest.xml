@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit13ReportedTransferTest" tests="10" skipped="10" failures="0" errors="0" timestamp="2026-10-20T09:15:23.481Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="authenticSixAnswerHistoryStaysSavedButCannotCreditTheRenewedPack" classname="dev.russiancompanion.v2.Unit13ReportedTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="threeCardsPrecedePracticeAndFullRemediationQualifiesBothLanguages" classname="dev.russiancompanion.v2.Unit13ReportedTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="originalIndependentItemsEarlierObjectiveAndAllExamplesRemainUnchanged" classname="dev.russiancompanion.v2.Unit13ReportedTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="reportedObjectiveRequiresItsOwnIndependentFrameAndEmbeddedTimeInterpretation" classname="dev.russiancompanion.v2.Unit13ReportedTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="originalRepeatedGuideCannotRestoreTheOldReportedChain" classname="dev.russiancompanion.v2.Unit13ReportedTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="coordinatedKeyAndApplicationCannotReverseTheReportedFiniteTimes" classname="dev.russiancompanion.v2.Unit13ReportedTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="playerRejectsReversingPastReportingAndFutureEmbeddedTime" classname="dev.russiancompanion.v2.Unit13ReportedTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="coherentNativeContextAndHashForgeryCannotIntroducePastNationality" classname="dev.russiancompanion.v2.Unit13ReportedTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="sevenCurrentAnswersCompleteBothObjectivesWithoutInventingAnEarlierGuideHistory" classname="dev.russiancompanion.v2.Unit13ReportedTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="laterGuideUsesDifferentContextFromEarlierEveningCheck" classname="dev.russiancompanion.v2.Unit13ReportedTransferTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

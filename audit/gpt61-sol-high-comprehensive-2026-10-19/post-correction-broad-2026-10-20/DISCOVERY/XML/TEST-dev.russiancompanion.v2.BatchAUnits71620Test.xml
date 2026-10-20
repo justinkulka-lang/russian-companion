@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.BatchAUnits71620Test" tests="7" skipped="7" failures="0" errors="0" timestamp="2026-10-20T09:15:20.557Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="currentBatchAExplainsEveryRetainedAndExpandedConstructAndRejectsWrongKeys" classname="dev.russiancompanion.v2.BatchAUnits71620Test" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="exactSpanIdentityRejectsKeywordAndCrossClaimSubstitution" classname="dev.russiancompanion.v2.BatchAUnits71620Test" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="generatedRussianAndInternetStayClosed" classname="dev.russiancompanion.v2.BatchAUnits71620Test" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="admittedCapabilitiesRejectForgeryCrossBindingAndWrongSpans" classname="dev.russiancompanion.v2.BatchAUnits71620Test" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="wikipediaLicenseRouteIsNotTheWikibooksSnapshot" classname="dev.russiancompanion.v2.BatchAUnits71620Test" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="batchAExplanationsNameTheKeyedRelationshipAndRejectASwap" classname="dev.russiancompanion.v2.BatchAUnits71620Test" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="partialUnitsStayBlockedAndClosedChainsCanBeReviewPending" classname="dev.russiancompanion.v2.BatchAUnits71620Test" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.data.local.LocalStoreTest" tests="5" skipped="5" failures="0" errors="0" timestamp="2026-10-20T09:15:18.599Z" hostname="d0aced911621" time="0.0">
+  <properties/>
+  <testcase name="reseedKeepsUserRecordsAndDropsRemovedAudioFromUse" classname="dev.russiancompanion.data.local.LocalStoreTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="shippedSeedOpensANewLearnerAfterShareAlikeConfirmation" classname="dev.russiancompanion.data.local.LocalStoreTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="fileDatabaseKeepsActivityAfterTheStoreIsClosed" classname="dev.russiancompanion.data.local.LocalStoreTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="negativeDurationIsRejectedAtEntry" classname="dev.russiancompanion.data.local.LocalStoreTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="bookEvidenceCannotBeStoredAsVerifiedAndBlankRecordingIsNotCommitted" classname="dev.russiancompanion.data.local.LocalStoreTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit4NominativeRoleTest" tests="7" skipped="7" failures="0" errors="0" timestamp="2026-10-20T09:15:26.473Z" hostname="d0aced911621" time="0.006">
+  <properties/>
+  <testcase name="oldTranslationCompletionHistoryIsPreservedButStaleForTheNewConstruct" classname="dev.russiancompanion.v2.Unit4NominativeRoleTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="twoDistinctIndependentSubjectsAndFullTeachingAreRequired" classname="dev.russiancompanion.v2.Unit4NominativeRoleTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="correctGlossesStayOptionalAndCannotReplaceCaseRoleChecks" classname="dev.russiancompanion.v2.Unit4NominativeRoleTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="legacyGlossRestorationAndCoherentNativeForgeryCannotBypassTheRoleGuard" classname="dev.russiancompanion.v2.Unit4NominativeRoleTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="coordinatedRoleKeyAndCanonicalTupleHashReversalIsRejected" classname="dev.russiancompanion.v2.Unit4NominativeRoleTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="allPriorExamplesRecordsCapabilitiesAndOtherUnitsRemainWhole" classname="dev.russiancompanion.v2.Unit4NominativeRoleTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="wrongCaseRoleShowsTargetedFeedbackAndReturnsToEveryExample" classname="dev.russiancompanion.v2.Unit4NominativeRoleTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

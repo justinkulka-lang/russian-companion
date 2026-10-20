@@ -1,5 +1,7 @@
 # Codex continuation
 
+Current engineering checkpoint: [fresh broad host regression RUNNING](audit/gpt61-sol-high-comprehensive-2026-10-19/post-correction-broad-2026-10-20/NEXT_REVIEW.md). Discovery1320methods/218classes at `8bff21a3d5c4104709cde6e203d65ef7df3a935c`;actual run IN_PROGRESS,not a complete-suite result. Preserve pending inputs and raw failures;read RUNNING_CHECKPOINT.json before resuming.
+
 Current engineering checkpoint: [CC002 foundation inventory and admission plan](audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-cc002/ENGINEERING_CHANGE_REPORT.md). Four selected existing host methods passed at `5ef29a3d829a03a9598c6781be2270beb9ae8fd8`;1000 catalog audio hashes/identity links verified statically,zero new lesson admissions. CC002 remains OPEN. Next:fresh comprehensive host discovery/regression against accumulated corrected source;preserve failures/assertions/history. Audit INCOMPLETE;physical acceptance LAST.
 
 Current engineering checkpoint: [CC010 eight-group reuse reconciliation](audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-cc010/ENGINEERING_CHANGE_REPORT.md). Tested source `2e9f83fb633dfb55b39c237b5caf66d20d2c4c01`:17 selected host methods passed;all eight repeats disclosed,controlled rehearsal retained,prompt-sensitive counter limitation and qualified recheck remain open. App content unchanged. Next:CC002 foundation/modalities source inventory. Audit INCOMPLETE;physical acceptance LAST.

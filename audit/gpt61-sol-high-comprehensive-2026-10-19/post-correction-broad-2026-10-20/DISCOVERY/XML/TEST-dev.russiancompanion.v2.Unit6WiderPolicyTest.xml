@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Unit6WiderPolicyTest" tests="7" skipped="7" failures="0" errors="0" timestamp="2026-10-20T09:15:27.315Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="newSubjectUiRepairsFullTeachingAndRequiresAllThreeFreshAssignedAnswers" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="genuineLegacyUiKeepsTwoChecksAndBoundNounRepairInsteadOfNewObligation" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="currentAndDownstreamOldSnapshotsRejectChangedContentAndAcceptOnlyExactPriorDeclaration" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="versionsRolesLinksEpochAndPacklessWritesFailClosedWithoutChangingHistory" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="genuineOldPartialTasksUseOwnEligibilityAndActualLegacyPolicyOnAdvance" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="genuinePriorPackDeclaresV1AndCannotAcceptFutureV2Tasks" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="threeFreshSlotsUseBothNonFirstCandidatesAndRequireAllAnswersBeforeActualAdvance" classname="dev.russiancompanion.v2.Unit6WiderPolicyTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.russiancompanion.v2.Units2630SourceIntakeTest" tests="10" skipped="10" failures="0" errors="0" timestamp="2026-10-20T09:15:28.834Z" hostname="d0aced911621" time="0.001">
+  <properties/>
+  <testcase name="partialStrandsDoNotClearBroadClaimsAndOptionalMaterialDoesNotGate" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="forgedMutableWrongAndExcludedSourcesStayClosed" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="readingAndCorrespondenceExperiencesFailClosed" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="wikipediaLicenseRouteIsNotTheWikibooksSnapshot" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="presentPassiveGlossFollowsOnlyTheExplicitParenthetical" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="neighboringSpansKeywordsAndInactiveVariancesStayClosed" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="admittedCapabilitiesBindSpanUnitObjectiveAndClaim" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="generatedRussianPenguinAudioAndReleaseStayClosed" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="retainedSourceBytesMatchTheFrozenIdentityTwice" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="duplicateSpanMarkersFailClosed" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
