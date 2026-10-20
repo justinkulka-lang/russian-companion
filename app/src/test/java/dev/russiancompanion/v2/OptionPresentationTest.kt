@@ -18,11 +18,24 @@ import java.io.File
 class OptionPresentationTest {
     @Test fun currentCorpusPreservesEveryOptionAndDispersesCorrectPositionsInAllThreeRoutes() {
         val p = OptionPresentationFixture.pack
-        // CC015 adds four distinct guided I targets; the original622 remain exact.
+        // CC015 adds four guided targets; CC012 later changes exactly four availability items.
         assertEquals(626, p.items.size)
         assertEquals(setOf("u4-g-present-говорить-я", "u4-g-present-видеть-я", "u4-g-present-писать-я", "u4-g-present-идти-я"),
             p.items.drop(622).map { it.id }.toSet())
-        assertEquals(561, p.items.count { it.options.first() == it.answer })
+        val beforeExistence = OptionPresentationFixture.atSource("2c455b96dde9abd1fc8e2b5350df161216cf7e31")
+        val positiveExistence = OptionPresentationFixture.atSource("fe919656bfa2775b5cc2c22f2496d4258343cfea")
+        assertEquals(beforeExistence.items.map { it.id }, positiveExistence.items.map { it.id })
+        assertEquals(setOf("u8-g-availability-0", "u8-i-availability-1", "u8-i-availability-2", "u8-i-availability-3"),
+            beforeExistence.items.filter { it != positiveExistence.item(it.id) }.map { it.id }.toSet())
+        // Keep the original raw-position baseline on its exact historical source.
+        assertEquals(561, beforeExistence.items.count { it.options.first() == it.answer })
+        val originalRequired = beforeExistence.units.flatMap { it.objectives }.filter { it.gating }
+            .flatMap { it.checkItemIds }.distinct().map { beforeExistence.item(it)!! }
+        assertEquals(429, originalRequired.size)
+        assertEquals(379, originalRequired.count { it.options.first() == it.answer })
+        // Every current item must match the exact declared positive-existence correction.
+        assertEquals(positiveExistence.items, p.items)
+        assertEquals(563, p.items.count { it.options.first() == it.answer })
         val routes = p.units.flatMap { it.sessions }.flatMap { it.steps }
             .flatMap { step -> step.itemIds.map { p.item(it)!! to step.id } }
         for ((name, displays) in listOf(
@@ -37,7 +50,7 @@ class OptionPresentationTest {
         )) {
             if (name == "required") {
                 assertEquals(429, displays.size)
-                assertEquals(379, displays.count { (item, _) -> item.options.first() == item.answer })
+                assertEquals(381, displays.count { (item, _) -> item.options.first() == item.answer })
             }
             displays.forEach { (item, order) ->
                 assertEquals(item.id, item.options.sorted(), order.sorted())
@@ -143,6 +156,13 @@ class OptionPresentationTest {
 internal object OptionPresentationFixture {
     val root get() = File(if (File("app").isDirectory) "." else "..")
     val pack by lazy { V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) } }
+    fun atSource(commit: String): V2CurriculumPack {
+        val process = ProcessBuilder("git", "show", "$commit:app/src/main/assets/content/v2-curriculum.json")
+            .directory(root).start()
+        val source = process.inputStream.bufferedReader().use { it.readText() }
+        assertEquals("historical source $commit", 0, process.waitFor())
+        return V2PackLoader.parse(source)
+    }
     fun prepare(s: LocalStore) {
         val p = pack
         for (n in 1..2) {
