@@ -1,0 +1,212 @@
+diff --git a/app/src/main/java/dev/russiancompanion/v2/curriculum/CompleteRuleContextPins.kt b/app/src/main/java/dev/russiancompanion/v2/curriculum/CompleteRuleContextPins.kt
+index 4a400401..3ca54f2e 100644
+--- a/app/src/main/java/dev/russiancompanion/v2/curriculum/CompleteRuleContextPins.kt
++++ b/app/src/main/java/dev/russiancompanion/v2/curriculum/CompleteRuleContextPins.kt
+@@ -5,10 +5,6 @@ import java.security.MessageDigest
+ /** Curated context and tuple identities, pending semantic audit; no acceptance token. */
+ internal object CompleteRuleContextPins {
+     private val hashes = mapOf(
+-        "ca-rule-context:u15-g-request-aspect-repeat" to "a07f7efb42235c14b10988d0cdc062da9ed538cb788cb154dd153575ec95f8c0",
+-        "ca-rule-context:u15-i-request-aspect-single" to "d75da71453c7ee744f3958fb1702097b83de13e8ced50932891e731d424dad63",
+-        "ca-rule-context:u15-i-request-aspect-repeat" to "741fc8b3f7e19d09cdf142634cba01ba639f8a195b1bd344ee4d7f6732044dce",
+-        "ca-rule-context:u15-i-request-aspect-prohibit" to "aebcf206f9aeb3a7b9307f7a091cdc00f99c672054d99ebbabd741ae550bfae6",
+         "ca-rule-context:u8-g-availability-0:existence-v1" to "07d1f7bf3fb2cc4b57286264f39c4a3da3258faa97057b87d9a59fa37cfe0a4b",
+         "ca-rule-context:u8-i-availability-1:existence-v1" to "85ceb5fd845fd3d6c2803262f1ebbc7a5ea314accc4b257d1a3fff5853896732",
+         "ca-rule-context:u8-i-availability-2:existence-v1" to "bfcf99be6b0e7228c5ea9607a6de772dc56e75ea8362ce5e101bb99fb3dc5664",
+@@ -117,7 +113,6 @@ internal object CompleteRuleContextPins {
+             item.id == "u6-i-animacy-3" -> "obj-u6-animacy"
+             item.id in setOf("u13-g-reported-0","u13-i-report-frame-time") -> "obj-u13-reported"
+             item.id == "u24-g-context-subject-focus" -> "obj-u24-word-order-contrast"
+-            item.id in setOf("u15-g-request-aspect-repeat","u15-i-request-aspect-single","u15-i-request-aspect-repeat","u15-i-request-aspect-prohibit") -> "obj-u15-aspect-consolidate"
+             item.id == "u21-i-object-reference-2" -> "obj-u21-object-reference"
+             item.id == "u9-i-odindva-4" -> "obj-u9-odindva"
+             item.id == "u8-i-agreement-3" -> "obj-u8-agreement"
+diff --git a/app/src/test/java/dev/russiancompanion/v2/Unit15RequestAspectHistoryTest.kt b/app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationHistoryTest.kt
+similarity index 62%
+rename from app/src/test/java/dev/russiancompanion/v2/Unit15RequestAspectHistoryTest.kt
+rename to app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationHistoryTest.kt
+index 5e5aba80..88daf2dc 100644
+--- a/app/src/test/java/dev/russiancompanion/v2/Unit15RequestAspectHistoryTest.kt
++++ b/app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationHistoryTest.kt
+@@ -15,7 +15,7 @@ import java.io.File
+ 
+ @RunWith(RobolectricTestRunner::class)
+ @Config(sdk=[33])
+-class Unit15RequestAspectHistoryTest {
++class Unit15AspectPreparationHistoryTest {
+     @Test fun originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact() {
+         val p=current();val old=previous()
+         assertEquals(old.items,p.items.take(old.items.size));assertEquals(old.examples,p.examples.take(old.examples.size))
+@@ -26,36 +26,10 @@ class Unit15RequestAspectHistoryTest {
+         assertEquals(a.objectives.filter { it.id!="obj-u15-aspect-consolidate" },b.objectives.filter { it.id!="obj-u15-aspect-consolidate" })
+         assertEquals(a.sessions.filter { it.id!="u15-s-aspect-consolidate" },b.sessions.filter { it.id!="u15-s-aspect-consolidate" })
+         assertEquals(old.sourceCapabilities,p.sourceCapabilities)
+-        val added=p.items.drop(old.items.size);assertEquals(4,added.size)
+-        assertTrue(added.all { it.sourceId=="src-content-audit-research" && it.assessment!!.cueLanguage=="en" && !Regex("[А-Яа-яЁё]").containsMatchIn(it.toString()) })
++        assertEquals(old.items,p.items);assertEquals(old.examples,p.examples)
+         assertNotEquals(V2Validator.unitContentReviewDigest(old,15),V2Validator.unitContentReviewDigest(p,15))
+         val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
+     }
+-    @Test fun pairRecallAndOptionalContextSuccessCannotReplaceTheRequiredContextAnswers() {
+-        val p=current();val old=previous();val oid="obj-u15-aspect-consolidate";val pairIds=listOf("u15-g-aspect-consolidate-0","u15-i-aspect-consolidate-1","u15-i-aspect-consolidate-2")
+-        LocalStore.openInMemory(context()).use { s ->
+-            for(id in pairIds)record(old,s,id,old.item(id)!!.answer)
+-            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(old.unit(15)!!.objectives.single { it.id==oid },s.v2LearnerView(),old))
+-        }
+-        LocalStore.openInMemory(context()).use { s ->
+-            val o=p.unit(15)!!.objectives.single { it.id==oid }
+-            for(id in pairIds)record(p,s,id,p.item(id)!!.answer)
+-            val contexts=o.checkItemIds.filter { it !in pairIds }
+-            assertEquals(3,contexts.size)
+-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,s.v2LearnerView(),p))
+-            for(id in contexts)s.v2RecordGovernedAttempt(prepareGovernedAttempt(p,id,p.item(id)!!.answer,OPTIONAL_PRACTICE,practiceStepId("grammar"),"optional")!!)
+-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,s.v2LearnerView(),p))
+-            val guide="u15-g-request-aspect-repeat";record(p,s,guide,p.item(guide)!!.answer)
+-            for(id in contexts.dropLast(1))record(p,s,id,p.item(id)!!.answer)
+-            val last=contexts.last();record(p,s,last,p.item(last)!!.options.single { it!=p.item(last)!!.answer })
+-            assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,s.v2LearnerView(),p))
+-            record(p,s,last,p.item(last)!!.answer)
+-            assertEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(o,s.v2LearnerView(),p))
+-            assertFalse(advancementDecision(p,p.unit(15)!!,s.v2LearnerView()).allowed)
+-            val queue=practiceQueue(p,s.v2LearnerView().copy(currentUnitNumber=15),"grammar")
+-            assertTrue(queue.map { it.id }.containsAll(contexts+guide))
+-        }
+-    }
+     @Test fun oldAcceptedWorkAndResumeStayStoredThroughBackupReopenButNeedCurrentWork() {
+         val p=current();val old=previous();val id="u15-i-aspect-consolidate-1";val teach="u15-st-teach-aspect-consolidate-2"
+         val name="request-aspect-${System.nanoTime()}.db";val dir=File(context().cacheDir,"request-aspect-${System.nanoTime()}")
+@@ -77,20 +51,20 @@ class Unit15RequestAspectHistoryTest {
+                     assertEquals(before,t.governedLearnerDocument());assertFalse(resumeIsCurrent(p,t.v2LearnerView()))
+                     record(p,t,id,p.item(id)!!.answer);assertTrue(id in creditItemIds(p,t.v2LearnerView()))
+                     assertEquals(before.attempts,t.governedLearnerDocument().attempts.take(before.attempts.size))
+-                    val now=p.step("u15-st-teach-request-aspect-1")!!
++                    val now=p.step("u15-st-teach-aspect-consolidate-1")!!
+                     t.v2SaveProfile(t.v2Profile().copy(currentSessionId=now.first.id,currentStepIndex=now.first.steps.indexOf(now.second)).verifiedResume(p))
+                     assertTrue(resumeIsCurrent(p,t.v2LearnerView()))
+                 }
+             }
+         } finally { context().deleteDatabase(name);dir.deleteRecursively() }
+     }
+-    @Test fun coherentAnswerAndApplicationSwapCannotForgeTheBoundContext() {
+-        val p=current();val id="u15-i-request-aspect-prohibit";val item=p.item(id)!!;val other=item.options.single { it!=item.answer }
+-        val altered=item.copy(answer=other)
+-        val rows=p.provenanceRecords.map { r->if(r.sourceRecordId!="ca-rule-context:$id")r else r.copy(synthesis=r.synthesis!!.copy(applications=r.synthesis.applications.map { it.copy(answer=other,distractors=listOf(item.answer)) })) }
+-        assertEquals(p.provenanceRecords.map { it.copy(synthesis=null) },rows.map { it.copy(synthesis=null) })
+-        val v=V2Validator.validate(p.copy(items=p.items.map { if(it.id==id)altered else it },provenanceRecords=rows))
+-        assertFalse(v.ok);assertTrue(v.errors.joinToString("\n"),v.errors.any { it.contains("complete rule context") })
++    @Test fun overlappingEnglishLabelsRejectWithoutThrowingAndDoNotBecomeNativeEvidence() {
++        val p=current();val id="u15-i-aspect-consolidate-1";val item=p.item(id)!!
++        val options=listOf("imperfective","perfective")
++        val bad=item.copy(answer="perfective",options=options,assessment=item.assessment!!.copy(contrastMembers=options))
++        val v=V2Validator.validate(p.copy(items=p.items.map { if(it.id==id)bad else it }))
++        assertFalse(v.ok)
++        assertTrue(v.errors.joinToString("\n"),v.errors.any { it.contains(id) && (it.contains("response type") || it.contains("explicit target")) })
+     }
+     private fun record(p:V2CurriculumPack,s:LocalStore,id:String,answer:String) {
+         val step=p.unit(15)!!.sessions.flatMap { it.steps }.single { id in it.itemIds }
+diff --git a/app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationTest.kt b/app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationTest.kt
+new file mode 100644
+index 00000000..351a4975
+--- /dev/null
++++ b/app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationTest.kt
+@@ -0,0 +1,27 @@
++package dev.russiancompanion.v2
++
++import dev.russiancompanion.v2.curriculum.*
++import org.junit.Assert.*
++import org.junit.Test
++import java.io.File
++
++class Unit15AspectPreparationTest {
++    @Test fun bothPairsAreTaughtBeforePracticeAndRepairRestoresAllThreeCardsAndFourForms() {
++        val p=pack();val s=p.unit(15)!!.sessions.single { it.id=="u15-s-aspect-consolidate" }
++        val teaching=s.steps.filter { it.kind=="TEACH" };val rem=p.step("u15-st-rem-aspect-consolidate")!!.second
++        assertEquals(3,teaching.size)
++        assertEquals(teaching,s.steps.takeWhile { it.kind!="GUIDED" }.filter { it.kind=="TEACH" })
++        assertEquals(teaching.joinToString("\n\n") { it.body },rem.body)
++        assertEquals(listOf("ex-u15-aspect-consolidate-0","ex-u15-aspect-consolidate-1","ex-u15-aspect-consolidate-2","ex-u15-aspect-consolidate-3"),rem.exampleIds)
++        assertEquals(rem.exampleIds,teaching.flatMap { it.exampleIds }.distinct())
++        assertEquals(listOf("u15-st-guided-aspect-consolidate-1"),reviewedGuidedPractice(p,rem.id))
++    }
++    @Test fun preparationDoesNotClaimToAssessUnqualifiedRequestContexts() {
++        val p=pack();val o=p.unit(15)!!.objectives.single { it.id=="obj-u15-aspect-consolidate" }
++        assertEquals(listOf("u15-i-aspect-consolidate-1","u15-i-aspect-consolidate-2"),o.checkItemIds)
++        assertFalse(p.items.any { it.id.contains("request-aspect-") })
++        assertTrue(p.step("u15-st-teach-aspect-consolidate-3")!!.second.body.contains("does not demonstrate that contextual skill"))
++        assertEquals(6,p.unit(15)!!.advancement!!.minimumDistinctChecks)
++    }
++    private fun pack()=V2PackLoader.parse(File(if(File("app").isDirectory)"." else "..","app/src/main/assets/content/v2-curriculum.json").readText())
++}
+diff --git a/app/src/test/java/dev/russiancompanion/v2/Unit15RequestAspectUiTest.kt b/app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationUiTest.kt
+similarity index 87%
+rename from app/src/test/java/dev/russiancompanion/v2/Unit15RequestAspectUiTest.kt
+rename to app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationUiTest.kt
+index b39e317d..d490ca8b 100644
+--- a/app/src/test/java/dev/russiancompanion/v2/Unit15RequestAspectUiTest.kt
++++ b/app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationUiTest.kt
+@@ -16,9 +16,9 @@ import org.robolectric.annotation.Config
+ 
+ @RunWith(RobolectricTestRunner::class)
+ @Config(sdk = [33])
+-class Unit15RequestAspectUiTest {
++class Unit15AspectPreparationUiTest {
+     @get:Rule val compose = createComposeRule()
+-    @Test fun wrongContextAnswerRepairsAllExamplesAndBothGuidesBeforeReturning() = repair(15,"aspect-consolidate","u15-i-request-aspect-single")
++    @Test fun wrongPartnerAnswerRestoresBothPairsAndReturnsThroughTheOriginalGuide() = repair(15,"aspect-consolidate","u15-i-aspect-consolidate-1")
+ 
+     private fun repair(number: Int, stem: String, id: String) {
+         val p = dev.russiancompanion.v2.curriculum.V2PackLoader.parse(java.io.File(if(java.io.File("app").isDirectory)"." else "..","app/src/main/assets/content/v2-curriculum.json").readText()); val item = p.item(id)!!
+@@ -37,16 +37,11 @@ class Unit15RequestAspectUiTest {
+                 tag("v2-example-note-$exampleId").performScrollTo().assertTextEquals(p.example(exampleId)!!.note)
+             }
+             tag("v2-review-practice").performClick()
+-            val guides = reviewedGuidedPractice(p, rem.id)
+-            for ((index,guideId) in guides.withIndex()) {
++            for (guideId in reviewedGuidedPractice(p, rem.id)) {
+                 for (guidedItemId in p.step(guideId)!!.second.itemIds) {
+                     val guide = p.item(guidedItemId)!!
+                     tag("v2-option-$guidedItemId-${guide.answer}").performScrollTo().performClick()
+                 }
+-                if (index < guides.lastIndex) {
+-                    compose.onNodeWithTag("v2-return-to-check").assertDoesNotExist()
+-                    tag("v2-next-practice").assertIsEnabled().performClick()
+-                }
+             }
+             assertFalse(id in creditItemIds(p, store.v2LearnerView()))
+             tag("v2-return-to-check").performClick()
+diff --git a/app/src/test/java/dev/russiancompanion/v2/Unit15RequestAspectTest.kt b/app/src/test/java/dev/russiancompanion/v2/Unit15RequestAspectTest.kt
+deleted file mode 100644
+index 41ec70b3..00000000
+--- a/app/src/test/java/dev/russiancompanion/v2/Unit15RequestAspectTest.kt
++++ /dev/null
+@@ -1,30 +0,0 @@
+-package dev.russiancompanion.v2
+-
+-import dev.russiancompanion.v2.curriculum.*
+-import org.junit.Assert.*
+-import org.junit.Test
+-import java.io.File
+-
+-class Unit15RequestAspectTest {
+-    @Test fun consolidationRequiresIndependentContextEvidenceBeyondPairRecall() {
+-        val p=pack();val o=p.unit(15)!!.objectives.single { it.id=="obj-u15-aspect-consolidate" }
+-        val checks=o.checkItemIds.map { p.item(it)!! }
+-        val contexts=checks.filter { it.assessment!!.testedFeature.startsWith("BOUNDED_REQUEST_ASPECT_") }
+-        assertEquals("Single request, repetition and ordinary prohibition need distinct context checks",3,contexts.size)
+-        assertEquals(setOf("BOUNDED_REQUEST_ASPECT_SINGLE","BOUNDED_REQUEST_ASPECT_REPEAT","BOUNDED_REQUEST_ASPECT_PROHIBIT"),contexts.map { it.assessment!!.testedFeature }.toSet())
+-        assertTrue(contexts.all { it.assessment!!.independent && it.assessment.cueLanguage=="en" && it.options.toSet()==setOf("imperfective","perfective") })
+-        assertEquals(3,contexts.map { it.promptLetter }.distinct().size)
+-        assertEquals(setOf("u15-i-aspect-consolidate-1","u15-i-aspect-consolidate-2"),checks.filter { it !in contexts }.map { it.id }.toSet())
+-    }
+-    @Test fun allPairAndContextTeachingPrecedesPracticeAndFullRepairRestoresIt() {
+-        val p=pack();val s=p.unit(15)!!.sessions.single { it.id=="u15-s-aspect-consolidate" }
+-        val teaching=s.steps.filter { it.kind=="TEACH" };val rem=p.step("u15-st-rem-aspect-consolidate")!!.second
+-        assertEquals(6,teaching.size)
+-        assertEquals(teaching,s.steps.takeWhile { it.kind!="GUIDED" }.filter { it.kind=="TEACH" })
+-        assertEquals(teaching.joinToString("\n\n") { it.body },rem.body)
+-        assertEquals(teaching.flatMap { it.exampleIds }.distinct(),rem.exampleIds)
+-        assertEquals(8,rem.exampleIds.size)
+-        assertEquals(listOf("u15-st-guided-aspect-consolidate-1","u15-st-guided-request-aspect"),reviewedGuidedPractice(p,rem.id))
+-    }
+-    private fun pack()=V2PackLoader.parse(File(if(File("app").isDirectory)"." else "..","app/src/main/assets/content/v2-curriculum.json").readText())
+-}

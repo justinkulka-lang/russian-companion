@@ -1,0 +1,1303 @@
+{
+  "baselineCommit": "175a793020d85b8760a9255cf8b2b6b0091745f4",
+  "beforeAssetSha256": "8890852d28ee669929a671900075a5ba0e39b8146507c9b6a4759e9b3749078c",
+  "afterAssetSha256": "53da66c18cf1509a82dda35d0986ee7f3ee1d56efe466dd36681f797f83bfd8b",
+  "beforeUnit": {
+    "number": 15,
+    "id": "unit-15",
+    "title": "Requests, the imperative, and consolidation of aspect use",
+    "shortLabel": "Requests",
+    "topicSummary": "Proposed Unit 15 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 15,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 15, printed pages 171-187. Independently stated topic scope: Requests, imperative forms, and consolidation of aspect use. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+    "prerequisiteUnitNumbers": [
+      14
+    ],
+    "estimatedMinutes": 54,
+    "objectives": [
+      {
+        "id": "obj-u15-imperative",
+        "unitNumber": 15,
+        "title": "Choose the admitted request row",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-imperative-1",
+          "u15-st-teach-imperative-contrast",
+          "u15-st-teach-imperative-2",
+          "u15-st-teach-imperative-3"
+        ],
+        "exampleIds": [
+          "ex-or-u15-imperative-0",
+          "ex-or-u15-imperative-1",
+          "ex-or-u15-imperative-2",
+          "ex-u15-imperative-3"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-imperative-1"
+        ],
+        "checkItemIds": [
+          "u15-i-imperative-1",
+          "u15-i-imperative-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-imperative"
+        ]
+      },
+      {
+        "id": "obj-u15-say-request",
+        "unitNumber": 15,
+        "title": "Choose the admitted say-request row",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-say-request-1",
+          "u15-st-teach-say-request-2",
+          "u15-st-teach-say-request-3",
+          "u15-st-teach-say-request-4"
+        ],
+        "exampleIds": [
+          "ex-or-u15-say-request-0",
+          "ex-or-u15-say-request-1",
+          "ex-or-u15-say-request-2",
+          "ex-or-u15-say-request-3",
+          "ex-or-u15-say-request-4",
+          "ex-or-u15-say-request-5"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-say-request-1"
+        ],
+        "checkItemIds": [
+          "u15-i-say-request-1",
+          "u15-i-say-request-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-say-request"
+        ]
+      },
+      {
+        "id": "obj-u15-aspect-consolidate",
+        "unitNumber": 15,
+        "title": "Choose the admitted aspect pair",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-aspect-consolidate-1",
+          "u15-st-teach-aspect-consolidate-2",
+          "u15-st-teach-aspect-consolidate-3"
+        ],
+        "exampleIds": [
+          "ex-u15-aspect-consolidate-0",
+          "ex-u15-aspect-consolidate-1",
+          "ex-u15-aspect-consolidate-2",
+          "ex-u15-aspect-consolidate-3"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-aspect-consolidate-1"
+        ],
+        "checkItemIds": [
+          "u15-i-aspect-consolidate-1",
+          "u15-i-aspect-consolidate-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-aspect-consolidate"
+        ]
+      },
+      {
+        "id": "obj-u15-book",
+        "unitNumber": 15,
+        "title": "Self-attest Lesson 15 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u15-st-book-work",
+          "u15-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u15-s-orient",
+        "title": "Admitted request rows and aspect pairs",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u15-imperative",
+          "obj-u15-say-request",
+          "obj-u15-aspect-consolidate",
+          "obj-u15-book"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-orient",
+            "kind": "ORIENT",
+            "title": "Admitted request rows and aspect pairs",
+            "body": "Proposed Unit 15 uses frozen records for request rows and aspect pairs. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "bookDirection": "Open Lesson 15 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u15-s-imperative",
+        "title": "Choose the admitted request row",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-imperative"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-imperative-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-contrast",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1",
+              "ex-or-u15-imperative-2"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Купи, пожалуйста, свежие фрукты.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "чита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-2",
+              "ex-u15-imperative-3"
+            ]
+          },
+          {
+            "id": "u15-st-guided-imperative-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-imperative-0"
+            ],
+            "remediationStepId": "u15-st-rem-imperative"
+          },
+          {
+            "id": "u15-st-rem-imperative",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.\n\nчита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.\n\nКупи, пожалуйста, свежие фрукты.\n\nчита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. ",
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1",
+              "ex-or-u15-imperative-2",
+              "ex-u15-imperative-3"
+            ]
+          },
+          {
+            "id": "u15-st-check-imperative",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-imperative-1",
+              "u15-i-imperative-2"
+            ],
+            "remediationStepId": "u15-st-rem-imperative"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-say-request",
+        "title": "Choose the admitted say-request row",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-say-request"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-say-request-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "скажи́ — say. скажи́те — say. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-0",
+              "ex-or-u15-say-request-1"
+            ]
+          },
+          {
+            "id": "u15-st-guided-say-request-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-say-request-0"
+            ],
+            "remediationStepId": "u15-st-rem-say-request"
+          },
+          {
+            "id": "u15-st-teach-say-request-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-say-request-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "сказа́ть — say. да́й — give. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-2",
+              "ex-or-u15-say-request-3"
+            ]
+          },
+          {
+            "id": "u15-st-teach-say-request-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "да́йте — give. дать — give. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-4",
+              "ex-or-u15-say-request-5"
+            ]
+          },
+          {
+            "id": "u15-st-rem-say-request",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'",
+            "exampleIds": [
+              "ex-or-u15-say-request-0",
+              "ex-or-u15-say-request-1"
+            ]
+          },
+          {
+            "id": "u15-st-check-say-request",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-say-request-1",
+              "u15-i-say-request-2"
+            ],
+            "remediationStepId": "u15-st-rem-say-request"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-aspect-consolidate",
+        "title": "Choose the admitted aspect pair",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-aspect-consolidate"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-aspect-consolidate-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "говори́ть — to speak. сказа́ть — to speak. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-0",
+              "ex-u15-aspect-consolidate-1"
+            ]
+          },
+          {
+            "id": "u15-st-guided-aspect-consolidate-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-aspect-consolidate-0"
+            ],
+            "remediationStepId": "u15-st-rem-aspect-consolidate"
+          },
+          {
+            "id": "u15-st-teach-aspect-consolidate-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Let us take the verbs \"to speak\" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and \"to do\" (imper.: '''де́лать''', per.: '''сде́лать''').",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-aspect-consolidate-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "де́лать — to do. сде́лать — to do. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-2",
+              "ex-u15-aspect-consolidate-3"
+            ]
+          },
+          {
+            "id": "u15-st-rem-aspect-consolidate",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "Let us take the verbs \"to speak\" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and \"to do\" (imper.: '''де́лать''', per.: '''сде́лать''').",
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-0",
+              "ex-u15-aspect-consolidate-1"
+            ]
+          },
+          {
+            "id": "u15-st-check-aspect-consolidate",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-aspect-consolidate-1",
+              "u15-i-aspect-consolidate-2"
+            ],
+            "remediationStepId": "u15-st-rem-aspect-consolidate"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-book",
+        "title": "Self-attest Lesson 15",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u15-book"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 15 in your copy",
+            "body": "Do Lesson 15 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 15: printed pages 171-187. PDF indexes 183-199 are file locators, not printed pages. Observed section locators: §15.1 p171 (PDF 183); §15.2 p171 (PDF 183); §15.3 p174 (PDF 186); §15.4 p175 (PDF 187); §15.5 p176 (PDF 188); §15.6 p176 (PDF 188); §15.7 p177 (PDF 189); §15.9 p178 (PDF 190); §15.10 p178 (PDF 190); §15.11 p178 (PDF 190); §15.12 p181 (PDF 193); §15.13 p182 (PDF 194); §15.14 p184 (PDF 196). Observed exercise locators: 15/1 p172/PDF184; 15/2 p173/PDF185; 15/3 p174/PDF186; 15/4 p175/PDF187; 15/5 p175/PDF187; 15/6 p177/PDF189; 15/7 p182/PDF194; 15/8 p185/PDF197; 15/9 p186/PDF198. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u15-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 15 book work",
+            "body": "When you have done Lesson 15 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 15: printed pages 171-187. PDF indexes 183-199 are file locators, not printed pages. Observed section locators: §15.1 p171 (PDF 183); §15.2 p171 (PDF 183); §15.3 p174 (PDF 186); §15.4 p175 (PDF 187); §15.5 p176 (PDF 188); §15.6 p176 (PDF 188); §15.7 p177 (PDF 189); §15.9 p178 (PDF 190); §15.10 p178 (PDF 190); §15.11 p178 (PDF 190); §15.12 p181 (PDF 193); §15.13 p182 (PDF 194); §15.14 p184 (PDF 196). Observed exercise locators: 15/1 p172/PDF184; 15/2 p173/PDF185; 15/3 p174/PDF186; 15/4 p175/PDF187; 15/5 p175/PDF187; 15/6 p177/PDF189; 15/7 p182/PDF194; 15/8 p185/PDF197; 15/9 p186/PDF198. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u15-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 15 AnkiDroid direction",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u15-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 15 binder prompt",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u15-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 15 optional tutor",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u15-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 15 cumulative review",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 6,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit15-prior-reading-impersonal-state-v1"
+    }
+  },
+  "afterUnit": {
+    "number": 15,
+    "id": "unit-15",
+    "title": "Requests, the imperative, and consolidation of aspect use",
+    "shortLabel": "Requests",
+    "topicSummary": "Proposed Unit 15 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed.",
+    "installState": "DEVELOPMENT",
+    "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+    "penguinLesson": 15,
+    "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+    "mappingNote": "Proposed Lesson 15, printed pages 171-187. Independently stated topic scope: Requests, imperative forms, and consolidation of aspect use. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment.",
+    "prerequisiteUnitNumbers": [
+      14
+    ],
+    "estimatedMinutes": 54,
+    "objectives": [
+      {
+        "id": "obj-u15-imperative",
+        "unitNumber": 15,
+        "title": "Choose the admitted request row",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-imperative-1",
+          "u15-st-teach-imperative-contrast",
+          "u15-st-teach-imperative-2",
+          "u15-st-teach-imperative-3"
+        ],
+        "exampleIds": [
+          "ex-or-u15-imperative-0",
+          "ex-or-u15-imperative-1",
+          "ex-or-u15-imperative-2",
+          "ex-u15-imperative-3"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-imperative-1"
+        ],
+        "checkItemIds": [
+          "u15-i-imperative-1",
+          "u15-i-imperative-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-imperative"
+        ]
+      },
+      {
+        "id": "obj-u15-say-request",
+        "unitNumber": 15,
+        "title": "Choose the admitted say-request row",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-say-request-1",
+          "u15-st-teach-say-request-2",
+          "u15-st-teach-say-request-3",
+          "u15-st-teach-say-request-4"
+        ],
+        "exampleIds": [
+          "ex-or-u15-say-request-0",
+          "ex-or-u15-say-request-1",
+          "ex-or-u15-say-request-2",
+          "ex-or-u15-say-request-3",
+          "ex-or-u15-say-request-4",
+          "ex-or-u15-say-request-5"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-say-request-1"
+        ],
+        "checkItemIds": [
+          "u15-i-say-request-1",
+          "u15-i-say-request-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-say-request"
+        ]
+      },
+      {
+        "id": "obj-u15-aspect-consolidate",
+        "unitNumber": 15,
+        "title": "Choose the admitted aspect pair",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u15-st-orient",
+          "u15-st-teach-aspect-consolidate-1",
+          "u15-st-teach-aspect-consolidate-2",
+          "u15-st-teach-aspect-consolidate-3"
+        ],
+        "exampleIds": [
+          "ex-u15-aspect-consolidate-0",
+          "ex-u15-aspect-consolidate-1",
+          "ex-u15-aspect-consolidate-2",
+          "ex-u15-aspect-consolidate-3"
+        ],
+        "practiceStepIds": [
+          "u15-st-guided-aspect-consolidate-1"
+        ],
+        "checkItemIds": [
+          "u15-i-aspect-consolidate-1",
+          "u15-i-aspect-consolidate-2"
+        ],
+        "remediationStepIds": [
+          "u15-st-rem-aspect-consolidate"
+        ]
+      },
+      {
+        "id": "obj-u15-book",
+        "unitNumber": 15,
+        "title": "Self-attest Lesson 15 book work",
+        "kind": "SELF_ATTESTATION",
+        "instructionStepIds": [
+          "u15-st-book-work",
+          "u15-st-book"
+        ],
+        "exampleIds": [],
+        "practiceStepIds": [],
+        "checkItemIds": [],
+        "remediationStepIds": []
+      }
+    ],
+    "sessions": [
+      {
+        "id": "u15-s-orient",
+        "title": "Admitted request rows and aspect pairs",
+        "estimatedMinutes": 8,
+        "objectiveIds": [
+          "obj-u15-imperative",
+          "obj-u15-say-request",
+          "obj-u15-aspect-consolidate",
+          "obj-u15-book"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-orient",
+            "kind": "ORIENT",
+            "title": "Admitted request rows and aspect pairs",
+            "body": "Proposed Unit 15 uses frozen records for request rows and aspect pairs. Qualified review is pending.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "bookDirection": "Open Lesson 15 in the copy you own. The app records do not replace that lesson."
+          }
+        ]
+      },
+      {
+        "id": "u15-s-imperative",
+        "title": "Choose the admitted request row",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-imperative"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-imperative-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-contrast",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "чита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1",
+              "ex-or-u15-imperative-2"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "Купи, пожалуйста, свежие фрукты.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-imperative-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "чита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-imperative-2",
+              "ex-u15-imperative-3"
+            ]
+          },
+          {
+            "id": "u15-st-guided-imperative-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-imperative-0"
+            ],
+            "remediationStepId": "u15-st-rem-imperative"
+          },
+          {
+            "id": "u15-st-rem-imperative",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "чита́й — read. чита́йте — read. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.\n\nчита́йте is the plural imperative form of the reading verb shown here, used for multiple addressees or polite address to one person. It extends the shown singular form with the plural/polite ending. чита́ть is the infinitive, not the inflected plural imperative requested. This identifies the supplied form, not every possible way to express a command.\n\nчита́й is the singular imperative form of the reading verb, used for one informal addressee. чита́ть is the infinitive, not that inflected imperative form. The cue shows the plural/polite form, while this question asks for the singular imperative table row.\n\nчита́й is the singular imperative form for one informal addressee. чита́йте is the plural imperative form and can also address one person politely. Both are imperative forms of the shown infinitive; the requested singular table row selects the informal form, rather than identifying the actual number of listeners from spelling alone.\n\nКупи, пожалуйста, свежие фрукты.\n\nчита́ть — read. Купи, пожалуйста, свежие фрукты. — Please, buy fresh fruits. ",
+            "exampleIds": [
+              "ex-or-u15-imperative-0",
+              "ex-or-u15-imperative-1",
+              "ex-or-u15-imperative-2",
+              "ex-u15-imperative-3"
+            ]
+          },
+          {
+            "id": "u15-st-check-imperative",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-imperative-1",
+              "u15-i-imperative-2"
+            ],
+            "remediationStepId": "u15-st-rem-imperative"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-say-request",
+        "title": "Choose the admitted say-request row",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-say-request"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-say-request-1",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "скажи́ — say. скажи́те — say. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-0",
+              "ex-or-u15-say-request-1"
+            ]
+          },
+          {
+            "id": "u15-st-guided-say-request-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-say-request-0"
+            ],
+            "remediationStepId": "u15-st-rem-say-request"
+          },
+          {
+            "id": "u15-st-teach-say-request-2",
+            "kind": "TEACH",
+            "title": "Admitted instruction",
+            "body": "'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ]
+          },
+          {
+            "id": "u15-st-teach-say-request-3",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "сказа́ть — say. да́й — give. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-2",
+              "ex-or-u15-say-request-3"
+            ]
+          },
+          {
+            "id": "u15-st-teach-say-request-4",
+            "kind": "TEACH",
+            "title": "Admitted lines",
+            "body": "да́йте — give. дать — give. ",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-or-u15-say-request-4",
+              "ex-or-u15-say-request-5"
+            ]
+          },
+          {
+            "id": "u15-st-rem-say-request",
+            "kind": "REMEDIATE",
+            "title": "Remediation",
+            "body": "'''говорить''' (impf.) and '''сказать''' (pf.) - 'to say, speak, tell'",
+            "exampleIds": [
+              "ex-or-u15-say-request-0",
+              "ex-or-u15-say-request-1"
+            ]
+          },
+          {
+            "id": "u15-st-check-say-request",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-say-request-1",
+              "u15-i-say-request-2"
+            ],
+            "remediationStepId": "u15-st-rem-say-request"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-aspect-consolidate",
+        "title": "Choose the admitted aspect pair",
+        "estimatedMinutes": 12,
+        "objectiveIds": [
+          "obj-u15-aspect-consolidate"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-teach-aspect-consolidate-1",
+            "kind": "TEACH",
+            "title": "Keep the supplied say/tell partners together",
+            "body": "The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-0",
+              "ex-u15-aspect-consolidate-1"
+            ]
+          },
+          {
+            "id": "u15-st-teach-aspect-consolidate-2",
+            "kind": "TEACH",
+            "title": "Keep the supplied do/make partners together",
+            "body": "The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-2",
+              "ex-u15-aspect-consolidate-3"
+            ]
+          },
+          {
+            "id": "u15-st-teach-aspect-consolidate-3",
+            "kind": "TEACH",
+            "title": "Distinguish partner recall from contextual use",
+            "body": "These choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "exampleIds": []
+          },
+          {
+            "id": "u15-st-guided-aspect-consolidate-1",
+            "kind": "GUIDED",
+            "title": "Guided practice",
+            "body": "Choose the admitted record. The feedback states the frozen field.",
+            "itemIds": [
+              "u15-g-aspect-consolidate-0"
+            ],
+            "remediationStepId": "u15-st-rem-aspect-consolidate"
+          },
+          {
+            "id": "u15-st-rem-aspect-consolidate",
+            "kind": "REMEDIATE",
+            "title": "Review both supplied lexical pairs",
+            "body": "The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.\n\nThe supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.\n\nThese choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.",
+            "exampleIds": [
+              "ex-u15-aspect-consolidate-0",
+              "ex-u15-aspect-consolidate-1",
+              "ex-u15-aspect-consolidate-2",
+              "ex-u15-aspect-consolidate-3"
+            ]
+          },
+          {
+            "id": "u15-st-check-aspect-consolidate",
+            "kind": "CHECK",
+            "title": "Independent checks",
+            "body": "These checks use only admitted records. A miss returns to the explanation.",
+            "itemIds": [
+              "u15-i-aspect-consolidate-1",
+              "u15-i-aspect-consolidate-2"
+            ],
+            "remediationStepId": "u15-st-rem-aspect-consolidate"
+          }
+        ]
+      },
+      {
+        "id": "u15-s-book",
+        "title": "Self-attest Lesson 15",
+        "estimatedMinutes": 10,
+        "objectiveIds": [
+          "obj-u15-book"
+        ],
+        "steps": [
+          {
+            "id": "u15-st-book-work",
+            "kind": "BOOK",
+            "title": "Work Lesson 15 in your copy",
+            "body": "Do Lesson 15 in the copy you own. Use that book's explanations and practice. The proposed records in this unit are a separate licensed set and do not copy the book. Listening stays with the book. No audio is mapped here.",
+            "referenceIds": [
+              "ref-u1115-attribution"
+            ],
+            "bookDirection": "Owned-book assignment for Lesson 15: printed pages 171-187. PDF indexes 183-199 are file locators, not printed pages. Observed section locators: §15.1 p171 (PDF 183); §15.2 p171 (PDF 183); §15.3 p174 (PDF 186); §15.4 p175 (PDF 187); §15.5 p176 (PDF 188); §15.6 p176 (PDF 188); §15.7 p177 (PDF 189); §15.9 p178 (PDF 190); §15.10 p178 (PDF 190); §15.11 p178 (PDF 190); §15.12 p181 (PDF 193); §15.13 p182 (PDF 194); §15.14 p184 (PDF 196). Observed exercise locators: 15/1 p172/PDF184; 15/2 p173/PDF185; 15/3 p174/PDF186; 15/4 p175/PDF187; 15/5 p175/PDF187; 15/6 p177/PDF189; 15/7 p182/PDF194; 15/8 p185/PDF197; 15/9 p186/PDF198. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u15-st-book",
+            "kind": "BOOK",
+            "title": "Record Lesson 15 book work",
+            "body": "When you have done Lesson 15 in your copy, self-attest here. Attestation records your report. It does not grade the lesson, approve a mapping, or approve the proposed records.",
+            "bookDirection": "Owned-book assignment for Lesson 15: printed pages 171-187. PDF indexes 183-199 are file locators, not printed pages. Observed section locators: §15.1 p171 (PDF 183); §15.2 p171 (PDF 183); §15.3 p174 (PDF 186); §15.4 p175 (PDF 187); §15.5 p176 (PDF 188); §15.6 p176 (PDF 188); §15.7 p177 (PDF 189); §15.9 p178 (PDF 190); §15.10 p178 (PDF 190); §15.11 p178 (PDF 190); §15.12 p181 (PDF 193); §15.13 p182 (PDF 194); §15.14 p184 (PDF 196). Observed exercise locators: 15/1 p172/PDF184; 15/2 p173/PDF185; 15/3 p174/PDF186; 15/4 p175/PDF187; 15/5 p175/PDF187; 15/6 p177/PDF189; 15/7 p182/PDF194; 15/8 p185/PDF197; 15/9 p186/PDF198. These locators are pending reviewer assignment and are not an approved mapping. Do the work in the copy you own. Book activity is not a demonstrated app check."
+          },
+          {
+            "id": "u15-st-anki-direction",
+            "kind": "ANKI",
+            "title": "Unit 15 AnkiDroid direction",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "dominantAction": "Self-attest",
+            "companionDirection": "Self-attest AnkiDroid work. It remains user-reported and does not demonstrate a check."
+          },
+          {
+            "id": "u15-st-binder-direction",
+            "kind": "BINDER",
+            "title": "Unit 15 binder prompt",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "A binder prompt is one specific note, not a score."
+          },
+          {
+            "id": "u15-st-tutor-direction",
+            "kind": "TUTOR",
+            "title": "Unit 15 optional tutor",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Tutor work is optional and does not count as demonstrated ability."
+          },
+          {
+            "id": "u15-st-cumulative-direction",
+            "kind": "ORIENT",
+            "title": "Unit 15 cumulative review",
+            "body": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked.",
+            "companionDirection": "Unit 15 AnkiDroid self-attestation uses only cards you are allowed to make. Binder: write one form from this unit that you missed and the correction you will use. Tutor conversation is optional and is not a demonstrated check. Cumulative review revisits completed objectives from earlier units. Activity is not demonstrated ability. Open the offline grammar reference for this unit when one is linked."
+          }
+        ]
+      }
+    ],
+    "advancement": {
+      "requireInstruction": true,
+      "requireBookSelfAttestation": true,
+      "requireAppChecks": true,
+      "minimumDistinctChecks": 6,
+      "requireDueReview": true,
+      "tutorOptional": true,
+      "cumulativeReviewPolicyId": "unit15-prior-reading-impersonal-state-v1"
+    }
+  },
+  "changes": [
+    {
+      "id": "u15-st-teach-aspect-consolidate-1",
+      "before": {
+        "id": "u15-st-teach-aspect-consolidate-1",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "говори́ть — to speak. сказа́ть — to speak. ",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-u15-aspect-consolidate-0",
+          "ex-u15-aspect-consolidate-1"
+        ]
+      },
+      "after": {
+        "id": "u15-st-teach-aspect-consolidate-1",
+        "kind": "TEACH",
+        "title": "Keep the supplied say/tell partners together",
+        "body": "The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-u15-aspect-consolidate-0",
+          "ex-u15-aspect-consolidate-1"
+        ]
+      }
+    },
+    {
+      "id": "u15-st-teach-aspect-consolidate-2",
+      "before": {
+        "id": "u15-st-teach-aspect-consolidate-2",
+        "kind": "TEACH",
+        "title": "Admitted instruction",
+        "body": "Let us take the verbs \"to speak\" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and \"to do\" (imper.: '''де́лать''', per.: '''сде́лать''').",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ]
+      },
+      "after": {
+        "id": "u15-st-teach-aspect-consolidate-2",
+        "kind": "TEACH",
+        "title": "Keep the supplied do/make partners together",
+        "body": "The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-u15-aspect-consolidate-2",
+          "ex-u15-aspect-consolidate-3"
+        ]
+      }
+    },
+    {
+      "id": "u15-st-teach-aspect-consolidate-3",
+      "before": {
+        "id": "u15-st-teach-aspect-consolidate-3",
+        "kind": "TEACH",
+        "title": "Admitted lines",
+        "body": "де́лать — to do. сде́лать — to do. ",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": [
+          "ex-u15-aspect-consolidate-2",
+          "ex-u15-aspect-consolidate-3"
+        ]
+      },
+      "after": {
+        "id": "u15-st-teach-aspect-consolidate-3",
+        "kind": "TEACH",
+        "title": "Distinguish partner recall from contextual use",
+        "body": "These choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.",
+        "referenceIds": [
+          "ref-u1115-attribution"
+        ],
+        "exampleIds": []
+      }
+    },
+    {
+      "id": "u15-st-rem-aspect-consolidate",
+      "before": {
+        "id": "u15-st-rem-aspect-consolidate",
+        "kind": "REMEDIATE",
+        "title": "Remediation",
+        "body": "Let us take the verbs \"to speak\" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and \"to do\" (imper.: '''де́лать''', per.: '''сде́лать''').",
+        "exampleIds": [
+          "ex-u15-aspect-consolidate-0",
+          "ex-u15-aspect-consolidate-1"
+        ]
+      },
+      "after": {
+        "id": "u15-st-rem-aspect-consolidate",
+        "kind": "REMEDIATE",
+        "title": "Review both supplied lexical pairs",
+        "body": "The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.\n\nThe supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.\n\nThese choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.",
+        "exampleIds": [
+          "ex-u15-aspect-consolidate-0",
+          "ex-u15-aspect-consolidate-1",
+          "ex-u15-aspect-consolidate-2",
+          "ex-u15-aspect-consolidate-3"
+        ]
+      }
+    }
+  ],
+  "addedProvenance": [
+    {
+      "itemId": "prov-cc003-preparation-u15-st-teach-aspect-consolidate-1-title",
+      "unitNumber": 15,
+      "objectiveId": "obj-u15-aspect-consolidate",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-1-title",
+      "originalSourceText": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.\nKeep the supplied say/tell partners together",
+      "shippedText": "Keep the supplied say/tell partners together",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "37cfe115adec4a370629a51967a79d7527d78b6c59ee7aebd5878de31af87ac9",
+      "contentHash": "a6cef525ca51b694a83e5bfdd2ae94aaefa5dbd09a1a16139ae0103813c5b951",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independent English explanation and arrangement2026-10-20;native lexical forms retain their separately admitted provenance. No new native application.",
+        "objectiveOrClaimBinding": "obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-1-title",
+        "applications": []
+      },
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-teach-aspect-consolidate-1-body",
+      "unitNumber": 15,
+      "objectiveId": "obj-u15-aspect-consolidate",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-1-body",
+      "originalSourceText": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.\nThe supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.",
+      "shippedText": "The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "fe8b690ab8eb9b2dc58b50920b23cd9a2cc3bb8242e027d03d0f4577d56d8261",
+      "contentHash": "4a64e00412c0333451302ad526de1965e3a32b04bcdc5853e84332c14b72972d",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independent English explanation and arrangement2026-10-20;native lexical forms retain their separately admitted provenance. No new native application.",
+        "objectiveOrClaimBinding": "obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-1-body",
+        "applications": []
+      },
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-teach-aspect-consolidate-2-title",
+      "unitNumber": 15,
+      "objectiveId": "obj-u15-aspect-consolidate",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-2-title",
+      "originalSourceText": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.\nKeep the supplied do/make partners together",
+      "shippedText": "Keep the supplied do/make partners together",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "d7971a0671cc5ff98db614c6399b16a615383ed18956cfcc778aaaf671d48d24",
+      "contentHash": "351cf60bf49421a424992d32a66cf0e11c727757d96c3172a1c09cf5edc27be6",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independent English explanation and arrangement2026-10-20;native lexical forms retain their separately admitted provenance. No new native application.",
+        "objectiveOrClaimBinding": "obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-2-title",
+        "applications": []
+      },
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-teach-aspect-consolidate-2-body",
+      "unitNumber": 15,
+      "objectiveId": "obj-u15-aspect-consolidate",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-2-body",
+      "originalSourceText": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.\nThe supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.",
+      "shippedText": "The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "4a9b231e9b99c7404618ae90d2f02b6ebad9538a3d185733b67e163bc28c98f7",
+      "contentHash": "041c3007309cc78f7c0ff86b8df2358264451cdb14d7167399a7686f17bd064a",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independent English explanation and arrangement2026-10-20;native lexical forms retain their separately admitted provenance. No new native application.",
+        "objectiveOrClaimBinding": "obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-2-body",
+        "applications": []
+      },
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-teach-aspect-consolidate-3-title",
+      "unitNumber": 15,
+      "objectiveId": "obj-u15-aspect-consolidate",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-3-title",
+      "originalSourceText": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.\nDistinguish partner recall from contextual use",
+      "shippedText": "Distinguish partner recall from contextual use",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "7fd48ad326fe6efee09cc3771360bccf2e28f58a59092d817e7521ae86816ade",
+      "contentHash": "75739ed24072d1777ca7c7234abe74e77a182a4b50b7c61708e578eae4af377e",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independent English explanation and arrangement2026-10-20;native lexical forms retain their separately admitted provenance. No new native application.",
+        "objectiveOrClaimBinding": "obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-3-title",
+        "applications": []
+      },
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-teach-aspect-consolidate-3-body",
+      "unitNumber": 15,
+      "objectiveId": "obj-u15-aspect-consolidate",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-3-body",
+      "originalSourceText": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.\nThese choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.",
+      "shippedText": "These choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "9448795dc380724ede350f0dd1412176e4f79e260afc0647a3528aa969c67104",
+      "contentHash": "8a927a055124ec514e5d818b3fb270da75262218b189abf90844d0022ad97dcb",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independent English explanation and arrangement2026-10-20;native lexical forms retain their separately admitted provenance. No new native application.",
+        "objectiveOrClaimBinding": "obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-3-body",
+        "applications": []
+      },
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-rem-aspect-consolidate-title",
+      "unitNumber": 15,
+      "objectiveId": "obj-u15-aspect-consolidate",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-rem-aspect-consolidate-title",
+      "originalSourceText": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.\nReview both supplied lexical pairs",
+      "shippedText": "Review both supplied lexical pairs",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "b54bdcf48337496ab30495a5c144479584f1e49040b998e9134926e7cf93e1f3",
+      "contentHash": "3868b0baded6392b99daadf10777f9204c9bb281b7702f1f55d3e99181b99ada",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independent English explanation and arrangement2026-10-20;native lexical forms retain their separately admitted provenance. No new native application.",
+        "objectiveOrClaimBinding": "obj-u15-aspect-consolidate:cc003-preparation:u15-st-rem-aspect-consolidate-title",
+        "applications": []
+      },
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    },
+    {
+      "itemId": "prov-cc003-preparation-u15-st-rem-aspect-consolidate-body",
+      "unitNumber": 15,
+      "objectiveId": "obj-u15-aspect-consolidate",
+      "recordType": "label",
+      "sourceId": "src-content-audit-research",
+      "sourceUrl": "urn:russian-companion:content-audit-research:2026-10-08",
+      "sourceRevision": "content-audit-2026-10-08",
+      "sourceRecordId": "ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-rem-aspect-consolidate-body",
+      "originalSourceText": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.\nThe supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.\n\nThe supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.\n\nThese choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.",
+      "shippedText": "The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.\n\nThe supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.\n\nThese choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.",
+      "transformation": "content-audit research synthesis",
+      "licenseId": "Original app text",
+      "licenseUrl": "urn:russian-companion:license:original-app-text",
+      "attribution": "Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.",
+      "shareAlikeTreatment": "Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.",
+      "sourceHash": "03c5d261ab65a3ba3b61fa3faf9213c69c315c6fed735159f8d08e8b2eb2f5ac",
+      "contentHash": "4a36ed718791966d7de7795b251225e42604011f49f00c60c5233c8468d32a9b",
+      "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+      "synthesis": {
+        "bibliography": "Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.",
+        "sourceDateOrVersion": "2026-10-08",
+        "authorshipDeclaration": "Independent English explanation and arrangement2026-10-20;native lexical forms retain their separately admitted provenance. No new native application.",
+        "objectiveOrClaimBinding": "obj-u15-aspect-consolidate:cc003-preparation:u15-st-rem-aspect-consolidate-body",
+        "applications": []
+      },
+      "reviewerIdentity": "",
+      "reviewerQualification": "",
+      "reviewDate": "",
+      "reviewedDigest": ""
+    }
+  ],
+  "all626Items821Examples7024RecordsExact": true,
+  "contextualAssessmentGap": "CC003_OPEN_SOURCE_ADMISSION_AND_LINGUISTIC_QUALIFICATION_REQUIRED",
+  "rejectedProposalStored": "REJECTED_PROPOSAL",
+  "formalAcceptance": false
+}

@@ -1,0 +1,58 @@
+{
+  "finding": "CC003",
+  "engineeringDisposition": "PREPARATION_REPAIR_AND_BOUNDS_FIX_ONLY;CONTEXTUAL_ASSESSMENT_OPEN",
+  "sourceCommit": "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04",
+  "baselineSource": "ac756a8652ae70ad17d79639cabddc00b7a52bb7",
+  "correctedSource": "03d3f759b2f1829f63f3328926f1b002bc39884b",
+  "rejectedContextSource": "4be9489b76678aacfb96b5756a94005dc3cf2396",
+  "baselineCounts": {
+    "reported": 2,
+    "passed": 0,
+    "failed": 2,
+    "errors": 0,
+    "skipped": 0
+  },
+  "correctedCounts": {
+    "reported": 25,
+    "passed": 19,
+    "failed": 6,
+    "errors": 0,
+    "skipped": 0
+  },
+  "rejectedContextCounts": {
+    "reported": 26,
+    "passed": 24,
+    "failed": 2,
+    "errors": 0,
+    "skipped": 0
+  },
+  "finalCounts": {
+    "reported": 13,
+    "passed": 13,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "finalScopeDoesNotClaimRejectedProposalPassed": true,
+  "contextualAssessmentBlocker": "Exact admitted Russian request/prohibition applications have not yet been established in this work;required source/linguistic review remains outstanding;English-only proposal rejected by governed evidence checks.",
+  "completeSuite": false,
+  "scopesMustNotBeSummed": true,
+  "originalAuditStatus": "OPEN_UNCHANGED",
+  "privateReferenceResearchOnly": {
+    "sha256": "2bcc0c45fac4508adf283f4dd939a7e578cf2c1306fdadf4966300532beb6303",
+    "bytes": 13596737,
+    "noPrivatePayload": "SOURCE_AND_SCOPE.md"
+  },
+  "apk": {
+    "configuredIdentity": "dev.russiancompanion /2.0.0-dev /versionCode5",
+    "assemblyInstallSigning": "NOT_RUN",
+    "sha256Signature": "NOT_RECORDED_NO_NEW_ARTIFACT"
+  },
+  "environment": {
+    "settings": "PREVIOUSLY_SAVED_UNCHANGED",
+    "publication": "USER_CONFIRMED_INDEPENDENTLY_UNVERIFIED"
+  },
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_AUDIT",
+  "releaseApproval": false
+}

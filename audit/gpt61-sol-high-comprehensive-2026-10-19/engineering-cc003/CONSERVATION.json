@@ -1,0 +1,19 @@
+{
+  "beforeSource": "175a793020d85b8760a9255cf8b2b6b0091745f4",
+  "afterSource": "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04",
+  "all626Items821Examples7024OriginalProvenanceExact": true,
+  "addedPendingPreparationRecords": 8,
+  "allOther29UnitsExact": true,
+  "inverseDeclaredDeltaEqualsWholePriorPack": true,
+  "allOriginalContextPinFileBytesExact": true,
+  "all66ArchiveHashesMatch": true,
+  "catalogDocsReviewTreesExact": true,
+  "noPreSessionTestFileChangedOrRemoved": true,
+  "threeNewPreparationTestFiles": [
+    "app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationHistoryTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Unit15AspectPreparationUiTest.kt"
+  ],
+  "rejectedContextItemsExamplesAndPinsAbsentFromActivePack": true,
+  "zeroTrackedPdfs": true
+}
