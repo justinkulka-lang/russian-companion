@@ -1,0 +1,9 @@
+Exception in thread "main" java.lang.NoClassDefFoundError: dev/russiancompanion/BuildConfig
+	at dev.russiancompanion.v2.curriculum.V2ModelsKt.openable$default(V2Models.kt:465)
+	at dev.russiancompanion.v2.curriculum.V2CumulativeReviewKt.reviewAssignmentCurrent(V2CumulativeReview.kt:562)
+	at LegacyReviewProbe.main(LegacyReviewProbe.java:11)
+Caused by: java.lang.ClassNotFoundException: dev.russiancompanion.BuildConfig
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 3 more

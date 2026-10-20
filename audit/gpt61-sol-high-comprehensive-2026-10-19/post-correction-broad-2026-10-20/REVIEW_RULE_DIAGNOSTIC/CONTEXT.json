@@ -1,0 +1,53 @@
+{
+  "sourceCommit": "38987780c837e10dd894d636a888711b324ff07f",
+  "compileCommand": [
+    "/workspace/jdk21/bin/javac",
+    "-cp",
+    "/workspace/artifacts/post-correction-broad-2026-10-20/review-rule-diagnostic:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar",
+    "/workspace/artifacts/post-correction-broad-2026-10-20/review-rule-diagnostic/LegacyReviewProbe.java"
+  ],
+  "runCommand": [
+    "/workspace/jdk21/bin/java",
+    "-Xmx1g",
+    "-cp",
+    "/workspace/artifacts/post-correction-broad-2026-10-20/review-rule-diagnostic:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/workspace/russian-companion/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes",
+    "LegacyReviewProbe",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/ia003-units5-6-recent-selection/BASELINE_COMPLETED_UNIT6.json"
+  ],
+  "workingDirectory": "/workspace/russian-companion",
+  "compileExit": 0,
+  "exitCode": 0,
+  "sourceSha256": "6ee11984a84f353684521f2c32594a4ade0f55655cf884d26a5119405d3e66d2",
+  "inputs": {
+    "audit/independent-gpt61-2026-10-12/ia003-units5-6-recent-selection/BASELINE_COMPLETED_UNIT6.json": "bad6f34a10ff14b691b8f7e79ddd65ab3ea0cbb52ba70f5df1aa967168b2b11b"
+  },
+  "jarSha256": {
+    "/workspace/android-sdk/platforms/android-37.0/android.jar": "bf1b4387cc7ca94fc6ef684f040d9d16fbf16248e181819f020736ea2053f177",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar": "6f64eac736db9434dd6925b4a518b9d1d17177652320c37916cf9ba3ce7d7d7a",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar": "f4a801c647d4351327cd9e1ac4113e2be9ea37a64ab0abae269c25a52e28f35d",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar": "563a25b4eb5c9128ae9c2479f3d1a5c44dcd176112b91cf03682e906eba5c935",
+    "/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar": "8e495b634469d64fb8acfa3495a065cbacc8a0fff55ce1e31007be4c16dc57d3",
+    "/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar": "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9"
+  },
+  "inputTrees": {
+    "app/src/main": "fdb48a009cf684c729d79a921770a36749e0fc32",
+    "app/src/test": "fdb9d1cf43bc67ecc9238a8af760a926ac9ba172",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "7e21cc644c7f55dd4d7a98b99c48fb8629908694"
+  },
+  "noJUnitExecuted": true,
+  "noRunningWorkerModified": true,
+  "databaseRestoreOrOpenNotExecuted": true,
+  "initialProbeExit": 1,
+  "initialProbeCommand": [
+    "/workspace/jdk21/bin/java",
+    "-Xmx1g",
+    "-cp",
+    "/workspace/artifacts/post-correction-broad-2026-10-20/review-rule-diagnostic:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar",
+    "LegacyReviewProbe",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/ia003-units5-6-recent-selection/BASELINE_COMPLETED_UNIT6.json"
+  ],
+  "compiledBuildConfigSha256": "df111026b2fabadc9f8bf1e1c427880086c4c264b235d02a7f90063284e6a36b",
+  "initialClasspathFailure": "Missing generated Java BuildConfig class in isolated probe classpath; added existing compiled Java classes directory. No project build or input changes."
+}

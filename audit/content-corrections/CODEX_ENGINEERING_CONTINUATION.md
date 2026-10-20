@@ -1576,3 +1576,8 @@ Read post-correction-broad-2026-10-20/QUEUED_METADATA_CORRECTION/STATUS.md under
 ## Restore preflight diagnostic — 2026-10-20
 
 Read post-correction-broad-2026-10-20/RESTORE_PREFLIGHT_DIAGNOSTIC/ENGINEERING_OBSERVATION.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Isolated compiled-code Java probe accepts four structural/profile checks for exact historical Unit13/Unit7 documents; no LocalStore/database restore or JUnit executed. Shared vs named recording-directory distinction is a diagnostic candidate only. Original restore failures/old Unit7 cause remain UNCONFIRMED. Active248-method continuation and metadata chain unchanged;do not duplicate jobs or alter inputs. Audit INCOMPLETE;physical LAST.
+
+
+## Review-rule allocation diagnostic and queued9-method follow-up
+
+Read post-correction-broad-2026-10-20/REVIEW_RULE_DIAGNOSTIC/ENGINEERING_OBSERVATION.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Original failed equality differs only legacy/current response-rule and derived assignment digest. Separate Java probe preserves all4saved assignments/current identity/raw order/unknown-rule refusal;no JUnit or database claim. Reviewed one-test-file patch is queued only after successful20/20metadata publication,then commits/tests9existingmethods and saves raw outcomes. Check externalreview-rule-diagnostic/CHAIN.log/APPLIED.json/PUBLICATION_COMPLETE.json;no future result claimed. Do not duplicate/apply manually/change active inputs. Original failures remain;cachewarm unqueued. AuditINCOMPLETE;physicalLAST.

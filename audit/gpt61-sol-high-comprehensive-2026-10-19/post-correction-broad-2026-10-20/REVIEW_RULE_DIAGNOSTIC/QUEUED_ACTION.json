@@ -1,0 +1,10 @@
+{
+  "file": "app/src/test/java/dev/russiancompanion/v2/MultiPoolReviewSelectionTest.kt",
+  "beforeSha256": "93d3024d147dcee95c83cefff8474c62c994d2d689065eb61da1d1dfc5b35703",
+  "afterSha256": "11a633c2cb1b499220e97c4fe5cf5d81e6e685f4b5871357402d0bdb69b91b75",
+  "patchSha256": "e621c15b62a0398cf0f389f0efacbf7514a0f7defe950f2780ad75842db71f4b",
+  "appCodeChanged": false,
+  "originalFailurePreserved": true,
+  "legacySemanticsChanged": false,
+  "status": "QUEUED_ONLY_AFTER_SUCCESSFUL_METADATA_PUBLICATION"
+}

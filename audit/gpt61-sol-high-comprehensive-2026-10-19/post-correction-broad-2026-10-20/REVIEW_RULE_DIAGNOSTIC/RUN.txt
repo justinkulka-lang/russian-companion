@@ -1,0 +1,6 @@
+unit=4 schema=1 exactDigest=true legacyRuleSupported=true assignmentCurrent=true everySavedSlotRawOrder=true unknownRuleFailsClosed=true
+unit=3 schema=2 exactDigest=true legacyRuleSupported=true assignmentCurrent=true everySavedSlotRawOrder=true unknownRuleFailsClosed=true
+unit=5 schema=1 exactDigest=true legacyRuleSupported=true assignmentCurrent=true everySavedSlotRawOrder=true unknownRuleFailsClosed=true
+unit=6 schema=1 exactDigest=true legacyRuleSupported=true assignmentCurrent=true everySavedSlotRawOrder=true unknownRuleFailsClosed=true
+currentNewAllocationPresentationDigest=13295a5b6ea35a2f9fd61584f179015be1e2df7579d237aa557ab943c8fab967
+No LocalStore open/reuse, JUnit, backup restoration, or original method re-execution performed.
