@@ -1586,3 +1586,8 @@ Read post-correction-broad-2026-10-20/REVIEW_RULE_DIAGNOSTIC/ENGINEERING_OBSERVA
 ## Missing/interrupted continuation completed
 
 Separate continuation at `78e0d1701f10cfa7cf623c8b3dacc9c661f574be`:248reported/239passed/9failed/0errors/0skipped;fresh selected XML/events reconcile exactly. Original stopped broad:1074partial binary/event records,1038SUCCESS/33FAILURE/3SKIPPED,no finalXML/exit. Two interrupted skips overlap explicitly;all1320discovered identities have per-scope records at identical input trees. This is not an uninterrupted complete-suite result or full app/curriculum acceptance. Original33failures and all new failures remainOPEN. Read post-correction-broad-2026-10-20/CONTINUATION_COMPLETE/ENGINEERING_CHANGE_REPORT.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. No acceptance;physicalLAST.
+
+
+## Metadata-only binding verification
+
+Metadata-only binding correction tested at `8eab6f0bdd33a0f3521df285573fc34fc0687075`:20selected methods/4classes,20passed/0failed/0errors/0skipped. Only two exact guarded-file hashes,their reviewed-commit pointer and the unfrozen pending source digest changed. All288language bindings,semantic/rights acceptance false and every other candidate/artifact field remain exact. No app/test-assertion/content/schema/policy/history/approval change. This is a focused scope,not a complete suite or independent acceptance. Read engineering-metadata-binding/ENGINEERING_CHANGE_REPORT.md under audit/gpt61-sol-high-comprehensive-2026-10-19/. Original failures preserved;all remaining qualification/recheck debtsOPEN,physicalLAST.

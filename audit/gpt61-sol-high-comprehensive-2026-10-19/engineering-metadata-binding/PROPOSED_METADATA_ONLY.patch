@@ -1,0 +1,39 @@
+--- a/app/src/test/resources/reviewed-curriculum-cyrillic.json
++++ b/app/src/test/resources/reviewed-curriculum-cyrillic.json
+@@ -1,6 +1,6 @@
+ {
+   "schemaVersion": 1,
+-  "reviewedRepositoryCommit": "01ae46c3682a036fe957db1b2c3e03819c17d55b",
++  "reviewedRepositoryCommit": "8bff21a3d5c4104709cde6e203d65ef7df3a935c",
+   "semanticAcceptance": false,
+   "rightsAcceptance": false,
+   "files": [
+@@ -2054,7 +2054,7 @@
+     },
+     {
+       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+-      "sha256": "5342c58f7662826262ba4c08d6e6af1c27f571d019f92bdd124d7afbc332a7b1",
++      "sha256": "4a5046906ff25561842bc738eb81d20d396bb90b84c0a065b1143984968d1fcf",
+       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+       "bindings": [
+         {
+@@ -2141,7 +2141,7 @@
+     },
+     {
+       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt",
+-      "sha256": "92c38133ed867792770977fb55a7dfe02bc5c1af3fab38ac39bd58889e3afd88",
++      "sha256": "2fbdd5320401c9e9ea97983eaa14b3487d75ff06eb3555ec02a0daa786a7510e",
+       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
+       "bindings": [
+         {
+--- a/release/acceptance/candidate.json
++++ b/release/acceptance/candidate.json
+@@ -8,7 +8,7 @@
+   "applicationId": "dev.russiancompanion",
+   "versionName": "2.0.0-dev",
+   "versionCode": 5,
+-  "sourceDigest": "86ce7af2eb063d8f15ae960a58c71be50d0c2ea21aab9a2a6804332c0cd1bc97",
++  "sourceDigest": "8502cadc8a068c25eb3fd6292c7d9c04cac86ef71c9da8425225156f0e7ac4ae",
+   "doNotRebuildForHashMatch": false,
+   "artifact": {
+     "status": "NOT_RECORDED"
