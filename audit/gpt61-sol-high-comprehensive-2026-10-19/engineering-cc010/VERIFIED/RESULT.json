@@ -1,0 +1,134 @@
+{
+  "sourceCommit": "2e9f83fb633dfb55b39c237b5caf66d20d2c4c01",
+  "exitCode": 0,
+  "testCounts": {
+    "reported": 17,
+    "passed": 17,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 5,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.RepeatedTaskCreditTest",
+      "method": "repeatedTaskIdsNeedTheirOwnAttemptsAndOtherRequiredEvidence",
+      "outcome": "PASSED",
+      "seconds": "20.918"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RepeatedTaskCreditTest",
+      "method": "wrongResponsesRemainSeparateAndSurviveBackupResumeAndReopen",
+      "outcome": "PASSED",
+      "seconds": "4.559"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RepeatedTaskCreditTest",
+      "method": "retainedRecognitionChainsRestoreAllTeachingAndKeepOtherRequiredChecks",
+      "outcome": "PASSED",
+      "seconds": "12.495"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RepeatedTaskRepairUiTest",
+      "method": "repeatedDuringEventCheckStillRequiresItsOwnFreshAnswerAfterRepair",
+      "outcome": "PASSED",
+      "seconds": "24.458"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RepeatedTaskRepairUiTest",
+      "method": "reorderedConcordOptionsStillRequireFreshIndependentCreditAfterRepair",
+      "outcome": "PASSED",
+      "seconds": "5.93"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10IndependentReinforcementTest",
+      "method": "sharedFrozenApplicationsCannotBeReversedWithCoherentTupleHashUpdates",
+      "outcome": "PASSED",
+      "seconds": "46.779"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10IndependentReinforcementTest",
+      "method": "repeatedIndependentAnswersNeedTheirOwnGovernedAttemptsInEachObjective",
+      "outcome": "PASSED",
+      "seconds": "1.789"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10IndependentReinforcementTest",
+      "method": "earlierCompletionAndBothRepeatedAbsenceAnswersStillRequireTwoPlaceContexts",
+      "outcome": "PASSED",
+      "seconds": "3.146"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10IndependentReinforcementTest",
+      "method": "wrongPolarityCannotCreditAnyMemberOfEitherIndependentPair",
+      "outcome": "PASSED",
+      "seconds": "0.854"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10ReinforcementReviewTest",
+      "method": "allTeachingPrecedesPracticeAndRetainedCaseChainsRemainValid",
+      "outcome": "PASSED",
+      "seconds": "18.555"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10ReinforcementReviewTest",
+      "method": "earlierPossessionCompletionCannotCreditTheLaterRepeatedGuideOrAbsenceChecks",
+      "outcome": "PASSED",
+      "seconds": "1.474"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10ReinforcementReviewTest",
+      "method": "repeatedGuideAloneCannotReplaceDistinctPlaceAbsenceAndPositiveCounterexampleEvidence",
+      "outcome": "PASSED",
+      "seconds": "0.493"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10ReinforcementReviewTest",
+      "method": "wrongPositiveCaseExplanationCannotCreditAnyNegativeContext",
+      "outcome": "PASSED",
+      "seconds": "0.346"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit23TimeInstructionTest",
+      "method": "omittedContinueAndEmptyStepListsHaveIdenticalTypedMeaning",
+      "outcome": "PASSED",
+      "seconds": "5.523"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit23TimeInstructionTest",
+      "method": "checkedMeaningsKeepAdmittedRelationshipsAndWrongKeysStillFail",
+      "outcome": "PASSED",
+      "seconds": "10.048"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit23TimeInstructionTest",
+      "method": "eachTemporalContrastPrecedesPracticeAndReturnsInCompleteRemediation",
+      "outcome": "PASSED",
+      "seconds": "0.58"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit23TimeInstructionTest",
+      "method": "intervalCaseAndCompletionAreNotConfusedWithDurationOrNoncompletion",
+      "outcome": "PASSED",
+      "seconds": "0.232"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedSourceInventoryMatchesFreshXmlAndEvents": true,
+  "xmlFreshRelativeToRunScript": true,
+  "completeSuite": false,
+  "scopesNotSummed": true
+}
