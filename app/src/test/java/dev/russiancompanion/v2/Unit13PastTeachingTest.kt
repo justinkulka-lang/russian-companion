@@ -22,7 +22,19 @@ import java.io.File
 class Unit13PastTeachingTest {
     @get:Rule val compose = createComposeRule()
     @Test fun completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples() {
-        val p = pack(); val s = session(p); val old = session(baseline())
+        val historical = pack()
+        val p = V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText())
+            .also { V2PackIdentityIndex.warm(it) }
+        // Current whole-pack validation must retain the exact historical Unit13 teaching target.
+        val historicalUnit = historical.unit(13)!!
+        assertEquals(historicalUnit, p.unit(13))
+        val objectiveIds = historicalUnit.objectives.map { it.id }.toSet()
+        assertEquals(historical.items.filter { it.objectiveId in objectiveIds }, p.items.filter { it.objectiveId in objectiveIds })
+        assertEquals(historical.provenanceRecords.filter { it.unitNumber == 13 }, p.provenanceRecords.filter { it.unitNumber == 13 })
+        val exampleIds = (historicalUnit.objectives.flatMap { it.exampleIds } +
+            historicalUnit.sessions.flatMap { it.steps }.flatMap { it.exampleIds }).toSet()
+        assertEquals(historical.examples.filter { it.id in exampleIds }, p.examples.filter { it.id in exampleIds })
+        val s = session(p); val old = session(baseline())
         assertEquals(1, old.steps.takeWhile { it.kind != "GUIDED" }.count { it.kind == "TEACH" })
         assertEquals(4, s.steps.takeWhile { it.kind != "GUIDED" }.count { it.kind == "TEACH" })
         val teaching = s.steps.filter { it.kind == "TEACH" }; val rem = p.step("u13-st-rem-past-aspect")!!.second
