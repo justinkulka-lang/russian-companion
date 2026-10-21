@@ -1,0 +1,22 @@
+{
+  "persistedZipXmlEventsAndResultExact": true,
+  "freshDiscoveryIdentitySetExact": true,
+  "reported": 1323,
+  "classes": 219,
+  "counts": {
+    "reported": 1323,
+    "passed": 1322,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 1
+  },
+  "exitCode": 0,
+  "original14Outcomes": {
+    "PASSED": 14
+  },
+  "bothManifestHashesAndArchiveCrcAllMembersVerified": true,
+  "allFiveInputTreesUnchanged": true,
+  "completeSuite": false,
+  "independentAudit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

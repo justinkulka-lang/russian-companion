@@ -1,0 +1,12 @@
+[
+  {
+    "observedUtc": "2026-10-21T19:55:41.140065+00:00",
+    "event": "monitoring connection interrupted;environment returned ready;read-only recovery",
+    "sameLauncherPidObserved": 424716,
+    "completedEventsAfterReconnect": 1104,
+    "realExitAvailable": false,
+    "runRestarted": false,
+    "causeOfConnectionInterruption": "UNCONFIRMED",
+    "qualification": "Launcher process alive on reconnect;does not independently prove complete execution or termination cause"
+  }
+]
