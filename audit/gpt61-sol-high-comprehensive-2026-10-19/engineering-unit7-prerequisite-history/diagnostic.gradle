@@ -1,0 +1,5 @@
+gradle.projectsEvaluated {
+    gradle.rootProject.project(':app').tasks.named('compileDebugUnitTestKotlin').configure {
+        source('/workspace/artifacts/unit7-current-history-2026-10-21/diagnostic-source')
+    }
+}

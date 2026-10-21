@@ -1,0 +1,47 @@
+{
+  "sources": [
+    {
+      "commit": "2ff71f197efb73d99662bc8a64180dc01a79aec3",
+      "assetBytes": 19991425,
+      "assetSha256": "e674793a2b70e383be8e1705deae35b710fe6cbc87caa68a65aa55785238ea1f"
+    },
+    {
+      "commit": "f1dad5d93d7e9d9d0f2680866cb70227a4480cc3",
+      "assetBytes": 20036126,
+      "assetSha256": "2133ef7b879e25a336888b3679562f9e00069973a16254c8310b4c52e29ac34e"
+    },
+    {
+      "commit": "b5e1daf50ac8597d00aeb6976f894d3ce44c03ca",
+      "assetBytes": 20036214,
+      "assetSha256": "33e5655c99d6d5003da0ab1af9249dc814472e3436e0d28afd2f878f6ade4940"
+    },
+    {
+      "commit": "e6db0bdfe0bbb40edf190623e2123014946f305b",
+      "assetBytes": 20170831,
+      "assetSha256": "a6a5f314cff598a722e22b977292b0b7b1d1cfb460fc1415c8f50f034c3a9b5c"
+    },
+    {
+      "commit": "b7e53230e2119b1e57d781b1e1b955f074a38601",
+      "assetBytes": 20350033,
+      "assetSha256": "fc2a59cdc61ec82640f29743707b67f04812a372e13fac08987aa16e512df2ca"
+    },
+    {
+      "commit": "ad0c5705238ed49d2c31bf9932853623a4bbd164",
+      "assetBytes": 20350033,
+      "assetSha256": "fc2a59cdc61ec82640f29743707b67f04812a372e13fac08987aa16e512df2ca"
+    }
+  ],
+  "unit4CorrectionParentVerified": "b5e1daf50ac8597d00aeb6976f894d3ce44c03ca",
+  "unit4CorrectionChangedPaths": [
+    "app/src/main/assets/content/v2-curriculum.json",
+    "app/src/test/java/dev/russiancompanion/v2/OptionPresentationTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Unit4PresentRepairUiTest.kt",
+    "app/src/test/java/dev/russiancompanion/v2/Unit4PresentTeachingTest.kt",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-cc015/CORRECTION.json",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-cc015/SOURCE_AND_SCOPE.md",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-cc015/SOURCE_BINDINGS.json",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-cc015/apply_correction.py"
+  ],
+  "diagnosticScope": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED proves before/after Unit4 boundary;DIAGNOSTIC final passes complete repair and history conservation;not release/independent qualification",
+  "oldUnit7RestoreCause": "UNCONFIRMED"
+}

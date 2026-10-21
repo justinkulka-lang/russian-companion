@@ -1,0 +1,373 @@
+{
+  "archive": "RAW_EXECUTION.zip",
+  "bytes": 125565,
+  "sha256": "ad531038ad5bc5f170fba23c77b3d15f112838dbc847c5ae9867cc82158b57df",
+  "members": [
+    {
+      "path": "CODE_CHANGE.patch",
+      "bytes": 3114,
+      "sha256": "598142b502ab60e1dd182535e2e803d49164996749e10c6793d87f8bb9284ae3"
+    },
+    {
+      "path": "DIAGNOSTIC/CONTEXT.json",
+      "bytes": 3143,
+      "sha256": "874f2c4067731636cceb5d93f7972441161d91518be9cdb5617c43a28371ea94"
+    },
+    {
+      "path": "DIAGNOSTIC/EVENTS.jsonl",
+      "bytes": 622,
+      "sha256": "a38c4cabb036aed43f318574dde89854b46cc9a4d6dafa77dd4a3ad2bcf583e2"
+    },
+    {
+      "path": "DIAGNOSTIC/LINT.xml",
+      "bytes": 31476,
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+    },
+    {
+      "path": "DIAGNOSTIC/RESULT.json",
+      "bytes": 2296,
+      "sha256": "9f19bfc4c447d78ac2447c0971b44a7bc1bf41be339f5f7d18fa3f6420bac557"
+    },
+    {
+      "path": "DIAGNOSTIC/RESULTS.csv",
+      "bytes": 289,
+      "sha256": "9bb0e47099c0cb57ab7e884b8269d37e3fe5e5202a4b46faf6345e674e74dca5"
+    },
+    {
+      "path": "DIAGNOSTIC/RUN.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "DIAGNOSTIC/RUN.log",
+      "bytes": 3574,
+      "sha256": "a1452a13bd99f242b7c69068276030a71537d7e6dcf52ed4cf46c88ef47e1e90"
+    },
+    {
+      "path": "DIAGNOSTIC/SHA256.json",
+      "bytes": 826,
+      "sha256": "88ae5754261ba1ff24e288bea8c3053a20f871495b684624e1298b680d363f1a"
+    },
+    {
+      "path": "DIAGNOSTIC/XML/TEST-dev.russiancompanion.v2.Unit7HistoryPrerequisiteDiagnosticTest.xml",
+      "bytes": 1829,
+      "sha256": "22182eb3c6138bad13abfccf976a7af585ab97d6f04ba3737266fbe9a8857ac0"
+    },
+    {
+      "path": "DIAGNOSTIC/gc-395148.log",
+      "bytes": 10973,
+      "sha256": "3d83db1e1700d05d2427544309e8feb1a79c78b228b3a48215d33ddc6d292f32"
+    },
+    {
+      "path": "DIAGNOSTIC_INIT_REJECTED/CONTEXT.json",
+      "bytes": 3143,
+      "sha256": "1bead8d310682592adf76e4acd2985fff56a4aeb006b8518321dc20333ad573d"
+    },
+    {
+      "path": "DIAGNOSTIC_INIT_REJECTED/LAUNCHER.log",
+      "bytes": 578,
+      "sha256": "ed79cd155e51673c176c46f17958680ad8c93c70dc3765c8e7e3fa29224ff55e"
+    },
+    {
+      "path": "DIAGNOSTIC_INIT_REJECTED/RUN.exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "DIAGNOSTIC_INIT_REJECTED/RUN.log",
+      "bytes": 829,
+      "sha256": "f3d72c3a553e213115e2a6a4f66b548b665ce9ae044a8ff720b853112bb440f8"
+    },
+    {
+      "path": "DIAGNOSTIC_INIT_REJECTED/diagnostic.gradle",
+      "bytes": 160,
+      "sha256": "563573487035ea9b5c5fdef0dd29ceae4dd3d4b267fe609d80312b2be99f06c3"
+    },
+    {
+      "path": "DIAGNOSTIC_INTERRUPTED_UNWARMED/CONTEXT.json",
+      "bytes": 3143,
+      "sha256": "99d78bfd16dbcd58349d92a0ff5fb9d83eb40b6fbff82ba53e4415c8bcb56bac"
+    },
+    {
+      "path": "DIAGNOSTIC_INTERRUPTED_UNWARMED/DIAGNOSTIC_LAUNCHER.log",
+      "bytes": 204,
+      "sha256": "f1860468c5e4aa26eaa910259639e0b0d4387bb2c34be37d2db488fe103288ed"
+    },
+    {
+      "path": "DIAGNOSTIC_INTERRUPTED_UNWARMED/EVENTS.jsonl",
+      "bytes": 622,
+      "sha256": "8340960500fc3af8dd3d12cb4a8a2a316b057d840c40dd4da133dd6cf545ffc9"
+    },
+    {
+      "path": "DIAGNOSTIC_INTERRUPTED_UNWARMED/OPERATOR_STOP.json",
+      "bytes": 278,
+      "sha256": "95a8f0e99bcfdaf3851aefb1aaab27d2d7085c7d138aaf781c0ee29baa4fb5b4"
+    },
+    {
+      "path": "DIAGNOSTIC_INTERRUPTED_UNWARMED/RUN.exit",
+      "bytes": 4,
+      "sha256": "f5bde7eb9f6c71611dc5726e8aca3eb4eba3e386da49e0a4ed5c295a90a73a0d"
+    },
+    {
+      "path": "DIAGNOSTIC_INTERRUPTED_UNWARMED/RUN.log",
+      "bytes": 2599,
+      "sha256": "d34d329f8ab8bbf7683267a592aaa273e3b08bf8837f009b0a0e50eef40adac2"
+    },
+    {
+      "path": "DIAGNOSTIC_INTERRUPTED_UNWARMED/THREAD_SNAPSHOT.txt",
+      "bytes": 28354,
+      "sha256": "64ff9f045aeecd94a2a9794ac71ff8f2462286fdc86c348c7339e5834aeb8403"
+    },
+    {
+      "path": "DIAGNOSTIC_INTERRUPTED_UNWARMED/Unit7HistoryPrerequisiteDiagnosticTest.kt",
+      "bytes": 6003,
+      "sha256": "dd6ec47ec1a50d3e3ccf67197405dadc3b871068bc3163a478ad5aec3531b765"
+    },
+    {
+      "path": "DIAGNOSTIC_INTERRUPTED_UNWARMED/diagnostic.gradle",
+      "bytes": 218,
+      "sha256": "5833f4a7e7fbf2b0994549aaf1f48944434fb750df5a9ddfab816a5ca80b344a"
+    },
+    {
+      "path": "DIAGNOSTIC_INTERRUPTED_UNWARMED/gc-394287.log",
+      "bytes": 109055,
+      "sha256": "fca0e27a84c29a3c6389464337211aeff0c89c17a1443b932b94fb04d24212e1"
+    },
+    {
+      "path": "DIAGNOSTIC_INTERRUPTED_UNWARMED/run_scope.py",
+      "bytes": 6740,
+      "sha256": "39ab843b7a87b5b4d2db4f3b8228a2cdebd47f2fe2379e7eb14c659f826491e0"
+    },
+    {
+      "path": "DIAGNOSTIC_LAUNCHER.log",
+      "bytes": 211,
+      "sha256": "b66ebcb45ef2af1dba2252bf6b0a7ccceac36ed43aa853cd5199e86e1dae2fc6"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/CONTEXT.json",
+      "bytes": 3143,
+      "sha256": "cef7509170bd789379fc70b38a3f2918f032e212ea3d6c283204a0012ef039f4"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/DIAGNOSTIC_LAUNCHER.log",
+      "bytes": 211,
+      "sha256": "685813952e1bd61580b002688129029d3065560d5a76a83af70874e173c94929"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/EVENTS.jsonl",
+      "bytes": 731,
+      "sha256": "c12d4c5f912e5e4757ca7b8dc910e91526fae2f18db1370058f6e9174df2efc3"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/LINT.xml",
+      "bytes": 31476,
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/RESULT.json",
+      "bytes": 2384,
+      "sha256": "b54f49f2616a7e75e4a123c19fc8e87e8aabe3848898ebb28aaac24e3eccb405"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/RESULTS.csv",
+      "bytes": 379,
+      "sha256": "7875f236b577085d5c0ace05ccc4a75fbaef671716546d82f2bb0c447e5de77d"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/RUN.exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/RUN.log",
+      "bytes": 4638,
+      "sha256": "704534c70622f6ead89eafdd1bfefa1287fab5a3afb4b0a6b74a3321584a2da2"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/SHA256.json",
+      "bytes": 826,
+      "sha256": "88a202e43323c39aef15c98a1f453a9ba492e2e9d93c8738c5df823ed16e647a"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/Unit7HistoryPrerequisiteDiagnosticTest.kt",
+      "bytes": 6041,
+      "sha256": "d54a14d61baff3b04fdf7e8f5864be6fd7b2c541a92696e4241146aa81a27809"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/XML/TEST-dev.russiancompanion.v2.Unit7HistoryPrerequisiteDiagnosticTest.xml",
+      "bytes": 4396,
+      "sha256": "262cff3170f6b9495ab61a5e9d66fbd8fdc917b3b5466b90f8ed33cd2d92078d"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/diagnostic.gradle",
+      "bytes": 218,
+      "sha256": "5833f4a7e7fbf2b0994549aaf1f48944434fb750df5a9ddfab816a5ca80b344a"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/gc-394761.log",
+      "bytes": 11194,
+      "sha256": "af5a663f99d7f5cae0f77201c66eb28a67223083ca5b263b55269ad03bf054c0"
+    },
+    {
+      "path": "DIAGNOSTIC_REPAIR_EXPECTATION_FAILED/run_scope.py",
+      "bytes": 6740,
+      "sha256": "39ab843b7a87b5b4d2db4f3b8228a2cdebd47f2fe2379e7eb14c659f826491e0"
+    },
+    {
+      "path": "DIAGNOSTIC_SESSION.json",
+      "bytes": 99,
+      "sha256": "9c5b7598311b654d3f7df0dd1ef7db10e2aa54e95a077b43db779310363b18f4"
+    },
+    {
+      "path": "DIAGNOSTIC_SOURCE_NOT_DISCOVERED/CONTEXT.json",
+      "bytes": 3143,
+      "sha256": "58c1018b01af0ba958203cfcc30b08637209324110ee74a1b0046fa2e3869b6d"
+    },
+    {
+      "path": "DIAGNOSTIC_SOURCE_NOT_DISCOVERED/EVENTS.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "DIAGNOSTIC_SOURCE_NOT_DISCOVERED/LAUNCHER.log",
+      "bytes": 204,
+      "sha256": "f1860468c5e4aa26eaa910259639e0b0d4387bb2c34be37d2db488fe103288ed"
+    },
+    {
+      "path": "DIAGNOSTIC_SOURCE_NOT_DISCOVERED/LINT.xml",
+      "bytes": 31476,
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+    },
+    {
+      "path": "DIAGNOSTIC_SOURCE_NOT_DISCOVERED/RUN.exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "DIAGNOSTIC_SOURCE_NOT_DISCOVERED/RUN.log",
+      "bytes": 3797,
+      "sha256": "47d7bcf1f586cbd71f03606dc1f1f5d81bd5579fcbfabe4e71c03d2c0f2f51e8"
+    },
+    {
+      "path": "DIAGNOSTIC_SOURCE_NOT_DISCOVERED/diagnostic.gradle",
+      "bytes": 192,
+      "sha256": "4db13fac9ff2647e02de1aecc1313566e8a340a62424e16302005e62f92de42e"
+    },
+    {
+      "path": "SOURCE_BOUNDARY.json",
+      "bytes": 2170,
+      "sha256": "8316f9cedc1a8a0e8f26411c79de0fb64a1055a79d7b0d27c3010b292c603100"
+    },
+    {
+      "path": "VERIFIED/CONTEXT.json",
+      "bytes": 4080,
+      "sha256": "57637a1e31df05d8a4a1a3cf03a277058a9f16bb20c1ce5abe84ae7af81e9cca"
+    },
+    {
+      "path": "VERIFIED/EVENTS.jsonl",
+      "bytes": 2680,
+      "sha256": "83bbaffbb617fab8855371eecbefab51d10fda910d39888eee5114227b58db8c"
+    },
+    {
+      "path": "VERIFIED/LINT.xml",
+      "bytes": 31476,
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+    },
+    {
+      "path": "VERIFIED/RESULT.json",
+      "bytes": 3735,
+      "sha256": "0bdf5b7887c226b4435ca0c672e95ba7cbd4e5627016173cf6bcae6315403f72"
+    },
+    {
+      "path": "VERIFIED/RESULTS.csv",
+      "bytes": 940,
+      "sha256": "90c1af375121d82ee046f81f1f9a6722b16c37bf437c5e1d7648588490920a28"
+    },
+    {
+      "path": "VERIFIED/RUN.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "VERIFIED/RUN.log",
+      "bytes": 4095,
+      "sha256": "9619510c04cecfea8a87b67284b761e899c8d126e446645e1e8f3bdafb7d1ad4"
+    },
+    {
+      "path": "VERIFIED/SHA256.json",
+      "bytes": 1047,
+      "sha256": "c7b70021e3ac10c27affcb0e5dbb707f0f7c30458bb5d5ce06313551bdfe6007"
+    },
+    {
+      "path": "VERIFIED/XML/TEST-dev.russiancompanion.v2.Unit7AgreementTeachingTest.xml",
+      "bytes": 6935,
+      "sha256": "52f65c982d6574df77945ae6894c51711dd24c57b9804b25ea3d843f01d6db17"
+    },
+    {
+      "path": "VERIFIED/XML/TEST-dev.russiancompanion.v2.Unit7CurrentPrerequisiteHistoryTest.xml",
+      "bytes": 716,
+      "sha256": "56779ba72110336d0b432930e19ec387292173a28419cc60e0b1304926cfbe7c"
+    },
+    {
+      "path": "VERIFIED/gc-395487.log",
+      "bytes": 18737,
+      "sha256": "2dc762f5bfa697011724f76b7b055b5ac1229312b1decafe593f70bc0651b910"
+    },
+    {
+      "path": "VERIFIED/gc-395626.log",
+      "bytes": 16556,
+      "sha256": "13f90d91ce594b33afbb80948cea4461b79bdd820a3ad7eaefc6cf02cd99b2f9"
+    },
+    {
+      "path": "VERIFIED_LAUNCHER.log",
+      "bytes": 209,
+      "sha256": "3e8020d759913c434101b6de3b2cfd49f127f82bbb81d4e7a1e493c5725f0332"
+    },
+    {
+      "path": "VERIFIED_SESSION.json",
+      "bytes": 99,
+      "sha256": "a98b63f388a74948496c6623cd3b37f99ac6eea75dd2af42d03bce4275a2df89"
+    },
+    {
+      "path": "__pycache__/run_scope.cpython-312.pyc",
+      "bytes": 15598,
+      "sha256": "d268264fe05dec002d2315395f90ec6ea05701ffdfeb626ddb9059d629d39556"
+    },
+    {
+      "path": "__pycache__/run_verified.cpython-312.pyc",
+      "bytes": 16152,
+      "sha256": "45760edb890cbb2499a105ae28e159044b53f436c13ba8f545806838d5f9bf99"
+    },
+    {
+      "path": "diagnostic-source/dev/russiancompanion/v2/Unit7HistoryPrerequisiteDiagnosticTest.kt",
+      "bytes": 6189,
+      "sha256": "b974cff1e09964621f717272c5d5f0c4d5c0d453737685088ed8590276e8672a"
+    },
+    {
+      "path": "diagnostic.gradle",
+      "bytes": 218,
+      "sha256": "5833f4a7e7fbf2b0994549aaf1f48944434fb750df5a9ddfab816a5ca80b344a"
+    },
+    {
+      "path": "publish_results.py",
+      "bytes": 14051,
+      "sha256": "9451ff62505defd0a8dfdc183ba2b6c25ea28bb0901a755e206b52bd902c54db"
+    },
+    {
+      "path": "resources.gradle",
+      "bytes": 473,
+      "sha256": "b5f28c92fe4ad8a5deef6d19d0dd3acbc4e39e8f5f91f8ee2ee40f0ede0c0b09"
+    },
+    {
+      "path": "run_scope.py",
+      "bytes": 6740,
+      "sha256": "39ab843b7a87b5b4d2db4f3b8228a2cdebd47f2fe2379e7eb14c659f826491e0"
+    },
+    {
+      "path": "run_verified.py",
+      "bytes": 7254,
+      "sha256": "cb9d40f7ef428e536c91fa8006309b0da78f8474878e57889d3b8c6ae66ff4d0"
+    }
+  ],
+  "crcAndAllMemberHashesVerified": true
+}
