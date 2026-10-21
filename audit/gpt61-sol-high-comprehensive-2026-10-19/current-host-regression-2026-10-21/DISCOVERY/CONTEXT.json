@@ -1,0 +1,57 @@
+{
+  "sourceCommit": "58031310fee94a333643a0bc71354ebc1fe92059",
+  "sourceRootTree": "e2e97e48db90f76f45cb3f75731e4379d6a0e9e5",
+  "workingTreeAtStart": "CLEAN",
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "startedUtc": "2026-10-21T00:37:17.769393+00:00",
+  "inputTrees": {
+    "app/src/main": "fdb48a009cf684c729d79a921770a36749e0fc32",
+    "app/src/test": "ddbe7fa3e2e7fe6c46304182437b2eaccde022f5",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "366549a8a89d34b33ff9568247d7a4ff5ef676d6"
+  },
+  "mode": "DISCOVERY",
+  "syntheticDryRun": true,
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/current-host-regression-2026-10-21/resources.gradle",
+    "-Daudit.events.path=/workspace/artifacts/current-host-regression-2026-10-21/DISCOVERY/EVENTS.jsonl",
+    "-Daudit.gc.dir=/workspace/artifacts/current-host-regression-2026-10-21/DISCOVERY",
+    "testDebugUnitTest",
+    "--rerun",
+    "--test-dry-run",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "runnerSha256": "7965120c3b23be66b9ae975b55dae13fb9d0533285dba291f248c9a556157642",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+    "/workspace/artifacts/current-host-regression-2026-10-21/resources.gradle": "b5f28c92fe4ad8a5deef6d19d0dd3acbc4e39e8f5f91f8ee2ee40f0ede0c0b09"
+  },
+  "selectors": [],
+  "workerPolicy": "2forks/6GiB/forkEvery4;GC logs retained",
+  "resources": {
+    "cgroupMemoryMax": "34359738368",
+    "cgroupMemoryCurrent": "8601042944",
+    "cpus": 5
+  },
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "scope": "All discovered debug host methods except four screenshot exporters;not instrumented/device/exporter execution or full app/curriculum acceptance",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "completeSuite": false
+}
