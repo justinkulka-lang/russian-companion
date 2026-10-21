@@ -107,7 +107,7 @@ class Unit7AgreementTeachingTest {
         }
     }
     @Test fun genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen() {
-        val p = current; val old = previous
+        val p = agreementCorrectionPack(); val old = previous
         val labels = listOf("BEFORE_UNIT7_WORK", "ORDINARY_UNIT7", "UNSTARTED_REVIEW", "PARTIAL_REVIEW", "ANSWERED_REVIEW", "COMPLETED_UNIT7", "POST_COMPLETION_WRONG", "COMPLETED_UNIT8")
         labels.forEach { label ->
             val original = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(evidence(), "$label.json").readText())
@@ -140,7 +140,7 @@ class Unit7AgreementTeachingTest {
     }
 
     @Test fun freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments() {
-        val p = current
+        val p = agreementCorrectionPack()
         val old = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(evidence(), "COMPLETED_UNIT8.json").readText())
         val name = "u7-fresh-replacement-${System.nanoTime()}.db"
         try { LocalStore.openNamed(context(), name).use { store ->
@@ -208,6 +208,20 @@ class Unit7AgreementTeachingTest {
         private val previous by lazy {
             val command = ProcessBuilder("git", "show", "2ff71f197efb73d99662bc8a64180dc01a79aec3:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
             V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }
+        }
+        // These two original transition scenarios predate the later Unit4/7/8 corrections.
+        // Keep every original assertion on its actual implementation; current prerequisite
+        // refusal and repair are exercised by Unit7CurrentPrerequisiteHistoryTest.
+        private val agreementCorrection by lazy {
+            val command = ProcessBuilder("git", "show", "f1dad5d93d7e9d9d0f2680866cb70227a4480cc3:app/src/main/assets/content/v2-curriculum.json")
+                .directory(root()).start()
+            V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also {
+                assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it)
+            }
+        }
+        private fun agreementCorrectionPack(): V2CurriculumPack {
+            assertEquals(Unit7CurrentPrerequisiteHistoryTest.verifiedCurrentPack(), current)
+            return agreementCorrection
         }
         internal fun beforeTeachingCorrectionPack(): V2CurriculumPack = previous
         internal fun declaredAfterSession(): V2Session {
