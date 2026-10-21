@@ -1,5 +1,6 @@
 package dev.russiancompanion.v2.audit
 
+import dev.russiancompanion.v2.RecordedIntakeCorrectionScope
 import dev.russiancompanion.release.computeReleaseSourceDigest
 import dev.russiancompanion.release.readAcceptanceCandidate
 import dev.russiancompanion.v2.curriculum.V2CurriculumPack
@@ -85,10 +86,20 @@ class CurriculumReadinessReconciliationTest {
         assertTrue(model.packagedExampleRecords == model.reachableExampleRecords + model.orphanedExampleRecords)
         assertTrue(model.packagedCheckItems == model.reachableCheckItems + model.orphanedCheckItems)
         // Retain original and later historical/optional records; these counts are not required checks.
-        assertEquals("ex-u11-past-aspect-0, ex-u11-past-aspect-1, ex-u30-letter-names-0, ex-u30-letter-names-1, ex-u4-verb-знать, ex-u4-verb-работать", model.orphanedExampleIds)
+        val beforeAvailability = RecordedIntakeCorrectionScope.load(root(), "2c455b96dde9abd1fc8e2b5350df161216cf7e31")
+        val beforeAvailabilityModel = reconcileCurriculumReadiness(root(), beforeAvailability)
+        assertEquals("ex-u11-past-aspect-0, ex-u11-past-aspect-1, ex-u30-letter-names-0, ex-u30-letter-names-1, ex-u4-verb-знать, ex-u4-verb-работать", beforeAvailabilityModel.orphanedExampleIds)
         assertEquals("u17-g-clock-0, u17-i-clock-1, u17-i-clock-2, u24-g-word-order-contrast-0, u29-g-short-adjective-0, u29-i-punctuation-2, u29-i-short-adjective-1, u29-i-short-adjective-2, u30-g-abbrev-examples-0, u30-g-letter-names-0, u30-i-abbrev-examples-1, u30-i-abbrev-examples-2, u30-i-letter-names-1, u30-i-letter-names-2", model.orphanedCheckItemIds)
-        assertEquals(6, model.orphanedExampleRecords)
+        assertEquals(6, beforeAvailabilityModel.orphanedExampleRecords)
         assertEquals(14, model.orphanedCheckItems)
+        // The positive-existence correction retains its two old absence examples as historical records.
+        val availabilitySource = RecordedIntakeCorrectionScope.load(root(), "fe919656bfa2775b5cc2c22f2496d4258343cfea")
+        RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, availabilitySource, 8)
+        assertEquals(beforeAvailability.examples, pack.examples)
+        val retainedAbsenceExamples = listOf("ex-u8-availability-2", "ex-u8-availability-3")
+        assertEquals((beforeAvailabilityModel.orphanedExampleIds.split(", ") + retainedAbsenceExamples)
+            .sorted().joinToString(", "), model.orphanedExampleIds)
+        assertEquals(beforeAvailabilityModel.orphanedExampleRecords + retainedAbsenceExamples.size, model.orphanedExampleRecords)
         assertEquals(0, model.packagedAudioBoundToV2Units)
         assertEquals("NOT_APPROVED", model.publicRelease)
         assertFalse(model.candidateFrozen)
