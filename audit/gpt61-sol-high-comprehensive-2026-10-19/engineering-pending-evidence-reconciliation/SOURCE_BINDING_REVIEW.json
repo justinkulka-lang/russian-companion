@@ -1,0 +1,340 @@
+{
+  "sourceCommit": "183289c8091670eabd3d6e791277d0cfd34aefb7",
+  "commands": [
+    {
+      "command": [
+        "/workspace/jdk21/bin/javac",
+        "-cp",
+        "/workspace/artifacts/pending-evidence-reconciliation-2026-10-21:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/workspace/russian-companion/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes",
+        "/workspace/artifacts/pending-evidence-reconciliation-2026-10-21/SourceBindingAudit.java"
+      ],
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "/workspace/jdk21/bin/java",
+        "-Xmx2g",
+        "-cp",
+        "/workspace/artifacts/pending-evidence-reconciliation-2026-10-21:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/workspace/russian-companion/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes",
+        "SourceBindingAudit",
+        "/workspace/russian-companion"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "rows": [
+    {
+      "unit": 1,
+      "recordedSourceCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+      "canonicalBytes": 60403,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 2,
+      "recordedSourceCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c",
+      "canonicalBytes": 21760,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 3,
+      "recordedSourceCommit": "057367e58751c4db86af05f5b84b463537ffa3c7",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "057367e58751c4db86af05f5b84b463537ffa3c7",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300",
+      "canonicalBytes": 158425,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 4,
+      "recordedSourceCommit": "a1e8f319b0b55f8e1dbcced680c34f32d240d217",
+      "recordedSourceErrors": [
+        "Unit 4 content-review digest at the curriculum source commit does not match this revision"
+      ],
+      "proposedSourceCommit": "e6db0bdfe0bbb40edf190623e2123014946f305b",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "c440d047f575da49ba463f026f0f66ebb7f953f38cccecc30b824add2396d395",
+      "canonicalBytes": 478128,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 5,
+      "recordedSourceCommit": "6f596153b234c1edf44522c9727962ae40204d47",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "6f596153b234c1edf44522c9727962ae40204d47",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141",
+      "canonicalBytes": 213402,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 6,
+      "recordedSourceCommit": "886732be191b5d897f0f57cfb266482562b7b2a2",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "886732be191b5d897f0f57cfb266482562b7b2a2",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "ba6c6924af88effded224c79e37b467780c4c5372dd1b5dd6ba8a37e3f0233fe",
+      "canonicalBytes": 547019,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 7,
+      "recordedSourceCommit": "7d92d8813e105932391448d94247534493337118",
+      "recordedSourceErrors": [
+        "Unit 7 content-review digest at the curriculum source commit does not match this revision"
+      ],
+      "proposedSourceCommit": "b7e53230e2119b1e57d781b1e1b955f074a38601",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "d922af88322b648f478da4cbe6f23e25b90310e026f4faef042e956931af42da",
+      "canonicalBytes": 1063293,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 8,
+      "recordedSourceCommit": "c0a758abc8e0afc103a9987f268848630586d35e",
+      "recordedSourceErrors": [
+        "Unit 8 content-review digest at the curriculum source commit does not match this revision"
+      ],
+      "proposedSourceCommit": "fe919656bfa2775b5cc2c22f2496d4258343cfea",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "b4067ca982daa266855b65eeddcf9cce10094c440fbb534ab5a442d79938b317",
+      "canonicalBytes": 662890,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 9,
+      "recordedSourceCommit": "d93fa913f75ad5cd80c97c8e036242a389558a3d",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "d93fa913f75ad5cd80c97c8e036242a389558a3d",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "418b5840eacbb7dd06791fec7e490befe34ae03defab0706ee10b42565c8dea3",
+      "canonicalBytes": 1086896,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 10,
+      "recordedSourceCommit": "4ceb59d48b54471ba845664f19c9a605f6e70567",
+      "recordedSourceErrors": [
+        "Unit 10 content-review digest at the curriculum source commit does not match this revision"
+      ],
+      "proposedSourceCommit": "7efff9e18328c612de235236d98e834bb85cd1db",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "f2f1e172ee2d75267c30adaa8020d039cd4aaa913e06831582c3fc591ddbccd0",
+      "canonicalBytes": 666055,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 11,
+      "recordedSourceCommit": "37e6a0cbd7de30a539e90a0481f6ab8c5c562ed9",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "37e6a0cbd7de30a539e90a0481f6ab8c5c562ed9",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69",
+      "canonicalBytes": 247456,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 12,
+      "recordedSourceCommit": "71b56a1f80584feb36ad6e28bee6744b9c8a7ec9",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "71b56a1f80584feb36ad6e28bee6744b9c8a7ec9",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+      "canonicalBytes": 387355,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 13,
+      "recordedSourceCommit": "41ef8eebc5f7ff25cd30cb19164662dfab858f66",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "41ef8eebc5f7ff25cd30cb19164662dfab858f66",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "7102c47201a3d4973d781d315dbbb8ceccca3424174b9c90ad127bac037828df",
+      "canonicalBytes": 397363,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 14,
+      "recordedSourceCommit": "e88130c42b21fc2440cb82792a3bc3841fe69563",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "e88130c42b21fc2440cb82792a3bc3841fe69563",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38",
+      "canonicalBytes": 163033,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 15,
+      "recordedSourceCommit": "1e571336b9157b884beb2e6e5e79c3b95aa99480",
+      "recordedSourceErrors": [
+        "Unit 15 content-review digest at the curriculum source commit does not match this revision"
+      ],
+      "proposedSourceCommit": "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "325189c63e7ff7bf43bbc22248f291c7c2acea05ac47a9684c2365d56b549c8a",
+      "canonicalBytes": 198365,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 16,
+      "recordedSourceCommit": "9ee2fa6bf235e6f310f8b5005a26644e57cddafc",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "9ee2fa6bf235e6f310f8b5005a26644e57cddafc",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "31893860b30df7c38248356c9014db1a361110f7a8a51ce53ae7ed6fd61bae87",
+      "canonicalBytes": 632908,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 17,
+      "recordedSourceCommit": "443c0331623ebe10b81c96f3a4d1204462a46644",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "443c0331623ebe10b81c96f3a4d1204462a46644",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "415d0ecc0e4e8ce649dff17aef09851beddc39f191f6bedf783af07904481c62",
+      "canonicalBytes": 1554549,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 18,
+      "recordedSourceCommit": "96fff68390ba77498983de3044b7e0010fdd2d8b",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "96fff68390ba77498983de3044b7e0010fdd2d8b",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "603827ede7e8394cef33bf1af9fb4ef6217a80f0e6624f1bd385e4a0766b69ac",
+      "canonicalBytes": 254446,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 19,
+      "recordedSourceCommit": "49033e19f9a090793ff64f3f6e9d44bc4c0d5aac",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "49033e19f9a090793ff64f3f6e9d44bc4c0d5aac",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "3096baba4cdc192ac7d701f6eedd3c8ca0be12c54ab64efa52b0c25fdbf83a5e",
+      "canonicalBytes": 417106,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 20,
+      "recordedSourceCommit": "e5faf806e5b88e2e31833ce9429365eafeae49c7",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "e5faf806e5b88e2e31833ce9429365eafeae49c7",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "6c11d3dd467846f5aabf034024f7d27d3ed9a5cc9eec4a8462cd8be3c54069eb",
+      "canonicalBytes": 1139866,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 21,
+      "recordedSourceCommit": "78bc1d96fe99e9ca9a0cd2daffd7a6663313bffb",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "78bc1d96fe99e9ca9a0cd2daffd7a6663313bffb",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "987a27a7a3de52fa7965c6b81b5ef3ab74221b62d96f52b98e5b093c8e39ae56",
+      "canonicalBytes": 469101,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 22,
+      "recordedSourceCommit": "177a10ba3f1626226c63d9e49b038ba1e5d45f09",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "177a10ba3f1626226c63d9e49b038ba1e5d45f09",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "886c572c8d1adf2e0e508fe20e872afd81c49510db28bf46d2c16823c5f83f08",
+      "canonicalBytes": 546281,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 23,
+      "recordedSourceCommit": "0db5c4dc6278d119448ddc69b0bf82c0b7a73fbd",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "0db5c4dc6278d119448ddc69b0bf82c0b7a73fbd",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "e7cf730b6ed8317979d7c9f59c23b360f28081d0461fe7a0864643a3d855f683",
+      "canonicalBytes": 359437,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 24,
+      "recordedSourceCommit": "dc4aa918f6098e17f8ffb8b297b356770a0f10d3",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "dc4aa918f6098e17f8ffb8b297b356770a0f10d3",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "d5cb2b37f1000c8728b529e4167f3ab06fb216cb12c7a6d317531f1b309c2e66",
+      "canonicalBytes": 819832,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 25,
+      "recordedSourceCommit": "643faa96490c247d31e9080a32b274cc09a1df14",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "643faa96490c247d31e9080a32b274cc09a1df14",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "57470dadfa8a6184a38538a4bae84430e8e6d6ba2ad491d1e926690777050142",
+      "canonicalBytes": 735877,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 26,
+      "recordedSourceCommit": "be62aba972609535d70ad8174873bd41c57a4482",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "be62aba972609535d70ad8174873bd41c57a4482",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "379cd55838be8daeac22805558909023411acbb1db37dc41c6090fd8425ae902",
+      "canonicalBytes": 5278933,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 27,
+      "recordedSourceCommit": "1b2b2cc43f097125e970ca99404f5bff61f58ce7",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "1b2b2cc43f097125e970ca99404f5bff61f58ce7",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "25a7461f907707d5c067a9ab9aac9fd604c988a4efefa545ac82e918b8f28693",
+      "canonicalBytes": 1072455,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 28,
+      "recordedSourceCommit": "9787004735b187bce207b938c73d21e0628532f9",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "9787004735b187bce207b938c73d21e0628532f9",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "02dcc55155d60b9b07cf78391d01b392bcd236c99b6c4729fe7fca6075b96ffb",
+      "canonicalBytes": 2112825,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 29,
+      "recordedSourceCommit": "08d94c67628ec1fede5cafd2aa310aae4cecd6e9",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "08d94c67628ec1fede5cafd2aa310aae4cecd6e9",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "b08ed4ce32daa1c702e1844d43b52d8850eceeea90fe0c4501d0c8c8f0d41589",
+      "canonicalBytes": 1316700,
+      "canonicalDocumentsByteIdentical": true
+    },
+    {
+      "unit": 30,
+      "recordedSourceCommit": "96242a17a87cc2ec0f5d7418cd98a9d3220a9e99",
+      "recordedSourceErrors": [],
+      "proposedSourceCommit": "96242a17a87cc2ec0f5d7418cd98a9d3220a9e99",
+      "proposedSourceErrors": [],
+      "canonicalDocumentSha256": "2e441506616b749439442273e64ccff444f18a994bb5b9c908780821c68a55fa",
+      "canonicalBytes": 894900,
+      "canonicalDocumentsByteIdentical": true
+    }
+  ],
+  "notJUnit": true,
+  "canonicalDocumentIncludesReachableSourceRightsMediaMappingDependencies": true,
+  "qualification": false
+}

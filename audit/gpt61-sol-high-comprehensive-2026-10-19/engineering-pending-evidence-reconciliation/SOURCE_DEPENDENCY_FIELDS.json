@@ -1,0 +1,1025 @@
+{
+  "kind": "Static field comparison;not qualification or JUnit",
+  "rows": [
+    {
+      "unit": 1,
+      "proposedSourceCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "c812b581ebdfe80627c9bd16fba2600fe727924f4f2322d4439774d57e5bf120",
+          "currentSha256": "c812b581ebdfe80627c9bd16fba2600fe727924f4f2322d4439774d57e5bf120"
+        }
+      }
+    },
+    {
+      "unit": 2,
+      "proposedSourceCommit": "4f5cb8024d3f68a37052fdf85b5755bffa2a0904",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "8ebb07147cc4f6cef511af5ac950e55baac8daa104c64468bf01ff83cccc9c58",
+          "currentSha256": "8ebb07147cc4f6cef511af5ac950e55baac8daa104c64468bf01ff83cccc9c58"
+        }
+      }
+    },
+    {
+      "unit": 3,
+      "proposedSourceCommit": "057367e58751c4db86af05f5b84b463537ffa3c7",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 88,
+          "currentCount": 88,
+          "sourceSha256": "8a01ae1a71ae9a62facae862fa1e1ab97122ce734e31467789500badcfaaf58b",
+          "currentSha256": "8a01ae1a71ae9a62facae862fa1e1ab97122ce734e31467789500badcfaaf58b"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 52,
+          "currentCount": 52,
+          "sourceSha256": "48641001be7037d155789e6d69aede2a44c50c8d61233bcd9454080fa9f1e13a",
+          "currentSha256": "48641001be7037d155789e6d69aede2a44c50c8d61233bcd9454080fa9f1e13a"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "7521be4526394724f174120b8fe469de932f4c7a0b58fb9d144b3747acec4bd8",
+          "currentSha256": "7521be4526394724f174120b8fe469de932f4c7a0b58fb9d144b3747acec4bd8"
+        }
+      }
+    },
+    {
+      "unit": 4,
+      "proposedSourceCommit": "e6db0bdfe0bbb40edf190623e2123014946f305b",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 211,
+          "currentCount": 211,
+          "sourceSha256": "087ee34fed032c92ce5cabcd42ccba62b76854dc0d2a323414568e8df95f9b3b",
+          "currentSha256": "087ee34fed032c92ce5cabcd42ccba62b76854dc0d2a323414568e8df95f9b3b"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 65,
+          "currentCount": 65,
+          "sourceSha256": "a9eba0834bdab8485bc2be0193031299678795adde1c5f6ae8767a39907ef25c",
+          "currentSha256": "a9eba0834bdab8485bc2be0193031299678795adde1c5f6ae8767a39907ef25c"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "c9646c855109d9cca87b54e90e017ee17081b52cd1177586bb0d9944a7f0ce9a",
+          "currentSha256": "c9646c855109d9cca87b54e90e017ee17081b52cd1177586bb0d9944a7f0ce9a"
+        }
+      }
+    },
+    {
+      "unit": 5,
+      "proposedSourceCommit": "6f596153b234c1edf44522c9727962ae40204d47",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 117,
+          "currentCount": 117,
+          "sourceSha256": "c77634be79fdd47a7c9b1162dfe4792c6de1ec6c8e0845fee42247d5b9d18130",
+          "currentSha256": "c77634be79fdd47a7c9b1162dfe4792c6de1ec6c8e0845fee42247d5b9d18130"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 61,
+          "currentCount": 61,
+          "sourceSha256": "4cbaaf58a5544fa95870796ae2d1e6281bc4e66a8b60070fa1425376c4c58150",
+          "currentSha256": "4cbaaf58a5544fa95870796ae2d1e6281bc4e66a8b60070fa1425376c4c58150"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "6d90b8dfa72aa968af71604c7613406f1bef380417e2d60fec988bcfb296c016",
+          "currentSha256": "6d90b8dfa72aa968af71604c7613406f1bef380417e2d60fec988bcfb296c016"
+        }
+      }
+    },
+    {
+      "unit": 6,
+      "proposedSourceCommit": "886732be191b5d897f0f57cfb266482562b7b2a2",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 243,
+          "currentCount": 243,
+          "sourceSha256": "a181d83b01565a319d65fdfdcba170359d9002a851ca1d57dbabd39c4624633b",
+          "currentSha256": "a181d83b01565a319d65fdfdcba170359d9002a851ca1d57dbabd39c4624633b"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 46,
+          "currentCount": 46,
+          "sourceSha256": "410a3352c1b5ca22c5d221eebd5e13c3300a27efa0419d75d0dcda8a96906ef9",
+          "currentSha256": "410a3352c1b5ca22c5d221eebd5e13c3300a27efa0419d75d0dcda8a96906ef9"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "64fba7e03c8956b3ec93b3d5cc0f68fd8e6b99ac5f14c759d1fe91a572c40539",
+          "currentSha256": "64fba7e03c8956b3ec93b3d5cc0f68fd8e6b99ac5f14c759d1fe91a572c40539"
+        }
+      }
+    },
+    {
+      "unit": 7,
+      "proposedSourceCommit": "b7e53230e2119b1e57d781b1e1b955f074a38601",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 4,
+          "currentCount": 4,
+          "sourceSha256": "b6d956f4ad87b128210759862935f11523b3a6531af8159948bc56e73f81a632",
+          "currentSha256": "b6d956f4ad87b128210759862935f11523b3a6531af8159948bc56e73f81a632"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 426,
+          "currentCount": 426,
+          "sourceSha256": "292967daf089924eb720657b33e97e89ae985d85faf3ea56ed4c91384f77bb76",
+          "currentSha256": "292967daf089924eb720657b33e97e89ae985d85faf3ea56ed4c91384f77bb76"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 68,
+          "currentCount": 68,
+          "sourceSha256": "7f7514e0266a1914c86ca5c9bf4e94514e738eb70616b804b19700e7ce97d3f3",
+          "currentSha256": "7f7514e0266a1914c86ca5c9bf4e94514e738eb70616b804b19700e7ce97d3f3"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "ba10aa0c8355e81542fef9483f59cc72fd1e34f3966e61f7fc395e15ef5f2784",
+          "currentSha256": "ba10aa0c8355e81542fef9483f59cc72fd1e34f3966e61f7fc395e15ef5f2784"
+        }
+      }
+    },
+    {
+      "unit": 8,
+      "proposedSourceCommit": "fe919656bfa2775b5cc2c22f2496d4258343cfea",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 287,
+          "currentCount": 287,
+          "sourceSha256": "a943f0ea81ea64dedb9a5f9855147f3e4c7402982da2b292b159cc0cc1b3e393",
+          "currentSha256": "a943f0ea81ea64dedb9a5f9855147f3e4c7402982da2b292b159cc0cc1b3e393"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 37,
+          "currentCount": 37,
+          "sourceSha256": "7d18644b7164731970fb31ad93859e8b031a1609a4a1ebf98aa11ba20632b25a",
+          "currentSha256": "7d18644b7164731970fb31ad93859e8b031a1609a4a1ebf98aa11ba20632b25a"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "aa16dcd4b58e9fa33bd919de947fb311d1241566e0c8b3b17528ef83336749f7",
+          "currentSha256": "aa16dcd4b58e9fa33bd919de947fb311d1241566e0c8b3b17528ef83336749f7"
+        }
+      }
+    },
+    {
+      "unit": 9,
+      "proposedSourceCommit": "d93fa913f75ad5cd80c97c8e036242a389558a3d",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 455,
+          "currentCount": 455,
+          "sourceSha256": "f0580ce9d6ef5dda1343f9392980415edccc0a2940a1b1df3244decef6331124",
+          "currentSha256": "f0580ce9d6ef5dda1343f9392980415edccc0a2940a1b1df3244decef6331124"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 57,
+          "currentCount": 57,
+          "sourceSha256": "7aed917f4b4e67cdb7bd8effde40508438a3e4b2531adfa78d0ca5f388500ddd",
+          "currentSha256": "7aed917f4b4e67cdb7bd8effde40508438a3e4b2531adfa78d0ca5f388500ddd"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "a3bb4bfcd4674a960cc70d3cd6795e7dac573499b6186005f8d588a436780d27",
+          "currentSha256": "a3bb4bfcd4674a960cc70d3cd6795e7dac573499b6186005f8d588a436780d27"
+        }
+      }
+    },
+    {
+      "unit": 10,
+      "proposedSourceCommit": "7efff9e18328c612de235236d98e834bb85cd1db",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 288,
+          "currentCount": 288,
+          "sourceSha256": "4db85991ee2935f5f6b51e5b4d35718a432209511c801e9c7b978fef45ff8bac",
+          "currentSha256": "4db85991ee2935f5f6b51e5b4d35718a432209511c801e9c7b978fef45ff8bac"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 45,
+          "currentCount": 45,
+          "sourceSha256": "3018c7782e461759414f6f6e1fcab9915c869f8f6273afdb9eb08d44148752f2",
+          "currentSha256": "3018c7782e461759414f6f6e1fcab9915c869f8f6273afdb9eb08d44148752f2"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "25180c642a78f424f0e4729412b9060e24dc6e84f34e48457305304c0be0d0f6",
+          "currentSha256": "25180c642a78f424f0e4729412b9060e24dc6e84f34e48457305304c0be0d0f6"
+        }
+      }
+    },
+    {
+      "unit": 11,
+      "proposedSourceCommit": "37e6a0cbd7de30a539e90a0481f6ab8c5c562ed9",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 114,
+          "currentCount": 114,
+          "sourceSha256": "90df059c3322ee8bfef765403c6efbafc4b069ae7f4050aff65a3ce880fda41d",
+          "currentSha256": "90df059c3322ee8bfef765403c6efbafc4b069ae7f4050aff65a3ce880fda41d"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 42,
+          "currentCount": 42,
+          "sourceSha256": "afc6f8109ced62074cd6ea241e4bf3d711ac066a4e5f96475b067dd9287f31a9",
+          "currentSha256": "afc6f8109ced62074cd6ea241e4bf3d711ac066a4e5f96475b067dd9287f31a9"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "d5e6ec6c8962adf6d1a4278cf7faa64876f324b9cede4359244917a9d95e382e",
+          "currentSha256": "d5e6ec6c8962adf6d1a4278cf7faa64876f324b9cede4359244917a9d95e382e"
+        }
+      }
+    },
+    {
+      "unit": 12,
+      "proposedSourceCommit": "71b56a1f80584feb36ad6e28bee6744b9c8a7ec9",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 162,
+          "currentCount": 162,
+          "sourceSha256": "892a874a54eb7b32ef3b4144b4f80edc1663a10ac8bb0e3475ba8dcc7df9b3e9",
+          "currentSha256": "892a874a54eb7b32ef3b4144b4f80edc1663a10ac8bb0e3475ba8dcc7df9b3e9"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 57,
+          "currentCount": 57,
+          "sourceSha256": "2475e1aa8b1c9e7cb227855d19b57804d634ae2951c275bb2d7e6a37f305341d",
+          "currentSha256": "2475e1aa8b1c9e7cb227855d19b57804d634ae2951c275bb2d7e6a37f305341d"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "77d3d92a32850448c4a2ced89ef870ea672c1312874c3265509f93d9df9b887f",
+          "currentSha256": "77d3d92a32850448c4a2ced89ef870ea672c1312874c3265509f93d9df9b887f"
+        }
+      }
+    },
+    {
+      "unit": 13,
+      "proposedSourceCommit": "41ef8eebc5f7ff25cd30cb19164662dfab858f66",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 143,
+          "currentCount": 143,
+          "sourceSha256": "ea757807a37f712e7c4569bed120e32d49f1a9695ec2d850ea058fae45bc4e07",
+          "currentSha256": "ea757807a37f712e7c4569bed120e32d49f1a9695ec2d850ea058fae45bc4e07"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 56,
+          "currentCount": 56,
+          "sourceSha256": "cd61c5a62b5274675ee3f19aa28cbb0a73119b6813f0f9747daf15da92999434",
+          "currentSha256": "cd61c5a62b5274675ee3f19aa28cbb0a73119b6813f0f9747daf15da92999434"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "27278257658b175e89d83b73c3699027a6c72c8ca128e3f236c1a25791511b0d",
+          "currentSha256": "27278257658b175e89d83b73c3699027a6c72c8ca128e3f236c1a25791511b0d"
+        }
+      }
+    },
+    {
+      "unit": 14,
+      "proposedSourceCommit": "e88130c42b21fc2440cb82792a3bc3841fe69563",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 51,
+          "currentCount": 51,
+          "sourceSha256": "bbc51797b0d486e9268e4337ec8246acc4523b58baf78254298cbbcbcbdf2cd2",
+          "currentSha256": "bbc51797b0d486e9268e4337ec8246acc4523b58baf78254298cbbcbcbdf2cd2"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 46,
+          "currentCount": 46,
+          "sourceSha256": "6928f7e1f6439385e4c185246241bea3aa98048ef6fd91a831f18536a9349d00",
+          "currentSha256": "6928f7e1f6439385e4c185246241bea3aa98048ef6fd91a831f18536a9349d00"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "ffb3f8e4e8cf9e5638020e1984539dc4b8bb31dd200b76633eb9cdf50af996dd",
+          "currentSha256": "ffb3f8e4e8cf9e5638020e1984539dc4b8bb31dd200b76633eb9cdf50af996dd"
+        }
+      }
+    },
+    {
+      "unit": 15,
+      "proposedSourceCommit": "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 0,
+          "currentCount": 0,
+          "sourceSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "currentSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 77,
+          "currentCount": 77,
+          "sourceSha256": "806785f3e8cd2c121a9aa63ee05ea689f6df2737184317d90d616cdc914f636d",
+          "currentSha256": "806785f3e8cd2c121a9aa63ee05ea689f6df2737184317d90d616cdc914f636d"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 38,
+          "currentCount": 38,
+          "sourceSha256": "9b15e0abf0fd2010ad8a288fd5e919656ad09f225c0056df49d275d98d6867f6",
+          "currentSha256": "9b15e0abf0fd2010ad8a288fd5e919656ad09f225c0056df49d275d98d6867f6"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "449ac02d69818ab384aedc34f2b8dfe3fee5e4871d9ea2d69bc05c4d3f8a8277",
+          "currentSha256": "449ac02d69818ab384aedc34f2b8dfe3fee5e4871d9ea2d69bc05c4d3f8a8277"
+        }
+      }
+    },
+    {
+      "unit": 16,
+      "proposedSourceCommit": "9ee2fa6bf235e6f310f8b5005a26644e57cddafc",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "c705c89970f3a8eca01ad83bf2861aa2aad28155941f47eaab0f861352c3a6e4",
+          "currentSha256": "c705c89970f3a8eca01ad83bf2861aa2aad28155941f47eaab0f861352c3a6e4"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 283,
+          "currentCount": 283,
+          "sourceSha256": "9417bf987001addddb9c7a63d77762dfd51bb0deac4983803f860f64f0c6d242",
+          "currentSha256": "9417bf987001addddb9c7a63d77762dfd51bb0deac4983803f860f64f0c6d242"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 62,
+          "currentCount": 62,
+          "sourceSha256": "a583c4f3096a38fe7fc9f5c0098f7033242d3e6621ec7441f4cb80b624a659b5",
+          "currentSha256": "a583c4f3096a38fe7fc9f5c0098f7033242d3e6621ec7441f4cb80b624a659b5"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "3206160dddc461d6d74e6129702843de342a201ee4452cae5dd3386750ad7cfe",
+          "currentSha256": "3206160dddc461d6d74e6129702843de342a201ee4452cae5dd3386750ad7cfe"
+        }
+      }
+    },
+    {
+      "unit": 17,
+      "proposedSourceCommit": "443c0331623ebe10b81c96f3a4d1204462a46644",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 8,
+          "currentCount": 8,
+          "sourceSha256": "366cf2e8cf08587376f96287b174dc8bb24729be7168ec1d22440ee327b3dc34",
+          "currentSha256": "366cf2e8cf08587376f96287b174dc8bb24729be7168ec1d22440ee327b3dc34"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 553,
+          "currentCount": 553,
+          "sourceSha256": "997e411fe0803980570f1ef7622e31071e9d0d217d94fec98de9603080f83028",
+          "currentSha256": "997e411fe0803980570f1ef7622e31071e9d0d217d94fec98de9603080f83028"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 74,
+          "currentCount": 74,
+          "sourceSha256": "4e583dd5ac38c93a89e3b177d0bcabfcc0982d5d9947e620cdd1c6f5eed19bff",
+          "currentSha256": "4e583dd5ac38c93a89e3b177d0bcabfcc0982d5d9947e620cdd1c6f5eed19bff"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "5d07539d68b1efb0eba88c306bef3e74e8df5f7ff0d451e6ff8fe905538f4654",
+          "currentSha256": "5d07539d68b1efb0eba88c306bef3e74e8df5f7ff0d451e6ff8fe905538f4654"
+        }
+      }
+    },
+    {
+      "unit": 18,
+      "proposedSourceCommit": "96fff68390ba77498983de3044b7e0010fdd2d8b",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 2,
+          "currentCount": 2,
+          "sourceSha256": "c6f4ffb041ad4c820aa978bf16d3ac1557320a73905d740a0621a9e6b7de86b5",
+          "currentSha256": "c6f4ffb041ad4c820aa978bf16d3ac1557320a73905d740a0621a9e6b7de86b5"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 98,
+          "currentCount": 98,
+          "sourceSha256": "dea52409ef0411d9ae576423506fcc5ab83cfd7fd6a417fed24e85f237914a28",
+          "currentSha256": "dea52409ef0411d9ae576423506fcc5ab83cfd7fd6a417fed24e85f237914a28"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 29,
+          "currentCount": 29,
+          "sourceSha256": "328f8003cd66af9b4400888608dae04f9518eb3e0bbce8fad3e2ae91450354f0",
+          "currentSha256": "328f8003cd66af9b4400888608dae04f9518eb3e0bbce8fad3e2ae91450354f0"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "01d9dd67d96985186f1153b7c50c99c671e7b1d11f6d5709656a8cfa9333b07c",
+          "currentSha256": "01d9dd67d96985186f1153b7c50c99c671e7b1d11f6d5709656a8cfa9333b07c"
+        }
+      }
+    },
+    {
+      "unit": 19,
+      "proposedSourceCommit": "49033e19f9a090793ff64f3f6e9d44bc4c0d5aac",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 3,
+          "currentCount": 3,
+          "sourceSha256": "b273faea1baa8fe6336319f02ad0cbd8123c2718cba71ab153a037ccb71cb99b",
+          "currentSha256": "b273faea1baa8fe6336319f02ad0cbd8123c2718cba71ab153a037ccb71cb99b"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 184,
+          "currentCount": 184,
+          "sourceSha256": "56ae1bee651654d2da8eb47cb43ac98f6309aa9d594747c1a18b483d65d66092",
+          "currentSha256": "56ae1bee651654d2da8eb47cb43ac98f6309aa9d594747c1a18b483d65d66092"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 39,
+          "currentCount": 39,
+          "sourceSha256": "9eb3e25fafb904a6d83ce14ab30f97274c8658986c56bf267ad7ac60a7ed2948",
+          "currentSha256": "9eb3e25fafb904a6d83ce14ab30f97274c8658986c56bf267ad7ac60a7ed2948"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "5b7b05aa26acd7d58b1e43317552416c22c613417278fb3fab3c526f14ecb90a",
+          "currentSha256": "5b7b05aa26acd7d58b1e43317552416c22c613417278fb3fab3c526f14ecb90a"
+        }
+      }
+    },
+    {
+      "unit": 20,
+      "proposedSourceCommit": "e5faf806e5b88e2e31833ce9429365eafeae49c7",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 5,
+          "currentCount": 5,
+          "sourceSha256": "4101d16857fad130fa787b4127ce7b0c1d009050f5fd284b555c1635d07e0d57",
+          "currentSha256": "4101d16857fad130fa787b4127ce7b0c1d009050f5fd284b555c1635d07e0d57"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 231,
+          "currentCount": 231,
+          "sourceSha256": "5e103be88bfab750f3b8480a40f78e900fea339cbad2e609806cdacf4e84b61e",
+          "currentSha256": "5e103be88bfab750f3b8480a40f78e900fea339cbad2e609806cdacf4e84b61e"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 33,
+          "currentCount": 33,
+          "sourceSha256": "7534ee33d6848eb7bf253d7f929edda7a6b23716c4a8852905de3010ef2415eb",
+          "currentSha256": "7534ee33d6848eb7bf253d7f929edda7a6b23716c4a8852905de3010ef2415eb"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "f05779fbdfc63e7a451a35d0d65b8f88ccb912384bb219c5ba0c6cb5ce836919",
+          "currentSha256": "f05779fbdfc63e7a451a35d0d65b8f88ccb912384bb219c5ba0c6cb5ce836919"
+        }
+      }
+    },
+    {
+      "unit": 21,
+      "proposedSourceCommit": "78bc1d96fe99e9ca9a0cd2daffd7a6663313bffb",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 2,
+          "currentCount": 2,
+          "sourceSha256": "f0ab7135d6a22af2d4f21f79f4d70688f7055285862813a4148a95d5890bff57",
+          "currentSha256": "f0ab7135d6a22af2d4f21f79f4d70688f7055285862813a4148a95d5890bff57"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 194,
+          "currentCount": 194,
+          "sourceSha256": "c43c8018924ba7fa6dfa099e5571c7457f32a14f63ab581c52f4a1c9b78c747e",
+          "currentSha256": "c43c8018924ba7fa6dfa099e5571c7457f32a14f63ab581c52f4a1c9b78c747e"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 50,
+          "currentCount": 50,
+          "sourceSha256": "4b7cf6899380e888e59070d5ba4a38473f7de211016a09597a03bf9b090196e5",
+          "currentSha256": "4b7cf6899380e888e59070d5ba4a38473f7de211016a09597a03bf9b090196e5"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "adca11b37513274335abf571bf7dae975ec967395b63867dc5815601717bca09",
+          "currentSha256": "adca11b37513274335abf571bf7dae975ec967395b63867dc5815601717bca09"
+        }
+      }
+    },
+    {
+      "unit": 22,
+      "proposedSourceCommit": "177a10ba3f1626226c63d9e49b038ba1e5d45f09",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 4,
+          "currentCount": 4,
+          "sourceSha256": "ea63234988fe3b38d2e9ed12347e086c57b383b298f2328874e0bb738c970446",
+          "currentSha256": "ea63234988fe3b38d2e9ed12347e086c57b383b298f2328874e0bb738c970446"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 214,
+          "currentCount": 214,
+          "sourceSha256": "e1e0778493aa424b865132a707fa6c6fe438e828947e84caa1ced603b0d98596",
+          "currentSha256": "e1e0778493aa424b865132a707fa6c6fe438e828947e84caa1ced603b0d98596"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 70,
+          "currentCount": 70,
+          "sourceSha256": "1e86e0c898fa9d1fe57cf46de282eefcd032985c403df8cb07444a89c39709a7",
+          "currentSha256": "1e86e0c898fa9d1fe57cf46de282eefcd032985c403df8cb07444a89c39709a7"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "0e2920f975db6172d5d4095bb4e1ad98ee2657e081fdc2cb1977b5e0351aa48c",
+          "currentSha256": "0e2920f975db6172d5d4095bb4e1ad98ee2657e081fdc2cb1977b5e0351aa48c"
+        }
+      }
+    },
+    {
+      "unit": 23,
+      "proposedSourceCommit": "0db5c4dc6278d119448ddc69b0bf82c0b7a73fbd",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 2,
+          "currentCount": 2,
+          "sourceSha256": "d45c1b3fc7c40d6ed70f73d6b320bbf9b7d4df8c994ebbb8db851958450e0cb1",
+          "currentSha256": "d45c1b3fc7c40d6ed70f73d6b320bbf9b7d4df8c994ebbb8db851958450e0cb1"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 137,
+          "currentCount": 137,
+          "sourceSha256": "7f2997664e4e9303e05264318978eb50f1e61d687234f78a37c3aae7f73ca887",
+          "currentSha256": "7f2997664e4e9303e05264318978eb50f1e61d687234f78a37c3aae7f73ca887"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 34,
+          "currentCount": 34,
+          "sourceSha256": "0297c9688486c09f5aeb1e868fe2fcea88987f9dff9c775e3118bedda10177be",
+          "currentSha256": "0297c9688486c09f5aeb1e868fe2fcea88987f9dff9c775e3118bedda10177be"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "f7d891031fc6d6d38c24b368c5a0f35424e2b02c32adcf75af4c83c7185166ee",
+          "currentSha256": "f7d891031fc6d6d38c24b368c5a0f35424e2b02c32adcf75af4c83c7185166ee"
+        }
+      }
+    },
+    {
+      "unit": 24,
+      "proposedSourceCommit": "dc4aa918f6098e17f8ffb8b297b356770a0f10d3",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 3,
+          "currentCount": 3,
+          "sourceSha256": "4ffffb513c21ff96bec366c30ce30353f4080b05d6726b5d050083011d59d956",
+          "currentSha256": "4ffffb513c21ff96bec366c30ce30353f4080b05d6726b5d050083011d59d956"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 326,
+          "currentCount": 326,
+          "sourceSha256": "75c102146beb7fd620e291e796969ff9884fe916f2c315cf6137327d35582f2b",
+          "currentSha256": "75c102146beb7fd620e291e796969ff9884fe916f2c315cf6137327d35582f2b"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 72,
+          "currentCount": 72,
+          "sourceSha256": "4e84e5527556a3932d26ad5c65e237db33cbe399eaf6ef59ba4b754856ec9bcd",
+          "currentSha256": "4e84e5527556a3932d26ad5c65e237db33cbe399eaf6ef59ba4b754856ec9bcd"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "a938535e684d9874d9bc4728f506708412aa5c4687b8e99d51c67db1e247f3e1",
+          "currentSha256": "a938535e684d9874d9bc4728f506708412aa5c4687b8e99d51c67db1e247f3e1"
+        }
+      }
+    },
+    {
+      "unit": 25,
+      "proposedSourceCommit": "643faa96490c247d31e9080a32b274cc09a1df14",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 3,
+          "currentCount": 3,
+          "sourceSha256": "8d644c259799afea8451345979d795f333558c0a749f6d4f194eb034f75f248e",
+          "currentSha256": "8d644c259799afea8451345979d795f333558c0a749f6d4f194eb034f75f248e"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 272,
+          "currentCount": 272,
+          "sourceSha256": "6effd349a1b307c0a3583b8561a288abe56f7e2d89b3332d97fed33567650f05",
+          "currentSha256": "6effd349a1b307c0a3583b8561a288abe56f7e2d89b3332d97fed33567650f05"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 100,
+          "currentCount": 100,
+          "sourceSha256": "e611ce27efab197e0b0606a343d733da57a84ebf02b42eaba66c1496af947b2d",
+          "currentSha256": "e611ce27efab197e0b0606a343d733da57a84ebf02b42eaba66c1496af947b2d"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "21ae774fe83ed694b889e0b9b003799538ba6e7759c844a4571baecbaa1b7b06",
+          "currentSha256": "21ae774fe83ed694b889e0b9b003799538ba6e7759c844a4571baecbaa1b7b06"
+        }
+      }
+    },
+    {
+      "unit": 26,
+      "proposedSourceCommit": "be62aba972609535d70ad8174873bd41c57a4482",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 5,
+          "currentCount": 5,
+          "sourceSha256": "1f7ef08346853f484af4613f544920c44be2858e3357de05ed6bd1d11ba3187d",
+          "currentSha256": "1f7ef08346853f484af4613f544920c44be2858e3357de05ed6bd1d11ba3187d"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 398,
+          "currentCount": 398,
+          "sourceSha256": "28517aadca21058e47f4a52b8fc5e663563892e37a273172996192d2eed6a6be",
+          "currentSha256": "28517aadca21058e47f4a52b8fc5e663563892e37a273172996192d2eed6a6be"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 101,
+          "currentCount": 101,
+          "sourceSha256": "36641d662f583b834c22d53a6d5ac27246f451a34e158a7114c41567c0cdc617",
+          "currentSha256": "36641d662f583b834c22d53a6d5ac27246f451a34e158a7114c41567c0cdc617"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "129d62dbeeb24e21862d3f656a9ba9bec3c137cdb34c610a997e8b68f13e86ff",
+          "currentSha256": "129d62dbeeb24e21862d3f656a9ba9bec3c137cdb34c610a997e8b68f13e86ff"
+        }
+      }
+    },
+    {
+      "unit": 27,
+      "proposedSourceCommit": "1b2b2cc43f097125e970ca99404f5bff61f58ce7",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 3,
+          "currentCount": 3,
+          "sourceSha256": "72fa73381d97038ff96cb768be4f535b9cc18ae039640d5ffa36f8794d4cd200",
+          "currentSha256": "72fa73381d97038ff96cb768be4f535b9cc18ae039640d5ffa36f8794d4cd200"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 317,
+          "currentCount": 317,
+          "sourceSha256": "344632c4fd4b329e43614d158999245c5cd88278330498f39e0280ecddb56534",
+          "currentSha256": "344632c4fd4b329e43614d158999245c5cd88278330498f39e0280ecddb56534"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 61,
+          "currentCount": 61,
+          "sourceSha256": "ce05e0a3063c2058df7d729e06740e778e3388a873123daf3f9d9a909a84008a",
+          "currentSha256": "ce05e0a3063c2058df7d729e06740e778e3388a873123daf3f9d9a909a84008a"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "63b1b75b2c74e2427e5dc10bdea7a6a7fe2984145b8d15c15c1df8fa0cd64c66",
+          "currentSha256": "63b1b75b2c74e2427e5dc10bdea7a6a7fe2984145b8d15c15c1df8fa0cd64c66"
+        }
+      }
+    },
+    {
+      "unit": 28,
+      "proposedSourceCommit": "9787004735b187bce207b938c73d21e0628532f9",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 3,
+          "currentCount": 3,
+          "sourceSha256": "b5204c937e041a14689e4de6fc2d953bb6e6ef352a29ced46d760dc38ec58ab1",
+          "currentSha256": "b5204c937e041a14689e4de6fc2d953bb6e6ef352a29ced46d760dc38ec58ab1"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 451,
+          "currentCount": 451,
+          "sourceSha256": "70e66eb13f2b01ef5b1b5a7952e8545f87b87371d36d650386599ed33af54ad1",
+          "currentSha256": "70e66eb13f2b01ef5b1b5a7952e8545f87b87371d36d650386599ed33af54ad1"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 50,
+          "currentCount": 50,
+          "sourceSha256": "386bd4aac492781e3c22307237a4e8d92217f83a100bb458c8a6de562756ed54",
+          "currentSha256": "386bd4aac492781e3c22307237a4e8d92217f83a100bb458c8a6de562756ed54"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "81f4f37b518d4252374aa6a581a3baee50636672ed8f70598fd1932e0b3fb40e",
+          "currentSha256": "81f4f37b518d4252374aa6a581a3baee50636672ed8f70598fd1932e0b3fb40e"
+        }
+      }
+    },
+    {
+      "unit": 29,
+      "proposedSourceCommit": "08d94c67628ec1fede5cafd2aa310aae4cecd6e9",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 5,
+          "currentCount": 5,
+          "sourceSha256": "85d0f87b3d84df99a4ac9a2838645e161ec1a6ba063d71d0ceebe793af360137",
+          "currentSha256": "85d0f87b3d84df99a4ac9a2838645e161ec1a6ba063d71d0ceebe793af360137"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 418,
+          "currentCount": 418,
+          "sourceSha256": "347fab947081557c15f557a9f1116f44f5f1642199fa99f054215ad29bda6e87",
+          "currentSha256": "347fab947081557c15f557a9f1116f44f5f1642199fa99f054215ad29bda6e87"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 97,
+          "currentCount": 97,
+          "sourceSha256": "1aac54fd9ecfbed49d7c9ac0c7adcf618ad9e7e995627bfdd6cecb0faf887ed1",
+          "currentSha256": "1aac54fd9ecfbed49d7c9ac0c7adcf618ad9e7e995627bfdd6cecb0faf887ed1"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "00ab3939c776d84381511e5030be70722e029100b7e49a0779c7d3c3f5c025ba",
+          "currentSha256": "00ab3939c776d84381511e5030be70722e029100b7e49a0779c7d3c3f5c025ba"
+        }
+      }
+    },
+    {
+      "unit": 30,
+      "proposedSourceCommit": "96242a17a87cc2ec0f5d7418cd98a9d3220a9e99",
+      "fields": {
+        "sourceCapabilities": {
+          "exact": true,
+          "sourceCount": 5,
+          "currentCount": 5,
+          "sourceSha256": "e7079b627c89fb47f539c1c949ddedc45013b63c0de8c8abaa49360fe236d871",
+          "currentSha256": "e7079b627c89fb47f539c1c949ddedc45013b63c0de8c8abaa49360fe236d871"
+        },
+        "provenanceRecords": {
+          "exact": true,
+          "sourceCount": 298,
+          "currentCount": 298,
+          "sourceSha256": "566acf17f391aa6837de4866a2a2c98b62cffe90c9bfdaf9bcf5177cbabaeaf9",
+          "currentSha256": "566acf17f391aa6837de4866a2a2c98b62cffe90c9bfdaf9bcf5177cbabaeaf9"
+        },
+        "authoredEnglishRecords": {
+          "exact": true,
+          "sourceCount": 113,
+          "currentCount": 113,
+          "sourceSha256": "95ed01c7996bde35401ff29fb2ee05ebe221774e17562957f76e545b1a9952e5",
+          "currentSha256": "95ed01c7996bde35401ff29fb2ee05ebe221774e17562957f76e545b1a9952e5"
+        },
+        "ownedEditionMappings": {
+          "exact": true,
+          "sourceCount": 1,
+          "currentCount": 1,
+          "sourceSha256": "1704d2e3c7b8f8b41fee1596e99a1ee29029073a9f1f12a4f12017bd7c83d61e",
+          "currentSha256": "1704d2e3c7b8f8b41fee1596e99a1ee29029073a9f1f12a4f12017bd7c83d61e"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "wholeDiffCommand": [
+    "git",
+    "diff",
+    "--check",
+    "183289c8",
+    "HEAD"
+  ],
+  "wholeDiffExit": 2,
+  "diagnosticLines": 348,
+  "codeOnlyDiffCheckExit": 0,
+  "disposition": "Preserve deterministic generator bytes: blank TSV reviewer cells and retained native-source whitespace; do not trim/format evidence",
+  "wholeDiffCleanClaim": false
+}
