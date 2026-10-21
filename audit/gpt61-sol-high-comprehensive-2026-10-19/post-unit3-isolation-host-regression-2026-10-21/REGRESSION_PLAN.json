@@ -1,0 +1,25 @@
+{
+  "state": "PREPARED_NOT_YET_LAUNCHED",
+  "discoverySource": "3a7c55a37b4e06d3e370ab3565f5a69c82ab5acc",
+  "runtimeSource": "Record actual clean HEAD after evidence-only checkpoint commit in REGRESSION/CONTEXT.json",
+  "discoveredMethods": 1323,
+  "classes": 219,
+  "selectors": [],
+  "workerPolicy": "2maximumforks/6GiBeach/forkEvery4/GC",
+  "javaagentEnabled": false,
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "activation": "source /workspace/setup/android-env.sh",
+  "commandTemplate": "python /workspace/artifacts/post-unit3-isolation-host-regression-2026-10-21/run.py REGRESSION",
+  "externalRuntimeRoot": "/workspace/artifacts/post-unit3-isolation-host-regression-2026-10-21",
+  "requireActualExitFreshXmlEventsAndIdentitiesBeforePublication": true,
+  "noInputEditsWhileActive": true,
+  "noAutomaticMutationOrPublisherQueued": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": false,
+  "completeSuite": false
+}

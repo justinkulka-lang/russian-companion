@@ -1,0 +1,29 @@
+{
+  "sourceCommit": "3a7c55a37b4e06d3e370ab3565f5a69c82ab5acc",
+  "sourceRootTree": "e863e38e8414e02e4149ae0db0d7301abc88dad4",
+  "inputTrees": {
+    "app/src/main": "fdb48a009cf684c729d79a921770a36749e0fc32",
+    "app/src/test": "9c492c96bd1def8c5092cbab2a8d61a9e778d697",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "366549a8a89d34b33ff9568247d7a4ff5ef676d6"
+  },
+  "workingTree": "CLEAN",
+  "onlyTestChangeFromOriginalBroad": "app/src/test/java/dev/russiancompanion/v2/Unit3GenderTeachingTest.kt",
+  "allOriginalUnit3BytesRestoredByRemovingBeforeInsertion": true,
+  "originalFourProductionTreesUnchanged": true,
+  "cgroupMemoryMax": 34359738368,
+  "cgroupMemoryCurrent": 8322609152,
+  "cpus": 5,
+  "diskFreeBytes": 28315574272,
+  "javaagentEnabled": false,
+  "workerPolicy": "2maximumforks/6GiBeach/recycle4classes/GC",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "privatePdfIncluded": false,
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

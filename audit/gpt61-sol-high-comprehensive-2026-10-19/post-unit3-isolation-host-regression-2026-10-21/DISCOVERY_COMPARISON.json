@@ -1,0 +1,13 @@
+{
+  "currentSource": "3a7c55a37b4e06d3e370ab3565f5a69c82ab5acc",
+  "previousSource": "00d86e68dbe682da1fafb73acacc7074f8fd246b",
+  "currentMethods": 1323,
+  "previousMethods": 1323,
+  "currentClasses": 219,
+  "previousClasses": 219,
+  "added": [],
+  "removed": [],
+  "exactMethodSetSame": true,
+  "zeroRuntimePasses": true,
+  "scope": "Synthetic debug-host discovery only,four screenshot exporters excluded;not full app/curriculum/device audit"
+}

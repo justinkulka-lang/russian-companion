@@ -1,0 +1,1428 @@
+{
+  "archive": "RAW_DISCOVERY.zip",
+  "sha256": "b8796bd80e347c9f355714c4053f8ad1d9cec43dc66ffc962595ee6ba9cb1610",
+  "bytes": 335355,
+  "members": [
+    {
+      "path": "CONTEXT.json",
+      "sha256": "c9a185f4f38a15e43a91f977f5e66907e65c797eb8ecc1da74b9790595082679",
+      "bytes": 2579
+    },
+    {
+      "path": "EVENTS.jsonl",
+      "sha256": "618f92d7c0a20e23a8f0f002bf847cfc02e0d6ee588670ed864502cb0c96d948",
+      "bytes": 793526
+    },
+    {
+      "path": "RESULT.json",
+      "sha256": "f867fa4d3cc2424fcad09f3ed3f33c1d1f7844384c35762e09d3c743cf13a0d9",
+      "bytes": 550479
+    },
+    {
+      "path": "RESULTS.csv",
+      "sha256": "44b13eee134e690197fdf3b02ad2b4f12f79509369d757f31d76cf49a137debe",
+      "bytes": 255427
+    },
+    {
+      "path": "RUN.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "RUN.log",
+      "sha256": "433beb4157f2d086df7c44c9bdee0da335aa0759310f6adb1e5a14db0c0b458d",
+      "bytes": 167877
+    },
+    {
+      "path": "SHA256.json",
+      "sha256": "787593da9aa3a68b21080501a6df7a3105a1c8ee47439950c53beca791684927",
+      "bytes": 35830
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.ScaffoldBoundaryTest.xml",
+      "sha256": "483d239209bc5e88619285339d092c75ecafb501c0fbf383dea2615fcc1b45dc",
+      "bytes": 487
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.acceptance.AcceptanceBehaviorTest.xml",
+      "sha256": "8765bdd425743f90a832ec6c474795db6362451fea86e9944e3dacbbb7164edf",
+      "bytes": 1251
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.acceptance.AcceptanceBoundaryTest.xml",
+      "sha256": "13c9f59d95c94947297ba664da2a1d89458ade60d02e6b88c257e89532adc883",
+      "bytes": 1964
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.acceptance.AcceptanceCycleTest.xml",
+      "sha256": "da8b93ecfa3db4f28f1c2370c7242af40957d18d66ca400bc4761f60657c26d8",
+      "bytes": 532
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.acceptance.DeviceAcceptancePackageTest.xml",
+      "sha256": "f3e35c0f71b30ea2e7a8fef9d3901c18de7ef630628d9c0cd938ead5d9f6c03a",
+      "bytes": 538
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest.xml",
+      "sha256": "1a56fd9e7a3e5fe95bfd398eed8e6678a06a19a8400062e5ca656040d53afdac",
+      "bytes": 1155
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.catalog.CatalogComplianceTest.xml",
+      "sha256": "1e39eeedc4635536370b1a0a6184b3ebfd1a8920686e7f163f695e1f6512b533",
+      "bytes": 1235
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.catalog.CatalogIntakeTest.xml",
+      "sha256": "adc26854e54141c7d85f0e0a400e747eb3c5a005653e321b996e71444c319164",
+      "bytes": 1708
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.appearance.AppearanceStoreTest.xml",
+      "sha256": "f70364b3d8e67f0e3f8174002bdfc348fc858d9798e73a632e409091becc902e",
+      "bytes": 848
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.audio.AndroidPracticeAudioTest.xml",
+      "sha256": "0cdd83558b366b3127964e622872dda38388fc15d3e717b52c59f31528a4a4fd",
+      "bytes": 1438
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.export.ExportPackageTest.xml",
+      "sha256": "2aa79ac83e76825a4355cb9069ecbd58fa1462ae2fe915a6b1de4f5324bc743e",
+      "bytes": 1188
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.export.ProgressExportTest.xml",
+      "sha256": "32ee3cbedceeed1b7757f090e56d62799112692a383cb010951a82c9599f7f96",
+      "bytes": 718
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.local.BundledContentRulesTest.xml",
+      "sha256": "68b9c8498ca94f0df19720511c245a178c264b1af690c59d8b76a2b2098e3144",
+      "bytes": 2609
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.local.CatalogReseedGuardTest.xml",
+      "sha256": "5780e69a4c831167e456a3c0c2127625842f0720289e185986fa5dfda2b70e58",
+      "bytes": 688
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.local.DailyPlanStoreTest.xml",
+      "sha256": "c70ff0bb1aaa600b4e9b0ca9f132ffa3c027f9f2c2a44ff6985519a353e51d4d",
+      "bytes": 684
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.local.DatabaseMigrationTest.xml",
+      "sha256": "a53439b52d4ecbd70f71004c8369361cfb40650791d9584bc058c82e9053d3b9",
+      "bytes": 1615
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.local.GateStoreTest.xml",
+      "sha256": "11755a1af459d2458574f8e6cbe75cbf44af739af6d7308731f9e2b51551c8f8",
+      "bytes": 1034
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.local.LocalStoreTest.xml",
+      "sha256": "69a0c4feaa898451b86192ef06b1f4b76977700dad297c2914ef37ba934610a1",
+      "bytes": 1183
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.local.PackagedPathwayStoreTest.xml",
+      "sha256": "194ad4ec7de1f0c2b5fbb122660f50a3f81eddc3c4418715520cc7ea0d69e89c",
+      "bytes": 529
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.local.PracticeStoreTest.xml",
+      "sha256": "521a81e9ac4d3c5a9ef0124a6dd2028bc6ce2248e83e75bf04a8ab8aea53b710",
+      "bytes": 1604
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.local.ProgressStoreTest.xml",
+      "sha256": "a67960431606784dca1d25b571460c550bb48786569245aff1a89c28b1a4f87f",
+      "bytes": 884
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.data.navigation.NavigationSnapshotBatchTest.xml",
+      "sha256": "756cb043992817ea055d6f83a33bb46eccf2ae0b2898f800698d5b765a017ffa",
+      "bytes": 526
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.appearance.AppearancePreferenceTest.xml",
+      "sha256": "1d8c2aa0c43d5f788a362f4cfe20301c5537c5b456c1d625794e69450ac51085",
+      "bytes": 527
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.gate.GateRulesTest.xml",
+      "sha256": "b3ca8222b843caf6ad1bf40eea4a7e14d6d520c6bf0241b8edd432d2948751c4",
+      "bytes": 1214
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.gate.GateSchemaTest.xml",
+      "sha256": "0d01c8089c53d0bc08fe9358c82394d84f1992eed2f77e9bf46df80cba619a95",
+      "bytes": 699
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.navigation.ContinueDestinationTest.xml",
+      "sha256": "e5a5b7c6c465aaca135fca59466e20a0d53f8a73a44a15d2b2dd6239fa54e80a",
+      "bytes": 550
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.navigation.LaunchRoutingTest.xml",
+      "sha256": "3f957461f5bcf793dcb03aa8cb0862ebccc430ab50881fb17031a4569938f6c1",
+      "bytes": 1706
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.pathway.PathwaySchemaTest.xml",
+      "sha256": "0904eefd918a4db62084213f048d8d77f9a88019b43cb911fff9002c8a8d3c45",
+      "bytes": 1096
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.plan.DailyPlanRulesTest.xml",
+      "sha256": "a4ba6ce37a139588cb83fce4b6ebe62dff57e9ebc53c6b4a592893904bc7240c",
+      "bytes": 1220
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.practice.AbPlaybackTest.xml",
+      "sha256": "5d27fe24ce45092bf58a3fd09640e5b4fdca747e0d8a249e56ac2c269e3c47c2",
+      "bytes": 683
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.practice.AudioSchemaTest.xml",
+      "sha256": "ebd47f7e79272ed03edaa9ed4ab916ee139a1145251e001d053132c4da603ce3",
+      "bytes": 1044
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.practice.PracticeRulesTest.xml",
+      "sha256": "09142e60b3bfdf9c2d2f34f4a69b81dc5d05fe3e80373331b68f0e36b987560a",
+      "bytes": 1224
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.progress.BackupAndBalanceTest.xml",
+      "sha256": "1c4edf2c2ba34f7b3433379a6b54fb1fcd2b690eaaafde6b8964bc9b9f36452b",
+      "bytes": 881
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.progress.ProgressRulesTest.xml",
+      "sha256": "f86aeacca3460f444c82f3021deb1cf35e8fe839b05c6f01e0d29cfe1e920803",
+      "bytes": 1191
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.domain.progress.ProgressSchemaTest.xml",
+      "sha256": "4664580b0680e9008fc06d459da84dec74b88b782f989e4381bcdcb2b5ca848b",
+      "bytes": 1122
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.presentation.navigation.AttributionsUiTest.xml",
+      "sha256": "db36ea778365c73b6ade3545e2d0667f7ca8ccd2cab49e9ec5d3cc1ac084776a",
+      "bytes": 1292
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.presentation.navigation.ContinueNavigationTest.xml",
+      "sha256": "df020158804fdc06efffb71b665c12544a0e5e8f3724ba238147b7e416397ab4",
+      "bytes": 540
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.presentation.navigation.DailyPlanUiTest.xml",
+      "sha256": "bd8a17666aeacbd12cf1c9d930072b59c5eda43faf6cef8e3855c8e39f2c7430",
+      "bytes": 1671
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.presentation.navigation.GateUiTest.xml",
+      "sha256": "dc0b65133b7fc2b31f31383d523f0dbc9c61e81686a92bcda0b79088b91b5f68",
+      "bytes": 537
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.presentation.navigation.NavigationShellTest.xml",
+      "sha256": "4050a70c3712791b8335ec7f7095e52a674332e5aba4a4c32a2ad2f56e77a498",
+      "bytes": 922
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.presentation.navigation.PhysicalAcceptanceCorrectionTest.xml",
+      "sha256": "65909b056e283e8c7262e1d824c97722b9395fd08ad3e3d76d5939bdf8c9e668",
+      "bytes": 2390
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.presentation.navigation.PracticeSessionUiTest.xml",
+      "sha256": "f81f00d806646abfd3cf7b804d3e76a3c29c83cb4d64da57a06dd975346d75b8",
+      "bytes": 1131
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.presentation.navigation.ProgressUiTest.xml",
+      "sha256": "96ddfe15d2d023f9b7a4193c6ff795c0f717f1b76cc7172d7398a37fbc088ba8",
+      "bytes": 897
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.presentation.navigation.SnapshotRequestGuardTest.xml",
+      "sha256": "6c446a35d93172e36522f22829350e5bc62e845777d1e9bc3b3784fb0021c795",
+      "bytes": 537
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.presentation.navigation.UiWorkCoordinatorTest.xml",
+      "sha256": "fe592c9a967cebd809ccef37c3fca00bf86555fcc31ab15c103e9118f310b505",
+      "bytes": 1115
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.release.LinguisticReleaseGateTest.xml",
+      "sha256": "5aca27ffebcec4eb0dee29baeaf41defc77b4c7e6780f7960158621e59f193e4",
+      "bytes": 1263
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.release.ReleaseGateTest.xml",
+      "sha256": "1a6c48a1948d7fa7e2ef33acf20ffec98943d62d0e3567ca5f4f204126fedebc",
+      "bytes": 4317
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.release.ReleaseOutputTasksTest.xml",
+      "sha256": "64e9ff520f3efb813fd9fd92660034839c937e08119a817207969b6ae9fbbda5",
+      "bytes": 842
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "217a7899bf9b80158d61225d4dbf2018b934ac78ccb51d882a7d6b0f22e18390",
+      "bytes": 2769
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Aud44CorrectionTest.xml",
+      "sha256": "0564ee5b631f2990d0d9f023ce2694f46f06b314f571c1bcd67e575d6a61c2c2",
+      "bytes": 2175
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Aud53CorrectionTest.xml",
+      "sha256": "e3baa6d41786e29b7032bd0c3ee2cf1da358d3b52874ff7c23debb972b8aab71",
+      "bytes": 1951
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Aud57CorrectionTest.xml",
+      "sha256": "9f511ee6e28789f0e53d9fd7ae9158c1c3e3fca81d82d28d9608c3d3fbd709f5",
+      "bytes": 2176
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BackupImportCoordinatorLimitsTest.xml",
+      "sha256": "3a97df165707d7737e9980945a430dd90e7a2fb99c3b01a169e6a182486a84b9",
+      "bytes": 744
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BackupImportLimitsTest.xml",
+      "sha256": "387f0d1326732e93a30f80de4f8b3931f0d569f2a03b27f7b8794de207aa018c",
+      "bytes": 3866
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml",
+      "sha256": "a2e079d943d46a6b9ce5630136b6dc706ea9bd21aff7e83af2fbe7c270305dfc",
+      "bytes": 2704
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BackupRecreationTest.xml",
+      "sha256": "b718620a0e746e657feeb209f28138fb49435a220472fbd27cbf89a4a517370f",
+      "bytes": 487
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BackupSnapshotCorrectionTest.xml",
+      "sha256": "d8220b2e921fb44e8117e3edd1f9d1f858538b744a4095ccfc9784affd2a0e31",
+      "bytes": 529
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BatchARemainingSourceIntakeTest.xml",
+      "sha256": "48aa9764f850c8a3dd15c7254eeca603db1da1d33dafd81fd0f11d1f92c264a5",
+      "bytes": 2330
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BatchAUnits71620Test.xml",
+      "sha256": "1b4300e74afb361c4e2b6cda151b76a635940addd5944f1b49760bab8e458332",
+      "bytes": 1540
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BatchBUnits2125Test.xml",
+      "sha256": "c271042030fd17e5413519e12d4c0346cf717bfe1a465516e7bb2016e04c271a",
+      "bytes": 2039
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "0848421688e907d2b3d6e41e8479c96bbe7d88a8521eab2378a5dcf1ae959b94",
+      "bytes": 1218
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.CompleteRuleCorrectionTest.xml",
+      "sha256": "e574899f56e0e33a2faba8ad26339b4d041659b0f34eaee7992c3d479de72ee1",
+      "bytes": 1441
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.CompletionEvidenceCorrectionTest.xml",
+      "sha256": "742f16969f331542b530d61236163d365d9a7dbc261ba96c4087cb2ad48012ac",
+      "bytes": 1121
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.ContentAuditCheckpointRepairTest.xml",
+      "sha256": "d44d0f0a10bf09cea8e137af10edfe3615f6afcdeb400c24f36ea7248e48a026",
+      "bytes": 1091
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.ContentAuditCorrectionTest.xml",
+      "sha256": "cd5c461a01d9e8e87985547a3ff4256603a1e5b92045dd1066870007a9ccc262",
+      "bytes": 6045
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.CumulativePolicyHistoryBaselineTest.xml",
+      "sha256": "e5d61ef06244c180b88ccd4fff8bcfd39ee7af2b45f6b7f93aa71769b6a93c0b",
+      "bytes": 779
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.CumulativeReviewGateTest.xml",
+      "sha256": "563b3faa8c72606a4e17616aaae42052ebfb25f0eab13866bb779962fd5ec630",
+      "bytes": 1908
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.CumulativeReviewSelectionTest.xml",
+      "sha256": "2fa14db7a9b1cb7cbb86e3f1ed0af726184885e82b2935b2f61012e071a54af2",
+      "bytes": 1523
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.CumulativeReviewStorageTest.xml",
+      "sha256": "fcd2311561389a24a0447c95ed5e26d772cb0ca5ff9cd8792a79db4b75d4a455",
+      "bytes": 3784
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.CurrentPhase2TupleMutationTest.xml",
+      "sha256": "0de77950f2199119325ac26d6c33c74936069811ed39f8894bc2ac615b390f1c",
+      "bytes": 1076
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.FragmentGlossTeachingTest.xml",
+      "sha256": "c6694f19b74b2236b0d0382f90e4b6268520bf7b14e470933047b9e4e55ec6cc",
+      "bytes": 1252
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.FragmentGlossUiTest.xml",
+      "sha256": "44f81686d199e942ea28b63cc2613ba30ac42e7f64c6985b20a0226bc3c6df8f",
+      "bytes": 1214
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.FullAuditCorrectionTest.xml",
+      "sha256": "40eed4c76e8f717557b80f1517b9373db1cf799bcc83d102661235807ae8bf3d",
+      "bytes": 2463
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest.xml",
+      "sha256": "db5adaeabfdb2fec43d4e201761abb228355057bf3ba1ef208e9d0a6b951b484",
+      "bytes": 962
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.HistoricalTeachingFixtureScopeTest.xml",
+      "sha256": "3790da06e195389a1ac7014fb8ac87d830416a9f790a3ee35b2e3b36d4dc03e7",
+      "bytes": 548
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.HostActivityRecreationTest.xml",
+      "sha256": "0993eb5124dbf420bd07f4370beb89183d7116175688304d5b3beb2d35a5a6bc",
+      "bytes": 855
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.IndeclinableCorrectionTest.xml",
+      "sha256": "3eacbd3b3a36ac386136f6c366ed537f39906facf07a6cd444f15b4a34238bb8",
+      "bytes": 1072
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.LabCueCorrectionTest.xml",
+      "sha256": "c266a553e50fdbc4df143d9c73a2b29818719d4796c1838630e7638ce4b0bfc0",
+      "bytes": 960
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.LabExplanationCorrectionTest.xml",
+      "sha256": "40bb37c59fa9115a1c52db88cc07102b8eb7b2dba88de8c23a46fabc93faaaf1",
+      "bytes": 894
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.LearnerReloadRecoveryTest.xml",
+      "sha256": "bb8bb30f20a717da59d0cfcddf22525e2d2ae0445512241857bb2b3c2d7f4a1f",
+      "bytes": 520
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.MultiPoolReviewSelectionTest.xml",
+      "sha256": "f483ad55bb1ab19c9e6e79e06895851381c5b9e87d13fb14205a331e55949cd0",
+      "bytes": 1792
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.OptionPresentationTest.xml",
+      "sha256": "793312cdb9b0d7aa0f3c715ea379ead716e197728d8b09c6092de7f4370fb67f",
+      "bytes": 1290
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.OptionPresentationUiTest.xml",
+      "sha256": "b2320ca97a349d389e85bfc0c8034a96e318cdda646ad71c8b002d01221f171b",
+      "bytes": 1087
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.OptionalGlossRemediationTest.xml",
+      "sha256": "8859f869ee91dbd30111fd2adb063fb29695e2e7533fe98e446aad3b5a06c0bf",
+      "bytes": 540
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Phase2BoundedClaimsTest.xml",
+      "sha256": "0895510228e6ae7858492e2099554b12edbe230df21667c524f77075e394f697",
+      "bytes": 1011
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Phase3BoundedClaimsTest.xml",
+      "sha256": "65d053fc5b146d5530405dfacd087e4caa4e34c45e98f5f287321353ba036ac3",
+      "bytes": 1009
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.PracticeRetrievalDigestTest.xml",
+      "sha256": "2c22477e481f7e8cdc8a1f2202f438b56ec0e2fbff4e2c6b27b77e56d4f738e7",
+      "bytes": 3606
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.QuestionWordCueCorrectionTest.xml",
+      "sha256": "b48026714a3f2828d3089ab3463ad12eeeb46c77b93fb9932eb16b55ff32550a",
+      "bytes": 920
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.ReauditCorrectionTest.xml",
+      "sha256": "b060813e720027a72ab87aca5cd35e6e7bae7c6b1db891cc30b8538917487bcd",
+      "bytes": 2254
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.ReferenceDetailSearchTest.xml",
+      "sha256": "1f9331c03b6a80381873aa2f26e4011f3839b269a91e5bdf4b5a6651920feccd",
+      "bytes": 1207
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.ReferenceDetailSearchUiTest.xml",
+      "sha256": "3938f754a264572781a85b17428c3d23cebf9c3aa0811ed11e0397ce9dd897b3",
+      "bytes": 518
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.ReferenceNoticeCorrectionTest.xml",
+      "sha256": "feea499f653a7dad65d56fa6f89e5c4eb6e469649758c181546a98cb6804e41a",
+      "bytes": 527
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.RemainingReauditCorrectionTest.xml",
+      "sha256": "31115c1596be3e49f8747eec1cb89fdb2393818006d68b9400b456bfc798a61f",
+      "bytes": 4352
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.RepeatedTaskCreditTest.xml",
+      "sha256": "fe80ea6f5263dc6bef47944101e33900745887735716329a6e2246bbeec18a5a",
+      "bytes": 883
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.RepeatedTaskRepairUiTest.xml",
+      "sha256": "6f51ae73af18e70869495dd8ffceccff796a8dd54cbe7a2a3a1304b12473d4e5",
+      "bytes": 711
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.RequiredPathProgressTest.xml",
+      "sha256": "be80fa37bd130b07d318a7b9d96eb3c015712c0bcd7456034293496b9c504b7c",
+      "bytes": 2084
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.RestorePreviewReviewHistoryTest.xml",
+      "sha256": "1ffb45da13b63e94f005b4403428e3e098ad0d300c6319bad7c99447770fe627",
+      "bytes": 1281
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.RestorePreviewReviewIntegrationTest.xml",
+      "sha256": "1df3c2b4798be67c9ef09ec1e5fc48b6e5761ca59c8f427623bd0ef4972ed4a2",
+      "bytes": 736
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.RuntimeCorrectionTest.xml",
+      "sha256": "7ecffe88e53e1678ec5047057470d7fa41fc1fd949182bf6bfef9fd5f4ec2b1b",
+      "bytes": 4296
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.SourceTextPoolTest.xml",
+      "sha256": "927223510dd3185a86bfc6d5ee6392f18b5bee5478b8b7490bc64fbe998282d3",
+      "bytes": 847
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit10CumulativeReviewTest.xml",
+      "sha256": "047be0751af45eb00cee02305f1520a8f38580bcf0af42d7c3fdfa9bb0856747",
+      "bytes": 1765
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit10FeedbackCorrectionTest.xml",
+      "sha256": "c7fbbd342071d9f9d9eaaf6df133204641fd14dc12025d36d63680190ca30eca",
+      "bytes": 863
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit10IndependentReinforcementTest.xml",
+      "sha256": "e849196db458b3c3ec50f6baec3bdcee6028c15b0be6ff21c0da24885d3cb5ef",
+      "bytes": 1140
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit10ReinforcementReviewTest.xml",
+      "sha256": "5ed3eda6507929faf6656f952643bdcca9b845d6cb56f7c7e62f8ba2ca6d5968",
+      "bytes": 1125
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit11AgreementRemediationTest.xml",
+      "sha256": "53c13d644f62facf299f73d9807a86e884d8e862f45e463b030ff315b2513312",
+      "bytes": 1331
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit11CumulativeReviewTest.xml",
+      "sha256": "93994bbb7b42f1d156846957fe40be6898adc8d32dec0ab16f8a11bd0e9a1446",
+      "bytes": 1766
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit11FeedbackCorrectionTest.xml",
+      "sha256": "fdc02335f11adedbd5dfe2cdf3e19c4a0334745d513d05d759abfa3b0c1c1133",
+      "bytes": 867
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit12CumulativeReviewTest.xml",
+      "sha256": "571edc857120cbfeb582ad2a411d608f3029dcc7a09c6ffa45045cedbff1d7f8",
+      "bytes": 1762
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit12FeedbackCorrectionTest.xml",
+      "sha256": "46892d7b2b1da91b0742736f936e1f8abd3efdbafb367c035823038bd0cd4ba8",
+      "bytes": 1048
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit13ContextTeachingTest.xml",
+      "sha256": "6e63840f2dbab8885a29e3ff69be1730542893f929bc8603d214aa4e7048ef8d",
+      "bytes": 2219
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit13CumulativeReviewTest.xml",
+      "sha256": "8a450136770e26507580f91d321090c30a11e21ea493a236d83a34859234839d",
+      "bytes": 1767
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit13FeedbackCorrectionTest.xml",
+      "sha256": "7cf6b106960d3bec15d32cc3755a0da95ed5d5c2f9756c3c9c8b61f61063fe45",
+      "bytes": 1049
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit13PastTeachingTest.xml",
+      "sha256": "5407e7440a85165b130b7d6630949ac69c1aee483b75a82c5fbd0dd47b37b40c",
+      "bytes": 1851
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit13ReportedTransferTest.xml",
+      "sha256": "1e6530b66b561e93d41efd1d062a440ea1e72773b026abe79fb7ff246aedc670",
+      "bytes": 2226
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit13WiderPolicyTest.xml",
+      "sha256": "5cb3976ad0a0237ba008e9f79bba927339bbdd0c154f8556e8e9a9979e6e0097",
+      "bytes": 2068
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit14CumulativeReviewTest.xml",
+      "sha256": "7b6b4d776657d04f1e184988665d401e3bef1e5d30eb22ebe528473338efa188",
+      "bytes": 1753
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit14FeedbackCorrectionTest.xml",
+      "sha256": "8b7ea51d831f746c7d77db350e01f12fe570fbe285457347e6bc4c2d8ab1444c",
+      "bytes": 1047
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit14ImpersonalRemediationTest.xml",
+      "sha256": "54b4802fcdf9fbd17f83b65b343d204e63f41de1f1a6138adacdec298f9cfc4f",
+      "bytes": 1324
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit15AspectPreparationHistoryTest.xml",
+      "sha256": "bb3c2d3b6dfa8d1a59025167a1a9fdcd3f2f40e88de54dd2f7f6195558f2a681",
+      "bytes": 942
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit15AspectPreparationTest.xml",
+      "sha256": "a5dc05cdd73eff9cf93d62879d47c208d4563613a3659ea5a22d991a029ba618",
+      "bytes": 718
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit15AspectPreparationUiTest.xml",
+      "sha256": "2bdfdfea48f472c7ef1e5eff978e62e7a25e532c824b3fa87744c59f47f6d7e6",
+      "bytes": 536
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit15CumulativeReviewTest.xml",
+      "sha256": "280d293888dbf377cad3e9a84dd4b8d73a0eeb5c0860d0a0beb644eb2080c780",
+      "bytes": 1758
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit15FeedbackCorrectionTest.xml",
+      "sha256": "6f6554eb169dd12a74c753fad0bc06461722d3761bf5cebe0af3a797cf5eb3e3",
+      "bytes": 1054
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit15ImperativeRemediationTest.xml",
+      "sha256": "54ec3b622c255b906692db37afcebed51d15814c59fdb54a76e9fb8cd62a17df",
+      "bytes": 1332
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit16CumulativeReviewTest.xml",
+      "sha256": "5e3ec3a20ef3222d53a313da980f90cdcfc232effa5f443b51d080cb9e188686",
+      "bytes": 1766
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit16InstrumentalInstructionTest.xml",
+      "sha256": "e5ed6aa665ff34bfe3e4d335113b8a0a4b9b9998826fb891d8679b7356dcbf53",
+      "bytes": 886
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit16InstrumentalUsesTest.xml",
+      "sha256": "59223d1ce0ac6abd34aef6f9bf98986ba77899666a4ad7a5213bab449f393558",
+      "bytes": 1014
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit17AgeCalendarInstructionTest.xml",
+      "sha256": "f5613ecf86c3b192cda70643bf545d85911455acd7d00fcc6dea753dab2f2c35",
+      "bytes": 1073
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit17CumulativeReviewTest.xml",
+      "sha256": "08abf63e1c9590a398f18ce5b827a821ac1a42b3389e9fd03c9d5f5d5f2710e7",
+      "bytes": 1770
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit17NumberInstructionTest.xml",
+      "sha256": "0a92bb196a9caa8c2405e19e4e5e8482f516583f8bf84fd5b51d3a376e5a1ce8",
+      "bytes": 827
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit17QuestionTransferTest.xml",
+      "sha256": "6709af14f1dcb7715a724685bf07794114ff358d7cb8a4889f92d8391ad8bc0a",
+      "bytes": 2194
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit18ComparisonRelativeInstructionTest.xml",
+      "sha256": "5161b9c70fa1e2e363c7a7ca7c7d6ce371874701dfaa25025a2fc2c64b212ba8",
+      "bytes": 1110
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit18CumulativeReviewTest.xml",
+      "sha256": "eff0b9aaf59d910e100ec0ee951f4f8d4d1fda18c7639f8b1df14cfae716e77a",
+      "bytes": 1765
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit19ConditionalObligationInstructionTest.xml",
+      "sha256": "48caae27fe5b068ddd10b322ccb5ee1a20b725eacdb90b846bf4abef8f466fbc",
+      "bytes": 1149
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit19CumulativeReviewTest.xml",
+      "sha256": "438dd5fd7e6dd164501547f110877e1144be2b07d814ea8480755ad908f51947",
+      "bytes": 1767
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit19PrefixUnit20MotionInstructionTest.xml",
+      "sha256": "1b29d5a619bbaa1fb01844723515dac2a6fd4f2f9ef63cf630456405de6bd816",
+      "bytes": 1514
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit20CumulativeReviewTest.xml",
+      "sha256": "b2e59c8176c2be5f1c8ccdf00431c86a9d7dd80430942d75117bdbd7b9e31b61",
+      "bytes": 1772
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit20DirectionalityApplicationTest.xml",
+      "sha256": "b83fedd86012752a1a0c55c50627a011a58d485e0a01190fa3ccceefab0a27a1",
+      "bytes": 2089
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit21CumulativeReviewTest.xml",
+      "sha256": "975c43c51dfd53f60d1f8a103b09b9e9eb125cf76677cdefdc00f995951ca4d0",
+      "bytes": 1765
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit21ObjectTransferTest.xml",
+      "sha256": "e31edf6935e6a14bd30b24cb6b3f4502d3c21ac1b052046b35c12a684aad4770",
+      "bytes": 2160
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit21ReflexivePurposeInstructionTest.xml",
+      "sha256": "68b03b0d91604d62da87645fb6a3122566f279c0c35448e9d9ad9de879dd8574",
+      "bytes": 1139
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit22CumulativeReviewTest.xml",
+      "sha256": "aa96e761cbf2c36ee182fbc7e8a8eee2b1467cbd35cda8eb7ceaa4d3166b54c0",
+      "bytes": 1767
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit22NumberInstructionTest.xml",
+      "sha256": "8ba4d33ab7cf39d28e35960a870393696368cdfdb426c62129a0274ca978ad01",
+      "bytes": 1102
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit23CumulativeReviewTest.xml",
+      "sha256": "b366aa0c7beb66428adf43800ab15a09175aea1f3a1be00ae3ba7ffd523b7b47",
+      "bytes": 1772
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit23TimeInstructionTest.xml",
+      "sha256": "98e5f8c4dc5c30186cff40f72492f9799f160a2ddea9b5c86390c066188e9afc",
+      "bytes": 1082
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit24ContextTransferTest.xml",
+      "sha256": "6fb0a8563de4365e7a8c9b5c62370e74439284ff70db45dce8c7d98dd1a36dd3",
+      "bytes": 2613
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit24CumulativeReviewTest.xml",
+      "sha256": "88346fecc8cb532ddf9bca63e3f765c0c0367b958ff632e1f16c94820d56d994",
+      "bytes": 1766
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit24NegationInstructionTest.xml",
+      "sha256": "862be2899546a9f28cff1ca686b7a43b36691e34d356d221e0709b5281b38e6f",
+      "bytes": 914
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit25CumulativeReviewTest.xml",
+      "sha256": "9753d75d9b4ca664e8d40bf6be8a925e975dd5f31a78f1dcdf7d308182044fc6",
+      "bytes": 1768
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit25NameInstructionTest.xml",
+      "sha256": "fc4a976f231f50cd827e416de25b35e8654c1f3a348becc0afbc020ad82f1459",
+      "bytes": 907
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit26CumulativeReviewTest.xml",
+      "sha256": "b81fb6a222bb387a9cfb856b25b92f8d86672ef51ae8b1392e4c90db39e82729",
+      "bytes": 1763
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit26FocusInstructionTest.xml",
+      "sha256": "e387fd8f6094b104a2b71d2ff29ccb63c2e16b0d09fa40d2b5118d3392e949ab",
+      "bytes": 899
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit26LetterInstructionTest.xml",
+      "sha256": "55659142b5e4f29caf12d1a7f592ebef1c4cd7c6b8e77b8f412637572c202c21",
+      "bytes": 886
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit26PostalInstructionTest.xml",
+      "sha256": "d4fabee585925fc376aff89b433d8d71450444806859bf58f970915a5870f0f3",
+      "bytes": 1084
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit26WrittenInstructionTest.xml",
+      "sha256": "81c1ca319778fd3383fc110c433ac483b79147d1334243ed0ad4044e1b307a32",
+      "bytes": 916
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit27CumulativeReviewTest.xml",
+      "sha256": "1b15bfb2850e22ca31d50bec954f79d8daf66b463653df033e768d1c5d9baa06",
+      "bytes": 1768
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit27PastInstructionTest.xml",
+      "sha256": "948134529d4ffd9e90fa8f95dc027679daa40de729d0a444965e2ebc90b8c58f",
+      "bytes": 944
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit27RemainingInstructionTest.xml",
+      "sha256": "e95085f31341e98016e139a65cad1f9f445cb93314a02ed7d53e77b8b4e5a847",
+      "bytes": 1334
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit28CumulativeReviewTest.xml",
+      "sha256": "76cf8bf0d184a8723bcbe5cd0ecf499e02a25a0451aa2a95bb17af6174191b4e",
+      "bytes": 1770
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit28IndependentIdentityTest.xml",
+      "sha256": "eafb4443852fb952fabf088b54c1748d763e3265eecc1045a3ccf886ab52bd4c",
+      "bytes": 1112
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit28InstructionTest.xml",
+      "sha256": "74fba3793ce39c94d5959ff6b3a07b25d929d2309230fefcb493b3abbaeb196d",
+      "bytes": 1221
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit28TimingTransferTest.xml",
+      "sha256": "cf1562f5900fee5a6e9b3810ccd598e6c2009a2cdee83369b3bb96a8c9f939a8",
+      "bytes": 2702
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest.xml",
+      "sha256": "6f90e619b7511ef7252d79cf5879d3c9935ae7b7557a0b87a975a001d1e17c1e",
+      "bytes": 1109
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit29AdjectiveApplicationTest.xml",
+      "sha256": "773a62ed3ad95357719f3367db8761e47b0df4cd89f5b9db781f356dc1106944",
+      "bytes": 1691
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit29CumulativeReviewTest.xml",
+      "sha256": "918a2f7aa2dbf419556618c54da0c3ba73a53322824c394621d1769cc4b42da4",
+      "bytes": 1772
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit29InstructionTest.xml",
+      "sha256": "7df4151a5664358c70312061fe74bef5c5803edf3d48d1e4a85f5e504eedacc3",
+      "bytes": 1207
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest.xml",
+      "sha256": "c72a39d3dd8c1a15526b541f7019495d66a7dcbaad7b850d94033eb5d8d13bdd",
+      "bytes": 2443
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit29ShortAdjectiveCorrectionTest.xml",
+      "sha256": "0f2e64f05054df28dd8639fd0ba31bf8e550a8e86cf4fcee62f9aae9904c8b08",
+      "bytes": 1667
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit30CumulativeReviewTest.xml",
+      "sha256": "930fc51321f1216158291dd9776b9e03f67390d1b4c47e3d98e1fa5c5b53293d",
+      "bytes": 1785
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit30InstructionTest.xml",
+      "sha256": "294c6a44bf63053b8c040dd8921fcad8a825768f26f07006ca9afd26d0847717",
+      "bytes": 1201
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit30LanguageCorrectionTest.xml",
+      "sha256": "f1aa43b3a2e9e68bca115b163f55600a5b5cd826e450de0e213b62d4155d6781",
+      "bytes": 1781
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit3GenderTeachingTest.xml",
+      "sha256": "1612712d8e50c13c4bd6ac1e126e5365a81c28bd247a68e28227e8c732f01e43",
+      "bytes": 1658
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit4CumulativeReviewTest.xml",
+      "sha256": "019638c224602a42c1f8b1646f364d5d3b02837717853c6a3f6664883f42296a",
+      "bytes": 1745
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "sha256": "5ea6ba2e7a6dd988f2ac37e4a4c0cb735ffe35b615892b06db96ba4fbb42a542",
+      "bytes": 1606
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit4PresentRepairUiTest.xml",
+      "sha256": "beb963ccf0c45b5bc65f742d21a1c041da6469a940499b2bf981baf0e6ca454e",
+      "bytes": 1105
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit4PresentTeachingTest.xml",
+      "sha256": "d8e2ec27df1fb7c6521baec363b27bceb5e40f43cbe40eeb5a133cfd67a5e53a",
+      "bytes": 1509
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit5CumulativeReviewTest.xml",
+      "sha256": "df5a92499c419d00636dad1251ae9322cb28a1a2009510c407dfb316f3f7d02e",
+      "bytes": 1747
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit6AnimacyTransferTest.xml",
+      "sha256": "82c2506e31e6ff1307d9e3866c47cfaf7b3da9c6dd9e45df063cdea42b1ecf33",
+      "bytes": 1610
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit6CumulativeReviewTest.xml",
+      "sha256": "62cae47674a1c31120faeddeee2472c5a74ea451f67ecf76e5ee94596521fd92",
+      "bytes": 1751
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit6FeedbackCorrectionTest.xml",
+      "sha256": "d004534f3407a2bc4ad0187b4b2fa99ea905e4d5c7ba05b4c3223e778d265594",
+      "bytes": 878
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit6WiderPolicyTest.xml",
+      "sha256": "4a9649b1ab815df3ff7a8a5b276527bb1660b161a338631eba1e265652afc359",
+      "bytes": 1657
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit7AgreementTeachingTest.xml",
+      "sha256": "952da9dc0eb0259674bcb7a56f78c42aee48dae45b0ae97b48ac17a879d6e257",
+      "bytes": 1900
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit7CumulativeReviewTest.xml",
+      "sha256": "714ecfc17030a0eb5cc836fbbac295497a73769a4f77916f800cfdfbac1da891",
+      "bytes": 1754
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit7CurrentPrerequisiteHistoryTest.xml",
+      "sha256": "10e01cc304cdf4989ca664beca7889d53fc2caf0b0dfccc737782a4a02d7db25",
+      "bytes": 767
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit7FeedbackCorrectionTest.xml",
+      "sha256": "5c31844f2e82a179eb7782f8bb53a66ab3756f87beea6dc2e301bbd853792200",
+      "bytes": 867
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest.xml",
+      "sha256": "acf2bb2f1cc169d4cb64451096499527eb9c65f5a324af676c5f9364532410af",
+      "bytes": 750
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit7InvariancePreparationTest.xml",
+      "sha256": "54a7dd7d030bda946dca0c58ecaf2b31769aa18ccc0175267565d954b4cb01ce",
+      "bytes": 708
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit7InvariancePreparationUiTest.xml",
+      "sha256": "d666e86f6ee8d9e7ae86ef5a111f412a3e581babec8eea6808e2133f9d85f3d7",
+      "bytes": 545
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit8AgreementTransferTest.xml",
+      "sha256": "33ed4a8afdbb9bd5aaae7f5f2b6dd7b9d1adbaeff057217f0b0ed25fb357caae",
+      "bytes": 1991
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit8CumulativeReviewTest.xml",
+      "sha256": "2374cb75793b8787e1dff60d7857249290ed592c5f0bcdfad6baede076d30b8b",
+      "bytes": 1758
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit8ExistenceHistoryTest.xml",
+      "sha256": "795b639331cc4dee306b52653a6b9029d69d50fbf3c5b53573242352cf1b50be",
+      "bytes": 1072
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit8ExistenceSequenceTest.xml",
+      "sha256": "6bcc03f5ace28b334eb70431456e13f114167cdbf6fa3a847446e525a11862d6",
+      "bytes": 710
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit8ExistenceUiTest.xml",
+      "sha256": "6ce8ed2d1272bba736593a72101f125e02e677d33f6d1a5879c2f4c5bb0393dc",
+      "bytes": 513
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit8PluralInstructionTest.xml",
+      "sha256": "6a515b5cfd3431635f305efa375b9056b3aee3858aefb4f2110dc35c78ffc3aa",
+      "bytes": 1486
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit9AgreementTransferTest.xml",
+      "sha256": "d864703219db6a83d6925bbe408ecf693bbec653401d086a89dcca4d373a8ad4",
+      "bytes": 2002
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit9CompositionFeedbackCorrectionTest.xml",
+      "sha256": "ac4a961e5070a14f99001514217aa4f101c25b72d92a16c638ae553fcfc6162d",
+      "bytes": 910
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit9CumulativeReviewTest.xml",
+      "sha256": "7d1d6afbdccab911e7b10363e0e06a7ae6d690fe4b5d09b287c82eeb52a65dd0",
+      "bytes": 1757
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit9NumberFeedbackCorrectionTest.xml",
+      "sha256": "11586bd8730dae8fe4f7ed12165d3c49d03a55d9877e0b4e51bde2faf21a5dc3",
+      "bytes": 889
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit9QuantityRuleCorrectionTest.xml",
+      "sha256": "d33d296706433588f98b67201217ee1e9554e4cfc0f79a59d3e926b3021ef910",
+      "bytes": 1268
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit9ReinforcementReviewTest.xml",
+      "sha256": "b29dd3142abd0756c77009f80c575c8012098f072352ceab5f1949e54a09618c",
+      "bytes": 1120
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit9WiderPolicyTest.xml",
+      "sha256": "7eec50728f6babd3adac1bbc8c97d869bf8001ecda29c1b9a92ee70d735adf86",
+      "bytes": 2049
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Units1115InstructionalValidityTest.xml",
+      "sha256": "c24dd936468aaf770b9a19a01d03b189405b0672005d67d78a4ea9bbb3b35432",
+      "bytes": 3992
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Units1115MappingGapTest.xml",
+      "sha256": "e1f71fc7905221981f54d10ec47a0197b9c3b3332d4417431cf1b52b1e7cbc60",
+      "bytes": 1377
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Units1620SourceIntakeTest.xml",
+      "sha256": "7078c2bba5d1f21fb37878d5acef7dd23f485493f3e7528a6e48301599885503",
+      "bytes": 1957
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Units2125SourceIntakeTest.xml",
+      "sha256": "9e6ae4f261a68f168787863208adfaa635d26cf6979b21c1e4b8e1d770902134",
+      "bytes": 2292
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "sha256": "b63cb37f11586c21d2b845f415ae434b5bbbb182575c2f99540db4496ef671f6",
+      "bytes": 2052
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Units2630StructuralMappingTest.xml",
+      "sha256": "ad26c480b22540a872263ebb150cf93de4bb949b68711385a8aa90f75caa4a99",
+      "bytes": 1975
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Units35SourceIntakeTest.xml",
+      "sha256": "58c9255123ee1a430c9f3dd733b3b5ba03345e8253974f15ec2122ff49df995b",
+      "bytes": 1207
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Units610InstructionalValidityTest.xml",
+      "sha256": "e9067ab6bb72b5b28fcf75e0b3821d4b6dcbad5c96f7b95104757c5dcc77bf33",
+      "bytes": 4363
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Units610SourceIntakeTest.xml",
+      "sha256": "1267c8aeb19678922113cd81e4a35f89ddb374df956243080995ba75650ab4ba",
+      "bytes": 1338
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.V2RebuildTest.xml",
+      "sha256": "86958efbf29c8fb42839fa8eb36312ee485889d2c8a1e73b13b69b2853bc9505",
+      "bytes": 4152
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "b94c7444f48b7c57e20e48bca0180404a833dab41e52487214561093cfc9e13e",
+      "bytes": 2531
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "5b74a7b59db94937d1b503c477e3fc41eaee92d296781a97f45f0fefa473d0c1",
+      "bytes": 515
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "445ba4168c7524c4827bbbdd4a30a0a20cd07a29e8a7c2299a7eb02b845833e0",
+      "bytes": 1678
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest.xml",
+      "sha256": "cc983fd87495af97f46e15b02e2cd5dfc94318fe2af006e5b4849e2d7e3df1ea",
+      "bytes": 928
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.audit.ProductOwnerAcceptanceBoundaryTest.xml",
+      "sha256": "637280b9d170769309493b58f91b634bca7ef3acce0ede2bb7c996af146167b3",
+      "bytes": 543
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.curriculum.EvidenceSchemaTest.xml",
+      "sha256": "aeed49eb0b040542489028b286335eb9b516b0fd500ca91a923e7fc567a765e2",
+      "bytes": 1227
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.review.Unit1ReviewPackageTest.xml",
+      "sha256": "4ad3c4302e85f67fe3e7bc1f6bc54d6716988d71e991732442d21182f2421209",
+      "bytes": 1551
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "2c246ac03994db578d7944267054aabd9fba54cf2abeb6858321106e63f9f933",
+      "bytes": 1589
+    },
+    {
+      "path": "gc-422691.log",
+      "sha256": "e1df1c0f8684adf9a5a878d582ed74d6fbd0227a7c8ec98e31010f57d643e84a",
+      "bytes": 180
+    },
+    {
+      "path": "gc-422703.log",
+      "sha256": "36f689f0840c51ba7da62c776bbd22abf472372d16ab016fd26484c263c49233",
+      "bytes": 179
+    },
+    {
+      "path": "gc-422762.log",
+      "sha256": "6f35c5659ec930655d562997cbbe3cfe293e7699df655bcbcf98ad4cddce864f",
+      "bytes": 179
+    },
+    {
+      "path": "gc-422784.log",
+      "sha256": "ef738e890afc5796c812f5c053c272fd38d3062a589f3af792eee9dbf6c7b458",
+      "bytes": 179
+    },
+    {
+      "path": "gc-422827.log",
+      "sha256": "3932c92e7efc119f720d1ebc56b4d9daf5701fcf21a62a4b8c515c857f072b81",
+      "bytes": 180
+    },
+    {
+      "path": "gc-422837.log",
+      "sha256": "5475e600a001cb0848d32e4683395ab18af2b56a63008fe6239bb99434af1f74",
+      "bytes": 180
+    },
+    {
+      "path": "gc-422892.log",
+      "sha256": "a1ee5dfcd3675dc860b8d0f864d9b5cd2c7c6c43151e5ad74207be75c3dee8fd",
+      "bytes": 179
+    },
+    {
+      "path": "gc-422911.log",
+      "sha256": "8c95d120f5d045aabf6ee9a49c9f8ee6154e4140be4054efc91cb31b569a0559",
+      "bytes": 179
+    },
+    {
+      "path": "gc-422957.log",
+      "sha256": "591d36b26a5bae180ea6c662f6de3d1505657e1a20de1b9f4c09152345da30aa",
+      "bytes": 180
+    },
+    {
+      "path": "gc-422976.log",
+      "sha256": "6ee3476d6af9a72116e226b7e8530260ee87ecab0a8a721ae851a0573c03850b",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423021.log",
+      "sha256": "0b234cfa2c0b0aa1a9b2130c2168b6ddf3c8588a2c3e8aebc629868203d35190",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423043.log",
+      "sha256": "e533e4e6e95c692e7e997cf3d28c5a0119f2e23d48176ab66f5c53e35ce8d473",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423087.log",
+      "sha256": "7fdb62f4bfc97bcce24f59cdbabd138e32e3f80daeff071fc488bce447c5154d",
+      "bytes": 180
+    },
+    {
+      "path": "gc-423096.log",
+      "sha256": "87691bc6c899424b00fb0c6661210c8277af4cb2e57cc8ca26e6ddb4d55a3ab4",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423151.log",
+      "sha256": "cb0e5ce8ae8fdd42f8ab888dd0da72cc2f7548a2de480a1f170e44666cabca1e",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423170.log",
+      "sha256": "45f9d212d2284e9f36b3e076f7fdc834d2466d6912855977214731e252bbf26a",
+      "bytes": 180
+    },
+    {
+      "path": "gc-423215.log",
+      "sha256": "6ff213717157aed29a0eb3c9eac1f7856c461c3dda08fe8b1f9d4eebad6532ff",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423235.log",
+      "sha256": "5e76f70c4c409433150ec71a3f0bfdc8bfe6130d861dad59b8c1c01b91875507",
+      "bytes": 180
+    },
+    {
+      "path": "gc-423281.log",
+      "sha256": "105e16eff5f6f8b7bd7625e9d0344db4de6743d77aa02e07c4dc2e25b6dceaa1",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423304.log",
+      "sha256": "8a8eaad3acae4417382023295053f38f5df739dd09c9cea264a1eff6662c934b",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423346.log",
+      "sha256": "59b9421c2b3607fe44ed701098ae780d8ecec9a45466ebcecec40f6393ab9d10",
+      "bytes": 180
+    },
+    {
+      "path": "gc-423368.log",
+      "sha256": "7d77ab79523c426c52700af22287814667a0beb51d7393ad88f84c1453569c63",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423410.log",
+      "sha256": "a96373c26d6650e320a17c75ecd00af44e660cae32d3fc1c7d037f05b4067f23",
+      "bytes": 180
+    },
+    {
+      "path": "gc-423429.log",
+      "sha256": "0a4da768672ebff30a2bd13022567abb6ee88e19c2b57f1178271ea4994c21b4",
+      "bytes": 180
+    },
+    {
+      "path": "gc-423474.log",
+      "sha256": "691f0710ba89aa9f657a5b545f4ee4f2171a07200b43ef36f9c1396c3353360b",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423494.log",
+      "sha256": "c325ff2df88ffaa5b661cb16b162932a810dc6958605c4d8843175732ca9139f",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423539.log",
+      "sha256": "9d262289805399f667d02d31c3c5ae1d46f165b759447412748a302ec9fcae55",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423561.log",
+      "sha256": "9f0dbb416dee6c56fed7a2b35a87c4cc884147ffadcf644dda147db4d2085a2b",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423604.log",
+      "sha256": "2c16c3c6bf64193ff1c5ae8d461caa4712bf9b16f23d5a37154a94b6f0f23a16",
+      "bytes": 180
+    },
+    {
+      "path": "gc-423625.log",
+      "sha256": "511c3776ac06fbff4383110078c7b65e7f1f8ddcbd2ce27ffcbbbfb55aa1ea07",
+      "bytes": 180
+    },
+    {
+      "path": "gc-423668.log",
+      "sha256": "c3b9f89503e4aab747929e36de7ebb7695d50b15d48f248a6a3e28df36c89b34",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423691.log",
+      "sha256": "88ce310d58e6830ac2cf27167dd26d4c502df87a801b4efe16c74e9342b67e00",
+      "bytes": 180
+    },
+    {
+      "path": "gc-423733.log",
+      "sha256": "4d6b01f51c2710a86bfd313fa287ceecfff72255d471320b164766490189167b",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423755.log",
+      "sha256": "afcc65191e579e6428717338859781d18c8cc917e6a051a1108fc712d049c730",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423794.log",
+      "sha256": "65540aa9582e857798ce3be52c423b9cddc756e3db23a98a5396d9c0e1ad9ed9",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423819.log",
+      "sha256": "b2a798af6623a2a800412044344e7b0609518821c36b752f5d7a8a21beb86ed6",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423861.log",
+      "sha256": "f30e80ea663115bd09085d15b0d69e546d1ad729cfd464f2c966541e552b1998",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423883.log",
+      "sha256": "5b86689f8a1e1f2941676e7ef5e9aa08094095436cef910479ee298a672a99e2",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423925.log",
+      "sha256": "232d26ea36fad93186f4e6da1eb88b8025e204fb921066fc91dee5a353913bc9",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423948.log",
+      "sha256": "0b3af7fc890e407b06ff77f316006912369038d7c9cf7aacb3207064fabd5e94",
+      "bytes": 179
+    },
+    {
+      "path": "gc-423990.log",
+      "sha256": "5b062a6fca1ba632945aae6cfb680f6df7fb9219a54798a259b13b623478b6d8",
+      "bytes": 179
+    },
+    {
+      "path": "gc-424012.log",
+      "sha256": "8e835770e601419559647c65e3ccc6e674633433744a32fe67861ad6acd14e1d",
+      "bytes": 180
+    },
+    {
+      "path": "gc-424054.log",
+      "sha256": "c35475557070b83074afc6a8bd8dde3ceccd60aeae67addc5bcfdb7cd4625aea",
+      "bytes": 179
+    },
+    {
+      "path": "gc-424076.log",
+      "sha256": "03a93fdbdce380a3daf98cc0d9067f733b64fd1b6e684a980dd515f4900015c9",
+      "bytes": 179
+    },
+    {
+      "path": "gc-424118.log",
+      "sha256": "886521e8773c396c71afcdb9fb670232e8dfe88956229922b4190df4774aba19",
+      "bytes": 179
+    },
+    {
+      "path": "gc-424140.log",
+      "sha256": "66516f570233412c81c0ba560dc5e6941219d778721c4e36bebf4adf55e2ba0e",
+      "bytes": 180
+    },
+    {
+      "path": "gc-424182.log",
+      "sha256": "381180417141ce3e5b06db70f7b9c44db1d0204bddeba40c99a9123589558566",
+      "bytes": 179
+    },
+    {
+      "path": "gc-424204.log",
+      "sha256": "b22cc58cb58462ca70be679c46782a16f09b2de3c24d9069af359a0e3beeac21",
+      "bytes": 179
+    },
+    {
+      "path": "gc-424246.log",
+      "sha256": "8c72c35799dcb6dc371c4f9b416a515a040074932c85664f05f240bbb9ac3301",
+      "bytes": 180
+    },
+    {
+      "path": "gc-424268.log",
+      "sha256": "4e9b516ab1a652d24b6158c3d29fe41cd14ec78863245409758b9180a42036d1",
+      "bytes": 180
+    },
+    {
+      "path": "gc-424310.log",
+      "sha256": "fb0155ff8f154eacdbee0278d8c851dfd32a1b9116aab9dc4f7c84a81dc7abf2",
+      "bytes": 179
+    },
+    {
+      "path": "gc-424332.log",
+      "sha256": "510141101c745b63f3a57bf8dd63debf1a3b74d25b095c4d67f2b3751129d3c2",
+      "bytes": 179
+    },
+    {
+      "path": "gc-424374.log",
+      "sha256": "44b1686c6409fac06372e9e4837f19481796f31cee3041324ce9052662c7acf0",
+      "bytes": 179
+    },
+    {
+      "path": "gc-424396.log",
+      "sha256": "ff5d0962a22b218f56f6301aca295b05f34d16eb5b4b9cfdf4c8587a1d9464c2",
+      "bytes": 179
+    },
+    {
+      "path": "gc-424428.log",
+      "sha256": "25439f7829b3820b487d84eb3757549704724744abfcc8a2da17dc4f31a7e348",
+      "bytes": 179
+    },
+    {
+      "path": "gc-424464.log",
+      "sha256": "f70822432a006921de497d586bd8c45be516a72aaed3923ddc4c51f52be51f1a",
+      "bytes": 179
+    },
+    {
+      "path": "DISCOVERY_SESSION.json",
+      "sha256": "4657125b816d953897fbdceba9571699ddda09ffb876db85c49c592399979748",
+      "bytes": 197
+    },
+    {
+      "path": "DISCOVERY_LAUNCHER.log",
+      "sha256": "0a4e8e7f0aff711715c09504efd51c39abba551e60a9a4467f35f9c10de94100",
+      "bytes": 219
+    }
+  ],
+  "crcAndEveryMemberHashVerified": true
+}
