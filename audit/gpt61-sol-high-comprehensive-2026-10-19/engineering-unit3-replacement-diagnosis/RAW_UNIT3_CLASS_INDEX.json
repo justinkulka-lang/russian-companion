@@ -1,0 +1,58 @@
+{
+  "archive": "RAW_UNIT3_CLASS.zip",
+  "bytes": 13608,
+  "sha256": "a0c1734666698b67c3dba584f122e4fd921752c692f3988c081eb820f490c32d",
+  "members": [
+    {
+      "path": "CONTEXT.json",
+      "bytes": 4621,
+      "sha256": "6e7a21813d6945eb5b7525e100251366dcf8650bedc1239e3928fd46cc8c7b6d"
+    },
+    {
+      "path": "EVENTS.jsonl",
+      "bytes": 4368,
+      "sha256": "d25cf16195ec20a8a312fdd6224fdd33e378a9dc12c01af867ea651a3007144d"
+    },
+    {
+      "path": "LINT.xml",
+      "bytes": 31476,
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+    },
+    {
+      "path": "RESULT.json",
+      "bytes": 4533,
+      "sha256": "45d24a1c62904a9403000c3e72c4e022a5c94a2bfff9f373382098c1340f7ac9"
+    },
+    {
+      "path": "RESULTS.csv",
+      "bytes": 1468,
+      "sha256": "7c30688512ea9af22a2af7a4337ba332adace060901bec8e2683c51ff0d13b18"
+    },
+    {
+      "path": "RUN.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "RUN.log",
+      "bytes": 3571,
+      "sha256": "fde9880433f3fe574e2225a19892b201757e7a1e9b933c16314e731e9d797e59"
+    },
+    {
+      "path": "SHA256.json",
+      "bytes": 811,
+      "sha256": "f54fc19efbf6d053743659e47ff10e365f13a70615e91a1634a1e490c5b2515b"
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.Unit3GenderTeachingTest.xml",
+      "bytes": 13970,
+      "sha256": "1439efe374e9331b8fb6b5e8af0478808cf24d7586441fadb52d21cb3fb4c8d8"
+    },
+    {
+      "path": "gc-417796.log",
+      "bytes": 10135,
+      "sha256": "41dcbf44e36d686d905fd7ca5508dbf465fdfa82f069e3d1c23cc931e4790d9b"
+    }
+  ],
+  "crcAndAllMemberHashesVerified": true
+}

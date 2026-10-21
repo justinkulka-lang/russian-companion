@@ -1,0 +1,11 @@
+{
+  "diagnosticTestedSource": "ee9fea3c45b9d02c2ad5a87cfc9ecd7ab6237bdf",
+  "fiveInputTreesIdenticalToOriginalBroadRun": true,
+  "original66ArchivesUnchanged": true,
+  "historicalGeneratedArchiveCrcAnd167MemberHashesReverified": true,
+  "all154CurrentGeneratedFileHashesReverified": true,
+  "candidateSha256": "8091556047103ab25524dd0d7b255b52aad0a34a3c731d723e89a183ead9b661",
+  "applicationTestsCatalogDocsReviewChanged": false,
+  "originalFailureOpen": true,
+  "noActiveJob": true
+}
