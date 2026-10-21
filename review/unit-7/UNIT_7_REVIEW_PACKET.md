@@ -11,12 +11,12 @@ Unit 7 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 7d92d8813e105932391448d94247534493337118
-- Unit content-review SHA-256: 0bda8d40aae3c040f5c6f9a8a2771de45f95dbdad1bf8232854a2fc3c999e9e9
+- Curriculum source commit: b7e53230e2119b1e57d781b1e1b955f074a38601
+- Unit content-review SHA-256: d922af88322b648f478da4cbe6f23e25b90310e026f4faef042e956931af42da
 - Mapping-package SHA-256: e39515585eea5b131797f0c93ce3508ee99b27206cc21070675d06aa975373c0
-- Pack content-review SHA-256: e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4
-- Review-package SHA-256: acfecf2901691a10a46fe362cf544b5479cc3c77297324cd919b3731659d0f0f
-- Repository source SHA-256: 86ce7af2eb063d8f15ae960a58c71be50d0c2ea21aab9a2a6804332c0cd1bc97
+- Pack content-review SHA-256: bbd8919abe7d6f4968440b9ee9d60812959ad148c121428644103ad76eee7880
+- Review-package SHA-256: aa13380db7bb06fb21ad893e052ab313da71c6a25e69235532e2c907258c132a
+- Repository source SHA-256: 8502cadc8a068c25eb3fd6292c7d9c04cac86ef71c9da8425225156f0e7ac4ae
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -284,12 +284,12 @@ remediation=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: c1a1314b8035e9001a2ad8aeebccf41ec6a5df8ff80682a8d89c056006329fec
+- Content hash: 08ace55620e9fda957eabef63a5d021d9f239e39d317c6d521fcb237cb334dee
 
 title=Admitted adverb invariance line
 kind=RECOGNITION
 unitNumber=7
-instruction=u7-st-orient,u7-st-teach-adverb-invariance-1,u7-st-teach-adverb-invariance-2
+instruction=u7-st-orient,u7-st-teach-adverb-invariance-1,u7-st-teach-adverb-invariance-2,u7-st-teach-adverb-invariance-english
 examples=ex-u7-adverb-invariance-0,ex-u7-adverb-invariance-1
 practice=u7-st-guided-adverb-invariance-1
 checks=u7-i-adverb-invariance-1,u7-i-adverb-invariance-2
@@ -1601,11 +1601,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: dc9de7feb9ab404cd9acc503bd04cc462961e560480c66522230a5d37885bda9
+- Content hash: 458c5f110a48e5ecf6415547c3c31efbf0b8adfc846508c4c09b5d3f238ece8b
 
 kind=TEACH
 title=Admitted lines
-body=Моя русская кошка любит мою новую собаку — My Russian cat likes my new dog. этих женщин — I like these women. 
+body=Моя русская кошка любит мою новую собаку — My Russian cat likes my new dog. The separate fragment этих женщин means these women. Its plural forms can be accusative or genitive; the source illustrates an animate accusative object. The fragment alone is not a complete sentence and supplies no predicate or first-person subject. The preceding complete cat and dog sentence has its own predicate; do not carry that meaning into the separate fragment.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1667,15 +1667,23 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 4f646b5c97fd3719c23f1d05809f4a7a4d6d7e10689bd74273e122c5e5adf1a8
+- Content hash: 6f24f1ad16d65585acebc6698846e5776621cebb66638173641a9587e646702c
 
 kind=REMEDIATE
 title=Remediation
-body=I want a new rabbit - '''Я хочу нового кролика.'''
+body=Я хочу новый стул и новое письмо — I want a new chair and a new letter. Я хочу нового кролика. — I want a new rabbit. 
+
+I want a new rabbit - '''Я хочу нового кролика.'''
+
+Моя русская кошка любит мою новую собаку — My Russian cat likes my new dog. The separate fragment этих женщин means these women. Its plural forms can be accusative or genitive; the source illustrates an animate accusative object. The fragment alone is not a complete sentence and supplies no predicate or first-person subject. The preceding complete cat and dog sentence has its own predicate; do not carry that meaning into the separate fragment.
+
+но́вый — new. но́вого — new. 
+
+но́вую — new. 
 dominantAction=Continue
 references=
 items=
-examples=ex-u7-objectadj-0,ex-u7-objectadj-1
+examples=ex-u7-objectadj-0,ex-u7-objectadj-1,ex-u7-objectadj-2,ex-u7-objectadj-3,ex-or-u7-objectadj-4,ex-or-u7-objectadj-5,ex-or-u7-objectadj-6
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1917,12 +1925,12 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 0dce6e89bd03bfecf8c59c7a8537d08e2ab8824e27c0035bd24c2c27dcce7fa6
+- Content hash: b772e7bff993737f27a51373ee43d6a1b06c0910d71372c882048cc974940f27
 
 title=Admitted adverb invariance line
 estimatedMinutes=12
 objectives=obj-u7-adverb-invariance
-steps=u7-st-teach-adverb-invariance-1,u7-st-guided-adverb-invariance-1,u7-st-teach-adverb-invariance-2,u7-st-rem-adverb-invariance,u7-st-check-adverb-invariance
+steps=u7-st-teach-adverb-invariance-1,u7-st-teach-adverb-invariance-2,u7-st-teach-adverb-invariance-english,u7-st-guided-adverb-invariance-1,u7-st-rem-adverb-invariance,u7-st-check-adverb-invariance
 
 ### STEP `u7-st-teach-adverb-invariance-1`
 
@@ -1941,6 +1949,50 @@ dominantAction=Continue
 references=ref-u7-ruwiki-attribution
 items=
 examples=ex-u7-adverb-invariance-0,ex-u7-adverb-invariance-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-teach-adverb-invariance-2`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8bbcb9bbee77d72a90980e1ded635b811153e9a928e2b6e5a371f3c33165a99f
+
+kind=TEACH
+title=Admitted instruction
+body=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+dominantAction=Continue
+references=ref-u7-ruwiki-attribution
+items=
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u7-st-teach-adverb-invariance-english`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e72c6f7ac049d4c2089a844092ff24eab832fb26aaf28c0be74385a117b9f40e
+
+kind=TEACH
+title=Understand the rule before the wording task
+body=Adverbs do not decline or conjugate: they do not change for case, gender or number agreement. This grammatical invariance does not mean that comparative forms cannot exist. The retained explanation treats comparison of qualitative adverbs separately. The choices below ask where wording occurs in a Russian source line, using the dash and colon. That wording task does not demonstrate applying invariance in a sentence. Use this explanation to understand the rule; do not infer a general adverb-formation rule from these choices.
+dominantAction=Continue
+references=ref-u7-ruwiki-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1968,28 +2020,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u7-st-rem-adverb-invariance
 
-### STEP `u7-st-teach-adverb-invariance-2`
-
-- Objectives: obj-u7-adverb-invariance
-- Sessions: u7-s-adverb-invariance
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 8bbcb9bbee77d72a90980e1ded635b811153e9a928e2b6e5a371f3c33165a99f
-
-kind=TEACH
-title=Admitted instruction
-body=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
-dominantAction=Continue
-references=ref-u7-ruwiki-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u7-st-rem-adverb-invariance`
 
 - Objectives: obj-u7-adverb-invariance
@@ -1998,11 +2028,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 88b3aeb9ffcca72f5e22ada705e0e49fc63d4cc1e35cfe487e246200d75d4011
+- Content hash: e9f3c9384a74b55a7bb0b49ae96885fb6286b964a68512660563cd2a54f7a8af
 
 kind=REMEDIATE
-title=Remediation
-body=Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+title=Review the rule and the wording task
+body=Наречия — неизменяемые слова. Наречия — неизменяемые слова. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
+Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+
+Adverbs do not decline or conjugate: they do not change for case, gender or number agreement. This grammatical invariance does not mean that comparative forms cannot exist. The retained explanation treats comparison of qualitative adverbs separately. The choices below ask where wording occurs in a Russian source line, using the dash and colon. That wording task does not demonstrate applying invariance in a sentence. Use this explanation to understand the rule; do not infer a general adverb-formation rule from these choices.
 dominantAction=Continue
 references=
 items=
@@ -14308,6 +14342,210 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-cc011-preparation-u7-st-rem-adverb-invariance-body`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 3000df43c1b0cd168df5713715049a3f18943ac72b0cbca0ed2976ee120e6f4f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-adverb-invariance:cc011-preparation:u7-st-rem-adverb-invariance-body
+originalSourceText=Complete retained Russian Wikipedia Наречие oldid152437423, Морфологические признаки, first paragraph: invariance, no declension/conjugation or gender/number change; comparison of qualitative adverbs is discussed separately. Independently authored English scaffolding and explanation arrangement2026-10-20. Existing native lines/examples retain their original provenance. No new native application, comparative example, private-book wording or scored item is added. CC011 contextual grammar assessment remains OPEN; no qualification or approval.
+Наречия — неизменяемые слова. Наречия — неизменяемые слова. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
+Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+
+Adverbs do not decline or conjugate: they do not change for case, gender or number agreement. This grammatical invariance does not mean that comparative forms cannot exist. The retained explanation treats comparison of qualitative adverbs separately. The choices below ask where wording occurs in a Russian source line, using the dash and colon. That wording task does not demonstrate applying invariance in a sentence. Use this explanation to understand the rule; do not infer a general adverb-formation rule from these choices.
+shippedText=Наречия — неизменяемые слова. Наречия — неизменяемые слова. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+
+Наречия — неизменяемые слова: они не склоняются и не спрягаются, не имеют окончаний, не изменяются по родам и числам.
+
+Adverbs do not decline or conjugate: they do not change for case, gender or number agreement. This grammatical invariance does not mean that comparative forms cannot exist. The retained explanation treats comparison of qualitative adverbs separately. The choices below ask where wording occurs in a Russian source line, using the dash and colon. That wording task does not demonstrate applying invariance in a sentence. Use this explanation to understand the rule; do not infer a general adverb-formation rule from these choices.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f8b25a4af295f36fea4987fb35222efc64a27c58ddf178f44397471cc4775263
+contentHash=d6ca9bc6904e16a51c55124c600d833ff7bc4b48140cb8d45f79416265b62a76
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc011-preparation-u7-st-rem-adverb-invariance-title`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f532f69f72879eb5f77794309fdef20f49b030a7adb78b97b681b3ef1d614a15
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-adverb-invariance:cc011-preparation:u7-st-rem-adverb-invariance-title
+originalSourceText=Complete retained Russian Wikipedia Наречие oldid152437423, Морфологические признаки, first paragraph: invariance, no declension/conjugation or gender/number change; comparison of qualitative adverbs is discussed separately. Independently authored English scaffolding and explanation arrangement2026-10-20. Existing native lines/examples retain their original provenance. No new native application, comparative example, private-book wording or scored item is added. CC011 contextual grammar assessment remains OPEN; no qualification or approval.
+Review the rule and the wording task
+shippedText=Review the rule and the wording task
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c37c0466be60d478eddf17d0e7089746aa7c8e4e74de687a27bfb9ddbddc095e
+contentHash=ae025cc04bf80a84ca6ca0281e9eaa452144d678cd03123fcf623b557b37322b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc011-preparation-u7-st-teach-adverb-invariance-english-body`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c7def57c83efd48605abae86aeb19c7e2f5e3a04cc3dbc734cd6b0a50fc1c6c9
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-adverb-invariance:cc011-preparation:u7-st-teach-adverb-invariance-english-body
+originalSourceText=Complete retained Russian Wikipedia Наречие oldid152437423, Морфологические признаки, first paragraph: invariance, no declension/conjugation or gender/number change; comparison of qualitative adverbs is discussed separately. Independently authored English scaffolding and explanation arrangement2026-10-20. Existing native lines/examples retain their original provenance. No new native application, comparative example, private-book wording or scored item is added. CC011 contextual grammar assessment remains OPEN; no qualification or approval.
+Adverbs do not decline or conjugate: they do not change for case, gender or number agreement. This grammatical invariance does not mean that comparative forms cannot exist. The retained explanation treats comparison of qualitative adverbs separately. The choices below ask where wording occurs in a Russian source line, using the dash and colon. That wording task does not demonstrate applying invariance in a sentence. Use this explanation to understand the rule; do not infer a general adverb-formation rule from these choices.
+shippedText=Adverbs do not decline or conjugate: they do not change for case, gender or number agreement. This grammatical invariance does not mean that comparative forms cannot exist. The retained explanation treats comparison of qualitative adverbs separately. The choices below ask where wording occurs in a Russian source line, using the dash and colon. That wording task does not demonstrate applying invariance in a sentence. Use this explanation to understand the rule; do not infer a general adverb-formation rule from these choices.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f191472d48eb4499823276948d700564455b3b9a48b0852f668a06fff5d123c8
+contentHash=7e1a9b3631348e67df2c1ea13d73a1b8afcaeff80d884eefe9b8414150c0e295
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc011-preparation-u7-st-teach-adverb-invariance-english-title`
+
+- Objectives: obj-u7-adverb-invariance
+- Sessions: u7-s-adverb-invariance
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c4990824e0585ffe6e0ae13338d7ea4c12586b5c267a9d4cd378b40247c6b015
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-adverb-invariance:cc011-preparation:u7-st-teach-adverb-invariance-english-title
+originalSourceText=Complete retained Russian Wikipedia Наречие oldid152437423, Морфологические признаки, first paragraph: invariance, no declension/conjugation or gender/number change; comparison of qualitative adverbs is discussed separately. Independently authored English scaffolding and explanation arrangement2026-10-20. Existing native lines/examples retain their original provenance. No new native application, comparative example, private-book wording or scored item is added. CC011 contextual grammar assessment remains OPEN; no qualification or approval.
+Understand the rule before the wording task
+shippedText=Understand the rule before the wording task
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0666213caa10ecb8f29c39dd321aeb7649500e67cdd8c7c13279fd0a2b6af060
+contentHash=2477dfa0a10bbd7a1c5b3343fb08499352642445bfb993a7e8db7c0264d917d1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc016-u7-st-rem-objectadj`
+
+- Objectives: obj-u7-objectadj
+- Sessions: u7-s-orient, u7-s-objectadj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 365fda909442935d3540134b7751177f477a569091a4ac3cac404889a8897c48
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-objectadj:cc016:u7-st-rem-objectadj
+originalSourceText=Retained complete Wikibooks Russian/Grammar/Accusative_case oldid4330404, including the original subject/object examples and animate plural case relation; Russian/Grammar/Adjectives oldid4292379 for the unchanged complete cat/dog and rabbit lines and agreement context. Existing Unit7/10 native fragments and corrected example notes retain their separate original provenance and CC BY-SA4.0 attribution. Independently authored English explanation and arrangement on2026-10-19, under governed research-source version2026-10-08. No expanded native clause, new Russian, stress, private Penguin prose or new native application. Qualified source/linguistic/rights review remains pending. Full source sentence meanings must not be assigned to isolated fragments.
+Я хочу новый стул и новое письмо — I want a new chair and a new letter. Я хочу нового кролика. — I want a new rabbit. 
+
+I want a new rabbit - '''Я хочу нового кролика.'''
+
+Моя русская кошка любит мою новую собаку — My Russian cat likes my new dog. The separate fragment этих женщин means these women. Its plural forms can be accusative or genitive; the source illustrates an animate accusative object. The fragment alone is not a complete sentence and supplies no predicate or first-person subject. The preceding complete cat and dog sentence has its own predicate; do not carry that meaning into the separate fragment.
+
+но́вый — new. но́вого — new. 
+
+но́вую — new. 
+shippedText=Я хочу новый стул и новое письмо — I want a new chair and a new letter. Я хочу нового кролика. — I want a new rabbit. 
+
+I want a new rabbit - '''Я хочу нового кролика.'''
+
+Моя русская кошка любит мою новую собаку — My Russian cat likes my new dog. The separate fragment этих женщин means these women. Its plural forms can be accusative or genitive; the source illustrates an animate accusative object. The fragment alone is not a complete sentence and supplies no predicate or first-person subject. The preceding complete cat and dog sentence has its own predicate; do not carry that meaning into the separate fragment.
+
+но́вый — new. но́вого — new. 
+
+но́вую — new. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97f8b0dca3c77bf6603361295c0fe4f5ee98cef8241c5e4aab3318e79b17464a
+contentHash=e8e54888fbd81b88f03ae9103d86695fde39beddde4abdddc41aa2e8f32731c0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc016-u7-st-teach-objectadj-3`
+
+- Objectives: obj-u7-objectadj
+- Sessions: u7-s-orient, u7-s-objectadj
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a93a59e1454a3a7c90833224550e44ce727412be65710124d34a762e1d59e93e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u7-objectadj:cc016:u7-st-teach-objectadj-3
+originalSourceText=Retained complete Wikibooks Russian/Grammar/Accusative_case oldid4330404, including the original subject/object examples and animate plural case relation; Russian/Grammar/Adjectives oldid4292379 for the unchanged complete cat/dog and rabbit lines and agreement context. Existing Unit7/10 native fragments and corrected example notes retain their separate original provenance and CC BY-SA4.0 attribution. Independently authored English explanation and arrangement on2026-10-19, under governed research-source version2026-10-08. No expanded native clause, new Russian, stress, private Penguin prose or new native application. Qualified source/linguistic/rights review remains pending. Full source sentence meanings must not be assigned to isolated fragments.
+Моя русская кошка любит мою новую собаку — My Russian cat likes my new dog. The separate fragment этих женщин means these women. Its plural forms can be accusative or genitive; the source illustrates an animate accusative object. The fragment alone is not a complete sentence and supplies no predicate or first-person subject. The preceding complete cat and dog sentence has its own predicate; do not carry that meaning into the separate fragment.
+shippedText=Моя русская кошка любит мою новую собаку — My Russian cat likes my new dog. The separate fragment этих женщин means these women. Its plural forms can be accusative or genitive; the source illustrates an animate accusative object. The fragment alone is not a complete sentence and supplies no predicate or first-person subject. The preceding complete cat and dog sentence has its own predicate; do not carry that meaning into the separate fragment.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95b2cc8c816f3eb58e3e7fb691562297202eda36a592d17331257b0f6f2f9dbd
+contentHash=e9fdbff9b11e98fb99c6ec10cf5e417bd2bf95d14693cd8d23adad4da2567078
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-or-u7-default-0`
 
 - Objectives: obj-u7-default
@@ -21608,6 +21846,7 @@ permitsAppUse=true
 - `obj-u7-adverb-invariance` INSTRUCTION `u7-st-orient`
 - `obj-u7-adverb-invariance` INSTRUCTION `u7-st-teach-adverb-invariance-1`
 - `obj-u7-adverb-invariance` INSTRUCTION `u7-st-teach-adverb-invariance-2`
+- `obj-u7-adverb-invariance` INSTRUCTION `u7-st-teach-adverb-invariance-english`
 - `obj-u7-adverb-invariance` EXAMPLE `ex-u7-adverb-invariance-0`
 - `obj-u7-adverb-invariance` EXAMPLE `ex-u7-adverb-invariance-1`
 - `obj-u7-adverb-invariance` PRACTICE `u7-st-guided-adverb-invariance-1`
@@ -21801,6 +22040,11 @@ permitsAppUse=true
 - `u7-st-teach-objectadj-5` REFERENCE `ref-u610-attribution`
 - `u7-st-rem-objectadj` EXAMPLE `ex-u7-objectadj-0`
 - `u7-st-rem-objectadj` EXAMPLE `ex-u7-objectadj-1`
+- `u7-st-rem-objectadj` EXAMPLE `ex-u7-objectadj-2`
+- `u7-st-rem-objectadj` EXAMPLE `ex-u7-objectadj-3`
+- `u7-st-rem-objectadj` EXAMPLE `ex-or-u7-objectadj-4`
+- `u7-st-rem-objectadj` EXAMPLE `ex-or-u7-objectadj-5`
+- `u7-st-rem-objectadj` EXAMPLE `ex-or-u7-objectadj-6`
 - `u7-st-check-objectadj` REMEDIATION `u7-st-rem-objectadj`
 - `u7-st-check-objectadj` ITEM `u7-i-objectadj-1`
 - `u7-st-check-objectadj` ITEM `u7-i-objectadj-2`
@@ -21825,9 +22069,10 @@ permitsAppUse=true
 - `u7-st-teach-adverb-invariance-1` EXAMPLE `ex-u7-adverb-invariance-0`
 - `u7-st-teach-adverb-invariance-1` EXAMPLE `ex-u7-adverb-invariance-1`
 - `u7-st-teach-adverb-invariance-1` REFERENCE `ref-u7-ruwiki-attribution`
+- `u7-st-teach-adverb-invariance-2` REFERENCE `ref-u7-ruwiki-attribution`
+- `u7-st-teach-adverb-invariance-english` REFERENCE `ref-u7-ruwiki-attribution`
 - `u7-st-guided-adverb-invariance-1` REMEDIATION `u7-st-rem-adverb-invariance`
 - `u7-st-guided-adverb-invariance-1` ITEM `u7-g-adverb-invariance-0`
-- `u7-st-teach-adverb-invariance-2` REFERENCE `ref-u7-ruwiki-attribution`
 - `u7-st-rem-adverb-invariance` EXAMPLE `ex-u7-adverb-invariance-0`
 - `u7-st-rem-adverb-invariance` EXAMPLE `ex-u7-adverb-invariance-1`
 - `u7-st-check-adverb-invariance` REMEDIATION `u7-st-rem-adverb-invariance`
@@ -22094,6 +22339,12 @@ permitsAppUse=true
 - `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-teach-3-title`
 - `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-teach-4-body`
 - `obj-u7-spelling` PROVENANCE `prov-ca-u7-worked-teach-4-title`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-cc011-preparation-u7-st-rem-adverb-invariance-body`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-cc011-preparation-u7-st-rem-adverb-invariance-title`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-cc011-preparation-u7-st-teach-adverb-invariance-english-body`
+- `obj-u7-adverb-invariance` PROVENANCE `prov-cc011-preparation-u7-st-teach-adverb-invariance-english-title`
+- `obj-u7-objectadj` PROVENANCE `prov-cc016-u7-st-rem-objectadj`
+- `obj-u7-objectadj` PROVENANCE `prov-cc016-u7-st-teach-objectadj-3`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-0`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-0-gloss`
 - `obj-u7-default` PROVENANCE `prov-ex-or-u7-default-1`

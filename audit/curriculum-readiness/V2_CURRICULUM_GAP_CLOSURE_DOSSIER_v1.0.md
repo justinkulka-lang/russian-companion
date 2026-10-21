@@ -6,8 +6,8 @@
 **Repository:** `justinkulka-lang/russian-companion`  
 **Repository baseline main:** `c153103a0048f69f8de339b83e77d93572ebddb7`  
 **Unit 23 unprepared correction:** `fd69bd03298d69669d09daafe8d364b0e576d033` (`Keep Unit 23 unprepared until completion over a period is admitted.`). That commit is an ancestor of the repository baseline. It is not the repository baseline main commit.  
-**Pack content-review digest:** `e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4`
-**Repository source digest:** `86ce7af2eb063d8f15ae960a58c71be50d0c2ea21aab9a2a6804332c0cd1bc97`
+**Pack content-review digest:** `bbd8919abe7d6f4968440b9ee9d60812959ad148c121428644103ad76eee7880`
+**Repository source digest:** `8502cadc8a068c25eb3fd6292c7d9c04cac86ef71c9da8425225156f0e7ac4ae`
 **Public release:** **NOT_APPROVED**
 
 ## Purpose
@@ -26,7 +26,7 @@ PR #42 head `0f0744dfeb76433fddb5604a065c92427c54848a` was merged into the Batch
 - Licensed-asset blockers: **Units 1–2**.
 - Missing review packets: **none**. Unit 23 now has an unsigned packet. Reviewer fields stay blank.
 - Activated pedagogical boundaries: **Units 27, 29, and 30**. Activation is not qualified curriculum review.
-- The original structural audit disclosed **2 Unit 4 examples**. The current catalog retains **6 unbound examples** and **14 unbound check records**, including historical and optional records. Exact IDs are disclosed in `V2_CURRICULUM_READINESS_RECONCILIATION.md`; they are retained rather than rebound or deleted to reduce a count.
+- The original structural audit disclosed **2 Unit 4 examples**. The current catalog retains **8 unbound examples** and **14 unbound check records**, including historical and optional records. Exact IDs are disclosed in `V2_CURRICULUM_READINESS_RECONCILIATION.md`; they are retained rather than rebound or deleted to reduce a count.
 - Required local-experience blockers unrelated to sources/assets: **0**.
 
 ## Evidence admission standard
@@ -220,6 +220,10 @@ No unit is missing a review packet. Unit 23 received an unsigned packet only aft
 
 Units **27, 29, and 30** have an activated pedagogical boundary. The historical proposal files remain `PROPOSED_NOT_ACTIVATED` and are not the activation. Activation is not qualified-reviewer concurrence, and source completion alone did not activate the boundary. The written Product Owner disposition did.
 
+## Current scope of this planning dossier
+
+The pending-packet reconciliation updates source/pack identities and mechanical reachability only. The original independent audit remains INCOMPLETE; the current 17-finding return and its engineering dispositions require qualified independent recheck. Structural completeness counters do not establish full curriculum, language, rights, media or runtime coverage. Existing historical research notes below retain their original scope and counts at those checkpoints. No reviewer fields or formal stages are approved by this update.
+
 ## Unit 4 orphan analysis
 
 ### `ex-u4-verb-знать`
@@ -228,7 +232,7 @@ Units **27, 29, and 30** have an activated pedagogical boundary. The historical 
 - Rights: `rights-openrussian-50e210c4`
 - Provenance: `prov-u4-verb-знать`, `prov-u4-verb-gloss-знать`
 - Intended objective: `obj-u4-present`
-- Finding: The generator creates this example for obj-u4-present, but the objective's exampleIds include only ex-u4-verb-читать and ex-u4-verb-делать. It is packaged but unreachable from any unit chain.
+- Finding: The current objective and session steps do not reference this retained example. It remains packaged but unreachable from any unit chain; the later present-form teaching adds other exact-form examples.
 - Options: Bind to obj-u4-present only if a curriculum reviewer affirms it materially serves the existing objective and the unit chain is re-reviewed; Remove the unreachable example record while preserving its source/provenance records if used elsewhere; Retain as disclosed unreachable data pending a documented curriculum decision.
 - Recommendation: Prefer removal unless the qualified reviewer identifies a concrete instructional role. Do not bind it merely to eliminate the orphan count.
 
@@ -238,7 +242,7 @@ Units **27, 29, and 30** have an activated pedagogical boundary. The historical 
 - Rights: `rights-openrussian-50e210c4`
 - Provenance: `prov-u4-verb-работать`, `prov-u4-verb-gloss-работать`
 - Intended objective: `obj-u4-present`
-- Finding: The generator creates this example for obj-u4-present, but the objective's exampleIds include only ex-u4-verb-читать and ex-u4-verb-делать. It is packaged but unreachable from any unit chain.
+- Finding: The current objective and session steps do not reference this retained example. It remains packaged but unreachable from any unit chain; the later present-form teaching adds other exact-form examples.
 - Options: Bind to obj-u4-present only if a curriculum reviewer affirms it materially serves the existing objective and the unit chain is re-reviewed; Remove the unreachable example record while preserving its source/provenance records if used elsewhere; Retain as disclosed unreachable data pending a documented curriculum decision.
 - Recommendation: Prefer removal unless the qualified reviewer identifies a concrete instructional role. Do not bind it merely to eliminate the orphan count.
 
@@ -281,3 +285,8 @@ Unit4 cumulative-review activation: its ordinary-work projection now also record
 ## Unit11 agreement remediation arrangement — 2026-10-14
 
 The four unchanged agreement cards now precede practice, and remediation restores their full text and the three same-lemma checked forms. Historical `ex-u11-past-aspect-0` and `ex-u11-past-aspect-1` remain packaged but are no longer used by this objective;they add two explicit orphan examples to the four existing ones. Do not delete or bind them solely to reduce the count. This dossier remains research planning only;no qualified review or release approval.
+
+
+## Current positive-existence checkpoint: retained Unit8 absence examples
+
+`ex-u8-availability-2` and `ex-u8-availability-3` remain byte-identical in the catalog with their original provenance. The positive-existence implementation `fe919656bfa2775b5cc2c22f2496d4258343cfea` removes their use in the current Unit8 availability chain. The current total is **8 unbound examples** and **14 unbound check records**: the six previously disclosed examples plus these two historical absence examples. No examples or histories were deleted, rebound to reduce the count, or reclassified as current assessed evidence. Qualified source/rights/language review, the independent comprehensive audit and physical acceptance remain outstanding. Physical Galaxy S26 Ultra acceptance stays last; no release approval.

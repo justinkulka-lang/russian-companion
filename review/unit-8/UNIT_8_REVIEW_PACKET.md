@@ -11,12 +11,12 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: c0a758abc8e0afc103a9987f268848630586d35e
-- Unit content-review SHA-256: 96b3a661d0ad5edd55ed44e2890a88250081275a7881713c9daf37ed94d7f42a
+- Curriculum source commit: fe919656bfa2775b5cc2c22f2496d4258343cfea
+- Unit content-review SHA-256: b4067ca982daa266855b65eeddcf9cce10094c440fbb534ab5a442d79938b317
 - Mapping-package SHA-256: 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1
-- Pack content-review SHA-256: e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4
-- Review-package SHA-256: 9d285d238824e09b1133ef0b0a6c9022374472341c9f9c38796020cd9f67aff3
-- Repository source SHA-256: 86ce7af2eb063d8f15ae960a58c71be50d0c2ea21aab9a2a6804332c0cd1bc97
+- Pack content-review SHA-256: bbd8919abe7d6f4968440b9ee9d60812959ad148c121428644103ad76eee7880
+- Review-package SHA-256: bfd7f63e08d840066654e9874c472bf7fab5c230b68ad8ff35ac202b1658af55
+- Repository source SHA-256: 8502cadc8a068c25eb3fd6292c7d9c04cac86ef71c9da8425225156f0e7ac4ae
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -189,13 +189,13 @@ remediation=u8-st-rem-agreement
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: b2f8519ffa5e2c894cc8fcdfe34b5d93d42eb1659cd025a3d075ae77fac69e98
+- Content hash: 4ab74a29d70b7a32690a78e06b1cfa321f420d11776aea38b1fdbe894e219678
 
-title=Choose between the admitted existence and absence lines
+title=Recognize supplied positive existence statements
 kind=RECOGNITION
 unitNumber=8
 instruction=u8-st-orient,u8-st-teach-availability-1,u8-st-teach-availability-2,u8-st-teach-availability-3
-examples=ex-u8-availability-0,ex-u8-availability-1,ex-u8-availability-2,ex-u8-availability-3
+examples=ex-u8-availability-0,ex-u8-availability-1
 practice=u8-st-guided-availability-1
 checks=u8-i-availability-1,u8-i-availability-2,u8-i-availability-3
 remediation=u8-st-rem-availability
@@ -1170,9 +1170,9 @@ remediationStepId=u8-st-rem-agreement
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e7465435670aef5fe9093d6e135893a5a867dab46807218bf66ed4e35afc48b8
+- Content hash: 9d6fd21d83cedd9e6d3d73b7c4a9b25cb3ef0bf3e43ba021adca266180c3b5a4
 
-title=Choose between the admitted existence and absence lines
+title=Recognize supplied positive existence statements
 estimatedMinutes=12
 objectives=obj-u8-availability
 steps=u8-st-teach-availability-1,u8-st-teach-availability-2,u8-st-teach-availability-3,u8-st-guided-availability-1,u8-st-rem-availability,u8-st-check-availability
@@ -1185,15 +1185,15 @@ steps=u8-st-teach-availability-1,u8-st-teach-availability-2,u8-st-teach-availabi
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 6934acf7760320c7763900e5781db8fea376a63e71808e2392905a82b4c27ee4
+- Content hash: 373db6b455f6b5ceda3ad482928dc145f06a8bf456ca5c7f91fd166e438e7405
 
 kind=TEACH
-title=Presence and the nominative
-body=Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+title=Presence in the supplied street example
+body=На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-u8-availability-0,ex-u8-availability-1
+examples=ex-u8-availability-0
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1207,15 +1207,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 89d55dc8feda5252f424191aeea36b9fc4cc164f101e91f19ad2b66721b264c4
+- Content hash: 89fc4cca0592c40562deeaaa0c6c64b220e3d06c944308218ce25c0c19887e16
 
 kind=TEACH
-title=Absence and the genitive
-body=Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+title=Read the supplied Moscow statement
+body=В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole source line with its own supplied translation.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=
+examples=ex-u8-availability-1
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1229,15 +1229,15 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 73d0d72aa86906e84bbc9eddc8c3d4861f28cc39d9240993e2180c41703ca8bf
+- Content hash: 35784e983a55cb4ef128261b3b6f22ef65c3059a314538e83e0c85c9fad88067
 
 kind=TEACH
-title=Compare the complete examples
-body=Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+title=Identify the noun naming what exists
+body=In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
-examples=ex-u8-availability-2,ex-u8-availability-3
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1251,11 +1251,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 300f5e2c501011813696fb7c370a37b6b2ce6ab56d8f511176b857e1f6aa6bc2
+- Content hash: 21816334f536500795d35981a90d0d4360212ff6e21d26638b78427635d6ff8d
 
 kind=GUIDED
 title=Guided practice
-body=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+body=Read the whole positive statement and choose the requested function, supplied meaning or noun case. A miss returns to all three teaching cards and both worked examples.
 dominantAction=Continue
 references=
 items=u8-g-availability-0
@@ -1273,19 +1273,19 @@ remediationStepId=u8-st-rem-availability
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 54a78b4712e98bbc756781ceb7fd17aa015c25159bd201400e98199ebe8c3105
+- Content hash: a528a6ca325db43e8ed5f8fd8a8bd5c9f5beeac152965aba72a2a5562505cf7e
 
 kind=REMEDIATE
-title=Review the complete constructions
-body=Use the presence construction when the line says that something exists. In these supplied examples, the noun naming what exists is nominative. Read the Russian line and identify whether it states presence. На э́той у́лице есть францу́зы — There are Frenchmen on this street. В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. 
+title=Review the supplied positive statements
+body=На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
 
-Use the absence construction when the line says that something does not exist. In these supplied examples, the absence word is followed by a genitive noun. Presence and absence require different case explanations.
+В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole source line with its own supplied translation.
 
-Compare the positive and negative lines below. For a positive line choose the nominative presence explanation; for a negative line choose the genitive absence explanation. Нет рестора́нов — There are no restaurants. В Москве́ нет ста́рых зда́ний — There are no old buildings in Moscow. 
+In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.
 dominantAction=Continue
 references=
 items=
-examples=ex-u8-availability-0,ex-u8-availability-1,ex-u8-availability-2,ex-u8-availability-3
+examples=ex-u8-availability-0,ex-u8-availability-1
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1299,11 +1299,11 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e3db7d0897d04a152b547d1724a6a1d2f6800163be3a52e5c52334f05d5ec0d8
+- Content hash: 2b03b411995da271c4529d6ec7ca8e2cf388d7c32204809c170712ae557e1ed8
 
 kind=CHECK
 title=Independent checks
-body=Read the whole shown line, then choose the complete case explanation. A missed check returns to all teaching and examples.
+body=Read the whole positive statement and choose the requested function, supplied meaning or noun case. A miss returns to all three teaching cards and both worked examples.
 dominantAction=Continue
 references=
 items=u8-i-availability-1,u8-i-availability-2,u8-i-availability-3
@@ -2140,40 +2140,6 @@ note=There are old buildings in Moscow
 objectiveId=obj-u8-availability
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
-### EXAMPLE `ex-u8-availability-2`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7a7000d9bedef997f960a4c59bc230df81f933deaf0c5dd777ab645985421ce5
-
-kind=LEXICAL
-letterId=
-display=Нет рестора́нов
-note=There are no restaurants
-objectiveId=obj-u8-availability
-reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-
-### EXAMPLE `ex-u8-availability-3`
-
-- Objectives: obj-u8-availability
-- Sessions: u8-s-availability
-- Source: src-wikibooks-russian-cc-by-sa
-- Rights: rights-wikibooks-russian-cc-by-sa
-- Classification: none
-- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 7eddd1b1e1e0cce556f8bc47a78004c5f68994903c0215531aee7eff5223c5b4
-
-kind=LEXICAL
-letterId=
-display=В Москве́ нет ста́рых зда́ний
-note=There are no old buildings in Moscow
-objectiveId=obj-u8-availability
-reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-
 ### GUIDED_PRACTICE `u8-g-plural-0`
 
 - Objectives: obj-u8-plural
@@ -2318,31 +2284,31 @@ relationParticipantIds=prov-ex-or-u8-agreement-4 | prov-ex-or-u8-agreement-5 | p
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 8fc288eaea95aedf85a88559669bd40aee1bf40ea77d071c71c5b88beaa7f1fb
+- Content hash: afcf1bd5a3d5c43b03606a7e7f476e771e85e4641c92f0a9fc77f2f2e52291e0
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which explanation accounts for the noun cases in the shown line?
+prompt=Which function does the shown line have?
 promptLetter=На э́той у́лице есть францу́зы
-options=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
-answer=In this line, the thing that exists is in the nominative case.
-feedback=На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+options=The line states that something exists at the named place. | The line asks where something is.
+answer=The line states that something exists at the named place.
+feedback=The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The other explanation describes absence rather than the presence or simple possession shown here.
-testedFeature=EXISTENCE_ABSENCE
+distractorRationales= | This alternative describes a question, while the supplied line makes a positive statement.
+testedFeature=POSITIVE_EXISTENCE_FUNCTION
 evidenceMode=STATED_APPLICATION
 contrastSetId=u8-availability-0
 cueLanguage=ru
 independent=false
-answerSourceIds=prov-ca-rule-u8-g-availability-0-1
-distractorSourceIds= | prov-ca-rule-u8-g-availability-0-2
-distractorDifference= | The other explanation describes absence rather than the presence or simple possession shown here.
-whyAnswerDemonstratesObjective=На э́той у́лице есть францу́зы expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
-contrastMembers=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
+answerSourceIds=prov-cc012-u8-g-availability-0-1
+distractorSourceIds= | prov-cc012-u8-g-availability-0-2
+distractorDifference= | This alternative describes a question, while the supplied line makes a positive statement.
+whyAnswerDemonstratesObjective=The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
+contrastMembers=The line states that something exists at the named place. | The line asks where something is.
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-ca-rule-u8-g-availability-0-0 | prov-ca-rule-u8-g-availability-0-1 | prov-ca-rule-u8-g-availability-0-2
+relationParticipantIds=prov-cc012-u8-g-availability-0-0 | prov-cc012-u8-g-availability-0-1 | prov-cc012-u8-g-availability-0-2
 
 ### INDEPENDENT_CHECK `u8-i-plural-1`
 
@@ -2897,31 +2863,31 @@ responseKind=RUSSIAN_TOKEN
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 779a32968c2a8980c3633e9213f4cef47c28dc5eb1b4b850e78ce1e4643ff4f7
+- Content hash: 6e93abc781c76e86a119c89bf0b0f72d776fb0619ae0214b30682f9ab63c9c37
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which explanation accounts for the noun cases in the shown line?
-promptLetter=В Москве́ нет ста́рых зда́ний
-options=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
-answer=In this line, the absent thing is in the genitive case.
-feedback=В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+prompt=Which function does the shown line have?
+promptLetter=В Москве́ есть ста́рые зда́ния
+options=The line states that something exists at the named place. | The line asks where something is.
+answer=The line states that something exists at the named place.
+feedback=The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales=The other explanation asserts presence or simple possession rather than the absence shown here. | 
-testedFeature=EXISTENCE_ABSENCE
+distractorRationales= | This alternative describes a question, while the supplied line makes a positive statement.
+testedFeature=POSITIVE_EXISTENCE_FUNCTION
 evidenceMode=STATED_APPLICATION
 contrastSetId=u8-availability-1
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ca-rule-u8-i-availability-1-1
-distractorSourceIds=prov-ca-rule-u8-i-availability-1-2 | 
-distractorDifference=The other explanation asserts presence or simple possession rather than the absence shown here. | 
-whyAnswerDemonstratesObjective=В Москве́ нет ста́рых зда́ний expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
-contrastMembers=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
+answerSourceIds=prov-cc012-u8-i-availability-1-1
+distractorSourceIds= | prov-cc012-u8-i-availability-1-2
+distractorDifference= | This alternative describes a question, while the supplied line makes a positive statement.
+whyAnswerDemonstratesObjective=The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
+contrastMembers=The line states that something exists at the named place. | The line asks where something is.
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-ca-rule-u8-i-availability-1-0 | prov-ca-rule-u8-i-availability-1-1 | prov-ca-rule-u8-i-availability-1-2
+relationParticipantIds=prov-cc012-u8-i-availability-1-0 | prov-cc012-u8-i-availability-1-1 | prov-cc012-u8-i-availability-1-2
 
 ### INDEPENDENT_CHECK `u8-i-availability-2`
 
@@ -2931,31 +2897,31 @@ relationParticipantIds=prov-ca-rule-u8-i-availability-1-0 | prov-ca-rule-u8-i-av
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: 876fe6adf4683dcb875b76f6a722c5a63f97df4e25c31791d35d39c4471fc6da
+- Content hash: a5c2e10a48ddbf9848ba1c24fe5d9142f9115efc660028208fcb6d457695b5c4
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which explanation accounts for the noun cases in the shown line?
-promptLetter=Нет рестора́нов
-options=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
-answer=In this line, the absent thing is in the genitive case.
-feedback=Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
+prompt=Which supplied English meaning matches the whole line?
+promptLetter=На э́той у́лице есть францу́зы
+options=There are Frenchmen on this street | There are old buildings in Moscow
+answer=There are Frenchmen on this street
+feedback=The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales=The other explanation asserts presence or simple possession rather than the absence shown here. | 
-testedFeature=EXISTENCE_ABSENCE
+distractorRationales= | The other supplied meaning concerns old buildings in Moscow rather than Frenchmen on this street.
+testedFeature=POSITIVE_EXISTENCE_MEANING
 evidenceMode=STATED_APPLICATION
 contrastSetId=u8-availability-2
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ca-rule-u8-i-availability-2-1
-distractorSourceIds=prov-ca-rule-u8-i-availability-2-2 | 
-distractorDifference=The other explanation asserts presence or simple possession rather than the absence shown here. | 
-whyAnswerDemonstratesObjective=Нет рестора́нов expresses absence. The noun naming the absent thing is genitive. The presence or simple possession explanation would assert that the thing exists or is possessed, which this line does not assert.
-contrastMembers=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
+answerSourceIds=prov-cc012-u8-i-availability-2-1
+distractorSourceIds= | prov-cc012-u8-i-availability-2-2
+distractorDifference= | The other supplied meaning concerns old buildings in Moscow rather than Frenchmen on this street.
+whyAnswerDemonstratesObjective=The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
+contrastMembers=There are Frenchmen on this street | There are old buildings in Moscow
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-ca-rule-u8-i-availability-2-0 | prov-ca-rule-u8-i-availability-2-1 | prov-ca-rule-u8-i-availability-2-2
+relationParticipantIds=prov-cc012-u8-i-availability-2-0 | prov-cc012-u8-i-availability-2-1 | prov-cc012-u8-i-availability-2-2
 
 ### INDEPENDENT_CHECK `u8-i-availability-3`
 
@@ -2965,31 +2931,31 @@ relationParticipantIds=prov-ca-rule-u8-i-availability-2-0 | prov-ca-rule-u8-i-av
 - Rights: rights-content-audit-research
 - Classification: none
 - Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
-- Content hash: a6c39bc7880ac7b67ad11ce45c04329ed307030ab3f8d8780324447bcbd05d4e
+- Content hash: 39a7c6e545e6f354dfd83d4d31272ee8599e23945a39295773d7b7aa7828fdc7
 
 kind=CONTRAST_SELECTION
 language=en
-prompt=Which explanation accounts for the noun cases in the shown line?
+prompt=Which case names what exists in this supplied positive line?
 promptLetter=В Москве́ есть ста́рые зда́ния
-options=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
-answer=In this line, the thing that exists is in the nominative case.
-feedback=В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
+options=The noun naming what exists is in the nominative case. | The noun naming what exists is in the prepositional case.
+answer=The noun naming what exists is in the nominative case.
+feedback=The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
 objectiveId=obj-u8-availability
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
-distractorRationales= | The other explanation describes absence rather than the presence or simple possession shown here.
-testedFeature=EXISTENCE_ABSENCE
+distractorRationales= | This alternative confuses the location phrase with the noun naming what exists.
+testedFeature=POSITIVE_EXISTENCE_NOMINATIVE
 evidenceMode=STATED_APPLICATION
 contrastSetId=u8-availability-3
 cueLanguage=ru
 independent=true
-answerSourceIds=prov-ca-rule-u8-i-availability-3-1
-distractorSourceIds= | prov-ca-rule-u8-i-availability-3-2
-distractorDifference= | The other explanation describes absence rather than the presence or simple possession shown here.
-whyAnswerDemonstratesObjective=В Москве́ есть ста́рые зда́ния expresses presence. The noun naming what exists is nominative. The genitive absence explanation would describe absence, which this line does not assert.
-contrastMembers=In this line, the thing that exists is in the nominative case. | In this line, the absent thing is in the genitive case.
+answerSourceIds=prov-cc012-u8-i-availability-3-1
+distractorSourceIds= | prov-cc012-u8-i-availability-3-2
+distractorDifference= | This alternative confuses the location phrase with the noun naming what exists.
+whyAnswerDemonstratesObjective=The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
+contrastMembers=The noun naming what exists is in the nominative case. | The noun naming what exists is in the prepositional case.
 relationKind=STATED_APPLICATION
-relationParticipantIds=prov-ca-rule-u8-i-availability-3-0 | prov-ca-rule-u8-i-availability-3-1 | prov-ca-rule-u8-i-availability-3-2
+relationParticipantIds=prov-cc012-u8-i-availability-3-0 | prov-cc012-u8-i-availability-3-1 | prov-cc012-u8-i-availability-3-2
 
 ### REFERENCE `ref-u610-attribution`
 
@@ -7662,6 +7628,1088 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-cc012-check-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cdb141a37dea00916b1d3563e0301348f1b5165daef19f204e0d995ade6f8460
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:check-body
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Read the whole positive statement and choose the requested function, supplied meaning or noun case. A miss returns to all three teaching cards and both worked examples.
+shippedText=Read the whole positive statement and choose the requested function, supplied meaning or noun case. A miss returns to all three teaching cards and both worked examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f37ddb8ff418f4597edd22a46841906699bb1a487b9059a172d9bb0e0a6927d3
+contentHash=3c353ad21f5c229cb6286eb8b7f1c4a11642068ad2d7b75a55eb77d5cedfbcfe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-guided-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94494ee4d4e71acb466cf2194f6bbf406d0392a71c0f2dc1cb3f89aef129531b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:guided-body
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Read the whole positive statement and choose the requested function, supplied meaning or noun case. A miss returns to all three teaching cards and both worked examples.
+shippedText=Read the whole positive statement and choose the requested function, supplied meaning or noun case. A miss returns to all three teaching cards and both worked examples.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f37ddb8ff418f4597edd22a46841906699bb1a487b9059a172d9bb0e0a6927d3
+contentHash=3c353ad21f5c229cb6286eb8b7f1c4a11642068ad2d7b75a55eb77d5cedfbcfe
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-objective-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 540f8de09bbe169622c9922dcbb3e744063f6f8d8a680592f1bccc8744d995e7
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:objective-title
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Recognize supplied positive existence statements
+shippedText=Recognize supplied positive existence statements
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=95edd08b55356c5f1902af0363a484ab50b21d856b3c6c02d253ff35d5619d96
+contentHash=d1bd1480508ffa0b40467c998f5c1b65767ede56d8b6cef851cb8a09af5d825f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-repair-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1fd2321660b0f95ccf923f961bca7e8700ee7a6295f77a2bea45ba01fd54127e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:repair-body
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
+
+В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole source line with its own supplied translation.
+
+In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.
+shippedText=На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
+
+В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole source line with its own supplied translation.
+
+In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0a06a7cf4eb757d5fb9880311046bd2dc3a72a2522719c303584d8ada6e0e7bb
+contentHash=83afc686a02d9c39d09f3e467aa7a8b82d40e0cc6f4c1e768ab581951f320c41
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-repair-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 696aec819805a973854efa7d6f4267805c7d380efce0e28bcc7cc55764c3d831
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:repair-title
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Review the supplied positive statements
+shippedText=Review the supplied positive statements
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=13f0773819892674f68e3cf1728d9cdff2edada640ff53f3d2b88973c26cf526
+contentHash=d68d74c6d339f04d9fff9deeec25c8716375993d103394321a695d05e12c62fa
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-teach-1-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f65bfdb0edc78c98e350df43cf35807ba31deb9b5c6348d58ddc6e210563fb3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:teach-1-body
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
+shippedText=На э́той у́лице есть францу́зы — There are Frenchmen on this street. This positive line states that something exists at the named place. It is a statement, not a question asking where something is. Recognize what exists and where the line places it.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=cf7c8b3ac041c3be04600cad8ef2a41de7916fbfe6ceec36f8a1fda4381ce398
+contentHash=3144c5eb8cb95f8aa6d985afc5e1bbfe70f2d206b25e48d91bf4ffcd7efb232f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-teach-1-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8a6804fac8f305bb21fac70e979d8309d772018cbcfbabf8576876e644dad10d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:teach-1-title
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Presence in the supplied street example
+shippedText=Presence in the supplied street example
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6ad43188a320a9553dd27237583db0b9691ef05119746f274a64ca6c3af37396
+contentHash=e313a10e380116ff9c415b3416cfd32fd911af79b8bbe4223ba61db167b49213
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-teach-2-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 21aca83577090aa4343a75f0d9a6b2e428f8bfaa571f142e0fc07838e1c05e9e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:teach-2-body
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole source line with its own supplied translation.
+shippedText=В Москве́ есть ста́рые зда́ния — There are old buildings in Moscow. This line states that old buildings exist in Moscow. Compare its full meaning with the street example: the things and the named place differ. Keep each whole source line with its own supplied translation.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=022a264c3efd096b231874a6ee95a53218355f12befc050646c08fdcdcdd70f7
+contentHash=1d77d51f9db7838d68cd7d442c03145790bfc642c203bf6f1ddc7bca9ffd090c
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-teach-2-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a756af658d527291b1fbe89190b2b205d0d08c017228b2f7766cdc6d4443362
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:teach-2-title
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Read the supplied Moscow statement
+shippedText=Read the supplied Moscow statement
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b6e5cabeb61194d851df49f8149b322c78ae83374ea170ecbeae5c276dc5cdf3
+contentHash=39b32ade51501eeec2a6e9141c7837f9aba6e285893cc0901052a87a4d113987
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-teach-3-body`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 45844d78ba57c6cb1bf87e43111584c98a1e3698755473e13ec0a7284508cdc6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:teach-3-body
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.
+shippedText=In both supplied positive statements, the noun naming what exists is nominative. Distinguish that noun from the location phrase. The previously introduced prepositional case is not the case of the noun naming what exists here. These two supplied examples do not establish an unrestricted sentence-generation rule.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=e54fcb36f727df11323e2d0d56a26c681fd9f1bc98ceab29e65cd892fdf9a228
+contentHash=859ec13e2764ab22bf90d5577678f00e8f51f87fe90787cf5d0949e60dbfc1ba
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-teach-3-title`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6902385aee30dca0365034324fc0458ea689bc24af626d6c5b9190f5c3945c0c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:teach-3-title
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Identify the noun naming what exists
+shippedText=Identify the noun naming what exists
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2630255decd010a12abb1f8370a0d4b0ca3817960e4c1c5bb87dc12d3bd4a28c
+contentHash=b814e6f29b781e6584b3616e528d3a60f511e0ceeeb0c8d313ca5198939832a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-g-availability-0-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2abb0a995193fc586c0f48e6c0d0680ffc1312c0d867509bef30df7c5cbb8f98
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-g-availability-0:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы57:The line states that something exists at the named place.1;33:The line asks where something is.
+shippedText=На э́той у́лице есть францу́зы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=07d1f7bf3fb2cc4b57286264f39c4a3da3258faa97057b87d9a59fa37cfe0a4b
+contentHash=4ae3c622c2207d1f59d99e080540421c9e7b456ddbcf945f48be5fb0d6f3b8a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-g-availability-0-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 17cc0995314a9989db4c5be1c118b36f3635aaf36ec0cc12d1922af093ca226b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-g-availability-0:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы57:The line states that something exists at the named place.1;33:The line asks where something is.
+shippedText=The line states that something exists at the named place.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=07d1f7bf3fb2cc4b57286264f39c4a3da3258faa97057b87d9a59fa37cfe0a4b
+contentHash=15bbc13bff9d49331e605763538a7d18e36441aa9b82da183cdd1f26a9ffa955
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-g-availability-0-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6f38ac5194210033086da7fb311e15a30eca278a59d5cc95206f670629ca5990
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-g-availability-0:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы57:The line states that something exists at the named place.1;33:The line asks where something is.
+shippedText=The line asks where something is.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=07d1f7bf3fb2cc4b57286264f39c4a3da3258faa97057b87d9a59fa37cfe0a4b
+contentHash=6794816c09c70cfbb6e8877ed02ea6cb6952672871b14ea0c3034bc4b4ed61f1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-g-availability-0-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 05017003991a276fdff3e03dc364076a10ea96ae82cb90f67a15a71d4d04099c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-g-availability-0-feedback
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
+shippedText=The supplied line states that Frenchmen exist on this street; it is a statement, not a location question.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ffe1221f6370690564f877c2bde64597ca67827670ccf8f390681f88a5d8180f
+contentHash=84f04cdb0b7e84efabcca62401ff192e8347f62b04fe576a6df4ff5510ada7f3
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-g-availability-0-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9a2c91ee2325af5b88fbd57f8124518e8ac63ae6498e622a26116ca2fdb3d288
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-g-availability-0-prompt
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Which function does the shown line have?
+shippedText=Which function does the shown line have?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3e5d3fa8e4d56ccc312194fd11ff15eebb41f83683969906baf7eec1869c638a
+contentHash=1d4ced22e0ca2bbf8f1355ba4d67aa4013dd6c7c05b59d2d55ca15f24518d235
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-g-availability-0-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d7fb262f2e545cdbe2d1cbf83264f43427301c938c56b6f0b61f0aa1c74906bb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-g-availability-0-rationale
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+This alternative describes a question, while the supplied line makes a positive statement.
+shippedText=This alternative describes a question, while the supplied line makes a positive statement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=24f01c9cab680b7ec472b2153908feaae6ddfd39c7008b4f08bc25cd019707d8
+contentHash=050c7e667e7d3e3654886171eb049bc5d90df3ebeab6bf7ba8df7e16d258863b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-1-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5573521e9b3af22baa2dffb0097923269eb65515dc550647775ea46ecaab532b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-1:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния57:The line states that something exists at the named place.1;33:The line asks where something is.
+shippedText=В Москве́ есть ста́рые зда́ния
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=85ceb5fd845fd3d6c2803262f1ebbc7a5ea314accc4b257d1a3fff5853896732
+contentHash=9e41adcaeeb7f98bcb13bae6043f4a318fa45445d2eda87b0a519521468140bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-1-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87008d392677954f10d9f2b14957b85848ba12af15ea10c14583a27052842648
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-1:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния57:The line states that something exists at the named place.1;33:The line asks where something is.
+shippedText=The line states that something exists at the named place.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=85ceb5fd845fd3d6c2803262f1ebbc7a5ea314accc4b257d1a3fff5853896732
+contentHash=15bbc13bff9d49331e605763538a7d18e36441aa9b82da183cdd1f26a9ffa955
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-1-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 37d8b5e4732eb76fbc913b7db0295a9c48627b30ffd9920f5bb644739417a872
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-1:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния57:The line states that something exists at the named place.1;33:The line asks where something is.
+shippedText=The line asks where something is.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=85ceb5fd845fd3d6c2803262f1ebbc7a5ea314accc4b257d1a3fff5853896732
+contentHash=6794816c09c70cfbb6e8877ed02ea6cb6952672871b14ea0c3034bc4b4ed61f1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-1-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 9aa4ec0cc29452f3f63db0f663c0290bd207f9decff13f018c8f76b9aaf6a132
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-1-feedback
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
+shippedText=The supplied line states that old buildings exist in Moscow; it is a statement, not a location question.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5aadd75d53ad09b71e6dddcbc5ebefe24e7868a272ddf55788758200d7e79f58
+contentHash=73a1795041ec72afb0d9fea2094ce4858fc3f1206671c275a852eeff9408f7f8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-1-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e30177a18a7512a40b20c90b450f20af440cae79204491929cecffc5453a33b3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-1-prompt
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Which function does the shown line have?
+shippedText=Which function does the shown line have?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=3e5d3fa8e4d56ccc312194fd11ff15eebb41f83683969906baf7eec1869c638a
+contentHash=1d4ced22e0ca2bbf8f1355ba4d67aa4013dd6c7c05b59d2d55ca15f24518d235
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-1-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b2cc8ebeb03d3b0f47665388c9b1c6a6779398c10859035569a109f18207bf7d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-1-rationale
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+This alternative describes a question, while the supplied line makes a positive statement.
+shippedText=This alternative describes a question, while the supplied line makes a positive statement.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=24f01c9cab680b7ec472b2153908feaae6ddfd39c7008b4f08bc25cd019707d8
+contentHash=050c7e667e7d3e3654886171eb049bc5d90df3ebeab6bf7ba8df7e16d258863b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-2-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b6a8c2d12eee1443012645063f78e5918498f63cef7a721062216fbd7ae05b5a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-2:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы34:There are Frenchmen on this street1;33:There are old buildings in Moscow
+shippedText=На э́той у́лице есть францу́зы
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bfcf99be6b0e7228c5ea9607a6de772dc56e75ea8362ce5e101bb99fb3dc5664
+contentHash=4ae3c622c2207d1f59d99e080540421c9e7b456ddbcf945f48be5fb0d6f3b8a1
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-2-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 146fde0b482e666bbde6562d87041f1b48d588000d9e23ac49c46ef283a0131f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-2:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы34:There are Frenchmen on this street1;33:There are old buildings in Moscow
+shippedText=There are Frenchmen on this street
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bfcf99be6b0e7228c5ea9607a6de772dc56e75ea8362ce5e101bb99fb3dc5664
+contentHash=69022a0642801a4d0f1d32ab645e55b4b5559963a2614d2711690d4f78ec7f38
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-2-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ed978c7e35cdb4c63fc8028d1d250a326d5c1254bc2bba3e92ca1af30261408a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-2:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
+Tuple-v1:tuple-v1:1;56:На э́той у́лице есть францу́зы34:There are Frenchmen on this street1;33:There are old buildings in Moscow
+shippedText=There are old buildings in Moscow
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bfcf99be6b0e7228c5ea9607a6de772dc56e75ea8362ce5e101bb99fb3dc5664
+contentHash=d258e0ca47506d48eea3aa5a34cbdad016788ca522f7004e11014e368d675e36
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-2-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e89f2d78d80d1cda1f373d09ec35f6c34213c605a7257e43d901080add2d7da5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-2-feedback
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
+shippedText=The source pairs this line with There are Frenchmen on this street. The other source translation concerns different things in a different place.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=75f492e224252d90af42b89283aafc0746f76cce1e2e01a191a79953bc751a03
+contentHash=19c85c79a9c2ffd0ee98349c33c044f5061254f0f44cb5caa7599671486c8ccc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-2-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f0793260a59be397873ddadc69d3b7d312d38779ed33cc6ac1ed325e8c88192d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-2-prompt
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Which supplied English meaning matches the whole line?
+shippedText=Which supplied English meaning matches the whole line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=72d44c799fbf51948e08fa548121d8f45635b81cd762ad77765df337db815bd9
+contentHash=198764732543ad8b2b267568913885853646243b116cdddb25fc0ec1264df6a2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-2-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cbf3a6b6c4359a78fbac0522a9f57e8443950a2d1058fd9a130202759deaa127
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-2-rationale
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+The other supplied meaning concerns old buildings in Moscow rather than Frenchmen on this street.
+shippedText=The other supplied meaning concerns old buildings in Moscow rather than Frenchmen on this street.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9f362d88f50f4eb66dd0573594e4f926563aacb76b89738c48d2ee95eecdc5eb
+contentHash=d9a4bfef37187218828035e371af86fcf691b29bd41b336f97c74b1b4712740e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-3-0`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0a1f63cbc7c236a778fb7fa6d9f8094ab2bf9e59a8613af072900c9daa1e8103
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-3:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния54:The noun naming what exists is in the nominative case.1;57:The noun naming what exists is in the prepositional case.
+shippedText=В Москве́ есть ста́рые зда́ния
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f40fc9faaa639adf3f28daa857d4cab7ad324232d3ab97f8c8153d8616765685
+contentHash=9e41adcaeeb7f98bcb13bae6043f4a318fa45445d2eda87b0a519521468140bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-3-1`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7c4242672e05492dae9d4776f359d5ef5280569e5a61bb5b4dd0de94a4e14f84
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-3:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния54:The noun naming what exists is in the nominative case.1;57:The noun naming what exists is in the prepositional case.
+shippedText=The noun naming what exists is in the nominative case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f40fc9faaa639adf3f28daa857d4cab7ad324232d3ab97f8c8153d8616765685
+contentHash=4577aeba551e9505fc604f1bd293b13f8798e69f12c8de7c5658ea70c63001f7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-3-2`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c8182534be1bb6a80f8c60f30e82d003d4088f11db108eb16590e3b60e6442bb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-rule-context:u8-i-availability-3:existence-v1
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Context explanation:
+The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
+Tuple-v1:tuple-v1:1;56:В Москве́ есть ста́рые зда́ния54:The noun naming what exists is in the nominative case.1;57:The noun naming what exists is in the prepositional case.
+shippedText=The noun naming what exists is in the prepositional case.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f40fc9faaa639adf3f28daa857d4cab7ad324232d3ab97f8c8153d8616765685
+contentHash=6d2d9ece8439c3bd93649b280e21de596665829a47234efb73a4b85083802b14
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-3-feedback`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 204cd848f2de4dd972e2fbd9340932583579adb1e93ef1e20d4e0d2b47ba7b99
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-3-feedback
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
+shippedText=The noun naming the old buildings is nominative in this positive existence statement. The location phrase is a separate part of the line.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=06dc4edca73b43d1b0dc9763a561b5f2880271884c88c77927c505011fef731f
+contentHash=8e033c833619a8ee3de065ab5c60fe343230f76ffd132f76627cfb09d08a881d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-3-prompt`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 89f9fe373e5123d1f8b69f8efc710be1696650df955335fe8cafb1e6e8a86d35
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-3-prompt
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+Which case names what exists in this supplied positive line?
+shippedText=Which case names what exists in this supplied positive line?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1416e859444a94247b63fb59fec7b8ab9af4164187db4e4aab00176f78088a18
+contentHash=5cf81d3515e6e3ce819fd1324e4460f5ffc81b67f8641baa2cf2c57c90cae054
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc012-u8-i-availability-3-rationale`
+
+- Objectives: obj-u8-availability
+- Sessions: u8-s-orient, u8-s-availability
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 84593f3a8adcedb69ab7e80e433d9b170c0230497b82d504b246949284a2160b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u8-availability:cc012:u8-i-availability-3-rationale
+originalSourceText=Complete retained Wikibooks Russian/Grammar/Genitive oldid4567338, https://en.wikibooks.org/wiki/Russian/Grammar/Genitive?oldid=4567338, positive existence subsection: the existence word can state there is/are and the noun naming what exists is nominative. Use only the two separately admitted positive Unit8 native examples and their exact existing source translations. The prepositional case has already been introduced inUnit5; it is not the case of the noun naming what exists in these examples. Independent English explanation/contrast on2026-10-19 within content-audit-2026-10-08. No private-book text, new Russian/stress/phrase or generated native application. Original licensed native evidence retains its attribution. Qualified source/linguistic/rights review remains pending.
+This alternative confuses the location phrase with the noun naming what exists.
+shippedText=This alternative confuses the location phrase with the noun naming what exists.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b9bb5fe5215068c7ffdc156a93eadc3e96e3758efb61273099dff7587bda6711
+contentHash=568e2c766bca2b0341f42094e0ca16720facaa1798976715c35ba711b5a247a0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-or-u8-agreement-2`
 
 - Objectives: obj-u8-agreement
@@ -11497,8 +12545,6 @@ permitsAppUse=true
 - `obj-u8-availability` INSTRUCTION `u8-st-teach-availability-3`
 - `obj-u8-availability` EXAMPLE `ex-u8-availability-0`
 - `obj-u8-availability` EXAMPLE `ex-u8-availability-1`
-- `obj-u8-availability` EXAMPLE `ex-u8-availability-2`
-- `obj-u8-availability` EXAMPLE `ex-u8-availability-3`
 - `obj-u8-availability` PRACTICE `u8-st-guided-availability-1`
 - `obj-u8-availability` CHECK `u8-i-availability-1`
 - `obj-u8-availability` CHECK `u8-i-availability-2`
@@ -11642,18 +12688,14 @@ permitsAppUse=true
 - `u8-st-check-agreement` ITEM `u8-i-agreement-3`
 - `u8-s-availability` OBJECTIVE `obj-u8-availability`
 - `u8-st-teach-availability-1` EXAMPLE `ex-u8-availability-0`
-- `u8-st-teach-availability-1` EXAMPLE `ex-u8-availability-1`
 - `u8-st-teach-availability-1` REFERENCE `ref-u610-attribution`
+- `u8-st-teach-availability-2` EXAMPLE `ex-u8-availability-1`
 - `u8-st-teach-availability-2` REFERENCE `ref-u610-attribution`
-- `u8-st-teach-availability-3` EXAMPLE `ex-u8-availability-2`
-- `u8-st-teach-availability-3` EXAMPLE `ex-u8-availability-3`
 - `u8-st-teach-availability-3` REFERENCE `ref-u610-attribution`
 - `u8-st-guided-availability-1` REMEDIATION `u8-st-rem-availability`
 - `u8-st-guided-availability-1` ITEM `u8-g-availability-0`
 - `u8-st-rem-availability` EXAMPLE `ex-u8-availability-0`
 - `u8-st-rem-availability` EXAMPLE `ex-u8-availability-1`
-- `u8-st-rem-availability` EXAMPLE `ex-u8-availability-2`
-- `u8-st-rem-availability` EXAMPLE `ex-u8-availability-3`
 - `u8-st-check-availability` REMEDIATION `u8-st-rem-availability`
 - `u8-st-check-availability` ITEM `u8-i-availability-1`
 - `u8-st-check-availability` ITEM `u8-i-availability-2`
@@ -11811,6 +12853,41 @@ permitsAppUse=true
 - `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-4-title`
 - `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-5-body`
 - `obj-u8-spelling` PROVENANCE `prov-ca-u8-worked-teach-5-title`
+- `obj-u8-availability` PROVENANCE `prov-cc012-check-body`
+- `obj-u8-availability` PROVENANCE `prov-cc012-guided-body`
+- `obj-u8-availability` PROVENANCE `prov-cc012-objective-title`
+- `obj-u8-availability` PROVENANCE `prov-cc012-repair-body`
+- `obj-u8-availability` PROVENANCE `prov-cc012-repair-title`
+- `obj-u8-availability` PROVENANCE `prov-cc012-teach-1-body`
+- `obj-u8-availability` PROVENANCE `prov-cc012-teach-1-title`
+- `obj-u8-availability` PROVENANCE `prov-cc012-teach-2-body`
+- `obj-u8-availability` PROVENANCE `prov-cc012-teach-2-title`
+- `obj-u8-availability` PROVENANCE `prov-cc012-teach-3-body`
+- `obj-u8-availability` PROVENANCE `prov-cc012-teach-3-title`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-g-availability-0-0`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-g-availability-0-1`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-g-availability-0-2`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-g-availability-0-feedback`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-g-availability-0-prompt`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-g-availability-0-rationale`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-1-0`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-1-1`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-1-2`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-1-feedback`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-1-prompt`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-1-rationale`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-2-0`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-2-1`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-2-2`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-2-feedback`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-2-prompt`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-2-rationale`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-3-0`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-3-1`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-3-2`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-3-feedback`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-3-prompt`
+- `obj-u8-availability` PROVENANCE `prov-cc012-u8-i-availability-3-rationale`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-2`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-2-gloss`
 - `obj-u8-agreement` PROVENANCE `prov-ex-or-u8-agreement-3`

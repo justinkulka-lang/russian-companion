@@ -11,12 +11,12 @@ Unit 10 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 4ceb59d48b54471ba845664f19c9a605f6e70567
-- Unit content-review SHA-256: 3ae5a3b41bc970ef43589ace5929e65818fa620c8660f0bd1c4de5275667cf84
+- Curriculum source commit: 7efff9e18328c612de235236d98e834bb85cd1db
+- Unit content-review SHA-256: f2f1e172ee2d75267c30adaa8020d039cd4aaa913e06831582c3fc591ddbccd0
 - Mapping-package SHA-256: 57676882eb615fb046a9a5e2429f1d97bf6fcf54010d7ae287cdfc456bcfca52
-- Pack content-review SHA-256: e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4
-- Review-package SHA-256: d3a56eb9f9ac6dc7a7c3dabd55ee79152bcfef83aa5b4d44405a91de69eaa678
-- Repository source SHA-256: 86ce7af2eb063d8f15ae960a58c71be50d0c2ea21aab9a2a6804332c0cd1bc97
+- Pack content-review SHA-256: bbd8919abe7d6f4968440b9ee9d60812959ad148c121428644103ad76eee7880
+- Review-package SHA-256: f66fb7b60ccc969d6334a364a64c2139295dc73bf2f13a634e77b1b5e21b093d
+- Repository source SHA-256: 8502cadc8a068c25eb3fd6292c7d9c04cac86ef71c9da8425225156f0e7ac4ae
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -1487,11 +1487,11 @@ steps=u10-st-teach-animate-1,u10-st-guided-animate-1,u10-st-teach-animate-2,u10-
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e283a3767e043d176451df8e581a9d7a3b0e07fb16434b7f93bb98fa54f59196
+- Content hash: 292e0b04c431c820eac2444f745d6f5786b7e2deb658f1827a712d64420c0a87
 
 kind=TEACH
 title=Admitted lines
-body=этих женщин — I like these women. Эти женщины — These women like me. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.
+body=этих женщин means these women: an accusative or genitive plural phrase. In the source object example it is accusative; the displayed phrase alone does not state a complete action or identify a speaker. Эти женщины means these women in the nominative plural. It is the subject phrase in the other source example; the display contains no predicate or object. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence. This explanation remains review-pending. Guided work and independent checks are separate; activity is not demonstrated ability.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1531,11 +1531,11 @@ remediationStepId=u10-st-rem-animate
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e0802414f9d2c1ed0e6a8b4e737151f24fd8947b81c4b3901c53efb795ef27a5
+- Content hash: ccf33e4dfa0a87c2ae44f86e3cc3a98573d091c262c7ae18282a805ede602ca9
 
 kind=TEACH
 title=Admitted instruction
-body=I like these women.
+body=A complete source example can establish which phrase is the subject or object, but only the noun phrases are displayed here. For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the source example. Full sentence meanings belong to that source context, not to either isolated phrase. The short dictionary glosses on later cards name the entry meaning, not the number or case of a displayed inflected form. These choices practise recognition of the supplied pair; they do not supply unseen sentence production.
 dominantAction=Continue
 references=ref-u610-attribution
 items=
@@ -1619,15 +1619,23 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: cec124891d649f1a39283af91a8aff61f5702501937ba2723e68ac9419abf9b2
+- Content hash: 387c07293140f38d76f38b6ef0b90cbb2f887292a93074d413838014e3fa8a5f
 
 kind=REMEDIATE
 title=Remediation
-body=I like these women.
+body=этих женщин means these women: an accusative or genitive plural phrase. In the source object example it is accusative; the displayed phrase alone does not state a complete action or identify a speaker. Эти женщины means these women in the nominative plural. It is the subject phrase in the other source example; the display contains no predicate or object. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence. This explanation remains review-pending. Guided work and independent checks are separate; activity is not demonstrated ability.
+
+A complete source example can establish which phrase is the subject or object, but only the noun phrases are displayed here. For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the source example. Full sentence meanings belong to that source context, not to either isolated phrase. The short dictionary glosses on later cards name the entry meaning, not the number or case of a displayed inflected form. These choices practise recognition of the supplied pair; they do not supply unseen sentence production.
+
+же́нщин — woman. же́нщины — woman. 
+
+бра́тья — brother. бра́тьев — brother. 
+
+друзе́й — friend. 
 dominantAction=Continue
 references=
 items=
-examples=ex-u10-animate-0,ex-u10-animate-1
+examples=ex-u10-animate-0,ex-u10-animate-1,ex-or-u10-animate-2,ex-or-u10-animate-3,ex-or-u10-animate-4,ex-or-u10-animate-5,ex-or-u10-animate-6
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -8015,6 +8023,112 @@ reviewerQualification=
 reviewDate=
 reviewedDigest=
 
+### PROVENANCE `prov-cc016-u10-st-rem-animate`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2a90beef4ceec67a1aef5699e1c7429d80c3103398e7b7250f5d0f080fff6618
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:cc016:u10-st-rem-animate
+originalSourceText=Retained complete Wikibooks Russian/Grammar/Accusative_case oldid4330404, including the original subject/object examples and animate plural case relation; Russian/Grammar/Adjectives oldid4292379 for the unchanged complete cat/dog and rabbit lines and agreement context. Existing Unit7/10 native fragments and corrected example notes retain their separate original provenance and CC BY-SA4.0 attribution. Independently authored English explanation and arrangement on2026-10-19, under governed research-source version2026-10-08. No expanded native clause, new Russian, stress, private Penguin prose or new native application. Qualified source/linguistic/rights review remains pending. Full source sentence meanings must not be assigned to isolated fragments.
+этих женщин means these women: an accusative or genitive plural phrase. In the source object example it is accusative; the displayed phrase alone does not state a complete action or identify a speaker. Эти женщины means these women in the nominative plural. It is the subject phrase in the other source example; the display contains no predicate or object. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence. This explanation remains review-pending. Guided work and independent checks are separate; activity is not demonstrated ability.
+
+A complete source example can establish which phrase is the subject or object, but only the noun phrases are displayed here. For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the source example. Full sentence meanings belong to that source context, not to either isolated phrase. The short dictionary glosses on later cards name the entry meaning, not the number or case of a displayed inflected form. These choices practise recognition of the supplied pair; they do not supply unseen sentence production.
+
+же́нщин — woman. же́нщины — woman. 
+
+бра́тья — brother. бра́тьев — brother. 
+
+друзе́й — friend. 
+shippedText=этих женщин means these women: an accusative or genitive plural phrase. In the source object example it is accusative; the displayed phrase alone does not state a complete action or identify a speaker. Эти женщины means these women in the nominative plural. It is the subject phrase in the other source example; the display contains no predicate or object. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence. This explanation remains review-pending. Guided work and independent checks are separate; activity is not demonstrated ability.
+
+A complete source example can establish which phrase is the subject or object, but only the noun phrases are displayed here. For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the source example. Full sentence meanings belong to that source context, not to either isolated phrase. The short dictionary glosses on later cards name the entry meaning, not the number or case of a displayed inflected form. These choices practise recognition of the supplied pair; they do not supply unseen sentence production.
+
+же́нщин — woman. же́нщины — woman. 
+
+бра́тья — brother. бра́тьев — brother. 
+
+друзе́й — friend. 
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=53039af702bd8f3b6a508fcaeb980e0bed291037108756c7209517b0d154c0cb
+contentHash=4e5c2b0b0258d7bedefad2f1c418d2eaf1f3bdbab71a09ba4f641bc2249e8e2a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc016-u10-st-teach-animate-1`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2e5b3f3bc7224547b5706ded80798eff8364a0b2bb22a5b752b3e0c3a9416f9d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:cc016:u10-st-teach-animate-1
+originalSourceText=Retained complete Wikibooks Russian/Grammar/Accusative_case oldid4330404, including the original subject/object examples and animate plural case relation; Russian/Grammar/Adjectives oldid4292379 for the unchanged complete cat/dog and rabbit lines and agreement context. Existing Unit7/10 native fragments and corrected example notes retain their separate original provenance and CC BY-SA4.0 attribution. Independently authored English explanation and arrangement on2026-10-19, under governed research-source version2026-10-08. No expanded native clause, new Russian, stress, private Penguin prose or new native application. Qualified source/linguistic/rights review remains pending. Full source sentence meanings must not be assigned to isolated fragments.
+этих женщин means these women: an accusative or genitive plural phrase. In the source object example it is accusative; the displayed phrase alone does not state a complete action or identify a speaker. Эти женщины means these women in the nominative plural. It is the subject phrase in the other source example; the display contains no predicate or object. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence. This explanation remains review-pending. Guided work and independent checks are separate; activity is not demonstrated ability.
+shippedText=этих женщин means these women: an accusative or genitive plural phrase. In the source object example it is accusative; the displayed phrase alone does not state a complete action or identify a speaker. Эти женщины means these women in the nominative plural. It is the subject phrase in the other source example; the display contains no predicate or object. Compare the supplied forms and their case roles, rather than translating either phrase as a whole sentence. This explanation remains review-pending. Guided work and independent checks are separate; activity is not demonstrated ability.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bc67699169fcb4903f85e8e5827da2181b40d8a3a60af07de63964c1dc6fee22
+contentHash=ed8526ac7f470683665db8c841469af4fd70f13adb76313a2d0e189162cc22ed
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc016-u10-st-teach-animate-2`
+
+- Objectives: obj-u10-animate
+- Sessions: u10-s-orient, u10-s-animate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: ffc69b74bdfa9de29801efa5964ff62ca5387893e21c2038c57a71b614a7276e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u10-animate:cc016:u10-st-teach-animate-2
+originalSourceText=Retained complete Wikibooks Russian/Grammar/Accusative_case oldid4330404, including the original subject/object examples and animate plural case relation; Russian/Grammar/Adjectives oldid4292379 for the unchanged complete cat/dog and rabbit lines and agreement context. Existing Unit7/10 native fragments and corrected example notes retain their separate original provenance and CC BY-SA4.0 attribution. Independently authored English explanation and arrangement on2026-10-19, under governed research-source version2026-10-08. No expanded native clause, new Russian, stress, private Penguin prose or new native application. Qualified source/linguistic/rights review remains pending. Full source sentence meanings must not be assigned to isolated fragments.
+A complete source example can establish which phrase is the subject or object, but only the noun phrases are displayed here. For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the source example. Full sentence meanings belong to that source context, not to either isolated phrase. The short dictionary glosses on later cards name the entry meaning, not the number or case of a displayed inflected form. These choices practise recognition of the supplied pair; they do not supply unseen sentence production.
+shippedText=A complete source example can establish which phrase is the subject or object, but only the noun phrases are displayed here. For these supplied animate plural forms, the accusative object form matches the genitive plural form. The nominative phrase names the subject in the source example. Full sentence meanings belong to that source context, not to either isolated phrase. The short dictionary glosses on later cards name the entry meaning, not the number or case of a displayed inflected form. These choices practise recognition of the supplied pair; they do not supply unseen sentence production.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d60e024e343a35c43e93f1663ed84ab225d91de58698183918654720160ff092
+contentHash=88d397778aac2c52389d191750cb752c0cd48bd45856ef571baf8001868f8886
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
 ### PROVENANCE `prov-ex-or-u10-adjective-3`
 
 - Objectives: obj-u10-adjective
@@ -14127,6 +14241,11 @@ permitsAppUse=true
 - `u10-st-teach-animate-5` REFERENCE `ref-u610-attribution`
 - `u10-st-rem-animate` EXAMPLE `ex-u10-animate-0`
 - `u10-st-rem-animate` EXAMPLE `ex-u10-animate-1`
+- `u10-st-rem-animate` EXAMPLE `ex-or-u10-animate-2`
+- `u10-st-rem-animate` EXAMPLE `ex-or-u10-animate-3`
+- `u10-st-rem-animate` EXAMPLE `ex-or-u10-animate-4`
+- `u10-st-rem-animate` EXAMPLE `ex-or-u10-animate-5`
+- `u10-st-rem-animate` EXAMPLE `ex-or-u10-animate-6`
 - `u10-st-check-animate` REMEDIATION `u10-st-rem-animate`
 - `u10-st-check-animate` ITEM `u10-i-animate-1`
 - `u10-st-check-animate` ITEM `u10-i-animate-2`
@@ -14268,6 +14387,9 @@ permitsAppUse=true
 - `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-3-distractor-1`
 - `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-4`
 - `obj-u10-pronoun` PROVENANCE `prov-ca-u10-feedback-u10-i-pronoun-4-distractor-1`
+- `obj-u10-animate` PROVENANCE `prov-cc016-u10-st-rem-animate`
+- `obj-u10-animate` PROVENANCE `prov-cc016-u10-st-teach-animate-1`
+- `obj-u10-animate` PROVENANCE `prov-cc016-u10-st-teach-animate-2`
 - `obj-u10-adjective` PROVENANCE `prov-ex-or-u10-adjective-3`
 - `obj-u10-adjective` PROVENANCE `prov-ex-or-u10-adjective-3-gloss`
 - `obj-u10-adjective` PROVENANCE `prov-ex-or-u10-adjective-4`

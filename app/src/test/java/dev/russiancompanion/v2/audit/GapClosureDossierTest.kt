@@ -1,5 +1,6 @@
 package dev.russiancompanion.v2.audit
 
+import dev.russiancompanion.v2.RecordedIntakeCorrectionScope
 import dev.russiancompanion.release.computeReleaseSourceDigest
 import dev.russiancompanion.release.readAcceptanceCandidate
 import dev.russiancompanion.v2.curriculum.V2Validator
@@ -42,7 +43,14 @@ class GapClosureDossierTest {
         assertEquals("PROPOSED_NOT_ACTIVATED", model.varianceProposalStatus)
         assertEquals("PROPOSED_NOT_ACTIVATED", model.varianceResolutionStatus)
         assertEquals("UNEXECUTED", model.at031)
-        assertEquals("ex-u11-past-aspect-0, ex-u11-past-aspect-1, ex-u30-letter-names-0, ex-u30-letter-names-1, ex-u4-verb-знать, ex-u4-verb-работать", model.orphanedExampleIds)
+        val beforeAvailability = RecordedIntakeCorrectionScope.load(root, "2c455b96dde9abd1fc8e2b5350df161216cf7e31")
+        val historicalModel = reconcileCurriculumReadiness(root, beforeAvailability)
+        assertEquals("ex-u11-past-aspect-0, ex-u11-past-aspect-1, ex-u30-letter-names-0, ex-u30-letter-names-1, ex-u4-verb-знать, ex-u4-verb-работать", historicalModel.orphanedExampleIds)
+        val availabilitySource = RecordedIntakeCorrectionScope.load(root, "fe919656bfa2775b5cc2c22f2496d4258343cfea")
+        RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, availabilitySource, 8)
+        assertEquals(beforeAvailability.examples, pack.examples)
+        assertEquals((historicalModel.orphanedExampleIds.split(", ") +
+            listOf("ex-u8-availability-2", "ex-u8-availability-3")).sorted().joinToString(", "), model.orphanedExampleIds)
         assertTrue(text.contains("**${model.orphanedExampleRecords} unbound examples**"))
         assertTrue(text.contains("**${model.orphanedCheckItems} unbound check records**"))
         assertTrue(text.contains("Units 3–30 also require the assigned earlier-objective review."))

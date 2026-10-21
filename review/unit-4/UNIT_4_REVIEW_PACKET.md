@@ -11,12 +11,12 @@ Unit 4 remains in development. Its readiness is content-complete and review-pend
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: a1e8f319b0b55f8e1dbcced680c34f32d240d217
-- Unit content-review SHA-256: 1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11
+- Curriculum source commit: e6db0bdfe0bbb40edf190623e2123014946f305b
+- Unit content-review SHA-256: c440d047f575da49ba463f026f0f66ebb7f953f38cccecc30b824add2396d395
 - Mapping-package SHA-256: 889c15ed7bf5d3189af391210f35bae5c57a9fd9c9dc3b3a439e8ebc1143b6fd
-- Pack content-review SHA-256: e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4
-- Review-package SHA-256: 8494a75026860015f3f250707e15f0c61c1b2fb3b3fb64cd03d5b75c425a4ca5
-- Repository source SHA-256: 86ce7af2eb063d8f15ae960a58c71be50d0c2ea21aab9a2a6804332c0cd1bc97
+- Pack content-review SHA-256: bbd8919abe7d6f4968440b9ee9d60812959ad148c121428644103ad76eee7880
+- Review-package SHA-256: 52acf038bf862fed370d6e22c2a3de7783eaa18af2a310ee123c16fefeeafb73
+- Repository source SHA-256: 8502cadc8a068c25eb3fd6292c7d9c04cac86ef71c9da8425225156f0e7ac4ae
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -132,14 +132,14 @@ remediation=u4-st-rem-pronouns
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: a45ffc99673943001bcfce2f2ced11552d8a483bb3ec9c9f1d341bbdf62a9651
+- Content hash: a0b48aa2057b8d3a04d33bd43584d2f44a06ba32a37efc99733304da82760451
 
 title=Recognize admitted present-tense forms
 kind=RECOGNITION
 unitNumber=4
-instruction=u4-st-orient,u4-st-teach-present-1,u4-st-teach-present-2,u4-st-teach-present-3,u4-st-teach-present-4,u4-st-teach-present-5,u4-st-teach-present-6,u4-st-teach-present-7
-examples=ex-u4-verb-читать,ex-u4-verb-делать
-practice=u4-st-guided-present-2,u4-st-guided-present-4
+instruction=u4-st-orient,u4-st-teach-present-1,u4-st-teach-present-2,u4-st-teach-present-3,u4-st-teach-present-4,u4-st-teach-present-5,u4-st-teach-present-6,u4-st-teach-present-7,u4-st-teach-present-говорить,u4-st-teach-present-видеть,u4-st-teach-present-писать,u4-st-teach-present-идти
+examples=ex-u4-verb-читать,ex-u4-verb-делать,ex-u4-present-говорить-мы,ex-u4-present-видеть-он,ex-u4-present-писать-вы,ex-u4-present-идти-они
+practice=u4-st-guided-present-2,u4-st-guided-present-4,u4-st-guided-present-говорить,u4-st-guided-present-видеть,u4-st-guided-present-писать,u4-st-guided-present-идти
 checks=u4-i-verb-говорить-мы,u4-i-verb-видеть-он,u4-i-verb-писать-вы,u4-i-verb-идти-они
 remediation=u4-st-rem-present
 
@@ -411,12 +411,12 @@ remediationStepId=u4-st-rem-pronouns
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: e74668a5006c12f8d308fe4f5d243a467c7bcfe8679a5995ca347614f44befc8
+- Content hash: 282570c77cbff99c79c1c1df417d105c14ab9e1d56f7103deb301413fdb69f89
 
 title=Recognize admitted present-tense forms
 estimatedMinutes=12
 objectives=obj-u4-present
-steps=u4-st-teach-present-1,u4-st-teach-present-2,u4-st-guided-present-2,u4-st-teach-present-3,u4-st-teach-present-4,u4-st-guided-present-4,u4-st-teach-present-5,u4-st-teach-present-6,u4-st-teach-present-7,u4-st-rem-present,u4-st-check-present
+steps=u4-st-teach-present-1,u4-st-teach-present-2,u4-st-guided-present-2,u4-st-teach-present-3,u4-st-teach-present-4,u4-st-guided-present-4,u4-st-teach-present-5,u4-st-teach-present-6,u4-st-teach-present-7,u4-st-teach-present-говорить,u4-st-teach-present-видеть,u4-st-teach-present-писать,u4-st-teach-present-идти,u4-st-guided-present-говорить,u4-st-guided-present-видеть,u4-st-guided-present-писать,u4-st-guided-present-идти,u4-st-rem-present,u4-st-check-present
 
 ### STEP `u4-st-teach-present-1`
 
@@ -616,6 +616,182 @@ bookDirection=
 companionDirection=
 remediationStepId=
 
+### STEP `u4-st-teach-present-говорить`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: e87e56651c7783f5a58e307a9d7882cce313a973efdd34f3af3eac9617da7e92
+
+kind=TEACH
+title=Match we in the supplied speaking forms
+body=The infinitive говори́ть names this entry. Match each supplied present form to its person: I: говорю́; you (one familiar person): говори́шь; he: говори́т; we: говори́м. When the check requests we, choose говори́м. Compare the written endings in these supplied forms; do not substitute the endings from the earlier reading example. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+dominantAction=Continue
+references=ref-u35-attribution
+items=
+examples=ex-u4-present-говорить-мы
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u4-st-teach-present-видеть`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: bee14dbd9a0cc0cc4c9f0a1e4b5a41fcdbf162fac7df465d30958ddc698c9b50
+
+kind=TEACH
+title=Match he in the supplied seeing forms
+body=The infinitive ви́деть names this entry. Match each supplied present form to its person: I: ви́жу; you (one familiar person): ви́дишь; he: ви́дит; we: ви́дим. When the check requests he, choose ви́дит. The infinitive alone does not tell you which supplied form to choose. Notice that the I form differs from the other forms here; learn the whole supplied forms. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+dominantAction=Continue
+references=ref-u35-attribution
+items=
+examples=ex-u4-present-видеть-он
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u4-st-teach-present-писать`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 91f7351258223a341896cc5fe5b93b3759469e5da173c5d0460aed61382d0779
+
+kind=TEACH
+title=Match you (plural) in the supplied writing forms
+body=The infinitive писа́ть names this entry. Match each supplied present form to its person: I: пишу́; you (one familiar person): пи́шешь; he: пи́шет; you (plural): пи́шете. When the check requests you (plural), choose пи́шете. The supplied present forms have a different written stem from the infinitive. Keep the written stress exactly as shown; do not append an ending to the whole infinitive. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+dominantAction=Continue
+references=ref-u35-attribution
+items=
+examples=ex-u4-present-писать-вы
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u4-st-teach-present-идти`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 5ca40052b98c65bb846ab101bb0127eecb7801f64e5be8e9ff40d84d00f1863e
+
+kind=TEACH
+title=Match they in the supplied going forms
+body=The infinitive идти́ names this entry. Match each supplied present form to its person: I: иду́; you (one familiar person): идёшь; he: идёт; they: иду́т. When the check requests they, choose иду́т. The supplied finite forms differ from the infinitive. Learn these whole forms; this card does not teach how to choose between motion verbs in context. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+dominantAction=Continue
+references=ref-u35-attribution
+items=
+examples=ex-u4-present-идти-они
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u4-st-guided-present-говорить`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 198c8cfbeac5c94d38db718042159e42f69cf9d2cfd91b945b68c1989efb851e
+
+kind=GUIDED
+title=Practise I before the independent we check
+body=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+dominantAction=Continue
+references=
+items=u4-g-present-говорить-я
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u4-st-rem-present
+
+### STEP `u4-st-guided-present-видеть`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 09937345805c0cfaa242c504699f4bc1f1d700a73df20bbb036bdff6916a6f96
+
+kind=GUIDED
+title=Practise I before the independent he check
+body=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+dominantAction=Continue
+references=
+items=u4-g-present-видеть-я
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u4-st-rem-present
+
+### STEP `u4-st-guided-present-писать`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 43185b313d807c94c76d823a886dff871966727834b623064d804b97b923b0ff
+
+kind=GUIDED
+title=Practise I before the independent you (plural) check
+body=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+dominantAction=Continue
+references=
+items=u4-g-present-писать-я
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u4-st-rem-present
+
+### STEP `u4-st-guided-present-идти`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 47708436122c82cde5676cee0498cda4fa9e356f223c6f008b0602bbc2f06e4f
+
+kind=GUIDED
+title=Practise I before the independent they check
+body=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+dominantAction=Continue
+references=
+items=u4-g-present-идти-я
+examples=
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=u4-st-rem-present
+
 ### STEP `u4-st-rem-present`
 
 - Objectives: obj-u4-present
@@ -624,15 +800,35 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: bf53fd0beac00659da47faffd058bf0b9e9de45288b63c088cdabe7e7904341b
+- Content hash: 55cb693153a4506e7185f8e44226a620a2e42bd37aa8457eb71035e06d3b4e16
 
 kind=REMEDIATE
 title=Remediation
-body=Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.
+body=The frozen page says: So, to form the present tense, you simply take the ''imperfective aspect'' of the verb and add the appropriate endings.
+
+These fields are copied from the admitted чита́ть row. Row glossed I: чита́ю. Row glossed you: чита́ешь. Row glossed he: чита́ет. 
+
+These fields are copied from the admitted чита́ть row. Row glossed we: чита́ем. Row glossed you (plural): чита́ете. Row glossed they: чита́ют. 
+
+де́лать — make. The admitted row records де́лаю for the row glossed I.
+
+These infinitives are copied from admitted rows. знать — know. рабо́тать — work. понима́ть — understand. слу́шать — listen. 
+
+These infinitives are copied from admitted rows. жить — live. говори́ть — to speak. ви́деть — see. смотре́ть — look. 
+
+These infinitives are copied from admitted rows. писа́ть — write. идти́ — go. 
+
+The infinitive говори́ть names this entry. Match each supplied present form to its person: I: говорю́; you (one familiar person): говори́шь; he: говори́т; we: говори́м. When the check requests we, choose говори́м. Compare the written endings in these supplied forms; do not substitute the endings from the earlier reading example. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive ви́деть names this entry. Match each supplied present form to its person: I: ви́жу; you (one familiar person): ви́дишь; he: ви́дит; we: ви́дим. When the check requests he, choose ви́дит. The infinitive alone does not tell you which supplied form to choose. Notice that the I form differs from the other forms here; learn the whole supplied forms. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive писа́ть names this entry. Match each supplied present form to its person: I: пишу́; you (one familiar person): пи́шешь; he: пи́шет; you (plural): пи́шете. When the check requests you (plural), choose пи́шете. The supplied present forms have a different written stem from the infinitive. Keep the written stress exactly as shown; do not append an ending to the whole infinitive. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive идти́ names this entry. Match each supplied present form to its person: I: иду́; you (one familiar person): идёшь; he: идёт; they: иду́т. When the check requests they, choose иду́т. The supplied finite forms differ from the infinitive. Learn these whole forms; this card does not teach how to choose between motion verbs in context. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
 dominantAction=Continue
 references=
 items=
-examples=ex-u4-verb-читать,ex-u4-verb-делать
+examples=ex-u4-verb-читать,ex-u4-verb-делать,ex-u4-present-говорить-мы,ex-u4-present-видеть-он,ex-u4-present-писать-вы,ex-u4-present-идти-они
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -1275,6 +1471,74 @@ note=make
 objectiveId=obj-u4-present
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
 
+### EXAMPLE `ex-u4-present-говорить-мы`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8671bdcd39f3f862685c7b68f1d0dd1bdeb5d329f1556b7d54133e797707b45a
+
+kind=LEXICAL
+letterId=
+display=говори́м
+note=we: the supplied form for this entry.
+objectiveId=obj-u4-present
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u4-present-видеть-он`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4795d6c339b14bafb0afeb6ae596d282a3026939bb96579ebaff78604eb0a1a1
+
+kind=LEXICAL
+letterId=
+display=ви́дит
+note=he: the supplied form for this entry.
+objectiveId=obj-u4-present
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u4-present-писать-вы`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 93cd46a69054811a2518296399a1acaf209146f934bb9a1253997d87472abf6a
+
+kind=LEXICAL
+letterId=
+display=пи́шете
+note=you (plural): the supplied form for this entry.
+objectiveId=obj-u4-present
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### EXAMPLE `ex-u4-present-идти-они`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: fb8a5324fcd062ae8b8205421dc61a3db953826267ca004ed0e3d8991d3f241a
+
+kind=LEXICAL
+letterId=
+display=иду́т
+note=they: the supplied form for this entry.
+objectiveId=obj-u4-present
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
 ### EXAMPLE `ex-u4-stress-6f15e9f1`
 
 - Objectives: obj-u4-stress
@@ -1460,6 +1724,94 @@ feedback=The frozen row records де́лаю for the row glossed I.
 objectiveId=obj-u4-present
 containsGeneratedRussian=false
 reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+
+### GUIDED_PRACTICE `u4-g-present-говорить-я`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c025e76729c65cbc60070b4724e1ae6d989fe65c06c664c552a3abf34dfa1a03
+
+kind=SOURCE_FORM
+language=en
+prompt=Which supplied present form belongs to I?
+promptLetter=говори́ть
+options=говори́м | говорю́ | говори́шь | говори́т
+answer=говорю́
+feedback=The supplied I form is говорю́. Compare it with the separately shown we form говори́м.
+objectiveId=obj-u4-present
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=This supplied form belongs to we, while this practice asks for I. |  | This supplied form belongs to you (one familiar person), while this practice asks for I. | This supplied form belongs to he, while this practice asks for I.
+
+### GUIDED_PRACTICE `u4-g-present-видеть-я`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b65e37bf944fa6a77e17cfea9a1553a80d929ffedc0749ad39ee9f254fc6a864
+
+kind=SOURCE_FORM
+language=en
+prompt=Which supplied present form belongs to I?
+promptLetter=ви́деть
+options=ви́дит | ви́жу | ви́дишь | ви́дим
+answer=ви́жу
+feedback=The supplied I form is ви́жу. Compare it with the separately shown he form ви́дит.
+objectiveId=obj-u4-present
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=This supplied form belongs to he, while this practice asks for I. |  | This supplied form belongs to you (one familiar person), while this practice asks for I. | This supplied form belongs to we, while this practice asks for I.
+
+### GUIDED_PRACTICE `u4-g-present-писать-я`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e56c80346b28bc73fafc2fe81b59f8be9a22ae6d6114751b2388b4071bdfd667
+
+kind=SOURCE_FORM
+language=en
+prompt=Which supplied present form belongs to I?
+promptLetter=писа́ть
+options=пи́шете | пишу́ | пи́шешь | пи́шет
+answer=пишу́
+feedback=The supplied I form is пишу́. Compare it with the separately shown you (plural) form пи́шете.
+objectiveId=obj-u4-present
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=This supplied form belongs to you (plural), while this practice asks for I. |  | This supplied form belongs to you (one familiar person), while this practice asks for I. | This supplied form belongs to he, while this practice asks for I.
+
+### GUIDED_PRACTICE `u4-g-present-идти-я`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-present
+- Source: src-openrussian-50e210c4
+- Rights: rights-openrussian-50e210c4
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: c6371bc2fbe53b475f5381cd1352775c1adbcdf437682e1a893a66b5834ca5f7
+
+kind=SOURCE_FORM
+language=en
+prompt=Which supplied present form belongs to I?
+promptLetter=идти́
+options=иду́т | иду́ | идёшь | идёт
+answer=иду́
+feedback=The supplied I form is иду́. Compare it with the separately shown they form иду́т.
+objectiveId=obj-u4-present
+containsGeneratedRussian=false
+reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT
+distractorRationales=This supplied form belongs to they, while this practice asks for I. |  | This supplied form belongs to you (one familiar person), while this practice asks for I. | This supplied form belongs to he, while this practice asks for I.
 
 ### GUIDED_PRACTICE `u4-i-stress-6f15e9f1`
 
@@ -3659,6 +4011,1276 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=6048dcfa025642ee6a2db09a0845239c9ae3dfce4d0f311c4dcc6eecb6f711b9
 contentHash=fed947c47037e750ab4dc2d1e247b059f2032e66554b5ddae5ebee790c5b3a3d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-complete-repair`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5a03d8f8a568677129a827f9916b37e1ee53f0a2c42a732ca39faa1c8f66cf9a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:complete-repair
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The frozen page says: So, to form the present tense, you simply take the ''imperfective aspect'' of the verb and add the appropriate endings.
+
+These fields are copied from the admitted чита́ть row. Row glossed I: чита́ю. Row glossed you: чита́ешь. Row glossed he: чита́ет. 
+
+These fields are copied from the admitted чита́ть row. Row glossed we: чита́ем. Row glossed you (plural): чита́ете. Row glossed they: чита́ют. 
+
+де́лать — make. The admitted row records де́лаю for the row glossed I.
+
+These infinitives are copied from admitted rows. знать — know. рабо́тать — work. понима́ть — understand. слу́шать — listen. 
+
+These infinitives are copied from admitted rows. жить — live. говори́ть — to speak. ви́деть — see. смотре́ть — look. 
+
+These infinitives are copied from admitted rows. писа́ть — write. идти́ — go. 
+
+The infinitive говори́ть names this entry. Match each supplied present form to its person: I: говорю́; you (one familiar person): говори́шь; he: говори́т; we: говори́м. When the check requests we, choose говори́м. Compare the written endings in these supplied forms; do not substitute the endings from the earlier reading example. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive ви́деть names this entry. Match each supplied present form to its person: I: ви́жу; you (one familiar person): ви́дишь; he: ви́дит; we: ви́дим. When the check requests he, choose ви́дит. The infinitive alone does not tell you which supplied form to choose. Notice that the I form differs from the other forms here; learn the whole supplied forms. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive писа́ть names this entry. Match each supplied present form to its person: I: пишу́; you (one familiar person): пи́шешь; he: пи́шет; you (plural): пи́шете. When the check requests you (plural), choose пи́шете. The supplied present forms have a different written stem from the infinitive. Keep the written stress exactly as shown; do not append an ending to the whole infinitive. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive идти́ names this entry. Match each supplied present form to its person: I: иду́; you (one familiar person): идёшь; he: идёт; they: иду́т. When the check requests they, choose иду́т. The supplied finite forms differ from the infinitive. Learn these whole forms; this card does not teach how to choose between motion verbs in context. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+shippedText=The frozen page says: So, to form the present tense, you simply take the ''imperfective aspect'' of the verb and add the appropriate endings.
+
+These fields are copied from the admitted чита́ть row. Row glossed I: чита́ю. Row glossed you: чита́ешь. Row glossed he: чита́ет. 
+
+These fields are copied from the admitted чита́ть row. Row glossed we: чита́ем. Row glossed you (plural): чита́ете. Row glossed they: чита́ют. 
+
+де́лать — make. The admitted row records де́лаю for the row glossed I.
+
+These infinitives are copied from admitted rows. знать — know. рабо́тать — work. понима́ть — understand. слу́шать — listen. 
+
+These infinitives are copied from admitted rows. жить — live. говори́ть — to speak. ви́деть — see. смотре́ть — look. 
+
+These infinitives are copied from admitted rows. писа́ть — write. идти́ — go. 
+
+The infinitive говори́ть names this entry. Match each supplied present form to its person: I: говорю́; you (one familiar person): говори́шь; he: говори́т; we: говори́м. When the check requests we, choose говори́м. Compare the written endings in these supplied forms; do not substitute the endings from the earlier reading example. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive ви́деть names this entry. Match each supplied present form to its person: I: ви́жу; you (one familiar person): ви́дишь; he: ви́дит; we: ви́дим. When the check requests he, choose ви́дит. The infinitive alone does not tell you which supplied form to choose. Notice that the I form differs from the other forms here; learn the whole supplied forms. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive писа́ть names this entry. Match each supplied present form to its person: I: пишу́; you (one familiar person): пи́шешь; he: пи́шет; you (plural): пи́шете. When the check requests you (plural), choose пи́шете. The supplied present forms have a different written stem from the infinitive. Keep the written stress exactly as shown; do not append an ending to the whole infinitive. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+
+The infinitive идти́ names this entry. Match each supplied present form to its person: I: иду́; you (one familiar person): идёшь; he: идёт; they: иду́т. When the check requests they, choose иду́т. The supplied finite forms differ from the infinitive. Learn these whole forms; this card does not teach how to choose between motion verbs in context. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=58acad32b8f872aee13751a8c5735509b7f05ed5b0ba2c846d8029a47bac0288
+contentHash=dee778ef9f6ffcae43290271ce53923d8ff80921f88bd03eb2b1d5f1f31f5fa7
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: bc2d71dc3fb594452499b1c63b376142c5b6c024fbf6588f644e137c8a94aa0d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The infinitive ви́деть names this entry. Match each supplied present form to its person: I: ви́жу; you (one familiar person): ви́дишь; he: ви́дит; we: ви́дим. When the check requests he, choose ви́дит. The infinitive alone does not tell you which supplied form to choose. Notice that the I form differs from the other forms here; learn the whole supplied forms. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+shippedText=The infinitive ви́деть names this entry. Match each supplied present form to its person: I: ви́жу; you (one familiar person): ви́дишь; he: ви́дит; we: ви́дим. When the check requests he, choose ви́дит. The infinitive alone does not tell you which supplied form to choose. Notice that the I form differs from the other forms here; learn the whole supplied forms. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ab1cc3523d38d721cf350bbead9560349dc8619f70160390b24837e0e37b2992
+contentHash=57b575b184d0d1730fde637ee99ca238d08fc261d5eaa15adf7b13fa42ce2d68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-example-note`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a7ed0892a019ae4b2edf104a733d4c6f733003002097ce628a4ab9a638c7807f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-example-note
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+he: the supplied form for this entry.
+shippedText=he: the supplied form for this entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=c0cc6e074fd68878e008e31a720385f817c5e1665f7f1d341a86390d509ef9d3
+contentHash=fc7368f8db9f4a421793882e8c870ac2e99c3b7d405056b63df9b6d075b7e0c2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-guide-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 06b91fedb766f0d7dea90547cf0c47576f46d7900a63fce4e92c4742d38b424e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-guide-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+shippedText=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1765d9f00282a436b27badd148af8eb19a2a83f2e7eb8b313603f3c53d23fe40
+contentHash=6d74ef1987176ce11299cd35601664182db7022cced65d44538f6c90d6f3f01b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-guide-feedback`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 67bed44d204a126f3eb62a1a4259112bf030613df73c576b9845b2366d1e7dfe
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-guide-feedback
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The supplied I form is ви́жу. Compare it with the separately shown he form ви́дит.
+shippedText=The supplied I form is ви́жу. Compare it with the separately shown he form ви́дит.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ad0a0a885f4316cfda61a4fb97a4f0a5ed68d2663bd0e60f85ed09b1e52dad58
+contentHash=bdc8040ced611229e80de9ff00358ffb4c5bb0250a05dd0a7f926cbfa0520d06
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-guide-prompt`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4e71375e58bc629856d037405a6d79b8b17491cb61ca8bc9e0887f44925f4a36
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-guide-prompt
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Which supplied present form belongs to I?
+shippedText=Which supplied present form belongs to I?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=44f9aa55194463c2d6ffc1fa60ea5b209320c2e5c25344965b6b62df85f52561
+contentHash=f37e7009fdb18c95235de9b59a4052fda584a8cf4fdaa8f36fdc98e121b4412d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-guide-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 42dd2d4c5bc7151a9323e18173f8886d87404b3eda4153dd080d2308ebebf64d
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-guide-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Practise I before the independent he check
+shippedText=Practise I before the independent he check
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=97cca8ef8e63c50aec39e374bd571a350851851af26abc893f69d79c6fe4811f
+contentHash=92c91f14a9e7d97867b873e98dda020872e6cf54d656cdef392a5c5286d1d4c8
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-rationale-0`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 782b93a21222b6d0e82161934951a010df0f8652e13e2d97e018850ea2557642
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-rationale-0
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to he, while this practice asks for I.
+shippedText=This supplied form belongs to he, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b550e90e3592933e77a9f9ea54611389da52dda4b6e38829cf432d8cc3795307
+contentHash=7acdaea59520c1faad703bc5df0197dc1a34a55706ac448c04792cf349df01bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-rationale-2`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: cd362343c56d40f5c00f635069347a0745e847a5dcc92f98189c6271c61a3c1e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-rationale-2
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to you (one familiar person), while this practice asks for I.
+shippedText=This supplied form belongs to you (one familiar person), while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=84bd002ad8456df0a91262b3994ebf6f499972e104a54baccb6046ce8367c2b5
+contentHash=e3449d0440dd164c8620beaa9975b704c65a7fbe80f8ff5275f0edfd80d2fe37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-rationale-3`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 66102fd7919e8fa410029c5b8748ac54196336adfee87d80ded81593ee13192b
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-rationale-3
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to we, while this practice asks for I.
+shippedText=This supplied form belongs to we, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ea6d1b47dccdc2f066d155819f1607878deef5f05ab6bb264ab3c76c6fed81c7
+contentHash=420033ada63b7428ad85426a8167a4eb9badc0c62d551ca2e1c6ce3acf758d68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-видеть-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 46ba3ee00de45d7fe013c1175d2728f864838c0628aa10e421c0975141c3f063
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:видеть-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Match he in the supplied seeing forms
+shippedText=Match he in the supplied seeing forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=60c6ca7bd8b8f6d88b124a147689e8d7d8d5b798c3475b0ec5dcde686ccdf325
+contentHash=2d14f5e60c51fb0081bf05727b7dee70db60e8f328c35d33bc048cdd87a33764
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5e35284add989b3e0af73a97b65c59d8430588d5a07c6f51598a46a8200989d5
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The infinitive говори́ть names this entry. Match each supplied present form to its person: I: говорю́; you (one familiar person): говори́шь; he: говори́т; we: говори́м. When the check requests we, choose говори́м. Compare the written endings in these supplied forms; do not substitute the endings from the earlier reading example. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+shippedText=The infinitive говори́ть names this entry. Match each supplied present form to its person: I: говорю́; you (one familiar person): говори́шь; he: говори́т; we: говори́м. When the check requests we, choose говори́м. Compare the written endings in these supplied forms; do not substitute the endings from the earlier reading example. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=bfb6a4307e5aba37594b9a3a37ac09dbc325f18c6e563caa31d94e557334cc0c
+contentHash=3f8caa0143b3ff66413f702933a30bec70c3695ef40fca2b291dba8eb209a72f
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-example-note`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b81b3897c853cbe0ba79609b0ea6e310458b17e42f488c81e1317c01a7252a01
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-example-note
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+we: the supplied form for this entry.
+shippedText=we: the supplied form for this entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8a57708765c79623587fff7c049579c1c2856a2c46362a94bd6caef55b9e1753
+contentHash=815499a8e86a73db9ac71c59675557d0d4742e9cbb2627d0afba2410a47c87f0
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-guide-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 55398b2542abc2bec6adfad27a14b14667f1202d44a175a7f6ed68fce70d3de8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-guide-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+shippedText=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1765d9f00282a436b27badd148af8eb19a2a83f2e7eb8b313603f3c53d23fe40
+contentHash=6d74ef1987176ce11299cd35601664182db7022cced65d44538f6c90d6f3f01b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-guide-feedback`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2658e764233894202e93e1c5fd64afe6dee5189859132adfa799e7108b6c1f2e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-guide-feedback
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The supplied I form is говорю́. Compare it with the separately shown we form говори́м.
+shippedText=The supplied I form is говорю́. Compare it with the separately shown we form говори́м.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4ea559debb5fa251c94d95b5fb750f9489194f24cc91255a8e1bea7d3987a6fe
+contentHash=d896b406b269eefb1c3d7890b6deaf3e4d32d60bd43692bd40c5bc4da1c7646e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-guide-prompt`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 677016cee39bfbe98f529b8ab521a349118d39eac8bcbb3d0dbb9169daf7959f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-guide-prompt
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Which supplied present form belongs to I?
+shippedText=Which supplied present form belongs to I?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=44f9aa55194463c2d6ffc1fa60ea5b209320c2e5c25344965b6b62df85f52561
+contentHash=f37e7009fdb18c95235de9b59a4052fda584a8cf4fdaa8f36fdc98e121b4412d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-guide-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 03dde1cc540fdb5cce67663d05ef4e4a4402d6fe66c16407b888fcd6572a2c1c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-guide-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Practise I before the independent we check
+shippedText=Practise I before the independent we check
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7d3ec4b6878889d78bbc64120bba525f5a219cd52f750e42367e8bc37a2c341c
+contentHash=0830b03c0fc06a11e5eef15d1067d0b55b0559feab463c7a20ec79c0cbcf6444
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-rationale-0`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5de0d737a34aa97cf38c102a19eca3bbcff1f02a52ec4434793ba9ffbe514916
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-rationale-0
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to we, while this practice asks for I.
+shippedText=This supplied form belongs to we, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=ea6d1b47dccdc2f066d155819f1607878deef5f05ab6bb264ab3c76c6fed81c7
+contentHash=420033ada63b7428ad85426a8167a4eb9badc0c62d551ca2e1c6ce3acf758d68
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-rationale-2`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 140d3111f33d45e51a2851270b70465edd5ed7d918e9333353d2462cd1b22a1c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-rationale-2
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to you (one familiar person), while this practice asks for I.
+shippedText=This supplied form belongs to you (one familiar person), while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=84bd002ad8456df0a91262b3994ebf6f499972e104a54baccb6046ce8367c2b5
+contentHash=e3449d0440dd164c8620beaa9975b704c65a7fbe80f8ff5275f0edfd80d2fe37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-rationale-3`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0347e0b31390fd2af578f274254fdbe8dca1a3781f87927a401e0cb64df25d28
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-rationale-3
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to he, while this practice asks for I.
+shippedText=This supplied form belongs to he, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b550e90e3592933e77a9f9ea54611389da52dda4b6e38829cf432d8cc3795307
+contentHash=7acdaea59520c1faad703bc5df0197dc1a34a55706ac448c04792cf349df01bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-говорить-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 06f32659d9b373b7926378cfc899b53c198ec920322c92514b35bba40021de14
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:говорить-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Match we in the supplied speaking forms
+shippedText=Match we in the supplied speaking forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=6e2587314373493e57288e278964327074c5c6ccb974780abb671dad134abb24
+contentHash=9c76ffc87b3c764a0fc33b2470280d89785429cde996639d4c7a468a1a7c355b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7e57534934e98016f2de07862ca56731a5b08d32ab7e877bea2262bd7f8ac349
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The infinitive идти́ names this entry. Match each supplied present form to its person: I: иду́; you (one familiar person): идёшь; he: идёт; they: иду́т. When the check requests they, choose иду́т. The supplied finite forms differ from the infinitive. Learn these whole forms; this card does not teach how to choose between motion verbs in context. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+shippedText=The infinitive идти́ names this entry. Match each supplied present form to its person: I: иду́; you (one familiar person): идёшь; he: идёт; they: иду́т. When the check requests they, choose иду́т. The supplied finite forms differ from the infinitive. Learn these whole forms; this card does not teach how to choose between motion verbs in context. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f58baff377e902413e42fd4fd4a802c2c55cfb7c5078d70bfaba90231cc32bd1
+contentHash=993d21af0452ba240d11f0f5b15f604dcb1bad8e9b7d9fa42683ec75a6f63f24
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-example-note`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 5b04221be4623a5073f8499ef256b76f4d0eb3f877363c174fc1a5cb6c74e1af
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-example-note
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+they: the supplied form for this entry.
+shippedText=they: the supplied form for this entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=692c04a591d953e129dd7b3cbd08bcd9ecc9611335a7f9724778c7d6468c5950
+contentHash=cded3c8df421425fd279469e6bcbb241d7df3ee54626eb81ec19a1525b91bd32
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-guide-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7f3a4c743553873ac92d3e27ecd87fa5610832419ba17a891f5ffd23052030ef
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-guide-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+shippedText=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1765d9f00282a436b27badd148af8eb19a2a83f2e7eb8b313603f3c53d23fe40
+contentHash=6d74ef1987176ce11299cd35601664182db7022cced65d44538f6c90d6f3f01b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-guide-feedback`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e6507dfe5cd3581df05dd0c4edb92000a17114844a016be24e650f4114c947e1
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-guide-feedback
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The supplied I form is иду́. Compare it with the separately shown they form иду́т.
+shippedText=The supplied I form is иду́. Compare it with the separately shown they form иду́т.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2cd96b8af15556ae3dd44e000eadaec2ff1c00a9e614b62db609e781a7776806
+contentHash=d6d776d81e912dc61f9b8f2dd5b64387b8c966bfaa55988f38920ddb7cd0120a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-guide-prompt`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 4b7121b0d038ec45ad4842786c08948b8d3e0e212c1abe3fdf7a09060e790617
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-guide-prompt
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Which supplied present form belongs to I?
+shippedText=Which supplied present form belongs to I?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=44f9aa55194463c2d6ffc1fa60ea5b209320c2e5c25344965b6b62df85f52561
+contentHash=f37e7009fdb18c95235de9b59a4052fda584a8cf4fdaa8f36fdc98e121b4412d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-guide-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 25041702a183338cdf95d21203a575a43317b20b12a3922463d01ce1977fda51
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-guide-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Practise I before the independent they check
+shippedText=Practise I before the independent they check
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f0257ef97e141ce5acb0592c1a8e33680288603b71f668fcbdb036bcfde91958
+contentHash=d29ebf97e8b105c018ffd3075699a6d4751f12bf08eb84da41cbe833e1ccda2a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-rationale-0`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 8001410ff21dddd30f6e89d603f1352ae816b614fbf199f293eab35de6e46832
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-rationale-0
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to they, while this practice asks for I.
+shippedText=This supplied form belongs to they, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=542e08b1b52eb42488f1bdede355eef3d8fd9b7bca7a41bae68ad7a08d1d52bc
+contentHash=eb7595fcbcb741067cc05893bb5d2b3c4772414b9a13f9aa8ca6cca29a222b29
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-rationale-2`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 219925b67247e4129b91842b9e079c09146f7cfe51a2dc1a5f8d61b3a09bdd38
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-rationale-2
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to you (one familiar person), while this practice asks for I.
+shippedText=This supplied form belongs to you (one familiar person), while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=84bd002ad8456df0a91262b3994ebf6f499972e104a54baccb6046ce8367c2b5
+contentHash=e3449d0440dd164c8620beaa9975b704c65a7fbe80f8ff5275f0edfd80d2fe37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-rationale-3`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f4abb734d08d14ed255c391afd37b2f1fc2d7b7b32374479d34dc8c521481571
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-rationale-3
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to he, while this practice asks for I.
+shippedText=This supplied form belongs to he, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b550e90e3592933e77a9f9ea54611389da52dda4b6e38829cf432d8cc3795307
+contentHash=7acdaea59520c1faad703bc5df0197dc1a34a55706ac448c04792cf349df01bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-идти-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 87188b3faa749f0a8ca9d2477b68b1480fa1da2728f977e68aed044341e8704c
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:идти-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Match they in the supplied going forms
+shippedText=Match they in the supplied going forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=170f1bf64d10eb151f5c6491139d6b81745ca44c93529c0b564efb8805132d6d
+contentHash=95c9e9e95e04f63cd846e9760f3b30d580fd43bf687c1bca207a5073920a9e54
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f60062a5c821671267069a2391ea37b0c1c2b5dbc6e7133cbbcc2518d3f4dc92
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The infinitive писа́ть names this entry. Match each supplied present form to its person: I: пишу́; you (one familiar person): пи́шешь; he: пи́шет; you (plural): пи́шете. When the check requests you (plural), choose пи́шете. The supplied present forms have a different written stem from the infinitive. Keep the written stress exactly as shown; do not append an ending to the whole infinitive. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+shippedText=The infinitive писа́ть names this entry. Match each supplied present form to its person: I: пишу́; you (one familiar person): пи́шешь; he: пи́шет; you (plural): пи́шете. When the check requests you (plural), choose пи́шете. The supplied present forms have a different written stem from the infinitive. Keep the written stress exactly as shown; do not append an ending to the whole infinitive. First practise a different person from this same entry, then answer the requested person without using option position. These supplied choices do not demonstrate producing an unseen form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=2370a699131bd53c4186bcdf9a9b582e028f1b6187c7f7164c660dfefc6e9771
+contentHash=6b8904796767aaeab9eff7753b30ec7b197e8d57e80ad71711dcae8e520a731e
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-example-note`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0bf2a0439f7afd84899fe6960cca9405cc745edd1f0b603b570f74a1af364573
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-example-note
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+you (plural): the supplied form for this entry.
+shippedText=you (plural): the supplied form for this entry.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=64c47cd3e41708f2cb2febac08645734a51a282ca0d3326184d7735a9cbbcd4b
+contentHash=42e36d861746e9e02bb38c7b3298f8953e02ae61541051e7915c16828c426608
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-guide-body`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 41104f7ba9c67b5c1b569ac3bce2583fb523e5fb04d356cd18995da5817c0984
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-guide-body
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+shippedText=Compare the supplied forms above. Choose I here; the independent check asks for a different person.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=1765d9f00282a436b27badd148af8eb19a2a83f2e7eb8b313603f3c53d23fe40
+contentHash=6d74ef1987176ce11299cd35601664182db7022cced65d44538f6c90d6f3f01b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-guide-feedback`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 1c70e1dd886b853f17471f7c07c48ab7fc892ff1fdb7af828553817eb9762c69
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-guide-feedback
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+The supplied I form is пишу́. Compare it with the separately shown you (plural) form пи́шете.
+shippedText=The supplied I form is пишу́. Compare it with the separately shown you (plural) form пи́шете.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=0eec8e6f0c68347ba621e6e607685ae26805e19925ed6d5d4114329dd4904f01
+contentHash=ae96a88766315f4d0cc8591c90a8ef722c1f8b8b33cd0962c41cda0223f53d4a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-guide-prompt`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 85735c2efa4200f1039e6c4ee08cd78df373f11d0386453d5ba303865d6c1523
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-guide-prompt
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Which supplied present form belongs to I?
+shippedText=Which supplied present form belongs to I?
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=44f9aa55194463c2d6ffc1fa60ea5b209320c2e5c25344965b6b62df85f52561
+contentHash=f37e7009fdb18c95235de9b59a4052fda584a8cf4fdaa8f36fdc98e121b4412d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-guide-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 7ebdfac64a136430a1eb2b88709609f9f7c72264e85de02584f3db603b4465e6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-guide-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Practise I before the independent you (plural) check
+shippedText=Practise I before the independent you (plural) check
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=f3cc33d71d6720d31d8f4da47c96fdccd0957adf2994596449783232ec0e04c7
+contentHash=a217881e7d7c907d57c08a0aa9acc55e5bd562ab0437e6277ebc8777390c1ffc
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-rationale-0`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 76b70f969d6e37094e01cef9414a225ae517e43f6c08c30362182613d07743f6
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-rationale-0
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to you (plural), while this practice asks for I.
+shippedText=This supplied form belongs to you (plural), while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=8f37e434777ecc3891e4c05eb883cbdac3a1beeccb6d0d7be8865f6fc0b74239
+contentHash=e15c17dba3c029225c0f3038f315d995e06d7b3c5a43b8ab169292fab19ad783
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-rationale-2`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0b3c79301bf3364f15e7de4e7a31806100a05792aa25ac8404cf58a2167620dd
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-rationale-2
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to you (one familiar person), while this practice asks for I.
+shippedText=This supplied form belongs to you (one familiar person), while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=84bd002ad8456df0a91262b3994ebf6f499972e104a54baccb6046ce8367c2b5
+contentHash=e3449d0440dd164c8620beaa9975b704c65a7fbe80f8ff5275f0edfd80d2fe37
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-rationale-3`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: b8d8630db4957cad324b78f1e3fd4189958c0f000007ca8a2f86aba8fa16ee8e
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-rationale-3
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+This supplied form belongs to he, while this practice asks for I.
+shippedText=This supplied form belongs to he, while this practice asks for I.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b550e90e3592933e77a9f9ea54611389da52dda4b6e38829cf432d8cc3795307
+contentHash=7acdaea59520c1faad703bc5df0197dc1a34a55706ac448c04792cf349df01bf
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc015-писать-title`
+
+- Objectives: obj-u4-present
+- Sessions: u4-s-orient, u4-s-present
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: a42ec2a8da161cd1eccbc496682675db5e6902ed80dd95018b7b3e927ded7eb8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u4-present:cc015:писать-title
+originalSourceText=Complete frozen Wikibooks Russian/Grammar/Verbs oldid4233876, including first/second conjugation and exceptions; complete retained OpenRussian commit50e210c4803237779cb562bc1abcea529066031c rows for the four entries, with exact already-admitted Unit4 presfut fields. Bounded independently authored English explanation and arrangement on2026-10-19 within governed research-source version2026-10-08. No inflection, stress, phrase or sentence generated. Native forms retain their existing lexical provenance, CC BY-SA4.0 attribution and share-alike treatment. This is not Penguin text or a newly approved paradigm. Qualified linguistic/source/rights review remains pending.
+Match you (plural) in the supplied writing forms
+shippedText=Match you (plural) in the supplied writing forms
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=5431a95a9a637ea364a4cd1453e53d65c9cdb7192b20fccdbf6bfb5783a212ef
+contentHash=3ab5cc72952c23d71332a8338b461574491bb719573dc595e879809657169d37
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -8275,10 +9897,22 @@ permitsAppUse=true
 - `obj-u4-present` INSTRUCTION `u4-st-teach-present-5`
 - `obj-u4-present` INSTRUCTION `u4-st-teach-present-6`
 - `obj-u4-present` INSTRUCTION `u4-st-teach-present-7`
+- `obj-u4-present` INSTRUCTION `u4-st-teach-present-говорить`
+- `obj-u4-present` INSTRUCTION `u4-st-teach-present-видеть`
+- `obj-u4-present` INSTRUCTION `u4-st-teach-present-писать`
+- `obj-u4-present` INSTRUCTION `u4-st-teach-present-идти`
 - `obj-u4-present` EXAMPLE `ex-u4-verb-читать`
 - `obj-u4-present` EXAMPLE `ex-u4-verb-делать`
+- `obj-u4-present` EXAMPLE `ex-u4-present-говорить-мы`
+- `obj-u4-present` EXAMPLE `ex-u4-present-видеть-он`
+- `obj-u4-present` EXAMPLE `ex-u4-present-писать-вы`
+- `obj-u4-present` EXAMPLE `ex-u4-present-идти-они`
 - `obj-u4-present` PRACTICE `u4-st-guided-present-2`
 - `obj-u4-present` PRACTICE `u4-st-guided-present-4`
+- `obj-u4-present` PRACTICE `u4-st-guided-present-говорить`
+- `obj-u4-present` PRACTICE `u4-st-guided-present-видеть`
+- `obj-u4-present` PRACTICE `u4-st-guided-present-писать`
+- `obj-u4-present` PRACTICE `u4-st-guided-present-идти`
 - `obj-u4-present` CHECK `u4-i-verb-говорить-мы`
 - `obj-u4-present` CHECK `u4-i-verb-видеть-он`
 - `obj-u4-present` CHECK `u4-i-verb-писать-вы`
@@ -8355,8 +9989,28 @@ permitsAppUse=true
 - `u4-st-teach-present-5` REFERENCE `ref-u35-attribution`
 - `u4-st-teach-present-6` REFERENCE `ref-u35-attribution`
 - `u4-st-teach-present-7` REFERENCE `ref-u35-attribution`
+- `u4-st-teach-present-говорить` EXAMPLE `ex-u4-present-говорить-мы`
+- `u4-st-teach-present-говорить` REFERENCE `ref-u35-attribution`
+- `u4-st-teach-present-видеть` EXAMPLE `ex-u4-present-видеть-он`
+- `u4-st-teach-present-видеть` REFERENCE `ref-u35-attribution`
+- `u4-st-teach-present-писать` EXAMPLE `ex-u4-present-писать-вы`
+- `u4-st-teach-present-писать` REFERENCE `ref-u35-attribution`
+- `u4-st-teach-present-идти` EXAMPLE `ex-u4-present-идти-они`
+- `u4-st-teach-present-идти` REFERENCE `ref-u35-attribution`
+- `u4-st-guided-present-говорить` REMEDIATION `u4-st-rem-present`
+- `u4-st-guided-present-говорить` ITEM `u4-g-present-говорить-я`
+- `u4-st-guided-present-видеть` REMEDIATION `u4-st-rem-present`
+- `u4-st-guided-present-видеть` ITEM `u4-g-present-видеть-я`
+- `u4-st-guided-present-писать` REMEDIATION `u4-st-rem-present`
+- `u4-st-guided-present-писать` ITEM `u4-g-present-писать-я`
+- `u4-st-guided-present-идти` REMEDIATION `u4-st-rem-present`
+- `u4-st-guided-present-идти` ITEM `u4-g-present-идти-я`
 - `u4-st-rem-present` EXAMPLE `ex-u4-verb-читать`
 - `u4-st-rem-present` EXAMPLE `ex-u4-verb-делать`
+- `u4-st-rem-present` EXAMPLE `ex-u4-present-говорить-мы`
+- `u4-st-rem-present` EXAMPLE `ex-u4-present-видеть-он`
+- `u4-st-rem-present` EXAMPLE `ex-u4-present-писать-вы`
+- `u4-st-rem-present` EXAMPLE `ex-u4-present-идти-они`
 - `u4-st-check-present` REMEDIATION `u4-st-rem-present`
 - `u4-st-check-present` ITEM `u4-i-verb-говорить-мы`
 - `u4-st-check-present` ITEM `u4-i-verb-видеть-он`
@@ -8449,6 +10103,47 @@ permitsAppUse=true
 - `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-feedback`
 - `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-prompt`
 - `obj-u4-nominative` PROVENANCE `prov-ca-u4-role-u4-i-nom-role-train-reason`
+- `obj-u4-present` PROVENANCE `prov-cc015-complete-repair`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-example-note`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-guide-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-guide-feedback`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-guide-prompt`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-guide-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-rationale-0`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-rationale-2`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-rationale-3`
+- `obj-u4-present` PROVENANCE `prov-cc015-видеть-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-example-note`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-guide-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-guide-feedback`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-guide-prompt`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-guide-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-rationale-0`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-rationale-2`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-rationale-3`
+- `obj-u4-present` PROVENANCE `prov-cc015-говорить-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-example-note`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-guide-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-guide-feedback`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-guide-prompt`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-guide-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-rationale-0`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-rationale-2`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-rationale-3`
+- `obj-u4-present` PROVENANCE `prov-cc015-идти-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-example-note`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-guide-body`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-guide-feedback`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-guide-prompt`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-guide-title`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-rationale-0`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-rationale-2`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-rationale-3`
+- `obj-u4-present` PROVENANCE `prov-cc015-писать-title`
 - `obj-u4-nominative` PROVENANCE `prov-u4-cases-default`
 - `obj-u4-nominative` PROVENANCE `prov-u4-cases-six`
 - `obj-u4-present` PROVENANCE `prov-u4-form-видеть-вы`

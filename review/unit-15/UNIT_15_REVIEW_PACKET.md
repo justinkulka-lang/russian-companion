@@ -11,12 +11,12 @@ Unit 15 remains in development. Its readiness is content-complete and review-pen
 - Schema version: 3
 - Application: dev.russiancompanion
 - Version: 2.0.0-dev (5)
-- Curriculum source commit: 1e571336b9157b884beb2e6e5e79c3b95aa99480
-- Unit content-review SHA-256: ea945a9c9cd01a30db3522794b9df36c5a4fc291092a153da0672bb4b8a9a6bd
+- Curriculum source commit: 0f8001a8ec2cb76a7bc994a2c8d77db09a272d04
+- Unit content-review SHA-256: 325189c63e7ff7bf43bbc22248f291c7c2acea05ac47a9684c2365d56b549c8a
 - Mapping-package SHA-256: 7228dd28cc3954cb8810a77b81ad72f55fa4e51a64d669fd691cd61a120d710c
-- Pack content-review SHA-256: e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4
-- Review-package SHA-256: f4da0d6463dd89f24ed29cae76531899a9a34450b3bccf70dcf814388c38f94c
-- Repository source SHA-256: 86ce7af2eb063d8f15ae960a58c71be50d0c2ea21aab9a2a6804332c0cd1bc97
+- Pack content-review SHA-256: bbd8919abe7d6f4968440b9ee9d60812959ad148c121428644103ad76eee7880
+- Review-package SHA-256: 0c50406414f03d6f6a29aab9090616285f177d8ed33fa2f235e264f606ecfa71
+- Repository source SHA-256: 8502cadc8a068c25eb3fd6292c7d9c04cac86ef71c9da8425225156f0e7ac4ae
 
 `unitContentReviewDigest` binds this unit's instructional curriculum. It covers this unit and the reachable instructional records, relationships, shared dependencies, sources, rights, assets, and advancement rule. It does not cover any other unit. Recording a review status, reviewer signature, mapping approval, install state, or readiness does not change it.
 
@@ -578,12 +578,12 @@ remediationStepId=u15-st-rem-say-request
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 74d1775293d29d76b9a1e03358c0a5ad1cf748f3beecb0322a9ea1d6dc218f05
+- Content hash: 2e6e8766dcb7001ef2d8f046f501159471bc8620822b00ae3d5e78b710d4e5de
 
 title=Choose the admitted aspect pair
 estimatedMinutes=12
 objectives=obj-u15-aspect-consolidate
-steps=u15-st-teach-aspect-consolidate-1,u15-st-guided-aspect-consolidate-1,u15-st-teach-aspect-consolidate-2,u15-st-teach-aspect-consolidate-3,u15-st-rem-aspect-consolidate,u15-st-check-aspect-consolidate
+steps=u15-st-teach-aspect-consolidate-1,u15-st-teach-aspect-consolidate-2,u15-st-teach-aspect-consolidate-3,u15-st-guided-aspect-consolidate-1,u15-st-rem-aspect-consolidate,u15-st-check-aspect-consolidate
 
 ### STEP `u15-st-teach-aspect-consolidate-1`
 
@@ -593,15 +593,59 @@ steps=u15-st-teach-aspect-consolidate-1,u15-st-guided-aspect-consolidate-1,u15-s
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7252047db871228944dc55e1048d652216e652aab4f4fa7147402e6a70ed9bd4
+- Content hash: af6b75a62a1883073ff700c62647db12878d6df6fc4ebd6e3bf51c4f44aa105c
 
 kind=TEACH
-title=Admitted lines
-body=говори́ть — to speak. сказа́ть — to speak. 
+title=Keep the supplied say/tell partners together
+body=The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.
 dominantAction=Continue
 references=ref-u1115-attribution
 items=
 examples=ex-u15-aspect-consolidate-0,ex-u15-aspect-consolidate-1
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u15-st-teach-aspect-consolidate-2`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-aspect-consolidate
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: 8e60b164c40eb3e2f54618b45a5d3910a29d0b3196c2beb9c8aa9dd4dfd20dd0
+
+kind=TEACH
+title=Keep the supplied do/make partners together
+body=The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.
+dominantAction=Continue
+references=ref-u1115-attribution
+items=
+examples=ex-u15-aspect-consolidate-2,ex-u15-aspect-consolidate-3
+unavailableReason=
+bookDirection=
+companionDirection=
+remediationStepId=
+
+### STEP `u15-st-teach-aspect-consolidate-3`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-aspect-consolidate
+- Source: none
+- Rights: none
+- Classification: none
+- Current review status: NO_SEPARATE_REVIEW_FIELD
+- Content hash: f0efd38285445d8d5c8238327dec0f19968c62c0096ac18acf99307ca2fb8e72
+
+kind=TEACH
+title=Distinguish partner recall from contextual use
+body=These choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.
+dominantAction=Continue
+references=ref-u1115-attribution
+items=
+examples=
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -629,50 +673,6 @@ bookDirection=
 companionDirection=
 remediationStepId=u15-st-rem-aspect-consolidate
 
-### STEP `u15-st-teach-aspect-consolidate-2`
-
-- Objectives: obj-u15-aspect-consolidate
-- Sessions: u15-s-aspect-consolidate
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 478c87b6152caff186f54d9ab699ec7e8c449de02f13d2c5c59493e97b6775c3
-
-kind=TEACH
-title=Admitted instruction
-body=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
-### STEP `u15-st-teach-aspect-consolidate-3`
-
-- Objectives: obj-u15-aspect-consolidate
-- Sessions: u15-s-aspect-consolidate
-- Source: none
-- Rights: none
-- Classification: none
-- Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 7c303d407afc4d3c628327b5dbb4b27f763d05c23cd33eeb25a9c71bb11f540e
-
-kind=TEACH
-title=Admitted lines
-body=де́лать — to do. сде́лать — to do. 
-dominantAction=Continue
-references=ref-u1115-attribution
-items=
-examples=ex-u15-aspect-consolidate-2,ex-u15-aspect-consolidate-3
-unavailableReason=
-bookDirection=
-companionDirection=
-remediationStepId=
-
 ### STEP `u15-st-rem-aspect-consolidate`
 
 - Objectives: obj-u15-aspect-consolidate
@@ -681,15 +681,19 @@ remediationStepId=
 - Rights: none
 - Classification: none
 - Current review status: NO_SEPARATE_REVIEW_FIELD
-- Content hash: 5ec524551f336fbb9d41638406784c49e3ef10c7d1694ffe1cf7a57d1b2eb377
+- Content hash: 58c2a5559426beebded321bb44560b1f6bd6d433f661211d61f0d08d69860aa1
 
 kind=REMEDIATE
-title=Remediation
-body=Let us take the verbs "to speak" (imperfective: '''говори́ть''', perfective: '''сказа́ть''') and "to do" (imper.: '''де́лать''', per.: '''сде́лать''').
+title=Review both supplied lexical pairs
+body=The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.
+
+The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.
+
+These choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.
 dominantAction=Continue
 references=
 items=
-examples=ex-u15-aspect-consolidate-0,ex-u15-aspect-consolidate-1
+examples=ex-u15-aspect-consolidate-0,ex-u15-aspect-consolidate-1,ex-u15-aspect-consolidate-2,ex-u15-aspect-consolidate-3
 unavailableReason=
 bookDirection=
 companionDirection=
@@ -2029,6 +2033,254 @@ attribution=Russian Companion content-audit research synthesis, content-audit-20
 shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
 sourceHash=b5b20d94072f332800319a8c00fbdee49c8d76d95fa39745d866a34ec6b1fb98
 contentHash=37394d2d77b2dab3cdaf82f1d8d5a4821e41335212984ada7339e1c75efdb8b2
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc003-preparation-u15-st-rem-aspect-consolidate-body`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: f70a8d8c3cf7756927b60e47a59ecfbda673de93e125c2fc0d21f9b01b6356cb
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-rem-aspect-consolidate-body
+originalSourceText=Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.
+The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.
+
+The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.
+
+These choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.
+shippedText=The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.
+
+The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.
+
+These choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=03c5d261ab65a3ba3b61fa3faf9213c69c315c6fed735159f8d08e8b2eb2f5ac
+contentHash=4a36ed718791966d7de7795b251225e42604011f49f00c60c5233c8468d32a9b
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc003-preparation-u15-st-rem-aspect-consolidate-title`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 0860537822d4ef2cbffb44a08f360308f00889d92311bda0495f87eb7a7d2232
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-rem-aspect-consolidate-title
+originalSourceText=Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.
+Review both supplied lexical pairs
+shippedText=Review both supplied lexical pairs
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=b54bdcf48337496ab30495a5c144479584f1e49040b998e9134926e7cf93e1f3
+contentHash=3868b0baded6392b99daadf10777f9204c9bb281b7702f1f55d3e99181b99ada
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc003-preparation-u15-st-teach-aspect-consolidate-1-body`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: e73cc899be88da61347923ffbf2c15068d8a8b82a8af6f5d2bb3cc79e9e2af94
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-1-body
+originalSourceText=Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.
+The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.
+shippedText=The supplied infinitives говори́ть and сказа́ть form the recorded imperfective/perfective pair for the say/tell relation. The short English label beside both examples does not mean that every use of speaking has this same partner. Recognize the requested member of this supplied pair.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=fe8b690ab8eb9b2dc58b50920b23cd9a2cc3bb8242e027d03d0f4577d56d8261
+contentHash=4a64e00412c0333451302ad526de1965e3a32b04bcdc5853e84332c14b72972d
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc003-preparation-u15-st-teach-aspect-consolidate-1-title`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 6cd3e99a4dfff2e2175dfbbb1c70fdd195b173712d292b9c17f553641bf5b7d3
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-1-title
+originalSourceText=Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.
+Keep the supplied say/tell partners together
+shippedText=Keep the supplied say/tell partners together
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=37cfe115adec4a370629a51967a79d7527d78b6c59ee7aebd5878de31af87ac9
+contentHash=a6cef525ca51b694a83e5bfdd2ae94aaefa5dbd09a1a16139ae0103813c5b951
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc003-preparation-u15-st-teach-aspect-consolidate-2-body`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: adb30613117888cdfc18a1f9ffc724d04c5112bf6a15094f7c49f86981c61d5a
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-2-body
+originalSourceText=Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.
+The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.
+shippedText=The supplied infinitives де́лать and сде́лать form the recorded imperfective/perfective do/make pair. Preserve their supplied spelling and stress. This one example does not establish a general rule that adding any prefix produces the correct partner for any verb.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=4a9b231e9b99c7404618ae90d2f02b6ebad9538a3d185733b67e163bc28c98f7
+contentHash=041c3007309cc78f7c0ff86b8df2358264451cdb14d7167399a7686f17bd064a
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc003-preparation-u15-st-teach-aspect-consolidate-2-title`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 2779fe4209cc7e2fc77904f31a61eb648a850c23173976aab415553ae6a52f2f
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-2-title
+originalSourceText=Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.
+Keep the supplied do/make partners together
+shippedText=Keep the supplied do/make partners together
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=d7971a0671cc5ff98db614c6399b16a615383ed18956cfcc778aaaf671d48d24
+contentHash=351cf60bf49421a424992d32a66cf0e11c727757d96c3172a1c09cf5edc27be6
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc003-preparation-u15-st-teach-aspect-consolidate-3-body`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: d236f6bdb1753043a3b96925564b6a1f855c0edd2a758b43bcd5cf57e34102ea
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-3-body
+originalSourceText=Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.
+These choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.
+shippedText=These choices ask for members of the supplied infinitive pairs. They do not ask you to choose an aspect for a particular request or prohibition. Knowing a lexical partner is useful preparation, but does not demonstrate that contextual skill. Compare the requested aspect and the meaning group before selecting a supplied form.
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=9448795dc380724ede350f0dd1412176e4f79e260afc0647a3528aa969c67104
+contentHash=8a927a055124ec514e5d818b3fb270da75262218b189abf90844d0022ad97dcb
+audioAssetId=
+reviewerIdentity=
+reviewerQualification=
+reviewDate=
+reviewedDigest=
+
+### PROVENANCE `prov-cc003-preparation-u15-st-teach-aspect-consolidate-3-title`
+
+- Objectives: obj-u15-aspect-consolidate
+- Sessions: u15-s-orient, u15-s-aspect-consolidate
+- Source: src-content-audit-research
+- Rights: rights-content-audit-research
+- Classification: none
+- Current review status: IMPLEMENTED_PENDING_FINAL_AUDIT
+- Content hash: 94226b10015b389b1f4e65de5ba8e38cf798487a34f1549a75a34542437509b8
+
+recordType=label
+sourceUrl=urn:russian-companion:content-audit-research:2026-10-08
+sourceRevision=content-audit-2026-10-08
+sourceRecordId=ca-coverage:obj-u15-aspect-consolidate:cc003-preparation:u15-st-teach-aspect-consolidate-3-title
+originalSourceText=Complete retained Wikibooks Russian/Verbal_Aspect oldid4059032,recorded say/tell and do/make aspect pairs and bounded process/result discussion. Existing native forms and lexical examples retain their original provenance,spelling/stress and licenses. Independently authored English preparation explanation and arrangement on2026-10-20. This material teaches only the already-admitted lexical partners;it adds no contextual Russian application,book prose or new native form. CC003 contextual request/prohibition assessment remains unresolved pending exact source admission and linguistic qualification. No review/owner approval.
+Distinguish partner recall from contextual use
+shippedText=Distinguish partner recall from contextual use
+transformation=content-audit research synthesis
+licenseId=Original app text
+licenseUrl=urn:russian-companion:license:original-app-text
+attribution=Russian Companion content-audit research synthesis, content-audit-2026-10-08. No owned-book prose is included.
+shareAlikeTreatment=Original research synthesis authored for this companion. It is not a CC BY-SA quotation. Application code, user data, and user recordings are outside this statement.
+sourceHash=7fd48ad326fe6efee09cc3771360bccf2e28f58a59092d817e7521ae86816ade
+contentHash=75739ed24072d1777ca7c7234abe74e77a182a4b50b7c61708e578eae4af377e
 audioAssetId=
 reviewerIdentity=
 reviewerQualification=
@@ -4158,14 +4410,16 @@ permitsAppUse=true
 - `u15-st-teach-aspect-consolidate-1` EXAMPLE `ex-u15-aspect-consolidate-0`
 - `u15-st-teach-aspect-consolidate-1` EXAMPLE `ex-u15-aspect-consolidate-1`
 - `u15-st-teach-aspect-consolidate-1` REFERENCE `ref-u1115-attribution`
+- `u15-st-teach-aspect-consolidate-2` EXAMPLE `ex-u15-aspect-consolidate-2`
+- `u15-st-teach-aspect-consolidate-2` EXAMPLE `ex-u15-aspect-consolidate-3`
+- `u15-st-teach-aspect-consolidate-2` REFERENCE `ref-u1115-attribution`
+- `u15-st-teach-aspect-consolidate-3` REFERENCE `ref-u1115-attribution`
 - `u15-st-guided-aspect-consolidate-1` REMEDIATION `u15-st-rem-aspect-consolidate`
 - `u15-st-guided-aspect-consolidate-1` ITEM `u15-g-aspect-consolidate-0`
-- `u15-st-teach-aspect-consolidate-2` REFERENCE `ref-u1115-attribution`
-- `u15-st-teach-aspect-consolidate-3` EXAMPLE `ex-u15-aspect-consolidate-2`
-- `u15-st-teach-aspect-consolidate-3` EXAMPLE `ex-u15-aspect-consolidate-3`
-- `u15-st-teach-aspect-consolidate-3` REFERENCE `ref-u1115-attribution`
 - `u15-st-rem-aspect-consolidate` EXAMPLE `ex-u15-aspect-consolidate-0`
 - `u15-st-rem-aspect-consolidate` EXAMPLE `ex-u15-aspect-consolidate-1`
+- `u15-st-rem-aspect-consolidate` EXAMPLE `ex-u15-aspect-consolidate-2`
+- `u15-st-rem-aspect-consolidate` EXAMPLE `ex-u15-aspect-consolidate-3`
 - `u15-st-check-aspect-consolidate` REMEDIATION `u15-st-rem-aspect-consolidate`
 - `u15-st-check-aspect-consolidate` ITEM `u15-i-aspect-consolidate-1`
 - `u15-st-check-aspect-consolidate` ITEM `u15-i-aspect-consolidate-2`
@@ -4191,6 +4445,14 @@ permitsAppUse=true
 - `obj-u15-say-request` PROVENANCE `prov-ca-u15-feedback-u15-i-say-request-1-distractor-1`
 - `obj-u15-say-request` PROVENANCE `prov-ca-u15-feedback-u15-i-say-request-2`
 - `obj-u15-say-request` PROVENANCE `prov-ca-u15-feedback-u15-i-say-request-2-distractor-1`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-cc003-preparation-u15-st-rem-aspect-consolidate-body`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-cc003-preparation-u15-st-rem-aspect-consolidate-title`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-cc003-preparation-u15-st-teach-aspect-consolidate-1-body`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-cc003-preparation-u15-st-teach-aspect-consolidate-1-title`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-cc003-preparation-u15-st-teach-aspect-consolidate-2-body`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-cc003-preparation-u15-st-teach-aspect-consolidate-2-title`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-cc003-preparation-u15-st-teach-aspect-consolidate-3-body`
+- `obj-u15-aspect-consolidate` PROVENANCE `prov-cc003-preparation-u15-st-teach-aspect-consolidate-3-title`
 - `obj-u15-imperative` PROVENANCE `prov-ex-or-u15-imperative-0`
 - `obj-u15-imperative` PROVENANCE `prov-ex-or-u15-imperative-0-gloss`
 - `obj-u15-imperative` PROVENANCE `prov-ex-or-u15-imperative-1`
