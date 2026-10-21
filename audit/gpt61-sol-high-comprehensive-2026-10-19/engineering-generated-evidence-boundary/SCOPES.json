@@ -1,0 +1,43 @@
+{
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "scopes": [
+    {
+      "stage": "BASELINE",
+      "sourceCommit": "2d053b1d777d7940be243a00a88bcaad0c5e48e5",
+      "counts": {
+        "reported": 5,
+        "passed": 0,
+        "failed": 5,
+        "errors": 0,
+        "skipped": 0
+      },
+      "exitCode": 1
+    },
+    {
+      "stage": "VERIFIED",
+      "sourceCommit": "6c3ba576ffa4f04a8fc879aa18b4fd044c900bda",
+      "counts": {
+        "reported": 2,
+        "passed": 2,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "exitCode": 0
+    }
+  ],
+  "diagnosticProjectionNotJUnit": true,
+  "remainingFreshnessFailures": [
+    "CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical",
+    "OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+    "Unit1ReviewPackageTest.committedPackageMatchesTheCurriculumTraversal"
+  ],
+  "remainingFailuresNotRerun": true,
+  "screenshotExportersExcluded": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  }
+}
