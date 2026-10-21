@@ -1,0 +1,193 @@
+{
+  "sources": [
+    {
+      "commit": "49a926c5ace0459edf7712ca5d90db4a63ff9d31",
+      "bytes": 20036214,
+      "sha256": "33e5655c99d6d5003da0ab1af9249dc814472e3436e0d28afd2f878f6ade4940"
+    },
+    {
+      "commit": "96242a17a87cc2ec0f5d7418cd98a9d3220a9e99",
+      "bytes": 19898513,
+      "sha256": "7d480aa307ba99b0cdeb2915116f9339788cd563573262d390cc8c04868c53c9"
+    },
+    {
+      "commit": "37419b9c20c72eaf48ef2e5244520973ed29de8c",
+      "bytes": 20170831,
+      "sha256": "a6a5f314cff598a722e22b977292b0b7b1d1cfb460fc1415c8f50f034c3a9b5c"
+    },
+    {
+      "commit": "7efff9e18328c612de235236d98e834bb85cd1db",
+      "bytes": 20197056,
+      "sha256": "64d03d176e6ec6371684d5091a303139340aaa4a55ae67cb46d2738f9f81f67b"
+    },
+    {
+      "commit": "f56dbeed1ce414bbf33fec952a2731a70f86ffa0",
+      "bytes": 20170831,
+      "sha256": "a6a5f314cff598a722e22b977292b0b7b1d1cfb460fc1415c8f50f034c3a9b5c"
+    },
+    {
+      "commit": "2ff71f197efb73d99662bc8a64180dc01a79aec3",
+      "bytes": 19991425,
+      "sha256": "e674793a2b70e383be8e1705deae35b710fe6cbc87caa68a65aa55785238ea1f"
+    },
+    {
+      "commit": "f1dad5d93d7e9d9d0f2680866cb70227a4480cc3",
+      "bytes": 20036126,
+      "sha256": "2133ef7b879e25a336888b3679562f9e00069973a16254c8310b4c52e29ac34e"
+    },
+    {
+      "commit": "7c369a8ce8adf7571046ec83331de0630765b759",
+      "bytes": 20197056,
+      "sha256": "64d03d176e6ec6371684d5091a303139340aaa4a55ae67cb46d2738f9f81f67b"
+    },
+    {
+      "commit": "fe919656bfa2775b5cc2c22f2496d4258343cfea",
+      "bytes": 20305834,
+      "sha256": "8890852d28ee669929a671900075a5ba0e39b8146507c9b6a4759e9b3749078c"
+    },
+    {
+      "commit": "fcc0113fabefeb178cca432608394f2fe88b13c7",
+      "bytes": 20197056,
+      "sha256": "64d03d176e6ec6371684d5091a303139340aaa4a55ae67cb46d2738f9f81f67b"
+    },
+    {
+      "commit": "175a793020d85b8760a9255cf8b2b6b0091745f4",
+      "bytes": 20305834,
+      "sha256": "8890852d28ee669929a671900075a5ba0e39b8146507c9b6a4759e9b3749078c"
+    },
+    {
+      "commit": "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04",
+      "bytes": 20334134,
+      "sha256": "53da66c18cf1509a82dda35d0986ee7f3ee1d56efe466dd36681f797f83bfd8b"
+    },
+    {
+      "commit": "b5e1daf50ac8597d00aeb6976f894d3ce44c03ca",
+      "bytes": 20036214,
+      "sha256": "33e5655c99d6d5003da0ab1af9249dc814472e3436e0d28afd2f878f6ade4940"
+    },
+    {
+      "commit": "e6db0bdfe0bbb40edf190623e2123014946f305b",
+      "bytes": 20170831,
+      "sha256": "a6a5f314cff598a722e22b977292b0b7b1d1cfb460fc1415c8f50f034c3a9b5c"
+    },
+    {
+      "commit": "b7e53230e2119b1e57d781b1e1b955f074a38601",
+      "bytes": 20350033,
+      "sha256": "fc2a59cdc61ec82640f29743707b67f04812a372e13fac08987aa16e512df2ca"
+    }
+  ],
+  "rawComparisons": [
+    {
+      "before": "37419b9c",
+      "after": "7efff9e1",
+      "changedTopLevelKeys": [
+        "units",
+        "provenanceRecords"
+      ],
+      "changedUnitNumbers": [
+        7,
+        10
+      ],
+      "beforeProvenanceRecords": 6984,
+      "afterProvenanceRecords": 6989,
+      "qualification": "Raw JSON comparison;executed typed assertions remain authoritative"
+    },
+    {
+      "before": "7efff9e1",
+      "after": "f56dbeed",
+      "changedTopLevelKeys": [
+        "units",
+        "provenanceRecords"
+      ],
+      "changedUnitNumbers": [
+        7,
+        10
+      ],
+      "beforeProvenanceRecords": 6989,
+      "afterProvenanceRecords": 6984,
+      "qualification": "Raw JSON comparison;executed typed assertions remain authoritative"
+    },
+    {
+      "before": "7c369a8c",
+      "after": "fe919656",
+      "changedTopLevelKeys": [
+        "items",
+        "units",
+        "provenanceRecords",
+        "sourceTextPool"
+      ],
+      "changedUnitNumbers": [
+        8
+      ],
+      "beforeProvenanceRecords": 6989,
+      "afterProvenanceRecords": 7024,
+      "qualification": "Raw JSON comparison;executed typed assertions remain authoritative"
+    },
+    {
+      "before": "fe919656",
+      "after": "fcc0113f",
+      "changedTopLevelKeys": [
+        "items",
+        "units",
+        "provenanceRecords",
+        "sourceTextPool"
+      ],
+      "changedUnitNumbers": [
+        8
+      ],
+      "beforeProvenanceRecords": 7024,
+      "afterProvenanceRecords": 6989,
+      "qualification": "Raw JSON comparison;executed typed assertions remain authoritative"
+    },
+    {
+      "before": "175a7930",
+      "after": "0f8001a8",
+      "changedTopLevelKeys": [
+        "units",
+        "provenanceRecords"
+      ],
+      "changedUnitNumbers": [
+        15
+      ],
+      "beforeProvenanceRecords": 7024,
+      "afterProvenanceRecords": 7032,
+      "qualification": "Raw JSON comparison;executed typed assertions remain authoritative"
+    },
+    {
+      "before": "b5e1daf5",
+      "after": "e6db0bdf",
+      "changedTopLevelKeys": [
+        "examples",
+        "items",
+        "units",
+        "provenanceRecords",
+        "sourceTextPool"
+      ],
+      "changedUnitNumbers": [
+        4
+      ],
+      "beforeProvenanceRecords": 6943,
+      "afterProvenanceRecords": 6984,
+      "qualification": "Raw JSON comparison;executed typed assertions remain authoritative"
+    },
+    {
+      "before": "2ff71f19",
+      "after": "f1dad5d9",
+      "changedTopLevelKeys": [
+        "units",
+        "provenanceRecords"
+      ],
+      "changedUnitNumbers": [
+        7
+      ],
+      "beforeProvenanceRecords": 6935,
+      "afterProvenanceRecords": 6943,
+      "qualification": "Raw JSON comparison;executed typed assertions remain authoritative"
+    }
+  ],
+  "historicalUnit7ReviewManifest": {
+    "sourceCommit": "7d92d8813e105932391448d94247534493337118",
+    "contentReviewDigest": "0bda8d40aae3c040f5c6f9a8a2771de45f95dbdad1bf8232854a2fc3c999e9e9",
+    "reviewPackageDigest": "acfecf2901691a10a46fe362cf544b5479cc3c77297324cd919b3731659d0f0f"
+  }
+}

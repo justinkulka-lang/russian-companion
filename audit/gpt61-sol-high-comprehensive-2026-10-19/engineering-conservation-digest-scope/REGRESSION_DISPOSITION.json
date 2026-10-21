@@ -1,0 +1,198 @@
+{
+  "originalLedger": "audit/gpt61-sol-high-comprehensive-2026-10-19/current-host-regression-2026-10-21/CONTINUATION_2_COMPLETE/OPEN_FAILURES.json",
+  "originalLedgerSha256": "851a975019e3e5b94a8c12225df3e385cac47bee78c30c5383ccb7e67d44e64a",
+  "priorDispositionSha256": "6cc64c6f04cfb933681a3ced2c5728899af96e32c3e3ca4fc93d816d6287e1cf",
+  "observations": [
+    {
+      "scope": "ORIGINAL_PARTIAL",
+      "sourceCommit": "4c26706288122fd5f527fd73a08230e024424905",
+      "identity": "dev.russiancompanion.v2.BatchECapabilityResearchTest#digestsGovernanceAndLaterUnitsStayUnchanged",
+      "outcome": "FAILURE",
+      "exceptions": [
+        {
+          "type": "org.gradle.internal.serialize.PlaceholderAssertionError",
+          "messagePreview": "expected:<[e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4]> but was:<[bbd8919abe7d6f4968440b9ee9d60812959ad148c121428644103ad76eee7880]>",
+          "messageBytes": 154,
+          "messageSha256": "f0f22dda6ec6288121b24c88784b3140600bf84c40e63a10bb79e99bfe830841"
+        }
+      ],
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONSERVATION_CURRENT_SOURCE_AND_NEGATIVE_ASSERTIONS_VERIFIED_NOT_INDEPENDENT_CLOSURE",
+      "scopedVerificationSource": "3346e47620da7c51bec85738df4b5c71b83b0578"
+    },
+    {
+      "scope": "ORIGINAL_PARTIAL",
+      "sourceCommit": "4c26706288122fd5f527fd73a08230e024424905",
+      "identity": "dev.russiancompanion.v2.CompleteRuleCorrectionTest#availabilityPlayerShowsCompleteRulesWithItsFullRussianCue",
+      "outcome": "FAILURE",
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "Action performScrollTo() failed.\nReason: Expected exactly '1' node but found '2' nodes that satisfy: ((TestTag = 'v2-prompt-letter') && (Text + InputText + EditableText contains '\u0412 \u041c\u043e\u0441\u043a\u0432\u0435\u0301 \u0435\u0441\u0442\u044c \u0441\u0442\u0430\u0301\u0440\u044b\u0435 \u0437\u0434\u0430\u0301\u043d\u0438\u044f' (ignoreCase: false)))\nNodes found:\n1) Node #126 at (l=24.0, t=236.0, r=54.0, b=272.0)px, Tag: 'v2-prompt-letter'\nText = '[\u0412 \u041c\u043e\u0441\u043a\u0432\u0435\u0301 \u0435\u0441\u0442\u044c \u0441\u0442\u0430\u0301\u0440\u044b\u0435 \u0437\u0434\u0430\u0301\u043d\u0438\u044f]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 19 siblings\n2) Node #142 at (l=24.0, t=572.0, r=54.0, b=608.0)px, Tag: 'v2-prompt-letter'\nText = '[\u0412 \u041c\u043e\u0441\u043a\u0432\u0435\u0301 \u0435\u0441\u0442\u044c \u0441\u0442\u0430\u0301\u0440\u044b\u0435 \u0437\u0434\u0430\u0301\u043d\u0438\u044f]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 19 siblings\n",
+          "messageBytes": 792,
+          "messageSha256": "977e675740b6f695830bfabce6a634b6d6141ea42277a3c1c7094b0fa810628e"
+        }
+      ],
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONTRACT_CURRENT_ADMISSION_AND_EVERY_CUE_VERIFIED_NOT_INDEPENDENT_CLOSURE"
+    },
+    {
+      "scope": "ORIGINAL_PARTIAL",
+      "sourceCommit": "4c26706288122fd5f527fd73a08230e024424905",
+      "identity": "dev.russiancompanion.v2.CompleteRuleCorrectionTest#completeChoicesExplainTheCasesAndAllTeachingPrecedesPractice",
+      "outcome": "FAILURE",
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "",
+          "messageBytes": 0,
+          "messageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONTRACT_CURRENT_ADMISSION_AND_EVERY_CUE_VERIFIED_NOT_INDEPENDENT_CLOSURE"
+    },
+    {
+      "scope": "ORIGINAL_PARTIAL",
+      "sourceCommit": "4c26706288122fd5f527fd73a08230e024424905",
+      "identity": "dev.russiancompanion.v2.FragmentGlossTeachingTest#everyNativeItemExampleHistoricalRecordAndUnrelatedUnitRemainsExact",
+      "outcome": "FAILURE",
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "expected:<[V2CheckItem(id=u1-i-\u0430-identity, kind=LETTER_IDENTITY, language=en, prompt=Which printed letter is shown?, promptLetter=\u0410, promptLetterRole=CUE, options=[Latin A, Cyrillic \u0410, Cyrillic \u0420], answer=Cyrillic \u0410, feedback=The printed shape can match Latin A. In this course it is the Cyrillic vowel letter \u0410., objectiveId=obj-u1-letter-identity, sourceId=src-app-english-v2, reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT, containsGeneratedRussian=false, distractorRationales=[], assessment=null), V2CheckItem(id=u1-i-\u043c-identity, kind=LETTER_IDENTITY, language=en, prompt=Which printed letter is shown?, promptLetter=\u041c, promptLetterRole=CUE, options=[Cyrillic \u041c, Cyrillic \u041d, Cyrillic \u0422], answer=Cyrillic \u041c, feedback=\u041c is an early consonant letter. It is not \u041d., objectiveId=obj-u1-letter-identity, sourceId=src-app-english-v2, reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT, containsGeneratedRussian=false, distractorRationales=[], assessment=null), V2CheckItem(id=u1-i-\u0440-not-p, kind=CONFUSABLE, lang",
+          "messageBytes": 2114378,
+          "messageSha256": "d8fa9cd6798e587ff0f6b69d8dd61a5199cc093df16c87b15c39668d670b97d9"
+        }
+      ],
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONSERVATION_CURRENT_SOURCE_AND_NEGATIVE_ASSERTIONS_VERIFIED_NOT_INDEPENDENT_CLOSURE",
+      "scopedVerificationSource": "3346e47620da7c51bec85738df4b5c71b83b0578"
+    },
+    {
+      "scope": "ORIGINAL_PARTIAL",
+      "sourceCommit": "4c26706288122fd5f527fd73a08230e024424905",
+      "identity": "dev.russiancompanion.v2.HistoricalTeachingFixtureScopeTest#currentUnit14And15RetainTheirExactCorrectionWhileTheWholePackHasAdvanced",
+      "outcome": "FAILURE",
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "Current Unit 15 expected:<V2Unit(number=15, id=unit-15, title=Requests, the imperative, and consolidation of aspect use, shortLabel=Requests, topicSummary=Proposed Unit 15 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=15, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed Lesson 15, printed pages 171-187. Independently stated topic scope: Requests, imperative forms, and consolidation of aspect use. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment., prerequisiteUnitNumbers=[14], estimatedMinutes=54, objectives=[V2Objective(id=obj-u15-imperative, u",
+          "messageBytes": 42170,
+          "messageSha256": "31f186e9ea13503a0374af27c4e3a06ddba71a61b3e11beee4596dbc29025b6b"
+        }
+      ],
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONSERVATION_CURRENT_SOURCE_AND_NEGATIVE_ASSERTIONS_VERIFIED_NOT_INDEPENDENT_CLOSURE",
+      "scopedVerificationSource": "3346e47620da7c51bec85738df4b5c71b83b0578"
+    },
+    {
+      "scope": "FIRST_CONTINUATION_PARTIAL",
+      "sourceCommit": "f2de778e7c33f8aea2a690aad9d93766915b74ff",
+      "identity": "dev.russiancompanion.v2.Unit15AspectPreparationHistoryTest#originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact",
+      "outcome": "FAILURE",
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "expected:<[V2Unit(number=1, id=unit-1, title=Learning to read Russian, shortLabel=Printed letters, topicSummary=Content-complete development unit for printed letters: identities, print pairs, look-alikes, signs, and letter-level decoding. Qualified review and the owned-edition mapping are still pending., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=1, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed Lesson 1 mapping from the publisher's public table of contents. Owned-edition comparison is not signed, so this unit is not labeled aligned., prerequisiteUnitNumbers=[], estimatedMinutes=152, objectives=[V2Objective(id=obj-u1-letter-identity, unitNumber=1, title=Identify staged printed letters, kind=RECOGNITION, instructionStepIds=[u1-st-vowels, u1-st-cons, u1-st-system], exampleIds=[ex-letter-0410, ex-letter-0411, ex-letter-0413, ex-letter-0414, ex-letter-0416, ex-letter-0417, ex-letter-0418, ex-letter-041a, ex-letter-041b, ex-letter-041",
+          "messageBytes": 2060730,
+          "messageSha256": "37f39b75c4cd54905cf41823414d25395e081dd8b020e6adf31c43ab7e7a4eb2"
+        }
+      ],
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONSERVATION_CURRENT_SOURCE_AND_NEGATIVE_ASSERTIONS_VERIFIED_NOT_INDEPENDENT_CLOSURE",
+      "scopedVerificationSource": "3346e47620da7c51bec85738df4b5c71b83b0578"
+    },
+    {
+      "scope": "FINAL_CONTINUATION",
+      "sourceCommit": "56cd6694645bd35c589e9cfa597a271e2d2eb1ff",
+      "identity": "dev.russiancompanion.v2.Unit4PresentTeachingTest#existingNativeItemsExamplesRecordsAndOtherUnitContentsRemainExact",
+      "outcome": "FAILED",
+      "messagePreview": "java.lang.AssertionError: expected:<[V2CheckItem(id=u1-i-\u0430-identity, kind=LETTER_IDENTITY, language=en, prompt=Which printed letter is shown?, promptLetter=\u0410, promptLetterRole=CUE, options=[Latin A, Cyrillic \u0410, Cyrillic \u0420], answer=Cyrillic \u0410, feedback=The printed shape can match Latin A. In this course it is the Cyrillic vowel letter \u0410., objectiveId=obj-u1-letter-identity, sourceId=src-app-english-v2, reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT, containsGeneratedRussian=false, distractorRationales=[], assessment=null), V2CheckItem(id=u1-i-\u043c-identity, kind=LETTER_IDENTITY, language=en, prompt=Which printed letter is shown?, promptLetter=\u041c, promptLetterRole=CUE, options=[Cyrillic \u041c, Cyrillic \u041d, Cyrillic \u0422], answer=Cyrillic \u041c, feedback=\u041c is an early consonant letter. It is not \u041d., objectiveId=obj-u1-letter-identity, sourceId=src-app-english-v2, reviewStatus=IMPLEMENTED_PENDING_FINAL_AUDIT, containsGeneratedRussian=false, distractorRationales=[], assessment=null), V2CheckItem(id=u1-i-\u0440-no",
+      "fullMessageSha256": "da066c2e44e24c63e72911c76edc735d3fa01b8c5f3ca79551b9be9ab0fc9c77",
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONSERVATION_CURRENT_SOURCE_AND_NEGATIVE_ASSERTIONS_VERIFIED_NOT_INDEPENDENT_CLOSURE",
+      "scopedVerificationSource": "3346e47620da7c51bec85738df4b5c71b83b0578"
+    },
+    {
+      "scope": "FINAL_CONTINUATION",
+      "sourceCommit": "56cd6694645bd35c589e9cfa597a271e2d2eb1ff",
+      "identity": "dev.russiancompanion.v2.Unit7AgreementTeachingTest#genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+      "outcome": "FAILED",
+      "messagePreview": "java.lang.AssertionError: expected:<[1, 2, 3, 4, 5, 6]> but was:<[1, 2, 3]>",
+      "fullMessageSha256": "e93b7f750d7b0d11c055f5ab8170373143fae5ee97366ad902f2fd107f712c07",
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONTRACT_AND_CURRENT_REPAIR_VERIFIED_NOT_INDEPENDENT_CLOSURE"
+    },
+    {
+      "scope": "FINAL_CONTINUATION",
+      "sourceCommit": "56cd6694645bd35c589e9cfa597a271e2d2eb1ff",
+      "identity": "dev.russiancompanion.v2.Unit7AgreementTeachingTest#freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+      "outcome": "FAILED",
+      "messagePreview": "java.lang.NullPointerException",
+      "fullMessageSha256": "0580e6836107c406c3b3a0cac1d8b48bc16b5e41599889bf5350ceeae81ba214",
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONTRACT_AND_CURRENT_REPAIR_VERIFIED_NOT_INDEPENDENT_CLOSURE"
+    },
+    {
+      "scope": "FINAL_CONTINUATION",
+      "sourceCommit": "56cd6694645bd35c589e9cfa597a271e2d2eb1ff",
+      "identity": "dev.russiancompanion.v2.Unit7AgreementTeachingTest#unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "outcome": "FAILED",
+      "messagePreview": "java.lang.AssertionError: expected:<V2CurriculumPack(schemaVersion=1, packId=v2-curriculum-foundation, packVersion=3, publicReleaseEligible=false, linguisticReview=V2ReviewRecord(id=rev-pending-v2-curriculum, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=Pack-level status is not a unit approval. Each unit has its own pending review record., reviewChainStages=[], evidence=null, finalAudit=null), unitReviews=[V2UnitReviewRecord(id=rev-pending-unit-1, unitNumber=1, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=No qualified reviewer has signed Unit 1., reviewChainStages=[], evidence=null, finalAudit=null), V2UnitReviewRecord(id=rev-pending-unit-2, unitNumber=2, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, rev",
+      "fullMessageSha256": "df8a91356ed2df49644de8f8d011f36475e434c01b5883e4eb3d92bf7d8c19bc",
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONSERVATION_CURRENT_SOURCE_AND_NEGATIVE_ASSERTIONS_VERIFIED_NOT_INDEPENDENT_CLOSURE",
+      "scopedVerificationSource": "3346e47620da7c51bec85738df4b5c71b83b0578"
+    },
+    {
+      "scope": "FINAL_CONTINUATION",
+      "sourceCommit": "56cd6694645bd35c589e9cfa597a271e2d2eb1ff",
+      "identity": "dev.russiancompanion.v2.Unit8ExistenceHistoryTest#frozenEvidenceOtherObjectivesAndLaterGenitiveStayExact",
+      "outcome": "FAILED",
+      "messagePreview": "java.lang.AssertionError: expected:<[V2Unit(number=1, id=unit-1, title=Learning to read Russian, shortLabel=Printed letters, topicSummary=Content-complete development unit for printed letters: identities, print pairs, look-alikes, signs, and letter-level decoding. Qualified review and the owned-edition mapping are still pending., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=1, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed Lesson 1 mapping from the publisher's public table of contents. Owned-edition comparison is not signed, so this unit is not labeled aligned., prerequisiteUnitNumbers=[], estimatedMinutes=152, objectives=[V2Objective(id=obj-u1-letter-identity, unitNumber=1, title=Identify staged printed letters, kind=RECOGNITION, instructionStepIds=[u1-st-vowels, u1-st-cons, u1-st-system], exampleIds=[ex-letter-0410, ex-letter-0411, ex-letter-0413, ex-letter-0414, ex-letter-0416, ex-letter-0417, ex-letter-0418, ex-letter-041a, ex-",
+      "fullMessageSha256": "9371e097fc904dd12dd7a4fd6f92ef68855a213fe91165f35fab20b6d62a6808",
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONSERVATION_CURRENT_SOURCE_AND_NEGATIVE_ASSERTIONS_VERIFIED_NOT_INDEPENDENT_CLOSURE",
+      "scopedVerificationSource": "3346e47620da7c51bec85738df4b5c71b83b0578"
+    },
+    {
+      "scope": "FINAL_CONTINUATION",
+      "sourceCommit": "56cd6694645bd35c589e9cfa597a271e2d2eb1ff",
+      "identity": "dev.russiancompanion.v2.Units1115MappingGapTest#preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded",
+      "outcome": "FAILED",
+      "messagePreview": "org.junit.ComparisonFailure: unit 4 expected:<[1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11]> but was:<[c440d047f575da49ba463f026f0f66ebb7f953f38cccecc30b824add2396d395]>",
+      "fullMessageSha256": "bb53e3f108b38373f4fc3530784b8d7f478056fa87c66d6f30baca6228bdd58d",
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONSERVATION_CURRENT_SOURCE_AND_NEGATIVE_ASSERTIONS_VERIFIED_NOT_INDEPENDENT_CLOSURE",
+      "scopedVerificationSource": "3346e47620da7c51bec85738df4b5c71b83b0578"
+    },
+    {
+      "scope": "FINAL_CONTINUATION",
+      "sourceCommit": "56cd6694645bd35c589e9cfa597a271e2d2eb1ff",
+      "identity": "dev.russiancompanion.v2.Units2125SourceIntakeTest#structuralMappingsAreDigestBoundAndStayUnsigned",
+      "outcome": "FAILED",
+      "messagePreview": "org.junit.ComparisonFailure: unit 4 expected:<[1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11]> but was:<[c440d047f575da49ba463f026f0f66ebb7f953f38cccecc30b824add2396d395]>",
+      "fullMessageSha256": "bb53e3f108b38373f4fc3530784b8d7f478056fa87c66d6f30baca6228bdd58d",
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONSERVATION_CURRENT_SOURCE_AND_NEGATIVE_ASSERTIONS_VERIFIED_NOT_INDEPENDENT_CLOSURE",
+      "scopedVerificationSource": "3346e47620da7c51bec85738df4b5c71b83b0578"
+    },
+    {
+      "scope": "FINAL_CONTINUATION",
+      "sourceCommit": "56cd6694645bd35c589e9cfa597a271e2d2eb1ff",
+      "identity": "dev.russiancompanion.v2.V2RebuildTest#structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+      "outcome": "FAILED",
+      "messagePreview": "org.junit.ComparisonFailure: expected:<[1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11]> but was:<[c440d047f575da49ba463f026f0f66ebb7f953f38cccecc30b824add2396d395]>",
+      "fullMessageSha256": "18b0392e5007c595f5ff402b53e62821ebb326cfc95a2930d889b755210ce7c4",
+      "disposition": "OPEN_NOT_WAIVED",
+      "engineeringDisposition": "SCOPED_HISTORICAL_CONSERVATION_CURRENT_SOURCE_AND_NEGATIVE_ASSERTIONS_VERIFIED_NOT_INDEPENDENT_CLOSURE",
+      "scopedVerificationSource": "3346e47620da7c51bec85738df4b5c71b83b0578"
+    }
+  ],
+  "scopedEngineeringReconciliations": 14,
+  "remainingUnreconciledObservationsFromThisLedger": 0,
+  "newBroadRegressionStillRequired": true,
+  "external17FindingStatusesUnchanged": true,
+  "completeSuite": false
+}
