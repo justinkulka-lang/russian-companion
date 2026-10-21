@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "path": "app/src/main/assets/licenses/public-domain-notice.txt",
+      "gitBlob": "e6d941c983d97659cfdbfe4a07b1506f7645c06f",
+      "bytes": 804,
+      "inspection": "COMPLETE_TEXT_READ",
+      "conclusion": "Source-specific declaration/policy context inspected. Community prose and third-party quotations/media require separate treatment; no universal source/asset clearance."
+    },
+    {
+      "path": "app/src/main/assets/licenses/units-3-5-curriculum-notice.txt",
+      "gitBlob": "db38dafc8bbd6993fc88aac75f4114f7d647de1d",
+      "bytes": 1598,
+      "inspection": "COMPLETE_TEXT_READ",
+      "conclusion": "Source-specific declaration/policy context inspected. Community prose and third-party quotations/media require separate treatment; no universal source/asset clearance."
+    },
+    {
+      "path": "app/src/main/assets/licenses/units-6-10-curriculum-notice.txt",
+      "gitBlob": "62651739a2bc32b161c131a550ab33bca3c3f696",
+      "bytes": 2190,
+      "inspection": "COMPLETE_TEXT_READ",
+      "conclusion": "Source-specific declaration/policy context inspected. Community prose and third-party quotations/media require separate treatment; no universal source/asset clearance."
+    },
+    {
+      "path": "app/src/main/assets/licenses/units-26-30-curriculum-notice.txt",
+      "gitBlob": "7d80caa38355dad96cf60dcdfa56febd6306aaf3",
+      "bytes": 2413,
+      "inspection": "COMPLETE_TEXT_READ",
+      "conclusion": "Source-specific declaration/policy context inspected. Community prose and third-party quotations/media require separate treatment; no universal source/asset clearance."
+    },
+    {
+      "path": "catalog/sources/units-16-20/wiktionary/copyrights-87545419.txt",
+      "gitBlob": "08abcd635d60f2e18b03a69929a06bd47badc864",
+      "bytes": 9634,
+      "inspection": "COMPLETE_TEXT_READ",
+      "conclusion": "Source-specific declaration/policy context inspected. Community prose and third-party quotations/media require separate treatment; no universal source/asset clearance."
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikipedia/copyrights-1369466282.txt",
+      "gitBlob": "acb805423e74c96c113e87b3bca248ba6dbf4979",
+      "bytes": 26648,
+      "inspection": "COMPLETE_TEXT_READ",
+      "conclusion": "Source-specific declaration/policy context inspected. Community prose and third-party quotations/media require separate treatment; no universal source/asset clearance."
+    },
+    {
+      "path": "catalog/sources/units-26-30/wikisource/copyrights-5723825.txt",
+      "gitBlob": "f4ee53798e4ea9053807da95c528d9b220b924a6",
+      "bytes": 59094,
+      "inspection": "PARTIAL_LINES_1_110",
+      "conclusion": "Source-specific declaration/policy context inspected. Community prose and third-party quotations/media require separate treatment; no universal source/asset clearance."
+    }
+  ],
+  "currentApplicationAdmissionOrLegalClearance": "NOT_ISSUED"
+}

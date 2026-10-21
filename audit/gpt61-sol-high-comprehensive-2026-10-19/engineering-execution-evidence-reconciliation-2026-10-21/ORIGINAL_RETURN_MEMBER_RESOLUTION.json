@@ -1,0 +1,542 @@
+{
+  "kind": "HISTORICAL_OUTPUT_ACCESSIBILITY_NOT_NEW_AUDIT",
+  "archivePath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/GPT61_FINISH_AUDIT_RESULTS_5c176eb2.zip",
+  "archiveSha256": "0321d323cdd56a3453ced784267f66527c30de5d24e749ba0471285af245016b",
+  "pinnedPreExposureSource": "f89d37f93cbaecf1108d00a2ef1f78518db9e581",
+  "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "members": [
+    {
+      "archiveMember": "APP_ENGINEERING_AUDIT.csv",
+      "bytes": 44424,
+      "sha256": "ae2968ea40a6564e5f1daf839d6c003ddd591c949964dc5158ae196c83a0f11d",
+      "gitBlob": "98a2b974b98c434a5958a0ea633437b746e88c47",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/APP_ENGINEERING_AUDIT.csv",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "AUDIT_SCOPE_AND_EVIDENCE.json",
+      "bytes": 103730,
+      "sha256": "38814a459874f54cbf177634008185804f229793d9b1be9673989d8531f635ea",
+      "gitBlob": "9707a10a611d9fa195e720dc6fa711d97acb67d5",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/AUDIT_SCOPE_AND_EVIDENCE.json",
+      "action": "REUSE_EXISTING_EXACT_TRACKED_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": [
+        "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/AUDIT_SCOPE_AND_EVIDENCE.json"
+      ]
+    },
+    {
+      "archiveMember": "BOOK_COVERAGE_CONTINUATION.csv",
+      "bytes": 35512,
+      "sha256": "142e5a313343bfbc8def108244c46480121e6cf1836802ac9eb8f1a82c378c2e",
+      "gitBlob": "894c4ea466a7cc2e76db7b5f4eb757efefca433f",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/BOOK_COVERAGE_CONTINUATION.csv",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "CODEX_RETURN_HANDOFF.md",
+      "bytes": 3688,
+      "sha256": "d8fbb2ab0b1df8da6a8835423dbd953602032aca4dcfbbb90455d5a755540394",
+      "gitBlob": "8774dc3e083fcd719f0168f726bafbfe1086e158",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/CODEX_RETURN_HANDOFF.md",
+      "action": "REUSE_EXISTING_EXACT_TRACKED_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": [
+        "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/CODEX_RETURN_HANDOFF.md"
+      ]
+    },
+    {
+      "archiveMember": "CURRICULUM_ENTITY_COVERAGE.csv",
+      "bytes": 5962078,
+      "sha256": "b6e4d67c66aba3ea33d01ffef00b238e215b0ad8a1b7cf998b9ca380e0ed2e8f",
+      "gitBlob": "a34f3bd67d48cba08264bd4efba9cb3c710d108c",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/CURRICULUM_ENTITY_COVERAGE.csv",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "EXECUTION_EVIDENCE_REQUESTS.csv",
+      "bytes": 64415,
+      "sha256": "13bce04ae742fba17262dc8b08777146b619fc71ef0dd43bd6ee70b189c65813",
+      "gitBlob": "42122739cc29713416d95b830660b0a2d32b35f7",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/EXECUTION_EVIDENCE_REQUESTS.csv",
+      "action": "REUSE_EXISTING_EXACT_TRACKED_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": [
+        "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/EXECUTION_EVIDENCE_REQUESTS.csv"
+      ]
+    },
+    {
+      "archiveMember": "FINAL_NONPHYSICAL_SCOPE_DECISION.md",
+      "bytes": 3160,
+      "sha256": "3d12f8c1765958835ff1462f38bb71f824dbf0161e71ace09f1079597e742580",
+      "gitBlob": "d3272f6fc3e1a1ae75fa718539f97777a5f5705c",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/FINAL_NONPHYSICAL_SCOPE_DECISION.md",
+      "action": "REUSE_EXISTING_EXACT_TRACKED_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": [
+        "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/FINAL_NONPHYSICAL_SCOPE_DECISION.md"
+      ]
+    },
+    {
+      "archiveMember": "FINDINGS.csv",
+      "bytes": 27053,
+      "sha256": "3713e6261904f9199d6e7efa62923b98ae27af7341b76c8811a22820688e7f09",
+      "gitBlob": "313e754b35fb4f26130d7313373f938631fc7646",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/FINDINGS.csv",
+      "action": "REUSE_EXISTING_EXACT_TRACKED_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": [
+        "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/FINDINGS.csv"
+      ]
+    },
+    {
+      "archiveMember": "FINDING_RECONCILIATION.csv",
+      "bytes": 15467,
+      "sha256": "59cc67baedcfca21090a62aa6574380871791ee31944f2115be4a0f6a25c4c8d",
+      "gitBlob": "20a9e65136d64b6d23e0ff0fed71f5fb5313267e",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/FINDING_RECONCILIATION.csv",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "GAP_CLOSURE.csv",
+      "bytes": 7136,
+      "sha256": "a2d49724a78103e74e0477699faa095ef74936e0bff17693dbb72b584226abdc",
+      "gitBlob": "770844b3f87495f073086d94795759fbe3d5392e",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/GAP_CLOSURE.csv",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "IMPLEMENTATION_WORK_ORDER.csv",
+      "bytes": 28379,
+      "sha256": "6810fae9ce20ff3be550f1597a82387c0c593430ddc7f08d7bc88f752292270b",
+      "gitBlob": "1502a4be5a7ece52e5746ec009c8edd4de8186ed",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/IMPLEMENTATION_WORK_ORDER.csv",
+      "action": "REUSE_EXISTING_EXACT_TRACKED_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": [
+        "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/IMPLEMENTATION_WORK_ORDER.csv"
+      ]
+    },
+    {
+      "archiveMember": "INDEPENDENT_AUDIT_REPORT.md",
+      "bytes": 9748,
+      "sha256": "aef6ae38829dc52196a9efe84a86eb3677f2f73cfdb91d9bfbe2c62bbc2f7fa8",
+      "gitBlob": "c93ba81227bad5ae2f1fe6449c27d269b80abec2",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/INDEPENDENT_AUDIT_REPORT.md",
+      "action": "REUSE_EXISTING_EXACT_TRACKED_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": [
+        "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/INDEPENDENT_AUDIT_REPORT.md"
+      ]
+    },
+    {
+      "archiveMember": "ITEM_ASSESSMENT_AUDIT.csv",
+      "bytes": 691946,
+      "sha256": "43dd61b5c68d38315a8375d57041e63b88a014d741429fe50560c6f9c8022128",
+      "gitBlob": "c21e0f06b2c6a6e7b0237b933756ecec0cae1ddd",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/ITEM_ASSESSMENT_AUDIT.csv",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "REPOSITORY_FILE_COVERAGE.csv",
+      "bytes": 2134244,
+      "sha256": "1edaa707776bba90986202659dd98d79809c9f30aa835e502017acd3ff92753e",
+      "gitBlob": "7f479cbf18fbdac5ae58b06ca0ad7d260192ad58",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/REPOSITORY_FILE_COVERAGE.csv",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "REQUIREMENTS_MATRIX.csv",
+      "bytes": 154175,
+      "sha256": "f1f59395737d8a104fdbd5b561dc3a31d032bec7c14f4ac8085264bf7437754e",
+      "gitBlob": "0e617a27d660c8ebdf5c397a0baa956a05568c42",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/REQUIREMENTS_MATRIX.csv",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "RUNTIME_VERIFICATION_HANDOFF.md",
+      "bytes": 7949,
+      "sha256": "d67cf3f45b8e08cf9c34aab5a948ea1c8c7cbf3e73636b0721f6947a593d9c44",
+      "gitBlob": "2df607390f92b5a0e307bec97e3b4cec8a8ff0f0",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/RUNTIME_VERIFICATION_HANDOFF.md",
+      "action": "REUSE_EXISTING_EXACT_TRACKED_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": [
+        "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/RUNTIME_VERIFICATION_HANDOFF.md"
+      ]
+    },
+    {
+      "archiveMember": "SHA256SUMS.txt",
+      "bytes": 4074,
+      "sha256": "197c4eb67a2d220b2b600e628682334e6315fcb3795dda7932b9ed7dd9cef4ee",
+      "gitBlob": "c5a3b0fee94c222d05231bf3bc42e5555f436386",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/SHA256SUMS.txt",
+      "action": "REUSE_EXISTING_EXACT_TRACKED_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": [
+        "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/SHA256SUMS.txt"
+      ]
+    },
+    {
+      "archiveMember": "SOURCE_AND_BINDING_REVIEW.json",
+      "bytes": 127163,
+      "sha256": "e61b47758f2b494e491c974053ff52d99e97b29bbe39ac8075f0b5d1d3b456af",
+      "gitBlob": "85a56151a60d7c87cbeb094eb2adedb5d0ba0876",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/SOURCE_AND_BINDING_REVIEW.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "TARGET_75_DISPOSITIONS.csv",
+      "bytes": 52220,
+      "sha256": "76d4c860e30cfdac89140730966eda5e3f1bcf08f4b0c4b28dbbfda44af6f35b",
+      "gitBlob": "f58c9d6fa915ba06b4e0843b7387ccdca63ba69f",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/TARGET_75_DISPOSITIONS.csv",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "UNIT_COVERAGE.csv",
+      "bytes": 58123,
+      "sha256": "6c5bbd4f2fb21e05a87b264e0a3c3793fbd626950b7edb16c991c1eb135f1e86",
+      "gitBlob": "4346921b19c56683e94a0777ad09a42f74bd657b",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/UNIT_COVERAGE.csv",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "audit-change-summary.md",
+      "bytes": 1725,
+      "sha256": "acd0f76eb555df9e9fe6797598eba30bedac29210f7f7f702aa551c03d2ae164",
+      "gitBlob": "9c392b7f39325087219c46c79a6ae4817f513953",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/audit-change-summary.md",
+      "action": "REUSE_EXISTING_EXACT_TRACKED_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": [
+        "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/audit-change-summary.md"
+      ]
+    },
+    {
+      "archiveMember": "checkpoint.json",
+      "bytes": 1402,
+      "sha256": "fc62dfe463f66ee9e8028bd65a07be39f6d9341fff865f9a58a2e57b306772e1",
+      "gitBlob": "067c34725f4492638974ca814f7137059bc2a0df",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/checkpoint.json",
+      "action": "REUSE_EXISTING_EXACT_TRACKED_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": [
+        "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/checkpoint.json"
+      ]
+    },
+    {
+      "archiveMember": "safe_evidence/HISTORICAL_IA_RECHECKS.csv",
+      "bytes": 3698,
+      "sha256": "a5adfeacc615272a462eee93d41f2fe115e0f490648c08ad049fc95f2809ae40",
+      "gitBlob": "c078922080d76b2722adfcda1db4c3092ec35e8a",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/HISTORICAL_IA_RECHECKS.csv",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/SOURCE_GIT_PROOF.json",
+      "bytes": 7402,
+      "sha256": "b562222d0f92faa3964c7cbdea22021b2d266506e8bbcd95b3f5c56efafbe4a2",
+      "gitBlob": "672b4884db0f4b3a63ed9b749d5ade667aebb4e9",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/continuation/SOURCE_GIT_PROOF.json",
+      "action": "REUSE_EXISTING_EXACT_TRACKED_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": [
+        "audit/gpt61-sol-high-comprehensive-2026-10-19/continuation/SOURCE_GIT_PROOF.json"
+      ]
+    },
+    {
+      "archiveMember": "safe_evidence/environment_probe.json",
+      "bytes": 218,
+      "sha256": "8e50810075392447f3e689db6669e46a15a9ef4d61d472132fb683e357784a38",
+      "gitBlob": "1c4d4984d71b6a18e40f58486070705e30648cb4",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/environment_probe.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/finding_evidence.json",
+      "bytes": 7862,
+      "sha256": "286a2b8d117c6e9e5d1936f8868e755ba1dc07431c24572254808dea96b511ca",
+      "gitBlob": "bf136ec5898b8c2d2d2ec34e3d9f900ba3dc5f15",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/finding_evidence.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/finish_instructions_identity.json",
+      "bytes": 964,
+      "sha256": "f4e7a4da97a1f253ef791d03d23547bfd2c5fd6bc762f5ee0d24d9f74bb415f5",
+      "gitBlob": "de190def50bfcfafdb3170d52218ad575f9a4e96",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/finish_instructions_identity.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/frozen_rights_review.json",
+      "bytes": 2922,
+      "sha256": "9b6bdf2ed76e403f9ec1c36c7cfe5725bcc150b82aea5efb2ce67e7f240fb3a9",
+      "gitBlob": "9e5d44d7574f1107f62343d753cd4cf8e945cdbd",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/frozen_rights_review.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/historical_lifecycle_review.csv",
+      "bytes": 68951,
+      "sha256": "b66ffa765e244780c84d8a12179036f31de85c515099c203fe12b429288fbbf1",
+      "gitBlob": "c3116b46ceb4b72a11f3a65d5e97bcf4428b3718",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/historical_lifecycle_review.csv",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/history_review_summary.json",
+      "bytes": 4981,
+      "sha256": "c7caa0ad494470e07a23838be44d6ada230e95771cc29691e7b8263e3b07b744",
+      "gitBlob": "e8e685d7523db4b8ffde806a4d8bbca75472a5b2",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/history_review_summary.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/input_verification.json",
+      "bytes": 877,
+      "sha256": "fa8251bb5e5f5044b0f713e19a041028108ff1f2a69c578060c441b053a12413",
+      "gitBlob": "9562715c5d1f74342fb4bee5500d6662896f4395",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/input_verification.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/input_verifier_execution.json",
+      "bytes": 1045,
+      "sha256": "aebbd800e4cdbe57143ae4f209da32ae27d26f2aa45627a104bda53ac8ab43e7",
+      "gitBlob": "a6dee36d34c21bf803d0325163493a08c05cb14d",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/input_verifier_execution.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/inspection_journal.json",
+      "bytes": 7240,
+      "sha256": "df4178b6baf4931197dbd6166d385cadf3d16ee0063e9df4893989ff710e28bc",
+      "gitBlob": "0fb7ee78966d9cea298e84e7ff97f113646e6c7f",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/inspection_journal.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/mechanical_full_results.json",
+      "bytes": 262,
+      "sha256": "69231b2592524b9051e92cbc4dbd43e26888a81cd008cfba5f2bb30dbd38b646",
+      "gitBlob": "f3070f0911323678716d9e97e059ba7b99a73c51",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/mechanical_full_results.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/preservation_baseline.json",
+      "bytes": 2085,
+      "sha256": "c8dd300d5b8e047a3e0505af30886d020bf63a38bd9a4313f75477aab69c2086",
+      "gitBlob": "4c17ce553e5962eef76aef52f26d52fbc99248f7",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/preservation_baseline.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/prior_continuation_validation.json",
+      "bytes": 1336,
+      "sha256": "dd2cc519f454fa45195b3eb5aaa9bbb2439283462b114aa10213352ed34c9c8b",
+      "gitBlob": "99030b74edcab6425428230fc218bea41ff5ee06",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/prior_continuation_validation.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/projection_file_hashes.json",
+      "bytes": 58120,
+      "sha256": "17f6513a2151e7f709961e23e66231a093b195cd92a2532fe0f227b7bedf0fcb",
+      "gitBlob": "645aef3b9610ff200df1f67b8184cc35d29e7f4b",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/projection_file_hashes.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/review_histories.py",
+      "bytes": 5301,
+      "sha256": "436fdce96a858a0f0dae51e94010f7c0871e8aefbc5959d60d7b3ee424f1caa7",
+      "gitBlob": "26e0b3f8400b88349cc357011e5aaeb3697aae88",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/review_histories.py",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/supplied_environment_assessment.json",
+      "bytes": 585,
+      "sha256": "252e3dc9d4ff47b9989c97d3628c2aba91e893ada1c71d7bea261c04627eaf89",
+      "gitBlob": "3b0c419b07b87ec36f1f82bcb87703f8592d6c86",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/supplied_environment_assessment.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/tree_verification.json",
+      "bytes": 280,
+      "sha256": "f5c81834224f245b710c3db6273e93ff8d04d34981f956b18020f63157eadf77",
+      "gitBlob": "b354857c531e243433fc0fdc635db550ac1bfb91",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/tree_verification.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/validation.json",
+      "bytes": 842,
+      "sha256": "ee5a26f1222a202670394c44e7dfc3dc15030fe91ed6f8d82b719b4f0d239077",
+      "gitBlob": "94a9c8c6d0d2bbfc44710eeeda1146f1fbbe73c8",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/validation.json",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    },
+    {
+      "archiveMember": "safe_evidence/verify_reconstructed_input.py",
+      "bytes": 4765,
+      "sha256": "3f0caf6d641cdd04080c7db3b48964e3eb6a168375b316f39cf6ade09cef48f1",
+      "gitBlob": "065df45e92c6111281660a87673e8c6594a5705c",
+      "canonicalRepositoryPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/verify_reconstructed_input.py",
+      "action": "EXPOSE_PREVIOUSLY_ZIP_ONLY_EXACT_BYTES",
+      "originalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "historicalStatus": "ORIGINAL_EXTERNAL_OUTPUT_UNCHANGED_NOT_CURRENT_REVIEW",
+      "bodyInspectionByThisExposure": "NOT_ESTABLISHED",
+      "allEquivalentPreviouslyTrackedPaths": []
+    }
+  ],
+  "exposedNewFiles": 30,
+  "reusedExactTrackedFiles": 12,
+  "noExistingEvidenceModified": true,
+  "privatePdfIncluded": false,
+  "independentAudit": "INCOMPLETE"
+}

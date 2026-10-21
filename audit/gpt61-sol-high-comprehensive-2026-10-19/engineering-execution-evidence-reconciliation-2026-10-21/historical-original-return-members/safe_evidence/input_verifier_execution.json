@@ -1,0 +1,36 @@
+{
+  "command": [
+    "python",
+    "continuation_results_5c176eb/safe_evidence/verify_reconstructed_input.py",
+    "--index",
+    "continuation_audit/instructions/CURRICULUM_INDEX.json",
+    "--projection-root",
+    "continuation_audit/supplement",
+    "--codec",
+    "current_audit/evidence/catalog/curriculum_storage.py",
+    "--proof",
+    "continuation_audit/instructions/SOURCE_GIT_PROOF.json",
+    "--inventory",
+    "current_audit/tree.json"
+  ],
+  "exitCode": 0,
+  "result": {
+    "outcome": "PASS_INPUT_INTEGRITY_ONLY",
+    "projectionFiles": 357,
+    "rawBytes": 20036214,
+    "rawSha256": "33e5655c99d6d5003da0ab1af9249dc814472e3436e0d28afd2f878f6ade4940",
+    "commit": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+    "tree": "f95bfa3c1ae6b8ac07b42b6db9fa69c5e247830f",
+    "treeObjects": 453,
+    "items": 622,
+    "examples": 817,
+    "capabilities": 58,
+    "provenance": 6943,
+    "firstKeys": 561,
+    "requiredChecks": 429,
+    "firstRequired": 379,
+    "zipVerified": false,
+    "androidExecuted": false
+  },
+  "stderr": ""
+}

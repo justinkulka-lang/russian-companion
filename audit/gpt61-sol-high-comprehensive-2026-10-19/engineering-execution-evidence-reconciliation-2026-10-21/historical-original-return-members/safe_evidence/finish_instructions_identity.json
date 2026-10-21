@@ -1,0 +1,24 @@
+{
+  "preparationCommit": "76cdcedbfd4181b5227a5a927fafd8b8b4c43c9a",
+  "instructionFiles": [
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-audit/FINISH_AUDIT_PROMPT.txt",
+      "bytes": 5449,
+      "sha256": "9a4dadcd4c92d43e50600e23d72f9a36ebd35289192bc373e48320f6d5e1d681",
+      "read": "COMPLETE"
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-audit/GAP_COMPLETION_PLAN.md",
+      "bytes": 3609,
+      "sha256": "3f53768b1861d83d95052da2023c980216c0a8a8b051c88cab62bab766612bd4",
+      "read": "COMPLETE"
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-audit/REQUIRED_RETURNS.md",
+      "bytes": 2581,
+      "sha256": "18994a6d2dbccd94c699da4e91986fc8154325ee7a3b8b52eeeaf190dec6c3a1",
+      "read": "COMPLETE"
+    }
+  ],
+  "routing": "Latest user supersedes embedded-DOCX/packet routing; reused verified existing inputs and individual pinned GitHub text reads."
+}

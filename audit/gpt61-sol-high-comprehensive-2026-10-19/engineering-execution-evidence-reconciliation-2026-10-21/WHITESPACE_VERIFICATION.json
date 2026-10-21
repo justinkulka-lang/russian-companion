@@ -1,0 +1,115 @@
+{
+  "kind": "NARROW_HISTORICAL_EXACT_BYTES_WHITESPACE_EXCEPTION",
+  "unfilteredExit": 2,
+  "unfilteredDiagnosticBytes": 13066376,
+  "unfilteredDiagnosticSha256": "b9ecd20fecdeee120124a3299cf7577dc8d1a3958b5398e72cf1f3acd4003433",
+  "historicalCsvsOnly": [
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/APP_ENGINEERING_AUDIT.csv",
+      "warningCount": 49,
+      "sha256": "ae2968ea40a6564e5f1daf839d6c003ddd591c949964dc5158ae196c83a0f11d",
+      "exactOriginalZipBytesPreserved": true,
+      "crlfBytesPresent": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/BOOK_COVERAGE_CONTINUATION.csv",
+      "warningCount": 31,
+      "sha256": "142e5a313343bfbc8def108244c46480121e6cf1836802ac9eb8f1a82c378c2e",
+      "exactOriginalZipBytesPreserved": true,
+      "crlfBytesPresent": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/CURRICULUM_ENTITY_COVERAGE.csv",
+      "warningCount": 12035,
+      "sha256": "b6e4d67c66aba3ea33d01ffef00b238e215b0ad8a1b7cf998b9ca380e0ed2e8f",
+      "exactOriginalZipBytesPreserved": true,
+      "crlfBytesPresent": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/FINDING_RECONCILIATION.csv",
+      "warningCount": 18,
+      "sha256": "59cc67baedcfca21090a62aa6574380871791ee31944f2115be4a0f6a25c4c8d",
+      "exactOriginalZipBytesPreserved": true,
+      "crlfBytesPresent": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/GAP_CLOSURE.csv",
+      "warningCount": 11,
+      "sha256": "a2d49724a78103e74e0477699faa095ef74936e0bff17693dbb72b584226abdc",
+      "exactOriginalZipBytesPreserved": true,
+      "crlfBytesPresent": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/ITEM_ASSESSMENT_AUDIT.csv",
+      "warningCount": 623,
+      "sha256": "43dd61b5c68d38315a8375d57041e63b88a014d741429fe50560c6f9c8022128",
+      "exactOriginalZipBytesPreserved": true,
+      "crlfBytesPresent": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/REPOSITORY_FILE_COVERAGE.csv",
+      "warningCount": 6428,
+      "sha256": "1edaa707776bba90986202659dd98d79809c9f30aa835e502017acd3ff92753e",
+      "exactOriginalZipBytesPreserved": true,
+      "crlfBytesPresent": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/REQUIREMENTS_MATRIX.csv",
+      "warningCount": 196,
+      "sha256": "f1f59395737d8a104fdbd5b561dc3a31d032bec7c14f4ac8085264bf7437754e",
+      "exactOriginalZipBytesPreserved": true,
+      "crlfBytesPresent": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/TARGET_75_DISPOSITIONS.csv",
+      "warningCount": 76,
+      "sha256": "76d4c860e30cfdac89140730966eda5e3f1bcf08f4b0c4b28dbbfda44af6f35b",
+      "exactOriginalZipBytesPreserved": true,
+      "crlfBytesPresent": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/UNIT_COVERAGE.csv",
+      "warningCount": 31,
+      "sha256": "6c5bbd4f2fb21e05a87b264e0a3c3793fbd626950b7edb16c991c1eb135f1e86",
+      "exactOriginalZipBytesPreserved": true,
+      "crlfBytesPresent": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/HISTORICAL_IA_RECHECKS.csv",
+      "warningCount": 19,
+      "sha256": "a5adfeacc615272a462eee93d41f2fe115e0f490648c08ad049fc95f2809ae40",
+      "exactOriginalZipBytesPreserved": true,
+      "crlfBytesPresent": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/historical_lifecycle_review.csv",
+      "warningCount": 65,
+      "sha256": "b66ffa765e244780c84d8a12179036f31de85c515099c203fe12b429288fbbf1",
+      "exactOriginalZipBytesPreserved": true,
+      "crlfBytesPresent": true
+    }
+  ],
+  "reason": "Original external CSVs retain exact CRLF bytes. Normalizing them would alter historical evidence. Only the specifically listed original files are excluded;all authored/other staged files pass standard whitespace validation.",
+  "remainingStagedFilesCheckCommand": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    ".",
+    ":(exclude)audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/APP_ENGINEERING_AUDIT.csv",
+    ":(exclude)audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/BOOK_COVERAGE_CONTINUATION.csv",
+    ":(exclude)audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/CURRICULUM_ENTITY_COVERAGE.csv",
+    ":(exclude)audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/FINDING_RECONCILIATION.csv",
+    ":(exclude)audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/GAP_CLOSURE.csv",
+    ":(exclude)audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/ITEM_ASSESSMENT_AUDIT.csv",
+    ":(exclude)audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/REPOSITORY_FILE_COVERAGE.csv",
+    ":(exclude)audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/REQUIREMENTS_MATRIX.csv",
+    ":(exclude)audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/TARGET_75_DISPOSITIONS.csv",
+    ":(exclude)audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/UNIT_COVERAGE.csv",
+    ":(exclude)audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/HISTORICAL_IA_RECHECKS.csv",
+    ":(exclude)audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/historical-original-return-members/safe_evidence/historical_lifecycle_review.csv"
+  ],
+  "remainingStagedFilesExit": 0,
+  "noGlobalGitWhitespaceRuleChanged": true
+}

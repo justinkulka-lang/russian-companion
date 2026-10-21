@@ -1,0 +1,305 @@
+{
+  "targetCommit": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "duplicateGroups": [
+    {
+      "ids": [
+        "u8-g-spelling-0",
+        "u8-i-plural-6"
+      ],
+      "pointers": [
+        "/items/149",
+        "/items/148"
+      ],
+      "sameCue": true,
+      "sameAnswer": true,
+      "sameOptionSet": true,
+      "roles": [
+        {
+          "answerIndex": 0,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": false,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        },
+        {
+          "answerIndex": 0,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": true,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "u10-i-have-1",
+        "u10-i-absence-3"
+      ],
+      "pointers": [
+        "/items/210",
+        "/items/217"
+      ],
+      "sameCue": true,
+      "sameAnswer": true,
+      "sameOptionSet": true,
+      "roles": [
+        {
+          "answerIndex": 0,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": true,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        },
+        {
+          "answerIndex": 0,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": true,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "u10-g-absence-0",
+        "u10-i-have-3"
+      ],
+      "pointers": [
+        "/items/214",
+        "/items/212"
+      ],
+      "sameCue": true,
+      "sameAnswer": true,
+      "sameOptionSet": true,
+      "roles": [
+        {
+          "answerIndex": 1,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": false,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        },
+        {
+          "answerIndex": 1,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": true,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "u10-i-have-4",
+        "u10-i-absence-4"
+      ],
+      "pointers": [
+        "/items/213",
+        "/items/218"
+      ],
+      "sameCue": true,
+      "sameAnswer": true,
+      "sameOptionSet": true,
+      "roles": [
+        {
+          "answerIndex": 1,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": true,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        },
+        {
+          "answerIndex": 1,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": true,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "u23-g-ranges-0",
+        "u23-i-ranges-2"
+      ],
+      "pointers": [
+        "/items/410",
+        "/items/412"
+      ],
+      "sameCue": true,
+      "sameAnswer": true,
+      "sameOptionSet": true,
+      "roles": [
+        {
+          "answerIndex": 0,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": false,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        },
+        {
+          "answerIndex": 0,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": true,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "u23-g-during-event-0",
+        "u23-i-during-event-2"
+      ],
+      "pointers": [
+        "/items/416",
+        "/items/418"
+      ],
+      "sameCue": true,
+      "sameAnswer": true,
+      "sameOptionSet": true,
+      "roles": [
+        {
+          "answerIndex": 0,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": false,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        },
+        {
+          "answerIndex": 0,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": true,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "u23-g-duration-0",
+        "u23-i-duration-2"
+      ],
+      "pointers": [
+        "/items/419",
+        "/items/421"
+      ],
+      "sameCue": true,
+      "sameAnswer": true,
+      "sameOptionSet": true,
+      "roles": [
+        {
+          "answerIndex": 0,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": false,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        },
+        {
+          "answerIndex": 0,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": true,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        }
+      ]
+    },
+    {
+      "ids": [
+        "u24-g-concord-0",
+        "u24-i-concord-2"
+      ],
+      "pointers": [
+        "/items/437",
+        "/items/439"
+      ],
+      "sameCue": true,
+      "sameAnswer": true,
+      "sameOptionSet": true,
+      "roles": [
+        {
+          "answerIndex": 0,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": false,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        },
+        {
+          "answerIndex": 0,
+          "hasAssessment": true,
+          "promptLetterRole": "CUE",
+          "gating": true,
+          "objectiveKind": "RECOGNITION",
+          "objectiveListedCheck": true,
+          "optionsUnique": true,
+          "sourceTupleAcceptance": "NOT_EXECUTED"
+        }
+      ]
+    }
+  ],
+  "newFindingPointers": {
+    "CC011": {
+      "obj-u7-adverb-invariance": "/units/6/objectives/9",
+      "u7-i-adverb-invariance-1": "/items/238",
+      "u7-i-adverb-invariance-2": "/items/239"
+    },
+    "CC012": {
+      "obj-u8-availability": "/units/7/objectives/4",
+      "u8-st-teach-availability-2": "/units/7/sessions/5/steps/1",
+      "u8-st-teach-availability-3": "/units/7/sessions/5/steps/2",
+      "u8-i-availability-1": "/items/163",
+      "u8-i-availability-2": "/items/164"
+    }
+  },
+  "backupStatic": {
+    "path": "app/src/main/java/dev/russiancompanion/v2/backup/V2BackupFormat.kt",
+    "inputCopyLine": 547,
+    "jsonReadBytesLine": 751,
+    "executedAndroid": false
+  }
+}

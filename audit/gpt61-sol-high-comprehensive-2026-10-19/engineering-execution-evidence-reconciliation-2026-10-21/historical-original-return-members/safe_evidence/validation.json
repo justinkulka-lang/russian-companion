@@ -1,0 +1,28 @@
+{
+  "csvWidthsAndSchemas": "PASS",
+  "jsonSyntax": "PASS",
+  "priorRequiredIdentitiesPreserved": "PASS",
+  "findingIdentities": "CC001\u2013CC017",
+  "findings": 17,
+  "severityCounts": {
+    "HIGH": 6,
+    "MEDIUM": 11
+  },
+  "fileInspectionCounts": {
+    "READ_COMPLETE": 46,
+    "NOT_INSPECTED": 6124,
+    "HASH_ONLY": 148,
+    "PARTIAL": 109
+  },
+  "retainedHistoryJsonRows": 64,
+  "historicalIaRows": 18,
+  "executionRequestRows": 70,
+  "executionRequestStatus": "ALL_NOT_EXECUTED",
+  "requiredOutputs": 19,
+  "rawAndCurrentPrivatePdfIdentityReverified": true,
+  "prior16ArchiveAndAllPriorTopLevelOutputsUnchanged": true,
+  "privateSourceMaterial": "Excluded by construction and reviewed output allowlist; no PDF/OCR/image/rawcurriculum included",
+  "auditOutcome": "INCOMPLETE",
+  "androidExecution": false,
+  "formalApproval": false
+}

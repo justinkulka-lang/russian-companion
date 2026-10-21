@@ -1,0 +1,12 @@
+{
+  "integrity": {
+    "provenanceSourceHashes": 6943,
+    "provenanceContentHashes": 6943,
+    "capabilitySpanHashes": 58
+  },
+  "linkAnomalies": [],
+  "allFirst": 561,
+  "requiredCheckFirst": 379,
+  "requiredChecks": 429,
+  "uniqueExamplesInPriorPacket": 811
+}

@@ -1,0 +1,138 @@
+{
+  "histories": 64,
+  "groups": 8,
+  "checkedStructuralDefects": 0,
+  "reviewOnlyPreviewWitnesses": [
+    {
+      "group": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition",
+      "before": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/UNSTARTED_REVIEW.json",
+      "after": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/PARTIAL_REVIEW.json",
+      "changedCollections": [
+        "reviewAnswers"
+      ],
+      "addedReviewAnswers": 2,
+      "sourceAlgorithmPrediction": {
+        "additions": 0,
+        "replacements": 357,
+        "omissions": 0,
+        "conflicts": 0
+      },
+      "kotlinOrAndroidExecuted": false
+    },
+    {
+      "group": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1",
+      "before": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/UNSTARTED_REVIEW.json",
+      "after": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/PARTIAL_REVIEW.json",
+      "changedCollections": [
+        "reviewAnswers"
+      ],
+      "addedReviewAnswers": 2,
+      "sourceAlgorithmPrediction": {
+        "additions": 0,
+        "replacements": 357,
+        "omissions": 0,
+        "conflicts": 0
+      },
+      "kotlinOrAndroidExecuted": false
+    },
+    {
+      "group": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching",
+      "before": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/UNSTARTED_REVIEW.json",
+      "after": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/PARTIAL_REVIEW.json",
+      "changedCollections": [
+        "reviewAnswers"
+      ],
+      "addedReviewAnswers": 2,
+      "sourceAlgorithmPrediction": {
+        "additions": 0,
+        "replacements": 952,
+        "omissions": 0,
+        "conflicts": 0
+      },
+      "kotlinOrAndroidExecuted": false
+    },
+    {
+      "group": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition",
+      "before": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/UNSTARTED_REVIEW.json",
+      "after": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/PARTIAL_REVIEW.json",
+      "changedCollections": [
+        "reviewAnswers"
+      ],
+      "addedReviewAnswers": 2,
+      "sourceAlgorithmPrediction": {
+        "additions": 0,
+        "replacements": 952,
+        "omissions": 0,
+        "conflicts": 0
+      },
+      "kotlinOrAndroidExecuted": false
+    },
+    {
+      "group": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching",
+      "before": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/UNSTARTED_REVIEW.json",
+      "after": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/PARTIAL_REVIEW.json",
+      "changedCollections": [
+        "reviewAnswers"
+      ],
+      "addedReviewAnswers": 2,
+      "sourceAlgorithmPrediction": {
+        "additions": 0,
+        "replacements": 952,
+        "omissions": 0,
+        "conflicts": 0
+      },
+      "kotlinOrAndroidExecuted": false
+    },
+    {
+      "group": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction",
+      "before": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/UNSTARTED_REVIEW.json",
+      "after": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/PARTIAL_REVIEW.json",
+      "changedCollections": [
+        "reviewAnswers"
+      ],
+      "addedReviewAnswers": 2,
+      "sourceAlgorithmPrediction": {
+        "additions": 0,
+        "replacements": 151,
+        "omissions": 0,
+        "conflicts": 0
+      },
+      "kotlinOrAndroidExecuted": false
+    },
+    {
+      "group": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching",
+      "before": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/UNSTARTED_REVIEW.json",
+      "after": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/PARTIAL_REVIEW.json",
+      "changedCollections": [
+        "reviewAnswers"
+      ],
+      "addedReviewAnswers": 2,
+      "sourceAlgorithmPrediction": {
+        "additions": 0,
+        "replacements": 487,
+        "omissions": 0,
+        "conflicts": 0
+      },
+      "kotlinOrAndroidExecuted": false
+    },
+    {
+      "group": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition",
+      "before": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/UNSTARTED_REVIEW.json",
+      "after": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/PARTIAL_REVIEW.json",
+      "changedCollections": [
+        "reviewAnswers"
+      ],
+      "addedReviewAnswers": 2,
+      "sourceAlgorithmPrediction": {
+        "additions": 0,
+        "replacements": 689,
+        "omissions": 0,
+        "conflicts": 0
+      },
+      "kotlinOrAndroidExecuted": false
+    }
+  ],
+  "kotlinOrAndroidExecuted": false,
+  "archiveBytesConservationVerified": false,
+  "originalUnit7RestoreCause": "UNCONFIRMED"
+}

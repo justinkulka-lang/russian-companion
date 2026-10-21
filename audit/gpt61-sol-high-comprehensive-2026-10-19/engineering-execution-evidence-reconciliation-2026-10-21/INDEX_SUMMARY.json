@@ -1,0 +1,39 @@
+{
+  "requestRows": 70,
+  "dispositions": {
+    "CURRENT_TASK_OBSERVED_HISTORICAL_TARGET_OUTSTANDING": 4,
+    "EXECUTED_HOST_IDENTITIES_AVAILABLE_SCENARIO_NOT_ADJUDICATED": 60,
+    "NO_CURRENT_METHOD_BINDING_SCENARIO_OUTSTANDING": 6
+  },
+  "currentMethodRecords": 1323,
+  "sourceFiles": 217,
+  "unresolvedHistoricalIdentities": [],
+  "selectorMismatches": [
+    {
+      "row": 22,
+      "resolution": {
+        "requestedSelector": "*HostActivityLifecycleTest",
+        "declaredClassMatches": [],
+        "fileDeclarationAlternatives": [
+          "dev.russiancompanion.v2.HostActivityRecreationTest",
+          "dev.russiancompanion.v2.LearnerReloadRecoveryTest"
+        ],
+        "qualification": "Filename alternatives are explicit revised selectors,not matches to the original wildcard"
+      }
+    },
+    {
+      "row": 60,
+      "resolution": {
+        "requestedSelector": "*HostActivityLifecycleTest",
+        "declaredClassMatches": [],
+        "fileDeclarationAlternatives": [
+          "dev.russiancompanion.v2.HostActivityRecreationTest",
+          "dev.russiancompanion.v2.LearnerReloadRecoveryTest"
+        ],
+        "qualification": "Filename alternatives are explicit revised selectors,not matches to the original wildcard"
+      }
+    }
+  ],
+  "independentRequestFulfilled": 0,
+  "currentNewTestsExecuted": 0
+}

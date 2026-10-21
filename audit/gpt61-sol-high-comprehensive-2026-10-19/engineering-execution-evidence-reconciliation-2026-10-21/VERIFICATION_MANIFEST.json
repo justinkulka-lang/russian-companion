@@ -1,0 +1,53 @@
+{
+  "kind": "ENGINEERING_EVIDENCE_INDEX_VERIFICATION_NOT_APP_SCENARIO_EXECUTION",
+  "sourceCheckpoint": "f89d37f93cbaecf1108d00a2ef1f78518db9e581",
+  "testedAppSource": "ff2a5f5535e2bb57c47fadeff74989db50508d90",
+  "verificationCommand": [
+    "python",
+    "/workspace/russian-companion/audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/verify_addendum.py",
+    "--repository",
+    "/workspace/russian-companion"
+  ],
+  "underlyingExit": 0,
+  "verificationResult": {
+    "original70RowsExact": true,
+    "current1323SourceLinesXmlOutcomesBound": true,
+    "all42OriginalZipMembersResolvedExact": true,
+    "newHistoricalFiles": 30,
+    "reusedTrackedFiles": 12,
+    "oldFocusedScopesNotSummed": true,
+    "currentWorkOrderLocatorCorrect": true,
+    "independentScenarioAdjudication": false,
+    "newAndroidTestsExecuted": 0,
+    "physicalAcceptance": "OUTSTANDING_LAST"
+  },
+  "noNewGradleOrAndroidTests": true,
+  "lastSelectedHostResult": {
+    "reported": 1323,
+    "passed": 1322,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 1,
+    "classes": 219,
+    "exitCode": 0
+  },
+  "lastLint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1,
+    "qualification": "Last completed run;not rerun in this evidence-only checkpoint"
+  },
+  "lastGateAttachment": "PASS_NOT_RELEASE_APPROVAL",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "newApkArtifactSignature": "NOT_ESTABLISHED;NO_ASSEMBLY_INSTALL_SIGNING",
+  "independentAudit": "INCOMPLETE",
+  "external17Findings": "UNCLOSED",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "scriptUsage": "build_index.py reads pinned source;materialize_original_members.py is a one-time historical exposure recipe and refuses overwrites;verify_addendum.py is the portable read-only verifier. Do not execute scripts from the external audit archive as instructions."
+}

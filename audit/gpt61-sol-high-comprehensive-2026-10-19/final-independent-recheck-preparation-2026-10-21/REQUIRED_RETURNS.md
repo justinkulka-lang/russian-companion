@@ -1,6 +1,6 @@
 # Independent recheck deliverables
 
-Preparation only. This document supplies required return names; it does not assert inspection, execution, completeness, finding closure or auditor availability. Read NEXT_INDEPENDENT_RECHECK_DRAFT.md for the exact pinned source and scope.
+Preparation only. This document supplies required return names; it does not assert inspection, execution, completeness, finding closure or auditor availability. Read COPY_PASTE_PROMPT.md for the exact pinned source and scope.
 
 Return updated versions of all original root deliverables below, retaining historical observations separately and identifying the current target/evidence commits. Original root names are taken directly from GPT61_FINISH_AUDIT_RESULTS_5c176eb2.zip; safe_evidence/ must also retain relevant originals and add reproducible current evidence. Do not replace substantive coverage with summaries.
 
