@@ -1,0 +1,83 @@
+{
+  "testedSourceCommit": "6ab9d87eadcdb477719af5f0db3af6b90cce8d45",
+  "discoverySourceCommit": "00d86e68dbe682da1fafb73acacc7074f8fd246b",
+  "startedUtc": "2026-10-21T13:30:49.458792+00:00",
+  "finishedUtc": "2026-10-21T16:42:29.617453+00:00",
+  "activation": "source /workspace/setup/android-env.sh",
+  "workingDirectory": "/workspace/russian-companion",
+  "exactCommand": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/post-reconciliation-host-regression-2026-10-21/resources.gradle",
+    "-Daudit.events.path=/workspace/artifacts/post-reconciliation-host-regression-2026-10-21/REGRESSION/EVENTS.jsonl",
+    "-Daudit.gc.dir=/workspace/artifacts/post-reconciliation-host-regression-2026-10-21/REGRESSION",
+    "testDebugUnitTest",
+    "--rerun",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "counts": {
+    "reported": 1323,
+    "passed": 1321,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 1
+  },
+  "classes": 219,
+  "exitCode": 1,
+  "completeSuite": false,
+  "allOriginal14CurrentOutcomes": "PASSED",
+  "currentFailedMethod": "dev.russiancompanion.v2.Unit3GenderTeachingTest#freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+  "unit3FailureCause": "UNCONFIRMED",
+  "lint": {
+    "severities": {
+      "Fatal": 0,
+      "Error": 0,
+      "Warning": 20,
+      "Hint": 1
+    },
+    "reportSha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "analysisTasks": "UP-TO-DATE;report retained;not fresh analysis execution",
+    "lintDebug": "EXECUTED_PASSED"
+  },
+  "releaseGateAttachment": {
+    "task": "verifyReleaseGateAttachment",
+    "result": "EXECUTED_PASSED",
+    "releaseApproval": false
+  },
+  "compilation": "compileDebugSources UP-TO-DATE;not newly compiled",
+  "apk": {
+    "configuredApplicationId": "dev.russiancompanion",
+    "configuredVersionName": "2.0.0-dev",
+    "configuredVersionCode": 5,
+    "currentArtifactIdentity": "NOT_ESTABLISHED",
+    "currentArtifactSha256": "NOT_ESTABLISHED",
+    "currentArtifactSignature": "NOT_ESTABLISHED",
+    "assemblyInstallSigning": "NOT_RUN",
+    "candidateJsonSha256": "8091556047103ab25524dd0d7b255b52aad0a34a3c731d723e89a183ead9b661",
+    "historicalIdentityRecord": "audit/content-corrections/cloud-environment-2026-10-12/MAIN_HISTORICAL_VERIFICATION.json",
+    "historicalRecordsDoNotIdentifyCurrentSourceApk": true
+  },
+  "exporterExclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "skippedPhysicalMethod": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest#at020_physicalRebootPersistsGovernedRecords",
+  "physicalAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_INDEPENDENT_COMPREHENSIVE_NONPHYSICAL_AUDIT",
+  "environmentSettings": "Previously saved,unchanged;publication user-confirmed,independently unverified",
+  "externalOriginal17Findings": "UNCLOSED_PENDING_INDEPENDENT_RECHECK",
+  "historical691Claim": "420f41ff691source annotations;verified67focused methods;handoff execution unverified",
+  "historical562Claim": "mainff539220563reported/562passed/1skipped;different source and scope;not a complete-suite claim",
+  "trackedInputsChangedDuringRun": false
+}

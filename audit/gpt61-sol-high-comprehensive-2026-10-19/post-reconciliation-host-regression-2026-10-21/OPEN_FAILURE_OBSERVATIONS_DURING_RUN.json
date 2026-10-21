@@ -1,0 +1,32 @@
+{
+  "kind": "PARTIAL_RUN_OBSERVATION_NOT_FINAL_RESULT",
+  "sourceCommit": "6ab9d87eadcdb477719af5f0db3af6b90cce8d45",
+  "sourceFile": "app/src/test/java/dev/russiancompanion/v2/Unit3GenderTeachingTest.kt",
+  "sourceFileSha256": "b2491b9c2bd68606d98ee7889d20074ba0bd767fdc3234bb7be0728dc7ef8cb8",
+  "assertionLine": 114,
+  "assertion": "REPLACED expected; UNCHANGED observed",
+  "cause": "UNCONFIRMED",
+  "newTestsOrInputChanges": false,
+  "events": [
+    {
+      "line": 1871,
+      "rawEventSha256": "b1971986d5f2f0817d99dd0dc0f2343aaa1d7f02d393aaf1dedbbf92de3deabf",
+      "rawEvent": {
+        "kind": "RESULT",
+        "className": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+        "name": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+        "displayName": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+        "atMillis": 1792594906724,
+        "resultType": "FAILURE",
+        "startTime": 1792594906499,
+        "endTime": 1792594906655,
+        "exceptions": [
+          {
+            "type": "java.lang.AssertionError",
+            "message": "expected:<REPLACED> but was:<UNCHANGED>"
+          }
+        ]
+      }
+    }
+  ]
+}
