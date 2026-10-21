@@ -1,0 +1,9 @@
+# Next large task:independent comprehensive nonphysical recheck
+
+This directory is Codex engineering preparation,not an independent audit. Copy COPY_PASTE_PROMPT.md into the separate GPT-6.1 Sol/High audit chat with repository access. REQUIRED_RETURNS.md specifies all deliverables. Obtain the Penguin reference separately through the private access instructions;no PDF is included.
+
+The code/curriculum target is `ff2a5f5535e2bb57c47fadeff74989db50508d90`;completed evidence commit is `1e353738a062b2af6d91e1aaef35cbb8359d22e5`. Five input trees are equal. Full source-file and raw-object inventories,old-target changes,evidence supplements,17-finding engineering-report references and70original execution-request search candidates are provided. All independent review rows remain UNINSPECTED/NOT_RECHECKED;candidate test names are not scenario fulfillment. The original17findings remain unclosed and CC003 contextual/native/source/rights gaps remain.
+
+The fresh selected debug-host regression reports1322passed/1physicalskip/0failed/0errors,219classes,exit0. Four screenshot exporters/16methods explicitly excluded. This is not an unqualified complete-suite or full app/curriculum audit. Final comprehensive independent nonphysical audit/recheck comes next;actual Galaxy S26 Ultra airplane-mode/reboot acceptance stays LAST. No merge,freeze,new signing,formal advancement,owner or release approval.
+
+The preparation publication additionally updates the three durable pointers in AGENTS.md and audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md/CODEX_CHECKPOINT_2026-10-12.md. POINTER_CHANGE.patch retains those exact changes against completion evidence commit1e353738;inspect them along with every file in this directory. The final Git commit binds the publication including its manifest. Reinventory any later additions explicitly.

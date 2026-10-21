@@ -1,0 +1,20 @@
+{
+  "historicalAuditTarget": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+  "currentSourceTarget": "ff2a5f5535e2bb57c47fadeff74989db50508d90",
+  "oldTrackedFiles": 6427,
+  "currentTrackedFiles": 8372,
+  "pathChanges": 2085,
+  "changeCounts": {
+    "MODIFIED": 140,
+    "ADDED": 1945
+  },
+  "method": "Git modes/blob IDs/lengths;unmodified paths omitted,not semantic inspection",
+  "allReviewStatuses": "UNINSPECTED",
+  "changedTopLevelCounts": {
+    "AGENTS.md": 1,
+    "app": 65,
+    "audit": 1922,
+    "release": 1,
+    "review": 96
+  }
+}

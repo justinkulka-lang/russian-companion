@@ -1,0 +1,685 @@
+{
+  "kind": "ENGINEERING_PREPARATION_NOT_INDEPENDENT_AUDIT_RESULT",
+  "originalRequestsPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/EXECUTION_EVIDENCE_REQUESTS.csv",
+  "originalRequestsSha256": "13bce04ae742fba17262dc8b08777146b619fc71ef0dd43bd6ee70b189c65813",
+  "discoverySource": "3a7c55a37b4e06d3e370ab3565f5a69c82ab5acc",
+  "currentRegressionSource": "ff2a5f5535e2bb57c47fadeff74989db50508d90",
+  "requests": 70,
+  "originalStatusesUnchanged": true,
+  "newAuditFindingClosure": false,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "rows": [
+    {
+      "originalRow": 1,
+      "requirementId": "MA2-140;MA2-145",
+      "originalRowSha256": "add7baf211423411afda87cb27d3fe0561012a63e1365e4ba5c176d489d26892",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 2,
+      "requirementId": "MA2-140;MA2-145",
+      "originalRowSha256": "621ac371bee2a0f29b64dcc3a356c5631e7559f4ef540c264f390cad8d832753",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 3,
+      "requirementId": "MA2-140;MA2-145",
+      "originalRowSha256": "1734787fc680947bef89f5dcc85fb635148f8300488a2685bbcf304ce9e2a424",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 4,
+      "requirementId": "MA2-140;MA2-145",
+      "originalRowSha256": "cb39ba46851ac396ce9180acbe43f2952552e394c89a43c0c788f377390ebeb9",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 5,
+      "requirementId": "MA2-023;MA2-061;MA2-082;MA2-088",
+      "originalRowSha256": "7525566491638459aa7722a08b918c5f8e1a43340ff56b78f336f9ce040be581",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 6,
+      "requirementId": "MA2-004;MA2-021;MA2-028;MA2-051;MA2-052;MA2-053;MA2-054;MA2-087",
+      "originalRowSha256": "b0ef3ca29200375b42a45bbe09d26239970ad9cb3e312633b46ba233b9893eea",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 7,
+      "requirementId": "MA2-018;MA2-023;MA2-028;MA2-102",
+      "originalRowSha256": "e874c96177107bf8fbc1152cfae5a1ffc6957913e83492e74040fa2b78874bee",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 8,
+      "requirementId": "MA2-018;MA2-023;MA2-024;MA2-082",
+      "originalRowSha256": "28532149f81a762e70a89403705d5981571522a17ba850c6b5344ef972a734e6",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 9,
+      "requirementId": "MA2-018;MA2-023;MA2-029",
+      "originalRowSha256": "5a8d708de0a5e2ca2411efd6fb7f9e43af785e5a3005e48c4b2953bab6c088bf",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 10,
+      "requirementId": "MA2-018;MA2-023;MA2-028",
+      "originalRowSha256": "6b7b54e06de3a54995f3caaeaccde96b2e98f2a7520a3020cce088629429acf6",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 11,
+      "requirementId": "MA2-018;MA2-023;MA2-028",
+      "originalRowSha256": "1848eeccfac3c434c42b034731fd44c40b180706b16337e9c4b6d251c5687038",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 12,
+      "requirementId": "MA2-092;MA2-094;MA2-101;MA2-152",
+      "originalRowSha256": "a7ab065636498b697739f7e4e055988e8562128e59a1e608d0d09217e1c10237",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 13,
+      "requirementId": "MA2-092;MA2-093;MA2-094;MA2-099",
+      "originalRowSha256": "9043f04bbf50abf0f8ed569d32e584d70ff52b1a3719d7bf24d1d1bad0890ff7",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 14,
+      "requirementId": "MA2-023;MA2-082",
+      "originalRowSha256": "df3f9e5bf89090e8fe728e745c7cd430a06909ed1b19190f17586b00ed35f612",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 15,
+      "requirementId": "MA2-001;MA2-023;MA2-082;MA2-102",
+      "originalRowSha256": "fba6c10b737b717abb0a7504b6cb16f4f096fac81f40d4c06353349b05c5ac2a",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 16,
+      "requirementId": "MA2-018;MA2-026;MA2-029;MA2-030;MA2-177;MA2-178",
+      "originalRowSha256": "c1c160300cb2c9dc4b26057bccb0d3870473f02eeccb85332c76092c9278afb1",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 17,
+      "requirementId": "MA2-134;MA2-138;MA2-141",
+      "originalRowSha256": "84878a8d383f80d0c4239c9aaf6ac7e8229c6d4812b5577a94f72b003d4f1edd",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 18,
+      "requirementId": "MA2-136",
+      "originalRowSha256": "bfb6273fefcbaa6d6cc9d1ac55de73994f10e3e5b93658f7d43569ec81639b92",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 19,
+      "requirementId": "MA2-001;MA2-023;MA2-024",
+      "originalRowSha256": "8d0287c3e541090dc275cd0b3bb5bf841ec9cdbfc7e3fad59d6a935608edfe2a",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 20,
+      "requirementId": "MA2-001;MA2-023;MA2-024",
+      "originalRowSha256": "e90e03e17fa1e415cce73a35cda3f5d5df0c31c467c73c02a0a89ee250f69096",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 21,
+      "requirementId": "MA2-068",
+      "originalRowSha256": "4e58fae50a8f851baa3d7d9ffde23413c61f064c8ac155acc11cd74c0d3e5ea1",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 22,
+      "requirementId": "MA2-117;MA2-140;MA2-145",
+      "originalRowSha256": "5801d3c8d8990878244cd21b93583c033513aaaaebb2a6a8859e198cbe5c61f4",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 23,
+      "requirementId": "MA2-019;MA2-044;MA2-079",
+      "originalRowSha256": "4bdfd7da00d67ca31887867d009e69f40b32da4ed509e79a20024b7dbb2d14c3",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 24,
+      "requirementId": "MA2-117;MA2-145",
+      "originalRowSha256": "b3385d1338d6e1811f3fa0930bc5e2c51991c8df2028549c5ad6ce3a64b0c5fe",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 25,
+      "requirementId": "MA2-003;MA2-040;MA2-113",
+      "originalRowSha256": "fe34aba4713d6e64595dfaa675f302372338cd06303be2ca6c3e11f8da1aa609",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 26,
+      "requirementId": "MA2-022;MA2-058",
+      "originalRowSha256": "2c9ad12fc5581e0bf927e0b1f0b3930a3583bf21cad8e895d4145ee142b51036",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 27,
+      "requirementId": "MA2-038;MA2-083;MA2-085",
+      "originalRowSha256": "cc9a33d6da0d6d4f42208064600486ea2e5cbf70022b4787e693da612d4a300f",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 28,
+      "requirementId": "MA2-039;MA2-041;MA2-042",
+      "originalRowSha256": "153c0337f5f2e872f1403ee04bda0eb1b9f2f0e86ce106bd6c717d94fc054aed",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 29,
+      "requirementId": "MA2-061;MA2-082",
+      "originalRowSha256": "717032e92ffe5aecee7a7457927eecea862782be9753d4243f7d8a68073fe149",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [
+        "dev.russiancompanion.v2.LabCueCorrectionTest",
+        "dev.russiancompanion.v2.LabExplanationCorrectionTest"
+      ],
+      "candidateCurrentMethods": [],
+      "disposition": "CANDIDATES_ONLY_REQUIRES_CURRENT_COMPLETION_AND_INDEPENDENT_SCOPE_REVIEW"
+    },
+    {
+      "originalRow": 30,
+      "requirementId": "MA2-045;MA2-046;MA2-070",
+      "originalRowSha256": "38a0fc7c7ce7ae34112569c144839536b14105247b14f12d9867c3c100b2b816",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 31,
+      "requirementId": "MA2-027;MA2-057;MA2-088",
+      "originalRowSha256": "aa0e031a179186906ccc9bbea7135a7f0c69279f512bb3d9d2b6272d15c55230",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [
+        "dev.russiancompanion.v2.CumulativePolicyHistoryBaselineTest",
+        "dev.russiancompanion.v2.CumulativeReviewGateTest",
+        "dev.russiancompanion.v2.MultiPoolReviewSelectionTest"
+      ],
+      "candidateCurrentMethods": [],
+      "disposition": "CANDIDATES_ONLY_REQUIRES_CURRENT_COMPLETION_AND_INDEPENDENT_SCOPE_REVIEW"
+    },
+    {
+      "originalRow": 32,
+      "requirementId": "MA2-051;MA2-058",
+      "originalRowSha256": "ec5b3b999553ee5fc6fcff9b0f9b525a91ab4c1f9eae779bca4e2351b0cdf612",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 33,
+      "requirementId": "MA2-051",
+      "originalRowSha256": "076366b40eb0d3e55bae601cbc1df7b02620c1d3cdd0118817ac8c37d1936fb6",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 34,
+      "requirementId": "MA2-052",
+      "originalRowSha256": "730349abd49f547986e7b6179026e6ce4f1dd4c802923b40db2ec5958ed318a4",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 35,
+      "requirementId": "MA2-053",
+      "originalRowSha256": "68f3ba018553e5068867fcdad57846281b2f7884660c7f4d841fd8bea046d6b2",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 36,
+      "requirementId": "MA2-054;MA2-059",
+      "originalRowSha256": "9ba4846ed0123e47cdf96cc0f8f8135d82b065659cf018105f187b08e40b7b84",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 37,
+      "requirementId": "MA2-055;MA2-062",
+      "originalRowSha256": "d6f88e7aeab94b5fe2846b906828f268ea404617e80014883cd26d9e5f06b6f8",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 38,
+      "requirementId": "MA2-056;MA2-074",
+      "originalRowSha256": "b7f5f5ef6ea8c4f544a34d0d68d39293a94c72feae5c745692e9a39a9ca4e5d5",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 39,
+      "requirementId": "MA2-057;MA2-058",
+      "originalRowSha256": "2c6b39893c3b6d8ed889744b9aa84e9683c24087d94d81feb4c0e2b0a6c7dcbf",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 40,
+      "requirementId": "MA2-047;MA2-048;MA2-050",
+      "originalRowSha256": "a13fe87f65dac0f1a2fca157e1fc3762133202f31cc05252c3545c0d95be0e3e",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 41,
+      "requirementId": "MA2-067;MA2-121",
+      "originalRowSha256": "fe8f18caeca5425f8e48da61bbda3b8a02f7a5d31c0b9438446351d6b6716e09",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 42,
+      "requirementId": "MA2-069;MA2-070;MA2-071",
+      "originalRowSha256": "4e0fff95941721156f0b60ec2e9a00954c8aa8cbf7435fc72052705a55347000",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 43,
+      "requirementId": "MA2-082;MA2-083;MA2-089;MA2-090",
+      "originalRowSha256": "002332b5c9906b9a81d6187e59ed48b10ebde3ac7d6d07602b55d9f1b7f6dde4",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 44,
+      "requirementId": "MA2-114;MA2-117",
+      "originalRowSha256": "ac556ed0729456cfcff4282c9173fb1abffe707e35d58e9fe61a51a882da99fd",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 45,
+      "requirementId": "MA2-122;MA2-123",
+      "originalRowSha256": "bc20ec1a04567b40406e742d2b84cacc08bbd394bade464bcef0a90c94addeec",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [
+        "dev.russiancompanion.data.appearance.AppearanceStoreTest"
+      ],
+      "candidateCurrentMethods": [],
+      "disposition": "CANDIDATES_ONLY_REQUIRES_CURRENT_COMPLETION_AND_INDEPENDENT_SCOPE_REVIEW"
+    },
+    {
+      "originalRow": 46,
+      "requirementId": "MA2-104;MA2-109",
+      "originalRowSha256": "85c012a0a7fc53c82a94c49f0627aadd03e57ca32121933f637e156f4529a42b",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 47,
+      "requirementId": "MA2-133;MA2-139",
+      "originalRowSha256": "20903a061db6c81f70ab36e57ec0d97c056fc055dcdc272cb8a93ef43a3e061a",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [
+        "dev.russiancompanion.v2.BackupSnapshotCorrectionTest"
+      ],
+      "candidateCurrentMethods": [],
+      "disposition": "CANDIDATES_ONLY_REQUIRES_CURRENT_COMPLETION_AND_INDEPENDENT_SCOPE_REVIEW"
+    },
+    {
+      "originalRow": 48,
+      "requirementId": "MA2-134;MA2-135;MA2-136",
+      "originalRowSha256": "fa8e9ba1c1061963af1aebdbb1b789fdbd0223b2e7f6caa855f1201c31b03b37",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [
+        "dev.russiancompanion.v2.BackupLicenseTest"
+      ],
+      "candidateCurrentMethods": [],
+      "disposition": "CANDIDATES_ONLY_REQUIRES_CURRENT_COMPLETION_AND_INDEPENDENT_SCOPE_REVIEW"
+    },
+    {
+      "originalRow": 49,
+      "requirementId": "MA2-137;MA2-138",
+      "originalRowSha256": "489f9221a244bc9bd55c57b9b2299043478d60c2243fde41859fb8aee37b5e2d",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [
+        "dev.russiancompanion.v2.BackupLicenseTest",
+        "dev.russiancompanion.v2.RuntimeCorrectionTest"
+      ],
+      "candidateCurrentMethods": [],
+      "disposition": "CANDIDATES_ONLY_REQUIRES_CURRENT_COMPLETION_AND_INDEPENDENT_SCOPE_REVIEW"
+    },
+    {
+      "originalRow": 50,
+      "requirementId": "MA2-048;MA2-049;MA2-120",
+      "originalRowSha256": "1f02d672eec5761f1129589d5f02411c7cc594b2d72a15daecac27b1a1322d73",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 51,
+      "requirementId": "MA2-047;MA2-144",
+      "originalRowSha256": "a7f08cbf0805436e18c3a95df00341b1e35ab8640e01c58ecb8f7905bcbec4df",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 52,
+      "requirementId": "MA2-050;MA2-079",
+      "originalRowSha256": "bb3bc59b3d31599e556dcc303cfdc2d71e871bd48ed04bb47f92e4d0eea789b5",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 53,
+      "requirementId": "MA2-031;MA2-032;MA2-082",
+      "originalRowSha256": "afd32611f5551e2740bb4315607eef2af9d677b840b1f9512dba07d125eadec9",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 54,
+      "requirementId": "MA2-044;MA2-075;MA2-078",
+      "originalRowSha256": "4b5aadc1658c25076b048118fa6ca4c5487059c7acb0cd99df01919b1bcdc6d0",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 55,
+      "requirementId": "MA2-009;MA2-010;MA2-011;MA2-012;MA2-015",
+      "originalRowSha256": "e45cf142f5319227eb735c103c77775cf6bc84a46730dd93e16279cbfa9e9d46",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 56,
+      "requirementId": "MA2-059;MA2-060;MA2-066",
+      "originalRowSha256": "6dc469315ea98c9cf8c9698ad2ebd84670d3ae065c0f8493dd664d9b8bd5a00e",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 57,
+      "requirementId": "MA2-064;MA2-065;MA2-095",
+      "originalRowSha256": "f0f217d5a3e0e685f0062233a3509934b0477ba35e6cb51911bac77429ca5aec",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 58,
+      "requirementId": "MA2-135",
+      "originalRowSha256": "5f3daaadc5642818a051132a21a0474ccd587cefca80b4556519eb2722d8dd23",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 59,
+      "requirementId": "MA2-132;MA2-142;MA2-143",
+      "originalRowSha256": "770c6f5c20c80d18675e51e83fed51c5484ae1500206fa2dfad3eb1d462b02b5",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [
+        "dev.russiancompanion.data.local.DatabaseMigrationTest",
+        "dev.russiancompanion.v2.CompletionEvidenceCorrectionTest"
+      ],
+      "candidateCurrentMethods": [],
+      "disposition": "CANDIDATES_ONLY_REQUIRES_CURRENT_COMPLETION_AND_INDEPENDENT_SCOPE_REVIEW"
+    },
+    {
+      "originalRow": 60,
+      "requirementId": "MA2-118;MA2-119;MA2-138",
+      "originalRowSha256": "494d53d3b234f483bdbd56204d6158ba3d7953dba94effb4d89c6f2d4a14b228",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [
+        "dev.russiancompanion.v2.RuntimeCorrectionTest"
+      ],
+      "candidateCurrentMethods": [],
+      "disposition": "CANDIDATES_ONLY_REQUIRES_CURRENT_COMPLETION_AND_INDEPENDENT_SCOPE_REVIEW"
+    },
+    {
+      "originalRow": 61,
+      "requirementId": "MA2-042;MA2-120;MA2-144",
+      "originalRowSha256": "92108a8f2e889f02c11501d047d9ec7b45314134ee97f1088d2e8096df42fc99",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 62,
+      "requirementId": "MA2-116;MA2-140;MA2-141;MA2-146",
+      "originalRowSha256": "46995da171d11d046cb585aaa787352614afae1aafaa9c26088c084c19bd664f",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 63,
+      "requirementId": "MA2-123;MA2-124;MA2-125;MA2-126;MA2-127;MA2-128;MA2-129",
+      "originalRowSha256": "7afc9ea2f396effdaa811e2b3a64d54a83bc3d0e81a01ea02117fe622a3d7454",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 64,
+      "requirementId": "MA2-130;MA2-131",
+      "originalRowSha256": "16fea0247ca157c8ff43502a2a475d55d1fae7c359d4f220765b9bdd822ca5ef",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 65,
+      "requirementId": "MA2-147;MA2-164",
+      "originalRowSha256": "d96691bda75b07acd4c76583fed431268391bbc0389f4c2dabd97a836bc10b73",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 66,
+      "requirementId": "MA2-007;MA2-008;MA2-147;MA2-153;MA2-174",
+      "originalRowSha256": "363611d6b452b5c53ff6f0f05628e375a84f2134709be87cae4d2dd68e9a9f53",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [
+        "dev.russiancompanion.release.LinguisticReleaseGateTest",
+        "dev.russiancompanion.release.ReleaseGateTest",
+        "dev.russiancompanion.release.ReleaseOutputTasksTest"
+      ],
+      "candidateCurrentMethods": [],
+      "disposition": "CANDIDATES_ONLY_REQUIRES_CURRENT_COMPLETION_AND_INDEPENDENT_SCOPE_REVIEW"
+    },
+    {
+      "originalRow": 67,
+      "requirementId": "MA2-092;MA2-094;MA2-152",
+      "originalRowSha256": "fa4531ee9f3d33f643201cc2fd8e9fa8d3ad08f005ba13c8a9ac70842be7a1ba",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [
+        "dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest"
+      ],
+      "candidateCurrentMethods": [],
+      "disposition": "CANDIDATES_ONLY_REQUIRES_CURRENT_COMPLETION_AND_INDEPENDENT_SCOPE_REVIEW"
+    },
+    {
+      "originalRow": 68,
+      "requirementId": "MA2-017;MA2-145",
+      "originalRowSha256": "2cd4a56db51b48651f027457de289ba6d396a4ad4a6414d5a6e7634638a20f18",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [
+        "dev.russiancompanion.v2.SourceTextPoolTest"
+      ],
+      "candidateCurrentMethods": [],
+      "disposition": "CANDIDATES_ONLY_REQUIRES_CURRENT_COMPLETION_AND_INDEPENDENT_SCOPE_REVIEW"
+    },
+    {
+      "originalRow": 69,
+      "requirementId": "MA2-006;MA2-142",
+      "originalRowSha256": "c20f5f4c20fd057c00cd2ec3e9fe2da8dfdc919c71038f7505a324c62bbd4999",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    },
+    {
+      "originalRow": 70,
+      "requirementId": "MA2-088;MA2-134;MA2-138",
+      "originalRowSha256": "73ceca641780fbba75ccab8340d36e103f06e9cc2bee44efbf90d449e766c9de",
+      "originalAuditExecutionStatus": "NOT_EXECUTED",
+      "candidateCurrentClasses": [],
+      "candidateCurrentMethods": [],
+      "disposition": "NO_AUTOMATIC_MAPPING_REQUIRES_FULL_REVIEW"
+    }
+  ],
+  "currentRegressionCompletion": "RUNNING_NOT_FINAL",
+  "newEngineeringInput": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit3-startup-isolation/ENGINEERING_CHANGE_REPORT.md",
+  "candidateMappingsNotRequestFulfillment": true,
+  "runtimeCompletion": "COLLECTED_VERIFIED_EXIT0",
+  "runtimeEvidenceCommit": "1e353738a062b2af6d91e1aaef35cbb8359d22e5",
+  "runtimeResultPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/post-unit3-isolation-host-regression-2026-10-21/REGRESSION/RESULT.json",
+  "runtimeCounts": {
+    "reported": 1323,
+    "passed": 1322,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 1
+  }
+}
