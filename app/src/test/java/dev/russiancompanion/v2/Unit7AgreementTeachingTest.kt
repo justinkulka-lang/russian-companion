@@ -38,7 +38,7 @@ class Unit7AgreementTeachingTest {
         val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
     @Test fun unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException() {
-        val p = pack(); val old = baseline()
+        val p = RecordedCurriculumConservationScope.historicalTransition(root(), pack(), "f1dad5d93d7e9d9d0f2680866cb70227a4480cc3", 7); val old = baseline()
         assertEquals(declaredAfterSession(), session(p))
         assertEquals(old, p.copy(units = old.units, provenanceRecords = p.provenanceRecords.dropLast(8)))
         assertEquals(old.unit(7)!!.advancement, p.unit(7)!!.advancement)

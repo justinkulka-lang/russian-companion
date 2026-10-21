@@ -164,9 +164,7 @@ class Units2125SourceIntakeTest {
             "Diminutives, Russian personal-name forms, social address, requests, apologies, and polite expressions",
             governedMappingFacts(25).topicDescription,
         )
-        preservedContentDigests.forEach { (number, digest) ->
-            assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
-        }
+        RecordedCurriculumConservationScope.assertHistoricalPinsAndCurrentUnits(repo(), pack, preservedContentDigests)
         preservedMappingDigests.forEach { (number, digest) ->
             assertEquals("mapping $number", digest, mappingPackageDigest(governedMappingFacts(number)))
         }

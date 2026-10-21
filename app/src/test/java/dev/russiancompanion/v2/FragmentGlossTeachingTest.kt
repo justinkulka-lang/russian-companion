@@ -49,7 +49,9 @@ class FragmentGlossTeachingTest {
     }
 
     @Test fun everyNativeItemExampleHistoricalRecordAndUnrelatedUnitRemainsExact() {
-        val p = FragmentGlossFixture.current; val old = FragmentGlossFixture.previous
+        val live = FragmentGlossFixture.current
+        val p = RecordedCurriculumConservationScope.historicalTransition(FragmentGlossFixture.root, live, "7efff9e18328c612de235236d98e834bb85cd1db", 7, 10)
+        val old = FragmentGlossFixture.previous
         assertEquals(old.items, p.items); assertEquals(626, p.items.size)
         assertEquals(old.examples, p.examples); assertEquals(821, p.examples.size)
         assertEquals(old.provenanceRecords, p.provenanceRecords.take(old.provenanceRecords.size))
@@ -76,7 +78,7 @@ class FragmentGlossTeachingTest {
                 }
             }
         }
-        val valid = V2Validator.validate(p)
+        val valid = V2Validator.validate(live)
         assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
 

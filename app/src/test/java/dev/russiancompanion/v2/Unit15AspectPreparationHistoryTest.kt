@@ -17,7 +17,7 @@ import java.io.File
 @Config(sdk=[33])
 class Unit15AspectPreparationHistoryTest {
     @Test fun originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact() {
-        val p=current();val old=previous()
+        val live=current();val p=RecordedCurriculumConservationScope.historicalTransition(root(),live,"0f8001a8ec2cb76a7bc994a2c8d77db09a272d04",15);val old=previous()
         assertEquals(old.items,p.items.take(old.items.size));assertEquals(old.examples,p.examples.take(old.examples.size))
         assertEquals(old.provenanceRecords,p.provenanceRecords.take(old.provenanceRecords.size))
         assertEquals(old.units.filter { it.number!=15 },p.units.filter { it.number!=15 })
@@ -28,7 +28,7 @@ class Unit15AspectPreparationHistoryTest {
         assertEquals(old.sourceCapabilities,p.sourceCapabilities)
         assertEquals(old.items,p.items);assertEquals(old.examples,p.examples)
         assertNotEquals(V2Validator.unitContentReviewDigest(old,15),V2Validator.unitContentReviewDigest(p,15))
-        val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
+        val v=V2Validator.validate(live);assertTrue(v.errors.joinToString("\n"),v.ok)
     }
     @Test fun oldAcceptedWorkAndResumeStayStoredThroughBackupReopenButNeedCurrentWork() {
         val p=current();val old=previous();val id="u15-i-aspect-consolidate-1";val teach="u15-st-teach-aspect-consolidate-2"

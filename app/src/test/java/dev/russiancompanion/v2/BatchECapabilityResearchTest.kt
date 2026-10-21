@@ -323,7 +323,11 @@ class BatchECapabilityResearchTest {
         val pack = loadCurriculumPack(root)
         val model = reconcileCurriculumReadiness(root, pack)
         val candidate = readAcceptanceCandidate(root)
-        assertEquals("e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4", model.packContentReviewDigest)
+        val historical = RecordedCurriculumConservationScope.source(root, RecordedCurriculumConservationScope.priorSource)
+        assertEquals("e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4", V2Validator.contentReviewDigest(historical))
+        RecordedCurriculumConservationScope.assertCurrent(root, pack)
+        assertEquals(V2Validator.contentReviewDigest(pack), model.packContentReviewDigest)
+        org.junit.Assert.assertNotEquals(V2Validator.contentReviewDigest(historical), model.packContentReviewDigest)
         assertEquals(candidate?.sourceDigest, model.repositorySourceDigest)
         assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
         assertEquals("NOT_APPROVED", model.publicRelease)
@@ -384,9 +388,20 @@ class BatchECapabilityResearchTest {
         )
         (content.keys).forEach { number ->
             val row = model.units.single { it.unitNumber == number }
-            assertEquals(content.getValue(number), row.unitContentReviewDigest)
+            if (number == 7) {
+                RecordedCurriculumConservationScope.assertHistoricalPinsAndCurrentUnits(root, pack, mapOf(number to content.getValue(number)))
+                val oldPackage = dev.russiancompanion.v2.review.buildHistoricalUnitReviewPackage(historical, number,
+                    "7d92d8813e105932391448d94247534493337118")
+                assertEquals(reviewPackages.getValue(number), oldPackage.reviewPackageDigest)
+                val currentPackage = dev.russiancompanion.v2.review.buildUnitReviewPackage(pack, number)
+                assertEquals(V2Validator.unitContentReviewDigest(pack, number), row.unitContentReviewDigest)
+                assertEquals(currentPackage.reviewPackageDigest, row.reviewPackageDigest)
+                org.junit.Assert.assertNotEquals(oldPackage.reviewPackageDigest, row.reviewPackageDigest)
+            } else {
+                assertEquals(content.getValue(number), row.unitContentReviewDigest)
+                assertEquals(reviewPackages.getValue(number), row.reviewPackageDigest)
+            }
             assertEquals(mapping.getValue(number), row.mappingPackageDigest)
-            assertEquals(reviewPackages.getValue(number), row.reviewPackageDigest)
         }
         val candidateText = File(root, "release/acceptance/candidate.json").readText()
         assertTrue(candidateText.contains("0bd4dbf5a24738b9ff9bb7e782a1370021ea59b065c9e764c556f16c1e0784b4"))

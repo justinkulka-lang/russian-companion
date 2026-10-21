@@ -47,7 +47,7 @@ class Unit4PresentTeachingTest {
     }
 
     @Test fun existingNativeItemsExamplesRecordsAndOtherUnitContentsRemainExact() {
-        val p = current; val old = previous
+        val p = RecordedCurriculumConservationScope.historicalTransition(root, current, "e6db0bdfe0bbb40edf190623e2123014946f305b", 4); val old = previous
         assertEquals(622, old.items.size); assertEquals(626, p.items.size)
         assertEquals(old.items, p.items.take(622))
         assertEquals(old.examples, p.examples.take(old.examples.size))

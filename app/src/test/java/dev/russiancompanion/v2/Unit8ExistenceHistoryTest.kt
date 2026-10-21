@@ -17,7 +17,7 @@ import java.io.File
 @Config(sdk=[33])
 class Unit8ExistenceHistoryTest {
     @Test fun frozenEvidenceOtherObjectivesAndLaterGenitiveStayExact() {
-        val p=current();val old=previous();val changed=setOf("u8-g-availability-0","u8-i-availability-1","u8-i-availability-2","u8-i-availability-3")
+        val live=current();val p=RecordedCurriculumConservationScope.historicalTransition(root(),live,"fe919656bfa2775b5cc2c22f2496d4258343cfea",8);val old=previous();val changed=setOf("u8-g-availability-0","u8-i-availability-1","u8-i-availability-2","u8-i-availability-3")
         assertEquals(old.examples,p.examples)
         assertEquals(old.items.filter { it.id !in changed },p.items.filter { it.id !in changed })
         assertEquals(old.items.map { it.id },p.items.map { it.id })
@@ -30,7 +30,7 @@ class Unit8ExistenceHistoryTest {
         assertEquals(a.sessions.filter { it.id!="u8-s-availability" },b.sessions.filter { it.id!="u8-s-availability" })
         assertEquals(old.sourceCapabilities,p.sourceCapabilities)
         assertNotEquals(V2Validator.unitContentReviewDigest(old,8),V2Validator.unitContentReviewDigest(p,8))
-        val result=V2Validator.validate(p);assertTrue(result.errors.joinToString("\n"),result.ok)
+        val result=V2Validator.validate(live);assertTrue(result.errors.joinToString("\n"),result.ok)
     }
     @Test fun historicalCreditStepAndResumeSurviveBackupButCannotCreditTheNewUnit() {
         val p=current();val old=previous();val id="u8-i-availability-1";val teach="u8-st-teach-availability-2"

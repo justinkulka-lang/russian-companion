@@ -80,9 +80,7 @@ class Units1115MappingGapTest {
     @Test
     fun preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded() {
         val pack = pack()
-        preservedContentDigests.forEach { (number, digest) ->
-            assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
-        }
+        RecordedCurriculumConservationScope.assertHistoricalPinsAndCurrentUnits(repo(), pack, preservedContentDigests)
         val shifted = pack.copy(
             units = pack.units.map { unit ->
                 if (unit.number != 11) unit else unit.copy(mappingNote = unit.mappingNote + " extra gap note")

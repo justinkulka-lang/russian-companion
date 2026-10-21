@@ -8,7 +8,10 @@ import org.junit.Test
 /** Keep historical whole-pack contracts separate from current target-content proof. */
 class HistoricalTeachingFixtureScopeTest {
     @Test fun currentUnit14And15RetainTheirExactCorrectionWhileTheWholePackHasAdvanced() {
-        val live = V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText())
+        val current = V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText())
+        // Preserve the original Unit14/15 contract before later admitted Unit15 preparation.
+        val live = RecordedCurriculumConservationScope.historicalTransition(root(), current,
+            "49a926c5ace0459edf7712ca5d90db4a63ff9d31", 14, 15)
         val historical = correctionEraPack()
         assertFalse("The live pack is a later version, not the historical fixture", historical == live)
         for (number in listOf(14, 15)) {
