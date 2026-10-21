@@ -1,0 +1,152 @@
+{
+  "sourceCommit": "640c32075e34f4917d9f92b5509e8261fa05fb59",
+  "inputTrees": {
+    "app/src/main": "fdb48a009cf684c729d79a921770a36749e0fc32",
+    "app/src/test": "7a5645328ddb1d57d7c2dfcc1537cf802889a5a4",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "366549a8a89d34b33ff9568247d7a4ff5ef676d6"
+  },
+  "syntheticDryRun": false,
+  "exitCode": 1,
+  "finishedUtc": "2026-10-21T17:19:29.724460+00:00",
+  "testCounts": {
+    "reported": 9,
+    "passed": 7,
+    "failed": 2,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 2,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.BackupLicenseTest",
+      "method": "failedJournalWriteRestoresTheOriginalRecordingSnapshot",
+      "outcome": "PASSED",
+      "seconds": "5.201",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.BackupLicenseTest",
+      "method": "failedReplacementKeepsTheOriginalDatabase",
+      "outcome": "PASSED",
+      "seconds": "0.846",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+      "method": "olderPolicyHistoriesRemainRawButCannotBypassChangedUnit3Teaching",
+      "outcome": "FAILED",
+      "seconds": "0.19",
+      "messagePreview": "java.lang.AssertionError: expected:<REPLACED> but was:<UNCHANGED>",
+      "fullMessageBytes": 65,
+      "fullMessageSha256": "dab2a42aab61ed9d0f91fa228fc90d9c62498208d309a171e123e0dbb201e085"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+      "method": "allFiveIndependentRecordsHaveExplicitTeachingAndCompleteRepair",
+      "outcome": "PASSED",
+      "seconds": "5.803",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+      "method": "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+      "outcome": "PASSED",
+      "seconds": "3.885",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+      "method": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+      "outcome": "FAILED",
+      "seconds": "0.099",
+      "messagePreview": "java.lang.AssertionError: expected:<REPLACED> but was:<UNCHANGED>",
+      "fullMessageBytes": 65,
+      "fullMessageSha256": "dab2a42aab61ed9d0f91fa228fc90d9c62498208d309a171e123e0dbb201e085"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+      "method": "wrongNeuterAnswerRestoresTheFullContrastAndStillNeedsFreshIndependentWork",
+      "outcome": "PASSED",
+      "seconds": "2.532",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+      "method": "correctionHasAnExactWhitelistAndNoScoredOrPolicyChanges",
+      "outcome": "PASSED",
+      "seconds": "0.805",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+      "method": "wrongDoorAnswerRestoresTheFullContrastAndStillNeedsFreshIndependentWork",
+      "outcome": "PASSED",
+      "seconds": "0.847",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.BackupLicenseTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-21T17:19:08.381Z",
+      "hostname": "d0aced911621",
+      "time": "6.695"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+      "tests": "7",
+      "skipped": "0",
+      "failures": "2",
+      "errors": "0",
+      "timestamp": "2026-10-21T17:19:15.090Z",
+      "hostname": "d0aced911621",
+      "time": "14.172"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": {
+    "exactSameMethodSet": true
+  },
+  "allSelectedMethodsReported": true,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}

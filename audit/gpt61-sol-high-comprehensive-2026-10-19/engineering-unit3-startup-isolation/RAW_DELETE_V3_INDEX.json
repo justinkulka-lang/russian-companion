@@ -1,0 +1,258 @@
+{
+  "archive": "RAW_DELETE_V3.zip",
+  "sha256": "dbabb337af7c92b00bcb8f79083d82dba4e19d173c1740b067b8fc9cd39f57e9",
+  "bytes": 680010,
+  "members": [
+    {
+      "path": "AGENT_BUILD.json",
+      "bytes": 362,
+      "sha256": "e7328d068b982d0f0acb47b916d8c3fb773cf0c1b3b362901e408f53c2eac1f3"
+    },
+    {
+      "path": "LAUNCHER.log",
+      "bytes": 217,
+      "sha256": "0520752a14f0b00fb7f42ff2288a3edca7001de34710751f072b0a82591e7b83"
+    },
+    {
+      "path": "SESSION.json",
+      "bytes": 263,
+      "sha256": "da2f72c4d872c9502f57343dfb0064f8dcc5f186b7e909df0f19d59574940172"
+    },
+    {
+      "path": "TRACED_DELETE_V3/CONTEXT.json",
+      "bytes": 5631,
+      "sha256": "4de1ef6d33759bd0206d2ce7f04b2b555cf546f3e81c6e8d3d95a606d58a0e8b"
+    },
+    {
+      "path": "TRACED_DELETE_V3/EVENTS.jsonl",
+      "bytes": 5428,
+      "sha256": "6a17cda11ec0a8861f6654430f995adbd2a632abe5355223f3245dd91f9baa10"
+    },
+    {
+      "path": "TRACED_DELETE_V3/LINT.xml",
+      "bytes": 31476,
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+    },
+    {
+      "path": "TRACED_DELETE_V3/RESULT.json",
+      "bytes": 5491,
+      "sha256": "4599efd4f219739a0c750680e23fa59546ebcd32014f325aa7b4d20013735dc3"
+    },
+    {
+      "path": "TRACED_DELETE_V3/RESULTS.csv",
+      "bytes": 1812,
+      "sha256": "1c5a7d33e9650b18a50c200ea9c494d8be7acd78ed6d7c1292bb8c25ebbfd0bb"
+    },
+    {
+      "path": "TRACED_DELETE_V3/RUN.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "TRACED_DELETE_V3/RUN.log",
+      "bytes": 3807,
+      "sha256": "b3275c15493d3c1528547d55ba4bcf145fd5ffda1bdc9f01db93834a9650120b"
+    },
+    {
+      "path": "TRACED_DELETE_V3/SHA256.json",
+      "bytes": 4683,
+      "sha256": "144fed3dbc9a77ab0de3c469f54f77658f258de2a78ab9d06281d7248b6613f0"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-0-java_io_File.identity.txt",
+      "bytes": 188,
+      "sha256": "6a56a57ac0a3f1d8b521308a66d1eda2a8e84d75a0f5bd36599df1ad12773aaf"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-0-java_io_File.incoming.class",
+      "bytes": 18112,
+      "sha256": "a5be12f9dd09dfde1c93c1015fd33032cdaf65c50b3934d314e7ac0bf650adad"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-0-java_io_File.traced.class",
+      "bytes": 18320,
+      "sha256": "1b28583b8d9f32dbe254f99406284d40a72e1b5f2d40fe985eaf87b697129080"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-0-java_nio_file_Files.identity.txt",
+      "bytes": 280,
+      "sha256": "b1c9f9d96b47d7e562f577feedfc08e6d9ba489810315b5c6dc678cdb2e6e60b"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-0-java_nio_file_Files.incoming.class",
+      "bytes": 38406,
+      "sha256": "ff553049b0172aba594269d6069cd8152c3aade0d10fd36f47d4bf1b315c1003"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-0-java_nio_file_Files.traced.class",
+      "bytes": 38702,
+      "sha256": "0802bc231a7f4912afc2d707d517d41ed5963a17fc9778c2377aec4c1966b139"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-76ed5528-dev_russiancompanion_data_local_LocalStore.identity.txt",
+      "bytes": 3399,
+      "sha256": "5fed7c99190e884d180ca08078789a5216ab3da5baa452e60bb5c36e851ce689"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-76ed5528-dev_russiancompanion_data_local_LocalStore.incoming.class",
+      "bytes": 205352,
+      "sha256": "259041f1e75f4c21cb3be7f54bca4dfd36604c5b269cecad5ab37e943cd88b78"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-76ed5528-dev_russiancompanion_data_local_LocalStore.traced.class",
+      "bytes": 210170,
+      "sha256": "363afc3b9f736a28d203e67950c86402c07ec3a925b7bc5293c3f378b2a5d06e"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-76ed5528-dev_russiancompanion_v2_BackupLicenseTest.identity.txt",
+      "bytes": 1633,
+      "sha256": "4ecb778e39c4cf5d34ecfce6a5358b2dc561cb6b08885fdbf84b76f0399a706e"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-76ed5528-dev_russiancompanion_v2_BackupLicenseTest.incoming.class",
+      "bytes": 75679,
+      "sha256": "4e9912c085b5beb43dfb3aa29f829e93890ed651953b00eb90455326d0721010"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-76ed5528-dev_russiancompanion_v2_BackupLicenseTest.traced.class",
+      "bytes": 77339,
+      "sha256": "6b60271afe378c45966ac90e93c4bc278a10096cf90c2e2f5ff924826ceba3e7"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-76ed5528-dev_russiancompanion_v2_Unit3GenderTeachingTest.identity.txt",
+      "bytes": 1033,
+      "sha256": "efaabf309d3a286ad70808c06664bc119687beadb3704b7991026a6482ad6862"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-76ed5528-dev_russiancompanion_v2_Unit3GenderTeachingTest.incoming.class",
+      "bytes": 47874,
+      "sha256": "4a86f0a5387b0817a873403b438010ddabb9d1404574a4e21f1468cf85bd5676"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-76ed5528-dev_russiancompanion_v2_Unit3GenderTeachingTest.traced.class",
+      "bytes": 48873,
+      "sha256": "f287bbbef1922e8a8cd9687f5a1b553a67a246c79950c978069f26555417f46c"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-f9879ac-dev_russiancompanion_data_local_LocalStore.identity.txt",
+      "bytes": 3399,
+      "sha256": "5fed7c99190e884d180ca08078789a5216ab3da5baa452e60bb5c36e851ce689"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-f9879ac-dev_russiancompanion_data_local_LocalStore.incoming.class",
+      "bytes": 205352,
+      "sha256": "259041f1e75f4c21cb3be7f54bca4dfd36604c5b269cecad5ab37e943cd88b78"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-f9879ac-dev_russiancompanion_data_local_LocalStore.traced.class",
+      "bytes": 210170,
+      "sha256": "363afc3b9f736a28d203e67950c86402c07ec3a925b7bc5293c3f378b2a5d06e"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-f9879ac-dev_russiancompanion_v2_BackupLicenseTest.identity.txt",
+      "bytes": 1633,
+      "sha256": "4ecb778e39c4cf5d34ecfce6a5358b2dc561cb6b08885fdbf84b76f0399a706e"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-f9879ac-dev_russiancompanion_v2_BackupLicenseTest.incoming.class",
+      "bytes": 75679,
+      "sha256": "4e9912c085b5beb43dfb3aa29f829e93890ed651953b00eb90455326d0721010"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-f9879ac-dev_russiancompanion_v2_BackupLicenseTest.traced.class",
+      "bytes": 77339,
+      "sha256": "6b60271afe378c45966ac90e93c4bc278a10096cf90c2e2f5ff924826ceba3e7"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-f9879ac-dev_russiancompanion_v2_Unit3GenderTeachingTest.identity.txt",
+      "bytes": 1033,
+      "sha256": "efaabf309d3a286ad70808c06664bc119687beadb3704b7991026a6482ad6862"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-f9879ac-dev_russiancompanion_v2_Unit3GenderTeachingTest.incoming.class",
+      "bytes": 47874,
+      "sha256": "4a86f0a5387b0817a873403b438010ddabb9d1404574a4e21f1468cf85bd5676"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/classes/420259-f9879ac-dev_russiancompanion_v2_Unit3GenderTeachingTest.traced.class",
+      "bytes": 48873,
+      "sha256": "f287bbbef1922e8a8cd9687f5a1b553a67a246c79950c978069f26555417f46c"
+    },
+    {
+      "path": "TRACED_DELETE_V3/TRACE/trace-420259.jsonl",
+      "bytes": 2708854,
+      "sha256": "db41be80c556126119a155b1847ee6e57c9bf3fef33d0369de83670dfc10ce10"
+    },
+    {
+      "path": "TRACED_DELETE_V3/XML/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml",
+      "bytes": 892,
+      "sha256": "c2b82fb83d6056bb25a83960714d3252fab6ce3e2514a4fdd5985f29d574ecf2"
+    },
+    {
+      "path": "TRACED_DELETE_V3/XML/TEST-dev.russiancompanion.v2.Unit3GenderTeachingTest.xml",
+      "bytes": 48763,
+      "sha256": "c6083a03454e436b1515a6506881c9994d1cbe6c02a1f2580332caf6bc4f8b33"
+    },
+    {
+      "path": "TRACED_DELETE_V3/gc-420259.log",
+      "bytes": 11866,
+      "sha256": "6c5ad76fec23fa37d6ee7e348c204914bcb9f4896f115730d92317699b84edfd"
+    },
+    {
+      "path": "agent-classes/audittrace/Agent$1.class",
+      "bytes": 2037,
+      "sha256": "51b2aad119ea1d23efdd031e1004e3ce6584e2cf2e55ee3697d4887b70c14b85"
+    },
+    {
+      "path": "agent-classes/audittrace/Agent.class",
+      "bytes": 10634,
+      "sha256": "f4068d38eb7c97b48afc1f39467544d528ae997e962a9fbca70e71bd93e86648"
+    },
+    {
+      "path": "agent-classes/org/robolectric/internal/bytecode/RefusalTraceProbe.class",
+      "bytes": 7470,
+      "sha256": "4878eebd70e047f6d79ea4feb23a11b462f6b358e9707dff2b87a2c496a84520"
+    },
+    {
+      "path": "agent-src/audittrace/Agent.java",
+      "bytes": 6458,
+      "sha256": "77f03edbc413d1f3342ab119799caf96d8fc49d056674fa40e306977be0938d4"
+    },
+    {
+      "path": "agent-src/audittrace/RefusalTraceProbe.java",
+      "bytes": 3921,
+      "sha256": "6b52d55e98e4c836c9f75e49eb79a1acee9ef1b33f2b911afad812bd899f8d47"
+    },
+    {
+      "path": "build_agent.py",
+      "bytes": 5690,
+      "sha256": "6e6dc9e467334b1d44efe25c9aafea3d53fcc27c3338ff30449ab32eeaad73ee"
+    },
+    {
+      "path": "make_v4.py",
+      "bytes": 3102,
+      "sha256": "787ff18240be763b3a9e4719b473eff44f6424ea4e5d1b38053f741546d4b093"
+    },
+    {
+      "path": "resources.gradle",
+      "bytes": 1076,
+      "sha256": "6875144a53f704e840e491d9e1d0c4750eccb1981730b053c9017c312a478556"
+    },
+    {
+      "path": "run.py",
+      "bytes": 7923,
+      "sha256": "591fd23608e297e208025a4ab33528b3871b8467f460b1ab583ea88a52211c72"
+    },
+    {
+      "path": "trace-agent.jar",
+      "bytes": 13138,
+      "sha256": "e970cd4493e1c1bd1d208f63edc657e13703ea162f0dc64b7202a475537efe24"
+    },
+    {
+      "path": "trace-helper.jar",
+      "bytes": 7682,
+      "sha256": "f3db17c356775e61db22ff3fe618e1df99e14cb21d220e1100162b49bdf5b34b"
+    }
+  ],
+  "crcAndAllMemberHashesVerified": true
+}

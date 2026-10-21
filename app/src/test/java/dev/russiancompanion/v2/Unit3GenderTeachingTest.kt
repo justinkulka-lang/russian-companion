@@ -22,6 +22,10 @@ import java.io.File
 class Unit3GenderTeachingTest {
     @get:Rule val compose = createComposeRule()
 
+    @Before fun finishApplicationStartupBeforeOwningTheRecordingRoot() {
+        (context().applicationContext as dev.russiancompanion.RussianCompanionApplication).closeStartupStoreForTests()
+    }
+
     @Test fun allFiveIndependentRecordsHaveExplicitTeachingAndCompleteRepair() {
         val p = current; val unit = p.unit(3)!!; val objective = unit.objectives.single { it.id == "obj-u3-gender" }
         val teaching = objective.instructionStepIds.mapNotNull { p.step(it)?.second }.filter { it.kind == "TEACH" }

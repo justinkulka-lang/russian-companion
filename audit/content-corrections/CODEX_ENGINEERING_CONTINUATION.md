@@ -1691,3 +1691,8 @@ Fresh current debug-host regression at `6ab9d87eadcdb477719af5f0db3af6b90cce8d45
 ## Unit3 replacement bounded diagnosis
 
 Unit3 replacement diagnosis at ee9fea3c45b9d02c2ad5a87cfc9ecd7ab6237bdf:unchanged fullclass7/7passed;separate neighboring fourclass25/25passed,deliberately one6GiBworker. Same five inputtrees/Unit3methodorder as original broad run. Scopes overlap,not summed;not a fresh broad pass or independent acceptance. Original1323reported/1321pass/1fail/1physicalskip remains unchanged;Unit3failure OPEN,causeUNCONFIRMED. No code/test changes or unjustified fix. Nextlarge task:capture actual refusal path/exception/filesystem/JVM context before correction. AuditINCOMPLETE;external17findings unclosed;physicalLAST;no assembly/signing/merge/freeze/approval. Read audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit3-replacement-diagnosis/NEXT_LARGE_TASK.md.
+
+
+## Unit3 startup isolation prepared
+
+Unit3 startup isolation correction prepared,verificationPENDING:external tracer reproduces original assertion and ties competing journal deletion to background application startup store;single@Before uses existing startup-wait/close helper,all7original test bodies/assertions unchanged,production untouched. See engineering-unit3-startup-isolation/STATUS.md and DECISIVE_TRACE.json. Original broad failure retained;oldUnit7causeUNCONFIRMED;physicalLAST;no release approval.

@@ -1,0 +1,11 @@
+{
+  "path": "app/src/test/java/dev/russiancompanion/v2/Unit3GenderTeachingTest.kt",
+  "originalCommit": "640c32075e34f4917d9f92b5509e8261fa05fb59",
+  "oldSha256": "b2491b9c2bd68606d98ee7889d20074ba0bd767fdc3234bb7be0728dc7ef8cb8",
+  "newSha256": "e24e5530ff2e8f4b5996a70a71d195b7ddd4fdc9d62bac807f29ef68a23f7dd4",
+  "exactOnlyInsertion": "\n    @Before fun finishApplicationStartupBeforeOwningTheRecordingRoot() {\n        (context().applicationContext as dev.russiancompanion.RussianCompanionApplication).closeStartupStoreForTests()\n    }\n",
+  "removingSingleInsertionRestoresEveryOriginalByte": true,
+  "allSevenOriginalTestBodiesUnchanged": true,
+  "productionCodeChanged": false,
+  "backupBytesOrAssertionsChanged": false
+}
