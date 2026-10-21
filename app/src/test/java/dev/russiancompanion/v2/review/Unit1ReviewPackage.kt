@@ -127,16 +127,23 @@ internal const val UNIT6_ANIMACY_TRANSFER_CURRICULUM_COMMIT = "30ca4e8a8200dc347
 internal const val UNIT8_PLURAL_INSTRUCTION_CURRICULUM_COMMIT = "4a67bce3a8c94efd7e63f49d911f91746376ecb2"
 internal const val UNIT8_AGREEMENT_TRANSFER_CURRICULUM_COMMIT = "4295962682885f00cdcfcac0923aa213716b9cd5"
 
+// Current pending-review sources; prior implementation constants above remain historical.
+internal const val UNIT4_PRESENT_TEACHING_CURRICULUM_COMMIT = "e6db0bdfe0bbb40edf190623e2123014946f305b"
+internal const val UNIT7_INVARIANCE_PREPARATION_CURRICULUM_COMMIT = "b7e53230e2119b1e57d781b1e1b955f074a38601"
+internal const val UNIT8_EXISTENCE_SEQUENCE_CURRICULUM_COMMIT = "fe919656bfa2775b5cc2c22f2496d4258343cfea"
+internal const val UNIT10_FRAGMENT_MEANING_CURRICULUM_COMMIT = "7efff9e18328c612de235236d98e834bb85cd1db"
+internal const val UNIT15_ASPECT_PREPARATION_CURRICULUM_COMMIT = "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04"
+
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
     if (unitNumber == 3) UNIT3_GENDER_TEACHING_CURRICULUM_COMMIT
-    else if (unitNumber == 4) UNIT4_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
-    else if (unitNumber == 8) UNIT8_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
-    else if (unitNumber == 10) UNIT10_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
+    else if (unitNumber == 4) UNIT4_PRESENT_TEACHING_CURRICULUM_COMMIT
+    else if (unitNumber == 8) UNIT8_EXISTENCE_SEQUENCE_CURRICULUM_COMMIT
+    else if (unitNumber == 10) UNIT10_FRAGMENT_MEANING_CURRICULUM_COMMIT
     else if (unitNumber == 11) UNIT11_AGREEMENT_REMEDIATION_CURRICULUM_COMMIT
     else if (unitNumber == 12) UNIT12_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 13) UNIT13_WIDER_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 14) UNIT14_IMPERSONAL_REPAIR_CURRICULUM_COMMIT
-    else if (unitNumber == 15) UNIT15_IMPERATIVE_REPAIR_CURRICULUM_COMMIT
+    else if (unitNumber == 15) UNIT15_ASPECT_PREPARATION_CURRICULUM_COMMIT
     else if (unitNumber == 16) UNIT16_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 17) UNIT17_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 18) UNIT18_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
@@ -158,7 +165,7 @@ internal fun curriculumCommitForUnit(unitNumber: Int): String =
     else if (unitNumber == 17) UNIT17_QUESTION_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNITS5_6_RECENT_SELECTION_CURRICULUM_COMMIT
     else if (unitNumber == 6) UNIT6_WIDER_REVIEW_CURRICULUM_COMMIT
-    else if (unitNumber == 7) UNIT7_AGREEMENT_TEACHING_CURRICULUM_COMMIT
+    else if (unitNumber == 7) UNIT7_INVARIANCE_PREPARATION_CURRICULUM_COMMIT
     else if (unitNumber == 9) UNIT9_WIDER_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 28) UNIT28_TIMING_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber == 24) UNIT24_CONTEXT_TRANSFER_CURRICULUM_COMMIT
@@ -619,6 +626,23 @@ internal fun buildUnitReviewPackage(
     pack: V2CurriculumPack,
     unitNumber: Int,
     mappingFacts: MappingPackageFacts = governedMappingFacts(unitNumber),
+): Unit1ReviewPackage = buildUnitReviewPackageWithSource(pack, unitNumber, mappingFacts, curriculumCommitForUnit(unitNumber))
+
+/** Reconstruct a historical digest; current rendering/validation always use the current source binding. */
+internal fun buildHistoricalUnitReviewPackage(
+    pack: V2CurriculumPack,
+    unitNumber: Int,
+    recordedSourceCommit: String,
+): Unit1ReviewPackage {
+    require(Regex("[0-9a-f]{40}").matches(recordedSourceCommit))
+    return buildUnitReviewPackageWithSource(pack, unitNumber, governedMappingFacts(unitNumber), recordedSourceCommit)
+}
+
+private fun buildUnitReviewPackageWithSource(
+    pack: V2CurriculumPack,
+    unitNumber: Int,
+    mappingFacts: MappingPackageFacts,
+    sourceCommit: String,
 ): Unit1ReviewPackage {
     val unit = pack.unit(unitNumber)
     val unresolved = mutableListOf<String>()
@@ -654,6 +678,7 @@ internal fun buildUnitReviewPackage(
                 emptyList(),
                 emptyList(),
                 distinctUnresolved,
+                sourceCommit,
             ),
             repositorySourceDigest = repositorySourceDigest(),
             records = emptyList(),
@@ -924,6 +949,7 @@ internal fun buildUnitReviewPackage(
             distinctBookDirected,
             distinctUnavailable,
             distinctUnresolved,
+            sourceCommit,
         ),
         repositorySourceDigest = repositorySourceDigest(),
         records = records,
@@ -1971,6 +1997,7 @@ private fun reviewPackageDigest(
     bookDirectedIds: List<String>,
     unavailableIds: List<String>,
     unresolved: List<String>,
+    sourceCommit: String,
 ): String {
     return sha256(
         canonObj(
@@ -1980,7 +2007,7 @@ private fun reviewPackageDigest(
             "applicationId" to canonStr(UNIT1_REVIEW_APPLICATION_ID),
             "versionName" to canonStr(UNIT1_REVIEW_VERSION_NAME),
             "versionCode" to UNIT1_REVIEW_VERSION_CODE.toString(),
-            "curriculumSourceCommit" to canonStr(curriculumCommitForUnit(unitNumber)),
+            "curriculumSourceCommit" to canonStr(sourceCommit),
             "contentReviewDigest" to canonStr(contentReviewDigest),
             "mappingPackageDigest" to canonStr(mappingPackageDigest),
             "unitReviewStatus" to canonStr(linguisticReviewStatus),

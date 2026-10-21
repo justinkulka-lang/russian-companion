@@ -337,6 +337,17 @@ class UnitReviewPipelineTest {
             val errors = curriculumSourceCommitErrors(pin, root, number)
             assertTrue(errors.joinToString("\n"), errors.isEmpty())
         }
+        // A reconstructed historical digest cannot relabel a current packet as current source evidence.
+        val currentFour = buildUnitReviewPackage(pack, 4)
+        val historicalFour = buildHistoricalUnitReviewPackage(pack, 4, UNIT4_CUMULATIVE_REVIEW_CURRICULUM_COMMIT)
+        assertNotEquals(currentFour.reviewPackageDigest, historicalFour.reviewPackageDigest)
+        val relabelled = renderUnitReviewFiles(pack, 4).files.mapValues { (_, text) ->
+            text.replace(currentFour.reviewPackageDigest, historicalFour.reviewPackageDigest)
+                .replace(curriculumCommitForUnit(4), UNIT4_CUMULATIVE_REVIEW_CURRICULUM_COMMIT)
+        }
+        val historicalErrors = validateUnitReviewFiles(pack, 4, relabelled)
+        assertTrue(historicalErrors.joinToString("\n"), historicalErrors.any { it.contains("curriculum source commit") })
+        assertTrue(historicalErrors.joinToString("\n"), historicalErrors.any { it.contains("Review package digest") })
         assertTrue(curriculumSourceCommitErrors(UNITS_1_5_CURRICULUM_COMMIT, root, 1).isNotEmpty())
         assertTrue(curriculumSourceCommitErrors(UNITS_6_10_CURRICULUM_COMMIT, root, 7).isNotEmpty())
         assertTrue(curriculumSourceCommitErrors(UNITS_26_30_CURRICULUM_COMMIT, root, 27).isNotEmpty())
