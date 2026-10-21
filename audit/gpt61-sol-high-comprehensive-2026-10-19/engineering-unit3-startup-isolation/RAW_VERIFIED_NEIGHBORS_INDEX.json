@@ -1,0 +1,93 @@
+{
+  "archive": "RAW_VERIFIED_NEIGHBORS.zip",
+  "sha256": "be1733d74a077f373da788c8f3e8b81ce8f4d6e0a6ce91f0d876774ba09bcbe7",
+  "bytes": 26195,
+  "members": [
+    {
+      "path": "LAUNCHER.log",
+      "bytes": 221,
+      "sha256": "85b6fa9714e5c175c6039036ac6fe0fcad5f19af37da8c3fd9c8cab501183d36"
+    },
+    {
+      "path": "SESSION.json",
+      "bytes": 238,
+      "sha256": "31bc77c276bde835d2adde33a38d5c240442c27112bd663ee202d708832fe968"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/CONTEXT.json",
+      "bytes": 9295,
+      "sha256": "4af4bc1944c0ed76b61a460e3d7e04d49366da2d7992c966bf8672ffe74e198d"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/EVENTS.jsonl",
+      "bytes": 15248,
+      "sha256": "e9a7e009527aac454a3feb244e8fa95afda28af55e28c17ab7dc1022d4007c75"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/LINT.xml",
+      "bytes": 31476,
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/RESULT.json",
+      "bytes": 11994,
+      "sha256": "dcd3985b362a7aada1294ccf89fc0d77c4beda8dfb060669f4aff58c9a9128b9"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/RESULTS.csv",
+      "bytes": 4941,
+      "sha256": "44dd2d33750391aa36d74d78e30882ac908e6a744f1c8746ecf64f53c84d9740"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/RUN.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/RUN.log",
+      "bytes": 3882,
+      "sha256": "8228cdf98369d041b4df881dc84b9ac6f30865efcca933a2d6e75ab88050b7a7"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/SHA256.json",
+      "bytes": 1212,
+      "sha256": "b197fe51d8d5242c6e26c951f77bff224f0ef56796e4dc5f3060cd7a303d1360"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/XML/TEST-dev.russiancompanion.v2.Unit30InstructionTest.xml",
+      "bytes": 1069,
+      "sha256": "a26b1b54ef98af44876ed95ce052102eea7fac09ce7059286b5ff2bcc9606471"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/XML/TEST-dev.russiancompanion.v2.Unit3GenderTeachingTest.xml",
+      "bytes": 1475,
+      "sha256": "41a4c810eaee4890b0e2dba59fc289b4f705f3f904cbc6557274d737d852d3e6"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/XML/TEST-dev.russiancompanion.v2.Unit4NominativeRoleTest.xml",
+      "bytes": 2005,
+      "sha256": "40912d026d150732d9e5f1607ec278c52b4b68c65288a09c1b0b4d242d9b4fba"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/XML/TEST-dev.russiancompanion.v2.Unit4PresentTeachingTest.xml",
+      "bytes": 2514,
+      "sha256": "ee5494c1a0606b08b358e9d8a058a643d5bda161390d780d870f8299c7fdde49"
+    },
+    {
+      "path": "VERIFIED_NEIGHBORS/gc-421643.log",
+      "bytes": 23087,
+      "sha256": "90b9dcd798f8b73dfefacdf508a74b6dfa904627c6eef8087492d324c8418b06"
+    },
+    {
+      "path": "resources.gradle",
+      "bytes": 464,
+      "sha256": "db8548af83f875ce1114e83a41d30e2bfd9cc35e270b5d94c6f5fd3a83a77ee3"
+    },
+    {
+      "path": "run.py",
+      "bytes": 9598,
+      "sha256": "56f28b67a94ed3dc2fb21b1ffe7a61ac541579de451769a54caf4d76fb51d952"
+    }
+  ],
+  "crcAndAllMemberHashesVerified": true
+}

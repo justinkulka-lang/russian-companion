@@ -1696,3 +1696,8 @@ Unit3 replacement diagnosis at ee9fea3c45b9d02c2ad5a87cfc9ecd7ab6237bdf:unchange
 ## Unit3 startup isolation prepared
 
 Unit3 startup isolation correction prepared,verificationPENDING:external tracer reproduces original assertion and ties competing journal deletion to background application startup store;single@Before uses existing startup-wait/close helper,all7original test bodies/assertions unchanged,production untouched. See engineering-unit3-startup-isolation/STATUS.md and DECISIVE_TRACE.json. Original broad failure retained;oldUnit7causeUNCONFIRMED;physicalLAST;no release approval.
+
+
+## Unit3 startup isolation verified
+
+Unit3 startup isolation verified at73dfdb66aca623e9221da57913a1e04af2ecfe32:traced9methods/2classes9passed and separate uninstrumented25methods/4classes25passed,zero failures/errors/skips,exit0each. Same final tracer reproduces original assertion before correction and links background startup-store recovery to active test-journal deletion;postfix25replacement calls allREPLACED,no competing same-root recovery in their windows. Only@Before existing startup-wait/close helper added;all7original test bodies/assertions exact,production untouched. Scopes overlap/not summed;original1323broad failure immutable,no fresh broad/complete-suite/independent acceptance claim. OldUnit7causeUNCONFIRMED. All66archives/64histories/167historical-generated/154current-generated/candidate conserved. Nextlarge:fresh discovery and uninterrupted uninstrumented hostregression. AuditINCOMPLETE;17qualified findings unclosed;physicalLAST;no assembly/signing/merge/freeze/approval. Read audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit3-startup-isolation/NEXT_LARGE_TASK.md.

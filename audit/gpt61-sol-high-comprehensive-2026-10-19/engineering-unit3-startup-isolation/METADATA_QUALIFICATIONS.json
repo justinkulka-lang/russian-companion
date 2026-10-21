@@ -1,0 +1,7 @@
+{
+  "inheritedRunnerScopeWording": "Some copied runner/context scope descriptions say unchanged class/classes. The selected original Test method bodies are unchanged;the Unit3 Before setup is changed exactly as METHOD_BOUNDARIES records. Treat actual sourceCommit/inputTrees/sourceTestSha256/selector/XML/event data as authoritative,not that inherited prose. Original contexts/runners remain unmodified forensic evidence.",
+  "asyncLabel": "Global test-entry label is only a hint;actual startup correlation uses matching open-result/store identity,thread/callstack/root.",
+  "oldBroadSourceCause": "No original broad-run path trace exists;mechanism reproduced at same original assertion with same pre-correction five inputtrees.",
+  "originalUnit7Cause": "UNCONFIRMED",
+  "noCompleteSuiteClaim": true
+}

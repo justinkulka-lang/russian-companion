@@ -1,0 +1,7 @@
+{
+  "pid": 421561,
+  "sourceCommit": "73dfdb66aca623e9221da57913a1e04af2ecfe32",
+  "launchedEpoch": 1792603592.2722247,
+  "scope": "25selected methods/fourfullclasses without Java agent",
+  "automaticMutationOrPublicationQueued": false
+}

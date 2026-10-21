@@ -1,0 +1,14 @@
+{
+  "testedSource": "73dfdb66aca623e9221da57913a1e04af2ecfe32",
+  "original66ArchiveHashesReverified": true,
+  "original64HistoriesPreserved": true,
+  "historical167FileArchiveCrcAllMemberHashesReverified": true,
+  "current154GeneratedFileHashesReverified": true,
+  "candidateSha256": "8091556047103ab25524dd0d7b255b52aad0a34a3c731d723e89a183ead9b661",
+  "allFourProductionCatalogDocsReviewTreesMatchOriginalBroadSource": true,
+  "onlyTestFileChanged": "app/src/test/java/dev/russiancompanion/v2/Unit3GenderTeachingTest.kt",
+  "allOriginalBytesExceptSingleBeforeInsertionUnchanged": true,
+  "apkAssemblyInstallSigning": false,
+  "oldUnit7Cause": "UNCONFIRMED",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}
