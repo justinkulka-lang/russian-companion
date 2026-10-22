@@ -2330,3 +2330,8 @@ Archive-boundary coverage verified at cb51bdfe771d7d0d34ecada2d625883fc8a9db27:3
 ## Reserved recording filename baseline prepared
 
 Reserved recording suffix hypothesis prepared for isolated baseline3methods/1class;no production change or confirmed defect yet. New named-store tests cover ordinary.m4a positive and.incoming/.retired refusal with exact original rows/bytes/reopen. The preceding34method archive-boundary run passed and remains separate. Do not change test bodies after baseline;capture genuine outcomes before correction. Check external /workspace/artifacts/backup-recording-filenames-2026-10-22/BASELINE/RESULT.json,RUN.exit,SHA256.json for actual state;do not duplicate active jobs. All17externalfindings unclosed;physicalLAST;no assembly/install/signing/merge/freeze/approval.
+
+
+## Reserved recording suffix baseline and prepared correction
+
+Reserved recording suffix baseline CONFIRMED:3methods1passed/2failed,exit1 at7a8b705a;ordinary.m4a survives reopen,both reserved suffixes returnREPLACED while deleting incoming/original bytes and removing old notes. Raw baseline preserved. Prepared bounded referencesResolve guard rejects.incoming/.retired basenames before mutation. Original3test bodies/file bytes exact;all other tests,formats,schemas,policy,curriculum unchanged. Final37method/5class scope PREPARED_NOT_YET_EXECUTED;check external FINAL/RESULT.json,RUN.exit,SHA256.json before claiming results. Original34scope separate;17external findings unclosed;oldUnit7causeUNCONFIRMED;physicalLAST;no assembly/install/signing/merge/freeze/approval.

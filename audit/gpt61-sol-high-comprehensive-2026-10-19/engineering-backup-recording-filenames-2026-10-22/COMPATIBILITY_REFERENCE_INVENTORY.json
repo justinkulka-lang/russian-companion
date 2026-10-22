@@ -1,0 +1,525 @@
+{
+  "kind": "HISTORICAL_REFERENCE_INVENTORY_NOT_RUNTIME_REPLAY",
+  "archives": [
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/ANSWERED_REVIEW.zip",
+      "archiveSha256": "06b25bb19c86ebdc17f76c5e380e2c61fa3ec4795373c99fb9d457b9b1ad4441",
+      "learnerSha256": "092ae2a9739e9e6acf93e4cc3b5eea4de842081e7f447e55cfb69c62cdd14c58",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/BEFORE_UNIT6_WORK.zip",
+      "archiveSha256": "ddce1fc56ea7844ff13f1a2835f5a66f5f11a02b182a854974b064af3f9fb098",
+      "learnerSha256": "975cf32a5a1197ab131ae046fe5f2b00add1ddddf4193060260274897037810f",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/COMPLETED_UNIT6.zip",
+      "archiveSha256": "83c730fae2fb5c26d7ad32700ccb3144c2af511b65482ded361a1d919525ae9e",
+      "learnerSha256": "80c2eeb7c51bbedc76ccc855607db547b550061d3873005a207fbf275ef0ac9f",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/COMPLETED_UNIT7.zip",
+      "archiveSha256": "70cd18c883f31d16d17a866089981375383a9c189fdbbabdd58ab509646bbe0a",
+      "learnerSha256": "7cb08fc138b17a519c7293d6c4a36d282170f9b6bddbfbfc5f979aac28966888",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/ORDINARY_UNIT6.zip",
+      "archiveSha256": "9abf9de8ae912dadd428e5143f31fe76911b812dbb8a0c9a14d89111a611812b",
+      "learnerSha256": "2a6dddd8043d086581e311915ccc413b5a06269817392cb59b62f58c9c14f859",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/PARTIAL_REVIEW.zip",
+      "archiveSha256": "5dc62503eabcc25f200e8aa67f75690e6771374ddca6581fb7c4959bc0347dc8",
+      "learnerSha256": "3f4bcee5fce2a6e5630eac8f36dd69f6fbfe5de94013c9f407d564c40020881f",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/POST_COMPLETION_WRONG.zip",
+      "archiveSha256": "bf19c01f27a28c50501bbb9ed086114b5ff0d588ff78cc01c27277dea9df2634",
+      "learnerSha256": "0c15470b60c0a3e09d5ed63835916a869611576ca78af863044a0e09282d45fc",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/UNSTARTED_REVIEW.zip",
+      "archiveSha256": "6111435b6a493d8589e7a8922b6eb74c3f109ce20c39262ef22bdc8ead92d15e",
+      "learnerSha256": "a8624f30e3a5f79a78a2cda6a4500ff6cbf3250d8846fdb96d6faf3bffc8af50",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/ANSWERED_REVIEW.zip",
+      "archiveSha256": "6033c9fb0a7dbac35d42ba8febc5f10bc8a300d477299e3e8f6031550a77c9e8",
+      "learnerSha256": "24944e1feae3eae63a7862a6e0d123fd2b235c5a744b49ffd22b55f00d84053d",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/BEFORE_UNIT6_WORK.zip",
+      "archiveSha256": "984c6ed9285072ae3f7903dd906ecb89a6501918c80435ee315cb907ee1de7e6",
+      "learnerSha256": "45de1b1d7f451e3981c1cb414077054304466dc3cc7f4a2511fcaeec7cf5de78",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/COMPLETED_UNIT6.zip",
+      "archiveSha256": "a8224368ee2fdab1c40257993cd86d0aa398c8e5b5577fc7a6049ca7d3805125",
+      "learnerSha256": "fac5b8d7c34e0ac944822de13bc859bada7d839357581aba1bede420f4882b00",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/COMPLETED_UNIT7.zip",
+      "archiveSha256": "d38319000cc4504ae99cb05872b945b2e8530461f09881ac4fb54af1992fe7ac",
+      "learnerSha256": "9a0a4dba9b259ff5e06bb3f8846ebf122affa9a60562812268ee48088854b1f0",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/ORDINARY_UNIT6.zip",
+      "archiveSha256": "9aeab270239cb594d8bde23643c4210615f6b6684d4358e885297d6435758665",
+      "learnerSha256": "039b6494ba2fc00828cff8263c4f767a97985379ebd9ac0b8462dd340f190ceb",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/PARTIAL_REVIEW.zip",
+      "archiveSha256": "34297a07f4304e8eaaaecaf495dc5b4022824ea1e9b5fbe4bcf824a760da33c2",
+      "learnerSha256": "858c332820f6dc8b9f5d5ab5b390350dc6b3e052c620fd4bc23fb4e243fca1a4",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/POST_COMPLETION_WRONG.zip",
+      "archiveSha256": "24da67c2ae487688d9f83eec18c2925c9e9909c3f3fda00bd234de647a681219",
+      "learnerSha256": "cad3521c06af6155011422d082cf1daad6e85cdd0cf40fe77b6d1e145fe0f558",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/UNSTARTED_REVIEW.zip",
+      "archiveSha256": "2f7c68f854f590a845f53feb2b631038e24fb1cbd4397eac9f2c4f2cdfc86829",
+      "learnerSha256": "7efc2f91d96d8793afd3052154e6e48293535d7b1ac9c277b2549f72320c6f64",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/ANSWERED_REVIEW.zip",
+      "archiveSha256": "e5ad30a40d946127f39c2c09324f818463097b48262ab9b96dd26c78b8b0b092",
+      "learnerSha256": "22d7d4c25b18ed405c014006995570555fe6f1acd605c24777af7135a89be997",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BEFORE_UNIT13_WORK.zip",
+      "archiveSha256": "27157f7a549757916001be7643a74443625ca9b8377dd4b2458958df0dbf24d8",
+      "learnerSha256": "663dc65a27c03c51f1a5045ca3872bdce7351baa8f011725ed463edc21361250",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT13.zip",
+      "archiveSha256": "ce934cbd1bc04593bc18c0f4c64d0b96c2787bfb7e049e075e604140da6f21ab",
+      "learnerSha256": "edef55831b00d253a2932b51ba6d4337e03d9021e5e1344d80360d1ff551f641",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT14.zip",
+      "archiveSha256": "c16d47eabd546c04870c0583801c1e72a68e49b35140e87332490e989f0e1fa2",
+      "learnerSha256": "59b25c35b3533b4ef75a5afde142a143635fa5a06e64503b007152e087dcfe37",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/ORDINARY_UNIT13.zip",
+      "archiveSha256": "aa17f1634aaa0a969c480b2bdd13f1d322833b3158e742b7dd34f2f8db3e85dd",
+      "learnerSha256": "fa43e2113268e1f26d036301c92616ef2d74d5cf9d850454b50c0283345cb266",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/PARTIAL_REVIEW.zip",
+      "archiveSha256": "9b1d4fe1a3445aad6827c7b09392881d3ff3485ff4304390c23106048030c0da",
+      "learnerSha256": "10e92d3e0956483234d0e650234cd5e7475adf6048ff4abdb0797ee509f1dcb4",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/POST_COMPLETION_WRONG.zip",
+      "archiveSha256": "727bfdc12271e5d4ca8b01ce3dd652154d14705af602e67efe62c2944504ad97",
+      "learnerSha256": "850da7c5dcd63a24e065635e6c114eee184490aebdf4426154b09a8d79016b08",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/UNSTARTED_REVIEW.zip",
+      "archiveSha256": "b11352d25c2b72a8d245af3c710995d68b960caecbcaeb4f6120ca4b6ea36890",
+      "learnerSha256": "1fbc07f68c62299d50c3f8301946b5d95f4f6087a8edede27af382fb33efd714",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/ANSWERED_REVIEW.zip",
+      "archiveSha256": "de5897b81ca172e90065967f52007ce03ef9afddcfbedebf611d62e30757fd9f",
+      "learnerSha256": "0db07dabd8c90397581da8e3387a4f3ebbb63b79e0949efdfeafbc368c71d816",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BEFORE_UNIT13_WORK.zip",
+      "archiveSha256": "9bca68d7234c32ddcc315f2c05a02c290f33910c4bc5eca3adbbb9537ee36ebd",
+      "learnerSha256": "54e30a25da3b75551c3d7a5d9045ee38a6dae4cfb414d40f82ad5271933439eb",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT13.zip",
+      "archiveSha256": "fed8e249890c2340809ee14e69f292e22faba9c0329d264c39ea25c018113749",
+      "learnerSha256": "9c87da43611b500356f814ffa803f73a4e87fb6d63f04c038972be3c9d1f12ea",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT14.zip",
+      "archiveSha256": "49177d83bf123faf80421276a698decded31ecc0a64e4f849f0d3accf7b966f6",
+      "learnerSha256": "f27742b4b3f3617d274d28775e85705ff1564664bfc6cf132c7ad13ff5f965ae",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/ORDINARY_UNIT13.zip",
+      "archiveSha256": "4ec3e03caa3789ea451a368bc250bbcdd401fab16cc8a12a2dc7f21e16f66c3a",
+      "learnerSha256": "b30cd8049b6e71598f6c099ac670e169e0490b3c1efd420beb1913b551e13ccf",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/PARTIAL_REVIEW.zip",
+      "archiveSha256": "4963b568d06003e60ba5141099fbe263a17b777f54ee0bb432b19518b65a4687",
+      "learnerSha256": "b0702da0b8d10a9c5e8961875db47676a6434e34a929e71bddf81368d2e6d630",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/POST_COMPLETION_WRONG.zip",
+      "archiveSha256": "e42b9bdc9b8c0d5e5cf488f54905a81af75ea9aa08a3630f5b0447d3c0679a7f",
+      "learnerSha256": "a987c17ee5e7b87b7a2f6d35bb529ed5c280372814f175747122ef4127811448",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/UNSTARTED_REVIEW.zip",
+      "archiveSha256": "e80965499cb676d148492510b6469f97079ed60a299c56aebb0d6edb645730d6",
+      "learnerSha256": "146eeb164eb11b2a32a4b732fd7a414e40a9a3725d7e6249c81958c3117ae763",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/ANSWERED_REVIEW.zip",
+      "archiveSha256": "8b269b4f754a94b2d4eb1fe01c84eb2169525c39a4c500e53970e02d9335ce28",
+      "learnerSha256": "7d4b09b106fbd91e6baedfbff4d95e79af4b78511d5076c6c4934a5b35f3a13f",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BEFORE_UNIT13_WORK.zip",
+      "archiveSha256": "e39dd9b11620cf9643e9bb54f8d571ce1b376464215f9680b62f5918220ad0a0",
+      "learnerSha256": "03142a93d9e42125852fa46cfae87104c798c08be241043f43aec2bb3005f53c",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT13.zip",
+      "archiveSha256": "5d0a0d30b8c4b56ae42d92d398aee57be86f363f89705b936d624b24dea3a6dc",
+      "learnerSha256": "292f0489bb47cc99fea22f5ddcbd0101c92e51a92933113022e381c6afba005f",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT14.zip",
+      "archiveSha256": "49a8e886ddd24c0a0ccefce5200de97d73ca038f03b579f2433b16aed5721484",
+      "learnerSha256": "b28c07eb6690dc9df694bee72e7a6a3f08231f8d9ea55d5689b6e056d15a13f0",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/ORDINARY_UNIT13.zip",
+      "archiveSha256": "567f359c9d4329b60af433faf6adc202431954274b3026a267d3f4a551a04bc0",
+      "learnerSha256": "a74862aadb7d2babae2c47c11fbefb87806fef92e3d657fc162dbc614a3ad821",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/PARTIAL_REVIEW.zip",
+      "archiveSha256": "65009eca7c6097f70e1c131677fc6322aec41347c48702059252e0d51a21b2d2",
+      "learnerSha256": "a6504f43227067810681960280c6e1be41ad12b0a09d427e4ab063765c09fa56",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/POST_COMPLETION_WRONG.zip",
+      "archiveSha256": "11617513cf5417f89649d5f1eaca5c2006017c92b186190957351259ac9e0d74",
+      "learnerSha256": "ebd47b9fc2aaa59a2ef9ce15ef2f600e04745a34c11ea3286c2e3ccbcb3506d0",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/UNSTARTED_REVIEW.zip",
+      "archiveSha256": "c14f71fad33e00099af20058ff43e64e93460332bea4177f71bee84ce8a7b1ab",
+      "learnerSha256": "019940c6c289d19af7d46aa52373e2e9e58fc0f28b15bf83aab3a5bab474084f",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/ANSWERED_REVIEW.zip",
+      "archiveSha256": "a4a239a2db274a81e9822091170403e8e22fd4ab94aaa66e374cb322a86bfb0e",
+      "learnerSha256": "088fef4869291b780f00b98d1e9c1f8171a051cd8ec76e40464dc753f50f5748",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/BEFORE_UNIT3_WORK.zip",
+      "archiveSha256": "8fea5af61fa4c8a40580e9a796c36581acb0d7090c073199c2c34838bd455088",
+      "learnerSha256": "2b76fad8e41fd928a5e538a881d16f457e55d5332a1d32ec4728913e9a942817",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/COMPLETED_UNIT3.zip",
+      "archiveSha256": "b5067413bda2417daaa6ad8d38e772b9b6faf880e35f20d33414870d80891a30",
+      "learnerSha256": "b687c080843abd4e93d261bfc4da6fb158abcdcf7a076a6180c8334a08c2d95b",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/COMPLETED_UNIT4.zip",
+      "archiveSha256": "85573676d0d15a58e20fa605262b0d22da8a36926a6bd2875091a4558464b973",
+      "learnerSha256": "c014afca662dd652a46e52926e61c264d3635a041295a7c6ca203dec3951c900",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/ORDINARY_UNIT3.zip",
+      "archiveSha256": "d254916ea5c6e5864a50d8460318327dd449785e44b3af1419e0aec1c3afd48a",
+      "learnerSha256": "434d3839a77c4f120c1f94128eaf92b38a43acc999479ba3fd51cbe1193fa486",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/PARTIAL_REVIEW.zip",
+      "archiveSha256": "53905fbffccb4a4ff9f273330128f7270715b9963581a058285323dfc0c108d9",
+      "learnerSha256": "a65bc00a501939c9fd0f0948d623404030bb294481f3e446c5a86c6cad113ac4",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/POST_COMPLETION_WRONG.zip",
+      "archiveSha256": "cc41045a8c451df74be14b911ec85d613ebd086e90a62974e0919814845cdfbc",
+      "learnerSha256": "a5f6de2889c665d42088dae645f0a82488ff1d0720e282fc5191b76c012e9bc8",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/UNSTARTED_REVIEW.zip",
+      "archiveSha256": "2eb317fca4daa0b3c0204dfb86205675bedbfaac6e552b43d2f91301b08db712",
+      "learnerSha256": "b602d7868debda3296416d21fa3461b80be62e3a2b8b32fdba600e77abcfb7a0",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/ANSWERED_REVIEW.zip",
+      "archiveSha256": "bb4de6cbaf3218a7890abe0454b38ce12960235e7a1e0c26ec645ac6effa020b",
+      "learnerSha256": "120a354b0110d6268eb4f6f3bea9dd256df8ef2e0cdf7c1db5ef7b94059d5ffc",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/BEFORE_UNIT7_WORK.zip",
+      "archiveSha256": "8a6391b156783339bf6e4900b5d18633c57c407c8b83769690c910d31bdbda85",
+      "learnerSha256": "80b46afd202b75f8e27f8ef1b6edb6152c21d4c8d349a150043e87a3263dd2b1",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/COMPLETED_UNIT7.zip",
+      "archiveSha256": "fa29e710e2b68826d5028f452d564a55a8edcacc767b22b34b3598225812e0b8",
+      "learnerSha256": "53a64b39b918a92c64e8e8c18466343ae6d6c07fd220240725435618f6349052",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/COMPLETED_UNIT8.zip",
+      "archiveSha256": "e1e14348f435270a482af6829951371d9e51f5dacc87578d56afe460874425db",
+      "learnerSha256": "3c713ad67a27d9449e4cf7f0ceb7aa9f82df5f17c8a9226876fc702356ecd5e2",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/ORDINARY_UNIT7.zip",
+      "archiveSha256": "44d95127a5f18ea3b9f19c0433b8346b3334630963e62843ceb4e7d69bec0898",
+      "learnerSha256": "ffcb0079065f04e00f3c8896e9f2f11b48b1fda498d6ddaebee132eaeb0cba1e",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/PARTIAL_REVIEW.zip",
+      "archiveSha256": "f835606f27476e3e0698dc907d92b0a3fa15fc9821cba51f43b6df11c5e301c2",
+      "learnerSha256": "a557c9e65946c968e80e2a1e36cc7f46b8146656588489543b41daf87bfe1e52",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/POST_COMPLETION_WRONG.zip",
+      "archiveSha256": "5f5f2596b8b563b6bfc80cd6c572827908d2f344718eeba6a61309805dd422ce",
+      "learnerSha256": "65c267b6b227e9aeb56c0a593248624213a316c04d02109786e04387ee701565",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/UNSTARTED_REVIEW.zip",
+      "archiveSha256": "c372229c1f0b49a121ff50371906476430bfcd2d72b2e73e1c359402bff17068",
+      "learnerSha256": "2ef6ef1540d8c592daeb6a9e74cb0cdebd43dcf8268bae8d60fdfc4e3f3a219c",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/ANSWERED_REVIEW.zip",
+      "archiveSha256": "2cfe7f91827721625d598899447bb8a906e9c5ecafba34125c7ea36e03649c83",
+      "learnerSha256": "ae7dcbdb31c50957d50a7855a51a68a292dbad87b6ba2ff5e3035b932e34859e",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/BEFORE_UNIT9_WORK.zip",
+      "archiveSha256": "56f4abb7d682e7de425d1d3f2f0691bf8bf8c4776eaecdffac91463f7d5c0ce1",
+      "learnerSha256": "35bc83a4c8596fe1ded6c6935618859fea46f48808f5a06f58a22767d9af4263",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/COMPLETED_UNIT10.zip",
+      "archiveSha256": "928f5be12db3b61f9f06f23d37a4dbe4368aeb255c830e55c327f493a7fbd5df",
+      "learnerSha256": "6fdf8c267c5f567706145cf67de82124cc48e2e347427363126fa7de9ac1c43d",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/COMPLETED_UNIT9.zip",
+      "archiveSha256": "c64d2b49b0ce6123fd56640e3edc3cb42752a8025391de99db0994523a88fba4",
+      "learnerSha256": "275e4be6463adbff234a34dec8a399056c5649abf48a47aa7648e4c753646dcb",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/ORDINARY_UNIT9.zip",
+      "archiveSha256": "3fd490c3597741fa9620e2a0789c5586d37ec8e9e8e2223fc44e0209d044e3bb",
+      "learnerSha256": "9c60f2ebe673afed2b483c984f3724a29b7a3a25c717702b801b17acbecfa12f",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/PARTIAL_REVIEW.zip",
+      "archiveSha256": "76df6f6b8033382554c58d2b4a05c40edcd6f4b8822c2aa8dfac415e88b4427f",
+      "learnerSha256": "73a6209b1ddf7c84eb9f9ef2f8d2f62c1bb4c48447fa1d022b5424088147d483",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/POST_COMPLETION_WRONG.zip",
+      "archiveSha256": "753757f973c9eb83e1e951096942b4fbd4dfe3d714c0feceb5b40674be1d5441",
+      "learnerSha256": "97ed2694c267cff006f6b9bc610b077cb274ffa5fb508e1ec87c06beb0599958",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    },
+    {
+      "archivePath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/UNSTARTED_REVIEW.zip",
+      "archiveSha256": "7ee179e012c1ec6f9e42ecfc76550bdda5cf9b823c8ec97b53bf2322b7b5222a",
+      "learnerSha256": "3445a13f4520738efde5baecc043f914db6d3d2d1153cb91f2488983f5f67b66",
+      "schemaVersion": 3,
+      "recordingCount": 0,
+      "reservedSuffixReferences": []
+    }
+  ],
+  "resultArchivesWithoutLearner": [
+    "audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/CURRENT_RAW_EVIDENCE.zip",
+    "audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/INITIAL/ABORTED_BINARY_RESULTS.zip"
+  ],
+  "authenticBackupCount": 64,
+  "totalRecordingReferences": 0,
+  "reservedSuffixReferences": 0,
+  "qualification": "Absence in these retained fixtures does not prove every previously created user backup lacks reserved suffixes;no malformed/legitimate cutoff or new schema inferred. No histories rewritten."
+}

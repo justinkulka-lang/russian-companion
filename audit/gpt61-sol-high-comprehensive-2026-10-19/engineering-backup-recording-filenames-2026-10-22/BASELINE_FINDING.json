@@ -1,0 +1,68 @@
+{
+  "kind": "CONFIRMED_ENGINEERING_DATA_LOSS_NOT_EXTERNAL_FINDING_CLOSURE",
+  "id": "ENG_BACKUP_RESERVED_FILENAMES_20261022",
+  "baselineSource": "7a8b705a0befc14091fedc0e9417120444dd56c7",
+  "counts": {
+    "reported": 3,
+    "passed": 1,
+    "failed": 2,
+    "errors": 0,
+    "skipped": 0
+  },
+  "underlyingExit": 1,
+  "positiveControl": "ordinaryRecordingFilenameRestoresItsBytesAndSurvivesNamedStoreReopen",
+  "negativeCases": [
+    {
+      "testClass": "dev.russiancompanion.v2.BackupRecordingFilenameBoundaryTest",
+      "method": "retiredSuffixRejectsBeforeReplacingRowsOrRecordingBytes",
+      "outcome": "FAILED",
+      "seconds": "4.165",
+      "messagePreview": "java.lang.AssertionError: recordings/restored.m4a.retired: incomingFileExists=false, originalFileExists=false, noteCount=0 expected:<UNCHANGED> but was:<REPLACED>",
+      "fullMessageBytes": 162,
+      "fullMessageSha256": "cd634e42feed88c43f71b27ef3a3a2055e42f281428c572f536ea724a4a32d10"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.BackupRecordingFilenameBoundaryTest",
+      "method": "incomingSuffixRejectsBeforeReplacingRowsOrRecordingBytes",
+      "outcome": "FAILED",
+      "seconds": "0.105",
+      "messagePreview": "java.lang.AssertionError: recordings/restored.m4a.incoming: incomingFileExists=false, originalFileExists=false, noteCount=0 expected:<UNCHANGED> but was:<REPLACED>",
+      "fullMessageBytes": 163,
+      "fullMessageSha256": "f4993bf60ffe73cf64ed920f4e8d2ae692140ae3176e8279cb0a9cd29725bc0b"
+    }
+  ],
+  "observation": "Correctly hashed structurally valid archives reached named-store replacement. Reserved-suffix cases returned REPLACED while incoming and original files were absent and old notes removed. Ordinary.m4a passed with byte checks and reopen.",
+  "sourceMechanism": [
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/LocalStore.kt",
+      "lines": [
+        1617,
+        1630
+      ],
+      "role": "pre-mutation reference check omits reserved basename suffixes"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/LocalStore.kt",
+      "lines": [
+        1566,
+        1578
+      ],
+      "role": "committed replacement calls recording cleanup"
+    },
+    {
+      "path": "app/src/main/java/dev/russiancompanion/data/local/LocalStore.kt",
+      "lines": [
+        1929,
+        1936
+      ],
+      "role": "cleanup deletes.incoming/.retired names even in the current keep set"
+    }
+  ],
+  "qualification": "Runtime assertions establish outcomes;source trace explains the synchronous cleanup path,not an instrumented native filesystem/JVM trace. This is distinct from old Unit7 restore cause,which remains UNCONFIRMED.",
+  "unchangedRegressionFileSha256": "e08368e6b223e1d30fcea5e3d801e65fff84fe9843e173659e8d897d6ad6a65b",
+  "historical64BackupsHaveZeroRecordingReferences": true,
+  "compatibilityQualification": "Those64retained inputs do not exercise recording-name compatibility. Ordinary and existing recording controls are separate;no blanket real-user backup compatibility claim.",
+  "proposedCorrection": "Reject reserved recording basenames in referencesResolve before learner/recording mutation;keep parser/schema/historical records unchanged",
+  "external17Findings": "UNCLOSED",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

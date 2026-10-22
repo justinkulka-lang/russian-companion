@@ -1,0 +1,67 @@
+{
+  "archive": "RAW_BASELINE.zip",
+  "sha256": "4bd7dbf2de965450f7e33896d1ad78a13fafb83fc9cf8f91c76ced34e15017fe",
+  "members": [
+    {
+      "path": "CONTEXT.json",
+      "bytes": 4217,
+      "sha256": "bf92989a820326cf9da525ce0471c90ec1e385e1ab578e5128a66515ab21f78f"
+    },
+    {
+      "path": "EVENTS.jsonl",
+      "bytes": 2213,
+      "sha256": "078544efab371c78abd3124f1594888d62b214cbed6875d7e5d63ec644f3ac02"
+    },
+    {
+      "path": "LINT.xml",
+      "bytes": 31476,
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+    },
+    {
+      "path": "RESULT.json",
+      "bytes": 3363,
+      "sha256": "a5a6d7a4969ffe32ea24a121a6fe2342bc2a59cff9fbbed79584dde42f361cb8"
+    },
+    {
+      "path": "RESULTS.csv",
+      "bytes": 1021,
+      "sha256": "6496eceac90fadf2228006e0c466f3ed14194b6f215f3d3bf7a1d6a5de261690"
+    },
+    {
+      "path": "RUN.exit",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "RUN.log",
+      "bytes": 5267,
+      "sha256": "b3298f3aba2a0ff34504726594e4fba34a98ee2ba5cc417651ef619ad7e23f23"
+    },
+    {
+      "path": "SHA256.json",
+      "bytes": 823,
+      "sha256": "7da90efa1ff0af94adbba7b54fa643ff6ead3c37fed8428f5adf953e1301b386"
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BackupRecordingFilenameBoundaryTest.xml",
+      "bytes": 6690,
+      "sha256": "b91d950a69b185fe90293a5cbd994bd4b6d00fefaace845a03c272849a5a2f38"
+    },
+    {
+      "path": "gc-458718.log",
+      "bytes": 2496,
+      "sha256": "3448aa369f25b10d18ba0ef3c25d8e0aaaec08e6e5c20bf9059492883fb977f9"
+    },
+    {
+      "path": "LAUNCHER/BASELINE_SESSION.json",
+      "bytes": 201,
+      "sha256": "310a1b58e2dcb605e42aa80f6e220a465acd7508e704d8a1270dc1f0c8128911"
+    },
+    {
+      "path": "LAUNCHER/BASELINE_LAUNCHER.log",
+      "bytes": 209,
+      "sha256": "223188cc48edfe7751e4c8dd3dd069fc7e176c5563dab2ba4b48fc177c296e47"
+    }
+  ],
+  "crcAndAllMemberHashesVerified": true
+}

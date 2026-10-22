@@ -1,0 +1,16 @@
+{
+  "status": "PREPARED_NOT_YET_VERIFIED",
+  "baselineSource": "7a8b705a0befc14091fedc0e9417120444dd56c7",
+  "productionPath": "app/src/main/java/dev/russiancompanion/data/local/LocalStore.kt",
+  "beforeSha256": "049a6c58825583693c5c32669257698380c5a72a8cee7360399ace35d59fcd2e",
+  "afterSha256": "7b255cc434d66d9101a55bfd328461fc3869d11a117db0b4f798f06997e26637",
+  "boundedChange": "referencesResolve rejects live recording basenames ending.incoming/.retired before any learner or recording replacement. All prior path/model/state checks remain.",
+  "regressionFileSha256Unchanged": "e08368e6b223e1d30fcea5e3d801e65fff84fe9843e173659e8d897d6ad6a65b",
+  "allOtherTestsUnchanged": true,
+  "noFormatSchemaPolicyCurriculumChange": true,
+  "ordinaryAndExistingRecordingControlsRemainRequired": true,
+  "retainedBackupQualification": "All64original archives contain zero recording references;their preservation cannot certify recording filename compatibility for every user archive.",
+  "existingReservedSuffixInputBehavior": "Previously accepted imports can lose recording bytes;now refusal before mutation is intended. No original raw history is relabelled or rewritten.",
+  "independentAudit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

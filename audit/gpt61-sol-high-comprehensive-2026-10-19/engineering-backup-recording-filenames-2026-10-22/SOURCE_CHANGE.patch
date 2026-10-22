@@ -1,0 +1,11 @@
+diff --git a/app/src/main/java/dev/russiancompanion/data/local/LocalStore.kt b/app/src/main/java/dev/russiancompanion/data/local/LocalStore.kt
+index 08f9e87e..958966c2 100644
+--- a/app/src/main/java/dev/russiancompanion/data/local/LocalStore.kt
++++ b/app/src/main/java/dev/russiancompanion/data/local/LocalStore.kt
+@@ -1618,0 +1619,2 @@ internal class LocalStore private constructor(
++                // Replacement cleanup reserves these suffixes for temporary swap files.
++                val name = File(recording.localFileReference).name
+@@ -1624 +1626,2 @@ internal class LocalStore private constructor(
+-                    recording.localFileReference.startsWith("/")
++                    recording.localFileReference.startsWith("/") ||
++                    name.endsWith(".incoming") || name.endsWith(".retired")

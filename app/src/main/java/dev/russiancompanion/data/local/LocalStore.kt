@@ -1616,12 +1616,15 @@ internal class LocalStore private constructor(
         if (document.activityLogs.any { !known<ActivityCategory>(it.category) }) return false
         if (document.planInstances.any { !known<CompletionState>(it.completionState) }) return false
         if (document.recordings.any { recording ->
+                // Replacement cleanup reserves these suffixes for temporary swap files.
+                val name = File(recording.localFileReference).name
                 bundled.audio(recording.audioModelId) == null ||
                     !known<CompletionState>(recording.completionState) ||
                     (recording.activityLogId != null && recording.activityLogId !in activityIds) ||
                     recording.localFileReference.isBlank() ||
                     recording.localFileReference.contains("..") ||
-                    recording.localFileReference.startsWith("/")
+                    recording.localFileReference.startsWith("/") ||
+                    name.endsWith(".incoming") || name.endsWith(".retired")
             }
         ) {
             return false
