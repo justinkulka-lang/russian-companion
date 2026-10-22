@@ -1,0 +1,10 @@
+{
+  "PIN_COMPILE.log": {
+    "bytes": 2264,
+    "sha256": "7978ff16c9857112377a5baa4fcc0ae81b2e1f1c4228c5da22088215bd1190c6"
+  },
+  "GUARD_COMPILE.log": {
+    "bytes": 1603,
+    "sha256": "7411a20b71f73792b45ea795ab78d374444ee789e2e9f948b462d0454127e8f4"
+  }
+}

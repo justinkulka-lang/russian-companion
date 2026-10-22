@@ -1,0 +1,26 @@
+{
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "compileDebugUnitTestKotlin",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "runs": [
+    {
+      "label": "PIN_COMPILE.log",
+      "source": "eb8b5f3eabe34e5ce6679897f60f6c4899286c8f",
+      "exitCode": 0
+    },
+    {
+      "label": "GUARD_COMPILE.log",
+      "source": "d21c9bbb861e67f2a94b8947b8608d7420b3c9b0",
+      "exitCode": 0
+    }
+  ],
+  "shellStartTime": "Not separately captured; logs retained; no test execution in these compile-only invocations"
+}
