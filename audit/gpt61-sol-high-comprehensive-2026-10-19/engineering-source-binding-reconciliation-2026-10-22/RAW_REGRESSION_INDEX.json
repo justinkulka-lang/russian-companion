@@ -1,0 +1,117 @@
+{
+  "archive": "RAW_REGRESSION.zip",
+  "archiveSha256": "e8d9fbdcb28f5c0cc91cd9ceedab9809a9547b0f24b7eaea9f8444c4ac202d14",
+  "members": [
+    {
+      "path": "CONTEXT.json",
+      "sha256": "fef45c613a83e4ee078f42765db4ca5561ef0675393147dbcb86a6412e04c221",
+      "bytes": 3904
+    },
+    {
+      "path": "EVENTS.jsonl",
+      "sha256": "b780a752ab3ffae0d0a73a8267e6a4496c4b009b4b9a4427fd3f34c6ea7f3fa6",
+      "bytes": 32370
+    },
+    {
+      "path": "LINT.xml",
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+      "bytes": 31476
+    },
+    {
+      "path": "RESULT.json",
+      "sha256": "4e9f0ab1696b74845add55982348cc882e4091ac16eba288b878e39407735965",
+      "bytes": 24890
+    },
+    {
+      "path": "RESULTS.csv",
+      "sha256": "ee423af18ca2f2a7e3689a682fbada8e46eb1468bcae0414ce99a81715278aaf",
+      "bytes": 10817
+    },
+    {
+      "path": "RUN.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "RUN.log",
+      "sha256": "2278986702dc6d44ea3dcd2bc04bea899e402832d4df58237296282af69c3a55",
+      "bytes": 4913
+    },
+    {
+      "path": "SHA256.json",
+      "sha256": "20e157e2a2adcf33647af6da4c215b3bf3e63f7cab99ec018623cd4a023f5ebd",
+      "bytes": 2143
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.acceptance.DeviceAcceptancePackageTest.xml",
+      "sha256": "e7ddc37784090be216877c28e30f62cdaf009f6b7980e1b5268a7f6def0bc9f8",
+      "bytes": 514
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml",
+      "sha256": "0b1a08d9ee4683256e34afc4f45187edbade47d45ef5bca352bca7b47f392975",
+      "bytes": 2404
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml",
+      "sha256": "9d605315843cf7f1b3073315f015222679efccd1c07cdacbf5de2c0bf81a2d1e",
+      "bytes": 1096
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml",
+      "sha256": "35f4a73e3a6a7e4b9591379f23c8d0d6c38027d792ef861e082017221a66e34e",
+      "bytes": 2253
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml",
+      "sha256": "25944dd73d66e86b80d4cbb4a54a01928082505c530940867b8c68e5f2e989df",
+      "bytes": 493
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml",
+      "sha256": "ff555649bd276580916ed26fc95603645755a1da49685d8188b38ab113d65f6c",
+      "bytes": 1495
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest.xml",
+      "sha256": "075e9038ab1689470a6dbb1eabda74a81c8480295eb1eb78fe509422d274eee5",
+      "bytes": 854
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.review.Unit1ReviewPackageTest.xml",
+      "sha256": "92c895d1bea24cdabf5110587ae47553767fc34dabd6512ba117663a7a8f7d5a",
+      "bytes": 1368
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml",
+      "sha256": "51e102f91b73a324ee686ef625982ceabf89cd6fe3a71b5e7a4dabc349ed8fae",
+      "bytes": 1411
+    },
+    {
+      "path": "gc-493048.log",
+      "sha256": "df3f7f76556df28f0c725e91f10d9bdf983c3f233d91002eb70c03748dceddf4",
+      "bytes": 106413
+    },
+    {
+      "path": "gc-493052.log",
+      "sha256": "4a2bf9049d4b9eef5365211aba843036c14ce711a0c906f2917a14f48676308a",
+      "bytes": 322750
+    },
+    {
+      "path": "gc-493422.log",
+      "sha256": "9e8f43a378e55932d0f773285cd8f6e9008e872f8694900692ea12e20a26d33c",
+      "bytes": 57748
+    },
+    {
+      "path": "LAUNCHER/REGRESSION_SESSION.json",
+      "sha256": "2e8cfbb6efd20db2745d70e14bc9f83ee7649dc325426ac2defe6056698b51a6",
+      "bytes": 244
+    },
+    {
+      "path": "LAUNCHER/REGRESSION_LAUNCHER.log",
+      "sha256": "d0e1bad64cc42788de0048dfc48e0a6cee6307bdea8b103f8e1a7cb4ae3f8df4",
+      "bytes": 213
+    }
+  ],
+  "crcAndEveryMemberHashVerified": true
+}

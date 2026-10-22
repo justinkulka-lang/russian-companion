@@ -1,0 +1,22 @@
+{
+  "testedSource": "20c5eb96ef553ba65a937a4df7fa2bdc4b43710a",
+  "counts": {
+    "reported": 56,
+    "passed": 56,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 9,
+  "exitCode": 0,
+  "xmlEventsDiscoveryExact": true,
+  "manifestsAndRawArchiveMembersVerified": true,
+  "historical95AndReused60Verified": true,
+  "onlyDigestBytesChanged": true,
+  "priorScopesUnchanged": true,
+  "currentHeadMatchesInputTrees": true,
+  "currentHeadMatches155ReconciledFiles": true,
+  "completeSuite": false,
+  "independentAudit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}
