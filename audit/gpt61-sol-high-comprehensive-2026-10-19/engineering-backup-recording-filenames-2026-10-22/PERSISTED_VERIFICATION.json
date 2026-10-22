@@ -1,0 +1,33 @@
+{
+  "baselineCounts": {
+    "reported": 3,
+    "passed": 1,
+    "failed": 2,
+    "errors": 0,
+    "skipped": 0
+  },
+  "correctedCounts": {
+    "reported": 37,
+    "passed": 37,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "baselineExit": 1,
+  "correctedExit": 0,
+  "xmlEventsSelectorsOutcomesExact": true,
+  "threeManifestsAndBothRawArchivesVerified": true,
+  "wholeTestTreeUnchangedAcrossCorrection": true,
+  "onlyProductionGuardChanged": true,
+  "currentHeadMatchesCorrectedInputTrees": true,
+  "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "completeSuite": false,
+  "independentAudit": "INCOMPLETE",
+  "original17Findings": "UNCLOSED",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

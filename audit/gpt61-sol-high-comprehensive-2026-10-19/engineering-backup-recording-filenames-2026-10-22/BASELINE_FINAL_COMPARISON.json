@@ -1,0 +1,39 @@
+{
+  "baselineSource": "7a8b705a0befc14091fedc0e9417120444dd56c7",
+  "correctedSource": "49c85a89cb217dfdcece23426988fb6d88f94861",
+  "testFileAndWholeTestTreeExact": true,
+  "sameRunnerAndInitHashes": true,
+  "baselineCounts": {
+    "reported": 3,
+    "passed": 1,
+    "failed": 2,
+    "errors": 0,
+    "skipped": 0
+  },
+  "finalCounts": {
+    "reported": 37,
+    "passed": 37,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "originalThree": [
+    {
+      "method": "retiredSuffixRejectsBeforeReplacingRowsOrRecordingBytes",
+      "baselineOutcome": "FAILED",
+      "correctedOutcome": "PASSED"
+    },
+    {
+      "method": "ordinaryRecordingFilenameRestoresItsBytesAndSurvivesNamedStoreReopen",
+      "baselineOutcome": "PASSED",
+      "correctedOutcome": "PASSED"
+    },
+    {
+      "method": "incomingSuffixRejectsBeforeReplacingRowsOrRecordingBytes",
+      "baselineOutcome": "FAILED",
+      "correctedOutcome": "PASSED"
+    }
+  ],
+  "qualification": "Baseline3 and final37 overlap,not summed. Previous34archive-boundary scope is separate. Same policies do not assert identical fork allocation/resources.",
+  "externalFindingClosure": false
+}

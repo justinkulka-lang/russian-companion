@@ -1,0 +1,92 @@
+{
+  "archive": "RAW_FINAL.zip",
+  "sha256": "55efe1db017371ff3ffafbe5a465331a6a75f8401359da243e23c91b6f386451",
+  "members": [
+    {
+      "path": "CONTEXT.json",
+      "bytes": 12498,
+      "sha256": "af2fd40bac162071af562b164fdced6299a13b2697897ad394069433fc22f985"
+    },
+    {
+      "path": "EVENTS.jsonl",
+      "bytes": 21772,
+      "sha256": "17221ba0601a93543a7597df24b236823ead805dfc103454123060d67f0eccb9"
+    },
+    {
+      "path": "LINT.xml",
+      "bytes": 31476,
+      "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+    },
+    {
+      "path": "RESULT.json",
+      "bytes": 16522,
+      "sha256": "6d18c187a858f7dbd31aef6bef09ea12a71e7b22fea7ecb6010ffed11b047216"
+    },
+    {
+      "path": "RESULTS.csv",
+      "bytes": 7092,
+      "sha256": "9841de154e93fef60664619d6982a8011fbc3ad55eb235fbbf8586187ac7f38f"
+    },
+    {
+      "path": "RUN.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "RUN.log",
+      "bytes": 4289,
+      "sha256": "c64cf55666c7f337d24d74db33c73c51a17c7d4283e617be0f9c04f49302817b"
+    },
+    {
+      "path": "SHA256.json",
+      "bytes": 1451,
+      "sha256": "1f14d9311ce28c0926806f5be597e6562702090ba807b0d6b224abc69ef07c5f"
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BackupArchiveBoundaryTest.xml",
+      "bytes": 1607,
+      "sha256": "e27740c4513ca4b3bb963165edceb4a1490485ba6b43ca5156c9eca74398b28b"
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BackupImportCoordinatorLimitsTest.xml",
+      "bytes": 13188,
+      "sha256": "4f04f3f38ada7399de93ae6d7837094fd5f5b6fd181be8f9a65461fd245d6ed9"
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BackupImportLimitsTest.xml",
+      "bytes": 3345,
+      "sha256": "e3505f16583e88079e1692cb026227db24452cab7d6422e221078b9f89e5cf6f"
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BackupLicenseTest.xml",
+      "bytes": 13409,
+      "sha256": "3605a075e596939b8aa775df71d4e7ba0fc7322979e022a0f2d9e11ce2f2e4b7"
+    },
+    {
+      "path": "XML/TEST-dev.russiancompanion.v2.BackupRecordingFilenameBoundaryTest.xml",
+      "bytes": 847,
+      "sha256": "d26ace43a8eb7fbf3fcfb6cf2bc4e92cf46cfbbf00b8c837859713981d8dc3d5"
+    },
+    {
+      "path": "gc-459255.log",
+      "bytes": 3299,
+      "sha256": "7121c17814647b773ea3c7013552a93d7027b34b2ecff552eea9a2e027766848"
+    },
+    {
+      "path": "gc-459326.log",
+      "bytes": 6864,
+      "sha256": "f109079d0c568fc9e7bfc6b87c0fa3dc7c1ce04db185edbeb1d17ee217c64b3c"
+    },
+    {
+      "path": "LAUNCHER/FINAL_SESSION.json",
+      "bytes": 223,
+      "sha256": "524d61b90fa21556ee33d5430e076636c7b6cfc06ab1ed0602ecfd70d62753f8"
+    },
+    {
+      "path": "LAUNCHER/FINAL_LAUNCHER.log",
+      "bytes": 208,
+      "sha256": "53fcbb2028b938f34cfb28f27a358e03d7aa88fbb12171d0fa4d38ea18194919"
+    }
+  ],
+  "crcAndAllMemberHashesVerified": true
+}
