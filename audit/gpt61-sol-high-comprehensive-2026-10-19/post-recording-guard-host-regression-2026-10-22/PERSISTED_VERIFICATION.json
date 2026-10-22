@@ -1,0 +1,20 @@
+{
+  "sourceCommit": "e5b5d3c08689cc04eadcb4c2edd155940dee7bf7",
+  "persistedZipXmlEventsResultsExact": true,
+  "freshDiscoveryIdentitiesExact": true,
+  "reported": 1334,
+  "classes": 221,
+  "counts": {
+    "reported": 1334,
+    "passed": 1324,
+    "failed": 9,
+    "errors": 0,
+    "skipped": 1
+  },
+  "exitCode": 1,
+  "manifestsAndArchiveCrcAllMembersVerified": true,
+  "currentHeadMatchesInputTrees": true,
+  "completeSuite": false,
+  "independentAudit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

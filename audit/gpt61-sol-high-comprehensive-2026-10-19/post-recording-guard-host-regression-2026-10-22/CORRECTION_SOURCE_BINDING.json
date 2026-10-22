@@ -1,0 +1,13 @@
+{
+  "correctedFocusedSource": "49c85a89cb217dfdcece23426988fb6d88f94861",
+  "discoverySource": "4b01381593e072d03bb55dc121391d05298ed0a6",
+  "runtimeSource": "e5b5d3c08689cc04eadcb4c2edd155940dee7bf7",
+  "allFiveInputTreesEqual": {
+    "app/src/main": "3a94f58d6927e53bb78e20b99a7e1ea5e9039a4b",
+    "app/src/test": "46de1bbbb5069f8aee4331083214c36deb88f1a6",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "366549a8a89d34b33ff9568247d7a4ff5ef676d6"
+  },
+  "appBranchTrackedPdfs": 0
+}

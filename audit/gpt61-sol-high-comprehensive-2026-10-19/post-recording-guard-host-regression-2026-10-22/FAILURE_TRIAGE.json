@@ -1,0 +1,142 @@
+{
+  "testedSource": "e5b5d3c08689cc04eadcb4c2edd155940dee7bf7",
+  "observations": [
+    {
+      "identity": "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest#physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease",
+      "sourceFile": "app/src/test/java/dev/russiancompanion/acceptance/DeviceAcceptancePackageTest.kt",
+      "sourceFileSha256": "69ef6825428e171c396e20f478775ff41c7c7cfab40353e1f06411f1e5678bca",
+      "assertionFrames": [
+        "at dev.russiancompanion.acceptance.DeviceAcceptancePackageTest.physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease(DeviceAcceptancePackageTest.kt:91)"
+      ],
+      "messageBytes": 183,
+      "messageSha256": "ef1d53e7a861999e02b49045260723c38674bfa8e4b97f59c0991abbdf55af69",
+      "status": "OPEN_CURRENT_ENGINEERING_FAILURE",
+      "firstFailureCategory": "CURRENT_SOURCE_BINDING_CONSISTENCY",
+      "laterAssertions": "NOT_PROVEN_AFTER_FIRST_FAILURE",
+      "correctionExecuted": false
+    },
+    {
+      "identity": "dev.russiancompanion.release.ReleaseSourceDigestTest#committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+      "sourceFile": "app/src/test/java/dev/russiancompanion/release/ReleaseSourceDigestTest.kt",
+      "sourceFileSha256": "e4c1dd9ac6403d4255233b32737c2c45e457352b498cc24a4871207fab65e762",
+      "assertionFrames": [
+        "at dev.russiancompanion.release.ReleaseSourceDigestTest.committedCandidateRecordsTheCurrentSourceDigestAndIdentity(ReleaseSourceDigestTest.kt:19)"
+      ],
+      "messageBytes": 183,
+      "messageSha256": "ef1d53e7a861999e02b49045260723c38674bfa8e4b97f59c0991abbdf55af69",
+      "status": "OPEN_CURRENT_ENGINEERING_FAILURE",
+      "firstFailureCategory": "CURRENT_SOURCE_BINDING_CONSISTENCY",
+      "laterAssertions": "NOT_PROVEN_AFTER_FIRST_FAILURE",
+      "correctionExecuted": false
+    },
+    {
+      "identity": "dev.russiancompanion.v2.BatchECapabilityResearchTest#digestsGovernanceAndLaterUnitsStayUnchanged",
+      "sourceFile": "app/src/test/java/dev/russiancompanion/v2/BatchECapabilityResearchTest.kt",
+      "sourceFileSha256": "353abfecaa7babac3ec8703bdfcf6af17d7ae0cab1407d463d05d39fa44607b2",
+      "assertionFrames": [
+        "at dev.russiancompanion.v2.BatchECapabilityResearchTest.digestsGovernanceAndLaterUnitsStayUnchanged(BatchECapabilityResearchTest.kt:331)"
+      ],
+      "messageBytes": 183,
+      "messageSha256": "da2398c8c80f0e4fb83a9568f9d91d793da4ad51b2a7261e0488bffd157fc295",
+      "status": "OPEN_CURRENT_ENGINEERING_FAILURE",
+      "firstFailureCategory": "CURRENT_SOURCE_BINDING_CONSISTENCY",
+      "laterAssertions": "NOT_PROVEN_AFTER_FIRST_FAILURE",
+      "correctionExecuted": false
+    },
+    {
+      "identity": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest#committedReportsMatchTheGeneratorAndStayByteIdentical",
+      "sourceFile": "app/src/test/java/dev/russiancompanion/v2/audit/CurriculumReadinessReconciliationTest.kt",
+      "sourceFileSha256": "a0e5ae6bbfbcb2743b28f49022672e62bc31b5a8c162c38d5145791dc97bdac2",
+      "assertionFrames": [
+        "at dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.committedReportsMatchTheGeneratorAndStayByteIdentical(CurriculumReadinessReconciliationTest.kt:40)"
+      ],
+      "messageBytes": 81273,
+      "messageSha256": "95a21d33dd00b77668b3b9b1cddc53d819776712da62a1b14a721e11431b573e",
+      "status": "OPEN_CURRENT_ENGINEERING_FAILURE",
+      "firstFailureCategory": "CURRENT_SOURCE_BINDING_CONSISTENCY",
+      "laterAssertions": "NOT_PROVEN_AFTER_FIRST_FAILURE",
+      "correctionExecuted": false
+    },
+    {
+      "identity": "dev.russiancompanion.v2.audit.GapClosureDossierTest#dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+      "sourceFile": "app/src/test/java/dev/russiancompanion/v2/audit/GapClosureDossierTest.kt",
+      "sourceFileSha256": "f75ea9b6ca7dab73e9159b1246f405fb7be1658c6cb69a29f4f10f93d06f3759",
+      "assertionFrames": [
+        "at dev.russiancompanion.v2.audit.GapClosureDossierTest.dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease(GapClosureDossierTest.kt:34)"
+      ],
+      "messageBytes": 24,
+      "messageSha256": "236d51b61b189ceec0ac4f169fec07728086016022478eae12685425934eafbd",
+      "status": "OPEN_CURRENT_ENGINEERING_FAILURE",
+      "firstFailureCategory": "CURRENT_SOURCE_BINDING_CONSISTENCY",
+      "laterAssertions": "NOT_PROVEN_AFTER_FIRST_FAILURE",
+      "correctionExecuted": false
+    },
+    {
+      "identity": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest#preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+      "sourceFile": "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt",
+      "sourceFileSha256": "de40be2f7123fe6c54f0417b01cf1fe83af8c99796f01ca4baf85607756c6420",
+      "assertionFrames": [
+        "at dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.preparationManifestBindsFactsAndDoesNotPassAFinalAudit(OwnerGovernanceDecisionTest.kt:195)"
+      ],
+      "messageBytes": 275,
+      "messageSha256": "92bb1ab857b6686a683991ce5cfe87337363288d869d2432de9c239374e1c584",
+      "status": "OPEN_CURRENT_ENGINEERING_FAILURE",
+      "firstFailureCategory": "CURRENT_SOURCE_BINDING_CONSISTENCY",
+      "laterAssertions": "NOT_PROVEN_AFTER_FIRST_FAILURE",
+      "correctionExecuted": false
+    },
+    {
+      "identity": "dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest#reportMatrixMatchesTheLiveCurriculum",
+      "sourceFile": "app/src/test/java/dev/russiancompanion/v2/audit/PostPr53ReadinessReconciliationTest.kt",
+      "sourceFileSha256": "101632cd6376d3c99bef57652427224b15998b25ade6dbf92dc5d875587f5616",
+      "assertionFrames": [
+        "at dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest.reportMatrixMatchesTheLiveCurriculum(PostPr53ReadinessReconciliationTest.kt:110)"
+      ],
+      "messageBytes": 183,
+      "messageSha256": "ef1d53e7a861999e02b49045260723c38674bfa8e4b97f59c0991abbdf55af69",
+      "status": "OPEN_CURRENT_ENGINEERING_FAILURE",
+      "firstFailureCategory": "CURRENT_SOURCE_BINDING_CONSISTENCY",
+      "laterAssertions": "NOT_PROVEN_AFTER_FIRST_FAILURE",
+      "correctionExecuted": false,
+      "historicalReport": "Original blob/hash/ancestor checks passed before live candidate digest comparison;preserve report and historical pins byte-identically."
+    },
+    {
+      "identity": "dev.russiancompanion.v2.review.Unit1ReviewPackageTest#committedPackageMatchesTheCurriculumTraversal",
+      "sourceFile": "app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackageTest.kt",
+      "sourceFileSha256": "df666ca7b9e741888fc53a54186cc1ee24c79d47c9ecd519a58a4897bc96b4f2",
+      "assertionFrames": [
+        "at dev.russiancompanion.v2.review.Unit1ReviewPackageTest.committedPackageMatchesTheCurriculumTraversal(Unit1ReviewPackageTest.kt:27)"
+      ],
+      "messageBytes": 303,
+      "messageSha256": "669a5338a167718a1b48a0f91a19d328a4ceb547e10d4c3d9cf65012d8ee2143",
+      "status": "OPEN_CURRENT_ENGINEERING_FAILURE",
+      "firstFailureCategory": "CURRENT_SOURCE_BINDING_CONSISTENCY",
+      "laterAssertions": "NOT_PROVEN_AFTER_FIRST_FAILURE",
+      "correctionExecuted": false
+    },
+    {
+      "identity": "dev.russiancompanion.v2.review.UnitReviewPipelineTest#committedUnitPackagesMatchTheGenerator",
+      "sourceFile": "app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt",
+      "sourceFileSha256": "138bd9fb022eda57069eaaf943d6b3d9c198e667ca9a594d1e8104175dc6d365",
+      "assertionFrames": [
+        "at dev.russiancompanion.v2.review.UnitReviewPipelineTest.committedUnitPackagesMatchTheGenerator(UnitReviewPipelineTest.kt:108)"
+      ],
+      "messageBytes": 303,
+      "messageSha256": "669a5338a167718a1b48a0f91a19d328a4ceb547e10d4c3d9cf65012d8ee2143",
+      "status": "OPEN_CURRENT_ENGINEERING_FAILURE",
+      "firstFailureCategory": "CURRENT_SOURCE_BINDING_CONSISTENCY",
+      "laterAssertions": "NOT_PROVEN_AFTER_FIRST_FAILURE",
+      "correctionExecuted": false,
+      "messageLineCount": 4,
+      "normalizedErrorPatterns": [
+        "Review file REVIEWER_INSTRUCTIONS.md is not the deterministic rendering",
+        "Review file UNIT_N_REVIEW_MANIFEST.json is not the deterministic rendering",
+        "Review file UNIT_N_REVIEW_PACKET.md is not the deterministic rendering",
+        "java.lang.AssertionError: Repository source digest does not match the release binding"
+      ]
+    }
+  ],
+  "releaseDigestDiagnosis": "DIGEST_READ_ONLY_DIAGNOSIS.json",
+  "causeBoundary": "Only the LocalStore guard changes release-source inputs since prior1323source. These first failures identify stale current source bindings;no corrected rerun or downstream assertion success is claimed.",
+  "external17FindingsUnchanged": true
+}

@@ -1751,3 +1751,8 @@ Reserved recording filename data-loss guard verified at 49c85a89cb217dfdcece2342
 ## Fresh recording-guard host discovery
 
 Fresh discovery at 4b01381593e072d03bb55dc121391d05298ed0a6: 1334 synthetic skips/221 classes,zero runtime passes,exit0. Exactly11 additions versus old1323 identities:8 archive boundaries+3 recording filename regressions;zero removals. Actual current uninstrumented selected host regression PREPARED_NOT_YET_LAUNCHED. Four screenshot exporters/16methods remain excluded. Check external /workspace/artifacts/post-recording-guard-host-regression-2026-10-22/REGRESSION/CONTEXT.json,RUN.exit,RESULT.json,SHA256.json and REGRESSION_SESSION.json before claiming runtime state;do not duplicate jobs or edit inputs. Two6GiBforks/recycle4/GC;32GiB cgroup/fourCPUquota observed. Prior1323/34/3/37scopes remain separate;all17findings unclosed. PhysicalLAST;no assembly/install/signing/merge/freeze/approval.
+
+
+## Corrected-source host regression completed
+
+Corrected-source selected debug-host regression ate5b5d3c08689cc04eadcb4c2edd155940dee7bf7: 1334reported/1324passed/9failed/0errors/1skipped,221classes,actualexit1. All current discovery identities/fresh XML/events/outcomes and five input trees match. Four screenshot exporters/16methods excluded;not a complete-suite/app/curriculum/device result. Original1323/34/3/37scopes remain separate;all prior raw failures preserved. Original17external findings unclosed;physical Galaxy S26 Ultra airplane-mode/reboot acceptance LAST. No assembly/install/signing/merge/freeze/approval. Read post-recording-guard-host-regression-2026-10-22/COMPLETED_STATUS.md under audit/gpt61-sol-high-comprehensive-2026-10-19/.
