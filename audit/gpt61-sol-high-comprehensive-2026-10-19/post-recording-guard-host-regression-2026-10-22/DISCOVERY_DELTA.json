@@ -1,0 +1,21 @@
+{
+  "previousCommit": "3a7c55a37b4e06d3e370ab3565f5a69c82ab5acc",
+  "currentCommit": "4b01381593e072d03bb55dc121391d05298ed0a6",
+  "previousCount": 1323,
+  "currentCount": 1334,
+  "added": [
+    "dev.russiancompanion.v2.BackupArchiveBoundaryTest#canonicalRecordingArchiveStagesExactBytesWithoutTouchingUnownedFiles",
+    "dev.russiancompanion.v2.BackupArchiveBoundaryTest#correctlyHashedLearnerCannotRedirectADeclaredRecordingPath",
+    "dev.russiancompanion.v2.BackupArchiveBoundaryTest#duplicateZipNamesRejectEvenWhenEachEntryHasAValidCrc",
+    "dev.russiancompanion.v2.BackupArchiveBoundaryTest#missingManifestLearnerOrDeclaredRecordingRejectsWithoutLeavingStaging",
+    "dev.russiancompanion.v2.BackupArchiveBoundaryTest#preexistingRecordingStagingFileIsNeitherOverwrittenNorDeleted",
+    "dev.russiancompanion.v2.BackupArchiveBoundaryTest#recordingHashFailureRemovesOnlyFilesCreatedByTheRejectedImport",
+    "dev.russiancompanion.v2.BackupArchiveBoundaryTest#storedZipFixtureIsAcceptedBeforeItsDuplicateEntryMutations",
+    "dev.russiancompanion.v2.BackupArchiveBoundaryTest#traversalAndNonCanonicalEntryNamesRejectWithoutWritingOutsideStaging",
+    "dev.russiancompanion.v2.BackupRecordingFilenameBoundaryTest#incomingSuffixRejectsBeforeReplacingRowsOrRecordingBytes",
+    "dev.russiancompanion.v2.BackupRecordingFilenameBoundaryTest#ordinaryRecordingFilenameRestoresItsBytesAndSurvivesNamedStoreReopen",
+    "dev.russiancompanion.v2.BackupRecordingFilenameBoundaryTest#retiredSuffixRejectsBeforeReplacingRowsOrRecordingBytes"
+  ],
+  "removed": [],
+  "explanation": "Eight parser boundary methods and three named-store recording filename regressions;unchanged older identities. Discovery is synthetic and is not runtime passes."
+}
