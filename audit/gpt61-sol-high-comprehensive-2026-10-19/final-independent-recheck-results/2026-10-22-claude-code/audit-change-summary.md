@@ -1,0 +1,21 @@
+# Audit change summary: 2026-10-22 recheck vs original return 0321d323
+
+- **Target**: moved from the original audited snapshot to `8606c4d7` (delivery `ae1105fb`). All rows were re-derived at the target. The original files are preserved under `safe_evidence/original_return/`.
+- **Findings**
+  - The original 17 keep their IDs. None is closed.
+  - CC012, CC013, CC014 and CC016 are now statically resolved.
+  - CC001 and CC008 are narrowed.
+  - CC015 is changed, not resolved.
+  - The rest stay open.
+  - 31 new findings: CC018–CC048 (9 HIGH, 11 MEDIUM, 11 LOW).
+- **75 targets**: 74 RESOLVED_STATIC_NARROW, including CR009–CR011, which were CHANGED_BUT_NOT_RESOLVED in the original. CR043 is RESOLVED_NARROW_NEW_DEFECT_INTRODUCED (CC031). The CR/CA/CC namespaces are kept separate.
+- **18 IA identities**: re-dispositioned in `safe_evidence/HISTORICAL_IA_RECHECKS_2026_10_22.csv`. IA003 now has a confirmed coverage defect (CC020); IA009, IA012, IA015 and IA016 are changed, not resolved.
+- **70 execution requests**: original NOT_EXECUTED preserved; independent dispositions added.
+- **Requirements (195)**:
+  - MA2-027 changed from SATISFIED_DIAGNOSTIC to UNMET.
+  - MA2-178 is UNMET with a new reason (CC048).
+  - Many NOT_VERIFIED rows are refined to static verdicts, never to acceptance.
+- **Runtime**: the two retained raw scopes were validated from raw XML and kept separate. Tree identity was established; no execution was possible.
+- **Book**: all 30 lessons were read; locator omissions found (CC033); the back matter was partly read.
+- **Histories and archives**: verified independently and mechanically. The oldUnit7 cause remains UNCONFIRMED.
+- **New returns**: `CURRENT_RUNTIME_EVIDENCE_VALIDATION.json`, `INDEPENDENT_RECHECK_DISCREPANCIES.md` and `CURRENT_INPUT_SUPPLEMENT.csv`.

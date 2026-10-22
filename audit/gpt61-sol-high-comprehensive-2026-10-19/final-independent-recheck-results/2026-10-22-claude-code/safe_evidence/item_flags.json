@@ -1,0 +1,3070 @@
+{
+"flags": {
+"u1-i-а-identity": [
+"CC027"
+],
+"u1-i-м-identity": [
+"CC027"
+],
+"u1-i-р-not-p": [
+"CC027"
+],
+"u1-i-н-not-h": [
+"CC027"
+],
+"u1-i-с-not-c": [
+"CC027"
+],
+"u1-i-в-not-b": [
+"CC027"
+],
+"u1-i-у-not-y": [
+"CC027"
+],
+"u1-i-х-not-x": [
+"CC027"
+],
+"u1-i-ё-identity": [
+"CC021",
+"CC027"
+],
+"u1-i-ю-identity": [
+"CC021",
+"CC027"
+],
+"u1-i-я-identity": [
+"CC027"
+],
+"u1-i-й-not-vowel": [],
+"u1-i-decode-pair": [],
+"u1-i-е-identity": [
+"CC027"
+],
+"u1-i-ь-not-vowel": [],
+"u1-i-ъ-not-vowel": [],
+"u1-i-print-pair": [
+"CC027"
+],
+"u2-i-в-not-b": [],
+"u2-i-у-not-y": [],
+"u2-i-х-not-x": [],
+"u2-i-print-б": [],
+"u2-i-я-identity": [
+"CC021"
+],
+"u3-i-gender-стол": [
+"CC029"
+],
+"u3-i-gender-дом": [
+"CC029"
+],
+"u3-i-gender-город": [
+"CC029"
+],
+"u3-i-gender-друг": [
+"CC029"
+],
+"u3-i-gender-книга": [
+"CC029"
+],
+"u3-i-gender-дверь": [
+"CC029"
+],
+"u3-i-gender-окно": [
+"CC029"
+],
+"u3-i-gender-море": [
+"CC029"
+],
+"u3-i-gender-мужчина": [
+"CC029"
+],
+"u3-i-gender-дядя": [
+"CC029"
+],
+"u3-i-phrase-здравствуйте": [
+"CC029"
+],
+"u3-i-phrase-спасибо": [
+"CC029"
+],
+"u3-i-phrase-пожалуйста": [
+"CC021",
+"CC029"
+],
+"u3-i-phrase-да": [
+"CC021",
+"CC029"
+],
+"u3-i-phrase-нет": [
+"CC029"
+],
+"u3-i-phrase-это": [
+"CC021",
+"CC029"
+],
+"u3-i-name-moy-stol": [
+"CC029"
+],
+"u3-i-name-moya-sobaka": [
+"CC029"
+],
+"u3-i-name-chto-eto": [
+"CC021",
+"CC029"
+],
+"u3-i-name-kto-eto": [
+"CC021",
+"CC029"
+],
+"u4-i-pronoun-я": [
+"CC029"
+],
+"u4-i-pronoun-мы": [
+"CC029"
+],
+"u4-i-pronoun-ты": [
+"CC021",
+"CC029"
+],
+"u4-i-pronoun-вы": [
+"CC021",
+"CC029"
+],
+"u4-i-pronoun-он": [
+"CC029"
+],
+"u4-i-pronoun-она": [
+"CC021",
+"CC029"
+],
+"u4-i-pronoun-оно": [
+"CC029"
+],
+"u4-i-pronoun-они": [
+"CC021",
+"CC029"
+],
+"u4-i-verb-читать-ты": [
+"CC029"
+],
+"u4-i-verb-делать-я": [
+"CC029"
+],
+"u4-i-verb-говорить-мы": [
+"CC015",
+"CC022",
+"CC029"
+],
+"u4-i-verb-видеть-он": [
+"CC015",
+"CC022",
+"CC029"
+],
+"u4-i-verb-писать-вы": [
+"CC015",
+"CC022",
+"CC029"
+],
+"u4-i-verb-идти-они": [
+"CC015",
+"CC022",
+"CC029"
+],
+"u4-i-stress-6f15e9f1": [
+"CC029"
+],
+"u4-i-stress-1f37b6b2": [
+"CC029"
+],
+"u4-i-stress-2114b12f": [
+"CC021",
+"CC029"
+],
+"u4-i-nom-muzh": [
+"CC029"
+],
+"u4-i-nom-poezd": [
+"CC029"
+],
+"u5-i-q-kto": [
+"CC029"
+],
+"u5-i-q-chto": [
+"CC029"
+],
+"u5-i-q-kogda": [
+"CC021",
+"CC029"
+],
+"u5-i-q-pochemu": [
+"CC021",
+"CC029"
+],
+"u5-i-q-kak": [
+"CC021",
+"CC029"
+],
+"u5-i-q-gde": [
+"CC021",
+"CC029"
+],
+"u5-i-pattern-pattern-chto-eto": [
+"CC029"
+],
+"u5-i-pattern-pattern-kto-eto": [
+"CC021",
+"CC029"
+],
+"u5-i-pattern-pattern-kak-dela": [
+"CC021",
+"CC029"
+],
+"u5-i-pattern-pattern-gde-zhivete": [
+"CC021",
+"CC029"
+],
+"u5-i-prep-o-knige": [
+"CC029"
+],
+"u5-i-prep-o-pisme": [
+"CC029"
+],
+"u5-i-prep-o-sade": [
+"CC021",
+"CC029"
+],
+"u5-i-prep-v-moskve": [
+"CC021",
+"CC029"
+],
+"u5-i-prep-field-книга": [
+"CC027",
+"CC029"
+],
+"u5-i-prep-field-письмо": [
+"CC027",
+"CC029"
+],
+"u5-i-indecl-радио": [],
+"u5-i-indecl-такси": [
+"CC036"
+],
+"u5-i-indecl-метро": [
+"CC036"
+],
+"u5-i-indecl-кино": [
+"CC036"
+],
+"u5-i-decl-книга": [
+"CC036"
+],
+"u5-i-decl-окно": [
+"CC036"
+],
+"u6-g-possessive-0": [],
+"u6-i-possessive-1": [
+"CC022",
+"CC036"
+],
+"u6-i-possessive-2": [
+"CC022",
+"CC035"
+],
+"u6-i-possessive-3": [
+"CC027",
+"CC036"
+],
+"u6-g-third-0": [
+"CC029"
+],
+"u6-i-third-1": [
+"CC029"
+],
+"u6-i-third-2": [
+"CC021",
+"CC029"
+],
+"u6-g-object-0": [
+"CC027",
+"CC029"
+],
+"u6-i-object-1": [
+"CC027",
+"CC029",
+"CC036"
+],
+"u6-i-object-2": [
+"CC021",
+"CC027",
+"CC029",
+"CC036"
+],
+"u6-i-object-3": [
+"CC021",
+"CC027",
+"CC029",
+"CC036"
+],
+"u6-g-feminine-0": [
+"CC027"
+],
+"u6-i-feminine-1": [
+"CC021",
+"CC027",
+"CC036"
+],
+"u6-i-feminine-2": [
+"CC021",
+"CC027",
+"CC036"
+],
+"u6-g-animacy-0": [
+"CC027"
+],
+"u6-i-animacy-1": [
+"CC027",
+"CC036"
+],
+"u6-i-animacy-2": [
+"CC027",
+"CC036"
+],
+"u6-i-animacy-3": [
+"CC035",
+"CC036"
+],
+"u6-g-pronoun-0": [
+"CC029"
+],
+"u6-i-pronoun-1": [
+"CC029",
+"CC036"
+],
+"u6-i-pronoun-2": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u6-i-pronoun-3": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u6-g-direction-0": [
+"CC029"
+],
+"u6-i-direction-1": [
+"CC029",
+"CC036"
+],
+"u6-i-direction-2": [
+"CC029",
+"CC036"
+],
+"u6-i-direction-3": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u7-g-default-0": [
+"CC027"
+],
+"u7-i-default-1": [
+"CC027",
+"CC036"
+],
+"u7-i-default-2": [
+"CC021",
+"CC027",
+"CC036"
+],
+"u7-i-default-3": [
+"CC021",
+"CC027",
+"CC036"
+],
+"u7-i-default-4": [
+"CC021",
+"CC027",
+"CC036"
+],
+"u7-g-endings-0": [
+"CC035"
+],
+"u7-i-endings-1": [
+"CC022",
+"CC031",
+"CC035"
+],
+"u7-i-endings-2": [
+"CC022",
+"CC036"
+],
+"u7-i-endings-3": [
+"CC022",
+"CC036"
+],
+"u7-i-endings-4": [
+"CC022",
+"CC029"
+],
+"u7-g-spelling-0": [
+"CC027"
+],
+"u7-i-spelling-1": [
+"CC022",
+"CC027",
+"CC036"
+],
+"u7-i-spelling-2": [
+"CC022",
+"CC036"
+],
+"u7-i-spelling-3": [
+"CC022",
+"CC035"
+],
+"u7-g-question-0": [],
+"u7-i-question-1": [
+"CC027",
+"CC036"
+],
+"u7-i-question-2": [
+"CC036"
+],
+"u7-i-question-3": [
+"CC036"
+],
+"u7-g-demonstrative-0": [
+"CC029"
+],
+"u7-i-demonstrative-1": [
+"CC027",
+"CC036"
+],
+"u7-i-demonstrative-2": [
+"CC027",
+"CC036"
+],
+"u7-i-demonstrative-3": [
+"CC027",
+"CC036"
+],
+"u7-g-place-0": [],
+"u7-i-place-1": [
+"CC036"
+],
+"u7-i-place-2": [
+"CC027",
+"CC036"
+],
+"u7-i-place-3": [
+"CC027",
+"CC036"
+],
+"u7-g-objectadj-0": [],
+"u7-i-objectadj-1": [
+"CC036"
+],
+"u7-i-objectadj-2": [
+"CC036"
+],
+"u7-i-objectadj-3": [
+"CC036"
+],
+"u7-g-adverb-0": [
+"CC029"
+],
+"u7-i-adverb-1": [
+"CC029"
+],
+"u7-i-adverb-2": [
+"CC029"
+],
+"u8-g-plural-0": [
+"CC027"
+],
+"u8-i-plural-1": [
+"CC027",
+"CC036"
+],
+"u8-i-plural-2": [
+"CC027",
+"CC036"
+],
+"u8-i-plural-3": [
+"CC027",
+"CC036"
+],
+"u8-i-plural-4": [
+"CC027",
+"CC036"
+],
+"u8-i-plural-5": [
+"CC027",
+"CC036"
+],
+"u8-i-plural-6": [
+"CC010",
+"CC027",
+"CC036"
+],
+"u8-g-spelling-0": [
+"CC010",
+"CC027"
+],
+"u8-i-spelling-1": [
+"CC022",
+"CC027",
+"CC036"
+],
+"u8-i-spelling-2": [
+"CC027",
+"CC036"
+],
+"u8-i-spelling-3": [
+"CC027",
+"CC036"
+],
+"u8-i-spelling-4": [
+"CC036"
+],
+"u8-g-irregular-0": [
+"CC027"
+],
+"u8-i-irregular-1": [
+"CC021",
+"CC027",
+"CC036"
+],
+"u8-i-irregular-2": [
+"CC021",
+"CC027",
+"CC036"
+],
+"u8-i-irregular-3": [
+"CC021",
+"CC027",
+"CC036"
+],
+"u8-g-agreement-0": [
+"CC027"
+],
+"u8-i-agreement-1": [
+"CC027",
+"CC036"
+],
+"u8-i-agreement-2": [
+"CC027",
+"CC036"
+],
+"u8-i-agreement-3": [
+"CC022",
+"CC027",
+"CC029",
+"CC035",
+"CC036"
+],
+"u8-g-availability-0": [
+"CC035"
+],
+"u8-i-availability-1": [
+"CC035",
+"CC036"
+],
+"u8-i-availability-2": [
+"CC035",
+"CC036"
+],
+"u8-i-availability-3": [
+"CC035",
+"CC036"
+],
+"u9-g-cardinal-0": [
+"CC029"
+],
+"u9-i-cardinal-1": [
+"CC029",
+"CC036"
+],
+"u9-i-cardinal-2": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-i-cardinal-3": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-i-cardinal-4": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-g-teens-0": [
+"CC029"
+],
+"u9-i-teens-1": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-i-teens-2": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-i-teens-3": [
+"CC029",
+"CC036"
+],
+"u9-g-tens-0": [
+"CC029"
+],
+"u9-i-tens-1": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-i-tens-2": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-i-tens-3": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-g-hundreds-0": [
+"CC029"
+],
+"u9-i-hundreds-1": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-i-hundreds-2": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-i-hundreds-3": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-g-thousands-0": [
+"CC029"
+],
+"u9-i-thousands-1": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-i-thousands-2": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-i-thousands-3": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-i-thousands-4": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u9-g-odindva-0": [
+"CC029"
+],
+"u9-i-odindva-1": [
+"CC029",
+"CC036"
+],
+"u9-i-odindva-2": [
+"CC029",
+"CC036"
+],
+"u9-i-odindva-3": [
+"CC029",
+"CC036"
+],
+"u9-i-odindva-4": [
+"CC022",
+"CC029",
+"CC035",
+"CC036"
+],
+"u9-i-odindva-5": [
+"CC029",
+"CC036"
+],
+"u9-g-quantity-0": [
+"CC035"
+],
+"u9-i-quantity-1": [
+"CC035"
+],
+"u9-i-quantity-2": [
+"CC035",
+"CC036"
+],
+"u9-i-quantity-3": [
+"CC035"
+],
+"u9-i-quantity-4": [
+"CC030",
+"CC035",
+"CC036"
+],
+"u9-i-quantity-5": [
+"CC035",
+"CC036"
+],
+"u9-i-quantity-6": [
+"CC035",
+"CC036"
+],
+"u9-i-quantity-7": [
+"CC035",
+"CC036"
+],
+"u9-i-quantity-8": [
+"CC035",
+"CC036"
+],
+"u9-i-quantity-9": [
+"CC035",
+"CC036"
+],
+"u9-g-pattern-0": [
+"CC035"
+],
+"u9-i-pattern-1": [
+"CC035"
+],
+"u9-i-pattern-2": [
+"CC035",
+"CC036"
+],
+"u9-i-pattern-3": [
+"CC030",
+"CC035"
+],
+"u9-i-pattern-4": [
+"CC035",
+"CC036"
+],
+"u10-g-have-0": [
+"CC035"
+],
+"u10-i-have-1": [
+"CC010",
+"CC035",
+"CC036"
+],
+"u10-i-have-2": [
+"CC035",
+"CC036"
+],
+"u10-i-have-3": [
+"CC010",
+"CC035",
+"CC036"
+],
+"u10-i-have-4": [
+"CC010",
+"CC035",
+"CC036"
+],
+"u10-g-absence-0": [
+"CC010",
+"CC035"
+],
+"u10-i-absence-1": [
+"CC035",
+"CC036"
+],
+"u10-i-absence-2": [
+"CC035",
+"CC036"
+],
+"u10-i-absence-3": [
+"CC010",
+"CC035",
+"CC036"
+],
+"u10-i-absence-4": [
+"CC010",
+"CC035",
+"CC036"
+],
+"u10-g-pronoun-0": [
+"CC029"
+],
+"u10-i-pronoun-1": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u10-i-pronoun-2": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u10-i-pronoun-3": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u10-i-pronoun-4": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u10-g-preposition-0": [
+"CC027"
+],
+"u10-i-preposition-1": [
+"CC021",
+"CC027",
+"CC036"
+],
+"u10-i-preposition-2": [
+"CC027",
+"CC036"
+],
+"u10-i-preposition-3": [
+"CC036"
+],
+"u10-i-preposition-4": [
+"CC027"
+],
+"u10-g-adjective-0": [],
+"u10-i-adjective-1": [
+"CC036"
+],
+"u10-i-adjective-2": [
+"CC021"
+],
+"u10-i-adjective-3": [
+"CC036"
+],
+"u10-g-animate-0": [
+"CC027",
+"CC029"
+],
+"u10-i-animate-1": [
+"CC027",
+"CC029",
+"CC036"
+],
+"u10-i-animate-2": [
+"CC027",
+"CC036"
+],
+"u10-i-animate-3": [
+"CC027",
+"CC036"
+],
+"u7-g-adverb-invariance-0": [
+"CC029"
+],
+"u7-i-adverb-invariance-1": [
+"CC011",
+"CC026",
+"CC027",
+"CC029",
+"CC036"
+],
+"u7-i-adverb-invariance-2": [
+"CC011",
+"CC026",
+"CC027",
+"CC029",
+"CC036"
+],
+"u7-g-adverb-pairs-0": [
+"CC029",
+"CC030"
+],
+"u7-i-adverb-pairs-1": [
+"CC029",
+"CC036"
+],
+"u7-i-adverb-pairs-2": [
+"CC029",
+"CC030",
+"CC036"
+],
+"u11-g-past-read-0": [
+"CC029"
+],
+"u11-i-past-read-1": [
+"CC029",
+"CC036"
+],
+"u11-i-past-read-2": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u11-g-past-be-0": [
+"CC029"
+],
+"u11-i-past-be-1": [
+"CC027",
+"CC029",
+"CC036"
+],
+"u11-i-past-be-2": [
+"CC027",
+"CC029",
+"CC036"
+],
+"u11-g-past-aspect-0": [],
+"u11-i-past-aspect-1": [
+"CC036"
+],
+"u11-i-past-aspect-2": [
+"CC036"
+],
+"u11-g-reflexive-0": [
+"CC029"
+],
+"u11-i-reflexive-1": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u11-i-reflexive-2": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u12-g-future-imp-0": [
+"CC029",
+"CC030"
+],
+"u12-i-future-imp-1": [
+"CC029",
+"CC030",
+"CC036"
+],
+"u12-i-future-imp-2": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u12-g-future-perf-0": [
+"CC024",
+"CC029"
+],
+"u12-i-future-perf-1": [
+"CC029",
+"CC036"
+],
+"u12-i-future-perf-2": [
+"CC024",
+"CC029",
+"CC036"
+],
+"u12-g-aspect-0": [],
+"u12-i-aspect-1": [
+"CC030",
+"CC036"
+],
+"u12-i-aspect-2": [
+"CC022",
+"CC030",
+"CC036"
+],
+"u12-g-dative-0": [
+"CC029"
+],
+"u12-i-dative-1": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u12-i-dative-2": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u12-g-spelling-0": [
+"CC029"
+],
+"u12-i-spelling-1": [
+"CC029",
+"CC036"
+],
+"u12-i-spelling-2": [
+"CC029",
+"CC036"
+],
+"u12-g-prep-plural-0": [
+"CC029"
+],
+"u12-i-prep-plural-1": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u12-i-prep-plural-2": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u13-g-past-aspect-0": [
+"CC029"
+],
+"u13-i-past-aspect-1": [
+"CC029",
+"CC036"
+],
+"u13-i-past-aspect-2": [
+"CC022",
+"CC029",
+"CC036"
+],
+"u13-g-tense-keep-0": [
+"CC029"
+],
+"u13-i-tense-keep-1": [
+"CC029",
+"CC036"
+],
+"u13-i-tense-keep-2": [
+"CC026",
+"CC029",
+"CC036"
+],
+"u13-g-infinitive-0": [
+"CC029"
+],
+"u13-i-infinitive-1": [
+"CC022",
+"CC029",
+"CC030",
+"CC036"
+],
+"u13-i-infinitive-2": [
+"CC022",
+"CC029",
+"CC030",
+"CC036"
+],
+"u13-g-reported-0": [
+"CC035"
+],
+"u13-i-reported-1": [
+"CC029",
+"CC036"
+],
+"u13-i-reported-2": [
+"CC029",
+"CC036"
+],
+"u14-g-future-aspect-0": [
+"CC029"
+],
+"u14-i-future-aspect-1": [
+"CC021",
+"CC027",
+"CC029",
+"CC036"
+],
+"u14-i-future-aspect-2": [
+"CC027",
+"CC029",
+"CC036"
+],
+"u14-g-future-person-0": [
+"CC029",
+"CC030"
+],
+"u14-i-future-person-1": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u14-i-future-person-2": [
+"CC029",
+"CC030",
+"CC036"
+],
+"u14-g-impersonal-0": [
+"CC029"
+],
+"u14-i-impersonal-1": [
+"CC029",
+"CC036"
+],
+"u14-i-impersonal-2": [
+"CC029",
+"CC036"
+],
+"u15-g-imperative-0": [
+"CC029"
+],
+"u15-i-imperative-1": [
+"CC022",
+"CC027",
+"CC029",
+"CC036"
+],
+"u15-i-imperative-2": [
+"CC022",
+"CC027",
+"CC029",
+"CC036"
+],
+"u15-g-say-request-0": [
+"CC029"
+],
+"u15-i-say-request-1": [
+"CC021",
+"CC029",
+"CC036"
+],
+"u15-i-say-request-2": [
+"CC029",
+"CC036"
+],
+"u15-g-aspect-consolidate-0": [
+"CC029"
+],
+"u15-i-aspect-consolidate-1": [
+"CC003",
+"CC029",
+"CC030",
+"CC036"
+],
+"u15-i-aspect-consolidate-2": [
+"CC003",
+"CC029",
+"CC030",
+"CC036"
+],
+"u16-g-inst-sg-0": [],
+"u16-i-inst-sg-1": [
+"CC022"
+],
+"u16-i-inst-sg-2": [
+"CC027"
+],
+"u16-g-inst-pl-0": [],
+"u16-i-inst-pl-1": [
+"CC022"
+],
+"u16-i-inst-pl-2": [
+"CC022"
+],
+"u16-g-inst-adj-0": [],
+"u16-i-inst-adj-1": [
+"CC022"
+],
+"u16-i-inst-adj-2": [],
+"u16-g-inst-means-0": [],
+"u16-i-inst-means-1": [
+"CC036"
+],
+"u16-i-inst-means-2": [
+"CC036"
+],
+"u16-g-inst-prep-0": [],
+"u16-i-inst-prep-1": [],
+"u16-i-inst-prep-2": [],
+"u16-g-complements-0": [
+"CC035"
+],
+"u16-i-complements-1": [],
+"u16-i-complements-2": [],
+"u17-g-ordinals-0": [
+"CC029"
+],
+"u17-i-ordinals-1": [
+"CC027",
+"CC029"
+],
+"u17-i-ordinals-2": [
+"CC027",
+"CC029"
+],
+"u17-g-hours-0": [
+"CC029"
+],
+"u17-i-hours-1": [
+"CC027",
+"CC029",
+"CC036"
+],
+"u17-i-hours-2": [
+"CC027",
+"CC029",
+"CC036"
+],
+"u17-g-years-0": [
+"CC029"
+],
+"u17-i-years-1": [
+"CC022",
+"CC027",
+"CC029",
+"CC036"
+],
+"u17-i-years-2": [
+"CC022",
+"CC027",
+"CC029",
+"CC036"
+],
+"u17-g-minutes-0": [
+"CC029"
+],
+"u17-i-minutes-1": [
+"CC027",
+"CC029",
+"CC036"
+],
+"u17-i-minutes-2": [
+"CC027",
+"CC029",
+"CC036"
+],
+"u17-g-age-0": [
+"CC028",
+"CC035"
+],
+"u17-i-age-1": [
+"CC026",
+"CC029",
+"CC036"
+],
+"u17-i-age-2": [
+"CC026",
+"CC029",
+"CC036"
+],
+"u17-g-weekdays-0": [
+"CC029"
+],
+"u17-i-weekdays-1": [
+"CC029"
+],
+"u17-i-weekdays-2": [
+"CC029"
+],
+"u17-g-months-0": [
+"CC029"
+],
+"u17-i-months-1": [
+"CC029"
+],
+"u17-i-months-2": [
+"CC029"
+],
+"u17-g-clock-0": [
+"CC029"
+],
+"u17-i-clock-1": [
+"CC029"
+],
+"u17-i-clock-2": [
+"CC029"
+],
+"u17-g-clock-answers-0": [
+"CC029"
+],
+"u17-i-clock-answers-1": [
+"CC029"
+],
+"u17-i-clock-answers-2": [
+"CC029"
+],
+"u17-g-quarter-hour-0": [
+"CC029"
+],
+"u17-i-quarter-hour-1": [
+"CC029"
+],
+"u17-i-quarter-hour-2": [
+"CC029"
+],
+"u17-i-quarter-hour-3": [
+"CC029"
+],
+"u17-g-clock-productive-0": [
+"CC029"
+],
+"u17-i-clock-productive-1": [
+"CC029",
+"CC036"
+],
+"u17-i-clock-productive-2": [
+"CC029",
+"CC036"
+],
+"u17-g-calendar-date-0": [
+"CC035"
+],
+"u17-i-calendar-date-1": [
+"CC026",
+"CC029"
+],
+"u17-i-calendar-date-2": [
+"CC035"
+],
+"u18-g-comparison-0": [
+"CC029"
+],
+"u18-i-comparison-1": [
+"CC022"
+],
+"u18-i-comparison-2": [
+"CC022"
+],
+"u18-g-relative-0": [],
+"u18-i-relative-1": [],
+"u18-i-relative-2": [],
+"u19-g-prefix-caution-0": [],
+"u19-i-prefix-caution-1": [],
+"u19-i-prefix-caution-2": [
+"CC022",
+"CC029"
+],
+"u19-g-conditional-0": [],
+"u19-i-conditional-1": [],
+"u19-i-conditional-2": [
+"CC035"
+],
+"u19-g-obligation-0": [
+"CC029"
+],
+"u19-i-obligation-1": [
+"CC026",
+"CC029"
+],
+"u19-i-obligation-2": [
+"CC026",
+"CC029"
+],
+"u19-g-probability-0": [],
+"u19-i-probability-1": [
+"CC036"
+],
+"u19-i-probability-2": [
+"CC035",
+"CC036"
+],
+"u20-g-motion-0": [
+"CC029"
+],
+"u20-i-motion-1": [],
+"u20-i-motion-2": [
+"CC022"
+],
+"u20-i-motion-3": [
+"CC022",
+"CC035"
+],
+"u20-i-motion-4": [
+"CC035"
+],
+"u21-g-svoy-0": [],
+"u21-i-svoy-1": [],
+"u21-i-svoy-2": [],
+"u21-g-object-reference-0": [
+"CC029"
+],
+"u21-i-object-reference-1": [
+"CC029",
+"CC036"
+],
+"u21-i-object-reference-2": [
+"CC035",
+"CC036"
+],
+"u21-g-purpose-0": [
+"CC035"
+],
+"u21-i-purpose-1": [
+"CC004",
+"CC035"
+],
+"u21-i-purpose-2": [
+"CC004"
+],
+"u22-g-noun-forms-0": [
+"CC029"
+],
+"u22-i-noun-forms-1": [
+"CC027",
+"CC029"
+],
+"u22-i-noun-forms-2": [
+"CC027",
+"CC029"
+],
+"u22-g-compounds-0": [
+"CC027",
+"CC029"
+],
+"u22-i-compounds-1": [
+"CC027",
+"CC029"
+],
+"u22-i-compounds-2": [
+"CC027",
+"CC029"
+],
+"u22-g-declension-0": [
+"CC029"
+],
+"u22-i-declension-1": [
+"CC029"
+],
+"u22-i-declension-2": [
+"CC029"
+],
+"u22-g-both-forms-0": [
+"CC029"
+],
+"u22-i-both-forms-1": [
+"CC029"
+],
+"u22-i-both-forms-2": [
+"CC029"
+],
+"u22-i-both-forms-3": [
+"CC029"
+],
+"u22-g-half-forms-0": [
+"CC029"
+],
+"u22-i-half-forms-1": [
+"CC029"
+],
+"u22-i-half-forms-2": [
+"CC022",
+"CC029"
+],
+"u22-i-half-forms-3": [
+"CC022",
+"CC029"
+],
+"u22-g-collective-0": [
+"CC029"
+],
+"u22-i-collective-1": [
+"CC029"
+],
+"u22-i-collective-2": [
+"CC029"
+],
+"u23-g-ranges-0": [
+"CC010",
+"CC029"
+],
+"u23-i-ranges-1": [
+"CC029",
+"CC036"
+],
+"u23-i-ranges-2": [
+"CC010",
+"CC029",
+"CC036"
+],
+"u23-g-beginning-0": [
+"CC029"
+],
+"u23-i-beginning-1": [
+"CC029",
+"CC036"
+],
+"u23-i-beginning-2": [
+"CC029",
+"CC036"
+],
+"u23-g-during-event-0": [
+"CC010",
+"CC029"
+],
+"u23-i-during-event-1": [
+"CC029",
+"CC036"
+],
+"u23-i-during-event-2": [
+"CC010",
+"CC029",
+"CC036"
+],
+"u23-g-duration-0": [
+"CC010",
+"CC029"
+],
+"u23-i-duration-1": [
+"CC029",
+"CC036"
+],
+"u23-i-duration-2": [
+"CC010",
+"CC029",
+"CC036"
+],
+"u23-g-elapsed-0": [
+"CC029"
+],
+"u23-i-elapsed-1": [
+"CC029",
+"CC036"
+],
+"u23-i-elapsed-2": [
+"CC029",
+"CC036"
+],
+"u24-g-verbal-ne-0": [
+"CC029"
+],
+"u24-i-verbal-ne-1": [
+"CC027",
+"CC029"
+],
+"u24-i-verbal-ne-2": [
+"CC027",
+"CC029"
+],
+"u24-g-absence-0": [
+"CC029"
+],
+"u24-i-absence-1": [
+"CC029"
+],
+"u24-i-absence-2": [
+"CC029"
+],
+"u24-g-alternation-0": [
+"CC035"
+],
+"u24-i-alternation-1": [
+"CC029",
+"CC036"
+],
+"u24-i-alternation-2": [
+"CC035"
+],
+"u24-g-stand-ins-0": [
+"CC029"
+],
+"u24-i-stand-ins-1": [
+"CC026",
+"CC029"
+],
+"u24-i-stand-ins-2": [
+"CC035"
+],
+"u24-g-concord-0": [
+"CC010",
+"CC029"
+],
+"u24-i-concord-1": [
+"CC027",
+"CC029"
+],
+"u24-i-concord-2": [
+"CC010",
+"CC027",
+"CC029"
+],
+"u24-g-word-order-contrast-0": [
+"CC029"
+],
+"u24-i-word-order-contrast-1": [
+"CC029",
+"CC036"
+],
+"u24-i-word-order-contrast-2": [
+"CC029",
+"CC036"
+],
+"u24-g-placement-0": [
+"CC029"
+],
+"u24-i-placement-1": [
+"CC027",
+"CC029",
+"CC030",
+"CC036"
+],
+"u24-i-placement-2": [
+"CC027",
+"CC029",
+"CC030",
+"CC036"
+],
+"u25-g-name-structure-0": [
+"CC029"
+],
+"u25-i-name-structure-1": [
+"CC029"
+],
+"u25-i-name-structure-2": [
+"CC029"
+],
+"u25-g-diminutives-0": [
+"CC029"
+],
+"u25-i-diminutives-1": [
+"CC026",
+"CC029"
+],
+"u25-i-diminutives-2": [
+"CC026",
+"CC029"
+],
+"u25-g-courtesy-0": [
+"CC029"
+],
+"u25-i-courtesy-1": [
+"CC029"
+],
+"u25-i-courtesy-2": [
+"CC035"
+],
+"u25-g-name-question-0": [
+"CC029"
+],
+"u25-i-name-question-1": [
+"CC022",
+"CC027",
+"CC029"
+],
+"u25-i-name-question-2": [
+"CC022",
+"CC027",
+"CC029"
+],
+"u25-g-nickname-rule-0": [
+"CC029"
+],
+"u25-i-nickname-rule-1": [
+"CC026",
+"CC029",
+"CC030"
+],
+"u25-i-nickname-rule-2": [
+"CC026",
+"CC029",
+"CC030"
+],
+"u25-g-address-0": [
+"CC029"
+],
+"u25-i-address-1": [
+"CC026",
+"CC029"
+],
+"u25-i-address-2": [
+"CC026",
+"CC029"
+],
+"u25-i-address-3": [
+"CC026",
+"CC029"
+],
+"u26-g-word-order-0": [
+"CC035"
+],
+"u26-i-word-order-1": [
+"CC035"
+],
+"u26-i-word-order-2": [
+"CC035"
+],
+"u26-g-vy-capital-0": [
+"CC029"
+],
+"u26-i-vy-capital-1": [
+"CC026",
+"CC027",
+"CC029"
+],
+"u26-i-vy-capital-2": [
+"CC026",
+"CC027",
+"CC029"
+],
+"u26-g-address-notation-0": [
+"CC029"
+],
+"u26-i-address-notation-1": [
+"CC029",
+"CC030"
+],
+"u26-i-address-notation-2": [
+"CC029",
+"CC030"
+],
+"u26-g-indefinite-0": [
+"CC029"
+],
+"u26-i-indefinite-1": [
+"CC026",
+"CC029"
+],
+"u26-i-indefinite-2": [
+"CC026",
+"CC029"
+],
+"u26-g-letter-writing-0": [
+"CC035"
+],
+"u26-i-letter-writing-1": [
+"CC026",
+"CC035",
+"CC036"
+],
+"u26-i-letter-writing-2": [
+"CC026",
+"CC035"
+],
+"u26-g-correspondence-0": [
+"CC029"
+],
+"u26-i-correspondence-1": [
+"CC022",
+"CC029",
+"CC036"
+],
+"u26-i-correspondence-2": [
+"CC022",
+"CC029",
+"CC036"
+],
+"u27-g-passive-0": [],
+"u27-i-passive-1": [],
+"u27-i-passive-2": [],
+"u27-g-present-passive-0": [
+"CC029"
+],
+"u27-i-present-passive-1": [
+"CC029"
+],
+"u27-i-present-passive-2": [
+"CC029"
+],
+"u28-g-imperfective-adverb-0": [
+"CC029",
+"CC035"
+],
+"u28-i-imperfective-adverb-1": [
+"CC009",
+"CC028",
+"CC035"
+],
+"u28-i-imperfective-adverb-2": [
+"CC009",
+"CC028",
+"CC035"
+],
+"u28-g-perfective-adverb-0": [
+"CC029",
+"CC035"
+],
+"u28-i-perfective-adverb-1": [
+"CC009",
+"CC028",
+"CC035"
+],
+"u28-i-perfective-adverb-2": [
+"CC009",
+"CC028",
+"CC035"
+],
+"u28-g-readings-0": [],
+"u28-i-readings-1": [
+"CC036"
+],
+"u28-i-readings-2": [
+"CC036"
+],
+"u29-g-active-0": [
+"CC029"
+],
+"u29-i-active-1": [
+"CC022",
+"CC026",
+"CC027",
+"CC029"
+],
+"u29-i-active-2": [
+"CC022",
+"CC026",
+"CC027",
+"CC029",
+"CC035"
+],
+"u29-g-short-adjective-0": [],
+"u29-i-short-adjective-1": [],
+"u29-i-short-adjective-2": [],
+"u29-g-bookish-note-0": [
+"CC029"
+],
+"u29-i-bookish-note-1": [
+"CC026",
+"CC029"
+],
+"u29-i-bookish-note-2": [
+"CC026",
+"CC029"
+],
+"u29-g-punctuation-0": [
+"CC029"
+],
+"u29-i-punctuation-1": [
+"CC027",
+"CC029"
+],
+"u29-i-punctuation-2": [
+"CC027",
+"CC029"
+],
+"u30-g-letter-names-0": [
+"CC029"
+],
+"u30-i-letter-names-1": [
+"CC029"
+],
+"u30-i-letter-names-2": [
+"CC029"
+],
+"u30-g-abbrev-examples-0": [
+"CC029"
+],
+"u30-i-abbrev-examples-1": [
+"CC029"
+],
+"u30-i-abbrev-examples-2": [
+"CC029"
+],
+"u30-g-address-marks-0": [
+"CC029"
+],
+"u30-i-address-marks-1": [
+"CC029",
+"CC030"
+],
+"u30-i-address-marks-2": [
+"CC022",
+"CC029",
+"CC030"
+],
+"u30-g-abbreviation-0": [
+"CC029"
+],
+"u30-i-abbreviation-1": [
+"CC026",
+"CC029"
+],
+"u30-i-abbreviation-2": [
+"CC022",
+"CC026",
+"CC029"
+],
+"u30-g-particle-0": [
+"CC029"
+],
+"u30-i-particle-1": [
+"CC022",
+"CC026",
+"CC029",
+"CC036"
+],
+"u30-i-particle-2": [
+"CC022",
+"CC026",
+"CC029",
+"CC036"
+],
+"u30-g-capstone-0": [
+"CC029"
+],
+"u30-i-capstone-1": [
+"CC027",
+"CC029",
+"CC036"
+],
+"u30-i-capstone-2": [
+"CC027",
+"CC029",
+"CC036"
+],
+"u7-g-manner-1": [
+"CC029"
+],
+"u7-i-manner-1": [
+"CC021",
+"CC026",
+"CC035"
+],
+"u7-i-manner-2": [
+"CC035",
+"CC036"
+],
+"u7-i-manner-3": [
+"CC035"
+],
+"u7-i-manner-4": [
+"CC021",
+"CC026",
+"CC035",
+"CC036"
+],
+"u23-g-completion-1": [],
+"u23-i-completion-1": [
+"CC036"
+],
+"u23-i-completion-2": [
+"CC036"
+],
+"u25-g-name-form-1": [
+"CC029"
+],
+"u25-i-name-form-1": [
+"CC029",
+"CC030"
+],
+"u25-i-name-form-2": [
+"CC029",
+"CC030"
+],
+"u25-i-name-form-3": [
+"CC026",
+"CC036"
+],
+"u27-g-stress-1": [
+"CC029",
+"CC035"
+],
+"u27-i-stress-1": [
+"CC029",
+"CC035"
+],
+"u27-i-stress-2": [
+"CC022",
+"CC029",
+"CC036"
+],
+"u27-i-stress-3": [
+"CC022",
+"CC029",
+"CC036"
+],
+"u27-i-stress-4": [
+"CC026",
+"CC029",
+"CC036"
+],
+"u27-g-comp-1": [
+"CC029"
+],
+"u27-i-comp-1": [
+"CC028",
+"CC029",
+"CC035"
+],
+"u27-i-comp-2": [
+"CC028",
+"CC035"
+],
+"u27-i-comp-3": [
+"CC028",
+"CC029",
+"CC035"
+],
+"u29-g-register-1": [
+"CC029"
+],
+"u29-i-register-1": [
+"CC026",
+"CC029"
+],
+"u29-i-register-2": [
+"CC026",
+"CC029"
+],
+"u29-i-register-3": [
+"CC026",
+"CC029"
+],
+"u29-i-register-4": [
+"CC021",
+"CC026",
+"CC029"
+],
+"u29-i-register-5": [
+"CC026",
+"CC029"
+],
+"u29-g-reading-1": [
+"CC029"
+],
+"u29-i-reading-1": [
+"CC028",
+"CC029"
+],
+"u29-i-reading-2": [
+"CC028",
+"CC029"
+],
+"u29-i-reading-3": [
+"CC028",
+"CC029"
+],
+"u26-g-postal-1": [
+"CC035"
+],
+"u26-i-postal-1": [
+"CC026",
+"CC028",
+"CC035"
+],
+"u26-i-postal-2": [
+"CC026",
+"CC028",
+"CC035"
+],
+"u26-i-postal-3": [
+"CC026",
+"CC028",
+"CC035"
+],
+"u26-i-postal-4": [
+"CC026",
+"CC028",
+"CC035"
+],
+"u26-i-postal-5": [
+"CC026",
+"CC028",
+"CC035"
+],
+"u26-i-postal-6": [
+"CC026",
+"CC028",
+"CC035"
+],
+"u26-i-postal-7": [
+"CC026",
+"CC028",
+"CC035"
+],
+"u26-i-postal-8": [
+"CC026",
+"CC028",
+"CC035"
+],
+"u26-i-postal-9": [
+"CC026",
+"CC028",
+"CC035"
+],
+"u26-i-postal-10": [
+"CC026",
+"CC028",
+"CC035"
+],
+"u26-i-postal-11": [
+"CC026",
+"CC028",
+"CC035"
+],
+"u30-g-dictionary-1": [
+"CC029"
+],
+"u30-i-dictionary-1": [
+"CC029"
+],
+"u30-i-dictionary-2": [
+"CC027",
+"CC029"
+],
+"u30-i-dictionary-3": [
+"CC029"
+],
+"u30-i-dictionary-4": [
+"CC026",
+"CC029"
+],
+"u30-i-dictionary-5": [
+"CC026",
+"CC029"
+],
+"u1-g-name-a": [],
+"u1-i-name-be": [
+"CC030"
+],
+"u1-g-guided-confusable": [],
+"u1-g-guided-iotated": [],
+"u1-g-guided-signs": [],
+"u1-g-guided-print": [],
+"u1-g-guided-decoding": [],
+"u4-g-nominative-1": [
+"CC029"
+],
+"u27-g-stress-past": [
+"CC029",
+"CC035"
+],
+"u29-g-adjective-form-0": [
+"CC035"
+],
+"u29-i-adjective-form-1": [
+"CC035"
+],
+"u29-i-adjective-form-2": [
+"CC035"
+],
+"u29-g-short-agreement-m": [
+"CC029",
+"CC035"
+],
+"u29-g-short-agreement-n": [
+"CC029",
+"CC035"
+],
+"u29-i-short-agreement-f": [
+"CC029",
+"CC035"
+],
+"u29-i-short-agreement-n": [
+"CC029",
+"CC035"
+],
+"u29-i-short-agreement-pl": [
+"CC029",
+"CC035"
+],
+"u29-g-adjective-function-p": [
+"CC035"
+],
+"u29-g-adjective-function-a": [
+"CC035"
+],
+"u29-i-adjective-function-p": [
+"CC035",
+"CC036"
+],
+"u29-i-adjective-function-a": [
+"CC035",
+"CC036"
+],
+"u30-g-native-name-a": [
+"CC035"
+],
+"u30-i-native-name-b": [
+"CC030",
+"CC035"
+],
+"u30-i-native-name-v": [
+"CC035"
+],
+"u30-g-initialism-use": [
+"CC035"
+],
+"u30-i-initialism-ussr": [
+"CC035"
+],
+"u30-i-initialism-usa": [
+"CC035"
+],
+"u20-g-direction-library": [
+"CC035"
+],
+"u20-g-direction-ability": [
+"CC035"
+],
+"u20-i-direction-birds": [
+"CC035"
+],
+"u20-i-direction-city": [
+"CC035"
+],
+"u20-i-direction-weekly": [
+"CC035"
+],
+"u20-i-direction-round": [
+"CC029",
+"CC035"
+],
+"u29-i-punctuation-after": [
+"CC027",
+"CC035"
+],
+"u29-i-punctuation-pronoun": [
+"CC027",
+"CC035"
+],
+"u29-i-punctuation-cause": [
+"CC027",
+"CC029",
+"CC035"
+],
+"u29-i-punctuation-terminal": [
+"CC027",
+"CC035"
+],
+"u17-g-question-apple": [
+"CC035"
+],
+"u17-i-question-clock": [
+"CC035"
+],
+"u17-i-question-book": [
+"CC035"
+],
+"u24-g-context-subject-focus": [
+"CC035"
+],
+"u13-i-report-frame-time": [
+"CC035",
+"CC036"
+],
+"u4-g-nom-role": [
+"CC035"
+],
+"u4-i-nom-role-train": [
+"CC027",
+"CC035",
+"CC036"
+],
+"u4-i-nom-role-student": [
+"CC027",
+"CC035",
+"CC036"
+],
+"u4-g-present-говорить-я": [],
+"u4-g-present-видеть-я": [],
+"u4-g-present-писать-я": [],
+"u4-g-present-идти-я": []
+},
+"required": [
+"u1-i-decode-pair",
+"u1-i-name-be",
+"u1-i-print-pair",
+"u1-i-а-identity",
+"u1-i-в-not-b",
+"u1-i-е-identity",
+"u1-i-й-not-vowel",
+"u1-i-м-identity",
+"u1-i-н-not-h",
+"u1-i-р-not-p",
+"u1-i-с-not-c",
+"u1-i-у-not-y",
+"u1-i-х-not-x",
+"u1-i-ъ-not-vowel",
+"u1-i-ь-not-vowel",
+"u1-i-ю-identity",
+"u1-i-я-identity",
+"u1-i-ё-identity",
+"u10-i-absence-1",
+"u10-i-absence-2",
+"u10-i-absence-3",
+"u10-i-absence-4",
+"u10-i-adjective-1",
+"u10-i-adjective-2",
+"u10-i-adjective-3",
+"u10-i-animate-1",
+"u10-i-animate-2",
+"u10-i-animate-3",
+"u10-i-have-1",
+"u10-i-have-2",
+"u10-i-have-3",
+"u10-i-have-4",
+"u10-i-preposition-1",
+"u10-i-preposition-2",
+"u10-i-preposition-3",
+"u10-i-preposition-4",
+"u10-i-pronoun-1",
+"u10-i-pronoun-2",
+"u10-i-pronoun-3",
+"u10-i-pronoun-4",
+"u11-i-past-aspect-1",
+"u11-i-past-aspect-2",
+"u11-i-past-be-1",
+"u11-i-past-be-2",
+"u11-i-past-read-1",
+"u11-i-past-read-2",
+"u11-i-reflexive-1",
+"u11-i-reflexive-2",
+"u12-i-aspect-1",
+"u12-i-aspect-2",
+"u12-i-dative-1",
+"u12-i-dative-2",
+"u12-i-future-imp-1",
+"u12-i-future-imp-2",
+"u12-i-future-perf-1",
+"u12-i-future-perf-2",
+"u12-i-prep-plural-1",
+"u12-i-prep-plural-2",
+"u12-i-spelling-1",
+"u12-i-spelling-2",
+"u13-i-infinitive-1",
+"u13-i-infinitive-2",
+"u13-i-past-aspect-1",
+"u13-i-past-aspect-2",
+"u13-i-report-frame-time",
+"u13-i-reported-1",
+"u13-i-reported-2",
+"u13-i-tense-keep-1",
+"u13-i-tense-keep-2",
+"u14-i-future-aspect-1",
+"u14-i-future-aspect-2",
+"u14-i-future-person-1",
+"u14-i-future-person-2",
+"u14-i-impersonal-1",
+"u14-i-impersonal-2",
+"u15-i-aspect-consolidate-1",
+"u15-i-aspect-consolidate-2",
+"u15-i-imperative-1",
+"u15-i-imperative-2",
+"u15-i-say-request-1",
+"u15-i-say-request-2",
+"u16-i-complements-1",
+"u16-i-complements-2",
+"u16-i-inst-adj-1",
+"u16-i-inst-adj-2",
+"u16-i-inst-means-1",
+"u16-i-inst-means-2",
+"u16-i-inst-pl-1",
+"u16-i-inst-pl-2",
+"u16-i-inst-prep-1",
+"u16-i-inst-prep-2",
+"u16-i-inst-sg-1",
+"u16-i-inst-sg-2",
+"u17-i-age-1",
+"u17-i-age-2",
+"u17-i-calendar-date-1",
+"u17-i-calendar-date-2",
+"u17-i-clock-answers-1",
+"u17-i-clock-answers-2",
+"u17-i-clock-productive-1",
+"u17-i-clock-productive-2",
+"u17-i-hours-1",
+"u17-i-hours-2",
+"u17-i-minutes-1",
+"u17-i-minutes-2",
+"u17-i-months-1",
+"u17-i-months-2",
+"u17-i-ordinals-1",
+"u17-i-ordinals-2",
+"u17-i-quarter-hour-1",
+"u17-i-quarter-hour-2",
+"u17-i-quarter-hour-3",
+"u17-i-question-book",
+"u17-i-question-clock",
+"u17-i-weekdays-1",
+"u17-i-weekdays-2",
+"u17-i-years-1",
+"u17-i-years-2",
+"u18-i-comparison-1",
+"u18-i-comparison-2",
+"u18-i-relative-1",
+"u18-i-relative-2",
+"u19-i-conditional-1",
+"u19-i-conditional-2",
+"u19-i-obligation-1",
+"u19-i-obligation-2",
+"u19-i-prefix-caution-1",
+"u19-i-prefix-caution-2",
+"u19-i-probability-1",
+"u19-i-probability-2",
+"u2-i-print-б",
+"u2-i-в-not-b",
+"u2-i-у-not-y",
+"u2-i-х-not-x",
+"u2-i-я-identity",
+"u20-i-direction-birds",
+"u20-i-direction-city",
+"u20-i-direction-round",
+"u20-i-direction-weekly",
+"u20-i-motion-1",
+"u20-i-motion-2",
+"u20-i-motion-3",
+"u20-i-motion-4",
+"u21-i-object-reference-1",
+"u21-i-object-reference-2",
+"u21-i-purpose-1",
+"u21-i-purpose-2",
+"u21-i-svoy-1",
+"u21-i-svoy-2",
+"u22-i-both-forms-1",
+"u22-i-both-forms-2",
+"u22-i-both-forms-3",
+"u22-i-collective-1",
+"u22-i-collective-2",
+"u22-i-compounds-1",
+"u22-i-compounds-2",
+"u22-i-declension-1",
+"u22-i-declension-2",
+"u22-i-half-forms-1",
+"u22-i-half-forms-2",
+"u22-i-half-forms-3",
+"u22-i-noun-forms-1",
+"u22-i-noun-forms-2",
+"u23-i-beginning-1",
+"u23-i-beginning-2",
+"u23-i-completion-1",
+"u23-i-completion-2",
+"u23-i-duration-1",
+"u23-i-duration-2",
+"u23-i-during-event-1",
+"u23-i-during-event-2",
+"u23-i-elapsed-1",
+"u23-i-elapsed-2",
+"u23-i-ranges-1",
+"u23-i-ranges-2",
+"u24-i-absence-1",
+"u24-i-absence-2",
+"u24-i-alternation-1",
+"u24-i-alternation-2",
+"u24-i-concord-1",
+"u24-i-concord-2",
+"u24-i-placement-1",
+"u24-i-placement-2",
+"u24-i-stand-ins-1",
+"u24-i-stand-ins-2",
+"u24-i-verbal-ne-1",
+"u24-i-verbal-ne-2",
+"u24-i-word-order-contrast-1",
+"u24-i-word-order-contrast-2",
+"u25-i-address-1",
+"u25-i-address-2",
+"u25-i-address-3",
+"u25-i-courtesy-1",
+"u25-i-courtesy-2",
+"u25-i-diminutives-1",
+"u25-i-diminutives-2",
+"u25-i-name-form-1",
+"u25-i-name-form-2",
+"u25-i-name-form-3",
+"u25-i-name-question-1",
+"u25-i-name-question-2",
+"u25-i-name-structure-1",
+"u25-i-name-structure-2",
+"u25-i-nickname-rule-1",
+"u25-i-nickname-rule-2",
+"u26-i-address-notation-1",
+"u26-i-address-notation-2",
+"u26-i-correspondence-1",
+"u26-i-correspondence-2",
+"u26-i-indefinite-1",
+"u26-i-indefinite-2",
+"u26-i-letter-writing-1",
+"u26-i-letter-writing-2",
+"u26-i-postal-1",
+"u26-i-postal-10",
+"u26-i-postal-11",
+"u26-i-postal-2",
+"u26-i-postal-3",
+"u26-i-postal-4",
+"u26-i-postal-5",
+"u26-i-postal-6",
+"u26-i-postal-7",
+"u26-i-postal-8",
+"u26-i-postal-9",
+"u26-i-vy-capital-1",
+"u26-i-vy-capital-2",
+"u26-i-word-order-1",
+"u26-i-word-order-2",
+"u27-i-comp-1",
+"u27-i-comp-2",
+"u27-i-comp-3",
+"u27-i-passive-1",
+"u27-i-passive-2",
+"u27-i-stress-2",
+"u27-i-stress-3",
+"u27-i-stress-4",
+"u28-i-imperfective-adverb-1",
+"u28-i-imperfective-adverb-2",
+"u28-i-perfective-adverb-1",
+"u28-i-perfective-adverb-2",
+"u28-i-readings-1",
+"u28-i-readings-2",
+"u29-i-active-1",
+"u29-i-active-2",
+"u29-i-adjective-form-1",
+"u29-i-adjective-form-2",
+"u29-i-adjective-function-a",
+"u29-i-adjective-function-p",
+"u29-i-bookish-note-1",
+"u29-i-bookish-note-2",
+"u29-i-punctuation-1",
+"u29-i-punctuation-after",
+"u29-i-punctuation-cause",
+"u29-i-punctuation-pronoun",
+"u29-i-punctuation-terminal",
+"u29-i-reading-1",
+"u29-i-reading-2",
+"u29-i-reading-3",
+"u29-i-register-1",
+"u29-i-register-2",
+"u29-i-register-3",
+"u29-i-register-4",
+"u29-i-register-5",
+"u29-i-short-agreement-f",
+"u29-i-short-agreement-n",
+"u29-i-short-agreement-pl",
+"u3-i-gender-город",
+"u3-i-gender-дверь",
+"u3-i-gender-друг",
+"u3-i-gender-дядя",
+"u3-i-gender-море",
+"u3-i-name-chto-eto",
+"u3-i-name-kto-eto",
+"u3-i-name-moya-sobaka",
+"u3-i-phrase-да",
+"u3-i-phrase-нет",
+"u3-i-phrase-пожалуйста",
+"u3-i-phrase-это",
+"u30-i-abbreviation-1",
+"u30-i-abbreviation-2",
+"u30-i-address-marks-1",
+"u30-i-address-marks-2",
+"u30-i-capstone-1",
+"u30-i-capstone-2",
+"u30-i-dictionary-1",
+"u30-i-dictionary-2",
+"u30-i-dictionary-3",
+"u30-i-dictionary-4",
+"u30-i-dictionary-5",
+"u30-i-initialism-usa",
+"u30-i-initialism-ussr",
+"u30-i-native-name-b",
+"u30-i-native-name-v",
+"u30-i-particle-1",
+"u30-i-particle-2",
+"u4-i-nom-role-student",
+"u4-i-nom-role-train",
+"u4-i-pronoun-вы",
+"u4-i-pronoun-он",
+"u4-i-pronoun-она",
+"u4-i-pronoun-они",
+"u4-i-pronoun-оно",
+"u4-i-pronoun-ты",
+"u4-i-stress-1f37b6b2",
+"u4-i-stress-2114b12f",
+"u4-i-verb-видеть-он",
+"u4-i-verb-говорить-мы",
+"u4-i-verb-идти-они",
+"u4-i-verb-писать-вы",
+"u5-i-decl-книга",
+"u5-i-decl-окно",
+"u5-i-indecl-кино",
+"u5-i-indecl-метро",
+"u5-i-indecl-такси",
+"u5-i-pattern-pattern-gde-zhivete",
+"u5-i-pattern-pattern-kak-dela",
+"u5-i-pattern-pattern-kto-eto",
+"u5-i-prep-o-sade",
+"u5-i-prep-v-moskve",
+"u5-i-q-gde",
+"u5-i-q-kak",
+"u5-i-q-kogda",
+"u5-i-q-pochemu",
+"u6-i-animacy-1",
+"u6-i-animacy-2",
+"u6-i-animacy-3",
+"u6-i-direction-1",
+"u6-i-direction-2",
+"u6-i-direction-3",
+"u6-i-feminine-1",
+"u6-i-feminine-2",
+"u6-i-object-1",
+"u6-i-object-2",
+"u6-i-object-3",
+"u6-i-possessive-1",
+"u6-i-possessive-2",
+"u6-i-possessive-3",
+"u6-i-pronoun-1",
+"u6-i-pronoun-2",
+"u6-i-pronoun-3",
+"u6-i-third-1",
+"u6-i-third-2",
+"u7-i-adverb-1",
+"u7-i-adverb-2",
+"u7-i-adverb-invariance-1",
+"u7-i-adverb-invariance-2",
+"u7-i-adverb-pairs-1",
+"u7-i-adverb-pairs-2",
+"u7-i-default-1",
+"u7-i-default-2",
+"u7-i-default-3",
+"u7-i-default-4",
+"u7-i-demonstrative-1",
+"u7-i-demonstrative-2",
+"u7-i-demonstrative-3",
+"u7-i-endings-1",
+"u7-i-endings-2",
+"u7-i-endings-3",
+"u7-i-endings-4",
+"u7-i-manner-1",
+"u7-i-manner-2",
+"u7-i-manner-3",
+"u7-i-manner-4",
+"u7-i-objectadj-1",
+"u7-i-objectadj-2",
+"u7-i-objectadj-3",
+"u7-i-place-1",
+"u7-i-place-2",
+"u7-i-place-3",
+"u7-i-question-1",
+"u7-i-question-2",
+"u7-i-question-3",
+"u7-i-spelling-1",
+"u7-i-spelling-2",
+"u7-i-spelling-3",
+"u8-i-agreement-1",
+"u8-i-agreement-2",
+"u8-i-agreement-3",
+"u8-i-availability-1",
+"u8-i-availability-2",
+"u8-i-availability-3",
+"u8-i-irregular-1",
+"u8-i-irregular-2",
+"u8-i-irregular-3",
+"u8-i-plural-1",
+"u8-i-plural-2",
+"u8-i-plural-3",
+"u8-i-plural-4",
+"u8-i-plural-5",
+"u8-i-plural-6",
+"u8-i-spelling-1",
+"u8-i-spelling-2",
+"u8-i-spelling-3",
+"u8-i-spelling-4",
+"u9-i-cardinal-1",
+"u9-i-cardinal-2",
+"u9-i-cardinal-3",
+"u9-i-cardinal-4",
+"u9-i-hundreds-1",
+"u9-i-hundreds-2",
+"u9-i-hundreds-3",
+"u9-i-odindva-1",
+"u9-i-odindva-2",
+"u9-i-odindva-3",
+"u9-i-odindva-4",
+"u9-i-odindva-5",
+"u9-i-pattern-1",
+"u9-i-pattern-2",
+"u9-i-pattern-3",
+"u9-i-pattern-4",
+"u9-i-quantity-1",
+"u9-i-quantity-2",
+"u9-i-quantity-3",
+"u9-i-quantity-4",
+"u9-i-quantity-5",
+"u9-i-quantity-6",
+"u9-i-quantity-7",
+"u9-i-quantity-8",
+"u9-i-quantity-9",
+"u9-i-teens-1",
+"u9-i-teens-2",
+"u9-i-teens-3",
+"u9-i-tens-1",
+"u9-i-tens-2",
+"u9-i-tens-3",
+"u9-i-thousands-1",
+"u9-i-thousands-2",
+"u9-i-thousands-3",
+"u9-i-thousands-4"
+],
+"guided": [
+"u1-g-guided-confusable",
+"u1-g-guided-decoding",
+"u1-g-guided-iotated",
+"u1-g-guided-print",
+"u1-g-guided-signs",
+"u1-g-name-a",
+"u1-i-а-identity",
+"u1-i-м-identity",
+"u10-g-absence-0",
+"u10-g-adjective-0",
+"u10-g-animate-0",
+"u10-g-have-0",
+"u10-g-preposition-0",
+"u10-g-pronoun-0",
+"u11-g-past-aspect-0",
+"u11-g-past-be-0",
+"u11-g-past-read-0",
+"u11-g-reflexive-0",
+"u12-g-aspect-0",
+"u12-g-dative-0",
+"u12-g-future-imp-0",
+"u12-g-future-perf-0",
+"u12-g-prep-plural-0",
+"u12-g-spelling-0",
+"u13-g-infinitive-0",
+"u13-g-past-aspect-0",
+"u13-g-reported-0",
+"u13-g-tense-keep-0",
+"u14-g-future-aspect-0",
+"u14-g-future-person-0",
+"u14-g-impersonal-0",
+"u15-g-aspect-consolidate-0",
+"u15-g-imperative-0",
+"u15-g-say-request-0",
+"u16-g-complements-0",
+"u16-g-inst-adj-0",
+"u16-g-inst-means-0",
+"u16-g-inst-pl-0",
+"u16-g-inst-prep-0",
+"u16-g-inst-sg-0",
+"u17-g-age-0",
+"u17-g-calendar-date-0",
+"u17-g-clock-answers-0",
+"u17-g-clock-productive-0",
+"u17-g-hours-0",
+"u17-g-minutes-0",
+"u17-g-months-0",
+"u17-g-ordinals-0",
+"u17-g-quarter-hour-0",
+"u17-g-question-apple",
+"u17-g-weekdays-0",
+"u17-g-years-0",
+"u18-g-comparison-0",
+"u18-g-relative-0",
+"u19-g-conditional-0",
+"u19-g-obligation-0",
+"u19-g-prefix-caution-0",
+"u19-g-probability-0",
+"u2-i-print-б",
+"u20-g-direction-ability",
+"u20-g-direction-library",
+"u20-g-motion-0",
+"u21-g-object-reference-0",
+"u21-g-purpose-0",
+"u21-g-svoy-0",
+"u22-g-both-forms-0",
+"u22-g-collective-0",
+"u22-g-compounds-0",
+"u22-g-declension-0",
+"u22-g-half-forms-0",
+"u22-g-noun-forms-0",
+"u23-g-beginning-0",
+"u23-g-completion-1",
+"u23-g-duration-0",
+"u23-g-during-event-0",
+"u23-g-elapsed-0",
+"u23-g-ranges-0",
+"u24-g-absence-0",
+"u24-g-alternation-0",
+"u24-g-concord-0",
+"u24-g-context-subject-focus",
+"u24-g-placement-0",
+"u24-g-stand-ins-0",
+"u24-g-verbal-ne-0",
+"u25-g-address-0",
+"u25-g-courtesy-0",
+"u25-g-diminutives-0",
+"u25-g-name-form-1",
+"u25-g-name-question-0",
+"u25-g-name-structure-0",
+"u25-g-nickname-rule-0",
+"u26-g-address-notation-0",
+"u26-g-correspondence-0",
+"u26-g-indefinite-0",
+"u26-g-letter-writing-0",
+"u26-g-postal-1",
+"u26-g-vy-capital-0",
+"u26-g-word-order-0",
+"u27-g-comp-1",
+"u27-g-passive-0",
+"u27-g-present-passive-0",
+"u27-g-stress-1",
+"u27-g-stress-past",
+"u28-g-imperfective-adverb-0",
+"u28-g-perfective-adverb-0",
+"u28-g-readings-0",
+"u29-g-active-0",
+"u29-g-adjective-form-0",
+"u29-g-adjective-function-a",
+"u29-g-adjective-function-p",
+"u29-g-bookish-note-0",
+"u29-g-punctuation-0",
+"u29-g-reading-1",
+"u29-g-register-1",
+"u29-g-short-agreement-m",
+"u29-g-short-agreement-n",
+"u3-i-gender-дом",
+"u3-i-gender-книга",
+"u3-i-gender-мужчина",
+"u3-i-gender-окно",
+"u3-i-gender-стол",
+"u3-i-name-moy-stol",
+"u3-i-phrase-здравствуйте",
+"u3-i-phrase-спасибо",
+"u30-g-abbreviation-0",
+"u30-g-address-marks-0",
+"u30-g-capstone-0",
+"u30-g-dictionary-1",
+"u30-g-initialism-use",
+"u30-g-native-name-a",
+"u30-g-particle-0",
+"u4-g-nom-role",
+"u4-g-nominative-1",
+"u4-g-present-видеть-я",
+"u4-g-present-говорить-я",
+"u4-g-present-идти-я",
+"u4-g-present-писать-я",
+"u4-i-nom-muzh",
+"u4-i-nom-poezd",
+"u4-i-pronoun-мы",
+"u4-i-pronoun-я",
+"u4-i-stress-6f15e9f1",
+"u4-i-verb-делать-я",
+"u4-i-verb-читать-ты",
+"u5-i-indecl-радио",
+"u5-i-pattern-pattern-chto-eto",
+"u5-i-prep-field-книга",
+"u5-i-prep-field-письмо",
+"u5-i-prep-o-knige",
+"u5-i-prep-o-pisme",
+"u5-i-q-chto",
+"u5-i-q-kto",
+"u6-g-animacy-0",
+"u6-g-direction-0",
+"u6-g-feminine-0",
+"u6-g-object-0",
+"u6-g-possessive-0",
+"u6-g-pronoun-0",
+"u6-g-third-0",
+"u7-g-adverb-0",
+"u7-g-adverb-invariance-0",
+"u7-g-adverb-pairs-0",
+"u7-g-default-0",
+"u7-g-demonstrative-0",
+"u7-g-endings-0",
+"u7-g-manner-1",
+"u7-g-objectadj-0",
+"u7-g-place-0",
+"u7-g-question-0",
+"u7-g-spelling-0",
+"u8-g-agreement-0",
+"u8-g-availability-0",
+"u8-g-irregular-0",
+"u8-g-plural-0",
+"u8-g-spelling-0",
+"u9-g-cardinal-0",
+"u9-g-hundreds-0",
+"u9-g-odindva-0",
+"u9-g-pattern-0",
+"u9-g-quantity-0",
+"u9-g-teens-0",
+"u9-g-tens-0",
+"u9-g-thousands-0"
+],
+"obj_unit": {
+"obj-u1-letter-identity": 1,
+"obj-u1-confusable": 1,
+"obj-u1-iotated": 1,
+"obj-u1-signs": 1,
+"obj-u1-print-forms": 1,
+"obj-u1-decoding": 1,
+"obj-u1-pronunciation": 1,
+"obj-u1-stress": 1,
+"obj-u1-book": 1,
+"obj-u1-letter-names": 1,
+"obj-u2-review": 2,
+"obj-u2-book": 2,
+"obj-u3-gender": 3,
+"obj-u3-phrases": 3,
+"obj-u3-naming": 3,
+"obj-u3-book": 3,
+"obj-u4-pronouns": 4,
+"obj-u4-present": 4,
+"obj-u4-stress": 4,
+"obj-u4-nominative": 4,
+"obj-u4-book": 4,
+"obj-u4-nominative-gloss-reference": 4,
+"obj-u5-questions": 5,
+"obj-u5-prepositional": 5,
+"obj-u5-indeclinable": 5,
+"obj-u5-book": 5,
+"obj-u6-possessive": 6,
+"obj-u6-third": 6,
+"obj-u6-object": 6,
+"obj-u6-feminine": 6,
+"obj-u6-animacy": 6,
+"obj-u6-pronoun": 6,
+"obj-u6-direction": 6,
+"obj-u6-book": 6,
+"obj-u7-default": 7,
+"obj-u7-endings": 7,
+"obj-u7-spelling": 7,
+"obj-u7-question": 7,
+"obj-u7-demonstrative": 7,
+"obj-u7-place": 7,
+"obj-u7-objectadj": 7,
+"obj-u7-adverb": 7,
+"obj-u7-book": 7,
+"obj-u7-adverb-invariance": 7,
+"obj-u7-adverb-pairs": 7,
+"obj-u7-adverb-paradigm": 7,
+"obj-u8-plural": 8,
+"obj-u8-spelling": 8,
+"obj-u8-irregular": 8,
+"obj-u8-agreement": 8,
+"obj-u8-availability": 8,
+"obj-u8-book": 8,
+"obj-u9-cardinal": 9,
+"obj-u9-teens": 9,
+"obj-u9-tens": 9,
+"obj-u9-hundreds": 9,
+"obj-u9-thousands": 9,
+"obj-u9-odindva": 9,
+"obj-u9-quantity": 9,
+"obj-u9-pattern": 9,
+"obj-u9-book": 9,
+"obj-u10-have": 10,
+"obj-u10-absence": 10,
+"obj-u10-pronoun": 10,
+"obj-u10-preposition": 10,
+"obj-u10-adjective": 10,
+"obj-u10-animate": 10,
+"obj-u10-book": 10,
+"obj-u11-past-read": 11,
+"obj-u11-past-be": 11,
+"obj-u11-past-aspect": 11,
+"obj-u11-reflexive": 11,
+"obj-u11-book": 11,
+"obj-u12-future-imp": 12,
+"obj-u12-future-perf": 12,
+"obj-u12-aspect": 12,
+"obj-u12-dative": 12,
+"obj-u12-spelling": 12,
+"obj-u12-prep-plural": 12,
+"obj-u12-book": 12,
+"obj-u13-past-aspect": 13,
+"obj-u13-tense-keep": 13,
+"obj-u13-infinitive": 13,
+"obj-u13-reported": 13,
+"obj-u13-book": 13,
+"obj-u14-future-aspect": 14,
+"obj-u14-future-person": 14,
+"obj-u14-impersonal": 14,
+"obj-u14-book": 14,
+"obj-u15-imperative": 15,
+"obj-u15-say-request": 15,
+"obj-u15-aspect-consolidate": 15,
+"obj-u15-book": 15,
+"obj-u16-inst-sg": 16,
+"obj-u16-inst-pl": 16,
+"obj-u16-inst-adj": 16,
+"obj-u16-inst-means": 16,
+"obj-u16-inst-prep": 16,
+"obj-u16-complements": 16,
+"obj-u16-book": 16,
+"obj-u17-ordinals": 17,
+"obj-u17-hours": 17,
+"obj-u17-years": 17,
+"obj-u17-minutes": 17,
+"obj-u17-age": 17,
+"obj-u17-weekdays": 17,
+"obj-u17-months": 17,
+"obj-u17-clock": 17,
+"obj-u17-clock-answers": 17,
+"obj-u17-quarter-hour": 17,
+"obj-u17-clock-productive": 17,
+"obj-u17-calendar-date": 17,
+"obj-u17-book": 17,
+"obj-u17-clock-vocabulary": 17,
+"obj-u18-comparison": 18,
+"obj-u18-relative": 18,
+"obj-u18-book": 18,
+"obj-u19-prefix-caution": 19,
+"obj-u19-conditional": 19,
+"obj-u19-obligation": 19,
+"obj-u19-probability": 19,
+"obj-u19-book": 19,
+"obj-u20-motion": 20,
+"obj-u20-book": 20,
+"obj-u21-svoy": 21,
+"obj-u21-object-reference": 21,
+"obj-u21-purpose": 21,
+"obj-u21-book": 21,
+"obj-u22-noun-forms": 22,
+"obj-u22-compounds": 22,
+"obj-u22-declension": 22,
+"obj-u22-both-forms": 22,
+"obj-u22-half-forms": 22,
+"obj-u22-collective": 22,
+"obj-u22-book": 22,
+"obj-u23-ranges": 23,
+"obj-u23-beginning": 23,
+"obj-u23-during-event": 23,
+"obj-u23-duration": 23,
+"obj-u23-elapsed": 23,
+"obj-u23-book": 23,
+"obj-u23-completion": 23,
+"obj-u24-verbal-ne": 24,
+"obj-u24-absence": 24,
+"obj-u24-alternation": 24,
+"obj-u24-stand-ins": 24,
+"obj-u24-concord": 24,
+"obj-u24-word-order-contrast": 24,
+"obj-u24-placement": 24,
+"obj-u24-book": 24,
+"obj-u24-persuasion-reference": 24,
+"obj-u25-name-structure": 25,
+"obj-u25-diminutives": 25,
+"obj-u25-courtesy": 25,
+"obj-u25-name-question": 25,
+"obj-u25-nickname-rule": 25,
+"obj-u25-address": 25,
+"obj-u25-documented-name-form": 25,
+"obj-u25-book": 25,
+"obj-u26-word-order": 26,
+"obj-u26-vy-capital": 26,
+"obj-u26-address-notation": 26,
+"obj-u26-indefinite": 26,
+"obj-u26-letter-writing": 26,
+"obj-u26-correspondence": 26,
+"obj-u26-book": 26,
+"obj-u26-postal-address": 26,
+"obj-u27-passive": 27,
+"obj-u27-present-passive": 27,
+"obj-u27-book": 27,
+"obj-u27-comprehension": 27,
+"obj-u27-stress-reference": 27,
+"obj-u27-stress": 27,
+"obj-u28-imperfective-adverb": 28,
+"obj-u28-perfective-adverb": 28,
+"obj-u28-readings": 28,
+"obj-u28-book": 28,
+"obj-u29-active": 29,
+"obj-u29-short-adjective": 29,
+"obj-u29-bookish-note": 29,
+"obj-u29-punctuation": 29,
+"obj-u29-book": 29,
+"obj-u29-register": 29,
+"obj-u29-reading": 29,
+"obj-u29-adjective-vocabulary": 29,
+"obj-u29-punctuation-reference": 29,
+"obj-u30-letter-names": 30,
+"obj-u30-abbrev-examples": 30,
+"obj-u30-address-marks": 30,
+"obj-u30-abbreviation": 30,
+"obj-u30-particle": 30,
+"obj-u30-capstone": 30,
+"obj-u30-book": 30,
+"obj-u30-dictionary": 30,
+"obj-u30-reference-literacy": 30
+}
+}

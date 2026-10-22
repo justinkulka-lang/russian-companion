@@ -1,0 +1,239 @@
+{
+ "schema": "independent-recheck-runtime-validation-1",
+ "reviewer": "Claude Code session (configured model claude-opus-5-5)",
+ "date": "2026-10-22",
+ "targetCommit": "8606c4d74185f594d93941bef6858b2af28e0b75",
+ "deliveryCommit": "ae1105fbc78f6b5fbb2dbdce9058b08c5a44792e",
+ "scopesSummed": false,
+ "combinedAllPassClaim": false,
+ "scopes": {
+  "broad_e5b5d3c0": {
+   "archiveSha256": "d4dda1d661c06906305c49b3c756c1a0cbf3a6673ccefccbe677a5b3ba279862",
+   "archiveShaMatchesIndex": true,
+   "zipTest": null,
+   "indexMembers": 290,
+   "zipEntries": 290,
+   "memberMismatches": [],
+   "sourceCommit": "e5b5d3c08689cc04eadcb4c2edd155940dee7bf7",
+   "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle -I /workspace/artifacts/post-recording-guard-host-regression-2026-10-22/resources.gradle -Daudit.events.path=/workspace/artifacts/post-recording-guard-host-regression-2026-10-22/REGRESSION/EVENTS.jsonl -Daudit.gc.dir=/workspace/artifacts/post-recording-guard-host-regression-2026-10-22/REGRESSION testDebugUnitTest --rerun compileDebugSources lintDebug verifyReleaseGateAttachment --continue --offline --max-workers=2 --console=plain",
+   "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+   },
+   "selectors": [],
+   "runExit": "1",
+   "xmlClasses": 221,
+   "xmlCounts": {
+    "tests": 1334,
+    "passed": 1324,
+    "failed": 9,
+    "skipped": 1
+   },
+   "xmlFailures": [
+    "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest#physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease",
+    "dev.russiancompanion.release.ReleaseSourceDigestTest#committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+    "dev.russiancompanion.v2.BatchECapabilityResearchTest#digestsGovernanceAndLaterUnitsStayUnchanged",
+    "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest#committedReportsMatchTheGeneratorAndStayByteIdentical",
+    "dev.russiancompanion.v2.audit.GapClosureDossierTest#dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+    "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest#preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+    "dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest#reportMatrixMatchesTheLiveCurriculum",
+    "dev.russiancompanion.v2.review.Unit1ReviewPackageTest#committedPackageMatchesTheCurriculumTraversal",
+    "dev.russiancompanion.v2.review.UnitReviewPipelineTest#committedUnitPackagesMatchTheGenerator"
+   ],
+   "xmlSkipped": [
+    "dev.russiancompanion.acceptance.AcceptanceBoundaryTest#at020_physicalRebootPersistsGovernedRecords"
+   ],
+   "resultJsonKeys": [
+    "sourceCommit",
+    "inputTrees",
+    "syntheticDryRun",
+    "exitCode",
+    "finishedUtc",
+    "testCounts",
+    "classes",
+    "tests",
+    "suites",
+    "tasks",
+    "lintIssuesBySeverity",
+    "selectedFreshXmlAndEventsMatch",
+    "eventOutcomeCountsMatchXml",
+    "discoveryComparison",
+    "allFreshDiscoveredDebugHostMethodsReported",
+    "completeSuite",
+    "scopesNotSummed",
+    "physicalAcceptance",
+    "apkAssemblyInstallSigning"
+   ],
+   "resultsCsvRows": 1334,
+   "resultsCsvCols": [
+    "testClass",
+    "method",
+    "outcome",
+    "seconds",
+    "messagePreview",
+    "fullMessageBytes",
+    "fullMessageSha256"
+   ],
+   "archive": "audit/gpt61-sol-high-comprehensive-2026-10-19/post-recording-guard-host-regression-2026-10-22/RAW_REGRESSION.zip",
+   "tasks": {
+    "compileDebugKotlin": "UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "UP-TO-DATE",
+    "compileDebugSources": "UP-TO-DATE",
+    "testDebugUnitTest": "FAILED (9 test failures, --rerun)",
+    "lintAnalyzeDebug": "UP-TO-DATE",
+    "lintDebug": "executed",
+    "verifyReleaseGateAttachment": "executed"
+   },
+   "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1,
+    "warningIds": {
+     "PluralsCandidate": 10,
+     "UnusedResources": 7,
+     "ModifierParameter": 2,
+     "DataExtractionRules": 1
+    },
+    "hintIds": {
+     "AutoboxingStateCreation": 1
+    }
+   },
+   "freshness": "RESULT.json flags selectedFreshXmlAndEventsMatch=true, eventOutcomeCountsMatchXml=true; discovery exactSameMethodSet=true",
+   "skippedMethod": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest#at020_physicalRebootPersistsGovernedRecords (physical; not device evidence)"
+  },
+  "followup_20c5eb96": {
+   "archiveSha256": "e8d9fbdcb28f5c0cc91cd9ceedab9809a9547b0f24b7eaea9f8444c4ac202d14",
+   "archiveShaMatchesIndex": true,
+   "zipTest": null,
+   "indexMembers": 22,
+   "zipEntries": 22,
+   "memberMismatches": [],
+   "sourceCommit": "20c5eb96ef553ba65a937a4df7fa2bdc4b43710a",
+   "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle -I /workspace/artifacts/source-binding-reconciliation-2026-10-22/resources.gradle -Daudit.events.path=/workspace/artifacts/source-binding-reconciliation-2026-10-22/REGRESSION/EVENTS.jsonl -Daudit.gc.dir=/workspace/artifacts/source-binding-reconciliation-2026-10-22/REGRESSION testDebugUnitTest --rerun --tests dev.russiancompanion.acceptance.DeviceAcceptancePackageTest --tests dev.russiancompanion.release.ReleaseSourceDigestTest --tests dev.russiancompanion.v2.BatchECapabilityResearchTest --tests dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest --tests dev.russiancompanion.v2.audit.GapClosureDossierTest --tests dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest --tests dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest --tests dev.russiancompanion.v2.review.Unit1ReviewPackageTest --tests dev.russiancompanion.v2.review.UnitReviewPipelineTest compileDebugSources lintDebug verifyReleaseGateAttachment --continue --offline --max-workers=2 --console=plain",
+   "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+   },
+   "selectors": [
+    "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest",
+    "dev.russiancompanion.release.ReleaseSourceDigestTest",
+    "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+    "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+    "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+    "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+    "dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest",
+    "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+    "dev.russiancompanion.v2.review.UnitReviewPipelineTest"
+   ],
+   "runExit": "0",
+   "xmlClasses": 9,
+   "xmlCounts": {
+    "tests": 56,
+    "passed": 56
+   },
+   "xmlFailures": [],
+   "xmlSkipped": [],
+   "resultJsonKeys": [
+    "sourceCommit",
+    "inputTrees",
+    "syntheticDryRun",
+    "exitCode",
+    "finishedUtc",
+    "testCounts",
+    "classes",
+    "tests",
+    "suites",
+    "tasks",
+    "lintIssuesBySeverity",
+    "selectedFreshXmlAndEventsMatch",
+    "eventOutcomeCountsMatchXml",
+    "discoveryComparison",
+    "allFreshSelectedMethodsReported",
+    "completeSuite",
+    "scopesNotSummed",
+    "physicalAcceptance",
+    "apkAssemblyInstallSigning"
+   ],
+   "resultsCsvRows": 56,
+   "resultsCsvCols": [
+    "testClass",
+    "method",
+    "outcome",
+    "seconds",
+    "messagePreview",
+    "fullMessageBytes",
+    "fullMessageSha256"
+   ],
+   "archive": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-source-binding-reconciliation-2026-10-22/RAW_REGRESSION.zip",
+   "tasks": {
+    "compile*": "UP-TO-DATE",
+    "testDebugUnitTest": "executed (selectors)",
+    "lintDebug": "executed",
+    "verifyReleaseGateAttachment": "executed",
+    "build": "BUILD SUCCESSFUL in 9m 5s"
+   },
+   "lint": "identical LINT.xml sha256 76239d74... to broad scope",
+   "methodSetVsBroad": "exactly the 56 broad-scope methods of the 9 classes (47 PASSED + 9 FAILED in broad)"
+  }
+ },
+ "treeIdentity": {
+  "app": {
+   "e5b5d3c0": "c83cbcc47a8c88976469b6a542347fe6bfd40af5",
+   "20c5eb96": "c83cbcc47a8c88976469b6a542347fe6bfd40af5",
+   "8606c4d7": "c83cbcc47a8c88976469b6a542347fe6bfd40af5"
+  },
+  "review": {
+   "e5b5d3c0": "366549a8a89d34b33ff9568247d7a4ff5ef676d6",
+   "20c5eb96": "88afd115e13f41a7a5ebeca6021fb8874164818e",
+   "8606c4d7": "88afd115e13f41a7a5ebeca6021fb8874164818e"
+  },
+  "release": {
+   "e5b5d3c0": "9436916a11c4f6de63acf0e23edae91ae29bad26",
+   "20c5eb96": "13f7017696fdfd04d37be121651809cdbeecd607",
+   "8606c4d7": "13f7017696fdfd04d37be121651809cdbeecd607"
+  },
+  "catalog_docs": "identical at all three",
+  "commits_20c5eb96_to_target": 1,
+  "nonAuditFilesChanged_20c5eb96_to_target": [
+   "AGENTS.md"
+  ]
+ },
+ "atTargetInterpretation": "56 methods (9 classes) evidenced PASS at a commit whose app/review/release/catalog/docs trees equal the target. The other 1277 PASSED and 1 SKIPPED methods are evidenced only at e5b5d3c0, whose review/ and release/ trees differ (92 non-audit files). No fresh complete-suite result exists at the target.",
+ "hostMethodEvidenceIndex": {
+  "rows": 1334,
+  "broadOutcomesMatchRaw": "1334/1334",
+  "followupOutcomesMatchRaw": "56/56 (1278 NOT_SELECTED)",
+  "targetFileSha256Match": "219/219 files",
+  "declarationLinesContainMethod": "1334/1334",
+  "independentScenarioReview": "UNINSPECTED for all rows; test bodies not semantically reviewed (except backup boundary tests)"
+ },
+ "nineFailureRecheck": "NINE_FAILURE_METHOD_RECHECK.json: 9 FAILED->PASSED with test bytes unchanged; consistent with raw data; does not close findings",
+ "excludedExporters": {
+  "VisualReviewCaptureTest": 2,
+  "Units35ChunkCaptureTest": 2,
+  "Units610ChunkCaptureTest": 10,
+  "Units1115GapCaptureTest": 2,
+  "methods": 16,
+  "run": false
+ },
+ "independentExecution": {
+  "status": "UNAVAILABLE",
+  "reason": "dl.google.com CONNECT 403 under the session network policy (re-tested 2026-10-22); no ANDROID_HOME/SDK; Gradle/Robolectric cannot run; no emulator or device",
+  "ciEvidence": "GitHub Actions runs on 8606c4d7 and ae1105fb concluded failure in 3-4 s with no runner assigned and no logs (HTTP 404); no CI execution evidence"
+ },
+ "apk": {
+  "assembled": false,
+  "installed": false,
+  "signed": false,
+  "hash": null,
+  "configuredIdentity": "dev.russiancompanion / 2.0.0-dev / versionCode 5 (configuration only)"
+ },
+ "selectorDiscrepancy": "Requests 22 and 60 name *HostActivityLifecycleTest; no such class (file declares LearnerReloadRecoveryTest and HostActivityRecreationTest) - CC046",
+ "separateEarlierScopes": "ff2a5f55 1323-method selected result, 34/3/37 focused scopes, main ff539220 562 pass/1 skip and 420f41ff 691 annotations were NOT re-validated in this session and remain separate",
+ "physicalAcceptance": "OUTSTANDING_LAST"
+}

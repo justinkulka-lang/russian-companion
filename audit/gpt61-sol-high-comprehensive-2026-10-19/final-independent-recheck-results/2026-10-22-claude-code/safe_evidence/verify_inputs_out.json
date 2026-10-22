@@ -1,0 +1,15 @@
+{
+  "targetCommit": "8606c4d74185f594d93941bef6858b2af28e0b75",
+  "trackedFiles": 8596,
+  "rawDictionaryObjects": 22784,
+  "hostIdentityRows": 1334,
+  "separateFollowupIdentities": 56,
+  "exactGitInventoryAndAllRawSpansVerified": true,
+  "manifestAndReusedInputHashesVerified": true,
+  "separateScopeColumnsVerified": true,
+  "noCombinedSuiteResult": true,
+  "semanticInspection": false,
+  "allIndependentStatuses": "UNINSPECTED",
+  "independentAuditExecuted": false,
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

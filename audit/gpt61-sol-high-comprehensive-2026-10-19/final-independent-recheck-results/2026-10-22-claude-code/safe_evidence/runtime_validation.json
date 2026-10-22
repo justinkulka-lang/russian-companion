@@ -1,0 +1,138 @@
+{
+ "broad_e5b5d3c0": {
+  "archiveSha256": "d4dda1d661c06906305c49b3c756c1a0cbf3a6673ccefccbe677a5b3ba279862",
+  "archiveShaMatchesIndex": true,
+  "zipTest": null,
+  "indexMembers": 290,
+  "zipEntries": 290,
+  "memberMismatches": [],
+  "sourceCommit": "e5b5d3c08689cc04eadcb4c2edd155940dee7bf7",
+  "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle -I /workspace/artifacts/post-recording-guard-host-regression-2026-10-22/resources.gradle -Daudit.events.path=/workspace/artifacts/post-recording-guard-host-regression-2026-10-22/REGRESSION/EVENTS.jsonl -Daudit.gc.dir=/workspace/artifacts/post-recording-guard-host-regression-2026-10-22/REGRESSION testDebugUnitTest --rerun compileDebugSources lintDebug verifyReleaseGateAttachment --continue --offline --max-workers=2 --console=plain",
+  "exclusions": {
+   "VisualReviewCaptureTest": 2,
+   "Units35ChunkCaptureTest": 2,
+   "Units610ChunkCaptureTest": 10,
+   "Units1115GapCaptureTest": 2
+  },
+  "selectors": [],
+  "runExit": "1",
+  "xmlClasses": 221,
+  "xmlCounts": {
+   "tests": 1334,
+   "passed": 1324,
+   "failed": 9,
+   "skipped": 1
+  },
+  "xmlFailures": [
+   "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest#physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease",
+   "dev.russiancompanion.release.ReleaseSourceDigestTest#committedCandidateRecordsTheCurrentSourceDigestAndIdentity",
+   "dev.russiancompanion.v2.BatchECapabilityResearchTest#digestsGovernanceAndLaterUnitsStayUnchanged",
+   "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest#committedReportsMatchTheGeneratorAndStayByteIdentical",
+   "dev.russiancompanion.v2.audit.GapClosureDossierTest#dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+   "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest#preparationManifestBindsFactsAndDoesNotPassAFinalAudit",
+   "dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest#reportMatrixMatchesTheLiveCurriculum",
+   "dev.russiancompanion.v2.review.Unit1ReviewPackageTest#committedPackageMatchesTheCurriculumTraversal",
+   "dev.russiancompanion.v2.review.UnitReviewPipelineTest#committedUnitPackagesMatchTheGenerator"
+  ],
+  "xmlSkipped": [
+   "dev.russiancompanion.acceptance.AcceptanceBoundaryTest#at020_physicalRebootPersistsGovernedRecords"
+  ],
+  "resultJsonKeys": [
+   "sourceCommit",
+   "inputTrees",
+   "syntheticDryRun",
+   "exitCode",
+   "finishedUtc",
+   "testCounts",
+   "classes",
+   "tests",
+   "suites",
+   "tasks",
+   "lintIssuesBySeverity",
+   "selectedFreshXmlAndEventsMatch",
+   "eventOutcomeCountsMatchXml",
+   "discoveryComparison",
+   "allFreshDiscoveredDebugHostMethodsReported",
+   "completeSuite",
+   "scopesNotSummed",
+   "physicalAcceptance",
+   "apkAssemblyInstallSigning"
+  ],
+  "resultsCsvRows": 1334,
+  "resultsCsvCols": [
+   "testClass",
+   "method",
+   "outcome",
+   "seconds",
+   "messagePreview",
+   "fullMessageBytes",
+   "fullMessageSha256"
+  ]
+ },
+ "followup_20c5eb96": {
+  "archiveSha256": "e8d9fbdcb28f5c0cc91cd9ceedab9809a9547b0f24b7eaea9f8444c4ac202d14",
+  "archiveShaMatchesIndex": true,
+  "zipTest": null,
+  "indexMembers": 22,
+  "zipEntries": 22,
+  "memberMismatches": [],
+  "sourceCommit": "20c5eb96ef553ba65a937a4df7fa2bdc4b43710a",
+  "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle -I /workspace/artifacts/source-binding-reconciliation-2026-10-22/resources.gradle -Daudit.events.path=/workspace/artifacts/source-binding-reconciliation-2026-10-22/REGRESSION/EVENTS.jsonl -Daudit.gc.dir=/workspace/artifacts/source-binding-reconciliation-2026-10-22/REGRESSION testDebugUnitTest --rerun --tests dev.russiancompanion.acceptance.DeviceAcceptancePackageTest --tests dev.russiancompanion.release.ReleaseSourceDigestTest --tests dev.russiancompanion.v2.BatchECapabilityResearchTest --tests dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest --tests dev.russiancompanion.v2.audit.GapClosureDossierTest --tests dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest --tests dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest --tests dev.russiancompanion.v2.review.Unit1ReviewPackageTest --tests dev.russiancompanion.v2.review.UnitReviewPipelineTest compileDebugSources lintDebug verifyReleaseGateAttachment --continue --offline --max-workers=2 --console=plain",
+  "exclusions": {
+   "VisualReviewCaptureTest": 2,
+   "Units35ChunkCaptureTest": 2,
+   "Units610ChunkCaptureTest": 10,
+   "Units1115GapCaptureTest": 2
+  },
+  "selectors": [
+   "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest",
+   "dev.russiancompanion.release.ReleaseSourceDigestTest",
+   "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+   "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+   "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+   "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+   "dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest",
+   "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+   "dev.russiancompanion.v2.review.UnitReviewPipelineTest"
+  ],
+  "runExit": "0",
+  "xmlClasses": 9,
+  "xmlCounts": {
+   "tests": 56,
+   "passed": 56
+  },
+  "xmlFailures": [],
+  "xmlSkipped": [],
+  "resultJsonKeys": [
+   "sourceCommit",
+   "inputTrees",
+   "syntheticDryRun",
+   "exitCode",
+   "finishedUtc",
+   "testCounts",
+   "classes",
+   "tests",
+   "suites",
+   "tasks",
+   "lintIssuesBySeverity",
+   "selectedFreshXmlAndEventsMatch",
+   "eventOutcomeCountsMatchXml",
+   "discoveryComparison",
+   "allFreshSelectedMethodsReported",
+   "completeSuite",
+   "scopesNotSummed",
+   "physicalAcceptance",
+   "apkAssemblyInstallSigning"
+  ],
+  "resultsCsvRows": 56,
+  "resultsCsvCols": [
+   "testClass",
+   "method",
+   "outcome",
+   "seconds",
+   "messagePreview",
+   "fullMessageBytes",
+   "fullMessageSha256"
+  ]
+ }
+}
