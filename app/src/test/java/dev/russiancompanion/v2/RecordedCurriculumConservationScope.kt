@@ -23,6 +23,17 @@ internal object RecordedCurriculumConservationScope {
     fun source(root: File, commit: String): V2CurriculumPack =
         sources.getOrPut(root.canonicalPath + ":" + commit) { RecordedIntakeCorrectionScope.load(root, commit) }
 
+    /** Historical Unit5 activation assertions apply before this exact declaration-only transition. */
+    fun beforeUnit5GrammarReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
+        assertCurrent(root, current)
+        val prior = current.copy(units = current.units.map { unit ->
+            if (unit.number == 5) unit.copy(advancement = unit.advancement!!.copy(
+                cumulativeReviewPolicyId = Unit5CumulativeReviewPolicy.definition.id)) else unit
+        })
+        assertEquals("Only the Unit5 policy declaration may differ from the preceding asset", source(root, currentSource), prior)
+        return prior
+    }
+
     fun assertCurrent(root: File, current: V2CurriculumPack) {
         V2PackIdentityIndex.warm(current)
         assertEquals("Current pack must match its last actual asset implementation", source(root, currentPackImplementation), current)

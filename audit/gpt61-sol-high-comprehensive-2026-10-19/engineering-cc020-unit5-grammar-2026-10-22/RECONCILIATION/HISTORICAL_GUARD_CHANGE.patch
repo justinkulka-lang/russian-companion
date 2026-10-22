@@ -1,0 +1,37 @@
+diff --git a/app/src/test/java/dev/russiancompanion/v2/RecordedCurriculumConservationScope.kt b/app/src/test/java/dev/russiancompanion/v2/RecordedCurriculumConservationScope.kt
+index f6657d5d..4100526f 100644
+--- a/app/src/test/java/dev/russiancompanion/v2/RecordedCurriculumConservationScope.kt
++++ b/app/src/test/java/dev/russiancompanion/v2/RecordedCurriculumConservationScope.kt
+@@ -25,0 +26,11 @@ internal object RecordedCurriculumConservationScope {
++    /** Historical Unit5 activation assertions apply before this exact declaration-only transition. */
++    fun beforeUnit5GrammarReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
++        assertCurrent(root, current)
++        val prior = current.copy(units = current.units.map { unit ->
++            if (unit.number == 5) unit.copy(advancement = unit.advancement!!.copy(
++                cumulativeReviewPolicyId = Unit5CumulativeReviewPolicy.definition.id)) else unit
++        })
++        assertEquals("Only the Unit5 policy declaration may differ from the preceding asset", source(root, currentSource), prior)
++        return prior
++    }
++
+diff --git a/app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt b/app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt
+index 089372fe..ac50bcc0 100644
+--- a/app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt
++++ b/app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt
+@@ -34 +34,3 @@ class OwnerGovernanceDecisionTest {
+-        val currentSource = RecordedIntakeCorrectionScope.load(root(), "b7e53230e2119b1e57d781b1e1b955f074a38601")
++        // Exact current implementation plus a declaration-only proof against the preceding whole pack.
++        dev.russiancompanion.v2.RecordedCurriculumConservationScope.beforeUnit5GrammarReview(root(), pack)
++        val currentSource = RecordedIntakeCorrectionScope.load(root(), "2fb455d4cf0b69808d431a2b9db3583b4d4b0dcb")
+diff --git a/app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt b/app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt
+index cc5832b2..e076485e 100644
+--- a/app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt
++++ b/app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt
+@@ -246,0 +247,5 @@ class UnitReviewPipelineTest {
++        val currentPack = pack
++        run {
++            // Preserve the original activation assertions in their historical declaration scope.
++            // The helper also binds the current pack to its real asset commit and permits only the policy-ID change.
++            val pack = dev.russiancompanion.v2.RecordedCurriculumConservationScope.beforeUnit5GrammarReview(repo(), currentPack)
+@@ -248,0 +254 @@ class UnitReviewPipelineTest {
++        }

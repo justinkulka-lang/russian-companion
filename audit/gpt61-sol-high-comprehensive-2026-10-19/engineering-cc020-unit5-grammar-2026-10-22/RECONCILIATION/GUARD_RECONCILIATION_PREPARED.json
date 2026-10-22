@@ -1,0 +1,51 @@
+{
+  "sourceWithFailures": "e43a8e52d8a4008c0963b5e14fbbb6c228b84cfc",
+  "counts": {
+    "reported": 144,
+    "passed": 142,
+    "failed": 2,
+    "errors": 0,
+    "skipped": 0
+  },
+  "failedMethods": [
+    {
+      "testClass": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "method": "unresolvedSourceCapabilitiesStayEmptyAndVarianceUnitsStayUnprepared",
+      "outcome": "FAILED",
+      "seconds": "4.01",
+      "messagePreview": "java.lang.AssertionError: expected:<V2CurriculumPack(schemaVersion=1, packId=v2-curriculum-foundation, packVersion=3, publicReleaseEligible=false, linguisticReview=V2ReviewRecord(id=rev-pending-v2-curriculum, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=Pack-level status is not a unit approval. Each unit has its own pending review record., reviewChainStages=[], evidence=null, finalAudit=null), unitReviews=[V2UnitReviewRecord(id=rev-pending-unit-1, unitNumber=1, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=No qualified reviewer has signed Unit 1., reviewChainStages=[], evidence=null, finalAudit=null), V2UnitReviewRecord(id=rev-pending-unit-2, unitNumber=2, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, rev",
+      "fullMessageBytes": 62178545,
+      "fullMessageSha256": "3ece20e1cafdbd364ed63d07310e3ddef5af321abf45feb2ed80b1af0fa3cab0"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "method": "mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields",
+      "outcome": "FAILED",
+      "seconds": "2.104",
+      "messagePreview": "java.lang.AssertionError: expected:<V2Unit(number=5, id=unit-5, title=Questions, prepositional case, and indeclinable nouns, shortLabel=Questions, topicSummary=Proposed Unit 5 is a development unit awaiting qualified review. It contains admitted question, prepositional, and indeclinable records, plus separate book self-attestation. Question intonation is not taught. It is not installed and the owned-edition mapping is not signed., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=5, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed Lesson 5 mapping remains pending. The structural edition facts are unchanged. This proposed curriculum is not an approved alignment., prerequisiteUnitNumbers=[4], estimatedMinutes=54, objectives=[V2Objective(id=obj-u5-questions, unitNumber=5, title=Recognize admitted question words and written questions, kind=RECOGNITION, instructionStepIds=[u5-st-orient, u5-st-teach-questions-1, u5-st-teach-questions-2, u5-st-t",
+      "fullMessageBytes": 45285,
+      "fullMessageSha256": "ceae60339c7eee658e793f8eda364f20c4cce783a10b3281b588432c73a03192"
+    }
+  ],
+  "reason": "Two pre-policy current-pack/unit5 activation equality assumptions. Retain every original assertion; actual current source2fb plus reconstructed pre-policy pack must exactly equal original b7 source. Original activation assertions run in an explicit historical declaration scope.",
+  "files": {
+    "app/src/test/java/dev/russiancompanion/v2/RecordedCurriculumConservationScope.kt": {
+      "allOriginalAssertionLinesRetained": true,
+      "oldSha256": "d451a820ba06e8a6fa09c94d2527406b464e152079cb1cb3e24df910dfba141e",
+      "newSha256": "64230adced4466d1df3a78fcd5e7f69bc9217d2f4a5d735aba597dd0f49b2b7d"
+    },
+    "app/src/test/java/dev/russiancompanion/v2/audit/OwnerGovernanceDecisionTest.kt": {
+      "allOriginalAssertionLinesRetained": true,
+      "oldSha256": "de40be2f7123fe6c54f0417b01cf1fe83af8c99796f01ca4baf85607756c6420",
+      "newSha256": "40561c8ddd9d2bae11cf684b6855a19dbc1914d185193a472c2113e58ead5bc2"
+    },
+    "app/src/test/java/dev/russiancompanion/v2/review/UnitReviewPipelineTest.kt": {
+      "allOriginalAssertionLinesRetained": true,
+      "oldSha256": "138bd9fb022eda57069eaaf943d6b3d9c198e667ca9a594d1e8104175dc6d365",
+      "newSha256": "27c463a0301121e10e1b00321659a1a1c2319196800021c8a002d35843a0ecfc"
+    }
+  },
+  "appChanges": false,
+  "generatedBindingChanges": false,
+  "plannedFollowup": "14 methods, two full classes; NOT_EXECUTED"
+}
