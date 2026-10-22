@@ -4,6 +4,8 @@ import dev.russiancompanion.v2.curriculum.cumulativeReviewPolicy
 import dev.russiancompanion.v2.curriculum.cumulativeReviewTitle
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.selection.selectable
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -206,14 +208,10 @@ private fun CompanionToggle(label: String, selected: Boolean, onChange: (Boolean
         modifier = Modifier
             .fillMaxWidth()
             .heightIn(min = 48.dp)
-            .semantics {
-                role = Role.Checkbox
-                this.selected = selected
-                stateDescription = if (selected) "Selected" else "Not selected"
-            },
+            .toggleable(value = selected, role = Role.Checkbox, onValueChange = onChange),
         verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
     ) {
-        androidx.compose.material3.Checkbox(checked = selected, onCheckedChange = onChange)
+        androidx.compose.material3.Checkbox(checked = selected, onCheckedChange = null)
         Text(label)
     }
 }
@@ -229,14 +227,11 @@ private fun StartingChoice(value: V2StartingPoint, selected: V2StartingPoint, on
         modifier = Modifier
             .fillMaxWidth()
             .heightIn(min = 48.dp)
-            .semantics {
-                role = Role.RadioButton
-                this.selected = value == selected
-                stateDescription = if (value == selected) "Selected" else "Not selected"
-            },
+            .selectable(selected = value == selected, role = Role.RadioButton,
+                onClick = { if (value != selected) onSelect(value) }),
         verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
     ) {
-        RadioButton(selected = value == selected, onClick = { onSelect(value) })
+        RadioButton(selected = value == selected, onClick = null)
         Text(label)
     }
 }
@@ -587,20 +582,16 @@ internal fun V2SessionScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .heightIn(min = 48.dp)
-                        .semantics {
-                            role = Role.RadioButton
-                            this.selected = selected == option
-                        },
+                        .selectable(selected = selected == option, enabled = !locked,
+                            role = Role.RadioButton,
+                            onClick = { if (selected != option) onAttempt(item.id, option, step.id) })
+                        .semantics { testTag = "v2-option-${item.id}-$option" },
                     verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
                 ) {
                     RadioButton(
                         selected = selected == option,
                         enabled = !locked,
-                        onClick = {
-                            if (selected == option) return@RadioButton
-                            onAttempt(item.id, option, step.id)
-                        },
-                        modifier = Modifier.semantics { testTag = "v2-option-${item.id}-$option" },
+                        onClick = null,
                     )
                     Text(option)
                 }

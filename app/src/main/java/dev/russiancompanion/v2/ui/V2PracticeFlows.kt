@@ -1,6 +1,7 @@
 package dev.russiancompanion.v2.ui
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -159,17 +160,16 @@ internal fun V2LabScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .heightIn(min = 48.dp)
-                    .semantics {
-                        role = Role.RadioButton
-                        this.selected = (chosen ?: recorded?.selected) == option
-                    },
+                    .selectable(selected = (chosen ?: recorded?.selected) == option,
+                        enabled = !pending, role = Role.RadioButton,
+                        onClick = { chosen = option })
+                    .semantics { testTag = "v2-lab-option-$option" },
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 RadioButton(
                     selected = (chosen ?: recorded?.selected) == option,
                     enabled = !pending,
-                    onClick = { chosen = option },
-                    modifier = Modifier.semantics { testTag = "v2-lab-option-$option" },
+                    onClick = null,
                 )
                 Text(option)
             }
