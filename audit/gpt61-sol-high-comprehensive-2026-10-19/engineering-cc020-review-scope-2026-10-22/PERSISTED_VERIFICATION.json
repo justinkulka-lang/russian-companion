@@ -1,0 +1,20 @@
+{
+  "status": "CC020_SCOPED_EVIDENCE_VERIFIED_FINDING_OPEN",
+  "source": "b4f409a984b66ebd1e3b9dceee4d47fb7f2a5bae",
+  "policies": 28,
+  "pools": 59,
+  "candidatePlacements": 75,
+  "uniqueCandidates": 44,
+  "executedMethods": 13,
+  "currentPackMethodsPassed": 8,
+  "historicalPackMethodsPassed": 5,
+  "selectedPartialClasses": 6,
+  "exactXmlEventsAndSelectors": true,
+  "priorEvidenceAnd66ArchivesConserved": true,
+  "currentHeadMatchesInputTrees": true,
+  "productionOrPolicyChanges": false,
+  "all28PoliciesExecuted": false,
+  "completeSuite": false,
+  "findingsClosed": 0,
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

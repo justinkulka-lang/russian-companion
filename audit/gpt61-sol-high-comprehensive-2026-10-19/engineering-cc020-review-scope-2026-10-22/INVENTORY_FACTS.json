@@ -1,0 +1,74 @@
+{
+  "sourceCommit": "b4f409a984b66ebd1e3b9dceee4d47fb7f2a5bae",
+  "externalAuditTarget": "8606c4d74185f594d93941bef6858b2af28e0b75",
+  "samePolicyCodeAtAuditTarget": true,
+  "sameRawPackAtAuditTarget": true,
+  "rawCurriculumSha256": "fc2a59cdc61ec82640f29743707b67f04812a372e13fac08987aa16e512df2ca",
+  "policyCount": 28,
+  "pools": 59,
+  "candidatePlacements": 75,
+  "uniqueCandidateItems": 44,
+  "poolCountDistribution": {
+    "2": 25,
+    "3": 3
+  },
+  "assignmentSchemaDistribution": {
+    "2": 1,
+    "1": 23,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1
+  },
+  "widerTargets": [
+    6,
+    9,
+    13
+  ],
+  "historySensitiveTargets": [
+    3,
+    5,
+    6,
+    9,
+    13
+  ],
+  "sharedPrintCaseTargets": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "declaredDistinctSkillDistribution": {
+    "2": 25,
+    "3": 3
+  },
+  "allObjectiveOwnersPrior": true,
+  "allCandidatesBoundToObjectiveChecks": true,
+  "learnerSpecificEligibility": "NOT_ESTABLISHED_BY_EXPORT",
+  "linguisticAcceptance": "NOT_ESTABLISHED",
+  "findingClosed": false
+}

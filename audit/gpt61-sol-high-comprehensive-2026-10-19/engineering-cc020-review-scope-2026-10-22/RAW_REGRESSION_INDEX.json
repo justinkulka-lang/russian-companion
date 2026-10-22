@@ -1,0 +1,70 @@
+{
+  "RUN.log": {
+    "sha256": "01542b7fe4eac7529d63c0da38a34c24755b1ec606e5629df27d03375cc01f3c",
+    "bytes": 4322
+  },
+  "RESULTS.csv": {
+    "sha256": "932d6756a7a84b7aa62f139963e43b482e45303aa6a6b121e44c6232f5c67d90",
+    "bytes": 2858
+  },
+  "RUN.exit": {
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "bytes": 2
+  },
+  "RESULT.json": {
+    "sha256": "8400176343673324bd0d9fec3192e6ff5908cf270e03fcd16012d56751515f1b",
+    "bytes": 8505
+  },
+  "LINT.xml": {
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+    "bytes": 31476
+  },
+  "gc-522991.log": {
+    "sha256": "904028513d9ecc0874c123d9a61875bc92ee9994db8db8be2afee9e06203b55b",
+    "bytes": 36254
+  },
+  "SHA256.json": {
+    "sha256": "9b1635043df2c8a12cd5ce7418c9c8b0ff29ed74e531ff4a9ff61af7daba32a1",
+    "bytes": 1588
+  },
+  "gc-522993.log": {
+    "sha256": "06eb7dc0313bf66bfb9f4d7fcfdc82e63c37666b142b914e208ad50e5a94e182",
+    "bytes": 101615
+  },
+  "EVENTS.jsonl": {
+    "sha256": "4ce09b848004b0fe14e977a2734f19c1565f80c387a7a727ac40a5fe89088b77",
+    "bytes": 8804
+  },
+  "CONTEXT.json": {
+    "sha256": "340b6fbbf3e7bcc9cd21bbfff3ab5fb5f9552513b971e16ce43c3d356cb12d25",
+    "bytes": 6474
+  },
+  "XML/TEST-dev.russiancompanion.v2.Unit13CumulativeReviewTest.xml": {
+    "sha256": "1b7510c8e63b1c0d2a238c06d4803dee558629003ccb00812c354a6cf71e55dd",
+    "bytes": 19446
+  },
+  "XML/TEST-dev.russiancompanion.v2.Unit4CumulativeReviewTest.xml": {
+    "sha256": "0eae6142f2fd689ce01a8326f7520a92b50e1cee7cb4a089f54a725ed9b14095",
+    "bytes": 6946
+  },
+  "XML/TEST-dev.russiancompanion.v2.Unit6CumulativeReviewTest.xml": {
+    "sha256": "b8bbdd6d4af0af1822ed93978b54b688095931c0d1ea52036b4c8440c44ba88f",
+    "bytes": 6947
+  },
+  "XML/TEST-dev.russiancompanion.v2.CumulativeReviewSelectionTest.xml": {
+    "sha256": "c4411f888f4ddceae27490d326656b2aadf6fc3b85497a06795a4331938e39a6",
+    "bytes": 843
+  },
+  "XML/TEST-dev.russiancompanion.v2.Unit9CumulativeReviewTest.xml": {
+    "sha256": "060d153cd43330de51248a780815b64911975c58b5d4081a93cf00b3a5f0c260",
+    "bytes": 946
+  },
+  "XML/TEST-dev.russiancompanion.v2.MultiPoolReviewSelectionTest.xml": {
+    "sha256": "40957d31c57bb87ace77f931ed54d59888bcde8b023038ee668e88750543dda8",
+    "bytes": 706
+  },
+  "LAUNCHER/REGRESSION_LAUNCHER.log": {
+    "sha256": "584281edeb745dfbec054cc012ccdef65fcb642d417d6a47a8a1d60ff0109625",
+    "bytes": 213
+  }
+}
