@@ -1,0 +1,17 @@
+{
+  "discoverySource": "902d857e05d5d033600aa89ff688026e8efa8bf4",
+  "reported": 56,
+  "classes": 9,
+  "syntheticSkips": 56,
+  "runtimePasses": 0,
+  "exactPlannedIdentities": true,
+  "originalBroadSource": "e5b5d3c08689cc04eadcb4c2edd155940dee7bf7",
+  "originalBroadCounts": {
+    "reported": 1334,
+    "passed": 1324,
+    "failed": 9,
+    "errors": 0,
+    "skipped": 1
+  },
+  "originalScopeNotRelabelled": true
+}
