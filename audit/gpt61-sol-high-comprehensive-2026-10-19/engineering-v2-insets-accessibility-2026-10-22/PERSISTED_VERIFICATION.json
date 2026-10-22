@@ -1,0 +1,21 @@
+{
+  "status": "SAVED_HOST_EVIDENCE_VERIFIED",
+  "baselineMethods": 7,
+  "baselineFailed": 7,
+  "correctedMethods": 11,
+  "correctedPassed": 11,
+  "originalArchives": 66,
+  "unchangedRegressionAssertions": true,
+  "currentInputTreesMatchTestedSource": {
+    "app/src/main": true,
+    "app/src/test": true,
+    "catalog": true,
+    "docs": true,
+    "review": true,
+    "release": true
+  },
+  "sourceBindingReconciliation": "PENDING",
+  "completeSuite": false,
+  "findingsClosed": 0,
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

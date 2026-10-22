@@ -1,0 +1,26 @@
+{
+  "CONTEXT.json": {
+    "sha256": "12200f6ef51bf861513caa7ae2f365060f87c0a3d7efd7530339f6ce9af5c515",
+    "bytes": 1673
+  },
+  "EVENTS.jsonl": {
+    "sha256": "266ea2033a56a48175046071d7010982dde44856203faef08d0ffdfd427de80d",
+    "bytes": 6723
+  },
+  "RUN.exit": {
+    "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+    "bytes": 2
+  },
+  "RUN.log": {
+    "sha256": "8d9786735cb8851c1f28c2672b2bf3da36a0f458efb765ac602670d80be9d3ea",
+    "bytes": 9926
+  },
+  "XML/TEST-dev.russiancompanion.v2.V2InsetsAccessibilityTest.xml": {
+    "sha256": "f03aa1667ffd2a394a97a152a083bf59d10a3eb822f417f456c86b670763b097",
+    "bytes": 47515
+  },
+  "gc-515564.log": {
+    "sha256": "02eab6d2a528d740188d5b1e6a85f78ed685b068d7ffcfea102704f130b1b562",
+    "bytes": 3629
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "sourceCommit": "e1871a59d2b0b41d71dfcf0fa11b1903fa84792f",
+  "inputTrees": {
+    "app/src/main": "3a94f58d6927e53bb78e20b99a7e1ea5e9039a4b",
+    "app/src/test": "bd20db34ede7b02f6c3bae82ec77b75099c39f32",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "88afd115e13f41a7a5ebeca6021fb8874164818e",
+    "release": "13f7017696fdfd04d37be121651809cdbeecd607"
+  },
+  "testFileSha256": "7f312714716cf847eb1f67b5418670f698a7cf3b7f37940839acff3663b25128",
+  "activation": "source /workspace/setup/android-env.sh",
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/source-binding-reconciliation-2026-10-22/resources.gradle",
+    "-Daudit.events.path=/workspace/artifacts/v2-insets-accessibility-2026-10-22/BASELINE/EVENTS.jsonl",
+    "-Daudit.gc.dir=/workspace/artifacts/v2-insets-accessibility-2026-10-22/BASELINE",
+    "testDebugUnitTest",
+    "--rerun",
+    "--tests",
+    "dev.russiancompanion.v2.V2InsetsAccessibilityTest",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "expectedMethods": 7,
+  "scope": "Seven unchanged new reproductions; not complete suite",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "workingTreeAtLaunch": "CLEAN",
+  "timingQualification": "Raw XML suite timestamps and START/RESULT event milliseconds retained. Exact shell launch timestamp was not separately recorded. Baseline original context runLogCreatedEpoch is file ctime observed after completion, not launch time.",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+    "/workspace/artifacts/source-binding-reconciliation-2026-10-22/resources.gradle": "b5f28c92fe4ad8a5deef6d19d0dd3acbc4e39e8f5f91f8ee2ee40f0ede0c0b09"
+  },
+  "initScriptHashQualification": "Observed at evidence collection; no edits made to these scripts during either run."
+}
