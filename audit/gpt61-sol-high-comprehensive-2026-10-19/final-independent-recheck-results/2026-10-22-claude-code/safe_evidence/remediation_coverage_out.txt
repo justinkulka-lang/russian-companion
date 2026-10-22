@@ -1,0 +1,84 @@
+1	obj-u1-iotated	u1-i-ё-identity	NEITHER	Ё	Cyrillic Ё
+1	obj-u1-iotated	u1-i-ю-identity	NEITHER	Ю	Cyrillic Ю
+2	obj-u2-review	u2-i-я-identity	NEITHER	Я	Cyrillic Я
+3	obj-u3-phrases	u3-i-phrase-пожалуйста	NEITHER	пожа́луйста	please
+3	obj-u3-phrases	u3-i-phrase-да	NEITHER	да	yes
+3	obj-u3-phrases	u3-i-phrase-это	NEITHER	э́то	this is
+3	obj-u3-naming	u3-i-name-chto-eto	NEITHER	Что это?	What is this?
+3	obj-u3-naming	u3-i-name-kto-eto	NEITHER	Кто это?	Who is this?
+4	obj-u4-pronouns	u4-i-pronoun-ты	NEITHER	ты	you
+4	obj-u4-pronouns	u4-i-pronoun-вы	NEITHER	вы	you (plural)
+4	obj-u4-pronouns	u4-i-pronoun-она	NEITHER	она́	she
+4	obj-u4-pronouns	u4-i-pronoun-они	NEITHER	они́	they
+4	obj-u4-stress	u4-i-stress-2114b12f	NEITHER	писа́ть	2
+5	obj-u5-questions	u5-i-q-kogda	NEITHER	Когда	Когда
+5	obj-u5-questions	u5-i-q-pochemu	NEITHER	Почему	Почему
+5	obj-u5-questions	u5-i-q-kak	NEITHER	Как	Как
+5	obj-u5-questions	u5-i-q-gde	NEITHER	Где	Где
+5	obj-u5-questions	u5-i-pattern-pattern-kto-eto	NEITHER	Кто это?	Who is this?
+5	obj-u5-questions	u5-i-pattern-pattern-kak-dela	NEITHER	Как дела?	How do you do?/How're things?
+5	obj-u5-questions	u5-i-pattern-pattern-gde-zhivete	NEITHER	Где вы живёте?	Where do you live?
+5	obj-u5-prepositional	u5-i-prep-o-sade	NEITHER	О саде	About the garden
+5	obj-u5-prepositional	u5-i-prep-v-moskve	NEITHER	я в Москве	I'm in Moscow
+6	obj-u6-third	u6-i-third-2	NEITHER	third-person plural	их
+6	obj-u6-object	u6-i-object-2	NEITHER	Собаки ненавидят котов.	Коты ненавидят собак.
+6	obj-u6-object	u6-i-object-3	NEITHER	Коты ненавидят собак.	Собаки ненавидят котов.
+6	obj-u6-feminine	u6-i-feminine-1	NEITHER	ма́ма	ма́му
+6	obj-u6-feminine	u6-i-feminine-2	NEITHER	же́нщина	же́нщину
+6	obj-u6-pronoun	u6-i-pronoun-2	NEITHER	Она	Её
+6	obj-u6-pronoun	u6-i-pronoun-3	NEITHER	Они	Их
+6	obj-u6-direction	u6-i-direction-3	NEITHER	Оно на столе	location
+7	obj-u7-default	u7-i-default-2	NEITHER	хоро́шая	хоро́ший
+7	obj-u7-default	u7-i-default-3	NEITHER	си́няя	си́ний
+7	obj-u7-default	u7-i-default-4	NEITHER	кака́я	како́й
+7	obj-u7-adverb-paradigm	u7-i-manner-1	NEITHER	бы́стрый → бы́стро	a documented adjective-to-manner-adverb pair
+7	obj-u7-adverb-paradigm	u7-i-manner-4	NEITHER	си́ний	this unit supplies no documented manner-adverb counterpart
+8	obj-u8-irregular	u8-i-irregular-1	NEITHER	челове́к	лю́ди
+8	obj-u8-irregular	u8-i-irregular-2	NEITHER	друг	друзья́
+8	obj-u8-irregular	u8-i-irregular-3	NEITHER	сы́н	сыновья́
+9	obj-u9-cardinal	u9-i-cardinal-2	NEITHER	5	пять
+9	obj-u9-cardinal	u9-i-cardinal-3	NEITHER	10	де́сять
+9	obj-u9-cardinal	u9-i-cardinal-4	NEITHER	4	четы́ре
+9	obj-u9-teens	u9-i-teens-1	NEITHER	14	четы́рнадцать
+9	obj-u9-teens	u9-i-teens-2	NEITHER	19	девятна́дцать
+9	obj-u9-tens	u9-i-tens-1	NEITHER	50	пятьдеся́т
+9	obj-u9-tens	u9-i-tens-2	NEITHER	90	девяно́сто
+9	obj-u9-tens	u9-i-tens-3	NEITHER	20	два́дцать
+9	obj-u9-hundreds	u9-i-hundreds-1	NEITHER	300	три́ста
+9	obj-u9-hundreds	u9-i-hundreds-2	NEITHER	500	пятьсо́т
+9	obj-u9-hundreds	u9-i-hundreds-3	NEITHER	900	девятьсо́т
+9	obj-u9-thousands	u9-i-thousands-1	NEITHER	101	сто оди́н
+9	obj-u9-thousands	u9-i-thousands-2	NEITHER	215	две́сти пятна́дцать
+9	obj-u9-thousands	u9-i-thousands-3	NEITHER	1,984	ты́сяча девятьсо́т во́семьдесят четы́ре
+9	obj-u9-thousands	u9-i-thousands-4	NEITHER	2,000/3,000/4,000	две/три/четы́ре ты́сячи
+10	obj-u10-pronoun	u10-i-pronoun-1	NEITHER	Мы	Нас
+10	obj-u10-pronoun	u10-i-pronoun-2	NEITHER	Ты	Тебя́
+10	obj-u10-pronoun	u10-i-pronoun-3	NEITHER	Вы	Вас
+10	obj-u10-pronoun	u10-i-pronoun-4	NEITHER	Они	Их
+10	obj-u10-preposition	u10-i-preposition-1	NEITHER	окно́	окна́
+10	obj-u10-adjective	u10-i-adjective-2	NEITHER	но́вый	но́вого
+11	obj-u11-past-read	u11-i-past-read-2	NEITHER	Он чита́л	Она чита́ла
+11	obj-u11-reflexive	u11-i-reflexive-1	NEITHER	Он улыба́лся	Она улыба́лась
+11	obj-u11-reflexive	u11-i-reflexive-2	NEITHER	учи́лся	учи́лась
+12	obj-u12-future-imp	u12-i-future-imp-2	NEITHER	Ты бу́дешь говори́ть	Вы бу́дете говори́ть
+12	obj-u12-dative	u12-i-dative-1	NEITHER	сто́л	столу́
+12	obj-u12-dative	u12-i-dative-2	NEITHER	до́м	до́му
+12	obj-u12-prep-plural	u12-i-prep-plural-1	NEITHER	столы́	стола́х
+12	obj-u12-prep-plural	u12-i-prep-plural-2	NEITHER	дома́	дома́х
+14	obj-u14-future-aspect	u14-i-future-aspect-1	NEITHER	I will work for three hours	Я порабо́таю три ча́са
+14	obj-u14-future-person	u14-i-future-person-1	NEITHER	ска́жет	ска́жут
+15	obj-u15-say-request	u15-i-say-request-1	NEITHER	да́й	да́йте
+29	obj-u29-register	u29-i-register-4	NEITHER	a sentence that is only on paper	appearance in writing is outside this bookish pair
+Counter({'BOTH': 271, 'NEITHER': 71, 'CUE_ONLY': 69, 'KEY_ONLY': 21})
+objectives where remediation contains no check cue/key: 11
+   (5, 'obj-u5-questions') 7
+   (5, 'obj-u5-prepositional') 2
+   (6, 'obj-u6-feminine') 2
+   (8, 'obj-u8-irregular') 3
+   (9, 'obj-u9-tens') 3
+   (9, 'obj-u9-hundreds') 3
+   (9, 'obj-u9-thousands') 4
+   (10, 'obj-u10-pronoun') 4
+   (11, 'obj-u11-reflexive') 2
+   (12, 'obj-u12-dative') 2
+   (12, 'obj-u12-prep-plural') 2

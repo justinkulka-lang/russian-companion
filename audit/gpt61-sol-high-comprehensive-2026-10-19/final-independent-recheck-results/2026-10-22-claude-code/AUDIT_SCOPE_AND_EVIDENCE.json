@@ -1,0 +1,159 @@
+{
+ "outcome": "INCOMPLETE",
+ "auditType": "Independent comprehensive NONPHYSICAL diagnostic recheck; NOT an Amendment 1 FINAL_CURRICULUM_AUDIT_PASSED artifact",
+ "reviewer": {
+  "tool": "Claude Code (cloud session)",
+  "configuredModel": "claude-opus-5-5",
+  "lastServedModel": "claude-opus-5-5 (get_session)",
+  "subagents": 0,
+  "note": "Not the GPT-6.1 Sol/High chat named in the work order"
+ },
+ "pins": {
+  "target": "8606c4d74185f594d93941bef6858b2af28e0b75",
+  "targetTree": "7c36e7e6041e6c6415964c8904f8f4478d23805f",
+  "trackedFiles": 8596,
+  "delivery": "ae1105fbc78f6b5fbb2dbdce9058b08c5a44792e",
+  "deliveryChanges": "15 added + 3 modified (additive pointer text)",
+  "pr64HeadAtFetch": "ae1105fbc78f6b5fbb2dbdce9058b08c5a44792e"
+ },
+ "denominators": {
+  "units": 30,
+  "objectives": 195,
+  "items": 626,
+  "requiredChecks": 429,
+  "examples": 821,
+  "sourceCapabilities": 58,
+  "sources": 37,
+  "rights": 37,
+  "references": 27,
+  "letters": 33,
+  "mappings": 30,
+  "unitReviews": 30,
+  "provenanceRecords": 7036,
+  "authoredEnglishRecords": 1655,
+  "sourceTextPool": 438,
+  "requirements": 195,
+  "originalFindings": 17,
+  "targets": 75,
+  "iaIdentities": 18,
+  "executionRequests": 70,
+  "histories": 64,
+  "archives": 66,
+  "historicalMembers": 167,
+  "sourceBindingIndex": 155,
+  "hostMethodRows": 1334
+ },
+ "coverage": {
+  "curriculumEntityRows": 12553,
+  "entityTypes": {
+   "unit": 30,
+   "objective": 195,
+   "session": 228,
+   "step": 1270,
+   "item": 626,
+   "example": 821,
+   "source": 37,
+   "right": 37,
+   "reference": 27,
+   "letter": 33,
+   "unitReview": 30,
+   "ownedEditionMapping": 30,
+   "sourceCapability": 58,
+   "provenanceRecord": 7036,
+   "authoredEnglishRecord": 1655,
+   "sourceTextPoolEntry": 438,
+   "linguisticReview": 1,
+   "admissions": 1
+  },
+  "itemVerdicts": {
+   "DEFECT": 290,
+   "NO_ITEM_LEVEL_DEFECT_RECORDED": 56,
+   "CONCERN": 280
+  },
+  "repositoryFiles": {
+   "READ_PARTIAL": 20,
+   "NOT_INSPECTED": 8040,
+   "READ_FULL": 13,
+   "MECHANICAL_DIFF": 2,
+   "READ_SEMANTIC_ALL_UNITS + MECHANICAL": 1,
+   "IDENTITY_ONLY_SHA_AND_DECLARATION_LINES": 218,
+   "MECHANICAL_HASH": 154,
+   "MECHANICAL_EXTRACTED_VALIDATED": 4,
+   "MECHANICAL_VERIFIED_ORIGINAL_RETURN": 14,
+   "MECHANICAL_HASH_CRC": 66,
+   "MECHANICAL_STRUCTURAL": 64
+  },
+  "requirements": {
+   "UNMET": 30,
+   "SATISFIED_STATIC_NOT_ACCEPTED": 67,
+   "NOT_VERIFIED_RUNTIME": 22,
+   "PARTIAL": 19,
+   "NOT_VERIFIED_NOT_INSPECTED": 2,
+   "UPHELD_CURRENTLY": 4,
+   "NOT_VERIFIED_DEVICE": 9,
+   "NOT_APPLICABLE_NO_AUDIO_SHIPPED": 5,
+   "UNMET_PENDING_OWNER": 2,
+   "SATISFIED_TRIVIALLY": 1,
+   "NOT_APPLICABLE_V2_NO_AUDIO": 3,
+   "UNMET_PENDING_CHAIN": 8,
+   "UNMET_RELEASE_BLOCKED": 1,
+   "UNMET_STATIC": 2,
+   "SATISFIED_STATIC_UNEXECUTED": 5,
+   "NOT_VERIFIED_PROCESS": 5,
+   "NOT_VERIFIED_PHYSICAL_OUTSTANDING_LAST": 8,
+   "NOT_APPLICABLE_NO_ARTIFACT": 2
+  }
+ },
+ "readingMethod": {
+  "units1to16": "full renders (all fields) read with offsets",
+  "units17to30": "compact renders (why/distractorDifference/contrast lines omitted; remediation bodies truncated); remediation coverage tested mechanically",
+  "book": "All 30 lessons, tables, spelling rules, glossary, index, back cover read visually; vocabulary and key sampled"
+ },
+ "unreadRemaining": {
+  "book": [
+   "PDF 1-12",
+   "PDF 402-428",
+   "PDF 431",
+   "PDF 434-438",
+   "PDF 441-463",
+   "PDF 466-512"
+  ],
+  "repository": "8040 of 8596 tracked files NOT_INSPECTED (REPOSITORY_FILE_COVERAGE.csv), including most test bodies, legacy code, catalog, docs other than MA2/AM1, review packets beyond digest bytes, and historical audit bodies",
+  "curriculum": "provenanceRecords/authoredEnglish/sourceTextPool semantics; rationale/why fields for Units 17-30 read only mechanically",
+  "engineering": "V2Validator outside listed ranges; V2GovernedIdentity, LocalStore, V2Chrome, V2WriteCoordinator, V2Persistence, V2BackupScreen bodies; legacy presentation/domain/data code",
+  "external": "Third-party source spans (no snapshots; Wikipedia unreachable)",
+  "runtime": "All execution (SDK host blocked)",
+  "physical": "Galaxy S26 Ultra acceptance OUTSTANDING_LAST"
+ },
+ "histories": {
+  "checked": 64,
+  "structuralDefects": 0,
+  "recordings": 0,
+  "schemas": "1-5 (no 6)"
+ },
+ "archives": {
+  "sha_match": 66,
+  "crc_ok": 66,
+  "current155": 155,
+  "current155_changed": 95,
+  "current155_newSha_mismatch_at_target": 0,
+  "historicalPriorCurrentZipEntries": 95,
+  "historicalPriorCurrentZipCRC_ok": true,
+  "changed_old_versions_present_in_zip": 95
+ },
+ "boundaries": {
+  "appModified": false,
+  "apkAssembledInstalledSigned": false,
+  "exportersOrWriteRegenerationRun": false,
+  "merge": false,
+  "freeze": false,
+  "amendment1Advancement": false,
+  "ownerOrReleaseApproval": false,
+  "privatePdfInDeliverables": false,
+  "bookProseQuoted": false
+ },
+ "findings": {
+  "original17": "none closed; CC012/CC013/CC014/CC016 static-resolved only",
+  "new": "CC018-CC048 (31): 9 HIGH, 11 MEDIUM, 11 LOW"
+ }
+}
