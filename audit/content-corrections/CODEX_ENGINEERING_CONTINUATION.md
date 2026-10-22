@@ -1,5 +1,11 @@
 # Engineering continuation for Draft PR64
 
+## Independent audit return received — 2026-10-22
+
+The independent return is received and mechanically verified: all 25 required root files, 60 payload hashes and 61 external files match. The audit remains INCOMPLETE, with 48 findings (15 HIGH, 22 MEDIUM, 11 LOW), none closed. The reviewer reports Claude Code / claude-opus-5-5, rather than GPT-6.1 Sol/High. External commit 2ab65c1d was integrated unchanged as c03751d5; app, tests, catalog, docs, review and release inputs remain unchanged. Read the receipt README, CHECKPOINT.json, ENGINEERING_TRIAGE.csv and separate corrected 70-request map. Requests 22 and 60 now have actual class selectors; every original NOT_EXECUTED status is retained. Next large task: reproduce and correct CC018 insets and CC019 option semantics on V2 surfaces, preserving baseline evidence and using focused controls. CC048 has an existing explicit owner activation at f8b8b09a and conflicting MA2-178 / Amendment 1 text; preserve both pending reconciliation. No new Android execution or finding closure. Prior broad and 56-method results remain separate. Four screenshot exporters stay excluded. Physical acceptance stays last; no merge, freeze, signing, formal advancement or release approval.
+
+Read `audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-audit-receipt-2026-10-22/README.md` from the repository root. The received external return is `audit/gpt61-sol-high-comprehensive-2026-10-19/final-independent-recheck-results/2026-10-22-claude-code/`; do not edit its original bytes or statuses.
+
 This file is a durable instruction source. Read it with `CODEX_CHECKPOINT_2026-10-12.md`, the governing documents, and the latest retained correction reports. Do not require a ChatGPT conversation to discover the work.
 
 ## Authorized scope and checkout
