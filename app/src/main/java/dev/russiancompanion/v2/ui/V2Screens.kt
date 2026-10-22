@@ -431,7 +431,7 @@ internal fun V2UnitScreen(
         }
         if (cumulativeReviewPolicy(unit.number) != null) {
             Text("Before advancing, complete the assigned earlier-objective review. Earlier lesson answers and optional practice do not complete this review.")
-            V2SecondaryButton(cumulativeReviewTitle(unit.number), onOpenCumulativeReview, tag = "v2-open-cumulative-review")
+            V2SecondaryButton(cumulativeReviewTitle(unit.number, unit.advancement?.cumulativeReviewPolicyId), onOpenCumulativeReview, tag = "v2-open-cumulative-review")
         }
         if (decision == null) {
             V2Status("Preparing advancement")

@@ -196,7 +196,8 @@ internal fun continueTarget(pack: V2CurriculumPack, learner: V2LearnerView): V2C
         )
     }
     if (cumulativeReviewPolicy(unit.number) != null && !cumulativeReviewComplete(pack, learner, unit.number)) return V2ContinueTarget(
-        title = cumulativeReviewTitle(unit.number), reason = "Complete the assigned review before advancement.",
+        title = cumulativeReviewTitle(unit.number, currentCumulativeAssignment(pack, learner, unit.number)?.policyId
+            ?: unit.advancement?.cumulativeReviewPolicyId), reason = "Complete the assigned review before advancement.",
         sessionId = null, stepIndex = 0, unitNumber = unit.number, opensCumulativeReview = true,
     )
     return V2ContinueTarget(

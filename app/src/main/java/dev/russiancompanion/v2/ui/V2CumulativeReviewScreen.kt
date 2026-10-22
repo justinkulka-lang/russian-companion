@@ -25,11 +25,13 @@ internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2Learner
                 pack.units.firstOrNull { u -> u.objectives.any { it.id == spec.objectiveId } }?.number
             }.distinct().filter { it !in currentCompletedUnitNumbers(pack, learner) })
     }
-    V2Scaffold(cumulativeReviewTitle(targetUnit), V2Tab.COURSE, onTab, onBack) {
+    V2Scaffold(cumulativeReviewTitle(targetUnit, state?.assignment?.policyId ?: declaredPolicy?.id), V2Tab.COURSE, onTab, onBack) {
         Text(when (targetUnit) {
             3 -> "Review two earlier skills: reading and recognising printed letters. Use what you learned in Unit 1; complete both checks before continuing."
             4 -> "Review earlier print-pair decoding and noun-gender labels from Units 1 and 3. Complete both checks before continuing; these supplied choices do not demonstrate whole-word reading, speaking or writing."
-            5 -> "Review earlier print-pair matching from Unit 1 and nominative subjects in supplied Unit 4 clauses. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
+            5 -> if ((state?.assignment?.policyId ?: declaredPolicy?.id) == Unit5CumulativeReviewPolicy.definition.id)
+                "Review earlier print-pair matching from Unit 1 and nominative subjects in supplied Unit 4 clauses. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."
+            else "Review recorded noun genders from Unit 3 and nominative subjects in supplied Unit 4 clauses. Complete both fresh review checks before continuing. These supplied recognitions do not demonstrate unseen reading, productive grammar, speaking or writing."
             6 -> if ((state?.assignment?.policyId ?: declaredPolicy?.id) == Unit6CumulativeReviewPolicy.definition.id)
                 "Review earlier print-pair matching from Unit 1 and the behavior of supplied Unit 5 nouns. Complete both checks before continuing. These taught choices do not demonstrate unseen reading, productive morphology, speaking or writing."
             else "Review earlier print-pair matching, supplied noun behavior from Unit 5 and subjects in supplied Unit 4 clauses. Complete all three checks before continuing. These taught choices do not demonstrate unseen reading, productive grammar, speaking or writing."

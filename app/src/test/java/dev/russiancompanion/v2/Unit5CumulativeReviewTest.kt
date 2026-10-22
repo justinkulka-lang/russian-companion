@@ -265,6 +265,10 @@ class Unit5CumulativeReviewTest {
     }
     companion object { private val sharedPack by lazy {
         val root = File(if (File("app").isDirectory) "." else "..")
-        V2PackLoader.parse(File(root, "app/src/main/assets/content/v2-curriculum.json").readText()).also { V2PackIdentityIndex.warm(it) }
+        // Exact pre-grammar-review obligation; all original assertions remain unchanged.
+        val process = ProcessBuilder("git", "show", "b869da02869840b575b7a803fdeebb27eaabb5d6:app/src/main/assets/content/v2-curriculum.json").directory(root).start()
+        V2PackLoader.parse(process.inputStream.bufferedReader().readText()).also {
+            assertEquals(0, process.waitFor()); V2PackIdentityIndex.warm(it)
+        }
     } }
 }
