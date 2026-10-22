@@ -1,0 +1,16 @@
+{
+  "files": {
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/final-independent-recheck-preparation-2026-10-21/RAW_JSON_OBJECT_INDEX.csv": "424e920b010fbc319e0c8524154155cdd073e148d590a68d37d087ad06c545dc",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/final-independent-recheck-preparation-2026-10-21/INDEPENDENT_FINDING_RECHECK_PREPARATION.json": "942f50fe2e6685f310f9677eed988c96dbaf0816111429e6a14af74bfef895a9",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/final-independent-recheck-preparation-2026-10-21/INDEPENDENT_RECHECK_PREPARATION.json": "be6b5f0a837f60d71a01b355e00b4400d483313101273643d27e70eb5c8e599c",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/ORIGINAL_RETURN_MEMBER_RESOLUTION.csv": "788d670b57ab92a387cb0ff15ba14067fb1f745c7600112a79c04148caa6de14",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-execution-evidence-reconciliation-2026-10-21/REQUEST_EVIDENCE_RECONCILIATION.json": "a579cdfb47d797f0d0e580f44aa872e9c3533189858520e3d27d547677a12cc3",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/finish-results/2026-10-19-0321d323/EXECUTION_EVIDENCE_REQUESTS.csv": "13bce04ae742fba17262dc8b08777146b619fc71ef0dd43bd6ee70b189c65813",
+    "audit/claude-code-comprehensive-2026-10-19/PRIVATE_REFERENCE_ACCESS.md": "2947d2e56c1fec0c2a003c4d5768d6b1c88b46aac50fd77742f6579130eb1a1b"
+  },
+  "rawJsonIndexPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/final-independent-recheck-preparation-2026-10-21/RAW_JSON_OBJECT_INDEX.csv",
+  "rawJsonIndexRows": 22784,
+  "assetByteIdentityUnchanged": true,
+  "noDuplicateRawIndexCreated": true,
+  "allPriorReviewStatusesRemainHistorical": true
+}

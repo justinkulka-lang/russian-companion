@@ -1,0 +1,5 @@
+# Final independent comprehensive nonphysical recheck inputs
+
+Preparation only;no independent audit has been executed or finding closed. Copy COPY_PASTE_PROMPT.md into the existing independent GPT-6.1 Sol/High chat with repository access and the private reference obtained separately. Target:8606c4d74185f594d93941bef6858b2af28e0b75;fresh focused56source:20c5eb96ef553ba65a937a4df7fa2bdc4b43710a. The older1334method broad result retains9failures and is not relabelled as all-pass after this focused recheck. All17externalfindings and qualification gaps remain independently open. Actual physical acceptance LAST;no release actions.
+
+TARGET_FILE_INVENTORY/changes and HOST_METHOD_EVIDENCE_INDEX are identities/search aids,all UNINSPECTED;not inspection or a combined current-suite result. REUSED_INPUT_IDENTITIES binds the unchanged raw JSON span index and original maps without duplicating them. REQUIRED_RETURNS lists all 25 requested outputs. Audit this directory itself and POINTER_CHANGE.patch as additional delivery scope;SHA256_PREPARATION binds all packet payloads except itself. The Git delivery commit binds that manifest.

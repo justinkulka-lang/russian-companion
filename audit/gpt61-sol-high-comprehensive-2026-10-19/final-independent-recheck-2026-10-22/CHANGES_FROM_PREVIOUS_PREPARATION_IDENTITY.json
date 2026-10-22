@@ -1,0 +1,7 @@
+{
+  "priorCommit": "ff2a5f5535e2bb57c47fadeff74989db50508d90",
+  "targetCommit": "8606c4d74185f594d93941bef6858b2af28e0b75",
+  "changedPaths": 323,
+  "status": "UNINSPECTED",
+  "file": "CHANGES_FROM_PREVIOUS_PREPARATION.csv"
+}
