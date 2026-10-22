@@ -21,12 +21,7 @@ class Unit5GrammarReviewTest {
         val p = current
         LocalStore.openInMemory(context()).use { s ->
             prepare(p, s)
-            assertEquals(newPolicy, cumulativeReviewDeclaredPolicy(p, 5)!!.id)
             val a = open(p, s)
-            assertEquals(7, a.schema)
-            assertEquals(listOf("obj-u3-gender", "obj-u4-nominative"), a.slots.map { it.objectiveId })
-            assertEquals(listOf(3, 4), a.slots.map { it.ownerUnit })
-            assertTrue(a.slots.none { it.itemId == "u1-i-decode-pair" })
             assertTrue(ordinaryUnitRequirements(p, p.unit(5)!!, s.v2LearnerView()).allowed)
             a.slots.forEach { slot ->
                 val item = p.item(slot.itemId)!!
@@ -35,10 +30,19 @@ class Unit5GrammarReviewTest {
             }
             assertTrue(completedReviewSlots(p, a, s.v2LearnerView().reviewAnswers).isEmpty())
             assertFalse(advancementDecision(p, p.unit(5)!!, s.v2LearnerView()).allowed)
-            answer(p, s, a, 0)
-            assertFalse(advancementDecision(p, p.unit(5)!!, s.v2LearnerView()).allowed)
+            val glyph = a.slots.indexOfFirst { it.itemId == "u1-i-decode-pair" }
+            if (glyph >= 0) answer(p, s, a, glyph)
+            val subject = a.slots.indexOfFirst { it.objectiveId == "obj-u4-nominative" }
+            answer(p, s, a, subject)
+            assertFalse("Subject plus print matching must not replace a gender review answer",
+                advancementDecision(p, p.unit(5)!!, s.v2LearnerView()).allowed)
             assertTrue(runCatching { advance(p, s, 5) }.isFailure)
-            answer(p, s, a, 1)
+            assertEquals(newPolicy, a.policyId)
+            assertEquals(7, a.schema)
+            assertEquals(listOf("obj-u3-gender", "obj-u4-nominative"), a.slots.map { it.objectiveId })
+            assertEquals(listOf(3, 4), a.slots.map { it.ownerUnit })
+            assertTrue(a.slots.none { it.itemId == "u1-i-decode-pair" })
+            answer(p, s, a, 0)
             assertTrue(advancementDecision(p, p.unit(5)!!, s.v2LearnerView()).allowed)
             assertTrue(advance(p, s, 5))
             val completion = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 5 }
@@ -62,12 +66,12 @@ class Unit5GrammarReviewTest {
             val item = p.item("u3-i-gender-дверь")!!
             store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, item.id,
                 item.options.first { it != item.answer }, PRESCRIBED_CHECK,
-                "u3-st-gender-check", "test")!!)
+                "u3-st-check-gender", "test")!!)
             val a = open(p, store)
             assertEquals(7, a.schema)
             assertEquals(item.id, a.slots.first().itemId)
             store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, item.id, item.answer,
-                PRESCRIBED_CHECK, "u3-st-gender-check", "test")!!)
+                PRESCRIBED_CHECK, "u3-st-check-gender", "test")!!)
             assertEquals(a, open(p, store))
             answer(p, store, a, 0)
             val before = store.cumulativeReviewHistory()
