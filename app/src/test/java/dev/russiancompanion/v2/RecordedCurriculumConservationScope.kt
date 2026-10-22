@@ -8,6 +8,8 @@ import java.io.File
 internal object RecordedCurriculumConservationScope {
     const val priorSource = "49a926c5ace0459edf7712ca5d90db4a63ff9d31"
     const val currentSource = "b7e53230e2119b1e57d781b1e1b955f074a38601"
+    // Current asset differs from currentSource only in the versioned Unit 5 review policy ID.
+    const val currentPackImplementation = "2fb455d4cf0b69808d431a2b9db3583b4d4b0dcb"
     private val sources = mutableMapOf<String, V2CurriculumPack>()
     private val currentUnitSources = mapOf(
         4 to "e6db0bdfe0bbb40edf190623e2123014946f305b",
@@ -23,7 +25,7 @@ internal object RecordedCurriculumConservationScope {
 
     fun assertCurrent(root: File, current: V2CurriculumPack) {
         V2PackIdentityIndex.warm(current)
-        assertEquals("Current pack must match its last actual asset implementation", source(root, currentSource), current)
+        assertEquals("Current pack must match its last actual asset implementation", source(root, currentPackImplementation), current)
     }
 
     fun historicalTransition(root: File, current: V2CurriculumPack, implementation: String, vararg units: Int): V2CurriculumPack {
