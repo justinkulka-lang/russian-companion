@@ -8,8 +8,9 @@ import java.io.File
 internal object RecordedCurriculumConservationScope {
     const val priorSource = "49a926c5ace0459edf7712ca5d90db4a63ff9d31"
     const val currentSource = "b7e53230e2119b1e57d781b1e1b955f074a38601"
-    // Current asset differs from currentSource only in the versioned Unit 5 review policy ID.
-    const val currentPackImplementation = "2fb455d4cf0b69808d431a2b9db3583b4d4b0dcb"
+    // Exact declaration-only transitions are proved separately below.
+    const val beforeUnit6PackImplementation = "2fb455d4cf0b69808d431a2b9db3583b4d4b0dcb"
+    const val currentPackImplementation = "53d9c292e1f32f204bdff2b09b8f10d02b6b28a6"
     private val sources = mutableMapOf<String, V2CurriculumPack>()
     private val currentUnitSources = mapOf(
         4 to "e6db0bdfe0bbb40edf190623e2123014946f305b",
@@ -23,10 +24,21 @@ internal object RecordedCurriculumConservationScope {
     fun source(root: File, commit: String): V2CurriculumPack =
         sources.getOrPut(root.canonicalPath + ":" + commit) { RecordedIntakeCorrectionScope.load(root, commit) }
 
-    /** Historical Unit5 activation assertions apply before this exact declaration-only transition. */
-    fun beforeUnit5GrammarReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
+    /** Restore only the Unit6 declaration, proving equality with the genuine preceding pack. */
+    fun beforeUnit6PresentReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
         assertCurrent(root, current)
         val prior = current.copy(units = current.units.map { unit ->
+            if (unit.number == 6) unit.copy(advancement = unit.advancement!!.copy(
+                cumulativeReviewPolicyId = Unit6WiderCumulativeReviewPolicy.definition.id)) else unit
+        })
+        assertEquals("Only the Unit6 policy declaration may differ from the preceding asset", source(root, beforeUnit6PackImplementation), prior)
+        return prior
+    }
+
+    /** Historical Unit5 activation assertions apply before this exact declaration-only transition. */
+    fun beforeUnit5GrammarReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
+        val beforeUnit6 = beforeUnit6PresentReview(root, current)
+        val prior = beforeUnit6.copy(units = beforeUnit6.units.map { unit ->
             if (unit.number == 5) unit.copy(advancement = unit.advancement!!.copy(
                 cumulativeReviewPolicyId = Unit5CumulativeReviewPolicy.definition.id)) else unit
         })

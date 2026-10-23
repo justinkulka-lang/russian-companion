@@ -96,6 +96,8 @@ class CurrentPackHistoricalBackupTest {
     }
 
     @Test fun legacyUnit5CanLeadIntoFreshUnit6WithoutRelabellingEitherObligation() {
+        // Original v2 contract, with a whole-pack proof of its declaration-only fixture.
+        val pack = RecordedCurriculumConservationScope.beforeUnit6PresentReview(root, Companion.pack)
         val context = context()
         (context.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
         val archive = File(root,
@@ -119,13 +121,97 @@ class CurrentPackHistoricalBackupTest {
                 val relabelled = legacy.copy(schema = 7).let { it.copy(digest = reviewAssignmentDigest(it)) }
                 assertFalse(reviewAssignmentCurrent(pack, relabelled))
                 assertNotNull(reviewHistoryDefects(listOf(relabelled), original.reviewAnswers.filter { it.assignmentId == legacy.id }))
-                legacy.slots.indices.forEach { answer(store, legacy, it) }
-                assertTrue(advance(store, 5))
-                ordinary(store, 6)
+                legacy.slots.indices.forEach { answer(store, legacy, it, pack) }
+                assertTrue(advance(store, 5, pack))
+                ordinary(store, 6, pack)
                 val fresh = store.openCumulativeReview(pack, 6, store.learnerMutationEpoch())!!
                 assertEquals(4, fresh.schema)
                 assertEquals("unit6-prior-reading-subject-noun-behavior-v2", fresh.policyId)
                 assertEquals(3, fresh.slots.size)
+                val owner5 = fresh.slots.single { it.ownerUnit == 5 }
+                assertEquals(V2Validator.unitContentReviewDigest(pack, 5), owner5.unitDigest)
+                assertFalse(advancementDecision(pack, pack.unit(6)!!, store.v2LearnerView()).allowed)
+                fresh.slots.indices.forEach { answer(store, fresh, it, pack) }
+                assertTrue(advance(store, 6, pack))
+                assertEquals((1..6).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
+                completed = store.governedLearnerDocument()
+                assertTrue(completed!!.reviewAssignments.containsAll(original.reviewAssignments))
+                assertEquals(legacy, completed!!.reviewAssignments.single { it.targetUnit == 5 })
+                val changedOwner = pack.copy(items = pack.items.map {
+                    if (it.id == owner5.itemId) it.copy(feedback = it.feedback + " changed") else it
+                })
+                assertFalse(reviewAssignmentCurrent(changedOwner, fresh))
+                assertFalse(6 in currentCompletedUnitNumbers(changedOwner, store.v2LearnerView()))
+                val bytes = ByteArrayOutputStream().also {
+                    writeGovernedBackup(it, "dev.russiancompanion", pack.packId, pack.packVersion,
+                        "DARK", completed!!, emptyList())
+                }.toByteArray()
+                val roundtripStage = File(stage.parentFile, "$name-roundtrip")
+                try {
+                    val read = readGovernedBackup(bytes.inputStream(), "dev.russiancompanion", pack.packId, pack.packVersion, roundtripStage)
+                    assertTrue(read is BackupReadResult.Valid)
+                    LocalStore.openInMemory(context).use { target ->
+                        assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner((read as BackupReadResult.Valid).backup.document, emptyList()))
+                        assertEquals(completed, target.governedLearnerDocument())
+                        assertEquals((1..6).toSet(), currentCompletedUnitNumbers(pack, target.v2LearnerView()))
+                    }
+                } finally { roundtripStage.deleteRecursively() }
+            }
+            LocalStore.openNamed(context, name).use { store ->
+                assertEquals(completed, store.governedLearnerDocument())
+                assertEquals((1..6).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
+            }
+            assertEquals(originalHash, hash(archive.readBytes()))
+            record(buildJsonObject {
+                put("kind", "legacy_unit5_to_current_unit6")
+                put("scope", "HISTORICAL_PRE_UNIT6_V3_PACK")
+                put("fixtureSource", RecordedCurriculumConservationScope.beforeUnit6PackImplementation)
+                put("legacyArchiveSha256", originalHash)
+                put("legacyUnit5Schema", 3)
+                put("freshUnit6Schema", 4)
+                put("restoredRoundtripAndReopenedUnchanged", true)
+                put("wrongSchemaAndChangedOwnerRejected", true)
+            })
+        } finally {
+            stage.deleteRecursively()
+            context.deleteDatabase(name)
+            File(context.filesDir, "recordings-$name").deleteRecursively()
+        }
+    }
+
+    @Test fun legacyUnit5CanLeadIntoCurrentUnit6V3WithoutRelabellingEitherObligation() {
+        val context = context()
+        (context.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
+        val archive = File(root,
+            "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-cc020-unit5-grammar-2026-10-22/BASELINE_LEGACY_UNIT5.zip")
+        val originalHash = hash(archive.readBytes())
+        val name = "unit5-to-unit6-v3-${System.nanoTime()}.db"
+        val stage = File(context.cacheDir, name)
+        var completed: GovernedLearnerDocument? = null
+        try {
+            val decoded = archive.inputStream().use {
+                readGovernedBackup(it, "dev.russiancompanion", pack.packId, pack.packVersion, stage)
+            }
+            assertTrue(decoded is BackupReadResult.Valid)
+            val original = (decoded as BackupReadResult.Valid).backup.document
+            val legacy = original.reviewAssignments.single { it.targetUnit == 5 }
+            assertEquals(3, legacy.schema)
+            assertEquals("unit5-prior-reading-subject-v1", legacy.policyId)
+            LocalStore.openNamed(context, name).use { store ->
+                assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(original, emptyList()))
+                assertEquals(legacy, store.openCumulativeReview(pack, 5, store.learnerMutationEpoch()))
+                val relabelled = legacy.copy(schema = 7).let { it.copy(digest = reviewAssignmentDigest(it)) }
+                assertFalse(reviewAssignmentCurrent(pack, relabelled))
+                assertNotNull(reviewHistoryDefects(listOf(relabelled), original.reviewAnswers.filter { it.assignmentId == legacy.id }))
+                legacy.slots.indices.forEach { answer(store, legacy, it) }
+                assertTrue(advance(store, 5))
+                ordinary(store, 6)
+                val fresh = store.openCumulativeReview(pack, 6, store.learnerMutationEpoch())!!
+                assertEquals(8, fresh.schema)
+                assertEquals("unit6-prior-present-subject-noun-behavior-v3", fresh.policyId)
+                assertEquals(3, fresh.slots.size)
+                assertEquals(listOf("obj-u4-present", "obj-u5-indeclinable", "obj-u4-nominative"), fresh.slots.map { it.objectiveId })
+                assertTrue(fresh.slots.none { it.itemId == "u1-i-decode-pair" })
                 val owner5 = fresh.slots.single { it.ownerUnit == 5 }
                 assertEquals(V2Validator.unitContentReviewDigest(pack, 5), owner5.unitDigest)
                 assertFalse(advancementDecision(pack, pack.unit(6)!!, store.v2LearnerView()).allowed)
@@ -161,10 +247,10 @@ class CurrentPackHistoricalBackupTest {
             }
             assertEquals(originalHash, hash(archive.readBytes()))
             record(buildJsonObject {
-                put("kind", "legacy_unit5_to_current_unit6")
+                put("kind", "legacy_unit5_to_current_unit6_v3")
                 put("legacyArchiveSha256", originalHash)
                 put("legacyUnit5Schema", 3)
-                put("freshUnit6Schema", 4)
+                put("freshUnit6Schema", 8)
                 put("restoredRoundtripAndReopenedUnchanged", true)
                 put("wrongSchemaAndChangedOwnerRejected", true)
             })
@@ -175,7 +261,8 @@ class CurrentPackHistoricalBackupTest {
         }
     }
 
-    private fun ordinary(store: LocalStore, number: Int) {
+    private fun ordinary(store: LocalStore, number: Int, scope: V2CurriculumPack = pack) {
+        val pack = scope
         store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = number, currentSessionId = null))
         for (step in pack.unit(number)!!.sessions.flatMap { it.steps }) {
             step.itemIds.forEach { id ->
@@ -185,10 +272,12 @@ class CurrentPackHistoricalBackupTest {
         }
         store.v2AttestBook(number, "compatibility")
     }
-    private fun answer(store: LocalStore, task: CumulativeReviewAssignment, index: Int) {
+    private fun answer(store: LocalStore, task: CumulativeReviewAssignment, index: Int, scope: V2CurriculumPack = pack) {
+        val pack = scope
         assertTrue(store.answerCumulativeReview(pack, task.id, index, pack.item(task.slots[index].itemId)!!.answer, store.learnerMutationEpoch()))
     }
-    private fun advance(store: LocalStore, number: Int): Boolean = runBlocking {
+    private fun advance(store: LocalStore, number: Int, scope: V2CurriculumPack = pack): Boolean = runBlocking {
+        val pack = scope
         val next = pack.unit(number + 1)!!.sessions.first().id
         store.v2AdvanceUnitIfCurrentAsync(store.learnerMutationEpoch(), number, "compatibility", number + 1,
             next, resumePositionDigest(pack, next, 0)!!, GOVERNED_IDENTITY_SCHEMA, pack)
