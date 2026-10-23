@@ -1,0 +1,14 @@
+{
+  "CONTEXT.json": "c43eb79ab56554069c76a5a33bd7cc15ac1fdde01b8717b44b4d9d1081491198",
+  "EVENTS.jsonl": "8bb95b44391b2e88a6de58baa6e5d2ef305d5e95ebe2840859c30bb54973a336",
+  "LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+  "RESULT.json": "0afa9f31d42c600e4755f7d53cd9a69cb9fcb9eb3dfba758fceac8dd41148971",
+  "RESULTS.csv": "89924911163764363bec5d131f0e2b8b94841ae2646fea10b4db709604d3dedb",
+  "RUN.exit": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+  "RUN.log": "fbd5f70014183173aef6ee8c44b2f9d0a63b7f969860777acdfa0ab604ab6dcc",
+  "XML/TEST-dev.russiancompanion.v2.Units1115MappingGapTest.xml": "522cf12f933f220e54e2ef8756ae4adf5e5937f70b7e12fadca884d3c6312f58",
+  "XML/TEST-dev.russiancompanion.v2.Units2125SourceIntakeTest.xml": "f4e3da5866c1cbb96f3d001280d40bfa49e38727fd8e89edc4c53cf6508527da",
+  "XML/TEST-dev.russiancompanion.v2.V2RebuildTest.xml": "30311c3769391f832e6c33bf075419b1bd486022ed8f3fd527e6e04457186bc3",
+  "gc-32809.log": "f96496933a79c1568d0ad5d073158227cbe81bb64bb4c71da9b9e3cb52575227",
+  "gc-32811.log": "c7c64abe90df3958b18edae0e3275e1248664f69b834bed5cd93d25601d4aa7e"
+}

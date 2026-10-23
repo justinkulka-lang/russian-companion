@@ -1,0 +1,29 @@
+{
+  "baselineSource": "929942950013701ddee7771a67523726d03f3fa7",
+  "tests": [
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units1115MappingGapTest.kt",
+      "beforeSHA256": "1945969779ae9e24f22ea68ac3ea0064669eee4fa384805000fb06161b885ae4",
+      "afterSHA256": "1945969779ae9e24f22ea68ac3ea0064669eee4fa384805000fb06161b885ae4",
+      "wholeFileUnchanged": true,
+      "allOriginalLinesRetainedIgnoringIndentation": true
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units2125SourceIntakeTest.kt",
+      "beforeSHA256": "5dd0332c00ddad16a637dac88829c3925cf2a4179557ee1d971a81299f7dfd2c",
+      "afterSHA256": "5dd0332c00ddad16a637dac88829c3925cf2a4179557ee1d971a81299f7dfd2c",
+      "wholeFileUnchanged": true,
+      "allOriginalLinesRetainedIgnoringIndentation": true
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+      "beforeSHA256": "b802e94431b65b5e99e4f5dd089f8d5b5f03e9f51a78e7fc280807a9984e8879",
+      "afterSHA256": "ea5a818badd43790dace2e3b29c76e1bac02628259bfd85a824a5f957ae40767",
+      "wholeFileUnchanged": false,
+      "allOriginalLinesRetainedIgnoringIndentation": true
+    }
+  ],
+  "oldExpectedHashesRetained": true,
+  "currentSourceAndWholePackProjectionGuardsUnchanged": true,
+  "newBehavior": "Historical Unit5/6 pins checked on exact pre-review pack; current identities separately differ; structural/mutation tests remain current"
+}

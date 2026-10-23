@@ -66,7 +66,14 @@ internal object RecordedCurriculumConservationScope {
         val historical = source(root, priorSource)
         pins.forEach { (number, digest) ->
             assertEquals("historical unit $number", digest, V2Validator.unitContentReviewDigest(historical, number))
-            if (number in setOf(4, 7, 8, 10, 15)) {
+            if (number in setOf(5, 6)) {
+                // The later review declarations legitimately changed these unit identities.
+                // Keep the original pin on a full-pack-proven historical declaration scope.
+                val preceding = beforeUnit5GrammarReview(root, current)
+                assertEquals("pre-policy unit $number", digest, V2Validator.unitContentReviewDigest(preceding, number))
+                assertNotEquals("The current review obligation must have its own identity for Unit $number",
+                    digest, V2Validator.unitContentReviewDigest(current, number))
+            } else if (number in setOf(4, 7, 8, 10, 15)) {
                 RecordedIntakeCorrectionScope.assertCurrentUnitMatches(current, source(root, currentUnitSources.getValue(number)), number)
                 assertNotEquals("Declared correction must differ from its prior pin for Unit $number", digest, V2Validator.unitContentReviewDigest(current, number))
             } else {
