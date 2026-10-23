@@ -1,3 +1,5 @@
 # Historical conservation correction prepared; verification pending
 
 Baseline at92994295:41reported/38passed/3historical Unit5pin comparison failures,exit1. Fresh discovery41synthetic skips,zero runtime passes. All raw failures preserved. Two test-only files now scope historical assertions through the existing exact whole-pack beforeUnit6/beforeUnit5 projections; old pins and all original V2Rebuild lines remain. Current-pack structural/mutation checks remain current. App/catalog/governance and155generated records unchanged. Follow-up full41method scope not yet executed; not full suite. Four exporters/16methods excluded; all48findings open; physicalLAST; no assembly/install/signing/merge/freeze/approval.
+
+Corrected discovery atddf59bc9:41synthetic skips/zero runtime passes,exit0; actual corrected runtime is the next command. Inspect /workspace/artifacts/unit56-conservation-2026-10-23/CORRECTED/REGRESSION/{CONTEXT.json,RUN.exit,RESULT.json,EVENTS.jsonl} and the live process before launching a duplicate. Do not edit inputs during that run.
