@@ -1,0 +1,15 @@
+{
+  "CONTEXT.json": "5308c8965afc7c3650f6e102df0bb256e87ead3d84f9d7ecac8006aadd0120e3",
+  "EVENTS.jsonl": "d122edc975b4fbef52d70576412ed7fd9bd4d24d46cfc9100e423b12bb481734",
+  "RESULT.json": "1b9a3540001a0a7ef11918b50985064e9295ad15cc3567f57e0a3c5ab805bda9",
+  "RESULTS.csv": "5b205f4d810958230d74ed27959bad091a42a3a2c56249cd6ef7ac975116a08c",
+  "RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+  "RUN.log": "5ff3f2d2a5056a04e76ffc7eb39fde4f14db963f911fcba0f1ad98801ca9e79a",
+  "XML/TEST-dev.russiancompanion.v2.Unit5GrammarReviewTest.xml": "f89474b0a2c24b2b0e7b995092db868d8e8d036521a258efe9c9fc0794c9906b",
+  "XML/TEST-dev.russiancompanion.v2.Unit6PresentCompatibilityTest.xml": "c0d2baf12b113a1b48ca95ddb12c6a1b3865f6f85bb18561bb899e8f81357dd8",
+  "XML/TEST-dev.russiancompanion.v2.Unit6PresentReviewTest.xml": "880f5566dbbf18a50ae746aa495145a20c920e0f2251b1ed1ed626c387128772",
+  "XML/TEST-dev.russiancompanion.v2.Unit6PresentReviewUiTest.xml": "85b7300459caaa5eae0474e8f2d1e95b77319100db9d992e5c9a6928be7378fc",
+  "XML/TEST-dev.russiancompanion.v2.Unit6WiderPolicyTest.xml": "24977907d3634a4d3e6a649318b5b3c8dabef0c335f292d2f8b923657a87c080",
+  "gc-26043.log": "95056c2f3aa067bf6642130ce8e48f5a131a100630babeeb04372b07ab1dc116",
+  "gc-26050.log": "5114a8ceabd98779401ecd1361b853fc528e4a79088d407dfd1881e83180b65e"
+}
