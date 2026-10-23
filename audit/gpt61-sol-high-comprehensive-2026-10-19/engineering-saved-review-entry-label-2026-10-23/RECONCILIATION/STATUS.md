@@ -1,0 +1,3 @@
+# Entry-label source bindings applied; verification pending
+
+Two authentic153-file renders agree and canonical Kotlin digest matches real root/projection. Exactly95of155records replace only the old global repository-source digest with the new digest; every other byte and60worksheets stay exact. Prior95versions retained as historical. No curriculum policy/source pins or review/owner/approval fields changed. Candidate unfrozen/sourceCommitnull/artifactNOT_RECORDED/publicReleaseNOT_APPROVED. Baseline2reported/1pass/1fail remains separate. Fresh66method/13full-class discovery and actual runtime pending; not a full suite. All48findings open; physicalLAST; no APK assembly/install/signing, merge/freeze/approval.
