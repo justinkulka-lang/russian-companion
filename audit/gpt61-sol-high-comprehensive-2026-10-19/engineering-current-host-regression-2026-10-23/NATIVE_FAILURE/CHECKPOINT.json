@@ -1,0 +1,58 @@
+{
+  "state": "NATIVE_WORKER_CRASH_THEN_INTENTIONAL_CANCELLATION_PARTIAL_UNVERIFIED_XML",
+  "sourceCommit": "e66dfe0771424daf6e090fb258f77523ec40a4c1",
+  "inputTrees": {
+    "app/src/main": "233c13050648a2c3fb2e4ed24b45a9c0ef1aa636",
+    "app/src/test": "3cf93911abceaa832558e2f6276b79f07511fd8a",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "257c21d0678015e86fd4a831c453355461751cbe",
+    "release": "38ad2d045b493fcee81e2db8e375733824be23f8"
+  },
+  "discoverySource": "7641174a29d9bab8c582d609ddb4b3a12357c06e",
+  "discoveredMethods": 1363,
+  "discoveredClasses": 229,
+  "actualGradleClientExit": 130,
+  "eventCounts": {
+    "SKIPPED": 3,
+    "SUCCESS": 1121,
+    "FAILURE": 6
+  },
+  "uniqueCompletedEventIdentities": 1130,
+  "noCompletedEventCount": 233,
+  "freshXmlFiles": 0,
+  "staleXmlFiles": 229,
+  "freshXmlSelectedMethods": 0,
+  "xmlAndEventAgreementVerified": false,
+  "nativeFailure": "SIGSEGV in Oracle Java21.0.12.1+1-LTS-4 C2 CompilerThread0; current compile task androidx.sqlite.driver.SupportSQLiteConnection.prepare; root cause UNCONFIRMED",
+  "intentionalCancellation": {
+    "state": "INTENTIONAL_CANCEL_AFTER_CONFIRMED_NATIVE_WORKER_CRASH",
+    "requestedAtUtc": "2026-10-23T21:33:07.517356+00:00",
+    "signal": "SIGINT",
+    "pid": 48218,
+    "validatedCommand": "/workspace/jdk21/bin/java -Xmx64m -Xms64m -Dorg.gradle.appname=gradlew -jar /workspace/russian-companion/gradle/wrapper/gradle-wrapper.jar -I /workspace/setup/cloud-validation.gradle -I /workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle -I /workspace/artifacts/current-host-detached-2026-10-23/resources.gradle -Daudit.history.output=/workspace/artifacts/current-host-detached-2026-10-23/REGRESSION/HISTORY_CASES.jsonl -Daudit.events.path=/workspace/artifacts/current-host-detached-2026-10-23/REGRESSION/EVENTS.jsonl -Daudit.gc.dir=/workspace/artifacts/current-host-detached-2026-10-23/REGRESSION testDebugUnitTest --rerun compileDebugSources lintDebug verifyReleaseGateAttachment --continue --offline --max-workers=2 --console=plain ",
+    "reason": "Confirmed Oracle Java21HotSpot C2 SIGSEGV; original complete1363method scope cannot be established. Stop remaining work and preserve diagnostic baseline before next large harness task.",
+    "countsBeforeCancellation": {
+      "SKIPPED": 1,
+      "SUCCESS": 1121,
+      "FAILURE": 6
+    },
+    "completeSuite": false,
+    "assertionFailuresMustRemainFailures": true
+  },
+  "collectorFailure": {
+    "state": "STOPPED_WITH_ERROR",
+    "error": "RuntimeError: Runner collection failed; inspect LAUNCHER.log; no inferred final result",
+    "noRetryOverwriteOrForcePush": true
+  },
+  "canonicalSourceDigest": "2507d56bf2bd910b198d9ff317a605598765e13d947fa4f4435aaacd2a626892",
+  "generatedRecordsUnchanged": 155,
+  "originalArchiveShaAndCrcChecked": 66,
+  "apkIdentity": null,
+  "apkSignature": null,
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "independentAudit": "INCOMPLETE_ALL48OPEN",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "completeSuite": false,
+  "scopesNotSummed": true
+}

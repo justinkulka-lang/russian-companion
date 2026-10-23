@@ -1,0 +1,24 @@
+{
+  "actualGradleClientExit": 130,
+  "tasks": {
+    "testDebugUnitTest": [
+      "> Task :app:testDebugUnitTest",
+      "> Task :app:testDebugUnitTest"
+    ],
+    "compileDebugKotlin": [
+      "> Task :app:compileDebugKotlin UP-TO-DATE"
+    ],
+    "compileDebugUnitTestKotlin": [
+      "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE"
+    ],
+    "compileDebugSources": [],
+    "lintAnalyzeDebug": [],
+    "lintAnalyzeDebugUnitTest": [],
+    "lintDebug": [],
+    "verifyReleaseGateAttachment": []
+  },
+  "lintResult": "NOT_REACHED",
+  "lintCounts": null,
+  "releaseGateAttachmentResult": "NOT_REACHED",
+  "scope": "Prior focused lint/gate results remain separate; cancellation prevented current post-test task completion."
+}

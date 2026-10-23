@@ -1,0 +1,42 @@
+[
+  {
+    "path": "PREPARATION.json",
+    "bytes": 1861,
+    "sha256": "1cc1dcb721e8b17336d15586652d6551ae0e1214c73a3c7420215ebf7a5d88af"
+  },
+  {
+    "path": "PROPOSED.patch",
+    "bytes": 8735,
+    "sha256": "f155c33db3477ecb8555ff1a9e2e42e86b9d84ff5c4170dfdb0526906320f528"
+  },
+  {
+    "path": "README.md",
+    "bytes": 2356,
+    "sha256": "23a81ad22e789bff037bc11bd651aa22766fe0837c2cf0fe671611cd8204a35c"
+  },
+  {
+    "path": "REFERENCE_REVIEW.json",
+    "bytes": 1143,
+    "sha256": "3155b627a179705c223e1a637112952e1b39660eb4e90add030c2a667243b044"
+  },
+  {
+    "path": "STATIC_PROPOSAL_VALIDATION.json",
+    "bytes": 645,
+    "sha256": "748885e05ff5de41947f2f22dba5811abc9e07d3e4a81cb1a44d0b6011848878"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/acceptance/ReviewedCurriculumSourceGuardTest.kt",
+    "bytes": 8853,
+    "sha256": "910539edfce766548a35e528c184d2a7964ac040af7c65ff2832e54dfd47ef83"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/CompleteRuleCorrectionTest.kt",
+    "bytes": 10927,
+    "sha256": "6a362a40b307fcf9be2168a4b0739b3528eca3fcf011b4845ea959f2a8a71295"
+  },
+  {
+    "path": "app/src/test/resources/reviewed-curriculum-cyrillic.json",
+    "bytes": 332706,
+    "sha256": "8401470422f69da965de6736c68217e7bc12e337490d3fdd503e56e2e762a6e9"
+  }
+]
