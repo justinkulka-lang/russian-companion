@@ -1,0 +1,17 @@
+{
+  "kind": "READ_ONLY_SAVED_EVIDENCE_VERIFICATION",
+  "result": {
+    "source": "cae0d574202b0713e8b926ee0ac0b87dbbf30281",
+    "reported": 85,
+    "passed": 85,
+    "fullClasses": 17,
+    "caseObservationsNotTests": 66,
+    "originalArchivesConserved": 66,
+    "changedVersionsArchived": 95,
+    "unchangedWorksheets": 60,
+    "sourceBindings": "VERIFIED_SELECTED_SCOPE",
+    "completeSuite": false,
+    "newRuntimeTestsExecutedByVerifier": 0
+  },
+  "notAnAdditionalRuntimeTestRun": true
+}
