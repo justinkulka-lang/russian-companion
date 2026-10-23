@@ -1,3 +1,5 @@
+Current checkpoint: [Broad runtime recovery](../gpt61-sol-high-comprehensive-2026-10-19/engineering-current-host-regression-2026-10-23/STATUS.md). Interrupted original preserved; independent retry prepared. Do not sum partial events or duplicate a running job.
+
 # Engineering continuation for Draft PR64
 
 Current checkpoint: [Conservation41/41 verified; broad1363 discovery prepared](../gpt61-sol-high-comprehensive-2026-10-19/engineering-unit56-conservation-2026-10-23/COMPLETED_STATUS.md). Corrected84977970:41/41methods/3classes pass; baseline92994295:38pass/3old-pin failures retained separately. Original hashes/assertions/current mutation checks preserved; app and155generated records unchanged. Broad discovery7641174a:1363synthetic skips/229classes,zero runtime passes;29new identities/no removals vs old1334. Broad runtime PREPARED_NOT_LAUNCHED; inspect external current-host-discovery-2026-10-23/REGRESSION before duplicate launch. NEXT_TASK.md gives exact long-job instructions. Prior85/etc scopes separate,not complete suite; four exporters/16methods excluded; all48findings open; physicalLAST; no assembly/signing/merge/freeze/approval.
