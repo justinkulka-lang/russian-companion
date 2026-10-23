@@ -37,9 +37,16 @@ class CurrentPackHistoricalBackupTest {
                     zip.getInputStream(zip.getEntry(BACKUP_LEARNER_ENTRY)).use { it.readBytes() }.decodeToString())
             } ?: continue // Two allowlisted ZIPs contain historical test reports, not learner backups.
             assertEquals(path, expectedHash.jsonPrimitive.content, hash(archive.readBytes()))
-            // The eight Unit7 captures follow the Unit3 correction but precede the Unit4 correction.
-            // All other captures predate corrected Unit3 teaching (including the Unit3 baseline captures).
-            val lastCurrent = if ("/ia003-unit7-agreement-teaching/" in path) 3 else 2
+            // Capture identities are reconciled in CAPTURE_IDENTITY_RECONCILIATION.json.
+            // The policy-transition and Unit3-baseline captures predate corrected Unit3 teaching.
+            // The five later capture families retain corrected Unit3, but predate corrected Unit4.
+            val lastCurrent = when {
+                "/ia003-policy-history-transition/" in path || "/ia003-unit3-gender-correction/" in path -> 2
+                listOf("ia003-unit13-context-teaching", "ia003-unit13-history-transition",
+                    "ia003-unit13-past-teaching", "ia003-unit7-agreement-teaching",
+                    "ia003-unit9-history-transition").any { "/$it/" in path } -> 3
+                else -> error("Unreconciled historical capture: $path")
+            }
             val expectedCredit = (1..lastCurrent).toSet()
             val name = "current-history-${System.nanoTime()}.db"
             val stage = File(context.cacheDir, name)
