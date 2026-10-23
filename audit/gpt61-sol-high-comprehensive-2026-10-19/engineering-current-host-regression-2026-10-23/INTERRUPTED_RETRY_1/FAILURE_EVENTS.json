@@ -1,0 +1,110 @@
+[
+  {
+    "kind": "RESULT",
+    "className": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+    "name": "changedMovedAndMissingComparisonFilesRemainBlocked",
+    "displayName": "changedMovedAndMissingComparisonFilesRemainBlocked",
+    "atMillis": 1792774919096,
+    "resultType": "FAILURE",
+    "startTime": 1792774917597,
+    "endTime": 1792774919043,
+    "exceptions": [
+      {
+        "type": "java.lang.AssertionError",
+        "messagePreview": "expected:<[src/main/java/dev/russiancompanion/v2/curriculum/Unit13ReportedPins.kt]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/Unit13ReportedPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt]>",
+        "fullMessageBytes": 238,
+        "fullMessageSha256": "4cd0569faf981ee34c229825456781c72005d3962d2ab9d39d1c6280232e434a"
+      }
+    ]
+  },
+  {
+    "kind": "RESULT",
+    "className": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+    "name": "at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable",
+    "displayName": "at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable",
+    "atMillis": 1792774919665,
+    "resultType": "FAILURE",
+    "startTime": 1792774917952,
+    "endTime": 1792774919580,
+    "exceptions": [
+      {
+        "type": "java.lang.AssertionError",
+        "messagePreview": "expected:<[]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt]>",
+        "fullMessageBytes": 96,
+        "fullMessageSha256": "b598037e01d0d0a12ff23e9875cfa9dc345442718ce21395217f3b5303457b1a"
+      }
+    ]
+  },
+  {
+    "kind": "RESULT",
+    "className": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+    "name": "coherentSourceForgeryAndRemovedItemIdsCannotKeepUnchangedCodeAdmitted",
+    "displayName": "coherentSourceForgeryAndRemovedItemIdsCannotKeepUnchangedCodeAdmitted",
+    "atMillis": 1792774920070,
+    "resultType": "FAILURE",
+    "startTime": 1792774919054,
+    "endTime": 1792774920065,
+    "exceptions": [
+      {
+        "type": "java.lang.AssertionError",
+        "messagePreview": "expected:<[src/main/java/dev/russiancompanion/v2/curriculum/BatchBSources.kt]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/BatchBSources.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt]>",
+        "fullMessageBytes": 228,
+        "fullMessageSha256": "2703642f91a01f10a1a991920d5020d7a6879ab7f04bcb2f5b2e92ae1da33f86"
+      }
+    ]
+  },
+  {
+    "kind": "RESULT",
+    "className": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+    "name": "exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus",
+    "displayName": "exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus",
+    "atMillis": 1792774920905,
+    "resultType": "FAILURE",
+    "startTime": 1792774920065,
+    "endTime": 1792774920890,
+    "exceptions": [
+      {
+        "type": "java.lang.AssertionError",
+        "messagePreview": "expected:<[]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt]>",
+        "fullMessageBytes": 96,
+        "fullMessageSha256": "b598037e01d0d0a12ff23e9875cfa9dc345442718ce21395217f3b5303457b1a"
+      }
+    ]
+  },
+  {
+    "kind": "RESULT",
+    "className": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+    "name": "newUiResourceAndCurriculumTextCannotBorrowAnExistingLiteral",
+    "displayName": "newUiResourceAndCurriculumTextCannotBorrowAnExistingLiteral",
+    "atMillis": 1792774921421,
+    "resultType": "FAILURE",
+    "startTime": 1792774920890,
+    "endTime": 1792774921415,
+    "exceptions": [
+      {
+        "type": "java.lang.AssertionError",
+        "messagePreview": "expected:<[src/main/java/dev/russiancompanion/v2/curriculum/Unreviewed.kt, src/main/java/dev/russiancompanion/v2/ui/Unreviewed.kt, src/main/res/values/unreviewed.xml]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/Unreviewed.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/ui/Unreviewed.kt, src/main/res/values/unreviewed.xml]>",
+        "fullMessageBytes": 406,
+        "fullMessageSha256": "311c6926552ae1e6f1c58abdbba37a004d91512f991328baa06edc57a07ad617"
+      }
+    ]
+  },
+  {
+    "kind": "RESULT",
+    "className": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+    "name": "currentRulesRetainUnit10CasesAndExactPositiveExistenceTeaching",
+    "displayName": "currentRulesRetainUnit10CasesAndExactPositiveExistenceTeaching",
+    "atMillis": 1792776077142,
+    "resultType": "FAILURE",
+    "startTime": 1792776073032,
+    "endTime": 1792776074341,
+    "exceptions": [
+      {
+        "type": "java.lang.AssertionError",
+        "messagePreview": "expected:<V2CurriculumPack(schemaVersion=1, packId=v2-curriculum-foundation, packVersion=3, publicReleaseEligible=false, linguisticReview=V2ReviewRecord(id=rev-pending-v2-curriculum, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=Pack-level status is not a unit approval. Each unit has its own pending review record., reviewChainStages=[], evidence=null, finalAudit=null), unitReviews=[V2UnitReviewRecord(id=rev-pending-unit-1, unitNumber=1, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=No qualified reviewer has signed Unit 1., reviewChainStages=[], evidence=null, finalAudit=null), V2UnitReviewRecord(id=rev-pending-unit-2, unitNumber=2, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, c",
+        "fullMessageBytes": 62178519,
+        "fullMessageSha256": "e2479adce091ff905a870d790dfe4cf1ee19cf63bd8db30c6c6b34fcf4392b2e"
+      }
+    ]
+  }
+]

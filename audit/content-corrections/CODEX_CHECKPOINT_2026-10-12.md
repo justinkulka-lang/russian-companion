@@ -1,3 +1,5 @@
+Current checkpoint: [Detached broad retry recovery](../gpt61-sol-high-comprehensive-2026-10-19/engineering-current-host-regression-2026-10-23/RETRY_RECOVERY.md). Two interrupted attempts preserved separately, no final broad result. Inspect existing detached job before duplicate launch or edits.
+
 Current checkpoint: [Broad runtime recovery](../gpt61-sol-high-comprehensive-2026-10-19/engineering-current-host-regression-2026-10-23/STATUS.md). Interrupted original preserved; independent retry prepared. Do not sum partial events or duplicate a running job.
 
 # Codex checkpoint — 2026-10-12
