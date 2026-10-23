@@ -1,0 +1,42 @@
+{
+  "CONTEXT.json": {
+    "bytes": 2917,
+    "sha256": "6334fb031092816fc1e01a43473d4f093df4e845a2890a17ca3beb02e287ac22"
+  },
+  "EVENTS.jsonl": {
+    "bytes": 1981,
+    "sha256": "f0ec4174b43ff4804d0444a7125abfe1f50474fd28db05d4402b0bb96d17e002"
+  },
+  "LINT.xml": {
+    "bytes": 31476,
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "RESULT.json": {
+    "bytes": 3573,
+    "sha256": "e584b3a0357c7fbfa4ef6e361165b5c2f2baa1657cf69778d43444d25050f1ac"
+  },
+  "RESULTS.csv": {
+    "bytes": 1236,
+    "sha256": "097df30923758f6be8285700d69fb8ca60049bb2a71804b60088188b9a92ec17"
+  },
+  "RUN.exit": {
+    "bytes": 2,
+    "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+  },
+  "RUN.log": {
+    "bytes": 5581,
+    "sha256": "9bf665a5edf45ffbd267aa5377871e153fb059c86f6c035f7afc5f908e1aaa2a"
+  },
+  "SHA256.json": {
+    "bytes": 812,
+    "sha256": "8133e096161117063442be802026741dfef509ef146a37484971eda57fa32e13"
+  },
+  "XML/TEST-dev.russiancompanion.v2.SavedReviewEntryLabelTest.xml": {
+    "bytes": 8464,
+    "sha256": "e396a235004977020966b860b49c03908f9c8fafe247e546163e40e0e7ec6435"
+  },
+  "gc-18818.log": {
+    "bytes": 5107,
+    "sha256": "781ce791a776d4192c9416bd12abb6ddacb88d3e102c5c09a49e5be599978b82"
+  }
+}

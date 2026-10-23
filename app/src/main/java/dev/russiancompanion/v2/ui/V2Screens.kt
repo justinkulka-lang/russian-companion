@@ -2,6 +2,7 @@ package dev.russiancompanion.v2.ui
 
 import dev.russiancompanion.v2.curriculum.cumulativeReviewPolicy
 import dev.russiancompanion.v2.curriculum.cumulativeReviewTitle
+import dev.russiancompanion.v2.curriculum.currentCumulativeAssignment
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.selection.selectable
@@ -431,7 +432,9 @@ internal fun V2UnitScreen(
         }
         if (cumulativeReviewPolicy(unit.number) != null) {
             Text("Before advancing, complete the assigned earlier-objective review. Earlier lesson answers and optional practice do not complete this review.")
-            V2SecondaryButton(cumulativeReviewTitle(unit.number, unit.advancement?.cumulativeReviewPolicyId), onOpenCumulativeReview, tag = "v2-open-cumulative-review")
+            val reviewPolicyId = currentCumulativeAssignment(pack, learner, unit.number)?.policyId
+                ?: unit.advancement?.cumulativeReviewPolicyId
+            V2SecondaryButton(cumulativeReviewTitle(unit.number, reviewPolicyId), onOpenCumulativeReview, tag = "v2-open-cumulative-review")
         }
         if (decision == null) {
             V2Status("Preparing advancement")

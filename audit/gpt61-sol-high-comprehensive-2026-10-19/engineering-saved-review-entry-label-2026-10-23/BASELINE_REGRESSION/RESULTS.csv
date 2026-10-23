@@ -1,0 +1,14 @@
+testClass,method,outcome,seconds,messagePreview,fullMessageBytes,fullMessageSha256
+dev.russiancompanion.v2.SavedReviewEntryLabelTest,noSavedTaskUsesTheCurrentDeclarationWithoutCreatingAnAssignment,PASSED,8.094,,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+dev.russiancompanion.v2.SavedReviewEntryLabelTest,genuineSavedLegacyTaskLabelsItsOwnReviewAtTheUnitEntry,FAILED,0.607,"java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains 'Review earlier reading and supplied subjects' (ignoreCase: false))
+Semantics of the node:
+Node #232 at (l=24.0, t=330.0, r=296.0, b=382.0)px, Tag: 'v2-open-cumulative-review'
+Focused = 'false'
+Role = 'Button'
+Shape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'
+Text = '[Review earlier noun genders and supplied subjects]'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]
+MergeDescendants = 'true'
+Has 15 siblings
+Selector used: (TestTag = 'v2-open-cumulative-review')
+",768,b4974d6fb31479e38cbd32684d70997129ccd34e32ce21e13723ca043f8bd94e

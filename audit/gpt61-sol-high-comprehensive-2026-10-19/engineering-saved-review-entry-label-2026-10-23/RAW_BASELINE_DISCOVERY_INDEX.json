@@ -1,0 +1,38 @@
+{
+  "CONTEXT.json": {
+    "bytes": 2837,
+    "sha256": "5d15f938b167c8af0766e4a0f5eb7748233caab4e520b0cc19878d09c9845835"
+  },
+  "EVENTS.jsonl": {
+    "bytes": 1180,
+    "sha256": "581644ba4b34c024e28c5ec2ed4884b9c86605570878fd55089b44bb48a0332f"
+  },
+  "RESULT.json": {
+    "bytes": 2467,
+    "sha256": "5f2c13d347a1590b27c9b18f1b9dd4bb90b494df918a1ce7b20df23f797a6b60"
+  },
+  "RESULTS.csv": {
+    "bytes": 464,
+    "sha256": "a0fe8d1a6efd0706afe60a036308008cbd4ebe83235cb97d6595b4632b5e3a8a"
+  },
+  "RUN.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "RUN.log": {
+    "bytes": 3207,
+    "sha256": "9c55302754abeb3f5d70f9a9e887ca69f630f89397d601e5c60f05e25b92091a"
+  },
+  "SHA256.json": {
+    "bytes": 730,
+    "sha256": "9fcc097b560d71a4df4b6a2a0f606023196ae64f66f243dc498ef1b75c8d0546"
+  },
+  "XML/TEST-dev.russiancompanion.v2.SavedReviewEntryLabelTest.xml": {
+    "bytes": 702,
+    "sha256": "0bf5195de89efa86a66438448b864ab3631a235dc714a4daf5e593c59cbba68a"
+  },
+  "gc-18670.log": {
+    "bytes": 180,
+    "sha256": "793a12c2aec7c6263af8e97f1caa959f1e1c3d26a0b3a2a5bcec26aff79d4d0d"
+  }
+}

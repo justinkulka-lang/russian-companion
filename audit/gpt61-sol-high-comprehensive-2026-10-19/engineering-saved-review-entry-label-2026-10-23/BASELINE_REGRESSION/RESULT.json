@@ -1,0 +1,83 @@
+{
+  "sourceCommit": "a95000cf6d124932518ff4981aa444e086a7315d",
+  "inputTrees": {
+    "app/src/main": "9b1d68ed8569ae303316fd3cedc56a87737c99ce",
+    "app/src/test": "739c884238366dcbede30e2bba9f81051648fd0b",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "dc5f3560ceed6ffee1fc04773890a1f3e028a840",
+    "release": "c6d9a8dc6860b2dcfbc7c6b1690253fb2b1989de"
+  },
+  "syntheticDryRun": false,
+  "exitCode": 1,
+  "finishedUtc": "2026-10-23T13:47:31.667722+00:00",
+  "testCounts": {
+    "reported": 2,
+    "passed": 1,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 1,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.SavedReviewEntryLabelTest",
+      "method": "noSavedTaskUsesTheCurrentDeclarationWithoutCreatingAnAssignment",
+      "outcome": "PASSED",
+      "seconds": "8.094",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SavedReviewEntryLabelTest",
+      "method": "genuineSavedLegacyTaskLabelsItsOwnReviewAtTheUnitEntry",
+      "outcome": "FAILED",
+      "seconds": "0.607",
+      "messagePreview": "java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains 'Review earlier reading and supplied subjects' (ignoreCase: false))\nSemantics of the node:\nNode #232 at (l=24.0, t=330.0, r=296.0, b=382.0)px, Tag: 'v2-open-cumulative-review'\nFocused = 'false'\nRole = 'Button'\nShape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'\nText = '[Review earlier noun genders and supplied subjects]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]\nMergeDescendants = 'true'\nHas 15 siblings\nSelector used: (TestTag = 'v2-open-cumulative-review')\n",
+      "fullMessageBytes": 768,
+      "fullMessageSha256": "b4974d6fb31479e38cbd32684d70997129ccd34e32ce21e13723ca043f8bd94e"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.SavedReviewEntryLabelTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "1",
+      "errors": "0",
+      "timestamp": "2026-10-23T13:45:51.491Z",
+      "hostname": "0cc76a0c8c68",
+      "time": "9.283"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": {
+    "sameInputTrees": true,
+    "discoveredNotReported": [],
+    "reportedNotDiscovered": [],
+    "exactSameMethodSet": true
+  },
+  "allFreshSelectedMethodsReported": true,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}
