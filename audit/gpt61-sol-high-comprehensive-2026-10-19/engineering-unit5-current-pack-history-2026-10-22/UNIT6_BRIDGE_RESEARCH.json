@@ -1,0 +1,354 @@
+{
+  "kind": "ENGINEERING_RESEARCH_NOT_POLICY_ACTIVATION",
+  "currentPolicy": "unit6-prior-reading-subject-noun-behavior-v2",
+  "currentSchema": 4,
+  "currentPools": 3,
+  "retainedMeaning": "Print-case matching, supplied noun behavior, supplied subject role",
+  "noNewPolicyOrSchema": true,
+  "candidate": "Unit4personal-pronoun records are a possible finite gloss-recognition replacement, not evidence of productive case choice or contextual pronoun use",
+  "limit": "вы is keyed to you(plural); the existing chain does not establish the formal-singular use. Do not infer full pronoun mastery or activate a replacement solely to increase pool breadth.",
+  "needs": "Review admitted evidence and general-rule/context teaching; assess alternatives before a new version",
+  "chains": [
+    {
+      "unitNumber": 4,
+      "objective": {
+        "id": "obj-u4-pronouns",
+        "unitNumber": 4,
+        "title": "Recognize admitted personal pronouns",
+        "kind": "RECOGNITION",
+        "instructionStepIds": [
+          "u4-st-orient",
+          "u4-st-teach-pronouns-1",
+          "u4-st-teach-pronouns-2",
+          "u4-st-teach-pronouns-3"
+        ],
+        "exampleIds": [
+          "ex-u4-я",
+          "ex-u4-мы",
+          "ex-u4-ты",
+          "ex-u4-вы",
+          "ex-u4-он",
+          "ex-u4-она",
+          "ex-u4-оно",
+          "ex-u4-они"
+        ],
+        "practiceStepIds": [
+          "u4-st-guided-pronouns-1"
+        ],
+        "checkItemIds": [
+          "u4-i-pronoun-ты",
+          "u4-i-pronoun-вы",
+          "u4-i-pronoun-он",
+          "u4-i-pronoun-она",
+          "u4-i-pronoun-оно",
+          "u4-i-pronoun-они"
+        ],
+        "remediationStepIds": [
+          "u4-st-rem-pronouns"
+        ]
+      },
+      "steps": [
+        {
+          "id": "u4-st-orient",
+          "kind": "ORIENT",
+          "title": "Person words, present forms, a written mark, and dictionary-form examples",
+          "body": "Proposed Unit 4 uses frozen rows for the person words, the present forms, the written mark, and the dictionary-form examples. The written mark is not a listening score. The owned book remains separate work. Qualified review is pending.",
+          "referenceIds": [
+            "ref-u35-attribution"
+          ],
+          "bookDirection": "Open Lesson 4 in the copy you own. The app records do not replace that lesson."
+        },
+        {
+          "id": "u4-st-teach-pronouns-1",
+          "kind": "TEACH",
+          "title": "Two speaker rows",
+          "body": "The admitted dictionary rows supply this pair. я — I. мы — we. ",
+          "referenceIds": [
+            "ref-u35-attribution"
+          ],
+          "exampleIds": [
+            "ex-u4-я",
+            "ex-u4-мы"
+          ]
+        },
+        {
+          "id": "u4-st-guided-pronouns-1",
+          "kind": "GUIDED",
+          "title": "Guided practice",
+          "body": "Choose the admitted record. The feedback states the frozen field.",
+          "itemIds": [
+            "u4-i-pronoun-я",
+            "u4-i-pronoun-мы"
+          ],
+          "remediationStepId": "u4-st-rem-pronouns"
+        },
+        {
+          "id": "u4-st-teach-pronouns-2",
+          "kind": "TEACH",
+          "title": "Two addressee rows",
+          "body": "The admitted dictionary rows supply this pair. ты — you. вы — you (plural). ",
+          "referenceIds": [
+            "ref-u35-attribution"
+          ],
+          "exampleIds": [
+            "ex-u4-ты",
+            "ex-u4-вы"
+          ]
+        },
+        {
+          "id": "u4-st-teach-pronouns-3",
+          "kind": "TEACH",
+          "title": "Four other-person rows",
+          "body": "The admitted dictionary rows supply this group. он — he. она́ — she. оно́ — it. они́ — they. ",
+          "referenceIds": [
+            "ref-u35-attribution"
+          ],
+          "exampleIds": [
+            "ex-u4-он",
+            "ex-u4-она",
+            "ex-u4-оно",
+            "ex-u4-они"
+          ]
+        },
+        {
+          "id": "u4-st-rem-pronouns",
+          "kind": "REMEDIATE",
+          "title": "Remediation",
+          "body": "Return to the explanation. Compare the shown form with the admitted record. Do not invent a form that is absent from the record.",
+          "exampleIds": [
+            "ex-u4-я",
+            "ex-u4-мы"
+          ]
+        }
+      ],
+      "checkItems": [
+        {
+          "id": "u4-i-pronoun-ты",
+          "kind": "SOURCE_MEANING",
+          "language": "en",
+          "prompt": "Which admitted gloss is recorded for the shown personal word?",
+          "promptLetter": "ты",
+          "options": [
+            "I",
+            "we",
+            "you",
+            "you (plural)",
+            "he",
+            "she",
+            "it",
+            "they"
+          ],
+          "answer": "you",
+          "feedback": "The frozen dictionary row records this gloss: you.",
+          "objectiveId": "obj-u4-pronouns",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "containsGeneratedRussian": false
+        },
+        {
+          "id": "u4-i-pronoun-вы",
+          "kind": "SOURCE_MEANING",
+          "language": "en",
+          "prompt": "Which admitted gloss is recorded for the shown personal word?",
+          "promptLetter": "вы",
+          "options": [
+            "I",
+            "we",
+            "you",
+            "you (plural)",
+            "he",
+            "she",
+            "it",
+            "they"
+          ],
+          "answer": "you (plural)",
+          "feedback": "The frozen dictionary row records this gloss: you (plural).",
+          "objectiveId": "obj-u4-pronouns",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "containsGeneratedRussian": false
+        },
+        {
+          "id": "u4-i-pronoun-он",
+          "kind": "SOURCE_MEANING",
+          "language": "en",
+          "prompt": "Which admitted gloss is recorded for the shown personal word?",
+          "promptLetter": "он",
+          "options": [
+            "I",
+            "we",
+            "you",
+            "you (plural)",
+            "he",
+            "she",
+            "it",
+            "they"
+          ],
+          "answer": "he",
+          "feedback": "The frozen dictionary row records this gloss: he.",
+          "objectiveId": "obj-u4-pronouns",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "containsGeneratedRussian": false
+        },
+        {
+          "id": "u4-i-pronoun-она",
+          "kind": "SOURCE_MEANING",
+          "language": "en",
+          "prompt": "Which admitted gloss is recorded for the shown personal word?",
+          "promptLetter": "она́",
+          "options": [
+            "I",
+            "we",
+            "you",
+            "you (plural)",
+            "he",
+            "she",
+            "it",
+            "they"
+          ],
+          "answer": "she",
+          "feedback": "The frozen dictionary row records this gloss: she.",
+          "objectiveId": "obj-u4-pronouns",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "containsGeneratedRussian": false
+        },
+        {
+          "id": "u4-i-pronoun-оно",
+          "kind": "SOURCE_MEANING",
+          "language": "en",
+          "prompt": "Which admitted gloss is recorded for the shown personal word?",
+          "promptLetter": "оно́",
+          "options": [
+            "I",
+            "we",
+            "you",
+            "you (plural)",
+            "he",
+            "she",
+            "it",
+            "they"
+          ],
+          "answer": "it",
+          "feedback": "The frozen dictionary row records this gloss: it.",
+          "objectiveId": "obj-u4-pronouns",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "containsGeneratedRussian": false
+        },
+        {
+          "id": "u4-i-pronoun-они",
+          "kind": "SOURCE_MEANING",
+          "language": "en",
+          "prompt": "Which admitted gloss is recorded for the shown personal word?",
+          "promptLetter": "они́",
+          "options": [
+            "I",
+            "we",
+            "you",
+            "you (plural)",
+            "he",
+            "she",
+            "it",
+            "they"
+          ],
+          "answer": "they",
+          "feedback": "The frozen dictionary row records this gloss: they.",
+          "objectiveId": "obj-u4-pronouns",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "containsGeneratedRussian": false
+        }
+      ],
+      "examples": [
+        {
+          "id": "ex-u4-я",
+          "kind": "LEXICAL",
+          "letterId": "",
+          "display": "я",
+          "note": "I",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u4-pronouns"
+        },
+        {
+          "id": "ex-u4-мы",
+          "kind": "LEXICAL",
+          "letterId": "",
+          "display": "мы",
+          "note": "we",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u4-pronouns"
+        },
+        {
+          "id": "ex-u4-ты",
+          "kind": "LEXICAL",
+          "letterId": "",
+          "display": "ты",
+          "note": "you",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u4-pronouns"
+        },
+        {
+          "id": "ex-u4-вы",
+          "kind": "LEXICAL",
+          "letterId": "",
+          "display": "вы",
+          "note": "you, plural, and also the polite or formal singular",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u4-pronouns"
+        },
+        {
+          "id": "ex-u4-он",
+          "kind": "LEXICAL",
+          "letterId": "",
+          "display": "он",
+          "note": "he",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u4-pronouns"
+        },
+        {
+          "id": "ex-u4-она",
+          "kind": "LEXICAL",
+          "letterId": "",
+          "display": "она́",
+          "note": "she",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u4-pronouns"
+        },
+        {
+          "id": "ex-u4-оно",
+          "kind": "LEXICAL",
+          "letterId": "",
+          "display": "оно́",
+          "note": "it",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u4-pronouns"
+        },
+        {
+          "id": "ex-u4-они",
+          "kind": "LEXICAL",
+          "letterId": "",
+          "display": "они́",
+          "note": "they",
+          "sourceId": "src-openrussian-50e210c4",
+          "reviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+          "objectiveId": "obj-u4-pronouns"
+        }
+      ],
+      "provenance": []
+    }
+  ],
+  "existingPoolReferences": {
+    "subjectRole": "app/src/main/assets/content/v2-curriculum.json::obj-u4-nominative; prior Unit5 RESEARCH_CHAIN.json retains its reviewed chain",
+    "nounBehavior": "app/src/main/assets/content/v2-curriculum.json::obj-u5-indeclinable; existing Unit6 schemas retain the exact five-candidate pool"
+  },
+  "rawAssetSha256": "6355bcee76654d6b84e3aab2edfe5763292003a5c67337969402568ef42af3ab"
+}

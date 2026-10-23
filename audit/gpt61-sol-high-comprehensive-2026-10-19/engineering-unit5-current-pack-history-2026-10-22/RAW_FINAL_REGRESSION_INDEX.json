@@ -1,0 +1,54 @@
+{
+  "CONTEXT.json": {
+    "bytes": 3170,
+    "sha256": "193c1a244fd3908716b2f7ad0ca07da3a2b136ae242e399fca505cce650ee1f9"
+  },
+  "EVENTS.jsonl": {
+    "bytes": 3536,
+    "sha256": "07d86f8f52d357116593ecf88e9db130aca066fcd536972a36baf98c2380da60"
+  },
+  "HISTORY_CASES.jsonl": {
+    "bytes": 23522,
+    "sha256": "ea8cafbe19ddad4b156c326bbc8ac7b62a637d708d5385fd3c9263499fe0bbb0"
+  },
+  "LINT.xml": {
+    "bytes": 31476,
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "RESULT.json": {
+    "bytes": 4539,
+    "sha256": "f447477f3990dc225656898ce664a534fb792ed5968184714fb4cae6784fe969"
+  },
+  "RESULTS.csv": {
+    "bytes": 1228,
+    "sha256": "2a2a5034be548f89060a5786f50557a5efcf630d42efdd832399e174c1de399d"
+  },
+  "RUN.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "RUN.log": {
+    "bytes": 3874,
+    "sha256": "2acbec38d142c23452a7dc83cdc6c35a049c6470d2fb87708488121f728ff0d6"
+  },
+  "SHA256.json": {
+    "bytes": 1130,
+    "sha256": "e9ed1b6ba3f086390660eb91f540368b25dff6cd09d8cca75c2f018eb5f7379e"
+  },
+  "XML/TEST-dev.russiancompanion.v2.CurrentPackHistoricalBackupTest.xml": {
+    "bytes": 679,
+    "sha256": "fe904dd2011eeea11bae473f29a37f7b4c1f7d558bac8723d362b4914bf44c1f"
+  },
+  "XML/TEST-dev.russiancompanion.v2.Unit5GrammarReviewTest.xml": {
+    "bytes": 35729,
+    "sha256": "daf9a24fe46be8f7db7952cdf3e215f748781525a390f8f9a4947a06a41f72fb"
+  },
+  "gc-17293.log": {
+    "bytes": 46868,
+    "sha256": "a81a0c1eb55d3650202184eff416cc6882d54cb8b6ec44b2e6708cd5605aab33"
+  },
+  "gc-17295.log": {
+    "bytes": 4906,
+    "sha256": "9a27afab33f6c4b73b7a20d1e2865a10866c07f8f2dd85d2c0fafb8a3e51dbb1"
+  }
+}
