@@ -1,0 +1,3 @@
+# Unit7 source tooling prepared; generation and execution pending
+
+Current source pin and strict current→preUnit7→preUnit6→preUnit5 whole-pack proofs are prepared. Exact-file reference changes only the V2CumulativeReview.kt hash and adds an explicit pending engineering record;19files/292bindings/26itemIDs unchanged. Two new static tooling methods are inventory,not executed. Production and155generatedrecords unchanged/stale. Inspect external unit7-source-reconciliation-2026-10-24 before any output-writing generation/launch; never overwrite prior attempts. All48findings OPEN/physicalLAST/four exporters excluded/no APK/signing/merge/freeze/approval.

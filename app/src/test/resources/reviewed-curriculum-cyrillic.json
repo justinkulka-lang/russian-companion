@@ -2054,7 +2054,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
-      "sha256": "a3ababd9e282b2c1c1db522ff076a68bc39bb1944a23508b1c8137e111accc29",
+      "sha256": "f727b5232ecba2df679762aaf5a1cabfa0ac8aaf191ffe04578cedb8de26f9ba",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -5214,6 +5214,17 @@
         "u4-i-verb-идти-они"
       ],
       "scope": "Exact existing item references and policy/compatibility control flow only; no Russian rendering/construction, linguistic acceptance or rights approval",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "2e2ebcebc81f54c04db7f0ac24e99374674c97c5",
+      "previousRecordedSha256": "a3ababd9e282b2c1c1db522ff076a68bc39bb1944a23508b1c8137e111accc29",
+      "sha256": "f727b5232ecba2df679762aaf5a1cabfa0ac8aaf191ffe04578cedb8de26f9ba",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Reuses existing gender and inanimate pools; versioned Unit7 registry, identity compatibility and labels only. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }
