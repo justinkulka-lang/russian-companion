@@ -571,8 +571,20 @@ class Units2630SourceIntakeTest {
                 }
             } else {
                 assertEquals("historical unit $number", digest, V2Validator.unitContentReviewDigest(prior, number))
+                if (number == 7) {
+                    // Preserve the original teaching pin; only the versioned review declaration differs.
+                    RecordedCurriculumConservationScope.beforeUnit7GenderReview(root, pack).let { pack ->
                 RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
                     RecordedIntakeCorrectionScope.load(root, correction), number)
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals(V2Validator.unitContentReviewDigest(RecordedIntakeCorrectionScope.load(root, correction), number),
+                        V2Validator.unitContentReviewDigest(pack, number))
+                } else {
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    RecordedIntakeCorrectionScope.load(root, correction), number)
+                }
                 assertNotEquals(digest, V2Validator.unitContentReviewDigest(pack, number))
             }
         }
