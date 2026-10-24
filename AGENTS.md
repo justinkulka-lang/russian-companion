@@ -1,3 +1,5 @@
+Current checkpoint: [Unit7 initial follow-up preserved; prerequisite setup corrected](audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit7-broad-failure-reconciliation-2026-10-24/STATUS.md). df16da98:35reported/34pass/1new-setupfailure,7classes,exit1; all3originalfailureIDs passed. Corrected9method full-class scope pending; inspect external CORRECTED before launch/edit. All original assertions/hashes retained; production/155records unchanged; all48OPEN/auditINCOMPLETE/physicalLAST/four exporters excluded/noAPK/signing/merge/freeze/approval.
+
 Current checkpoint: [Unit7 broad failures reconciled; verification pending](audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit7-broad-failure-reconciliation-2026-10-24/STATUS.md). 35-method/7-full-class inventory only; inspect external unit7-broad-failure-reconciliation-2026-10-24 before launch/edit. Original broad remains1374pass/3fail/1skip. Original assertions/pins archived and retained; current/historical scopes explicit; production/155records unchanged. Four exporters excluded; all48OPEN/auditINCOMPLETE/physicalLAST/noAPK/signing/merge/freeze/approval.
 
 # Codex continuation

@@ -226,6 +226,13 @@ class Unit7CumulativeReviewTest {
         RecordedCurriculumConservationScope.assertCurrent(root(), p)
         LocalStore.openInMemory(context()).use { s ->
             for (n in 1..taughtThrough) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
+            if (taughtThrough == 3) {
+                val review = s.openUnit3CumulativeReview(p, s.learnerMutationEpoch())!!
+                review.slots.indices.forEach { answer(p, s, review, it) }
+                runBlocking { advanceFrom(p, s, 3) }
+                assertTrue(3 in currentCompletedUnitNumbers(p, s.v2LearnerView()))
+                assertFalse(6 in currentCompletedUnitNumbers(p, s.v2LearnerView()))
+            }
             s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 7, startingPoint = "RESUME_FROM_BOOK"))
             val before = s.governedLearnerDocument()
             assertNull(createCumulativeReviewAssignment(p, s.v2LearnerView(), 7, "insufficient", 0))
