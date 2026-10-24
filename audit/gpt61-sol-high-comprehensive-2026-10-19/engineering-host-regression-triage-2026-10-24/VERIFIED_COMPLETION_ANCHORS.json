@@ -1,0 +1,20 @@
+{
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/RUNTIME_SHA256.json": "3fb226250d6de20d97b0b970607bb0a3832d84a5508e6b53f210e8b0f2945822",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/RUNTIME_RESULT.json": "edea6e531ac31021ddb2ee061eacc170e1cf5788b9ff5ce7962cc43d72532a15",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/RUNTIME_CONTEXT.json": "f9da12d2d6a9203ce5246d0710d94ee98d15502e34a4f995f09c1440650fe6b8",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/RAW_BROAD.zip": "498e7ab5b7e585ee8d38d046c00f85632dc31212065bf0db82f591c129a39c01",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/CONSERVATION.json": "e85655b008f2109d17d6cff06b726efa9f17f8b1ec3a219bc98095efb6244c2c",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/STATUS.md": "e333e2651d986436b430f75b60b676ad25af805de38ef970caf59342a395ee2f",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/PERSISTED_VERIFICATION.json": "88807fd0ad5f6c614ad9335a055f90b737f50c8a8d158bbfc13292f3bdf0be27",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/CONSERVED_INPUTS.json": "2ceee7aee1229f29969e82998dce620f924c8cd2fba23dcab7c3bae28f74d48c",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/FAILED_METHODS.json": "277343d59993553000fc7079131b49849c23bece01f0392f49af3b492f294bfa",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/LAUNCH_PREPARATION.json": "9c60a59a2b790d4b4fb255428b6a48b9f123f82a25dfc62f70358ab491b14abd",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/SHA256.json": "dd1ad43bf10ecf90178daa311bac6f481caff2fdf9de22cfcfb5bf706c66505d",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/RUNTIME_RESULTS.csv": "7315110ba15edf2a1aabaaf498f34ed80aefc6f198052822144f5ffb46505cd3",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/RAW_BROAD_INDEX.json": "c558fde28b9692501b212cb086fd698a9628cec15cce534cd921b9cd87631066",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/verify_saved_broad.py": "2a2116681b6d41497db7a0d4e7789261b4b33d971df2d2e05caa1beb0ddb5e82",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/complete_evidence.py": "68d06c62af994016ab45c1f2c683892e361b67ddc57145206f2a2295ba6b667f",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/REPORT.md": "15e6c682c884c6aeec04a22c5ef0b296876e78253a49a542bac149ff38b2f45d",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/RUNTIME_RUN.exit": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+  "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-targeted-jit-broad-2026-10-23/SKIPPED_METHODS.json": "6aa0336e07fbe0f7293cea2785dd5e59099278d68af5e378edba902334beb778"
+}

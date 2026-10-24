@@ -1,0 +1,20 @@
+{
+  "CHECKPOINT.json": "a6371da7fbb92cc807968fcd9989e066953bad628f234961b595b83840c54a9d",
+  "FAILED_CLASS_SCOPE.json": "bf477420fe2fd8cb292f3991d3e6084fb6f5c2c6a5712e89d05736836a388d18",
+  "FAILURE_TRIAGE.json": "c38eb68db0899353f036e736985c9fb4c59d68410a58911c6a08cccbdb48ae87",
+  "NEXT_TASK.md": "cace692de0f5f4b7fdda3f1a0fd1917963e429c00f1d8fdedeb6bd273151d942",
+  "VALIDATION.json": "750bbdab1e3d4f329565968ed0464fd2bb9fe788804635d16d30e8187e9a07dd",
+  "VERIFIED_COMPLETION_ANCHORS.json": "85fad65b962e07737931514c03d12f02736262807485aa390db90b153bfab138",
+  "historical-monitor-observations/ACTIVE_MONITOR.jsonl": "4086c3695e2551f548670d4d48898f707c67f92f8c4af4297ddbda5124521625",
+  "historical-monitor-observations/AUTONOMY_BOUNDARY.json": "17408079e22636f2e2d85c56cbc159c83c6d672be070b288335170634e1736d2",
+  "historical-monitor-observations/MID_RUN_IDENTITY_0118UTC.json": "95190e41813e9055d35c89075434fcc4c3e81cdc7cd2dc6d29160caee3f2c151",
+  "historical-monitor-observations/PARTIAL_FAILURES_0124UTC.json": "1fbc31285c3b6404bb2ec8bd3ecadee3b824721382258610b0c660e4102d02e3",
+  "historical-monitor-observations/PARTIAL_FAILURES_0126UTC.json": "b885092cec1f814197b57081136faab3b407437447de620021619c9a35557f26",
+  "historical-monitor-observations/PARTIAL_FAILURES_0140UTC.json": "61d8f7e33ac9e5611ca1c343c844a7d9232f5d9aef9b3e06e126db276441a511",
+  "historical-monitor-observations/PENDING_INVENTORY_0041UTC.json": "84b76401fba4b98f7618bd6b856d37a12175906e27b1a3fe5731ee3dcbd42460",
+  "historical-monitor-observations/README.md": "99ea8bf9e836e6fe8291434dee5c6cbb6e7efc7e605722f598af93bf5fe2c5fe",
+  "historical-monitor-observations/READ_ONLY_FAILURE_RECONCILIATION.json": "f2eb44d28f80ac53f66dc11296c82f2e92f1c9b4982f85502d15334333af131d",
+  "historical-monitor-observations/READ_ONLY_PREAPPLICATION_REVIEW.json": "e63f149d3a2ce7d6e4a00103b3e46fd486a987b7a3e499359dd9ecbd0e81c888",
+  "historical-monitor-observations/READ_ONLY_TIMING_COMPARISON.json": "1ab53b4e0090afea2e1f3c0e31828061ed58dd22d10c0cbe23634a0ee1bf5dc6",
+  "historical-monitor-observations/active_monitor.py": "03e092d09275e361f0986dfb49eea4f3be5bd70071819b7b69fa6b8947c3b60b"
+}
