@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "pinnedSource": "27894ced3db0da622968a167c6d4ed282469e10a",
+  "objectiveChains": 8,
+  "scoredCandidates": 28,
+  "selectedGenderCandidates": 5,
+  "authenticHistoricalStatesIndexed": 8,
+  "originalArchivesShaCrc": 66,
+  "plannedScenariosNotExecuted": 10,
+  "policyActivated": false,
+  "runtimeTestsExecuted": 0,
+  "completeSuite": false,
+  "independentAudit": "INCOMPLETE_ALL48_OPEN",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}
