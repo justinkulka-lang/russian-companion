@@ -1,3 +1,5 @@
+Current checkpoint: [Unit7 broad failures reconciled; verification pending](audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit7-broad-failure-reconciliation-2026-10-24/STATUS.md). 35-method/7-full-class inventory only; inspect external unit7-broad-failure-reconciliation-2026-10-24 before launch/edit. Original broad remains1374pass/3fail/1skip. Original assertions/pins archived and retained; current/historical scopes explicit; production/155records unchanged. Four exporters excluded; all48OPEN/auditINCOMPLETE/physicalLAST/noAPK/signing/merge/freeze/approval.
+
 # Codex continuation
 
 Current checkpoint: [Integrated Unit7 broad selected-host scope completed](audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit7-integrated-broad-2026-10-24/REPORT.md). Testeda5cafbbe:1378reported/1374passed/3failed/0errors/1skipped,233classes,exit1. Fresh XML/events/discovery/six trees verified; full raw evidence/assertions/history conserved. Read REPORT.md/NEXT_TASK.md. Selected host scope,not complete acceptance; four exporters excluded; all48OPEN/physicalLAST/noAPK/signing/merge/freeze/approval.

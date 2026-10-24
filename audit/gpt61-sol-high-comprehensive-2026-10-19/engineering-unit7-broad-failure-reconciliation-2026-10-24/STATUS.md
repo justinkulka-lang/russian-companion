@@ -1,0 +1,7 @@
+# Unit 7 broad failure reconciliation prepared
+
+Verification pending. Broad source a5cafbbeb16331d1184b058debee901f2ce485aa remains 1378 reported / 1374 passed / 3 failed / 1 physical skip, exit 1; evidence 8d6252ab399616ddae4a1f880add63d14db79038. No scopes are combined or relabelled.
+
+Test-only reconciliation: original v1 objective/skill assertions run against the whole-pack-proven preceding Unit7 declaration, while the same method continues with current schema9 obligations, advancement, snapshot and backup. Original placement method retains historical v1 Unit1/Unit6 behavior; two new current UI methods cover missing Unit3 first and missing Unit6 once Unit3 is taught. Source-intake Unit7 teaching comparison uses the exact declaration-only historical scope, then separately matches current Unit7 to its implementation and proves its digest differs. All original pins/assertion lines retained; ORIGINAL_TESTS.zip preserves prechange bytes. Original literal pack() line retained using narrow historical shadowing.
+
+35-method / 7-full-class inventory is not execution. See VERIFICATION_PLAN.json and external state before launching/editing. Production, catalog, docs, review, release and 155 generated records unchanged. Four exporters/16 methods excluded. All48 findings OPEN; audit INCOMPLETE. Physical acceptance LAST after final independent comprehensive nonphysical audit. No APK assembly/install/signing/merge/freeze/formal advancement/release approval. Native cause UNCONFIRMED; JIT directive experimental; no settings changes.

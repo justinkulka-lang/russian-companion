@@ -194,7 +194,8 @@ class Unit7CumulativeReviewTest {
 
     // Original placement contract: historical v1 owns Unit1/Unit6, not current Unit3/Unit6.
     @Test fun placementWithTaughtUnit1ButUntaughtUnit6RepairsTheMissingOwnerInsteadOfUnit1() {
-        val p = RecordedCurriculumConservationScope.beforeUnit7GenderReview(root(), pack())
+        val p = pack()
+        RecordedCurriculumConservationScope.beforeUnit7GenderReview(root(), p).let { p ->
         LocalStore.openInMemory(context()).use { s ->
             for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
             s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 7, startingPoint = "RESUME_FROM_BOOK"))
@@ -209,6 +210,8 @@ class Unit7CumulativeReviewTest {
             assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 7 })
         }
     }
+
+    } // End exact historical declaration scope.
 
     @Test fun currentPlacementWithOnlyUnit1TeachingRepairsUnit3BeforeUnit6() {
         assertCurrentPlacementRepair(taughtThrough = 2, missingOwner = 3)
