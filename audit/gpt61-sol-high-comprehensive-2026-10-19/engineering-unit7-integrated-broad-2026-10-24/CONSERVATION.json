@@ -1,0 +1,29 @@
+{
+  "sourceCommit": "a5cafbbeb16331d1184b058debee901f2ce485aa",
+  "inputTrees": {
+    "app/src/main": "606d6712146334d8bb4337bec4fb95648589e70f",
+    "app/src/test": "eb2fcfcbd06abe2c7fc8dc4e58cc6cf8bafae4a4",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "0b8688248d13372e677d90108864cc90d44a13cc",
+    "release": "adb08d54e11d4554eab7664ee4f5f0f44a522464"
+  },
+  "canonicalSourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
+  "sourceDigestBasis": "Exact same main/catalog/docs/review/release trees as preceding official Kotlin computation; no approximate recomputation",
+  "testedGeneratedRecords": 155,
+  "currentRecordIdentityBasis": "CURRENT_RECORD_INPUTS.json uses tested source Git objects; live matches verified at collection",
+  "originalArchivesShaCrc": 66,
+  "genuineExtraCaptures": 2,
+  "priorProtectedFiles": 7743,
+  "persistentSettingAdopted": false,
+  "settingsSavedThisTask": [],
+  "publication": "Earlier user-confirmed; independently unobserved. No new save/publication.",
+  "nativeRootCause": "UNCONFIRMED",
+  "directive": "EXPERIMENTAL_NOT_ADOPTED",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "independentAudit": "INCOMPLETE_ALL48_OPEN",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "completeSuite": false
+}
