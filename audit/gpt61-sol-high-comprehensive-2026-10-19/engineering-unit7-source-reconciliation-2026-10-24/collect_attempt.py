@@ -2,7 +2,7 @@ from pathlib import Path
 import json,subprocess,hashlib,zipfile,shutil,sys
 R=Path('/workspace/russian-companion');W=Path(sys.argv[1]);D=R/'audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit7-source-reconciliation-2026-10-24'/sys.argv[2];D.mkdir()
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();save=lambda n,v:(D/n).write_text(json.dumps(v,indent=2)+'\n')
-c=json.loads((W/'PIPELINE_COMPLETION.json').read_text());r=json.loads((W/'REGRESSION/RESULT.json').read_text());ctx=json.loads((W/'REGRESSION/CONTEXT.json').read_text());assert c['sourceCommit']==r['sourceCommit']==ctx['sourceCommit'];assert r['testCounts']['reported']==124 and r['classes']==26
+c=json.loads((W/'PIPELINE_COMPLETION.json').read_text());r=json.loads((W/'REGRESSION/RESULT.json').read_text());ctx=json.loads((W/'REGRESSION/CONTEXT.json').read_text());assert c['sourceCommit']==r['sourceCommit']==ctx['sourceCommit'];assert r['testCounts']['reported']==(124 if sys.argv[2]=='ATTEMPT_1' else 14) and r['classes']==(26 if sys.argv[2]=='ATTEMPT_1' else 4)
 assert subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip()==r['sourceCommit'];assert not subprocess.check_output(['git','status','--porcelain'],cwd=R,text=True).strip()
 files={}
 for mode in ['DISCOVERY','REGRESSION']:

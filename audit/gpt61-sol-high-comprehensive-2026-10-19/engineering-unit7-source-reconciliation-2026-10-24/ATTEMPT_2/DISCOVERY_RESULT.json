@@ -1,0 +1,211 @@
+{
+  "sourceCommit": "3bf0a0dd01fc45d2617b2ea01986f4f86c14cb24",
+  "inputTrees": {
+    "app/src/main": "606d6712146334d8bb4337bec4fb95648589e70f",
+    "app/src/test": "eb2fcfcbd06abe2c7fc8dc4e58cc6cf8bafae4a4",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "0b8688248d13372e677d90108864cc90d44a13cc",
+    "release": "adb08d54e11d4554eab7664ee4f5f0f44a522464"
+  },
+  "syntheticDryRun": true,
+  "exitCode": 0,
+  "finishedUtc": "2026-10-24T16:34:47.323250+00:00",
+  "testCounts": {
+    "reported": 14,
+    "passed": 0,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 14
+  },
+  "classes": 4,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+      "method": "priorDeclarationsRefuseV3AndExactV2OwnerStillSupportsDownstreamReview",
+      "outcome": "SKIPPED",
+      "seconds": "0.001",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+      "method": "genuineV2PartialCompletesWithoutRelabellingUnderNewDeclaration",
+      "outcome": "SKIPPED",
+      "seconds": "0.001",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+      "method": "originalV1SchemaOneAndThreeTasksRetainTheirOwnObligationAfterCurrentReteaching",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+      "method": "wrongVersionsUntaughtChangedOwnersAndOldEpochCannotBorrowNewCredit",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+      "method": "recentMissIsImmutableThroughOrdinaryCorrectionBackupAndActualRollback",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7BindingConservationTest",
+      "method": "newPolicyReferenceChangesOnlyExactFileHashWithAllBindingsStillPending",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7BindingConservationTest",
+      "method": "currentDeclarationReconstructsEachGenuinePrecedingWholePackAndNothingElse",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+      "method": "genuineSchemaOnePartialCompletesWithoutAddingGenderOrRelabelling",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+      "method": "wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+      "method": "recentGenderMissRemainsAssignedThroughCorrectionRollbackBackupAndReopen",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+      "method": "missingOwnersAndChangedTeachingOrItemsRefuseFreshAndSavedTasks",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+      "method": "exactPriorDeclarationRefusesSchemaNineAndPreservesDownstreamOwnerIdentity",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest",
+      "method": "originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest",
+      "method": "oldAcceptedWorkAndResumeStayStoredThroughBackupReopenButNeedCurrentWork",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+      "tests": "5",
+      "skipped": "5",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-24T16:34:47.087Z",
+      "hostname": "0cc76a0c8c68",
+      "time": "0.01"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit7BindingConservationTest",
+      "tests": "2",
+      "skipped": "2",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-24T16:34:47.103Z",
+      "hostname": "0cc76a0c8c68",
+      "time": "0.001"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+      "tests": "5",
+      "skipped": "5",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-24T16:34:47.077Z",
+      "hostname": "0cc76a0c8c68",
+      "time": "0.001"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest",
+      "tests": "2",
+      "skipped": "2",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-24T16:34:47.067Z",
+      "hostname": "0cc76a0c8c68",
+      "time": "0.005"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin",
+    "compileDebugSources": "NOT_REACHED",
+    "lintAnalyzeDebug": "NOT_REACHED",
+    "lintAnalyzeDebugUnitTest": "NOT_REACHED",
+    "lintDebug": "NOT_REACHED",
+    "verifyReleaseGateAttachment": "NOT_REACHED"
+  },
+  "lintIssuesBySeverity": null,
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": null,
+  "allFreshSelectedMethodsReported": false,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}
