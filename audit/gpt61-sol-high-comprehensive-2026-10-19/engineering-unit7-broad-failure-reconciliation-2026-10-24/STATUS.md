@@ -1,3 +1,3 @@
-# Initial follow-up retained; setup correction pending
+# Completed focused reconciliation
 
-Initial source df16da98:35reported/34passed/1failed in7fullclasses,exit1; all3original broad failure identities passed. INITIAL_OUTCOME.md/RAW_FOCUSED.zip preserve complete failure. Added genuine Unit3 cumulative review/advance and explicit current-completion assertions before expecting Unit6 repair. Existing new assertions retained; production/155records unchanged. Corrected verification planned as the full9-method Unit7CumulativeReviewTest; no passing result claimed. Check external CORRECTED scope before launch/edit. Original broad remains failing; all48OPEN/auditINCOMPLETE/physicalLAST/four exporters excluded/noAPK/signing/merge/freeze/approval.
+Read REPORT.md and NEXT_TASK.md. Separate initial35scope34pass/1newsetupfailure and corrected9scope9pass. Original1378broad remains failing; all3originalfailureIDs recheckedpass in initial fullclasses. No active job is required by this checkpoint. All48OPEN/auditINCOMPLETE/physicalLAST.
