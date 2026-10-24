@@ -1,0 +1,24 @@
+[
+  {
+    "state": "APPLIED_AFTER_COMPLETED_PRESERVED_RUNTIME",
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit6PresentCompatibilityTest.kt",
+    "oldSha256": "bf7821b893a01975fb1a4b67462c5added462c3ad25d04f9f4cca0b83c63f2b0",
+    "newSha256": "4b757c35e3b211f9c23df494785300021fe2a113d69e55f0de4fa5b6b5e7596c",
+    "scope": "Only existing priorDeclarationOnly equality uses strict beforeUnit7GenderReview whole-pack proof; all current behavior/mutations remain on actual current pack",
+    "allOriginalNonblankLinesAndAssertionsRetainedInOrderIgnoringIndentation": true,
+    "expectedHashesReplaced": false,
+    "fullClassConvertedToHistorical": false,
+    "originalSource": "531fa3e9018d8165b10720126f41133dafe4f1cf"
+  },
+  {
+    "state": "APPLIED_AFTER_COMPLETED_PRESERVED_RUNTIME",
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationHistoryTest.kt",
+    "oldSha256": "73b393ffc9f3ab78531e7e481277cc6f0dd17e501bb4f961de12cb845a9bac09",
+    "newSha256": "418624a25f5467bc7c36f3f652f3b7ec7a474a2e4f20c8cbdbebe3414de91799",
+    "scope": "Only prior advancement/prerequisite equality uses genuine preUnit7pack; later objective/session/item/source/validation and current behavior stay actualcurrent. Separate currentdeclaredpolicy and changedID assertions added.",
+    "allOriginalNonblankLinesAndAssertionsRetainedInOrderIgnoringIndentation": true,
+    "expectedHashesReplaced": false,
+    "fullClassConvertedToHistorical": false,
+    "originalSource": "531fa3e9018d8165b10720126f41133dafe4f1cf"
+  }
+]

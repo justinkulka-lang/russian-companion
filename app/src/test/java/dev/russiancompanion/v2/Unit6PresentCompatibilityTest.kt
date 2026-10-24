@@ -26,9 +26,11 @@ import java.io.File
 class Unit6PresentCompatibilityTest {
     @Test fun priorDeclarationsRefuseV3AndExactV2OwnerStillSupportsDownstreamReview() {
         val old = RecordedIntakeCorrectionScope.load(root, "9d0979b02d8601c6fc00ff06a0e53e13280d0b93")
-        val priorDeclarationOnly = pack.copy(units = pack.units.map { unit -> if (unit.number != 6) unit else
-            unit.copy(advancement = unit.advancement!!.copy(cumulativeReviewPolicyId = Unit6WiderCumulativeReviewPolicy.definition.id)) })
-        assertEquals("The genuine prior pack differs only by the Unit6 declaration", old, priorDeclarationOnly)
+        RecordedCurriculumConservationScope.beforeUnit7GenderReview(root, pack).let { pack ->
+            val priorDeclarationOnly = pack.copy(units = pack.units.map { unit -> if (unit.number != 6) unit else
+                unit.copy(advancement = unit.advancement!!.copy(cumulativeReviewPolicyId = Unit6WiderCumulativeReviewPolicy.definition.id)) })
+            assertEquals("The genuine prior pack differs only by the Unit6 declaration", old, priorDeclarationOnly)
+        }
         val v1Declaration = pack.copy(units = pack.units.map { unit -> if (unit.number != 6) unit else
             unit.copy(advancement = unit.advancement!!.copy(cumulativeReviewPolicyId = Unit6CumulativeReviewPolicy.definition.id)) })
         LocalStore.openInMemory(context()).use { store ->

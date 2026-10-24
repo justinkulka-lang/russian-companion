@@ -26,7 +26,12 @@ class Unit7InvariancePreparationHistoryTest {
         }
         RecordedCurriculumConservationScope.assertCurrent(root(),p)
         val a=old.unit(7)!!;val b=p.unit(7)!!
-        assertEquals(a.advancement,b.advancement);assertEquals(a.prerequisiteUnitNumbers,b.prerequisiteUnitNumbers)
+        RecordedCurriculumConservationScope.beforeUnit7GenderReview(root(),p).let { historical ->
+            val b=historical.unit(7)!!
+            assertEquals(a.advancement,b.advancement);assertEquals(a.prerequisiteUnitNumbers,b.prerequisiteUnitNumbers)
+        }
+        assertEquals(Unit7GenderCumulativeReviewPolicy.definition.id,b.advancement!!.cumulativeReviewPolicyId)
+        assertNotEquals(a.advancement!!.cumulativeReviewPolicyId,b.advancement!!.cumulativeReviewPolicyId)
         assertEquals(a.objectives.filter { it.id!="obj-u7-adverb-invariance" },b.objectives.filter { it.id!="obj-u7-adverb-invariance" })
         assertEquals(a.sessions.filter { it.id!="u7-s-adverb-invariance" },b.sessions.filter { it.id!="u7-s-adverb-invariance" })
         assertEquals(old.sourceCapabilities,p.sourceCapabilities)
