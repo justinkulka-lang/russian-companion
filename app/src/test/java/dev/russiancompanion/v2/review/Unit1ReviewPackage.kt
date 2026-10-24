@@ -139,8 +139,7 @@ internal const val UNIT15_ASPECT_PREPARATION_CURRICULUM_COMMIT = "0f8001a8ec2cb7
 internal const val UNIT5_GRAMMAR_REVIEW_CURRICULUM_COMMIT = "2fb455d4cf0b69808d431a2b9db3583b4d4b0dcb"
 
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
-    if (unitNumber == 7) UNIT7_GENDER_REVIEW_CURRICULUM_COMMIT
-    else if (unitNumber == 5) UNIT5_GRAMMAR_REVIEW_CURRICULUM_COMMIT
+    if (unitNumber == 5) UNIT5_GRAMMAR_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 3) UNIT3_GENDER_TEACHING_CURRICULUM_COMMIT
     else if (unitNumber == 4) UNIT4_PRESENT_TEACHING_CURRICULUM_COMMIT
     else if (unitNumber == 8) UNIT8_EXISTENCE_SEQUENCE_CURRICULUM_COMMIT
@@ -171,7 +170,7 @@ internal fun curriculumCommitForUnit(unitNumber: Int): String =
     else if (unitNumber == 17) UNIT17_QUESTION_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNITS5_6_RECENT_SELECTION_CURRICULUM_COMMIT
     else if (unitNumber == 6) UNIT6_PRESENT_REVIEW_CURRICULUM_COMMIT
-    else if (unitNumber == 7) UNIT7_INVARIANCE_PREPARATION_CURRICULUM_COMMIT
+    else if (unitNumber == 7) UNIT7_GENDER_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 9) UNIT9_WIDER_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 28) UNIT28_TIMING_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber == 24) UNIT24_CONTEXT_TRANSFER_CURRICULUM_COMMIT

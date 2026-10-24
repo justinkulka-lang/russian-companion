@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "d045c439a60582c40113a4d0c24517f6b1fc7849",
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "compileDebugUnitTestKotlin",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "activation": "source /workspace/setup/android-env.sh",
+  "startedUtc": "2026-10-24T16:05:27.962471+00:00",
+  "finishedUtc": "2026-10-24T16:05:38.930774+00:00",
+  "exitCode": 0
+}
