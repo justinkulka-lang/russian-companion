@@ -1,0 +1,19 @@
+{
+  "state": "APPLIED_NOT_COMPILED_NOT_TESTED",
+  "previousRuntimeSource": "cf9415bebd7ea9a4fc20e5847cf4a81e74b67d85",
+  "previousCounts": {
+    "reported": 56,
+    "passed": 54,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 1
+  },
+  "changedTest": "app/src/test/java/dev/russiancompanion/v2/Units610SourceIntakeTest.kt",
+  "previousSha256": "35b682b2ebb4c5d17bc82f3fef1647f205bedc0208cb4d8a3fa8d8129b1043cf",
+  "appliedSha256": "87fde77b3e7a741b7941e5298decf7ce4a68511928e133405832e4ab491fcb6d",
+  "originalAllNonblankKotlinLinesStillRetained": true,
+  "originalExpectedPackageDigestRetained": true,
+  "newRuntimeMethods": 0,
+  "expectedFullClassInventory": 56,
+  "qualifiedAcceptance": false
+}
