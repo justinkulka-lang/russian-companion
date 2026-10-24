@@ -1,0 +1,35 @@
+{
+  "sourceCommit": "38542882cd9ab2e075691eca19442ddfabd17b6b",
+  "testCounts": {
+    "reported": 2,
+    "passed": 1,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "actualAdvanceWithoutAssignedGenderAnswer": true,
+  "observationBasis": "Raw XML system-out and intended actual-advance assertion; independently checked by verifier",
+  "ordinaryGenderKnowledgeBypassed": false,
+  "proposedPolicyActivated": false,
+  "currentPolicy": "unit7-prior-reading-inanimate-case-v1",
+  "currentSchema": 1,
+  "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "apkIdentity": null,
+  "apkSignature": null,
+  "completeSuite": false
+}

@@ -1,0 +1,9 @@
+{
+  "verifiedBaseline": "38542882cd9ab2e075691eca19442ddfabd17b6b",
+  "reported": 2,
+  "passed": 1,
+  "intendedFailed": 1,
+  "originalArchivesConserved": 66,
+  "additionalSchema1Capture": "43d5da10729fed2ced704f5e52e48a2bd0283dbcd516171aaa59c4e0de5200df",
+  "newRuntimeTestsExecutedByVerifier": 0
+}
