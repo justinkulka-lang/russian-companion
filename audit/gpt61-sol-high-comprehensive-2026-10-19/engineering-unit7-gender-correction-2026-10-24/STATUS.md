@@ -1,5 +1,7 @@
 # Unit7 gender/inanimate v2 core correction; verification pending
 
+Completed core verification: c4477d27 reported11/11 methods in3full classes,exit0; first2e2ebceb10pass/1API-test failure remains preserved. Read COMPLETED_STATUS.md and NEXT_TASK.md. No job remains active. Generated155source records are stillSTALE; authentic binding reconciliation is next. Original baseline asserts retained with explicit exact-refusal adaptation and oldbytes archived.
+
 Only three production files changed: rawUnit7policydeclaration, versioned review registry/allocation/title/strict olddeclaration owner-identity reconstruction, and policy-aware review copy. All original policy objects and allpreexisting test files including the baseline are byte-exact. One new policy object reuses the exact existing five-itemgenderpool and inanimate singleton; freshschema9usesordinary-historyselection, savedschema1keeps oldmeaning. No native content/key/distractor/provenance/approval changes.
 
 Three full classes/11annotation inventory only, no runtime outcomes at preparation. Inspect /workspace/artifacts/unit7-gender-correction-2026-10-24 before duplicate launch/edit. Fresh discovery then actualruntime/lint/gate; no repository modifications during execution. The isolated wrapper compiler directive remains experimental/notadopted/nativecauseUNCONFIRMED. Four exporters/16methods excluded; physicalAT020ignored. All48OPEN/auditINCOMPLETE/physicalLAST/no APK/signing/merge/freeze/formaladvancement/approval.
