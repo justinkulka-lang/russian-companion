@@ -1,0 +1,24 @@
+{
+  "sixInputTrees": {
+    "app/src/main": "233c13050648a2c3fb2e4ed24b45a9c0ef1aa636",
+    "app/src/test": "02ab5eb7bf91778644785f4a506fe98bac8fcf84",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "257c21d0678015e86fd4a831c453355461751cbe",
+    "release": "38ad2d045b493fcee81e2db8e375733824be23f8"
+  },
+  "currentGeneratedRecords": 155,
+  "canonicalSourceDigest": "2507d56bf2bd910b198d9ff317a605598765e13d947fa4f4435aaacd2a626892",
+  "digestBasis": "Same six trees as preceding official Kotlin computation saved in FINAL_CONSERVATION.json; no approximate recomputation.",
+  "originalArchivesShaCrc": 66,
+  "protectedFiles": 7685,
+  "apkIdentity": null,
+  "apkSignature": null,
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "settingsSavedThisTask": [],
+  "publication": "Earlier user-confirmed; independently unobserved. No new publication or persistent setup change.",
+  "nativeRootCause": "UNCONFIRMED",
+  "directive": "EXPERIMENTAL_NOT_ADOPTED",
+  "independentAudit": "INCOMPLETE_ALL48OPEN",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}
