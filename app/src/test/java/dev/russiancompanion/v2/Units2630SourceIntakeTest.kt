@@ -560,7 +560,15 @@ class Units2630SourceIntakeTest {
         preservedContentDigests.forEach { (number, digest) ->
             val correction = corrections[number]
             if (correction == null) {
-                assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                if (number in setOf(5, 6)) {
+                    RecordedCurriculumConservationScope.beforeUnit5GrammarReview(root,pack).let { pack ->
+                        assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                    }
+                    assertNotEquals("Current versioned review identity for Unit $number", digest,
+                        V2Validator.unitContentReviewDigest(pack, number))
+                } else {
+                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                }
             } else {
                 assertEquals("historical unit $number", digest, V2Validator.unitContentReviewDigest(prior, number))
                 RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,

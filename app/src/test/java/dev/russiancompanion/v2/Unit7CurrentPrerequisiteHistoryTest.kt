@@ -127,7 +127,12 @@ class Unit7CurrentPrerequisiteHistoryTest {
             val root=File(if(File("app").isDirectory) "." else "..")
             V2PackLoader.parse(File(root,"app/src/main/assets/content/v2-curriculum.json").readText()).also {
                 V2PackIdentityIndex.warm(it)
-                assertEquals("Current pack must retain the exact latest asset implementation",sourcePack("b7e53230e2119b1e57d781b1e1b955f074a38601"),it)
+                // The original equality records the pre-Unit5/6 declaration scope only.
+                RecordedCurriculumConservationScope.beforeUnit5GrammarReview(root,it).let { it ->
+                    assertEquals("Current pack must retain the exact latest asset implementation",sourcePack("b7e53230e2119b1e57d781b1e1b955f074a38601"),it)
+                }
+                // Return the actual current asset; restore/reopen/credit checks below stay current.
+                RecordedCurriculumConservationScope.assertCurrent(root,it)
                 val unit4=sourcePack("e6db0bdfe0bbb40edf190623e2123014946f305b")
                 assertEquals(unit4.unit(4),it.unit(4))
                 assertEquals(V2Validator.unitContentReviewDigest(unit4,4),V2Validator.unitContentReviewDigest(it,4))

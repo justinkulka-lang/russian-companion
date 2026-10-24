@@ -20,7 +20,11 @@ class Unit7InvariancePreparationHistoryTest {
         val p=current();val old=previous()
         assertEquals(old.items,p.items.take(old.items.size));assertEquals(old.examples,p.examples.take(old.examples.size))
         assertEquals(old.provenanceRecords,p.provenanceRecords.take(old.provenanceRecords.size))
-        assertEquals(old.units.filter { it.number!=7 },p.units.filter { it.number!=7 })
+        // Preserve the original Unit7-only transition before the later5/6 declarations.
+        RecordedCurriculumConservationScope.beforeUnit5GrammarReview(root(),p).let { p ->
+            assertEquals(old.units.filter { it.number!=7 },p.units.filter { it.number!=7 })
+        }
+        RecordedCurriculumConservationScope.assertCurrent(root(),p)
         val a=old.unit(7)!!;val b=p.unit(7)!!
         assertEquals(a.advancement,b.advancement);assertEquals(a.prerequisiteUnitNumbers,b.prerequisiteUnitNumbers)
         assertEquals(a.objectives.filter { it.id!="obj-u7-adverb-invariance" },b.objectives.filter { it.id!="obj-u7-adverb-invariance" })

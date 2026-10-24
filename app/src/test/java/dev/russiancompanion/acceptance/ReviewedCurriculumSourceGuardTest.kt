@@ -10,11 +10,18 @@ class ReviewedCurriculumSourceGuardTest {
     @Test fun exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus() {
         val pack = ReviewedCurriculumSourceGuard.pack()
         val entries = ReviewedCurriculumSourceGuard.entries
+        // Preserve the original 288/22 contract on its exact historical reference.
+        historicalComparisonEntries().let { entries ->
+            assertEquals(19, entries.size)
+            val bindings = entries.flatMap { it["bindings"]!!.jsonArray }.map { it.jsonObject }
+            assertEquals(288, bindings.size)
+            assertEquals(22, bindings.count { it.text("kind") == "ITEM_ID" })
+            assertEquals(2, bindings.count { it.text("purpose") == "EXISTING_RESEARCH_CUE_COMPARISON_PENDING_SOURCE_REVIEW" })
+        }
         assertEquals(19, entries.size)
-        val bindings = entries.flatMap { it["bindings"]!!.jsonArray }.map { it.jsonObject }
-        assertEquals(288, bindings.size)
-        assertEquals(22, bindings.count { it.text("kind") == "ITEM_ID" })
-        assertEquals(2, bindings.count { it.text("purpose") == "EXISTING_RESEARCH_CUE_COMPARISON_PENDING_SOURCE_REVIEW" })
+        val currentBindings = entries.flatMap { it["bindings"]!!.jsonArray }.map { it.jsonObject }
+        assertEquals(292, currentBindings.size)
+        assertEquals(26, currentBindings.count { it.text("kind") == "ITEM_ID" })
         assertEquals(emptyList<String>(), ReviewedCurriculumSourceGuard.offenders(ReviewedCurriculumSourceGuard.sources(), pack))
         val result = V2Validator.validate(pack)
         assertTrue(result.errors.joinToString("\n"), result.ok)
@@ -71,5 +78,51 @@ class ReviewedCurriculumSourceGuardTest {
         assertEquals(affected, ReviewedCurriculumSourceGuard.offenders(sources, pack) { path ->
             if (path == catalog) null else java.io.File(ReviewedCurriculumSourceGuard.root(), path).readText()
         })
+    }
+
+    @Test fun presentItemReferencesAddOnlyFourBindingsAndEachMissingItemStaysBlocked() {
+        val historical = historicalComparisonEntries().associateBy { it.text("path") }
+        val current = ReviewedCurriculumSourceGuard.entries.associateBy { it.text("path") }
+        assertEquals(historical.keys, current.keys)
+        val path = "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt"
+        historical.filterKeys { it != path }.forEach { (name, entry) -> assertEquals(entry, current.getValue(name)) }
+        val prior = historical.getValue(path)
+        val reviewed = current.getValue(path)
+        assertEquals(prior.filterKeys { it !in setOf("sha256", "bindings") }, reviewed.filterKeys { it !in setOf("sha256", "bindings") })
+        assertNotEquals(prior.text("sha256"), reviewed.text("sha256"))
+        val priorBindings = prior.getValue("bindings").jsonArray
+        val bindings = reviewed.getValue("bindings").jsonArray
+        assertEquals(priorBindings.toList(), bindings.take(priorBindings.size))
+        val additions = bindings.drop(priorBindings.size).map { it.jsonObject }
+        val expected = setOf("u4-i-verb-говорить-мы", "u4-i-verb-видеть-он", "u4-i-verb-писать-вы", "u4-i-verb-идти-они")
+        assertEquals(4, additions.size)
+        assertEquals(expected, additions.map { it.text("value") }.toSet())
+        assertTrue(additions.all { it.text("kind") == "ITEM_ID" && it.text("purpose") == "PERSISTED_ITEM_ID_REFERENCE" })
+        val sources = ReviewedCurriculumSourceGuard.sources()
+        val text = sources.getValue(path)
+        val literalPattern = Regex("\"([^\"\n]*)\"")
+        val literals = literalPattern.findAll(text).map { it.groupValues[1] }
+            .filter { value -> value.any { it.code in 0x0400..0x04FF } }.toSet()
+        assertEquals(bindings.map { it.jsonObject.text("value") }.toSet(), literals)
+        val pack = ReviewedCurriculumSourceGuard.pack()
+        assertEquals(emptyList<String>(), ReviewedCurriculumSourceGuard.offenders(sources, pack))
+        expected.forEach { id ->
+            assertTrue(pack.items.any { it.id == id })
+            assertTrue("Missing current present-form item must invalidate the exact-file reference: $id",
+                path in ReviewedCurriculumSourceGuard.offenders(sources, pack.copy(items = pack.items.filter { it.id != id })))
+        }
+    }
+
+    private fun historicalComparisonEntries(): List<JsonObject> {
+        val process = ProcessBuilder("git", "show",
+            "e66dfe0771424daf6e090fb258f77523ec40a4c1:app/src/test/resources/reviewed-curriculum-cyrillic.json")
+            .directory(ReviewedCurriculumSourceGuard.root()).start()
+        val text = process.inputStream.bufferedReader(Charsets.UTF_8).readText()
+        assertEquals(0, process.waitFor())
+        assertEquals("502653747a6f558cf2564ea8c9a40142bda05d7c5d28ede7ec1cb7bd086278b8", ReviewedCurriculumSourceGuard.hash(text))
+        val document = Json.parseToJsonElement(text).jsonObject
+        assertFalse(document.getValue("semanticAcceptance").jsonPrimitive.boolean)
+        assertFalse(document.getValue("rightsAcceptance").jsonPrimitive.boolean)
+        return document.getValue("files").jsonArray.map { it.jsonObject }
     }
 }

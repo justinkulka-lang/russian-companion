@@ -2054,7 +2054,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
-      "sha256": "4a5046906ff25561842bc738eb81d20d396bb90b84c0a065b1143984968d1fcf",
+      "sha256": "a3ababd9e282b2c1c1db522ff076a68bc39bb1944a23508b1c8137e111accc29",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -2135,6 +2135,26 @@
         {
           "kind": "ITEM_ID",
           "value": "u5-i-indecl-такси",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u4-i-verb-говорить-мы",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u4-i-verb-видеть-он",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u4-i-verb-писать-вы",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u4-i-verb-идти-они",
           "purpose": "PERSISTED_ITEM_ID_REFERENCE"
         }
       ]
@@ -5179,6 +5199,23 @@
           }
         }
       ]
+    }
+  ],
+  "subsequentEngineeringReferenceReviews": [
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "e66dfe0771424daf6e090fb258f77523ec40a4c1",
+      "previousRecordedSha256": "4a5046906ff25561842bc738eb81d20d396bb90b84c0a065b1143984968d1fcf",
+      "sha256": "a3ababd9e282b2c1c1db522ff076a68bc39bb1944a23508b1c8137e111accc29",
+      "additionalExistingItemReferences": [
+        "u4-i-verb-говорить-мы",
+        "u4-i-verb-видеть-он",
+        "u4-i-verb-писать-вы",
+        "u4-i-verb-идти-они"
+      ],
+      "scope": "Exact existing item references and policy/compatibility control flow only; no Russian rendering/construction, linguistic acceptance or rights approval",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
     }
   ]
 }
