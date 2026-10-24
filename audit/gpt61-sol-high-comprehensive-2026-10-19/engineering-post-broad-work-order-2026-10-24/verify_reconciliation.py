@@ -3,7 +3,10 @@ from pathlib import Path
 from collections import Counter
 import json,csv,hashlib,subprocess,fnmatch,base64
 D=Path(__file__).resolve().parent;R=next(p for p in D.parents if (p/'AGENTS.md').exists());B=D.parent;A=B/'final-independent-recheck-results/2026-10-22-claude-code';H=B/'engineering-contract-broad-2026-10-24';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
-for n,v in json.loads((D/'SHA256.json').read_text()).items():assert sha(D/n)==v,n
+tracked=set(subprocess.check_output(['git','ls-files'],cwd=R,text=True).splitlines())
+for n,v in json.loads((D/'SHA256.json').read_text()).items():
+ assert sha(D/n)==v,n
+ assert (D/n).relative_to(R).as_posix() in tracked,('Untracked evidence missing from fresh checkout',n)
 for n,v in json.loads((D/'INPUT_IDENTITIES.json').read_text()).items():assert sha(R/n)==v,n
 read=lambda p:list(csv.DictReader(p.open()))
 a=read(A/'FINDINGS.csv');f=read(D/'FINDING_CONTINUATION.csv');assert len(a)==len(f)==48
