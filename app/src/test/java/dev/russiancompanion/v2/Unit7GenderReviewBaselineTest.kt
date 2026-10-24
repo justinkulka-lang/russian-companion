@@ -38,7 +38,14 @@ class Unit7GenderReviewBaselineTest {
             }
             // Execute the actual attempted advance before the intended assertion. On the old
             // policy this succeeds, proving the shortcut instead of merely missing a future ID.
-            val advancedWithoutGender = advance(store, 7)
+            val beforeAttemptedAdvance = store.governedLearnerDocument()
+            val advancedWithoutGender = try {
+                advance(store, 7)
+            } catch (refusal: IllegalStateException) {
+                if (refusal.message != "current advancement evidence is incomplete") throw refusal
+                false
+            }
+            if (!advancedWithoutGender) assertEquals(beforeAttemptedAdvance, store.governedLearnerDocument())
             println("UNIT7_BASELINE_OBSERVATION policy=${task.policyId} schema=${task.schema} " +
                 "objectives=${task.slots.map { it.objectiveId }} actualAdvanceWithoutGender=$advancedWithoutGender")
             assertFalse("Unit7 must refuse actual advancement without its assigned noun-gender answer", advancedWithoutGender)

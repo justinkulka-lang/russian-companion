@@ -1,0 +1,11 @@
+[
+  {
+    "testClass": "dev.russiancompanion.v2.Unit7GenderReviewBaselineTest",
+    "method": "printAndObjectAnswersCannotReplaceFreshAssignedGenderAnswer",
+    "outcome": "FAILED",
+    "seconds": "5.567",
+    "messagePreview": "java.lang.IllegalStateException: current advancement evidence is incomplete",
+    "fullMessageBytes": 75,
+    "fullMessageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf"
+  }
+]
