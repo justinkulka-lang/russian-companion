@@ -1,0 +1,67 @@
+{
+  "verified": true,
+  "broadDiscovery": {
+    "savedDiscoveryVerified": true,
+    "sourceCommit": "0d52922edc0047e11985b2bb8b4946d7122602c5",
+    "syntheticSkips": 1378,
+    "runtimePasses": 0,
+    "classes": 233,
+    "priorMethodsRetained": 1365,
+    "addedMethods": 13,
+    "removedMethods": 0,
+    "fullRuntime": "PREPARED_NOT_LAUNCHED",
+    "testsExecutedByVerifier": 0,
+    "completeSuite": false
+  },
+  "generation": {
+    "generationVerified": true,
+    "generationSource": "d045c439a60582c40113a4d0c24517f6b1fc7849",
+    "appliedSource": "531fa3e9018d8165b10720126f41133dafe4f1cf",
+    "twoIdenticalAuthenticRenders": true,
+    "renderedFiles": 153,
+    "reviewedRecords": 155,
+    "changedIdentityOnly": 95,
+    "unchangedWorksheets": 60,
+    "originalArchivesShaCrc": 66,
+    "priorScopesFilesPreserved": 407,
+    "sourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
+    "unit7Implementation": "2e2ebcebc81f54c04db7f0ac24e99374674c97c5",
+    "postRenderLookupEquivalentForAll30": true,
+    "additionalJUnitMethodsExecuted": 0,
+    "qualifiedAcceptance": false
+  },
+  "attempts": {
+    "ATTEMPT_1": {
+      "reported": 124,
+      "passed": 121,
+      "failed": 2,
+      "errors": 0,
+      "skipped": 1
+    },
+    "ATTEMPT_2": {
+      "reported": 14,
+      "passed": 14,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "bothObservedFailuresPassedInSeparateFullClassFollowup": true,
+  "scopesNotSummed": true,
+  "originalAssertionsAndHashesRetained": true,
+  "originalHistoryCasesRestored": 64,
+  "caseObservationsNotTestCounts": true,
+  "currentOriginalHistoryCredit": {
+    "Units1_2": 24,
+    "Units1_3": 40
+  },
+  "mixedLifecycleObservations": 2,
+  "extraAuthenticCapturesConserved": 2,
+  "remainingPrintSingletonPolicies": 25,
+  "completeSuite": false,
+  "independentAudit": "INCOMPLETE_ALL48_OPEN",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "additionalJUnitMethodsExecuted": 0
+}
