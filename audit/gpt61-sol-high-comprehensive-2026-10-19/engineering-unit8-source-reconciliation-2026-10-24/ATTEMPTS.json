@@ -92,5 +92,24 @@
     "classes": 237,
     "selectors": [],
     "exitCode": 1
+  },
+  {
+    "directory": "ATTEMPT_4_BROAD_COMPARE_FOLLOWUP",
+    "sourceCommit": "ce066d6f9557b38ead4f215337028cde43203b8d",
+    "testCounts": {
+      "reported": 23,
+      "passed": 23,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 4,
+    "selectors": [
+      "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+      "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "dev.russiancompanion.v2.Unit8BindingConservationTest",
+      "dev.russiancompanion.v2.Unit8PresentReviewUiTest"
+    ],
+    "exitCode": 0
   }
 ]

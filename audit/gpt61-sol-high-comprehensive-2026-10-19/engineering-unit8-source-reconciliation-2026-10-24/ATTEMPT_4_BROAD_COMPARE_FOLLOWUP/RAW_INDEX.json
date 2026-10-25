@@ -1,0 +1,182 @@
+{
+  "DISCOVERY/CONTEXT.json": {
+    "bytes": 3450,
+    "sha256": "1766626f3f5cdf712748c3b64b55dc148209897b8a04972c56a16cec9b7668cd"
+  },
+  "DISCOVERY/EVENTS.jsonl": {
+    "bytes": 13470,
+    "sha256": "704869e2a4ae94f73f69635025debc8da6f5692fb7e00fcb979671e73d0f2969"
+  },
+  "DISCOVERY/RESULT.json": {
+    "bytes": 10954,
+    "sha256": "1cb6f4b4a53628a90f0652821f62a10502c87b5247012210da34bb00efeb9082"
+  },
+  "DISCOVERY/RESULTS.csv": {
+    "bytes": 4422,
+    "sha256": "ee4a29d373da7f4fba4bacff114166ace53636ec8bffb4426abff1cc5705dd7f"
+  },
+  "DISCOVERY/RUN.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "DISCOVERY/RUN.log": {
+    "bytes": 6806,
+    "sha256": "878b9c135850470b3474ee8f5be877b452e9aa7f9b3b66ed9bfff07079c48538"
+  },
+  "DISCOVERY/SHA256.json": {
+    "bytes": 1229,
+    "sha256": "e8371d262a1963696fba56f137c49c05f1876568999fab4eddee2c28be34076e"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.CompleteRuleCorrectionTest.xml": {
+    "bytes": 1445,
+    "sha256": "08cc0405625b6596a25587c7e1cdf509184a8006b817f12018412521727eb317"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit8BindingConservationTest.xml": {
+    "bytes": 726,
+    "sha256": "d3a6f449a85ec3a99a8cee9b5f8709d28d67484dd9711e8a313b2025f18f295c"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit8PresentReviewUiTest.xml": {
+    "bytes": 1283,
+    "sha256": "f4c5418fceaf6e262d8748ef02defe4c5a44f3e849aa69d1148acfbce6cac9e9"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml": {
+    "bytes": 2052,
+    "sha256": "430945f81a381f174222333559a430899e72cf655443ccc4db348daf7c2e6364"
+  },
+  "DISCOVERY/gc-233952.log": {
+    "bytes": 180,
+    "sha256": "4846bcb4de277bf6269c6c017069cc59fe1749c39d9c3902b876395b030c4e53"
+  },
+  "DISCOVERY/gc-233954.log": {
+    "bytes": 180,
+    "sha256": "5adb5fa82e5ef12db858826c994dfdbbd328b98a547143a536eb215bb578dbb9"
+  },
+  "DISCOVERY_COMPLETION.json": {
+    "bytes": 208,
+    "sha256": "23e464ad8b6324eb168a38278f8884eec3b4bc056ed42653977372133015ae5c"
+  },
+  "DISCOVERY_LAUNCHER.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "DISCOVERY_LAUNCHER.json": {
+    "bytes": 134,
+    "sha256": "a6c7c7a51fb9e1bf0a399e55c5df67942027d1a4aecbae178dd81cc0b78d4b8d"
+  },
+  "DISCOVERY_LAUNCHER.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "DISCOVERY_RUNNER.log": {
+    "bytes": 213,
+    "sha256": "9f720308083a55106cd06a213c427bb97e34f11605eb816a837f1924c18b1a0f"
+  },
+  "DISCOVERY_RUNNER_PROCESS.json": {
+    "bytes": 306,
+    "sha256": "fce30a76aa6720f168e96d70d47d007df9c7d3007d61de491680639db0209dc1"
+  },
+  "INIT/broader-tests.gradle": {
+    "bytes": 1905,
+    "sha256": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "INIT/cloud-validation.gradle": {
+    "bytes": 788,
+    "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123"
+  },
+  "INIT/resources.gradle": {
+    "bytes": 744,
+    "sha256": "23cb445d07e8241af66ba71d275b73dcfcc75e8d888af8235aa1a21b65b77e1f"
+  },
+  "REGRESSION/CONTEXT.json": {
+    "bytes": 3530,
+    "sha256": "cbf71105bb63e2836c2f531e45d2711e81e396d54c97df5dbf0a16886873a66b"
+  },
+  "REGRESSION/EVENTS.jsonl": {
+    "bytes": 13470,
+    "sha256": "3ee8e774e68333cd2f792a2e718a9a4b24a376890f76f339bdf5a9922cd9e3ca"
+  },
+  "REGRESSION/LINT.xml": {
+    "bytes": 31476,
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "REGRESSION/RESULT.json": {
+    "bytes": 11314,
+    "sha256": "6b73493ab84f4c81a61e1e47b7cde901f2767e215268b148a3a5406c87a5ab24"
+  },
+  "REGRESSION/RESULTS.csv": {
+    "bytes": 4451,
+    "sha256": "b47f385527e3c8e9b63134c2a93bc73a1cf6499a03e80f756bc0b30480008dc5"
+  },
+  "REGRESSION/RUN.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "REGRESSION/RUN.log": {
+    "bytes": 4285,
+    "sha256": "418104b7b5fa4c260ba5d9cf3e73ed539799ef346cccc371b7595916145bb79e"
+  },
+  "REGRESSION/SHA256.json": {
+    "bytes": 1311,
+    "sha256": "5dfc178729546f35236bd531ac4c172c3991c072dea27a0b262ec31c649d713c"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.CompleteRuleCorrectionTest.xml": {
+    "bytes": 13784,
+    "sha256": "d0087027deb1e43b907dc2247f9ee946e3964be5a9eb701fffa6ee626c494259"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit8BindingConservationTest.xml": {
+    "bytes": 676,
+    "sha256": "f5fd690636fb2fdea1789cc9d19a0331b79b439d160f4e47a265ab3b0fedf62d"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit8PresentReviewUiTest.xml": {
+    "bytes": 1400,
+    "sha256": "e49ef6f564984d7e2757573adde09c9e995558b913243b6a83cb047769899d5f"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml": {
+    "bytes": 1797,
+    "sha256": "aac973ae78a4c48668520fb41a6704798a5fdeea7062c493deb998f202b1e22d"
+  },
+  "REGRESSION/gc-234178.log": {
+    "bytes": 30900,
+    "sha256": "9f3ec378a41d96d56b306d115ed9153d0dc643eb9e42d2f1e21483cbd02e61cc"
+  },
+  "REGRESSION/gc-234180.log": {
+    "bytes": 16082,
+    "sha256": "80270dbfbb70f5fd9f231178edd46cbc1f1b2a3c34fe37198be6ad652ca54115"
+  },
+  "REGRESSION_COMPLETION.json": {
+    "bytes": 208,
+    "sha256": "bda689176178e019378ed3498dd0311c1f832259ae280cc122d0d79cabfb2b98"
+  },
+  "REGRESSION_LAUNCHER.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "REGRESSION_LAUNCHER.json": {
+    "bytes": 134,
+    "sha256": "45ec5e34d6f955da67aa324b2f2e114c3986c1ae9fa5891a7548fde50b67f3b6"
+  },
+  "REGRESSION_LAUNCHER.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "REGRESSION_RUNNER.log": {
+    "bytes": 213,
+    "sha256": "f243627a38f8865ab0e95998765b6ca764cda72214eb9c289fe115d2ee631e30"
+  },
+  "REGRESSION_RUNNER_PROCESS.json": {
+    "bytes": 307,
+    "sha256": "7c72d8d884db5a77923ea7de8a39be6f0f7ca23b319f9c2872c91ac147854929"
+  },
+  "resources.gradle": {
+    "bytes": 744,
+    "sha256": "23cb445d07e8241af66ba71d275b73dcfcc75e8d888af8235aa1a21b65b77e1f"
+  },
+  "run.py": {
+    "bytes": 7279,
+    "sha256": "0f51efb0c6529ea1ae24080ed4afb5bb084584f02c04d26aade101864432aea6"
+  },
+  "supervise.py": {
+    "bytes": 1197,
+    "sha256": "49346dac8349205097c4ca0b28482edfa4180ff483051b785834e8bc62613614"
+  }
+}
