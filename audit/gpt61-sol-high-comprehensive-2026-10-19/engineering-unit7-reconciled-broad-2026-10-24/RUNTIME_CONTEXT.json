@@ -1,0 +1,62 @@
+{
+  "sourceCommit": "dcc9314889566ba6f4f22333e2c98b34e9c9dd64",
+  "sourceRootTree": "82612dff9aa55e4c25bb98e6fa945338ed6a5acb",
+  "workingTreeAtStart": "CLEAN",
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "startedUtc": "2026-10-24T22:32:06.349750+00:00",
+  "inputTrees": {
+    "app/src/main": "606d6712146334d8bb4337bec4fb95648589e70f",
+    "app/src/test": "546879b9a352d922860d1c2657bb2567b419f3b9",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "0b8688248d13372e677d90108864cc90d44a13cc",
+    "release": "adb08d54e11d4554eab7664ee4f5f0f44a522464"
+  },
+  "mode": "REGRESSION",
+  "syntheticDryRun": false,
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/unit7-broad-failure-reconciliation-2026-10-24/NEXT_BROAD/resources.gradle",
+    "-Daudit.history.output=/workspace/artifacts/unit7-broad-failure-reconciliation-2026-10-24/NEXT_BROAD/REGRESSION/HISTORY_CASES.jsonl",
+    "-Daudit.events.path=/workspace/artifacts/unit7-broad-failure-reconciliation-2026-10-24/NEXT_BROAD/REGRESSION/EVENTS.jsonl",
+    "-Daudit.gc.dir=/workspace/artifacts/unit7-broad-failure-reconciliation-2026-10-24/NEXT_BROAD/REGRESSION",
+    "testDebugUnitTest",
+    "--rerun",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "runnerSha256": "350cf83e4180bbbc3fff7cf065ea1fc8a1b5448a59705d672aa0c889b8b59b22",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+    "/workspace/artifacts/unit7-broad-failure-reconciliation-2026-10-24/NEXT_BROAD/resources.gradle": "f8d6d11ab2557991817c6039fe048342753e7a1114337ea7a16a9f2b4899acd1"
+  },
+  "selectors": [],
+  "workerPolicy": "2forks/6GiB/forkEvery4;GC logs retained",
+  "resources": {
+    "cgroupMemoryMax": "34359738368",
+    "cgroupMemoryCurrent": "9523257344",
+    "cpus": 5
+  },
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "scope": "Prepared broad host regression after test-contract reconciliation; fresh discovery required; provisional wrapper JIT directive only, no additional test exclusion. Native cause unconfirmed; not a complete app/curriculum/device suite.",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "completeSuite": false
+}
