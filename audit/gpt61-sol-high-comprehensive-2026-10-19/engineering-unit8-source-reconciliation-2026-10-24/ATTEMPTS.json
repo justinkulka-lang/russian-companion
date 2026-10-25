@@ -111,5 +111,19 @@
       "dev.russiancompanion.v2.Unit8PresentReviewUiTest"
     ],
     "exitCode": 0
+  },
+  {
+    "directory": "ATTEMPT_5_RECONCILED_BROAD",
+    "sourceCommit": "93831e8545560207e3a4d056ce2f7d70b452e265",
+    "testCounts": {
+      "reported": 1394,
+      "passed": 1393,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 1
+    },
+    "classes": 237,
+    "selectors": [],
+    "exitCode": 0
   }
 ]
