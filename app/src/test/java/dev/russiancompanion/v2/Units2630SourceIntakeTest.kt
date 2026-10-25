@@ -581,6 +581,16 @@ class Units2630SourceIntakeTest {
                         RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
                     assertNotEquals(V2Validator.unitContentReviewDigest(RecordedIntakeCorrectionScope.load(root, correction), number),
                         V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 8) {
+                    // Keep the positive-existence source pin on its exact prior declaration.
+                    RecordedCurriculumConservationScope.beforeUnit8PresentReview(root, pack).let { pack ->
+                        RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                            RecordedIntakeCorrectionScope.load(root, correction), number)
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals(V2Validator.unitContentReviewDigest(RecordedIntakeCorrectionScope.load(root, correction), number),
+                        V2Validator.unitContentReviewDigest(pack, number))
                 } else {
                 RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
                     RecordedIntakeCorrectionScope.load(root, correction), number)

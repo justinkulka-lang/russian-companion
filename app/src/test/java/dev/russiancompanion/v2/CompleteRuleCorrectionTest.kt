@@ -58,7 +58,11 @@ class CompleteRuleCorrectionTest {
         assertEquals(14,items.size)
         assertEquals(old.items.filter { it.objectiveId in objectives && it.id !in changed },items.filter { it.id !in changed })
         assertEquals(existence.items.filter { it.id in changed },items.filter { it.id in changed })
-        assertEquals(existence.unit(8),p.unit(8))
+        // Preserve the exact historical declaration equality; current source is checked separately.
+        RecordedCurriculumConservationScope.beforeUnit8PresentReview(root,p).let { p ->
+            assertEquals(existence.unit(8),p.unit(8))
+        }
+        assertEquals(sourcePack(RecordedCurriculumConservationScope.currentPackImplementation).unit(8),p.unit(8))
         assertEquals(existence.provenanceRecords.filter { it.unitNumber==8 },p.provenanceRecords.filter { it.unitNumber==8 })
         items.filter { it.id !in changed }.forEach { item ->
             assertTrue(item.options.all { it.startsWith("In this line,") && it.endsWith(".") })
