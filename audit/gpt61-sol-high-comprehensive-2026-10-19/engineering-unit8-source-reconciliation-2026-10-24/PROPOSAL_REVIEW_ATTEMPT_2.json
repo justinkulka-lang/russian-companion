@@ -1,0 +1,6 @@
+{
+  "state": "REJECTED_BY_STRICT_BYTE_REVIEW",
+  "file": "audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md",
+  "reason": "Global source-commit replacement would rewrite the historical fe919656 positive-existence implementation citation. Only current pack/source digest headers may change in this manual supplement.",
+  "trackedFilesApplied": false
+}

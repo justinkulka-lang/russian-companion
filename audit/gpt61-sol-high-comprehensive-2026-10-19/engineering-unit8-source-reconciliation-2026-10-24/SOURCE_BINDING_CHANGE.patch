@@ -1,0 +1,984 @@
+diff --git a/audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md b/audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md
+index 317b255f..33165fbb 100644
+--- a/audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md
++++ b/audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md
+@@ -9,2 +9,2 @@
+-**Pack content-review digest:** `edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787`
+-**Repository source digest:** `d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a`
++**Pack content-review digest:** `8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48`
++**Repository source digest:** `e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670`
+diff --git a/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.json b/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.json
+index f0a62f27..04ea5932 100644
+--- a/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.json
++++ b/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.json
+@@ -4,2 +4,2 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+@@ -74,2 +74,2 @@
+-    "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
+-    "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++    "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
++    "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+@@ -103 +103 @@
+-    {"unitNumber": 8, "title": "Plurals, first spelling rules, existence questions, and buying things", "installState": "DEVELOPMENT", "readiness": "CONTENT_COMPLETE_REVIEW_PENDING", "mappingStatus": "PENDING_CURRICULUM_REVIEWER", "unitReviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT", "reviewerIdentity": "ABSENT", "reviewerQualification": "ABSENT", "signedReviewedDigest": "ABSENT", "unitContentReviewDigest": "b4067ca982daa266855b65eeddcf9cce10094c440fbb534ab5a442d79938b317", "mappingPackageDigest": "3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1", "reviewPackageDigest": "bfd7f63e08d840066654e9874c472bf7fab5c230b68ad8ff35ac202b1658af55", "curriculumSourceCommit": "fe919656bfa2775b5cc2c22f2496d4258343cfea", "objectiveCount": 6, "sessionCount": 7, "instructionStepCount": 31, "exampleCount": 40, "guidedPracticeCount": 5, "independentCheckCount": 19, "remediationCount": 5, "advancementRuleState": "PRESENT", "advancementCanPresentlySucceed": "NO", "bookDirectedActivityCount": 3, "unavailableExperienceCount": 0, "provenanceRecordCount": 287, "authoredEnglishRecordCount": 37, "admittedSourceCount": 3, "rightsRecordCount": 3, "sourceCapabilityCount": 0, "resolvedSourceCapabilityCount": 0, "unresolvedRequiredSourceCapabilities": "NONE", "mappedAudioCount": 0, "handwritingAssetCount": 0, "contentBlocker": "NONE", "linguisticReviewBlocker": "PENDING_FINAL_AUDIT, MISSING_REVIEWER_IDENTITY, MISSING_QUALIFICATION, MISSING_MATCHING_REVIEWED_DIGEST, REACHABLE_LINGUISTIC_RECORD_NOT_APPROVED", "mappingBlocker": "PENDING_MAPPING, MISSING_EDITION_ISBN, MISSING_OWNED_COPY_VERIFICATION, MISSING_VARIANCE_OR_COVERAGE_DISPOSITION", "assetBlocker": "NONE", "localExperienceBlocker": "NONE", "authorityVarianceBlocker": "NOT_APPLICABLE", "completeInstructionalChain": "YES", "finalDisposition": "RECORDED_STATE;install=DEVELOPMENT;readiness=CONTENT_COMPLETE_REVIEW_PENDING;review=IMPLEMENTED_PENDING_FINAL_AUDIT;mapping=PENDING_CURRICULUM_REVIEWER;advancement=NO;categories=LINGUISTIC_REVIEW+OWNED_EDITION_MAPPING"},
++    {"unitNumber": 8, "title": "Plurals, first spelling rules, existence questions, and buying things", "installState": "DEVELOPMENT", "readiness": "CONTENT_COMPLETE_REVIEW_PENDING", "mappingStatus": "PENDING_CURRICULUM_REVIEWER", "unitReviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT", "reviewerIdentity": "ABSENT", "reviewerQualification": "ABSENT", "signedReviewedDigest": "ABSENT", "unitContentReviewDigest": "78766389453733ed7337deb9d7495e1cdb393e71ffc73dd479bc3ca897085118", "mappingPackageDigest": "3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1", "reviewPackageDigest": "add044ba1cc2b7d1f4ef8ac0d65d9b8d123ad1ef8be39fd3368d8d7a9e0826e1", "curriculumSourceCommit": "370d8716e2747c439da1a450a83b71b129a5c879", "objectiveCount": 6, "sessionCount": 7, "instructionStepCount": 31, "exampleCount": 40, "guidedPracticeCount": 5, "independentCheckCount": 19, "remediationCount": 5, "advancementRuleState": "PRESENT", "advancementCanPresentlySucceed": "NO", "bookDirectedActivityCount": 3, "unavailableExperienceCount": 0, "provenanceRecordCount": 287, "authoredEnglishRecordCount": 37, "admittedSourceCount": 3, "rightsRecordCount": 3, "sourceCapabilityCount": 0, "resolvedSourceCapabilityCount": 0, "unresolvedRequiredSourceCapabilities": "NONE", "mappedAudioCount": 0, "handwritingAssetCount": 0, "contentBlocker": "NONE", "linguisticReviewBlocker": "PENDING_FINAL_AUDIT, MISSING_REVIEWER_IDENTITY, MISSING_QUALIFICATION, MISSING_MATCHING_REVIEWED_DIGEST, REACHABLE_LINGUISTIC_RECORD_NOT_APPROVED", "mappingBlocker": "PENDING_MAPPING, MISSING_EDITION_ISBN, MISSING_OWNED_COPY_VERIFICATION, MISSING_VARIANCE_OR_COVERAGE_DISPOSITION", "assetBlocker": "NONE", "localExperienceBlocker": "NONE", "authorityVarianceBlocker": "NOT_APPLICABLE", "completeInstructionalChain": "YES", "finalDisposition": "RECORDED_STATE;install=DEVELOPMENT;readiness=CONTENT_COMPLETE_REVIEW_PENDING;review=IMPLEMENTED_PENDING_FINAL_AUDIT;mapping=PENDING_CURRICULUM_REVIEWER;advancement=NO;categories=LINGUISTIC_REVIEW+OWNED_EDITION_MAPPING"},
+diff --git a/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.md b/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.md
+index 19eae373..5d292889 100644
+--- a/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.md
++++ b/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.md
+@@ -65,2 +65,2 @@ Narrow checks, not comprehensive inspection: `itemsMarkedContainsGeneratedRussia
+-| packContentReviewDigest | edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787 |
+-| repositorySourceDigest | d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a |
++| packContentReviewDigest | 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48 |
++| repositorySourceDigest | e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670 |
+@@ -103 +103 @@ Narrow checks, not comprehensive inspection: `itemsMarkedContainsGeneratedRussia
+-| 8 | Plurals, first spelling rules, existence questions, and buying things | DEVELOPMENT | CONTENT_COMPLETE_REVIEW_PENDING | PENDING_CURRICULUM_REVIEWER | IMPLEMENTED_PENDING_FINAL_AUDIT | ABSENT | ABSENT | ABSENT | b4067ca982daa266855b65eeddcf9cce10094c440fbb534ab5a442d79938b317 | 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1 | bfd7f63e08d840066654e9874c472bf7fab5c230b68ad8ff35ac202b1658af55 | fe919656bfa2775b5cc2c22f2496d4258343cfea | 6 | 7 | 31 | 40 | 5 | 19 | 5 | PRESENT | NO | 3 | 0 | 287 | 37 | 3 | 3 | 0 | 0 | NONE | 0 | 0 | NONE | PENDING_FINAL_AUDIT, MISSING_REVIEWER_IDENTITY, MISSING_QUALIFICATION, MISSING_MATCHING_REVIEWED_DIGEST, REACHABLE_LINGUISTIC_RECORD_NOT_APPROVED | PENDING_MAPPING, MISSING_EDITION_ISBN, MISSING_OWNED_COPY_VERIFICATION, MISSING_VARIANCE_OR_COVERAGE_DISPOSITION | NONE | NONE | NOT_APPLICABLE | YES | RECORDED_STATE;install=DEVELOPMENT;readiness=CONTENT_COMPLETE_REVIEW_PENDING;review=IMPLEMENTED_PENDING_FINAL_AUDIT;mapping=PENDING_CURRICULUM_REVIEWER;advancement=NO;categories=LINGUISTIC_REVIEW+OWNED_EDITION_MAPPING |
++| 8 | Plurals, first spelling rules, existence questions, and buying things | DEVELOPMENT | CONTENT_COMPLETE_REVIEW_PENDING | PENDING_CURRICULUM_REVIEWER | IMPLEMENTED_PENDING_FINAL_AUDIT | ABSENT | ABSENT | ABSENT | 78766389453733ed7337deb9d7495e1cdb393e71ffc73dd479bc3ca897085118 | 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1 | add044ba1cc2b7d1f4ef8ac0d65d9b8d123ad1ef8be39fd3368d8d7a9e0826e1 | 370d8716e2747c439da1a450a83b71b129a5c879 | 6 | 7 | 31 | 40 | 5 | 19 | 5 | PRESENT | NO | 3 | 0 | 287 | 37 | 3 | 3 | 0 | 0 | NONE | 0 | 0 | NONE | PENDING_FINAL_AUDIT, MISSING_REVIEWER_IDENTITY, MISSING_QUALIFICATION, MISSING_MATCHING_REVIEWED_DIGEST, REACHABLE_LINGUISTIC_RECORD_NOT_APPROVED | PENDING_MAPPING, MISSING_EDITION_ISBN, MISSING_OWNED_COPY_VERIFICATION, MISSING_VARIANCE_OR_COVERAGE_DISPOSITION | NONE | NONE | NOT_APPLICABLE | YES | RECORDED_STATE;install=DEVELOPMENT;readiness=CONTENT_COMPLETE_REVIEW_PENDING;review=IMPLEMENTED_PENDING_FINAL_AUDIT;mapping=PENDING_CURRICULUM_REVIEWER;advancement=NO;categories=LINGUISTIC_REVIEW+OWNED_EDITION_MAPPING |
+diff --git a/audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json b/audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json
+index 6d71d0f2..593f5e08 100644
+--- a/audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json
++++ b/audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json
+@@ -8,2 +8,2 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+@@ -18 +18 @@
+-    "8": "fe919656bfa2775b5cc2c22f2496d4258343cfea",
++    "8": "370d8716e2747c439da1a450a83b71b129a5c879",
+@@ -55 +55 @@
+-    {"unitNumber": 8, "contentDigest": "b4067ca982daa266855b65eeddcf9cce10094c440fbb534ab5a442d79938b317", "disposition": ""},
++    {"unitNumber": 8, "contentDigest": "78766389453733ed7337deb9d7495e1cdb393e71ffc73dd479bc3ca897085118", "disposition": ""},
+diff --git a/release/acceptance/candidate.json b/release/acceptance/candidate.json
+index cd414016..5131bf25 100644
+--- a/release/acceptance/candidate.json
++++ b/release/acceptance/candidate.json
+@@ -11 +11 @@
+-  "sourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "sourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-1/REVIEWER_INSTRUCTIONS.md b/review/unit-1/REVIEWER_INSTRUCTIONS.md
+index 2b7275c7..135553f1 100644
+--- a/review/unit-1/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-1/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: b85c056f7c940f045fcb9270edcfda31371ae36f7277c75b673158fc
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: f6717b08f757153c6e7008a184202f012592276036afddec6769e1232
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-1/UNIT_1_REVIEW_MANIFEST.json b/review/unit-1/UNIT_1_REVIEW_MANIFEST.json
+index 3fd37cf4..680b8216 100644
+--- a/review/unit-1/UNIT_1_REVIEW_MANIFEST.json
++++ b/review/unit-1/UNIT_1_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-1/UNIT_1_REVIEW_PACKET.md b/review/unit-1/UNIT_1_REVIEW_PACKET.md
+index bd51650a..131a423d 100644
+--- a/review/unit-1/UNIT_1_REVIEW_PACKET.md
++++ b/review/unit-1/UNIT_1_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 1 remains in development. Its readiness is content-complete and review-pend
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 1 remains in development. Its readiness is content-complete and review-pend
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-10/REVIEWER_INSTRUCTIONS.md b/review/unit-10/REVIEWER_INSTRUCTIONS.md
+index e748cda8..596a400a 100644
+--- a/review/unit-10/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-10/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 57676882eb615fb046a9a5e2429f1d97bf6fcf54010d7ae287cdfc45
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: f66fb7b60ccc969d6334a364a64c2139295dc73bf2f13a634e77b1b5e
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-10/UNIT_10_REVIEW_MANIFEST.json b/review/unit-10/UNIT_10_REVIEW_MANIFEST.json
+index 9d2050a8..5e067a7e 100644
+--- a/review/unit-10/UNIT_10_REVIEW_MANIFEST.json
++++ b/review/unit-10/UNIT_10_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-10/UNIT_10_REVIEW_PACKET.md b/review/unit-10/UNIT_10_REVIEW_PACKET.md
+index 2eaad919..a93b13b1 100644
+--- a/review/unit-10/UNIT_10_REVIEW_PACKET.md
++++ b/review/unit-10/UNIT_10_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 10 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 10 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-11/REVIEWER_INSTRUCTIONS.md b/review/unit-11/REVIEWER_INSTRUCTIONS.md
+index 4bf320f3..ec851f91 100644
+--- a/review/unit-11/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-11/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 61b1d9c77882225528ca0d0f68a44efa13c68605efdaed0e6abb8e1b
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: a033385ada8abab3709054bdfbaadf74ded58b92d5fa9478903fc2fde
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-11/UNIT_11_REVIEW_MANIFEST.json b/review/unit-11/UNIT_11_REVIEW_MANIFEST.json
+index aed830fb..2d458022 100644
+--- a/review/unit-11/UNIT_11_REVIEW_MANIFEST.json
++++ b/review/unit-11/UNIT_11_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-11/UNIT_11_REVIEW_PACKET.md b/review/unit-11/UNIT_11_REVIEW_PACKET.md
+index 6192f58d..877c21c7 100644
+--- a/review/unit-11/UNIT_11_REVIEW_PACKET.md
++++ b/review/unit-11/UNIT_11_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 11 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 11 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-12/REVIEWER_INSTRUCTIONS.md b/review/unit-12/REVIEWER_INSTRUCTIONS.md
+index ac9d941d..7d4e1218 100644
+--- a/review/unit-12/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-12/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 0747489371acaab80787db42f08f6d4f5479e6186a2c9415052df484
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: c6a0b036557437ee12978c10f941c59e5046795693c3ec8d035ecc354
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-12/UNIT_12_REVIEW_MANIFEST.json b/review/unit-12/UNIT_12_REVIEW_MANIFEST.json
+index d9a12712..7c22bd73 100644
+--- a/review/unit-12/UNIT_12_REVIEW_MANIFEST.json
++++ b/review/unit-12/UNIT_12_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-12/UNIT_12_REVIEW_PACKET.md b/review/unit-12/UNIT_12_REVIEW_PACKET.md
+index 0ecdb602..f169895a 100644
+--- a/review/unit-12/UNIT_12_REVIEW_PACKET.md
++++ b/review/unit-12/UNIT_12_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 12 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 12 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-13/REVIEWER_INSTRUCTIONS.md b/review/unit-13/REVIEWER_INSTRUCTIONS.md
+index 290f435c..f2688920 100644
+--- a/review/unit-13/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-13/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: e8ca3b0ba9b6a48acc54ea18e10a6e6fb1291698252fcbc35b02dbf2
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 353a909c931a09503db0f3c8de61f29f453776946dc25dce281a1eb3c
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-13/UNIT_13_REVIEW_MANIFEST.json b/review/unit-13/UNIT_13_REVIEW_MANIFEST.json
+index 4544d784..03e1938a 100644
+--- a/review/unit-13/UNIT_13_REVIEW_MANIFEST.json
++++ b/review/unit-13/UNIT_13_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-13/UNIT_13_REVIEW_PACKET.md b/review/unit-13/UNIT_13_REVIEW_PACKET.md
+index 45f47aa7..f3ae249c 100644
+--- a/review/unit-13/UNIT_13_REVIEW_PACKET.md
++++ b/review/unit-13/UNIT_13_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 13 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 13 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-14/REVIEWER_INSTRUCTIONS.md b/review/unit-14/REVIEWER_INSTRUCTIONS.md
+index 7bdeb89c..ed5c878b 100644
+--- a/review/unit-14/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-14/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: d59ce00b8c97b8610770ad1409daa9584e520ddab3c53a0b539e46b4
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 09057ac14bcf5427f175392fe768ebb3954c09d1cb146007103276f32
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-14/UNIT_14_REVIEW_MANIFEST.json b/review/unit-14/UNIT_14_REVIEW_MANIFEST.json
+index aae696dd..3f5280a9 100644
+--- a/review/unit-14/UNIT_14_REVIEW_MANIFEST.json
++++ b/review/unit-14/UNIT_14_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-14/UNIT_14_REVIEW_PACKET.md b/review/unit-14/UNIT_14_REVIEW_PACKET.md
+index 96ba2424..68757325 100644
+--- a/review/unit-14/UNIT_14_REVIEW_PACKET.md
++++ b/review/unit-14/UNIT_14_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 14 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 14 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-15/REVIEWER_INSTRUCTIONS.md b/review/unit-15/REVIEWER_INSTRUCTIONS.md
+index f46f0a44..7e55f14e 100644
+--- a/review/unit-15/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-15/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 7228dd28cc3954cb8810a77b81ad72f55fa4e51a64d669fd691cd61a
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 0c50406414f03d6f6a29aab9090616285f177d8ed33fa2f235e264f60
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-15/UNIT_15_REVIEW_MANIFEST.json b/review/unit-15/UNIT_15_REVIEW_MANIFEST.json
+index 02bbc70f..8a522032 100644
+--- a/review/unit-15/UNIT_15_REVIEW_MANIFEST.json
++++ b/review/unit-15/UNIT_15_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-15/UNIT_15_REVIEW_PACKET.md b/review/unit-15/UNIT_15_REVIEW_PACKET.md
+index b8580d4b..d765abe4 100644
+--- a/review/unit-15/UNIT_15_REVIEW_PACKET.md
++++ b/review/unit-15/UNIT_15_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 15 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 15 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-16/REVIEWER_INSTRUCTIONS.md b/review/unit-16/REVIEWER_INSTRUCTIONS.md
+index 43eef3c9..fc6e4a62 100644
+--- a/review/unit-16/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-16/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: f74c6fa2206f8faad47ad15e91b8dce61f886293f64d9a3f2e47947b
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 0f4bc19b56328dc9eb27cc8e0453280f49cb774725c19ead3618e2502
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-16/UNIT_16_REVIEW_MANIFEST.json b/review/unit-16/UNIT_16_REVIEW_MANIFEST.json
+index 97b235e5..62564565 100644
+--- a/review/unit-16/UNIT_16_REVIEW_MANIFEST.json
++++ b/review/unit-16/UNIT_16_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-16/UNIT_16_REVIEW_PACKET.md b/review/unit-16/UNIT_16_REVIEW_PACKET.md
+index b584437e..bce14777 100644
+--- a/review/unit-16/UNIT_16_REVIEW_PACKET.md
++++ b/review/unit-16/UNIT_16_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 16 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 16 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-17/REVIEWER_INSTRUCTIONS.md b/review/unit-17/REVIEWER_INSTRUCTIONS.md
+index c9770e1a..c8583e95 100644
+--- a/review/unit-17/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-17/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 724a3220ec28b620687871fbca1639cc8e64b58fed7fcfe8ba1a29bd
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 7aa99195f1357b0d38c3c047eaebca699ba1f33a277c2686b62f2c66d
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-17/UNIT_17_REVIEW_MANIFEST.json b/review/unit-17/UNIT_17_REVIEW_MANIFEST.json
+index 6d3899c9..80782ac7 100644
+--- a/review/unit-17/UNIT_17_REVIEW_MANIFEST.json
++++ b/review/unit-17/UNIT_17_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-17/UNIT_17_REVIEW_PACKET.md b/review/unit-17/UNIT_17_REVIEW_PACKET.md
+index 7723938e..d5bd9bcb 100644
+--- a/review/unit-17/UNIT_17_REVIEW_PACKET.md
++++ b/review/unit-17/UNIT_17_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 17 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 17 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-18/REVIEWER_INSTRUCTIONS.md b/review/unit-18/REVIEWER_INSTRUCTIONS.md
+index 9226d655..2d134802 100644
+--- a/review/unit-18/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-18/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: f195680e986e1c1069418022707886a4b11b4fe9cf8410e9e8b78e71
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: f378bb35d90d19daf4859b4585aff63d4a7e30495bbfbe35adb405a48
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-18/UNIT_18_REVIEW_MANIFEST.json b/review/unit-18/UNIT_18_REVIEW_MANIFEST.json
+index 818d47ca..a95bbb8a 100644
+--- a/review/unit-18/UNIT_18_REVIEW_MANIFEST.json
++++ b/review/unit-18/UNIT_18_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-18/UNIT_18_REVIEW_PACKET.md b/review/unit-18/UNIT_18_REVIEW_PACKET.md
+index 4004b40e..35ada959 100644
+--- a/review/unit-18/UNIT_18_REVIEW_PACKET.md
++++ b/review/unit-18/UNIT_18_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 18 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 18 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-19/REVIEWER_INSTRUCTIONS.md b/review/unit-19/REVIEWER_INSTRUCTIONS.md
+index 7e96777d..7a793f88 100644
+--- a/review/unit-19/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-19/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 56534b156e7412d1bd8e51bf493e8d80f4b58461446382483a8ed118
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 4cb4932fb65bf7fc4c15df26a580f69cc4ac6b25930fc9e014de5f9f1
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-19/UNIT_19_REVIEW_MANIFEST.json b/review/unit-19/UNIT_19_REVIEW_MANIFEST.json
+index c4abc42d..d3552afe 100644
+--- a/review/unit-19/UNIT_19_REVIEW_MANIFEST.json
++++ b/review/unit-19/UNIT_19_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-19/UNIT_19_REVIEW_PACKET.md b/review/unit-19/UNIT_19_REVIEW_PACKET.md
+index 47fe544c..7fecf426 100644
+--- a/review/unit-19/UNIT_19_REVIEW_PACKET.md
++++ b/review/unit-19/UNIT_19_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 19 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 19 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-2/REVIEWER_INSTRUCTIONS.md b/review/unit-2/REVIEWER_INSTRUCTIONS.md
+index 3ac215c6..1664adad 100644
+--- a/review/unit-2/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-2/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: def2280a90229cec52750f12cb7dc2f7564df8508c113a69cf6ed585
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 0c6bbc7ac312c0ecab9426e24ac8b7401cb795aed937bb9357e3f548c
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-2/UNIT_2_REVIEW_MANIFEST.json b/review/unit-2/UNIT_2_REVIEW_MANIFEST.json
+index cd3b8361..6a20fa52 100644
+--- a/review/unit-2/UNIT_2_REVIEW_MANIFEST.json
++++ b/review/unit-2/UNIT_2_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-2/UNIT_2_REVIEW_PACKET.md b/review/unit-2/UNIT_2_REVIEW_PACKET.md
+index 3bfebe1a..18622d5d 100644
+--- a/review/unit-2/UNIT_2_REVIEW_PACKET.md
++++ b/review/unit-2/UNIT_2_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 2 remains in development. Its readiness is content-complete and review-pend
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 2 remains in development. Its readiness is content-complete and review-pend
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-20/REVIEWER_INSTRUCTIONS.md b/review/unit-20/REVIEWER_INSTRUCTIONS.md
+index c04607c0..a0cc0e85 100644
+--- a/review/unit-20/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-20/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: f24f256481096bcc5f47bcb849f053bfda59fc67e670492c6b4e7a42
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 2efd96774cca5bbd4aa4be7f6cbc04cf72c67c1c2a647c045fea8d354
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-20/UNIT_20_REVIEW_MANIFEST.json b/review/unit-20/UNIT_20_REVIEW_MANIFEST.json
+index 6fac1f5b..577cdac8 100644
+--- a/review/unit-20/UNIT_20_REVIEW_MANIFEST.json
++++ b/review/unit-20/UNIT_20_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-20/UNIT_20_REVIEW_PACKET.md b/review/unit-20/UNIT_20_REVIEW_PACKET.md
+index af6fb3ca..de79f769 100644
+--- a/review/unit-20/UNIT_20_REVIEW_PACKET.md
++++ b/review/unit-20/UNIT_20_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 20 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 20 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-21/REVIEWER_INSTRUCTIONS.md b/review/unit-21/REVIEWER_INSTRUCTIONS.md
+index 79b0535a..0b0f205c 100644
+--- a/review/unit-21/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-21/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: a81fd110700d8cef3f88b5c34642feb7792e0bc851b2e13f08acba87
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 7a3472fda89f848e7d6d242f2867720b40ed4c30b8ee9579b61d0eb7d
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-21/UNIT_21_REVIEW_MANIFEST.json b/review/unit-21/UNIT_21_REVIEW_MANIFEST.json
+index 3db5c3ed..36a704f3 100644
+--- a/review/unit-21/UNIT_21_REVIEW_MANIFEST.json
++++ b/review/unit-21/UNIT_21_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-21/UNIT_21_REVIEW_PACKET.md b/review/unit-21/UNIT_21_REVIEW_PACKET.md
+index 651cd7c4..cc649cc9 100644
+--- a/review/unit-21/UNIT_21_REVIEW_PACKET.md
++++ b/review/unit-21/UNIT_21_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 21 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 21 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-22/REVIEWER_INSTRUCTIONS.md b/review/unit-22/REVIEWER_INSTRUCTIONS.md
+index 76196fe9..9e7516c9 100644
+--- a/review/unit-22/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-22/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 135262f03abc4c4ef1dad6c992bbbf53993657e3ce3af4fe789fadcb
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: e243333b2d94e21daf147b28286a10bf37a6c98a2723c7f2917e1f4cb
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-22/UNIT_22_REVIEW_MANIFEST.json b/review/unit-22/UNIT_22_REVIEW_MANIFEST.json
+index d47b6d27..91d44ef0 100644
+--- a/review/unit-22/UNIT_22_REVIEW_MANIFEST.json
++++ b/review/unit-22/UNIT_22_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-22/UNIT_22_REVIEW_PACKET.md b/review/unit-22/UNIT_22_REVIEW_PACKET.md
+index af354f13..8b10a570 100644
+--- a/review/unit-22/UNIT_22_REVIEW_PACKET.md
++++ b/review/unit-22/UNIT_22_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 22 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 22 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-23/REVIEWER_INSTRUCTIONS.md b/review/unit-23/REVIEWER_INSTRUCTIONS.md
+index d986440c..32b9b03e 100644
+--- a/review/unit-23/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-23/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 968d763b963eb028d821bb426f6c906c079a6266184e4f89d79d21fa
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 234cdaf06edfbe6e93aba065e5b9cea8d7f68e23e2c062c3ea2b86e38
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-23/UNIT_23_REVIEW_MANIFEST.json b/review/unit-23/UNIT_23_REVIEW_MANIFEST.json
+index 46c9caa5..bc5173d2 100644
+--- a/review/unit-23/UNIT_23_REVIEW_MANIFEST.json
++++ b/review/unit-23/UNIT_23_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-23/UNIT_23_REVIEW_PACKET.md b/review/unit-23/UNIT_23_REVIEW_PACKET.md
+index 415731c3..b99c72fc 100644
+--- a/review/unit-23/UNIT_23_REVIEW_PACKET.md
++++ b/review/unit-23/UNIT_23_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 23 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 23 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-24/REVIEWER_INSTRUCTIONS.md b/review/unit-24/REVIEWER_INSTRUCTIONS.md
+index 4b08dcfb..3d815eec 100644
+--- a/review/unit-24/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-24/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: dc6f9ac41a8520dc647df90313e05e547245bfa31fe3b2e883821f35
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: ba85ebee376a139c9198c859bf5410a8db9f3bc6ce329207356f0ff28
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-24/UNIT_24_REVIEW_MANIFEST.json b/review/unit-24/UNIT_24_REVIEW_MANIFEST.json
+index 80b60070..5b4483a6 100644
+--- a/review/unit-24/UNIT_24_REVIEW_MANIFEST.json
++++ b/review/unit-24/UNIT_24_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-24/UNIT_24_REVIEW_PACKET.md b/review/unit-24/UNIT_24_REVIEW_PACKET.md
+index a485ff15..5c2beac7 100644
+--- a/review/unit-24/UNIT_24_REVIEW_PACKET.md
++++ b/review/unit-24/UNIT_24_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 24 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 24 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-25/REVIEWER_INSTRUCTIONS.md b/review/unit-25/REVIEWER_INSTRUCTIONS.md
+index 00301c15..e201f77f 100644
+--- a/review/unit-25/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-25/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9f
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 0aa1e793c0d42a3059fba3fd9e45aabcdcb7502833e7f30ab6e23c0f9
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-25/UNIT_25_REVIEW_MANIFEST.json b/review/unit-25/UNIT_25_REVIEW_MANIFEST.json
+index fe95a2f6..08eff577 100644
+--- a/review/unit-25/UNIT_25_REVIEW_MANIFEST.json
++++ b/review/unit-25/UNIT_25_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-25/UNIT_25_REVIEW_PACKET.md b/review/unit-25/UNIT_25_REVIEW_PACKET.md
+index a07b66f2..9ad5a08d 100644
+--- a/review/unit-25/UNIT_25_REVIEW_PACKET.md
++++ b/review/unit-25/UNIT_25_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 25 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 25 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-26/REVIEWER_INSTRUCTIONS.md b/review/unit-26/REVIEWER_INSTRUCTIONS.md
+index 643acc30..a2208c37 100644
+--- a/review/unit-26/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-26/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: c15db22cc82dcfa6c49d6d0e50beea0f90b16dfc4db90777623e99d5
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: d121effb0efa17413ade5b0b89abdece4832ccf4d362036269d75133b
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-26/UNIT_26_REVIEW_MANIFEST.json b/review/unit-26/UNIT_26_REVIEW_MANIFEST.json
+index a0e91135..721996b1 100644
+--- a/review/unit-26/UNIT_26_REVIEW_MANIFEST.json
++++ b/review/unit-26/UNIT_26_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-26/UNIT_26_REVIEW_PACKET.md b/review/unit-26/UNIT_26_REVIEW_PACKET.md
+index 3513d38b..e80e8d67 100644
+--- a/review/unit-26/UNIT_26_REVIEW_PACKET.md
++++ b/review/unit-26/UNIT_26_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 26 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 26 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-27/REVIEWER_INSTRUCTIONS.md b/review/unit-27/REVIEWER_INSTRUCTIONS.md
+index 04a3e601..2151ea34 100644
+--- a/review/unit-27/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-27/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 30bef1436d3611e2444b17d9e20626addbfabafd6f958cdbdd4dc7ede
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-27/UNIT_27_REVIEW_MANIFEST.json b/review/unit-27/UNIT_27_REVIEW_MANIFEST.json
+index 0933ffe6..5e889da3 100644
+--- a/review/unit-27/UNIT_27_REVIEW_MANIFEST.json
++++ b/review/unit-27/UNIT_27_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-27/UNIT_27_REVIEW_PACKET.md b/review/unit-27/UNIT_27_REVIEW_PACKET.md
+index d15141f1..a7bf6e63 100644
+--- a/review/unit-27/UNIT_27_REVIEW_PACKET.md
++++ b/review/unit-27/UNIT_27_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 27 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 27 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-28/REVIEWER_INSTRUCTIONS.md b/review/unit-28/REVIEWER_INSTRUCTIONS.md
+index 0e667af9..3dfc16ba 100644
+--- a/review/unit-28/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-28/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 0fb9199bfef05acc54935be340710bd53e19fcd6066349300e09c29f
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: d6479521bc8abb010b6dc30dc8184d38b79f760fb97f77c5810c2ae04
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-28/UNIT_28_REVIEW_MANIFEST.json b/review/unit-28/UNIT_28_REVIEW_MANIFEST.json
+index 6e1e5397..71a6e12a 100644
+--- a/review/unit-28/UNIT_28_REVIEW_MANIFEST.json
++++ b/review/unit-28/UNIT_28_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-28/UNIT_28_REVIEW_PACKET.md b/review/unit-28/UNIT_28_REVIEW_PACKET.md
+index ebc24950..7d48cb35 100644
+--- a/review/unit-28/UNIT_28_REVIEW_PACKET.md
++++ b/review/unit-28/UNIT_28_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 28 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 28 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-29/REVIEWER_INSTRUCTIONS.md b/review/unit-29/REVIEWER_INSTRUCTIONS.md
+index 9ea7e95b..b71b1fa4 100644
+--- a/review/unit-29/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-29/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b6
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: ed3fe38fef3d30bcb4c85f2ac87ddc0ce19ddf69bd272316ddee4d262
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-29/UNIT_29_REVIEW_MANIFEST.json b/review/unit-29/UNIT_29_REVIEW_MANIFEST.json
+index b231cca1..9d9e284f 100644
+--- a/review/unit-29/UNIT_29_REVIEW_MANIFEST.json
++++ b/review/unit-29/UNIT_29_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-29/UNIT_29_REVIEW_PACKET.md b/review/unit-29/UNIT_29_REVIEW_PACKET.md
+index 3727e3d2..7ccd1ff7 100644
+--- a/review/unit-29/UNIT_29_REVIEW_PACKET.md
++++ b/review/unit-29/UNIT_29_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 29 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 29 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-3/REVIEWER_INSTRUCTIONS.md b/review/unit-3/REVIEWER_INSTRUCTIONS.md
+index 39e8a823..0a4608cc 100644
+--- a/review/unit-3/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-3/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: e40e0ce030f9221b6e2fceba66fe946d85ad172703c47bd34d795e77
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 0e2985b1929cf4286ea10dfa93e654cd107e3720d7eb00e3eff76c800
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-3/UNIT_3_REVIEW_MANIFEST.json b/review/unit-3/UNIT_3_REVIEW_MANIFEST.json
+index c60a0575..b42e958d 100644
+--- a/review/unit-3/UNIT_3_REVIEW_MANIFEST.json
++++ b/review/unit-3/UNIT_3_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-3/UNIT_3_REVIEW_PACKET.md b/review/unit-3/UNIT_3_REVIEW_PACKET.md
+index 7934df8b..07ec3be3 100644
+--- a/review/unit-3/UNIT_3_REVIEW_PACKET.md
++++ b/review/unit-3/UNIT_3_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 3 remains in development. Its readiness is content-complete and review-pend
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 3 remains in development. Its readiness is content-complete and review-pend
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-30/REVIEWER_INSTRUCTIONS.md b/review/unit-30/REVIEWER_INSTRUCTIONS.md
+index cb7d6128..83bc6285 100644
+--- a/review/unit-30/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-30/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 8149ea09748db14078ae984a2d0ae9847afb64a2341d2a427ce2e0c2c
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-30/UNIT_30_REVIEW_MANIFEST.json b/review/unit-30/UNIT_30_REVIEW_MANIFEST.json
+index 626571b4..bcfac755 100644
+--- a/review/unit-30/UNIT_30_REVIEW_MANIFEST.json
++++ b/review/unit-30/UNIT_30_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-30/UNIT_30_REVIEW_PACKET.md b/review/unit-30/UNIT_30_REVIEW_PACKET.md
+index 230d5484..91afb268 100644
+--- a/review/unit-30/UNIT_30_REVIEW_PACKET.md
++++ b/review/unit-30/UNIT_30_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 30 remains in development. Its readiness is content-complete and review-pen
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 30 remains in development. Its readiness is content-complete and review-pen
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-4/REVIEWER_INSTRUCTIONS.md b/review/unit-4/REVIEWER_INSTRUCTIONS.md
+index f1037dbf..eebb1021 100644
+--- a/review/unit-4/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-4/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 889c15ed7bf5d3189af391210f35bae5c57a9fd9c9dc3b3a439e8ebc
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 52acf038bf862fed370d6e22c2a3de7783eaa18af2a310ee123c16fef
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-4/UNIT_4_REVIEW_MANIFEST.json b/review/unit-4/UNIT_4_REVIEW_MANIFEST.json
+index ae66e137..36859883 100644
+--- a/review/unit-4/UNIT_4_REVIEW_MANIFEST.json
++++ b/review/unit-4/UNIT_4_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-4/UNIT_4_REVIEW_PACKET.md b/review/unit-4/UNIT_4_REVIEW_PACKET.md
+index 8d116def..353e7931 100644
+--- a/review/unit-4/UNIT_4_REVIEW_PACKET.md
++++ b/review/unit-4/UNIT_4_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 4 remains in development. Its readiness is content-complete and review-pend
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 4 remains in development. Its readiness is content-complete and review-pend
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-5/REVIEWER_INSTRUCTIONS.md b/review/unit-5/REVIEWER_INSTRUCTIONS.md
+index 62124ebd..7663a50c 100644
+--- a/review/unit-5/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-5/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 2a08c3d25c46aa6820a3798cafb90e415a873dbaa13bb003c42f330d
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 4a7e53377faacbe4c8161c64b6e2c2f8bb1c711ea7ab13a67a77c2742
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-5/UNIT_5_REVIEW_MANIFEST.json b/review/unit-5/UNIT_5_REVIEW_MANIFEST.json
+index d922e25f..9a69536d 100644
+--- a/review/unit-5/UNIT_5_REVIEW_MANIFEST.json
++++ b/review/unit-5/UNIT_5_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-5/UNIT_5_REVIEW_PACKET.md b/review/unit-5/UNIT_5_REVIEW_PACKET.md
+index af87d98b..9f9adf74 100644
+--- a/review/unit-5/UNIT_5_REVIEW_PACKET.md
++++ b/review/unit-5/UNIT_5_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 5 remains in development. Its readiness is content-complete and review-pend
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 5 remains in development. Its readiness is content-complete and review-pend
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-6/REVIEWER_INSTRUCTIONS.md b/review/unit-6/REVIEWER_INSTRUCTIONS.md
+index 2f552514..0472bb69 100644
+--- a/review/unit-6/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-6/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: f95e0c2f351ec7cba23cdb09b87274bb97f2e392dd783ad59c2978ed
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 7c1e6b5acef0a89d834d9c268f8e3bc14584917574ecafcc721ea94e6
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-6/UNIT_6_REVIEW_MANIFEST.json b/review/unit-6/UNIT_6_REVIEW_MANIFEST.json
+index 955ff011..fafec5ba 100644
+--- a/review/unit-6/UNIT_6_REVIEW_MANIFEST.json
++++ b/review/unit-6/UNIT_6_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-6/UNIT_6_REVIEW_PACKET.md b/review/unit-6/UNIT_6_REVIEW_PACKET.md
+index 8cd49d4b..550c12eb 100644
+--- a/review/unit-6/UNIT_6_REVIEW_PACKET.md
++++ b/review/unit-6/UNIT_6_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 6 remains in development. Its readiness is content-complete and review-pend
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 6 remains in development. Its readiness is content-complete and review-pend
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-7/REVIEWER_INSTRUCTIONS.md b/review/unit-7/REVIEWER_INSTRUCTIONS.md
+index ab9b56f2..b2139203 100644
+--- a/review/unit-7/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-7/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: e39515585eea5b131797f0c93ce3508ee99b27206cc21070675d06aa
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: 5e812255561acda69caee4624c86d450beeceb0645aa5fce35e72b964
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-7/UNIT_7_REVIEW_MANIFEST.json b/review/unit-7/UNIT_7_REVIEW_MANIFEST.json
+index 5e2ca2b4..83ebe3d1 100644
+--- a/review/unit-7/UNIT_7_REVIEW_MANIFEST.json
++++ b/review/unit-7/UNIT_7_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-7/UNIT_7_REVIEW_PACKET.md b/review/unit-7/UNIT_7_REVIEW_PACKET.md
+index a15f07a4..c17d1140 100644
+--- a/review/unit-7/UNIT_7_REVIEW_PACKET.md
++++ b/review/unit-7/UNIT_7_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 7 remains in development. Its readiness is content-complete and review-pend
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 7 remains in development. Its readiness is content-complete and review-pend
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-8/REVIEWER_INSTRUCTIONS.md b/review/unit-8/REVIEWER_INSTRUCTIONS.md
+index 83392081..c665e5a8 100644
+--- a/review/unit-8/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-8/REVIEWER_INSTRUCTIONS.md
+@@ -5,2 +5,2 @@ Application: dev.russiancompanion 2.0.0-dev (5)
+-Curriculum source commit: fe919656bfa2775b5cc2c22f2496d4258343cfea
+-Unit content-review digest: b4067ca982daa266855b65eeddcf9cce10094c440fbb534ab5a442d79938b317
++Curriculum source commit: 370d8716e2747c439da1a450a83b71b129a5c879
++Unit content-review digest: 78766389453733ed7337deb9d7495e1cdb393e71ffc73dd479bc3ca897085118
+@@ -8,3 +8,3 @@ Mapping-package digest: 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
+-Review-package digest: bfd7f63e08d840066654e9874c472bf7fab5c230b68ad8ff35ac202b1658af55
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
++Review-package digest: add044ba1cc2b7d1f4ef8ac0d65d9b8d123ad1ef8be39fd3368d8d7a9e0826e1
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+@@ -12 +12 @@ Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f
+-This packet was generated from the packaged curriculum at curriculum source commit fe919656bfa2775b5cc2c22f2496d4258343cfea. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
++This packet was generated from the packaged curriculum at curriculum source commit 370d8716e2747c439da1a450a83b71b129a5c879. That commit contains this unit's reviewed records. A later commit that changes only other units does not change this digest. This packet commit records that identity and does not perform review.
+@@ -40 +40 @@ The package marker scan detects only a fixed list of known prohibited mapping-in
+-A later OWNER_ACCEPTED disposition applies only to version 2.0.0-dev, unit content-review digest b4067ca982daa266855b65eeddcf9cce10094c440fbb534ab5a442d79938b317, and mapping-package digest 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1, and only after RESEARCH_VERIFIED, IMPLEMENTED_PENDING_FINAL_AUDIT, FINAL_CURRICULUM_AUDIT_PASSED, and INDEPENDENT_AUDIT_VERIFIED are recorded for that same digest. Confirm review-package digest bfd7f63e08d840066654e9874c472bf7fab5c230b68ad8ff35ac202b1658af55 and curriculum source commit fe919656bfa2775b5cc2c22f2496d4258343cfea before relying on this packet. Any later substantive instructional change reachable from Unit 8 invalidates downstream audit states. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER. CI does not approve that mapping.
++A later OWNER_ACCEPTED disposition applies only to version 2.0.0-dev, unit content-review digest 78766389453733ed7337deb9d7495e1cdb393e71ffc73dd479bc3ca897085118, and mapping-package digest 3e6c6b7d1ed5142212fe254e14d7d6ebb9ecdf862b9dce921a415ba8e45411f1, and only after RESEARCH_VERIFIED, IMPLEMENTED_PENDING_FINAL_AUDIT, FINAL_CURRICULUM_AUDIT_PASSED, and INDEPENDENT_AUDIT_VERIFIED are recorded for that same digest. Confirm review-package digest add044ba1cc2b7d1f4ef8ac0d65d9b8d123ad1ef8be39fd3368d8d7a9e0826e1 and curriculum source commit 370d8716e2747c439da1a450a83b71b129a5c879 before relying on this packet. Any later substantive instructional change reachable from Unit 8 invalidates downstream audit states. Any later change to the proposed edition facts invalidates the mapping-package digest. Leave correction comment, reviewer identity, reviewer qualification, review date, and reviewed digest blank. The mapping disposition in this packet remains PENDING_CURRICULUM_REVIEWER. CI does not approve that mapping.
+diff --git a/review/unit-8/UNIT_8_REVIEW_MANIFEST.json b/review/unit-8/UNIT_8_REVIEW_MANIFEST.json
+index 03b2ceae..4544b5cd 100644
+--- a/review/unit-8/UNIT_8_REVIEW_MANIFEST.json
++++ b/review/unit-8/UNIT_8_REVIEW_MANIFEST.json
+@@ -7,2 +7,2 @@
+-  "curriculumSourceCommit": "fe919656bfa2775b5cc2c22f2496d4258343cfea",
+-  "contentReviewDigest": "b4067ca982daa266855b65eeddcf9cce10094c440fbb534ab5a442d79938b317",
++  "curriculumSourceCommit": "370d8716e2747c439da1a450a83b71b129a5c879",
++  "contentReviewDigest": "78766389453733ed7337deb9d7495e1cdb393e71ffc73dd479bc3ca897085118",
+@@ -10,3 +10,3 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
+-  "reviewPackageDigest": "bfd7f63e08d840066654e9874c472bf7fab5c230b68ad8ff35ac202b1658af55",
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
++  "reviewPackageDigest": "add044ba1cc2b7d1f4ef8ac0d65d9b8d123ad1ef8be39fd3368d8d7a9e0826e1",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-8/UNIT_8_REVIEW_PACKET.md b/review/unit-8/UNIT_8_REVIEW_PACKET.md
+index 394f037f..9f00bca5 100644
+--- a/review/unit-8/UNIT_8_REVIEW_PACKET.md
++++ b/review/unit-8/UNIT_8_REVIEW_PACKET.md
+@@ -14,2 +14,2 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
+-- Curriculum source commit: fe919656bfa2775b5cc2c22f2496d4258343cfea
+-- Unit content-review SHA-256: b4067ca982daa266855b65eeddcf9cce10094c440fbb534ab5a442d79938b317
++- Curriculum source commit: 370d8716e2747c439da1a450a83b71b129a5c879
++- Unit content-review SHA-256: 78766389453733ed7337deb9d7495e1cdb393e71ffc73dd479bc3ca897085118
+@@ -17,3 +17,3 @@ Unit 8 remains in development. Its readiness is content-complete and review-pend
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
+-- Review-package SHA-256: bfd7f63e08d840066654e9874c472bf7fab5c230b68ad8ff35ac202b1658af55
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
++- Review-package SHA-256: add044ba1cc2b7d1f4ef8ac0d65d9b8d123ad1ef8be39fd3368d8d7a9e0826e1
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-9/REVIEWER_INSTRUCTIONS.md b/review/unit-9/REVIEWER_INSTRUCTIONS.md
+index e372ea69..c05dcd82 100644
+--- a/review/unit-9/REVIEWER_INSTRUCTIONS.md
++++ b/review/unit-9/REVIEWER_INSTRUCTIONS.md
+@@ -8 +8 @@ Mapping-package digest: 44199859a34f129c83c22e0e058e305784913077a569025b871abdd1
+-Pack content-review digest: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++Pack content-review digest: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -10 +10 @@ Review-package digest: d77d0751ebe7675ee64f72dcb527913f320d48e91bbbc44167fba42d9
+-Repository source digest: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++Repository source digest: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
+diff --git a/review/unit-9/UNIT_9_REVIEW_MANIFEST.json b/review/unit-9/UNIT_9_REVIEW_MANIFEST.json
+index 79a82a20..0877d89f 100644
+--- a/review/unit-9/UNIT_9_REVIEW_MANIFEST.json
++++ b/review/unit-9/UNIT_9_REVIEW_MANIFEST.json
+@@ -10 +10 @@
+-  "packContentReviewDigest": "edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787",
++  "packContentReviewDigest": "8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48",
+@@ -12 +12 @@
+-  "repositorySourceDigest": "d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a",
++  "repositorySourceDigest": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+diff --git a/review/unit-9/UNIT_9_REVIEW_PACKET.md b/review/unit-9/UNIT_9_REVIEW_PACKET.md
+index 5e44d2ff..0b1cf992 100644
+--- a/review/unit-9/UNIT_9_REVIEW_PACKET.md
++++ b/review/unit-9/UNIT_9_REVIEW_PACKET.md
+@@ -17 +17 @@ Unit 9 remains in development. Its readiness is content-complete and review-pend
+-- Pack content-review SHA-256: edd2e5032082cef7a448d237d8fbfed1630d8b964e98d096fcc034f875b14787
++- Pack content-review SHA-256: 8893de72fa31f7ada12a7b93df774b92709c345db18d3d7421640d808a077d48
+@@ -19 +19 @@ Unit 9 remains in development. Its readiness is content-complete and review-pend
+-- Repository source SHA-256: d48aa7e0090bd30422172f7b7c87fe52fe2859fa3c5be9b0851d2f9704f30e3a
++- Repository source SHA-256: e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670
