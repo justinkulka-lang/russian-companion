@@ -57,5 +57,6 @@ internal object Unit9NounBehaviorFixtures {
             return (decoded as BackupReadResult.Valid).backup.document
         } finally { stage.deleteRecursively() }
     }
-    const val v1Capture = "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit9-present-baseline-2026-10-24/BASELINE_CURRENT_UNIT8_V1.zip"
+    const val v2Capture = "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit9-noun-behavior-baseline-2026-10-25/BASELINE_CURRENT_UNIT9_V2.zip"
+    const val v1Capture = "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/PARTIAL_REVIEW.zip"
 }
