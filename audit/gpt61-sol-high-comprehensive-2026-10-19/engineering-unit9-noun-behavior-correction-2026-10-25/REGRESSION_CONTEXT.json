@@ -1,0 +1,72 @@
+{
+  "sourceCommit": "83a7b075983be5f7f9117e72d2967a9aaa06ce56",
+  "sourceRootTree": "9209d9d5ac77926da15f2ec06f354e8832f091a5",
+  "workingTreeAtStart": "CLEAN",
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "startedUtc": "2026-10-25T21:35:25.423515+00:00",
+  "inputTrees": {
+    "app/src/main": "9df81d1bcafb722aff85c02999d3b1be1e9fb3f7",
+    "app/src/test": "04534934778268cb80a1528e9391233c6d0e1e24",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "d5f8fada26efdeef2b9082cd5a4ee3bdbf956b4c",
+    "release": "ccf02a206ec31e5d2caaddc5868cdf57092854c2"
+  },
+  "mode": "REGRESSION",
+  "syntheticDryRun": false,
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/unit9-noun-behavior-correction-2026-10-25/VERIFIED/resources.gradle",
+    "-Daudit.history.output=/workspace/artifacts/unit9-noun-behavior-correction-2026-10-25/VERIFIED/REGRESSION/HISTORY_CASES.jsonl",
+    "-Daudit.events.path=/workspace/artifacts/unit9-noun-behavior-correction-2026-10-25/VERIFIED/REGRESSION/EVENTS.jsonl",
+    "-Daudit.gc.dir=/workspace/artifacts/unit9-noun-behavior-correction-2026-10-25/VERIFIED/REGRESSION",
+    "testDebugUnitTest",
+    "--rerun",
+    "--tests",
+    "dev.russiancompanion.v2.Unit9NounBehaviorReviewBaselineTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit9NounBehaviorReviewUiTest",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "runnerSha256": "81dc3516dce3066fdfdd73a4152530622ada4409515587c1c1fc98480fb9579d",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+    "/workspace/artifacts/unit9-noun-behavior-correction-2026-10-25/VERIFIED/resources.gradle": "25ade68e605848e8a6437bf162631435dc72d5ab0f033621aa4f1aeca317f42f"
+  },
+  "selectors": [
+    "dev.russiancompanion.v2.Unit9NounBehaviorReviewBaselineTest",
+    "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+    "dev.russiancompanion.v2.Unit9NounBehaviorReviewUiTest"
+  ],
+  "workerPolicy": "2forks/6GiB/forkEvery4;GC logs retained",
+  "resources": {
+    "cgroupMemoryMax": "34359738368",
+    "cgroupMemoryCurrent": "10441256960",
+    "cpus": 5
+  },
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "scope": "Unit9 versioned noun-behavior correction: 14 annotated methods in 3 full classes; fresh current baseline, genuine historical compatibility/owner9 and actual UI; not complete suite",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "completeSuite": false
+}
