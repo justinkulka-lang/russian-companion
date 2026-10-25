@@ -1,0 +1,7 @@
+# Next large task: fresh broad selected host regression
+
+Focused reconciliation is complete; read COMPLETED_STATUS.md and both ATTEMPT records first. Do not sum the overlapping scopes or retcon the failed192-method run. The last completed broad predates Unit8 production.
+
+Prepared external runner: /workspace/artifacts/unit8-source-reconciliation-2026-10-24/NEXT_BROAD/{run.py,supervise.py,resources.gradle,durable_monitor.py}. It has NOT been launched at this checkpoint. First inspect processes, existing completion/results and clean Git state. Fresh DISCOVERY must establish expected1394identities/237classes and compare actual identities against old1380scope (14new methods in four Unit8 classes; no removed IDs) before runtime. Dry-run synthetic skips are zero runtime passes. Then launch REGRESSION uninterrupted against the same six input trees, monitor actual completion and preserve every failure/native report. Two6GiBforks/forkEvery4/maxworkers2; provisional JIT wrapper directive remains experimental/unadopted, no additional test exclusions. Actual raw evidence must be collected and verified before claiming completion.
+
+Four screenshot exporters/16methods remain excluded, explicitly recorded. Physical acceptance stays outstanding and LAST after final independent comprehensive nonphysical audit. No APK assembly/install/signing, merge/freeze/formal advancement/release approval. All48findings OPEN/auditINCOMPLETE. Use one agent/existing PR64 checkout; no subagents/worktrees. No confirmation required for authorized routine engineering work/push/PR updates.

@@ -52,5 +52,31 @@
       "dev.russiancompanion.v2.Unit9WiderPolicyTest"
     ],
     "exitCode": 1
+  },
+  {
+    "directory": "ATTEMPT_2",
+    "sourceCommit": "81f95b8debf36274531f2736762eda5e8f511d27",
+    "testCounts": {
+      "reported": 50,
+      "passed": 50,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 11,
+    "selectors": [
+      "dev.russiancompanion.v2.Unit7BindingConservationTest",
+      "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+      "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+      "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "dev.russiancompanion.v2.Unit8BindingConservationTest",
+      "dev.russiancompanion.v2.Unit8PresentReviewBaselineTest",
+      "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+      "dev.russiancompanion.v2.Unit8PresentReviewUiTest",
+      "dev.russiancompanion.v2.Unit9CumulativeReviewTest",
+      "dev.russiancompanion.v2.CurrentPackHistoricalBackupTest"
+    ],
+    "exitCode": 0
   }
 ]
