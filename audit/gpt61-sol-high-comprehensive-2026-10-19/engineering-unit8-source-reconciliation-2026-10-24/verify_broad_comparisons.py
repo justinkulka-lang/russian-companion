@@ -14,4 +14,11 @@ key=lambda x:(x['testClass'],x['method']);failed={key(x) for x in a['tests'] if 
 with zipfile.ZipFile(D/'ATTEMPT_3_BROAD/RAW.zip') as z:
  for c,m in failed:
   suite=ET.fromstring(z.read('REGRESSION/XML/TEST-'+c+'.xml'));t=next(t for t in suite.findall('testcase') if t.get('name')==m);message=t.find('failure').get('message');expected,actual=message.split('expected:<',1)[1].split('> but was:<',1);actual=actual[:-1];old_id='unit8-prior-reading-nominative-agreement-v1';new_id='unit8-prior-present-nominative-agreement-v2';assert expected.count(old_id)==actual.count(new_id)==1 and expected.replace(old_id,new_id)==actual
+for attempt in ['ATTEMPT_3_BROAD','ATTEMPT_4_BROAD_COMPARE_FOLLOWUP']:
+ target=D/attempt;index=json.loads((target/'MONITORING_INDEX.json').read_text());result=json.loads((target/'REGRESSION_RESULT.json').read_text())
+ with zipfile.ZipFile(target/'MONITORING.zip') as z:
+  assert z.testzip() is None and set(z.namelist())==set(index)
+  for n,v in index.items():assert sha(z.read(n))==v['sha256'] and len(z.read(n))==v['bytes']
+  monitor=json.loads(z.read('DURABLE_MONITOR_STATUS.json'));assert monitor['completionExists'] and not monitor['newNativeReports'] and monitor['completedEvents']==result['testCounts']['reported']
+  assert monitor['partialEvents'].get('SUCCESS',0)==result['testCounts']['passed'] and monitor['partialEvents'].get('FAILURE',0)==result['testCounts']['failed']+result['testCounts']['errors'] and monitor['partialEvents'].get('SKIPPED',0)==result['testCounts']['skipped']
 print(json.dumps(dict(verified=True,originalBroadFailedIdentitiesRecheckedPassed=[dict(testClass=c,method=m) for c,m in sorted(failed)],originalNonblankAssertionsAndPinsRetained=True,originalFilesArchivedWithGitBlobSha=True,onlyTwoTestFilesChanged=True,productionAnd155RecordsUnchanged=True,followupCounts=b['testCounts'],classes=b['classes'],scopesNotSummed=True,freshAllPassBroad=False,independentFindingsClosed=0,testsExecutedByVerifier=0)))
