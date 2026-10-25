@@ -2054,7 +2054,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
-      "sha256": "e70fc8d12ad0016c5281a4028904ac2dd0a734a22511ba1c4d9544ab6bbdb9f0",
+      "sha256": "704e01c0768a03863550778e2b2c2e7fbcf5c61ae1319745944130c2ccaa4823",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -5236,6 +5236,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "Reuses existing supplied-present and nominative-agreement pools; versioned Unit8 registry, strict prior-declaration identity compatibility and labels only. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "83a7b075983be5f7f9117e72d2967a9aaa06ce56",
+      "previousRecordedSha256": "e70fc8d12ad0016c5281a4028904ac2dd0a734a22511ba1c4d9544ab6bbdb9f0",
+      "sha256": "704e01c0768a03863550778e2b2c2e7fbcf5c61ae1319745944130c2ccaa4823",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Reuses existing noun-behavior, plural and gender pools; versioned Unit9 registry, directed prior-declaration compatibility and English labels only. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

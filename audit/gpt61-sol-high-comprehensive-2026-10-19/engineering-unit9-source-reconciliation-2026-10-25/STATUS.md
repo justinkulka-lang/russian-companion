@@ -1,0 +1,7 @@
+# Unit9 authentic source tooling prepared; generation pending
+
+Actual verified production83a7b075983be5f7f9117e72d2967a9aaa06ce56; strict new beforeUnit9 declaration reconstruction restores genuine7e2296f0,then existing8→7→6→5chain. Unit8 source370d8716 and all other29effective generator source choices retained. Reviewed-reference change only exact kernel hash plus pending engineering entry;19files/292bindings and all semantic/rights approvals unchanged/false. Original three tooling files archived with Gitblob/SHA. New2method tooling proof is inventory only; no runtime execution yet.
+
+155current generated records STALE and untouched. Next:commit/compile test tooling,official Kotlin digest check,two fresh authentic153-file renders and field/byte review of all155proposed records before application; preserve prior versions and all approval/owner/rights/admission fields. External /workspace/artifacts/unit9-source-reconciliation-2026-10-25;inspect process/completion before work.70historical archives and baseline/capture remain unchanged. No permission request needed for routine authorized engineering work. One agent/existing PR64checkout.
+
+All48OPEN/auditINCOMPLETE/physicalLAST after final independent comprehensive nonphysical audit. Four exporters/16methods excluded. No APK assembly/install/signing,merge/freeze/formal advancement/release approval. Private reference untouched; no environment settings/publication change.
