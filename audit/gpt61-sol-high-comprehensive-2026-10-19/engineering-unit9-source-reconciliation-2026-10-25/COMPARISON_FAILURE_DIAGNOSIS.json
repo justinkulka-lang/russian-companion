@@ -1,0 +1,39 @@
+{
+  "testedSource": "fd246abd6c004633d28f5f00dc3069b6dd0f6e45",
+  "activeRunInputsUnmodified": true,
+  "diagnoses": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8BindingConservationTest",
+      "method": "currentDeclarationReconstructsOnlyUnit8ThenEachGenuineEarlierPack",
+      "testedSource": "fd246abd6c004633d28f5f00dc3069b6dd0f6e45",
+      "expectedBytes": 1013001,
+      "actualBytes": 1012995,
+      "expectedSha256": "0611dd8e5d03afdebcb8a2402bca37848c14e7404e3d068b6e62b7ea090fb159",
+      "actualSha256": "bd45dd4049f1b71ba3f40b86461927b816feae801a283359785e766f1c25c578",
+      "onlyUnit9DeclarationDiff": true,
+      "direction": "new_to_old",
+      "expectedOldOccurrences": 0,
+      "expectedNewOccurrences": 1,
+      "actualOldOccurrences": 1,
+      "actualNewOccurrences": 0,
+      "rawLocation": "REGRESSION/RUN.log; fresh XML will be saved by completion collector"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+      "method": "exactPriorDeclarationRefusesSchemaTenAndPreservesDownstreamOwnerIdentity",
+      "testedSource": "fd246abd6c004633d28f5f00dc3069b6dd0f6e45",
+      "expectedBytes": 31388003,
+      "actualBytes": 31388009,
+      "expectedSha256": "b81eea6b82dd342ff05720c735b4661a45b0787ae975b8c05482bca9181b3bce",
+      "actualSha256": "fb0bcf5bf07fd42a4eba0bdb677c015a35cb8ea9881dad8daa0457af7ece455c",
+      "onlyUnit9DeclarationDiff": true,
+      "direction": "old_to_new",
+      "expectedOldOccurrences": 1,
+      "expectedNewOccurrences": 0,
+      "actualOldOccurrences": 0,
+      "actualNewOccurrences": 1,
+      "rawLocation": "REGRESSION/RUN.log; fresh XML will be saved by completion collector"
+    }
+  ],
+  "notIndependentFindingClosure": true
+}

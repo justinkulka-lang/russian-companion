@@ -16,7 +16,9 @@ class Unit8BindingConservationTest {
         val before8 = RecordedCurriculumConservationScope.beforeUnit8PresentReview(root, pack)
         assertEquals(RecordedIntakeCorrectionScope.load(root, "6fd0406da6dd687196eea76ff56ad7cadc06087d"), before8)
         assertEquals(Unit8CumulativeReviewPolicy.definition.id, before8.unit(8)!!.advancement!!.cumulativeReviewPolicyId)
-        assertEquals(pack.units.filter { it.number != 8 }, before8.units.filter { it.number != 8 })
+        RecordedCurriculumConservationScope.beforeUnit9NounBehaviorReview(root, pack).let { pack ->
+            assertEquals(pack.units.filter { it.number != 8 }, before8.units.filter { it.number != 8 })
+        }
         assertEquals(pack.items, before8.items)
         assertEquals(pack.provenanceRecords, before8.provenanceRecords)
         RecordedIntakeCorrectionScope.assertCurrentUnitMatches(before8,

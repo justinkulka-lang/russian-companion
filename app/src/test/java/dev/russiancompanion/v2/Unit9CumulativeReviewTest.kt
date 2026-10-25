@@ -32,8 +32,17 @@ class Unit9CumulativeReviewTest {
             assertTrue(ordinaryUnitRequirements(p, p.unit(9)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(9)!!, s.v2LearnerView()).allowed)
             val a = open(p, s)
-            assertEquals(listOf("obj-u1-decoding", "obj-u8-plural", "obj-u3-gender"), a.slots.map { it.objectiveId })
-            assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION", "NOUN_GENDER_RECOGNITION"), a.slots.map { it.skill })
+            RecordedCurriculumConservationScope.beforeUnit9NounBehaviorReview(root(), p).let { historical ->
+                ready(historical).use { previous ->
+                    val a = open(historical, previous)
+                    assertEquals(listOf("obj-u1-decoding", "obj-u8-plural", "obj-u3-gender"), a.slots.map { it.objectiveId })
+                    assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION", "NOUN_GENDER_RECOGNITION"), a.slots.map { it.skill })
+                }
+            }
+            assertEquals(11, a.schema)
+            assertEquals(Unit9NounBehaviorCumulativeReviewPolicy.definition.id, a.policyId)
+            assertEquals(listOf("obj-u5-indeclinable", "obj-u8-plural", "obj-u3-gender"), a.slots.map { it.objectiveId })
+            assertEquals(Unit9NounBehaviorCumulativeReviewPolicy.definition.pool.map { it.skill.name }, a.slots.map { it.skill })
             assertEquals("u8-i-plural-2", a.slots[1].itemId)
             assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
             answer(p, s, a, 0); assertFalse(advancementDecision(p, p.unit(9)!!, s.v2LearnerView()).allowed)
@@ -188,6 +197,7 @@ class Unit9CumulativeReviewTest {
 
     @Test fun placementWithTaughtUnit1ButUntaughtUnit8RepairsTheMissingOwnerInsteadOfUnit1() {
         val p = pack()
+        RecordedCurriculumConservationScope.beforeUnit9NounBehaviorReview(root(), p).let { p ->
         LocalStore.openInMemory(context()).use { s ->
             for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
             s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 9, startingPoint = "RESUME_FROM_BOOK"))
@@ -201,6 +211,7 @@ class Unit9CumulativeReviewTest {
             waitTag("v2-unit-heading"); compose.onNodeWithText("Unit 8").assertIsDisplayed()
             assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 9 })
         }
+        } // Exact historical v2 placement scope; current owner5/8 routes have separate UI controls.
     }
 
     @Test fun heldUnit9WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching() {

@@ -566,6 +566,15 @@ class Units2630SourceIntakeTest {
                     }
                     assertNotEquals("Current versioned review identity for Unit $number", digest,
                         V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 9) {
+                    // The original Unit9 digest names the exact prior v2 declaration.
+                    RecordedCurriculumConservationScope.beforeUnit9NounBehaviorReview(root, pack).let { pack ->
+                        assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals("Current versioned review identity for Unit $number", digest,
+                        V2Validator.unitContentReviewDigest(pack, number))
                 } else {
                     assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
                 }

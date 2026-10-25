@@ -1,0 +1,38 @@
+[
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit8BindingConservationTest.kt",
+    "sourceCommit": "fd246abd6c004633d28f5f00dc3069b6dd0f6e45",
+    "gitBlob": "faf9d203dd91793f882f51f74b082e49b644025c",
+    "bytes": 4350,
+    "sha256": "c6bf6b46eaf95f76f9bfc614bf955548bff6256bfc45cd27056136c0aeb08627",
+    "appliedSha256": "3e8b750228fee848b8159ec0e1c951b7b2d3f54d8fea6a7e902fff3901170f94",
+    "allOriginalNonblankLinesRetainedInOrderIgnoringIndentation": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit8PresentCompatibilityTest.kt",
+    "sourceCommit": "fd246abd6c004633d28f5f00dc3069b6dd0f6e45",
+    "gitBlob": "a27303d6b154e0aac98186f330a62e2f8aa0c141",
+    "bytes": 11734,
+    "sha256": "985be00213029d704688133cd46525f47145b5a64c2552ca2ba9438bc59de349",
+    "appliedSha256": "45ebe135d598d9e279e83bc3bc11c45cbf57bf9d3794c709fda00524e9e997e9",
+    "allOriginalNonblankLinesRetainedInOrderIgnoringIndentation": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit9CumulativeReviewTest.kt",
+    "sourceCommit": "fd246abd6c004633d28f5f00dc3069b6dd0f6e45",
+    "gitBlob": "7952fab87a1b8509bf83333e52cbe6330facda92",
+    "bytes": 20367,
+    "sha256": "1d1fb2fae0ef6cc963eebfadf9951ab93b617b621527c23103face26a9ca2151",
+    "appliedSha256": "5841d538eb6703a2f03c00bf2f74f73ca893dab139769a3c6de257820d11c5c3",
+    "allOriginalNonblankLinesRetainedInOrderIgnoringIndentation": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+    "sourceCommit": "fd246abd6c004633d28f5f00dc3069b6dd0f6e45",
+    "gitBlob": "0594c1874b2d7b4ba2a0994fb53e7513fab1d51f",
+    "bytes": 68500,
+    "sha256": "8f84d3b1e3d9957452f09c3a4696aed432d0ea2073358e726886248c2f5b7a3d",
+    "appliedSha256": "e90797e10dfe2c56f16a1949b431828467fa4fda20e90b66ee35841bf18e68db",
+    "allOriginalNonblankLinesRetainedInOrderIgnoringIndentation": true
+  }
+]

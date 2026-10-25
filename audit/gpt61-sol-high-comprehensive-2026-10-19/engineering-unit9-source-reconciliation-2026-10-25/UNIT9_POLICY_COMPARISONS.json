@@ -1,0 +1,18 @@
+{
+  "testedSource": "fd246abd6c004633d28f5f00dc3069b6dd0f6e45",
+  "ordinaryMethodObservedExpected": [
+    "obj-u1-decoding",
+    "obj-u8-plural",
+    "obj-u3-gender"
+  ],
+  "ordinaryMethodObservedActual": [
+    "obj-u5-indeclinable",
+    "obj-u8-plural",
+    "obj-u3-gender"
+  ],
+  "placementExpectedPrimaryOwner": 8,
+  "placementActualNewPolicyPrimaryOwner": 5,
+  "oldV2PlacementScopedSeparately": true,
+  "actualCurrentAdvancementBackupRemainsCurrent": true,
+  "activeInputsUnmodified": true
+}
