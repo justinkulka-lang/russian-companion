@@ -1,0 +1,95 @@
+{
+  "sourceCommit": "5ba4076382050b02dc51e0dcf022e9a138f826b4",
+  "reusedCompiledObservationPath": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit8-present-correction-2026-10-24/CURRENT_POLICY_OBSERVATION.json",
+  "reusedCompiledObservationSha256": "63be6787de9173b1c2569c7b5e30da2e583e6f3b33824b102416107ea746ff2d",
+  "producerSource": "370d8716e2747c439da1a450a83b71b129a5c879",
+  "appMainTreeMatchesProducer": true,
+  "activePolicies": 28,
+  "objectivePools": 59,
+  "candidatePlacements": 89,
+  "uniqueCandidateItems": 48,
+  "printSingletonPolicies": 24,
+  "unitsWithPrintSingleton": [
+    3,
+    4,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "currentUnit9": {
+    "unit": 9,
+    "id": "unit9-prior-reading-plural-gender-v2",
+    "digest": "099e76c0255be497d920adfc51bffd3a869858dd80bb4b5216da92c0cab5a710",
+    "schema": 5,
+    "pools": 3
+  },
+  "currentUnit9Pools": [
+    {
+      "unit": 9,
+      "slot": 0,
+      "objective": "obj-u1-decoding",
+      "skill": "BOUNDED_READING",
+      "remediationStep": "",
+      "items": [
+        "u1-i-decode-pair"
+      ]
+    },
+    {
+      "unit": 9,
+      "slot": 1,
+      "objective": "obj-u8-plural",
+      "skill": "SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION",
+      "remediationStep": "u8-st-rem-plural",
+      "items": [
+        "u8-i-plural-2"
+      ]
+    },
+    {
+      "unit": 9,
+      "slot": 2,
+      "objective": "obj-u3-gender",
+      "skill": "NOUN_GENDER_RECOGNITION",
+      "remediationStep": "u3-st-rem-gender",
+      "items": [
+        "u3-i-gender-город",
+        "u3-i-gender-друг",
+        "u3-i-gender-дверь",
+        "u3-i-gender-море",
+        "u3-i-gender-дядя"
+      ]
+    }
+  ],
+  "reusedNounBehaviorPool": {
+    "unit": 6,
+    "slot": 1,
+    "objective": "obj-u5-indeclinable",
+    "skill": "SUPPLIED_NOUN_BEHAVIOR_RECOGNITION",
+    "remediationStep": "u5-st-rem-indeclinable",
+    "items": [
+      "u5-i-indecl-такси",
+      "u5-i-indecl-метро",
+      "u5-i-indecl-кино",
+      "u5-i-decl-книга",
+      "u5-i-decl-окно"
+    ]
+  }
+}
