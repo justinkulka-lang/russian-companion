@@ -1,0 +1,56 @@
+{
+  "verified": true,
+  "records": 155,
+  "changed": 95,
+  "worksheetsUnchanged": 60,
+  "priorVersionsArchived": 95,
+  "originalPlusAdditionalArchivesShaCrc": 70,
+  "attempts": [
+    {
+      "directory": "ATTEMPT_1",
+      "sourceCommit": "fd246abd6c004633d28f5f00dc3069b6dd0f6e45",
+      "testCounts": {
+        "reported": 242,
+        "passed": 236,
+        "failed": 5,
+        "errors": 0,
+        "skipped": 1
+      },
+      "classes": 49,
+      "exitCode": 1,
+      "lint": {
+        "Fatal": 0,
+        "Error": 0,
+        "Warning": 20,
+        "Hint": 1
+      },
+      "gate": "> Task :app:verifyReleaseGateAttachment"
+    },
+    {
+      "directory": "ATTEMPT_2",
+      "sourceCommit": "9c328e5392ae1e309ec5208f464603e78aeaae1d",
+      "testCounts": {
+        "reported": 74,
+        "passed": 74,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "classes": 15,
+      "exitCode": 0,
+      "lint": {
+        "Fatal": 0,
+        "Error": 0,
+        "Warning": 20,
+        "Hint": 1
+      },
+      "gate": "> Task :app:verifyReleaseGateAttachment"
+    }
+  ],
+  "scopesNotSummed": true,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "completeSuite": false,
+  "testsExecutedByVerifier": 0
+}

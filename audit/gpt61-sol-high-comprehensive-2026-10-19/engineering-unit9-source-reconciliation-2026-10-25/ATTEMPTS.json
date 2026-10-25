@@ -62,5 +62,35 @@
       "dev.russiancompanion.v2.Units2630SourceIntakeTest"
     ],
     "exitCode": 1
+  },
+  {
+    "directory": "ATTEMPT_2",
+    "sourceCommit": "9c328e5392ae1e309ec5208f464603e78aeaae1d",
+    "testCounts": {
+      "reported": 74,
+      "passed": 74,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 15,
+    "selectors": [
+      "dev.russiancompanion.v2.Unit8BindingConservationTest",
+      "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+      "dev.russiancompanion.v2.Unit8PresentReviewBaselineTest",
+      "dev.russiancompanion.v2.Unit8PresentReviewUiTest",
+      "dev.russiancompanion.v2.Unit9CumulativeReviewTest",
+      "dev.russiancompanion.v2.Unit9WiderPolicyTest",
+      "dev.russiancompanion.v2.Unit9NounBehaviorReviewBaselineTest",
+      "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+      "dev.russiancompanion.v2.Unit9NounBehaviorReviewUiTest",
+      "dev.russiancompanion.v2.Unit9BindingConservationTest",
+      "dev.russiancompanion.v2.Unit10CumulativeReviewTest",
+      "dev.russiancompanion.v2.Unit10FeedbackCorrectionTest",
+      "dev.russiancompanion.v2.Unit10ReinforcementReviewTest",
+      "dev.russiancompanion.v2.Unit10IndependentReinforcementTest",
+      "dev.russiancompanion.v2.Units2630SourceIntakeTest"
+    ],
+    "exitCode": 0
   }
 ]
