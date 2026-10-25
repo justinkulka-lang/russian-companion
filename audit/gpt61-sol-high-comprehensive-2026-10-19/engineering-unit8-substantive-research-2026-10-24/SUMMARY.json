@@ -1,0 +1,30 @@
+{
+  "sourceCommit": "fe7b26853448b8c3bd8098126d85983b013b5cd7",
+  "objectiveChains": 11,
+  "scoredCandidates": 39,
+  "selectedPresentCandidates": [
+    "u4-i-verb-говорить-мы",
+    "u4-i-verb-видеть-он",
+    "u4-i-verb-писать-вы",
+    "u4-i-verb-идти-они"
+  ],
+  "retainedAgreementCandidate": "u7-i-endings-4",
+  "proposedPolicy": "unit8-prior-present-nominative-agreement-v2",
+  "proposedFreshSchema": 10,
+  "activated": false,
+  "existingUnit8Policy": "unit8-prior-reading-nominative-agreement-v1",
+  "existingUnit8Schema": 1,
+  "originalArchives": 66,
+  "oldArchivesWithUnit8Tasks": 33,
+  "currentRecords": 155,
+  "protectedPriorEvidenceFiles": 7834,
+  "extraJUnitMethodsExecuted": 0,
+  "lint": "NOT_RUN_RESEARCH_ONLY",
+  "releaseGateAttachment": "NOT_RUN_RESEARCH_ONLY",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "completeSuite": false
+}
