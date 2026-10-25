@@ -1,0 +1,35 @@
+{
+  "sourceCommit": "8a5f6442eab1aa8194edd0694b7b82dcffa9ac61",
+  "files": [
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit7BindingConservationTest.kt",
+      "sha256": "55256aa81a05d866def3fa2544d62da2fcc09e967c3c58da817e9c78aa838fd2",
+      "bytes": 3726,
+      "gitBlob": "43730be0b63ff45eeb8bdee95d1ea2a74e58b3f2"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit7GenderCompatibilityTest.kt",
+      "sha256": "d4293c2fab92d8b61c0db91e453a1081272ffb9fba0aac1fc9c141fdd118de13",
+      "bytes": 11269,
+      "gitBlob": "240de979097ee24d2645bf8ad5bb3c9978111d1f"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit8CumulativeReviewTest.kt",
+      "sha256": "692a896d20c0020217853101984dd5cdd716e5227e31160e4f88565483ea3dd8",
+      "bytes": 19775,
+      "gitBlob": "9782ff16f47fb6784230520a14a65fc2552af953"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/GapClosureDossierTest.kt",
+      "sha256": "f75ea9b6ca7dab73e9159b1246f405fb7be1658c6cb69a29f4f10f93d06f3759",
+      "bytes": 11500,
+      "gitBlob": "7504d9b6566ef1ffde17562be18bfa3cdfa6f49a"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/audit/CurriculumReadinessReconciliationTest.kt",
+      "sha256": "a0e5ae6bbfbcb2743b28f49022672e62bc31b5a8c162c38d5145791dc97bdac2",
+      "bytes": 32686,
+      "gitBlob": "a30b97d2c8a045b4fe9be864c52793e7cd6b3b97"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 package dev.russiancompanion.v2.audit
 
+import dev.russiancompanion.v2.RecordedCurriculumConservationScope
 import dev.russiancompanion.v2.RecordedIntakeCorrectionScope
 import dev.russiancompanion.release.computeReleaseSourceDigest
 import dev.russiancompanion.release.readAcceptanceCandidate
@@ -94,7 +95,11 @@ class CurriculumReadinessReconciliationTest {
         assertEquals(14, model.orphanedCheckItems)
         // The positive-existence correction retains its two old absence examples as historical records.
         val availabilitySource = RecordedIntakeCorrectionScope.load(root(), "fe919656bfa2775b5cc2c22f2496d4258343cfea")
+        RecordedCurriculumConservationScope.beforeUnit8PresentReview(root(), pack).let { pack ->
         RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, availabilitySource, 8)
+        }
+        RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+            RecordedIntakeCorrectionScope.load(root(), RecordedCurriculumConservationScope.currentPackImplementation), 8)
         assertEquals(beforeAvailability.examples, pack.examples)
         val retainedAbsenceExamples = listOf("ex-u8-availability-2", "ex-u8-availability-3")
         assertEquals((beforeAvailabilityModel.orphanedExampleIds.split(", ") + retainedAbsenceExamples)

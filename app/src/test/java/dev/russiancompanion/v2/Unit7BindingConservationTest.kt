@@ -15,7 +15,9 @@ class Unit7BindingConservationTest {
     @Test fun currentDeclarationReconstructsEachGenuinePrecedingWholePackAndNothingElse() {
         val before7 = RecordedCurriculumConservationScope.beforeUnit7GenderReview(root, pack)
         assertEquals(Unit7CumulativeReviewPolicy.definition.id, before7.unit(7)!!.advancement!!.cumulativeReviewPolicyId)
+        RecordedCurriculumConservationScope.beforeUnit8PresentReview(root, pack).let { pack ->
         assertEquals(pack.units.filter { it.number != 7 }, before7.units.filter { it.number != 7 })
+        }
         assertEquals(pack.items, before7.items)
         assertEquals(pack.provenanceRecords, before7.provenanceRecords)
         val before6 = RecordedCurriculumConservationScope.beforeUnit6PresentReview(root, pack)
