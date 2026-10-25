@@ -1,0 +1,3 @@
+# Unit8 source tooling prepared; no records applied
+
+Verified source370d8716 pinned for Unit8 review generation. Strict current→onlyUnit8old→genuine2e2ebceb/6fd0406d→Unit7old→53d9c292→Unit6old→2fb455d4→Unit5old→b7e53230 proofs prepared; oldpins retained. Source-reference update changes onlykernelhash and adds pendingengineeringrecord;19files/292bindings remain exact,semantic/rightsfalse. New2methodtoolingclass is inventory only. Existingtestassertionbodies unchanged; known oldwhole-packcomparison scope may require preserved integrationfailure then narrow reconciliation. No generators run or155records appliedyet. Main/coretestfiles unchanged; originaltoolingarchived. No auditclosure/physicalacceptance/releaseapproval.
