@@ -1,9 +1,32 @@
-# Unit9 authentic bindings applied; affected integration pending
+# Unit9 authentic bindings: affected integration completed
 
-Two independent153-file renders match and all30packages validated in each.95of155records have only five reviewed identity-token changes;60worksheets remain byte-exact. Original95versions archived with Gitblob/source/SHA;all approval/rights/owner/admission fields and historical citations exact. Candidate remains unfrozen/sourceCommitnull/artifactNOT_RECORDED/publicReleaseNOT_APPROVED. Actual source83a7b075/canonical64876d1c…bf77f; compiled Kotlin digest rechecked after application and still identical. Strict9→8→7→6→5source proofs/new pending kernel-reference entry prepared,not new semantic/rights acceptance.
+Actual tested source `fd246abd6c004633d28f5f00dc3069b6dd0f6e45`,started `2026-10-25T22:19:11.828834+00:00`,finished `2026-10-25T22:55:59.440533+00:00`(UTC). **242reported/236passed/5failed/0errors/1skipped**,49fullclasses,actual Gradle/runner exit1. Fresh discovery/XML/unique events/outcomes/six input trees agree. This is selected affected integration,not complete-suite/app/curriculum/device acceptance or independent finding closure. Full raw evidence/commands/activation/initializers/source/root/input trees/GC/lint/exits are in ATTEMPT_1/RAW.zip,with every full failure message retained in XML. Recorded skips:[{"testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest", "method": "at020_physicalRebootPersistsGovernedRecords"}].
 
-Affected integration inventory:242methods/49fullclasses; this is not runtime passes. Includes new Unit9core/binding,upstream8/historical7,adjacent Unit10,source/readiness/review/gates/history and explicit CompleteRule/Units2630conservation comparisons. External /workspace/artifacts/unit9-source-reconciliation-2026-10-25;inspect actual process/completion before launch/edit. Commit clean inputs,fresh discovery,then uninterrupted runtime; preserve every failure before corrections.
+Actual failed/error identities:[
+  {
+    "testClass": "dev.russiancompanion.v2.Unit8BindingConservationTest",
+    "method": "currentDeclarationReconstructsOnlyUnit8ThenEachGenuineEarlierPack"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+    "method": "exactPriorDeclarationRefusesSchemaTenAndPreservesDownstreamOwnerIdentity"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9CumulativeReviewTest",
+    "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9CumulativeReviewTest",
+    "method": "placementWithTaughtUnit1ButUntaughtUnit8RepairsTheMissingOwnerInsteadOfUnit1"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+    "method": "generatedRussianPenguinAudioAndReleaseStayClosed"
+  }
+]
 
-70prior archives/whole baseline/core assertions conserved. Four screenshot exporters/16methods excluded;physical acceptance outstanding/LAST after final independent comprehensive nonphysical audit. All48OPEN/auditINCOMPLETE/qualified reviews and CC048conflict/originalUnit7restorecause outstanding. No APK assembly/install/signing,merge/freeze/formal advancement/releaseapproval. Private reference untouched;no environment settings/publication changes. One agent/existing PR64checkout.
+Two authentic153-file renders matched and all30packages validated in each.95of155records changed only five reviewed identity tokens;60worksheets exact;95prior versions/Gitblobs archived. All29other unit source choices,all reviewer/owner/mapping/rights/admission/approval fields and historical citations unchanged. Candidate unfrozen/sourceCommitnull/artifactNOT_RECORDED/publicReleaseNOT_APPROVED. Actual production source83a7b075/canonical64876d1cbd09b189123ba09dd8af59af5245f8902aba2738fc392d5ff85bf77f; official Kotlin digest rechecked after application. Source tooling uses strict9→8→7→6→5genuine whole-pack proofs and a pending reference entry; these do not establish semantic/rights acceptance.
 
-Fresh discovery7cbaf01784fe68be7961fea406fd6a1f0cb35911 completed242synthetic skips/49classes/zero runtime passes. Reuse only with identical six input trees. Read INTEGRATION_OWNERSHIP.md before manual actions:durable supervisor owns runtime,and complete_integration.py owns exclusive collection/verification/audit-doc commit/normal push/DraftPR64 update after actual completion. Inspect external AUTO_COMPLETION_PROCESS/RESULT/ERROR plus actual monitor/completion records;do not duplicate a live collector or change active inputs.
+Lint:{"Error": 0, "Fatal": 0, "Hint": 1, "Warning": 20}. Task/cache statuses:{"compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE", "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE", "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE", "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE", "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest", "lintDebug": "> Task :app:lintDebug", "testDebugUnitTest": "> Task :app:testDebugUnitTest", "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"}. Gate attachment is not release approval.70prior archives/whole baseline/original core assertions conserved. Earlier83a7b07514/14core and7e2296f01positive/1intentional contrast failure and93831e85broad1393pass/1physicalskip remain immutable,separate and unsummed. Historical main562passing was a different selected source/scope,not complete-suite;420f41ff691was source inventory/unverified handoff execution with67focused methods verified.
+
+Four screenshot exporters/16methods explicitly excluded:VisualReviewCaptureTest2,Units35ChunkCaptureTest2,Units610ChunkCaptureTest10,Units1115GapCaptureTest2. Physical Galaxy S26 Ultra airplane-mode/reboot acceptance remains outstanding/LAST after final independent comprehensive nonphysical audit. APK identity/signature null;assembly/install/signingNOT_RUN. All48findingsOPEN/auditINCOMPLETE;23print-singleton policies/qualified reviews/CC048conflict/originalUnit7restorecause remain. No merge/freeze/formal advancement/releaseapproval. Private Penguin untouched;environment settings unchanged/earlier publication user-confirmed and independently unobserved;provisional JIT directive unadopted/native causeUNCONFIRMED. New native report observations:[].
