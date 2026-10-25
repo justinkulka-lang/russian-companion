@@ -1,0 +1,1 @@
+import java.io.*;import java.util.*;public class Digest {public static void main(String[] a){System.out.println(dev.russiancompanion.release.ReleaseSourceDigestKt.computeReleaseSourceDigest(new File(a[0]),Collections.emptyMap()));}}

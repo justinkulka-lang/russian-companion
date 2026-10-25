@@ -1,0 +1,193 @@
+{
+  "sourceCommit": "370d8716e2747c439da1a450a83b71b129a5c879",
+  "inputTrees": {
+    "app/src/main": "f0fc9710fb3eca3eb5c0bddc6a7ce8e55138ce87",
+    "app/src/test": "ef3b14484fe02f402ab2e4749af8de88fbb52eec",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "0b8688248d13372e677d90108864cc90d44a13cc",
+    "release": "adb08d54e11d4554eab7664ee4f5f0f44a522464"
+  },
+  "syntheticDryRun": false,
+  "exitCode": 0,
+  "finishedUtc": "2026-10-25T03:27:36.766133+00:00",
+  "testCounts": {
+    "reported": 12,
+    "passed": 12,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 3,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+      "method": "genuineSchemaOnePartialCompletesWithoutAddingPresentOrRelabelling",
+      "outcome": "PASSED",
+      "seconds": "10.488",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+      "method": "recentPresentMissRemainsAssignedThroughCorrectionRollbackBackupAndReopen",
+      "outcome": "PASSED",
+      "seconds": "11.518",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+      "method": "wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit",
+      "outcome": "PASSED",
+      "seconds": "5.553",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+      "method": "exactPriorDeclarationRefusesSchemaTenAndPreservesDownstreamOwnerIdentity",
+      "outcome": "PASSED",
+      "seconds": "88.043",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+      "method": "missingOwnersAndChangedTeachingOrItemsRefuseFreshAndSavedTasks",
+      "outcome": "PASSED",
+      "seconds": "6.102",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentReviewBaselineTest",
+      "method": "actualCurrentPartialTaskRoundtripsReopensAndCompletesItsOwnObligation",
+      "outcome": "PASSED",
+      "seconds": "18.456",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentReviewBaselineTest",
+      "method": "printAndAgreementAnswersCannotReplaceFreshAssignedPresentAnswer",
+      "outcome": "PASSED",
+      "seconds": "10.82",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentReviewUiTest",
+      "method": "genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning",
+      "outcome": "PASSED",
+      "seconds": "3.777",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentReviewUiTest",
+      "method": "unpreparedReviewStatesFiniteScopeAndRoutesToBothRealOwnersWithoutCredit",
+      "outcome": "PASSED",
+      "seconds": "0.189",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentReviewUiTest",
+      "method": "actualFreshReviewRepairsPresentTeachingWithoutPracticeCreditAndAdvances",
+      "outcome": "PASSED",
+      "seconds": "11.279",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentReviewUiTest",
+      "method": "freshUnitDetailEntryAndUnstartedScreenUseTheDeclaredPresentPolicy",
+      "outcome": "PASSED",
+      "seconds": "5.518",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit8PresentReviewUiTest",
+      "method": "genuinelyCompletedUnit4RoutesMissingUnit7WithoutCreatingReviewCredit",
+      "outcome": "PASSED",
+      "seconds": "1.176",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+      "tests": "5",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-25T03:23:23.299Z",
+      "hostname": "0cc76a0c8c68",
+      "time": "123.085"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit8PresentReviewBaselineTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-25T03:23:22.941Z",
+      "hostname": "0cc76a0c8c68",
+      "time": "30.281"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit8PresentReviewUiTest",
+      "tests": "5",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-25T03:25:26.402Z",
+      "hostname": "0cc76a0c8c68",
+      "time": "21.95"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": {
+    "sameInputTrees": true,
+    "discoveredNotReported": [],
+    "reportedNotDiscovered": [],
+    "exactSameMethodSet": true
+  },
+  "allFreshSelectedMethodsReported": true,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}

@@ -1,3 +1,3 @@
-# Initial core retained; copy-order follow-up pending
+# Unit8 core verified; bindings pending
 
-Initial77e3d26e:12reported/11passed/1UIcopyassertfailure,3classes,exit1. Wholeunchangedbaseline2/2andcompatibility5/5passed;4/5UIpassed. RAW_CORE.zip/INITIAL_OUTCOME.md preserveexactfailure. OnlynewUnit8disclaimerorder changed toplaceunseenreadingfirst,aligningretainedassertion; scope meaning unchanged. No test/sourceguard/hash/assertion modified. Fresh12method/3fullclassfollowupPLANNED_NOT_EXECUTED;externalCORRECTED_COPYstatebeforelaunch/edit. 155generatedrecords remainSTALE/untouched. All48OPEN/auditINCOMPLETE/physicalLAST/four exporters excluded/noAPK/signing/merge/freeze/approval.
+Read COMPLETED_STATUS.md/NEXT_TASK.md. Final370d8716:12/12methods/3fullclasses/exit0; initial77e3d26e11pass/1copyassertfailurepreserved. Originalbaseline/old34policies/alloldtestbytes/69archives conserved. Officialdigeste1f57fec…c21670;155generatedrecordsSTALEanduntouched;integration/broadnotclaimed.All48OPEN/auditINCOMPLETE/physicalLAST.
