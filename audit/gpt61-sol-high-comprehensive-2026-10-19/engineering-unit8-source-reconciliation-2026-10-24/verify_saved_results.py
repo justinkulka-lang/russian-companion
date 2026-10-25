@@ -45,9 +45,14 @@ for attempt in json.loads((D/'ATTEMPTS.json').read_text()):
   for n,v in index.items():assert sha(z.read(n))==v['sha256'] and len(z.read(n))==v['bytes']
   phases={}
   for mode in ['DISCOVERY','REGRESSION']:
-   c=json.loads(z.read(mode+'/CONTEXT.json'));s=json.loads(z.read(mode+'/RESULT.json'));assert c['sourceCommit']==s['sourceCommit']==source
-   assert c['sourceRootTree']==git('rev-parse',source+'^{tree}').decode().strip() and c['inputTrees']==s['inputTrees']
-   for n,h in c['inputTrees'].items():assert git('rev-parse',source+':'+n).decode().strip()==h
+   c=json.loads(z.read(mode+'/CONTEXT.json'));s=json.loads(z.read(mode+'/RESULT.json'));phase_source=c['sourceCommit'];assert phase_source==s['sourceCommit']
+   # Discovery can precede an evidence-only commit: retain both real commit identities,
+   # verify each root against its own source and all six inputs against BOTH sources.
+   if mode=='REGRESSION':assert phase_source==source
+   assert c['sourceRootTree']==git('rev-parse',phase_source+'^{tree}').decode().strip() and c['inputTrees']==s['inputTrees']
+   for n,h in c['inputTrees'].items():
+    assert git('rev-parse',phase_source+':'+n).decode().strip()==h
+    assert git('rev-parse',source+':'+n).decode().strip()==h
    assert len(c['exclusions'])==4 and sum(c['exclusions'].values())==16 and c['selectors']==attempt['selectors']
    assert s['classes']==attempt['classes'] and s['testCounts']['reported']==counts['reported']
    assert sha(z.read('run.py'))==c['runnerSha256']

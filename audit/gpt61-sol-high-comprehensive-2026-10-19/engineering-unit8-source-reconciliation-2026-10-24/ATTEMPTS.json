@@ -78,5 +78,19 @@
       "dev.russiancompanion.v2.CurrentPackHistoricalBackupTest"
     ],
     "exitCode": 0
+  },
+  {
+    "directory": "ATTEMPT_3_BROAD",
+    "sourceCommit": "f6eb548dce2051252f2c680093923384891631aa",
+    "testCounts": {
+      "reported": 1394,
+      "passed": 1391,
+      "failed": 2,
+      "errors": 0,
+      "skipped": 1
+    },
+    "classes": 237,
+    "selectors": [],
+    "exitCode": 1
   }
 ]
