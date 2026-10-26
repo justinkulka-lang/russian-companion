@@ -1,0 +1,68 @@
+{
+  "sourceBeforeEdit": "6dd46bd664fdd93e917228d71f50c42b395d196e",
+  "applied": false,
+  "originalFailureScope": "395/386pass/8fail/1physicalskip;71classes;exit1",
+  "files": [
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit10BindingConservationTest.kt",
+      "originalSha256": "65c4382168b6af9208a33686aa254b19d1374c6b5ac337d0423f2622e1259422",
+      "preparedSha256": "b96fafd7b0c292a28ca4c44e7e402dcbace74fb1323039567f984142487914a6",
+      "allOriginalNonblankLinesInOrderExcept": [
+        "val now = Json.parseToJsonElement(File(root, path).readText()).jsonObject",
+        "val actual = MessageDigest.getInstance(\"SHA-256\").digest(File(root, \"app/$name\").readBytes()).joinToString(\"\") { \"%02x\".format(it) }"
+      ],
+      "allOriginalAssertionsAndPinsRetained": true
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit10PresentCompatibilityTest.kt",
+      "originalSha256": "8848fd3521ff68c06c0c5db37ea93ae06dbb250b14f4aee47a0b944cdecf78a1",
+      "preparedSha256": "4321c3d82eec1362552ef584a4f1c43f8eb507cd15eb6d14752c457b8ed04d80",
+      "allOriginalNonblankLinesInOrderExcept": [],
+      "allOriginalAssertionsAndPinsRetained": true
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit11AgreementRemediationTest.kt",
+      "originalSha256": "f32c35f7fbd9381312ab0a06eadfa7c5329fa25b0d7b520e0e0732e0f2e6554e",
+      "preparedSha256": "bed93586f37f170e8453640a61e8c7aa8efc92ec9b1cadd1fb048acfc778e50a",
+      "allOriginalNonblankLinesInOrderExcept": [],
+      "allOriginalAssertionsAndPinsRetained": true
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit11CumulativeReviewTest.kt",
+      "originalSha256": "1c9dcebea48058a2bd4b5536c5567af1c1094311f355f427d58562f4ab4e30ee",
+      "preparedSha256": "c0feddf1d8a46c97f83d621f91f7bc8015a26ffbc0060e0554c67e6cb88cd624",
+      "allOriginalNonblankLinesInOrderExcept": [],
+      "allOriginalAssertionsAndPinsRetained": true
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+      "originalSha256": "88363754d85d59c75c557624b65328397e72034a07a3d68ff516ee4fb0232535",
+      "preparedSha256": "48fdfda0d5eb6e977999a7fcb67c369fdf353a423c3e1e160574c43310a94ca4",
+      "allOriginalNonblankLinesInOrderExcept": [],
+      "allOriginalAssertionsAndPinsRetained": true
+    }
+  ],
+  "rawSourceProof": {
+    "oldSource": "745234c99e3d69fadca835ba7f8eb98ad1a8ab48",
+    "newSource": "c2d297e79fa677aa1375917cfbe052e4c0806633",
+    "oldSha256": "dff8911d786a157b594d2b1d658b9d4132ffd2283f3cb2c3b124bcec9ec0d7d6",
+    "newSha256": "89e13525a0f5d60ad0455b7000d3e880db217d3a4a74e327164c3ef29750ff96",
+    "oldToken": "unit11-prior-reading-possession-absence-v1",
+    "newToken": "unit11-prior-noun-behavior-possession-absence-v2",
+    "oneTokenOnlyEveryOtherByteExact": true
+  },
+  "genuineReferencePair": {
+    "commit": "1d96cb4e89768f69246960e263d9b51412a3b9f4",
+    "referencePath": "app/src/test/resources/reviewed-curriculum-cyrillic.json",
+    "referenceSha256": "8188a39bd60bee2df09eabb4ecfdd61111be4cd13445ef5ae9252437f1b80639",
+    "kernelPath": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+    "kernelSha256": "a928edebf26764cdcd48c2e68a9f141da536a4e427e3b0e04c7d5066cc09c11e",
+    "recordedKernelHashMatches": true,
+    "pendingEngineeringReviews": 5
+  },
+  "allOriginalAssertionsAndPinsRetained": true,
+  "twoNonassertInputExpressionsChanged": true,
+  "productionAndCurrentBindingsUnchanged": true,
+  "all48Findings": "OPEN",
+  "completeSuite": false
+}

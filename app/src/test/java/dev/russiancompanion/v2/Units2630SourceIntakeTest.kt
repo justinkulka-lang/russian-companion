@@ -575,6 +575,15 @@ class Units2630SourceIntakeTest {
                         RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
                     assertNotEquals("Current versioned review identity for Unit $number", digest,
                         V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 11) {
+                    // The original digest names the exact prior reading/absence declaration.
+                    RecordedCurriculumConservationScope.beforeUnit11NounReview(root, pack).let { pack ->
+                        assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals("Current versioned review identity for Unit $number", digest,
+                        V2Validator.unitContentReviewDigest(pack, number))
                 } else {
                     assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
                 }

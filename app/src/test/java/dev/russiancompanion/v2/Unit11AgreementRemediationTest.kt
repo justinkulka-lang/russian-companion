@@ -44,7 +44,12 @@ class Unit11AgreementRemediationTest {
         // Independently pin the whole current Unit11 and all of its evidence.
         val live = pack()
         assertFalse("Later whole-pack changes must not be silently normalized", p == live)
-        assertEquals(p.unit(11), live.unit(11))
+        // Exact instructional correction predates the declaration-only Unit11 review change.
+        RecordedCurriculumConservationScope.beforeUnit11NounReview(root(), live).let { live ->
+            assertEquals(p.unit(11), live.unit(11))
+        }
+        assertEquals(Unit11NounCumulativeReviewPolicy.definition.id, live.unit(11)!!.advancement!!.cumulativeReviewPolicyId)
+        assertNotEquals(V2Validator.unitContentReviewDigest(p, 11), V2Validator.unitContentReviewDigest(live, 11))
         assertEquals(declaredAfterSession(), session(live))
         val objectives = p.unit(11)!!.objectives.map { it.id }.toSet()
         assertEquals(p.items.filter { it.objectiveId in objectives }, live.items.filter { it.objectiveId in objectives })
