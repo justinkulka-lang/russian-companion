@@ -1,7 +1,7 @@
 {
-  "baselineParent": "862de951b7426d3b6f990dc106e9eea339411b66",
+  "baselineParent": "189102b2b5730d40c184c095b4bd73c575ce6807",
   "newTestFile": "app/src/test/java/dev/russiancompanion/v2/Unit11NounReviewBaselineTest.kt",
-  "newTestSha256": "20578b78475b98195131e6e7f65cbdf47185aa001c8b5f9f14f06246d72cfd70",
+  "newTestSha256": "9ceddd8fc882ebc80a6a7046352bd993de77cc997dc131913fe50720ab00cf59",
   "preexistingTestFiles": {
     "app/src/test/java/dev/russiancompanion/ScaffoldBoundaryTest.kt": "fa7284e7615a4434a500f92972de1fd312fbe10992cedbbe954acf679eb75234",
     "app/src/test/java/dev/russiancompanion/acceptance/AcceptanceBehaviorTest.kt": "7f9df546c72e35b1cb4a0fe3cca934975a460f8b767cb84cb9fbf3c1e83d52f6",
@@ -281,5 +281,6 @@
     "Units35ChunkCaptureTest": 2,
     "Units610ChunkCaptureTest": 10,
     "Units1115GapCaptureTest": 2
-  }
+  },
+  "initialFailedAttempt": "ATTEMPT_1"
 }

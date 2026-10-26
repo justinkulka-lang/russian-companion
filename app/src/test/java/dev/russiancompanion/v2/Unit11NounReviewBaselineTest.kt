@@ -87,7 +87,7 @@ class Unit11NounReviewBaselineTest {
                 prepare(store)
                 val task = open(store)
                 assertEquals(2, task.slots.size)
-                assertEquals(cumulativeReviewDeclaredPolicy(pack, 10)!!.id, task.policyId)
+                assertEquals(cumulativeReviewDeclaredPolicy(pack, 11)!!.id, task.policyId)
                 assertEquals((1..10).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
                 val prerequisites = store.cumulativeReviewHistory().first
                 assertEquals("unit5-prior-gender-subject-v2", prerequisites.single { it.targetUnit == 5 }.policyId)
