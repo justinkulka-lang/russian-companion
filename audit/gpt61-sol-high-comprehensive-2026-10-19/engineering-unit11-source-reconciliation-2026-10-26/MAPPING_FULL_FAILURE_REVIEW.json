@@ -1,0 +1,53 @@
+{
+  "actualBroadSource": "3434fb8391a6bb4bee91c312a13bd79523db7799",
+  "originalCounts": {
+    "reported": 1441,
+    "passed": 1438,
+    "failed": 2,
+    "errors": 0,
+    "skipped": 1
+  },
+  "classes": 249,
+  "exitCode": 1,
+  "bothCompleteXmlMessagesReadAndHashMatched": true,
+  "failures": [
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "structuralMappingsMatchTheOwnedEditionObservations",
+      "xmlMember": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Units1620SourceIntakeTest.xml",
+      "xmlSha256": "76841ce453c05aca311eca7df7f8074df66bc65aa5b6f84a3bd455adfa9e1a9a",
+      "fullMessageBytes": 46194,
+      "fullMessageSha256": "6f8a16c6ceb931e188ff9bc73567841ff850a0ed638ce2be2fc7daf3feff8bf4",
+      "sourceFrames": [
+        "at dev.russiancompanion.v2.Units1620SourceIntakeTest.structuralMappingsMatchTheOwnedEditionObservations(Units1620SourceIntakeTest.kt:80)"
+      ],
+      "expectedBytes": 23070,
+      "actualBytes": 23076,
+      "expectedSha256": "80b47dfee9863efa5f53087f2f10a7170247befe381fd83fc8fa9f5b70b56f5f",
+      "actualSha256": "b09908d32f88e374d79e564ebf1beef8444083b78996119d918eae766a9dbc80",
+      "exactDifference": {
+        "expectedToken": "unit11-prior-reading-possession-absence-v1",
+        "actualToken": "unit11-prior-noun-behavior-possession-absence-v2",
+        "occurrences": 1,
+        "everyOtherWholeUnitValueByteExact": true
+      }
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+      "method": "structuralMappingsAreDigestBoundAndStayUnsigned",
+      "xmlMember": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Units2125SourceIntakeTest.xml",
+      "xmlSha256": "6ee4e01c7bc4d67928ab8b6bbeb5434135484a2721fc0396ec847a9b58318cc8",
+      "fullMessageBytes": 209,
+      "fullMessageSha256": "c41e58aa0dbb4f73dceac7f1b3c845795233007a802c865b3de0c5dcc77d78fb",
+      "sourceFrames": [
+        "at dev.russiancompanion.v2.Units2125SourceIntakeTest.structuralMappingsAreDigestBoundAndStayUnsigned(Units2125SourceIntakeTest.kt:167)"
+      ],
+      "expectedBytes": 66,
+      "actualBytes": 66,
+      "expectedSha256": "a685bfc45641853c912930de68bb2f56c94bb92f710808f177e04b66ee756885",
+      "actualSha256": "78329ed91cec16773fa255b658dc3846b7037238e86c53eb0c61e737b4689ac1",
+      "expectedValue": "[35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69]",
+      "actualValue": "[1d4c25c25e20b7fb6629995fcfb66e29f02554e276c5a7f5ec69fb5ac0a2ca5c]"
+    }
+  ]
+}

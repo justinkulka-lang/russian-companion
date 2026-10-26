@@ -77,8 +77,14 @@ class Units1620SourceIntakeTest {
                 // Original correction ledger's newUnit11Digest,not a freshly bumped snapshot.
                 val declaredAfterDigest = "35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69"
                 assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(afterRepair, 11))
-                assertEquals(afterRepair.unit(11), pack.unit(11))
-                assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
+                // These original assertions name the repaired instruction before Unit11's later review declaration.
+                RecordedCurriculumConservationScope.beforeUnit11NounReview(repo(), pack).let { pack ->
+                    assertEquals(afterRepair.unit(11), pack.unit(11))
+                    assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
+                }
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), 11)
+                org.junit.Assert.assertNotEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
             } else if (number == 15) {
                 // Keep the original pin on its recorded snapshot; preparation changed later.
                 val prior = historicalSourcePack("49a926c5ace0459edf7712ca5d90db4a63ff9d31")
