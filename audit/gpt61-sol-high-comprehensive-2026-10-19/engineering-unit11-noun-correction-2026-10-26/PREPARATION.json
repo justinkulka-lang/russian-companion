@@ -126,7 +126,7 @@
     "app/src/test/java/dev/russiancompanion/v2/Unit11AgreementRemediationTest.kt": "f32c35f7fbd9381312ab0a06eadfa7c5329fa25b0d7b520e0e0732e0f2e6554e",
     "app/src/test/java/dev/russiancompanion/v2/Unit11CumulativeReviewTest.kt": "1c9dcebea48058a2bd4b5536c5567af1c1094311f355f427d58562f4ab4e30ee",
     "app/src/test/java/dev/russiancompanion/v2/Unit11FeedbackCorrectionTest.kt": "389115f6ebe74da1035238081b4cbc90c86f9b85fcbbfc5a4660b12b2ec6dba3",
-    "app/src/test/java/dev/russiancompanion/v2/Unit11NounReviewBaselineTest.kt": "9ceddd8fc882ebc80a6a7046352bd993de77cc997dc131913fe50720ab00cf59",
+    "app/src/test/java/dev/russiancompanion/v2/Unit11NounReviewBaselineTest.kt": "d69833c68ba9fa0e5cbd384940cb4a581b93953d45045d21a7387c66b2115fe4",
     "app/src/test/java/dev/russiancompanion/v2/Unit12CumulativeReviewTest.kt": "87adcda9eaa6373d40bce5637d334dd51395f89cac1154114c203807183d289d",
     "app/src/test/java/dev/russiancompanion/v2/Unit12FeedbackCorrectionTest.kt": "26779a7e4e8af56c4c2f39023e337a8c4667430714d0c8a2bf9e5b7f3c3a080b",
     "app/src/test/java/dev/russiancompanion/v2/Unit13ContextTeachingTest.kt": "ced324f49577d8c7ce99ce9b975955bac667f8acda19a1d36de81752c46ebd69",
@@ -558,5 +558,26 @@
     "app/src/main/assets/content/v2-curriculum.json",
     "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
     "app/src/main/java/dev/russiancompanion/v2/ui/V2CumulativeReviewScreen.kt"
-  ]
+  ],
+  "baselineHarnessCorrection": {
+    "initialSource": "6f78625afc268357800aab6f582cdf5c8ab42328",
+    "initialEvidenceCommit": "dff10945e476903abdeac56c23280d2f4ea344f4",
+    "initialCounts": {
+      "reported": 14,
+      "passed": 13,
+      "failed": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit11NounReviewBaselineTest.kt",
+    "originalSha256": "9ceddd8fc882ebc80a6a7046352bd993de77cc997dc131913fe50720ab00cf59",
+    "correctedSha256": "d69833c68ba9fa0e5cbd384940cb4a581b93953d45045d21a7387c66b2115fe4",
+    "oldExpression": "assertFalse(cumulativeReviewComplete(pack, store.v2LearnerView(), 10))",
+    "newExpression": "assertFalse(cumulativeReviewComplete(pack, store.v2LearnerView(), 11))",
+    "reason": "New obligation now reaches a previously unreachable baseline post-completion check. That check incorrectly queried already-completed prerequisite10 instead of assignment target11. Correct only the lookup input;expected refusal/assertFalse unchanged. Original whole baseline/raw failure retained.",
+    "productionChanged": false,
+    "allOtherPreexistingTestsUnchanged": true,
+    "scopesNotSummed": true
+  },
+  "wholeBaselineArchivedAt": "ATTEMPT_1/ORIGINAL_BASELINE_TEST.zip"
 }

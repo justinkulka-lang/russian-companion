@@ -71,7 +71,7 @@ class Unit11NounReviewBaselineTest {
             assertEquals(task.policyDigest, completion.reviewPolicyDigest)
             assertTrue(completion.reviewCompletionOrder > task.boundary)
             answer(store, task, 0, false)
-            assertFalse(cumulativeReviewComplete(pack, store.v2LearnerView(), 10))
+            assertFalse(cumulativeReviewComplete(pack, store.v2LearnerView(), 11))
             assertTrue(11 in currentCompletedUnitNumbers(pack, store.v2LearnerView()))
         }
     }

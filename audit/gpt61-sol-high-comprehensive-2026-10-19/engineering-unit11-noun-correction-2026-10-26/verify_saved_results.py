@@ -17,6 +17,11 @@ for n,h in prep['unchangedTrees'].items():assert g('rev-parse',S+':'+n)==h
 with zipfile.ZipFile(D/'ORIGINAL_PRODUCTION.zip') as z:
  assert z.testzip() is None
  for n,h in prep['originalProduction'].items():assert sha(z.read(n))==h and z.read(n)==blob(prep['parent'],n)
+if 'baselineHarnessCorrection' in prep:
+ x=prep['baselineHarnessCorrection']
+ with zipfile.ZipFile(D/'ATTEMPT_1/ORIGINAL_BASELINE_TEST.zip') as z:
+  old=z.read(x['path']);assert sha(old)==x['originalSha256'] and old==blob(x['initialSource'],x['path'])
+  assert old.decode().replace(x['oldExpression'],x['newExpression']).encode()==blob(S,x['path'])
 a=blob(prep['parent'],'app/src/main/assets/content/v2-curriculum.json');b=blob(S,'app/src/main/assets/content/v2-curriculum.json');assert a.replace(b'unit11-prior-reading-possession-absence-v1',b'unit11-prior-noun-behavior-possession-absence-v2')==b
 kernel=blob(S,'app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt').decode();objects={}
 for match in re.finditer(r'internal object (\w+CumulativeReviewPolicy)\s*\{',kernel):
@@ -53,4 +58,4 @@ if (D/'OFFICIAL_SOURCE_DIGEST.json').exists():
   for n,v in read('OFFICIAL_COMPUTATION_INDEX.json').items():assert sha(z.read(n))==v['sha256'] and len(z.read(n))==v['bytes']
   for n,v in o['compiledClasses'].items():assert sha(z.read('COMPILED/'+n))==v['sha256']
   for n,h in o['helperSha256'].items():assert sha(z.read(n))==h
-print(json.dumps(dict(verified=True,testedSource=S,counts=r['testCounts'],classes=3,exitCode=r['exitCode'],oldPolicyObjectsByteExact=37,preexistingTestsAndBaselineUnchanged=True,archivesShaCrc=72,currentRecords='155_STALE_UNCHANGED',newRuntimeMethodsByVerifier=0,all48Findings='OPEN',audit='INCOMPLETE',physicalAcceptance='OUTSTANDING_LAST',completeSuite=False)))
+print(json.dumps(dict(verified=True,testedSource=S,counts=r['testCounts'],classes=3,exitCode=r['exitCode'],oldPolicyObjectsByteExact=37,allOtherPreexistingTestsConserved=True,baselineCorrectionExplicit=True,archivesShaCrc=72,currentRecords='155_STALE_UNCHANGED',newRuntimeMethodsByVerifier=0,all48Findings='OPEN',audit='INCOMPLETE',physicalAcceptance='OUTSTANDING_LAST',completeSuite=False)))

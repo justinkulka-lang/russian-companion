@@ -2,7 +2,7 @@
 from pathlib import Path
 from datetime import datetime,timezone
 import json,subprocess,shutil,hashlib,base64,re
-R=Path('/workspace/russian-companion');W=Path(__file__).parent;O=W/'VERIFIED';r=json.loads((O/'REGRESSION/RESULT.json').read_text());assert r['testCounts']==dict(reported=14,passed=14,failed=0,errors=0,skipped=0) and r['exitCode']==0;source=subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip();assert source==r['sourceCommit'];assert not subprocess.check_output(['git','status','--porcelain'],cwd=R,text=True).strip()
+R=Path('/workspace/russian-companion');W=Path(__file__).parent;O=W/'FOLLOWUP';r=json.loads((O/'REGRESSION/RESULT.json').read_text());assert r['testCounts']==dict(reported=14,passed=14,failed=0,errors=0,skipped=0) and r['exitCode']==0;source=subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip();assert source==r['sourceCommit'];assert not subprocess.check_output(['git','status','--porcelain'],cwd=R,text=True).strip()
 old=Path('/workspace/artifacts/unit10-present-correction-2026-10-25');prior=json.loads((old/'OFFICIAL_SOURCE_DIGEST.json').read_text());parts=prior['commands'][1]['argv'][2].split(':');cp=':'.join([str(W)]+parts[1:]);assert all(Path(p).exists() for p in cp.split(':'))
 for n in ['Digest.java','ExportReviewPolicies.java']:shutil.copy2(old/n,W/n)
 commands=[]
