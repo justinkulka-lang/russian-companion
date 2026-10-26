@@ -1,0 +1,23 @@
+[
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/RecordedCurriculumConservationScope.kt",
+    "sourceCommit": "fe7968e8c690909363c753ec546cd9fe329334f9",
+    "gitBlob": "61212079658e2cb08b66f811c04223fbe4486715",
+    "sha256": "8f12e8ad9a6826ba2d738f84e49a9158974617a86ee7b886c427d0253e9685dd",
+    "bytes": 9043
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/review/Unit1ReviewPackage.kt",
+    "sourceCommit": "fe7968e8c690909363c753ec546cd9fe329334f9",
+    "gitBlob": "0bb3c1359b82020bc04e71d9a1881a727d1486bb",
+    "sha256": "8485a1c67fbf02a135ae96d295dfe7ea2d9b7f20b41875870386a3d69965c36c",
+    "bytes": 115840
+  },
+  {
+    "path": "app/src/test/resources/reviewed-curriculum-cyrillic.json",
+    "sourceCommit": "fe7968e8c690909363c753ec546cd9fe329334f9",
+    "gitBlob": "1aa67a4222ea9de42a140deff4f7d8c6d24597da",
+    "sha256": "8188a39bd60bee2df09eabb4ecfdd61111be4cd13445ef5ae9252437f1b80639",
+    "bytes": 335768
+  }
+]
