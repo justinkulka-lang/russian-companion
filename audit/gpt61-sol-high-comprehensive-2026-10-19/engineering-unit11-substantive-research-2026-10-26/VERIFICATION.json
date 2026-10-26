@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "sourceCommit": "1d96cb4e89768f69246960e263d9b51412a3b9f4",
+  "chains": 15,
+  "inventoriedCheckRecords": 51,
+  "archivesShaCrc": 71,
+  "archivesContainingUnit11": 24,
+  "proposal": "NOT_ACTIVATED",
+  "newJUnitMethodsExecuted": 0,
+  "productionTestsAnd155RecordsUnchanged": true,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}
