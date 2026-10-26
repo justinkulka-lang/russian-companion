@@ -1,0 +1,68 @@
+{
+  "originalSource": "571f71c8fbb8210d7a5e97bda32a7f5585f15f03",
+  "originalCounts": {
+    "reported": 320,
+    "passed": 313,
+    "failed": 6,
+    "errors": 0,
+    "skipped": 1
+  },
+  "broadSource": "658d8eab2b40cd33ef798798347c08fa6628c675",
+  "rechecked": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "38.076",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit9RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "1.831",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9BindingConservationTest",
+      "method": "kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord",
+      "outcome": "PASSED",
+      "seconds": "0.123",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9BindingConservationTest",
+      "method": "currentDeclarationReconstructsOnlyUnit9ThenEveryGenuineEarlierPack",
+      "outcome": "PASSED",
+      "seconds": "8.279",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+      "method": "exactPriorV2DeclarationRefusesSchemaElevenAndPreservesOwnerNineDownstream",
+      "outcome": "PASSED",
+      "seconds": "121.807",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+      "outcome": "PASSED",
+      "seconds": "25.1",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scopesNotSummed": true
+}
