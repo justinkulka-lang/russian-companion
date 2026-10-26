@@ -1,0 +1,14 @@
+{
+  "durable_monitor.py": {
+    "bytes": 2660,
+    "sha256": "12eb64685e5cc75ca898ddd9bd8424abc1553b4ace4b1dde1c55d833a7b5f4b4"
+  },
+  "DURABLE_MONITOR.log": {
+    "bytes": 64332,
+    "sha256": "4a4e00d364f7ebc99d94ac585322e527d49a678e8dd5a8029f6b3cfc63d8d030"
+  },
+  "DURABLE_MONITOR_STATUS.json": {
+    "bytes": 712,
+    "sha256": "33103ef5db00c1f04929f8f24b1b6e325063a80555e18fe500504af15c4eca8b"
+  }
+}

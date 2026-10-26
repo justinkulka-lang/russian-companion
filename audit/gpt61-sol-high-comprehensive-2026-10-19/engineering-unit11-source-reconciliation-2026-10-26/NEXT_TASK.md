@@ -1,5 +1,5 @@
-# Next task after actual Unit11 integration
+# Next task after actual Unit11 comparison follow-up
 
-Next large task: diagnose every retained actual integration failure from ATTEMPT_1 full XML before changing anything. Separate current behavior defects from historical comparison assumptions. Archive originals/retain all original assertions and source pins;scope only exact proven historical comparisons while retaining actual current controls. Run a separate fresh affected full-class follow-up;never relabel this failed395scope as all-pass or sum scopes.
+Next large task: fresh broad discovery and selected-host regression after Unit11 production/source changes. Compare every1425prior selected method identity;derive actual new scope and preserve any removals explicitly. Added annotations are inventory until discovery/runtime. Keep all source inputs fixed and every raw outcome. This88follow-up is not a broad result.
 
-Read INTEGRATION_REPORT.md/STATUS.md. One agent/existing PR64checkout only. No test job remains active at this completed checkpoint. All48OPEN/auditINCOMPLETE/four exporters excluded/physicalLAST/noAPK/signing/merge/freeze/approval.
+Read FOLLOWUP_REPORT.md/COMPARISON_RECONCILIATION.json. One agent/existing PR64checkout only. No test job remains active at this completed checkpoint. All48OPEN/auditINCOMPLETE/four exporters excluded/physicalLAST/noAPK/signing/merge/freeze/approval.
