@@ -1,0 +1,50 @@
+{
+  "COMPILED/dev/russiancompanion/release/ReleaseSourceDigestKt.class": {
+    "bytes": 17914,
+    "sha256": "ff4ba5a82e6594631d95d6a1acbcd7476e07b8c53202b81b1dba7ae215bbca6d"
+  },
+  "COMPILED/dev/russiancompanion/v2/curriculum/Unit11NounCumulativeReviewPolicy.class": {
+    "bytes": 2322,
+    "sha256": "ee9a8955e290bef3a5f7cb7114686f466558bf21d4a6938c99d8f00dea826ff2"
+  },
+  "COMPILED/dev/russiancompanion/v2/curriculum/V2CumulativeReviewKt.class": {
+    "bytes": 83605,
+    "sha256": "8bcc3a903c3e63993dffddffae08aecc13878e291267feac369c50889e538b69"
+  },
+  "CURRENT_POLICY_OBSERVATION.json": {
+    "bytes": 22176,
+    "sha256": "b5316c4d5fbc9465e32803ffb0c6f36a8da4d8ec02268b85895a4848ae3f682c"
+  },
+  "Digest.class": {
+    "bytes": 653,
+    "sha256": "5559eb36c20d07edfa940b426b66019120c1ca5b0509cd2c49f34c36a59d4985"
+  },
+  "Digest.java": {
+    "bytes": 232,
+    "sha256": "28af8e00e5294ac479045d6e47bc9acbe7488ded90b9896fc2ff839a2c80394c"
+  },
+  "ExportReviewPolicies.class": {
+    "bytes": 3877,
+    "sha256": "dc70691de408bce88bf3fae8c74b89b016541ce222b68cef58f25fe4e55796f2"
+  },
+  "ExportReviewPolicies.java": {
+    "bytes": 1206,
+    "sha256": "65a299429bfa0245b3dd84a9fc8a6434ba2a18734e5bedabb7078d03c9e83c09"
+  },
+  "HELPER_COMPILE.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "OFFICIAL_DIGEST.txt": {
+    "bytes": 65,
+    "sha256": "53bfec1ac2d6fe4c3ededf7e5836dbd83836cfc0336ba7ea4ad797d680a037a0"
+  },
+  "OFFICIAL_SOURCE_DIGEST.json": {
+    "bytes": 6670,
+    "sha256": "3ad96d1a38204d0c11d272b59ed4aa40de397b1d3126decacbcdfb12aee5ab1e"
+  },
+  "POLICY_EXPORT.txt": {
+    "bytes": 11333,
+    "sha256": "410033b6fd9487a3331697526eae9470db697d773901c88b147de1508966f1e9"
+  }
+}
