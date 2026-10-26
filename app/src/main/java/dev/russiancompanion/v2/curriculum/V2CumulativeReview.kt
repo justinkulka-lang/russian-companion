@@ -27,6 +27,8 @@ internal const val UNIT8_PRESENT_REVIEW_ASSIGNMENT_SCHEMA = 10
 internal const val UNIT9_NOUN_BEHAVIOR_REVIEW_ASSIGNMENT_SCHEMA = 11
 // Fresh Unit10 supplied-present v2 only; schemas1-11 retain their exact meanings.
 internal const val UNIT10_PRESENT_REVIEW_ASSIGNMENT_SCHEMA = 12
+// Fresh Unit11 noun/possession v2 only; schemas1-12 retain their meanings.
+internal const val UNIT11_NOUN_REVIEW_ASSIGNMENT_SCHEMA = 13
 internal const val CUMULATIVE_REVIEW_ROLE = "CUMULATIVE_REVIEW"
 
 @Serializable
@@ -221,6 +223,15 @@ internal object Unit11CumulativeReviewPolicy {
     ))
 }
 
+/** Supplied noun behavior and possession/absence classification; not productive grammar. */
+internal object Unit11NounCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit11-prior-noun-behavior-possession-absence-v2", 11, listOf(
+        Unit6CumulativeReviewPolicy.definition.pool[1],
+        CumulativeReviewObjectivePool("obj-u10-have", CumulativeReviewSkill.SUPPLIED_POSSESSION_ABSENCE_RECOGNITION,
+            listOf("u10-i-have-1", "u10-i-have-2", "u10-i-have-3", "u10-i-have-4"), "u10-st-rem-have"),
+    ))
+}
+
 internal object Unit12CumulativeReviewPolicy {
     val definition = CumulativeReviewPolicy("unit12-prior-reading-past-gender-v1", 12, listOf(
         CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
@@ -391,7 +402,7 @@ internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = 
     8 -> Unit8PresentCumulativeReviewPolicy.definition
     9 -> Unit9NounBehaviorCumulativeReviewPolicy.definition
     10 -> Unit10PresentCumulativeReviewPolicy.definition
-    11 -> Unit11CumulativeReviewPolicy.definition
+    11 -> Unit11NounCumulativeReviewPolicy.definition
     12 -> Unit12CumulativeReviewPolicy.definition
     13 -> Unit13WiderCumulativeReviewPolicy.definition
     14 -> Unit14CumulativeReviewPolicy.definition
@@ -431,7 +442,8 @@ internal fun cumulativeReviewTitle(targetUnit: Int, policyId: String? = null): S
         else "Review supplied noun behavior, plurals and noun genders"
     10 -> if (policyId == Unit10CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied numeral agreement"
         else "Review supplied present forms and numeral agreement"
-    11 -> "Review earlier reading and supplied possession or absence"
+    11 -> if (policyId == Unit11CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied possession or absence"
+        else "Review noun behavior and possession or absence"
     12 -> "Review earlier reading and supplied past gender"
     13 -> "Review earlier reading, supplied aspect partners and past agreement"
     14 -> "Review earlier reading and supplied reporting times"
@@ -477,6 +489,8 @@ internal fun cumulativeReviewDeclaredPolicy(pack: V2CurriculumPack, targetUnit: 
             Unit9CumulativeReviewPolicy.definition
         targetUnit == 10 && rule.cumulativeReviewPolicyId == Unit10CumulativeReviewPolicy.definition.id ->
             Unit10CumulativeReviewPolicy.definition
+        targetUnit == 11 && rule.cumulativeReviewPolicyId == Unit11CumulativeReviewPolicy.definition.id ->
+            Unit11CumulativeReviewPolicy.definition
         targetUnit == 13 && rule.cumulativeReviewPolicyId == Unit13CumulativeReviewPolicy.definition.id ->
             Unit13CumulativeReviewPolicy.definition
         else -> null
@@ -525,6 +539,8 @@ private fun newReviewAssignmentSchema(policy: CumulativeReviewPolicy): Int = whe
     }
     10 -> if (policy.id == Unit10PresentCumulativeReviewPolicy.definition.id) UNIT10_PRESENT_REVIEW_ASSIGNMENT_SCHEMA
         else CUMULATIVE_REVIEW_SCHEMA
+    11 -> if (policy.id == Unit11NounCumulativeReviewPolicy.definition.id) UNIT11_NOUN_REVIEW_ASSIGNMENT_SCHEMA
+        else CUMULATIVE_REVIEW_SCHEMA
     13 -> if (policy.id == Unit13WiderCumulativeReviewPolicy.definition.id) UNIT13_WIDER_REVIEW_ASSIGNMENT_SCHEMA
         else CUMULATIVE_REVIEW_SCHEMA
     else -> CUMULATIVE_REVIEW_SCHEMA
@@ -540,6 +556,7 @@ private fun reviewAssignmentSchemaSupported(a: CumulativeReviewAssignment): Bool
         a.policyId != Unit9WiderCumulativeReviewPolicy.definition.id &&
         a.policyId != Unit9NounBehaviorCumulativeReviewPolicy.definition.id &&
         a.policyId != Unit10PresentCumulativeReviewPolicy.definition.id &&
+        a.policyId != Unit11NounCumulativeReviewPolicy.definition.id &&
         a.policyId != Unit13WiderCumulativeReviewPolicy.definition.id
     UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA -> a.targetUnit == 3
     UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA -> (a.targetUnit == 5 && a.policyId == Unit5CumulativeReviewPolicy.definition.id) ||
@@ -562,6 +579,8 @@ private fun reviewAssignmentSchemaSupported(a: CumulativeReviewAssignment): Bool
         a.policyId == Unit9NounBehaviorCumulativeReviewPolicy.definition.id
     UNIT10_PRESENT_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 10 &&
         a.policyId == Unit10PresentCumulativeReviewPolicy.definition.id
+    UNIT11_NOUN_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 11 &&
+        a.policyId == Unit11NounCumulativeReviewPolicy.definition.id
     else -> false
 }
 
@@ -576,6 +595,7 @@ internal fun cumulativeReviewAssignmentPolicy(a: CumulativeReviewAssignment): Cu
             8 -> listOf(Unit8CumulativeReviewPolicy.definition)
             9 -> listOf(Unit9CumulativeReviewPolicy.definition, Unit9WiderCumulativeReviewPolicy.definition)
             10 -> listOf(Unit10CumulativeReviewPolicy.definition)
+            11 -> listOf(Unit11CumulativeReviewPolicy.definition)
             13 -> listOf(Unit13CumulativeReviewPolicy.definition)
             else -> emptyList()
         }
@@ -681,6 +701,8 @@ internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReview
                 Unit9CumulativeReviewPolicy.definition.id, Unit9WiderCumulativeReviewPolicy.definition.id))) &&
         !(a.targetUnit == 10 && declared.id == Unit10PresentCumulativeReviewPolicy.definition.id &&
             policy.id == Unit10CumulativeReviewPolicy.definition.id) &&
+        !(a.targetUnit == 11 && declared.id == Unit11NounCumulativeReviewPolicy.definition.id &&
+            policy.id == Unit11CumulativeReviewPolicy.definition.id) &&
         !(a.targetUnit == 13 && declared.id == Unit13WiderCumulativeReviewPolicy.definition.id &&
             policy.id == Unit13CumulativeReviewPolicy.definition.id)) return false
     if (!cumulativeReviewDeclarationValid(pack, a.targetUnit) || pack.schemaVersion != 1 ||
@@ -797,6 +819,7 @@ private fun currentOrPriorActiveReviewUnitIdentityMatches(pack: V2CurriculumPack
         8 -> cumulativeReviewDeclarationValid(pack, 8) && recorded == priorActiveUnit8Digest(pack)
         9 -> cumulativeReviewDeclarationValid(pack, 9) && recorded in priorActiveUnit9Digests(pack)
         10 -> cumulativeReviewDeclarationValid(pack, 10) && recorded == priorActiveUnit10Digest(pack)
+        11 -> cumulativeReviewDeclarationValid(pack, 11) && recorded == priorActiveUnit11Digest(pack)
         13 -> cumulativeReviewDeclarationValid(pack, 13) && recorded == priorActiveUnit13Digest(pack)
         else -> false
     }
@@ -856,6 +879,14 @@ private fun priorActiveUnit10Digest(pack: V2CurriculumPack): String = priorActiv
         advancement = unit.advancement!!.copy(requireDueReview = true,
             cumulativeReviewPolicyId = Unit10CumulativeReviewPolicy.definition.id)) else unit })
     V2Validator.unitContentReviewDigest(old, 10).also { priorActiveUnit10Digests.put(pack, it) }
+}
+
+private val priorActiveUnit11Digests = IdentityWeakCache<String>()
+private fun priorActiveUnit11Digest(pack: V2CurriculumPack): String = priorActiveUnit11Digests.get(pack) ?: run {
+    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 11) unit.copy(
+        advancement = unit.advancement!!.copy(requireDueReview = true,
+            cumulativeReviewPolicyId = Unit11CumulativeReviewPolicy.definition.id)) else unit })
+    V2Validator.unitContentReviewDigest(old, 11).also { priorActiveUnit11Digests.put(pack, it) }
 }
 
 private val priorActiveUnit13Digests = IdentityWeakCache<String>()

@@ -1,0 +1,9 @@
+{
+  "ORIGINAL_PRODUCTION.zip": "c4df4efad32ec825f54890ca1c11ede448820084400d1ce18a3c6b3f0b7f8a48",
+  "PREPARATION.json": "b6e8c94034d9e534f4e9a0f8f0fa53d79ca567636c1828b8c1066eef163379a6",
+  "STATUS.md": "92bf624a73e17f1484f000c4142734cd373bea6a0e5dd5bccda09a1245772ca1",
+  "collect_core.py": "9019fc945cd13e240bdafe429ad888a2858623a51c618d9b7f0dfb11c4efe653",
+  "complete_core.py": "63abb90b564218281473e94ba8b575646bbbca84c757b99569d25a7fe46d7fb1",
+  "compute_official_identity.py": "d2581a597f9229df87e9493c73219cba6f2ccdd19ecbd94c3bdd0dc02cdde3f1",
+  "verify_saved_results.py": "a6a1cb0870a23e6cb9bc994db86d2234ea0067af23100818b464b908d77a0ed4"
+}
