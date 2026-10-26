@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "sourceCommit": "20429e6eb63a1a45e309b34d3cdf901e3ac4469d",
+  "syntheticSkips": 1441,
+  "classes": 249,
+  "all1425EarlierMethodsPreserved": true,
+  "added": 16,
+  "removed": 0,
+  "runtimeTestsExecuted": 0,
+  "broadRuntime": "PREPARED_NOT_LAUNCHED",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}
