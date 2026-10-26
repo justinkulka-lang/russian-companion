@@ -1,0 +1,7 @@
+# Actual-current Unit10 baseline prepared
+
+Two new methods/one fullclass inventory only,zero runtime results. Source parent is the completed Unit10 research checkpoint. Read PREPARATION.json and external /workspace/artifacts/unit10-present-baseline-2026-10-25 actual contexts/launchers/completion/monitor/AUTO_RESULT or ERROR before any launch/edit. Never duplicate active jobs or modify their inputs.
+
+The proposed assigned-present contrast intentionally expects an obligation absent from current valid Unit10v1/schema1;an actual advance after both current slots is not an ordinary-knowledge or declared-gate bypass. The positive must create a genuine current partial after actual current Units1–9/current reviews,including Unit9v3,then export/read/replace/named reopen/complete/advance through supported APIs. Preserve actual outcomes/whole baseline before any correction. No existing test assertion or production/source binding changes.155records/70prior archives remain unchanged. No policy activation or current-gate defect claimed yet.
+
+Prior e65a281c broad1410reported/1409pass/1physicalskip/241classes/exit0 remains separate,with lint0fatal/errors20warnings1hint and gateattachment executed. New discovery/runtime is required;four exporters/16methods explicitly excluded. All48OPEN/auditINCOMPLETE/physicalLAST/noAPK/signing/merge/freeze/formal advancement/releaseapproval. Private reference/environment settings unchanged;provisional JIT directive unadopted/native causeUNCONFIRMED.
