@@ -142,13 +142,16 @@ internal const val UNIT8_PRESENT_REVIEW_CURRICULUM_COMMIT = "370d8716e2747c439da
 
 internal const val UNIT9_NOUN_BEHAVIOR_REVIEW_CURRICULUM_COMMIT = "83a7b075983be5f7f9117e72d2967a9aaa06ce56"
 
+// Actual verified Unit10 present/numeral implementation; earlier source constants remain historical.
+internal const val UNIT10_PRESENT_REVIEW_CURRICULUM_COMMIT = "85e7eaf21335a107d64b99a4f1969bab4f74670d"
+
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
     if (unitNumber == 5) UNIT5_GRAMMAR_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 3) UNIT3_GENDER_TEACHING_CURRICULUM_COMMIT
     else if (unitNumber == 4) UNIT4_PRESENT_TEACHING_CURRICULUM_COMMIT
     else if (unitNumber == 8) UNIT8_PRESENT_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 9) UNIT9_NOUN_BEHAVIOR_REVIEW_CURRICULUM_COMMIT
-    else if (unitNumber == 10) UNIT10_FRAGMENT_MEANING_CURRICULUM_COMMIT
+    else if (unitNumber == 10) UNIT10_PRESENT_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 11) UNIT11_AGREEMENT_REMEDIATION_CURRICULUM_COMMIT
     else if (unitNumber == 12) UNIT12_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 13) UNIT13_WIDER_REVIEW_CURRICULUM_COMMIT

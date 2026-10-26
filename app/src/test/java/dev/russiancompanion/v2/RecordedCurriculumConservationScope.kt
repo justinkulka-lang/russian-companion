@@ -15,14 +15,16 @@ internal object RecordedCurriculumConservationScope {
     const val beforeUnit8TeachingImplementation = "fe919656bfa2775b5cc2c22f2496d4258343cfea"
     const val beforeUnit9PackImplementation = "7e2296f067da861cbebdc9cf63bfd8e0ddd62436"
     const val unit8PackImplementation = "370d8716e2747c439da1a450a83b71b129a5c879"
-    const val currentPackImplementation = "83a7b075983be5f7f9117e72d2967a9aaa06ce56"
+    const val beforeUnit10PackImplementation = "83a7b075983be5f7f9117e72d2967a9aaa06ce56"
+    const val beforeUnit10TeachingImplementation = "7efff9e18328c612de235236d98e834bb85cd1db"
+    const val currentPackImplementation = "85e7eaf21335a107d64b99a4f1969bab4f74670d"
     private val sources = mutableMapOf<String, V2CurriculumPack>()
     private val currentUnitSources = mapOf(
         4 to "e6db0bdfe0bbb40edf190623e2123014946f305b",
         7 to beforeUnit8PackImplementation,
         8 to unit8PackImplementation,
-        9 to currentPackImplementation,
-        10 to "7efff9e18328c612de235236d98e834bb85cd1db",
+        9 to beforeUnit10PackImplementation,
+        10 to currentPackImplementation,
         14 to "96242a17a87cc2ec0f5d7418cd98a9d3220a9e99",
         15 to "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04",
     )
@@ -30,10 +32,22 @@ internal object RecordedCurriculumConservationScope {
     fun source(root: File, commit: String): V2CurriculumPack =
         sources.getOrPut(root.canonicalPath + ":" + commit) { RecordedIntakeCorrectionScope.load(root, commit) }
 
+    /** Restore only Unit10's declaration; prove equality with its genuine schema1 producer asset. */
+    fun beforeUnit10PresentReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
+        assertCurrent(root, current)
+        val prior = current.copy(units = current.units.map { unit ->
+            if (unit.number == 10) unit.copy(advancement = unit.advancement!!.copy(
+                cumulativeReviewPolicyId = Unit10CumulativeReviewPolicy.definition.id)) else unit
+        })
+        assertEquals("Only the Unit10 policy declaration may differ from the preceding asset", source(root, beforeUnit10PackImplementation), prior)
+        return prior
+    }
+
     /** Restore only Unit9's declaration; prove every other field against the genuine schema5 producer. */
     fun beforeUnit9NounBehaviorReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
         assertCurrent(root, current)
-        val prior = current.copy(units = current.units.map { unit ->
+        val beforeUnit10 = beforeUnit10PresentReview(root, current)
+        val prior = beforeUnit10.copy(units = beforeUnit10.units.map { unit ->
             if (unit.number == 9) unit.copy(advancement = unit.advancement!!.copy(
                 cumulativeReviewPolicyId = Unit9WiderCumulativeReviewPolicy.definition.id)) else unit
         })

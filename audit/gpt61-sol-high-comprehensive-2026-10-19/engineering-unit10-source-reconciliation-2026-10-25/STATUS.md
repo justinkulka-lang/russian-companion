@@ -1,0 +1,9 @@
+# Unit10 authentic source tooling prepared; generation pending
+
+Verified production source85e7eaf21335a107d64b99a4f1969bab4f74670d;official compiled digest072ea177f73cf7f8ac2a2eedc4afc61f42c2e55d9aeb2c6b2adaf0184cef21f6. Core13/13methods/3classes passed at that source;earlier failures/baseline remain separate. No new runtime outcome claimed here.
+
+Tooling adds strict10→9→8→7→6→5whole-pack transitions,retains the old83a7b075/7efff9e1 source pins,and changes only Unit10's effective generator choice to the actual verified85e7eaf2 source. Unit9 and all29other generator choices stay unchanged. The kernel reference changes its exact file hash and appends a pending record;19files/292bindings/semanticfalse/rightsfalse preserved. Originals are archived with source/Gitblob/SHA. New2method Unit10BindingConservationTest is inventory only. Existing assertions/source pins are not removed or preemptively scoped;integration must preserve any actual failures first.
+
+155current records STALE_UNCHANGED. Next:compile tooling with zeroJUnit,officialdigest recheck,two real153file renders/all30packages,review exact field/byte diffs,archive changed prior versions before application,and verify conservation. No hash approximation,approval changes,historical citation rewrites,or new private material. Inspect external unit10-source-reconciliation-2026-10-25 COMPILE/GENERATION/PROPOSAL and runtime ownership records before any duplicate launch/edit.
+
+All71learner/report archives/wholebaseline/coreassertions preserved. All48OPEN/auditINCOMPLETE/four exporters16methods excluded/physicalLAST after final independent comprehensive nonphysical audit/noAPKassembly/install/signing/merge/freeze/formal advancement/releaseapproval. Private reference/environment settings unchanged;publication user-confirmed/independently unobserved;JITdirective unadopted/native causeUNCONFIRMED.
