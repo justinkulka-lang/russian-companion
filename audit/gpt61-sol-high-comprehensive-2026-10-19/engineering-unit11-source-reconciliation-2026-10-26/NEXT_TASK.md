@@ -1,5 +1,5 @@
-# Next task after actual Unit11 broad regression
+# Next task after actual mapping follow-up
 
-Next required stop: inspect ATTEMPT_3/FAILED_METHODS.json and every full raw failure before edits. Preserve this actual broad result;separate current defects from exact historical assumptions,retain all original assertions/pins/current controls,and verify affected full classes separately without relabeling or summing scopes.
+Next large task: bounded Unit12 cumulative-review research using actual current source/authority requirements and existing admitted material. Inventory objective/teaching/practice/check/feedback/repair/source chains and genuine compatibility history before proposing any new versioned obligation. Preserve all policies/captures. This is engineering research,not qualified linguistic/source/rights/mapping/owner acceptance or automatic CC020/CC027 closure. No immediate repeat broad run is claimed or required for these two test-input corrections:all affected helper caller classes and current guards were verified separately. Any later broad run needs a fresh context/current test-tree guard including MAPPING_APPLIED_COMMIT;do not reuse completed BROAD jobs or its older comparison-tree assumption.
 
-Read BROAD_REPORT.md and preserved INTEGRATION_REPORT.md/FOLLOWUP_REPORT.md. One agent/existing checkout. All48OPEN/auditINCOMPLETE/four exporters excluded/physicalLAST/noAPK/signing/merge/freeze/approval. No test job remains active at this completed checkpoint.
+Read MAPPING_FOLLOWUP_REPORT.md/MAPPING_RECONCILIATION.json/BROAD_REPORT.md. One agent/existing PR64checkout only. No test job remains active at this completed checkpoint. All48OPEN/auditINCOMPLETE/four exporters excluded/physicalLAST/noAPK/signing/merge/freeze/approval.

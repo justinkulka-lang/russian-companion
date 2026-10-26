@@ -129,5 +129,28 @@
     "classes": 249,
     "selectors": [],
     "exitCode": 1
+  },
+  {
+    "directory": "ATTEMPT_4",
+    "sourceCommit": "67b915f16cbc1427506bcbf136c0938e206304ba",
+    "testCounts": {
+      "reported": 69,
+      "passed": 69,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 8,
+    "selectors": [
+      "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+      "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "dev.russiancompanion.v2.Units1115MappingGapTest",
+      "dev.russiancompanion.v2.V2RebuildTest",
+      "dev.russiancompanion.v2.Unit11BindingConservationTest",
+      "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "dev.russiancompanion.v2.review.UnitReviewPipelineTest"
+    ],
+    "exitCode": 0
   }
 ]
