@@ -1,0 +1,74 @@
+{
+  "priorSource": "2d60baa9df70dee83805d537dd7c7cbc2bc8ca10",
+  "priorDiscoverySha256": "4bd02b0bb36240cb685e55c483a1da7daaea7497c09979a9f842949f4881620b",
+  "priorMethods": 1410,
+  "currentSource": "feba673c885d0dddc7c267a241355688a914ac38",
+  "currentMethods": 1425,
+  "currentClasses": 245,
+  "added": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10BindingConservationTest",
+      "method": "currentDeclarationReconstructsOnlyUnit10ThenEveryGenuineEarlierPack"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10BindingConservationTest",
+      "method": "kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+      "method": "eachPresentMissCanAllocateWhileOptionalAndMalformedHistoryCannotSelect"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+      "method": "exactPriorDeclarationRefusesSchemaTwelveAndPreservesDownstreamOwnerIdentity"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+      "method": "genuineSchemaOnePartialCompletesWithoutAddingPresentOrRelabelling"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+      "method": "missingOwnersAndChangedTeachingOrItemsRefuseFreshAndSavedTasks"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+      "method": "recentPresentMissRemainsAssignedThroughCorrectionRollbackBackupAndReopen"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+      "method": "wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentReviewBaselineTest",
+      "method": "actualCurrentPartialTaskRoundtripsReopensAndCompletesItsOwnObligation"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentReviewBaselineTest",
+      "method": "printAndNumeralAnswersCannotReplaceFreshAssignedPresentAnswer"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentReviewUiTest",
+      "method": "actualFreshReviewRepairsPresentTeachingWithoutPracticeCreditAndAdvances"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentReviewUiTest",
+      "method": "freshUnitDetailEntryAndUnstartedScreenUseTheDeclaredPresentPolicy"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentReviewUiTest",
+      "method": "genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentReviewUiTest",
+      "method": "genuinelyCompletedUnit4RoutesMissingUnit9WithoutCreatingReviewCredit"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentReviewUiTest",
+      "method": "unpreparedReviewStatesFiniteScopeAndRoutesToBothRealOwnersWithoutCredit"
+    }
+  ],
+  "removed": [],
+  "zeroRuntimePasses": true,
+  "syntheticDryRun": true,
+  "completeSuite": false
+}

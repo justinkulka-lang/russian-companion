@@ -1,0 +1,9 @@
+{
+  "file": "COMPARISON_FAILURE_DIAGNOSIS.json",
+  "source": "Early RUN.log console rendering captured before final XML.",
+  "limitation": "Its fullMessageBytes/fullMessageSha256 describe the captured console message line, which can be shorter than the complete XML failure. They must not be interpreted as XML sizes or full assertion-value hashes.",
+  "authoritativeFullFailureRecord": "FULL_FAILURE_REVIEW.json",
+  "authoritativeExactValueComparisons": "EXACT_FAILURE_VALUE_COMPARISONS.json",
+  "rawFullXml": "ATTEMPT_1/RAW.zip/REGRESSION/XML/",
+  "preparedOutsideRepositoryDuringActiveFollowup": true
+}
