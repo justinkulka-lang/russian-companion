@@ -124,6 +124,9 @@ for unit, schema, policy in [(8, 10, 'unit8-prior-present-nominative-agreement-v
                              (11, 13, 'unit11-prior-noun-behavior-possession-absence-v2')]:
     assert any(a['targetUnit'] == unit and a['schema'] == schema and a['policyId'] == policy for a in doc['reviewAssignments'])
 assert sorted(c['unitNumber'] for c in completed['unitCompletions']) == list(range(1, 13))
+assert doc['profile']['currentUnitNumber'] == 12
+assert completed['profile']['currentUnitNumber'] == 13
+assert completed['profile']['currentSessionId'] == 'u13-s-orient'
 assert completed['reviewAssignments'] == doc['reviewAssignments']
 completion, = [c for c in completed['unitCompletions'] if c['unitNumber'] == 12]
 assert completion['reviewAssignmentId'] == task['id'] and completion['reviewPolicyDigest'] == task['policyDigest']

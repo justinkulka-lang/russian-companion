@@ -1,0 +1,170 @@
+{
+  "producerCommit": "23b9179eaf54844f0b38074b2db56c7113c38c00",
+  "partialArchive": {
+    "producerCommit": "23b9179eaf54844f0b38074b2db56c7113c38c00",
+    "policyId": "unit12-prior-reading-past-gender-v1",
+    "schema": 1,
+    "targetUnit": 12,
+    "policyDigest": "dcc2993fd862ab3634a66ec0a820141b204963e6a6b23e5a57c7f6a3a0b8f14b",
+    "assignmentDigest": "53ab1e2e4d88bee0c8408aa844311329d1845e9881ee65bc8454af768a78f405",
+    "unit11OwnerDigest": "1d4c25c25e20b7fb6629995fcfb66e29f02554e276c5a7f5ec69fb5ac0a2ca5c",
+    "documentSchemaVersion": 3,
+    "recordingCount": 0,
+    "rawCurriculumSHA256": "89e13525a0f5d60ad0455b7000d3e880db217d3a4a74e327164c3ef29750ff96",
+    "zipSHA256": "f9aaa378202fc926c229e1a65675f8e739a35990534c073694b328379eddd5ac",
+    "zipBytes": 57784,
+    "documentSHA256": "a95743e9684eeba85d467ab49c9ec7a6ed48cf7bb7d4d751e64473f65ed7e329",
+    "syntheticLearner": true,
+    "originalAllowlistReplaced": false
+  },
+  "members": [
+    {
+      "path": "manifest.json",
+      "bytes": 442,
+      "crc32": "353fc6ad",
+      "sha256": "0e737dc77c5a5c9b227908df37c7094894dded650400e0ba96a2c43cfb65ac4e"
+    },
+    {
+      "path": "learner.json",
+      "bytes": 304691,
+      "crc32": "772deeb0",
+      "sha256": "a95743e9684eeba85d467ab49c9ec7a6ed48cf7bb7d4d751e64473f65ed7e329"
+    }
+  ],
+  "partialAssignment": {
+    "id": "7e1e297a-c0fe-47bf-a1a4-e6e161f3254c",
+    "targetUnit": 12,
+    "policyId": "unit12-prior-reading-past-gender-v1",
+    "policyDigest": "dcc2993fd862ab3634a66ec0a820141b204963e6a6b23e5a57c7f6a3a0b8f14b",
+    "responseRuleDigest": "13295a5b6ea35a2f9fd61584f179015be1e2df7579d237aa557ab943c8fab967",
+    "boundary": 20,
+    "slots": [
+      {
+        "objectiveId": "obj-u1-decoding",
+        "skill": "BOUNDED_READING",
+        "itemId": "u1-i-decode-pair",
+        "ownerUnit": 1,
+        "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+        "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+        "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+      },
+      {
+        "objectiveId": "obj-u11-past-aspect",
+        "skill": "SUPPLIED_PAST_GENDER_RECOGNITION",
+        "itemId": "u11-i-past-aspect-1",
+        "ownerUnit": 11,
+        "itemDigest": "02100b453efbbc6c1a2c01efa0ed087d6448acad3908b329fd97911e85866aee",
+        "unitDigest": "1d4c25c25e20b7fb6629995fcfb66e29f02554e276c5a7f5ec69fb5ac0a2ca5c",
+        "teachingDigest": "d285bba1ccf3ca4164d22fc04dfa86df005c7bc24bf5f099f8e76bd003329abf"
+      }
+    ],
+    "digest": "53ab1e2e4d88bee0c8408aa844311329d1845e9881ee65bc8454af768a78f405",
+    "schema": 1
+  },
+  "partialAnswers": [
+    {
+      "id": "2390f340-309c-4375-953f-d23909dd8f37",
+      "assignmentId": "7e1e297a-c0fe-47bf-a1a4-e6e161f3254c",
+      "assignmentDigest": "53ab1e2e4d88bee0c8408aa844311329d1845e9881ee65bc8454af768a78f405",
+      "slotIndex": 0,
+      "selected": "А / а",
+      "acceptedOrder": 21,
+      "role": "CUMULATIVE_REVIEW",
+      "schema": 1
+    }
+  ],
+  "partialCompletedUnits": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "partialProfile": {
+    "id": "local",
+    "onboardingCompleted": true,
+    "currentUnitNumber": 12,
+    "startingPoint": "NEW_TO_CYRILLIC",
+    "hasPenguin": true,
+    "hasAnki": false,
+    "hasBinder": false,
+    "hasTutor": false,
+    "dailyMinutes": 35,
+    "transliterationEnabled": true,
+    "currentSessionId": null,
+    "currentStepIndex": 0,
+    "resumeContentDigest": "4e033b579e6a325b23f34b1234fa4fca276888d2a1bdf6bc69a3009e2d20213e",
+    "resumeIdentitySchema": 1
+  },
+  "completeDocumentPath": "RAW_BASELINE.zip!REGRESSION/CAPTURE/COMPLETED_UNIT12_V1.json",
+  "completeDocumentSha256": "7935e3c95fedad5c5519f1a99efe1b9e227d674091ea2a72752e5607f7c14d2b",
+  "completeDocumentBytes": 305245,
+  "completeProfile": {
+    "id": "local",
+    "onboardingCompleted": true,
+    "currentUnitNumber": 13,
+    "startingPoint": "NEW_TO_CYRILLIC",
+    "hasPenguin": true,
+    "hasAnki": false,
+    "hasBinder": false,
+    "hasTutor": false,
+    "dailyMinutes": 35,
+    "transliterationEnabled": true,
+    "currentSessionId": "u13-s-orient",
+    "currentStepIndex": 0,
+    "resumeContentDigest": "800abc3c361dbfc4cf2ea07f6485516ddc26438064eaa3019aedfd3e91255b1b",
+    "resumeIdentitySchema": 1
+  },
+  "completeCompletedUnits": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "completeUnit12Row": {
+    "unitNumber": 12,
+    "recordedAtLocal": "unit12-gender",
+    "preReviewActivation": false,
+    "reviewPolicyDigest": "dcc2993fd862ab3634a66ec0a820141b204963e6a6b23e5a57c7f6a3a0b8f14b",
+    "reviewAssignmentId": "7e1e297a-c0fe-47bf-a1a4-e6e161f3254c",
+    "reviewCompletionOrder": 22
+  },
+  "completeUnit12Answers": [
+    {
+      "id": "2390f340-309c-4375-953f-d23909dd8f37",
+      "assignmentId": "7e1e297a-c0fe-47bf-a1a4-e6e161f3254c",
+      "assignmentDigest": "53ab1e2e4d88bee0c8408aa844311329d1845e9881ee65bc8454af768a78f405",
+      "slotIndex": 0,
+      "selected": "А / а",
+      "acceptedOrder": 21,
+      "role": "CUMULATIVE_REVIEW",
+      "schema": 1
+    },
+    {
+      "id": "c49c4f01-19d9-4f4a-a63b-c77fb879bf6f",
+      "assignmentId": "7e1e297a-c0fe-47bf-a1a4-e6e161f3254c",
+      "assignmentDigest": "53ab1e2e4d88bee0c8408aa844311329d1845e9881ee65bc8454af768a78f405",
+      "slotIndex": 1,
+      "selected": "прочита́л",
+      "acceptedOrder": 22,
+      "role": "CUMULATIVE_REVIEW",
+      "schema": 1
+    }
+  ],
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "syntheticLearner": true
+}
