@@ -1,0 +1,57 @@
+[
+  {
+    "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+    "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+    "messagePrefix": "java.lang.AssertionError: expected:<V2Unit(number=10, id=unit-10, title=Expressions of having, expanded genitive functions, absence, genitive prepositions, pronouns, and adjectives, shortLabel=Having ",
+    "messageBytes": 82392,
+    "assertionLocations": [
+      "at dev.russiancompanion.v2.RecordedIntakeCorrectionScope.assertCurrentUnitMatches(RecordedIntakeCorrectionScope.kt:19)",
+      "at dev.russiancompanion.v2.Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed(Units2630SourceIntakeTest.kt:604)"
+    ]
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9BindingConservationTest",
+    "method": "kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord",
+    "messagePrefix": "java.lang.AssertionError: expected:<4> but was:<5>",
+    "messageBytes": 50,
+    "assertionLocations": [
+      "at dev.russiancompanion.v2.Unit9BindingConservationTest.kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord(Unit9BindingConservationTest.kt:61)"
+    ]
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9BindingConservationTest",
+    "method": "currentDeclarationReconstructsOnlyUnit9ThenEveryGenuineEarlierPack",
+    "messagePrefix": "java.lang.AssertionError: expected:<[V2Unit(number=1, id=unit-1, title=Learning to read Russian, shortLabel=Printed letters, topicSummary=Content-complete development unit for printed letters: identit",
+    "messageBytes": 1996392,
+    "assertionLocations": [
+      "at dev.russiancompanion.v2.Unit9BindingConservationTest.currentDeclarationReconstructsOnlyUnit9ThenEveryGenuineEarlierPack(Unit9BindingConservationTest.kt:19)"
+    ]
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit10CumulativeReviewTest",
+    "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+    "messagePrefix": "java.lang.AssertionError: expected:<[obj-u1-decoding, obj-u9-odindva]> but was:<[obj-u4-present, obj-u9-odindva]>",
+    "messageBytes": 113,
+    "assertionLocations": [
+      "at dev.russiancompanion.v2.Unit10CumulativeReviewTest.ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup(Unit10CumulativeReviewTest.kt:35)"
+    ]
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit10CumulativeReviewTest",
+    "method": "placementWithTaughtUnit1ButUntaughtUnit9RepairsTheMissingOwnerInsteadOfUnit1",
+    "messagePrefix": "java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [Open earlier Unit 9 instruction and checks])\nSemantics of the node:\nNode #862 at (l=24.0, t=148.0, r=296.0, b=200.0)px",
+    "messageBytes": 701,
+    "assertionLocations": [
+      "at dev.russiancompanion.v2.Unit10CumulativeReviewTest.placementWithTaughtUnit1ButUntaughtUnit9RepairsTheMissingOwnerInsteadOfUnit1(Unit10CumulativeReviewTest.kt:200)"
+    ]
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+    "method": "exactPriorV2DeclarationRefusesSchemaElevenAndPreservesOwnerNineDownstream",
+    "messagePrefix": "java.lang.AssertionError: expected:<V2CurriculumPack(schemaVersion=1, packId=v2-curriculum-foundation, packVersion=3, publicReleaseEligible=false, linguisticReview=V2ReviewRecord(id=rev-pending-v2-cur",
+    "messageBytes": 62178542,
+    "assertionLocations": [
+      "at dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest.exactPriorV2DeclarationRefusesSchemaElevenAndPreservesOwnerNineDownstream(Unit9NounBehaviorCompatibilityTest.kt:32)"
+    ]
+  }
+]

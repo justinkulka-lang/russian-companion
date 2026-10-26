@@ -27,9 +27,12 @@ import java.io.File
 class Unit9NounBehaviorCompatibilityTest {
     @Test fun exactPriorV2DeclarationRefusesSchemaElevenAndPreservesOwnerNineDownstream() {
         val old = RecordedIntakeCorrectionScope.load(root, "7e2296f067da861cbebdc9cf63bfd8e0ddd62436")
-        val restoredDeclaration = pack.copy(units = pack.units.map { u -> if (u.number != 9) u else
-            u.copy(advancement = u.advancement!!.copy(cumulativeReviewPolicyId = Unit9WiderCumulativeReviewPolicy.definition.id)) })
-        assertEquals(old, restoredDeclaration)
+        // Preserve the exact original Unit9-only declaration proof before Unit10 v2.
+        RecordedCurriculumConservationScope.beforeUnit10PresentReview(root, pack).let { pack ->
+            val restoredDeclaration = pack.copy(units = pack.units.map { u -> if (u.number != 9) u else
+                u.copy(advancement = u.advancement!!.copy(cumulativeReviewPolicyId = Unit9WiderCumulativeReviewPolicy.definition.id)) })
+            assertEquals(old, restoredDeclaration)
+        }
         LocalStore.openInMemory(context()).use { store ->
             assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(document(v2Capture), emptyList()))
             val future = createCumulativeReviewAssignment(pack, store.v2LearnerView(), 9, "fresh-noun", 0)!!

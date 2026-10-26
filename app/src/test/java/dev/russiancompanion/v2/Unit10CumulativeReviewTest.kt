@@ -32,8 +32,17 @@ class Unit10CumulativeReviewTest {
             assertTrue(ordinaryUnitRequirements(p, p.unit(10)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(10)!!, s.v2LearnerView()).allowed)
             val a = open(p, s)
-            assertEquals(listOf("obj-u1-decoding", "obj-u9-odindva"), a.slots.map { it.objectiveId })
-            assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NUMERAL_GENDER_RECOGNITION"), a.slots.map { it.skill })
+            RecordedCurriculumConservationScope.beforeUnit10PresentReview(root(), p).let { historical ->
+                ready(historical).use { previous ->
+                    val a = open(historical, previous)
+                    assertEquals(listOf("obj-u1-decoding", "obj-u9-odindva"), a.slots.map { it.objectiveId })
+                    assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NUMERAL_GENDER_RECOGNITION"), a.slots.map { it.skill })
+                }
+            }
+            assertEquals(12, a.schema)
+            assertEquals(Unit10PresentCumulativeReviewPolicy.definition.id, a.policyId)
+            assertEquals(listOf("obj-u4-present", "obj-u9-odindva"), a.slots.map { it.objectiveId })
+            assertEquals(Unit10PresentCumulativeReviewPolicy.definition.pool.map { it.skill.name }, a.slots.map { it.skill })
             assertEquals("u9-i-odindva-4", a.slots[1].itemId)
             assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
             answer(p, s, a, 0); assertFalse(advancementDecision(p, p.unit(10)!!, s.v2LearnerView()).allowed)
@@ -188,6 +197,7 @@ class Unit10CumulativeReviewTest {
 
     @Test fun placementWithTaughtUnit1ButUntaughtUnit9RepairsTheMissingOwnerInsteadOfUnit1() {
         val p = pack()
+        RecordedCurriculumConservationScope.beforeUnit10PresentReview(root(), p).let { p ->
         LocalStore.openInMemory(context()).use { s ->
             for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
             s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 10, startingPoint = "RESUME_FROM_BOOK"))
@@ -201,6 +211,7 @@ class Unit10CumulativeReviewTest {
             waitTag("v2-unit-heading"); compose.onNodeWithText("Unit 9").assertIsDisplayed()
             assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 10 })
         }
+        } // Exact historical v1 placement; current owner4/9 routes have separate UI controls.
     }
 
     @Test fun heldUnit10WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching() {

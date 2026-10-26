@@ -1,0 +1,39 @@
+{
+  "sourceCommit": "571f71c8fbb8210d7a5e97bda32a7f5585f15f03",
+  "applied": false,
+  "fullIntegrationMustBeSavedFirst": true,
+  "files": [
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit9BindingConservationTest.kt",
+      "originalSha256": "894bcb4fc85cff44252ec22ad76aabd0afdaa8fbdb52d27058bedc1655f2140f",
+      "preparedSha256": "eb508a10d6ba486a339b452701a4ae692eeba3fc1c59f96561c62fc0faf2d0b4",
+      "allOriginalNonblankLinesPreservedInOrderExcept": [
+        "val now = Json.parseToJsonElement(File(root, path).readText()).jsonObject",
+        "val actual = MessageDigest.getInstance(\"SHA-256\").digest(File(root, \"app/$name\").readBytes()).joinToString(\"\") { \"%02x\".format(it) }"
+      ],
+      "allOriginalAssertionsPreserved": true
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit9NounBehaviorCompatibilityTest.kt",
+      "originalSha256": "5508ffb885e9353b74d9fd040a8b87a30cd34f66f0e4c4fbfbd7bc7713c5c6a9",
+      "preparedSha256": "2c8f8735b802d66b5b330763c290291b6f36f97adfb72138a6667d5bd3598b4d",
+      "allOriginalNonblankLinesPreservedInOrderExcept": [],
+      "allOriginalAssertionsPreserved": true
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+      "originalSha256": "e90797e10dfe2c56f16a1949b431828467fa4fda20e90b66ee35841bf18e68db",
+      "preparedSha256": "88363754d85d59c75c557624b65328397e72034a07a3d68ff516ee4fb0232535",
+      "allOriginalNonblankLinesPreservedInOrderExcept": [],
+      "allOriginalAssertionsPreserved": true
+    }
+  ],
+  "rawSourceProof": {
+    "oldPolicy": "unit10-prior-reading-numeral-gender-v1",
+    "newPolicy": "unit10-prior-present-numeral-gender-v2",
+    "onlyOnePolicyTokenDiffers": true,
+    "oldSha256": "53e0bfc0dbafbfa9a162fd7a3a41a29956c9cbb13ee301a53aaea1001de8e4dd",
+    "newSha256": "dff8911d786a157b594d2b1d658b9d4132ffd2283f3cb2c3b124bcec9ec0d7d6"
+  },
+  "scope": "Only observed historical comparisons. All original assertions/pins retained;two nonassert input expressions in Unit9 reference proof use genuine matching historical pair. Actual-current controls retained."
+}

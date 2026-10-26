@@ -600,6 +600,16 @@ class Units2630SourceIntakeTest {
                         RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
                     assertNotEquals(V2Validator.unitContentReviewDigest(RecordedIntakeCorrectionScope.load(root, correction), number),
                         V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 10) {
+                    // Keep the original fragment-meaning teaching source; only the versioned declaration differs.
+                    RecordedCurriculumConservationScope.beforeUnit10PresentReview(root, pack).let { pack ->
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    RecordedIntakeCorrectionScope.load(root, correction), number)
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals(V2Validator.unitContentReviewDigest(RecordedIntakeCorrectionScope.load(root, correction), number),
+                        V2Validator.unitContentReviewDigest(pack, number))
                 } else {
                 RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
                     RecordedIntakeCorrectionScope.load(root, correction), number)
