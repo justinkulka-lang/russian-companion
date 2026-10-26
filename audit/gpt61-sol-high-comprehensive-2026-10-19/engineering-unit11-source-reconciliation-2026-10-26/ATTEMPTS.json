@@ -115,5 +115,19 @@
       "dev.russiancompanion.v2.review.UnitReviewPipelineTest"
     ],
     "exitCode": 0
+  },
+  {
+    "directory": "ATTEMPT_3",
+    "sourceCommit": "3434fb8391a6bb4bee91c312a13bd79523db7799",
+    "testCounts": {
+      "reported": 1441,
+      "passed": 1438,
+      "failed": 2,
+      "errors": 0,
+      "skipped": 1
+    },
+    "classes": 249,
+    "selectors": [],
+    "exitCode": 1
   }
 ]
