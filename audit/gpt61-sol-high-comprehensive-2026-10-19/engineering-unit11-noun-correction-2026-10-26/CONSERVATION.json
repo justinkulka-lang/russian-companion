@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "6f78625afc268357800aab6f582cdf5c8ab42328",
+  "preexistingTestFilesUnchanged": 262,
+  "oldPolicyObjectsConserved": 37,
+  "baselineWholeFileUnchanged": true,
+  "historicalArchivesShaCrcConserved": 72,
+  "currentRecords": 155,
+  "currentRecordStatus": "STALE_UNCHANGED_NOT_REGENERATED",
+  "officialDigest": "PENDING",
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "settingsChanged": false
+}
