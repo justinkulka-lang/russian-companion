@@ -1,0 +1,73 @@
+{
+  "sourceCommit": "c14379625f0189849614c4fd1241ba285ecb313a",
+  "inputTrees": {
+    "app/src/main": "9df81d1bcafb722aff85c02999d3b1be1e9fb3f7",
+    "app/src/test": "422b3217252a467410211b1da1ca78b3245d58f5",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "9db64b6113a88c9a11d4418d132c875e8b52e793",
+    "release": "ecade2bf00271f81c62af836188ca94e76df9b52"
+  },
+  "syntheticDryRun": true,
+  "exitCode": 0,
+  "finishedUtc": "2026-10-26T03:24:28.825187+00:00",
+  "testCounts": {
+    "reported": 2,
+    "passed": 0,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 2
+  },
+  "classes": 1,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentReviewBaselineTest",
+      "method": "actualCurrentPartialTaskRoundtripsReopensAndCompletesItsOwnObligation",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentReviewBaselineTest",
+      "method": "printAndNumeralAnswersCannotReplaceFreshAssignedPresentAnswer",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.Unit10PresentReviewBaselineTest",
+      "tests": "2",
+      "skipped": "2",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-26T03:24:28.639Z",
+      "hostname": "0cc76a0c8c68",
+      "time": "0.005"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin",
+    "compileDebugSources": "NOT_REACHED",
+    "lintAnalyzeDebug": "NOT_REACHED",
+    "lintAnalyzeDebugUnitTest": "NOT_REACHED",
+    "lintDebug": "NOT_REACHED",
+    "verifyReleaseGateAttachment": "NOT_REACHED"
+  },
+  "lintIssuesBySeverity": null,
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": null,
+  "allFreshSelectedMethodsReported": false,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}
