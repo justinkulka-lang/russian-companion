@@ -1,0 +1,69 @@
+{
+  "sourceCommit": "ca0fdaeca8de81ab6a5d4935fbcdcb068c4af913",
+  "sourceRootTree": "b23385c64ef580cba183f4046d9ac87aeb086799",
+  "workingTreeAtStart": "CLEAN",
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "startedUtc": "2026-10-27T07:00:47.924727+00:00",
+  "inputTrees": {
+    "app/src/main": "80ffe691712ee37e760d92b05cc3a9dcc0ab4516",
+    "app/src/test": "63c599128a2b59e3ada4c0174629a59c77a1d94e",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "09daea049e808ff3684de9a8394d6812eb391f66",
+    "release": "e10d527ac640e73556088bf9319ad25764107723"
+  },
+  "mode": "DISCOVERY",
+  "syntheticDryRun": true,
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/unit12-gender-correction-2026-10-27/resources.gradle",
+    "-Daudit.history.output=/workspace/artifacts/unit12-gender-correction-2026-10-27/DISCOVERY/HISTORY_CASES.jsonl",
+    "-Daudit.events.path=/workspace/artifacts/unit12-gender-correction-2026-10-27/DISCOVERY/EVENTS.jsonl",
+    "-Daudit.gc.dir=/workspace/artifacts/unit12-gender-correction-2026-10-27/DISCOVERY",
+    "testDebugUnitTest",
+    "--rerun",
+    "--tests",
+    "dev.russiancompanion.v2.Unit12GenderReviewBaselineTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit12GenderReviewUiTest",
+    "--test-dry-run",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "runnerSha256": "6b9e340bcc80689e7af405eda8eaafca95c0f1b1877a6e66384a2eb1807f85bc",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+    "/workspace/artifacts/unit12-gender-correction-2026-10-27/resources.gradle": "9f6303b4e593fc1af88bdac7bc3a21901b8c5336c38fef71102a0026380109e5"
+  },
+  "selectors": [
+    "dev.russiancompanion.v2.Unit12GenderReviewBaselineTest",
+    "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+    "dev.russiancompanion.v2.Unit12GenderReviewUiTest"
+  ],
+  "workerPolicy": "2forks/6GiB/forkEvery4;GC logs retained",
+  "resources": {
+    "cgroupMemoryMax": "34359738368",
+    "cgroupMemoryCurrent": "8171241472",
+    "cpus": 5
+  },
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "scope": "15 selected methods/3 full classes: versioned Unit12 core, genuine savedv1/current14, owner12 downstream, seven allocations and actual UI repairs; not a current declared-gate or ordinary-knowledge bypass; not complete suite",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "completeSuite": false
+}
