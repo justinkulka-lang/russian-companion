@@ -1,0 +1,51 @@
+{
+  "baselineSourceCommit": "31ac807387253082c44bd2f6d67021478f0df66e",
+  "inputTrees": {
+    "app/src/main": "80ffe691712ee37e760d92b05cc3a9dcc0ab4516",
+    "app/src/test": "d172472d7fcf61602266e8a83178d9cbb554562b",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "e59450be50bd3bf9b0dd2c9ca8fe6381aa9fa0e6",
+    "release": "f532448db1bdcd92a7b75b0812b8b3759475e351"
+  },
+  "existingTestFiles": 271,
+  "newTestFile": "app/src/test/java/dev/russiancompanion/v2/Unit13PresentReviewBaselineTest.kt",
+  "newTestSha256": "69638295ecc22bbb62fa4fa5c921469e5154b3deba30c74fb3357d590167a758",
+  "newMethodsInventory": 2,
+  "newClassesInventory": 1,
+  "productionChanged": false,
+  "newSchemaActivated": false,
+  "oldPolicyObjects": 39,
+  "oldSchemas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "sourceBindingsConserved": 155,
+  "priorArchivesConserved": 73,
+  "privatePdf": "NOT_READ_OR_PACKAGED",
+  "apkIdentitySignature": "NOT_BUILT_OR_SIGNED",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "runtimeDirective": "PROVISIONAL_UNADOPTED; excludes JIT compilation only, not tests; original native cause UNCONFIRMED"
+}
