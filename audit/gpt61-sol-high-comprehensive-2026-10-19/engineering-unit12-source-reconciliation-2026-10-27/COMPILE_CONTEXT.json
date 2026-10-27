@@ -1,0 +1,25 @@
+{
+  "sourceCommit": "650334e75a28a3dda1c6c9352b5db9f31c1b60a7",
+  "sourceRootTree": "e58ddf680c236a9785b737206ed042d46422c495",
+  "inputTrees": {
+    "app/src/main": "80ffe691712ee37e760d92b05cc3a9dcc0ab4516",
+    "app/src/test": "9ac2890e2c5b25c519d5e60a65109aeb855093c8",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "09daea049e808ff3684de9a8394d6812eb391f66",
+    "release": "e10d527ac640e73556088bf9319ad25764107723"
+  },
+  "startedUtc": "2026-10-27T07:23:28.817379+00:00",
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "command": [
+    "./gradlew",
+    "compileDebugUnitTestKotlin",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "JUnitMethodsExecuted": 0,
+  "finishedUtc": "2026-10-27T07:23:42.725158+00:00",
+  "exitCode": 0
+}
