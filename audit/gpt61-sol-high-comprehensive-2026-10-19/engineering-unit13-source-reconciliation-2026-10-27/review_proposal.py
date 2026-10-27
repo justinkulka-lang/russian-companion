@@ -3,12 +3,12 @@ import json,hashlib,subprocess,shutil
 R=Path('/workspace/russian-companion');W=Path(__file__).parent
 sha=lambda b:hashlib.sha256(b).hexdigest()
 git=lambda *a:subprocess.check_output(['git',*a],cwd=R,text=True).strip()
-ctx=json.loads((W/'GENERATION_PREPARATION.json').read_text());assert not git('status','--porcelain') and git('rev-parse','HEAD')==ctx['sourceCommit']
+ctx=json.loads((W/'GENERATION_PREPARATION.json').read_text());assert all(row[3:].startswith('audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-source-reconciliation-2026-10-27/') for row in git('status','--porcelain').splitlines()) and not git('diff','HEAD','--name-only','--','app/src/main','app/src/test','catalog','docs','review','release') and git('rev-parse','HEAD')==ctx['sourceCommit']
 results=json.loads((W/'GENERATION_RESULTS.json').read_text());assert len(results)==3 and all(r['exitCode']==0 for r in results)
 a,b=W/'CANDIDATE_1',W/'CANDIDATE_2'
 paths=sorted(p.relative_to(a).as_posix() for p in a.rglob('*') if p.is_file());assert len(paths)==153 and paths==sorted(p.relative_to(b).as_posix() for p in b.rglob('*') if p.is_file())
 for rel in paths:assert (a/rel).read_bytes()==(b/rel).read_bytes(),rel
-old9=json.loads((R/'review/unit-13/UNIT_12_REVIEW_MANIFEST.json').read_text());new9=json.loads((a/'review/unit-13/UNIT_12_REVIEW_MANIFEST.json').read_text())
+old9=json.loads((R/'review/unit-13/UNIT_13_REVIEW_MANIFEST.json').read_text());new9=json.loads((a/'review/unit-13/UNIT_13_REVIEW_MANIFEST.json').read_text())
 fields=['curriculumSourceCommit','contentReviewDigest','packContentReviewDigest','reviewPackageDigest','repositorySourceDigest']
 assert [k for k in old9 if old9[k]!=new9[k]]==fields
 replacements={old9[k]:new9[k] for k in fields};assert len(replacements)==5

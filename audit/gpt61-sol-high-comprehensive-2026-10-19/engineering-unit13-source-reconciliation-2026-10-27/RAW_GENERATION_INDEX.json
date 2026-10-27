@@ -1,0 +1,1938 @@
+{
+  "CANDIDATE_1/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.json": {
+    "bytes": 70438,
+    "sha256": "b793a0c916d70b050e401fea7cc294d55cf0ef9cacbfe8a546f8f3715c497c18"
+  },
+  "CANDIDATE_1/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.md": {
+    "bytes": 45377,
+    "sha256": "c0e16ce5290213ba7599244322434602bc43d116443322567228fdd960b59d1e"
+  },
+  "CANDIDATE_1/audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json": {
+    "bytes": 6135,
+    "sha256": "1230a3c3622d750fb3e4354fd3429bef76a6936c613f496c77fe179297e82a8f"
+  },
+  "CANDIDATE_1/review/unit-1/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "1da24112b7aeb6baa1fa303aa0ad4ced8e74168769fcebeba755496b67974f3e"
+  },
+  "CANDIDATE_1/review/unit-1/UNIT_1_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 80892,
+    "sha256": "23d1994d1b86ef5413169cdb15327d043870dc6cf6ec104c5f58f581248bc2df"
+  },
+  "CANDIDATE_1/review/unit-1/UNIT_1_REVIEW_MANIFEST.json": {
+    "bytes": 75593,
+    "sha256": "0c1449ed900ffb10e8ce04e46dc293e77f1659fce603ffab18d9c12054c726a2"
+  },
+  "CANDIDATE_1/review/unit-1/UNIT_1_REVIEW_PACKET.md": {
+    "bytes": 117305,
+    "sha256": "9122b6ec592e9d13507de61b190d8da1f8fa16847603254d7e6ffd89b0f101c0"
+  },
+  "CANDIDATE_1/review/unit-1/UNIT_1_REVIEW_WORKSHEET.tsv": {
+    "bytes": 83187,
+    "sha256": "c066a91c34d2afb7b46b4b9e50cb03877a782737d2649aae8fe7212098917a77"
+  },
+  "CANDIDATE_1/review/unit-10/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "6a3464e6ad83761c51949bf28f48e33190b2da88668b6379f96cf79757ce23ac"
+  },
+  "CANDIDATE_1/review/unit-10/UNIT_10_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 49221,
+    "sha256": "42902401fd9475180b2aba9e19734dfac02f202037dedef8a62d8e8d92755713"
+  },
+  "CANDIDATE_1/review/unit-10/UNIT_10_REVIEW_MANIFEST.json": {
+    "bytes": 240220,
+    "sha256": "8a19260451085c8c9ef760cabde89259d2732c753d79a4fd9f52fdd49f91b775"
+  },
+  "CANDIDATE_1/review/unit-10/UNIT_10_REVIEW_PACKET.md": {
+    "bytes": 821847,
+    "sha256": "595d2a49ed68eabc1f2bb8c47b0e2456daec521373ea6827cdd778d1e4496f5a"
+  },
+  "CANDIDATE_1/review/unit-10/UNIT_10_REVIEW_WORKSHEET.tsv": {
+    "bytes": 729946,
+    "sha256": "a07bdb9daef77de32ac864f56b386ba19c20eba12c1474ff83e3964e280b2a96"
+  },
+  "CANDIDATE_1/review/unit-11/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "b57598e154e40b972b7215245827581380aa4ab0e8cd9e99a81a2cf0655790a5"
+  },
+  "CANDIDATE_1/review/unit-11/UNIT_11_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 37568,
+    "sha256": "5edfba145d77e3817fdfdf3004293ece2c6723be77d5795f9d24b68fcfe4d588"
+  },
+  "CANDIDATE_1/review/unit-11/UNIT_11_REVIEW_MANIFEST.json": {
+    "bytes": 112813,
+    "sha256": "5b3e6e60cd8ec76ae54981c00d27203d3ebf20ed28bc647b07fe24b3c5dc28a6"
+  },
+  "CANDIDATE_1/review/unit-11/UNIT_11_REVIEW_PACKET.md": {
+    "bytes": 325238,
+    "sha256": "9cee483dbb4edb8b867684467c1f40d1ad1631b350861206475dc0ae0069b626"
+  },
+  "CANDIDATE_1/review/unit-11/UNIT_11_REVIEW_WORKSHEET.tsv": {
+    "bytes": 279136,
+    "sha256": "db4bb7885c1baa593b7ed6fe0bad3e6ab912f3eb4498805a7949ec616b67bf69"
+  },
+  "CANDIDATE_1/review/unit-12/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "9dad4ef57167d5717ba14a87efdcd9889e2e9607cedb8fe3f4b90b650a7ec1f7"
+  },
+  "CANDIDATE_1/review/unit-12/UNIT_12_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 51571,
+    "sha256": "cedf4e141ca5205fd30ac6faae77c9606bbf4d1132effd36ea8bd3709879f164"
+  },
+  "CANDIDATE_1/review/unit-12/UNIT_12_REVIEW_MANIFEST.json": {
+    "bytes": 156961,
+    "sha256": "bdf0e7cae175cd4a5dd903c3b7b6357818efe7d528703633c5e03f5d13520bb9"
+  },
+  "CANDIDATE_1/review/unit-12/UNIT_12_REVIEW_PACKET.md": {
+    "bytes": 493659,
+    "sha256": "6a769555297a02e990f9236b77c07e09b9d57267ec58714f3f38c642c768705a"
+  },
+  "CANDIDATE_1/review/unit-12/UNIT_12_REVIEW_WORKSHEET.tsv": {
+    "bytes": 430841,
+    "sha256": "9cc1c0b01f998e519d9bccfbe80ffa7267c7f7b838a2808416a6dd3de79a0bb8"
+  },
+  "CANDIDATE_1/review/unit-13/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "34f32df2b44572195dd17b3dc6d0537643aa16bd4f19c8ca352c74e483d76db4"
+  },
+  "CANDIDATE_1/review/unit-13/UNIT_13_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 37974,
+    "sha256": "33e27144f8fdf4cdf27f0e612a03a2e57dac2245496ab919990eb2064c28506e"
+  },
+  "CANDIDATE_1/review/unit-13/UNIT_13_REVIEW_MANIFEST.json": {
+    "bytes": 127501,
+    "sha256": "c7cfddca11dae98e1f2c3a8ed17e64bd10d283debd8ed69adee8ca1049551580"
+  },
+  "CANDIDATE_1/review/unit-13/UNIT_13_REVIEW_PACKET.md": {
+    "bytes": 483416,
+    "sha256": "2ef9ebc12a36ed7fb849b864f4c798aba7da439f2387ec23085798bc05081e07"
+  },
+  "CANDIDATE_1/review/unit-13/UNIT_13_REVIEW_WORKSHEET.tsv": {
+    "bytes": 432829,
+    "sha256": "f5da9693ab71418da2aae6d2fce967cf1f8071ce4a1851f3fabe7c5318b80402"
+  },
+  "CANDIDATE_1/review/unit-14/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "ab44ab41b7784647b925466ecfe2217b112e2f2c19b6b92c56b9a8e0507f4f6d"
+  },
+  "CANDIDATE_1/review/unit-14/UNIT_14_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 31119,
+    "sha256": "6d83fb324b513b9f4a91d26d55e68a6fbe42721a7e07ec5ddeae761aae61d137"
+  },
+  "CANDIDATE_1/review/unit-14/UNIT_14_REVIEW_MANIFEST.json": {
+    "bytes": 71926,
+    "sha256": "10fc1105a1ecea841045e4590cb268dcd625da83162792dc77a7a84af27e5eed"
+  },
+  "CANDIDATE_1/review/unit-14/UNIT_14_REVIEW_PACKET.md": {
+    "bytes": 215840,
+    "sha256": "a19ace5a2c016db453cbf0f41e5adfaf0ab1db2f8be4d992520d68481078daf4"
+  },
+  "CANDIDATE_1/review/unit-14/UNIT_14_REVIEW_WORKSHEET.tsv": {
+    "bytes": 184772,
+    "sha256": "1426422bc73efc904e20cac2d006f31ae50ade4eb67a1568fec4331b8c416c5e"
+  },
+  "CANDIDATE_1/review/unit-15/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "9c9155a9c0274be0499d11f3b446fa21b671569ab85ca3622c41b9e85e46646b"
+  },
+  "CANDIDATE_1/review/unit-15/UNIT_15_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 31088,
+    "sha256": "1216032aaa5d3bc867ceac5777c1aec2da358c84b50df5bc196673c237e41b88"
+  },
+  "CANDIDATE_1/review/unit-15/UNIT_15_REVIEW_MANIFEST.json": {
+    "bytes": 84994,
+    "sha256": "801a0be2406dd655d03646d23d143a885812c582b8dfddced5c0af3493b2985e"
+  },
+  "CANDIDATE_1/review/unit-15/UNIT_15_REVIEW_PACKET.md": {
+    "bytes": 258241,
+    "sha256": "764e7c50e9756b527448a9e967f57a00ef569f2364aaa46d2f02913ed979e66d"
+  },
+  "CANDIDATE_1/review/unit-15/UNIT_15_REVIEW_WORKSHEET.tsv": {
+    "bytes": 222352,
+    "sha256": "90525cec5d0bf15c7549a3c5295c30524affe1db00e6a2cd069533fdd0498206"
+  },
+  "CANDIDATE_1/review/unit-16/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "2c8692a2f3aa449a68b231f7f1af0ddc9665c2a0b4eb23506c0fb1b8a4fd7de3"
+  },
+  "CANDIDATE_1/review/unit-16/UNIT_16_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 52805,
+    "sha256": "f425118a6fdf2b9edbb87d84346ffb46d8db1ef0a65f1b11ecf0df1070cfd6e7"
+  },
+  "CANDIDATE_1/review/unit-16/UNIT_16_REVIEW_MANIFEST.json": {
+    "bytes": 223931,
+    "sha256": "651bbb9eac1f1b1da1a2ff08aa7d64f90fc877058ce2e66cd6e1647a4834b4cc"
+  },
+  "CANDIDATE_1/review/unit-16/UNIT_16_REVIEW_PACKET.md": {
+    "bytes": 779649,
+    "sha256": "2f44a6a53d27ab2a8c5568438b08ce695d95e458a1717df24d491ff163262690"
+  },
+  "CANDIDATE_1/review/unit-16/UNIT_16_REVIEW_WORKSHEET.tsv": {
+    "bytes": 693581,
+    "sha256": "8f992d341b59aed852935d5beec6f61b25821f30612ef795741a1c8e00961dc9"
+  },
+  "CANDIDATE_1/review/unit-17/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "46e4ad448cf101a5c93177e2b0bb6edc418096a8ca7248fcc7490dcbee1d6956"
+  },
+  "CANDIDATE_1/review/unit-17/UNIT_17_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 93976,
+    "sha256": "b8cc6f37b19de975c643e12be94a4d191b28949904c19631263bdecb434a1b03"
+  },
+  "CANDIDATE_1/review/unit-17/UNIT_17_REVIEW_MANIFEST.json": {
+    "bytes": 398747,
+    "sha256": "f57967c4349518e3d0dd7f7b253ac4ad84aeea183c6c7607749a230fe3a9d6cb"
+  },
+  "CANDIDATE_1/review/unit-17/UNIT_17_REVIEW_PACKET.md": {
+    "bytes": 1799239,
+    "sha256": "d779e4a8db6f413e2119058cdf85e3ea04b4b5a50da0f78566b33efaaf99987d"
+  },
+  "CANDIDATE_1/review/unit-17/UNIT_17_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1657345,
+    "sha256": "892d4d3337937af5383abaae2fcfb0eb2cc41cb9e78aed92a4f0b4d8d0d2bd64"
+  },
+  "CANDIDATE_1/review/unit-18/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "a81618fdeb4ffdc5344b0d24f042be01c7eb5b3af89127577299467175ee329e"
+  },
+  "CANDIDATE_1/review/unit-18/UNIT_18_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 24985,
+    "sha256": "8524158806cddabd55443acb8209a81f17a29bc2ac48af0f75d724f02a5795f6"
+  },
+  "CANDIDATE_1/review/unit-18/UNIT_18_REVIEW_MANIFEST.json": {
+    "bytes": 81797,
+    "sha256": "d9514cc7566708a6e3c80144d407c83ae0d09a7cdb713eaf1e8e00406bcc6735"
+  },
+  "CANDIDATE_1/review/unit-18/UNIT_18_REVIEW_PACKET.md": {
+    "bytes": 310196,
+    "sha256": "bf9ff22a218a613f71f089a3c5c3f4d8e90b1a399183ccb9af0e473fa6ddb0a1"
+  },
+  "CANDIDATE_1/review/unit-18/UNIT_18_REVIEW_WORKSHEET.tsv": {
+    "bytes": 277303,
+    "sha256": "2fbea71c77ff03a5d417d80bd4a03a17022a7a59702cedc1c3b8caf28204d3f1"
+  },
+  "CANDIDATE_1/review/unit-19/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "2426308790c72208fdbbdf50cf37c72033cc9ee4dec277594faa5391011dc4be"
+  },
+  "CANDIDATE_1/review/unit-19/UNIT_19_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 38621,
+    "sha256": "fa4b1252ed2b3cc29ea871907827e95cb553a4571a5dcb4f34552720e22a4048"
+  },
+  "CANDIDATE_1/review/unit-19/UNIT_19_REVIEW_MANIFEST.json": {
+    "bytes": 143417,
+    "sha256": "e86c48d9fad334a9d5fcbbf3c2f930071787b638a1e42cc866646270b18e1aaf"
+  },
+  "CANDIDATE_1/review/unit-19/UNIT_19_REVIEW_PACKET.md": {
+    "bytes": 511046,
+    "sha256": "4f8b8642007b7c7bf3ca5ee19dac6ae9f3c46e070997245b0d0690d7559762e0"
+  },
+  "CANDIDATE_1/review/unit-19/UNIT_19_REVIEW_WORKSHEET.tsv": {
+    "bytes": 455686,
+    "sha256": "003dd18b939f8d48cd5a9547d4bfab9ca60da344d51c4516565742614a47bcc0"
+  },
+  "CANDIDATE_1/review/unit-2/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "db2cfe5d5d56c93838dd0c2ddf6aa9e3653970d06e21d8bed4caf576d9b47ed4"
+  },
+  "CANDIDATE_1/review/unit-2/UNIT_2_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 32671,
+    "sha256": "6e65e97fe9bcfdb51caa4736b71e1f0ef26d99eb0f9f35dc96b1909d473f535f"
+  },
+  "CANDIDATE_1/review/unit-2/UNIT_2_REVIEW_MANIFEST.json": {
+    "bytes": 20189,
+    "sha256": "726ac1d7f9a8f4a19ea1adc0e54333dcb586561eca4a6f0dacc176035881e28f"
+  },
+  "CANDIDATE_1/review/unit-2/UNIT_2_REVIEW_PACKET.md": {
+    "bytes": 38200,
+    "sha256": "edb60d8886369436bfb6065575049b427a0b669c71e066de3e2dc6a9c4add8a9"
+  },
+  "CANDIDATE_1/review/unit-2/UNIT_2_REVIEW_WORKSHEET.tsv": {
+    "bytes": 26791,
+    "sha256": "ec92922bee2ff2af36d1556566da8d58e9ae89278eab82fa0c4da186883b03bf"
+  },
+  "CANDIDATE_1/review/unit-20/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "c2abf415bdc2a0022bb299197a8a0b11d37b0638a019ac4e88df9ae5f595214c"
+  },
+  "CANDIDATE_1/review/unit-20/UNIT_20_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 18592,
+    "sha256": "0c83cad3ce8c2987e6b76b0c04b0c8aa10b0510642e15b424c8fdf512b5596dc"
+  },
+  "CANDIDATE_1/review/unit-20/UNIT_20_REVIEW_MANIFEST.json": {
+    "bytes": 149056,
+    "sha256": "c50470cc82e2f88ce5d60ca7b261122ef5a2d0eec8cdc80dcb7e924e8687548f"
+  },
+  "CANDIDATE_1/review/unit-20/UNIT_20_REVIEW_PACKET.md": {
+    "bytes": 1229675,
+    "sha256": "c95d7e9b9948fecafcf20de4dba0a9d3f8b11e1c0a4d18f9440fb8b4dd4ec720"
+  },
+  "CANDIDATE_1/review/unit-20/UNIT_20_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1178869,
+    "sha256": "41395c7bba0046a28e64a183a97736f44ecaa8167b2b3b0a0756c44ebf3f46b7"
+  },
+  "CANDIDATE_1/review/unit-21/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "abe8fba371725a5cf9fed8e6438d86f0d4f5e6423b78e7aeb9bd67a722429a0e"
+  },
+  "CANDIDATE_1/review/unit-21/UNIT_21_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 30644,
+    "sha256": "fa7fcd9792169bd02b3c543a8e906ebcad7450846ad51ae7dcdf0b09b26b3a0e"
+  },
+  "CANDIDATE_1/review/unit-21/UNIT_21_REVIEW_MANIFEST.json": {
+    "bytes": 139686,
+    "sha256": "0d91742dfb234697ade5dad5cb48061ef099280d30b4df98759b0476c2dc0ea5"
+  },
+  "CANDIDATE_1/review/unit-21/UNIT_21_REVIEW_PACKET.md": {
+    "bytes": 560986,
+    "sha256": "1fc553dc8fa3ec97ead746f5b8f49d3c466f800bed8db1913f0d9e0e7041dc83"
+  },
+  "CANDIDATE_1/review/unit-21/UNIT_21_REVIEW_WORKSHEET.tsv": {
+    "bytes": 509218,
+    "sha256": "aea8389d2b721ccde14020aa9b47caed635822357b15d327c92f78e5d4c8437a"
+  },
+  "CANDIDATE_1/review/unit-22/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "d546266bab0071ebcb1e068c38536cffedcd8bc190a18e1cb323f081741e5a21"
+  },
+  "CANDIDATE_1/review/unit-22/UNIT_22_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 51140,
+    "sha256": "80e5391332cdefcec1b29db7252abd75ad0c1e629a58a184cf89b1b6a5986836"
+  },
+  "CANDIDATE_1/review/unit-22/UNIT_22_REVIEW_MANIFEST.json": {
+    "bytes": 182349,
+    "sha256": "b7a1c2574327fd02f2d8c2435ab35239454b7804178ae38eac13a8466e80e458"
+  },
+  "CANDIDATE_1/review/unit-22/UNIT_22_REVIEW_PACKET.md": {
+    "bytes": 664976,
+    "sha256": "5932170650ef729b0ea83a920ac8991428e3b5ba869611e9c23b0e88377a1989"
+  },
+  "CANDIDATE_1/review/unit-22/UNIT_22_REVIEW_WORKSHEET.tsv": {
+    "bytes": 596918,
+    "sha256": "a5f8bd31af9228b5db0bfada7c5f06aa2bf92b2907bdd63b6f26f2ee414c5166"
+  },
+  "CANDIDATE_1/review/unit-23/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "ae7f7d7d575f317f0ad04954eda32fa5abd4ae514e2de7eb86b497c2cc41a740"
+  },
+  "CANDIDATE_1/review/unit-23/UNIT_23_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 50173,
+    "sha256": "2b1e560a73c864beed902d7e7f1a567be630a5e89c01e1397adc31b21e879595"
+  },
+  "CANDIDATE_1/review/unit-23/UNIT_23_REVIEW_MANIFEST.json": {
+    "bytes": 123821,
+    "sha256": "f34516d5a88ed95dd8b68e7f25567e6d96565c16479de522f24faddd015b2f49"
+  },
+  "CANDIDATE_1/review/unit-23/UNIT_23_REVIEW_PACKET.md": {
+    "bytes": 440710,
+    "sha256": "1d6756c15431a63bbef8421c42cac5a10c7b036abef7d952e26d99c27cde47d2"
+  },
+  "CANDIDATE_1/review/unit-23/UNIT_23_REVIEW_WORKSHEET.tsv": {
+    "bytes": 392689,
+    "sha256": "82c6830a61a078493bce8ebc4b059b17b650c0b1f9f0469305cd24bdedc26482"
+  },
+  "CANDIDATE_1/review/unit-24/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "e6632b9a3cd29d9716d6c266e4e45200c34cf4560ea507ec22d9a4129aed6fcf"
+  },
+  "CANDIDATE_1/review/unit-24/UNIT_24_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 60095,
+    "sha256": "2a6aee7162da15890d66983f8a129725b7f9afb9919635043c2af10c2c43c0ca"
+  },
+  "CANDIDATE_1/review/unit-24/UNIT_24_REVIEW_MANIFEST.json": {
+    "bytes": 239649,
+    "sha256": "59ba580f9fc4d2d34d1c7689d3674043536d71a95edcbde82280553d95af4000"
+  },
+  "CANDIDATE_1/review/unit-24/UNIT_24_REVIEW_PACKET.md": {
+    "bytes": 972923,
+    "sha256": "12bf8d8cad3a63f32fbf1ed605af080d749d47f917ff0f606157c33093762518"
+  },
+  "CANDIDATE_1/review/unit-24/UNIT_24_REVIEW_WORKSHEET.tsv": {
+    "bytes": 884714,
+    "sha256": "0796f779830998e9d2ffe525ce2e7ed620d0123363a29efc690f4c615109b26b"
+  },
+  "CANDIDATE_1/review/unit-25/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "5083811c4bd997fe556df335bc7d33473206e9cbd545fd8abdbf645b702fff55"
+  },
+  "CANDIDATE_1/review/unit-25/UNIT_25_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 56804,
+    "sha256": "f62c3f5ea24fb697f956464cee0db4a4536ee0b179e8228cec0a7827365b5bfa"
+  },
+  "CANDIDATE_1/review/unit-25/UNIT_25_REVIEW_MANIFEST.json": {
+    "bytes": 228329,
+    "sha256": "46411fdbadfe88d101c5162d6b4c3fbbb1d7a04c24585798e8b7a74af66b77db"
+  },
+  "CANDIDATE_1/review/unit-25/UNIT_25_REVIEW_PACKET.md": {
+    "bytes": 886181,
+    "sha256": "d08b17a6b1193cbfcedbbe45b6d53e45f8ea1772058d8f6eb964ad82c1b889b8"
+  },
+  "CANDIDATE_1/review/unit-25/UNIT_25_REVIEW_WORKSHEET.tsv": {
+    "bytes": 800232,
+    "sha256": "31826b132a4c8d7c445ecd46326d7157417f4a4ace054d8f0557fd9e76ffe4bf"
+  },
+  "CANDIDATE_1/review/unit-26/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "217b74394218a2aaaf156c97bd61729105e1b35a414c7f098a4644f871c15ffe"
+  },
+  "CANDIDATE_1/review/unit-26/UNIT_26_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 59121,
+    "sha256": "6937c607a250775060f180d429608d0acceb6c1fef86e1da721bc8f00a475880"
+  },
+  "CANDIDATE_1/review/unit-26/UNIT_26_REVIEW_MANIFEST.json": {
+    "bytes": 292534,
+    "sha256": "09bce0048cd12838d576aff5e9eb41258a0fa7d3e88a24387d03476eb4bd8b09"
+  },
+  "CANDIDATE_1/review/unit-26/UNIT_26_REVIEW_PACKET.md": {
+    "bytes": 5477909,
+    "sha256": "ad2de2855bfb85cc081739020db388a711990bb7b694be399e48f1c6ed065b3b"
+  },
+  "CANDIDATE_1/review/unit-26/UNIT_26_REVIEW_WORKSHEET.tsv": {
+    "bytes": 5395497,
+    "sha256": "abff9ea4de5b1ca5a793531394bafe3e0916863ae127c6660c9c8f24f9679893"
+  },
+  "CANDIDATE_1/review/unit-27/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "111687695287c6f0593d355c516b7f8e5c0873ed1a40887f2c6dbeb8263b7b83"
+  },
+  "CANDIDATE_1/review/unit-27/UNIT_27_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 46066,
+    "sha256": "2744e591f961001dd8bb632bd3f0c5b250f1b2b3c8fcd1e95f236f7efc1bbd6b"
+  },
+  "CANDIDATE_1/review/unit-27/UNIT_27_REVIEW_MANIFEST.json": {
+    "bytes": 215258,
+    "sha256": "e9f4c4499f48a6b6c89baecc2e954e65bfebc03f094069fb066b9c4a62534c8e"
+  },
+  "CANDIDATE_1/review/unit-27/UNIT_27_REVIEW_PACKET.md": {
+    "bytes": 1216385,
+    "sha256": "2bdfdc984f13cc04953473555026f27c4111e511b494be39fcba514d0d81f523"
+  },
+  "CANDIDATE_1/review/unit-27/UNIT_27_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1140477,
+    "sha256": "8325a4b9ce320e6d80d18b8f240cb35adfe062764ef2c0a385feaa22b0875872"
+  },
+  "CANDIDATE_1/review/unit-28/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "c8e4b1b48cd4411fce00a623a93b563db5b03d23f477be1e2c68e0d003dab20a"
+  },
+  "CANDIDATE_1/review/unit-28/UNIT_28_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 31746,
+    "sha256": "75d83653181c71c854ec35f472e8e4035a014e587ef38c7e2aeeda9b5127dc17"
+  },
+  "CANDIDATE_1/review/unit-28/UNIT_28_REVIEW_MANIFEST.json": {
+    "bytes": 279413,
+    "sha256": "64678aa7d3ba77b02a4d0f016d832f8cff72369d07def40422e53b450deef05e"
+  },
+  "CANDIDATE_1/review/unit-28/UNIT_28_REVIEW_PACKET.md": {
+    "bytes": 2307158,
+    "sha256": "9291bf3e56e626b7ccb55e5d5cd7011caf8f55da64af10f306fdbfffb5b56b61"
+  },
+  "CANDIDATE_1/review/unit-28/UNIT_28_REVIEW_WORKSHEET.tsv": {
+    "bytes": 2213971,
+    "sha256": "c3e02cac1c67c262d7e0c33a91a2ad36335d582d948f0ea8877d53f5816ff8c0"
+  },
+  "CANDIDATE_1/review/unit-29/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "bd49dbbbe237cd3ed1b89ecfd5830fb87a9f33365236d6baf85eabdcbf123a23"
+  },
+  "CANDIDATE_1/review/unit-29/UNIT_29_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 59232,
+    "sha256": "b430b35245335fb0e80c3b2f1d419396fec01fd69b104d68f55320271e850057"
+  },
+  "CANDIDATE_1/review/unit-29/UNIT_29_REVIEW_MANIFEST.json": {
+    "bytes": 315986,
+    "sha256": "7ae8a5eede2ac927ed75b439c34da1d565b70252c74c5fc7cd7a6aa9eaa0cff1"
+  },
+  "CANDIDATE_1/review/unit-29/UNIT_29_REVIEW_PACKET.md": {
+    "bytes": 1527995,
+    "sha256": "74e6f8e2bfb05f3967858da6ed1ecbf4b0946d5b51c1e7c992edf448ba44737c"
+  },
+  "CANDIDATE_1/review/unit-29/UNIT_29_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1410240,
+    "sha256": "cdf5a311dc517bbe2aff91d35c4757588c826f161a37579dab5ec4cf3953d52c"
+  },
+  "CANDIDATE_1/review/unit-3/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "99a4f637ec2a412c0735e13731d76f572f6088c3a863214825db714b01871c0d"
+  },
+  "CANDIDATE_1/review/unit-3/UNIT_3_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 29911,
+    "sha256": "db09f801d5cc7bb4486c0824ba2bcdf8896cbe75479d09ade7c9f8e1449382a7"
+  },
+  "CANDIDATE_1/review/unit-3/UNIT_3_REVIEW_MANIFEST.json": {
+    "bytes": 101920,
+    "sha256": "c332577592447ffe8d3fe92f0ec8bcd638ee0de43a18f0c17ab87c433796420d"
+  },
+  "CANDIDATE_1/review/unit-3/UNIT_3_REVIEW_PACKET.md": {
+    "bytes": 231391,
+    "sha256": "1399c8133336b176ed69ff6f04983f2b141e487963146380c219ad1accb29efb"
+  },
+  "CANDIDATE_1/review/unit-3/UNIT_3_REVIEW_WORKSHEET.tsv": {
+    "bytes": 189180,
+    "sha256": "fdccefdfcfc08a278af824f63ffea282c546747b0b91842620926c879b5efbf6"
+  },
+  "CANDIDATE_1/review/unit-30/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "20cb181e1d7fd2768f5d68450579240d0368a54f05c03c9c7c8471b497bfc809"
+  },
+  "CANDIDATE_1/review/unit-30/UNIT_30_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 62326,
+    "sha256": "6ff480b5eae41dafbc3d48d53ef878bdc6cd30dbf3bd2ccf02c62dc45b42d6ff"
+  },
+  "CANDIDATE_1/review/unit-30/UNIT_30_REVIEW_MANIFEST.json": {
+    "bytes": 249450,
+    "sha256": "98a1647ba358eb01383da427498072204ea24b346ad38090a7e517bc6a3ea7ca"
+  },
+  "CANDIDATE_1/review/unit-30/UNIT_30_REVIEW_PACKET.md": {
+    "bytes": 1067345,
+    "sha256": "8520110c61c6c5ea97ac5b18790986cd17d9892711133364874d414e3a3ca053"
+  },
+  "CANDIDATE_1/review/unit-30/UNIT_30_REVIEW_WORKSHEET.tsv": {
+    "bytes": 974485,
+    "sha256": "850999a843728869e6d0c0dd0c8284c5cb0f0caad4f1b34da3c653d585efead4"
+  },
+  "CANDIDATE_1/review/unit-4/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "175768784be49ed935e3a5d4b08c429f2c83b8be3307686cef7b576b5ecae46f"
+  },
+  "CANDIDATE_1/review/unit-4/UNIT_4_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 39773,
+    "sha256": "796dd710bddd49e72f1bd36cb12adbb94bac59b764a024184fb7f68510e5efa1"
+  },
+  "CANDIDATE_1/review/unit-4/UNIT_4_REVIEW_MANIFEST.json": {
+    "bytes": 173546,
+    "sha256": "f9629773c915bbe458d636af362b77862fb2ca93e7605dad5abe92785e644334"
+  },
+  "CANDIDATE_1/review/unit-4/UNIT_4_REVIEW_PACKET.md": {
+    "bytes": 594908,
+    "sha256": "6a05e2a7abd2b2f3ef3d62a4829ba9bacf932af1909b78dded3a5759ec4aa0e4"
+  },
+  "CANDIDATE_1/review/unit-4/UNIT_4_REVIEW_WORKSHEET.tsv": {
+    "bytes": 527243,
+    "sha256": "ea697350af71f9ad1f6d797cac73d57105ab53f13501b3ac8837b8196c9777a8"
+  },
+  "CANDIDATE_1/review/unit-5/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "4af5c2f7510e92772199ad493d6115391000d7720107e74f56bf63eeb855fa26"
+  },
+  "CANDIDATE_1/review/unit-5/UNIT_5_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 30053,
+    "sha256": "47912722116cf66ffeccc7dbe82c33393a0a084c9423b258ed35ea922ff711ee"
+  },
+  "CANDIDATE_1/review/unit-5/UNIT_5_REVIEW_MANIFEST.json": {
+    "bytes": 125646,
+    "sha256": "ec4b8a705a2ba672cd7548ba0ffdb449ca642bd4e2d2039bfe4ec3abca44e9c2"
+  },
+  "CANDIDATE_1/review/unit-5/UNIT_5_REVIEW_PACKET.md": {
+    "bytes": 302466,
+    "sha256": "adb153dfb661301c9d887308ccadf2cb0f367d7d6cbd631dfcaf86dc9c94ce27"
+  },
+  "CANDIDATE_1/review/unit-5/UNIT_5_REVIEW_WORKSHEET.tsv": {
+    "bytes": 251799,
+    "sha256": "666db5d3cf92123357451808e786967e2c8c15441e062c92424c888f06d11954"
+  },
+  "CANDIDATE_1/review/unit-6/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "cef310cb839818314e754c87aae7f9251b8e2402f94df7b6887ad62b96458b96"
+  },
+  "CANDIDATE_1/review/unit-6/UNIT_6_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 55310,
+    "sha256": "d343f931a24e966cb94e8ecc6aaa4b8ef41685c92b7d413cda9f41fdc93c2432"
+  },
+  "CANDIDATE_1/review/unit-6/UNIT_6_REVIEW_MANIFEST.json": {
+    "bytes": 205653,
+    "sha256": "24e9bfb93818e7e81e037811c2f18eb547c9bacf611120049195b84068306c48"
+  },
+  "CANDIDATE_1/review/unit-6/UNIT_6_REVIEW_PACKET.md": {
+    "bytes": 681641,
+    "sha256": "a6aaf19691cadbae8d1f6498ffa851062e973ba6b1333b89a7bf0247b476a682"
+  },
+  "CANDIDATE_1/review/unit-6/UNIT_6_REVIEW_WORKSHEET.tsv": {
+    "bytes": 601933,
+    "sha256": "c600595b5e49bc7dc06ba84b556abd693c8ed00a93a74a960219a2076f3db25e"
+  },
+  "CANDIDATE_1/review/unit-7/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "e03965bde43142d03df88584de79fd4bd30bca60e620ad92177f4b5a9602cdba"
+  },
+  "CANDIDATE_1/review/unit-7/UNIT_7_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 80914,
+    "sha256": "9bd3ff968f266bf3807c12d99f6059ecd17357a034a034fd6ce32f710fbb57b6"
+  },
+  "CANDIDATE_1/review/unit-7/UNIT_7_REVIEW_MANIFEST.json": {
+    "bytes": 329093,
+    "sha256": "e5f57fedf1e2030d84fb14ddf1e593b4c864954cec18521bad670bcfdd6718e9"
+  },
+  "CANDIDATE_1/review/unit-7/UNIT_7_REVIEW_PACKET.md": {
+    "bytes": 1272787,
+    "sha256": "06caded4d3bab6e900b4239b3fbba716e4f8671ee92611dbf131d7e9d3c63290"
+  },
+  "CANDIDATE_1/review/unit-7/UNIT_7_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1151424,
+    "sha256": "41ca4f407d1f9c57ffb52c815d9d6a319235323eef8222a8fece2df2952cf9c5"
+  },
+  "CANDIDATE_1/review/unit-8/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "775820b110274de253c7ec9a35e6a1b7731f89006cd27e3b5a99588637ec81c6"
+  },
+  "CANDIDATE_1/review/unit-8/UNIT_8_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 42232,
+    "sha256": "862366fd94e52a4c04b0910a4a0d7948f5eac6fe835e2b2eb5a42bccc917ef7a"
+  },
+  "CANDIDATE_1/review/unit-8/UNIT_8_REVIEW_MANIFEST.json": {
+    "bytes": 214910,
+    "sha256": "2698cedaa59a8264c885c43d5465c1a233ad119230e9bcd3b6c8e2c4225bc84e"
+  },
+  "CANDIDATE_1/review/unit-8/UNIT_8_REVIEW_PACKET.md": {
+    "bytes": 801401,
+    "sha256": "8c43bd709321dc52c5442668d6cd212f356791019a71f7b127a0ee6868992ff0"
+  },
+  "CANDIDATE_1/review/unit-8/UNIT_8_REVIEW_WORKSHEET.tsv": {
+    "bytes": 719249,
+    "sha256": "13d9e83f1e1c3c4130b8b94b8e6c4ee88913085adaef460818998cf8c6792956"
+  },
+  "CANDIDATE_1/review/unit-9/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "e6156a1ebeec098a024f57fddc9286485bb2ca76a64ac58092cb30057d3872b5"
+  },
+  "CANDIDATE_1/review/unit-9/UNIT_9_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 61417,
+    "sha256": "07b6af6bed2296258cc5b59c957636a7c58a36fb2afdd1f5640183ebb4d4c186"
+  },
+  "CANDIDATE_1/review/unit-9/UNIT_9_REVIEW_MANIFEST.json": {
+    "bytes": 346986,
+    "sha256": "53f0ab945dd9b03222caa10666a544c5a25a51dcc0f6016833b98f70e29567ad"
+  },
+  "CANDIDATE_1/review/unit-9/UNIT_9_REVIEW_PACKET.md": {
+    "bytes": 1308044,
+    "sha256": "8901dba99a96823cb2c345b772535df6d3836be00f2ab21ad5f0aac5bd58029c"
+  },
+  "CANDIDATE_1/review/unit-9/UNIT_9_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1178813,
+    "sha256": "de2cd562c8e69d56a31664ecebf7091d687838cec46224c79dd4a42500d6ff35"
+  },
+  "CANDIDATE_2/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.json": {
+    "bytes": 70438,
+    "sha256": "b793a0c916d70b050e401fea7cc294d55cf0ef9cacbfe8a546f8f3715c497c18"
+  },
+  "CANDIDATE_2/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.md": {
+    "bytes": 45377,
+    "sha256": "c0e16ce5290213ba7599244322434602bc43d116443322567228fdd960b59d1e"
+  },
+  "CANDIDATE_2/audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json": {
+    "bytes": 6135,
+    "sha256": "1230a3c3622d750fb3e4354fd3429bef76a6936c613f496c77fe179297e82a8f"
+  },
+  "CANDIDATE_2/review/unit-1/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "1da24112b7aeb6baa1fa303aa0ad4ced8e74168769fcebeba755496b67974f3e"
+  },
+  "CANDIDATE_2/review/unit-1/UNIT_1_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 80892,
+    "sha256": "23d1994d1b86ef5413169cdb15327d043870dc6cf6ec104c5f58f581248bc2df"
+  },
+  "CANDIDATE_2/review/unit-1/UNIT_1_REVIEW_MANIFEST.json": {
+    "bytes": 75593,
+    "sha256": "0c1449ed900ffb10e8ce04e46dc293e77f1659fce603ffab18d9c12054c726a2"
+  },
+  "CANDIDATE_2/review/unit-1/UNIT_1_REVIEW_PACKET.md": {
+    "bytes": 117305,
+    "sha256": "9122b6ec592e9d13507de61b190d8da1f8fa16847603254d7e6ffd89b0f101c0"
+  },
+  "CANDIDATE_2/review/unit-1/UNIT_1_REVIEW_WORKSHEET.tsv": {
+    "bytes": 83187,
+    "sha256": "c066a91c34d2afb7b46b4b9e50cb03877a782737d2649aae8fe7212098917a77"
+  },
+  "CANDIDATE_2/review/unit-10/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "6a3464e6ad83761c51949bf28f48e33190b2da88668b6379f96cf79757ce23ac"
+  },
+  "CANDIDATE_2/review/unit-10/UNIT_10_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 49221,
+    "sha256": "42902401fd9475180b2aba9e19734dfac02f202037dedef8a62d8e8d92755713"
+  },
+  "CANDIDATE_2/review/unit-10/UNIT_10_REVIEW_MANIFEST.json": {
+    "bytes": 240220,
+    "sha256": "8a19260451085c8c9ef760cabde89259d2732c753d79a4fd9f52fdd49f91b775"
+  },
+  "CANDIDATE_2/review/unit-10/UNIT_10_REVIEW_PACKET.md": {
+    "bytes": 821847,
+    "sha256": "595d2a49ed68eabc1f2bb8c47b0e2456daec521373ea6827cdd778d1e4496f5a"
+  },
+  "CANDIDATE_2/review/unit-10/UNIT_10_REVIEW_WORKSHEET.tsv": {
+    "bytes": 729946,
+    "sha256": "a07bdb9daef77de32ac864f56b386ba19c20eba12c1474ff83e3964e280b2a96"
+  },
+  "CANDIDATE_2/review/unit-11/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "b57598e154e40b972b7215245827581380aa4ab0e8cd9e99a81a2cf0655790a5"
+  },
+  "CANDIDATE_2/review/unit-11/UNIT_11_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 37568,
+    "sha256": "5edfba145d77e3817fdfdf3004293ece2c6723be77d5795f9d24b68fcfe4d588"
+  },
+  "CANDIDATE_2/review/unit-11/UNIT_11_REVIEW_MANIFEST.json": {
+    "bytes": 112813,
+    "sha256": "5b3e6e60cd8ec76ae54981c00d27203d3ebf20ed28bc647b07fe24b3c5dc28a6"
+  },
+  "CANDIDATE_2/review/unit-11/UNIT_11_REVIEW_PACKET.md": {
+    "bytes": 325238,
+    "sha256": "9cee483dbb4edb8b867684467c1f40d1ad1631b350861206475dc0ae0069b626"
+  },
+  "CANDIDATE_2/review/unit-11/UNIT_11_REVIEW_WORKSHEET.tsv": {
+    "bytes": 279136,
+    "sha256": "db4bb7885c1baa593b7ed6fe0bad3e6ab912f3eb4498805a7949ec616b67bf69"
+  },
+  "CANDIDATE_2/review/unit-12/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "9dad4ef57167d5717ba14a87efdcd9889e2e9607cedb8fe3f4b90b650a7ec1f7"
+  },
+  "CANDIDATE_2/review/unit-12/UNIT_12_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 51571,
+    "sha256": "cedf4e141ca5205fd30ac6faae77c9606bbf4d1132effd36ea8bd3709879f164"
+  },
+  "CANDIDATE_2/review/unit-12/UNIT_12_REVIEW_MANIFEST.json": {
+    "bytes": 156961,
+    "sha256": "bdf0e7cae175cd4a5dd903c3b7b6357818efe7d528703633c5e03f5d13520bb9"
+  },
+  "CANDIDATE_2/review/unit-12/UNIT_12_REVIEW_PACKET.md": {
+    "bytes": 493659,
+    "sha256": "6a769555297a02e990f9236b77c07e09b9d57267ec58714f3f38c642c768705a"
+  },
+  "CANDIDATE_2/review/unit-12/UNIT_12_REVIEW_WORKSHEET.tsv": {
+    "bytes": 430841,
+    "sha256": "9cc1c0b01f998e519d9bccfbe80ffa7267c7f7b838a2808416a6dd3de79a0bb8"
+  },
+  "CANDIDATE_2/review/unit-13/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "34f32df2b44572195dd17b3dc6d0537643aa16bd4f19c8ca352c74e483d76db4"
+  },
+  "CANDIDATE_2/review/unit-13/UNIT_13_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 37974,
+    "sha256": "33e27144f8fdf4cdf27f0e612a03a2e57dac2245496ab919990eb2064c28506e"
+  },
+  "CANDIDATE_2/review/unit-13/UNIT_13_REVIEW_MANIFEST.json": {
+    "bytes": 127501,
+    "sha256": "c7cfddca11dae98e1f2c3a8ed17e64bd10d283debd8ed69adee8ca1049551580"
+  },
+  "CANDIDATE_2/review/unit-13/UNIT_13_REVIEW_PACKET.md": {
+    "bytes": 483416,
+    "sha256": "2ef9ebc12a36ed7fb849b864f4c798aba7da439f2387ec23085798bc05081e07"
+  },
+  "CANDIDATE_2/review/unit-13/UNIT_13_REVIEW_WORKSHEET.tsv": {
+    "bytes": 432829,
+    "sha256": "f5da9693ab71418da2aae6d2fce967cf1f8071ce4a1851f3fabe7c5318b80402"
+  },
+  "CANDIDATE_2/review/unit-14/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "ab44ab41b7784647b925466ecfe2217b112e2f2c19b6b92c56b9a8e0507f4f6d"
+  },
+  "CANDIDATE_2/review/unit-14/UNIT_14_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 31119,
+    "sha256": "6d83fb324b513b9f4a91d26d55e68a6fbe42721a7e07ec5ddeae761aae61d137"
+  },
+  "CANDIDATE_2/review/unit-14/UNIT_14_REVIEW_MANIFEST.json": {
+    "bytes": 71926,
+    "sha256": "10fc1105a1ecea841045e4590cb268dcd625da83162792dc77a7a84af27e5eed"
+  },
+  "CANDIDATE_2/review/unit-14/UNIT_14_REVIEW_PACKET.md": {
+    "bytes": 215840,
+    "sha256": "a19ace5a2c016db453cbf0f41e5adfaf0ab1db2f8be4d992520d68481078daf4"
+  },
+  "CANDIDATE_2/review/unit-14/UNIT_14_REVIEW_WORKSHEET.tsv": {
+    "bytes": 184772,
+    "sha256": "1426422bc73efc904e20cac2d006f31ae50ade4eb67a1568fec4331b8c416c5e"
+  },
+  "CANDIDATE_2/review/unit-15/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "9c9155a9c0274be0499d11f3b446fa21b671569ab85ca3622c41b9e85e46646b"
+  },
+  "CANDIDATE_2/review/unit-15/UNIT_15_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 31088,
+    "sha256": "1216032aaa5d3bc867ceac5777c1aec2da358c84b50df5bc196673c237e41b88"
+  },
+  "CANDIDATE_2/review/unit-15/UNIT_15_REVIEW_MANIFEST.json": {
+    "bytes": 84994,
+    "sha256": "801a0be2406dd655d03646d23d143a885812c582b8dfddced5c0af3493b2985e"
+  },
+  "CANDIDATE_2/review/unit-15/UNIT_15_REVIEW_PACKET.md": {
+    "bytes": 258241,
+    "sha256": "764e7c50e9756b527448a9e967f57a00ef569f2364aaa46d2f02913ed979e66d"
+  },
+  "CANDIDATE_2/review/unit-15/UNIT_15_REVIEW_WORKSHEET.tsv": {
+    "bytes": 222352,
+    "sha256": "90525cec5d0bf15c7549a3c5295c30524affe1db00e6a2cd069533fdd0498206"
+  },
+  "CANDIDATE_2/review/unit-16/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "2c8692a2f3aa449a68b231f7f1af0ddc9665c2a0b4eb23506c0fb1b8a4fd7de3"
+  },
+  "CANDIDATE_2/review/unit-16/UNIT_16_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 52805,
+    "sha256": "f425118a6fdf2b9edbb87d84346ffb46d8db1ef0a65f1b11ecf0df1070cfd6e7"
+  },
+  "CANDIDATE_2/review/unit-16/UNIT_16_REVIEW_MANIFEST.json": {
+    "bytes": 223931,
+    "sha256": "651bbb9eac1f1b1da1a2ff08aa7d64f90fc877058ce2e66cd6e1647a4834b4cc"
+  },
+  "CANDIDATE_2/review/unit-16/UNIT_16_REVIEW_PACKET.md": {
+    "bytes": 779649,
+    "sha256": "2f44a6a53d27ab2a8c5568438b08ce695d95e458a1717df24d491ff163262690"
+  },
+  "CANDIDATE_2/review/unit-16/UNIT_16_REVIEW_WORKSHEET.tsv": {
+    "bytes": 693581,
+    "sha256": "8f992d341b59aed852935d5beec6f61b25821f30612ef795741a1c8e00961dc9"
+  },
+  "CANDIDATE_2/review/unit-17/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "46e4ad448cf101a5c93177e2b0bb6edc418096a8ca7248fcc7490dcbee1d6956"
+  },
+  "CANDIDATE_2/review/unit-17/UNIT_17_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 93976,
+    "sha256": "b8cc6f37b19de975c643e12be94a4d191b28949904c19631263bdecb434a1b03"
+  },
+  "CANDIDATE_2/review/unit-17/UNIT_17_REVIEW_MANIFEST.json": {
+    "bytes": 398747,
+    "sha256": "f57967c4349518e3d0dd7f7b253ac4ad84aeea183c6c7607749a230fe3a9d6cb"
+  },
+  "CANDIDATE_2/review/unit-17/UNIT_17_REVIEW_PACKET.md": {
+    "bytes": 1799239,
+    "sha256": "d779e4a8db6f413e2119058cdf85e3ea04b4b5a50da0f78566b33efaaf99987d"
+  },
+  "CANDIDATE_2/review/unit-17/UNIT_17_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1657345,
+    "sha256": "892d4d3337937af5383abaae2fcfb0eb2cc41cb9e78aed92a4f0b4d8d0d2bd64"
+  },
+  "CANDIDATE_2/review/unit-18/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "a81618fdeb4ffdc5344b0d24f042be01c7eb5b3af89127577299467175ee329e"
+  },
+  "CANDIDATE_2/review/unit-18/UNIT_18_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 24985,
+    "sha256": "8524158806cddabd55443acb8209a81f17a29bc2ac48af0f75d724f02a5795f6"
+  },
+  "CANDIDATE_2/review/unit-18/UNIT_18_REVIEW_MANIFEST.json": {
+    "bytes": 81797,
+    "sha256": "d9514cc7566708a6e3c80144d407c83ae0d09a7cdb713eaf1e8e00406bcc6735"
+  },
+  "CANDIDATE_2/review/unit-18/UNIT_18_REVIEW_PACKET.md": {
+    "bytes": 310196,
+    "sha256": "bf9ff22a218a613f71f089a3c5c3f4d8e90b1a399183ccb9af0e473fa6ddb0a1"
+  },
+  "CANDIDATE_2/review/unit-18/UNIT_18_REVIEW_WORKSHEET.tsv": {
+    "bytes": 277303,
+    "sha256": "2fbea71c77ff03a5d417d80bd4a03a17022a7a59702cedc1c3b8caf28204d3f1"
+  },
+  "CANDIDATE_2/review/unit-19/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "2426308790c72208fdbbdf50cf37c72033cc9ee4dec277594faa5391011dc4be"
+  },
+  "CANDIDATE_2/review/unit-19/UNIT_19_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 38621,
+    "sha256": "fa4b1252ed2b3cc29ea871907827e95cb553a4571a5dcb4f34552720e22a4048"
+  },
+  "CANDIDATE_2/review/unit-19/UNIT_19_REVIEW_MANIFEST.json": {
+    "bytes": 143417,
+    "sha256": "e86c48d9fad334a9d5fcbbf3c2f930071787b638a1e42cc866646270b18e1aaf"
+  },
+  "CANDIDATE_2/review/unit-19/UNIT_19_REVIEW_PACKET.md": {
+    "bytes": 511046,
+    "sha256": "4f8b8642007b7c7bf3ca5ee19dac6ae9f3c46e070997245b0d0690d7559762e0"
+  },
+  "CANDIDATE_2/review/unit-19/UNIT_19_REVIEW_WORKSHEET.tsv": {
+    "bytes": 455686,
+    "sha256": "003dd18b939f8d48cd5a9547d4bfab9ca60da344d51c4516565742614a47bcc0"
+  },
+  "CANDIDATE_2/review/unit-2/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "db2cfe5d5d56c93838dd0c2ddf6aa9e3653970d06e21d8bed4caf576d9b47ed4"
+  },
+  "CANDIDATE_2/review/unit-2/UNIT_2_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 32671,
+    "sha256": "6e65e97fe9bcfdb51caa4736b71e1f0ef26d99eb0f9f35dc96b1909d473f535f"
+  },
+  "CANDIDATE_2/review/unit-2/UNIT_2_REVIEW_MANIFEST.json": {
+    "bytes": 20189,
+    "sha256": "726ac1d7f9a8f4a19ea1adc0e54333dcb586561eca4a6f0dacc176035881e28f"
+  },
+  "CANDIDATE_2/review/unit-2/UNIT_2_REVIEW_PACKET.md": {
+    "bytes": 38200,
+    "sha256": "edb60d8886369436bfb6065575049b427a0b669c71e066de3e2dc6a9c4add8a9"
+  },
+  "CANDIDATE_2/review/unit-2/UNIT_2_REVIEW_WORKSHEET.tsv": {
+    "bytes": 26791,
+    "sha256": "ec92922bee2ff2af36d1556566da8d58e9ae89278eab82fa0c4da186883b03bf"
+  },
+  "CANDIDATE_2/review/unit-20/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "c2abf415bdc2a0022bb299197a8a0b11d37b0638a019ac4e88df9ae5f595214c"
+  },
+  "CANDIDATE_2/review/unit-20/UNIT_20_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 18592,
+    "sha256": "0c83cad3ce8c2987e6b76b0c04b0c8aa10b0510642e15b424c8fdf512b5596dc"
+  },
+  "CANDIDATE_2/review/unit-20/UNIT_20_REVIEW_MANIFEST.json": {
+    "bytes": 149056,
+    "sha256": "c50470cc82e2f88ce5d60ca7b261122ef5a2d0eec8cdc80dcb7e924e8687548f"
+  },
+  "CANDIDATE_2/review/unit-20/UNIT_20_REVIEW_PACKET.md": {
+    "bytes": 1229675,
+    "sha256": "c95d7e9b9948fecafcf20de4dba0a9d3f8b11e1c0a4d18f9440fb8b4dd4ec720"
+  },
+  "CANDIDATE_2/review/unit-20/UNIT_20_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1178869,
+    "sha256": "41395c7bba0046a28e64a183a97736f44ecaa8167b2b3b0a0756c44ebf3f46b7"
+  },
+  "CANDIDATE_2/review/unit-21/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "abe8fba371725a5cf9fed8e6438d86f0d4f5e6423b78e7aeb9bd67a722429a0e"
+  },
+  "CANDIDATE_2/review/unit-21/UNIT_21_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 30644,
+    "sha256": "fa7fcd9792169bd02b3c543a8e906ebcad7450846ad51ae7dcdf0b09b26b3a0e"
+  },
+  "CANDIDATE_2/review/unit-21/UNIT_21_REVIEW_MANIFEST.json": {
+    "bytes": 139686,
+    "sha256": "0d91742dfb234697ade5dad5cb48061ef099280d30b4df98759b0476c2dc0ea5"
+  },
+  "CANDIDATE_2/review/unit-21/UNIT_21_REVIEW_PACKET.md": {
+    "bytes": 560986,
+    "sha256": "1fc553dc8fa3ec97ead746f5b8f49d3c466f800bed8db1913f0d9e0e7041dc83"
+  },
+  "CANDIDATE_2/review/unit-21/UNIT_21_REVIEW_WORKSHEET.tsv": {
+    "bytes": 509218,
+    "sha256": "aea8389d2b721ccde14020aa9b47caed635822357b15d327c92f78e5d4c8437a"
+  },
+  "CANDIDATE_2/review/unit-22/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "d546266bab0071ebcb1e068c38536cffedcd8bc190a18e1cb323f081741e5a21"
+  },
+  "CANDIDATE_2/review/unit-22/UNIT_22_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 51140,
+    "sha256": "80e5391332cdefcec1b29db7252abd75ad0c1e629a58a184cf89b1b6a5986836"
+  },
+  "CANDIDATE_2/review/unit-22/UNIT_22_REVIEW_MANIFEST.json": {
+    "bytes": 182349,
+    "sha256": "b7a1c2574327fd02f2d8c2435ab35239454b7804178ae38eac13a8466e80e458"
+  },
+  "CANDIDATE_2/review/unit-22/UNIT_22_REVIEW_PACKET.md": {
+    "bytes": 664976,
+    "sha256": "5932170650ef729b0ea83a920ac8991428e3b5ba869611e9c23b0e88377a1989"
+  },
+  "CANDIDATE_2/review/unit-22/UNIT_22_REVIEW_WORKSHEET.tsv": {
+    "bytes": 596918,
+    "sha256": "a5f8bd31af9228b5db0bfada7c5f06aa2bf92b2907bdd63b6f26f2ee414c5166"
+  },
+  "CANDIDATE_2/review/unit-23/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "ae7f7d7d575f317f0ad04954eda32fa5abd4ae514e2de7eb86b497c2cc41a740"
+  },
+  "CANDIDATE_2/review/unit-23/UNIT_23_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 50173,
+    "sha256": "2b1e560a73c864beed902d7e7f1a567be630a5e89c01e1397adc31b21e879595"
+  },
+  "CANDIDATE_2/review/unit-23/UNIT_23_REVIEW_MANIFEST.json": {
+    "bytes": 123821,
+    "sha256": "f34516d5a88ed95dd8b68e7f25567e6d96565c16479de522f24faddd015b2f49"
+  },
+  "CANDIDATE_2/review/unit-23/UNIT_23_REVIEW_PACKET.md": {
+    "bytes": 440710,
+    "sha256": "1d6756c15431a63bbef8421c42cac5a10c7b036abef7d952e26d99c27cde47d2"
+  },
+  "CANDIDATE_2/review/unit-23/UNIT_23_REVIEW_WORKSHEET.tsv": {
+    "bytes": 392689,
+    "sha256": "82c6830a61a078493bce8ebc4b059b17b650c0b1f9f0469305cd24bdedc26482"
+  },
+  "CANDIDATE_2/review/unit-24/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "e6632b9a3cd29d9716d6c266e4e45200c34cf4560ea507ec22d9a4129aed6fcf"
+  },
+  "CANDIDATE_2/review/unit-24/UNIT_24_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 60095,
+    "sha256": "2a6aee7162da15890d66983f8a129725b7f9afb9919635043c2af10c2c43c0ca"
+  },
+  "CANDIDATE_2/review/unit-24/UNIT_24_REVIEW_MANIFEST.json": {
+    "bytes": 239649,
+    "sha256": "59ba580f9fc4d2d34d1c7689d3674043536d71a95edcbde82280553d95af4000"
+  },
+  "CANDIDATE_2/review/unit-24/UNIT_24_REVIEW_PACKET.md": {
+    "bytes": 972923,
+    "sha256": "12bf8d8cad3a63f32fbf1ed605af080d749d47f917ff0f606157c33093762518"
+  },
+  "CANDIDATE_2/review/unit-24/UNIT_24_REVIEW_WORKSHEET.tsv": {
+    "bytes": 884714,
+    "sha256": "0796f779830998e9d2ffe525ce2e7ed620d0123363a29efc690f4c615109b26b"
+  },
+  "CANDIDATE_2/review/unit-25/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "5083811c4bd997fe556df335bc7d33473206e9cbd545fd8abdbf645b702fff55"
+  },
+  "CANDIDATE_2/review/unit-25/UNIT_25_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 56804,
+    "sha256": "f62c3f5ea24fb697f956464cee0db4a4536ee0b179e8228cec0a7827365b5bfa"
+  },
+  "CANDIDATE_2/review/unit-25/UNIT_25_REVIEW_MANIFEST.json": {
+    "bytes": 228329,
+    "sha256": "46411fdbadfe88d101c5162d6b4c3fbbb1d7a04c24585798e8b7a74af66b77db"
+  },
+  "CANDIDATE_2/review/unit-25/UNIT_25_REVIEW_PACKET.md": {
+    "bytes": 886181,
+    "sha256": "d08b17a6b1193cbfcedbbe45b6d53e45f8ea1772058d8f6eb964ad82c1b889b8"
+  },
+  "CANDIDATE_2/review/unit-25/UNIT_25_REVIEW_WORKSHEET.tsv": {
+    "bytes": 800232,
+    "sha256": "31826b132a4c8d7c445ecd46326d7157417f4a4ace054d8f0557fd9e76ffe4bf"
+  },
+  "CANDIDATE_2/review/unit-26/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "217b74394218a2aaaf156c97bd61729105e1b35a414c7f098a4644f871c15ffe"
+  },
+  "CANDIDATE_2/review/unit-26/UNIT_26_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 59121,
+    "sha256": "6937c607a250775060f180d429608d0acceb6c1fef86e1da721bc8f00a475880"
+  },
+  "CANDIDATE_2/review/unit-26/UNIT_26_REVIEW_MANIFEST.json": {
+    "bytes": 292534,
+    "sha256": "09bce0048cd12838d576aff5e9eb41258a0fa7d3e88a24387d03476eb4bd8b09"
+  },
+  "CANDIDATE_2/review/unit-26/UNIT_26_REVIEW_PACKET.md": {
+    "bytes": 5477909,
+    "sha256": "ad2de2855bfb85cc081739020db388a711990bb7b694be399e48f1c6ed065b3b"
+  },
+  "CANDIDATE_2/review/unit-26/UNIT_26_REVIEW_WORKSHEET.tsv": {
+    "bytes": 5395497,
+    "sha256": "abff9ea4de5b1ca5a793531394bafe3e0916863ae127c6660c9c8f24f9679893"
+  },
+  "CANDIDATE_2/review/unit-27/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "111687695287c6f0593d355c516b7f8e5c0873ed1a40887f2c6dbeb8263b7b83"
+  },
+  "CANDIDATE_2/review/unit-27/UNIT_27_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 46066,
+    "sha256": "2744e591f961001dd8bb632bd3f0c5b250f1b2b3c8fcd1e95f236f7efc1bbd6b"
+  },
+  "CANDIDATE_2/review/unit-27/UNIT_27_REVIEW_MANIFEST.json": {
+    "bytes": 215258,
+    "sha256": "e9f4c4499f48a6b6c89baecc2e954e65bfebc03f094069fb066b9c4a62534c8e"
+  },
+  "CANDIDATE_2/review/unit-27/UNIT_27_REVIEW_PACKET.md": {
+    "bytes": 1216385,
+    "sha256": "2bdfdc984f13cc04953473555026f27c4111e511b494be39fcba514d0d81f523"
+  },
+  "CANDIDATE_2/review/unit-27/UNIT_27_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1140477,
+    "sha256": "8325a4b9ce320e6d80d18b8f240cb35adfe062764ef2c0a385feaa22b0875872"
+  },
+  "CANDIDATE_2/review/unit-28/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "c8e4b1b48cd4411fce00a623a93b563db5b03d23f477be1e2c68e0d003dab20a"
+  },
+  "CANDIDATE_2/review/unit-28/UNIT_28_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 31746,
+    "sha256": "75d83653181c71c854ec35f472e8e4035a014e587ef38c7e2aeeda9b5127dc17"
+  },
+  "CANDIDATE_2/review/unit-28/UNIT_28_REVIEW_MANIFEST.json": {
+    "bytes": 279413,
+    "sha256": "64678aa7d3ba77b02a4d0f016d832f8cff72369d07def40422e53b450deef05e"
+  },
+  "CANDIDATE_2/review/unit-28/UNIT_28_REVIEW_PACKET.md": {
+    "bytes": 2307158,
+    "sha256": "9291bf3e56e626b7ccb55e5d5cd7011caf8f55da64af10f306fdbfffb5b56b61"
+  },
+  "CANDIDATE_2/review/unit-28/UNIT_28_REVIEW_WORKSHEET.tsv": {
+    "bytes": 2213971,
+    "sha256": "c3e02cac1c67c262d7e0c33a91a2ad36335d582d948f0ea8877d53f5816ff8c0"
+  },
+  "CANDIDATE_2/review/unit-29/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "bd49dbbbe237cd3ed1b89ecfd5830fb87a9f33365236d6baf85eabdcbf123a23"
+  },
+  "CANDIDATE_2/review/unit-29/UNIT_29_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 59232,
+    "sha256": "b430b35245335fb0e80c3b2f1d419396fec01fd69b104d68f55320271e850057"
+  },
+  "CANDIDATE_2/review/unit-29/UNIT_29_REVIEW_MANIFEST.json": {
+    "bytes": 315986,
+    "sha256": "7ae8a5eede2ac927ed75b439c34da1d565b70252c74c5fc7cd7a6aa9eaa0cff1"
+  },
+  "CANDIDATE_2/review/unit-29/UNIT_29_REVIEW_PACKET.md": {
+    "bytes": 1527995,
+    "sha256": "74e6f8e2bfb05f3967858da6ed1ecbf4b0946d5b51c1e7c992edf448ba44737c"
+  },
+  "CANDIDATE_2/review/unit-29/UNIT_29_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1410240,
+    "sha256": "cdf5a311dc517bbe2aff91d35c4757588c826f161a37579dab5ec4cf3953d52c"
+  },
+  "CANDIDATE_2/review/unit-3/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "99a4f637ec2a412c0735e13731d76f572f6088c3a863214825db714b01871c0d"
+  },
+  "CANDIDATE_2/review/unit-3/UNIT_3_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 29911,
+    "sha256": "db09f801d5cc7bb4486c0824ba2bcdf8896cbe75479d09ade7c9f8e1449382a7"
+  },
+  "CANDIDATE_2/review/unit-3/UNIT_3_REVIEW_MANIFEST.json": {
+    "bytes": 101920,
+    "sha256": "c332577592447ffe8d3fe92f0ec8bcd638ee0de43a18f0c17ab87c433796420d"
+  },
+  "CANDIDATE_2/review/unit-3/UNIT_3_REVIEW_PACKET.md": {
+    "bytes": 231391,
+    "sha256": "1399c8133336b176ed69ff6f04983f2b141e487963146380c219ad1accb29efb"
+  },
+  "CANDIDATE_2/review/unit-3/UNIT_3_REVIEW_WORKSHEET.tsv": {
+    "bytes": 189180,
+    "sha256": "fdccefdfcfc08a278af824f63ffea282c546747b0b91842620926c879b5efbf6"
+  },
+  "CANDIDATE_2/review/unit-30/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "20cb181e1d7fd2768f5d68450579240d0368a54f05c03c9c7c8471b497bfc809"
+  },
+  "CANDIDATE_2/review/unit-30/UNIT_30_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 62326,
+    "sha256": "6ff480b5eae41dafbc3d48d53ef878bdc6cd30dbf3bd2ccf02c62dc45b42d6ff"
+  },
+  "CANDIDATE_2/review/unit-30/UNIT_30_REVIEW_MANIFEST.json": {
+    "bytes": 249450,
+    "sha256": "98a1647ba358eb01383da427498072204ea24b346ad38090a7e517bc6a3ea7ca"
+  },
+  "CANDIDATE_2/review/unit-30/UNIT_30_REVIEW_PACKET.md": {
+    "bytes": 1067345,
+    "sha256": "8520110c61c6c5ea97ac5b18790986cd17d9892711133364874d414e3a3ca053"
+  },
+  "CANDIDATE_2/review/unit-30/UNIT_30_REVIEW_WORKSHEET.tsv": {
+    "bytes": 974485,
+    "sha256": "850999a843728869e6d0c0dd0c8284c5cb0f0caad4f1b34da3c653d585efead4"
+  },
+  "CANDIDATE_2/review/unit-4/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "175768784be49ed935e3a5d4b08c429f2c83b8be3307686cef7b576b5ecae46f"
+  },
+  "CANDIDATE_2/review/unit-4/UNIT_4_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 39773,
+    "sha256": "796dd710bddd49e72f1bd36cb12adbb94bac59b764a024184fb7f68510e5efa1"
+  },
+  "CANDIDATE_2/review/unit-4/UNIT_4_REVIEW_MANIFEST.json": {
+    "bytes": 173546,
+    "sha256": "f9629773c915bbe458d636af362b77862fb2ca93e7605dad5abe92785e644334"
+  },
+  "CANDIDATE_2/review/unit-4/UNIT_4_REVIEW_PACKET.md": {
+    "bytes": 594908,
+    "sha256": "6a05e2a7abd2b2f3ef3d62a4829ba9bacf932af1909b78dded3a5759ec4aa0e4"
+  },
+  "CANDIDATE_2/review/unit-4/UNIT_4_REVIEW_WORKSHEET.tsv": {
+    "bytes": 527243,
+    "sha256": "ea697350af71f9ad1f6d797cac73d57105ab53f13501b3ac8837b8196c9777a8"
+  },
+  "CANDIDATE_2/review/unit-5/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "4af5c2f7510e92772199ad493d6115391000d7720107e74f56bf63eeb855fa26"
+  },
+  "CANDIDATE_2/review/unit-5/UNIT_5_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 30053,
+    "sha256": "47912722116cf66ffeccc7dbe82c33393a0a084c9423b258ed35ea922ff711ee"
+  },
+  "CANDIDATE_2/review/unit-5/UNIT_5_REVIEW_MANIFEST.json": {
+    "bytes": 125646,
+    "sha256": "ec4b8a705a2ba672cd7548ba0ffdb449ca642bd4e2d2039bfe4ec3abca44e9c2"
+  },
+  "CANDIDATE_2/review/unit-5/UNIT_5_REVIEW_PACKET.md": {
+    "bytes": 302466,
+    "sha256": "adb153dfb661301c9d887308ccadf2cb0f367d7d6cbd631dfcaf86dc9c94ce27"
+  },
+  "CANDIDATE_2/review/unit-5/UNIT_5_REVIEW_WORKSHEET.tsv": {
+    "bytes": 251799,
+    "sha256": "666db5d3cf92123357451808e786967e2c8c15441e062c92424c888f06d11954"
+  },
+  "CANDIDATE_2/review/unit-6/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "cef310cb839818314e754c87aae7f9251b8e2402f94df7b6887ad62b96458b96"
+  },
+  "CANDIDATE_2/review/unit-6/UNIT_6_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 55310,
+    "sha256": "d343f931a24e966cb94e8ecc6aaa4b8ef41685c92b7d413cda9f41fdc93c2432"
+  },
+  "CANDIDATE_2/review/unit-6/UNIT_6_REVIEW_MANIFEST.json": {
+    "bytes": 205653,
+    "sha256": "24e9bfb93818e7e81e037811c2f18eb547c9bacf611120049195b84068306c48"
+  },
+  "CANDIDATE_2/review/unit-6/UNIT_6_REVIEW_PACKET.md": {
+    "bytes": 681641,
+    "sha256": "a6aaf19691cadbae8d1f6498ffa851062e973ba6b1333b89a7bf0247b476a682"
+  },
+  "CANDIDATE_2/review/unit-6/UNIT_6_REVIEW_WORKSHEET.tsv": {
+    "bytes": 601933,
+    "sha256": "c600595b5e49bc7dc06ba84b556abd693c8ed00a93a74a960219a2076f3db25e"
+  },
+  "CANDIDATE_2/review/unit-7/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "e03965bde43142d03df88584de79fd4bd30bca60e620ad92177f4b5a9602cdba"
+  },
+  "CANDIDATE_2/review/unit-7/UNIT_7_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 80914,
+    "sha256": "9bd3ff968f266bf3807c12d99f6059ecd17357a034a034fd6ce32f710fbb57b6"
+  },
+  "CANDIDATE_2/review/unit-7/UNIT_7_REVIEW_MANIFEST.json": {
+    "bytes": 329093,
+    "sha256": "e5f57fedf1e2030d84fb14ddf1e593b4c864954cec18521bad670bcfdd6718e9"
+  },
+  "CANDIDATE_2/review/unit-7/UNIT_7_REVIEW_PACKET.md": {
+    "bytes": 1272787,
+    "sha256": "06caded4d3bab6e900b4239b3fbba716e4f8671ee92611dbf131d7e9d3c63290"
+  },
+  "CANDIDATE_2/review/unit-7/UNIT_7_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1151424,
+    "sha256": "41ca4f407d1f9c57ffb52c815d9d6a319235323eef8222a8fece2df2952cf9c5"
+  },
+  "CANDIDATE_2/review/unit-8/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "775820b110274de253c7ec9a35e6a1b7731f89006cd27e3b5a99588637ec81c6"
+  },
+  "CANDIDATE_2/review/unit-8/UNIT_8_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 42232,
+    "sha256": "862366fd94e52a4c04b0910a4a0d7948f5eac6fe835e2b2eb5a42bccc917ef7a"
+  },
+  "CANDIDATE_2/review/unit-8/UNIT_8_REVIEW_MANIFEST.json": {
+    "bytes": 214910,
+    "sha256": "2698cedaa59a8264c885c43d5465c1a233ad119230e9bcd3b6c8e2c4225bc84e"
+  },
+  "CANDIDATE_2/review/unit-8/UNIT_8_REVIEW_PACKET.md": {
+    "bytes": 801401,
+    "sha256": "8c43bd709321dc52c5442668d6cd212f356791019a71f7b127a0ee6868992ff0"
+  },
+  "CANDIDATE_2/review/unit-8/UNIT_8_REVIEW_WORKSHEET.tsv": {
+    "bytes": 719249,
+    "sha256": "13d9e83f1e1c3c4130b8b94b8e6c4ee88913085adaef460818998cf8c6792956"
+  },
+  "CANDIDATE_2/review/unit-9/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "e6156a1ebeec098a024f57fddc9286485bb2ca76a64ac58092cb30057d3872b5"
+  },
+  "CANDIDATE_2/review/unit-9/UNIT_9_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 61417,
+    "sha256": "07b6af6bed2296258cc5b59c957636a7c58a36fb2afdd1f5640183ebb4d4c186"
+  },
+  "CANDIDATE_2/review/unit-9/UNIT_9_REVIEW_MANIFEST.json": {
+    "bytes": 346986,
+    "sha256": "53f0ab945dd9b03222caa10666a544c5a25a51dcc0f6016833b98f70e29567ad"
+  },
+  "CANDIDATE_2/review/unit-9/UNIT_9_REVIEW_PACKET.md": {
+    "bytes": 1308044,
+    "sha256": "8901dba99a96823cb2c345b772535df6d3836be00f2ab21ad5f0aac5bd58029c"
+  },
+  "CANDIDATE_2/review/unit-9/UNIT_9_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1178813,
+    "sha256": "de2cd562c8e69d56a31664ecebf7091d687838cec46224c79dd4a42500d6ff35"
+  },
+  "PROPOSAL/audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md": {
+    "bytes": 55125,
+    "sha256": "5323e3b88f1f4030a7309141ca18a8b1bb406475005364cc921074633d1710d8"
+  },
+  "PROPOSAL/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.json": {
+    "bytes": 70438,
+    "sha256": "b793a0c916d70b050e401fea7cc294d55cf0ef9cacbfe8a546f8f3715c497c18"
+  },
+  "PROPOSAL/audit/curriculum-readiness/V2_CURRICULUM_READINESS_RECONCILIATION.md": {
+    "bytes": 45377,
+    "sha256": "c0e16ce5290213ba7599244322434602bc43d116443322567228fdd960b59d1e"
+  },
+  "PROPOSAL/audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json": {
+    "bytes": 6135,
+    "sha256": "1230a3c3622d750fb3e4354fd3429bef76a6936c613f496c77fe179297e82a8f"
+  },
+  "PROPOSAL/release/acceptance/candidate.json": {
+    "bytes": 3659,
+    "sha256": "fdf8b3a96876cd98dfd7bbd9b2f63f411297bbe466be5c1515adbd0ecea93228"
+  },
+  "PROPOSAL/review/unit-1/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "1da24112b7aeb6baa1fa303aa0ad4ced8e74168769fcebeba755496b67974f3e"
+  },
+  "PROPOSAL/review/unit-1/UNIT_1_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 80892,
+    "sha256": "23d1994d1b86ef5413169cdb15327d043870dc6cf6ec104c5f58f581248bc2df"
+  },
+  "PROPOSAL/review/unit-1/UNIT_1_REVIEW_MANIFEST.json": {
+    "bytes": 75593,
+    "sha256": "0c1449ed900ffb10e8ce04e46dc293e77f1659fce603ffab18d9c12054c726a2"
+  },
+  "PROPOSAL/review/unit-1/UNIT_1_REVIEW_PACKET.md": {
+    "bytes": 117305,
+    "sha256": "9122b6ec592e9d13507de61b190d8da1f8fa16847603254d7e6ffd89b0f101c0"
+  },
+  "PROPOSAL/review/unit-1/UNIT_1_REVIEW_WORKSHEET.tsv": {
+    "bytes": 83187,
+    "sha256": "c066a91c34d2afb7b46b4b9e50cb03877a782737d2649aae8fe7212098917a77"
+  },
+  "PROPOSAL/review/unit-10/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "6a3464e6ad83761c51949bf28f48e33190b2da88668b6379f96cf79757ce23ac"
+  },
+  "PROPOSAL/review/unit-10/UNIT_10_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 49221,
+    "sha256": "42902401fd9475180b2aba9e19734dfac02f202037dedef8a62d8e8d92755713"
+  },
+  "PROPOSAL/review/unit-10/UNIT_10_REVIEW_MANIFEST.json": {
+    "bytes": 240220,
+    "sha256": "8a19260451085c8c9ef760cabde89259d2732c753d79a4fd9f52fdd49f91b775"
+  },
+  "PROPOSAL/review/unit-10/UNIT_10_REVIEW_PACKET.md": {
+    "bytes": 821847,
+    "sha256": "595d2a49ed68eabc1f2bb8c47b0e2456daec521373ea6827cdd778d1e4496f5a"
+  },
+  "PROPOSAL/review/unit-10/UNIT_10_REVIEW_WORKSHEET.tsv": {
+    "bytes": 729946,
+    "sha256": "a07bdb9daef77de32ac864f56b386ba19c20eba12c1474ff83e3964e280b2a96"
+  },
+  "PROPOSAL/review/unit-11/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "b57598e154e40b972b7215245827581380aa4ab0e8cd9e99a81a2cf0655790a5"
+  },
+  "PROPOSAL/review/unit-11/UNIT_11_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 37568,
+    "sha256": "5edfba145d77e3817fdfdf3004293ece2c6723be77d5795f9d24b68fcfe4d588"
+  },
+  "PROPOSAL/review/unit-11/UNIT_11_REVIEW_MANIFEST.json": {
+    "bytes": 112813,
+    "sha256": "5b3e6e60cd8ec76ae54981c00d27203d3ebf20ed28bc647b07fe24b3c5dc28a6"
+  },
+  "PROPOSAL/review/unit-11/UNIT_11_REVIEW_PACKET.md": {
+    "bytes": 325238,
+    "sha256": "9cee483dbb4edb8b867684467c1f40d1ad1631b350861206475dc0ae0069b626"
+  },
+  "PROPOSAL/review/unit-11/UNIT_11_REVIEW_WORKSHEET.tsv": {
+    "bytes": 279136,
+    "sha256": "db4bb7885c1baa593b7ed6fe0bad3e6ab912f3eb4498805a7949ec616b67bf69"
+  },
+  "PROPOSAL/review/unit-12/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "9dad4ef57167d5717ba14a87efdcd9889e2e9607cedb8fe3f4b90b650a7ec1f7"
+  },
+  "PROPOSAL/review/unit-12/UNIT_12_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 51571,
+    "sha256": "cedf4e141ca5205fd30ac6faae77c9606bbf4d1132effd36ea8bd3709879f164"
+  },
+  "PROPOSAL/review/unit-12/UNIT_12_REVIEW_MANIFEST.json": {
+    "bytes": 156961,
+    "sha256": "bdf0e7cae175cd4a5dd903c3b7b6357818efe7d528703633c5e03f5d13520bb9"
+  },
+  "PROPOSAL/review/unit-12/UNIT_12_REVIEW_PACKET.md": {
+    "bytes": 493659,
+    "sha256": "6a769555297a02e990f9236b77c07e09b9d57267ec58714f3f38c642c768705a"
+  },
+  "PROPOSAL/review/unit-12/UNIT_12_REVIEW_WORKSHEET.tsv": {
+    "bytes": 430841,
+    "sha256": "9cc1c0b01f998e519d9bccfbe80ffa7267c7f7b838a2808416a6dd3de79a0bb8"
+  },
+  "PROPOSAL/review/unit-13/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "34f32df2b44572195dd17b3dc6d0537643aa16bd4f19c8ca352c74e483d76db4"
+  },
+  "PROPOSAL/review/unit-13/UNIT_13_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 37974,
+    "sha256": "33e27144f8fdf4cdf27f0e612a03a2e57dac2245496ab919990eb2064c28506e"
+  },
+  "PROPOSAL/review/unit-13/UNIT_13_REVIEW_MANIFEST.json": {
+    "bytes": 127501,
+    "sha256": "c7cfddca11dae98e1f2c3a8ed17e64bd10d283debd8ed69adee8ca1049551580"
+  },
+  "PROPOSAL/review/unit-13/UNIT_13_REVIEW_PACKET.md": {
+    "bytes": 483416,
+    "sha256": "2ef9ebc12a36ed7fb849b864f4c798aba7da439f2387ec23085798bc05081e07"
+  },
+  "PROPOSAL/review/unit-13/UNIT_13_REVIEW_WORKSHEET.tsv": {
+    "bytes": 432829,
+    "sha256": "f5da9693ab71418da2aae6d2fce967cf1f8071ce4a1851f3fabe7c5318b80402"
+  },
+  "PROPOSAL/review/unit-14/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "ab44ab41b7784647b925466ecfe2217b112e2f2c19b6b92c56b9a8e0507f4f6d"
+  },
+  "PROPOSAL/review/unit-14/UNIT_14_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 31119,
+    "sha256": "6d83fb324b513b9f4a91d26d55e68a6fbe42721a7e07ec5ddeae761aae61d137"
+  },
+  "PROPOSAL/review/unit-14/UNIT_14_REVIEW_MANIFEST.json": {
+    "bytes": 71926,
+    "sha256": "10fc1105a1ecea841045e4590cb268dcd625da83162792dc77a7a84af27e5eed"
+  },
+  "PROPOSAL/review/unit-14/UNIT_14_REVIEW_PACKET.md": {
+    "bytes": 215840,
+    "sha256": "a19ace5a2c016db453cbf0f41e5adfaf0ab1db2f8be4d992520d68481078daf4"
+  },
+  "PROPOSAL/review/unit-14/UNIT_14_REVIEW_WORKSHEET.tsv": {
+    "bytes": 184772,
+    "sha256": "1426422bc73efc904e20cac2d006f31ae50ade4eb67a1568fec4331b8c416c5e"
+  },
+  "PROPOSAL/review/unit-15/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "9c9155a9c0274be0499d11f3b446fa21b671569ab85ca3622c41b9e85e46646b"
+  },
+  "PROPOSAL/review/unit-15/UNIT_15_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 31088,
+    "sha256": "1216032aaa5d3bc867ceac5777c1aec2da358c84b50df5bc196673c237e41b88"
+  },
+  "PROPOSAL/review/unit-15/UNIT_15_REVIEW_MANIFEST.json": {
+    "bytes": 84994,
+    "sha256": "801a0be2406dd655d03646d23d143a885812c582b8dfddced5c0af3493b2985e"
+  },
+  "PROPOSAL/review/unit-15/UNIT_15_REVIEW_PACKET.md": {
+    "bytes": 258241,
+    "sha256": "764e7c50e9756b527448a9e967f57a00ef569f2364aaa46d2f02913ed979e66d"
+  },
+  "PROPOSAL/review/unit-15/UNIT_15_REVIEW_WORKSHEET.tsv": {
+    "bytes": 222352,
+    "sha256": "90525cec5d0bf15c7549a3c5295c30524affe1db00e6a2cd069533fdd0498206"
+  },
+  "PROPOSAL/review/unit-16/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "2c8692a2f3aa449a68b231f7f1af0ddc9665c2a0b4eb23506c0fb1b8a4fd7de3"
+  },
+  "PROPOSAL/review/unit-16/UNIT_16_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 52805,
+    "sha256": "f425118a6fdf2b9edbb87d84346ffb46d8db1ef0a65f1b11ecf0df1070cfd6e7"
+  },
+  "PROPOSAL/review/unit-16/UNIT_16_REVIEW_MANIFEST.json": {
+    "bytes": 223931,
+    "sha256": "651bbb9eac1f1b1da1a2ff08aa7d64f90fc877058ce2e66cd6e1647a4834b4cc"
+  },
+  "PROPOSAL/review/unit-16/UNIT_16_REVIEW_PACKET.md": {
+    "bytes": 779649,
+    "sha256": "2f44a6a53d27ab2a8c5568438b08ce695d95e458a1717df24d491ff163262690"
+  },
+  "PROPOSAL/review/unit-16/UNIT_16_REVIEW_WORKSHEET.tsv": {
+    "bytes": 693581,
+    "sha256": "8f992d341b59aed852935d5beec6f61b25821f30612ef795741a1c8e00961dc9"
+  },
+  "PROPOSAL/review/unit-17/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "46e4ad448cf101a5c93177e2b0bb6edc418096a8ca7248fcc7490dcbee1d6956"
+  },
+  "PROPOSAL/review/unit-17/UNIT_17_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 93976,
+    "sha256": "b8cc6f37b19de975c643e12be94a4d191b28949904c19631263bdecb434a1b03"
+  },
+  "PROPOSAL/review/unit-17/UNIT_17_REVIEW_MANIFEST.json": {
+    "bytes": 398747,
+    "sha256": "f57967c4349518e3d0dd7f7b253ac4ad84aeea183c6c7607749a230fe3a9d6cb"
+  },
+  "PROPOSAL/review/unit-17/UNIT_17_REVIEW_PACKET.md": {
+    "bytes": 1799239,
+    "sha256": "d779e4a8db6f413e2119058cdf85e3ea04b4b5a50da0f78566b33efaaf99987d"
+  },
+  "PROPOSAL/review/unit-17/UNIT_17_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1657345,
+    "sha256": "892d4d3337937af5383abaae2fcfb0eb2cc41cb9e78aed92a4f0b4d8d0d2bd64"
+  },
+  "PROPOSAL/review/unit-18/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "a81618fdeb4ffdc5344b0d24f042be01c7eb5b3af89127577299467175ee329e"
+  },
+  "PROPOSAL/review/unit-18/UNIT_18_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 24985,
+    "sha256": "8524158806cddabd55443acb8209a81f17a29bc2ac48af0f75d724f02a5795f6"
+  },
+  "PROPOSAL/review/unit-18/UNIT_18_REVIEW_MANIFEST.json": {
+    "bytes": 81797,
+    "sha256": "d9514cc7566708a6e3c80144d407c83ae0d09a7cdb713eaf1e8e00406bcc6735"
+  },
+  "PROPOSAL/review/unit-18/UNIT_18_REVIEW_PACKET.md": {
+    "bytes": 310196,
+    "sha256": "bf9ff22a218a613f71f089a3c5c3f4d8e90b1a399183ccb9af0e473fa6ddb0a1"
+  },
+  "PROPOSAL/review/unit-18/UNIT_18_REVIEW_WORKSHEET.tsv": {
+    "bytes": 277303,
+    "sha256": "2fbea71c77ff03a5d417d80bd4a03a17022a7a59702cedc1c3b8caf28204d3f1"
+  },
+  "PROPOSAL/review/unit-19/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "2426308790c72208fdbbdf50cf37c72033cc9ee4dec277594faa5391011dc4be"
+  },
+  "PROPOSAL/review/unit-19/UNIT_19_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 38621,
+    "sha256": "fa4b1252ed2b3cc29ea871907827e95cb553a4571a5dcb4f34552720e22a4048"
+  },
+  "PROPOSAL/review/unit-19/UNIT_19_REVIEW_MANIFEST.json": {
+    "bytes": 143417,
+    "sha256": "e86c48d9fad334a9d5fcbbf3c2f930071787b638a1e42cc866646270b18e1aaf"
+  },
+  "PROPOSAL/review/unit-19/UNIT_19_REVIEW_PACKET.md": {
+    "bytes": 511046,
+    "sha256": "4f8b8642007b7c7bf3ca5ee19dac6ae9f3c46e070997245b0d0690d7559762e0"
+  },
+  "PROPOSAL/review/unit-19/UNIT_19_REVIEW_WORKSHEET.tsv": {
+    "bytes": 455686,
+    "sha256": "003dd18b939f8d48cd5a9547d4bfab9ca60da344d51c4516565742614a47bcc0"
+  },
+  "PROPOSAL/review/unit-2/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "db2cfe5d5d56c93838dd0c2ddf6aa9e3653970d06e21d8bed4caf576d9b47ed4"
+  },
+  "PROPOSAL/review/unit-2/UNIT_2_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 32671,
+    "sha256": "6e65e97fe9bcfdb51caa4736b71e1f0ef26d99eb0f9f35dc96b1909d473f535f"
+  },
+  "PROPOSAL/review/unit-2/UNIT_2_REVIEW_MANIFEST.json": {
+    "bytes": 20189,
+    "sha256": "726ac1d7f9a8f4a19ea1adc0e54333dcb586561eca4a6f0dacc176035881e28f"
+  },
+  "PROPOSAL/review/unit-2/UNIT_2_REVIEW_PACKET.md": {
+    "bytes": 38200,
+    "sha256": "edb60d8886369436bfb6065575049b427a0b669c71e066de3e2dc6a9c4add8a9"
+  },
+  "PROPOSAL/review/unit-2/UNIT_2_REVIEW_WORKSHEET.tsv": {
+    "bytes": 26791,
+    "sha256": "ec92922bee2ff2af36d1556566da8d58e9ae89278eab82fa0c4da186883b03bf"
+  },
+  "PROPOSAL/review/unit-20/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "c2abf415bdc2a0022bb299197a8a0b11d37b0638a019ac4e88df9ae5f595214c"
+  },
+  "PROPOSAL/review/unit-20/UNIT_20_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 18592,
+    "sha256": "0c83cad3ce8c2987e6b76b0c04b0c8aa10b0510642e15b424c8fdf512b5596dc"
+  },
+  "PROPOSAL/review/unit-20/UNIT_20_REVIEW_MANIFEST.json": {
+    "bytes": 149056,
+    "sha256": "c50470cc82e2f88ce5d60ca7b261122ef5a2d0eec8cdc80dcb7e924e8687548f"
+  },
+  "PROPOSAL/review/unit-20/UNIT_20_REVIEW_PACKET.md": {
+    "bytes": 1229675,
+    "sha256": "c95d7e9b9948fecafcf20de4dba0a9d3f8b11e1c0a4d18f9440fb8b4dd4ec720"
+  },
+  "PROPOSAL/review/unit-20/UNIT_20_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1178869,
+    "sha256": "41395c7bba0046a28e64a183a97736f44ecaa8167b2b3b0a0756c44ebf3f46b7"
+  },
+  "PROPOSAL/review/unit-21/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "abe8fba371725a5cf9fed8e6438d86f0d4f5e6423b78e7aeb9bd67a722429a0e"
+  },
+  "PROPOSAL/review/unit-21/UNIT_21_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 30644,
+    "sha256": "fa7fcd9792169bd02b3c543a8e906ebcad7450846ad51ae7dcdf0b09b26b3a0e"
+  },
+  "PROPOSAL/review/unit-21/UNIT_21_REVIEW_MANIFEST.json": {
+    "bytes": 139686,
+    "sha256": "0d91742dfb234697ade5dad5cb48061ef099280d30b4df98759b0476c2dc0ea5"
+  },
+  "PROPOSAL/review/unit-21/UNIT_21_REVIEW_PACKET.md": {
+    "bytes": 560986,
+    "sha256": "1fc553dc8fa3ec97ead746f5b8f49d3c466f800bed8db1913f0d9e0e7041dc83"
+  },
+  "PROPOSAL/review/unit-21/UNIT_21_REVIEW_WORKSHEET.tsv": {
+    "bytes": 509218,
+    "sha256": "aea8389d2b721ccde14020aa9b47caed635822357b15d327c92f78e5d4c8437a"
+  },
+  "PROPOSAL/review/unit-22/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "d546266bab0071ebcb1e068c38536cffedcd8bc190a18e1cb323f081741e5a21"
+  },
+  "PROPOSAL/review/unit-22/UNIT_22_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 51140,
+    "sha256": "80e5391332cdefcec1b29db7252abd75ad0c1e629a58a184cf89b1b6a5986836"
+  },
+  "PROPOSAL/review/unit-22/UNIT_22_REVIEW_MANIFEST.json": {
+    "bytes": 182349,
+    "sha256": "b7a1c2574327fd02f2d8c2435ab35239454b7804178ae38eac13a8466e80e458"
+  },
+  "PROPOSAL/review/unit-22/UNIT_22_REVIEW_PACKET.md": {
+    "bytes": 664976,
+    "sha256": "5932170650ef729b0ea83a920ac8991428e3b5ba869611e9c23b0e88377a1989"
+  },
+  "PROPOSAL/review/unit-22/UNIT_22_REVIEW_WORKSHEET.tsv": {
+    "bytes": 596918,
+    "sha256": "a5f8bd31af9228b5db0bfada7c5f06aa2bf92b2907bdd63b6f26f2ee414c5166"
+  },
+  "PROPOSAL/review/unit-23/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "ae7f7d7d575f317f0ad04954eda32fa5abd4ae514e2de7eb86b497c2cc41a740"
+  },
+  "PROPOSAL/review/unit-23/UNIT_23_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 50173,
+    "sha256": "2b1e560a73c864beed902d7e7f1a567be630a5e89c01e1397adc31b21e879595"
+  },
+  "PROPOSAL/review/unit-23/UNIT_23_REVIEW_MANIFEST.json": {
+    "bytes": 123821,
+    "sha256": "f34516d5a88ed95dd8b68e7f25567e6d96565c16479de522f24faddd015b2f49"
+  },
+  "PROPOSAL/review/unit-23/UNIT_23_REVIEW_PACKET.md": {
+    "bytes": 440710,
+    "sha256": "1d6756c15431a63bbef8421c42cac5a10c7b036abef7d952e26d99c27cde47d2"
+  },
+  "PROPOSAL/review/unit-23/UNIT_23_REVIEW_WORKSHEET.tsv": {
+    "bytes": 392689,
+    "sha256": "82c6830a61a078493bce8ebc4b059b17b650c0b1f9f0469305cd24bdedc26482"
+  },
+  "PROPOSAL/review/unit-24/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "e6632b9a3cd29d9716d6c266e4e45200c34cf4560ea507ec22d9a4129aed6fcf"
+  },
+  "PROPOSAL/review/unit-24/UNIT_24_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 60095,
+    "sha256": "2a6aee7162da15890d66983f8a129725b7f9afb9919635043c2af10c2c43c0ca"
+  },
+  "PROPOSAL/review/unit-24/UNIT_24_REVIEW_MANIFEST.json": {
+    "bytes": 239649,
+    "sha256": "59ba580f9fc4d2d34d1c7689d3674043536d71a95edcbde82280553d95af4000"
+  },
+  "PROPOSAL/review/unit-24/UNIT_24_REVIEW_PACKET.md": {
+    "bytes": 972923,
+    "sha256": "12bf8d8cad3a63f32fbf1ed605af080d749d47f917ff0f606157c33093762518"
+  },
+  "PROPOSAL/review/unit-24/UNIT_24_REVIEW_WORKSHEET.tsv": {
+    "bytes": 884714,
+    "sha256": "0796f779830998e9d2ffe525ce2e7ed620d0123363a29efc690f4c615109b26b"
+  },
+  "PROPOSAL/review/unit-25/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "5083811c4bd997fe556df335bc7d33473206e9cbd545fd8abdbf645b702fff55"
+  },
+  "PROPOSAL/review/unit-25/UNIT_25_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 56804,
+    "sha256": "f62c3f5ea24fb697f956464cee0db4a4536ee0b179e8228cec0a7827365b5bfa"
+  },
+  "PROPOSAL/review/unit-25/UNIT_25_REVIEW_MANIFEST.json": {
+    "bytes": 228329,
+    "sha256": "46411fdbadfe88d101c5162d6b4c3fbbb1d7a04c24585798e8b7a74af66b77db"
+  },
+  "PROPOSAL/review/unit-25/UNIT_25_REVIEW_PACKET.md": {
+    "bytes": 886181,
+    "sha256": "d08b17a6b1193cbfcedbbe45b6d53e45f8ea1772058d8f6eb964ad82c1b889b8"
+  },
+  "PROPOSAL/review/unit-25/UNIT_25_REVIEW_WORKSHEET.tsv": {
+    "bytes": 800232,
+    "sha256": "31826b132a4c8d7c445ecd46326d7157417f4a4ace054d8f0557fd9e76ffe4bf"
+  },
+  "PROPOSAL/review/unit-26/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "217b74394218a2aaaf156c97bd61729105e1b35a414c7f098a4644f871c15ffe"
+  },
+  "PROPOSAL/review/unit-26/UNIT_26_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 59121,
+    "sha256": "6937c607a250775060f180d429608d0acceb6c1fef86e1da721bc8f00a475880"
+  },
+  "PROPOSAL/review/unit-26/UNIT_26_REVIEW_MANIFEST.json": {
+    "bytes": 292534,
+    "sha256": "09bce0048cd12838d576aff5e9eb41258a0fa7d3e88a24387d03476eb4bd8b09"
+  },
+  "PROPOSAL/review/unit-26/UNIT_26_REVIEW_PACKET.md": {
+    "bytes": 5477909,
+    "sha256": "ad2de2855bfb85cc081739020db388a711990bb7b694be399e48f1c6ed065b3b"
+  },
+  "PROPOSAL/review/unit-26/UNIT_26_REVIEW_WORKSHEET.tsv": {
+    "bytes": 5395497,
+    "sha256": "abff9ea4de5b1ca5a793531394bafe3e0916863ae127c6660c9c8f24f9679893"
+  },
+  "PROPOSAL/review/unit-27/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "111687695287c6f0593d355c516b7f8e5c0873ed1a40887f2c6dbeb8263b7b83"
+  },
+  "PROPOSAL/review/unit-27/UNIT_27_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 46066,
+    "sha256": "2744e591f961001dd8bb632bd3f0c5b250f1b2b3c8fcd1e95f236f7efc1bbd6b"
+  },
+  "PROPOSAL/review/unit-27/UNIT_27_REVIEW_MANIFEST.json": {
+    "bytes": 215258,
+    "sha256": "e9f4c4499f48a6b6c89baecc2e954e65bfebc03f094069fb066b9c4a62534c8e"
+  },
+  "PROPOSAL/review/unit-27/UNIT_27_REVIEW_PACKET.md": {
+    "bytes": 1216385,
+    "sha256": "2bdfdc984f13cc04953473555026f27c4111e511b494be39fcba514d0d81f523"
+  },
+  "PROPOSAL/review/unit-27/UNIT_27_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1140477,
+    "sha256": "8325a4b9ce320e6d80d18b8f240cb35adfe062764ef2c0a385feaa22b0875872"
+  },
+  "PROPOSAL/review/unit-28/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "c8e4b1b48cd4411fce00a623a93b563db5b03d23f477be1e2c68e0d003dab20a"
+  },
+  "PROPOSAL/review/unit-28/UNIT_28_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 31746,
+    "sha256": "75d83653181c71c854ec35f472e8e4035a014e587ef38c7e2aeeda9b5127dc17"
+  },
+  "PROPOSAL/review/unit-28/UNIT_28_REVIEW_MANIFEST.json": {
+    "bytes": 279413,
+    "sha256": "64678aa7d3ba77b02a4d0f016d832f8cff72369d07def40422e53b450deef05e"
+  },
+  "PROPOSAL/review/unit-28/UNIT_28_REVIEW_PACKET.md": {
+    "bytes": 2307158,
+    "sha256": "9291bf3e56e626b7ccb55e5d5cd7011caf8f55da64af10f306fdbfffb5b56b61"
+  },
+  "PROPOSAL/review/unit-28/UNIT_28_REVIEW_WORKSHEET.tsv": {
+    "bytes": 2213971,
+    "sha256": "c3e02cac1c67c262d7e0c33a91a2ad36335d582d948f0ea8877d53f5816ff8c0"
+  },
+  "PROPOSAL/review/unit-29/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "bd49dbbbe237cd3ed1b89ecfd5830fb87a9f33365236d6baf85eabdcbf123a23"
+  },
+  "PROPOSAL/review/unit-29/UNIT_29_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 59232,
+    "sha256": "b430b35245335fb0e80c3b2f1d419396fec01fd69b104d68f55320271e850057"
+  },
+  "PROPOSAL/review/unit-29/UNIT_29_REVIEW_MANIFEST.json": {
+    "bytes": 315986,
+    "sha256": "7ae8a5eede2ac927ed75b439c34da1d565b70252c74c5fc7cd7a6aa9eaa0cff1"
+  },
+  "PROPOSAL/review/unit-29/UNIT_29_REVIEW_PACKET.md": {
+    "bytes": 1527995,
+    "sha256": "74e6f8e2bfb05f3967858da6ed1ecbf4b0946d5b51c1e7c992edf448ba44737c"
+  },
+  "PROPOSAL/review/unit-29/UNIT_29_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1410240,
+    "sha256": "cdf5a311dc517bbe2aff91d35c4757588c826f161a37579dab5ec4cf3953d52c"
+  },
+  "PROPOSAL/review/unit-3/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "99a4f637ec2a412c0735e13731d76f572f6088c3a863214825db714b01871c0d"
+  },
+  "PROPOSAL/review/unit-3/UNIT_3_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 29911,
+    "sha256": "db09f801d5cc7bb4486c0824ba2bcdf8896cbe75479d09ade7c9f8e1449382a7"
+  },
+  "PROPOSAL/review/unit-3/UNIT_3_REVIEW_MANIFEST.json": {
+    "bytes": 101920,
+    "sha256": "c332577592447ffe8d3fe92f0ec8bcd638ee0de43a18f0c17ab87c433796420d"
+  },
+  "PROPOSAL/review/unit-3/UNIT_3_REVIEW_PACKET.md": {
+    "bytes": 231391,
+    "sha256": "1399c8133336b176ed69ff6f04983f2b141e487963146380c219ad1accb29efb"
+  },
+  "PROPOSAL/review/unit-3/UNIT_3_REVIEW_WORKSHEET.tsv": {
+    "bytes": 189180,
+    "sha256": "fdccefdfcfc08a278af824f63ffea282c546747b0b91842620926c879b5efbf6"
+  },
+  "PROPOSAL/review/unit-30/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6551,
+    "sha256": "20cb181e1d7fd2768f5d68450579240d0368a54f05c03c9c7c8471b497bfc809"
+  },
+  "PROPOSAL/review/unit-30/UNIT_30_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 62326,
+    "sha256": "6ff480b5eae41dafbc3d48d53ef878bdc6cd30dbf3bd2ccf02c62dc45b42d6ff"
+  },
+  "PROPOSAL/review/unit-30/UNIT_30_REVIEW_MANIFEST.json": {
+    "bytes": 249450,
+    "sha256": "98a1647ba358eb01383da427498072204ea24b346ad38090a7e517bc6a3ea7ca"
+  },
+  "PROPOSAL/review/unit-30/UNIT_30_REVIEW_PACKET.md": {
+    "bytes": 1067345,
+    "sha256": "8520110c61c6c5ea97ac5b18790986cd17d9892711133364874d414e3a3ca053"
+  },
+  "PROPOSAL/review/unit-30/UNIT_30_REVIEW_WORKSHEET.tsv": {
+    "bytes": 974485,
+    "sha256": "850999a843728869e6d0c0dd0c8284c5cb0f0caad4f1b34da3c653d585efead4"
+  },
+  "PROPOSAL/review/unit-4/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "175768784be49ed935e3a5d4b08c429f2c83b8be3307686cef7b576b5ecae46f"
+  },
+  "PROPOSAL/review/unit-4/UNIT_4_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 39773,
+    "sha256": "796dd710bddd49e72f1bd36cb12adbb94bac59b764a024184fb7f68510e5efa1"
+  },
+  "PROPOSAL/review/unit-4/UNIT_4_REVIEW_MANIFEST.json": {
+    "bytes": 173546,
+    "sha256": "f9629773c915bbe458d636af362b77862fb2ca93e7605dad5abe92785e644334"
+  },
+  "PROPOSAL/review/unit-4/UNIT_4_REVIEW_PACKET.md": {
+    "bytes": 594908,
+    "sha256": "6a05e2a7abd2b2f3ef3d62a4829ba9bacf932af1909b78dded3a5759ec4aa0e4"
+  },
+  "PROPOSAL/review/unit-4/UNIT_4_REVIEW_WORKSHEET.tsv": {
+    "bytes": 527243,
+    "sha256": "ea697350af71f9ad1f6d797cac73d57105ab53f13501b3ac8837b8196c9777a8"
+  },
+  "PROPOSAL/review/unit-5/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "4af5c2f7510e92772199ad493d6115391000d7720107e74f56bf63eeb855fa26"
+  },
+  "PROPOSAL/review/unit-5/UNIT_5_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 30053,
+    "sha256": "47912722116cf66ffeccc7dbe82c33393a0a084c9423b258ed35ea922ff711ee"
+  },
+  "PROPOSAL/review/unit-5/UNIT_5_REVIEW_MANIFEST.json": {
+    "bytes": 125646,
+    "sha256": "ec4b8a705a2ba672cd7548ba0ffdb449ca642bd4e2d2039bfe4ec3abca44e9c2"
+  },
+  "PROPOSAL/review/unit-5/UNIT_5_REVIEW_PACKET.md": {
+    "bytes": 302466,
+    "sha256": "adb153dfb661301c9d887308ccadf2cb0f367d7d6cbd631dfcaf86dc9c94ce27"
+  },
+  "PROPOSAL/review/unit-5/UNIT_5_REVIEW_WORKSHEET.tsv": {
+    "bytes": 251799,
+    "sha256": "666db5d3cf92123357451808e786967e2c8c15441e062c92424c888f06d11954"
+  },
+  "PROPOSAL/review/unit-6/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "cef310cb839818314e754c87aae7f9251b8e2402f94df7b6887ad62b96458b96"
+  },
+  "PROPOSAL/review/unit-6/UNIT_6_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 55310,
+    "sha256": "d343f931a24e966cb94e8ecc6aaa4b8ef41685c92b7d413cda9f41fdc93c2432"
+  },
+  "PROPOSAL/review/unit-6/UNIT_6_REVIEW_MANIFEST.json": {
+    "bytes": 205653,
+    "sha256": "24e9bfb93818e7e81e037811c2f18eb547c9bacf611120049195b84068306c48"
+  },
+  "PROPOSAL/review/unit-6/UNIT_6_REVIEW_PACKET.md": {
+    "bytes": 681641,
+    "sha256": "a6aaf19691cadbae8d1f6498ffa851062e973ba6b1333b89a7bf0247b476a682"
+  },
+  "PROPOSAL/review/unit-6/UNIT_6_REVIEW_WORKSHEET.tsv": {
+    "bytes": 601933,
+    "sha256": "c600595b5e49bc7dc06ba84b556abd693c8ed00a93a74a960219a2076f3db25e"
+  },
+  "PROPOSAL/review/unit-7/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "e03965bde43142d03df88584de79fd4bd30bca60e620ad92177f4b5a9602cdba"
+  },
+  "PROPOSAL/review/unit-7/UNIT_7_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 80914,
+    "sha256": "9bd3ff968f266bf3807c12d99f6059ecd17357a034a034fd6ce32f710fbb57b6"
+  },
+  "PROPOSAL/review/unit-7/UNIT_7_REVIEW_MANIFEST.json": {
+    "bytes": 329093,
+    "sha256": "e5f57fedf1e2030d84fb14ddf1e593b4c864954cec18521bad670bcfdd6718e9"
+  },
+  "PROPOSAL/review/unit-7/UNIT_7_REVIEW_PACKET.md": {
+    "bytes": 1272787,
+    "sha256": "06caded4d3bab6e900b4239b3fbba716e4f8671ee92611dbf131d7e9d3c63290"
+  },
+  "PROPOSAL/review/unit-7/UNIT_7_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1151424,
+    "sha256": "41ca4f407d1f9c57ffb52c815d9d6a319235323eef8222a8fece2df2952cf9c5"
+  },
+  "PROPOSAL/review/unit-8/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "775820b110274de253c7ec9a35e6a1b7731f89006cd27e3b5a99588637ec81c6"
+  },
+  "PROPOSAL/review/unit-8/UNIT_8_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 42232,
+    "sha256": "862366fd94e52a4c04b0910a4a0d7948f5eac6fe835e2b2eb5a42bccc917ef7a"
+  },
+  "PROPOSAL/review/unit-8/UNIT_8_REVIEW_MANIFEST.json": {
+    "bytes": 214910,
+    "sha256": "2698cedaa59a8264c885c43d5465c1a233ad119230e9bcd3b6c8e2c4225bc84e"
+  },
+  "PROPOSAL/review/unit-8/UNIT_8_REVIEW_PACKET.md": {
+    "bytes": 801401,
+    "sha256": "8c43bd709321dc52c5442668d6cd212f356791019a71f7b127a0ee6868992ff0"
+  },
+  "PROPOSAL/review/unit-8/UNIT_8_REVIEW_WORKSHEET.tsv": {
+    "bytes": 719249,
+    "sha256": "13d9e83f1e1c3c4130b8b94b8e6c4ee88913085adaef460818998cf8c6792956"
+  },
+  "PROPOSAL/review/unit-9/REVIEWER_INSTRUCTIONS.md": {
+    "bytes": 6545,
+    "sha256": "e6156a1ebeec098a024f57fddc9286485bb2ca76a64ac58092cb30057d3872b5"
+  },
+  "PROPOSAL/review/unit-9/UNIT_9_OWNED_EDITION_MAPPING_WORKSHEET.tsv": {
+    "bytes": 61417,
+    "sha256": "07b6af6bed2296258cc5b59c957636a7c58a36fb2afdd1f5640183ebb4d4c186"
+  },
+  "PROPOSAL/review/unit-9/UNIT_9_REVIEW_MANIFEST.json": {
+    "bytes": 346986,
+    "sha256": "53f0ab945dd9b03222caa10666a544c5a25a51dcc0f6016833b98f70e29567ad"
+  },
+  "PROPOSAL/review/unit-9/UNIT_9_REVIEW_PACKET.md": {
+    "bytes": 1308044,
+    "sha256": "8901dba99a96823cb2c345b772535df6d3836be00f2ab21ad5f0aac5bd58029c"
+  },
+  "PROPOSAL/review/unit-9/UNIT_9_REVIEW_WORKSHEET.tsv": {
+    "bytes": 1178813,
+    "sha256": "de2cd562c8e69d56a31664ecebf7091d687838cec46224c79dd4a42500d6ff35"
+  },
+  "TOOLING/CANDIDATE_1.log": {
+    "bytes": 1942,
+    "sha256": "b818f41b22c3418fe658d670d57b2c4b4358229de7841e60332f15a60d433610"
+  },
+  "TOOLING/CANDIDATE_2.log": {
+    "bytes": 1942,
+    "sha256": "b818f41b22c3418fe658d670d57b2c4b4358229de7841e60332f15a60d433610"
+  },
+  "TOOLING/COMPILE.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "TOOLING/COMPILE.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "TOOLING/COMPILED_INDEX_1.json": {
+    "bytes": 142799,
+    "sha256": "a6903875e6862c8df8c7085c04dc21fd046845ab7eb047a89a24da7d072201ed"
+  },
+  "TOOLING/COMPILED_INDEX_2.json": {
+    "bytes": 150482,
+    "sha256": "4617428e6f0a70b088d13c18ffdc73dee07f22d5fda6081b35f015cc6230ae20"
+  },
+  "TOOLING/COMPILED_INDEX_3.json": {
+    "bytes": 115,
+    "sha256": "3a876483c64dea4fa93b6d2465d713e2f333ef2a7fb0316bb6772c3aa0bee18a"
+  },
+  "TOOLING/COMPILE_CONTEXT.json": {
+    "bytes": 907,
+    "sha256": "5d0096c7523da0d408c840916525bbf8b2945a97f1aa541d8bd867317dbdf574"
+  },
+  "TOOLING/DIGEST.log": {
+    "bytes": 65,
+    "sha256": "1af75311b389eafc564c19506f62d6b75fc84d1720d5a259626271f2010ff2f1"
+  },
+  "TOOLING/DIGEST_COMPILE.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "TOOLING/Digest.class": {
+    "bytes": 653,
+    "sha256": "5559eb36c20d07edfa940b426b66019120c1ca5b0509cd2c49f34c36a59d4985"
+  },
+  "TOOLING/Digest.java": {
+    "bytes": 232,
+    "sha256": "28af8e00e5294ac479045d6e47bc9acbe7488ded90b9896fc2ff839a2c80394c"
+  },
+  "TOOLING/GENERATION_PREPARATION.json": {
+    "bytes": 7255,
+    "sha256": "d516db8a90100ee6798ed1147fe5a60315a98627b58d3b20ab9ad5ab2be695c1"
+  },
+  "TOOLING/GENERATION_RESULTS.json": {
+    "bytes": 5196,
+    "sha256": "6bc334b23f8427173f9d31f7fed91b7c274542819ad118b1b7ff619ce523523b"
+  },
+  "TOOLING/GeneratePendingEvidence.class": {
+    "bytes": 7901,
+    "sha256": "04842e45d0daec105efe5eaa0adeaa5636305dd791e4a37ae71468dff1e36903"
+  },
+  "TOOLING/GeneratePendingEvidence.java": {
+    "bytes": 3608,
+    "sha256": "e3869f1409d49956c9a4cc9c6c80ad51f10a91cc1a935291ba0ccbc357db909f"
+  },
+  "TOOLING/PROPOSAL_REVIEW.json": {
+    "bytes": 99238,
+    "sha256": "8c6ff0f64ae74088ec30a9ad131daa656e01f3ef91a905446e34bd1c7fe711c2"
+  },
+  "TOOLING/apply_proposal.py": {
+    "bytes": 8937,
+    "sha256": "a46a133b8546a91f57836f69f8b07a82c2376d976f390e6d1d08e53ea9e1b9d6"
+  },
+  "TOOLING/compile_tooling.py": {
+    "bytes": 1283,
+    "sha256": "ec60096ffa3a3b18025a807cec0c7c036fde10e9051a4bf1f4e143fa60d09c70"
+  },
+  "TOOLING/generate.py": {
+    "bytes": 1026,
+    "sha256": "860e4077b82de482169cf9096b1993a81db84830b1a511ffe09ddc939d2b77ec"
+  },
+  "TOOLING/prepare_generate.py": {
+    "bytes": 3702,
+    "sha256": "a2caa72365c961ab077ce2f93ca4e752ae4610f3d62bf0d3313dc5ebb1c52c51"
+  },
+  "TOOLING/prepare_tooling.py": {
+    "bytes": 11500,
+    "sha256": "00cd43ffe1377691ffa85d365c10a372917120248fd35f07e193021b1260e363"
+  },
+  "TOOLING/review_proposal.py": {
+    "bytes": 5764,
+    "sha256": "428b55e17bc09d76ebbcecfb97b671f80b5fac5121b46a92c5e7f85803ed1265"
+  }
+}
