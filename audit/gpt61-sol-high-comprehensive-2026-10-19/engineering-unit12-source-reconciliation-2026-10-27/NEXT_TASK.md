@@ -1,5 +1,5 @@
-# Unit12 broad runtime next
+# Next task after Unit12 broad regression
 
-Fresh broad discovery verified1458synthetic skips/253classes/zero runtime passes at38933d9127a8d252c789f28185b5dde6236f6da8. All1441prior IDs+17Unit12methods/no removals. Read BROAD_OWNERSHIP.md. Runtime prepared;inspect external unit12-broad-host-regression-2026-10-27 contexts/processes/completion/AUTO_RESULT or ERROR before launch/edit. Launch only one runtime with fixed six input trees and durable monitor/exclusive completion owner;preserve all actual outcomes in ATTEMPT_3 before edits. No broad runtime result claimed yet.
+Next large task: bounded Unit13 cumulative-review research using actual current source,authority requirements and admitted material. Inventory objective/teaching/practice/check/feedback/repair/source chains and genuine historical compatibility before proposing any new obligation. Preserve existing policies,saved versions,captures and assertions. Research is not qualified linguistic/rights/mapping/owner acceptance or automatic finding closure.
 
-One agent/existing PR64checkout;all48OPEN/auditINCOMPLETE/four exporters excluded/physicalLAST/noAPK/signing/merge/freeze/approval.
+Read BROAD_REPORT.md. One agent/existing checkout/DraftPR64. No active test job at this completed checkpoint. All48OPEN/auditINCOMPLETE/four exporters excluded/physicalLAST/noAPK/signing/merge/freeze/approval.

@@ -1,0 +1,26 @@
+{
+  "originalSource": "3434fb8391a6bb4bee91c312a13bd79523db7799",
+  "originalCounts": {
+    "reported": 1441,
+    "passed": 1438,
+    "failed": 2,
+    "errors": 0,
+    "skipped": 1
+  },
+  "broadSource": "44cb3e669d287d2f9848113f1722ab1224af9c37",
+  "rechecked": [
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "structuralMappingsMatchTheOwnedEditionObservations",
+      "originalOutcome": "FAILED",
+      "followupOutcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+      "method": "structuralMappingsAreDigestBoundAndStayUnsigned",
+      "originalOutcome": "FAILED",
+      "followupOutcome": "PASSED"
+    }
+  ],
+  "scopesNotSummed": true
+}
