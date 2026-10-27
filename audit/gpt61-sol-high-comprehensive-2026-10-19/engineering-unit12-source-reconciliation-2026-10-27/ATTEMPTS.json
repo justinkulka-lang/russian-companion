@@ -92,5 +92,40 @@
       "dev.russiancompanion.v2.V2RebuildTest"
     ],
     "exitCode": 1
+  },
+  {
+    "directory": "ATTEMPT_2",
+    "sourceCommit": "6959ab29b09cfef9918859b2d40991dd7042fae8",
+    "testCounts": {
+      "reported": 140,
+      "passed": 140,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "classes": 20,
+    "selectors": [
+      "dev.russiancompanion.v2.Unit11BindingConservationTest",
+      "dev.russiancompanion.v2.Unit11NounCompatibilityTest",
+      "dev.russiancompanion.v2.Unit12CumulativeReviewTest",
+      "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+      "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "dev.russiancompanion.v2.V2RebuildTest",
+      "dev.russiancompanion.v2.Units1115MappingGapTest",
+      "dev.russiancompanion.v2.Unit12GenderReviewBaselineTest",
+      "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+      "dev.russiancompanion.v2.Unit12GenderReviewUiTest",
+      "dev.russiancompanion.v2.Unit12BindingConservationTest",
+      "dev.russiancompanion.v2.Unit11NounReviewBaselineTest",
+      "dev.russiancompanion.v2.Unit11NounReviewUiTest",
+      "dev.russiancompanion.v2.Unit13CumulativeReviewTest",
+      "dev.russiancompanion.v2.Unit13WiderPolicyTest",
+      "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "dev.russiancompanion.v2.Unit11CumulativeReviewTest"
+    ],
+    "exitCode": 0
   }
 ]
