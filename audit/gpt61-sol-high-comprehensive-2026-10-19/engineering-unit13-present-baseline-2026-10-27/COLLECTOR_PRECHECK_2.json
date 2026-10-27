@@ -1,0 +1,11 @@
+{
+  "kind": "EVIDENCE_CHECKER_SCOPE_ERROR_NOT_APP_TEST_FAILURE",
+  "originalScriptSha256": "61693aa0f18232eb6688a5083133add561880f402bdef8b93864120f743c99be",
+  "originalFailingLine": "archives=[p for p in protected if p.endswith('.zip')];assert len(archives)==73",
+  "actualProtectedZipFiles": 85,
+  "declaredHistoricalArchiveScope": 73,
+  "additionalProtectedDiagnosticZipFiles": 12,
+  "change": "Use explicit 73-archive inventory, retain hashes for all838 protected files; no app/test or raw result change",
+  "newJUnitRuns": 0,
+  "newGradleTasks": 0
+}
