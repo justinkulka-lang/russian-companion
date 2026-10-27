@@ -32,7 +32,7 @@ while True:
   with (O/'RUN.log').open('rb') as log:
    log.seek(max(0,(O/'RUN.log').stat().st_size-2000));tail=log.read().decode(errors='replace').splitlines()[-3:]
  native=[dict(path=str(p),bytes=p.stat().st_size,mtime=p.stat().st_mtime) for root in [Path('/workspace/russian-companion'),Path('/workspace/russian-companion/app')] for pattern in ['hs_err_pid*.log','replay_pid*.log'] for p in root.glob(pattern) if p.stat().st_mtime>=started]
- status=dict(newNativeReports=native,utc=datetime.now(timezone.utc).isoformat(),partialEvents=dict(counts),completedEvents=sum(counts.values()),expectedMethods=461,activeMethods=list(active)[-4:],failureIdentities=failures,processes=processes,logTail=tail,completionExists=(W/'REGRESSION_COMPLETION.json').exists())
+ status=dict(newNativeReports=native,utc=datetime.now(timezone.utc).isoformat(),partialEvents=dict(counts),completedEvents=sum(counts.values()),expectedMethods=462,activeMethods=list(active)[-4:],failureIdentities=failures,processes=processes,logTail=tail,completionExists=(W/'REGRESSION_COMPLETION.json').exists())
  tmp=W/'DURABLE_MONITOR_STATUS.tmp';tmp.write_text(json.dumps(status,indent=2)+'\n');tmp.replace(W/'DURABLE_MONITOR_STATUS.json');print(json.dumps(status),flush=True)
  if native:(W/'MONITOR_ESCALATION.json').write_text(json.dumps(dict(reason='NEW_NATIVE_REPORT_REQUIRES_INVESTIGATION',reports=native,utc=status['utc']),indent=2))
  if status['completionExists']:

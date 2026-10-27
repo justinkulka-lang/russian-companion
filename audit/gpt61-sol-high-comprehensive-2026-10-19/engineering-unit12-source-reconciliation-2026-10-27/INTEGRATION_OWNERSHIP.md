@@ -1,3 +1,5 @@
+Current scope correction:462methods/79classes discovered as synthetic skips/zero runtime passes. Original461annotation estimate missed one @Test with intervening @Config;Gradleexit0/collectorcountcheckexit1 preserved in DISCOVERY_PRECHECK_1.zip/index/json. Actual runtime NOT_LAUNCHED. Fresh corrected discovery follows a clean evidence checkpoint;no app/test changes.
+
 # Unit12 affected integration: exclusive completion ownership
 
 Authentic binding application ce5d3cc66ca1e81dc0bff087b132adab75d20500 is verified:two153file JVM renders/all30packages each;95of155identity-only records,60worksheets exact,95prior versions historical. Actual coreca0fdaeca8de81ab6a5d4935fbcdcb068c4af913/canonical84b6fda72017ec2dfc2b4add6c0e82b1a1e9f40769773f18d50caee4cf7a2355. All29other source choices,old assertions/pins/73archives conserved. Kernel-reference note is pending,semantic/rights acceptance false. One digest-log staging precheck was retained/fixed;it invoked no Gradle/JUnit and is not a failed-test result.
