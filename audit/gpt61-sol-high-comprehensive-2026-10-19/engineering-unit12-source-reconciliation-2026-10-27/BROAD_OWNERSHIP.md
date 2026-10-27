@@ -1,3 +1,5 @@
+Current discovery: `38933d9127a8d252c789f28185b5dde6236f6da8`;1458synthetic skips/253classes/zero runtime passes,exit0. Every1441prior identity plus17Unit12methods retained,no removals. Runtime PREPARED_NOT_LAUNCHED here;inspect persisted external state before launch. Discovery/runtime retain their own commits/roots with identical six input trees across audit-only checkpoints.
+
 # Unit12 broad discovery/runtime ownership and recovery
 
 One agent and the existing PR64checkout. External workspace:`/workspace/artifacts/unit12-broad-host-regression-2026-10-27`. Inspect its phase contexts,LAUNCHER/process records,completion files,DURABLE_MONITOR_STATUS.json,AUTO_COMPLETION_RESULT.json or AUTO_COMPLETION_ERROR.json before launching,editing or collecting. Never duplicate live jobs or collection. An idle Gradle daemon is not an active test job.

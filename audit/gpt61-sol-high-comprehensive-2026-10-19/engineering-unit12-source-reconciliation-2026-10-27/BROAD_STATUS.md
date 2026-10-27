@@ -1,3 +1,7 @@
+# Unit12 broad discovery completed;runtime prepared
+
+Fresh discovery at `38933d9127a8d252c789f28185b5dde6236f6da8`:1458synthetic skips/253classes/zero runtime passes,exit0. All1441prior broad method identities retained plus17Unit12methods/fourclasses,zero removals. FreshXML/events/identities/root/sixinputs/commands/initializers/exits/ZIPCRC/SHA verified in BROAD_DISCOVERY. Discovery is not a runtime pass. Actual runtime remains PREPARED_NOT_LAUNCHED at this checkpoint;inspect external processes/contexts/completion/AUTO_RESULT or ERROR before launching or editing. BROAD_OWNERSHIP.md describes single-agent completion ownership.
+
 # Unit12 broad selected-host regression prepared
 
 The expected broad scope is1458methods/253classes:all1441identities from the actual Unit11 broad run at3434fb8391a6bb4bee91c312a13bd79523db7799,plus17Unit12methods/fourclasses already executed in the separate140-method follow-up. Zero removals expected. This is inventory until fresh discovery/runtime. No complete-suite/app/curriculum/device acceptance or independent finding closure is claimed.
