@@ -1,0 +1,22 @@
+{
+  "kind": "DIGEST_IDENTITY_LABEL_CORRECTION_NOT_APP_TEST_FAILURE",
+  "sourceCommit": "bd00e5082c9f31d2ae3b379dd6204dd3b28e4475",
+  "compiledAuthenticationCommit": "e602c8ff918206a5fd2afb296c606c31be767d4d",
+  "unchangedProductionTree": "aeeb035f6017bf70852fd7fb2b6aec42789eebed",
+  "repositorySourceDigest": "3c0acbb95297cf10f08da2bd8391463067eece22fec785158b5d2680d37dc2ba",
+  "repositoryFunction": "dev.russiancompanion.release.computeReleaseSourceDigest(File, emptyMap)",
+  "packContentReviewDigest": "15c6ae393767cb7ffc190882867bfad923c9e81b07d0f4285cf0a678f2489280",
+  "packFunction": "V2Validator.contentReviewDigest(pack)",
+  "unit13CurrentContentReviewDigest": "ae2d0e08ccaf677889bc45bb7faa556445f181aee2620c2da350b89a596ff90e",
+  "unit13PriorV2ContentReviewDigest": "7102c47201a3d4973d781d315dbbb8ceccca3424174b9c90ad127bac037828df",
+  "priorRepositorySourceDigest": "84b6fda72017ec2dfc2b4add6c0e82b1a1e9f40769773f18d50caee4cf7a2355",
+  "priorPackContentReviewDigest": "7de1c93911dc80388fa10bd6d0d734fc64ace7e6cebbc5ad8e008d1c25c6366c",
+  "historicalMislabelledPacket": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-present-correction-2026-10-27/OFFICIAL_SOURCE_DIGEST.json",
+  "rawHistoricalField": "canonicalSourceDigest is actually the pack content review digest from explicitly recorded V2Validator call; do not reinterpret it as repository source digest",
+  "historicalPacketPreserved": true,
+  "core17TestOutcomesUnchanged": true,
+  "newJUnitOrGradleRuns": 0,
+  "renderedFiles": 0,
+  "bindingRecordsApplied": 0,
+  "correctionCaughtBeforeGeneration": true
+}

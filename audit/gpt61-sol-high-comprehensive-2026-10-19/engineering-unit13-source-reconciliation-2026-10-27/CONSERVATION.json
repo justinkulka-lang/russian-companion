@@ -1425,9 +1425,11 @@
     "review/unit-9/UNIT_9_REVIEW_WORKSHEET.tsv": "de2cd562c8e69d56a31664ecebf7091d687838cec46224c79dd4a42500d6ff35"
   },
   "oldSourceDigest": "84b6fda72017ec2dfc2b4add6c0e82b1a1e9f40769773f18d50caee4cf7a2355",
-  "newSourceDigest": "15c6ae393767cb7ffc190882867bfad923c9e81b07d0f4285cf0a678f2489280",
+  "newSourceDigest": "3c0acbb95297cf10f08da2bd8391463067eece22fec785158b5d2680d37dc2ba",
   "sourceBindingsStatus": "STALE_UNCHANGED",
   "all48Findings": "OPEN",
   "audit": "INCOMPLETE",
-  "physicalAcceptance": "OUTSTANDING_LAST"
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "packContentReviewDigest": "15c6ae393767cb7ffc190882867bfad923c9e81b07d0f4285cf0a678f2489280",
+  "priorCoreDigestLabelCorrection": "DIGEST_IDENTITY_CORRECTION.json"
 }

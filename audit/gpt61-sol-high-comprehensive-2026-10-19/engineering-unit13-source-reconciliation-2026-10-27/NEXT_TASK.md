@@ -1,3 +1,5 @@
 # Authenticate renders then affected verification
 
 Inspect external unit13-source-reconciliation-2026-10-27 contexts/processes/completions before launch/edit. Compile fresh tooling, prove the actual official digest matches verified bd00e508, perform two actual compiled renders validating30packages, compare output bytes and identity-only deltas, preserve historical records before application. No new source/semantic/rights approval. Then fresh affected discovery/runtime preserving every failure; reconcile historical comparisons only through exact prior scopes while keeping current controls current; fresh broad comes after affected verification. All48open/physicalLAST/four exporters excluded/no APK/signing/merge/freeze/releaseapproval.
+
+Digest identity correction: repository source digest3c0acbb95297cf10f08da2bd8391463067eece22fec785158b5d2680d37dc2ba; pack content-review digest15c6ae393767cb7ffc190882867bfad923c9e81b07d0f4285cf0a678f2489280. Prior core metadata mislabelled the latter as source digest; original packet/test outcomes preserved. See DIGEST_IDENTITY_CORRECTION.json. Generation stopped before output/application on that mismatch.
