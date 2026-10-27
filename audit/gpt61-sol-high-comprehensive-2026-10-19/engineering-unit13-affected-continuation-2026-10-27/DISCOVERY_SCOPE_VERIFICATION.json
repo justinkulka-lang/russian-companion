@@ -1,0 +1,15 @@
+{
+  "sourceCommit": "644c68da959aa7cf437dfe45441425a2e0e0e7b7",
+  "methods": 165,
+  "classes": 28,
+  "syntheticSkips": 165,
+  "runtimePasses": 0,
+  "exactUnreportedSet": true,
+  "includesTwoInterruptedMethods": true,
+  "originalPartialRunPreserved": true,
+  "noAlreadyReportedMethodRepeated": true,
+  "inputTreesMatchOriginal": true,
+  "notFullClassScope": true,
+  "completeSuite": false,
+  "countsNotSummed": true
+}
