@@ -1,0 +1,3 @@
+# Authenticate renders then affected verification
+
+Inspect external unit13-source-reconciliation-2026-10-27 contexts/processes/completions before launch/edit. Compile fresh tooling, prove the actual official digest matches verified bd00e508, perform two actual compiled renders validating30packages, compare output bytes and identity-only deltas, preserve historical records before application. No new source/semantic/rights approval. Then fresh affected discovery/runtime preserving every failure; reconcile historical comparisons only through exact prior scopes while keeping current controls current; fresh broad comes after affected verification. All48open/physicalLAST/four exporters excluded/no APK/signing/merge/freeze/releaseapproval.

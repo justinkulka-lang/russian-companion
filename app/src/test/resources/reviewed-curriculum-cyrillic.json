@@ -2054,7 +2054,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
-      "sha256": "e8f201603d8e66e1e908df8680258eadb2af88e7a9c2e28a5aaa16fa03617a2b",
+      "sha256": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -5280,6 +5280,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "Reuses existing lexical-gender and singular past-gender pools;versioned Unit12 registry, directed exact prior-declaration compatibility and English labels only. No new Cyrillic literal,item reference or language construction;no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "bd00e5082c9f31d2ae3b379dd6204dd3b28e4475",
+      "previousRecordedSha256": "e8f201603d8e66e1e908df8680258eadb2af88e7a9c2e28a5aaa16fa03617a2b",
+      "sha256": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Reuses existing supplied present/aspect-partner/past-gender pools; separate Unit13v3/schema15, exact directional v1/v2 and owner13 bridges, English labels only. No new Cyrillic literal,item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }

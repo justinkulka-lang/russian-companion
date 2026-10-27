@@ -19,7 +19,8 @@ internal object RecordedCurriculumConservationScope {
     const val beforeUnit10TeachingImplementation = "7efff9e18328c612de235236d98e834bb85cd1db"
     const val beforeUnit11PackImplementation = "85e7eaf21335a107d64b99a4f1969bab4f74670d"
     const val beforeUnit12PackImplementation = "c2d297e79fa677aa1375917cfbe052e4c0806633"
-    const val currentPackImplementation = "ca0fdaeca8de81ab6a5d4935fbcdcb068c4af913"
+    const val beforeUnit13PackImplementation = "ca0fdaeca8de81ab6a5d4935fbcdcb068c4af913"
+    const val currentPackImplementation = "bd00e5082c9f31d2ae3b379dd6204dd3b28e4475"
     private val sources = mutableMapOf<String, V2CurriculumPack>()
     private val currentUnitSources = mapOf(
         4 to "e6db0bdfe0bbb40edf190623e2123014946f305b",
@@ -28,7 +29,8 @@ internal object RecordedCurriculumConservationScope {
         9 to beforeUnit10PackImplementation,
         10 to beforeUnit11PackImplementation,
         11 to beforeUnit12PackImplementation,
-        12 to currentPackImplementation,
+        12 to beforeUnit13PackImplementation,
+        13 to currentPackImplementation,
         14 to "96242a17a87cc2ec0f5d7418cd98a9d3220a9e99",
         15 to "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04",
     )
@@ -36,10 +38,22 @@ internal object RecordedCurriculumConservationScope {
     fun source(root: File, commit: String): V2CurriculumPack =
         sources.getOrPut(root.canonicalPath + ":" + commit) { RecordedIntakeCorrectionScope.load(root, commit) }
 
+    /** Restore only Unit13's v2 declaration; every other field must match its actual producer. */
+    fun beforeUnit13PresentReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
+        assertCurrent(root, current)
+        val prior = current.copy(units = current.units.map { unit ->
+            if (unit.number == 13) unit.copy(advancement = unit.advancement!!.copy(
+                cumulativeReviewPolicyId = Unit13WiderCumulativeReviewPolicy.definition.id)) else unit
+        })
+        assertEquals("Only the Unit13 policy declaration may differ from its actual v2 asset", source(root, beforeUnit13PackImplementation), prior)
+        return prior
+    }
+
     /** Restore only Unit12's declaration; prove every other field against its genuine v1 producer. */
     fun beforeUnit12GenderReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
         assertCurrent(root, current)
-        val prior = current.copy(units = current.units.map { unit ->
+        val beforeUnit13 = beforeUnit13PresentReview(root, current)
+        val prior = beforeUnit13.copy(units = beforeUnit13.units.map { unit ->
             if (unit.number == 12) unit.copy(advancement = unit.advancement!!.copy(
                 cumulativeReviewPolicyId = Unit12CumulativeReviewPolicy.definition.id)) else unit
         })
@@ -166,6 +180,7 @@ internal object RecordedCurriculumConservationScope {
                     9 -> beforeUnit9NounBehaviorReview(root, current)
                     11 -> beforeUnit11NounReview(root, current)
                     12 -> beforeUnit12GenderReview(root, current)
+                    13 -> beforeUnit13PresentReview(root, current)
                     else -> current
                 }).let { current ->
                 assertEquals("unchanged current unit $number", digest, V2Validator.unitContentReviewDigest(current, number))
@@ -184,6 +199,11 @@ internal object RecordedCurriculumConservationScope {
                     // Keep the original v1 pin above and independently guard the actual v2 source/identity.
                     RecordedIntakeCorrectionScope.assertCurrentUnitMatches(current, source(root, currentUnitSources.getValue(number)), number)
                     assertNotEquals("Current Unit12 review declaration must retain its own identity", digest,
+                        V2Validator.unitContentReviewDigest(current, number))
+                }
+                if (number == 13) {
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(current, source(root, currentUnitSources.getValue(number)), number)
+                    assertNotEquals("Current Unit13 v3 must retain its own identity", digest,
                         V2Validator.unitContentReviewDigest(current, number))
                 }
             }
