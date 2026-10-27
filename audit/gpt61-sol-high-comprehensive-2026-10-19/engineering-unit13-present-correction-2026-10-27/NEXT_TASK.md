@@ -1,0 +1,5 @@
+# Verify the new core, then authenticate source bindings
+
+First inspect the external contexts/processes/completions under unit13-present-correction-2026-10-27. Run fresh discovery and selected actual17methods/3fullclasses only after clean commit. Preserve every actual outcome/full failure/XML/events/input tree. Check full baseline/prior272tests/39objects/74archives/155records conservation and compiled digest/active-pool inventory. No blanket stale comparisons or assertion changes.
+
+After verified core, the next large task is strict before13 whole-pack proof plus compiled-source identity tooling, two real independent renders/authentic155bindings/historical95versions/conservation, affected full classes then fresh broad selected-host verification. Preserve older Unit12/13 meanings, Unit12 direct old-pool reference, exactv1/v2 owner13 Unit14 bridges and current mutation controls. All48findings remain open/audit incomplete; no qualified rights/linguistic/mapping/owner acceptance inferred. Keep physical device acceptance LAST and no release actions.
