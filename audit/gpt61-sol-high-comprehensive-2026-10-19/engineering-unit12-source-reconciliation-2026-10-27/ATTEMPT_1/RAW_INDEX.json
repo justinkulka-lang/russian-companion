@@ -1,0 +1,942 @@
+{
+  "DISCOVERY/CONTEXT.json": {
+    "bytes": 13483,
+    "sha256": "d628d581525a85b8f1b778ce510990d9b390c695ef600f84721e5caba1faa0f4"
+  },
+  "DISCOVERY/EVENTS.jsonl": {
+    "bytes": 280512,
+    "sha256": "34559ae60f2fddf598598d9b6b1d3884ebfd9b32bc26622b297d7a4921ebfe26"
+  },
+  "DISCOVERY/RESULT.json": {
+    "bytes": 194752,
+    "sha256": "48c4f9083b56286e00d940ddec754ea20c0f144e56a3d05b351eef67e6ddd099"
+  },
+  "DISCOVERY/RESULTS.csv": {
+    "bytes": 90144,
+    "sha256": "cdedb62735848bd9845b1685e2e7334fda327c7af319f7877e6d5758c2deb014"
+  },
+  "DISCOVERY/RUN.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "DISCOVERY/RUN.log": {
+    "bytes": 64109,
+    "sha256": "77b94c20aa1dfa6c3d7c733aa37fa9ec313d1aa1b6926482476b29c28f6baa36"
+  },
+  "DISCOVERY/SHA256.json": {
+    "bytes": 13203,
+    "sha256": "36addbd9e1a98d96db4310c3782e5f6d0df6b76c4d55c279fa054c1ff3584274"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.acceptance.AcceptanceBoundaryTest.xml": {
+    "bytes": 1966,
+    "sha256": "c5d0b435d41661719a762cf5defbaa047ca5ad45f3a9aa2bb07e127f7c95dd9b"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.acceptance.DeviceAcceptancePackageTest.xml": {
+    "bytes": 536,
+    "sha256": "b400511333b82eef8fbeec30572764a022b4955cf7bfab62f2cef01683c7b6dc"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest.xml": {
+    "bytes": 1362,
+    "sha256": "6c3aa984b417738635a812e8b8bf8e24b31efe5e57ea4498bed34b7e63a88feb"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml": {
+    "bytes": 2767,
+    "sha256": "644b5581d99dcae826713df38336ec982fb3a724b20e891d6085f71409fc4ada"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml": {
+    "bytes": 1218,
+    "sha256": "3c7eb87e312ed6a6862b6f1ae704faff552710d0fbdbc2ef8f5aaa18565f2e2e"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.CompleteRuleCorrectionTest.xml": {
+    "bytes": 1443,
+    "sha256": "578a7624f98ddfb9e509154b03ed5c79c34ebb37b737cf87bfa3b757c7afdb78"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.CurrentPackHistoricalBackupTest.xml": {
+    "bytes": 923,
+    "sha256": "3ae228fa9aa157578541e960d04967632951eab0dbef8ed946127a7a38a16097"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.SavedReviewEntryLabelTest.xml": {
+    "bytes": 698,
+    "sha256": "0c5b5d8923074667d980e30e9809d5733c1d8bf2865ac30caa73e41d6d29846a"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit10BindingConservationTest.xml": {
+    "bytes": 738,
+    "sha256": "80f7734cdee0341c78976b188e0a8f75c3f285e49b7297b21650009d995ec539"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit10CumulativeReviewTest.xml": {
+    "bytes": 1765,
+    "sha256": "31b5578986485f09c362c936f219cd766706d2fd052bfc876eb847a2d4b645e1"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit10FeedbackCorrectionTest.xml": {
+    "bytes": 865,
+    "sha256": "0da499697b4403ed098ac9470e755944f96b99d0e583e4e590133a9540a3d8ba"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit10IndependentReinforcementTest.xml": {
+    "bytes": 1142,
+    "sha256": "258886e181933482af18f62627f440802a5f7930e25fdbae8cfcc651f964c8dc"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit10PresentCompatibilityTest.xml": {
+    "bytes": 1511,
+    "sha256": "ad7146172cf4a78985ff8038a86b0733ce2123db8a3b975943448c9b3dd6e231"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit10PresentReviewBaselineTest.xml": {
+    "bytes": 729,
+    "sha256": "7fada1d23afe529c13c6f436ba58e2709ffbd944d38dd5f97a476c7dc4d66a2a"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit10PresentReviewUiTest.xml": {
+    "bytes": 1289,
+    "sha256": "b13640a113d19a9209736dbd002db39f77aabef1fc4b88a296f2a1e49d65c1f0"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit10ReinforcementReviewTest.xml": {
+    "bytes": 1123,
+    "sha256": "475368a055e43a94ff8d1232571ea116bee0fc64b5025ef141a6bc29967a1da1"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit11AgreementRemediationTest.xml": {
+    "bytes": 1331,
+    "sha256": "06e3c3b33d0010e428f1a7ae52798729ba744c7fb4596860e0e87933536f3487"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit11BindingConservationTest.xml": {
+    "bytes": 734,
+    "sha256": "d8d2aec26bf26be0d6edfa9ab9470934ba6a306c975048d2fb24291da8a43ac3"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit11CumulativeReviewTest.xml": {
+    "bytes": 1764,
+    "sha256": "0ee192c6a39506f11ec9f28b400a97a9058a666cc085cca32b5563612e5b84c1"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit11FeedbackCorrectionTest.xml": {
+    "bytes": 867,
+    "sha256": "6eeb420abce1c43c08f975c6f66d40f7c3f278e42b3c1ef27e35d75d6e879b85"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit11NounCompatibilityTest.xml": {
+    "bytes": 1489,
+    "sha256": "f57949673936d5d3ba26434c1dd88120aa021f898923451128d863a0892c7696"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit11NounReviewBaselineTest.xml": {
+    "bytes": 727,
+    "sha256": "28c609e647a73ae9f1671b534c98f53e5c7a5f7405d7bdc0215fd13202b69a9d"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit11NounReviewUiTest.xml": {
+    "bytes": 1462,
+    "sha256": "393f4f7309e022ee3bf13797b259aff6fd09f020c503ac80c6eb2244c76616fb"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit12BindingConservationTest.xml": {
+    "bytes": 732,
+    "sha256": "5480fdf443e468a17e4cefafee7cf48538a1549abf7aa617b922438c6a2a87a7"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit12CumulativeReviewTest.xml": {
+    "bytes": 1762,
+    "sha256": "81ae0d663ede032bb9f940f4c4c480be63770e74f38a033f5355b2d2bde851ef"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit12FeedbackCorrectionTest.xml": {
+    "bytes": 1050,
+    "sha256": "c8d120da2d482ebcdf0f9758f0a94fa43a55f11fef57da1167b14a4cd7db463f"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit12GenderCompatibilityTest.xml": {
+    "bytes": 1707,
+    "sha256": "b8137f15eeaea9dbb90158cf40200bd0cc89f52d7d31f6f0371027fc6e6d9a4d"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit12GenderReviewBaselineTest.xml": {
+    "bytes": 728,
+    "sha256": "cf6a3828693cc27cf0acdc9387183f9094d11e044b7eefae4b19d936a649a56c"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit12GenderReviewUiTest.xml": {
+    "bytes": 1486,
+    "sha256": "63f3e4c18cd614c58bf47e555f0c562f011b8bb641fa92a9145b68978f22c18f"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit13ContextTeachingTest.xml": {
+    "bytes": 2219,
+    "sha256": "31e126e7f71956d582bf5b244764c934dfb0ac1c7817d24f42bb179a9c822f29"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit13CumulativeReviewTest.xml": {
+    "bytes": 1765,
+    "sha256": "75cbc74b91e90aabab5ea888b37685e943180077b384821abdaa7d4ed59f08d0"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit13FeedbackCorrectionTest.xml": {
+    "bytes": 1053,
+    "sha256": "2fa4d8a909e6170931b89ff6424d9ee11549be0cf7b228e07b7d6d21f900ee4d"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit13PastTeachingTest.xml": {
+    "bytes": 1851,
+    "sha256": "2daa50dadd1857b9b56bd803f207737ceb3084c7a36b56407264040f22db7cc2"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit13ReportedTransferTest.xml": {
+    "bytes": 2224,
+    "sha256": "96b31a67957a63b3a7d4ed17f190191f00f8c627f07bc63cb68ca28ccede2a4b"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit13WiderPolicyTest.xml": {
+    "bytes": 2068,
+    "sha256": "c0d0ae0915466f25270a104b2789727853b5e381fac662da633a09c6e61cc8d2"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit5GrammarReviewTest.xml": {
+    "bytes": 1041,
+    "sha256": "e2eb818f25641d4b7db72e81f07c73d310e18a3b1c0e3411c00068fb8428f5f8"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit5GrammarReviewUiTest.xml": {
+    "bytes": 707,
+    "sha256": "bfb1ccf33df35811df797ffd6dc8ee628e0d7c4ef31f75a0170a02be11a6bbd6"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit6PresentCompatibilityTest.xml": {
+    "bytes": 1320,
+    "sha256": "066fabe1ea8de26dae64b985e8fa3452a231dda47303248d3e2dbde00ca400d0"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit6PresentReviewTest.xml": {
+    "bytes": 705,
+    "sha256": "2ff826efa40cafb43bce16423828c355203c2fe6ef3ddacdd2575a6795bdc580"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit6PresentReviewUiTest.xml": {
+    "bytes": 1066,
+    "sha256": "3f693e319577ae9ebd77284fa07ee61ae2eb9c95d0283332dc790a3668887bba"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit6WiderPolicyTest.xml": {
+    "bytes": 1657,
+    "sha256": "480a414473aa29b1ac5a3d8873eae61bcac4735e8a9be2bfb048f6ac9f5867f1"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit7AgreementTeachingTest.xml": {
+    "bytes": 1902,
+    "sha256": "8059078fded3f7339c0fef03e1cace0b2c633ecee05b54b891b2994ef88952cf"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit7BindingConservationTest.xml": {
+    "bytes": 732,
+    "sha256": "db2f04b18df6fd914e9c32e798f6e0842b3484c7aca269ff1b20ef7bd448d5c4"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit7CumulativeReviewTest.xml": {
+    "bytes": 2103,
+    "sha256": "08e29371bfa78c26cb82e1294a3999e02e24cab5265a73a2d2618d8f7565a493"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit7CurrentPrerequisiteHistoryTest.xml": {
+    "bytes": 763,
+    "sha256": "f50ec0bf150a698c8ecb792608763fa448534a413b81288ea70fbd5dd904f23a"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit7GenderCompatibilityTest.xml": {
+    "bytes": 1295,
+    "sha256": "03636d33f229fc71708e86f99b1683f894e829e7a7460438daaf58a0875f528f"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit7GenderReviewBaselineTest.xml": {
+    "bytes": 723,
+    "sha256": "709ec57e5f6b663ea90a114f2eff8a223a6b70271589854b36c4e4b27ec72721"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit7GenderReviewUiTest.xml": {
+    "bytes": 1088,
+    "sha256": "0eaf5571aa066cb1bd4e9dd2d0d5d4f74bc6c9a52067fc85cccbe751ccc3be42"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest.xml": {
+    "bytes": 750,
+    "sha256": "725972b50179229361d5a1e60d7ab2e8dc1c8a7ca831fe4e1c096959f9dfa1a0"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit8AgreementTransferTest.xml": {
+    "bytes": 1989,
+    "sha256": "1b33411f3959d37803890bd320cfc101b228355b9816529b12f2ef159a8f01c7"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit8BindingConservationTest.xml": {
+    "bytes": 724,
+    "sha256": "f47d9cf30c8679cc0a63978eae9387f9d10592bbdc888bd14e9b16a8f37e84d0"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit8CumulativeReviewTest.xml": {
+    "bytes": 1758,
+    "sha256": "ff4d506f30df227eecc81f032b7eb506bbeb705dca497d54e4fdd3a2e2280a2d"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit8ExistenceHistoryTest.xml": {
+    "bytes": 1072,
+    "sha256": "bcf63a47840c4ee76597cc803946281199da34e48749a695aa8df5b1c8707fc6"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit8ExistenceSequenceTest.xml": {
+    "bytes": 708,
+    "sha256": "c09ef10b6e51d71663b1486fb7ba5616cb2943263193446f600681b77f1afe41"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit8ExistenceUiTest.xml": {
+    "bytes": 511,
+    "sha256": "7833f3d69e5fa5ab1939d69e94fa13277f4c92c3d34eca59da23b316c54af9ee"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit8PluralInstructionTest.xml": {
+    "bytes": 1484,
+    "sha256": "448dabf4c5c319bcefe98debaae1973516b93ea508fd60860be5ca0c11fa6aca"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit8PresentCompatibilityTest.xml": {
+    "bytes": 1304,
+    "sha256": "bc0043558537e2ed74d691b37f123ae655998ff753387d391886a1f0d4cb88c5"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit8PresentReviewBaselineTest.xml": {
+    "bytes": 732,
+    "sha256": "7377b541424c1c366a695e199bd625dd663f3a6362321f841b363adf2c84f7f1"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit8PresentReviewUiTest.xml": {
+    "bytes": 1285,
+    "sha256": "8f0b09336bcec54e5ab3aab81437a47c987aa26b1e643e0858342b73995bd85b"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit9BindingConservationTest.xml": {
+    "bytes": 728,
+    "sha256": "9d9f9dec3bd40aee468b504a87655375df0a29d49455696ae085b6a1ac7ed9aa"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit9CumulativeReviewTest.xml": {
+    "bytes": 1755,
+    "sha256": "8d30c2b8f3c11276a55f4969ac8c4f17b1b8eca0fd660c25ee541366fed74de5"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest.xml": {
+    "bytes": 1752,
+    "sha256": "c6b1631c5eab47f84077cd99418f5ddd4e09b70c1d38a671cd91a10f91dbb46a"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit9NounBehaviorReviewBaselineTest.xml": {
+    "bytes": 753,
+    "sha256": "78368cc371b74a8e3f127316891b31a84b4150503a67fbfd203bacb2ca54c858"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit9NounBehaviorReviewUiTest.xml": {
+    "bytes": 1314,
+    "sha256": "94ad3e2e838efa4fb134dfc9a0b2bfb859381d778d40987e7abec495b05abd6d"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit9WiderPolicyTest.xml": {
+    "bytes": 2049,
+    "sha256": "d335dd2dc07495d4b139d002d09eea9454a2d803f056d0b7ef8ada06e39bba43"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Units1115InstructionalValidityTest.xml": {
+    "bytes": 3996,
+    "sha256": "7ff77ceaa0c5d767f975aefe23d01fcf27f3c75d8045ce461fd9891b51be3189"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Units1115MappingGapTest.xml": {
+    "bytes": 1375,
+    "sha256": "116f725a2d1919c8eff837e442ad2dd1832b3904cc47e0501e13c90fa1063e33"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Units1620SourceIntakeTest.xml": {
+    "bytes": 1957,
+    "sha256": "5b84f6e0915cf39e6fde3703dc56a24b5b5e18ad2537bf1bc20d64372d50bccb"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Units2125SourceIntakeTest.xml": {
+    "bytes": 2292,
+    "sha256": "2251660e7364ce00548f854a68196dc7cdf08ca8a1bc360cfe80d3f0931cf4d6"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml": {
+    "bytes": 2056,
+    "sha256": "dc0291c9fd8acfa749d4644e74dc98cd6a8e8985c35bae57a3f71535f6341b35"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Units610InstructionalValidityTest.xml": {
+    "bytes": 4359,
+    "sha256": "5247f7d542abc73e659c55a21eeaa13ad002c2520ded4c54dc6be05575991947"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Units610SourceIntakeTest.xml": {
+    "bytes": 1338,
+    "sha256": "9487541553b4f8995654aee8b66652433fab4ff756414e9daa6d33cf012b0a54"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.V2RebuildTest.xml": {
+    "bytes": 4154,
+    "sha256": "465055ed21c1784f22fc40d742bc30549dea87377c02bc4cce52b032460ce56a"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml": {
+    "bytes": 2531,
+    "sha256": "157c67f47c0852efbdfb27d3b4d197bb43149797dbddbbbd9449b06b5d90d833"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml": {
+    "bytes": 515,
+    "sha256": "98eb9bd31742f685fa7d0a3b71f6c97044c3bb5bff9f98ca35456774c57f3ce1"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml": {
+    "bytes": 1674,
+    "sha256": "2d90f056082ef870b64b7d864fc51a44942a25d62fc85621ecb635bd22a3c53a"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest.xml": {
+    "bytes": 928,
+    "sha256": "e45d53d1563e95c8ca5822c000363cc1e50618cd2c02e19c39445f2376a32114"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.review.Unit1ReviewPackageTest.xml": {
+    "bytes": 1551,
+    "sha256": "0fd5a75e39f310f06cea2181770a9465026bfbf59f1cc6f8138301613b4120a7"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml": {
+    "bytes": 1585,
+    "sha256": "0552feaccb20af1d9379297d834fb1747c31afa2c468cfc75a19f12b970289d9"
+  },
+  "DISCOVERY/gc-474417.log": {
+    "bytes": 179,
+    "sha256": "806b486da13ccd94149c656252dfe319003efecac226809ec4c305b38c31866b"
+  },
+  "DISCOVERY/gc-474420.log": {
+    "bytes": 180,
+    "sha256": "b0b4186f9491b6c0c3a476009f3aa07b2d71d44f36bf3b8f08a3b622b2a800e1"
+  },
+  "DISCOVERY/gc-474485.log": {
+    "bytes": 179,
+    "sha256": "679689d4d992a9d3760572ee5a7b2103821c5cf5b224820954cbda9ebb10e4e7"
+  },
+  "DISCOVERY/gc-474496.log": {
+    "bytes": 179,
+    "sha256": "bd36d57929c2be6b0b5458516fc24fefe79a787426f750a7776da5d766b39a5f"
+  },
+  "DISCOVERY/gc-474550.log": {
+    "bytes": 179,
+    "sha256": "e9b23f03b0386d3ed6dc0d4038ae6a69f84f4eaecf99460802616a3d5df8eda8"
+  },
+  "DISCOVERY/gc-474569.log": {
+    "bytes": 179,
+    "sha256": "2a8c2ea64fb09695d0dc78017ee59cc0c29f269601844a1003e80fbf943b087f"
+  },
+  "DISCOVERY/gc-474614.log": {
+    "bytes": 179,
+    "sha256": "d6a00160fcbb90620ee5b7928b9463747c529a8790e37551e92155edbe15913d"
+  },
+  "DISCOVERY/gc-474636.log": {
+    "bytes": 179,
+    "sha256": "36bbba8598444f0d772e5c7eb8eed8439c5e005ef1ea7f8eef5d3671da6d43e3"
+  },
+  "DISCOVERY/gc-474678.log": {
+    "bytes": 179,
+    "sha256": "7687ccd9543f88a8ec916a435219405c48d62a257da2d64cbf603fc429a0fe0b"
+  },
+  "DISCOVERY/gc-474700.log": {
+    "bytes": 180,
+    "sha256": "9b7dca7c807d22895898e74de3ff47b45545e4a856a28b6b08d010d29403b0e4"
+  },
+  "DISCOVERY/gc-474742.log": {
+    "bytes": 179,
+    "sha256": "a69c0e8d98f800c09d790a7a4dfd1019cc41fe5613bb1a186d9aa1d95d53f46c"
+  },
+  "DISCOVERY/gc-474763.log": {
+    "bytes": 179,
+    "sha256": "038a5de63cffdf969a44b60b9efe2c185f6792833489dc27fd0eefc1e72783de"
+  },
+  "DISCOVERY/gc-474806.log": {
+    "bytes": 179,
+    "sha256": "fad71219b7212c8102e595cb85524e7a8605a4635ffca0d0f1f50ee6e789ee2a"
+  },
+  "DISCOVERY/gc-474827.log": {
+    "bytes": 179,
+    "sha256": "e50d346fe4d399905325af72b2c593dae27c260143706fc4dc1b40fdf29b8e79"
+  },
+  "DISCOVERY/gc-474870.log": {
+    "bytes": 179,
+    "sha256": "c9887d5348dc524904ce59324cacbe4a5e950411ce641b4bea5e70a6050700fb"
+  },
+  "DISCOVERY/gc-474891.log": {
+    "bytes": 180,
+    "sha256": "6ef7f818f1ce1901c8cff72e7d61554e749e1f4d9e2dafa6ac937713167333db"
+  },
+  "DISCOVERY/gc-474935.log": {
+    "bytes": 179,
+    "sha256": "d738555ca0ab0faaa45ccd579264f074d30ea6a155168668276ae8e3274e74ea"
+  },
+  "DISCOVERY/gc-474939.log": {
+    "bytes": 179,
+    "sha256": "aa65914144da6c970bdc118d82b6f1337c090fb4ea097bc07333d04b1892a9d6"
+  },
+  "DISCOVERY/gc-474998.log": {
+    "bytes": 179,
+    "sha256": "74b05e0ea550ed66e72e8e3daeb0821cb8ac0b6f4774916669d0898ef39c1577"
+  },
+  "DISCOVERY/gc-475020.log": {
+    "bytes": 179,
+    "sha256": "8073a69f4356de99fafa897d705f0431cad0505511f6b953f7002efa43e70735"
+  },
+  "DISCOVERY_COMPLETION.json": {
+    "bytes": 208,
+    "sha256": "136bf470cc039b0f94a8017a90839ecff766d06a10b0a85820197647d78583b7"
+  },
+  "DISCOVERY_LAUNCHER.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "DISCOVERY_LAUNCHER.json": {
+    "bytes": 157,
+    "sha256": "38958d9ef288a8224e63c70946f642500f42997900ba194d70dd83219a276c7f"
+  },
+  "DISCOVERY_LAUNCHER.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "DISCOVERY_RUNNER.log": {
+    "bytes": 216,
+    "sha256": "d5f5eb99cee9c8633f4ece0cc7a2914e712537af353a39c26b58d4393896ad68"
+  },
+  "DISCOVERY_RUNNER_PROCESS.json": {
+    "bytes": 284,
+    "sha256": "64bff19b391f388c2519c402da3d4b93c9e073be1f17b077541bee41eaf44ceb"
+  },
+  "DURABLE_MONITOR.log": {
+    "bytes": 264455,
+    "sha256": "4a9e2ffd07b99e8ea1418dcc722d0106a7a98ad511531066fc5a37c8d5785de0"
+  },
+  "DURABLE_MONITOR_STATUS.json": {
+    "bytes": 1801,
+    "sha256": "e1c2623d8c7886ccaea058d059cc9cd29a33064e48cde11629a53593198e7dc8"
+  },
+  "INIT/broader-tests.gradle": {
+    "bytes": 1905,
+    "sha256": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "INIT/cloud-validation.gradle": {
+    "bytes": 788,
+    "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123"
+  },
+  "INIT/resources.gradle": {
+    "bytes": 746,
+    "sha256": "9f6303b4e593fc1af88bdac7bc3a21901b8c5336c38fef71102a0026380109e5"
+  },
+  "REGRESSION/CONTEXT.json": {
+    "bytes": 13563,
+    "sha256": "7609a1df1ba6b42c3bdb62a03fdb8f5a48b631260c9859d37190111a0dab109c"
+  },
+  "REGRESSION/EVENTS.jsonl": {
+    "bytes": 73825177,
+    "sha256": "843142a66ec5b5569ba1020892164ea63b240cb3c0180829a2d00d014ef65429"
+  },
+  "REGRESSION/HISTORY_CASES.jsonl": {
+    "bytes": 23883,
+    "sha256": "723abc7a924f0a7b04fcad48b2a0bd05a5220600538214f67a932520cd87207c"
+  },
+  "REGRESSION/LINT.xml": {
+    "bytes": 31476,
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "REGRESSION/RESULT.json": {
+    "bytes": 199193,
+    "sha256": "dcf9de0ec05670b7bb46405752f7d5e4913863bfaa0cb9c76bfd8389c3e37b88"
+  },
+  "REGRESSION/RESULTS.csv": {
+    "bytes": 94160,
+    "sha256": "f63ee08d35b0cbf8ba3ffc4a83237857c27a93bfbe72ce5055c02d7d47f63627"
+  },
+  "REGRESSION/RUN.exit": {
+    "bytes": 2,
+    "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+  },
+  "REGRESSION/RUN.log": {
+    "bytes": 64862836,
+    "sha256": "0b06208c9fa6ac0a487abe804f90b5bbfadbaa661ac2701fe267ffcf4bad725d"
+  },
+  "REGRESSION/SHA256.json": {
+    "bytes": 13378,
+    "sha256": "5c2908983a30e9367c196a6479bf82a380b05f0d56b3b269be679e2c53830e35"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.acceptance.AcceptanceBoundaryTest.xml": {
+    "bytes": 1756,
+    "sha256": "54567ba7d7bc0ce93d0ec2a94abaccbf3af41ce388e726ffa508fb4dd744fc8f"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.acceptance.DeviceAcceptancePackageTest.xml": {
+    "bytes": 513,
+    "sha256": "ceb42f1419c0c953cdd36eabef08f724676c336c8255f7f706d124fdb84e2c0f"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest.xml": {
+    "bytes": 1232,
+    "sha256": "b3c0ec3f6d3d9e36de95e6d16d069ed5841bbd07b5bb5dafef22554799d1d2be"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.release.ReleaseSourceDigestTest.xml": {
+    "bytes": 2399,
+    "sha256": "b307a5b37735020e545ec97f5181933a00502734cc1f1f6c307e8da623a5d68d"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.BatchECapabilityResearchTest.xml": {
+    "bytes": 1095,
+    "sha256": "8c8055ecfbb9ab231645fbce6c02a072af78a6713692f92b77994afbc59a2203"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.CompleteRuleCorrectionTest.xml": {
+    "bytes": 13784,
+    "sha256": "ac8f176b396493b05fae7ca1384f3a12907cd4f8423c218d977e601fcc4bdec7"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.CurrentPackHistoricalBackupTest.xml": {
+    "bytes": 853,
+    "sha256": "77a9439122f20276d94ce26f1ba976e1a842e0d8af110e6134ee4dca25b96dce"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.SavedReviewEntryLabelTest.xml": {
+    "bytes": 695,
+    "sha256": "9fb07ffb18b7ca70179fedbfbc3f8d5cb63ac0f9f75256ee34b23b5774e83195"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit10BindingConservationTest.xml": {
+    "bytes": 684,
+    "sha256": "616e788f4f48f779b4d7e1fc40b8de63ce8e8d85da17870e8af01333886f3c40"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit10CumulativeReviewTest.xml": {
+    "bytes": 36476,
+    "sha256": "ab1fb701eef2a9cfe72c2d190fac6495d58142654bc17fa9d3a3401d9273ffd0"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit10FeedbackCorrectionTest.xml": {
+    "bytes": 787,
+    "sha256": "7cf41f50b5a0a65e0f59073d09b76d9248d7f000fac7eaf2c1ed7e5ba23415ce"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit10IndependentReinforcementTest.xml": {
+    "bytes": 1134,
+    "sha256": "bc679ed843c6838d32cdfc1a8b4b7dec77c1f75df01e012e0d3b61c32fdea7ab"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit10PresentCompatibilityTest.xml": {
+    "bytes": 1649,
+    "sha256": "0e75d95c2431d261cf3d15fbaf10f945def014fff198f1918a5fdaef6598c50d"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit10PresentReviewBaselineTest.xml": {
+    "bytes": 1526,
+    "sha256": "6a0212bf2ab954937cadd4feb1c8c93d6f51c3525eab85ae3b49f6aa2b9cb597"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit10PresentReviewUiTest.xml": {
+    "bytes": 1359,
+    "sha256": "b912f000399a65817120979a8df459d175f5122c35b114b087785643ca08e496"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit10ReinforcementReviewTest.xml": {
+    "bytes": 1066,
+    "sha256": "c0117a91c811cb2a92c6e050da77f20df30ac06c70de01028c1b395769e5c944"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit11AgreementRemediationTest.xml": {
+    "bytes": 1249,
+    "sha256": "656b087b82bad9b2aafecaad561549fdee02a9f7ad3220a9fcbcbcfc3f045b26"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit11BindingConservationTest.xml": {
+    "bytes": 4134441,
+    "sha256": "0bebffdf5d12875a59e3fc57ad23407fe2e6777b1f5a50db3399e2344304e6c8"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit11CumulativeReviewTest.xml": {
+    "bytes": 1975,
+    "sha256": "0d07400622d2eeb8d6c495ca820785bc6293c82a0cac783d0f96f1b13fa4457a"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit11FeedbackCorrectionTest.xml": {
+    "bytes": 792,
+    "sha256": "44a4d5bd3dc43aade13981af0278e2bb6249fd2df8726c8201a3185501c8ab9a"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit11NounCompatibilityTest.xml": {
+    "bytes": 125954372,
+    "sha256": "87471beb6eac59c5c8f47b7ea71066a3043df1a661ea5016594f6cde65bbae80"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit11NounReviewBaselineTest.xml": {
+    "bytes": 904,
+    "sha256": "ea429d6979eafe896585a840cfc646056de3c8e0f38b0296f51ed20a496d6a78"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit11NounReviewUiTest.xml": {
+    "bytes": 1308,
+    "sha256": "d19f2cf503e815639669ed4389ae9e1f444c877c4017e300f044b45f1fc8d86e"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit12BindingConservationTest.xml": {
+    "bytes": 682,
+    "sha256": "f6ddc7ebe133b1a5129281994d37b928312d3eca505d8703cf5901b0c52b578f"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit12CumulativeReviewTest.xml": {
+    "bytes": 16209,
+    "sha256": "ee28a5e4a02265e1e9e40207b077ac41b94927b992cdf60e6fe2d460df52353e"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit12FeedbackCorrectionTest.xml": {
+    "bytes": 7191,
+    "sha256": "cd37227163b937fe5ca4985ed6c24b9449016e64923603c24bcc1ad68feb3910"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit12GenderCompatibilityTest.xml": {
+    "bytes": 1532,
+    "sha256": "5772fa2d70ea4f9fbdd5170050863351c3254cdc7ce137c3652dd9571a56a70f"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit12GenderReviewBaselineTest.xml": {
+    "bytes": 1329,
+    "sha256": "0e3915069a2b074eb64f31e3a9ef003dd27ce6ca45dc7e1f57afef8a0c337e94"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit12GenderReviewUiTest.xml": {
+    "bytes": 1571,
+    "sha256": "b982e6a40cebf6f0f464cb3a67aab0d367ca665fcbeb8418e17374fa41c02a64"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit13ContextTeachingTest.xml": {
+    "bytes": 2438,
+    "sha256": "78fcdde582ac77ddaf5cd7660359d6fb4ff20749ab3ee6856fb6838e511f710a"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit13CumulativeReviewTest.xml": {
+    "bytes": 1591,
+    "sha256": "46e247609884bc110b0a689515e44ffa722c828dfdd5984bae3a4d7f9b77fefd"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit13FeedbackCorrectionTest.xml": {
+    "bytes": 2114,
+    "sha256": "2dc274e4a4fcd6b044af08789b6928100c7511f9f1fc62da98cc49002b8430aa"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit13PastTeachingTest.xml": {
+    "bytes": 1982,
+    "sha256": "2a9a3cbf04827dc94e8476c3034847aa4db587fa6d6d398f187b42b03c9cdf95"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit13ReportedTransferTest.xml": {
+    "bytes": 55496,
+    "sha256": "ec54311d435071933b03b827089e871f6dfec3a4d86ba83403363016981e4f97"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit13WiderPolicyTest.xml": {
+    "bytes": 2465,
+    "sha256": "624ffd960b0fdf8abd2757f20bf973ef97a39e09a27ef27947118e135fce707a"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit5GrammarReviewTest.xml": {
+    "bytes": 1711,
+    "sha256": "05ec97ab06ef594b956bc5c3a8b87dfc9235ed6aeb2c53eba2bb3f6478c75636"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit5GrammarReviewUiTest.xml": {
+    "bytes": 703,
+    "sha256": "65c12e1b44a155c41b22fa12d56910563236044e1e0b8b052572ea5f10319c87"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit6PresentCompatibilityTest.xml": {
+    "bytes": 1240,
+    "sha256": "7e6782d85807f8cf680cdf2ca2c696284ae8d0f911e609ba2cda615299eed3cc"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit6PresentReviewTest.xml": {
+    "bytes": 888,
+    "sha256": "0088ee9a9f0d48b2e19a2ed8d21492381f580af3a6b999f3d01197936efdf6d4"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit6PresentReviewUiTest.xml": {
+    "bytes": 1446,
+    "sha256": "5306ec7c4c422126b072aeffdc0845be6d1759eca7cd24ed290da73857da0db3"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit6WiderPolicyTest.xml": {
+    "bytes": 2060,
+    "sha256": "cb62c427559b40b776a725990911f5f8229802c1630bf3d98255843156cf2e17"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit7AgreementTeachingTest.xml": {
+    "bytes": 2031,
+    "sha256": "a29e92177fc1ea554454943427e4f874b15c67242128b9258e6515ee18aa64ba"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit7BindingConservationTest.xml": {
+    "bytes": 878,
+    "sha256": "feb5e43f66b28a93fe06e28164b48868ab231063324b430cd1864f7d7c921cf4"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit7CumulativeReviewTest.xml": {
+    "bytes": 3762,
+    "sha256": "0cfa1b84e60a729ffa8d9fc68d5d22fb6899ec539668eb064860a49d72fab3ff"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit7CurrentPrerequisiteHistoryTest.xml": {
+    "bytes": 1398,
+    "sha256": "9b156c973598de23cba3d3d29981ecc5bb97615cb5ed9f83b908aa19cc9066f1"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit7GenderCompatibilityTest.xml": {
+    "bytes": 1606,
+    "sha256": "3487f1c1a212a8c775879a2de3a3e70e1463870e935324a0ecf04f34da1bae1f"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit7GenderReviewBaselineTest.xml": {
+    "bytes": 828,
+    "sha256": "3d63e2b23310ed5b85b354fe322107899980eb794c18f52f96191e58146d05d8"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit7GenderReviewUiTest.xml": {
+    "bytes": 985,
+    "sha256": "1036fe46ec9bcbfb3dff055374eb834b8edfada6a5d98aacb05fb959751feca3"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest.xml": {
+    "bytes": 697,
+    "sha256": "9cd3c1e569bed065dc8a2ecf611ee71301b84313a7b9b6912c277885b281f90e"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit8AgreementTransferTest.xml": {
+    "bytes": 71388,
+    "sha256": "9fc263141a3c5d36f0deb75da6dea12d6468c0cf66413025d945bebd9e190858"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit8BindingConservationTest.xml": {
+    "bytes": 674,
+    "sha256": "d2422be9061bb74b7e4278635efe766ac938a8be5133492057663513dd205ffa"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit8CumulativeReviewTest.xml": {
+    "bytes": 2209,
+    "sha256": "4d06a24af9e8b6f21ca4e5c61c2651d01532123d862f45db41bc34ff1b20643b"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit8ExistenceHistoryTest.xml": {
+    "bytes": 54503,
+    "sha256": "29dfdd60c678d5aa92a9bf8eefd54872e556401189fb280c89216f9550594019"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit8ExistenceSequenceTest.xml": {
+    "bytes": 657,
+    "sha256": "34082a6fcb9e0981f6ec66cc3371b28e8145aa60ffbfbcace68ab253f949f38f"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit8ExistenceUiTest.xml": {
+    "bytes": 73631,
+    "sha256": "761bb1f07b475058ebc47bf58e27df009e6b9111e7d1cf9c3f6fcfd2d006c606"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit8PluralInstructionTest.xml": {
+    "bytes": 3122,
+    "sha256": "a79d3ee1cf8c5e376756342182fc2b461ab44a3beabcee010802665034ac1a33"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit8PresentCompatibilityTest.xml": {
+    "bytes": 1176,
+    "sha256": "e84358d483801337ad6c09e395425a5073d9f01523193014ab5095d8cd758526"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit8PresentReviewBaselineTest.xml": {
+    "bytes": 847,
+    "sha256": "d47b1ffa08bc1467f48e48f3b37e6298b573f0adedea98a29d0a04fe975ceb9d"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit8PresentReviewUiTest.xml": {
+    "bytes": 1157,
+    "sha256": "e58ddf76b2fcf55ab3f2d1f477c4dce1262c542dd19a3e0f52b5d2a5a1a2c437"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit9BindingConservationTest.xml": {
+    "bytes": 676,
+    "sha256": "9994aae4ea45f731fb6d19e27304563cce9e31763bb06b9aa77efc3ea90ac30a"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit9CumulativeReviewTest.xml": {
+    "bytes": 2009,
+    "sha256": "646da6912e72a64d5e51ad154570470b7326021265c9cdbb3ac0e14de0f5935b"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest.xml": {
+    "bytes": 1575,
+    "sha256": "ed6b0260f335fbad3d47b3fa197fa9b28440871bb33d95612837fff4ed376f7a"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit9NounBehaviorReviewBaselineTest.xml": {
+    "bytes": 2163,
+    "sha256": "5a59a948da821b58e86280c4b4e3a0e7bf3e6320d8264fe6fc6b9223c318b555"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit9NounBehaviorReviewUiTest.xml": {
+    "bytes": 1186,
+    "sha256": "3630f712ef0969a99743e0cce14d8558957b1951c9757107466cdd38bd3e4457"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit9WiderPolicyTest.xml": {
+    "bytes": 8400,
+    "sha256": "51b16762b53779295d6d8dad25b5e0b68fe6d4632d93304189785fa87d38ceff"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Units1115InstructionalValidityTest.xml": {
+    "bytes": 3469,
+    "sha256": "bb6ad92d6bac72bf53b2175e94949f2feb7bed0b725ed66948e6e4e147bcff44"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Units1115MappingGapTest.xml": {
+    "bytes": 1511,
+    "sha256": "267b72b6c066bcab3546ebe9d37805e985bef5b0be1eb66f621f3742937702a9"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Units1620SourceIntakeTest.xml": {
+    "bytes": 6148,
+    "sha256": "f9a24cea1f5f6a916e389a4b803ab54da5967696f44dcd176cb1d34f8c731e15"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Units2125SourceIntakeTest.xml": {
+    "bytes": 6604,
+    "sha256": "12accbc5502782e41c411847bc57763a39229b664126cd1b4942d296d6f38c2b"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml": {
+    "bytes": 6216,
+    "sha256": "8aed815b7ddeaf4c78851971c94c8360a36d65297a5ab1b09f5848758e6f048e"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Units610InstructionalValidityTest.xml": {
+    "bytes": 3784,
+    "sha256": "b163250bd9b46dbd6f4f045d4ce5f3aef5e4115f377fc1b1a9ff6fbb9c384937"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Units610SourceIntakeTest.xml": {
+    "bytes": 1181,
+    "sha256": "d498af6bbc2f001c55ff5d6e6ab51b94e25bafa1baa206ec0beb27dc51cb35d7"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.V2RebuildTest.xml": {
+    "bytes": 132828,
+    "sha256": "2330ea81f8ad45abf1261dea5e547765fc12d1ca2fa4af928d1c5ebd5e1110fd"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest.xml": {
+    "bytes": 2255,
+    "sha256": "9929a4073f7428b9649927ae9f24dbf0d8cde2524256d8f760ac894afdfdd962"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.audit.GapClosureDossierTest.xml": {
+    "bytes": 1128,
+    "sha256": "8a6cff6747747d40a98cbae197ffeb22542cf62c500719697d6027b54183f882"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest.xml": {
+    "bytes": 1495,
+    "sha256": "fd0edf13f2ab3b31a4ded344090511c45d583fae4cbd931b14e5e2db952706e1"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest.xml": {
+    "bytes": 854,
+    "sha256": "b67bdd2aa892ef6dffddf3200804680ed54a5459e88fba23b6bb53204cc3a2c3"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.review.Unit1ReviewPackageTest.xml": {
+    "bytes": 1370,
+    "sha256": "06f384f7776596c946628237f630422029433a9725d7298c4592371d86cde6f1"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.review.UnitReviewPipelineTest.xml": {
+    "bytes": 1411,
+    "sha256": "ded0b72b46667dc5c6b750b85aee0b5bd5751594df8e42e4154e2e6622610133"
+  },
+  "REGRESSION/gc-475365.log": {
+    "bytes": 93792,
+    "sha256": "c4205f0c389c798ce2903270859282d58004bb394c6ab974cc74c32692b220cd"
+  },
+  "REGRESSION/gc-475367.log": {
+    "bytes": 20153,
+    "sha256": "58589855e74470b7121a16537d658a8cd89121b55e5aa09e2b23c58e984b1152"
+  },
+  "REGRESSION/gc-475615.log": {
+    "bytes": 132705,
+    "sha256": "127b9a9c1db413c1aa2a6181c8c099e948179fd917aa181630a94fad6a895e6b"
+  },
+  "REGRESSION/gc-476091.log": {
+    "bytes": 69257,
+    "sha256": "65960adfe41c3afa574346f44d8399b462d63cdd6108c80170d7658d102f19ee"
+  },
+  "REGRESSION/gc-476256.log": {
+    "bytes": 25438,
+    "sha256": "5ff350fdda49d4b2dd03970b100a4884b23fb203cea5ec58436fd42231c92aaf"
+  },
+  "REGRESSION/gc-476394.log": {
+    "bytes": 56455,
+    "sha256": "b3b9e1ca35c0259f11aed22ecbe16e54566076355f6b1a8c6f231732b210a004"
+  },
+  "REGRESSION/gc-476667.log": {
+    "bytes": 161064,
+    "sha256": "9f585d3b5b162eb64b018dc7e3dbf7fcbb71d8ff45432074d8aea6275086c51c"
+  },
+  "REGRESSION/gc-476817.log": {
+    "bytes": 31011,
+    "sha256": "830f1a961cf50f3b4e983776f8f0d55dc8e2d97387ceabb651d19b83ac6c4425"
+  },
+  "REGRESSION/gc-477017.log": {
+    "bytes": 129727,
+    "sha256": "ac826d18d489792d98ff503c9a94024305c944e0e3e9087c3d63f6f0b95154b9"
+  },
+  "REGRESSION/gc-477626.log": {
+    "bytes": 63003,
+    "sha256": "3f95a930fc9c7a28acd32f80dbd3f8ffee294c6fb758d6344a70709c09428d7d"
+  },
+  "REGRESSION/gc-477754.log": {
+    "bytes": 550275,
+    "sha256": "8cbb07221698a19145d1ad76cd505cf1f6cc96913c5db56325fa475283209fcd"
+  },
+  "REGRESSION/gc-477991.log": {
+    "bytes": 84616,
+    "sha256": "6301f177da60de62368c4f57f4d2734ec920d0da53493c84a82f58fca64a8711"
+  },
+  "REGRESSION/gc-478313.log": {
+    "bytes": 96926,
+    "sha256": "459f25fc150065524ad8493d6dcb36369088dc74ab4d2ae2791733b0752672bf"
+  },
+  "REGRESSION/gc-478819.log": {
+    "bytes": 388573,
+    "sha256": "d87bfdcff9e9fba5e027456db5d4e09116d41e22dda8805d7648fa966b2e07f0"
+  },
+  "REGRESSION/gc-479437.log": {
+    "bytes": 63448,
+    "sha256": "ae3cb824c6997b969299668e6d3b485d0e7fadbc5a74088ca9589d71487de295"
+  },
+  "REGRESSION/gc-479653.log": {
+    "bytes": 109518,
+    "sha256": "42786f408baa0fe5e10116ede1bc7cc4e8dfff1a597d9e7e01d8804b7b7c4018"
+  },
+  "REGRESSION/gc-480009.log": {
+    "bytes": 22436,
+    "sha256": "f05418f2e2f48c6aa5e920bf250e493ed90dfa516adeacb7e81d7cd3e6dc2cb7"
+  },
+  "REGRESSION/gc-480127.log": {
+    "bytes": 124816,
+    "sha256": "3d3bd766d363878b9de7536e2421dbd79ecafc7ffc673747ac8c4e89b8dbec6d"
+  },
+  "REGRESSION/gc-480651.log": {
+    "bytes": 47224,
+    "sha256": "0441358ac5fdc2c280900b4b7ca74c8552be567626181c00674ba6a7e979ac51"
+  },
+  "REGRESSION/gc-480857.log": {
+    "bytes": 124460,
+    "sha256": "28d1fa0498deea53a1a45ef29707133f4bcef160ac346684f62a59c75683a028"
+  },
+  "REGRESSION_COMPLETION.json": {
+    "bytes": 208,
+    "sha256": "c493963e1a96e891163a5cecf24ee5fecd68b332756c99b74f1a39d104d9681d"
+  },
+  "REGRESSION_LAUNCHER.exit": {
+    "bytes": 2,
+    "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+  },
+  "REGRESSION_LAUNCHER.json": {
+    "bytes": 158,
+    "sha256": "45747452a5e415ec93daa0bad6ef5b99a1e6f423f13262e79e42d0e089d73be6"
+  },
+  "REGRESSION_LAUNCHER.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "REGRESSION_RUNNER.log": {
+    "bytes": 216,
+    "sha256": "0c69c43b4466c55264779f56481854dee5108279679cc36b743f450e20752dab"
+  },
+  "REGRESSION_RUNNER_PROCESS.json": {
+    "bytes": 285,
+    "sha256": "43ac1a4d319f0b96dccd83f261fa7423d18624eb5af9640f2c8942d622134264"
+  },
+  "durable_monitor.py": {
+    "bytes": 2661,
+    "sha256": "c175cc80828051243143b7673496c6f61689803d8e36aa341699bd8b3b82c7e3"
+  },
+  "resources.gradle": {
+    "bytes": 746,
+    "sha256": "9f6303b4e593fc1af88bdac7bc3a21901b8c5336c38fef71102a0026380109e5"
+  },
+  "run.py": {
+    "bytes": 11514,
+    "sha256": "0ae292a1bb64489659bf19ea66e9422c1bccb86bb9e60ea9ea3b30713da19405"
+  },
+  "supervise.py": {
+    "bytes": 1197,
+    "sha256": "49346dac8349205097c4ca0b28482edfa4180ff483051b785834e8bc62613614"
+  }
+}
