@@ -1,0 +1,9 @@
+{
+  "ORIGINAL_PRODUCTION.zip": "1853f21a08337dbaadca6fe69921645f1cd72ee892defbfe5a9724225db42bf3",
+  "PREPARATION.json": "fde0cf49ecca206348f094c788e747968bfea6ea3991c2c4a71a8c513bb7782d",
+  "STATUS.md": "0b127df6d46b083d1b5f1913ca6c110b9eef5f5b348fbb08b12f922a3a5ecb1d",
+  "durable_monitor.py": "9fd999cb7dc612bd36f907113ef9a95fe78ce2a94b6bf588e05ae8c1eefe9d0b",
+  "resources.gradle": "9f6303b4e593fc1af88bdac7bc3a21901b8c5336c38fef71102a0026380109e5",
+  "run.py": "6b9e340bcc80689e7af405eda8eaafca95c0f1b1877a6e66384a2eb1807f85bc",
+  "supervise.py": "49346dac8349205097c4ca0b28482edfa4180ff483051b785834e8bc62613614"
+}
