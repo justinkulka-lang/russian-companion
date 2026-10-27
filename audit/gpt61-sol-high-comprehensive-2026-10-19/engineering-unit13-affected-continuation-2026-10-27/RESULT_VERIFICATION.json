@@ -1,0 +1,20 @@
+{
+  "verified": true,
+  "sourceCommit": "3248ab597dc13e8746464ba7601cf29e440995fa",
+  "counts": {
+    "reported": 165,
+    "passed": 165,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 28,
+  "exitCode": 0,
+  "allAssertionsRetained": true,
+  "bindingsConserved": 155,
+  "archivesShaCrc": 74,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "completeSuite": false
+}

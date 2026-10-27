@@ -1,0 +1,26 @@
+{
+  "sourceCommit": "3248ab597dc13e8746464ba7601cf29e440995fa",
+  "inputTrees": {
+    "app/src/main": "aeeb035f6017bf70852fd7fb2b6aec42789eebed",
+    "app/src/test": "71832f9f61e23cf95a542a36287662d99cd4a787",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "cd675aa8a3ad33a90d9001fe6f67b2de2e5d7ac7",
+    "release": "9d9047b8297cba1d5855a7f7809c441b2f8edcf7"
+  },
+  "productionUnchanged": true,
+  "existingTestsByteExactExceptTwoArchivedComparisons": true,
+  "otherTestFilesUnchanged": 274,
+  "all107OriginalComparisonAssertionsPreserved": true,
+  "wholeBaselineAndCoreTestsUnchanged": true,
+  "currentRecordsUnchanged": 155,
+  "archivesShaCrc": 74,
+  "repositorySourceDigest": "3c0acbb95297cf10f08da2bd8391463067eece22fec785158b5d2680d37dc2ba",
+  "packContentReviewDigest": "15c6ae393767cb7ffc190882867bfad923c9e81b07d0f4285cf0a678f2489280",
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "environmentSettingsChanged": false
+}
