@@ -165,6 +165,7 @@ internal object RecordedCurriculumConservationScope {
                 (when (number) {
                     9 -> beforeUnit9NounBehaviorReview(root, current)
                     11 -> beforeUnit11NounReview(root, current)
+                    12 -> beforeUnit12GenderReview(root, current)
                     else -> current
                 }).let { current ->
                 assertEquals("unchanged current unit $number", digest, V2Validator.unitContentReviewDigest(current, number))
@@ -177,6 +178,12 @@ internal object RecordedCurriculumConservationScope {
                     // Historical identity stays pinned above; actual current instruction and obligation stay separately guarded.
                     RecordedIntakeCorrectionScope.assertCurrentUnitMatches(current, source(root, currentUnitSources.getValue(number)), number)
                     assertNotEquals("Current Unit11 review declaration must retain its own identity", digest,
+                        V2Validator.unitContentReviewDigest(current, number))
+                }
+                if (number == 12) {
+                    // Keep the original v1 pin above and independently guard the actual v2 source/identity.
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(current, source(root, currentUnitSources.getValue(number)), number)
+                    assertNotEquals("Current Unit12 review declaration must retain its own identity", digest,
                         V2Validator.unitContentReviewDigest(current, number))
                 }
             }

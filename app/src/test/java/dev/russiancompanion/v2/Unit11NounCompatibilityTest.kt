@@ -26,9 +26,12 @@ import java.io.File
 class Unit11NounCompatibilityTest {
     @Test fun exactPriorDeclarationRefusesSchemaThirteenAndPreservesDownstreamOwnerIdentity() {
         val old = RecordedIntakeCorrectionScope.load(root, "745234c99e3d69fadca835ba7f8eb98ad1a8ab48")
-        val priorDeclarationOnly = pack.copy(units = pack.units.map { u -> if (u.number != 11) u else
-            u.copy(advancement = u.advancement!!.copy(cumulativeReviewPolicyId = Unit11CumulativeReviewPolicy.definition.id)) })
-        assertEquals("The genuine old pack differs only by the Unit11 declaration", old, priorDeclarationOnly)
+        // Scope only the original whole-pack equality; all lifecycle/mutation controls below use actual current input.
+        RecordedCurriculumConservationScope.beforeUnit12GenderReview(root, pack).let { pack ->
+            val priorDeclarationOnly = pack.copy(units = pack.units.map { u -> if (u.number != 11) u else
+                u.copy(advancement = u.advancement!!.copy(cumulativeReviewPolicyId = Unit11CumulativeReviewPolicy.definition.id)) })
+            assertEquals("The genuine old pack differs only by the Unit11 declaration", old, priorDeclarationOnly)
+        }
         LocalStore.openInMemory(context()).use { store ->
             val original = document(v1Capture)
             assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(original, emptyList()))

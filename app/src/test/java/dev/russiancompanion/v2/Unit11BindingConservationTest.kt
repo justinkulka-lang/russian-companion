@@ -16,7 +16,10 @@ class Unit11BindingConservationTest {
         val before11 = RecordedCurriculumConservationScope.beforeUnit11NounReview(root, pack)
         assertEquals(RecordedIntakeCorrectionScope.load(root, "745234c99e3d69fadca835ba7f8eb98ad1a8ab48"), before11)
         assertEquals(Unit11CumulativeReviewPolicy.definition.id, before11.unit(11)!!.advancement!!.cumulativeReviewPolicyId)
-        assertEquals(pack.units.filter { it.number != 11 }, before11.units.filter { it.number != 11 })
+        // This original equality describes the Unit11-only transition before Unit12 v2.
+        RecordedCurriculumConservationScope.beforeUnit12GenderReview(root, pack).let { pack ->
+            assertEquals(pack.units.filter { it.number != 11 }, before11.units.filter { it.number != 11 })
+        }
         assertEquals(pack.items, before11.items); assertEquals(pack.provenanceRecords, before11.provenanceRecords)
         assertNotEquals(V2Validator.unitContentReviewDigest(before11, 11), V2Validator.unitContentReviewDigest(pack, 11))
         val before10 = RecordedCurriculumConservationScope.beforeUnit10PresentReview(root, pack)
@@ -43,7 +46,7 @@ class Unit11BindingConservationTest {
         val process = ProcessBuilder("git", "show", "fe7968e8c690909363c753ec546cd9fe329334f9:$path").directory(root).start()
         val old = Json.parseToJsonElement(process.inputStream.bufferedReader().readText()).jsonObject
         assertEquals(0, process.waitFor())
-        val now = Json.parseToJsonElement(File(root, path).readText()).jsonObject
+        val now = Json.parseToJsonElement(historicalReferenceBytes(path).decodeToString()).jsonObject
         assertFalse(now.getValue("semanticAcceptance").jsonPrimitive.boolean)
         assertFalse(now.getValue("rightsAcceptance").jsonPrimitive.boolean)
         val before = old.getValue("files").jsonArray.map { it.jsonObject }.associateBy { it.getValue("path").jsonPrimitive.content }
@@ -55,7 +58,7 @@ class Unit11BindingConservationTest {
             else {
                 assertEquals(entry.filterKeys { it != "sha256" }, after.getValue(name).filterKeys { it != "sha256" })
                 assertNotEquals(entry.getValue("sha256"), after.getValue(name).getValue("sha256"))
-                val actual = MessageDigest.getInstance("SHA-256").digest(File(root, "app/$name").readBytes()).joinToString("") { "%02x".format(it) }
+                val actual = MessageDigest.getInstance("SHA-256").digest(historicalReferenceBytes("app/$name")).joinToString("") { "%02x".format(it) }
                 assertEquals(actual, after.getValue(name).getValue("sha256").jsonPrimitive.content)
             }
         }
@@ -70,5 +73,15 @@ class Unit11BindingConservationTest {
         assertTrue(last.getValue("allExistingBindingsUnchanged").jsonPrimitive.boolean)
         assertFalse(last.getValue("semanticAcceptance").jsonPrimitive.boolean)
         assertFalse(last.getValue("rightsAcceptance").jsonPrimitive.boolean)
+    }
+
+    // Genuine matching Unit11 reference/kernel pair before the Unit12 transition.
+    // Unit12BindingConservationTest separately guards the actual-current pair and append.
+    private fun historicalReferenceBytes(path: String): ByteArray {
+        val process = ProcessBuilder("git", "show", "05407a70d1d70b196ef21b25cff51357c072c087:$path")
+            .directory(root).start()
+        val bytes = process.inputStream.readBytes()
+        assertEquals("Historical Unit11 reference input $path", 0, process.waitFor())
+        return bytes
     }
 }

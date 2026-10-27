@@ -25,7 +25,8 @@ class Unit12CumulativeReviewTest {
     @After fun reset() { V2UiWork.blockForTests = null }
 
     @Test fun ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup() {
-        val p = pack()
+        // Original reading/past v1 contract; current v2 has separate actual-current core/UI controls.
+        val p = RecordedCurriculumConservationScope.beforeUnit12GenderReview(root(), pack())
         ready(p).use { s ->
             val earlier = s.cumulativeReviewHistory().first.single { it.targetUnit == 11 }
             assertEquals(11, earlier.targetUnit)
@@ -203,7 +204,8 @@ class Unit12CumulativeReviewTest {
     }
 
     @Test fun placementWithTaughtUnit1ButUntaughtUnit11RepairsTheMissingOwnerInsteadOfUnit1() {
-        val p = pack()
+        // Preserve the original v1 owner1/11 preconditions and repair destination.
+        val p = RecordedCurriculumConservationScope.beforeUnit12GenderReview(root(), pack())
         LocalStore.openInMemory(context()).use { s ->
             for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
             s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 12, startingPoint = "RESUME_FROM_BOOK"))

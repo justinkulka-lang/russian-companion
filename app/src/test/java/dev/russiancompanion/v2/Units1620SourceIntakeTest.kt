@@ -92,6 +92,15 @@ class Units1620SourceIntakeTest {
                 val correction = historicalSourcePack("0f8001a8ec2cb76a7bc994a2c8d77db09a272d04")
                 RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, correction, number)
                 org.junit.Assert.assertNotEquals(digest, V2Validator.unitContentReviewDigest(pack, number))
+            } else if (number == 12) {
+                // The retained v1 digest belongs to the exact pre-Unit12 declaration.
+                RecordedCurriculumConservationScope.beforeUnit12GenderReview(repo(), pack).let { pack ->
+                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                }
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), number)
+                org.junit.Assert.assertNotEquals("Current Unit12 versioned review identity", digest,
+                    V2Validator.unitContentReviewDigest(pack, number))
             } else {
                 assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
             }
