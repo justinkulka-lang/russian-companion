@@ -27,7 +27,13 @@ class Unit13PastTeachingTest {
             .also { V2PackIdentityIndex.warm(it) }
         // Current whole-pack validation must retain the exact historical Unit13 teaching target.
         val historicalUnit = historical.unit(13)!!
-        assertEquals(historicalUnit, p.unit(13))
+        // Preserve the old whole-unit comparison on its full-pack-proven v2 declaration only.
+        RecordedCurriculumConservationScope.beforeUnit13PresentReview(root(), p).let { p ->
+            assertEquals(historicalUnit, p.unit(13))
+        }
+        // Actual current unit identity and all teaching/content/validation assertions below remain current.
+        RecordedIntakeCorrectionScope.assertCurrentUnitMatches(p,
+            RecordedCurriculumConservationScope.source(root(), RecordedCurriculumConservationScope.currentPackImplementation), 13)
         val objectiveIds = historicalUnit.objectives.map { it.id }.toSet()
         assertEquals(historical.items.filter { it.objectiveId in objectiveIds }, p.items.filter { it.objectiveId in objectiveIds })
         assertEquals(historical.provenanceRecords.filter { it.unitNumber == 13 }, p.provenanceRecords.filter { it.unitNumber == 13 })

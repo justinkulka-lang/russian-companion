@@ -1,0 +1,38 @@
+{
+  "originalEvidenceDirectory": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27",
+  "originalRuntimeSource": "75e2d31c441e87e7f53c550b2bf34e9804737bfb",
+  "originalInterruptedPartialEvents": 316,
+  "originalPartialCounts": {
+    "SUCCESS": 309,
+    "FAILURE": 6,
+    "SKIPPED": 1
+  },
+  "separateContinuationSource": "3248ab597dc13e8746464ba7601cf29e440995fa",
+  "separateContinuationReported": 165,
+  "separateContinuationPassed": 165,
+  "scopesNotSummed": true,
+  "originalFailuresUnchanged": true,
+  "changes": [
+    {
+      "testClass": "Unit13CumulativeReviewTest",
+      "methods": [
+        "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+        "placementWithTaughtUnit1ButUntaughtUnit12RepairsTheMissingOwnerInsteadOfUnit1"
+      ],
+      "scope": "Only these two original v2 behavioral methods use strict beforeUnit13PresentReview; all other methods and shared pack remain actual current",
+      "currentControls": "Full Unit13PresentCompatibilityTest and Unit13PresentReviewUiTest, unmodified"
+    },
+    {
+      "testClass": "Unit13PastTeachingTest and Unit13ContextTeachingTest",
+      "scope": "Only original whole-unit equality is inside strict before13 scope; original teaching/items/examples/provenance/capabilities/validator checks stay actual current",
+      "newCurrentControl": "Exact actual Unit13 match against original v3 producer bd00e508"
+    },
+    {
+      "testClass": "Units1620SourceIntakeTest and Units2630SourceIntakeTest",
+      "scope": "Only Unit13 original v2 digest assertion uses strict before13; original literal digest preserved; all other unit and rights/admission/release controls unchanged",
+      "newCurrentControl": "Exact current Unit13 identity/source guard plus distinct current-v3 digest assertion"
+    }
+  ],
+  "linguisticOrRightsApproval": false,
+  "externalAuditFindingsClosed": 0
+}

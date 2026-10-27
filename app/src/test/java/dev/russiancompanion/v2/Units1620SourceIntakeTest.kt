@@ -101,6 +101,15 @@ class Units1620SourceIntakeTest {
                     historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), number)
                 org.junit.Assert.assertNotEquals("Current Unit12 versioned review identity", digest,
                     V2Validator.unitContentReviewDigest(pack, number))
+            } else if (number == 13) {
+                // Retain the original v2 digest on its proven whole-pack source; never reset the pin.
+                RecordedCurriculumConservationScope.beforeUnit13PresentReview(repo(), pack).let { pack ->
+                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                }
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), number)
+                org.junit.Assert.assertNotEquals("Current Unit13 v3 review identity", digest,
+                    V2Validator.unitContentReviewDigest(pack, number))
             } else {
                 assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
             }

@@ -593,6 +593,15 @@ class Units2630SourceIntakeTest {
                         RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
                     assertNotEquals("Current Unit12 versioned review identity", digest,
                         V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 13) {
+                    // Retain the exact old v2 pin; independently guard the actual current v3 unit.
+                    RecordedCurriculumConservationScope.beforeUnit13PresentReview(root, pack).let { pack ->
+                        assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals("Current Unit13 v3 review identity", digest,
+                        V2Validator.unitContentReviewDigest(pack, number))
                 } else {
                     assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
                 }
