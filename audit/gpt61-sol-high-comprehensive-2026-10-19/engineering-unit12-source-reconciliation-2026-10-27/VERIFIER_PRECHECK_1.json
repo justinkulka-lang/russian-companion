@@ -1,0 +1,16 @@
+{
+  "kind": "READ_ONLY_EVIDENCE_PACKAGING_PRECHECK_FAILURE_NOT_A_JUNIT_RESULT",
+  "sourceCommit": "ce5d3cc66ca1e81dc0bff087b132adab75d20500",
+  "command": [
+    "python3",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit12-source-reconciliation-2026-10-27/verify_saved_results.py"
+  ],
+  "exitCode": 1,
+  "error": "AssertionError: AFTER_APPLY_DIGEST.log",
+  "cause": "Repository *.log ignore rule omitted the copied post-apply digest log from the index. Manifest bytes/hash were already present and correct.",
+  "correction": "Explicitly force-add this digest-only evidence log;no app/test/source/generated-record changes.",
+  "gradleInvoked": false,
+  "junitMethodsExecuted": 0,
+  "runtimeLaunched": false,
+  "logSha256": "92f5f856fa247e93d1b5f62e81b006b1ae40e768ad9b7308e101b74e50eeb016"
+}
