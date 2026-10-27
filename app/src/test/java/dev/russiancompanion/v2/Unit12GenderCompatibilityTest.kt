@@ -26,9 +26,12 @@ import java.io.File
 class Unit12GenderCompatibilityTest {
     @Test fun exactPriorDeclarationRefusesSchemaFourteenAndPreservesBothDownstreamVersions() {
         val old = RecordedIntakeCorrectionScope.load(root, "23b9179eaf54844f0b38074b2db56c7113c38c00")
-        val priorDeclarationOnly = pack.copy(units = pack.units.map { u -> if (u.number != 12) u else
-            u.copy(advancement = u.advancement!!.copy(cumulativeReviewPolicyId = Unit12CumulativeReviewPolicy.definition.id)) })
-        assertEquals("The genuine old pack differs only by the Unit12 declaration", old, priorDeclarationOnly)
+        // Scope only this original equality; runtime, eligibility and mutation checks below stay current.
+        RecordedCurriculumConservationScope.beforeUnit13PresentReview(root, pack).let { pack ->
+            val priorDeclarationOnly = pack.copy(units = pack.units.map { u -> if (u.number != 12) u else
+                u.copy(advancement = u.advancement!!.copy(cumulativeReviewPolicyId = Unit12CumulativeReviewPolicy.definition.id)) })
+            assertEquals("The genuine old pack differs only by the Unit12 declaration", old, priorDeclarationOnly)
+        }
         for (legacy13 in listOf(false, true)) {
             val producer = if (!legacy13) old else old.copy(units = old.units.map { u -> if (u.number != 13) u else
                 u.copy(advancement = u.advancement!!.copy(cumulativeReviewPolicyId = Unit13CumulativeReviewPolicy.definition.id)) })

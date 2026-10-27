@@ -1,0 +1,11 @@
+{
+  "plannedPointerCorrectedFrom": "aa93df85b4290406d5b78b0035b4a77912ae25fe",
+  "plannedPointerRecordedHash": "e8f201603d8e66e1e908df8680258eadb2af88e7a9c2e28a5aaa16fa03617a2b",
+  "plannedPointerActualKernelHash": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
+  "actualMatchingPair": "31ac807387253082c44bd2f6d67021478f0df66e",
+  "recordedHash": "e8f201603d8e66e1e908df8680258eadb2af88e7a9c2e28a5aaa16fa03617a2b",
+  "actualKernelSha256": "e8f201603d8e66e1e908df8680258eadb2af88e7a9c2e28a5aaa16fa03617a2b",
+  "referenceSha256": "d31acb7ce139ae1ed2b63c69338c9d0e35ed202bf09b4dd3980ae9552a6251e8",
+  "reason": "aa93already contains Unit13core but its reference still records Unit12kernel;31acis the genuine matching post-Unit12/pre-Unit13pair",
+  "noTestExecuted": true
+}
