@@ -1,0 +1,286 @@
+{
+  "verified": true,
+  "sourceCommit": "5971ed56cb4e17b15e4430202d206ec8df59337a",
+  "dictionary": {
+    "freezePath": "catalog/sources/units-3-5/FREEZE.json",
+    "freezeSha256": "aa8540c76db690c1becd4822a9c2de41a49b1adcb0557b6e73a7ed29838174f6",
+    "sourceCommit": "50e210c4803237779cb562bc1abcea529066031c",
+    "path": "catalog/sources/units-3-5/openrussian/verbs.csv",
+    "sha256": "8659de6799b949fb35f080b08088fb7d347ed300490954ebb380a31642646e1d",
+    "gitBlob": "efc1aebf79e36dc97d86c9bbce93810b7b1a997a",
+    "licensePath": "catalog/sources/units-3-5/openrussian/LICENSE",
+    "licenseSha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297"
+  },
+  "presentBindings": [
+    {
+      "itemId": "u4-i-verb-говорить-мы",
+      "exactAccentedLemma": "говори'ть",
+      "promptBinding": {
+        "provenanceId": "prov-u4-verb-говорить",
+        "sourceRecordId": "verbs.csv:говори'ть#accented",
+        "sourceHash": "35fc8e0f9f22b3ca57edcbd3992313d1bc0730fca50983d58ece71e0f250f6df",
+        "contentHash": "1f37b6b2cea84a10b3a4fb1a11f4d155460f649d86b38cd375ea5ee336fcd5e4",
+        "field": "accented"
+      },
+      "answerBinding": {
+        "provenanceId": "prov-u4-form-говорить-мы",
+        "sourceRecordId": "verbs.csv:говори'ть#presfut_pl1",
+        "sourceHash": "9d86c1d7760f25e3920767184ea293b8e545fbf2a74dc65c24f065b4adba7388",
+        "contentHash": "11370e24767aee380cb0b30f35e4b95892a588c0f4eaef5344840885e6a6f85e",
+        "field": "presfut_pl1"
+      },
+      "optionBindings": [
+        {
+          "provenanceId": "prov-u4-form-говорить-мы",
+          "sourceRecordId": "verbs.csv:говори'ть#presfut_pl1",
+          "sourceHash": "9d86c1d7760f25e3920767184ea293b8e545fbf2a74dc65c24f065b4adba7388",
+          "contentHash": "11370e24767aee380cb0b30f35e4b95892a588c0f4eaef5344840885e6a6f85e",
+          "field": "presfut_pl1"
+        },
+        {
+          "provenanceId": "prov-u4-form-говорить-я",
+          "sourceRecordId": "verbs.csv:говори'ть#presfut_sg1",
+          "sourceHash": "dd944a96c8ad71935280d4e47eae05ef61149c595d5c9ad389eed1a47b6510b9",
+          "contentHash": "1da7e603d5de973ed4a9f180bda8699dc65f8d64745ae3ee388777db96750878",
+          "field": "presfut_sg1"
+        },
+        {
+          "provenanceId": "prov-u4-form-говорить-ты",
+          "sourceRecordId": "verbs.csv:говори'ть#presfut_sg2",
+          "sourceHash": "832a04a15a8259a60a4e2fea8835cbdbd4e74d1aa2a01ca6bcc813993b44b8e2",
+          "contentHash": "984e6be71cb45ae712a93c9efc97b30d8d735bfe24f1891b1b10ef428ddb08d9",
+          "field": "presfut_sg2"
+        },
+        {
+          "provenanceId": "prov-u4-form-говорить-он",
+          "sourceRecordId": "verbs.csv:говори'ть#presfut_sg3",
+          "sourceHash": "75d5f1d67237f08acddeae3f59f21778062d788e4999fd5e4bd3bbdd6b5f7933",
+          "contentHash": "356a21b059770a5d703e05f5f1d84ba31cb88cc06d9e42fe08810069f929e8d0",
+          "field": "presfut_sg3"
+        }
+      ],
+      "rawKeyIndex": 0
+    },
+    {
+      "itemId": "u4-i-verb-видеть-он",
+      "exactAccentedLemma": "ви'деть",
+      "promptBinding": {
+        "provenanceId": "prov-u4-verb-видеть",
+        "sourceRecordId": "verbs.csv:ви'деть#accented",
+        "sourceHash": "42c858d61cdd773afec281e0cb1291c005c82a73725b01ad9e420edd0dae4574",
+        "contentHash": "bcbe3e0f397fc49e400c94f585b9f95e3c47e773c0329a004400d93ad8025059",
+        "field": "accented"
+      },
+      "answerBinding": {
+        "provenanceId": "prov-u4-form-видеть-он",
+        "sourceRecordId": "verbs.csv:ви'деть#presfut_sg3",
+        "sourceHash": "9441e603a5a5651a71c6148a14cfeff1fbacf8a235965397c913441ae71e76c5",
+        "contentHash": "d18914f234e60a197a98233d3b0def070efcb2c535d7dc66ad9d9a311f89dffb",
+        "field": "presfut_sg3"
+      },
+      "optionBindings": [
+        {
+          "provenanceId": "prov-u4-form-видеть-он",
+          "sourceRecordId": "verbs.csv:ви'деть#presfut_sg3",
+          "sourceHash": "9441e603a5a5651a71c6148a14cfeff1fbacf8a235965397c913441ae71e76c5",
+          "contentHash": "d18914f234e60a197a98233d3b0def070efcb2c535d7dc66ad9d9a311f89dffb",
+          "field": "presfut_sg3"
+        },
+        {
+          "provenanceId": "prov-u4-form-видеть-я",
+          "sourceRecordId": "verbs.csv:ви'деть#presfut_sg1",
+          "sourceHash": "abd32306943d580dd05ff4ac898538368021d4084b306056c7c93590c61d1515",
+          "contentHash": "d02a8cde4582dd5b878dfdd8a4d109af46176d6cf7a036d5d9f2bf391ba7ab69",
+          "field": "presfut_sg1"
+        },
+        {
+          "provenanceId": "prov-u4-form-видеть-ты",
+          "sourceRecordId": "verbs.csv:ви'деть#presfut_sg2",
+          "sourceHash": "a815dfdefadc318f40afd52c9bd17cc70d0a234a5555eb1efb50d2ca3b3de47e",
+          "contentHash": "1656522610eae444ba6eb8e5c9c0633b0a9d6daec71f34be60ef5d6d7151f26f",
+          "field": "presfut_sg2"
+        },
+        {
+          "provenanceId": "prov-u4-form-видеть-мы",
+          "sourceRecordId": "verbs.csv:ви'деть#presfut_pl1",
+          "sourceHash": "dda0a5380dc0d288e14789a22cd3672b03c7a28c991bf5a7a559693733bb8ed1",
+          "contentHash": "559b0d3a5c2a757a4c63d016da21ad85f64490a09ce35995d216617a76f6def4",
+          "field": "presfut_pl1"
+        }
+      ],
+      "rawKeyIndex": 0
+    },
+    {
+      "itemId": "u4-i-verb-писать-вы",
+      "exactAccentedLemma": "писа'ть",
+      "promptBinding": {
+        "provenanceId": "prov-u4-verb-писать",
+        "sourceRecordId": "verbs.csv:писа'ть#accented",
+        "sourceHash": "6395c19583956d997dbb67e4ca1ce5977579a293cf1998977acaca1ca3890c38",
+        "contentHash": "2114b12fd8900149eb453750e32989ed91d53cfbc041c53c8bf14da84077ccfd",
+        "field": "accented"
+      },
+      "answerBinding": {
+        "provenanceId": "prov-u4-form-писать-вы",
+        "sourceRecordId": "verbs.csv:писа'ть#presfut_pl2",
+        "sourceHash": "9c11b0993b610a7e7c1a237f5cc2146afad31d0e02e13b7e3d8692756b3251b5",
+        "contentHash": "5782e957c01e72b4940723c26fdee4cb569de72c8c5a11575e27af18cdab9bec",
+        "field": "presfut_pl2"
+      },
+      "optionBindings": [
+        {
+          "provenanceId": "prov-u4-form-писать-вы",
+          "sourceRecordId": "verbs.csv:писа'ть#presfut_pl2",
+          "sourceHash": "9c11b0993b610a7e7c1a237f5cc2146afad31d0e02e13b7e3d8692756b3251b5",
+          "contentHash": "5782e957c01e72b4940723c26fdee4cb569de72c8c5a11575e27af18cdab9bec",
+          "field": "presfut_pl2"
+        },
+        {
+          "provenanceId": "prov-u4-form-писать-я",
+          "sourceRecordId": "verbs.csv:писа'ть#presfut_sg1",
+          "sourceHash": "25835aefadf667c3ba3fc4aa5b939aeb58e95df90cc55f80041fbff3bcac7c1d",
+          "contentHash": "44da78bfeeb8fab7e8cc9ea8506fc555b157ac0c531581c558ab4dd2eb394ca4",
+          "field": "presfut_sg1"
+        },
+        {
+          "provenanceId": "prov-u4-form-писать-ты",
+          "sourceRecordId": "verbs.csv:писа'ть#presfut_sg2",
+          "sourceHash": "eb73414370cf8fb9b35d90510653687a86cc98d7e8d89a8fc411b256b9f4565d",
+          "contentHash": "1fe95363de9a5aa41a20496401738790afecb4a2e161ec35d33b4bb25f91dfad",
+          "field": "presfut_sg2"
+        },
+        {
+          "provenanceId": "prov-u4-form-писать-он",
+          "sourceRecordId": "verbs.csv:писа'ть#presfut_sg3",
+          "sourceHash": "8f21dd3a4418d26ebd3038bee1ecf8a00342cd475915fe328b23238de7240c7c",
+          "contentHash": "0c56d2aa06b012c6802f7c86396c467627c98f892050948e0d77d133cfe901fd",
+          "field": "presfut_sg3"
+        }
+      ],
+      "rawKeyIndex": 0
+    },
+    {
+      "itemId": "u4-i-verb-идти-они",
+      "exactAccentedLemma": "идти'",
+      "promptBinding": {
+        "provenanceId": "prov-u4-verb-идти",
+        "sourceRecordId": "verbs.csv:идти'#accented",
+        "sourceHash": "c5d8303726eb927cda49a54f042f63072cf489802aa252ba6a3c82384733a36e",
+        "contentHash": "c9c68dfd15528de3fc8172fd5caa15324e33df6163213914502b73fc7f070717",
+        "field": "accented"
+      },
+      "answerBinding": {
+        "provenanceId": "prov-u4-form-идти-они",
+        "sourceRecordId": "verbs.csv:идти'#presfut_pl3",
+        "sourceHash": "170e62ca1d3dd6009e5c0946473a256c484f0abb029b14b3d453b66113b6e727",
+        "contentHash": "1911e2009b9caff38bc2462938ec607bf35525788ad165faccf679b0b1cc2519",
+        "field": "presfut_pl3"
+      },
+      "optionBindings": [
+        {
+          "provenanceId": "prov-u4-form-идти-они",
+          "sourceRecordId": "verbs.csv:идти'#presfut_pl3",
+          "sourceHash": "170e62ca1d3dd6009e5c0946473a256c484f0abb029b14b3d453b66113b6e727",
+          "contentHash": "1911e2009b9caff38bc2462938ec607bf35525788ad165faccf679b0b1cc2519",
+          "field": "presfut_pl3"
+        },
+        {
+          "provenanceId": "prov-u4-form-идти-я",
+          "sourceRecordId": "verbs.csv:идти'#presfut_sg1",
+          "sourceHash": "52af9160576d0af91e1888d137e85552f8054877a34c2212c4ce0f47d8421780",
+          "contentHash": "4bbfcda75ab0b3cf9cb9a3d44ce842ad0c302998b7cdbe4aa36fe5843c8b38ab",
+          "field": "presfut_sg1"
+        },
+        {
+          "provenanceId": "prov-u4-form-идти-ты",
+          "sourceRecordId": "verbs.csv:идти'#presfut_sg2",
+          "sourceHash": "499b8d35f58fdd4d4c71b1fcac4eda4351c76bdbe5a2895fc54c8b2cf269caea",
+          "contentHash": "499b8d35f58fdd4d4c71b1fcac4eda4351c76bdbe5a2895fc54c8b2cf269caea",
+          "field": "presfut_sg2"
+        },
+        {
+          "provenanceId": "prov-u4-form-идти-он",
+          "sourceRecordId": "verbs.csv:идти'#presfut_sg3",
+          "sourceHash": "5d2f73185e86270d20e42ceb26554dcaf27d5d98717c0a091f3f4fc4d101acdf",
+          "contentHash": "5d2f73185e86270d20e42ceb26554dcaf27d5d98717c0a091f3f4fc4d101acdf",
+          "field": "presfut_sg3"
+        }
+      ],
+      "rawKeyIndex": 0
+    }
+  ],
+  "pastGenderFields": [
+    {
+      "provenanceId": "prov-ex-or-u11-past-aspect-2",
+      "sourceRecordId": "verbs.csv:прочита'ть#past_m",
+      "sourceHash": "33fa323fac90da7208938e9cb3c5d900612f448dde17a33248ff7607792cd0ca",
+      "contentHash": "402e7779b11df44ca8272b244423561ee61e2b3ee93fe6ca8abddf2ebd24bbcd",
+      "field": "past_m"
+    },
+    {
+      "provenanceId": "prov-ex-or-u11-past-aspect-3",
+      "sourceRecordId": "verbs.csv:прочита'ть#past_f",
+      "sourceHash": "c26bf27b3e761fe1ee60bfcf32d55d2ef740359ab23dc9a4fda37e54d5586cb4",
+      "contentHash": "69d5fccf9b54589c0eaeb0060beb68c636f7f7ba4149ba43b19887411266e699",
+      "field": "past_f"
+    },
+    {
+      "provenanceId": "prov-ex-or-u11-past-aspect-4",
+      "sourceRecordId": "verbs.csv:прочита'ть#past_n",
+      "sourceHash": "a083d2751dba9b02ca2be676c19c2f66883701503819595ef4b881d78ba999e0",
+      "contentHash": "e4146bf9f92f5baf78c179c0d40994fd2162f5280594a3f593904da0cb829158",
+      "field": "past_n"
+    }
+  ],
+  "aspectSource": {
+    "freezePath": "catalog/sources/units-11-15/FREEZE.json",
+    "freezeSha256": "9f9c20f119b8197fcab9563b87bc8d0b2e398a7504cb1552eef1a5712af4be8a",
+    "path": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.txt",
+    "sha256": "0702bb0213b24bb48f1bbbfb4b1aa7fb76cf90fd520fe4bababb4d87db96e24e",
+    "gitBlob": "d884f4a8e26e147dd652916e1563e33d9098c9e6",
+    "oldid": "4059032",
+    "revisionPath": "catalog/sources/units-11-15/wikibooks/verbal-aspect-4059032.revision.json",
+    "revisionSha256": "a51add809670c80b71d2f2aef761023ae27d6754d3f72af6e6d5bdb47948b916",
+    "recordedMediaWikiSha1": "06af79f1d11d6be1c34c97ac04d992cf743a5ce2",
+    "observedFileSha1": "06af79f1d11d6be1c34c97ac04d992cf743a5ce2",
+    "fields": [
+      {
+        "provenanceId": "prov-ex-u12-aspect-0-ru",
+        "sourceHash": "fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8",
+        "contentHash": "1f37b6b2cea84a10b3a4fb1a11f4d155460f649d86b38cd375ea5ee336fcd5e4",
+        "shippedText": "говори́ть",
+        "frozenExcerptByteOffset": 1028
+      },
+      {
+        "provenanceId": "prov-ex-u12-aspect-1-ru",
+        "sourceHash": "fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8",
+        "contentHash": "5547b4749450ac775ed6300c8589dd3d617007a61025ac2ed585dba015b692a8",
+        "shippedText": "сказа́ть",
+        "frozenExcerptByteOffset": 1028
+      },
+      {
+        "provenanceId": "prov-ex-u12-aspect-2-ru",
+        "sourceHash": "fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8",
+        "contentHash": "c472ba4cd4b95d85e2b7686abe28d3860a88b3ecb9eb6de34881b9fd9e089bbb",
+        "shippedText": "де́лать",
+        "frozenExcerptByteOffset": 1028
+      },
+      {
+        "provenanceId": "prov-ex-u12-aspect-3-ru",
+        "sourceHash": "fddb8c4118a7145fbebc56cb52193b4c7d4bbe413a8f87cafc04e0e6a1a812d8",
+        "contentHash": "b57324378572bf8c4a9dc00f2daeecb1ed4a8f4975529115e9554a00849c3325",
+        "shippedText": "сде́лать",
+        "frozenExcerptByteOffset": 1028
+      }
+    ],
+    "limit": "The frozen quote uses speak for the saying/telling pair; selection retains the existing context-limited teaching and does not assert universal aspect partners."
+  },
+  "inheritedGlossRisk": {
+    "exampleId": "ex-u12-aspect-1",
+    "note": "to speak",
+    "disposition": "The generic to speak gloss is retained historical source-derived text,not newly endorsed;current teaching narrows the pair to saying/telling. CC024/qualified semantic review remains open."
+  },
+  "scope": "Frozen field/record/link verification only;not live-source,qualified linguistic,rights,mapping or owner acceptance.",
+  "privatePdf": "NOT_READ_OR_PACKAGED",
+  "newJUnitMethodsExecuted": 0
+}
