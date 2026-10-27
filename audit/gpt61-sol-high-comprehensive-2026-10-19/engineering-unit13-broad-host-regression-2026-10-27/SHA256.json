@@ -1,0 +1,19 @@
+{
+  "OWNERSHIP.md": "c0d770c7240d1f9a34111dc0c83d3cd51ca6e3c24cdcd9fbaba85391d195a94b",
+  "PREPARATION.json": "ffc3d0e3b9c3d232f98ad9e41e7b3625ff057b911d6374e52451faa8554c24e1",
+  "PRIOR_FOLLOWUP_VERIFICATION.json": "5decb9475c59f551ad73592e56b561e9e88cfe3fad951f8b5cc38c17c85ef8ce",
+  "SCOPE.json": "cc18e3746bf0e06c728dc295ecc81ccd2c0b732d47a95f35db0e392653776723",
+  "STATUS.md": "ce839ff84d771e7412173350363c0526031440634a608ed56d02df18c5e62b29",
+  "collect.py": "e367d545a3aee1917216b6db258325095e7a47f9d4b6fa2b8782b2d4dc369209",
+  "completion_worker.py": "474bea5bd76ed3bcf98ab4730b601ef11eb4dbdf0bdf1b97aa1ecceeef6eaf64",
+  "durable_monitor.py": "d303c2f7f3fc9f219178a48b639cd58aa998db1d94e39eb1172d24b0bbc82b19",
+  "evidence.py": "39f04d9a7e4bfaabb22005ad22f168f3cf6a7183a30a7f528401fb045563da4f",
+  "launch.py": "661837c1fb0e419766972792f94204cc1bff97b10787ca6e6365e40dc937449f",
+  "prepare.py": "572b7b8ea75f2a6d1effa815917f798ce6f11b40ffab07eccd7e3eabe1bf57ba",
+  "record_discovery.py": "68b57781edb579c5a1a3b9e59a6729ef27dd2a71cf906314cc3c6f2f1852e50a",
+  "resources.gradle": "25ade68e605848e8a6437bf162631435dc72d5ab0f033621aa4f1aeca317f42f",
+  "run.py": "d02d05029ed570dce335e2f00e3dd63b750a2178bb99a1f71178a57c8cde8996",
+  "start_runtime.py": "58f3fb36dce35c772915cce7789a0f7d3f794dcff17c26b8eb5370acb66ce673",
+  "supervise.py": "49346dac8349205097c4ca0b28482edfa4180ff483051b785834e8bc62613614",
+  "verify_results.py": "6ff7349b9e8ae944d616ea801ea89425f96e6669be33d5f3f616a6f1b9ff64d3"
+}
