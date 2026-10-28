@@ -1,0 +1,23 @@
+{
+  "ALL_60_ORIGINAL_TRACE_SOURCE_CHECKS.json": "576c00ffe30a8490ae44c4928d3eedde254e84206d433bb62d7d771e61e59629",
+  "CURSOR_DELIVERY_RECEIPT.json": "242c22318dbaba5b75232cea75af893ba3957484ba40abb8f01ea45427ee4667",
+  "FIXTURE_CORRECTION_REVIEW.json": "85871fdde87df797c906ce9ad1111cb499a460819767c2bb48208d27cb93d1cf",
+  "NEXT_TASK.md": "84f2916bda015c30bddfdf49ee7993e522e7f971bfd9ba4108a79844a93e61a4",
+  "ORIGINAL_FIXTURES.zip": "7cbc5aa1715fc19abe089813fff016883fa668ca8feae85fef5ae39a4420088c",
+  "PREPARATION.json": "d79394877d9d3bceba8193548d78de2de03450e2efc1bf59d53f3a5f94e51c01",
+  "SCOPE.json": "1cf15d471e4ba8ed7c5c16dcc9fab95473f2bf7732f8ca965271f4c75039ee9f",
+  "STATUS.md": "aba2616f177289bb0a7cbeb1fce9852094aece0c197d306603c91eb2f75763ef",
+  "assertion_calls.py": "839733a440f19382facc574077f5469924bdba45dd8ad3b9f79580ea6e07a1ac",
+  "completion_worker.py": "501649c1ae16d608c21a8fe1d6f810bed346294c49b60f257a59ac48dc9fdd35",
+  "configure.py": "cd59b76f57249cdc589f0b462dd3415158c504cf0cd7e585f76c04ef9f8d1726",
+  "durable_monitor.py": "d303c2f7f3fc9f219178a48b639cd58aa998db1d94e39eb1172d24b0bbc82b19",
+  "evidence.py": "0d9ccbf6662498692b1c51f39f60b376ff213e212968f5eb3e20d96a5272dc6d",
+  "launch.py": "661837c1fb0e419766972792f94204cc1bff97b10787ca6e6365e40dc937449f",
+  "prepare.py": "bc94f6d0c7d839819f2dce93c012c4d7251a3bd1192afcf53f9414ce61285d1d",
+  "record_discovery.py": "081acc108d72198765ea8c97368f2c968ee4bcb5d8e2007f6af4749f396edb0a",
+  "resources.gradle": "25ade68e605848e8a6437bf162631435dc72d5ab0f033621aa4f1aeca317f42f",
+  "run.py": "68e746f5afd7870ab0a394ee2262bc8c9f00c40c4c11b84c6d27362cc64ff700",
+  "start_runtime.py": "00e6cf4db65710ccce86023907c1fd5d1a3f43b90525df50da3c4d1a2ac772f4",
+  "supervise.py": "49346dac8349205097c4ca0b28482edfa4180ff483051b785834e8bc62613614",
+  "verify_results.py": "a21c6e8296e6d5ec6fe7252023cf4bf11551ae1514db14d5a110e4be167b0518"
+}
