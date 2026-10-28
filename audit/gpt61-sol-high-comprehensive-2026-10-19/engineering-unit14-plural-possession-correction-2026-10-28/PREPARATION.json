@@ -23,7 +23,7 @@
     }
   },
   "newTestFiles": {
-    "app/src/test/java/dev/russiancompanion/v2/Unit14PluralPossessionFixtures.kt": "60d51679bebe1666850d066cd7431b13a2a5f528c7eec423df3f650159937308",
+    "app/src/test/java/dev/russiancompanion/v2/Unit14PluralPossessionFixtures.kt": "9b100fc6415c15bd05420b85ebf066b89ea14c33a676fdb5b1205e2120f1a799",
     "app/src/test/java/dev/russiancompanion/v2/Unit14PluralPossessionCompatibilityTest.kt": "81c43b8e1e397c4893ee01364fa5aaba3ac99760d90fa003ce5931b336fa07ed",
     "app/src/test/java/dev/russiancompanion/v2/Unit14PluralPossessionReviewUiTest.kt": "635e4845afbdce0d100a72d08a91904d10381cb2f418532f20197799b9e6722b"
   },
@@ -74,5 +74,6 @@
   "audit": "INCOMPLETE",
   "physicalAcceptance": "OUTSTANDING_LAST",
   "completeSuite": false,
-  "scopesNotSummed": true
+  "scopesNotSummed": true,
+  "preRuntimeFixtureRevision": "SELECTION_PREFLIGHT.json"
 }

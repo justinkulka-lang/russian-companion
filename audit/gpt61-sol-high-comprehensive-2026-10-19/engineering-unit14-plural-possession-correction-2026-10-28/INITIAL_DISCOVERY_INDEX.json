@@ -1,0 +1,97 @@
+[
+  {
+    "path": "DISCOVERY/CONTEXT.json",
+    "sha256": "63bcfdd7ec816bb9d80dc336c9b383d55a3fb55851573ccb82b1fdab7436751f",
+    "bytes": 3442
+  },
+  {
+    "path": "DISCOVERY/EVENTS.jsonl",
+    "sha256": "9ffe2a7eca034ac5cfaf284fd5236be7980369c56d9f31a2d168926ee4f0c51c",
+    "bytes": 13308
+  },
+  {
+    "path": "DISCOVERY/RESULT.json",
+    "sha256": "73f9da4d3ff8a863d55134f9fb6fa85d40531c72c653a09298c90208171bde6e",
+    "bytes": 10131
+  },
+  {
+    "path": "DISCOVERY/RESULTS.csv",
+    "sha256": "95bb3ce2921a5cb84cc315debe4c2e56ad6000c54b53a73d703cf0b6f0fe6e8c",
+    "bytes": 4373
+  },
+  {
+    "path": "DISCOVERY/RUN.exit",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "bytes": 2
+  },
+  {
+    "path": "DISCOVERY/RUN.log",
+    "sha256": "c15c90abd96bf9723527c7f0c9a9238fbef8ad6a1e1ba1933916c57062832bc2",
+    "bytes": 6708
+  },
+  {
+    "path": "DISCOVERY/SHA256.json",
+    "sha256": "c9d7298201c73313d166ee5766e04a94a2bf79fa8e1859dd70c84a784e2f243e",
+    "bytes": 1126
+  },
+  {
+    "path": "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest.xml",
+    "sha256": "204b582040bce7fa0d3bfe18c3ead19cafbd82cbf9698247941611b364917d6a",
+    "bytes": 2443
+  },
+  {
+    "path": "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest.xml",
+    "sha256": "725eab2532cccd0e9edcd04d4b8241c0e1339a44849baf9f0f95a7b1bcc89572",
+    "bytes": 786
+  },
+  {
+    "path": "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest.xml",
+    "sha256": "86451c37504dc4cfaaf86c2c4884a6a891479c526a843d272af2f71088c92b72",
+    "bytes": 1952
+  },
+  {
+    "path": "DISCOVERY/gc-61630.log",
+    "sha256": "54a3a66cdff27498aba0356a633c677814c3724356348f5394db1e649eee85ac",
+    "bytes": 180
+  },
+  {
+    "path": "DISCOVERY/gc-61633.log",
+    "sha256": "34b18ed8f5ecaff3545c96d53c0d8dc503c890a3db30860941f614e24498d381",
+    "bytes": 180
+  },
+  {
+    "path": "DISCOVERY_COMPLETION.json",
+    "sha256": "881be124d96c6941cee9fc74b007ea9a9b52c79fa177715d51cb67314c608faa",
+    "bytes": 208
+  },
+  {
+    "path": "DISCOVERY_LAUNCHER.exit",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "bytes": 2
+  },
+  {
+    "path": "DISCOVERY_LAUNCHER.json",
+    "sha256": "b13985d530f3a62f96ecee957c674c10a99e940e48aec4179a7f3b69fef02c08",
+    "bytes": 156
+  },
+  {
+    "path": "DISCOVERY_LAUNCHER.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "DISCOVERY_RUNNER.log",
+    "sha256": "a37618963c25c5a35d17f6eb00d0735a8b9c3337526938121d98f77da7fa2c46",
+    "bytes": 213
+  },
+  {
+    "path": "DISCOVERY_RUNNER_PROCESS.json",
+    "sha256": "c43ec19ef0c3d234d4dc64e71bbff3ce3a501cf2b9b9851ba55e216efd912b99",
+    "bytes": 289
+  },
+  {
+    "path": "ORIGINAL_FIXTURE.kt",
+    "sha256": "60d51679bebe1666850d066cd7431b13a2a5f528c7eec423df3f650159937308",
+    "bytes": 4979
+  }
+]

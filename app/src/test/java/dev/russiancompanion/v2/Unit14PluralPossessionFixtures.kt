@@ -65,6 +65,10 @@ internal object Unit14PluralPossessionFixtures {
     fun miss(store: LocalStore, id: String) {
         val item = pack.item(id)!!
         val step = pack.units.flatMap { it.sessions }.flatMap { it.steps }.single { it.kind == "CHECK" && id in it.itemIds }
+        // Same-answer writes are intentionally idempotent. A real correction followed by a miss
+        // creates a new accepted history event even when an allocation variant revisits this item.
+        store.v2RecordGovernedAttempt(prepareGovernedAttempt(pack, id, item.answer,
+            PRESCRIBED_CHECK, step.id, "unit14-correct-${System.nanoTime()}")!!)
         store.v2RecordGovernedAttempt(prepareGovernedAttempt(pack, id, item.options.first { it != item.answer },
             PRESCRIBED_CHECK, step.id, "unit14-miss-${System.nanoTime()}")!!)
     }
