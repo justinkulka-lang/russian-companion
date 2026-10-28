@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "8e0b82ddc0ff573697ce4ce9b18abe082ed2c2d0",
+  "methods": 541,
+  "classes": 96,
+  "syntheticSkips": 541,
+  "runtimePasses": 0,
+  "all481PriorMethodsRetained": true,
+  "addedScopeIdentities": 60,
+  "removedMethods": [],
+  "all22CurrentUnit14ControlsIncluded": true,
+  "inheritedSelectors": 87,
+  "addedOlderUnit14And15Classes": 9,
+  "all96SelectorsFullClasses": true,
+  "inputTreesMatchPrepared": true,
+  "completeSuite": false
+}
