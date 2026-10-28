@@ -625,8 +625,8 @@
   ],
   "methodCount": 119,
   "classes": 17,
-  "inventoryOnlyUntilFreshDiscovery": true,
-  "runtimeStatus": "NOT_RUN",
+  "inventoryOnlyUntilFreshDiscovery": false,
+  "runtimeStatus": "PREPARED",
   "failedMethods": [
     {
       "testClass": "dev.russiancompanion.v2.Unit16CumulativeReviewTest",
