@@ -343,7 +343,7 @@
     "release": "c03bb8dbc3025ef83f463c6a8521526b09da8e42"
   },
   "fullClasses": true,
-  "inventoryOnlyUntilFreshDiscovery": true,
+  "inventoryOnlyUntilFreshDiscovery": false,
   "priorFailedIdentities": [
     {
       "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
@@ -570,5 +570,6 @@
       "method": "unpreparedReviewStatesFiniteScopeAndRoutesToAllThreeRealOwnersWithoutCredit"
     }
   ],
-  "completeSuite": false
+  "completeSuite": false,
+  "runtimeStatus": "NOT_RUN"
 }
