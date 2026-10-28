@@ -1,0 +1,62 @@
+{
+  "BROAD_MONITOR_AT_INTAKE.json": {
+    "bytes": 4403,
+    "sha256": "734b8c21e6bf24e078386bb79e6bfc1e87734f94a6c74547bebd204eab662255"
+  },
+  "CURRENT_RECEIPT_STATUS.md": {
+    "bytes": 1029,
+    "sha256": "acf608d4857a0af67ee50c27367b4682f104d74fc9428913f4b2403beb546b25"
+  },
+  "CURSOR_EXECUTION_EVIDENCE_MAP_ROWS_59_70.csv.fragment": {
+    "bytes": 7448,
+    "sha256": "56330465e67c4aaa4b4132917f7e7e83455998b9acb1aaacbb51afdfafd1c2b8"
+  },
+  "CURSOR_FINDING_READINESS_REGISTER.csv": {
+    "bytes": 35228,
+    "sha256": "2b5b58f72d780735a8727ee48117a193e45c8f9f35a9af18723040bb0c0ac066"
+  },
+  "CURSOR_R2_001_RECONCILIATION_ADDENDUM.md": {
+    "bytes": 4190,
+    "sha256": "5cf89cb7fd726011d561204e73e8c3e091649ffbd37cac384e49767ff52cc0b1"
+  },
+  "CURSOR_READINESS_REPORT.md": {
+    "bytes": 12942,
+    "sha256": "1cd540ef55670856df7e4888eee90d796d43d01f5f5d07c5494c9b998ef3cf4c"
+  },
+  "CURSOR_READINESS_SCOPE_AND_EVIDENCE.json": {
+    "bytes": 9004,
+    "sha256": "2ff05a8f7d22d19007e7cc9a33361c2aadd6f71e532acee59f5247a19e9d90aa"
+  },
+  "MESSAGE_1_VERIFICATION.json": {
+    "bytes": 1612,
+    "sha256": "db448e6ffb4a479097bf205a8eff21a058051a140dc57cd8a45af1196c82116c"
+  },
+  "PART_2_VERIFICATION.json": {
+    "bytes": 8430,
+    "sha256": "d2426e6e4d27e3b66a074871052ce06eb8b49528d929606ca6f4c7d9b9f39839"
+  },
+  "README.md": {
+    "bytes": 1349,
+    "sha256": "5cfafa25dd464bddd3cd719f426d2c41299ebed3e4c4eb77c77b0198c93d1977"
+  },
+  "RECEIVED_MESSAGE_1.txt": {
+    "bytes": 52917,
+    "sha256": "36f13669247d224489b33bf379bf051979451fe0ed58639876f3ab5d88ac444f"
+  },
+  "RECEIVED_PART_2.txt": {
+    "bytes": 17508,
+    "sha256": "5efc14492b927bee63e62729420bbefd3cd94fa9fd598512f0b5925856666577"
+  },
+  "SHA256.json": {
+    "bytes": 984,
+    "sha256": "0d5e8bb0df643c9afca366a77389e838100d7a6c67f849a8b9ed1677cf016743"
+  },
+  "receive_message1.py": {
+    "bytes": 4865,
+    "sha256": "fc07b0707dd371364617de19793ca5511d2af21425600ec95c010eb077b6b1e6"
+  },
+  "receive_part2.py": {
+    "bytes": 8290,
+    "sha256": "b41ffc4a0e6f3787502048aaa9390f499dd101902847dd6adadabba6313dac02"
+  }
+}

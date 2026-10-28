@@ -1,0 +1,218 @@
+Part 1 of this delivery already included the complete readiness report, the complete finding register (header and CC001–CC048), and execution-request rows 1–58. Row 59 was cut off mid-cell. This part replaces that row in full and supplies rows 60–70, then the complete JSON. Nothing remains after this part.
+
+## 3. CURSOR_EXECUTION_EVIDENCE_MAP.csv (continued)
+
+Rows 1–58 are in the previous part. Repeat row 59 in full, then rows 60–70. `original_execution_status` stays `NOT_EXECUTED` on every row.
+
+```csv
+59,MA2-132;MA2-142;MA2-143,persistence: Supported schema data survives migration / negative: Failure rollback prevents partial replacement,NOT_EXECUTED,DatabaseMigrationTest; CompletionEvidenceCorrectionTest,version1 through version7 row survival methods,changed content cannot unlock; version2 ineligible plans,ACTIVE_RUN_PENDING,pending broad discovery,discovery tree 2ebf4f28 matches pin main e8434cfe and test 2f06c31e; runtime result absent,DatabaseMigrationTest.kt; CompletionEvidenceCorrectionTest.kt,review assignment schemas 6-16 and a failed migration rollback,host,Database versions are not the review-schema fixtures.
+60,MA2-118;MA2-119;MA2-138,write-coordination: One acknowledged write per accepted action / negative: Stale epoch and duplicate completion do not mutate current state,NOT_EXECUTED,RuntimeCorrectionTest; LearnerReloadRecoveryTest; HostActivityRecreationTest,recreatedActivityDuringADelayedWriteKeepsOneOutcome; repeatedContinueCannotSkipAStep,lateContinueCallbackCannotNavigateTheNextScreen; failed write preserves prior data,ACTIVE_RUN_PENDING,pending broad discovery; historical e5b5d3c0 tree mismatches,discovery tree 2ebf4f28 matches pin main e8434cfe and test 2f06c31e; runtime result absent,HostActivityLifecycleTest.kt; RuntimeCorrectionTest.kt,a full stale-epoch matrix and duplicate completion beyond the located methods,host API 33,Corrected selectors still need method-level reading after the run.
+61,MA2-042;MA2-120;MA2-144,lifecycle: Resume restores current saved step / negative: Stale digest or process restart never invents credit,NOT_EXECUTED,HostActivityRecreationTest.recreatedActivityKeepsTheDraftAnswerAndResumePosition,one recreation keeps a draft,stale digest inventing credit is not that method,TEST_EXISTS_NO_MATCHING_RUNTIME,current runtime pending,discovery tree 2ebf4f28 matches pin main e8434cfe and test 2f06c31e; runtime result absent,HostActivityLifecycleTest.kt,process death and stale digest,"host, then device",One recreation method is not the lifecycle scenario.
+62,MA2-116;MA2-140;MA2-141;MA2-146,performance: UI responsive during heavy local work / negative: Large pack/archive must not block UI or exhaust memory,NOT_EXECUTED,no responsiveness or memory scenario,none matched,large archive must not exhaust memory; not executed,MISSING_EVIDENCE,none,no retained run of this scenario at the pin,CC041 composition calls,heavy local work and large pack,host profile,Profile only after the broad runtime.
+63,MA2-123;MA2-124;MA2-125;MA2-126;MA2-127;MA2-128;MA2-129,accessibility: All controls readable and operable with accessibility / negative: Large text/keyboard/safe insets cannot hide required actions,NOT_EXECUTED,no TalkBack or API 35/36 accessibility execution,row semantics were edited in source,"hidden actions under large text, keyboard, and insets were not observed",DEFERRED_PHYSICAL_LAST,no device run,no retained run of this scenario at the pin,V2Chrome.kt; V2Screens.kt selectable rows,TalkBack walk and physical safe insets,Galaxy S26 Ultra last; host semantics can be added earlier,Host API 33 does not establish TalkBack or API 35/36. Do not waive the device case.
+64,MA2-130;MA2-131,compatibility: Layouts adapt to supported window/API range / negative: Recreation/multiwindow/device-specific behavior does not break progress,NOT_EXECUTED,no multiwindow or device recreation execution,one host recreation method exists,device-specific progress breakage was not tested,DEFERRED_PHYSICAL_LAST,no device run,no retained run of this scenario at the pin,HostActivityRecreationTest is API 33 Robolectric,supported window range and the physical device,Galaxy S26 Ultra last,Do not treat Robolectric geometry as device compatibility.
+65,MA2-147;MA2-164,supply-chain: Exact source/dependency evidence retained / negative: Mutable or missing dependencies cannot imply verified build,NOT_EXECUTED,no dependency-verification execution,wrapper URL is present,missing checksum cannot imply a verified build,MISSING_EVIDENCE,none,no retained run of this scenario at the pin,gradle-wrapper.properties; verification-metadata.xml absent,checksum and locked dependencies,host,Add pins before claiming supply-chain evidence.
+66,MA2-007;MA2-008;MA2-147;MA2-153;MA2-174,release-gate: Output tasks depend on fail-closed gate / negative: Missing mappings/audit/device records keep release blocked,NOT_EXECUTED,ReleaseGateTest; ReleaseOutputTasksTest; LinguisticReleaseGateTest,apkAabPublishAndVariantReleaseTasksAreGated; livePackKeepsLinguisticReviewAbsentWithoutFabricatingAcceptance,"missing pathway, compliance, and linguistic acceptance stay blocked",ACTIVE_RUN_PENDING,pending broad discovery,discovery tree 2ebf4f28 matches pin main e8434cfe and test 2f06c31e; runtime result absent,ReleaseGateTest.kt; LinguisticReleaseGateTest.kt,CC039 one-mapped-letter negative; a pass is not release approval,host,Keep release blocked regardless of this class's result.
+67,MA2-092;MA2-094;MA2-152,source-binding: Admitted exact tuples bind intended claim / negative: Co-occurring but unrelated tuple must fail validation,NOT_EXECUTED,FullSynthesisTupleCorrectionTest,three swapped families,unpinned co-occurring tuples are not rejected by matchesIfPinned,TEST_EXISTS_NO_MATCHING_RUNTIME,pending broad discovery runs only the existing three,discovery tree 2ebf4f28 matches pin main e8434cfe and test 2f06c31e; runtime result absent,OriginalApplicationTuplePins.kt:22 else return true,five unpinned paths and manner,host,The pending run cannot satisfy the missing negative.
+68,MA2-017;MA2-145,content-loader: Valid pool expands losslessly / negative: Missing/unused/mismatched pooled span rejected,NOT_EXECUTED,SourceTextPoolTest,pythonAndKotlinExpansionRestoreTheSameRecordsAndTypedPack,corruptMissingConflictingAndUnboundPoolEvidenceIsRejected,ACTIVE_RUN_PENDING,pending broad discovery,discovery tree 2ebf4f28 matches pin main e8434cfe and test 2f06c31e; runtime result absent,SourceTextPoolTest.kt,release approval is explicitly outside poolingDoesNotLoosenStrictModelDecodingOrApproveRelease,host,Read the class in the broad result. Pool success is not release approval.
+69,MA2-006;MA2-142,legacy-ui: Current entry launches V2App / negative: Retained legacy screen source must not be mistaken for current production reachability,NOT_EXECUTED,LearnerReloadRecoveryTest launches MainActivity; legacy shell tests also exist,V2 activity launches in the recovery test,legacy screens are still tested and can be mistaken for current reachability,TEST_EXISTS_NO_MATCHING_RUNTIME,pending broad discovery includes both,discovery tree 2ebf4f28 matches pin main e8434cfe and test 2f06c31e; runtime result absent,MainActivity.kt; presentation/navigation tests,a reachability assertion that legacy screens are not the shipped UI,host,Separate legacy counts before interpreting the broad pass total.
+70,MA2-088;MA2-134;MA2-138,All64 authentic lifecycle histories and original failure archive conservation,NOT_EXECUTED,hash and replay of 64 histories plus the original failure archive,not redone in this mapping,old Unit 7 restore cause remains UNCONFIRMED,MISSING_EVIDENCE,audit G08 and request text; bytes not rehashed here,no retained run of this scenario at the pin,final-independent-recheck GAP_CLOSURE.csv G08; V2CumulativeReview.kt schemas 1-16,"replay of schemas 1-16, recordings, and an isolated Unit 7 cause",original archives,Do not rewrite histories. Do not claim the Unit 7 cause.
+```
+
+The execution map is now complete: header and rows 1–58 in the previous part, rows 59–70 here. All 70 original execution statuses remain `NOT_EXECUTED`.
+
+## 4. CURSOR_READINESS_SCOPE_AND_EVIDENCE.json
+
+```json
+{
+  "reviewKind": "read-only readiness mapping of 48 findings and 70 execution requests",
+  "notApproval": ["app", "curriculum", "linguistic", "mapping", "owner", "release"],
+  "auditReady": false,
+  "auditStatus": "INCOMPLETE",
+  "independentFindingsRemainOpen": 48,
+  "physicalAcceptance": "outstanding and last: Galaxy S26 Ultra airplane-mode and reboot, after the final independent nonphysical audit",
+  "target": {
+    "repository": "justinkulka-lang/russian-companion",
+    "branch": "cursor/content-audit-corrections-964f",
+    "pullRequest": "https://github.com/justinkulka-lang/russian-companion/pull/64",
+    "pullRequestState": "OPEN",
+    "pullRequestDraft": true,
+    "pinnedCommit": "8eb9d3d4cc3fdbcd70d5b8904087ddad18acfaf1",
+    "pinnedSubject": "Preserve verified 1499-method discovery and broad runtime ownership",
+    "pinnedCommitTimeChicago": "2026-10-28T14:06:31-05:00",
+    "prHeadRecheckedChicago": "2026-10-28T15:12:00-05:00",
+    "newerHead": null
+  },
+  "baselineObservations": {
+    "originalAuditTarget": "8606c4d74185f594d93941bef6858b2af28e0b75",
+    "originalExternalReturn": "final-independent-recheck-results/2026-10-22-claude-code",
+    "receiptCommitNote": "engineering-audit-receipt-2026-10-22 is a historical map, not a completion claim",
+    "affectedDiscovery": {
+      "commit": "8e0b82ddc0ff573697ce4ce9b18abe082ed2c2d0",
+      "result": "541 synthetic skips, 96 classes, 0 runtime passes"
+    },
+    "affectedRuntime": {
+      "commit": "dd736e1a8657bd02a34063752afd82146ab2f842",
+      "result": "541 reported, 526 passed, 14 failed, 0 errors, 1 skipped, exit 1",
+      "testTreeMatchesPin": false
+    },
+    "followUpDiscovery": {
+      "commit": "0c6789a291c6170dab792c908dba5c9b379067fa",
+      "result": "79 synthetic skips, 13 classes, 0 runtime passes"
+    },
+    "followUpRuntime": {
+      "commit": "2faa5471c4cf36728c09684584a255268bd34adb",
+      "result": "79 reported, 79 passed, 0 failed, 0 errors, 0 skipped, 13 classes, exit 0",
+      "testTreeMatchesPin": true
+    },
+    "broadDiscovery": {
+      "commit": "2ebf4f282e42eaa5df8eb3a9e2ac491618e79f96",
+      "result": "1499 synthetic skips, 261 classes, 0 runtime passes",
+      "treesMatchPin": true
+    },
+    "broadRuntime": {
+      "target": "8eb9d3d4cc3fdbcd70d5b8904087ddad18acfaf1",
+      "state": "ACTIVE_RUN_PENDING",
+      "finalResultAvailable": false
+    }
+  },
+  "model": {
+    "name": "Grok 4.7",
+    "effort": "unknown"
+  },
+  "inputTrees": {
+    "pin": {
+      "app/src/main": "e8434cfe2b18d483ee27be79aba461add2544f38",
+      "app/src/test": "2f06c31e5b789f2c0007537f7d83722c21c548e3"
+    },
+    "curriculumFileSha256": "02202d37e0aa2c51182e4db22feff177124b6db2c270a67a93ef85e188916c19",
+    "curriculumFileBytes": 20350052,
+    "curriculumFileShaIsNot": ["repository source digest", "pack content-review digest"],
+    "officialDigestsRecomputed": false
+  },
+  "checksumChecks": [
+    "git rev-parse HEAD:app/src/main and HEAD:app/src/test at 8eb9d3d4",
+    "same trees at 2ebf4f28 and 2faa5471",
+    "main matches and test differs at 8e0b82dd and dd736e1a",
+    "main and test differ at cd2b1c91 and e5b5d3c0",
+    "SHA-256 of app/src/main/assets/content/v2-curriculum.json",
+    "PR head OID from gh pr view 64"
+  ],
+  "coverage": {
+    "uniqueFindingIds": 48,
+    "findingIdRange": "CC001-CC048",
+    "uniqueRequestNumbers": 70,
+    "requestNumberRange": "1-70",
+    "independentClosureNotClosed": 48,
+    "originalExecutionStatusNotExecuted": 70
+  },
+  "findingStateCounts": {
+    "PARTIAL_ENGINEERING_EVIDENCE": 5,
+    "CODE_CHANGE_PRESENT_VERIFICATION_GAP": 5,
+    "OPEN_ENGINEERING_GAP": 33,
+    "UNVERIFIED": 5,
+    "EVIDENCE_SUPPORTED_PENDING_INDEPENDENT_RECHECK": 0
+  },
+  "requestStateCounts": {
+    "ACTIVE_RUN_PENDING": 10,
+    "TEST_EXISTS_NO_MATCHING_RUNTIME": 18,
+    "MISSING_EVIDENCE": 39,
+    "DEFERRED_PHYSICAL_LAST": 3,
+    "RETAINED_RUNTIME_SCENARIO_MATCH": 0,
+    "PARTIAL_SCENARIO_COVERAGE": 0,
+    "HISTORICAL_INPUTS_ONLY": 0,
+    "UNVERIFIED": 0
+  },
+  "actionsNotTaken": [
+    "no Gradle",
+    "no unit tests",
+    "no lint",
+    "no builds",
+    "no exporters",
+    "no emulators",
+    "no APK assembly, install, or signing",
+    "no repository edits",
+    "no commit, push, or PR change",
+    "no branch switch in /workspace",
+    "no interaction with the active broad runtime",
+    "no execution of received audit scripts",
+    "Penguin PDF not opened",
+    "private-reference branch not opened",
+    "Unit 15 curriculum design and implementation not started"
+  ],
+  "screenshotExporters": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2,
+    "totalMethods": 16,
+    "excluded": true
+  },
+  "newConcerns": [
+    {
+      "id": "CURSOR-R2-001",
+      "locator": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt:7-37",
+      "statement": "Assignment schemas 1-16 exist. CC047's retained histories were schemas 1-5, and schemas 7-16 also lack a cited authentic retained history."
+    }
+  ],
+  "inspectedSources": [
+    "AGENTS.md current checkpoint prefix",
+    "audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md current checkpoint prefix",
+    "final-independent-recheck-results/2026-10-22-claude-code/FINDINGS.csv",
+    "final-independent-recheck-results/2026-10-22-claude-code/EXECUTION_EVIDENCE_REQUESTS.csv",
+    "final-independent-recheck-results/2026-10-22-claude-code/FINDING_RECONCILIATION.csv",
+    "final-independent-recheck-results/2026-10-22-claude-code/IMPLEMENTATION_WORK_ORDER.csv",
+    "final-independent-recheck-results/2026-10-22-claude-code/GAP_CLOSURE.csv",
+    "final-independent-recheck-results/2026-10-22-claude-code/FINAL_NONPHYSICAL_SCOPE_DECISION.md was located; the operating limits were taken from the assignment and GAP_CLOSURE G08/G10",
+    "engineering-audit-receipt-2026-10-22/README.md",
+    "engineering-audit-receipt-2026-10-22/ENGINEERING_TRIAGE.csv",
+    "engineering-audit-receipt-2026-10-22/ENGINEERING_EXECUTION_REQUEST_MAP.csv",
+    "directory names under engineering-cc001 through engineering-cc017, insets, backup boundaries, source binding, and unit 6-14 engineering reports",
+    "app/src/main/assets/content/v2-curriculum.json by structured queries, not by a full prose read",
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/V2Validator.kt variance and rationale sections",
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/OriginalApplicationTuplePins.kt",
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/V2OptionPresentation.kt",
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/V2GovernedIdentity.kt lab offers",
+    "app/src/main/java/dev/russiancompanion/v2/ui/V2Chrome.kt",
+    "app/src/main/java/dev/russiancompanion/v2/ui/V2Screens.kt",
+    "app/src/main/java/dev/russiancompanion/v2/ui/V2PracticeFlows.kt",
+    "app/src/main/java/dev/russiancompanion/v2/ui/V2CumulativeReviewScreen.kt",
+    "app/src/main/java/dev/russiancompanion/v2/ui/V2App.kt",
+    "app/src/main/java/dev/russiancompanion/v2/ui/V2BackupCoordinator.kt",
+    "app/src/main/java/dev/russiancompanion/v2/backup/V2BackupEngine.kt",
+    "app/src/main/java/dev/russiancompanion/v2/backup/V2BackupFormat.kt",
+    "app/src/main/java/dev/russiancompanion/release/ReleaseGate.kt",
+    "app/src/main/java/dev/russiancompanion/presentation/MainActivity.kt",
+    "app/src/main/AndroidManifest.xml",
+    "app/src/test/java/dev/russiancompanion/v2/HostActivityLifecycleTest.kt class and method inventory",
+    "method inventories of the named request selectors",
+    "docs/governance/MASTER_AUTHORITY_v2.0.md MA2-178",
+    "docs/governance/MASTER_AUTHORITY_v2.0_AMENDMENT_1.md section 3",
+    "docs/governance/OWNER_MAPPING_AND_VARIANCE_ACCEPTANCE.md",
+    "docs/governance/OWNER_VARIANCE_DECISION_PACKET.md",
+    "docs/governance/OWNER_EDITION_VERIFICATION_DECISION_SHEET.md opening",
+    "gradle/wrapper/gradle-wrapper.properties",
+    ".github/workflows/build.yml license and test steps"
+  ],
+  "uninspected": [
+    "broad runtime result and its external process state",
+    "RAW_DISCOVERY.zip member hashes were not re-checksummed in this mapping",
+    "repository source digest and pack content-review digest",
+    "Penguin PDF and private-reference branch",
+    "full prose of every engineering-cc report body",
+    "every curriculum item beyond the sampled finding locators",
+    "64 retained history bytes and the original Unit 7 restore isolation",
+    "physical device",
+    "native SQLite JIT cause"
+  ],
+  "accessBlockers": [],
+  "workspaceLeftUntouched": {
+    "path": "/workspace",
+    "branch": "cursor/phase-1-data-model-964f",
+    "head": "fc2c94c70cc2ecdb59457e477cb1c7124970eab8"
+  }
+}
+```
+
+All four deliverables are now in the chat: the report, the 48-row finding register, the 70-row execution map (rows 1–58 previously, row 59 replaced in full here, rows 60–70 here), and the scope JSON. This mapping does not declare the app audit-ready. All 48 findings remain independently OPEN.

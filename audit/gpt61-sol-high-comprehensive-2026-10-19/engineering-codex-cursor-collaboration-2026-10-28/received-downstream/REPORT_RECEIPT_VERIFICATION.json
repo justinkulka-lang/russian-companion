@@ -1,0 +1,22 @@
+{
+  "deliveryStatus": "REPORT_AND_CSV_ROWS_27_48_RECEIVED; CSV_ROWS_1_26_AND_49_64_MISSING",
+  "attachment": {
+    "sedimentFileId": "file_00000000260c81f58485f201d9bed064",
+    "bytes": 10056,
+    "sha256": "c717f3d263c9e67dc4b307096e89634ca8b0e56d38300682f0f6ef841238882a"
+  },
+  "previousReceiptBytesConserved": true,
+  "reportReceived": true,
+  "csvDataRowsReceived": 22,
+  "missingCsvDataRows": 42,
+  "missingRanges": [
+    "1-26",
+    "49-64"
+  ],
+  "semanticReview": "Report retained as reviewer evidence; not a final runtime diagnosis. Earlier Unit22 source spot-check supports the reported two-answer prerequisite omission. Other claims require independent review.",
+  "repositoryMutation": false,
+  "testExecution": false,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "Outstanding and LAST"
+}
