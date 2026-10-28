@@ -4,7 +4,7 @@ from datetime import datetime,timezone
 from collections import Counter
 import xml.etree.ElementTree as ET
 r=read(D/'REGRESSION_RESULT.json');scope=read(D/'SCOPE.json');prep=read(D/'PREPARATION.json');expected={(t['testClass'],t['method']) for t in scope['expectedMethods']}
-sets={}
+sets={};xmlfailures={}
 for mode,name in [('DISCOVERY','RAW_DISCOVERY'),('REGRESSION','RAW_AFFECTED')]:
     verify_archive(name)
     with zipfile.ZipFile(D/(name+'.zip')) as z:
@@ -25,6 +25,10 @@ for mode,name in [('DISCOVERY','RAW_DISCOVERY'),('REGRESSION','RAW_AFFECTED')]:
                 k=(t.get('classname'),t.get('name'));assert k not in rows
                 rows[k]='FAILED' if t.find('failure') is not None else 'ERROR' if t.find('error') is not None else 'SKIPPED' if t.find('skipped') is not None else 'PASSED'
                 e=next((t.find(a) for a in ['failure','error','skipped'] if t.find(a) is not None),None);data=(e.get('message','') if e is not None else '').encode();messages[k]=sha(data);lengths[k]=len(data)
+                if mode=='REGRESSION':
+                    for kind in ['failure','error']:
+                        failure=t.find(kind)
+                        if failure is not None:xmlfailures[(*k,kind)]=(failure.get('message',''),failure.text or '')
         assert set(rows)==expected and rows=={(t['testClass'],t['method']):t['outcome'] for t in s['tests']}
         for t in s['tests']:assert messages[t['testClass'],t['method']]==t['fullMessageSha256'] and lengths[t['testClass'],t['method']]==t['fullMessageBytes']
         events=[json.loads(x) for x in z.read(mode+'/EVENTS.jsonl').splitlines()];events=[e for e in events if e.get('kind')=='RESULT'];assert len(events)==scope['methodCount']
@@ -46,7 +50,20 @@ with zipfile.ZipFile(archive) as z:
 before={(t['testClass'],t['method']) for t in prior['tests']};assert len(before)==481 and before<=expected
 assert expected-before=={(t['testClass'],t['method']) for t in scope['addedMethods']}
 assert {(t['testClass'],t['method']) for t in scope['currentUnit14ControlMethods']}<=expected
-assert read(D/'ACTUAL_FAILURES.json')['count']==r['testCounts']['failed']+r['testCounts']['errors']
+failureindex=read(D/'ACTUAL_FAILURES.json');storage=failureindex['storage']
+assert storage['format']=='LOSSLESS_ZIP' and storage['archive']=='ACTUAL_FAILURES_FULL.zip'
+assert storage['member']=='ACTUAL_FAILURES.json' and sha((D/storage['archive']).read_bytes())==storage['archiveSha256']
+with zipfile.ZipFile(D/storage['archive']) as z:
+    assert z.testzip() is None and z.namelist()==[storage['member']]
+    raw=z.read(storage['member']);assert len(raw)==storage['memberBytes'] and sha(raw)==storage['memberSha256']
+    fullfailures=json.loads(raw)
+assert fullfailures['sourceCommit']==failureindex['sourceCommit']==r['sourceCommit']
+assert fullfailures['count']==failureindex['count']==len(fullfailures['failures'])==len(xmlfailures)==r['testCounts']['failed']+r['testCounts']['errors']
+assert fullfailures['originalAssertionsNotWaived'] and failureindex['originalAssertionsNotWaived']
+assert {(f['testClass'],f['method'],f['kind']):(f['message'],f['trace']) for f in fullfailures['failures']}==xmlfailures
+assert failureindex['failures']==[dict(testClass=f['testClass'],method=f['method'],kind=f['kind'],
+    **{key+suffix:value for key in ['message','trace']
+       for suffix,value in [('Bytes',len(f[key].encode())),('Sha256',sha(f[key].encode()))]}) for f in fullfailures['failures']]
 controls=read(D/'UNIT14_CONTROLS_RECHECKED.json');assert controls['all22Included'] and len(controls['methods'])==22
 for t in controls['methods']:assert t['outcome']==sets['REGRESSION'][t['testClass'],t['method']]
 assert controls['allPassed']==all(t['outcome']=='PASSED' for t in controls['methods'])
