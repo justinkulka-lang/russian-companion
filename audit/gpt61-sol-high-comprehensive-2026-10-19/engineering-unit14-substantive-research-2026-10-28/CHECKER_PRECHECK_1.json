@@ -1,0 +1,16 @@
+{
+  "observedUtc": "2026-10-28T10:09:12.394809+00:00",
+  "command": [
+    "python3",
+    "-B",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit14-substantive-research-2026-10-28/extract_source_bindings.py"
+  ],
+  "exitCode": 1,
+  "exceptionType": "KeyError",
+  "message": "responseKind",
+  "checkerSha256": "56f0f7a64d273437c08dd16a4dab3a6ff8976bcb3671da5b1427625ecd8f33ff",
+  "cause": "Checker assumed all existing classification assessments carry responseKind;Unit10 legacy authored assessments omit it.",
+  "correction": "Record the existing nullable raw field using get;do not add fields to curriculum or infer qualified acceptance.",
+  "newJUnitMethodsExecuted": 0,
+  "productionOrTestChanged": false
+}

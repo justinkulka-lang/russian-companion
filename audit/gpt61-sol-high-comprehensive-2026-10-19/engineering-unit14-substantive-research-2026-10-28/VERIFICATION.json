@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "researchSource": "2926452c190bac07b1363788ae555322f9b22eae",
+  "currentConservationVerified": true,
+  "objectiveChains": 72,
+  "checkInventory": 226,
+  "selectedCandidates": 11,
+  "plannedDueAnswers": 3,
+  "archivesShaCrc": 74,
+  "historicalUnit14ArchiveRecords": 3,
+  "historicalUnit15ArchiveRecords": 0,
+  "registeredObjectsPreserved": 40,
+  "existingSchemasPreserved": 15,
+  "bindingsConserved": 155,
+  "testSourceFilesConserved": 276,
+  "newJUnitMethodsExecuted": 0,
+  "proposal": "NOT_ACTIVATED",
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}
