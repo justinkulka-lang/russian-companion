@@ -20,7 +20,9 @@ internal object RecordedCurriculumConservationScope {
     const val beforeUnit11PackImplementation = "85e7eaf21335a107d64b99a4f1969bab4f74670d"
     const val beforeUnit12PackImplementation = "c2d297e79fa677aa1375917cfbe052e4c0806633"
     const val beforeUnit13PackImplementation = "ca0fdaeca8de81ab6a5d4935fbcdcb068c4af913"
-    const val currentPackImplementation = "bd00e5082c9f31d2ae3b379dd6204dd3b28e4475"
+    const val beforeUnit14PackImplementation = "bd00e5082c9f31d2ae3b379dd6204dd3b28e4475"
+    const val beforeUnit14ReviewImplementation = "96242a17a87cc2ec0f5d7418cd98a9d3220a9e99"
+    const val currentPackImplementation = "d72afd1232857a857624c20c58f4bcd3cb5c8564"
     private val sources = mutableMapOf<String, V2CurriculumPack>()
     private val currentUnitSources = mapOf(
         4 to "e6db0bdfe0bbb40edf190623e2123014946f305b",
@@ -30,18 +32,32 @@ internal object RecordedCurriculumConservationScope {
         10 to beforeUnit11PackImplementation,
         11 to beforeUnit12PackImplementation,
         12 to beforeUnit13PackImplementation,
-        13 to currentPackImplementation,
-        14 to "96242a17a87cc2ec0f5d7418cd98a9d3220a9e99",
+        13 to beforeUnit14PackImplementation,
+        14 to currentPackImplementation,
         15 to "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04",
     )
 
     fun source(root: File, commit: String): V2CurriculumPack =
         sources.getOrPut(root.canonicalPath + ":" + commit) { RecordedIntakeCorrectionScope.load(root, commit) }
 
+    /** Restore only Unit14's v1 declaration; prove the complete actual-current baseline. */
+    fun beforeUnit14PluralPossessionReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
+        assertCurrent(root, current)
+        val prior = current.copy(units = current.units.map { unit ->
+            if (unit.number == 14) unit.copy(advancement = unit.advancement!!.copy(
+                cumulativeReviewPolicyId = Unit14CumulativeReviewPolicy.definition.id)) else unit
+        })
+        assertEquals("Only the Unit14 policy declaration may differ from its actual v1 asset", source(root, beforeUnit14PackImplementation), prior)
+        assertEquals("The actual-current Unit14 baseline must match in full", source(root, "9101af8c182b3415426ed9226cb211a707a2c393"), prior)
+        RecordedIntakeCorrectionScope.assertCurrentUnitMatches(prior, source(root, beforeUnit14ReviewImplementation), 14)
+        return prior
+    }
+
     /** Restore only Unit13's v2 declaration; every other field must match its actual producer. */
     fun beforeUnit13PresentReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
         assertCurrent(root, current)
-        val prior = current.copy(units = current.units.map { unit ->
+        val beforeUnit14 = beforeUnit14PluralPossessionReview(root, current)
+        val prior = beforeUnit14.copy(units = beforeUnit14.units.map { unit ->
             if (unit.number == 13) unit.copy(advancement = unit.advancement!!.copy(
                 cumulativeReviewPolicyId = Unit13WiderCumulativeReviewPolicy.definition.id)) else unit
         })
@@ -181,6 +197,7 @@ internal object RecordedCurriculumConservationScope {
                     11 -> beforeUnit11NounReview(root, current)
                     12 -> beforeUnit12GenderReview(root, current)
                     13 -> beforeUnit13PresentReview(root, current)
+                    14 -> beforeUnit14PluralPossessionReview(root, current)
                     else -> current
                 }).let { current ->
                 assertEquals("unchanged current unit $number", digest, V2Validator.unitContentReviewDigest(current, number))
@@ -204,6 +221,11 @@ internal object RecordedCurriculumConservationScope {
                 if (number == 13) {
                     RecordedIntakeCorrectionScope.assertCurrentUnitMatches(current, source(root, currentUnitSources.getValue(number)), number)
                     assertNotEquals("Current Unit13 v3 must retain its own identity", digest,
+                        V2Validator.unitContentReviewDigest(current, number))
+                }
+                if (number == 14) {
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(current, source(root, currentUnitSources.getValue(number)), number)
+                    assertNotEquals("Current Unit14 v2 must retain its own identity", digest,
                         V2Validator.unitContentReviewDigest(current, number))
                 }
             }

@@ -1,0 +1,35 @@
+{
+  "selectedCommit": "9101af8c182b3415426ed9226cb211a707a2c393",
+  "observations": [
+    {
+      "commit": "9101af8c182b3415426ed9226cb211a707a2c393",
+      "kernelSha256": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
+      "referenceRecordedSha256": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
+      "matches": true,
+      "referenceFileSha256": "fe7c4472c07f40aa71ad6fcf6ac62ff6d4409bcdf17a17d83f5cb78fc59d320f"
+    },
+    {
+      "commit": "f670c24e04def2829a7949e83b91b83a0dedf338",
+      "kernelSha256": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
+      "referenceRecordedSha256": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
+      "matches": true,
+      "referenceFileSha256": "fe7c4472c07f40aa71ad6fcf6ac62ff6d4409bcdf17a17d83f5cb78fc59d320f"
+    },
+    {
+      "commit": "ab5795a015e63695482d00582ab8796e791aabfc",
+      "kernelSha256": "cb279ccc1eaeec8d34ad7e51cccf6860b984f96549ae0bf347d538a1edfa483a",
+      "referenceRecordedSha256": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
+      "matches": false,
+      "referenceFileSha256": "fe7c4472c07f40aa71ad6fcf6ac62ff6d4409bcdf17a17d83f5cb78fc59d320f"
+    },
+    {
+      "commit": "31ac807387253082c44bd2f6d67021478f0df66e",
+      "kernelSha256": "e8f201603d8e66e1e908df8680258eadb2af88e7a9c2e28a5aaa16fa03617a2b",
+      "referenceRecordedSha256": "e8f201603d8e66e1e908df8680258eadb2af88e7a9c2e28a5aaa16fa03617a2b",
+      "matches": true,
+      "referenceFileSha256": "d31acb7ce139ae1ed2b63c69338c9d0e35ed202bf09b4dd3980ae9552a6251e8"
+    }
+  ],
+  "priorUnit13PairUnchanged": true,
+  "postCorePairIsNotMatching": true
+}

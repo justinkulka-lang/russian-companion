@@ -2054,7 +2054,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
-      "sha256": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
+      "sha256": "cb279ccc1eaeec8d34ad7e51cccf6860b984f96549ae0bf347d538a1edfa483a",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -5291,6 +5291,17 @@
       "additionalExistingItemReferences": [],
       "allExistingBindingsUnchanged": true,
       "scope": "Reuses existing supplied present/aspect-partner/past-gender pools; separate Unit13v3/schema15, exact directional v1/v2 and owner13 bridges, English labels only. No new Cyrillic literal,item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "d72afd1232857a857624c20c58f4bcd3cb5c8564",
+      "previousRecordedSha256": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
+      "sha256": "cb279ccc1eaeec8d34ad7e51cccf6860b984f96549ae0bf347d538a1edfa483a",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Reuses existing supplied nominative plurals, possession/absence and reported-frame-time pools; separate Unit14v2/schema16, exact oldv1 and downstream owner14 bridge, English labels only. No new Cyrillic literal,item reference or language construction; no semantic/rights acceptance.",
       "semanticAcceptance": false,
       "rightsAcceptance": false
     }
