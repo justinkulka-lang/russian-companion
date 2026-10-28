@@ -1,0 +1,2094 @@
+{
+  "producerCommit": "f2628b363b241bce8bc71c25ca56b66aadd21dcd",
+  "curriculumSourceCommit": "9101af8c182b3415426ed9226cb211a707a2c393",
+  "captures": {
+    "PARTIAL_UNIT14_V1": {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit14-plural-possession-baseline-2026-10-28/PARTIAL_UNIT14_V1.zip",
+      "zipBytes": 63397,
+      "zipSha256": "3ee399dfada9ecdcee7b79e89235264100e201fa4d0f432cfed10cc33ced5a37",
+      "zipCrcPassed": true,
+      "members": [
+        {
+          "path": "manifest.json",
+          "bytes": 442,
+          "crc32": "5b293f99",
+          "sha256": "7bbcde72115f18500b084f2664034f5a93b877e74c73ad947976b1be134126fb"
+        },
+        {
+          "path": "learner.json",
+          "bytes": 336085,
+          "crc32": "e3e3e288",
+          "sha256": "37ac5b88cdad3b01e645f7a59313db5bcf2c25f34081270ea12b5a26b2103959"
+        }
+      ],
+      "backupFormatVersion": 3,
+      "documentSchemaVersion": 3,
+      "assignmentSchema": 1,
+      "answerRecordSchemas": [
+        1
+      ],
+      "assignment": {
+        "id": "48c2b0b7-6c44-4d16-aaad-ecb304c0268a",
+        "targetUnit": 14,
+        "policyId": "unit14-prior-reading-reported-time-v1",
+        "policyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+        "responseRuleDigest": "13295a5b6ea35a2f9fd61584f179015be1e2df7579d237aa557ab943c8fab967",
+        "boundary": 25,
+        "slots": [
+          {
+            "objectiveId": "obj-u1-decoding",
+            "skill": "BOUNDED_READING",
+            "itemId": "u1-i-decode-pair",
+            "ownerUnit": 1,
+            "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+            "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+            "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+          },
+          {
+            "objectiveId": "obj-u13-reported",
+            "skill": "SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION",
+            "itemId": "u13-i-report-frame-time",
+            "ownerUnit": 13,
+            "itemDigest": "d29683b08ebcf92a6af28b42c5f55f00641e3d2f9d3e511949660d858c7d86b5",
+            "unitDigest": "ae2d0e08ccaf677889bc45bb7faa556445f181aee2620c2da350b89a596ff90e",
+            "teachingDigest": "9207438de1d62c51a9f491d0989f342d3cdcfc4562e683ece7195176dc62caa0"
+          }
+        ],
+        "digest": "336428a6a89a5701999f12be3348812677c3174856fa8d4cbd4009f24d58da7d",
+        "schema": 1
+      },
+      "answers": [
+        {
+          "id": "0c40b443-ef69-4eff-a4da-b21d62c5be0d",
+          "assignmentId": "48c2b0b7-6c44-4d16-aaad-ecb304c0268a",
+          "assignmentDigest": "336428a6a89a5701999f12be3348812677c3174856fa8d4cbd4009f24d58da7d",
+          "slotIndex": 0,
+          "selected": "\u0410 / \u0430",
+          "acceptedOrder": 26,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "profile": {
+        "id": "local",
+        "onboardingCompleted": true,
+        "currentUnitNumber": 14,
+        "startingPoint": "NEW_TO_CYRILLIC",
+        "hasPenguin": true,
+        "hasAnki": false,
+        "hasBinder": false,
+        "hasTutor": false,
+        "dailyMinutes": 35,
+        "transliterationEnabled": true,
+        "currentSessionId": "u14-s-orient",
+        "currentStepIndex": 0,
+        "resumeContentDigest": "8b3a57254bf6f5fb11c6db9f73cd0021fa47d7c8d76521fffb4b567ca880c439",
+        "resumeIdentitySchema": 1
+      },
+      "recordingCount": 0,
+      "unitCompletions": [
+        {
+          "unitNumber": 1,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "",
+          "reviewAssignmentId": "",
+          "reviewCompletionOrder": 0
+        },
+        {
+          "unitNumber": 2,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "",
+          "reviewAssignmentId": "",
+          "reviewCompletionOrder": 0
+        },
+        {
+          "unitNumber": 3,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "e95b4eca3c8faf01804b7b917a0be1a5ee191366666111154f857f8a4965c132",
+          "reviewAssignmentId": "0814bb45-ce0d-4282-b4bc-4380fe47754f",
+          "reviewCompletionOrder": 2
+        },
+        {
+          "unitNumber": 4,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "d543575bed3775b34ac9569377aadcbe92a476e18803c7dd3f4e8a7c3d18282a",
+          "reviewAssignmentId": "9c15ca6d-d620-4313-987f-4874c8a9c55f",
+          "reviewCompletionOrder": 4
+        },
+        {
+          "unitNumber": 5,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "89e4b12e0594f9ec7eea1e2ec2d7be7301f4fcc9d123a28de78b5ae28d671f55",
+          "reviewAssignmentId": "6f1f07aa-5765-406e-84e4-3724b656c7f8",
+          "reviewCompletionOrder": 6
+        },
+        {
+          "unitNumber": 6,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "3a0dd1afef581c7bd6f4368dfa95339d78f03d9ba7bc01baa92d0693d94c70db",
+          "reviewAssignmentId": "6df9f68c-ff49-4fe9-8eea-7e3ad4cc236b",
+          "reviewCompletionOrder": 9
+        },
+        {
+          "unitNumber": 7,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "240289f89ccf67ffb514c5489e3b467a55d01d7e85007e68efb19a4aa3b98116",
+          "reviewAssignmentId": "0c98e099-7896-4794-8c94-0af2fb18df07",
+          "reviewCompletionOrder": 11
+        },
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "202efa0e8f59f45e733b37efecbf2ba2da28e5ebeb814c1d51e1d200ada90cc3",
+          "reviewAssignmentId": "53c3fe37-0392-408d-8a00-fe86258863a6",
+          "reviewCompletionOrder": 13
+        },
+        {
+          "unitNumber": 9,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "15fade129c79555720b90418dfeaa5a7a11729d0c79e61f52353205af1011040",
+          "reviewAssignmentId": "3ccdf756-c550-470e-b8fd-d14d898110b6",
+          "reviewCompletionOrder": 16
+        },
+        {
+          "unitNumber": 10,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "6eec9a30b445961cb739d04b1fe052cd35b7128a2d58bd42a370fddd14e19404",
+          "reviewAssignmentId": "c9419cdb-4c61-403a-abf1-c10b62f2edd9",
+          "reviewCompletionOrder": 18
+        },
+        {
+          "unitNumber": 11,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "4b215e8001d550979d6dd56220ffcabd87277111859405f80dc4179d09ecae8d",
+          "reviewAssignmentId": "9b15ccf7-aa23-4732-8db4-3653311e28b2",
+          "reviewCompletionOrder": 20
+        },
+        {
+          "unitNumber": 12,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "be5d6eba63fc1f320a0e57c6fef35793c2508ed8653681c9bcd66db914ac2be8",
+          "reviewAssignmentId": "7c668e65-2d76-4424-a6da-b97bd0823a7a",
+          "reviewCompletionOrder": 22
+        },
+        {
+          "unitNumber": 13,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "4a491b34b433a5a3865cc5a0a7eb9cb8e816a4d2230680115e2a68ab7f0e6c65",
+          "reviewAssignmentId": "119b2481-eb30-4050-94a8-23a1ccb91e5d",
+          "reviewCompletionOrder": 25
+        }
+      ],
+      "prerequisitePolicies": {
+        "11": {
+          "policyId": "unit11-prior-noun-behavior-possession-absence-v2",
+          "schema": 13
+        },
+        "12": {
+          "policyId": "unit12-prior-gender-past-gender-v2",
+          "schema": 14
+        },
+        "13": {
+          "policyId": "unit13-prior-present-aspect-past-gender-v3",
+          "schema": 15
+        }
+      },
+      "ordinaryUnits": [
+        {
+          "unit": 1,
+          "stepsCompleted": 42,
+          "checkIds": [
+            "u1-i-\u0440-not-p",
+            "u1-i-\u043d-not-h",
+            "u1-i-\u0441-not-c",
+            "u1-i-\u0432-not-b",
+            "u1-i-\u0443-not-y",
+            "u1-i-\u0445-not-x",
+            "u1-i-\u0435-identity",
+            "u1-i-\u0451-identity",
+            "u1-i-\u044e-identity",
+            "u1-i-\u044f-identity",
+            "u1-i-\u044c-not-vowel",
+            "u1-i-\u044a-not-vowel",
+            "u1-i-\u0439-not-vowel",
+            "u1-i-print-pair",
+            "u1-i-decode-pair",
+            "u1-i-\u0430-identity",
+            "u1-i-name-be"
+          ],
+          "guidedIds": [
+            "u1-i-\u0430-identity",
+            "u1-i-\u043c-identity",
+            "u1-g-guided-confusable",
+            "u1-g-guided-iotated",
+            "u1-g-guided-signs",
+            "u1-g-guided-print",
+            "u1-g-guided-decoding",
+            "u1-g-name-a"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 2,
+          "stepsCompleted": 16,
+          "checkIds": [
+            "u2-i-\u0432-not-b",
+            "u2-i-\u0443-not-y",
+            "u2-i-\u0445-not-x",
+            "u2-i-print-\u0431",
+            "u2-i-\u044f-identity"
+          ],
+          "guidedIds": [
+            "u2-i-print-\u0431"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 3,
+          "stepsCompleted": 29,
+          "checkIds": [
+            "u3-i-gender-\u0433\u043e\u0440\u043e\u0434",
+            "u3-i-gender-\u0434\u0440\u0443\u0433",
+            "u3-i-gender-\u0434\u0432\u0435\u0440\u044c",
+            "u3-i-gender-\u043c\u043e\u0440\u0435",
+            "u3-i-gender-\u0434\u044f\u0434\u044f",
+            "u3-i-phrase-\u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430",
+            "u3-i-phrase-\u0434\u0430",
+            "u3-i-phrase-\u043d\u0435\u0442",
+            "u3-i-phrase-\u044d\u0442\u043e",
+            "u3-i-name-moya-sobaka",
+            "u3-i-name-chto-eto",
+            "u3-i-name-kto-eto"
+          ],
+          "guidedIds": [
+            "u3-i-gender-\u0441\u0442\u043e\u043b",
+            "u3-i-gender-\u0434\u043e\u043c",
+            "u3-i-gender-\u043a\u043d\u0438\u0433\u0430",
+            "u3-i-gender-\u043e\u043a\u043d\u043e",
+            "u3-i-gender-\u043c\u0443\u0436\u0447\u0438\u043d\u0430",
+            "u3-i-phrase-\u0437\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435",
+            "u3-i-phrase-\u0441\u043f\u0430\u0441\u0438\u0431\u043e",
+            "u3-i-name-moy-stol"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 4,
+          "stepsCompleted": 44,
+          "checkIds": [
+            "u4-i-pronoun-\u0442\u044b",
+            "u4-i-pronoun-\u0432\u044b",
+            "u4-i-pronoun-\u043e\u043d",
+            "u4-i-pronoun-\u043e\u043d\u0430",
+            "u4-i-pronoun-\u043e\u043d\u043e",
+            "u4-i-pronoun-\u043e\u043d\u0438",
+            "u4-i-verb-\u0433\u043e\u0432\u043e\u0440\u0438\u0442\u044c-\u043c\u044b",
+            "u4-i-verb-\u0432\u0438\u0434\u0435\u0442\u044c-\u043e\u043d",
+            "u4-i-verb-\u043f\u0438\u0441\u0430\u0442\u044c-\u0432\u044b",
+            "u4-i-verb-\u0438\u0434\u0442\u0438-\u043e\u043d\u0438",
+            "u4-i-stress-1f37b6b2",
+            "u4-i-stress-2114b12f",
+            "u4-i-nom-role-train",
+            "u4-i-nom-role-student"
+          ],
+          "guidedIds": [
+            "u4-i-pronoun-\u044f",
+            "u4-i-pronoun-\u043c\u044b",
+            "u4-i-verb-\u0447\u0438\u0442\u0430\u0442\u044c-\u0442\u044b",
+            "u4-i-verb-\u0434\u0435\u043b\u0430\u0442\u044c-\u044f",
+            "u4-g-present-\u0433\u043e\u0432\u043e\u0440\u0438\u0442\u044c-\u044f",
+            "u4-g-present-\u0432\u0438\u0434\u0435\u0442\u044c-\u044f",
+            "u4-g-present-\u043f\u0438\u0441\u0430\u0442\u044c-\u044f",
+            "u4-g-present-\u0438\u0434\u0442\u0438-\u044f",
+            "u4-i-stress-6f15e9f1",
+            "u4-g-nom-role",
+            "u4-g-nominative-1",
+            "u4-i-nom-muzh",
+            "u4-i-nom-poezd"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 5,
+          "stepsCompleted": 33,
+          "checkIds": [
+            "u5-i-q-kogda",
+            "u5-i-q-pochemu",
+            "u5-i-q-kak",
+            "u5-i-q-gde",
+            "u5-i-pattern-pattern-kto-eto",
+            "u5-i-pattern-pattern-kak-dela",
+            "u5-i-pattern-pattern-gde-zhivete",
+            "u5-i-prep-o-sade",
+            "u5-i-prep-v-moskve",
+            "u5-i-indecl-\u0442\u0430\u043a\u0441\u0438",
+            "u5-i-indecl-\u043c\u0435\u0442\u0440\u043e",
+            "u5-i-indecl-\u043a\u0438\u043d\u043e",
+            "u5-i-decl-\u043a\u043d\u0438\u0433\u0430",
+            "u5-i-decl-\u043e\u043a\u043d\u043e"
+          ],
+          "guidedIds": [
+            "u5-i-q-kto",
+            "u5-i-q-chto",
+            "u5-i-pattern-pattern-chto-eto",
+            "u5-i-prep-o-knige",
+            "u5-i-prep-o-pisme",
+            "u5-i-prep-field-\u043a\u043d\u0438\u0433\u0430",
+            "u5-i-prep-field-\u043f\u0438\u0441\u044c\u043c\u043e",
+            "u5-i-indecl-\u0440\u0430\u0434\u0438\u043e"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 6,
+          "stepsCompleted": 60,
+          "checkIds": [
+            "u6-i-possessive-1",
+            "u6-i-possessive-2",
+            "u6-i-possessive-3",
+            "u6-i-third-1",
+            "u6-i-third-2",
+            "u6-i-object-1",
+            "u6-i-object-2",
+            "u6-i-object-3",
+            "u6-i-feminine-1",
+            "u6-i-feminine-2",
+            "u6-i-animacy-1",
+            "u6-i-animacy-2",
+            "u6-i-animacy-3",
+            "u6-i-pronoun-1",
+            "u6-i-pronoun-2",
+            "u6-i-pronoun-3",
+            "u6-i-direction-1",
+            "u6-i-direction-2",
+            "u6-i-direction-3"
+          ],
+          "guidedIds": [
+            "u6-g-possessive-0",
+            "u6-g-third-0",
+            "u6-g-object-0",
+            "u6-g-feminine-0",
+            "u6-g-animacy-0",
+            "u6-g-pronoun-0",
+            "u6-g-direction-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 7,
+          "stepsCompleted": 85,
+          "checkIds": [
+            "u7-i-default-1",
+            "u7-i-default-2",
+            "u7-i-default-3",
+            "u7-i-default-4",
+            "u7-i-endings-1",
+            "u7-i-endings-2",
+            "u7-i-endings-3",
+            "u7-i-endings-4",
+            "u7-i-spelling-1",
+            "u7-i-spelling-2",
+            "u7-i-spelling-3",
+            "u7-i-question-1",
+            "u7-i-question-2",
+            "u7-i-question-3",
+            "u7-i-demonstrative-1",
+            "u7-i-demonstrative-2",
+            "u7-i-demonstrative-3",
+            "u7-i-place-1",
+            "u7-i-place-2",
+            "u7-i-place-3",
+            "u7-i-objectadj-1",
+            "u7-i-objectadj-2",
+            "u7-i-objectadj-3",
+            "u7-i-adverb-1",
+            "u7-i-adverb-2",
+            "u7-i-adverb-invariance-1",
+            "u7-i-adverb-invariance-2",
+            "u7-i-adverb-pairs-1",
+            "u7-i-adverb-pairs-2",
+            "u7-i-manner-1",
+            "u7-i-manner-2",
+            "u7-i-manner-3",
+            "u7-i-manner-4"
+          ],
+          "guidedIds": [
+            "u7-g-default-0",
+            "u7-g-endings-0",
+            "u7-g-spelling-0",
+            "u7-g-question-0",
+            "u7-g-demonstrative-0",
+            "u7-g-place-0",
+            "u7-g-objectadj-0",
+            "u7-g-adverb-0",
+            "u7-g-adverb-invariance-0",
+            "u7-g-adverb-pairs-0",
+            "u7-g-manner-1"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 8,
+          "stepsCompleted": 50,
+          "checkIds": [
+            "u8-i-plural-1",
+            "u8-i-plural-2",
+            "u8-i-plural-3",
+            "u8-i-plural-4",
+            "u8-i-plural-5",
+            "u8-i-plural-6",
+            "u8-i-spelling-1",
+            "u8-i-spelling-2",
+            "u8-i-spelling-3",
+            "u8-i-spelling-4",
+            "u8-i-irregular-1",
+            "u8-i-irregular-2",
+            "u8-i-irregular-3",
+            "u8-i-agreement-1",
+            "u8-i-agreement-2",
+            "u8-i-agreement-3",
+            "u8-i-availability-1",
+            "u8-i-availability-2",
+            "u8-i-availability-3"
+          ],
+          "guidedIds": [
+            "u8-g-plural-0",
+            "u8-g-spelling-0",
+            "u8-g-irregular-0",
+            "u8-g-agreement-0",
+            "u8-g-availability-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 9,
+          "stepsCompleted": 81,
+          "checkIds": [
+            "u9-i-cardinal-1",
+            "u9-i-cardinal-2",
+            "u9-i-cardinal-3",
+            "u9-i-cardinal-4",
+            "u9-i-teens-1",
+            "u9-i-teens-2",
+            "u9-i-teens-3",
+            "u9-i-tens-1",
+            "u9-i-tens-2",
+            "u9-i-tens-3",
+            "u9-i-hundreds-1",
+            "u9-i-hundreds-2",
+            "u9-i-hundreds-3",
+            "u9-i-thousands-1",
+            "u9-i-thousands-2",
+            "u9-i-thousands-3",
+            "u9-i-thousands-4",
+            "u9-i-odindva-1",
+            "u9-i-odindva-2",
+            "u9-i-odindva-3",
+            "u9-i-odindva-4",
+            "u9-i-odindva-5",
+            "u9-i-quantity-1",
+            "u9-i-quantity-2",
+            "u9-i-quantity-3",
+            "u9-i-quantity-4",
+            "u9-i-quantity-5",
+            "u9-i-quantity-6",
+            "u9-i-quantity-7",
+            "u9-i-quantity-8",
+            "u9-i-quantity-9",
+            "u9-i-pattern-1",
+            "u9-i-pattern-2",
+            "u9-i-pattern-3",
+            "u9-i-pattern-4"
+          ],
+          "guidedIds": [
+            "u9-g-cardinal-0",
+            "u9-g-teens-0",
+            "u9-g-tens-0",
+            "u9-g-hundreds-0",
+            "u9-g-thousands-0",
+            "u9-g-odindva-0",
+            "u9-g-quantity-0",
+            "u9-g-pattern-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 10,
+          "stepsCompleted": 65,
+          "checkIds": [
+            "u10-i-have-1",
+            "u10-i-have-2",
+            "u10-i-have-3",
+            "u10-i-have-4",
+            "u10-i-absence-1",
+            "u10-i-absence-2",
+            "u10-i-absence-3",
+            "u10-i-absence-4",
+            "u10-i-pronoun-1",
+            "u10-i-pronoun-2",
+            "u10-i-pronoun-3",
+            "u10-i-pronoun-4",
+            "u10-i-preposition-1",
+            "u10-i-preposition-2",
+            "u10-i-preposition-3",
+            "u10-i-preposition-4",
+            "u10-i-adjective-1",
+            "u10-i-adjective-2",
+            "u10-i-adjective-3",
+            "u10-i-animate-1",
+            "u10-i-animate-2",
+            "u10-i-animate-3"
+          ],
+          "guidedIds": [
+            "u10-g-have-0",
+            "u10-g-absence-0",
+            "u10-g-pronoun-0",
+            "u10-g-preposition-0",
+            "u10-g-adjective-0",
+            "u10-g-animate-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 11,
+          "stepsCompleted": 37,
+          "checkIds": [
+            "u11-i-past-read-1",
+            "u11-i-past-read-2",
+            "u11-i-past-be-1",
+            "u11-i-past-be-2",
+            "u11-i-past-aspect-1",
+            "u11-i-past-aspect-2",
+            "u11-i-reflexive-1",
+            "u11-i-reflexive-2"
+          ],
+          "guidedIds": [
+            "u11-g-past-read-0",
+            "u11-g-past-be-0",
+            "u11-g-past-aspect-0",
+            "u11-g-reflexive-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 12,
+          "stepsCompleted": 50,
+          "checkIds": [
+            "u12-i-future-imp-1",
+            "u12-i-future-imp-2",
+            "u12-i-future-perf-1",
+            "u12-i-future-perf-2",
+            "u12-i-aspect-1",
+            "u12-i-aspect-2",
+            "u12-i-dative-1",
+            "u12-i-dative-2",
+            "u12-i-spelling-1",
+            "u12-i-spelling-2",
+            "u12-i-prep-plural-1",
+            "u12-i-prep-plural-2"
+          ],
+          "guidedIds": [
+            "u12-g-future-imp-0",
+            "u12-g-future-perf-0",
+            "u12-g-aspect-0",
+            "u12-g-dative-0",
+            "u12-g-spelling-0",
+            "u12-g-prep-plural-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 13,
+          "stepsCompleted": 32,
+          "checkIds": [
+            "u13-i-past-aspect-1",
+            "u13-i-past-aspect-2",
+            "u13-i-tense-keep-1",
+            "u13-i-tense-keep-2",
+            "u13-i-infinitive-1",
+            "u13-i-infinitive-2",
+            "u13-i-reported-1",
+            "u13-i-reported-2",
+            "u13-i-report-frame-time"
+          ],
+          "guidedIds": [
+            "u13-g-past-aspect-0",
+            "u13-g-tense-keep-0",
+            "u13-g-infinitive-0",
+            "u13-g-reported-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 14,
+          "stepsCompleted": 26,
+          "checkIds": [
+            "u14-i-future-aspect-1",
+            "u14-i-future-aspect-2",
+            "u14-i-future-person-1",
+            "u14-i-future-person-2",
+            "u14-i-impersonal-1",
+            "u14-i-impersonal-2"
+          ],
+          "guidedIds": [
+            "u14-g-future-aspect-0",
+            "u14-g-future-person-0",
+            "u14-g-impersonal-0"
+          ],
+          "bookAttested": true
+        }
+      ],
+      "syntheticLearner": true,
+      "oldArchiveRelabelled": false
+    },
+    "COMPLETED_UNIT14_V1": {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit14-plural-possession-baseline-2026-10-28/COMPLETED_UNIT14_V1.zip",
+      "zipBytes": 63491,
+      "zipSha256": "ae9f31fa0949878092e7433cc512e0c6982ea25aeb5eb26ff40071f6ca9bfde2",
+      "zipCrcPassed": true,
+      "members": [
+        {
+          "path": "manifest.json",
+          "bytes": 442,
+          "crc32": "69f9b56b",
+          "sha256": "d497386177a0840688db3a69cbf5c966a21c06d53633d444bae9e0ce1e777aac"
+        },
+        {
+          "path": "learner.json",
+          "bytes": 336663,
+          "crc32": "f86d7997",
+          "sha256": "04dbf81573d06777d6abf2bbe46aed6529ad8655105e664310d79d311718453b"
+        }
+      ],
+      "backupFormatVersion": 3,
+      "documentSchemaVersion": 3,
+      "assignmentSchema": 1,
+      "answerRecordSchemas": [
+        1
+      ],
+      "assignment": {
+        "id": "48c2b0b7-6c44-4d16-aaad-ecb304c0268a",
+        "targetUnit": 14,
+        "policyId": "unit14-prior-reading-reported-time-v1",
+        "policyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+        "responseRuleDigest": "13295a5b6ea35a2f9fd61584f179015be1e2df7579d237aa557ab943c8fab967",
+        "boundary": 25,
+        "slots": [
+          {
+            "objectiveId": "obj-u1-decoding",
+            "skill": "BOUNDED_READING",
+            "itemId": "u1-i-decode-pair",
+            "ownerUnit": 1,
+            "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+            "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+            "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+          },
+          {
+            "objectiveId": "obj-u13-reported",
+            "skill": "SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION",
+            "itemId": "u13-i-report-frame-time",
+            "ownerUnit": 13,
+            "itemDigest": "d29683b08ebcf92a6af28b42c5f55f00641e3d2f9d3e511949660d858c7d86b5",
+            "unitDigest": "ae2d0e08ccaf677889bc45bb7faa556445f181aee2620c2da350b89a596ff90e",
+            "teachingDigest": "9207438de1d62c51a9f491d0989f342d3cdcfc4562e683ece7195176dc62caa0"
+          }
+        ],
+        "digest": "336428a6a89a5701999f12be3348812677c3174856fa8d4cbd4009f24d58da7d",
+        "schema": 1
+      },
+      "answers": [
+        {
+          "id": "0c40b443-ef69-4eff-a4da-b21d62c5be0d",
+          "assignmentId": "48c2b0b7-6c44-4d16-aaad-ecb304c0268a",
+          "assignmentDigest": "336428a6a89a5701999f12be3348812677c3174856fa8d4cbd4009f24d58da7d",
+          "slotIndex": 0,
+          "selected": "\u0410 / \u0430",
+          "acceptedOrder": 26,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "b01ff343-4575-482f-bc62-53e71794737e",
+          "assignmentId": "48c2b0b7-6c44-4d16-aaad-ecb304c0268a",
+          "assignmentDigest": "336428a6a89a5701999f12be3348812677c3174856fa8d4cbd4009f24d58da7d",
+          "slotIndex": 1,
+          "selected": "Past reporting verb with a future embedded action.",
+          "acceptedOrder": 27,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "profile": {
+        "id": "local",
+        "onboardingCompleted": true,
+        "currentUnitNumber": 15,
+        "startingPoint": "NEW_TO_CYRILLIC",
+        "hasPenguin": true,
+        "hasAnki": false,
+        "hasBinder": false,
+        "hasTutor": false,
+        "dailyMinutes": 35,
+        "transliterationEnabled": true,
+        "currentSessionId": "u15-s-orient",
+        "currentStepIndex": 0,
+        "resumeContentDigest": "f6d427acac27fb5a54cf9cb575ea48086d29206acbf4939b0db26e1723ad931a",
+        "resumeIdentitySchema": 1
+      },
+      "recordingCount": 0,
+      "unitCompletions": [
+        {
+          "unitNumber": 1,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "",
+          "reviewAssignmentId": "",
+          "reviewCompletionOrder": 0
+        },
+        {
+          "unitNumber": 2,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "",
+          "reviewAssignmentId": "",
+          "reviewCompletionOrder": 0
+        },
+        {
+          "unitNumber": 3,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "e95b4eca3c8faf01804b7b917a0be1a5ee191366666111154f857f8a4965c132",
+          "reviewAssignmentId": "0814bb45-ce0d-4282-b4bc-4380fe47754f",
+          "reviewCompletionOrder": 2
+        },
+        {
+          "unitNumber": 4,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "d543575bed3775b34ac9569377aadcbe92a476e18803c7dd3f4e8a7c3d18282a",
+          "reviewAssignmentId": "9c15ca6d-d620-4313-987f-4874c8a9c55f",
+          "reviewCompletionOrder": 4
+        },
+        {
+          "unitNumber": 5,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "89e4b12e0594f9ec7eea1e2ec2d7be7301f4fcc9d123a28de78b5ae28d671f55",
+          "reviewAssignmentId": "6f1f07aa-5765-406e-84e4-3724b656c7f8",
+          "reviewCompletionOrder": 6
+        },
+        {
+          "unitNumber": 6,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "3a0dd1afef581c7bd6f4368dfa95339d78f03d9ba7bc01baa92d0693d94c70db",
+          "reviewAssignmentId": "6df9f68c-ff49-4fe9-8eea-7e3ad4cc236b",
+          "reviewCompletionOrder": 9
+        },
+        {
+          "unitNumber": 7,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "240289f89ccf67ffb514c5489e3b467a55d01d7e85007e68efb19a4aa3b98116",
+          "reviewAssignmentId": "0c98e099-7896-4794-8c94-0af2fb18df07",
+          "reviewCompletionOrder": 11
+        },
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "202efa0e8f59f45e733b37efecbf2ba2da28e5ebeb814c1d51e1d200ada90cc3",
+          "reviewAssignmentId": "53c3fe37-0392-408d-8a00-fe86258863a6",
+          "reviewCompletionOrder": 13
+        },
+        {
+          "unitNumber": 9,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "15fade129c79555720b90418dfeaa5a7a11729d0c79e61f52353205af1011040",
+          "reviewAssignmentId": "3ccdf756-c550-470e-b8fd-d14d898110b6",
+          "reviewCompletionOrder": 16
+        },
+        {
+          "unitNumber": 10,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "6eec9a30b445961cb739d04b1fe052cd35b7128a2d58bd42a370fddd14e19404",
+          "reviewAssignmentId": "c9419cdb-4c61-403a-abf1-c10b62f2edd9",
+          "reviewCompletionOrder": 18
+        },
+        {
+          "unitNumber": 11,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "4b215e8001d550979d6dd56220ffcabd87277111859405f80dc4179d09ecae8d",
+          "reviewAssignmentId": "9b15ccf7-aa23-4732-8db4-3653311e28b2",
+          "reviewCompletionOrder": 20
+        },
+        {
+          "unitNumber": 12,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "be5d6eba63fc1f320a0e57c6fef35793c2508ed8653681c9bcd66db914ac2be8",
+          "reviewAssignmentId": "7c668e65-2d76-4424-a6da-b97bd0823a7a",
+          "reviewCompletionOrder": 22
+        },
+        {
+          "unitNumber": 13,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "4a491b34b433a5a3865cc5a0a7eb9cb8e816a4d2230680115e2a68ab7f0e6c65",
+          "reviewAssignmentId": "119b2481-eb30-4050-94a8-23a1ccb91e5d",
+          "reviewCompletionOrder": 25
+        },
+        {
+          "unitNumber": 14,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+          "reviewAssignmentId": "48c2b0b7-6c44-4d16-aaad-ecb304c0268a",
+          "reviewCompletionOrder": 27
+        }
+      ],
+      "prerequisitePolicies": {
+        "11": {
+          "policyId": "unit11-prior-noun-behavior-possession-absence-v2",
+          "schema": 13
+        },
+        "12": {
+          "policyId": "unit12-prior-gender-past-gender-v2",
+          "schema": 14
+        },
+        "13": {
+          "policyId": "unit13-prior-present-aspect-past-gender-v3",
+          "schema": 15
+        }
+      },
+      "ordinaryUnits": [
+        {
+          "unit": 1,
+          "stepsCompleted": 42,
+          "checkIds": [
+            "u1-i-\u0440-not-p",
+            "u1-i-\u043d-not-h",
+            "u1-i-\u0441-not-c",
+            "u1-i-\u0432-not-b",
+            "u1-i-\u0443-not-y",
+            "u1-i-\u0445-not-x",
+            "u1-i-\u0435-identity",
+            "u1-i-\u0451-identity",
+            "u1-i-\u044e-identity",
+            "u1-i-\u044f-identity",
+            "u1-i-\u044c-not-vowel",
+            "u1-i-\u044a-not-vowel",
+            "u1-i-\u0439-not-vowel",
+            "u1-i-print-pair",
+            "u1-i-decode-pair",
+            "u1-i-\u0430-identity",
+            "u1-i-name-be"
+          ],
+          "guidedIds": [
+            "u1-i-\u0430-identity",
+            "u1-i-\u043c-identity",
+            "u1-g-guided-confusable",
+            "u1-g-guided-iotated",
+            "u1-g-guided-signs",
+            "u1-g-guided-print",
+            "u1-g-guided-decoding",
+            "u1-g-name-a"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 2,
+          "stepsCompleted": 16,
+          "checkIds": [
+            "u2-i-\u0432-not-b",
+            "u2-i-\u0443-not-y",
+            "u2-i-\u0445-not-x",
+            "u2-i-print-\u0431",
+            "u2-i-\u044f-identity"
+          ],
+          "guidedIds": [
+            "u2-i-print-\u0431"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 3,
+          "stepsCompleted": 29,
+          "checkIds": [
+            "u3-i-gender-\u0433\u043e\u0440\u043e\u0434",
+            "u3-i-gender-\u0434\u0440\u0443\u0433",
+            "u3-i-gender-\u0434\u0432\u0435\u0440\u044c",
+            "u3-i-gender-\u043c\u043e\u0440\u0435",
+            "u3-i-gender-\u0434\u044f\u0434\u044f",
+            "u3-i-phrase-\u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430",
+            "u3-i-phrase-\u0434\u0430",
+            "u3-i-phrase-\u043d\u0435\u0442",
+            "u3-i-phrase-\u044d\u0442\u043e",
+            "u3-i-name-moya-sobaka",
+            "u3-i-name-chto-eto",
+            "u3-i-name-kto-eto"
+          ],
+          "guidedIds": [
+            "u3-i-gender-\u0441\u0442\u043e\u043b",
+            "u3-i-gender-\u0434\u043e\u043c",
+            "u3-i-gender-\u043a\u043d\u0438\u0433\u0430",
+            "u3-i-gender-\u043e\u043a\u043d\u043e",
+            "u3-i-gender-\u043c\u0443\u0436\u0447\u0438\u043d\u0430",
+            "u3-i-phrase-\u0437\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435",
+            "u3-i-phrase-\u0441\u043f\u0430\u0441\u0438\u0431\u043e",
+            "u3-i-name-moy-stol"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 4,
+          "stepsCompleted": 44,
+          "checkIds": [
+            "u4-i-pronoun-\u0442\u044b",
+            "u4-i-pronoun-\u0432\u044b",
+            "u4-i-pronoun-\u043e\u043d",
+            "u4-i-pronoun-\u043e\u043d\u0430",
+            "u4-i-pronoun-\u043e\u043d\u043e",
+            "u4-i-pronoun-\u043e\u043d\u0438",
+            "u4-i-verb-\u0433\u043e\u0432\u043e\u0440\u0438\u0442\u044c-\u043c\u044b",
+            "u4-i-verb-\u0432\u0438\u0434\u0435\u0442\u044c-\u043e\u043d",
+            "u4-i-verb-\u043f\u0438\u0441\u0430\u0442\u044c-\u0432\u044b",
+            "u4-i-verb-\u0438\u0434\u0442\u0438-\u043e\u043d\u0438",
+            "u4-i-stress-1f37b6b2",
+            "u4-i-stress-2114b12f",
+            "u4-i-nom-role-train",
+            "u4-i-nom-role-student"
+          ],
+          "guidedIds": [
+            "u4-i-pronoun-\u044f",
+            "u4-i-pronoun-\u043c\u044b",
+            "u4-i-verb-\u0447\u0438\u0442\u0430\u0442\u044c-\u0442\u044b",
+            "u4-i-verb-\u0434\u0435\u043b\u0430\u0442\u044c-\u044f",
+            "u4-g-present-\u0433\u043e\u0432\u043e\u0440\u0438\u0442\u044c-\u044f",
+            "u4-g-present-\u0432\u0438\u0434\u0435\u0442\u044c-\u044f",
+            "u4-g-present-\u043f\u0438\u0441\u0430\u0442\u044c-\u044f",
+            "u4-g-present-\u0438\u0434\u0442\u0438-\u044f",
+            "u4-i-stress-6f15e9f1",
+            "u4-g-nom-role",
+            "u4-g-nominative-1",
+            "u4-i-nom-muzh",
+            "u4-i-nom-poezd"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 5,
+          "stepsCompleted": 33,
+          "checkIds": [
+            "u5-i-q-kogda",
+            "u5-i-q-pochemu",
+            "u5-i-q-kak",
+            "u5-i-q-gde",
+            "u5-i-pattern-pattern-kto-eto",
+            "u5-i-pattern-pattern-kak-dela",
+            "u5-i-pattern-pattern-gde-zhivete",
+            "u5-i-prep-o-sade",
+            "u5-i-prep-v-moskve",
+            "u5-i-indecl-\u0442\u0430\u043a\u0441\u0438",
+            "u5-i-indecl-\u043c\u0435\u0442\u0440\u043e",
+            "u5-i-indecl-\u043a\u0438\u043d\u043e",
+            "u5-i-decl-\u043a\u043d\u0438\u0433\u0430",
+            "u5-i-decl-\u043e\u043a\u043d\u043e"
+          ],
+          "guidedIds": [
+            "u5-i-q-kto",
+            "u5-i-q-chto",
+            "u5-i-pattern-pattern-chto-eto",
+            "u5-i-prep-o-knige",
+            "u5-i-prep-o-pisme",
+            "u5-i-prep-field-\u043a\u043d\u0438\u0433\u0430",
+            "u5-i-prep-field-\u043f\u0438\u0441\u044c\u043c\u043e",
+            "u5-i-indecl-\u0440\u0430\u0434\u0438\u043e"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 6,
+          "stepsCompleted": 60,
+          "checkIds": [
+            "u6-i-possessive-1",
+            "u6-i-possessive-2",
+            "u6-i-possessive-3",
+            "u6-i-third-1",
+            "u6-i-third-2",
+            "u6-i-object-1",
+            "u6-i-object-2",
+            "u6-i-object-3",
+            "u6-i-feminine-1",
+            "u6-i-feminine-2",
+            "u6-i-animacy-1",
+            "u6-i-animacy-2",
+            "u6-i-animacy-3",
+            "u6-i-pronoun-1",
+            "u6-i-pronoun-2",
+            "u6-i-pronoun-3",
+            "u6-i-direction-1",
+            "u6-i-direction-2",
+            "u6-i-direction-3"
+          ],
+          "guidedIds": [
+            "u6-g-possessive-0",
+            "u6-g-third-0",
+            "u6-g-object-0",
+            "u6-g-feminine-0",
+            "u6-g-animacy-0",
+            "u6-g-pronoun-0",
+            "u6-g-direction-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 7,
+          "stepsCompleted": 85,
+          "checkIds": [
+            "u7-i-default-1",
+            "u7-i-default-2",
+            "u7-i-default-3",
+            "u7-i-default-4",
+            "u7-i-endings-1",
+            "u7-i-endings-2",
+            "u7-i-endings-3",
+            "u7-i-endings-4",
+            "u7-i-spelling-1",
+            "u7-i-spelling-2",
+            "u7-i-spelling-3",
+            "u7-i-question-1",
+            "u7-i-question-2",
+            "u7-i-question-3",
+            "u7-i-demonstrative-1",
+            "u7-i-demonstrative-2",
+            "u7-i-demonstrative-3",
+            "u7-i-place-1",
+            "u7-i-place-2",
+            "u7-i-place-3",
+            "u7-i-objectadj-1",
+            "u7-i-objectadj-2",
+            "u7-i-objectadj-3",
+            "u7-i-adverb-1",
+            "u7-i-adverb-2",
+            "u7-i-adverb-invariance-1",
+            "u7-i-adverb-invariance-2",
+            "u7-i-adverb-pairs-1",
+            "u7-i-adverb-pairs-2",
+            "u7-i-manner-1",
+            "u7-i-manner-2",
+            "u7-i-manner-3",
+            "u7-i-manner-4"
+          ],
+          "guidedIds": [
+            "u7-g-default-0",
+            "u7-g-endings-0",
+            "u7-g-spelling-0",
+            "u7-g-question-0",
+            "u7-g-demonstrative-0",
+            "u7-g-place-0",
+            "u7-g-objectadj-0",
+            "u7-g-adverb-0",
+            "u7-g-adverb-invariance-0",
+            "u7-g-adverb-pairs-0",
+            "u7-g-manner-1"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 8,
+          "stepsCompleted": 50,
+          "checkIds": [
+            "u8-i-plural-1",
+            "u8-i-plural-2",
+            "u8-i-plural-3",
+            "u8-i-plural-4",
+            "u8-i-plural-5",
+            "u8-i-plural-6",
+            "u8-i-spelling-1",
+            "u8-i-spelling-2",
+            "u8-i-spelling-3",
+            "u8-i-spelling-4",
+            "u8-i-irregular-1",
+            "u8-i-irregular-2",
+            "u8-i-irregular-3",
+            "u8-i-agreement-1",
+            "u8-i-agreement-2",
+            "u8-i-agreement-3",
+            "u8-i-availability-1",
+            "u8-i-availability-2",
+            "u8-i-availability-3"
+          ],
+          "guidedIds": [
+            "u8-g-plural-0",
+            "u8-g-spelling-0",
+            "u8-g-irregular-0",
+            "u8-g-agreement-0",
+            "u8-g-availability-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 9,
+          "stepsCompleted": 81,
+          "checkIds": [
+            "u9-i-cardinal-1",
+            "u9-i-cardinal-2",
+            "u9-i-cardinal-3",
+            "u9-i-cardinal-4",
+            "u9-i-teens-1",
+            "u9-i-teens-2",
+            "u9-i-teens-3",
+            "u9-i-tens-1",
+            "u9-i-tens-2",
+            "u9-i-tens-3",
+            "u9-i-hundreds-1",
+            "u9-i-hundreds-2",
+            "u9-i-hundreds-3",
+            "u9-i-thousands-1",
+            "u9-i-thousands-2",
+            "u9-i-thousands-3",
+            "u9-i-thousands-4",
+            "u9-i-odindva-1",
+            "u9-i-odindva-2",
+            "u9-i-odindva-3",
+            "u9-i-odindva-4",
+            "u9-i-odindva-5",
+            "u9-i-quantity-1",
+            "u9-i-quantity-2",
+            "u9-i-quantity-3",
+            "u9-i-quantity-4",
+            "u9-i-quantity-5",
+            "u9-i-quantity-6",
+            "u9-i-quantity-7",
+            "u9-i-quantity-8",
+            "u9-i-quantity-9",
+            "u9-i-pattern-1",
+            "u9-i-pattern-2",
+            "u9-i-pattern-3",
+            "u9-i-pattern-4"
+          ],
+          "guidedIds": [
+            "u9-g-cardinal-0",
+            "u9-g-teens-0",
+            "u9-g-tens-0",
+            "u9-g-hundreds-0",
+            "u9-g-thousands-0",
+            "u9-g-odindva-0",
+            "u9-g-quantity-0",
+            "u9-g-pattern-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 10,
+          "stepsCompleted": 65,
+          "checkIds": [
+            "u10-i-have-1",
+            "u10-i-have-2",
+            "u10-i-have-3",
+            "u10-i-have-4",
+            "u10-i-absence-1",
+            "u10-i-absence-2",
+            "u10-i-absence-3",
+            "u10-i-absence-4",
+            "u10-i-pronoun-1",
+            "u10-i-pronoun-2",
+            "u10-i-pronoun-3",
+            "u10-i-pronoun-4",
+            "u10-i-preposition-1",
+            "u10-i-preposition-2",
+            "u10-i-preposition-3",
+            "u10-i-preposition-4",
+            "u10-i-adjective-1",
+            "u10-i-adjective-2",
+            "u10-i-adjective-3",
+            "u10-i-animate-1",
+            "u10-i-animate-2",
+            "u10-i-animate-3"
+          ],
+          "guidedIds": [
+            "u10-g-have-0",
+            "u10-g-absence-0",
+            "u10-g-pronoun-0",
+            "u10-g-preposition-0",
+            "u10-g-adjective-0",
+            "u10-g-animate-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 11,
+          "stepsCompleted": 37,
+          "checkIds": [
+            "u11-i-past-read-1",
+            "u11-i-past-read-2",
+            "u11-i-past-be-1",
+            "u11-i-past-be-2",
+            "u11-i-past-aspect-1",
+            "u11-i-past-aspect-2",
+            "u11-i-reflexive-1",
+            "u11-i-reflexive-2"
+          ],
+          "guidedIds": [
+            "u11-g-past-read-0",
+            "u11-g-past-be-0",
+            "u11-g-past-aspect-0",
+            "u11-g-reflexive-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 12,
+          "stepsCompleted": 50,
+          "checkIds": [
+            "u12-i-future-imp-1",
+            "u12-i-future-imp-2",
+            "u12-i-future-perf-1",
+            "u12-i-future-perf-2",
+            "u12-i-aspect-1",
+            "u12-i-aspect-2",
+            "u12-i-dative-1",
+            "u12-i-dative-2",
+            "u12-i-spelling-1",
+            "u12-i-spelling-2",
+            "u12-i-prep-plural-1",
+            "u12-i-prep-plural-2"
+          ],
+          "guidedIds": [
+            "u12-g-future-imp-0",
+            "u12-g-future-perf-0",
+            "u12-g-aspect-0",
+            "u12-g-dative-0",
+            "u12-g-spelling-0",
+            "u12-g-prep-plural-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 13,
+          "stepsCompleted": 32,
+          "checkIds": [
+            "u13-i-past-aspect-1",
+            "u13-i-past-aspect-2",
+            "u13-i-tense-keep-1",
+            "u13-i-tense-keep-2",
+            "u13-i-infinitive-1",
+            "u13-i-infinitive-2",
+            "u13-i-reported-1",
+            "u13-i-reported-2",
+            "u13-i-report-frame-time"
+          ],
+          "guidedIds": [
+            "u13-g-past-aspect-0",
+            "u13-g-tense-keep-0",
+            "u13-g-infinitive-0",
+            "u13-g-reported-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 14,
+          "stepsCompleted": 26,
+          "checkIds": [
+            "u14-i-future-aspect-1",
+            "u14-i-future-aspect-2",
+            "u14-i-future-person-1",
+            "u14-i-future-person-2",
+            "u14-i-impersonal-1",
+            "u14-i-impersonal-2"
+          ],
+          "guidedIds": [
+            "u14-g-future-aspect-0",
+            "u14-g-future-person-0",
+            "u14-g-impersonal-0"
+          ],
+          "bookAttested": true
+        }
+      ],
+      "syntheticLearner": true,
+      "oldArchiveRelabelled": false
+    },
+    "PARTIAL_UNIT15_OWNER14_V1": {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit14-plural-possession-baseline-2026-10-28/PARTIAL_UNIT15_OWNER14_V1.zip",
+      "zipBytes": 65763,
+      "zipSha256": "5affb336bc4a4949603c149f923c5dc91033502aa2be152c0da2c0e827644392",
+      "zipCrcPassed": true,
+      "members": [
+        {
+          "path": "manifest.json",
+          "bytes": 442,
+          "crc32": "ad8d7409",
+          "sha256": "17e772efa57e02579b7713920334d6f1a47ad1f0a5648798d3b41228cd8c5b5c"
+        },
+        {
+          "path": "learner.json",
+          "bytes": 348572,
+          "crc32": "dc2d7e83",
+          "sha256": "5a02de63f0d05d25ccca844e73a93e8724ff479e56df4480a79db94d7c86cf7a"
+        }
+      ],
+      "backupFormatVersion": 3,
+      "documentSchemaVersion": 3,
+      "assignmentSchema": 1,
+      "answerRecordSchemas": [
+        1
+      ],
+      "assignment": {
+        "id": "c22c33e2-957a-4354-b29d-46684ffbbfe6",
+        "targetUnit": 15,
+        "policyId": "unit15-prior-reading-impersonal-state-v1",
+        "policyDigest": "8efed316eff763464bf88a69ffe486e390c840801b9b7dc203cb6486f82486e9",
+        "responseRuleDigest": "13295a5b6ea35a2f9fd61584f179015be1e2df7579d237aa557ab943c8fab967",
+        "boundary": 27,
+        "slots": [
+          {
+            "objectiveId": "obj-u1-decoding",
+            "skill": "BOUNDED_READING",
+            "itemId": "u1-i-decode-pair",
+            "ownerUnit": 1,
+            "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+            "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+            "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+          },
+          {
+            "objectiveId": "obj-u14-impersonal",
+            "skill": "SUPPLIED_IMPERSONAL_STATE_RECOGNITION",
+            "itemId": "u14-i-impersonal-2",
+            "ownerUnit": 14,
+            "itemDigest": "de5c6c4393139f7980a6db6567e97b1472162ce9c7eb4ae9d45326e6cb77113b",
+            "unitDigest": "9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38",
+            "teachingDigest": "28716ab8b2159c5a6f851e2a190aec05fc517652db62f894f25afe3f11f0aac8"
+          }
+        ],
+        "digest": "506d55437543bba123f1313ae69de4298e49c378ff468519cdf6bdfd2918ee38",
+        "schema": 1
+      },
+      "answers": [
+        {
+          "id": "4785382a-d21a-4493-bec3-f294369d9105",
+          "assignmentId": "c22c33e2-957a-4354-b29d-46684ffbbfe6",
+          "assignmentDigest": "506d55437543bba123f1313ae69de4298e49c378ff468519cdf6bdfd2918ee38",
+          "slotIndex": 0,
+          "selected": "\u0410 / \u0430",
+          "acceptedOrder": 28,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "profile": {
+        "id": "local",
+        "onboardingCompleted": true,
+        "currentUnitNumber": 15,
+        "startingPoint": "NEW_TO_CYRILLIC",
+        "hasPenguin": true,
+        "hasAnki": false,
+        "hasBinder": false,
+        "hasTutor": false,
+        "dailyMinutes": 35,
+        "transliterationEnabled": true,
+        "currentSessionId": "u15-s-orient",
+        "currentStepIndex": 0,
+        "resumeContentDigest": "f6d427acac27fb5a54cf9cb575ea48086d29206acbf4939b0db26e1723ad931a",
+        "resumeIdentitySchema": 1
+      },
+      "recordingCount": 0,
+      "unitCompletions": [
+        {
+          "unitNumber": 1,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "",
+          "reviewAssignmentId": "",
+          "reviewCompletionOrder": 0
+        },
+        {
+          "unitNumber": 2,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "",
+          "reviewAssignmentId": "",
+          "reviewCompletionOrder": 0
+        },
+        {
+          "unitNumber": 3,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "e95b4eca3c8faf01804b7b917a0be1a5ee191366666111154f857f8a4965c132",
+          "reviewAssignmentId": "0814bb45-ce0d-4282-b4bc-4380fe47754f",
+          "reviewCompletionOrder": 2
+        },
+        {
+          "unitNumber": 4,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "d543575bed3775b34ac9569377aadcbe92a476e18803c7dd3f4e8a7c3d18282a",
+          "reviewAssignmentId": "9c15ca6d-d620-4313-987f-4874c8a9c55f",
+          "reviewCompletionOrder": 4
+        },
+        {
+          "unitNumber": 5,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "89e4b12e0594f9ec7eea1e2ec2d7be7301f4fcc9d123a28de78b5ae28d671f55",
+          "reviewAssignmentId": "6f1f07aa-5765-406e-84e4-3724b656c7f8",
+          "reviewCompletionOrder": 6
+        },
+        {
+          "unitNumber": 6,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "3a0dd1afef581c7bd6f4368dfa95339d78f03d9ba7bc01baa92d0693d94c70db",
+          "reviewAssignmentId": "6df9f68c-ff49-4fe9-8eea-7e3ad4cc236b",
+          "reviewCompletionOrder": 9
+        },
+        {
+          "unitNumber": 7,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "240289f89ccf67ffb514c5489e3b467a55d01d7e85007e68efb19a4aa3b98116",
+          "reviewAssignmentId": "0c98e099-7896-4794-8c94-0af2fb18df07",
+          "reviewCompletionOrder": 11
+        },
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "202efa0e8f59f45e733b37efecbf2ba2da28e5ebeb814c1d51e1d200ada90cc3",
+          "reviewAssignmentId": "53c3fe37-0392-408d-8a00-fe86258863a6",
+          "reviewCompletionOrder": 13
+        },
+        {
+          "unitNumber": 9,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "15fade129c79555720b90418dfeaa5a7a11729d0c79e61f52353205af1011040",
+          "reviewAssignmentId": "3ccdf756-c550-470e-b8fd-d14d898110b6",
+          "reviewCompletionOrder": 16
+        },
+        {
+          "unitNumber": 10,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "6eec9a30b445961cb739d04b1fe052cd35b7128a2d58bd42a370fddd14e19404",
+          "reviewAssignmentId": "c9419cdb-4c61-403a-abf1-c10b62f2edd9",
+          "reviewCompletionOrder": 18
+        },
+        {
+          "unitNumber": 11,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "4b215e8001d550979d6dd56220ffcabd87277111859405f80dc4179d09ecae8d",
+          "reviewAssignmentId": "9b15ccf7-aa23-4732-8db4-3653311e28b2",
+          "reviewCompletionOrder": 20
+        },
+        {
+          "unitNumber": 12,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "be5d6eba63fc1f320a0e57c6fef35793c2508ed8653681c9bcd66db914ac2be8",
+          "reviewAssignmentId": "7c668e65-2d76-4424-a6da-b97bd0823a7a",
+          "reviewCompletionOrder": 22
+        },
+        {
+          "unitNumber": 13,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "4a491b34b433a5a3865cc5a0a7eb9cb8e816a4d2230680115e2a68ab7f0e6c65",
+          "reviewAssignmentId": "119b2481-eb30-4050-94a8-23a1ccb91e5d",
+          "reviewCompletionOrder": 25
+        },
+        {
+          "unitNumber": 14,
+          "recordedAtLocal": "unit14-baseline",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+          "reviewAssignmentId": "48c2b0b7-6c44-4d16-aaad-ecb304c0268a",
+          "reviewCompletionOrder": 27
+        }
+      ],
+      "prerequisitePolicies": {
+        "11": {
+          "policyId": "unit11-prior-noun-behavior-possession-absence-v2",
+          "schema": 13
+        },
+        "12": {
+          "policyId": "unit12-prior-gender-past-gender-v2",
+          "schema": 14
+        },
+        "13": {
+          "policyId": "unit13-prior-present-aspect-past-gender-v3",
+          "schema": 15
+        }
+      },
+      "ordinaryUnits": [
+        {
+          "unit": 1,
+          "stepsCompleted": 42,
+          "checkIds": [
+            "u1-i-\u0440-not-p",
+            "u1-i-\u043d-not-h",
+            "u1-i-\u0441-not-c",
+            "u1-i-\u0432-not-b",
+            "u1-i-\u0443-not-y",
+            "u1-i-\u0445-not-x",
+            "u1-i-\u0435-identity",
+            "u1-i-\u0451-identity",
+            "u1-i-\u044e-identity",
+            "u1-i-\u044f-identity",
+            "u1-i-\u044c-not-vowel",
+            "u1-i-\u044a-not-vowel",
+            "u1-i-\u0439-not-vowel",
+            "u1-i-print-pair",
+            "u1-i-decode-pair",
+            "u1-i-\u0430-identity",
+            "u1-i-name-be"
+          ],
+          "guidedIds": [
+            "u1-i-\u0430-identity",
+            "u1-i-\u043c-identity",
+            "u1-g-guided-confusable",
+            "u1-g-guided-iotated",
+            "u1-g-guided-signs",
+            "u1-g-guided-print",
+            "u1-g-guided-decoding",
+            "u1-g-name-a"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 2,
+          "stepsCompleted": 16,
+          "checkIds": [
+            "u2-i-\u0432-not-b",
+            "u2-i-\u0443-not-y",
+            "u2-i-\u0445-not-x",
+            "u2-i-print-\u0431",
+            "u2-i-\u044f-identity"
+          ],
+          "guidedIds": [
+            "u2-i-print-\u0431"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 3,
+          "stepsCompleted": 29,
+          "checkIds": [
+            "u3-i-gender-\u0433\u043e\u0440\u043e\u0434",
+            "u3-i-gender-\u0434\u0440\u0443\u0433",
+            "u3-i-gender-\u0434\u0432\u0435\u0440\u044c",
+            "u3-i-gender-\u043c\u043e\u0440\u0435",
+            "u3-i-gender-\u0434\u044f\u0434\u044f",
+            "u3-i-phrase-\u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430",
+            "u3-i-phrase-\u0434\u0430",
+            "u3-i-phrase-\u043d\u0435\u0442",
+            "u3-i-phrase-\u044d\u0442\u043e",
+            "u3-i-name-moya-sobaka",
+            "u3-i-name-chto-eto",
+            "u3-i-name-kto-eto"
+          ],
+          "guidedIds": [
+            "u3-i-gender-\u0441\u0442\u043e\u043b",
+            "u3-i-gender-\u0434\u043e\u043c",
+            "u3-i-gender-\u043a\u043d\u0438\u0433\u0430",
+            "u3-i-gender-\u043e\u043a\u043d\u043e",
+            "u3-i-gender-\u043c\u0443\u0436\u0447\u0438\u043d\u0430",
+            "u3-i-phrase-\u0437\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435",
+            "u3-i-phrase-\u0441\u043f\u0430\u0441\u0438\u0431\u043e",
+            "u3-i-name-moy-stol"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 4,
+          "stepsCompleted": 44,
+          "checkIds": [
+            "u4-i-pronoun-\u0442\u044b",
+            "u4-i-pronoun-\u0432\u044b",
+            "u4-i-pronoun-\u043e\u043d",
+            "u4-i-pronoun-\u043e\u043d\u0430",
+            "u4-i-pronoun-\u043e\u043d\u043e",
+            "u4-i-pronoun-\u043e\u043d\u0438",
+            "u4-i-verb-\u0433\u043e\u0432\u043e\u0440\u0438\u0442\u044c-\u043c\u044b",
+            "u4-i-verb-\u0432\u0438\u0434\u0435\u0442\u044c-\u043e\u043d",
+            "u4-i-verb-\u043f\u0438\u0441\u0430\u0442\u044c-\u0432\u044b",
+            "u4-i-verb-\u0438\u0434\u0442\u0438-\u043e\u043d\u0438",
+            "u4-i-stress-1f37b6b2",
+            "u4-i-stress-2114b12f",
+            "u4-i-nom-role-train",
+            "u4-i-nom-role-student"
+          ],
+          "guidedIds": [
+            "u4-i-pronoun-\u044f",
+            "u4-i-pronoun-\u043c\u044b",
+            "u4-i-verb-\u0447\u0438\u0442\u0430\u0442\u044c-\u0442\u044b",
+            "u4-i-verb-\u0434\u0435\u043b\u0430\u0442\u044c-\u044f",
+            "u4-g-present-\u0433\u043e\u0432\u043e\u0440\u0438\u0442\u044c-\u044f",
+            "u4-g-present-\u0432\u0438\u0434\u0435\u0442\u044c-\u044f",
+            "u4-g-present-\u043f\u0438\u0441\u0430\u0442\u044c-\u044f",
+            "u4-g-present-\u0438\u0434\u0442\u0438-\u044f",
+            "u4-i-stress-6f15e9f1",
+            "u4-g-nom-role",
+            "u4-g-nominative-1",
+            "u4-i-nom-muzh",
+            "u4-i-nom-poezd"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 5,
+          "stepsCompleted": 33,
+          "checkIds": [
+            "u5-i-q-kogda",
+            "u5-i-q-pochemu",
+            "u5-i-q-kak",
+            "u5-i-q-gde",
+            "u5-i-pattern-pattern-kto-eto",
+            "u5-i-pattern-pattern-kak-dela",
+            "u5-i-pattern-pattern-gde-zhivete",
+            "u5-i-prep-o-sade",
+            "u5-i-prep-v-moskve",
+            "u5-i-indecl-\u0442\u0430\u043a\u0441\u0438",
+            "u5-i-indecl-\u043c\u0435\u0442\u0440\u043e",
+            "u5-i-indecl-\u043a\u0438\u043d\u043e",
+            "u5-i-decl-\u043a\u043d\u0438\u0433\u0430",
+            "u5-i-decl-\u043e\u043a\u043d\u043e"
+          ],
+          "guidedIds": [
+            "u5-i-q-kto",
+            "u5-i-q-chto",
+            "u5-i-pattern-pattern-chto-eto",
+            "u5-i-prep-o-knige",
+            "u5-i-prep-o-pisme",
+            "u5-i-prep-field-\u043a\u043d\u0438\u0433\u0430",
+            "u5-i-prep-field-\u043f\u0438\u0441\u044c\u043c\u043e",
+            "u5-i-indecl-\u0440\u0430\u0434\u0438\u043e"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 6,
+          "stepsCompleted": 60,
+          "checkIds": [
+            "u6-i-possessive-1",
+            "u6-i-possessive-2",
+            "u6-i-possessive-3",
+            "u6-i-third-1",
+            "u6-i-third-2",
+            "u6-i-object-1",
+            "u6-i-object-2",
+            "u6-i-object-3",
+            "u6-i-feminine-1",
+            "u6-i-feminine-2",
+            "u6-i-animacy-1",
+            "u6-i-animacy-2",
+            "u6-i-animacy-3",
+            "u6-i-pronoun-1",
+            "u6-i-pronoun-2",
+            "u6-i-pronoun-3",
+            "u6-i-direction-1",
+            "u6-i-direction-2",
+            "u6-i-direction-3"
+          ],
+          "guidedIds": [
+            "u6-g-possessive-0",
+            "u6-g-third-0",
+            "u6-g-object-0",
+            "u6-g-feminine-0",
+            "u6-g-animacy-0",
+            "u6-g-pronoun-0",
+            "u6-g-direction-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 7,
+          "stepsCompleted": 85,
+          "checkIds": [
+            "u7-i-default-1",
+            "u7-i-default-2",
+            "u7-i-default-3",
+            "u7-i-default-4",
+            "u7-i-endings-1",
+            "u7-i-endings-2",
+            "u7-i-endings-3",
+            "u7-i-endings-4",
+            "u7-i-spelling-1",
+            "u7-i-spelling-2",
+            "u7-i-spelling-3",
+            "u7-i-question-1",
+            "u7-i-question-2",
+            "u7-i-question-3",
+            "u7-i-demonstrative-1",
+            "u7-i-demonstrative-2",
+            "u7-i-demonstrative-3",
+            "u7-i-place-1",
+            "u7-i-place-2",
+            "u7-i-place-3",
+            "u7-i-objectadj-1",
+            "u7-i-objectadj-2",
+            "u7-i-objectadj-3",
+            "u7-i-adverb-1",
+            "u7-i-adverb-2",
+            "u7-i-adverb-invariance-1",
+            "u7-i-adverb-invariance-2",
+            "u7-i-adverb-pairs-1",
+            "u7-i-adverb-pairs-2",
+            "u7-i-manner-1",
+            "u7-i-manner-2",
+            "u7-i-manner-3",
+            "u7-i-manner-4"
+          ],
+          "guidedIds": [
+            "u7-g-default-0",
+            "u7-g-endings-0",
+            "u7-g-spelling-0",
+            "u7-g-question-0",
+            "u7-g-demonstrative-0",
+            "u7-g-place-0",
+            "u7-g-objectadj-0",
+            "u7-g-adverb-0",
+            "u7-g-adverb-invariance-0",
+            "u7-g-adverb-pairs-0",
+            "u7-g-manner-1"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 8,
+          "stepsCompleted": 50,
+          "checkIds": [
+            "u8-i-plural-1",
+            "u8-i-plural-2",
+            "u8-i-plural-3",
+            "u8-i-plural-4",
+            "u8-i-plural-5",
+            "u8-i-plural-6",
+            "u8-i-spelling-1",
+            "u8-i-spelling-2",
+            "u8-i-spelling-3",
+            "u8-i-spelling-4",
+            "u8-i-irregular-1",
+            "u8-i-irregular-2",
+            "u8-i-irregular-3",
+            "u8-i-agreement-1",
+            "u8-i-agreement-2",
+            "u8-i-agreement-3",
+            "u8-i-availability-1",
+            "u8-i-availability-2",
+            "u8-i-availability-3"
+          ],
+          "guidedIds": [
+            "u8-g-plural-0",
+            "u8-g-spelling-0",
+            "u8-g-irregular-0",
+            "u8-g-agreement-0",
+            "u8-g-availability-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 9,
+          "stepsCompleted": 81,
+          "checkIds": [
+            "u9-i-cardinal-1",
+            "u9-i-cardinal-2",
+            "u9-i-cardinal-3",
+            "u9-i-cardinal-4",
+            "u9-i-teens-1",
+            "u9-i-teens-2",
+            "u9-i-teens-3",
+            "u9-i-tens-1",
+            "u9-i-tens-2",
+            "u9-i-tens-3",
+            "u9-i-hundreds-1",
+            "u9-i-hundreds-2",
+            "u9-i-hundreds-3",
+            "u9-i-thousands-1",
+            "u9-i-thousands-2",
+            "u9-i-thousands-3",
+            "u9-i-thousands-4",
+            "u9-i-odindva-1",
+            "u9-i-odindva-2",
+            "u9-i-odindva-3",
+            "u9-i-odindva-4",
+            "u9-i-odindva-5",
+            "u9-i-quantity-1",
+            "u9-i-quantity-2",
+            "u9-i-quantity-3",
+            "u9-i-quantity-4",
+            "u9-i-quantity-5",
+            "u9-i-quantity-6",
+            "u9-i-quantity-7",
+            "u9-i-quantity-8",
+            "u9-i-quantity-9",
+            "u9-i-pattern-1",
+            "u9-i-pattern-2",
+            "u9-i-pattern-3",
+            "u9-i-pattern-4"
+          ],
+          "guidedIds": [
+            "u9-g-cardinal-0",
+            "u9-g-teens-0",
+            "u9-g-tens-0",
+            "u9-g-hundreds-0",
+            "u9-g-thousands-0",
+            "u9-g-odindva-0",
+            "u9-g-quantity-0",
+            "u9-g-pattern-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 10,
+          "stepsCompleted": 65,
+          "checkIds": [
+            "u10-i-have-1",
+            "u10-i-have-2",
+            "u10-i-have-3",
+            "u10-i-have-4",
+            "u10-i-absence-1",
+            "u10-i-absence-2",
+            "u10-i-absence-3",
+            "u10-i-absence-4",
+            "u10-i-pronoun-1",
+            "u10-i-pronoun-2",
+            "u10-i-pronoun-3",
+            "u10-i-pronoun-4",
+            "u10-i-preposition-1",
+            "u10-i-preposition-2",
+            "u10-i-preposition-3",
+            "u10-i-preposition-4",
+            "u10-i-adjective-1",
+            "u10-i-adjective-2",
+            "u10-i-adjective-3",
+            "u10-i-animate-1",
+            "u10-i-animate-2",
+            "u10-i-animate-3"
+          ],
+          "guidedIds": [
+            "u10-g-have-0",
+            "u10-g-absence-0",
+            "u10-g-pronoun-0",
+            "u10-g-preposition-0",
+            "u10-g-adjective-0",
+            "u10-g-animate-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 11,
+          "stepsCompleted": 37,
+          "checkIds": [
+            "u11-i-past-read-1",
+            "u11-i-past-read-2",
+            "u11-i-past-be-1",
+            "u11-i-past-be-2",
+            "u11-i-past-aspect-1",
+            "u11-i-past-aspect-2",
+            "u11-i-reflexive-1",
+            "u11-i-reflexive-2"
+          ],
+          "guidedIds": [
+            "u11-g-past-read-0",
+            "u11-g-past-be-0",
+            "u11-g-past-aspect-0",
+            "u11-g-reflexive-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 12,
+          "stepsCompleted": 50,
+          "checkIds": [
+            "u12-i-future-imp-1",
+            "u12-i-future-imp-2",
+            "u12-i-future-perf-1",
+            "u12-i-future-perf-2",
+            "u12-i-aspect-1",
+            "u12-i-aspect-2",
+            "u12-i-dative-1",
+            "u12-i-dative-2",
+            "u12-i-spelling-1",
+            "u12-i-spelling-2",
+            "u12-i-prep-plural-1",
+            "u12-i-prep-plural-2"
+          ],
+          "guidedIds": [
+            "u12-g-future-imp-0",
+            "u12-g-future-perf-0",
+            "u12-g-aspect-0",
+            "u12-g-dative-0",
+            "u12-g-spelling-0",
+            "u12-g-prep-plural-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 13,
+          "stepsCompleted": 32,
+          "checkIds": [
+            "u13-i-past-aspect-1",
+            "u13-i-past-aspect-2",
+            "u13-i-tense-keep-1",
+            "u13-i-tense-keep-2",
+            "u13-i-infinitive-1",
+            "u13-i-infinitive-2",
+            "u13-i-reported-1",
+            "u13-i-reported-2",
+            "u13-i-report-frame-time"
+          ],
+          "guidedIds": [
+            "u13-g-past-aspect-0",
+            "u13-g-tense-keep-0",
+            "u13-g-infinitive-0",
+            "u13-g-reported-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 14,
+          "stepsCompleted": 26,
+          "checkIds": [
+            "u14-i-future-aspect-1",
+            "u14-i-future-aspect-2",
+            "u14-i-future-person-1",
+            "u14-i-future-person-2",
+            "u14-i-impersonal-1",
+            "u14-i-impersonal-2"
+          ],
+          "guidedIds": [
+            "u14-g-future-aspect-0",
+            "u14-g-future-person-0",
+            "u14-g-impersonal-0"
+          ],
+          "bookAttested": true
+        },
+        {
+          "unit": 15,
+          "stepsCompleted": 27,
+          "checkIds": [
+            "u15-i-imperative-1",
+            "u15-i-imperative-2",
+            "u15-i-say-request-1",
+            "u15-i-say-request-2",
+            "u15-i-aspect-consolidate-1",
+            "u15-i-aspect-consolidate-2"
+          ],
+          "guidedIds": [
+            "u15-g-imperative-0",
+            "u15-g-say-request-0",
+            "u15-g-aspect-consolidate-0"
+          ],
+          "bookAttested": true
+        }
+      ],
+      "syntheticLearner": true,
+      "oldArchiveRelabelled": false
+    }
+  },
+  "finalUnit15Assignment": {
+    "id": "c22c33e2-957a-4354-b29d-46684ffbbfe6",
+    "targetUnit": 15,
+    "policyId": "unit15-prior-reading-impersonal-state-v1",
+    "policyDigest": "8efed316eff763464bf88a69ffe486e390c840801b9b7dc203cb6486f82486e9",
+    "responseRuleDigest": "13295a5b6ea35a2f9fd61584f179015be1e2df7579d237aa557ab943c8fab967",
+    "boundary": 27,
+    "slots": [
+      {
+        "objectiveId": "obj-u1-decoding",
+        "skill": "BOUNDED_READING",
+        "itemId": "u1-i-decode-pair",
+        "ownerUnit": 1,
+        "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+        "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+        "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+      },
+      {
+        "objectiveId": "obj-u14-impersonal",
+        "skill": "SUPPLIED_IMPERSONAL_STATE_RECOGNITION",
+        "itemId": "u14-i-impersonal-2",
+        "ownerUnit": 14,
+        "itemDigest": "de5c6c4393139f7980a6db6567e97b1472162ce9c7eb4ae9d45326e6cb77113b",
+        "unitDigest": "9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38",
+        "teachingDigest": "28716ab8b2159c5a6f851e2a190aec05fc517652db62f894f25afe3f11f0aac8"
+      }
+    ],
+    "digest": "506d55437543bba123f1313ae69de4298e49c378ff468519cdf6bdfd2918ee38",
+    "schema": 1
+  },
+  "finalUnit15Answers": [
+    {
+      "id": "4785382a-d21a-4493-bec3-f294369d9105",
+      "assignmentId": "c22c33e2-957a-4354-b29d-46684ffbbfe6",
+      "assignmentDigest": "506d55437543bba123f1313ae69de4298e49c378ff468519cdf6bdfd2918ee38",
+      "slotIndex": 0,
+      "selected": "\u0410 / \u0430",
+      "acceptedOrder": 28,
+      "role": "CUMULATIVE_REVIEW",
+      "schema": 1
+    },
+    {
+      "id": "b1ff5bc5-8062-414f-b0c8-975a9e815f81",
+      "assignmentId": "c22c33e2-957a-4354-b29d-46684ffbbfe6",
+      "assignmentDigest": "506d55437543bba123f1313ae69de4298e49c378ff468519cdf6bdfd2918ee38",
+      "slotIndex": 1,
+      "selected": "\u0435\u0439 \u0431\u044b\u043b\u043e \u0445\u043e\u043b\u043e\u0434\u043d\u043e",
+      "acceptedOrder": 29,
+      "role": "CUMULATIVE_REVIEW",
+      "schema": 1
+    }
+  ],
+  "finalUnit15Completion": {
+    "unitNumber": 15,
+    "recordedAtLocal": "unit14-baseline",
+    "preReviewActivation": false,
+    "reviewPolicyDigest": "8efed316eff763464bf88a69ffe486e390c840801b9b7dc203cb6486f82486e9",
+    "reviewAssignmentId": "c22c33e2-957a-4354-b29d-46684ffbbfe6",
+    "reviewCompletionOrder": 29
+  },
+  "finalProfile": {
+    "id": "local",
+    "onboardingCompleted": true,
+    "currentUnitNumber": 16,
+    "startingPoint": "NEW_TO_CYRILLIC",
+    "hasPenguin": true,
+    "hasAnki": false,
+    "hasBinder": false,
+    "hasTutor": false,
+    "dailyMinutes": 35,
+    "transliterationEnabled": true,
+    "currentSessionId": "u16-s-orient",
+    "currentStepIndex": 0,
+    "resumeContentDigest": "8a9d59d03ecf3ec38242cf065309bf22cc4cd6b1378bb6bf2afcccfc42472340",
+    "resumeIdentitySchema": 1
+  },
+  "finalRecordingCount": 0,
+  "lifecycle": {
+    "producerCommit": "f2628b363b241bce8bc71c25ca56b66aadd21dcd",
+    "curriculumSourceCommit": "9101af8c182b3415426ed9226cb211a707a2c393",
+    "partial14ReadReplaceNamedReopen": true,
+    "completed14ReadReplaceNamedReopen": true,
+    "partial15ReadReplaceNamedReopen": true,
+    "actualAdvance14To15": true,
+    "actualAdvance15To16": true,
+    "completed15NamedReopen": true,
+    "physicalAcceptance": "NOT_EXECUTED_OUTSTANDING_LAST"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "sourceCommit": "f2628b363b241bce8bc71c25ca56b66aadd21dcd",
+  "testCounts": {
+    "reported": 2,
+    "passed": 1,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 1,
+  "exitCode": 1,
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "releaseGateAttachment": "PASS_ATTACHMENT_ONLY",
+  "exactCommand": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/unit14-plural-possession-baseline-2026-10-28/resources.gradle",
+    "-Daudit.unit14.capture.dir=/workspace/artifacts/unit14-plural-possession-baseline-2026-10-28/REGRESSION/CAPTURE",
+    "-Daudit.history.output=/workspace/artifacts/unit14-plural-possession-baseline-2026-10-28/REGRESSION/HISTORY_CASES.jsonl",
+    "-Daudit.events.path=/workspace/artifacts/unit14-plural-possession-baseline-2026-10-28/REGRESSION/EVENTS.jsonl",
+    "-Daudit.gc.dir=/workspace/artifacts/unit14-plural-possession-baseline-2026-10-28/REGRESSION",
+    "testDebugUnitTest",
+    "--rerun",
+    "--tests",
+    "dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "activation": "source /workspace/setup/android-env.sh",
+  "startedUtc": "2026-10-28T14:10:29.099690+00:00",
+  "finishedUtc": "2026-10-28T14:14:36.409903+00:00",
+  "americaChicago": {
+    "started": "2026-10-28T09:10:29.099690-05:00",
+    "finished": "2026-10-28T09:14:36.409903-05:00"
+  },
+  "discovery": {
+    "reported": 2,
+    "passed": 0,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 2
+  },
+  "discoveryIsRuntime": false,
+  "currentDeclaredGateBypassed": false,
+  "futureContrast": "EXPECTED_FAILURE_PRESERVED",
+  "positive": "PASSED",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "apkIdentity": null,
+  "apkSignature": null,
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}
