@@ -1,0 +1,21 @@
+{
+  "sourceCommit": "2ebf4f282e42eaa5df8eb3a9e2ac491618e79f96",
+  "methods": 1499,
+  "classes": 261,
+  "syntheticSkips": 1499,
+  "runtimePasses": 0,
+  "all1477PriorBroadIdsRetained": true,
+  "addedUnit14Methods": 22,
+  "removedMethods": [],
+  "all79FollowupIdsIncluded": true,
+  "all541AffectedIdsIncluded": true,
+  "all24PriorFailedIdsIncluded": true,
+  "all19Unit13ControlsIncluded": true,
+  "all22Unit14ControlsIncluded": true,
+  "noMethodOrClassFilters": true,
+  "inputTreesMatchPrepared": true,
+  "xmlAndEventsExact": true,
+  "runnerAndInitHashesVerified": true,
+  "archiveCrcAndMemberShaVerified": true,
+  "completeSuite": false
+}
