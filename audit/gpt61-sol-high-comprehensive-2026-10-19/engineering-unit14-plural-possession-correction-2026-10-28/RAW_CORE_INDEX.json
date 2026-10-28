@@ -1,0 +1,232 @@
+[
+  {
+    "path": "DISCOVERY/CONTEXT.json",
+    "bytes": 3442,
+    "sha256": "950ea3c4d65e585e3791bfa4625c9dde7e6b2c8bf0f931d901bd6b6be5fb2b2b"
+  },
+  {
+    "path": "DISCOVERY/EVENTS.jsonl",
+    "bytes": 13308,
+    "sha256": "eb91d1738b5b7ea93820106ca8781044b4922752e5d2ec973e33b540965822f5"
+  },
+  {
+    "path": "DISCOVERY/RESULT.json",
+    "bytes": 10138,
+    "sha256": "cece43411d6b740e2d1547ab17ca028923d2d7bf24c40451b83c67f6041aa3b6"
+  },
+  {
+    "path": "DISCOVERY/RESULTS.csv",
+    "bytes": 4371,
+    "sha256": "3696229357e87d2e6860e811cfa27c3caa07fc0656d4156519ada21ecd3e0b27"
+  },
+  {
+    "path": "DISCOVERY/RUN.exit",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "path": "DISCOVERY/RUN.log",
+    "bytes": 6103,
+    "sha256": "1ef252b1bd897958dde9a19a20e7b3d51d25bd5a483abef0a4e2d436357aa1e5"
+  },
+  {
+    "path": "DISCOVERY/SHA256.json",
+    "bytes": 1126,
+    "sha256": "4c8b830582b3d0d9d435de979f15c785cd7442b1291fa2fbf7517434446a46ee"
+  },
+  {
+    "path": "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest.xml",
+    "bytes": 2443,
+    "sha256": "5e4ac469d98801104e82ad3f4f89050a75b1b882cecdc6b818ae27382f40bebb"
+  },
+  {
+    "path": "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest.xml",
+    "bytes": 784,
+    "sha256": "b66907f38a05885941a1984d7844702fc5b9f5f7744b2a180a2bba389d5ac0f9"
+  },
+  {
+    "path": "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest.xml",
+    "bytes": 1950,
+    "sha256": "654c6e2d99175aa11e1a2add44e292d5d254b9b90bd81c7bf82d3c75545b0b56"
+  },
+  {
+    "path": "DISCOVERY/gc-61937.log",
+    "bytes": 180,
+    "sha256": "b4f1f69eb6acd075ae1aa29c1cf2a7cbb926f2bb475a2cf8fada59526c31847c"
+  },
+  {
+    "path": "DISCOVERY/gc-61941.log",
+    "bytes": 180,
+    "sha256": "f2ad94be184461628f5850864b98c2aa44a844a752f37ce2d70609221056c760"
+  },
+  {
+    "path": "DISCOVERY_COMPLETION.json",
+    "bytes": 208,
+    "sha256": "8a0f30ef8740c31b4757c02a916358e2df3666d5d7775a43493ee4f31444a5ff"
+  },
+  {
+    "path": "DISCOVERY_LAUNCHER.exit",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "path": "DISCOVERY_LAUNCHER.json",
+    "bytes": 156,
+    "sha256": "5419d829055f54321a6a1f77a075a8f6c97c5c9b0cb9b61ef10b67b042db35ab"
+  },
+  {
+    "path": "DISCOVERY_LAUNCHER.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "DISCOVERY_RUNNER.log",
+    "bytes": 213,
+    "sha256": "06e8902fb533f0c6ca7610ed1c2b2d666351b2be9aa3b90f9dd37c943b0beb36"
+  },
+  {
+    "path": "DISCOVERY_RUNNER_PROCESS.json",
+    "bytes": 289,
+    "sha256": "46132e3a529e0f20cbe9f2c1665bee9365235a62bb84c1bd1bde95999ebb48fc"
+  },
+  {
+    "path": "INIT/broader-tests.gradle",
+    "bytes": 1905,
+    "sha256": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  {
+    "path": "INIT/cloud-validation.gradle",
+    "bytes": 788,
+    "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123"
+  },
+  {
+    "path": "INIT/resources.gradle",
+    "bytes": 746,
+    "sha256": "b5006543ee9b316660db77fc3e0ff239c08561ec839be7797d51e5a89d2e2dcf"
+  },
+  {
+    "path": "REGRESSION/CONTEXT.json",
+    "bytes": 3523,
+    "sha256": "2e6460f94d8da36872659f19273f02fea5c651bdd38d07980dc7b30354a4e8cb"
+  },
+  {
+    "path": "REGRESSION/CURRENT_POLICY_OBSERVATION.json",
+    "bytes": 12475,
+    "sha256": "22d1bb9b7d5432ee0ba1176f8c9d68a8e18d773c5ca92be6902332f188ae1ce9"
+  },
+  {
+    "path": "REGRESSION/EVENTS.jsonl",
+    "bytes": 13308,
+    "sha256": "457ffacef2d56c02113811fc13805ac959d367da50c8046726f71e631e027e84"
+  },
+  {
+    "path": "REGRESSION/LINT.xml",
+    "bytes": 31476,
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  {
+    "path": "REGRESSION/RESULT.json",
+    "bytes": 10488,
+    "sha256": "00e0ae1e9f054602b5c80cfe5aafdcdab4159302c8d9fba8610138ffd88b8fa9"
+  },
+  {
+    "path": "REGRESSION/RESULTS.csv",
+    "bytes": 4401,
+    "sha256": "7871cd9a0bb8f7b60a216e036908d7021aa709f61053d89daa498206c269fdab"
+  },
+  {
+    "path": "REGRESSION/RUN.exit",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "path": "REGRESSION/RUN.log",
+    "bytes": 4363,
+    "sha256": "f4c4ca35be457dd3ff752ad9517435fcfa35599b269d52e149bb58837f669ab6"
+  },
+  {
+    "path": "REGRESSION/SHA256.json",
+    "bytes": 1313,
+    "sha256": "0cded40cca170a7b1b061cfd4c495c77fefd6982106eb657dc948a85682b95a9"
+  },
+  {
+    "path": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest.xml",
+    "bytes": 16108,
+    "sha256": "dce2a05f9effe4e0d0a2ebc98ac9dbca7f6f34079fbd4222331cd49ab0f504e8"
+  },
+  {
+    "path": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest.xml",
+    "bytes": 934,
+    "sha256": "2a5df6cdf52f30650633ee7d2437e122cea3739b89734256fca237f03f78576c"
+  },
+  {
+    "path": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest.xml",
+    "bytes": 1748,
+    "sha256": "fc7b2fbd7ba9a8e99f085a5d01fe10df66c9a29b0d09becb881c9984b08f9d65"
+  },
+  {
+    "path": "REGRESSION/gc-62159.log",
+    "bytes": 18399,
+    "sha256": "13cebe851987f662620ac30e7e11b24e5785d5ea86832a67e191f74a95676a91"
+  },
+  {
+    "path": "REGRESSION/gc-62161.log",
+    "bytes": 94014,
+    "sha256": "d4f5711c30ad07e19196936a2235ba133429f87b741a28285726c8d9dd878b9a"
+  },
+  {
+    "path": "REGRESSION_COMPLETION.json",
+    "bytes": 208,
+    "sha256": "1bf7f4d7266d82b53737ac010898fbdb9b188a2cc417fa62fb67b43c19ab09a1"
+  },
+  {
+    "path": "REGRESSION_LAUNCHER.exit",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "path": "REGRESSION_LAUNCHER.json",
+    "bytes": 157,
+    "sha256": "399d9673e987edb7ccfb40d7f92b16809a7d0a0c27961d3052322caec0dc6aa2"
+  },
+  {
+    "path": "REGRESSION_LAUNCHER.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "REGRESSION_RUNNER.log",
+    "bytes": 213,
+    "sha256": "ba67868fd308ad8f0f6a9981e0de2892479014b000d1f05d75a389d0a12eb033"
+  },
+  {
+    "path": "REGRESSION_RUNNER_PROCESS.json",
+    "bytes": 290,
+    "sha256": "c1127c4ea48310db22f92a913b12bf53368e4711aa3e375d2b58abd8bc4660ef"
+  },
+  {
+    "path": "TOOLING/launch.py",
+    "bytes": 807,
+    "sha256": "661837c1fb0e419766972792f94204cc1bff97b10787ca6e6365e40dc937449f"
+  },
+  {
+    "path": "TOOLING/prepare.py",
+    "bytes": 10146,
+    "sha256": "4620951bf8e951a918119cf74a3fe61af59c3e1d809a9ad9257f7f9991a8a45e"
+  },
+  {
+    "path": "TOOLING/resources.gradle",
+    "bytes": 746,
+    "sha256": "b5006543ee9b316660db77fc3e0ff239c08561ec839be7797d51e5a89d2e2dcf"
+  },
+  {
+    "path": "TOOLING/run.py",
+    "bytes": 7314,
+    "sha256": "1761a8ef0626b9f280818f7ae3afd242358fdef724e6cc0753986f7a2da048cb"
+  },
+  {
+    "path": "TOOLING/supervise.py",
+    "bytes": 1197,
+    "sha256": "49346dac8349205097c4ca0b28482edfa4180ff483051b785834e8bc62613614"
+  }
+]
