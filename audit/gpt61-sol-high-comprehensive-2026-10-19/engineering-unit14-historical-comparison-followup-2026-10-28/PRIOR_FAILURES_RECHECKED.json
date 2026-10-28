@@ -1,0 +1,78 @@
+{
+  "sourceCommit": "2faa5471c4cf36728c09684584a255268bd34adb",
+  "methods": [
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "structuralMappingsMatchTheOwnedEditionObservations",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13BindingConservationTest",
+      "method": "kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13BindingConservationTest",
+      "method": "currentDeclarationReconstructsOnlyUnit13ThenEveryGenuineEarlierPack",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14ImpersonalRemediationTest",
+      "method": "allThreeStateCardsPrecedePracticeAndRepairRestoresEveryExample",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14CumulativeReviewTest",
+      "method": "actualUnit14ContinueReportedTimeCueTeachingPracticeReturnAndAdvanceStayOnUnit14",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit13RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15CumulativeReviewTest",
+      "method": "actualUnit15ContinueImpersonalStateCueTeachingPracticeReturnAndAdvanceStayOnUnit15",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15CumulativeReviewTest",
+      "method": "heldUnit15WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PresentCompatibilityTest",
+      "method": "exactPriorDeclarationsRefuseNewTasksAndPreserveBothUnit14OwnerBindings",
+      "outcome": "PASSED"
+    }
+  ],
+  "allIncluded": true,
+  "allPassed": true,
+  "scopesNotSummed": true
+}

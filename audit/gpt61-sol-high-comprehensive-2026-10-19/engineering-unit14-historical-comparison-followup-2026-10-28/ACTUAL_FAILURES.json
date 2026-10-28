@@ -1,0 +1,14 @@
+{
+  "sourceCommit": "2faa5471c4cf36728c09684584a255268bd34adb",
+  "count": 0,
+  "originalAssertionsNotWaived": true,
+  "storage": {
+    "format": "LOSSLESS_ZIP",
+    "archive": "ACTUAL_FAILURES_FULL.zip",
+    "archiveSha256": "a1cd9c73ca174b2867870b88e33e9b1904f61f6c315cf8edab8331424aba70ab",
+    "member": "ACTUAL_FAILURES.json",
+    "memberBytes": 136,
+    "memberSha256": "8eb46aafa07ee6982e93591031d8fdfac9ee0c255fb05a4f66480d3685de2c5c"
+  },
+  "failures": []
+}
