@@ -29,10 +29,18 @@ import dev.russiancompanion.v2.Unit13PresentFixtures.v1Capture
 class Unit13PresentCompatibilityTest {
     @Test fun exactPriorDeclarationsRefuseNewTasksAndPreserveBothUnit14OwnerBindings() {
         val old = before13
-        val restored = pack.copy(units = pack.units.map { u -> if (u.number != 13) u else
+        val before14 = RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(root, pack)
+        val restored = before14.copy(units = before14.units.map { u -> if (u.number != 13) u else
             u.copy(advancement = u.advancement!!.copy(cumulativeReviewPolicyId = Unit13WiderCumulativeReviewPolicy.definition.id)) })
         assertEquals("Entire actual baseline pack differs only by Unit13 declaration", old, restored)
-        val policies = (3..30).map { cumulativeReviewPolicy(it)!! }
+        // Original Unit13 inventory is a historical contract; all task/mutation checks below stay current.
+        val policies = (3..30).map { if (it == 14) Unit14CumulativeReviewPolicy.definition else cumulativeReviewPolicy(it)!! }
+        val currentPolicies = (3..30).map { cumulativeReviewPolicy(it)!! }
+        assertEquals(Unit14PluralPossessionCumulativeReviewPolicy.definition, currentPolicies.single { it.targetUnit == 14 })
+        assertEquals(60, currentPolicies.sumOf { it.pool.size })
+        assertEquals(121, currentPolicies.sumOf { p -> p.pool.sumOf { it.candidateItemIds.size } })
+        assertEquals(57, currentPolicies.flatMap { it.pool }.flatMap { it.candidateItemIds }.distinct().size)
+        assertEquals(18, currentPolicies.count { p -> p.pool.any { it.candidateItemIds == listOf("u1-i-decode-pair") } })
         assertEquals(28, policies.size); assertEquals(59, policies.sumOf { it.pool.size })
         assertEquals(112, policies.sumOf { p -> p.pool.sumOf { it.candidateItemIds.size } })
         assertEquals(52, policies.flatMap { it.pool }.flatMap { it.candidateItemIds }.distinct().size)
@@ -40,6 +48,10 @@ class Unit13PresentCompatibilityTest {
         assertEquals(Unit13WiderCumulativeReviewPolicy.definition.pool[2], Unit12GenderCumulativeReviewPolicy.definition.pool[1])
         val observation = buildJsonObject {
             put("canonicalSourceDigest", V2Validator.contentReviewDigest(pack))
+            put("canonicalSourceDigestLegacyLabelMeansPackContentReviewDigest", true)
+            put("policyInventoryScope", "historical Unit13 activation, before Unit14 v2 declaration")
+            put("currentPools", 60); put("currentPlacements", 121)
+            put("currentUniqueCandidates", 57); put("currentPrintSingletonPolicies", 18)
             put("unit13BeforeV2Digest", V2Validator.unitContentReviewDigest(old, 13))
             put("unit13CurrentDigest", V2Validator.unitContentReviewDigest(pack, 13))
             put("activePolicies", policies.size); put("pools", 59); put("placements", 112)

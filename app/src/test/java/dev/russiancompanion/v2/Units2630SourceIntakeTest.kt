@@ -602,6 +602,13 @@ class Units2630SourceIntakeTest {
                         RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
                     assertNotEquals("Current Unit13 v3 review identity", digest,
                         V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 14) {
+                    // Retain the old v1 pin only on its proven whole-pack declaration scope.
+                    RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(root, pack).let { pack ->
+                        assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals("Current Unit14 v2 review identity", digest, V2Validator.unitContentReviewDigest(pack, number))
                 } else {
                     assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
                 }

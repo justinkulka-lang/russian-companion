@@ -1,0 +1,11 @@
+{
+  "currentAssetSha256": "02202d37e0aa2c51182e4db22feff177124b6db2c270a67a93ef85e188916c19",
+  "oldAssetSha256": "765f06b3719192a5b0f19df553e3a5f20d00e2e7eb42130c908ceac15e4a9acf",
+  "currentProducer": "d72afd1232857a857624c20c58f4bcd3cb5c8564",
+  "oldProducer": "9101af8c182b3415426ed9226cb211a707a2c393",
+  "onlyRawByteDifference": {
+    "oldPolicy": "unit14-prior-reading-reported-time-v1",
+    "newPolicy": "unit14-prior-plural-possession-reported-time-v2"
+  },
+  "noOtherAssetFieldChanged": true
+}

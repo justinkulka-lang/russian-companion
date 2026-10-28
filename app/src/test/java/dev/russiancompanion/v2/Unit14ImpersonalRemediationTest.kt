@@ -34,7 +34,11 @@ class Unit14ImpersonalRemediationTest {
         val validationPack = V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText())
             .also { V2PackIdentityIndex.warm(it) }
         val historicalUnit = p.unit(14)!!
-        assertEquals(historicalUnit, validationPack.unit(14))
+        RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(root(), validationPack).let { validationPack ->
+            assertEquals(historicalUnit, validationPack.unit(14))
+        }
+        RecordedIntakeCorrectionScope.assertCurrentUnitMatches(validationPack,
+            RecordedCurriculumConservationScope.source(root(), RecordedCurriculumConservationScope.currentPackImplementation), 14)
         val objectiveIds = historicalUnit.objectives.map { it.id }.toSet()
         assertEquals(p.items.filter { it.objectiveId in objectiveIds }, validationPack.items.filter { it.objectiveId in objectiveIds })
         assertEquals(p.provenanceRecords.filter { it.unitNumber == 14 }, validationPack.provenanceRecords.filter { it.unitNumber == 14 })

@@ -16,7 +16,11 @@ class Unit13BindingConservationTest {
         val before13 = RecordedCurriculumConservationScope.beforeUnit13PresentReview(root, pack)
         assertEquals(RecordedIntakeCorrectionScope.load(root, "31ac807387253082c44bd2f6d67021478f0df66e"), before13)
         assertEquals(Unit13WiderCumulativeReviewPolicy.definition.id, before13.unit(13)!!.advancement!!.cumulativeReviewPolicyId)
-        assertEquals(pack.units.filter { it.number != 13 }, before13.units.filter { it.number != 13 })
+        // Original Unit13 contract predates only the proven Unit14 declaration change.
+        RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(root, pack).let { pack ->
+            assertEquals(pack.units.filter { it.number != 13 }, before13.units.filter { it.number != 13 })
+        }
+        RecordedCurriculumConservationScope.assertCurrent(root, pack)
         assertEquals(pack.items, before13.items); assertEquals(pack.provenanceRecords, before13.provenanceRecords)
         assertNotEquals(V2Validator.unitContentReviewDigest(before13, 13), V2Validator.unitContentReviewDigest(pack, 13))
         assertEquals(RecordedIntakeCorrectionScope.load(root, "23b9179eaf54844f0b38074b2db56c7113c38c00"),
@@ -47,7 +51,9 @@ class Unit13BindingConservationTest {
         val process = ProcessBuilder("git", "show", "aa93df85b4290406d5b78b0035b4a77912ae25fe:$path").directory(root).start()
         val old = Json.parseToJsonElement(process.inputStream.bufferedReader().readText()).jsonObject
         assertEquals(0, process.waitFor())
-        val now = Json.parseToJsonElement(File(root, path).readText()).jsonObject
+        // Keep the exact Unit13 append/count/source assertions on its genuine matching pair.
+        val referenceCommit = "9101af8c182b3415426ed9226cb211a707a2c393"
+        val now = Json.parseToJsonElement(sourceBytes(referenceCommit, path).toString(Charsets.UTF_8)).jsonObject
         assertFalse(now.getValue("semanticAcceptance").jsonPrimitive.boolean)
         assertFalse(now.getValue("rightsAcceptance").jsonPrimitive.boolean)
         val before = old.getValue("files").jsonArray.map { it.jsonObject }.associateBy { it.getValue("path").jsonPrimitive.content }
@@ -59,7 +65,7 @@ class Unit13BindingConservationTest {
             else {
                 assertEquals(entry.filterKeys { it != "sha256" }, after.getValue(name).filterKeys { it != "sha256" })
                 assertNotEquals(entry.getValue("sha256"), after.getValue(name).getValue("sha256"))
-                val actual = MessageDigest.getInstance("SHA-256").digest(File(root, "app/$name").readBytes()).joinToString("") { "%02x".format(it) }
+                val actual = MessageDigest.getInstance("SHA-256").digest(sourceBytes(referenceCommit, "app/$name")).joinToString("") { "%02x".format(it) }
                 assertEquals(actual, after.getValue(name).getValue("sha256").jsonPrimitive.content)
             }
         }
@@ -74,5 +80,21 @@ class Unit13BindingConservationTest {
         assertTrue(last.getValue("allExistingBindingsUnchanged").jsonPrimitive.boolean)
         assertFalse(last.getValue("semanticAcceptance").jsonPrimitive.boolean)
         assertFalse(last.getValue("rightsAcceptance").jsonPrimitive.boolean)
+        // Current kernel identity remains separately checked, alongside unchanged Unit14 binding proofs.
+        val live = Json.parseToJsonElement(File(root, path).readText()).jsonObject
+        val liveEntry = live.getValue("files").jsonArray.map { it.jsonObject }.single {
+            it.getValue("path").jsonPrimitive.content == kernel
+        }
+        val liveHash = MessageDigest.getInstance("SHA-256").digest(File(root, "app/$kernel").readBytes()).joinToString("") { "%02x".format(it) }
+        assertEquals(liveHash, liveEntry.getValue("sha256").jsonPrimitive.content)
+        assertFalse(live.getValue("semanticAcceptance").jsonPrimitive.boolean)
+        assertFalse(live.getValue("rightsAcceptance").jsonPrimitive.boolean)
+    }
+
+    private fun sourceBytes(commit: String, path: String): ByteArray {
+        val process = ProcessBuilder("git", "show", "$commit:$path").directory(root).start()
+        val bytes = process.inputStream.readBytes()
+        assertEquals(0, process.waitFor())
+        return bytes
     }
 }
