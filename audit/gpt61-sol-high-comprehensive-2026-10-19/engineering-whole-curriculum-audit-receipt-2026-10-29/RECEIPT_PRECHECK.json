@@ -1,0 +1,9 @@
+{
+  "kind": "RECEIPT_CHECKER_ASSUMPTION_FAILURE_NOT_ANDROID_TEST",
+  "initialAssumption": "Auditor helper must emit31normalizedgroups",
+  "actualHelperGroups": 32,
+  "scopeJsonMechanicalGroups": 32,
+  "reportAdjudicatedGroups": 31,
+  "correction": "Compare machine count32withmachine measure,retain manual31as separate auditor judgment;do not modify original returns",
+  "normalizationRisk": "Helper lowercases and removes stress;surface collisions are not necessarily identical grammatical tasks"
+}
