@@ -1,0 +1,52 @@
+{
+  "actualFollowupSource": "f17c9c35903138f370d62c6e4c23145ff9d11f7a",
+  "followupCounts": {
+    "reported": 12,
+    "passed": 12,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "followupClasses": 2,
+  "followupExitCode": 0,
+  "initialCorrectionSource": "040d794fbcd68f61a465d3f0d78e3f1ad90b89c6",
+  "initialCounts": {
+    "reported": 70,
+    "passed": 69,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "initialExitCode": 1,
+  "initialFailureIds": [
+    [
+      "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "optionalPracticeExplainsTheSubmittedWrongValueWithoutRequiredCredit"
+    ]
+  ],
+  "allInitialFailureIdsPassedInFollowup": true,
+  "sameProductionMainTree": true,
+  "whole7MethodBaselineUnchanged": true,
+  "originalAuditSevenChecksumsStillExact": {
+    "CURRICULUM_AUDIT_REPORT.md": "9452baf68b453d5dfec5ebdf9932e8ef9487dbd404abb944f5fabc93c76a0df8",
+    "UNIT_COVERAGE.csv": "0b8347c788e60935b5dd0d4c7ec3fc451d96ffbd327717f619b6a8f04d301c02",
+    "ITEM_AND_CAPABILITY_COVERAGE.csv": "067839840206c19a8cd68e1cbe199d9ae185a27691e66468c5a75e2bc2cef583",
+    "FINDINGS.csv": "a7868647f4e8bfe6fc411616bfee9430724cb0856e11f18a744543d2e1ee9e49",
+    "BATCHED_CORRECTION_WORK_ORDER.csv": "675661ae450ecd88ac14b44b4e405310a08461328f149f00cfefec001dcb60ea",
+    "AUDIT_SCOPE_AND_EXECUTION.json": "484412d26eadf3c09480271ea3e360c5dbf2f37c61d511de18876b116dae4571",
+    "mechanical_analysis.py": "6fb7703e737b8b12ee8de94af97d24f7c20ae575862cc5fe632409f6dadcc3e9"
+  },
+  "currentBindingRecordsRetained": 155,
+  "currentBindingStatus": "RECONCILIATION_PENDING",
+  "learnerArchivesUnchanged": 77,
+  "batchB03Engineering": "PARTIAL_KNOWN_PATTERN_CONTAINMENT_VERIFIED",
+  "batchB03Content": "NOT_FIXED_BY_THIS_CHANGE",
+  "independentWC001Closure": "NOT_CLOSED",
+  "all59Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "noComplete70OrCompleteSuiteClaim": true,
+  "scopesNotSummed": true,
+  "apkIdentity": null,
+  "apkSignature": null,
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

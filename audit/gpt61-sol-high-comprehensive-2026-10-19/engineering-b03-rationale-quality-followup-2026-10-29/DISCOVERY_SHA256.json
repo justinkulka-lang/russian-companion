@@ -1,0 +1,12 @@
+{
+  "CONTEXT.json": "e1360435eaa0221a189bf3fdbe1e83ddc7d571526e6d4ec0b8b3f0db19fe2822",
+  "EVENTS.jsonl": "f9c7073b5a00871671985312b13462f98584359f69be57cf9850d273edee797e",
+  "RESULT.json": "848a552546882068cecd216eb25b8ef86ee572e1cd908c97933cd43a348168e6",
+  "RESULTS.csv": "7a0835da3fd018a1069addd679ed27d0b8edfa99b133ebcead024dc246443833",
+  "RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+  "RUN.log": "14cb4e0e2e3923db06984984b12b7668cb67c1471468411e0954f8524a221f3e",
+  "XML/TEST-dev.russiancompanion.v2.RationaleQualityBoundaryTest.xml": "dd706406ee10101443cc2d35b9bbf0a0ca377a793394547633fbfcd14d14b05c",
+  "XML/TEST-dev.russiancompanion.v2.SelectedOptionRationaleUiTest.xml": "714f8e6fd614a34980263e7d63dc90bebb78585bccd251f4f6b233523c7be5fc",
+  "gc-159200.log": "3226536c79b07748dc41aec16950766e15cc449332861b83c936d92e2085a5d7",
+  "gc-159204.log": "0d8e4d73617888b4ffad8a2efc13fa4176d60f65cc51c82ce132da3c4282b13e"
+}
