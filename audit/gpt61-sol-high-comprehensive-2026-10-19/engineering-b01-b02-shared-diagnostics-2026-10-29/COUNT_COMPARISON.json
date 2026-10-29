@@ -1,0 +1,12 @@
+{
+  "newDiagnosticVersion": "assessment-teaching-v1",
+  "sourceMarkupFields": 37,
+  "sourceMarkupUniqueEntities": 37,
+  "reviewSignals": 426,
+  "signalRows": 463,
+  "exactTaskSignatureGroups": 13,
+  "priorAuditNormalizedSurfaceCollisionGroups": 32,
+  "priorAuditAdjudicatedDuplicateGroups": 31,
+  "countsNotInterchangeable": true,
+  "reason": "New exact task signature retains full prompt, language, kind, stress, case and key. Earlier surface grouping removed stress and case and omitted the prompt. New answer-script heuristic uses explicit answer-selection phrases in linked instruction; audit item verdicts used reading and adjudication. Cue signal matches visible NFC-normalized cue in any distractor and is not a confirmed shortcut. All review signals need construct-specific review; counts overlap."
+}

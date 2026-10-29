@@ -1,0 +1,147 @@
+{
+  "sourceCommit": "0772171f74e9498af38d6c2e70ad45ecdead1f95",
+  "sourceRootTree": "02b4ba37e66eba14fe8046083bd592c20a700c2e",
+  "inputTrees": {
+    "app/src/main": "c29d3d994e31ca7207c6d8bbaa47ebd335eef77d",
+    "app/src/test": "7ea4cd776c66afa12d5014f0b66bcb5d1f40311a",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "3cb94ec5b107e307f106f397380a4177621a2ae7",
+    "release": "81e1b4ac607baf83b645ed9bfae0bb5a516b8d1a"
+  },
+  "testCounts": {
+    "reported": 56,
+    "passed": 56,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 5,
+  "scope": "Five full selected classes; NOT a complete suite",
+  "completeSuite": false,
+  "discoverySyntheticSkips": 56,
+  "commandsIn": "RAW_VERIFICATION.zip: DISCOVERY/CONTEXT.json, REGRESSION/CONTEXT.json and CLI/*_CONTEXT.json",
+  "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "qualityReport": [
+    {
+      "task": "reportCurriculumDesign",
+      "gradleExit": 0,
+      "outputExists": true,
+      "sourceCommit": "0772171f74e9498af38d6c2e70ad45ecdead1f95",
+      "rawInputBytes": 20350052,
+      "rawInputSha256": "02202d37e0aa2c51182e4db22feff177124b6db2c270a67a93ef85e188916c19",
+      "verdict": "NEEDS_CORRECTION_OR_REVIEW",
+      "counts": {
+        "units": 30,
+        "objectives": 195,
+        "items": 626,
+        "requiredChecks": 429,
+        "structuralErrors": 37,
+        "reviewSignals": 426
+      },
+      "rules": {
+        "ANSWER_IN_INSTRUCTION_SIGNAL": 59,
+        "CONSTANT_REQUIRED_KEY": 9,
+        "CUE_AS_DISTRACTOR": 42,
+        "FEWER_THAN_THREE_OPTIONS": 208,
+        "IDENTICAL_REQUIRED_DISPLAY_TASK": 13,
+        "LEARNER_MARKUP": 37,
+        "NO_CYRILLIC_IN_REQUIRED_DISPLAY": 11,
+        "REMEDIATION_TRANSFER_OR_GAP": 77,
+        "TEACHING_TRANSFER_OR_GAP": 7
+      },
+      "authoredRequiredKeyPositions": {
+        "0": 381,
+        "1": 25,
+        "2": 9,
+        "3": 6,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1
+      }
+    },
+    {
+      "task": "checkCurriculumDesign",
+      "gradleExit": 1,
+      "outputExists": true,
+      "sourceCommit": "0772171f74e9498af38d6c2e70ad45ecdead1f95",
+      "rawInputBytes": 20350052,
+      "rawInputSha256": "02202d37e0aa2c51182e4db22feff177124b6db2c270a67a93ef85e188916c19",
+      "verdict": "NEEDS_CORRECTION_OR_REVIEW",
+      "counts": {
+        "units": 30,
+        "objectives": 195,
+        "items": 626,
+        "requiredChecks": 429,
+        "structuralErrors": 37,
+        "reviewSignals": 426
+      },
+      "rules": {
+        "ANSWER_IN_INSTRUCTION_SIGNAL": 59,
+        "CONSTANT_REQUIRED_KEY": 9,
+        "CUE_AS_DISTRACTOR": 42,
+        "FEWER_THAN_THREE_OPTIONS": 208,
+        "IDENTICAL_REQUIRED_DISPLAY_TASK": 13,
+        "LEARNER_MARKUP": 37,
+        "NO_CYRILLIC_IN_REQUIRED_DISPLAY": 11,
+        "REMEDIATION_TRANSFER_OR_GAP": 77,
+        "TEACHING_TRANSFER_OR_GAP": 7
+      },
+      "authoredRequiredKeyPositions": {
+        "0": 381,
+        "1": 25,
+        "2": 9,
+        "3": 6,
+        "4": 3,
+        "5": 3,
+        "6": 1,
+        "7": 1
+      }
+    }
+  ],
+  "reviewedValidatorAnd19ReferenceFilesUnchanged": true,
+  "all285PreexistingTestFilesUnchanged": true,
+  "newKotlinTestFiles": 1,
+  "all155BindingRecordsUnchanged": true,
+  "all77LearnerArchivesUnchanged": true,
+  "protectedEvidenceUnchanged": true,
+  "sourceBindings": "RECONCILIATION_PENDING",
+  "all59Findings": "OPEN",
+  "independentAudit": "INCOMPLETE",
+  "excludedScreenshotExporters": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "provisionalJvmDirective": "-XX:CompileCommand=exclude,androidx/sqlite/driver/SupportSQLiteConnection.prepare",
+  "directiveAdopted": false,
+  "directiveIsTestExclusion": false,
+  "nativeRootCause": "UNCONFIRMED",
+  "apkIdentityAndSignature": "NO APK ASSEMBLED, INSTALLED OR SIGNED in this phase; prior APK evidence unchanged",
+  "physicalDeviceAcceptance": "OUTSTANDING_LAST_AFTER_FINAL_COMPREHENSIVE_INDEPENDENT_AUDIT",
+  "rawArchive": {
+    "path": "RAW_VERIFICATION.zip",
+    "bytes": 100907,
+    "sha256": "ced4145d95895538a3e9beb328852f0c7b726da9bc1f0816ef2d8ec73e5bc976",
+    "members": 63,
+    "crcAndAllMemberSha256Verified": true
+  },
+  "priorScopesSeparateNotSummed": true
+}
