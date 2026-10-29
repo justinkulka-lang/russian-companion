@@ -68,8 +68,11 @@ class SelectedOptionRationaleUiTest {
     @Test fun optionalPracticeExplainsTheSubmittedWrongValueWithoutRequiredCredit() {
         val p = Unit8PresentFixtures.pack
         LocalStore.openInMemory(context()).use { store ->
-            // A placed current unit is available for optional practice without fabricated earlier credit.
-            store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 7))
+            // Mixed Practice revisits completed units; establish their real governed histories.
+            Unit8PresentFixtures.prepare(store, through = 7)
+            assertEquals((1..7).toSet(), currentCompletedUnitNumbers(p, store.v2LearnerView()))
+            val requiredCreditBeforePractice = creditItemIds(p, store.v2LearnerView())
+            val stepsBeforePractice = store.v2StepProgress()
             // Seed another lab's genuine optional miss so Mixed Practice prioritizes an existing
             // specific explanation, rather than the separately tested defective adverb rationale.
             val target = p.item("u7-i-endings-4")!!
@@ -100,8 +103,8 @@ class SelectedOptionRationaleUiTest {
             assertEquals(attemptsBeforeSelection.size + 1, store.v2Attempts().size)
             assertEquals(wrong, store.v2Attempts().last().selected)
             assertFalse(store.v2Attempts().last().correct)
-            assertTrue(creditItemIds(p, store.v2LearnerView()).isEmpty())
-            assertTrue(store.v2StepProgress().isEmpty())
+            assertEquals(requiredCreditBeforePractice, creditItemIds(p, store.v2LearnerView()))
+            assertEquals(stepsBeforePractice, store.v2StepProgress())
         }
     }
 
