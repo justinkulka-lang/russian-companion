@@ -1,0 +1,129 @@
+{
+  "sourceCommit": "37ea31787959ab8ddf5d64f4efd0ccfbf404403d",
+  "inputTrees": {
+    "app/src/main": "3dc6e95950fa42c016cd958bebc291048e6a6644",
+    "app/src/test": "806d30f87c9b33f58cc5046a549a3242b72ebae5",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "4bc1e7678565cdbefcf31c7fc4e5272d8e749fd7",
+    "release": "c03bb8dbc3025ef83f463c6a8521526b09da8e42"
+  },
+  "syntheticDryRun": false,
+  "exitCode": 1,
+  "finishedUtc": "2026-10-29T00:37:08.367709+00:00",
+  "testCounts": {
+    "reported": 6,
+    "passed": 1,
+    "failed": 5,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 2,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+      "method": "currentPageAndAllDraftChoicesSurviveSavedInstanceStateRestore",
+      "outcome": "FAILED",
+      "seconds": "8.199",
+      "messagePreview": "java.lang.AssertionError: Action performScrollTo() failed.\nReason: Expected exactly '1' node but could not find any node that satisfies: (Text + InputText + EditableText contains '50 minutes' (ignoreCase: false))\n",
+      "fullMessageBytes": 213,
+      "fullMessageSha256": "a787081edffc80cc568c86095872ba33fd9e434f9b692c69729e2803e1575811"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+      "method": "failedSaveAndRestoreKeepReadyDraftWithoutSubmittingItAutomatically",
+      "outcome": "FAILED",
+      "seconds": "0.509",
+      "messagePreview": "java.lang.AssertionError: Assert failed: The component with TestTag = 'v2-start-unit-1' is not displayed!",
+      "fullMessageBytes": 105,
+      "fullMessageSha256": "f4d2b394205828a5ce28d55b2554920d1578418a9b7dc604a7dbba950b260503"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "assignedReviewExplainsTheSelectedWrongValueWithoutCompletingItsSlot",
+      "outcome": "FAILED",
+      "seconds": "17.959",
+      "messagePreview": "java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains '\u043d\u043e\u0301\u0432\u044b\u0439 is nominative masculine singular instead of the feminine singular agreement required here.' (ignoreCase: false))\nSemantics of the node:\nNode #100 at (l=24.0, t=347.0, r=296.0, b=382.0)px, Tag: 'v2-review-feedback-1'\nText = '[Not the reviewed answer. \u043d\u043e\u0301\u0432\u0430\u044f agrees with the shown feminine singular noun in the nominative, as in the retained new car phrase. \u043d\u043e\u0301\u0432\u044b\u0439 is masculine singular and \u043d\u043e\u0301\u0432\u044b\u0435 is plural. Choose the form that matches the noun in this phrase, rather than the dictionary form or a plural form.]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 14 siblings\nSelector used: (TestTag = 'v2-review-feedback-1')\n",
+      "fullMessageBytes": 809,
+      "fullMessageSha256": "2f503d2c17e3e7b091d36021641f74fcefe8da7425c34027dfb756d6eba30776"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "lessonOptionHasMergedLabelRoleSelectionAndClickSemantics",
+      "outcome": "PASSED",
+      "seconds": "0.514",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "optionalPracticeExplainsTheSubmittedWrongValueWithoutRequiredCredit",
+      "outcome": "FAILED",
+      "seconds": "0.213",
+      "messagePreview": "java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains 'The frozen source pairs the shown form \"\u0445\u043e\u0440\u043e\u0448\u043e\" with the admitted gloss \"well\" (\"while in Russian\").' (ignoreCase: false))\nSemantics of the node:\nNode #241 at (l=24.0, t=335.0, r=152.0, b=370.0)px, Tag: 'v2-lab-feedback'\nText = '[Not the reviewed answer. The frozen source pairs the shown form \"\u0431\u044b\u0441\u0442\u0440\u043e\" with the admitted gloss \"quickly\" (\"while in Russian\").]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 7 siblings\nSelector used: (TestTag = 'v2-lab-feedback')\n",
+      "fullMessageBytes": 632,
+      "fullMessageSha256": "ba0b0c074b84af3f5d09d8d2915a2e5b18d91cbb398322958eb09822ec5b0497"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "lessonExplainsEachSelectedWrongValueWithoutChangingGradingOrCommonFeedback",
+      "outcome": "FAILED",
+      "seconds": "0.223",
+      "messagePreview": "java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains '\u043d\u043e\u0301\u0432\u044b\u0439 is nominative masculine singular instead of the feminine singular agreement required here.' (ignoreCase: false))\nSemantics of the node:\nNode #336 at (l=24.0, t=351.0, r=296.0, b=386.0)px, Tag: 'v2-item-feedback-u7-i-endings-4'\nText = '[Not the reviewed answer. \u043d\u043e\u0301\u0432\u0430\u044f agrees with the shown feminine singular noun in the nominative, as in the retained new car phrase. \u043d\u043e\u0301\u0432\u044b\u0439 is masculine singular and \u043d\u043e\u0301\u0432\u044b\u0435 is plural. Choose the form that matches the noun in this phrase, rather than the dictionary form or a plural form.]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 27 siblings\nSelector used: (TestTag = 'v2-item-feedback-u7-i-endings-4')\n",
+      "fullMessageBytes": 831,
+      "fullMessageSha256": "c0fa60484a7c01aad9b3591f905026b887985a41461b1600105bc4304a5fad7c"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "2",
+      "errors": "0",
+      "timestamp": "2026-10-29T00:34:44.657Z",
+      "hostname": "139038e4205c",
+      "time": "10.294"
+    },
+    {
+      "name": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "tests": "4",
+      "skipped": "0",
+      "failures": "3",
+      "errors": "0",
+      "timestamp": "2026-10-29T00:34:44.654Z",
+      "hostname": "139038e4205c",
+      "time": "20.385"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": {
+    "sameInputTrees": true,
+    "discoveredNotReported": [],
+    "reportedNotDiscovered": [],
+    "exactSameMethodSet": true
+  },
+  "allFreshSelectedMethodsReported": true,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}
