@@ -1,0 +1,8 @@
+{
+  "sourceCommit": "5a3411a76b88753617ea18b3e1a54f44f6923b9f",
+  "actualSyntheticSkips": 1508,
+  "classes": 264,
+  "exactPreparedMethodSetConfirmed": true,
+  "runtimePasses": 0,
+  "discoveryResultSha256": "798e05cba6b6449ee9d07d4e72ed75032b7193f89570a38d6de6f22de8b08a8d"
+}

@@ -1,0 +1,15 @@
+{
+  "actualSource": "5a3411a76b88753617ea18b3e1a54f44f6923b9f",
+  "testFiles": 284,
+  "allTestFilesExactDuringRun": true,
+  "sourceTreesExactDuringRun": true,
+  "currentRecords": 155,
+  "allCurrentRecordHashesExact": true,
+  "learnerArchives": 77,
+  "allLearnerArchiveHashesAndCrcExact": true,
+  "allPriorProtectedEvidenceExact": true,
+  "originalAssertionsPinsAndHistoricalControlsRetained": true,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}
