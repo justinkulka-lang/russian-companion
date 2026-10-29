@@ -1,0 +1,129 @@
+{
+  "sourceCommit": "cf6ced08ef97745b8ea164c578aaa4008a3d1828",
+  "inputTrees": {
+    "app/src/main": "3dc6e95950fa42c016cd958bebc291048e6a6644",
+    "app/src/test": "82a4e2b8b40483759a68a30579faebd1ce7eaa44",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "4bc1e7678565cdbefcf31c7fc4e5272d8e749fd7",
+    "release": "c03bb8dbc3025ef83f463c6a8521526b09da8e42"
+  },
+  "syntheticDryRun": false,
+  "exitCode": 1,
+  "finishedUtc": "2026-10-29T00:46:08.606518+00:00",
+  "testCounts": {
+    "reported": 6,
+    "passed": 1,
+    "failed": 5,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 2,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+      "method": "currentPageAndAllDraftChoicesSurviveSavedInstanceStateRestore",
+      "outcome": "FAILED",
+      "seconds": "6.929",
+      "messagePreview": "java.lang.AssertionError: Action performScrollTo() failed.\nReason: Expected exactly '1' node but could not find any node that satisfies: (Text + InputText + EditableText contains '50 minutes' (ignoreCase: false))\n",
+      "fullMessageBytes": 213,
+      "fullMessageSha256": "a787081edffc80cc568c86095872ba33fd9e434f9b692c69729e2803e1575811"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+      "method": "failedSaveAndRestoreKeepReadyDraftWithoutSubmittingItAutomatically",
+      "outcome": "FAILED",
+      "seconds": "0.557",
+      "messagePreview": "java.lang.AssertionError: Assert failed: The component with TestTag = 'v2-start-unit-1' is not displayed!",
+      "fullMessageBytes": 105,
+      "fullMessageSha256": "f4d2b394205828a5ce28d55b2554920d1578418a9b7dc604a7dbba950b260503"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "assignedReviewExplainsTheSelectedWrongValueWithoutCompletingItsSlot",
+      "outcome": "FAILED",
+      "seconds": "17.13",
+      "messagePreview": "java.lang.AssertionError: Action performScrollTo() failed.\nReason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'v2-review-rationale-1')\n",
+      "fullMessageBytes": 173,
+      "fullMessageSha256": "7b21e4eff87531a5c10fbe56a341037ccba24aa899148feeb2b5206127a6f053"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "lessonOptionHasMergedLabelRoleSelectionAndClickSemantics",
+      "outcome": "PASSED",
+      "seconds": "0.599",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "optionalPracticeExplainsTheSubmittedWrongValueWithoutRequiredCredit",
+      "outcome": "FAILED",
+      "seconds": "0.207",
+      "messagePreview": "java.lang.AssertionError: Action performScrollTo() failed.\nReason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'v2-lab-rationale')\n",
+      "fullMessageBytes": 168,
+      "fullMessageSha256": "001c9ade27816a80d463d8dc3487eecf227c18a14bd23a35de8f7a536199bf31"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "lessonExplainsEachSelectedWrongValueWithoutChangingGradingOrCommonFeedback",
+      "outcome": "FAILED",
+      "seconds": "0.221",
+      "messagePreview": "java.lang.AssertionError: Action performScrollTo() failed.\nReason: Expected exactly '1' node but could not find any node that satisfies: (TestTag = 'v2-item-rationale-u7-i-endings-4')\n",
+      "fullMessageBytes": 184,
+      "fullMessageSha256": "347c38cce2a7477b0401f98a1ec9aa5061393451d78204a77ee75b5ff87793b7"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "2",
+      "errors": "0",
+      "timestamp": "2026-10-29T00:43:48.475Z",
+      "hostname": "139038e4205c",
+      "time": "8.294"
+    },
+    {
+      "name": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "tests": "4",
+      "skipped": "0",
+      "failures": "3",
+      "errors": "0",
+      "timestamp": "2026-10-29T00:43:48.541Z",
+      "hostname": "139038e4205c",
+      "time": "19.275"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": {
+    "sameInputTrees": true,
+    "discoveredNotReported": [],
+    "reportedNotDiscovered": [],
+    "exactSameMethodSet": true
+  },
+  "allFreshSelectedMethodsReported": true,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}
