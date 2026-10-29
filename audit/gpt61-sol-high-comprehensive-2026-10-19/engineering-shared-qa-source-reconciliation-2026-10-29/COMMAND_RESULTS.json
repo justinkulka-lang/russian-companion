@@ -1,0 +1,84 @@
+[
+  {
+    "label": "COMPILE_CURRENT_SOURCE",
+    "command": [
+      "bash",
+      "-c",
+      "source /workspace/setup/android-env.sh; exec ./gradlew compileDebugUnitTestKotlin --offline --max-workers=2 --console=plain"
+    ],
+    "startedUtc": "2026-10-29T11:11:00.091393+00:00",
+    "finishedUtc": "2026-10-29T11:11:02.167931+00:00",
+    "exitCode": 0
+  },
+  {
+    "label": "Digest_COMPILE",
+    "command": [
+      "/workspace/jdk21/bin/javac",
+      "-cp",
+      "/workspace/artifacts/shared-qa-source-bindings-2026-10-29:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/workspace/russian-companion/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes",
+      "/workspace/artifacts/shared-qa-source-bindings-2026-10-29/Digest.java"
+    ],
+    "startedUtc": "2026-10-29T11:11:02.168967+00:00",
+    "finishedUtc": "2026-10-29T11:11:02.936490+00:00",
+    "exitCode": 0
+  },
+  {
+    "label": "GeneratePendingEvidence_COMPILE",
+    "command": [
+      "/workspace/jdk21/bin/javac",
+      "-cp",
+      "/workspace/artifacts/shared-qa-source-bindings-2026-10-29:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/workspace/russian-companion/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes",
+      "/workspace/artifacts/shared-qa-source-bindings-2026-10-29/GeneratePendingEvidence.java"
+    ],
+    "startedUtc": "2026-10-29T11:11:02.936801+00:00",
+    "finishedUtc": "2026-10-29T11:11:03.973376+00:00",
+    "exitCode": 0
+  },
+  {
+    "label": "DIGEST",
+    "command": [
+      "/workspace/jdk21/bin/java",
+      "-cp",
+      "/workspace/artifacts/shared-qa-source-bindings-2026-10-29:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/workspace/russian-companion/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes",
+      "Digest",
+      "/workspace/russian-companion"
+    ],
+    "startedUtc": "2026-10-29T11:11:03.973828+00:00",
+    "finishedUtc": "2026-10-29T11:11:04.345455+00:00",
+    "exitCode": 0
+  },
+  {
+    "label": "RENDER_1",
+    "command": [
+      "/workspace/jdk21/bin/java",
+      "-Xmx2g",
+      "-cp",
+      "/workspace/artifacts/shared-qa-source-bindings-2026-10-29:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/workspace/russian-companion/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes",
+      "GeneratePendingEvidence",
+      "/workspace/artifacts/shared-qa-source-bindings-2026-10-29/INPUT_PROJECTION",
+      "/workspace/artifacts/shared-qa-source-bindings-2026-10-29/CANDIDATE_1",
+      "bb0170d2224941d6d4351a50d411f2ef88814e8b872dd61e8b51604228270c87",
+      "/workspace/russian-companion"
+    ],
+    "startedUtc": "2026-10-29T11:11:04.580342+00:00",
+    "finishedUtc": "2026-10-29T11:12:18.007101+00:00",
+    "exitCode": 0
+  },
+  {
+    "label": "RENDER_2",
+    "command": [
+      "/workspace/jdk21/bin/java",
+      "-Xmx2g",
+      "-cp",
+      "/workspace/artifacts/shared-qa-source-bindings-2026-10-29:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/workspace/russian-companion/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes",
+      "GeneratePendingEvidence",
+      "/workspace/artifacts/shared-qa-source-bindings-2026-10-29/INPUT_PROJECTION",
+      "/workspace/artifacts/shared-qa-source-bindings-2026-10-29/CANDIDATE_2",
+      "bb0170d2224941d6d4351a50d411f2ef88814e8b872dd61e8b51604228270c87",
+      "/workspace/russian-companion"
+    ],
+    "startedUtc": "2026-10-29T11:12:18.007585+00:00",
+    "finishedUtc": "2026-10-29T11:13:30.389404+00:00",
+    "exitCode": 0
+  }
+]
