@@ -59,6 +59,8 @@ class Unit3GenderTeachingTest {
     }
 
     @Test fun genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(current, 3)) {
         val p = current; val old = previous
         val labels = listOf("BEFORE_UNIT3_WORK", "ORDINARY_UNIT3", "UNSTARTED_REVIEW", "PARTIAL_REVIEW", "ANSWERED_REVIEW", "COMPLETED_UNIT3", "POST_COMPLETION_WRONG", "COMPLETED_UNIT4")
         labels.forEach { label ->
@@ -89,9 +91,12 @@ class Unit3GenderTeachingTest {
                 LocalStore.openNamed(context(), name).use { check(it) }
             } finally { staging.deleteRecursively(); context().deleteDatabase(name) }
         }
+        }
     }
 
     @Test fun olderPolicyHistoriesRemainRawButCannotBypassChangedUnit3Teaching() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(current, 3)) {
         for (prefix in listOf("", "predecessor-schema1/")) {
             for (label in listOf("BEFORE_UNIT6_WORK", "ORDINARY_UNIT6", "UNSTARTED_REVIEW", "PARTIAL_REVIEW", "ANSWERED_REVIEW", "COMPLETED_UNIT6", "POST_COMPLETION_WRONG", "COMPLETED_UNIT7")) {
                 val file = File(root(), "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/$prefix$label.json")
@@ -108,9 +113,12 @@ class Unit3GenderTeachingTest {
                 }
             }
         }
+        }
     }
 
     @Test fun freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(current, 3)) {
         val p = current
         val old = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(evidence(), "COMPLETED_UNIT4.json").readText())
         LocalStore.openInMemory(context()).use { store ->
@@ -141,6 +149,7 @@ class Unit3GenderTeachingTest {
             }
             assertEquals(setOf(1, 2, 3, 4), currentCompletedUnitNumbers(p, store.v2LearnerView()))
             old.reviewAssignments.forEach { row -> assertTrue(store.cumulativeReviewHistory().first.contains(row)) }
+        }
         }
     }
 

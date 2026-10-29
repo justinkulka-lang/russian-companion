@@ -23,6 +23,8 @@ import java.util.zip.ZipFile
 @Config(sdk = [33])
 class CurrentPackHistoricalBackupTest {
     @Test fun allOriginalArchivesRestoreAndReopenButDoNotAcquireNewCredit() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(Companion.pack, 6)) {
         val allowlist = Json.parseToJsonElement(File(root,
             "audit/independent-gpt61-2026-10-12/current-comprehensive-audit/RETAINED_ARCHIVE_ALLOWLIST.json").readText())
             .jsonObject.getValue("sha256").jsonObject
@@ -93,6 +95,7 @@ class CurrentPackHistoricalBackupTest {
             }
         }
         assertEquals(64, cases)
+        }
     }
 
     @Test fun legacyUnit5CanLeadIntoFreshUnit6WithoutRelabellingEitherObligation() {
@@ -180,6 +183,8 @@ class CurrentPackHistoricalBackupTest {
     }
 
     @Test fun legacyUnit5CanLeadIntoCurrentUnit6V3WithoutRelabellingEitherObligation() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(Companion.pack, 6)) {
         val context = context()
         (context.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
         val archive = File(root,
@@ -258,6 +263,7 @@ class CurrentPackHistoricalBackupTest {
             stage.deleteRecursively()
             context.deleteDatabase(name)
             File(context.filesDir, "recordings-$name").deleteRecursively()
+        }
         }
     }
 

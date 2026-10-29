@@ -25,6 +25,8 @@ import java.io.File
 @Config(sdk = [33])
 class Unit6PresentCompatibilityTest {
     @Test fun priorDeclarationsRefuseV3AndExactV2OwnerStillSupportsDownstreamReview() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 6)) {
         val old = RecordedIntakeCorrectionScope.load(root, "9d0979b02d8601c6fc00ff06a0e53e13280d0b93")
         RecordedCurriculumConservationScope.beforeUnit7GenderReview(root, pack).let { pack ->
             val priorDeclarationOnly = pack.copy(units = pack.units.map { unit -> if (unit.number != 6) unit else
@@ -67,6 +69,7 @@ class Unit6PresentCompatibilityTest {
                 unit.copy(advancement = unit.advancement!!.copy(minimumDistinctChecks = unit.advancement.minimumDistinctChecks + 1)) })
             assertFalse(reviewAssignmentCurrent(changedRule, downstream))
             assertFalse(6 in currentCompletedUnitNumbers(changedRule, store.v2LearnerView()))
+        }
         }
     }
 
@@ -141,6 +144,8 @@ class Unit6PresentCompatibilityTest {
     }
 
     @Test fun genuineV2PartialCompletesWithoutRelabellingUnderNewDeclaration() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 6)) {
         val original = document(v2Capture)
         val task = original.reviewAssignments.single { it.targetUnit == 6 }
         assertEquals(4, task.schema)
@@ -168,9 +173,12 @@ class Unit6PresentCompatibilityTest {
                 assertEquals(task, open(store)); assertEquals((1..6).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
             }
         } finally { context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
+        }
     }
 
     @Test fun originalV1SchemaOneAndThreeTasksRetainTheirOwnObligationAfterCurrentReteaching() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 6)) {
         for ((prefix, schema) in listOf("" to 3, "predecessor-schema1/" to 1)) {
             val original = document("audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/${prefix}PARTIAL_REVIEW.zip")
             val task = original.reviewAssignments.single { it.targetUnit == 6 }
@@ -187,6 +195,7 @@ class Unit6PresentCompatibilityTest {
                 assertEquals(task.id, store.governedLearnerDocument().unitCompletions.single { it.unitNumber == 6 }.reviewAssignmentId)
                 assertEquals(task, open(store))
             }
+        }
         }
     }
 }

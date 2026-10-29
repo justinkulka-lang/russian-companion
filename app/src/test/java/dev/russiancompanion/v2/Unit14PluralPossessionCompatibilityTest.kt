@@ -32,6 +32,8 @@ import java.io.File
 @Config(sdk = [33])
 class Unit14PluralPossessionCompatibilityTest {
     @Test fun exactPriorDeclarationRefusesNewSchemaAndCompiledObservationRecordsBoundedPools() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 14)) {
         val old = before14
         val restored = pack.copy(units = pack.units.map { u -> if (u.number != 14) u else
             u.copy(advancement = u.advancement!!.copy(cumulativeReviewPolicyId = Unit14CumulativeReviewPolicy.definition.id)) })
@@ -72,9 +74,12 @@ class Unit14PluralPossessionCompatibilityTest {
             require(path.startsWith("/workspace/artifacts/"));check(!File(path).exists())
             File(path).writeText(observation.toString()+"\n")
         }
+        }
     }
 
     @Test fun genuineV1PartialCompletesAndRoundtripsWithoutRelabelling() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 14)) {
         val original=document(partial14);val saved=original.reviewAssignments.single { it.targetUnit==14 }
         val context=context();val name="unit14-genuine-${System.nanoTime()}.db";val stage=File(context.cacheDir,name)
         try {
@@ -100,9 +105,12 @@ class Unit14PluralPossessionCompatibilityTest {
                 assertEquals(15,store.v2Profile().currentUnitNumber)
             }
         } finally { stage.deleteRecursively();deleteStore(context,name) }
+        }
     }
 
     @Test fun genuineCompletedV1RetainsCompletionDespiteLateWrongAnswerAndReplacement() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 14)) {
         val original=document(completed14);val saved=original.reviewAssignments.single { it.targetUnit==14 }
         LocalStore.openInMemory(context()).use { store ->
             assertEquals(GovernedReplaceOutcome.REPLACED,store.replaceGovernedLearner(original,emptyList()))
@@ -117,9 +125,12 @@ class Unit14PluralPossessionCompatibilityTest {
             assertEquals(after,store.governedLearnerDocument())
             assertTrue(14 in currentCompletedUnitNumbers(pack,store.v2LearnerView()))
         }
+        }
     }
 
     @Test fun genuineUnit15OldOwner14PartialReopensCompletesAndActuallyAdvances16() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 14)) {
         val original=document(partial15);val saved=original.reviewAssignments.single { it.targetUnit==15 }
         assertEquals(V2Validator.unitContentReviewDigest(before14,14),saved.slots[1].unitDigest)
         assertNotEquals(V2Validator.unitContentReviewDigest(pack,14),saved.slots[1].unitDigest)
@@ -151,6 +162,7 @@ class Unit14PluralPossessionCompatibilityTest {
                 assertEquals((1..15).toSet(),currentCompletedUnitNumbers(pack,store.v2LearnerView()))
             }
         } finally { stage.deleteRecursively();deleteStore(context,name) }
+        }
     }
 
     @Test fun exactOldOwner14SupportRefusesUnrelatedContentRulesAndObsoleteTeaching() {
@@ -275,6 +287,8 @@ class Unit14PluralPossessionCompatibilityTest {
     }
 
     @Test fun existingOwner13V1AndV2BridgesStillSupportOldUnit14TasksWithoutRelabelling() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 14)) {
         for(id in listOf(Unit13CumulativeReviewPolicy.definition.id,Unit13WiderCumulativeReviewPolicy.definition.id)) {
             val producer=before14.copy(units=before14.units.map { if(it.number==13) it.copy(advancement=it.advancement!!.copy(cumulativeReviewPolicyId=id)) else it })
             val original=document(Unit13PresentFixtures.v2Capture)
@@ -293,6 +307,7 @@ class Unit14PluralPossessionCompatibilityTest {
                 task14.slots.indices.forEach { answer(store,task14,it) }
                 assertTrue(advance(store));assertEquals(task14,store.cumulativeReviewHistory().first.single { it.targetUnit==14 })
             }
+        }
         }
     }
 }

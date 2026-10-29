@@ -19,6 +19,8 @@ import java.io.File
 @Config(sdk = [33])
 class Unit7CurrentPrerequisiteHistoryTest {
     @Test fun staleUnit4PrerequisiteRefusesUnit7ReviewUntilFreshRepairWithoutRelabellingHistory() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(verifiedCurrentPack(), 7)) {
         val root = File(if (File("app").isDirectory) "." else "..")
         val current = verifiedCurrentPack()
         val before = sourcePack("b5e1daf50ac8597d00aeb6976f894d3ce44c03ca")
@@ -67,6 +69,7 @@ class Unit7CurrentPrerequisiteHistoryTest {
                 }
             }
         }
+        }
     }
     private fun ordinary(p:V2CurriculumPack,s:LocalStore,number:Int) {
         s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted=true,currentUnitNumber=number,currentSessionId=null))
@@ -77,6 +80,8 @@ class Unit7CurrentPrerequisiteHistoryTest {
         s.v2AttestBook(number,"fresh-prerequisite")
     }
     @Test fun allEightOriginalBackupsReopenUnchangedButCurrentCreditStopsAtStaleUnit4() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(verifiedCurrentPack(), 7)) {
         val p=verifiedCurrentPack()
         val before=sourcePack("b5e1daf50ac8597d00aeb6976f894d3ce44c03ca")
         val context:Context=ApplicationProvider.getApplicationContext()
@@ -112,6 +117,7 @@ class Unit7CurrentPrerequisiteHistoryTest {
                 staging.deleteRecursively();context.deleteDatabase(name)
                 File(context.filesDir,"recordings-$name").deleteRecursively()
             }
+        }
         }
     }
     companion object {

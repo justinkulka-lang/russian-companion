@@ -96,6 +96,8 @@ class CumulativeReviewGateTest {
     }
 
     @Test fun migratedVersionTenKeepsRawHistoryButChangedGenderTeachingRejectsOldLessonCredit() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack(), 3)) {
         val p = pack(); val old = legacyPack(); val name = "review-activation-${System.nanoTime()}.db"
         val schema = JSONObject(File(root(), "app/schemas/dev.russiancompanion.data.local.AppDatabase/10.json").readText()).getJSONObject("database")
         val document = ready(old).use { s -> s.v2CompleteUnit(3, "historical-completion"); s.governedLearnerDocument() }
@@ -132,6 +134,7 @@ class CumulativeReviewGateTest {
                 assertFalse(3 in currentCompletedUnitNumbers(changed, s.v2LearnerView()))
             }
         } finally { helper.close(); context().deleteDatabase(name) }
+        }
     }
 
     @Test fun versionThreeBackupPreservesCompletionSnapshotAndRejectsForgedActivationLinks() {

@@ -25,6 +25,8 @@ import java.io.File
 @Config(sdk = [33])
 class Unit8PresentCompatibilityTest {
     @Test fun exactPriorDeclarationRefusesSchemaTenAndPreservesDownstreamOwnerIdentity() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 8)) {
         val old = RecordedIntakeCorrectionScope.load(root, "6fd0406da6dd687196eea76ff56ad7cadc06087d")
         RecordedCurriculumConservationScope.beforeUnit9NounBehaviorReview(root, pack).let { pack ->
             val priorDeclarationOnly = pack.copy(units = pack.units.map { u -> if (u.number != 8) u else
@@ -56,6 +58,7 @@ class Unit8PresentCompatibilityTest {
                 u.copy(advancement = u.advancement!!.copy(minimumDistinctChecks = u.advancement.minimumDistinctChecks + 1)) })
             assertFalse(reviewAssignmentCurrent(changedRule, downstream))
             assertFalse(8 in currentCompletedUnitNumbers(changedRule, store.v2LearnerView()))
+        }
         }
     }
 
@@ -145,6 +148,8 @@ class Unit8PresentCompatibilityTest {
     }
 
     @Test fun genuineSchemaOnePartialCompletesWithoutAddingPresentOrRelabelling() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 8)) {
         val original = document(v1Capture); val saved = original.reviewAssignments.single { it.targetUnit == 8 }
         assertEquals(1, saved.schema)
         assertEquals(listOf("obj-u1-decoding", "obj-u7-endings"), saved.slots.map { it.objectiveId })
@@ -169,5 +174,6 @@ class Unit8PresentCompatibilityTest {
                 assertEquals(saved, open(store)); assertEquals((1..8).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
             }
         } finally { context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
+        }
     }
 }

@@ -19,12 +19,8 @@ internal object Unit14PluralPossessionFixtures {
         (it.applicationContext as RussianCompanionApplication).closeStartupStoreForTests()
     }
     fun prepare(store: LocalStore) {
-        // Genuine current prerequisite history, with only the terminal review removed to allow
-        // FRESH allocation. This derived setup is not relabelled or exported as a genuine capture.
-        val original = document(partial14)
-        val terminal = original.reviewAssignments.single { it.targetUnit == 14 }
-        val fresh = original.copy(reviewAssignments = original.reviewAssignments.filter { it.id != terminal.id },
-            reviewAnswers = original.reviewAnswers.filter { it.assignmentId != terminal.id })
+        // Genuine fresh API history for the actual current pack, memoized only within this JVM.
+        val fresh = FreshCurrentPrerequisiteHistory.document(pack, 14, context())
         assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(fresh, emptyList()))
         ordinary(store, 14)
         assertEquals((1..13).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))

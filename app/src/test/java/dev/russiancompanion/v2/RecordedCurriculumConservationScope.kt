@@ -42,8 +42,9 @@ internal object RecordedCurriculumConservationScope {
 
     /** Restore only Unit14's v1 declaration; prove the complete actual-current baseline. */
     fun beforeUnit14PluralPossessionReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
-        assertCurrent(root, current)
-        val prior = current.copy(units = current.units.map { unit ->
+        RecordedLiteracyEpochScope.assertKnownEpoch(root, current)
+        val policyEpoch = RecordedLiteracyEpochScope.policyEpoch(root, current)
+        val prior = policyEpoch.copy(units = policyEpoch.units.map { unit ->
             if (unit.number == 14) unit.copy(advancement = unit.advancement!!.copy(
                 cumulativeReviewPolicyId = Unit14CumulativeReviewPolicy.definition.id)) else unit
         })
@@ -55,7 +56,7 @@ internal object RecordedCurriculumConservationScope {
 
     /** Restore only Unit13's v2 declaration; every other field must match its actual producer. */
     fun beforeUnit13PresentReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
-        assertCurrent(root, current)
+        RecordedLiteracyEpochScope.assertKnownEpoch(root, current)
         val beforeUnit14 = beforeUnit14PluralPossessionReview(root, current)
         val prior = beforeUnit14.copy(units = beforeUnit14.units.map { unit ->
             if (unit.number == 13) unit.copy(advancement = unit.advancement!!.copy(
@@ -67,7 +68,7 @@ internal object RecordedCurriculumConservationScope {
 
     /** Restore only Unit12's declaration; prove every other field against its genuine v1 producer. */
     fun beforeUnit12GenderReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
-        assertCurrent(root, current)
+        RecordedLiteracyEpochScope.assertKnownEpoch(root, current)
         val beforeUnit13 = beforeUnit13PresentReview(root, current)
         val prior = beforeUnit13.copy(units = beforeUnit13.units.map { unit ->
             if (unit.number == 12) unit.copy(advancement = unit.advancement!!.copy(
@@ -79,7 +80,7 @@ internal object RecordedCurriculumConservationScope {
 
     /** Restore only Unit11's declaration; prove every other field against the genuine v1 producer. */
     fun beforeUnit11NounReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
-        assertCurrent(root, current)
+        RecordedLiteracyEpochScope.assertKnownEpoch(root, current)
         val beforeUnit12 = beforeUnit12GenderReview(root, current)
         val prior = beforeUnit12.copy(units = beforeUnit12.units.map { unit ->
             if (unit.number == 11) unit.copy(advancement = unit.advancement!!.copy(
@@ -91,7 +92,7 @@ internal object RecordedCurriculumConservationScope {
 
     /** Restore only Unit10's declaration; prove equality with its genuine schema1 producer asset. */
     fun beforeUnit10PresentReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
-        assertCurrent(root, current)
+        RecordedLiteracyEpochScope.assertKnownEpoch(root, current)
         val beforeUnit11 = beforeUnit11NounReview(root, current)
         val prior = beforeUnit11.copy(units = beforeUnit11.units.map { unit ->
             if (unit.number == 10) unit.copy(advancement = unit.advancement!!.copy(
@@ -103,7 +104,7 @@ internal object RecordedCurriculumConservationScope {
 
     /** Restore only Unit9's declaration; prove every other field against the genuine schema5 producer. */
     fun beforeUnit9NounBehaviorReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
-        assertCurrent(root, current)
+        RecordedLiteracyEpochScope.assertKnownEpoch(root, current)
         val beforeUnit10 = beforeUnit10PresentReview(root, current)
         val prior = beforeUnit10.copy(units = beforeUnit10.units.map { unit ->
             if (unit.number == 9) unit.copy(advancement = unit.advancement!!.copy(
@@ -115,7 +116,7 @@ internal object RecordedCurriculumConservationScope {
 
     /** Restore only Unit8's declaration; every other current field must equal the genuine prior pack. */
     fun beforeUnit8PresentReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
-        assertCurrent(root, current)
+        RecordedLiteracyEpochScope.assertKnownEpoch(root, current)
         val beforeUnit9 = beforeUnit9NounBehaviorReview(root, current)
         val prior = beforeUnit9.copy(units = beforeUnit9.units.map { unit ->
             if (unit.number == 8) unit.copy(advancement = unit.advancement!!.copy(
@@ -127,7 +128,7 @@ internal object RecordedCurriculumConservationScope {
 
     /** Exact current asset -> genuine pre-Unit7 declaration; no content substitutions. */
     fun beforeUnit7GenderReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
-        assertCurrent(root, current)
+        RecordedLiteracyEpochScope.assertKnownEpoch(root, current)
         val beforeUnit8 = beforeUnit8PresentReview(root, current)
         val prior = beforeUnit8.copy(units = beforeUnit8.units.map { unit ->
             if (unit.number == 7) unit.copy(advancement = unit.advancement!!.copy(
@@ -139,7 +140,7 @@ internal object RecordedCurriculumConservationScope {
 
     /** Restore only the Unit6 declaration, proving equality with the genuine preceding pack. */
     fun beforeUnit6PresentReview(root: File, current: V2CurriculumPack): V2CurriculumPack {
-        assertCurrent(root, current)
+        RecordedLiteracyEpochScope.assertKnownEpoch(root, current)
         val beforeUnit7 = beforeUnit7GenderReview(root, current)
         val prior = beforeUnit7.copy(units = beforeUnit7.units.map { unit ->
             if (unit.number == 6) unit.copy(advancement = unit.advancement!!.copy(
@@ -162,7 +163,10 @@ internal object RecordedCurriculumConservationScope {
 
     fun assertCurrent(root: File, current: V2CurriculumPack) {
         V2PackIdentityIndex.warm(current)
+        RecordedLiteracyEpochScope.assertLatest(root, current)
+        RecordedLiteracyEpochScope.beforeCorrection(root, current).let { current ->
         assertEquals("Current pack must match its last actual asset implementation", source(root, currentPackImplementation), current)
+        }
     }
 
     fun historicalTransition(root: File, current: V2CurriculumPack, implementation: String, vararg units: Int): V2CurriculumPack {

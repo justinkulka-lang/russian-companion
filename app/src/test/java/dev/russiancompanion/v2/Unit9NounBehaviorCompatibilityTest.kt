@@ -26,6 +26,8 @@ import java.io.File
 @Config(sdk = [33])
 class Unit9NounBehaviorCompatibilityTest {
     @Test fun exactPriorV2DeclarationRefusesSchemaElevenAndPreservesOwnerNineDownstream() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 9)) {
         val old = RecordedIntakeCorrectionScope.load(root, "7e2296f067da861cbebdc9cf63bfd8e0ddd62436")
         // Preserve the exact original Unit9-only declaration proof before Unit10 v2.
         RecordedCurriculumConservationScope.beforeUnit10PresentReview(root, pack).let { pack ->
@@ -57,9 +59,12 @@ class Unit9NounBehaviorCompatibilityTest {
             assertFalse(reviewAssignmentCurrent(changedRule, downstream))
             assertFalse(9 in currentCompletedUnitNumbers(changedRule, store.v2LearnerView()))
         }
+        }
     }
 
     @Test fun genuineV2PartialKeepsItsOldThreeSlotsAnswersAndCompletionAcrossReopen() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 9)) {
         val original = document(v2Capture); val saved = original.reviewAssignments.single { it.targetUnit == 9 }
         assertEquals(5, saved.schema)
         assertEquals(listOf("obj-u1-decoding", "obj-u8-plural", "obj-u3-gender"), saved.slots.map { it.objectiveId })
@@ -89,6 +94,7 @@ class Unit9NounBehaviorCompatibilityTest {
                 assertEquals(saved, open(store)); assertEquals((1..9).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
             }
         } finally { stage.deleteRecursively(); ctx.deleteDatabase(name); File(ctx.filesDir, "recordings-$name").deleteRecursively() }
+        }
     }
 
     @Test fun genuineV1StaysRegisteredUnderItsOwnHistoricalSourceAndCannotBeRelabelled() {

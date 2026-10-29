@@ -1,0 +1,266 @@
+[
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/CumulativeReviewGateTest.kt",
+    "method": "migratedVersionTenKeepsRawHistoryButChangedGenderTeachingRejectsOldLessonCredit",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "84dbe6cf73c420d08fd835a5ec2128517f334f11d8153c256f2b531175f59eac",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/CurrentPackHistoricalBackupTest.kt",
+    "method": "allOriginalArchivesRestoreAndReopenButDoNotAcquireNewCredit",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "92c79c1d3d2283d127880f78b4fdba67a10a7dfa0bedcaab8c9504b278250572",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/CurrentPackHistoricalBackupTest.kt",
+    "method": "legacyUnit5CanLeadIntoCurrentUnit6V3WithoutRelabellingEitherObligation",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "217491004b2de1d589905b54bc7ce767846f45686b2cde8318bebc708ac54484",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit11NounCompatibilityTest.kt",
+    "method": "genuineSchemaOnePartialCompletesWithoutAddingNounBehaviorOrRelabelling",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "1169f353083fdc5d4cef3c81832f76ece93dabb7a71b1f7e4c406a1100fd2454",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit10PresentCompatibilityTest.kt",
+    "method": "genuineSchemaOnePartialCompletesWithoutAddingPresentOrRelabelling",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "9c93273d2e63e53effa8e30ec5ca498e448c70033f2118760a7dad94c30d2c5e",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit10PresentCompatibilityTest.kt",
+    "method": "exactPriorDeclarationRefusesSchemaTwelveAndPreservesDownstreamOwnerIdentity",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "215aa93fe0778c1d5a5e8960237bff832497534faab16d7388175d6225b3c274",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit11NounCompatibilityTest.kt",
+    "method": "exactPriorDeclarationRefusesSchemaThirteenAndPreservesDownstreamOwnerIdentity",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "22a01bfcbcd4b073c18ec86c0e20e854a88fe77e98b08418c4a88b77785d79ef",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit12GenderCompatibilityTest.kt",
+    "method": "genuineSchemaOnePartialCompletesWithoutAddingNounGenderOrRelabelling",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "4bbc85cf12d1db2e3fb8a44f8a0ad18e81367418ace7e29210d4cd13b079c03b",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit13PresentCompatibilityTest.kt",
+    "method": "genuineV2PartialCompletesWithoutRelabellingAndHistoricalV1CanRefreshPrerequisites",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "88fe21c670788b6d61c82b7597441645582bec7b507ea7956a71e3b75bac4fca",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit12GenderCompatibilityTest.kt",
+    "method": "exactPriorDeclarationRefusesSchemaFourteenAndPreservesBothDownstreamVersions",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "434c2617455142816d435cbba8e87e045b7c799007a3d84aa7792890590e26e9",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit12GenderCompatibilityTest.kt",
+    "method": "genuineHistoricalUnit13SchemaOneOwner12BindingsStayCurrentWithoutRelabelling",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "a34cf603ade001a13c8ac4dae2f5fab6de46be2c55a078619beedd3d611c8fc2",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit13PresentCompatibilityTest.kt",
+    "method": "exactPriorDeclarationsRefuseNewTasksAndPreserveBothUnit14OwnerBindings",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "e843e497f8e1a988de3af5541fa5c41bd5604e287023d6e3865c3d4d0e30a0ed",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit14PluralPossessionCompatibilityTest.kt",
+    "method": "exactPriorDeclarationRefusesNewSchemaAndCompiledObservationRecordsBoundedPools",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "95a903846d17026a434ee0f3bc20372c1dff301ea49aa140954f045fe0350cfa",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit14PluralPossessionCompatibilityTest.kt",
+    "method": "genuineUnit15OldOwner14PartialReopensCompletesAndActuallyAdvances16",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "1a64217c61000bdcd368fc2fcf093c7da5e69387e9c8c7c7f4784a4e8abcd72a",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit14PluralPossessionCompatibilityTest.kt",
+    "method": "genuineCompletedV1RetainsCompletionDespiteLateWrongAnswerAndReplacement",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "6100d955257c0df63e622566f1c8a036f6bc76e37b7b28fbe6c52569185a2345",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit14PluralPossessionCompatibilityTest.kt",
+    "method": "genuineV1PartialCompletesAndRoundtripsWithoutRelabelling",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "94abca617d4c27c159f5ca45b608902ea209e7381ff2185d6e7fbb5a7e444d9c",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit14PluralPossessionCompatibilityTest.kt",
+    "method": "existingOwner13V1AndV2BridgesStillSupportOldUnit14TasksWithoutRelabelling",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "97510e2faca6655ccba5b7dbc05753c7b10fc0252a3eb3daae04c2ef429d4e77",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit13PresentCompatibilityTest.kt",
+    "method": "historicalUnit13BothVersionsAndOwner12BridgesKeepExactSavedIdentities",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "c05a9d69888edbe66a09212e9b1986c88f9786e08dfe43d1f9902972920437e8",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit5GrammarReviewTest.kt",
+    "method": "legacyPartialTaskRestoresCompletesAndReopensWithItsOwnVersion",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "178bd42965a1350f95954011e69e48abe92ae4176226405a986d96eb0a0e88d4",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit7CurrentPrerequisiteHistoryTest.kt",
+    "method": "staleUnit4PrerequisiteRefusesUnit7ReviewUntilFreshRepairWithoutRelabellingHistory",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "5bea973edac05d2bf4647e34ad8226b3e16aef0b5c86dc56327cc16860cf0b4e",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit7CurrentPrerequisiteHistoryTest.kt",
+    "method": "allEightOriginalBackupsReopenUnchangedButCurrentCreditStopsAtStaleUnit4",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "3bd1730bc030f373e2996d17528fae4b3be453f0b04d27803e8248f7e0d291fb",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit8PresentCompatibilityTest.kt",
+    "method": "genuineSchemaOnePartialCompletesWithoutAddingPresentOrRelabelling",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "dd489151b012214bfbfae245d21194a37bf9aac01da7df196feec1fdf7612c9b",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit3GenderTeachingTest.kt",
+    "method": "olderPolicyHistoriesRemainRawButCannotBypassChangedUnit3Teaching",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "be9c37cc009f3ef8d64c68980f654ac805ee377b60c6a94ab26713e62d035f54",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit3GenderTeachingTest.kt",
+    "method": "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "dee21be6c102ada2bccfadacf4f534c424f114a27512069a9d7f593631200011",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit3GenderTeachingTest.kt",
+    "method": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "ab64f7ed1b5d04707cb6b9e4df407285bd832ec38986ec5fce8b495eac1f8353",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit8PresentCompatibilityTest.kt",
+    "method": "exactPriorDeclarationRefusesSchemaTenAndPreservesDownstreamOwnerIdentity",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "59e693fc81f2f868886bbd12bab855b4bdcd1980410af5b05ff8d3e5d3074bfd",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit6PresentCompatibilityTest.kt",
+    "method": "priorDeclarationsRefuseV3AndExactV2OwnerStillSupportsDownstreamReview",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "db6a879c42761e5be73edd94b4c85365ee59ea9d14bcc62bdb7734f438aaaf39",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit6PresentCompatibilityTest.kt",
+    "method": "genuineV2PartialCompletesWithoutRelabellingUnderNewDeclaration",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "4d339f4f810d5cbf5ab1b39c382298ad370bbf66b1cc6eab75344f2722d911ba",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit6PresentCompatibilityTest.kt",
+    "method": "originalV1SchemaOneAndThreeTasksRetainTheirOwnObligationAfterCurrentReteaching",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "90a4264107aae14352b100134659d3078d289d83676fd62382c40c6bb884b372",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit7GenderCompatibilityTest.kt",
+    "method": "genuineSchemaOnePartialCompletesWithoutAddingGenderOrRelabelling",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "6e19fbe61e40a1e99f04f1426e2ae28f25300b99acdf95917bdf04e1d6a711e8",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit7GenderCompatibilityTest.kt",
+    "method": "exactPriorDeclarationRefusesSchemaNineAndPreservesDownstreamOwnerIdentity",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "d7ffea839b6ee46101f5cd0e9cc68acb628db6c97cf8249fc72e570caaa5f25c",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit9NounBehaviorCompatibilityTest.kt",
+    "method": "exactPriorV2DeclarationRefusesSchemaElevenAndPreservesOwnerNineDownstream",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "759e4c569c894d8c58fb8ea94bcd898c8823d314dac89b51f2270f8991069674",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit9NounBehaviorCompatibilityTest.kt",
+    "method": "genuineV2PartialKeepsItsOldThreeSlotsAnswersAndCompletionAcrossReopen",
+    "modelSource": "f653da03d1bc657e8acaeef52141552c531e42ce",
+    "bodySha256": "f3be0ffc15dbe64c92c552e0cb696b7aa3e1df6ebce9c4e8e332605e28ea72dd",
+    "originalBodyByteIdenticalInsideExplicitScope": true,
+    "reason": "Actual failure combined pre-correction raw history/declaration with changed foundation prerequisites"
+  }
+]

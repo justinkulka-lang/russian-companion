@@ -123,6 +123,8 @@ class Unit5GrammarReviewTest {
 
     /** Baseline-only capture is opt-in; later runs consume those exact pre-change bytes. */
     @Test fun legacyPartialTaskRestoresCompletesAndReopensWithItsOwnVersion() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(current, 5)) {
         val p = current
         val capture = System.getProperty("audit.unit5.legacy.capture")?.let(::File)
         val file = capture ?: File(root, "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-cc020-unit5-grammar-2026-10-22/BASELINE_LEGACY_UNIT5.zip")
@@ -162,6 +164,7 @@ class Unit5GrammarReviewTest {
             }
         } finally {
             context().deleteDatabase(name); File(context().filesDir, "recordings-$name").deleteRecursively(); staging.deleteRecursively()
+        }
         }
     }
 

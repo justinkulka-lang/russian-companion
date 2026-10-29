@@ -25,6 +25,8 @@ import java.io.File
 @Config(sdk = [33])
 class Unit12GenderCompatibilityTest {
     @Test fun exactPriorDeclarationRefusesSchemaFourteenAndPreservesBothDownstreamVersions() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 12)) {
         val old = RecordedIntakeCorrectionScope.load(root, "23b9179eaf54844f0b38074b2db56c7113c38c00")
         // Scope only this original equality; runtime, eligibility and mutation checks below stay current.
         RecordedCurriculumConservationScope.beforeUnit13PresentReview(root, pack).let { pack ->
@@ -70,9 +72,12 @@ class Unit12GenderCompatibilityTest {
                 assertTrue(13 in currentCompletedUnitNumbers(pack, store.v2LearnerView()))
             }
         }
+        }
     }
 
     @Test fun genuineHistoricalUnit13SchemaOneOwner12BindingsStayCurrentWithoutRelabelling() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 12)) {
         for (name in listOf("PARTIAL_REVIEW", "COMPLETED_UNIT13")) {
             val original = document("audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/$name.zip")
             val saved = original.reviewAssignments.single { it.targetUnit == 13 }
@@ -85,6 +90,7 @@ class Unit12GenderCompatibilityTest {
                 assertEquals(saved, store.cumulativeReviewHistory().first.single { it.targetUnit == 13 })
                 // Old prerequisites may be stale; current eligibility/advancement is not inferred.
             }
+        }
         }
     }
 
@@ -176,6 +182,8 @@ class Unit12GenderCompatibilityTest {
     }
 
     @Test fun genuineSchemaOnePartialCompletesWithoutAddingNounGenderOrRelabelling() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 12)) {
         val original = document(v1Capture); val saved = original.reviewAssignments.single { it.targetUnit == 12 }
         assertEquals(1, saved.schema)
         assertEquals(listOf("obj-u1-decoding", "obj-u11-past-aspect"), saved.slots.map { it.objectiveId })
@@ -200,6 +208,7 @@ class Unit12GenderCompatibilityTest {
                 assertEquals(saved, open(store)); assertEquals((1..12).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
             }
         } finally { context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
+        }
     }
 
     @Test fun eachGenderMissCanAllocateWhileOptionalAndMalformedHistoryCannotSelect() {

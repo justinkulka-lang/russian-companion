@@ -25,6 +25,8 @@ import java.io.File
 @Config(sdk = [33])
 class Unit10PresentCompatibilityTest {
     @Test fun exactPriorDeclarationRefusesSchemaTwelveAndPreservesDownstreamOwnerIdentity() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 10)) {
         val old = RecordedIntakeCorrectionScope.load(root, "c14379625f0189849614c4fd1241ba285ecb313a")
         // Keep the original whole-pack Unit10 declaration proof before Unit11 v2.
         RecordedCurriculumConservationScope.beforeUnit11NounReview(root, pack).let { pack ->
@@ -57,6 +59,7 @@ class Unit10PresentCompatibilityTest {
                 u.copy(advancement = u.advancement!!.copy(minimumDistinctChecks = u.advancement.minimumDistinctChecks + 1)) })
             assertFalse(reviewAssignmentCurrent(changedRule, downstream))
             assertFalse(10 in currentCompletedUnitNumbers(changedRule, store.v2LearnerView()))
+        }
         }
     }
 
@@ -148,6 +151,8 @@ class Unit10PresentCompatibilityTest {
     }
 
     @Test fun genuineSchemaOnePartialCompletesWithoutAddingPresentOrRelabelling() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 10)) {
         val original = document(v1Capture); val saved = original.reviewAssignments.single { it.targetUnit == 10 }
         assertEquals(1, saved.schema)
         assertEquals(listOf("obj-u1-decoding", "obj-u9-odindva"), saved.slots.map { it.objectiveId })
@@ -172,6 +177,7 @@ class Unit10PresentCompatibilityTest {
                 assertEquals(saved, open(store)); assertEquals((1..10).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
             }
         } finally { context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
+        }
     }
 
     @Test fun eachPresentMissCanAllocateWhileOptionalAndMalformedHistoryCannotSelect() {

@@ -25,6 +25,8 @@ import java.io.File
 @Config(sdk = [33])
 class Unit11NounCompatibilityTest {
     @Test fun exactPriorDeclarationRefusesSchemaThirteenAndPreservesDownstreamOwnerIdentity() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 11)) {
         val old = RecordedIntakeCorrectionScope.load(root, "745234c99e3d69fadca835ba7f8eb98ad1a8ab48")
         // Scope only the original whole-pack equality; all lifecycle/mutation controls below use actual current input.
         RecordedCurriculumConservationScope.beforeUnit12GenderReview(root, pack).let { pack ->
@@ -72,6 +74,7 @@ class Unit11NounCompatibilityTest {
             assertFalse(reviewAssignmentCurrent(changedTeaching, downstream))
             assertFalse(reviewAssignmentCurrent(changedTeaching, later))
             assertFalse(11 in currentCompletedUnitNumbers(changedRule, store.v2LearnerView()))
+        }
         }
     }
 
@@ -163,6 +166,8 @@ class Unit11NounCompatibilityTest {
     }
 
     @Test fun genuineSchemaOnePartialCompletesWithoutAddingNounBehaviorOrRelabelling() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 11)) {
         val original = document(v1Capture); val saved = original.reviewAssignments.single { it.targetUnit == 11 }
         assertEquals(1, saved.schema)
         assertEquals(listOf("obj-u1-decoding", "obj-u10-have"), saved.slots.map { it.objectiveId })
@@ -187,6 +192,7 @@ class Unit11NounCompatibilityTest {
                 assertEquals(saved, open(store)); assertEquals((1..11).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
             }
         } finally { context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
+        }
     }
 
     @Test fun eachNounMissCanAllocateWhileOptionalAndMalformedHistoryCannotSelect() {

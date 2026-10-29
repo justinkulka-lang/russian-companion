@@ -28,6 +28,8 @@ import dev.russiancompanion.v2.Unit13PresentFixtures.v1Capture
 @Config(sdk = [33])
 class Unit13PresentCompatibilityTest {
     @Test fun exactPriorDeclarationsRefuseNewTasksAndPreserveBothUnit14OwnerBindings() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 13)) {
         val old = before13
         val before14 = RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(root, pack)
         val restored = before14.copy(units = before14.units.map { u -> if (u.number != 13) u else
@@ -112,9 +114,12 @@ class Unit13PresentCompatibilityTest {
                 assertTrue(advance(store, 14)); assertTrue(14 in currentCompletedUnitNumbers(pack, store.v2LearnerView()))
             }
         }
+        }
     }
 
     @Test fun historicalUnit13BothVersionsAndOwner12BridgesKeepExactSavedIdentities() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 13)) {
         for (path in listOf(v1Capture, v2Capture)) {
             val original = document(path);val task = original.reviewAssignments.single { it.targetUnit == 13 }
             assertEquals(if (path == v1Capture) 1 else 6, task.schema)
@@ -126,6 +131,7 @@ class Unit13PresentCompatibilityTest {
                 val bad = pack.copy(items = pack.items.map { if (it.id == task.slots[1].itemId) it.copy(feedback=it.feedback+" changed") else it })
                 assertFalse(reviewAssignmentCurrent(bad, task))
             }
+        }
         }
     }
 
@@ -217,6 +223,8 @@ class Unit13PresentCompatibilityTest {
     }
 
     @Test fun genuineV2PartialCompletesWithoutRelabellingAndHistoricalV1CanRefreshPrerequisites() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 13)) {
         for (path in listOf(v2Capture, v1Capture)) {
             val original = document(path); val saved = original.reviewAssignments.single { it.targetUnit == 13 }
             val context = context(); val name = "unit13-genuine-${saved.schema}-${System.nanoTime()}"
@@ -241,6 +249,7 @@ class Unit13PresentCompatibilityTest {
                     assertEquals(saved, open(store)); assertEquals((1..13).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
                 }
             } finally { context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
+        }
         }
     }
 

@@ -25,6 +25,8 @@ import java.io.File
 @Config(sdk = [33])
 class Unit7GenderCompatibilityTest {
     @Test fun exactPriorDeclarationRefusesSchemaNineAndPreservesDownstreamOwnerIdentity() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 7)) {
         val old = RecordedIntakeCorrectionScope.load(root, "38542882cd9ab2e075691eca19442ddfabd17b6b")
         RecordedCurriculumConservationScope.beforeUnit8PresentReview(root, pack).let { pack ->
         val priorDeclarationOnly = pack.copy(units = pack.units.map { u -> if (u.number != 7) u else
@@ -56,6 +58,7 @@ class Unit7GenderCompatibilityTest {
                 u.copy(advancement = u.advancement!!.copy(minimumDistinctChecks = u.advancement.minimumDistinctChecks + 1)) })
             assertFalse(reviewAssignmentCurrent(changedRule, downstream))
             assertFalse(7 in currentCompletedUnitNumbers(changedRule, store.v2LearnerView()))
+        }
         }
     }
 
@@ -141,6 +144,8 @@ class Unit7GenderCompatibilityTest {
     }
 
     @Test fun genuineSchemaOnePartialCompletesWithoutAddingGenderOrRelabelling() {
+        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
+        with(RecordedLiteracyEpochScope.context(pack, 7)) {
         val original = document(v1Capture); val saved = original.reviewAssignments.single { it.targetUnit == 7 }
         assertEquals(1, saved.schema)
         assertEquals(listOf("obj-u1-decoding", "obj-u6-animacy"), saved.slots.map { it.objectiveId })
@@ -165,5 +170,6 @@ class Unit7GenderCompatibilityTest {
                 assertEquals(saved, open(store)); assertEquals((1..7).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
             }
         } finally { context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
+        }
     }
 }

@@ -940,8 +940,13 @@ class V2RebuildTest {
         val pack = pack()
         assertEquals(30, pack.ownedEditionMappings.size)
         assertTrue(pack.ownedEditionMappings.all { it.status == "PENDING_CURRICULUM_REVIEWER" && it.reviewer.isNullOrBlank() && it.reviewedContentDigest.isNullOrBlank() })
+        // Original foundation pins remain historical; mapping mutation safeguards below remain actual-current.
+        RecordedLiteracyEpochScope.beforeCorrection(repo(), pack).let { pack ->
         assertEquals("161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7", V2Validator.unitContentReviewDigest(pack, 1))
         assertEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(pack, 2))
+        }
+        assertNotEquals(V2Validator.unitContentReviewDigest(RecordedLiteracyEpochScope.beforeCorrection(repo(), pack), 1), V2Validator.unitContentReviewDigest(pack, 1))
+        assertNotEquals(V2Validator.unitContentReviewDigest(RecordedLiteracyEpochScope.beforeCorrection(repo(), pack), 2), V2Validator.unitContentReviewDigest(pack, 2))
         assertEquals("28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300", V2Validator.unitContentReviewDigest(pack, 3))
         val historical = RecordedCurriculumConservationScope.source(repo(), RecordedCurriculumConservationScope.priorSource)
         assertEquals("1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11", V2Validator.unitContentReviewDigest(historical, 4))
