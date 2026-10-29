@@ -83,7 +83,7 @@ for ((taskName, strict) in listOf("reportCurriculumDesign" to false, "checkCurri
         dependsOn(compileKotlin)
         workingDir = rootProject.layout.projectDirectory.asFile
         mainClass.set("dev.russiancompanion.v2.curriculum.CurriculumDesignCliKt")
-        classpath(compileKotlin.map { it.outputs.files }, configurations.named("debugRuntimeClasspath"), android.bootClasspath)
+        classpath(compileKotlin.map { it.outputs.files }, configurations.named("debugRuntimeClasspath"), androidComponents.sdkComponents.bootClasspath)
         doFirst {
             val reportPath = providers.gradleProperty("curriculumDesignOutput").orNull
                 ?: throw GradleException("Provide -PcurriculumDesignOutput=/absolute/fresh-report.json")
