@@ -1,0 +1,153 @@
+{
+  "sourceCommit": "2fb455d4cf0b69808d431a2b9db3583b4d4b0dcb",
+  "testCounts": {
+    "passed": 13,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "reported": 13
+  },
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+      "outcome": "PASSED",
+      "seconds": "23.979",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "heldUnit5WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED",
+      "seconds": "5.459",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+      "outcome": "PASSED",
+      "seconds": "2.804",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit4RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED",
+      "seconds": "1.359",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED",
+      "seconds": "3.48",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED",
+      "seconds": "14.151",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "method": "actualUnit5ContinueSubjectCueTeachingPracticeReturnAndAdvanceStayOnUnit5",
+      "outcome": "PASSED",
+      "seconds": "3.446",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+      "method": "wrongSchemaAndUntaughtOwnerCannotBorrowFreshCredit",
+      "outcome": "PASSED",
+      "seconds": "10.69",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+      "method": "newTaskKeepsChosenGenderThroughReopenAndBackupRoundtrip",
+      "outcome": "PASSED",
+      "seconds": "4.539",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+      "method": "legacyPartialTaskRestoresCompletesAndReopensWithItsOwnVersion",
+      "outcome": "PASSED",
+      "seconds": "1.53",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+      "method": "freshGenderAndSubjectNeedSeparateReviewAnswersBeforeAdvance",
+      "outcome": "PASSED",
+      "seconds": "3.934",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewUiTest",
+      "method": "genuineLegacyTaskKeepsItsOwnTitleInstructionsAndQuestionMeaning",
+      "outcome": "PASSED",
+      "seconds": "5.202",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewUiTest",
+      "method": "currentDeclarationDescribesGenderAndSubjectsWithoutClaimingReading",
+      "outcome": "PASSED",
+      "seconds": "0.34",
+      "message": ""
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "tests": "7",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-22T22:58:48.981Z",
+      "hostname": "d0aced911621",
+      "time": "55.962"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+      "tests": "4",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-22T22:58:20.686Z",
+      "hostname": "d0aced911621",
+      "time": "21.689"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit5GrammarReviewUiTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-22T22:58:42.382Z",
+      "hostname": "d0aced911621",
+      "time": "5.557"
+    }
+  ],
+  "exitCode": 0,
+  "tasks": {
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "xmlEventsExact": true,
+  "completeSuite": false
+}

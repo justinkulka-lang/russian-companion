@@ -1,0 +1,11 @@
+{
+  "CONTEXT.json": "38d438ec92c73754f000c4f6d114cee9dc735cf3ba1f462e839b77f54e0187ed",
+  "EVENTS.jsonl": "46603039a147ce9cf37fad0a38557751c8c0adb9e876d61d6b3d9604af76e9c3",
+  "LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+  "RESULT.json": "a1af49887ac66e52d8d88e5550ca8f0a09bf624fdc61bc3fced795325a6cb782",
+  "RESULTS.csv": "e923ebeb7affad0e9a9e429552928ee70f65bc063b45d86e00a35663b5057586",
+  "RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+  "RUN.log": "cda22d2b42ff1451ef88d052137fa2eaffe7d09ec16e9027b0a672ffbecc7985",
+  "XML/TEST-dev.russiancompanion.v2.Unit14BindingConservationTest.xml": "05ed30020f2fada70f6d94252899d69bcf2b4392947db0dfc57a20a65ee4e0dc",
+  "gc-67754.log": "08538698148fbade3de8cc2340fe211483b515869bd9d75d2e11cf0ef9c24bc7"
+}

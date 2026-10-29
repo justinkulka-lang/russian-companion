@@ -1,0 +1,48 @@
+{
+  "state": "PREPARED_NOT_EXECUTED",
+  "baselineSource": "a5cafbbeb16331d1184b058debee901f2ce485aa",
+  "baselineEvidenceCommit": "8d6252ab399616ddae4a1f880add63d14db79038",
+  "baselineCounts": {
+    "reported": 1378,
+    "passed": 1374,
+    "failed": 3,
+    "errors": 0,
+    "skipped": 1
+  },
+  "selectedMethodsInventoryNotResults": 35,
+  "classes": [
+    "dev.russiancompanion.v2.Unit7CumulativeReviewTest",
+    "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+    "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+    "dev.russiancompanion.v2.Unit7GenderReviewBaselineTest",
+    "dev.russiancompanion.v2.Unit7BindingConservationTest",
+    "dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest",
+    "dev.russiancompanion.v2.Unit6PresentCompatibilityTest"
+  ],
+  "externalWorkDirectory": "/workspace/artifacts/unit7-broad-failure-reconciliation-2026-10-24",
+  "discovery": [
+    "python3",
+    "/workspace/artifacts/unit7-broad-failure-reconciliation-2026-10-24/supervise.py",
+    "DISCOVERY"
+  ],
+  "runtimeAfterVerifiedDiscovery": [
+    "python3",
+    "/workspace/artifacts/unit7-broad-failure-reconciliation-2026-10-24/supervise.py",
+    "REGRESSION"
+  ],
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "completeSuite": false,
+  "apkIdentity": null,
+  "apkSignature": null,
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "experimentalJitDirective": "EXPERIMENTAL_NOT_ADOPTED",
+  "nativeRootCause": "UNCONFIRMED"
+}

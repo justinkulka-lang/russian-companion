@@ -1,0 +1,156 @@
+{
+  "totalMethods": 144,
+  "fullClasses": 21,
+  "historicalFixtureControlMethods": 45,
+  "otherCurrentRepositoryMethodsIncludingMixedHistoricalAndSyntheticControls": 99,
+  "completeSuite": false,
+  "classes": [
+    {
+      "testClass": "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest",
+      "methods": 1,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "methods": 14,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "methods": 5,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+      "methods": 8,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CumulativeReviewSelectionTest",
+      "methods": 6,
+      "fixturePin": "547457b63b317dea560e4bdc36083c1a4dce315e",
+      "scope": "Pre-Unit3-teaching selection/old-schema controls",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+      "methods": 18,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.MultiPoolReviewSelectionTest",
+      "methods": 7,
+      "fixturePin": "547457b63b317dea560e4bdc36083c1a4dce315e",
+      "scope": "Historical Units5/6 multi-pool controls",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OptionPresentationUiTest",
+      "methods": 4,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13WiderPolicyTest",
+      "methods": 9,
+      "fixturePin": "2ff71f197efb73d99662bc8a64180dc01a79aec3",
+      "scope": "Historical Unit13 wider/schema6 before Unit7 teaching correction",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5CumulativeReviewTest",
+      "methods": 7,
+      "fixturePin": "b869da02869840b575b7a803fdeebb27eaabb5d6",
+      "scope": "Seven unchanged historical Unit5 v1 obligations; not current Unit5 acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+      "methods": 4,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Four current-pack regression methods; one imports genuine pre-change schema3 partial; current task eligibility/wrong-schema/immutable selection/advance/backup/reopen",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewUiTest",
+      "methods": 2,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Two actual-screen controls under current pack: fresh v2 and genuine old v1 partial; host API33, not device",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6WiderPolicyTest",
+      "methods": 7,
+      "fixturePin": "547457b63b317dea560e4bdc36083c1a4dce315e",
+      "scope": "Historical Unit6 wider/schema4 controls",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit9WiderPolicyTest",
+      "methods": 9,
+      "fixturePin": "2ff71f197efb73d99662bc8a64180dc01a79aec3",
+      "scope": "Historical Unit9 wider/schema5 before Unit7 teaching correction",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2InsetsAccessibilityTest",
+      "methods": 7,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "methods": 11,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "methods": 1,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "methods": 7,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest",
+      "methods": 3,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+      "methods": 7,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "methods": 7,
+      "fixturePin": "CURRENT_WORKING_PACK_AND_NAMED_HISTORICAL_CONTROLS",
+      "scope": "Current repository behavior/source bindings with historical and synthetic controls where authored; not every method is current curriculum acceptance",
+      "fullClass": true
+    }
+  ]
+}

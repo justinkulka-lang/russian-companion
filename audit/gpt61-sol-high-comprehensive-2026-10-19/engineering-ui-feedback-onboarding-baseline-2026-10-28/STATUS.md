@@ -1,0 +1,5 @@
+# Selected feedback and onboarding UI baseline prepared
+
+Two new test files/6methods exercise lesson, optional-practice and assigned-review wrong-option explanations, onboarding saved-state restoration without automatic submission, and merged lesson-option label/role/selection/click semantics. They call existing UI APIs before any corresponding production UI correction. Existing282tests and all production/source/content/binding/history bytes remain unchanged in this baseline. The cache correction is the current production source and has a separate completed25/25verification.
+
+Expected3rationale+2state failures/1semantics control pass is only a hypothesis. Preserve every actual outcome; do not alter assertions to force that distribution. Fresh discovery/runtime NOT_RUN. This is host API33 evidence, not physical rotation/processdeath/TalkBack or reboot acceptance. Source bindings remain RECONCILIATION_PENDING from the cache change. Inspect /workspace/artifacts/ui-feedback-onboarding-baseline-2026-10-28 before launch/edit. Codex only;all48OPEN/auditINCOMPLETE/four exporters16excluded/physicalLAST/noAPK/signing/merge/freeze/approval.

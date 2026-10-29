@@ -17,11 +17,13 @@ Governing documents (v2.0 is binding):
 
 v1 documents under `docs/` are retained as superseded historical records.
 
-Build:
+Engineering verification (APK creation is deferred until after the final independent audit):
 
 ```
-ANDROID_HOME=$HOME/android-sdk ./gradlew testDebugUnitTest assembleDebug --offline
+ANDROID_HOME=$HOME/android-sdk ./gradlew compileDebugSources lintDebug verifyReleaseGateAttachment --offline
 ```
+
+CI also runs host tests with the four screenshot exporters explicitly excluded (16 methods): `VisualReviewCaptureTest`, `Units35ChunkCaptureTest`, `Units610ChunkCaptureTest`, and `Units1115GapCaptureTest`. Those exporters overwrite retained evidence and are outside environment verification. CI archives source and test/lint reports; it does not assemble or sign an APK. Host verification does not replace the final independent comprehensive audit or subsequent physical-device acceptance.
 
 `assembleRelease` stays fail-closed until v2 content, rights, review, and
 acceptance requirements are actually satisfied.

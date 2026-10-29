@@ -1,0 +1,20 @@
+{
+  "CONTEXT.json": "c51c897edecf83f567d1155d46f7ebaf2db0bbee986dab60a9393a5cf3891755",
+  "EVENTS.jsonl": "16ed4db880a7b2e96a27fb66053f44cc571a4a6f66d32e2a530ecec99c185a72",
+  "RESULT.json": "0d02245f76c94cc35f94c579e3534f14ea25910063301c51973bba4fad458af7",
+  "RESULTS.csv": "e193abea5e2924423aeaf8bc67c4759f4de3635f9fe7daf18ceeec489ea2eeb9",
+  "RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+  "RUN.log": "dc2538233388013b63fcd38071fddad0c0fc841b24cf9fc885c98692b63782e8",
+  "XML/TEST-dev.russiancompanion.acceptance.AcceptanceBoundaryTest.xml": "c5391a53ebc587db2a6c4112c9815db2b5a9d717573b217cd03dd3fe4f10a760",
+  "XML/TEST-dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest.xml": "560e0a1b0a20ecd9da8e2a8ee0c49c9e68276447142564ac9ccc698d9b6526d6",
+  "XML/TEST-dev.russiancompanion.v2.CompleteRuleCorrectionTest.xml": "1b3793ac69df028930c95141adb17efc8fc1d26652f0335f4fb6919b845816ca",
+  "XML/TEST-dev.russiancompanion.v2.Unit6CumulativeReviewTest.xml": "56b5f5ae0de6a1e8ee7c0a1229216969cdf8a1edd99c4585bbaa07e5ca75ddf7",
+  "XML/TEST-dev.russiancompanion.v2.Unit7AgreementTeachingTest.xml": "350ad0b5befdd7e8ff4708c1ca7fb424a9ff55a6ecb7eff233ff4650ea5594af",
+  "XML/TEST-dev.russiancompanion.v2.Unit7CurrentPrerequisiteHistoryTest.xml": "32af8344f384d19c3db56cd5d562e6c21191bb80c15372ef60cacc7cea36ec0d",
+  "XML/TEST-dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest.xml": "649c36084d28e92369e5cab40a487d7e1eb6c98136c4a65c3ea364ed5bc60285",
+  "XML/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml": "d477e4b8b956f41ead19be6e606d43aed76f5e5ea568f13507dbb96529874626",
+  "XML/TEST-dev.russiancompanion.v2.Units610SourceIntakeTest.xml": "0290fc4d3d2d437818d0186f5d5948f2e50829f203f71a324961d996bfff2503",
+  "gc-82644.log": "055e57d41b25ed7f99f72bbd5eabf8e62b1befffd9ae196137d4e399b7b4897c",
+  "gc-82648.log": "4976b10efa213dabf8adcc7d2b6c88eb656a777a53f3490cb7559362388e0b9d",
+  "gc-82714.log": "137a1a85a10c6952574b5a8a4c887e64d57cd96755239b52a8f6b8e92a3a27ed"
+}

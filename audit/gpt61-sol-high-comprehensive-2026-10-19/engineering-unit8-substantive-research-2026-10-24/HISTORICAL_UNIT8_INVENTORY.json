@@ -1,0 +1,2285 @@
+{
+  "sourceCommit": "fe7b26853448b8c3bd8098126d85983b013b5cd7",
+  "originalArchivesChecked": 66,
+  "archivesContainingUnit8Tasks": 33,
+  "scope": "Existing genuine historical bytes only; no current capture/replay or fabricated old task",
+  "fixtures": [
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/ANSWERED_REVIEW.zip",
+      "zipSha256": "e5ad30a40d946127f39c2c09324f818463097b48262ab9b96dd26c78b8b0b092",
+      "learnerSha256": "22d7d4c25b18ed405c014006995570555fe6f1acd605c24777af7135a89be997",
+      "unit8Assignments": [
+        {
+          "id": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "1ba2ef60-9cc1-4d00-919a-06086aaa4a44",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "7c2ed75c-da12-4565-8d97-596ff0847838",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BEFORE_UNIT13_WORK.zip",
+      "zipSha256": "27157f7a549757916001be7643a74443625ca9b8377dd4b2458958df0dbf24d8",
+      "learnerSha256": "663dc65a27c03c51f1a5045ca3872bdce7351baa8f011725ed463edc21361250",
+      "unit8Assignments": [
+        {
+          "id": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "1ba2ef60-9cc1-4d00-919a-06086aaa4a44",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "7c2ed75c-da12-4565-8d97-596ff0847838",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT13.zip",
+      "zipSha256": "ce934cbd1bc04593bc18c0f4c64d0b96c2787bfb7e049e075e604140da6f21ab",
+      "learnerSha256": "edef55831b00d253a2932b51ba6d4337e03d9021e5e1344d80360d1ff551f641",
+      "unit8Assignments": [
+        {
+          "id": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "1ba2ef60-9cc1-4d00-919a-06086aaa4a44",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "7c2ed75c-da12-4565-8d97-596ff0847838",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT14.zip",
+      "zipSha256": "c16d47eabd546c04870c0583801c1e72a68e49b35140e87332490e989f0e1fa2",
+      "learnerSha256": "59b25c35b3533b4ef75a5afde142a143635fa5a06e64503b007152e087dcfe37",
+      "unit8Assignments": [
+        {
+          "id": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "1ba2ef60-9cc1-4d00-919a-06086aaa4a44",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "7c2ed75c-da12-4565-8d97-596ff0847838",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/ORDINARY_UNIT13.zip",
+      "zipSha256": "aa17f1634aaa0a969c480b2bdd13f1d322833b3158e742b7dd34f2f8db3e85dd",
+      "learnerSha256": "fa43e2113268e1f26d036301c92616ef2d74d5cf9d850454b50c0283345cb266",
+      "unit8Assignments": [
+        {
+          "id": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "1ba2ef60-9cc1-4d00-919a-06086aaa4a44",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "7c2ed75c-da12-4565-8d97-596ff0847838",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/PARTIAL_REVIEW.zip",
+      "zipSha256": "9b1d4fe1a3445aad6827c7b09392881d3ff3485ff4304390c23106048030c0da",
+      "learnerSha256": "10e92d3e0956483234d0e650234cd5e7475adf6048ff4abdb0797ee509f1dcb4",
+      "unit8Assignments": [
+        {
+          "id": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "1ba2ef60-9cc1-4d00-919a-06086aaa4a44",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "7c2ed75c-da12-4565-8d97-596ff0847838",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/POST_COMPLETION_WRONG.zip",
+      "zipSha256": "727bfdc12271e5d4ca8b01ce3dd652154d14705af602e67efe62c2944504ad97",
+      "learnerSha256": "850da7c5dcd63a24e065635e6c114eee184490aebdf4426154b09a8d79016b08",
+      "unit8Assignments": [
+        {
+          "id": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "1ba2ef60-9cc1-4d00-919a-06086aaa4a44",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "7c2ed75c-da12-4565-8d97-596ff0847838",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/UNSTARTED_REVIEW.zip",
+      "zipSha256": "b11352d25c2b72a8d245af3c710995d68b960caecbcaeb4f6120ca4b6ea36890",
+      "learnerSha256": "1fbc07f68c62299d50c3f8301946b5d95f4f6087a8edede27af382fb33efd714",
+      "unit8Assignments": [
+        {
+          "id": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "1ba2ef60-9cc1-4d00-919a-06086aaa4a44",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "7c2ed75c-da12-4565-8d97-596ff0847838",
+          "assignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "assignmentDigest": "c03aea0d09cf443ae0d6797c24a9359ff2f57b0db884a52df142a52ab5addd81",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "25da0d2a-6359-4334-bb04-a121538ab40c",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/ANSWERED_REVIEW.zip",
+      "zipSha256": "de5897b81ca172e90065967f52007ce03ef9afddcfbedebf611d62e30757fd9f",
+      "learnerSha256": "0db07dabd8c90397581da8e3387a4f3ebbb63b79e0949efdfeafbc368c71d816",
+      "unit8Assignments": [
+        {
+          "id": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "3ba13577-df61-492a-9b7a-2d8cfef0352a",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "8491fe66-1a5e-436a-9919-bf27f012d2c3",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BEFORE_UNIT13_WORK.zip",
+      "zipSha256": "9bca68d7234c32ddcc315f2c05a02c290f33910c4bc5eca3adbbb9537ee36ebd",
+      "learnerSha256": "54e30a25da3b75551c3d7a5d9045ee38a6dae4cfb414d40f82ad5271933439eb",
+      "unit8Assignments": [
+        {
+          "id": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "3ba13577-df61-492a-9b7a-2d8cfef0352a",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "8491fe66-1a5e-436a-9919-bf27f012d2c3",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT13.zip",
+      "zipSha256": "fed8e249890c2340809ee14e69f292e22faba9c0329d264c39ea25c018113749",
+      "learnerSha256": "9c87da43611b500356f814ffa803f73a4e87fb6d63f04c038972be3c9d1f12ea",
+      "unit8Assignments": [
+        {
+          "id": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "3ba13577-df61-492a-9b7a-2d8cfef0352a",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "8491fe66-1a5e-436a-9919-bf27f012d2c3",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT14.zip",
+      "zipSha256": "49177d83bf123faf80421276a698decded31ecc0a64e4f849f0d3accf7b966f6",
+      "learnerSha256": "f27742b4b3f3617d274d28775e85705ff1564664bfc6cf132c7ad13ff5f965ae",
+      "unit8Assignments": [
+        {
+          "id": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "3ba13577-df61-492a-9b7a-2d8cfef0352a",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "8491fe66-1a5e-436a-9919-bf27f012d2c3",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/ORDINARY_UNIT13.zip",
+      "zipSha256": "4ec3e03caa3789ea451a368bc250bbcdd401fab16cc8a12a2dc7f21e16f66c3a",
+      "learnerSha256": "b30cd8049b6e71598f6c099ac670e169e0490b3c1efd420beb1913b551e13ccf",
+      "unit8Assignments": [
+        {
+          "id": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "3ba13577-df61-492a-9b7a-2d8cfef0352a",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "8491fe66-1a5e-436a-9919-bf27f012d2c3",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/PARTIAL_REVIEW.zip",
+      "zipSha256": "4963b568d06003e60ba5141099fbe263a17b777f54ee0bb432b19518b65a4687",
+      "learnerSha256": "b0702da0b8d10a9c5e8961875db47676a6434e34a929e71bddf81368d2e6d630",
+      "unit8Assignments": [
+        {
+          "id": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "3ba13577-df61-492a-9b7a-2d8cfef0352a",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "8491fe66-1a5e-436a-9919-bf27f012d2c3",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/POST_COMPLETION_WRONG.zip",
+      "zipSha256": "e42b9bdc9b8c0d5e5cf488f54905a81af75ea9aa08a3630f5b0447d3c0679a7f",
+      "learnerSha256": "a987c17ee5e7b87b7a2f6d35bb529ed5c280372814f175747122ef4127811448",
+      "unit8Assignments": [
+        {
+          "id": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "3ba13577-df61-492a-9b7a-2d8cfef0352a",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "8491fe66-1a5e-436a-9919-bf27f012d2c3",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/UNSTARTED_REVIEW.zip",
+      "zipSha256": "e80965499cb676d148492510b6469f97079ed60a299c56aebb0d6edb645730d6",
+      "learnerSha256": "146eeb164eb11b2a32a4b732fd7a414e40a9a3725d7e6249c81958c3117ae763",
+      "unit8Assignments": [
+        {
+          "id": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "3ba13577-df61-492a-9b7a-2d8cfef0352a",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "8491fe66-1a5e-436a-9919-bf27f012d2c3",
+          "assignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "assignmentDigest": "a119da50f7daa0e7a20948696b69688d92c44f2b44f0fed163d5ad95489963c7",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "d951cf42-3284-4d22-97a9-7a03c061bcfc",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/ANSWERED_REVIEW.zip",
+      "zipSha256": "8b269b4f754a94b2d4eb1fe01c84eb2169525c39a4c500e53970e02d9335ce28",
+      "learnerSha256": "7d4b09b106fbd91e6baedfbff4d95e79af4b78511d5076c6c4934a5b35f3a13f",
+      "unit8Assignments": [
+        {
+          "id": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "dd90c29c-88b2-4ced-92b2-f462156c9c35",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "a8a4addb-f77a-40b3-89b7-837de75edace",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BEFORE_UNIT13_WORK.zip",
+      "zipSha256": "e39dd9b11620cf9643e9bb54f8d571ce1b376464215f9680b62f5918220ad0a0",
+      "learnerSha256": "03142a93d9e42125852fa46cfae87104c798c08be241043f43aec2bb3005f53c",
+      "unit8Assignments": [
+        {
+          "id": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "dd90c29c-88b2-4ced-92b2-f462156c9c35",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "a8a4addb-f77a-40b3-89b7-837de75edace",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT13.zip",
+      "zipSha256": "5d0a0d30b8c4b56ae42d92d398aee57be86f363f89705b936d624b24dea3a6dc",
+      "learnerSha256": "292f0489bb47cc99fea22f5ddcbd0101c92e51a92933113022e381c6afba005f",
+      "unit8Assignments": [
+        {
+          "id": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "dd90c29c-88b2-4ced-92b2-f462156c9c35",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "a8a4addb-f77a-40b3-89b7-837de75edace",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT14.zip",
+      "zipSha256": "49a8e886ddd24c0a0ccefce5200de97d73ca038f03b579f2433b16aed5721484",
+      "learnerSha256": "b28c07eb6690dc9df694bee72e7a6a3f08231f8d9ea55d5689b6e056d15a13f0",
+      "unit8Assignments": [
+        {
+          "id": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "dd90c29c-88b2-4ced-92b2-f462156c9c35",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "a8a4addb-f77a-40b3-89b7-837de75edace",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/ORDINARY_UNIT13.zip",
+      "zipSha256": "567f359c9d4329b60af433faf6adc202431954274b3026a267d3f4a551a04bc0",
+      "learnerSha256": "a74862aadb7d2babae2c47c11fbefb87806fef92e3d657fc162dbc614a3ad821",
+      "unit8Assignments": [
+        {
+          "id": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "dd90c29c-88b2-4ced-92b2-f462156c9c35",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "a8a4addb-f77a-40b3-89b7-837de75edace",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/PARTIAL_REVIEW.zip",
+      "zipSha256": "65009eca7c6097f70e1c131677fc6322aec41347c48702059252e0d51a21b2d2",
+      "learnerSha256": "a6504f43227067810681960280c6e1be41ad12b0a09d427e4ab063765c09fa56",
+      "unit8Assignments": [
+        {
+          "id": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "dd90c29c-88b2-4ced-92b2-f462156c9c35",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "a8a4addb-f77a-40b3-89b7-837de75edace",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/POST_COMPLETION_WRONG.zip",
+      "zipSha256": "11617513cf5417f89649d5f1eaca5c2006017c92b186190957351259ac9e0d74",
+      "learnerSha256": "ebd47b9fc2aaa59a2ef9ce15ef2f600e04745a34c11ea3286c2e3ccbcb3506d0",
+      "unit8Assignments": [
+        {
+          "id": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "dd90c29c-88b2-4ced-92b2-f462156c9c35",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "a8a4addb-f77a-40b3-89b7-837de75edace",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/UNSTARTED_REVIEW.zip",
+      "zipSha256": "c14f71fad33e00099af20058ff43e64e93460332bea4177f71bee84ce8a7b1ab",
+      "learnerSha256": "019940c6c289d19af7d46aa52373e2e9e58fc0f28b15bf83aab3a5bab474084f",
+      "unit8Assignments": [
+        {
+          "id": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "dd90c29c-88b2-4ced-92b2-f462156c9c35",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "a8a4addb-f77a-40b3-89b7-837de75edace",
+          "assignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "assignmentDigest": "63f7973c17468ffed0dd6e2eda49d860ad4dbe039365a6e91af6aa266cb7727b",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "c5da675a-1df7-4783-8d6b-ddd54821ac04",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/COMPLETED_UNIT8.zip",
+      "zipSha256": "e1e14348f435270a482af6829951371d9e51f5dacc87578d56afe460874425db",
+      "learnerSha256": "3c713ad67a27d9449e4cf7f0ceb7aa9f82df5f17c8a9226876fc702356ecd5e2",
+      "unit8Assignments": [
+        {
+          "id": "4a16ac74-1104-4c47-ba38-00b668858cba",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 13,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "855a5c95ecdf8368ffbd3e926fe1a4f0076e98f2b95afe753b562207cf06b024",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "554e4842-e766-4822-9b28-1e2246950894",
+          "assignmentId": "4a16ac74-1104-4c47-ba38-00b668858cba",
+          "assignmentDigest": "855a5c95ecdf8368ffbd3e926fe1a4f0076e98f2b95afe753b562207cf06b024",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 14,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "0efa254b-7594-48bd-9235-01e7f90c62a1",
+          "assignmentId": "4a16ac74-1104-4c47-ba38-00b668858cba",
+          "assignmentDigest": "855a5c95ecdf8368ffbd3e926fe1a4f0076e98f2b95afe753b562207cf06b024",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 15,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "4a16ac74-1104-4c47-ba38-00b668858cba",
+          "reviewCompletionOrder": 15
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/ANSWERED_REVIEW.zip",
+      "zipSha256": "2cfe7f91827721625d598899447bb8a906e9c5ecafba34125c7ea36e03649c83",
+      "learnerSha256": "ae7dcbdb31c50957d50a7855a51a68a292dbad87b6ba2ff5e3035b932e34859e",
+      "unit8Assignments": [
+        {
+          "id": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "4779caa3-ecc9-4e4f-ac4f-b6ca4d856367",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "d290a9e1-c11e-4099-8fd8-6bdd7e42ec66",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/BEFORE_UNIT9_WORK.zip",
+      "zipSha256": "56f4abb7d682e7de425d1d3f2f0691bf8bf8c4776eaecdffac91463f7d5c0ce1",
+      "learnerSha256": "35bc83a4c8596fe1ded6c6935618859fea46f48808f5a06f58a22767d9af4263",
+      "unit8Assignments": [
+        {
+          "id": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "4779caa3-ecc9-4e4f-ac4f-b6ca4d856367",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "d290a9e1-c11e-4099-8fd8-6bdd7e42ec66",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/COMPLETED_UNIT10.zip",
+      "zipSha256": "928f5be12db3b61f9f06f23d37a4dbe4368aeb255c830e55c327f493a7fbd5df",
+      "learnerSha256": "6fdf8c267c5f567706145cf67de82124cc48e2e347427363126fa7de9ac1c43d",
+      "unit8Assignments": [
+        {
+          "id": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "4779caa3-ecc9-4e4f-ac4f-b6ca4d856367",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "d290a9e1-c11e-4099-8fd8-6bdd7e42ec66",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/COMPLETED_UNIT9.zip",
+      "zipSha256": "c64d2b49b0ce6123fd56640e3edc3cb42752a8025391de99db0994523a88fba4",
+      "learnerSha256": "275e4be6463adbff234a34dec8a399056c5649abf48a47aa7648e4c753646dcb",
+      "unit8Assignments": [
+        {
+          "id": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "4779caa3-ecc9-4e4f-ac4f-b6ca4d856367",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "d290a9e1-c11e-4099-8fd8-6bdd7e42ec66",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/ORDINARY_UNIT9.zip",
+      "zipSha256": "3fd490c3597741fa9620e2a0789c5586d37ec8e9e8e2223fc44e0209d044e3bb",
+      "learnerSha256": "9c60f2ebe673afed2b483c984f3724a29b7a3a25c717702b801b17acbecfa12f",
+      "unit8Assignments": [
+        {
+          "id": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "4779caa3-ecc9-4e4f-ac4f-b6ca4d856367",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "d290a9e1-c11e-4099-8fd8-6bdd7e42ec66",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/PARTIAL_REVIEW.zip",
+      "zipSha256": "76df6f6b8033382554c58d2b4a05c40edcd6f4b8822c2aa8dfac415e88b4427f",
+      "learnerSha256": "73a6209b1ddf7c84eb9f9ef2f8d2f62c1bb4c48447fa1d022b5424088147d483",
+      "unit8Assignments": [
+        {
+          "id": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "4779caa3-ecc9-4e4f-ac4f-b6ca4d856367",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "d290a9e1-c11e-4099-8fd8-6bdd7e42ec66",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/POST_COMPLETION_WRONG.zip",
+      "zipSha256": "753757f973c9eb83e1e951096942b4fbd4dfe3d714c0feceb5b40674be1d5441",
+      "learnerSha256": "97ed2694c267cff006f6b9bc610b077cb274ffa5fb508e1ec87c06beb0599958",
+      "unit8Assignments": [
+        {
+          "id": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "4779caa3-ecc9-4e4f-ac4f-b6ca4d856367",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "d290a9e1-c11e-4099-8fd8-6bdd7e42ec66",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/UNSTARTED_REVIEW.zip",
+      "zipSha256": "7ee179e012c1ec6f9e42ecfc76550bdda5cf9b823c8ec97b53bf2322b7b5222a",
+      "learnerSha256": "3445a13f4520738efde5baecc043f914db6d3d2d1153cb91f2488983f5f67b66",
+      "unit8Assignments": [
+        {
+          "id": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "targetUnit": 8,
+          "policyId": "unit8-prior-reading-nominative-agreement-v1",
+          "policyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 11,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u7-endings",
+              "skill": "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION",
+              "itemId": "u7-i-endings-4",
+              "ownerUnit": 7,
+              "itemDigest": "7c77e1ee92e60511ee313f2878561141cf1297ca5955128f6c57368057fd7b2d",
+              "unitDigest": "3999906034a7cc8baca24f2aa063320bf6927663f5f62e19e8957167206f520a",
+              "teachingDigest": "719edd35ea9159c6c029f0d3ef1a7689ef059d847e2738123d4e4007d804b9dd"
+            }
+          ],
+          "digest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "schema": 1
+        }
+      ],
+      "unit8Answers": [
+        {
+          "id": "4779caa3-ecc9-4e4f-ac4f-b6ca4d856367",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 12,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "d290a9e1-c11e-4099-8fd8-6bdd7e42ec66",
+          "assignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "assignmentDigest": "83291856a73489a0046b6694213749c6e39b3e7c245f1ec38a309bdb78db77e5",
+          "slotIndex": 1,
+          "selected": "но́вая",
+          "acceptedOrder": 13,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "unit8Completions": [
+        {
+          "unitNumber": 8,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "460abadf6ccde6a4c58e86679543e8bd72baa275e48a8cdc6e0100e2a11d10f7",
+          "reviewAssignmentId": "2ac2de2c-d11d-436d-b915-6dbc98316504",
+          "reviewCompletionOrder": 13
+        }
+      ]
+    }
+  ]
+}

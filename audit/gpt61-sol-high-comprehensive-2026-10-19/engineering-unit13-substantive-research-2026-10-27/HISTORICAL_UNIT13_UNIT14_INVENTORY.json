@@ -1,0 +1,3561 @@
+{
+  "sourceCommit": "5971ed56cb4e17b15e4430202d206ec8df59337a",
+  "scope": "Historical byte/member observations only; not replay/test counts or a fresh actual-current capture.",
+  "archivesChecked": 73,
+  "archives": [
+    {
+      "path": "audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/CURRENT_RAW_EVIDENCE.zip",
+      "sha256": "30ed58e59dcf98c458ba8f6ce11009b68fe32f6c42b6a5aeff6112419778f18b",
+      "bytes": 15672589,
+      "members": 200,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/INITIAL/ABORTED_BINARY_RESULTS.zip",
+      "sha256": "c5dbdb27dadae2b02064d54e1519024a6caca3447508e33066e379b7a9ca1a93",
+      "bytes": 4843554,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/ANSWERED_REVIEW.zip",
+      "sha256": "06b25bb19c86ebdc17f76c5e380e2c61fa3ec4795373c99fb9d457b9b1ad4441",
+      "bytes": 23685,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/BEFORE_UNIT6_WORK.zip",
+      "sha256": "ddce1fc56ea7844ff13f1a2835f5a66f5f11a02b182a854974b064af3f9fb098",
+      "bytes": 18158,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/COMPLETED_UNIT6.zip",
+      "sha256": "83c730fae2fb5c26d7ad32700ccb3144c2af511b65482ded361a1d919525ae9e",
+      "bytes": 23746,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/COMPLETED_UNIT7.zip",
+      "sha256": "70cd18c883f31d16d17a866089981375383a9c189fdbbabdd58ab509646bbe0a",
+      "bytes": 31710,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/ORDINARY_UNIT6.zip",
+      "sha256": "9abf9de8ae912dadd428e5143f31fe76911b812dbb8a0c9a14d89111a611812b",
+      "bytes": 23320,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/PARTIAL_REVIEW.zip",
+      "sha256": "5dc62503eabcc25f200e8aa67f75690e6771374ddca6581fb7c4959bc0347dc8",
+      "bytes": 23650,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/POST_COMPLETION_WRONG.zip",
+      "sha256": "bf19c01f27a28c50501bbb9ed086114b5ff0d588ff78cc01c27277dea9df2634",
+      "bytes": 23777,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/UNSTARTED_REVIEW.zip",
+      "sha256": "6111435b6a493d8589e7a8922b6eb74c3f109ce20c39262ef22bdc8ead92d15e",
+      "bytes": 23574,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/ANSWERED_REVIEW.zip",
+      "sha256": "6033c9fb0a7dbac35d42ba8febc5f10bc8a300d477299e3e8f6031550a77c9e8",
+      "bytes": 23646,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/BEFORE_UNIT6_WORK.zip",
+      "sha256": "984c6ed9285072ae3f7903dd906ecb89a6501918c80435ee315cb907ee1de7e6",
+      "bytes": 18152,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/COMPLETED_UNIT6.zip",
+      "sha256": "a8224368ee2fdab1c40257993cd86d0aa398c8e5b5577fc7a6049ca7d3805125",
+      "bytes": 23744,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/COMPLETED_UNIT7.zip",
+      "sha256": "d38319000cc4504ae99cb05872b945b2e8530461f09881ac4fb54af1992fe7ac",
+      "bytes": 31720,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/ORDINARY_UNIT6.zip",
+      "sha256": "9aeab270239cb594d8bde23643c4210615f6b6684d4358e885297d6435758665",
+      "bytes": 23316,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/PARTIAL_REVIEW.zip",
+      "sha256": "34297a07f4304e8eaaaecaf495dc5b4022824ea1e9b5fbe4bcf824a760da33c2",
+      "bytes": 23609,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/POST_COMPLETION_WRONG.zip",
+      "sha256": "24da67c2ae487688d9f83eec18c2925c9e9909c3f3fda00bd234de647a681219",
+      "bytes": 23776,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/UNSTARTED_REVIEW.zip",
+      "sha256": "2f7c68f854f590a845f53feb2b631038e24fb1cbd4397eac9f2c4f2cdfc86829",
+      "bytes": 23535,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/ANSWERED_REVIEW.zip",
+      "sha256": "e5ad30a40d946127f39c2c09324f818463097b48262ab9b96dd26c78b8b0b092",
+      "bytes": 59768,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BEFORE_UNIT13_WORK.zip",
+      "sha256": "27157f7a549757916001be7643a74443625ca9b8377dd4b2458958df0dbf24d8",
+      "bytes": 56727,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT13.zip",
+      "sha256": "ce934cbd1bc04593bc18c0f4c64d0b96c2787bfb7e049e075e604140da6f21ab",
+      "bytes": 59792,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT14.zip",
+      "sha256": "c16d47eabd546c04870c0583801c1e72a68e49b35140e87332490e989f0e1fa2",
+      "bytes": 62297,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/ORDINARY_UNIT13.zip",
+      "sha256": "aa17f1634aaa0a969c480b2bdd13f1d322833b3158e742b7dd34f2f8db3e85dd",
+      "bytes": 59445,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/PARTIAL_REVIEW.zip",
+      "sha256": "9b1d4fe1a3445aad6827c7b09392881d3ff3485ff4304390c23106048030c0da",
+      "bytes": 59732,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/POST_COMPLETION_WRONG.zip",
+      "sha256": "727bfdc12271e5d4ca8b01ce3dd652154d14705af602e67efe62c2944504ad97",
+      "bytes": 59828,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/UNSTARTED_REVIEW.zip",
+      "sha256": "b11352d25c2b72a8d245af3c710995d68b960caecbcaeb4f6120ca4b6ea36890",
+      "bytes": 59653,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/ANSWERED_REVIEW.zip",
+      "sha256": "de5897b81ca172e90065967f52007ce03ef9afddcfbedebf611d62e30757fd9f",
+      "bytes": 59797,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BEFORE_UNIT13_WORK.zip",
+      "sha256": "9bca68d7234c32ddcc315f2c05a02c290f33910c4bc5eca3adbbb9537ee36ebd",
+      "bytes": 56715,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT13.zip",
+      "sha256": "fed8e249890c2340809ee14e69f292e22faba9c0329d264c39ea25c018113749",
+      "bytes": 59822,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT14.zip",
+      "sha256": "49177d83bf123faf80421276a698decded31ecc0a64e4f849f0d3accf7b966f6",
+      "bytes": 62283,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/ORDINARY_UNIT13.zip",
+      "sha256": "4ec3e03caa3789ea451a368bc250bbcdd401fab16cc8a12a2dc7f21e16f66c3a",
+      "bytes": 59469,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/PARTIAL_REVIEW.zip",
+      "sha256": "4963b568d06003e60ba5141099fbe263a17b777f54ee0bb432b19518b65a4687",
+      "bytes": 59761,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/POST_COMPLETION_WRONG.zip",
+      "sha256": "e42b9bdc9b8c0d5e5cf488f54905a81af75ea9aa08a3630f5b0447d3c0679a7f",
+      "bytes": 59854,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/UNSTARTED_REVIEW.zip",
+      "sha256": "e80965499cb676d148492510b6469f97079ed60a299c56aebb0d6edb645730d6",
+      "bytes": 59681,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/ANSWERED_REVIEW.zip",
+      "sha256": "8b269b4f754a94b2d4eb1fe01c84eb2169525c39a4c500e53970e02d9335ce28",
+      "bytes": 59842,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BEFORE_UNIT13_WORK.zip",
+      "sha256": "e39dd9b11620cf9643e9bb54f8d571ce1b376464215f9680b62f5918220ad0a0",
+      "bytes": 56726,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT13.zip",
+      "sha256": "5d0a0d30b8c4b56ae42d92d398aee57be86f363f89705b936d624b24dea3a6dc",
+      "bytes": 59901,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT14.zip",
+      "sha256": "49a8e886ddd24c0a0ccefce5200de97d73ca038f03b579f2433b16aed5721484",
+      "bytes": 62279,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/ORDINARY_UNIT13.zip",
+      "sha256": "567f359c9d4329b60af433faf6adc202431954274b3026a267d3f4a551a04bc0",
+      "bytes": 59505,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/PARTIAL_REVIEW.zip",
+      "sha256": "65009eca7c6097f70e1c131677fc6322aec41347c48702059252e0d51a21b2d2",
+      "bytes": 59806,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/POST_COMPLETION_WRONG.zip",
+      "sha256": "11617513cf5417f89649d5f1eaca5c2006017c92b186190957351259ac9e0d74",
+      "bytes": 59934,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/UNSTARTED_REVIEW.zip",
+      "sha256": "c14f71fad33e00099af20058ff43e64e93460332bea4177f71bee84ce8a7b1ab",
+      "bytes": 59728,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/ANSWERED_REVIEW.zip",
+      "sha256": "a4a239a2db274a81e9822091170403e8e22fd4ab94aaa66e374cb322a86bfb0e",
+      "bytes": 10174,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/BEFORE_UNIT3_WORK.zip",
+      "sha256": "8fea5af61fa4c8a40580e9a796c36581acb0d7090c073199c2c34838bd455088",
+      "bytes": 6562,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/COMPLETED_UNIT3.zip",
+      "sha256": "b5067413bda2417daaa6ad8d38e772b9b6faf880e35f20d33414870d80891a30",
+      "bytes": 10235,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/COMPLETED_UNIT4.zip",
+      "sha256": "85573676d0d15a58e20fa605262b0d22da8a36926a6bd2875091a4558464b973",
+      "bytes": 14336,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/ORDINARY_UNIT3.zip",
+      "sha256": "d254916ea5c6e5864a50d8460318327dd449785e44b3af1419e0aec1c3afd48a",
+      "bytes": 9635,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/PARTIAL_REVIEW.zip",
+      "sha256": "53905fbffccb4a4ff9f273330128f7270715b9963581a058285323dfc0c108d9",
+      "bytes": 10135,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/POST_COMPLETION_WRONG.zip",
+      "sha256": "cc41045a8c451df74be14b911ec85d613ebd086e90a62974e0919814845cdfbc",
+      "bytes": 10268,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/UNSTARTED_REVIEW.zip",
+      "sha256": "2eb317fca4daa0b3c0204dfb86205675bedbfaac6e552b43d2f91301b08db712",
+      "bytes": 10005,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/ANSWERED_REVIEW.zip",
+      "sha256": "bb4de6cbaf3218a7890abe0454b38ce12960235e7a1e0c26ec645ac6effa020b",
+      "bytes": 31694,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/BEFORE_UNIT7_WORK.zip",
+      "sha256": "8a6391b156783339bf6e4900b5d18633c57c407c8b83769690c910d31bdbda85",
+      "bytes": 23740,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/COMPLETED_UNIT7.zip",
+      "sha256": "fa29e710e2b68826d5028f452d564a55a8edcacc767b22b34b3598225812e0b8",
+      "bytes": 31708,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/COMPLETED_UNIT8.zip",
+      "sha256": "e1e14348f435270a482af6829951371d9e51f5dacc87578d56afe460874425db",
+      "bytes": 36289,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/ORDINARY_UNIT7.zip",
+      "sha256": "44d95127a5f18ea3b9f19c0433b8346b3334630963e62843ceb4e7d69bec0898",
+      "bytes": 31265,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/PARTIAL_REVIEW.zip",
+      "sha256": "f835606f27476e3e0698dc907d92b0a3fa15fc9821cba51f43b6df11c5e301c2",
+      "bytes": 31652,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/POST_COMPLETION_WRONG.zip",
+      "sha256": "5f5f2596b8b563b6bfc80cd6c572827908d2f344718eeba6a61309805dd422ce",
+      "bytes": 31742,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/UNSTARTED_REVIEW.zip",
+      "sha256": "c372229c1f0b49a121ff50371906476430bfcd2d72b2e73e1c359402bff17068",
+      "bytes": 31544,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/ANSWERED_REVIEW.zip",
+      "sha256": "2cfe7f91827721625d598899447bb8a906e9c5ecafba34125c7ea36e03649c83",
+      "bytes": 43368,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/BEFORE_UNIT9_WORK.zip",
+      "sha256": "56f4abb7d682e7de425d1d3f2f0691bf8bf8c4776eaecdffac91463f7d5c0ce1",
+      "bytes": 36202,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/COMPLETED_UNIT10.zip",
+      "sha256": "928f5be12db3b61f9f06f23d37a4dbe4368aeb255c830e55c327f493a7fbd5df",
+      "bytes": 49217,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/COMPLETED_UNIT9.zip",
+      "sha256": "c64d2b49b0ce6123fd56640e3edc3cb42752a8025391de99db0994523a88fba4",
+      "bytes": 43391,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/ORDINARY_UNIT9.zip",
+      "sha256": "3fd490c3597741fa9620e2a0789c5586d37ec8e9e8e2223fc44e0209d044e3bb",
+      "bytes": 43001,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/PARTIAL_REVIEW.zip",
+      "sha256": "76df6f6b8033382554c58d2b4a05c40edcd6f4b8822c2aa8dfac415e88b4427f",
+      "bytes": 43333,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/POST_COMPLETION_WRONG.zip",
+      "sha256": "753757f973c9eb83e1e951096942b4fbd4dfe3d714c0feceb5b40674be1d5441",
+      "bytes": 43426,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit9-history-transition/UNSTARTED_REVIEW.zip",
+      "sha256": "7ee179e012c1ec6f9e42ecfc76550bdda5cf9b823c8ec97b53bf2322b7b5222a",
+      "bytes": 43252,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit6-present-baseline-2026-10-23/BASELINE_CURRENT_UNIT6_V2.zip",
+      "sha256": "5244052c97346b4d3542edb2469eee2c714d69d2b00567dca8d668970f5ade37",
+      "bytes": 24351,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit7-gender-baseline-2026-10-24/BASELINE_CURRENT_UNIT7_V1.zip",
+      "sha256": "43d5da10729fed2ced704f5e52e48a2bd0283dbcd516171aaa59c4e0de5200df",
+      "bytes": 32597,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit8-present-baseline-2026-10-24/BASELINE_CURRENT_UNIT8_V1.zip",
+      "sha256": "6cedfb872485afc193e3c25610727b6af602989fcd0722a4f4c6f0657abb4210",
+      "bytes": 37176,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit9-noun-behavior-baseline-2026-10-25/BASELINE_CURRENT_UNIT9_V2.zip",
+      "sha256": "5ffaa491684a85451bb4835d806b2abe58819465185bed8fb4dfddc3037d07b1",
+      "bytes": 44524,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit10-present-baseline-2026-10-25/BASELINE_CURRENT_UNIT10_V1.zip",
+      "sha256": "dd097e2e90e9bda282dac745c4b13b8a80fc9ac4e090aca9b8d0065d3b81e349",
+      "bytes": 50290,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit11-noun-baseline-2026-10-26/BASELINE_CURRENT_UNIT11_V1.zip",
+      "sha256": "a8b599303788fd1dcd5c7e4bceeda42a36d93622a90da7bc3ce356ee1bac06f9",
+      "bytes": 53402,
+      "members": 2,
+      "crcVerified": true
+    },
+    {
+      "path": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit12-gender-baseline-2026-10-26/BASELINE_CURRENT_UNIT12_V1.zip",
+      "sha256": "f9aaa378202fc926c229e1a65675f8e739a35990534c073694b328379eddd5ac",
+      "bytes": 57784,
+      "members": 2,
+      "crcVerified": true
+    }
+  ],
+  "unit13Fixtures": [
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/ANSWERED_REVIEW.zip",
+      "zipSha256": "e5ad30a40d946127f39c2c09324f818463097b48262ab9b96dd26c78b8b0b092",
+      "learnerSha256": "22d7d4c25b18ed405c014006995570555fe6f1acd605c24777af7135a89be997",
+      "assignments": [
+        {
+          "id": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "5d0494f7-2cde-45a7-a4e4-4be15df4579b",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "e55c474e-0b8d-4cd0-baf4-08f2c56d340c",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "d51ab925-cdf1-47a2-b2ba-e0c7610037c5",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 1,
+          "selected": "говори́ть",
+          "acceptedOrder": 25,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "22d7d4c25b18ed405c014006995570555fe6f1acd605c24777af7135a89be997",
+            "bytes": 312701
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 25
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT13.zip",
+      "zipSha256": "ce934cbd1bc04593bc18c0f4c64d0b96c2787bfb7e049e075e604140da6f21ab",
+      "learnerSha256": "edef55831b00d253a2932b51ba6d4337e03d9021e5e1344d80360d1ff551f641",
+      "assignments": [
+        {
+          "id": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "5d0494f7-2cde-45a7-a4e4-4be15df4579b",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "e55c474e-0b8d-4cd0-baf4-08f2c56d340c",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "d51ab925-cdf1-47a2-b2ba-e0c7610037c5",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 1,
+          "selected": "говори́ть",
+          "acceptedOrder": 25,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [
+        {
+          "unitNumber": 13,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "reviewAssignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "reviewCompletionOrder": 25
+        }
+      ],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "edef55831b00d253a2932b51ba6d4337e03d9021e5e1344d80360d1ff551f641",
+            "bytes": 312960
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 25
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT14.zip",
+      "zipSha256": "c16d47eabd546c04870c0583801c1e72a68e49b35140e87332490e989f0e1fa2",
+      "learnerSha256": "59b25c35b3533b4ef75a5afde142a143635fa5a06e64503b007152e087dcfe37",
+      "assignments": [
+        {
+          "id": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "5d0494f7-2cde-45a7-a4e4-4be15df4579b",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "e55c474e-0b8d-4cd0-baf4-08f2c56d340c",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "d51ab925-cdf1-47a2-b2ba-e0c7610037c5",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 1,
+          "selected": "говори́ть",
+          "acceptedOrder": 25,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "8747c0c7-07b5-474a-8047-237fdc30713e",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 26,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [
+        {
+          "unitNumber": 13,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "reviewAssignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "reviewCompletionOrder": 25
+        }
+      ],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 319,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 641,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "59b25c35b3533b4ef75a5afde142a143635fa5a06e64503b007152e087dcfe37",
+            "bytes": 325417
+          }
+        ],
+        "reviewAssignmentCount": 12,
+        "reviewAnswerCount": 28
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/PARTIAL_REVIEW.zip",
+      "zipSha256": "9b1d4fe1a3445aad6827c7b09392881d3ff3485ff4304390c23106048030c0da",
+      "learnerSha256": "10e92d3e0956483234d0e650234cd5e7475adf6048ff4abdb0797ee509f1dcb4",
+      "assignments": [
+        {
+          "id": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "5d0494f7-2cde-45a7-a4e4-4be15df4579b",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "e55c474e-0b8d-4cd0-baf4-08f2c56d340c",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "10e92d3e0956483234d0e650234cd5e7475adf6048ff4abdb0797ee509f1dcb4",
+            "bytes": 312412
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 24
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/POST_COMPLETION_WRONG.zip",
+      "zipSha256": "727bfdc12271e5d4ca8b01ce3dd652154d14705af602e67efe62c2944504ad97",
+      "learnerSha256": "850da7c5dcd63a24e065635e6c114eee184490aebdf4426154b09a8d79016b08",
+      "assignments": [
+        {
+          "id": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "5d0494f7-2cde-45a7-a4e4-4be15df4579b",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "e55c474e-0b8d-4cd0-baf4-08f2c56d340c",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "d51ab925-cdf1-47a2-b2ba-e0c7610037c5",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 1,
+          "selected": "говори́ть",
+          "acceptedOrder": 25,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "8747c0c7-07b5-474a-8047-237fdc30713e",
+          "assignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "assignmentDigest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 26,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [
+        {
+          "unitNumber": 13,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "reviewAssignmentId": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "reviewCompletionOrder": 25
+        }
+      ],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "850da7c5dcd63a24e065635e6c114eee184490aebdf4426154b09a8d79016b08",
+            "bytes": 313247
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 26
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/UNSTARTED_REVIEW.zip",
+      "zipSha256": "b11352d25c2b72a8d245af3c710995d68b960caecbcaeb4f6120ca4b6ea36890",
+      "learnerSha256": "1fbc07f68c62299d50c3f8301946b5d95f4f6087a8edede27af382fb33efd714",
+      "assignments": [
+        {
+          "id": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "schema": 1
+        }
+      ],
+      "answers": [],
+      "completions": [],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "1fbc07f68c62299d50c3f8301946b5d95f4f6087a8edede27af382fb33efd714",
+            "bytes": 311847
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 22
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/ANSWERED_REVIEW.zip",
+      "zipSha256": "de5897b81ca172e90065967f52007ce03ef9afddcfbedebf611d62e30757fd9f",
+      "learnerSha256": "0db07dabd8c90397581da8e3387a4f3ebbb63b79e0949efdfeafbc368c71d816",
+      "assignments": [
+        {
+          "id": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "9cf9bb67-eb22-4f50-9445-0214680d30ed",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "671e6694-8ce2-42c1-882a-466ef1cd0d60",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "94bc614f-18ae-4dae-8eb5-f1429bbca6b9",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 1,
+          "selected": "говори́ть",
+          "acceptedOrder": 25,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "0db07dabd8c90397581da8e3387a4f3ebbb63b79e0949efdfeafbc368c71d816",
+            "bytes": 312701
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 25
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT13.zip",
+      "zipSha256": "fed8e249890c2340809ee14e69f292e22faba9c0329d264c39ea25c018113749",
+      "learnerSha256": "9c87da43611b500356f814ffa803f73a4e87fb6d63f04c038972be3c9d1f12ea",
+      "assignments": [
+        {
+          "id": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "9cf9bb67-eb22-4f50-9445-0214680d30ed",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "671e6694-8ce2-42c1-882a-466ef1cd0d60",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "94bc614f-18ae-4dae-8eb5-f1429bbca6b9",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 1,
+          "selected": "говори́ть",
+          "acceptedOrder": 25,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [
+        {
+          "unitNumber": 13,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "reviewAssignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "reviewCompletionOrder": 25
+        }
+      ],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "9c87da43611b500356f814ffa803f73a4e87fb6d63f04c038972be3c9d1f12ea",
+            "bytes": 312960
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 25
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT14.zip",
+      "zipSha256": "49177d83bf123faf80421276a698decded31ecc0a64e4f849f0d3accf7b966f6",
+      "learnerSha256": "f27742b4b3f3617d274d28775e85705ff1564664bfc6cf132c7ad13ff5f965ae",
+      "assignments": [
+        {
+          "id": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "9cf9bb67-eb22-4f50-9445-0214680d30ed",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "671e6694-8ce2-42c1-882a-466ef1cd0d60",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "94bc614f-18ae-4dae-8eb5-f1429bbca6b9",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 1,
+          "selected": "говори́ть",
+          "acceptedOrder": 25,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "4afb3430-217f-4e56-8176-e07809c11648",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 26,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [
+        {
+          "unitNumber": 13,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "reviewAssignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "reviewCompletionOrder": 25
+        }
+      ],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 319,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 641,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "f27742b4b3f3617d274d28775e85705ff1564664bfc6cf132c7ad13ff5f965ae",
+            "bytes": 325417
+          }
+        ],
+        "reviewAssignmentCount": 12,
+        "reviewAnswerCount": 28
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/PARTIAL_REVIEW.zip",
+      "zipSha256": "4963b568d06003e60ba5141099fbe263a17b777f54ee0bb432b19518b65a4687",
+      "learnerSha256": "b0702da0b8d10a9c5e8961875db47676a6434e34a929e71bddf81368d2e6d630",
+      "assignments": [
+        {
+          "id": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "9cf9bb67-eb22-4f50-9445-0214680d30ed",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "671e6694-8ce2-42c1-882a-466ef1cd0d60",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "b0702da0b8d10a9c5e8961875db47676a6434e34a929e71bddf81368d2e6d630",
+            "bytes": 312412
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 24
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/POST_COMPLETION_WRONG.zip",
+      "zipSha256": "e42b9bdc9b8c0d5e5cf488f54905a81af75ea9aa08a3630f5b0447d3c0679a7f",
+      "learnerSha256": "a987c17ee5e7b87b7a2f6d35bb529ed5c280372814f175747122ef4127811448",
+      "assignments": [
+        {
+          "id": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "9cf9bb67-eb22-4f50-9445-0214680d30ed",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "671e6694-8ce2-42c1-882a-466ef1cd0d60",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "94bc614f-18ae-4dae-8eb5-f1429bbca6b9",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 1,
+          "selected": "говори́ть",
+          "acceptedOrder": 25,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "4afb3430-217f-4e56-8176-e07809c11648",
+          "assignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "assignmentDigest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 26,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [
+        {
+          "unitNumber": 13,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "reviewAssignmentId": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "reviewCompletionOrder": 25
+        }
+      ],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "a987c17ee5e7b87b7a2f6d35bb529ed5c280372814f175747122ef4127811448",
+            "bytes": 313247
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 26
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/UNSTARTED_REVIEW.zip",
+      "zipSha256": "e80965499cb676d148492510b6469f97079ed60a299c56aebb0d6edb645730d6",
+      "learnerSha256": "146eeb164eb11b2a32a4b732fd7a414e40a9a3725d7e6249c81958c3117ae763",
+      "assignments": [
+        {
+          "id": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "schema": 1
+        }
+      ],
+      "answers": [],
+      "completions": [],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "146eeb164eb11b2a32a4b732fd7a414e40a9a3725d7e6249c81958c3117ae763",
+            "bytes": 311847
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 22
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/ANSWERED_REVIEW.zip",
+      "zipSha256": "8b269b4f754a94b2d4eb1fe01c84eb2169525c39a4c500e53970e02d9335ce28",
+      "learnerSha256": "7d4b09b106fbd91e6baedfbff4d95e79af4b78511d5076c6c4934a5b35f3a13f",
+      "assignments": [
+        {
+          "id": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "7d95a802-8f17-497f-b071-4408fb8cb076",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "4a99e9b2-a910-4d4e-bb9d-b3be00232dd0",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "fe4e5ccb-74a8-4885-b260-6589fff81469",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 1,
+          "selected": "говори́ть",
+          "acceptedOrder": 25,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "7d4b09b106fbd91e6baedfbff4d95e79af4b78511d5076c6c4934a5b35f3a13f",
+            "bytes": 312701
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 25
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT13.zip",
+      "zipSha256": "5d0a0d30b8c4b56ae42d92d398aee57be86f363f89705b936d624b24dea3a6dc",
+      "learnerSha256": "292f0489bb47cc99fea22f5ddcbd0101c92e51a92933113022e381c6afba005f",
+      "assignments": [
+        {
+          "id": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "7d95a802-8f17-497f-b071-4408fb8cb076",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "4a99e9b2-a910-4d4e-bb9d-b3be00232dd0",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "fe4e5ccb-74a8-4885-b260-6589fff81469",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 1,
+          "selected": "говори́ть",
+          "acceptedOrder": 25,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [
+        {
+          "unitNumber": 13,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "reviewAssignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "reviewCompletionOrder": 25
+        }
+      ],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "292f0489bb47cc99fea22f5ddcbd0101c92e51a92933113022e381c6afba005f",
+            "bytes": 312960
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 25
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT14.zip",
+      "zipSha256": "49a8e886ddd24c0a0ccefce5200de97d73ca038f03b579f2433b16aed5721484",
+      "learnerSha256": "b28c07eb6690dc9df694bee72e7a6a3f08231f8d9ea55d5689b6e056d15a13f0",
+      "assignments": [
+        {
+          "id": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "7d95a802-8f17-497f-b071-4408fb8cb076",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "4a99e9b2-a910-4d4e-bb9d-b3be00232dd0",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "fe4e5ccb-74a8-4885-b260-6589fff81469",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 1,
+          "selected": "говори́ть",
+          "acceptedOrder": 25,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "03c2cea6-f0de-454e-ab4a-11c1e055f41a",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 26,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [
+        {
+          "unitNumber": 13,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "reviewAssignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "reviewCompletionOrder": 25
+        }
+      ],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 319,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 641,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "b28c07eb6690dc9df694bee72e7a6a3f08231f8d9ea55d5689b6e056d15a13f0",
+            "bytes": 325417
+          }
+        ],
+        "reviewAssignmentCount": 12,
+        "reviewAnswerCount": 28
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/PARTIAL_REVIEW.zip",
+      "zipSha256": "65009eca7c6097f70e1c131677fc6322aec41347c48702059252e0d51a21b2d2",
+      "learnerSha256": "a6504f43227067810681960280c6e1be41ad12b0a09d427e4ab063765c09fa56",
+      "assignments": [
+        {
+          "id": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "7d95a802-8f17-497f-b071-4408fb8cb076",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "4a99e9b2-a910-4d4e-bb9d-b3be00232dd0",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "a6504f43227067810681960280c6e1be41ad12b0a09d427e4ab063765c09fa56",
+            "bytes": 312412
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 24
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/POST_COMPLETION_WRONG.zip",
+      "zipSha256": "11617513cf5417f89649d5f1eaca5c2006017c92b186190957351259ac9e0d74",
+      "learnerSha256": "ebd47b9fc2aaa59a2ef9ce15ef2f600e04745a34c11ea3286c2e3ccbcb3506d0",
+      "assignments": [
+        {
+          "id": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "7d95a802-8f17-497f-b071-4408fb8cb076",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 23,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "4a99e9b2-a910-4d4e-bb9d-b3be00232dd0",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 24,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "fe4e5ccb-74a8-4885-b260-6589fff81469",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 1,
+          "selected": "говори́ть",
+          "acceptedOrder": 25,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "03c2cea6-f0de-454e-ab4a-11c1e055f41a",
+          "assignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "assignmentDigest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "slotIndex": 1,
+          "selected": "сде́лать",
+          "acceptedOrder": 26,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [
+        {
+          "unitNumber": 13,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "reviewAssignmentId": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "reviewCompletionOrder": 25
+        }
+      ],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "ebd47b9fc2aaa59a2ef9ce15ef2f600e04745a34c11ea3286c2e3ccbcb3506d0",
+            "bytes": 313247
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 26
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/UNSTARTED_REVIEW.zip",
+      "zipSha256": "c14f71fad33e00099af20058ff43e64e93460332bea4177f71bee84ce8a7b1ab",
+      "learnerSha256": "019940c6c289d19af7d46aa52373e2e9e58fc0f28b15bf83aab3a5bab474084f",
+      "assignments": [
+        {
+          "id": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "schema": 1
+        }
+      ],
+      "answers": [],
+      "completions": [],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 310,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 615,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "019940c6c289d19af7d46aa52373e2e9e58fc0f28b15bf83aab3a5bab474084f",
+            "bytes": 311847
+          }
+        ],
+        "reviewAssignmentCount": 11,
+        "reviewAnswerCount": 22
+      }
+    }
+  ],
+  "unit14Fixtures": [
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT14.zip",
+      "zipSha256": "c16d47eabd546c04870c0583801c1e72a68e49b35140e87332490e989f0e1fa2",
+      "learnerSha256": "59b25c35b3533b4ef75a5afde142a143635fa5a06e64503b007152e087dcfe37",
+      "assignments": [
+        {
+          "id": "4369b71d-ee42-4586-b5c7-0f1217946edd",
+          "targetUnit": 14,
+          "policyId": "unit14-prior-reading-reported-time-v1",
+          "policyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 26,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u13-reported",
+              "skill": "SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION",
+              "itemId": "u13-i-report-frame-time",
+              "ownerUnit": 13,
+              "itemDigest": "d29683b08ebcf92a6af28b42c5f55f00641e3d2f9d3e511949660d858c7d86b5",
+              "unitDigest": "d096b1457d65d756fb9af088488b2808ddb81fad85455c4854a835dedcdd2baa",
+              "teachingDigest": "9207438de1d62c51a9f491d0989f342d3cdcfc4562e683ece7195176dc62caa0"
+            }
+          ],
+          "digest": "dcbc89de987b782a3733ddf38d574c7a0713ef83935a5f49853bfd3e566c6b0a",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "5c393422-c31a-4a3f-8e04-d8c35710681b",
+          "assignmentId": "4369b71d-ee42-4586-b5c7-0f1217946edd",
+          "assignmentDigest": "dcbc89de987b782a3733ddf38d574c7a0713ef83935a5f49853bfd3e566c6b0a",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 27,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "fb17c29e-8657-4f12-92ab-cfe5b0a52463",
+          "assignmentId": "4369b71d-ee42-4586-b5c7-0f1217946edd",
+          "assignmentDigest": "dcbc89de987b782a3733ddf38d574c7a0713ef83935a5f49853bfd3e566c6b0a",
+          "slotIndex": 1,
+          "selected": "Past reporting verb with a future embedded action.",
+          "acceptedOrder": 28,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [
+        {
+          "unitNumber": 14,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+          "reviewAssignmentId": "4369b71d-ee42-4586-b5c7-0f1217946edd",
+          "reviewCompletionOrder": 28
+        }
+      ],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 319,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 641,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "59b25c35b3533b4ef75a5afde142a143635fa5a06e64503b007152e087dcfe37",
+            "bytes": 325417
+          }
+        ],
+        "reviewAssignmentCount": 12,
+        "reviewAnswerCount": 28
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT14.zip",
+      "zipSha256": "49177d83bf123faf80421276a698decded31ecc0a64e4f849f0d3accf7b966f6",
+      "learnerSha256": "f27742b4b3f3617d274d28775e85705ff1564664bfc6cf132c7ad13ff5f965ae",
+      "assignments": [
+        {
+          "id": "9df17c54-38a1-4cb1-a5cc-f1d481e6ce60",
+          "targetUnit": 14,
+          "policyId": "unit14-prior-reading-reported-time-v1",
+          "policyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 26,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u13-reported",
+              "skill": "SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION",
+              "itemId": "u13-i-report-frame-time",
+              "ownerUnit": 13,
+              "itemDigest": "d29683b08ebcf92a6af28b42c5f55f00641e3d2f9d3e511949660d858c7d86b5",
+              "unitDigest": "d9bd9745c4f98850c1ab86ebc42a2c5bfee29b7af8754729c5b288a964dd90ee",
+              "teachingDigest": "9207438de1d62c51a9f491d0989f342d3cdcfc4562e683ece7195176dc62caa0"
+            }
+          ],
+          "digest": "a244092ab29657f9b132f3172f01befd7cdd000716275922ca48650a3e675de5",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "28d0eeac-5ea9-4191-a5fb-82e879184f4a",
+          "assignmentId": "9df17c54-38a1-4cb1-a5cc-f1d481e6ce60",
+          "assignmentDigest": "a244092ab29657f9b132f3172f01befd7cdd000716275922ca48650a3e675de5",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 27,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "0e9507b9-0ac4-4b7d-844b-59f6099974a1",
+          "assignmentId": "9df17c54-38a1-4cb1-a5cc-f1d481e6ce60",
+          "assignmentDigest": "a244092ab29657f9b132f3172f01befd7cdd000716275922ca48650a3e675de5",
+          "slotIndex": 1,
+          "selected": "Past reporting verb with a future embedded action.",
+          "acceptedOrder": 28,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [
+        {
+          "unitNumber": 14,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+          "reviewAssignmentId": "9df17c54-38a1-4cb1-a5cc-f1d481e6ce60",
+          "reviewCompletionOrder": 28
+        }
+      ],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 319,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 641,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "f27742b4b3f3617d274d28775e85705ff1564664bfc6cf132c7ad13ff5f965ae",
+            "bytes": 325417
+          }
+        ],
+        "reviewAssignmentCount": 12,
+        "reviewAnswerCount": 28
+      }
+    },
+    {
+      "zipPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT14.zip",
+      "zipSha256": "49a8e886ddd24c0a0ccefce5200de97d73ca038f03b579f2433b16aed5721484",
+      "learnerSha256": "b28c07eb6690dc9df694bee72e7a6a3f08231f8d9ea55d5689b6e056d15a13f0",
+      "assignments": [
+        {
+          "id": "5a5f9798-68f0-468b-a038-c9270c45831d",
+          "targetUnit": 14,
+          "policyId": "unit14-prior-reading-reported-time-v1",
+          "policyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 26,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u13-reported",
+              "skill": "SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION",
+              "itemId": "u13-i-report-frame-time",
+              "ownerUnit": 13,
+              "itemDigest": "d29683b08ebcf92a6af28b42c5f55f00641e3d2f9d3e511949660d858c7d86b5",
+              "unitDigest": "7385fdd118b5f5cb988ad00832614fa4f15835e26dbbb30cfbbf9379f2340d54",
+              "teachingDigest": "9207438de1d62c51a9f491d0989f342d3cdcfc4562e683ece7195176dc62caa0"
+            }
+          ],
+          "digest": "e7fa05a4074ceeecdb6e4f3e67994d21f17ee04162a3324d5d2a5d8aca657305",
+          "schema": 1
+        }
+      ],
+      "answers": [
+        {
+          "id": "fc5fba6b-10b7-4215-96be-aa6e00c9b2b2",
+          "assignmentId": "5a5f9798-68f0-468b-a038-c9270c45831d",
+          "assignmentDigest": "e7fa05a4074ceeecdb6e4f3e67994d21f17ee04162a3324d5d2a5d8aca657305",
+          "slotIndex": 0,
+          "selected": "А / а",
+          "acceptedOrder": 27,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        },
+        {
+          "id": "9ad43d2b-b535-446e-bc45-943ed51a8cdf",
+          "assignmentId": "5a5f9798-68f0-468b-a038-c9270c45831d",
+          "assignmentDigest": "e7fa05a4074ceeecdb6e4f3e67994d21f17ee04162a3324d5d2a5d8aca657305",
+          "slotIndex": 1,
+          "selected": "Past reporting verb with a future embedded action.",
+          "acceptedOrder": 28,
+          "role": "CUMULATIVE_REVIEW",
+          "schema": 1
+        }
+      ],
+      "completions": [
+        {
+          "unitNumber": 14,
+          "recordedAtLocal": "advance",
+          "preReviewActivation": false,
+          "reviewPolicyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+          "reviewAssignmentId": "5a5f9798-68f0-468b-a038-c9270c45831d",
+          "reviewCompletionOrder": 28
+        }
+      ],
+      "recordingMembers": 0,
+      "manifest": {
+        "formatVersion": 3,
+        "applicationId": "dev.russiancompanion",
+        "packId": "v2-curriculum-foundation",
+        "packVersion": 3,
+        "appearance": "FOLLOW_SYSTEM",
+        "attemptCount": 319,
+        "noteCount": 0,
+        "bookmarkCount": 0,
+        "tutorCount": 0,
+        "stepCount": 641,
+        "recordingCount": 0,
+        "activityCount": 0,
+        "evidenceCount": 0,
+        "files": [
+          {
+            "path": "learner.json",
+            "sha256": "b28c07eb6690dc9df694bee72e7a6a3f08231f8d9ea55d5689b6e056d15a13f0",
+            "bytes": 325417
+          }
+        ],
+        "reviewAssignmentCount": 12,
+        "reviewAnswerCount": 28
+      }
+    }
+  ],
+  "unit13PolicySchemaCounts": {
+    "1:unit13-prior-reading-aspect-partner-v1": 18
+  },
+  "unit14PolicySchemaCounts": {
+    "1:unit14-prior-reading-reported-time-v1": 3
+  },
+  "historicalStandaloneDocuments": [
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/ANSWERED_REVIEW.json",
+      "sha256": "22d7d4c25b18ed405c014006995570555fe6f1acd605c24777af7135a89be997",
+      "canonicalDocumentSha256": "8c61e330abe6a5a311d41a71fb8bc87b0affdbddd5c5f0b3a0be10faf9b31dac",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/ANSWERED_REVIEW.zip"
+      ],
+      "assignments": [
+        {
+          "id": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "b7223f05daf7f1b979530da05ae3a697dc5f8298cabdbe1cc5aea0f55bec0883",
+      "sourceAsRecorded": {
+        "baselineCommit": "1730c1999a81e1d9d5df8bc3b957339fce1a65b4"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BEFORE_UNIT13_WORK.json",
+      "sha256": "663dc65a27c03c51f1a5045ca3872bdce7351baa8f011725ed463edc21361250",
+      "canonicalDocumentSha256": "759edacd14fcb4c4293a765b41f83403a25fe3991a39e3c885673531def542ff",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BEFORE_UNIT13_WORK.zip"
+      ],
+      "assignments": [],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "b7223f05daf7f1b979530da05ae3a697dc5f8298cabdbe1cc5aea0f55bec0883",
+      "sourceAsRecorded": {
+        "baselineCommit": "1730c1999a81e1d9d5df8bc3b957339fce1a65b4"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT13.json",
+      "sha256": "edef55831b00d253a2932b51ba6d4337e03d9021e5e1344d80360d1ff551f641",
+      "canonicalDocumentSha256": "635cef12e5843115ace5391e5aa8cb20bf92171fac37958aca966d7492250299",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT13.zip"
+      ],
+      "assignments": [
+        {
+          "id": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "b7223f05daf7f1b979530da05ae3a697dc5f8298cabdbe1cc5aea0f55bec0883",
+      "sourceAsRecorded": {
+        "baselineCommit": "1730c1999a81e1d9d5df8bc3b957339fce1a65b4"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT14.json",
+      "sha256": "59b25c35b3533b4ef75a5afde142a143635fa5a06e64503b007152e087dcfe37",
+      "canonicalDocumentSha256": "831e48a7d419a3464bedf2e4db2f91e42acd67d8bc971f6061c961cc991fec8f",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/COMPLETED_UNIT14.zip"
+      ],
+      "assignments": [
+        {
+          "id": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "schema": 1
+        },
+        {
+          "id": "4369b71d-ee42-4586-b5c7-0f1217946edd",
+          "targetUnit": 14,
+          "policyId": "unit14-prior-reading-reported-time-v1",
+          "policyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 26,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u13-reported",
+              "skill": "SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION",
+              "itemId": "u13-i-report-frame-time",
+              "ownerUnit": 13,
+              "itemDigest": "d29683b08ebcf92a6af28b42c5f55f00641e3d2f9d3e511949660d858c7d86b5",
+              "unitDigest": "d096b1457d65d756fb9af088488b2808ddb81fad85455c4854a835dedcdd2baa",
+              "teachingDigest": "9207438de1d62c51a9f491d0989f342d3cdcfc4562e683ece7195176dc62caa0"
+            }
+          ],
+          "digest": "dcbc89de987b782a3733ddf38d574c7a0713ef83935a5f49853bfd3e566c6b0a",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "b7223f05daf7f1b979530da05ae3a697dc5f8298cabdbe1cc5aea0f55bec0883",
+      "sourceAsRecorded": {
+        "baselineCommit": "1730c1999a81e1d9d5df8bc3b957339fce1a65b4"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/ORDINARY_UNIT13.json",
+      "sha256": "fa43e2113268e1f26d036301c92616ef2d74d5cf9d850454b50c0283345cb266",
+      "canonicalDocumentSha256": "a93cddd8760fcd52db36438d7b10ca93343efb48deb8d827062976b0e3478817",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/ORDINARY_UNIT13.zip"
+      ],
+      "assignments": [],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "b7223f05daf7f1b979530da05ae3a697dc5f8298cabdbe1cc5aea0f55bec0883",
+      "sourceAsRecorded": {
+        "baselineCommit": "1730c1999a81e1d9d5df8bc3b957339fce1a65b4"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/PARTIAL_REVIEW.json",
+      "sha256": "10e92d3e0956483234d0e650234cd5e7475adf6048ff4abdb0797ee509f1dcb4",
+      "canonicalDocumentSha256": "aae0f1e98fdd5221c96cb52a30599b6e7beefe41e5913e2de924b16ece5d2c57",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/PARTIAL_REVIEW.zip"
+      ],
+      "assignments": [
+        {
+          "id": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "b7223f05daf7f1b979530da05ae3a697dc5f8298cabdbe1cc5aea0f55bec0883",
+      "sourceAsRecorded": {
+        "baselineCommit": "1730c1999a81e1d9d5df8bc3b957339fce1a65b4"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/POST_COMPLETION_WRONG.json",
+      "sha256": "850da7c5dcd63a24e065635e6c114eee184490aebdf4426154b09a8d79016b08",
+      "canonicalDocumentSha256": "0a3c6c81d2f441bf18a014f0c5b33ca14b967d3294d2872b5f0448badfd3ee9c",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/POST_COMPLETION_WRONG.zip"
+      ],
+      "assignments": [
+        {
+          "id": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "b7223f05daf7f1b979530da05ae3a697dc5f8298cabdbe1cc5aea0f55bec0883",
+      "sourceAsRecorded": {
+        "baselineCommit": "1730c1999a81e1d9d5df8bc3b957339fce1a65b4"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/UNSTARTED_REVIEW.json",
+      "sha256": "1fbc07f68c62299d50c3f8301946b5d95f4f6087a8edede27af382fb33efd714",
+      "canonicalDocumentSha256": "5d571f6f428aa78d95c5144f98360a3f23558515fdd8a8c4e2da21013406bdb5",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/UNSTARTED_REVIEW.zip"
+      ],
+      "assignments": [
+        {
+          "id": "39668a4b-d765-419f-98e3-4ed6dcd2c33b",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "2d88815cf4d9a10d5fd4c68bf3c446a2a5049f44c74d841e2ac2571ad5c12a24",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-context-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "b7223f05daf7f1b979530da05ae3a697dc5f8298cabdbe1cc5aea0f55bec0883",
+      "sourceAsRecorded": {
+        "baselineCommit": "1730c1999a81e1d9d5df8bc3b957339fce1a65b4"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/ANSWERED_REVIEW.json",
+      "sha256": "0db07dabd8c90397581da8e3387a4f3ebbb63b79e0949efdfeafbc368c71d816",
+      "canonicalDocumentSha256": "a2eaea2ba1a8b08e5fad2683832c0a0ab5d4e976115676616bd4d249df358215",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/ANSWERED_REVIEW.zip"
+      ],
+      "assignments": [
+        {
+          "id": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BASELINE_CONTEXT.json",
+      "contextSha256": "c1c03da775ab2755b563954d87758c80b55d710890946793771b6a2361450dd6",
+      "sourceAsRecorded": {
+        "baselineCommit": "8e2c6f1a8d3d4b6d1f098bc6e347d36e92e10352"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BEFORE_UNIT13_WORK.json",
+      "sha256": "54e30a25da3b75551c3d7a5d9045ee38a6dae4cfb414d40f82ad5271933439eb",
+      "canonicalDocumentSha256": "ecbd55d4f8221d0fe7c401abd386b455844e0c949ba7c2c9b92a1904bdaf1478",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BEFORE_UNIT13_WORK.zip"
+      ],
+      "assignments": [],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BASELINE_CONTEXT.json",
+      "contextSha256": "c1c03da775ab2755b563954d87758c80b55d710890946793771b6a2361450dd6",
+      "sourceAsRecorded": {
+        "baselineCommit": "8e2c6f1a8d3d4b6d1f098bc6e347d36e92e10352"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT13.json",
+      "sha256": "9c87da43611b500356f814ffa803f73a4e87fb6d63f04c038972be3c9d1f12ea",
+      "canonicalDocumentSha256": "cbdf540150e32c76b7de2aca7f41df2753c8a68bd2f9592649214483a213230b",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT13.zip"
+      ],
+      "assignments": [
+        {
+          "id": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BASELINE_CONTEXT.json",
+      "contextSha256": "c1c03da775ab2755b563954d87758c80b55d710890946793771b6a2361450dd6",
+      "sourceAsRecorded": {
+        "baselineCommit": "8e2c6f1a8d3d4b6d1f098bc6e347d36e92e10352"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT14.json",
+      "sha256": "f27742b4b3f3617d274d28775e85705ff1564664bfc6cf132c7ad13ff5f965ae",
+      "canonicalDocumentSha256": "34b2122dd923bdbe79e8db9b3665e28fb226ca444db965d44aeda93e6032234f",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/COMPLETED_UNIT14.zip"
+      ],
+      "assignments": [
+        {
+          "id": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "schema": 1
+        },
+        {
+          "id": "9df17c54-38a1-4cb1-a5cc-f1d481e6ce60",
+          "targetUnit": 14,
+          "policyId": "unit14-prior-reading-reported-time-v1",
+          "policyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 26,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u13-reported",
+              "skill": "SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION",
+              "itemId": "u13-i-report-frame-time",
+              "ownerUnit": 13,
+              "itemDigest": "d29683b08ebcf92a6af28b42c5f55f00641e3d2f9d3e511949660d858c7d86b5",
+              "unitDigest": "d9bd9745c4f98850c1ab86ebc42a2c5bfee29b7af8754729c5b288a964dd90ee",
+              "teachingDigest": "9207438de1d62c51a9f491d0989f342d3cdcfc4562e683ece7195176dc62caa0"
+            }
+          ],
+          "digest": "a244092ab29657f9b132f3172f01befd7cdd000716275922ca48650a3e675de5",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BASELINE_CONTEXT.json",
+      "contextSha256": "c1c03da775ab2755b563954d87758c80b55d710890946793771b6a2361450dd6",
+      "sourceAsRecorded": {
+        "baselineCommit": "8e2c6f1a8d3d4b6d1f098bc6e347d36e92e10352"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/ORDINARY_UNIT13.json",
+      "sha256": "b30cd8049b6e71598f6c099ac670e169e0490b3c1efd420beb1913b551e13ccf",
+      "canonicalDocumentSha256": "800e0acf38308872bd9742297065e79f1e4ee83e42aa89c53198c4a029fee260",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/ORDINARY_UNIT13.zip"
+      ],
+      "assignments": [],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BASELINE_CONTEXT.json",
+      "contextSha256": "c1c03da775ab2755b563954d87758c80b55d710890946793771b6a2361450dd6",
+      "sourceAsRecorded": {
+        "baselineCommit": "8e2c6f1a8d3d4b6d1f098bc6e347d36e92e10352"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/PARTIAL_REVIEW.json",
+      "sha256": "b0702da0b8d10a9c5e8961875db47676a6434e34a929e71bddf81368d2e6d630",
+      "canonicalDocumentSha256": "d0d219bc1b298f037c89206c8f4fb27af4778a747edd998c72e0a7668f4d1319",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/PARTIAL_REVIEW.zip"
+      ],
+      "assignments": [
+        {
+          "id": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BASELINE_CONTEXT.json",
+      "contextSha256": "c1c03da775ab2755b563954d87758c80b55d710890946793771b6a2361450dd6",
+      "sourceAsRecorded": {
+        "baselineCommit": "8e2c6f1a8d3d4b6d1f098bc6e347d36e92e10352"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/POST_COMPLETION_WRONG.json",
+      "sha256": "a987c17ee5e7b87b7a2f6d35bb529ed5c280372814f175747122ef4127811448",
+      "canonicalDocumentSha256": "02f9cc3ba4c78166f35270d4e92137701ce5e08bddaf036dca2fd08fb068c214",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/POST_COMPLETION_WRONG.zip"
+      ],
+      "assignments": [
+        {
+          "id": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BASELINE_CONTEXT.json",
+      "contextSha256": "c1c03da775ab2755b563954d87758c80b55d710890946793771b6a2361450dd6",
+      "sourceAsRecorded": {
+        "baselineCommit": "8e2c6f1a8d3d4b6d1f098bc6e347d36e92e10352"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/UNSTARTED_REVIEW.json",
+      "sha256": "146eeb164eb11b2a32a4b732fd7a414e40a9a3725d7e6249c81958c3117ae763",
+      "canonicalDocumentSha256": "f2e1d1e76c83145a74f85f38ece25e79f9550bd32873b4e8ce3f72746dc595aa",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/UNSTARTED_REVIEW.zip"
+      ],
+      "assignments": [
+        {
+          "id": "77dc6138-f22c-4bbd-a20f-bd2bb6e6b8c1",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "16b99938d31a78cce3a8be8a7dc718e5537a7186249a387bf6f2c8cf1c35464d",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-history-transition/BASELINE_CONTEXT.json",
+      "contextSha256": "c1c03da775ab2755b563954d87758c80b55d710890946793771b6a2361450dd6",
+      "sourceAsRecorded": {
+        "baselineCommit": "8e2c6f1a8d3d4b6d1f098bc6e347d36e92e10352"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/ANSWERED_REVIEW.json",
+      "sha256": "7d4b09b106fbd91e6baedfbff4d95e79af4b78511d5076c6c4934a5b35f3a13f",
+      "canonicalDocumentSha256": "fb8dbf5db7f0175f4ac6b0efa4261e883c68cf521edeb7a5a4996a56d2014154",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/ANSWERED_REVIEW.zip"
+      ],
+      "assignments": [
+        {
+          "id": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "7396dc2b277f9e4c6b612ad9f73f28198b2325dfbb2059d6a5437cef82f1b75a",
+      "sourceAsRecorded": {
+        "baselineCommit": "03647d041d3d5068d4c77eb88f62403daf6e54ff"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BEFORE_UNIT13_WORK.json",
+      "sha256": "03142a93d9e42125852fa46cfae87104c798c08be241043f43aec2bb3005f53c",
+      "canonicalDocumentSha256": "6b561e06c5dd5017506a735ebbb53d1ca6c6a3538fc4bea20d7dffc1bc9cf9e5",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BEFORE_UNIT13_WORK.zip"
+      ],
+      "assignments": [],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "7396dc2b277f9e4c6b612ad9f73f28198b2325dfbb2059d6a5437cef82f1b75a",
+      "sourceAsRecorded": {
+        "baselineCommit": "03647d041d3d5068d4c77eb88f62403daf6e54ff"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT13.json",
+      "sha256": "292f0489bb47cc99fea22f5ddcbd0101c92e51a92933113022e381c6afba005f",
+      "canonicalDocumentSha256": "e053ffc9c3ad856427720e3ae3d86e844c174be9981a09b611e7f535cac3e372",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT13.zip"
+      ],
+      "assignments": [
+        {
+          "id": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "7396dc2b277f9e4c6b612ad9f73f28198b2325dfbb2059d6a5437cef82f1b75a",
+      "sourceAsRecorded": {
+        "baselineCommit": "03647d041d3d5068d4c77eb88f62403daf6e54ff"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT14.json",
+      "sha256": "b28c07eb6690dc9df694bee72e7a6a3f08231f8d9ea55d5689b6e056d15a13f0",
+      "canonicalDocumentSha256": "80318991a24432a5d5e5bcac1d61fc62ac0e2bba41642b5959a96d977fb9587c",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT14.zip"
+      ],
+      "assignments": [
+        {
+          "id": "5a5f9798-68f0-468b-a038-c9270c45831d",
+          "targetUnit": 14,
+          "policyId": "unit14-prior-reading-reported-time-v1",
+          "policyDigest": "af3df50dc209cdf47b04163e048e907b85d768a78778d46f429cd43c0d5a4d4e",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 26,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u13-reported",
+              "skill": "SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION",
+              "itemId": "u13-i-report-frame-time",
+              "ownerUnit": 13,
+              "itemDigest": "d29683b08ebcf92a6af28b42c5f55f00641e3d2f9d3e511949660d858c7d86b5",
+              "unitDigest": "7385fdd118b5f5cb988ad00832614fa4f15835e26dbbb30cfbbf9379f2340d54",
+              "teachingDigest": "9207438de1d62c51a9f491d0989f342d3cdcfc4562e683ece7195176dc62caa0"
+            }
+          ],
+          "digest": "e7fa05a4074ceeecdb6e4f3e67994d21f17ee04162a3324d5d2a5d8aca657305",
+          "schema": 1
+        },
+        {
+          "id": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "7396dc2b277f9e4c6b612ad9f73f28198b2325dfbb2059d6a5437cef82f1b75a",
+      "sourceAsRecorded": {
+        "baselineCommit": "03647d041d3d5068d4c77eb88f62403daf6e54ff"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/ORDINARY_UNIT13.json",
+      "sha256": "a74862aadb7d2babae2c47c11fbefb87806fef92e3d657fc162dbc614a3ad821",
+      "canonicalDocumentSha256": "fc03eda0c725949a05ee333f2908698b63095778f305b96972a5bef6edfb3fbd",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/ORDINARY_UNIT13.zip"
+      ],
+      "assignments": [],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "7396dc2b277f9e4c6b612ad9f73f28198b2325dfbb2059d6a5437cef82f1b75a",
+      "sourceAsRecorded": {
+        "baselineCommit": "03647d041d3d5068d4c77eb88f62403daf6e54ff"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/PARTIAL_REVIEW.json",
+      "sha256": "a6504f43227067810681960280c6e1be41ad12b0a09d427e4ab063765c09fa56",
+      "canonicalDocumentSha256": "81af6fd8e025957496732bcaf80000e5bd43581dfe43bbd8409724f936524270",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/PARTIAL_REVIEW.zip"
+      ],
+      "assignments": [
+        {
+          "id": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "7396dc2b277f9e4c6b612ad9f73f28198b2325dfbb2059d6a5437cef82f1b75a",
+      "sourceAsRecorded": {
+        "baselineCommit": "03647d041d3d5068d4c77eb88f62403daf6e54ff"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/POST_COMPLETION_WRONG.json",
+      "sha256": "ebd47b9fc2aaa59a2ef9ce15ef2f600e04745a34c11ea3286c2e3ccbcb3506d0",
+      "canonicalDocumentSha256": "cc283e91f3b494990daccf0edccecb14e1914134bd0e9582682d60fb63b470dc",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/POST_COMPLETION_WRONG.zip"
+      ],
+      "assignments": [
+        {
+          "id": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "7396dc2b277f9e4c6b612ad9f73f28198b2325dfbb2059d6a5437cef82f1b75a",
+      "sourceAsRecorded": {
+        "baselineCommit": "03647d041d3d5068d4c77eb88f62403daf6e54ff"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    },
+    {
+      "path": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/UNSTARTED_REVIEW.json",
+      "sha256": "019940c6c289d19af7d46aa52373e2e9e58fc0f28b15bf83aab3a5bab474084f",
+      "canonicalDocumentSha256": "f4c881785668981e98d746530f48f3fdd1d2e9f2cc5cf7e90d7aceb56fe39e2a",
+      "matchingArchivePaths": [
+        "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/UNSTARTED_REVIEW.zip"
+      ],
+      "assignments": [
+        {
+          "id": "8b0b9d2d-ce89-4c2b-afb1-11c554f36de3",
+          "targetUnit": 13,
+          "policyId": "unit13-prior-reading-aspect-partner-v1",
+          "policyDigest": "3b84fa8ac1c7e203482b7e94456c13c7a94b523af6fc09583f0c2cd47484f441",
+          "responseRuleDigest": "8027df7ce3cb630037e420f726b1c2428e97c09a496052d0b61b34dbf43db23e",
+          "boundary": 22,
+          "slots": [
+            {
+              "objectiveId": "obj-u1-decoding",
+              "skill": "BOUNDED_READING",
+              "itemId": "u1-i-decode-pair",
+              "ownerUnit": 1,
+              "itemDigest": "499ce11c769baa91d9dab9cac7201c7d8a9eae8529fe53a1e29b87c1207f4e64",
+              "unitDigest": "161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7",
+              "teachingDigest": "3571bfc8e2ad5f3bc351fa14b0735668a621e6ad04dbadb36f95452657325ea5"
+            },
+            {
+              "objectiveId": "obj-u12-aspect",
+              "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+              "itemId": "u12-i-aspect-1",
+              "ownerUnit": 12,
+              "itemDigest": "3a612081fec4887c5da28c6c00ddc03ffcab47b38d18b2c0ee22bc7be3ca20b6",
+              "unitDigest": "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97",
+              "teachingDigest": "09a72ea133292ab5da1e2752759d3fb3ea84aebee31a3877da7724b98cfacbaa"
+            }
+          ],
+          "digest": "1ad719b08fce2cedb54884312a23077161e75b8c5d15822e31c8d55b080f9dfe",
+          "schema": 1
+        }
+      ],
+      "contextPath": "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/BASELINE_CONTEXT.json",
+      "contextSha256": "7396dc2b277f9e4c6b612ad9f73f28198b2325dfbb2059d6a5437cef82f1b75a",
+      "sourceAsRecorded": {
+        "baselineCommit": "03647d041d3d5068d4c77eb88f62403daf6e54ff"
+      },
+      "attribution": "Historical baseline context only;not a fresh current-v2 producer or replay result."
+    }
+  ],
+  "standaloneUnit13PolicySchemaCounts": {
+    "1:unit13-prior-reading-aspect-partner-v1": 18
+  },
+  "standaloneDocumentsAreArchiveDuplicatesNotExtraEvidence": true,
+  "unit13Owner12Digests": {
+    "1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97": 18
+  },
+  "unit13Owner11Digests": {},
+  "unit14Owner13Digests": {
+    "d096b1457d65d756fb9af088488b2808ddb81fad85455c4854a835dedcdd2baa": 1,
+    "d9bd9745c4f98850c1ab86ebc42a2c5bfee29b7af8754729c5b288a964dd90ee": 1,
+    "7385fdd118b5f5cb988ad00832614fa4f15835e26dbbb30cfbbf9379f2340d54": 1
+  }
+}

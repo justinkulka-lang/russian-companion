@@ -1,0 +1,31 @@
+{
+  "verified": true,
+  "deliveryCommit": "5dfc303f3928f996dedfccd0afa7a030cd3eb6cc",
+  "parent": "e2d09925c1eb90cb1db0a427ef03c77e62b9a005",
+  "files": 9,
+  "checksums": {
+    "CLARIFICATIONS.md": "f4924563531cbf4bf509e5717fd02b148a0ec811a32a5e9808146bfd453c1c50",
+    "CORRECTION_BOUNDARIES.md": "fa5111530ba1a8376614da20e252d2b510d8fad5a1dee64095b96f08fefb304a",
+    "CURSOR_ACTUAL_FAILURE_RECONCILIATION.csv": "eaee468db95c2436ea771a20022c334e446d3d758721155791cac9623bb68f73",
+    "CURSOR_ACTUAL_FAILURE_RECONCILIATION.md": "fe4cc3c8fb5e07856eeb2ff0063e36b122f88ebed6f0472cdb1ae519fdd2550d",
+    "FAILURE_EVIDENCE_MAP.csv": "61b163c92da5f96983cbffac9942705d1a280927ac60c21f7d1a459458d4b722",
+    "FOLLOWUP_SCOPE.csv": "59515c68d269928d4e37446b904a8303b763c240003772164fad717cad71bac8",
+    "PACKAGE_VERIFICATION.json": "9585f86354db9c591ecdebc790e2d1fc3077010e93aecd5880f9e98e2ce5c0b1",
+    "START_HERE.md": "6ace27e15506b3b2eae6ded1e00d25647d208cb9a16d141f2b4898b512e82ef8"
+  },
+  "groupRows": 15,
+  "failureRows": 60,
+  "followupMethods": 119,
+  "followupClasses": 17,
+  "roles": {
+    "control": 14,
+    "failed": 60,
+    "passed_sibling": 45
+  },
+  "fullFailureHashesAndSourceLinesMatch": true,
+  "all119SourceMethodsAndOriginalOutcomesMatch": true,
+  "newExecution": false,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

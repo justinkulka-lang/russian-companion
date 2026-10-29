@@ -1,0 +1,145 @@
+{
+  "actualSource": "e31158998d81817f7bbcf44a7c2808aba5a8f917",
+  "originalScope": "395reported/386passed/8failed/0errors/1physicalskip,71classes,exit1",
+  "allEightCompleteXmlMessagesReadAndHashMatched": true,
+  "failures": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10BindingConservationTest",
+      "method": "kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord",
+      "xmlMember": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit10BindingConservationTest.xml",
+      "xmlSha256": "acfdc38b93fc6a4dc8fcc9f8a450fc3ef585be64cd7b732d99e42be342ce6264",
+      "messageBytes": 50,
+      "messageSha256": "1a21b94d9852088c9ea77e43524bc057206e219fe36893e5389a73ae3d9273b0",
+      "sourceFrames": [
+        "at dev.russiancompanion.v2.Unit10BindingConservationTest.kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord(Unit10BindingConservationTest.kt:66)"
+      ],
+      "expectedValueBytes": 1,
+      "actualValueBytes": 1,
+      "expectedSha256": "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
+      "actualSha256": "e7f6c011776e8db7cd330b54174fd76f7d0216b612387a5ffcfb81e6f0919683",
+      "expectedValue": "5",
+      "actualValue": "6"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10BindingConservationTest",
+      "method": "currentDeclarationReconstructsOnlyUnit10ThenEveryGenuineEarlierPack",
+      "xmlMember": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit10BindingConservationTest.xml",
+      "xmlSha256": "acfdc38b93fc6a4dc8fcc9f8a450fc3ef585be64cd7b732d99e42be342ce6264",
+      "messageBytes": 2023806,
+      "messageSha256": "8197e088961138c05d11f221325a4e8e095bfceb7033292f26e440809faaa63a",
+      "sourceFrames": [
+        "at dev.russiancompanion.v2.Unit10BindingConservationTest.currentDeclarationReconstructsOnlyUnit10ThenEveryGenuineEarlierPack(Unit10BindingConservationTest.kt:19)"
+      ],
+      "expectedValueBytes": 1011882,
+      "actualValueBytes": 1011876,
+      "expectedSha256": "d88f179be77b88014786038c1a4bd92ee31abe40e594ed7a7d49f415a73dc7c0",
+      "actualSha256": "784a008653f22b35eaff8a07a3dd585bb2801a327dc30151ce78094e659ac5fe",
+      "exactWholeValueDifference": {
+        "expectedToken": "unit11-prior-noun-behavior-possession-absence-v2",
+        "actualToken": "unit11-prior-reading-possession-absence-v1",
+        "occurrences": 1,
+        "everyOtherValueByteExact": true
+      }
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+      "method": "exactPriorDeclarationRefusesSchemaTwelveAndPreservesDownstreamOwnerIdentity",
+      "xmlMember": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit10PresentCompatibilityTest.xml",
+      "xmlSha256": "f3ec01587cee09abe4999d66336973c5024acdd6542208174a971fdd0f949aff",
+      "messageBytes": 62178620,
+      "messageSha256": "fc39e5831c22677780514bf494ded23f902a473963d82ddb9c331b2f2cdae4e4",
+      "sourceFrames": [
+        "at dev.russiancompanion.v2.Unit10PresentCompatibilityTest.exactPriorDeclarationRefusesSchemaTwelveAndPreservesDownstreamOwnerIdentity(Unit10PresentCompatibilityTest.kt:31)"
+      ],
+      "expectedValueBytes": 31089253,
+      "actualValueBytes": 31089259,
+      "expectedSha256": "a428ea3687fb7b1f23bbff7624b570f1393dcb618d36df7c0e8a4efc9dc65e8d",
+      "actualSha256": "f419bf8ba3f61e1f3dcca78d3ca1da2913dacf7be3edf6bfdc18d0351089aec2",
+      "exactWholeValueDifference": {
+        "expectedToken": "unit11-prior-reading-possession-absence-v1",
+        "actualToken": "unit11-prior-noun-behavior-possession-absence-v2",
+        "occurrences": 1,
+        "everyOtherValueByteExact": true
+      }
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit11AgreementRemediationTest",
+      "method": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "xmlMember": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit11AgreementRemediationTest.xml",
+      "xmlSha256": "495a73da28e90b06018bf5182ce10f573ce022548a416c20bbca214316a2fe68",
+      "messageBytes": 46194,
+      "messageSha256": "6f8a16c6ceb931e188ff9bc73567841ff850a0ed638ce2be2fc7daf3feff8bf4",
+      "sourceFrames": [
+        "at dev.russiancompanion.v2.Unit11AgreementRemediationTest.unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException(Unit11AgreementRemediationTest.kt:47)"
+      ],
+      "expectedValueBytes": 23070,
+      "actualValueBytes": 23076,
+      "expectedSha256": "80b47dfee9863efa5f53087f2f10a7170247befe381fd83fc8fa9f5b70b56f5f",
+      "actualSha256": "b09908d32f88e374d79e564ebf1beef8444083b78996119d918eae766a9dbc80",
+      "exactWholeValueDifference": {
+        "expectedToken": "unit11-prior-reading-possession-absence-v1",
+        "actualToken": "unit11-prior-noun-behavior-possession-absence-v2",
+        "occurrences": 1,
+        "everyOtherValueByteExact": true
+      }
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit11CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "xmlMember": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit11CumulativeReviewTest.xml",
+      "xmlSha256": "8d5d2a78c70b581a94ecfae0e98dd6643f250ef00a368b5d1ca0f0908d9ec525",
+      "messageBytes": 114,
+      "messageSha256": "21df5e64bd19438ed72f248aebd117dab50602cb70b1a2b66c07bffcf5b2cc29",
+      "sourceFrames": [
+        "at dev.russiancompanion.v2.Unit11CumulativeReviewTest.ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup(Unit11CumulativeReviewTest.kt:35)"
+      ],
+      "expectedValueBytes": 31,
+      "actualValueBytes": 35,
+      "expectedSha256": "47e60749f0a69f8ec99da722678c1122eafaf96fdf86b634665736c6722d9b7b",
+      "actualSha256": "c45962824e09b6dbb4a137fcd9935cd58ede4be1238f16807df9ba6a95b04dd5",
+      "expectedValue": "[obj-u1-decoding, obj-u10-have]",
+      "actualValue": "[obj-u5-indeclinable, obj-u10-have]"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit11CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit10RepairsTheMissingOwnerInsteadOfUnit1",
+      "xmlMember": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit11CumulativeReviewTest.xml",
+      "xmlSha256": "8d5d2a78c70b581a94ecfae0e98dd6643f250ef00a368b5d1ca0f0908d9ec525",
+      "messageBytes": 703,
+      "messageSha256": "42bebac39c7e7a62fe55b0a3738f94c7b18a1e4164828896c25c5f1c10b8ccc9",
+      "sourceFrames": [
+        "at dev.russiancompanion.v2.Unit11CumulativeReviewTest.placementWithTaughtUnit1ButUntaughtUnit10RepairsTheMissingOwnerInsteadOfUnit1(Unit11CumulativeReviewTest.kt:212)"
+      ],
+      "fullBoundedMessage": "java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [Open earlier Unit 10 instruction and checks])\nSemantics of the node:\nNode #1166 at (l=24.0, t=148.0, r=296.0, b=200.0)px, Tag: 'v2-review-repair'\nFocused = 'false'\nRole = 'Button'\nShape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'\nText = '[Open earlier Unit 5 instruction and checks]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]\nMergeDescendants = 'true'\nHas 3 siblings\nSelector used: (TestTag = 'v2-review-repair')\n"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit11CumulativeReviewTest",
+      "method": "actualUnit11ContinuePossessionAbsenceCueTeachingPracticeReturnAndAdvanceStayOnUnit11",
+      "xmlMember": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit11CumulativeReviewTest.xml",
+      "xmlSha256": "8d5d2a78c70b581a94ecfae0e98dd6643f250ef00a368b5d1ca0f0908d9ec525",
+      "messageBytes": 140,
+      "messageSha256": "a2e4b99c3536a85ae47ac967db6fdcd29bfe5795d1ec7f5c974e4c720353bde3",
+      "sourceFrames": [
+        "at dev.russiancompanion.v2.Unit11CumulativeReviewTest.actualUnit11ContinuePossessionAbsenceCueTeachingPracticeReturnAndAdvanceStayOnUnit11(Unit11CumulativeReviewTest.kt:178)"
+      ],
+      "fullBoundedMessage": "java.lang.AssertionError: Values should be different. Actual: In this line, the possessor is genitive and the possessed thing is nominative."
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+      "xmlMember": "REGRESSION/XML/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml",
+      "xmlSha256": "d527ffc4086e779e82efab0350d5128eb81013a988ab78b5aa8ce11c650ddee0",
+      "messageBytes": 191,
+      "messageSha256": "1ebc6211589ab7f178b9deb8428e6525d8b06be355f944630ebd3c0e812ecdf4",
+      "sourceFrames": [
+        "at dev.russiancompanion.v2.Units2630SourceIntakeTest.generatedRussianPenguinAudioAndReleaseStayClosed(Units2630SourceIntakeTest.kt:579)"
+      ],
+      "expectedValueBytes": 66,
+      "actualValueBytes": 66,
+      "expectedSha256": "a685bfc45641853c912930de68bb2f56c94bb92f710808f177e04b66ee756885",
+      "actualSha256": "78329ed91cec16773fa255b658dc3846b7037238e86c53eb0c61e737b4689ac1",
+      "expectedValue": "[35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69]",
+      "actualValue": "[1d4c25c25e20b7fb6629995fcfb66e29f02554e276c5a7f5ec69fb5ac0a2ca5c]"
+    }
+  ]
+}

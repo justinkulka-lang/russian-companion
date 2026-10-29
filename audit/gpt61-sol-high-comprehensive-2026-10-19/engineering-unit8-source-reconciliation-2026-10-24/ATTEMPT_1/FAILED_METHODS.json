@@ -1,0 +1,56 @@
+[
+  {
+    "testClass": "dev.russiancompanion.v2.Unit7BindingConservationTest",
+    "method": "currentDeclarationReconstructsEachGenuinePrecedingWholePackAndNothingElse",
+    "outcome": "FAILED",
+    "seconds": "2.855",
+    "messagePreview": "java.lang.AssertionError: expected:<[V2Unit(number=1, id=unit-1, title=Learning to read Russian, shortLabel=Printed letters, topicSummary=Content-complete development unit for printed letters: identities, print pairs, look-alikes, signs, and letter-level decoding. Qualified review and the owned-edition mapping are still pending., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=1, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed Lesson 1 mapping from the publisher's public table of contents. Owned-edition comparison is not signed, so this unit is not labeled aligned., prerequisiteUnitNumbers=[], estimatedMinutes=152, objectives=[V2Objective(id=obj-u1-letter-identity, unitNumber=1, title=Identify staged printed letters, kind=RECOGNITION, instructionStepIds=[u1-st-vowels, u1-st-cons, u1-st-system], exampleIds=[ex-letter-0410, ex-letter-0411, ex-letter-0413, ex-letter-0414, ex-letter-0416, ex-letter-0417, ex-letter-0418, ex-letter-041a, ex-",
+    "fullMessageBytes": 1992910,
+    "fullMessageSha256": "866b0f126b67b13c13ae771d3854735adc35908c2dce93ac77aad1e8fec95b31"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+    "method": "exactPriorDeclarationRefusesSchemaNineAndPreservesDownstreamOwnerIdentity",
+    "outcome": "FAILED",
+    "seconds": "1.418",
+    "messagePreview": "java.lang.AssertionError: The genuine old pack differs only by the Unit7 declaration expected:<V2CurriculumPack(schemaVersion=1, packId=v2-curriculum-foundation, packVersion=3, publicReleaseEligible=false, linguisticReview=V2ReviewRecord(id=rev-pending-v2-curriculum, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=Pack-level status is not a unit approval. Each unit has its own pending review record., reviewChainStages=[], evidence=null, finalAudit=null), unitReviews=[V2UnitReviewRecord(id=rev-pending-unit-1, unitNumber=1, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=No qualified reviewer has signed Unit 1., reviewChainStages=[], evidence=null, finalAudit=null), V2UnitReviewRecord(id=rev-pending-unit-2, unitNumber=2, status=IMPLEMENTED_PENDING_FINAL_AUDIT, revie",
+    "fullMessageBytes": 62178603,
+    "fullMessageSha256": "86cfc1d96f85325f1666e733f7749880821000d8907c3967cfc41bc0b88fbc4a"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+    "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+    "outcome": "FAILED",
+    "seconds": "6.457",
+    "messagePreview": "java.lang.AssertionError: expected:<[obj-u1-decoding, obj-u7-endings]> but was:<[obj-u4-present, obj-u7-endings]>",
+    "fullMessageBytes": 113,
+    "fullMessageSha256": "edd95f88db965a8ec92476d8f86aebf229bde7e947c999a2f4eee7da9ade828b"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit8CumulativeReviewTest",
+    "method": "placementWithTaughtUnit1ButUntaughtUnit7RepairsTheMissingOwnerInsteadOfUnit1",
+    "outcome": "FAILED",
+    "seconds": "0.55",
+    "messagePreview": "java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [Open earlier Unit 7 instruction and checks])\nSemantics of the node:\nNode #2291 at (l=24.0, t=148.0, r=296.0, b=200.0)px, Tag: 'v2-review-repair'\nFocused = 'false'\nRole = 'Button'\nShape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'\nText = '[Open earlier Unit 4 instruction and checks]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]\nMergeDescendants = 'true'\nHas 3 siblings\nSelector used: (TestTag = 'v2-review-repair')\n",
+    "fullMessageBytes": 702,
+    "fullMessageSha256": "a1981ee7f04e4c048805a6df8dfeb0bdde678e1af91e858e94a64531dbbec264"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+    "method": "matrixUsesCanonicalDigestsReviewsAndDoesNotInventApproval",
+    "outcome": "FAILED",
+    "seconds": "33.56",
+    "messagePreview": "java.lang.AssertionError: expected:<V2Unit(number=8, id=unit-8, title=Plurals, first spelling rules, existence questions, and buying things, shortLabel=Plurals, topicSummary=Proposed Unit 8 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=8, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment., prerequisiteUnitNumbers=[7], estimatedMinutes=78, objectives=[V2Objective(id=obj-u8-plural, unitNumber=8, title=Recognize supplied singular and plural nominative noun forms, kind=RECOGNITION, instructionStepIds=[u8-st-orient, u8-st-teach-plural-1, u8-st-teach-plural-2, u8-st-teach-plural-3, u8-st-",
+    "fullMessageBytes": 82422,
+    "fullMessageSha256": "7661c5777995ec667257c4ad5b3afc0aa065279dedca8cb293017c1d9bd9ae87"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+    "method": "dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease",
+    "outcome": "FAILED",
+    "seconds": "39.143",
+    "messagePreview": "java.lang.AssertionError: expected:<V2Unit(number=8, id=unit-8, title=Plurals, first spelling rules, existence questions, and buying things, shortLabel=Plurals, topicSummary=Proposed Unit 8 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=8, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed lesson mapping remains pending. The structural edition facts are recorded separately. This proposed curriculum is not an approved alignment., prerequisiteUnitNumbers=[7], estimatedMinutes=78, objectives=[V2Objective(id=obj-u8-plural, unitNumber=8, title=Recognize supplied singular and plural nominative noun forms, kind=RECOGNITION, instructionStepIds=[u8-st-orient, u8-st-teach-plural-1, u8-st-teach-plural-2, u8-st-teach-plural-3, u8-st-",
+    "fullMessageBytes": 82422,
+    "fullMessageSha256": "7661c5777995ec667257c4ad5b3afc0aa065279dedca8cb293017c1d9bd9ae87"
+  }
+]

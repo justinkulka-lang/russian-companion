@@ -1,0 +1,190 @@
+{
+  "DISCOVERY/CONTEXT.json": {
+    "bytes": 3192,
+    "sha256": "cc79f4b18447f47a158c642b26359f10d0d5bc204cb2ef1130db0be4d73f4be3"
+  },
+  "DISCOVERY/EVENTS.jsonl": {
+    "bytes": 9496,
+    "sha256": "f3f5a2b595423ad6636e83858eb054d592bdf9f0ffeed5ef1b2d556070009909"
+  },
+  "DISCOVERY/RESULT.json": {
+    "bytes": 7944,
+    "sha256": "b3e4490d17d5c907a540612902178b18e082a8d9837399359719bc74f6c8c4b8"
+  },
+  "DISCOVERY/RESULTS.csv": {
+    "bytes": 3103,
+    "sha256": "0945cb1603963d2f8bebfa7ca54ea3072392086c425f93c09e48f81265681152"
+  },
+  "DISCOVERY/RUN.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "DISCOVERY/RUN.log": {
+    "bytes": 5473,
+    "sha256": "63f133198d500c025e83cdfe9cb78433f96428d092648177d80a2f114950e1f6"
+  },
+  "DISCOVERY/SHA256.json": {
+    "bytes": 1098,
+    "sha256": "45aee0277a90ed392af94d6ff655e3c683f5ee660218ec9eb112ffef39286122"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit12GenderCompatibilityTest.xml": {
+    "bytes": 1707,
+    "sha256": "1b2bb37883920061e3b2d2330105a41ef8dcf7a6d3704e774f264eebe2000486"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit12GenderReviewBaselineTest.xml": {
+    "bytes": 728,
+    "sha256": "0f9241e74fec883b9433148fa6561a9044d1e479e61f25edec2dbd8d761037d6"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit12GenderReviewUiTest.xml": {
+    "bytes": 1484,
+    "sha256": "c9e73235cec4259cc78861be78681cab27ee385c02782c9d4b0feb4d0bbedce1"
+  },
+  "DISCOVERY/gc-466301.log": {
+    "bytes": 179,
+    "sha256": "f953aae03ca0cd41db98ef479e5f2cb91ad20c0c7174f11c7502d78083190950"
+  },
+  "DISCOVERY/gc-466303.log": {
+    "bytes": 179,
+    "sha256": "39b6b1612593ca8d69849fb2c1eb176ee88bb9301ab45fba6f371a7a11077749"
+  },
+  "DISCOVERY_COMPLETION.json": {
+    "bytes": 208,
+    "sha256": "8cf2f4680d24776bb064d1985d0724b08e15c3613ebd0f30fd05ffcc61cc03b7"
+  },
+  "DISCOVERY_LAUNCHER.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "DISCOVERY_LAUNCHER.json": {
+    "bytes": 157,
+    "sha256": "814220baa3c3f2540b298506cc8fd2db74766ee56fb3e8c7d813984a4a2e7610"
+  },
+  "DISCOVERY_LAUNCHER.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "DISCOVERY_RUNNER.log": {
+    "bytes": 213,
+    "sha256": "1bc952b69fbe42072527b4be8e3d247a3faeed227256396a4f4c8a60b74b051b"
+  },
+  "DISCOVERY_RUNNER_PROCESS.json": {
+    "bytes": 280,
+    "sha256": "3f11d4d865c030e1fd060ef0af0d4d5b8350bba4d3d11ea5c237e5ce947cdf70"
+  },
+  "DURABLE_MONITOR.log": {
+    "bytes": 22073,
+    "sha256": "5019af6dc5c2bc67881c464123389a37665358c6ae42d6812bab054b3ebadf2f"
+  },
+  "DURABLE_MONITOR_STATUS.json": {
+    "bytes": 517,
+    "sha256": "2992f516f7d44ce2fabc144f484bd80e539349de9eefc6d2380fde206d3b1476"
+  },
+  "INIT/broader-tests.gradle": {
+    "bytes": 1905,
+    "sha256": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "INIT/cloud-validation.gradle": {
+    "bytes": 788,
+    "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123"
+  },
+  "INIT/resources.gradle": {
+    "bytes": 746,
+    "sha256": "9f6303b4e593fc1af88bdac7bc3a21901b8c5336c38fef71102a0026380109e5"
+  },
+  "REGRESSION/CONTEXT.json": {
+    "bytes": 3273,
+    "sha256": "687ec1adeba3004e17d3878bfdbdd4207a9be1910f389f473f92860e7f8a7c2d"
+  },
+  "REGRESSION/EVENTS.jsonl": {
+    "bytes": 9496,
+    "sha256": "0dc31eb8195ce16891d590b4c793d1cf69773ec015988a6744f4bffe2dd23c88"
+  },
+  "REGRESSION/LINT.xml": {
+    "bytes": 31476,
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "REGRESSION/RESULT.json": {
+    "bytes": 8298,
+    "sha256": "3145bc715a1c23b78485f7a387cdd246bf77bb458e4ca9971da3fbefdde8a699"
+  },
+  "REGRESSION/RESULTS.csv": {
+    "bytes": 3129,
+    "sha256": "2dd20a8daed9d16d315a727843a601c4484f71e9f387edc74d9091d0818a5018"
+  },
+  "REGRESSION/RUN.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "REGRESSION/RUN.log": {
+    "bytes": 4332,
+    "sha256": "a3e2b759c9b5cad65a56fcff166986ee6602fd5af7722f0e0441b3e964e1574a"
+  },
+  "REGRESSION/SHA256.json": {
+    "bytes": 1276,
+    "sha256": "9be66d893e297c2b6f5f776061aece3b22669aa57ede2f06b66710f14628df60"
+  },
+  "REGRESSION/THREAD_466538_0707.txt": {
+    "bytes": 31322,
+    "sha256": "18ae87b2efbd826df844ece00671f8c7c83dcfbea4831dd066ec554820a85452"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit12GenderCompatibilityTest.xml": {
+    "bytes": 1533,
+    "sha256": "284ba72863d08f76919bc85bdd03cceed910dc6dd6403ad2012a2a601a75eea2"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit12GenderReviewBaselineTest.xml": {
+    "bytes": 844,
+    "sha256": "006842a5be7b45f4e2934ef8b5f1a53a80c8152e1ee6d7db7fbd98888b0c7c4e"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit12GenderReviewUiTest.xml": {
+    "bytes": 1331,
+    "sha256": "e474a8f5f50fe5f64707522683d108c414a284ae0e68bda45c0451df576eaf46"
+  },
+  "REGRESSION/gc-466538.log": {
+    "bytes": 202237,
+    "sha256": "663473c150fd20113bae77eda44234df419c5748e0caab38b34fdbaa7993349d"
+  },
+  "REGRESSION/gc-466540.log": {
+    "bytes": 19799,
+    "sha256": "4d53ae5b2038ecd526b481e743694b65fa8c723e48a873b914f2b8ed608a2c3a"
+  },
+  "REGRESSION_COMPLETION.json": {
+    "bytes": 208,
+    "sha256": "6d5e41b6e5ac8f5b8d192bd2952cc0c091b2efc4c55455bbe906ac02200d3db4"
+  },
+  "REGRESSION_LAUNCHER.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "REGRESSION_LAUNCHER.json": {
+    "bytes": 158,
+    "sha256": "ea2874eff9f2cf77f7aefd0b8f0ed0f7c82a3a2c181a2e54a0171b0eea5292b0"
+  },
+  "REGRESSION_LAUNCHER.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "REGRESSION_RUNNER.log": {
+    "bytes": 213,
+    "sha256": "a8edbda0795b8f9b885fc4ea156506b9ae10748552e94f685bfb503774a25328"
+  },
+  "REGRESSION_RUNNER_PROCESS.json": {
+    "bytes": 281,
+    "sha256": "6c5c41e8e571ba49f082d857975f090c4838d17894f0a6009f30aba6b19d428a"
+  },
+  "durable_monitor.py": {
+    "bytes": 2660,
+    "sha256": "9fd999cb7dc612bd36f907113ef9a95fe78ce2a94b6bf588e05ae8c1eefe9d0b"
+  },
+  "resources.gradle": {
+    "bytes": 746,
+    "sha256": "9f6303b4e593fc1af88bdac7bc3a21901b8c5336c38fef71102a0026380109e5"
+  },
+  "run.py": {
+    "bytes": 7222,
+    "sha256": "6b9e340bcc80689e7af405eda8eaafca95c0f1b1877a6e66384a2eb1807f85bc"
+  },
+  "supervise.py": {
+    "bytes": 1197,
+    "sha256": "49346dac8349205097c4ca0b28482edfa4180ff483051b785834e8bc62613614"
+  }
+}

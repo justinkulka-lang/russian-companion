@@ -34,7 +34,8 @@ class Unit14CumulativeReviewTest {
     }
 
     @Test fun ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup() {
-        val p = pack()
+        // Preserve this exact v1 contract; full-pack proof and unchanged current v2 controls remain required.
+        val p = RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(root(), pack())
         ready(p).use { s ->
             val earlier = s.cumulativeReviewHistory().first.single { it.targetUnit == 13 }
             assertEquals(13, earlier.targetUnit)
@@ -79,6 +80,8 @@ class Unit14CumulativeReviewTest {
             }
             assertFalse(cumulativeReviewComplete(p, s.v2LearnerView(), 14))
             answer(p, s, a, 0); answer(p, s, a, 1)
+            // Current v2 requires every declared slot before testing stale answers and transactional rollback.
+            a.slots.indices.drop(2).forEach { answer(p, s, a, it) }
             assertTrue(advancementDecision(p, p.unit(14)!!, s.v2LearnerView()).allowed)
             answer(p, s, a, 1, correct = false)
             assertTrue(runCatching { advance(p, s) }.isFailure)
@@ -172,7 +175,8 @@ class Unit14CumulativeReviewTest {
     }
 
     @Test fun actualUnit14ContinueReportedTimeCueTeachingPracticeReturnAndAdvanceStayOnUnit14() {
-        val p = pack()
+        // Preserve this exact v1 contract; full-pack proof and unchanged current v2 controls remain required.
+        val p = RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(root(), pack())
         ready(p).use { s ->
             compose.setContent { V2App(s, p, {}) }
             waitTag("v2-continue"); compose.onNodeWithTag("v2-continue").performClick()
@@ -215,7 +219,8 @@ class Unit14CumulativeReviewTest {
     }
 
     @Test fun placementWithTaughtUnit1ButUntaughtUnit13RepairsTheMissingOwnerInsteadOfUnit1() {
-        val p = pack()
+        // Preserve this exact v1 contract; full-pack proof and unchanged current v2 controls remain required.
+        val p = RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(root(), pack())
         isolatedStore("case").use { s ->
             for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
             s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 14, startingPoint = "RESUME_FROM_BOOK"))

@@ -1,0 +1,45 @@
+{
+  "inputTrees": {
+    "app/src/main": "3dc6e95950fa42c016cd958bebc291048e6a6644",
+    "app/src/test": "82a4e2b8b40483759a68a30579faebd1ce7eaa44",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "4bc1e7678565cdbefcf31c7fc4e5272d8e749fd7",
+    "release": "c03bb8dbc3025ef83f463c6a8521526b09da8e42"
+  },
+  "selectors": [
+    "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+    "dev.russiancompanion.v2.OnboardingStateRestorationTest"
+  ],
+  "expectedMethods": [
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "lessonExplainsEachSelectedWrongValueWithoutChangingGradingOrCommonFeedback"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "optionalPracticeExplainsTheSubmittedWrongValueWithoutRequiredCredit"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "assignedReviewExplainsTheSelectedWrongValueWithoutCompletingItsSlot"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "lessonOptionHasMergedLabelRoleSelectionAndClickSemantics"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+      "method": "currentPageAndAllDraftChoicesSurviveSavedInstanceStateRestore"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+      "method": "failedSaveAndRestoreKeepReadyDraftWithoutSubmittingItAutomatically"
+    }
+  ],
+  "methodCount": 6,
+  "classes": 2,
+  "inventoryOnlyUntilFreshDiscovery": true,
+  "baselineExpectedDistribution": "hypothesis:3missing separate rationale nodes +2state failures +1semantics pass; actual outcomes required",
+  "completeSuite": false
+}

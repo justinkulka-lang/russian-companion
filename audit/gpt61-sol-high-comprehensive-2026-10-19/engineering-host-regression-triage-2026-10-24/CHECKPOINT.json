@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-24T01:47:42.658161+00:00",
+  "state": "VERIFIED_BROAD_BASELINE_NEXT_LARGE_CORRECTION_TASK",
+  "runtimeSourceCommit": "b07432aada33a636d1ab547f8537da02208649ec",
+  "verifiedEvidenceCommit": "4d13b67375bf25b1e6da37b0b174586963459bca",
+  "broadCounts": {
+    "reported": 1363,
+    "passed": 1347,
+    "failed": 15,
+    "errors": 0,
+    "skipped": 1
+  },
+  "classes": 229,
+  "exitCode": 1,
+  "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "failedClasses": 9,
+  "failedClassMethodInventory": 54,
+  "groups": {
+    "EXACT_FILE_REFERENCE_MANIFEST": 5,
+    "WHOLE_PACK_HISTORICAL_EQUALITY": 1,
+    "CURRENT_UNIT6_VERSIONED_REVIEW_CONTRACT": 2,
+    "SHARED_UNIT7_CURRENT_PACK_HELPER": 4,
+    "OTHER_UNIT_CONSERVATION": 1,
+    "HISTORICAL_UNIT_DIGEST": 2
+  },
+  "preparedThreeFileProposal": "NOT_APPLIED_NOT_COMPILED_NOT_TESTED_INSUFFICIENT_FOR_EXPANDED_FAILURE_SCOPE",
+  "proposalOriginalSourceHashesStillMatch": true,
+  "sourceCorrectionsApplied": false,
+  "testsExecutedByTriage": 0,
+  "independentAudit": "INCOMPLETE_ALL48_OPEN",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "completeSuite": false
+}

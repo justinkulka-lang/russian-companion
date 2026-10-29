@@ -1,0 +1,53 @@
+{
+  "observedUtc": "2026-10-27T20:13:51.547550+00:00",
+  "runtimeSource": "75e2d31c441e87e7f53c550b2bf34e9804737bfb",
+  "inputTrees": {
+    "app/src/main": "aeeb035f6017bf70852fd7fb2b6aec42789eebed",
+    "app/src/test": "71832f9f61e23cf95a542a36287662d99cd4a787",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "cd675aa8a3ad33a90d9001fe6f67b2de2e5d7ac7",
+    "release": "9d9047b8297cba1d5855a7f7809c441b2f8edcf7"
+  },
+  "originalExpectedMethods": 481,
+  "originalExpectedClasses": 83,
+  "completedPartialEventCount": 316,
+  "partialEventCounts": {
+    "SKIPPED": 1,
+    "SUCCESS": 309,
+    "FAILURE": 6
+  },
+  "activeWithoutResult": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PresentCompatibilityTest",
+      "method": "exactPriorDeclarationsRefuseNewTasksAndPreserveBothUnit14OwnerBindings",
+      "startedMillis": 1793127880989
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "method": "notPreparedUnitsCannotAdvanceAndReadinessChangeDoesNotClearOtherBlockers",
+      "startedMillis": 1793128185960
+    }
+  ],
+  "missingOriginalProcesses": [
+    549058,
+    549061,
+    549091,
+    549123,
+    549124,
+    552850,
+    552929
+  ],
+  "underlyingExit": null,
+  "finalResult": null,
+  "stopCause": "UNCONFIRMED; exec-server transport disconnected, subsequently all original processes absent",
+  "lastResultUtc": "2026-10-27T19:09:45.960000+00:00",
+  "freshFinalXml": "NOT_AVAILABLE; observed build result files are preserved but not accepted as final runtime results",
+  "originalCompletionWorker": "DEAD_WITHOUT_RESULT; historical lock preserved, not reused",
+  "continuationMethods": 165,
+  "continuationClasses": 28,
+  "originalFailureCount": 6,
+  "originalFailuresNotWaived": true,
+  "completeSuite": false,
+  "countsNotSummed": true
+}

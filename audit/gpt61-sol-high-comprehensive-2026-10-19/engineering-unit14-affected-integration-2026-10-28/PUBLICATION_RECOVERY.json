@@ -1,0 +1,26 @@
+{
+  "recoveredUtc": "2026-10-28T17:34:10.576506+00:00",
+  "testedSource": "dd736e1a8657bd02a34063752afd82146ab2f842",
+  "rejectedUnpublishedCommit": "d9ad33ec63df2212a81b05468c837f648fa1894b",
+  "remoteAtRejection": "dd736e1a8657bd02a34063752afd82146ab2f842",
+  "originalFileBytes": 147185270,
+  "originalFileSha256": "ca6e78b5e77094119edd207a02b6e6e6f84e39ff4a9381baa394fdaa9a736508",
+  "exactFullFailureStorage": {
+    "format": "LOSSLESS_ZIP",
+    "archive": "ACTUAL_FAILURES_FULL.zip",
+    "archiveSha256": "d21ba2b001807b92be80f07dd98623fc636e52460dea2c6e538633c15b204532",
+    "member": "ACTUAL_FAILURES.json",
+    "memberBytes": 147185270,
+    "memberSha256": "ca6e78b5e77094119edd207a02b6e6e6f84e39ff4a9381baa394fdaa9a736508"
+  },
+  "rejection": "GitHub GH001: ACTUAL_FAILURES.json 140.37 MiB exceeds 100 MiB file limit",
+  "originalError": "PUBLICATION_RECOVERY_ORIGINALS.zip/AUTO_ERROR.json",
+  "originalVerifier": "PUBLICATION_RECOVERY_ORIGINALS.zip/verify_results.py",
+  "handling": "Amend only this session-owned rejected/unpublished audit-docs commit; normal push, no force push",
+  "runtimeRerun": false,
+  "inputsChanged": false,
+  "failureBytesRemoved": false,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

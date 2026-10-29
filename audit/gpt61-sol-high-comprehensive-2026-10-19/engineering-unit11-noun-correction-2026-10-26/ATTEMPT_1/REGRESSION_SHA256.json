@@ -1,0 +1,14 @@
+{
+  "CONTEXT.json": "e1ab72388e845ca156d12c9f9116d9f31ecb85b971e019ab032a96c04faa35ff",
+  "EVENTS.jsonl": "902bcf1fd7726b1ab1c23a6186bab4496470225b2a1cf6389d583913b9abe229",
+  "LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+  "RESULT.json": "eecffbd4cc606e43c6fba22d973b77c21c5582958278a5fb4fdc9a44981a1527",
+  "RESULTS.csv": "247ebeabe370391573f98960c5d959fd19d6fead162365eb5e8a1d1a6b4f6d6e",
+  "RUN.exit": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+  "RUN.log": "1be7dc0b2a7415d1f0d1bed7453dab3ffc64e0459ad1f147560e979f9588248a",
+  "XML/TEST-dev.russiancompanion.v2.Unit11NounCompatibilityTest.xml": "315f1b0ae721c1fdf18216d92134b7e88fa15c37d0c0d48ce01b701f5cdcb75f",
+  "XML/TEST-dev.russiancompanion.v2.Unit11NounReviewBaselineTest.xml": "35e014370fd77b0d928c7c907cbab57e64fbdc61b9119b33a9017f4e6be0da31",
+  "XML/TEST-dev.russiancompanion.v2.Unit11NounReviewUiTest.xml": "1b211426f8f3b870d0a6629af83861575bd9bc020e02b4fb116f75ed1291e865",
+  "gc-391527.log": "62ef3d4cdda1d1dac42239b79797e119dab4d8d94aefdedc8fdd752c5c841f0e",
+  "gc-391529.log": "d484d2820d5d7eea90b3863205d1f892659bb425ce72b6f0b60919ee2f2544a0"
+}

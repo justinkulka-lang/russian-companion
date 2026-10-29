@@ -1,0 +1,79 @@
+{
+  "package": "CURSOR_UNIT14_FAILURE_HANDOFF",
+  "repository": "justinkulka-lang/russian-companion",
+  "pr64BranchNotModified": "cursor/content-audit-corrections-964f",
+  "documentationCheckpoint": "e2d09925c1eb90cb1db0a427ef03c77e62b9a005",
+  "testedSource": "8eb9d3d4cc3fdbcd70d5b8904087ddad18acfaf1",
+  "broadEvidenceCheckpoint": "5b012b30a1c7827a1e421ff3234ec13a47c1b281",
+  "reviewer": "Grok 4.7",
+  "requiredFilesPresent": true,
+  "filesParsed": {
+    "reconciliationMarkdownUnchanged": true,
+    "reconciliationMarkdownWords": 433,
+    "reconciliationCsvRows": 15,
+    "reconciliationCsvClasses": [
+      "Unit16CumulativeReviewTest",
+      "Unit17CumulativeReviewTest",
+      "Unit18CumulativeReviewTest",
+      "Unit19CumulativeReviewTest",
+      "Unit20CumulativeReviewTest",
+      "Unit21CumulativeReviewTest",
+      "Unit22CumulativeReviewTest",
+      "Unit23CumulativeReviewTest",
+      "Unit24CumulativeReviewTest",
+      "Unit25CumulativeReviewTest",
+      "Unit26CumulativeReviewTest",
+      "Unit27CumulativeReviewTest",
+      "Unit28CumulativeReviewTest",
+      "Unit29CumulativeReviewTest",
+      "Unit30CumulativeReviewTest"
+    ],
+    "classesAreUnits16Through30": true,
+    "failureMapRows": 60,
+    "followupRows": 119
+  },
+  "uniqueClassRows": 15,
+  "uniqueFailures": 60,
+  "reconciliationMethodsEqualFailureMap": true,
+  "failureMapHashesMatchFullArchiveMember": true,
+  "fullArchiveSha256": "e0ca232b5dd36688d069f9840465512fbea89806b49292d0a6ef67891b327cd0",
+  "fullArchiveMemberSha256": "1fdebe5bcb07107347fc2ffa2beed1875136f6c42885664ba493a25ae0e5fa98",
+  "fullArchiveMember": "ACTUAL_FAILURES.json",
+  "everyFailureMessageAndTraceHashRecalculatedFromMember": true,
+  "uniqueFullMessageHashes": [
+    "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf"
+  ],
+  "xmlIdentitiesMatchSourceAndFailureMap": true,
+  "followupVerifiedFromSource": {
+    "count": 119,
+    "failed": 60,
+    "passedSiblings": 45,
+    "controls": 14,
+    "classes": 17,
+    "discrepancy": null,
+    "sourceDeclarationsMatchBroadXmlNames": true
+  },
+  "inspected": [
+    "ACTUAL_FAILURES_FULL.zip member messages and traces",
+    "loose ACTUAL_FAILURES.json index hashes",
+    "RAW_BROAD.zip JUnit XML for Unit14CumulativeReviewTest through Unit30CumulativeReviewTest and suite totals",
+    "REGRESSION_RESULT.json counts",
+    "Unit14-30 cumulative review test sources and LocalStore.kt:1329-1350 at tested source"
+  ],
+  "uninspected": [
+    "No re-execution of the 119-method follow-up",
+    "Target-method bodies after prepare succeeds",
+    "Screenshot exporter tests",
+    "Penguin PDF and private book prose",
+    "Device airplane-mode and reboot acceptance"
+  ],
+  "appOrTestChanges": false,
+  "testExecution": false,
+  "findingsOpen": 48,
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "LAST",
+  "mergeFreezeSigningRelease": false,
+  "rawArchivesDuplicated": false,
+  "completeness": "PASS",
+  "missingBeforeChecksum": []
+}

@@ -1,0 +1,10 @@
+{
+  "sourceCommit": "5a3411a76b88753617ea18b3e1a54f44f6923b9f",
+  "skips": [
+    {
+      "testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "at020_physicalRebootPersistsGovernedRecords"
+    }
+  ],
+  "physicalEvidenceStillOutstanding": true
+}

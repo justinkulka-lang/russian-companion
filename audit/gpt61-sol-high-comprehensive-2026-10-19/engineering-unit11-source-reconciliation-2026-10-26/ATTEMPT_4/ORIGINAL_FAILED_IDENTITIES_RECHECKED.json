@@ -1,0 +1,12 @@
+[
+  {
+    "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+    "method": "structuralMappingsMatchTheOwnedEditionObservations",
+    "followupOutcome": "PASSED"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+    "method": "structuralMappingsAreDigestBoundAndStayUnsigned",
+    "followupOutcome": "PASSED"
+  }
+]

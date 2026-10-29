@@ -1,0 +1,40 @@
+{
+  "status": "BOUNDED_HOST_FIX_VERIFIED_SOURCE_BINDINGS_PENDING",
+  "baselineCommit": "e1871a59d2b0b41d71dfcf0fa11b1903fa84792f",
+  "testedSourceCommit": "8e53775aee14977ee7255c1d8774b2cb8ae108e2",
+  "baseline": {
+    "reported": 7,
+    "passed": 0,
+    "failed": 7,
+    "errors": 0,
+    "skipped": 0,
+    "exit": 1
+  },
+  "corrected": {
+    "reported": 11,
+    "passed": 11,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "classes": 2,
+    "exit": 0
+  },
+  "findings": "CC018 and CC019 engineering scope only; all48 independent findings remain unclosed",
+  "sourceBindingReconciliation": "PENDING_NEXT_LARGE_TASK",
+  "nextTask": "Run authentic generator proposal twice at corrected source; independently compare canonical release digest; preserve all prior generated versions; retain owner/reviewer/mapping/approval fields; then affected full-class verification. No blanket assertion updates.",
+  "completeSuite": false,
+  "apk": {
+    "applicationId": "dev.russiancompanion",
+    "versionName": "2.0.0-dev",
+    "versionCode": 5,
+    "currentHashCertificateSignature": "NOT_ESTABLISHED",
+    "assembledInstalledSigned": false
+  },
+  "environment": {
+    "installAndStartSettings": "PREVIOUSLY_SAVED_UNCHANGED",
+    "published": "USER_CONFIRMED_NOT_INDEPENDENTLY_OBSERVED"
+  },
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "governanceCC048": "Unresolved authority/owner-disposition conflict; no edits or inferred new decision",
+  "approvals": "NONE"
+}

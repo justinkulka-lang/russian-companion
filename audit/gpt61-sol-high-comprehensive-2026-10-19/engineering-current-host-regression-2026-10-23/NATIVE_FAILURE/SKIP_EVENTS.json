@@ -1,0 +1,35 @@
+[
+  {
+    "kind": "RESULT",
+    "className": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+    "name": "at020_physicalRebootPersistsGovernedRecords",
+    "displayName": "at020_physicalRebootPersistsGovernedRecords",
+    "atMillis": 1792783668373,
+    "resultType": "SKIPPED",
+    "startTime": 1792783668365,
+    "endTime": 1792783668365,
+    "exceptions": []
+  },
+  {
+    "kind": "RESULT",
+    "className": "dev.russiancompanion.v2.V2InsetsAccessibilityTest",
+    "name": "scrollingScaffoldRespectsSystemCutoutAndKeyboardInsetsWithoutDoublePadding",
+    "displayName": "scrollingScaffoldRespectsSystemCutoutAndKeyboardInsetsWithoutDoublePadding",
+    "atMillis": 1792791188158,
+    "resultType": "SKIPPED",
+    "startTime": 1792790276367,
+    "endTime": 1792791188158,
+    "exceptions": []
+  },
+  {
+    "kind": "RESULT",
+    "className": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+    "name": "oldFormatOneAndTwoKeepRawUnit28HistoryWithoutInventingCreditOrRepairingUnit11",
+    "displayName": "oldFormatOneAndTwoKeepRawUnit28HistoryWithoutInventingCreditOrRepairingUnit11",
+    "atMillis": 1792791188159,
+    "resultType": "SKIPPED",
+    "startTime": 1792791152434,
+    "endTime": 1792791188158,
+    "exceptions": []
+  }
+]

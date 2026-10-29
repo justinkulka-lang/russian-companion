@@ -1,0 +1,102 @@
+{
+  "verified": true,
+  "sourceCommit": "05407a70d1d70b196ef21b25cff51357c072c087",
+  "frozenSourceCommit": "50e210c4803237779cb562bc1abcea529066031c",
+  "freezePath": "catalog/sources/units-3-5/FREEZE.json",
+  "freezeSha256": "aa8540c76db690c1becd4822a9c2de41a49b1adcb0557b6e73a7ed29838174f6",
+  "frozenFiles": {
+    "catalog/sources/units-3-5/openrussian/nouns.csv": {
+      "sha256": "c388f9e6dde51932832be8d7e9afdbe9f0acee72fcf70677f0fe25ea61293c84",
+      "gitBlob": "202e6e19918681f1de061aa8b1839885721e60e9"
+    },
+    "catalog/sources/units-3-5/openrussian/verbs.csv": {
+      "sha256": "8659de6799b949fb35f080b08088fb7d347ed300490954ebb380a31642646e1d",
+      "gitBlob": "efc1aebf79e36dc97d86c9bbce93810b7b1a997a"
+    }
+  },
+  "licensePath": "catalog/sources/units-3-5/openrussian/LICENSE",
+  "licenseSha256": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+  "genderBindings": [
+    {
+      "itemId": "u3-i-gender-город",
+      "noun": "город",
+      "promptFieldVerified": true,
+      "answer": "masculine",
+      "binding": {
+        "source": "Frozen dictionary gender field",
+        "field": "gender",
+        "rawField": "m"
+      }
+    },
+    {
+      "itemId": "u3-i-gender-друг",
+      "noun": "друг",
+      "promptFieldVerified": true,
+      "answer": "masculine",
+      "binding": {
+        "source": "Frozen dictionary gender field",
+        "field": "gender",
+        "rawField": "m"
+      }
+    },
+    {
+      "itemId": "u3-i-gender-дверь",
+      "noun": "дверь",
+      "promptFieldVerified": true,
+      "answer": "feminine",
+      "binding": {
+        "source": "Frozen dictionary gender field",
+        "field": "gender",
+        "rawField": "f"
+      }
+    },
+    {
+      "itemId": "u3-i-gender-море",
+      "noun": "море",
+      "promptFieldVerified": true,
+      "answer": "neuter",
+      "binding": {
+        "source": "Frozen dictionary gender field",
+        "field": "gender",
+        "rawField": "n"
+      }
+    },
+    {
+      "itemId": "u3-i-gender-дядя",
+      "noun": "дядя",
+      "promptFieldVerified": true,
+      "answer": "masculine",
+      "binding": {
+        "source": "Existing frozen Wikibooks uncle note; dictionary gender is empty",
+        "provenanceId": "prov-u3-dyadya-note",
+        "sourceRevision": "4310736",
+        "sourceHash": "77ddf6906536584b1db04d17b6ea8729c4b27f518bb6ac0ae49e0f59fcc8fb9d",
+        "dictionaryRawGender": "",
+        "limit": "Original note misuses conjugates for nouns; existing corrected teaching says decline. No new qualification/rights approval."
+      }
+    }
+  ],
+  "pastGenderFields": [
+    {
+      "provenanceId": "prov-ex-or-u11-past-aspect-2",
+      "field": "past_m",
+      "sourceHash": "33fa323fac90da7208938e9cb3c5d900612f448dde17a33248ff7607792cd0ca",
+      "shippedText": "прочита́л"
+    },
+    {
+      "provenanceId": "prov-ex-or-u11-past-aspect-3",
+      "field": "past_f",
+      "sourceHash": "c26bf27b3e761fe1ee60bfcf32d55d2ef740359ab23dc9a4fda37e54d5586cb4",
+      "shippedText": "прочита́ла"
+    },
+    {
+      "provenanceId": "prov-ex-or-u11-past-aspect-4",
+      "field": "past_n",
+      "sourceHash": "a083d2751dba9b02ca2be676c19c2f66883701503819595ef4b881d78ba999e0",
+      "shippedText": "прочита́ло"
+    }
+  ],
+  "scope": "Existing frozen field/record byte and source-link verification; not live-source, qualified linguistic, rights, mapping or owner acceptance.",
+  "privatePdf": "NOT_READ_OR_PACKAGED",
+  "newJUnitMethodsExecuted": 0
+}

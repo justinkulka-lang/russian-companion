@@ -1,0 +1,107 @@
+{
+  "sourceCommit": "5ba4076382050b02dc51e0dcf022e9a138f826b4",
+  "selectedNounCandidates": [
+    "u5-i-indecl-такси",
+    "u5-i-indecl-метро",
+    "u5-i-indecl-кино",
+    "u5-i-decl-книга",
+    "u5-i-decl-окно"
+  ],
+  "retainedPluralPool": {
+    "unit": 9,
+    "slot": 1,
+    "objective": "obj-u8-plural",
+    "skill": "SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION",
+    "remediationStep": "u8-st-rem-plural",
+    "items": [
+      "u8-i-plural-2"
+    ]
+  },
+  "retainedGenderPool": {
+    "unit": 9,
+    "slot": 2,
+    "objective": "obj-u3-gender",
+    "skill": "NOUN_GENDER_RECOGNITION",
+    "remediationStep": "u3-st-rem-gender",
+    "items": [
+      "u3-i-gender-город",
+      "u3-i-gender-друг",
+      "u3-i-gender-дверь",
+      "u3-i-gender-море",
+      "u3-i-gender-дядя"
+    ]
+  },
+  "proposedPools": [
+    {
+      "unit": 9,
+      "slot": 0,
+      "objective": "obj-u5-indeclinable",
+      "skill": "SUPPLIED_NOUN_BEHAVIOR_RECOGNITION",
+      "remediationStep": "u5-st-rem-indeclinable",
+      "items": [
+        "u5-i-indecl-такси",
+        "u5-i-indecl-метро",
+        "u5-i-indecl-кино",
+        "u5-i-decl-книга",
+        "u5-i-decl-окно"
+      ]
+    },
+    {
+      "unit": 9,
+      "slot": 1,
+      "objective": "obj-u8-plural",
+      "skill": "SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION",
+      "remediationStep": "u8-st-rem-plural",
+      "items": [
+        "u8-i-plural-2"
+      ]
+    },
+    {
+      "unit": 9,
+      "slot": 2,
+      "objective": "obj-u3-gender",
+      "skill": "NOUN_GENDER_RECOGNITION",
+      "remediationStep": "u3-st-rem-gender",
+      "items": [
+        "u3-i-gender-город",
+        "u3-i-gender-друг",
+        "u3-i-gender-дверь",
+        "u3-i-gender-море",
+        "u3-i-gender-дядя"
+      ]
+    }
+  ],
+  "proposedId": "unit9-prior-noun-behavior-plural-gender-v3",
+  "proposedFreshSchema": 11,
+  "status": "PROPOSED_NOT_ACTIVATED",
+  "activated": false,
+  "objectiveChains": 10,
+  "assessedChecks": 43,
+  "historicalArchivesChecked": 69,
+  "archivesContainingUnit9": 30,
+  "currentPolicy": {
+    "unit": 9,
+    "id": "unit9-prior-reading-plural-gender-v2",
+    "digest": "099e76c0255be497d920adfc51bffd3a869858dd80bb4b5216da92c0cab5a710",
+    "schema": 5,
+    "pools": 3
+  },
+  "printSingletonPoliciesStillCurrent": 24,
+  "currentUnit3And4FoundationGaps": "CC002_CC027_OPEN",
+  "heldOutItemsAdded": 0,
+  "qualifications": "Engineering trace only; linguistic/source-rights/mapping/owner acceptance remains pending",
+  "runtimeMethodsExecuted": 0,
+  "lint": "NOT_RUN_RESEARCH_ONLY",
+  "releaseGateAttachment": "NOT_RUN_RESEARCH_ONLY",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  }
+}

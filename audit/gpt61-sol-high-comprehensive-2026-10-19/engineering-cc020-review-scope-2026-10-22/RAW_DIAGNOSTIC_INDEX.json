@@ -1,0 +1,14 @@
+{
+  "COMPILE.log": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "EXPORT.log": {
+    "sha256": "6966946220d553a49c92b859580c683b516e6e8c10ac88110b9a8fbcedbbdfb0",
+    "bytes": 10093
+  },
+  "INVENTORY_BUILD.log": {
+    "sha256": "4019ea536cbe2d16bae1cc8d16328adf463a0835c4ac42e7835d783574af6d55",
+    "bytes": 1220
+  }
+}

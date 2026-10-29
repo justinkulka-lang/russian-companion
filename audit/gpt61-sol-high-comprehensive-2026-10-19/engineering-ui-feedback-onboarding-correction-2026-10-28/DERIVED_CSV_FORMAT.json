@@ -1,0 +1,7 @@
+{
+  "file": "REGRESSION_RESULTS.csv",
+  "operation": "Normalize only newly derived CSV line endings from CRLF to LF before first commit",
+  "beforeSha256": "0568025fa1322db5fcc3782732f1b62fede4f8eda6df68c440de9587534430dd",
+  "afterSha256": "9d77b74ba12c009c41d9f878cd4fa39984dc2e11dc7ecad1b52d08545ed2ae80",
+  "rawArchivesAndOriginalEvidenceUnchanged": true
+}

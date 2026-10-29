@@ -1,0 +1,15 @@
+{
+  "sourceCommit": "cd2b1c91911040acb190147cf5966d0f23ba2a0d",
+  "methods": [
+    {
+      "testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "at020_physicalRebootPersistsGovernedRecords",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

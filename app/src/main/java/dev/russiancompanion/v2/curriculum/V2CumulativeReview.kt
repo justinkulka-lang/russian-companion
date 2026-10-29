@@ -15,6 +15,26 @@ internal const val UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA = 4
 internal const val UNIT9_WIDER_REVIEW_ASSIGNMENT_SCHEMA = 5
 // Unit13 v2 only; schemas1–5 retain their exact meanings.
 internal const val UNIT13_WIDER_REVIEW_ASSIGNMENT_SCHEMA = 6
+// Unit5 gender/subject obligation only; schemas1-6 retain their exact meanings.
+internal const val UNIT5_GRAMMAR_REVIEW_ASSIGNMENT_SCHEMA = 7
+// Unit6 supplied-present v3 only; all saved schema1-7 obligations remain immutable.
+internal const val UNIT6_PRESENT_REVIEW_ASSIGNMENT_SCHEMA = 8
+// Unit7 lexical gender/inanimate v2 only; saved schema1-8 meanings remain unchanged.
+internal const val UNIT7_GENDER_REVIEW_ASSIGNMENT_SCHEMA = 9
+// Unit8 supplied-present/agreement v2 only; saved schema1-9 meanings stay exact.
+internal const val UNIT8_PRESENT_REVIEW_ASSIGNMENT_SCHEMA = 10
+// Fresh Unit9 noun-behavior v3 only; schemas1-10 retain their exact meanings.
+internal const val UNIT9_NOUN_BEHAVIOR_REVIEW_ASSIGNMENT_SCHEMA = 11
+// Fresh Unit10 supplied-present v2 only; schemas1-11 retain their exact meanings.
+internal const val UNIT10_PRESENT_REVIEW_ASSIGNMENT_SCHEMA = 12
+// Fresh Unit11 noun/possession v2 only; schemas1-12 retain their meanings.
+internal const val UNIT11_NOUN_REVIEW_ASSIGNMENT_SCHEMA = 13
+// Fresh Unit12 lexical/past-gender v2 only; schemas1-13 retain their meanings.
+internal const val UNIT12_GENDER_REVIEW_ASSIGNMENT_SCHEMA = 14
+// Fresh Unit13 supplied-present/aspect/past v3 only; schemas1-14 stay immutable.
+internal const val UNIT13_PRESENT_REVIEW_ASSIGNMENT_SCHEMA = 15
+// Fresh Unit14 supplied-plural/possession/reported-time v2 only; schemas1-15 stay exact.
+internal const val UNIT14_PLURAL_POSSESSION_REVIEW_ASSIGNMENT_SCHEMA = 16
 internal const val CUMULATIVE_REVIEW_ROLE = "CUMULATIVE_REVIEW"
 
 @Serializable
@@ -38,7 +58,7 @@ internal data class CumulativeReviewAnswer(
 )
 
 /** Skill labels describe only the bounded evidence supported by the authored checks. */
-internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION, NOUN_GENDER_RECOGNITION, SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION, SUPPLIED_NOUN_BEHAVIOR_RECOGNITION, SUPPLIED_INANIMATE_ACCUSATIVE_RECOGNITION, SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION, SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION, SUPPLIED_NUMERAL_GENDER_RECOGNITION, SUPPLIED_POSSESSION_ABSENCE_RECOGNITION, SUPPLIED_PAST_GENDER_RECOGNITION, SUPPLIED_ASPECT_PARTNER_RECOGNITION, SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION, SUPPLIED_IMPERSONAL_STATE_RECOGNITION, SUPPLIED_IMPERATIVE_FORM_RECOGNITION, SUPPLIED_INSTRUMENTAL_PLURAL_RECOGNITION, SUPPLIED_QUESTION_INTERPRETATION, SUPPLIED_RELATIVE_CLAUSE_RECOGNITION, SUPPLIED_CONDITIONAL_AGREEMENT_RECOGNITION, SUPPLIED_MOTION_CONTEXT_RECOGNITION, SUPPLIED_REFLEXIVE_OBJECT_RECOGNITION, SUPPLIED_HALF_QUANTITY_PHRASE_RECOGNITION, SUPPLIED_PERIOD_POSITION_PHRASE_RECOGNITION, SUPPLIED_NEGATIVE_SENTENCE_RECOGNITION, SUPPLIED_NAME_REPLY_RECOGNITION, SUPPLIED_ADDRESS_COMPONENT_RECOGNITION, SUPPLIED_PAST_PASSIVE_MEANING_RECOGNITION, SUPPLIED_RELATIVE_FUTURE_TIMING_RECOGNITION, SUPPLIED_ACTIVE_PARTICIPLE_TIME_RECOGNITION }
+internal enum class CumulativeReviewSkill { BOUNDED_READING, PRINTED_LETTER_RECOGNITION, NOUN_GENDER_RECOGNITION, SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION, SUPPLIED_NOUN_BEHAVIOR_RECOGNITION, SUPPLIED_PRESENT_FORM_RECOGNITION, SUPPLIED_INANIMATE_ACCUSATIVE_RECOGNITION, SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION, SUPPLIED_NOMINATIVE_PLURAL_RECOGNITION, SUPPLIED_NUMERAL_GENDER_RECOGNITION, SUPPLIED_POSSESSION_ABSENCE_RECOGNITION, SUPPLIED_PAST_GENDER_RECOGNITION, SUPPLIED_ASPECT_PARTNER_RECOGNITION, SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION, SUPPLIED_IMPERSONAL_STATE_RECOGNITION, SUPPLIED_IMPERATIVE_FORM_RECOGNITION, SUPPLIED_INSTRUMENTAL_PLURAL_RECOGNITION, SUPPLIED_QUESTION_INTERPRETATION, SUPPLIED_RELATIVE_CLAUSE_RECOGNITION, SUPPLIED_CONDITIONAL_AGREEMENT_RECOGNITION, SUPPLIED_MOTION_CONTEXT_RECOGNITION, SUPPLIED_REFLEXIVE_OBJECT_RECOGNITION, SUPPLIED_HALF_QUANTITY_PHRASE_RECOGNITION, SUPPLIED_PERIOD_POSITION_PHRASE_RECOGNITION, SUPPLIED_NEGATIVE_SENTENCE_RECOGNITION, SUPPLIED_NAME_REPLY_RECOGNITION, SUPPLIED_ADDRESS_COMPONENT_RECOGNITION, SUPPLIED_PAST_PASSIVE_MEANING_RECOGNITION, SUPPLIED_RELATIVE_FUTURE_TIMING_RECOGNITION, SUPPLIED_ACTIVE_PARTICIPLE_TIME_RECOGNITION }
 
 internal data class CumulativeReviewObjectivePool(
     val objectiveId: String, val skill: CumulativeReviewSkill, val candidateItemIds: List<String>,
@@ -91,6 +111,16 @@ internal object Unit5CumulativeReviewPolicy {
     ))
 }
 
+/** Reuses taught lexical gender and supplied subject-role evidence; not a reading claim. */
+internal object Unit5GrammarCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit5-prior-gender-subject-v2", 5, listOf(
+        CumulativeReviewObjectivePool("obj-u3-gender", CumulativeReviewSkill.NOUN_GENDER_RECOGNITION,
+            listOf("u3-i-gender-город", "u3-i-gender-друг", "u3-i-gender-дверь", "u3-i-gender-море", "u3-i-gender-дядя"),
+            "u3-st-rem-gender"),
+        Unit5CumulativeReviewPolicy.definition.pool[1],
+    ))
+}
+
 internal object Unit6CumulativeReviewPolicy {
     val definition = CumulativeReviewPolicy("unit6-prior-reading-noun-behavior-v1", 6, listOf(
         CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
@@ -106,6 +136,17 @@ internal object Unit6WiderCumulativeReviewPolicy {
         Unit6CumulativeReviewPolicy.definition.pool + Unit5CumulativeReviewPolicy.definition.pool[1])
 }
 
+/** Finite supplied-form/person recognition; not productive conjugation or reading. */
+internal object Unit6PresentCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit6-prior-present-subject-noun-behavior-v3", 6, listOf(
+        CumulativeReviewObjectivePool("obj-u4-present", CumulativeReviewSkill.SUPPLIED_PRESENT_FORM_RECOGNITION,
+            listOf("u4-i-verb-говорить-мы", "u4-i-verb-видеть-он", "u4-i-verb-писать-вы", "u4-i-verb-идти-они"),
+            "u4-st-rem-present"),
+        Unit6CumulativeReviewPolicy.definition.pool[1],
+        Unit5CumulativeReviewPolicy.definition.pool[1],
+    ))
+}
+
 internal object Unit7CumulativeReviewPolicy {
     val definition = CumulativeReviewPolicy("unit7-prior-reading-inanimate-case-v1", 7, listOf(
         CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
@@ -114,11 +155,27 @@ internal object Unit7CumulativeReviewPolicy {
     ))
 }
 
+/** Recorded noun gender and supplied inanimate classification; not productive agreement. */
+internal object Unit7GenderCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit7-prior-gender-inanimate-case-v2", 7, listOf(
+        Unit5GrammarCumulativeReviewPolicy.definition.pool[0],
+        Unit7CumulativeReviewPolicy.definition.pool[1],
+    ))
+}
+
 internal object Unit8CumulativeReviewPolicy {
     val definition = CumulativeReviewPolicy("unit8-prior-reading-nominative-agreement-v1", 8, listOf(
         CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
         CumulativeReviewObjectivePool("obj-u7-endings", CumulativeReviewSkill.SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION,
             listOf("u7-i-endings-4"), "u7-st-teach-endings-1"),
+    ))
+}
+
+/** Finite supplied person/form and nominative adjective agreement; not productive grammar. */
+internal object Unit8PresentCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit8-prior-present-nominative-agreement-v2", 8, listOf(
+        Unit6PresentCumulativeReviewPolicy.definition.pool[0],
+        Unit8CumulativeReviewPolicy.definition.pool[1],
     ))
 }
 
@@ -139,6 +196,15 @@ internal object Unit9WiderCumulativeReviewPolicy {
             "u3-st-rem-gender"))
 }
 
+/** Supplied noun classification, nominative plural and lexical gender; not productive inflection. */
+internal object Unit9NounBehaviorCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit9-prior-noun-behavior-plural-gender-v3", 9, listOf(
+        Unit6CumulativeReviewPolicy.definition.pool[1],
+        Unit9WiderCumulativeReviewPolicy.definition.pool[1],
+        Unit9WiderCumulativeReviewPolicy.definition.pool[2],
+    ))
+}
+
 internal object Unit10CumulativeReviewPolicy {
     val definition = CumulativeReviewPolicy("unit10-prior-reading-numeral-gender-v1", 10, listOf(
         CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
@@ -147,11 +213,28 @@ internal object Unit10CumulativeReviewPolicy {
     ))
 }
 
+/** Finite supplied form/person and numeral agreement; not productive grammar. */
+internal object Unit10PresentCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit10-prior-present-numeral-gender-v2", 10, listOf(
+        Unit6PresentCumulativeReviewPolicy.definition.pool[0],
+        Unit10CumulativeReviewPolicy.definition.pool[1],
+    ))
+}
+
 internal object Unit11CumulativeReviewPolicy {
     val definition = CumulativeReviewPolicy("unit11-prior-reading-possession-absence-v1", 11, listOf(
         CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
         CumulativeReviewObjectivePool("obj-u10-have", CumulativeReviewSkill.SUPPLIED_POSSESSION_ABSENCE_RECOGNITION,
             listOf("u10-i-have-4"), "u10-st-rem-have"),
+    ))
+}
+
+/** Supplied noun behavior and possession/absence classification; not productive grammar. */
+internal object Unit11NounCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit11-prior-noun-behavior-possession-absence-v2", 11, listOf(
+        Unit6CumulativeReviewPolicy.definition.pool[1],
+        CumulativeReviewObjectivePool("obj-u10-have", CumulativeReviewSkill.SUPPLIED_POSSESSION_ABSENCE_RECOGNITION,
+            listOf("u10-i-have-1", "u10-i-have-2", "u10-i-have-3", "u10-i-have-4"), "u10-st-rem-have"),
     ))
 }
 
@@ -179,11 +262,40 @@ internal object Unit13WiderCumulativeReviewPolicy {
             listOf("u11-i-past-aspect-1", "u11-i-past-aspect-2"), "u11-st-rem-past-aspect"))
 }
 
+/** Reuses finite taught present forms, lexical aspect partners and past-gender forms. */
+internal object Unit13PresentCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit13-prior-present-aspect-past-gender-v3", 13, listOf(
+        Unit6PresentCumulativeReviewPolicy.definition.pool[0],
+        Unit13CumulativeReviewPolicy.definition.pool[1].copy(
+            candidateItemIds = listOf("u12-i-aspect-1", "u12-i-aspect-2")),
+        Unit13WiderCumulativeReviewPolicy.definition.pool[2],
+    ))
+}
+
+/** Recorded noun labels and supplied singular past forms; not productive agreement. */
+internal object Unit12GenderCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit12-prior-gender-past-gender-v2", 12, listOf(
+        Unit5GrammarCumulativeReviewPolicy.definition.pool[0],
+        Unit13WiderCumulativeReviewPolicy.definition.pool[2],
+    ))
+}
+
 internal object Unit14CumulativeReviewPolicy {
     val definition = CumulativeReviewPolicy("unit14-prior-reading-reported-time-v1", 14, listOf(
         CumulativeReviewObjectivePool("obj-u1-decoding", CumulativeReviewSkill.BOUNDED_READING, listOf("u1-i-decode-pair")),
         CumulativeReviewObjectivePool("obj-u13-reported", CumulativeReviewSkill.SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION,
             listOf("u13-i-report-frame-time"), "u13-st-rem-reported"),
+    ))
+}
+
+/** Finite supplied forms and interpretations; not productive or unseen transfer. */
+internal object Unit14PluralPossessionCumulativeReviewPolicy {
+    val definition = CumulativeReviewPolicy("unit14-prior-plural-possession-reported-time-v2", 14, listOf(
+        Unit9CumulativeReviewPolicy.definition.pool[1].copy(
+            candidateItemIds = listOf("u8-i-plural-1", "u8-i-plural-2", "u8-i-plural-3",
+                "u8-i-plural-4", "u8-i-plural-5", "u8-i-plural-6")),
+        Unit11NounCumulativeReviewPolicy.definition.pool[1],
+        Unit14CumulativeReviewPolicy.definition.pool[1],
     ))
 }
 
@@ -319,16 +431,16 @@ internal object Unit30CumulativeReviewPolicy {
 internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = when (targetUnit) {
     3 -> Unit3CumulativeReviewPolicy.definition
     4 -> Unit4CumulativeReviewPolicy.definition
-    5 -> Unit5CumulativeReviewPolicy.definition
-    6 -> Unit6WiderCumulativeReviewPolicy.definition
-    7 -> Unit7CumulativeReviewPolicy.definition
-    8 -> Unit8CumulativeReviewPolicy.definition
-    9 -> Unit9WiderCumulativeReviewPolicy.definition
-    10 -> Unit10CumulativeReviewPolicy.definition
-    11 -> Unit11CumulativeReviewPolicy.definition
-    12 -> Unit12CumulativeReviewPolicy.definition
-    13 -> Unit13WiderCumulativeReviewPolicy.definition
-    14 -> Unit14CumulativeReviewPolicy.definition
+    5 -> Unit5GrammarCumulativeReviewPolicy.definition
+    6 -> Unit6PresentCumulativeReviewPolicy.definition
+    7 -> Unit7GenderCumulativeReviewPolicy.definition
+    8 -> Unit8PresentCumulativeReviewPolicy.definition
+    9 -> Unit9NounBehaviorCumulativeReviewPolicy.definition
+    10 -> Unit10PresentCumulativeReviewPolicy.definition
+    11 -> Unit11NounCumulativeReviewPolicy.definition
+    12 -> Unit12GenderCumulativeReviewPolicy.definition
+    13 -> Unit13PresentCumulativeReviewPolicy.definition
+    14 -> Unit14PluralPossessionCumulativeReviewPolicy.definition
     15 -> Unit15CumulativeReviewPolicy.definition
     16 -> Unit16CumulativeReviewPolicy.definition
     17 -> Unit17CumulativeReviewPolicy.definition
@@ -348,19 +460,33 @@ internal fun cumulativeReviewPolicy(targetUnit: Int): CumulativeReviewPolicy? = 
     else -> null
 }
 
-internal fun cumulativeReviewTitle(targetUnit: Int): String = when (targetUnit) {
+internal fun cumulativeReviewTitle(targetUnit: Int, policyId: String? = null): String = when (targetUnit) {
     3 -> "Review earlier reading and letters"
     4 -> "Review earlier reading and noun genders"
-    5 -> "Review earlier reading and supplied subjects"
-    6 -> "Review earlier reading and nouns"
-    7 -> "Review earlier reading and supplied object forms"
-    8 -> "Review earlier reading and supplied agreement"
-    9 -> "Review earlier reading, supplied plurals and noun genders"
-    10 -> "Review earlier reading and supplied numeral agreement"
-    11 -> "Review earlier reading and supplied possession or absence"
-    12 -> "Review earlier reading and supplied past gender"
-    13 -> "Review earlier reading, supplied aspect partners and past agreement"
-    14 -> "Review earlier reading and supplied reporting times"
+    5 -> if (policyId == Unit5CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied subjects"
+        else "Review earlier noun genders and supplied subjects"
+    6 -> if (policyId == Unit6CumulativeReviewPolicy.definition.id || policyId == Unit6WiderCumulativeReviewPolicy.definition.id)
+        "Review earlier reading and nouns"
+        else "Review supplied present forms, noun behavior and subjects"
+    7 -> if (policyId == Unit7CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied object forms"
+        else "Review noun genders and supplied object classification"
+    8 -> if (policyId == Unit8CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied agreement"
+        else "Review supplied present forms and nominative agreement"
+    9 -> if (policyId == Unit9CumulativeReviewPolicy.definition.id || policyId == Unit9WiderCumulativeReviewPolicy.definition.id)
+        "Review earlier reading, supplied plurals and noun genders"
+        else "Review supplied noun behavior, plurals and noun genders"
+    10 -> if (policyId == Unit10CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied numeral agreement"
+        else "Review supplied present forms and numeral agreement"
+    11 -> if (policyId == Unit11CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied possession or absence"
+        else "Review noun behavior and possession or absence"
+    12 -> if (policyId == Unit12CumulativeReviewPolicy.definition.id) "Review earlier reading and supplied past gender"
+        else "Review noun genders and supplied past agreement"
+    13 -> if (policyId == Unit13PresentCumulativeReviewPolicy.definition.id)
+        "Review supplied present forms, aspect partners and past agreement"
+        else "Review earlier reading, supplied aspect partners and past agreement"
+    14 -> if (policyId == Unit14PluralPossessionCumulativeReviewPolicy.definition.id)
+        "Review supplied plurals, possession and reported time"
+        else "Review earlier reading and supplied reporting times"
     15 -> "Review earlier reading and supplied impersonal states"
     16 -> "Review earlier reading and supplied imperative forms"
     17 -> "Review earlier reading and supplied instrumental plurals"
@@ -387,12 +513,32 @@ internal fun cumulativeReviewDeclaredPolicy(pack: V2CurriculumPack, targetUnit: 
     val active = cumulativeReviewPolicy(targetUnit) ?: return null
     return when {
         rule.cumulativeReviewPolicyId == active.id -> active
+        targetUnit == 5 && rule.cumulativeReviewPolicyId == Unit5CumulativeReviewPolicy.definition.id ->
+            Unit5CumulativeReviewPolicy.definition
+        targetUnit == 6 && rule.cumulativeReviewPolicyId == Unit6WiderCumulativeReviewPolicy.definition.id ->
+            Unit6WiderCumulativeReviewPolicy.definition
         targetUnit == 6 && rule.cumulativeReviewPolicyId == Unit6CumulativeReviewPolicy.definition.id ->
             Unit6CumulativeReviewPolicy.definition
+        targetUnit == 7 && rule.cumulativeReviewPolicyId == Unit7CumulativeReviewPolicy.definition.id ->
+            Unit7CumulativeReviewPolicy.definition
+        targetUnit == 8 && rule.cumulativeReviewPolicyId == Unit8CumulativeReviewPolicy.definition.id ->
+            Unit8CumulativeReviewPolicy.definition
+        targetUnit == 9 && rule.cumulativeReviewPolicyId == Unit9WiderCumulativeReviewPolicy.definition.id ->
+            Unit9WiderCumulativeReviewPolicy.definition
         targetUnit == 9 && rule.cumulativeReviewPolicyId == Unit9CumulativeReviewPolicy.definition.id ->
             Unit9CumulativeReviewPolicy.definition
+        targetUnit == 10 && rule.cumulativeReviewPolicyId == Unit10CumulativeReviewPolicy.definition.id ->
+            Unit10CumulativeReviewPolicy.definition
+        targetUnit == 11 && rule.cumulativeReviewPolicyId == Unit11CumulativeReviewPolicy.definition.id ->
+            Unit11CumulativeReviewPolicy.definition
+        targetUnit == 12 && rule.cumulativeReviewPolicyId == Unit12CumulativeReviewPolicy.definition.id ->
+            Unit12CumulativeReviewPolicy.definition
+        targetUnit == 13 && rule.cumulativeReviewPolicyId == Unit13WiderCumulativeReviewPolicy.definition.id ->
+            Unit13WiderCumulativeReviewPolicy.definition
         targetUnit == 13 && rule.cumulativeReviewPolicyId == Unit13CumulativeReviewPolicy.definition.id ->
             Unit13CumulativeReviewPolicy.definition
+        targetUnit == 14 && rule.cumulativeReviewPolicyId == Unit14CumulativeReviewPolicy.definition.id ->
+            Unit14CumulativeReviewPolicy.definition
         else -> null
     }
 }
@@ -421,23 +567,55 @@ private fun teachingDigest(pack: V2CurriculumPack, objective: V2Objective): Stri
 
 private fun newReviewAssignmentSchema(policy: CumulativeReviewPolicy): Int = when (policy.targetUnit) {
     3 -> UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA
-    5 -> UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA
-    6 -> if (policy.id == Unit6WiderCumulativeReviewPolicy.definition.id) UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA
+    5 -> if (policy.id == Unit5GrammarCumulativeReviewPolicy.definition.id) UNIT5_GRAMMAR_REVIEW_ASSIGNMENT_SCHEMA
         else UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA
-    9 -> if (policy.id == Unit9WiderCumulativeReviewPolicy.definition.id) UNIT9_WIDER_REVIEW_ASSIGNMENT_SCHEMA
+    6 -> when (policy.id) {
+        Unit6PresentCumulativeReviewPolicy.definition.id -> UNIT6_PRESENT_REVIEW_ASSIGNMENT_SCHEMA
+        Unit6WiderCumulativeReviewPolicy.definition.id -> UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA
+        else -> UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA
+    }
+    7 -> if (policy.id == Unit7GenderCumulativeReviewPolicy.definition.id) UNIT7_GENDER_REVIEW_ASSIGNMENT_SCHEMA
         else CUMULATIVE_REVIEW_SCHEMA
-    13 -> if (policy.id == Unit13WiderCumulativeReviewPolicy.definition.id) UNIT13_WIDER_REVIEW_ASSIGNMENT_SCHEMA
+    8 -> if (policy.id == Unit8PresentCumulativeReviewPolicy.definition.id) UNIT8_PRESENT_REVIEW_ASSIGNMENT_SCHEMA
+        else CUMULATIVE_REVIEW_SCHEMA
+    9 -> when (policy.id) {
+        Unit9NounBehaviorCumulativeReviewPolicy.definition.id -> UNIT9_NOUN_BEHAVIOR_REVIEW_ASSIGNMENT_SCHEMA
+        Unit9WiderCumulativeReviewPolicy.definition.id -> UNIT9_WIDER_REVIEW_ASSIGNMENT_SCHEMA
+        else -> CUMULATIVE_REVIEW_SCHEMA
+    }
+    10 -> if (policy.id == Unit10PresentCumulativeReviewPolicy.definition.id) UNIT10_PRESENT_REVIEW_ASSIGNMENT_SCHEMA
+        else CUMULATIVE_REVIEW_SCHEMA
+    11 -> if (policy.id == Unit11NounCumulativeReviewPolicy.definition.id) UNIT11_NOUN_REVIEW_ASSIGNMENT_SCHEMA
+        else CUMULATIVE_REVIEW_SCHEMA
+    12 -> if (policy.id == Unit12GenderCumulativeReviewPolicy.definition.id) UNIT12_GENDER_REVIEW_ASSIGNMENT_SCHEMA
+        else CUMULATIVE_REVIEW_SCHEMA
+    13 -> when (policy.id) {
+        Unit13PresentCumulativeReviewPolicy.definition.id -> UNIT13_PRESENT_REVIEW_ASSIGNMENT_SCHEMA
+        Unit13WiderCumulativeReviewPolicy.definition.id -> UNIT13_WIDER_REVIEW_ASSIGNMENT_SCHEMA
+        else -> CUMULATIVE_REVIEW_SCHEMA
+    }
+    14 -> if (policy.id == Unit14PluralPossessionCumulativeReviewPolicy.definition.id) UNIT14_PLURAL_POSSESSION_REVIEW_ASSIGNMENT_SCHEMA
         else CUMULATIVE_REVIEW_SCHEMA
     else -> CUMULATIVE_REVIEW_SCHEMA
 }
 
 /** Preserve each version's target scope; unknown combinations cannot acquire credit. */
 private fun reviewAssignmentSchemaSupported(a: CumulativeReviewAssignment): Boolean = when (a.schema) {
-    CUMULATIVE_REVIEW_SCHEMA -> a.policyId != Unit6WiderCumulativeReviewPolicy.definition.id &&
+    CUMULATIVE_REVIEW_SCHEMA -> a.policyId != Unit5GrammarCumulativeReviewPolicy.definition.id &&
+        a.policyId != Unit6WiderCumulativeReviewPolicy.definition.id &&
+        a.policyId != Unit6PresentCumulativeReviewPolicy.definition.id &&
+        a.policyId != Unit7GenderCumulativeReviewPolicy.definition.id &&
+        a.policyId != Unit8PresentCumulativeReviewPolicy.definition.id &&
         a.policyId != Unit9WiderCumulativeReviewPolicy.definition.id &&
-        a.policyId != Unit13WiderCumulativeReviewPolicy.definition.id
+        a.policyId != Unit9NounBehaviorCumulativeReviewPolicy.definition.id &&
+        a.policyId != Unit10PresentCumulativeReviewPolicy.definition.id &&
+        a.policyId != Unit11NounCumulativeReviewPolicy.definition.id &&
+        a.policyId != Unit12GenderCumulativeReviewPolicy.definition.id &&
+        a.policyId != Unit13WiderCumulativeReviewPolicy.definition.id &&
+        a.policyId != Unit13PresentCumulativeReviewPolicy.definition.id &&
+        a.policyId != Unit14PluralPossessionCumulativeReviewPolicy.definition.id
     UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA -> a.targetUnit == 3
-    UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA -> a.targetUnit == 5 ||
+    UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA -> (a.targetUnit == 5 && a.policyId == Unit5CumulativeReviewPolicy.definition.id) ||
         (a.targetUnit == 6 && a.policyId == Unit6CumulativeReviewPolicy.definition.id)
     UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 6 &&
         a.policyId == Unit6WiderCumulativeReviewPolicy.definition.id
@@ -445,6 +623,26 @@ private fun reviewAssignmentSchemaSupported(a: CumulativeReviewAssignment): Bool
         a.policyId == Unit9WiderCumulativeReviewPolicy.definition.id
     UNIT13_WIDER_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 13 &&
         a.policyId == Unit13WiderCumulativeReviewPolicy.definition.id
+    UNIT5_GRAMMAR_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 5 &&
+        a.policyId == Unit5GrammarCumulativeReviewPolicy.definition.id
+    UNIT6_PRESENT_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 6 &&
+        a.policyId == Unit6PresentCumulativeReviewPolicy.definition.id
+    UNIT7_GENDER_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 7 &&
+        a.policyId == Unit7GenderCumulativeReviewPolicy.definition.id
+    UNIT8_PRESENT_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 8 &&
+        a.policyId == Unit8PresentCumulativeReviewPolicy.definition.id
+    UNIT9_NOUN_BEHAVIOR_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 9 &&
+        a.policyId == Unit9NounBehaviorCumulativeReviewPolicy.definition.id
+    UNIT10_PRESENT_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 10 &&
+        a.policyId == Unit10PresentCumulativeReviewPolicy.definition.id
+    UNIT11_NOUN_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 11 &&
+        a.policyId == Unit11NounCumulativeReviewPolicy.definition.id
+    UNIT12_GENDER_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 12 &&
+        a.policyId == Unit12GenderCumulativeReviewPolicy.definition.id
+    UNIT13_PRESENT_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 13 &&
+        a.policyId == Unit13PresentCumulativeReviewPolicy.definition.id
+    UNIT14_PLURAL_POSSESSION_REVIEW_ASSIGNMENT_SCHEMA -> a.targetUnit == 14 &&
+        a.policyId == Unit14PluralPossessionCumulativeReviewPolicy.definition.id
     else -> false
 }
 
@@ -453,9 +651,16 @@ internal fun cumulativeReviewAssignmentPolicy(a: CumulativeReviewAssignment): Cu
     if (!reviewAssignmentSchemaSupported(a)) return null
     val definitions = listOfNotNull(cumulativeReviewPolicy(a.targetUnit)) +
         when (a.targetUnit) {
-            6 -> listOf(Unit6CumulativeReviewPolicy.definition)
-            9 -> listOf(Unit9CumulativeReviewPolicy.definition)
-            13 -> listOf(Unit13CumulativeReviewPolicy.definition)
+            5 -> listOf(Unit5CumulativeReviewPolicy.definition)
+            6 -> listOf(Unit6CumulativeReviewPolicy.definition, Unit6WiderCumulativeReviewPolicy.definition)
+            7 -> listOf(Unit7CumulativeReviewPolicy.definition)
+            8 -> listOf(Unit8CumulativeReviewPolicy.definition)
+            9 -> listOf(Unit9CumulativeReviewPolicy.definition, Unit9WiderCumulativeReviewPolicy.definition)
+            10 -> listOf(Unit10CumulativeReviewPolicy.definition)
+            11 -> listOf(Unit11CumulativeReviewPolicy.definition)
+            12 -> listOf(Unit12CumulativeReviewPolicy.definition)
+            13 -> listOf(Unit13CumulativeReviewPolicy.definition, Unit13WiderCumulativeReviewPolicy.definition)
+            14 -> listOf(Unit14CumulativeReviewPolicy.definition)
             else -> emptyList()
         }
     return definitions.singleOrNull { it.id == a.policyId && it.digest == a.policyDigest }
@@ -544,12 +749,32 @@ internal fun reviewAssignmentEligible(pack: V2CurriculumPack, learner: V2Learner
 internal fun reviewAssignmentCurrent(pack: V2CurriculumPack, a: CumulativeReviewAssignment): Boolean {
     val policy = cumulativeReviewAssignmentPolicy(a) ?: return false
     val declared = cumulativeReviewDeclaredPolicy(pack, a.targetUnit) ?: return false
-    if (policy.id != declared.id && !(a.targetUnit == 6 &&
-        declared.id == Unit6WiderCumulativeReviewPolicy.definition.id && policy.id == Unit6CumulativeReviewPolicy.definition.id) &&
-        !(a.targetUnit == 9 && declared.id == Unit9WiderCumulativeReviewPolicy.definition.id &&
-            policy.id == Unit9CumulativeReviewPolicy.definition.id) &&
-        !(a.targetUnit == 13 && declared.id == Unit13WiderCumulativeReviewPolicy.definition.id &&
-            policy.id == Unit13CumulativeReviewPolicy.definition.id)) return false
+    if (policy.id != declared.id && !(a.targetUnit == 5 &&
+        declared.id == Unit5GrammarCumulativeReviewPolicy.definition.id && policy.id == Unit5CumulativeReviewPolicy.definition.id) &&
+        !(a.targetUnit == 6 && (
+        declared.id == Unit6WiderCumulativeReviewPolicy.definition.id && policy.id == Unit6CumulativeReviewPolicy.definition.id ||
+        declared.id == Unit6PresentCumulativeReviewPolicy.definition.id && policy.id in setOf(
+            Unit6CumulativeReviewPolicy.definition.id, Unit6WiderCumulativeReviewPolicy.definition.id))) &&
+        !(a.targetUnit == 7 && declared.id == Unit7GenderCumulativeReviewPolicy.definition.id &&
+            policy.id == Unit7CumulativeReviewPolicy.definition.id) &&
+        !(a.targetUnit == 8 && declared.id == Unit8PresentCumulativeReviewPolicy.definition.id &&
+            policy.id == Unit8CumulativeReviewPolicy.definition.id) &&
+        !(a.targetUnit == 9 && (
+            declared.id == Unit9WiderCumulativeReviewPolicy.definition.id && policy.id == Unit9CumulativeReviewPolicy.definition.id ||
+            declared.id == Unit9NounBehaviorCumulativeReviewPolicy.definition.id && policy.id in setOf(
+                Unit9CumulativeReviewPolicy.definition.id, Unit9WiderCumulativeReviewPolicy.definition.id))) &&
+        !(a.targetUnit == 10 && declared.id == Unit10PresentCumulativeReviewPolicy.definition.id &&
+            policy.id == Unit10CumulativeReviewPolicy.definition.id) &&
+        !(a.targetUnit == 11 && declared.id == Unit11NounCumulativeReviewPolicy.definition.id &&
+            policy.id == Unit11CumulativeReviewPolicy.definition.id) &&
+        !(a.targetUnit == 12 && declared.id == Unit12GenderCumulativeReviewPolicy.definition.id &&
+            policy.id == Unit12CumulativeReviewPolicy.definition.id) &&
+        !(a.targetUnit == 13 && (
+            declared.id == Unit13WiderCumulativeReviewPolicy.definition.id && policy.id == Unit13CumulativeReviewPolicy.definition.id ||
+            declared.id == Unit13PresentCumulativeReviewPolicy.definition.id && policy.id in setOf(
+                Unit13CumulativeReviewPolicy.definition.id, Unit13WiderCumulativeReviewPolicy.definition.id))) &&
+        !(a.targetUnit == 14 && declared.id == Unit14PluralPossessionCumulativeReviewPolicy.definition.id &&
+            policy.id == Unit14CumulativeReviewPolicy.definition.id)) return false
     if (!cumulativeReviewDeclarationValid(pack, a.targetUnit) || pack.schemaVersion != 1 ||
         !reviewAssignmentSchemaSupported(a) || a.id.isBlank() || a.boundary < 0 ||
         a.policyId != policy.id || a.policyDigest != policy.digest ||
@@ -658,35 +883,113 @@ private fun currentOrPriorActiveReviewUnitIdentityMatches(pack: V2CurriculumPack
     val current = V2PackIdentityIndex.unitDigest(pack, number) ?: V2Validator.unitContentReviewDigest(pack, number)
     if (recorded == current) return true
     return when (number) {
-        6 -> cumulativeReviewDeclarationValid(pack, 6) && recorded == priorActiveUnit6Digest(pack)
-        9 -> cumulativeReviewDeclarationValid(pack, 9) && recorded == priorActiveUnit9Digest(pack)
-        13 -> cumulativeReviewDeclarationValid(pack, 13) && recorded == priorActiveUnit13Digest(pack)
+        5 -> cumulativeReviewDeclarationValid(pack, 5) && recorded == priorActiveUnit5Digest(pack)
+        6 -> cumulativeReviewDeclarationValid(pack, 6) && recorded in priorActiveUnit6Digests(pack)
+        7 -> cumulativeReviewDeclarationValid(pack, 7) && recorded == priorActiveUnit7Digest(pack)
+        8 -> cumulativeReviewDeclarationValid(pack, 8) && recorded == priorActiveUnit8Digest(pack)
+        9 -> cumulativeReviewDeclarationValid(pack, 9) && recorded in priorActiveUnit9Digests(pack)
+        10 -> cumulativeReviewDeclarationValid(pack, 10) && recorded == priorActiveUnit10Digest(pack)
+        11 -> cumulativeReviewDeclarationValid(pack, 11) && recorded == priorActiveUnit11Digest(pack)
+        12 -> cumulativeReviewDeclarationValid(pack, 12) && recorded == priorActiveUnit12Digest(pack)
+        13 -> cumulativeReviewDeclarationValid(pack, 13) && recorded in priorActiveUnit13Digests(pack)
+        14 -> cumulativeReviewDeclarationValid(pack, 14) && recorded == priorActiveUnit14Digest(pack)
         else -> false
     }
 }
 
-private val priorActiveUnit6Digests = IdentityWeakCache<String>()
-private fun priorActiveUnit6Digest(pack: V2CurriculumPack): String = priorActiveUnit6Digests.get(pack) ?: run {
-    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 6) unit.copy(
+private val priorActiveUnit5Digests = IdentityWeakCache<String>()
+private fun priorActiveUnit5Digest(pack: V2CurriculumPack): String = priorActiveUnit5Digests.get(pack) ?: run {
+    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 5) unit.copy(
         advancement = unit.advancement!!.copy(requireDueReview = true,
-            cumulativeReviewPolicyId = Unit6CumulativeReviewPolicy.definition.id)) else unit })
-    V2Validator.unitContentReviewDigest(old, 6).also { priorActiveUnit6Digests.put(pack, it) }
+            cumulativeReviewPolicyId = Unit5CumulativeReviewPolicy.definition.id)) else unit })
+    V2Validator.unitContentReviewDigest(old, 5).also { priorActiveUnit5Digests.put(pack, it) }
 }
 
-private val priorActiveUnit9Digests = IdentityWeakCache<String>()
-private fun priorActiveUnit9Digest(pack: V2CurriculumPack): String = priorActiveUnit9Digests.get(pack) ?: run {
-    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 9) unit.copy(
-        advancement = unit.advancement!!.copy(requireDueReview = true,
-            cumulativeReviewPolicyId = Unit9CumulativeReviewPolicy.definition.id)) else unit })
-    V2Validator.unitContentReviewDigest(old, 9).also { priorActiveUnit9Digests.put(pack, it) }
+private val priorActiveUnit6DigestCache = IdentityWeakCache<Set<String>>()
+private fun priorActiveUnit6Digests(pack: V2CurriculumPack): Set<String> = priorActiveUnit6DigestCache.get(pack) ?: run {
+    val ids = listOf(Unit6CumulativeReviewPolicy.definition.id) +
+        if (pack.unit(6)?.advancement?.cumulativeReviewPolicyId == Unit6PresentCumulativeReviewPolicy.definition.id)
+            listOf(Unit6WiderCumulativeReviewPolicy.definition.id) else emptyList()
+    ids.map { policyId ->
+        val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 6) unit.copy(
+            advancement = unit.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = policyId)) else unit })
+        V2Validator.unitContentReviewDigest(old, 6)
+    }.toSet().also { priorActiveUnit6DigestCache.put(pack, it) }
 }
 
-private val priorActiveUnit13Digests = IdentityWeakCache<String>()
-private fun priorActiveUnit13Digest(pack: V2CurriculumPack): String = priorActiveUnit13Digests.get(pack) ?: run {
-    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 13) unit.copy(
+private val priorActiveUnit7Digests = IdentityWeakCache<String>()
+private fun priorActiveUnit7Digest(pack: V2CurriculumPack): String = priorActiveUnit7Digests.get(pack) ?: run {
+    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 7) unit.copy(
         advancement = unit.advancement!!.copy(requireDueReview = true,
-            cumulativeReviewPolicyId = Unit13CumulativeReviewPolicy.definition.id)) else unit })
-    V2Validator.unitContentReviewDigest(old, 13).also { priorActiveUnit13Digests.put(pack, it) }
+            cumulativeReviewPolicyId = Unit7CumulativeReviewPolicy.definition.id)) else unit })
+    V2Validator.unitContentReviewDigest(old, 7).also { priorActiveUnit7Digests.put(pack, it) }
+}
+
+private val priorActiveUnit8Digests = IdentityWeakCache<String>()
+private fun priorActiveUnit8Digest(pack: V2CurriculumPack): String = priorActiveUnit8Digests.get(pack) ?: run {
+    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 8) unit.copy(
+        advancement = unit.advancement!!.copy(requireDueReview = true,
+            cumulativeReviewPolicyId = Unit8CumulativeReviewPolicy.definition.id)) else unit })
+    V2Validator.unitContentReviewDigest(old, 8).also { priorActiveUnit8Digests.put(pack, it) }
+}
+
+private val priorActiveUnit9DigestCache = IdentityWeakCache<Set<String>>()
+private fun priorActiveUnit9Digests(pack: V2CurriculumPack): Set<String> = priorActiveUnit9DigestCache.get(pack) ?: run {
+    val ids = listOf(Unit9CumulativeReviewPolicy.definition.id) +
+        if (pack.unit(9)?.advancement?.cumulativeReviewPolicyId == Unit9NounBehaviorCumulativeReviewPolicy.definition.id)
+            listOf(Unit9WiderCumulativeReviewPolicy.definition.id) else emptyList()
+    ids.map { policyId ->
+        val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 9) unit.copy(
+            advancement = unit.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = policyId)) else unit })
+        V2Validator.unitContentReviewDigest(old, 9)
+    }.toSet().also { priorActiveUnit9DigestCache.put(pack, it) }
+}
+
+private val priorActiveUnit10Digests = IdentityWeakCache<String>()
+private fun priorActiveUnit10Digest(pack: V2CurriculumPack): String = priorActiveUnit10Digests.get(pack) ?: run {
+    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 10) unit.copy(
+        advancement = unit.advancement!!.copy(requireDueReview = true,
+            cumulativeReviewPolicyId = Unit10CumulativeReviewPolicy.definition.id)) else unit })
+    V2Validator.unitContentReviewDigest(old, 10).also { priorActiveUnit10Digests.put(pack, it) }
+}
+
+private val priorActiveUnit11Digests = IdentityWeakCache<String>()
+private fun priorActiveUnit11Digest(pack: V2CurriculumPack): String = priorActiveUnit11Digests.get(pack) ?: run {
+    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 11) unit.copy(
+        advancement = unit.advancement!!.copy(requireDueReview = true,
+            cumulativeReviewPolicyId = Unit11CumulativeReviewPolicy.definition.id)) else unit })
+    V2Validator.unitContentReviewDigest(old, 11).also { priorActiveUnit11Digests.put(pack, it) }
+}
+
+private val priorActiveUnit12Digests = IdentityWeakCache<String>()
+private fun priorActiveUnit12Digest(pack: V2CurriculumPack): String = priorActiveUnit12Digests.get(pack) ?: run {
+    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 12) unit.copy(
+        advancement = unit.advancement!!.copy(requireDueReview = true,
+            cumulativeReviewPolicyId = Unit12CumulativeReviewPolicy.definition.id)) else unit })
+    V2Validator.unitContentReviewDigest(old, 12).also { priorActiveUnit12Digests.put(pack, it) }
+}
+
+private val priorActiveUnit13DigestCache = IdentityWeakCache<Set<String>>()
+private fun priorActiveUnit13Digests(pack: V2CurriculumPack): Set<String> = priorActiveUnit13DigestCache.get(pack) ?: run {
+    // Restore only earlier declarations against all CURRENT content/teaching/rule fields.
+    // A recorded historical hash alone never authorizes unrelated content changes.
+    val ids = listOf(Unit13CumulativeReviewPolicy.definition.id) +
+        if (pack.unit(13)?.advancement?.cumulativeReviewPolicyId == Unit13PresentCumulativeReviewPolicy.definition.id)
+            listOf(Unit13WiderCumulativeReviewPolicy.definition.id) else emptyList()
+    ids.map { policyId ->
+        val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 13) unit.copy(
+            advancement = unit.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = policyId)) else unit })
+        V2Validator.unitContentReviewDigest(old, 13)
+    }.toSet().also { priorActiveUnit13DigestCache.put(pack, it) }
+}
+
+private val priorActiveUnit14Digests = IdentityWeakCache<String>()
+private fun priorActiveUnit14Digest(pack: V2CurriculumPack): String = priorActiveUnit14Digests.get(pack) ?: run {
+    // Exact prior declaration against CURRENT teaching/items/rules, never a historical-hash allowlist.
+    val old = pack.copy(units = pack.units.map { unit -> if (unit.number == 14) unit.copy(
+        advancement = unit.advancement!!.copy(requireDueReview = true,
+            cumulativeReviewPolicyId = Unit14CumulativeReviewPolicy.definition.id)) else unit })
+    V2Validator.unitContentReviewDigest(old, 14).also { priorActiveUnit14Digests.put(pack, it) }
 }
 
 private fun preReviewUnitDigest(pack: V2CurriculumPack, number: Int): String =

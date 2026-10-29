@@ -1,0 +1,74 @@
+[
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11BindingConservationTest",
+    "method": "kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord",
+    "outcome": "FAILED",
+    "seconds": "0.126",
+    "messagePreview": "java.lang.AssertionError: expected:<6> but was:<7>",
+    "fullMessageBytes": 50,
+    "fullMessageSha256": "e8cd33f39c06d75524a4cd4703ad74c967685523291890f3d3a31a8c9d1d3bc0"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11BindingConservationTest",
+    "method": "currentDeclarationReconstructsOnlyUnit11ThenEveryGenuineEarlierPack",
+    "outcome": "FAILED",
+    "seconds": "4.267",
+    "messagePreview": "java.lang.AssertionError: expected:<[V2Unit(number=1, id=unit-1, title=Learning to read Russian, shortLabel=Printed letters, topicSummary=Content-complete development unit for printed letters: identities, print pairs, look-alikes, signs, and letter-level decoding. Qualified review and the owned-edition mapping are still pending., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=1, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed Lesson 1 mapping from the publisher's public table of contents. Owned-edition comparison is not signed, so this unit is not labeled aligned., prerequisiteUnitNumbers=[], estimatedMinutes=152, objectives=[V2Objective(id=obj-u1-letter-identity, unitNumber=1, title=Identify staged printed letters, kind=RECOGNITION, instructionStepIds=[u1-st-vowels, u1-st-cons, u1-st-system], exampleIds=[ex-letter-0410, ex-letter-0411, ex-letter-0413, ex-letter-0414, ex-letter-0416, ex-letter-0417, ex-letter-0418, ex-letter-041a, ex-",
+    "fullMessageBytes": 2060003,
+    "fullMessageSha256": "5a295791a088d612178bcd516618b44df870dfe88988c7392abffde52f730885"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11NounCompatibilityTest",
+    "method": "exactPriorDeclarationRefusesSchemaThirteenAndPreservesDownstreamOwnerIdentity",
+    "outcome": "FAILED",
+    "seconds": "1.082",
+    "messagePreview": "java.lang.AssertionError: The genuine old pack differs only by the Unit11 declaration expected:<V2CurriculumPack(schemaVersion=1, packId=v2-curriculum-foundation, packVersion=3, publicReleaseEligible=false, linguisticReview=V2ReviewRecord(id=rev-pending-v2-curriculum, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=Pack-level status is not a unit approval. Each unit has its own pending review record., reviewChainStages=[], evidence=null, finalAudit=null), unitReviews=[V2UnitReviewRecord(id=rev-pending-unit-1, unitNumber=1, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=No qualified reviewer has signed Unit 1., reviewChainStages=[], evidence=null, finalAudit=null), V2UnitReviewRecord(id=rev-pending-unit-2, unitNumber=2, status=IMPLEMENTED_PENDING_FINAL_AUDIT, revi",
+    "fullMessageBytes": 62178613,
+    "fullMessageSha256": "f70f48b39b82c3cef18fbcb39e1fb50b78dc7b34f7fc132a31fda376a06aa4cc"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit12CumulativeReviewTest",
+    "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+    "outcome": "FAILED",
+    "seconds": "21.383",
+    "messagePreview": "java.lang.AssertionError: expected:<[obj-u1-decoding, obj-u11-past-aspect]> but was:<[obj-u3-gender, obj-u11-past-aspect]>",
+    "fullMessageBytes": 122,
+    "fullMessageSha256": "2d2ea652d130d541ade8479304b2c2784ef74e617ea7d0fe5aab30efae54159c"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit12CumulativeReviewTest",
+    "method": "placementWithTaughtUnit1ButUntaughtUnit11RepairsTheMissingOwnerInsteadOfUnit1",
+    "outcome": "FAILED",
+    "seconds": "0.625",
+    "messagePreview": "java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [Open earlier Unit 11 instruction and checks])\nSemantics of the node:\nNode #1375 at (l=24.0, t=148.0, r=296.0, b=200.0)px, Tag: 'v2-review-repair'\nFocused = 'false'\nRole = 'Button'\nShape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'\nText = '[Open earlier Unit 3 instruction and checks]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]\nMergeDescendants = 'true'\nHas 3 siblings\nSelector used: (TestTag = 'v2-review-repair')\n",
+    "fullMessageBytes": 703,
+    "fullMessageSha256": "8eaef9cd706e69e9ae225acb0d2f3c86036cde6da89ba0e4ee294703ace39c81"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+    "method": "structuralMappingsMatchTheOwnedEditionObservations",
+    "outcome": "FAILED",
+    "seconds": "8.257",
+    "messagePreview": "org.junit.ComparisonFailure: unit 12 expected:<[1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97]> but was:<[8c3ae9bbd682e069dbcd4dc579c30af36bbce321120ce7da804260e5a44d7033]>",
+    "fullMessageBytes": 191,
+    "fullMessageSha256": "4176958734b1c6ba155def5139c138bd151dedb3c19974505c2e05fcfa9fb688"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+    "method": "structuralMappingsAreDigestBoundAndStayUnsigned",
+    "outcome": "FAILED",
+    "seconds": "10.176",
+    "messagePreview": "org.junit.ComparisonFailure: unchanged current unit 12 expected:<[1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97]> but was:<[8c3ae9bbd682e069dbcd4dc579c30af36bbce321120ce7da804260e5a44d7033]>",
+    "fullMessageBytes": 209,
+    "fullMessageSha256": "f67a0bddad7952c956c8377e16d36a2ffa97f3345c4c4956488d3e6af6d4d771"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+    "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+    "outcome": "FAILED",
+    "seconds": "21.979",
+    "messagePreview": "org.junit.ComparisonFailure: unit 12 expected:<[1c5d43e55bbd627515f1fab69ddea0406fecf2257ba696acbfd88b413c404f97]> but was:<[8c3ae9bbd682e069dbcd4dc579c30af36bbce321120ce7da804260e5a44d7033]>",
+    "fullMessageBytes": 191,
+    "fullMessageSha256": "4176958734b1c6ba155def5139c138bd151dedb3c19974505c2e05fcfa9fb688"
+  }
+]

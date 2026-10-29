@@ -1,0 +1,55 @@
+[
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit10BindingConservationTest.kt",
+    "originalSha256": "65c4382168b6af9208a33686aa254b19d1374c6b5ac337d0423f2622e1259422",
+    "preparedSha256": "b96fafd7b0c292a28ca4c44e7e402dcbace74fb1323039567f984142487914a6",
+    "allOriginalNonblankLinesInOrderExcept": [
+      "val now = Json.parseToJsonElement(File(root, path).readText()).jsonObject",
+      "val actual = MessageDigest.getInstance(\"SHA-256\").digest(File(root, \"app/$name\").readBytes()).joinToString(\"\") { \"%02x\".format(it) }"
+    ],
+    "allOriginalAssertionsAndPinsRetained": true,
+    "sourceCommit": "6dd46bd664fdd93e917228d71f50c42b395d196e",
+    "gitBlob": "43a18fd82653ea3ae2befc8f83a04767139caa16",
+    "historical": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit10PresentCompatibilityTest.kt",
+    "originalSha256": "8848fd3521ff68c06c0c5db37ea93ae06dbb250b14f4aee47a0b944cdecf78a1",
+    "preparedSha256": "4321c3d82eec1362552ef584a4f1c43f8eb507cd15eb6d14752c457b8ed04d80",
+    "allOriginalNonblankLinesInOrderExcept": [],
+    "allOriginalAssertionsAndPinsRetained": true,
+    "sourceCommit": "6dd46bd664fdd93e917228d71f50c42b395d196e",
+    "gitBlob": "3cfa41afba717668078e39081eb88b53df6f75c3",
+    "historical": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit11AgreementRemediationTest.kt",
+    "originalSha256": "f32c35f7fbd9381312ab0a06eadfa7c5329fa25b0d7b520e0e0732e0f2e6554e",
+    "preparedSha256": "bed93586f37f170e8453640a61e8c7aa8efc92ec9b1cadd1fb048acfc778e50a",
+    "allOriginalNonblankLinesInOrderExcept": [],
+    "allOriginalAssertionsAndPinsRetained": true,
+    "sourceCommit": "6dd46bd664fdd93e917228d71f50c42b395d196e",
+    "gitBlob": "b5dce33a67e4f786c3609381785ef051de3cd64c",
+    "historical": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit11CumulativeReviewTest.kt",
+    "originalSha256": "1c9dcebea48058a2bd4b5536c5567af1c1094311f355f427d58562f4ab4e30ee",
+    "preparedSha256": "c0feddf1d8a46c97f83d621f91f7bc8015a26ffbc0060e0554c67e6cb88cd624",
+    "allOriginalNonblankLinesInOrderExcept": [],
+    "allOriginalAssertionsAndPinsRetained": true,
+    "sourceCommit": "6dd46bd664fdd93e917228d71f50c42b395d196e",
+    "gitBlob": "a6b8619c36e396d1ca375cbbbe5f0e488c44b2da",
+    "historical": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+    "originalSha256": "88363754d85d59c75c557624b65328397e72034a07a3d68ff516ee4fb0232535",
+    "preparedSha256": "48fdfda0d5eb6e977999a7fcb67c369fdf353a423c3e1e160574c43310a94ca4",
+    "allOriginalNonblankLinesInOrderExcept": [],
+    "allOriginalAssertionsAndPinsRetained": true,
+    "sourceCommit": "6dd46bd664fdd93e917228d71f50c42b395d196e",
+    "gitBlob": "a79d03115698b34ecf501b37b4507ccf8aea11b7",
+    "historical": true
+  }
+]

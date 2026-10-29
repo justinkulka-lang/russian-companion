@@ -1,0 +1,34 @@
+{
+  "status": "UNIT5_BOUNDED_REPAIR_WITH_SEPARATE_GUARD_FOLLOWUP_VERIFIED",
+  "testedSource": "e43a8e52d8a4008c0963b5e14fbbb6c228b84cfc",
+  "counts": {
+    "reported": 144,
+    "passed": 142,
+    "failed": 2,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 21,
+  "followupSource": "2c118a155b98ce9e9628be33b22ba88bebd915fc",
+  "followupCounts": {
+    "reported": 14,
+    "passed": 14,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "followupClasses": 2,
+  "freshAllPass144": false,
+  "followupHeadMatchesInputTrees": true,
+  "canonicalKotlinDigest": "2841d875e63291f0859007c8f5bdd6fae43709cadc339ad1635ca7292a17e4bd",
+  "twoFreshJvmRendersIdentical": true,
+  "prior95Unchanged60Current155Verified": true,
+  "original66ArchivesAndEarlierScopeHashesVerified": true,
+  "xmlEventsDiscoveryExact": true,
+  "currentHeadMatchesInputTrees": false,
+  "currentHeadMatches155Files": true,
+  "completeSuite": false,
+  "findingsClosed": 0,
+  "independentAudit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

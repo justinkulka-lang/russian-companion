@@ -1,0 +1,49 @@
+{
+  "originalFiles": [
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit10CumulativeReviewTest.kt",
+      "sourceCommit": "571f71c8fbb8210d7a5e97bda32a7f5585f15f03",
+      "gitBlob": "e49c09339805e9899c13a22279fc25ff3af5ad54",
+      "bytes": 20675,
+      "sha256": "f098b4414da8b368c22843be3d0a53a78559a6ec556172735608926d891be829",
+      "appliedSha256": "efdf52d559c175077afc31a121b505b05420673a13bbb17bafd7f1bfba741aa3",
+      "allOriginalAssertionAndSourcePinLinesRetained": true,
+      "allOriginalNonblankLinesRetainedExcept": []
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit9BindingConservationTest.kt",
+      "sourceCommit": "571f71c8fbb8210d7a5e97bda32a7f5585f15f03",
+      "gitBlob": "99365016203a996f2c3945b557e49ec5a628c8b8",
+      "bytes": 4998,
+      "sha256": "894bcb4fc85cff44252ec22ad76aabd0afdaa8fbdb52d27058bedc1655f2140f",
+      "appliedSha256": "eb508a10d6ba486a339b452701a4ae692eeba3fc1c59f96561c62fc0faf2d0b4",
+      "allOriginalAssertionAndSourcePinLinesRetained": true,
+      "allOriginalNonblankLinesRetainedExcept": [
+        "val now = Json.parseToJsonElement(File(root, path).readText()).jsonObject",
+        "val actual = MessageDigest.getInstance(\"SHA-256\").digest(File(root, \"app/$name\").readBytes()).joinToString(\"\") { \"%02x\".format(it) }"
+      ]
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Unit9NounBehaviorCompatibilityTest.kt",
+      "sourceCommit": "571f71c8fbb8210d7a5e97bda32a7f5585f15f03",
+      "gitBlob": "f90711f9ff385804019c9ae099b094dfc9325e05",
+      "bytes": 14488,
+      "sha256": "5508ffb885e9353b74d9fd040a8b87a30cd34f66f0e4c4fbfbd7bc7713c5c6a9",
+      "appliedSha256": "2c8f8735b802d66b5b330763c290291b6f36f97adfb72138a6667d5bd3598b4d",
+      "allOriginalAssertionAndSourcePinLinesRetained": true,
+      "allOriginalNonblankLinesRetainedExcept": []
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+      "sourceCommit": "571f71c8fbb8210d7a5e97bda32a7f5585f15f03",
+      "gitBlob": "26f17dab4b6bd49e524271249bd30aa92dd6ba6a",
+      "bytes": 69266,
+      "sha256": "e90797e10dfe2c56f16a1949b431828467fa4fda20e90b66ee35841bf18e68db",
+      "appliedSha256": "88363754d85d59c75c557624b65328397e72034a07a3d68ff516ee4fb0232535",
+      "allOriginalAssertionAndSourcePinLinesRetained": true,
+      "allOriginalNonblankLinesRetainedExcept": []
+    }
+  ],
+  "everyOriginalAssertionAndSourcePinRetained": true,
+  "twoNonassertHistoricalInputReadsExplicit": true
+}

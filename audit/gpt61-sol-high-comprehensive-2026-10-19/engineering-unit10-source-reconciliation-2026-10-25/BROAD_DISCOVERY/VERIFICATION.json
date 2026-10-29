@@ -1,0 +1,35 @@
+{
+  "sourceCommit": "feba673c885d0dddc7c267a241355688a914ac38",
+  "sourceRootTree": "a3e7bbdb740e6f2b076ca8333f2d75302355f32b",
+  "inputTrees": {
+    "app/src/main": "f6ae9312cae954b9b16cd61f267069f9c961b5b8",
+    "app/src/test": "2680ec7a78e88c5b88365ad34893573e535e319f",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "5a43caa0bfc259bd2a76289a71b594db9092da8d",
+    "release": "31938253a0ef74d2f15e2abbcca156d3e9567658"
+  },
+  "testCounts": {
+    "reported": 1425,
+    "passed": 0,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 1425
+  },
+  "classes": 245,
+  "exitCode": 0,
+  "all1410EarlierMethodIdentitiesPreserved": true,
+  "addedMethods": 15,
+  "rawCrcAndEveryMemberShaVerified": true,
+  "testsExecuted": 0,
+  "actualBroadRuntime": "PREPARED_NOT_LAUNCHED",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "all48Findings": "OPEN",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}

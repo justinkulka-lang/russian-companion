@@ -1,0 +1,12 @@
+{
+  "currentAssetSha256": "765f06b3719192a5b0f19df553e3a5f20d00e2e7eb42130c908ceac15e4a9acf",
+  "oldAssetSha256": "3794291aa948ea5b3ee68ad1f5d7c65b73e19d95d598d8525ee2cae0e070f670",
+  "currentProducer": "bd00e5082c9f31d2ae3b379dd6204dd3b28e4475",
+  "oldProducer": "ca0fdaeca8de81ab6a5d4935fbcdcb068c4af913",
+  "matchingHistoricalCheckpoint": "31ac807387253082c44bd2f6d67021478f0df66e",
+  "onlyRawByteDifference": {
+    "oldPolicy": "unit13-prior-reading-aspect-past-gender-v2",
+    "newPolicy": "unit13-prior-present-aspect-past-gender-v3"
+  },
+  "noOtherAssetFieldChanged": true
+}

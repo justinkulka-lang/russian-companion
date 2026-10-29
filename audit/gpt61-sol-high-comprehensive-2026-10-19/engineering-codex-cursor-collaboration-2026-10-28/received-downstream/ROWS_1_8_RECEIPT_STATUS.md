@@ -1,0 +1,1 @@
+Report and30CSVrows received:1–8 and27–48. Still missing34rows:9–26 and49–64. All new rows parse with13columns and method declaration references match the pinned source. Original attachments, fragments and earlier receipt records are unchanged. No repository mutation or execution. All48OPEN; auditINCOMPLETE; physicalLAST.

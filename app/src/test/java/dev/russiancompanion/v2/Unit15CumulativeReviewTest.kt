@@ -327,6 +327,7 @@ class Unit15CumulativeReviewTest {
         ordinary(p, s, 14)
         val fourteenth = s.openCumulativeReview(p, 14, s.learnerMutationEpoch())!!
         answer(p, s, fourteenth, 0); answer(p, s, fourteenth, 1)
+        fourteenth.slots.indices.drop(2).forEach { answer(p, s, fourteenth, it) }
         runBlocking { advanceFrom(p, s, 14) }
         ordinary(p, s, 15)
         assertEquals((1..14).toSet(), currentCompletedUnitNumbers(p, s.v2LearnerView()))

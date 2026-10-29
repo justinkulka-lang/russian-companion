@@ -1,0 +1,24 @@
+{
+  "currentSource": "5a3411a76b88753617ea18b3e1a54f44f6923b9f",
+  "currentCapabilityCount": 58,
+  "historicalSources": [
+    {
+      "sourceCommit": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
+      "count": 58,
+      "addedSinceThisSource": [],
+      "removedSinceThisSource": [],
+      "changedExistingIds": []
+    },
+    {
+      "sourceCommit": "8606c4d74185f594d93941bef6858b2af28e0b75",
+      "count": 58,
+      "addedSinceThisSource": [],
+      "removedSinceThisSource": [],
+      "changedExistingIds": []
+    }
+  ],
+  "allCurrent58RequireActualIndependentInspection": true,
+  "reportedEarlierCount": 37,
+  "reportedEarlierCountVerified": false,
+  "scopeNote": "Raw inspection finds58capabilityobjects at both5c176eb2and8606c4d7aswellascurrent5a3411a7. Earlier37wasareportedhandoffcount,notverifiedcapscope;itmustnotrestrictreviewordescribe21newobjects."
+}

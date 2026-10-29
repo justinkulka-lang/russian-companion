@@ -1,0 +1,20 @@
+{
+  "sourceCommit": "05407a70d1d70b196ef21b25cff51357c072c087",
+  "sourceRootTree": "1715e44a49835c21fde958180523135037235f2b",
+  "inputTrees": {
+    "app/src/main": "23c9fc7516de26ee34dcaf94188a0484500cffc6",
+    "app/src/test": "1eb1eb7fcee5cc9b888f3bbdaa30f26d12c75372",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "09daea049e808ff3684de9a8394d6812eb391f66",
+    "release": "e10d527ac640e73556088bf9319ad25764107723"
+  },
+  "rawCurriculumSha256": "89e13525a0f5d60ad0455b7000d3e880db217d3a4a74e327164c3ef29750ff96",
+  "kernelSha256": "74f3c454eda66697722b0fe6c76ff8044406371600b021f3cd7b50de4d2657ef",
+  "authorityHashes": {
+    "MASTER_AUTHORITY_v2.0.md": "2736372535c82dc5a2c5ac42ab42fad0756169095f799da758c36c88f9b2af4c",
+    "MASTER_AUTHORITY_v2.0_AMENDMENT_1.md": "9e941010465fb2b81bf21e7d18eb6b2b681b528d176f477d299ae8d91bf56253"
+  },
+  "privatePdf": "NOT_READ_OR_PACKAGED",
+  "newRuntimeMethods": 0
+}

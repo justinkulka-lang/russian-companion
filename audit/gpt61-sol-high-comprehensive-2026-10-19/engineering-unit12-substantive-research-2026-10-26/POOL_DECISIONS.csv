@@ -1,0 +1,22 @@
+objective,decision,reason,limit
+obj-u1-decoding,REPLACE_REPEATED_PRINT_SLOT,Old Unit12 repeats the same Unit1 print pair,Preserve savedv1 meaning;removal is proposed only
+obj-u3-gender,SELECT_EXACT_EXISTING_POOL,Five already taught lexical genders with full fivecard16example repair,Rehearsed record labels;already recurs5/7/9;not unseen nouns or productive agreement
+obj-u4-present,DEFER_ALTERNATIVE,Existing four-item suppliedpresent pool was just assigned inUnit10,Finite taught forms;not productive conjugation
+obj-u4-nominative,DEFER_ALTERNATIVE,Existing two-item subject-role pool is available,Both checks use same correct English classification;not stronger transferproof
+obj-u5-indeclinable,DEFER_ALTERNATIVE,Exact five-item noun-behavior pool was just assigned inUnit11,Finite labels and repeated lexical examples
+obj-u6-animacy,DEFER_ALTERNATIVE,Three ordinary checks mix animate forms with inanimate Englishclassification,Existing registered inanimate skill cannot silently cover animate pool
+obj-u7-endings,DEFER_ALTERNATIVE,Four checks mix genitive/plural/dictionary/nominative agreement,Narrow existing reviewskill must not silently claim all transformations
+obj-u8-plural,DEFER_ALTERNATIVE,Six ordinary checks versus the narrower existing review singleton,Widening needs its own bounded source/skill/repair analysis
+obj-u9-odindva,DEFER_ALTERNATIVE,Five ordinary agreement checks versus singleton just assigned inUnit10,One/two/plural distinctions need bounded separate widening
+obj-u10-have,DEFER_ALTERNATIVE,Four supplied possession/absence checks just assigned inUnit11,Rehearsed lines and negativecue shortcuts;not productivegenitive
+obj-u10-absence,DEFER_ALTERNATIVE,Overlaps supplied lines and labels already inhavepool,Avoid inflatingunique coverage through duplicated constructions
+obj-u11-past-read,DEFER_ALTERNATIVE,Masculine token and feminine clause checks use anotherverb,Do not silently expand exact same-lemma pastgender pool to number/clause distinctions
+obj-u11-past-be,DEFER_ALTERNATIVE,Two pluralpast checks differ in cue but share correctanswer,Plural number is not the selected singular-gender evidence
+obj-u11-past-aspect,SELECT_EXACT_EXISTING_TWO_ITEM_POOL,Exact currentUnit13pool already combines masculine andfeminine checks with fullrepair,Two rehearsed checks/rawkey0both/sameverb;not aspect/production/unseentransfer
+obj-u11-reflexive,DEFER_ALTERNATIVE,Feminine reflexiveclause/token checks include plural distractors,Do not broaden supported singularpastgender label to reflexive/clausecompetence
+obj-u12-future-imp,ORDINARY_CURRENT_TARGET_NOT_PRIOR,Current Unit12 scoredobjective remains mandatory,Not priorcumulative material;no qualifiedacceptance granted
+obj-u12-future-perf,ORDINARY_CURRENT_TARGET_NOT_PRIOR,Current Unit12 scoredobjective remains mandatory,Not priorcumulative material;no qualifiedacceptance granted
+obj-u12-aspect,ORDINARY_CURRENT_TARGET_NOT_PRIOR,Current Unit12 scoredobjective remains mandatory and feedsUnit13,Owner12 downstream identity needs conservation after laterdeclarationchange
+obj-u12-dative,ORDINARY_CURRENT_TARGET_NOT_PRIOR,Current Unit12 scoredobjective remains mandatory,Not priorcumulative material;no qualifiedacceptance granted
+obj-u12-spelling,ORDINARY_CURRENT_TARGET_NOT_PRIOR,Current Unit12 scoredobjective remains mandatory,Rejectedspelling keyed by explicit question;not approved as usableRussian
+obj-u12-prep-plural,ORDINARY_CURRENT_TARGET_NOT_PRIOR,Current Unit12 scoredobjective remains mandatory,Not priorcumulative material;no qualifiedacceptance granted

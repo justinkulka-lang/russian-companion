@@ -1,0 +1,65 @@
+[
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit13BindingConservationTest.kt",
+    "originalSha256": "2c2403f12250d761acca59dbca848ab7967c0821e26840462c04a9dcb369ef24",
+    "newSha256": "95a877cea08060ec14e164cacc11c25f78c9b88ea6714c41df04c6980ffb6db5",
+    "originalAssertionInvocations": 33,
+    "newAssertionInvocations": 38,
+    "everyOriginalAssertionPreservedInOrder": true,
+    "noTestMethodAddedOrRemoved": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit13PresentCompatibilityTest.kt",
+    "originalSha256": "3894aaa757e90f8f7dcbe6249a926ae7db469a16c8d14579205b911229a960b2",
+    "newSha256": "6d2bef866af0d2578dbc9ce41f77906a4ad0b18434bbfe2887f2d916e6a8fa10",
+    "originalAssertionInvocations": 80,
+    "newAssertionInvocations": 85,
+    "everyOriginalAssertionPreservedInOrder": true,
+    "noTestMethodAddedOrRemoved": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit14CumulativeReviewTest.kt",
+    "originalSha256": "a5f142557bc49891a92a18020a10f959acb88da097f2599c362809b4c8122fc3",
+    "newSha256": "056f46c027edef116e356f28de29b7ee4af954d60954b04ee758c1ea3e62d00e",
+    "originalAssertionInvocations": 88,
+    "newAssertionInvocations": 88,
+    "everyOriginalAssertionPreservedInOrder": true,
+    "noTestMethodAddedOrRemoved": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit14ImpersonalRemediationTest.kt",
+    "originalSha256": "a7b42feee80d2b2cc5de83dfd980d758a2fd97e9af4a4ce14c65714e960605ce",
+    "newSha256": "b9677c28d1c6f1b1bd842b4d26295dbe331506f9f79d6d7d42f459da0b7cbf86",
+    "originalAssertionInvocations": 56,
+    "newAssertionInvocations": 57,
+    "everyOriginalAssertionPreservedInOrder": true,
+    "noTestMethodAddedOrRemoved": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Unit15CumulativeReviewTest.kt",
+    "originalSha256": "3b1710e2490392ccd6f0b7a544f89f02468c0eed0dde17a34978f78428173727",
+    "newSha256": "57ef9942f2070ac403e04e040ab8dc0bd281b57a02e1f370d1d2c8eb1b4f6ed3",
+    "originalAssertionInvocations": 88,
+    "newAssertionInvocations": 88,
+    "everyOriginalAssertionPreservedInOrder": true,
+    "noTestMethodAddedOrRemoved": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Units1620SourceIntakeTest.kt",
+    "originalSha256": "e5cdcf41e7a7267e11ead97602bb381a1be5c167d5173e1cf3298d005c31ce04",
+    "newSha256": "2d06dee809246193acf3cf54c32e4d2f490e1b90e96e31d7de13fa294c037f00",
+    "originalAssertionInvocations": 134,
+    "newAssertionInvocations": 137,
+    "everyOriginalAssertionPreservedInOrder": true,
+    "noTestMethodAddedOrRemoved": true
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt",
+    "originalSha256": "a74574caabcb17996a410543b78b747d900715a95e7af82fe6351528218504bc",
+    "newSha256": "28156f14abda2f34a37f2bf50ea9c9520fe8a8ac28d3f463c7f17142fe07d9c6",
+    "originalAssertionInvocations": 278,
+    "newAssertionInvocations": 281,
+    "everyOriginalAssertionPreservedInOrder": true,
+    "noTestMethodAddedOrRemoved": true
+  }
+]

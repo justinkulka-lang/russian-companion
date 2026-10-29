@@ -1,0 +1,113 @@
+{
+  "utc": "2026-10-24T01:24:58.959607+00:00",
+  "state": "PARTIAL_FAILURE_OBSERVATIONS_NOT_FINAL_RESULTS",
+  "sourceCommit": "b07432aada33a636d1ab547f8537da02208649ec",
+  "failureCount": 8,
+  "failures": [
+    {
+      "className": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable",
+      "atMillis": 1792794839685,
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "expected:<[]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt]>",
+          "fullMessageBytes": 96,
+          "fullMessageSha256": "b598037e01d0d0a12ff23e9875cfa9dc345442718ce21395217f3b5303457b1a"
+        }
+      ]
+    },
+    {
+      "className": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "method": "changedMovedAndMissingComparisonFilesRemainBlocked",
+      "atMillis": 1792794853987,
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "expected:<[src/main/java/dev/russiancompanion/v2/curriculum/Unit13ReportedPins.kt]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/Unit13ReportedPins.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt]>",
+          "fullMessageBytes": 238,
+          "fullMessageSha256": "4cd0569faf981ee34c229825456781c72005d3962d2ab9d39d1c6280232e434a"
+        }
+      ]
+    },
+    {
+      "className": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "method": "coherentSourceForgeryAndRemovedItemIdsCannotKeepUnchangedCodeAdmitted",
+      "atMillis": 1792794854510,
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "expected:<[src/main/java/dev/russiancompanion/v2/curriculum/BatchBSources.kt]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/BatchBSources.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt]>",
+          "fullMessageBytes": 228,
+          "fullMessageSha256": "2703642f91a01f10a1a991920d5020d7a6879ab7f04bcb2f5b2e92ae1da33f86"
+        }
+      ]
+    },
+    {
+      "className": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "method": "exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus",
+      "atMillis": 1792794854853,
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "expected:<[]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt]>",
+          "fullMessageBytes": 96,
+          "fullMessageSha256": "b598037e01d0d0a12ff23e9875cfa9dc345442718ce21395217f3b5303457b1a"
+        }
+      ]
+    },
+    {
+      "className": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "method": "newUiResourceAndCurriculumTextCannotBorrowAnExistingLiteral",
+      "atMillis": 1792794855290,
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "expected:<[src/main/java/dev/russiancompanion/v2/curriculum/Unreviewed.kt, src/main/java/dev/russiancompanion/v2/ui/Unreviewed.kt, src/main/res/values/unreviewed.xml]> but was:<[src/main/java/dev/russiancompanion/v2/curriculum/Unreviewed.kt, src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt, src/main/java/dev/russiancompanion/v2/ui/Unreviewed.kt, src/main/res/values/unreviewed.xml]>",
+          "fullMessageBytes": 406,
+          "fullMessageSha256": "311c6926552ae1e6f1c58abdbba37a004d91512f991328baa06edc57a07ad617"
+        }
+      ]
+    },
+    {
+      "className": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+      "method": "currentRulesRetainUnit10CasesAndExactPositiveExistenceTeaching",
+      "atMillis": 1792795988566,
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "expected:<V2CurriculumPack(schemaVersion=1, packId=v2-curriculum-foundation, packVersion=3, publicReleaseEligible=false, linguisticReview=V2ReviewRecord(id=rev-pending-v2-curriculum, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=Pack-level status is not a unit approval. Each unit has its own pending review record., reviewChainStages=[], evidence=null, finalAudit=null), unitReviews=[V2UnitReviewRecord(id=rev-pending-unit-1, unitNumber=1, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappi",
+          "fullMessageBytes": 62178519,
+          "fullMessageSha256": "e2479adce091ff905a870d790dfe4cf1ee19cf63bd8db30c6c6b34fcf4392b2e"
+        }
+      ]
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "atMillis": 1792805013825,
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "expected:<[obj-u1-decoding, obj-u5-indeclinable, obj-u4-nominative]> but was:<[obj-u4-present, obj-u5-indeclinable, obj-u4-nominative]>",
+          "fullMessageBytes": 135,
+          "fullMessageSha256": "d55cb701e02cbb693d4adcc82b4a9fbae5ea0e87cf2130c74df0d98d1f1e75c4"
+        }
+      ]
+    },
+    {
+      "className": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit5RepairsTheMissingOwnerInsteadOfUnit1",
+      "atMillis": 1792805014402,
+      "exceptions": [
+        {
+          "type": "java.lang.AssertionError",
+          "messagePreview": "Failed to assert the following: (Text + EditableText = [Open earlier Unit 5 instruction and checks])\nSemantics of the node:\nNode #990 at (l=24.0, t=148.0, r=296.0, b=200.0)px, Tag: 'v2-review-repair'\nFocused = 'false'\nRole = 'Button'\nShape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'\nText = '[Open earlier Unit 4 instruction and checks]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]\nMergeDescendants = 'true'\nHas 3 siblings\nSelector used: (TestTag = 'v2-review-repair')\n",
+          "fullMessageBytes": 675,
+          "fullMessageSha256": "03c24d22c13be35a966887f433e83bd0d9171c39c15c2bd89e788642b5e2508a"
+        }
+      ]
+    }
+  ],
+  "sourceCorrectionsApplied": false
+}

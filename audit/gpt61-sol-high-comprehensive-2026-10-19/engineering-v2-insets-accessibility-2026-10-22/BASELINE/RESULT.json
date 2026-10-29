@@ -1,0 +1,100 @@
+{
+  "sourceCommit": "e1871a59d2b0b41d71dfcf0fa11b1903fa84792f",
+  "inputTrees": {
+    "app/src/main": "3a94f58d6927e53bb78e20b99a7e1ea5e9039a4b",
+    "app/src/test": "bd20db34ede7b02f6c3bae82ec77b75099c39f32",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "88afd115e13f41a7a5ebeca6021fb8874164818e",
+    "release": "13f7017696fdfd04d37be121651809cdbeecd607"
+  },
+  "testCounts": {
+    "passed": 0,
+    "failed": 7,
+    "errors": 0,
+    "skipped": 0,
+    "reported": 7
+  },
+  "classes": 1,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.V2InsetsAccessibilityTest",
+      "method": "lazyScaffoldRespectsSystemCutoutAndKeyboardInsetsWithoutDoublePadding",
+      "outcome": "FAILED",
+      "seconds": "5.254",
+      "message": "java.lang.AssertionError: Title must clear status bar: Rect.fromLTRB(614.0, 54.0, 620.0, 138.0)"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2InsetsAccessibilityTest",
+      "method": "onboardingRadioHasOneLabelledActionAndChangesSelection",
+      "outcome": "FAILED",
+      "seconds": "0.365",
+      "message": "java.lang.AssertionError: Failed to assert the following: (OnClick is defined)\nSemantics of the node:\nNode #121 at (l=216.0, t=462.0, r=243.0, b=497.0)px\nText = '[I can already read Cyrillic]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 1 sibling\nSelector used: (Text + InputText + EditableText contains 'I can already read Cyrillic' (ignoreCase: false))\n"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2InsetsAccessibilityTest",
+      "method": "scrollingScaffoldRespectsSystemCutoutAndKeyboardInsetsWithoutDoublePadding",
+      "outcome": "FAILED",
+      "seconds": "0.144",
+      "message": "java.lang.AssertionError: Title must clear status bar: Rect.fromLTRB(614.0, 54.0, 620.0, 138.0)"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2InsetsAccessibilityTest",
+      "method": "lessonOptionLabelSelectsValueOnceAndExposesSelectedState",
+      "outcome": "FAILED",
+      "seconds": "2.506",
+      "message": "java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains 'Latin A' (ignoreCase: false))\nSemantics of the node:\nNode #234 at (l=108.0, t=946.0, r=180.0, b=1018.0)px, Tag: 'v2-option-u1-i-\u0430-identity-Latin A'\nFocused = 'false'\nRole = 'RadioButton'\nSelected = 'false'\nActions = [OnClick, RequestFocus]\nMergeDescendants = 'true'\nHas 1 sibling\nSelector used: (TestTag = 'v2-option-u1-i-\u0430-identity-Latin A')\n"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2InsetsAccessibilityTest",
+      "method": "onboardingCheckboxLabelOwnsToggleActionAndCheckedState",
+      "outcome": "FAILED",
+      "seconds": "0.104",
+      "message": "java.lang.AssertionError: Failed to assert the following: (OnClick is defined)\nSemantics of the node:\nNode #294 at (l=216.0, t=318.0, r=231.0, b=353.0)px\nText = '[I have the book]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, SetTextSubstitution, ShowTextSubstitution]\nHas 1 sibling\nSelector used: (Text + InputText + EditableText contains 'I have the book' (ignoreCase: false))\n"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2InsetsAccessibilityTest",
+      "method": "practiceOptionHasLabelledActionAndKeepsSubmissionSeparate",
+      "outcome": "FAILED",
+      "seconds": "0.206",
+      "message": "java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains '\u043d\u043e\u0301\u0432\u044b\u0435' (ignoreCase: false))\nSemantics of the node:\nNode #338 at (l=108.0, t=479.0, r=180.0, b=551.0)px, Tag: 'v2-lab-option-\u043d\u043e\u0301\u0432\u044b\u0435'\nFocused = 'false'\nRole = 'RadioButton'\nSelected = 'false'\nActions = [OnClick, RequestFocus]\nMergeDescendants = 'true'\nHas 1 sibling\nSelector used: (TestTag = 'v2-lab-option-\u043d\u043e\u0301\u0432\u044b\u0435')\n"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2InsetsAccessibilityTest",
+      "method": "lockedLessonOptionRemainsLabelledAndCannotSubmit",
+      "outcome": "FAILED",
+      "seconds": "0.136",
+      "message": "java.lang.AssertionError: Failed to assert the following: (Text + InputText + EditableText contains 'Latin A' (ignoreCase: false))\nSemantics of the node:\nNode #381 at (l=108.0, t=946.0, r=180.0, b=1018.0)px, Tag: 'v2-option-u1-i-\u0430-identity-Latin A'\nRole = 'RadioButton'\nSelected = 'false'\n[Disabled]\nActions = [OnClick]\nMergeDescendants = 'true'\nHas 1 sibling\nSelector used: (TestTag = 'v2-option-u1-i-\u0430-identity-Latin A')\n"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.V2InsetsAccessibilityTest",
+      "tests": "7",
+      "skipped": "0",
+      "failures": "7",
+      "errors": "0",
+      "timestamp": "2026-10-22T20:06:42.089Z",
+      "hostname": "d0aced911621",
+      "time": "9.648"
+    }
+  ],
+  "exitCode": 1,
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin",
+    "compileDebugSources": "NOT_REQUESTED_OR_NOT_REACHED",
+    "lintAnalyzeDebug": "NOT_REQUESTED_OR_NOT_REACHED",
+    "lintAnalyzeDebugUnitTest": "NOT_REQUESTED_OR_NOT_REACHED",
+    "lintDebug": "NOT_REQUESTED_OR_NOT_REACHED",
+    "verifyReleaseGateAttachment": "NOT_REQUESTED_OR_NOT_REACHED"
+  },
+  "lint": null,
+  "eventXmlIdentityAndOutcomesMatch": true,
+  "rawEventEarliestMillis": 1792699603042,
+  "rawEventLatestMillis": 1792699611746,
+  "completeSuite": false,
+  "independentAuditClosure": false,
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "testClass": "dev.russiancompanion.v2.Unit7CumulativeReviewTest",
+    "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+    "originalBroadOutcome": "FAILED",
+    "initialFullClassFollowup": "PASSED",
+    "initialSource": "df16da9821e64c065dc8bba3ea22d1d8249a2446",
+    "correctedFullClassFollowup": "PASSED",
+    "correctedSource": "e5cffa702e39b6e693de4d4ee310ff7a85062b72",
+    "findingClosure": false
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit7CumulativeReviewTest",
+    "method": "placementWithTaughtUnit1ButUntaughtUnit6RepairsTheMissingOwnerInsteadOfUnit1",
+    "originalBroadOutcome": "FAILED",
+    "initialFullClassFollowup": "PASSED",
+    "initialSource": "df16da9821e64c065dc8bba3ea22d1d8249a2446",
+    "correctedFullClassFollowup": "PASSED",
+    "correctedSource": "e5cffa702e39b6e693de4d4ee310ff7a85062b72",
+    "findingClosure": false
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+    "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+    "originalBroadOutcome": "FAILED",
+    "initialFullClassFollowup": "PASSED",
+    "initialSource": "df16da9821e64c065dc8bba3ea22d1d8249a2446",
+    "correctedFullClassFollowup": "NOT_SELECTED",
+    "correctedSource": null,
+    "findingClosure": false
+  }
+]

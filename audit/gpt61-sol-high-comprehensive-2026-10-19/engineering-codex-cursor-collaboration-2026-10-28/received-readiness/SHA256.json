@@ -1,0 +1,30 @@
+{
+  "BROAD_MONITOR_AT_INTAKE.json": {
+    "bytes": 4403,
+    "sha256": "734b8c21e6bf24e078386bb79e6bfc1e87734f94a6c74547bebd204eab662255"
+  },
+  "CURSOR_EXECUTION_EVIDENCE_MAP_ROWS_59_70.csv.fragment": {
+    "bytes": 7448,
+    "sha256": "56330465e67c4aaa4b4132917f7e7e83455998b9acb1aaacbb51afdfafd1c2b8"
+  },
+  "CURSOR_READINESS_SCOPE_AND_EVIDENCE.json": {
+    "bytes": 9004,
+    "sha256": "2ff05a8f7d22d19007e7cc9a33361c2aadd6f71e532acee59f5247a19e9d90aa"
+  },
+  "PART_2_VERIFICATION.json": {
+    "bytes": 8430,
+    "sha256": "d2426e6e4d27e3b66a074871052ce06eb8b49528d929606ca6f4c7d9b9f39839"
+  },
+  "README.md": {
+    "bytes": 1349,
+    "sha256": "5cfafa25dd464bddd3cd719f426d2c41299ebed3e4c4eb77c77b0198c93d1977"
+  },
+  "RECEIVED_PART_2.txt": {
+    "bytes": 17508,
+    "sha256": "5efc14492b927bee63e62729420bbefd3cd94fa9fd598512f0b5925856666577"
+  },
+  "receive_part2.py": {
+    "bytes": 8290,
+    "sha256": "b41ffc4a0e6f3787502048aaa9390f499dd101902847dd6adadabba6313dac02"
+  }
+}

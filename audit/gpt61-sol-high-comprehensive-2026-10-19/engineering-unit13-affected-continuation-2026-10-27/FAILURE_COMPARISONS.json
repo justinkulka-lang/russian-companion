@@ -1,0 +1,51 @@
+{
+  "status": "READ_ONLY_DIAGNOSIS_OF_PRESERVED_INTERRUPTED_EVENTS",
+  "failures": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "messageBytes": 129,
+      "messageSha256": "299c542017097fccb19453f65851a8002f3b94fbba52abe583cdcb0eb6c1b60c",
+      "message": "expected:<[obj-u1-decoding, obj-u12-aspect, obj-u11-past-aspect]> but was:<[obj-u4-present, obj-u12-aspect, obj-u11-past-aspect]>"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit12RepairsTheMissingOwnerInsteadOfUnit1",
+      "messageBytes": 677,
+      "messageSha256": "5b9befb392adff15e4cc80833ecd1b94f1ff598f4682edb4154797f83c76c1b4",
+      "message": "Failed to assert the following: (Text + EditableText = [Open earlier Unit 12 instruction and checks])\nSemantics of the node:\nNode #1716 at (l=24.0, t=148.0, r=296.0, b=200.0)px, Tag: 'v2-review-repair'\nFocused = 'false'\nRole = 'Button'\nShape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'\nText = '[Open earlier Unit 4 instruction and checks]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]\nMergeDescendants = 'true'\nHas 4 siblings\nSelector used: (TestTag = 'v2-review-repair')\n"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "method": "completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples",
+      "messageBytes": 61696,
+      "messageSha256": "f0df2598e6d9d6c578248422c7253bd3ef06318016da00e5464d26d676d18bc7",
+      "wholeExpectedAfterOnlyPolicyIdReplacementEqualsActual": true,
+      "oldIdOccurrences": 1,
+      "newIdOccurrences": 1
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "structuralMappingsMatchTheOwnedEditionObservations",
+      "messageBytes": 162,
+      "messageSha256": "9b3d7aa035ce9e97f18de7657084fbd762d8290b562858a939bda179587e0254",
+      "message": "unit 13 expected:<[7102c47201a3d4973d781d315dbbb8ceccca3424174b9c90ad127bac037828df]> but was:<[ae2d0e08ccaf677889bc45bb7faa556445f181aee2620c2da350b89a596ff90e]>"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+      "method": "bothChainsTeachBeforePracticeAndRepairEveryOriginalExample",
+      "messageBytes": 61696,
+      "messageSha256": "f0df2598e6d9d6c578248422c7253bd3ef06318016da00e5464d26d676d18bc7",
+      "wholeExpectedAfterOnlyPolicyIdReplacementEqualsActual": true,
+      "oldIdOccurrences": 1,
+      "newIdOccurrences": 1
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+      "messageBytes": 162,
+      "messageSha256": "9b3d7aa035ce9e97f18de7657084fbd762d8290b562858a939bda179587e0254",
+      "message": "unit 13 expected:<[7102c47201a3d4973d781d315dbbb8ceccca3424174b9c90ad127bac037828df]> but was:<[ae2d0e08ccaf677889bc45bb7faa556445f181aee2620c2da350b89a596ff90e]>"
+    }
+  ]
+}

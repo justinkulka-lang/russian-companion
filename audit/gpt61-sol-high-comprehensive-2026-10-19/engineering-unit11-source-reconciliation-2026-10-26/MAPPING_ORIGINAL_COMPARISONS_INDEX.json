@@ -1,0 +1,22 @@
+[
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/Units1620SourceIntakeTest.kt",
+    "sourceCommit": "452269ffdbf3f42689653d3ca5ceaba79a79ac11",
+    "gitBlob": "5dc06bcb3106485b8c5a635c2ce3d1207019146b",
+    "originalSha256": "bc63a94760945428bf6229ab60440fd89b10c9e30504c8f5bd2355098b022481",
+    "appliedSha256": "1a4d75a9991701da320f3c06373b8365b8ce030de3b1416b0e94e4f24bb7aa9b",
+    "allOriginalAssertionsAndPinsRetained": true,
+    "allOriginalNonblankLinesRetainedExcept": []
+  },
+  {
+    "path": "app/src/test/java/dev/russiancompanion/v2/RecordedCurriculumConservationScope.kt",
+    "sourceCommit": "452269ffdbf3f42689653d3ca5ceaba79a79ac11",
+    "gitBlob": "182b07ee08cf1ef5c2e8ca029f91f204e4563e06",
+    "originalSha256": "27249a2dcfd28cbd5d80caa9917a43cdcd62bccacb23c185f2362bb53864510c",
+    "appliedSha256": "e1882500e93076a8298843e905e19d175242cad2f7802a711c6a3a3e069f5e1d",
+    "allOriginalAssertionsAndPinsRetained": true,
+    "allOriginalNonblankLinesRetainedExcept": [
+      "(if (number == 9) beforeUnit9NounBehaviorReview(root, current) else current).let { current ->"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "sourceCommit": "cae0d574202b0713e8b926ee0ac0b87dbbf30281",
+  "inputTrees": {
+    "app/src/main": "233c13050648a2c3fb2e4ed24b45a9c0ef1aa636",
+    "app/src/test": "55f62068c3cdf3d0256365e59e9ad9d1639a073d",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "257c21d0678015e86fd4a831c453355461751cbe",
+    "release": "38ad2d045b493fcee81e2db8e375733824be23f8"
+  },
+  "rawCurriculumChangeCommit": "53d9c292e1f32f204bdff2b09b8f10d02b6b28a6",
+  "rawCurriculumSHA256": "bff369c1cc5ad1e6075ff4654e46ddc438cc2baceebc02a4f176378c37fc97f7",
+  "baselineWholeTestFileSHA256": "f377098a0e02ea0977855c6c77f462ed1487327f41298321e08a0356f73194f5",
+  "generatedCurrentRecords": 155,
+  "changedPriorVersionsArchived": 95,
+  "unchangedReviewerMappingWorksheets": 60,
+  "precedingScopeFiles": 225,
+  "originalArchiveCount": 66,
+  "scopeNotCompleteSuite": true,
+  "originalFailuresNotRewritten": true
+}

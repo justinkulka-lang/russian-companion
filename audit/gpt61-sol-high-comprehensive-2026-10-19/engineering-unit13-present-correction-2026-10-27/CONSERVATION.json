@@ -1,0 +1,43 @@
+{
+  "sourceCommit": "bd00e5082c9f31d2ae3b379dd6204dd3b28e4475",
+  "baselineParent": "bc6baf9268184c0a4968944c12b3ee9db04d3756",
+  "inputTrees": {
+    "app/src/main": "aeeb035f6017bf70852fd7fb2b6aec42789eebed",
+    "app/src/test": "6921c3d99823bcd17ad93199eb63606db4091029",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "e59450be50bd3bf9b0dd2c9ca8fe6381aa9fa0e6",
+    "release": "f532448db1bdcd92a7b75b0812b8b3759475e351"
+  },
+  "priorTestFilesUnchanged": 272,
+  "wholeUnit13BaselineUnchanged": true,
+  "oldPolicyObjectsUnchanged": 39,
+  "newPolicyObjects": 1,
+  "oldSchemas": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "newSchema": 15,
+  "priorArchivesShaCrc": 74,
+  "sourceBindingsUnchanged": 155,
+  "sourceBindingsStatus": "STALE_UNCHANGED_NOT_REGENERATED",
+  "protectedFiles": 903,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "environmentSettingsChanged": false
+}

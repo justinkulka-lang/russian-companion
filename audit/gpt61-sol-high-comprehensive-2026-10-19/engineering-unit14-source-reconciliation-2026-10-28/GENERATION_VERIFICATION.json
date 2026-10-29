@@ -1,0 +1,22 @@
+{
+  "verified": true,
+  "productionSource": "d72afd1232857a857624c20c58f4bcd3cb5c8564",
+  "renderSource": "3b80bf4bee4cca4517e8b59c6534d074d5dd3325",
+  "twoRealRendersFilesEach": 153,
+  "validatedPackagesPerRender": 30,
+  "appliedIdentityOnlyRecords": 95,
+  "unchangedWorksheets": 60,
+  "sourceChoicesChangedOnlyUnit14": true,
+  "historicalVersionsPreserved": 95,
+  "archivesShaCrc": 77,
+  "oldTestsUnchangedExceptThreeToolingReferences": true,
+  "referenceFiles": 19,
+  "referenceBindings": 292,
+  "repositorySourceDigest": "487d9118d7154dd59162dbb7024f1349bc53d5b7bf89e9d79022d97eaa1eeb9a",
+  "packContentReviewDigest": "39c3563ba1b149b36977ae0fc2c0f920e282101e9e7870c06d141fe1a10e65ec",
+  "generationJUnitMethods": 0,
+  "affectedRuntime": "PENDING",
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

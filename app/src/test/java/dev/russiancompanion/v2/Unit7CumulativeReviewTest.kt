@@ -32,8 +32,18 @@ class Unit7CumulativeReviewTest {
             assertTrue(ordinaryUnitRequirements(p, p.unit(7)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(7)!!, s.v2LearnerView()).allowed)
             val a = open(p, s)
+            // The original v1 contract remains executable against the exact preceding declaration.
+            RecordedCurriculumConservationScope.beforeUnit7GenderReview(root(), p).let { historical ->
+                ready(historical).use { priorStore ->
+                    val a = open(historical, priorStore)
             assertEquals(listOf("obj-u1-decoding", "obj-u6-animacy"), a.slots.map { it.objectiveId })
             assertEquals(listOf("BOUNDED_READING", "SUPPLIED_INANIMATE_ACCUSATIVE_RECOGNITION"), a.slots.map { it.skill })
+                }
+            }
+            assertEquals(9, a.schema)
+            assertEquals(Unit7GenderCumulativeReviewPolicy.definition.id, a.policyId)
+            assertEquals(listOf("obj-u3-gender", "obj-u6-animacy"), a.slots.map { it.objectiveId })
+            assertEquals(Unit7GenderCumulativeReviewPolicy.definition.pool.map { it.skill.name }, a.slots.map { it.skill })
             assertEquals("u6-i-animacy-3", a.slots[1].itemId)
             assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
             answer(p, s, a, 0); assertFalse(advancementDecision(p, p.unit(7)!!, s.v2LearnerView()).allowed)
@@ -182,8 +192,10 @@ class Unit7CumulativeReviewTest {
         }
     }
 
+    // Original placement contract: historical v1 owns Unit1/Unit6, not current Unit3/Unit6.
     @Test fun placementWithTaughtUnit1ButUntaughtUnit6RepairsTheMissingOwnerInsteadOfUnit1() {
         val p = pack()
+        RecordedCurriculumConservationScope.beforeUnit7GenderReview(root(), p).let { p ->
         LocalStore.openInMemory(context()).use { s ->
             for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
             s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 7, startingPoint = "RESUME_FROM_BOOK"))
@@ -195,6 +207,45 @@ class Unit7CumulativeReviewTest {
             waitTag("v2-review-insufficient"); compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
             compose.onNodeWithTag("v2-review-repair").performScrollTo().assertTextEquals("Open earlier Unit 6 instruction and checks").performClick()
             waitTag("v2-unit-heading"); compose.onNodeWithText("Unit 6").assertIsDisplayed()
+            assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 7 })
+        }
+    }
+
+    } // End exact historical declaration scope.
+
+    @Test fun currentPlacementWithOnlyUnit1TeachingRepairsUnit3BeforeUnit6() {
+        assertCurrentPlacementRepair(taughtThrough = 2, missingOwner = 3)
+    }
+
+    @Test fun currentPlacementWithUnit3TeachingRepairsUnit6() {
+        assertCurrentPlacementRepair(taughtThrough = 3, missingOwner = 6)
+    }
+
+    private fun assertCurrentPlacementRepair(taughtThrough: Int, missingOwner: Int) {
+        val p = pack()
+        RecordedCurriculumConservationScope.assertCurrent(root(), p)
+        LocalStore.openInMemory(context()).use { s ->
+            for (n in 1..taughtThrough) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
+            if (taughtThrough == 3) {
+                val review = s.openUnit3CumulativeReview(p, s.learnerMutationEpoch())!!
+                review.slots.indices.forEach { answer(p, s, review, it) }
+                runBlocking { advanceFrom(p, s, 3) }
+                assertTrue(3 in currentCompletedUnitNumbers(p, s.v2LearnerView()))
+                assertFalse(6 in currentCompletedUnitNumbers(p, s.v2LearnerView()))
+            }
+            s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 7, startingPoint = "RESUME_FROM_BOOK"))
+            val before = s.governedLearnerDocument()
+            assertNull(createCumulativeReviewAssignment(p, s.v2LearnerView(), 7, "insufficient", 0))
+            assertEquals(before, s.governedLearnerDocument())
+            compose.setContent { V2App(s, p, {}) }
+            compose.onNodeWithText("Course").performClick()
+            waitTag("v2-course-intro"); compose.onNode(hasScrollToIndexAction()).performScrollToIndex(7)
+            waitTag("v2-unit-row-7"); compose.onNodeWithTag("v2-unit-row-7").performClick()
+            waitTag("v2-open-cumulative-review"); compose.onNodeWithTag("v2-open-cumulative-review").performScrollTo().performClick()
+            waitTag("v2-review-insufficient"); compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
+            compose.onNodeWithTag("v2-review-repair").performScrollTo()
+                .assertTextEquals("Open earlier Unit $missingOwner instruction and checks").performClick()
+            waitTag("v2-unit-heading"); compose.onNodeWithText("Unit $missingOwner").assertIsDisplayed()
             assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 7 })
         }
     }

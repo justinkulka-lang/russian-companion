@@ -25,7 +25,29 @@ class DeviceAcceptancePackageTest {
         val manifest = Json.parseToJsonElement(
             File(root, RELEASE_EVIDENCE_MANIFEST).readText(),
         ).jsonObject
-        val workflow = File(root, ".github/workflows/build.yml").readText()
+        // Historical candidate-upload contract is retained against its exact original workflow.
+        // Current engineering CI intentionally defers candidate assembly until after the final audit.
+        val historicalWorkflow = ProcessBuilder("git", "show",
+            "991d7ca4ec2dc1f994238eadad6485e9c89de528:.github/workflows/build.yml")
+            .directory(root).redirectErrorStream(true).start()
+        val workflow = historicalWorkflow.inputStream.bufferedReader().readText()
+        assertEquals(0, historicalWorkflow.waitFor())
+        assertEquals("6e302293b9e2f2daa5f275a1d6c9a0695949f1fc9da212adf6a201c6972abb18",
+            java.security.MessageDigest.getInstance("SHA-256").digest(workflow.toByteArray())
+                .joinToString("") { "%02x".format(it) })
+        val currentWorkflow = File(root, ".github/workflows/build.yml").readText()
+        listOf("compileDebugSources", "lintDebug", "verifyReleaseGateAttachment", "testDebugUnitTest",
+            "engineering-verification-source", "engineering-test-reports").forEach {
+            assertTrue("Current verification CI must retain $it", currentWorkflow.contains(it))
+        }
+        listOf("assembleDebug", "packageDebug", "bundleDebug", "signDebug",
+            "acceptance-candidate-debug-apk", "artifact-identity.json", "|| true").forEach {
+            assertFalse("Engineering CI must not create or hide failure for $it", currentWorkflow.contains(it))
+        }
+        listOf("VisualReviewCaptureTest", "Units35ChunkCaptureTest", "Units610ChunkCaptureTest",
+            "Units1115GapCaptureTest").forEach {
+            assertTrue("Retained-evidence exporter must stay excluded: $it", currentWorkflow.contains("**/$it*"))
+        }
         val formPaths = listOf(
             "release/acceptance/forms/AT-001.md",
             "release/acceptance/forms/AT-002.md",

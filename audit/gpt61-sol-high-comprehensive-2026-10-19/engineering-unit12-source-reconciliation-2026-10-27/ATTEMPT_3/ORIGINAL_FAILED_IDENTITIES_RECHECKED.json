@@ -1,0 +1,50 @@
+[
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11BindingConservationTest",
+    "method": "kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord",
+    "originalOutcome": "FAILED",
+    "followupOutcome": "PASSED"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11BindingConservationTest",
+    "method": "currentDeclarationReconstructsOnlyUnit11ThenEveryGenuineEarlierPack",
+    "originalOutcome": "FAILED",
+    "followupOutcome": "PASSED"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11NounCompatibilityTest",
+    "method": "exactPriorDeclarationRefusesSchemaThirteenAndPreservesDownstreamOwnerIdentity",
+    "originalOutcome": "FAILED",
+    "followupOutcome": "PASSED"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit12CumulativeReviewTest",
+    "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+    "originalOutcome": "FAILED",
+    "followupOutcome": "PASSED"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit12CumulativeReviewTest",
+    "method": "placementWithTaughtUnit1ButUntaughtUnit11RepairsTheMissingOwnerInsteadOfUnit1",
+    "originalOutcome": "FAILED",
+    "followupOutcome": "PASSED"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+    "method": "structuralMappingsMatchTheOwnedEditionObservations",
+    "originalOutcome": "FAILED",
+    "followupOutcome": "PASSED"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+    "method": "structuralMappingsAreDigestBoundAndStayUnsigned",
+    "originalOutcome": "FAILED",
+    "followupOutcome": "PASSED"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+    "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+    "originalOutcome": "FAILED",
+    "followupOutcome": "PASSED"
+  }
+]

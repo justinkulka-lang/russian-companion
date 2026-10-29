@@ -1,0 +1,66 @@
+{
+  "gc-522792.log": {
+    "sha256": "c318cde275b9636646ab1aa5718576ab86f832d70d66891acb475903b81b9759",
+    "bytes": 179
+  },
+  "RUN.log": {
+    "sha256": "c70f6d65fceb9ce447daf4c9f989165072735d6fb91486e974ead971b92d1dd6",
+    "bytes": 5330
+  },
+  "RESULTS.csv": {
+    "sha256": "af2000fdd3d1cdfa147a54db63b594eaf05aba4419c94e702b2c0e909bfcc9ad",
+    "bytes": 2840
+  },
+  "RUN.exit": {
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "bytes": 2
+  },
+  "RESULT.json": {
+    "sha256": "49d174cdc6e7d277d25440960982e03e94022fb27ac58246ee8b778a5124cf45",
+    "bytes": 8150
+  },
+  "SHA256.json": {
+    "sha256": "05aa87800b08225d277e492086a818d335672f8db9f99b5fa4fe8ec28d692445",
+    "bytes": 1506
+  },
+  "EVENTS.jsonl": {
+    "sha256": "1455803a5179e27426d440d724cb3045a06460fd14eb0de298184e533220d942",
+    "bytes": 8804
+  },
+  "gc-522800.log": {
+    "sha256": "2b72babf178e67f8d927c10b149c46a9914e6ca8d55799e87ef340080a3a7ce0",
+    "bytes": 179
+  },
+  "CONTEXT.json": {
+    "sha256": "70c809b07a0d2bf4c76c550669f0a64cfa06b4c660a8a5a7a625beae7dda0ec0",
+    "bytes": 6395
+  },
+  "XML/TEST-dev.russiancompanion.v2.Unit13CumulativeReviewTest.xml": {
+    "sha256": "0c554a172341bcef82d44eee038ba007d41bbdb8eabae10159f9e9e9e86d8804",
+    "bytes": 751
+  },
+  "XML/TEST-dev.russiancompanion.v2.Unit4CumulativeReviewTest.xml": {
+    "sha256": "8bfae84ecbd0bf559f76cf399515fd2e2df288a821bceb613cadc2c8e63ee12a",
+    "bytes": 749
+  },
+  "XML/TEST-dev.russiancompanion.v2.Unit6CumulativeReviewTest.xml": {
+    "sha256": "ddef9a6ff63f072abd4ef427f42aaf3f53db7c27aef35a653e1460c0834c2cc1",
+    "bytes": 748
+  },
+  "XML/TEST-dev.russiancompanion.v2.CumulativeReviewSelectionTest.xml": {
+    "sha256": "ff308240f46789f0a064391188f12c2a2ca6540cbcdf0e661d00abff9222184b",
+    "bytes": 921
+  },
+  "XML/TEST-dev.russiancompanion.v2.Unit9CumulativeReviewTest.xml": {
+    "sha256": "d7cac760c382badc3726497f7438ee7e0871cf96adece5f2d889be11349385ea",
+    "bytes": 750
+  },
+  "XML/TEST-dev.russiancompanion.v2.MultiPoolReviewSelectionTest.xml": {
+    "sha256": "5297c56a0b13768436d65e400ad0f84bae2c55e326c0089662cdba4c4a0142f1",
+    "bytes": 758
+  },
+  "LAUNCHER/DISCOVERY_LAUNCHER.log": {
+    "sha256": "1207df8c6aa2bd99cebdb979fde977127a0d95f3d5683f0942bd93200b691925",
+    "bytes": 213
+  }
+}

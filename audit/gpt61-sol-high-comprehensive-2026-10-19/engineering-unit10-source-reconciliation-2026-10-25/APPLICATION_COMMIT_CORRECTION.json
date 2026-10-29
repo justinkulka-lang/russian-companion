@@ -1,0 +1,14 @@
+{
+  "initialApplicationCommit": "b3609660d8fc3934e0e04fef165700b01fe5147c",
+  "finalApplicationCommit": "49a6f3784393a7b695f7259ab71bec47d2393198",
+  "omittedPath": "audit/owner-governance/FINAL_AUDIT_PREPARATION_MANIFEST.json",
+  "cause": "Directory-based staging did not cover owner-governance manifest",
+  "finalAll155GitRecordHashesVerified": true,
+  "proposalBytesChanged": false,
+  "appOrTestSourceChanged": false,
+  "JUnitMethodsExecuted": 0,
+  "historyRewritten": false,
+  "initialReadOnlyVerifierExitCode": 1,
+  "initialObservedFailureSummary": "Saved-commit record SHA mismatch: owner-governance manifest had reviewed bytes on disk but was not staged in initial application commit",
+  "finalReadOnlyVerifierExitCode": 0
+}

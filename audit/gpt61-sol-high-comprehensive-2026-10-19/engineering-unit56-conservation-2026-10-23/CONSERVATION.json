@@ -1,0 +1,15 @@
+{
+  "baselineSource": "929942950013701ddee7771a67523726d03f3fa7",
+  "correctedSource": "84977970cd1acc3199a75ce347b8821ba0727f22",
+  "changedTestFiles": [
+    "app/src/test/java/dev/russiancompanion/v2/RecordedCurriculumConservationScope.kt",
+    "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt"
+  ],
+  "productionSchemaCatalogDocsReviewReleaseUnchanged": true,
+  "currentGeneratedRecordsUnchanged": 155,
+  "originalArchivesConserved": 66,
+  "archiveRuntimeReplayThisStep": false,
+  "precedingEvidenceFiles": 157,
+  "allBaselineEvidencePreserved": true,
+  "originalPinsUnchanged": true
+}

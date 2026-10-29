@@ -1,0 +1,27 @@
+{
+  "appliedSource": "531fa3e9018d8165b10720126f41133dafe4f1cf",
+  "followupSource": "3bf0a0dd01fc45d2617b2ea01986f4f86c14cb24",
+  "implementation": "2e2ebcebc81f54c04db7f0ac24e99374674c97c5",
+  "generatedRecords": 155,
+  "twoFreshIdenticalRenders": true,
+  "changedIdentityOnly": 95,
+  "unchangedWorksheets": 60,
+  "prior95VersionsArchived": true,
+  "originalArchivesShaCrc": 66,
+  "additionalGenuineCaptures": {
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit6-present-baseline-2026-10-23/BASELINE_CURRENT_UNIT6_V2.zip": "5244052c97346b4d3542edb2469eee2c714d69d2b00567dca8d668970f5ade37",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit7-gender-baseline-2026-10-24/BASELINE_CURRENT_UNIT7_V1.zip": "43d5da10729fed2ced704f5e52e48a2bd0283dbcd516171aaa59c4e0de5200df"
+  },
+  "allOriginalHistoricalAssertionLinesRetained": true,
+  "semanticAcceptance": false,
+  "rightsAcceptance": false,
+  "independentAudit": "INCOMPLETE_ALL48_OPEN",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "settingsSavedThisTask": [],
+  "publication": "Earlier user-confirmed; independently unobserved, no new publication",
+  "nativeRootCause": "UNCONFIRMED",
+  "jitDirective": "EXPERIMENTAL_NOT_ADOPTED",
+  "renderedFiles": 153
+}

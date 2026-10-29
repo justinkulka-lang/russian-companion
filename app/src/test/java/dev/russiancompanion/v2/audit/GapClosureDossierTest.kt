@@ -1,5 +1,6 @@
 package dev.russiancompanion.v2.audit
 
+import dev.russiancompanion.v2.RecordedCurriculumConservationScope
 import dev.russiancompanion.v2.RecordedIntakeCorrectionScope
 import dev.russiancompanion.release.computeReleaseSourceDigest
 import dev.russiancompanion.release.readAcceptanceCandidate
@@ -47,7 +48,11 @@ class GapClosureDossierTest {
         val historicalModel = reconcileCurriculumReadiness(root, beforeAvailability)
         assertEquals("ex-u11-past-aspect-0, ex-u11-past-aspect-1, ex-u30-letter-names-0, ex-u30-letter-names-1, ex-u4-verb-знать, ex-u4-verb-работать", historicalModel.orphanedExampleIds)
         val availabilitySource = RecordedIntakeCorrectionScope.load(root, "fe919656bfa2775b5cc2c22f2496d4258343cfea")
+        RecordedCurriculumConservationScope.beforeUnit8PresentReview(root, pack).let { pack ->
         RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, availabilitySource, 8)
+        }
+        RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+            RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), 8)
         assertEquals(beforeAvailability.examples, pack.examples)
         assertEquals((historicalModel.orphanedExampleIds.split(", ") +
             listOf("ex-u8-availability-2", "ex-u8-availability-3")).sorted().joinToString(", "), model.orphanedExampleIds)

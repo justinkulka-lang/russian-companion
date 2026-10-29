@@ -1,0 +1,113 @@
+{
+  "sourceCommit": "d72afd1232857a857624c20c58f4bcd3cb5c8564",
+  "sourceRootTree": "c7b48b30a24a9f964f65346f1991b4226be5ea2d",
+  "inputTrees": {
+    "app/src/main": "e8434cfe2b18d483ee27be79aba461add2544f38",
+    "app/src/test": "a44658c707d02786ffc27ec4d62e813922e9eabd",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "cd675aa8a3ad33a90d9001fe6f67b2de2e5d7ac7",
+    "release": "9d9047b8297cba1d5855a7f7809c441b2f8edcf7"
+  },
+  "testCounts": {
+    "reported": 20,
+    "passed": 20,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 3,
+  "exitCode": 0,
+  "exactCommand": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/unit14-plural-possession-correction-2026-10-28/resources.gradle",
+    "-Daudit.unit14.observation=/workspace/artifacts/unit14-plural-possession-correction-2026-10-28/REGRESSION/CURRENT_POLICY_OBSERVATION.json",
+    "-Daudit.history.output=/workspace/artifacts/unit14-plural-possession-correction-2026-10-28/REGRESSION/HISTORY_CASES.jsonl",
+    "-Daudit.events.path=/workspace/artifacts/unit14-plural-possession-correction-2026-10-28/REGRESSION/EVENTS.jsonl",
+    "-Daudit.gc.dir=/workspace/artifacts/unit14-plural-possession-correction-2026-10-28/REGRESSION",
+    "testDebugUnitTest",
+    "--rerun",
+    "--tests",
+    "dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "activation": "source /workspace/setup/android-env.sh",
+  "startedUtc": "2026-10-28T14:53:12.899859+00:00",
+  "finishedUtc": "2026-10-28T14:59:40.624466+00:00",
+  "americaChicago": {
+    "started": "2026-10-28T09:53:12.899859-05:00",
+    "finished": "2026-10-28T09:59:40.624466-05:00"
+  },
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "releaseGateAttachment": "PASS_ATTACHMENT_ONLY_NOT_APPROVAL",
+  "discovery": {
+    "sourceCommit": "d72afd1232857a857624c20c58f4bcd3cb5c8564",
+    "counts": {
+      "reported": 20,
+      "passed": 0,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 20
+    },
+    "runtimePasses": 0
+  },
+  "initialDiscovery": {
+    "sourceCommit": "35678e4bad772b39bc4e8696d016869569fc014b",
+    "counts": {
+      "reported": 20,
+      "passed": 0,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 20
+    },
+    "runtimePasses": 0,
+    "runtimeRunsBeforeCorrection": 0
+  },
+  "repositorySourceDigest": "487d9118d7154dd59162dbb7024f1349bc53d5b7bf89e9d79022d97eaa1eeb9a",
+  "packContentReviewDigest": "39c3563ba1b149b36977ae0fc2c0f920e282101e9e7870c06d141fe1a10e65ec",
+  "sourceBindings": "155_STALE_UNCHANGED_NOT_REGENERATED",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

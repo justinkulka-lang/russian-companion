@@ -1,0 +1,116 @@
+{
+  "verified": true,
+  "records": 155,
+  "changed": 95,
+  "worksheetsUnchanged": 60,
+  "priorVersionsArchived": 95,
+  "originalPlusAdditionalArchivesShaCrc": 69,
+  "attempts": [
+    {
+      "directory": "ATTEMPT_1",
+      "sourceCommit": "8a5f6442eab1aa8194edd0694b7b82dcffa9ac61",
+      "testCounts": {
+        "reported": 192,
+        "passed": 185,
+        "failed": 6,
+        "errors": 0,
+        "skipped": 1
+      },
+      "classes": 39,
+      "exitCode": 1,
+      "lint": {
+        "Fatal": 0,
+        "Error": 0,
+        "Warning": 20,
+        "Hint": 1
+      },
+      "gate": "> Task :app:verifyReleaseGateAttachment"
+    },
+    {
+      "directory": "ATTEMPT_2",
+      "sourceCommit": "81f95b8debf36274531f2736762eda5e8f511d27",
+      "testCounts": {
+        "reported": 50,
+        "passed": 50,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "classes": 11,
+      "exitCode": 0,
+      "lint": {
+        "Fatal": 0,
+        "Error": 0,
+        "Warning": 20,
+        "Hint": 1
+      },
+      "gate": "> Task :app:verifyReleaseGateAttachment"
+    },
+    {
+      "directory": "ATTEMPT_3_BROAD",
+      "sourceCommit": "f6eb548dce2051252f2c680093923384891631aa",
+      "testCounts": {
+        "reported": 1394,
+        "passed": 1391,
+        "failed": 2,
+        "errors": 0,
+        "skipped": 1
+      },
+      "classes": 237,
+      "exitCode": 1,
+      "lint": {
+        "Fatal": 0,
+        "Error": 0,
+        "Warning": 20,
+        "Hint": 1
+      },
+      "gate": "> Task :app:verifyReleaseGateAttachment"
+    },
+    {
+      "directory": "ATTEMPT_4_BROAD_COMPARE_FOLLOWUP",
+      "sourceCommit": "ce066d6f9557b38ead4f215337028cde43203b8d",
+      "testCounts": {
+        "reported": 23,
+        "passed": 23,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "classes": 4,
+      "exitCode": 0,
+      "lint": {
+        "Fatal": 0,
+        "Error": 0,
+        "Warning": 20,
+        "Hint": 1
+      },
+      "gate": "> Task :app:verifyReleaseGateAttachment"
+    },
+    {
+      "directory": "ATTEMPT_5_RECONCILED_BROAD",
+      "sourceCommit": "93831e8545560207e3a4d056ce2f7d70b452e265",
+      "testCounts": {
+        "reported": 1394,
+        "passed": 1393,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 1
+      },
+      "classes": 237,
+      "exitCode": 0,
+      "lint": {
+        "Fatal": 0,
+        "Error": 0,
+        "Warning": 20,
+        "Hint": 1
+      },
+      "gate": "> Task :app:verifyReleaseGateAttachment"
+    }
+  ],
+  "scopesNotSummed": true,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "completeSuite": false,
+  "testsExecutedByVerifier": 0
+}

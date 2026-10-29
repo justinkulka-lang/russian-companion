@@ -1,0 +1,26 @@
+objective,decision,reason,limit
+obj-u1-decoding,REPLACE_REPEATED_PRINT_SLOT,Current Unit13 repeats the Unit1 print pair,Saved v1/v2 obligations and current labels remain exact
+obj-u3-gender,DEFER_ALTERNATIVE,Five-item lexical gender pool was just assigned inUnit12,Immediate repetition and taught labels;no general unseen-gender prediction
+obj-u4-present,PROPOSE_EXACT_EXISTING_POOL,Reuse current Unit6Present pool0 with four frozen supplied present forms;last active recurrence inUnit10,Finite forms and rehearsed lemmas;not productive conjugation or validated spacing
+obj-u4-nominative,DEFER_ALTERNATIVE,Two current subject-role checks both return the same English label,Do not substitute this for broader unseen subject analysis
+obj-u5-indeclinable,DEFER_ALTERNATIVE,Noun behavior and possession/absence were just assigned inUnit11,Existing finite records;not broader case mastery or productive grammar
+obj-u6-animacy,DEFER_ALTERNATIVE,Mixed animate-token and inanimate-classification checks need their own supported skill analysis,Do not silently widen the narrower current review label
+obj-u7-endings,DEFER_ALTERNATIVE,Checks mix case/number transformations,A narrower enum does not imply all transformations are supported
+obj-u8-plural,DEFER_ALTERNATIVE,Widening current singleton pools needs a separate bounded source and repair review,No additional admission or ordinary content change proposed
+obj-u9-odindva,DEFER_ALTERNATIVE,Widening current singleton pools needs a separate bounded source and repair review,No additional admission or ordinary content change proposed
+obj-u10-have,DEFER_ALTERNATIVE,Noun behavior and possession/absence were just assigned inUnit11,Existing finite records;not broader case mastery or productive grammar
+obj-u10-absence,DEFER_ALTERNATIVE,Noun behavior and possession/absence were just assigned inUnit11,Existing finite records;not broader case mastery or productive grammar
+obj-u11-past-read,DEFER_ALTERNATIVE,Recorded earlier material inventoried for comparison;not selected for this bounded proposal,Other number/reflexive/future/case/spelling distinctions cannot silently acquire the selected three skill labels
+obj-u11-past-be,DEFER_ALTERNATIVE,Recorded earlier material inventoried for comparison;not selected for this bounded proposal,Other number/reflexive/future/case/spelling distinctions cannot silently acquire the selected three skill labels
+obj-u11-past-aspect,RETAIN_EXACT_EXISTING_POOL,Preserve the current two-item singular past-gender contrast in the past/aspect context,Same lemma and immediate Unit12 recurrence;not aspect interpretation or unseen production
+obj-u11-reflexive,DEFER_ALTERNATIVE,Recorded earlier material inventoried for comparison;not selected for this bounded proposal,Other number/reflexive/future/case/spelling distinctions cannot silently acquire the selected three skill labels
+obj-u12-future-imp,DEFER_ALTERNATIVE,Recorded earlier material inventoried for comparison;not selected for this bounded proposal,Other number/reflexive/future/case/spelling distinctions cannot silently acquire the selected three skill labels
+obj-u12-future-perf,DEFER_ALTERNATIVE,Recorded earlier material inventoried for comparison;not selected for this bounded proposal,Other number/reflexive/future/case/spelling distinctions cannot silently acquire the selected three skill labels
+obj-u12-aspect,PROPOSE_BOTH_EXISTING_CHECKS,Current Unit13 selects only the saying/telling inverse;retain it and admit the existing doing/making check under the same bounded skill,Two supplied pairs and two opposite directions;one guided saying/telling task;generic to speak gloss remains a semantic-review risk
+obj-u12-dative,DEFER_ALTERNATIVE,Recorded earlier material inventoried for comparison;not selected for this bounded proposal,Other number/reflexive/future/case/spelling distinctions cannot silently acquire the selected three skill labels
+obj-u12-spelling,DEFER_ALTERNATIVE,Recorded earlier material inventoried for comparison;not selected for this bounded proposal,Other number/reflexive/future/case/spelling distinctions cannot silently acquire the selected three skill labels
+obj-u12-prep-plural,DEFER_ALTERNATIVE,Recorded earlier material inventoried for comparison;not selected for this bounded proposal,Other number/reflexive/future/case/spelling distinctions cannot silently acquire the selected three skill labels
+obj-u13-past-aspect,CURRENT_TARGET_ORDINARY_NOT_PRIOR,Unit13 ordinary obligations stay separate from prior-objective review,Four guided tasks and nine CHECK items remain;raw minimum8 is not permission to omit an objective check
+obj-u13-tense-keep,CURRENT_TARGET_ORDINARY_NOT_PRIOR,Unit13 ordinary obligations stay separate from prior-objective review,Four guided tasks and nine CHECK items remain;raw minimum8 is not permission to omit an objective check
+obj-u13-infinitive,CURRENT_TARGET_ORDINARY_NOT_PRIOR,Unit13 ordinary obligations stay separate from prior-objective review,Four guided tasks and nine CHECK items remain;raw minimum8 is not permission to omit an objective check
+obj-u13-reported,CURRENT_TARGET_ORDINARY_NOT_PRIOR,Unit13 ordinary obligations stay separate from prior-objective review,Four guided tasks and nine CHECK items remain;raw minimum8 is not permission to omit an objective check

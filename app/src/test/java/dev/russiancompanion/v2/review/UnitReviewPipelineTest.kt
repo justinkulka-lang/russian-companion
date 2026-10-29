@@ -244,8 +244,14 @@ class UnitReviewPipelineTest {
         // Original Unit5 activation ledger,not a freshly copied current snapshot.
         val activatedDigest = "3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141"
         assertEquals(activatedDigest, V2Validator.unitContentReviewDigest(activated, 5))
+        val currentPack = pack
+        run {
+            // Preserve the original activation assertions in their historical declaration scope.
+            // The helper also binds the current pack to its real asset commit and permits only the policy-ID change.
+            val pack = dev.russiancompanion.v2.RecordedCurriculumConservationScope.beforeUnit5GrammarReview(repo(), currentPack)
         assertEquals(activated.unit(5), pack.unit(5))
         assertEquals(activatedDigest, V2Validator.unitContentReviewDigest(pack, 5))
+        }
         val mutations = listOf(
             "lesson number" to facts.copy(proposedLessonNumber = 9),
             "printed page start" to facts.copy(printedPageStart = 2),

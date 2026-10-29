@@ -1,0 +1,41 @@
+{
+  "state": "APPLIED_NOT_COMPILED_NOT_TESTED",
+  "baselineCommit": "a530e4ff67035d7907195a3c0b3249fb42af1dc7",
+  "runtimeBaseline": "b07432aada33a636d1ab547f8537da02208649ec",
+  "originalSha256": {
+    "app/src/test/resources/reviewed-curriculum-cyrillic.json": "502653747a6f558cf2564ea8c9a40142bda05d7c5d28ede7ec1cb7bd086278b8",
+    "app/src/test/java/dev/russiancompanion/acceptance/ReviewedCurriculumSourceGuardTest.kt": "d541da4af9c2d2ddfb8fb18f4f1b5ed9a8fd68d1b9b9f46a5688c179f59f3eb4",
+    "app/src/test/java/dev/russiancompanion/v2/CompleteRuleCorrectionTest.kt": "bea3f5d96830467ffb2eeac4d5a48d58b4a8bb1b2c9bf7094a82ab0de34462bc",
+    "app/src/test/java/dev/russiancompanion/v2/Unit6CumulativeReviewTest.kt": "28d6b3e7d32031593de4affaa6a57757f69cb20755f272f3ed3d9a3e95e3603b",
+    "app/src/test/java/dev/russiancompanion/v2/Unit7CurrentPrerequisiteHistoryTest.kt": "09a4dac5342c117c1b800338bf086e4a48d1ff45b7e42e0c57608d1bb2f0c276",
+    "app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationHistoryTest.kt": "94db4d3d6af4697b23679050b9b31e9508ab6339cc0e44525627abb251ac037f",
+    "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt": "811203dce3b59fa06ceb871644b88853dd0375bd3867dc601a253e394c1b01d3",
+    "app/src/test/java/dev/russiancompanion/v2/Units610SourceIntakeTest.kt": "f532b18d94ca789ee6857c49c3b908c8eb17983f42743a5580123ba90d93367b"
+  },
+  "appliedSha256": {
+    "app/src/test/resources/reviewed-curriculum-cyrillic.json": "8401470422f69da965de6736c68217e7bc12e337490d3fdd503e56e2e762a6e9",
+    "app/src/test/java/dev/russiancompanion/acceptance/ReviewedCurriculumSourceGuardTest.kt": "910539edfce766548a35e528c184d2a7964ac040af7c65ff2832e54dfd47ef83",
+    "app/src/test/java/dev/russiancompanion/v2/CompleteRuleCorrectionTest.kt": "6a362a40b307fcf9be2168a4b0739b3528eca3fcf011b4845ea959f2a8a71295",
+    "app/src/test/java/dev/russiancompanion/v2/Unit6CumulativeReviewTest.kt": "9e557e7326886f8833b4374b8bed4918e396b9e7f4cfe2a4d7b24a6b66b7e41d",
+    "app/src/test/java/dev/russiancompanion/v2/Unit7CurrentPrerequisiteHistoryTest.kt": "6a1b453fd603b410a0da09afd92f8bdb5a8df92485d5d405b4ce53813b169e15",
+    "app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationHistoryTest.kt": "73b393ffc9f3ab78531e7e481277cc6f0dd17e501bb4f961de12cb845a9bac09",
+    "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt": "62b43918835793bf7e51d4efab3cc786d464a27b5cd821ae27578c30ca21cb30",
+    "app/src/test/java/dev/russiancompanion/v2/Units610SourceIntakeTest.kt": "35b682b2ebb4c5d17bc82f3fef1647f205bedc0208cb4d8a3fa8d8129b1043cf"
+  },
+  "productionChanges": false,
+  "newMethodsInventory": 2,
+  "originalArchive": {
+    "bytes": 79945,
+    "sha256": "afd9c5ec9233441c58de2b51e70b1fd70b811efd94e7c32e21d1e29237e5981d"
+  },
+  "initialAppliedSha256BeforeIndentationCleanup": {
+    "app/src/test/resources/reviewed-curriculum-cyrillic.json": "8401470422f69da965de6736c68217e7bc12e337490d3fdd503e56e2e762a6e9",
+    "app/src/test/java/dev/russiancompanion/acceptance/ReviewedCurriculumSourceGuardTest.kt": "910539edfce766548a35e528c184d2a7964ac040af7c65ff2832e54dfd47ef83",
+    "app/src/test/java/dev/russiancompanion/v2/CompleteRuleCorrectionTest.kt": "6a362a40b307fcf9be2168a4b0739b3528eca3fcf011b4845ea959f2a8a71295",
+    "app/src/test/java/dev/russiancompanion/v2/Unit6CumulativeReviewTest.kt": "c9000faf2e31d513dabb913445f7157689e4b296245ea7cc417bfbfa5dadc775",
+    "app/src/test/java/dev/russiancompanion/v2/Unit7CurrentPrerequisiteHistoryTest.kt": "b66620f66e5fd0ccf64568b5a9392a5d039554ba37298dc690012344b67a479c",
+    "app/src/test/java/dev/russiancompanion/v2/Unit7InvariancePreparationHistoryTest.kt": "4a5748adff565732e4a5d55b5eebb5d3d7bc8ea74c0960918b223fcbe5710e11",
+    "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt": "e50a573d029cbe1893393ea05ed098b30079bbf502221552e12e4467ac654c73",
+    "app/src/test/java/dev/russiancompanion/v2/Units610SourceIntakeTest.kt": "d6b1ca599c731f8ad8b3aff94d33acf4897c6319003b63244ae224dbb3342019"
+  }
+}

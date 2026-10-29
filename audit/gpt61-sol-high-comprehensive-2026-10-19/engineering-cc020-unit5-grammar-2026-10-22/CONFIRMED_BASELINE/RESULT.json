@@ -1,0 +1,65 @@
+{
+  "sourceCommit": "a72ff81c3535b0b7ca5ad563e790b5d6558fd030",
+  "testCounts": {
+    "passed": 1,
+    "failed": 3,
+    "errors": 0,
+    "skipped": 0,
+    "reported": 4
+  },
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+      "method": "wrongSchemaAndUntaughtOwnerCannotBorrowFreshCredit",
+      "outcome": "FAILED",
+      "seconds": "3.284",
+      "message": "org.junit.ComparisonFailure: expected:<unit5-prior-[gender-subject-v2]> but was:<unit5-prior-[reading-subject-v1]>"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+      "method": "newTaskKeepsChosenGenderThroughReopenAndBackupRoundtrip",
+      "outcome": "FAILED",
+      "seconds": "0.042",
+      "message": "org.junit.ComparisonFailure: expected:<unit5-prior-[gender-subject-v2]> but was:<unit5-prior-[reading-subject-v1]>"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+      "method": "legacyPartialTaskRestoresCompletesAndReopensWithItsOwnVersion",
+      "outcome": "PASSED",
+      "seconds": "1.557",
+      "message": ""
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+      "method": "freshGenderAndSubjectNeedSeparateReviewAnswersBeforeAdvance",
+      "outcome": "FAILED",
+      "seconds": "2.409",
+      "message": "java.lang.AssertionError: Subject plus print matching must not replace a gender review answer"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+      "tests": "4",
+      "skipped": "0",
+      "failures": "3",
+      "errors": "0",
+      "timestamp": "2026-10-22T22:55:26.342Z",
+      "hostname": "d0aced911621",
+      "time": "7.898"
+    }
+  ],
+  "exitCode": 1,
+  "tasks": {
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin",
+    "compileDebugSources": "NOT_REQUESTED_OR_NOT_REACHED",
+    "lintAnalyzeDebug": "NOT_REQUESTED_OR_NOT_REACHED",
+    "lintAnalyzeDebugUnitTest": "NOT_REQUESTED_OR_NOT_REACHED",
+    "lintDebug": "NOT_REQUESTED_OR_NOT_REACHED",
+    "verifyReleaseGateAttachment": "NOT_REQUESTED_OR_NOT_REACHED"
+  },
+  "lint": null,
+  "xmlEventsExact": true,
+  "completeSuite": false
+}

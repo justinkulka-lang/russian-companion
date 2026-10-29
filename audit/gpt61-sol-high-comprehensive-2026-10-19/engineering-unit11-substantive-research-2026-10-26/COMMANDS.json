@@ -1,0 +1,16 @@
+{
+  "extraction": [
+    "python3",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit11-substantive-research-2026-10-26/extract_research.py"
+  ],
+  "reproduction": [
+    "python3",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit11-substantive-research-2026-10-26/extract_research.py",
+    "--check"
+  ],
+  "source": "1d96cb4e89768f69246960e263d9b51412a3b9f4",
+  "newJUnitMethodsExecuted": 0,
+  "lint": "NOT_RUN_RESEARCH_ONLY",
+  "gateAttachment": "NOT_RUN_RESEARCH_ONLY",
+  "privatePdf": "NOT_READ_OR_PACKAGED"
+}

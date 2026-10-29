@@ -1,0 +1,16 @@
+{
+  "initialSource": "df16da9821e64c065dc8bba3ea22d1d8249a2446",
+  "correctedSource": "e5cffa702e39b6e693de4d4ee310ff7a85062b72",
+  "productionCatalogDocsReviewReleaseUnchanged": true,
+  "generatedRecords": 155,
+  "originalArchives": 66,
+  "originalAssertionLinesRetained": true,
+  "originalPinsChanged": false,
+  "apkIdentity": null,
+  "apkSignature": null,
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "publication": "No settings changes; earlier publication user-confirmed independently unobserved",
+  "findings": "48 OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

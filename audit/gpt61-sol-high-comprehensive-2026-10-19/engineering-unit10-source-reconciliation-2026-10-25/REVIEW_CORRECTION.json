@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "/workspace/artifacts/unit10-source-reconciliation-2026-10-25/review_proposal.py"
+  ],
+  "startedUtc": "2026-10-26T05:16:09.248873+00:00",
+  "finishedUtc": "2026-10-26T05:16:09.896672+00:00",
+  "exitCode": 0,
+  "oldScriptSha256": "70a7635da25280e2e71dc2018d4428adf44974e1799acd94144680d7d6e718d7",
+  "newScriptSha256": "a99d7554e4e2ef682fca070305268bda8344e7a682b76085fc284e211ecc77fe",
+  "onlyCorrection": "Two old UNIT_9 filenames changed to UNIT_10; no other script bytes changed",
+  "initialError": "GENERATION_PIPELINE_ERROR.json and review_proposal.py.log retained",
+  "freshRendersReused": true,
+  "rendersRerun": false,
+  "trackedFilesApplied": false,
+  "JUnitMethodsExecuted": 0
+}

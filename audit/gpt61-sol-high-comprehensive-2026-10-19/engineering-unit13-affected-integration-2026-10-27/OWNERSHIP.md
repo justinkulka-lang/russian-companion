@@ -1,0 +1,7 @@
+# Durable runtime ownership
+
+One agent/existing checkout. External path /workspace/artifacts/unit13-affected-integration-2026-10-27. Discovery481synthetic skips/83classes/zero runtime passes verified;runtime preparation is not execution. start_runtime.py exclusively launches the recorded supervisor/runtime,read-only native/event/process monitor,and completion_worker.py. The completion worker waits for actual completion,verifies all481 XML/events/source/exit/counts/conservation,preserves every failure,writes only audit evidence and three root pointers,commits/pushes normally and updates DraftPR64. It never edits app/test inputs or fixes/waives assertions. Source/head/clean guards and exclusive lock prevent duplicate ownership.
+
+Before launch/edit/collection inspect REGRESSION_LAUNCHER.json,REGRESSION_RUNNER_PROCESS.json,REGRESSION_COMPLETION.json,COMPLETION_OWNERSHIP_PROCESS.json,AUTO_PROCESS.json,AUTO_RESULT.json,AUTO_ERROR.json,DURABLE_MONITOR_STATUS.json and actual PIDs. If source inputs are active,keep them frozen. If AUTO_RESULT exists,verify actual pushed head/PR/clean state. If AUTO_ERROR exists,preserve all files and diagnose before any retry. Never blindly rerun a one-shot collector/archive.
+
+All48OPEN/auditINCOMPLETE/four exporters16methods excluded/physicalLAST after final independent comprehensive nonphysical audit. No APK/signing/merge/freeze/formal advancement/releaseapproval.

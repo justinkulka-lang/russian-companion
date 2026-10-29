@@ -1,0 +1,16 @@
+{
+  "canonicalReleaseSourceDigest": "2507d56bf2bd910b198d9ff317a605598765e13d947fa4f4435aaacd2a626892",
+  "packContentDigest": "81f79375a5db6c2613712d25e87462aa4062b97c49683d0f7e01612e695dc56a",
+  "unit6ContentDigest": "b48de0c4df3d65c19eb8d8abef35bc7a2a8655884533aba7099d6cf97a301f10",
+  "command": [
+    "/workspace/jdk21/bin/java",
+    "-cp",
+    "/workspace/artifacts/unit6-present-correction-2026-10-23:/workspace/artifacts/saved-review-entry-label-2026-10-23/GENERATION:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/workspace/russian-companion/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes",
+    "SourceIdentity",
+    "/workspace/russian-companion"
+  ],
+  "helperSHA256": "d7c1451b2dbd470d41e4c7aa7601f3f046ad5aca7fa269971703364504659fb0",
+  "sourceCommit": "53d9c292e1f32f204bdff2b09b8f10d02b6b28a6",
+  "recordedCandidateSourceDigest": "a1f6499a3e38a087437e53d925afde502cd36ada3962821d872e66e94e36b6c2",
+  "sourceBindingsState": "STALE_REQUIRES_SEPARATE_AUTHENTIC_RECONCILIATION"
+}

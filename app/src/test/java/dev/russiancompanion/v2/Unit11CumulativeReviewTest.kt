@@ -32,9 +32,20 @@ class Unit11CumulativeReviewTest {
             assertTrue(ordinaryUnitRequirements(p, p.unit(11)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(11)!!, s.v2LearnerView()).allowed)
             val a = open(p, s)
-            assertEquals(listOf("obj-u1-decoding", "obj-u10-have"), a.slots.map { it.objectiveId })
-            assertEquals(listOf("BOUNDED_READING", "SUPPLIED_POSSESSION_ABSENCE_RECOGNITION"), a.slots.map { it.skill })
-            assertEquals("u10-i-have-4", a.slots[1].itemId)
+            // Preserve original v1 slot assertions against a real prior-declaration task.
+            val prior = RecordedCurriculumConservationScope.beforeUnit11NounReview(root(), p)
+            createCumulativeReviewAssignment(prior, s.v2LearnerView(), 11, "historical-unit11-v1", 0)!!.let { a ->
+                assertEquals(1, a.schema)
+                assertEquals(listOf("obj-u1-decoding", "obj-u10-have"), a.slots.map { it.objectiveId })
+                assertEquals(listOf("BOUNDED_READING", "SUPPLIED_POSSESSION_ABSENCE_RECOGNITION"), a.slots.map { it.skill })
+                assertEquals("u10-i-have-4", a.slots[1].itemId)
+            }
+            assertEquals(13, a.schema)
+            assertEquals(Unit11NounCumulativeReviewPolicy.definition.id, a.policyId)
+            assertEquals(listOf("obj-u5-indeclinable", "obj-u10-have"), a.slots.map { it.objectiveId })
+            assertEquals(listOf("SUPPLIED_NOUN_BEHAVIOR_RECOGNITION", "SUPPLIED_POSSESSION_ABSENCE_RECOGNITION"), a.slots.map { it.skill })
+            assertTrue(a.slots[0].itemId in Unit11NounCumulativeReviewPolicy.definition.pool[0].candidateItemIds)
+            assertTrue(a.slots[1].itemId in Unit11NounCumulativeReviewPolicy.definition.pool[1].candidateItemIds)
             assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
             answer(p, s, a, 0); assertFalse(advancementDecision(p, p.unit(11)!!, s.v2LearnerView()).allowed)
             answer(p, s, a, 1); assertTrue(advancementDecision(p, p.unit(11)!!, s.v2LearnerView()).allowed)
@@ -157,61 +168,69 @@ class Unit11CumulativeReviewTest {
 
     @Test fun actualUnit11ContinuePossessionAbsenceCueTeachingPracticeReturnAndAdvanceStayOnUnit11() {
         val p = pack()
-        ready(p).use { s ->
-            compose.setContent { V2App(s, p, {}) }
-            waitTag("v2-continue"); compose.onNodeWithTag("v2-continue").performClick()
-            waitTag("v2-review-start"); compose.onNodeWithTag("v2-review-start").performScrollTo().performClick()
-            waitTag("v2-review-count"); val a = s.cumulativeReviewHistory().first.single { it.targetUnit == 11 }
-            val noun = p.item(a.slots[1].itemId)!!
-            compose.onNode(hasText(noun.promptLetter!!) and !hasClickAction()).performScrollTo().assertIsDisplayed()
-            val wrong = noun.options.first { it != noun.answer }
-            compose.onNodeWithTag("v2-review-option-1-$wrong").performScrollTo().performClick()
-            waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Not the reviewed answer. ${noun.feedback}")
-            compose.onNodeWithTag("v2-review-remediate-1").performScrollTo().performClick()
-            waitTag("v2-example-ex-u10-have-6"); compose.onNodeWithTag("v2-example-ex-u10-have-6").performScrollTo().assertIsDisplayed()
-            compose.onNodeWithText("The no-money example also denies possession.", substring = true).performScrollTo().assertIsDisplayed()
-            waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
-            val practice = reviewedGuidedPractice(p, "u10-st-rem-have")
-            assertEquals(listOf("u10-st-guided-have-1"), practice)
-            assertEquals(7, p.step("u10-st-rem-have")!!.second.exampleIds.size)
-            assertNotEquals(noun.promptLetter, p.item("u10-g-have-0")!!.promptLetter)
-            assertNotEquals(noun.answer, p.item("u10-g-have-0")!!.answer)
-            val remediation = p.step("u10-st-rem-have")!!.second
-            for (n in 1..5) assertTrue(remediation.body.contains(p.step("u10-st-teach-have-$n")!!.second.body))
-            practice.forEach { step ->
-                p.step(step)!!.second.itemIds.forEach { id ->
-                    val i = p.item(id)!!; waitTag("v2-option-$id-${i.answer}")
-                    compose.onNodeWithTag("v2-option-$id-${i.answer}").performScrollTo().performClick()
+        // Historical v1 reading/absence obligation; actual-current noun/possession paths
+        // and both owner5/10 routes are covered by Unit11NounReviewUiTest.
+        RecordedCurriculumConservationScope.beforeUnit11NounReview(root(), p).let { p ->
+            ready(p).use { s ->
+                compose.setContent { V2App(s, p, {}) }
+                waitTag("v2-continue"); compose.onNodeWithTag("v2-continue").performClick()
+                waitTag("v2-review-start"); compose.onNodeWithTag("v2-review-start").performScrollTo().performClick()
+                waitTag("v2-review-count"); val a = s.cumulativeReviewHistory().first.single { it.targetUnit == 11 }
+                val noun = p.item(a.slots[1].itemId)!!
+                compose.onNode(hasText(noun.promptLetter!!) and !hasClickAction()).performScrollTo().assertIsDisplayed()
+                val wrong = noun.options.first { it != noun.answer }
+                compose.onNodeWithTag("v2-review-option-1-$wrong").performScrollTo().performClick()
+                waitTag("v2-review-feedback-1"); compose.onNodeWithTag("v2-review-feedback-1").assertTextEquals("Not the reviewed answer. ${noun.feedback}")
+                compose.onNodeWithTag("v2-review-remediate-1").performScrollTo().performClick()
+                waitTag("v2-example-ex-u10-have-6"); compose.onNodeWithTag("v2-example-ex-u10-have-6").performScrollTo().assertIsDisplayed()
+                compose.onNodeWithText("The no-money example also denies possession.", substring = true).performScrollTo().assertIsDisplayed()
+                waitTag("v2-review-practice"); compose.onNodeWithTag("v2-review-practice").performClick()
+                val practice = reviewedGuidedPractice(p, "u10-st-rem-have")
+                assertEquals(listOf("u10-st-guided-have-1"), practice)
+                assertEquals(7, p.step("u10-st-rem-have")!!.second.exampleIds.size)
+                assertNotEquals(noun.promptLetter, p.item("u10-g-have-0")!!.promptLetter)
+                assertNotEquals(noun.answer, p.item("u10-g-have-0")!!.answer)
+                val remediation = p.step("u10-st-rem-have")!!.second
+                for (n in 1..5) assertTrue(remediation.body.contains(p.step("u10-st-teach-have-$n")!!.second.body))
+                practice.forEach { step ->
+                    p.step(step)!!.second.itemIds.forEach { id ->
+                        val i = p.item(id)!!; waitTag("v2-option-$id-${i.answer}")
+                        compose.onNodeWithTag("v2-option-$id-${i.answer}").performScrollTo().performClick()
+                    }
                 }
+                waitTag("v2-return-to-check"); compose.onNodeWithTag("v2-return-to-check").performClick()
+                waitTag("v2-review-count"); assertEquals(a, s.cumulativeReviewHistory().first.single { it.targetUnit == 11 })
+                assertFalse(1 in completedReviewSlots(p, a, s.cumulativeReviewHistory().second))
+                a.slots.forEachIndexed { index, slot ->
+                    val answer = p.item(slot.itemId)!!.answer
+                    compose.onNodeWithTag("v2-review-option-$index-$answer").performScrollTo().performClick()
+                    compose.waitForIdle()
+                }
+                waitTag("v2-review-gate"); compose.onNodeWithTag("v2-review-gate").performScrollTo().performClick()
+                waitTag("v2-advance"); compose.onNodeWithTag("v2-advance").performScrollTo().assertIsEnabled().performClick()
+                compose.waitUntil(30000) { compose.waitForIdle(); s.v2Profile().currentUnitNumber == 12 }
             }
-            waitTag("v2-return-to-check"); compose.onNodeWithTag("v2-return-to-check").performClick()
-            waitTag("v2-review-count"); assertEquals(a, s.cumulativeReviewHistory().first.single { it.targetUnit == 11 })
-            assertFalse(1 in completedReviewSlots(p, a, s.cumulativeReviewHistory().second))
-            a.slots.forEachIndexed { index, slot ->
-                val answer = p.item(slot.itemId)!!.answer
-                compose.onNodeWithTag("v2-review-option-$index-$answer").performScrollTo().performClick()
-                compose.waitForIdle()
-            }
-            waitTag("v2-review-gate"); compose.onNodeWithTag("v2-review-gate").performScrollTo().performClick()
-            waitTag("v2-advance"); compose.onNodeWithTag("v2-advance").performScrollTo().assertIsEnabled().performClick()
-            compose.waitUntil(30000) { compose.waitForIdle(); s.v2Profile().currentUnitNumber == 12 }
         }
     }
 
     @Test fun placementWithTaughtUnit1ButUntaughtUnit10RepairsTheMissingOwnerInsteadOfUnit1() {
         val p = pack()
-        LocalStore.openInMemory(context()).use { s ->
-            for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
-            s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 11, startingPoint = "RESUME_FROM_BOOK"))
-            compose.setContent { V2App(s, p, {}) }
-            compose.onNodeWithText("Course").performClick()
-            waitTag("v2-course-intro"); compose.onNode(hasScrollToIndexAction()).performScrollToIndex(11)
-            waitTag("v2-unit-row-11"); compose.onNodeWithTag("v2-unit-row-11").performClick()
-            waitTag("v2-open-cumulative-review"); compose.onNodeWithTag("v2-open-cumulative-review").performScrollTo().performClick()
-            waitTag("v2-review-insufficient"); compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
-            compose.onNodeWithTag("v2-review-repair").performScrollTo().assertTextEquals("Open earlier Unit 10 instruction and checks").performClick()
-            waitTag("v2-unit-heading"); compose.onNodeWithText("Unit 10").assertIsDisplayed()
-            assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 11 })
+        // Historical v1 reading/absence obligation; actual-current noun/possession paths
+        // and both owner5/10 routes are covered by Unit11NounReviewUiTest.
+        RecordedCurriculumConservationScope.beforeUnit11NounReview(root(), p).let { p ->
+            LocalStore.openInMemory(context()).use { s ->
+                for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
+                s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 11, startingPoint = "RESUME_FROM_BOOK"))
+                compose.setContent { V2App(s, p, {}) }
+                compose.onNodeWithText("Course").performClick()
+                waitTag("v2-course-intro"); compose.onNode(hasScrollToIndexAction()).performScrollToIndex(11)
+                waitTag("v2-unit-row-11"); compose.onNodeWithTag("v2-unit-row-11").performClick()
+                waitTag("v2-open-cumulative-review"); compose.onNodeWithTag("v2-open-cumulative-review").performScrollTo().performClick()
+                waitTag("v2-review-insufficient"); compose.onNodeWithTag("v2-review-start").assertDoesNotExist()
+                compose.onNodeWithTag("v2-review-repair").performScrollTo().assertTextEquals("Open earlier Unit 10 instruction and checks").performClick()
+                waitTag("v2-unit-heading"); compose.onNodeWithText("Unit 10").assertIsDisplayed()
+                assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 11 })
+            }
         }
     }
 

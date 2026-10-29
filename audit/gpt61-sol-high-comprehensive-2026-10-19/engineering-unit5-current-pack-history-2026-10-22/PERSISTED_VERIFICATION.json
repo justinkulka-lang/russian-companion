@@ -1,0 +1,31 @@
+{
+  "status": "CURRENT_PACK_ARCHIVE_AND_MIXED_LIFECYCLE_SCOPE_VERIFIED",
+  "testedSource": "d87c93036a2e3d1ef7ad0cbb2afaf45305748788",
+  "counts": {
+    "reported": 6,
+    "passed": 6,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 2,
+  "originalArchiveCases": 64,
+  "additionalMixedLifecycleCases": 1,
+  "caseCountsAreNotTestCounts": true,
+  "originalArchiveCreditTwo": 24,
+  "originalArchiveCreditThree": 40,
+  "initialSeparateCounts": {
+    "reported": 6,
+    "passed": 5,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "all66ArchiveHashesAndCrcs": true,
+  "allPriorUnit5EvidenceConserved": true,
+  "existingTestsAndAppInputsUnchanged": true,
+  "currentHeadMatchesTestedInputs": true,
+  "completeSuite": false,
+  "findingsClosed": 0,
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

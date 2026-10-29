@@ -1,0 +1,14 @@
+{
+  "predictedInventory": 61,
+  "actualDiscoveredAndExecuted": 62,
+  "additionalMethod": [
+    [
+      "dev.russiancompanion.v2.V2RebuildTest",
+      "primaryContentStartsAtTheInsetWhenFontIsLarge"
+    ]
+  ],
+  "inventoryMismatchCause": "Regex required @Test immediately before fun and missed intervening @Config; no app/test change or runtime failure",
+  "originalScopeAndRawRunnerUnchanged": true,
+  "originalCollectorExitCode": 1,
+  "gradleExitCode": 0
+}

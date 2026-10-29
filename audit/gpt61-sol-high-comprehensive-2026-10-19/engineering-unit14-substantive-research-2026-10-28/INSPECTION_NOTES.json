@@ -1,0 +1,7 @@
+{
+  "compiledObservationShape": "Current Unit13 observation stores pools as integer59 and nests actual pool arrays inside policies;an initial read-only inspection assumed a flat pool array and raised TypeError:int object is not iterable. No app/test/checkpoint data changed.",
+  "digestLabel": "Original canonicalSourceDigest field is packcontent15c6ae39;repositorysource3c0acbb9 is separate. Prior correction/raw source preserved.",
+  "historicalStandaloneScope": "No ia003-unit14-/unit15- standalone learner JSON observed in specified independent-audit subtree;duplicate flag null rather than vacuously true.",
+  "checkerFailures": "Two actual source-checker failures are preserved with exact checker bytes/SHA and error records;corrections only account for existing optional field/order shapes.",
+  "newJUnitMethodsExecuted": 0
+}

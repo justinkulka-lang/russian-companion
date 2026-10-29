@@ -1,0 +1,9 @@
+{
+  "commit": "49a6f3784393a7b695f7259ab71bec47d2393198",
+  "recordedUtc": "2026-10-26T05:26:06.512577+00:00",
+  "kind": "Exact application commit;not a test execution or release approval",
+  "initialApplicationCommit": "b3609660d8fc3934e0e04fef165700b01fe5147c",
+  "initialCommittedRecordChanges": 94,
+  "completedRecordChanges": 95,
+  "completionReason": "One reviewed owner-governance manifest omitted from initial directory-based staging; its bytes were already applied on disk. Final commit contains every reviewed record; initial commit retained."
+}

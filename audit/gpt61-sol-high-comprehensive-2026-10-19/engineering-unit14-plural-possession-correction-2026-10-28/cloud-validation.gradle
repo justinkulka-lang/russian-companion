@@ -1,0 +1,13 @@
+allprojects {
+    tasks.withType(Test).configureEach {
+        systemProperty 'user.home', '/workspace/java-user-home'
+        systemProperty 'maven.repo.local', '/workspace/.m2/repository' 
+        // These screenshot exporters overwrite retained evidence and write to /opt/cursor.
+        exclude '**/VisualReviewCaptureTest*', '**/Units35ChunkCaptureTest*', '**/Units610ChunkCaptureTest*', '**/Units1115GapCaptureTest*'
+        systemProperty 'robolectric.dependency.repo.url', 'https://repo.maven.apache.org/maven2'
+        ['https.proxyHost','https.proxyPort','http.proxyHost','http.proxyPort','http.nonProxyHosts','javax.net.ssl.trustStore'].each { name ->
+            def value = System.getProperty(name)
+            if (value != null) systemProperty name, value
+        }
+    }
+}

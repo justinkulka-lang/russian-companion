@@ -1,0 +1,41 @@
+{
+  "observedUtc": "2026-10-27T20:44:20.608643+00:00",
+  "testedSource": "3248ab597dc13e8746464ba7601cf29e440995fa",
+  "originalWorkerExited": true,
+  "originalErrorSha256": "997804785d7dbe0e27049a620774706596602be2a7b4968f75951192a935698a",
+  "failurePhase": "After successful raw collection and both evidence verifications, before git add/commit/push",
+  "cause": "git helper stripped leading whitespace from porcelain output; first path M AGENTS.md was sliced as GENTS.md and rejected",
+  "correction": "Read untrimmed NUL-terminated porcelain=v1 records; validate exact path allowlist and reject rename/copy entries before staging",
+  "validatedChangedPathsBeforeRecovery": [
+    "AGENTS.md",
+    "audit/content-corrections/CODEX_CHECKPOINT_2026-10-12.md",
+    "audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/SHA256.json",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/ACTUAL_FAILURES.json",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/FINAL_CONSERVATION.json",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/METHOD_COVERAGE.json",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/NEXT_TASK.md",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/RAW_AFFECTED.zip",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/RAW_AFFECTED_INDEX.json",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/REGRESSION_CONTEXT.json",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/REGRESSION_RESULT.json",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/REGRESSION_RESULTS.csv",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/REGRESSION_RUN.exit",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/REGRESSION_SHA256.json",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/REPORT.md",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/RESULT_VERIFICATION.json"
+  ],
+  "allowedScope": [
+    "AGENTS.md",
+    "audit/content-corrections/CODEX_CHECKPOINT_2026-10-12.md",
+    "audit/content-corrections/CODEX_ENGINEERING_CONTINUATION.md",
+    "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-affected-continuation-2026-10-27/"
+  ],
+  "noTestsRerun": true,
+  "noCollectorRerun": true,
+  "productionTestInputsUnchanged": true,
+  "countsUnchanged": true,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

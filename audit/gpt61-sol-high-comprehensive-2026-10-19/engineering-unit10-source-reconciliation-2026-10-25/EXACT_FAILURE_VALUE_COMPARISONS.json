@@ -1,0 +1,41 @@
+[
+  {
+    "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+    "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+    "expectedBytes": 41172,
+    "actualBytes": 41172,
+    "expectedSha256": "283881edf0fb52faf8c3407f2be86074a744e821e506467049398851d5c9a0a2",
+    "actualSha256": "276f2bd2e7486dba5eae12386a73ee47a632ab13c101cdc822cb52195488de8b",
+    "exactValuesDifferOnlyUnit10PolicyToken": true,
+    "expectedOldTokens": 1,
+    "expectedNewTokens": 0,
+    "actualOldTokens": 0,
+    "actualNewTokens": 1
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9BindingConservationTest",
+    "method": "currentDeclarationReconstructsOnlyUnit9ThenEveryGenuineEarlierPack",
+    "expectedBytes": 998172,
+    "actualBytes": 998172,
+    "expectedSha256": "b5a1f6e2c51b0f8fa6e4cfa08953ed0944d21c489d0b758ea148acc0cc6639ab",
+    "actualSha256": "fc16d88c911291b4eab6118a283ea867dee27aae99be4bd5dbd9eae1b3e4f437",
+    "exactValuesDifferOnlyUnit10PolicyToken": true,
+    "expectedOldTokens": 0,
+    "expectedNewTokens": 1,
+    "actualOldTokens": 1,
+    "actualNewTokens": 0
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+    "method": "exactPriorV2DeclarationRefusesSchemaElevenAndPreservesOwnerNineDownstream",
+    "expectedBytes": 31089247,
+    "actualBytes": 31089247,
+    "expectedSha256": "17fdd0f683b5b6e5afaf3b805e36851c2c4c7b071c437a1c658dddba7a403b3a",
+    "actualSha256": "6af396286fad887b85c494f1fb1861e29333eadd7a37d1aaffa175f62af24879",
+    "exactValuesDifferOnlyUnit10PolicyToken": true,
+    "expectedOldTokens": 1,
+    "expectedNewTokens": 0,
+    "actualOldTokens": 0,
+    "actualNewTokens": 1
+  }
+]

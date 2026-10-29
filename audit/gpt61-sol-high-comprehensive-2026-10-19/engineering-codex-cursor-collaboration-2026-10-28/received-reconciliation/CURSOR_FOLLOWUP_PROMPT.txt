@@ -1,0 +1,15 @@
+Finish delivery of the existing read-only Unit14 review. Do not rerun tests, edit the repository, or regenerate files while claiming they are the original saved outputs.
+
+Your last reply supplied the full report and findings CSV header, but only described two required files. Paste their COMPLETE existing contents directly into your reply:
+
+1. CURSOR_METHOD_RECONCILIATION.csv — header plus all14rows in a csv code block.
+2. CURSOR_SCOPE_AND_EVIDENCE.json — the complete JSON in a json code block.
+
+Do not provide /tmp paths, download links or summaries in place of their contents. If an original is unavailable, say so explicitly.
+
+Also return a separate source-identity addendum; preserve the original report unchanged. Its execution table incorrectly uses “same” for the discovery commits. Check the primary contexts and record:
+- Affected discovery:8e0b82ddc0ff573697ce4ce9b18abe082ed2c2d0;runtime:dd736e1a8657bd02a34063752afd82146ab2f842.
+- Follow-up discovery:0c6789a291c6170dab792c908dba5c9b379067fa;runtime:2faa5471c4cf36728c09684584a255268bd34adb.
+- Broad discovery:2ebf4f282e42eaa5df8eb3a9e2ac491618e79f96;its active runtime target:8eb9d3d4cc3fdbcd70d5b8904087ddad18acfaf1.
+
+Keep the verdict bounded to the seven-file review. These metadata corrections do not change execution counts or close any of the48 independent findings. The project audit remains INCOMPLETE;physical acceptance remains outstanding and last.

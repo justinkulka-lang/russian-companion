@@ -72,7 +72,11 @@ class Units610SourceIntakeTest {
         assertEquals("4fd67bff0431a11416115de023e076c52b7879304fc4a98b508d871170703e9c", V2Validator.unitContentReviewDigest(pack, 2))
         assertEquals("28aa1c4770ecd53891d2313a0026f8876594ad623813c4a74a9a381d36e69300", V2Validator.unitContentReviewDigest(pack, 3))
         assertEquals("1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11", V2Validator.unitContentReviewDigest(priorUnit4, 4))
-        assertEquals("3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141", V2Validator.unitContentReviewDigest(pack, 5))
+        RecordedCurriculumConservationScope.beforeUnit5GrammarReview(repo(),pack).let { pack ->
+            assertEquals("3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141", V2Validator.unitContentReviewDigest(pack, 5))
+        }
+        assertNotEquals("The current Unit5 review declaration has its own identity",
+            "3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141", V2Validator.unitContentReviewDigest(pack, 5))
         assertEquals(
             mappingPackageDigest(governedMappingFacts(5)),
             buildUnitReviewPackage(pack, 5).mappingPackageDigest,
@@ -81,7 +85,20 @@ class Units610SourceIntakeTest {
         assertEquals("0c6bbc7ac312c0ecab9426e24ac8b7401cb795aed937bb9357e3f548c58ef72b", buildUnitReviewPackage(pack, 2).reviewPackageDigest)
         assertEquals("0e2985b1929cf4286ea10dfa93e654cd107e3720d7eb00e3eff76c80010a94fe", buildUnitReviewPackage(pack, 3).reviewPackageDigest)
         assertEquals("8494a75026860015f3f250707e15f0c61c1b2fb3b3fb64cd03d5b75c425a4ca5", buildHistoricalUnitReviewPackage(priorUnit4, 4, "a1e8f319b0b55f8e1dbcced680c34f32d240d217").reviewPackageDigest)
-        assertEquals("d2df163c73c5b0be1de85e58a69f8c2cf50554198419205463b614931f08628c", buildUnitReviewPackage(pack, 5).reviewPackageDigest)
+        // The original package pin includes its original source binding, not just Unit5 content.
+        RecordedCurriculumConservationScope.beforeUnit5GrammarReview(repo(),pack).let { pack ->
+            fun buildUnitReviewPackage(pack: V2CurriculumPack, unitNumber: Int) =
+                buildHistoricalUnitReviewPackage(pack, unitNumber,
+                    dev.russiancompanion.v2.review.UNITS5_6_RECENT_SELECTION_CURRICULUM_COMMIT)
+            assertEquals("d2df163c73c5b0be1de85e58a69f8c2cf50554198419205463b614931f08628c", buildUnitReviewPackage(pack, 5).reviewPackageDigest)
+        }
+        val currentUnit5Package = buildUnitReviewPackage(pack, 5)
+        val implementationUnit5Package = buildHistoricalUnitReviewPackage(
+            RecordedCurriculumConservationScope.beforeUnit6PresentReview(repo(),pack), 5,
+            RecordedCurriculumConservationScope.beforeUnit6PackImplementation)
+        assertEquals(implementationUnit5Package.reviewPackageDigest, currentUnit5Package.reviewPackageDigest)
+        assertNotEquals("d2df163c73c5b0be1de85e58a69f8c2cf50554198419205463b614931f08628c",
+            currentUnit5Package.reviewPackageDigest)
         // Current Unit4 is bound to its genuine present-teaching implementation, not a fresh hash.
         val correctedUnit4 = historicalPack("e6db0bdfe0bbb40edf190623e2123014946f305b")
         val expectedUnit4 = correctedUnit4.unit(4)!!

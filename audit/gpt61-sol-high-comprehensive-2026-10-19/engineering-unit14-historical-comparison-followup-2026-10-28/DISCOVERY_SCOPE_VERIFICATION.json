@@ -1,0 +1,14 @@
+{
+  "sourceCommit": "0c6789a291c6170dab792c908dba5c9b379067fa",
+  "methods": 79,
+  "classes": 13,
+  "syntheticSkips": 79,
+  "runtimePasses": 0,
+  "exactPreparedIdentities": true,
+  "all14FailedIdentitiesIncluded": true,
+  "all19CurrentUnit13ControlsIncluded": true,
+  "all22CurrentUnit14ControlsIncluded": true,
+  "allSelectorsFullClasses": true,
+  "inputTreesMatchPrepared": true,
+  "completeSuite": false
+}

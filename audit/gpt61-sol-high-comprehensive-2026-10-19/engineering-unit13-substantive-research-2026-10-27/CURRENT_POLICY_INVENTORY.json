@@ -1,0 +1,255 @@
+{
+  "sourceCommit": "5971ed56cb4e17b15e4430202d206ec8df59337a",
+  "reusedCompiledObservation": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit12-gender-correction-2026-10-27/CURRENT_POLICY_OBSERVATION.json",
+  "observationSha256": "1c4f51c1d7078734cb7559dd3f566a13763194208a13cf3e322d712d122679fa",
+  "producerSource": "ca0fdaeca8de81ab6a5d4935fbcdcb068c4af913",
+  "appMainTreeMatches": true,
+  "currentUnit13": {
+    "unit": 13,
+    "id": "unit13-prior-reading-aspect-past-gender-v2",
+    "digest": "7e5076dfb0def9c62d25787335555bd93136b98b2bf1c0d823a58cc1830a1a26",
+    "schema": 6,
+    "pools": 3
+  },
+  "currentPools": [
+    {
+      "unit": 13,
+      "slot": 0,
+      "objective": "obj-u1-decoding",
+      "skill": "BOUNDED_READING",
+      "remediationStep": "",
+      "items": [
+        "u1-i-decode-pair"
+      ]
+    },
+    {
+      "unit": 13,
+      "slot": 1,
+      "objective": "obj-u12-aspect",
+      "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+      "remediationStep": "u12-st-rem-aspect",
+      "items": [
+        "u12-i-aspect-1"
+      ]
+    },
+    {
+      "unit": 13,
+      "slot": 2,
+      "objective": "obj-u11-past-aspect",
+      "skill": "SUPPLIED_PAST_GENDER_RECOGNITION",
+      "remediationStep": "u11-st-rem-past-aspect",
+      "items": [
+        "u11-i-past-aspect-1",
+        "u11-i-past-aspect-2"
+      ]
+    }
+  ],
+  "proposedPools": [
+    {
+      "unit": 13,
+      "slot": 0,
+      "objective": "obj-u4-present",
+      "skill": "SUPPLIED_PRESENT_FORM_RECOGNITION",
+      "remediationStep": "u4-st-rem-present",
+      "items": [
+        "u4-i-verb-говорить-мы",
+        "u4-i-verb-видеть-он",
+        "u4-i-verb-писать-вы",
+        "u4-i-verb-идти-они"
+      ]
+    },
+    {
+      "unit": 13,
+      "slot": 1,
+      "objective": "obj-u12-aspect",
+      "skill": "SUPPLIED_ASPECT_PARTNER_RECOGNITION",
+      "remediationStep": "u12-st-rem-aspect",
+      "items": [
+        "u12-i-aspect-1",
+        "u12-i-aspect-2"
+      ]
+    },
+    {
+      "unit": 13,
+      "slot": 2,
+      "objective": "obj-u11-past-aspect",
+      "skill": "SUPPLIED_PAST_GENDER_RECOGNITION",
+      "remediationStep": "u11-st-rem-past-aspect",
+      "items": [
+        "u11-i-past-aspect-1",
+        "u11-i-past-aspect-2"
+      ]
+    }
+  ],
+  "registeredPolicyObjectHashes": {
+    "Unit3CumulativeReviewPolicy": "5375c7c0fde0d156a7e64a97f3b5669b0690c8e2f8ab576fe225e6c84963ae70",
+    "Unit4CumulativeReviewPolicy": "d881b5cfbea335be6e5ab2e869c64cd54598883d1cc60dc2a3942ee4e9979355",
+    "Unit5CumulativeReviewPolicy": "6befdcee801a9815fdada5fb043372b962d443913c6197a4153da566345800cd",
+    "Unit5GrammarCumulativeReviewPolicy": "640ab97565e1376c0fa7e42c4b108d7c0ec22066a093971785a932fc443f688d",
+    "Unit6CumulativeReviewPolicy": "f6132e00d70828fbe6792c134958b5a47c68d905023547091670acecb2ea0179",
+    "Unit6WiderCumulativeReviewPolicy": "fca319ecd96b1f1438c74e8b56831dc78c20210b2392810ef9b373f109784817",
+    "Unit6PresentCumulativeReviewPolicy": "49c81b992ca90cd7625e3e2d7777d111228f05b43fe188e60f02d6afbe86f20f",
+    "Unit7CumulativeReviewPolicy": "7294cbaeaeea5a82f83dc05ff0c6ce6cfccf9ca87e0ea85ea2c4e07f37111ac7",
+    "Unit7GenderCumulativeReviewPolicy": "6830dc31723d9717b81d4693246d4b7cd3777d44a7808bd4efe12f5b0b025063",
+    "Unit8CumulativeReviewPolicy": "b2f1498ca1f846e21a502ea05bd65602ab537bab32622574b6c77f983f080a00",
+    "Unit8PresentCumulativeReviewPolicy": "42a7effc2257067a28625ddcda02823f43c036e8fbc906a44fbd971c264da1ce",
+    "Unit9CumulativeReviewPolicy": "da0b455f6313adba561973aabb57323a09c17ab2a6eef2608159727a41f57283",
+    "Unit9WiderCumulativeReviewPolicy": "d63d4438f59a1d9fd05c66466a3e59ab345466421f2134ff4e7ed6b002bde264",
+    "Unit9NounBehaviorCumulativeReviewPolicy": "3f960153e5e893acba9c471198954c7a282356bbd07ec3788d796a64230bb251",
+    "Unit10CumulativeReviewPolicy": "eb0f05f2d74549a0a2dfa6e2e3cef67364fa57eaeeb067d91c84e8cd29b516b4",
+    "Unit10PresentCumulativeReviewPolicy": "b91c3cf79247445b8bc6f5a6500e89d7a5a641c99ea224e6533c52882868dcd6",
+    "Unit11CumulativeReviewPolicy": "b5e1d23edd2cd90c16b149e89286dcb1eebbbbb21d65c4e6f141f8e45e234b1e",
+    "Unit11NounCumulativeReviewPolicy": "e48a1069b075246e5af85028c97aaed36839acf0123a165198f208ff63f78692",
+    "Unit12CumulativeReviewPolicy": "d1f4568d3c58e3a7decffd40f3a52157b8d50560d1639d2caf6099733075d993",
+    "Unit13CumulativeReviewPolicy": "c358dae543e43a9fe1d78ecdaba01ec87f64793635462379f926cab397694da5",
+    "Unit13WiderCumulativeReviewPolicy": "d9a1490d013764954f6349bb00e6b12a81776a9e44f922ab72de0de6929742d7",
+    "Unit12GenderCumulativeReviewPolicy": "02053fb55a22180bfd2e38480d7ae98c986120692cf8c995bd921363af9aa60a",
+    "Unit14CumulativeReviewPolicy": "71a72229f1b3936154f561ed56294f08932b094c0357cd4ccf992043d1e27753",
+    "Unit15CumulativeReviewPolicy": "1ca9dcaa650cdb7d59392b6458104077362ae82c00b2e8b525754d555a081fe9",
+    "Unit16CumulativeReviewPolicy": "4931d70fd950dca5b413eba87b5056776041c3a22ebb8a4539cf1e875c8f42a2",
+    "Unit17CumulativeReviewPolicy": "482fa32dfc1f792ae1cb31b1e197e08d2cc29e1cabfb37a095a0013ac2124c9e",
+    "Unit18CumulativeReviewPolicy": "d6fb25caf455709129717f073936d0a10528dfa1b8099bf2404d4a0bdc51bcf9",
+    "Unit19CumulativeReviewPolicy": "28e2d9dc91594137f91231c6bd852355276d077421e13d7c77e6ecd6f12acdae",
+    "Unit20CumulativeReviewPolicy": "4333ab40b6d1e6b6fa1ba9dde6c9cead258411ad6d10eecd15042f5f3051239b",
+    "Unit21CumulativeReviewPolicy": "9077c5b74c5b3f98f9924d64158d7ed09b757aefebb0f1e93519a492b91d63a2",
+    "Unit22CumulativeReviewPolicy": "08c469d3e3592b7db84d5e8f241d4a36bdf0f924e7e909db7e8273fedfb1013a",
+    "Unit23CumulativeReviewPolicy": "02bb38b30230cb35cb74ff242517e81f7af61850b06813ffcc5f141c1df063b4",
+    "Unit24CumulativeReviewPolicy": "2e351fd8859296599494d262130bb24dc8a00e876abd454f852b91433b65099a",
+    "Unit25CumulativeReviewPolicy": "4fc89ed4d7bc118fa8173c43d084d008b57515ab3fd3c0b7e8f3a1d1a5b6ffbb",
+    "Unit26CumulativeReviewPolicy": "e68422e00b2d99aad336ab1288bc952741a1f9a8bc1db87c0e114ae7f5969e88",
+    "Unit27CumulativeReviewPolicy": "7c3ecba356a64b566685935f351e884556e10b12f13d098a940656a78df4280b",
+    "Unit28CumulativeReviewPolicy": "844d36212bd3eaba0137396e8ced696a3f364c73ca3aed887c4fa7f639e06406",
+    "Unit29CumulativeReviewPolicy": "203768913fe79de857be831deae309bebc07f44bbe65d8645c4a61a7c5115c73",
+    "Unit30CumulativeReviewPolicy": "d13375dceff28686873973b32a916a054cc5d1864fca4a7490c04f3b8acad338"
+  },
+  "existingSchemaConstants": {
+    "CUMULATIVE_REVIEW_SCHEMA": 1,
+    "UNIT3_RECENT_SELECTION_ASSIGNMENT_SCHEMA": 2,
+    "UNITS5_6_RECENT_SELECTION_ASSIGNMENT_SCHEMA": 3,
+    "UNIT6_WIDER_REVIEW_ASSIGNMENT_SCHEMA": 4,
+    "UNIT9_WIDER_REVIEW_ASSIGNMENT_SCHEMA": 5,
+    "UNIT13_WIDER_REVIEW_ASSIGNMENT_SCHEMA": 6,
+    "UNIT5_GRAMMAR_REVIEW_ASSIGNMENT_SCHEMA": 7,
+    "UNIT6_PRESENT_REVIEW_ASSIGNMENT_SCHEMA": 8,
+    "UNIT7_GENDER_REVIEW_ASSIGNMENT_SCHEMA": 9,
+    "UNIT8_PRESENT_REVIEW_ASSIGNMENT_SCHEMA": 10,
+    "UNIT9_NOUN_BEHAVIOR_REVIEW_ASSIGNMENT_SCHEMA": 11,
+    "UNIT10_PRESENT_REVIEW_ASSIGNMENT_SCHEMA": 12,
+    "UNIT11_NOUN_REVIEW_ASSIGNMENT_SCHEMA": 13,
+    "UNIT12_GENDER_REVIEW_ASSIGNMENT_SCHEMA": 14
+  },
+  "currentCounts": {
+    "activePolicies": 28,
+    "objectivePools": 59,
+    "candidatePlacements": 108,
+    "uniqueCandidateItems": 51,
+    "printSingletonPolicies": 20
+  },
+  "projectedCountsNotActivated": {
+    "activePolicies": 28,
+    "objectivePools": 59,
+    "candidatePlacements": 112,
+    "uniqueCandidateItems": 52,
+    "printSingletonPolicies": 19
+  },
+  "downstreamOwner13Pools": [
+    {
+      "unit": 14,
+      "slot": 1,
+      "objective": "obj-u13-reported",
+      "skill": "SUPPLIED_REPORTED_FRAME_TIME_RECOGNITION",
+      "remediationStep": "u13-st-rem-reported",
+      "items": [
+        "u13-i-report-frame-time"
+      ]
+    }
+  ],
+  "dependency": "Current Unit12 v2 reuses the immutable Unit13Wider pool[2]; never edit that object to implement Unit13 v3.",
+  "existingOwnerBridges": "Preserve Unit12 v1 owner identity support for Unit13 v1/v2 and existing Unit13 v1 owner support for Unit14; future v3 needs exact v2 owner13 support too.",
+  "currentSourceBoundManifests": {
+    "11": {
+      "path": "review/unit-11/UNIT_11_REVIEW_MANIFEST.json",
+      "sha256": "b7cb9c8d76231d4760395628f26eedc2071eaa75a24ee7bfbb5ca0fe902e8cf1",
+      "gitBlob": "c41e67cdf4f99ce7c34f569e4d78cbcf4ca6c068",
+      "data": {
+        "curriculumSourceCommit": "c2d297e79fa677aa1375917cfbe052e4c0806633",
+        "contentReviewDigest": "1d4c25c25e20b7fb6629995fcfb66e29f02554e276c5a7f5ec69fb5ac0a2ca5c",
+        "mappingPackageDigest": "61b1d9c77882225528ca0d0f68a44efa13c68605efdaed0e6abb8e1b519db587",
+        "packContentReviewDigest": "7de1c93911dc80388fa10bd6d0d734fc64ace7e6cebbc5ad8e008d1c25c6366c",
+        "reviewPackageDigest": "62ee25aa47fd9c75adcf2f16b408ced73fc38ca63e89ef28c9befd7d9f255e63",
+        "repositorySourceDigest": "84b6fda72017ec2dfc2b4add6c0e82b1a1e9f40769773f18d50caee4cf7a2355",
+        "unitReviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "unit": {
+          "id": "unit-11",
+          "installState": "DEVELOPMENT",
+          "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+          "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+          "contentHash": "bec54f4609c751e26e359f3c1491824d94d2452be3361adb995349ce11cb6d23"
+        }
+      }
+    },
+    "12": {
+      "path": "review/unit-12/UNIT_12_REVIEW_MANIFEST.json",
+      "sha256": "f6ffa127b6d6f83ba5f125fd3f8665bcef4f7ab0ecee9f2ef73be7a33f90c794",
+      "gitBlob": "22edc219415228508fec65b08cb53f536daa6c9a",
+      "data": {
+        "curriculumSourceCommit": "ca0fdaeca8de81ab6a5d4935fbcdcb068c4af913",
+        "contentReviewDigest": "8c3ae9bbd682e069dbcd4dc579c30af36bbce321120ce7da804260e5a44d7033",
+        "mappingPackageDigest": "0747489371acaab80787db42f08f6d4f5479e6186a2c9415052df484324e37d3",
+        "packContentReviewDigest": "7de1c93911dc80388fa10bd6d0d734fc64ace7e6cebbc5ad8e008d1c25c6366c",
+        "reviewPackageDigest": "5d6f5564d271465deea96092437dbb8c8c63dd949220432f97efecffc9c94484",
+        "repositorySourceDigest": "84b6fda72017ec2dfc2b4add6c0e82b1a1e9f40769773f18d50caee4cf7a2355",
+        "unitReviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "unit": {
+          "id": "unit-12",
+          "installState": "DEVELOPMENT",
+          "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+          "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+          "contentHash": "ed833f43ed9344644944e19ea429a42645cd351e508b5a8e2e24c33a0ac7650e"
+        }
+      }
+    },
+    "13": {
+      "path": "review/unit-13/UNIT_13_REVIEW_MANIFEST.json",
+      "sha256": "4255c58f341c5c76d9731ef2c644369c5d1d4357a356ae4a2ce7f8c60454fd09",
+      "gitBlob": "56cf91ad9399a6628c7477a933f596e1d16bee28",
+      "data": {
+        "curriculumSourceCommit": "41ef8eebc5f7ff25cd30cb19164662dfab858f66",
+        "contentReviewDigest": "7102c47201a3d4973d781d315dbbb8ceccca3424174b9c90ad127bac037828df",
+        "mappingPackageDigest": "e8ca3b0ba9b6a48acc54ea18e10a6e6fb1291698252fcbc35b02dbf2a820deb4",
+        "packContentReviewDigest": "7de1c93911dc80388fa10bd6d0d734fc64ace7e6cebbc5ad8e008d1c25c6366c",
+        "reviewPackageDigest": "353a909c931a09503db0f3c8de61f29f453776946dc25dce281a1eb3cf81c886",
+        "repositorySourceDigest": "84b6fda72017ec2dfc2b4add6c0e82b1a1e9f40769773f18d50caee4cf7a2355",
+        "unitReviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "unit": {
+          "id": "unit-13",
+          "installState": "DEVELOPMENT",
+          "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+          "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+          "contentHash": "de19a59a99179304657bbec701924781312f87723e2f3578218fe430a1fd66c0"
+        }
+      }
+    },
+    "14": {
+      "path": "review/unit-14/UNIT_14_REVIEW_MANIFEST.json",
+      "sha256": "382bae80020392c13a099c02d4a2a3b32ee859cce6f1f0d7a1b10cf1dd0cb836",
+      "gitBlob": "fa7f475a3317aed09c8e369efe617b9cd96ce4cf",
+      "data": {
+        "curriculumSourceCommit": "e88130c42b21fc2440cb82792a3bc3841fe69563",
+        "contentReviewDigest": "9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38",
+        "mappingPackageDigest": "d59ce00b8c97b8610770ad1409daa9584e520ddab3c53a0b539e46b4a0162367",
+        "packContentReviewDigest": "7de1c93911dc80388fa10bd6d0d734fc64ace7e6cebbc5ad8e008d1c25c6366c",
+        "reviewPackageDigest": "09057ac14bcf5427f175392fe768ebb3954c09d1cb146007103276f32b43650b",
+        "repositorySourceDigest": "84b6fda72017ec2dfc2b4add6c0e82b1a1e9f40769773f18d50caee4cf7a2355",
+        "unitReviewStatus": "IMPLEMENTED_PENDING_FINAL_AUDIT",
+        "unit": {
+          "id": "unit-14",
+          "installState": "DEVELOPMENT",
+          "readiness": "CONTENT_COMPLETE_REVIEW_PENDING",
+          "mappingStatus": "PENDING_CURRICULUM_REVIEWER",
+          "contentHash": "31cc7673a2018c8af5b7aa22e3585e5c9616d1e7d04cbe895c8f1b1d9c4cf15e"
+        }
+      }
+    }
+  }
+}

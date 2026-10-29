@@ -1,0 +1,74 @@
+[
+  {
+    "testClass": "dev.russiancompanion.v2.Unit10BindingConservationTest",
+    "method": "kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord",
+    "outcome": "FAILED",
+    "seconds": "0.109",
+    "messagePreview": "java.lang.AssertionError: expected:<5> but was:<6>",
+    "fullMessageBytes": 50,
+    "fullMessageSha256": "1a21b94d9852088c9ea77e43524bc057206e219fe36893e5389a73ae3d9273b0"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit10BindingConservationTest",
+    "method": "currentDeclarationReconstructsOnlyUnit10ThenEveryGenuineEarlierPack",
+    "outcome": "FAILED",
+    "seconds": "4.24",
+    "messagePreview": "java.lang.AssertionError: expected:<[V2Unit(number=1, id=unit-1, title=Learning to read Russian, shortLabel=Printed letters, topicSummary=Content-complete development unit for printed letters: identities, print pairs, look-alikes, signs, and letter-level decoding. Qualified review and the owned-edition mapping are still pending., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=1, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed Lesson 1 mapping from the publisher's public table of contents. Owned-edition comparison is not signed, so this unit is not labeled aligned., prerequisiteUnitNumbers=[], estimatedMinutes=152, objectives=[V2Objective(id=obj-u1-letter-identity, unitNumber=1, title=Identify staged printed letters, kind=RECOGNITION, instructionStepIds=[u1-st-vowels, u1-st-cons, u1-st-system], exampleIds=[ex-letter-0410, ex-letter-0411, ex-letter-0413, ex-letter-0414, ex-letter-0416, ex-letter-0417, ex-letter-0418, ex-letter-041a, ex-",
+    "fullMessageBytes": 2023806,
+    "fullMessageSha256": "8197e088961138c05d11f221325a4e8e095bfceb7033292f26e440809faaa63a"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+    "method": "exactPriorDeclarationRefusesSchemaTwelveAndPreservesDownstreamOwnerIdentity",
+    "outcome": "FAILED",
+    "seconds": "1.172",
+    "messagePreview": "java.lang.AssertionError: The genuine old pack differs only by the Unit10 declaration expected:<V2CurriculumPack(schemaVersion=1, packId=v2-curriculum-foundation, packVersion=3, publicReleaseEligible=false, linguisticReview=V2ReviewRecord(id=rev-pending-v2-curriculum, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=Pack-level status is not a unit approval. Each unit has its own pending review record., reviewChainStages=[], evidence=null, finalAudit=null), unitReviews=[V2UnitReviewRecord(id=rev-pending-unit-1, unitNumber=1, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=No qualified reviewer has signed Unit 1., reviewChainStages=[], evidence=null, finalAudit=null), V2UnitReviewRecord(id=rev-pending-unit-2, unitNumber=2, status=IMPLEMENTED_PENDING_FINAL_AUDIT, revi",
+    "fullMessageBytes": 62178620,
+    "fullMessageSha256": "fc39e5831c22677780514bf494ded23f902a473963d82ddb9c331b2f2cdae4e4"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11AgreementRemediationTest",
+    "method": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+    "outcome": "FAILED",
+    "seconds": "0.896",
+    "messagePreview": "java.lang.AssertionError: expected:<V2Unit(number=11, id=unit-11, title=Past tense and reflexive verbs, shortLabel=Past tense, topicSummary=Proposed Unit 11 is a development unit awaiting qualified review. It contains admitted records for this lesson's governed objectives, plus separate book self-attestation. It is not installed and the owned-edition mapping is not signed., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=11, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed Lesson 11, printed pages 122-132. Independently stated topic scope: Past-tense formation and use, including reflexive verbs. The Product Owner asserts that the inspected file is a legally owned copy. That assertion is not reviewer verification. Mapping status is PENDING_CURRICULUM_REVIEWER. This note does not approve coverage, variance, or alignment., prerequisiteUnitNumbers=[10], estimatedMinutes=66, objectives=[V2Objective(id=obj-u11-past-read, unitNumber=11, title=",
+    "fullMessageBytes": 46194,
+    "fullMessageSha256": "6f8a16c6ceb931e188ff9bc73567841ff850a0ed638ce2be2fc7daf3feff8bf4"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11CumulativeReviewTest",
+    "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+    "outcome": "FAILED",
+    "seconds": "17.257",
+    "messagePreview": "java.lang.AssertionError: expected:<[obj-u1-decoding, obj-u10-have]> but was:<[obj-u5-indeclinable, obj-u10-have]>",
+    "fullMessageBytes": 114,
+    "fullMessageSha256": "21df5e64bd19438ed72f248aebd117dab50602cb70b1a2b66c07bffcf5b2cc29"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11CumulativeReviewTest",
+    "method": "placementWithTaughtUnit1ButUntaughtUnit10RepairsTheMissingOwnerInsteadOfUnit1",
+    "outcome": "FAILED",
+    "seconds": "0.637",
+    "messagePreview": "java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [Open earlier Unit 10 instruction and checks])\nSemantics of the node:\nNode #1166 at (l=24.0, t=148.0, r=296.0, b=200.0)px, Tag: 'v2-review-repair'\nFocused = 'false'\nRole = 'Button'\nShape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'\nText = '[Open earlier Unit 5 instruction and checks]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]\nMergeDescendants = 'true'\nHas 3 siblings\nSelector used: (TestTag = 'v2-review-repair')\n",
+    "fullMessageBytes": 703,
+    "fullMessageSha256": "42bebac39c7e7a62fe55b0a3738f94c7b18a1e4164828896c25c5f1c10b8ccc9"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11CumulativeReviewTest",
+    "method": "actualUnit11ContinuePossessionAbsenceCueTeachingPracticeReturnAndAdvanceStayOnUnit11",
+    "outcome": "FAILED",
+    "seconds": "19.934",
+    "messagePreview": "java.lang.AssertionError: Values should be different. Actual: In this line, the possessor is genitive and the possessed thing is nominative.",
+    "fullMessageBytes": 140,
+    "fullMessageSha256": "a2e4b99c3536a85ae47ac967db6fdcd29bfe5795d1ec7f5c974e4c720353bde3"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+    "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+    "outcome": "FAILED",
+    "seconds": "22.836",
+    "messagePreview": "org.junit.ComparisonFailure: unit 11 expected:<[35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69]> but was:<[1d4c25c25e20b7fb6629995fcfb66e29f02554e276c5a7f5ec69fb5ac0a2ca5c]>",
+    "fullMessageBytes": 191,
+    "fullMessageSha256": "1ebc6211589ab7f178b9deb8428e6525d8b06be355f944630ebd3c0e812ecdf4"
+  }
+]

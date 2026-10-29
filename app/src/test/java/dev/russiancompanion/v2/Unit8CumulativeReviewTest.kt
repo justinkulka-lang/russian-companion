@@ -32,8 +32,18 @@ class Unit8CumulativeReviewTest {
             assertTrue(ordinaryUnitRequirements(p, p.unit(8)!!, s.v2LearnerView()).allowed)
             assertFalse(advancementDecision(p, p.unit(8)!!, s.v2LearnerView()).allowed)
             val a = open(p, s)
+            // Retain the original v1 contract on the whole-pack-proven prior declaration.
+            RecordedCurriculumConservationScope.beforeUnit8PresentReview(root(), p).let { historical ->
+                ready(historical).use { previous ->
+                    val a = open(historical, previous)
             assertEquals(listOf("obj-u1-decoding", "obj-u7-endings"), a.slots.map { it.objectiveId })
             assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NOMINATIVE_AGREEMENT_RECOGNITION"), a.slots.map { it.skill })
+                }
+            }
+            assertEquals(10, a.schema)
+            assertEquals(Unit8PresentCumulativeReviewPolicy.definition.id, a.policyId)
+            assertEquals(listOf("obj-u4-present", "obj-u7-endings"), a.slots.map { it.objectiveId })
+            assertEquals(Unit8PresentCumulativeReviewPolicy.definition.pool.map { it.skill.name }, a.slots.map { it.skill })
             assertEquals("u7-i-endings-4", a.slots[1].itemId)
             assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
             answer(p, s, a, 0); assertFalse(advancementDecision(p, p.unit(8)!!, s.v2LearnerView()).allowed)
@@ -183,8 +193,10 @@ class Unit8CumulativeReviewTest {
         }
     }
 
+    // Historical v1 placement contract; actual current Unit4/Unit7 routes have separate UI controls.
     @Test fun placementWithTaughtUnit1ButUntaughtUnit7RepairsTheMissingOwnerInsteadOfUnit1() {
         val p = pack()
+        RecordedCurriculumConservationScope.beforeUnit8PresentReview(root(), p).let { p ->
         LocalStore.openInMemory(context()).use { s ->
             for (n in 1..2) { ordinary(p, s, n); s.v2CompleteUnit(n, "done") }
             s.v2SaveProfile(s.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 8, startingPoint = "RESUME_FROM_BOOK"))
@@ -199,6 +211,8 @@ class Unit8CumulativeReviewTest {
             assertFalse(s.cumulativeReviewHistory().first.any { it.targetUnit == 8 })
         }
     }
+
+    } // End exact historical Unit8 declaration scope.
 
     @Test fun heldUnit8WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching() {
         val p = pack()

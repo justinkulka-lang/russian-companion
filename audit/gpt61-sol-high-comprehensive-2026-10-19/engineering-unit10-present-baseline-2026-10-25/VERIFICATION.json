@@ -1,0 +1,15 @@
+{
+  "verifiedBaseline": "c14379625f0189849614c4fd1241ba285ecb313a",
+  "reported": 2,
+  "passed": 1,
+  "intendedFailed": 1,
+  "currentDeclaredGateBypassed": false,
+  "ordinaryPresentKnowledgeBypassed": false,
+  "priorArchivesConserved": 70,
+  "newGenuineUnit10V1Capture": "dd097e2e90e9bda282dac745c4b13b8a80fc9ac4e090aca9b8d0065d3b81e349",
+  "captureBytes": 50290,
+  "assignmentSchema": 1,
+  "backupFormatVersion": 3,
+  "recordings": 0,
+  "newRuntimeMethodsExecutedByVerifier": 0
+}

@@ -2054,7 +2054,7 @@
     },
     {
       "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
-      "sha256": "4a5046906ff25561842bc738eb81d20d396bb90b84c0a065b1143984968d1fcf",
+      "sha256": "cb279ccc1eaeec8d34ad7e51cccf6860b984f96549ae0bf347d538a1edfa483a",
       "purpose": "Exact existing comparison/policy-reference implementation; no rendering or Russian construction introduced",
       "bindings": [
         {
@@ -2135,6 +2135,26 @@
         {
           "kind": "ITEM_ID",
           "value": "u5-i-indecl-такси",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u4-i-verb-говорить-мы",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u4-i-verb-видеть-он",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u4-i-verb-писать-вы",
+          "purpose": "PERSISTED_ITEM_ID_REFERENCE"
+        },
+        {
+          "kind": "ITEM_ID",
+          "value": "u4-i-verb-идти-они",
           "purpose": "PERSISTED_ITEM_ID_REFERENCE"
         }
       ]
@@ -5179,6 +5199,111 @@
           }
         }
       ]
+    }
+  ],
+  "subsequentEngineeringReferenceReviews": [
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "e66dfe0771424daf6e090fb258f77523ec40a4c1",
+      "previousRecordedSha256": "4a5046906ff25561842bc738eb81d20d396bb90b84c0a065b1143984968d1fcf",
+      "sha256": "a3ababd9e282b2c1c1db522ff076a68bc39bb1944a23508b1c8137e111accc29",
+      "additionalExistingItemReferences": [
+        "u4-i-verb-говорить-мы",
+        "u4-i-verb-видеть-он",
+        "u4-i-verb-писать-вы",
+        "u4-i-verb-идти-они"
+      ],
+      "scope": "Exact existing item references and policy/compatibility control flow only; no Russian rendering/construction, linguistic acceptance or rights approval",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "2e2ebcebc81f54c04db7f0ac24e99374674c97c5",
+      "previousRecordedSha256": "a3ababd9e282b2c1c1db522ff076a68bc39bb1944a23508b1c8137e111accc29",
+      "sha256": "f727b5232ecba2df679762aaf5a1cabfa0ac8aaf191ffe04578cedb8de26f9ba",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Reuses existing gender and inanimate pools; versioned Unit7 registry, identity compatibility and labels only. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "370d8716e2747c439da1a450a83b71b129a5c879",
+      "previousRecordedSha256": "f727b5232ecba2df679762aaf5a1cabfa0ac8aaf191ffe04578cedb8de26f9ba",
+      "sha256": "e70fc8d12ad0016c5281a4028904ac2dd0a734a22511ba1c4d9544ab6bbdb9f0",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Reuses existing supplied-present and nominative-agreement pools; versioned Unit8 registry, strict prior-declaration identity compatibility and labels only. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "83a7b075983be5f7f9117e72d2967a9aaa06ce56",
+      "previousRecordedSha256": "e70fc8d12ad0016c5281a4028904ac2dd0a734a22511ba1c4d9544ab6bbdb9f0",
+      "sha256": "704e01c0768a03863550778e2b2c2e7fbcf5c61ae1319745944130c2ccaa4823",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Reuses existing noun-behavior, plural and gender pools; versioned Unit9 registry, directed prior-declaration compatibility and English labels only. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "85e7eaf21335a107d64b99a4f1969bab4f74670d",
+      "previousRecordedSha256": "704e01c0768a03863550778e2b2c2e7fbcf5c61ae1319745944130c2ccaa4823",
+      "sha256": "a928edebf26764cdcd48c2e68a9f141da536a4e427e3b0e04c7d5066cc09c11e",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Reuses existing supplied present-form and numeral pools; versioned Unit10 registry, directed exact prior-declaration compatibility and English labels only. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "c2d297e79fa677aa1375917cfbe052e4c0806633",
+      "previousRecordedSha256": "a928edebf26764cdcd48c2e68a9f141da536a4e427e3b0e04c7d5066cc09c11e",
+      "sha256": "74f3c454eda66697722b0fe6c76ff8044406371600b021f3cd7b50de4d2657ef",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Reuses existing noun-behavior and possession/absence pools; versioned Unit11 registry, directed exact prior-declaration compatibility and English labels only. No new Cyrillic literal, item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "ca0fdaeca8de81ab6a5d4935fbcdcb068c4af913",
+      "previousRecordedSha256": "74f3c454eda66697722b0fe6c76ff8044406371600b021f3cd7b50de4d2657ef",
+      "sha256": "e8f201603d8e66e1e908df8680258eadb2af88e7a9c2e28a5aaa16fa03617a2b",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Reuses existing lexical-gender and singular past-gender pools;versioned Unit12 registry, directed exact prior-declaration compatibility and English labels only. No new Cyrillic literal,item reference or language construction;no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "bd00e5082c9f31d2ae3b379dd6204dd3b28e4475",
+      "previousRecordedSha256": "e8f201603d8e66e1e908df8680258eadb2af88e7a9c2e28a5aaa16fa03617a2b",
+      "sha256": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Reuses existing supplied present/aspect-partner/past-gender pools; separate Unit13v3/schema15, exact directional v1/v2 and owner13 bridges, English labels only. No new Cyrillic literal,item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
+    },
+    {
+      "path": "src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+      "sourceCommit": "d72afd1232857a857624c20c58f4bcd3cb5c8564",
+      "previousRecordedSha256": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
+      "sha256": "cb279ccc1eaeec8d34ad7e51cccf6860b984f96549ae0bf347d538a1edfa483a",
+      "additionalExistingItemReferences": [],
+      "allExistingBindingsUnchanged": true,
+      "scope": "Reuses existing supplied nominative plurals, possession/absence and reported-frame-time pools; separate Unit14v2/schema16, exact oldv1 and downstream owner14 bridge, English labels only. No new Cyrillic literal,item reference or language construction; no semantic/rights acceptance.",
+      "semanticAcceptance": false,
+      "rightsAcceptance": false
     }
   ]
 }

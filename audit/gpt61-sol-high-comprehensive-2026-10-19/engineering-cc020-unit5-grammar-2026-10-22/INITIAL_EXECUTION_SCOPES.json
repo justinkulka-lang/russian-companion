@@ -1,0 +1,8 @@
+{
+  "initialHarness": "BASELINE:three new-policy ID failures and one successful legacy capture/replay control; wrong candidate step spelling was not reached",
+  "correctedBaseline": "CONFIRMED_BASELINE:two policy-ID failures, one actual advancement-without-gender failure and one legacy replay pass",
+  "correctedInitialScope": "INITIAL_FINAL:all13passed, comprising4unchanged backend regressions/2new version-aware UI controls/7existing historical-obligation methods",
+  "scopesSummed": false,
+  "legacyCapture": "Additional genuine partial Unit5 backup, distinct from and not a replacement for the original64 histories",
+  "independentFindingClosed": false
+}

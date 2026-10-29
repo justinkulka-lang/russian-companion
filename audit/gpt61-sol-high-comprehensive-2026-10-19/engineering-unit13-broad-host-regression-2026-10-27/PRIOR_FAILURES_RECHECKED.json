@@ -1,0 +1,107 @@
+{
+  "sourceCommit": "cd2b1c91911040acb190147cf5966d0f23ba2a0d",
+  "groups": [
+    {
+      "name": "Unit13 interrupted affected failures",
+      "originalSource": "75e2d31c441e87e7f53c550b2bf34e9804737bfb",
+      "rechecked": [
+        {
+          "testClass": "dev.russiancompanion.v2.Unit13CumulativeReviewTest",
+          "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Unit13CumulativeReviewTest",
+          "method": "placementWithTaughtUnit1ButUntaughtUnit12RepairsTheMissingOwnerInsteadOfUnit1",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+          "method": "completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+          "method": "structuralMappingsMatchTheOwnedEditionObservations",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+          "method": "bothChainsTeachBeforePracticeAndRepairEveryOriginalExample",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+          "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+          "outcome": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "Unit12 affected failures",
+      "originalSource": "6e485a79fd617c20f6f7ece94c5e1bdc9c505ec3",
+      "rechecked": [
+        {
+          "testClass": "dev.russiancompanion.v2.Unit11BindingConservationTest",
+          "method": "kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Unit11BindingConservationTest",
+          "method": "currentDeclarationReconstructsOnlyUnit11ThenEveryGenuineEarlierPack",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Unit11NounCompatibilityTest",
+          "method": "exactPriorDeclarationRefusesSchemaThirteenAndPreservesDownstreamOwnerIdentity",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Unit12CumulativeReviewTest",
+          "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Unit12CumulativeReviewTest",
+          "method": "placementWithTaughtUnit1ButUntaughtUnit11RepairsTheMissingOwnerInsteadOfUnit1",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+          "method": "structuralMappingsMatchTheOwnedEditionObservations",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+          "method": "structuralMappingsAreDigestBoundAndStayUnsigned",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+          "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+          "outcome": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "Unit11 broad failures",
+      "originalSource": "3434fb8391a6bb4bee91c312a13bd79523db7799",
+      "rechecked": [
+        {
+          "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+          "method": "structuralMappingsMatchTheOwnedEditionObservations",
+          "outcome": "PASSED"
+        },
+        {
+          "testClass": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+          "method": "structuralMappingsAreDigestBoundAndStayUnsigned",
+          "outcome": "PASSED"
+        }
+      ]
+    }
+  ],
+  "uniqueIdentities": 12,
+  "allIncluded": true,
+  "allPassed": true,
+  "overlapNotSummed": true
+}

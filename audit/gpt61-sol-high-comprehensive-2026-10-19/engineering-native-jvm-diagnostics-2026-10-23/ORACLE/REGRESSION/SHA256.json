@@ -1,0 +1,11 @@
+{
+  "CONTEXT.json": "c471f54a2d9ec67dd32a2b57979746813adb60d19abcdb0f96a21fc138e5d670",
+  "EVENTS.jsonl": "ec89c2c385418856e630b2c87c63dc3fe6d2194ff78a9020cbf485f43f96c3f8",
+  "LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+  "RESULT.json": "cdf6fda9ba31a75c994fc7f10cedb711ab5a2c55f7f2afc6972a5589394c00a2",
+  "RESULTS.csv": "b1833d15efcf8a3ed166802adb43bf207f665190892b717f4d3f235c8d1ad9d2",
+  "RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+  "RUN.log": "654a97ebaff44657d746f0c4ee86a5cf791c2b8ebc3df49a7d96736f01c68784",
+  "XML/TEST-dev.russiancompanion.v2.V2InsetsAccessibilityTest.xml": "a1111897ea676c482e198f359ac0438024aab44a0881f2ab37004874b9783f28",
+  "gc-60341.log": "0de9123f4d77c40cb8fb8dd463804fff20d8d432cca2899144bdd49e2f3c659f"
+}

@@ -560,11 +560,94 @@ class Units2630SourceIntakeTest {
         preservedContentDigests.forEach { (number, digest) ->
             val correction = corrections[number]
             if (correction == null) {
-                assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                if (number in setOf(5, 6)) {
+                    RecordedCurriculumConservationScope.beforeUnit5GrammarReview(root,pack).let { pack ->
+                        assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                    }
+                    assertNotEquals("Current versioned review identity for Unit $number", digest,
+                        V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 9) {
+                    // The original Unit9 digest names the exact prior v2 declaration.
+                    RecordedCurriculumConservationScope.beforeUnit9NounBehaviorReview(root, pack).let { pack ->
+                        assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals("Current versioned review identity for Unit $number", digest,
+                        V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 11) {
+                    // The original digest names the exact prior reading/absence declaration.
+                    RecordedCurriculumConservationScope.beforeUnit11NounReview(root, pack).let { pack ->
+                        assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals("Current versioned review identity for Unit $number", digest,
+                        V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 12) {
+                    // Preserve the original reading/past v1 pin on its full-pack-proven declaration.
+                    RecordedCurriculumConservationScope.beforeUnit12GenderReview(root, pack).let { pack ->
+                        assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals("Current Unit12 versioned review identity", digest,
+                        V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 13) {
+                    // Retain the exact old v2 pin; independently guard the actual current v3 unit.
+                    RecordedCurriculumConservationScope.beforeUnit13PresentReview(root, pack).let { pack ->
+                        assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals("Current Unit13 v3 review identity", digest,
+                        V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 14) {
+                    // Retain the old v1 pin only on its proven whole-pack declaration scope.
+                    RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(root, pack).let { pack ->
+                        assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals("Current Unit14 v2 review identity", digest, V2Validator.unitContentReviewDigest(pack, number))
+                } else {
+                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                }
             } else {
                 assertEquals("historical unit $number", digest, V2Validator.unitContentReviewDigest(prior, number))
+                if (number == 7) {
+                    // Preserve the original teaching pin; only the versioned review declaration differs.
+                    RecordedCurriculumConservationScope.beforeUnit7GenderReview(root, pack).let { pack ->
                 RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
                     RecordedIntakeCorrectionScope.load(root, correction), number)
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals(V2Validator.unitContentReviewDigest(RecordedIntakeCorrectionScope.load(root, correction), number),
+                        V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 8) {
+                    // Keep the positive-existence source pin on its exact prior declaration.
+                    RecordedCurriculumConservationScope.beforeUnit8PresentReview(root, pack).let { pack ->
+                        RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                            RecordedIntakeCorrectionScope.load(root, correction), number)
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals(V2Validator.unitContentReviewDigest(RecordedIntakeCorrectionScope.load(root, correction), number),
+                        V2Validator.unitContentReviewDigest(pack, number))
+                } else if (number == 10) {
+                    // Keep the original fragment-meaning teaching source; only the versioned declaration differs.
+                    RecordedCurriculumConservationScope.beforeUnit10PresentReview(root, pack).let { pack ->
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    RecordedIntakeCorrectionScope.load(root, correction), number)
+                    }
+                    RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                        RecordedIntakeCorrectionScope.load(root, RecordedCurriculumConservationScope.currentPackImplementation), number)
+                    assertNotEquals(V2Validator.unitContentReviewDigest(RecordedIntakeCorrectionScope.load(root, correction), number),
+                        V2Validator.unitContentReviewDigest(pack, number))
+                } else {
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    RecordedIntakeCorrectionScope.load(root, correction), number)
+                }
                 assertNotEquals(digest, V2Validator.unitContentReviewDigest(pack, number))
             }
         }

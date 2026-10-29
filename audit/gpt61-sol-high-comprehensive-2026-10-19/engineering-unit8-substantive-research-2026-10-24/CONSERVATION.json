@@ -1,0 +1,25 @@
+{
+  "sourceCommit": "fe7b26853448b8c3bd8098126d85983b013b5cd7",
+  "inputTrees": {
+    "app/src/main": "606d6712146334d8bb4337bec4fb95648589e70f",
+    "app/src/test": "546879b9a352d922860d1c2657bb2567b419f3b9",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "0b8688248d13372e677d90108864cc90d44a13cc",
+    "release": "adb08d54e11d4554eab7664ee4f5f0f44a522464"
+  },
+  "current155Records": "UNCHANGED",
+  "original66Archives": "UNCHANGED_SHA_CRC",
+  "additionalGenuineUnit6Unit7Captures": "UNCHANGED",
+  "originalAuditFindingsAndRequests": "UNCHANGED",
+  "all48Findings": "OPEN",
+  "privateReference": "NOT_ACCESSED_NOT_COPIED",
+  "settingsSavedThisTask": [],
+  "publication": "Earlier user-confirmed,independently unobserved; no changes",
+  "nativeRootCause": "UNCONFIRMED",
+  "experimentalJitDirective": "NOT_ADOPTED",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "runtimeTestsExecuted": 0,
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

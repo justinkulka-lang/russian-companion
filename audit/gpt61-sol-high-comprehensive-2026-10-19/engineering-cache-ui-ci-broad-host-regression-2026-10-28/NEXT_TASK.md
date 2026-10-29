@@ -1,0 +1,3 @@
+Next large task: Unit15 substantive cumulative-review research and genuine current Unit15/Unit16 saved-history baselines before any compatible core correction. Preserve all old identities/policies/schema/control assertions; no policy activation from static inventory. The external read-only Unit15 inventory is not research approval or runtime evidence. Continue remaining48finding/70request engineering register;independent/qualified review remains outstanding.
+
+Codex only/oneagent/existingcheckout/OPEN DraftPR64. Final comprehensive independent Claude audit first; physical acceptanceLAST;noAPK/signing/merge/freeze/approval.

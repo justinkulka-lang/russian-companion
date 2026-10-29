@@ -1,0 +1,10 @@
+# Verified discovery and exclusive runtime completion ownership
++
++Fresh discovery source9b947e06c347cd278ca36e2c894dc0eb5bbaaffb:119synthetic skips/17FULLclasses/zero runtimepasses/exit0. All60original failed IDs,45passed siblings,14unchangedUnit14/15controls exactly included;rawXML/events/runner/initSHA/memberSHA/CRC conserved. Production/266other testfiles/155bindings/77archives/priorbroadfailureevidence exact;all1330originalassertion calls and original15file bytes conserved except the single inserted line each.
++
++Actual runtime source MUST come from external REGRESSION/CONTEXT.json after launch, not from the discovery commit. External workspace:/workspace/artifacts/engineering-unit14-downstream-fixture-followup-2026-10-28. Inspect contexts, actual PIDs, DURABLE_MONITOR_STATUS.json, REGRESSION_COMPLETION.json and AUTO_RESULT/AUTO_ERROR before any edit/launch/collection.
++
++The exclusive completion worker owns preservation/verification of actual complete or incomplete outcomes, audit/docs-only checkpoint, normal push and OPEN DraftPR64 update. It may change only this evidence directory and the three retained-content pointers. It may not edit app/test/bindings, waive assertions, forcepush, build/install/sign an APK, merge, freeze or approve release. Root must not collect or mutate inputs while the owner is active. If jobs disappear, preserve partials and leave stop cause UNCONFIRMED. Preserve AUTO_ERROR and original raw bytes before any safe recovery; no blind rerun.
++
++All48independentfindingsOPEN/auditINCOMPLETE/four exporters16methods explicitlyexcluded/physicalGalaxyairplane-modeandrebootLASTafterfinalindependentcomprehensivenonphysicalaudit. No Unit15 curriculum advancement. Prior1499run1438pass60fail1physicalskip remains unchanged/separate/unsummed. No complete-suite claim.
++

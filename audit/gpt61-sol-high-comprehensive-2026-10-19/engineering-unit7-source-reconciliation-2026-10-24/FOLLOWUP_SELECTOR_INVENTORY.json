@@ -1,0 +1,11 @@
+{
+  "selectors": [
+    "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+    "dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest",
+    "dev.russiancompanion.v2.Unit7BindingConservationTest",
+    "dev.russiancompanion.v2.Unit7GenderCompatibilityTest"
+  ],
+  "methods": 14,
+  "classes": 4,
+  "state": "PREPARED_NOT_LAUNCHED"
+}

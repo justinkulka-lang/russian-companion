@@ -1,0 +1,27 @@
+{
+  "methods": 66,
+  "classes": 13,
+  "bindingReadinessMethods": 56,
+  "entryLabelMethods": 2,
+  "reviewScreenMethods": 2,
+  "currentUnit5BackendMethods": 4,
+  "archiveAndMixedVersionMethods": 2,
+  "caseObservationsInArchiveMethods": 65,
+  "not65Tests": true,
+  "scope": "Current-source host classes include authored historical/synthetic metadata controls; not all curriculum/entity/device coverage",
+  "classesAndMethodCounts": {
+    "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest": 1,
+    "dev.russiancompanion.release.ReleaseSourceDigestTest": 14,
+    "dev.russiancompanion.v2.BatchECapabilityResearchTest": 5,
+    "dev.russiancompanion.v2.CurrentPackHistoricalBackupTest": 2,
+    "dev.russiancompanion.v2.SavedReviewEntryLabelTest": 2,
+    "dev.russiancompanion.v2.Unit5GrammarReviewTest": 4,
+    "dev.russiancompanion.v2.Unit5GrammarReviewUiTest": 2,
+    "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest": 11,
+    "dev.russiancompanion.v2.audit.GapClosureDossierTest": 1,
+    "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest": 7,
+    "dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest": 3,
+    "dev.russiancompanion.v2.review.Unit1ReviewPackageTest": 7,
+    "dev.russiancompanion.v2.review.UnitReviewPipelineTest": 7
+  }
+}

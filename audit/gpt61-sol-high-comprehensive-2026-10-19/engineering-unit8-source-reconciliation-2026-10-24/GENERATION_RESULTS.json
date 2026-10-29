@@ -1,0 +1,48 @@
+[
+  {
+    "label": "COMPILE",
+    "command": [
+      "/workspace/jdk21/bin/javac",
+      "-cp",
+      "/workspace/artifacts/unit8-source-reconciliation-2026-10-24:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/workspace/russian-companion/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes",
+      "/workspace/artifacts/unit8-source-reconciliation-2026-10-24/GeneratePendingEvidence.java"
+    ],
+    "startedUtc": "2026-10-25T03:49:31.915505+00:00",
+    "finishedUtc": "2026-10-25T03:49:32.756308+00:00",
+    "exitCode": 0
+  },
+  {
+    "label": "CANDIDATE_1",
+    "command": [
+      "/workspace/jdk21/bin/java",
+      "-Xmx2g",
+      "-cp",
+      "/workspace/artifacts/unit8-source-reconciliation-2026-10-24:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/workspace/russian-companion/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes",
+      "GeneratePendingEvidence",
+      "/workspace/artifacts/unit8-source-reconciliation-2026-10-24/INPUT_PROJECTION",
+      "/workspace/artifacts/unit8-source-reconciliation-2026-10-24/CANDIDATE_1",
+      "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+      "/workspace/russian-companion"
+    ],
+    "startedUtc": "2026-10-25T03:49:32.756559+00:00",
+    "finishedUtc": "2026-10-25T03:50:47.068195+00:00",
+    "exitCode": 0
+  },
+  {
+    "label": "CANDIDATE_2",
+    "command": [
+      "/workspace/jdk21/bin/java",
+      "-Xmx2g",
+      "-cp",
+      "/workspace/artifacts/unit8-source-reconciliation-2026-10-24:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debug/compileDebugKotlin/classes:/workspace/russian-companion/app/build/intermediates/built_in_kotlinc/debugUnitTest/compileDebugUnitTestKotlin/classes:/workspace/android-sdk/platforms/android-37.0/android.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.11.0/c1905c9bf7452b045d5af9248835abe64ddad6bf/kotlinx-serialization-core-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.11.0/e7e045e99e56f07599bb9ccb708c2190e2af0606/kotlinx-serialization-json-jvm-1.11.0.jar:/workspace/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar:/workspace/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/workspace/russian-companion/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes",
+      "GeneratePendingEvidence",
+      "/workspace/artifacts/unit8-source-reconciliation-2026-10-24/INPUT_PROJECTION",
+      "/workspace/artifacts/unit8-source-reconciliation-2026-10-24/CANDIDATE_2",
+      "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670",
+      "/workspace/russian-companion"
+    ],
+    "startedUtc": "2026-10-25T03:50:47.068477+00:00",
+    "finishedUtc": "2026-10-25T03:51:59.963585+00:00",
+    "exitCode": 0
+  }
+]

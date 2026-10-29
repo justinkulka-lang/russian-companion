@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-24T00:56:58.097208+00:00",
+  "state": "READ_ONLY_WORKLOAD_COMPARISON_NOT_A_PREDICTION_OR_TEST_RESULT",
+  "currentSource": "b07432aada33a636d1ab547f8537da02208649ec",
+  "earlierSource": "e5b5d3c08689cc04eadcb4c2edd155940dee7bf7",
+  "pendingMethods": 192,
+  "pendingWithEarlierTiming": 181,
+  "pendingWithoutEarlierTiming": 11,
+  "sumEarlierPendingMethodSeconds": 3055.2,
+  "activeMethodComparison": [
+    {
+      "method": "dev.russiancompanion.v2.Unit29CumulativeReviewTest.schema11ExactPrePolicyRowsSurviveWhileCurrentRawRowsAndChangedInstructionDoNot",
+      "observedSeconds": 139.1,
+      "earlierBroadSeconds": 489.23
+    }
+  ],
+  "caveat": "Earlier source and current experimental harness differ. Timing sum is not wall-clock ETA; includes elapsed part of active methods and excludes runtime of new methods, collection and tasks."
+}

@@ -1,0 +1,66 @@
+{
+  "sourceCommit": "9038817dcb0f01734ccd6722a653c6e6fb806016",
+  "sourceRootTree": "bc085c41bd96c0d8a9134aad695ee0fca9c06878",
+  "workingTreeAtStart": "CLEAN",
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "startedUtc": "2026-10-27T18:05:14.835060+00:00",
+  "inputTrees": {
+    "app/src/main": "aeeb035f6017bf70852fd7fb2b6aec42789eebed",
+    "app/src/test": "d9270a74f434ec3e616f037090ac774028a7fff2",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "cd675aa8a3ad33a90d9001fe6f67b2de2e5d7ac7",
+    "release": "9d9047b8297cba1d5855a7f7809c441b2f8edcf7"
+  },
+  "mode": "REGRESSION",
+  "syntheticDryRun": false,
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/unit13-source-reconciliation-2026-10-27/BINDING_CHECKS/resources.gradle",
+    "-Daudit.history.output=/workspace/artifacts/unit13-source-reconciliation-2026-10-27/BINDING_CHECKS/REGRESSION/HISTORY_CASES.jsonl",
+    "-Daudit.events.path=/workspace/artifacts/unit13-source-reconciliation-2026-10-27/BINDING_CHECKS/REGRESSION/EVENTS.jsonl",
+    "-Daudit.gc.dir=/workspace/artifacts/unit13-source-reconciliation-2026-10-27/BINDING_CHECKS/REGRESSION",
+    "testDebugUnitTest",
+    "--rerun",
+    "--tests",
+    "dev.russiancompanion.v2.Unit13BindingConservationTest",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "runnerSha256": "f8bb3c8766283c73dba60258e6de91387cd60765787b43cd05f2abdf5b7bbeaf",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+    "/workspace/artifacts/unit13-source-reconciliation-2026-10-27/BINDING_CHECKS/resources.gradle": "25ade68e605848e8a6437bf162631435dc72d5ab0f033621aa4f1aeca317f42f"
+  },
+  "selectors": [
+    "dev.russiancompanion.v2.Unit13BindingConservationTest"
+  ],
+  "workerPolicy": "2forks/6GiB/forkEvery4;GC logs retained",
+  "resources": {
+    "cgroupMemoryMax": "34359738368",
+    "cgroupMemoryCurrent": "14128070656",
+    "cpus": 5
+  },
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "scope": "Two current Unit13 binding proof methods: strict whole-pack before13 through before5 chain and exact pending kernel reference hash/append; not full affected or broad suite",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "completeSuite": false
+}

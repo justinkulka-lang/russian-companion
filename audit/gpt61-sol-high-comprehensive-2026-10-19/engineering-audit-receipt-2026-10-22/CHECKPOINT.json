@@ -1,0 +1,48 @@
+{
+  "externalCommit": "2ab65c1db9fa13edbe1f02feb5b7c8a2376107c1",
+  "externalBranch": "ccr-55fcda78-eddach",
+  "receiptIntegrationCommit": "c03751d54390e08a4530d285c4cba27c6cb83857",
+  "authorizedBranch": "cursor/content-audit-corrections-964f",
+  "target": "8606c4d74185f594d93941bef6858b2af28e0b75",
+  "delivery": "ae1105fbc78f6b5fbb2dbdce9058b08c5a44792e",
+  "inputTrees": {
+    "app/src/main": "3a94f58d6927e53bb78e20b99a7e1ea5e9039a4b",
+    "app/src/test": "46de1bbbb5069f8aee4331083214c36deb88f1a6",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "88afd115e13f41a7a5ebeca6021fb8874164818e",
+    "release": "13f7017696fdfd04d37be121651809cdbeecd607"
+  },
+  "treeConservation": {
+    "app/src/main": true,
+    "app/src/test": true,
+    "catalog": true,
+    "docs": true,
+    "review": true,
+    "release": true
+  },
+  "reviewerIdentityAsReported": {
+    "tool": "Claude Code",
+    "configuredAndLastServedModel": "claude-opus-5-5",
+    "effort": "NOT_RECORDED_IN_RETURN",
+    "codexIndependentlyObservedModel": false,
+    "requestedGPT61SolHighIdentitySatisfied": false
+  },
+  "nextLargeTask": "Reproduce CC018 and CC019 on actual V2 surfaces, preserve baseline failures, implement bounded UI fixes and run focused controls. Then reconcile release-source binding consequences without rewriting historical evidence.",
+  "all48Findings": "NOT_CLOSED",
+  "all70Requests": "ORIGINAL_NOT_EXECUTED_PRESERVED",
+  "newAndroidTestsBuilds": "NONE",
+  "apk": {
+    "configuredApplicationId": "dev.russiancompanion",
+    "versionName": "2.0.0-dev",
+    "versionCode": 5,
+    "newApkBuilt": false,
+    "currentApkHashCertificateSignature": "NOT_ESTABLISHED"
+  },
+  "environment": {
+    "settings": "SAVED_PREVIOUSLY_NOT_CHANGED",
+    "published": "USER_CONFIRMED_NOT_INDEPENDENTLY_OBSERVED"
+  },
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "approvals": "NONE"
+}

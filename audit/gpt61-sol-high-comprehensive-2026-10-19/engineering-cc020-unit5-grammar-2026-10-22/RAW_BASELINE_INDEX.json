@@ -1,0 +1,26 @@
+{
+  "RUN.log": {
+    "sha256": "8346e0c3ea854fd6b6b7b5c1a6c8c7f5fc97f3c7d15afb1cc930d4bf09801aef",
+    "bytes": 4711
+  },
+  "RUN.exit": {
+    "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+    "bytes": 2
+  },
+  "gc-526951.log": {
+    "sha256": "0107f04f41d99e93d0d540726621904a4bb5215439a90393ef3114fbe383e1b5",
+    "bytes": 4792
+  },
+  "EVENTS.jsonl": {
+    "sha256": "4fdacf521de95fa43db43d40e177b884f62a688db3082d0db4b9c0196a7146ba",
+    "bytes": 2792
+  },
+  "SOURCE.json": {
+    "sha256": "2671f500ace7f19293e3572046617414d124431b121d024e967d4830b710915c",
+    "bytes": 1114
+  },
+  "XML/TEST-dev.russiancompanion.v2.Unit5GrammarReviewTest.xml": {
+    "sha256": "e7bd1f2d81050d952169012cc2cc936f50d3696469367dd94ce9079848a46f3b",
+    "bytes": 8861
+  }
+}

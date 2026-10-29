@@ -1,0 +1,15 @@
+{
+  "reason": "The original saved attempt checkers require current HEAD input trees. The legitimate one-file follow-up changed app/src/test. Preserve original checkers and all payloads; historical checks must bind the recorded source instead.",
+  "originalCheckersUnmodified": {
+    "ATTEMPT_1": "531596e373f7e1e99e632181aefa142476d91755785ea80b6c26bdf2bf0409dc",
+    "ATTEMPT_2": "9eb5e95047f93136f0c99e18dded722d25dcf628a34a4d730ea25d9513ec4260"
+  },
+  "historicalChecker": "verify_recorded_attempt.py",
+  "differences": [
+    "Attempt data directory is explicit CLI argument.",
+    "Source identity is pinned to the known source of each attempt.",
+    "Root tree and all six input trees are checked against that exact Git commit, not latest HEAD."
+  ],
+  "unchangedChecks": "All original raw manifest/SHA/CRC, fresh XML, unique events/outcomes, exact discovery/method set, flags, skips, exclusions, lint and gate checks retained.",
+  "testsExecuted": 0
+}

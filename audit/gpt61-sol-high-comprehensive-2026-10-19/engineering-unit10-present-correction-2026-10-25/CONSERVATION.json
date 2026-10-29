@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "85e7eaf21335a107d64b99a4f1969bab4f74670d",
+  "preexistingTestFilesUnchanged": 257,
+  "oldPolicyObjectsConserved": 36,
+  "baselineWholeFileUnchanged": true,
+  "historicalArchivesShaCrcConserved": 71,
+  "currentRecords": 155,
+  "currentRecordStatus": "STALE_UNCHANGED_NOT_REGENERATED",
+  "officialDigest": "072ea177f73cf7f8ac2a2eedc4afc61f42c2e55d9aeb2c6b2adaf0184cef21f6",
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "settingsChanged": false
+}

@@ -1,0 +1,79 @@
+{
+  "sourceCommit": "a1986f9de49062866be3c9fe395473cf3796d888",
+  "status": "PROPOSED_NOT_ACTIVATED",
+  "activated": false,
+  "objectiveChains": 13,
+  "assessedChecks": 47,
+  "selectedPresentCandidates": [
+    "u4-i-verb-говорить-мы",
+    "u4-i-verb-видеть-он",
+    "u4-i-verb-писать-вы",
+    "u4-i-verb-идти-они"
+  ],
+  "proposedPools": [
+    {
+      "unit": 10,
+      "slot": 0,
+      "objective": "obj-u4-present",
+      "skill": "SUPPLIED_PRESENT_FORM_RECOGNITION",
+      "remediationStep": "u4-st-rem-present",
+      "items": [
+        "u4-i-verb-говорить-мы",
+        "u4-i-verb-видеть-он",
+        "u4-i-verb-писать-вы",
+        "u4-i-verb-идти-они"
+      ]
+    },
+    {
+      "unit": 10,
+      "slot": 1,
+      "objective": "obj-u9-odindva",
+      "skill": "SUPPLIED_NUMERAL_GENDER_RECOGNITION",
+      "remediationStep": "u9-st-rem-odindva",
+      "items": [
+        "u9-i-odindva-4"
+      ]
+    }
+  ],
+  "proposedId": "unit10-prior-present-numeral-gender-v2",
+  "proposedFreshSchema": 12,
+  "currentUnit10": {
+    "unit": 10,
+    "id": "unit10-prior-reading-numeral-gender-v1",
+    "digest": "7cbbccd57d7d435f8aea5430241415a31539b21b38fbca743b0fc2e66ce08754",
+    "schema": 1,
+    "pools": 2
+  },
+  "registeredPolicyObjectsPreserved": 36,
+  "presentRepairTeachingCards": 11,
+  "presentRepairExamples": 6,
+  "rawPresentKeyPositions": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "presentAlreadyAssignedAtTargets": [
+    6,
+    8
+  ],
+  "heldOutItemsAdded": 0,
+  "historicalArchivesChecked": 70,
+  "archivesContainingUnit10": 25,
+  "printSingletonPoliciesStillCurrent": 23,
+  "newRuntimeMethodsExecuted": 0,
+  "linguisticRightsMappingOwnerAcceptance": "PENDING_NOT_GRANTED",
+  "lint": "NOT_RUN_RESEARCH_ONLY",
+  "releaseGateAttachment": "NOT_RUN_RESEARCH_ONLY",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  }
+}

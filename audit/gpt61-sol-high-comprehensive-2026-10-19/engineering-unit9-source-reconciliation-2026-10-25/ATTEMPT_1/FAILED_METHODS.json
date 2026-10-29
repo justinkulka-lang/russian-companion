@@ -1,0 +1,47 @@
+[
+  {
+    "testClass": "dev.russiancompanion.v2.Unit8BindingConservationTest",
+    "method": "currentDeclarationReconstructsOnlyUnit8ThenEachGenuineEarlierPack",
+    "outcome": "FAILED",
+    "seconds": "3.782",
+    "messagePreview": "java.lang.AssertionError: expected:<[V2Unit(number=1, id=unit-1, title=Learning to read Russian, shortLabel=Printed letters, topicSummary=Content-complete development unit for printed letters: identities, print pairs, look-alikes, signs, and letter-level decoding. Qualified review and the owned-edition mapping are still pending., installState=DEVELOPMENT, readiness=CONTENT_COMPLETE_REVIEW_PENDING, penguinLesson=1, mappingStatus=PENDING_CURRICULUM_REVIEWER, mappingNote=Proposed Lesson 1 mapping from the publisher's public table of contents. Owned-edition comparison is not signed, so this unit is not labeled aligned., prerequisiteUnitNumbers=[], estimatedMinutes=152, objectives=[V2Objective(id=obj-u1-letter-identity, unitNumber=1, title=Identify staged printed letters, kind=RECOGNITION, instructionStepIds=[u1-st-vowels, u1-st-cons, u1-st-system], exampleIds=[ex-letter-0410, ex-letter-0411, ex-letter-0413, ex-letter-0414, ex-letter-0416, ex-letter-0417, ex-letter-0418, ex-letter-041a, ex-",
+    "fullMessageBytes": 2023764,
+    "fullMessageSha256": "a849b3945ea0f40dca887f0023e63dcb53eb3f74a3606b76ef3373643e114b3a"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+    "method": "exactPriorDeclarationRefusesSchemaTenAndPreservesDownstreamOwnerIdentity",
+    "outcome": "FAILED",
+    "seconds": "1.336",
+    "messagePreview": "java.lang.AssertionError: The genuine old pack differs only by the Unit8 declaration expected:<V2CurriculumPack(schemaVersion=1, packId=v2-curriculum-foundation, packVersion=3, publicReleaseEligible=false, linguisticReview=V2ReviewRecord(id=rev-pending-v2-curriculum, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=Pack-level status is not a unit approval. Each unit has its own pending review record., reviewChainStages=[], evidence=null, finalAudit=null), unitReviews=[V2UnitReviewRecord(id=rev-pending-unit-1, unitNumber=1, status=IMPLEMENTED_PENDING_FINAL_AUDIT, reviewer=null, reviewerQualification=null, packVersion=null, reviewedContentDigest=null, curriculumMappingId=null, notes=No qualified reviewer has signed Unit 1., reviewChainStages=[], evidence=null, finalAudit=null), V2UnitReviewRecord(id=rev-pending-unit-2, unitNumber=2, status=IMPLEMENTED_PENDING_FINAL_AUDIT, revie",
+    "fullMessageBytes": 62178607,
+    "fullMessageSha256": "ef6f5826f21ab6103d64ffc06505632db3ac5564a4c69ebd05a8dd12572e836e"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9CumulativeReviewTest",
+    "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+    "outcome": "FAILED",
+    "seconds": "9.184",
+    "messagePreview": "java.lang.AssertionError: expected:<[obj-u1-decoding, obj-u8-plural, obj-u3-gender]> but was:<[obj-u5-indeclinable, obj-u8-plural, obj-u3-gender]>",
+    "fullMessageBytes": 146,
+    "fullMessageSha256": "9b8b289082a9fe47f8f464dcc1d7b8a297189fc1ecde28beb176b93a5696da72"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9CumulativeReviewTest",
+    "method": "placementWithTaughtUnit1ButUntaughtUnit8RepairsTheMissingOwnerInsteadOfUnit1",
+    "outcome": "FAILED",
+    "seconds": "1.052",
+    "messagePreview": "java.lang.AssertionError: Failed to assert the following: (Text + EditableText = [Open earlier Unit 8 instruction and checks])\nSemantics of the node:\nNode #1568 at (l=24.0, t=148.0, r=296.0, b=200.0)px, Tag: 'v2-review-repair'\nFocused = 'false'\nRole = 'Button'\nShape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'\nText = '[Open earlier Unit 5 instruction and checks]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]\nMergeDescendants = 'true'\nHas 4 siblings\nSelector used: (TestTag = 'v2-review-repair')\n",
+    "fullMessageBytes": 702,
+    "fullMessageSha256": "823a3b7c3ea14c9f86d89aacd9d81ad834bfd26c26ef4aa2ec29244615b7006c"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+    "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+    "outcome": "FAILED",
+    "seconds": "18.024",
+    "messagePreview": "org.junit.ComparisonFailure: unit 9 expected:<[418b5840eacbb7dd06791fec7e490befe34ae03defab0706ee10b42565c8dea]3> but was:<[58d61dfc4069f438487b9ad16623bb3a717ab9da8e55487b4d9083c28267bbd]3>",
+    "fullMessageBytes": 190,
+    "fullMessageSha256": "dda0c2d228c4a20e7462657b29c24dac5ae903b1499203b76ac89c3f095f7953"
+  }
+]

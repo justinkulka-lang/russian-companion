@@ -115,6 +115,8 @@ internal const val UNIT13_WIDER_REVIEW_CURRICULUM_COMMIT = "41ef8eebc5f7ff25cd30
 internal const val UNIT13_CONTEXT_TEACHING_CURRICULUM_COMMIT = "b92a7c847d1d8c4d7270f08f518b6608f95936f7"
 internal const val UNIT13_PAST_TEACHING_CURRICULUM_COMMIT = "fa3899de2258b6c0cd987d51a4b376aed408f9c2"
 internal const val UNIT9_WIDER_REVIEW_CURRICULUM_COMMIT = "d93fa913f75ad5cd80c97c8e036242a389558a3d"
+internal const val UNIT7_GENDER_REVIEW_CURRICULUM_COMMIT = "2e2ebcebc81f54c04db7f0ac24e99374674c97c5"
+internal const val UNIT6_PRESENT_REVIEW_CURRICULUM_COMMIT = "53d9c292e1f32f204bdff2b09b8f10d02b6b28a6"
 internal const val UNIT6_WIDER_REVIEW_CURRICULUM_COMMIT = "886732be191b5d897f0f57cfb266482562b7b2a2"
 internal const val UNITS5_6_RECENT_SELECTION_CURRICULUM_COMMIT = "6f596153b234c1edf44522c9727962ae40204d47"
 internal const val UNIT3_GENDER_TEACHING_CURRICULUM_COMMIT = "057367e58751c4db86af05f5b84b463537ffa3c7"
@@ -134,15 +136,38 @@ internal const val UNIT8_EXISTENCE_SEQUENCE_CURRICULUM_COMMIT = "fe919656bfa2775
 internal const val UNIT10_FRAGMENT_MEANING_CURRICULUM_COMMIT = "7efff9e18328c612de235236d98e834bb85cd1db"
 internal const val UNIT15_ASPECT_PREPARATION_CURRICULUM_COMMIT = "0f8001a8ec2cb76a7bc994a2c8d77db09a272d04"
 
+internal const val UNIT5_GRAMMAR_REVIEW_CURRICULUM_COMMIT = "2fb455d4cf0b69808d431a2b9db3583b4d4b0dcb"
+
+internal const val UNIT8_PRESENT_REVIEW_CURRICULUM_COMMIT = "370d8716e2747c439da1a450a83b71b129a5c879"
+
+internal const val UNIT9_NOUN_BEHAVIOR_REVIEW_CURRICULUM_COMMIT = "83a7b075983be5f7f9117e72d2967a9aaa06ce56"
+
+// Actual verified Unit10 present/numeral implementation; earlier source constants remain historical.
+internal const val UNIT10_PRESENT_REVIEW_CURRICULUM_COMMIT = "85e7eaf21335a107d64b99a4f1969bab4f74670d"
+
+// Actual verified Unit11 noun-behavior/possession-absence core; earlier pins remain historical.
+internal const val UNIT11_NOUN_REVIEW_CURRICULUM_COMMIT = "c2d297e79fa677aa1375917cfbe052e4c0806633"
+
+// Actual verified Unit12 lexical/past-gender core; earlier teaching/source pins remain historical.
+internal const val UNIT12_GENDER_REVIEW_CURRICULUM_COMMIT = "ca0fdaeca8de81ab6a5d4935fbcdcb068c4af913"
+
+// Actual verified Unit13 supplied-present/aspect/past core; older sources stay historical.
+internal const val UNIT13_PRESENT_REVIEW_CURRICULUM_COMMIT = "bd00e5082c9f31d2ae3b379dd6204dd3b28e4475"
+
+// Actual verified Unit14 supplied-plural/possession/reported-time core; older sources stay historical.
+internal const val UNIT14_PLURAL_POSSESSION_REVIEW_CURRICULUM_COMMIT = "d72afd1232857a857624c20c58f4bcd3cb5c8564"
+
 internal fun curriculumCommitForUnit(unitNumber: Int): String =
-    if (unitNumber == 3) UNIT3_GENDER_TEACHING_CURRICULUM_COMMIT
+    if (unitNumber == 5) UNIT5_GRAMMAR_REVIEW_CURRICULUM_COMMIT
+    else if (unitNumber == 3) UNIT3_GENDER_TEACHING_CURRICULUM_COMMIT
     else if (unitNumber == 4) UNIT4_PRESENT_TEACHING_CURRICULUM_COMMIT
-    else if (unitNumber == 8) UNIT8_EXISTENCE_SEQUENCE_CURRICULUM_COMMIT
-    else if (unitNumber == 10) UNIT10_FRAGMENT_MEANING_CURRICULUM_COMMIT
-    else if (unitNumber == 11) UNIT11_AGREEMENT_REMEDIATION_CURRICULUM_COMMIT
-    else if (unitNumber == 12) UNIT12_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
-    else if (unitNumber == 13) UNIT13_WIDER_REVIEW_CURRICULUM_COMMIT
-    else if (unitNumber == 14) UNIT14_IMPERSONAL_REPAIR_CURRICULUM_COMMIT
+    else if (unitNumber == 8) UNIT8_PRESENT_REVIEW_CURRICULUM_COMMIT
+    else if (unitNumber == 9) UNIT9_NOUN_BEHAVIOR_REVIEW_CURRICULUM_COMMIT
+    else if (unitNumber == 10) UNIT10_PRESENT_REVIEW_CURRICULUM_COMMIT
+    else if (unitNumber == 11) UNIT11_NOUN_REVIEW_CURRICULUM_COMMIT
+    else if (unitNumber == 12) UNIT12_GENDER_REVIEW_CURRICULUM_COMMIT
+    else if (unitNumber == 13) UNIT13_PRESENT_REVIEW_CURRICULUM_COMMIT
+    else if (unitNumber == 14) UNIT14_PLURAL_POSSESSION_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 15) UNIT15_ASPECT_PREPARATION_CURRICULUM_COMMIT
     else if (unitNumber == 16) UNIT16_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 17) UNIT17_CUMULATIVE_REVIEW_CURRICULUM_COMMIT
@@ -164,8 +189,8 @@ internal fun curriculumCommitForUnit(unitNumber: Int): String =
     else if (unitNumber == 20) UNIT20_DIRECTION_CURRICULUM_COMMIT
     else if (unitNumber == 17) UNIT17_QUESTION_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber == 5) UNITS5_6_RECENT_SELECTION_CURRICULUM_COMMIT
-    else if (unitNumber == 6) UNIT6_WIDER_REVIEW_CURRICULUM_COMMIT
-    else if (unitNumber == 7) UNIT7_INVARIANCE_PREPARATION_CURRICULUM_COMMIT
+    else if (unitNumber == 6) UNIT6_PRESENT_REVIEW_CURRICULUM_COMMIT
+    else if (unitNumber == 7) UNIT7_GENDER_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 9) UNIT9_WIDER_REVIEW_CURRICULUM_COMMIT
     else if (unitNumber == 28) UNIT28_TIMING_TRANSFER_CURRICULUM_COMMIT
     else if (unitNumber == 24) UNIT24_CONTEXT_TRANSFER_CURRICULUM_COMMIT

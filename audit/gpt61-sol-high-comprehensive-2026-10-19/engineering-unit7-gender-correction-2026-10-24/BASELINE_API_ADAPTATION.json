@@ -1,0 +1,14 @@
+{
+  "originalSource": "38542882cd9ab2e075691eca19442ddfabd17b6b",
+  "originalTestSha256": "6385996a02b6d81cb5c246c34349415095a100bd02ab4e7c80768a669f666ce6",
+  "adaptedTestSha256": "4aaf3ecd2bedd9dea19f4d1d3338fbfda0c4d8bca8bbf8932482df1e784dec6c",
+  "reason": "LocalStore unchanged API throws exactly IllegalStateException(current advancement evidence is incomplete) for missing review evidence; old successful actual advance never entered refusal path. Original baseline test expectedfalse and needed narrow refusal normalization.",
+  "caughtException": "IllegalStateException",
+  "caughtExactMessage": "current advancement evidence is incomplete",
+  "allOtherExceptionsPropagate": true,
+  "originalAssertionsUnchangedAndOrdered": true,
+  "addedNoLearnerMutationAssertion": true,
+  "productionApiUnchanged": true,
+  "originalBaselineEvidenceUnchanged": true,
+  "firstCorrectedAttemptRetained": "ATTEMPT_1:11reported/10passed/1failure/0errors/skips,exit1"
+}

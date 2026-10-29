@@ -331,6 +331,7 @@ class Unit25CumulativeReviewTest {
         ordinary(p, s, 14)
         val fourteenth = s.openCumulativeReview(p, 14, s.learnerMutationEpoch())!!
         answer(p, s, fourteenth, 0); answer(p, s, fourteenth, 1)
+        fourteenth.slots.indices.drop(2).forEach { answer(p, s, fourteenth, it) }
         runBlocking { advanceFrom(p, s, 14) }
         ordinary(p, s, 15)
         val fifteenth = s.openCumulativeReview(p, 15, s.learnerMutationEpoch())!!

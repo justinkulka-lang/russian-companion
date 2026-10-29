@@ -1,0 +1,17 @@
+[
+  {
+    "path": "app/src/main/assets/content/v2-curriculum.json",
+    "bytes": 20350042,
+    "sha256": "765f06b3719192a5b0f19df553e3a5f20d00e2e7eb42130c908ceac15e4a9acf"
+  },
+  {
+    "path": "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt",
+    "bytes": 62290,
+    "sha256": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3"
+  },
+  {
+    "path": "app/src/main/java/dev/russiancompanion/v2/ui/V2CumulativeReviewScreen.kt",
+    "bytes": 21557,
+    "sha256": "acb3978a0e39cb477a76922aa8d96c8de5baf6f8664134e058ab577dd2a8f0d1"
+  }
+]

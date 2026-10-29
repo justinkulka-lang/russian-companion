@@ -1,0 +1,83 @@
+{
+  "sourceCommit": "2562b84549f9aaec22584dff86df4abf58e7e1d6",
+  "inputTrees": {
+    "app/src/main": "80ffe691712ee37e760d92b05cc3a9dcc0ab4516",
+    "app/src/test": "b90aa73a69558e122f716c002a12c4db57dfc98d",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "e59450be50bd3bf9b0dd2c9ca8fe6381aa9fa0e6",
+    "release": "f532448db1bdcd92a7b75b0812b8b3759475e351"
+  },
+  "syntheticDryRun": false,
+  "exitCode": 1,
+  "finishedUtc": "2026-10-27T16:26:49.426824+00:00",
+  "testCounts": {
+    "reported": 2,
+    "passed": 1,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 1,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PresentReviewBaselineTest",
+      "method": "priorPrintAspectAndPastAnswersCannotReplaceFreshAssignedPresentAnswer",
+      "outcome": "FAILED",
+      "seconds": "37.852",
+      "messagePreview": "java.lang.AssertionError: The proposed Unit13 obligation must refuse advancement without its fresh assigned present-form answer",
+      "fullMessageBytes": 127,
+      "fullMessageSha256": "8cb1a15f3174dfc00a584187260f9644e07be9d61d279b4fbaf34e9fbc39e51b"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PresentReviewBaselineTest",
+      "method": "actualCurrentV2PartialTaskRoundtripsReopensAndCompletesItsOwnObligation",
+      "outcome": "PASSED",
+      "seconds": "38.786",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.Unit13PresentReviewBaselineTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "1",
+      "errors": "0",
+      "timestamp": "2026-10-27T16:23:33.734Z",
+      "hostname": "0cc76a0c8c68",
+      "time": "77.286"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": {
+    "sameInputTrees": true,
+    "discoveredNotReported": [],
+    "reportedNotDiscovered": [],
+    "exactSameMethodSet": true
+  },
+  "allFreshSelectedMethodsReported": true,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}

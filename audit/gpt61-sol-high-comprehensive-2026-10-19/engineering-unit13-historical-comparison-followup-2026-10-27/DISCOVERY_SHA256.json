@@ -1,0 +1,20 @@
+{
+  "CONTEXT.json": "add79c9d0ab0f999b711041e49c43bf821c4795a58667ae15e044d3acc0f109c",
+  "EVENTS.jsonl": "1b7b836481ad9b8b604401b26c0759f6c8e43b1d209920fec3696046f511192d",
+  "RESULT.json": "f041044d4d0bdea2456e327d9c7cda6589bb961ab1c3b862178cd6c1acf4977b",
+  "RESULTS.csv": "046a553fbe76e8112c92907d620ce268afa2c1b6bf37dbba2864679c5aeb2921",
+  "RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+  "RUN.log": "ae14a63ae23f7b0378b7c537da98835fee4573cdc626a4d97f8a08c610a1c1a2",
+  "XML/TEST-dev.russiancompanion.v2.Unit13BindingConservationTest.xml": "effb353312af97f78305caa2126f5f36716956ad3e46cb8b74b366842142fceb",
+  "XML/TEST-dev.russiancompanion.v2.Unit13ContextTeachingTest.xml": "2ebd0d95c007f579c8a1a8017001f84105fc1e66f7258fc302c5b2738ef57075",
+  "XML/TEST-dev.russiancompanion.v2.Unit13CumulativeReviewTest.xml": "278cd92c9185d1368cde3f8bc7dfa7f7007845660bd4fcc4afdc051a51f80767",
+  "XML/TEST-dev.russiancompanion.v2.Unit13PastTeachingTest.xml": "be10385300254b947ad462ad926daaea927b4814ea90040ce2a1d5143ac68370",
+  "XML/TEST-dev.russiancompanion.v2.Unit13PresentCompatibilityTest.xml": "c61e916c17f5b4cab7c1fa84f592b9252b347208eb07141de065be1a3090ca5c",
+  "XML/TEST-dev.russiancompanion.v2.Unit13PresentReviewBaselineTest.xml": "d371d1f227274c0ead83ec52390534d779587159f2237f333681989d8cc6cbcf",
+  "XML/TEST-dev.russiancompanion.v2.Unit13PresentReviewUiTest.xml": "796f7d48b38575c959a7a83c5fb02e782037b4188a7527c7a335dbac08abc19f",
+  "XML/TEST-dev.russiancompanion.v2.Units1620SourceIntakeTest.xml": "1f9657a3dca15ddcda2bf3686562c7c9f410a136afc32cecb8052d7f1ef2af3d",
+  "XML/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml": "a070cd195826d0127a5effcd5b56010e6b198eda5079145df9e51d0b4ae710f8",
+  "gc-5766.log": "038f0a90574729e625df629544a24dad62b891313e353a249926b3221bb3f9dc",
+  "gc-5770.log": "33c470319ebd72b9417891af3fe82d48bf20795fa8f49b518876cb121f440817",
+  "gc-5837.log": "94a8fc1bbb9fe7da7d910437d8e40cb40d4145a9f013234e6d15e0ed78419be4"
+}

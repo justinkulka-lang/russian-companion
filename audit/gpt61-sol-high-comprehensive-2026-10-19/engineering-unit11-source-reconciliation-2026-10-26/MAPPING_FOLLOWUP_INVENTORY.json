@@ -1,0 +1,28 @@
+{
+  "kind": "SOURCE_ANNOTATION_INVENTORY_NOT_EXECUTION",
+  "classes": 8,
+  "methods": 69,
+  "selectors": [
+    "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+    "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+    "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+    "dev.russiancompanion.v2.Units1115MappingGapTest",
+    "dev.russiancompanion.v2.V2RebuildTest",
+    "dev.russiancompanion.v2.Unit11BindingConservationTest",
+    "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+    "dev.russiancompanion.v2.review.UnitReviewPipelineTest"
+  ],
+  "perClass": {
+    "dev.russiancompanion.v2.Units1620SourceIntakeTest": 9,
+    "dev.russiancompanion.v2.Units2125SourceIntakeTest": 11,
+    "dev.russiancompanion.v2.BatchECapabilityResearchTest": 5,
+    "dev.russiancompanion.v2.Units1115MappingGapTest": 6,
+    "dev.russiancompanion.v2.V2RebuildTest": 24,
+    "dev.russiancompanion.v2.Unit11BindingConservationTest": 2,
+    "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest": 5,
+    "dev.russiancompanion.v2.review.UnitReviewPipelineTest": 7
+  },
+  "bothFailedBroadIdsIncluded": true,
+  "allFourSharedHelperCallerClassesIncluded": true,
+  "completeSuite": false
+}

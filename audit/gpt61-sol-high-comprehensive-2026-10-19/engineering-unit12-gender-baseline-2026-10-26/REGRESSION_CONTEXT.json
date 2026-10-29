@@ -1,0 +1,67 @@
+{
+  "sourceCommit": "23b9179eaf54844f0b38074b2db56c7113c38c00",
+  "sourceRootTree": "e89d31d8f41ef2d1087ac3c538213a68f9954ea6",
+  "workingTreeAtStart": "CLEAN",
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "startedUtc": "2026-10-26T23:19:14.471945+00:00",
+  "inputTrees": {
+    "app/src/main": "23c9fc7516de26ee34dcaf94188a0484500cffc6",
+    "app/src/test": "bf182d5b209c7f7f5aeddf89dbcaa0826881a1df",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "09daea049e808ff3684de9a8394d6812eb391f66",
+    "release": "e10d527ac640e73556088bf9319ad25764107723"
+  },
+  "mode": "REGRESSION",
+  "syntheticDryRun": false,
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/unit12-gender-baseline-2026-10-26/resources.gradle",
+    "-Daudit.unit12.capture.dir=/workspace/artifacts/unit12-gender-baseline-2026-10-26/REGRESSION/CAPTURE",
+    "-Daudit.history.output=/workspace/artifacts/unit12-gender-baseline-2026-10-26/REGRESSION/HISTORY_CASES.jsonl",
+    "-Daudit.events.path=/workspace/artifacts/unit12-gender-baseline-2026-10-26/REGRESSION/EVENTS.jsonl",
+    "-Daudit.gc.dir=/workspace/artifacts/unit12-gender-baseline-2026-10-26/REGRESSION",
+    "testDebugUnitTest",
+    "--rerun",
+    "--tests",
+    "dev.russiancompanion.v2.Unit12GenderReviewBaselineTest",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "runnerSha256": "a2bfc9267f4308442bf0c7546243f040d178af672af627a61c89653642d93218",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+    "/workspace/artifacts/unit12-gender-baseline-2026-10-26/resources.gradle": "9f6303b4e593fc1af88bdac7bc3a21901b8c5336c38fef71102a0026380109e5"
+  },
+  "selectors": [
+    "dev.russiancompanion.v2.Unit12GenderReviewBaselineTest"
+  ],
+  "workerPolicy": "2forks/6GiB/forkEvery4;GC logs retained",
+  "resources": {
+    "cgroupMemoryMax": "34359738368",
+    "cgroupMemoryCurrent": "12725174272",
+    "cpus": 5
+  },
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "scope": "Two actual-current Unit12 methods: proposed assigned noun-gender contrast and positive genuine v1/schema1 partial backup/read/replace/reopen lifecycle; not a current declared-gate or ordinary-knowledge bypass; not complete suite",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "completeSuite": false
+}

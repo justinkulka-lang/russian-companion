@@ -1,0 +1,34 @@
+{
+  "source": "929942950013701ddee7771a67523726d03f3fa7",
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Units1115MappingGapTest",
+      "method": "preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded",
+      "outcome": "FAILED",
+      "seconds": "7.261",
+      "messagePreview": "org.junit.ComparisonFailure: unchanged current unit 5 expected:<[3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141]> but was:<[f38caf6305957349e80c88eda55c1a33a6df4ce4926868d11bbb2f9b561eafad]>",
+      "fullMessageBytes": 208,
+      "fullMessageSha256": "6a93f91510b52a81910b284228e1e77857f52420377148be72d2ce38b670c801"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2125SourceIntakeTest",
+      "method": "structuralMappingsAreDigestBoundAndStayUnsigned",
+      "outcome": "FAILED",
+      "seconds": "21.487",
+      "messagePreview": "org.junit.ComparisonFailure: unchanged current unit 5 expected:<[3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141]> but was:<[f38caf6305957349e80c88eda55c1a33a6df4ce4926868d11bbb2f9b561eafad]>",
+      "fullMessageBytes": 208,
+      "fullMessageSha256": "6a93f91510b52a81910b284228e1e77857f52420377148be72d2ce38b670c801"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+      "outcome": "FAILED",
+      "seconds": "2.486",
+      "messagePreview": "org.junit.ComparisonFailure: expected:<[3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141]> but was:<[f38caf6305957349e80c88eda55c1a33a6df4ce4926868d11bbb2f9b561eafad]>",
+      "fullMessageBytes": 183,
+      "fullMessageSha256": "07c3f9a68291d0aa9b7d7ee13b2fcc0417e1b17356ddc09256f3aeac5cb98907"
+    }
+  ],
+  "diagnosis": "Historical Unit5 hash compared to current versioned Unit5 identity; do not replace old hash. Unit6 map comparisons were not reached in the two failing pin loops.",
+  "notAnAppRegressionClaim": true
+}

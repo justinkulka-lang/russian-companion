@@ -1,0 +1,85 @@
+{
+  "sourceCommit": "1d96cb4e89768f69246960e263d9b51412a3b9f4",
+  "status": "PROPOSED_NOT_ACTIVATED",
+  "activated": false,
+  "objectiveChains": 15,
+  "assessedChecks": 51,
+  "proposedId": "unit11-prior-noun-behavior-possession-absence-v2",
+  "proposedFreshSchema": 13,
+  "proposedPools": [
+    {
+      "unit": 11,
+      "slot": 0,
+      "objective": "obj-u5-indeclinable",
+      "skill": "SUPPLIED_NOUN_BEHAVIOR_RECOGNITION",
+      "remediationStep": "u5-st-rem-indeclinable",
+      "items": [
+        "u5-i-indecl-такси",
+        "u5-i-indecl-метро",
+        "u5-i-indecl-кино",
+        "u5-i-decl-книга",
+        "u5-i-decl-окно"
+      ]
+    },
+    {
+      "unit": 11,
+      "slot": 1,
+      "objective": "obj-u10-have",
+      "skill": "SUPPLIED_POSSESSION_ABSENCE_RECOGNITION",
+      "remediationStep": "u10-st-rem-have",
+      "items": [
+        "u10-i-have-1",
+        "u10-i-have-2",
+        "u10-i-have-3",
+        "u10-i-have-4"
+      ]
+    }
+  ],
+  "registeredPolicyObjectsPreserved": 37,
+  "schemasPreserved": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "selectedNounCandidates": 5,
+  "selectedPossessionAbsenceCandidates": 4,
+  "nounRawKeys": [
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "possessionAbsenceRawKeys": [
+    0,
+    0,
+    1,
+    1
+  ],
+  "historicalArchivesChecked": 71,
+  "archivesContainingUnit11": 24,
+  "currentPrintSingletonPolicies": 22,
+  "newRuntimeMethodsExecuted": 0,
+  "heldOutItemsAdded": 0,
+  "qualifiedAcceptance": "PENDING_NOT_GRANTED",
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkIdentity": null,
+  "apkSignature": null,
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  }
+}

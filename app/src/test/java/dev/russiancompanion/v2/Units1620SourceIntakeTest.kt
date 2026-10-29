@@ -77,8 +77,14 @@ class Units1620SourceIntakeTest {
                 // Original correction ledger's newUnit11Digest,not a freshly bumped snapshot.
                 val declaredAfterDigest = "35de2337c00321867e4c30871b048181738017a79babc4f0135ad4131e1b6c69"
                 assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(afterRepair, 11))
-                assertEquals(afterRepair.unit(11), pack.unit(11))
-                assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
+                // These original assertions name the repaired instruction before Unit11's later review declaration.
+                RecordedCurriculumConservationScope.beforeUnit11NounReview(repo(), pack).let { pack ->
+                    assertEquals(afterRepair.unit(11), pack.unit(11))
+                    assertEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
+                }
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), 11)
+                org.junit.Assert.assertNotEquals(declaredAfterDigest, V2Validator.unitContentReviewDigest(pack, 11))
             } else if (number == 15) {
                 // Keep the original pin on its recorded snapshot; preparation changed later.
                 val prior = historicalSourcePack("49a926c5ace0459edf7712ca5d90db4a63ff9d31")
@@ -86,6 +92,31 @@ class Units1620SourceIntakeTest {
                 val correction = historicalSourcePack("0f8001a8ec2cb76a7bc994a2c8d77db09a272d04")
                 RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, correction, number)
                 org.junit.Assert.assertNotEquals(digest, V2Validator.unitContentReviewDigest(pack, number))
+            } else if (number == 12) {
+                // The retained v1 digest belongs to the exact pre-Unit12 declaration.
+                RecordedCurriculumConservationScope.beforeUnit12GenderReview(repo(), pack).let { pack ->
+                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                }
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), number)
+                org.junit.Assert.assertNotEquals("Current Unit12 versioned review identity", digest,
+                    V2Validator.unitContentReviewDigest(pack, number))
+            } else if (number == 13) {
+                // Retain the original v2 digest on its proven whole-pack source; never reset the pin.
+                RecordedCurriculumConservationScope.beforeUnit13PresentReview(repo(), pack).let { pack ->
+                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                }
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack,
+                    historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), number)
+                org.junit.Assert.assertNotEquals("Current Unit13 v3 review identity", digest,
+                    V2Validator.unitContentReviewDigest(pack, number))
+            } else if (number == 14) {
+                // Retain the old v1 pin only on its proven whole-pack declaration scope.
+                RecordedCurriculumConservationScope.beforeUnit14PluralPossessionReview(repo(), pack).let { pack ->
+                    assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
+                }
+                RecordedIntakeCorrectionScope.assertCurrentUnitMatches(pack, historicalSourcePack(RecordedCurriculumConservationScope.currentPackImplementation), number)
+                org.junit.Assert.assertNotEquals("Current Unit14 v2 review identity", digest, V2Validator.unitContentReviewDigest(pack, number))
             } else {
                 assertEquals("unit $number", digest, V2Validator.unitContentReviewDigest(pack, number))
             }

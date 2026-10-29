@@ -1,0 +1,2 @@
+testClass,method,outcome,seconds,messagePreview,fullMessageBytes,fullMessageSha256
+dev.russiancompanion.acceptance.DeviceAcceptancePackageTest,physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease,FAILED,0.07,java.lang.AssertionError,24,236d51b61b189ceec0ac4f169fec07728086016022478eae12685425934eafbd

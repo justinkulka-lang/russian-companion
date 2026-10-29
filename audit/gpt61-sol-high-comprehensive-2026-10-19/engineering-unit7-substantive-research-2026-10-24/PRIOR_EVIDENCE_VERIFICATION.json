@@ -1,0 +1,31 @@
+{
+  "command": [
+    "python3",
+    "/workspace/russian-companion/audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-post-broad-work-order-2026-10-24/verify_reconciliation.py"
+  ],
+  "exitCode": 0,
+  "result": {
+    "verified": true,
+    "testedSource": "d70675321a043688cf270963ab1e84d99a77c193",
+    "hostCounts": {
+      "reported": 1365,
+      "passed": 1364,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 1
+    },
+    "originalFindingsPreserved": 48,
+    "originalRequestsPreserved": 70,
+    "allIndependentFindingsOpen": true,
+    "currentPolicies": 28,
+    "printSingletonPolicies": 26,
+    "canonicalSourceDigest": "2507d56bf2bd910b198d9ff317a605598765e13d947fa4f4435aaacd2a626892",
+    "originalArchivesShaCrc": 66,
+    "priorProtectedFiles": 7685,
+    "additionalJUnitMethodsExecuted": 0,
+    "scenarioAcceptanceNotInferred": true,
+    "completeSuite": false
+  },
+  "priorVerifierSHA256": "91fd9f0095eeddc4c7c5498ab7e8e6ebad2b2e65f06210ff18c81bc671776eaf",
+  "runtimeTestsExecuted": 0
+}

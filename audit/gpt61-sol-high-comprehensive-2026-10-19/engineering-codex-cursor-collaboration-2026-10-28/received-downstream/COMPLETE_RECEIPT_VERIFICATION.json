@@ -1,0 +1,25 @@
+{
+  "deliveryStatus": "COMPLETE_REPORT_AND_64_GROUPED_ROWS_RECEIVED",
+  "attachment": {
+    "sedimentFileId": "file_00000000c79881fdb86cbe568a421f91",
+    "bytes": 23092,
+    "sha256": "0d0bf35e3be9ee73a84f61ea7f76beaffd7af78f1a6c5876811a074b32e50242"
+  },
+  "rows": 64,
+  "classes": 16,
+  "completeUniqueMethods": 112,
+  "allMethodDeclarationLinesMatchPin": true,
+  "noRowGapsOrDuplicates": true,
+  "previousReceiptBytesConserved": true,
+  "assembly": "Codex concatenated received fragments in row order, removing repeated headers only. Original attachments/fragments remain byte-exact. Not a claim of original external file transfer.",
+  "independentStaticGapCandidates": 60,
+  "actualBroadFailureIdentitySetEqualsCurrentFixtureCandidateSet": true,
+  "broadRuntimeSource": "8eb9d3d4cc3fdbcd70d5b8904087ddad18acfaf1",
+  "broadCheckpoint": "5b012b30a1c7827a1e421ff3234ec13a47c1b281",
+  "causalityLimit": "Identity-set agreement is not full trace review; actual stack frames and source paths still require bounded reconciliation. No fixes applied.",
+  "repositoryMutation": false,
+  "testExecution": false,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "Outstanding and LAST"
+}

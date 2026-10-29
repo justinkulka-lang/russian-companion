@@ -1,0 +1,14 @@
+{
+  "baselineParent": "fda1fbe89004b92c09e33e425968a17cf8699d3e",
+  "actualCurriculumChangeCommit": "77e3d26eab138796a699d9133e45e4f793e95cc1",
+  "actualVerifiedProductionSource": "370d8716e2747c439da1a450a83b71b129a5c879",
+  "kernelReferenceOldSha256": "f727b5232ecba2df679762aaf5a1cabfa0ac8aaf191ffe04578cedb8de26f9ba",
+  "kernelReferenceNewSha256": "e70fc8d12ad0016c5281a4028904ac2dd0a734a22511ba1c4d9544ab6bbdb9f0",
+  "existingCyrillicBindings": 292,
+  "oldPinsRetained": [
+    "2e2ebcebc81f54c04db7f0ac24e99374674c97c5",
+    "fe919656bfa2775b5cc2c22f2496d4258343cfea"
+  ],
+  "approvalChanged": false,
+  "sourceDigestExpected": "e1f57fec1eeeacde3162069434116852aaa0278f2e501db859db50cc43c21670"
+}

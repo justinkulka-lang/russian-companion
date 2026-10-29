@@ -1,0 +1,5 @@
+# Complete fresh affected integration
+
+Read STATUS.md, PREPARATION.json, COMPARISON_REVIEW.json, HISTORICAL_PAIR_PROOF.json and SCOPE.json. First inspect external contexts/processes/completions and monitor before launching or changing anything. Fresh83class discovery must measure method identities; no count assumption. Run exact discovered classes against identical input trees. Root owns actual evidence verification/collection/audit-docs commit/normalpush/DraftPR64 update; preserve every failed/error outcome before any fixes. No app/test input changes during run.
+
+After actual completion, verify XML/events/source/commands/task/cache/lint/gate/native monitoring, all155bindings/74archives/wholebaseline/other274testfiles/originalassertions. If failures remain, inspect full messages and fix actual defects or narrowly justified historical scopes without changing original meaning/pins. Focused proofs and older scopes remain separate/unsummed. Fresh broad selected-host discovery/runtime follows resolved affected scope as next large task. All48OPEN/auditINCOMPLETE/four exporters excluded/physicalLAST/noAPK/signing/merge/freeze/releaseapproval.

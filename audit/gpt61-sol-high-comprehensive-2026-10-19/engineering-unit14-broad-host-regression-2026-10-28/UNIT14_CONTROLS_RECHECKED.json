@@ -1,0 +1,118 @@
+{
+  "sourceCommit": "8eb9d3d4cc3fdbcd70d5b8904087ddad18acfaf1",
+  "methods": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "wrongSchemasTargetsResponseRolesAndReplacementEpochCannotBorrowNewCredit",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "allTwentyFourAllocationsUseGovernedMissesIgnoringPracticeMalformedAndDuplicateOrders",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "assignedMissSurvivesOrdinaryCorrectionIdempotenceRollbackBackupReopenAndLateAnswer",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "eachMissingOwnerOrChangedItemAndInstructionRefusesFreshAndSavedTasks",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "exactPriorDeclarationRefusesNewSchemaAndCompiledObservationRecordsBoundedPools",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "genuineUnit15OldOwner14PartialReopensCompletesAndActuallyAdvances16",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "genuineCompletedV1RetainsCompletionDespiteLateWrongAnswerAndReplacement",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "genuineV1PartialCompletesAndRoundtripsWithoutRelabelling",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "existingOwner13V1AndV2BridgesStillSupportOldUnit14TasksWithoutRelabelling",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "exactOldOwner14SupportRefusesUnrelatedContentRulesAndObsoleteTeaching",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest",
+      "method": "actualCurrentV1AndDownstreamUnit15RoundtripReopenAndCompleteTheirOwnObligations",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest",
+      "method": "earlierPluralPossessionAndOptionalAnswersCannotReplaceFreshAssignedDueAnswers",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "genuineCompletedV1DetailRetainsOldTitleAndTwoOfTwoAnswers",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "genuinePartialV1EntryAndContinueRetainOldTitleAndOneOfTwoAnswers",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "actualReportedTimeRepairRestoresAllTeachingAndReturnsWithoutDueCreditThenAdvances",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "actuallyCompletedUnit8DoesNotHideMissingUnit10And13OrCreateReviewCredit",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "actualPluralRepairRestoresAllTeachingAndReturnsWithoutDueCreditThenAdvances",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "freshDetailEntryAndUnstartedReviewUseDeclaredPluralPossessionTitle",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "actualPossessionRepairRestoresAllTeachingAndReturnsWithoutDueCreditThenAdvances",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "unpreparedFiniteReviewRoutesToAllThreeOwnersWithoutCredit",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14BindingConservationTest",
+      "method": "kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14BindingConservationTest",
+      "method": "currentDeclarationReconstructsOnlyUnit14ThenEveryGenuineEarlierPack",
+      "outcome": "PASSED"
+    }
+  ],
+  "all22Included": true,
+  "allPassed": true,
+  "countsNotSummed": true
+}

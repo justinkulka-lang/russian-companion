@@ -1,0 +1,13 @@
+{
+  "sourceCommit": "0694fa730c3f768f53716ab55b1bd60a5f4201ff",
+  "inputTrees": {
+    "app/src/main": "4a10247fc4b16a451230ca540abcededac23f554",
+    "app/src/test": "82a4e2b8b40483759a68a30579faebd1ce7eaa44",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "4bc1e7678565cdbefcf31c7fc4e5272d8e749fd7",
+    "release": "c03bb8dbc3025ef83f463c6a8521526b09da8e42"
+  },
+  "startedUtc": "2026-10-29T01:53:55.452618+00:00",
+  "JUnitMethodsExecuted": 0
+}

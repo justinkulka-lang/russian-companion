@@ -1,0 +1,79 @@
+{
+  "priorBroadSource": "3434fb8391a6bb4bee91c312a13bd79523db7799",
+  "priorBroadResultSha256": "e58df64d1c66af4311b8575d9362a20805890973a058c28acb4802f75b698208",
+  "discoverySource": "38933d9127a8d252c789f28185b5dde6236f6da8",
+  "all1441EarlierMethodsPreserved": true,
+  "added": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12BindingConservationTest",
+      "method": "currentDeclarationReconstructsOnlyUnit12ThenEveryGenuineEarlierPack"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12BindingConservationTest",
+      "method": "kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+      "method": "eachGenderMissCanAllocateWhileOptionalAndMalformedHistoryCannotSelect"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+      "method": "exactPriorDeclarationRefusesSchemaFourteenAndPreservesBothDownstreamVersions"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+      "method": "genuineHistoricalUnit13SchemaOneOwner12BindingsStayCurrentWithoutRelabelling"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+      "method": "genuineSchemaOnePartialCompletesWithoutAddingNounGenderOrRelabelling"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+      "method": "missingOwnersAndChangedTeachingOrItemsRefuseFreshAndSavedTasks"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+      "method": "recentGenderMissRemainsAssignedThroughCorrectionRollbackBackupAndReopen"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+      "method": "wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderReviewBaselineTest",
+      "method": "actualCurrentPartialTaskRoundtripsReopensAndCompletesItsOwnObligation"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderReviewBaselineTest",
+      "method": "printAndPastAnswersCannotReplaceFreshAssignedNounGenderAnswer"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderReviewUiTest",
+      "method": "actualFreshReviewRepairsNounGenderTeachingWithoutPracticeCreditAndAdvances"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderReviewUiTest",
+      "method": "actualFreshReviewRepairsPastGenderTeachingWithoutPracticeCreditAndAdvances"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderReviewUiTest",
+      "method": "freshUnitDetailEntryAndUnstartedScreenUseTheDeclaredGenderPolicy"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderReviewUiTest",
+      "method": "genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderReviewUiTest",
+      "method": "genuinelyCompletedUnit3RoutesMissingUnit11WithoutCreatingReviewCredit"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit12GenderReviewUiTest",
+      "method": "unpreparedReviewStatesFiniteScopeAndRoutesToBothRealOwnersWithoutCredit"
+    }
+  ],
+  "removed": [],
+  "runtimeTestsExecuted": 0,
+  "completeSuite": false
+}

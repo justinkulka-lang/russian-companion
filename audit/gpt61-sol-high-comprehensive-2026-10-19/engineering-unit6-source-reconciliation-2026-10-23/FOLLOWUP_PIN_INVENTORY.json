@@ -1,0 +1,59 @@
+{
+  "kind": "STATIC_NEXT_SCOPE_RESEARCH_NOT_RUNTIME_FAILURE",
+  "sourceCommit": "cae0d574202b0713e8b926ee0ac0b87dbbf30281",
+  "reason": "These current-pack loaders retain pre-Unit5 and/or pre-Unit6 conservation pins. Preserve old pins and assertions; reproduce their executed scope and reconcile only through proven exact declaration projections. This is outside the selected85-method scope.",
+  "currentUnit5Digest": "f38caf6305957349e80c88eda55c1a33a6df4ce4926868d11bbb2f9b561eafad",
+  "currentUnit6Digest": "b48de0c4df3d65c19eb8d8abef35bc7a2a8655884533aba7099d6cf97a301f10",
+  "files": [
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units1115MappingGapTest.kt",
+      "testAnnotationInventoryOnly": 6,
+      "matchingPinLines": [
+        {
+          "line": 39,
+          "text": "5 to \"3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141\","
+        },
+        {
+          "line": 40,
+          "text": "6 to \"ba6c6924af88effded224c79e37b467780c4c5372dd1b5dd6ba8a37e3f0233fe\","
+        }
+      ],
+      "pinConsumerLines": [
+        83
+      ],
+      "runtimeStatus": "NOT_EXECUTED_IN_THIS_85_METHOD_SCOPE"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/Units2125SourceIntakeTest.kt",
+      "testAnnotationInventoryOnly": 11,
+      "matchingPinLines": [
+        {
+          "line": 51,
+          "text": "5 to \"3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141\","
+        },
+        {
+          "line": 52,
+          "text": "6 to \"ba6c6924af88effded224c79e37b467780c4c5372dd1b5dd6ba8a37e3f0233fe\","
+        }
+      ],
+      "pinConsumerLines": [
+        167
+      ],
+      "runtimeStatus": "NOT_EXECUTED_IN_THIS_85_METHOD_SCOPE"
+    },
+    {
+      "path": "app/src/test/java/dev/russiancompanion/v2/V2RebuildTest.kt",
+      "testAnnotationInventoryOnly": 24,
+      "matchingPinLines": [
+        {
+          "line": 950,
+          "text": "assertEquals(\"3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141\", V2Validator.unitContentReviewDigest(pack, 5))"
+        }
+      ],
+      "pinConsumerLines": [
+        948
+      ],
+      "runtimeStatus": "NOT_EXECUTED_IN_THIS_85_METHOD_SCOPE"
+    }
+  ]
+}

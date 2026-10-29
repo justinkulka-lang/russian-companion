@@ -1,0 +1,17 @@
+{
+  "verified": true,
+  "comparisonAppliedSource": "a785ca5b63dbeaee15105a568e3faecb5880c01f",
+  "modifiedFiles": 5,
+  "allOriginalAssertionsAndPinsRetained": true,
+  "nonassertInputExpressionExceptions": 2,
+  "allEightOriginalFailuresPreserved": true,
+  "completeFailureValuesRead": true,
+  "threeExactOnePolicyTokenDifferences": true,
+  "productionAnd155RecordsAndOtherTestsConserved": true,
+  "genuineHistoricalReferenceKernelPairVerified": true,
+  "currentControlsRetained": true,
+  "testsExecutedByVerifier": 0,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST"
+}

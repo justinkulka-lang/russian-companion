@@ -1,0 +1,194 @@
+{
+  "DISCOVERY/CONTEXT.json": {
+    "bytes": 4603,
+    "sha256": "cca827e57ad6365454e22f8ca474e2c756a429c470547076a8e8cf423abb1464"
+  },
+  "DISCOVERY/EVENTS.jsonl": {
+    "bytes": 50186,
+    "sha256": "a681dfad6426d3f46f17b689e617f2260b11d0ffcbc856dafdf89fa2b986ddbe"
+  },
+  "DISCOVERY/RESULT.json": {
+    "bytes": 35062,
+    "sha256": "3468daf176c83767406285bfd929b41d4ff75d647edb21e63114192dca59fa35"
+  },
+  "DISCOVERY/RESULTS.csv": {
+    "bytes": 16134,
+    "sha256": "8cfcf5ba145d7ec1d75d690e04b589edae71be2a3c6fade0d1a55c931176dc3b"
+  },
+  "DISCOVERY/RUN.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "DISCOVERY/RUN.log": {
+    "bytes": 15297,
+    "sha256": "9796c8136f715ed6a0ac512f94f82697d3b74a26dda74c44c620373f55c1ddd1"
+  },
+  "DISCOVERY/SHA256.json": {
+    "bytes": 2685,
+    "sha256": "9ddbe295fe0c9c3fa12ba7d83eb741506da9270ae9b8fd0b264c42a3c2d43ced"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit13BindingConservationTest.xml": {
+    "bytes": 736,
+    "sha256": "78618825462d82dd9ca28cfd48b96a89a08d3187601970fbdea6d7c82e779bc9"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit13PresentCompatibilityTest.xml": {
+    "bytes": 1745,
+    "sha256": "c193de6b06dcdbc6f68d172d8adb0d4893377f6615bf92b8040f5f0be3e09077"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit13PresentReviewBaselineTest.xml": {
+    "bytes": 741,
+    "sha256": "c81c960b8de3cbfa1628c3739a9e8a635f2d269fc60bf2fb1fe5cac9a4989aa1"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit13PresentReviewUiTest.xml": {
+    "bytes": 1878,
+    "sha256": "ff6920abe6d4a22f35ce4b8a4b65372573130a62d64c04535608fbe4a23959ab"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit14BindingConservationTest.xml": {
+    "bytes": 738,
+    "sha256": "2238ec43d42b3bd990a16ec2b5e3af9f038f5338010baa12846bbf833806fa94"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit14CumulativeReviewTest.xml": {
+    "bytes": 1753,
+    "sha256": "cf4cbf86ebdca285098a5f43ec3666664161279cf20484a76e7234a721f299b3"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit14ImpersonalRemediationTest.xml": {
+    "bytes": 1326,
+    "sha256": "c2ef8991220404537b489cd842130349b641ae25509e3e0c547bfaec68fa60c5"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest.xml": {
+    "bytes": 2443,
+    "sha256": "86d27c56ec0fcab4849933fbb3a801cb14d08d413cf8eeb1b85f79e4c724bc33"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest.xml": {
+    "bytes": 786,
+    "sha256": "192e1983d4bd6178efd538c9836ac59244e257d81675058855c96594e7e34a7b"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest.xml": {
+    "bytes": 1950,
+    "sha256": "379141b796cbd7b32b94ee2d7d75bf4ec638ea9a64f955bd5c8f42639992e3ca"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Unit15CumulativeReviewTest.xml": {
+    "bytes": 1758,
+    "sha256": "b5015bbcc4f99b4764b05ef2604b9e77d68dd25f7e7f2737dd597d2285534075"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Units1620SourceIntakeTest.xml": {
+    "bytes": 1957,
+    "sha256": "187677f18acfaab224158540957e28dff750cbe856002e29485e70d1c6991740"
+  },
+  "DISCOVERY/XML/TEST-dev.russiancompanion.v2.Units2630SourceIntakeTest.xml": {
+    "bytes": 2054,
+    "sha256": "820a8575a378922a110f91af1d9774aa460cb2d9d4c250c344409c060f200a4f"
+  },
+  "DISCOVERY/gc-81306.log": {
+    "bytes": 180,
+    "sha256": "1c1bbc9d612005fada224ce5f4c530a71bee2f36e15de6a8dedbc31a20666e72"
+  },
+  "DISCOVERY/gc-81310.log": {
+    "bytes": 180,
+    "sha256": "e5e5bc1891d4273eaeac94c836d546cc3247a9b150940c5cb3a66c197f0e7fa9"
+  },
+  "DISCOVERY/gc-81376.log": {
+    "bytes": 180,
+    "sha256": "92e9c059e1489b2e7fd008599df7941997fbc631afc196dece75d2b08b417f68"
+  },
+  "DISCOVERY/gc-81380.log": {
+    "bytes": 180,
+    "sha256": "9d688cc4c43050498bdc205bba0ef79770371e4368b07e34925c3ac168555df0"
+  },
+  "DISCOVERY_COMPLETION.json": {
+    "bytes": 208,
+    "sha256": "8151414b9704f7f6fdc07bb1de856a2ae922af6bd0e11f4e2ed313f0dd3c291d"
+  },
+  "DISCOVERY_LAUNCHER.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "DISCOVERY_LAUNCHER.json": {
+    "bytes": 156,
+    "sha256": "9a52d992bece3a0c6d5371e132f18306077afcfc780e15db2636c79cf0d566b6"
+  },
+  "DISCOVERY_LAUNCHER.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "DISCOVERY_RUNNER.log": {
+    "bytes": 214,
+    "sha256": "7ba7c01410e481464228d235eaa3dba9d639f0c69805c83afa844bfdbf6f098a"
+  },
+  "DISCOVERY_RUNNER_PROCESS.json": {
+    "bytes": 291,
+    "sha256": "87f202ea51212cdb6ee07d9a48e0f1450f0a40a656397ee1d91378e16233b1de"
+  },
+  "INIT/broader-tests.gradle": {
+    "bytes": 1905,
+    "sha256": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "INIT/cloud-validation.gradle": {
+    "bytes": 788,
+    "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123"
+  },
+  "INIT/resources.gradle": {
+    "bytes": 648,
+    "sha256": "25ade68e605848e8a6437bf162631435dc72d5ab0f033621aa4f1aeca317f42f"
+  },
+  "TOOLING/SCOPE.json": {
+    "bytes": 25397,
+    "sha256": "932c2da03ad79181bb307934f8536f6b2a07a4b683307b1438af798809279bfe"
+  },
+  "TOOLING/assertion_calls.py": {
+    "bytes": 411,
+    "sha256": "839733a440f19382facc574077f5469924bdba45dd8ad3b9f79580ea6e07a1ac"
+  },
+  "TOOLING/collect.py": {
+    "bytes": 3040,
+    "sha256": "27a01582ddd0cfcea11d34e21eed17da2f410adaab71a144423b4c9fc6a3008f"
+  },
+  "TOOLING/completion_worker.py": {
+    "bytes": 13232,
+    "sha256": "ce3372bee680430a709a1ed54c2a53fe1ed7144b781df0ef18b3352146f58c0a"
+  },
+  "TOOLING/configure.py": {
+    "bytes": 5579,
+    "sha256": "c0146fac33ead1db8dc9686ae01bdf0ad6143d65f6f210d9ab836a5bd98177ba"
+  },
+  "TOOLING/durable_monitor.py": {
+    "bytes": 2927,
+    "sha256": "d303c2f7f3fc9f219178a48b639cd58aa998db1d94e39eb1172d24b0bbc82b19"
+  },
+  "TOOLING/evidence.py": {
+    "bytes": 4415,
+    "sha256": "128e3d8e38dd61b8bde9cb92b5d0e96d61bd341a06cb0974d1c4362e534f4236"
+  },
+  "TOOLING/launch.py": {
+    "bytes": 807,
+    "sha256": "661837c1fb0e419766972792f94204cc1bff97b10787ca6e6365e40dc937449f"
+  },
+  "TOOLING/prepare.py": {
+    "bytes": 14874,
+    "sha256": "0ce093bfe0f3f60bb6c39e80896b0ffdaa577e7cecf842b301f5f97306f94dc8"
+  },
+  "TOOLING/record_discovery.py": {
+    "bytes": 1356,
+    "sha256": "1dbfc8f24ead1723a65ddf6b807a4643bf257d7c92843e17bea3f1eb8707feb4"
+  },
+  "TOOLING/resources.gradle": {
+    "bytes": 648,
+    "sha256": "25ade68e605848e8a6437bf162631435dc72d5ab0f033621aa4f1aeca317f42f"
+  },
+  "TOOLING/run.py": {
+    "bytes": 7305,
+    "sha256": "60ac49a50460f4309f5b63e19b8278346a350d3c8efbb1d2e687b11260940406"
+  },
+  "TOOLING/start_runtime.py": {
+    "bytes": 1036,
+    "sha256": "00e6cf4db65710ccce86023907c1fd5d1a3f43b90525df50da3c4d1a2ac772f4"
+  },
+  "TOOLING/supervise.py": {
+    "bytes": 1197,
+    "sha256": "49346dac8349205097c4ca0b28482edfa4180ff483051b785834e8bc62613614"
+  },
+  "TOOLING/verify_results.py": {
+    "bytes": 7507,
+    "sha256": "96936c388350bfde14e0300a4f3be5c430dc7b8f1c7be8f2dfcba261313eff42"
+  }
+}

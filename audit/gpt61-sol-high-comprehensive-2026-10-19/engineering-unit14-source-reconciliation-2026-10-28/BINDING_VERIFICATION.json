@@ -1,0 +1,25 @@
+{
+  "verified": true,
+  "sourceCommit": "93824efecba9ba8d8967bf6b328c0d9ef2475fa7",
+  "counts": {
+    "reported": 2,
+    "passed": 2,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 1,
+  "exitCode": 0,
+  "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "gateAttachment": "PASSED_NOT_RELEASE_APPROVAL",
+  "fullAffectedScope": "87CLASS_INVENTORY_NOT_LAUNCHED",
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "newJUnitByVerifier": 0
+}

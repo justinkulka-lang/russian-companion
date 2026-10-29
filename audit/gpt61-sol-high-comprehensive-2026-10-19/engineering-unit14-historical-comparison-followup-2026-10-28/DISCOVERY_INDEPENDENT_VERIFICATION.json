@@ -1,0 +1,12 @@
+{
+  "sourceCommit": "0c6789a291c6170dab792c908dba5c9b379067fa",
+  "methods": 79,
+  "classes": 13,
+  "allXmlAndEventsExact": true,
+  "syntheticSkips": 79,
+  "runtimePasses": 0,
+  "runnerAndInitHashesVerified": true,
+  "rawArchiveMemberShaCrc": true,
+  "originalAndMatchingPairArchivesCrc": true,
+  "inputTreesConserved": true
+}

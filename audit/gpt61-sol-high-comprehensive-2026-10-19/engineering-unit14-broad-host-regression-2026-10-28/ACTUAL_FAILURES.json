@@ -1,0 +1,555 @@
+{
+  "sourceCommit": "8eb9d3d4cc3fdbcd70d5b8904087ddad18acfaf1",
+  "count": 60,
+  "originalAssertionsNotWaived": true,
+  "storage": {
+    "format": "LOSSLESS_ZIP",
+    "archive": "ACTUAL_FAILURES_FULL.zip",
+    "archiveSha256": "e0ca232b5dd36688d069f9840465512fbea89806b49292d0a6ef67891b327cd0",
+    "member": "ACTUAL_FAILURES.json",
+    "memberBytes": 122281,
+    "memberSha256": "1fdebe5bcb07107347fc2ffa2beed1875136f6c42885664ba493a25ae0e5fa98"
+  },
+  "failures": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit19CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "7f80481bb2ad179e2bfc9b259fc34f36d8020bf39beb4a73f223c9e8d5e8551f"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit19CumulativeReviewTest",
+      "method": "heldUnit19WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "7f80481bb2ad179e2bfc9b259fc34f36d8020bf39beb4a73f223c9e8d5e8551f"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit19CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "7f80481bb2ad179e2bfc9b259fc34f36d8020bf39beb4a73f223c9e8d5e8551f"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit19CumulativeReviewTest",
+      "method": "actualUnit19ContinueRelativeMeaningCueTeachingPracticeReturnAndAdvanceStayOnUnit19",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "7f80481bb2ad179e2bfc9b259fc34f36d8020bf39beb4a73f223c9e8d5e8551f"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29CumulativeReviewTest",
+      "method": "actualUnit29ContinueRelativeFutureTimingCueTeachingPracticeReturnAndAdvanceStayOnUnit29",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "689ad4bb2621cc54489729c73f7b07e2d81d6286e88dfd845921455ce45f34f3"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "689ad4bb2621cc54489729c73f7b07e2d81d6286e88dfd845921455ce45f34f3"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "689ad4bb2621cc54489729c73f7b07e2d81d6286e88dfd845921455ce45f34f3"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit29CumulativeReviewTest",
+      "method": "heldUnit29WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "689ad4bb2621cc54489729c73f7b07e2d81d6286e88dfd845921455ce45f34f3"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit23CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "01c60d6d805636da6f2dd993421e9a47b4e576f21800aed312a7b7a9e1e7efe7"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit23CumulativeReviewTest",
+      "method": "actualUnit23ContinueHalfQuantityPhraseCueTeachingPracticeReturnAndAdvanceStayOnUnit23",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "01c60d6d805636da6f2dd993421e9a47b4e576f21800aed312a7b7a9e1e7efe7"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit23CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "01c60d6d805636da6f2dd993421e9a47b4e576f21800aed312a7b7a9e1e7efe7"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit23CumulativeReviewTest",
+      "method": "heldUnit23WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "01c60d6d805636da6f2dd993421e9a47b4e576f21800aed312a7b7a9e1e7efe7"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "254c8379d413c38f32cd7afcaf0ed0e18cc00ef4f7897fb0078a7b78ce5a1819"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30CumulativeReviewTest",
+      "method": "heldUnit30WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "254c8379d413c38f32cd7afcaf0ed0e18cc00ef4f7897fb0078a7b78ce5a1819"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "254c8379d413c38f32cd7afcaf0ed0e18cc00ef4f7897fb0078a7b78ce5a1819"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit30CumulativeReviewTest",
+      "method": "actualUnit30ContinueActiveParticipleTimeCueTeachingPracticeReturnAndTerminalCompletionStayOnUnit30",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "254c8379d413c38f32cd7afcaf0ed0e18cc00ef4f7897fb0078a7b78ce5a1819"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit21CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "e7c9bfd4e1f3102e3c72fdbf3369aa4f89a1ca9371c1961c0769642f979352c0"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit21CumulativeReviewTest",
+      "method": "actualUnit21ContinueMotionContextCueTeachingPracticeReturnAndAdvanceStayOnUnit21",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "e7c9bfd4e1f3102e3c72fdbf3369aa4f89a1ca9371c1961c0769642f979352c0"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit21CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "e7c9bfd4e1f3102e3c72fdbf3369aa4f89a1ca9371c1961c0769642f979352c0"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit21CumulativeReviewTest",
+      "method": "heldUnit21WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "e7c9bfd4e1f3102e3c72fdbf3369aa4f89a1ca9371c1961c0769642f979352c0"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit22CumulativeReviewTest",
+      "method": "actualUnit22ContinueReflexiveObjectCueTeachingPracticeReturnAndAdvanceStayOnUnit22",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "6ba8755e0da6a659c4c22cd380ad172d9272894beb51def42840396dc2401369"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit22CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "6ba8755e0da6a659c4c22cd380ad172d9272894beb51def42840396dc2401369"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit22CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "6ba8755e0da6a659c4c22cd380ad172d9272894beb51def42840396dc2401369"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit22CumulativeReviewTest",
+      "method": "heldUnit22WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "6ba8755e0da6a659c4c22cd380ad172d9272894beb51def42840396dc2401369"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit16CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "34220fc4acbbfe5a59a26f7a611a5f443aaeb4d0caef6ee12095e78ff22b9e4f"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit16CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "34220fc4acbbfe5a59a26f7a611a5f443aaeb4d0caef6ee12095e78ff22b9e4f"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit16CumulativeReviewTest",
+      "method": "heldUnit16WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "34220fc4acbbfe5a59a26f7a611a5f443aaeb4d0caef6ee12095e78ff22b9e4f"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit16CumulativeReviewTest",
+      "method": "actualUnit16ContinueImperativeFormCueTeachingPracticeReturnAndAdvanceStayOnUnit16",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "34220fc4acbbfe5a59a26f7a611a5f443aaeb4d0caef6ee12095e78ff22b9e4f"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit20CumulativeReviewTest",
+      "method": "heldUnit20WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "1a560d412bbf05ae9cc7d001787a8b7fcc6c5d29722a558d0fb25c789785804b"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit20CumulativeReviewTest",
+      "method": "actualUnit20ContinueConditionalAgreementCueTeachingPracticeReturnAndAdvanceStayOnUnit20",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "1a560d412bbf05ae9cc7d001787a8b7fcc6c5d29722a558d0fb25c789785804b"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit20CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "1a560d412bbf05ae9cc7d001787a8b7fcc6c5d29722a558d0fb25c789785804b"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit20CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "1a560d412bbf05ae9cc7d001787a8b7fcc6c5d29722a558d0fb25c789785804b"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit17CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "478e0d4db1cf7566661e81c6408d95f081a8dee672551fe1fb5576527e43d9eb"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit17CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "478e0d4db1cf7566661e81c6408d95f081a8dee672551fe1fb5576527e43d9eb"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit17CumulativeReviewTest",
+      "method": "heldUnit17WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "478e0d4db1cf7566661e81c6408d95f081a8dee672551fe1fb5576527e43d9eb"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit17CumulativeReviewTest",
+      "method": "actualUnit17ContinueInstrumentalPluralCueTeachingPracticeReturnAndAdvanceStayOnUnit17",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "478e0d4db1cf7566661e81c6408d95f081a8dee672551fe1fb5576527e43d9eb"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26CumulativeReviewTest",
+      "method": "actualUnit26ContinueNameReplyCueTeachingPracticeReturnAndAdvanceStayOnUnit26",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "88deb6097c1202db21fbffe6a526c7abd914c9b9e5e24cbbb1658550b6a89592"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "88deb6097c1202db21fbffe6a526c7abd914c9b9e5e24cbbb1658550b6a89592"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26CumulativeReviewTest",
+      "method": "heldUnit26WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "88deb6097c1202db21fbffe6a526c7abd914c9b9e5e24cbbb1658550b6a89592"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit26CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "88deb6097c1202db21fbffe6a526c7abd914c9b9e5e24cbbb1658550b6a89592"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit25CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "cef0dc06aff50686e3082c96f98a457cf2c9932f2914ad4c0fa3ae6fce429b6c"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit25CumulativeReviewTest",
+      "method": "heldUnit25WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "cef0dc06aff50686e3082c96f98a457cf2c9932f2914ad4c0fa3ae6fce429b6c"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit25CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "cef0dc06aff50686e3082c96f98a457cf2c9932f2914ad4c0fa3ae6fce429b6c"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit25CumulativeReviewTest",
+      "method": "actualUnit25ContinueNegativeSentenceCueTeachingPracticeReturnAndAdvanceStayOnUnit25",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "cef0dc06aff50686e3082c96f98a457cf2c9932f2914ad4c0fa3ae6fce429b6c"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit27CumulativeReviewTest",
+      "method": "heldUnit27WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "5a5d0ac35a8ab8560740c06e47a4c01826d6e948a86ed1686a730696dce0b5ab"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit27CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "5a5d0ac35a8ab8560740c06e47a4c01826d6e948a86ed1686a730696dce0b5ab"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit27CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "5a5d0ac35a8ab8560740c06e47a4c01826d6e948a86ed1686a730696dce0b5ab"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit27CumulativeReviewTest",
+      "method": "actualUnit27ContinueAddressComponentCueTeachingPracticeReturnAndAdvanceStayOnUnit27",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "5a5d0ac35a8ab8560740c06e47a4c01826d6e948a86ed1686a730696dce0b5ab"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit18CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "4011336e318e9f6a0ab7830ac5497d616470155430ec9c2c9e64f7f4231a15ac"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit18CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "4011336e318e9f6a0ab7830ac5497d616470155430ec9c2c9e64f7f4231a15ac"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit18CumulativeReviewTest",
+      "method": "heldUnit18WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "4011336e318e9f6a0ab7830ac5497d616470155430ec9c2c9e64f7f4231a15ac"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit18CumulativeReviewTest",
+      "method": "actualUnit18ContinueQuestionMeaningCueTeachingPracticeReturnAndAdvanceStayOnUnit18",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "4011336e318e9f6a0ab7830ac5497d616470155430ec9c2c9e64f7f4231a15ac"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+      "method": "heldUnit28WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "3e0697ea3e6ca52eb3dc67ddfb4f6f2ac49f426b68c5f489f1ed104044a22e49"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "3e0697ea3e6ca52eb3dc67ddfb4f6f2ac49f426b68c5f489f1ed104044a22e49"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "3e0697ea3e6ca52eb3dc67ddfb4f6f2ac49f426b68c5f489f1ed104044a22e49"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit28CumulativeReviewTest",
+      "method": "actualUnit28ContinuePastPassiveMeaningCueTeachingPracticeReturnAndAdvanceStayOnUnit28",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "3e0697ea3e6ca52eb3dc67ddfb4f6f2ac49f426b68c5f489f1ed104044a22e49"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit24CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "03babeab0da4674408eefb699478ba203b94575dd2f6cfba08f0e2700125307f"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit24CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "03babeab0da4674408eefb699478ba203b94575dd2f6cfba08f0e2700125307f"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit24CumulativeReviewTest",
+      "method": "heldUnit24WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "03babeab0da4674408eefb699478ba203b94575dd2f6cfba08f0e2700125307f"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit24CumulativeReviewTest",
+      "method": "actualUnit24ContinuePeriodPositionCueTeachingPracticeReturnAndAdvanceStayOnUnit24",
+      "kind": "failure",
+      "messageBytes": 75,
+      "messageSha256": "3251d29e8c630c4ece9a2c81be5fc2d5058b7796af3033051ed3f96705d9febf",
+      "traceBytes": 1672,
+      "traceSha256": "03babeab0da4674408eefb699478ba203b94575dd2f6cfba08f0e2700125307f"
+    }
+  ]
+}

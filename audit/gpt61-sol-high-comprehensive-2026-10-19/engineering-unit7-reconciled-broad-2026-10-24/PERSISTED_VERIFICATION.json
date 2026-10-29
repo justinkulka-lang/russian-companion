@@ -1,0 +1,26 @@
+{
+  "verified": true,
+  "sourceCommit": "dcc9314889566ba6f4f22333e2c98b34e9c9dd64",
+  "testCounts": {
+    "reported": 1380,
+    "passed": 1379,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 1
+  },
+  "classes": 233,
+  "exitCode": 0,
+  "originalArchivesShaCrc": 66,
+  "conservedFiles": 7812,
+  "lint": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "releaseGateAttachment": "PASS",
+  "experimentalDirective": true,
+  "nativeRootCause": "UNCONFIRMED",
+  "completeSuite": false,
+  "testsExecutedByVerifier": 0
+}

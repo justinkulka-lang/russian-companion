@@ -1,0 +1,139 @@
+{
+  "selectors": [
+    "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest",
+    "dev.russiancompanion.release.ReleaseSourceDigestTest",
+    "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+    "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+    "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+    "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+    "dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest",
+    "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+    "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+    "dev.russiancompanion.v2.SavedReviewEntryLabelTest",
+    "dev.russiancompanion.v2.Unit5GrammarReviewUiTest",
+    "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+    "dev.russiancompanion.v2.CurrentPackHistoricalBackupTest",
+    "dev.russiancompanion.v2.Unit6PresentReviewTest",
+    "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+    "dev.russiancompanion.v2.Unit6PresentReviewUiTest",
+    "dev.russiancompanion.v2.Unit6WiderPolicyTest",
+    "dev.russiancompanion.v2.Unit7GenderReviewBaselineTest",
+    "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+    "dev.russiancompanion.v2.Unit7GenderReviewUiTest",
+    "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+    "dev.russiancompanion.v2.Unit7CurrentPrerequisiteHistoryTest",
+    "dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest",
+    "dev.russiancompanion.v2.Unit7BindingConservationTest",
+    "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+    "dev.russiancompanion.acceptance.AcceptanceBoundaryTest"
+  ],
+  "classes": 26,
+  "annotations": 124,
+  "rows": [
+    {
+      "testClass": "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest",
+      "annotations": 1
+    },
+    {
+      "testClass": "dev.russiancompanion.release.ReleaseSourceDigestTest",
+      "annotations": 14
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.BatchECapabilityResearchTest",
+      "annotations": 5
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest",
+      "annotations": 11
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.GapClosureDossierTest",
+      "annotations": 1
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest",
+      "annotations": 7
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest",
+      "annotations": 3
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.review.Unit1ReviewPackageTest",
+      "annotations": 7
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.review.UnitReviewPipelineTest",
+      "annotations": 7
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SavedReviewEntryLabelTest",
+      "annotations": 2
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewUiTest",
+      "annotations": 2
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+      "annotations": 4
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurrentPackHistoricalBackupTest",
+      "annotations": 3
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6PresentReviewTest",
+      "annotations": 2
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+      "annotations": 5
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6PresentReviewUiTest",
+      "annotations": 4
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6WiderPolicyTest",
+      "annotations": 7
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7GenderReviewBaselineTest",
+      "annotations": 2
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+      "annotations": 5
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7GenderReviewUiTest",
+      "annotations": 4
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "annotations": 8
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7CurrentPrerequisiteHistoryTest",
+      "annotations": 2
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest",
+      "annotations": 2
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7BindingConservationTest",
+      "annotations": 2
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "annotations": 5
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "annotations": 9
+    }
+  ],
+  "executed": false
+}

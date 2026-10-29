@@ -1,0 +1,27 @@
+{
+  "verified": true,
+  "sourceCommit": "cd2b1c91911040acb190147cf5966d0f23ba2a0d",
+  "counts": {
+    "reported": 1477,
+    "passed": 1476,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 1
+  },
+  "classes": 257,
+  "exitCode": 0,
+  "allPrior1458IdentitiesRetained": true,
+  "newUnit13Methods": 19,
+  "removed": 0,
+  "noMethodOrClassFilters": true,
+  "all63FollowupIdsIncluded": true,
+  "all12PriorFailedIdsRechecked": true,
+  "allPriorFailedIdsPassed": true,
+  "testFilesByteExact": 276,
+  "bindingsConserved": 155,
+  "archivesShaCrc": 74,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "completeSuite": false
+}

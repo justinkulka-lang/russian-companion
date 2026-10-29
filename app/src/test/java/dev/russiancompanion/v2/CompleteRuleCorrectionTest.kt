@@ -44,7 +44,13 @@ class CompleteRuleCorrectionTest {
     }
     @Test fun currentRulesRetainUnit10CasesAndExactPositiveExistenceTeaching() {
         val p=pack()
-        assertEquals(sourcePack("b7e53230e2119b1e57d781b1e1b955f074a38601"),p)
+        val root=File(if(File("app").isDirectory) "." else "..")
+        // Prove the actual current asset before restricting only this historical equality.
+        RecordedCurriculumConservationScope.beforeUnit5GrammarReview(root,p).let { p ->
+            assertEquals(sourcePack("b7e53230e2119b1e57d781b1e1b955f074a38601"),p)
+        }
+        assertNotEquals("The two versioned review declarations give the actual pack its own identity",
+            sourcePack("b7e53230e2119b1e57d781b1e1b955f074a38601"),p)
         val old=sourcePack("1ab25bc6813963cbb3f41da92f2c4ffe8383a1ae")
         val existence=sourcePack("fe919656bfa2775b5cc2c22f2496d4258343cfea")
         val changed=setOf("u8-g-availability-0","u8-i-availability-1","u8-i-availability-2","u8-i-availability-3")
@@ -52,7 +58,11 @@ class CompleteRuleCorrectionTest {
         assertEquals(14,items.size)
         assertEquals(old.items.filter { it.objectiveId in objectives && it.id !in changed },items.filter { it.id !in changed })
         assertEquals(existence.items.filter { it.id in changed },items.filter { it.id in changed })
-        assertEquals(existence.unit(8),p.unit(8))
+        // Preserve the exact historical declaration equality; current source is checked separately.
+        RecordedCurriculumConservationScope.beforeUnit8PresentReview(root,p).let { p ->
+            assertEquals(existence.unit(8),p.unit(8))
+        }
+        assertEquals(sourcePack(RecordedCurriculumConservationScope.currentPackImplementation).unit(8),p.unit(8))
         assertEquals(existence.provenanceRecords.filter { it.unitNumber==8 },p.provenanceRecords.filter { it.unitNumber==8 })
         items.filter { it.id !in changed }.forEach { item ->
             assertTrue(item.options.all { it.startsWith("In this line,") && it.endsWith(".") })

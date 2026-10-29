@@ -1,0 +1,12 @@
+{
+  "CONTEXT.json": "288b3b0fd0aaeb00b2c99f2f5f9cb6ec76b2d80a69da0f8afff8473a51f0bd42",
+  "EVENTS.jsonl": "50cfa36dc103b666beab3954ddeea6896a07247846fd405a14723f1f64936cb6",
+  "LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
+  "RESULT.json": "76703ddaabcb900475362f6dd5b9dc2eed70bc55e96645d92d2bd9058130a7ef",
+  "RESULTS.csv": "728336b0aca459aa46c984628156d68b0afef022e3d3d21400bcf1b0912dca2b",
+  "RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+  "RUN.log": "e00cea16ce95844e15f80dc2fc3489f50c6721b54f814115d985deae9e4daff5",
+  "XML/TEST-dev.russiancompanion.v2.Units610InstructionalValidityTest.xml": "51160de3bf9fb8f35a0e5576c3ffedd1f93c5c5f01b5481383158e8b364227ae",
+  "XML/TEST-dev.russiancompanion.v2.V2InsetsAccessibilityTest.xml": "3405ba255057c5c154070252a32db383269801c2009e0f13c81e2ea647f60749",
+  "gc-60688.log": "7e873e26c34ff1e3610bcf8a55409c5a7bf263f8c84ca62f520214990cdd0165"
+}

@@ -1,0 +1,111 @@
+{
+  "sourceCommit": "1d96cb4e89768f69246960e263d9b51412a3b9f4",
+  "reusedObservation": "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit10-present-correction-2026-10-25/CURRENT_POLICY_OBSERVATION.json",
+  "observationSha256": "5c09bc544590e89c1fd7ae83d87efa167bf7dc7f3c1ccf1d7dd255ad34b0cfe2",
+  "producerSource": "85e7eaf21335a107d64b99a4f1969bab4f74670d",
+  "appMainTreeMatches": true,
+  "currentUnit11": {
+    "unit": 11,
+    "id": "unit11-prior-reading-possession-absence-v1",
+    "digest": "3f2f9200528b5a16e313a5f5bda9084dd31098042fed52e5c4263cf687bd20ce",
+    "schema": 1,
+    "pools": 2
+  },
+  "currentPools": [
+    {
+      "unit": 11,
+      "slot": 0,
+      "objective": "obj-u1-decoding",
+      "skill": "BOUNDED_READING",
+      "remediationStep": "",
+      "items": [
+        "u1-i-decode-pair"
+      ]
+    },
+    {
+      "unit": 11,
+      "slot": 1,
+      "objective": "obj-u10-have",
+      "skill": "SUPPLIED_POSSESSION_ABSENCE_RECOGNITION",
+      "remediationStep": "u10-st-rem-have",
+      "items": [
+        "u10-i-have-4"
+      ]
+    }
+  ],
+  "proposedPools": [
+    {
+      "unit": 11,
+      "slot": 0,
+      "objective": "obj-u5-indeclinable",
+      "skill": "SUPPLIED_NOUN_BEHAVIOR_RECOGNITION",
+      "remediationStep": "u5-st-rem-indeclinable",
+      "items": [
+        "u5-i-indecl-такси",
+        "u5-i-indecl-метро",
+        "u5-i-indecl-кино",
+        "u5-i-decl-книга",
+        "u5-i-decl-окно"
+      ]
+    },
+    {
+      "unit": 11,
+      "slot": 1,
+      "objective": "obj-u10-have",
+      "skill": "SUPPLIED_POSSESSION_ABSENCE_RECOGNITION",
+      "remediationStep": "u10-st-rem-have",
+      "items": [
+        "u10-i-have-1",
+        "u10-i-have-2",
+        "u10-i-have-3",
+        "u10-i-have-4"
+      ]
+    }
+  ],
+  "registeredPolicyObjects": [
+    "Unit3CumulativeReviewPolicy",
+    "Unit4CumulativeReviewPolicy",
+    "Unit5CumulativeReviewPolicy",
+    "Unit5GrammarCumulativeReviewPolicy",
+    "Unit6CumulativeReviewPolicy",
+    "Unit6WiderCumulativeReviewPolicy",
+    "Unit6PresentCumulativeReviewPolicy",
+    "Unit7CumulativeReviewPolicy",
+    "Unit7GenderCumulativeReviewPolicy",
+    "Unit8CumulativeReviewPolicy",
+    "Unit8PresentCumulativeReviewPolicy",
+    "Unit9CumulativeReviewPolicy",
+    "Unit9WiderCumulativeReviewPolicy",
+    "Unit9NounBehaviorCumulativeReviewPolicy",
+    "Unit10CumulativeReviewPolicy",
+    "Unit10PresentCumulativeReviewPolicy",
+    "Unit11CumulativeReviewPolicy",
+    "Unit12CumulativeReviewPolicy",
+    "Unit13CumulativeReviewPolicy",
+    "Unit13WiderCumulativeReviewPolicy",
+    "Unit14CumulativeReviewPolicy",
+    "Unit15CumulativeReviewPolicy",
+    "Unit16CumulativeReviewPolicy",
+    "Unit17CumulativeReviewPolicy",
+    "Unit18CumulativeReviewPolicy",
+    "Unit19CumulativeReviewPolicy",
+    "Unit20CumulativeReviewPolicy",
+    "Unit21CumulativeReviewPolicy",
+    "Unit22CumulativeReviewPolicy",
+    "Unit23CumulativeReviewPolicy",
+    "Unit24CumulativeReviewPolicy",
+    "Unit25CumulativeReviewPolicy",
+    "Unit26CumulativeReviewPolicy",
+    "Unit27CumulativeReviewPolicy",
+    "Unit28CumulativeReviewPolicy",
+    "Unit29CumulativeReviewPolicy",
+    "Unit30CumulativeReviewPolicy"
+  ],
+  "currentCounts": {
+    "activePolicies": 28,
+    "objectivePools": 59,
+    "candidatePlacements": 96,
+    "uniqueCandidateItems": 48,
+    "printSingletonPolicies": 22
+  }
+}

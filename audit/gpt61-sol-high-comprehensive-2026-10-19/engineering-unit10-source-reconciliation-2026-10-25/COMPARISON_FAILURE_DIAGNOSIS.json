@@ -1,0 +1,29 @@
+[
+  {
+    "identity": "Unit9BindingConservationTest > kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord",
+    "messagePrefix": "java.lang.AssertionError: expected:<4> but was:<5>",
+    "fullMessageBytes": 50,
+    "fullMessageSha256": "6cbf0782c8f2adf1c05b912a67df90361d13c7d4a650906261f76ea916ca5de4",
+    "expectedBytes": 1,
+    "actualBytes": 1,
+    "onlyUnit10PolicyTokenDiffers": false,
+    "expectedNewTokens": 0,
+    "expectedOldTokens": 0,
+    "actualNewTokens": 0,
+    "actualOldTokens": 0,
+    "expected": "4",
+    "actual": "5"
+  },
+  {
+    "identity": "Unit9BindingConservationTest > currentDeclarationReconstructsOnlyUnit9ThenEveryGenuineEarlierPack",
+    "messagePrefix": "java.lang.AssertionError: expected:<[V2Unit(number=1, id=unit-1, title=Learning to read Russian, shortLabel=Printed letters, topicSummary=Content-complete development unit for prin",
+    "fullMessageBytes": 47715,
+    "fullMessageSha256": "a91348763e816abdcd8a4e14eda26371bc7769a93e41ae1a59b1b2d416d62773"
+  },
+  {
+    "identity": "Unit9NounBehaviorCompatibilityTest > exactPriorV2DeclarationRefusesSchemaElevenAndPreservesOwnerNineDownstream",
+    "messagePrefix": "java.lang.AssertionError: expected:<V2CurriculumPack(schemaVersion=1, packId=v2-curriculum-foundation, packVersion=3, publicReleaseEligible=false, linguisticReview=V2ReviewRecord(i",
+    "fullMessageBytes": 493728,
+    "fullMessageSha256": "6b2861cc98b05c5470ad3dce7ff773698710af49460d8a1bc9767a5bdf37c88b"
+  }
+]

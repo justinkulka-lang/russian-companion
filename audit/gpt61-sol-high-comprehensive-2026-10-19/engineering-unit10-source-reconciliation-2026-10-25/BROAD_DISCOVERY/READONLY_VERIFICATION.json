@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "sourceCommit": "feba673c885d0dddc7c267a241355688a914ac38",
+  "syntheticSkips": 1425,
+  "classes": 245,
+  "all1410EarlierMethodsPreserved": true,
+  "added": 15,
+  "removed": 0,
+  "runtimeTestsExecuted": 0,
+  "broadRuntime": "PREPARED_NOT_LAUNCHED"
+}

@@ -1,0 +1,265 @@
+{
+  "sourceCommit": "d72afd1232857a857624c20c58f4bcd3cb5c8564",
+  "inputTrees": {
+    "app/src/main": "e8434cfe2b18d483ee27be79aba461add2544f38",
+    "app/src/test": "a44658c707d02786ffc27ec4d62e813922e9eabd",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "cd675aa8a3ad33a90d9001fe6f67b2de2e5d7ac7",
+    "release": "9d9047b8297cba1d5855a7f7809c441b2f8edcf7"
+  },
+  "syntheticDryRun": false,
+  "exitCode": 0,
+  "finishedUtc": "2026-10-28T14:59:40.624466+00:00",
+  "testCounts": {
+    "reported": 20,
+    "passed": 20,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 3,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "wrongSchemasTargetsResponseRolesAndReplacementEpochCannotBorrowNewCredit",
+      "outcome": "PASSED",
+      "seconds": "14.921",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "allTwentyFourAllocationsUseGovernedMissesIgnoringPracticeMalformedAndDuplicateOrders",
+      "outcome": "PASSED",
+      "seconds": "38.496",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "assignedMissSurvivesOrdinaryCorrectionIdempotenceRollbackBackupReopenAndLateAnswer",
+      "outcome": "PASSED",
+      "seconds": "24.975",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "eachMissingOwnerOrChangedItemAndInstructionRefusesFreshAndSavedTasks",
+      "outcome": "PASSED",
+      "seconds": "8.324",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "exactPriorDeclarationRefusesNewSchemaAndCompiledObservationRecordsBoundedPools",
+      "outcome": "PASSED",
+      "seconds": "4.489",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "genuineUnit15OldOwner14PartialReopensCompletesAndActuallyAdvances16",
+      "outcome": "PASSED",
+      "seconds": "10.932",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "genuineCompletedV1RetainsCompletionDespiteLateWrongAnswerAndReplacement",
+      "outcome": "PASSED",
+      "seconds": "8.685",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "genuineV1PartialCompletesAndRoundtripsWithoutRelabelling",
+      "outcome": "PASSED",
+      "seconds": "8.034",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "existingOwner13V1AndV2BridgesStillSupportOldUnit14TasksWithoutRelabelling",
+      "outcome": "PASSED",
+      "seconds": "58.354",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "method": "exactOldOwner14SupportRefusesUnrelatedContentRulesAndObsoleteTeaching",
+      "outcome": "PASSED",
+      "seconds": "0.929",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest",
+      "method": "actualCurrentV1AndDownstreamUnit15RoundtripReopenAndCompleteTheirOwnObligations",
+      "outcome": "PASSED",
+      "seconds": "71.164",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest",
+      "method": "earlierPluralPossessionAndOptionalAnswersCannotReplaceFreshAssignedDueAnswers",
+      "outcome": "PASSED",
+      "seconds": "40.575",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "genuineCompletedV1DetailRetainsOldTitleAndTwoOfTwoAnswers",
+      "outcome": "PASSED",
+      "seconds": "5.131",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "genuinePartialV1EntryAndContinueRetainOldTitleAndOneOfTwoAnswers",
+      "outcome": "PASSED",
+      "seconds": "4.289",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "actualReportedTimeRepairRestoresAllTeachingAndReturnsWithoutDueCreditThenAdvances",
+      "outcome": "PASSED",
+      "seconds": "22.587",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "actuallyCompletedUnit8DoesNotHideMissingUnit10And13OrCreateReviewCredit",
+      "outcome": "PASSED",
+      "seconds": "7.719",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "actualPluralRepairRestoresAllTeachingAndReturnsWithoutDueCreditThenAdvances",
+      "outcome": "PASSED",
+      "seconds": "21.858",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "freshDetailEntryAndUnstartedReviewUseDeclaredPluralPossessionTitle",
+      "outcome": "PASSED",
+      "seconds": "4.535",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "actualPossessionRepairRestoresAllTeachingAndReturnsWithoutDueCreditThenAdvances",
+      "outcome": "PASSED",
+      "seconds": "21.541",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "method": "unpreparedFiniteReviewRoutesToAllThreeOwnersWithoutCredit",
+      "outcome": "PASSED",
+      "seconds": "0.128",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+      "tests": "10",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-28T14:53:15.191Z",
+      "hostname": "139038e4205c",
+      "time": "179.176"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-28T14:53:15.142Z",
+      "hostname": "139038e4205c",
+      "time": "112.709"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+      "tests": "8",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-28T14:56:14.391Z",
+      "hostname": "139038e4205c",
+      "time": "87.799"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": {
+    "sameInputTrees": true,
+    "discoveredNotReported": [],
+    "reportedNotDiscovered": [],
+    "exactSameMethodSet": true
+  },
+  "allFreshSelectedMethodsReported": true,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}

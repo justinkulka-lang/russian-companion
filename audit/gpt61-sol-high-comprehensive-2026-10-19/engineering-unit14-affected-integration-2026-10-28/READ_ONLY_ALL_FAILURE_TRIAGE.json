@@ -1,0 +1,184 @@
+{
+  "sourceCommit": "dd736e1a8657bd02a34063752afd82146ab2f842",
+  "status": "READ_ONLY_PARTIAL_TRIAGE_NOT_FINAL_RESULT_NO_FIXES_OR_WAIVERS",
+  "observedFailures": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13BindingConservationTest",
+      "method": "kernelReferenceChangesOnlyItsExactHashAndAppendsPendingEngineeringRecord",
+      "exceptionType": "java.lang.AssertionError",
+      "messageBytes": 24,
+      "messageSha256": "7f0f9883e76d144422b1838e702b77c0a2f291eb71a72f15de548c13ea001b5b",
+      "exactEqualityAfterOnlyOldToNewUnit14DeclarationSubstitution": false,
+      "priorDeclarationOccurrencesExpected": 0,
+      "newDeclarationOccurrencesActual": 0,
+      "message": "expected:<8> but was:<9>",
+      "declarationOccurrences": {
+        "expectedOld": 0,
+        "expectedNew": 0,
+        "actualOld": 0,
+        "actualNew": 0
+      },
+      "exactEqualityAfterOnlyNewToOldUnit14DeclarationSubstitution": false
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13BindingConservationTest",
+      "method": "currentDeclarationReconstructsOnlyUnit13ThenEveryGenuineEarlierPack",
+      "exceptionType": "java.lang.AssertionError",
+      "messageBytes": 2044464,
+      "messageSha256": "408a5c84ac5daa1e4dc592369f3c4acef01fbb4509f531352a1583e292da206b",
+      "exactEqualityAfterOnlyOldToNewUnit14DeclarationSubstitution": false,
+      "priorDeclarationOccurrencesExpected": 0,
+      "newDeclarationOccurrencesActual": 0,
+      "declarationOccurrences": {
+        "expectedOld": 0,
+        "expectedNew": 1,
+        "actualOld": 1,
+        "actualNew": 0
+      },
+      "exactEqualityAfterOnlyNewToOldUnit14DeclarationSubstitution": true
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15CumulativeReviewTest",
+      "method": "actualUnit15ContinueImpersonalStateCueTeachingPracticeReturnAndAdvanceStayOnUnit15",
+      "exceptionType": "java.lang.IllegalStateException",
+      "messageBytes": 42,
+      "messageSha256": "ab505a443fd3c9a7137b9b29cfc34467d93a40aaecd6db97fdad0644d6a5f20d",
+      "message": "current advancement evidence is incomplete"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "exceptionType": "java.lang.IllegalStateException",
+      "messageBytes": 42,
+      "messageSha256": "ab505a443fd3c9a7137b9b29cfc34467d93a40aaecd6db97fdad0644d6a5f20d",
+      "message": "current advancement evidence is incomplete"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "exceptionType": "java.lang.IllegalStateException",
+      "messageBytes": 42,
+      "messageSha256": "ab505a443fd3c9a7137b9b29cfc34467d93a40aaecd6db97fdad0644d6a5f20d",
+      "message": "current advancement evidence is incomplete"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit15CumulativeReviewTest",
+      "method": "heldUnit15WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "exceptionType": "java.lang.IllegalStateException",
+      "messageBytes": 42,
+      "messageSha256": "ab505a443fd3c9a7137b9b29cfc34467d93a40aaecd6db97fdad0644d6a5f20d",
+      "message": "current advancement evidence is incomplete"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PresentCompatibilityTest",
+      "method": "exactPriorDeclarationsRefuseNewTasksAndPreserveBothUnit14OwnerBindings",
+      "exceptionType": "java.lang.AssertionError",
+      "messageBytes": 62178611,
+      "messageSha256": "ca3d9dd9962793cb491012201aab22ade2f1dac12924db2ff34e5bc1559637d7",
+      "exactEqualityAfterOnlyOldToNewUnit14DeclarationSubstitution": true,
+      "priorDeclarationOccurrencesExpected": 1,
+      "newDeclarationOccurrencesActual": 1,
+      "declarationOccurrences": {
+        "expectedOld": 1,
+        "expectedNew": 0,
+        "actualOld": 0,
+        "actualNew": 1
+      },
+      "exactEqualityAfterOnlyNewToOldUnit14DeclarationSubstitution": false
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "exceptionType": "java.lang.AssertionError",
+      "messageBytes": 104,
+      "messageSha256": "aba245b461af87f4a5bb9ffb34d96aec12a290b155c6dee599b99b21593a1610",
+      "exactEqualityAfterOnlyOldToNewUnit14DeclarationSubstitution": false,
+      "priorDeclarationOccurrencesExpected": 0,
+      "newDeclarationOccurrencesActual": 0,
+      "message": "expected:<[obj-u1-decoding, obj-u13-reported]> but was:<[obj-u8-plural, obj-u10-have, obj-u13-reported]>",
+      "declarationOccurrences": {
+        "expectedOld": 0,
+        "expectedNew": 0,
+        "actualOld": 0,
+        "actualNew": 0
+      },
+      "exactEqualityAfterOnlyNewToOldUnit14DeclarationSubstitution": false
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "exceptionType": "java.lang.AssertionError",
+      "messageBytes": null,
+      "messageSha256": null
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14CumulativeReviewTest",
+      "method": "actualUnit14ContinueReportedTimeCueTeachingPracticeReturnAndAdvanceStayOnUnit14",
+      "exceptionType": "org.gradle.internal.serialize.PlaceholderException",
+      "messageBytes": 75,
+      "messageSha256": "da3a2c1aed495830bd815da49df5ae5a02210ae5e1f2d754cda52ed5550e71ff",
+      "message": "Condition (v2-example-ex-u13-reported-3) still not satisfied after 30000 ms"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit13RepairsTheMissingOwnerInsteadOfUnit1",
+      "exceptionType": "java.lang.AssertionError",
+      "messageBytes": 677,
+      "messageSha256": "627295da71f5ec6879b79127ce152e2c568f830d399155d9789833f8f00f228d",
+      "message": "Failed to assert the following: (Text + EditableText = [Open earlier Unit 13 instruction and checks])\nSemantics of the node:\nNode #1111 at (l=24.0, t=148.0, r=296.0, b=200.0)px, Tag: 'v2-review-repair'\nFocused = 'false'\nRole = 'Button'\nShape = 'RoundedCornerShape(topStart = CornerSize(size = 50.0%), topEnd = CornerSize(size = 50.0%), bottomEnd = CornerSize(size = 50.0%), bottomStart = CornerSize(size = 50.0%))'\nText = '[Open earlier Unit 8 instruction and checks]'\nActions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]\nMergeDescendants = 'true'\nHas 4 siblings\nSelector used: (TestTag = 'v2-review-repair')\n"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14ImpersonalRemediationTest",
+      "method": "allThreeStateCardsPrecedePracticeAndRepairRestoresEveryExample",
+      "exceptionType": "java.lang.AssertionError",
+      "messageBytes": 34542,
+      "messageSha256": "6f58f71a8a4694bf80a5563c4d72e2ea0ea09ebb59ec80efcf85d03a76ef034d",
+      "exactEqualityAfterOnlyOldToNewUnit14DeclarationSubstitution": true,
+      "priorDeclarationOccurrencesExpected": 1,
+      "newDeclarationOccurrencesActual": 1,
+      "declarationOccurrences": {
+        "expectedOld": 1,
+        "expectedNew": 0,
+        "actualOld": 0,
+        "actualNew": 1
+      },
+      "exactEqualityAfterOnlyNewToOldUnit14DeclarationSubstitution": false
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "structuralMappingsMatchTheOwnedEditionObservations",
+      "exceptionType": "org.gradle.internal.serialize.PlaceholderAssertionError",
+      "messageBytes": 162,
+      "messageSha256": "3593e34bf1581a60c5f27be5840133ee566e05584ef50ae3fcee1a173efbaecb",
+      "exactEqualityAfterOnlyOldToNewUnit14DeclarationSubstitution": false,
+      "priorDeclarationOccurrencesExpected": 0,
+      "newDeclarationOccurrencesActual": 0,
+      "message": "unit 14 expected:<[9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38]> but was:<[5b42bce13ad71142cbd536373d7ac5a3906839e0bc61ed9a69abecb10bbca171]>",
+      "declarationOccurrences": {
+        "expectedOld": 0,
+        "expectedNew": 0,
+        "actualOld": 0,
+        "actualNew": 0
+      },
+      "exactEqualityAfterOnlyNewToOldUnit14DeclarationSubstitution": false
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+      "exceptionType": "org.gradle.internal.serialize.PlaceholderAssertionError",
+      "messageBytes": 162,
+      "messageSha256": "3593e34bf1581a60c5f27be5840133ee566e05584ef50ae3fcee1a173efbaecb",
+      "exactEqualityAfterOnlyOldToNewUnit14DeclarationSubstitution": false,
+      "priorDeclarationOccurrencesExpected": 0,
+      "newDeclarationOccurrencesActual": 0,
+      "message": "unit 14 expected:<[9e136e9af2fe3611d6862fa46e3217f85ad45c8b23ad622eec6f36e48ab97f38]> but was:<[5b42bce13ad71142cbd536373d7ac5a3906839e0bc61ed9a69abecb10bbca171]>",
+      "declarationOccurrences": {
+        "expectedOld": 0,
+        "expectedNew": 0,
+        "actualOld": 0,
+        "actualNew": 0
+      },
+      "exactEqualityAfterOnlyNewToOldUnit14DeclarationSubstitution": false
+    }
+  ]
+}

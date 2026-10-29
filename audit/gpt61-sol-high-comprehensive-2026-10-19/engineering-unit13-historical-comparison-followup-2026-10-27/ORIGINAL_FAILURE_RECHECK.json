@@ -1,0 +1,38 @@
+{
+  "sourceCommit": "8e417f211050a5283b12ff93f0e6a4f30f830418",
+  "rechecked": [
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit12RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13PastTeachingTest",
+      "method": "completePastTeachingPrecedesPracticeAndRepairRestoresAllFiveExamples",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units1620SourceIntakeTest",
+      "method": "structuralMappingsMatchTheOwnedEditionObservations",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit13ContextTeachingTest",
+      "method": "bothChainsTeachBeforePracticeAndRepairEveryOriginalExample",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+      "outcome": "PASSED"
+    }
+  ],
+  "allSixIdentitiesRechecked": true,
+  "allSixPassed": true,
+  "originalInterruptedFailureEvidenceUnchanged": true
+}

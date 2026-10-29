@@ -1,0 +1,33 @@
+{
+  "deliveryStatus": "REPORT_FINDING_REGISTER_ADDENDUM_AND_REQUESTS_59_70_RECEIVED; REQUEST_HEADER_AND_1_58_MISSING",
+  "attachment": {
+    "sedimentFileId": "file_0000000030b081f8822d1c824d872d10",
+    "bytes": 52917,
+    "sha256": "36f13669247d224489b33bf379bf051979451fe0ed58639876f3ab5d88ac444f"
+  },
+  "findingRows": 48,
+  "uniqueOrderedIds": "CC001-CC048",
+  "allOriginalSeveritiesAndStatusesMatch": true,
+  "allIndependentClosuresNotClosed": true,
+  "findingStateCountsMatchReceivedJson": {
+    "PARTIAL_ENGINEERING_EVIDENCE": 5,
+    "OPEN_ENGINEERING_GAP": 33,
+    "CODE_CHANGE_PRESENT_VERIFICATION_GAP": 5,
+    "UNVERIFIED": 5
+  },
+  "previousReceiptBytesConserved": true,
+  "receivedRequestRows": "59-70",
+  "missingRequestRows": "header and 1-58",
+  "engineeringDispositionsIndependentlyAccepted": false,
+  "addendumDisposition": "Acknowledges retained assignment schemas 7-15. Further distinction needed between ZIP payload evidence, separate runtime import/replacement/reopen evidence, and current-input equivalence. Absence of logs inside a learner ZIP does not establish absence of retained runtime proof.",
+  "nextBoundedReview": [
+    "Receive execution-map header and rows 1-58",
+    "Reconcile reported verification gaps against actual retained engineering reports, raw runtime identities and scenario bodies without closing findings",
+    "Resolve correction_commits descriptions into exact SHAs in a separate derived addendum"
+  ],
+  "repositoryMutation": false,
+  "testExecution": false,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "Outstanding and LAST"
+}

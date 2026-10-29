@@ -947,7 +947,13 @@ class V2RebuildTest {
         assertEquals("1ebcde1ebabf867b08e137a96bf30f56cccbb0ea85cfd8ecb54cee463a79bf11", V2Validator.unitContentReviewDigest(historical, 4))
         RecordedCurriculumConservationScope.assertHistoricalPinsAndCurrentUnits(repo(), pack,
             mapOf(4 to V2Validator.unitContentReviewDigest(historical, 4)))
-        assertEquals("3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141", V2Validator.unitContentReviewDigest(pack, 5))
+        // Preserve the original Unit5 pin on the exact, independently proven pre-review pack.
+        // The outer pack remains current for every mapping and mutation safeguard below.
+        val precedingReviews = RecordedCurriculumConservationScope.beforeUnit5GrammarReview(repo(), pack)
+        precedingReviews.let { pack ->
+            assertEquals("3c9149de87feeda96f64e195f3dab0428700049f3a7342e4ba764191a16db141", V2Validator.unitContentReviewDigest(pack, 5))
+        }
+        assertNotEquals(V2Validator.unitContentReviewDigest(precedingReviews, 5), V2Validator.unitContentReviewDigest(pack, 5))
         assertEquals("e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4", V2Validator.contentReviewDigest(historical))
         assertNotEquals(V2Validator.contentReviewDigest(historical), V2Validator.contentReviewDigest(pack))
         val seed = File(repo(), "app/src/main/assets/content/v2-curriculum.json").readText()

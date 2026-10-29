@@ -1,0 +1,17 @@
+{
+  "sourceCommit": "1d96cb4e89768f69246960e263d9b51412a3b9f4",
+  "sourceRootTree": "81e880823f2f6ccff30dac0b72cc6794cb1aa7b8",
+  "inputTrees": {
+    "app/src/main": "f6ae9312cae954b9b16cd61f267069f9c961b5b8",
+    "app/src/test": "2680ec7a78e88c5b88365ad34893573e535e319f",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "5a43caa0bfc259bd2a76289a71b594db9092da8d",
+    "release": "31938253a0ef74d2f15e2abbcca156d3e9567658"
+  },
+  "rawCurriculumSha256": "dff8911d786a157b594d2b1d658b9d4132ffd2283f3cb2c3b124bcec9ec0d7d6",
+  "kernelSha256": "a928edebf26764cdcd48c2e68a9f141da536a4e427e3b0e04c7d5066cc09c11e",
+  "authoritySha256": "2736372535c82dc5a2c5ac42ab42fad0756169095f799da758c36c88f9b2af4c",
+  "privatePdf": "NOT_READ_OR_PACKAGED",
+  "newRuntimeMethods": 0
+}

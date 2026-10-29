@@ -1,0 +1,294 @@
+{
+  "basis": "Actual methods/outcomes within the completed broad run, not a separate focused execution.",
+  "sourceCommit": "b07432aada33a636d1ab547f8537da02208649ec",
+  "classes": [
+    "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+    "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+    "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+    "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+    "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+    "dev.russiancompanion.v2.Unit7CurrentPrerequisiteHistoryTest",
+    "dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest",
+    "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+    "dev.russiancompanion.v2.Units610SourceIntakeTest"
+  ],
+  "methods": 54,
+  "outcomes": {
+    "SKIPPED": 1,
+    "PASSED": 38,
+    "FAILED": 15
+  },
+  "methodIdentities": [
+    {
+      "testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "at020_physicalRebootPersistsGovernedRecords",
+      "outcome": "SKIPPED"
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "at029_aSingleNoAnswerRejectsTheProposal",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "at010_onlyCompatibleMatchedAudioIsIncluded",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "at017_at024_optionalDrillsAreNotGateEvidenceAndDoNotShip",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "at001_at003_at011_at028_userFacingCopyStaysInsideTheBeginnerCompanion",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "at005_packagedSurfaceHasNoNetworkAccountOrSpeechRecognizer",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "at023_ankiDroidStaysOutsideTheApp",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.AcceptanceBoundaryTest",
+      "method": "acceptanceProceduresStayClassifiedWithoutApprovingRelease",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "method": "changedMovedAndMissingComparisonFilesRemainBlocked",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "method": "coherentSourceForgeryAndRemovedItemIdsCannotKeepUnchangedCodeAdmitted",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "method": "exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest",
+      "method": "newUiResourceAndCurriculumTextCannotBorrowAnExistingLiteral",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+      "method": "completeChoicesExplainTheCasesAndAllTeachingPrecedesPractice",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+      "method": "historicalFragmentAttemptIsRetainedButCannotCreditTheCompleteRule",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+      "method": "coordinatedKeyAndApplicationEditsCannotReverseTheFrozenContext",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+      "method": "availabilityPlayerShowsCompleteRulesWithItsFullRussianCue",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+      "method": "currentRulesRetainUnit10CasesAndExactPositiveExistenceTeaching",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CompleteRuleCorrectionTest",
+      "method": "possessionPlayerShowsCompleteRulesWithItsFullRussianCue",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "schema11OrdinaryLegacyRowsWithFalseActivationMarkerSurviveReopenWithoutSyntheticReview",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "actualUnit6ContinueNounBehaviorCueTeachingPracticeReturnAndAdvanceStayOnUnit6",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "oldFormatOneAndTwoRestoreExactPrePolicyWorkWithoutAnyNewReviewCredit",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "placementWithTaughtUnit1ButUntaughtUnit5RepairsTheMissingOwnerInsteadOfUnit1",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit6CumulativeReviewTest",
+      "method": "heldUnit6WriteRejectsReplacementEpochEvenWhenNewLearnerStillHasEligibleTeaching",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "method": "wrongNominativeChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "method": "completeAgreementTeachingPrecedesPracticeAndRepairRestoresAllElevenExamples",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "method": "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "method": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "method": "oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "method": "unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "method": "oldPrescribedAttemptsStayStoredButCannotCreditChangedUnitInstruction",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7AgreementTeachingTest",
+      "method": "wrongGenitiveChoiceRestoresCompleteRepairAndRequiresFreshIndependentAnswer",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7CurrentPrerequisiteHistoryTest",
+      "method": "staleUnit4PrerequisiteRefusesUnit7ReviewUntilFreshRepairWithoutRelabellingHistory",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7CurrentPrerequisiteHistoryTest",
+      "method": "allEightOriginalBackupsReopenUnchangedButCurrentCreditStopsAtStaleUnit4",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest",
+      "method": "originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest",
+      "method": "oldAcceptedWorkAndResumeStayStoredThroughBackupReopenButNeedCurrentWork",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "partialStrandsDoNotClearBroadClaimsAndOptionalMaterialDoesNotGate",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "forgedMutableWrongAndExcludedSourcesStayClosed",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "readingAndCorrespondenceExperiencesFailClosed",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "wikipediaLicenseRouteIsNotTheWikibooksSnapshot",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "presentPassiveGlossFollowsOnlyTheExplicitParenthetical",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "neighboringSpansKeywordsAndInactiveVariancesStayClosed",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "admittedCapabilitiesBindSpanUnitObjectiveAndClaim",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "generatedRussianPenguinAudioAndReleaseStayClosed",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "retainedSourceBytesMatchTheFrozenIdentityTwice",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units2630SourceIntakeTest",
+      "method": "duplicateSpanMarkersFailClosed",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "unitsSixThroughTenStayReviewPendingAndSourceBound",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "retainedSourceBytesMatchImmutableRevisions",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "wrongUnitPacketSubstitutionFails",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "earlierUnitDigestsStayPutAndLaterUnitsStayIsolated",
+      "outcome": "FAILED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "governedContrastsStaySourceBoundAndBookAttestationDoesNotAdvance",
+      "outcome": "PASSED"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Units610SourceIntakeTest",
+      "method": "noPenguinAudioOrNetworkWasAdded",
+      "outcome": "PASSED"
+    }
+  ],
+  "futureDiscoveryRequired": true
+}

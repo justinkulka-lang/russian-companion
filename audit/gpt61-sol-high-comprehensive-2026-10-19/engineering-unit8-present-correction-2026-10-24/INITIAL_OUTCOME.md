@@ -1,0 +1,3 @@
+# Initial Unit8 core result
+
+77e3d26eab138796a699d9133e45e4f793e95cc1:12reported/11passed/1failed/0errors/0skipped,3fullclasses,exit1. Wholebaseline2/2andcompatibility5/5passed. FourUIcontrols passed; newunpreparedscopeassert failed because it expects contiguous"These finite recognitions do not demonstrate unseen reading",butnewcopylists productiveconjugationfirst. No scope meaning mismatch, source/selection/history defect claimed. Original test assertions/wholefile archived and unchanged. Next: reorder onlynewUIcopydisclaimer, then fresh12method full-class discovery/runtime. Preservefirst12scope asfailing; do not relabel it afterfollowup.

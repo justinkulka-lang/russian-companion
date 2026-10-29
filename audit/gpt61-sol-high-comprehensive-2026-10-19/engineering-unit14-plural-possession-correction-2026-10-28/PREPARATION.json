@@ -1,0 +1,79 @@
+{
+  "baselineSourceCommit": "f670c24e04def2829a7949e83b91b83a0dedf338",
+  "inputTrees": {
+    "app/src/main": "aeeb035f6017bf70852fd7fb2b6aec42789eebed",
+    "app/src/test": "1ccdd88a167d9c6248b9ea5a98ba05fc565b1a29",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "cd675aa8a3ad33a90d9001fe6f67b2de2e5d7ac7",
+    "release": "9d9047b8297cba1d5855a7f7809c441b2f8edcf7"
+  },
+  "changedMainFiles": {
+    "app/src/main/assets/content/v2-curriculum.json": {
+      "before": "765f06b3719192a5b0f19df553e3a5f20d00e2e7eb42130c908ceac15e4a9acf",
+      "after": "02202d37e0aa2c51182e4db22feff177124b6db2c270a67a93ef85e188916c19"
+    },
+    "app/src/main/java/dev/russiancompanion/v2/curriculum/V2CumulativeReview.kt": {
+      "before": "bda592eac2572396d9852ec818740d0a02d8b4879d7593568833ecac6515adc3",
+      "after": "cb279ccc1eaeec8d34ad7e51cccf6860b984f96549ae0bf347d538a1edfa483a"
+    },
+    "app/src/main/java/dev/russiancompanion/v2/ui/V2CumulativeReviewScreen.kt": {
+      "before": "acb3978a0e39cb477a76922aa8d96c8de5baf6f8664134e058ab577dd2a8f0d1",
+      "after": "75a34ed9d31ace74ad64feac7ea2c7408fa087f6a68b347bc6f4e0eca7470fc7"
+    }
+  },
+  "newTestFiles": {
+    "app/src/test/java/dev/russiancompanion/v2/Unit14PluralPossessionFixtures.kt": "9b100fc6415c15bd05420b85ebf066b89ea14c33a676fdb5b1205e2120f1a799",
+    "app/src/test/java/dev/russiancompanion/v2/Unit14PluralPossessionCompatibilityTest.kt": "81c43b8e1e397c4893ee01364fa5aaba3ac99760d90fa003ce5931b336fa07ed",
+    "app/src/test/java/dev/russiancompanion/v2/Unit14PluralPossessionReviewUiTest.kt": "635e4845afbdce0d100a72d08a91904d10381cb2f418532f20197799b9e6722b"
+  },
+  "preexistingTestFilesConserved": 277,
+  "currentTestFileInventory": 280,
+  "newJUnitMethodsInventory": 18,
+  "selectedMethodsInventory": 20,
+  "selectedClassesInventory": 3,
+  "wholeBaselineUnchanged": true,
+  "oldPolicyObjectsBytePreserved": 40,
+  "oldAssignmentSchemasPreserved": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "newPolicyId": "unit14-prior-plural-possession-reported-time-v2",
+  "newAssignmentSchema": 16,
+  "dueAnswers": 3,
+  "candidateItems": 11,
+  "allocationVariants": 24,
+  "variantCountIsNotJUnitCount": true,
+  "protectedArchivesConserved": 77,
+  "sourceBindingRecords": 155,
+  "sourceBindings": "STALE_UNCHANGED_PENDING_AUTHENTIC_COMPILED_RECONCILIATION",
+  "repositorySourceDigest": "PENDING_ACTUAL_COMPILED_OBSERVATION",
+  "packContentReviewDigest": "PENDING_ACTUAL_COMPILED_OBSERVATION",
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "apkIdentity": null,
+  "apkSignature": null,
+  "all48Findings": "OPEN",
+  "audit": "INCOMPLETE",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "preRuntimeFixtureRevision": "SELECTION_PREFLIGHT.json"
+}

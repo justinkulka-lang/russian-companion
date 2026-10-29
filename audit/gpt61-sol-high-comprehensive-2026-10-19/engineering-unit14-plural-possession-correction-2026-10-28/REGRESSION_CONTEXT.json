@@ -1,0 +1,73 @@
+{
+  "sourceCommit": "d72afd1232857a857624c20c58f4bcd3cb5c8564",
+  "sourceRootTree": "c7b48b30a24a9f964f65346f1991b4226be5ea2d",
+  "workingTreeAtStart": "CLEAN",
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "startedUtc": "2026-10-28T14:53:12.899859+00:00",
+  "inputTrees": {
+    "app/src/main": "e8434cfe2b18d483ee27be79aba461add2544f38",
+    "app/src/test": "a44658c707d02786ffc27ec4d62e813922e9eabd",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "cd675aa8a3ad33a90d9001fe6f67b2de2e5d7ac7",
+    "release": "9d9047b8297cba1d5855a7f7809c441b2f8edcf7"
+  },
+  "mode": "REGRESSION",
+  "syntheticDryRun": false,
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/unit14-plural-possession-correction-2026-10-28/resources.gradle",
+    "-Daudit.unit14.observation=/workspace/artifacts/unit14-plural-possession-correction-2026-10-28/REGRESSION/CURRENT_POLICY_OBSERVATION.json",
+    "-Daudit.history.output=/workspace/artifacts/unit14-plural-possession-correction-2026-10-28/REGRESSION/HISTORY_CASES.jsonl",
+    "-Daudit.events.path=/workspace/artifacts/unit14-plural-possession-correction-2026-10-28/REGRESSION/EVENTS.jsonl",
+    "-Daudit.gc.dir=/workspace/artifacts/unit14-plural-possession-correction-2026-10-28/REGRESSION",
+    "testDebugUnitTest",
+    "--rerun",
+    "--tests",
+    "dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "runnerSha256": "1761a8ef0626b9f280818f7ae3afd242358fdef724e6cc0753986f7a2da048cb",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+    "/workspace/artifacts/unit14-plural-possession-correction-2026-10-28/resources.gradle": "b5006543ee9b316660db77fc3e0ff239c08561ec839be7797d51e5a89d2e2dcf"
+  },
+  "selectors": [
+    "dev.russiancompanion.v2.Unit14PluralPossessionReviewBaselineTest",
+    "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest"
+  ],
+  "workerPolicy": "2forks/6GiB/forkEvery4;GC logs retained",
+  "resources": {
+    "cgroupMemoryMax": "34359738368",
+    "cgroupMemoryCurrent": "5311942656",
+    "cpus": 5
+  },
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "scope": "20 selected methods/3 full classes: Unit14v2/schema16, whole fixed baseline, genuine old14 and downstream15/owner14v1, retained owner13v1/v2 bridges,24allocation variants and three actual repairs;not complete suite",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "completeSuite": false
+}

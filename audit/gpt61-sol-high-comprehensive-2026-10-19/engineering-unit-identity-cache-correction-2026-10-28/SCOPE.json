@@ -1,0 +1,120 @@
+{
+  "inputTrees": {
+    "app/src/main": "3dc6e95950fa42c016cd958bebc291048e6a6644",
+    "app/src/test": "ca549ddab17a07017ddb238e6f085cffa8b0c0c0",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "4bc1e7678565cdbefcf31c7fc4e5272d8e749fd7",
+    "release": "c03bb8dbc3025ef83f463c6a8521526b09da8e42"
+  },
+  "selectors": [
+    "dev.russiancompanion.v2.UnitIdentityCacheReadThroughTest",
+    "dev.russiancompanion.v2.RemainingReauditCorrectionTest"
+  ],
+  "expectedMethods": [
+    {
+      "testClass": "dev.russiancompanion.v2.UnitIdentityCacheReadThroughTest",
+      "method": "repeatedColdIdentityChecksComputeTheSameUnitOnlyOnce"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.UnitIdentityCacheReadThroughTest",
+      "method": "aLivePackEvictedByOtherPackInstancesIsRepopulatedOnce"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.UnitIdentityCacheReadThroughTest",
+      "method": "cachedAndMutatedPackIdentitiesRemainDistinctAndRejectEachOthersCredit"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "importedAcceptedOrderRejectsMalformedHashesAndContinuesAfterReopen"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "stagingSurvivesAnotherCoordinatorAndViewModelTeardownDuringReplacement"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "recoveryMessagesMatchJournalPhaseAndReopenedRecords"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "staleOptionalAnswerDoesNotSuppressTheSameCurrentOption"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "coldOnboardingAndSavedWorkIdentityLeaveTheMainThread"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "savedWorkIdentityLeavesTheMainThreadAndRetrievesCreatedRecords"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "wrongUnitSameOptionDoesNotSuppressAfterHashedRestoreAndReopen"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "duplicateAcknowledgementRequiresTheCapturedEpoch"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "stagingLeaseSurvivesQueuedBoundaryAndDirectorySweep"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "practiceDigestsRunOffMainAndReuseWarmUnitIdentities"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "practiceSnapshotDiscardsAStaleGeneration"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "identityCacheReclaimsDeadPacksWithoutRevisitingBuckets"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "explicitPairsMatchTheRegexOnCounterexamplesAndRandomDashText"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "unsupportedDashPairsStayRejected"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "failedStagingParentClosesTheStreamAndAllowsRetry"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "failedStagingAcquisitionReleasesTheLeaseAndClosesTheStream"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "baselineSavedRecordsSurviveRestoreAndReopen"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "twoOwnersOfOneIncomingPathKeepFilesUntilTheLastRelease"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "queuedCleanupDoesNotDeleteAPathReacquiredWhileTheWorkerIsBlocked"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "concurrentSweepCancellationAndTeardownKeepTheRemainingOwner"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "explicitPairsKeepCodePointCapturesAndBoundedScans"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RemainingReauditCorrectionTest",
+      "method": "explicitPairsMatchTheRegexAndStayBoundedOnARepresentativeText"
+    }
+  ],
+  "methodCount": 25,
+  "classes": 2,
+  "inventoryOnlyUntilFreshDiscovery": true,
+  "completeSuite": false
+}
