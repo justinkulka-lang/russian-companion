@@ -1,0 +1,450 @@
+[
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativePolicyHistoryBaselineTest",
+    "method": "genuineSchemaThreeLifecycleRestoresReopensAndContinuesWithoutErasingAcceptedSnapshots"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativePolicyHistoryBaselineTest",
+    "method": "genuinePredecessorSchemaOneLifecycleRestoresReopensAndContinuesWithoutRelabelling"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+    "method": "asynchronousReviewWriteCannotCrossActualLearnerReplacementAndBackRemainsResponsive"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+    "method": "actualContinueReviewAndGateUiRequireBothChoicesAndShowTargetedFeedback"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+    "method": "completeOrdinaryWorkCannotAdvanceUntilBothAssignedObjectivesAreReviewed"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+    "method": "migratedVersionTenKeepsRawHistoryButChangedGenderTeachingRejectsOldLessonCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+    "method": "versionThreeBackupPreservesCompletionSnapshotAndRejectsForgedActivationLinks"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+    "method": "optionalAndPrescribedReplaysCannotCompleteReviewOrBypassTransactionalAdvance"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+    "method": "completedHistoryKeepsItsAcceptedAnswerSnapshotAndTransactionFailureRollsBack"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewGateTest",
+    "method": "placementOnlyUiOffersRealEarlierTeachingAndNoEmptyReviewCompletion"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "genericKernelPreservesTheOriginalUnit3PolicyAndAssignmentIdentity"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "prescribedAndOptionalAnswersNeverSupplyReviewOrGainExtraPrescribedCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "completionMetadataCannotLinkAReviewToAnotherUnitDuringRestore"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "malformedRolePreBoundaryAndWrongAssignmentDigestNeverSupplyCompletion"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "disabledOrWrongPolicyRejectsOldAssignmentsAndAnswersWithoutMutation"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "immutableSlotsSpanTwoTaughtObjectivesAndRepeatedOpenDoesNotResample"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "staleEpochWrongAssignmentInvalidSlotAndOutOfOptionsAreRejectedWithoutWrites"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "forgedLinksOrdersRolesAndAssignmentHashCannotReplaceAnyLearnerRows"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "typedPoliciesRefuseEmptyRepeatedAndAmbiguousCandidatePools"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "latestAcceptedAnswerWinsAndDuplicateTapsDoNotAllocateExtraOrder"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "undeclaredTargetsAndFlagOnlyLaterGatesCannotCreateHistory"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "legacyDocumentWithoutNewFieldsDecodesWithNoSyntheticReviewRows"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "realVersionNineDatabaseMigratesWithoutRewritingHistoricalRowsOrInventingCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "offlineCloseAndReopenRetainsExactAssignmentAnswersAndCurrentCompletion"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "newBackupRoundtripReplacesReviewHistoryAndRestoreFaultRollsItBack"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "placementAndBareLegacyCorrectIdsCannotCreateAssignments"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "changedKeyTeachingAndOwnerAvailabilityRejectCreditButUnrelatedUnitsDoNot"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CumulativeReviewStorageTest",
+    "method": "schemaOneBackupRestoresNoSyntheticReviewAndClearsReplacedLearnerHistory"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CurrentPackHistoricalBackupTest",
+    "method": "allOriginalArchivesRestoreAndReopenButDoNotAcquireNewCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CurrentPackHistoricalBackupTest",
+    "method": "legacyUnit5CanLeadIntoFreshUnit6WithoutRelabellingEitherObligation"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.CurrentPackHistoricalBackupTest",
+    "method": "legacyUnit5CanLeadIntoCurrentUnit6V3WithoutRelabellingEitherObligation"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+    "method": "genuineSchemaOnePartialCompletesWithoutAddingPresentOrRelabelling"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+    "method": "recentPresentMissRemainsAssignedThroughCorrectionRollbackBackupAndReopen"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+    "method": "exactPriorDeclarationRefusesSchemaTwelveAndPreservesDownstreamOwnerIdentity"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+    "method": "eachPresentMissCanAllocateWhileOptionalAndMalformedHistoryCannotSelect"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+    "method": "wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit10PresentCompatibilityTest",
+    "method": "missingOwnersAndChangedTeachingOrItemsRefuseFreshAndSavedTasks"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11NounCompatibilityTest",
+    "method": "genuineSchemaOnePartialCompletesWithoutAddingNounBehaviorOrRelabelling"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11NounCompatibilityTest",
+    "method": "eachNounMissCanAllocateWhileOptionalAndMalformedHistoryCannotSelect"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11NounCompatibilityTest",
+    "method": "recentNounMissRemainsAssignedThroughCorrectionRollbackBackupAndReopen"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11NounCompatibilityTest",
+    "method": "exactPriorDeclarationRefusesSchemaThirteenAndPreservesDownstreamOwnerIdentity"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11NounCompatibilityTest",
+    "method": "wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit11NounCompatibilityTest",
+    "method": "missingOwnersAndChangedTeachingOrItemsRefuseFreshAndSavedTasks"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+    "method": "genuineSchemaOnePartialCompletesWithoutAddingNounGenderOrRelabelling"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+    "method": "eachGenderMissCanAllocateWhileOptionalAndMalformedHistoryCannotSelect"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+    "method": "exactPriorDeclarationRefusesSchemaFourteenAndPreservesBothDownstreamVersions"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+    "method": "genuineHistoricalUnit13SchemaOneOwner12BindingsStayCurrentWithoutRelabelling"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+    "method": "wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+    "method": "recentGenderMissRemainsAssignedThroughCorrectionRollbackBackupAndReopen"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit12GenderCompatibilityTest",
+    "method": "missingOwnersAndChangedTeachingOrItemsRefuseFreshAndSavedTasks"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit13PresentCompatibilityTest",
+    "method": "genuineV2PartialCompletesWithoutRelabellingAndHistoricalV1CanRefreshPrerequisites"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit13PresentCompatibilityTest",
+    "method": "allEightCandidatesAllocateFromGovernedMissesWhilePracticeMalformedAndDuplicateOrdersCannotSelect"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit13PresentCompatibilityTest",
+    "method": "recentPresentMissRemainsAssignedThroughCorrectionRollbackBackupAndReopen"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit13PresentCompatibilityTest",
+    "method": "exactPriorDeclarationsRefuseNewTasksAndPreserveBothUnit14OwnerBindings"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit13PresentCompatibilityTest",
+    "method": "wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit13PresentCompatibilityTest",
+    "method": "historicalUnit13BothVersionsAndOwner12BridgesKeepExactSavedIdentities"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit13PresentCompatibilityTest",
+    "method": "missingOwnersAndChangedTeachingOrItemsRefuseFreshAndSavedTasks"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "method": "wrongSchemasTargetsResponseRolesAndReplacementEpochCannotBorrowNewCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "method": "allTwentyFourAllocationsUseGovernedMissesIgnoringPracticeMalformedAndDuplicateOrders"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "method": "assignedMissSurvivesOrdinaryCorrectionIdempotenceRollbackBackupReopenAndLateAnswer"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "method": "eachMissingOwnerOrChangedItemAndInstructionRefusesFreshAndSavedTasks"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "method": "exactPriorDeclarationRefusesNewSchemaAndCompiledObservationRecordsBoundedPools"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "method": "genuineUnit15OldOwner14PartialReopensCompletesAndActuallyAdvances16"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "method": "genuineCompletedV1RetainsCompletionDespiteLateWrongAnswerAndReplacement"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "method": "genuineV1PartialCompletesAndRoundtripsWithoutRelabelling"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "method": "existingOwner13V1AndV2BridgesStillSupportOldUnit14TasksWithoutRelabelling"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest",
+    "method": "exactOldOwner14SupportRefusesUnrelatedContentRulesAndObsoleteTeaching"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+    "method": "olderPolicyHistoriesRemainRawButCannotBypassChangedUnit3Teaching"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+    "method": "allFiveIndependentRecordsHaveExplicitTeachingAndCompleteRepair"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+    "method": "genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+    "method": "freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+    "method": "wrongNeuterAnswerRestoresTheFullContrastAndStillNeedsFreshIndependentWork"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+    "method": "correctionHasAnExactWhitelistAndNoScoredOrPolicyChanges"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit3GenderTeachingTest",
+    "method": "wrongDoorAnswerRestoresTheFullContrastAndStillNeedsFreshIndependentWork"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+    "method": "wrongSchemaAndUntaughtOwnerCannotBorrowFreshCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+    "method": "newTaskKeepsChosenGenderThroughReopenAndBackupRoundtrip"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+    "method": "legacyPartialTaskRestoresCompletesAndReopensWithItsOwnVersion"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit5GrammarReviewTest",
+    "method": "freshGenderAndSubjectNeedSeparateReviewAnswersBeforeAdvance"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+    "method": "priorDeclarationsRefuseV3AndExactV2OwnerStillSupportsDownstreamReview"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+    "method": "genuineV2PartialCompletesWithoutRelabellingUnderNewDeclaration"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+    "method": "originalV1SchemaOneAndThreeTasksRetainTheirOwnObligationAfterCurrentReteaching"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+    "method": "wrongVersionsUntaughtChangedOwnersAndOldEpochCannotBorrowNewCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit6PresentCompatibilityTest",
+    "method": "recentMissIsImmutableThroughOrdinaryCorrectionBackupAndActualRollback"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit7CurrentPrerequisiteHistoryTest",
+    "method": "staleUnit4PrerequisiteRefusesUnit7ReviewUntilFreshRepairWithoutRelabellingHistory"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit7CurrentPrerequisiteHistoryTest",
+    "method": "allEightOriginalBackupsReopenUnchangedButCurrentCreditStopsAtStaleUnit4"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+    "method": "genuineSchemaOnePartialCompletesWithoutAddingGenderOrRelabelling"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+    "method": "wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+    "method": "recentGenderMissRemainsAssignedThroughCorrectionRollbackBackupAndReopen"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+    "method": "missingOwnersAndChangedTeachingOrItemsRefuseFreshAndSavedTasks"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit7GenderCompatibilityTest",
+    "method": "exactPriorDeclarationRefusesSchemaNineAndPreservesDownstreamOwnerIdentity"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+    "method": "genuineSchemaOnePartialCompletesWithoutAddingPresentOrRelabelling"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+    "method": "recentPresentMissRemainsAssignedThroughCorrectionRollbackBackupAndReopen"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+    "method": "wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+    "method": "exactPriorDeclarationRefusesSchemaTenAndPreservesDownstreamOwnerIdentity"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit8PresentCompatibilityTest",
+    "method": "missingOwnersAndChangedTeachingOrItemsRefuseFreshAndSavedTasks"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+    "method": "exactPriorV2DeclarationRefusesSchemaElevenAndPreservesOwnerNineDownstream"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+    "method": "eachNounMissCanAllocateWhileOptionalAndMalformedHistoryCannotSelect"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+    "method": "genuineV1StaysRegisteredUnderItsOwnHistoricalSourceAndCannotBeRelabelled"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+    "method": "wrongSchemasTargetsResponseRulesAndEpochsCannotBorrowNewCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+    "method": "recentNounMissRemainsFixedThroughCorrectionIdempotenceRollbackBackupAndReopen"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+    "method": "genuineV2PartialKeepsItsOldThreeSlotsAnswersAndCompletionAcrossReopen"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.Unit9NounBehaviorCompatibilityTest",
+    "method": "missingOwnersAndChangedTeachingOrItemsRefuseFreshAndSavedTasks"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+    "method": "unitTwoRequiredReviewDoesNotRepeatAnEntireUnitOneDisplayTask"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+    "method": "literacyWorkRemainsRequiredAndItsReviewRemainsPending"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+    "method": "unitTwoRequiredChecksExplainEachWrongOptionByItsValue"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+    "method": "unitOneRequiredChecksExplainEachWrongOptionByItsValue"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+    "method": "currentCompatibilityValidationStillAcceptsThePack"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+    "method": "latinAndCyrillicLookalikesRemainDifferentUnicodeIdentities"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+    "method": "revisedTasksUseActualLowercaseCuesAndThreeCyrillicAlternativesWithLinkedExamples"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+    "method": "patchPreservesAllKeysAndAllOtherCourseContentWithinAnExactWhitelist"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+    "method": "allTenHistoriesReopenUnchangedButObsoleteFoundationsAndDependentReviewCannotGrantCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+    "method": "freshCorrectedWorkReestablishesCompletionWithoutRelabellingTheLegacyReview"
+  }
+]
