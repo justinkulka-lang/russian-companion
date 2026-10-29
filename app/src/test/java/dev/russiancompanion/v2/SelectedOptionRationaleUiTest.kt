@@ -70,10 +70,50 @@ class SelectedOptionRationaleUiTest {
         LocalStore.openInMemory(context()).use { store ->
             // A placed current unit is available for optional practice without fabricated earlier credit.
             store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 7))
+            // Seed another lab's genuine optional miss so Mixed Practice prioritizes an existing
+            // specific explanation, rather than the separately tested defective adverb rationale.
+            val target = p.item("u7-i-endings-4")!!
+            val targetWrong = target.options.first { it != target.answer }
+            store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, target.id, targetWrong,
+                OPTIONAL_PRACTICE, practiceStepId("grammar"), "rationale-seed")!!)
+            val attemptsBeforeSelection = store.v2Attempts()
+            val learner = mutableStateOf(store.v2LearnerView())
+            val item = practiceQueue(p, learner.value, "mixed").first()
+            assertEquals(target.id, item.id)
+            val wrong = item.options.first { it != item.answer }
+            val rationale = diagnosticRationale(item, wrong)
+            compose.setContent {
+                V2LabScreen(p, learner.value, "mixed", emptySet(), {}, { id, value ->
+                    store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id, value,
+                        OPTIONAL_PRACTICE, practiceStepId("mixed"), "rationale-host")!!)
+                    learner.value = store.v2LearnerView()
+                    true
+                })
+            }
+            compose.waitUntil(30_000) { compose.onAllNodesWithTag("v2-lab-option-$wrong").fetchSemanticsNodes().isNotEmpty() }
+            compose.onNodeWithTag("v2-lab-option-$wrong").performScrollTo().performClick()
+            assertEquals(attemptsBeforeSelection, store.v2Attempts())
+            compose.onNodeWithTag("v2-lab-submit").performClick()
+            compose.onNodeWithTag("v2-lab-feedback").performScrollTo()
+                .assertTextEquals("Not the reviewed answer. ${item.feedback}")
+            compose.onNodeWithTag("v2-lab-rationale").performScrollTo().assertTextEquals(rationale).assertIsDisplayed()
+            assertEquals(attemptsBeforeSelection.size + 1, store.v2Attempts().size)
+            assertEquals(wrong, store.v2Attempts().last().selected)
+            assertFalse(store.v2Attempts().last().correct)
+            assertTrue(creditItemIds(p, store.v2LearnerView()).isEmpty())
+            assertTrue(store.v2StepProgress().isEmpty())
+        }
+    }
+
+    @Test fun optionalPracticeBadRationaleFallsBackToItsExplanationLink() {
+        val p = Unit8PresentFixtures.pack
+        LocalStore.openInMemory(context()).use { store ->
+            // A placed current unit is available for optional practice without fabricated earlier credit.
+            store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = 7))
             val learner = mutableStateOf(store.v2LearnerView())
             val item = practiceQueue(p, learner.value, "grammar").first()
             val wrong = item.options.first { it != item.answer }
-            val rationale = diagnosticRationale(item, wrong)
+            assertTrue(diagnosticRationale(item, wrong).contains("pairs the shown form"))
             compose.setContent {
                 V2LabScreen(p, learner.value, "grammar", emptySet(), {}, { id, value ->
                     store.v2RecordGovernedAttempt(prepareGovernedAttempt(p, id, value,
@@ -88,7 +128,10 @@ class SelectedOptionRationaleUiTest {
             compose.onNodeWithTag("v2-lab-submit").performClick()
             compose.onNodeWithTag("v2-lab-feedback").performScrollTo()
                 .assertTextEquals("Not the reviewed answer. ${item.feedback}")
-            compose.onNodeWithTag("v2-lab-rationale").performScrollTo().assertTextEquals(rationale).assertIsDisplayed()
+            compose.onNodeWithTag("v2-lab-rationale").assertDoesNotExist()
+            compose.onNodeWithTag("v2-lab-review").performScrollTo().assertHasClickAction().performClick()
+            val teaching = labExplanationSteps(p, item).first { it.kind == "TEACH" }
+            compose.onNodeWithTag("v2-lab-explanation-${teaching.id}").performScrollTo().assertIsDisplayed()
             assertEquals(wrong, store.v2Attempts().last().selected)
             assertFalse(store.v2Attempts().last().correct)
             assertTrue(creditItemIds(p, store.v2LearnerView()).isEmpty())
