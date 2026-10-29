@@ -1,0 +1,38 @@
+{
+  "RationaleExposureProbe.java": {
+    "bytes": 1426,
+    "sha256": "b17144aeb6ed51f4c34da3c45db4c6c144e457c7b7613e9ae3ad18332403984d"
+  },
+  "RationaleExposureProbe.class": {
+    "bytes": 3251,
+    "sha256": "00bb148bb2e35986d357c11bba786465ee1652431a8fde29666d1664374e5608"
+  },
+  "PRESENTATION_EXPOSURE.tsv": {
+    "bytes": 133847,
+    "sha256": "8428d4a9c2cd69fc2b668783e79bb8e1690b1e866852c5dfe8630b31081335d5"
+  },
+  "EXPOSURE_COMPILE.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "EXPOSURE_PROBE.log": {
+    "bytes": 96,
+    "sha256": "2d3f19b5b23f9ee2b8c27c8ea3ce5a028ced7f197064ee1b4e2ecac1f9f4d671"
+  },
+  "EXPOSURE_COMMANDS.json": {
+    "bytes": 3205,
+    "sha256": "32b42e76b2fb25eb01283f2e92b5d4f22fde46322d83a7cfd48cca6a7f25732a"
+  },
+  "EXPOSURE_RESULT.json": {
+    "bytes": 1187,
+    "sha256": "2e1e7dd3bcb9c6347c4cc6a82788a937a1116be276123a32a36fbbe39f93f32e"
+  },
+  "B03_PATTERN_SCOPE_RECONCILIATION.json": {
+    "bytes": 949,
+    "sha256": "be02c0da2639a322cf2fa0a63ff3413d25dc4eb92c8c0dea0e9400c3850e5596"
+  },
+  "probe-b03-presentation.py": {
+    "bytes": 3738,
+    "sha256": "45a63b5655e550955142794c1b1d247287ce56f0b472fd6848275dee5d66ef42"
+  }
+}

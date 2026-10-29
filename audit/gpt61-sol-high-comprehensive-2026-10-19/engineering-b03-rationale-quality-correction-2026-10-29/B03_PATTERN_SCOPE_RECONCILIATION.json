@@ -1,0 +1,26 @@
+{
+  "kind": "Derived engineering clarification;original auditor files unchanged",
+  "auditedSource": "5a3411a76b88753617ea18b3e1a54f44f6923b9f",
+  "correctedPresenterSource": "040d794fbcd68f61a465d3f0d78e3f1ad90b89c6",
+  "scopeUnits": "Audit helper rationale_issues is a per-item deduplicated set;an affected item may have multiple wrong-option entries",
+  "affectedItemCounts": {
+    "MISSING": 91,
+    "SHOWN_FORM_MISMATCH": 15,
+    "TEMPLATE": 97,
+    "UNINFORMATIVE": 24
+  },
+  "wrongOptionEntryCounts": {
+    "MISSING": 268,
+    "SHOWN_FORM_MISMATCH": 22,
+    "TEMPLATE": 166,
+    "UNINFORMATIVE": 43
+  },
+  "overlappingFlagsMustNotBeSummed": true,
+  "actualHelperCalls": 1063,
+  "unflaggedAuthoredRationalesShownByteExact": 580,
+  "notShownIncludingMissing": 483,
+  "knownFlaggedWrongOptionEntriesStillShown": 0,
+  "newJUnitMethodsByProbe": 0,
+  "qualifiedSemanticValidityOfUnflaggedRationales": "NOT_ESTABLISHED",
+  "all59Findings": "OPEN"
+}

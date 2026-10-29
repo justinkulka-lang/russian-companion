@@ -1,0 +1,755 @@
+{
+  "sourceCommit": "040d794fbcd68f61a465d3f0d78e3f1ad90b89c6",
+  "inputTrees": {
+    "app/src/main": "6c0914205d5e8a00e4285f1056e352a4ff05d6fe",
+    "app/src/test": "ba9be0d0814c582950884b191dc1895b6e2fed62",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "3cb94ec5b107e307f106f397380a4177621a2ae7",
+    "release": "81e1b4ac607baf83b645ed9bfae0bb5a516b8d1a"
+  },
+  "syntheticDryRun": false,
+  "exitCode": 1,
+  "finishedUtc": "2026-10-29T10:32:06.143899+00:00",
+  "testCounts": {
+    "reported": 70,
+    "passed": 69,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 7,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+      "method": "currentPageAndAllDraftChoicesSurviveSavedInstanceStateRestore",
+      "outcome": "PASSED",
+      "seconds": "8.561",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+      "method": "failedSaveAndRestoreKeepReadyDraftWithoutSubmittingItAutomatically",
+      "outcome": "PASSED",
+      "seconds": "0.603",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OptionPresentationUiTest",
+      "method": "labRetainsDisplayedOrderAndSelectionAcrossStateRestoreAndGradesSubmittedValues",
+      "outcome": "PASSED",
+      "seconds": "11.531",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OptionPresentationUiTest",
+      "method": "newReviewRendersVersionedOrderAndRecordsClickedOptionValues",
+      "outcome": "PASSED",
+      "seconds": "1.954",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OptionPresentationUiTest",
+      "method": "existingLegacyReviewKeepsAuthoredOrderAndClickedOptionMeaning",
+      "outcome": "PASSED",
+      "seconds": "1.764",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OptionPresentationUiTest",
+      "method": "lessonRendersPermutedOrderAndKeepsValueSelectionAfterStateRestore",
+      "outcome": "PASSED",
+      "seconds": "0.842",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "missingAuthoredExplanationRetainsTheExistingFallback",
+      "outcome": "PASSED",
+      "seconds": "0.836",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "unknownSelectionDoesNotAcquireAnotherOptionsExplanation",
+      "outcome": "PASSED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "correctSelectionDoesNotAcquireAWrongOptionExplanation",
+      "outcome": "PASSED",
+      "seconds": "0.001",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "differentShownFormMustNotBePresentedAsTheDisplayedCue",
+      "outcome": "PASSED",
+      "seconds": "0.009",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "specificExistingExplanationStillFollowsTheAuthoredOptionValue",
+      "outcome": "PASSED",
+      "seconds": "0.008",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "sourceTemplateMustNotBePresentedAsAnOptionExplanation",
+      "outcome": "PASSED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "rejectedReadingRestatementMustNotBePresentedAsAnExplanation",
+      "outcome": "PASSED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "unsavedNoteDraftSurvivesComposeSavedState",
+      "outcome": "PASSED",
+      "seconds": "3.301",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "lateContinueCallbackCannotNavigateTheNextScreen",
+      "outcome": "PASSED",
+      "seconds": "2.124",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "laterUnitLinkedExamplesAppearOnTheSamePlayer",
+      "outcome": "PASSED",
+      "seconds": "1.027",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "failedRetryKeepsTheSavedAnswerOnScreen",
+      "outcome": "PASSED",
+      "seconds": "0.999",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "olderSaveRefreshCannotHideANewerRejectedWrite",
+      "outcome": "PASSED",
+      "seconds": "1.765",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "storeWorkRunsOnTheStoreThread",
+      "outcome": "PASSED",
+      "seconds": "0.149",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "committedSaveReportsReloadFailureWithoutErasingTheWrite",
+      "outcome": "PASSED",
+      "seconds": "2.384",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "unitOneSequenceKeepsDraftsThroughRemediationResumeAndAdvancement",
+      "outcome": "PASSED",
+      "seconds": "2.45",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "failedAdvancementLeavesTheReviewInPlace",
+      "outcome": "PASSED",
+      "seconds": "1.474",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "formerGuidedPracticeGapsNowHaveRealItems",
+      "outcome": "PASSED",
+      "seconds": "0.322",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "repeatedContinueCannotSkipAStep",
+      "outcome": "PASSED",
+      "seconds": "1.261",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "advancementRollsBackWhenTheFollowingProfileWriteFails",
+      "outcome": "PASSED",
+      "seconds": "0.124",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "questionsKeepIndependentSelectionsAndFeedback",
+      "outcome": "PASSED",
+      "seconds": "1.153",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "failedWritePreservesPriorDataAndShowsOneFailure",
+      "outcome": "PASSED",
+      "seconds": "1.771",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "remediationReachesGuidedPracticeThenReturnsToTheFailedCheck",
+      "outcome": "PASSED",
+      "seconds": "1.691",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "remediationOpensTheDeclaredTargetAndReturnsToTheFailedCheck",
+      "outcome": "PASSED",
+      "seconds": "1.615",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "composeSavedStateDuringADelayedWriteKeepsOneOutcome",
+      "outcome": "PASSED",
+      "seconds": "1.306",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "delayedStorageLeavesTheLessonScreenResponsive",
+      "outcome": "PASSED",
+      "seconds": "0.898",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "startupLoadingDoesNotBlockTheMainThread",
+      "outcome": "PASSED",
+      "seconds": "0.145",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "olderSaveRefreshCannotClaimSuccessWhileALaterWriteIsPending",
+      "outcome": "PASSED",
+      "seconds": "1.299",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "todayOpensAdvancementReviewInsteadOfTheLastLessonStep",
+      "outcome": "PASSED",
+      "seconds": "0.825",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "olderRefreshCannotReplaceANewerSelection",
+      "outcome": "PASSED",
+      "seconds": "1.07",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "linkedExamplesAppearOnTheRunningLessonScreen",
+      "outcome": "PASSED",
+      "seconds": "0.818",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "method": "repeatedTutorTapsCreateOneQueueRow",
+      "outcome": "PASSED",
+      "seconds": "1.06",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "assignedReviewExplainsTheSelectedWrongValueWithoutCompletingItsSlot",
+      "outcome": "PASSED",
+      "seconds": "14.617",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "lessonOptionHasMergedLabelRoleSelectionAndClickSemantics",
+      "outcome": "PASSED",
+      "seconds": "0.658",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "optionalPracticeBadRationaleFallsBackToItsExplanationLink",
+      "outcome": "PASSED",
+      "seconds": "0.344",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "optionalPracticeExplainsTheSubmittedWrongValueWithoutRequiredCredit",
+      "outcome": "FAILED",
+      "seconds": "0.167",
+      "messagePreview": "java.util.NoSuchElementException: List is empty.",
+      "fullMessageBytes": 48,
+      "fullMessageSha256": "5fd7a9cc7e5a1119f559bd9c89e671c13d6e489a1d4146a1bfc5a3173060bb55"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "lessonExplainsEachSelectedWrongValueWithoutChangingGradingOrCommonFeedback",
+      "outcome": "PASSED",
+      "seconds": "0.322",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14FeedbackCorrectionTest",
+      "method": "historicalQuestionFeedbackCreditIsRetainedButStale",
+      "outcome": "PASSED",
+      "seconds": "0.179",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14FeedbackCorrectionTest",
+      "method": "maleColdExampleDoesNotAnswerFemaleColdQuestion",
+      "outcome": "PASSED",
+      "seconds": "0.782",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14FeedbackCorrectionTest",
+      "method": "durationFreeOptionDoesNotAnswerBoundedWorkQuestion",
+      "outcome": "PASSED",
+      "seconds": "0.858",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.Unit14FeedbackCorrectionTest",
+      "method": "feedbackExplainsFutureLimitsAndImpersonalExperiencers",
+      "outcome": "PASSED",
+      "seconds": "6.144",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "resolvedAssetRecordsAreRequiredInsteadOfCounters",
+      "outcome": "PASSED",
+      "seconds": "16.687",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "genericBookDirectionCountersAndEmptyArraysCannotSatisfyContentCompleteness",
+      "outcome": "PASSED",
+      "seconds": "10.302",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "unitsThreeToFiveStayDevelopmentAndLaterUnitsStayClosed",
+      "outcome": "PASSED",
+      "seconds": "0.367",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "referencesRejectMissingAndUnknownClassifications",
+      "outcome": "PASSED",
+      "seconds": "6.123",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "upgradeKeepsExportAndRecordingRows",
+      "outcome": "PASSED",
+      "seconds": "0.116",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "installedUnitRejectsPendingAndRejectedInstructionalRecords",
+      "outcome": "PASSED",
+      "seconds": "13.869",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "noInternetPermissionIsDeclared",
+      "outcome": "PASSED",
+      "seconds": "0.052",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "unitAndLabHeadingsStayInsideTheRoot",
+      "outcome": "PASSED",
+      "seconds": "1.713",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+      "outcome": "PASSED",
+      "seconds": "31.47",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "todayShowsOneBoundedSessionInsteadOfTheUnitInventory",
+      "outcome": "PASSED",
+      "seconds": "0.767",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "packValidatesAndRefusesGeneratedOrCatalogBoundContent",
+      "outcome": "PASSED",
+      "seconds": "3.124",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "approvedReviewRequiresACompleteMatchingRecord",
+      "outcome": "PASSED",
+      "seconds": "21.65",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "unitOneProgressesInOrderAndRestoresAfterRestart",
+      "outcome": "PASSED",
+      "seconds": "0.253",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "installedUnitsAreRejectedWhileRequiredExperiencesAreMissing",
+      "outcome": "PASSED",
+      "seconds": "2.874",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "productHelpAndOperationalGuidanceMayUseNotRequired",
+      "outcome": "PASSED",
+      "seconds": "2.887",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "advancementNeedsMoreThanOneCheckAndBookAttestation",
+      "outcome": "PASSED",
+      "seconds": "0.313",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "linguisticReferencesCannotUseNotRequired",
+      "outcome": "PASSED",
+      "seconds": "13.318",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "onboardingAndPrimaryControlsAreVisible",
+      "outcome": "PASSED",
+      "seconds": "1.077",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "notPreparedBookDirectionCannotBePromotedOrAdvanced",
+      "outcome": "PASSED",
+      "seconds": "13.436",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "advancementCannotSkipARequiredObjective",
+      "outcome": "PASSED",
+      "seconds": "0.398",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "noUnitCanBeInstalledWithPendingReviewOrMapping",
+      "outcome": "PASSED",
+      "seconds": "8.238",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "unitTwoRequiresUnitOneAndCannotUseUnrelatedCatalogAudio",
+      "outcome": "PASSED",
+      "seconds": "0.255",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "durablePackIdentityStaysHonestAndUnitIsolationHolds",
+      "outcome": "PASSED",
+      "seconds": "0.953",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "primaryContentStartsAtTheInsetWhenFontIsLarge",
+      "outcome": "PASSED",
+      "seconds": "1.42",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-29T10:27:00.332Z",
+      "hostname": "139038e4205c",
+      "time": "10.16"
+    },
+    {
+      "name": "dev.russiancompanion.v2.OptionPresentationUiTest",
+      "tests": "4",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-29T10:27:00.071Z",
+      "hostname": "139038e4205c",
+      "time": "17.291"
+    },
+    {
+      "name": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "tests": "7",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-29T10:27:10.508Z",
+      "hostname": "139038e4205c",
+      "time": "0.856"
+    },
+    {
+      "name": "dev.russiancompanion.v2.RuntimeCorrectionTest",
+      "tests": "24",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-29T10:27:17.402Z",
+      "hostname": "139038e4205c",
+      "time": "31.074"
+    },
+    {
+      "name": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "tests": "5",
+      "skipped": "0",
+      "failures": "1",
+      "errors": "0",
+      "timestamp": "2026-10-29T10:27:11.406Z",
+      "hostname": "139038e4205c",
+      "time": "16.128"
+    },
+    {
+      "name": "dev.russiancompanion.v2.Unit14FeedbackCorrectionTest",
+      "tests": "4",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-29T10:27:48.481Z",
+      "hostname": "139038e4205c",
+      "time": "7.969"
+    },
+    {
+      "name": "dev.russiancompanion.v2.V2RebuildTest",
+      "tests": "24",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-29T10:27:27.555Z",
+      "hostname": "139038e4205c",
+      "time": "151.687"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": {
+    "sameInputTrees": true,
+    "discoveredNotReported": [],
+    "reportedNotDiscovered": [],
+    "exactSameMethodSet": true
+  },
+  "allFreshSelectedMethodsReported": true,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}
