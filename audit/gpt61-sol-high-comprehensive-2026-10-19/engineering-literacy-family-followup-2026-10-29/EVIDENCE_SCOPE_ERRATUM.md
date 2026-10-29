@@ -1,0 +1,3 @@
+# Archive-runtime scope clarification
+
+The initial engineering summary INITIAL_OUTCOME.md says “All87archives decode/preserve under the actual tests”. That wording overstates this executed scope. Correct statement: all87retained archives passed byte-identity conservation checks; the ten pinned literacy scenarios were directly decoded/imported/reopened under the correction compatibility test. The other77archives retain their earlier source-scoped verification; this run did not execute a new current-curriculum runtime check of all77. No archive or raw result is changed. Preserve the original derived summary as historical and use this clarification when assessing runtime coverage.

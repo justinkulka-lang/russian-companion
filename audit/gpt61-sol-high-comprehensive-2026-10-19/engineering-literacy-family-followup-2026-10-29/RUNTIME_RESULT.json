@@ -1,0 +1,212 @@
+{
+  "sourceCommit": "4372b39e208a251ba3be468f13bcad57594d509a",
+  "inputTrees": {
+    "app/src/main": "23f5a9f34d2e4d86a08043ef1007a8711605cff7",
+    "app/src/test": "dbe2260d79d7a22fc3babc50cc80c72fc797a6b9",
+    "catalog": "65174708b84c474cd01663b8697e9777f7b765bf",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "2f265ea7982f1a507bc7ccb1c1e7f45c47f27e12",
+    "release": "ded62b471adcbde7deb752afd823cab40a07b394"
+  },
+  "syntheticDryRun": false,
+  "exitCode": 0,
+  "finishedUtc": "2026-10-29T11:43:01.400174+00:00",
+  "testCounts": {
+    "reported": 13,
+    "passed": 13,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 4,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "method": "unitTwoRequiredReviewDoesNotRepeatAnEntireUnitOneDisplayTask",
+      "outcome": "PASSED",
+      "seconds": "1.134",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "method": "literacyWorkRemainsRequiredAndItsReviewRemainsPending",
+      "outcome": "PASSED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "method": "unitTwoRequiredChecksExplainEachWrongOptionByItsValue",
+      "outcome": "PASSED",
+      "seconds": "0.017",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "method": "unitOneRequiredChecksExplainEachWrongOptionByItsValue",
+      "outcome": "PASSED",
+      "seconds": "0.007",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "method": "currentCompatibilityValidationStillAcceptsThePack",
+      "outcome": "PASSED",
+      "seconds": "9.138",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "method": "latinAndCyrillicLookalikesRemainDifferentUnicodeIdentities",
+      "outcome": "PASSED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+      "method": "revisedTasksUseActualLowercaseCuesAndThreeCyrillicAlternativesWithLinkedExamples",
+      "outcome": "PASSED",
+      "seconds": "7.2",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+      "method": "patchPreservesAllKeysAndAllOtherCourseContentWithinAnExactWhitelist",
+      "outcome": "PASSED",
+      "seconds": "1.364",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+      "method": "allTenHistoriesReopenUnchangedButObsoleteFoundationsAndDependentReviewCannotGrantCredit",
+      "outcome": "PASSED",
+      "seconds": "4.684",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+      "method": "freshCorrectedWorkReestablishesCompletionWithoutRelabellingTheLegacyReview",
+      "outcome": "PASSED",
+      "seconds": "2.382",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyFeedbackUiTest",
+      "method": "lowercaseCaseVariantExplainsEachWrongValueAndPreservesTheKey",
+      "outcome": "PASSED",
+      "seconds": "9.128",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyFeedbackUiTest",
+      "method": "letterIdentityExplainsEachWrongValueWithoutGrantingRequiredCredit",
+      "outcome": "PASSED",
+      "seconds": "0.465",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyHistoryCaptureTest",
+      "method": "preCorrectionLiteracyAndDependentReviewHistoryRoundTripWithoutRelabelling",
+      "outcome": "PASSED",
+      "seconds": "3.136",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "tests": "6",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-29T11:40:44.465Z",
+      "hostname": "139038e4205c",
+      "time": "10.306"
+    },
+    {
+      "name": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+      "tests": "4",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-29T11:40:44.503Z",
+      "hostname": "139038e4205c",
+      "time": "16.437"
+    },
+    {
+      "name": "dev.russiancompanion.v2.LiteracyFeedbackUiTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-29T11:40:54.969Z",
+      "hostname": "139038e4205c",
+      "time": "10.47"
+    },
+    {
+      "name": "dev.russiancompanion.v2.LiteracyHistoryCaptureTest",
+      "tests": "1",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-29T11:41:00.949Z",
+      "hostname": "139038e4205c",
+      "time": "3.14"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": {
+    "sameInputTrees": true,
+    "discoveredNotReported": [],
+    "reportedNotDiscovered": [],
+    "exactSameMethodSet": true
+  },
+  "allFreshSelectedMethodsReported": true,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}
