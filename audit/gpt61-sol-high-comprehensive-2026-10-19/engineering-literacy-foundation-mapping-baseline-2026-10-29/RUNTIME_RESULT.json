@@ -1,0 +1,281 @@
+{
+  "sourceCommit": "9bc5955d010b6aa4fe7a79ece6d0473bbe3413e6",
+  "inputTrees": {
+    "app/src/main": "23f5a9f34d2e4d86a08043ef1007a8711605cff7",
+    "app/src/test": "dbe2260d79d7a22fc3babc50cc80c72fc797a6b9",
+    "catalog": "65174708b84c474cd01663b8697e9777f7b765bf",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "2f265ea7982f1a507bc7ccb1c1e7f45c47f27e12",
+    "release": "ded62b471adcbde7deb752afd823cab40a07b394"
+  },
+  "syntheticDryRun": false,
+  "exitCode": 1,
+  "finishedUtc": "2026-10-29T12:20:01.380902+00:00",
+  "testCounts": {
+    "reported": 24,
+    "passed": 23,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "classes": 1,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "resolvedAssetRecordsAreRequiredInsteadOfCounters",
+      "outcome": "PASSED",
+      "seconds": "17.533",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "genericBookDirectionCountersAndEmptyArraysCannotSatisfyContentCompleteness",
+      "outcome": "PASSED",
+      "seconds": "8.498",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "unitsThreeToFiveStayDevelopmentAndLaterUnitsStayClosed",
+      "outcome": "PASSED",
+      "seconds": "0.475",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "referencesRejectMissingAndUnknownClassifications",
+      "outcome": "PASSED",
+      "seconds": "5.332",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "upgradeKeepsExportAndRecordingRows",
+      "outcome": "PASSED",
+      "seconds": "0.206",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "installedUnitRejectsPendingAndRejectedInstructionalRecords",
+      "outcome": "PASSED",
+      "seconds": "13.828",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "noInternetPermissionIsDeclared",
+      "outcome": "PASSED",
+      "seconds": "0.057",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "unitAndLabHeadingsStayInsideTheRoot",
+      "outcome": "PASSED",
+      "seconds": "3.076",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords",
+      "outcome": "FAILED",
+      "seconds": "0.268",
+      "messagePreview": "org.junit.ComparisonFailure: expected:<[161a578ba556d709b621b61f138ad36290da57869a87ed57979e0bc7058b0aa7]> but was:<[759ae979b4101044396a4ea69c2a697832e6f3b80cd2e69efda28d3f0954c434]>",
+      "fullMessageBytes": 183,
+      "fullMessageSha256": "ea524416c97727d41ea7ebef834809c90742c4e0254450d065c081534ea2edcd"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "todayShowsOneBoundedSessionInsteadOfTheUnitInventory",
+      "outcome": "PASSED",
+      "seconds": "0.865",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "packValidatesAndRefusesGeneratedOrCatalogBoundContent",
+      "outcome": "PASSED",
+      "seconds": "3.212",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "approvedReviewRequiresACompleteMatchingRecord",
+      "outcome": "PASSED",
+      "seconds": "21.439",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "unitOneProgressesInOrderAndRestoresAfterRestart",
+      "outcome": "PASSED",
+      "seconds": "0.242",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "installedUnitsAreRejectedWhileRequiredExperiencesAreMissing",
+      "outcome": "PASSED",
+      "seconds": "2.934",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "productHelpAndOperationalGuidanceMayUseNotRequired",
+      "outcome": "PASSED",
+      "seconds": "2.93",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "advancementNeedsMoreThanOneCheckAndBookAttestation",
+      "outcome": "PASSED",
+      "seconds": "0.384",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "linguisticReferencesCannotUseNotRequired",
+      "outcome": "PASSED",
+      "seconds": "13.468",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "onboardingAndPrimaryControlsAreVisible",
+      "outcome": "PASSED",
+      "seconds": "1.365",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "notPreparedBookDirectionCannotBePromotedOrAdvanced",
+      "outcome": "PASSED",
+      "seconds": "13.962",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "advancementCannotSkipARequiredObjective",
+      "outcome": "PASSED",
+      "seconds": "0.465",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "noUnitCanBeInstalledWithPendingReviewOrMapping",
+      "outcome": "PASSED",
+      "seconds": "8.1",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "unitTwoRequiresUnitOneAndCannotUseUnrelatedCatalogAudio",
+      "outcome": "PASSED",
+      "seconds": "0.323",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "durablePackIdentityStaysHonestAndUnitIsolationHolds",
+      "outcome": "PASSED",
+      "seconds": "0.971",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "primaryContentStartsAtTheInsetWhenFontIsLarge",
+      "outcome": "PASSED",
+      "seconds": "1.415",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.V2RebuildTest",
+      "tests": "24",
+      "skipped": "0",
+      "failures": "1",
+      "errors": "0",
+      "timestamp": "2026-10-29T12:17:58.837Z",
+      "hostname": "139038e4205c",
+      "time": "122.077"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin UP-TO-DATE",
+    "compileDebugSources": "> Task :app:compileDebugSources UP-TO-DATE",
+    "lintAnalyzeDebug": "> Task :app:lintAnalyzeDebug UP-TO-DATE",
+    "lintAnalyzeDebugUnitTest": "> Task :app:lintAnalyzeDebugUnitTest UP-TO-DATE",
+    "lintDebug": "> Task :app:lintDebug",
+    "verifyReleaseGateAttachment": "> Task :app:verifyReleaseGateAttachment"
+  },
+  "lintIssuesBySeverity": {
+    "Fatal": 0,
+    "Error": 0,
+    "Warning": 20,
+    "Hint": 1
+  },
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": {
+    "sameInputTrees": true,
+    "discoveredNotReported": [],
+    "reportedNotDiscovered": [],
+    "exactSameMethodSet": true
+  },
+  "allFreshSelectedMethodsReported": true,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}
