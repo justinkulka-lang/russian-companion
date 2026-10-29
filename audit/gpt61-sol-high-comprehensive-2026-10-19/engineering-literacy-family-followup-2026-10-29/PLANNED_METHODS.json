@@ -1,0 +1,54 @@
+[
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+    "method": "unitTwoRequiredReviewDoesNotRepeatAnEntireUnitOneDisplayTask"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+    "method": "literacyWorkRemainsRequiredAndItsReviewRemainsPending"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+    "method": "unitTwoRequiredChecksExplainEachWrongOptionByItsValue"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+    "method": "unitOneRequiredChecksExplainEachWrongOptionByItsValue"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+    "method": "currentCompatibilityValidationStillAcceptsThePack"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+    "method": "latinAndCyrillicLookalikesRemainDifferentUnicodeIdentities"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyHistoryCaptureTest",
+    "method": "preCorrectionLiteracyAndDependentReviewHistoryRoundTripWithoutRelabelling"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+    "method": "patchPreservesAllKeysAndAllOtherCourseContentWithinAnExactWhitelist"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+    "method": "allTenHistoriesReopenUnchangedButObsoleteFoundationsAndDependentReviewCannotGrantCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+    "method": "freshCorrectedWorkReestablishesCompletionWithoutRelabellingTheLegacyReview"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyCorrectionCompatibilityTest",
+    "method": "revisedTasksUseActualLowercaseCuesAndThreeCyrillicAlternativesWithLinkedExamples"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyFeedbackUiTest",
+    "method": "letterIdentityExplainsEachWrongValueWithoutGrantingRequiredCredit"
+  },
+  {
+    "testClass": "dev.russiancompanion.v2.LiteracyFeedbackUiTest",
+    "method": "lowercaseCaseVariantExplainsEachWrongValueAndPreservesTheKey"
+  }
+]

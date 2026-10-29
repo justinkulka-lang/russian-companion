@@ -20,7 +20,7 @@ import org.robolectric.annotation.Config
 @Config(sdk = [33])
 class LiteracyFeedbackUiTest {
     @get:Rule val compose = createComposeRule()
-    @Test fun letterIdentityExplainsEachWrongValueWithoutGrantingRequiredCredit() = feedback("u1-i-м-identity", 1)
+    @Test fun letterIdentityExplainsEachWrongValueWithoutGrantingRequiredCredit() = feedback("u1-i-ё-identity", 1)
     @Test fun lowercaseCaseVariantExplainsEachWrongValueAndPreservesTheKey() = feedback("u2-i-в-not-b", 2)
 
     private fun feedback(id: String, unit: Int) {
