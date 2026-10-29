@@ -1,0 +1,47 @@
+{
+  "inputTrees": {
+    "app/src/main": "4a10247fc4b16a451230ca540abcededac23f554",
+    "app/src/test": "f6b3f6e8fb8af8b382ff57cbe26555a9a087fa02",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "3cb94ec5b107e307f106f397380a4177621a2ae7",
+    "release": "81e1b4ac607baf83b645ed9bfae0bb5a516b8d1a"
+  },
+  "selectors": [
+    "dev.russiancompanion.v2.RationaleQualityBoundaryTest"
+  ],
+  "expectedMethods": [
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "sourceTemplateMustNotBePresentedAsAnOptionExplanation"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "rejectedReadingRestatementMustNotBePresentedAsAnExplanation"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "differentShownFormMustNotBePresentedAsTheDisplayedCue"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "specificExistingExplanationStillFollowsTheAuthoredOptionValue"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "correctSelectionDoesNotAcquireAWrongOptionExplanation"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "unknownSelectionDoesNotAcquireAnotherOptionsExplanation"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "missingAuthoredExplanationRetainsTheExistingFallback"
+    }
+  ],
+  "methodCount": 7,
+  "classes": 1,
+  "completeSuite": false,
+  "expectedDistributionIsHypothesisOnly": "3qualityfailures/4positivecontrols"
+}

@@ -1,0 +1,5 @@
+# B03 rationale presentation boundary baseline
+
+Seven new tests call the current shared presenter using actual WC001 template/restatement/shown-cue-mismatch items, with specific-existing-rationale option-value/reordering, correct, unknown and missing-rationale controls. All284older test files and production/content/policies/native/source bindings remain unchanged. Threefailures/fourcontrols is a hypothesis until actual execution. No new linguistic/source/rights acceptance and no finding closure. The next bounded engineering change must reject recognizable bad explanation patterns and preserve common feedback, valid rationale, scoring, option values, saved credit and explicit explanation navigation. Content-level factual corrections and missing rationale remain B03-CONTENT and independent recheck work.
+
+No per-unit schema campaign. All59OPEN/auditINCOMPLETE/four exporters16methods excluded/physicalLAST/noAPKassembly/install/signing/merge/freeze/approval. Fresh discovery then runtime required;inspect external b03-rationale-quality-baseline-2026-10-29 before launch/edit. Existing1508broad source5a3411a7:1507pass/1physicalskip remains separate and unsummed.
