@@ -1,0 +1,11 @@
+# First literacy-family correction scope
+
+Required baseline:18Unit1items and5Unit2items currently lack46wrong-option explanations. Four Unit2tasks exactly repeat Unit1tasks. These observations reproduce WC001/CC030 and do not adjudicate other59finding dispositions.
+
+After retaining the baseline and ten actual synthetic histories, author per-option English explanations tied to option VALUES and documented letter-form/letter-name facts. Keep blank explanation for correct selections and preserve grader selection semantics. Do not relabel generic boilerplate as specific feedback. Retain old bytes/IDs in evidence. Existing glyphs and names are reused; no new Russian words, private book expression, audio, handwriting or approval.
+
+Replace the four literal Unit2replays with lowercase-to-uppercase Cyrillic case-pair tasks using three distinct Cyrillic alternatives, preserving semantic key values where suitable and including proper instruction/remediation examples. A mere prompt paraphrase does not qualify. The Unit2 review must assess actual paired forms, not choosing the only Cyrillic-labelled option among Latin choices. Reuse the existing letter board and legitimate worked examples. Key/cue overlap and apparent visual homographs require case/script-aware review.
+
+Before applying content, document exact source assumptions and authored evidence with review pending; do not infer external source verification. Prove the patch changes only whitelisted rationale fields, four tasks and coherent linked Unit2teaching. All existing source/rights/provenance/book mappings and Units3–30content remain exact except unavoidable canonical dependency invalidation from revised foundational material. Item IDs remain historical identities; current digests distinguish changed semantics. Old attempts/completions/reviews remain raw records, not current credit. Use captured history to verify this explicitly after correction and fresh work to re-establish completion.
+
+All59findings remain OPEN. The scope does NOT fix the alphabet's sound coverage, missing listening, missing true decoding, all assessment design, cumulative-review architecture, later-unit rationales, rights or owner acceptance. Do not advertise full literacy repair or audit readiness.
