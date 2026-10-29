@@ -1,0 +1,4 @@
+testClass,method,outcome,seconds,messagePreview,fullMessageBytes,fullMessageSha256
+dev.russiancompanion.v2.UnitIdentityCacheReadThroughTest,aLivePackEvictedByOtherPackInstancesIsRepopulatedOnce,FAILED,3.707,java.lang.AssertionError: Bounded eviction must not leave a live pack permanently on the uncached path expected:<1> but was:<12>,128,f055b32ca32ba864056f1175e1db7d9e1a2e35cf58d5fc24af5cb45fcab46855
+dev.russiancompanion.v2.UnitIdentityCacheReadThroughTest,repeatedColdIdentityChecksComputeTheSameUnitOnlyOnce,FAILED,0.1,java.lang.AssertionError: One immutable pack/unit should not be canonicalized for every recorded attempt expected:<1> but was:<12>,130,8d68b22df0cd9d6f9c32ef3362e66258a8c89de5038aff0cc0dc6fe3d7c19dcb
+dev.russiancompanion.v2.UnitIdentityCacheReadThroughTest,cachedAndMutatedPackIdentitiesRemainDistinctAndRejectEachOthersCredit,PASSED,0.051,,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
