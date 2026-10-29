@@ -1,0 +1,5 @@
+# Unit identity cache baseline prepared
+
+One new3method FULLclass counts repeated canonical unit digest work on a cold and an evicted immutable pack, with a changed-pack rejection control. No production correction is applied. All281pre-existing test files, source, bindings and original fixtures are unchanged. The one-unit copy is a digest fixture, not an admitted replacement curriculum. Baseline expected2count failures/1strict control pass remains a hypothesis until actual execution. Entire baseline test bytes are archived unchanged.
+
+Fresh discovery and actual runtime are NOT_RUN at this checkpoint. Inspect external /workspace/artifacts/unit-identity-cache-baseline-2026-10-28 contexts/PIDs/completions before launch/edit. Prior119run is intentionally incomplete:68SUCCESS/2interruptionSKIPPED/49noevent, not a completed run; all previous scopes separate/unsummed. No further Cursor use. All48OPEN/auditINCOMPLETE/four exporters16excluded/physicalLAST/noAPK/signing/merge/freeze/releaseapproval.
