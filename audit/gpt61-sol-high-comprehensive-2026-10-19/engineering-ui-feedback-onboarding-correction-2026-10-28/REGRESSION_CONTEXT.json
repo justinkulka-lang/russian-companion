@@ -1,0 +1,81 @@
+{
+  "sourceCommit": "ff450b7215d5f7ab24f7e9b10d7b831430e5af82",
+  "sourceRootTree": "52467d17949fcb1418278b45dc331c5557497f7f",
+  "workingTreeAtStart": "CLEAN",
+  "workingDirectory": "/workspace/russian-companion",
+  "activation": "source /workspace/setup/android-env.sh",
+  "startedUtc": "2026-10-29T00:46:45.019921+00:00",
+  "inputTrees": {
+    "app/src/main": "4a10247fc4b16a451230ca540abcededac23f554",
+    "app/src/test": "82a4e2b8b40483759a68a30579faebd1ce7eaa44",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "4bc1e7678565cdbefcf31c7fc4e5272d8e749fd7",
+    "release": "c03bb8dbc3025ef83f463c6a8521526b09da8e42"
+  },
+  "mode": "REGRESSION",
+  "syntheticDryRun": false,
+  "command": [
+    "./gradlew",
+    "-I",
+    "/workspace/setup/cloud-validation.gradle",
+    "-I",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle",
+    "-I",
+    "/workspace/artifacts/ui-feedback-onboarding-correction-2026-10-28/resources.gradle",
+    "-Daudit.history.output=/workspace/artifacts/ui-feedback-onboarding-correction-2026-10-28/REGRESSION/HISTORY_CASES.jsonl",
+    "-Daudit.events.path=/workspace/artifacts/ui-feedback-onboarding-correction-2026-10-28/REGRESSION/EVENTS.jsonl",
+    "-Daudit.gc.dir=/workspace/artifacts/ui-feedback-onboarding-correction-2026-10-28/REGRESSION",
+    "testDebugUnitTest",
+    "--rerun",
+    "--tests",
+    "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+    "--tests",
+    "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+    "--tests",
+    "dev.russiancompanion.v2.OptionPresentationUiTest",
+    "--tests",
+    "dev.russiancompanion.v2.RuntimeCorrectionTest",
+    "--tests",
+    "dev.russiancompanion.v2.V2RebuildTest",
+    "--tests",
+    "dev.russiancompanion.v2.Unit14FeedbackCorrectionTest",
+    "compileDebugSources",
+    "lintDebug",
+    "verifyReleaseGateAttachment",
+    "--continue",
+    "--offline",
+    "--max-workers=2",
+    "--console=plain"
+  ],
+  "runnerSha256": "c32a02eb68e00d49d746d683fbf337b202adfb5aa7ec4fdb02c27bdcf49c791d",
+  "initScriptSha256": {
+    "/workspace/setup/cloud-validation.gradle": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123",
+    "/workspace/russian-companion/audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/broader-tests.gradle": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319",
+    "/workspace/artifacts/ui-feedback-onboarding-correction-2026-10-28/resources.gradle": "25ade68e605848e8a6437bf162631435dc72d5ab0f033621aa4f1aeca317f42f"
+  },
+  "selectors": [
+    "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+    "dev.russiancompanion.v2.OnboardingStateRestorationTest",
+    "dev.russiancompanion.v2.OptionPresentationUiTest",
+    "dev.russiancompanion.v2.RuntimeCorrectionTest",
+    "dev.russiancompanion.v2.V2RebuildTest",
+    "dev.russiancompanion.v2.Unit14FeedbackCorrectionTest"
+  ],
+  "workerPolicy": "2forks/6GiB/forkEvery4;GC logs retained",
+  "resources": {
+    "cgroupMemoryMax": "34359738368",
+    "cgroupMemoryCurrent": "7174332416",
+    "cpus": 5
+  },
+  "exclusions": {
+    "VisualReviewCaptureTest": 2,
+    "Units35ChunkCaptureTest": 2,
+    "Units610ChunkCaptureTest": 10,
+    "Units1115GapCaptureTest": 2
+  },
+  "scope": "61 methods /6FULLclasses: unchanged6methodUIbaseline plus existing option presentation/runtime/rebuild/Unit14feedback controls;not complete suite",
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN",
+  "completeSuite": false
+}

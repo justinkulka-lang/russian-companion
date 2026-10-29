@@ -1,0 +1,122 @@
+{
+  "INIT/broader-tests.gradle": {
+    "bytes": 1905,
+    "sha256": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "INIT/cloud-validation.gradle": {
+    "bytes": 788,
+    "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123"
+  },
+  "INIT/resources.gradle": {
+    "bytes": 648,
+    "sha256": "25ade68e605848e8a6437bf162631435dc72d5ab0f033621aa4f1aeca317f42f"
+  },
+  "POST_RUN_RECONCILIATION.json": {
+    "bytes": 16366,
+    "sha256": "426c623e77011cd5b9c31460137ef711d5465ad103142351d41722b8b4a4b03a"
+  },
+  "REGRESSION/CONTEXT.json": {
+    "bytes": 3600,
+    "sha256": "b4d5db207fc34493359bcddc6ae41ad68882d35dc26c37ff0b85b2773609fa36"
+  },
+  "REGRESSION/EVENTS.jsonl": {
+    "bytes": 33832,
+    "sha256": "ae7c544ec3f574fcd1f95db50a6750442c56b53335235f239b26820a4daa3785"
+  },
+  "REGRESSION/LINT_CAPTURED_AFTER_COLLECTOR_REFUSAL.xml": {
+    "bytes": 31476,
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "REGRESSION/RUN.exit": {
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "REGRESSION/RUN.log": {
+    "bytes": 4637,
+    "sha256": "8e0d00695007c380768b3c5bfb7b5377b2eefb1c714dd41e543300b575d60431"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.OnboardingStateRestorationTest.xml": {
+    "bytes": 673,
+    "sha256": "4126d7ab04fb69d3e3748bffc05117048f9c9b717d28030039e8fb69d91a6de0"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.OptionPresentationUiTest.xml": {
+    "bytes": 985,
+    "sha256": "6275fb40acd7eb45b14c1850e493ab067cfd6e310e547b6d131cdd061adc8efc"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.RuntimeCorrectionTest.xml": {
+    "bytes": 9088,
+    "sha256": "e226b5a91a5893ed8644559638a1239d0f2a731688f14ad3d63a3387ce8e22e6"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.SelectedOptionRationaleUiTest.xml": {
+    "bytes": 1738,
+    "sha256": "ea69abd5386d2c2385d084ef40ece37305cec187b977a0f992d1ec95fedd897e"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.Unit14FeedbackCorrectionTest.xml": {
+    "bytes": 2107,
+    "sha256": "8d0c98cf722ad79c84c8def24c1842ca58e7e404f8673845290d1fbe1c9f7e2d"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.v2.V2RebuildTest.xml": {
+    "bytes": 9263,
+    "sha256": "5390dc174e29cbbfcff81de38d015a1775feae825fecf3d360a95faee63abe09"
+  },
+  "REGRESSION/gc-116834.log": {
+    "bytes": 16095,
+    "sha256": "89a56f0f0ea39d69a38fa7f9ed868497c85c2b727f548b1cdc4f52c1723131d1"
+  },
+  "REGRESSION/gc-116836.log": {
+    "bytes": 42341,
+    "sha256": "9a3a25bee34ecacf14c9e73363a21c78d576d541ff68d38de920676ff6379f58"
+  },
+  "REGRESSION_COMPLETION.json": {
+    "bytes": 210,
+    "sha256": "94c23c839f822b2546237fce7a1a54abe6c0921d81ccc1ad0b198d3e3e31ebba"
+  },
+  "REGRESSION_LAUNCHER.exit": {
+    "bytes": 2,
+    "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+  },
+  "REGRESSION_LAUNCHER.json": {
+    "bytes": 158,
+    "sha256": "10d0154eb5b833f4fdda85c9874e36413d5af62dee559937a290b22c5e1b0892"
+  },
+  "REGRESSION_LAUNCHER.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "REGRESSION_RUNNER.log": {
+    "bytes": 338,
+    "sha256": "d92afa1438879f9aaed5764dfef2818b530e544e8e7f0546a1bc0c8e1b593573"
+  },
+  "REGRESSION_RUNNER_PROCESS.json": {
+    "bytes": 290,
+    "sha256": "c1b65e0790ede766ddded84769c3ef2238023eaad66cfadc9f25b35796277bef"
+  },
+  "TOOLING/SCOPE.json": {
+    "bytes": 9953,
+    "sha256": "f388bcc1cf0a70086da1a48ae5c8680dc7b641018acf7b26ea7a21441bd6e906"
+  },
+  "TOOLING/launch.py": {
+    "bytes": 807,
+    "sha256": "661837c1fb0e419766972792f94204cc1bff97b10787ca6e6365e40dc937449f"
+  },
+  "TOOLING/prepare.py": {
+    "bytes": 6298,
+    "sha256": "ada5bc4d6565e1a7f3b536f41bfa23af176b60d95d0e4b86ce2b6d9087d5d737"
+  },
+  "TOOLING/reconcile-ui-verification.py": {
+    "bytes": 10970,
+    "sha256": "0d2bac18aeb1d2843f3af8ac5c57eb7f2f410e240cc7141a405d13315ac85107"
+  },
+  "TOOLING/resources.gradle": {
+    "bytes": 648,
+    "sha256": "25ade68e605848e8a6437bf162631435dc72d5ab0f033621aa4f1aeca317f42f"
+  },
+  "TOOLING/run.py": {
+    "bytes": 7285,
+    "sha256": "c32a02eb68e00d49d746d683fbf337b202adfb5aa7ec4fdb02c27bdcf49c791d"
+  },
+  "TOOLING/supervise.py": {
+    "bytes": 1197,
+    "sha256": "49346dac8349205097c4ca0b28482edfa4180ff483051b785834e8bc62613614"
+  }
+}
