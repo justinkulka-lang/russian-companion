@@ -767,11 +767,14 @@ internal object V2PackIdentityIndex {
     private val units = IdentityWeakCache<Map<Int, String>>()
 
     fun warm(pack: V2CurriculumPack) {
-        if (steps.get(pack) != null && units.get(pack) != null) return
+        val cachedUnits = units.get(pack)
+        if (steps.get(pack) != null && cachedUnits != null &&
+            pack.units.all { it.number in cachedUnits }) return
         val stepMap = pack.units.flatMap { it.sessions }.flatMap { it.steps }
             .associate { step -> step.id to rawStepContentDigest(pack, step) }
         val unitMap = pack.units.associate { unit ->
-            unit.number to V2Validator.unitContentReviewDigest(pack, unit.number)
+            unit.number to (cachedUnits?.get(unit.number)
+                ?: V2Validator.unitContentReviewDigest(pack, unit.number))
         }
         steps.put(pack, stepMap)
         units.put(pack, unitMap)
@@ -779,7 +782,18 @@ internal object V2PackIdentityIndex {
 
     fun stepDigest(pack: V2CurriculumPack, stepId: String): String? = steps.get(pack)?.get(stepId)
 
-    fun unitDigest(pack: V2CurriculumPack, unitNumber: Int): String? = units.get(pack)?.get(unitNumber)
+    /** A cold or evicted immutable pack must not rehash a unit for every recorded attempt. */
+    fun unitDigest(pack: V2CurriculumPack, unitNumber: Int): String? {
+        units.get(pack)?.get(unitNumber)?.let { return it }
+        if (pack.units.none { it.number == unitNumber }) return null
+        return synchronized(units) {
+            units.get(pack)?.get(unitNumber) ?: run {
+                val computed = V2Validator.unitContentReviewDigest(pack, unitNumber)
+                units.put(pack, units.get(pack).orEmpty() + (unitNumber to computed))
+                computed
+            }
+        }
+    }
 
     fun clearForTests() {
         V2CompletionEvidence.clearForTests()

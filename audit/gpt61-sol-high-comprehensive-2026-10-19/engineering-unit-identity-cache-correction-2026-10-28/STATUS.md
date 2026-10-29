@@ -1,0 +1,7 @@
+# Bounded unit identity read-through correction prepared
+
+Only V2GovernedIdentity.kt changes: cold/evicted unitDigest computes the same canonical digest once and stores it in the existing bounded weak identity cache. warm() distinguishes partial maps from full-unit coverage and fills missing units while reusing cached exact values. Cache limit8, weak keys, canonical calculations, policy/schema meanings, source data, answer keys and saved identity rules are unchanged. No hash allowlist or fabricated acceptance. All282test files, including the entire3method genuine baseline, remain byte-exact.
+
+The original baseline source7c3005f8 reported3tests/1strictidentitycontrolPASS/2real countfailures(12vs1)/exit1. Full failures remain preserved in the separate baseline directory. Source/review binding reconciliation is PENDING after this production edit;155records stay unchanged and no current acceptance is inferred. All77protected archives/prior1499/interrupted119/baseline evidence remain unchanged.
+
+25methods/2FULLclasses is prepared inventory only: the3unchanged baseline methods and the entire22method RemainingReauditCorrectionTest, including existing cold/warm/off-main and weak-key reclamation controls. Fresh discovery/runtime NOT_RUN. Inspect external /workspace/artifacts/unit-identity-cache-correction-2026-10-28 contexts/PIDs/completions before launch/edit. Codex only/no further Cursor use. All48OPEN/auditINCOMPLETE/four exporters16excluded/physicalLAST/noAPK/signing/merge/freeze/approval.
