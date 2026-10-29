@@ -1,0 +1,128 @@
+{
+  "sourceCommit": "5892c1f3b7bd4a2734bbf0b0ef90d9ccdf4658a2",
+  "inputTrees": {
+    "app/src/main": "c29d3d994e31ca7207c6d8bbaa47ebd335eef77d",
+    "app/src/test": "f5d3ea3759e276e1564f8008d2a5dd3cb35fc174",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "2f265ea7982f1a507bc7ccb1c1e7f45c47f27e12",
+    "release": "ded62b471adcbde7deb752afd823cab40a07b394"
+  },
+  "syntheticDryRun": true,
+  "exitCode": 0,
+  "finishedUtc": "2026-10-29T11:23:51.267236+00:00",
+  "testCounts": {
+    "reported": 7,
+    "passed": 0,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 7
+  },
+  "classes": 2,
+  "tests": [
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "method": "unitTwoRequiredReviewDoesNotRepeatAnEntireUnitOneDisplayTask",
+      "outcome": "SKIPPED",
+      "seconds": "0.001",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "method": "literacyWorkRemainsRequiredAndItsReviewRemainsPending",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "method": "unitTwoRequiredChecksExplainEachWrongOptionByItsValue",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "method": "unitOneRequiredChecksExplainEachWrongOptionByItsValue",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "method": "currentCompatibilityValidationStillAcceptsThePack",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "method": "latinAndCyrillicLookalikesRemainDifferentUnicodeIdentities",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.LiteracyHistoryCaptureTest",
+      "method": "preCorrectionLiteracyAndDependentReviewHistoryRoundTripWithoutRelabelling",
+      "outcome": "SKIPPED",
+      "seconds": "0.0",
+      "messagePreview": "",
+      "fullMessageBytes": 0,
+      "fullMessageSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "suites": [
+    {
+      "name": "dev.russiancompanion.v2.LiteracyAssessmentQualityTest",
+      "tests": "6",
+      "skipped": "6",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-29T11:23:50.627Z",
+      "hostname": "139038e4205c",
+      "time": "0.019"
+    },
+    {
+      "name": "dev.russiancompanion.v2.LiteracyHistoryCaptureTest",
+      "tests": "1",
+      "skipped": "1",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-29T11:23:50.937Z",
+      "hostname": "139038e4205c",
+      "time": "0.004"
+    }
+  ],
+  "tasks": {
+    "testDebugUnitTest": "> Task :app:testDebugUnitTest",
+    "compileDebugKotlin": "> Task :app:compileDebugKotlin UP-TO-DATE",
+    "compileDebugUnitTestKotlin": "> Task :app:compileDebugUnitTestKotlin",
+    "compileDebugSources": "NOT_REACHED",
+    "lintAnalyzeDebug": "NOT_REACHED",
+    "lintAnalyzeDebugUnitTest": "NOT_REACHED",
+    "lintDebug": "NOT_REACHED",
+    "verifyReleaseGateAttachment": "NOT_REACHED"
+  },
+  "lintIssuesBySeverity": null,
+  "selectedFreshXmlAndEventsMatch": true,
+  "eventOutcomeCountsMatchXml": true,
+  "discoveryComparison": null,
+  "allFreshSelectedMethodsReported": false,
+  "completeSuite": false,
+  "scopesNotSummed": true,
+  "physicalAcceptance": "OUTSTANDING_LAST",
+  "apkAssemblyInstallSigning": "NOT_RUN"
+}
