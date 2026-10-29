@@ -58,9 +58,10 @@ Never:
 | ID | Type | Task | Done when | Needs | Status |
 |---|---|---|---|---|---|
 | T00 | STOP-OWNER | Ratify Amendment 2. Give Codex the ratified file. | Signed file supplied | — | DONE — Ratified attachment supplied by the Product Owner on 2026-10-29. |
-| T01 | CODEX | Commit Amendment 2 to docs/governance/. Commit this file to the repo root. Before replacing AGENTS.md, copy the old AGENTS.md into audit/retired/ so T02 archives it. Then replace AGENTS.md with the supplied version. There is no root NEXT_TASK.md; skip copying/deleting it. Per-folder NEXT_TASK.md files under audit/ stay in place for T02. | Files committed. AGENTS.md points here. | T00 | IN_PROGRESS |
+| T01 | CODEX | Commit Amendment 2 to docs/governance/. Commit this file to the repo root. Before replacing AGENTS.md, copy the old AGENTS.md into audit/retired/ so T02 archives it. Then replace AGENTS.md with the supplied version. There is no root NEXT_TASK.md; skip copying/deleting it. Per-folder NEXT_TASK.md files under audit/ stay in place for T02. | Files committed. AGENTS.md points here. | T00 | BLOCKED — Files committed in e71bbf60f6331e9a2b4370bb671f9fa56665e3b9. The required testDebugUnitTest run was interrupted during the environment restart after 20 observed failures; no final suite result. The existing four screenshot-exporter exclusions (16 methods) were used. Resolve T01-n1 and pass the required suite, or obtain an explicit owner exception to step 6 for T01. |
 | T02 | CODEX | Archive historical audit material (A2-14). First list every file in app/src, build files and CI that reads a path under audit/. At 9101af8c, 61 test files and RetainedFinalAudit.kt do. Delete tests that only check historical audit evidence or old dev schemas (A2-08, A2-13). Keep the audit/final-curriculum-audit/ path that RetainedFinalAudit.kt reads. Then push the historical material to branch archive/audit-history-2026-10-29, remove it from the working branch, and write audit/ARCHIVE_INDEX.md with the archive commit hash. | Nothing in app/src, build files or CI reads an archived path. audit/ holds only ARCHIVE_INDEX.md and audit/final-curriculum-audit/. Tests pass. | T01 | TODO |
 | T03 | CODEX | Consolidate the cumulative-review assignment schemas into one. Drop dev-data compatibility code and the tests that only preserve old dev schemas (A2-08 to A2-11). Add a clean DB reset migration for dev installs. | One review schema. CI passes. | T02 | TODO |
+| T01-n1 | CODEX | Resolve or disposition the test failures found during T01 under Amendment 2: source-guard checks, candidate source digests, historical corpus/binding checks, and saved/legacy-review checks. Do not regenerate conserved-binding inventories or preserve old dev-schema meanings to satisfy obsolete assertions. | Required unit-test suite passes, or the owner explicitly permits T01 to close with the failures assigned to queued work. | T00 | TODO |
 
 ## Phase 1 — Clean base
 
@@ -138,3 +139,5 @@ MEDIUM and LOW findings for those units are fixed or given a written disposition
 ## Log
 
 (Codex appends one line per finished task: date, task ID, commit, one-line note.)
+
+- 2026-10-29 — T01 — e71bbf60f6331e9a2b4370bb671f9fa56665e3b9 — Amendment 2 and supplied AGENTS installed; old AGENTS copied to audit/retired/. File changes committed; task BLOCKED by test failures and an interrupted run, with no full-suite result.
