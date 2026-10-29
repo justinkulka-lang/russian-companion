@@ -1,0 +1,8 @@
+{
+  "pid": 132390,
+  "startedUtc": "2026-10-29T02:49:29.628040+00:00",
+  "researchSource": "5a3411a76b88753617ea18b3e1a54f44f6923b9f",
+  "dependency": "Broad AUTO_RESULT verified/pushed/openDraftPR64; no collection or repository edits before it",
+  "scope": "Read-only research plus three durable pointers only;no app/test/policy/schema changes",
+  "rootMustNotPublishResearchConcurrently": true
+}
