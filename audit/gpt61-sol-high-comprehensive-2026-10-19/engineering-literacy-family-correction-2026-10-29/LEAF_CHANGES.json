@@ -1,0 +1,361 @@
+[
+  {
+    "path": "/items/0/distractorRationales",
+    "before": null,
+    "after": [
+      "The capital shapes can look the same, but this card belongs to the Cyrillic alphabet. Latin A is a letter of a different alphabet.",
+      "",
+      "Р has a vertical stem and an upper loop. А has two sloping sides and a crossbar."
+    ]
+  },
+  {
+    "path": "/items/1/distractorRationales",
+    "before": null,
+    "after": [
+      "",
+      "Н has two upright strokes joined by a horizontal crossbar. М has inner diagonal strokes.",
+      "Т has a top bar and a central stem. It does not have the inner diagonal strokes of М."
+    ]
+  },
+  {
+    "path": "/items/2/distractorRationales",
+    "before": null,
+    "after": [
+      "The capital shapes can look the same, but this is a Cyrillic letter card. The Latin name P does not name the Russian letter.",
+      "",
+      "П has two uprights joined across the top. Р has an upper loop attached to its stem."
+    ]
+  },
+  {
+    "path": "/items/3/distractorRationales",
+    "before": null,
+    "after": [
+      "The similar capital shape does not give this Cyrillic letter the Latin name H. Identify it within the Russian alphabet.",
+      "",
+      "И joins its uprights with a diagonal. Н uses a horizontal crossbar instead."
+    ]
+  },
+  {
+    "path": "/items/4/distractorRationales",
+    "before": null,
+    "after": [
+      "The similar capital shapes belong to different alphabets. The Latin name C does not identify this Cyrillic letter.",
+      "",
+      "К has diagonal arms extending from a straight stem. С is an open curved shape."
+    ]
+  },
+  {
+    "path": "/items/5/distractorRationales",
+    "before": null,
+    "after": [
+      "The Latin capital B looks similar, but this is a Cyrillic letter card. A Latin letter name does not identify it.",
+      "",
+      "Б has a top horizontal stroke and one lower bowl. В has two bowls."
+    ]
+  },
+  {
+    "path": "/items/6/distractorRationales",
+    "before": null,
+    "after": [
+      "The Latin capital Y may look similar, but this card belongs to the Cyrillic alphabet. Use the Cyrillic identity.",
+      "",
+      "И has two upright strokes joined diagonally. У has an upper fork and a descending tail."
+    ]
+  },
+  {
+    "path": "/items/7/distractorRationales",
+    "before": null,
+    "after": [
+      "The matching shape does not make this the Latin letter X. This card belongs to the Cyrillic alphabet.",
+      "",
+      "К has a vertical stem with two arms. Х consists of two crossing diagonal strokes."
+    ]
+  },
+  {
+    "path": "/items/8/distractorRationales",
+    "before": null,
+    "after": [
+      "",
+      "Е has the same main shape but no dots. The two dots distinguish the shown Ё.",
+      "Э opens toward the left and has no dots. Ё has the Е shape with two dots above it."
+    ]
+  },
+  {
+    "path": "/items/9/distractorRationales",
+    "before": null,
+    "after": [
+      "",
+      "У has an upper fork and a descending tail. Ю has an upright joined to a rounded part.",
+      "Я has a loop and a diagonal leg. Ю has an upright and a rounded part side by side."
+    ]
+  },
+  {
+    "path": "/items/10/distractorRationales",
+    "before": null,
+    "after": [
+      "",
+      "Р has its loop on the right of the stem. Я has a loop on the left and a diagonal leg.",
+      "А has two sloping sides and a crossbar. Я combines a stem, a loop and a diagonal leg."
+    ]
+  },
+  {
+    "path": "/items/11/distractorRationales",
+    "before": null,
+    "after": [
+      "Й is short I and is classified here as a consonant. It is distinct from the vowel И.",
+      "",
+      "Ь is the soft sign. Й has a short mark above the И shape and is a different letter."
+    ]
+  },
+  {
+    "path": "/items/12/distractorRationales",
+    "before": null,
+    "after": [
+      "",
+      "А and О are different letters. Changing the case of А produces а, not О.",
+      "М and Т are different letters. Their lowercase partners are м and т, respectively."
+    ]
+  },
+  {
+    "path": "/items/13/distractorRationales",
+    "before": null,
+    "after": [
+      "",
+      "Э opens toward the left. Е has its upright stroke on the left and its horizontal strokes extend to the right.",
+      "Ё has two dots above the Е shape. The shown Е has no dots."
+    ]
+  },
+  {
+    "path": "/items/14/distractorRationales",
+    "before": null,
+    "after": [
+      "The soft sign does not supply a separate vowel sound. Compare it with the vowel letters in the signs explanation.",
+      "",
+      "Ъ is the hard sign. Ь is the soft sign; they are different letters with different functions."
+    ]
+  },
+  {
+    "path": "/items/15/distractorRationales",
+    "before": null,
+    "after": [
+      "The hard sign does not supply a separate vowel sound. It is distinct from the vowel letters.",
+      "",
+      "Ь is the soft sign. The shown Ъ has an additional upper stroke and is the hard sign."
+    ]
+  },
+  {
+    "path": "/items/16/distractorRationales",
+    "before": null,
+    "after": [
+      "",
+      "Р pairs with р; п pairs with П. This option joins two different letters.",
+      "Н pairs with н; и pairs with И. The diagonal in и is different from the crossbar of н."
+    ]
+  },
+  {
+    "path": "/items/17/distractorRationales",
+    "before": null,
+    "after": [
+      "Б pairs with б. The shown в pairs with В; compare the two bowls of в with the shape of б.",
+      "",
+      "Р pairs with р, which has a stem and a loop. It does not pair with the two-bowl в."
+    ]
+  },
+  {
+    "path": "/items/17/feedback",
+    "before": "В is not Latin B and it is not Cyrillic Б.",
+    "after": "The lowercase and uppercase forms belong to the same Cyrillic letter. Compare both strokes and shape in the letter-board pair."
+  },
+  {
+    "path": "/items/17/kind",
+    "before": "CONFUSABLE",
+    "after": "PRINT_PAIR"
+  },
+  {
+    "path": "/items/17/options/0",
+    "before": "Latin B",
+    "after": "Cyrillic Б"
+  },
+  {
+    "path": "/items/17/options/2",
+    "before": "Cyrillic Б",
+    "after": "Cyrillic Р"
+  },
+  {
+    "path": "/items/17/prompt",
+    "before": "This letter looks like Latin B. What is it?",
+    "after": "Which uppercase Cyrillic letter pairs with this lowercase print form?"
+  },
+  {
+    "path": "/items/17/promptLetter",
+    "before": "В",
+    "after": "в"
+  },
+  {
+    "path": "/items/18/distractorRationales",
+    "before": null,
+    "after": [
+      "Ч pairs with ч. The shown у has the descending tail of the У / у pair.",
+      "",
+      "Ц pairs with ц, with two uprights and a short lower extension. The shown у belongs to У / у."
+    ]
+  },
+  {
+    "path": "/items/18/feedback",
+    "before": "У is a Cyrillic vowel letter, not Latin Y.",
+    "after": "The lowercase and uppercase forms belong to the same Cyrillic letter. Compare both strokes and shape in the letter-board pair."
+  },
+  {
+    "path": "/items/18/kind",
+    "before": "CONFUSABLE",
+    "after": "PRINT_PAIR"
+  },
+  {
+    "path": "/items/18/options/0",
+    "before": "Latin Y",
+    "after": "Cyrillic Ч"
+  },
+  {
+    "path": "/items/18/options/2",
+    "before": "Cyrillic И",
+    "after": "Cyrillic Ц"
+  },
+  {
+    "path": "/items/18/prompt",
+    "before": "This letter looks like Latin Y. What is it?",
+    "after": "Which uppercase Cyrillic letter pairs with this lowercase print form?"
+  },
+  {
+    "path": "/items/18/promptLetter",
+    "before": "У",
+    "after": "у"
+  },
+  {
+    "path": "/items/19/distractorRationales",
+    "before": null,
+    "after": [
+      "Ж pairs with ж, whose strokes branch on both sides. The shown х has two crossing diagonals and pairs with Х.",
+      "",
+      "К pairs with к, with arms extending from an upright. The shown х has two crossing diagonals."
+    ]
+  },
+  {
+    "path": "/items/19/feedback",
+    "before": "Х is a Cyrillic letter, not Latin X.",
+    "after": "The lowercase and uppercase forms belong to the same Cyrillic letter. Compare both strokes and shape in the letter-board pair."
+  },
+  {
+    "path": "/items/19/kind",
+    "before": "CONFUSABLE",
+    "after": "PRINT_PAIR"
+  },
+  {
+    "path": "/items/19/options/0",
+    "before": "Latin X",
+    "after": "Cyrillic Ж"
+  },
+  {
+    "path": "/items/19/prompt",
+    "before": "This letter looks like Latin X. What is it?",
+    "after": "Which uppercase Cyrillic letter pairs with this lowercase print form?"
+  },
+  {
+    "path": "/items/19/promptLetter",
+    "before": "Х",
+    "after": "х"
+  },
+  {
+    "path": "/items/20/distractorRationales",
+    "before": null,
+    "after": [
+      "",
+      "В pairs with в, not б. The lowercase б is the partner of Б.",
+      "Б pairs with б, not в. The lowercase в is the partner of В."
+    ]
+  },
+  {
+    "path": "/items/21/distractorRationales",
+    "before": null,
+    "after": [
+      "Р pairs with р. The loop and diagonal leg in я identify the Я / я pair.",
+      "",
+      "А pairs with а. The shown я is the lowercase partner of Я."
+    ]
+  },
+  {
+    "path": "/items/21/feedback",
+    "before": "Я is an iotated vowel letter. It is not Р or А.",
+    "after": "The lowercase and uppercase forms belong to the same Cyrillic letter. Compare both strokes and shape in the letter-board pair."
+  },
+  {
+    "path": "/items/21/kind",
+    "before": "LETTER_IDENTITY",
+    "after": "PRINT_PAIR"
+  },
+  {
+    "path": "/items/21/options/0",
+    "before": "Cyrillic Я",
+    "after": "Cyrillic Р"
+  },
+  {
+    "path": "/items/21/options/1",
+    "before": "Cyrillic Р",
+    "after": "Cyrillic Я"
+  },
+  {
+    "path": "/items/21/prompt",
+    "before": "Which printed letter is shown?",
+    "after": "Which uppercase Cyrillic letter pairs with this lowercase print form?"
+  },
+  {
+    "path": "/items/21/promptLetter",
+    "before": "Я",
+    "after": "я"
+  },
+  {
+    "path": "/items/578/distractorRationales",
+    "before": null,
+    "after": [
+      "",
+      "This is the name of В (VE), not Б (BE). The printed card shows Б.",
+      "This names П (PE), whose capital has two uprights and a top bar. The printed card shows Б (BE)."
+    ]
+  },
+  {
+    "path": "/units/1/objectives/0/exampleIds",
+    "before": [
+      "ex-print-letter-0411",
+      "ex-letter-0412",
+      "ex-letter-0423",
+      "ex-letter-0425"
+    ],
+    "after": [
+      "ex-letter-0412",
+      "ex-letter-0423",
+      "ex-letter-0425",
+      "ex-print-letter-0411",
+      "ex-letter-042f"
+    ]
+  },
+  {
+    "path": "/units/1/sessions/2/steps/0/body",
+    "before": "Review the printed letters from Unit 1, especially Latin look-alikes and print pairs. Read this as a review-pending explanation. Worked examples come before the guided choice, and the independent check is separate. A wrong answer returns to this contrast. Activity is not demonstrated ability.",
+    "after": "Match each lowercase print form to its uppercase partner. Compare the strokes in both parts of each letter-board pair. A similar-looking letter from the Latin alphabet is not a substitute for a Cyrillic letter. Use the worked examples to practise the case pairs, then identify the pair for the form on the check card."
+  },
+  {
+    "path": "/units/1/sessions/2/steps/0/exampleIds",
+    "before": [
+      "ex-letter-0412",
+      "ex-letter-0423",
+      "ex-letter-0425",
+      "ex-print-letter-0411"
+    ],
+    "after": [
+      "ex-letter-0412",
+      "ex-letter-0423",
+      "ex-letter-0425",
+      "ex-print-letter-0411",
+      "ex-letter-042f"
+    ]
+  }
+]
