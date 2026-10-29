@@ -113,6 +113,9 @@ internal fun V2CumulativeReviewScreen(pack: V2CurriculumPack, learner: V2Learner
             if (latest != null) {
                 Text(if (index in state.completed) "Review answer recorded. ${item.feedback}" else "Not the reviewed answer. ${item.feedback}",
                     Modifier.semantics { testTag = "v2-review-feedback-$index" })
+                selectedWrongOptionRationale(item, latest.selected)?.let { rationale ->
+                    Text(rationale, Modifier.semantics { testTag = "v2-review-rationale-$index" })
+                }
                 val objective = pack.unit(slot.ownerUnit)?.objectives?.firstOrNull { it.id == slot.objectiveId }
                 (cumulativeReviewAssignmentPolicy(a)?.pool?.firstOrNull { it.objectiveId == slot.objectiveId }?.remediationStepId
                     ?: objective?.remediationStepIds?.firstOrNull())?.let { step ->

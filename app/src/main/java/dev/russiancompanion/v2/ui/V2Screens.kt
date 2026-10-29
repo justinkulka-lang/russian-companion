@@ -131,13 +131,13 @@ internal fun V2LocalDataScreen(message: String, onRetry: () -> Unit) {
 
 @Composable
 internal fun V2OnboardingScreen(saveFailed: Boolean, onFinished: (V2OnboardingDraft) -> Unit) {
-    var page by remember { mutableIntStateOf(0) }
-    var penguin by remember { mutableStateOf(true) }
-    var anki by remember { mutableStateOf(false) }
-    var binder by remember { mutableStateOf(false) }
-    var tutor by remember { mutableStateOf(false) }
-    var start by remember { mutableStateOf(V2StartingPoint.NEW_TO_CYRILLIC) }
-    var minutes by remember { mutableIntStateOf(35) }
+    var page by rememberSaveable { mutableIntStateOf(0) }
+    var penguin by rememberSaveable { mutableStateOf(true) }
+    var anki by rememberSaveable { mutableStateOf(false) }
+    var binder by rememberSaveable { mutableStateOf(false) }
+    var tutor by rememberSaveable { mutableStateOf(false) }
+    var start by rememberSaveable { mutableStateOf(V2StartingPoint.NEW_TO_CYRILLIC) }
+    var minutes by rememberSaveable { mutableIntStateOf(35) }
     val title = when (page) {
         0 -> "Welcome"
         1 -> "Study system"
@@ -180,12 +180,12 @@ internal fun V2OnboardingScreen(saveFailed: Boolean, onFinished: (V2OnboardingDr
                 CompanionToggle("I have a tutor now", tutor) { tutor = it }
             }
             2 -> {
-                Text("New to Cyrillic is the recommended start. Resume from a later book lesson is not available while Units 3–30 are not installed.")
+                Text("New to Cyrillic is the recommended start. These choices adjust guidance; you will still begin at Unit 1.")
                 StartingChoice(V2StartingPoint.NEW_TO_CYRILLIC, start) { start = it }
                 StartingChoice(V2StartingPoint.CAN_READ_CYRILLIC, start) { start = it }
                 StartingChoice(V2StartingPoint.RESUME_FROM_BOOK, start) { start = it }
                 if (start == V2StartingPoint.RESUME_FROM_BOOK) {
-                    V2Status("Later units are not yet installed. You will still begin at Unit 1.")
+                    V2Status("You will begin at Unit 1. Choosing a starting point does not record any completed work.")
                 }
             }
             3 -> {
@@ -605,6 +605,9 @@ internal fun V2SessionScreen(
                     if (correct) "Recorded as correct. ${item.feedback}" else "Not the reviewed answer. ${item.feedback}",
                     modifier = Modifier.semantics { testTag = "v2-item-feedback-${item.id}" },
                 )
+                selectedWrongOptionRationale(item, selected)?.let { rationale ->
+                    Text(rationale, Modifier.semantics { testTag = "v2-item-rationale-${item.id}" })
+                }
                 if (!correct) {
                     step.remediationStepId?.let { target ->
                         V2SecondaryButton(

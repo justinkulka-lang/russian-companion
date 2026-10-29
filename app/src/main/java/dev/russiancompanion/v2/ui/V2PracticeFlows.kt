@@ -183,6 +183,9 @@ internal fun V2LabScreen(
                 },
                 modifier = Modifier.semantics { testTag = "v2-lab-feedback" },
             )
+            selectedWrongOptionRationale(item, recorded.selected)?.let { rationale ->
+                Text(rationale, Modifier.semantics { testTag = "v2-lab-rationale" })
+            }
             val teaching = labExplanationSteps(pack, item)
             if (teaching.isNotEmpty()) {
                 V2SecondaryButton(
