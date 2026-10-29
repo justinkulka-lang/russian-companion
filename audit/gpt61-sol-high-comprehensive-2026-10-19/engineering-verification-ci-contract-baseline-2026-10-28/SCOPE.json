@@ -1,0 +1,23 @@
+{
+  "inputTrees": {
+    "app/src/main": "4a10247fc4b16a451230ca540abcededac23f554",
+    "app/src/test": "82a4e2b8b40483759a68a30579faebd1ce7eaa44",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "3cb94ec5b107e307f106f397380a4177621a2ae7",
+    "release": "81e1b4ac607baf83b645ed9bfae0bb5a516b8d1a"
+  },
+  "selectors": [
+    "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest"
+  ],
+  "expectedMethods": [
+    {
+      "testClass": "dev.russiancompanion.acceptance.DeviceAcceptancePackageTest",
+      "method": "physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease"
+    }
+  ],
+  "methodCount": 1,
+  "classes": 1,
+  "inventoryFromActualDiscovery": true,
+  "completeSuite": false
+}

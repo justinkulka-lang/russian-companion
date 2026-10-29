@@ -1,0 +1,1 @@
+Current-source CI contract diagnostic before any older-test fixture change. Inventory from actual prior full discovery; fresh discovery/runtime required. Preserve original tests and raw failures. All48OPEN/auditINCOMPLETE/four exporters16excluded/physicalLAST/noAPK/signing/merge/freeze/approval.
