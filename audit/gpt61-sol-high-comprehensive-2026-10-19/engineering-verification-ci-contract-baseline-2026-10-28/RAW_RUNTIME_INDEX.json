@@ -1,0 +1,106 @@
+{
+  "INIT/broader-tests.gradle": {
+    "bytes": 1905,
+    "sha256": "9c93f75ef1d571a8dcceec1a692da31e50d898a7bb09b6499172956d4544c319"
+  },
+  "INIT/cloud-validation.gradle": {
+    "bytes": 788,
+    "sha256": "21c6a0ee2e97cf83c472513ac31c3d2d456e461185384e9b5e58c0fed298d123"
+  },
+  "INIT/resources.gradle": {
+    "bytes": 648,
+    "sha256": "25ade68e605848e8a6437bf162631435dc72d5ab0f033621aa4f1aeca317f42f"
+  },
+  "REGRESSION/CONTEXT.json": {
+    "bytes": 2938,
+    "sha256": "fff2306c53c0657d0b01615d949d803250305a796dfa7d1b21f436fb13ca54a1"
+  },
+  "REGRESSION/EVENTS.jsonl": {
+    "bytes": 666,
+    "sha256": "00752482c13cc7696b79cd001eff6896623a4760d504e20dcf1f8638a4bad1cb"
+  },
+  "REGRESSION/LINT.xml": {
+    "bytes": 31476,
+    "sha256": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6"
+  },
+  "REGRESSION/RESULT.json": {
+    "bytes": 2488,
+    "sha256": "ac1e7246e2cf9a898a1723e41a2a34a9d08d0bba46a8c0182b9d3a3d80fb6f47"
+  },
+  "REGRESSION/RESULTS.csv": {
+    "bytes": 309,
+    "sha256": "1cee4941d61c25b3bbe9b227c3108290dce0b76a527d42ea98ab7388a671b8f2"
+  },
+  "REGRESSION/RUN.exit": {
+    "bytes": 2,
+    "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+  },
+  "REGRESSION/RUN.log": {
+    "bytes": 4370,
+    "sha256": "861b3763a0bb729fa68108657dfc69b4cc2f19556f19150150a53677d54c5b59"
+  },
+  "REGRESSION/SHA256.json": {
+    "bytes": 823,
+    "sha256": "907cea64e77796aa8595ec8b361997b87aceb3815bdf77418f5626c1e813a873"
+  },
+  "REGRESSION/XML/TEST-dev.russiancompanion.acceptance.DeviceAcceptancePackageTest.xml": {
+    "bytes": 4680,
+    "sha256": "4559a30f3cc1843c2775ab970d5f1fc7a385c34ad368a5b1f93b6b9c060908d7"
+  },
+  "REGRESSION/gc-122361.log": {
+    "bytes": 179,
+    "sha256": "72c700a3b17f0e37ed7a59aa91f7861a3526e629ec8dfaffbb1ee1a26e76bea3"
+  },
+  "REGRESSION_COMPLETION.json": {
+    "bytes": 208,
+    "sha256": "f78db2b6a2c32a5e3306f12913f29bcd21ec72ba8a06e99635532bad341698e3"
+  },
+  "REGRESSION_LAUNCHER.exit": {
+    "bytes": 2,
+    "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+  },
+  "REGRESSION_LAUNCHER.json": {
+    "bytes": 158,
+    "sha256": "4f45911e3acf490067580c24e025bbfe981c3c0b0dbc19ddd78d6ae559aba974"
+  },
+  "REGRESSION_LAUNCHER.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "REGRESSION_RUNNER.log": {
+    "bytes": 211,
+    "sha256": "584e2a163f491947e53928ae73f54a96ee72b511021c28ab68e2a50da071e402"
+  },
+  "REGRESSION_RUNNER_PROCESS.json": {
+    "bytes": 290,
+    "sha256": "a464d2a541da4920f5e2eee03f86d0a01e5c6dc511c5547c9f010a055a34b7d5"
+  },
+  "TOOLING/SCOPE.json": {
+    "bytes": 776,
+    "sha256": "e67ba960138bd4dee85731db0f2428b9ed8850f2c95dcbbabc11f3b2f147631c"
+  },
+  "TOOLING/collect-small-scope-evidence.py": {
+    "bytes": 4380,
+    "sha256": "a9a33e51315e4698651748754cff5b85b4d72f1cd4ec2ec9222a3fb7f2bb9336"
+  },
+  "TOOLING/launch.py": {
+    "bytes": 807,
+    "sha256": "661837c1fb0e419766972792f94204cc1bff97b10787ca6e6365e40dc937449f"
+  },
+  "TOOLING/prepare.py": {
+    "bytes": 2914,
+    "sha256": "642e64b7e96461b2d96d7f48d7826a1a397d366c03023514e77ad715d4d92ad5"
+  },
+  "TOOLING/resources.gradle": {
+    "bytes": 648,
+    "sha256": "25ade68e605848e8a6437bf162631435dc72d5ab0f033621aa4f1aeca317f42f"
+  },
+  "TOOLING/run.py": {
+    "bytes": 7238,
+    "sha256": "b459b5cf6c0a657e06aec46eac8f9474836b80f8d8ea1994f6d0b5da058d9a50"
+  },
+  "TOOLING/supervise.py": {
+    "bytes": 1197,
+    "sha256": "49346dac8349205097c4ca0b28482edfa4180ff483051b785834e8bc62613614"
+  }
+}
