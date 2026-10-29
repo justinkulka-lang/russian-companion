@@ -1,0 +1,246 @@
+{
+  "inputTrees": {
+    "app/src/main": "c29d3d994e31ca7207c6d8bbaa47ebd335eef77d",
+    "app/src/test": "7ea4cd776c66afa12d5014f0b66bcb5d1f40311a",
+    "catalog": "af307958964fba3ec1994ec5200350fd5adb2d7f",
+    "docs": "7364239dde1b40c703aaca92974413f403e928f4",
+    "review": "3cb94ec5b107e307f106f397380a4177621a2ae7",
+    "release": "81e1b4ac607baf83b645ed9bfae0bb5a516b8d1a"
+  },
+  "selectors": [
+    "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+    "dev.russiancompanion.v2.OptionPresentationUiTest",
+    "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+    "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+    "dev.russiancompanion.v2.V2RebuildTest"
+  ],
+  "expectedMethods": [
+    {
+      "testClass": "dev.russiancompanion.v2.OptionPresentationUiTest",
+      "method": "labRetainsDisplayedOrderAndSelectionAcrossStateRestoreAndGradesSubmittedValues"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OptionPresentationUiTest",
+      "method": "newReviewRendersVersionedOrderAndRecordsClickedOptionValues"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OptionPresentationUiTest",
+      "method": "existingLegacyReviewKeepsAuthoredOrderAndClickedOptionMeaning"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.OptionPresentationUiTest",
+      "method": "lessonRendersPermutedOrderAndKeepsValueSelectionAfterStateRestore"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "resolvedAssetRecordsAreRequiredInsteadOfCounters"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "genericBookDirectionCountersAndEmptyArraysCannotSatisfyContentCompleteness"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "unitsThreeToFiveStayDevelopmentAndLaterUnitsStayClosed"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "referencesRejectMissingAndUnknownClassifications"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "upgradeKeepsExportAndRecordingRows"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "installedUnitRejectsPendingAndRejectedInstructionalRecords"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "noInternetPermissionIsDeclared"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "unitAndLabHeadingsStayInsideTheRoot"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "structuralMappingSafeguardsRejectIncompleteOrInventedRecords"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "todayShowsOneBoundedSessionInsteadOfTheUnitInventory"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "packValidatesAndRefusesGeneratedOrCatalogBoundContent"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "approvedReviewRequiresACompleteMatchingRecord"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "unitOneProgressesInOrderAndRestoresAfterRestart"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "installedUnitsAreRejectedWhileRequiredExperiencesAreMissing"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "productHelpAndOperationalGuidanceMayUseNotRequired"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "advancementNeedsMoreThanOneCheckAndBookAttestation"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "linguisticReferencesCannotUseNotRequired"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "onboardingAndPrimaryControlsAreVisible"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "notPreparedBookDirectionCannotBePromotedOrAdvanced"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "advancementCannotSkipARequiredObjective"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "noUnitCanBeInstalledWithPendingReviewOrMapping"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "unitTwoRequiresUnitOneAndCannotUseUnrelatedCatalogAudio"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "durablePackIdentityStaysHonestAndUnitIsolationHolds"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.V2RebuildTest",
+      "method": "primaryContentStartsAtTheInsetWhenFontIsLarge"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "assignedReviewExplainsTheSelectedWrongValueWithoutCompletingItsSlot"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "lessonOptionHasMergedLabelRoleSelectionAndClickSemantics"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "optionalPracticeExplainsTheSubmittedWrongValueWithoutRequiredCredit"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "lessonExplainsEachSelectedWrongValueWithoutChangingGradingOrCommonFeedback"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "sourceTemplateMustNotBePresentedAsAnOptionExplanation"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "rejectedReadingRestatementMustNotBePresentedAsAnExplanation"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "differentShownFormMustNotBePresentedAsTheDisplayedCue"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "specificExistingExplanationStillFollowsTheAuthoredOptionValue"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "correctSelectionDoesNotAcquireAWrongOptionExplanation"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "unknownSelectionDoesNotAcquireAnotherOptionsExplanation"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.RationaleQualityBoundaryTest",
+      "method": "missingAuthoredExplanationRetainsTheExistingFallback"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.SelectedOptionRationaleUiTest",
+      "method": "optionalPracticeBadRationaleFallsBackToItsExplanationLink"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "currentCorpusHasLocatedSignalsWhileCompatibilityValidationStillPasses"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "identicalRequiredDisplaysAreLocatedWithoutRewritingTheirKeys"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "sameSurfaceFormsInDifferentGrammaticalQuestionsAreNotIdenticalTasks"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "pluralAndGenitiveStressContrastsAreNotCollapsed"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "caseSensitiveLetterCuesAreNotLowercasedIntoCollisions"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "anExactVisibleCueDistractorIsAReviewSignal"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "hiddenProvenanceIsNeitherAVisibleCueNorRussianQuestionContent"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "nongatingOrientationIsNotTreatedAsRequiredRussianAssessment"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "twoOptionChecksAndConstantKeysNeedReviewRatherThanAutomaticCondemnation"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "aWorkedExampleContainingTheAnswerIsNotAutomaticallyAnAnswerScript"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "explicitAnswerSelectionScriptsHaveInstructionLocators"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "lexicalAbsenceCanBeTransferAndIsNotProofOfUntaughtContent"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "brokenDeclaredTeachingAndRemediationLinksAreStructuralErrors"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "requiredChecksBeforeTheirLinkedTeachingAreLocated"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "sourceMarkupIsFlaggedOnlyWhenItReachesLearnerFields"
+    },
+    {
+      "testClass": "dev.russiancompanion.v2.CurriculumDesignDiagnosticsTest",
+      "method": "diagnosticsAreDeterministicAndDoNotCalculateCanonicalUnitDigests"
+    }
+  ],
+  "methodCount": 56,
+  "classes": 5,
+  "completeSuite": false
+}
