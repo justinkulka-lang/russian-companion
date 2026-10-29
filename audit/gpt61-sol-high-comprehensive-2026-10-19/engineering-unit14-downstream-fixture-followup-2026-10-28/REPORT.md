@@ -1,0 +1,7 @@
+# Downstream Unit14 fixture follow-up
+
+Actual tested source `52cb624978fa99be9b8c2162a51f8e09c13d2c01`: **INCOMPLETE: 70 partial events/119expected;no verified final result**. Discovery source `9b947e06c347cd278ca36e2c894dc0eb5bbaaffb`:119syntheticskips/zero runtimepasses. No overlapping scopes summed;not complete suite.
+
+Stop cause UNCONFIRMED unless actual retained logs/process/native evidence establishes it. No final XML/count claim;UNVERIFIED_BUILD_OBSERVATION bytes are not final verification.
+
+All1330originalassertions/pins/targetscenarios and whole original15files conserved except the exact single inserted line each;266other tests/production/155bindings/77archives/priorbroadfailureevidence unchanged. Four exporters16methods excluded:VisualReviewCaptureTest2,Units35ChunkCaptureTest2,Units610ChunkCaptureTest10,Units1115GapCaptureTest2. No APKassembly/install/signing;identity/signaturenull. All48OPEN/auditINCOMPLETE/physicalGalaxyairplane-modeandrebootLASTafterfinalindependentcomprehensivenonphysicalaudit. No merge/freeze/formal advancement/releaseapproval. Qualifiedreviews/CC024/CC048/originalUnit7restorecause remain unresolved;environment unchanged;privatePDFunread/unpackaged;JITdirectiveunadopted/notatestexclusion/nativecauseUNCONFIRMED. Prior1499broad1438pass60fail1physicalskip remains immutable/separate/unsummed;old562passes/691inventory differentcommits/scopes,notcomplete-suiteproof.
