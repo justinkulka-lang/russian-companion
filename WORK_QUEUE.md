@@ -46,7 +46,7 @@ Owner results arrive as files. Example: a listen-check export saved to audit/lis
 
 - T01 is DONE by explicit Product Owner direction as a documentation-only task. Its earlier nonpassing, interrupted test run does not block closure.
 - T01-n1 runs the full configured unit-test suite once to completion at the committed current head, raising Gradle heap if needed. Record the tested commit, result, scope and every failing test name in this file's Log. Do not fix failures or create an evidence folder. A completed failing run satisfies T01-n1 because this task establishes the baseline; an interrupted run does not.
-- For T02 and T03 only, a completed suite may retain failures from the T01-n1 baseline, but it must add no new failing test names. Tests deleted under A2-08 or A2-13 leave the active baseline; record those removals in this Log. Do not otherwise expand the baseline.
+- For T02 and T03 only, a completed suite may retain failures from the T01-n1 baseline, but it must add no new failing test names. Tests deleted under A2-08 or A2-13 leave the active baseline; record those removals in this Log. Do not otherwise expand the baseline. All other required checks remain unchanged.
 - T03-n1 follows T03 and fixes every remaining baseline failure. Its required suite must pass.
 - From T04 on, step 6 applies in full: the suite must pass. The temporary T02/T03 exception does not carry forward.
 
@@ -67,9 +67,9 @@ Never:
 |---|---|---|---|---|---|
 | T00 | STOP-OWNER | Ratify Amendment 2. Give Codex the ratified file. | Signed file supplied | — | DONE — Ratified attachment supplied by the Product Owner on 2026-10-29. |
 | T01 | CODEX | Commit Amendment 2 to docs/governance/. Commit this file to the repo root. Before replacing AGENTS.md, copy the old AGENTS.md into audit/retired/ so T02 archives it. Then replace AGENTS.md with the supplied version. There is no root NEXT_TASK.md; skip copying/deleting it. Per-folder NEXT_TASK.md files under audit/ stay in place for T02. | Files committed. AGENTS.md points here. | T00 | DONE — e71bbf60f6331e9a2b4370bb671f9fa56665e3b9; documentation installed and old AGENTS retired. Product Owner explicitly directed closure on 2026-10-29; prior test failures are measured in T01-n1. |
-| T01-n1 | CODEX | Run the full configured unit-test suite once to completion at the committed current head. Raise Gradle heap if needed. Record the tested commit, result, execution scope and every failing test name in this file's Log. Do not fix failures and do not create an evidence folder. | Suite completes and failing test names are recorded in the Log; failures are allowed for this baseline task only. | T01 | IN_PROGRESS |
+| T01-n1 | CODEX | Run the full configured unit-test suite once to completion at the committed current head. Raise Gradle heap if needed. Record the tested commit, result, execution scope and every failing test name in this file's Log. Do not fix failures and do not create an evidence folder. | Suite completes and failing test names are recorded in the Log. A completed failing run satisfies this measurement task; T02/T03 follow the temporary rule above. | T01 | IN_PROGRESS |
 | T02 | CODEX | Archive historical audit material (A2-14). First list every file in app/src, build files and CI that reads a path under audit/. At 9101af8c, 61 test files and RetainedFinalAudit.kt do. Delete tests that only check historical audit evidence or old dev schemas (A2-08, A2-13). Keep the audit/final-curriculum-audit/ path that RetainedFinalAudit.kt reads. Then push the historical material to branch archive/audit-history-2026-10-29, remove it from the working branch, and write audit/ARCHIVE_INDEX.md with the archive commit hash. | Nothing in app/src, build files or CI reads an archived path. audit/ holds only ARCHIVE_INDEX.md and audit/final-curriculum-audit/. Completed unit-test suite adds no failures beyond the active T01-n1 baseline; tests retired under A2-08 or A2-13 leave that baseline. | T01, T01-n1 | TODO |
-| T03 | CODEX | Consolidate the cumulative-review assignment schemas into one. Drop dev-data compatibility code and the tests that only preserve old dev schemas (A2-08 to A2-11). Add a clean DB reset migration for dev installs. | One review schema. Completed unit-test suite adds no failures beyond the active T01-n1 baseline; tests retired under A2-08 or A2-13 leave that baseline. | T02 | TODO |
+| T03 | CODEX | Consolidate the cumulative-review assignment schemas into one. Drop dev-data compatibility code and the tests that only preserve old dev schemas (A2-08 to A2-11). Add a clean DB reset migration for dev installs. | One review schema. Completed unit-test suite adds no failures beyond the active T01-n1 baseline; tests retired under A2-08 or A2-13 leave that baseline. All other required CI checks pass. | T02 | TODO |
 | T03-n1 | CODEX | Fix every T01-n1 baseline failure remaining after T03. Respect the A2-08/A2-13 retirement of obsolete tests; do not preserve old development schemas or regenerate historical governance evidence to make tests pass. | All remaining baseline failures are fixed and the full required unit-test suite passes. | T03 | TODO |
 
 ## Phase 1 — Clean base
@@ -151,3 +151,76 @@ MEDIUM and LOW findings for those units are fixed or given a written disposition
 
 - 2026-10-29 — T01 — e71bbf60f6331e9a2b4370bb671f9fa56665e3b9 — Amendment 2 and supplied AGENTS installed; old AGENTS copied to audit/retired/. File changes committed; task BLOCKED by test failures and an interrupted run, with no full-suite result.
 - 2026-10-29 — T01 — e71bbf60f6331e9a2b4370bb671f9fa56665e3b9 — DONE by explicit Product Owner direction as documentation-only; previous failures are assigned to the T01-n1 baseline and the temporary T02/T03 rule.
+
+### T01-n1 completed unit-test baseline — 2026-10-30
+
+Tested commit: `a622248a2561696fb263a4256a4a6333fa5b9098`. The working tree stayed clean at this commit throughout the run. Only WORK_QUEUE.md is changed to record these results; no application, test, build or CI fixes are part of T01-n1.
+
+Command (after sourcing `/workspace/setup/android-env.sh`):
+
+```sh
+./gradlew -I /workspace/setup/cloud-validation.gradle -I /tmp/russian-companion-t01-n1.gradle -Dorg.gradle.jvmargs='-Xmx4g -Dfile.encoding=UTF-8' -Pkotlin.compiler.execution.strategy=in-process --max-workers=1 :app:testDebugUnitTest --stacktrace
+```
+
+Scope: the full configured debug unit-test task, with no test-name inclusion filter. The existing CI exclusions in `.github/workflows/build.yml` also apply here: `VisualReviewCaptureTest`, `Units35ChunkCaptureTest`, `Units610ChunkCaptureTest` and `Units1115GapCaptureTest`. These screenshot exporters are excluded because they overwrite retained captures. No additional test exclusions were introduced. The existing `@Ignore` skips `dev.russiancompanion.acceptance.AcceptanceBoundaryTest#at020_physicalRebootPersistsGovernedRecords`, which requires a physical device.
+
+Execution settings were supplied outside the repository: Gradle heap 4 GiB; test-worker heap 3 GiB; one worker/fork at a time; worker recycled after eight test classes; fail-fast disabled; test-task up-to-date skipping disabled. These settings did not change the committed build or test sources.
+
+Completed result: **1,548 tests: 1,493 passed, 54 failed, 1 skipped, 0 errors**, across 271 reported test suites. Gradle completed in **5h 36m 52s** and returned exit status **1** because of failing tests. Its final summary agrees with the fresh standard JUnit XML reports under `app/build/test-results/testDebugUnitTest/`. There was no heap-exhaustion error or interrupted-run result in this baseline. No failing tests were fixed and no governance evidence folder was created.
+
+The following 54 fully qualified test names are the initial active baseline for T02/T03. Any removal under A2-08 or A2-13 must be recorded here; all remaining failures pass to T03-n1.
+
+- `dev.russiancompanion.acceptance.AcceptanceBoundaryTest#at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable`
+- `dev.russiancompanion.acceptance.DeviceAcceptancePackageTest#physicalDevicePackageStaysUnexecutedAndDoesNotApproveRelease`
+- `dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest#changedMovedAndMissingComparisonFilesRemainBlocked`
+- `dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest#coherentSourceForgeryAndRemovedItemIdsCannotKeepUnchangedCodeAdmitted`
+- `dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest#exactComparisonFilesKeepAllLiteralBindingsAndPendingResearchStatus`
+- `dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest#newUiResourceAndCurriculumTextCannotBorrowAnExistingLiteral`
+- `dev.russiancompanion.acceptance.ReviewedCurriculumSourceGuardTest#presentItemReferencesAddOnlyFourBindingsAndEachMissingItemStaysBlocked`
+- `dev.russiancompanion.release.ReleaseSourceDigestTest#committedCandidateRecordsTheCurrentSourceDigestAndIdentity`
+- `dev.russiancompanion.v2.BatchECapabilityResearchTest#digestsGovernanceAndLaterUnitsStayUnchanged`
+- `dev.russiancompanion.v2.OptionPresentationTest#currentCorpusPreservesEveryOptionAndDispersesCorrectPositionsInAllThreeRoutes`
+- `dev.russiancompanion.v2.SavedReviewEntryLabelTest#genuineSavedLegacyTaskLabelsItsOwnReviewAtTheUnitEntry`
+- `dev.russiancompanion.v2.SavedReviewEntryLabelTest#noSavedTaskUsesTheCurrentDeclarationWithoutCreatingAnAssignment`
+- `dev.russiancompanion.v2.Unit10BindingConservationTest#currentDeclarationReconstructsOnlyUnit10ThenEveryGenuineEarlierPack`
+- `dev.russiancompanion.v2.Unit10PresentReviewUiTest#genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning`
+- `dev.russiancompanion.v2.Unit11BindingConservationTest#currentDeclarationReconstructsOnlyUnit11ThenEveryGenuineEarlierPack`
+- `dev.russiancompanion.v2.Unit11CumulativeReviewTest#ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup`
+- `dev.russiancompanion.v2.Unit11NounReviewUiTest#genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning`
+- `dev.russiancompanion.v2.Unit12BindingConservationTest#currentDeclarationReconstructsOnlyUnit12ThenEveryGenuineEarlierPack`
+- `dev.russiancompanion.v2.Unit12GenderReviewUiTest#genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning`
+- `dev.russiancompanion.v2.Unit13BindingConservationTest#currentDeclarationReconstructsOnlyUnit13ThenEveryGenuineEarlierPack`
+- `dev.russiancompanion.v2.Unit13PresentCompatibilityTest#genuineV2PartialCompletesWithoutRelabellingAndHistoricalV1CanRefreshPrerequisites`
+- `dev.russiancompanion.v2.Unit13PresentReviewUiTest#genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning`
+- `dev.russiancompanion.v2.Unit13PresentReviewUiTest#genuineSchemaSixEntryContinueAndReviewKeepTheirOwnPartialMeaning`
+- `dev.russiancompanion.v2.Unit14BindingConservationTest#currentDeclarationReconstructsOnlyUnit14ThenEveryGenuineEarlierPack`
+- `dev.russiancompanion.v2.Unit14PluralPossessionCompatibilityTest#exactPriorDeclarationRefusesNewSchemaAndCompiledObservationRecordsBoundedPools`
+- `dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest#genuineCompletedV1DetailRetainsOldTitleAndTwoOfTwoAnswers`
+- `dev.russiancompanion.v2.Unit14PluralPossessionReviewUiTest#genuinePartialV1EntryAndContinueRetainOldTitleAndOneOfTwoAnswers`
+- `dev.russiancompanion.v2.Unit5GrammarReviewUiTest#genuineLegacyTaskKeepsItsOwnTitleInstructionsAndQuestionMeaning`
+- `dev.russiancompanion.v2.Unit6CumulativeReviewTest#ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup`
+- `dev.russiancompanion.v2.Unit6PresentCompatibilityTest#originalV1SchemaOneAndThreeTasksRetainTheirOwnObligationAfterCurrentReteaching`
+- `dev.russiancompanion.v2.Unit6PresentReviewUiTest#genuineV1EntryContinueAndReviewKeepTheirOwnTwoSlotMeaning`
+- `dev.russiancompanion.v2.Unit6PresentReviewUiTest#genuineV2EntryContinueAndReviewKeepTheirOwnTitleAndPartialMeaning`
+- `dev.russiancompanion.v2.Unit7BindingConservationTest#currentDeclarationReconstructsEachGenuinePrecedingWholePackAndNothingElse`
+- `dev.russiancompanion.v2.Unit7GenderReviewUiTest#genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning`
+- `dev.russiancompanion.v2.Unit7InvariancePreparationHistoryTest#originalItemsExamplesSourcesPoliciesAndOtherUnitsStayExact`
+- `dev.russiancompanion.v2.Unit8BindingConservationTest#currentDeclarationReconstructsOnlyUnit8ThenEachGenuineEarlierPack`
+- `dev.russiancompanion.v2.Unit8PresentReviewUiTest#genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning`
+- `dev.russiancompanion.v2.Unit9BindingConservationTest#currentDeclarationReconstructsOnlyUnit9ThenEveryGenuineEarlierPack`
+- `dev.russiancompanion.v2.Unit9NounBehaviorReviewUiTest#genuineSchemaFiveEntryContinueAndReviewKeepTheirOwnPartialMeaning`
+- `dev.russiancompanion.v2.Units1115MappingGapTest#preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded`
+- `dev.russiancompanion.v2.Units2125SourceIntakeTest#structuralMappingsAreDigestBoundAndStayUnsigned`
+- `dev.russiancompanion.v2.Units2630SourceIntakeTest#generatedRussianPenguinAudioAndReleaseStayClosed`
+- `dev.russiancompanion.v2.Units610SourceIntakeTest#earlierUnitDigestsStayPutAndLaterUnitsStayIsolated`
+- `dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest#catalogReachabilityCountsOrphansSharesAndIntraUnitDuplicatesSeparately`
+- `dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest#committedReportsMatchTheGeneratorAndStayByteIdentical`
+- `dev.russiancompanion.v2.audit.GapClosureDossierTest#dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease`
+- `dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest#preparationManifestBindsFactsAndDoesNotPassAFinalAudit`
+- `dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest#unresolvedSourceCapabilitiesStayEmptyAndVarianceUnitsStayUnprepared`
+- `dev.russiancompanion.v2.audit.PostPr53ReadinessReconciliationTest#reportMatrixMatchesTheLiveCurriculum`
+- `dev.russiancompanion.v2.review.Unit1ReviewPackageTest#committedPackageMatchesTheCurriculumTraversal`
+- `dev.russiancompanion.v2.review.UnitReviewPipelineTest#committedUnitPackagesMatchTheGenerator`
+- `dev.russiancompanion.v2.review.UnitReviewPipelineTest#curriculumSourceCommitMustContainTheGovernedCurriculum`
+- `dev.russiancompanion.v2.review.UnitReviewPipelineTest#mappingPackageDigestBindsStructuralFactsAndIgnoresReviewerFields`
+- `dev.russiancompanion.v2.review.UnitReviewPipelineTest#unitOneAndUnitTwoPackagesStayIsolated`
