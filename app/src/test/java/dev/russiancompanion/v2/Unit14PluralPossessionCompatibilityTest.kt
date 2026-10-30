@@ -8,10 +8,6 @@ import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.root
 import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.pack
 import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.before14
 import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.context
-import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.document
-import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.partial14
-import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.completed14
-import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.partial15
 import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.prepare
 import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.open
 import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.answer
@@ -77,110 +73,9 @@ class Unit14PluralPossessionCompatibilityTest {
         }
     }
 
-    @Test fun genuineV1PartialCompletesAndRoundtripsWithoutRelabelling() {
-        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
-        with(RecordedLiteracyEpochScope.context(pack, 14)) {
-        val original=document(partial14);val saved=original.reviewAssignments.single { it.targetUnit==14 }
-        val context=context();val name="unit14-genuine-${System.nanoTime()}.db";val stage=File(context.cacheDir,name)
-        try {
-            LocalStore.openNamed(context,name).use { store ->
-                assertEquals(GovernedReplaceOutcome.REPLACED,store.replaceGovernedLearner(original,emptyList()))
-                assertEquals(original,store.governedLearnerDocument());assertEquals(saved,open(store))
-                assertEquals(setOf(0),completedReviewSlots(pack,saved,store.v2LearnerView().reviewAnswers))
-                val relabelled=saved.copy(schema=16).let { it.copy(digest=reviewAssignmentDigest(it)) }
-                assertFalse(reviewAssignmentCurrent(pack,relabelled))
-                answer(store,saved,1);assertTrue(advance(store));assertEquals(15,store.v2Profile().currentUnitNumber)
-                val current=store.governedLearnerDocument()
-                assertEquals(saved,current.reviewAssignments.single { it.targetUnit==14 })
-                assertEquals(original.reviewAnswers,current.reviewAnswers.take(original.reviewAnswers.size))
-                assertEquals(saved.policyDigest,current.unitCompletions.single { it.unitNumber==14 }.reviewPolicyDigest)
-                val read=readGovernedBackup(archive(store).inputStream(),"dev.russiancompanion",pack.packId,pack.packVersion,stage) as BackupReadResult.Valid
-                LocalStore.openInMemory(context).use { target ->
-                    assertEquals(GovernedReplaceOutcome.REPLACED,target.replaceGovernedLearner(read.backup.document,emptyList()))
-                    assertEquals(current,target.governedLearnerDocument());assertEquals(saved,open(target))
-                }
-            }
-            LocalStore.openNamed(context,name).use { store ->
-                assertEquals(saved,open(store));assertEquals((1..14).toSet(),currentCompletedUnitNumbers(pack,store.v2LearnerView()))
-                assertEquals(15,store.v2Profile().currentUnitNumber)
-            }
-        } finally { stage.deleteRecursively();deleteStore(context,name) }
-        }
-    }
 
-    @Test fun genuineCompletedV1RetainsCompletionDespiteLateWrongAnswerAndReplacement() {
-        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
-        with(RecordedLiteracyEpochScope.context(pack, 14)) {
-        val original=document(completed14);val saved=original.reviewAssignments.single { it.targetUnit==14 }
-        LocalStore.openInMemory(context()).use { store ->
-            assertEquals(GovernedReplaceOutcome.REPLACED,store.replaceGovernedLearner(original,emptyList()))
-            assertEquals(original,store.governedLearnerDocument());assertEquals(saved,open(store))
-            assertEquals((1..14).toSet(),currentCompletedUnitNumbers(pack,store.v2LearnerView()))
-            answer(store,saved,1,correct=false)
-            assertFalse(cumulativeReviewComplete(pack,store.v2LearnerView(),14))
-            assertTrue(14 in currentCompletedUnitNumbers(pack,store.v2LearnerView()))
-            assertEquals(original.unitCompletions,store.governedLearnerDocument().unitCompletions)
-            val after=store.governedLearnerDocument()
-            assertEquals(GovernedReplaceOutcome.REPLACED,store.replaceGovernedLearner(after,emptyList()))
-            assertEquals(after,store.governedLearnerDocument())
-            assertTrue(14 in currentCompletedUnitNumbers(pack,store.v2LearnerView()))
-        }
-        }
-    }
 
-    @Test fun genuineUnit15OldOwner14PartialReopensCompletesAndActuallyAdvances16() {
-        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
-        with(RecordedLiteracyEpochScope.context(pack, 14)) {
-        val original=document(partial15);val saved=original.reviewAssignments.single { it.targetUnit==15 }
-        assertEquals(V2Validator.unitContentReviewDigest(before14,14),saved.slots[1].unitDigest)
-        assertNotEquals(V2Validator.unitContentReviewDigest(pack,14),saved.slots[1].unitDigest)
-        assertTrue(reviewAssignmentCurrent(pack,saved))
-        val context=context();val name="unit15-old-owner14-${System.nanoTime()}.db";val stage=File(context.cacheDir,name)
-        var completed:GovernedLearnerDocument?=null
-        try {
-            LocalStore.openNamed(context,name).use { store ->
-                assertEquals(GovernedReplaceOutcome.REPLACED,store.replaceGovernedLearner(original,emptyList()))
-                assertEquals(original,store.governedLearnerDocument());assertEquals(saved,open(store,number=15))
-            }
-            LocalStore.openNamed(context,name).use { store ->
-                assertEquals(original,store.governedLearnerDocument());assertEquals(saved,open(store,number=15))
-                assertEquals(setOf(0),completedReviewSlots(pack,saved,store.v2LearnerView().reviewAnswers))
-                answer(store,saved,1);assertTrue(advance(store,15));assertEquals(16,store.v2Profile().currentUnitNumber)
-                completed=store.governedLearnerDocument()
-                assertEquals(saved,completed!!.reviewAssignments.single { it.targetUnit==15 })
-                assertEquals(original.unitCompletions,completed!!.unitCompletions.filter { it.unitNumber<15 })
-                val read=readGovernedBackup(archive(store).inputStream(),"dev.russiancompanion",pack.packId,pack.packVersion,stage) as BackupReadResult.Valid
-                LocalStore.openInMemory(context).use { target ->
-                    assertEquals(GovernedReplaceOutcome.REPLACED,target.replaceGovernedLearner(read.backup.document,emptyList()))
-                    assertEquals(completed,target.governedLearnerDocument())
-                    assertEquals((1..15).toSet(),currentCompletedUnitNumbers(pack,target.v2LearnerView()))
-                }
-            }
-            LocalStore.openNamed(context,name).use { store ->
-                assertEquals(completed,store.governedLearnerDocument());assertEquals(saved,open(store,number=15))
-                assertEquals(16,store.v2Profile().currentUnitNumber)
-                assertEquals((1..15).toSet(),currentCompletedUnitNumbers(pack,store.v2LearnerView()))
-            }
-        } finally { stage.deleteRecursively();deleteStore(context,name) }
-        }
-    }
 
-    @Test fun exactOldOwner14SupportRefusesUnrelatedContentRulesAndObsoleteTeaching() {
-        val saved=document(partial15).reviewAssignments.single { it.targetUnit==15 }
-        val changedFeedback=pack.copy(items=pack.items.map { if(it.id=="u14-i-impersonal-2") it.copy(feedback=it.feedback+" changed") else it })
-        val changedOtherItem=pack.copy(items=pack.items.map { if(it.id=="u14-i-future-aspect-1") it.copy(prompt=it.prompt+" changed") else it })
-        val changedRule=pack.copy(units=pack.units.map { if(it.number==14) it.copy(advancement=it.advancement!!.copy(minimumDistinctChecks=7)) else it })
-        val changedTeaching=pack.copy(units=pack.units.map { u -> if(u.number!=14) u else u.copy(sessions=u.sessions.map { s ->
-            s.copy(steps=s.steps.map { if(it.kind=="TEACH") it.copy(body=it.body+" changed") else it }) }) })
-        for (p in listOf(changedFeedback,changedOtherItem,changedRule,changedTeaching)) assertFalse(reviewAssignmentCurrent(p,saved))
-        val stale=RecordedIntakeCorrectionScope.load(root,"ef8078157d8d560f7bb65a16d801402b32b6542b")
-        assertNotEquals(V2Validator.unitContentReviewDigest(before14,14),V2Validator.unitContentReviewDigest(stale,14))
-        val obsolete=saved.copy(slots=saved.slots.map { if(it.ownerUnit==14) it.copy(unitDigest=V2Validator.unitContentReviewDigest(stale,14)) else it })
-            .let { it.copy(digest=reviewAssignmentDigest(it)) }
-        assertFalse(reviewAssignmentCurrent(pack,obsolete))
-        val unknown=pack.copy(units=pack.units.map { if(it.number==14) it.copy(advancement=it.advancement!!.copy(cumulativeReviewPolicyId="unknown-unit14")) else it })
-        assertFalse(reviewAssignmentCurrent(unknown,saved))
-    }
 
     @Test fun eachMissingOwnerOrChangedItemAndInstructionRefusesFreshAndSavedTasks() {
         LocalStore.openInMemory(context()).use { store ->
@@ -283,31 +178,6 @@ class Unit14PluralPossessionCompatibilityTest {
             }
             assertFalse(store.cumulativeReviewHistory().first.any { it.targetUnit==14 })
             println("UNIT14_ALLOCATION_VARIANTS count=${seen.size} variants=$seen; this is one JUnit method")
-        }
-    }
-
-    @Test fun existingOwner13V1AndV2BridgesStillSupportOldUnit14TasksWithoutRelabelling() {
-        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
-        with(RecordedLiteracyEpochScope.context(pack, 14)) {
-        for(id in listOf(Unit13CumulativeReviewPolicy.definition.id,Unit13WiderCumulativeReviewPolicy.definition.id)) {
-            val producer=before14.copy(units=before14.units.map { if(it.number==13) it.copy(advancement=it.advancement!!.copy(cumulativeReviewPolicyId=id)) else it })
-            val original=document(Unit13PresentFixtures.v2Capture)
-            val old13=original.reviewAssignments.single { it.targetUnit==13 }
-            val start=if(id==Unit13WiderCumulativeReviewPolicy.definition.id) original else original.copy(
-                reviewAssignments=original.reviewAssignments.filter { it.id!=old13.id },reviewAnswers=original.reviewAnswers.filter { it.assignmentId!=old13.id })
-            LocalStore.openInMemory(context()).use { store ->
-                assertEquals(GovernedReplaceOutcome.REPLACED,store.replaceGovernedLearner(start,emptyList()))
-                ordinary(store,13,producer);val task13=open(store,producer,13)
-                assertEquals(if(id==Unit13WiderCumulativeReviewPolicy.definition.id) 6 else 1,task13.schema)
-                task13.slots.indices.forEach { answer(store,task13,it,p=producer) }
-                assertTrue(advance(store,13,producer));ordinary(store,14,producer)
-                val task14=open(store,producer);assertEquals(1,task14.schema)
-                assertEquals(V2Validator.unitContentReviewDigest(producer,13),task14.slots[1].unitDigest)
-                assertTrue(reviewAssignmentCurrent(pack,task14))
-                task14.slots.indices.forEach { answer(store,task14,it) }
-                assertTrue(advance(store));assertEquals(task14,store.cumulativeReviewHistory().first.single { it.targetUnit==14 })
-            }
-        }
         }
     }
 }

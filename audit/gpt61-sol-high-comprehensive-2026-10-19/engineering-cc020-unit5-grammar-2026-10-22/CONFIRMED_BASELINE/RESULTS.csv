@@ -1,5 +1,0 @@
-testClass,method,outcome,seconds,message
-dev.russiancompanion.v2.Unit5GrammarReviewTest,wrongSchemaAndUntaughtOwnerCannotBorrowFreshCredit,FAILED,3.284,org.junit.ComparisonFailure: expected:<unit5-prior-[gender-subject-v2]> but was:<unit5-prior-[reading-subject-v1]>
-dev.russiancompanion.v2.Unit5GrammarReviewTest,newTaskKeepsChosenGenderThroughReopenAndBackupRoundtrip,FAILED,0.042,org.junit.ComparisonFailure: expected:<unit5-prior-[gender-subject-v2]> but was:<unit5-prior-[reading-subject-v1]>
-dev.russiancompanion.v2.Unit5GrammarReviewTest,legacyPartialTaskRestoresCompletesAndReopensWithItsOwnVersion,PASSED,1.557,
-dev.russiancompanion.v2.Unit5GrammarReviewTest,freshGenderAndSubjectNeedSeparateReviewAnswersBeforeAdvance,FAILED,2.409,java.lang.AssertionError: Subject plus print matching must not replace a gender review answer

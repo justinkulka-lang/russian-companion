@@ -1,5 +1,0 @@
-PASS: only Unit 12 aspect-session instruction/remediation, objective/session title, three items English prompt/feedback/rationale fields change
-PASS: all keys, options, Russian cues, examples, step order/IDs, objective identities/requirements, assessment source relations and advancement requirements are unchanged
-PASS: all original provenance/source/rights records preserved; exactly 20 pending coverage records appended; no new Russian token introduced
-PASS: only Unit 12 instructional digest changes; all mapping digests unchanged; all 30 packets bind the actual implementation ancestor
-curriculum SHA256=0688beb5c58b6f84302ea955295082f87b26d91513f24472cbc2c13bca5e6f9b

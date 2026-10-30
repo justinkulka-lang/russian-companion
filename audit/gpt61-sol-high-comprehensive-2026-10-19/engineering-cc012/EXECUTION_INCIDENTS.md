@@ -1,7 +1,0 @@
-# Retained execution incidents
-
-Initial source0a3daa8e: new regression attempted `u.advancement.minimumDistinctChecks`, but advancement is nullable. Kotlin compilation failed before any test execution. Fixed only the access to `u.advancement!!.minimumDistinctChecks` at875b4d3d;actual baseline then ran both methods and failed both. Initial and baseline command/source hashes and logs remain separate.
-
-The first command `python /workspace/artifacts/cc012-sequencing/apply_correction.py` returned `ModuleNotFoundError: No module named 'catalog'` before any asset/Kotlin mutation. This diagnostic is transcribed from the observed tool output;it is not represented as a captured raw stderr file. The shell sequence continued and committed only new history/UI test files as fcc0113f despite an inaccurate fix commit title. The ensuing verification attempt was cancelled by terminating its own Gradle wrapper process;exit143. Raw events report two failures,three interrupted skips and18methods without completed results. Partial timestamp-fresh XML retained;not final verification.
-
-The helper was corrected to add the actual repository working directory to its Python import path. Its guarded application then succeeded,independently inspected before committing asset/context changes atfe919656. All original source records/context hashes remain unchanged. No history rewriting,reset or force push was used to hide these incidents.

@@ -1,7 +1,0 @@
-{
-  "sourceCommit": "41ef8eebc5f7ff25cd30cb19164662dfab858f66",
-  "startedUtc": "2026-10-17T04:53:00.643460+00:00",
-  "pendingAncestryChangeSha256": "90827bb725d5a6d71a8bb2ac931443ea6877eaa3bcc6f4c1e7acdd7467303c5a",
-  "command": "gradlew renderCheckpointArtifacts -Dcheckpoint.mode=reviews using retained external checkpoint-tools.gradle",
-  "junitMethodsExecuted": 0
-}

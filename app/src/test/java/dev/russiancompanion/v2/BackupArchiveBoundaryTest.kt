@@ -117,8 +117,7 @@ class BackupArchiveBoundaryTest {
     }
 
     private fun archive(work: File): ByteArray {
-        val historical = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(root(),
-            "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/UNSTARTED_REVIEW.json").readText())
+        val historical = blankLearner()
         val recording = BackupRecording(RECORDING_ID, "parser-fixture-model", "recordings/$RECORDING_ID.m4a",
             "test-time", false, "NOT_COMPLETED", null)
         val file = File(work, "source.m4a").apply { writeBytes(RECORDING_BYTES) }
@@ -182,6 +181,18 @@ class BackupArchiveBoundaryTest {
         try { block(stage, work) } finally { work.deleteRecursively() }
     }
 
+    private fun blankLearner() = GovernedLearnerDocument(
+        schemaVersion = BACKUP_SCHEMA_VERSION,
+        profile = BackupProfile(
+            id = "local", onboardingCompleted = false, currentUnitNumber = 1, startingPoint = "NEW_TO_CYRILLIC",
+            hasPenguin = false, hasAnki = false, hasBinder = false, hasTutor = false, dailyMinutes = 20,
+            transliterationEnabled = false, currentSessionId = null, currentStepIndex = 0,
+        ),
+        steps = emptyList(), attempts = emptyList(), bookmarks = emptyList(), notes = emptyList(),
+        tutorQueue = emptyList(), bookAttestations = emptyList(), unitCompletions = emptyList(),
+        learnerState = null, planInstances = emptyList(), activityLogs = emptyList(), evidence = emptyList(),
+        tutorRequirements = emptyList(), decisions = emptyList(), recordings = emptyList(),
+    )
     private fun root() = File(if (File("app").isDirectory) "." else "..")
 
     companion object {

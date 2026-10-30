@@ -1,9 +1,0 @@
-# Unadmitted public-source candidates
-
-These Russian Wikipedia raw revisions were fetched through the public API with a descriptive research User-Agent. API-provided SHA1/size were independently checked against the exact saved bytes; SHA256 and stable source URLs are in each metadata file. This is research evidence only: no new source/rights admission or semantic acceptance, and no app assets contain these pages.
-
-Wikipedia contributors license first-party article text under CC BY-SA4.0; attribution is each stable revision and its page history. The corresponding retained Russian Wikipedia copyright route is oldid154562152, not the English Wikipedia or Wikibooks route. Third-party quotations are not automatically licensed by hosting; inspect specific attribution/basis before using a native example. Retained evidence selections and arrangement are under CC BY-SA4.0 where that basis applies. No media files are copied.
-
-The cause and terminal constructions in Обособление144053197 and the pronoun-headed opening construction in Больтраффио149826784 are candidates for IA012. Wikitext links/emphasis require explicit deterministic markup normalization, without changing Russian words/punctuation or truncating a new construction. Do not treat markup-normalized text as a verbatim raw substring without recording that transformation. The current category/connective check remains OPEN until appropriate applications and source/tuple guards are implemented.
-
-Both API probes now return HTTP200; the queried Wikibooks Participles page is missing. Previous403 evidence remains historical. Working API access does not independently prove publication of the newer configuration draft. The private Penguin PDF is not included and remains a private-attachment requirement. No release authorization or physical-device acceptance is supplied.

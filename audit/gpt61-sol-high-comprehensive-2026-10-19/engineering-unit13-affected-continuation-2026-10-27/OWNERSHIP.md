@@ -1,7 +1,0 @@
-# Continuation ownership and recovery
-
-One agent/current checkout/Draft PR64. Exact165method scope across28classes prepared;no runtime result yet. Inspect external `/workspace/artifacts/unit13-affected-continuation-2026-10-27` DISCOVERY/REGRESSION contexts, launchers, runner processes, completions, DURABLE_MONITOR_STATUS.json, AUTO_RESULT.json or AUTO_ERROR.json before launching or editing. Original runtime and worker are dead;original historical lock preserved and not reused.
-
-Commit clean setup, run fresh discovery, verify exact165identity set and unchanged six input trees, then launch start_runtime.py once. Runner detached with closed streams;two6GiBforks/forkEvery4/GC logs. Exclusive completion worker collects raw evidence, verifies actualXML/events/exits/inputtrees and method accounting, commits only this evidence folder and three pointers, normal-pushes authorized branch and updates Draft PR64. No source changes/assertion waivers/automatic semantic fixes. Do not duplicate active jobs or collect concurrently. If disconnected, inspect processes on return;do not infer completion from a stale monitor. Source inputs must stay clean/unchanged during runtime.
-
-The first316partial events and separate165continuation are not summed into a completed481run. Six original failures retained/OPEN. Four exporters16methods excluded;all48findingsOPEN/auditINCOMPLETE/physicalLAST/noAPK/signing/merge/freeze/approval. Environment settings unchanged.

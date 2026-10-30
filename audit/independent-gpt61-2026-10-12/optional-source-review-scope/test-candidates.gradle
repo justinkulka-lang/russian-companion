@@ -1,7 +1,0 @@
-// Only the two exact candidate classes; runtime dependencies/exporter exclusions unchanged.
-allprojects {
-    tasks.withType(Test).configureEach {
-        include '**/ContentAuditCorrectionTest.class'
-        include '**/BatchBUnits2125Test.class'
-    }
-}

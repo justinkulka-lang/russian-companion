@@ -1,7 +1,0 @@
-// Candidate filtering matches the three explicitly selected test classes only.
-// It does not change the test runtime classpath or cloud exporter exclusions.
-allprojects {
-    tasks.withType(Test).configureEach {
-        include '**/RuntimeCorrectionTest.class', '**/Unit4NominativeRoleTest.class', '**/OptionalGlossRemediationTest.class'
-    }
-}

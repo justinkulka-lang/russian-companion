@@ -1,7 +1,0 @@
-# Final selected continuation completed;retained failures open
-
-Final exact509method continuation completed at `56cd6694645bd35c589e9cfa597a271e2d2eb1ff`:509reported/501passed/8failed/0errors/0skipped,exit1,80classes. Fresh XML/RESULT events/selector identities/outcomes reconcile;five input trees match discovery and both stopped scopes. Original4c267062:578partial records570SUCCESS/5FAILURE/3SKIPPED;firstcontinuationf2de778e:237partial records234SUCCESS/1FAILURE/2SKIPPED. Neither stopped scope has underlying exit/fresh finalXML;stop causesUNCONFIRMED. Four interruption-time identities are explicit cross-scope reexecutions;all1320discovered identities now have per-scope records,not an uninterrupted complete suite or full app/curriculum/device audit. All14observed failed/error methods remainOPEN. Four screenshot exporters/16methods excluded. Exact commands,linter/task states,raw/GC evidence retained;all66archives/64histories/167historical generated files/154current generated files/candidate conserved. AuditINCOMPLETE;original17external qualified findings unclosed. Physical Galaxy S26 Ultra airplane-mode/reboot acceptanceLAST after final comprehensive independent nonphysical audit. No assembly/install/signing/merge/freeze/approval. No active test run or automatic publisher queued.
-
-Read ENGINEERING_REGRESSION_REPORT.md,OPEN_FAILURES.json,IDENTITY_COVERAGE.json and RESULT.json. Earlier prelaunch/running/interruption notes remain historical.
-
-Next large task: [diagnose the 14 retained failures](NEXT_LARGE_TASK.md). No approval question is pending.

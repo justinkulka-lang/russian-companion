@@ -1,7 +1,0 @@
-assignment_schema,registered_scope,meaning_to_preserve,additional_guards,proposed_new_meaning
-1,Registered legacy/current policies excluding wider6/9/13,Original first-eligible allocation; saved immutable slots preserved,"Registered policy ID+digest, owner/item/teaching digests, response rule, taught eligibility, assignment-bound fresh answer order",NONE
-2,Unit3 only,Latest-miss/least-recent allocation; saved slots never resampled,"Registered policy ID+digest, owner/item/teaching digests, response rule, taught eligibility, assignment-bound fresh answer order",NONE
-3,Unit5 or Unit6 legacy-v1 only,Multi-candidate history-sensitive selection; not wider6/9/13,"Registered policy ID+digest, owner/item/teaching digests, response rule, taught eligibility, assignment-bound fresh answer order",NONE
-4,Unit6 wider-v2 only,Three pools; legacy-v1 definition retained separately,"Registered policy ID+digest, owner/item/teaching digests, response rule, taught eligibility, assignment-bound fresh answer order",NONE
-5,Unit9 wider-v2 only,Three pools; legacy-v1 definition retained separately,"Registered policy ID+digest, owner/item/teaching digests, response rule, taught eligibility, assignment-bound fresh answer order",NONE
-6,Unit13 wider-v2 only,Three pools; legacy-v1 definition retained separately,"Registered policy ID+digest, owner/item/teaching digests, response rule, taught eligibility, assignment-bound fresh answer order",NONE

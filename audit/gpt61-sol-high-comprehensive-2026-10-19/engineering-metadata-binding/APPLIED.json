@@ -1,8 +1,0 @@
-{
-  "sourceCommit": "8eab6f0bdd33a0f3521df285573fc34fc0687075",
-  "previousEvidenceCommit": "1c74d3a4b77fdd03dea8605b2b6410ef227caec1",
-  "changedFields": 4,
-  "appCodeChanged": false,
-  "testAssertionsChanged": false,
-  "acceptanceChanged": false
-}

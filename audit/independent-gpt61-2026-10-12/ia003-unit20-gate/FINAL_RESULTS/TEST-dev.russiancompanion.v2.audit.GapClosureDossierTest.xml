@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.audit.GapClosureDossierTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-15T20:05:12.082Z" hostname="f5c5dd6b855f" time="36.747">
-  <properties/>
-  <testcase name="dossierMatchesLiveReadinessAndDoesNotAuthorizeRelease" classname="dev.russiancompanion.v2.audit.GapClosureDossierTest" time="36.746"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

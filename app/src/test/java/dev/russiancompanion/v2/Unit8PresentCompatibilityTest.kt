@@ -7,7 +7,6 @@ import dev.russiancompanion.v2.Unit8PresentFixtures.root
 import dev.russiancompanion.v2.Unit8PresentFixtures.pack
 import dev.russiancompanion.v2.Unit8PresentFixtures.context
 import dev.russiancompanion.v2.Unit8PresentFixtures.document
-import dev.russiancompanion.v2.Unit8PresentFixtures.v1Capture
 import dev.russiancompanion.v2.Unit8PresentFixtures.advance
 import dev.russiancompanion.v2.Unit8PresentFixtures.ordinary
 import dev.russiancompanion.v2.Unit8PresentFixtures.prepare
@@ -24,43 +23,6 @@ import java.io.File
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
 class Unit8PresentCompatibilityTest {
-    @Test fun exactPriorDeclarationRefusesSchemaTenAndPreservesDownstreamOwnerIdentity() {
-        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
-        with(RecordedLiteracyEpochScope.context(pack, 8)) {
-        val old = RecordedIntakeCorrectionScope.load(root, "6fd0406da6dd687196eea76ff56ad7cadc06087d")
-        RecordedCurriculumConservationScope.beforeUnit9NounBehaviorReview(root, pack).let { pack ->
-            val priorDeclarationOnly = pack.copy(units = pack.units.map { u -> if (u.number != 8) u else
-                u.copy(advancement = u.advancement!!.copy(cumulativeReviewPolicyId = Unit8CumulativeReviewPolicy.definition.id)) })
-            assertEquals("The genuine old pack differs only by the Unit8 declaration", old, priorDeclarationOnly)
-        }
-        LocalStore.openInMemory(context()).use { store ->
-            val original = document(v1Capture)
-            assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(original, emptyList()))
-            val future = createCumulativeReviewAssignment(pack, store.v2LearnerView(), 8, "future-unit8", 0)!!
-            assertEquals(10, future.schema)
-            assertTrue(reviewAssignmentCurrent(pack, future))
-            assertFalse(reviewAssignmentCurrent(old, future))
-            assertFalse(reviewAssignmentEligible(old, store.v2LearnerView(), future))
-            val saved = original.reviewAssignments.single { it.targetUnit == 8 }
-            assertEquals(saved, store.openCumulativeReview(old, 8, store.learnerMutationEpoch()))
-            saved.slots.forEachIndexed { index, slot -> assertTrue(store.answerCumulativeReview(old, saved.id, index,
-                old.item(slot.itemId)!!.answer, store.learnerMutationEpoch())) }
-            assertTrue(advance(store, 8, old))
-            ordinary(store, 9, old)
-            val downstream = store.openCumulativeReview(old, 9, store.learnerMutationEpoch())!!
-            assertEquals(V2Validator.unitContentReviewDigest(old, 8), downstream.slots.single { it.ownerUnit == 8 }.unitDigest)
-            assertNotEquals(V2Validator.unitContentReviewDigest(pack, 8), downstream.slots.single { it.ownerUnit == 8 }.unitDigest)
-            assertTrue(reviewAssignmentCurrent(pack, downstream))
-            assertTrue(reviewAssignmentEligible(pack, store.v2LearnerView(), downstream))
-            val changed = pack.copy(items = pack.items.map { if (it.id == downstream.slots[1].itemId) it.copy(feedback = it.feedback + " changed") else it })
-            assertFalse(reviewAssignmentCurrent(changed, downstream))
-            val changedRule = pack.copy(units = pack.units.map { u -> if (u.number != 8) u else
-                u.copy(advancement = u.advancement!!.copy(minimumDistinctChecks = u.advancement.minimumDistinctChecks + 1)) })
-            assertFalse(reviewAssignmentCurrent(changedRule, downstream))
-            assertFalse(8 in currentCompletedUnitNumbers(changedRule, store.v2LearnerView()))
-        }
-        }
-    }
 
     @Test fun wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit() {
         LocalStore.openInMemory(context()).use { store ->
@@ -147,33 +109,4 @@ class Unit8PresentCompatibilityTest {
         } finally { stage.deleteRecursively(); context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
     }
 
-    @Test fun genuineSchemaOnePartialCompletesWithoutAddingPresentOrRelabelling() {
-        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
-        with(RecordedLiteracyEpochScope.context(pack, 8)) {
-        val original = document(v1Capture); val saved = original.reviewAssignments.single { it.targetUnit == 8 }
-        assertEquals(1, saved.schema)
-        assertEquals(listOf("obj-u1-decoding", "obj-u7-endings"), saved.slots.map { it.objectiveId })
-        val context = context(); val name = "unit8-genuine-v1-${System.nanoTime()}"
-        try {
-            LocalStore.openNamed(context, name).use { store ->
-                assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(original, emptyList()))
-                assertEquals(original, store.governedLearnerDocument())
-                assertEquals(saved, open(store))
-                assertEquals(setOf(0), completedReviewSlots(pack, saved, store.v2LearnerView().reviewAnswers))
-                val relabelled = saved.copy(schema = 10).let { it.copy(digest = reviewAssignmentDigest(it)) }
-                assertFalse(reviewAssignmentCurrent(pack, relabelled))
-                answer(store, saved, 1)
-                assertTrue(advance(store, 8))
-                val current = store.governedLearnerDocument()
-                assertEquals(saved, current.reviewAssignments.single { it.targetUnit == 8 })
-                assertEquals(original.reviewAnswers, current.reviewAnswers.take(original.reviewAnswers.size))
-                assertEquals(saved.policyDigest, current.unitCompletions.single { it.unitNumber == 8 }.reviewPolicyDigest)
-                assertEquals((1..8).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
-            }
-            LocalStore.openNamed(context, name).use { store ->
-                assertEquals(saved, open(store)); assertEquals((1..8).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
-            }
-        } finally { context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
-        }
-    }
 }

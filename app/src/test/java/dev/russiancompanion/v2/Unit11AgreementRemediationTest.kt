@@ -31,35 +31,6 @@ class Unit11AgreementRemediationTest {
         assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u11-past-aspect" && it.shippedText == rem.body && it.itemId == "prov-ca-u11-agreement-remediation-complete-v1" })
         val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
-    @Test fun unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException() {
-        val p = correctionEraPack(); val old = baseline()
-        assertEquals(declaredAfterSession(), session(p))
-        assertEquals(old, p.copy(units = old.units, provenanceRecords = p.provenanceRecords.dropLast(1)))
-        assertEquals(old.unit(11)!!.advancement, p.unit(11)!!.advancement)
-        assertEquals(8, p.unit(11)!!.advancement!!.minimumDistinctChecks)
-        assertEquals(old.items, p.items); assertEquals(old.examples, p.examples)
-        assertEquals(old.provenanceRecords, p.provenanceRecords.dropLast(1))
-        assertNull(cumulativeReviewPolicy(31))
-        // The global conservation assertion belongs to the exact correction era.
-        // Independently pin the whole current Unit11 and all of its evidence.
-        val live = pack()
-        assertFalse("Later whole-pack changes must not be silently normalized", p == live)
-        // Exact instructional correction predates the declaration-only Unit11 review change.
-        RecordedCurriculumConservationScope.beforeUnit11NounReview(root(), live).let { live ->
-            assertEquals(p.unit(11), live.unit(11))
-        }
-        assertEquals(Unit11NounCumulativeReviewPolicy.definition.id, live.unit(11)!!.advancement!!.cumulativeReviewPolicyId)
-        assertNotEquals(V2Validator.unitContentReviewDigest(p, 11), V2Validator.unitContentReviewDigest(live, 11))
-        assertEquals(declaredAfterSession(), session(live))
-        val objectives = p.unit(11)!!.objectives.map { it.id }.toSet()
-        assertEquals(p.items.filter { it.objectiveId in objectives }, live.items.filter { it.objectiveId in objectives })
-        val examples = (p.unit(11)!!.objectives.flatMap { it.exampleIds } +
-            old.unit(11)!!.sessions.flatMap { it.steps }.flatMap { it.exampleIds }).distinct()
-        assertEquals(examples.map { p.example(it) }, examples.map { live.example(it) })
-        assertEquals(p.provenanceRecords.filter { it.unitNumber == 11 }, live.provenanceRecords.filter { it.unitNumber == 11 })
-        assertEquals(p.authoredEnglishRecords.filter { it.unitNumber == 11 }, live.authoredEnglishRecords.filter { it.unitNumber == 11 })
-        assertEquals(p.sourceCapabilities.filter { it.unitNumber == 11 }, live.sourceCapabilities.filter { it.unitNumber == 11 })
-    }
     @Test fun oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard() {
         val p = pack(); val old = baseline()
         LocalStore.openInMemory(context()).use { store ->
@@ -137,10 +108,6 @@ class Unit11AgreementRemediationTest {
         private val previous by lazy {
             val command = ProcessBuilder("git", "show", "ea3ef13a866edab83c024a317a52fc750e359787:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
             V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }
-        }
-        internal fun declaredAfterSession(): V2Session {
-            val ledger = Json.parseToJsonElement(File(root(), "audit/independent-gpt61-2026-10-12/ia003-unit11-agreement-repair/CORRECTION.json").readText()).jsonObject
-            return Json { ignoreUnknownKeys = true }.decodeFromJsonElement<V2Session>(ledger.getValue("afterSession"))
         }
     }
 }

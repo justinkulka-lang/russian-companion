@@ -1,8 +1,0 @@
-{
-  "sourceCommit": "d9dc446f0716641dea59857d7ebacf67844f67c1",
-  "kind": "ACTUAL_PRE_CHANGE_PARTIAL_UNIT5_BACKUP_NOT_DEVICE_ACCEPTANCE",
-  "archiveSha256": "30c57b002f668aa0efa897f4622bc1be264b53ae4199f95701213bddd0869751",
-  "original64HistoryIndex": "UNCHANGED; this is an additional separately identified baseline capture",
-  "noRecordings": true,
-  "originalScope": "Four initial methods:three policy-ID failures/one legacy capture+restore pass; actual source XML/log/events retained separately"
-}

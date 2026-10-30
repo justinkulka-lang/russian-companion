@@ -1,5 +1,0 @@
-# Refinement required before UI correction
-
-The newly introduced rationale tests initially require authored rationale inside the existing common-feedback text node. Existing older tests explicitly require that common node to retain its exact text. Preserve those older assertions and the first baseline unchanged. Refine only the new rationale test to require the common feedback exactly as before plus a separate displayed node containing the exact authored selected-wrong-option rationale. A correct answer must not show the wrong-option rationale. Keep all method IDs, grading, credit, assignment and accessibility controls. This corrects an overly specific new placement assumption; it does not waive the reproduced missing-explanation defect.
-
-Run the revised six-method baseline against unchanged production before applying the UI correction. Keep that scope separate. Then add adjacent rationale text without modifying original feedback, scoring, source content or historical evidence, and preserve onboarding draft/page with saveable state without automatic submission.

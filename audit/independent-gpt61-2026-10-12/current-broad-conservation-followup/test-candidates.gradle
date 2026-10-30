@@ -1,6 +1,0 @@
-// Exact three classes;all26methods;runtime/exporter exclusions unchanged.
-allprojects { tasks.withType(Test).configureEach {
-    include '**/Unit11AgreementRemediationTest.class'
-    include '**/Unit24ContextTransferTest.class'
-    include '**/Units1620SourceIntakeTest.class'
-} }

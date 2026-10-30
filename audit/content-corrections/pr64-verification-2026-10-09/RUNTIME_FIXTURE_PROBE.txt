@@ -1,5 +1,0 @@
-step=u1-st-iotated: prepared governed answers and completion; Continue opens exact unfinished step
-step=u1-st-guided-iotated: prepared governed answers and completion; Continue opens exact unfinished step
-step=u1-st-iotated-check: prepared governed answers and completion; Continue opens exact unfinished step
-PASS: initial fixture, guided route, wrong-answer completion, and advancement routing
-Scope: production domain logic only; Compose, persistence, remediation UI, and Android compilation require CI

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit17QuestionTransferTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T18:32:46.789Z" hostname="d0fbcd1608d3" time="8.921">
-  <properties/>
-  <testcase name="questionCompletionRequiresIndependentCuesDistinctFromGuidedPractice" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="7.9"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

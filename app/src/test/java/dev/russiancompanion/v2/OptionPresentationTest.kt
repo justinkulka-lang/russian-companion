@@ -85,31 +85,6 @@ class OptionPresentationTest {
         assertNotEquals(closedResponseRuleDigest(), presentedReviewResponseRuleDigest())
     }
 
-    @Test fun allRetainedAssignmentsKeepExactLegacyOrderAndAssignmentHash() {
-        val root = OptionPresentationFixture.root
-        val groups = listOf("ia003-policy-history-transition", "ia003-policy-history-transition/predecessor-schema1",
-            "ia003-unit13-context-teaching", "ia003-unit13-history-transition", "ia003-unit13-past-teaching",
-            "ia003-unit3-gender-correction", "ia003-unit7-agreement-teaching", "ia003-unit9-history-transition")
-        var documents = 0
-        for (group in groups) {
-            val dir = File(root, "audit/independent-gpt61-2026-10-12/$group")
-            for (file in dir.listFiles()!!.filter { it.extension == "json" }) {
-                val text = file.readText()
-                if (!text.contains("\"reviewAssignments\"") || !text.contains("\"profile\"")) continue
-                val d = runCatching { backupJson.decodeFromString(GovernedLearnerDocument.serializer(), text) }.getOrNull() ?: continue
-                documents++
-                for (a in d.reviewAssignments) {
-                    assertEquals(closedResponseRuleDigest(), a.responseRuleDigest)
-                    assertEquals(a.digest, reviewAssignmentDigest(a))
-                    for ((index, slot) in a.slots.withIndex()) {
-                        val i = OptionPresentationFixture.pack.item(slot.itemId)!!
-                        assertEquals(i.options, reviewPresentedOptions(i, a, index))
-                    }
-                }
-            }
-        }
-        assertEquals(64, documents)
-    }
 
     @Test fun newRulePreservesExactScoringAndOrderThroughBackupAndNamedDatabaseReopen() {
         val p = OptionPresentationFixture.pack

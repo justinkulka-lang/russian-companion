@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.ContentAuditCorrectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-12T16:50:29.550Z" hostname="03aee042dd55" time="2.828">
-  <properties/>
-  <testcase name="unit27AdvancesWithoutOptionalPresentPassive" classname="dev.russiancompanion.v2.ContentAuditCorrectionTest" time="2.827"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

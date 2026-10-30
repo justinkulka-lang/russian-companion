@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.BatchAUnits71620Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-18T14:33:53.741Z" hostname="d0aced911621" time="380.55">
-  <properties/>
-  <testcase name="currentBatchAExplainsEveryRetainedAndExpandedConstructAndRejectsWrongKeys" classname="dev.russiancompanion.v2.BatchAUnits71620Test" time="265.734"/>
-  <testcase name="batchAExplanationsNameTheKeyedRelationshipAndRejectASwap" classname="dev.russiancompanion.v2.BatchAUnits71620Test" time="114.799"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -1,3 +1,0 @@
-# Saved-review entry correction; verification pending
-
-Saved-review entry label corrected and current source bindings reconciled. Baseline two methods:one passed/one failed; exact regression bytes retained. Two authentic153-file renders match;95global-digest-only changes archived,60worksheets and every other byte unchanged. Fresh66-method/13-class discovery and runtime pending. Check /workspace/artifacts/saved-review-entry-label-2026-10-23/GENERATION/{DISCOVERY,REGRESSION}/CONTEXT.json,RESULT.json,RUN.exit before claiming state or launching another job. All48findings open; physicalLAST; no APK assembly/install/signing, merge/freeze/approval.

@@ -11,7 +11,6 @@ import dev.russiancompanion.v2.Unit12GenderFixtures.context
 import dev.russiancompanion.v2.Unit12GenderFixtures.prepare
 import dev.russiancompanion.v2.Unit12GenderFixtures.pack
 import dev.russiancompanion.v2.Unit12GenderFixtures.document
-import dev.russiancompanion.v2.Unit12GenderFixtures.v1Capture
 import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
@@ -128,9 +127,6 @@ class Unit12GenderReviewUiTest {
         }
     }
 
-    @Test fun genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning() {
-        legacyEntry(v1Capture, false, 2)
-    }
 
     @Test fun genuinelyCompletedUnit3RoutesMissingUnit11WithoutCreatingReviewCredit() {
         LocalStore.openInMemory(context()).use { store ->

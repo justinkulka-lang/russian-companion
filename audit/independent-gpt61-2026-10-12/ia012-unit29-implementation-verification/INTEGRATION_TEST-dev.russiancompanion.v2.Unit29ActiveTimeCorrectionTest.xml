@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T18:16:49.164Z" hostname="d0fbcd1608d3" time="53.115">
-  <properties/>
-  <testcase name="creditedCheckMustInterpretADistinctAdmittedFormRatherThanTheOppositeLabel" classname="dev.russiancompanion.v2.Unit29ActiveTimeCorrectionTest" time="50.018"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

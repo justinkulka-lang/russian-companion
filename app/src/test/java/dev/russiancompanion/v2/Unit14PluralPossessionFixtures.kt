@@ -71,8 +71,4 @@ internal object Unit14PluralPossessionFixtures {
     fun deleteStore(context: Context, name: String) {
         context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively()
     }
-    private const val captureRoot = "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit14-plural-possession-baseline-2026-10-28/"
-    const val partial14 = captureRoot + "PARTIAL_UNIT14_V1.zip"
-    const val completed14 = captureRoot + "COMPLETED_UNIT14_V1.zip"
-    const val partial15 = captureRoot + "PARTIAL_UNIT15_OWNER14_V1.zip"
 }

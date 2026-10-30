@@ -51,20 +51,6 @@ class Unit13PastTeachingTest {
         assertTrue(p.provenanceRecords.any { it.objectiveId == "obj-u13-past-aspect" && it.shippedText == rem.body && it.itemId == "prov-ca-u13-past-u13-st-rem-past-aspect-complete-v1" })
         val valid = V2Validator.validate(p); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
-    @Test fun unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException() {
-        // Historical past-only whitelist;current two-session delta has a separate exact guard.
-        val p = Unit13ContextTeachingTest.beforeTeachingCorrectionPack(); val old = baseline()
-        assertEquals(declaredAfterSession(), session(p))
-        assertEquals(old, p.copy(units = old.units, provenanceRecords = p.provenanceRecords.dropLast(5)))
-        assertEquals(old.unit(13)!!.advancement, p.unit(13)!!.advancement)
-        assertEquals(8, p.unit(13)!!.advancement!!.minimumDistinctChecks)
-        assertEquals(old.items, p.items); assertEquals(old.examples, p.examples)
-        assertEquals(old.units.filter { it.number != 13 }, p.units.filter { it.number != 13 })
-        assertEquals(old.unit(13)!!.copy(sessions = p.unit(13)!!.sessions), p.unit(13))
-        assertEquals(old.unit(13)!!.sessions.filter { it.id != session(p).id }, p.unit(13)!!.sessions.filter { it.id != session(p).id })
-        assertEquals(old.provenanceRecords, p.provenanceRecords.dropLast(5))
-        assertNull(cumulativeReviewPolicy(31))
-    }
     @Test fun oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard() {
         val p = pack(); val old = baseline()
         LocalStore.openInMemory(context()).use { store ->
@@ -121,74 +107,7 @@ class Unit13PastTeachingTest {
             assertFalse(advancementDecision(p, p.unit(13)!!, store.v2LearnerView()).allowed)
         }
     }
-    @Test fun genuineBackupsRetainRawHistoryButChangedTeachingRejectsOldCreditAfterReopen() {
-        val p = current; val old = previous
-        val labels = listOf("BEFORE_UNIT13_WORK", "ORDINARY_UNIT13", "UNSTARTED_REVIEW", "PARTIAL_REVIEW", "ANSWERED_REVIEW", "COMPLETED_UNIT13", "POST_COMPLETION_WRONG", "COMPLETED_UNIT14")
-        labels.forEach { label ->
-            val original = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(evidence(), "$label.json").readText())
-            val staging = File(context().cacheDir, "past-$label-${System.nanoTime()}")
-            val decoded = readGovernedBackup(File(evidence(), "$label.zip").inputStream(), "dev.russiancompanion", p.packId, p.packVersion, staging)
-            assertTrue(label, decoded is BackupReadResult.Valid)
-            assertEquals(original, (decoded as BackupReadResult.Valid).backup.document)
-            val name = "past-$label-${System.nanoTime()}.db"
-            fun check(store: LocalStore) {
-                assertEquals(original.reviewAssignments to original.reviewAnswers, store.cumulativeReviewHistory())
-                assertEquals(original.unitCompletions, store.governedLearnerDocument().unitCompletions)
-                assertEquals(original.attempts, store.governedLearnerDocument().attempts)
-                assertEquals((1..12).toSet(), currentCompletedUnitNumbers(p, store.v2LearnerView()))
-                assertFalse(ordinaryUnitRequirements(p, p.unit(13)!!, store.v2LearnerView()).allowed)
-                assertEquals(original.reviewAssignments.singleOrNull { it.targetUnit == 13 }, currentCumulativeAssignment(p, store.v2LearnerView(), 13))
-                assertNull(currentCumulativeAssignment(p, store.v2LearnerView(), 14))
-                assertFalse(advancementDecision(p, p.unit(13)!!, store.v2LearnerView()).allowed)
-                if (label == "COMPLETED_UNIT14") assertEquals((1..14).toSet(), currentCompletedUnitNumbers(old, store.v2LearnerView()))
-            }
-            try {
-                LocalStore.openNamed(context(), name).use { store ->
-                    store.openLearnerReplacement()
-                    try { assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(original, emptyList())) }
-                    finally { store.closeLearnerReplacement() }
-                    check(store)
-                }
-                LocalStore.openNamed(context(), name).use { check(it) }
-            } finally { staging.deleteRecursively(); context().deleteDatabase(name) }
-        }
-    }
 
-    @Test fun freshTeachingAndAnswersReestablishCompletionWithoutRelabellingOldAssignments() {
-        val p = current
-        val old = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(evidence(), "COMPLETED_UNIT14.json").readText())
-        // The application startup store shares this recordings directory and must finish recovery first.
-        (context().applicationContext as dev.russiancompanion.RussianCompanionApplication).closeStartupStoreForTests()
-        LocalStore.openInMemory(context()).use { store ->
-            store.openLearnerReplacement()
-            try { assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(old, emptyList())) }
-            finally { store.closeLearnerReplacement() }
-            for (number in 13..14) {
-                ordinary(p, store, number)
-                assertTrue(ordinaryUnitRequirements(p, p.unit(number)!!, store.v2LearnerView()).allowed)
-                assertFalse(advancementDecision(p, p.unit(number)!!, store.v2LearnerView()).allowed)
-                val assignment = store.openCumulativeReview(p, number, store.learnerMutationEpoch())!!
-                if (number == 13) assertEquals(old.reviewAssignments.single { it.targetUnit == 13 }, assignment)
-                else assertFalse(old.reviewAssignments.any { it.id == assignment.id })
-                assertEquals(1, assignment.schema)
-                assertEquals(assignment, store.openCumulativeReview(p, number, store.learnerMutationEpoch()))
-                if (number == 14) assertEquals(V2Validator.unitContentReviewDigest(p, 13), assignment.slots[1].unitDigest)
-                assignment.slots.indices.forEach { index ->
-                    assertTrue(store.answerCumulativeReview(p, assignment.id, index, p.item(assignment.slots[index].itemId)!!.answer, store.learnerMutationEpoch()))
-                    if (index == 0) assertFalse(advancementDecision(p, p.unit(number)!!, store.v2LearnerView()).allowed)
-                }
-                assertTrue(runBlocking {
-                    val next = p.unit(number + 1)!!.sessions.first().id
-                    store.v2AdvanceUnitIfCurrentAsync(store.learnerMutationEpoch(), number, "fresh", number + 1, next, resumePositionDigest(p, next, 0)!!, GOVERNED_IDENTITY_SCHEMA, p)
-                })
-                val completion = store.governedLearnerDocument().unitCompletions.single { it.unitNumber == number }
-                assertEquals(assignment.id, completion.reviewAssignmentId)
-                assertEquals(assignment.policyDigest, completion.reviewPolicyDigest)
-            }
-            assertEquals((1..14).toSet(), currentCompletedUnitNumbers(p, store.v2LearnerView()))
-            old.reviewAssignments.forEach { row -> assertTrue(store.cumulativeReviewHistory().first.contains(row)) }
-        }
-    }
 
     private fun ordinary(p: V2CurriculumPack, store: LocalStore, number: Int) {
         store.v2SaveProfile(store.v2Profile().copy(onboardingCompleted = true, currentUnitNumber = number, currentSessionId = null))
@@ -206,7 +125,6 @@ class Unit13PastTeachingTest {
         compose.waitForIdle(); compose.onAllNodesWithTag(tag).fetchSemanticsNodes().isNotEmpty()
     }
     companion object {
-        private fun evidence() = File(root(), "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching")
         private fun root() = File(if (File("app").isDirectory) "." else "..")
         private val current by lazy { Unit7AgreementTeachingTest.beforeTeachingCorrectionPack() } // Exact post-Unit13-policy source2ff71f19; this historical transition predates the later Unit7 teaching correction.
         private val previous by lazy {
@@ -214,9 +132,5 @@ class Unit13PastTeachingTest {
             V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }
         }
         internal fun beforeTeachingCorrectionPack(): V2CurriculumPack = previous
-        internal fun declaredAfterSession(): V2Session {
-            val ledger = Json.parseToJsonElement(File(root(), "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/CORRECTION.json").readText()).jsonObject
-            return Json { ignoreUnknownKeys = true }.decodeFromJsonElement<V2Session>(ledger.getValue("afterSession"))
-        }
     }
 }

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit26LetterInstructionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-12T01:45:41.615Z" hostname="runnervmmprz5" time="10.246">
-  <properties/>
-  <testcase name="completeFrameworkPrecedesPracticeAndReturnsAfterAMiss" classname="dev.russiancompanion.v2.Unit26LetterInstructionTest" time="0.149"/>
-  <testcase name="exactResearchAdmissionRejectsLegacyCapabilityAndForgery" classname="dev.russiancompanion.v2.Unit26LetterInstructionTest" time="9.768"/>
-  <testcase name="suppliedOrganizationAndGreetingInferenceReplaceUniversalKeys" classname="dev.russiancompanion.v2.Unit26LetterInstructionTest" time="0.329"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

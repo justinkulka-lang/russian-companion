@@ -57,5 +57,4 @@ internal object Unit10PresentFixtures {
             return (decoded as BackupReadResult.Valid).backup.document
         } finally { stage.deleteRecursively() }
     }
-    const val v1Capture = "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit10-present-baseline-2026-10-25/BASELINE_CURRENT_UNIT10_V1.zip"
 }

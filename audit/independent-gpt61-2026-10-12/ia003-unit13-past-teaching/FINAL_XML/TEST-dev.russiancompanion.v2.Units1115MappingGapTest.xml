@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Units1115MappingGapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-17T00:21:06.793Z" hostname="f5c5dd6b855f" time="5.676">
-  <properties/>
-  <testcase name="preservedUnitDigestsDoNotMoveWhenTheLaterGapIsRecorded" classname="dev.russiancompanion.v2.Units1115MappingGapTest" time="5.657"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

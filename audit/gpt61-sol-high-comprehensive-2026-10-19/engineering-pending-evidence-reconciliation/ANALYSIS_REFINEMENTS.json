@@ -1,9 +1,0 @@
-{
-  "kind": "Proposal analysis guard refusals; NOT JUnit failures",
-  "trackedFilesWritten": false,
-  "observations": [
-    "TSV footer comments are not reviewer rows; parse data rows with literal TSV escaping and preserve footer bytes",
-    "Unit8 mapping worksheet changes only objective/session app_title labels from the admitted positive-existence correction; all edition facts, mapping digest, reviewer and qualification cells unchanged"
-  ],
-  "allChecksPassedAfterSpecificReconciliation": true
-}

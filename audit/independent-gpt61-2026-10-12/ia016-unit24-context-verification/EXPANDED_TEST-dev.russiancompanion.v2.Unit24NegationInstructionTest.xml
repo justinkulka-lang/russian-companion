@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit24NegationInstructionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-13T21:06:18.279Z" hostname="d0fbcd1608d3" time="11.015">
-  <properties/>
-  <testcase name="numberAbsenceConcordAndPersuasionContextHaveDistinctExplanations" classname="dev.russiancompanion.v2.Unit24NegationInstructionTest" time="1.492"/>
-  <testcase name="existingKeysStayBoundAndSourceAndReviewRestrictionsRemainClosed" classname="dev.russiancompanion.v2.Unit24NegationInstructionTest" time="9.225"/>
-  <testcase name="allNegationContrastsAreExplainedBeforePracticeAndRepeatedAfterAMiss" classname="dev.russiancompanion.v2.Unit24NegationInstructionTest" time="0.286"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

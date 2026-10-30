@@ -1,9 +1,0 @@
-{
-  "sourceCommit": "e6db0bdfe0bbb40edf190623e2123014946f305b",
-  "exitCode": 1,
-  "testsExecuted": 0,
-  "plannedMethods": 32,
-  "unexecuted": 32,
-  "reason": "compileDebugUnitTestKotlin failed: public test helper exposed internal curriculum types. Stale XML deliberately not collected.",
-  "lintQualification": "Test helpers corrected while lint was pending; use later scope for authoritative source-bound lint."
-}

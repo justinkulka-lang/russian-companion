@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Units1620SourceIntakeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T02:23:48.785Z" hostname="d0fbcd1608d3" time="20.02">
-  <properties/>
-  <testcase name="structuralMappingsMatchTheOwnedEditionObservations" classname="dev.russiancompanion.v2.Units1620SourceIntakeTest" time="20.015"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

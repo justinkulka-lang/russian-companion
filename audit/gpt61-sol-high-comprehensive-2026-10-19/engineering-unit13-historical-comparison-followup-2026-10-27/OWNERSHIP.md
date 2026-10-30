@@ -1,7 +1,0 @@
-# Full-class follow-up ownership
-
-One agent/currentcheckout/DraftPR64.63methods/9FULLclasses inventory only until fresh discovery. Inspect external `/workspace/artifacts/unit13-historical-comparison-followup-2026-10-27` DISCOVERY/REGRESSION contexts, launchers, runner processes, completions, DURABLE_MONITOR_STATUS.json,AUTO_RESULT.json or AUTO_ERROR.json before launch/edit/collection. Do not duplicate active work.
-
-Commit clean setup,launch DISCOVERY once,verify exact63identities/9classes/preparedsixinputs,commit discovery evidence,then run start_runtime.py once. Detached workers use two6GiBforks/forkEvery4/GC logs and unchanged provisionalSQLitecompilationdirective. Exclusive completion worker owns actual XML/events/exits/lint/gate/native/conservation collection,read-only verification,audit-docs-only commit,normalpush and DraftPR64 body update. It uses untrimmed NUL-terminated Git-status records and an exact documentation path allowlist;the earlier trim-guard failure is preserved in the prior phase. No automatic test/app mutation or assertion waivers. Keep source inputs clean/unchanged during runtime.
-
-If disconnected,inspect surviving original processes before relaunch. If processes are absent without a real exit/finalresult,preserve the interruption and do not invent completion. All627original assertions/pins/271other tests/155bindings/74archives conserved. Earlier316partial/165completed scopes unsummed. All48findingsOPEN/auditINCOMPLETE/four exporters16methods excluded/physicalLAST/noAPK/signing/merge/freeze/releaseapproval.

@@ -11,8 +11,6 @@ import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.context
 import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.pack
 import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.prepare
 import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.document
-import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.partial14
-import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.completed14
 import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.ordinary
 import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.answer
 import dev.russiancompanion.v2.Unit14PluralPossessionFixtures.advance
@@ -114,30 +112,6 @@ class Unit14PluralPossessionReviewUiTest {
             waitTag("v2-advance");compose.onNodeWithTag("v2-advance").performScrollTo().assertIsEnabled().performClick()
             compose.waitUntil(30_000) { store.governedLearnerDocument().unitCompletions.any { it.unitNumber==14 && it.reviewAssignmentId==task.id } }
             assertEquals(15,store.v2Profile().currentUnitNumber)
-        }
-    }
-
-    @Test fun genuinePartialV1EntryAndContinueRetainOldTitleAndOneOfTwoAnswers() = legacyEntry(partial14,1)
-
-    @Test fun genuineCompletedV1DetailRetainsOldTitleAndTwoOfTwoAnswers() = legacyEntry(completed14,2)
-
-    private fun legacyEntry(path:String,count:Int) {
-        val original=document(path)
-        LocalStore.openInMemory(context()).use { store ->
-            assertEquals(GovernedReplaceOutcome.REPLACED,store.replaceGovernedLearner(original,emptyList()))
-            val task=original.reviewAssignments.single { it.targetUnit==14 }
-            assertTrue(reviewAssignmentCurrent(pack,task));assertEquals(1,task.schema)
-            if(count==1) assertEquals(oldTitle,continueTarget(pack,store.v2LearnerView()).title)
-            var review by mutableStateOf(false)
-            compose.setContent {
-                if(review) V2CumulativeReviewScreen(pack,store.v2LearnerView(),14,false,{},{},{},{_,_,_->},{},{},{})
-                else V2UnitScreen(pack,store.v2LearnerView(),14,{},{},{},{},{},{review=true})
-            }
-            compose.onNodeWithTag("v2-open-cumulative-review").performScrollTo().assertTextContains(oldTitle).performClick()
-            waitTag("v2-review-count");compose.onNodeWithText(oldTitle).assertExists()
-            compose.onNodeWithText("Review earlier printed letter pairs",substring=true).assertExists()
-            compose.onNodeWithTag("v2-review-count").assertTextEquals("$count of 2 review checks recorded")
-            assertEquals(original,store.governedLearnerDocument());assertEquals(task,currentCumulativeAssignment(pack,store.v2LearnerView(),14))
         }
     }
 

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit26PostalInstructionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-12T03:32:16.848Z" hostname="runnervmmprz5" time="5.457">
-  <properties/>
-  <testcase name="completeComponentAndFormatTeachingPrecedesPracticeAndReturnsAfterAMiss" classname="dev.russiancompanion.v2.Unit26PostalInstructionTest" time="0.102"/>
-  <testcase name="exactPostalIntakeRejectsHistoricalUniversalityAndUnboundApplications" classname="dev.russiancompanion.v2.Unit26PostalInstructionTest" time="5.299"/>
-  <testcase name="sampleComparisonAndOrderingKeysAreBoundToTheirDisplayedModel" classname="dev.russiancompanion.v2.Unit26PostalInstructionTest" time="0.055"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

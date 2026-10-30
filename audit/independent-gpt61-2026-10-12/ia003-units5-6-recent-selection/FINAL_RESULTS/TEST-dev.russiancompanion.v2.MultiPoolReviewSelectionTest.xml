@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.MultiPoolReviewSelectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-16T14:34:06.992Z" hostname="f5c5dd6b855f" time="35.871">
-  <properties/>
-  <testcase name="unit6CanSelectEveryAuthoredCandidateAndResolveMissesIncludingOppositeKeyContrasts" classname="dev.russiancompanion.v2.MultiPoolReviewSelectionTest" time="33.329"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

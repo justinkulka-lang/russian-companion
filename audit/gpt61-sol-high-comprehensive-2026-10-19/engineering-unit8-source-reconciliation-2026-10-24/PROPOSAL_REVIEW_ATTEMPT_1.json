@@ -1,6 +1,0 @@
-{
-  "state": "TOOLING_PATH_ERROR_BEFORE_PROPOSAL_CREATED",
-  "error": "FileNotFoundError: review/unit-8/UNIT_7_REVIEW_MANIFEST.json",
-  "cause": "Wrapper filename not updated from Unit7 to Unit8; generated outputs unaffected",
-  "trackedFilesApplied": false
-}

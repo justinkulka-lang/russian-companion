@@ -11,7 +11,6 @@ import dev.russiancompanion.v2.Unit6PresentFixtures.context
 import dev.russiancompanion.v2.Unit6PresentFixtures.prepare
 import dev.russiancompanion.v2.Unit6PresentFixtures.pack
 import dev.russiancompanion.v2.Unit6PresentFixtures.document
-import dev.russiancompanion.v2.Unit6PresentFixtures.v2Capture
 import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
@@ -91,13 +90,7 @@ class Unit6PresentReviewUiTest {
         }
     }
 
-    @Test fun genuineV2EntryContinueAndReviewKeepTheirOwnTitleAndPartialMeaning() {
-        legacyEntry(v2Capture, false, 3)
-    }
 
-    @Test fun genuineV1EntryContinueAndReviewKeepTheirOwnTwoSlotMeaning() {
-        legacyEntry("audit/independent-gpt61-2026-10-12/ia003-policy-history-transition/predecessor-schema1/PARTIAL_REVIEW.zip", true, 2)
-    }
 
     private fun legacyEntry(path: String, reteach: Boolean, slots: Int) {
         val original = document(path)

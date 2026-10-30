@@ -1,5 +1,0 @@
-# Literacy UI fixture follow-up prepared
-
-Test-only: change the new Unit1UI fixture from u1-i-м-identity (only GUIDED) to u1-i-ё-identity in an actual CHECK. Every assertion/callback remains byte-identical. This does not change learner content or hide a production failure. Initial0107931b24reported/23pass/1fixturefailure remains intact. Actual Unit1Mrequired-objective/GUIDED-only placement is a deferred assessment observation, not silently fixed by this UI test.
-
-13methods/4FULLclasses inventory only: unchanged whole7method baseline,4compatibility and2UI. Fresh discovery/runtime pending. All289other test files, production/catalog/native/keys/grade/history/schema/policy data and87archives remain exact. Source bindings remain pending after the existing content correction. All59findingsOPEN/auditINCOMPLETE. Four screenshot exporters16methods excluded, provisionalJITdirectiveunadopted/notatestexclusion/nativecauseUNCONFIRMED. NoAPK/signing/merge/freeze/releaseapproval; final audit before physicalLAST. Inspect external literacy-family-followup-2026-10-29 before launch/edit.

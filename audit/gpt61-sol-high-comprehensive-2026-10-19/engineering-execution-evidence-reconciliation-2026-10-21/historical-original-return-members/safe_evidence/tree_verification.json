@@ -1,8 +1,0 @@
-{
-  "authenticCommitTreePathProofs": "PASS",
-  "entirePriorTrackedInventoryRebuiltToAuthenticRootTree": "PASS",
-  "actualRootTree": "f95bfa3c1ae6b8ac07b42b6db9fa69c5e247830f",
-  "treeObjectsRecomputed": 453,
-  "trackedFiles": 6427,
-  "priorTopLevelTreeJsonShaWasCommitId": true
-}

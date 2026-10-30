@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit24ContextTransferTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T21:03:25.627Z" hostname="d0fbcd1608d3" time="15.209">
-  <properties/>
-  <testcase name="completedContextReadingNeedsDistinctGuidedAndIndependentExamples" classname="dev.russiancompanion.v2.Unit24ContextTransferTest" time="13.595"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

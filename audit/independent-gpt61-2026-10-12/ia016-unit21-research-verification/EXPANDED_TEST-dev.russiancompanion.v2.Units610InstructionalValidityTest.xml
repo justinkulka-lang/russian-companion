@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Units610InstructionalValidityTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T20:01:48.727Z" hostname="d0fbcd1608d3" time="17.563">
-  <properties/>
-  <testcase name="everyRecognitionObjectiveHasAnIndependentFeatureValidCheck" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="17.556"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

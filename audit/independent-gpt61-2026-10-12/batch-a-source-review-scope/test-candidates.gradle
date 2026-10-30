@@ -1,6 +1,0 @@
-// Candidate selection only; runtime classpath and exporter exclusions remain unchanged.
-allprojects {
-    tasks.withType(Test).configureEach {
-        include '**/BatchAUnits71620Test.class'
-    }
-}

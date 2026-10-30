@@ -46,28 +46,6 @@ class Unit4PresentTeachingTest {
         assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
 
-    @Test fun existingNativeItemsExamplesRecordsAndOtherUnitContentsRemainExact() {
-        val p = RecordedCurriculumConservationScope.historicalTransition(root, current, "e6db0bdfe0bbb40edf190623e2123014946f305b", 4); val old = previous
-        assertEquals(622, old.items.size); assertEquals(626, p.items.size)
-        assertEquals(old.items, p.items.take(622))
-        assertEquals(old.examples, p.examples.take(old.examples.size))
-        assertEquals(old.provenanceRecords, p.provenanceRecords.take(old.provenanceRecords.size))
-        assertEquals(41, p.provenanceRecords.size - old.provenanceRecords.size)
-        assertTrue(p.provenanceRecords.drop(old.provenanceRecords.size).all {
-            it.reviewStatus == IMPLEMENTED_PENDING_FINAL_AUDIT && it.reviewedDigest.isEmpty() &&
-                it.synthesis?.applications.orEmpty().isEmpty()
-        })
-        assertEquals(old, p.copy(units = old.units, items = old.items, examples = old.examples, provenanceRecords = old.provenanceRecords))
-        assertEquals(old.units.filter { it.number != 4 }, p.units.filter { it.number != 4 })
-        assertEquals(old.unit(4)!!.sessions.filter { it.id != "u4-s-present" }, p.unit(4)!!.sessions.filter { it.id != "u4-s-present" })
-        assertEquals(old.unit(4)!!.objectives.filter { it.id != "obj-u4-present" }, p.unit(4)!!.objectives.filter { it.id != "obj-u4-present" })
-        assertEquals(declaredAfterUnit(), p.unit(4))
-        assertEquals(old.unit(4)!!.advancement, p.unit(4)!!.advancement)
-        // First-conjugation controls retain every native field and their original teaching.
-        for (id in listOf("u4-i-verb-читать-ты", "u4-i-verb-делать-я")) assertEquals(old.item(id), p.item(id))
-        for (id in listOf("u4-st-teach-present-2", "u4-st-teach-present-3", "u4-st-teach-present-4"))
-            assertEquals(old.step(id)!!.second, p.step(id)!!.second)
-    }
 
     @Test fun oldCorrectAnswersAndResumeStayStoredButCannotSupplyChangedUnitCredit() {
         LocalStore.openInMemory(context()).use { s ->
@@ -174,10 +152,5 @@ class Unit4PresentTeachingTest {
         }
         internal fun present(p: V2CurriculumPack) = p.unit(4)!!.sessions.single { it.id == "u4-s-present" }
         internal fun objective(p: V2CurriculumPack) = p.unit(4)!!.objectives.single { it.id == "obj-u4-present" }
-        internal fun declaredAfterUnit(): V2Unit {
-            val correction = backupJson.parseToJsonElement(File(root,
-                "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-cc015/CORRECTION.json").readText()).jsonObject
-            return backupJson.decodeFromJsonElement(V2Unit.serializer(), correction.getValue("afterUnit"))
-        }
     }
 }

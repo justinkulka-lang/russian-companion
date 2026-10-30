@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-14T02:46:17.195Z" hostname="f5c5dd6b855f" time="5.625">
-  <properties/>
-  <testcase name="preparationManifestBindsFactsAndDoesNotPassAFinalAudit" classname="dev.russiancompanion.v2.audit.OwnerGovernanceDecisionTest" time="5.624"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

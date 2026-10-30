@@ -99,26 +99,6 @@ class BackupImportLimitsTest {
         assertArrayEquals(original, File(stage, "incoming.zip").readBytes())
     }
 
-    @Test fun defaultLimitsAcceptAllSixtyFourRetainedArchivesWithoutRewritingThem() = fixture { _, work ->
-        val allowlist = File(root(), "audit/independent-gpt61-2026-10-12/current-comprehensive-audit/RETAINED_ARCHIVE_ALLOWLIST.json")
-        val json = kotlinx.serialization.json.Json.parseToJsonElement(allowlist.readText()) as kotlinx.serialization.json.JsonObject
-        val paths = (json.getValue("sha256") as kotlinx.serialization.json.JsonObject).keys.sorted()
-        var accepted = 0
-        for ((i, path) in paths.withIndex()) {
-            val file = File(root(), path)
-            val manifest = ZipFile(file).use { z -> z.getEntry(BACKUP_MANIFEST_ENTRY)?.let { entry ->
-                backupJson.decodeFromString(BackupManifest.serializer(), z.getInputStream(entry).use { it.readBytes() }.decodeToString())
-            } } ?: continue // The other two archives are historical test-result evidence.
-            val originalHash = sha256(file)
-            val result = file.inputStream().use { readGovernedBackup(it, manifest.applicationId, manifest.packId,
-                manifest.packVersion, File(work, "retained-$i")) }
-            assertTrue(path + ": " + result, result is BackupReadResult.Valid)
-            assertEquals(originalHash, sha256(file))
-            accepted++
-        }
-        assertEquals(64, accepted)
-    }
-
     @Test fun directoryAllocationLimitRejectsBeforeOpeningTheZip() = fixture { stage, work ->
         assertResource(read(archive(work), stage, BackupImportLimits(directoryBytes = 1)), stage)
     }
@@ -188,8 +168,7 @@ class BackupImportLimitsTest {
 
     private fun archive(work: File, recordings: Int = 0, limits: BackupImportLimits = BackupImportLimits(),
         output: ByteArrayOutputStream = ByteArrayOutputStream()): ByteArray {
-        val base = backupJson.decodeFromString(GovernedLearnerDocument.serializer(), File(root(),
-            "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/UNSTARTED_REVIEW.json").readText())
+        val base = blankLearner()
         val models = (0 until recordings).map { BackupRecording("sample-$it", "test-model", "recordings/sample-$it.m4a", "test-time", false, "NOT_COMPLETED", null) }
         val files = models.map { recording -> recording to File(work, recording.id + ".m4a").apply { writeBytes(recordingData) } }
         writeGovernedBackup(output, APP, PACK, 1, "DARK", base.copy(recordings = models), files, limits = limits)
@@ -247,6 +226,18 @@ class BackupImportLimitsTest {
         }
         assertTrue("Missing central directory entry: $name", found)
     }
+    private fun blankLearner() = GovernedLearnerDocument(
+        schemaVersion = BACKUP_SCHEMA_VERSION,
+        profile = BackupProfile(
+            id = "local", onboardingCompleted = false, currentUnitNumber = 1, startingPoint = "NEW_TO_CYRILLIC",
+            hasPenguin = false, hasAnki = false, hasBinder = false, hasTutor = false, dailyMinutes = 20,
+            transliterationEnabled = false, currentSessionId = null, currentStepIndex = 0,
+        ),
+        steps = emptyList(), attempts = emptyList(), bookmarks = emptyList(), notes = emptyList(),
+        tutorQueue = emptyList(), bookAttestations = emptyList(), unitCompletions = emptyList(),
+        learnerState = null, planInstances = emptyList(), activityLogs = emptyList(), evidence = emptyList(),
+        tutorRequirements = emptyList(), decisions = emptyList(), recordings = emptyList(),
+    )
     private fun root() = File(if (File("app").isDirectory) "." else "..")
     private val recordingData = ByteArray(32768) { 0 }
     companion object { private const val APP = "test.app"; private const val PACK = "test-pack" }

@@ -57,5 +57,4 @@ internal object Unit11NounFixtures {
             return (decoded as BackupReadResult.Valid).backup.document
         } finally { stage.deleteRecursively() }
     }
-    const val v1Capture = "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit11-noun-baseline-2026-10-26/BASELINE_CURRENT_UNIT11_V1.zip"
 }

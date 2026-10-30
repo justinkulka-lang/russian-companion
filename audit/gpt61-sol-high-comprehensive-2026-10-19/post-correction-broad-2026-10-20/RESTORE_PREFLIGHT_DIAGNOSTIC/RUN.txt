@@ -1,6 +1,0 @@
-/workspace/russian-companion/audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/COMPLETED_UNIT14.json
-schema=3 activation=null review=null order=null profile=null
-attempts=319 assignments=12 answers=28 recordings=0 plans=0 activity=0 evidence=0 learnerState=true
-/workspace/russian-companion/audit/independent-gpt61-2026-10-12/ia003-unit7-agreement-teaching/COMPLETED_UNIT8.json
-schema=3 activation=null review=null order=null profile=null
-attempts=196 assignments=6 answers=15 recordings=0 plans=0 activity=0 evidence=0 learnerState=true

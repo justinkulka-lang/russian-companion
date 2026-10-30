@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.BatchAUnits71620Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T16:07:16.121Z" hostname="d0fbcd1608d3" time="114.694">
-  <properties/>
-  <testcase name="admittedCapabilitiesRejectForgeryCrossBindingAndWrongSpans" classname="dev.russiancompanion.v2.BatchAUnits71620Test" time="114.693"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

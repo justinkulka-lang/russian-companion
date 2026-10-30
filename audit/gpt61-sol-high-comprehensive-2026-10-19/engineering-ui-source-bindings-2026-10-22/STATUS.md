@@ -1,5 +1,0 @@
-# UI source bindings applied; verification pending
-
-Current UI source bindings applied; runtime verification pending. Canonical Kotlin digest matches 7ce2727f… at real root and projection; two fresh 153-file renderer outputs match. Of155 proposed records, exactly95 replace only eb5c52ed… with7ce2727f…; every other byte is exact and60 worksheets are unchanged. Original95 versions are archived as historical. Candidate remains unfrozen/sourceCommit null/artifact NOT_RECORDED/publicRelease NOT_APPROVED. No app/test/catalog/governance, approval or prior evidence edits. Planned fresh discovery and actual67-method/11-full-class scope remain unexecuted. Four screenshot exporters/16methods excluded; all48 independent findings unclosed; physical acceptance LAST; no APK assembly/install/signing, merge, freeze or formal advancement.
-
-Use the external /workspace/artifacts/ui-source-binding-reconciliation-2026-10-22/{DISCOVERY,REGRESSION}/CONTEXT.json,RESULT.json,RUN.exit before claiming runtime state or launching another job. Never rerun mutating generation/application scripts over these immutable outputs.

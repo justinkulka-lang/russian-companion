@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T17:58:32.521Z" hostname="d0fbcd1608d3" time="10.594">
-  <properties/>
-  <testcase name="categoryAndConnectiveCreditMustNotDemonstrateContextualPunctuation" classname="dev.russiancompanion.v2.Unit29PunctuationContextRegressionTest" time="8.673"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

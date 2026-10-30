@@ -1,9 +1,0 @@
-# Publication packaging recovery
-
-GitHub rejected the first publication attempt because the original full `ACTUAL_FAILURES.json` was 147,185,270 bytes (140.37 MiB), above its 100 MiB per-file limit. The rejected, unpublished local commit was `d9ad33ec63df2212a81b05468c837f648fa1894b`; the server remained at the actual tested source `dd736e1a8657bd02a34063752afd82146ab2f842`.
-
-`ACTUAL_FAILURES_FULL.zip` contains the original JSON bytes without changes. Its member SHA256 is `ca6e78b5e77094119edd207a02b6e6e6f84e39ff4a9381baa394fdaa9a736508`. The ZIP is 7,064,165 bytes. The small `ACTUAL_FAILURES.json` is now an index with ZIP/member identities, all fourteen failure identities, and each complete message/trace byte count and SHA256. Nothing was truncated or waived. `RAW_AFFECTED.zip` also retains the original XML, events and logs.
-
-`PUBLICATION_RECOVERY_ORIGINALS.zip` preserves the failed worker's error, original collector/verifier/worker, original report, original manifest, collection log and passing pre-publication verifier output. `PUBLICATION_RECOVERY.json` records the rejected commit and recovery identities. `recover_publication.py` records the one-time packaging operation; it is not a test runner. The collector now emits this lossless format, and the read-only verifier checks every full failure message and trace against the archived XML, in addition to ZIP CRC, member hashes, all method identities and source conservation. Runtime tooling inside the original raw archives is unchanged.
-
-Only the rejected session-owned, unpublished audit/docs commit is amended. Publication uses a normal push; no force push or remote history replacement is authorized or needed. No Gradle/JUnit retry, app/test/source-binding modification, failure resolution or acceptance claim occurred during recovery. All 48 independent findings remain OPEN; the audit remains INCOMPLETE. Physical acceptance is outstanding and last.

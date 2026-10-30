@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-12T18:10:30.953Z" hostname="03aee042dd55" time="26.263">
-  <properties/>
-  <testcase name="committedReportsMatchTheGeneratorAndStayByteIdentical" classname="dev.russiancompanion.v2.audit.CurriculumReadinessReconciliationTest" time="26.258"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

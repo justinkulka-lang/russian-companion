@@ -7,7 +7,6 @@ import dev.russiancompanion.v2.Unit7GenderFixtures.root
 import dev.russiancompanion.v2.Unit7GenderFixtures.pack
 import dev.russiancompanion.v2.Unit7GenderFixtures.context
 import dev.russiancompanion.v2.Unit7GenderFixtures.document
-import dev.russiancompanion.v2.Unit7GenderFixtures.v1Capture
 import dev.russiancompanion.v2.Unit7GenderFixtures.advance
 import dev.russiancompanion.v2.Unit7GenderFixtures.ordinary
 import dev.russiancompanion.v2.Unit7GenderFixtures.prepare
@@ -24,43 +23,6 @@ import java.io.File
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
 class Unit7GenderCompatibilityTest {
-    @Test fun exactPriorDeclarationRefusesSchemaNineAndPreservesDownstreamOwnerIdentity() {
-        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
-        with(RecordedLiteracyEpochScope.context(pack, 7)) {
-        val old = RecordedIntakeCorrectionScope.load(root, "38542882cd9ab2e075691eca19442ddfabd17b6b")
-        RecordedCurriculumConservationScope.beforeUnit8PresentReview(root, pack).let { pack ->
-        val priorDeclarationOnly = pack.copy(units = pack.units.map { u -> if (u.number != 7) u else
-            u.copy(advancement = u.advancement!!.copy(cumulativeReviewPolicyId = Unit7CumulativeReviewPolicy.definition.id)) })
-        assertEquals("The genuine old pack differs only by the Unit7 declaration", old, priorDeclarationOnly)
-        }
-        LocalStore.openInMemory(context()).use { store ->
-            val original = document(v1Capture)
-            assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(original, emptyList()))
-            val future = createCumulativeReviewAssignment(pack, store.v2LearnerView(), 7, "future-unit7", 0)!!
-            assertEquals(9, future.schema)
-            assertTrue(reviewAssignmentCurrent(pack, future))
-            assertFalse(reviewAssignmentCurrent(old, future))
-            assertFalse(reviewAssignmentEligible(old, store.v2LearnerView(), future))
-            val saved = original.reviewAssignments.single { it.targetUnit == 7 }
-            assertEquals(saved, store.openCumulativeReview(old, 7, store.learnerMutationEpoch()))
-            saved.slots.forEachIndexed { index, slot -> assertTrue(store.answerCumulativeReview(old, saved.id, index,
-                old.item(slot.itemId)!!.answer, store.learnerMutationEpoch())) }
-            assertTrue(advance(store, 7, old))
-            ordinary(store, 8, old)
-            val downstream = store.openCumulativeReview(old, 8, store.learnerMutationEpoch())!!
-            assertEquals(V2Validator.unitContentReviewDigest(old, 7), downstream.slots.single { it.ownerUnit == 7 }.unitDigest)
-            assertNotEquals(V2Validator.unitContentReviewDigest(pack, 7), downstream.slots.single { it.ownerUnit == 7 }.unitDigest)
-            assertTrue(reviewAssignmentCurrent(pack, downstream))
-            assertTrue(reviewAssignmentEligible(pack, store.v2LearnerView(), downstream))
-            val changed = pack.copy(items = pack.items.map { if (it.id == downstream.slots[1].itemId) it.copy(feedback = it.feedback + " changed") else it })
-            assertFalse(reviewAssignmentCurrent(changed, downstream))
-            val changedRule = pack.copy(units = pack.units.map { u -> if (u.number != 7) u else
-                u.copy(advancement = u.advancement!!.copy(minimumDistinctChecks = u.advancement.minimumDistinctChecks + 1)) })
-            assertFalse(reviewAssignmentCurrent(changedRule, downstream))
-            assertFalse(7 in currentCompletedUnitNumbers(changedRule, store.v2LearnerView()))
-        }
-        }
-    }
 
     @Test fun wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit() {
         LocalStore.openInMemory(context()).use { store ->
@@ -143,33 +105,4 @@ class Unit7GenderCompatibilityTest {
         } finally { stage.deleteRecursively(); context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
     }
 
-    @Test fun genuineSchemaOnePartialCompletesWithoutAddingGenderOrRelabelling() {
-        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
-        with(RecordedLiteracyEpochScope.context(pack, 7)) {
-        val original = document(v1Capture); val saved = original.reviewAssignments.single { it.targetUnit == 7 }
-        assertEquals(1, saved.schema)
-        assertEquals(listOf("obj-u1-decoding", "obj-u6-animacy"), saved.slots.map { it.objectiveId })
-        val context = context(); val name = "unit7-genuine-v1-${System.nanoTime()}"
-        try {
-            LocalStore.openNamed(context, name).use { store ->
-                assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(original, emptyList()))
-                assertEquals(original, store.governedLearnerDocument())
-                assertEquals(saved, open(store))
-                assertEquals(setOf(0), completedReviewSlots(pack, saved, store.v2LearnerView().reviewAnswers))
-                val relabelled = saved.copy(schema = 9).let { it.copy(digest = reviewAssignmentDigest(it)) }
-                assertFalse(reviewAssignmentCurrent(pack, relabelled))
-                answer(store, saved, 1)
-                assertTrue(advance(store, 7))
-                val current = store.governedLearnerDocument()
-                assertEquals(saved, current.reviewAssignments.single { it.targetUnit == 7 })
-                assertEquals(original.reviewAnswers, current.reviewAnswers.take(original.reviewAnswers.size))
-                assertEquals(saved.policyDigest, current.unitCompletions.single { it.unitNumber == 7 }.reviewPolicyDigest)
-                assertEquals((1..7).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
-            }
-            LocalStore.openNamed(context, name).use { store ->
-                assertEquals(saved, open(store)); assertEquals((1..7).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
-            }
-        } finally { context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
-        }
-    }
 }

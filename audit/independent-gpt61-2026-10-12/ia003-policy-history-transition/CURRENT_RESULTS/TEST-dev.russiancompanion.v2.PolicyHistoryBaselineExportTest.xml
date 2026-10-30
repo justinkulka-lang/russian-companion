@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.PolicyHistoryBaselineExportTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-16T14:47:32.115Z" hostname="f5c5dd6b855f" time="46.565">
-  <properties/>
-  <testcase name="captureGenuineV1LifecycleAndDownstreamOwnerIdentityBeforePolicyTransition" classname="dev.russiancompanion.v2.PolicyHistoryBaselineExportTest" time="44.158"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

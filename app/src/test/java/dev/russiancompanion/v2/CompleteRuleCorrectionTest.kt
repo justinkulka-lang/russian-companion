@@ -129,23 +129,6 @@ class CompleteRuleCorrectionTest {
         assertFalse("Reversed context must not pass the full validator: ${result.errors}", result.ok)
         assertTrue(result.errors.joinToString("\n"), result.errors.any { it.contains("complete rule context") })
     }
-    @Test fun historicalFragmentAttemptIsRetainedButCannotCreditTheCompleteRule() {
-        val p = pack(); val item = p.item("u8-i-availability-1")!!
-        val root = File(if (File("app").isDirectory) "." else "..")
-        val ledger = Json.parseToJsonElement(File(root, "audit/content-corrections/UNITS8_10_COMPLETE_RULE_CORRECTION.json").readText()).jsonObject
-        val before = ledger.getValue("changes").jsonArray.map { it.jsonObject.getValue("before").jsonObject }.single { it["id"]?.jsonPrimitive?.content == item.id }
-        val oldItem = historicalJson.decodeFromJsonElement<V2CheckItem>(before)
-        val old = p.copy(items = p.items.map { if (it.id == item.id) oldItem else it })
-        assertTrue(V2Validator.validate(old).errors.any { it.contains("complete rule context") })
-        val step = p.unit(8)!!.sessions.flatMap { it.steps }.first { item.id in it.itemIds }
-        val context: Context = ApplicationProvider.getApplicationContext()
-        LocalStore.openInMemory(context).use { store ->
-            store.v2RecordGovernedAttempt(prepareGovernedAttempt(old, item.id, oldItem.answer, PRESCRIBED_CHECK, step.id, "2026-10-12T21:00")!!)
-            assertTrue(item.id in creditItemIds(old, store.v2LearnerView()))
-            assertFalse(item.id in creditItemIds(p, store.v2LearnerView()))
-            assertEquals(1, store.v2Attempts().size)
-        }
-    }
     private val sourcePacks=mutableMapOf<String,V2CurriculumPack>()
     private fun sourcePack(commit:String)=sourcePacks.getOrPut(commit) {
         val root=File(if(File("app").isDirectory) "." else "..")

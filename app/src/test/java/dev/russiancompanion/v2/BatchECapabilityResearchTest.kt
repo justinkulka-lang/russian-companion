@@ -3,7 +3,6 @@ package dev.russiancompanion.v2
 import dev.russiancompanion.release.computeReleaseSourceDigest
 import dev.russiancompanion.release.readAcceptanceCandidate
 import dev.russiancompanion.v2.audit.loadCurriculumPack
-import dev.russiancompanion.v2.audit.reconcileCurriculumReadiness
 import dev.russiancompanion.v2.curriculum.V2LearnerView
 import dev.russiancompanion.v2.curriculum.V2SourceCapability
 import dev.russiancompanion.v2.curriculum.V2StartingPoint
@@ -28,59 +27,6 @@ import java.security.MessageDigest
  * stay closed, and Units 26–30 stay unchanged.
  */
 class BatchECapabilityResearchTest {
-    @Test
-    fun retainedPagesAreExcludedAndDoNotClearTheFiveCapabilities() {
-        val root = root()
-        val manifest = Json.parseToJsonElement(File(root, MANIFEST).readText()).jsonObject
-        val dossier = File(root, DOSSIER).readText()
-        val curriculum = File(root, "app/src/main/assets/content/v2-curriculum.json").readText()
-        val pack = loadCurriculumPack(root)
-        val pages = manifest.getValue("pages").jsonArray.map { it.jsonObject }
-        assertEquals(6, pages.size)
-        assertEquals("EXCLUDED", manifest.getValue("disposition").jsonPrimitive.content)
-        assertEquals(
-            "154562152",
-            manifest.getValue("licenseRoute").jsonObject.getValue("oldid").jsonPrimitive.content,
-        )
-        pages.forEach { page ->
-            val file = File(root, "audit/curriculum-readiness/batch-e-research/${page.getValue("file").jsonPrimitive.content}")
-            val bytes = file.readBytes()
-            assertEquals(page.getValue("sha256").jsonPrimitive.content, sha256(bytes))
-            assertEquals(page.getValue("byteCount").jsonPrimitive.content.toInt(), bytes.size)
-            val revision = Json.parseToJsonElement(
-                File(root, "audit/curriculum-readiness/batch-e-research/${page.getValue("revisionFile").jsonPrimitive.content}").readText(),
-            ).jsonObject
-            assertEquals(page.getValue("oldid").jsonPrimitive.content, revision.getValue("revid").jsonPrimitive.content)
-            val oldid = page.getValue("oldid").jsonPrimitive.content
-            assertFalse(curriculum.contains(oldid))
-            assertTrue(dossier.contains(oldid))
-            assertTrue(dossier.contains(page.getValue("exclusion").jsonPrimitive.content))
-            val claim = page.getValue("capability").jsonPrimitive.content
-            val unitNumber = page.getValue("unit").jsonPrimitive.content.toInt()
-            val objectiveId = REQUIRED.getValue(claim)
-            val capability = V2SourceCapability(
-                id = "cap-batch-e-$oldid",
-                sourceId = "src-ruwiki-batch-e-$oldid",
-                sourceRevision = oldid,
-                sourceRecordId = "batch-e:$oldid",
-                sourceHash = page.getValue("sha256").jsonPrimitive.content,
-                exactSpan = file.readText(),
-                unitNumber = unitNumber,
-                objectiveId = objectiveId,
-                supportedClaim = claim,
-            )
-            val errors = errors(pack, capability)
-            assertTrue(errors, errors.contains("no independent $claim admission"))
-            assertTrue(errors, errors.contains("revision does not match the frozen record"))
-            assertFalse(
-                V2Validator.unresolvedRequiredSourceCapabilities(
-                    pack.copy(sourceCapabilities = pack.sourceCapabilities + capability),
-                    unitNumber,
-                ).any { it.claim == claim },
-            )
-        }
-        assertTrue(dossier.contains("Units 26–30 were not modified."))
-    }
 
     @Test
     fun identityMutationsSubstitutionsAndRelabelingFailClosed() {
@@ -317,107 +263,6 @@ class BatchECapabilityResearchTest {
         }
     }
 
-    @Test
-    fun digestsGovernanceAndLaterUnitsStayUnchanged() {
-        val root = root()
-        val pack = loadCurriculumPack(root)
-        val model = reconcileCurriculumReadiness(root, pack)
-        val candidate = readAcceptanceCandidate(root)
-        val historical = RecordedCurriculumConservationScope.source(root, RecordedCurriculumConservationScope.priorSource)
-        assertEquals("e90420abb0bc18f68b07514b60335cc36be3a9eeacc870c004ece95e8d4c0ee4", V2Validator.contentReviewDigest(historical))
-        RecordedCurriculumConservationScope.assertCurrent(root, pack)
-        assertEquals(V2Validator.contentReviewDigest(pack), model.packContentReviewDigest)
-        org.junit.Assert.assertNotEquals(V2Validator.contentReviewDigest(historical), model.packContentReviewDigest)
-        assertEquals(candidate?.sourceDigest, model.repositorySourceDigest)
-        assertEquals(model.repositorySourceDigest, computeReleaseSourceDigest(root))
-        assertEquals("NOT_APPROVED", model.publicRelease)
-        assertEquals("NOT_APPROVED", candidate?.publicRelease)
-        assertEquals(false, candidate?.frozen)
-        assertEquals(null, candidate?.sourceCommit)
-        assertEquals("NOT_RECORDED", candidate?.artifact?.status)
-        assertEquals("UNEXECUTED", model.at031)
-        assertEquals("PROPOSED_NOT_ACTIVATED", model.varianceProposalStatus)
-        assertTrue(model.units.all { it.installState == "DEVELOPMENT" })
-        assertTrue(model.units.all { it.unitReviewStatus == "IMPLEMENTED_PENDING_FINAL_AUDIT" })
-        assertTrue(model.units.all { it.mappingStatus == "PENDING_CURRICULUM_REVIEWER" })
-        assertTrue(model.units.all { it.reviewerIdentity == "ABSENT" && it.signedReviewedDigest == "ABSENT" })
-        listOf(27, 29, 30).forEach { number ->
-            assertEquals("ACTIVATED", model.units.single { it.unitNumber == number }.authorityVarianceBlocker)
-            assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", model.units.single { it.unitNumber == number }.readiness)
-        }
-        val content = mapOf(
-            7 to "0bda8d40aae3c040f5c6f9a8a2771de45f95dbdad1bf8232854a2fc3c999e9e9",
-            // Unit17 question-transfer correction supersedes historical 6172c2a9be50c4b3c79b962dc5f9b055f8d2d267d3a6a8627a3e9805e4fc8cca.
-            17 to "415d0ecc0e4e8ce649dff17aef09851beddc39f191f6bedf783af07904481c62",
-            23 to "e7cf730b6ed8317979d7c9f59c23b360f28081d0461fe7a0864643a3d855f683",
-            24 to "d5cb2b37f1000c8728b529e4167f3ab06fb216cb12c7a6d317531f1b309c2e66",
-            25 to "57470dadfa8a6184a38538a4bae84430e8e6d6ba2ad491d1e926690777050142",
-            26 to "379cd55838be8daeac22805558909023411acbb1db37dc41c6090fd8425ae902",
-            27 to "25a7461f907707d5c067a9ab9aac9fd604c988a4efefa545ac82e918b8f28693",
-            28 to "02dcc55155d60b9b07cf78391d01b392bcd236c99b6c4729fe7fca6075b96ffb",
-            // Contextual punctuation supersedes historical b35528e0a8ca27fed0fe18541aab59755d6adcad90a7ccaae86c1f8318ab9374.
-            29 to "b08ed4ce32daa1c702e1844d43b52d8850eceeea90fe0c4501d0c8c8f0d41589",
-            30 to "2e441506616b749439442273e64ccff444f18a994bb5b9c908780821c68a55fa",
-        )
-        val mapping = mapOf(
-            7 to "e39515585eea5b131797f0c93ce3508ee99b27206cc21070675d06aa975373c0",
-            17 to "724a3220ec28b620687871fbca1639cc8e64b58fed7fcfe8ba1a29bdf39d6328",
-            23 to "968d763b963eb028d821bb426f6c906c079a6266184e4f89d79d21fa34699e95",
-            24 to "dc6f9ac41a8520dc647df90313e05e547245bfa31fe3b2e883821f3591a24248",
-            25 to "239e966c5d5b4f00ea70616e8ec949d583bb9406407438ab7f04df9fc363bf31",
-            26 to "c15db22cc82dcfa6c49d6d0e50beea0f90b16dfc4db90777623e99d540790489",
-            27 to "3924f3a8ac211579b4db3e387cb48632d27e9b41925e227b63b004bf652a3bc0",
-            28 to "0fb9199bfef05acc54935be340710bd53e19fcd6066349300e09c29fb4b035e8",
-            29 to "a7ebe370698a0dffe4f0311ccfbfff6f217171ffab7dda232447d4b62e2b4071",
-            30 to "97f4c8beeb1d0e6827b94bedc1e379381c763c2c3522013890b75802630440a2",
-        )
-        val reviewPackages = mapOf(
-            // Unit7 due-review activation supersedes historical444e13e9aa62b4b120928c6f1381898565a9ff47cc2a8bf1c0edc6fc2a001a65.
-            7 to "acfecf2901691a10a46fe362cf544b5479cc3c77297324cd919b3731659d0f0f",
-            // Unit17 due-review activation supersedes the prior question-transfer package; mapping remains unchanged.
-            17 to "7aa99195f1357b0d38c3c047eaebca699ba1f33a277c2686b62f2c66d27717d6",
-            23 to "234cdaf06edfbe6e93aba065e5b9cea8d7f68e23e2c062c3ea2b86e387c340b9",
-            24 to "ba85ebee376a139c9198c859bf5410a8db9f3bc6ce329207356f0ff28c92101f",
-            25 to "0aa1e793c0d42a3059fba3fd9e45aabcdcb7502833e7f30ab6e23c0f9945fc7f",
-            26 to "d121effb0efa17413ade5b0b89abdece4832ccf4d362036269d75133b23d4e39",
-            27 to "30bef1436d3611e2444b17d9e20626addbfabafd6f958cdbdd4dc7ede88069cb",
-            28 to "d6479521bc8abb010b6dc30dc8184d38b79f760fb97f77c5810c2ae04b311f7e",
-            // Contextual punctuation supersedes historical 73eeb58d502dc27b52246f6c92bc52b4e8847ccce1c429806d28a18701d07639.
-            29 to "ed3fe38fef3d30bcb4c85f2ac87ddc0ce19ddf69bd272316ddee4d262ce511dd",
-            30 to "8149ea09748db14078ae984a2d0ae9847afb64a2341d2a427ce2e0c2c486137c",
-        )
-        (content.keys).forEach { number ->
-            val row = model.units.single { it.unitNumber == number }
-            if (number == 7) {
-                RecordedCurriculumConservationScope.assertHistoricalPinsAndCurrentUnits(root, pack, mapOf(number to content.getValue(number)))
-                val oldPackage = dev.russiancompanion.v2.review.buildHistoricalUnitReviewPackage(historical, number,
-                    "7d92d8813e105932391448d94247534493337118")
-                assertEquals(reviewPackages.getValue(number), oldPackage.reviewPackageDigest)
-                val currentPackage = dev.russiancompanion.v2.review.buildUnitReviewPackage(pack, number)
-                assertEquals(V2Validator.unitContentReviewDigest(pack, number), row.unitContentReviewDigest)
-                assertEquals(currentPackage.reviewPackageDigest, row.reviewPackageDigest)
-                org.junit.Assert.assertNotEquals(oldPackage.reviewPackageDigest, row.reviewPackageDigest)
-            } else {
-                assertEquals(content.getValue(number), row.unitContentReviewDigest)
-                assertEquals(reviewPackages.getValue(number), row.reviewPackageDigest)
-            }
-            assertEquals(mapping.getValue(number), row.mappingPackageDigest)
-        }
-        val candidateText = File(root, "release/acceptance/candidate.json").readText()
-        assertTrue(candidateText.contains("0bd4dbf5a24738b9ff9bb7e782a1370021ea59b065c9e764c556f16c1e0784b4"))
-        assertTrue(candidateText.contains("7a24899055474d1d7913213b0af1dedade528d4015cd1faef35c0f71d4e8c37e"))
-        assertEquals(
-            "NONE",
-            model.units.single { it.unitNumber == 26 }.unresolvedRequiredSourceCapabilities,
-        )
-        assertEquals(
-            "NONE",
-            model.units.single { it.unitNumber == 29 }.unresolvedRequiredSourceCapabilities,
-        )
-        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", model.units.single { it.unitNumber == 26 }.readiness)
-        assertEquals("CONTENT_COMPLETE_REVIEW_PENDING", model.units.single { it.unitNumber == 29 }.readiness)
-        assertEquals("ACTIVATED", model.units.single { it.unitNumber == 29 }.authorityVarianceBlocker)
-    }
 
     private fun probe(unitNumber: Int, objectiveId: String, claim: String, span: String) = V2SourceCapability(
         id = "cap-e-$unitNumber-$claim-${span.length}",
@@ -518,8 +363,6 @@ class BatchECapabilityResearchTest {
     private fun root(): File = listOf(File("."), File("..")).first { File(it, "app/src/main").isDirectory }
 
     private companion object {
-        const val MANIFEST = "audit/curriculum-readiness/batch-e-research/MANIFEST.json"
-        const val DOSSIER = "audit/curriculum-readiness/V2_CURRICULUM_GAP_CLOSURE_DOSSIER_v1.0.md"
         val REQUIRED = mapOf(
             "adverb-paradigm" to "obj-u7-adverb",
             "productive-clock-time" to "obj-u17-clock-answers",

@@ -1,1 +1,0 @@
-Collector exit1: timestamp assertion at run.py:63 rejected TEST-dev.russiancompanion.ScaffoldBoundaryTest.xml timestamp2026-10-18T13:14:36.607+00:00 versus INITIAL started2026-10-18T13:15:14.167501+00:00. Gradle underlying exit130 retained in RUN.exit. All190 XML files were stale dry-run outputs; no fresh XML copied/counted.

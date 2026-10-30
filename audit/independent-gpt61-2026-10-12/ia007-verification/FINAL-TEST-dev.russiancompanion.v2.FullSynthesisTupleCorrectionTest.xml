@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-12T21:18:47.098Z" hostname="03aee042dd55" time="63.481">
-  <properties/>
-  <testcase name="fullValidatorRejectsSwappedDictionaryAnswersEvenWhenAllMutableApplicationsAgree" classname="dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest" time="35.017"/>
-  <testcase name="fullValidatorRejectsSwappedReadingAnswersEvenWhenAllMutableApplicationsAgree" classname="dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest" time="18.89"/>
-  <testcase name="fullValidatorRejectsSwappedNameAnswersEvenWhenAllMutableApplicationsAgree" classname="dev.russiancompanion.v2.FullSynthesisTupleCorrectionTest" time="9.572"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

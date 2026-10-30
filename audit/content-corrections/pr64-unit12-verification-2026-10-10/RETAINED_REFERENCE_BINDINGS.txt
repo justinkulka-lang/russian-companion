@@ -1,6 +1,0 @@
-PASS: all five retained reference IDs resolve; all original records are preserved.
-prov-ex-u12-aspect-0-ru
-prov-ex-u12-aspect-1-ru
-prov-ex-u12-aspect-2-ru
-prov-ex-u12-aspect-3-ru
-prov-ca-12-371

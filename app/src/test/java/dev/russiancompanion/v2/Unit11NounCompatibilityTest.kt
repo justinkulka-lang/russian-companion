@@ -7,7 +7,6 @@ import dev.russiancompanion.v2.Unit11NounFixtures.root
 import dev.russiancompanion.v2.Unit11NounFixtures.pack
 import dev.russiancompanion.v2.Unit11NounFixtures.context
 import dev.russiancompanion.v2.Unit11NounFixtures.document
-import dev.russiancompanion.v2.Unit11NounFixtures.v1Capture
 import dev.russiancompanion.v2.Unit11NounFixtures.advance
 import dev.russiancompanion.v2.Unit11NounFixtures.ordinary
 import dev.russiancompanion.v2.Unit11NounFixtures.prepare
@@ -24,59 +23,6 @@ import java.io.File
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
 class Unit11NounCompatibilityTest {
-    @Test fun exactPriorDeclarationRefusesSchemaThirteenAndPreservesDownstreamOwnerIdentity() {
-        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
-        with(RecordedLiteracyEpochScope.context(pack, 11)) {
-        val old = RecordedIntakeCorrectionScope.load(root, "745234c99e3d69fadca835ba7f8eb98ad1a8ab48")
-        // Scope only the original whole-pack equality; all lifecycle/mutation controls below use actual current input.
-        RecordedCurriculumConservationScope.beforeUnit12GenderReview(root, pack).let { pack ->
-            val priorDeclarationOnly = pack.copy(units = pack.units.map { u -> if (u.number != 11) u else
-                u.copy(advancement = u.advancement!!.copy(cumulativeReviewPolicyId = Unit11CumulativeReviewPolicy.definition.id)) })
-            assertEquals("The genuine old pack differs only by the Unit11 declaration", old, priorDeclarationOnly)
-        }
-        LocalStore.openInMemory(context()).use { store ->
-            val original = document(v1Capture)
-            assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(original, emptyList()))
-            val future = createCumulativeReviewAssignment(pack, store.v2LearnerView(), 11, "future-unit11", 0)!!
-            assertEquals(13, future.schema)
-            assertTrue(reviewAssignmentCurrent(pack, future))
-            assertFalse(reviewAssignmentCurrent(old, future))
-            assertFalse(reviewAssignmentEligible(old, store.v2LearnerView(), future))
-            val saved = original.reviewAssignments.single { it.targetUnit == 11 }
-            assertEquals(saved, store.openCumulativeReview(old, 11, store.learnerMutationEpoch()))
-            saved.slots.forEachIndexed { index, slot -> assertTrue(store.answerCumulativeReview(old, saved.id, index,
-                old.item(slot.itemId)!!.answer, store.learnerMutationEpoch())) }
-            assertTrue(advance(store, 11, old))
-            ordinary(store, 12, old)
-            val downstream = store.openCumulativeReview(old, 12, store.learnerMutationEpoch())!!
-            assertEquals(V2Validator.unitContentReviewDigest(old, 11), downstream.slots.single { it.ownerUnit == 11 }.unitDigest)
-            assertNotEquals(V2Validator.unitContentReviewDigest(pack, 11), downstream.slots.single { it.ownerUnit == 11 }.unitDigest)
-            assertTrue(reviewAssignmentCurrent(pack, downstream))
-            assertTrue(reviewAssignmentEligible(pack, store.v2LearnerView(), downstream))
-            downstream.slots.forEachIndexed { index, slot -> assertTrue(store.answerCumulativeReview(old,
-                downstream.id, index, old.item(slot.itemId)!!.answer, store.learnerMutationEpoch())) }
-            assertTrue(advance(store, 12, old))
-            ordinary(store, 13, old)
-            val later = store.openCumulativeReview(old, 13, store.learnerMutationEpoch())!!
-            assertEquals(V2Validator.unitContentReviewDigest(old, 11), later.slots.single { it.ownerUnit == 11 }.unitDigest)
-            assertTrue(reviewAssignmentCurrent(pack, later))
-            assertTrue(reviewAssignmentEligible(pack, store.v2LearnerView(), later))
-            val changed = pack.copy(items = pack.items.map { if (it.id == downstream.slots[1].itemId) it.copy(feedback = it.feedback + " changed") else it })
-            assertFalse(reviewAssignmentCurrent(changed, downstream))
-            assertFalse(reviewAssignmentCurrent(changed, later))
-            val changedRule = pack.copy(units = pack.units.map { u -> if (u.number != 11) u else
-                u.copy(advancement = u.advancement!!.copy(minimumDistinctChecks = u.advancement.minimumDistinctChecks + 1)) })
-            assertFalse(reviewAssignmentCurrent(changedRule, downstream))
-            assertFalse(reviewAssignmentCurrent(changedRule, later))
-            val changedTeaching = pack.copy(units = pack.units.map { u -> if (u.number != 11) u else
-                u.copy(sessions = u.sessions.map { session -> session.copy(steps = session.steps.map { step ->
-                    if (step.kind == "TEACH") step.copy(body = step.body + " changed") else step }) }) })
-            assertFalse(reviewAssignmentCurrent(changedTeaching, downstream))
-            assertFalse(reviewAssignmentCurrent(changedTeaching, later))
-            assertFalse(11 in currentCompletedUnitNumbers(changedRule, store.v2LearnerView()))
-        }
-        }
-    }
 
     @Test fun wrongSchemasResponseTargetAndEpochCannotBorrowNewCredit() {
         LocalStore.openInMemory(context()).use { store ->
@@ -165,35 +111,6 @@ class Unit11NounCompatibilityTest {
         } finally { stage.deleteRecursively(); context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
     }
 
-    @Test fun genuineSchemaOnePartialCompletesWithoutAddingNounBehaviorOrRelabelling() {
-        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
-        with(RecordedLiteracyEpochScope.context(pack, 11)) {
-        val original = document(v1Capture); val saved = original.reviewAssignments.single { it.targetUnit == 11 }
-        assertEquals(1, saved.schema)
-        assertEquals(listOf("obj-u1-decoding", "obj-u10-have"), saved.slots.map { it.objectiveId })
-        val context = context(); val name = "unit11-genuine-v1-${System.nanoTime()}"
-        try {
-            LocalStore.openNamed(context, name).use { store ->
-                assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(original, emptyList()))
-                assertEquals(original, store.governedLearnerDocument())
-                assertEquals(saved, open(store))
-                assertEquals(setOf(0), completedReviewSlots(pack, saved, store.v2LearnerView().reviewAnswers))
-                val relabelled = saved.copy(schema = 13).let { it.copy(digest = reviewAssignmentDigest(it)) }
-                assertFalse(reviewAssignmentCurrent(pack, relabelled))
-                answer(store, saved, 1)
-                assertTrue(advance(store, 11))
-                val current = store.governedLearnerDocument()
-                assertEquals(saved, current.reviewAssignments.single { it.targetUnit == 11 })
-                assertEquals(original.reviewAnswers, current.reviewAnswers.take(original.reviewAnswers.size))
-                assertEquals(saved.policyDigest, current.unitCompletions.single { it.unitNumber == 11 }.reviewPolicyDigest)
-                assertEquals((1..11).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
-            }
-            LocalStore.openNamed(context, name).use { store ->
-                assertEquals(saved, open(store)); assertEquals((1..11).toSet(), currentCompletedUnitNumbers(pack, store.v2LearnerView()))
-            }
-        } finally { context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
-        }
-    }
 
     @Test fun eachNounMissCanAllocateWhileOptionalAndMalformedHistoryCannotSelect() {
         LocalStore.openInMemory(context()).use { store ->

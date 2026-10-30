@@ -1,6 +1,0 @@
-Workflow run38167139923; job114551937619; head a355cb3a77cee83fd7b364f995cba5ad057116b0.
-2026-10-11T19:52:56.3161806Z V2RebuildTest > durablePackIdentityStaysHonestAndUnitIsolationHolds FAILED
-2026-10-11T19:52:56.3163544Z     java.lang.AssertionError at V2RebuildTest.kt:534
-2026-10-11T20:00:26.1157914Z 635 tests completed, 1 failed, 1 skipped
-2026-10-11T20:00:27.1580572Z BUILD FAILED in 45m 40s
-Failure: formatting-sensitive identity substring assertion; compact JSON retains the identity values. Fix reads JSON fields and preserves all remaining isolation/governance assertions. The exact method body is extracted into the retained Before/After host classes; no Android UI or lifecycle behavior is exercised by this verification.

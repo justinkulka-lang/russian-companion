@@ -1,9 +1,0 @@
-{
-  "sourceCommit": "7d92d8813e105932391448d94247534493337118",
-  "startedUtc": "2026-10-18T04:59:02.846519+00:00",
-  "sourceScope": "Recorded implementation plus pending ancestry reference in review generator",
-  "assetSha256": "33e5655c99d6d5003da0ab1af9249dc814472e3436e0d28afd2f878f6ade4940",
-  "pendingGeneratorSha256": "06f6337b4b582574a5c84d00deb12cc8a6274b9c55e6c1a306c75d7cb507f973",
-  "junitMethodsExecuted": 0,
-  "command": "./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/context-validator.gradle validateContextPack --max-workers=4 --console=plain"
-}

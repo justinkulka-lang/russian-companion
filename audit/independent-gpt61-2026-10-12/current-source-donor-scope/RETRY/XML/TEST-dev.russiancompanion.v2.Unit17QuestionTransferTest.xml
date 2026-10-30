@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit17QuestionTransferTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-18T19:31:48.686Z" hostname="d0aced911621" time="39.418">
-  <properties/>
-  <testcase name="coordinatedKeyAndApplicationCannotMakeTheClockQuestionAskForABook" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="25.956"/>
-  <testcase name="restoringValidOldContrastItemsCannotClearTheQuestionCapability" classname="dev.russiancompanion.v2.Unit17QuestionTransferTest" time="11.39"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

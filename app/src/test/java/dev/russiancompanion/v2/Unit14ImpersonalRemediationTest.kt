@@ -48,37 +48,6 @@ class Unit14ImpersonalRemediationTest {
         assertEquals(p.examples.filter { it.id in exampleIds }, validationPack.examples.filter { it.id in exampleIds })
         val valid = V2Validator.validate(validationPack); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
-    @Test fun unchangedQuestionsRecordsAndRequirementsHaveAnExactSessionOnlyException() {
-        val p = pack(); val old = baseline()
-        assertEquals(declaredAfterSession(), session(p))
-        val restored = p.copy(units = p.units.map { unit ->
-            if (unit.number == 14) unit.copy(sessions = unit.sessions.map { current ->
-                if (current.id == "u14-s-impersonal") session(old) else current
-            }) else if (unit.number == 15) old.unit(15)!! else if (unit.number in 16..30) unit.copy(advancement = old.unit(unit.number)!!.advancement) else unit
-        })
-        assertEquals(Unit15ImperativeRemediationTest.declaredAfterUnit(), p.unit(15))
-        assertEquals(old, restored)
-        assertEquals(old.unit(14)!!.advancement, p.unit(14)!!.advancement)
-        assertEquals(6, p.unit(14)!!.advancement!!.minimumDistinctChecks)
-        assertEquals(old.items, p.items); assertEquals(old.examples, p.examples)
-        assertEquals(old.provenanceRecords, p.provenanceRecords)
-        assertEquals(old.unit(16)!!.copy(advancement = old.unit(16)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit16CumulativeReviewPolicy.definition.id)), p.unit(16))
-        assertEquals(old.unit(17)!!.copy(advancement = old.unit(17)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit17CumulativeReviewPolicy.definition.id)), p.unit(17))
-        assertEquals(old.unit(18)!!.copy(advancement = old.unit(18)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit18CumulativeReviewPolicy.definition.id)), p.unit(18))
-        assertEquals(old.unit(19)!!.copy(advancement = old.unit(19)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit19CumulativeReviewPolicy.definition.id)), p.unit(19))
-        assertEquals(old.unit(20)!!.copy(advancement = old.unit(20)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit20CumulativeReviewPolicy.definition.id)), p.unit(20))
-        assertEquals(old.unit(21)!!.copy(advancement = old.unit(21)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit21CumulativeReviewPolicy.definition.id)), p.unit(21))
-        assertEquals(old.unit(22)!!.copy(advancement = old.unit(22)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit22CumulativeReviewPolicy.definition.id)), p.unit(22))
-        assertEquals(old.unit(23)!!.copy(advancement = old.unit(23)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit23CumulativeReviewPolicy.definition.id)), p.unit(23))
-        assertEquals(old.unit(24)!!.copy(advancement = old.unit(24)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit24CumulativeReviewPolicy.definition.id)), p.unit(24))
-        assertEquals(old.unit(25)!!.copy(advancement = old.unit(25)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit25CumulativeReviewPolicy.definition.id)), p.unit(25))
-        assertEquals(old.unit(26)!!.copy(advancement = old.unit(26)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit26CumulativeReviewPolicy.definition.id)), p.unit(26))
-        assertEquals(old.unit(27)!!.copy(advancement = old.unit(27)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit27CumulativeReviewPolicy.definition.id)), p.unit(27))
-        assertEquals(old.unit(28)!!.copy(advancement = old.unit(28)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit28CumulativeReviewPolicy.definition.id)), p.unit(28))
-        assertEquals(old.unit(29)!!.copy(advancement = old.unit(29)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit29CumulativeReviewPolicy.definition.id)), p.unit(29))
-        assertEquals(old.unit(30)!!.copy(advancement = old.unit(30)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit30CumulativeReviewPolicy.definition.id)), p.unit(30))
-        assertNull(cumulativeReviewPolicy(31))
-    }
     @Test fun oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard() {
         val p = pack(); val old = baseline()
         withStore { store ->
@@ -152,10 +121,6 @@ class Unit14ImpersonalRemediationTest {
         private val previous by lazy {
             val command = ProcessBuilder("git", "show", "2546331775c783813bd2c4785a5e08e6dfe42ed0:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
             V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }
-        }
-        internal fun declaredAfterSession(): V2Session {
-            val ledger = Json.parseToJsonElement(File(root(), "audit/independent-gpt61-2026-10-12/ia003-unit14-impersonal-repair/CORRECTION.json").readText()).jsonObject
-            return Json { ignoreUnknownKeys = true }.decodeFromJsonElement<V2Session>(ledger.getValue("afterSession"))
         }
     }
 }

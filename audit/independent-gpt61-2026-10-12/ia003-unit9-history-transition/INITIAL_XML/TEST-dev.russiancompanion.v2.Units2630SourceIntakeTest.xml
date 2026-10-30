@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Units2630SourceIntakeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-16T21:05:57.685Z" hostname="f5c5dd6b855f" time="22.859">
-  <properties/>
-  <testcase name="generatedRussianPenguinAudioAndReleaseStayClosed" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="22.858"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[System.logW: A resource failed to call close. 
-]]></system-err>
-</testsuite>

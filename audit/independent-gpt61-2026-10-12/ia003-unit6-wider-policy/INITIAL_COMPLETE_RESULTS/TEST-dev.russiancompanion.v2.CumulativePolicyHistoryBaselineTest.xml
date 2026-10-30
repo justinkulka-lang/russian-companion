@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.CumulativePolicyHistoryBaselineTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-16T15:22:05.806Z" hostname="f5c5dd6b855f" time="118.936">
-  <properties/>
-  <testcase name="genuineSchemaThreeLifecycleRestoresReopensAndContinuesWithoutErasingAcceptedSnapshots" classname="dev.russiancompanion.v2.CumulativePolicyHistoryBaselineTest" time="75.925"/>
-  <testcase name="genuinePredecessorSchemaOneLifecycleRestoresReopensAndContinuesWithoutRelabelling" classname="dev.russiancompanion.v2.CumulativePolicyHistoryBaselineTest" time="39.109"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

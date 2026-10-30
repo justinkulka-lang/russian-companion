@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit20DirectionalityApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T18:09:25.498Z" hostname="d0fbcd1608d3" time="50.316">
-  <properties/>
-  <testcase name="motionCompletionMustRequireDistinctIndependentDirectionalityContexts" classname="dev.russiancompanion.v2.Unit20DirectionalityApplicationTest" time="48.233"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

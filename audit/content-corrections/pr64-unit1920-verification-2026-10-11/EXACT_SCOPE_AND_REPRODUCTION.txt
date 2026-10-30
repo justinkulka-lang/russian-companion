@@ -1,5 +1,0 @@
-PASS: exact baseline4c823 replay creates byte-identical curriculum, and second application is idempotent.
-PASS: all old provenance records retained modulo typed blank/null review defaults; pending Unit20 research hosts append complete updated instruction. All original licensed source text, rights and hashes retained.
-PASS: only Units19 and20 instructional digests change; all30 mapping digests preserved.
-PASS: typed JSON default-expansion equality and semantic digest equality verified by Kotlin regression.
-Curriculum SHA256:0c40a9ef9de38d5c0581c48d95ff2ccd8c46d349115a0590c1aad83aa2b73705

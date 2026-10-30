@@ -1,2 +1,0 @@
-PASS:119 pending additions; every original provenance/source hash/right/capability and all mappings preserved after pooling. Only Unit24 instruction/21 English explanations/nine prompts and one corrected worked example change. Existing keys/options/cues/relationships and all other unit content stay unchanged.
-PASS exact baseline replay and idempotence in isolated repository, including independent source-text storage codec. Only Unit24 content digest changes; all30 mappings unchanged.

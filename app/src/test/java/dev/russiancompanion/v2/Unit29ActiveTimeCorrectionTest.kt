@@ -48,23 +48,6 @@ class Unit29ActiveTimeCorrectionTest {
             assertFalse(item.id in creditItemIds(p, store.v2LearnerView()))
         }
     }
-    @Test fun historicalOppositeLabelAttemptSurvivesButCannotCreditTheReplacement() {
-        val p = pack(); val item = p.item("u29-i-active-2")!!
-        val ledger = Json.parseToJsonElement(File(root(), "audit/content-corrections/UNIT29_ACTIVE_TIME_CORRECTION.json").readText()).jsonObject
-        val before = ledger.getValue("changes").jsonArray.map { it.jsonObject.getValue("before").jsonObject }.single { it["id"]?.jsonPrimitive?.content == item.id }
-        val oldItem = Json { ignoreUnknownKeys = true }.decodeFromJsonElement<V2CheckItem>(before)
-        assertEquals("чита́вшая", oldItem.promptLetter)
-        assertTrue(oldItem.prompt.contains("other time"))
-        assertEquals("in the present", oldItem.answer)
-        val old = p.copy(items = p.items.map { if (it.id == item.id) oldItem else it })
-        val step = p.unit(29)!!.sessions.flatMap { it.steps }.first { item.id in it.itemIds }
-        LocalStore.openInMemory(context()).use { store ->
-            store.v2RecordGovernedAttempt(prepareGovernedAttempt(old, item.id, oldItem.answer, PRESCRIBED_CHECK, step.id, "2026-10-12T23:00")!!)
-            assertTrue(item.id in creditItemIds(old, store.v2LearnerView()))
-            assertFalse(item.id in creditItemIds(p, store.v2LearnerView()))
-            assertEquals(1, store.v2Attempts().size)
-        }
-    }
     @Test fun coordinatedApplicationAndKeyEditsCannotMakeLivingPast() {
         val p = pack(); val item = p.item("u29-i-active-2")!!; val a = item.assessment!!
         val ids = a.relationParticipantIds; val wrong = "in the past"

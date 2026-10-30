@@ -1,8 +1,0 @@
-{
-  "sourceCommit": "8d6252ab399616ddae4a1f880add63d14db79038",
-  "historicalEvidence": true,
-  "files": {
-    "app/src/test/java/dev/russiancompanion/v2/Unit7CumulativeReviewTest.kt": "c4fdf25371bb30f9a61e3aab7166d49516443b040fa76b06c9a078c64bfedc32",
-    "app/src/test/java/dev/russiancompanion/v2/Units2630SourceIntakeTest.kt": "62b43918835793bf7e51d4efab3cc786d464a27b5cd821ae27578c30ca21cb30"
-  }
-}

@@ -1,9 +1,0 @@
-# Complete audit inputs for the same ChatGPT chat
-
-Primary delivery: Russian_Companion_Full_Audit_Inputs.docx,75,508,118bytes,SHA256975120216ea8f0f025b63b48c3defa19302498289160c6b024c963a477842830. The native Word package embeds the actual74,854,067-byte pinned full repository snapshot and601,558-byte latest sixteen-output audit,plus verified opening helper,finish prompt,return specification and gap plan. It is not an instructions-only file. Large full Word input remains an external artifact;small Word/TXT instructions are tracked under downloads/.
-
-Use Python/file tools to inspect the DOCX as Open XML. Read word/embeddings/INPUT_MANIFEST.json and review/run OPEN_AUDIT_INPUTS.py with the actual upload path and a fresh output directory. The helper verifies every embedded hash,extracts safely,executes full snapshot commit/tree/blob proof verification,and checks all28latest-audit internal sums. The Word document also reopens successfully with python-docx. Packaging verification is not a semantic audit or Android test.
-
-Exact reviewed source remains5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed,treef95bfa3c1ae6b8ac07b42b6db9fa69c5e247830f. All6427targetfiles,rawcurriculum/projections,retainedhistoricalevidence and latest16outputs are supplied. No privatePDF,SDK,realGitdatabase,APK,newruntime orcodefix isembedded. Reuse current verified2bcc0c45privatebook attachment separately. No file-type conversion closes uninspected scope or rights qualification.
-
-Codex retains engineering/runtime execution;the externalchat remains independent auditor. Current13findings and INCOMPLETE verdict persist. Return updated16outputs plus workorder,evidence-request ledger and explicit scope decision,with checkpoints/hashes. Where required runtime/source/book evidence remains unavailable,retain INCOMPLETE and ask Codex for exact evidence while finishing other inspection. No merge/freeze/APKassembly/signing/formalstage/releaseapproval;physical acceptance LAST/outstanding.

@@ -1,9 +1,0 @@
-# Current automatic completion recorder:V2
-
-V1 process257088/toolsession64639 was intentionally stopped before completion/publication. Its prior script and logs remain. The actual Gradle runner255180/toolsession26178 remains unchanged and active. V2 is /workspace/artifacts/post-correction-broad-2026-10-20/finalize_broad_v2.py,with a tracked exact copy here. It will be started after this checkpoint is committed/pushed. Check FINALIZER_V2.log and PUBLICATION_COMPLETE.json in that external root for actual execution/publication;file presence alone is not success. Do not start a second recorder.
-
-V2 retains full immutable MANIFEST.json,stdout,events and allXML inside RAW_EXECUTION_EVIDENCE.zip,verifying CRC and every member hash. The separate MANIFEST/CSV are bounded previews with full UTF8 message hashes/lengths. This avoids committing individual enormous assertion messages;no raw failure is changed or discarded. The projection helper was checked with multiline Cyrillic and null data;not an Android/JUnit test. Other source/identity/branch/draft/clean-tree checks and allOPENfailure dispositions remain the same as V1.
-
-Partial triage:IN_PROGRESS_TRIAGE_918/CAUSE_REVIEW_AND_NEXT_ACTIONS.md and PROVISIONAL_FAILURE_TRIAGE.json record918results:892SUCCESS/25FAILURE/1SKIPPED;402uncompleted. This is an immutable snapshot,not the final result. The full78,451,339-byte event prefix is preserved as a4,021,982-byte CRC/hash-verified ZIP. No app,test,catalog,docs,review,release or compatibility input changed. Original231checkpoint hashes remain exact.
-
-Continue monitoring the existing Gradle runner. Do not edit test/runtime inputs while it is pending. All25observations require cause review;no assertion waiver or qualified acceptance. Physical acceptanceLAST after final comprehensive independent nonphysical audit.

@@ -1,1 +1,0 @@
-PASS exact original-record/scope check; isolated exact baseline replay including trusted capability pin; idempotence; only Unit26 content-review digest changes; all30 mapping digests preserved.

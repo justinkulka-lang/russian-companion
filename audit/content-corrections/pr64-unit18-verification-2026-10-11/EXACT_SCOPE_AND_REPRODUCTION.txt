@@ -1,4 +1,0 @@
-PASS: only two Unit 18 comparison/relative lessons, their objective titles, complete remediation and six item English explanation fields change
-PASS: all teaching precedes guided practice; all identities, keys, options, cues, examples, source relations and advancement preserved
-PASS: all other units and original source/rights/provenance records unchanged; exactly 52 pending evidence records; no new Russian token
-PASS: exact asset and ledger reproduction; idempotent.

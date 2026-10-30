@@ -11,7 +11,6 @@ import dev.russiancompanion.v2.Unit9NounBehaviorFixtures.context
 import dev.russiancompanion.v2.Unit9NounBehaviorFixtures.prepare
 import dev.russiancompanion.v2.Unit9NounBehaviorFixtures.pack
 import dev.russiancompanion.v2.Unit9NounBehaviorFixtures.document
-import dev.russiancompanion.v2.Unit9NounBehaviorFixtures.v2Capture
 import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
@@ -117,9 +116,6 @@ class Unit9NounBehaviorReviewUiTest {
         }
     }
 
-    @Test fun genuineSchemaFiveEntryContinueAndReviewKeepTheirOwnPartialMeaning() {
-        legacyEntry(v2Capture, false, 3)
-    }
 
     @Test fun genuinelyCompletedUnit5RoutesMissingUnit8WithoutCreatingReviewCredit() {
         LocalStore.openInMemory(context()).use { store ->

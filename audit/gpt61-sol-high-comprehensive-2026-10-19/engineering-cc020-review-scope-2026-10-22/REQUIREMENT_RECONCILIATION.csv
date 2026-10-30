@@ -1,9 +1,0 @@
-requirement_id,controlling_scope,engineering_disposition,qualification
-MA2-023,Instruction/examples/guided/independent-check/feedback/remediation,CONTENT_QUALITY_STILL_OPEN,Current review checks reuse already-authored objective links; not a full teaching or source/native admission review
-MA2-024,Russian item traces to previously taught objective,STATIC_LINKS_VERIFIED_LEARNER_SCENARIOS_SCOPED,59pools/75candidate placements trace to prior owners and actual objective check IDs; dynamic eligibility also requires taught/completed current evidence
-MA2-027,Sample previously taught objectives across >1skill where applicable,STRUCTURAL_BREADTH_CONFIRMED_SEMANTIC_ADEQUACY_OPEN,Existing wider/adaptive exceptions refute universal description; shared glyph task and bounded checks leave substantive breadth unresolved
-MA2-057,Mixed review only already taught objectives,STATIC_GUARDS_READ_SELECTED_RUNTIME_ONLY,"eligibleReviewCandidates checks owner completion, instruction/practice and demonstrated objective; no all-target runtime proof"
-MA2-074,AnkiDroid default long-term SRS for vocabulary/forms in initialv2,ROLE_BOUNDARY_ONLY,Does not prohibit internal spaced review or excuse weak cumulative coverage
-MA2-082,Distinguish activity/self-attestation/closed-response evidence,SEPARATE_ROLES_READ,Review role/assignment/answer-order differs from prescribed/optional attempt rows; selected scenarios test boundaries
-MA2-086,Advancement reproducible from versioned rule and evidence,COMPATIBILITY_CONSTRAINT,Existing schema/policy/answer identities and accepted completion-order snapshots cannot be reinterpreted
-MA2-088,Require instruction/book/app checks/due cumulative review,STATIC_GATE_PRESENT_RUNTIME_SCOPED,currentUnitRequirements adds due-review completion separately; selected Unit4/6/9/13 scenarios do not prove all28gates

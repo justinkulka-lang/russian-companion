@@ -1,9 +1,0 @@
-{
-  "baseCommit": "f583dc16009d7b575f9535e56831542996c0271b",
-  "sourceScope": "Uncommitted bounded correction over captured baseline;CORRECTION.json records full delta",
-  "assetSha256": "e50bcc83aac016d6f889a36c0d1e3b39f7dd1cf13e8d0ce543c820b678c3b53e",
-  "exitCode": 0,
-  "validationErrors": 0,
-  "JUnitMethodsExecuted": 0,
-  "command": "source /workspace/setup/android-env.sh; javac -cp /workspace/setup/checkpoint-tools -d /workspace/setup/checkpoint-tools /workspace/setup/checkpoint-tools/ContextPackCheck.java; ./gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/parallel-tests.gradle -I /workspace/setup/context-validator.gradle :app:validateContextPack --max-workers=4 --console=plain"
-}

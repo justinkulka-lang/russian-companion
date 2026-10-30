@@ -1,8 +1,0 @@
-{
-  "path": "/usr/bin/strace",
-  "sha256": "69f88291a4e47f258b8e32b089c919a247509f063ef3d6afe5389939051102b3",
-  "version": "strace -- version 6.13",
-  "capabilityExit": 0,
-  "scope": "Only rename/unlink syscalls;no file-content reads;single-use Gradle daemon followed as child",
-  "appOrTestSourceChanged": false
-}

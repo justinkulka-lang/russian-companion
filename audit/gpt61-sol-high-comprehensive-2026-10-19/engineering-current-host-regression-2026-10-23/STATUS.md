@@ -1,7 +1,0 @@
-# Broad host regression recovery
-
-The original runtime at d7c35e0490b5c9b01a5976cbd30f0ad4e300b611 was interrupted when the environment became unavailable. INTERRUPTED/ preserves raw logs/events/GC and five source-guard failure events; no final result or actual exit exists. Its partial events are not added to any later run. See INTERRUPTED/STATUS.json for exact completed/uncompleted identities.
-
-A separate retry is prepared outside Git at /workspace/artifacts/current-host-retry-2026-10-23. Before any launch inspect REGRESSION/CONTEXT.json,RUN.exit,RESULT.json and live processes; never duplicate or overwrite. Run python3 /workspace/artifacts/current-host-retry-2026-10-23/run.py REGRESSION only if absent and six input trees still match discovery. Expected1363methods/229classes is discovery scope, not expected passes. Do not edit repository during execution. Collector/persistence scripts in that folder require review before use because the first interrupted attempt already created this repository folder.
-
-Four exporters excluded: VisualReviewCaptureTest2,Units35ChunkCaptureTest2,Units610ChunkCaptureTest10,Units1115GapCaptureTest2. No WRITE_* flags. Keep physical AcceptanceBoundaryTest.at020 ignored; actual Galaxy S26 Ultra airplane-mode/reboot acceptance remains outstanding and LAST after final independent comprehensive nonphysical audit. All48findings remain open; no APK assembly/install/signing, merge, freeze, formal advancement or approval. Original evidence/assertions/hashes must remain intact.

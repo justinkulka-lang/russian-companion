@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit
 @Config(sdk = [33])
 class BackupImportCoordinatorLimitsTest {
     @Test fun oversizedImportPreservesLearnerCleansStagingAndAllowsTheNextValidPreview() {
-        val large = retainedArchive.readBytes()
+        val large = ByteArray(1_000_000) { 7 }
         val limit = large.size.toLong() - 1
         exercise(BackupImportLimits(inputBytes = limit)) { store, coordinator, work ->
             val before = store.governedLearnerFingerprint()
@@ -54,7 +54,7 @@ class BackupImportCoordinatorLimitsTest {
     @Test fun cancellationDuringProviderReadStopsImportWithoutReplacingTheLearner() {
         exercise(BackupImportLimits()) { store, coordinator, work ->
             val entered = CountDownLatch(1); val release = CountDownLatch(1)
-            val input = object : java.io.FilterInputStream(retainedArchive.inputStream()) {
+            val input = object : java.io.FilterInputStream(java.io.ByteArrayInputStream(ByteArray(4096))) {
                 override fun read(b: ByteArray, off: Int, len: Int): Int {
                     entered.countDown()
                     check(release.await(10, TimeUnit.SECONDS))
@@ -103,6 +103,5 @@ class BackupImportCoordinatorLimitsTest {
         fail("Timed out waiting for import boundary")
     }
     private val pack by lazy { V2PackLoader.parse(File(root(), "app/src/main/assets/content/v2-curriculum.json").readText()) }
-    private val retainedArchive get() = File(root(), "audit/independent-gpt61-2026-10-12/ia003-unit3-gender-correction/PARTIAL_REVIEW.zip")
     private fun root() = File(if (File("app").isDirectory) "." else "..")
 }

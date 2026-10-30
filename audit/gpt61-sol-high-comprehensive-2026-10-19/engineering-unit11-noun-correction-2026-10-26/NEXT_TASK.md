@@ -1,5 +1,0 @@
-# Next task after actual Unit11 core
-
-Next large task: authentic Unit11 source bindings and conservation,then affected integration. Use the actual verified source and official Kotlin digest. Strict beforeUnit11 restores only its declaration to genuine745234c9/85e7eaf2 pack before the strict10→9→8→7→6→5chain. Update only Unit11 generator source choice and pending reference entry;preserve all29other source choices,original assertions/pins/historical citations and reviewer/owner/rights/admission/approval fields. Two real153file renders/all30packages must match;review exact byte diffs and archive prior changed records/Gitblobs/SHA before applying. Do not approximate hashes or alter approvals. Then fresh affected full-class discovery/runtime,preserving complete raw failures before correction. No new broad result claimed.
-
-One agent/existing checkout;all48OPEN/auditINCOMPLETE/four exporters excluded/physicalLAST/noAPK/signing/merge/freeze/approval. Inspect actual external VERIFIED completion/AUTO_RESULT or ERROR before any launch/edit;no test job remains active at this completed checkpoint.

@@ -11,7 +11,6 @@ import dev.russiancompanion.v2.Unit10PresentFixtures.context
 import dev.russiancompanion.v2.Unit10PresentFixtures.prepare
 import dev.russiancompanion.v2.Unit10PresentFixtures.pack
 import dev.russiancompanion.v2.Unit10PresentFixtures.document
-import dev.russiancompanion.v2.Unit10PresentFixtures.v1Capture
 import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
@@ -122,9 +121,6 @@ class Unit10PresentReviewUiTest {
         }
     }
 
-    @Test fun genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning() {
-        legacyEntry(v1Capture, false, 2)
-    }
 
     @Test fun genuinelyCompletedUnit4RoutesMissingUnit9WithoutCreatingReviewCredit() {
         LocalStore.openInMemory(context()).use { store ->

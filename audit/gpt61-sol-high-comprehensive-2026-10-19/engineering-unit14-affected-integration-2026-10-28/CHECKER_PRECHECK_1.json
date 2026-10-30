@@ -1,8 +1,0 @@
-{
-  "kind": "EVIDENCE_PATH_CHECKER_ERROR_NOT_APP_FAILURE",
-  "error": "FileNotFoundError: Unit13 affected DISCOVERY_RESULT.json is not a standalone tracked file; preserved in interrupted-run archive",
-  "originalScriptSha256": "ffb5631ac9dade14a5d540d105777c7a6fd7bbf959be0ad8f754815c90957846",
-  "recovery": "Read existing tracked INTERRUPTED_RAW.zip member ORIGINAL_WORKSPACE/DISCOVERY/RESULT.json directly;verify archive CRC/SHA and member SHA",
-  "newGradleOrJUnitRuns": 0,
-  "rawDiscoveryUnchanged": true
-}

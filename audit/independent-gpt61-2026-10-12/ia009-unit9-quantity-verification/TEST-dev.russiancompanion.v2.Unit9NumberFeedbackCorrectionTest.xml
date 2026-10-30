@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit9NumberFeedbackCorrectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T01:14:42.969Z" hostname="d0fbcd1608d3" time="87.753">
-  <properties/>
-  <testcase name="numberFeedbackDistinguishesActualValuesAndPlaceValue" classname="dev.russiancompanion.v2.Unit9NumberFeedbackCorrectionTest" time="83.598"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

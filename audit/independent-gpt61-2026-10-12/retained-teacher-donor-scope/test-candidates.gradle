@@ -1,7 +1,0 @@
-// Two exact candidate classes; runtime classpath/exporter exclusions unchanged.
-allprojects {
-    tasks.withType(Test).configureEach {
-        include '**/ContentAuditCorrectionTest.class'
-        include '**/Unit6AnimacyTransferTest.class'
-    }
-}

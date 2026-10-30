@@ -1,9 +1,0 @@
-{
-  "status": "HISTORICAL_DESCRIPTION_NOT_CURRENT_INSTRUCTIONS",
-  "repository": "justinkulka-lang/russian-companion",
-  "pr": 64,
-  "headCommitAtRead": "6975ead6e11b4eac4e56b9d538e026b577760385",
-  "file": "PR64_DESCRIPTION_BEFORE_REPAIR.md",
-  "sha256": "813568c994d90e831b83bac3bff683799b03a0f5c2c34c7ac4fe4fa668f537fb",
-  "reason": "Preserve preceding public PR description before concise current-scope rewrite;engineering history also remains in durable continuation/checkpoint."
-}

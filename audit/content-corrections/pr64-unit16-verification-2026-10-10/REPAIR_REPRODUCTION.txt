@@ -1,2 +1,0 @@
-PASS: Re-running repair_unit16_instrumental_instruction.py on exact 928b9e41 curriculum reproduces 5c0f88bc08065ce7aa7e03e992f3f46cc7381ee9fb9413f95f5c9aefcd34bebc byte for byte.
-PASS: A second run preserves the exact bytes.

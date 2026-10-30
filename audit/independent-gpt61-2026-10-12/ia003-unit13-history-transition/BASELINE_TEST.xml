@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit13PolicyBaselineExportTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-17T04:50:10.086Z" hostname="d0aced911621" time="73.749">
-  <properties/>
-  <testcase name="captureCorrectedUnit13AndOwnerBoundUnit14BeforePolicyTransition" classname="dev.russiancompanion.v2.Unit13PolicyBaselineExportTest" time="72.777"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

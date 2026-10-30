@@ -1,8 +1,0 @@
-{
-  "kind": "legacy_unit5_to_current_unit6",
-  "legacyArchiveSha256": "30c57b002f668aa0efa897f4622bc1be264b53ae4199f95701213bddd0869751",
-  "legacyUnit5Schema": 3,
-  "freshUnit6Schema": 4,
-  "restoredRoundtripAndReopenedUnchanged": true,
-  "wrongSchemaAndChangedOwnerRejected": true
-}

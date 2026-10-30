@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Units610SourceIntakeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-13T01:16:20.806Z" hostname="d0fbcd1608d3" time="87.319">
-  <properties/>
-  <testcase name="unitsSixThroughTenStayReviewPendingAndSourceBound" classname="dev.russiancompanion.v2.Units610SourceIntakeTest" time="29.648"/>
-  <testcase name="retainedSourceBytesMatchImmutableRevisions" classname="dev.russiancompanion.v2.Units610SourceIntakeTest" time="0.372"/>
-  <testcase name="earlierUnitDigestsStayPutAndLaterUnitsStayIsolated" classname="dev.russiancompanion.v2.Units610SourceIntakeTest" time="57.298"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

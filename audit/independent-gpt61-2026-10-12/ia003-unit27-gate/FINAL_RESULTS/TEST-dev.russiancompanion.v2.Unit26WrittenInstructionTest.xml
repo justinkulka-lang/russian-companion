@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit26WrittenInstructionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-16T03:19:37.654Z" hostname="f5c5dd6b855f" time="16.207">
-  <properties/>
-  <testcase name="letterCaseTeachingSeparatesRecipientContextFromPluralShape" classname="dev.russiancompanion.v2.Unit26WrittenInstructionTest" time="1.125"/>
-  <testcase name="correspondenceTeachingDistinguishesEnclosureClosingAndProductionLimits" classname="dev.russiancompanion.v2.Unit26WrittenInstructionTest" time="14.04"/>
-  <testcase name="addressMarksTeachingExplainsEveryRetainedComponentAndRestoresAllExamples" classname="dev.russiancompanion.v2.Unit26WrittenInstructionTest" time="1.04"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

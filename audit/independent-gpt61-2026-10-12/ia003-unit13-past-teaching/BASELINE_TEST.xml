@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.PastTeachingBaselineExportTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-17T00:14:11.934Z" hostname="f5c5dd6b855f" time="128.557">
-  <properties/>
-  <testcase name="captureGenuineUnit13AndOwnerBoundUnit14BeforeTeachingCorrection" classname="dev.russiancompanion.v2.PastTeachingBaselineExportTest" time="126.675"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

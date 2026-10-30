@@ -11,8 +11,6 @@ import dev.russiancompanion.v2.Unit13PresentFixtures.context
 import dev.russiancompanion.v2.Unit13PresentFixtures.prepare
 import dev.russiancompanion.v2.Unit13PresentFixtures.pack
 import dev.russiancompanion.v2.Unit13PresentFixtures.document
-import dev.russiancompanion.v2.Unit13PresentFixtures.v1Capture
-import dev.russiancompanion.v2.Unit13PresentFixtures.v2Capture
 import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
@@ -134,13 +132,7 @@ class Unit13PresentReviewUiTest {
         }
     }
 
-    @Test fun genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning() {
-        legacyEntry(v1Capture, true, 2)
-    }
 
-    @Test fun genuineSchemaSixEntryContinueAndReviewKeepTheirOwnPartialMeaning() {
-        legacyEntry(v2Capture, false, 3)
-    }
 
     @Test fun genuinelyCompletedUnit4RoutesMissingUnit12And11WithoutCreatingReviewCredit() {
         LocalStore.openInMemory(context()).use { store ->

@@ -1,9 +1,0 @@
-{
-  "CONTEXT.json": "363cc6c67a0a9ef11263d36434be5c0372bc180b0db1e42713cbf5bfa1a49a64",
-  "EVENTS.jsonl": "ed6cc7190fbde11bb2317d9a130edef69d2e783167c2cd2b839e29b89c144433",
-  "LINT.xml": "76239d7410cbed9a4863d6da8543beabc5a6b92eeb0966828a37f6be5a1993f6",
-  "MANIFEST.json": "2c2e3abac733d83a3c3bb7075ea6015e9de41c3ccac6d5be883c8eff05245efc",
-  "RUN.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
-  "RUN.log": "415c1fb193160c628509fe5f6da9c0409b226795cbc7a78c066945b40788deea",
-  "XML/TEST-dev.russiancompanion.v2.BatchAUnits71620Test.xml": "be99328f33a4bf61a43f49becb8b410686b4f36ec473182482dac054e5d21e0d"
-}

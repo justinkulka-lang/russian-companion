@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.RepeatedTaskRepairUiTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-20T09:00:26.837Z" hostname="d0aced911621" time="32.861">
-  <properties/>
-  <testcase name="repeatedDuringEventCheckStillRequiresItsOwnFreshAnswerAfterRepair" classname="dev.russiancompanion.v2.RepeatedTaskRepairUiTest" time="24.458"/>
-  <testcase name="reorderedConcordOptionsStillRequireFreshIndependentCreditAfterRepair" classname="dev.russiancompanion.v2.RepeatedTaskRepairUiTest" time="5.93"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

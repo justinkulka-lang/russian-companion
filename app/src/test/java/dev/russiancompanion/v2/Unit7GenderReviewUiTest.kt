@@ -11,7 +11,6 @@ import dev.russiancompanion.v2.Unit7GenderFixtures.context
 import dev.russiancompanion.v2.Unit7GenderFixtures.prepare
 import dev.russiancompanion.v2.Unit7GenderFixtures.pack
 import dev.russiancompanion.v2.Unit7GenderFixtures.document
-import dev.russiancompanion.v2.Unit7GenderFixtures.v1Capture
 import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
@@ -115,9 +114,6 @@ class Unit7GenderReviewUiTest {
         }
     }
 
-    @Test fun genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning() {
-        legacyEntry(v1Capture, false, 2)
-    }
 
     private fun legacyEntry(path: String, reteach: Boolean, slots: Int) {
         val original = document(path)

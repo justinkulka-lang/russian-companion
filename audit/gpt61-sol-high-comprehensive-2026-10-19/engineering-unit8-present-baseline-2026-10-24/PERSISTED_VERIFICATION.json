@@ -1,9 +1,0 @@
-{
-  "verifiedBaseline": "6fd0406da6dd687196eea76ff56ad7cadc06087d",
-  "reported": 2,
-  "passed": 1,
-  "intendedFailed": 1,
-  "originalArchivesConserved": 66,
-  "additionalUnit8Schema1Capture": "6cedfb872485afc193e3c25610727b6af602989fcd0722a4f4c6f0657abb4210",
-  "newRuntimeTestsExecutedByVerifier": 0
-}

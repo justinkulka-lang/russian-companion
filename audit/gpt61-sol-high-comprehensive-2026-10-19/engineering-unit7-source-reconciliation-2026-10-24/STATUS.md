@@ -1,7 +1,0 @@
-# Unit7 source bindings applied; integration runtime pending
-
-Source-binding reconciliation and observed-failure follow-up completed. Read COMPLETED_STATUS.md. Initial124scope121pass/2fail/1physicalskip preserved; separate14/14followup passed. No job active. BROAD scripts prepared for discovery; runtime not launched.
-
-Two authentic153-file JVM renders from d045c439 validate all30units and match byte-for-byte.95of155records change only five reviewed identity tokens; every other byte/60worksheets exact;95prior versions archived. Updated Unit7source and whole-pack declarations/refhash preserve old constants/assertions. A duplicate unreachable Unit7lookup branch was removed after generation with exact equivalence for all30source choices; current UnitReviewPipelineTest compares actual compiled output with savedrecords. Selected26class/124annotation inventory is not execution. Inspect external unit7-source-reconciliation-2026-10-24 before duplicate launch/edit. All48findings OPEN/physicalLAST/four exporters excluded/no APK/signing/merge/freeze/approval.
-
-Initial124-method runtime at531fa3e9completed121pass/2historical-comparison failures/1physicalskip,exit1; full raw data inATTEMPT_1. Two narrow comparison scopes now use the strict preUnit7whole-pack proof; all original nonblanklines/assertions retained, with current behavior outside those scopes. Original files archived. Four full classes/14-method followup prepared,not yet executed. Initial run is not retroactively green.

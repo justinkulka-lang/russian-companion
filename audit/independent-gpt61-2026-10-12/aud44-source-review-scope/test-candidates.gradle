@@ -1,6 +1,0 @@
-// Candidate filter only; runtime classpath and exporter exclusions unchanged.
-allprojects {
-    tasks.withType(Test).configureEach {
-        include '**/Aud44CorrectionTest.class'
-    }
-}

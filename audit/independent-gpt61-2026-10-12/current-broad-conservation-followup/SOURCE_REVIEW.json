@@ -1,9 +1,0 @@
-{
-  "caseDetails": {
-    "unit11-historical-conservation-scope": "audit/independent-gpt61-2026-10-12/unit11-historical-conservation-scope/SOURCE_REVIEW.json",
-    "unit24-old-example-conservation-scope": "audit/independent-gpt61-2026-10-12/unit24-old-example-conservation-scope/SOURCE_REVIEW.json",
-    "source-intake-unit11-digest-scope": "audit/independent-gpt61-2026-10-12/source-intake-unit11-digest-scope/SOURCE_REVIEW.json"
-  },
-  "noNewNativeSourceRightsAdmission": true,
-  "privatePdfUsed": false
-}

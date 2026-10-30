@@ -1,3 +1,0 @@
-# Archive-boundary coverage prepared;verification pending
-
-Eight new archive-format integration methods cover valid producer/STORED controls,traversal/duplicate/missing names,correctly hashed recording-path mismatch,unowned staging collision and recording integrity cleanup. No production fix or security defect is claimed. Existing tests/assertions and production/catalog/docs/review are unchanged. Read VERIFICATION_PLAN.json;34selected methods/four classes are prepared,not executed at this checkpoint. Original1323method run remains separate. No independent request/finding closure;physical acceptance LAST;no assembly/install/signing/merge/freeze/approval.

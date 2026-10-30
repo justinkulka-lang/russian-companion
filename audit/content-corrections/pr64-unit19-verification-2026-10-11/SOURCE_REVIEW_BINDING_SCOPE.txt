@@ -1,4 +1,0 @@
-PASS: only three Unit 19 conditional/obligation/likelihood lessons, their objective titles, complete remediation and nine item English explanation fields change
-PASS: all teaching precedes guided practice; all identities, keys, options, cues, examples, source relations and advancement preserved
-PASS: all other units and original source/rights/provenance records unchanged; exactly 73 pending evidence records; no new Russian token
-PASS: only Unit 19 instructional digest changes; all mapping digests preserved; all 30 packets bind implementation ancestor

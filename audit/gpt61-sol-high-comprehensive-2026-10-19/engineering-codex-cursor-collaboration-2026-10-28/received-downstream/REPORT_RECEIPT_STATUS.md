@@ -1,1 +1,0 @@
-Report received byte-exact. CSV rows27–48 were previously received. CSV rows1–26 and49–64 remain unavailable; no full map or final runtime cause is claimed. Earlier raw receipts remain unchanged. No repository mutation or execution. All48OPEN; auditINCOMPLETE; physicalLAST.

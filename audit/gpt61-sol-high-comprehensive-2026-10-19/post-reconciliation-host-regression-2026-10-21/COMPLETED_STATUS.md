@@ -1,5 +1,0 @@
-# Completed selected host scope;failures remain open
-
-Fresh current debug-host regression at `6ab9d87eadcdb477719af5f0db3af6b90cce8d45` completed:1323reported/1321passed/1failed/0errors/1skipped,exit1,219classes. All1323fresh-discovered identities match genuine fresh XML/RESULT events and exact outcomes,with unchanged input trees. Four screenshot exporters/16methods excluded;physical skip/evidence remains explicitly outstanding. This is not full app/curriculum/device acceptance or a complete-suite claim. Original failure ledgers and scopes remain immutable;current failures are OPEN,not waived. Lint/tasks/raw/GC/conservation records retained. All66archive hashes/64histories,167historical generated files,154current generated files,candidate and five input trees preserved. AuditINCOMPLETE;physicalLAST;no assembly/signing/merge/freeze/approval.
-
-Read ENGINEERING_REGRESSION_REPORT.md,FAILURE_LEDGER.json and REGRESSION/RESULT.json. The pre-launch STATUS.md and REGRESSION_PLAN.json remain unchanged historical planning evidence. No active regression remains.

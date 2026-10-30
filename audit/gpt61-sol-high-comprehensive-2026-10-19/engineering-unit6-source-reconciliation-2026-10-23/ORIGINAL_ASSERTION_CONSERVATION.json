@@ -1,7 +1,0 @@
-{
-  "source": "90b9e48994f4d7a39aa3e037721f69ccef05d1a8",
-  "originalV2AssertionLines": 26,
-  "allOriginalAssertionExpressionsRetained": true,
-  "onlyAssertionCallChange": "Explicit historical fixture passed to advance helper",
-  "original64ArchiveMethodUnchanged": true
-}

@@ -1,1 +1,0 @@
-PASS exact scope:3 sessions; every original record and all items/keys/cues/options/assessments/examples/capabilities/mappings retained; other units/objectives unchanged.

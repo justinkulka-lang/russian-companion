@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit25NameInstructionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-16T02:19:24.259Z" hostname="f5c5dd6b855f" time="32.79">
-  <properties/>
-  <testcase name="allNameAndCourtesyContrastsAreTaughtBeforePracticeAndRepeatedAfterAMiss" classname="dev.russiancompanion.v2.Unit25NameInstructionTest" time="3.432"/>
-  <testcase name="keysStayBoundAndNameFormationAndReleaseRestrictionsStayClosed" classname="dev.russiancompanion.v2.Unit25NameInstructionTest" time="28.2"/>
-  <testcase name="questionsDoNotRevealNameClassificationAndInstructionExplainsTheLimits" classname="dev.russiancompanion.v2.Unit25NameInstructionTest" time="1.135"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

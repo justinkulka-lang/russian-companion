@@ -1,1 +1,0 @@
-PASS exact scope/all original records/indefinite source-key invariants; exact isolated baseline replay including trusted pin; idempotence.

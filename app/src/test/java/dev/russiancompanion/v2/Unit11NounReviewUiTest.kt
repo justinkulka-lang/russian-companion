@@ -11,7 +11,6 @@ import dev.russiancompanion.v2.Unit11NounFixtures.context
 import dev.russiancompanion.v2.Unit11NounFixtures.prepare
 import dev.russiancompanion.v2.Unit11NounFixtures.pack
 import dev.russiancompanion.v2.Unit11NounFixtures.document
-import dev.russiancompanion.v2.Unit11NounFixtures.v1Capture
 import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
@@ -128,9 +127,6 @@ class Unit11NounReviewUiTest {
         }
     }
 
-    @Test fun genuineSchemaOneEntryContinueAndReviewKeepTheirOwnPartialMeaning() {
-        legacyEntry(v1Capture, false, 2)
-    }
 
     @Test fun genuinelyCompletedUnit5RoutesMissingUnit10WithoutCreatingReviewCredit() {
         LocalStore.openInMemory(context()).use { store ->

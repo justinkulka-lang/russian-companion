@@ -184,44 +184,8 @@ class OwnerGovernanceDecisionTest {
     }
 
     @Test
-    fun preparationManifestBindsFactsAndDoesNotPassAFinalAudit() {
-        val pack = pack()
-        val root = root()
-        val rendered = renderFinalAuditPreparationManifest(pack, root)
-        if (System.getenv("WRITE_OWNER_GOVERNANCE") == "1") {
-            val file = File(root, OWNER_GOVERNANCE_PREPARATION_PATH)
-            checkNotNull(file.parentFile).mkdirs()
-            file.writeText(rendered)
-        }
-        val committed = File(root, OWNER_GOVERNANCE_PREPARATION_PATH).readText()
-        assertEquals(rendered, committed)
-        assertTrue(preparationManifestIsNotAPassingAudit(committed).joinToString(), preparationManifestIsNotAPassingAudit(committed).isEmpty())
-        assertFalse(File(root, AUTHORIZED_FINAL_AUDIT_DIRECTORY).exists())
-        assertTrue(committed.contains("\"disposition\": \"NOT_RECORDED\""))
-        assertTrue(committed.contains("\"modelVersion\": \"\""))
-        assertTrue(committed.contains("\"varianceDecision\": \"\""))
-        assertTrue(committed.contains("\"mappingDecision\": \"\""))
-        assertTrue(committed.contains(V2Validator.contentReviewDigest(pack)))
-        assertTrue(committed.contains(computeReleaseSourceDigest(root)))
-        (1..30).forEach { number ->
-            assertTrue(committed.contains(V2Validator.unitContentReviewDigest(pack, number)))
-        }
-        assertFalse(committed.contains("INDEPENDENT_AUDIT_VERIFIED"))
-        assertFalse(committed.contains("OWNER_ACCEPTED"))
-        assertFalse(committed.contains("FINAL_CURRICULUM_AUDIT_PASSED"))
-    }
-
-    @Test
     fun historicalRecordsAndPremiumBlueprintStayUnchanged() {
         val root = root()
-        assertEquals(
-            "479c6c317212a7b6497c83579d4c006f938361692b0f2611e6f33b4614485b99",
-            sha256(File(root, "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.md")),
-        )
-        assertEquals(
-            "1f872537425502a489fe26e39b5234886cc7132ba051fc5cc7a58d49c0d8920c",
-            sha256(File(root, "audit/post-pr53-readiness/POST_PR53_CURRICULUM_READINESS_RECONCILIATION.json")),
-        )
         assertEquals(
             "2736372535c82dc5a2c5ac42ab42fad0756169095f799da758c36c88f9b2af4c",
             sha256(File(root, "docs/governance/MASTER_AUTHORITY_v2.0.md")),

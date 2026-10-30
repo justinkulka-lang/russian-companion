@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Units2630SourceIntakeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-15T14:16:02.298Z" hostname="f5c5dd6b855f" time="39.25">
-  <properties/>
-  <testcase name="generatedRussianPenguinAudioAndReleaseStayClosed" classname="dev.russiancompanion.v2.Units2630SourceIntakeTest" time="39.249"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -58,6 +58,4 @@ internal object Unit13PresentFixtures {
             return (decoded as BackupReadResult.Valid).backup.document
         } finally { stage.deleteRecursively() }
     }
-    const val v1Capture = "audit/independent-gpt61-2026-10-12/ia003-unit13-past-teaching/PARTIAL_REVIEW.zip"
-    const val v2Capture = "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit13-present-baseline-2026-10-27/BASELINE_CURRENT_UNIT13_V2.zip"
 }

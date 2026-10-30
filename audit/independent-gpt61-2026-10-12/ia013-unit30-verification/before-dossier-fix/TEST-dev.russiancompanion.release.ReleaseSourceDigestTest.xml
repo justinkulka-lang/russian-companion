@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.release.ReleaseSourceDigestTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T15:01:29.029Z" hostname="d0fbcd1608d3" time="57.064">
-  <properties/>
-  <testcase name="committedCandidateRecordsTheCurrentSourceDigestAndIdentity" classname="dev.russiancompanion.release.ReleaseSourceDigestTest" time="57.057"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

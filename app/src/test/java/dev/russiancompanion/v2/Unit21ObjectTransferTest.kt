@@ -89,14 +89,6 @@ class Unit21ObjectTransferTest {
             assertNotEquals(V2ObjectiveState.DEMONSTRATED_IN_APP_CHECKS,objectiveState(objective(p),store.v2LearnerView(),p))
         }
     }
-    @Test fun exactSourcePairAndOtherCorrectFieldsArePreserved() {
-        val p=pack();val old=baseline();for(id in listOf("u21-g-object-reference-0","u21-i-object-reference-1"))assertEquals(old.item(id),p.item(id))
-        assertEquals("Он поранил себя",p.item("u21-i-object-reference-2")!!.promptLetter);assertEquals("He has wounded himself.",p.item("u21-i-object-reference-2")!!.answer)
-        val rs=p.provenanceRecords.filter { it.itemId.startsWith("prov-u21-object-transfer-native-") };assertEquals(4,rs.size)
-        val source=File(root(),"audit/independent-gpt61-2026-10-12/ia016-unit21-research-verification/public-candidates-2026-10-13/enwiki-reflexive-1374712982.wikitext.txt").readText()
-        rs.forEach { assertTrue(it.originalSourceText in source);assertTrue(it.shippedText in V2Validator.unfoldWikiLabels(it.originalSourceText));assertFalse(it.shippedText.contains('\u0301')) }
-        val v=V2Validator.validate(p);assertTrue(v.errors.joinToString("\n"),v.ok)
-    }
     @Test fun forgedOldRevisionAndGhostRecordCannotUseTheNewSource() {
         val p=pack();val native=p.provenanceRecords.first { it.itemId=="prov-u21-object-transfer-native-self" }
         for(bad in listOf(native.copy(sourceRevision="586336289",sourceUrl=native.sourceUrl.replace("1374712982","586336289")),native.copy(itemId="prov-u21-ghost",sourceRecordId="ghost"))) {

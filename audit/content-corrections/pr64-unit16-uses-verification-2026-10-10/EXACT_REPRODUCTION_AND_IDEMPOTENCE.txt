@@ -1,3 +1,0 @@
-Unit 16 uses repaired; 66 pending coverage records; keys and Russian assets unchanged
-Already repaired; retained evidence unchanged
-PASS: exact reproduction and idempotence

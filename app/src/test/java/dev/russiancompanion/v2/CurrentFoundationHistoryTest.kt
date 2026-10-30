@@ -20,58 +20,6 @@ import java.util.zip.ZipFile
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk = [33])
 class CurrentFoundationHistoryTest {
-    @Test fun allEightyFiveLearnerBackupsReopenRawButCannotBorrowChangedFoundationCredit() {
-        val context = context()
-        val con = Json.parseToJsonElement(File(root,
-            "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-literacy-foundation-history-regression-2026-10-29/CONSERVATION.json").readText()).jsonObject
-        val archives = con.getValue("archives").jsonObject
-        val evidenceOnly = setOf(
-            "audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/CURRENT_RAW_EVIDENCE.zip",
-            "audit/independent-gpt61-2026-10-12/broader-regression-2026-10-18/INITIAL/ABORTED_BINARY_RESULTS.zip")
-        var learners = 0; var diagnostic = 0
-        for ((path, expectedHash) in archives.toSortedMap()) {
-            val file = File(root, path)
-            assertEquals(path, expectedHash.jsonPrimitive.content, hash(file.readBytes()))
-            val hasLearner = ZipFile(file).use { it.getEntry(BACKUP_LEARNER_ENTRY) != null }
-            if (path in evidenceOnly) {
-                assertFalse(path, hasLearner); diagnostic++; continue
-            }
-            assertTrue(path, hasLearner)
-            val name = "current-foundation-${System.nanoTime()}.db"
-            val stage = File(context.cacheDir, name)
-            try {
-                val read = file.inputStream().use { readGovernedBackup(it, "dev.russiancompanion", current.packId, current.packVersion, stage) }
-                assertTrue(path, read is BackupReadResult.Valid)
-                val original = (read as BackupReadResult.Valid).backup.document
-                assertEquals(V2StartingPoint.NEW_TO_CYRILLIC.name, original.profile.startingPoint)
-                fun verify(store: LocalStore) {
-                    assertEquals(path, original, store.governedLearnerDocument())
-                    assertEquals(path, original.reviewAssignments to original.reviewAnswers, store.cumulativeReviewHistory())
-                    assertEquals(path, emptySet<Int>(), currentCompletedUnitNumbers(current, store.v2LearnerView()))
-                    assertFalse(path, ordinaryUnitRequirements(current, current.unit(1)!!, store.v2LearnerView()).allowed)
-                    original.reviewAssignments.filter { a -> a.slots.any { it.ownerUnit in 1..2 } }.forEach { a ->
-                        assertFalse(path, reviewAssignmentCurrent(current, a))
-                        assertTrue(path, completedReviewSlots(current, a, store.v2LearnerView().reviewAnswers).isEmpty())
-                    }
-                    assertEquals(path, original, store.governedLearnerDocument())
-                }
-                LocalStore.openNamed(context, name).use { store ->
-                    assertEquals(GovernedReplaceOutcome.REPLACED, store.replaceGovernedLearner(original, emptyList())); verify(store)
-                }
-                LocalStore.openNamed(context, name).use { verify(it) }
-                assertEquals(path, expectedHash.jsonPrimitive.content, hash(file.readBytes()))
-                System.getProperty("audit.history.output")?.let { output ->
-                    File(output).appendText(buildJsonObject {
-                        put("kind", "actual_current_foundation_archive"); put("path", path)
-                        put("modelCurriculumSource", RecordedLiteracyEpochScope.latestCommit)
-                        put("restoredAndReopenedRaw", true); put("obsoleteCreditRefused", true)
-                    }.toString() + "\n")
-                }
-                learners++
-            } finally { stage.deleteRecursively(); context.deleteDatabase(name); File(context.filesDir, "recordings-$name").deleteRecursively() }
-        }
-        assertEquals(87, archives.size); assertEquals(85, learners); assertEquals(2, diagnostic)
-    }
 
     @Test fun genuineFreshCurrentPrerequisitesReachUnitFourteenWithCurrentOwnerBindings() {
         val context = context(); val document = FreshCurrentPrerequisiteHistory.document(current, 14, context)

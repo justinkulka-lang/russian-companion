@@ -1,7 +1,0 @@
-{
-  "command": "gradlew -I /workspace/setup/cloud-validation.gradle -I /workspace/setup/context-validator.gradle validateContextTeachingPack --max-workers=4 --console=plain",
-  "exitCode": 1,
-  "reason": "Agent invoked the wrong external helper task name;the registered name is validateContextPack. No compilation, validator or JUnit result was produced.",
-  "junitMethodsExecuted": 0,
-  "applicationModifiedForThisFailure": false
-}

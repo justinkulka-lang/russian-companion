@@ -1,5 +1,0 @@
-# Follow-up ownership
-
-Fresh DISCOVERY at4051206f87a650c9980794514d8928023076e044 verified74synthetic skips/15classes,zero runtimepasses. Allfive initial failedIDs included. External unit9-source-reconciliation-2026-10-25/FOLLOWUP holds contexts,supervisor/monitor/completion records. REGRESSION supervisor owns actual runtime. complete_followup.py (tracked FOLLOWUP_COMPLETION_WORKER.py) owns exclusive collection to ATTEMPT_2,read-only source/assertion/raw/conservation verification,audit/docs-only commit/normal push/DraftPR64 update. Do not duplicate or mutate active inputs. Stops on incomplete runner/changed source/dirty tree/verification/network failure;preserve raw/staged evidence,diagnose,no forcepush. It never fixes app/tests or relabels failures. Existing user authorization covers this evidence publication.
-
-Four exporters/16methods explicitly excluded. All48OPEN/auditINCOMPLETE/physicalLAST/noAPK/signing/merge/freeze/formal advancement/approval. Earlier242scope remains236pass/5fail/1physicalskip/exit1;all scopes overlap/not summed. No new broad result claimed. Read actual AUTO_COMPLETION_RESULT/ERROR before proceeding.

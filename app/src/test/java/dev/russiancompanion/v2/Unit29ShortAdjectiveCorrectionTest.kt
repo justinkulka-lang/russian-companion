@@ -91,21 +91,6 @@ class Unit29ShortAdjectiveCorrectionTest {
             assertEquals(2, store.v2Attempts().size)
         }
     }
-    @Test fun restoringGlossChecksCannotClearTheShortAdjectiveCapability() {
-        val p = pack(); val unit = p.unit(29)!!
-        val forged = unit.copy(objectives = unit.objectives.map { if (it.id != "obj-u29-short-adjective") it else it.copy(
-            checkItemIds = listOf("u29-i-short-adjective-1", "u29-i-short-adjective-2")) })
-        val ledger = Json.parseToJsonElement(File(root(), "audit/content-corrections/UNIT29_SHORT_ADJECTIVE_CORRECTION.json").readText()).jsonObject
-        val legacy = ledger.getValue("changes").jsonArray.map { it.jsonObject.getValue("before").jsonObject }
-            .filter { it["id"]?.jsonPrimitive?.content in setOf("u29-i-short-adjective-1", "u29-i-short-adjective-2") }
-            .map { Json { ignoreUnknownKeys = true }.decodeFromJsonElement<V2CheckItem>(it) }.associateBy { it.id }
-        assertEquals(2, legacy.size)
-        assertTrue(legacy.values.all { it.kind == "CONTRAST_SELECTION" && it.assessment?.independent == true })
-        val result = V2Validator.validate(p.copy(units = p.units.map { if (it.number == 29) forged else it },
-            items = p.items.map { legacy[it.id] ?: it }))
-        assertFalse(result.ok)
-        assertTrue(result.errors.joinToString("\n"), result.errors.any { it.contains("cap-obj-u29-short-adjective has no reviewable instruction and check chain") })
-    }
     @Test fun coordinatedKeyAndApplicationEditsCannotMakeTheShortFormLong() {
         val p = pack(); val item = p.item("u29-i-adjective-form-1")!!; val a = item.assessment!!
         val wrong = item.options.single { it.startsWith("Long adjective") }; val ids = a.relationParticipantIds

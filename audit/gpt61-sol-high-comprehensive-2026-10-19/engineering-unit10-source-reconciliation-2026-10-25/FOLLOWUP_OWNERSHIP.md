@@ -1,7 +1,0 @@
-# Unit10 follow-up completion ownership
-
-Fresh discovery atb3aa17afb8f862407a956ab97c485cb653cca417:111synthetic skips/16fullclasses/zero runtime passes,exit0. Exact selected inventory matches;all six failed IDs included. Runtime is prepared for the next evidence-only checkpoint with identical six input trees. Read external `/workspace/artifacts/unit10-source-reconciliation-2026-10-25/FOLLOWUP` DISCOVERY/REGRESSION contexts,completion,monitor and AUTO_COMPLETION_RESULT.json or AUTO_COMPLETION_ERROR.json before editing or launching. Never duplicate work or change active inputs.
-
-The exclusive completion worker owns actual collection into ATTEMPT_2,raw verification,original-assertion/source-pin conservation,all-six-failure recheck,report/checkpoint update,docs-only commit,normal push and DraftPR64 body. It does not change app/tests,assemble/install/sign APKs,run exporters,fix failures,merge/freeze or approve anything. A failed or incomplete run remains a failure. If the worker errors,preserve raw/staged evidence and diagnose actual cause. Monitor reports every45seconds. One agent/existing checkout only;do not start broad regression before affected results are verified.
-
-ATTEMPT_1 remains320reported/313pass/6fail/1physicalskip,exit1;the111follow-up overlaps and must not be summed. Four screenshot exporters/16methods excluded. All48OPEN/auditINCOMPLETE;physical Galaxy acceptance OUTSTANDING/LAST after final independent comprehensive nonphysical audit. Private reference/environment settings untouched;JITdirective unadopted/nativecauseUNCONFIRMED.

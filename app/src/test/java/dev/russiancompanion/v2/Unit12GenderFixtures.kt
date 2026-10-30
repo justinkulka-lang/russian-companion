@@ -57,5 +57,4 @@ internal object Unit12GenderFixtures {
             return (decoded as BackupReadResult.Valid).backup.document
         } finally { stage.deleteRecursively() }
     }
-    const val v1Capture = "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-unit12-gender-baseline-2026-10-26/BASELINE_CURRENT_UNIT12_V1.zip"
 }

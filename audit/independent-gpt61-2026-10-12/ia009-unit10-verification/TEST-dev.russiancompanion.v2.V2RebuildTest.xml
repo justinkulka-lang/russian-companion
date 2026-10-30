@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.V2RebuildTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T01:36:16.324Z" hostname="d0fbcd1608d3" time="43.879">
-  <properties/>
-  <testcase name="structuralMappingSafeguardsRejectIncompleteOrInventedRecords" classname="dev.russiancompanion.v2.V2RebuildTest" time="43.866"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[System.logW: A resource failed to call close. 
-System.logW: A resource failed to call close. 
-]]></system-err>
-</testsuite>

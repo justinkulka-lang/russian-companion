@@ -1,1 +1,0 @@
-Report and52CSVrows received:1–52. Still missing12rows:53–64. New rows parse with13columns and named method declaration lines match pinned source. All earlier receipt bytes conserved. No repository mutation or execution. Semantic claims/final runtime causes remain unverified. All48OPEN; auditINCOMPLETE; physicalLAST.

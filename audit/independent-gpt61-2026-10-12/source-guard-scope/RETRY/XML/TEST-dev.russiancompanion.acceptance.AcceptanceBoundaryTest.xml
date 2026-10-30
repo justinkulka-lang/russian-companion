@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-18T15:38:01.006Z" hostname="d0aced911621" time="2.409">
-  <properties/>
-  <testcase name="at010_onlyCompatibleMatchedAudioIsIncluded" classname="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" time="0.104"/>
-  <testcase name="at006_interfaceDoesNotOriginateRussianAndUnavailableAudioStaysUnavailable" classname="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" time="2.22"/>
-  <testcase name="at005_packagedSurfaceHasNoNetworkAccountOrSpeechRecognizer" classname="dev.russiancompanion.acceptance.AcceptanceBoundaryTest" time="0.052"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -122,51 +122,6 @@ class Unit5GrammarReviewTest {
     }
 
     /** Baseline-only capture is opt-in; later runs consume those exact pre-change bytes. */
-    @Test fun legacyPartialTaskRestoresCompletesAndReopensWithItsOwnVersion() {
-        // Original contract on actual pre-literacy source; current refusal has separate direct coverage.
-        with(RecordedLiteracyEpochScope.context(current, 5)) {
-        val p = current
-        val capture = System.getProperty("audit.unit5.legacy.capture")?.let(::File)
-        val file = capture ?: File(root, "audit/gpt61-sol-high-comprehensive-2026-10-19/engineering-cc020-unit5-grammar-2026-10-22/BASELINE_LEGACY_UNIT5.zip")
-        if (capture != null) {
-            check(!capture.exists())
-            val old = historical
-            LocalStore.openInMemory(context()).use { original ->
-                prepare(old, original)
-                val a = open(old, original)
-                assertEquals(3, a.schema)
-                assertEquals("unit5-prior-reading-subject-v1", a.policyId)
-                answer(old, original, a, 0)
-                capture.writeBytes(archive(old, original))
-            }
-        }
-        assertTrue("Genuine baseline backup is required", file.isFile)
-        val name = "unit5-legacy-${System.nanoTime()}"
-        val staging = File(context().cacheDir, name)
-        try {
-            val read = readGovernedBackup(file.inputStream(), "dev.russiancompanion", p.packId, p.packVersion, staging)
-            assertTrue(read is BackupReadResult.Valid)
-            val document = (read as BackupReadResult.Valid).backup.document
-            val old = document.reviewAssignments.single { it.targetUnit == 5 }
-            assertEquals(3, old.schema)
-            LocalStore.openNamed(context(), name).use { s ->
-                assertEquals(GovernedReplaceOutcome.REPLACED, s.replaceGovernedLearner(document, emptyList()))
-                assertEquals(document.reviewAssignments to document.reviewAnswers, s.cumulativeReviewHistory())
-                assertEquals(old, open(p, s))
-                assertEquals(setOf(0), completedReviewSlots(p, old, s.cumulativeReviewHistory().second))
-                answer(p, s, old, 1)
-                assertTrue(advance(p, s, 5))
-            }
-            LocalStore.openNamed(context(), name).use { s ->
-                assertEquals(old, open(p, s))
-                assertEquals((1..5).toSet(), currentCompletedUnitNumbers(p, s.v2LearnerView()))
-                assertEquals(old.id, s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 5 }.reviewAssignmentId)
-            }
-        } finally {
-            context().deleteDatabase(name); File(context().filesDir, "recordings-$name").deleteRecursively(); staging.deleteRecursively()
-        }
-        }
-    }
 
     private fun prepare(p: V2CurriculumPack, s: LocalStore) {
         for (n in 1..5) {

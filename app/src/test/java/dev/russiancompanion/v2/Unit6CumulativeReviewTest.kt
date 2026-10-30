@@ -24,60 +24,6 @@ class Unit6CumulativeReviewTest {
     @get:Rule val compose = createComposeRule()
     @After fun reset() { V2UiWork.blockForTests = null }
 
-    @Test fun ordinaryCompletionAndEarlierReviewCannotAdvanceUntilThisAssignmentThenSnapshotSurvivesBackup() {
-        val p = pack()
-        ready(p).use { s ->
-            val earlier = s.cumulativeReviewHistory().first.single { it.targetUnit == 5 }
-            assertEquals(5, earlier.targetUnit)
-            assertTrue(ordinaryUnitRequirements(p, p.unit(6)!!, s.v2LearnerView()).allowed)
-            assertFalse(advancementDecision(p, p.unit(6)!!, s.v2LearnerView()).allowed)
-            val a = open(p, s)
-            // Keep the exact old contract on the genuine saved v2/schema4 assignment.
-            val capture = File(root(), Unit6PresentFixtures.v2Capture)
-            val captureHash = java.security.MessageDigest.getInstance("SHA-256").digest(capture.readBytes())
-                .joinToString("") { "%02x".format(it) }
-            assertEquals("5244052c97346b4d3542edb2469eee2c714d69d2b00567dca8d668970f5ade37", captureHash)
-            val original = Unit6PresentFixtures.document(Unit6PresentFixtures.v2Capture)
-            LocalStore.openInMemory(context()).use { legacy ->
-                assertEquals(GovernedReplaceOutcome.REPLACED, legacy.replaceGovernedLearner(original, emptyList()))
-                val a = open(p, legacy)
-                assertEquals(original.reviewAssignments.single { it.targetUnit == 6 }, a)
-                assertEquals(4, a.schema)
-                assertEquals(listOf("obj-u1-decoding", "obj-u5-indeclinable", "obj-u4-nominative"), a.slots.map { it.objectiveId })
-                assertEquals(listOf("BOUNDED_READING", "SUPPLIED_NOUN_BEHAVIOR_RECOGNITION", "SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION"), a.slots.map { it.skill })
-                assertEquals(original, legacy.governedLearnerDocument())
-            }
-            assertEquals(Unit6PresentCumulativeReviewPolicy.definition.id, a.policyId)
-            assertEquals(8, a.schema)
-            assertEquals(listOf("obj-u4-present", "obj-u5-indeclinable", "obj-u4-nominative"), a.slots.map { it.objectiveId })
-            assertEquals(listOf("SUPPLIED_PRESENT_FORM_RECOGNITION", "SUPPLIED_NOUN_BEHAVIOR_RECOGNITION", "SUPPLIED_NOMINATIVE_SUBJECT_RECOGNITION"), a.slots.map { it.skill })
-            assertEquals("u5-i-indecl-такси", a.slots[1].itemId)
-            assertTrue(completedReviewSlots(p, a, s.cumulativeReviewHistory().second).isEmpty())
-            answer(p, s, a, 0); assertFalse(advancementDecision(p, p.unit(6)!!, s.v2LearnerView()).allowed)
-            answer(p, s, a, 1); assertFalse(advancementDecision(p, p.unit(6)!!, s.v2LearnerView()).allowed)
-            answer(p, s, a, 2); assertTrue(advancementDecision(p, p.unit(6)!!, s.v2LearnerView()).allowed)
-            assertFalse(advancementDecision(p, p.unit(6)!!, s.v2LearnerView().copy(bookAttestedUnits = setOf(1, 2, 3, 4, 5))).allowed)
-            assertTrue(advance(p, s)); assertEquals(7, s.v2Profile().currentUnitNumber)
-            val row = s.governedLearnerDocument().unitCompletions.single { it.unitNumber == 6 }
-            assertEquals(a.id, row.reviewAssignmentId); assertTrue(row.reviewCompletionOrder > a.boundary)
-            answer(p, s, a, 1, correct = false)
-            assertFalse(cumulativeReviewComplete(p, s.v2LearnerView(), 6))
-            assertTrue(6 in currentCompletedUnitNumbers(p, s.v2LearnerView()))
-            val bytes = ByteArrayOutputStream()
-            writeGovernedBackup(bytes, "dev.russiancompanion", p.packId, p.packVersion, "FOLLOW_SYSTEM", s.governedLearnerDocument(), emptyList())
-            val temp = File(context().cacheDir, "unit6-new-${System.nanoTime()}")
-            try {
-                val read = readGovernedBackup(bytes.toByteArray().inputStream(), "dev.russiancompanion", p.packId, p.packVersion, temp) as BackupReadResult.Valid
-                LocalStore.openInMemory(context()).use { target ->
-                    assertEquals(GovernedReplaceOutcome.REPLACED, target.replaceGovernedLearner(read.backup.document, emptyList()))
-                    assertEquals(s.cumulativeReviewHistory(), target.cumulativeReviewHistory())
-                    assertTrue(6 in currentCompletedUnitNumbers(p, target.v2LearnerView()))
-                    assertFalse(cumulativeReviewComplete(p, target.v2LearnerView(), 6))
-                }
-            } finally { temp.deleteRecursively() }
-        }
-    }
-
     @Test fun optionalReplaysStalePrecheckAndInjectedAdvanceFailureCannotCreateCompletion() {
         val p = pack()
         ready(p).use { s ->

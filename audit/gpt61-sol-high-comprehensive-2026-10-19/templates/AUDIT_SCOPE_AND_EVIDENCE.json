@@ -1,9 +1,0 @@
-{
-  "schemaVersion": 1,
-  "targetCommit": "5c176eb22f4a93bf5f7fd20af15e79ec8c4748ed",
-  "template": true,
-  "authorityDisposition": "DIAGNOSTIC_ONLY",
-  "inspectionStatus": "NOT_PERFORMED",
-  "requestedModel": "gpt-6.1-sol",
-  "requestedEffort": "high"
-}

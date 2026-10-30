@@ -1,5 +1,0 @@
-# Next task after actual Unit10 core
-
-Next large task: authentic Unit10 source binding and conservation,then affected integration. Use the actual verified core source/official Kotlin digest;strict beforeUnit10 restores only its declaration to the genuine c1437962/83a7b075 pack before strict9→8→7→6→5comparisons. Update only the actual Unit10 generator source choice/pending source guard;retain all other unit choices and every old assertion/pin. Two real153file renders/all30packages must match;review exact byte diffs and preserve prior changed155-record versions with SHA/Gitblob before application. Keep all reviewer/owner/rights/admission/approval fields and historical citations unchanged. Do not approximate hashes or alter approvals. After authentic application,derive fresh affected full-class discovery and preserve every result before any comparison correction. No new broad pass claimed.
-
-One agent/existing checkout;all48OPEN/auditINCOMPLETE/four exporters excluded/physicalLAST/noAPK/signing/merge/freeze/approval. Inspect actual external VERIFIED completion/AUTO_RESULT or ERROR before any launch/edit;no test job remains active at this completed checkpoint.

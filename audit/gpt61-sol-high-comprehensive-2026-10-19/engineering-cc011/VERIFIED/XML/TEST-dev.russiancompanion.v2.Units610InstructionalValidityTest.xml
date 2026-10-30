@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Units610InstructionalValidityTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-20T08:17:41.881Z" hostname="d0aced911621" time="9.545">
-  <properties/>
-  <testcase name="englishRuleProseCannotBeStoredAsARussianExample" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="6.033"/>
-  <testcase name="sourceMeaningAloneCannotSatisfyAGrammarObjective" classname="dev.russiancompanion.v2.Units610InstructionalValidityTest" time="3.511"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

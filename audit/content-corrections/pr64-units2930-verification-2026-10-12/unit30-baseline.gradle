@@ -1,1 +1,0 @@
-allprojects { tasks.withType(Test).configureEach { systemProperty 'unit30.baseline', '/workspace/setup/unit30-baseline.json' } }

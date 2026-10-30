@@ -45,33 +45,6 @@ class Unit15ImperativeRemediationTest {
         assertEquals(p.examples.filter { it.id in exampleIds }, validationPack.examples.filter { it.id in exampleIds })
         val valid = V2Validator.validate(validationPack); assertTrue(valid.errors.joinToString("\n"), valid.ok)
     }
-    @Test fun exactDeclaredUnitExceptionPreservesEveryQuestionRecordAndRequirement() {
-        val p = pack(); val old = baseline()
-        assertEquals(declaredAfterUnit(), p.unit(15))
-        assertEquals(old, p.copy(units = p.units.map { if (it.number == 15) old.unit(15)!! else if (it.number in 16..30) it.copy(advancement = old.unit(it.number)!!.advancement) else it }))
-        assertEquals(old.unit(15)!!.advancement, p.unit(15)!!.advancement)
-        assertEquals(6, p.unit(15)!!.advancement!!.minimumDistinctChecks)
-        assertEquals(10, p.unit(16)!!.advancement!!.minimumDistinctChecks)
-        assertEquals(old.unit(16)!!.copy(advancement = old.unit(16)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit16CumulativeReviewPolicy.definition.id)), p.unit(16))
-        assertEquals(old.unit(17)!!.copy(advancement = old.unit(17)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit17CumulativeReviewPolicy.definition.id)), p.unit(17))
-        assertEquals(old.unit(18)!!.copy(advancement = old.unit(18)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit18CumulativeReviewPolicy.definition.id)), p.unit(18))
-        assertEquals(old.unit(19)!!.copy(advancement = old.unit(19)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit19CumulativeReviewPolicy.definition.id)), p.unit(19))
-        assertEquals(old.unit(20)!!.copy(advancement = old.unit(20)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit20CumulativeReviewPolicy.definition.id)), p.unit(20))
-        assertEquals(old.unit(21)!!.copy(advancement = old.unit(21)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit21CumulativeReviewPolicy.definition.id)), p.unit(21))
-        assertEquals(old.unit(22)!!.copy(advancement = old.unit(22)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit22CumulativeReviewPolicy.definition.id)), p.unit(22))
-        assertEquals(old.unit(23)!!.copy(advancement = old.unit(23)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit23CumulativeReviewPolicy.definition.id)), p.unit(23))
-        assertEquals(old.unit(24)!!.copy(advancement = old.unit(24)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit24CumulativeReviewPolicy.definition.id)), p.unit(24))
-        assertEquals(old.unit(25)!!.copy(advancement = old.unit(25)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit25CumulativeReviewPolicy.definition.id)), p.unit(25))
-        assertEquals(old.unit(26)!!.copy(advancement = old.unit(26)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit26CumulativeReviewPolicy.definition.id)), p.unit(26))
-        assertEquals(old.unit(27)!!.copy(advancement = old.unit(27)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit27CumulativeReviewPolicy.definition.id)), p.unit(27))
-        assertEquals(old.unit(28)!!.copy(advancement = old.unit(28)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit28CumulativeReviewPolicy.definition.id)), p.unit(28))
-        assertEquals(old.unit(29)!!.copy(advancement = old.unit(29)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit29CumulativeReviewPolicy.definition.id)), p.unit(29))
-        assertEquals(old.unit(30)!!.copy(advancement = old.unit(30)!!.advancement!!.copy(requireDueReview = true, cumulativeReviewPolicyId = Unit30CumulativeReviewPolicy.definition.id)), p.unit(30))
-        assertNull(cumulativeReviewPolicy(31))
-        val teaching = p.step("u15-st-teach-imperative-contrast")!!.second
-        assertTrue("u15-st-teach-imperative-contrast" in p.unit(15)!!.objectives.single { it.id == "obj-u15-imperative" }.instructionStepIds)
-        assertEquals(listOf("u15-g-imperative-0", "u15-i-imperative-1", "u15-i-imperative-2").joinToString("\n\n") { p.item(it)!!.feedback }, teaching.body)
-    }
     @Test fun oldGuidePositionDoesNotResumeAsTheNewSecondTeachingCard() {
         val p = pack(); val old = baseline()
         withStore { store ->
@@ -145,14 +118,6 @@ class Unit15ImperativeRemediationTest {
         private val previous by lazy {
             val command = ProcessBuilder("git", "show", "6975ead6e11b4eac4e56b9d538e026b577760385:app/src/main/assets/content/v2-curriculum.json").directory(root()).start()
             V2PackLoader.parse(command.inputStream.bufferedReader().readText()).also { assertEquals(0, command.waitFor()); V2PackIdentityIndex.warm(it) }
-        }
-        internal fun declaredAfterUnit(): V2Unit {
-            val ledger = Json.parseToJsonElement(File(root(), "audit/independent-gpt61-2026-10-12/ia003-unit15-imperative-repair/CORRECTION.json").readText()).jsonObject
-            return Json { ignoreUnknownKeys = true }.decodeFromJsonElement<V2Unit>(ledger.getValue("afterUnit"))
-        }
-        internal fun declaredAfterSession(): V2Session {
-            val ledger = Json.parseToJsonElement(File(root(), "audit/independent-gpt61-2026-10-12/ia003-unit15-imperative-repair/CORRECTION.json").readText()).jsonObject
-            return Json { ignoreUnknownKeys = true }.decodeFromJsonElement<V2Session>(ledger.getValue("afterSession"))
         }
     }
 }

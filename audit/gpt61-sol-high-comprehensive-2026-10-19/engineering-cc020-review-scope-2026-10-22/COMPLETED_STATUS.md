@@ -1,5 +1,0 @@
-# CC020 investigation complete; substantive repair remains open
-
-CC020 investigation completed with finding OPEN. Canonical inventory:28 active policies/59pools/75candidate placements/44unique items;25two-pool and3three-pool policies;5history-sensitive targets. All28share one print-case task, which does not demonstrate word/phrase decoding. Existing wider policies6/9/13 and adaptive targets3/5/6/9/13 existed at the external audit target. Actual13 selected methods passed:8current-pack/5historical-pack controls, not full classes or a full suite. No app/test/policy/schema/binding changes. Lint0errors/20warnings/1hint; gate attachmentPASS. Read REPAIR_WORK_ORDER.md for bounded substantive skill/source research before versioned repair. All48findings remain open; four exporters/16methods excluded; physicalLAST; no APK assembly/signing/merge/freeze/formal advancement/approval.
-
-Read ENGINEERING_CHANGE_REPORT.md, AUDIT_CLAIM_RECONCILIATION.csv, FINDING_DISPOSITION.json, FIXTURE_SCOPE_RECONCILIATION.json and REPAIR_WORK_ORDER.md.

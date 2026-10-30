@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Units2125SourceIntakeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-13T00:25:43.726Z" hostname="d0fbcd1608d3" time="36.348">
-  <properties/>
-  <testcase name="structuralMappingsAreDigestBoundAndStayUnsigned" classname="dev.russiancompanion.v2.Units2125SourceIntakeTest" time="36.348"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

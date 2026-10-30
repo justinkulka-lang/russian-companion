@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.Unit27PastInstructionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-12T16:50:32.535Z" hostname="03aee042dd55" time="19.325">
-  <properties/>
-  <testcase name="requiredStressTeachingDistinguishesTheAccentedVowelAndCorrectsTheCompetingLabel" classname="dev.russiancompanion.v2.Unit27PastInstructionTest" time="1.914"/>
-  <testcase name="meaningChecksRejectSourcePositionRecallAndOptionalPresentFormsStayOutsideGating" classname="dev.russiancompanion.v2.Unit27PastInstructionTest" time="16.452"/>
-  <testcase name="completePastPassiveMeaningAndFormTeachingPrecedesPracticeAndRestoresEveryExample" classname="dev.russiancompanion.v2.Unit27PastInstructionTest" time="0.957"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

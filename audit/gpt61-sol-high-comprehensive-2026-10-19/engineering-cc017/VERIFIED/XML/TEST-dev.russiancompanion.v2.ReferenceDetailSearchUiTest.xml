@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dev.russiancompanion.v2.ReferenceDetailSearchUiTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-20T08:32:08.760Z" hostname="d0aced911621" time="14.746">
-  <properties/>
-  <testcase name="russianDetailQueryOpensTheOriginalExplanationAtLargeText" classname="dev.russiancompanion.v2.ReferenceDetailSearchUiTest" time="13.428"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

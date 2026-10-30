@@ -1,3 +1,0 @@
-# Historical research-note correction
-
-The prior Unit8research notes incorrectly namedu7-st-rem-endings as the retained old agreement repair. Actual pinned production policy at252832d4andthecompiledCURRENT_POLICY_INVENTORY.json useu7-st-teach-endings-1. The new policy reuses the exact oldsecondpool object, includingthatteaching-card repair; olddefinition/digest/schema1meaning are unchanged. The firstcard contains thechecked femininecarcontrast and related guidedobjectphrase route. This bounded slice doesnotextendagreementrepair tofullremediation orcloseCC021. Newpresentpool usesfullu4-st-rem-present. Historicalresearchfiles/manifests remain unchanged,withthisexplicitcorrection supersedingonlythatmistypedreference.
